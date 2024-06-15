@@ -1,0 +1,31 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:recipe_shapeless": {
+        "tags": [
+            "crafting_table"
+        ],
+        "description": {
+            "identifier": "poke:flint_crate"
+        },
+        "unlock": [
+            {
+                "item": "minecraft:flint"
+            },
+            {
+                "item": "poke:empty_crate"
+            }
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:flint",
+                "count": 8
+            },
+            {
+                "item": "poke:empty_crate"
+            }
+        ],
+        "result": {
+            "item": "poke:flint_crate"
+        }
+    }
+}
