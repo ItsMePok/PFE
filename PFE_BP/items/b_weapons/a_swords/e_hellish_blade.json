@@ -1,0 +1,60 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:hellish_blade",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.sword"
+			}
+		},
+		"components": {
+			"minecraft:damage": 15,
+			"minecraft:durability": {
+				"max_durability": 1800,
+				"damage_chance": {
+					"max": 100,
+					"min": 60
+				}
+			},
+			"minecraft:enchantable": {
+				"slot": "sword",
+				"value": 60
+			},
+			"minecraft:icon":"poke_hellish_sword",
+			"minecraft:hover_text_color": "dark_red",
+			"minecraft:can_destroy_in_creative": false,
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"poke:repair_core"
+						],
+						"repair_amount": "query.max_durability"
+					},
+					{
+						"items": [
+							"poke:hellish_ingot"
+						],
+						"repair_amount": "query.max_durability*0.25"
+					},
+					{
+						"items": [
+							"poke:hellish_nugget"
+						],
+						"repair_amount": "query.max_durability*0.028"
+					}
+				]
+			},
+			"minecraft:digger": {
+				"destroy_speeds": [
+					{"block":"minecraft:web","speed": 60},
+					{"block":"minecraft:bamboo_sapling","speed": 60},
+					{"block":"minecraft:bamboo","speed": 60}
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,58 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "poke:onyx_battleaxe",
+      "menu_category": {
+        "category": "equipment",
+        "group": "itemGroup.name.sword"
+      }
+    },
+    "components": {
+      "minecraft:icon":"poke_onyx_battleaxe",
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true,
+      "minecraft:durability": {
+        "max_durability": 3750,"damage_chance": {"max": 100,"min": 60}
+      },
+      "minecraft:damage": 15,
+      "minecraft:enchantable": {
+        "value": 27,
+        "slot": "sword"
+      },
+      "minecraft:can_destroy_in_creative": false,
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": [
+              "poke:repair_core"
+            ],
+            "repair_amount": "query.max_durability"
+          },
+          {
+            "items": [
+              "poke:onyx_ingot"
+            ],
+            "repair_amount": 200
+          },
+          {
+            "items": [
+              "poke:onyx_nugget"
+            ],
+            "repair_amount": 23
+          }
+        ]
+      },
+      "minecraft:cooldown": {
+        "category": "poke:axe_use",
+        "duration": 2.5
+      },
+			"minecraft:tags": {"tags": [
+				"function pfe_items/battleaxe/onyx"
+			]},
+			"minecraft:custom_components": [
+				"poke:cc_on_use"
+			]
+    }
+  }
+}
