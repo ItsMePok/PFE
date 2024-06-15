@@ -1,0 +1,18 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "poke:chiseled_cobalt_slab_stonecut"
+		},
+		"tags": [
+			"stonecutter"
+		],
+		"ingredients": [
+			{"item": "poke:cobalt_block"}
+		],
+		"result": {
+			"item": "poke:chiseled_cobalt_slab",
+			"count": 8
+		}
+	}
+}

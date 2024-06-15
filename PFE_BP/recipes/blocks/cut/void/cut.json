@@ -1,0 +1,30 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:cut_void_crafting_table"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": [
+			{
+				"item": "poke:void_ingot"
+			}
+		],
+		"key": {
+			"C": {
+				"item": "poke:void_block"
+			}
+		},
+		"pattern": [
+			"CC",
+			"CC"
+		],
+		"result": {
+			"item": "poke:cut_void",
+			"count": 12
+		},
+		"priority": 0
+	}
+}

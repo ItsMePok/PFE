@@ -1,0 +1,20 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "poke:cut_demonic_stonecut"
+		},
+		"tags": [
+			"stonecutter"
+		],
+		"ingredients": [
+			{
+				"item": "poke:demonic_block"
+			}
+		],
+		"result": {
+			"item": "poke:cut_demonic",
+			"count": 4
+		}
+	}
+}
