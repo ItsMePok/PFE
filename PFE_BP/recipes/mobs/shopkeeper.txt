@@ -1,0 +1,47 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:shopkeeper"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" E ",
+			"EXE",
+			" E "
+		],
+		"unlock": [
+			{
+				"item": "poke:dollor_bill_10"
+			},
+			{
+				"item": "poke:dollor_bill_5"
+			},
+			{
+				"item": "poke:dollor_bill_1"
+			},
+			{
+				"item": "egg"
+			},
+			{
+				"item": "diamond"
+			},
+			{
+				"item": "emerald"
+			}
+		],
+		"key": {
+			"X": {
+				"item": "egg"
+			},
+			"E": {
+				"item": "emerald"
+			}
+		},
+		"result": {
+			"item": "poke:spawn_shopkeeper"
+		}
+	}
+}

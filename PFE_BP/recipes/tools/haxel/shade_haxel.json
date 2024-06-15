@@ -1,0 +1,23 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {"identifier": "poke:shade_haxel"},
+		"tags": ["crafting_table"],
+		"pattern": [
+			"###",
+			"#U ",
+			" E "
+		],
+		"unlock": [
+			{"item":"poke:shade_ingot"},
+			{"item":"poke:cobalt_haxel"},
+			{"item":"poke:upgrade_core"}
+		],
+		"key": {
+			"#":{"item":"poke:shade_block"},
+			"E":{"item":"poke:cobalt_haxel"},
+			"U":{"item":"poke:upgrade_core"}
+		},
+		"result":{"item":"poke:shade_haxel"}
+	}
+}

@@ -1,0 +1,32 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:nebula_hoe"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"NN",
+			" i",
+			" i"
+		],
+        "unlock": [
+			{
+				"item": "poke:nebula_ingot"
+			}	
+		],
+		"key": {
+			"i": {
+				"item": "poke:nebula_ingot"
+			},
+			"N": {
+				"item": "poke:nebula_block"
+			}
+		},
+		"result": {
+			"item": "poke:nebula_hoe"
+		}
+	}
+}

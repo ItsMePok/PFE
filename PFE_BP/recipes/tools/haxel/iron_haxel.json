@@ -1,0 +1,35 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:iron_haxel"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"NNN",
+			"Ni ",
+			" # "
+		],
+		"unlock": [
+			{
+				"item": "iron_ingot"
+			}
+		],
+		"key": {
+			"i": {
+				"item": "stick"
+			},
+			"#": {
+				"item": "iron_ingot"
+			},
+			"N": {
+				"item": "iron_block"
+			}
+		},
+		"result": {
+			"item": "poke:iron_haxel"
+		}
+	}
+}

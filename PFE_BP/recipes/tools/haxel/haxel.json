@@ -1,0 +1,41 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:haxel"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"E#N",
+			"#i",
+			" i "
+		],
+		"unlock": [
+			{
+				"item": "poke:onyx_ingot"
+			},
+			{
+				"item": "poke:amethyst_haxel"
+			}	
+		],
+		"key": {
+			"i": {
+				"item": "poke:onyx_shaft"
+			},
+			"#": {
+				"item": "poke:onyx_block"
+			},
+			"E": {
+				"item": "poke:amethyst_haxel"
+			},
+			"N": {
+				"item": "nether_star"
+			}
+		},
+		"result": {
+			"item": "poke:haxel"
+		}
+	}
+}

@@ -1,0 +1,41 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:listener"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"NEN",
+			"GFG",
+			"NYN"
+		],
+		"unlock": [
+			{
+				"item": "poke:nebula_ingot"
+			}
+		],
+		"key": {
+			"N": {
+				"item": "poke:nebula_block"
+			},
+			"F": {
+				"item": "poke:banished_star_x4"
+			},
+			"Y": {
+				"item": "poke:empty_cassette"
+			},
+			"E": {
+				"item": "poke:antenna"
+			},
+			"G": {
+				"item": "sculk_catalyst"
+			}
+		},
+		"result": {
+			"item": "poke:spawn_listener"
+		}
+	}
+}
