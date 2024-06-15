@@ -1,0 +1,27 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:death_sword"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" N ",
+			"ANA",
+			"iSU"
+		],
+		"unlock": [
+			{"item": "poke:death_ingot"}
+		],
+		"key": {
+			"i":{"item": "poke:void_sword"},
+			"A":{"item": "poke:death_ingot"},
+			"S":{"item":"poke:demonic_stick"},
+			"U":{"item":"poke:platinum_upgrade_core"},
+			"N":{"item": "poke:death_block"}
+		},
+		"result": {"item": "poke:death_sword"}
+	}
+}

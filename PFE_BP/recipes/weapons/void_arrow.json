@@ -1,0 +1,30 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "poke:void_arrow"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": [
+			{
+				"item": "arrow"
+			}
+		],
+		"ingredients": [
+			{
+				"item": "minecraft:arrow",
+				"data": 0,
+				"count": 8
+			},
+			{
+				"item": "poke:void_nugget"
+			}
+		],
+		"result": {
+			"item": "poke:void_arrow",
+			"count": 8
+		}
+	}
+}

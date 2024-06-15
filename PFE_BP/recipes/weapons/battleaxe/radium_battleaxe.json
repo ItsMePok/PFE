@@ -1,0 +1,28 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:radium_battleaxe"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"DDD",
+			"DSD",
+			" D "
+		],
+		"unlock": [
+			{"item": "poke:radium_ingot"},
+			{"item": "poke:radium_block"},
+			{"item": "poke:onyx_shaft"}
+		],
+		"key": {
+			"D": {"item": "poke:radium_block"},
+			"S": {"item": "poke:onyx_shaft"}
+		},
+		"result": {
+			"item": "poke:radium_battleaxe"
+		}
+	}
+}

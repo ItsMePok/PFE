@@ -1,0 +1,29 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:recipe_shaped": {
+        "description": {"identifier": "poke:dye_unmixer"},
+        "tags":["crafting_table"],
+        "pattern": [
+            "PBP",
+            "HCH",
+            "OEO"
+        ],
+        "unlock": [
+        {"item": "poke:pocket_knife"},
+        {"item":"poke:plastic"},
+        {"item":"poke:electric_component"},
+        {"item":"armor_stand"},
+        {"item":"poke:red_button"}
+        ],
+        "key": {
+            "P":{"item":"poke:plastic"},
+            "B":{"item":"poke:banished_star_x2"},
+            "H":{"item":"poke:holy_ingot"},
+            "C":{"item":"cauldron"},
+            "O":{"item": "poke:onyx_ingot"},
+            "E":{"item":"poke:electric_component"}
+            
+        },
+        "result": {"item":"poke:dye_unmixer"}
+    }
+}

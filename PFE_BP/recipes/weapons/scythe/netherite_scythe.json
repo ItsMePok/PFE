@@ -1,0 +1,38 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:netherite_scythe"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"ZZX",
+			" # ",
+			"Y  "
+		],
+        "unlock": [
+			{
+				"item": "netherite_ingot"
+			}
+		],
+		"key": {
+			"Y": {
+				"item": "poke:scrappy_block"
+			},
+			"X": {
+				"item": "netherite_ingot"
+			},
+			"Z": {
+				"item": "netherite_ingot"
+			},
+			"#": {
+				"item": "poke:diamond_scythe" 
+			}
+		},
+		"result": {
+			"item": "poke:netherite_scythe"
+		}
+	}
+}

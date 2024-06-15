@@ -1,0 +1,14 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "poke:unmix_gray"
+        },
+        "pattern": ["D"],
+        "unlock":[{"item":"gray_dye"}],
+        "tags": ["poke_dye_unmixer"],
+        "group": "dye_unmixer",
+        "key":{"D":{"item":"gray_dye"}},
+        "result":[{"item":"black_dye"},{"item":"white_dye"}]
+    }
+}

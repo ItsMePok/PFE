@@ -1,0 +1,14 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "poke:colorizer"
+        },
+        "pattern": [" R ","GNB"," Y "],
+        "unlock":[{"item":"poke:necromancer_staff"}],
+        "tags": ["poke_dye_unmixer"],
+        "group": "dye_unmixer",
+        "key":{"R":{"item":"red_dye"},"G":{"item":"green_dye"},"N":{"item":"poke:necromancer_staff"},"B":{"item": "blue_dye"},"Y":{"item":"yellow_dye"}},
+        "result":{"item":"poke:colorizer"}
+    }
+}

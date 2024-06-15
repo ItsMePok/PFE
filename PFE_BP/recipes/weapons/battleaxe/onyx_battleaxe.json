@@ -1,0 +1,46 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:onyx_battleaxe"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"DDD",
+			"DSD",
+			"UB "
+		],
+		"unlock": [
+			{
+				"item": "poke:onyx_ingot"
+			},
+			{
+				"item": "poke:onyx_block"
+			},
+			{
+				"item": "poke:amethyst_battleaxe"
+			}
+		],
+		"key": {
+			"B": {
+				"item": "poke:amethyst_battleaxe"
+			},
+			"D": {
+				"item": "poke:onyx_block"
+			},
+			"S": {
+				"item": "poke:onyx_shaft"
+			},
+			"U": {
+				"item": "poke:upgrade_core"
+			}
+		},
+		"result": [
+			{
+				"item": "poke:onyx_battleaxe"
+			}
+		]
+	}
+}
