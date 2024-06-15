@@ -1,0 +1,40 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:calibrated_cobblestone_generator_north"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"XGX",
+			"ACA",
+			"XAX"
+		],
+		"unlock": [
+			{
+				"item": "poke:cobblestone_gen"
+			}
+		],
+		"key": {
+			"X": {
+				"item": "poke:cobalt_ingot"
+			},
+			"A": {
+				"item": "amethyst_shard"
+			},
+			"C": {
+				"item": "poke:cobblestone_gen"
+			},
+			"G": {
+				"item": "poke:gps_module"
+			}
+		},
+		"result": [
+			{
+				"item": "poke:calibrated_cobblestone_generator_north"
+			}
+		]
+	}
+}

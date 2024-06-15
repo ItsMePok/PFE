@@ -1,0 +1,26 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:block_breaker"
+		},
+		"tags": ["crafting_table"],
+		"pattern": [
+			"CPC",
+			"PIP",
+			"CPC"
+		],
+		"unlock": [
+			{"item": "poke:cobalt_ingot"},
+			{"item":"iron_pickaxe"}
+		],
+		"key": {
+			"C": {"item": "poke:cobalt_ingot"},
+			"P": {"item": "planks"},
+			"I": {"item": "iron_pickaxe"}
+		},
+		"result": [
+			{"item": "poke:block_breaker"}
+		]
+	}
+}

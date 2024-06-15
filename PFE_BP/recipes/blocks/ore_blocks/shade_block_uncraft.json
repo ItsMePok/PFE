@@ -1,0 +1,28 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:shade_block_un-craft"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"#"
+		],
+		"unlock": [
+			{
+				"item": "poke:shade_block"
+			}
+		],
+		"key": {
+			"#": {
+				"item": "poke:shade_block"
+			}
+		},
+		"result": {
+			"item": "poke:shade_ingot",
+			"count": 9
+		}
+	}
+}

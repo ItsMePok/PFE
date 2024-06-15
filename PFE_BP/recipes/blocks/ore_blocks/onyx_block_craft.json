@@ -1,0 +1,29 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:onyx_block_craft"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"###",
+			"###",
+			"###"
+		],
+		"unlock": [
+			{
+				"item": "poke:onyx_ingot"
+			}	
+		],
+		"key": {
+			"#": {
+				"item": "poke:onyx_ingot"
+			}
+		},
+		"result": {
+			"item": "poke:onyx_block"
+		}
+	}
+}

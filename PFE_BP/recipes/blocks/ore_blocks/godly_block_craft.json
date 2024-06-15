@@ -1,0 +1,29 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:godly_block_craft"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"###",
+			"###",
+			"###"
+		],
+		"unlock": [
+			{
+				"item": "poke:godly_ingot"
+			}
+		],
+		"key": {
+			"#": {
+				"item": "poke:godly_ingot"
+			}
+		},
+		"result": {
+			"item": "poke:godly_block"
+		}
+	}
+}

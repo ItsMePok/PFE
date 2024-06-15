@@ -1,0 +1,13 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_furnace": {
+		"description": {
+			"identifier": "poke:cobbled_limestone"
+		},
+		"tags": [
+			"furnace"
+		],
+		"input": "poke:cobbled_limestone",
+		"output": "poke:limestone"
+	}
+}

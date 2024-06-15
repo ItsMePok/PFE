@@ -1,0 +1,29 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:hellish_block_craft"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"###",
+			"###",
+			"###"
+		],
+		"unlock": [
+			{
+				"item": "poke:hellish_ingot"
+			}
+		],
+		"key": {
+			"#": {
+				"item": "poke:hellish_ingot"
+			}
+		},
+		"result": {
+			"item": "poke:hellish_block"
+		}
+	}
+}

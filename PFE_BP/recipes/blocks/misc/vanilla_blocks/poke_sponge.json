@@ -1,0 +1,44 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:poke_sponge"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": [
+			{
+				"item": "poke:hellish_ingot"
+			},
+			{
+				"item": "sand"
+			},
+			{
+				"item": "sponge"
+			},
+			{
+				"item": "prismarine"
+			}
+		],
+		"pattern": [
+			"BGB",
+			"G#G",
+			"BGB"
+		],
+		"key": {
+			"#": {
+				"item": "poke:hellish_ingot"
+			},
+			"B": {
+				"item": "sand"
+			},
+			"G": {
+				"item": "prismarine"
+			}
+		},
+		"result": {
+			"item": "sponge"
+		}
+	}
+}
