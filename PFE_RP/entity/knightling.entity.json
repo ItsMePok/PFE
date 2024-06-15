@@ -1,0 +1,38 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "poke:knightling",
+			"materials": {
+				"default": "entity"
+			},
+			"textures": {
+				"default": "textures/entity/poke_knightling"
+			},
+			"geometry": {
+				"default": "geometry.poke.knightling"
+			},
+			"animations": {
+				"idle": "animation.poke.knightling.idle",
+				"look_at_target": "animation.common.look_at_target",
+				"move": "animation.poke.knightling.walk",
+				"controller":"controller.animation.poke.knightling"
+			},
+			"scripts": {
+				"animate": [
+					"controller"
+				]
+			},
+			"sound_effects": {
+				"poke.knightling.bonk":"poke.knightling.bonk"
+			},
+			"render_controllers": [
+				"controller.render.poke.knightling"
+			],
+			"spawn_egg": {
+				"base_color": "#313131",
+				"overlay_color": "#67ca40"
+			}
+		}
+	}
+}

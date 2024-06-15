@@ -1,0 +1,436 @@
+{
+	"format_version": "1.20.20",
+	"sound_definitions": {
+		"poke.knightling.bonk":{
+			"category": "hostile",
+			"max_distance": 8,
+			"sounds": [
+				{
+					"name": "sounds/pfe/bonk",
+					"volume": 0.8
+				}
+			]
+		},
+		"poke.cassette_activate":{
+			"category": "player",
+			"max_distance": 10,
+			"sounds": [
+				"sounds/pfe/cassette_activate"
+			]
+		},
+		"poke.battleaxe":{
+			"category": "player",
+			"max_distance": 10,
+			"sounds": [
+				"sounds/pfe/poke_battleaxe"
+			]
+		},
+		"poke.windzooka":{
+			"category": "player",
+			"max_distance": 35,
+			"sounds": [
+				"sounds/pfe/poke_battleaxe"
+			]
+		},
+		"poke.med_ring_use":{
+			"category": "player",
+			"max_distance": 10,
+			"sounds": [
+				"sounds/pfe/med_ring_use"
+			]
+		},
+		"record.listen": {
+			"category": "ui",
+			"max_distance": 64,
+			"sounds": [
+				{
+					"load_on_low_memory": true,
+					"name": "sounds/pfe/listener_boss",
+					"stream": true,
+					"volume": 0.8
+				}
+			]
+		},
+		"poke.quest.comp": {
+			"category": "ui",
+			"max_distance": 64,
+			"sounds": [
+				{
+					"name": "sounds/pfe/poke_q_comp",
+					"volume": 0.8
+				}
+			]
+		},
+		"poke.quest.info": {
+			"category": "ui",
+			"max_distance": 64,
+			"sounds": [
+				{
+					"name": "sounds/pfe/quest_info",
+					"volume": 0.8
+				}
+			]
+		},
+		"poke.record.listen" : {
+			"category" : "record",
+			"max_distance" : 64.0,
+			"min_distance" : null,
+			"sounds" : [
+				{
+					"load_on_low_memory" : true,
+					"name" : "sounds/pfe/listener_boss",
+					"stream" : true,
+					"volume" : 0.50
+				}
+			]
+		},
+		"play.listenerboss.hurt": {
+			"category": "ui",
+			"sounds": [
+				{
+					"stream": true,
+					"name": "sounds/pfe/listener_boss_hurt"
+				}
+			]
+		},
+		"play.listenerboss.victory": {
+			"category": "ui",
+			"sounds": [
+				"sounds/pfe/listener_victory"
+			]
+		},
+		"play.galatic_march": {
+			"category": "ui",
+			"max_distance": 64,
+			"sounds": [
+				{
+					"stream":true,
+					"name": "sounds/pfe/galatic_march"
+				}
+			]
+		},
+		"poke.record.march": {
+			"category": "ui",
+			"max_distance": 64,
+			"sounds": [
+				{
+					"stream":true,
+					"name": "sounds/pfe/galatic_march"
+				}
+			]
+		},
+		"mob.token_trader.death": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/mob/villager/death"
+			]
+		},
+		"mob.token_trader.haggle": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/mob/villager/haggle1",
+				"sounds/mob/villager/haggle2",
+				"sounds/mob/villager/haggle3"
+			]
+		},
+		"mob.token_trader.hit": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/mob/villager/hit1",
+				"sounds/mob/villager/hit2",
+				"sounds/mob/villager/hit3",
+				"sounds/mob/villager/hit4"
+			]
+		},
+		"mob.token_trader.idle": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/mob/villager/idle1",
+				"sounds/mob/villager/idle2",
+				"sounds/mob/villager/idle3"
+			]
+		},
+		"mob.token_trader.no": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/mob/villager/no1",
+				"sounds/mob/villager/no2",
+				"sounds/mob/villager/no3"
+			]
+		},
+		"mob.token_trader.yes": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/mob/villager/yes1",
+				"sounds/mob/villager/yes2",
+				"sounds/mob/villager/yes3"
+			]
+		},
+		"poke.record.creator": {
+			"category": "ui",
+			"max_distance": 64.0,
+			"sounds": [
+			{
+				"name": "sounds/music/game/records/creator",
+				"stream": true,
+				"volume": 0.5
+			}
+			]
+		},
+		"poke.record.creatormusicbox": {
+			"category": "ui",
+			"max_distance": 64.0,
+			"sounds": [
+			{
+				"name": "sounds/music/game/records/creator_music_box",
+				"stream": true,
+				"volume": 0.5
+			}
+			]
+		},
+		"poke.record.precipice": {
+			"category": "ui",
+			"max_distance": 64.0,
+			"sounds": [
+			{
+				"name": "sounds/music/game/records/precipice",
+				"stream": true,
+				"volume": 0.5
+			}
+			]
+		},
+		"poke.record.11": {
+			"category": "ui",
+			"max_distance": 256,
+			"sounds": [
+				{
+					"load_on_low_memory": true,
+					"name": "sounds/music/game/records/11",
+					"stream": true,
+					"volume": 0.50
+				}
+			]
+		},
+		"poke.record.13": {
+			"category": "ui",
+			"max_distance": 256,
+			"sounds": [
+				{
+					"load_on_low_memory": true,
+					"name": "sounds/music/game/records/13",
+					"stream": true,
+					"volume": 0.50
+				}
+			]
+		},
+		"poke.record.blocks": {
+			"category": "ui",
+			"max_distance": 256,
+			"sounds": [
+				{
+					"load_on_low_memory": true,
+					"name": "sounds/music/game/records/blocks",
+					"stream": true,
+					"volume": 0.50
+				}
+			]
+		},
+		"poke.record.cat": {
+			"category": "ui",
+			"max_distance": 256,
+			"sounds": [
+				{
+					"load_on_low_memory": true,
+					"name": "sounds/music/game/records/cat",
+					"stream": true,
+					"volume": 0.50
+				}
+			]
+		},
+		"poke.record.chirp": {
+			"category": "ui",
+			"max_distance": 256,
+			"sounds": [
+				{
+					"load_on_low_memory": true,
+					"name": "sounds/music/game/records/chirp",
+					"stream": true,
+					"volume": 0.50
+				}
+			]
+		},
+		"poke.record.far": {
+			"category": "ui",
+			"max_distance": 256,
+			"sounds": [
+				{
+					"load_on_low_memory": true,
+					"name": "sounds/music/game/records/far",
+					"stream": true,
+					"volume": 0.50
+				}
+			]
+		},
+		"poke.record.mall": {
+			"category": "ui",
+			"max_distance": 256,
+			"sounds": [
+				{
+					"load_on_low_memory": true,
+					"name": "sounds/music/game/records/mall",
+					"stream": true,
+					"volume": 0.50
+				}
+			]
+		},
+		"poke.record.mellohi": {
+			"category": "ui",
+			"max_distance": 256,
+			"sounds": [
+				{
+					"load_on_low_memory": true,
+					"name": "sounds/music/game/records/mellohi",
+					"stream": true,
+					"volume": 0.50
+				}
+			]
+		},
+		"poke.record.stal": {
+			"category": "ui",
+			"max_distance": 256,
+			"sounds": [
+				{
+					"load_on_low_memory": true,
+					"name": "sounds/music/game/records/stal",
+					"stream": true,
+					"volume": 0.50
+				}
+			]
+		},
+		"poke.record.strad": {
+			"category": "ui",
+			"max_distance": 256,
+			"sounds": [
+				{
+					"load_on_low_memory": true,
+					"name": "sounds/music/game/records/strad",
+					"stream": true,
+					"volume": 0.50
+				}
+			]
+		},
+		"poke.record.wait": {
+			"category": "ui",
+			"max_distance": 256,
+			"sounds": [
+				{
+					"load_on_low_memory": true,
+					"name": "sounds/music/game/records/wait",
+					"stream": true,
+					"volume": 0.50
+				}
+			]
+		},
+		"poke.record.pigstep": {
+			"category": "ui",
+			"max_distance": 256,
+			"sounds": [
+				{
+					"load_on_low_memory": true,
+					"name": "sounds/music/game/records/pigstep_master",
+					"stream": true,
+					"volume": 0.50
+				}
+			]
+		},
+		"poke.record.relic": {
+			"category": "ui",
+			"max_distance": 256,
+			"sounds": [
+				{
+					"load_on_low_memory": true,
+					"name": "sounds/music/game/records/relic",
+					"stream": true,
+					"volume": 0.50
+				}
+			]
+		},
+		"poke.record.otherside": {
+			"category": "ui",
+			"max_distance": 256,
+			"sounds": [
+				{
+					"load_on_low_memory": true,
+					"name": "sounds/music/game/records/otherside",
+					"stream": true,
+					"volume": 0.50
+				}
+			]
+		},
+		"poke.record.5": {
+			"category": "ui",
+			"max_distance": 256,
+			"sounds": [
+				{
+					"load_on_low_memory": true,
+					"name": "sounds/music/game/records/5",
+					"stream": true,
+					"volume": 0.50
+				}
+			]
+		},
+		"poke.record.ward": {
+			"category": "ui",
+			"max_distance": 256,
+			"sounds": [
+				{
+					"load_on_low_memory": true,
+					"name": "sounds/music/game/records/ward",
+					"stream": true,
+					"volume": 0.50
+				}
+			]
+		},
+		"poke.block.false_permissions" : {
+			"category" : "ui",
+			"max_distance" : null,
+			"sounds" : [ "sounds/block/permissions/shimmer/shimmerblock" ]
+		},
+		"poke.conduit.deactivate" : {
+			"category" : "ui",
+			"max_distance" : null,
+			"sounds" : [ "sounds/block/conduit/deactivate" ]
+		},
+		"poke.block.bell.hit" : {
+			"category" : "ui",
+			"max_distance" : 256,
+			"sounds" : [
+			   {
+				  "load_on_low_memory" : true,
+				  "name" : "sounds/block/bell/bell_use01",
+				  "pitch" : 0.950
+			   },
+			   {
+				  "name" : "sounds/block/bell/bell_use02",
+				  "pitch" : 0.950
+			   },
+			   {
+				  "name" : "sounds/block/bell/bell_use01",
+				  "pitch" : 0.930
+			   },
+			   {
+				  "name" : "sounds/block/bell/bell_use02",
+				  "pitch" : 0.930
+			   },
+			   {
+				  "name" : "sounds/block/bell/bell_use01",
+				  "pitch" : 0.970
+			   },
+			   {
+				  "name" : "sounds/block/bell/bell_use02",
+				  "pitch" : 0.970
+			   }
+			]
+		 }
+	}
+}

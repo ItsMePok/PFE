@@ -1,0 +1,51 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "poke:warped_sporecat",
+			"materials": {
+				"default": "cat"
+			},
+			"textures": {
+				"white": "textures/entity/warped_sporecat/white",
+				"red": "textures/entity/warped_sporecat/red",
+				"siamese": "textures/entity/warped_sporecat/siamese",
+				"persian": "textures/entity/warped_sporecat/persian",
+				"calico": "textures/entity/warped_sporecat/calico",
+				"white_tame": "textures/entity/warped_sporecat/white_tame",
+				"red_tame": "textures/entity/warped_sporecat/redtabby_tame",
+				"siamese_tame": "textures/entity/warped_sporecat/siamesecat_tame",
+				"calico_tame": "textures/entity/warped_sporecat/calico_tame",
+				"persian_tame": "textures/entity/warped_sporecat/persian_tame"
+			},
+			"geometry": {
+				"default": "geometry.warped_sporecat"
+			},
+			"animations": {
+				"sneak": "animation.warped_sporecat.sneak",
+				"walk": "animation.warped_sporecat.walk",
+				"sprint": "animation.warped_sporecat.sprint",
+				"sit": "animation.warped_sporecat.sit",
+				"look_at_target": "animation.common.look_at_target",
+				"baby_transform": "animation.warped_sporecat.baby_transform",
+				"lie_down": "animation.warped_sporecat.lie_down"
+			},
+			"animation_controllers": [
+				{
+					"look_at_target": "controller.animation.cat.look_at_target"
+				},
+				{
+					"move": "controller.animation.cat.move"
+				},
+				{
+					"baby": "controller.animation.cat.baby"
+				}
+			],
+			"render_controllers": ["controller.render.poke.sporecat"],
+			"spawn_egg": {
+				"base_color": "#12b8b2",
+				"overlay_color": "#ff8900"
+			}
+		}
+	}
+}

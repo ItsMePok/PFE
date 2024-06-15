@@ -1,0 +1,23 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.circuit_sword.first_person_hold": {
+			"loop": true,
+			"bones": {
+				"root_item": {
+					"rotation": [174.25048, 14.97442, -22.1395],
+					"position": [-4, 32, 9]
+				}
+			}
+		},
+		"animation.circuit_sword.third_person_hold": {
+			"loop": true,
+			"bones": {
+				"root_item": {
+					"rotation": [96.56395, -6.51038, 26.00335],
+					"position": [-0.6, 23.5, 5.5]
+				}
+			}
+		}
+	}
+}

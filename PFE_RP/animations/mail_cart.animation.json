@@ -1,0 +1,17 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.mail_cart.move": {
+			"loop": true,
+			"bones": {
+				"bottom": {
+					"rotation": [
+						"variable.hurt > 0 ? -Math.sin(variable.hurt * 360 / (Math.pi * 2)) * variable.hurt * (((20 * 2 - query.structural_integrity) - query.frame_alpha) < 0 ? 0: (20 * 2 - query.structural_integrity) - query.frame_alpha) / 10 * query.hurt_direction : 0",
+						"q.body_y_rotation",
+						0
+					]
+				}
+			}
+		}
+	}
+}

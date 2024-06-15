@@ -1,0 +1,39 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "poke:necromancer",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/poke_necromancer"
+			},
+			"geometry": {
+				"default": "geometry.poke.necromancer"
+			},
+			"animations": {
+				"look_at_target_default": "animation.common.look_at_target",
+				"idle": "animation.poke.necromancer.idle",
+				"walk": "animation.poke.necromancer.walk",
+				"summon": "animation.poke.necromancer.summon",
+				"melee_attack":"animation.poke.necromancer.melee_attack",
+				"controller":"controller.animation.poke.necromancer",
+				"melee_attack_controller":"controller.animation.necromancer.melee_attacking"
+			},
+			"scripts": {
+				"animate": ["controller","melee_attack_controller"]
+			},
+			"particle_effects": {
+				"spell": "minecraft:evoker_spell"
+			},
+			"render_controllers": [
+				"controller.render.poke.knightling"
+			],
+			"spawn_egg": {
+				"base_color": "#bdb4b4",
+				"overlay_color": "#371e4e"
+			}
+		}
+	}
+}

@@ -1,0 +1,82 @@
+Anyone is allowed to view/learn from the code of PFE
+if you have any questions about addons you can ask on discord (username: itsmepok)
+
+Anything listed below has been used at some point to develop PFE
+
+Raccoon, Necromancer, Mushroom Buddy, Cobalt Golem, Dragon,Cobalt Robe,
+Maxwell, Mr Duck, Dapper Fit, Little Dapper Fit, Big Dapper Fit, Apollo, Caged Soul,
+Scythe Textures, Rat
+Were made by O2God for PFE
+
+Code for Slabs & Tool Durability were copied from the bedrock wiki
+https://wiki.bedrock.dev/
+
+Animated item textures
+Some Code from Hero Studios
+https://mcpedl.com/items-animateds-template-creators-pack/
+
+
+Programs Used
+
+BlockBench (For Modeling & Item, Block, & Entity Wizard)
+https://www.blockbench.net/
+
+Asprite (For Textures)
+https://www.aseprite.org/
+
+Note Block Studio (For Boss Music, and other sound effects)
+https://opennbs.org/
+
+VS Code
+https://code.visualstudio.com/
+
+VS Code Extensions:
+BlockceptionLtd.blockceptionvscodeminecraftbedrockdevelopmentextension
+destruc7i0n.vscode-bedrock-definitions
+streetsidesoftware.code-spell-checker
+SuperAnt.mc-dp-icons
+oderwat.indent-rainbow
+arcensoth.language-mcfunction
+Nobuwu.mc-color
+mojang-studios.minecraft-debugger
+zz5840.minecraft-lang-colorizer
+JannisX11.snowstorm
+netcorext.uuid-generator
+AntiAntiSepticeye.vscode-color-picker
+
+Snowstorm (For Particles)
+https://snowstorm.app/
+
+AnyLanguage (for pack translation)
+https://solveddev.github.io/AnyLanguage/
+
+Other Sites
+MediaFire (for download option)
+https://www.mediafire.com/
+
+MCPEDL
+https://mcpedl.com/pfe
+
+ModBay
+https://modbay.org/mods/372-pokes-fantasy-expansion.html
+
+Wikis & Info
+https://wiki.bedrock.dev/
+https://bedrock.dev/
+https://github.com/Mojang/bedrock-samples
+https://jaylydev.github.io/scriptapi-docs/
+https://learn.microsoft.com/en-us/minecraft/creator/scriptapi/
+
+Programs I have used but no longer using
+
+Bridge
+https://bridge-core.app/
+
+Paint.net (For Textures)
+https://www.getpaint.net/
+
+Regolith (Addon Compiling)
+https://bedrock-oss.github.io/regolith/
+
+Mcreator (Used when first starting addons)
+https://mcreator.net/

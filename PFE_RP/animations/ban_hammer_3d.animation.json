@@ -1,0 +1,22 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.ban_hammer_3d.first_person_hold": {
+			"loop": true,
+			"bones": {
+				"Main": {
+					"rotation": [39.60991, 27.72884, -72.89009],
+					"position": [-2, -1, 10]
+				}
+			}
+		},
+		"animation.ban_hammer_3d.third_person_hold": {
+			"loop": true,
+			"bones": {
+				"Main": {
+					"position": [0, 1, 1]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,62 @@
+{
+	"format_version": "1.20.60",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:radium_leggings",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.leggings"
+			}
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:enchantable": {
+				"value": 42,
+				"slot": "armor_legs"
+			},
+			"minecraft:durability": {
+				"max_durability": 4125,
+				"damage_chance": {
+					"min": 60,
+					"max": 100
+				}
+			},
+			"minecraft:icon": { 
+				"textures": { 
+				  "default": "radium_leggings" } 
+			  }, 
+			"minecraft:wearable": {
+				"slot": "slot.armor.legs",
+				"protection": 24
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"poke:radium_ingot"
+						],
+						"repair_amount": "query.max_durability * 0.25"
+					},
+					{
+						"items": [
+							"poke:repair_core"
+						],
+						"repair_amount": "query.max_durability"
+					},
+					{
+						"items": [
+							"poke:radium_leggings"
+						],
+						"repair_amount": "context.other->query.remaining_durability + 0.12 * context.other->query.max_durability"
+					}
+				]
+			}, 
+			"minecraft:tags": { 
+			  "tags": [ 
+				"minecraft:is_armor", 
+				"minecraft:trimmable_armors" 
+			  ] 
+			} 
+		  } 
+		} 
+	  }

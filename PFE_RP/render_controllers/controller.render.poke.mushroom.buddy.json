@@ -1,0 +1,32 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+      "controller.render.poke.mushroom.buddy": {
+        "arrays": {
+          "textures": {
+            "Array.skins": [
+              "Texture.white",
+              "Texture.black",
+              "Texture.red",
+              "Texture.siamese",
+              "Texture.british",
+              "Texture.calico",
+              "Texture.persian",
+              "Texture.ragdoll",
+              "Texture.tabby",
+              "Texture.jellie",
+              "Texture.blackcat",
+              "Texture.britishshorthair",
+              "Texture.redtabby",
+              "Texture.tuxedo"
+            ]
+          
+          }
+        },
+        "geometry": "Geometry.default",
+        "materials": [ { "*": "Material.default" } ],
+        "textures": [ "Array.skins[query.variant]" ]
+      }
+    }
+  }
+  

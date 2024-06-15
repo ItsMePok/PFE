@@ -1,0 +1,38 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "poke:baguette",
+			"render_controllers": ["controller.render.item_default"],
+			"materials": {
+				"default": "entity_alphatest",
+				"enchanted": "entity_alphatest_glint"
+			},
+			"textures": {
+				"default": "textures/items/food/poke_baguette",
+				"enchanted": "textures/misc/enchanted_item_glint"
+			},
+			"geometry": {
+				"default": "geometry.poke.scythe"
+			},
+			"animations": {
+				"first_person_hold": "animation.poke.baguette.1p",
+				"third_person_hold": "animation.poke.baguette.3p",
+				"eat":"animation.poke.baguette.eat"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"first_person_hold": "c.is_first_person"
+					},
+					{
+						"third_person_hold": "!c.is_first_person"
+					},
+					{
+						"eat": "q.is_eating && c.is_first_person"
+					}
+				]
+			}
+		}
+	}
+}

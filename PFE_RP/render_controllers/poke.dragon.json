@@ -1,0 +1,24 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.poke.dragon": {
+			"arrays": {
+				"textures": {
+					"Array.variant": [
+						"Texture.default",
+						"Texture.is_saddled"
+					]
+				}
+			},
+			"textures": [
+				"Array.variant[ query.variant ]"
+			],
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			]
+		}
+	}
+}

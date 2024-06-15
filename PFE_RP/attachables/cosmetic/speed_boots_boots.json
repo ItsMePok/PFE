@@ -1,0 +1,30 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "poke:swift_boots",
+			"materials": {
+				"default": "armor",
+				"enchanted": "armor_enchanted"
+			},
+			"textures": {
+				"default": "textures/models/armor/poke_speed_boots",
+				"enchanted": "textures/misc/enchanted_item_glint"
+			},
+			"geometry": {
+				"default": "geometry.poke.speed_boots"
+			},
+			"scripts": {
+				"parent_setup": "variable.boot_layer_visible = 0.0;"
+			},
+			"animations": {
+				"idle": "animation.speed_boots.idle",
+				"move": "animation.speed_boots.move",
+				"control": "controller.animation.speed_boots"
+			},
+			"render_controllers": [
+				"controller.render.armor"
+			]
+		}
+	}
+}

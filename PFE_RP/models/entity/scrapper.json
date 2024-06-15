@@ -1,0 +1,122 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.poke.scrapper",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 5,
+				"visible_bounds_offset": [0, 2.5, 0]
+			},
+			"bones": [
+				{
+					"name": "body",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-4, 12, -3], "size": [8, 12, 6], "uv": [46, 44]},
+						{"origin": [-4, 6, -3], "size": [8, 18, 6], "inflate": 0.5, "uv": [0, 14]}
+					],
+					"locators": {
+						"lead_hold": [0, 24, 0]
+					}
+				},
+				{
+					"name": "head",
+					"parent": "body",
+					"pivot": [0, 24, 0],
+					"cubes": [
+						{"origin": [-4, 24, -4], "size": [8, 10, 8], "uv": [20, 32]}
+					]
+				},
+				{
+					"name": "helmet",
+					"parent": "head",
+					"pivot": [0, 24, 0],
+					"cubes": [
+						{"origin": [-4, 24, -4], "size": [8, 10, 8], "inflate": 0.5, "uv": [28, 14]}
+					]
+				},
+				{
+					"name": "nose",
+					"parent": "head",
+					"pivot": [0, 26, 0]
+				},
+				{
+					"name": "cosmetics",
+					"parent": "head",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "Goggles",
+					"parent": "cosmetics",
+					"pivot": [-5, 27.8, 4.6],
+					"cubes": [
+						{"origin": [-5, 25.8, -5.4], "size": [4, 4, 2], "inflate": 0.2, "uv": [0, 6]},
+						{"origin": [1, 25.8, -5.4], "size": [4, 4, 2], "inflate": 0.2, "uv": [0, 0]},
+						{"origin": [-2, 26.8, -5.4], "size": [4, 2, 1], "inflate": -0.1, "uv": [48, 10]},
+						{"origin": [-4, 26.4, 4], "size": [8, 2, 1], "uv": [50, 62]},
+						{"origin": [4, 26.4, -5], "size": [1, 2, 10], "uv": [52, 10]},
+						{"origin": [-5, 26.4, -5], "size": [1, 2, 10], "uv": [50, 22]}
+					]
+				},
+				{
+					"name": "viking",
+					"parent": "cosmetics",
+					"pivot": [0, 34.31785, 0],
+					"binding": "'head'"
+				},
+				{
+					"name": "arms",
+					"parent": "body",
+					"pivot": [0, 21, -1],
+					"rotation": [-42.97, 0, 0],
+					"cubes": [
+						{"origin": [-4, 15, -3], "size": [8, 4, 4], "uv": [52, 34]},
+						{"origin": [-8, 15, -3], "size": [4, 8, 4], "uv": [38, 62]},
+						{"origin": [4, 15, -3], "size": [4, 8, 4], "uv": [0, 38]}
+					]
+				},
+				{
+					"name": "held_item",
+					"parent": "arms",
+					"pivot": [0, -1, -1]
+				},
+				{
+					"name": "leg0",
+					"parent": "body",
+					"pivot": [-2, 12, 0],
+					"cubes": [
+						{"origin": [-4, 0, -2], "size": [4, 12, 4], "uv": [0, 62]}
+					]
+				},
+				{
+					"name": "leg1",
+					"parent": "body",
+					"pivot": [2, 12, 0],
+					"cubes": [
+						{"origin": [0, 0, -2], "size": [4, 12, 4], "uv": [26, 50]}
+					]
+				},
+				{
+					"name": "toolbelt",
+					"parent": "body",
+					"pivot": [1.8, 11.58, 0.06],
+					"cubes": [
+						{"origin": [-6.5, 9, -1], "size": [1, 6, 2], "inflate": -0.1, "uv": [44, 32]},
+						{"origin": [-7.5, 13, -3], "size": [3, 2, 6], "inflate": -0.2, "uv": [62, 22]},
+						{"origin": [-7.5, 10.4, -2], "size": [3, 2, 4], "inflate": -0.2, "uv": [16, 62]},
+						{"origin": [4.23584, 12.76526, -1], "size": [1, 2, 2], "pivot": [5.03584, 14.86526, 0.1], "rotation": [0, 0, -20], "uv": [38, 50]},
+						{"origin": [4.5, 10.4, -2], "size": [3, 2, 4], "inflate": -0.2, "uv": [22, 14]},
+						{"origin": [6.74202, 12.83969, -1], "size": [1, 2, 2], "pivot": [6.74202, 14.83969, 0.1], "rotation": [0, 0, 20], "uv": [50, 34]},
+						{"origin": [6, 6.9, -1], "size": [1, 2, 2], "inflate": -0.2, "uv": [0, 14]},
+						{"origin": [5, 6.9, -1], "size": [1, 2, 2], "inflate": -0.2, "uv": [12, 38]},
+						{"origin": [5.5, 8, -1], "size": [1, 6, 2], "inflate": -0.1, "uv": [36, 0]},
+						{"origin": [-5.5, 11, -4], "size": [11, 2, 8], "uv": [36, 0]}
+					]
+				}
+			]
+		}
+	]
+}

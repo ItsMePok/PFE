@@ -1,0 +1,32 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.poke.dragon.flying": {
+			"initial_state": "tail_default",
+			"states": {
+				"tail_default": {
+					"animations": ["tail_default"],
+					"transitions": [
+						{"tail_right": "query.body_y_rotation >= 1"},
+						{"tail_left": "query.body_y_rotation <= 1 "}
+					],
+					"blend_transition": 1
+				},
+				"tail_right": {
+					"animations": ["tail_right"],
+					"transitions": [
+						{"tail_default": "query.body_y_rotation == 0"}
+					],
+					"blend_transition": 1
+				},
+				"tail_left": {
+					"animations": ["tail_left"],
+					"transitions": [
+						{"tail_default": "query.body_y_rotation == 0"}
+					],
+					"blend_transition": 1
+				}
+			}
+		}
+	}
+}

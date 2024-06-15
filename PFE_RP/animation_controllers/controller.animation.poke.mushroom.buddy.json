@@ -1,0 +1,37 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.poke.mushroom.buddy": {
+			"states": {
+				"sit": {
+					"animations": ["sit"],
+					"particle_effects": [
+						{
+							"effect": ""
+						}
+					],
+					"transitions": [
+						{"default": "!q.is_sitting"}
+					],
+					"blend_transition": 0.25
+				},
+				"walk": {
+					"animations": ["walk"],
+					"transitions": [
+						{"default": "q.ground_speed < 0.5"},
+						{"sit": "q.is_sitting"}
+					],
+					"blend_transition": 0.2
+				},
+				"default": {
+					"animations": ["idle"],
+					"transitions": [
+						{"walk": "q.ground_speed > 0.5"},
+						{"sit": "q.is_sitting"}
+					],
+					"blend_transition": 0.2
+				}
+			}
+		}
+	}
+}

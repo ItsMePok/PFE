@@ -1,0 +1,59 @@
+{
+	"format_version": "1.20.60",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:molten_leggings",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.leggings"
+			}
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:enchantable": {
+				"value": 9,
+				"slot": "armor_legs"
+			},
+			"minecraft:durability": {
+				"max_durability": 3800,
+				"damage_chance": {
+					"min": 60,
+					"max": 100
+				}
+			},
+			"minecraft:icon": { "textures": {"default": "molten_leggings" }},
+			"minecraft:wearable": {
+				"slot": "slot.armor.legs",
+				"protection": 17
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"poke:repair_core"
+						],
+						"repair_amount": "query.max_durability"
+					},
+					{
+						"items": [
+							"poke:molten_slimeball"
+						],
+						"repair_amount": "query.max_durability*0.25"
+					},
+					{
+						"items": [
+							"poke:molten_leggings"
+						],
+						"repair_amount": "context.other->query.remaining_durability+0.12*context.other->query.max_durability"
+					}
+				]
+			},
+			"minecraft:tags": { 
+				"tags": [ 
+				  "minecraft:is_armor", 
+				  "minecraft:trimmable_armors" 
+				] 
+			  } 
+			} 
+		  } 
+		}

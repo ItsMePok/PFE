@@ -1,0 +1,35 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "poke:raccoon",
+			"materials": {
+				"default": "entity"
+			},
+			"textures": {
+				"default": "textures/entity/raccoon/raccoon",
+				"angry": "textures/entity/raccoon/raccoon",
+				"tame": "textures/entity/raccoon/raccoon"
+			},
+			"geometry": {
+				"default": "geometry.poke.raccoon"
+			},
+			"animations": {
+				"running": "animation.run.raccoon",
+				"idle": "animation.idle.raccoon",
+				"sit": "animation.poke.raccoon.sit"
+			},
+			"animation_controllers": [
+				{"movement": "controller.animation.poke.raccoon.movement"},
+				{"sitting": "controller.animation.poke.raccoon.sitting"}
+			],
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"base_color": "#464646",
+				"overlay_color": "#ffffff"
+			}
+		}
+	}
+}

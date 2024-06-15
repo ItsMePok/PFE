@@ -1,0 +1,31 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.poke.top_hat",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "root_item",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "helmet",
+					"parent": "root_item",
+					"pivot": [0, 0, 0],
+					"binding": "'head'",
+					"cubes": [
+						{"origin": [-6, 7, -6], "size": [12, 2, 12], "uv": [0, 0]},
+						{"origin": [-5, 9, -5], "size": [10, 9, 10], "uv": [0, 14]}
+					]
+				}
+			]
+		}
+	]
+}

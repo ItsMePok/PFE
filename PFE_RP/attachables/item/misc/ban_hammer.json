@@ -1,0 +1,35 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "poke:ban_hammer",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/items/banished/poke_ban_hammer_3d",
+				"enchanted": "textures/misc/enchanted_item_glint"
+			},
+			"geometry": {
+				"default": "geometry.poke.ban_hammer_3d"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"animations": {
+				"first_person_hold": "animation.ban_hammer_3d.first_person_hold",
+				"third_person_hold": "animation.ban_hammer_3d.third_person_hold"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"first_person_hold": "c.is_first_person"
+					},
+					{
+						"third_person_hold": "!c.is_first_person"
+					}
+				]
+			}
+		}
+	}
+}

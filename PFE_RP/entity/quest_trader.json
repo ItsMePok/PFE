@@ -1,0 +1,25 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier":"poke:quest_trader",
+			"materials":{"default": "villager"},
+			"textures": {"default": "textures/entity/poke_quest_trader"},
+			"geometry": {"default": "geometry.poke.quest.trader"},
+			"animations": {
+				"general": "animation.shopkeeper.general",
+				"look_at_target": "animation.common.look_at_target",
+				"move": "animation.shopkeeper.move",
+				"idle":"animation.shopkeeper.idle",
+				"move_c": "controller.animation.shopkeeper.move",
+				"general_c": "controller.animation.shopkeeper.general"
+			},
+			"render_controllers": ["controller.render.shopkeeper"],
+			"scripts": {"animate": ["idle","move_c","general_c"]},
+			"spawn_egg": {
+				"base_color": "#b37b62",
+				"overlay_color": "#ad7d37"
+			}
+		}
+	}
+}

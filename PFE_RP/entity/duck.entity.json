@@ -1,0 +1,45 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "poke:duck",
+			"min_engine_version": "1.12.0",
+			"materials": {
+				"default": "entity_alphatest",
+				"legs": "chicken_legs"
+			},
+			"textures": {
+				"default": "textures/entity/duck"
+			},
+			"geometry": {
+				"default": "geometry.duck"
+			},
+			"animations": {
+				"move": "animation.duck.move",
+				"general": "animation.duck.general",
+				"look_at_target": "animation.common.look_at_target",
+				"baby_transform": "animation.duck.baby_transform"
+			},
+			"scripts": {
+				"animate": [
+					"general",
+					{
+						"move": "query.modified_move_speed"
+					},
+					"look_at_target",
+					{
+						"baby_transform": "query.is_baby"
+					}
+				],
+				"pre_animation": [
+					"variable.wing_flap = ((math.sin(query.wing_flap_position * 60.3) + 1) * query.wing_flap_speed *20);"
+				]
+			},
+			"render_controllers": ["controller.render.chicken"],
+			"spawn_egg": {
+				"base_color": "#244a0d",
+				"overlay_color": "#e6ae5f"
+			}
+		}
+	}
+}

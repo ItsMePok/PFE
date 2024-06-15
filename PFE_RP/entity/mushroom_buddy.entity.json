@@ -1,0 +1,50 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "poke:mushroom_buddy",
+			"materials": {
+				"default": "cat"
+			},
+			"textures": {
+				"white": "textures/entity/mushroom/White.Mushroom.png",
+				"black": "textures/entity/mushroom/Black.Mushroom.png",
+				"red": "textures/entity/mushroom/Red.Mushroom.png",
+				"siamese": "textures/entity/mushroom/Orange.Mushroom.png",
+				"british": "textures/entity/mushroom/Blue.Green.Mushroom.png",
+				"calico": "textures/entity/mushroom/Light.Red.Mushroom.png",
+				"persian": "textures/entity/mushroom/Purple.Mushroom.png",
+				"ragdoll": "textures/entity/mushroom/Greenish.Mushroom.png",
+				"tabby": "textures/entity/mushroom/Pinkish.Mushroom.png",
+				"jellie": "textures/entity/mushroom/Purple.Pink.Mushroom.png",
+				"blackcat": "textures/entity/mushroom/Dark.Blue.Mushroom.png",
+				"britishshorthair": "textures/entity/mushroom/Rainbow.Mushroom.png",
+				"redtabby": "textures/entity/mushroom/Yellow.Mushroom.png",
+				"tuxedo": "textures/entity/mushroom/Green.Mushroom.png"
+			},
+			"geometry": {
+				"default": "geometry.pfe_mushroom_buddy"
+			},
+			"animations": {
+				"sneak": "animation.mushroom_buddy.sneak",
+				"walk": "animation.mushroom_buddy.walk",
+				"sprint": "animation.mushroom_buddy.sprint",
+				"sit": "animation.mushroom_buddy.sit",
+				"look_at_target": "animation.common.look_at_target",
+				"baby_transform": "animation.mushroom_buddy.baby_transform",
+				"lie_down": "animation.mushroom_buddy.lie_down",
+				"look_at_target": "controller.animation.cat.look_at_target",
+				"move": "controller.animation.cat.move",
+				"baby": "controller.animation.cat.baby",
+				"mushroom_buddy_control":"controller.animation.poke.mushroom.buddy",
+				"idle":"animation.poke.mushroom_buddy.idle"
+			},
+			"scripts": {"animate": ["mushroom_buddy_control"]},
+			"render_controllers": ["controller.render.poke.mushroom.buddy"],
+			"spawn_egg": {
+				"base_color": "#ff0066",
+				"overlay_color": "#ffffff"
+			}
+		}
+	}
+}
