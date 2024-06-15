@@ -1,0 +1,36 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:med_gem"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"H": {
+				"item": "beacon"
+			},
+			"S": {
+				"item": "gold_block"
+			},
+			"X": {
+				"item": "glowstone"
+			}
+		},
+		"unlock": [
+			{
+				"item": "poke:gem_holder"
+			}	
+		],
+		"pattern": [
+			"SXS",
+			"XHX",
+			"SXS"
+		],
+		"result": {
+			"count": 1,
+			"item": "poke:med_gem"
+		}
+	}
+}

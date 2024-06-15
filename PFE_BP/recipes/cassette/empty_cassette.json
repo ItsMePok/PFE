@@ -1,0 +1,86 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:empty_cassette"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"P": {
+				"item": "poke:plastic"
+			},
+			"T": {
+				"item": "poke:electric_component"
+			}
+		},
+		"unlock": [
+			{
+				"item": "poke:plastic"
+			},
+			{
+				"item": "poke:electric_component"
+			},
+			{
+				"item": "music_disc_ward"
+			},
+			{
+				"item": "music_disc_13"
+			},
+			{
+				"item": "music_disc_wait"
+			},
+			{
+				"item": "music_disc_strad"
+			},
+			{
+				"item": "music_disc_stal"
+			},
+			{
+				"item": "music_disc_relic"
+			},
+			{
+				"item": "music_disc_pigstep"
+			},
+			{
+				"item": "music_disc_otherside"
+			},
+			{
+				"item": "music_disc_mellohi"
+			},
+			{
+				"item": "music_disc_mall"
+			},
+			{
+				"item": "music_disc_far"
+			},
+			{
+				"item": "music_disc_chirp"
+			},
+			{
+				"item": "music_disc_cat"
+			},
+			{
+				"item": "music_disc_blocks"
+			},
+			{
+				"item": "music_disc_11"
+			},
+			{
+				"item": "music_disc_5"
+			},
+			{
+				"item": "disc_fragment_5"
+			}
+		],
+		"pattern": [
+			"PPP",
+			"TPT",
+			"PPP"
+		],
+		"result": {
+			"item": "poke:empty_cassette"
+		}
+	}
+}

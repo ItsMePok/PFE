@@ -1,0 +1,30 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:shade_gem"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"D":{"item": "poke:ring_3"},
+			"R":{"item":"poke:radium_ingot"},
+			"X":{"item":"poke:shade_ingot"}
+		},
+		"unlock": [
+			{"item":"poke:ender_holder"},
+			{"item": "poke:ring_3"},
+			{"item":"poke:radium_ingot"},
+			{"item":"poke:shade_ingot"}	
+		],
+		"pattern": [
+			"XRX",
+			"RDR",
+			"XRX"
+		],
+		"result": {
+			"item": "poke:shade_gem"
+		}
+	}
+}

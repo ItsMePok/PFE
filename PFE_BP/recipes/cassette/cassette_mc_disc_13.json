@@ -1,0 +1,30 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "poke:cassette_mc_disc_13"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": [
+			{
+				"item": "poke:empty_cassette"
+			},
+			{
+				"item": "music_disc_13"
+			}
+		],
+		"ingredients": [
+			{
+				"item": "poke:empty_cassette"
+			},
+			{
+				"item": "music_disc_13"
+			}
+		],
+		"result": {
+			"item": "poke:cassette_mc_disc_13"
+		}
+	}
+}

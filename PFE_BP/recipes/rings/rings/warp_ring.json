@@ -1,0 +1,31 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:warp_ring"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"O",
+			"X"
+		],
+		"unlock": [
+			{
+				"item": "poke:warp_gem"
+			}	
+		],
+		"key": {
+			"X": {
+				"item": "poke:ender_holder"
+			},
+			"O": {
+				"item": "poke:warp_gem"
+			}
+		},
+		"result": {
+			"item": "poke:ring_3"
+		}
+	}
+}

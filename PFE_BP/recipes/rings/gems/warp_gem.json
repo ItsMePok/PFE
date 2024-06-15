@@ -1,0 +1,32 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:warp_gem"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"D": {
+				"item": "diamond"
+			},
+			"X": {
+				"item": "poke:shade_ingot"
+			}
+		},
+		"unlock": [
+			{
+				"item": "poke:ender_holder"
+			}	
+		],
+		"pattern": [
+			"XXX",
+			"XDX",
+			"XXX"
+		],
+		"result": {
+			"item": "poke:warp_gem"
+		}
+	}
+}
