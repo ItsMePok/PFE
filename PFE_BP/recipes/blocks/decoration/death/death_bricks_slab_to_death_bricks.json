@@ -1,0 +1,22 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:death_bricks_slab_to_death_bricks"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": [
+			{"item": "poke:death_bricks_slab"}
+		],
+		"key": {
+			"C": {"item": "poke:death_bricks_slab"}
+		},
+		"pattern": [
+			"CC"
+		],
+		"result": {"item": "poke:death_bricks"},
+		"priority": 2
+	}
+}

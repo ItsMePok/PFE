@@ -1,0 +1,20 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "poke:galaxy_bricks_stonecut"
+		},
+		"tags": [
+			"stonecutter"
+		],
+		"ingredients": [
+			{
+				"item": "poke:galaxy_block"
+			}
+		],
+		"result": {
+			"item": "poke:galaxy_bricks",
+			"count": 4
+		}
+	}
+}

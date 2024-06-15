@@ -1,0 +1,26 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:onyx_bricks_slab_craft"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": [
+			{"item":"poke:onyx_block"},
+			{"item":"poke:onyx_ingot"},
+			{"item":"poke:onyx_bricks"}
+		],
+		"key": {
+			"C": {"item": "poke:onyx_bricks"}
+		},
+		"pattern": [
+			"CCC"
+		],
+		"result": {
+			"item": "poke:onyx_bricks_slab",
+			"count": 6
+		}
+	}
+}
