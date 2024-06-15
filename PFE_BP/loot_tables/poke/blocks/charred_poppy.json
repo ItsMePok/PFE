@@ -1,0 +1,23 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "poke:charred_poppy",
+                    "functions": [
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                "Even though burnt to a crisp it can still be useful",
+                                "",
+                                "Acquired by Defeating The Furnace Golem"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

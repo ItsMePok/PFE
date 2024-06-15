@@ -1,0 +1,25 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "poke:spawn_cosmetic_trader",
+					"weight": 999,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 1
+						}
+					]
+				},
+				{
+					"type":"item",
+					"name":"poke:cosmetic_cosmetic",
+					"weight":1
+				}
+			]
+		}
+	]
+}

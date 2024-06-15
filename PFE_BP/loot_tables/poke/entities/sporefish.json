@@ -1,0 +1,29 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "poke:raw_sporefish",
+                    "functions": [{"function": "furnace_smelt"},{"function": "looting_enchant","count": {"min":0,"max": 1}}]
+                }
+            ]
+        },
+        {
+            "rolls":1,
+            "entries": [
+                {
+                    "type": "empty",
+                    "weight": 3
+                },
+                {
+                    "type": "item",
+                    "name": "bone",
+                    "weight": 1,
+                    "functions": [{"function": "looting_enchant","count": {"max": 1,"min": 0}}]
+                }
+            ]
+        }
+    ]
+}

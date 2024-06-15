@@ -1,0 +1,25 @@
+{
+	"pools": [
+		{
+			"rolls": 7,
+			"entries": [
+				{
+					"type": "item",
+					"name": "poke:godly_nugget"
+				},
+				{
+					"type": "empty"
+				}
+			]
+		},
+		{
+			"rolls": 2,
+			"entries": [
+				{
+					"type": "item",
+					"name": "poke:godly_nugget"
+				}
+			]
+		}
+	]
+}

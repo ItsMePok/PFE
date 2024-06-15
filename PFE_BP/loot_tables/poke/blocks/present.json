@@ -1,0 +1,58 @@
+{
+	"pools": [
+		{
+			"rolls": 10,
+			"entries": [
+				{
+					"type": "item",
+					"name": "poke:astral_ingot"
+				},{
+					"type": "item",
+					"name": "poke:cobalt_ingot"
+				},{
+					"type": "item",
+					"name": "poke:void_ingot"
+				},{
+					"type": "item",
+					"name": "poke:godly_ingot"
+				},{
+					"type": "item",
+					"name": "poke:galaxy_ingot"
+				},{
+					"type": "item",
+					"name": "poke:holy_ingot"
+				},{
+					"type": "item",
+					"name": "poke:demonic_ingot"
+				},{
+					"type": "item",
+					"name": "poke:hellish_ingot"
+				},{
+					"type": "item",
+					"name": "poke:onyx_ingot"
+				},{
+					"type": "item",
+					"name": "poke:shade_ingot"
+				},{
+					"type": "item",
+					"name": "poke:nebula_noodles"
+				},{
+					"type": "item",
+					"name": "poke:nebula_potion"
+				},{
+					"type": "item",
+					"name": "poke:void_potion"
+				},{
+					"type": "item",
+					"name": "poke:cobalt_potion"
+				},{
+					"type": "item",
+					"name": "poke:death_potion"
+				},{
+					"type": "item",
+					"name": "poke:eggnog"
+				}
+			]
+		}
+	]
+}

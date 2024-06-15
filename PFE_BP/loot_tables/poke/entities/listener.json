@@ -1,0 +1,110 @@
+{
+	"pools": [
+		{
+			"rolls": {
+				"min": 32,
+				"max": 64
+			},
+			"entries": [
+				{
+					"type": "item",
+					"name": "poke:iron_token"
+				}
+			]
+		},
+		{
+			"rolls": {
+				"min": 32,
+				"max": 48
+			},
+			"entries": [
+				{
+					"type": "item",
+					"name": "poke:gold_token"
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "poke:floppy_disk"
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "poke:cassette_they_listen",
+					"functions": [
+						{
+							"function": "set_lore",
+							"lore": [
+								"§aOnly the worthy ones have this...",
+								"§r§eAcquired by defeating The Listener"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 50,
+			"entries": [
+				{
+					"type": "item",
+					"name": "poke:onyx_block",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "poke:godly_block",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "poke:cobalt_block",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "poke:galaxy_block",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "poke:void_block",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "poke:nebula_block",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "poke:shade_block",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "poke:holy_block",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "poke:hellish_block",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "poke:demonic_block",
+					"weight": 5
+				}
+			]
+		}
+	]
+}

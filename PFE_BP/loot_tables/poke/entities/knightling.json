@@ -1,0 +1,48 @@
+{
+	"pools": [
+		{
+			"rolls": {
+				"min": 8,
+				"max": 15
+			},
+			"entries": [
+				{
+					"type": "item",
+					"name": "poke:copper_token"
+				}
+			]
+		},
+		{
+			"rolls": {
+				"min": 1,
+				"max": 4
+			},
+			"entries": [
+				{
+					"type": "item",
+					"name": "poke:iron_token"
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "poke:knightling_helmet",
+					"functions": [
+						{
+							"function": "set_lore",
+							"lore": [
+								"Its a bit dusty..",
+								" ",
+								"§r§eAcquired by killing the Knightling"
+							]
+						}
+					]
+				},
+				{"type":"empty"}
+			]
+		}
+	]
+}

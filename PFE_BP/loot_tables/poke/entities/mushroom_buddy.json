@@ -1,0 +1,43 @@
+{
+	"pools": [
+		{
+			"rolls": 3,
+			"entries": [
+				{
+					"type": "item",
+					"name": "poke:fungal_hat",
+					"functions": [
+						{
+						  "function": "set_lore",
+						  "lore": [
+							"it's a bit mushy..",
+							"",
+							"§eCosmetic"
+						  ]
+						}
+					  ],
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "minecraft:red_mushroom",
+					"weight": 100,
+                    "functions": [{"function": "looting_enchant","count": {"max": 1,"min": 0}}]
+				},
+				{
+					"type": "item",
+					"name": "poke:turnip",
+					"weight": 10,
+                    "functions": [{"function": "looting_enchant","count": {"max": 1,"min": 0}}]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:brown_mushroom",
+					"weight": 100,
+                    "functions": [{"function": "looting_enchant","count": {"max": 1,"min": 0}}]
+				},
+				{"type": "empty","weight": 50}
+			]
+		}
+	]
+}

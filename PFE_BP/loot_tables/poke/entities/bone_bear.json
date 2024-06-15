@@ -1,0 +1,17 @@
+{
+    "pools": [
+        {
+            "rolls": 5,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "bone",
+                    "functions": [{"function": "looting_enchant","count": {"max": 3,"min": 1}}]
+                },
+                {
+                    "type": "empty"
+                }
+            ]
+        }
+    ]
+}

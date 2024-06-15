@@ -1,0 +1,27 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "poke:raw_demonic"
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "poke:raw_demonic",
+					"weight": 1
+				},
+				{
+					"type": "empty",
+					"weight": 8
+				}
+			]
+		}
+	]
+}

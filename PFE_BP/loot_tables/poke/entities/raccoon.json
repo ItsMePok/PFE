@@ -1,0 +1,25 @@
+{
+	"pools": [
+		{
+			"rolls": 3,
+			"entries": [
+				{
+					"type": "item",
+					"name": "poke:trash_lid",
+					"functions": [
+						{
+						  "function": "set_lore",
+						  "lore": [
+							"some may disagree but..",
+							"it works as a hat too",
+							"§eCosmetic"
+						  ]
+						}
+					  ],
+					"weight": 1
+				},
+				{"type": "empty","weight": 50}
+			]
+		}
+	]
+}

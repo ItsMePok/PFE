@@ -1,0 +1,124 @@
+{
+	"tiers": [
+		{
+			"groups": [
+				{
+					"trades": [
+						{
+							"max_uses": -1,
+							"wants": [
+								{
+									"item": "paper",
+									"quantity": 1
+								}
+							],
+							"gives": [
+								{
+									"item": "poke:kill_quest",
+									"functions": [
+										{
+											"function": "set_lore",
+											"lore": [
+												"§r§eQuest LVL:"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"max_uses": -1,
+							"wants": [
+								{
+									"item": "paper",
+									"quantity": 1
+								}
+							],
+							"gives": [
+								{
+									"item": "poke:mine_quest",
+									"functions": [
+										{
+											"function": "set_lore",
+											"lore": [
+												"§r§eQuest LVL:"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"max_uses": -1,
+							"wants": [
+								{
+									"item": "paper",
+									"quantity": 1
+								}
+							],
+							"gives": [
+								{
+									"item": "poke:farm_quest",
+									"functions": [
+										{
+											"function": "set_lore",
+											"lore": [
+												"§r§eQuest LVL:"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"max_uses": -1,
+							"wants": [
+								{
+									"item": "paper",
+									"quantity": 1
+								}
+							],
+							"gives": [
+								{
+									"item": "poke:craft_quest",
+									"functions": [
+										{
+											"function": "set_lore",
+											"lore": [
+												"§r§eQuest LVL:",
+												"PLACEHOLDER will only give mining quest when used"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"max_uses": -1,
+							"wants": [
+								{
+									"item": "poke:iron_token",
+									"quantity": 2
+								}
+							],
+							"gives": [
+								{
+									"item": "poke:boss_event_bounty",
+									"functions": [
+										{
+											"function": "set_lore",
+											"lore": [
+												"Starts a Boss Fight at a random Player",
+												"§r§eBounty LVL:"
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

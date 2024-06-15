@@ -1,0 +1,262 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "poke:boss_event_bounty",
+					"functions": [
+						{
+							"function": "set_lore",
+							"lore": [
+                                "Starts a Boss Fight at a random Player",
+                                "§r§eBounty LVL:"
+                            ]
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": {
+				"min": 8,
+				"max": 16
+			},
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:diamond",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 5
+							}
+						}
+					],
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "poke:raw_godly",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 5
+							}
+						}
+					],
+					"weight": 15
+				},
+				{
+					"type": "item",
+					"name": "minecraft:gold_ingot",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 2,
+								"max": 7
+							}
+						}
+					],
+					"weight": 15
+				},
+				{
+					"type": "item",
+					"name": "poke:iron_token",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 3
+							}
+						}
+					],
+					"weight": 8
+				},
+				{
+					"type": "item",
+					"name": "poke:copper_token",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 4,
+								"max": 6
+							}
+						}
+					],
+					"weight": 25
+				},
+				{
+					"type": "item",
+					"name": "poke:nebula_noodles",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 3
+							}
+						}
+					],
+					"weight": 25
+				},
+				{
+					"type": "item",
+					"name": "poke:raw_void",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 3,
+								"max": 7
+							}
+						}
+					],
+					"weight": 25
+				},
+				{
+					"type": "item",
+					"name": "poke:raw_nebula_block",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "poke:raw_nebula",
+					"weight": 15
+				},
+				{
+					"type": "item",
+					"name": "poke:void_potion",
+					"weight": 10
+				},
+				{
+					"type": "item",
+					"name": "poke:nebula_potion",
+					"weight": 10
+				},
+				{
+					"type": "item",
+					"name": "minecraft:book",
+					"weight": 20,
+					"functions": [
+						{
+							"function": "enchant_randomly",
+							"treasure": true
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "poke:spawn_necromancer",
+					"weight": 2
+				},
+                {
+					"type": "item",
+					"name": "poke:spawn_knightling",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "poke:diamond_token",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 2
+							}
+						}
+					]
+				},
+				{
+					"type": "empty",
+					"weight": 15
+				}
+			]
+		},
+		{
+			"rolls": 4,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:gold_ingot",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 8
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:ender_pearl",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 8
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "poke:raw_astral",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 8
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:web",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 8
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:end_stone",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 8
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
