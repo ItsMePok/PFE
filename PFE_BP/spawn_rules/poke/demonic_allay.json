@@ -1,0 +1,57 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:spawn_rules": {
+		"description": {
+			"identifier": "poke:demonic_allay",
+			"population_control": "monster"
+		},
+		"conditions": [
+			{
+				"minecraft:spawns_underground": {},
+				"minecraft:weight": {
+					"default": 300
+				},
+				"minecraft:biome_filter": {
+					"any_of": [
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "nether"
+						}
+					]
+				}
+			},
+			{
+				"minecraft:spawns_underground": {},
+				"minecraft:density_limit": {
+					"underground": 1,
+					"surface": 1
+				},
+				"minecraft:world_age_filter": {"min": 10368000},
+				"minecraft:spawns_on_block_filter":["minecraft:air"],
+				"minecraft:herd":{
+					"min_size": 1,
+					"max_size": 3
+				},
+				"minecraft:weight": {
+					"default": 1
+				},
+				"minecraft:difficulty_filter": {
+					"min": "hard"
+				},
+				"minecraft:brightness_filter": {
+					"min": 0
+				},
+				"minecraft:biome_filter": {
+					"any_of": [
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "caves"
+						}
+					]
+				}
+			}
+		]
+	}
+}
