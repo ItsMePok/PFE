@@ -1,0 +1,19 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {"identifier":"poke:hellish_trapdoor"},
+		"tags": ["crafting_table"],
+		"unlock": [
+			{"item": "poke:hellish_ingot"},
+            {"item":"poke:hellish_block"}
+		],
+		"key": {
+			"C":{"item":"poke:hellish_ingot"}
+		},
+		"pattern": ["CCC","CCC"],
+		"result": {
+			"item": "poke:hellish_trapdoor",
+			"count": 4
+		}
+	}
+}

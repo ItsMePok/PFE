@@ -1,0 +1,9 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:recipe_shapeless": {
+        "tags":["stonecutter"],
+        "description": {"identifier": "poke:cobalt_trapdoor_sc"},
+        "ingredients":[{"item":"poke:cobalt_block"}],
+        "result":{"item": "poke:cobalt_trapdoor","count": 6}
+    }
+}

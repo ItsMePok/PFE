@@ -1,0 +1,12 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {"identifier": "poke:raw_cobalt_slab_back_to_block"},
+		"tags": ["crafting_table"],
+		"unlock": [	{"item":"poke:raw_cobalt_slab"}],
+		"key": {"C": {"item":"poke:raw_cobalt_slab"}},
+		"pattern": ["CC"],
+		"result": {"item":"poke:raw_cobalt_block"},
+		"priority": 2
+	}
+}

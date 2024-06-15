@@ -1,0 +1,9 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:recipe_shapeless": {
+        "tags":["stonecutter"],
+        "description": {"identifier": "poke:molten_trapdoor_sc"},
+        "ingredients":[{"item":"poke:ember_block"}],
+        "result":{"item": "poke:molten_trapdoor","count": 6}
+    }
+}

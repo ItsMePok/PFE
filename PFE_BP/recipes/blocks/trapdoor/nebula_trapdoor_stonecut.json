@@ -1,0 +1,9 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:recipe_shapeless": {
+        "tags":["stonecutter"],
+        "description": {"identifier": "poke:nebula_trapdoor_sc"},
+        "ingredients":[{"item":"poke:nebula_block"}],
+        "result":{"item": "poke:nebula_trapdoor","count": 6}
+    }
+}
