@@ -1,0 +1,59 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "poke:necromancer_staff_orb",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"runtime_identifier": "minecraft:arrow"
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 0.25,
+				"height": 0.25
+			},
+			"minecraft:projectile": {
+				"gravity": 0.005,
+				"crit_particle_on_hurt": true,
+				"hit_ground_sound": "random.bowhit",
+				"hit_sound": "random.orb",
+				"inertia": 0.99,
+				"shoot_sound": "random.bow",
+				"shoot_target": true,
+				"should_bounce": true,
+				"power": 1.3,
+				"anchor": 1,
+				"is_dangerous": true,
+				"destroy_on_hurt": true,
+				"uncertainty_multiplier": 0,
+				"uncertainty_base": 0,
+				"stop_on_hurt": true,
+				"particle": "poke:necromancer_orb",
+				"on_hit": {
+					"spawn_chance": {
+						"first_spawn_count": 2,
+						"spawn_definition": "husk",
+						"first_spawn_chance": 0.9,
+						"second_spawn_chance": 0.8,
+						"second_spawn_count": 2
+					},
+					"impact_damage": {"damage": 5},
+					"remove_on_hit":{}
+				}
+			},
+			"minecraft:physics": {
+				"has_collision": true,
+				"has_gravity": true
+			},
+			"minecraft:health": {
+				"max": 1
+			},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			}
+		},
+		"events": {}
+	}
+}

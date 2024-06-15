@@ -1,0 +1,20 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "poke:y_check",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"components":{
+			"minecraft:loot":{"table":"loot_tables/poke/quests/mine_quest.json"},
+			"minecraft:timer": {"time": 0.01,"looping": true,"time_down_event": {"event": "poke:get_quest","target": "self"}},
+			"minecraft:physics": {
+				"has_collision": false,
+				"has_gravity": false
+			}
+		},
+		"events": {"poke:get_quest": {"queue_command":{"command":["execute unless ~ ~-1 ~ air unless blocks ~ ~-1 ~ ~10 ~ ~ ~ ~ ~ all run tp @s ~ ~1 ~","execute if ~ ~-1 ~ air unless blocks ~ ~-1 ~ ~10 ~ ~ ~ ~ ~ all run tp @s ~ ~1 ~","execute if block ~ ~-1 ~ air if blocks ~ ~-1 ~ ~10 ~ ~ ~ ~ ~ all as @e[tag=y_check] run function poke/entities/y_check","say hi"]}}}
+	}
+}

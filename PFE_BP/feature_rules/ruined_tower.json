@@ -1,0 +1,51 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "poke:ruined_tower",
+			"places_feature": "poke:ruined_tower"
+		},
+		"conditions": {
+			"placement_pass": "surface_pass",
+			"minecraft:biome_filter": [
+				{
+					"any_of": [
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "overworld_generation"
+						},
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "overworld"
+						}
+					]
+				}
+			]
+		},
+		"distribution": {
+			"iterations": 1,
+			"scatter_chance": "1 / 5",
+			"x": {
+				"distribution": "jittered_grid",
+				"grid_offset": 250,
+				"step_size": 500,
+				"extent": [
+					0,
+					32
+				]
+			},
+			"y": "query.heightmap(v.worldx, v.worldz)", //Generates the feature on the highest block on the column
+			"z": {
+				"distribution": "jittered_grid",
+				"grid_offset": 250,
+				"step_size": 500,
+				"extent": [
+					0,
+					32
+				]
+			}
+		}
+	}
+}

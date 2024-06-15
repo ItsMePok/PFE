@@ -1,0 +1,162 @@
+{ 
+	//this entity model, animations & textures was made by O2God for PFE
+	"format_version": "1.20.80",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "poke:snowman",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"despawn":{
+				"minecraft:instant_despawn": {
+				"remove_child_entities": true}
+			},
+			"timer":{
+				"minecraft:timer": {
+					"time": 1800,
+					"looping": true,
+					"time_down_event": {
+						"event": "poke:despawn",
+						"target": "self"
+					}
+				}
+			}
+		},
+		"components": {
+			"minecraft:is_hidden_when_invisible": {
+			},
+			"minecraft:boss": {
+				"hud_range": 55,
+				"name": "entity.poke:snowman.name",
+				"should_darken_sky": false
+			},
+			"minecraft:type_family": {
+			"family": ["mob","monster"]
+			},
+			"minecraft:breathable": {
+			"total_supply": 15,
+			"suffocate_time": 0
+			},
+			"minecraft:nameable": {
+				"name_actions":{
+					"name_filter": "despawn",
+					"on_named": {
+						"event": "poke:despawn",
+						"target": "self"
+					}
+				},
+				"default_trigger": {
+					"target": "self",
+					"event": "poke:renamed"
+				}
+			},
+			"minecraft:collision_box": {
+			"width": 0.6,
+			"height": 1.8
+			},
+			"minecraft:loot": {
+			"table": "loot_tables/poke/entities/snowman.json"
+			},
+			"minecraft:health": {
+			"value": 500,
+			"max": 500
+			},
+			"minecraft:knockback_resistance": {
+				"value": 0.9
+			},
+			"minecraft:navigation.walk": {
+			"avoid_water": true,"can_walk": false,"can_swim": false,"can_jump": false
+			},
+			"minecraft:movement.basic": {
+				"max_turn": 30
+			},
+			"minecraft:movement": {
+				"value": 0.01
+			},
+			"minecraft:attack": {
+			"damage": 2
+			},
+			"minecraft:damage_sensor": {
+			"triggers": {
+				"cause": "fall",
+				"deals_damage": false
+			}
+			},
+			"minecraft:hurt_on_condition": {
+			"damage_conditions": [
+				{
+				"filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+				"cause": "lava",
+				"damage_per_tick": 4
+				}
+			]
+			},
+			"minecraft:behavior.ranged_attack": {
+			"priority": 1,
+			"speed_multiplier": 1.25,
+			"attack_interval": 0.55,
+			"attack_radius": 15,
+			"burst_shots": 2
+			},
+			"minecraft:shooter": {
+			"def": "minecraft:snowball"
+			},
+			"minecraft:trail": {
+				"block_type": "minecraft:snow_layer"
+			},
+			"minecraft:behavior.random_stroll": {
+			"priority": 2,
+			"speed_multiplier": 1
+			},
+			"minecraft:behavior.look_at_player": {
+			"priority": 3,
+			"look_distance": 6.0
+			},
+			"minecraft:behavior.random_look_around": {
+			"priority": 4
+			},
+			"minecraft:behavior.nearest_attackable_target": {
+			"priority": 1,
+			"entity_types": [
+				{
+				"filters": { "test" :  "is_family", "subject" : "other", "value" :  "player"},
+				"within_default": 6
+				}
+			]
+			},
+			"minecraft:persistent": {
+			},
+			"minecraft:physics": {
+			},
+			"minecraft:pushable": {
+			"is_pushable": true,
+			"is_pushable_by_piston": true
+			},
+			"minecraft:conditional_bandwidth_optimization": {
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"timer"
+					]
+				}
+			},
+			"poke:despawn":{
+				"add": {
+					"component_groups": ["despawn"]
+				}
+			},
+			"poke:renamed":{
+				"remove": {
+					"component_groups": [
+						"timer"
+					]
+				}
+			}
+		}
+	}
+}

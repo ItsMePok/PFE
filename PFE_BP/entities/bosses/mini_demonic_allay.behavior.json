@@ -1,0 +1,197 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "poke:mini_demonic_allay",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"despawn":{
+				"minecraft:instant_despawn": {
+					"remove_child_entities": false
+				}
+			}
+		},
+		"components": {
+			"minecraft:scale": {
+				"value": 0.5
+			},
+			"minecraft:boss": {
+				"hud_range": 55,
+				"name": "entity.poke:mini_demonic_allay.name",
+				"should_darken_sky": false
+			},
+			"minecraft:is_hidden_when_invisible": {},
+			"minecraft:experience_reward": {
+				"on_death": "query.last_hit_by_player?5+(query.equipment_count*math.random(100,300)):0"
+			},
+			"minecraft:nameable": {},
+			"minecraft:type_family": {
+				"family": [
+					"vex",
+					"monster",
+					"mob",
+					"pfe:demonic_allay"
+				]
+			},
+			"minecraft:equipment": {
+				"table": "loot_tables/poke/entities/mini_demonic_allay.json"
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/poke/entities/mini_demonic_allay_loot.json"
+			},
+			"minecraft:health": {
+				"value": 140,
+				"max": 140
+			},
+			"minecraft:attack": {
+				"damage": 3
+			},
+			"minecraft:collision_box": {
+				"width": 0.4,
+				"height": 0.8
+			},
+			"minecraft:custom_hit_test": {
+				"hitboxes": [
+					{
+						"width": 0.4,
+						"height": 0.8
+					}
+				]
+			},
+			"minecraft:movement": {
+				"value": 1.5
+			},
+			"minecraft:flying_speed": {
+				"value": 0.2
+			},
+			"minecraft:navigation.walk": {
+				"can_path_over_water": true
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:damage_sensor": {
+				"triggers": {
+					"cause": "fall",
+					"deals_damage": false
+				}
+			},
+			"minecraft:jump.static": {},
+			"minecraft:can_climb": {},
+			"minecraft:fire_immune": {},
+			"minecraft:behavior.float": {
+				"priority": 0
+			},
+			"minecraft:behavior.charge_attack": {
+				"speed_multiplier": 2,
+				"success_rate": 0.30,
+				"priority": 4
+			},
+			"minecraft:on_death": {
+				"event": "death_sound"
+			},
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 3,
+				"entity_types": [
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "irongolem"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								}
+							]
+						},
+						"max_dist": 70
+					},
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "villager"
+								},
+								{
+									"test": "has_component",
+									"subject": "other",
+									"operator": "!=",
+									"value": "minecraft:is_baby"
+								}
+							]
+						},
+						"max_dist": 70
+					}
+				],
+				"must_see": true
+			},
+			"minecraft:breathable": {
+				"breathes_solids": true,
+				"breathes_air": true,
+				"breathes_water": true,
+				"breathes_lava": true
+			},
+			"minecraft:behavior.look_at_player": {
+				"priority": 9,
+				"look_distance": 6,
+				"probability": 0.02
+			},
+			"minecraft:behavior.look_at_entity": {
+				"priority": 9,
+				"look_distance": 6,
+				"probability": 0.02,
+				"filters": {
+					"test": "is_family",
+					"subject": "other",
+					"value": "mob"
+				}
+			},
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1
+			},
+			"minecraft:physics": {
+				"has_gravity": false,
+				"has_collision": true
+			},
+			"minecraft:despawn": {
+				"despawn_from_inactivity": true,
+				"despawn_from_distance": {"max_distance": 80},
+				"min_range_inactivity_timer": 100
+			},
+			"minecraft:conditional_bandwidth_optimization": {},
+			"minecraft:game_event_movement_tracking": {
+				"emit_move": false,
+				"emit_swim": false
+			},
+			"minecraft:timer": {
+				"time": 1800,
+				"looping": true,
+				"time_down_event": {
+					"event": "poke:despawn",
+					"target": "self"
+				}
+			}
+		},
+		"events": {
+			"death_sound": {
+				"queue_command": {
+					"command": [
+						"playsound play.listenerboss.victory @a[r=40] ~~~"
+					]
+				}
+			},
+			"poke:despawn":{
+				"add": {
+					"component_groups": ["despawn"]
+				}
+			}
+		}
+	}
+}

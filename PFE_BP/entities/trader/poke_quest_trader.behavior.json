@@ -1,0 +1,33 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "poke:quest_trader",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"runtime_identifier": "minecraft:villager"
+		},
+		"components": {
+			"minecraft:type_family": {"family": ["poke:traders","mob"]},
+			"minecraft:loot": {"table": "loot_tables/poke/entities/quest_trader.json"},
+			"minecraft:health": {"value": 20},
+			"minecraft:collision_box": {"width": 0.6,"height": 1.9},
+			"minecraft:movement": {"value": 0.5},"minecraft:behavior.float": {"priority": 0},
+			"minecraft:behavior.trade_with_player": {"priority": 1},
+			"minecraft:economy_trade_table": {"display_name": "Quest Giver","table": "trading/economy_trades/poke_quest_trader.json","new_screen": true,
+			"hero_demand_discount": 0,
+			"persist_trades": false,
+			"cured_discount": [
+				0,
+				0
+			],
+			"convert_trades_economy": false,
+			"use_legacy_price_formula": true},
+			"minecraft:behavior.look_at_trading_player": {"priority": 2},
+			"minecraft:behavior.look_at_player": {"priority": 8,"look_distance": 8,"probability": 0.02},
+			"minecraft:physics": {},
+			"minecraft:pushable": {"is_pushable": true,"is_pushable_by_piston": true}
+		}
+	}
+}

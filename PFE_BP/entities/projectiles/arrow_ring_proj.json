@@ -1,0 +1,49 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "poke:arrow_ring_proj",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"runtime_identifier": "arrow"
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 0.25,
+				"height": 0.25
+			},
+			"minecraft:projectile": {
+				"gravity": 0.02,
+				"crit_particle_on_hurt": false,
+				"hit_sound": "bow.hit",
+				"inertia": 0.995,
+				"shoot_sound": "random.bow",
+				"power": 5.0,
+				"is_dangerous": true,
+				"on_hit": {
+					"impact_damage": {
+						"damage": 1,
+						"knockback": true,
+						"semi_random_diff_damage": true,
+						"destroy_on_hit": true,
+						"max_critical_damage": 10,
+						"min_critical_damage": 9,
+						"power_multiplier": 0.97
+					},
+					"remove_on_hit": {}
+				},
+				"uncertainty_multiplier": 1.1,
+				"uncertainty_base": 1,
+				"anchor": 1,
+				"stop_on_hurt": true,
+				"particle": "iconcrack"
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": true
+			}
+		}
+	}
+}
