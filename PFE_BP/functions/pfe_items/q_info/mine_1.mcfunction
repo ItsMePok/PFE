@@ -1,0 +1,3 @@
+execute unless entity @s[hasitem=[{item=minecraft:raw_copper,quantity=4..},{item=minecraft:coal,quantity=4..}]] run playsound poke.quest.info @s
+tellraw @s {"rawtext":[{"text":"----------------§6\n§lQuest§r§6§r:\n- Gather §3§l4§r§3§r Coal\n- Gather §3§l4§r§3§r Raw Copper\n§l§aReward§r§l§r:\n- §3§l2§r§3§r §6Copper Tokens\n§r----------------"}]}
+execute if entity @s[hasitem=[{item=minecraft:raw_copper,quantity=4..},{item=minecraft:coal,quantity=4..}]] run function poke/quest/mine_1
