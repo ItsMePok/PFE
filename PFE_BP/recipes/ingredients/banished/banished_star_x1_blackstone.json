@@ -1,0 +1,27 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "poke:banished_star_x1_blackstone"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": [
+			{
+				"item": "blackstone"
+			}
+		],
+		"ingredients": [
+			{
+				"item": "blackstone",
+				"count": 9
+			}
+		],
+		"result": {
+			"item": "poke:banished_star",
+			"count": 1
+		},
+		"priority": 5
+	}
+}

@@ -1,0 +1,48 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "poke:radium_ingot"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "VVV",
+            "VFO",
+            "OOO"
+        ],
+        "unlock": [
+            {
+                "item": "poke:shade_ingot"
+            },
+            {
+                "item": "poke:astral_ingot"
+            },
+            {
+                "item": "poke:astral_block"
+            },
+            {
+                "item": "poke:shade_block"
+            }
+        ],
+        "key": {
+            "F": {
+                "item": "poke:molten_slimeball"
+            },
+            "V": {
+                "item": "poke:shade_ingot"
+            },
+            "O": {
+                "item": "poke:astral_ingot"
+            }
+        },
+        "result": [
+            {
+                "item": "poke:radium_ingot",
+                "count": 4
+            }
+        ],
+        "priority": 0
+    }
+}
