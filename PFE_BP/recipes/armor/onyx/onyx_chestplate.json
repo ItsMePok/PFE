@@ -1,0 +1,35 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:onyx_chestplate"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"BBB",
+			"BUB",
+			"B#B"
+		],
+		"unlock": [
+			{
+				"item": "poke:amethyst_chestplate"
+			}
+		],
+		"key": {
+			"B": {
+				"item": "poke:onyx_block"
+			},
+			"#": {
+				"item": "poke:amethyst_chestplate"
+			},
+			"U": {
+				"item": "poke:upgrade_core"
+			}
+		},
+		"result": {
+			"item": "poke:onyx_chestplate"
+		}
+	}
+}

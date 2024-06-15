@@ -1,0 +1,38 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "poke:swift_robe_chestplate"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "WGW",
+            "GAG",
+            "WUW"
+        ],
+        "unlock": [
+            {
+                "item": "poke:amethyst_chestplate"
+            }
+        ],
+        "key": {
+            "W": {
+                "item": "blue_ice"
+            },
+            "A": {
+                "item": "poke:amethyst_chestplate"
+            },
+            "G": {
+                "item": "gold_block"
+            },
+            "U": {
+                "item": "poke:upgrade_core"
+            }
+        },
+        "result": {
+            "item": "poke:swift_robe_chestplate"
+        }
+    }
+}
