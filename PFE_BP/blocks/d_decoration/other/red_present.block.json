@@ -1,0 +1,42 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "poke:red_present",
+			"menu_category": {
+				"category": "construction"
+			}
+		},
+		"components": {
+			"minecraft:collision_box": false,
+			"minecraft:selection_box": {
+				"origin": [
+					-4,
+					0,
+					-4
+				],
+				"size": [
+					8,
+					10,
+					8
+				]
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 1
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 30
+			},
+			"tag:pfe": {},
+			"minecraft:geometry": "geometry.poke.red_present",
+			"minecraft:map_color": "#9b2626",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "poke_red_present",
+					"render_method": "alpha_test",
+					"ambient_occlusion": false
+				}
+			},"minecraft:loot": "loot_tables/poke/blocks/present.json"
+		}
+	}
+}

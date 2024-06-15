@@ -1,0 +1,21 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "poke:nebula_block",
+			"menu_category": {
+				"category": "construction"
+			}
+		},
+		"components": {
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.4
+			},
+			"minecraft:map_color": "#9c3297",
+			"tag:pfe": {},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 30
+			}
+		}
+	}
+}
