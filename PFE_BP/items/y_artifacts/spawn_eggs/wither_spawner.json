@@ -1,0 +1,27 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:wither_spawner",
+			"menu_category": {
+				"category": "nature",
+				"group": "itemGroup.name.mobEgg"
+			}
+		},
+		"components": {
+			"minecraft:icon":"poke_wither_spawner",
+			"minecraft:entity_placer": {
+				"entity": "wither"
+			},
+			"minecraft:durability": {
+				"damage_chance": {
+					"min": 100,
+					"max": 100
+				},
+				"max_durability": 1
+			},
+			"minecraft:hover_text_color": "gold",
+			"minecraft:max_stack_size": 1
+		}
+	}
+}
