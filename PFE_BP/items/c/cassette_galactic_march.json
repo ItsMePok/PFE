@@ -1,0 +1,17 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:cassette_galactic_march",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:icon":"poke_cassette_galactic_march",
+			"minecraft:custom_components": [
+				"poke:cas"
+			]
+		}
+	}
+}

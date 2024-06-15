@@ -1,0 +1,22 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "poke:cassette_disc_creator",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:custom_components": ["poke:cas"],
+      "minecraft:icon":{
+        "textures": {
+          "default": "poke_cassette_creator"
+        }
+      },
+      "minecraft:tags": {"tags": ["minecraft:music_disc"]},
+      "minecraft:record": {"comparator_signal": 12,"sound_event": "record.creator","duration": 176}
+      
+    }
+  }
+}

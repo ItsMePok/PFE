@@ -1,0 +1,19 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "poke:cassette_mc_disc_relic",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:icon":"poke_cassette_mc_disc_relic",
+      "minecraft:tags": {"tags": ["minecraft:music_disc"]},
+      "minecraft:record": {"comparator_signal": 14,"sound_event": "record.relic","duration": 218},
+      "minecraft:custom_components": [
+        "poke:cas"
+      ]
+    }
+  }
+}
