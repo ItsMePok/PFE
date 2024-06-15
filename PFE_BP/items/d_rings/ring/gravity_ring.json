@@ -1,0 +1,25 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "poke:gravity_ring",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:max_stack_size": 1,
+      "minecraft:icon":"poke_gravity_ring",
+      "minecraft:cooldown": {
+        "category": "poke.gravity_ring",
+        "duration": 1
+      },
+			"minecraft:tags": {"tags": [
+				"function pfe_items/gravity_ring"
+			]},
+			"minecraft:custom_components": [
+				"poke:cc_on_use"
+			]
+    }
+  }
+}

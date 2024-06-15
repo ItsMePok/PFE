@@ -1,0 +1,33 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:ring_4",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:icon":"poke_ring_4",
+			"minecraft:cooldown": {
+				"category": "poke:ring_4",
+				"duration": 25
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:tags": {"tags": [
+				"poke:dragon_ring_proj"
+			]},
+			"minecraft:use_modifiers": {
+				"use_duration": 0.25,"movement_modifier": 0.25
+			}
+		}/*,
+		"events": {
+			"poke:ring_4": {
+				"shoot": {
+					"projectile": "dragon_fireball",
+					"launch_power": 1
+				}
+			}
+		}*/
+	}
+}

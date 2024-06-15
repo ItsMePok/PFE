@@ -1,0 +1,14 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:mine_quest",
+			"menu_category": {"category": "items"}
+		},
+		"components": {
+			"minecraft:icon":"poke_mine_quest",
+			"minecraft:entity_placer": {"entity": "poke:mine_quest"},
+			"minecraft:max_stack_size":1
+		}
+	}
+}

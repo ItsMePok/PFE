@@ -1,0 +1,33 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:ring_2",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:icon":"poke_ring_2",
+			"minecraft:cooldown": {
+				"category": "poke:ring_2",
+				"duration": 15
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:tags": {"tags": [
+				"poke:blaze_ring_proj"
+			]},
+			"minecraft:use_modifiers": {
+				"use_duration": 0.25,"movement_modifier": 0.25
+			}
+		}/*,
+		"events": {
+			"poke:ring_2": {
+				"shoot": {
+					"projectile": "fireball",
+					"launch_power": 1
+				}
+			}
+		}*/
+	}
+}

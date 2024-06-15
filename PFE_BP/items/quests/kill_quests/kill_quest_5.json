@@ -1,0 +1,21 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:kill_quest_5",
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"components": {
+			"minecraft:icon":"poke_kill_quest",
+			"minecraft:max_stack_size":1,
+			"minecraft:tags": {"tags": [
+				"function pfe_items/q_info/kill_5"
+			]},
+			"minecraft:custom_components": [
+				"poke:cc_on_use"
+			]
+		}
+	}
+}
