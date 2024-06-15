@@ -1,0 +1,29 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:banished_leggings"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"XXX",
+			"X X",
+			"X X"
+		],
+		"unlock": [
+			{
+				"item": "poke:banished_star"
+			}
+		],
+		"key": {
+			"X": {
+				"item": "poke:banished_star_x4"
+			}
+		},
+		"result": {
+			"item": "poke:banished_leggings"
+		}
+	}
+}

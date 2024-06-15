@@ -1,0 +1,36 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:astral_boots"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"BBB",
+			"BUB",
+			"#BX"
+		],
+		"unlock": [
+			{"item": "poke:galaxy_boots"},
+			{"item":"poke:astral_ingot"},
+			{"item":"poke:platinum_upgrade_core"}
+		],
+		"key": {
+			"B": {
+				"item": "poke:astral_block"
+			},
+			"#": {
+				"item": "poke:galaxy_boots"
+			},
+			"U": {
+				"item": "poke:platinum_upgrade_core"
+			},
+			"X":{"item":"poke:medic_boots"}
+		},
+		"result": {
+			"item": "poke:astral_boots"
+		}
+	}
+}
