@@ -1,0 +1,16 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "poke:molten_lava_sponge",
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"components": {
+			"minecraft:light_emission": 8,
+			"tag:pfe": {},
+			"minecraft:map_color": "#c5371e"
+		}
+	}
+}
