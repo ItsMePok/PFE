@@ -17,7 +17,7 @@
 			],
 			"minecraft:max_stack_size": 1,
 			"minecraft:hand_equipped": true,
-			"minecraft:damage": 74,
+			"minecraft:damage":{"value":74},
 			"minecraft:icon":"poke_ban_hammer",
 			"minecraft:enchantable": {
 				"value": 140,
@@ -25,11 +25,12 @@
 			},
 			"minecraft:should_despawn": false,
 			"minecraft:can_destroy_in_creative": false,
-			"minecraft:hover_text_color": "gold",
+			"minecraft:hover_text_color":{"value":"gold"},
 			"minecraft:digger": {
 				"use_efficiency": true,
 				"destroy_speeds": [
 					{"block": {	"tags": "query.any_tag('dirt', 'pfe', 'sand', 'gravel', 'grass', 'snow', 'wood', 'pumpkin', 'plant', 'stone', 'metal', 'rail', 'text_sign', 'diamond_pick_diggable')"},"speed":50},
+					{"block": "minecraft:heavy_core","speed":50},
 					{"block": "minecraft:shroomlight","speed":50},
 					{"block": "minecraft:crimson_hyphae","speed":50},
 					{"block": "minecraft:magma","speed":50},

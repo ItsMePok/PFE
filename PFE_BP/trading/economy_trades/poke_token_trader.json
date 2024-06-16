@@ -6,6 +6,7 @@
 					"trades": [
 						{
 							"max_uses": -1,
+							"reward_exp": false,
 							"wants": [
 								{
 									"item": "poke:copper_token",
@@ -21,6 +22,7 @@
 						},
 						{
 							"max_uses": -1,
+							"reward_exp": false,
 							"wants": [
 								{
 									"item": "poke:iron_token",
@@ -36,6 +38,7 @@
 						},
 						{
 							"max_uses": -1,
+							"reward_exp": false,
 							"wants": [
 								{
 									"item": "poke:gold_token",
@@ -51,6 +54,7 @@
 						},
 						{
 							"max_uses": -1,
+							"reward_exp": false,
 							"wants": [
 								{
 									"item": "poke:diamond_token",
@@ -66,6 +70,7 @@
 						},
 						{
 							"max_uses": -1,
+							"reward_exp": false,
 							"wants": [
 								{
 									"item": "poke:iron_token"
@@ -81,6 +86,7 @@
 						},
 						{
 							"max_uses": -1,
+							"reward_exp": false,
 							"wants": [
 								{
 									"item": "poke:gold_token"
@@ -96,6 +102,7 @@
 						},
 						{
 							"max_uses": -1,
+							"reward_exp": false,
 							"wants": [
 								{
 									"item": "poke:diamond_token"
@@ -111,6 +118,7 @@
 						},
 						{
 							"max_uses": -1,
+							"reward_exp": false,
 							"wants": [
 								{
 									"item": "poke:platinum_token"

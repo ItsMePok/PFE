@@ -12,6 +12,11 @@
 							"treasure": true
 						}
 					],
+					"weight": 9
+				},
+				{
+					"type": "item",
+					"name": "poke:hellish_blade",
 					"weight": 1
 				}
 			]

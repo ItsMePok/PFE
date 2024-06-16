@@ -1,6 +1,13 @@
 {
 	"format_version": "1.20.20",
 	"sound_definitions": {
+		"poke.rocket_replenisher_use":{
+			"category": "player",
+			"max_distance": 8,
+			"sounds": [
+				"sounds/pfe/rocket_replenisher"
+			]
+		},
 		"poke.knightling.bonk":{
 			"category": "hostile",
 			"max_distance": 8,
@@ -22,14 +29,7 @@
 			"category": "player",
 			"max_distance": 10,
 			"sounds": [
-				"sounds/pfe/poke_battleaxe"
-			]
-		},
-		"poke.windzooka":{
-			"category": "player",
-			"max_distance": 35,
-			"sounds": [
-				"sounds/pfe/poke_battleaxe"
+				"sounds/pfe/battleaxe"
 			]
 		},
 		"poke.med_ring_use":{
@@ -46,8 +46,7 @@
 				{
 					"load_on_low_memory": true,
 					"name": "sounds/pfe/listener_boss",
-					"stream": true,
-					"volume": 0.8
+					"stream": true
 				}
 			]
 		},
@@ -56,7 +55,7 @@
 			"max_distance": 64,
 			"sounds": [
 				{
-					"name": "sounds/pfe/poke_q_comp",
+					"name": "sounds/pfe/quest_comp",
 					"volume": 0.8
 				}
 			]
@@ -72,15 +71,13 @@
 			]
 		},
 		"poke.record.listen" : {
-			"category" : "record",
+			"category" : "ui",
 			"max_distance" : 64.0,
-			"min_distance" : null,
 			"sounds" : [
 				{
 					"load_on_low_memory" : true,
 					"name" : "sounds/pfe/listener_boss",
-					"stream" : true,
-					"volume" : 0.50
+					"stream" : true
 				}
 			]
 		},
@@ -405,32 +402,32 @@
 			"category" : "ui",
 			"max_distance" : 256,
 			"sounds" : [
-			   {
-				  "load_on_low_memory" : true,
-				  "name" : "sounds/block/bell/bell_use01",
-				  "pitch" : 0.950
-			   },
-			   {
-				  "name" : "sounds/block/bell/bell_use02",
-				  "pitch" : 0.950
-			   },
-			   {
-				  "name" : "sounds/block/bell/bell_use01",
-				  "pitch" : 0.930
-			   },
-			   {
-				  "name" : "sounds/block/bell/bell_use02",
-				  "pitch" : 0.930
-			   },
-			   {
-				  "name" : "sounds/block/bell/bell_use01",
-				  "pitch" : 0.970
-			   },
-			   {
-				  "name" : "sounds/block/bell/bell_use02",
-				  "pitch" : 0.970
-			   }
+				{
+					"load_on_low_memory" : true,
+					"name" : "sounds/block/bell/bell_use01",
+					"pitch" : 0.950
+				},
+				{
+					"name" : "sounds/block/bell/bell_use02",
+					"pitch" : 0.950
+				},
+				{
+					"name" : "sounds/block/bell/bell_use01",
+					"pitch" : 0.930
+				},
+				{
+					"name" : "sounds/block/bell/bell_use02",
+					"pitch" : 0.930
+				},
+				{
+					"name" : "sounds/block/bell/bell_use01",
+					"pitch" : 0.970
+				},
+				{
+					"name" : "sounds/block/bell/bell_use02",
+					"pitch" : 0.970
+				}
 			]
-		 }
+		}
 	}
 }

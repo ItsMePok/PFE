@@ -5,52 +5,98 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "poke:astral_ingot"
+					"name": "poke:astral_ingot",
+					"weight": 10
 				},{
 					"type": "item",
-					"name": "poke:cobalt_ingot"
+					"name": "poke:cobalt_ingot",
+					"weight": 10
 				},{
 					"type": "item",
-					"name": "poke:void_ingot"
+					"name": "poke:void_ingot",
+					"weight": 10
 				},{
 					"type": "item",
-					"name": "poke:godly_ingot"
+					"name": "poke:godly_ingot",
+					"weight": 10
 				},{
 					"type": "item",
-					"name": "poke:galaxy_ingot"
+					"name": "poke:galaxy_ingot",
+					"weight": 10
 				},{
 					"type": "item",
-					"name": "poke:holy_ingot"
+					"name": "poke:holy_ingot",
+					"weight": 10
 				},{
 					"type": "item",
-					"name": "poke:demonic_ingot"
+					"name": "poke:demonic_ingot",
+					"weight": 10
 				},{
 					"type": "item",
-					"name": "poke:hellish_ingot"
+					"name": "poke:hellish_ingot",
+					"weight": 10
 				},{
 					"type": "item",
-					"name": "poke:onyx_ingot"
+					"name": "poke:onyx_ingot",
+					"weight": 10
 				},{
 					"type": "item",
-					"name": "poke:shade_ingot"
+					"name": "poke:shade_ingot",
+					"weight": 10
 				},{
 					"type": "item",
-					"name": "poke:nebula_noodles"
+					"name": "poke:nebula_noodles",
+					"weight": 10
 				},{
 					"type": "item",
-					"name": "poke:nebula_potion"
+					"name": "poke:nebula_potion",
+					"weight": 10
 				},{
 					"type": "item",
-					"name": "poke:void_potion"
+					"name": "poke:void_potion",
+					"weight": 10
 				},{
 					"type": "item",
-					"name": "poke:cobalt_potion"
+					"name": "poke:cobalt_potion",
+					"weight": 10
 				},{
 					"type": "item",
-					"name": "poke:death_potion"
+					"name": "poke:death_potion",
+					"weight": 10
 				},{
 					"type": "item",
-					"name": "poke:eggnog"
+					"name": "poke:eggnog",
+					"weight": 10
+				},
+				{
+					"type": "item",
+					"name": "poke:cobalt_soup",
+					"weight": 10
+				},
+				{
+					"type": "item",
+					"name": "poke:molten_slimeball",
+					"weight": 10
+				},
+				{
+					"type": "item",
+					"name": "poke:death_ingot",
+					"weight": 10
+				},
+				{
+					"type": "item",
+					"name": "poke:medic_ingot",
+					"weight": 10
+				},
+				{
+					"type": "item",
+					"name": "poke:radium_ingot",
+					"weight": 10
+				},
+				{
+					"type": "item",
+					"name": "poke:splash_death_potion",
+					"weight": 1
 				}
 			]
 		}

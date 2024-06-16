@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.60",
+	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:nebula_chestplate",
@@ -21,17 +21,12 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": { 
-				"textures": { 
-				  "default": "nebula_chestplate" } 
-			  }, 
+			"minecraft:icon":"nebula_chestplate", 
 			"minecraft:wearable": {
 				"slot": "slot.armor.chest",
 				"protection": 43
 			},
-			"minecraft:knockback_resistance": {
-				"protection": 5
-			},
+			"minecraft:knockback_resistance":{"protection":1},
 			"minecraft:repairable": {
 				"repair_items": [
 					{
@@ -45,21 +40,15 @@
 							"poke:nebula_ingot"
 						],
 						"repair_amount": "query.max_durability*0.25"
-					},
-					{
-						"items": [
-							"poke:nebula_chestplate"
-						],
-						"repair_amount": "context.other->query.remaining_durability+0.12*context.other->query.max_durability"
 					}
 				]
 			}, 
 			"minecraft:tags": { 
-			  "tags": [ 
-				"minecraft:is_armor", 
-				"minecraft:trimmable_armors" 
-			  ] 
+				"tags": [ 
+					"minecraft:is_armor", 
+					"minecraft:trimmable_armors" 
+				] 
 			} 
-		  } 
 		} 
-	  }
+	} 
+}

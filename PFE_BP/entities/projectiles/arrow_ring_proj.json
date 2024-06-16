@@ -15,7 +15,7 @@
 			},
 			"minecraft:projectile": {
 				"gravity": 0.02,
-				"crit_particle_on_hurt": false,
+				"crit_particle_on_hurt": true,
 				"hit_sound": "bow.hit",
 				"inertia": 0.995,
 				"shoot_sound": "random.bow",

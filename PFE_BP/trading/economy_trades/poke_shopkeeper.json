@@ -6,6 +6,7 @@
 					"trades": [
 						{
 							"max_uses": -1,
+							"reward_exp": false,
 							"wants": [
 								{
 									"item": "poke:dollor_bill_1",
@@ -20,6 +21,7 @@
 						},
 						{
 							"max_uses": -1,
+							"reward_exp": false,
 							"wants": [
 								{
 									"item": "poke:dollor_bill_5",
@@ -34,6 +36,7 @@
 						},
 						{
 							"max_uses": -1,
+							"reward_exp": false,
 							"wants": [
 								{
 									"item": "poke:dollor_bill_5",
@@ -49,6 +52,7 @@
 						},
 						{
 							"max_uses": -1,
+							"reward_exp": false,
 							"wants": [
 								{
 									"item": "poke:dollor_bill_10",

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.60",
+	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:death_helmet",
@@ -21,14 +21,12 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": { 
-				"textures": { 
-				  "default": "death_helmet" } 
-			  }, 
+			"minecraft:icon":"death_helmet", 
 			"minecraft:wearable": {
 				"slot": "slot.armor.head",
 				"protection": 14
 			},
+			"minecraft:knockback_resistance":{"protection":0.5},
 			"minecraft:repairable": {
 				"repair_items": [
 					{
@@ -48,21 +46,15 @@
 							"poke:death_nugget"
 						],
 						"repair_amount": "query.max_durability * 0.03"
-					},
-					{
-						"items": [
-							"poke:death_helmet"
-						],
-						"repair_amount": "context.other->query.remaining_durability + 0.12 * context.other->query.max_durability"
 					}
 				]
 			}, 
 			"minecraft:tags": { 
-			  "tags": [ 
-				"minecraft:is_armor", 
-				"minecraft:trimmable_armors" 
-			  ] 
+				"tags": [ 
+					"minecraft:is_armor", 
+					"minecraft:trimmable_armors" 
+				] 
 			} 
-		  } 
 		} 
-	  }
+	} 
+}

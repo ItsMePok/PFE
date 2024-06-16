@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.60",
+	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:banished_leggings",
@@ -14,20 +14,17 @@
 				"value": 90,
 				"slot": "armor_legs"
 			},
-			"minecraft:icon": { 
-				"textures": { 
-				  "default": "banished_leggings" } 
-			  }, 
+			"minecraft:icon":"banished_leggings", 
 			"minecraft:wearable": {
 				"slot": "slot.armor.legs",
 				"protection": 25
 			}, 
 			"minecraft:tags": { 
-			  "tags": [ 
-				"minecraft:is_armor", 
-				"minecraft:trimmable_armors" 
-			  ] 
+				"tags": [ 
+					"minecraft:is_armor", 
+					"minecraft:trimmable_armors" 
+				] 
 			} 
-		  } 
 		} 
-	  }
+	} 
+}

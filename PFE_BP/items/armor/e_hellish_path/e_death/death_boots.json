@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.60",
+	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:death_boots",
@@ -21,14 +21,12 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": { 
-				"textures": { 
-				  "default": "death_boots" } 
-			  }, 
+			"minecraft:icon":"death_boots", 
 			"minecraft:wearable": {
 				"slot": "slot.armor.feet",
 				"protection": 14
 			},
+			"minecraft:knockback_resistance":{"protection":0.5},
 			"minecraft:repairable": {
 				"repair_items": [
 					{
@@ -48,21 +46,15 @@
 							"poke:death_nugget"
 						],
 						"repair_amount": "query.max_durability * 0.03"
-					},
-					{
-						"items": [
-							"poke:death_boots"
-						],
-						"repair_amount": "context.other->query.remaining_durability + 0.12 * context.other->query.max_durability"
 					}
 				]
 			}, 
 			"minecraft:tags": { 
-			  "tags": [ 
-				"minecraft:is_armor", 
-				"minecraft:trimmable_armors" 
-			  ] 
+				"tags": [ 
+					"minecraft:is_armor", 
+					"minecraft:trimmable_armors" 
+				] 
 			} 
-		  } 
 		} 
-	  }
+	} 
+}

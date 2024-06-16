@@ -14,11 +14,7 @@
 				"max_durability": 5000,
 				"damage_chance": {"max": 100,"min": 20}
 			},
-			"minecraft:icon":{
-				"textures": {
-					"default": "poke_swift_pickaxe"
-				}
-			},
+			"minecraft:icon":"poke_swift_pickaxe",
 			"minecraft:repairable": {
 				"repair_items": [
 					{
@@ -45,6 +41,7 @@
 				"use_efficiency": true,
 				"destroy_speeds": [
 					{"block": {	"tags": "query.any_tag('dirt', 'pfe', 'sand', 'gravel', 'grass', 'snow', 'wood', 'pumpkin', 'plant', 'stone', 'metal', 'rail', 'text_sign', 'diamond_pick_diggable')"},"speed":150},
+					{"block": "minecraft:heavy_core","speed":150},
 					{"block": "minecraft:shroomlight","speed":150},
 					{"block": "minecraft:crimson_hyphae","speed":150},
 					{"block": "minecraft:magma","speed":150},

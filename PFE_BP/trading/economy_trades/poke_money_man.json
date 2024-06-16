@@ -6,6 +6,7 @@
           "trades": [
             {
               "max_uses": -1,
+              "reward_exp": false,
               "wants": [
                 {
                   "item": "poke:pma_bill_1",
@@ -20,6 +21,7 @@
             },
             {
               "max_uses": -1,
+              "reward_exp": false,
               "wants": [
                 {
                   "item": "poke:pma_bill_5",
@@ -34,6 +36,7 @@
             },
             {
               "max_uses": -1,
+              "reward_exp": false,
               "wants": [
                 {
                   "item": "poke:pma_bill_10",
@@ -48,6 +51,7 @@
             },
             {
               "max_uses": -1,
+              "reward_exp": false,
               "wants": [
                 {
                   "item": "poke:pma_bill_10",
@@ -62,6 +66,7 @@
             },
             {
               "max_uses": -1,
+              "reward_exp": false,
               "wants": [
                 {
                   "item": "poke:pma_bill_50",
@@ -76,6 +81,7 @@
             },
             {
               "max_uses": -1,
+              "reward_exp": false,
               "wants": [
                 {
                   "item": "poke:pma_bill_100",
@@ -90,6 +96,7 @@
             },
             {
               "max_uses": -1,
+              "reward_exp": false,
               "wants": [
                 {
                   "item": "poke:pma_bill_5",
@@ -105,6 +112,7 @@
             },
             {
               "max_uses": -1,
+              "reward_exp": false,
               "wants": [
                 {
                   "item": "poke:pma_bill_10",
@@ -120,6 +128,7 @@
             },
             {
               "max_uses": -1,
+              "reward_exp": false,
               "wants": [
                 {
                   "item": "poke:pma_bill_20",
@@ -135,6 +144,7 @@
             },
             {
               "max_uses": -1,
+              "reward_exp": false,
               "wants": [
                 {
                   "item": "poke:pma_bill_50",
@@ -150,6 +160,7 @@
             },
             {
               "max_uses": -1,
+              "reward_exp": false,
               "wants": [
                 {
                   "item": "poke:pma_bill_100",
@@ -165,6 +176,7 @@
             },
             {
               "max_uses": -1,
+              "reward_exp": false,
               "wants": [
                 {
                   "item": "poke:pma_bill_500",

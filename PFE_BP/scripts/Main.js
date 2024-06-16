@@ -39,32 +39,6 @@ function damage_item(item) {
     durabilityComponent.damage += Number(Math.round(Math.random() * 100) <= durabilityComponent.getDamageChance(unbreaking))
     return item
 }
-/*
-function damage_item(item) {
-    // Get durability
-    const durabilityComponent = item.getComponent("durability")
-    var unbreaking = 0
-    // Get unbreaking level
-    if (item.hasComponent(ItemComponentTypes.Enchantable)) {
-        if(item.getComponent(ItemComponentTypes.Enchantable).hasEnchantment('unbreaking') == true){
-            unbreaking = item.getComponent(ItemComponentTypes.Enchantable).getEnchantment("unbreaking");
-            if (!unbreaking) {
-                unbreaking = 0
-            } else {
-                unbreaking = unbreaking.level
-            }
-            console.warn(unbreaking)
-            return;
-        }
-    }
-    // Apply damage
-    if (durabilityComponent.damage == durabilityComponent.maxDurability) {
-        return
-    }
-    durabilityComponent.damage += Number(Math.round(Math.random() * 100) <= durabilityComponent.getDamageChance(unbreaking))
-    console.warn(durabilityComponent.damage += Number(Math.round(Math.random() * 100) <= durabilityComponent.getDamageChance()))
-    return item
-}*/
 // Add your item IDs into this array
 const my_items = ["poke:medic_haxel","poke:cobalt_crossbow","poke:astral_crossbow","poke:godly_crossbow","poke:demonic_haxel","poke:holy_battleaxe","poke:godly_battleaxe","poke:galaxy_battleaxe","poke:astral_battleaxe","poke:amethyst_battleaxe","poke:netherite_battleaxe","poke:diamond_battleaxe","poke:gold_battleaxe","poke:void_battleaxe","poke:death_battleaxe","poke:demonic_battleaxe","poke:hellish_battleaxe","poke:emerald_battleaxe","poke:iron_battleaxe","poke:onyx_battleaxe","poke:shade_battleaxe","poke:cobalt_battleaxe","poke:stone_battleaxe","poke:wood_battleaxe","poke:radium_battleaxe","poke:hellish_scythe","poke:ember_scythe","poke:emerald_scythe","poke:nebula_battleaxe","poke:diamond_scythe","poke:shade_scythe","poke:nebula_scythe","poke:godly_scythe","poke:galactic_scythe","poke:radium_scythe","poke:amethyst_scythe","poke:onyx_scythe","poke:gold_scythe","poke:cobalt_scythe","poke:netherite_scythe","poke:void_scythe","poke:holy_scythe","poke:iron_scythe","poke:demonic_slasher","poke:death_scythe","poke:godly_haxel","poke:radium_haxel","poke:cobalt_haxel","poke:shade_haxel","poke:wooden_haxel","poke:stone_haxel","poke:iron_haxel","poke:gold_haxel","poke:emerald_haxel","poke:diamond_haxel","poke:netherite_haxel","poke:hellish_haxel","poke:holy_haxel","poke:amethyst_haxel","poke:haxel","poke:swift_pickaxe","poke:snow_shovel","poke:nebula_hoe","poke:cobalt_sword","poke:astral_sword","poke:onyx_sword","poke:demonic_sword","poke:void_sword","poke:pocket_knife","poke:amethyst_sword","poke:circuit_sword","poke:hellish_blade","poke:nebula_sword","poke:galaxy_sword","poke:godly_sword","poke:holy_sword","poke:shade_sword","poke:radium_sword",]
 world.afterEvents.playerBreakBlock.subscribe(event => {
@@ -85,27 +59,15 @@ world.afterEvents.playerBreakBlock.subscribe(event => {
 });
 // End of Tool durability 
 //Food effects / Projectile shooters
-const pfeefood = ["poke:blazooka","poke:windzooka","poke:golden_chicken","poke:rotten_chicken","poke:demonic_potion","poke:hellish_potion","poke:nebula_potion","poke:void_potion","poke:death_potion","poke:cobalt_potion","poke:cobalt_soup","poke:crimson_sporeshroom_stew","poke:root_beer","poke:hellish_soup","poke:nebula_noodles","poke:warped_sporeshroom_stew","poke:milk_bottle","poke:banished_star_x10","poke:banished_star_x9"];
+const pfeefood = ["poke:golden_chicken","poke:rotten_chicken","poke:demonic_potion","poke:hellish_potion","poke:nebula_potion","poke:void_potion","poke:death_potion","poke:cobalt_potion","poke:cobalt_soup","poke:crimson_sporeshroom_stew","poke:root_beer","poke:hellish_soup","poke:nebula_noodles","poke:warped_sporeshroom_stew","poke:milk_bottle","poke:banished_star_x10","poke:banished_star_x9"];
 const pfeprojitems = ["poke:nuke_ring","poke:necromancer_staff","poke:ring_3","poke:ring_4","poke:ring_2","poke:arrow_ring","poke:shade_ring",]
-const pitems = pfeefood + pfeprojitems
+const pitems = pfeefood //+ pfeprojitems
 world.afterEvents.itemCompleteUse.subscribe(pfefood => {
     const plocationx= pfefood.source.getViewDirection().x;
     const plocationy= pfefood.source.getViewDirection().y;
     const plocationz= pfefood.source.getViewDirection().z;
     const plocation= pfefood.source.location;
-    const headlocate = pfefood.source.getHeadLocation();
-    if (!pitems.includes(pfefood.itemStack.typeId)) return;
-    if (pfeprojitems.includes(pfefood.itemStack.typeId)){ //Projectile shooters. projectile id defined in a tag on the item
-        const ptag = pfefood.itemStack.getTags();
-        const aangle = pfefood.source.getViewDirection();
-        const proj = pfefood.source.dimension.spawnEntity(''+ptag,headlocate);
-        const proje = proj.getComponent("projectile");
-        proje.owner = pfefood.source;
-        proje.shoot(aangle);
-        return;
-    };
-    if (pfefood.itemStack.typeId == "poke:windzooka"){pfefood.source.applyKnockback(plocationx,plocationz,-7,-plocationy*4);pfefood.source.playSound('wind_charge.burst');pfefood.source.dimension.spawnParticle('minecraft:wind_explosion_emitter',plocation);return;}
-    if (pfefood.itemStack.typeId == "poke:blazooka"){pfefood.source.applyKnockback(plocationx,plocationz,7,-plocationy*-4);pfefood.source.playSound('wind_charge.burst');pfefood.source.dimension.spawnParticle('minecraft:wind_explosion_emitter',plocation);pfefood.source.dimension.spawnParticle('poke:blazooka_flame',plocation);return;}
+    if (!pfeefood.includes(pfefood.itemStack.typeId)) return;
     if (pfefood.itemStack.typeId == "poke:cobalt_soup"){pfefood.source.addEffect('night_vision', 2400,{showParticles: false});return};
     if (pfefood.itemStack.typeId == "poke:root_beer") {pfefood.source.addEffect('speed', 600, {amplifier: 4,});return};
     if (pfefood.itemStack.typeId == "poke:crimson_sporeshroom_stew") {pfefood.source.addEffect('fire_resistance', 1200);return};
@@ -124,6 +86,37 @@ world.afterEvents.itemCompleteUse.subscribe(pfefood => {
     if (pfefood.itemStack.typeId == "poke:banished_star_x10") {pfefood.source.runCommandAsync("damage @a[r=100] 32767000 entity_attack entity @s");return};
     if (pfefood.itemStack.typeId == "poke:banished_star_x9") {pfefood.source.runCommandAsync("damage @s 32767000 entity_attack");return};
     console.warn('not found')
+    return;
+});
+const itemuseitems = ["poke:blazooka","poke:windzooka"] + pfeprojitems
+world.afterEvents.itemUse.subscribe(event => {
+    const plocationx= event.source.getViewDirection().x;
+    const plocationy= event.source.getViewDirection().y;
+    const plocationz= event.source.getViewDirection().z;
+    const plocation= event.source.location;
+    const headlocate = event.source.getHeadLocation();
+    if (!itemuseitems.includes(event.itemStack.typeId)) return;
+    const ticks = event.itemStack.getComponent('cooldown').cooldownTicks
+    if (event.itemStack.getComponent('cooldown').getCooldownTicksRemaining(event.source) != ticks -1) return;
+    if (pfeprojitems.includes(event.itemStack.typeId)){ //Projectile shooters. projectile id defined in a tag on the item
+        const ptag = event.itemStack.getTags();
+        const aangle = event.source.getViewDirection();
+        const proj = event.source.dimension.spawnEntity(''+ptag,headlocate);
+        const proje = proj.getComponent("projectile");
+        proje.owner = event.source;
+        proje.shoot(aangle);
+        return;
+    };
+    if (event.itemStack.typeId == "poke:windzooka"){event.source.applyKnockback(plocationx,plocationz,-7,-plocationy*4);event.source.playSound('wind_charge.burst');event.source.dimension.spawnParticle('minecraft:wind_explosion_emitter',plocation)}
+    if (event.itemStack.typeId == "poke:blazooka"){event.source.applyKnockback(plocationx,plocationz,7,-plocationy*-4);event.source.playSound('wind_charge.burst');event.source.dimension.spawnParticle('minecraft:wind_explosion_emitter',plocation);event.source.dimension.spawnParticle('poke:blazooka_flame',plocation)}
+    if (world.getPlayers({
+        gameMode: GameMode.creative
+    }).includes(event.source)) return
+    const newItem = damage_item(event.itemStack)
+    event.source.getComponent(EntityComponentTypes.Equippable).setEquipment(EquipmentSlot.Mainhand, newItem)
+    if (!newItem) {
+        event.source.playSound("random.break")
+    }
     return;
 });
 //Block interact events that do not use custom components

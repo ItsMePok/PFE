@@ -16,10 +16,10 @@
 			"minecraft:allow_off_hand": true, 
 			"minecraft:cooldown": {
 				"category": "poke:blazooka",
-				"duration": 1
+				"duration": 1.5
 			},
 			"minecraft:use_modifiers": {
-				"use_duration": 0.75,
+				"use_duration": 0,
 				"movement_modifier": 0.5
 			},
 			"minecraft:durability": {
@@ -32,13 +32,7 @@
 			"minecraft:enchantable": {
 				"slot": "shield",
 				"value": 30
-			},
-			"minecraft:tags": {"tags":[
-				"function pfe_items/windzooka"
-			]},
-			"minecraft:custom_components": [
-				"poke:cc_on_use"
-			]
+			}
 		}
 	}
 }

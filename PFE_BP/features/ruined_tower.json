@@ -4,7 +4,7 @@
 		"description": {
 			"identifier": "poke:ruined_tower"
 		},
-		"structure_name": "poke:poke.ruined_tower",
+		"structure_name": "poke:ruined_tower",
 		"adjustment_radius": 16,
 		"facing_direction": "random",
 		"constraints": {

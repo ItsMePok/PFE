@@ -11,10 +11,10 @@
 			"minecraft:icon":"poke_rocket_replenisher",
 			"minecraft:max_stack_size": 1,
 			"minecraft:durability": {
-				"max_durability": 3
+				"max_durability": 7
 			},
 			"minecraft:tags": {"tags": [
-				"give @s minecraft:firework_rocket 16 580"
+				"function pfe_items/rocket_replenisher"
 			]},
 			"minecraft:custom_components": [
 				"poke:cc_on_use"

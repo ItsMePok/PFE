@@ -22,10 +22,11 @@
 				}
 			},
 			"minecraft:tags": {"tags": [
-				"poke:arrow_ring_proj"
+				"poke:arrow_ring_proj"//Projectile id for script
 			]},
 			"minecraft:use_modifiers": {
-				"use_duration": 0.25,"movement_modifier": 0.25
+				"use_duration": 0,
+				"movement_modifier": 0.25
 			}
 		}
 	}

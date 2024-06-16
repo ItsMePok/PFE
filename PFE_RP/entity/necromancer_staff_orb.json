@@ -4,7 +4,7 @@
 		"description": {
 			"identifier": "poke:necromancer_staff_orb",
 			"materials": {
-				"default": "arrow"
+				"default": "entity_emissive"
 			},
 			"textures": {
 				"default": "textures/entity/poke_necromancer_orb"
@@ -13,7 +13,8 @@
 				"default": "geometry.poke.necromancer_orb_projectile"
 			},
 			"animations": {
-				"move": "animation.arrow.move"
+				"move": "animation.arrow.move",
+				"trail": "animation.poke.necromancer_orb_projectile.trail"
 			},
 			"render_controllers": [
 				"controller.render.arrow"
@@ -23,9 +24,11 @@
 					"variable.shake = query.shake_time - query.frame_alpha;",
 					"variable.shake_power = variable.shake > 0.0 ? -Math.sin(variable.shake * 200.0) * variable.shake : 0.0;"
 				],
-				"animate": [
-					"move"
-				]
+				"animate": ["move","trail"]
+			},
+			"particle_emitters": {"necromancer_orb": "poke:necromancer_orb"},
+			"particle_effects": {
+				"necromancer_orb": "poke:necromancer_orb"
 			}
 		}
 	}

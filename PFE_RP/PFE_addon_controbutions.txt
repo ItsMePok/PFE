@@ -3,20 +3,22 @@ if you have any questions about addons you can ask on discord (username: itsmepo
 
 Anything listed below has been used at some point to develop PFE
 
-Raccoon, Necromancer, Mushroom Buddy, Cobalt Golem, Dragon,Cobalt Robe,
-Maxwell, Mr Duck, Dapper Fit, Little Dapper Fit, Big Dapper Fit, Apollo, Caged Soul,
-Scythe Textures, Rat
+Raccoon, Necromancer, Mushroom Buddy, 
+Cobalt Golem, Dragon, Cobalt Robe,
+Maxwell, Mr Duck, Dapper Fit, 
+Little Dapper Fit, Big Dapper Fit, Apollo the Snake, 
+Caged Soul, Scythe Textures, Rat (WIP)
 Were made by O2God for PFE
 
 Code for Slabs & Tool Durability were copied from the bedrock wiki
 https://wiki.bedrock.dev/
 
-Animated item textures
+Animated item textures for the Sundial
 Some Code from Hero Studios
 https://mcpedl.com/items-animateds-template-creators-pack/
 
 
-Programs Used
+Programs & Websites Using:
 
 BlockBench (For Modeling & Item, Block, & Entity Wizard)
 https://www.blockbench.net/
@@ -26,6 +28,12 @@ https://www.aseprite.org/
 
 Note Block Studio (For Boss Music, and other sound effects)
 https://opennbs.org/
+
+foobar2000 (just an easy way i was able to convert .wav to .ogg)
+https://www.foobar2000.org/
+
+Regolith (Addon Compiling)
+https://bedrock-oss.github.io/regolith/
 
 VS Code
 https://code.visualstudio.com/
@@ -43,6 +51,7 @@ zz5840.minecraft-lang-colorizer
 JannisX11.snowstorm
 netcorext.uuid-generator
 AntiAntiSepticeye.vscode-color-picker
+BedrockOSS.regolith
 
 Snowstorm (For Particles)
 https://snowstorm.app/
@@ -50,15 +59,17 @@ https://snowstorm.app/
 AnyLanguage (for pack translation)
 https://solveddev.github.io/AnyLanguage/
 
-Other Sites
-MediaFire (for download option)
-https://www.mediafire.com/
+Curseforge
+https://www.curseforge.com/minecraft-bedrock/addons/pfe
 
 MCPEDL
 https://mcpedl.com/pfe
 
 ModBay
 https://modbay.org/mods/372-pokes-fantasy-expansion.html
+
+GitHub Repo
+https://github.com/ItsMePok/PFE
 
 Wikis & Info
 https://wiki.bedrock.dev/
@@ -75,8 +86,8 @@ https://bridge-core.app/
 Paint.net (For Textures)
 https://www.getpaint.net/
 
-Regolith (Addon Compiling)
-https://bedrock-oss.github.io/regolith/
-
 Mcreator (Used when first starting addons)
 https://mcreator.net/
+
+MediaFire (for download option)
+https://www.mediafire.com/
