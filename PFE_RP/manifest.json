@@ -3,7 +3,7 @@
 	"header": {
 		"name": "§eV1.2.0.1 §uPFE §aRP",
 		"description": "pack.description",
-		"uuid": "3203e879-7838-4425-945a-dde39fd61f67",
+		"uuid": "0a638302-fd18-46d6-ba49-58b7a7f6b2e0",
 		"version": [1, 0, 0],
 		"min_engine_version": [1, 21, 0]
 	},
@@ -25,7 +25,7 @@
 	],
 	"dependencies": [
 		{
-			"uuid": "d86420ce-b733-48a9-803a-7d4c965814c8",
+			"uuid": "67488634-b53b-48d8-a3c0-4c0761ae00d8",
 			"version": [1, 0, 0]
 		}
 	]

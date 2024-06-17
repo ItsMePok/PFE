@@ -13,6 +13,17 @@
 				"category": "poke:nuke_ring",
 				"duration": 2
 			},
+			"minecraft:durability": {
+				"max_durability": 2500,
+				"damage_chance": {
+					"min": 60,
+					"max": 100
+				}
+			},
+			"minecraft:enchantable": {
+				"slot": "flintsteel",
+				"value": 23
+			},
 			"minecraft:max_stack_size": 1,
 			"minecraft:tags": {"tags": [
 				"poke:nuke_ring_projectile"//Projectile id for script

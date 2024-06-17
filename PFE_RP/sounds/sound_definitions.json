@@ -1,6 +1,13 @@
 {
 	"format_version": "1.20.20",
 	"sound_definitions": {
+		"poke.ice_ring_use":{
+			"category": "player",
+			"max_distance": 16,
+			"sounds": [
+				"sounds/pfe/ice_ring_use"
+			]
+		},
 		"poke.rocket_replenisher_use":{
 			"category": "player",
 			"max_distance": 8,

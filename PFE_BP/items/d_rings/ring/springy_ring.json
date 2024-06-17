@@ -14,6 +14,17 @@
 				"category": "poke:springy_ring",
 				"duration": 20
 			},
+			"minecraft:durability": {
+				"max_durability": 2500,
+				"damage_chance": {
+					"min": 60,
+					"max": 100
+				}
+			},
+			"minecraft:enchantable": {
+				"slot": "flintsteel",
+				"value": 18
+			},
 			"minecraft:tags": {"tags": [
 				"function poke/rings/springy_ring_event"
 			]},

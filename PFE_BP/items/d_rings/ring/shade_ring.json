@@ -14,6 +14,17 @@
 				"duration": 5,
 				"category": "poke:shade_ring"
 			},
+			"minecraft:durability": {
+				"max_durability": 2500,
+				"damage_chance": {
+					"min": 60,
+					"max": 100
+				}
+			},
+			"minecraft:enchantable": {
+				"slot": "flintsteel",
+				"value": 7
+			},
 			"minecraft:max_stack_size": 1,
 			"minecraft:tags": {"tags": [
 				"poke:shade_ring_proj"//Projectile id for script

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.13.0",
+	"format_version": "1.20.80",
 	"minecraft:feature_rules": {
 		"description": {
 			"identifier": "poke:demonic_allay_dungeon",
@@ -21,26 +21,25 @@
 		},
 		"distribution": {
 			"iterations": 1,
-			"scatter_chance": "1 / 2",
 			"x": {
 				"distribution": "uniform",
 				"extent": [
 					0,
-					16
+					1024
 				]
 			},
 			"y": {
 				"distribution": "gaussian",
 				"extent": [
 					16,
-					100
+					108
 				]
 			},
 			"z": {
 				"distribution": "uniform",
 				"extent": [
 					0,
-					16
+					1024
 				]
 			}
 		}

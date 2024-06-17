@@ -14,6 +14,17 @@
 				"category": "poke:strength_ring",
 				"duration": 30
 			},
+			"minecraft:durability": {
+				"max_durability": 3500,
+				"damage_chance": {
+					"min": 60,
+					"max": 100
+				}
+			},
+			"minecraft:enchantable": {
+				"slot": "flintsteel",
+				"value": 28
+			},
 			"minecraft:tags": {"tags": [
 				"effect @s strength 25 2 true"
 			]},

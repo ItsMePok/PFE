@@ -4,8 +4,7 @@
 		"description": {
 			"identifier": "poke:astral_crossbow",
 			"menu_category": {
-				"category": "equipment",
-				"group": "itemGroup.name.bow"
+				"category": "equipment"
 			}
 		},
 		"components": {
@@ -56,6 +55,7 @@
 					}
 				],
 				"charge_on_draw": true,
+				"scale_power_by_draw_duration": true,
 				"max_draw_duration": 1.25
 			},
 			"minecraft:repairable": {

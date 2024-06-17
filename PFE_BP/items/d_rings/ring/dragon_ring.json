@@ -13,6 +13,17 @@
 				"category": "poke:ring_4",
 				"duration": 25
 			},
+			"minecraft:durability": {
+				"max_durability": 5000,
+				"damage_chance": {
+					"min": 60,
+					"max": 100
+				}
+			},
+			"minecraft:enchantable": {
+				"slot": "flintsteel",
+				"value": 25
+			},
 			"minecraft:max_stack_size": 1,
 			"minecraft:tags": {"tags": [
 				"poke:dragon_ring_proj"//Projectile id for script

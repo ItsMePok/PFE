@@ -13,6 +13,17 @@
 				"category": "poke:ring_2",
 				"duration": 15
 			},
+			"minecraft:durability": {
+				"max_durability": 2500,
+				"damage_chance": {
+					"min": 60,
+					"max": 100
+				}
+			},
+			"minecraft:enchantable": {
+				"slot": "flintsteel",
+				"value": 23
+			},
 			"minecraft:max_stack_size": 1,
 			"minecraft:tags": {"tags": [
 				"poke:blaze_ring_proj"//Projectile id for script

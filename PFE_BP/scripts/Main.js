@@ -16,7 +16,6 @@ system.runInterval(() => {
 system.runInterval(() => {
     world.getDimension("overworld").runCommandAsync("execute at @r run summon poke:boss_event ~ -65 ~")
 }, 108000);
-
 // Tool Durability gotten from https://wiki.bedrock.dev/items/tool-durability.html
 function damage_item(item) {
     // Get durability
@@ -58,15 +57,9 @@ world.afterEvents.playerBreakBlock.subscribe(event => {
     return;
 });
 // End of Tool durability 
-//Food effects / Projectile shooters
+//Food effects
 const pfeefood = ["poke:golden_chicken","poke:rotten_chicken","poke:demonic_potion","poke:hellish_potion","poke:nebula_potion","poke:void_potion","poke:death_potion","poke:cobalt_potion","poke:cobalt_soup","poke:crimson_sporeshroom_stew","poke:root_beer","poke:hellish_soup","poke:nebula_noodles","poke:warped_sporeshroom_stew","poke:milk_bottle","poke:banished_star_x10","poke:banished_star_x9"];
-const pfeprojitems = ["poke:nuke_ring","poke:necromancer_staff","poke:ring_3","poke:ring_4","poke:ring_2","poke:arrow_ring","poke:shade_ring",]
-const pitems = pfeefood //+ pfeprojitems
 world.afterEvents.itemCompleteUse.subscribe(pfefood => {
-    const plocationx= pfefood.source.getViewDirection().x;
-    const plocationy= pfefood.source.getViewDirection().y;
-    const plocationz= pfefood.source.getViewDirection().z;
-    const plocation= pfefood.source.location;
     if (!pfeefood.includes(pfefood.itemStack.typeId)) return;
     if (pfefood.itemStack.typeId == "poke:cobalt_soup"){pfefood.source.addEffect('night_vision', 2400,{showParticles: false});return};
     if (pfefood.itemStack.typeId == "poke:root_beer") {pfefood.source.addEffect('speed', 600, {amplifier: 4,});return};
@@ -88,6 +81,8 @@ world.afterEvents.itemCompleteUse.subscribe(pfefood => {
     console.warn('not found')
     return;
 });
+// Projectile shooters & Windzooka/Blazooka
+const pfeprojitems = ["poke:nuke_ring","poke:necromancer_staff","poke:ring_3","poke:ring_4","poke:ring_2","poke:arrow_ring","poke:shade_ring",]
 const itemuseitems = ["poke:blazooka","poke:windzooka"] + pfeprojitems
 world.afterEvents.itemUse.subscribe(event => {
     const plocationx= event.source.getViewDirection().x;
@@ -103,9 +98,9 @@ world.afterEvents.itemUse.subscribe(event => {
         const aangle = event.source.getViewDirection();
         const proj = event.source.dimension.spawnEntity(''+ptag,headlocate);
         const proje = proj.getComponent("projectile");
+        event.source.playSound('random.bow')
         proje.owner = event.source;
         proje.shoot(aangle);
-        return;
     };
     if (event.itemStack.typeId == "poke:windzooka"){event.source.applyKnockback(plocationx,plocationz,-7,-plocationy*4);event.source.playSound('wind_charge.burst');event.source.dimension.spawnParticle('minecraft:wind_explosion_emitter',plocation)}
     if (event.itemStack.typeId == "poke:blazooka"){event.source.applyKnockback(plocationx,plocationz,7,-plocationy*-4);event.source.playSound('wind_charge.burst');event.source.dimension.spawnParticle('minecraft:wind_explosion_emitter',plocation);event.source.dimension.spawnParticle('poke:blazooka_flame',plocation)}
@@ -121,7 +116,6 @@ world.afterEvents.itemUse.subscribe(event => {
 });
 //Block interact events that do not use custom components
 const interact_blocks = ["poke:listener_trophy","poke:furnace_golem_trophy","poke:cobalt_golem_block"]
-const interact_items = ["poke:pocket_knife","poke:void_upgrader","poke:shade_upgrader","poke:onyx_upgrader","poke:nebula_upgrader","poke:holy_upgrader","poke:hellish_upgrader","poke:godly_upgrader","poke:galaxy_upgrader","poke:demonic_upgrader","poke:cobalt_upgrader","poke:astral_upgrader","poke:stone_upgrader","poke:redstone_upgrader","poke:obsidian_depressor","poke:netherite_upgrader","poke:nether_upgrader","poke:lapis_upgrader","poke:iron_upgrader","poke:gold_upgrader","poke:end_upgrader","poke:emerald_upgrader","poke:diamond_upgrader","poke:copper_upgrader","poke:coal_upgrader","poke:budificator"]
 world.afterEvents.playerInteractWithBlock.subscribe(event => {
     if (interact_blocks.includes(event.block.typeId)) {
         if (event.block.typeId == "poke:listener_trophy") {event.player.playMusic('record.listen',{fade:5});return;}
@@ -177,7 +171,6 @@ world.afterEvents.entityHitEntity.subscribe(event => {
         return;
     }
 })
-
 //Trapdoor block events
 class PFETrapdoor {
     onPlayerInteract(data) {
@@ -278,6 +271,7 @@ class PFEPhantomicConduit {
         return;
     }
 }
+//Demonic Allay Conduit
 class PFEDAConduit {
     onTick(data) {
         const block_location = data.block.x + ' '+ data.block.y + ' '+ data.block.z
@@ -288,7 +282,6 @@ class PFEDAConduit {
         return;
     }
 }
-
 //Cobblestone Generator's ability
 class PFECobbleGen {
     onTick(data) {
@@ -513,6 +506,7 @@ class PFELavaSponge{
         return;
     }
 }
+//Barometer's Weather detection
 class PFEBarometer{
     onTick(data) {
         var weather = data.block.permutation.getState('pfe:weather')
