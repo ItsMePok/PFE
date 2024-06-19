@@ -7,7 +7,7 @@
 				"default": "entity_alphatest"
 			},
 			"textures": {
-				"default": "textures/entity/piranha"
+				"default": "textures/entity/hostile/poke_piranha"
 			},
 			"geometry": {
 				"default": "geometry.piranha"

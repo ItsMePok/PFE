@@ -3,7 +3,10 @@
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:power_cell",
-			"menu_category": {"category": "items"}
+			"menu_category": {"category": "items"},
+			"states": {
+				"pfe:active":[0,1]
+			}
 		},
 		"components": {
 			"minecraft:collision_box": true,

@@ -7,7 +7,7 @@
 				"default": "entity_emissive_alpha"
 			},
 			"textures": {
-				"default": "textures/entity/poke_necromancer"
+				"default": "textures/entity/bosses/poke_necromancer"
 			},
 			"geometry": {
 				"default": "geometry.poke.necromancer"

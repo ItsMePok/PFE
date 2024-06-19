@@ -8,7 +8,7 @@
 				"default": "entity_alphatest"
 			},
 			"textures": {
-				"default": "textures/entity/crimson_sporeshroom",
+				"default": "textures/entity/passive/poke_crimson_sporeshroom",
 				"brown": "textures/entity/crimson_sporeshroom"
 			},
 			"geometry": {

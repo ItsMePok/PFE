@@ -7,7 +7,7 @@
 				"default": "entity_alphatest"
 			},
 			"textures": {
-				"default": "textures/entity/windswept_bear"
+				"default": "textures/entity/neutral/poke_windswept_bear"
 			},
 			"geometry": {
 				"default": "geometry.windswept_bear"

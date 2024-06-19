@@ -7,7 +7,7 @@
 				"default": "entity_emissive"
 			},
 			"textures": {
-				"default": "textures/entity/poke_necromancer_orb"
+				"default": "textures/entity/arrows/poke_necromancer_orb"
 			},
 			"geometry": {
 				"default": "geometry.poke.necromancer_orb_projectile"

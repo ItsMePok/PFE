@@ -7,7 +7,7 @@
 				"default": "entity_alphatest"
 			},
 			"textures": {
-				"default": "textures/entity/orange_squid"
+				"default": "textures/entity/passive/poke_orange_squid"
 			},
 			"geometry": {
 				"default": "geometry.orange_squid"

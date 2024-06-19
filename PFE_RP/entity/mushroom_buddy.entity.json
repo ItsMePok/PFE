@@ -7,20 +7,20 @@
 				"default": "cat"
 			},
 			"textures": {
-				"white": "textures/entity/mushroom/White.Mushroom.png",
-				"black": "textures/entity/mushroom/Black.Mushroom.png",
-				"red": "textures/entity/mushroom/Red.Mushroom.png",
-				"siamese": "textures/entity/mushroom/Orange.Mushroom.png",
-				"british": "textures/entity/mushroom/Blue.Green.Mushroom.png",
-				"calico": "textures/entity/mushroom/Light.Red.Mushroom.png",
-				"persian": "textures/entity/mushroom/Purple.Mushroom.png",
-				"ragdoll": "textures/entity/mushroom/Greenish.Mushroom.png",
-				"tabby": "textures/entity/mushroom/Pinkish.Mushroom.png",
-				"jellie": "textures/entity/mushroom/Purple.Pink.Mushroom.png",
-				"blackcat": "textures/entity/mushroom/Dark.Blue.Mushroom.png",
-				"britishshorthair": "textures/entity/mushroom/Rainbow.Mushroom.png",
-				"redtabby": "textures/entity/mushroom/Yellow.Mushroom.png",
-				"tuxedo": "textures/entity/mushroom/Green.Mushroom.png"
+				"white": "textures/entity/passive/poke_mb/White.Mushroom.png",
+				"black": "textures/entity/passive/poke_mb/Black.Mushroom.png",
+				"red": "textures/entity/passive/poke_mb/Red.Mushroom.png",
+				"siamese": "textures/entity/passive/poke_mb/Orange.Mushroom.png",
+				"british": "textures/entity/passive/poke_mb/Blue.Green.Mushroom.png",
+				"calico": "textures/entity/passive/poke_mb/Light.Red.Mushroom.png",
+				"persian": "textures/entity/passive/poke_mb/Purple.Mushroom.png",
+				"ragdoll": "textures/entity/passive/poke_mb/Greenish.Mushroom.png",
+				"tabby": "textures/entity/passive/poke_mb/Pinkish.Mushroom.png",
+				"jellie": "textures/entity/passive/poke_mb/Purple.Pink.Mushroom.png",
+				"blackcat": "textures/entity/passive/poke_mb/Dark.Blue.Mushroom.png",
+				"britishshorthair": "textures/entity/passive/poke_mb/Rainbow.Mushroom.png",
+				"redtabby": "textures/entity/passive/poke_mb/Yellow.Mushroom.png",
+				"tuxedo": "textures/entity/passive/poke_mb/Green.Mushroom.png"
 			},
 			"geometry": {
 				"default": "geometry.pfe_mushroom_buddy"

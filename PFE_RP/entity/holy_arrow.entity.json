@@ -7,7 +7,7 @@
 				"default": "arrow"
 			},
 			"textures": {
-				"default": "textures/entity/arrows/holy_arrow"
+				"default": "textures/entity/arrows/poke_holy_arrow"
 			},
 			"geometry": {
 				"default": "geometry.arrow"

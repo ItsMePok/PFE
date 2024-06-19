@@ -8,7 +8,7 @@
 				"masked": "villager_v2_masked"
 			},
 			"textures": {
-				"default": "textures/entity/poke_cosmetic_trader"
+				"default": "textures/entity/traders/poke_cosmetic_trader"
 			},
 			"geometry": {
 				"default": "geometry.poke.cosmetic_trader"

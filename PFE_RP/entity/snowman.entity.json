@@ -7,7 +7,7 @@
 				"default": "snow_golem"
 			},
 			"textures": {
-				"default": "textures/entity/poke_snowman"
+				"default": "textures/entity/bosses/poke_snowman"
 			},
 			"geometry": {
 				"default": "geometry.poke.snowman"

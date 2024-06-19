@@ -7,7 +7,7 @@
 				"default": "arrow"
 			},
 			"textures": {
-				"default": "textures/entity/arrows/hellish_arrow"
+				"default": "textures/entity/arrows/poke_hellish_arrow"
 			},
 			"geometry": {
 				"default": "geometry.arrow"

@@ -82,7 +82,7 @@ world.afterEvents.itemCompleteUse.subscribe(pfefood => {
     return;
 });
 // Projectile shooters & Windzooka/Blazooka
-const pfeprojitems = ["poke:nuke_ring","poke:necromancer_staff","poke:ring_3","poke:ring_4","poke:ring_2","poke:arrow_ring","poke:shade_ring",]
+const pfeprojitems = ["poke:volt_ring","poke:nuke_ring","poke:necromancer_staff","poke:ring_3","poke:ring_4","poke:ring_2","poke:arrow_ring","poke:shade_ring",]
 const itemuseitems = ["poke:blazooka","poke:windzooka"] + pfeprojitems
 world.afterEvents.itemUse.subscribe(event => {
     const plocationx= event.source.getViewDirection().x;
@@ -231,7 +231,7 @@ class PFESlabs {
         const slabid = data.block.typeId
         const mainhand = data.player.getComponent(EntityComponentTypes.Equippable).getEquipment('Mainhand')
         if (mainhand != undefined){
-            if (mainhand.typeId == slabid && data.face == 'Up') {
+            if (mainhand.typeId == slabid && data.face == 'Up' && data.block.permutation.getState('poke:double') == false) {
                 data.block.setPermutation(data.block.permutation.withState('poke:double',true))
                 data.block.dimension.runCommandAsync('playsound use.stone @a '+ block_location_x + ' '+ block_location_y+' '+ block_location_z)
                 return;
@@ -265,8 +265,13 @@ class PFEPhantomicConduit {
         var block_location_y = data.block.y
         var block_location_z = data.block.z
         if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
+        data.block.setPermutation(data.block.permutation.withState('pfe:active', 1))
         data.dimension.runCommand('execute positioned '+block_location_x+' '+block_location_y+' '+block_location_z+' as @e[r=50,family=phantom] run damage @s 20')
         return;
+        }
+        if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== undefined) {
+            data.block.setPermutation(data.block.permutation.withState('pfe:active', 0))
+            return;
         }
         return;
     }
@@ -276,8 +281,13 @@ class PFEDAConduit {
     onTick(data) {
         const block_location = data.block.x + ' '+ data.block.y + ' '+ data.block.z
         if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
-        data.dimension.runCommand('execute positioned '+block_location+' as @e[r=50,family=pfe:demonic_allay] run damage @s 20')
+            data.block.setPermutation(data.block.permutation.withState('pfe:active', 1))
+            data.dimension.runCommand('execute positioned '+block_location+' as @e[r=50,family=pfe:demonic_allay] run damage @s 20')
         return;
+        }
+        if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== undefined) {
+            data.block.setPermutation(data.block.permutation.withState('pfe:active', 0))
+            return;
         }
         return;
     }
@@ -289,7 +299,12 @@ class PFECobbleGen {
         var block_location_y = data.block.y
         var block_location_z = data.block.z
         if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
+            data.block.setPermutation(data.block.permutation.withState('pfe:active', 1))
             data.dimension.runCommand('execute positioned '+block_location_x+' '+block_location_y+' '+block_location_z+' if block ~ ~1 ~ air run setblock ~ ~1 ~ cobblestone')
+            return;
+        }
+        if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== undefined) {
+            data.block.setPermutation(data.block.permutation.withState('pfe:active', 0))
             return;
         }
         return;
@@ -302,7 +317,12 @@ class PFECobbler {
         var block_location_y = data.block.y
         var block_location_z = data.block.z
         if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
+            data.block.setPermutation(data.block.permutation.withState('pfe:active', 1))
             data.dimension.runCommand('execute positioned '+block_location_x+' '+block_location_y+' '+block_location_z+' run structure load poke:cobblestone_item ~ ~-1 ~')
+            return;
+        }
+        if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== undefined) {
+            data.block.setPermutation(data.block.permutation.withState('pfe:active', 0))
             return;
         }
         return;
@@ -315,7 +335,12 @@ class PFEBlockBreaker {
         var block_location_y = data.block.y
         var block_location_z = data.block.z
         if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
+            data.block.setPermutation(data.block.permutation.withState('pfe:active', 1))
             data.dimension.runCommand('execute positioned '+block_location_x+' '+block_location_y+' '+block_location_z+' unless block ~ ~-1 ~ bedrock run setblock ~ ~-1 ~ air destroy')
+            return;
+        }
+        if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== undefined) {
+            data.block.setPermutation(data.block.permutation.withState('pfe:active', 0))
             return;
         }
         return;
@@ -324,8 +349,16 @@ class PFEBlockBreaker {
 //Dirter's ability
 class PFEDirter{
     onTick(data) {
-        if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined && data.block.below().typeId == 'minecraft:cobblestone') {
-            data.block.below().setType('minecraft:dirt')
+        if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
+            data.block.setPermutation(data.block.permutation.withState('pfe:active', 1))
+            if (data.block.below().typeId == 'minecraft:cobblestone'){
+                data.block.below().setType('minecraft:dirt')
+                return;
+            }
+            return;
+        }
+        if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== undefined) {
+            data.block.setPermutation(data.block.permutation.withState('pfe:active', 0))
             return;
         }
         return;
@@ -335,6 +368,7 @@ class PFEDirter{
 class PFEDuster {
     onTick(data) {
         if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
+            data.block.setPermutation(data.block.permutation.withState('pfe:active', 1))
             if (data.block.below().typeId == 'minecraft:dirt') {
                 data.block.below().setType('minecraft:sand')
                 return;
@@ -345,6 +379,11 @@ class PFEDuster {
             }
             return;
         }
+        if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== undefined) {
+            data.block.setPermutation(data.block.permutation.withState('pfe:active', 0))
+            return;
+        }
+        return;
     }
 }
 //Magnet(Block)'s ability
@@ -352,7 +391,12 @@ class PFEMagnetBlock{
     onTick(data) {
         const block_location = data.block.x + ' '+ data.block.y + ' '+ data.block.z
         if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
+            data.block.setPermutation(data.block.permutation.withState('pfe:active', 1))
             data.dimension.runCommand('execute positioned '+block_location+' as @e[type=item,r=10] run tp @s '+ block_location)
+            return;
+        }
+        if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== undefined) {
+            data.block.setPermutation(data.block.permutation.withState('pfe:active', 0))
             return;
         }
         return;
@@ -385,6 +429,7 @@ class PFECalibrate {
         const bid = data.block.typeId
         const blockid = bid.substring(0,bid.lastIndexOf("_"))
         const blockface = data.face
+        data.dimension.playSound('poke.calibrate', data.block.location)        
         if (blockface == 'East') {
             data.block.setType(blockid+'_east')
             return;
@@ -401,6 +446,14 @@ class PFECalibrate {
             data.block.setType(blockid+'_south')
             return;
         }
+        if (blockface == 'Up') {
+            data.block.setType(blockid+'_up')
+            return;
+        }
+        if (blockface == 'Down') {
+            data.block.setType(blockid+'_down')
+            return;
+        }
         return;
     }
 }
@@ -411,6 +464,7 @@ class PFECBlockBreaker {
         var block_location_y = data.block.y
         var block_location_z = data.block.z
         if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
+            data.block.setPermutation(data.block.permutation.withState('pfe:active', 1))
             if (data.block.typeId == 'poke:block_breaker_east') {  
                 data.dimension.runCommand('execute positioned '+block_location_x+' '+block_location_y+' '+block_location_z+' unless block ~1 ~ ~ bedrock run setblock ~1 ~ ~ air destroy')
                 return;
@@ -427,6 +481,18 @@ class PFECBlockBreaker {
                 data.dimension.runCommand('execute positioned '+block_location_x+' '+block_location_y+' '+block_location_z+' unless block ~ ~ ~-1 bedrock run setblock ~ ~ ~-1 air destroy')
                 return;
             }
+            if (data.block.typeId == 'poke:block_breaker_up') {  
+                data.dimension.runCommand('execute positioned '+block_location_x+' '+block_location_y+' '+block_location_z+' unless block ~ ~1 ~ bedrock run setblock ~ ~1 ~ air destroy')
+                return;
+            }
+            if (data.block.typeId == 'poke:block_breaker_down') {  
+                data.dimension.runCommand('execute positioned '+block_location_x+' '+block_location_y+' '+block_location_z+' unless block ~ ~-1 ~ bedrock run setblock ~ ~-1 ~ air destroy')
+                return;
+            }
+            return;
+        };
+        if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== undefined) {
+            data.block.setPermutation(data.block.permutation.withState('pfe:active', 0))
             return;
         }
         return;
@@ -439,6 +505,7 @@ class PFECCobbleGen {
         var block_location_y = data.block.y
         var block_location_z = data.block.z
         if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
+            data.block.setPermutation(data.block.permutation.withState('pfe:active', 1))
             if (data.block.typeId == 'poke:calibrated_cobblestone_generator_east') {  
                 data.dimension.runCommand('execute positioned '+block_location_x+' '+block_location_y+' '+block_location_z+' if block ~1 ~ ~ air run setblock ~1 ~ ~ cobblestone')
                 return;
@@ -455,6 +522,18 @@ class PFECCobbleGen {
                 data.dimension.runCommand('execute positioned '+block_location_x+' '+block_location_y+' '+block_location_z+' if block ~ ~ ~-1 air run setblock ~ ~ ~-1 cobblestone')
                 return;
             }
+            if (data.block.typeId == 'poke:calibrated_cobblestone_generator_up') {  
+                data.dimension.runCommand('execute positioned '+block_location_x+' '+block_location_y+' '+block_location_z+' if block ~ ~1 ~ air run setblock ~ ~1 ~ cobblestone')
+                return;
+            }
+            if (data.block.typeId == 'poke:calibrated_cobblestone_generator_down') {  
+                data.dimension.runCommand('execute positioned '+block_location_x+' '+block_location_y+' '+block_location_z+' if block ~ ~-1 ~ air run setblock ~ ~-1 ~ cobblestone')
+                return;
+            }
+            return;
+        }
+        if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== undefined) {
+            data.block.setPermutation(data.block.permutation.withState('pfe:active', 0))
             return;
         }
         return;

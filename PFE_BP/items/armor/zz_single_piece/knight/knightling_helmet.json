@@ -21,11 +21,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon":{
-				"textures": {
-					"default": "poke_knightling_helmet"
-				}
-			},
+			"minecraft:icon":"poke_knightling_helmet",
 			"minecraft:wearable": {
 				"slot": "slot.armor.head",
 				"protection": 6

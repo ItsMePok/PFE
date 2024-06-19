@@ -7,7 +7,7 @@
 				"default": "entity"
 			},
 			"textures": {
-				"default": "textures/entity/poke_knightling"
+				"default": "textures/entity/bosses/poke_knightling"
 			},
 			"geometry": {
 				"default": "geometry.poke.knightling"

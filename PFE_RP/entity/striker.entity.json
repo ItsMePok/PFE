@@ -1,0 +1,70 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+		"identifier": "poke:striker",
+		"min_engine_version": "1.8.0",
+		"materials": {
+			"default": "entity_emissive_alpha",
+			"overlay": "entity_alphatest"
+		},
+		"textures": {
+			"default": "textures/entity/hostile/poke_striker",
+			"overlay": "textures/entity/hostile/poke_striker_overlay"
+		},
+		"geometry": {
+			"default": "geometry.skeleton.stray.v1.8",
+			"overlay": "geometry.stray.armor.v1.8"
+		},
+		"spawn_egg": {
+				"base_color": "#4a5059",
+				"overlay_color": "#ffec40"
+		},
+		"scripts": {
+			"pre_animation": [
+			"variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
+			],
+			"animate": ["look_at_targetc","movec","ridingc","holdingc","brandish_spearc","chargingc","attackc","sneakingc","bobc","damage_nearby_mobsc","bow_and_arrowc","swimmingc","use_item_progressc","skeleton_attackc"]
+		},
+		"animations": {
+			"look_at_target_default": "animation.humanoid.look_at_target.default",
+			"look_at_target_gliding": "animation.humanoid.look_at_target.gliding",
+			"look_at_target_swimming": "animation.humanoid.look_at_target.swimming",
+			"move": "animation.humanoid.move",
+			"riding.arms": "animation.humanoid.riding.arms",
+			"riding.legs": "animation.humanoid.riding.legs",
+			"holding": "animation.humanoid.holding",
+			"brandish_spear": "animation.humanoid.brandish_spear",
+			"charging": "animation.humanoid.charging",
+			"attack.rotations": "animation.humanoid.attack.rotations",
+			"sneaking": "animation.humanoid.sneaking",
+			"bob": "animation.humanoid.bob",
+			"damage_nearby_mobs": "animation.humanoid.damage_nearby_mobs",
+			"bow_and_arrow": "animation.humanoid.bow_and_arrow",
+			"swimming": "animation.zombie.swimming",
+			"use_item_progress": "animation.humanoid.use_item_progress",
+			"skeleton_attack": "animation.skeleton.attack",
+			"look_at_targetc": "controller.animation.humanoid.look_at_target",
+			"movec": "controller.animation.humanoid.move",
+			"ridingc": "controller.animation.humanoid.riding",
+			"holdingc": "controller.animation.humanoid.holding",
+			"brandish_spearc": "controller.animation.humanoid.brandish_spear",
+			"chargingc": "controller.animation.humanoid.charging",
+			"attackc": "controller.animation.humanoid.attack",
+			"sneakingc": "controller.animation.humanoid.sneaking",
+			"bobc": "controller.animation.humanoid.bob",
+			"damage_nearby_mobsc": "controller.animation.humanoid.damage_nearby_mobs",
+			"bow_and_arrowc": "controller.animation.humanoid.bow_and_arrow",
+			"swimmingc": "controller.animation.zombie.swimming",
+			"use_item_progressc": "controller.animation.humanoid.use_item_progress",
+			"skeleton_attackc": "controller.animation.skeleton.attack"
+		},
+		"render_controllers": [
+			"controller.render.stray_clothes",
+			"controller.render.stray"
+		],
+		"enable_attachables": true
+	}
+	}
+}
+

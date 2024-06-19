@@ -9,7 +9,7 @@
 			{
 				"minecraft:spawns_underground": {},
 				"minecraft:weight": {
-					"default": 300
+					"default": 10
 				},
 				"minecraft:biome_filter": {
 					"any_of": [

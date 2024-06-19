@@ -1,5 +1,9 @@
 {
 	"texture_data": {
+		"poke_volt_gem":{"textures":"textures/items/rings/poke_volt_gem"},
+		"poke_volt_ring":{"textures":"textures/items/rings/poke_volt_ring"},
+		"poke_volt_arrow":{"textures":"textures/items/misc/poke_volt_arrow"},
+		"poke_nv_goggles":{"textures":"textures/items/misc/poke_nv_goggles"},
 		"poke_duck_egg":{"textures":"textures/items/misc/poke_duck_egg"},
 		"poke_death_sword":{"textures":"textures/items/death/poke_death_sword"},
 		"poke_toast":{"textures":"textures/items/food/poke_toast"},

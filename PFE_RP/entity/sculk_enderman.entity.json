@@ -9,7 +9,7 @@
 				"invisible": "enderman_invisible"
 			},
 			"textures": {
-				"default": "textures/entity/sculk_enderman"
+				"default": "textures/entity/hostile/poke_sculk_enderman"
 			},
 			"geometry": {
 				"default": "geometry.sculk_enderman"

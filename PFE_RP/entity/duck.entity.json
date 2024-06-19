@@ -9,7 +9,7 @@
 				"legs": "chicken_legs"
 			},
 			"textures": {
-				"default": "textures/entity/duck"
+				"default": "textures/entity/passive/poke_duck"
 			},
 			"geometry": {
 				"default": "geometry.duck"

@@ -1,9 +1,9 @@
 {
 	"format_version": 2,
 	"header": {
-		"name": "§eV1.2.0.1 §uPFE §aRP",
+		"name": "§eV1.2.0.2 §uPFE §aRP",
 		"description": "pack.description",
-		"uuid": "0a638302-fd18-46d6-ba49-58b7a7f6b2e0",
+		"uuid": "c98dca6f-82df-43e2-a629-4d60fa203ea5",
 		"version": [1, 0, 0],
 		"min_engine_version": [1, 21, 0]
 	},
@@ -12,7 +12,7 @@
 		"generated_with": {
 			"blockbench_block_wizard": ["1.2.1"],
 			"blockbench_item_wizard": ["1.0.1", "1.0.2", "1.0.4"],
-			"blockbench_entity_wizard": ["1.3.1", "1.3.2", "1.4.0"]
+			"blockbench_entity_wizard": ["1.3.1", "1.3.2", "1.4.0", "1.5.1"]
 		}
 	},
 	"modules": [
@@ -25,7 +25,7 @@
 	],
 	"dependencies": [
 		{
-			"uuid": "67488634-b53b-48d8-a3c0-4c0761ae00d8",
+			"uuid": "c918dbd9-8f1f-497d-b36d-00d8231305bb",
 			"version": [1, 0, 0]
 		}
 	]

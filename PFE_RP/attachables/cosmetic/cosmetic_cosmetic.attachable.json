@@ -9,7 +9,7 @@
 				"enchanted": "entity_alphatest_glint"
 			},
 			"textures": {
-				"default": "textures/entity/poke_cosmetic_trader",
+				"default": "textures/entity/traders/poke_cosmetic_trader",
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {

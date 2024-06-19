@@ -3,13 +3,24 @@
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:block_breaker",
-			"menu_category": {"category": "items"}
+			"menu_category": {"category": "items"},
+			"states": {
+				"pfe:active":[0,1]
+			}
 		},
+		"permutations": [
+			{
+				"condition": "q.block_state('pfe:active') == 1",
+				"components": {
+					"minecraft:light_emission": 5
+				}
+			}
+		],
 		"components": {
 			"minecraft:destructible_by_mining": {"seconds_to_destroy": 1},
 			"minecraft:destructible_by_explosion": {"explosion_resistance": 30},
 			"tag:pfe": {},
-			"minecraft:map_color": "#764f36",
+			"minecraft:map_color": "#17273b",
 			"minecraft:tick": {"interval_range": [60,60]},
 			"minecraft:custom_components":[
 				"poke:cc_block_breaker"

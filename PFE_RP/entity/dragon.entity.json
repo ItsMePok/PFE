@@ -7,8 +7,7 @@
 				"default": "entity_alphatest"
 			},
 			"textures": {
-				"default": "textures/entity/dragon/poke_dragon_new",
-				"is_saddled": "textures/entity/dragon/poke_dragon_saddled"
+				"default": "textures/entity/bosses/poke_dragon"
 			},
 			"geometry": {
 				"default": "geometry.poke.dragon"
@@ -19,7 +18,7 @@
 				"controller":"controller.animation.poke.dragon.flying"
 			},
 			"render_controllers": [
-				"controller.render.poke.dragon"
+				"controller.render.default"
 			],
 			"scripts": {
 				"animate": [

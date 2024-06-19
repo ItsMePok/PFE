@@ -7,7 +7,7 @@
 				"default": "entity_alphatest"
 			},
 			"textures": {
-				"default": "textures/entity/shallow_cod"
+				"default": "textures/entity/passive/poke_shallow_cod"
 			},
 			"geometry": {
 				"default": "geometry.shallow_cod"

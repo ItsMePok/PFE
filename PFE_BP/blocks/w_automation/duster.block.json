@@ -5,15 +5,22 @@
 			"identifier": "poke:duster",
 			"menu_category": {
 				"category": "items"
+			},
+			"states": {
+				"pfe:active":[0,1]
 			}
 		},
+		"permutations": [
+			{
+				"condition": "q.block_state('pfe:active') == 1",
+				"components": {
+					"minecraft:light_emission": 5
+				}
+			}
+		],
 		"components": {
-			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 1
-			},
-			"minecraft:destructible_by_explosion": {
-				"explosion_resistance": 30
-			},
+			"minecraft:destructible_by_mining": {"seconds_to_destroy": 1},
+			"minecraft:destructible_by_explosion": {"explosion_resistance": 30},
 			"tag:pfe": {},
 			"minecraft:map_color": "#7a5a0f",
 			"minecraft:tick": {"interval_range":[10,10]},

@@ -1,5 +1,9 @@
 {
 	"format_version": [1, 1, 0],
+	"poke:beeulb":{"textures":"poke_beeulb","sound": "coral"},
+	"poke:honey_bricks_slab":{"textures":"poke_honey_bricks","sound": "coral"},
+	"poke:honey_bricks":{"textures":"poke_honey_bricks","sound": "coral"},
+	"poke:chiseled_honey_bricks":{"textures":"poke_chiseled_honey_bricks","sound": "coral"},
 	"poke:barometer":{"textures":"poke_barometer","sound": "wood"},
 	"poke:magnet":{"textures":"poke_magnet","sound": "wood"},
 	"poke:duster":{"textures":"poke_duster","sound": "wood"},
@@ -13,20 +17,70 @@
 		"sound": "wood"
 	},
 	"poke:block_breaker_north": {
-		"sound": "wood",
-		"textures":"poke_block_breaker_north"
+		"sound": "copper",
+		"textures":{
+			"down": "poke_block_breaker_bottom",
+			"up": "poke_block_breaker_top",
+			"north": "poke_block_breaker_front",
+			"east": "poke_block_breaker_side",
+			"south": "poke_block_breaker_side",
+			"west": "poke_block_breaker_side"
+		}		
 	},
 	"poke:block_breaker_south": {
-		"sound": "wood",
-		"textures":"poke_block_breaker_south"
+		"sound": "copper",
+		"textures":{
+			"down": "poke_block_breaker_bottom",
+			"up": "poke_block_breaker_top",
+			"north": "poke_block_breaker_side",
+			"east": "poke_block_breaker_side",
+			"south": "poke_block_breaker_front",
+			"west": "poke_block_breaker_side"
+		}	
 	},
 	"poke:block_breaker_east": {
-		"sound": "wood",
-		"textures":"poke_block_breaker_east"
+		"sound": "copper",
+		"textures":{
+			"down": "poke_block_breaker_bottom",
+			"up": "poke_block_breaker_top",
+			"north": "poke_block_breaker_side",
+			"east": "poke_block_breaker_front",
+			"south": "poke_block_breaker_side",
+			"west": "poke_block_breaker_side"
+		}
 	},
 	"poke:block_breaker_west": {
-		"sound": "wood",
-		"textures":"poke_block_breaker_west"
+		"sound": "copper",
+		"textures":{
+			"down": "poke_block_breaker_bottom",
+			"up": "poke_block_breaker_top",
+			"north": "poke_block_breaker_side",
+			"east": "poke_block_breaker_side",
+			"south": "poke_block_breaker_side",
+			"west": "poke_block_breaker_front"
+		}
+	},
+	"poke:block_breaker_up": {
+		"sound": "copper",
+		"textures":{
+			"down": "poke_block_breaker_side180",
+			"up": "poke_block_breaker_front",
+			"north": "poke_block_breaker_top",
+			"east": "poke_block_breaker_side90",
+			"south": "poke_block_breaker_bottom",
+			"west": "poke_block_breaker_side-90"
+		}
+	},
+	"poke:block_breaker_down": {
+		"sound": "copper",
+		"textures":{
+			"down": "poke_block_breaker_front",
+			"up": "poke_block_breaker_side180",
+			"north": "poke_block_breaker_bottom",
+			"east": "poke_block_breaker_side-90",
+			"south": "poke_block_breaker_top",
+			"west": "poke_block_breaker_side90"
+		}
 	},
 	"poke:melon_crate": {
 		"textures": {
@@ -605,10 +659,6 @@
 		"sound": "wood",
 		"textures":"poke_carved_melon"
 	},
-	"poke:calibrated_cobblestone_generator_west": {
-		"sound": "copper",
-		"textures": "poke_calibrated_cobblestone_generator_west"
-	},
 	"poke:cobalt_edged_glass": {
 		"sound": "glass",
 		"textures":"poke_cobalt_edged_glass"
@@ -776,17 +826,71 @@
 		"sound": "moss_block",
 		"textures": "poke_molten_lava_sponge"
 	},
+	"poke:calibrated_cobblestone_generator_west": {
+		"sound": "copper",
+		"textures":{
+			"down": "poke_block_breaker_bottom",
+			"up": "poke_block_breaker_top",
+			"north": "poke_cobble_gen_side",
+			"east": "poke_cobble_gen_side",
+			"south": "poke_cobble_gen_side",
+			"west": "poke_cobble_gen_front"
+		}
+	},
 	"poke:calibrated_cobblestone_generator_east": {
 		"sound": "copper",
-		"textures": "poke_calibrated_cobblestone_generator_east"
+		"textures":{
+			"down": "poke_block_breaker_bottom",
+			"up": "poke_block_breaker_top",
+			"north": "poke_cobble_gen_side",
+			"east": "poke_cobble_gen_front",
+			"south": "poke_cobble_gen_side",
+			"west": "poke_cobble_gen_side"
+		}
 	},
 	"poke:calibrated_cobblestone_generator_north": {
 		"sound": "copper",
-		"textures": "poke_calibrated_cobblestone_generator_north"
+		"textures":{
+			"down": "poke_block_breaker_bottom",
+			"up": "poke_block_breaker_top",
+			"north": "poke_cobble_gen_front",
+			"east": "poke_cobble_gen_side",
+			"south": "poke_cobble_gen_side",
+			"west": "poke_cobble_gen_side"
+		}
 	},
 	"poke:calibrated_cobblestone_generator_south": {
 		"sound": "copper",
-		"textures": "poke_calibrated_cobblestone_generator_south"
+		"textures":{
+			"down": "poke_block_breaker_bottom",
+			"up": "poke_block_breaker_top",
+			"north": "poke_cobble_gen_side",
+			"east": "poke_cobble_gen_side",
+			"south": "poke_cobble_gen_front",
+			"west": "poke_cobble_gen_side"
+		}
+	},
+	"poke:calibrated_cobblestone_generator_up": {
+		"sound": "copper",
+		"textures":{
+			"down": "poke_cobble_gen_side180",
+			"up": "poke_cobble_gen_front",
+			"north": "poke_block_breaker_top",
+			"east": "poke_cobble_gen_side90",
+			"south": "poke_block_breaker_bottom",
+			"west": "poke_cobble_gen_side-90"
+		}
+	},
+	"poke:calibrated_cobblestone_generator_down": {
+		"sound": "copper",
+		"textures":{
+			"down": "poke_cobble_gen_front",
+			"up": "poke_cobble_gen_side180",
+			"north": "poke_block_breaker_bottom",
+			"east": "poke_cobble_gen_side-90",
+			"south": "poke_block_breaker_top",
+			"west": "poke_cobble_gen_side90"
+		}
 	},
 	"poke:phantomed_conduit": {
 		"sound": "stone",

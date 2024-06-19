@@ -1,6 +1,23 @@
 {
 	"entity_sounds": {
 		"entities": {
+			"poke:striker": {
+				"events": {
+					"ambient": "mob.skeleton.say",
+					"death": "mob.skeleton.death",
+					"hurt": {
+						"sound": "mob.skeleton.hurt",
+						"volume": 0.7
+					},
+					"step": {
+						"pitch": 1,
+						"sound": "mob.skeleton.step",
+						"volume": 1
+					}
+				},
+				"pitch": [0.8, 1.2],
+				"volume": 1
+			},
 			"poke:ender_phantom": {
 				"events": {
 					"ambient": "mob.phantom.idle",
@@ -9,7 +26,7 @@
 					"flap": "mob.phantom.flap",
 					"hurt": "mob.phantom.hurt",
 					"swoop": {
-						"pitch": [0.90, 1.05],
+						"pitch": [0.9, 1.05],
 						"sound": "mob.phantom.swoop"
 					}
 				},
@@ -463,7 +480,10 @@
 			"poke:robo_golem": {
 				"events": {
 					"ambient": "mob.irongolem.say",
-					"death":{"pitch":1,"sound": "play.listenerboss.victory"},
+					"death": {
+						"pitch": 1,
+						"sound": "play.listenerboss.victory"
+					},
 					"hurt": {
 						"pitch": 0.8,
 						"sound": "mob.irongolem.hit",
@@ -488,7 +508,10 @@
 			"poke:knightling": {
 				"events": {
 					"ambient": "mob.irongolem.say",
-					"death":{"pitch":1,"sound": "play.listenerboss.victory"},
+					"death": {
+						"pitch": 1,
+						"sound": "play.listenerboss.victory"
+					},
 					"hurt": {
 						"pitch": 1,
 						"sound": "poke.knightling.bonk",
@@ -511,16 +534,19 @@
 				"volume": 1
 			},
 			"poke:necromancer": {
-				"events" : {
-					"ambient" : "mob.skeleton.say",
-					"cast.spell" : "mob.evocation_illager.cast_spell",
-					"death":{"pitch":1,"sound": "play.listenerboss.victory"},
-					"hurt" : "mob.skeleton.hurt",
-					"prepare.summon" : "mob.evocation_illager.prepare_summon",
-					"step":"mob.skeleton.step"
+				"events": {
+					"ambient": "mob.skeleton.say",
+					"cast.spell": "mob.evocation_illager.cast_spell",
+					"death": {
+						"pitch": 1,
+						"sound": "play.listenerboss.victory"
+					},
+					"hurt": "mob.skeleton.hurt",
+					"prepare.summon": "mob.evocation_illager.prepare_summon",
+					"step": "mob.skeleton.step"
 				},
-				"pitch" : [ 0.60, 1.20 ],
-				"volume" : 1.0
+				"pitch": [0.6, 1.2],
+				"volume": 1
 			},
 			"poke:zombken": {
 				"events": {
@@ -548,7 +574,10 @@
 						"pitch": 0.85,
 						"sound": "mob.enderdragon.growl"
 					},
-					"death":{"pitch":1,"sound": "play.listenerboss.victory"},
+					"death": {
+						"pitch": 1,
+						"sound": "play.listenerboss.victory"
+					},
 					"hurt": {
 						"pitch": 0.8,
 						"sound": "play.listenerboss.hurt"
@@ -568,7 +597,10 @@
 						"pitch": 0.008,
 						"sound": "note.bit"
 					},
-					"death":{"pitch":1,"sound": "play.listenerboss.victory"},
+					"death": {
+						"pitch": 1,
+						"sound": "play.listenerboss.victory"
+					},
 					"hurt": {
 						"pitch": 1,
 						"sound": "play.listenerboss.hurt"
@@ -583,19 +615,22 @@
 				"volume": 1
 			},
 			"poke:snowman": {
-				"events" : {
-					"death":{"pitch":1,"sound": "play.listenerboss.victory"},
-					"hurt" : {
-						"pitch" : [ 0.80, 1.20 ],
-						"sound" : "mob.snowgolem.hurt"
+				"events": {
+					"death": {
+						"pitch": 1,
+						"sound": "play.listenerboss.victory"
 					},
-					"shoot" : {
-						"pitch" : [ 0.330, 0.50 ],
-						"sound" : "mob.snowgolem.shoot"
+					"hurt": {
+						"pitch": [0.8, 1.2],
+						"sound": "mob.snowgolem.hurt"
+					},
+					"shoot": {
+						"pitch": [0.33, 0.5],
+						"sound": "mob.snowgolem.shoot"
 					}
 				},
-				"pitch" : [ 0.80, 1.20 ],
-				"volume" : 1.0
+				"pitch": [0.8, 1.2],
+				"volume": 1
 			}
 		}
 	},

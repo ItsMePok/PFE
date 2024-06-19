@@ -1,6 +1,6 @@
 # PFE Info
 Poke's Fantasy Expansion (PFE) is a Minecraft Bedrock Addon that Expands the endgame of Minecraft adding **over 700** things for you to check out
-## [Wiki](https://github.com/ItsMePok/PFE/wiki)
+## [Wiki](https://github.com/ItsMePok/PFE/wiki) - Work In Progress
 
 
 ## Experiments Needed

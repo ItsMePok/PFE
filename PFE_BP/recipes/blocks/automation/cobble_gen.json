@@ -12,7 +12,12 @@
 		],
 		"unlock": [
 			{"item": "poke:cobblestone_gen"},
-			{"item":"poke:banished_star"}
+			{"item":"poke:banished_star"},
+			{"item":"poke:cobalt_block"},
+			{"item":"poke:block_breaker"},
+			{"item":"poke:banished_star_x4"},
+			{"item":"poke:diamond_upgrade_core"},
+			{"item":"poke:gps_module"}
 		],
 		"key": {
 			"C":{"item":"poke:cobalt_block"},

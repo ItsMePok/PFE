@@ -7,7 +7,7 @@
 				"default": "villager"
 			},
 			"textures": {
-				"default": "textures/entity/shopkeeper"
+				"default": "textures/entity/traders/poke_shopkeeper"
 			},
 			"geometry": {
 				"default": "geometry.shopkeeper"

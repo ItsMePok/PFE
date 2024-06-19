@@ -7,7 +7,7 @@
 				"default": "allay"
 			},
 			"textures": {
-				"default": "textures/entity/demonic_allay"
+				"default": "textures/entity/hostile/poke_demonic_allay"
 			},
 			"geometry": {
 				"default": "geometry.demonic_allay"

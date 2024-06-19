@@ -4,44 +4,29 @@
 		"description": {
 			"identifier": "poke:cobblestone_gen"
 		},
-		"tags": [
-			"crafting_table"
-		],
+		"tags": ["crafting_table"],
 		"pattern": [
 			"XHX",
 			"WPL",
 			"XXX"
 		],
 		"unlock": [
-			{
-				"item": "cobblestone"
-			}
+			{"item": "cobblestone"},
+			{"item": "hopper"},
+			{"item": "lava_bucket"},
+			{"item": "iron_pickaxe"},
+			{"item": "water_bucket"}
 		],
 		"key": {
-			"X": {
-				"item": "cobblestone"
-			},
-			"H": {
-				"item": "hopper"
-			},
-			"L": {
-				"item": "lava_bucket"
-			},
-			"P": {
-				"item": "iron_pickaxe"
-			},
-			"W": {
-				"item": "water_bucket"
-			}
+			"X": {"item": "cobblestone"},
+			"H": {"item": "hopper"},
+			"L": {"item": "lava_bucket"},
+			"P": {"item": "iron_pickaxe"},
+			"W": {"item": "water_bucket"}
 		},
 		"result": [
-			{
-				"item": "poke:cobblestone_gen"
-			},
-			{
-				"item": "bucket",
-				"count": 2
-			}
+			{"item": "poke:cobblestone_gen"},
+			{"item": "bucket","count": 2}
 		]
 	}
 }

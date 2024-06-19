@@ -7,7 +7,7 @@
 				"default": "entity_alphatest"
 			},
 			"textures": {
-				"default": "textures/entity/shroomfin"
+				"default": "textures/entity/passive/poke_shroomfin"
 			},
 			"geometry": {
 				"default": "geometry.shroomfin"

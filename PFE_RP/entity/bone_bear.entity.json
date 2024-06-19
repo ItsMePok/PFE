@@ -7,7 +7,7 @@
 				"default": "entity_alphablend"
 			},
 			"textures": {
-				"default": "textures/entity/bone_bear"
+				"default": "textures/entity/neutral/poke_bone_bear"
 			},
 			"geometry": {
 				"default": "geometry.bone_bear"

@@ -7,7 +7,7 @@
 				"default": "entity_emissive"
 			},
 			"textures": {
-				"default": "textures/entity/robo_golem"
+				"default": "textures/entity/bosses/poke_robo_golem"
 			},
 			"geometry": {
 				"default": "geometry.robo_golem"

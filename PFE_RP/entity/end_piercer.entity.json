@@ -9,7 +9,7 @@
 				"invisible": "enderman_invisible"
 			},
 			"textures": {
-				"default": "textures/entity/end_piercer"
+				"default": "textures/entity/hostile/poke_end_piercer"
 			},
 			"geometry": {
 				"default": "geometry.end_piercer"

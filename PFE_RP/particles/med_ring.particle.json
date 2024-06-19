@@ -9,6 +9,9 @@
 			}
 		},
 		"components": {
+			"minecraft:emitter_initialization": {
+				"creation_expression": "variable.size = 0.25;"
+			},
 			"minecraft:emitter_rate_instant": {
 				"num_particles": 5
 			},
@@ -34,7 +37,7 @@
 				"linear_drag_coefficient": 0.5
 			},
 			"minecraft:particle_appearance_billboard": {
-				"size": [0.2, 0.2],
+				"size": ["variable.size*(1-variable.particle_age)", "variable.size*(1-variable.particle_age)"],
 				"facing_camera_mode": "lookat_xyz",
 				"uv": {
 					"texture_width": 128,

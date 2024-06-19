@@ -15,12 +15,12 @@
 			},
 			"minecraft:projectile": {
 				"catch_fire": true,
-				"gravity": 5.0,
+				"gravity": 0.05,
 				"crit_particle_on_hurt": true,
 				"hit_sound": "bow.hit",
 				"inertia": 0.99,
 				"shoot_sound": "random.bow",
-				"power": 1,
+				"power": 5,
 				"is_dangerous": true,
 				"on_hit": {
 					"stick_in_ground": {

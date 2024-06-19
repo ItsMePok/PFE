@@ -8,7 +8,7 @@
 				"default": "ocelot"
 			},
 			"textures": {
-				"default": "textures/entity/pale_ocelot"
+				"default": "textures/entity/neutral/poke_pale_ocelot"
 			},
 			"geometry": {
 				"default": "geometry.pale_ocelot"

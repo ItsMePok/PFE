@@ -9,7 +9,7 @@
 				"legs": "chicken_legs"
 			},
 			"textures": {
-				"default": "textures/entity/zombken"
+				"default": "textures/entity/bosses/poke_zombken"
 			},
 			"geometry": {
 				"default": "geometry.zombken"
