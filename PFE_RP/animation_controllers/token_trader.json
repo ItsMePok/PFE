@@ -21,6 +21,9 @@
 						"general",
 						{
 							"look_at_target": "!query.is_sleeping"
+						},
+						{
+							"raise_arms" : "variable.raise_arms > 0.0"
 						}
 					]
 				}

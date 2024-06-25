@@ -1,0 +1,10 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shapeless": {
+		"unlock": [{"item":"poke:honey_bricks"},{"item": "honeycomb"},{"item": "honeycomb_block"}],
+		"description": {"identifier": "poke:honey_trapdoor_sc"},
+		"tags": ["stonecutter"],
+		"ingredients":[{"item":"honeycomb_block"}],
+		"result": {"item": "poke:honey_trapdoor","count": 2}
+	}
+}

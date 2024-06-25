@@ -21,12 +21,16 @@
 				"fly": "animation.allay.fly",
 				"hold_item": "animation.allay.hold_item",
 				"hold_item_fly":"animation.allay.hold_item_fly",
+				"dance": "animation.allay.dance",
 				"general": "controller.animation.allay.general",
-				"holding": "controller.animation.allay.holding"
+				"holding": "controller.animation.allay.holding",
+				"dancing": "controller.animation.allay.dancing",
+				"look_at_target_default": "animation.allay.look_at_target.default",
+				"look_at_target": "controller.animation.allay.look_at_target"
 			},
 			"scripts": {
 				"pre_animation": ["variable.holding_trident = query.is_item_name_any('slot.weapon.mainhand', 'minecraft:trident');"],
-				"animate": ["general", "holding"]
+				"animate": ["general", "holding","dancing","look_at_target_default"]
 			},
 			"render_controllers": ["controller.render.allay"],
 			"enable_attachables": true

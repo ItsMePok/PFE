@@ -8,11 +8,7 @@
 			}
 		},
 		"components": {
-			"minecraft:icon": {
-				"textures": {
-					"default": "void_crossbow"
-				}
-			},
+			"minecraft:icon":"poke_void_crossbow",
 			"minecraft:use_modifiers": {
 				"movement_modifier": 0.33,
 				"use_duration": 1.25
@@ -63,6 +59,22 @@
 				"charge_on_draw": true,
 				"max_draw_duration": 1.25
 			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": ["poke:repair_core"],
+						"repair_amount": "query.max_durability"
+					},
+					{
+						"items": ["poke:void_ingot"],
+						"repair_amount": "query.max_durability*0.25"
+					},
+					{
+						"items": ["poke:void_nugget"],
+						"repair_amount": "query.max_durability*0.028"
+					}
+				]
+			}, 
 			"minecraft:hand_equipped": true,
 			"minecraft:use_animation": "crossbow",
 			"minecraft:enchantable": {
@@ -75,8 +87,7 @@
 					"max": 100
 				},
 				"max_durability": 2000
-			},
-			"minecraft:frame_count": 3
+			}
 		}
 	}
 }

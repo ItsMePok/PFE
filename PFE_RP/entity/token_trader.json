@@ -13,12 +13,12 @@
 				"default": "geometry.token_trader"
 			},
 			"scripts": {
-				"scale": 1
+				"scale": 1,"pre_animation": ["variable.raise_arms=1;"]
 			},
 			"animations": {
 				"general": "animation.token_trader.general",
 				"look_at_target": "animation.common.look_at_target",
-				"raise_arms": "animation.token_trader.raise_arms",
+				"raise_arms": "animation.villager.raise_arms",
 				"move": "animation.token_trader.move"
 			},
 			"animation_controllers": [
@@ -35,7 +35,9 @@
 			"spawn_egg": {
 				"base_color": "#006D7A",
 				"overlay_color": "#EFEF4A"
-			}
+			},
+			"enable_attachables": true,
+			"hide_armor": false
 		}
 	}
 }

@@ -8,11 +8,7 @@
 			}
 		},
 		"components": {
-			"minecraft:icon": {
-				"textures": {
-					"default": "astral_crossbow"
-				}
-			},
+			"minecraft:icon":"poke_astral_crossbow",
 			"minecraft:use_modifiers": {
 				"movement_modifier": 0.33,
 				"use_duration": 1.25
@@ -67,21 +63,15 @@
 			"minecraft:repairable": {
 				"repair_items": [
 					{
-						"items": [
-							"poke:repair_core"
-						],
+						"items": ["poke:repair_core"],
 						"repair_amount": "query.max_durability"
 					},
 					{
-						"items": [
-							"poke:astral_ingot"
-						],
+						"items": ["poke:astral_ingot"],
 						"repair_amount": "query.max_durability*0.25"
 					},
 					{
-						"items": [
-							"poke:astral_nugget"
-						],
+						"items": ["poke:astral_nugget"],
 						"repair_amount": "query.max_durability*0.028"
 					}
 				]
@@ -97,7 +87,7 @@
 					"min": 50,
 					"max": 100
 				},
-				"max_durability": 1250
+				"max_durability": 3250
 			}
 		}
 	}

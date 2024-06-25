@@ -17,6 +17,9 @@
 			},
 			"minecraft:allow_off_hand": {
 				"value": true
+			},
+			"minecraft:tags": {
+				"tags": ["minecraft:arrow"]
 			}
 		}
 	}

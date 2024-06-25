@@ -136,6 +136,7 @@ world.afterEvents.playerInteractWithBlock.subscribe(event => {
 const hit_effects = ["poke:demonic_sword","poke:hellish_sword","poke:godly_sword","poke:holy_sword","poke:radium_sword","poke:astral_sword","poke:shade_sword","poke:nebula_sword","poke:amethyst_scythe","poke:holy_scythe","poke:hellish_scythe","poke:godly_scythe","poke:galactic_scythe","poke:demonic_slasher","poke:ember_scythe","poke:death_scythe","poke:void_scythe","poke:radium_scythe","poke:netherite_scythe","poke:diamond_scythe","poke:shade_scythe","poke:onyx_scythe","poke:iron_scythe","poke:gold_scythe","poke:emerald_scythe","poke:nebula_scythe","poke:cobalt_scythe","poke:circuit_sword","poke:ban_hammer"]
 world.afterEvents.entityHitEntity.subscribe(event => {
     if (event.damagingEntity.hasComponent(EntityComponentTypes.Equippable)) {
+        if (event.damagingEntity.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Mainhand) == undefined) return;
         if (!hit_effects.includes(event.damagingEntity.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Mainhand).type.id)) return;
         const itemid = event.damagingEntity.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Mainhand).typeId
         if (itemid == 'poke:demonic_sword') {event.hitEntity.addEffect('slowness', 100, {amplifier: 3});return;}
@@ -640,6 +641,104 @@ class PFEUpgrader {
         return;
     }
 }
+//Tree Capitator (not too sure what im doing :( )
+/*class PFETreeCap {
+    onMineBlock(data){
+        const clogs = ["minecraft:acacia_log","minecraft:birch_log","minecraft:cherry_log","minecraft:dark_oak_log","minecraft:jungle_log","minecraft:mangrove_log","minecraft:oak_log","minecraft:spruce_log"]
+        console.warn('mined_block')
+        const mined_block = data.minedBlockPermutation.type.id
+        console.warn(data.minedBlockPermutation.type.id)
+        //From bedrock add-ons discord
+        const block = data.block
+        if (clogs.includes(data.minedBlockPermutation.type.id)) {
+            console.warn('gate1')
+            let dimension = data.block.dimension;
+            let toBreak = [block.location];
+            let checked = new Set();
+    
+            while (toBreak.length > 0) {
+                console.warn('gate2')
+                let location = toBreak.shift();
+                let key = `${location.x},${location.y},${location.z}`;
+                if (checked.has(key)) continue;
+                console.warn('gate3')
+                checked.add(key);
+
+                let currentBlock = dimension.getBlock(location);
+                console.warn(currentBlock.typeId+' '+mined_block)
+                if (currentBlock) {
+                    console.warn('gate4')
+                    system.run(() => {
+                        dimension.runCommand(`setblock ${location.x} ${location.y} ${location.z} air destroy`);
+                    });
+                    let adjacent = [
+                        {x: location.x + 1, y: location.y, z: location.z},
+                        {x: location.x - 1, y: location.y, z: location.z},
+                        {x: location.x, y: location.y + 1, z: location.z},
+                        {x: location.x, y: location.y - 1, z: location.z},
+                        {x: location.x, y: location.y, z: location.z + 1},
+                        {x: location.x, y: location.y, z: location.z - 1}
+                    ];
+                    for (let loc of adjacent) {
+                        toBreak.push(loc);
+                    }
+                }
+                data.cancel
+            }
+        }
+    }
+}*/
+//from bedrock add-ons discord. was slightly modified to better fit the item(s) that would be using it
+const clogs = ["minecraft:acacia_log","minecraft:birch_log","minecraft:cherry_log","minecraft:dark_oak_log","minecraft:jungle_log","minecraft:mangrove_log","minecraft:oak_log","minecraft:spruce_log"]
+world.beforeEvents.playerBreakBlock.subscribe(e => {
+    if (e.itemStack == undefined) return
+    if(e.itemStack.typeId != 'poke:nebula_logger') return
+    var block = e.block;
+    var veinminer = (clogs.includes(block.typeId));
+    if (veinminer) {
+        let dimension = block.dimension;
+        let toBreak = [block.location];
+        let checked = new Set();
+
+        while (toBreak.length > 0) {
+            let location = toBreak.shift();
+            let key = `${location.x},${location.y},${location.z}`;
+            if (checked.has(key)) continue;
+            checked.add(key);
+
+            let currentBlock = dimension.getBlock(location);
+            if (currentBlock && currentBlock.hasTag("wood")) {
+                system.run(() => {
+                    dimension.runCommand(`setblock ${location.x} ${location.y} ${location.z} air destroy`);
+                });
+                let adjacent = [
+                    {x: location.x + 1, y: location.y, z: location.z},
+                    {x: location.x - 1, y: location.y, z: location.z},
+                    {x: location.x, y: location.y + 1, z: location.z},
+                    {x: location.x, y: location.y - 1, z: location.z},
+                    {x: location.x, y: location.y, z: location.z + 1},
+                    {x: location.x, y: location.y, z: location.z - 1},
+                    {x: location.x, y: location.y +1, z: location.z + 1},
+                    {x: location.x, y: location.y +1, z: location.z - 1},
+                    {x: location.x +1, y: location.y +1, z: location.z},
+                    {x: location.x -1, y: location.y +1, z: location.z},
+                    {x: location.x +1, y: location.y, z: location.z + 1},
+                    {x: location.x +1, y: location.y, z: location.z - 1},
+                    {x: location.x -1, y: location.y, z: location.z + 1},
+                    {x: location.x -1, y: location.y, z: location.z - 1},
+                    {x: location.x +1, y: location.y +1, z: location.z + 1},
+                    {x: location.x +1, y: location.y +1, z: location.z - 1},
+                    {x: location.x -1, y: location.y +1, z: location.z + 1},
+                    {x: location.x -1, y: location.y +1, z: location.z - 1}
+                ];
+                for (let loc of adjacent) {
+                    toBreak.push(loc);
+                }
+            }
+        }
+        e.cancel = true;
+    }
+});
 //Custom Component Registery (may warn about a spike on world loaing because of how many components)
 world.beforeEvents.worldInitialize.subscribe(event => {
     event.itemComponentRegistry.registerCustomComponent(
@@ -704,6 +803,9 @@ world.beforeEvents.worldInitialize.subscribe(event => {
     );
     event.itemComponentRegistry.registerCustomComponent(
         "poke:cc_upgrader", new PFEUpgrader()
-    );
+    );/*
+    event.itemComponentRegistry.registerCustomComponent(
+        "poke:cc_tree_cap", new PFETreeCap()
+    )*/
     return;
 })

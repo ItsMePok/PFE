@@ -4,16 +4,11 @@
 		"description": {
 			"identifier": "poke:hellish_crossbow",
 			"menu_category": {
-				"category": "equipment",
-				"group": "itemGroup.name.bow"
+				"category": "equipment"
 			}
 		},
 		"components": {
-			"minecraft:icon": {
-				"textures": {
-					"default": "hellish_crossbow"
-				}
-			},
+			"minecraft:icon":"poke_hellish_crossbow",
 			"minecraft:use_modifiers": {
 				"movement_modifier": 0.33,
 				"use_duration": 1.25
@@ -64,12 +59,28 @@
 				"charge_on_draw": true,
 				"max_draw_duration": 1.25
 			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": ["poke:repair_core"],
+						"repair_amount": "query.max_durability"
+					},
+					{
+						"items": ["poke:hellish_ingot"],
+						"repair_amount": "query.max_durability*0.25"
+					},
+					{
+						"items": ["poke:hellish_nugget"],
+						"repair_amount": "query.max_durability*0.028"
+					}
+				]
+			}, 
 			"minecraft:tags": {"tags": ["minecraft:is_crossbow"]},
 			"minecraft:hand_equipped": true,
 			"minecraft:use_animation":{"value": "crossbow"},
 			"minecraft:enchantable": {
 				"value": 75,
-				"slot": "crossbow"
+				"slot": "flintsteel"
 			},
 			"minecraft:durability": {
 				"damage_chance": {

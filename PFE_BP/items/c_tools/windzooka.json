@@ -32,7 +32,13 @@
 			"minecraft:enchantable": {
 				"slot": "shield",
 				"value": 30
-			}
+			},
+			"minecraft:tags": {"tags": [
+				"function pfe_items/windzooka"
+			]},
+			"minecraft:custom_components": [
+				"poke:cc_on_use"
+			]
 		}
 	}
 }

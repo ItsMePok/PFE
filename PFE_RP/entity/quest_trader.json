@@ -19,7 +19,9 @@
 			"spawn_egg": {
 				"base_color": "#b37b62",
 				"overlay_color": "#ad7d37"
-			}
+			},
+			"enable_attachables": true,
+			"hide_armor": false
 		}
 	}
 }

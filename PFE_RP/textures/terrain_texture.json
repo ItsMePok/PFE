@@ -4,6 +4,8 @@
 	"padding": 8,
 	"num_mip_levels": 4,
 	"texture_data": {
+		"poke_honey_trapdoor":{"textures":"textures/blocks/honey/poke_honey_trapdoor"},
+		"poke_honey_tiles":{"textures":"textures/blocks/honey/poke_honey_tiles"},
 		"poke_honey_bricks":{"textures":"textures/blocks/honey/poke_honey_bricks"},
 		"poke_chiseled_honey_bricks":{"textures":"textures/blocks/honey/poke_chiseled_honey_bricks"},
 		"poke_cobble_gen_side180":{"textures":[{"path": "textures/blocks/automation/poke_cobble_gen_side180","overlay_color": "#610310"},{"path": "textures/blocks/automation/poke_cobble_gen_side180","overlay_color": "#ce0c0c"}]},

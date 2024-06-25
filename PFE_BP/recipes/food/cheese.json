@@ -1,0 +1,16 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_furnace": {
+		"description": {
+			"identifier": "poke:cheese"
+		},
+		"tags": [
+			"furnace",
+			"smoker",
+			"campfire",
+			"soul_campfire"
+		],
+		"input": "poke:milk_bottle",
+		"output": "poke:cheese"
+	}
+}

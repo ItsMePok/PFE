@@ -4,7 +4,7 @@
 		"unlock": [{"item":"poke:honey_bricks"},{"item": "honeycomb"},{"item": "honeycomb_block"}],
 		"description": {"identifier": "poke:honey_bricks_sc"},
 		"tags": ["stonecutter"],
-		"ingredients":{"item":"honeycomb_block"},
+		"ingredients":[{"item":"honeycomb_block"}],
 		"result": {"item": "poke:honey_bricks"}
 	}
 }

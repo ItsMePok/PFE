@@ -1,0 +1,18 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.poke.rat.movement": {
+			"initial_state": "idle",
+			"states": {
+				"idle": {
+					"animations": [
+						{"idle": "!q.is_dancing"},
+						{"walk": "query.modified_move_speed && !q.is_dancing"},
+						{"dance": "q.is_dancing"}
+					],
+					"blend_transition": 1
+				}
+			}
+		}
+	}
+}

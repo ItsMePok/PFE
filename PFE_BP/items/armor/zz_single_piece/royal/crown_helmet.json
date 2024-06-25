@@ -21,11 +21,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon":{
-				"textures": {
-					"default": "poke_crown_helmet"
-				}
-			},
+			"minecraft:icon":"poke_crown_helmet",
 			"minecraft:wearable": {
 				"slot": "slot.armor.head",
 				"protection": 2

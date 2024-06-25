@@ -12,7 +12,10 @@
 			"minecraft:icon":"poke_chared_poppy",
 			"minecraft:fuel": {
 				"duration": 160
+			},
+			"minecraft:block_placer": {
+				"block": "poke:charred_poppy"
 			}
 		}
-\\	}
-//}
+	}
+}

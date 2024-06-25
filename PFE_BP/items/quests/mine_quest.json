@@ -7,8 +7,7 @@
 		},
 		"components": {
 			"minecraft:icon":"poke_mine_quest",
-			"minecraft:entity_placer": {"entity": "poke:mine_quest"},
-			"minecraft:max_stack_size":1
+			"minecraft:entity_placer": {"entity": "poke:mine_quest"}
 		}
 	}
 }

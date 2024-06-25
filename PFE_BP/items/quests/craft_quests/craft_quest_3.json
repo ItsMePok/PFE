@@ -9,7 +9,6 @@
 		},
 		"components": {
 			"minecraft:icon":"poke_craft_quest",
-			"minecraft:max_stack_size":1,
 			"minecraft:tags": {"tags": [
 				"tellraw @s {\"rawtext\":[{\"text\":\"----------------§6\n§lQuest§r§6§r:\n- Gather §3§l4§r§3§r String\n- Gather §3§l4§r§3§r Bones\n§l§aReward§r§l§r:\n- §3§l2§r§3§r §6Copper Tokens\n§r----------------\"}]}"
 			]},

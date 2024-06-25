@@ -7,9 +7,7 @@
 		"tags": [
 			"brewing_stand"
 		],
-		"input": {
-			"item": "poke:sugar_water" 
-		},
+		"input":"poke:sugar_water",
 		"reagent": "apple",
 		"output": "poke:apple_juice"
 	}

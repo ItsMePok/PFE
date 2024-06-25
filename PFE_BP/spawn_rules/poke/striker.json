@@ -1,5 +1,5 @@
 {
-  "format_version": "1.8.0",
+  "format_version": "1.12.0",
   "minecraft:spawn_rules": {
     "description": {
       "identifier": "poke:striker",
@@ -21,7 +21,7 @@
           "max": "hard"
         },
         "minecraft:weight": {
-          "default": 6
+          "default": 5
         },
         "minecraft:herd": {
           "min_size": 1,
@@ -40,6 +40,43 @@
                   "test": "has_biome_tag",
                   "operator": "!=",
                   "value": "frozen"
+                },
+                {
+                  "test": "has_biome_tag",
+                  "operator": "!=",
+                  "value": "mesa"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "minecraft:spawns_on_surface": {},
+        "minecraft:brightness_filter": {
+          "min": 0,
+          "max": 4,
+          "adjust_for_weather": true
+        },
+        "minecraft:difficulty_filter": {
+          "min": "easy",
+          "max": "hard"
+        },
+        "minecraft:weight": {
+          "default": 25
+        },
+        "minecraft:herd": {
+          "min_size": 1,
+          "max_size": 2
+        },
+        "minecraft:biome_filter": {
+          "any_of": [
+            {
+              "any_of":[
+                {
+                  "test": "has_biome_tag",
+                  "operator": "==",
+                  "value": "mesa"
                 }
               ]
             }

@@ -1,9 +1,9 @@
 {
 	"format_version": 2,
 	"header": {
-		"name": "§eV1.2.0.2 §uPFE §aRP",
+		"name": "§ev1.2.0.3 §uPFE §aRP",
 		"description": "pack.description",
-		"uuid": "c98dca6f-82df-43e2-a629-4d60fa203ea5",
+		"uuid": "93cbad89-052b-4969-a515-4217c7678f35",
 		"version": [1, 0, 0],
 		"min_engine_version": [1, 21, 0]
 	},

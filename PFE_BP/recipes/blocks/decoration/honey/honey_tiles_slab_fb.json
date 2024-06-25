@@ -1,0 +1,10 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shapeless": {
+		"unlock": [{"item":"poke:honey_bricks"},{"item": "honeycomb"},{"item": "honeycomb_block"}],
+		"description": {"identifier": "poke:honey_tiles_slab_fb"},
+		"tags": ["stonecutter"],
+		"ingredients":[{"item":"poke:honey_bricks"}],
+		"result": {"item": "poke:honey_tiles_slab","count": 2}
+	}
+}

@@ -1,5 +1,7 @@
 {
 	"texture_data": {
+		"poke_cheese":{"textures":"textures/items/food/poke_cheese"},
+		"poke_nebula_logger":{"textures":"textures/items/nebula/poke_nebula_logger"},
 		"poke_volt_gem":{"textures":"textures/items/rings/poke_volt_gem"},
 		"poke_volt_ring":{"textures":"textures/items/rings/poke_volt_ring"},
 		"poke_volt_arrow":{"textures":"textures/items/misc/poke_volt_arrow"},
@@ -42,19 +44,19 @@
 		"poke_player_magnet": {
 			"textures": "textures/items/magnet/poke_player_magnet"
 		},
-		"astral_crossbow": {
+		"poke_astral_crossbow": {
 			"textures": "textures/items/astral/poke_astral_crossbow"
 		},
-		"godly_crossbow": {
+		"poke_godly_crossbow": {
 			"textures": "textures/items/godly/poke_godly_crossbow"
 		},
-		"cobalt_crossbow": {
+		"poke_cobalt_crossbow": {
 			"textures": "textures/items/cobalt/poke_cobalt_crossbow"
 		},
-		"void_crossbow": {
+		"poke_void_crossbow": {
 			"textures": "textures/items/void/poke_void_crossbow"
 		},
-		"hellish_crossbow": {
+		"poke_hellish_crossbow": {
 			"textures": "textures/items/hellish/poke_hellish_crossbow"
 		},
 		"poke_demonic_haxel": {
@@ -69,7 +71,7 @@
 		"poke_void_arrow": {
 			"textures": "textures/items/void/poke_void_arrow"
 		},
-		"cosmetic_cosmetic": {
+		"poke_cosmetic_cosmetic": {
 			"textures": "textures/items/cosmetic/poke_cosmetic_cosmetic.png"
 		},
 		"poke_radium_battleaxe": {
