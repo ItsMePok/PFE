@@ -2,8 +2,12 @@
 	"resource_pack_name": "poke",
 	"texture_name": "atlas.terrain",
 	"padding": 8,
-	"num_mip_levels": 4,
+	"num_mip_levels": 2,
 	"texture_data": {
+		"poke_cobbler_top":{"textures":[{"path": "textures/blocks/automation/poke_block_breaker_bottom","overlay_color": "#999999"},{"path": "textures/blocks/automation/poke_block_breaker_bottom","overlay_color": "#999999"}]},
+		"poke_cobbler_flip":{"textures":[{"path": "textures/blocks/automation/poke_cobbler_flip","overlay_color": "#610310"},{"path": "textures/blocks/automation/poke_cobbler_flip","overlay_color": "#ce0c0c"}]},
+		"poke_cobbler":{"textures":[{"path": "textures/blocks/automation/poke_cobbler","overlay_color": "#610310"},{"path": "textures/blocks/automation/poke_cobbler","overlay_color": "#ce0c0c"}]},
+		"poke_cobbler_bottom":{"textures":[{"path": "textures/blocks/automation/poke_cobbler_bottom","overlay_color": "#610310"},{"path": "textures/blocks/automation/poke_cobbler_bottom","overlay_color": "#ce0c0c"}]},
 		"poke_honey_trapdoor":{"textures":"textures/blocks/honey/poke_honey_trapdoor"},
 		"poke_honey_tiles":{"textures":"textures/blocks/honey/poke_honey_tiles"},
 		"poke_honey_bricks":{"textures":"textures/blocks/honey/poke_honey_bricks"},
@@ -1473,9 +1477,6 @@
 		},
 		"poke_cobblestone_gen": {
 			"textures": "textures/blocks/automation/poke_cobblestone_gen"
-		},
-		"poke_cobble_gen": {
-			"textures": "textures/blocks/automation/poke_cobbler"
 		},
 		"poke_cobbled_limestone": {
 			"textures": "textures/blocks/cobbled_limestone"

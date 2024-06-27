@@ -259,6 +259,32 @@ class PFESlabs {
         return;
     }
 }
+class PFEBlockSeat {
+    onPlayerInteract(data) {
+        const cblock_location = {
+            x: data.block.location.x + 0.5,
+            y: data.block.location.y + 0.5,
+            z: data.block.location.z + 0.5,
+        }
+        const slabid = data.block.typeId
+        const mainhand = data.player.getComponent(EntityComponentTypes.Equippable).getEquipment('Mainhand')
+        const options = {
+            type: 'poke:seat'
+        };
+        if (mainhand != slabid && !data.player.isSneaking){
+            if (data.block.permutation.getState('minecraft:vertical_half') == 'bottom' && data.block.permutation.getState('poke:double') == false) {
+                if (data.dimension.getEntities(options) > 0) {
+                    return;
+                }
+                else {
+                    data.dimension.spawnEntity('poke:seat',cblock_location).getComponent('minecraft:rideable').addRider(data.player)
+                    return;
+                }
+            }
+        }
+        return;
+    }
+}
 //Phantomic Conduit's ability
 class PFEPhantomicConduit {
     onTick(data) {
@@ -803,6 +829,9 @@ world.beforeEvents.worldInitialize.subscribe(event => {
     );
     event.itemComponentRegistry.registerCustomComponent(
         "poke:cc_upgrader", new PFEUpgrader()
+    );
+    event.blockTypeRegistry.registerCustomComponent(
+        "poke:cc_block_seat", new PFEBlockSeat()
     );/*
     event.itemComponentRegistry.registerCustomComponent(
         "poke:cc_tree_cap", new PFETreeCap()

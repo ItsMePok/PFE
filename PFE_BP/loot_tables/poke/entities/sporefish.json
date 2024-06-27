@@ -24,6 +24,28 @@
                     "functions": [{"function": "looting_enchant","count": {"max": 1,"min": 0}}]
                 }
             ]
+        },
+        {
+            "rolls":1,
+            "entries": [
+                {
+                    "type": "empty",
+                    "weight": 999
+                },
+                {
+                    "type": "item",
+                    "name": "poke:fishbowl",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                            "§eOffhand Cosmetic"
+                            ]
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }

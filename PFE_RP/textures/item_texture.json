@@ -1,5 +1,16 @@
 {
 	"texture_data": {
+		"poke_steampunk_hat":{"textures":"textures/items/cosmetic/poke_steampunk_hat"},
+		"poke_sword_hat":{"textures":"textures/items/cosmetic/poke_sword_hat"},
+		"poke_poppy_hat":{"textures":"textures/items/cosmetic/poke_poppy_hat"},
+		"poke_pickaxe_hat":{"textures":"textures/items/cosmetic/poke_pickaxe_hat"},
+		"poke_horns":{"textures":"textures/items/cosmetic/poke_horns"},
+		"poke_halo":{"textures":"textures/items/cosmetic/poke_halo"},
+		"poke_ghost":{"textures":"textures/items/cosmetic/poke_ghost"},		
+		"poke_fishbowl":{"textures":"textures/items/cosmetic/poke_fishbowl"},
+		"poke_ferret":{"textures":"textures/items/cosmetic/poke_ferret"},
+		"poke_end_crystal_hat":{"textures":"textures/items/cosmetic/poke_end_crystal"},
+		"poke_crab_pal":{"textures":"textures/items/cosmetic/poke_crab_pal"},
 		"poke_cheese":{"textures":"textures/items/food/poke_cheese"},
 		"poke_nebula_logger":{"textures":"textures/items/nebula/poke_nebula_logger"},
 		"poke_volt_gem":{"textures":"textures/items/rings/poke_volt_gem"},

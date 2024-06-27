@@ -4,7 +4,7 @@
 		"description": {
 			"identifier": "poke:armor_progression_fragment",
 			"menu_category": {
-				"category": "items"
+				"category": "none"
 			}
 		},
 		"components": {

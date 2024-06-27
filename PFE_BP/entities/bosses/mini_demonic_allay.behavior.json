@@ -33,7 +33,8 @@
 					"vex",
 					"monster",
 					"mob",
-					"pfe:demonic_allay"
+					"pfe:demonic_allay",
+					"pfe:boss"
 				]
 			},
 			"minecraft:equipment": {

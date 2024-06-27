@@ -17,6 +17,28 @@
 					]
 				}
 			]
-		}
+		},
+        {
+            "rolls":1,
+            "entries": [
+                {
+                    "type": "empty",
+                    "weight": 9999
+                },
+                {
+                    "type": "item",
+                    "name": "poke:pickaxe_hat",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                            "§eOffhand Cosmetic"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
 	]
 }

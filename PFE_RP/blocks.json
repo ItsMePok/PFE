@@ -707,7 +707,14 @@
 	},
 	"poke:cobble_gen": {
 		"sound": "stone",
-		"textures": "poke_cobble_gen"
+		"textures":{
+			"down": "poke_cobbler_bottom",
+			"east": "poke_cobbler_flip",
+			"west": "poke_cobbler_flip",
+			"south": "poke_cobbler",
+			"north": "poke_cobbler",
+			"up": "poke_cobbler_top"
+		}
 	},
 	"poke:hellite_ore": {
 		"sound": "deepslate",

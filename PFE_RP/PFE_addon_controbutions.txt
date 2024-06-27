@@ -5,15 +5,17 @@ Anything listed below has been used at some point to develop PFE
 
 Raccoon, Necromancer, Mushroom Buddy, 
 Cobalt Golem, Dragon, Cobalt Robe,
-Maxwell, Mr Duck, Dapper Fit, 
+Maxwell, Mr. Duck, Dapper Fit, 
 Little Dapper Fit, Big Dapper Fit, Apollo the Snake, 
-Caged Soul, Scythe Textures, Rat (WIP)
+Caged Soul, Scythe Textures, Rat, End Crystal Hat,
+Sword Hat, Pickaxe Hat, Poppy Hat, Horns, Halo, Ghost,
+Fishbowl, Ferret, Crab Pal
 Were made by O2God for PFE
 
 Code for Slabs & Tool Durability were copied from the bedrock wiki
 https://wiki.bedrock.dev/
 
-Animated item textures for the Sundial
+Animated item texture for the Sundial
 Some Code from Hero Studios
 https://mcpedl.com/items-animateds-template-creators-pack/
 

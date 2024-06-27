@@ -407,6 +407,35 @@
 					}
 				]
 			}
+		},
+		"animation.poke.rat.sit": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [-5, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"Tail": {
+					"rotation": [-5, 0, 0]
+				},
+				"L_Back_foot": {
+					"rotation": [27.5547, -4.82922, -1.29717]
+				},
+				"L_Front_foot": {
+					"rotation": [90, 0, 0],
+					"position": [0, -0.5, 0]
+				},
+				"R_front_foot": {
+					"rotation": [90, 0, 0],
+					"position": [0, -0.5, 0]
+				},
+				"R_Back_foot": {
+					"rotation": [30.0547, 4.82922, 1.29717]
+				},
+				"rightItem": {
+					"position": [0, 0, 1]
+				}
+			}
 		}
 	}
 }

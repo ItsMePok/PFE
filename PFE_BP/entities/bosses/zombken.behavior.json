@@ -3,7 +3,7 @@
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:zombken",
-			"is_spawnable": true,
+			"is_spawnable": false,
 			"is_summonable": true,
 			"is_experimental": false,
 			"runtime_identifier": "minecraft:parrot"
@@ -42,13 +42,11 @@
 					"event": "poke:renamed"
 				}
 			},
-			"minecraft:on_death": {
-				"event": "death_sound"
-			},
 			"minecraft:type_family": {
 				"family": [
 					"monster",
-					"mob"
+					"mob",
+					"pfe:boss"
 				]
 			},
 			"minecraft:on_hurt_by_player": {
@@ -186,13 +184,6 @@
 				"add": {
 					"component_groups": [
 						"timer"
-					]
-				}
-			},
-			"death_sound": {
-				"queue_command": {
-					"command": [
-						"playsound play.listenerboss.victory @a[r=25]"
 					]
 				}
 			},

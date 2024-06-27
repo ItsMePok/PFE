@@ -1,6 +1,28 @@
 {
 	"entity_sounds": {
 		"entities": {
+			"poke:rat": {
+				"events": {
+					"ambient": "mob.fox.aggro",
+					"death": "mob.fox.death",
+					"growl": "mob.fox.screech",
+					"hurt": "mob.fox.hurt",
+					"pant": "mob.fox.sniff",
+					"attack": "mob.fox.bite",
+					"shake": {
+						"pitch": [1.2, 1.7],
+						"sound": "mob.wolf.shake"
+					},
+					"step": {
+						"pitch": 1,
+						"sound": "mob.wolf.step",
+						"volume": 0.65
+					},
+					"whine": "mob.fox.ambient"
+				},
+				"pitch": [1.2, 1.7],
+				"volume": 0.4
+			},
 			"poke:striker": {
 				"events": {
 					"ambient": "mob.skeleton.say",
@@ -554,7 +576,10 @@
 						"pitch": 0.8,
 						"sound": "mob.zombie.say"
 					},
-					"death": "mob.zombie.death",
+					"death": {
+						"pitch": 1,
+						"sound": "play.listenerboss.victory"
+					},
 					"hurt": {
 						"pitch": 0.8,
 						"sound": "mob.zombie.hurt"

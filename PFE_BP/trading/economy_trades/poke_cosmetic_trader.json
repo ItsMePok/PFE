@@ -15,6 +15,98 @@
               ],
               "gives": [
                 {
+                  "item": "poke:steampunk_hat",
+                  "functions": [
+                    {
+                      "function": "set_lore",
+                      "lore": [
+                        "§eOffhand Cosmetic"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "max_uses": -1,
+              "wants": [
+                {
+                  "item": "poke:iron_token",
+                  
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "poke:crab_pal",
+                  "functions": [
+                    {
+                      "function": "set_lore",
+                      "lore": [
+                        "§eOffhand Cosmetic"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "max_uses": -1,
+              "wants": [
+                {
+                  "item": "poke:iron_token",
+                  
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "poke:ghost",
+                  "functions": [
+                    {
+                      "function": "set_lore",
+                      "lore": [
+                        "§eOffhand Cosmetic"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "max_uses": -1,
+              "wants": [
+                {
+                  "item": "poke:iron_token",
+                  
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "poke:ferret",
+                  "functions": [
+                    {
+                      "function": "set_lore",
+                      "lore": [
+                        "§eOffhand Cosmetic"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "max_uses": -1,
+              "wants": [
+                {
+                  "item": "poke:iron_token",
+                  
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
                   "item": "poke:mr_duck",
                   "functions": [
                     {
@@ -191,6 +283,98 @@
                         "like 2016?",
                         "you want a bottle to filp as well?",
                         "sorry",
+                        "§eOffhand Cosmetic"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "max_uses": -1,
+              "wants": [
+                {
+                  "item": "poke:iron_token",
+                  
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "poke:halo",
+                  "functions": [
+                    {
+                      "function": "set_lore",
+                      "lore": [
+                        "§eOffhand Cosmetic"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "max_uses": -1,
+              "wants": [
+                {
+                  "item": "poke:iron_token",
+                  
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "poke:horns",
+                  "functions": [
+                    {
+                      "function": "set_lore",
+                      "lore": [
+                        "§eOffhand Cosmetic"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "max_uses": -1,
+              "wants": [
+                {
+                  "item": "poke:iron_token",
+                  
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "poke:poppy_hat",
+                  "functions": [
+                    {
+                      "function": "set_lore",
+                      "lore": [
+                        "§eOffhand Cosmetic"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "max_uses": -1,
+              "wants": [
+                {
+                  "item": "poke:iron_token",
+                  
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "poke:sword_hat",
+                  "functions": [
+                    {
+                      "function": "set_lore",
+                      "lore": [
                         "§eOffhand Cosmetic"
                       ]
                     }

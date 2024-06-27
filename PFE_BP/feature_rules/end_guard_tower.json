@@ -20,21 +20,21 @@
 			]
 		},
 		"distribution": {
-			"iterations": 0.5,
+			"iterations": 1,
 			"coordinate_eval_order": "xzy",
 			"x": {
-				"distribution": "uniform",
+				"distribution": "gaussian",
 				"extent": [
 					0,
-					1024
+					256
 				]
 			},
 			"y": "query.heightmap(v.worldx, v.worldz)", //Generates the feature on the highest block on the column
 			"z": {
-				"distribution": "uniform",
+				"distribution": "gaussian",
 				"extent": [
 					0,
-					1024
+					256
 				]
 			}
 		}

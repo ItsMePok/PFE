@@ -112,6 +112,10 @@
 					],
 					"probability_per_strength": 0.14
 				},
+				"minecraft:health": {
+					"value": 8,
+					"max": 8
+				},
 				"minecraft:tameable": {
 					"probability": 0.40,
 					"tame_items": "poke:cheese",
@@ -121,7 +125,7 @@
 					}
 				},
 				"minecraft:behavior.nearest_attackable_target": {
-					"priority": 4,
+					"priority": 5,
 					"reselect_targets": true,
 					"must_see": true,
 					"entity_types": [
@@ -147,17 +151,22 @@
 				"minecraft:on_target_acquired": {
 					"event": "minecraft:become_angry",
 					"target": "self"
+				},
+				"minecraft:behavior.tempt": {
+					"can_get_scared": true,
+					"can_tempt_while_ridden": true,
+					"can_tempt_vertically": true,
+					"items": [{"item":"poke:cheese"}],
+					"within_radius": 12,
+					"priority": 6,
+					"speed_multiplier": 0.8
 				}
 			},
 			"minecraft:wolf_tame": {
 				"minecraft:is_tamed": {},
-				"minecraft:health": {
-					"value": 20,
-					"max": 20
-				},
 				"minecraft:behavior.follow_owner": {
 					"priority": 6,
-					"speed_multiplier": 1,
+					"speed_multiplier": 1.15,
 					"start_distance": 10,
 					"stop_distance": 2,
 					"can_teleport": true
@@ -173,7 +182,7 @@
 					"priority": 1
 				},
 				"minecraft:behavior.owner_hurt_target": {
-					"priority": 2
+					"priority": 3
 				},
 				"minecraft:behavior.nearest_attackable_target": {
 					"priority": 5,
@@ -188,6 +197,10 @@
 							"max_dist": 16
 						}
 					]
+				},
+				"minecraft:health": {
+					"value": 30,
+					"max": 30
 				},
 				"minecraft:sittable": {},
 				"minecraft:leashable": {
@@ -208,20 +221,21 @@
 		"components": {
 			"minecraft:shareables": {
 				"all_items": true,
-				"all_items_max_amount": 64,
-				"all_items_surplus_amount": 64,
-				"all_items_want_amount": 64,
+				"all_items_max_amount": -1,
+				"all_items_surplus_amount": -1,
+				"all_items_want_amount": -1,
 				"items": [
 					{"item":"poke:cheese","priority": 0,"want_amount": 1,"pickup_limit": 1}
 				],
 				"singular_pickup": true
 			},
 			"minecraft:behavior.pickup_items": {
-				"priority": 11,
+				"priority": 4,
 				"max_dist": 3,
 				"goal_radius": 2,
 				"pickup_based_on_chance": false,
 				"can_pickup_any_item": true,
+				"can_pickup_to_hand_or_equipment": true,
 				"track_target": true
 			},
 			"minecraft:equipment": {
@@ -239,7 +253,7 @@
 			},
 			"minecraft:equip_item": {},
 			"minecraft:behavior.equip_item": {
-				"priority": 2
+				"priority": 11
 			},
 			"minecraft:behavior.eat_carried_item": {
 				"priority": 12,
@@ -274,15 +288,12 @@
 			},
 			"minecraft:breathable": {
 				"total_supply": 15,
-				"suffocate_time": 0
+				"suffocate_time": 0,
+				"generates_bubbles": false
 			},
 			"minecraft:collision_box": {
 				"width": 0.6,
-				"height": 0.8
-			},
-			"minecraft:health": {
-				"value": 8,
-				"max": 8
+				"height": 0.3
 			},
 			"minecraft:hurt_on_condition": {
 				"damage_conditions": [
@@ -413,27 +424,19 @@
 			"minecraft:despawn": {
 				"despawn_from_distance": {}
 			},
-			"minecraft:behavior.float": {
+			"minecraft:behavior.float": {},
+			"minecraft:behavior.stay_while_sitting": {
 				"priority": 0
 			},
-			"minecraft:behavior.mount_pathing": {
-				"priority": 1,
-				"speed_multiplier": 1.25,
-				"target_dist": 0,
-				"track_target": true
-			},
-			"minecraft:behavior.stay_while_sitting": {
-				"priority": 3
-			},
 			"minecraft:behavior.melee_attack": {
-				"priority": 5
+				"priority": 7
 			},
 			"minecraft:behavior.random_stroll": {
 				"priority": 8,
 				"speed_multiplier": 1
 			},
 			"minecraft:behavior.look_at_player": {
-				"priority": 6,
+				"priority": 13,
 				"target_distance": 6,
 				"probability": 0.02
 			},

@@ -18,12 +18,11 @@
 				"walk":"animation.poke.rat.walk",
 				"idle": "animation.poke.rat.idle",
 				"dance":"animation.poke.rat.dance",
-				"movement": "controller.animation.poke.rat.movement"//,
-				//"sitting": "controller.animation.poke.raccoon.sitting"
+				"sit":"animation.poke.rat.sit",
+				"movement": "controller.animation.poke.rat.movement"
 			},
 			"scripts": {
-				"animate": ["movement"//,"sitting"
-				]
+				"animate": ["movement"]
 			},
 			"render_controllers": [
 				"controller.render.poke_rat"
@@ -34,7 +33,7 @@
 			},
 			"enable_attachables": true,
 			"hide_armor": false,
-			"held_item_ignores_lighting": true,
+			"held_item_ignores_lighting": false,
 			"particle_effects": {
 				"rat_dance":"poke:rat_dance"
 			}

@@ -26,7 +26,7 @@
 				"value": 17
 			},
 			"minecraft:tags": {"tags": [
-				"effect @s water_breathing 60 0 true"
+				"function pfe_items/aqua_ring"
 			]},
 			"minecraft:custom_components": [
 				"poke:cc_on_use"

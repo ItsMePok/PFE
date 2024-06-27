@@ -51,7 +51,8 @@
 			"minecraft:destructible_by_explosion": {"explosion_resistance": 6},
 			"minecraft:map_color": "#1b0420",
 			"minecraft:custom_components":[
-				"poke:slabs"
+				"poke:slabs",
+				"poke:cc_block_seat"
 			],
 			"tag:pfe": {}
 		}

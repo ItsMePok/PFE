@@ -1,6 +1,13 @@
 {
 	"format_version": "1.20.20",
 	"sound_definitions": {
+		"poke.aqua_ring_use":{
+			"category": "player",
+			"max_distance": 8,
+			"sounds": [
+				"sounds/pfe/aqua_ring_use"
+			]
+		},
 		"poke.calibrate":{
 			"category": "block",
 			"max_distance": 8,
@@ -105,7 +112,8 @@
 			]
 		},
 		"play.listenerboss.victory": {
-			"category": "ui",
+			"category": "player",
+			"max_distance": 32,
 			"sounds": [
 				"sounds/pfe/listener_victory"
 			]

@@ -1,0 +1,214 @@
+{
+	"pools": [
+		{//Rare Items
+			"rolls": 3,
+			"entries": [
+				{
+					"type": "empty",
+					"weight": 4
+				},
+				{
+					"type": "item",
+					"name": "poke:cassette_mc_disc_far",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "poke:end_crystal_hat",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "poke:diamond_upgrade_core",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "poke:cobalt_golem_block",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "poke:night_vision_goggles",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "poke:repair_core",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "poke:upgrade_core",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "poke:block_breaker_south",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "poke:calibrated_cobblestone_generator_south",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "poke:antenna",
+					"weight": 3
+				}
+			]
+		},
+		{//Common Items
+			"rolls": {
+				"min": 8,
+				"max": 16
+			},
+			"entries": [
+				{
+					"type": "empty",
+					"weight": 15
+				},
+				{
+					"type": "item",
+					"name": "poke:plastic",
+					"weight": 6
+				},
+				{
+					"type": "item",
+					"name": "poke:banished_star",
+					"weight": 6
+				},
+				{
+					"type": "item",
+					"name": "poke:wire",
+					"weight": 6
+				},
+				{
+					"type": "item",
+					"name": "poke:electric_component",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "minecraft:redstone",
+					"weight": 6
+				},
+				{
+					"type": "item",
+					"name": "minecraft:piston",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "minecraft:observer",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "poke:cobalt_ingot",
+					"weight": 3
+				},
+				{
+					"type": "item",
+					"name": "minecraft:sticky_piston",
+					"weight": 3
+				},
+				{
+					"type": "item",
+					"name": "minecraft:daylight_detector",
+					"weight": 3
+				},
+				{
+					"type": "item",
+					"name": "minecraft:hopper",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "poke:gps_module",
+					"weight": 3
+				},
+				{
+					"type": "item",
+					"name": "poke:onyx_shaft",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "minecraft:redstone_block",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "poke:magnet_core",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "poke:block_breaker",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "poke:dirter",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "poke:cobblestone_gen",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "poke:duster",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "poke:red_button",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "poke:receiver",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "minecraft:comparator",
+					"weight": 2
+				}
+			]
+		},
+		{//Tokens
+			"rolls": 5,
+			"entries": [
+				{
+					"type": "item",
+					"name": "poke:copper_token",
+					"weight": 10
+				},
+				{
+					"type": "item",
+					"name": "poke:iron_token",
+					"weight": 15
+				},
+				{
+					"type": "item",
+					"name": "poke:gold_token",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "poke:diamond_token",
+					"weight": 1
+				},
+				{
+					"type": "empty",
+					"weight": 10
+				}
+			]
+		}
+	]
+}

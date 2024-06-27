@@ -33,7 +33,7 @@
 				"should_darken_sky": false
 			},
 			"minecraft:type_family": {
-			"family": ["mob","monster"]
+			"family": ["mob","monster","pfe:boss"]
 			},
 			"minecraft:breathable": {
 			"total_supply": 15,

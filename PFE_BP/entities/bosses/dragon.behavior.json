@@ -3,7 +3,7 @@
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:dragon",
-			"is_spawnable": true,
+			"is_spawnable": false,
 			"is_summonable": true,
 			"is_experimental": false
 		},
@@ -110,6 +110,13 @@
 			}
 		},
 		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"monster",
+					"mob",
+					"pfe:boss"
+				]
+			},
 			"minecraft:nameable": {
 				"name_actions":{
 					"name_filter": "despawn",
