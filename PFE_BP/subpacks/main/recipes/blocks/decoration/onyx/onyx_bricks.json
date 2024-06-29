@@ -1,0 +1,31 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:onyx_bricks_craft"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": [
+			{
+				"item": "poke:onyx_block"
+			},
+			{
+				"item": "poke:onyx_ingot"
+			}
+		],
+		"key": {
+			"C": {
+				"item": "poke:cut_onyx"
+			}
+		},
+		"pattern": [
+			"CC",
+			"CC"
+		],
+		"result": {
+			"item": "poke:onyx_bricks","count": 4
+		}
+	}
+}

@@ -1,0 +1,1 @@
+effect @s speed 20 5 true

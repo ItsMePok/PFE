@@ -1,0 +1,15 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shaped": {
+		"description": {"identifier": "poke:honey_trapdoor"},
+		"tags": ["crafting_table"],
+		"unlock": [
+			{"item":"poke:honey_bricks"},
+			{"item":"honeycomb"},
+			{"item":"honeycomb_block"}
+		],
+		"key": {"C": {"item": "honeycomb"}},
+		"pattern": ["CCC","CCC"],
+		"result": {"item":"poke:honey_trapdoor","count":3}
+	}
+}

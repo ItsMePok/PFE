@@ -1,0 +1,22 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:cut_holy_slab_to_cut_holy"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": [
+			{"item": "poke:cut_holy_slab"}
+		],
+		"key": {
+			"C": {"item": "poke:cut_holy_slab"}
+		},
+		"pattern": [
+			"CC"
+		],
+		"result": {"item": "poke:cut_holy"},
+		"priority": 2
+	}
+}

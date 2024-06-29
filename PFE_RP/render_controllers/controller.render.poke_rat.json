@@ -7,9 +7,9 @@
             "Array.skins": [
               "Texture.black",
               "Texture.brown",
-              "Texture.remy"
+              "Texture.remy",
+              "Texture.white"  
             ]
-          
           }
         },
         "geometry": "Geometry.default",

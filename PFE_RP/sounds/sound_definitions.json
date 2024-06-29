@@ -1,6 +1,15 @@
 {
 	"format_version": "1.20.20",
 	"sound_definitions": {
+		"poke.duck.ambient":{
+			"category": "neutral",
+			"max_distance": 12,
+			"sounds": [
+				{
+					"name": "sounds/mob/dolphin/idle2"
+				}
+			]
+		},
 		"poke.aqua_ring_use":{
 			"category": "player",
 			"max_distance": 8,

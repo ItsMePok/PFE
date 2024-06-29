@@ -1,0 +1,38 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "poke:coffee_mug"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "ingredients": [
+            {
+                "item": "poke:empty_mug"
+            },
+            {
+                "item": "cocoa_beans",
+                "count": 2
+            },
+            {
+                "item": "potion",
+                "data": 0
+            }
+        ],
+        "unlock": [
+            {
+                "item": "poke:empty_mug"
+            },
+            {
+                "item": "cocoa_beans"
+            },
+            {
+                "item": "poke:smooth_limestone"
+            }
+        ],
+        "result": {
+            "item": "poke:coffee_mug"
+        }
+    }
+}

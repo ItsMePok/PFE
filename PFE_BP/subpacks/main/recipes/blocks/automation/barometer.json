@@ -1,0 +1,32 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:barometer"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"CWC",
+			"EGE",
+			"CDC"
+		],
+		"unlock": [
+			{"item":"poke:cobalt_ingot"},
+			{"item":"poke:cut_cobalt"},
+			{"item":"poke:wire"},
+			{"item":"poke:rain_gem"},
+			{"item":"poke:electric_component"},
+			{"item":"daylight_detector"}
+		],
+		"key": {
+			"C":{"item":"poke:cut_cobalt"},
+			"W":{"item":"poke:wire"},
+			"G":{"item":"poke:rain_gem"},
+			"E":{"item":"poke:electric_component"},
+			"D":{"item":"daylight_detector"}
+		},
+		"result":{"item": "poke:barometer"}
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "poke:limestone_brick_slab_lower_stonecut"
+		},
+		"tags": [
+			"stonecutter"
+		],
+		"ingredients": [
+			{
+				"item": "poke:limestone"
+			}
+		],
+		"result": {
+			"item": "poke:limestone_brick_slab",
+			"count": 2
+		}
+	}
+}

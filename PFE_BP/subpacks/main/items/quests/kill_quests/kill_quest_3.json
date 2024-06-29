@@ -1,0 +1,25 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:kill_quest_3"
+		},
+		"components": {
+			"minecraft:icon":"poke_kill_quest",
+			"minecraft:tags": {"tags": [
+				"function pfe_items/q_info/kill_3"
+			]},
+			"minecraft:custom_components": [
+				"poke:cc_on_use"
+			],
+			"minecraft:use_modifiers": {
+				"use_duration": 0,
+				"movement_modifier": 1
+			},
+			"minecraft:cooldown":{
+				"category": "poke:quest",
+				"duration": 0.75
+			}
+		}
+	}
+}

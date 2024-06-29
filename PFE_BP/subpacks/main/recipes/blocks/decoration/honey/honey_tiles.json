@@ -1,0 +1,11 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {"identifier": "poke:honey_tiles"},
+		"tags": ["crafting_table"],
+		"unlock": [{"item": "honeycomb"},{"item": "honeycomb_block"},{"item": "poke:honey_bricks"}],
+		"key": {"C": {"item": "poke:honey_bricks"}},
+		"pattern": ["CC","CC"],
+		"result": {"item": "poke:honey_tiles","count": 4}
+	}
+}

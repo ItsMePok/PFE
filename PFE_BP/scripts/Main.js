@@ -82,15 +82,10 @@ world.afterEvents.itemCompleteUse.subscribe(pfefood => {
     return;
 });
 // Projectile shooters & Windzooka/Blazooka
-const pfeprojitems = ["poke:volt_ring","poke:nuke_ring","poke:necromancer_staff","poke:ring_3","poke:ring_4","poke:ring_2","poke:arrow_ring","poke:shade_ring",]
-const itemuseitems = ["poke:blazooka","poke:windzooka"] + pfeprojitems
+const pfeprojitems = ["poke:volt_ring","poke:nuke_ring","poke:necromancer_staff","poke:ring_3","poke:ring_4","poke:ring_2","poke:arrow_ring","poke:shade_ring"]
 world.afterEvents.itemUse.subscribe(event => {
-    const plocationx= event.source.getViewDirection().x;
-    const plocationy= event.source.getViewDirection().y;
-    const plocationz= event.source.getViewDirection().z;
-    const plocation= event.source.location;
+    if (!pfeprojitems.includes(event.itemStack.typeId)) return;
     const headlocate = event.source.getHeadLocation();
-    if (!itemuseitems.includes(event.itemStack.typeId)) return;
     const ticks = event.itemStack.getComponent('cooldown').cooldownTicks
     if (event.itemStack.getComponent('cooldown').getCooldownTicksRemaining(event.source) != ticks -1) return;
     if (pfeprojitems.includes(event.itemStack.typeId)){ //Projectile shooters. projectile id defined in a tag on the item
@@ -102,8 +97,6 @@ world.afterEvents.itemUse.subscribe(event => {
         proje.owner = event.source;
         proje.shoot(aangle);
     };
-    if (event.itemStack.typeId == "poke:windzooka"){event.source.applyKnockback(plocationx,plocationz,-7,-plocationy*4);event.source.playSound('wind_charge.burst');event.source.dimension.spawnParticle('minecraft:wind_explosion_emitter',plocation)}
-    if (event.itemStack.typeId == "poke:blazooka"){event.source.applyKnockback(plocationx,plocationz,7,-plocationy*-4);event.source.playSound('wind_charge.burst');event.source.dimension.spawnParticle('minecraft:wind_explosion_emitter',plocation);event.source.dimension.spawnParticle('poke:blazooka_flame',plocation)}
     if (world.getPlayers({
         gameMode: GameMode.creative
     }).includes(event.source)) return
@@ -644,10 +637,39 @@ class PFECassette {
     }
 }
 //Runs the command listed as a tag on the item used & Takes durability (with unbreaking in mind) if applicable
+class PFEWindzooka {
+    onUse(data){
+        const plocationx= data.source.getViewDirection().x;
+        const plocationy= data.source.getViewDirection().y;
+        const plocationz= data.source.getViewDirection().z;
+        const plocation= data.source.location;
+        const id = data.itemStack.getTags()
+        const cooldownc=data.itemStack.getComponent('minecraft:cooldown')
+        if (data.itemStack.typeId == "poke:windzooka"){
+            data.source.applyKnockback(plocationx,plocationz,-7,-plocationy*4);
+            data.source.playSound('wind_charge.burst');
+            data.source.dimension.spawnParticle('minecraft:wind_explosion_emitter',plocation)
+        }
+        if (data.itemStack.typeId == "poke:blazooka"){
+            data.source.applyKnockback(plocationx,plocationz,7,-plocationy*-4);
+            data.source.playSound('wind_charge.burst');
+            data.source.dimension.spawnParticle('minecraft:wind_explosion_emitter',plocation);
+            data.source.dimension.spawnParticle('poke:blazooka_flame',plocation)
+        }
+        data.source.runCommand(''+id)
+        cooldownc.startCooldown(data.source)
+        if (data.source.getGameMode() == 'creative') return;
+        const newItem = damage_item(data.itemStack)
+        data.source.getComponent(EntityComponentTypes.Equippable).setEquipment(EquipmentSlot.Mainhand, newItem)
+        return;
+    }
+}
 class PFEOnUse {
     onUse(data){
         const id = data.itemStack.getTags()
+        const cooldownc=data.itemStack.getComponent('minecraft:cooldown')
         data.source.runCommand(''+id)
+        cooldownc.startCooldown(data.source)
         if (data.source.getGameMode() == 'creative') return;
         const newItem = damage_item(data.itemStack)
         data.source.getComponent(EntityComponentTypes.Equippable).setEquipment(EquipmentSlot.Mainhand, newItem)
@@ -772,6 +794,9 @@ world.beforeEvents.worldInitialize.subscribe(event => {
     );
     event.itemComponentRegistry.registerCustomComponent(
         "poke:cc_on_use", new PFEOnUse()
+    );
+    event.itemComponentRegistry.registerCustomComponent(
+        "poke:cc_zooka", new PFEWindzooka()
     );
     event.blockTypeRegistry.registerCustomComponent(
         "poke:trapdoor_event", new PFETrapdoor()

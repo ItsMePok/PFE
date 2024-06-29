@@ -1,0 +1,20 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "poke:cut_onyx_stonecut"
+		},
+		"tags": [
+			"stonecutter"
+		],
+		"ingredients": [
+			{
+				"item": "poke:onyx_block"
+			}
+		],
+		"result": {
+			"item": "poke:cut_onyx",
+			"count": 4
+		}
+	}
+}

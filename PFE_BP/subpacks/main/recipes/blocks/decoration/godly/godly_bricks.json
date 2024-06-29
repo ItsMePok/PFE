@@ -1,0 +1,31 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:godly_bricks_craft"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": [
+			{
+				"item": "poke:godly_block"
+			},
+			{
+				"item": "poke:godly_ingot"
+			}
+		],
+		"key": {
+			"C": {
+				"item": "poke:cut_godly"
+			}
+		},
+		"pattern": [
+			"CC",
+			"CC"
+		],
+		"result": {
+			"item": "poke:godly_bricks","count": 4
+		}
+	}
+}

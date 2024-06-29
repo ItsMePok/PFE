@@ -9,10 +9,10 @@
 		}
 	},
 	"header": {
-		"name": "§ev1.2.0.4 §uPFE §cBP",
+		"name": "§ev1.2.0.5 §uPFE §cBP",
 		"description": "pack.description",
 		"min_engine_version": [1, 21, 0],
-		"uuid": "5ad75965-7207-4b7f-8ab3-32d2b9a4df5a",
+		"uuid": "0576ade3-856e-4755-9a92-4f2d2a9f9b1a",
 		"version": [1, 0, 0]
 	},
 	"modules": [
@@ -36,8 +36,20 @@
 			"version": "1.12.0-beta"
 		},
 		{
-			"uuid": "8d028754-dff7-4b94-853e-050a2d76d70e",
+			"uuid": "7dd13543-a0d9-4074-87f6-1dfcfbe34915",
 			"version": [1, 0, 0]
+		}
+	],
+	"subpacks": [
+		{
+			"folder_name": "deco",
+			"name": "Blocks Only",
+			"memory_tier": 0
+		},
+		{
+			"folder_name": "main",
+			"name": "Normal",
+			"memory_tier": 0
 		}
 	]
 }

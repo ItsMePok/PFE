@@ -9,7 +9,10 @@
 				"legs": "chicken_legs"
 			},
 			"textures": {
-				"default": "textures/entity/passive/poke_duck"
+				"green": "textures/entity/passive/duck/poke_green",
+				"tan": "textures/entity/passive/duck/poke_tan",
+				"white": "textures/entity/passive/duck/poke_white",
+				"black": "textures/entity/passive/duck/poke_black"
 			},
 			"geometry": {
 				"default": "geometry.duck"
@@ -35,7 +38,7 @@
 					"variable.wing_flap = ((math.sin(query.wing_flap_position * 60.3) + 1) * query.wing_flap_speed *20);"
 				]
 			},
-			"render_controllers": ["controller.render.chicken"],
+			"render_controllers": ["controller.render.poke_duck"],
 			"spawn_egg": {
 				"base_color": "#244a0d",
 				"overlay_color": "#e6ae5f"

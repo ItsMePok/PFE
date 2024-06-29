@@ -1,0 +1,19 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "poke:polished_limestone_stonecut"
+		},
+		"tags": [
+			"stonecutter"
+		],
+		"ingredients": [
+			{
+				"item": "poke:limestone"
+			}
+		],
+		"result": {
+			"item": "poke:polished_limestone"
+		}
+	}
+}

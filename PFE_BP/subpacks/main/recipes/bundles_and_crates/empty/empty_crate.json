@@ -1,0 +1,46 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:recipe_shaped": {
+        "tags": [
+            "crafting_table"
+        ],
+        "description": {
+            "identifier": "poke:empty_crate"
+        },
+        "unlock": [
+            {
+                "item": "planks"
+            },
+            {
+                "item": "barrel"
+            },
+            {
+                "item": "poke:cobalt_nugget"
+            },
+            {
+                "item": "poke:sugarcane_crate"
+            }
+        ],
+        "pattern": [
+            "C C",
+            "#B#",
+            "C#C"
+        ],
+        "key": {
+            "#": {
+                "item": "planks"
+            },
+            "B": {
+                "item": "barrel"
+            },
+            "C": {
+                "item": "poke:cobalt_nugget"
+            }
+        },
+        "result": [
+            {
+                "item": "poke:empty_crate"
+            }
+        ]
+    }
+}

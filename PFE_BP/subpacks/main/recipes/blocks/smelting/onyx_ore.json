@@ -1,0 +1,14 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_furnace": {
+		"description": {
+			"identifier": "poke:onyx"
+		},
+		"tags": [
+			"furnace",
+			"blast_furnace"
+		],
+		"input": "poke:onyx",
+		"output": "poke:onyx_ingot"
+	}
+}

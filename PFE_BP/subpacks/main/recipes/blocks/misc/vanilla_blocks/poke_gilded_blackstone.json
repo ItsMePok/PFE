@@ -1,0 +1,42 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:poke_gilded_blackstone"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": [
+			{
+				"item": "poke:godly_ingot"
+			},
+			{
+				"item": "gilded_blackstone"
+			},
+			{
+				"item": "blackstone"
+			}
+		],
+		"pattern": [
+			"BGB",
+			"G#G",
+			"BGB"
+		],
+		"key": {
+			"#": {
+				"item": "poke:godly_ingot"
+			},
+			"B": {
+				"item": "blackstone"
+			},
+			"G": {
+				"item": "gold_block"
+			}
+		},
+		"result": {
+			"item": "gilded_blackstone",
+			"count": 4
+		}
+	}
+}

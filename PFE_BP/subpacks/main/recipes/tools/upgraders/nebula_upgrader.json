@@ -1,0 +1,42 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "poke:nebula_upgrader"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "group": "upgraders",
+        "pattern": [
+            " XX",
+            "WYX",
+            "ZW "
+        ],
+        "unlock": [
+            {
+                "item": "poke:raw_nebula"
+            },
+            {
+                "item": "poke:upgrade_core"
+            }
+        ],
+        "key": {
+            "X": {
+                "item": "poke:nebula_block"
+            },
+            "W": {
+                "item": "poke:nebula_block"
+            },
+            "Y": {
+                "item": "poke:platinum_upgrade_core"
+            },
+            "Z": {
+                "item": "poke:nebula_stick"
+            }
+        },
+        "result": {
+            "item": "poke:nebula_upgrader"
+        }
+    }
+}

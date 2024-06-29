@@ -6,9 +6,7 @@
 			"animation_length": 1.125,
 			"bones": {
 				"Root": {
-					"rotation": [90, 56, -32],
-					"position": [9, 18, 5],
-					"scale": [0, 1, 0]
+					"scale": 0
 				},
 				"Cog": {
 					"rotation": {

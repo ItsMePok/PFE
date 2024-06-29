@@ -115,17 +115,25 @@
 			},
 			"poke:duck": {
 				"events": {
-					"ambient": "mob.chicken.say",
-					"death": "mob.chicken.hurt",
-					"hurt": "mob.chicken.hurt",
-					"plop": "mob.chicken.plop",
+					"ambient": "poke.duck.ambient",
+					"death": "mob.dolphin.attack",
+					"hurt":{
+						"pitch": [0.9, 1.3],
+						"sound":  "poke.duck.ambient",
+						"volume": 1
+					},
+					"plop":{
+						"pitch": 1,
+						"sound":  "mob.chicken.plop",
+						"volume": 1
+					},
 					"step": {
 						"pitch": 1,
 						"sound": "mob.chicken.step",
 						"volume": 0.25
 					}
 				},
-				"pitch": [0.8, 1.2],
+				"pitch": [0.6, 1.2],
 				"volume": 1
 			},
 			"poke:woodspike_guardian": {

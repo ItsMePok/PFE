@@ -1,0 +1,14 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_furnace": {
+		"description": {
+			"identifier": "poke:void_ore_end"
+		},
+		"tags": [
+			"furnace",
+			"blast_furnace"
+		],
+		"input": "poke:end_void_ore",
+		"output": "poke:void_ingot"
+	}
+}

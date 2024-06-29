@@ -1,0 +1,63 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "poke:nebula_battleaxe",
+      "menu_category": {
+        "category": "equipment",
+        "group": "itemGroup.name.sword"
+      }
+    },
+    "components": {
+      "minecraft:icon":"poke_nebula_battleaxe",
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true,
+      "minecraft:durability": {
+        "max_durability": 5800,"damage_chance": {"max": 100,"min": 60}
+      },
+      "minecraft:damage": 30,
+      "minecraft:enchantable": {
+        "value": 50,
+        "slot": "sword"
+      },
+      "minecraft:can_destroy_in_creative": false,
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": [
+              "poke:repair_core"
+            ],
+            "repair_amount": "query.max_durability"
+          },
+          {
+            "items": [
+              "poke:nebula_ingot"
+            ],
+            "repair_amount": 500
+          },
+          {
+            "items": [
+              "poke:nebula_nugget"
+            ],
+            "repair_amount": 56
+          }
+        ]
+      },
+      "minecraft:cooldown": {
+        "category": "poke:axe_use",
+        "duration": 2.5
+      },
+      "tag:minecraft:is_sword": {},
+			"minecraft:tags": {"tags": [
+				"function pfe_items/battleaxe/nebula"
+			]},
+			"minecraft:custom_components": [
+				"poke:cc_on_use"
+			],
+      "minecraft:use_modifiers": {
+        "use_duration": 0,
+        "movement_modifier": 1
+      }
+    }
+  }
+}

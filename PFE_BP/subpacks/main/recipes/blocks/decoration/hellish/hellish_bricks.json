@@ -1,0 +1,31 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:hellish_bricks_craft"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": [
+			{
+				"item": "poke:hellish_block"
+			},
+			{
+				"item": "poke:hellish_ingot"
+			}
+		],
+		"key": {
+			"C": {
+				"item": "poke:cut_hellish"
+			}
+		},
+		"pattern": [
+			"CC",
+			"CC"
+		],
+		"result": {
+			"item": "poke:hellish_bricks","count": 4
+		}
+	}
+}

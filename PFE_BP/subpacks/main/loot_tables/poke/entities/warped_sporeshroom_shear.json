@@ -1,0 +1,16 @@
+{
+    "pools": [
+        {
+            "rolls": 5,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "warped_fungus"
+                },
+                {
+                    "type": "empty"
+                }
+            ]
+        }
+    ]
+}

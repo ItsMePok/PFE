@@ -1,0 +1,1 @@
+fill ~~~ ~~~ poke:raw_astral_block replace poke:astral_ore
