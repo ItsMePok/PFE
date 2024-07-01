@@ -43,14 +43,15 @@
 							"log",
 							"log2",
 							"mangrove_log",
-							"cherry_log"
+							"cherry_log",
+							"bamboo_block"
 						],
 						"repair_amount": "query.max_durability*0.25"
 					}
 				]
 			},
 			"minecraft:enchantable": {
-				"slot": "pickaxe",
+				"slot": "axe",
 				"value": 50
 			},
 			"minecraft:hover_text_color": "material_copper",

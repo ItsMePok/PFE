@@ -27,7 +27,10 @@
 							"ambient_occlusion": false,
 							"face_dimming": false
 						}
-					}
+					},
+					"minecraft:custom_components": [
+						"poke:crops"
+					]
 				}
 			},
 			{
@@ -45,7 +48,10 @@
 							"ambient_occlusion": false,
 							"face_dimming": false
 						}
-					}
+					},
+					"minecraft:custom_components": [
+						"poke:crops"
+					]
 				}
 			},
 			{
@@ -63,7 +69,10 @@
 							"ambient_occlusion": false,
 							"face_dimming": false
 						}
-					}
+					},
+					"minecraft:custom_components": [
+						"poke:crops"
+					]
 				}
 			},
 			{
@@ -81,7 +90,10 @@
 							"ambient_occlusion": false,
 							"face_dimming": false
 						}
-					}
+					},
+					"minecraft:custom_components": [
+						"poke:crops"
+					]
 				}
 			},
 			{
@@ -99,7 +111,10 @@
 							"ambient_occlusion": false,
 							"face_dimming": false
 						}
-					}
+					},
+					"minecraft:custom_components": [
+						"poke:crops"
+					]
 				}
 			},
 			{
@@ -140,10 +155,7 @@
 			}]},
 			"tag:pfe": {},
 			"minecraft:light_dampening": 0,
-			"minecraft:map_color": "#09a304",
-			"minecraft:custom_components": [
-				"poke:crops"
-			]
+			"minecraft:map_color": "#09a304"
 		}
 	}
 }

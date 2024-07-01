@@ -42,7 +42,7 @@
 						"items": [
 							"minecraft:diamond"
 						],
-						"repair_amount": 128
+						"repair_amount": "query.max_durability * 0.25"
 					}
 				]
 			},

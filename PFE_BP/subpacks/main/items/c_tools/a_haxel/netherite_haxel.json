@@ -50,7 +50,7 @@
 				]
 			},
 			"minecraft:enchantable": {
-				"slot": "pickaxe",
+				"slot": "axe",
 				"value": 50
 			},
 			"minecraft:hover_text_color": "material_netherite",

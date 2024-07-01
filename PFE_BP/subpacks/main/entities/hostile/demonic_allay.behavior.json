@@ -39,7 +39,7 @@
 				"height": 0.8
 			},
 			"minecraft:movement": {
-				"value": 1.25
+				"value": 0.85
 			},
 			"minecraft:flying_speed": {
 				"value": 0.1

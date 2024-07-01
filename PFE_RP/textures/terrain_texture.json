@@ -1,10 +1,14 @@
 {
 	"resource_pack_name": "poke",
 	"texture_name": "atlas.terrain",
-	"padding": 8,
+	"padding": 2,
 	"num_mip_levels": 2,
 	"texture_data": {
-		"poke_cobbler_top":{"textures":[{"path": "textures/blocks/automation/poke_block_breaker_bottom","overlay_color": "#999999"},{"path": "textures/blocks/automation/poke_block_breaker_bottom","overlay_color": "#999999"}]},
+		"poke_cobble_gen_top":{"textures":[{"path": "textures/blocks/automation/poke_cobble_gen_top","overlay_color": "#610310"},{"path": "textures/blocks/automation/poke_cobble_gen_top","overlay_color": "#ce0c0c"}]},
+		"poke_cobble_gen_bottom":{"textures":[{"path": "textures/blocks/automation/poke_block_breaker_bottom","overlay_color": "#FFFFFF"},{"path": "textures/blocks/automation/poke_block_breaker_bottom","overlay_color": "#FFFFFF"}]},
+		"poke_cobble_gen_flip":{"textures":[{"path": "textures/blocks/automation/poke_cobble_gen_flip","overlay_color": "#610310"},{"path": "textures/blocks/automation/poke_cobble_gen_flip","overlay_color": "#ce0c0c"}]},
+		"poke_cobble_gen":{"textures":[{"path": "textures/blocks/automation/poke_cobble_gen","overlay_color": "#610310"},{"path": "textures/blocks/automation/poke_cobble_gen","overlay_color": "#ce0c0c"}]},
+		"poke_cobbler_top":{"textures":[{"path": "textures/blocks/automation/poke_block_breaker_bottom","overlay_color": "#757575"},{"path": "textures/blocks/automation/poke_block_breaker_bottom","overlay_color": "#757575"}]},
 		"poke_cobbler_flip":{"textures":[{"path": "textures/blocks/automation/poke_cobbler_flip","overlay_color": "#610310"},{"path": "textures/blocks/automation/poke_cobbler_flip","overlay_color": "#ce0c0c"}]},
 		"poke_cobbler":{"textures":[{"path": "textures/blocks/automation/poke_cobbler","overlay_color": "#610310"},{"path": "textures/blocks/automation/poke_cobbler","overlay_color": "#ce0c0c"}]},
 		"poke_cobbler_bottom":{"textures":[{"path": "textures/blocks/automation/poke_cobbler_bottom","overlay_color": "#610310"},{"path": "textures/blocks/automation/poke_cobbler_bottom","overlay_color": "#ce0c0c"}]},

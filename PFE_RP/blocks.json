@@ -703,7 +703,14 @@
 	},
 	"poke:cobblestone_gen": {
 		"sound": "stone",
-		"textures": "poke_cobblestone_gen"
+		"textures":{
+			"down": "poke_cobble_gen_bottom",
+			"east": "poke_cobble_gen_flip",
+			"west": "poke_cobble_gen_flip",
+			"south": "poke_cobble_gen",
+			"north": "poke_cobble_gen",
+			"up": "poke_cobble_gen_top"
+		}
 	},
 	"poke:cobble_gen": {
 		"sound": "stone",

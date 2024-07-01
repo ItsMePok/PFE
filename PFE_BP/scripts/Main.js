@@ -219,6 +219,7 @@ class PFEFortune {
 //Slab combining & Double slab loot
 class PFESlabs {
     onPlayerInteract(data) {
+        if(data.block.permutation.getState('poke:double') == true){data.cancel}
         var block_location_x = data.block.x
         var block_location_y = data.block.y
         var block_location_z = data.block.z
@@ -226,8 +227,16 @@ class PFESlabs {
         const mainhand = data.player.getComponent(EntityComponentTypes.Equippable).getEquipment('Mainhand')
         if (mainhand != undefined){
             if (mainhand.typeId == slabid && data.face == 'Up' && data.block.permutation.getState('poke:double') == false) {
+                const itemstack = data.player.getComponent('minecraft:equippable').getEquipment('Mainhand')
+                var itemstackamount = itemstack.amount -1
                 data.block.setPermutation(data.block.permutation.withState('poke:double',true))
                 data.block.dimension.runCommandAsync('playsound use.stone @a '+ block_location_x + ' '+ block_location_y+' '+ block_location_z)
+                if (data.player.getGameMode() == 'creative') return;
+                if (itemstackamount <= 0) {
+                    data.player.getComponent('minecraft:equippable').setEquipment('Mainhand', new ItemStack('minecraft:air',1))
+                    return;
+                }
+                data.player.getComponent('minecraft:equippable').setEquipment('Mainhand', new ItemStack(slabid, itemstackamount))
                 return;
             }
             else {
@@ -236,6 +245,8 @@ class PFESlabs {
         }
         return;
     }
+}
+class PFESlabLoot{
     onPlayerDestroy(data){
         const block_location = data.block.location
         const gm = data.player.getGameMode()
@@ -857,6 +868,9 @@ world.beforeEvents.worldInitialize.subscribe(event => {
     );
     event.blockTypeRegistry.registerCustomComponent(
         "poke:cc_block_seat", new PFEBlockSeat()
+    );
+    event.blockTypeRegistry.registerCustomComponent(
+        "poke:cc_slab_loot", new PFESlabLoot()
     );/*
     event.itemComponentRegistry.registerCustomComponent(
         "poke:cc_tree_cap", new PFETreeCap()
