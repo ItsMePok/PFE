@@ -14,7 +14,18 @@
                                 "§r§eBounty LVL:"
                             ]
 						}
-					]
+					],
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "poke:cassette_theend",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "poke:cassette_alpha",
+					"weight": 1
 				}
 			]
 		},

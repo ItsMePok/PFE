@@ -1,0 +1,16 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "poke:cassette_deadvoxel",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:icon":"poke_cassette_deadvoxel",
+      "minecraft:custom_components": ["poke:cas"],
+      "minecraft:tags": {"tags": ["minecraft:music_disc"]}
+    }
+  }
+}

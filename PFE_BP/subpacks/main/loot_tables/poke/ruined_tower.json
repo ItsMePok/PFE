@@ -70,7 +70,17 @@
 								}
 							]
 						}
-					]
+					],
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "poke:cassette_ancestry",
+					"weight": 1
+				},
+				{
+					"type": "empty",
+					"weight": 4
 				}
 			]
 		},

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.60",
+	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:void_leggings",
@@ -21,10 +21,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": { 
-				"textures": { 
-				  "default": "void_leggings" } 
-			  }, 
+			"minecraft:icon":"void_leggings", 
 			"minecraft:wearable": {
 				"slot": "slot.armor.legs",
 				"protection": 20
@@ -38,25 +35,21 @@
 						"repair_amount": "query.max_durability"
 					},
 					{
-						"items": [
-							"poke:void_ingot"
-						],
+						"items": ["poke:void_ingot"],
 						"repair_amount": "query.max_durability*0.25"
 					},
 					{
-						"items": [
-							"poke:void_leggings"
-						],
-						"repair_amount": "context.other->query.remaining_durability+0.12*context.other->query.max_durability"
+						"items": ["poke:void_nugget"],
+						"repair_amount": "query.max_durability*0.028"
 					}
 				]
 			}, 
 			"minecraft:tags": { 
-			  "tags": [ 
-				"minecraft:is_armor", 
-				"minecraft:trimmable_armors" 
-			  ] 
+				"tags": [ 
+					"minecraft:is_armor", 
+					"minecraft:trimmable_armors" 
+				] 
 			} 
-		  } 
 		} 
-	  }
+	} 
+}

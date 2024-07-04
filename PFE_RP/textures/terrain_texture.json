@@ -1479,9 +1479,6 @@
 		"poke_onyx_block": {
 			"textures": "textures/blocks/ore_block/poke_onyx_block"
 		},
-		"poke_cobblestone_gen": {
-			"textures": "textures/blocks/automation/poke_cobblestone_gen"
-		},
 		"poke_cobbled_limestone": {
 			"textures": "textures/blocks/cobbled_limestone"
 		},

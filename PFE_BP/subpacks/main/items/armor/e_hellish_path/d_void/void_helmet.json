@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.60",
+	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:void_helmet",
@@ -21,10 +21,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": { 
-				"textures": { 
-				  "default": "void_helmet" } 
-			  }, 
+			"minecraft:icon":"void_helmet", 
 			"minecraft:wearable": {
 				"slot": "slot.armor.head",
 				"protection": 12
@@ -38,25 +35,21 @@
 						"repair_amount": "query.max_durability"
 					},
 					{
-						"items": [
-							"poke:void_ingot"
-						],
+						"items": ["poke:void_ingot"],
 						"repair_amount": "query.max_durability*0.25"
 					},
 					{
-						"items": [
-							"poke:void_helmet"
-						],
-						"repair_amount": "context.other->query.remaining_durability+0.12*context.other->query.max_durability"
+						"items": ["poke:void_nugget"],
+						"repair_amount": "query.max_durability*0.028"
 					}
 				]
 			}, 
 			"minecraft:tags": { 
-			  "tags": [ 
-				"minecraft:is_armor", 
-				"minecraft:trimmable_armors" 
-			  ] 
+				"tags": [ 
+					"minecraft:is_armor", 
+					"minecraft:trimmable_armors" 
+				] 
 			} 
-		  } 
 		} 
-	  }
+	} 
+}
