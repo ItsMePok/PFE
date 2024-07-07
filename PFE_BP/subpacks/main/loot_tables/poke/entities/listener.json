@@ -1,26 +1,32 @@
 {
 	"pools": [
-		{
-			"rolls": {
-				"min": 32,
-				"max": 64
-			},
+		{//Tokens
+			"rolls": 12,
 			"entries": [
 				{
 					"type": "item",
-					"name": "poke:iron_token"
-				}
-			]
-		},
-		{
-			"rolls": {
-				"min": 32,
-				"max": 48
-			},
-			"entries": [
+					"name": "poke:copper_token",
+					"weight": 2
+				},
 				{
 					"type": "item",
-					"name": "poke:gold_token"
+					"name": "poke:iron_token",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "poke:gold_token",
+					"weight": 20
+				},
+				{
+					"type": "item",
+					"name": "poke:diamond_token",
+					"weight": 16
+				},
+				{
+					"type": "item",
+					"name": "poke:platinum_token",
+					"weight": 5
 				}
 			]
 		},

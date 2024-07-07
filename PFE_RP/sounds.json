@@ -1,6 +1,26 @@
 {
 	"entity_sounds": {
 		"entities": {
+			"poke:mini_demonic_allay" : {
+            "events" : {
+				"ambient" : "mob.allay.idle",
+				"ambient.tame" : "mob.allay.idle_holding",
+				"death" : "mob.allay.death",
+				"hurt" : "mob.allay.hurt"
+				},
+				"pitch" : [ 1.2, 1.5 ],
+				"volume" : 1
+			},
+			"poke:demonic_allay" : {
+            "events" : {
+				"ambient" : "mob.allay.idle",
+				"ambient.tame" : "mob.allay.idle_holding",
+				"death" : "mob.allay.death",
+				"hurt" : "mob.allay.hurt"
+				},
+				"pitch" : [ 0.5, 0.8 ],
+				"volume" : 1
+			},
 			"poke:rat": {
 				"events": {
 					"ambient": "mob.fox.aggro",

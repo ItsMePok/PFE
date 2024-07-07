@@ -80,6 +80,216 @@
 									"quantity": 1
 								}
 							]
+						},
+						{
+							"max_uses": -1,
+							"wants": [
+								{
+									"item": "poke:banished_star_x3",
+									"quantity": 1
+								}
+							],
+							"gives": [
+								{
+									"item": "poke:repair_core",
+									"quantity": 1
+								}
+							]
+						},
+						{
+							"max_uses": -1,
+							"wants": [
+								{
+									"item": "poke:banished_star_x4",
+									"quantity": 1
+								}
+							],
+							"gives": [
+								{
+									"item": "poke:upgrade_core",
+									"quantity": 1
+								}
+							]
+						},
+						{
+							"max_uses": -1,
+							"wants": [
+								{
+									"item": "poke:banished_star_x7",
+									"quantity": 1
+								}
+							],
+							"gives": [
+								{
+									"item": "poke:diamond_upgrade_core",
+									"quantity": 1
+								}
+							]
+						},
+						{
+							"max_uses": -1,
+							"wants": [
+								{
+									"item": "poke:banished_star_x8",
+									"quantity": 1
+								}
+							],
+							"gives": [
+								{
+									"item": "poke:platinum_upgrade_core",
+									"quantity": 1
+								}
+							]
+						},
+						{
+							"max_uses": -1,
+							"wants": [
+								{
+									"item": "poke:banished_star_x2",
+									"quantity": 1
+								}
+							],
+							"gives": [
+								{
+									"item": "poke:raw_cobalt",
+									"quantity": 1
+								}
+							]
+						},
+						{
+							"max_uses": -1,
+							"wants": [
+								{
+									"item": "poke:banished_star_x3",
+									"quantity": 1
+								}
+							],
+							"gives": [
+								{
+									"item": "poke:raw_shade",
+									"quantity": 1
+								}
+							]
+						},
+						{
+							"max_uses": -1,
+							"wants": [
+								{
+									"item": "poke:banished_star_x3",
+									"quantity": 1
+								}
+							],
+							"gives": [
+								{
+									"item": "poke:raw_onyx",
+									"quantity": 1
+								}
+							]
+						},
+						{
+							"max_uses": -1,
+							"wants": [
+								{
+									"item": "poke:banished_star_x3",
+									"quantity": 1
+								}
+							],
+							"gives": [
+								{
+									"item": "poke:raw_holy",
+									"quantity": 1
+								}
+							]
+						},
+						{
+							"max_uses": -1,
+							"wants": [
+								{
+									"item": "poke:banished_star_x3",
+									"quantity": 1
+								}
+							],
+							"gives": [
+								{
+									"item": "poke:raw_hellish",
+									"quantity": 1
+								}
+							]
+						},
+						{
+							"max_uses": -1,
+							"wants": [
+								{
+									"item": "poke:banished_star_x4",
+									"quantity": 1
+								}
+							],
+							"gives": [
+								{
+									"item": "poke:molten_slimeball",
+									"quantity": 1
+								}
+							]
+						},
+						{
+							"max_uses": -1,
+							"wants": [
+								{
+									"item": "poke:banished_star_x2",
+									"quantity": 1
+								}
+							],
+							"gives": [
+								{
+									"item": "poke:sugar_water",
+									"quantity": 1
+								}
+							]
+						},
+						{
+							"max_uses": -1,
+							"wants": [
+								{
+									"item": "poke:banished_star_x2",
+									"quantity": 1
+								}
+							],
+							"gives": [
+								{
+									"item": "poke:turnip",
+									"quantity": 1
+								}
+							]
+						},
+						{
+							"max_uses": -1,
+							"wants": [
+								{
+									"item": "poke:banished_star_x5",
+									"quantity": 1
+								}
+							],
+							"gives": [
+								{
+									"item": "poke:red_present",
+									"quantity": 1
+								}
+							]
+						},
+						{
+							"max_uses": -1,
+							"wants": [
+								{
+									"item": "poke:banished_star_x6",
+									"quantity": 1
+								}
+							],
+							"gives": [
+								{
+									"item": "poke:cassette_ariamath",
+									"quantity": 1
+								}
+							]
 						}
 					]
 				}

@@ -12,11 +12,11 @@
 				"default": "textures/entity/bosses/poke_zombken"
 			},
 			"geometry": {
-				"default": "geometry.zombken"
+				"default": "geometry.poke.zombken"
 			},
 			"animations": {
 				"move": "animation.poke.zombken.move",
-				"general": "animation.chicken.general",
+				"general": "animation.poke.zombken.general",
 				"look_at_target": "animation.common.look_at_target",
 				"baby_transform": "animation.poke.zombken.baby_transform",
 				"melee_attack": "animation.poke.zombken.attack",
@@ -31,11 +31,10 @@
 				
 			},
 			"render_controllers": [
-				"controller.render.chicken"
+				"controller.render.poke.zombken"
 			],
 			"spawn_egg": {
-				"base_color": "#247004",
-				"overlay_color": "#5b1717"
+				"texture": "poke_spawn_zombken"
 			}
 		}
 	}

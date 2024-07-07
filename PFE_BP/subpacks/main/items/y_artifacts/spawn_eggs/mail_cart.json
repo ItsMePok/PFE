@@ -4,16 +4,12 @@
 		"description": {
 			"identifier": "poke:mail_cart",
 			"menu_category": {
-				"category": "nature",
+				"category": "items",
 				"group": "itemGroup.name.minecart"
 			}
 		},
 		"components": {
-			"minecraft:icon":{
-				"textures": {
-					"default": "poke_mail_cart"
-				}
-			},
+			"minecraft:icon":"poke_mail_cart",
 			"minecraft:entity_placer": {
 				"entity": "poke:mail_cart","dispense_on": ["minecraft:rail","minecraft:activator_rail","minecraft:detector_rail","golden_rail"],"use_on": ["minecraft:rail","minecraft:activator_rail","minecraft:detector_rail","golden_rail"]
 			},

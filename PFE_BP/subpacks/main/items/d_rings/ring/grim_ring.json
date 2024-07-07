@@ -8,6 +8,14 @@
 			}
 		},
 		"components": {
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": ["poke:repair_core"],
+						"repair_amount": "query.max_durability"
+					}
+				]
+			},
 			"minecraft:icon":"poke_grim_ring",
 			"minecraft:max_stack_size": 1,
 			"minecraft:cooldown": {

@@ -3,7 +3,7 @@
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:listener",
-			"is_spawnable": false,
+			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false
 		},
@@ -25,6 +25,9 @@
 			}
 		},
 		"components": {
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1
+			},
 			"minecraft:on_death": {
 				"event": "death_sound"
 			},
@@ -42,7 +45,7 @@
 				"on_death": 7500
 			},
 			"minecraft:attack": {
-				"damage": 150
+				"damage": 120
 			},
 			"minecraft:is_hidden_when_invisible": {},
 			"minecraft:type_family": {
@@ -91,7 +94,7 @@
 				"name": "entity.poke:listener.name"
 			},
 			"minecraft:movement": {
-				"value": 0.35
+				"value": 0.30
 			},
 			"minecraft:attack_damage": {
 				"value": 150
@@ -107,7 +110,7 @@
 				"priority": 0
 			},
 			"minecraft:behavior.nearest_prioritized_attackable_target": {
-				"priority": 1,
+				"priority": 2,
 				"attack_interval": 0,
 				"reselect_targets": true,
 				"scan_interval": 15,
@@ -125,9 +128,9 @@
 				]
 			},
 			"minecraft:behavior.sonic_boom": {
-				"priority": 1,
+				"priority": 0,
 				"duration": 2,
-				"speed_multiplier": 1.4,
+				"speed_multiplier": 1,
 				"attack_damage": 40,
 				"attack_range_horizontal": 55,
 				"attack_range_vertical": 55,
@@ -141,7 +144,7 @@
 			},
 			"minecraft:behavior.melee_attack": {
 				"priority": 4,
-				"speed_multiplier": 1.4,
+				"speed_multiplier": 1,
 				"melee_fov": 360
 			},
 			"minecraft:loot": {

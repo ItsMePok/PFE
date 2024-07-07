@@ -4,7 +4,8 @@
     "description": {
       "identifier": "poke:cassette_mc_disc_mall",
       "menu_category": {
-        "category": "equipment"
+        "category": "items",
+        "group":"itemGroup.name.record"
       }
     },
     "components": {

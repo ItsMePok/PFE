@@ -22,7 +22,7 @@
           "remove_on_hit": {}
         },
         "anchor": 1,
-        "power": 4,
+        "power": 100,
         "shoot_sound":"throw",
         "hit_ground_sound": "mob.endermen.portal",
         "gravity": 0.005,

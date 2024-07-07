@@ -1,0 +1,91 @@
+{
+	"format_version": "1.10.0",
+	"animations": {
+		"animation.poke.logger.walk": {
+			"loop": true,
+			"anim_time_update": "query.modified_distance_moved",
+			"bones": {
+				"Smokestack": {
+					"rotation": [0, 0, 0]
+				},
+				"hip": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"LArm": {
+					"rotation": ["-(math.cos(query.anim_time * 38.17 + 180) * 40.0) - this", 0, 0]
+				},
+				"RArm": {
+					"rotation": ["(math.cos(query.anim_time * 38.17 + 180) * 40.0) - this", 0, 0]
+				},
+				"RLeg": {
+					"rotation": ["(math.cos(query.anim_time * 38.17 + 180) * 40.0) - this", 0, 0]
+				},
+				"LLeg": {
+					"rotation": ["-(math.cos(query.anim_time * 38.17 + 180) * 40.0) - this", 0, 0]
+				},
+				"Head": {
+					"position": [0, 0, 0]
+				}
+			}
+		},
+		"animation.poke.logger.melee_attack": {
+			"animation_length": 0.3333,
+			"bones": {
+				"LArm": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.0741": {
+							"post": [-25.33761, -9.05478, 4.26175],
+							"lerp_mode": "catmullrom"
+						},
+						"0.1667": {
+							"post": [-10.91528, 39.41206, 12.10845],
+							"lerp_mode": "catmullrom"
+						},
+						"0.3333": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					},
+					"position": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.0741": {
+							"post": [-0.8, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.3333": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			}
+		},
+		"animation.poke.logger.chainsaw_setup": {
+			"loop": true,
+			"animation_length": 0.1667,
+			"bones": {
+				"Cainsaw": {
+					"rotation": {
+						"0.0": [0, 0.5, 0],
+						"0.0417": [0, 0.4189, 0],
+						"0.125": [0, -0.4189, 0],
+						"0.1667": [0, -0.5, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0833": [0, 2, 0],
+						"0.1667": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

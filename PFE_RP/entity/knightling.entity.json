@@ -30,8 +30,7 @@
 				"controller.render.poke.knightling"
 			],
 			"spawn_egg": {
-				"base_color": "#313131",
-				"overlay_color": "#67ca40"
+				"texture": "poke_spawn_knightling"
 			}
 		}
 	}

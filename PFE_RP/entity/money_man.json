@@ -32,8 +32,7 @@
 				"controller.render.money_man"
 			],
 			"spawn_egg": {
-				"base_color": "#000000",
-				"overlay_color": "#FFFFFF"
+				"texture": "poke_money_man"
 			},
 			"enable_attachables": true,
 			"hide_armor": false

@@ -1,5 +1,7 @@
 {
 	"texture_data": {
+		"poke_purifier":{"textures":"textures/items/misc/poke_purifier"},
+		"poke_spawn_logger":{"textures":"textures/items/boss/poke_spawn_logger"},
 		"poke_cassette_danny":{"textures":"textures/items/cassette/poke_danny"},
 		"poke_cassette_sweden":{"textures":"textures/items/cassette/poke_sweden"},
 		"poke_cassette_clark":{"textures":"textures/items/cassette/poke_clark"},

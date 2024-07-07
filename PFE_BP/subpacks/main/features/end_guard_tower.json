@@ -7,7 +7,7 @@
 		},
 		"structure_name": "poke:end_guard_tower",
 		"adjustment_radius": 16,
-		"facing_direction":"south",
+		"facing_direction":"random",
 		"constraints": {
 			"grounded": {},
 			"unburied": {}

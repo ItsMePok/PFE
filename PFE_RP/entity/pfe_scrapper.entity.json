@@ -29,8 +29,7 @@
 				"controller.render.shopkeeper"
 			],
 			"spawn_egg": {
-				"base_color": "#221a00",
-				"overlay_color": "#a94b15"
+				"texture": "poke_spawn_scrapper"
 			},
 			"enable_attachables": true,
 			"hide_armor": false

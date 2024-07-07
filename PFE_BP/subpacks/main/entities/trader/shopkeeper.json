@@ -3,7 +3,7 @@
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:shopkeeper",
-			"is_spawnable": false,
+			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false,
 			"runtime_identifier": "minecraft:villager"
@@ -13,7 +13,7 @@
 			"minecraft:loot": {"table": "loot_tables/poke/entities/shopkeeper.json"},
 			"minecraft:health": {"value": 20},
 			"minecraft:collision_box": {"width": 0.6,"height": 1.9},
-			"minecraft:movement": {"value": 0.5},"minecraft:behavior.float": {"priority": 0},
+			"minecraft:movement": {"value": 0.0},"minecraft:behavior.float": {"priority": 0},
 			"minecraft:behavior.trade_with_player": {"priority": 1},
 			"minecraft:economy_trade_table": {"display_name": "Rodgér","table": "trading/economy_trades/poke_shopkeeper.json","new_screen": true,
 			"hero_demand_discount": 0,

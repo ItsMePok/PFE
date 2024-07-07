@@ -7,6 +7,11 @@
         },
         "entries": [
             {
+              "type": "item",
+              "name": "poke:cassette_mc_disc_5",
+              "weight": 1
+            },
+            {
                 "type": "item",
                 "name": "poke:copper_token",
                 "weight": 8,

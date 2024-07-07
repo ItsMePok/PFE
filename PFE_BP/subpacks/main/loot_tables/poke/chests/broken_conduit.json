@@ -1,0 +1,99 @@
+{
+	"pools": [
+		{
+			"rolls": {
+				"min": 1,
+				"max": 1
+			},
+			"entries": [
+				{
+					"type": "item",
+					"name": "poke:cassette_dragonfish",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "poke:cassette_dreiton",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "poke:cassette_shuniji",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "poke:cassette_axolotl",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "poke:cassette_mc_disc_relic",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "poke:copper_token",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "minecraft:quartz",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "minecraft:prismarine_shard",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "minecraft:prismarine_crystals",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "minecraft:nautilus_shell",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "poke:iron_token",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "poke:plastic",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "poke:crab_pal",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_lore",
+							"lore": [
+								"§eOffhand Cosmetic"
+							]
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "poke:boss_event_bounty",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_lore",
+							"lore": [
+								"Starts a Boss Fight at a random Player",
+								"§r§eBounty LVL:"
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

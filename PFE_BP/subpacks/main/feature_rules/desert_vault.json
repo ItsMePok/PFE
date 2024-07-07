@@ -22,18 +22,18 @@
 		"distribution": {
 			"iterations": 1,
 			"x": {
-				"distribution": "uniform",
+				"distribution": "inverse_gaussian",
 				"extent": [
 					0,
-					475
+					1000
 				]
 			},
 			"y": "query.heightmap(v.worldx, v.worldz)", //Generates the feature on the highest block on the column
 			"z": {
-				"distribution": "uniform",
+				"distribution": "inverse_gaussian",
 				"extent": [
 					0,
-					475
+					1000
 				]
 			}
 		}

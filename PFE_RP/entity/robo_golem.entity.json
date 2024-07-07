@@ -36,8 +36,7 @@
 				"controller.render.default"
 			],
 			"spawn_egg": {
-				"base_color": "#545055",
-				"overlay_color": "#921e32"
+				"texture": "poke_furnace_golem"
 			}
 		}
 	}

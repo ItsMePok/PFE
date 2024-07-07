@@ -17,8 +17,7 @@
 			"render_controllers": ["controller.render.shopkeeper"],
 			"scripts": {"animate": ["idle","move_c","general_c"]},
 			"spawn_egg": {
-				"base_color": "#b37b62",
-				"overlay_color": "#ad7d37"
+				"texture": "poke_spawn_quest_trader"
 			},
 			"enable_attachables": true,
 			"hide_armor": false

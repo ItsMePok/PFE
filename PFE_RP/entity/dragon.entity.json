@@ -26,8 +26,7 @@
 				]
 			},
 			"spawn_egg": {
-				"base_color": "#6642c9",
-				"overlay_color": "#7b608d"
+				"texture": "poke_sparky_egg"
 			}
 		}
 	}

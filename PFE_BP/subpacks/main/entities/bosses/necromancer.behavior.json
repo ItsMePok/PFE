@@ -3,7 +3,7 @@
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:necromancer",
-			"is_spawnable": false,
+			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false
 		},
@@ -221,7 +221,7 @@
 				"max": 64
 			},
 			"minecraft:behavior.hurt_by_target": {
-				"priority": 3
+				"priority": 1
 			},
 			"minecraft:default_look_angle": {
 				"value": 0
@@ -262,7 +262,7 @@
 				}
 			},
 			"minecraft:behavior.nearest_attackable_target": {
-				"priority": 1,
+				"priority": 2,
 				"within_radius": 40,
 				"must_see_forget_duration": 17,
 				"entity_types": [

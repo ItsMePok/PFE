@@ -1,29 +1,22 @@
 {
 	"format_version": "1.10.0",
 	"animation_controllers": {
-		"controller.animation.listener": {
+		"controller.animation.poke.listener": {
 			"initial_state": "idle",
 			"states": {
 				"idle": {
-					"animations": [
-						"idle"
-					],
+					"animations": ["idle","look_at_target"],
 					"transitions": [
-						{
-							"move": "query.ground_speed"
-						}
-					]
+						{"run": "q.ground_speed"}
+					],
+					"blend_transition": 0.25
 				},
-				"move": {
-					"animations": [
-						"move"
-					],
+				"run": {
+					"animations": ["run","look_at_target"],
 					"transitions": [
-						{
-							"idle": "!query.ground_speed"
-						}
+						{"idle": "!q.ground_speed"}
 					],
-					"blend_transition": 1.25
+					"blend_transition": 0.15
 				}
 			}
 		}

@@ -8,7 +8,10 @@
 			}
 		},
 		"components": {
-			"minecraft:icon":"poke_molten_slimeball"
+			"minecraft:icon":"poke_molten_slimeball",
+			"minecraft:fuel":{
+				"duration": 4000
+			}
 		}
 	}
 }

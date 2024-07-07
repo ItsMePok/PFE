@@ -669,7 +669,7 @@ class PFEWindzooka {
         }
         data.source.runCommand(''+id)
         cooldownc.startCooldown(data.source)
-        if (data.source.getGameMode() == 'creative') return;
+        //if (data.source.getGameMode() == 'creative') return;
         const newItem = damage_item(data.itemStack)
         data.source.getComponent(EntityComponentTypes.Equippable).setEquipment(EquipmentSlot.Mainhand, newItem)
         return;
@@ -677,11 +677,12 @@ class PFEWindzooka {
 }
 class PFEOnUse {
     onUse(data){
-        const id = data.itemStack.getTags()
+        //requires item components: use_modifiers || cooldown || durability (with a max of 100 damage chance) 
+        const id = data.itemStack.getTags() //Command is in the tag of the item without the '/'
         const cooldownc=data.itemStack.getComponent('minecraft:cooldown')
         data.source.runCommand(''+id)
         cooldownc.startCooldown(data.source)
-        if (data.source.getGameMode() == 'creative') return;
+        //if (data.source.getGameMode() == 'creative') return; // <-- prevedted items from being held down to continue using 
         const newItem = damage_item(data.itemStack)
         data.source.getComponent(EntityComponentTypes.Equippable).setEquipment(EquipmentSlot.Mainhand, newItem)
         return;
@@ -700,10 +701,31 @@ class PFEUpgrader {
         return;
     }
 }
+class PFEBlockPlacer{
+    onTick(data) {
+        return;
+        var weather = data.block.permutation.getState('pfe:weather')
+        if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
+            if (data.dimension.getWeather() == 'Clear' && weather != 0){
+                data.block.setPermutation(data.block.permutation.withState('pfe:weather',0))
+                return;
+            }
+            if (data.dimension.getWeather() != 'Thunder' && data.dimension.getWeather() == 'Rain' && weather != 1){
+            data.block.setPermutation(data.block.permutation.withState('pfe:weather',1))
+            return;
+            }
+            if (data.dimension.getWeather() == 'Thunder' && weather != 2){
+                data.block.setPermutation(data.block.permutation.withState('pfe:weather',2))
+                return;
+            }
+            return;
+        }
+    }
+}
 //Tree Capitator (not too sure what im doing :( )
 /*class PFETreeCap {
     onMineBlock(data){
-        const clogs = ["minecraft:acacia_log","minecraft:birch_log","minecraft:cherry_log","minecraft:dark_oak_log","minecraft:jungle_log","minecraft:mangrove_log","minecraft:oak_log","minecraft:spruce_log"]
+        const clogs = ["minecraft:acacia_wood","minecraft:birch_wood","minecraft:cherry_wood","minecraft:dark_oak_wood","minecraft:jungle_wood","minecraft:mangrove_wood","minecraft:oak_wood","minecraft:spruce_wood""minecraft:acacia_log","minecraft:birch_log","minecraft:cherry_log","minecraft:dark_oak_log","minecraft:jungle_log","minecraft:mangrove_log","minecraft:oak_log","minecraft:spruce_log"]
         console.warn('mined_block')
         const mined_block = data.minedBlockPermutation.type.id
         console.warn(data.minedBlockPermutation.type.id)
@@ -748,7 +770,7 @@ class PFEUpgrader {
     }
 }*/
 //from bedrock add-ons discord. was slightly modified to better fit the item(s) that would be using it
-const clogs = ["minecraft:acacia_log","minecraft:birch_log","minecraft:cherry_log","minecraft:dark_oak_log","minecraft:jungle_log","minecraft:mangrove_log","minecraft:oak_log","minecraft:spruce_log"]
+const clogs = ["minecraft:acacia_wood","minecraft:birch_wood","minecraft:cherry_wood","minecraft:dark_oak_wood","minecraft:jungle_wood","minecraft:mangrove_wood","minecraft:oak_wood","minecraft:spruce_wood","minecraft:acacia_log","minecraft:birch_log","minecraft:cherry_log","minecraft:dark_oak_log","minecraft:jungle_log","minecraft:mangrove_log","minecraft:oak_log","minecraft:spruce_log"]
 world.beforeEvents.playerBreakBlock.subscribe(e => {
     if (e.itemStack == undefined) return
     if(e.itemStack.typeId != 'poke:nebula_logger') return
@@ -766,7 +788,7 @@ world.beforeEvents.playerBreakBlock.subscribe(e => {
             checked.add(key);
 
             let currentBlock = dimension.getBlock(location);
-            if (currentBlock && currentBlock.hasTag("wood")) {
+            if (currentBlock && clogs.includes(currentBlock.typeId)) {
                 system.run(() => {
                     dimension.runCommand(`setblock ${location.x} ${location.y} ${location.z} air destroy`);
                 });
@@ -871,6 +893,9 @@ world.beforeEvents.worldInitialize.subscribe(event => {
     );
     event.blockTypeRegistry.registerCustomComponent(
         "poke:cc_slab_loot", new PFESlabLoot()
+    );
+    event.blockTypeRegistry.registerCustomComponent(
+        "poke:cc_block_placer", new PFEBlockPlacer()
     );/*
     event.itemComponentRegistry.registerCustomComponent(
         "poke:cc_tree_cap", new PFETreeCap()

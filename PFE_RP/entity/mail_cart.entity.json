@@ -28,8 +28,7 @@
 		  "controller.render.minecart"
 		],
 		"spawn_egg": {
-			"base_color": "#5d5d5d",
-			"overlay_color": "#98e2d6"
+				"texture": "poke_mail_cart"
 		}
 	  }
 	}

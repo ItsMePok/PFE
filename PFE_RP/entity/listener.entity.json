@@ -1,5 +1,5 @@
 {
-	"format_version": "1.8.0",
+	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
 			"identifier": "poke:listener",
@@ -10,25 +10,31 @@
 				"default": "entity_emissive"
 			},
 			"geometry": {
-				"default": "geometry.listener"
+				"default": "geometry.poke.listener"
 			},
 			"render_controllers": [
 				"controller.render.default"
 			],
 			"spawn_egg": {
-				"base_color": "#4F320E",
-				"overlay_color": "#3C453C"
+				"texture": "poke_spawn_listener"
 			},
 			"animations": {
-				"idle": "animation.listener.idle",
+				"controller": "controller.animation.poke.listener",
 				"look_at_target": "animation.common.look_at_target",
-				"move": "animation.listener.walk"
+				"idle": "animation.poke.listener.idle",
+				"walk": "animation.poke.listener.walk",
+				"run":"animation.poke.listener.run",
+				"jump":"animation.poke.listener.jump",
+				"melee":"animation.poke.listener.melee",
+				"hurt":"animation.poke.listener.hurt",
+				"ranged":"animation.poke.listener.ranged",
+				"twitch":"animation.poke.listener.twitch"
 			},
-			"animation_controllers": [
-				{
-					"listener": "controller.animation.listener"
-				}
-			]
+			"scripts": {
+				"animate": [
+					"controller"
+				]
+			}
 		}
 	}
 }

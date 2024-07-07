@@ -4,7 +4,8 @@
     "description": {
       "identifier": "poke:empty_cassette",
       "menu_category": {
-        "category": "items"
+        "category": "items",
+        "group":"itemGroup.name.record"
       }
     },
     "components": {

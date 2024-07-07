@@ -4,7 +4,8 @@
     "description": {
       "identifier": "poke:cassette_endless",
       "menu_category": {
-        "category": "equipment"
+        "category": "items",
+        "group":"itemGroup.name.record"
       }
     },
     "components": {

@@ -9,7 +9,28 @@
 			"animations": {
 				"death":"controller.animation.poke.mail_cart.death"
 			},"scripts": {"animate": ["death"]},
-			"runtime_identifier": "minecraft:minecart"
+			"runtime_identifier": "minecraft:chest_minecart"
+		},
+		"component_groups": {
+			"despawn":{
+				"minecraft:instant_despawn": {
+					"remove_child_entities": false
+				}
+			}
+		},
+		"events": {
+			"poke:death":{
+				"add": {
+					"component_groups": [
+						"despawn"
+					]
+				},
+				"queue_command": {
+					"command":[
+						"structure load \"poke:mail_cart\" ~~~"
+					]
+				}
+			}
 		},
 		"components": {
 			"minecraft:physics": {},
@@ -31,6 +52,10 @@
 			},
 			"minecraft:loot": {
 				"table": "loot_tables/poke/entites/mail_cart.json"
+			},
+			"minecraft:on_hurt":{
+				"target": "self",
+				"event": "poke:death"
 			},
 			"minecraft:inventory": {
 				"container_type": "minecart_chest",

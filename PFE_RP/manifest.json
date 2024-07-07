@@ -1,9 +1,9 @@
 {
 	"format_version": 2,
 	"header": {
-		"name": "§ev1.2.0.7 §uPFE §aRP",
+		"name": "§ev1.2.0.8 §uPFE §aRP",
 		"description": "pack.description",
-		"uuid": "d1dd6fd6-3139-4fb9-90bb-b8b0e225fc31",
+		"uuid": "096d5f29-d932-4806-867b-36ac1592b141",
 		"version": [1, 0, 0],
 		"min_engine_version": [1, 21, 0]
 	},
@@ -25,7 +25,7 @@
 	],
 	"dependencies": [
 		{
-			"uuid": "d4a70d33-f22b-43ad-9850-044d1552e14f",
+			"uuid": "06893fb0-d844-48ea-8584-372e1601f8e5",
 			"version": [1, 0, 0]
 		}
 	]

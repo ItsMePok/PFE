@@ -2,15 +2,46 @@ Anyone is allowed to view/learn from the code of PFE
 if you have any questions about addons you can ask on discord (username: itsmepok)
 
 Anything listed below has been used at some point to develop PFE
+============================
+Things made by o2god for PFE:
+-----
+Mobs:
+Raccoon
+Necromancer
+Mushroom Buddy 
+Cobalt Golem
+Dragon
+Rat
+Logger
+-----
+Armor:
+Cobalt Robe
+-----
+Textures:
+Scythe Textures,
+-----
+Cosmetics:
+Maxwell
+Mr. Duck
+Dapper Fit
+Little Dapper Fit
+Big Dapper Fit
+Apollo the Snake
+Caged Soul
+End Crystal Hat
+Sword Hat
+Pickaxe Hat
+Poppy Hat
+Horns
+Halo
+Ghost
+Fishbowl
+Ferret
+Crab Pal
+============================
 
-Raccoon, Necromancer, Mushroom Buddy, 
-Cobalt Golem, Dragon, Cobalt Robe,
-Maxwell, Mr. Duck, Dapper Fit, 
-Little Dapper Fit, Big Dapper Fit, Apollo the Snake, 
-Caged Soul, Scythe Textures, Rat, End Crystal Hat,
-Sword Hat, Pickaxe Hat, Poppy Hat, Horns, Halo, Ghost,
-Fishbowl, Ferret, Crab Pal
-Were made by O2God for PFE
+PFE Wiki
+https://github.com/ItsMePok/PFE/wiki
 
 Code for Slabs & Tool Durability were copied from the bedrock wiki
 https://wiki.bedrock.dev/
@@ -70,7 +101,7 @@ https://mcpedl.com/pfe
 ModBay
 https://modbay.org/mods/372-pokes-fantasy-expansion.html
 
-GitHub Repo
+GitHub Repository
 https://github.com/ItsMePok/PFE
 
 Wikis & Info
@@ -79,8 +110,9 @@ https://bedrock.dev/
 https://github.com/Mojang/bedrock-samples
 https://jaylydev.github.io/scriptapi-docs/
 https://learn.microsoft.com/en-us/minecraft/creator/scriptapi/
+https://github.com/ItsMePok/PFE/wiki
 
-Programs I have used but no longer using
+Programs/Sites I have used but no longer using
 
 Bridge
 https://bridge-core.app/
@@ -93,3 +125,7 @@ https://mcreator.net/
 
 MediaFire (for download option)
 https://www.mediafire.com/
+
+(Im putting theses here but i don't feel good about using them in the past)
+Linkvertize
+Lootlabs

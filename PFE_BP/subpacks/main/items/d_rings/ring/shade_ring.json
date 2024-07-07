@@ -8,6 +8,14 @@
 			}
 		},
 		"components": {
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": ["poke:repair_core"],
+						"repair_amount": "query.max_durability"
+					}
+				]
+			},
 			"minecraft:hover_text_color":{"value":"green"},
 			"minecraft:icon":"poke_shade_ring",
 			"minecraft:cooldown": {

@@ -33,8 +33,7 @@
 				"controller.render.token_trader"
 			],
 			"spawn_egg": {
-				"base_color": "#006D7A",
-				"overlay_color": "#EFEF4A"
+				"texture": "poke_spawn_token_trader"
 			},
 			"enable_attachables": true,
 			"hide_armor": false
