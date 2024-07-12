@@ -4,6 +4,12 @@
 	"padding": 2,
 	"num_mip_levels": 2,
 	"texture_data": {
+		"poke_duster_side_alt":{"textures":[{"path": "textures/blocks/automation/poke_duster_side_alt","overlay_color": "#610310"},{"path": "textures/blocks/automation/poke_duster_side_alt","overlay_color": "#ce0c0c"}]},
+		"poke_duster_side":{"textures":[{"path": "textures/blocks/automation/poke_duster_side","overlay_color": "#610310"},{"path": "textures/blocks/automation/poke_duster_side","overlay_color": "#ce0c0c"}]},
+		"poke_dirter_top":{"textures":[{"path": "textures/blocks/automation/poke_dirter_top","overlay_color": "#610310"},{"path": "textures/blocks/automation/poke_dirter_top","overlay_color": "#ce0c0c"}]},
+		"poke_dirter_bottom":{"textures":[{"path": "textures/blocks/automation/poke_dirter_bottom","overlay_color": "#610310"},{"path": "textures/blocks/automation/poke_dirter_bottom","overlay_color": "#ce0c0c"}]},
+		"poke_dirter_side_alt":{"textures":[{"path": "textures/blocks/automation/poke_dirter_side_alt","overlay_color": "#610310"},{"path": "textures/blocks/automation/poke_dirter_side_alt","overlay_color": "#ce0c0c"}]},
+		"poke_dirter_side":{"textures":[{"path": "textures/blocks/automation/poke_dirter_side","overlay_color": "#610310"},{"path": "textures/blocks/automation/poke_dirter_side","overlay_color": "#ce0c0c"}]},
 		"poke_cobble_gen_top":{"textures":[{"path": "textures/blocks/automation/poke_cobble_gen_top","overlay_color": "#610310"},{"path": "textures/blocks/automation/poke_cobble_gen_top","overlay_color": "#ce0c0c"}]},
 		"poke_cobble_gen_bottom":{"textures":[{"path": "textures/blocks/automation/poke_block_breaker_bottom","overlay_color": "#FFFFFF"},{"path": "textures/blocks/automation/poke_block_breaker_bottom","overlay_color": "#FFFFFF"}]},
 		"poke_cobble_gen_flip":{"textures":[{"path": "textures/blocks/automation/poke_cobble_gen_flip","overlay_color": "#610310"},{"path": "textures/blocks/automation/poke_cobble_gen_flip","overlay_color": "#ce0c0c"}]},

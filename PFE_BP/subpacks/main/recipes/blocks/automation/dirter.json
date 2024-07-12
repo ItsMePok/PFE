@@ -1,29 +1,28 @@
 {
-	"format_version": "1.20.10",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke:dirter"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
+	"format_version":"1.20.10",
+	"minecraft:recipe_shaped":{
+		"description":{"identifier":"poke:dirter"},
+		"tags":["crafting_table"],
+		"pattern":[
 			"CPC",
 			"BGD",
 			"CPC"
 		],
-		"unlock": [
+		"unlock":[
+			{"item":"poke:cobblestone_gen"},
 			{"item":"poke:cobalt_ingot"},
+			{"item":"planks"},
 			{"item":"poke:gps_module"},
-			{"item":"poke:cobblestone_gen"}
+			{"item":"cobblestone"},
+			{"item":"dirt"}
 		],
-		"key": {
+		"key":{
 			"C":{"item":"poke:cobalt_ingot"},
 			"P":{"item":"planks"},
 			"G":{"item":"poke:gps_module"},
 			"B":{"item":"cobblestone"},
 			"D":{"item":"dirt"}
 		},
-		"result": [{"item": "poke:dirter"}]
+		"result":{"item":"poke:dirter_up"}
 	}
 }

@@ -19,6 +19,7 @@ system.runInterval(() => {
 // Tool Durability gotten from https://wiki.bedrock.dev/items/tool-durability.html
 function damage_item(item) {
     // Get durability
+    if (!item.hasComponent("durability")) return item;
     const durabilityComponent = item.getComponent("durability")
     var unbreaking = 0
     // Get unbreaking level
@@ -38,6 +39,35 @@ function damage_item(item) {
     durabilityComponent.damage += Number(Math.round(Math.random() * 100) <= durabilityComponent.getDamageChance(unbreaking))
     return item
 }
+/*
+Makes unbreaking work but breaks the Hold to continue using :/
+
+function damage_item(item) {
+    // check if the item does not have a durability component to avoid deleting
+    if (!item.hasComponent("durability")) return item;
+    // Get durability
+    const durabilityComponent = item.getComponent("durability")
+    var unbreakingl = 0
+    // Get unbreaking level
+    if (item.hasComponent(ItemComponentTypes.Enchantable)) {
+        if (item.getComponent(ItemComponentTypes.Enchantable).hasEnchantment("unbreaking")){
+            unbreakingl = item.getComponent(ItemComponentTypes.Enchantable).getEnchantment("unbreaking").level
+        }
+    }
+    //console.warn('---')
+    //console.warn(unbreakingl +' --- '+ unbreakingl.level)
+    //console.warn (durabilityComponent.getDamageChance(unbreakingl))
+    //console.warn(Number(Math.round(Math.random() * 100) <= durabilityComponent.getDamageChance(unbreakingl)))
+    //console.warn('---')
+
+    // Apply damage
+    durabilityComponent.damage += Number(Math.round(Math.random() * 100) <= durabilityComponent.getDamageChance(unbreakingl))
+    if (durabilityComponent.damage == durabilityComponent.maxDurability) {
+        return item
+    }
+    return item
+}
+*/
 // Add your item IDs into this array
 const my_items = ["poke:medic_haxel","poke:cobalt_crossbow","poke:astral_crossbow","poke:godly_crossbow","poke:demonic_haxel","poke:holy_battleaxe","poke:godly_battleaxe","poke:galaxy_battleaxe","poke:astral_battleaxe","poke:amethyst_battleaxe","poke:netherite_battleaxe","poke:diamond_battleaxe","poke:gold_battleaxe","poke:void_battleaxe","poke:death_battleaxe","poke:demonic_battleaxe","poke:hellish_battleaxe","poke:emerald_battleaxe","poke:iron_battleaxe","poke:onyx_battleaxe","poke:shade_battleaxe","poke:cobalt_battleaxe","poke:stone_battleaxe","poke:wood_battleaxe","poke:radium_battleaxe","poke:hellish_scythe","poke:ember_scythe","poke:emerald_scythe","poke:nebula_battleaxe","poke:diamond_scythe","poke:shade_scythe","poke:nebula_scythe","poke:godly_scythe","poke:galactic_scythe","poke:radium_scythe","poke:amethyst_scythe","poke:onyx_scythe","poke:gold_scythe","poke:cobalt_scythe","poke:netherite_scythe","poke:void_scythe","poke:holy_scythe","poke:iron_scythe","poke:demonic_slasher","poke:death_scythe","poke:godly_haxel","poke:radium_haxel","poke:cobalt_haxel","poke:shade_haxel","poke:wooden_haxel","poke:stone_haxel","poke:iron_haxel","poke:gold_haxel","poke:emerald_haxel","poke:diamond_haxel","poke:netherite_haxel","poke:hellish_haxel","poke:holy_haxel","poke:amethyst_haxel","poke:haxel","poke:swift_pickaxe","poke:snow_shovel","poke:nebula_hoe","poke:cobalt_sword","poke:astral_sword","poke:onyx_sword","poke:demonic_sword","poke:void_sword","poke:pocket_knife","poke:amethyst_sword","poke:circuit_sword","poke:hellish_blade","poke:nebula_sword","poke:galaxy_sword","poke:godly_sword","poke:holy_sword","poke:shade_sword","poke:radium_sword",]
 world.afterEvents.playerBreakBlock.subscribe(event => {
@@ -186,6 +216,9 @@ class PFETrapdoor {
 //Fortune enchant for ores
 class PFEFortune {
     onPlayerDestroy(data) {
+        if (!data.player.getComponent(EntityComponentTypes.Equippable).getEquipment('Mainhand').getComponent(ItemComponentTypes.Enchantable).hasEnchantment("fortune")) return;
+        var rng = Math.round(Math.random())
+        console.warn(rng)
         var block_location_x = data.block.x
         var block_location_y = data.block.y
         var block_location_z = data.block.z
@@ -197,15 +230,18 @@ class PFEFortune {
                 if (fortuneLevel == 3) {
                     data.block.dimension.runCommandAsync('execute positioned '+ block_location_x + " "+ block_location_y + " "+ block_location_z +' run loot spawn ~~~ loot \"poke/blocks/'+ blockid +'\"')
                     data.block.dimension.runCommandAsync('execute positioned '+ block_location_x + " "+ block_location_y + " "+ block_location_z +' run loot spawn ~~~ loot \"poke/blocks/'+ blockid +'\"')
+                    if (rng == 0) return;
                     data.block.dimension.runCommandAsync('execute positioned '+ block_location_x + " "+ block_location_y + " "+ block_location_z +' run loot spawn ~~~ loot \"poke/blocks/'+ blockid +'\"')
                     return;
                 }
                 if (fortuneLevel == 2) {
                     data.block.dimension.runCommandAsync('execute positioned '+ block_location_x + " "+ block_location_y + " "+ block_location_z +' run loot spawn ~~~ loot \"poke/blocks/'+ blockid +'\"')
+                    if (rng == 0) return;
                     data.block.dimension.runCommandAsync('execute positioned '+ block_location_x + " "+ block_location_y + " "+ block_location_z +' run loot spawn ~~~ loot \"poke/blocks/'+ blockid +'\"')
                     return;
                 }
                 if (fortuneLevel == 1) {
+                    if (rng == 0) return;
                     data.block.dimension.runCommandAsync('execute positioned '+ block_location_x + " "+ block_location_y + " "+ block_location_z +' run loot spawn ~~~ loot \"poke/blocks/'+ blockid +'\"')
                     return;
                 }
@@ -382,9 +418,47 @@ class PFEDirter{
     onTick(data) {
         if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
             data.block.setPermutation(data.block.permutation.withState('pfe:active', 1))
-            if (data.block.below().typeId == 'minecraft:cobblestone'){
-                data.block.below().setType('minecraft:dirt')
-                return;
+            if (data.block.typeId == 'poke:dirter_east') {  
+                if (data.block.east().typeId == 'minecraft:cobblestone'){
+                    data.block.east().setType('minecraft:dirt')
+                    return;
+                }
+            }
+            if (data.block.typeId == 'poke:dirter_west') {  
+                if (data.block.west().typeId == 'minecraft:cobblestone'){
+                    data.block.west().setType('minecraft:dirt')
+                    return;
+                }
+            }
+            if (data.block.typeId == 'poke:dirter_south') {  
+                if (data.block.south().typeId == 'minecraft:cobblestone'){
+                    data.block.south().setType('minecraft:dirt')
+                    return;
+                }
+            }
+            if (data.block.typeId == 'poke:dirter_north') {  
+                if (data.block.north().typeId == 'minecraft:cobblestone'){
+                    data.block.north().setType('minecraft:dirt')
+                    return;
+                }
+            }
+            if (data.block.typeId == 'poke:dirter_up') {  
+                if (data.block.above().typeId == 'minecraft:cobblestone'){
+                    data.block.above().setType('minecraft:dirt')
+                    return;
+                }
+            }
+            if (data.block.typeId == 'poke:dirter_down') {  
+                if (data.block.below().typeId == 'minecraft:cobblestone'){
+                    data.block.below().setType('minecraft:dirt')
+                    return;
+                }
+            }
+            if (data.block.typeId == 'poke:dirter') {  
+                if (data.block.below().typeId == 'minecraft:cobblestone'){
+                    data.block.below().setType('minecraft:dirt')
+                    return;
+                }
             }
             return;
         }
@@ -400,13 +474,75 @@ class PFEDuster {
     onTick(data) {
         if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
             data.block.setPermutation(data.block.permutation.withState('pfe:active', 1))
-            if (data.block.below().typeId == 'minecraft:dirt') {
-                data.block.below().setType('minecraft:sand')
-                return;
+            if (data.block.typeId == 'poke:duster_east') {  
+                if (data.block.east().typeId == 'minecraft:dirt') {
+                    data.block.east().setType('minecraft:sand')
+                    return;
+                }
+                if (data.block.east().typeId == 'minecraft:cobblestone') {
+                    data.block.east().setType('minecraft:gravel')
+                    return;
+                }
             }
-            if (data.block.below().typeId == 'minecraft:cobblestone') {
-                data.block.below().setType('minecraft:gravel')
-                return;
+            if (data.block.typeId == 'poke:duster_west') {  
+                if (data.block.west().typeId == 'minecraft:dirt') {
+                    data.block.west().setType('minecraft:sand')
+                    return;
+                }
+                if (data.block.west().typeId == 'minecraft:cobblestone') {
+                    data.block.west().setType('minecraft:gravel')
+                    return;
+                }
+            }
+            if (data.block.typeId == 'poke:duster_south') {  
+                if (data.block.south().typeId == 'minecraft:dirt') {
+                    data.block.south().setType('minecraft:sand')
+                    return;
+                }
+                if (data.block.south().typeId == 'minecraft:cobblestone') {
+                    data.block.south().setType('minecraft:gravel')
+                    return;
+                }
+            }
+            if (data.block.typeId == 'poke:duster_north') {  
+                if (data.block.north().typeId == 'minecraft:dirt') {
+                    data.block.north().setType('minecraft:sand')
+                    return;
+                }
+                if (data.block.north().typeId == 'minecraft:cobblestone') {
+                    data.block.north().setType('minecraft:gravel')
+                    return;
+                }
+            }
+            if (data.block.typeId == 'poke:duster_up') {  
+                if (data.block.above().typeId == 'minecraft:dirt') {
+                    data.block.above().setType('minecraft:sand')
+                    return;
+                }
+                if (data.block.above().typeId == 'minecraft:cobblestone') {
+                    data.block.above().setType('minecraft:gravel')
+                    return;
+                }
+            }
+            if (data.block.typeId == 'poke:duster_down') {  
+                if (data.block.below().typeId == 'minecraft:dirt') {
+                    data.block.below().setType('minecraft:sand')
+                    return;
+                }
+                if (data.block.below().typeId == 'minecraft:cobblestone') {
+                    data.block.below().setType('minecraft:gravel')
+                    return;
+                }
+            }
+            if (data.block.typeId == 'poke:duster') {  
+                if (data.block.below().typeId == 'minecraft:dirt') {
+                    data.block.below().setType('minecraft:sand')
+                    return;
+                }
+                if (data.block.below().typeId == 'minecraft:cobblestone') {
+                    data.block.below().setType('minecraft:gravel')
+                    return;
+                }
             }
             return;
         }
@@ -457,10 +593,16 @@ class PFEBulbs{
 //Calibrate Blocks
 class PFECalibrate {
     onPlayerInteract(data) {
+        const updatebid = ['poke:duster','poke:dirter']
         const bid = data.block.typeId
         const blockid = bid.substring(0,bid.lastIndexOf("_"))
         const blockface = data.face
-        data.dimension.playSound('poke.calibrate', data.block.location)        
+        data.dimension.playSound('poke.calibrate', data.block.location)
+        if(updatebid.includes(bid)){
+            //Converts old Dirter / Duster into the Calibrated ones
+            data.block.setType(bid+'_up')
+            return;
+        }
         if (blockface == 'East') {
             data.block.setType(blockid+'_east')
             return;
@@ -672,12 +814,19 @@ class PFEWindzooka {
         //if (data.source.getGameMode() == 'creative') return;
         const newItem = damage_item(data.itemStack)
         data.source.getComponent(EntityComponentTypes.Equippable).setEquipment(EquipmentSlot.Mainhand, newItem)
+        if (!newItem) {
+            data.source.playSound("random.break")
+        }
         return;
     }
 }
+/*
+Baisc Item Use
+requires item components: use_modifiers || cooldown || 
+if using durability it requires a max of 100 damage chance)
+*/
 class PFEOnUse {
     onUse(data){
-        //requires item components: use_modifiers || cooldown || durability (with a max of 100 damage chance) 
         const id = data.itemStack.getTags() //Command is in the tag of the item without the '/'
         const cooldownc=data.itemStack.getComponent('minecraft:cooldown')
         data.source.runCommand(''+id)
@@ -685,6 +834,9 @@ class PFEOnUse {
         //if (data.source.getGameMode() == 'creative') return; // <-- prevedted items from being held down to continue using 
         const newItem = damage_item(data.itemStack)
         data.source.getComponent(EntityComponentTypes.Equippable).setEquipment(EquipmentSlot.Mainhand, newItem)
+        if (!newItem) {
+            data.source.playSound("random.break")
+        }
         return;
     }
 }
@@ -698,6 +850,9 @@ class PFEUpgrader {
         if (data.source.getGameMode() == 'creative') return;
         const newItem = damage_item(data.itemStack)
         data.source.getComponent(EntityComponentTypes.Equippable).setEquipment(EquipmentSlot.Mainhand, newItem)
+        if (!newItem) {
+            data.source.playSound("random.break")
+        }
         return;
     }
 }

@@ -1,0 +1,91 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:honey_crossbow",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:hover_text_color":"material_gold",
+			"minecraft:icon":"poke_honey_crossbow",
+			"minecraft:use_modifiers": {
+				"movement_modifier": 0.33,
+				"use_duration": 1.25
+			},
+			"minecraft:can_destroy_in_creative": {
+				"value": false
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:shooter": {
+				"ammunition": [
+					{
+						"item": "poke:galaxy_arrow",
+						"search_inventory": true,
+						"use_in_creative": true,
+						"use_offhand": true
+					},
+					{
+						"item": "poke:void_arrow",
+						"search_inventory": true,
+						"use_in_creative": true,
+						"use_offhand": true
+					},
+					{
+						"item": "poke:holy_arrow",
+						"search_inventory": true,
+						"use_in_creative": true,
+						"use_offhand": true
+					},
+					{
+						"item": "poke:hellish_arrow",
+						"search_inventory": true,
+						"use_in_creative": true,
+						"use_offhand": true
+					},
+					{
+						"item": "poke:volt_arrow",
+						"search_inventory": true,
+						"use_in_creative": true,
+						"use_offhand": true
+					},
+					{
+						"item": "arrow",
+						"search_inventory": true,
+						"use_in_creative": true,
+						"use_offhand": true
+					}
+				],
+				"charge_on_draw": true,
+				"max_draw_duration": 1.25
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": ["poke:repair_core"],
+						"repair_amount": "query.max_durability"
+					},
+					{
+						"items": ["honeycomb"],
+						"repair_amount": "query.max_durability*0.25"
+					}
+				]
+			}, 
+			"minecraft:tags": {"tags": ["minecraft:is_crossbow"]},
+			"minecraft:hand_equipped": true,
+			"minecraft:use_animation":{"value": "crossbow"},
+			"minecraft:enchantable": {
+				"value": 75,
+				"slot": "flintsteel"
+			},
+			"minecraft:durability": {
+				"damage_chance": {
+					"min": 50,
+					"max": 100
+				},
+				"max_durability": 500
+			}
+		}
+	}
+}

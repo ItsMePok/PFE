@@ -156,7 +156,7 @@
 				},
 				{
 					"type": "item",
-					"name": "poke:dirter",
+					"name": "poke:dirter_up",
 					"weight": 2
 				},
 				{
@@ -166,7 +166,7 @@
 				},
 				{
 					"type": "item",
-					"name": "poke:duster",
+					"name": "poke:duster_up",
 					"weight": 2
 				},
 				{

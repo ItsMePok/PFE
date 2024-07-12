@@ -1,0 +1,27 @@
+{
+    "format_version":"1.20.10",
+    "minecraft:recipe_shaped":{
+        "description":{"identifier":"poke:armor_stand_unhider"},
+        "tags":["crafting_table"],
+        "pattern":[
+            " M ",
+            "EAE",
+            "PBP"
+        ],
+        "unlock":[
+            {"item":"poke:milk_bottle"},
+            {"item":"armor_stand"},
+            {"item":"poke:electric_component"},
+            {"item":"poke:plastic"},
+            {"item":"poke:red_button"}
+        ],
+        "key":{
+            "M":{"item":"poke:milk_bottle"},
+            "E":{"item":"poke:electric_component"},
+            "P":{"item":"poke:plastic"},
+            "A":{"item":"armor_stand"},
+            "B":{"item":"poke:red_button"}
+        },
+        "result":{"item":"poke:armor_stand_unhider"}
+    }
+}

@@ -9,10 +9,10 @@
 		}
 	},
 	"header": {
-		"name": "§ev1.2.0.8 §uPFE §cBP",
+		"name": "§bv1.2.1 §uPFE §cBP",
 		"description": "pack.description",
 		"min_engine_version": [1, 21, 0],
-		"uuid": "06893fb0-d844-48ea-8584-372e1601f8e5",
+		"uuid": "62f4e925-8582-4391-b07d-2996d59fc4c9",
 		"version": [1, 0, 0]
 	},
 	"modules": [
@@ -36,7 +36,7 @@
 			"version": "1.12.0-beta"
 		},
 		{
-			"uuid": "096d5f29-d932-4806-867b-36ac1592b141",
+			"uuid": "ca89d0a9-802a-4e34-97c8-2ab902f8095f",
 			"version": [1, 0, 0]
 		}
 	],

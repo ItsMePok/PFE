@@ -4,7 +4,7 @@
 		"description": {
 			"identifier": "poke:duster",
 			"menu_category": {
-				"category": "items"
+				"category": "none"
 			},
 			"states": {
 				"pfe:active":[0,1]
@@ -25,7 +25,8 @@
 			"minecraft:map_color": "#7a5a0f",
 			"minecraft:tick": {"interval_range":[10,10]},
 			"minecraft:custom_components":[
-				"poke:cc_duster"
+				"poke:cc_duster",
+				"poke:cc_calibrate"
 			]
 		}
 	}

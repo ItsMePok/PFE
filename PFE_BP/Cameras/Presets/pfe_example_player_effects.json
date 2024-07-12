@@ -1,0 +1,8 @@
+{//This exists just so i can get screenshots for keyart easier lol
+    "format_version": "1.19.50",
+    "minecraft:camera_preset": {
+      "identifier": "pfe:dev_screeshot_mode",
+      "inherit_from": "minecraft:free",
+      "player_effects": true
+    }
+}

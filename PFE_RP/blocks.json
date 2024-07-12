@@ -1,1029 +1,1178 @@
 {
-	"format_version": [1, 1, 0],
+	"format_version":[1, 1, 0],
 	"poke:block_placer":{"textures":"poke_block_breaker"},
-	"poke:honey_tiles_slab":{"textures":"poke_honey_tiles","sound": "coral"},
-	"poke:honey_tiles":{"textures":"poke_honey_tiles","sound": "coral"},
-	"poke:honey_trapdoor":{"sound": "coral"},
-	"poke:beeulb":{"textures":"poke_beeulb","sound": "coral"},
-	"poke:honey_bricks_slab":{"textures":"poke_honey_bricks","sound": "coral"},
-	"poke:honey_bricks":{"textures":"poke_honey_bricks","sound": "coral"},
-	"poke:chiseled_honey_bricks":{"textures":"poke_chiseled_honey_bricks","sound": "coral"},
-	"poke:barometer":{"textures":"poke_barometer","sound": "wood"},
-	"poke:magnet":{"textures":"poke_magnet","sound": "wood"},
-	"poke:duster":{"textures":"poke_duster","sound": "wood"},
-	"poke:dye_unmixer": {"sound": "metal","textures":"poke_dye_unmixer"},
-	"poke:pumpkin_crate": {
-		"textures": {
-			"up": "poke_pumpkin_crate",
-			"side": "poke_crate_side",
-			"down": "poke_crate_bottom"
+	"poke:honey_tiles_slab":{"textures":"poke_honey_tiles","sound":"coral"},
+	"poke:honey_tiles":{"textures":"poke_honey_tiles","sound":"coral"},
+	"poke:honey_trapdoor":{"sound":"coral"},
+	"poke:beeulb":{"textures":"poke_beeulb","sound":"coral"},
+	"poke:honey_bricks_slab":{"textures":"poke_honey_bricks","sound":"coral"},
+	"poke:honey_bricks":{"textures":"poke_honey_bricks","sound":"coral"},
+	"poke:chiseled_honey_bricks":{"textures":"poke_chiseled_honey_bricks","sound":"coral"},
+	"poke:barometer":{"textures":"poke_barometer","sound":"wood"},
+	"poke:magnet":{"textures":"poke_magnet","sound":"wood"},
+	"poke:duster":{
+		"textures":{
+			"down":"poke_dirter_bottom",
+			"up":"poke_dirter_top",
+			"north":"poke_dirter_side",
+			"east":"poke_dirter_side_alt",
+			"south":"poke_duster_side",
+			"west":"poke_duster_side_alt"
 		},
-		"sound": "wood"
+		"sound":"wood"
 	},
-	"poke:block_breaker_north": {
-		"sound": "copper",
+	"poke:duster_north":{
+		"sound":"wood",
 		"textures":{
-			"down": "poke_block_breaker_bottom",
-			"up": "poke_block_breaker_top",
-			"north": "poke_block_breaker_front",
-			"east": "poke_block_breaker_side",
-			"south": "poke_block_breaker_side",
-			"west": "poke_block_breaker_side"
-		}		
+			"down":"poke_duster_side",
+			"up":"poke_dirter_side",
+			"north":"poke_dirter_bottom",
+			"east":"poke_duster_side_alt",
+			"south":"poke_dirter_top",
+			"west":"poke_dirter_side_alt"
+		}
 	},
-	"poke:block_breaker_south": {
-		"sound": "copper",
+	"poke:duster_south":{
+		"sound":"wood",
 		"textures":{
-			"down": "poke_block_breaker_bottom",
-			"up": "poke_block_breaker_top",
-			"north": "poke_block_breaker_side",
-			"east": "poke_block_breaker_side",
-			"south": "poke_block_breaker_front",
-			"west": "poke_block_breaker_side"
+			"down":"poke_duster_side",
+			"up":"poke_dirter_side",
+			"north":"poke_dirter_top",
+			"east":"poke_dirter_side_alt",
+			"south":"poke_dirter_bottom",
+			"west":"poke_duster_side_alt"
+		}
+	},
+	"poke:duster_east":{
+		"sound":"wood",
+		"textures":{
+			"down":"poke_duster_side",
+			"up":"poke_dirter_side",
+			"north":"poke_dirter_side_alt",
+			"east":"poke_dirter_bottom",
+			"south":"poke_duster_side_alt",
+			"west":"poke_dirter_top"
+		}
+	},
+	"poke:duster_west":{
+		"sound":"wood",
+		"textures":{
+			"down":"poke_duster_side",
+			"up":"poke_dirter_side",
+			"north":"poke_duster_side_alt",
+			"east":"poke_dirter_top",
+			"south":"poke_dirter_side_alt",
+			"west":"poke_dirter_bottom"
+		}
+	},
+	"poke:duster_up":{
+		"sound":"wood",
+		"textures":{
+			"down":"poke_dirter_top",
+			"up":"poke_dirter_bottom",
+			"north":"poke_dirter_side",
+			"east":"poke_dirter_side_alt",
+			"south":"poke_duster_side",
+			"west":"poke_duster_side_alt"
 		}	
 	},
-	"poke:block_breaker_east": {
-		"sound": "copper",
+	"poke:duster_down":{
+		"sound":"wood",
 		"textures":{
-			"down": "poke_block_breaker_bottom",
-			"up": "poke_block_breaker_top",
-			"north": "poke_block_breaker_side",
-			"east": "poke_block_breaker_front",
-			"south": "poke_block_breaker_side",
-			"west": "poke_block_breaker_side"
+			"down":"poke_dirter_bottom",
+			"up":"poke_dirter_top",
+			"north":"poke_dirter_side",
+			"east":"poke_dirter_side_alt",
+			"south":"poke_duster_side",
+			"west":"poke_duster_side_alt"
+		}	
+	},
+	"poke:dye_unmixer":{"sound":"metal","textures":"poke_dye_unmixer"},
+	"poke:pumpkin_crate":{
+		"textures":{
+			"up":"poke_pumpkin_crate",
+			"side":"poke_crate_side",
+			"down":"poke_crate_bottom"
+		},
+		"sound":"wood"
+	},
+	"poke:block_breaker_north":{
+		"sound":"copper",
+		"textures":{
+			"down":"poke_block_breaker_bottom",
+			"up":"poke_block_breaker_top",
+			"north":"poke_block_breaker_front",
+			"east":"poke_block_breaker_side",
+			"south":"poke_block_breaker_side",
+			"west":"poke_block_breaker_side"
+		}		
+	},
+	"poke:block_breaker_south":{
+		"sound":"copper",
+		"textures":{
+			"down":"poke_block_breaker_bottom",
+			"up":"poke_block_breaker_top",
+			"north":"poke_block_breaker_side",
+			"east":"poke_block_breaker_side",
+			"south":"poke_block_breaker_front",
+			"west":"poke_block_breaker_side"
+		}	
+	},
+	"poke:block_breaker_east":{
+		"sound":"copper",
+		"textures":{
+			"down":"poke_block_breaker_bottom",
+			"up":"poke_block_breaker_top",
+			"north":"poke_block_breaker_side",
+			"east":"poke_block_breaker_front",
+			"south":"poke_block_breaker_side",
+			"west":"poke_block_breaker_side"
 		}
 	},
-	"poke:block_breaker_west": {
-		"sound": "copper",
+	"poke:block_breaker_west":{
+		"sound":"copper",
 		"textures":{
-			"down": "poke_block_breaker_bottom",
-			"up": "poke_block_breaker_top",
-			"north": "poke_block_breaker_side",
-			"east": "poke_block_breaker_side",
-			"south": "poke_block_breaker_side",
-			"west": "poke_block_breaker_front"
+			"down":"poke_block_breaker_bottom",
+			"up":"poke_block_breaker_top",
+			"north":"poke_block_breaker_side",
+			"east":"poke_block_breaker_side",
+			"south":"poke_block_breaker_side",
+			"west":"poke_block_breaker_front"
 		}
 	},
-	"poke:block_breaker_up": {
-		"sound": "copper",
+	"poke:block_breaker_up":{
+		"sound":"copper",
 		"textures":{
-			"down": "poke_block_breaker_side180",
-			"up": "poke_block_breaker_front",
-			"north": "poke_block_breaker_top",
-			"east": "poke_block_breaker_side90",
-			"south": "poke_block_breaker_bottom",
-			"west": "poke_block_breaker_side-90"
+			"down":"poke_block_breaker_side180",
+			"up":"poke_block_breaker_front",
+			"north":"poke_block_breaker_top",
+			"east":"poke_block_breaker_side90",
+			"south":"poke_block_breaker_bottom",
+			"west":"poke_block_breaker_side-90"
 		}
 	},
-	"poke:block_breaker_down": {
-		"sound": "copper",
+	"poke:block_breaker_down":{
+		"sound":"copper",
 		"textures":{
-			"down": "poke_block_breaker_front",
-			"up": "poke_block_breaker_side180",
-			"north": "poke_block_breaker_bottom",
-			"east": "poke_block_breaker_side-90",
-			"south": "poke_block_breaker_top",
-			"west": "poke_block_breaker_side90"
+			"down":"poke_block_breaker_front",
+			"up":"poke_block_breaker_side180",
+			"north":"poke_block_breaker_bottom",
+			"east":"poke_block_breaker_side-90",
+			"south":"poke_block_breaker_top",
+			"west":"poke_block_breaker_side90"
 		}
 	},
-	"poke:melon_crate": {
-		"textures": {
-			"up": "poke_melon_crate",
-			"side": "poke_crate_side",
-			"down": "poke_crate_bottom"
+	"poke:melon_crate":{
+		"textures":{
+			"up":"poke_melon_crate",
+			"side":"poke_crate_side",
+			"down":"poke_crate_bottom"
 		},
-		"sound": "wood"
+		"sound":"wood"
 	},
-	"poke:glow_berry_crate": {
-		"textures": {
-			"up": "poke_glow_berry_crate",
-			"side": "poke_crate_side",
-			"down": "poke_crate_bottom"
+	"poke:glow_berry_crate":{
+		"textures":{
+			"up":"poke_glow_berry_crate",
+			"side":"poke_crate_side",
+			"down":"poke_crate_bottom"
 		},
-		"sound": "wood"
+		"sound":"wood"
 	},
-	"poke:sweet_berry_crate": {
-		"textures": {
-			"up": "poke_sweet_berry_crate",
-			"side": "poke_crate_side",
-			"down": "poke_crate_bottom"
+	"poke:sweet_berry_crate":{
+		"textures":{
+			"up":"poke_sweet_berry_crate",
+			"side":"poke_crate_side",
+			"down":"poke_crate_bottom"
 		},
-		"sound": "wood"
+		"sound":"wood"
 	},
-	"poke:nether_wart_crate": {
-		"textures": {
-			"up": "poke_nether_wart_crate",
-			"side": "poke_crate_side",
-			"down": "poke_crate_bottom"
+	"poke:nether_wart_crate":{
+		"textures":{
+			"up":"poke_nether_wart_crate",
+			"side":"poke_crate_side",
+			"down":"poke_crate_bottom"
 		},
-		"sound": "wood"
+		"sound":"wood"
 	},
-	"poke:chorus_fruit_crate": {
-		"textures": {
-			"up": "poke_chorus_fruit_crate",
-			"side": "poke_crate_side",
-			"down": "poke_crate_bottom"
+	"poke:chorus_fruit_crate":{
+		"textures":{
+			"up":"poke_chorus_fruit_crate",
+			"side":"poke_crate_side",
+			"down":"poke_crate_bottom"
 		},
-		"sound": "wood"
+		"sound":"wood"
 	},
-	"poke:brown_mushroom_crate": {
-		"textures": {
-			"up": "poke_brown_mushroom_crate",
-			"side": "poke_crate_side",
-			"down": "poke_crate_bottom"
+	"poke:brown_mushroom_crate":{
+		"textures":{
+			"up":"poke_brown_mushroom_crate",
+			"side":"poke_crate_side",
+			"down":"poke_crate_bottom"
 		},
-		"sound": "wood"
+		"sound":"wood"
 	},
-	"poke:red_mushroom_crate": {
-		"textures": {
-			"up": "poke_red_mushroom_crate",
-			"side": "poke_crate_side",
-			"down": "poke_crate_bottom"
+	"poke:red_mushroom_crate":{
+		"textures":{
+			"up":"poke_red_mushroom_crate",
+			"side":"poke_crate_side",
+			"down":"poke_crate_bottom"
 		},
-		"sound": "wood"
+		"sound":"wood"
 	},
-	"poke:carrot_crate": {
-		"textures": {
-			"up": "poke_carrot_crate",
-			"side": "poke_crate_side",
-			"down": "poke_crate_bottom"
+	"poke:carrot_crate":{
+		"textures":{
+			"up":"poke_carrot_crate",
+			"side":"poke_crate_side",
+			"down":"poke_crate_bottom"
 		},
-		"sound": "wood"
+		"sound":"wood"
 	},
-	"poke:potato_crate": {
-		"textures": {
-			"up": "poke_potato_crate",
-			"side": "poke_crate_side",
-			"down": "poke_crate_bottom"
+	"poke:potato_crate":{
+		"textures":{
+			"up":"poke_potato_crate",
+			"side":"poke_crate_side",
+			"down":"poke_crate_bottom"
 		},
-		"sound": "wood"
+		"sound":"wood"
 	},
-	"poke:beetroot_crate": {
-		"textures": {
-			"up": "poke_beetroot_crate",
-			"side": "poke_crate_side",
-			"down": "poke_crate_bottom"
+	"poke:beetroot_crate":{
+		"textures":{
+			"up":"poke_beetroot_crate",
+			"side":"poke_crate_side",
+			"down":"poke_crate_bottom"
 		},
-		"sound": "wood"
+		"sound":"wood"
 	},
-	"poke:deepslate_godly_ore": {
-		"sound": "deepslate",
-		"textures": "poke_deepslate_godly_ore"
+	"poke:deepslate_godly_ore":{
+		"sound":"deepslate",
+		"textures":"poke_deepslate_godly_ore"
 	},
-	"poke:turnip_crop": {
-		"sound": "grass"
+	"poke:turnip_crop":{
+		"sound":"grass"
 	},
-	"poke:golden_turnip_trophy": {
-		"sound": "metal",
-		"textures": "poke_golden_turnip_trophy"
+	"poke:golden_turnip_trophy":{
+		"sound":"metal",
+		"textures":"poke_golden_turnip_trophy"
 	},
-	"poke:key_block_room": {"sound": "deepslate_bricks","textures": "poke_key_block"},
-	"poke:key_block_start": {"sound": "deepslate_bricks","textures": "poke_key_block"},
-	"poke:key_block_hall": {"sound": "deepslate_bricks","textures": "poke_key_block"},
-	"poke:cut_astral_slab": {
-		"sound": "copper",
-		"textures": "poke_cut_astral"
+	"poke:key_block_room":{"sound":"deepslate_bricks","textures":"poke_key_block"},
+	"poke:key_block_start":{"sound":"deepslate_bricks","textures":"poke_key_block"},
+	"poke:key_block_hall":{"sound":"deepslate_bricks","textures":"poke_key_block"},
+	"poke:cut_astral_slab":{
+		"sound":"copper",
+		"textures":"poke_cut_astral"
 	},
-	"poke:cut_death_slab": {
-		"sound": "copper",
-		"textures": "poke_cut_death"
+	"poke:cut_death_slab":{
+		"sound":"copper",
+		"textures":"poke_cut_death"
 	},
-	"poke:cut_demonic_slab": {
-		"sound": "copper",
-		"textures": "poke_cut_demonic"
+	"poke:cut_demonic_slab":{
+		"sound":"copper",
+		"textures":"poke_cut_demonic"
 	},
-	"poke:cut_galaxy_slab": {
-		"sound": "copper",
-		"textures": "poke_cut_galaxy"
+	"poke:cut_galaxy_slab":{
+		"sound":"copper",
+		"textures":"poke_cut_galaxy"
 	},
-	"poke:cut_godly_slab": {
-		"sound": "copper",
-		"textures": "poke_cut_godly"
+	"poke:cut_godly_slab":{
+		"sound":"copper",
+		"textures":"poke_cut_godly"
 	},
-	"poke:cut_hellish_slab": {
-		"sound": "copper",
-		"textures": "poke_cut_hellish"
+	"poke:cut_hellish_slab":{
+		"sound":"copper",
+		"textures":"poke_cut_hellish"
 	},
-	"poke:cut_holy_slab": {
-		"sound": "copper",
-		"textures": "poke_cut_holy"
+	"poke:cut_holy_slab":{
+		"sound":"copper",
+		"textures":"poke_cut_holy"
 	},
-	"poke:cut_medic_slab": {
-		"sound": "copper",
-		"textures": "poke_cut_medic"
+	"poke:cut_medic_slab":{
+		"sound":"copper",
+		"textures":"poke_cut_medic"
 	},
-	"poke:cut_molten_slab": {
-		"sound": "copper",
-		"textures": "poke_cut_molten"
+	"poke:cut_molten_slab":{
+		"sound":"copper",
+		"textures":"poke_cut_molten"
 	},
-	"poke:cut_nebula_slab": {
-		"sound": "copper",
-		"textures": "poke_cut_nebula"
+	"poke:cut_nebula_slab":{
+		"sound":"copper",
+		"textures":"poke_cut_nebula"
 	},
-	"poke:cut_onyx_slab": {
-		"sound": "copper",
-		"textures": "poke_cut_onyx"
+	"poke:cut_onyx_slab":{
+		"sound":"copper",
+		"textures":"poke_cut_onyx"
 	},
-	"poke:cut_radium_slab": {
-		"sound": "copper",
-		"textures": "poke_cut_radium"
+	"poke:cut_radium_slab":{
+		"sound":"copper",
+		"textures":"poke_cut_radium"
 	},
-	"poke:cut_shade_slab": {
-		"sound": "copper",
-		"textures": "poke_cut_shade"
+	"poke:cut_shade_slab":{
+		"sound":"copper",
+		"textures":"poke_cut_shade"
 	},
-	"poke:cut_void_slab": {
-		"sound": "copper",
-		"textures": "poke_cut_void"
+	"poke:cut_void_slab":{
+		"sound":"copper",
+		"textures":"poke_cut_void"
 	},
-	"poke:cut_astral": {
-		"sound": "copper",
-		"textures": "poke_cut_astral"
+	"poke:cut_astral":{
+		"sound":"copper",
+		"textures":"poke_cut_astral"
 	},
-	"poke:cut_death": {
-		"sound": "copper",
-		"textures": "poke_cut_death"
+	"poke:cut_death":{
+		"sound":"copper",
+		"textures":"poke_cut_death"
 	},
-	"poke:cut_demonic": {
-		"sound": "copper",
-		"textures": "poke_cut_demonic"
+	"poke:cut_demonic":{
+		"sound":"copper",
+		"textures":"poke_cut_demonic"
 	},
-	"poke:cut_galaxy": {
-		"sound": "copper",
-		"textures": "poke_cut_galaxy"
+	"poke:cut_galaxy":{
+		"sound":"copper",
+		"textures":"poke_cut_galaxy"
 	},
-	"poke:cut_godly": {
-		"sound": "copper",
-		"textures": "poke_cut_godly"
+	"poke:cut_godly":{
+		"sound":"copper",
+		"textures":"poke_cut_godly"
 	},
-	"poke:cut_hellish": {
-		"sound": "copper",
-		"textures": "poke_cut_hellish"
+	"poke:cut_hellish":{
+		"sound":"copper",
+		"textures":"poke_cut_hellish"
 	},
-	"poke:cut_holy": {
-		"sound": "copper",
-		"textures": "poke_cut_holy"
+	"poke:cut_holy":{
+		"sound":"copper",
+		"textures":"poke_cut_holy"
 	},
-	"poke:cut_medic": {
-		"sound": "copper",
-		"textures": "poke_cut_medic"
+	"poke:cut_medic":{
+		"sound":"copper",
+		"textures":"poke_cut_medic"
 	},
-	"poke:cut_molten": {
-		"sound": "copper",
-		"textures": "poke_cut_molten"
+	"poke:cut_molten":{
+		"sound":"copper",
+		"textures":"poke_cut_molten"
 	},
-	"poke:cut_nebula": {
-		"sound": "copper",
-		"textures": "poke_cut_nebula"
+	"poke:cut_nebula":{
+		"sound":"copper",
+		"textures":"poke_cut_nebula"
 	},
-	"poke:cut_onyx": {
-		"sound": "copper",
-		"textures": "poke_cut_onyx"
+	"poke:cut_onyx":{
+		"sound":"copper",
+		"textures":"poke_cut_onyx"
 	},
-	"poke:cut_radium": {
-		"sound": "copper",
-		"textures": "poke_cut_radium"
+	"poke:cut_radium":{
+		"sound":"copper",
+		"textures":"poke_cut_radium"
 	},
-	"poke:cut_shade": {
-		"sound": "copper",
-		"textures": "poke_cut_shade"
+	"poke:cut_shade":{
+		"sound":"copper",
+		"textures":"poke_cut_shade"
 	},
-	"poke:cut_void": {
-		"sound": "copper",
-		"textures": "poke_cut_void"
+	"poke:cut_void":{
+		"sound":"copper",
+		"textures":"poke_cut_void"
 	},
-	"poke:astral_bulb": {
-		"sound": "copper",
-		"textures": "poke_astral_bulb"
+	"poke:astral_bulb":{
+		"sound":"copper",
+		"textures":"poke_astral_bulb"
 	},
-	"poke:death_bulb": {
-		"sound": "copper",
-		"textures": "poke_death_bulb"
+	"poke:death_bulb":{
+		"sound":"copper",
+		"textures":"poke_death_bulb"
 	},
-	"poke:demonic_bulb": {
-		"sound": "copper",
-		"textures": "poke_demonic_bulb"
+	"poke:demonic_bulb":{
+		"sound":"copper",
+		"textures":"poke_demonic_bulb"
 	},
-	"poke:galaxy_bulb": {
-		"sound": "copper",
-		"textures": "poke_galaxy_bulb"
+	"poke:galaxy_bulb":{
+		"sound":"copper",
+		"textures":"poke_galaxy_bulb"
 	},
-	"poke:godly_bulb": {
-		"sound": "copper",
-		"textures": "poke_godly_bulb"
+	"poke:godly_bulb":{
+		"sound":"copper",
+		"textures":"poke_godly_bulb"
 	},
-	"poke:hellish_bulb": {
-		"sound": "copper",
-		"textures": "poke_hellish_bulb"
+	"poke:hellish_bulb":{
+		"sound":"copper",
+		"textures":"poke_hellish_bulb"
 	},
-	"poke:holy_bulb": {
-		"sound": "copper",
-		"textures": "poke_holy_bulb"
+	"poke:holy_bulb":{
+		"sound":"copper",
+		"textures":"poke_holy_bulb"
 	},
-	"poke:medic_bulb": {
-		"sound": "copper",
-		"textures": "poke_medic_bulb"
+	"poke:medic_bulb":{
+		"sound":"copper",
+		"textures":"poke_medic_bulb"
 	},
-	"poke:molten_bulb": {
-		"sound": "copper",
-		"textures": "poke_molten_bulb"
+	"poke:molten_bulb":{
+		"sound":"copper",
+		"textures":"poke_molten_bulb"
 	},
-	"poke:nebula_bulb": {
-		"sound": "copper",
-		"textures": "poke_nebula_bulb"
+	"poke:nebula_bulb":{
+		"sound":"copper",
+		"textures":"poke_nebula_bulb"
 	},
-	"poke:onyx_bulb": {
-		"sound": "copper",
-		"textures": "poke_onyx_bulb"
+	"poke:onyx_bulb":{
+		"sound":"copper",
+		"textures":"poke_onyx_bulb"
 	},
-	"poke:radium_bulb": {
-		"sound": "copper",
-		"textures": "poke_radium_bulb"
+	"poke:radium_bulb":{
+		"sound":"copper",
+		"textures":"poke_radium_bulb"
 	},
-	"poke:shade_bulb": {
-		"sound": "copper",
-		"textures": "poke_shade_bulb"
+	"poke:shade_bulb":{
+		"sound":"copper",
+		"textures":"poke_shade_bulb"
 	},
-	"poke:void_bulb": {
-		"sound": "copper",
-		"textures": "poke_void_bulb"
+	"poke:void_bulb":{
+		"sound":"copper",
+		"textures":"poke_void_bulb"
 	},
-	"rotten_flesh_crate": {
-		"textures": {
-			"up": "poke_rotten_flesh_crate",
-			"side": "poke_crate_side",
-			"down": "poke_crate_bottom"
+	"rotten_flesh_crate":{
+		"textures":{
+			"up":"poke_rotten_flesh_crate",
+			"side":"poke_crate_side",
+			"down":"poke_crate_bottom"
 		},
-		"sound": "wood"
+		"sound":"wood"
 	},
-	"flint_crate": {
-		"textures": {
-			"up": "poke_flint_crate",
-			"side": "poke_crate_side",
-			"down": "poke_crate_bottom"
+	"flint_crate":{
+		"textures":{
+			"up":"poke_flint_crate",
+			"side":"poke_crate_side",
+			"down":"poke_crate_bottom"
 		},
-		"sound": "wood"
+		"sound":"wood"
 	},
-	"hellish_ore": {
-		"textures": "poke_hellish_ore",
-		"sound": "stone"
+	"hellish_ore":{
+		"textures":"poke_hellish_ore",
+		"sound":"stone"
 	},
-	"deepslate_shade_ore": {
-		"textures": "poke_deepslate_shade_ore",
-		"sound": "deepslate"
+	"deepslate_shade_ore":{
+		"textures":"poke_deepslate_shade_ore",
+		"sound":"deepslate"
 	},
-	"deepslate_cobalt_ore": {
-		"textures": "poke_deepslate_cobalt_ore",
-		"sound": "deepslate"
+	"deepslate_cobalt_ore":{
+		"textures":"poke_deepslate_cobalt_ore",
+		"sound":"deepslate"
 	},
-	"deepslate_holy_ore": {
-		"textures": "poke_deepslate_holy_ore",
-		"sound": "deepslate"
+	"deepslate_holy_ore":{
+		"textures":"poke_deepslate_holy_ore",
+		"sound":"deepslate"
 	},
-	"cobalt_trapdoor": {
-		"sound": "copper"
+	"cobalt_trapdoor":{
+		"sound":"copper"
 	},
-	"astral_trapdoor": {
-		"sound": "copper"
+	"astral_trapdoor":{
+		"sound":"copper"
 	},
-	"death_trapdoor": {
-		"sound": "copper"
+	"death_trapdoor":{
+		"sound":"copper"
 	},
-	"demonic_trapdoor": {
-		"sound": "copper"
+	"demonic_trapdoor":{
+		"sound":"copper"
 	},
-	"galaxy_trapdoor": {
-		"sound": "copper"
+	"galaxy_trapdoor":{
+		"sound":"copper"
 	},
-	"godly_trapdoor": {
-		"sound": "copper"
+	"godly_trapdoor":{
+		"sound":"copper"
 	},
-	"hellish_trapdoor": {
-		"sound": "copper"
+	"hellish_trapdoor":{
+		"sound":"copper"
 	},
-	"holy_trapdoor": {
-		"sound": "copper"
+	"holy_trapdoor":{
+		"sound":"copper"
 	},
-	"medic_trapdoor": {
-		"sound": "copper"
+	"medic_trapdoor":{
+		"sound":"copper"
 	},
-	"molten_trapdoor": {
-		"sound": "copper"
+	"molten_trapdoor":{
+		"sound":"copper"
 	},
-	"nebula_trapdoor": {
-		"sound": "copper"
+	"nebula_trapdoor":{
+		"sound":"copper"
 	},
-	"onyx_trapdoor": {
-		"sound": "copper"
+	"onyx_trapdoor":{
+		"sound":"copper"
 	},
-	"radium_trapdoor": {
-		"sound": "copper"
+	"radium_trapdoor":{
+		"sound":"copper"
 	},
-	"shade_trapdoor": {
-		"sound": "copper"
+	"shade_trapdoor":{
+		"sound":"copper"
 	},
-	"void_trapdoor": {
-		"sound": "copper"
+	"void_trapdoor":{
+		"sound":"copper"
 	},
-	"poke:power_cell": {
-		"sound": "metal",
+	"poke:power_cell":{
+		"sound":"metal",
 		"textures":"poke_power_cell"
 	},
-	"poke:dirter": {
-		"sound": "wood",
-		"textures":"poke_dirter"
+	"poke:dirter":{
+		"sound":"wood",
+		"textures":{
+			"down":"poke_dirter_bottom",
+			"up":"poke_dirter_top",
+			"north":"poke_dirter_side",
+			"east":"poke_dirter_side_alt",
+			"south":"poke_dirter_side",
+			"west":"poke_dirter_side_alt"
+		}	
 	},
-	"poke:galaxy_bricks": {
-		"sound": "deepslate_bricks","textures":"poke_galaxy_bricks"
+	"poke:dirter_north":{
+		"sound":"wood",
+		"textures":{
+			"down":"poke_dirter_side",
+			"up":"poke_dirter_side",
+			"north":"poke_dirter_bottom",
+			"east":"poke_dirter_side_alt",
+			"south":"poke_dirter_top",
+			"west":"poke_dirter_side_alt"
+		}
 	},
-	"poke:radium_block": {
-		"sound": "metal",
-		"textures": "poke_radium_block"
+	"poke:dirter_south":{
+		"sound":"wood",
+		"textures":{
+			"down":"poke_dirter_side",
+			"up":"poke_dirter_side",
+			"north":"poke_dirter_top",
+			"east":"poke_dirter_side_alt",
+			"south":"poke_dirter_bottom",
+			"west":"poke_dirter_side_alt"
+		}
 	},
-	"poke:radium_bricks": {
-		"sound": "deepslate_bricks","textures":"poke_radium_bricks"
+	"poke:dirter_east":{
+		"sound":"wood",
+		"textures":{
+			"down":"poke_dirter_side",
+			"up":"poke_dirter_side",
+			"north":"poke_dirter_side_alt",
+			"east":"poke_dirter_bottom",
+			"south":"poke_dirter_side_alt",
+			"west":"poke_dirter_top"
+		}
 	},
-	"poke:radium_bricks_slab": {
-		"sound": "deepslate_bricks","textures":"poke_radium_bricks"
+	"poke:dirter_west":{
+		"sound":"wood",
+		"textures":{
+			"down":"poke_dirter_side",
+			"up":"poke_dirter_side",
+			"north":"poke_dirter_side_alt",
+			"east":"poke_dirter_top",
+			"south":"poke_dirter_side_alt",
+			"west":"poke_dirter_bottom"
+		}
 	},
-	"poke:chiseled_cobalt_slab": {
-		"sound": "copper","textures":"poke_chiseled_cobalt"
+	"poke:dirter_up":{
+		"sound":"wood",
+		"textures":{
+			"down":"poke_dirter_top",
+			"up":"poke_dirter_bottom",
+			"north":"poke_dirter_side",
+			"east":"poke_dirter_side_alt",
+			"south":"poke_dirter_side",
+			"west":"poke_dirter_side_alt"
+		}	
 	},
-	"poke:cracked_cobalt_bricks": {
-		"sound": "deepslate_bricks","textures":"poke_cracked_cobalt_bricks"
+	"poke:dirter_down":{
+		"sound":"wood",
+		"textures":{
+			"down":"poke_dirter_bottom",
+			"up":"poke_dirter_top",
+			"north":"poke_dirter_side",
+			"east":"poke_dirter_side_alt",
+			"south":"poke_dirter_side",
+			"west":"poke_dirter_side_alt"
+		}	
 	},
-	"poke:cobalt_bricks_slab": {
-		"sound": "deepslate_bricks","textures":"poke_cobalt_bricks"
+	"poke:galaxy_bricks":{
+		"sound":"deepslate_bricks","textures":"poke_galaxy_bricks"
 	},
-	"poke:cracked_cobalt_bricks_slab": {
-		"sound": "deepslate_bricks","textures":"poke_cracked_cobalt_bricks"
+	"poke:radium_block":{
+		"sound":"metal",
+		"textures":"poke_radium_block"
 	},
-	"poke:onyx_bricks_slab": {
-		"sound": "deepslate_bricks","textures":"poke_onyx_bricks"
+	"poke:radium_bricks":{
+		"sound":"deepslate_bricks","textures":"poke_radium_bricks"
 	},
-	"poke:void_bricks_slab": {
-		"sound": "deepslate_bricks","textures":"poke_void_bricks"
+	"poke:radium_bricks_slab":{
+		"sound":"deepslate_bricks","textures":"poke_radium_bricks"
 	},
-	"poke:death_bricks_slab": {
-		"sound": "deepslate_bricks","textures":"poke_death_bricks"
+	"poke:chiseled_cobalt_slab":{
+		"sound":"copper","textures":"poke_chiseled_cobalt"
 	},
-	"poke:galaxy_bricks_slab": {
-		"sound": "deepslate_bricks","textures":"poke_galaxy_bricks"
+	"poke:cracked_cobalt_bricks":{
+		"sound":"deepslate_bricks","textures":"poke_cracked_cobalt_bricks"
 	},
-	"poke:astral_bricks_slab": {
-		"sound": "deepslate_bricks","textures":"poke_astral_bricks"
+	"poke:cobalt_bricks_slab":{
+		"sound":"deepslate_bricks","textures":"poke_cobalt_bricks"
 	},
-	"poke:medic_bricks_slab": {
-		"sound": "deepslate_bricks","textures":"poke_medic_bricks"
+	"poke:cracked_cobalt_bricks_slab":{
+		"sound":"deepslate_bricks","textures":"poke_cracked_cobalt_bricks"
 	},
-	"poke:medic_bricks": {
-		"sound": "deepslate_bricks","textures":"poke_medic_bricks"
+	"poke:onyx_bricks_slab":{
+		"sound":"deepslate_bricks","textures":"poke_onyx_bricks"
 	},
-	"poke:astral_bricks": {
-		"sound": "deepslate_bricks","textures":"poke_astral_bricks"
+	"poke:void_bricks_slab":{
+		"sound":"deepslate_bricks","textures":"poke_void_bricks"
 	},
-	"poke:nebula_bricks_slab": {
-		"sound": "deepslate_bricks","textures":"poke_nebula_bricks"
+	"poke:death_bricks_slab":{
+		"sound":"deepslate_bricks","textures":"poke_death_bricks"
 	},
-	"poke:nebula_bricks": {
-		"sound": "deepslate_bricks","textures":"poke_nebula_bricks"
+	"poke:galaxy_bricks_slab":{
+		"sound":"deepslate_bricks","textures":"poke_galaxy_bricks"
 	},
-	"poke:molten_bricks_slab": {
-		"sound": "deepslate_bricks","textures":"poke_molten_bricks"
+	"poke:astral_bricks_slab":{
+		"sound":"deepslate_bricks","textures":"poke_astral_bricks"
 	},
-	"poke:molten_bricks": {
-		"sound": "deepslate_bricks","textures":"poke_molten_bricks"
+	"poke:medic_bricks_slab":{
+		"sound":"deepslate_bricks","textures":"poke_medic_bricks"
 	},
-	"poke:shade_bricks_slab": {
-		"sound": "deepslate_bricks","textures":"poke_shade_bricks"
+	"poke:medic_bricks":{
+		"sound":"deepslate_bricks","textures":"poke_medic_bricks"
 	},
-	"poke:shade_bricks": {
-		"sound": "deepslate_bricks","textures":"poke_shade_bricks"
+	"poke:astral_bricks":{
+		"sound":"deepslate_bricks","textures":"poke_astral_bricks"
 	},
-	"poke:holy_bricks_slab": {
-		"sound": "deepslate_bricks","textures":"poke_holy_bricks"
+	"poke:nebula_bricks_slab":{
+		"sound":"deepslate_bricks","textures":"poke_nebula_bricks"
 	},
-	"poke:holy_bricks": {
-		"sound": "deepslate_bricks","textures":"poke_holy_bricks"
+	"poke:nebula_bricks":{
+		"sound":"deepslate_bricks","textures":"poke_nebula_bricks"
 	},
-	"poke:demonic_bricks_slab": {
-		"sound": "deepslate_bricks","textures":"poke_demonic_bricks"
+	"poke:molten_bricks_slab":{
+		"sound":"deepslate_bricks","textures":"poke_molten_bricks"
 	},
-	"poke:demonic_bricks": {
-		"sound": "deepslate_bricks","textures":"poke_demonic_bricks"
+	"poke:molten_bricks":{
+		"sound":"deepslate_bricks","textures":"poke_molten_bricks"
 	},
-	"poke:hellish_bricks_slab": {
-		"sound": "deepslate_bricks","textures":"poke_hellish_bricks"
+	"poke:shade_bricks_slab":{
+		"sound":"deepslate_bricks","textures":"poke_shade_bricks"
 	},
-	"poke:hellish_bricks": {
-		"sound": "deepslate_bricks","textures":"poke_hellish_bricks"
+	"poke:shade_bricks":{
+		"sound":"deepslate_bricks","textures":"poke_shade_bricks"
 	},
-	"poke:death_bricks": {
-		"sound": "deepslate_bricks","textures":"poke_death_bricks"
+	"poke:holy_bricks_slab":{
+		"sound":"deepslate_bricks","textures":"poke_holy_bricks"
 	},
-	"poke:onyx_bricks": {
-		"sound": "deepslate_bricks","textures":"poke_onyx_bricks"
+	"poke:holy_bricks":{
+		"sound":"deepslate_bricks","textures":"poke_holy_bricks"
 	},
-	"poke:cobalt_bricks": {
-		"sound": "deepslate_bricks","textures":"poke_cobalt_bricks"
+	"poke:demonic_bricks_slab":{
+		"sound":"deepslate_bricks","textures":"poke_demonic_bricks"
 	},
-	"poke:void_bricks": {
-		"sound": "deepslate_bricks","textures":"poke_void_bricks"
+	"poke:demonic_bricks":{
+		"sound":"deepslate_bricks","textures":"poke_demonic_bricks"
 	},
-	"poke:godly_bricks_slab": {
-		"sound": "deepslate_bricks","textures":"poke_godly_bricks"
+	"poke:hellish_bricks_slab":{
+		"sound":"deepslate_bricks","textures":"poke_hellish_bricks"
 	},
-	"poke:godly_bricks": {
-		"sound": "deepslate_bricks","textures":"poke_godly_bricks"
+	"poke:hellish_bricks":{
+		"sound":"deepslate_bricks","textures":"poke_hellish_bricks"
 	},
-	"poke:red_present": {
-		"textures": "poke_red_present",
-		"sound": "itemframe"
+	"poke:death_bricks":{
+		"sound":"deepslate_bricks","textures":"poke_death_bricks"
 	},
-	"poke:cut_cobalt_slab": {
-		"sound": "copper","textures":"poke_cut_cobalt"
+	"poke:onyx_bricks":{
+		"sound":"deepslate_bricks","textures":"poke_onyx_bricks"
 	},
-	"poke:apple_crate": {
-		"textures": {
-			"up": "poke_apple_crate",
-			"side": "poke_crate_side",
-			"down": "poke_crate_bottom"
+	"poke:cobalt_bricks":{
+		"sound":"deepslate_bricks","textures":"poke_cobalt_bricks"
+	},
+	"poke:void_bricks":{
+		"sound":"deepslate_bricks","textures":"poke_void_bricks"
+	},
+	"poke:godly_bricks_slab":{
+		"sound":"deepslate_bricks","textures":"poke_godly_bricks"
+	},
+	"poke:godly_bricks":{
+		"sound":"deepslate_bricks","textures":"poke_godly_bricks"
+	},
+	"poke:red_present":{
+		"textures":"poke_red_present",
+		"sound":"itemframe"
+	},
+	"poke:cut_cobalt_slab":{
+		"sound":"copper","textures":"poke_cut_cobalt"
+	},
+	"poke:apple_crate":{
+		"textures":{
+			"up":"poke_apple_crate",
+			"side":"poke_crate_side",
+			"down":"poke_crate_bottom"
 		},
-		"sound": "wood"
+		"sound":"wood"
 	},
-	"poke:block_breaker": {
-		"sound": "wood",
+	"poke:block_breaker":{
+		"sound":"wood",
 		"textures":"poke_block_breaker"
 	},
-	"poke:medic_block": {
-		"sound": "metal",
-		"textures": "poke_medic_block"
+	"poke:medic_block":{
+		"sound":"metal",
+		"textures":"poke_medic_block"
 	},
-	"poke:charred_melon": {
-		"sound": "roots",
+	"poke:charred_melon":{
+		"sound":"roots",
 		"textures":"poke_charred_melon"
 	},
-	"poke:death_block": {
-		"sound": "metal",
-		"textures": "poke_death_block"
+	"poke:death_block":{
+		"sound":"metal",
+		"textures":"poke_death_block"
 	},
-	"poke:limestone_tombstone": {
-		"sound": "stone",
+	"poke:limestone_tombstone":{
+		"sound":"stone",
 		"textures":"poke_limestone_tombstone"
 	},
-	"poke:limestone_bulb": {
-		"sound": "stone",
-		"textures": "poke_limestone_bulb"
+	"poke:limestone_bulb":{
+		"sound":"stone",
+		"textures":"poke_limestone_bulb"
 	},
-	"poke:sugarcane_crate": {
-		"textures": {
-			"up": "poke_sugarcane_crate",
-			"side": "poke_crate_side",
-			"down": "poke_crate_bottom"
+	"poke:sugarcane_crate":{
+		"textures":{
+			"up":"poke_sugarcane_crate",
+			"side":"poke_crate_side",
+			"down":"poke_crate_bottom"
 		},
-		"sound": "wood"
+		"sound":"wood"
 	},
-	"poke:empty_crate": {
-		"textures": {
-			"up": "poke_empty_crate",
-			"side": "poke_crate_side",
-			"down": "poke_crate_bottom"
+	"poke:empty_crate":{
+		"textures":{
+			"up":"poke_empty_crate",
+			"side":"poke_crate_side",
+			"down":"poke_crate_bottom"
 		},
-		"sound": "wood"
+		"sound":"wood"
 	},
-	"poke:charred_poppy": {
-		"sound": "nether_sprouts",
+	"poke:charred_poppy":{
+		"sound":"nether_sprouts",
 		"textures":"poke_charred_poppy"
 	},
-	"poke:empty_mug": {
-		"sound": "candle",
+	"poke:empty_mug":{
+		"sound":"candle",
 		"textures":"poke_empty_mug"
 	},
-	"poke:coffee_mug": {
-		"sound": "candle",
+	"poke:coffee_mug":{
+		"sound":"candle",
 		"textures":"poke_coffee_mug"
 	},
-	"poke:chiseled_cobalt": {
-		"sound": "copper",
-		"textures": "poke_chiseled_cobalt"
+	"poke:chiseled_cobalt":{
+		"sound":"copper",
+		"textures":"poke_chiseled_cobalt"
 	},
-	"poke:beveled_limestone": {
-		"sound": "stone",
-		"textures": "poke_beveled_limestone"
+	"poke:beveled_limestone":{
+		"sound":"stone",
+		"textures":"poke_beveled_limestone"
 	},
-	"poke:beveled_limestone_slab": {
-		"sound": "stone",
-		"textures": "poke_beveled_limestone"
+	"poke:beveled_limestone_slab":{
+		"sound":"stone",
+		"textures":"poke_beveled_limestone"
 	},
-	"poke:cornered_chamfered_limestone": {
-		"sound": "stone",
+	"poke:cornered_chamfered_limestone":{
+		"sound":"stone",
 		"textures":"poke_cornered_chamfered_limestone"
 	},
-	"poke:smooth_limestone": {
-		"sound": "stone",
-		"textures": "poke_smooth_limestone",
+	"poke:smooth_limestone":{
+		"sound":"stone",
+		"textures":"poke_smooth_limestone",
 		"isotropic":true
 	},
-	"poke:smooth_limestone_slab": {
-		"sound": "stone",
-		"textures": "poke_smooth_limestone"
+	"poke:smooth_limestone_slab":{
+		"sound":"stone",
+		"textures":"poke_smooth_limestone"
 	},
-	"poke:polished_limestone": {
-		"sound": "stone",
-		"textures": "poke_polished_limestone"
+	"poke:polished_limestone":{
+		"sound":"stone",
+		"textures":"poke_polished_limestone"
 	},
-	"poke:chamfered_limestone": {
-		"sound": "stone",
+	"poke:chamfered_limestone":{
+		"sound":"stone",
 		"textures":"poke_chamfered_limestone"
 	},
-	"poke:cobalt_bulb": {
-		"sound": "copper","textures":"poke_cobalt_bulb"
+	"poke:cobalt_bulb":{
+		"sound":"copper","textures":"poke_cobalt_bulb"
 	},
-	"poke:chiseled_limestone": {
-		"sound": "stone",
+	"poke:chiseled_limestone":{
+		"sound":"stone",
 		"textures":"poke_chiseled_limestone"
 	},
-	"poke:gilded_melon": {
-		"sound": "wood",
+	"poke:gilded_melon":{
+		"sound":"wood",
 		"textures":{
-			"up": "poke_gilded_melon_top",
-			"side": "poke_gilded_melon_side",
-			"down": "poke_gilded_melon_top"
+			"up":"poke_gilded_melon_top",
+			"side":"poke_gilded_melon_side",
+			"down":"poke_gilded_melon_top"
 		}
 	},
-	"poke:gilded_carved_melon": {
-		"sound": "wood",
+	"poke:gilded_carved_melon":{
+		"sound":"wood",
 		"textures":"poke_gilded_carved_melon"
 	},
-	"poke:carved_carved_melon": {
-		"sound": "wood",
+	"poke:carved_carved_melon":{
+		"sound":"wood",
 		"textures":"poke_carved_carved_melon"
 	},
-	"poke:carved_melon": {
-		"sound": "wood",
+	"poke:carved_melon":{
+		"sound":"wood",
 		"textures":"poke_carved_melon"
 	},
-	"poke:cobalt_edged_glass": {
-		"sound": "glass",
+	"poke:cobalt_edged_glass":{
+		"sound":"glass",
 		"textures":"poke_cobalt_edged_glass"
 	},
-	"poke:cut_cobalt": {
-		"sound": "copper",
-		"textures": "poke_cut_cobalt"
+	"poke:cut_cobalt":{
+		"sound":"copper",
+		"textures":"poke_cut_cobalt"
 	},
-	"poke:furnace_golem_trophy": {
-		"sound": "metal"
+	"poke:furnace_golem_trophy":{
+		"sound":"metal"
 	},
-	"poke:cobbled_limestone": {
-		"sound": "stone",
-		"textures": "poke_cobbled_limestone"
+	"poke:cobbled_limestone":{
+		"sound":"stone",
+		"textures":"poke_cobbled_limestone"
 	},
-	"poke:cobbled_limestone_slab": {
-		"sound": "stone",
-		"textures": "poke_cobbled_limestone"
+	"poke:cobbled_limestone_slab":{
+		"sound":"stone",
+		"textures":"poke_cobbled_limestone"
 	},
-	"poke:limestone": {
-		"sound": "stone",
-		"textures": "poke_limestone"
+	"poke:limestone":{
+		"sound":"stone",
+		"textures":"poke_limestone"
 	},
-	"poke:limestone_slab": {
-		"sound": "stone",
-		"textures": "poke_limestone"
+	"poke:limestone_slab":{
+		"sound":"stone",
+		"textures":"poke_limestone"
 	},
-	"poke:shade_ore": {
-		"sound": "stone",
-		"textures": "poke_shade_ore"
+	"poke:shade_ore":{
+		"sound":"stone",
+		"textures":"poke_shade_ore"
 	},
-	"poke:onyx": {
-		"sound": "deepslate",
-		"textures": "poke_onyx"
+	"poke:onyx":{
+		"sound":"deepslate",
+		"textures":"poke_onyx"
 	},
-	"poke:onyx_block": {
-		"sound": "metal",
-		"textures": "poke_onyx_block"
+	"poke:onyx_block":{
+		"sound":"metal",
+		"textures":"poke_onyx_block"
 	},
-	"poke:cobblestone_gen": {
-		"sound": "stone",
+	"poke:cobblestone_gen":{
+		"sound":"stone",
 		"textures":{
-			"down": "poke_cobble_gen_bottom",
-			"east": "poke_cobble_gen_flip",
-			"west": "poke_cobble_gen_flip",
-			"south": "poke_cobble_gen",
-			"north": "poke_cobble_gen",
-			"up": "poke_cobble_gen_top"
+			"down":"poke_cobble_gen_bottom",
+			"east":"poke_cobble_gen_flip",
+			"west":"poke_cobble_gen_flip",
+			"south":"poke_cobble_gen",
+			"north":"poke_cobble_gen",
+			"up":"poke_cobble_gen_top"
 		}
 	},
-	"poke:cobble_gen": {
-		"sound": "stone",
+	"poke:cobble_gen":{
+		"sound":"stone",
 		"textures":{
-			"down": "poke_cobbler_bottom",
-			"east": "poke_cobbler_flip",
-			"west": "poke_cobbler_flip",
-			"south": "poke_cobbler",
-			"north": "poke_cobbler",
-			"up": "poke_cobbler_top"
+			"down":"poke_cobbler_bottom",
+			"east":"poke_cobbler_flip",
+			"west":"poke_cobbler_flip",
+			"south":"poke_cobbler",
+			"north":"poke_cobbler",
+			"up":"poke_cobbler_top"
 		}
 	},
-	"poke:hellite_ore": {
-		"sound": "deepslate",
-		"textures": "poke_deepslate_hellish_ore"
+	"poke:hellite_ore":{
+		"sound":"deepslate",
+		"textures":"poke_deepslate_hellish_ore"
 	},
-	"poke:hellish_block": {
-		"sound": "metal",
-		"textures": "poke_hellish_block"
+	"poke:hellish_block":{
+		"sound":"metal",
+		"textures":"poke_hellish_block"
 	},
-	"poke:holy_ore": {
-		"sound": "stone",
-		"textures": "poke_holy_ore"
+	"poke:holy_ore":{
+		"sound":"stone",
+		"textures":"poke_holy_ore"
 	},
-	"poke:holy_block": {
-		"sound": "metal",
-		"textures": "poke_holy_block"
+	"poke:holy_block":{
+		"sound":"metal",
+		"textures":"poke_holy_block"
 	},
-	"poke:nebula_ore": {
-		"sound": "stone",
-		"textures": "poke_nebula_ore"
+	"poke:nebula_ore":{
+		"sound":"stone",
+		"textures":"poke_nebula_ore"
 	},
-	"poke:nebula_block": {
-		"sound": "metal",
-		"textures": "poke_nebula_block"
+	"poke:nebula_block":{
+		"sound":"metal",
+		"textures":"poke_nebula_block"
 	},
-	"poke:godly_ore": {
-		"sound": "stone",
-		"textures": "poke_godly_ore"
+	"poke:godly_ore":{
+		"sound":"stone",
+		"textures":"poke_godly_ore"
 	},
-	"poke:demonic_ore": {
-		"sound": "deepslate",
-		"textures": "poke_demonic_ore"
+	"poke:demonic_ore":{
+		"sound":"deepslate",
+		"textures":"poke_demonic_ore"
 	},
-	"poke:galaxy_ore": {
-		"sound": "stone",
-		"textures": "poke_galaxy_ore"
+	"poke:galaxy_ore":{
+		"sound":"stone",
+		"textures":"poke_galaxy_ore"
 	},
-	"poke:void_ore": {
-		"sound": "deepslate",
-		"textures": "poke_void_ore"
+	"poke:void_ore":{
+		"sound":"deepslate",
+		"textures":"poke_void_ore"
 	},
-	"poke:void_block": {
-		"sound": "metal",
-		"textures": "poke_void_block"
+	"poke:void_block":{
+		"sound":"metal",
+		"textures":"poke_void_block"
 	},
-	"poke:shade_block": {
-		"sound": "metal",
-		"textures": "poke_shade_block"
+	"poke:shade_block":{
+		"sound":"metal",
+		"textures":"poke_shade_block"
 	},
-	"poke:godly_block": {
-		"sound": "metal",
-		"textures": "poke_godly_block"
+	"poke:godly_block":{
+		"sound":"metal",
+		"textures":"poke_godly_block"
 	},
-	"poke:galaxy_block": {
-		"sound": "metal",
-		"textures": "poke_galaxy_block"
+	"poke:galaxy_block":{
+		"sound":"metal",
+		"textures":"poke_galaxy_block"
 	},
-	"poke:demonic_block": {
-		"sound": "metal",
-		"textures": "poke_demonic_block"
+	"poke:demonic_block":{
+		"sound":"metal",
+		"textures":"poke_demonic_block"
 	},
-	"poke:cobalt_ore": {
-		"sound": "stone",
-		"textures": "poke_cobalt_ore"
+	"poke:cobalt_ore":{
+		"sound":"stone",
+		"textures":"poke_cobalt_ore"
 	},
-	"poke:cobalt_block": {
-		"sound": "copper",
-		"textures": "poke_cobalt_block"
+	"poke:cobalt_block":{
+		"sound":"copper",
+		"textures":"poke_cobalt_block"
 	},
-	"poke:nether_hellish_ore": {
-		"sound": "netherrack",
-		"textures": "poke_nether_hellish_ore"
+	"poke:nether_hellish_ore":{
+		"sound":"netherrack",
+		"textures":"poke_nether_hellish_ore"
 	},
-	"poke:nether_demonic_ore": {
-		"sound": "netherrack",
-		"textures": "poke_nether_demonic_ore"
+	"poke:nether_demonic_ore":{
+		"sound":"netherrack",
+		"textures":"poke_nether_demonic_ore"
 	},
-	"poke:limestone_brick_slab": {
-		"sound": "stone","textures":"poke_limestone_bricks"
+	"poke:limestone_brick_slab":{
+		"sound":"stone","textures":"poke_limestone_bricks"
 	},
-	"poke:limestone_bricks": {
-		"sound": "stone","textures":"poke_limestone_bricks"
+	"poke:limestone_bricks":{
+		"sound":"stone","textures":"poke_limestone_bricks"
 	},
-	"poke:limestone_brick_wall": {
-		"sound": "stone","textures":"poke_limestone_brick_wall"
+	"poke:limestone_brick_wall":{
+		"sound":"stone","textures":"poke_limestone_brick_wall"
 	},
-	"poke:listener_trophy": {
-		"sound": "metal"
+	"poke:listener_trophy":{
+		"sound":"metal"
 	},
-	"poke:ember_block": {
-		"sound": "stone",
-		"textures": "poke_ember_block"
+	"poke:ember_block":{
+		"sound":"stone",
+		"textures":"poke_ember_block"
 	},
-	"poke:scrappy_block": {
-		"sound": "stone",
-		"textures": "poke_scrappy_block"
+	"poke:scrappy_block":{
+		"sound":"stone",
+		"textures":"poke_scrappy_block"
 	},
-	"poke:nether_shade_ore": {
-		"sound": "netherrack",
-		"textures": "poke_nether_shade_ore"
+	"poke:nether_shade_ore":{
+		"sound":"netherrack",
+		"textures":"poke_nether_shade_ore"
 	},
-	"poke:nether_onyx_ore": {
-		"sound": "netherrack",
-		"textures": "poke_nether_onyx_ore"
+	"poke:nether_onyx_ore":{
+		"sound":"netherrack",
+		"textures":"poke_nether_onyx_ore"
 	},
-	"poke:astral_ore": {
-		"sound": "stone",
-		"textures": "poke_astral_ore"
+	"poke:astral_ore":{
+		"sound":"stone",
+		"textures":"poke_astral_ore"
 	},
-	"poke:astral_block": {
-		"sound": "metal",
-		"textures": "poke_astral_block"
+	"poke:astral_block":{
+		"sound":"metal",
+		"textures":"poke_astral_block"
 	},
-	"poke:lava_sponge": {
-		"sound": "sponge",
-		"textures": "poke_lava_sponge"
+	"poke:lava_sponge":{
+		"sound":"grass",
+		"textures":"poke_lava_sponge"
 	},
-	"poke:molten_lava_sponge": {
-		"sound": "moss_block",
-		"textures": "poke_molten_lava_sponge"
+	"poke:molten_lava_sponge":{
+		"sound":"moss_block",
+		"textures":"poke_molten_lava_sponge"
 	},
-	"poke:calibrated_cobblestone_generator_west": {
-		"sound": "copper",
+	"poke:calibrated_cobblestone_generator_west":{
+		"sound":"copper",
 		"textures":{
-			"down": "poke_block_breaker_bottom",
-			"up": "poke_block_breaker_top",
-			"north": "poke_cobble_gen_side",
-			"east": "poke_cobble_gen_side",
-			"south": "poke_cobble_gen_side",
-			"west": "poke_cobble_gen_front"
+			"down":"poke_block_breaker_bottom",
+			"up":"poke_block_breaker_top",
+			"north":"poke_cobble_gen_side",
+			"east":"poke_cobble_gen_side",
+			"south":"poke_cobble_gen_side",
+			"west":"poke_cobble_gen_front"
 		}
 	},
-	"poke:calibrated_cobblestone_generator_east": {
-		"sound": "copper",
+	"poke:calibrated_cobblestone_generator_east":{
+		"sound":"copper",
 		"textures":{
-			"down": "poke_block_breaker_bottom",
-			"up": "poke_block_breaker_top",
-			"north": "poke_cobble_gen_side",
-			"east": "poke_cobble_gen_front",
-			"south": "poke_cobble_gen_side",
-			"west": "poke_cobble_gen_side"
+			"down":"poke_block_breaker_bottom",
+			"up":"poke_block_breaker_top",
+			"north":"poke_cobble_gen_side",
+			"east":"poke_cobble_gen_front",
+			"south":"poke_cobble_gen_side",
+			"west":"poke_cobble_gen_side"
 		}
 	},
-	"poke:calibrated_cobblestone_generator_north": {
-		"sound": "copper",
+	"poke:calibrated_cobblestone_generator_north":{
+		"sound":"copper",
 		"textures":{
-			"down": "poke_block_breaker_bottom",
-			"up": "poke_block_breaker_top",
-			"north": "poke_cobble_gen_front",
-			"east": "poke_cobble_gen_side",
-			"south": "poke_cobble_gen_side",
-			"west": "poke_cobble_gen_side"
+			"down":"poke_block_breaker_bottom",
+			"up":"poke_block_breaker_top",
+			"north":"poke_cobble_gen_front",
+			"east":"poke_cobble_gen_side",
+			"south":"poke_cobble_gen_side",
+			"west":"poke_cobble_gen_side"
 		}
 	},
-	"poke:calibrated_cobblestone_generator_south": {
-		"sound": "copper",
+	"poke:calibrated_cobblestone_generator_south":{
+		"sound":"copper",
 		"textures":{
-			"down": "poke_block_breaker_bottom",
-			"up": "poke_block_breaker_top",
-			"north": "poke_cobble_gen_side",
-			"east": "poke_cobble_gen_side",
-			"south": "poke_cobble_gen_front",
-			"west": "poke_cobble_gen_side"
+			"down":"poke_block_breaker_bottom",
+			"up":"poke_block_breaker_top",
+			"north":"poke_cobble_gen_side",
+			"east":"poke_cobble_gen_side",
+			"south":"poke_cobble_gen_front",
+			"west":"poke_cobble_gen_side"
 		}
 	},
-	"poke:calibrated_cobblestone_generator_up": {
-		"sound": "copper",
+	"poke:calibrated_cobblestone_generator_up":{
+		"sound":"copper",
 		"textures":{
-			"down": "poke_cobble_gen_side180",
-			"up": "poke_cobble_gen_front",
-			"north": "poke_block_breaker_top",
-			"east": "poke_cobble_gen_side90",
-			"south": "poke_block_breaker_bottom",
-			"west": "poke_cobble_gen_side-90"
+			"down":"poke_cobble_gen_side180",
+			"up":"poke_cobble_gen_front",
+			"north":"poke_block_breaker_top",
+			"east":"poke_cobble_gen_side90",
+			"south":"poke_block_breaker_bottom",
+			"west":"poke_cobble_gen_side-90"
 		}
 	},
-	"poke:calibrated_cobblestone_generator_down": {
-		"sound": "copper",
+	"poke:calibrated_cobblestone_generator_down":{
+		"sound":"copper",
 		"textures":{
-			"down": "poke_cobble_gen_front",
-			"up": "poke_cobble_gen_side180",
-			"north": "poke_block_breaker_bottom",
-			"east": "poke_cobble_gen_side-90",
-			"south": "poke_block_breaker_top",
-			"west": "poke_cobble_gen_side90"
+			"down":"poke_cobble_gen_front",
+			"up":"poke_cobble_gen_side180",
+			"north":"poke_block_breaker_bottom",
+			"east":"poke_cobble_gen_side-90",
+			"south":"poke_block_breaker_top",
+			"west":"poke_cobble_gen_side90"
 		}
 	},
-	"poke:phantomed_conduit": {
-		"sound": "stone",
-		"textures": "poke_phantomed_conduit"
+	"poke:phantomed_conduit":{
+		"sound":"stone",
+		"textures":"poke_phantomed_conduit"
 	},
-	"poke:demonic_allay_conduit": {
-		"sound": "stone",
+	"poke:demonic_allay_conduit":{
+		"sound":"stone",
 		"textures":"poke_demonic_allay_conduit"
 	},
-	"poke:raw_astral_slab": {
-		"sound": "ancient_debris",
-		"textures": "poke_raw_astral_block"
+	"poke:raw_astral_slab":{
+		"sound":"ancient_debris",
+		"textures":"poke_raw_astral_block"
 	},
-	"poke:raw_cobalt_slab": {
-		"sound": "ancient_debris",
-		"textures": "poke_raw_cobalt_block"
+	"poke:raw_cobalt_slab":{
+		"sound":"ancient_debris",
+		"textures":"poke_raw_cobalt_block"
 	},
-	"poke:raw_demonic_slab": {
-		"sound": "ancient_debris",
-		"textures": "poke_raw_demonic_block"
+	"poke:raw_demonic_slab":{
+		"sound":"ancient_debris",
+		"textures":"poke_raw_demonic_block"
 	},
-	"poke:raw_galaxy_slab": {
-		"sound": "ancient_debris",
-		"textures": "poke_raw_galaxy_block"
+	"poke:raw_galaxy_slab":{
+		"sound":"ancient_debris",
+		"textures":"poke_raw_galaxy_block"
 	},
-	"poke:raw_godly_slab": {
-		"sound": "ancient_debris",
-		"textures": "poke_raw_godly_block"
+	"poke:raw_godly_slab":{
+		"sound":"ancient_debris",
+		"textures":"poke_raw_godly_block"
 	},
-	"poke:raw_hellish_slab": {
-		"sound": "ancient_debris",
-		"textures": "poke_raw_hellish_block"
+	"poke:raw_hellish_slab":{
+		"sound":"ancient_debris",
+		"textures":"poke_raw_hellish_block"
 	},
-	"poke:raw_holy_slab": {
-		"sound": "ancient_debris",
-		"textures": "poke_raw_holy_block"
+	"poke:raw_holy_slab":{
+		"sound":"ancient_debris",
+		"textures":"poke_raw_holy_block"
 	},
-	"poke:raw_onyx_slab": {
-		"sound": "ancient_debris",
-		"textures": "poke_raw_onyx_block"
+	"poke:raw_onyx_slab":{
+		"sound":"ancient_debris",
+		"textures":"poke_raw_onyx_block"
 	},
-	"poke:raw_nebula_slab": {
-		"sound": "ancient_debris",
-		"textures": "poke_raw_nebula_block"
+	"poke:raw_nebula_slab":{
+		"sound":"ancient_debris",
+		"textures":"poke_raw_nebula_block"
 	},
-	"poke:raw_shade_slab": {
-		"sound": "ancient_debris",
-		"textures": "poke_raw_shade_block"
+	"poke:raw_shade_slab":{
+		"sound":"ancient_debris",
+		"textures":"poke_raw_shade_block"
 	},
-	"poke:raw_void_slab": {
-		"sound": "ancient_debris",
-		"textures": "poke_raw_void_block"
+	"poke:raw_void_slab":{
+		"sound":"ancient_debris",
+		"textures":"poke_raw_void_block"
 	},
-	"poke:raw_astral_block": {
-		"sound": "ancient_debris",
-		"textures": "poke_raw_astral_block"
+	"poke:raw_astral_block":{
+		"sound":"ancient_debris",
+		"textures":"poke_raw_astral_block"
 	},
-	"poke:raw_cobalt_block": {
-		"sound": "ancient_debris",
-		"textures": "poke_raw_cobalt_block"
+	"poke:raw_cobalt_block":{
+		"sound":"ancient_debris",
+		"textures":"poke_raw_cobalt_block"
 	},
-	"poke:raw_demonic_block": {
-		"sound": "ancient_debris",
-		"textures": "poke_raw_demonic_block"
+	"poke:raw_demonic_block":{
+		"sound":"ancient_debris",
+		"textures":"poke_raw_demonic_block"
 	},
-	"poke:cobalt_golem_block": {
-		"sound": "stone",
-		"textures": "poke_cobalt_golem_block"
+	"poke:cobalt_golem_block":{
+		"sound":"stone",
+		"textures":"poke_cobalt_golem_block"
 	},
-	"poke:raw_galaxy_block": {
-		"sound": "ancient_debris",
-		"textures": "poke_raw_galaxy_block"
+	"poke:raw_galaxy_block":{
+		"sound":"ancient_debris",
+		"textures":"poke_raw_galaxy_block"
 	},
-	"poke:raw_godly_block": {
-		"sound": "ancient_debris",
-		"textures": "poke_raw_godly_block"
+	"poke:raw_godly_block":{
+		"sound":"ancient_debris",
+		"textures":"poke_raw_godly_block"
 	},
-	"poke:raw_hellish_block": {
-		"sound": "ancient_debris",
-		"textures": "poke_raw_hellish_block"
+	"poke:raw_hellish_block":{
+		"sound":"ancient_debris",
+		"textures":"poke_raw_hellish_block"
 	},
-	"poke:raw_holy_block": {
-		"sound": "ancient_debris",
-		"textures": "poke_raw_holy_block"
+	"poke:raw_holy_block":{
+		"sound":"ancient_debris",
+		"textures":"poke_raw_holy_block"
 	},
-	"poke:raw_onyx_block": {
-		"sound": "ancient_debris",
-		"textures": "poke_raw_onyx_block"
+	"poke:raw_onyx_block":{
+		"sound":"ancient_debris",
+		"textures":"poke_raw_onyx_block"
 	},
-	"poke:raw_nebula_block": {
-		"sound": "ancient_debris",
-		"textures": "poke_raw_nebula_block"
+	"poke:raw_nebula_block":{
+		"sound":"ancient_debris",
+		"textures":"poke_raw_nebula_block"
 	},
-	"poke:raw_shade_block": {
-		"sound": "ancient_debris",
-		"textures": "poke_raw_shade_block"
+	"poke:raw_shade_block":{
+		"sound":"ancient_debris",
+		"textures":"poke_raw_shade_block"
 	},
-	"poke:raw_void_block": {
-		"sound": "ancient_debris",
-		"textures": "poke_raw_void_block"
+	"poke:raw_void_block":{
+		"sound":"ancient_debris",
+		"textures":"poke_raw_void_block"
 	},
-	"poke:end_galaxy_ore": {
-		"sound": "ancient_debris",
-		"textures": "poke_end_galaxy_ore"
+	"poke:end_galaxy_ore":{
+		"sound":"ancient_debris",
+		"textures":"poke_end_galaxy_ore"
 	},
-	"poke:end_godly_ore": {
-		"sound": "ancient_debris",
-		"textures": "poke_end_godly_ore"
+	"poke:end_godly_ore":{
+		"sound":"ancient_debris",
+		"textures":"poke_end_godly_ore"
 	},
-	"poke:end_holy_ore": {
-		"sound": "ancient_debris",
-		"textures": "poke_end_holy_ore"
+	"poke:end_holy_ore":{
+		"sound":"ancient_debris",
+		"textures":"poke_end_holy_ore"
 	},
-	"poke:end_void_ore": {
-		"sound": "stone",
-		"textures": "poke_end_void_ore"
+	"poke:end_void_ore":{
+		"sound":"stone",
+		"textures":"poke_end_void_ore"
 	}
 }

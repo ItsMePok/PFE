@@ -25,7 +25,7 @@
 				]
 			},
 			"minecraft:tags": {"tags": [
-				"effect @a[rm=0.1,r=10] darkness 15 1 true"
+				"function pfe_items/panic_button"
 			]},
 			"minecraft:custom_components": [
 				"poke:cc_on_use"
