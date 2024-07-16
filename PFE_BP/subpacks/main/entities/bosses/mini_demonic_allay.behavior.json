@@ -184,7 +184,7 @@
 			"death_sound": {
 				"queue_command": {
 					"command": [
-						"playsound play.listenerboss.victory @a[r=40] ~~~"
+						"playsound poke.boss.victory @a[r=40] ~~~"
 					]
 				}
 			},

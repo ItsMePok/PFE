@@ -10,8 +10,13 @@
 		},
 		"components": {
 			"minecraft:icon":"poke_sparky_egg",
-			"minecraft:entity_placer": {
-				"entity": "poke:dragon"
+			"minecraft:custom_components":[
+				"poke:cc_spawnEgg"
+			],
+			"minecraft:tags":{
+				"tags":[
+					"poke:dragon"
+				]
 			}
 		}
 	}

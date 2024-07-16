@@ -10,7 +10,7 @@
 				"default": "textures/entity/bosses/poke_robo_golem"
 			},
 			"geometry": {
-				"default": "geometry.robo_golem"
+				"default": "geometry.poke.furnace_golem"
 			},
 			"animations": {
 				"walk": "animation.robo_golem.walk",

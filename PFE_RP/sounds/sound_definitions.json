@@ -723,20 +723,20 @@
 				}
 			]
 		},
-		"play.listenerboss.victory": {
+		"poke.boss.victory": {
 			"category": "player",
 			"max_distance": 32,
 			"sounds": [
 				"sounds/pfe/listener_victory"
 			]
 		},
-		"play.galatic_march": {
+		"play.galactic_march": {
 			"category": "ui",
 			"max_distance": 64,
 			"sounds": [
 				{
 					"stream":true,
-					"name": "sounds/pfe/galatic_march"
+					"name": "sounds/pfe/galactic_march"
 				}
 			]
 		},
@@ -746,7 +746,7 @@
 			"sounds": [
 				{
 					"stream":true,
-					"name": "sounds/pfe/galatic_march"
+					"name": "sounds/pfe/galactic_march"
 				}
 			]
 		},

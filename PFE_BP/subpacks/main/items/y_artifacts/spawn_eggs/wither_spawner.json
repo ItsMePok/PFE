@@ -10,8 +10,13 @@
 		},
 		"components": {
 			"minecraft:icon":"poke_wither_spawner",
-			"minecraft:entity_placer": {
-				"entity": "wither"
+			"minecraft:custom_components":[
+				"poke:cc_spawnEgg"
+			],
+			"minecraft:tags":{
+				"tags":[
+					"minecraft:wither"
+				]
 			},
 			"minecraft:durability": {
 				"damage_chance": {

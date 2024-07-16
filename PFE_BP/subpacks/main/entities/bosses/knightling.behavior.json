@@ -177,7 +177,7 @@
 				"queue_command": {
 					"command": [
 						"execute as @a[r=50] run music stop 2",
-						"execute as @a[r=50] run music play play.galatic_march 1 10"
+						"execute as @a[r=50] run music play play.galactic_march 1 10"
 					]
 				}
 			},

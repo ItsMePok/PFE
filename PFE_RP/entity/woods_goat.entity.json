@@ -10,7 +10,7 @@
 				"default": "textures/entity/neutral/poke_woods_goat"
 			},
 			"geometry": {
-				"default": "geometry.woods_goat"
+				"default": "geometry.poke.goat"
 			},
 			"spawn_egg": {
 				"base_color": "#642900",

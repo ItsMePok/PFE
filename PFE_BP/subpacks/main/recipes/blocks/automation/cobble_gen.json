@@ -1,17 +1,17 @@
 {
-	"format_version": "1.20.10",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke:cobble_gen"
+	"format_version":"1.20.10",
+	"minecraft:recipe_shaped":{
+		"description":{
+			"identifier":"poke:cobble_gen"
 		},
-		"tags": ["crafting_table"],
-		"pattern": [
+		"tags":["crafting_table"],
+		"pattern":[
 			"CBC",
 			"GSU",
 			"CMC"
 		],
-		"unlock": [
-			{"item": "poke:cobblestone_gen"},
+		"unlock":[
+			{"item":"poke:cobblestone_gen"},
 			{"item":"poke:banished_star"},
 			{"item":"poke:cobalt_block"},
 			{"item":"poke:block_breaker"},
@@ -19,7 +19,7 @@
 			{"item":"poke:diamond_upgrade_core"},
 			{"item":"poke:gps_module"}
 		],
-		"key": {
+		"key":{
 			"C":{"item":"poke:cobalt_block"},
 			"B":{"item":"poke:block_breaker"},
 			"G":{"item":"poke:cobblestone_gen"},
@@ -27,8 +27,8 @@
 			"U":{"item":"poke:diamond_upgrade_core"},
 			"M":{"item":"poke:gps_module"}
 		},
-		"result": [
-			{"item": "poke:cobble_gen"}
+		"result":[
+			{"item":"poke:cobble_gen"}
 		]
 	}
 }

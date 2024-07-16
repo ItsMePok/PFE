@@ -10,7 +10,7 @@
 				"default": "textures/entity/passive/poke_shroomfin"
 			},
 			"geometry": {
-				"default": "geometry.shroomfin"
+				"default": "geometry.poke.shroomfin"
 			},
 			"animations": {
 				"move": "animation.shroomfin.move"

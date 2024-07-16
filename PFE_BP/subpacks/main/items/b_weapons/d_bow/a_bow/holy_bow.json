@@ -58,11 +58,11 @@
 					}
 				],
 				"charge_on_draw": false,
-				"max_draw_duration": 0,
-				"scale_power_by_draw_duration": false
+				"max_draw_duration": 0.25,
+				"scale_power_by_draw_duration": true
 			},
 			"minecraft:hand_equipped": true,
-			"minecraft:use_animation": "bow",
+			"minecraft:use_animation": "none",
 			"minecraft:enchantable": {
 				"value": 75,
 				"slot": "bow"
@@ -73,7 +73,10 @@
 					"max": 100
 				},
 				"max_durability": 1250
-			}
+			},
+			"minecraft:custom_components":[
+				"poke:cc_bowAim"
+			]
 		}
 	}
 }

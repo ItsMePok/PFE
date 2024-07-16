@@ -10,7 +10,7 @@
 				"default": "textures/entity/passive/poke_shallow_cod"
 			},
 			"geometry": {
-				"default": "geometry.shallow_cod"
+				"default": "geometry.poke.sporefish"
 			},
 			"scripts": {
 				"pre_animation": [

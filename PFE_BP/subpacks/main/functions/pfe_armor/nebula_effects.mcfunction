@@ -6,3 +6,4 @@ effect @s village_hero 30 2 true
 effect @s fire_resistance 30 0 true
 effect @s strength 30 1 true
 effect @s water_breathing 30 1 true
+effect @s health_boost 60 4 true

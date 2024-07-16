@@ -15,13 +15,13 @@
 				"black": "textures/entity/passive/duck/poke_black"
 			},
 			"geometry": {
-				"default": "geometry.duck"
+				"default": "geometry.poke.duck"
 			},
 			"animations": {
-				"move": "animation.duck.move",
-				"general": "animation.duck.general",
+				"move": "animation.poke.duck.move",
+				"general": "animation.poke.duck.general",
 				"look_at_target": "animation.common.look_at_target",
-				"baby_transform": "animation.duck.baby_transform"
+				"baby_transform": "animation.poke.duck.baby_transform"
 			},
 			"scripts": {
 				"animate": [

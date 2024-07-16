@@ -9,7 +9,7 @@
 			},
 			"textures": {
 				"default": "textures/entity/passive/poke_warped_sporeshroom",
-				"brown": "textures/entity/warped_sporeshroom"
+				"brown": "textures/entity/passive/poke_warped_sporeshroom"
 			},
 			"geometry": {
 				"default": "geometry.warped_sporeshroom"

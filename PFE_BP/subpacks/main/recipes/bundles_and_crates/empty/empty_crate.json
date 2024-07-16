@@ -8,34 +8,19 @@
             "identifier": "poke:empty_crate"
         },
         "unlock": [
-            {
-                "item": "planks"
-            },
-            {
-                "item": "barrel"
-            },
-            {
-                "item": "poke:cobalt_nugget"
-            },
-            {
-                "item": "poke:sugarcane_crate"
-            }
+            {"item": "planks"},
+            {"item": "stick"},
+            {"item": "poke:cobalt_nugget"},
+            {"item": "poke:sugarcane_crate"}
         ],
         "pattern": [
             "C C",
-            "#B#",
+            "# #",
             "C#C"
         ],
         "key": {
-            "#": {
-                "item": "planks"
-            },
-            "B": {
-                "item": "barrel"
-            },
-            "C": {
-                "item": "poke:cobalt_nugget"
-            }
+            "#": {"item": "stick"},
+            "C": {"item": "poke:cobalt_nugget"}
         },
         "result": [
             {

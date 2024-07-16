@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.60",
+	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:galaxy_boots",
@@ -11,7 +11,7 @@
 		"components": {
 			"minecraft:max_stack_size": 1,
 			"minecraft:enchantable": {
-				"value": 9,
+				"value": 30,
 				"slot": "armor_feet"
 			},
 			"minecraft:durability": {
@@ -21,7 +21,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": { "textures": {"default": "galaxy_boots" }}, 
+			"minecraft:icon":"galaxy_boots", 
 			"minecraft:wearable": {
 				"slot": "slot.armor.feet",
 				"protection": 12
@@ -29,31 +29,25 @@
 			"minecraft:repairable": {
 				"repair_items": [
 					{
-						"items": [
-							"poke:repair_core"
-						],
+						"items": ["poke:repair_core"],
 						"repair_amount": "query.max_durability"
 					},
 					{
-						"items": [
-							"poke:galaxy_ingot"
-						],
+						"items": ["poke:galaxy_ingot"],
 						"repair_amount": "query.max_durability*0.25"
 					},
 					{
-						"items": [
-							"poke:galaxy_boots"
-						],
-						"repair_amount": "context.other->query.remaining_durability+0.12*context.other->query.max_durability"
+						"items": ["poke:galaxy_nugget"],
+						"repair_amount": "query.max_durability*0.028"
 					}
 				]
 			},
 			"minecraft:tags": { 
-			  "tags": [ 
-				"minecraft:is_armor", 
-				"minecraft:trimmable_armors" 
-			  ] 
+				"tags": [ 
+					"minecraft:is_armor", 
+					"minecraft:trimmable_armors" 
+				] 
 			} 
-		  } 
 		} 
-	  }
+	} 
+}

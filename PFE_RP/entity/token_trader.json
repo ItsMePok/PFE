@@ -10,7 +10,7 @@
 				"default": "textures/entity/traders/poke_token_trader"
 			},
 			"geometry": {
-				"default": "geometry.token_trader"
+				"default": "geometry.poke.token_trader"
 			},
 			"scripts": {
 				"scale": 1,"pre_animation": ["variable.raise_arms=1;"]

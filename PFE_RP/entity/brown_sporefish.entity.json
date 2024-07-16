@@ -10,7 +10,7 @@
 				"default": "textures/entity/passive/poke_brown_sporefish"
 			},
 			"geometry": {
-				"default": "geometry.brown_sporefish"
+				"default": "geometry.poke.sporefish"
 			},
 			"scripts": {
 				"pre_animation": [

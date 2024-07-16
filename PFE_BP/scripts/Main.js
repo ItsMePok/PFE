@@ -1,4 +1,4 @@
-import { system, world, EquipmentSlot, GameMode, EntityComponentTypes, ItemComponentTypes, ItemStack, EnchantmentTypes} from "@minecraft/server";
+import { system, world, EquipmentSlot, GameMode, EntityComponentTypes, ItemComponentTypes, ItemStack} from "@minecraft/server";
 //Armor effects. I split into 4 because it should reduce the amount of commands running at a time reducing the random lag spikes
 system.runInterval(() => {
     world.getDimension("overworld").runCommandAsync("execute as @a run function pfe_armor/effects");
@@ -856,25 +856,67 @@ class PFEUpgrader {
         return;
     }
 }
+//Survival Spawn Eggs
+class PFESpawnEgg{
+    onUseOn(data){
+        const faceloc = data.faceLocation
+        const blockface= data.blockFace
+        var facelocx = --faceloc.x
+        var facelocy = --faceloc.y
+        var facelocz = --faceloc.z
+        if(blockface == 'North'){
+            console.warn ('PASSed')
+            var facelocz = facelocz +1.5
+        }
+        if(blockface == 'South'){
+            console.warn ('PASSed')
+            var facelocz = facelocz -1.5
+        }
+        if(blockface == 'East'){
+            console.warn ('PASSed')
+            var facelocx = facelocx -1.5
+        }
+        if(blockface == 'West'){
+            console.warn ('PASSed')
+            var facelocx = facelocx +1.5
+        }
+        if(blockface == 'Up'){
+            console.warn ('PASSed')
+            var facelocy = facelocy -1.5
+        }
+        if(blockface == 'Down'){
+            console.warn ('PASSed')
+            var facelocy = facelocy +2
+        }
+        const vec3 = { x: -facelocx, y: -facelocy, z: -facelocz};
+        const mobid = data.itemStack.getTags()//Mob identifier should be the only tag on the item
+        data.source.dimension.spawnEntity(''+mobid,vec3)
+    }
+}
+class PFEBowAim {
+    onUse(data){
+        const cplayers = data.source.dimension.getPlayers({excludeNames:[''+data.source.name]})
+        var cplayersLength = cplayers.length;
+        for (var i = cplayersLength; i > 0; i--) {
+            data.source.playAnimation('animation.humanoid.bow_and_arrow',{stopExpression: '!q.is_using_item', players:[cplayers[i-1].name]})
+        }
+        return;
+    }
+}
+class PFECrossbowAim {
+    onUse(data){
+        const cplayers = data.source.dimension.getPlayers({excludeNames:[''+data.source.name]})
+        var cplayersLength = cplayers.length;
+        data.source.playAnimation('animation.player.first_person.crossbow_equipped',{stopExpression:'!q.is_using_item', players:[data.source.name+'']}) //Hand charging movement
+        for (var i = cplayersLength; i > 0; i--) {
+            data.source.playAnimation('third_person_crossbow_equipped',{stopExpression: '!q.is_using_item', players:[cplayers[i-1].name]})//Hand charging for everyone else
+        }
+        return;
+    }
+}
 class PFEBlockPlacer{
     onTick(data) {
         return;
-        var weather = data.block.permutation.getState('pfe:weather')
-        if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
-            if (data.dimension.getWeather() == 'Clear' && weather != 0){
-                data.block.setPermutation(data.block.permutation.withState('pfe:weather',0))
-                return;
-            }
-            if (data.dimension.getWeather() != 'Thunder' && data.dimension.getWeather() == 'Rain' && weather != 1){
-            data.block.setPermutation(data.block.permutation.withState('pfe:weather',1))
-            return;
-            }
-            if (data.dimension.getWeather() == 'Thunder' && weather != 2){
-                data.block.setPermutation(data.block.permutation.withState('pfe:weather',2))
-                return;
-            }
-            return;
-        }
     }
 }
 //Tree Capitator (not too sure what im doing :( )
@@ -977,6 +1019,15 @@ world.beforeEvents.playerBreakBlock.subscribe(e => {
 });
 //Custom Component Registery (may warn about a spike on world loaing because of how many components)
 world.beforeEvents.worldInitialize.subscribe(event => {
+    event.itemComponentRegistry.registerCustomComponent(
+        "poke:cc_bowAim", new PFEBowAim()
+    );
+    event.itemComponentRegistry.registerCustomComponent(
+        "poke:cc_crossbowAim", new PFECrossbowAim()
+    );
+    event.itemComponentRegistry.registerCustomComponent(
+        "poke:cc_spawnEgg", new PFESpawnEgg()
+    );
     event.itemComponentRegistry.registerCustomComponent(
         "poke:cas", new PFECassette()
     );

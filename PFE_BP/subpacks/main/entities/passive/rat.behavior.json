@@ -101,6 +101,9 @@
 				"minecraft:on_target_acquired": {}
 			},
 			"minecraft:wolf_wild": {
+				"minecraft:despawn": {
+					"despawn_from_distance": {}
+				},
 				"minecraft:behavior.avoid_mob_type": {
 					"priority": 3,
 					"entity_types": [
@@ -168,6 +171,7 @@
 				}
 			},
 			"minecraft:wolf_tame": {
+				"minecraft:persistent": {},
 				"minecraft:is_tamed": {},
 				"minecraft:behavior.follow_owner": {
 					"priority": 6,
@@ -425,9 +429,6 @@
 						"heal_amount": 10
 					}
 				]
-			},
-			"minecraft:despawn": {
-				"despawn_from_distance": {}
 			},
 			"minecraft:behavior.float": {},
 			"minecraft:behavior.stay_while_sitting": {

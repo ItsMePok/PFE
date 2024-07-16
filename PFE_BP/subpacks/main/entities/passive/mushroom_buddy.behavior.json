@@ -58,10 +58,13 @@
 						"event": "minecraft:on_tame",
 						"target": "self"
 					}
+				},
+				"minecraft:despawn": {
+					"despawn_from_distance": {}
 				}
-				
 			},
 			"minecraft:mushroom_buddy_tame": {
+				"minecraft:persistent": {},
 				"minecraft:is_tamed": {},
 				"minecraft:health": {
 					"value": 30,
@@ -255,9 +258,7 @@
 					"deals_damage": false
 				}
 			},
-			"minecraft:despawn": {
-				"despawn_from_distance": {}
-			},
+			
 			"minecraft:behavior.float": {
 				"priority": 0
 			},

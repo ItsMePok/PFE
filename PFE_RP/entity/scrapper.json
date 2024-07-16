@@ -10,7 +10,7 @@
 				"default": "textures/entity/traders/poke_shopkeeper"
 			},
 			"geometry": {
-				"default": "geometry.shopkeeper"
+				"default": "geometry.poke.shopkeeper"
 			},
 			"scripts": {
 				"scale": 1

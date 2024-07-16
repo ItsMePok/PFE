@@ -16,7 +16,17 @@
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 30
 			},
-			"minecraft:geometry":{"identifier": "minecraft:geometry.full_block"},
+			"minecraft:flammable": {
+				"destroy_chance_modifier": 20,
+				"catch_chance_modifier": 5
+			},
+			"minecraft:geometry":{"identifier": "geometry.poke.crate"},
+			"minecraft:material_instances":{
+				"*": {
+					"texture": "poke_red_mushroom_crate",
+					"render_method": "opaque"
+				}
+			},
 			"tag:pfe": {},
 			"minecraft:map_color": "#bb3e35"
 		}

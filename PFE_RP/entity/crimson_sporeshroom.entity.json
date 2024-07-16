@@ -9,7 +9,7 @@
 			},
 			"textures": {
 				"default": "textures/entity/passive/poke_crimson_sporeshroom",
-				"brown": "textures/entity/crimson_sporeshroom"
+				"brown": "textures/entity/passive/poke_crimson_sporeshroom"
 			},
 			"geometry": {
 				"default": "geometry.crimson_sporeshroom"

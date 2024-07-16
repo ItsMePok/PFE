@@ -11,7 +11,7 @@
 				"default": "textures/entity/passive/poke_yak"
 			},
 			"geometry": {
-				"default": "geometry.yak"
+				"default": "geometry.poke.yak"
 			},
 			"animations": {
 				"walk": "animation.yak.walk",

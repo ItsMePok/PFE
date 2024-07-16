@@ -1,0 +1,5 @@
+diagnostic.disable.behaviorpack.block.missing=true
+diagnostic.disable.resourcepack.sound.missing=true
+diagnostic.disable.debugger.internal.exception=true
+diagnostic.disable.resourcepack.sound.missing=true
+diagnostic.disable.resourcepack.model.bone.missing=true

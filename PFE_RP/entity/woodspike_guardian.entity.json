@@ -14,8 +14,8 @@
 				"beam": "textures/entity/guardian_beam"
 			},
 			"geometry": {
-				"default": "geometry.woodspike_guardian",
-				"ghost": "geometry.woodspike_guardian"
+				"default": "geometry.poke.woodspike_guardian",
+				"ghost": "geometry.poke.woodspike_guardian"
 			},
 			"animations": {
 				"setup": "animation.guardian.setup",

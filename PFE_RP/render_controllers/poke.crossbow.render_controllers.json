@@ -9,7 +9,9 @@
             "texture.crossbow_pulling_0",
             "texture.crossbow_pulling_1",
             "texture.crossbow_pulling_2",
-            "texture.crossbow_arrow",
+            "texture.crossbow_arrow"
+          ],
+          "array.crossbow_charged_textures": [
             "texture.crossbow_rocket"
           ]
         },
@@ -19,14 +21,17 @@
             "geometry.crossbow_pulling_0",
             "geometry.crossbow_pulling_1",
             "geometry.crossbow_pulling_2",
+            "geometry.crossbow_arrow"
+          ],
+          "array.crossbow_charged_geo": [
             "geometry.crossbow_arrow",
             "geometry.crossbow_rocket"
           ]
         }
       },
-      "geometry": "array.crossbow_geo_frames[query.get_animation_frame]",
+      "geometry": "return array.crossbow_geo_frames[v.frame];",
       "materials": [ { "*": "variable.is_enchanted ? material.enchanted : material.default" } ],
-      "textures": [ "array.crossbow_texture_frames[query.get_animation_frame]", "texture.enchanted" ]
+      "textures": [ "return array.crossbow_texture_frames[v.frame];", "texture.enchanted" ]
     }
   }
 }

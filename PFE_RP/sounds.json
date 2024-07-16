@@ -532,7 +532,7 @@
 					"ambient": "mob.irongolem.say",
 					"death": {
 						"pitch": 1,
-						"sound": "play.listenerboss.victory"
+						"sound": "poke.boss.victory"
 					},
 					"hurt": {
 						"pitch": 0.8,
@@ -560,7 +560,7 @@
 					"ambient": "mob.irongolem.say",
 					"death": {
 						"pitch": 1,
-						"sound": "play.listenerboss.victory"
+						"sound": "poke.boss.victory"
 					},
 					"hurt": {
 						"pitch": 1,
@@ -589,7 +589,7 @@
 					"cast.spell": "mob.evocation_illager.cast_spell",
 					"death": {
 						"pitch": 1,
-						"sound": "play.listenerboss.victory"
+						"sound": "poke.boss.victory"
 					},
 					"hurt": "mob.skeleton.hurt",
 					"prepare.summon": "mob.evocation_illager.prepare_summon",
@@ -606,7 +606,7 @@
 					},
 					"death": {
 						"pitch": 1,
-						"sound": "play.listenerboss.victory"
+						"sound": "poke.boss.victory"
 					},
 					"hurt": {
 						"pitch": 0.8,
@@ -629,7 +629,7 @@
 					},
 					"death": {
 						"pitch": 1,
-						"sound": "play.listenerboss.victory"
+						"sound": "poke.boss.victory"
 					},
 					"hurt": {
 						"pitch": 0.8,
@@ -652,7 +652,7 @@
 					},
 					"death": {
 						"pitch": 1,
-						"sound": "play.listenerboss.victory"
+						"sound": "poke.boss.victory"
 					},
 					"hurt": {
 						"pitch": 1,
@@ -671,7 +671,7 @@
 				"events": {
 					"death": {
 						"pitch": 1,
-						"sound": "play.listenerboss.victory"
+						"sound": "poke.boss.victory"
 					},
 					"hurt": {
 						"pitch": [0.8, 1.2],

@@ -39,6 +39,7 @@
 				"size": [16, 3, 16]
 			},
 			"tag:pfe":{},
+			"tag:minecraft:one_way_collidable":{},
 			"minecraft:custom_components":[
 				"poke:trapdoor_event"
 			]

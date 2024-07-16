@@ -10,7 +10,7 @@
 				"default": "textures/entity/passive/poke_red_sporefish"
 			},
 			"geometry": {
-				"default": "geometry.red_sporefish"
+				"default": "geometry.poke.sporefish"
 			},
 			"scripts": {
 				"pre_animation": [

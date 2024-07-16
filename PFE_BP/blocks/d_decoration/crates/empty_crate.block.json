@@ -20,6 +20,13 @@
 				"destroy_chance_modifier": 20,
 				"catch_chance_modifier": 5
 			},
+			"minecraft:geometry":{"identifier": "geometry.poke.crate"},
+			"minecraft:material_instances":{
+				"*": {
+					"texture": "poke_empty_crate",
+					"render_method": "alpha_test"
+				}
+			},
 			"tag:pfe": {},
 			"minecraft:map_color": "#76592c"
 		}

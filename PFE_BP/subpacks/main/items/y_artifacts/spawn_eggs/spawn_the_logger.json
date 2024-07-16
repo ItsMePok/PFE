@@ -10,7 +10,14 @@
 		},
 		"components": {
 			"minecraft:icon":"poke_spawn_logger",
-			"minecraft:entity_placer": {"entity": "poke:the_logger"}
+			"minecraft:custom_components":[
+				"poke:cc_spawnEgg"
+			],
+			"minecraft:tags":{
+				"tags":[
+					"poke:the_logger"
+				]
+			}
 		}
 	}
 }

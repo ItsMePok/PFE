@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.60",
+	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:galaxy_chestplate",
@@ -10,7 +10,7 @@
 		"components": {
 			"minecraft:max_stack_size": 1,
 			"minecraft:enchantable": {
-				"value": 9,
+				"value": 30,
 				"slot": "armor_torso"
 			},
 			"minecraft:durability": {
@@ -20,38 +20,32 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": { "textures": {"default": "galaxy_chestplate" }}, 
+			"minecraft:icon":"galaxy_chestplate", 
 			"minecraft:wearable": {
 				"slot": "slot.armor.chest","protection": 17
 			},
 			"minecraft:repairable": {
 				"repair_items": [
 					{
-						"items": [
-							"poke:repair_core"
-						],
+						"items": ["poke:repair_core"],
 						"repair_amount": "query.max_durability"
 					},
 					{
-						"items": [
-							"poke:galaxy_ingot"
-						],
+						"items": ["poke:galaxy_ingot"],
 						"repair_amount": "query.max_durability*0.25"
 					},
 					{
-						"items": [
-							"poke:galaxy_chestplate"
-						],
-						"repair_amount": "context.other->query.remaining_durability+0.12*context.other->query.max_durability"
+						"items": ["poke:galaxy_nugget"],
+						"repair_amount": "query.max_durability*0.028"
 					}
 				]
 			},
 			"minecraft:tags": { 
 				"tags": [ 
-				  "minecraft:is_armor", 
-				  "minecraft:trimmable_armors" 
+					"minecraft:is_armor", 
+					"minecraft:trimmable_armors" 
 				] 
-			  } 
 			} 
-		  } 
-		}
+		} 
+	} 
+}

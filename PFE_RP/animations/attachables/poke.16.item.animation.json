@@ -155,6 +155,48 @@
 					}
 				}
 			}
+		},
+		"animation.poke.bow.frames": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.25,
+			"timeline": {
+				"0.0":"v.frame =1;",
+				"0.125":"v.frame=2;",
+				"0.25":"v.frame=3;"
+			}
+		},
+		"animation.poke.crossbow.frames": {
+			"loop": false,
+			"animation_length": 1.25,
+			"sound_effects": {
+				"0.15":{"effect": "crossbow.loading.start"},
+				"0.35":{"effect": "crossbow.loading.middle"},
+				"0.75":{"effect": "crossbow.loading.middle"},
+				"1.25":{"effect": "crossbow.loading.end"}
+			},
+			"timeline": {
+				"0.25":"v.frame =1;",
+				"0.5":"v.frame=2;",
+				"0.75":"v.frame=3;",
+				"1.25":"v.frame=4;"
+			}
+		},
+		"animation.poke.crossbow.charged": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0,
+			"timeline": {
+				"0.0":"v.charged=1;v.frame=4;"
+			}
+		},
+		"animation.poke.crossbow.shoot": {
+			"loop": true,
+			"animation_length": 0.1,
+			"sound_effects": {
+				"0.0":{"effect": "crossbow.shoot"}
+			},
+			"timeline": {
+				"0.1":"v.charged=2;"
+			}
 		}
 	}
 }

@@ -19,7 +19,7 @@
 				"persian_tame": "textures/entity/passive/poke_sporecat/persian_tame"
 			},
 			"geometry": {
-				"default": "geometry.warped_sporecat"
+				"default": "geometry.poke.sporecat"
 			},
 			"animations": {
 				"sneak": "animation.warped_sporecat.sneak",

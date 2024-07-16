@@ -88,7 +88,10 @@
 					"max": 100
 				},
 				"max_durability": 1250
-			}
+			},
+			"minecraft:custom_components":[
+				"poke:cc_crossbowAim"
+			]
 		}
 	}
 }

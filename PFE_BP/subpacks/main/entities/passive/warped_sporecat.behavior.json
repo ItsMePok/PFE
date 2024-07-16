@@ -59,6 +59,9 @@
 				}
 			},
 			"minecraft:warped_sporecat_wild": {
+				"minecraft:despawn": {
+					"despawn_from_distance": {}
+				},
 				"minecraft:health": {
 					"value": 10,
 					"max": 10
@@ -138,6 +141,7 @@
 				}
 			},
 			"minecraft:warped_sporecat_tame": {
+				"minecraft:persistent": {},
 				"minecraft:is_tamed": {},
 				"minecraft:health": {
 					"value": 20,
@@ -325,9 +329,6 @@
 				"can_find_poi": false,
 				"can_migrate": true,
 				"first_founding_reward": 0
-			},
-			"minecraft:despawn": {
-				"despawn_from_distance": {}
 			},
 			"minecraft:behavior.float": {
 				"priority": 0

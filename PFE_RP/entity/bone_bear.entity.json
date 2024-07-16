@@ -10,7 +10,7 @@
 				"default": "textures/entity/neutral/poke_bone_bear"
 			},
 			"geometry": {
-				"default": "geometry.bone_bear"
+				"default": "geometry.poke.bear"
 			},
 			"animations": {
 				"walk": "animation.bone_bear.walk",

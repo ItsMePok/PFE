@@ -3,15 +3,9 @@
 	"minecraft:client_entity": {
 		"description": {
 			"identifier": "poke:windswept_bear",
-			"materials": {
-				"default": "entity_alphatest"
-			},
-			"textures": {
-				"default": "textures/entity/neutral/poke_windswept_bear"
-			},
-			"geometry": {
-				"default": "geometry.windswept_bear"
-			},
+			"materials": {"default": "polar_bear"},
+			"textures": {"default": "textures/entity/neutral/poke_windswept_bear"},
+			"geometry": {"default": "geometry.poke.bear"},
 			"animations": {
 				"walk": "animation.windswept_bear.walk",
 				"move": "animation.windswept_bear.move",

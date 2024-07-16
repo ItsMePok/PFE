@@ -302,7 +302,7 @@
 			"minecraft:entity_spawned": {
 				"queue_command": {
 					"command": [
-						"playanimation @s animation.cobalt_golem.inital_spawn"
+						"playanimation @s animation.poke.cobalt_golem.spawn"
 					]
 				},
 				"randomize": [

@@ -10,7 +10,7 @@
 				"default": "textures/entity/hostile/poke_demonic_allay"
 			},
 			"geometry": {
-				"default": "geometry.demonic_allay"
+				"default": "geometry.poke.demonic_allay"
 			},
 			"spawn_egg": {
 				"base_color": "#0f0f0f",

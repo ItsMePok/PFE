@@ -9,7 +9,7 @@
       }
     },
     "components": {
-      "minecraft:icon":"poke_goldy_battleaxe",
+      "minecraft:icon":"poke_godly_battleaxe",
       "minecraft:max_stack_size": 1,
       "minecraft:hand_equipped": true,
       "minecraft:durability": {
@@ -33,13 +33,13 @@
             "items": [
               "poke:godly_ingot"
             ],
-            "repair_amount": 500
+            "repair_amount": "query.max_durability *0.25"
           },
           {
             "items": [
               "poke:godly_nugget"
             ],
-            "repair_amount": 56
+            "repair_amount": "query.max_durability *0.028"
           }
         ]
       },

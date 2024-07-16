@@ -21,7 +21,7 @@
 			},
 			"tag:pfe": {},
 			"minecraft:light_emission": 15,
-			"minecraft:map_color": "#1815c5",
+			"minecraft:map_color": "#2c0146",
 			"minecraft:custom_components":[
 				"poke:cc_bulbs"
 			]

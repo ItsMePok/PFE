@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.duck.baby_transform": {
+		"animation.poke.duck.baby_transform": {
 			"loop": true,
 			"bones": {
 				"head": {
@@ -9,7 +9,7 @@
 				}
 			}
 		},
-		"animation.duck.general": {
+		"animation.poke.duck.general": {
 			"loop": true,
 			"bones": {
 				"wing0": {
@@ -20,7 +20,7 @@
 				}
 			}
 		},
-		"animation.duck.move": {
+		"animation.poke.duck.move": {
 			"loop": true,
 			"anim_time_update": "query.modified_distance_moved",
 			"bones": {

@@ -10,8 +10,13 @@
 		},
 		"components": {
 			"minecraft:icon":"poke_money_man",
-			"minecraft:entity_placer": {
-				"entity": "poke:money_man"
+			"minecraft:custom_components":[
+				"poke:cc_spawnEgg"
+			],
+			"minecraft:tags":{
+				"tags":[
+					"poke:money_man"
+				]
 			}
 		}
 	}

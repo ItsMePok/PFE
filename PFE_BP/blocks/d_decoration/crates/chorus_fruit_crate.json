@@ -3,20 +3,31 @@
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:chorus_fruit_crate",
-			"menu_category": {
-				"category": "construction"
+			"menu_category":{
+				"category":"construction"
 			}
 		},
-		"components": {
-			"minecraft:collision_box": true,
-			"minecraft:selection_box": true,
-			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 1
+		"components":{
+			"minecraft:collision_box":true,
+			"minecraft:selection_box":true,
+			"minecraft:destructible_by_mining":{
+				"seconds_to_destroy":1
 			},
-			"minecraft:destructible_by_explosion": {
-				"explosion_resistance": 30
+			"minecraft:destructible_by_explosion":{
+				"explosion_resistance":30
 			},
-			"tag:pfe": {},
+			"minecraft:flammable": {
+				"destroy_chance_modifier": 20,
+				"catch_chance_modifier": 5
+			},
+			"minecraft:geometry":{"identifier": "geometry.poke.crate"},
+			"minecraft:material_instances":{
+				"*": {
+					"texture": "poke_chorus_fruit_crate",
+					"render_method": "opaque"
+				}
+			},
+			"tag:pfe":{},
 			"minecraft:map_color": "#7a3c91"
 		}
 	}

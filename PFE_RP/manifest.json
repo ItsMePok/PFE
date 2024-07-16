@@ -1,19 +1,11 @@
 {
-	"format_version": 2,
+
 	"header": {
-		"name": "§bv1.2.1 §uPFE §aRP",
+		"name": "§ev1.2.1.1 §uPFE §aRP",
 		"description": "pack.description",
-		"uuid": "ca89d0a9-802a-4e34-97c8-2ab902f8095f",
+		"uuid": "4f92ad38-c28b-41fd-8fb4-004f1ed7cd5e",
 		"version": [1, 0, 0],
 		"min_engine_version": [1, 21, 0]
-	},
-	"metadata": {
-		"authors": ["ItsMePok"],
-		"generated_with": {
-			"blockbench_block_wizard": ["1.2.1"],
-			"blockbench_item_wizard": ["1.0.1", "1.0.2", "1.0.4"],
-			"blockbench_entity_wizard": ["1.3.1", "1.3.2", "1.4.0", "1.5.1"]
-		}
 	},
 	"modules": [
 		{
@@ -25,8 +17,17 @@
 	],
 	"dependencies": [
 		{
-			"uuid": "62f4e925-8582-4391-b07d-2996d59fc4c9",
+			"uuid": "2b2b53b2-7448-4571-9754-5c4cc6e15866",
 			"version": [1, 0, 0]
 		}
-	]
+	],
+	"format_version": 2,
+	"metadata": {
+		"authors": ["ItsMePok"],
+		"generated_with": {
+			"blockbench_block_wizard": ["1.2.1"],
+			"blockbench_item_wizard": ["1.0.1", "1.0.2", "1.0.4"],
+			"blockbench_entity_wizard": ["1.3.1", "1.3.2", "1.4.0", "1.5.1"]
+		}
+	}
 }
