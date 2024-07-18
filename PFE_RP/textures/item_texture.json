@@ -185,7 +185,6 @@
 		"poke_hellish_sword":{"textures":"textures/items/hellish/poke_hellish_sword"},
 		"poke_amethyst_sword":{"textures":"textures/items/amethyst/poke_amethyst_sword"},
 		"poke_ban_hammer":{"textures":"textures/items/banished/poke_ban_hammer"},
-		"poke_speed_boots":{"textures":"textures/items/swift/poke_speed_boots"},
 		"poke_wither_spawner":{"textures":"textures/items/boss/poke_wither_spawner"},
 		"poke_demonic_slasher":{"textures":"textures/items/demonic/poke_demonic_slasher"},
 		"poke_demonic_stick":{"textures":"textures/items/demonic/poke_demonic_stick"},
@@ -565,7 +564,8 @@
 		"springy_robey_helmet":{"textures":"textures/items/robes/springy_robey/poke_springy_robey_hat"},
 		"springy_robey_chestplate":{"textures":"textures/items/robes/springy_robey/poke_springy_robey_chestplate"},
 		"feather_robe_helmet":{"textures":"textures/items/robes/feather_robe/poke_feather_robe_hat"},
-		"feather_robe_chestplate":{"textures":"textures/items/robes/feather_robe/poke_feather_robe_chestplate"}
+		"feather_robe_chestplate":{"textures":"textures/items/robes/feather_robe/poke_feather_robe_chestplate"},
+		"swift_boots":{"textures":"textures/items/swift/poke_swift_boots"}
 	},
 	"resource_pack_name":"Poke",
 	"texture_name":"atlas.items"

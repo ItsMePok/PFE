@@ -15,15 +15,16 @@
 				"default": "geometry.poke.speed_boots"
 			},
 			"scripts": {
-				"parent_setup": "variable.boot_layer_visible = 0.0;",
-				"animate": [
-					"offset"
-				]
+				"parent_setup": "variable.boot_layer_visible = 0.0;"
 			},
 			"animations": {
-				"offset": "animation.armor.boots.offset"
+				"idle": "animation.speed_boots.idle",
+				"move": "animation.speed_boots.move",
+				"control": "controller.animation.speed_boots"
 			},
-			"render_controllers": [ "controller.render.armor" ]
+			"render_controllers": [
+				"controller.render.armor"
+			]
 		}
 	}
 }

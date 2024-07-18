@@ -39,6 +39,28 @@ function damage_item(item) {
     durabilityComponent.damage += Number(Math.round(Math.random() * 100) <= durabilityComponent.getDamageChance(unbreaking))
     return item
 }
+function decrease_stack(item) {
+    // Get durability
+    if (!item.hasComponent("durability")) return item;
+    const durabilityComponent = item.getComponent("durability")
+    var unbreaking = 0
+    // Get unbreaking level
+    if (item.hasComponent("enchantments")) {
+        unbreaking = item.getComponent("enchantments").enchantments.getEnchantment("unbreaking")
+        if (!unbreaking) {
+            unbreaking = 0
+        } else {
+            unbreaking = unbreaking.level
+        }
+    }
+    // Apply damage
+    if (durabilityComponent.damage == durabilityComponent.maxDurability) {
+
+        return
+    }
+    durabilityComponent.damage += Number(Math.round(Math.random() * 100) <= durabilityComponent.getDamageChance(unbreaking))
+    return item
+}
 /*
 Makes unbreaking work but breaks the Hold to continue using :/
 
@@ -832,6 +854,7 @@ class PFEOnUse {
         data.source.runCommand(''+id)
         cooldownc.startCooldown(data.source)
         //if (data.source.getGameMode() == 'creative') return; // <-- prevedted items from being held down to continue using 
+        if (!data.itemStack.hasComponent('minecraft:durability')) {return;}
         const newItem = damage_item(data.itemStack)
         data.source.getComponent(EntityComponentTypes.Equippable).setEquipment(EquipmentSlot.Mainhand, newItem)
         if (!newItem) {
@@ -864,33 +887,34 @@ class PFESpawnEgg{
         var facelocx = --faceloc.x
         var facelocy = --faceloc.y
         var facelocz = --faceloc.z
+        var amount = data.itemStack.amount
         if(blockface == 'North'){
-            console.warn ('PASSed')
             var facelocz = facelocz +1.5
         }
         if(blockface == 'South'){
-            console.warn ('PASSed')
             var facelocz = facelocz -1.5
         }
         if(blockface == 'East'){
-            console.warn ('PASSed')
             var facelocx = facelocx -1.5
         }
         if(blockface == 'West'){
-            console.warn ('PASSed')
             var facelocx = facelocx +1.5
         }
         if(blockface == 'Up'){
-            console.warn ('PASSed')
             var facelocy = facelocy -1.5
         }
         if(blockface == 'Down'){
-            console.warn ('PASSed')
             var facelocy = facelocy +2
         }
         const vec3 = { x: -facelocx, y: -facelocy, z: -facelocz};
         const mobid = data.itemStack.getTags()//Mob identifier should be the only tag on the item
         data.source.dimension.spawnEntity(''+mobid,vec3)
+        if (data.source.getGameMode() == 'creative') return;
+        if (amount <= 1) {
+            data.source.getComponent(EntityComponentTypes.Equippable).setEquipment(EquipmentSlot.Mainhand, new ItemStack ('minecraft:air', 1))
+            return;
+        }
+        data.source.getComponent(EntityComponentTypes.Equippable).setEquipment(EquipmentSlot.Mainhand, new ItemStack (data.itemStack.typeId, amount-1))
     }
 }
 class PFEBowAim {

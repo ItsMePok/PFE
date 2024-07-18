@@ -8,6 +8,12 @@
 			}
 		},
 		"components": {
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 1
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 30
+			},
 			"minecraft:map_color": "#e0e0e0",
 			"tag:pfe": {}
 		}

@@ -4,7 +4,7 @@
     "description": {
       "identifier": "poke:key_block_room",
       "menu_category": {
-        "category": "construction"
+        "category": "none"
       }
     },
     "components": {

@@ -8,11 +8,11 @@
 				"enchanted": "armor_enchanted"
 			},
 			"textures": {
-				"default": "textures/models/armor/poke_hellish_chestplate",
+				"default": "textures/models/armor/poke_hellish_1",
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {
-				"default": "geometry.poke.hellish_chestplate"
+				"default": "geometry.poke.holy_chestplate"
 			},
 			"scripts": {
 				"parent_setup": "variable.chest_layer_visible = 0.0;"

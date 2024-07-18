@@ -3,7 +3,7 @@
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:power_cell",
-			"menu_category": {"category": "items"},
+			"menu_category": {"category": "none"},
 			"states": {
 				"pfe:active":[0,1]
 			}
