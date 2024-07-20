@@ -33,7 +33,7 @@
 						"visible": false
 					},
 					"impact_damage": {
-						"damage": 15,
+						"damage": 15, // you would be changing this for damage
 						"destroy_on_hit": true,
 						"knockback": true,
 						"max_critical_damage": 20,

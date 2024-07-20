@@ -14,7 +14,7 @@
 			"minecraft:durability": {
 				"max_durability": 3500
 			},
-			"minecraft:damage": 30,
+			"minecraft:damage": 23,
 			"minecraft:icon":"poke_galactic_scythe",
 			"minecraft:enchantable": {
 				"value": 140,

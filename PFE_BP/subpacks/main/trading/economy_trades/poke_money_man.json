@@ -189,7 +189,22 @@
                   "quantity": 5
                 }
               ]
-            }
+            },
+						{
+							"max_uses": -1,
+							"wants": [
+								{
+									"item": "poke:gold_token",
+									"quantity": 1
+								}
+							],
+							"gives": [
+								{
+									"item": "poke:pfe-modbay_pottery_sherd",
+									"quantity": 1
+								}
+							]
+						}
           ]
         }
       ]

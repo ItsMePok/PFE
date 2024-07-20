@@ -1,10 +1,11 @@
 {
 	"texture_data":{
+		"poke_medic_scythe":{"textures":"textures/items/scythe/poke_medic"},
+		"poke_astral_scythe":{"textures":"textures/items/scythe/poke_astral"},
 		"poke_honey_crossbow":{"textures":"textures/items/misc/poke_honey_crossbow"},
 		"poke_armor_stand_unhider":{"textures":"textures/items/misc/poke_armor_stand_unhider"},
 		"poke_purifier":{"textures":"textures/items/misc/poke_purifier"},
 		"poke_spawn_logger":{"textures":"textures/items/boss/poke_spawn_logger"},
-		
 		"poke_steampunk_hat":{"textures":"textures/items/cosmetic/poke_steampunk_hat"},
 		"poke_sword_hat":{"textures":"textures/items/cosmetic/poke_sword_hat"},
 		"poke_poppy_hat":{"textures":"textures/items/cosmetic/poke_poppy_hat"},
@@ -36,7 +37,6 @@
 		"poke_molten_haxel":{"textures":"textures/items/haxel/poke_molten_haxel"},
 		"poke_grad_cap":{"textures":"textures/items/cosmetic/poke_grad_cap.png"},
 		"poke_golden_chicken":{"textures":"textures/items/boss/poke_golden_chicken"},
-		
 		"poke_zombifier":{"textures":"textures/items/misc/poke_zombifier"},
 		"poke_colorizer":{"textures":"textures/items/misc/poke_colorizer"},
 		"poke_cone_cosmetic":{"textures":"textures/items/cosmetic/poke_cone"},
@@ -387,6 +387,27 @@
 		"poke_stone_battleaxe":{"textures":"textures/items/battleaxe/poke_stone_battleaxe"},
 		"poke_cobalt_battleaxe":{"textures":"textures/items/battleaxe/poke_cobalt_battleaxe"},
 		"poke_shade_battleaxe":{"textures":"textures/items/battleaxe/poke_shade_battleaxe"},
+		//Sherds
+		"poke_fish_pottery_sherd":{"textures":"textures/items/sherds/poke_fish"},
+		"poke_storm_pottery_sherd":{"textures":"textures/items/sherds/poke_storm"},
+		"poke_crowned_pottery_sherd":{"textures":"textures/items/sherds/poke_crowned"},
+		"poke_empty_pottery_sherd":{"textures":"textures/items/sherds/poke_empty"},
+		"poke_cassette_pottery_sherd":{"textures":"textures/items/sherds/poke_cassette"},
+		"poke_star_pottery_sherd":{"textures":"textures/items/sherds/poke_star"},
+		"poke_knightling_pottery_sherd":{"textures":"textures/items/sherds/poke_knightling"},
+		"poke_poke_pottery_sherd":{"textures":"textures/items/sherds/poke_poke"},
+		"poke_modbay_pottery_sherd":{"textures":"textures/items/sherds/poke_modbay"},
+		"poke_mcpedl_pottery_sherd":{"textures":"textures/items/sherds/poke_mcpedl"},
+		"poke_curseforge_pottery_sherd":{"textures":"textures/items/sherds/poke_curseforge"},
+		"poke_github_pottery_sherd":{"textures":"textures/items/sherds/poke_github"},
+		"poke_ingot_pottery_sherd":{"textures":"textures/items/sherds/poke_ingot"},
+		"poke_craft_pottery_sherd":{"textures":"textures/items/sherds/poke_craft"},
+		"poke_snake_pottery_sherd":{"textures":"textures/items/sherds/poke_snake"},
+		"poke_enderman_pottery_sherd":{"textures":"textures/items/sherds/poke_enderman"},
+		"poke_listener_pottery_sherd":{"textures":"textures/items/sherds/poke_listener"},
+		"poke_mushroom_buddy_pottery_sherd":{"textures":"textures/items/sherds/poke_mushroom_buddy"},
+		"poke_wizard_pottery_sherd":{"textures":"textures/items/sherds/poke_wizard"},
+		"poke_bee_pottery_sherd":{"textures":"textures/items/sherds/poke_bee"},
 		//Cassettes
 		"poke_cassette_danny":{"textures":"textures/items/cassette/poke_danny"},
 		"poke_cassette_sweden":{"textures":"textures/items/cassette/poke_sweden"},

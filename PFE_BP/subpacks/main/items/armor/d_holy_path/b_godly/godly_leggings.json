@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.60",
+	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:godly_leggings",
@@ -21,7 +21,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": { "textures": {"default": "godly_leggings" }}, 
+			"minecraft:icon":"godly_leggings", 
 			"minecraft:knockback_resistance": {
 				"protection": 0.75
 			},
@@ -31,26 +31,17 @@
 			},
 			"minecraft:repairable": {
 				"repair_items": [
-					{
-						"items": [
-							"poke:repair_core"
-						],
-						"repair_amount": "query.max_durability"
-					},
-					{
-						"items": [
-							"poke:godly_ingot"
-						],
-						"repair_amount": "query.max_durability*0.25"
-					}
+					{"items":["poke:repair_core"],"repair_amount":"query.max_durability"},
+					{"items": ["poke:godly_ingot"],"repair_amount": "query.max_durability*0.25"},
+					{"items": ["poke:godly_nugget"],"repair_amount": "query.max_durability * 0.028"}
 				]
 			},
 			"minecraft:tags": { 
-			  "tags": [ 
-				"minecraft:is_armor", 
-				"minecraft:trimmable_armors" 
-			  ] 
+				"tags": [ 
+					"minecraft:is_armor", 
+					"minecraft:trimmable_armors" 
+				] 
 			} 
-		  } 
 		} 
-	  }
+	} 
+}

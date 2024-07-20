@@ -16,7 +16,9 @@
 				"red_tame": "textures/entity/passive/poke_sporecat/redtabby_tame",
 				"siamese_tame": "textures/entity/passive/poke_sporecat/siamesecat_tame",
 				"calico_tame": "textures/entity/passive/poke_sporecat/calico_tame",
-				"persian_tame": "textures/entity/passive/poke_sporecat/persian_tame"
+				"persian_tame": "textures/entity/passive/poke_sporecat/persian_tame",
+				"bella": "textures/entity/passive/poke_sporecat/bella",
+				"bella_tame": "textures/entity/passive/poke_sporecat/bella_tame"
 			},
 			"geometry": {
 				"default": "geometry.poke.sporecat"

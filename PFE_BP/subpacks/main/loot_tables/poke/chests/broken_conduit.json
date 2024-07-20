@@ -92,7 +92,12 @@
 							]
 						}
 					]
-				}
+				},
+                {
+                    "type": "item",
+                    "name": "poke:pfe-fish_pottery_sherd",
+                    "weight": 1
+                }
 			]
 		}
 	]

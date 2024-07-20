@@ -52,7 +52,10 @@
 			"minecraft:light_dampening": 0,
 			"minecraft:map_color": "#e9e4a1",
 			"tag:pfe": {},
-			"minecraft:loot": "loot_tables/poke/trophy/listener_trophy.json"
+			"minecraft:loot": "loot_tables/poke/trophy/listener_trophy.json",
+			"minecraft:custom_components": [
+				"poke:cc_block_interact"
+			]
 		},
 		"permutations": [
 			// Facing north

@@ -615,7 +615,22 @@
                   ]
                 }
               ]
-            }
+            },
+            {
+							"max_uses": -1,
+							"wants": [
+								{
+									"item": "poke:gold_token",
+									"quantity": 1
+								}
+							],
+							"gives": [
+								{
+									"item": "poke:pfe-crowned_pottery_sherd",
+									"quantity": 1
+								}
+							]
+						}
           ]
         }
       ]

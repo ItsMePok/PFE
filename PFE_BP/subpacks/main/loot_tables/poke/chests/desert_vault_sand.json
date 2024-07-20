@@ -82,7 +82,12 @@
 							]
 						}
 					]
-				}
+				},
+                {
+                    "type": "item",
+                    "name": "poke:pfe-snake_pottery_sherd",
+                    "weight": 1
+                }
 			]
 		}
 	]

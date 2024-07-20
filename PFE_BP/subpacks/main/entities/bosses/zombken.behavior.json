@@ -9,6 +9,13 @@
 			"runtime_identifier": "minecraft:parrot"
 		},
 		"component_groups": {
+			"despawn_normal":{
+				"minecraft:despawn": {
+					"despawn_from_inactivity": true,
+					"despawn_from_distance": {"max_distance": 128},
+					"min_range_inactivity_timer": 100
+				}
+			},
 			"despawn":{
 				"minecraft:instant_despawn": {
 					"remove_child_entities": false
@@ -23,6 +30,9 @@
 						"target": "self"
 					}
 				}
+			},
+			"persistent":{
+				"minecraft:persistent": {}
 			}
 		},
 		"components": {
@@ -156,11 +166,7 @@
 			"minecraft:attack_damage": {
 				"value": 14
 			},
-			"minecraft:despawn": {
-				"despawn_from_inactivity": true,
-				"despawn_from_distance": {"max_distance": 128},
-				"min_range_inactivity_timer": 100
-			},
+			
 			"minecraft:on_hurt": {
 				"event": "hurt_sound",
 				"target": "self"
@@ -183,7 +189,8 @@
 			"minecraft:entity_spawned": {
 				"add": {
 					"component_groups": [
-						"timer"
+						"timer",
+						"despawn_normal"
 					]
 				}
 			},
@@ -203,6 +210,11 @@
 				"remove": {
 					"component_groups": [
 						"timer"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"persistent"
 					]
 				}
 			}

@@ -1,9 +1,9 @@
 {
 	"header": {
-		"name": "§ev1.2.1.2 §uPFE §cBP",
+		"name": "§ev1.2.1.3 §uPFE §cBP",
 		"description": "pack.description",
 		"min_engine_version": [1, 21, 0],
-		"uuid": "9102d7c6-546a-43f0-b3c3-88b7fa938cb2",
+		"uuid": "22397427-890f-4c4d-a396-af5da6cfab52",
 		"version": [1, 0, 0]
 	},
 	"modules": [
@@ -18,16 +18,16 @@
 			"version": [1, 0, 0],
 			"type": "script",
 			"language": "javascript",
-			"entry": "scripts/Main.js"
+			"entry": "scripts/PFEMain.js"//"entry": "scripts/PFEMain-1.21.20.js"
 		}
 	],
 	"dependencies": [
 		{
 			"module_name": "@minecraft/server",
-			"version": "1.12.0-beta"
+			"version": "1.12.0-beta"//"version": "1.13.0"
 		},
 		{
-			"uuid": "db5abf33-c140-4946-b968-38894c9495fc",
+			"uuid": "042ca53b-8ae5-40f2-8040-10c0374655eb",
 			"version": [1, 0, 0]
 		}
 	],

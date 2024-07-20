@@ -9,14 +9,16 @@
             "Texture.red",
             "Texture.siamese",
             "Texture.calico",
-            "Texture.persian"
+            "Texture.persian",
+            "Texture.bella"
           ],
           "Array.tame": [
             "Texture.white_tame",
             "Texture.red_tame",
             "Texture.siamese_tame",
             "Texture.calico_tame",
-            "Texture.persian_tame"
+            "Texture.persian_tame",
+            "Texture.bella_tame"
           ]
         }
       },

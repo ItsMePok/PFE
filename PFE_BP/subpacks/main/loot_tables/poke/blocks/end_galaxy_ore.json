@@ -40,6 +40,11 @@
                             ]
                         }
                     ]
+                },
+                {
+                    "type": "item",
+                    "name": "poke:pfe-ingot_pottery_sherd",
+                    "weight": 1
                 }
             ]
         }

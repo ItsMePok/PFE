@@ -8,6 +8,21 @@
 		"conditions": [
 			{
 				"minecraft:spawns_underground": {},
+				"minecraft:difficulty_filter": {
+					"max": "hard",
+					"min": "easy"
+				},
+				"minecraft:spawns_on_block_filter":[
+					"minecraft:netherrack",
+					"minecraft:crimson_nylium",
+					"minecraft:basalt",
+					"minecraft:lava",
+					"minecraft:soul_sand",
+					"minecraft:soul_soil",
+					"minecraft:magma",
+					"minecraft:blackstone",
+					"minecraft:glowstone"
+				],
 				"minecraft:weight": {
 					"default": 10
 				},

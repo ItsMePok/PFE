@@ -43,6 +43,20 @@
 				},
 				{"type":"empty"}
 			]
-		}
+		},
+        {
+            "rolls":1,
+            "entries":[
+                {
+                    "type":"empty",
+                    "weight": 49
+                },
+                {
+                    "type": "item",
+                    "name": "poke:pfe-knightling_pottery_sherd",
+                    "weight": 1
+                }
+            ]
+        }
 	]
 }

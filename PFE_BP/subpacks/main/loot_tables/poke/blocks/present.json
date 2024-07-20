@@ -97,7 +97,12 @@
 					"type": "item",
 					"name": "poke:splash_death_potion",
 					"weight": 1
-				}
+				},
+                {
+                    "type": "item",
+                    "name": "poke:pfe-mcpedl_pottery_sherd",
+                    "weight": 1
+                }
 			]
 		}
 	]

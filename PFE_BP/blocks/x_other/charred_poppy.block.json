@@ -4,8 +4,7 @@
 		"description": {
 			"identifier": "poke:charred_poppy",
 			"menu_category": {
-				"category": "nature",
-				"group": "itemGroup.name.flower"
+				"category": "none"
 			}
 		},
 		"components": {

@@ -20,6 +20,20 @@
                     "type": "empty"
                 }
             ]
+        },
+        {
+            "rolls":1,
+            "entries":[
+                {
+                    "type":"empty",
+                    "weight": 499
+                },
+                {
+                    "type": "item",
+                    "name": "poke:pfe-enderman_pottery_sherd",
+                    "weight": 1
+                }
+            ]
         }
     ]
 }

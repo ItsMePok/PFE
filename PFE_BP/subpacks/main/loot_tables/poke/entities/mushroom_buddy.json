@@ -36,7 +36,12 @@
 					"weight": 100,
                     "functions": [{"function": "looting_enchant","count": {"max": 1,"min": 0}}]
 				},
-				{"type": "empty","weight": 50}
+				{"type": "empty","weight": 50},
+                {
+                    "type": "item",
+                    "name": "poke:pfe-mushroom_buddy_pottery_sherd",
+                    "weight": 1
+                }
 			]
 		}
 	]
