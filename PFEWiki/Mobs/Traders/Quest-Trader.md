@@ -3,11 +3,13 @@
 
 Identifier: **poke:quest_trader**
 ### Trades:
- * [Paper](https://minecraft.wiki/w/Paper) -> [Kill Quest](https://github.com/ItsMePok/PFE/wiki/Kill-Quest)
- * [Paper](https://minecraft.wiki/w/Paper) -> [Mine Quest](https://github.com/ItsMePok/PFE/wiki/Mine-Quest)
- * [Paper](https://minecraft.wiki/w/Paper) -> [Farm Quest](https://github.com/ItsMePok/PFE/wiki/Farm-Quest)
- * [Paper](https://minecraft.wiki/w/Paper) -> [Craft Quest](https://github.com/ItsMePok/PFE/wiki/Kill-Quest)
- * [Boss Event Bounty](https://github.com/ItsMePok/PFE/wiki/Boss-Event-Bounty) -> [Boss Event Bounty](https://github.com/ItsMePok/PFE/wiki/Kill-Quest)
+|Wants|Gives|
+|---|---|
+|[Paper](https://minecraft.wiki/w/Paper)|[Kill Quest](https://github.com/ItsMePok/PFE/wiki/Kill-Quest)
+|[Paper](https://minecraft.wiki/w/Paper)|[Mine Quest](https://github.com/ItsMePok/PFE/wiki/Mine-Quest)
+|[Paper](https://minecraft.wiki/w/Paper)|[Farm Quest](https://github.com/ItsMePok/PFE/wiki/Farm-Quest)
+|[Paper](https://minecraft.wiki/w/Paper)|[Craft Quest](https://github.com/ItsMePok/PFE/wiki/Kill-Quest)
+|[Iron Token](https://github.com/ItsMePok/PFE/wiki/Iron-Token)|[Boss Event Bounty](https://github.com/ItsMePok/PFE/wiki/Boss-Event-Bounty)
 
 ### Obtaining:
  * Crafting The [Quest Trader Spawn Egg](https://github.com/ItsMePok/PFE/wiki/Quest-Trader#quest-trader-spawn-egg)
