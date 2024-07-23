@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.60",
+	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:shade_leggings",
@@ -21,10 +21,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": { 
-				"textures": { 
-				  "default": "shade_leggings" } 
-			  }, 
+			"minecraft:icon":"shade_leggings", 
 			"minecraft:wearable": {
 				"slot": "slot.armor.legs",
 				"protection": 15
@@ -42,12 +39,6 @@
 							"poke:shade_ingot"
 						],
 						"repair_amount": "query.max_durability*0.25"
-					},
-					{
-						"items": [
-							"poke:shade_leggings"
-						],
-						"repair_amount": "context.other->query.remaining_durability+0.12*context.other->query.max_durability"
 					}
 				]
 			}, 

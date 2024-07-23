@@ -1,5 +1,6 @@
 {
 	"texture_data":{
+		"poke_shuriken":{"textures":"textures/items/misc/poke_shuriken"},
 		"poke_medic_scythe":{"textures":"textures/items/scythe/poke_medic"},
 		"poke_astral_scythe":{"textures":"textures/items/scythe/poke_astral"},
 		"poke_honey_crossbow":{"textures":"textures/items/misc/poke_honey_crossbow"},
@@ -95,10 +96,6 @@
 		"poke_pirate_hat":{"textures":"textures/items/cosmetic/poke_pirate_hat.png"},
 		"poke_circuit_sword":{"textures":"textures/items/electric/poke_circuit_sword.png"},
 		"poke_armadillo_hat":{"textures":"textures/items/cosmetic/poke_armadillo_hat.png"},
-		"poke_kill_quest":{"textures":"textures/items/prog/poke_kill_quest.png"},
-		"poke_mine_quest":{"textures":"textures/items/prog/poke_mine_quest.png"},
-		"poke_farm_quest":{"textures":"textures/items/prog/poke_farm_quest.png"},
-		"poke_craft_quest":{"textures":"textures/items/prog/poke_craft_quest.png"},
 		"poke_hellish_haxel":{"textures":"textures/items/haxel/poke_hellish_haxel.png"},
 		"poke_demonic_potion":{"textures":"textures/items/food/poke_demonic_potion.png"},
 		"poke_hellish_potion":{"textures":"textures/items/food/poke_hellish_potion.png"},
@@ -337,6 +334,15 @@
 			{"path":"textures/items/sundial/6"},
 			{"path":"textures/items/sundial/7"},
 			{"path":"textures/items/sundial/8"}]}},
+		//Quests
+		"poke_uo_kill_quest":{"textures":"textures/items/prog/poke_uo_kill_quest.png"},
+		"poke_uo_mine_quest":{"textures":"textures/items/prog/poke_uo_mine_quest.png"},
+		"poke_uo_farm_quest":{"textures":"textures/items/prog/poke_uo_farm_quest.png"},
+		"poke_uo_craft_quest":{"textures":"textures/items/prog/poke_uo_craft_quest.png"},
+		"poke_kill_quest":{"textures":"textures/items/prog/poke_kill_quest.png"},
+		"poke_mine_quest":{"textures":"textures/items/prog/poke_mine_quest.png"},
+		"poke_farm_quest":{"textures":"textures/items/prog/poke_farm_quest.png"},
+		"poke_craft_quest":{"textures":"textures/items/prog/poke_craft_quest.png"},
 		//Upgraders
 		"poke_budificator":{"textures":"textures/items/amethyst/poke_budificator"},//Amethyst upgrader
 		"poke_obsidian_depressor":{"textures":"textures/items/upgraders/poke_obsidian_depressor"},

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.60",
+	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:radium_leggings",
@@ -21,10 +21,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": { 
-				"textures": { 
-				  "default": "radium_leggings" } 
-			  }, 
+			"minecraft:icon":"radium_leggings", 
 			"minecraft:wearable": {
 				"slot": "slot.armor.legs",
 				"protection": 24
@@ -42,12 +39,6 @@
 							"poke:repair_core"
 						],
 						"repair_amount": "query.max_durability"
-					},
-					{
-						"items": [
-							"poke:radium_leggings"
-						],
-						"repair_amount": "context.other->query.remaining_durability + 0.12 * context.other->query.max_durability"
 					}
 				]
 			}, 

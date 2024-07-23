@@ -6,8 +6,15 @@
 			"menu_category": {"category": "items"}
 		},
 		"components": {
-			"minecraft:icon":"poke_mine_quest",
-			"minecraft:entity_placer": {"entity": "poke:mine_quest"}
+			"minecraft:icon":"poke_uo_mine_quest",
+			"minecraft:custom_components":[
+				"poke:cc_spawnEgg"
+			],
+			"minecraft:tags":{
+				"tags":[
+					"poke:mine_quest"
+				]
+			}
 		}
 	}
 }

@@ -8,8 +8,15 @@
 			}
 		},
 		"components": {
-			"minecraft:icon":"poke_kill_quest",
-			"minecraft:entity_placer": {"entity": "poke:kill_quest"}
+			"minecraft:icon":"poke_uo_kill_quest",
+			"minecraft:custom_components":[
+				"poke:cc_spawnEgg"
+			],
+			"minecraft:tags":{
+				"tags":[
+					"poke:kill_quest"
+				]
+			}
 		}
 	}
 }

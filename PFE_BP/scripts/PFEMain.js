@@ -893,6 +893,8 @@ class PFECrossbowAim {
     onUse(data){
         const cplayers = data.source.dimension.getPlayers({excludeNames:[''+data.source.name]})
         var cplayersLength = cplayers.length;
+        //data.source.playAnimation('third_person_crossbow_equipped',{stopExpression:'!q.is_using_item',controller:'pfe-controller.animation.poke.crossbow2'})//Hand charging for everyone else
+        //data.source.playAnimation('waffle',{stopExpression:'!q.is_using_item',controller:'pfe-controller.animation.poke.crossbow2'})
         data.source.playAnimation('animation.player.first_person.crossbow_equipped',{stopExpression:'!q.is_using_item', players:[data.source.name+'']}) //Hand charging movement
         for (var i = cplayersLength; i > 0; i--) {
             data.source.playAnimation('third_person_crossbow_equipped',{stopExpression: '!q.is_using_item', players:[cplayers[i-1].name]})//Hand charging for everyone else

@@ -6,8 +6,15 @@
 			"menu_category": {"category": "items"}
 		},
 		"components": {
-			"minecraft:icon":"poke_farm_quest",
-			"minecraft:entity_placer": {"entity": "poke:farm_quest"}
+			"minecraft:icon":"poke_uo_farm_quest",
+			"minecraft:custom_components":[
+				"poke:cc_spawnEgg"
+			],
+			"minecraft:tags":{
+				"tags":[
+					"poke:farm_quest"
+				]
+			}
 		}
 	}
 }

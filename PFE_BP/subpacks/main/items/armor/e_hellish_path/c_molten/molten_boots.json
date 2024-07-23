@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.60",
+	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:molten_boots",
@@ -21,10 +21,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": { 
-				"textures": { 
-				  "default": "molten_boots" } 
-			  },
+			"minecraft:icon":"molten_boots",
 			"minecraft:wearable": {
 				"slot": "slot.armor.feet",
 				"protection": 10
@@ -42,21 +39,15 @@
 							"poke:molten_slimeball"
 						],
 						"repair_amount": "query.max_durability*0.25"
-					},
-					{
-						"items": [
-							"poke:molten_boots"
-						],
-						"repair_amount": "context.other->query.remaining_durability+0.12*context.other->query.max_durability"
 					}
 				]
 			},
 			"minecraft:tags": { 
 				"tags": [ 
-				  "minecraft:is_armor", 
-				  "minecraft:trimmable_armors" 
+					"minecraft:is_armor", 
+					"minecraft:trimmable_armors" 
 				] 
-			  } 
 			} 
-		  } 
-		}
+		} 
+	} 
+}
