@@ -1,0 +1,140 @@
+## Ruined Tower
+![ruined_tower](https://github.com/ItsMePok/PFE/assets/136857747/e279d8b6-9df9-40ca-a3b2-313b76087e69)
+
+**Structure identifier:**
+* poke:ruined_tower
+
+## Generation
+> [!IMPORTANT]
+> Structures will only generate in newly generated chunks. if you are using an older world you may need to explore further to find the structures
+
+* Can generate in Plains biomes
+
+## Loot:
+> [!NOTE]
+> A higher weight makes it more likely to be selected from that pool
+
+***
+
+### **Barrel:**
+
+(Both of these ↓)
+|Item|Amount|Weight|
+|--|--|--|
+|Book: Travel Log 1|1|Guarenteed|
+|Book: Only Cobblestone|1|Guarenteed|
+
+(1 of these ↓)
+|Item|Amount|Weight|
+|--|--|--|
+|Knockback Nemo|1|1|
+|[Cassette - Ancestry](https://github.com/ItsMePok/PFE/wiki/Cassette-Ancestry)|1|1|
+|Empty|-|2|
+
+(2-4 of these ↓)
+|Item|Amount|Weight|
+|--|--|--|
+|[Copper Token](https://pfewiki.gitbook.io/home/items/tokens/copper-token)|1-6|15|
+|[Iron Token](https://pfewiki.gitbook.io/home/items/tokens/iron-token)|1-3|5|
+|Sculk Sensor|1-3|25|
+|Cobweb|3-7|25|
+|Bone|4-6|25|
+|Enchanted Book|1|20|
+|Golden Apple|1|20|
+|Iron Ingot|1-5|15|
+|Gold Ingot|2-7|15|
+|Emerald|1-3|15|
+|Sculk Shrieker|1-3|15|
+|[Amethyst Shard](https://minecraft.wiki/w/Amethyst_Shard)|1|15|
+|Cobweb|1|10|
+|Echo Shard|1|5|
+|Diamond|1-3|5|
+|Enchanted Golden Apple|1|2|
+|Empty|-|15|
+
+(4 of these ↓)
+|Item|Amount|Weight|
+|--|--|--|
+|Sculk|1-8|10|
+|String|1-8|10|
+|String|1-8|10|
+|Sculk|1-8|10|
+|[Amethyst Shard](https://minecraft.wiki/w/Amethyst_Shard)|1-8|10|
+|Soul Lantern|1-8|10|
+|Cobbled Deepslate|1-8|10|
+|Candle (Random Color)|1-8|10|
+
+***
+
+### **Vault:**
+* The Vault can be opened with a [Ruin Key](https://github.com/ItsMePok/PFE/wiki/Ruin-Key)
+
+(2-5 of these ↓)
+|Item|Amount|Weight|
+|--|--|--|
+|[Cassette - 5](https://github.com/ItsMePok/PFE/wiki/Cassette-5)|1|1|
+|[Copper Token](https://pfewiki.gitbook.io/home/items/tokens/copper-token)|2-6|8|
+|[Iron Token](https://pfewiki.gitbook.io/home/items/tokens/iron-token)|2-6|8|
+|[Gold Token](https://pfewiki.gitbook.io/home/items/tokens/gold-token)|2-5|5|
+|[Diamond Token](https://pfewiki.gitbook.io/home/items/tokens/diamond-token)|2-3|4|
+|Emerald|2-6|8|
+|Enchanted Golden Apple|1|3|
+|Diamond|1-3|2|
+|Candle (Random Color)|1-8|1|
+
+(1-2 of these ↓)
+|Item|Amount|Weight|
+|--|--|--|
+|[Copper Token](https://pfewiki.gitbook.io/home/items/tokens/copper-token)|2-6|8|
+|[Iron Token](https://pfewiki.gitbook.io/home/items/tokens/iron-token)|2-6|4|
+|[Diamond Token](https://pfewiki.gitbook.io/home/items/tokens/diamond-token)|2-6|8|
+|Emerald|2-6|8|
+|Iron Boots (Enchanted)|1|6|
+|Iron Chestplate (Enchanted)|1|6|
+|Iron Leggings (Enchanted)|1|6|
+|Iron Helmet(Enchanted)|1|6|
+|Iron Axe(Enchanted)|1|6|
+|Iron Pickaxe(Enchanted)|1|6|
+|Iron Shovel(Enchanted)|1|6|
+|Saddle|1|6|
+|Golden Horse Armor|1|6|
+|Diamond Axe(Enchanted)|1|3|
+|Crossbow(Enchanted)|1|3|
+|Diamond Chestplate(Enchanted)|1|3|
+|Diamond Horse Armor|1|3|
+|Enchanted Golden Apple|1|3|
+|Enchanted Book|1|3|
+|Enchanted Book|1|5|
+|Diamond|1-3|2|
+
+
+***
+
+### Trial Spawner
+
+|Config|Vaule|
+|--|--|
+|Mob|[Sculk Enderman](https://github.com/ItsMePok/PFE/wiki/Sculk-Enderman)|
+|Total Mobs|6 (+2 Per each additional player)|
+|Cooldown|30 Minutes|
+
+> [!NOTE]
+> The Trial Spawner has an ominous variant, it can be triggered with the Trial Omen effect
+
+> Minecraft wiki link for more info: https://minecraft.wiki/w/Trial_Omen
+
+(1 of these if not ominous ↓)
+|Item|Amount|Weight|
+|--|--|--|
+|[Ruin Key](https://github.com/ItsMePok/PFE/wiki/Ruin-Key)|1|1|
+|[Copper Token](https://pfewiki.gitbook.io/home/items/tokens/copper-token)|3-6|1|
+
+(1 of these if ominous ↓)
+|Item|Amount|Weight|
+|--|--|--|
+|[Ruin Key](https://github.com/ItsMePok/PFE/wiki/Ruin-Key)|1|1|
+|[Iron Token](https://pfewiki.gitbook.io/home/items/tokens/iron-token)|2-7|1|
+***
+
+### In-game Screenshots:
+![Screenshot 2024-07-09 112358](https://github.com/ItsMePok/PFE/assets/136857747/d0f48371-9306-4b02-a1d9-5b0ff0d6c434)
