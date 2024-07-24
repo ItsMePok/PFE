@@ -16,7 +16,7 @@ Armor: **6**
 Enchant type: **Helmet**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
 
 Trimmable: **Yes**
 
@@ -32,6 +32,6 @@ Armor: **10**
 Enchant type: **Chestplate**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
 
 Trimmable: **Yes**

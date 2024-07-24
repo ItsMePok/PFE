@@ -17,8 +17,8 @@ Mining Speed: **15**
 Enchant type: **Axe**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
-* **[Cobalt Ingot](https://github.com/ItsMePok/PFE/wiki/Cobalt-Ingot)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
+* **[Cobalt Ingot](https://pfewiki.gitbook.io/home/items/ingots/cobalt-ingot)**
 * **[Cobalt Nugget](https://github.com/ItsMePok/PFE/wiki/Cobalt-Nugget)**
 
 Can Break:
@@ -29,5 +29,5 @@ Can Break:
 * Crafted With:
     * 4x **[Cobalt Block](https://github.com/ItsMePok/PFE/wiki/Cobalt-Block)**
     * 1x **[Onyx Shaft](https://github.com/ItsMePok/PFE/wiki/Onyx-Shaft)**
-    * 1x **[Upgrade Core](https://github.com/ItsMePok/PFE/wiki/Upgrade-Core)**
+    * 1x **[Upgrade Core](https://pfewiki.gitbook.io/home/items/cores/upgrade-core)**
     * 1x **[Iron Haxel](https://github.com/ItsMePok/PFE/wiki/Iron-Haxel)**

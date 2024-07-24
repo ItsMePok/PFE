@@ -9,7 +9,7 @@ Identifier: **poke:cobblestone_gen**
 > _there must not be any block above it for it to generate cobblestone_
 
 ### Obtaining:
- * Found in the [Abandoned Ship](https://github.com/ItsMePok/PFE/wiki/Abandoned-Ship)
+ * Found in the [Abandoned Ship](https://pfewiki.gitbook.io/home/sturctures/abandoned-ship)
 
 ### Recipe:
 

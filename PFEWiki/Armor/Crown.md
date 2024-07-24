@@ -10,9 +10,9 @@ Armor: **2**
 Enchant type: **Helmet**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
 
 Trimmable: **No**
 
 ### Obtaining:
- * Sold by the the [Token Trader](https://github.com/ItsMePok/PFE/wiki/Token-Trader) for [5 Diamond Tokens](https://github.com/ItsMePok/PFE/wiki/Diamond-Token)
+ * Sold by the the [Token Trader](https://pfewiki.gitbook.io/home/mobs/traders/token-trader) for [5 Diamond Tokens](https://pfewiki.gitbook.io/home/items/tokens/diamond-token)

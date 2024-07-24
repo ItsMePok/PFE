@@ -7,9 +7,9 @@ Identifier: **poke:platinum_upgrade_core**
  * Crafting Component
 
 ### Obtaining:
- * Sold by the [Token Trader](https://github.com/ItsMePok/PFE/wiki/Token-Trader) for 1 [Diamond Token](https://github.com/ItsMePok/PFE/wiki/Diamond-Token)
-* Sold by the [Shopkeeper](https://github.com/ItsMePok/PFE/wiki/Shopkeeper) for 1 [Banished Star x8](https://github.com/ItsMePok/PFE/wiki/Banished-Star-x8)
- * Found in the [Abandoned Ship](https://github.com/ItsMePok/PFE/wiki/Abandoned-Ship)
+ * Sold by the [Token Trader](https://pfewiki.gitbook.io/home/mobs/traders/token-trader) for 1 [Diamond Token](https://pfewiki.gitbook.io/home/items/tokens/diamond-token)
+* Sold by the [Shopkeeper](https://github.com/ItsMePok/PFE/wiki/Shopkeeper) for 1 [Banished Star x8](https://pfewiki.gitbook.io/home/items/banished-stars/banished-star-x8)
+ * Found in the [Abandoned Ship](https://pfewiki.gitbook.io/home/sturctures/abandoned-ship)
 ### Used in Crafting:
 #### Armor
 * [Astral Helmet](https://github.com/ItsMePok/PFE/wiki/Demonic-Astral#astral-helmet)

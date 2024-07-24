@@ -10,7 +10,7 @@ Identifier: **poke:copper_token**
 * Found in PFE Structures
   * [Ruined Tower](https://github.com/ItsMePok/PFE/wiki/Ruined-Tower)
   * [Abandoned Swampsite](https://github.com/ItsMePok/PFE/wiki/Abandoned-Swampsite)
-  * [Abandoned Ship](https://github.com/ItsMePok/PFE/wiki/Abandoned-Ship)
+  * [Abandoned Ship](https://pfewiki.gitbook.io/home/sturctures/abandoned-ship)
   * [End Guard Tower](https://github.com/ItsMePok/PFE/wiki/End-Guard-Tower)
   * [Grove Rock](https://github.com/ItsMePok/PFE/wiki/Grove-Rock)
 * Defeating:
@@ -22,4 +22,4 @@ Identifier: **poke:copper_token**
   * [Furnace Golem](https://github.com/ItsMePok/PFE/wiki/Furnace-Golem)
   * [Sparky](https://github.com/ItsMePok/PFE/wiki/Sparky)
 * Exchanging tokens with:
-  * [Token Trader](https://github.com/ItsMePok/PFE/wiki/Token-Trader)
+  * [Token Trader](https://pfewiki.gitbook.io/home/mobs/traders/token-trader)

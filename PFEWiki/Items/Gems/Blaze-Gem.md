@@ -7,6 +7,6 @@ Usage: **Used in crafting the [Blaze Ring](https://github.com/ItsMePok/PFE/wiki/
 
 ### Obtaining:
 * Crafted with:
-    * 4x [Hellish Ingot](https://github.com/ItsMePok/PFE/wiki/Hellish-Ingot)
+    * 4x [Hellish Ingot](https://pfewiki.gitbook.io/home/items/ingots/hellish-ingot)
     * 4x Fire Charge
     * 1x Netherite Ingot

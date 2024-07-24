@@ -16,8 +16,8 @@ Mining Speed: **70**
 Enchant type: **Axe**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
-* **[Onyx Ingot](https://github.com/ItsMePok/PFE/wiki/Onyx-Ingot)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
+* **[Onyx Ingot](https://pfewiki.gitbook.io/home/items/ingots/onyx-ingot)**
 * **[Onyx Nugget](https://github.com/ItsMePok/PFE/wiki/Onyx-Nugget)**
 
 Can Break:

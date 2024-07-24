@@ -12,7 +12,7 @@ Mining Speed: **60**
 Enchant type: **Sword**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
 * **[Amethyst Shard](https://minecraft.wiki/w/Amethyst_Shard)**
 
 Can Break:

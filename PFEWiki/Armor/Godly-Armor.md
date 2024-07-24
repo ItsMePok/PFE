@@ -21,8 +21,8 @@ Knockback Resistance: **75%**
 Enchant type: **Helmet**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
-* **[Godly Ingot](https://github.com/ItsMePok/PFE/wiki/Godly-Ingot)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
+* **[Godly Ingot](https://pfewiki.gitbook.io/home/items/ingots/godly-ingot)**
 
 Trimmable: **Yes but texture support is not available yet**
 
@@ -47,8 +47,8 @@ Knockback Resistance: **75%**
 Enchant type: **Chestplate**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
-* **[Godly Ingot](https://github.com/ItsMePok/PFE/wiki/Godly-Ingot)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
+* **[Godly Ingot](https://pfewiki.gitbook.io/home/items/ingots/godly-ingot)**
 
 Trimmable: **Yes but texture support is not available yet**
 
@@ -73,8 +73,8 @@ Knockback Resistance: **75%**
 Enchant type: **Leggings**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
-* **[Godly Ingot](https://github.com/ItsMePok/PFE/wiki/Godly-Ingot)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
+* **[Godly Ingot](https://pfewiki.gitbook.io/home/items/ingots/godly-ingot)**
 
 Trimmable: **Yes but texture support is not available yet**
 
@@ -99,8 +99,8 @@ Knockback Resistance: **75%**
 Enchant type: **Boots**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
-* **[Godly Ingot](https://github.com/ItsMePok/PFE/wiki/Godly-Ingot)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
+* **[Godly Ingot](https://pfewiki.gitbook.io/home/items/ingots/godly-ingot)**
 
 Trimmable: **Yes but texture support is not available yet**
 

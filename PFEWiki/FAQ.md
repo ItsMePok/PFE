@@ -14,4 +14,4 @@
 
 ### Where do I find the Traders
 * Most of them can be crafted in the crafting table
-* A few can only be acquired from the [Token Trader](https://github.com/ItsMePok/PFE/wiki/Token-Trader)
+* A few can only be acquired from the [Token Trader](https://pfewiki.gitbook.io/home/mobs/traders/token-trader)

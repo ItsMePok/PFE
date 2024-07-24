@@ -8,4 +8,4 @@ Identifier: **poke:banished_star_x10**
 
 ### Obtaining:
 * Crafted with:
-    * 9x [Banished Star x9](https://github.com/ItsMePok/PFE/wiki/Banished-Star-x9)
+    * 9x [Banished Star x9](https://pfewiki.gitbook.io/home/items/banished-stars/banished-star-x9)

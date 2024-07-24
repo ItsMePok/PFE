@@ -34,8 +34,8 @@
 (2-4 of these ↓)
 |Item|Amount|Weight|
 |--|--|--|
-|[Copper Token](https://github.com/ItsMePok/PFE/wiki/Copper-Token)|1-6|15|
-|[Iron Token](https://github.com/ItsMePok/PFE/wiki/Iron-Token)|1-3|5|
+|[Copper Token](https://pfewiki.gitbook.io/home/items/tokens/copper-token)|1-6|15|
+|[Iron Token](https://pfewiki.gitbook.io/home/items/tokens/iron-token)|1-3|5|
 |Sculk Sensor|1-3|25|
 |Cobweb|3-7|25|
 |Bone|4-6|25|
@@ -73,10 +73,10 @@
 |Item|Amount|Weight|
 |--|--|--|
 |[Cassette - 5](https://github.com/ItsMePok/PFE/wiki/Cassette-5)|1|1|
-|[Copper Token](https://github.com/ItsMePok/PFE/wiki/Copper-Token)|2-6|8|
-|[Iron Token](https://github.com/ItsMePok/PFE/wiki/Iron-Token)|2-6|8|
-|[Gold Token](https://github.com/ItsMePok/PFE/wiki/Gold-Token)|2-5|5|
-|[Diamond Token](https://github.com/ItsMePok/PFE/wiki/Diamond-Token)|2-3|4|
+|[Copper Token](https://pfewiki.gitbook.io/home/items/tokens/copper-token)|2-6|8|
+|[Iron Token](https://pfewiki.gitbook.io/home/items/tokens/iron-token)|2-6|8|
+|[Gold Token](https://pfewiki.gitbook.io/home/items/tokens/gold-token)|2-5|5|
+|[Diamond Token](https://pfewiki.gitbook.io/home/items/tokens/diamond-token)|2-3|4|
 |Emerald|2-6|8|
 |Enchanted Golden Apple|1|3|
 |Diamond|1-3|2|
@@ -85,9 +85,9 @@
 (1-2 of these ↓)
 |Item|Amount|Weight|
 |--|--|--|
-|[Copper Token](https://github.com/ItsMePok/PFE/wiki/Copper-Token)|2-6|8|
-|[Iron Token](https://github.com/ItsMePok/PFE/wiki/Iron-Token)|2-6|4|
-|[Diamond Token](https://github.com/ItsMePok/PFE/wiki/Diamond-Token)|2-6|8|
+|[Copper Token](https://pfewiki.gitbook.io/home/items/tokens/copper-token)|2-6|8|
+|[Iron Token](https://pfewiki.gitbook.io/home/items/tokens/iron-token)|2-6|4|
+|[Diamond Token](https://pfewiki.gitbook.io/home/items/tokens/diamond-token)|2-6|8|
 |Emerald|2-6|8|
 |Iron Boots (Enchanted)|1|6|
 |Iron Chestplate (Enchanted)|1|6|
@@ -127,13 +127,13 @@
 |Item|Amount|Weight|
 |--|--|--|
 |[Ruin Key](https://github.com/ItsMePok/PFE/wiki/Ruin-Key)|1|1|
-|[Copper Token](https://github.com/ItsMePok/PFE/wiki/Copper-Token)|3-6|1|
+|[Copper Token](https://pfewiki.gitbook.io/home/items/tokens/copper-token)|3-6|1|
 
 (1 of these if ominous ↓)
 |Item|Amount|Weight|
 |--|--|--|
 |[Ruin Key](https://github.com/ItsMePok/PFE/wiki/Ruin-Key)|1|1|
-|[Iron Token](https://github.com/ItsMePok/PFE/wiki/Iron-Token)|2-7|1|
+|[Iron Token](https://pfewiki.gitbook.io/home/items/tokens/iron-token)|2-7|1|
 ***
 
 ### In-game Screenshots:

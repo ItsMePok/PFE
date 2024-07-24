@@ -7,8 +7,8 @@ Identifier: **poke:upgrade_core**
  * Crafting Component
 
 ### Obtaining:
- * Sold by the [Token Trader](https://github.com/ItsMePok/PFE/wiki/Token-Trader) for 1 [Gold Token](https://github.com/ItsMePok/PFE/wiki/Gold-Token)
- * Sold by the [Shopkeeper](https://github.com/ItsMePok/PFE/wiki/Shopkeeper) for 1 [Banished Star x4](https://github.com/ItsMePok/PFE/wiki/Banished-Star-x4)
+ * Sold by the [Token Trader](https://pfewiki.gitbook.io/home/mobs/traders/token-trader) for 1 [Gold Token](https://pfewiki.gitbook.io/home/items/tokens/gold-token)
+ * Sold by the [Shopkeeper](https://github.com/ItsMePok/PFE/wiki/Shopkeeper) for 1 [Banished Star x4](https://pfewiki.gitbook.io/home/items/banished-stars/banished-star-x4)
 
 ### Used in Crafting:
 #### Armor

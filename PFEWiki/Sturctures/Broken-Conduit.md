@@ -31,10 +31,10 @@ There are 2 variants that can generate:
 |[Cassette - Relic](https://github.com/ItsMePok/PFE/wiki/Cassette-Relic)|1|1|
 |[Crab Pal](https://github.com/ItsMePok/PFE/wiki/Crab-Pal)|1|1|
 |[Boss Event Bounty](https://github.com/ItsMePok/PFE/wiki/Boss-Event-Bounty)|1|1|
-|[Copper Token](https://github.com/ItsMePok/PFE/wiki/Copper-Token)|1|1|
+|[Copper Token](https://pfewiki.gitbook.io/home/items/tokens/copper-token)|1|1|
 |[Plastic](https://github.com/ItsMePok/PFE/wiki/Plastic)|1|1|
 |Nautilus Shell|1|1|
-|[Iron Token](https://github.com/ItsMePok/PFE/wiki/Iron-Token)|1|2|
+|[Iron Token](https://pfewiki.gitbook.io/home/items/tokens/iron-token)|1|2|
 |Quartz|1|2|
 |Prismarine Shard|1|2|
 |Prismarine Crystals|1|2|

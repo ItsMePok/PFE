@@ -5,7 +5,7 @@ Identifier: **poke:banished_star**
 
 ### Usage:
 * Used in Crafting:
-  * [Banished Star x2](https://github.com/ItsMePok/PFE/wiki/Banished-Star-x2)
+  * [Banished Star x2](https://pfewiki.gitbook.io/home/items/banished-stars/banished-star-x2)
   * [Shopkeeper Spawn Egg](https://github.com/ItsMePok/PFE/wiki/Shopkeeper/_edit#shopkeeper-spawn-egg)
 
 ### Obtaining:
@@ -20,10 +20,10 @@ Identifier: **poke:banished_star**
   * Or
     * 9x Cobbled Deepslate
   * Or
-    * 1x [Banished Star x2](https://github.com/ItsMePok/PFE/wiki/Banished-Star-x2)
+    * 1x [Banished Star x2](https://pfewiki.gitbook.io/home/items/banished-stars/banished-star-x2)
 
 * Found In Structures:
-  * [Abandoned Ship](https://github.com/ItsMePok/PFE/wiki/Abandoned-Ship)
+  * [Abandoned Ship](https://pfewiki.gitbook.io/home/sturctures/abandoned-ship)
 
 ### Un-Crafting
 * Depending on the slot of the crafting table you can get different resources when Un-Crafting

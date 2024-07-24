@@ -17,7 +17,7 @@ Identifier: **poke:wire**
   * [Sundial](https://github.com/ItsMePok/PFE/wiki/Sundial)
 
 ### Obtaining:
-  * Found in the [Abandoned Ship](https://github.com/ItsMePok/PFE/wiki/Abandoned-Ship)
+  * Found in the [Abandoned Ship](https://pfewiki.gitbook.io/home/sturctures/abandoned-ship)
 # Recipe:
 |<a href="https://github.com/ItsMePok/PFE/wiki/Plastic"><img src="https://github.com/user-attachments/assets/ef6c978f-76ec-48e4-aa89-29c2d98f4624" width="160"/></a>|<a href="https://minecraft.wiki/w/Copper_Ingot"><img src="https://minecraft.wiki/images/Copper_Ingot_JE2_BE1.png?0d410" width="160"/></a>|<a href="https://github.com/ItsMePok/PFE/wiki/Plastic"><img src="https://github.com/user-attachments/assets/ef6c978f-76ec-48e4-aa89-29c2d98f4624" width="160"/></a>|
 |---|---|---|

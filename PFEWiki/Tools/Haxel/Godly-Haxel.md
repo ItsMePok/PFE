@@ -16,9 +16,9 @@ Mining Speed: **70**
 Enchant type: **Axe**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
-* **[Godly Ingot](https://github.com/ItsMePok/PFE/wiki/Godly-Ingot)**
-* **[Godly Nugget](https://github.com/ItsMePok/PFE/wiki/Godly-Nugget)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
+* **[Godly Ingot](https://pfewiki.gitbook.io/home/items/ingots/godly-ingot)**
+* **[Godly Nugget](https://pfewiki.gitbook.io/home/items/nuggets/godly-nugget)**
 
 Can Break:
 * **All PFE Blocks**

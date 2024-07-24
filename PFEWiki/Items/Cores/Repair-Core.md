@@ -7,4 +7,4 @@ Identifier: **poke:repair_core**
  * Used to repair most items in PFE to full durability
 
 ### Obtaining:
- * Sold by the [Token Trader](https://github.com/ItsMePok/PFE/wiki/Token-Trader) for 1 [Iron Token](https://github.com/ItsMePok/PFE/wiki/Iron-Token)
+ * Sold by the [Token Trader](https://pfewiki.gitbook.io/home/mobs/traders/token-trader) for 1 [Iron Token](https://pfewiki.gitbook.io/home/items/tokens/iron-token)

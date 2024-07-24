@@ -6,29 +6,29 @@ Identifier: **poke:shopkeeper**
 #### Cores
 |Wants|Gives|
 |--|--|
-|[Banished Star x3](https://github.com/ItsMePok/PFE/wiki/Banished-Star-x3)|[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)
-|[Banished Star x4](https://github.com/ItsMePok/PFE/wiki/Banished-Star-x4)|[Upgrade Core](https://github.com/ItsMePok/PFE/wiki/Upgrade-Core)
-|[Banished Star x7](https://github.com/ItsMePok/PFE/wiki/Banished-Star-x7)|[Diamond Upgrade Core](https://github.com/ItsMePok/PFE/wiki/Diamond-Upgrade-Core)
-|[Banished Star x8](https://github.com/ItsMePok/PFE/wiki/Banished-Star-x8)|[Platinum Upgrade Core](https://github.com/ItsMePok/PFE/wiki/Platinum-Upgrade-Core)
+|[Banished Star x3](https://pfewiki.gitbook.io/home/items/banished-stars/banished-star-x3)|[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)
+|[Banished Star x4](https://pfewiki.gitbook.io/home/items/banished-stars/banished-star-x4)|[Upgrade Core](https://pfewiki.gitbook.io/home/items/cores/upgrade-core)
+|[Banished Star x7](https://pfewiki.gitbook.io/home/items/banished-stars/banished-star-x7)|[Diamond Upgrade Core](https://github.com/ItsMePok/PFE/wiki/Diamond-Upgrade-Core)
+|[Banished Star x8](https://pfewiki.gitbook.io/home/items/banished-stars/banished-star-x8)|[Platinum Upgrade Core](https://github.com/ItsMePok/PFE/wiki/Platinum-Upgrade-Core)
 
 #### Ores
 |Wants|Gives|
 |--|--|
-|[Banished Star x2](https://github.com/ItsMePok/PFE/wiki/Banished-Star-x2)|[Raw Cobalt](https://github.com/ItsMePok/PFE/wiki/Raw-Cobalt)
-|[Banished Star x3](https://github.com/ItsMePok/PFE/wiki/Banished-Star-x3)|[Raw Shade](https://github.com/ItsMePok/PFE/wiki/Raw-Shade)
-|[Banished Star x3](https://github.com/ItsMePok/PFE/wiki/Banished-Star-x3)|[Raw Onyx](https://github.com/ItsMePok/PFE/wiki/Raw-Onyx)
-|[Banished Star x3](https://github.com/ItsMePok/PFE/wiki/Banished-Star-x3)|[Raw Holy](https://github.com/ItsMePok/PFE/wiki/Raw-Holy)
-|[Banished Star x3](https://github.com/ItsMePok/PFE/wiki/Banished-Star-x3)|[Raw Hellish](https://github.com/ItsMePok/PFE/wiki/Raw-Hellish)
-|[Banished Star x4](https://github.com/ItsMePok/PFE/wiki/Banished-Star-x4)|[Molten Slimeball](https://github.com/ItsMePok/PFE/wiki/Molten-Slimeball)
+|[Banished Star x2](https://pfewiki.gitbook.io/home/items/banished-stars/banished-star-x2)|[Raw Cobalt](https://github.com/ItsMePok/PFE/wiki/Raw-Cobalt)
+|[Banished Star x3](https://pfewiki.gitbook.io/home/items/banished-stars/banished-star-x3)|[Raw Shade](https://github.com/ItsMePok/PFE/wiki/Raw-Shade)
+|[Banished Star x3](https://pfewiki.gitbook.io/home/items/banished-stars/banished-star-x3)|[Raw Onyx](https://github.com/ItsMePok/PFE/wiki/Raw-Onyx)
+|[Banished Star x3](https://pfewiki.gitbook.io/home/items/banished-stars/banished-star-x3)|[Raw Holy](https://github.com/ItsMePok/PFE/wiki/Raw-Holy)
+|[Banished Star x3](https://pfewiki.gitbook.io/home/items/banished-stars/banished-star-x3)|[Raw Hellish](https://github.com/ItsMePok/PFE/wiki/Raw-Hellish)
+|[Banished Star x4](https://pfewiki.gitbook.io/home/items/banished-stars/banished-star-x4)|[Molten Slimeball](https://github.com/ItsMePok/PFE/wiki/Molten-Slimeball)
 
 #### Misc
 |Wants|Gives|
 |--|--|
-|[Banished Star x2](https://github.com/ItsMePok/PFE/wiki/Banished-Star-x2)|[Sugar Water](https://github.com/ItsMePok/PFE/wiki/Sugar-Water)
-|[Banished Star x2](https://github.com/ItsMePok/PFE/wiki/Banished-Star-x2)|[Turnip](https://github.com/ItsMePok/PFE/wiki/Trunip)
-|[Banished Star x5](https://github.com/ItsMePok/PFE/wiki/Banished-Star-x5)|[Red Present](https://github.com/ItsMePok/PFE/wiki/Red-Present)
-|[Banished Star x6](https://github.com/ItsMePok/PFE/wiki/Banished-Star-x6)|[Cassette - Aria Math](https://github.com/ItsMePok/PFE/wiki/Cassette-AriaMath)
-|[Banished Star x6](https://github.com/ItsMePok/PFE/wiki/Banished-Star-x6)|[Star Pottery Sherd](https://github.com/ItsMePok/PFE/wiki/Star-Sherd)
+|[Banished Star x2](https://pfewiki.gitbook.io/home/items/banished-stars/banished-star-x2)|[Sugar Water](https://github.com/ItsMePok/PFE/wiki/Sugar-Water)
+|[Banished Star x2](https://pfewiki.gitbook.io/home/items/banished-stars/banished-star-x2)|[Turnip](https://github.com/ItsMePok/PFE/wiki/Trunip)
+|[Banished Star x5](https://pfewiki.gitbook.io/home/items/banished-stars/banished-star-x5)|[Red Present](https://github.com/ItsMePok/PFE/wiki/Red-Present)
+|[Banished Star x6](https://pfewiki.gitbook.io/home/items/banished-stars/banished-star-x6)|[Cassette - Aria Math](https://github.com/ItsMePok/PFE/wiki/Cassette-AriaMath)
+|[Banished Star x6](https://pfewiki.gitbook.io/home/items/banished-stars/banished-star-x6)|[Star Pottery Sherd](https://github.com/ItsMePok/PFE/wiki/Star-Sherd)
 
 ### Obtaining:
  * Crafting The [Shopkeeper Spawn Egg](https://github.com/ItsMePok/PFE/wiki/Shopkeeper#shopkeeper-spawn-egg)

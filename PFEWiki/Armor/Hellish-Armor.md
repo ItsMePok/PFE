@@ -18,8 +18,8 @@ Armor: **8**
 Enchant type: **Helmet**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
-* **[Hellish Ingot](https://github.com/ItsMePok/PFE/wiki/Hellish-Ingot)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
+* **[Hellish Ingot](https://pfewiki.gitbook.io/home/items/ingots/hellish-ingot)**
 
 Trimmable: **Yes**
 
@@ -43,8 +43,8 @@ Armor: **13**
 Enchant type: **Chestplate**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
-* **[Hellish Ingot](https://github.com/ItsMePok/PFE/wiki/Hellish-Ingot)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
+* **[Hellish Ingot](https://pfewiki.gitbook.io/home/items/ingots/hellish-ingot)**
 
 Trimmable: **Yes**
 
@@ -67,8 +67,8 @@ Armor: **12**
 Enchant type: **Leggings**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
-* **[Hellish Ingot](https://github.com/ItsMePok/PFE/wiki/Hellish-Ingot)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
+* **[Hellish Ingot](https://pfewiki.gitbook.io/home/items/ingots/hellish-ingot)**
 
 Trimmable: **Yes**
 
@@ -91,8 +91,8 @@ Armor: **7**
 Enchant type: **Boots**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
-* **[Hellish Ingot](https://github.com/ItsMePok/PFE/wiki/Hellish-Ingot)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
+* **[Hellish Ingot](https://pfewiki.gitbook.io/home/items/ingots/hellish-ingot)**
 
 Trimmable: **Yes**
 

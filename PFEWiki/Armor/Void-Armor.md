@@ -18,9 +18,9 @@ Armor: **12**
 Enchant type: **Helmet**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
-* **[Void Ingot](https://github.com/ItsMePok/PFE/wiki/Void-Ingot)**
-* **[Void Nugget](https://github.com/ItsMePok/PFE/wiki/Void-Nugget)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
+* **[Void Ingot](https://pfewiki.gitbook.io/home/items/ingots/void-ingot)**
+* **[Void Nugget](https://pfewiki.gitbook.io/home/items/nuggets/void-nugget)**
 
 Trimmable: **Yes**
 
@@ -43,9 +43,9 @@ Armor: **20**
 Enchant type: **Chestplate**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
-* **[Void Ingot](https://github.com/ItsMePok/PFE/wiki/Void-Ingot)**
-* **[Void Nugget](https://github.com/ItsMePok/PFE/wiki/Void-Nugget)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
+* **[Void Ingot](https://pfewiki.gitbook.io/home/items/ingots/void-ingot)**
+* **[Void Nugget](https://pfewiki.gitbook.io/home/items/nuggets/void-nugget)**
 
 Trimmable: **Yes**
 
@@ -68,9 +68,9 @@ Armor: **20**
 Enchant type: **Leggings**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
-* **[Void Ingot](https://github.com/ItsMePok/PFE/wiki/Void-Ingot)**
-* **[Void Nugget](https://github.com/ItsMePok/PFE/wiki/Void-Nugget)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
+* **[Void Ingot](https://pfewiki.gitbook.io/home/items/ingots/void-ingot)**
+* **[Void Nugget](https://pfewiki.gitbook.io/home/items/nuggets/void-nugget)**
 
 Trimmable: **Yes**
 
@@ -93,9 +93,9 @@ Armor: **11**
 Enchant type: **Boots**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
-* **[Void Ingot](https://github.com/ItsMePok/PFE/wiki/Void-Ingot)**
-* **[Void Nugget](https://github.com/ItsMePok/PFE/wiki/Void-Nugget)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
+* **[Void Ingot](https://pfewiki.gitbook.io/home/items/ingots/void-ingot)**
+* **[Void Nugget](https://pfewiki.gitbook.io/home/items/nuggets/void-nugget)**
 
 Trimmable: **Yes**
 

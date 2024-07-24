@@ -5,12 +5,12 @@ Identifier: **poke:banished_star_x7**
 
 ### Usage:
 * Used in Crafting:
-  * [Banished Star x8](https://github.com/ItsMePok/PFE/wiki/Banished-Star-x8)
+  * [Banished Star x8](https://pfewiki.gitbook.io/home/items/banished-stars/banished-star-x8)
 * [Shopkeeper](https://github.com/ItsMePok/PFE/wiki/Shopkeeper) Trade:
-  * [Banished Star x7](https://github.com/ItsMePok/PFE/wiki/Banished-Star-x7) -> [Diamond Upgrade Core](https://github.com/ItsMePok/PFE/wiki/Diamond-Upgrade-Core)
+  * [Banished Star x7](https://pfewiki.gitbook.io/home/items/banished-stars/banished-star-x7) -> [Diamond Upgrade Core](https://github.com/ItsMePok/PFE/wiki/Diamond-Upgrade-Core)
 
 ### Obtaining:
 * Crafted with:
-  * 9x [Banished Star x6](https://github.com/ItsMePok/PFE/wiki/Banished-Star-x6)
+  * 9x [Banished Star x6](https://pfewiki.gitbook.io/home/items/banished-stars/banished-star-x6)
 * Alternate Recipe:
-  * 1x [Banished Star x8](https://github.com/ItsMePok/PFE/wiki/Banished-Star-x8)
+  * 1x [Banished Star x8](https://pfewiki.gitbook.io/home/items/banished-stars/banished-star-x8)

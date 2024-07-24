@@ -10,16 +10,16 @@ Damage: **Based on the Arrow shot**
 Enchant type: **Flint & Steel** (Check Notes for more info)
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
-* **[Godly Ingot](https://github.com/ItsMePok/PFE/wiki/Godly-Ingot)**
-* **[Godly Nugget](https://github.com/ItsMePok/PFE/wiki/Godly-Nugget)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
+* **[Godly Ingot](https://pfewiki.gitbook.io/home/items/ingots/godly-ingot)**
+* **[Godly Nugget](https://pfewiki.gitbook.io/home/items/nuggets/godly-nugget)**
 
 Can Shoot:
-* **[Galaxy Arrow](https://github.com/ItsMePok/PFE/wiki/Galaxy-Arrow)**
-* **[Void Arrow](https://github.com/ItsMePok/PFE/wiki/Void-Arrow)**
-* **[Holy Arrow](https://github.com/ItsMePok/PFE/wiki/Holy-Arrow)**
-* **[Hellish Arrow](https://github.com/ItsMePok/PFE/wiki/Hellish-Arrow)**
-* **[Volt Arrow](https://github.com/ItsMePok/PFE/wiki/Volt-Arrow)**
+* **[Galaxy Arrow](https://pfewiki.gitbook.io/home/weapons/arrows/galaxy-arrow)**
+* **[Void Arrow](https://pfewiki.gitbook.io/home/weapons/arrows/void-arrow)**
+* **[Holy Arrow](https://pfewiki.gitbook.io/home/weapons/arrows/holy-arrow)**
+* **[Hellish Arrow](https://pfewiki.gitbook.io/home/weapons/arrows/hellish-arrow)**
+* **[Volt Arrow](https://pfewiki.gitbook.io/home/weapons/arrows/volt-arrow)**
 * **Vanilla Arrows**
 
 ### Notes: 

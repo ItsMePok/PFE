@@ -7,6 +7,6 @@ Usage: **Used in crafting the [Kapow Ring](https://github.com/ItsMePok/PFE/wiki/
 
 ### Obtaining:
 * Crafted with:
-    * 4x [Onyx Ingot](https://github.com/ItsMePok/PFE/wiki/Onyx-Ingot)
+    * 4x [Onyx Ingot](https://pfewiki.gitbook.io/home/items/ingots/onyx-ingot)
     * 4x Tnt
     * 1x Netherite Block

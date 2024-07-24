@@ -16,7 +16,7 @@ Mining Speed: **150**
 Enchant type: **Axe**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
 * **[Nebula Ingot](https://github.com/ItsMePok/PFE/wiki/Nebula-Ingot)**
 * **[Nebula Nugget](https://github.com/ItsMePok/PFE/wiki/Nebula-Nugget)**
 

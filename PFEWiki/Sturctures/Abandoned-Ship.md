@@ -1,7 +1,7 @@
 ## Abandoned Ship
 ![abandoned_ship](https://github.com/ItsMePok/PFE/assets/136857747/0a6d8e73-4850-40f0-9f85-f6dc912ef49e)
 > [!NOTE]
-> The 3D Render above was not wanting to show some of the custom blocks, refer to the [In-Game Screenshots](https://github.com/ItsMePok/PFE/wiki/Abandoned-Ship#in-game-screenshots) for a better image
+> The 3D Render above was not wanting to show some of the custom blocks, refer to the [In-Game Screenshots](https://pfewiki.gitbook.io/home/sturctures/abandoned-ship#in-game-screenshots) for a better image
 
 **Structure identifier:**
 * poke:abandoned_ship
@@ -27,7 +27,7 @@
 |[Diamond Upgrade Core](https://github.com/ItsMePok/PFE/wiki/Diamond-Upgrade-Core)|1|1|
 |[Charged Cobalt Block](https://github.com/ItsMePok/PFE/wiki/Charged-Cobalt-Block)|1|1|
 |[Night Vision Goggles](https://github.com/ItsMePok/PFE/wiki/Night-Vision-Goggles)|1|1|
-|[Upgrade Core](https://github.com/ItsMePok/PFE/wiki/Upgrade-Core)|1|2|
+|[Upgrade Core](https://pfewiki.gitbook.io/home/items/cores/upgrade-core)|1|2|
 |[Calibrated Block Breaker](https://github.com/ItsMePok/PFE/wiki/Calibrated-Block-Breaker)|1|2|
 |[Calibrated Cobblestone Generator](https://github.com/ItsMePok/PFE/wiki/Calibrated-Cobblestone-Generator)|1|2|
 |[Antenna](https://github.com/ItsMePok/PFE/wiki/Antenna)|1|3|
@@ -50,7 +50,7 @@
 |[Gps Module](https://github.com/ItsMePok/PFE/wiki/Gps-Module)|1|3|
 |Daylight Sensor|1|3|
 |Sticky Piston|1|3|
-|[Cobalt Ingot](https://github.com/ItsMePok/PFE/wiki/Cobalt-Ingot)|1|3|
+|[Cobalt Ingot](https://pfewiki.gitbook.io/home/items/ingots/cobalt-ingot)|1|3|
 |Observer|1|5|
 |Piston|1|5|
 |Redstone Dust|1|5|
@@ -63,10 +63,10 @@
 (5 of these ↓)
 |Item|Amount|Weight|
 |--|--|--|
-|[Diamond Token](https://github.com/ItsMePok/PFE/wiki/Diamond-Token)|1|1|
-|[Gold Token](https://github.com/ItsMePok/PFE/wiki/Gold-Token)|1|5|
-|[Copper Token](https://github.com/ItsMePok/PFE/wiki/Copper-Token)|1|10|
-|[Iron Token](https://github.com/ItsMePok/PFE/wiki/Iron-Token)|1|15|
+|[Diamond Token](https://pfewiki.gitbook.io/home/items/tokens/diamond-token)|1|1|
+|[Gold Token](https://pfewiki.gitbook.io/home/items/tokens/gold-token)|1|5|
+|[Copper Token](https://pfewiki.gitbook.io/home/items/tokens/copper-token)|1|10|
+|[Iron Token](https://pfewiki.gitbook.io/home/items/tokens/iron-token)|1|15|
 |Empty|-|10|
 
 ***

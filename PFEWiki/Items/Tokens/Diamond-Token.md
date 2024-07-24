@@ -9,9 +9,9 @@ Identifier: **poke:diamond_token**
 ### Obtaining:
 * Found in PFE Structures
   * [Ruined Tower](https://github.com/ItsMePok/PFE/wiki/Ruined-Tower)
-  * [Abandoned Ship](https://github.com/ItsMePok/PFE/wiki/Abandoned-Ship)
+  * [Abandoned Ship](https://pfewiki.gitbook.io/home/sturctures/abandoned-ship)
   * [End Guard Tower](https://github.com/ItsMePok/PFE/wiki/End-Guard-Tower)
 * Defeating:
   * [Sparky](https://github.com/ItsMePok/PFE/wiki/Sparky)
 * Exchanging tokens with:
-  * [Token Trader](https://github.com/ItsMePok/PFE/wiki/Token-Trader)
+  * [Token Trader](https://pfewiki.gitbook.io/home/mobs/traders/token-trader)

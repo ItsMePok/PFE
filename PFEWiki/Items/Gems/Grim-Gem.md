@@ -7,6 +7,6 @@ Usage: **Used in crafting the [Grim Ring](https://github.com/ItsMePok/PFE/wiki/G
 
 ### Obtaining:
 * Crafted with:
-    * 4x [Void Ingot](https://github.com/ItsMePok/PFE/wiki/Void-Ingot)
+    * 4x [Void Ingot](https://pfewiki.gitbook.io/home/items/ingots/void-ingot)
     * 1x [Void Block](https://github.com/ItsMePok/PFE/wiki/Void-Block)
     * 4x Wither Skeleton Skull

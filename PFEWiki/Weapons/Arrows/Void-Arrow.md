@@ -15,7 +15,7 @@ Can be shot by:
 * All PFE Burstbows
 
 ### Obtaining:
-* Crafted with 8 Arrows & 1 [Void Nugget](https://github.com/ItsMePok/PFE/wiki/Void-Nugget)
+* Crafted with 8 Arrows & 1 [Void Nugget](https://pfewiki.gitbook.io/home/items/nuggets/void-nugget)
 
 ### Notes:
 * Shot Arrows will be converted back to Vanilla Arrows when picked up

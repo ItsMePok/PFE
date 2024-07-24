@@ -18,7 +18,7 @@ _(Sorry no 3d render yet I'm having issues with it displaying properly, refer to
 > 
 > ![End Guard Tower - Top Barrel](https://github.com/ItsMePok/PFE/assets/136857747/3c688f55-d50c-4f86-a45e-9b1a6b1eea00)
 > * 10x Cobwebs
-> * 3x [Galaxy Arrows](https://github.com/ItsMePok/PFE/wiki/Galaxy-Arrow)
+> * 3x [Galaxy Arrows](https://pfewiki.gitbook.io/home/weapons/arrows/galaxy-arrow)
 > * 2x [Raw Astral](https://github.com/ItsMePok/PFE/wiki/Raw-Astral)
 > * 1x [Nebula Potion](https://github.com/ItsMePok/PFE/wiki/Nebula-Potion)
 > * 1x [Death Potion](https://github.com/ItsMePok/PFE/wiki/Death-Potion)
@@ -42,17 +42,17 @@ _(Sorry no 3d render yet I'm having issues with it displaying properly, refer to
 |--|--|--|
 |[Necromancer Spawn Egg](https://github.com/ItsMePok/PFE/wiki/Necromancer)|1|2|
 |[Knightling Spawn Egg](https://github.com/ItsMePok/PFE/wiki/Kinghtling)|1|2|
-|[Diamond Token](https://github.com/ItsMePok/PFE/wiki/Diamond-Token)|1-2|2|
+|[Diamond Token](https://pfewiki.gitbook.io/home/items/tokens/diamond-token)|1-2|2|
 |[Raw Nebula Block](https://github.com/ItsMePok/PFE/wiki/Raw-Nebula-Block)|1|2|
 |Diamond|1-5|5|
-|[Iron Token](https://github.com/ItsMePok/PFE/wiki/Iron-Token)|1-3|8|
+|[Iron Token](https://pfewiki.gitbook.io/home/items/tokens/iron-token)|1-3|8|
 |[Void Potion](https://github.com/ItsMePok/PFE/wiki/Void-Potion)|1|10|
 |[Nebula Potion](https://github.com/ItsMePok/PFE/wiki/Nebula-Potion)|1|10|
 |[Raw Godly](https://github.com/ItsMePok/PFE/wiki/Raw-Godly)|1-5|15|
 |Gold Ingot|2-7|15|
 |[Raw Nebula](https://github.com/ItsMePok/PFE/wiki/Raw-Nebula)|1|15|
 |[Nebula Noodles](https://github.com/ItsMePok/PFE/wiki/Nebula-Noodles)|1-3|25|
-|[Copper Token](https://github.com/ItsMePok/PFE/wiki/Copper-Token)|4-6|25|
+|[Copper Token](https://pfewiki.gitbook.io/home/items/tokens/copper-token)|4-6|25|
 |[Raw Void](https://github.com/ItsMePok/PFE/wiki/Raw-Void)|3-7|25|
 |Enchanted Book|1|20|
 |Empty|-|15|
@@ -85,13 +85,13 @@ _(Sorry no 3d render yet I'm having issues with it displaying properly, refer to
 (1 of these if not ominous ↓)
 |Item|Amount|Weight|
 |--|--|--|
-|[Iron Token](https://github.com/ItsMePok/PFE/wiki/Iron-Token)|1-2|1|
-|[Copper Token](https://github.com/ItsMePok/PFE/wiki/Copper-Token)|3-6|2|
+|[Iron Token](https://pfewiki.gitbook.io/home/items/tokens/iron-token)|1-2|1|
+|[Copper Token](https://pfewiki.gitbook.io/home/items/tokens/copper-token)|3-6|2|
 
 (1 of these if ominous ↓)
 |Item|Amount|Weight|
 |--|--|--|
-|[Iron Token](https://github.com/ItsMePok/PFE/wiki/Iron-Token)|2-7|1|
+|[Iron Token](https://pfewiki.gitbook.io/home/items/tokens/iron-token)|2-7|1|
 
 ***
 

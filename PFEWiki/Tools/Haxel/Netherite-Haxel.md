@@ -16,7 +16,7 @@ Mining Speed: **50**
 Enchant type: **Axe**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
 * **[Scrappy Block](https://github.com/ItsMePok/PFE/wiki/Scrapppy-Block)**
 * **Netherite Ingot**
 * **Netherite Scrap**

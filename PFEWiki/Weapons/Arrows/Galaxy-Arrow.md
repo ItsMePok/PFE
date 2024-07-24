@@ -15,7 +15,7 @@ Can be shot by:
 * All PFE Burstbows
 
 ### Obtaining:
-* Crafted with 8 Arrows & 1 [Galaxy Nugget](https://github.com/ItsMePok/PFE/wiki/Galaxy-Nugget)
+* Crafted with 8 Arrows & 1 [Galaxy Nugget](https://pfewiki.gitbook.io/home/items/nuggets/galaxy-nugget)
 
 ### Notes:
 * Shot Arrows will be converted back to Vanilla Arrows when picked up

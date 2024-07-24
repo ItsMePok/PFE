@@ -20,12 +20,12 @@
 (2-5 of these ↓)
 |Item|Amount|Weight|
 |--|--|--|
-|[Volt Arrow](https://github.com/ItsMePok/PFE/wiki/Volt-Arrow)|1|1|
+|[Volt Arrow](https://pfewiki.gitbook.io/home/weapons/arrows/volt-arrow)|1|1|
 |[Boss Event Bounty](https://github.com/ItsMePok/PFE/wiki/Boss-Event-Bounty)|1|1|
 |[Apollo the Snake](https://github.com/ItsMePok/PFE/wiki/Apollo-The-Snake)|1|1|
-|[Gold Token](https://github.com/ItsMePok/PFE/wiki/Gold-Token)|1|2|
-|[Iron Token](https://github.com/ItsMePok/PFE/wiki/Iron-Token)|1|4|
-|[Copper Token](https://github.com/ItsMePok/PFE/wiki/Copper-Token)|1|5|
+|[Gold Token](https://pfewiki.gitbook.io/home/items/tokens/gold-token)|1|2|
+|[Iron Token](https://pfewiki.gitbook.io/home/items/tokens/iron-token)|1|4|
+|[Copper Token](https://pfewiki.gitbook.io/home/items/tokens/copper-token)|1|5|
 
 (1 of these ↓)
 |Item|Amount|Weight|
@@ -50,8 +50,8 @@
 |[Turnip](https://github.com/ItsMePok/PFE/wiki/Turnip)|1|2|
 |[Apple Juice](https://github.com/ItsMePok/PFE/wiki/Apple-Juice)|1|2|
 |[Bundled Feathers](https://github.com/ItsMePok/PFE/wiki/Bundled-Feathers)|1|2|
-|[Copper Token](https://github.com/ItsMePok/PFE/wiki/Copper-Token)|1|2|
-|[Iron Token](https://github.com/ItsMePok/PFE/wiki/Iron-Token)|1|2|
+|[Copper Token](https://pfewiki.gitbook.io/home/items/tokens/copper-token)|1|2|
+|[Iron Token](https://pfewiki.gitbook.io/home/items/tokens/iron-token)|1|2|
 
 ***
 

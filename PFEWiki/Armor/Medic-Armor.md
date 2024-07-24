@@ -21,9 +21,9 @@ Armor: **10**
 Enchant type: **Helmet**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
 * **[Medic Ingot](https://github.com/ItsMePok/PFE/wiki/Medic-Ingot)**
-* **[Medic Nugget](https://github.com/ItsMePok/PFE/wiki/Medic-Nugget)**
+* **[Medic Nugget](https://pfewiki.gitbook.io/home/items/nuggets/medic-nugget)**
 
 Trimmable: **Yes**
 
@@ -45,9 +45,9 @@ Armor: **14**
 Enchant type: **Chestplate**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
 * **[Medic Ingot](https://github.com/ItsMePok/PFE/wiki/Medic-Ingot)**
-* **[Medic Nugget](https://github.com/ItsMePok/PFE/wiki/Medic-Nugget)**
+* **[Medic Nugget](https://pfewiki.gitbook.io/home/items/nuggets/medic-nugget)**
 
 Trimmable: **Yes**
 
@@ -69,9 +69,9 @@ Armor: **13**
 Enchant type: **Leggings**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
 * **[Medic Ingot](https://github.com/ItsMePok/PFE/wiki/Medic-Ingot)**
-* **[Medic Nugget](https://github.com/ItsMePok/PFE/wiki/Medic-Nugget)**
+* **[Medic Nugget](https://pfewiki.gitbook.io/home/items/nuggets/medic-nugget)**
 
 Trimmable: **Yes**
 
@@ -93,9 +93,9 @@ Armor: **10**
 Enchant type: **Boots**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
 * **[Medic Ingot](https://github.com/ItsMePok/PFE/wiki/Medic-Ingot)**
-* **[Medic Nugget](https://github.com/ItsMePok/PFE/wiki/Medic-Nugget)**
+* **[Medic Nugget](https://pfewiki.gitbook.io/home/items/nuggets/medic-nugget)**
 
 Trimmable: **Yes**
 

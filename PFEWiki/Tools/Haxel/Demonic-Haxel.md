@@ -16,8 +16,8 @@ Mining Speed: **70**
 Enchant type: **Axe**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
-* **[Demonic Ingot](https://github.com/ItsMePok/PFE/wiki/Demonic-Ingot)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
+* **[Demonic Ingot](https://pfewiki.gitbook.io/home/items/ingots/demonic-ingot)**
 * **[Demonic Nugget](https://github.com/ItsMePok/PFE/wiki/Demonic-Nugget)**
 
 Can Break:
@@ -26,6 +26,6 @@ Can Break:
 
 ### Obtaining:
 * Crafted With:
-    * 4x **[Demonic Block](https://github.com/ItsMePok/PFE/wiki/Demonic-Block)**
+    * 4x **[Demonic Block](https://pfewiki.gitbook.io/home/blocks/ore-blocks/demonic-block)**
     * 1x **[Diamond Upgrade Core](https://github.com/ItsMePok/PFE/wiki/Diamond-Upgrade-Core)**
     * 1x **[Hellish Haxel](https://github.com/ItsMePok/PFE/wiki/Hellish-Haxel)**

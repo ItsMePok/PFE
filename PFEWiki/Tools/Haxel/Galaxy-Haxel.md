@@ -16,9 +16,9 @@ Mining Speed: **90**
 Enchant type: **Axe**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
-* **[Galaxy Ingot](https://github.com/ItsMePok/PFE/wiki/Galaxy-Ingot)**
-* **[Galaxy Nugget](https://github.com/ItsMePok/PFE/wiki/Galaxy-Nugget)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
+* **[Galaxy Ingot](https://pfewiki.gitbook.io/home/items/ingots/galaxy-ingot)**
+* **[Galaxy Nugget](https://pfewiki.gitbook.io/home/items/nuggets/galaxy-nugget)**
 
 Can Break:
 * **All PFE Blocks**
@@ -26,6 +26,6 @@ Can Break:
 
 ### Obtaining:
 * Crafted With:
-    * 4x **[Galaxy Block](https://github.com/ItsMePok/PFE/wiki/Galaxy-Block)**
+    * 4x **[Galaxy Block](https://pfewiki.gitbook.io/home/blocks/ore-blocks/galaxy-block)**
     * 1x **[Platinum Upgrade Core](https://github.com/ItsMePok/PFE/wiki/Platinum-Upgrade-Core)**
     * 1x **[Medic Haxel](https://github.com/ItsMePok/PFE/wiki/Medic-Haxel)**

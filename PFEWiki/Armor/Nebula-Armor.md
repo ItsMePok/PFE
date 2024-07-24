@@ -25,7 +25,7 @@ Knockback Resistance: **100%**
 Enchant type: **Helmet**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
 * **Nebula Ingot**
 
 Trimmable: **Yes but texture support is not available yet**
@@ -44,7 +44,7 @@ Knockback Resistance: **100%**
 Enchant type: **Chestplate**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
 * **Nebula Ingot**
 
 Trimmable: **Yes but texture support is not available yet**
@@ -63,7 +63,7 @@ Knockback Resistance: **100%**
 Enchant type: **Leggings**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
 * **Nebula Ingot**
 
 Trimmable: **Yes but texture support is not available yet**
@@ -82,7 +82,7 @@ Knockback Resistance: **100%**
 Enchant type: **Boots**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
 * **Nebula Ingot**
 
 Trimmable: **Yes but texture support is not available yet**

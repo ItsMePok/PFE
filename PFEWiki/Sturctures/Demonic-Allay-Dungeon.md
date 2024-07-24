@@ -32,13 +32,13 @@
 (1 of these if not ominous ↓)
 |Item|Amount|Weight|
 |--|--|--|
-|[Iron Token](https://github.com/ItsMePok/PFE/wiki/Iron-Token)|1-2|1|
-|[Copper Token](https://github.com/ItsMePok/PFE/wiki/Copper-Token)|3-6|1|
+|[Iron Token](https://pfewiki.gitbook.io/home/items/tokens/iron-token)|1-2|1|
+|[Copper Token](https://pfewiki.gitbook.io/home/items/tokens/copper-token)|3-6|1|
 
 (1 of these if ominous ↓)
 |Item|Amount|Weight|
 |--|--|--|
-|[Iron Token](https://github.com/ItsMePok/PFE/wiki/Iron-Token)|2-7|1|
+|[Iron Token](https://pfewiki.gitbook.io/home/items/tokens/iron-token)|2-7|1|
 
 
 ## In-game Screenshots:

@@ -16,9 +16,9 @@ Mining Speed: **80**
 Enchant type: **Axe**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
 * **[Medic Ingot](https://github.com/ItsMePok/PFE/wiki/Medic-Ingot)**
-* **[Medic Nugget](https://github.com/ItsMePok/PFE/wiki/Medic-Nugget)**
+* **[Medic Nugget](https://pfewiki.gitbook.io/home/items/nuggets/medic-nugget)**
 
 Can Break:
 * **All PFE Blocks**

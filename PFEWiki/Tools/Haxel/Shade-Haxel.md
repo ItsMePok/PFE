@@ -16,7 +16,7 @@ Mining Speed: **20**
 Enchant type: **Axe**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
 * **[Shade Ingot](https://github.com/ItsMePok/PFE/wiki/Shade-Ingot)**
 * **[Shade Nugget](https://github.com/ItsMePok/PFE/wiki/Shade-Nugget)**
 
@@ -27,5 +27,5 @@ Can Break:
 ### Obtaining:
 * Crafted With:
     * 4x **[Shade Block](https://github.com/ItsMePok/PFE/wiki/Shade-Block)**
-    * 1x **[Upgrade Core](https://github.com/ItsMePok/PFE/wiki/Upgrade-Core)**
+    * 1x **[Upgrade Core](https://pfewiki.gitbook.io/home/items/cores/upgrade-core)**
     * 1x **[Cobalt Haxel](https://github.com/ItsMePok/PFE/wiki/Cobalt-Haxel)**

@@ -9,12 +9,12 @@ Identifier: **poke:quest_trader**
 |[Paper](https://minecraft.wiki/w/Paper)|[Mine Quest](https://github.com/ItsMePok/PFE/wiki/Mine-Quest)
 |[Paper](https://minecraft.wiki/w/Paper)|[Farm Quest](https://github.com/ItsMePok/PFE/wiki/Farm-Quest)
 |[Paper](https://minecraft.wiki/w/Paper)|[Craft Quest](https://github.com/ItsMePok/PFE/wiki/Kill-Quest)
-|[Iron Token](https://github.com/ItsMePok/PFE/wiki/Iron-Token)|[Boss Event Bounty](https://github.com/ItsMePok/PFE/wiki/Boss-Event-Bounty)
+|[Iron Token](https://pfewiki.gitbook.io/home/items/tokens/iron-token)|[Boss Event Bounty](https://github.com/ItsMePok/PFE/wiki/Boss-Event-Bounty)
 
 ### Obtaining:
  * Crafting The [Quest Trader Spawn Egg](https://github.com/ItsMePok/PFE/wiki/Quest-Trader#quest-trader-spawn-egg)
- * Sold by the [Token Trader](https://github.com/ItsMePok/PFE/wiki/Token-Trader):
-   * [Iron Token](https://github.com/ItsMePok/PFE/wiki/Iron-Token) -> [Quest Trader](https://github.com/ItsMePok/PFE/wiki/Quest-Trader)
+ * Sold by the [Token Trader](https://pfewiki.gitbook.io/home/mobs/traders/token-trader):
+   * [Iron Token](https://pfewiki.gitbook.io/home/items/tokens/iron-token) -> [Quest Trader](https://github.com/ItsMePok/PFE/wiki/Quest-Trader)
 
 ## Quest Trader Spawn Egg
 ![poke_spawn_quest_trader](https://github.com/user-attachments/assets/30ef4637-a970-4ab3-a916-cab0111aca3e)

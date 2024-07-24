@@ -43,8 +43,8 @@
 (5 of these ↓)
 |Item|Amount|Weight|
 |--|--|--|
-|[Iron Token](https://github.com/ItsMePok/PFE/wiki/Iron-Token)|1|15|
-|[Copper Token](https://github.com/ItsMePok/PFE/wiki/Copper-Token)|1|20|
+|[Iron Token](https://pfewiki.gitbook.io/home/items/tokens/iron-token)|1|15|
+|[Copper Token](https://pfewiki.gitbook.io/home/items/tokens/copper-token)|1|20|
 |Empty|-|50|
 
 ## In-game Screenshots:

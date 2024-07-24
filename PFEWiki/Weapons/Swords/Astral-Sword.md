@@ -12,9 +12,9 @@ Mining Speed: **60**
 Enchant type: **Sword**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
-* **[Astral Ingot](https://github.com/ItsMePok/PFE/wiki/Astral-Ingot)**
-* **[Astral Nugget](https://github.com/ItsMePok/PFE/wiki/Astral-Nugget)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
+* **[Astral Ingot](https://pfewiki.gitbook.io/home/items/ingots/astral-ingot)**
+* **[Astral Nugget](https://pfewiki.gitbook.io/home/items/nuggets/astral-nugget)**
 
 Can Break:
 * **[Cobwebs](https://minecraft.wiki/w/Cobweb)**

@@ -16,9 +16,9 @@ Mining Speed: **120**
 Enchant type: **Axe**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
-* **[Astral Ingot](https://github.com/ItsMePok/PFE/wiki/Astral-Ingot)**
-* **[Astral Nugget](https://github.com/ItsMePok/PFE/wiki/Astral-Nugget)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
+* **[Astral Ingot](https://pfewiki.gitbook.io/home/items/ingots/astral-ingot)**
+* **[Astral Nugget](https://pfewiki.gitbook.io/home/items/nuggets/astral-nugget)**
 
 Can Break:
 * **All PFE Blocks**
@@ -26,6 +26,6 @@ Can Break:
 
 ### Obtaining:
 * Crafted With:
-    * 4x **[Astral Block](https://github.com/ItsMePok/PFE/wiki/Astral-Block)**
+    * 4x **[Astral Block](https://pfewiki.gitbook.io/home/blocks/ore-blocks/astral-block)**
     * 1x **[Platinum Upgrade Core](https://github.com/ItsMePok/PFE/wiki/Platinum-Upgrade-Core)**
     * 1x **[Godly Haxel](https://github.com/ItsMePok/PFE/wiki/Godly-Haxel)**

@@ -23,7 +23,7 @@ Enchant type: **Helmet**
 Knockback Resistance: **50%**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
 * **Death Ingot**
 * **Death Nugget**
 
@@ -43,7 +43,7 @@ Enchant type: **Chestplate**
 Knockback Resistance: **50%**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
 * **Death Ingot**
 * **Death Nugget**
 
@@ -63,7 +63,7 @@ Enchant type: **Leggings**
 Knockback Resistance: **50%**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
 * **Death Ingot**
 * **Death Nugget**
 
@@ -83,7 +83,7 @@ Enchant type: **Boots**
 Knockback Resistance: **50%**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
 * **Death Ingot**
 * **Death Nugget**
 

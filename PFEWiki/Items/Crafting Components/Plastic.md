@@ -20,7 +20,7 @@ Identifier: **poke:plastic**
 
 ### Obtaining:
 * Found in Structures:
-  * [Abandoned Ship](https://github.com/ItsMePok/PFE/wiki/Abandoned-Ship)
+  * [Abandoned Ship](https://pfewiki.gitbook.io/home/sturctures/abandoned-ship)
   * [Broken Conduit](https://github.com/ItsMePok/PFE/wiki/Broken-Conduit)
 # Recipe:
 |<a href="https://minecraft.wiki/w/Sand"><img src="https://minecraft.wiki/images/thumb/Sand_JE5_BE3.png/150px-Sand_JE5_BE3.png?ae2df" width="160"/></a>|<a href="https://minecraft.wiki/w/Sand"><img src="https://minecraft.wiki/images/thumb/Sand_JE5_BE3.png/150px-Sand_JE5_BE3.png?ae2df" width="160"/></a>|<a href="https://minecraft.wiki/w/Sand"><img src="https://minecraft.wiki/images/thumb/Sand_JE5_BE3.png/150px-Sand_JE5_BE3.png?ae2df" width="160"/></a>|

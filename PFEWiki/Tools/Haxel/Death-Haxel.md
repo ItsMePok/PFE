@@ -17,7 +17,7 @@ Mining Speed: **100**
 Enchant type: **Axe**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
 * **[Death Ingot](https://github.com/ItsMePok/PFE/wiki/Death-Ingot)**
 * **[Death Nugget](https://github.com/ItsMePok/PFE/wiki/Death-Nugget)**
 

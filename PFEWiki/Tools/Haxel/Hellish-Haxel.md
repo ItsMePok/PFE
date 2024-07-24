@@ -16,8 +16,8 @@ Mining Speed: **70**
 Enchant type: **Axe**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
-* **[Hellish Ingot](https://github.com/ItsMePok/PFE/wiki/Hellish-Ingot)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
+* **[Hellish Ingot](https://pfewiki.gitbook.io/home/items/ingots/hellish-ingot)**
 * **[Hellish Nugget](https://github.com/ItsMePok/PFE/wiki/Hellish-Nugget)**
 
 Can Break:

@@ -16,9 +16,9 @@ Mining Speed: **80**
 Enchant type: **Axe**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
-* **[Void Ingot](https://github.com/ItsMePok/PFE/wiki/Void-Ingot)**
-* **[Void Nugget](https://github.com/ItsMePok/PFE/wiki/Void-Nugget)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
+* **[Void Ingot](https://pfewiki.gitbook.io/home/items/ingots/void-ingot)**
+* **[Void Nugget](https://pfewiki.gitbook.io/home/items/nuggets/void-nugget)**
 
 Can Break:
 * **All PFE Blocks**

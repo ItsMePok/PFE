@@ -13,7 +13,7 @@ Armor: **6**
 Enchant type: **Boots**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
 * **[Diamond](https://minecraft.wiki/w/Diamond)**
 
 Trimmable: **Yes**

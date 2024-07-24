@@ -6,10 +6,10 @@ Identifier: **poke:banished_star_x9**
 ### Usage:
 * Can be Eaten (Because why not :3)
 * Used in Crafting:
-  * [Banished Star x10](https://github.com/ItsMePok/PFE/wiki/Banished-Star-x10)
+  * [Banished Star x10](https://pfewiki.gitbook.io/home/items/banished-stars/banished-star-x10)
 
 ### Obtaining:
 * Crafted with:
-  * 9x [Banished Star x8](https://github.com/ItsMePok/PFE/wiki/Banished-Star-x8)
+  * 9x [Banished Star x8](https://pfewiki.gitbook.io/home/items/banished-stars/banished-star-x8)
 * Alternate Recipe:
-  * 1x [Banished Star x10](https://github.com/ItsMePok/PFE/wiki/Banished-Star-x10)
+  * 1x [Banished Star x10](https://pfewiki.gitbook.io/home/items/banished-stars/banished-star-x10)

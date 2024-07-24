@@ -8,4 +8,4 @@ Identifier: **poke:platinum_token**
 
 ### Obtaining:
 * Exchanging tokens with:
-  * [Token Trader](https://github.com/ItsMePok/PFE/wiki/Token-Trader)
+  * [Token Trader](https://pfewiki.gitbook.io/home/mobs/traders/token-trader)

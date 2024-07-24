@@ -17,7 +17,7 @@ Armor: **8**
 Enchant type: **Helmet**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
 * **[Holy Ingot](https://github.com/ItsMePok/PFE/wiki/Holy-Ingot)**
 
 Trimmable: **Yes**
@@ -41,7 +41,7 @@ Armor: **12**
 Enchant type: **Chestplate**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
 * **[Holy Ingot](https://github.com/ItsMePok/PFE/wiki/Holy-Ingot)**
 
 Trimmable: **Yes**
@@ -59,7 +59,7 @@ Armor: **11**
 Enchant type: **Leggings**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
 * **[Holy Ingot](https://github.com/ItsMePok/PFE/wiki/Holy-Ingot)**
 
 Trimmable: **Yes**
@@ -90,7 +90,7 @@ Armor: **7**
 Enchant type: **Boots**
 
 Repairable with:
-* **[Repair Core](https://github.com/ItsMePok/PFE/wiki/Repair-Core)**
+* **[Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)**
 * **[Holy Ingot](https://github.com/ItsMePok/PFE/wiki/Holy-Ingot)**
 
 Trimmable: **Yes**
