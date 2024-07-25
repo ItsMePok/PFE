@@ -35,12 +35,12 @@
 
 {% tabs %}
 {% tab title="Recipe" %}
-<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the Crafting Table</p></figcaption></figure>
 
 |                                                                                                  |                                                                                                                             |                                                                                                  |
-| ------------------------------------------------------------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------: | ------------------------------------------------------------------------------------------------ |
+| :----------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: |
 | ![Cobalt Ingot](https://github.com/user-attachments/assets/f2b33b06-67a6-4a44-9c12-0259f8eb17a4) | <img src="https://minecraft.wiki/images/thumb/Oak_Planks.png/150px-Oak_Planks.png?d9efa" alt="Planks" data-size="original"> | ![Cobalt Ingot](https://github.com/user-attachments/assets/f2b33b06-67a6-4a44-9c12-0259f8eb17a4) |
-| ![](https://minecraft.wiki/images/Brush\_JE1\_BE1.png?fd417)                                     |                     ![](https://github.com/user-attachments/assets/e86a7ee9-4449-47a6-9164-6b435c473780)                    | ![](https://minecraft.wiki/images/Brush\_JE1\_BE1.png?fd417)                                     |
+|                   ![](https://minecraft.wiki/images/Brush\_JE1\_BE1.png?fd417)                   |                     ![](https://github.com/user-attachments/assets/e86a7ee9-4449-47a6-9164-6b435c473780)                    |                   ![](https://minecraft.wiki/images/Brush\_JE1\_BE1.png?fd417)                   |
 | ![Cobalt Ingot](https://github.com/user-attachments/assets/f2b33b06-67a6-4a44-9c12-0259f8eb17a4) |                     ![](https://minecraft.wiki/images/thumb/Oak\_Planks.png/150px-Oak\_Planks.png?d9efa)                    | ![Cobalt Ingot](https://github.com/user-attachments/assets/f2b33b06-67a6-4a44-9c12-0259f8eb17a4) |
 {% endtab %}
 

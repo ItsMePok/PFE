@@ -1,12 +1,15 @@
-## Iron Token
-![poke_iron_token](https://github.com/ItsMePok/PFE/assets/136857747/aa3d5a31-9866-4bd1-bc09-ba7fa6775f7e)
+# Iron Token
 
-Identifier: **poke:iron_token**
+![](https://github.com/ItsMePok/PFE/assets/136857747/aa3d5a31-9866-4bd1-bc09-ba7fa6775f7e)
 
-### Usage:
- * Used with trading with the [Traders](https://github.com/ItsMePok/PFE/wiki/Mobs#traders)
+Identifier: **poke:iron\_token**
 
-### Obtaining:
+## Usage:
+
+* Used with trading with the [Traders](https://github.com/ItsMePok/PFE/wiki/Mobs#traders)
+
+## Obtaining:
+
 * Found in PFE Structures
   * [Ruined Tower](https://github.com/ItsMePok/PFE/wiki/Ruined-Tower)
   * [Abandoned Swampsite](https://github.com/ItsMePok/PFE/wiki/Abandoned-Swampsite)
@@ -22,3 +25,7 @@ Identifier: **poke:iron_token**
   * [Listener](https://github.com/ItsMePok/PFE/wiki/Listener)
 * Exchanging tokens with:
   * [Token Trader](https://pfewiki.gitbook.io/home/mobs/traders/token-trader)
+
+
+
+[<img src="https://github.com/ItsMePok/PFE/assets/136857747/aa3d5a31-9866-4bd1-bc09-ba7fa6775f7e" alt="" data-size="line">Iron Token](iron-token.md)
