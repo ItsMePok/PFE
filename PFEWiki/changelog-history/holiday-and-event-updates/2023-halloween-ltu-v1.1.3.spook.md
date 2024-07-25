@@ -1,6 +1,6 @@
 # 2023 Halloween LTU (v1.1.3.Spook)
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 This is a fork of v1.1.3
