@@ -2,7 +2,7 @@
 
 
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Identifier: **poke:wire** <a href="#identifier" id="identifier"></a>
 
@@ -50,8 +50,8 @@ Found in the [Abandoned Ship](../../sturctures/abandoned-ship.md)
 [abandoned-ship.md](../../sturctures/abandoned-ship.md)
 {% endcontent-ref %}
 
-| Item                                                                               | Amount | Weight |
-| ---------------------------------------------------------------------------------- | ------ | :----: |
-| [<img src="../../.gitbook/assets/image.png" alt="" data-size="line">Wire](wire.md) | 1      |    6   |
+| Item                                                                                   | Amount | Weight |
+| -------------------------------------------------------------------------------------- | ------ | :----: |
+| [<img src="../../.gitbook/assets/image (1).png" alt="" data-size="line">Wire](wire.md) | 1      |    6   |
 {% endtab %}
 {% endtabs %}

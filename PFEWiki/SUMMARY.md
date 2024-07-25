@@ -35,6 +35,7 @@
     * [Swift Robe](armor/robes/swift-robe.md)
 * [Blocks](blocks/README.md)
   * [Ore Blocks](blocks/ore-blocks/README.md)
+    * [Cobalt Block](blocks/ore-blocks/cobalt-block.md)
     * [Demonic-Block](blocks/ore-blocks/demonic-block.md)
     * [Galaxy-Block](blocks/ore-blocks/galaxy-block.md)
     * [Godly-Block](blocks/ore-blocks/godly-block.md)
