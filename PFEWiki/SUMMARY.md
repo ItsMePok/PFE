@@ -169,7 +169,7 @@
   * [Swords](weapons/swords/README.md)
     * [Amethyst Sword](weapons/swords/amethyst-sword.md)
     * [Astral Sword](weapons/swords/astral-sword.md)
-* [Changelog-History](changelog-history/README.md)
+* [Changelog-History](changelog-history.md)
   * [Full Releases](changelog-history/full-releases/README.md)
     * [v1.2.1](changelog-history/full-releases/v1.2.1.md)
     * [v1.2.0](changelog-history/full-releases/v1.2.0.md)
