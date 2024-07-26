@@ -7,7 +7,7 @@
 
 ## Why Are the Automation Blocks not working in v1.2.0+?
 
-* Try Powering them with Redstone (The Block itself needs to be powered. the simplest solution is powering it with a lever)
+* Try Powering them with Redstone, The Block itself needs to be [Strong Powered](https://minecraft.wiki/w/Redstone\_mechanics#Strongly\_powered\_vs.\_weakly\_powered). the simplest solution is powering it with a lever
 * Try Breaking and Replacing them
 
 ## How do I get Tokens?

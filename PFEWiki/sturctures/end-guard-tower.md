@@ -54,24 +54,24 @@ A higher weight makes it more likely to be selected from that pool
 
 (8-16 of these ↓)
 
-| Item                                                                        | Amount | Weight |
-| --------------------------------------------------------------------------- | ------ | ------ |
-| [Necromancer Spawn Egg](https://github.com/ItsMePok/PFE/wiki/Necromancer)   | 1      | 2      |
-| [Knightling Spawn Egg](https://github.com/ItsMePok/PFE/wiki/Kinghtling)     | 1      | 2      |
-| [Diamond Token](https://pfewiki.gitbook.io/home/items/tokens/diamond-token) | 1-2    | 2      |
-| [Raw Nebula Block](https://github.com/ItsMePok/PFE/wiki/Raw-Nebula-Block)   | 1      | 2      |
-| Diamond                                                                     | 1-5    | 5      |
-| [Iron Token](https://pfewiki.gitbook.io/home/items/tokens/iron-token)       | 1-3    | 8      |
-| [Void Potion](https://github.com/ItsMePok/PFE/wiki/Void-Potion)             | 1      | 10     |
-| [Nebula Potion](https://github.com/ItsMePok/PFE/wiki/Nebula-Potion)         | 1      | 10     |
-| [Raw Godly](https://github.com/ItsMePok/PFE/wiki/Raw-Godly)                 | 1-5    | 15     |
-| Gold Ingot                                                                  | 2-7    | 15     |
-| [Raw Nebula](https://github.com/ItsMePok/PFE/wiki/Raw-Nebula)               | 1      | 15     |
-| [Nebula Noodles](https://github.com/ItsMePok/PFE/wiki/Nebula-Noodles)       | 1-3    | 25     |
-| [Copper Token](https://pfewiki.gitbook.io/home/items/tokens/copper-token)   | 4-6    | 25     |
-| [Raw Void](https://github.com/ItsMePok/PFE/wiki/Raw-Void)                   | 3-7    | 25     |
-| Enchanted Book                                                              | 1      | 20     |
-| Empty                                                                       | -      | 15     |
+| Item                                                                                                                                                                     | Amount | Weight |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ | ------ |
+| [Necromancer Spawn Egg](https://github.com/ItsMePok/PFE/wiki/Necromancer)                                                                                                | 1      | 2      |
+| [Knightling Spawn Egg](https://github.com/ItsMePok/PFE/wiki/Kinghtling)                                                                                                  | 1      | 2      |
+| [Diamond Token](https://pfewiki.gitbook.io/home/items/tokens/diamond-token)                                                                                              | 1-2    | 2      |
+| [Raw Nebula Block](https://github.com/ItsMePok/PFE/wiki/Raw-Nebula-Block)                                                                                                | 1      | 2      |
+| Diamond                                                                                                                                                                  | 1-5    | 5      |
+| [<img src="https://github.com/ItsMePok/PFE/assets/136857747/aa3d5a31-9866-4bd1-bc09-ba7fa6775f7e" alt="" data-size="line">Iron Token](../items/tokens/iron-token.md)     | 1-3    | 8      |
+| [Void Potion](https://github.com/ItsMePok/PFE/wiki/Void-Potion)                                                                                                          | 1      | 10     |
+| [Nebula Potion](https://github.com/ItsMePok/PFE/wiki/Nebula-Potion)                                                                                                      | 1      | 10     |
+| [Raw Godly](https://github.com/ItsMePok/PFE/wiki/Raw-Godly)                                                                                                              | 1-5    | 15     |
+| Gold Ingot                                                                                                                                                               | 2-7    | 15     |
+| [Raw Nebula](https://github.com/ItsMePok/PFE/wiki/Raw-Nebula)                                                                                                            | 1      | 15     |
+| [Nebula Noodles](https://github.com/ItsMePok/PFE/wiki/Nebula-Noodles)                                                                                                    | 1-3    | 25     |
+| [<img src="https://github.com/ItsMePok/PFE/assets/136857747/1c78ba2a-4a5b-4b7b-83ff-ed21aa75ebd8" alt="" data-size="line">Copper Token](../items/tokens/copper-token.md) | 4-6    | 25     |
+| [Raw Void](https://github.com/ItsMePok/PFE/wiki/Raw-Void)                                                                                                                | 3-7    | 25     |
+| Enchanted Book                                                                                                                                                           | 1      | 20     |
+| Empty                                                                                                                                                                    | -      | 15     |
 
 (4 of these ↓)
 
@@ -116,4 +116,4 @@ A higher weight makes it more likely to be selected from that pool
 
 #### In-game Screenshots:
 
-![Screenshot 2024-07-09 152832](https://github.com/ItsMePok/PFE/assets/136857747/be91f575-b750-43c2-81b6-c90b97c06eed)
+![End Guard Tower Generating in the End](https://github.com/ItsMePok/PFE/assets/136857747/be91f575-b750-43c2-81b6-c90b97c06eed)

@@ -54,4 +54,4 @@ A higher weight makes it more likely to be selected from that pool
 
 ## In-game Screenshots:
 
-![Screenshot 2024-07-09 153006](https://github.com/ItsMePok/PFE/assets/136857747/7bdc1561-d11c-4925-bafb-67596875baef)
+![Abandoned Ship in the End](https://github.com/ItsMePok/PFE/assets/136857747/7bdc1561-d11c-4925-bafb-67596875baef)

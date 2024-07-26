@@ -45,38 +45,38 @@ A higher weight makes it more likely to be selected from that pool
 
 (2-4 of these ↓)
 
-| Item                                                                      | Amount | Weight |
-| ------------------------------------------------------------------------- | ------ | ------ |
-| [Copper Token](https://pfewiki.gitbook.io/home/items/tokens/copper-token) | 1-6    | 15     |
-| [Iron Token](https://pfewiki.gitbook.io/home/items/tokens/iron-token)     | 1-3    | 5      |
-| Sculk Sensor                                                              | 1-3    | 25     |
-| Cobweb                                                                    | 3-7    | 25     |
-| Bone                                                                      | 4-6    | 25     |
-| Enchanted Book                                                            | 1      | 20     |
-| Golden Apple                                                              | 1      | 20     |
-| Iron Ingot                                                                | 1-5    | 15     |
-| Gold Ingot                                                                | 2-7    | 15     |
-| Emerald                                                                   | 1-3    | 15     |
-| Sculk Shrieker                                                            | 1-3    | 15     |
-| [Amethyst Shard](https://minecraft.wiki/w/Amethyst\_Shard)                | 1      | 15     |
-| Cobweb                                                                    | 1      | 10     |
-| Echo Shard                                                                | 1      | 5      |
-| Diamond                                                                   | 1-3    | 5      |
-| Enchanted Golden Apple                                                    | 1      | 2      |
-| Empty                                                                     | -      | 15     |
+| Item                                                                                                                                                                     | Amount | Weight |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ | ------ |
+| [<img src="https://github.com/ItsMePok/PFE/assets/136857747/1c78ba2a-4a5b-4b7b-83ff-ed21aa75ebd8" alt="" data-size="line">Copper Token](../items/tokens/copper-token.md) | 1-6    | 15     |
+| [<img src="https://github.com/ItsMePok/PFE/assets/136857747/aa3d5a31-9866-4bd1-bc09-ba7fa6775f7e" alt="" data-size="line">Iron Token](../items/tokens/iron-token.md)     | 1-3    | 5      |
+| Sculk Sensor                                                                                                                                                             | 1-3    | 25     |
+| Cobweb                                                                                                                                                                   | 3-7    | 25     |
+| Bone                                                                                                                                                                     | 4-6    | 25     |
+| Enchanted Book                                                                                                                                                           | 1      | 20     |
+| Golden Apple                                                                                                                                                             | 1      | 20     |
+| Iron Ingot                                                                                                                                                               | 1-5    | 15     |
+| Gold Ingot                                                                                                                                                               | 2-7    | 15     |
+| Emerald                                                                                                                                                                  | 1-3    | 15     |
+| Sculk Shrieker                                                                                                                                                           | 1-3    | 15     |
+| [<img src="https://minecraft.wiki/images/Amethyst_Shard_JE2_BE1.png?56555" alt="" data-size="line">Amethyst Shard](https://minecraft.wiki/w/Amethyst\_Shard)             | 1      | 15     |
+| Cobweb                                                                                                                                                                   | 1      | 10     |
+| Echo Shard                                                                                                                                                               | 1      | 5      |
+| Diamond                                                                                                                                                                  | 1-3    | 5      |
+| Enchanted Golden Apple                                                                                                                                                   | 1      | 2      |
+| Empty                                                                                                                                                                    | -      | 15     |
 
 (4 of these ↓)
 
-| Item                                                       | Amount | Weight |
-| ---------------------------------------------------------- | ------ | ------ |
-| Sculk                                                      | 1-8    | 10     |
-| String                                                     | 1-8    | 10     |
-| String                                                     | 1-8    | 10     |
-| Sculk                                                      | 1-8    | 10     |
-| [Amethyst Shard](https://minecraft.wiki/w/Amethyst\_Shard) | 1-8    | 10     |
-| Soul Lantern                                               | 1-8    | 10     |
-| Cobbled Deepslate                                          | 1-8    | 10     |
-| Candle (Random Color)                                      | 1-8    | 10     |
+| Item                                                                                                                                                         | Amount | Weight |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ | ------ |
+| Sculk                                                                                                                                                        | 1-8    | 10     |
+| String                                                                                                                                                       | 1-8    | 10     |
+| String                                                                                                                                                       | 1-8    | 10     |
+| Sculk                                                                                                                                                        | 1-8    | 10     |
+| [<img src="https://minecraft.wiki/images/Amethyst_Shard_JE2_BE1.png?56555" alt="" data-size="line">Amethyst Shard](https://minecraft.wiki/w/Amethyst\_Shard) | 1-8    | 10     |
+| Soul Lantern                                                                                                                                                 | 1-8    | 10     |
+| Cobbled Deepslate                                                                                                                                            | 1-8    | 10     |
+| Candle (Random Color)                                                                                                                                        | 1-8    | 10     |
 
 ***
 
@@ -86,43 +86,43 @@ A higher weight makes it more likely to be selected from that pool
 
 (2-5 of these ↓)
 
-| Item                                                                        | Amount | Weight |
-| --------------------------------------------------------------------------- | ------ | ------ |
-| [Cassette - 5](https://github.com/ItsMePok/PFE/wiki/Cassette-5)             | 1      | 1      |
-| [Copper Token](https://pfewiki.gitbook.io/home/items/tokens/copper-token)   | 2-6    | 8      |
-| [Iron Token](https://pfewiki.gitbook.io/home/items/tokens/iron-token)       | 2-6    | 8      |
-| [Gold Token](https://pfewiki.gitbook.io/home/items/tokens/gold-token)       | 2-5    | 5      |
-| [Diamond Token](https://pfewiki.gitbook.io/home/items/tokens/diamond-token) | 2-3    | 4      |
-| Emerald                                                                     | 2-6    | 8      |
-| Enchanted Golden Apple                                                      | 1      | 3      |
-| Diamond                                                                     | 1-3    | 2      |
-| Candle (Random Color)                                                       | 1-8    | 1      |
+| Item                                                                                                                                                                     | Amount | Weight |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ | ------ |
+| [Cassette - 5](https://github.com/ItsMePok/PFE/wiki/Cassette-5)                                                                                                          | 1      | 1      |
+| [<img src="https://github.com/ItsMePok/PFE/assets/136857747/1c78ba2a-4a5b-4b7b-83ff-ed21aa75ebd8" alt="" data-size="line">Copper Token](../items/tokens/copper-token.md) | 2-6    | 8      |
+| [<img src="https://github.com/ItsMePok/PFE/assets/136857747/aa3d5a31-9866-4bd1-bc09-ba7fa6775f7e" alt="" data-size="line">Iron Token](../items/tokens/iron-token.md)     | 2-6    | 8      |
+| [Gold Token](https://pfewiki.gitbook.io/home/items/tokens/gold-token)                                                                                                    | 2-5    | 5      |
+| [Diamond Token](https://pfewiki.gitbook.io/home/items/tokens/diamond-token)                                                                                              | 2-3    | 4      |
+| Emerald                                                                                                                                                                  | 2-6    | 8      |
+| Enchanted Golden Apple                                                                                                                                                   | 1      | 3      |
+| Diamond                                                                                                                                                                  | 1-3    | 2      |
+| Candle (Random Color)                                                                                                                                                    | 1-8    | 1      |
 
 (1-2 of these ↓)
 
-| Item                                                                        | Amount | Weight |
-| --------------------------------------------------------------------------- | ------ | ------ |
-| [Copper Token](https://pfewiki.gitbook.io/home/items/tokens/copper-token)   | 2-6    | 8      |
-| [Iron Token](https://pfewiki.gitbook.io/home/items/tokens/iron-token)       | 2-6    | 4      |
-| [Diamond Token](https://pfewiki.gitbook.io/home/items/tokens/diamond-token) | 2-6    | 8      |
-| Emerald                                                                     | 2-6    | 8      |
-| Iron Boots (Enchanted)                                                      | 1      | 6      |
-| Iron Chestplate (Enchanted)                                                 | 1      | 6      |
-| Iron Leggings (Enchanted)                                                   | 1      | 6      |
-| Iron Helmet(Enchanted)                                                      | 1      | 6      |
-| Iron Axe(Enchanted)                                                         | 1      | 6      |
-| Iron Pickaxe(Enchanted)                                                     | 1      | 6      |
-| Iron Shovel(Enchanted)                                                      | 1      | 6      |
-| Saddle                                                                      | 1      | 6      |
-| Golden Horse Armor                                                          | 1      | 6      |
-| Diamond Axe(Enchanted)                                                      | 1      | 3      |
-| Crossbow(Enchanted)                                                         | 1      | 3      |
-| Diamond Chestplate(Enchanted)                                               | 1      | 3      |
-| Diamond Horse Armor                                                         | 1      | 3      |
-| Enchanted Golden Apple                                                      | 1      | 3      |
-| Enchanted Book                                                              | 1      | 3      |
-| Enchanted Book                                                              | 1      | 5      |
-| Diamond                                                                     | 1-3    | 2      |
+| Item                                                                                                                                                                     | Amount | Weight |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ | ------ |
+| [<img src="https://github.com/ItsMePok/PFE/assets/136857747/1c78ba2a-4a5b-4b7b-83ff-ed21aa75ebd8" alt="" data-size="line">Copper Token](../items/tokens/copper-token.md) | 2-6    | 8      |
+| [<img src="https://github.com/ItsMePok/PFE/assets/136857747/aa3d5a31-9866-4bd1-bc09-ba7fa6775f7e" alt="" data-size="line">Iron Token](../items/tokens/iron-token.md)     | 2-6    | 4      |
+| [Diamond Token](https://pfewiki.gitbook.io/home/items/tokens/diamond-token)                                                                                              | 2-6    | 8      |
+| Emerald                                                                                                                                                                  | 2-6    | 8      |
+| Iron Boots (Enchanted)                                                                                                                                                   | 1      | 6      |
+| Iron Chestplate (Enchanted)                                                                                                                                              | 1      | 6      |
+| Iron Leggings (Enchanted)                                                                                                                                                | 1      | 6      |
+| Iron Helmet(Enchanted)                                                                                                                                                   | 1      | 6      |
+| Iron Axe(Enchanted)                                                                                                                                                      | 1      | 6      |
+| Iron Pickaxe(Enchanted)                                                                                                                                                  | 1      | 6      |
+| Iron Shovel(Enchanted)                                                                                                                                                   | 1      | 6      |
+| Saddle                                                                                                                                                                   | 1      | 6      |
+| Golden Horse Armor                                                                                                                                                       | 1      | 6      |
+| Diamond Axe(Enchanted)                                                                                                                                                   | 1      | 3      |
+| Crossbow(Enchanted)                                                                                                                                                      | 1      | 3      |
+| Diamond Chestplate(Enchanted)                                                                                                                                            | 1      | 3      |
+| Diamond Horse Armor                                                                                                                                                      | 1      | 3      |
+| Enchanted Golden Apple                                                                                                                                                   | 1      | 3      |
+| Enchanted Book                                                                                                                                                           | 1      | 3      |
+| Enchanted Book                                                                                                                                                           | 1      | 5      |
+| Diamond                                                                                                                                                                  | 1-3    | 2      |
 
 ***
 
@@ -140,19 +140,18 @@ A higher weight makes it more likely to be selected from that pool
 
 (1 of these if not ominous ↓)
 
-| Item                                                                      | Amount | Weight |
-| ------------------------------------------------------------------------- | ------ | ------ |
-| [Ruin Key](https://github.com/ItsMePok/PFE/wiki/Ruin-Key)                 | 1      | 1      |
-| [Copper Token](https://pfewiki.gitbook.io/home/items/tokens/copper-token) | 3-6    | 1      |
+| Item                                                                                                                                                                     | Amount | Weight |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ | ------ |
+| [Ruin Key](https://github.com/ItsMePok/PFE/wiki/Ruin-Key)                                                                                                                | 1      | 1      |
+| [<img src="https://github.com/ItsMePok/PFE/assets/136857747/1c78ba2a-4a5b-4b7b-83ff-ed21aa75ebd8" alt="" data-size="line">Copper Token](../items/tokens/copper-token.md) | 3-6    | 1      |
 
 (1 of these if ominous ↓)
 
-| Item                                                                  | Amount | Weight |
-| --------------------------------------------------------------------- | ------ | ------ |
-| [Ruin Key](https://github.com/ItsMePok/PFE/wiki/Ruin-Key)             | 1      | 1      |
-| [Iron Token](https://pfewiki.gitbook.io/home/items/tokens/iron-token) | 2-7    | 1      |
-| \*\*\*                                                                |        |        |
+| Item                                                                                                                                                                 | Amount | Weight |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------ |
+| [Ruin Key](https://github.com/ItsMePok/PFE/wiki/Ruin-Key)                                                                                                            | 1      | 1      |
+| [<img src="https://github.com/ItsMePok/PFE/assets/136857747/aa3d5a31-9866-4bd1-bc09-ba7fa6775f7e" alt="" data-size="line">Iron Token](../items/tokens/iron-token.md) | 2-7    | 1      |
 
 #### In-game Screenshots:
 
-![Screenshot 2024-07-09 112358](https://github.com/ItsMePok/PFE/assets/136857747/d0f48371-9306-4b02-a1d9-5b0ff0d6c434)
+![Ruined Tower Generating in Plains Near a Mountain](https://github.com/ItsMePok/PFE/assets/136857747/d0f48371-9306-4b02-a1d9-5b0ff0d6c434)
