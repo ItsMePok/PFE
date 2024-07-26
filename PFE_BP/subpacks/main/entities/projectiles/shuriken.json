@@ -6,7 +6,7 @@
 			"is_spawnable": false,
 			"is_summonable": true,
 			"is_experimental": false,
-			"runtime_identifier":"arrow"
+			"runtime_identifier":"minecraft:snowball"
 		},
 		"components": {
 			"minecraft:collision_box": {
@@ -14,7 +14,7 @@
 				"height": 0.5
 			},
 			"minecraft:projectile": {
-				"gravity": 0.02,
+				"gravity": 0.005,
 				"crit_particle_on_hurt": true,
 				"hit_sound": "bow.hit",
 				"inertia": 0.995,
@@ -22,6 +22,7 @@
 				"power": 2,
 				"is_dangerous": true,
 				"on_hit": {
+					"remove_on_hit": {},
 					"stick_in_ground": {
 						"shake_time": 0.1
 					},

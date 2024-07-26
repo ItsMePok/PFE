@@ -18,7 +18,7 @@
                 "item": "redstone"
             },
             {
-                "item": "poke:upgrade_core"
+                "item":"poke:diamond_upgrade_core"
             }
         ],
         "key": {
@@ -26,7 +26,7 @@
                 "item": "redstone_block"
             },
             "Y": {
-                "item": "poke:upgrade_core"
+                "item":"poke:diamond_upgrade_core"
             },
             "Z": {
                 "item": "stick"

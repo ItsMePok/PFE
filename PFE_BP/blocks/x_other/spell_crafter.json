@@ -13,23 +13,29 @@
 			}
 		},
 		"components": {
-			"minecraft:collision_box": true,
-			"minecraft:selection_box": true,
+			"minecraft:selection_box": {
+				"origin": [-6,0,-6],
+				"size": [12,4,12]
+			},
+			"minecraft:collision_box": {
+				"origin": [-6,0,-6],
+				"size": [12,4,12]
+			},
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 1.4
 			},
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 24
 			},
-			"minecraft:geometry": "geometry.poke.dye_unmixer",
+			"minecraft:geometry": "geometry.poke.spell_crafter",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "poke_dye_unmixer",
+					"texture": "poke_spell_crafter",
 					"render_method": "alpha_test"
 				}
 			},
 			"minecraft:map_color": "#697c79",
-			"minecraft:crafting_table": {"crafting_tags": ["poke_spell_crafter"]}
+			"minecraft:crafting_table": {"crafting_tags": ["poke_spell_crafter"],"table_name": "Spell Crafter"}
 		},
 		"permutations": [
 			{

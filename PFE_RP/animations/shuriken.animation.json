@@ -2,13 +2,12 @@
 	"format_version": "1.8.0",
 	"animations": {
 		"animation.poke.shuriken.move": {
-			"loop": true,
 			"animation_length": 0.5,
 			"bones": {
-				"bone": {
+				"body": {
 					"rotation": {
 						"0.0": [0, 0, 0],
-						"0.5": [0, 360, 0]
+						"0.5": [360, "q.body_x_rotation", 0]
 					}
 				}
 			}

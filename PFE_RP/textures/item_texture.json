@@ -1,5 +1,7 @@
 {
 	"texture_data":{
+		"poke_empty_vial":{"textures":"textures/items/misc/poke_empty_vial"},
+		"poke_xp_vial":{"textures":"textures/items/misc/poke_xp_vial"},
 		"poke_shuriken":{"textures":"textures/items/misc/poke_shuriken"},
 		"poke_medic_scythe":{"textures":"textures/items/scythe/poke_medic"},
 		"poke_astral_scythe":{"textures":"textures/items/scythe/poke_astral"},
@@ -140,8 +142,6 @@
 		"poke_spawn_zombken":{"textures":"textures/items/boss/poke_spawn_zombken.png"},
 		"poke_death_nugget":{"textures":"textures/items/death/poke_death_nugget.png"},
 		"poke_death_ingot":{"textures":"textures/items/death/poke_death_ingot.png"},
-		"poke_weapon_progression_fragment":{"textures":"textures/items/prog/poke_weapon_progression_fragment.png"},
-		"poke_armor_progression_fragment":{"textures":"textures/items/prog/poke_armor_progression_fragment.png"},
 		"poke_diamond_upgrade_core":{"textures":"textures/items/prog/poke_diamond_upgrade_core.png"},
 		"poke_platinum_upgrade_core":{"textures":"textures/items/prog/poke_platinum_upgrade_core.png"},
 		"poke_carved_melon_mask":{"textures":"textures/items/cosmetic/poke_carved_melon_mask.png"},
@@ -334,6 +334,10 @@
 			{"path":"textures/items/sundial/6"},
 			{"path":"textures/items/sundial/7"},
 			{"path":"textures/items/sundial/8"}]}},
+		//Spells
+		"poke_dodge_spell":{"textures":"textures/items/spells/poke_dodge"},
+		"poke_gravity_spell":{"textures":"textures/items/spells/poke_gravity"},
+		"poke_fireball_spell":{"textures":"textures/items/spells/poke_fireball"},
 		//Quests
 		"poke_uo_kill_quest":{"textures":"textures/items/prog/poke_uo_kill_quest.png"},
 		"poke_uo_mine_quest":{"textures":"textures/items/prog/poke_uo_mine_quest.png"},
@@ -394,6 +398,7 @@
 		"poke_cobalt_battleaxe":{"textures":"textures/items/battleaxe/poke_cobalt_battleaxe"},
 		"poke_shade_battleaxe":{"textures":"textures/items/battleaxe/poke_shade_battleaxe"},
 		//Sherds
+		"poke_spell_pottery_sherd":{"textures":"textures/items/sherds/poke_spell"},
 		"poke_fish_pottery_sherd":{"textures":"textures/items/sherds/poke_fish"},
 		"poke_storm_pottery_sherd":{"textures":"textures/items/sherds/poke_storm"},
 		"poke_crowned_pottery_sherd":{"textures":"textures/items/sherds/poke_crowned"},

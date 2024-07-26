@@ -1,0 +1,21 @@
+{
+	"format_version":"1.20.10",
+	"minecraft:recipe_shaped":{
+		"description":{"identifier":"poke:spell_crafter"},
+		"pattern":["OCO","LLL"],
+		"unlock":[
+			{"item":"purple_carpet"},
+			{"item":"poke:onyx_ingot"},
+			{"item":"poke:limestone"}
+		],
+		"key":{
+			"C":{"item":"purple_carpet"},
+			"O":{"item":"poke:onyx_ingot"},
+			"L":{"item":"poke:limestone"}
+		},
+		"tags":["crafting_table"],
+		"result":{
+			"item":"poke:spell_crafter"
+		}
+	}
+}

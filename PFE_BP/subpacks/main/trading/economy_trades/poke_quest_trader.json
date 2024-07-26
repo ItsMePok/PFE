@@ -14,15 +14,7 @@
 							],
 							"gives": [
 								{
-									"item": "poke:kill_quest",
-									"functions": [
-										{
-											"function": "set_lore",
-											"lore": [
-												"§r§eQuest LVL:"
-											]
-										}
-									]
+									"item": "poke:kill_quest"
 								}
 							]
 						},
@@ -36,15 +28,7 @@
 							],
 							"gives": [
 								{
-									"item": "poke:mine_quest",
-									"functions": [
-										{
-											"function": "set_lore",
-											"lore": [
-												"§r§eQuest LVL:"
-											]
-										}
-									]
+									"item": "poke:mine_quest"
 								}
 							]
 						},
@@ -58,15 +42,7 @@
 							],
 							"gives": [
 								{
-									"item": "poke:farm_quest",
-									"functions": [
-										{
-											"function": "set_lore",
-											"lore": [
-												"§r§eQuest LVL:"
-											]
-										}
-									]
+									"item": "poke:farm_quest"
 								}
 							]
 						},
@@ -80,16 +56,7 @@
 							],
 							"gives": [
 								{
-									"item": "poke:craft_quest",
-									"functions": [
-										{
-											"function": "set_lore",
-											"lore": [
-												"§r§eQuest LVL:",
-												"PLACEHOLDER will only give mining quest when used"
-											]
-										}
-									]
+									"item": "poke:craft_quest"
 								}
 							]
 						},
@@ -108,8 +75,7 @@
 										{
 											"function": "set_lore",
 											"lore": [
-												"Starts a Boss Fight at a random Player",
-												"§r§eBounty LVL:"
+												"Starts a Boss Fight at a random Player"
 											]
 										}
 									]

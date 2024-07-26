@@ -3,7 +3,7 @@
 		"name": "§ev1.2.1.4 §uPFE §cBP",
 		"description": "pack.description",
 		"min_engine_version": [1, 21, 0],
-		"uuid": "47f1af16-0028-4728-bd11-ec9bc2df0e43",
+		"uuid": "4a5d4400-a24a-4b43-b6e2-899e863b958b",
 		"version": [1, 0, 0]
 	},
 	"modules": [
@@ -18,13 +18,13 @@
 			"version": [1, 0, 0],
 			"type": "script",
 			"language": "javascript",
-			"entry": "scripts/PFEMain.js"//"entry": "scripts/PFEMain-1.21.20.js"
+			"entry": "scripts/PFEMain.js"
 		}
 	],
 	"dependencies": [
 		{
 			"module_name": "@minecraft/server",
-			"version": "1.12.0-beta"//"version": "1.13.0"
+			"version": "1.12.0-beta"
 		}
 	],
 	"subpacks": [

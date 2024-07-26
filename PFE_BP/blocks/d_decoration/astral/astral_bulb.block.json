@@ -7,7 +7,7 @@
 				"category": "construction"
 			},
 			"states": {
-				"pfe:color":{"values": {"min": 0,"max": 15}}
+				"pfe:color":{"values": {"min": 0,"max": 15}}//Data Value is used to change the color, works best when only using 1 data value/state 
 			}
 		},
 		"components": {
@@ -23,7 +23,7 @@
 			"minecraft:light_emission": 15,
 			"minecraft:map_color": "#2c0146",
 			"minecraft:custom_components":[
-				"poke:cc_bulbs"
+				"poke:cc_bulbs"//custom component used to change the data value
 			]
 		}
 	}

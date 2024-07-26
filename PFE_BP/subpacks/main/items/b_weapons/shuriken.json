@@ -4,7 +4,7 @@
 		"description": {
 			"identifier": "poke:shuriken",
 			"menu_category": {
-				"category": "equipment"
+				"category": "none"
 			}
 		},
 		"components": {

@@ -1,3 +1,3 @@
 execute unless entity @s[hasitem=[{item=minecraft:sugar_cane,quantity=8..}]] run playsound poke.quest.info @s
-tellraw @s {"rawtext":[{"text":"----------------§6\n§lQuest§r§6§r:\n- Gather §3§l8§r§3§r Sugar Cane\n§l§aReward§r§l§r:\n- §3§l2§r§3§r §6Copper Tokens\n§r----------------"}]}
+tellraw @s {"rawtext":[{"text":"----------------\n"},{"translate":"translation.poke:qinfo_quest","with":{"rawtext":[{"text":""}]}},{"text":"§9:§r\n\n"},{"translate":"translation.poke:qinfo_gather","with":{"rawtext":[{"text":""}]}},{"text":" §f8§r§9:§r\n - "},{"translate":"item.reeds.name","with":{"rawtext":[{"text":""}]}},{"text":"\n\n"},{"translate":"translation.poke:qinfo_reward","with":{"rawtext":[{"text":""}]}},{"text":"§9:§r\n- "},{"translate":"item.poke:copper_token","with":{"rawtext":[{"text":""}]}},{"text":" x2\n----------------\n"}]}
 execute if entity @s[hasitem=[{item=minecraft:sugar_cane,quantity=8..}]] run function poke/quest/farm_4

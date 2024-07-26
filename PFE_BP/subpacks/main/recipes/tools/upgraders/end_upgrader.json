@@ -21,7 +21,7 @@
                 "item": "end_stone"
             },
             {
-                "item": "poke:upgrade_core"
+                "item":"poke:diamond_upgrade_core"
             },
             {
                 "item": "purpur_block"
@@ -50,7 +50,7 @@
                 "item": "end_stone"
             },
             "U": {
-                "item": "poke:upgrade_core"
+                "item":"poke:diamond_upgrade_core"
             },
             "C": {
                 "item": "chorus_fruit"

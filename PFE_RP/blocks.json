@@ -1,5 +1,6 @@
 {
 "format_version":[1,1,0],
+	"poke:magic_8_ball":{"sound":"calcite"},
 	"poke:astral_bulb_slab":{"sound":"copper","textures":"poke_astral_bulb"},
 	"poke:block_placer":{"textures":"poke_block_breaker"},
 	"poke:honey_tiles_slab":{"textures":"poke_honey_tiles","sound":"coral"},
@@ -149,15 +150,15 @@
 	"poke:godly_bricks":{"sound":"deepslate_bricks","textures":"poke_godly_bricks"},
 	"poke:red_present":{"textures":"poke_red_present","sound":"itemframe"},
 	"poke:cut_cobalt_slab":{"sound":"copper","textures":"poke_cut_cobalt"},
-	"poke:apple_crate":{"textures":{"up":"poke_apple_crate","side":"poke_crate_side","down":"poke_crate_bottom"},"sound":"wood"},
+	"poke:apple_crate":{"textures":"poke_apple_crate","sound":"wood"},
 	"poke:block_breaker":{"sound":"wood","textures":"poke_block_breaker"},
 	"poke:medic_block":{"sound":"metal","textures":"poke_medic_block"},
 	"poke:charred_melon":{"sound":"roots","textures":"poke_charred_melon"},
 	"poke:death_block":{"sound":"metal","textures":"poke_death_block"},
 	"poke:limestone_tombstone":{"sound":"stone","textures":"poke_limestone_tombstone"},
 	"poke:limestone_bulb":{"sound":"stone","textures":"poke_limestone_bulb"},
-	"poke:sugarcane_crate":{"textures":{"up":"poke_sugarcane_crate","side":"poke_crate_side","down":"poke_crate_bottom"},"sound":"wood"},
-	"poke:empty_crate":{"textures":{"up":"poke_empty_crate","side":"poke_crate_side","down":"poke_crate_bottom"},"sound":"wood"},
+	"poke:sugarcane_crate":{"textures":"poke_sugarcane_crate","sound":"wood"},
+	"poke:empty_crate":{"textures":"poke_empty_crate","sound":"wood"},
 	"poke:charred_poppy":{"sound":"nether_sprouts","textures":"poke_charred_poppy"},
 	"poke:empty_mug":{"sound":"candle","textures":"poke_empty_mug"},
 	"poke:coffee_mug":{"sound":"candle","textures":"poke_coffee_mug"},
@@ -252,6 +253,5 @@
 	"poke:end_galaxy_ore":{"sound":"ancient_debris","textures":"poke_end_galaxy_ore"},
 	"poke:end_godly_ore":{"sound":"ancient_debris","textures":"poke_end_godly_ore"},
 	"poke:end_holy_ore":{"sound":"ancient_debris","textures":"poke_end_holy_ore"},
-	"poke:end_void_ore":{"sound":"stone","textures":"poke_end_void_ore"
-	}
+	"poke:end_void_ore":{"sound":"stone","textures":"poke_end_void_ore"}
 }

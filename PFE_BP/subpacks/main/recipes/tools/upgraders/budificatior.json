@@ -17,7 +17,7 @@
 				"item": "amethyst_shard"
 			},
 			{
-				"item": "poke:upgrade_core"
+				"item":"poke:diamond_upgrade_core"
 			}
 		],
 		"key": {
@@ -28,7 +28,7 @@
 				"item": "amethyst_shard"
 			},
 			"c": {
-				"item": "poke:upgrade_core"
+				"item":"poke:diamond_upgrade_core"
 			},
 			"T": {
 				"item": "poke:demonic_stick"

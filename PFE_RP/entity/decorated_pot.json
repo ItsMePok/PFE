@@ -23,7 +23,8 @@
                 "pfe-listener_pottery_sherd": "textures/blocks/pot/poke_listener",
                 "pfe-mushroom_buddy_pottery_sherd": "textures/blocks/pot/poke_mushroom_buddy",
                 "pfe-wizard_pottery_sherd": "textures/blocks/pot/poke_wizard",
-                "pfe-bee_pottery_sherd": "textures/blocks/pot/poke_bee"
+                "pfe-bee_pottery_sherd": "textures/blocks/pot/poke_bee",
+                "pfe-spell_pottery_sherd": "textures/blocks/pot/poke_spell"
             }
         }
     }

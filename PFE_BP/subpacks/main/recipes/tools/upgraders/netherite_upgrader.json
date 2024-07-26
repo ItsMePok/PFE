@@ -18,7 +18,7 @@
 				"item": "netherite_scrap"
 			},
 			{
-				"item": "poke:upgrade_core"
+				"item":"poke:diamond_upgrade_core"
 			}	
 		],
         "key": {
@@ -29,7 +29,7 @@
                 "item": "netherite_block"
             },
             "Y": {
-                "item": "poke:upgrade_core"
+                "item":"poke:diamond_upgrade_core"
             },
             "Z": {
                 "item": "stick"

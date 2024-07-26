@@ -1,0 +1,19 @@
+{
+	"format_version":"1.20.10",
+	"minecraft:recipe_shaped":{
+		"description":{"identifier":"poke:spell_pottery_sherd"},
+		"pattern":[" Z ","ZYZ"," Z "],
+		"unlock":[
+			{"item":"paper"},
+			{"item":"brick"}
+		],
+		"key":{
+			"Z":{"item":"paper"},
+			"Y":{"item":"brick"}
+		},
+		"tags":["poke_spell_crafter"],
+		"result":{
+			"item":"poke:pfe-spell_pottery_sherd"
+		}
+	}
+}

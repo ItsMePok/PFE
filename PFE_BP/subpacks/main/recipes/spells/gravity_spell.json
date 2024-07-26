@@ -1,0 +1,22 @@
+{
+	"format_version":"1.20.10",
+	"minecraft:recipe_shaped":{
+		"description":{"identifier":"poke:gravity_spell"},
+		"pattern":[" X ","XYX"," Z "],
+		"unlock":[
+			{"item":"paper"},
+			{"item":"poke:astral_ingot"},
+			{"item":"ender_pearl"}
+		],
+		"key":{
+			"Z":{"item":"paper"},
+			"Y":{"item":"ender_pearl"},
+			"X":{"item":"poke:astral_ingot"}
+		},
+		"tags":["poke_spell_crafter"],
+		"result":{
+			"item":"poke:gravity_spell",
+			"count":4
+		}
+	}
+}

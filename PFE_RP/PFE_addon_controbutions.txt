@@ -18,7 +18,8 @@ Armor:
 Cobalt Robe
 -----
 Textures:
-Scythe Textures,
+Scythe Textures
+Sword Textures
 -----
 Cosmetics:
 Maxwell
@@ -41,7 +42,8 @@ Crab Pal
 ============================
 
 PFE Wiki
-https://github.com/ItsMePok/PFE/wiki
+New: https://pfewiki.gitbook.io/home
+Old: https://github.com/ItsMePok/PFE/wiki
 
 Code for Slabs & Tool Durability were copied from the bedrock wiki
 https://wiki.bedrock.dev/
@@ -58,6 +60,9 @@ https://www.blockbench.net/
 
 Asprite (For Textures)
 https://www.aseprite.org/
+
+Mcreator (For Java Port (WIP))
+https://mcreator.net/
 
 Note Block Studio (For Boss Music, and other sound effects)
 https://opennbs.org/
@@ -120,7 +125,7 @@ https://bridge-core.app/
 Paint.net (For Textures)
 https://www.getpaint.net/
 
-Mcreator (Used when first starting addons)
+Mcreator (For bedrock edition when first starting bedrock addons)
 https://mcreator.net/
 
 MediaFire (for download option)

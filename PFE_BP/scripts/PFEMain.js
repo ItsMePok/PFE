@@ -88,9 +88,10 @@ world.afterEvents.playerBreakBlock.subscribe(event => {
 });
 // End of Tool durability 
 //Food effects
-const pfeefood = ["poke:golden_chicken","poke:rotten_chicken","poke:demonic_potion","poke:hellish_potion","poke:nebula_potion","poke:void_potion","poke:death_potion","poke:cobalt_potion","poke:cobalt_soup","poke:crimson_sporeshroom_stew","poke:root_beer","poke:hellish_soup","poke:nebula_noodles","poke:warped_sporeshroom_stew","poke:milk_bottle","poke:banished_star_x10","poke:banished_star_x9"];
+const pfeefood = ["poke:xp_vial","poke:golden_chicken","poke:rotten_chicken","poke:demonic_potion","poke:hellish_potion","poke:nebula_potion","poke:void_potion","poke:death_potion","poke:cobalt_potion","poke:cobalt_soup","poke:crimson_sporeshroom_stew","poke:root_beer","poke:hellish_soup","poke:nebula_noodles","poke:warped_sporeshroom_stew","poke:milk_bottle","poke:banished_star_x10","poke:banished_star_x9"];
 world.afterEvents.itemCompleteUse.subscribe(pfefood => {
     if (!pfeefood.includes(pfefood.itemStack.typeId)) return;
+    if (pfefood.itemStack.typeId == "poke:xp_vial") {pfefood.source.runCommandAsync("xp 160 @s");return};
     if (pfefood.itemStack.typeId == "poke:cobalt_soup"){pfefood.source.addEffect('night_vision', 2400,{showParticles: false});return};
     if (pfefood.itemStack.typeId == "poke:root_beer") {pfefood.source.addEffect('speed', 600, {amplifier: 4,});return};
     if (pfefood.itemStack.typeId == "poke:crimson_sporeshroom_stew") {pfefood.source.addEffect('fire_resistance', 1200);return};
@@ -561,14 +562,20 @@ class PFEBulbs{
         var block_location_z = data.block.z
         var light_color = data.block.permutation.getState('pfe:color')
         var sound_pitch = 1 + light_color / 10
+        //resets if at the maximum (15)
         if (data.block.permutation.hasTag('pfe:color') == 15) {
+            //set pfe:color state to default (0)
             data.block.setPermutation(data.block.permutation.withState('pfe:color',0))
+            //play sound
             data.block.dimension.runCommandAsync('playsound block.copper_bulb.turn_on @a '+ block_location_x + ' '+ block_location_y+' '+ block_location_z + ' 1 ' + sound_pitch)
             return;
         }
+        //Adds 1 to the current state of pfe:color
         else {
+            //set pfe:color state to current +1
             data.block.setPermutation(
             data.block.permutation.withState('pfe:color',light_color + 1))
+            //play sound
             data.block.dimension.runCommandAsync('playsound block.copper_bulb.turn_on @a '+ block_location_x + ' '+ block_location_y+' '+ block_location_z + ' 1 ' + sound_pitch)
             return;
         }
@@ -877,6 +884,7 @@ class PFESpawnEgg{
             return;
         }
         data.source.getComponent(EntityComponentTypes.Equippable).setEquipment(EquipmentSlot.Mainhand, new ItemStack (data.itemStack.typeId, amount-1))
+        return
     }
 }
 class PFEBowAim {
@@ -974,8 +982,41 @@ world.beforeEvents.playerBreakBlock.subscribe(e => {
         e.cancel = true;
     }
 });
+class PFEDodge{
+    onUse(data){
+        const cooldownc=data.itemStack.getComponent('minecraft:cooldown')
+        const movedir = data.source.getVelocity()
+        const movedirx= movedir.x
+        const movediry= movedir.y
+        const movedirz= movedir.z
+        var amount = data.itemStack.amount
+        data.source.dimension.spawnParticle('minecraft:wind_explosion_emitter',data.source.location)
+        //console.warn(movedirx+' || '+movediry+' || '+movedirz)
+        data.source.applyKnockback(movedirx,movedirz,5,movediry+0.5);
+        data.source.playSound('wind_charge.burst');
+        if (data.source.getGameMode() == 'creative') return;
+        cooldownc.startCooldown(data.source)
+        if (amount <= 1) {
+            data.source.getComponent(EntityComponentTypes.Equippable).setEquipment(EquipmentSlot.Mainhand, new ItemStack ('minecraft:air', 1))
+            return;
+        }
+        data.source.getComponent(EntityComponentTypes.Equippable).setEquipment(EquipmentSlot.Mainhand, new ItemStack (data.itemStack.typeId, amount-1))
+        return
+    }
+}
+class PFE8Ball{
+    onPlayerInteract(data) {
+        var rannumber= Math.floor(Math.random() * 19)
+        //console.warn(rannumber)
+        data.player.runCommand('tellraw @s {\"rawtext\":[{\"translate\":\"translation.poke:8ball'+rannumber+'\",\"with\":{\"rawtext\":[{\"text\":\"\"}]}}]}')
+        return;
+    }
+}
 //Custom Component Registery (may warn about a spike on world loaing because of how many components)
 world.beforeEvents.worldInitialize.subscribe(event => {
+    event.itemComponentRegistry.registerCustomComponent(
+        "poke:cc_dodge", new PFEDodge()
+    )
     event.itemComponentRegistry.registerCustomComponent(
         "poke:cc_bowAim", new PFEBowAim()
     );
@@ -1062,6 +1103,9 @@ world.beforeEvents.worldInitialize.subscribe(event => {
     );
     event.blockTypeRegistry.registerCustomComponent(
         "poke:cc_block_interact", new PFEBlockInteract()
+    )
+    event.blockTypeRegistry.registerCustomComponent(
+        "poke:cc_8ball", new PFE8Ball()
     )
     return;
 })

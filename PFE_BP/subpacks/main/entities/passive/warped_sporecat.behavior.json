@@ -256,6 +256,7 @@
 			}
 		},
 		"components": {
+			"minecraft:fire_immune": {},
 			"minecraft:attack_damage": {
 				"value": 4
 			},

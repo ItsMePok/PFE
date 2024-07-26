@@ -1,3 +1,3 @@
 execute unless entity @s[hasitem=[{item=minecraft:ender_pearl,quantity=16..}]] run playsound poke.quest.info @s
-tellraw @s {"rawtext":[{"text":"----------------§6\n§lQuest§r§6§r:\n- Gather §3§l16§r§3§r Ender Pearls\n§l§aReward§r§l§r:\n- §3§l2§r§3§r §7Iron Tokens\n§r----------------"}]}
+tellraw @s {"rawtext":[{"text":"----------------\n"},{"translate":"translation.poke:qinfo_quest","with":{"rawtext":[{"text":""}]}},{"text":"§9:§r\n\n"},{"translate":"translation.poke:qinfo_gather","with":{"rawtext":[{"text":""}]}},{"text":" §f16§r§9:§r\n - "},{"translate":"item.ender_pearl.name","with":{"rawtext":[{"text":""}]}},{"text":"\n\n"},{"translate":"translation.poke:qinfo_reward","with":{"rawtext":[{"text":""}]}},{"text":"§9:§r\n- "},{"translate":"item.poke:iron_token","with":{"rawtext":[{"text":""}]}},{"text":" x2\n----------------\n"}]}
 execute if entity @s[hasitem=[{item=minecraft:ender_pearl,quantity=16..}]] run function poke/quest/kill_5
