@@ -20,3 +20,71 @@
 
 * Most of them can be crafted in the crafting table
 * A few can only be acquired from the [Token Trader](mobs/traders/token-trader.md)
+
+## What do the upgraders do?
+
+* All the Ore upgraders
+  * they will upgrade its corresponding ore to raw ore block (or ore block if raw ore block does not exist)
+* Stone Upgrader
+  * Cobblestone -> Stone -> Smooth Stone
+  * Cobbled limestone -> Limestone -> Limestone Bricks
+* End Upgrader
+  * Endstone -> End Bricks
+  * Chorus Plant -> PurPur (20 x 20 x 10 around the block that was interacted)
+* Nether Upgrader
+  * Nether brick -> Red Nether Brick
+  * Nether Wart -> Nether Wart Block
+  * Glowstone -> Shroomlights
+  * Basalt -> Smooth Basalt
+  * Magma -> Lava
+  * Netherrack -> Nether Brick
+  * Quartz Ore -> Quartz Block
+* Amethyst Upgrader
+  * Amethyst Block -> Budding Amethyst
+
+## Where do Ores generate?
+
+### **Overworld:**
+
+* Cobalt
+* Void
+* Shade
+* Onyx
+* Holy
+* Hellish
+* Godly
+* Galaxy
+* Demonic
+* Limestone (not an ore but why not :3)
+
+### **Nether:**
+
+* Shade
+* Onyx
+* Hellish
+* Demonic
+
+### **End:**
+
+* Nebula
+* Void
+* Godly
+* Galaxy
+* Astral
+
+## But at what Y-level do ores generate?
+
+### End & Nether: Any Y-level&#x20;
+
+### **Overworld:**
+
+* Cobalt: Any
+* Void: -64 || -59
+* Shade: -4 || 128
+* Onyx: -60 || -16
+* Holy: -8 || 256
+* Hellish: -32 || 32
+* Godly: 0 || 128
+* Galaxy: 16 || 256
+* Demonic: -50 || 0
+* Limestone: 16 || 192
