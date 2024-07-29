@@ -7,4 +7,4 @@
 
 ## Bosses
 
-<table><thead><tr><th>Boss</th><th data-type="number">Weight</th></tr></thead><tbody><tr><td>Zombken</td><td>90</td></tr><tr><td>Knightling</td><td>5</td></tr><tr><td>Snowman</td><td>5</td></tr><tr><td>Mini Demonic Allay</td><td>5</td></tr><tr><td>Necromancer</td><td>1</td></tr></tbody></table>
+<table><thead><tr><th>Boss</th><th data-type="number">Weight</th></tr></thead><tbody><tr><td>Zombken</td><td>75</td></tr><tr><td>Super Striker</td><td>75</td></tr><tr><td>Knightling</td><td>5</td></tr><tr><td>Snowman</td><td>5</td></tr><tr><td>Mini Demonic Allay</td><td>5</td></tr><tr><td>Necromancer</td><td>1</td></tr></tbody></table>

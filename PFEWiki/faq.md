@@ -1,4 +1,4 @@
-# Frequently Asked Questions
+# Frequently Asked Questions (FAQ)
 
 ## Why Are Half the Items Missing Textures in v1.2.0+?
 
@@ -88,3 +88,26 @@
 * Galaxy: 16 || 256
 * Demonic: -50 || 0
 * Limestone: 16 || 192
+
+## What do the Rings do?
+
+* Aqua Ring: Gives Water Breathing for 60 Seconds
+* Arrow Ring: Fires an Arrow
+* Blaze Ring: Shoots a Fireball
+* Darkness Ring: Gives the Darkness effect to nearby players
+* Dragon Ring: Shoots a Dragon Fireball
+* Gravity Ring: Gives you Levitation & Slow Falling
+* Grim Ring: Withers Nearby Entities & Heals you
+* Ice Ring Freezes Nearby Entities
+* Kapow Ring: Spawns TNT at your feet
+* Med Ring: Gives you a second Row of Hearts & Heals you
+* Nuke Ring: Spawns TNT where you are looking
+* Ore Ring: Gives you a Random Ore
+* Rain Ring: Makes it Rain (or not rain)
+* Shade Ring: Fires an Ender Pearl that will travel further
+* Shadow Ring: Makes you invisible
+* Springy Ring: Gives you Jump Boost & Slow Falling
+* Strength Ring: Gives you Strength
+* Volt Ring: Fires a Volt Arrow
+* Warp Ring: Fires an Ender Pearl
+* Zeus Ring: Strikes Nearby Entities with lightning
