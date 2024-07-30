@@ -1,0 +1,46 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:galaxy_battleaxe"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"DDD",
+			"DSD",
+			"UB "
+		],
+		"unlock": [
+			{
+				"item": "poke:galaxy_ingot"
+			},
+			{
+				"item": "poke:galaxy_block"
+			},
+			{
+				"item": "poke:godly_battleaxe"
+			}
+		],
+		"key": {
+			"B": {
+				"item": "poke:godly_battleaxe"
+			},
+			"D": {
+				"item": "poke:galaxy_block"
+			},
+			"S": {
+				"item": "poke:onyx_shaft"
+			},
+			"U": {
+				"item": "poke:diamond_upgrade_core"
+			}
+		},
+		"result": [
+			{
+				"item": "poke:galaxy_battleaxe"
+			}
+		]
+	}
+}

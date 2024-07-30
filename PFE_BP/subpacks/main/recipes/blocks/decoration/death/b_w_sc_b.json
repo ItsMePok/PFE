@@ -1,0 +1,9 @@
+{
+	"format_version":"1.16.100",
+	"minecraft:recipe_shapeless":{
+		"description":{"identifier":"poke:death_b_w_sc_b"},
+		"tags":["stonecutter"],
+		"ingredients":[{"item":"poke:death_bricks"}],
+		"result":{"item":"poke:death_brick_wall"}
+	}
+}

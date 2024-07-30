@@ -1,0 +1,18 @@
+{
+	"format_version": "1.21.10",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:ghost",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:icon":"poke_ghost",
+			"minecraft:wearable": {
+				"slot": "slot.weapon.offhand"
+			}
+		}
+	}
+}

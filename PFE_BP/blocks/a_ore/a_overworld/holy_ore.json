@@ -10,10 +10,13 @@
 		},
 		"components": {
 			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 1
+				"seconds_to_destroy": 1.5
 			},
 			"minecraft:map_color": "#eee0b2",
 			"tag:pfe": {},
+			"tag:metal": {},
+			"tag:minecraft:metal": {},
+			"tag:stone_pick_diggable":{},
 			"minecraft:geometry":{"identifier": "minecraft:geometry.full_block"},
 			"minecraft:loot": "loot_tables/poke/blocks/holy_ore.json",
 			"minecraft:custom_components":[

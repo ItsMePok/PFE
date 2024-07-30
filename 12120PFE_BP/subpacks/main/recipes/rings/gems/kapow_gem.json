@@ -1,0 +1,36 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:kapow_gem"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"H": {
+				"item": "netherite_block"
+			},
+			"S": {
+				"item": "tnt"
+			},
+			"X": {
+				"item": "poke:onyx_ingot"
+			}
+		},
+		"unlock": [
+			{
+				"item": "poke:kapow_holder"
+			}	
+		],
+		"pattern": [
+			"SXS",
+			"XHX",
+			"SXS"
+		],
+		"result": {
+			"count": 1,
+			"item": "poke:kapow_gem"
+		}
+	}
+}

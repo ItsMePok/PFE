@@ -15,6 +15,9 @@
         "explosion_resistance": 60
       },
       "tag:pfe": {},
+			"tag:metal": {},
+			"tag:minecraft:metal": {},
+			"tag:stone_pick_diggable":{},
       "minecraft:map_color": "#f1da09",
 			"minecraft:custom_components": [
 				"poke:cc_block_interact"

@@ -1,0 +1,37 @@
+{
+  "format_version": "1.10.0",
+  "render_controllers": {
+    "controller.render.poke.crossbow": {
+      "arrays": {
+        "textures": {
+          "array.crossbow_texture_frames": [
+            "texture.default",
+            "texture.crossbow_pulling_0",
+            "texture.crossbow_pulling_1",
+            "texture.crossbow_pulling_2",
+            "texture.crossbow_arrow"
+          ],
+          "array.crossbow_charged_textures": [
+            "texture.crossbow_rocket"
+          ]
+        },
+        "geometries": {
+          "array.crossbow_geo_frames": [
+            "geometry.default",
+            "geometry.crossbow_pulling_0",
+            "geometry.crossbow_pulling_1",
+            "geometry.crossbow_pulling_2",
+            "geometry.crossbow_arrow"
+          ],
+          "array.crossbow_charged_geo": [
+            "geometry.crossbow_arrow",
+            "geometry.crossbow_rocket"
+          ]
+        }
+      },
+      "geometry": "return array.crossbow_geo_frames[v.frame];",
+      "materials": [ { "*": "variable.is_enchanted ? material.enchanted : material.default" } ],
+      "textures": [ "return array.crossbow_texture_frames[v.frame];", "texture.enchanted" ]
+    }
+  }
+}

@@ -22,6 +22,9 @@
 				"seconds_to_destroy": 1
 			},
 			"tag:pfe": {},
+			"tag:stone": {},
+			"tag:minecraft:stone": {},
+			"tag:stone_pick_diggable":{},
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 30
 			},

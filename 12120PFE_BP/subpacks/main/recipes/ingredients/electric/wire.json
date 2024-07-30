@@ -1,0 +1,39 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:wire"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"PCP",
+			"PCP",
+			"PCP"
+		],
+		"unlock": [
+			{
+				"item": "poke:plastic"
+			},
+			{
+				"item": "copper_ingot"
+			},
+			{
+				"item": "poke:electric_component"
+			}
+		],
+		"key": {
+			"P": {
+				"item": "poke:plastic"
+			},
+			"C": {
+				"item": "copper_ingot"
+			}
+		},
+		"result": {
+			"item": "poke:wire",
+			"count": 9
+		}
+	}
+}

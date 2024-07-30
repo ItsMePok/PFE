@@ -10,40 +10,20 @@
     },
     "components": {
       "minecraft:destructible_by_mining": {
-        "seconds_to_destroy": 1
+        "seconds_to_destroy": 2//Endstone
       },
       "minecraft:destructible_by_explosion": {
         "explosion_resistance": 1
       },
       "minecraft:map_color": "#131313",
       "tag:pfe": {},
+			"tag:metal": {},
+			"tag:minecraft:metal": {},
+			"tag:stone_pick_diggable":{},
       "minecraft:loot": "loot_tables/poke/blocks/void_ore.json",
 			"minecraft:custom_components":[
 				"poke:fortune"
 			]
-    }/*,
-    "events": {
-      "tnt": {
-        "randomize": [
-          {
-            "run_command": {
-              "command": [
-                "summon tnt ~~~",
-                "playsound note.didgeridoo @p[r=10] ~~~"
-              ]
-            },
-            "weight": 1
-          },
-          {
-            "run_command": {
-              "command": [
-                "playsound note.chime @p[r=10]"
-              ]
-            },
-            "weight": 100
-          }
-        ]
-      }
-    }*/
+    }
   }
 }

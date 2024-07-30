@@ -1,0 +1,15 @@
+{
+	"format_version": "1.21.10",
+	"minecraft:recipe_shaped": {
+		"description": {"identifier": "poke:honey_tiles_slab"},
+		"tags": ["crafting_table"],
+		"unlock": [
+			{"item":"poke:honey_tiles"},
+			{"item":"honeycomb"},
+			{"item":"honeycomb_block"}
+		],
+		"key": {"C": {"item": "poke:honey_tiles"}},
+		"pattern": ["CCC"],
+		"result": {"item":"poke:honey_tiles_slab","count":6}
+	}
+}

@@ -1,0 +1,56 @@
+{
+	"format_version": "1.21.10",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:item_voider",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:icon":"poke_item_voider",
+			"minecraft:durability": {
+				"max_durability": 450,
+				"damage_chance": {
+					"min": 1,
+					"max": 100
+				}
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:enchantable": {
+				"slot": "shield",
+				"value": 20
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"poke:repair_core"
+						],
+						"repair_amount": "query.max_durability"
+					},
+					{
+						"items": [
+							"poke:void_ingot"
+						],
+						"repair_amount": "query.max_durability*0.25"
+					}
+				]
+			},
+			"minecraft:tags": {"tags": [
+				"kill @e[type=item,r=50]"
+			]},
+			"minecraft:custom_components": [
+				"poke:cc_on_use"
+			],
+			"minecraft:use_modifiers": {
+				"use_duration": 0,
+				"movement_modifier": 1
+			},
+			"minecraft:cooldown": {
+				"category": "poke:item_voider",
+				"duration": 0.2
+			}
+		}
+	}
+}

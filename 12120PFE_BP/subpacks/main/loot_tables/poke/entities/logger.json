@@ -1,0 +1,49 @@
+{
+	"pools": [
+		{//Cassette
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "poke:cassette_eldunknown",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "poke:cassette_disc_creator",
+					"weight": 1
+				}
+			]
+		},
+		{//Tokens
+			"rolls": 8,
+			"entries": [
+				{
+					"type": "item",
+					"name": "poke:copper_token",
+					"weight": 15
+				},
+				{
+					"type": "item",
+					"name": "poke:iron_token",
+					"weight": 50
+				},
+				{
+					"type": "item",
+					"name": "poke:gold_token",
+					"weight": 32
+				},
+				{
+					"type": "item",
+					"name": "poke:diamond_token",
+					"weight": 16
+				},
+				{
+					"type": "item",
+					"name": "poke:platinum_token",
+					"weight": 1
+				}
+			]
+		}
+	]
+}

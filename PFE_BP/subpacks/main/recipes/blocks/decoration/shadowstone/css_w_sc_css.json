@@ -1,0 +1,9 @@
+{
+	"format_version":"1.16.100",
+	"minecraft:recipe_shapeless":{
+		"description":{"identifier":"poke:css_w_sc_css"},
+		"tags":["stonecutter"],
+		"ingredients":[{"item":"poke:cobbled_shadowstone"}],
+		"result":{"item":"poke:cobbled_shadowstone_wall"}
+	}
+}

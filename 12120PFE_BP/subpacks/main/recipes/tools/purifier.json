@@ -1,0 +1,29 @@
+{
+    "format_version":"1.20.10",
+    "minecraft:recipe_shaped":{
+        "description":{"identifier":"poke:purifier"},
+        "pattern":[
+            "GXG",
+            "MNM",
+            "GUG"
+        ],
+        "unlock":[
+            {"item":"poke:necromancer_staff"},
+            {"item":"poke:godly_ingot"},
+            {"item":"poke:medic_ingot"},
+            {"item":"poke:med_gem"},
+            {"item":"poke:diamond_upgrade_core"},
+            {"item":"poke:necromancer_staff"}
+        ],
+        "tags":["crafting_table"],
+        "group":"tools",
+        "key":{
+            "G":{"item":"poke:godly_ingot"},
+            "M":{"item":"poke:medic_ingot"},
+            "X":{"item":"poke:med_gem"},
+            "U":{"item":"poke:diamond_upgrade_core"},
+            "N":{"item":"poke:necromancer_staff"}
+        },
+        "result":{"item":"poke:purifier"}
+    }
+}

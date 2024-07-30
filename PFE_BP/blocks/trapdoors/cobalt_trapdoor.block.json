@@ -39,6 +39,10 @@
 				"size": [16, 3, 16]
 			},
 			"tag:pfe":{},
+			"tag:metal": {},
+			"tag:minecraft:metal": {},
+			"tag:stone_pick_diggable":{},
+			"tag:minecraft:one_way_collidable":{},
 			"minecraft:custom_components":[
 				"poke:trapdoor_event"
 			]

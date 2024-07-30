@@ -53,7 +53,10 @@
 			},
 			"minecraft:light_emission": 2,
 			"minecraft:map_color": "#e9e4a1",
-			"tag:pfe": {}
+			"tag:pfe": {},
+			"tag:stone": {},
+			"tag:minecraft:stone": {},
+			"tag:stone_pick_diggable":{}
 		},
 		"permutations": [
 			// Facing north

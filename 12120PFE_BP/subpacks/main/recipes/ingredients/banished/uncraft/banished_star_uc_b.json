@@ -1,0 +1,30 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:banished_star_uncraft_blackstone"
+		},
+		"unlock": [
+			{
+				"item": "poke:banished_star"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"   ",
+			" A ",
+			"   "
+		],
+		"key": {
+			"A": {
+				"item": "poke:banished_star"
+			}
+		},
+		"result": {
+			"item": "blackstone",
+			"count": 9
+		}
+	}
+}

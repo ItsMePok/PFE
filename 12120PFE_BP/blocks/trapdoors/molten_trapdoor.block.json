@@ -1,0 +1,200 @@
+{
+	"format_version": "1.21.10",
+	"minecraft:block": {
+		"description": {
+			"identifier": "poke:molten_trapdoor",
+			"menu_category": {
+				"category": "construction",
+				"group": "itemGroup.name.trapdoor"
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": ["minecraft:cardinal_direction"]
+				},
+				"minecraft:placement_position": {"enabled_states": ["minecraft:vertical_half"]}
+			},
+			"states": {
+				"poke:trapdoor_open": ["no", "yes"]
+			}
+		},
+		"components": {
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.4
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 30
+			},
+			"minecraft:map_color": "#d36d0e",
+			"minecraft:geometry":"geometry.poke.trapdoor",
+			"minecraft:material_instances": {
+				"*": {"texture": "poke_molten_trapdoor",
+			"render_method": "blend"}
+			},
+			"minecraft:collision_box": {
+				"origin": [-8, 0, -8],
+				"size": [16, 3, 16]
+			},
+			"minecraft:selection_box": {
+				"origin": [-8, 0, -8],
+				"size": [16, 3, 16]
+			},
+			"tag:pfe":{},
+			"tag:metal": {},
+			"tag:minecraft:metal": {},
+			"tag:stone_pick_diggable":{},
+			"tag:one_way_collidable":{},
+			"minecraft:custom_components":[
+				"poke:trapdoor_event"
+			]
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('minecraft:vertical_half') == 'bottom' && q.block_state('poke:trapdoor_open') == 'no'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [0,0,0]
+					},
+					"tag:pfe_trapdoor_closed":{}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('minecraft:vertical_half') == 'bottom' && q.block_state('poke:trapdoor_open') == 'yes'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [90,0,0]
+					},
+					"tag:pfe_trapdoor_open":{}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('minecraft:vertical_half') == 'top' && q.block_state('poke:trapdoor_open') == 'no'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [0,0,180]
+					},
+					"tag:pfe_trapdoor_closed":{}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('minecraft:vertical_half') == 'top' && q.block_state('poke:trapdoor_open') == 'yes'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [90,0,180]
+					},
+					"tag:pfe_trapdoor_open":{}
+				}
+			},
+
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('minecraft:vertical_half') == 'top' && q.block_state('poke:trapdoor_open') == 'no'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [180,0,0]
+					},
+					"tag:pfe_trapdoor_closed":{}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('minecraft:vertical_half') == 'top' && q.block_state('poke:trapdoor_open') == 'yes'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [-90,0,0]
+					},
+					"tag:pfe_trapdoor_open":{}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('minecraft:vertical_half') == 'bottom' && q.block_state('poke:trapdoor_open') == 'no'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [180,0,180]
+					},
+					"tag:pfe_trapdoor_closed":{}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('minecraft:vertical_half') == 'bottom' && q.block_state('poke:trapdoor_open') == 'yes'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [-90,0,180]
+					},
+					"tag:pfe_trapdoor_open":{}
+				}
+			},
+
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('minecraft:vertical_half') == 'bottom' && q.block_state('poke:trapdoor_open') == 'no'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [0,90,0]
+					},
+					"tag:pfe_trapdoor_closed":{}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('minecraft:vertical_half') == 'bottom' && q.block_state('poke:trapdoor_open') == 'yes'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [90,90,0]
+					},
+					"tag:pfe_trapdoor_open":{}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('minecraft:vertical_half') == 'top' && q.block_state('poke:trapdoor_open') == 'no'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [0,90,180]
+					},
+					"tag:pfe_trapdoor_closed":{}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('minecraft:vertical_half') == 'top' && q.block_state('poke:trapdoor_open') == 'yes'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [90,90,180]
+					},
+					"tag:pfe_trapdoor_open":{}
+				}
+			},
+
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('minecraft:vertical_half') == 'bottom' && q.block_state('poke:trapdoor_open') == 'no'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [0,-90,0]
+					},
+					"tag:pfe_trapdoor_closed":{}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('minecraft:vertical_half') == 'bottom' && q.block_state('poke:trapdoor_open') == 'yes'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [90,-90,0]
+					},
+					"tag:pfe_trapdoor_open":{}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('minecraft:vertical_half') == 'top' && q.block_state('poke:trapdoor_open') == 'no'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [0,-90,180]
+					},
+					"tag:pfe_trapdoor_closed":{}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('minecraft:vertical_half') == 'top' && q.block_state('poke:trapdoor_open') == 'yes'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [90,-90,180]
+					},
+					"tag:pfe_trapdoor_open":{}
+				}
+			}
+		]
+	}
+}

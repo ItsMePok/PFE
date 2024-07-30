@@ -28,6 +28,9 @@
 				"explosion_resistance": 30
 			},
 			"tag:pfe": {},
+			"tag:axe": {},
+			"tag:wood":{},
+			"tag:minecraft:wood":{},
 			"minecraft:geometry": "geometry.poke.red_present",
 			"minecraft:map_color": "#9b2626",
 			"minecraft:material_instances": {

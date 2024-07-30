@@ -1,0 +1,57 @@
+{
+	"format_version": "1.21.10",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "poke:galaxy_arrow",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"runtime_identifier": "arrow"
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 0.25,
+				"height": 0.25
+			},
+			"minecraft:projectile": {
+				"catch_fire": true,
+				"gravity": 0.05,
+				"crit_particle_on_hurt": true,
+				"hit_sound": "bow.hit",
+				"inertia": 0.99,
+				"shoot_sound": "random.bow",
+				"power": 5.0,
+				"is_dangerous": true,
+				"on_hit": {
+					"stick_in_ground": {
+						"shake_time": 0.5
+					},
+					"mob_effect": {
+						"effect": "wither",
+						"duration": 10,
+						"amplifier": 3,
+						"visible": false
+					},
+					"impact_damage": {
+						"damage": 18,
+						"destroy_on_hit": true,
+						"knockback": true,
+						"max_critical_damage": 20,
+						"min_critical_damage": 15,
+						"power_multiplier": 1
+					}
+				},
+				"uncertainty_multiplier": 0,
+				"uncertainty_base": 1,
+				"anchor": 1,
+				"stop_on_hurt": true,
+				"particle": "iconcrack"
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": true
+			}
+		}
+	}
+}

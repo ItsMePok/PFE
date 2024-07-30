@@ -1,0 +1,17 @@
+{
+	"format_version":"1.20.10",
+	"minecraft:recipe_shaped":{
+		"description":{"identifier":"poke:pss_s_c_pss"},
+		"tags":["crafting_table"],
+		"unlock":[
+			{"item":"poke:cobbled_shadowstone"},
+			{"item":"poke:shadowstone"},
+			{"item":"poke:polished_shadowstone"}
+		],
+		"key":{
+			"C":{"item":"poke:polished_shadowstone"}
+		},
+		"pattern":["CCC"],
+		"result":{"item":"poke:polished_shadowstone_slab","count":6}
+	}
+}

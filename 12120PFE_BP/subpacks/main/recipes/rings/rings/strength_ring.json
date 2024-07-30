@@ -1,0 +1,27 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "poke:strength_ring"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": [
+			{
+				"item": "poke:strength_gem"
+			}	
+		],
+		"ingredients": [
+			{
+				"item": "poke:diamond_gem_holder"
+			},
+			{
+				"item": "poke:strength_gem"
+			}
+		],
+		"result": {
+			"item": "poke:strength_ring"
+		}
+	}
+}

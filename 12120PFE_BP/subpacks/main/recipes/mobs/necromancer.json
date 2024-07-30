@@ -1,0 +1,47 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:necromancer"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"PRP",
+			"BHB",
+			"PRP"
+		],
+		"unlock": [
+			{
+				"item": "purple_dye"
+			},
+			{
+				"item": "bone"
+			},
+			{
+				"item": "rotten_flesh"
+			},
+			{
+				"item": "heart_of_the_sea"
+			}
+		],
+		"key": {
+			"P": {
+				"item": "purple_dye"
+			},
+			"H": {
+				"item": "heart_of_the_sea"
+			},
+			"B": {
+				"item": "bone"
+			},
+			"R": {
+				"item": "rotten_flesh"
+			}
+		},
+		"result": {
+			"item": "poke:spawn_necromancer"
+		}
+	}
+}

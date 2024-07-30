@@ -1,0 +1,93 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "poke:hellish_soup",
+					"functions": [
+						{
+							"function": "enchant_randomly",
+							"treasure": true
+						},
+						{
+							"function": "set_lore",
+							"lore": [
+                                "100% not a peace offering for what i just did"
+                            ]
+						}
+					],
+					"weight": 1
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "poke:blazooka",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "enchant_randomly",
+							"treasure": true
+						},
+						{
+							"function": "set_lore",
+							"lore": [
+								"Launches you Forward!",
+								"§eOffhand Cosmetic"
+							]
+						},
+						{
+							"function": "looting_enchant",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "poke:blazooka",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_lore",
+							"lore": [
+								"Launches you Forward!",
+								"§eOffhand Cosmetic"
+							]
+						},
+						{
+							"function": "looting_enchant",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						}
+					]
+				},
+				{"type": "empty","weight": 8}
+			]
+		},
+		{
+			"rolls": 8,
+			"entries": [
+				{
+					"type": "item",
+					"name": "poke:iron_token",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "poke:copper_token",
+					"weight": 1
+				}
+			]
+		}
+	]
+}

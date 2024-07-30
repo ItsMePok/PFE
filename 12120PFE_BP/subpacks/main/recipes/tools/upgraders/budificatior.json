@@ -1,0 +1,43 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:budificator"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" SS",
+			"scS",
+			"Ts "
+		],
+		"unlock": [
+			{
+				"item": "amethyst_shard"
+			},
+			{
+				"item":"poke:diamond_upgrade_core"
+			}
+		],
+		"key": {
+			"S": {
+				"item": "amethyst_block"
+			},
+			"s": {
+				"item": "amethyst_shard"
+			},
+			"c": {
+				"item":"poke:diamond_upgrade_core"
+			},
+			"T": {
+				"item": "poke:demonic_stick"
+			}
+		},
+		"result": [
+			{
+				"item": "poke:budificator"
+			}
+		]
+	}
+}

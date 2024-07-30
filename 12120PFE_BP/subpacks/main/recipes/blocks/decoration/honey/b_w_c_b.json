@@ -1,0 +1,15 @@
+{
+	"format_version":"1.20.10",
+	"minecraft:recipe_shaped":{
+		"description":{"identifier":"poke:honey_b_w_c_b"},
+		"tags":["crafting_table"],
+		"unlock":[
+			{"item":"poke:honey_bricks"}
+		],
+		"key":{
+			"C":{"item":"poke:honey_bricks"}
+		},
+		"pattern":["CCC","CCC"],
+		"result":{"item":"poke:honey_brick_wall","count":6}
+	}
+}

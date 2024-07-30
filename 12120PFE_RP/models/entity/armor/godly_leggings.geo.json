@@ -1,0 +1,123 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.poke.godly_leggings",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "LeftLeg",
+					"pivot": [
+						1.9,
+						12,
+						0
+					]
+				},
+				{
+					"name": "leggings",
+					"parent": "LeftLeg",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-0.6,
+								1,
+								-2.5
+							],
+							"size": [
+								5,
+								12,
+								5
+							],
+							"uv": [
+								15,
+								12
+							]
+						},
+						{
+							"origin": [
+								-1.1,
+								11,
+								-3
+							],
+							"size": [
+								6,
+								2,
+								6
+							],
+							"uv": [
+								0,
+								29
+							]
+						}
+					]
+				},
+				{
+					"name": "RightLeg",
+					"pivot": [
+						-1.9,
+						12,
+						0
+					]
+				},
+				{
+					"name": "leggings2",
+					"parent": "RightLeg",
+					"pivot": [
+						-4,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4.6,
+								1,
+								-2.5
+							],
+							"size": [
+								5,
+								12,
+								5
+							],
+							"uv": [
+								0,
+								0
+							]
+						},
+						{
+							"origin": [
+								-5.1,
+								11,
+								-3
+							],
+							"size": [
+								6,
+								2,
+								6
+							],
+							"uv": [
+								20,
+								0
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

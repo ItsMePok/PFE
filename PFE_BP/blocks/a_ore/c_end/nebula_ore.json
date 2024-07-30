@@ -10,37 +10,17 @@
 		},
 		"components": {
 			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 1
+				"seconds_to_destroy": 2//Endstone
 			},
 			"minecraft:map_color": "#c01be9",
 			"tag:pfe": {},
+			"tag:metal": {},
+			"tag:minecraft:metal": {},
+			"tag:stone_pick_diggable":{},
 			"minecraft:loot": "loot_tables/poke/blocks/nebula_ore.json",
 			"minecraft:custom_components":[
 				"poke:fortune"
 			]
-		}/*,
-		"events": {
-			"poke:bug": {
-				"randomize": [
-					{
-						"run_command": {
-							"command": [
-								"summon poke:nebula_bug ~~~",
-								"playsound note.didgeridoo @p[r=10] ~~~"
-							]
-						},
-						"weight": 1
-					},
-					{
-						"run_command": {
-							"command": [
-								"playsound note.chime @p[r=10]"
-							]
-						},
-						"weight": 100
-					}
-				]
-			}
-		}*/
+		}
 	}
 }

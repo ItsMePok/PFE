@@ -1,0 +1,32 @@
+{
+  "format_version": "1.21.10",
+  "minecraft:block": {
+    "description": {
+      "identifier": "poke:key_block_start",
+      "menu_category": {
+        "category": "none"
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining":false,
+      "minecraft:destructible_by_explosion":false,
+      "tag:pfe": {},
+			"tag:metal": {},
+			"tag:minecraft:metal": {},
+			"tag:stone_pick_diggable":{},
+      "minecraft:map_color": "#6d6d6d"
+    }/*,
+    "events": {
+      "transform": {
+        "set_block": {
+          "block_type": "scaffolding"
+        },
+        "run_command": {
+          "command": [
+            "function poke/dungeon/start"
+          ]
+        }
+      }
+    }*/
+  }
+}

@@ -23,7 +23,11 @@
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 3
 			},
-			"tag:pfe": {},
+			"tag:pfe":{},
+			"tag:wood": {},
+			"tag:minecraft:wood": {},
+			"tag:pumpkin": {},
+			"tag:minecraft:pumpkin": {},
 			"minecraft:map_color": "#d64949",
 			"minecraft:geometry":"geometry.poke.carved_melon",
 			"minecraft:material_instances": {

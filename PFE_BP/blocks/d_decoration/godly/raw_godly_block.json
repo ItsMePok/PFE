@@ -13,6 +13,9 @@
       },
       "minecraft:map_color": "#9e866f",
       "tag:pfe": {},
+			"tag:metal": {},
+			"tag:minecraft:metal": {},
+			"tag:stone_pick_diggable":{},
       "minecraft:destructible_by_explosion": {
         "explosion_resistance": 30
       }

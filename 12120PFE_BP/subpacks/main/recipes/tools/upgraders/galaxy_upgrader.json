@@ -1,0 +1,42 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "poke:galaxy_upgrader"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "group": "upgraders",
+        "pattern": [
+            " XX",
+            "WYX",
+            "ZW "
+        ],
+        "unlock": [
+            {
+                "item": "poke:raw_galaxy"
+            },
+            {
+                "item":"poke:diamond_upgrade_core"
+            }
+        ],
+        "key": {
+            "X": {
+                "item": "poke:galaxy_block"
+            },
+            "W": {
+                "item": "poke:galaxy_block"
+            },
+            "Y": {
+                "item": "poke:platinum_upgrade_core"
+            },
+            "Z": {
+                "item": "poke:onyx_shaft"
+            }
+        },
+        "result": {
+            "item": "poke:galaxy_upgrader"
+        }
+    }
+}

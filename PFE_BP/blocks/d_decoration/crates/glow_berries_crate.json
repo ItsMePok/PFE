@@ -28,6 +28,8 @@
 				}
 			},
 			"tag:pfe":{},
+			"tag:wood": {},
+			"tag:minecraft:wood": {},
 			"minecraft:map_color": "#fd9540"
 		}
 	}

@@ -1012,6 +1012,70 @@ class PFE8Ball{
         return;
     }
 }
+//Wall connections
+const pfewallnoc = ["minecraft:piston_arm_collision","minecraft:sticky_piston_arm_collision","minecraft:air","minecraft:water","minecraft:lava","minecraft:waterlily","minecraft:flowing_water","minecraft:flowing_lava","minecraft:short_grass","minecraft:tall_grass","minecraft:seagrass","minecraft:kelp","minecraft:oak_leaves","minecraft:acacia_leaves","minecraft:azalea_leaves","minecraft:azalea_leaves_flowered","minecraft:birch_leaves","minecraft:cherry_leaves","minecraft:dark_oak_leaves","minecraft:jungle_leaves","minecraft:mangrove_leaves","minecraft:spruce_leaves"]
+class PFEWall{
+    onPlace(data) {
+        //console.warn('i exist')
+        //console.warn(''+data.block.north().typeId)
+        const northb = data.block.north().typeId +''
+        const southb = data.block.south().typeId +''
+        const eastb = data.block.east().typeId +''
+        const westb = data.block.west().typeId +''
+        //console.warn(northb)
+        if(!pfewallnoc.includes(northb)){
+            //console.warn('north block exists')
+            data.block.setPermutation(data.block.permutation.withState('pfe:wall_n',true))
+            if(data.block.north().hasTag('pfe_wall')){
+                data.block.north().setPermutation(data.block.north().permutation.withState('pfe:wall_s',true))
+            }
+        }else{data.block.setPermutation(data.block.permutation.withState('pfe:wall_n',false))}
+        if(!pfewallnoc.includes(southb)){
+            //console.warn('south block exists')
+            data.block.setPermutation(data.block.permutation.withState('pfe:wall_s',true))
+            if(data.block.south().hasTag('pfe_wall')){
+                data.block.south().setPermutation(data.block.south().permutation.withState('pfe:wall_n',true))
+            }
+        }else{data.block.setPermutation(data.block.permutation.withState('pfe:wall_s',false))}
+        if(!pfewallnoc.includes(eastb)){
+            //console.warn('east block exists')
+            data.block.setPermutation(data.block.permutation.withState('pfe:wall_e',true))
+            if(data.block.east().hasTag('pfe_wall')){
+                data.block.east().setPermutation(data.block.east().permutation.withState('pfe:wall_w',true))
+            }
+        }else{data.block.setPermutation(data.block.permutation.withState('pfe:wall_e',false))}
+        if(!pfewallnoc.includes(westb)){
+            //console.warn('west block exists')
+            data.block.setPermutation(data.block.permutation.withState('pfe:wall_w',true))
+            if(data.block.west().hasTag('pfe_wall')){
+                data.block.west().setPermutation(data.block.west().permutation.withState('pfe:wall_e',true))
+            }
+        }else{data.block.setPermutation(data.block.permutation.withState('pfe:wall_w',false))}
+        return;
+    }
+    onPlayerDestroy(data) {
+        //console.warn('i exist')
+        //console.warn(''+data.block.north().typeId)
+        const northb = data.block.north().typeId +''
+        const southb = data.block.south().typeId +''
+        const eastb = data.block.east().typeId +''
+        const westb = data.block.west().typeId +''
+        //console.warn(data.block.hasTag('pfe_wall'))
+        if(data.block.north().hasTag('pfe_wall')){
+            data.block.north().setPermutation(data.block.north().permutation.withState('pfe:wall_s',false))
+        }
+        if(data.block.south().hasTag('pfe_wall')){
+            data.block.south().setPermutation(data.block.south().permutation.withState('pfe:wall_n',false))
+        }
+        if(data.block.east().hasTag('pfe_wall')){
+            data.block.east().setPermutation(data.block.east().permutation.withState('pfe:wall_w',false))
+        }
+        if(data.block.west().hasTag('pfe_wall')){
+            data.block.west().setPermutation(data.block.west().permutation.withState('pfe:wall_e',false))
+        }
+        return;
+    }
+}
 //Custom Component Registery (may warn about a spike on world loaing because of how many components)
 world.beforeEvents.worldInitialize.subscribe(event => {
     event.itemComponentRegistry.registerCustomComponent(
@@ -1106,6 +1170,9 @@ world.beforeEvents.worldInitialize.subscribe(event => {
     )
     event.blockTypeRegistry.registerCustomComponent(
         "poke:cc_8ball", new PFE8Ball()
+    )
+    event.blockTypeRegistry.registerCustomComponent(
+        "poke:cc_wall", new PFEWall()
     )
     return;
 })

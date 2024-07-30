@@ -1,0 +1,113 @@
+{
+	"format_version": "1.19.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.poke.fishbowl",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 4,
+				"visible_bounds_offset": [0, 1, 0]
+			},
+			"bones": [
+				{
+					"name": "root_item",
+					"pivot": [0, 0, 0],
+					"binding": "q.item_slot_to_bone_name(c.item_slot)"
+				},
+				{
+					"name": "Head",
+					"parent": "root_item",
+					"pivot": [0, 2, 0],
+					"cubes": [
+						{
+							"origin": [-5, 0, -5],
+							"size": [10, 10, 10],
+							"inflate": 0.1,
+							"uv": {
+								"north": {"uv": [0, 8], "uv_size": [8, 8]},
+								"east": {"uv": [8, 8], "uv_size": [8, 8]},
+								"south": {"uv": [0, 8], "uv_size": [8, 8]},
+								"west": {"uv": [8, 8], "uv_size": [8, 8]},
+								"up": {"uv": [0, 0], "uv_size": [8, 8]},
+								"down": {"uv": [0, 8], "uv_size": [8, -8]}
+							}
+						},
+						{
+							"origin": [-4, 10, -4],
+							"size": [8, 1, 8],
+							"uv": {
+								"north": {"uv": [8, 0], "uv_size": [4, 1]},
+								"east": {"uv": [8, 0], "uv_size": [4, 1]},
+								"south": {"uv": [8, 0], "uv_size": [4, 1]},
+								"west": {"uv": [8, 0], "uv_size": [4, 1]},
+								"up": {"uv": [15, 1], "uv_size": [1, -1]},
+								"down": {"uv": [15, 1], "uv_size": [1, -1]}
+							}
+						}
+					]
+				},
+				{
+					"name": "bone4",
+					"parent": "Head",
+					"pivot": [-4.5, 5, 1.1],
+					"rotation": [0, 90, 0],
+					"cubes": [
+						{
+							"origin": [-4.9, 4.7, 1.1],
+							"size": [0.8, 0.6, 0],
+							"uv": {
+								"north": {"uv": [16, 1], "uv_size": [-8, 6]},
+								"east": {"uv": [6, 4], "uv_size": [0, 3]},
+								"south": {"uv": [8, 1], "uv_size": [8, 6]},
+								"west": {"uv": [11, 4], "uv_size": [0, 3]},
+								"up": {"uv": [6, 4], "uv_size": [5, 0]},
+								"down": {"uv": [11, 4], "uv_size": [5, 0]}
+							}
+						}
+					]
+				},
+				{
+					"name": "bone2",
+					"parent": "Head",
+					"pivot": [1, 2, -4.9],
+					"cubes": [
+						{
+							"origin": [0.6, 1.7, -4.9],
+							"size": [0.8, 0.6, 0],
+							"uv": {
+								"north": {"uv": [16, 1], "uv_size": [-8, 6]},
+								"east": {"uv": [6, 4], "uv_size": [0, 3]},
+								"south": {"uv": [8, 1], "uv_size": [8, 6]},
+								"west": {"uv": [11, 4], "uv_size": [0, 3]},
+								"up": {"uv": [6, 4], "uv_size": [5, 0]},
+								"down": {"uv": [11, 4], "uv_size": [5, 0]}
+							}
+						}
+					]
+				},
+				{
+					"name": "bone3",
+					"parent": "Head",
+					"pivot": [1.2, 6.7, 4.1],
+					"rotation": [0, 180, 0],
+					"cubes": [
+						{
+							"origin": [0.8, 6.4, 4.1],
+							"size": [0.8, 0.6, 0],
+							"uv": {
+								"north": {"uv": [16, 1], "uv_size": [-8, 6]},
+								"east": {"uv": [6, 4], "uv_size": [0, 3]},
+								"south": {"uv": [8, 1], "uv_size": [8, 6]},
+								"west": {"uv": [11, 4], "uv_size": [0, 3]},
+								"up": {"uv": [6, 4], "uv_size": [5, 0]},
+								"down": {"uv": [11, 4], "uv_size": [5, 0]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

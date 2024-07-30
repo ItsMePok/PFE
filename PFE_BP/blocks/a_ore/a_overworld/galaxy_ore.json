@@ -11,10 +11,13 @@
 		"components": {
 			"minecraft:map_color": "#810baf",
 			"tag:pfe": {},
+			"tag:metal": {},
+			"tag:minecraft:metal": {},
+			"tag:stone_pick_diggable":{},
 			"minecraft:geometry":{"identifier": "minecraft:geometry.full_block"},
 			"minecraft:loot": "loot_tables/poke/blocks/galaxy_ore.json",
 			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 1
+				"seconds_to_destroy": 1.5
 			},
 			"minecraft:custom_components":[
 				"poke:fortune"

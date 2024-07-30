@@ -1,0 +1,37 @@
+{
+	"format_version":"1.20.10",
+	"minecraft:recipe_shaped":{
+		"description":{"identifier":"poke:nebula_sword"},
+		"tags":["crafting_table"],
+		"pattern":[
+			"APV",
+			"YCB",
+			"HSE"
+		],
+		"unlock":[
+			{"item":"poke:nebula_stick"},
+			{"item":"poke:nebula_haxel"},
+			{"item":"poke:nebula_battleaxe"},
+			{"item":"poke:nebula_core"},
+			{"item":"poke:nebula_scythe"},
+			{"item":"poke:void_sword"},
+			{"item":"poke:platinum_upgrade_core"},
+			{"item":"poke:death_sword"},
+			{"item":"poke:nebula_core"},
+			{"item":"poke:nebula_hoe"},
+			{"item":"poke:astral_sword"}
+		],
+		"key":{
+			"A":{"item":"poke:astral_sword"},
+			"P":{"item":"poke:platinum_upgrade_core"},
+			"V":{"item":"poke:death_sword"},
+			"Y":{"item":"poke:nebula_scythe"},
+			"C":{"item":"poke:nebula_core"},
+			"B":{"item":"poke:nebula_battleaxe"},
+			"H":{"item":"poke:nebula_haxel"},
+			"S":{"item":"poke:nebula_stick"},
+			"E":{"item":"poke:nebula_hoe"}
+		},
+		"result":{"item":"poke:nebula_sword"}
+	}
+}

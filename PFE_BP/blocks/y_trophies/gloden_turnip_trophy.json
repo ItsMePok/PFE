@@ -53,6 +53,12 @@
 			"minecraft:light_emission": 4,
 			"minecraft:light_dampening": 0,
 			"tag:pfe": {},
+			"tag:minecraft:crop": {},
+			"tag:crop":{},
+			"tag:minecraft:wood": {},
+			"tag:wood":{},
+			"tag:hoe":{},
+			"tag:stone_pick_diggable":{},
 			"minecraft:map_color": "#d6ca1e"
 		},
 		"permutations": [

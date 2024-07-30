@@ -1,0 +1,38 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:netherite_haxel"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"N#N",
+			"#i#",
+			"N#N"
+		],
+		"unlock": [
+			{
+				"item": "netherite_ingot"
+			},
+			{
+				"item": "poke:diamond_haxel"
+			}	
+		],
+		"key": {
+			"i": {
+				"item": "poke:diamond_haxel"
+			},
+			"#": {
+				"item": "netherite_ingot"
+			},
+			"N": {
+				"item": "poke:scrappy_block"
+			}
+		},
+		"result": {
+			"item": "poke:netherite_haxel"
+		}
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"format_version":"1.16.100",
+	"minecraft:recipe_shapeless":{
+		"description":{"identifier":"poke:hellish_b_w_sc_b"},
+		"tags":["stonecutter"],
+		"ingredients":[{"item":"poke:hellish_bricks"}],
+		"result":{"item":"poke:hellish_brick_wall"}
+	}
+}

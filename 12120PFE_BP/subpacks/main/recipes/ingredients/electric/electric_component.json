@@ -1,0 +1,36 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:electric_component"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"XRX",
+			"RCR",
+			"XRX"
+		],
+		"unlock": [
+			{
+				"item": "poke:cobalt_ingot"
+			}	
+		],
+		"key": {
+			"X": {
+				"item": "copper_ingot"
+			},
+			"C": {
+				"item": "poke:cobalt_ingot"
+			},
+			"R": {
+				"item": "redstone"
+			}
+		},
+		"result": {
+			"item": "poke:electric_component",
+			"count": 2
+		}
+	}
+}

@@ -1,16 +1,16 @@
 {
 	"header": {
-		"name": "§ev1.2.1.4 §uPFE §cBP",
-		"description": "pack.description",
+		"name": "§ev1.2.1.5 §uPFE §cBP",
+		"description": "§6By:§u ItsMePok §f& §dO2God §7||§e Wiki: https://pfewiki.gitbook.io/home",
 		"min_engine_version": [1, 21, 0],
-		"uuid": "4a5d4400-a24a-4b43-b6e2-899e863b958b",
+		"uuid": "7a990c4d-937f-408d-8f3f-8e4f5c546f78",
 		"version": [1, 0, 0]
 	},
 	"modules": [
 		{
 			"description": "PFE",
 			"type": "data",
-			"uuid": "9a11ffca-50eb-41c3-9b95-76d9ba6734d6",
+			"uuid": "5247ce36-efd4-4e9e-9550-c60bcf8944c6",
 			"version": [1, 0, 0]
 		},
 		{
@@ -29,7 +29,7 @@
 	],
 	"subpacks": [
 		{
-			"folder_name": "deco",
+			"folder_name": "zdeco",
 			"name": "Blocks Only",
 			"memory_tier": 0
 		},

@@ -40,7 +40,8 @@
 				"origin": [-8, 0, -8],
 				"size": [16, 3, 16]
 			},
-			"tag:pfe":{},
+			"tag:pfe": {},
+			"tag:stone_pick_diggable":{},
 			"minecraft:custom_components":[
 				"poke:trapdoor_event"
 			]

@@ -1,0 +1,29 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.cobalt_golem.walk": {
+			"initial_state": "idle",
+			"states": {
+				"idle": {
+					"transitions": [
+						{
+							"walking": "q.ground_speed > 0.7"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"walking": {
+					"animations": [
+						"walking2"
+					],
+					"transitions": [
+						{
+							"idle": "q.ground_speed < 0.5"
+						}
+					],
+					"blend_transition": 0.2
+				}
+			}
+		}
+	}
+}

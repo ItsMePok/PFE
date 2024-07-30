@@ -55,6 +55,7 @@
 			},
 			"minecraft:light_dampening": 0,
 			"tag:pfe": {},
+			"tag:stone_pick_diggable":{},
 			"minecraft:map_color": "#8e837b"
 		},
 		"permutations": [

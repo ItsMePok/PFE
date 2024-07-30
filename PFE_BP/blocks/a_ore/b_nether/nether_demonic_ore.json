@@ -3,9 +3,6 @@
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:nether_demonic_ore",
-			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 1
-			},
 			"menu_category": {
 				"category": "nature",
 				"group": "itemGroup.name.ore"
@@ -13,37 +10,17 @@
 		},
 		"components": {
 			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 1
+				"seconds_to_destroy": 1.25//Netherrack
 			},
 			"minecraft:map_color": "#2c1919",
 			"tag:pfe": {},
+			"tag:metal": {},
+			"tag:minecraft:metal": {},
+			"tag:stone_pick_diggable":{},
 			"minecraft:loot": "loot_tables/poke/blocks/demonic_ore.json",
 			"minecraft:custom_components":[
 				"poke:fortune"
 			]
-		}/*,
-		"events": {
-			"poke:tnt_ore_event": {
-				"randomize": [
-					{
-						"run_command": {
-							"command": [
-								"summon tnt ~~~",
-								"playsound note.didgeridoo @p[r=10] ~~~"
-							]
-						},
-						"weight": 1
-					},
-					{
-						"run_command": {
-							"command": [
-								"playsound note.chime @p[r=10]"
-							]
-						},
-						"weight": 100
-					}
-				]
-			}
-		}*/
+		}
 	}
 }

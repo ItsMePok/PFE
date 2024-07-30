@@ -10,13 +10,16 @@
 		},
 		"components": {
 			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 1
+				"seconds_to_destroy": 1.25//Netherrack
 			},
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 1
 			},
 			"minecraft:map_color": "#1b752a",
 			"tag:pfe": {},
+			"tag:metal": {},
+			"tag:minecraft:metal": {},
+			"tag:stone_pick_diggable":{},
 			"minecraft:loot": "loot_tables/poke/blocks/shade_ore.json",
 			"minecraft:custom_components":[
 				"poke:fortune"

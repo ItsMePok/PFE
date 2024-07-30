@@ -1,0 +1,24 @@
+{
+	"format_version":"1.20.10",
+	"minecraft:recipe_shapeless":{
+		"description":{"identifier":"poke:hellish_arrow"},
+		"tags":["crafting_table"],
+		"unlock":[
+			{"item":"arrow"},
+			{"item":"poke:hellish_nugget"},
+			{"item":"poke:hellish_ingot"}
+		],
+		"ingredients":[
+			{
+				"item":"minecraft:arrow",
+				"data":0,
+				"count":8
+			},
+			{"item":"poke:hellish_nugget"}
+		],
+		"result":{
+			"item":"poke:hellish_arrow",
+			"count":8
+		}
+	}
+}

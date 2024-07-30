@@ -1,0 +1,109 @@
+{
+	"pools": [
+		{
+			"rolls": 10,
+			"entries": [
+				{
+					"type": "item",
+					"name": "poke:astral_ingot",
+					"weight": 10
+				},{
+					"type": "item",
+					"name": "poke:cobalt_ingot",
+					"weight": 10
+				},{
+					"type": "item",
+					"name": "poke:void_ingot",
+					"weight": 10
+				},{
+					"type": "item",
+					"name": "poke:godly_ingot",
+					"weight": 10
+				},{
+					"type": "item",
+					"name": "poke:galaxy_ingot",
+					"weight": 10
+				},{
+					"type": "item",
+					"name": "poke:holy_ingot",
+					"weight": 10
+				},{
+					"type": "item",
+					"name": "poke:demonic_ingot",
+					"weight": 10
+				},{
+					"type": "item",
+					"name": "poke:hellish_ingot",
+					"weight": 10
+				},{
+					"type": "item",
+					"name": "poke:onyx_ingot",
+					"weight": 10
+				},{
+					"type": "item",
+					"name": "poke:shade_ingot",
+					"weight": 10
+				},{
+					"type": "item",
+					"name": "poke:nebula_noodles",
+					"weight": 10
+				},{
+					"type": "item",
+					"name": "poke:nebula_potion",
+					"weight": 10
+				},{
+					"type": "item",
+					"name": "poke:void_potion",
+					"weight": 10
+				},{
+					"type": "item",
+					"name": "poke:cobalt_potion",
+					"weight": 10
+				},{
+					"type": "item",
+					"name": "poke:death_potion",
+					"weight": 10
+				},{
+					"type": "item",
+					"name": "poke:eggnog",
+					"weight": 10
+				},
+				{
+					"type": "item",
+					"name": "poke:cobalt_soup",
+					"weight": 10
+				},
+				{
+					"type": "item",
+					"name": "poke:molten_slimeball",
+					"weight": 10
+				},
+				{
+					"type": "item",
+					"name": "poke:death_ingot",
+					"weight": 10
+				},
+				{
+					"type": "item",
+					"name": "poke:medic_ingot",
+					"weight": 10
+				},
+				{
+					"type": "item",
+					"name": "poke:radium_ingot",
+					"weight": 10
+				},
+				{
+					"type": "item",
+					"name": "poke:splash_death_potion",
+					"weight": 1
+				},
+                {
+                    "type": "item",
+                    "name": "poke:pfe-mcpedl_pottery_sherd",
+                    "weight": 1
+                }
+			]
+		}
+	]
+}

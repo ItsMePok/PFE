@@ -1,0 +1,37 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:grim_gem"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"H": {
+				"item": "poke:void_block"
+			},
+			"S": {
+				"item": "skull",
+				"data": 1
+			},
+			"X": {
+				"item": "poke:void_ingot"
+			}
+		},
+		"unlock": [
+			{
+				"item": "poke:obsidian_gem_holder"
+			}	
+		],
+		"pattern": [
+			"SXS",
+			"XHX",
+			"SXS"
+		],
+		"result": {
+			"count": 1,
+			"item": "poke:grim_gem"
+		}
+	}
+}

@@ -1,0 +1,42 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "poke:gold_upgrader"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "group": "upgraders",
+        "pattern": [
+            " XX",
+            "WYX",
+            "ZW "
+        ],
+        "unlock": [
+			{
+				"item": "raw_gold"
+			},
+			{
+				"item":"poke:diamond_upgrade_core"
+			}	
+		],
+        "key": {
+            "X": {
+                "item": "gold_block"
+            },
+            "W": {
+                "item": "gold_block"
+            },
+            "Y": {
+                "item":"poke:diamond_upgrade_core"
+            },
+            "Z": {
+                "item": "stick"
+            }
+        },
+        "result": {
+            "item": "poke:gold_upgrader"
+        }
+    }
+}

@@ -1,0 +1,33 @@
+{
+	"format_version": "1.21.10",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:cooked_duck",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.cookedFood"
+			}
+		},
+		"components": {
+			"minecraft:max_stack_size": 64,
+			"minecraft:icon":{
+				"textures": {
+					"default": "poke_cooked_duck"
+				}
+			},
+			"minecraft:food": {
+				"nutrition": 6,
+				"saturation_modifier": 1.2,
+				"can_always_eat": false
+			},
+			"minecraft:use_modifiers": {
+				"movement_modifier": 0.32,
+				"use_duration": 1.6
+			},
+			"minecraft:use_animation": "eat",
+			"minecraft:tags": {
+				"tags": ["minecraft:is_food"]
+			}
+		}
+	}
+}

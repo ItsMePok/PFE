@@ -1,0 +1,28 @@
+{
+	"format_version":"1.20.10",
+	"minecraft:recipe_shaped":{
+		"description":{"identifier":"poke:quantum_teleporter"},
+		"tags":["crafting_table"],
+		"pattern":[
+			"GAG",
+			"PCP",
+			"GBG"
+		],
+        "unlock":[
+			{"item":"poke:nebula_ingot"},
+			{"item":"poke:galaxy_ingot"},
+			{"item":"poke:nebula_core"},
+			{"item":"poke:power_cell"},
+			{"item":"poke:red_button"},
+			{"item":"poke:antenna"}
+		],
+		"key":{
+			"G":{"item":"poke:galaxy_ingot"},
+			"C":{"item":"poke:nebula_core"},
+			"P":{"item":"poke:power_cell"},
+			"B":{"item":"poke:red_button"},
+			"A":{"item":"poke:antenna"}
+		},
+		"result":{"item":"poke:quantum_teleporter"}
+	}
+}

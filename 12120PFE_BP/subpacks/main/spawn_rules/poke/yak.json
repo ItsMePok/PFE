@@ -1,0 +1,40 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:spawn_rules": {
+		"description": {
+			"identifier": "poke:yak",
+			"population_control": "animal"
+		},
+		"conditions": [
+			{
+				"minecraft:spawns_on_surface": {},
+				"minecraft:biome_filter": {
+					"any_of": [
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "taiga"
+						},
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "meadow"
+						},
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "flower_forest"
+						},
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "savanna"
+						}
+					]
+				},
+				"minecraft:weight": {"default": 5},
+				"minecraft:herd":{"min_size": 1,"max_size": 3}
+			}
+		]
+	}
+}

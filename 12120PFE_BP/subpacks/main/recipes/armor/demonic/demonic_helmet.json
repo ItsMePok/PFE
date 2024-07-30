@@ -1,0 +1,20 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {"identifier": "poke:demonic_helmet"},
+		"tags": ["crafting_table"],
+		"pattern": [
+			"B*B",
+			"BUB",
+			"B#B"
+		],
+		"unlock": [{"item": "poke:hellish_helmet"},{"item":"poke:demonic_ingot"}],
+		"key": {
+			"B": {"item": "poke:demonic_block"},
+			"#": {"item": "poke:hellish_helmet"},
+			"U": {"item": "poke:diamond_upgrade_core"},
+			"*": {"item": "poke:knightling_helmet"}
+		},
+		"result": {"item": "poke:demonic_helmet"}
+	}
+}

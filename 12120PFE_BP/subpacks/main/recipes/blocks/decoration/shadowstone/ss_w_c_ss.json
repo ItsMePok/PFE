@@ -1,0 +1,17 @@
+{
+	"format_version":"1.20.10",
+	"minecraft:recipe_shaped":{
+		"description":{"identifier":"poke:ss_w_c_ss"},
+		"tags":["crafting_table"],
+		"unlock":[
+			{"item":"poke:cobbled_shadowstone"},
+			{"item":"poke:shadowstone"},
+			{"item":"poke:polished_shadowstone"}
+		],
+		"key":{
+			"C":{"item":"poke:shadowstone"}
+		},
+		"pattern":["CCC","CCC"],
+		"result":{"item":"poke:shadowstone_wall","count":6}
+	}
+}

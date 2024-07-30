@@ -1,0 +1,29 @@
+{
+  "format_version": "1.10",
+  "render_controllers": {
+    "controller.render.poke.item.16": {
+      "arrays": {
+        "textures": {
+          "array.item_frames": [
+         //frame 1 do not change if it is not available on the model
+            "texture.item_frame_1",
+            "texture.item_frame_2",
+            "texture.item_frame_3",
+            "texture.item_frame_4",
+            "texture.item_frame_5",
+            "texture.item_frame_6",
+            "texture.item_frame_7",
+            "texture.item_frame_8"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "variable.is_enchanted ? material.enchanted : material.default"
+        }
+      ],
+      "textures": [ "temp.life_time = query.life_time * 2.0; return array.item_frames[temp.life_time];", "texture.enchanted" ]
+    }
+  }
+}

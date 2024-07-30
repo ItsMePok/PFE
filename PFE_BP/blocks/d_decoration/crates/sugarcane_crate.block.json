@@ -27,7 +27,9 @@
 					"render_method": "opaque"
 				}
 			},
-			"tag:pfe": {},
+			"tag:pfe":{},
+			"tag:wood": {},
+			"tag:minecraft:wood": {},
 			"minecraft:map_color": "#5fb445"
 		}
 	}

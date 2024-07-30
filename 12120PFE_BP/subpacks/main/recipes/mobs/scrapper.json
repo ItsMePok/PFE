@@ -1,0 +1,38 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:scrapper"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"KON",
+			"EXE",
+			"ROC"
+		],
+		"unlock": [
+			{"item":"egg"},
+			{"item":"poke:cobalt_ingot"},
+			{"item":"poke:onyx_ingot"},
+			{"item":"poke:charred_poppy"},
+			{"item":"poke:rotten_chicken"},
+			{"item":"poke:knightling_helmet"},
+			{"item":"poke:necromancer_staff"}
+		],
+		"key": {
+			"X": {"item": "egg"},
+			"E": {"item": "poke:cobalt_ingot"},
+			"O":{"item":"poke:onyx_ingot"},
+			"C":{"item":"poke:charred_poppy"},
+			"R":{"item":"poke:rotten_chicken"},
+			"K":{"item":"poke:knightling_helmet"},
+			"N":{"item":"poke:necromancer_staff"}
+			
+		},
+		"result": {
+			"item": "poke:spawn_scrapper"
+		}
+	}
+}

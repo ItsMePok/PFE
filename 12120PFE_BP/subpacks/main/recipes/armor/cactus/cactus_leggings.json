@@ -1,0 +1,32 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:cactus_leggings"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"#B#",
+			"B B",
+			"# #"
+		],
+		"key": {
+			"#": {
+				"item": "cactus"
+			},
+			"B": {
+				"item": "cactus"
+			}
+		},
+		"unlock": [
+			{
+				"item": "cactus"
+			}
+		],
+		"result": {
+			"item": "poke:cactus_leggings"
+		}
+	}
+}

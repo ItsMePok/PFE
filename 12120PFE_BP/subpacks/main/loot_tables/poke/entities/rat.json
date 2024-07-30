@@ -1,0 +1,19 @@
+{
+    "pools": [
+        {
+            "rolls":1,
+            "entries": [
+                {
+                    "type": "empty",
+                    "weight": 3
+                },
+                {
+                    "type": "item",
+                    "name": "poke:cheese",
+                    "weight": 1,
+                    "functions": [{"function": "looting_enchant","count": {"max": 1,"min": 0}}]
+                }
+            ]
+        }
+    ]
+}

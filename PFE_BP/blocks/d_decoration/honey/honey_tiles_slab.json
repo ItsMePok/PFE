@@ -67,7 +67,8 @@
 			"minecraft:destructible_by_explosion": {"explosion_resistance": 20},
 			"minecraft:map_color": "#d87800",
 			
-			"tag:pfe": {}
+			"tag:pfe": {},
+			"tag:stone_pick_diggable":{}
 		}
 	}
 }

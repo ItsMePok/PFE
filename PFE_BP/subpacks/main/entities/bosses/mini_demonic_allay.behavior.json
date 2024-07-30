@@ -89,9 +89,6 @@
 				"success_rate": 0.30,
 				"priority": 4
 			},
-			"minecraft:on_death": {
-				"event": "death_sound"
-			},
 			"minecraft:behavior.nearest_attackable_target": {
 				"priority": 3,
 				"entity_types": [
@@ -181,13 +178,6 @@
 			}
 		},
 		"events": {
-			"death_sound": {
-				"queue_command": {
-					"command": [
-						"playsound poke.boss.victory @a[r=40] ~~~"
-					]
-				}
-			},
 			"poke:despawn":{
 				"add": {
 					"component_groups": ["despawn"]

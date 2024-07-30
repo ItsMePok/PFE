@@ -68,7 +68,10 @@
 			"minecraft:destructible_by_mining": {"seconds_to_destroy": 7},
 			"minecraft:destructible_by_explosion": {"explosion_resistance": 6},
 			"minecraft:map_color": "#2c0146",
-			"tag:pfe": {}
+			"tag:pfe": {},
+			"tag:metal": {},
+			"tag:minecraft:metal": {},
+			"tag:stone_pick_diggable":{}
 		}
 	}
 }

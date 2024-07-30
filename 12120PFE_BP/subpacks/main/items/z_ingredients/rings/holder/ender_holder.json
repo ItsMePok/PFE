@@ -1,0 +1,14 @@
+{
+	"format_version": "1.21.10",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:ender_holder",
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"components": {"minecraft:hover_text_color":"green",
+			"minecraft:icon":"poke_ender_holder"
+		}
+	}
+}

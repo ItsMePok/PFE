@@ -1,0 +1,51 @@
+{
+	"header": {
+		"name": "§ev1.2.1.5 §uPFE §cBP",
+		"description": "Minecraft: §t1.21.20+ §6By:§u ItsMePok §f& §dO2God §7||§e Wiki: https://pfewiki.gitbook.io/home",
+		"min_engine_version": [1, 21, 20],
+		"uuid": "da36ad09-2d11-40f2-8f03-4d410baf2e72",
+		"version": [1, 0, 0]
+	},
+	"modules": [
+		{
+			"description": "PFE",
+			"type": "data",
+			"uuid": "9a11ffca-50eb-41c3-9b95-76d9ba6734d6",
+			"version": [1, 0, 0]
+		},
+		{
+			"uuid": "0932aed9-1cfd-42e7-91f5-afe0525a2914",
+			"version": [1, 0, 0],
+			"type": "script",
+			"language": "javascript",
+			"entry": "scripts/PFEMain.js"
+		}
+	],
+	"dependencies": [
+		{
+			"module_name": "@minecraft/server",
+			"version": "1.13.0"
+		}
+	],
+	"subpacks": [
+		{
+			"folder_name": "zdeco",
+			"name": "Blocks Only",
+			"memory_tier": 0
+		},
+		{
+			"folder_name": "main",
+			"name": "Normal",
+			"memory_tier": 0
+		}
+	],
+	"format_version": 2,
+	"metadata": {
+		"authors": ["ItsMePok"],
+		"generated_with": {
+			"blockbench_entity_wizard": ["1.3.1", "1.3.2", "1.4.0", "1.5.1"],
+			"blockbench_block_wizard": ["1.2.1"],
+			"blockbench_item_wizard": ["1.0.1", "1.0.2", "1.0.4"]
+		}
+	}
+}

@@ -26,6 +26,9 @@
       ],
       "minecraft:tick":{"interval_range":[100,100]},
       "tag:pfe": {},
+			"tag:metal": {},
+			"tag:minecraft:metal": {},
+			"tag:stone_pick_diggable":{},
       "minecraft:map_color": "#8dd4d1"
     }
   }

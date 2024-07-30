@@ -1,0 +1,21 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_furnace": {
+		"description": {
+			"identifier": "poke:cooked_duck"
+		},
+		"tags": [
+			"smoker",
+			"campfire",
+			"soul_campfire",
+			"furnace"
+		],
+		"unlock": [
+			{
+				"item": "poke:raw_duck"
+			}
+		],
+		"input": "poke:raw_duck",
+		"output": "poke:cooked_duck"
+	}
+}

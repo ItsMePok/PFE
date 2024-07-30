@@ -1,0 +1,27 @@
+{
+	"format_version":"1.20.10",
+	"minecraft:recipe_shaped":{
+		"description":{
+			"identifier":"poke:block_breaker_south"
+		},
+		"tags":["crafting_table"],
+		"pattern":[
+			"CUC",
+			"EBE",
+			"CGC"
+		],
+		"unlock":[
+			{"item":"poke:cobalt_ingot"},
+			{"item":"poke:block_breaker"},
+			{"item":"poke:electric_component"}
+		],
+		"key":{
+			"C":{"item":"poke:cobalt_ingot"},
+			"E":{"item":"poke:electric_component"},
+			"U":{"item":"poke:upgrade_core"},
+			"B":{"item":"poke:block_breaker"},
+			"G":{"item":"poke:gps_module"}
+		},
+		"result":[{"item":"poke:block_breaker_south"}]//Canbere-calibratedbyinteractingwithanyfaceoftheblock
+	}
+}

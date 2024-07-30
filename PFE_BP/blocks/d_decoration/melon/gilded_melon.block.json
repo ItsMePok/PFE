@@ -22,6 +22,10 @@
 				"explosion_resistance": 3
 			},
 			"tag:pfe": {},
+			"tag:wood": {},
+			"tag:minecraft:wood": {},
+			"tag:pumpkin": {},
+			"tag:minecraft:pumpkin": {},
 			"minecraft:map_color": "#df982e"
 		}
 	}

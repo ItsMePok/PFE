@@ -1,0 +1,24 @@
+{
+	"format_version":"1.20.10",
+	"minecraft:recipe_shapeless":{
+		"description":{"identifier":"poke:holy_arrow"},
+		"tags":["crafting_table"],
+		"unlock":[
+			{"item":"arrow"},
+			{"item":"poke:holy_nugget"},
+			{"item":"poke:holy_ingot"}
+		],
+		"ingredients":[
+			{
+				"item":"minecraft:arrow",
+				"data":0,
+				"count":8
+			},
+			{"item":"poke:holy_nugget"}
+		],
+		"result":{
+			"item":"poke:holy_arrow",
+			"count":8
+		}
+	}
+}

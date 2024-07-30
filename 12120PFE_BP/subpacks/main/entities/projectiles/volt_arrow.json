@@ -1,0 +1,80 @@
+{
+	"format_version": "1.21.10",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "poke:volt_arrow",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"runtime_identifier": "arrow"
+		},
+		"component_groups":{
+			"poke:despawn":{
+				"minecraft:instant_despawn":{}
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 0.25,
+				"height": 0.25
+			},
+			"minecraft:projectile": {
+				"gravity": 0.05,
+				"crit_particle_on_hurt": true,
+				"hit_sound": "bow.hit",
+				"inertia": 0.99,
+				"shoot_sound": "random.bow",
+				"power": 5,
+				"is_dangerous": true,
+				"on_hit": {
+					"stick_in_ground": {
+						"shake_time": 0.5
+					},
+					"impact_damage": {
+						"damage": 7,
+						"knockback": true,
+						"max_critical_damage": 16,
+						"min_critical_damage": 7,
+						"power_multiplier": 1
+					},
+					"definition_event":{"affect_target": true,"event_trigger":{"event": "poke:death"}}
+				},
+				"uncertainty_multiplier": 1.1,
+				"uncertainty_base": 1,
+				"anchor": 1,
+				"stop_on_hurt": true,
+				"particle": "iconcrack"
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:tick_world": {
+				"distance_to_players": 128,
+				"never_despawn": true,
+				"radius": 2
+			},
+			"minecraft:timer": {
+				"time": 30,
+				"looping": true,
+				"time_down_event": {
+					"event": "poke:death",
+					"target": "self"
+				}
+			}
+		},
+		"events": {
+			"poke:death":{
+				"queue_command": {
+					"command":["summon lightning_bolt ~~~"]
+				},
+				"add": {
+					"component_groups": [
+						"poke:despawn"
+					]
+				}
+			}
+		}
+	}
+}

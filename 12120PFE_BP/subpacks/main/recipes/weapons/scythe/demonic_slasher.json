@@ -1,0 +1,39 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:demonic_slasher"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"ZZX",
+			" # ",
+			"YU "
+		],
+        "unlock": [
+			{
+				"item": "poke:hellish_scythe"
+			}
+		],
+		"key": {
+			"Y": {
+				"item": "poke:hellish_blade"
+			},
+			"X": {
+				"item": "poke:hellish_scythe"
+			},
+			"Z": {
+				"item": "poke:demonic_ingot"
+			},
+			"#": {
+				"item": "poke:demonic_stick"
+			},
+			"U":{"item":"poke:diamond_upgrade_core"}
+		},
+		"result": {
+			"item": "poke:demonic_slasher"
+		}
+	}
+}

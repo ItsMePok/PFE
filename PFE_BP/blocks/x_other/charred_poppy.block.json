@@ -42,6 +42,8 @@
 				]
 			}]},
 			"tag:pfe": {},
+			"tag:crop": {},
+			"tag:minecraft:crop": {},
 			"minecraft:light_dampening": 0,
 			"minecraft:map_color": "#393730",
 			"minecraft:loot": "loot_tables/poke/blocks/charred_poppy.json"

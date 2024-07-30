@@ -1,0 +1,32 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:amethyst_sword"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" Y ",
+			" Y ",
+			" X "
+		],
+        "unlock": [
+			{
+				"item": "amethyst_shard"
+			}
+		],
+		"key": {
+			"Y": {
+				"item": "amethyst_block"
+			},
+			"X": {
+				"item": "netherite_sword"
+			}
+		},
+		"result": {
+			"item": "poke:amethyst_sword"
+		}
+	}
+}

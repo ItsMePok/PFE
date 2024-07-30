@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:ember_block",
+			"identifier": "poke:ember_block",//Molten Block
 			"menu_category": {
 				"category": "construction"
 			}
@@ -15,7 +15,10 @@
 				"explosion_resistance": 30
 			},
 			"minecraft:map_color": "#e27a04",
-			"tag:pfe": {}
+			"tag:pfe": {},
+			"tag:metal": {},
+			"tag:minecraft:metal": {},
+			"tag:stone_pick_diggable":{}
 		}
 	}
 }

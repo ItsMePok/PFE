@@ -28,6 +28,10 @@
 					"render_method": "alpha_test"
 				}
 			},
+			"tag:pfe": {},
+			"tag:metal": {},
+			"tag:minecraft:metal": {},
+			"tag:stone_pick_diggable":{},
 			"minecraft:map_color": "#697c79",
 			"minecraft:crafting_table": {"crafting_tags": ["poke_dye_unmixer"],"table_name": "Dye Unmixer"}
 		},

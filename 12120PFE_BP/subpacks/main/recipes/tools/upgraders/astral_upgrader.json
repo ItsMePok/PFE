@@ -1,0 +1,42 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "poke:astral_upgrader"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "group": "upgraders",
+        "pattern": [
+            " XX",
+            "WYX",
+            "ZW "
+        ],
+        "unlock": [
+            {
+                "item": "poke:raw_astral"
+            },
+            {
+                "item":"poke:diamond_upgrade_core"
+            }
+        ],
+        "key": {
+            "X": {
+                "item": "poke:astral_block"
+            },
+            "W": {
+                "item": "poke:astral_block"
+            },
+            "Y": {
+                "item": "poke:platinum_upgrade_core"
+            },
+            "Z": {
+                "item": "poke:onyx_shaft"
+            }
+        },
+        "result": {
+            "item": "poke:astral_upgrader"
+        }
+    }
+}
