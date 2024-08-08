@@ -2,7 +2,7 @@
 
 ## Why Are Half the Items Missing Textures in v1.2.0+?
 
-* Make Sure the **Holiday Creator Features** Experimental Toggle is off
+* Make Sure the **Holiday Creator Features** Experimental Toggle is off (This is removed in Minecraft 1.21.20)
 * Try Turing on **Remove Texture Limit** (Main Menu: Settings -> Video -> Remove Texture Limit: ON)
 
 ## Why Are the Automation Blocks not working in v1.2.0+?
@@ -10,15 +10,19 @@
 * Try Powering them with Redstone, The Block itself needs to be [Strong Powered](https://minecraft.wiki/w/Redstone\_mechanics#Strongly\_powered\_vs.\_weakly\_powered). the simplest solution is powering it with a lever
 * Try Breaking and Replacing them
 
+More info on how the different automation blocks work can be found [Here](blocks/automation/) (Blocks -> Automation)
+
 ## How do I get Tokens?
 
-* They can be Dropped from [Bosses](mobs/bosses/)
-* They can be found in PFE [Structures](sturctures/)
+* Can be obtained from:
+  * [Bosses](mobs/bosses/)
+  * &#x20;PFE [Structures](sturctures/)
+  * Quests from the [Quest Trader](mobs/traders/quest-trader.md)
 * More info can be found [Here](items/tokens/) (Items -> Tokens)
 
 ## Where do I find the Traders
 
-* Most of them can be crafted in the crafting table
+* Most of them can be crafted in the <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="Crafting Table" data-size="line">[Crafting Table](https://minecraft.wiki/w/Crafting\_Table)
 * A few can only be acquired from the [Token Trader](mobs/traders/token-trader.md)
 
 ## What do the upgraders do?

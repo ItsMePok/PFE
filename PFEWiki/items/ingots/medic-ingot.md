@@ -15,6 +15,7 @@
 * Medic Block
 * Medic Nugget
 * Medic Scythe
+* Medic Pickaxe
 {% endtab %}
 
 {% tab title="Second Tab" %}

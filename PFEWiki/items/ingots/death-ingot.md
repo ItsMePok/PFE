@@ -14,6 +14,7 @@
 * Death Nugget
 * Death Trapdoor
 * Death Sword
+* Death Pickaxe
 {% endtab %}
 
 {% tab title="Brewing" %}

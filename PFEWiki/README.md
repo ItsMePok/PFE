@@ -1,30 +1,28 @@
 # Home
 
-Welcome to the PFE wiki!
-
-This is still a work in progress most things are missing/unfinished&#x20;
-
-(most things have some general info until I make the individual pages for them)
+#### This Wiki assumes the latest PFE Version: 1.2.2 (Not out yet, sorry if some info is not 100% accurate because of this)
 
 
 
-This Wiki assumes the latest PFE Beta Version
+Welcome to the wiki for PFE!
 
-## Experiments Needed
+The wiki is still a work in progress most things are still unfinished
 
-Must be on:
+* most things do have some general info until I make the individual pages for them
 
-* Beta API
-
-{% hint style="warning" %}
-Holiday Creator Features Must be off (HCF is going away in 1.21.20)&#x20;
-{% endhint %}
+## Experiments Needed: None
 
 ## Official PFE Links
 
 ### Download links:
 
-(These are the only official PFE download links, there is other places that reupload it. I highly recommend that you do not download from those sites as they can contain malicious thing)
+{% hint style="info" %}
+These are the only official PFE download links
+
+I am aware that there are other places that reupload it
+
+I highly recommend avoiding those sites as they can contain malicious things
+{% endhint %}
 
 #### CurseForge:
 
@@ -42,6 +40,10 @@ Holiday Creator Features Must be off (HCF is going away in 1.21.20)&#x20;
 
 {% embed url="https://github.com/ItsMePok/PFE/releases" %}
 
+#### GitHub - (Addon Archive) Old Versions & PFE Split:
+
+{% embed url="https://github.com/ItsMePok/Addon-Archive/tree/main/PFE" %}
+
 ### Other Links
 
 #### Discord Server:
@@ -50,8 +52,16 @@ Holiday Creator Features Must be off (HCF is going away in 1.21.20)&#x20;
 
 _you can also dm me on discord: itsmepok_
 
-YouTube:
+
+
+### Very boring social media things that I don't really use but I thought I should put here anyways because why not lol:
+
+#### YouTube:
 
 {% embed url="https://www.youtube.com/itsmepok" %}
 
-(I don't post things (at least not rn), but I do see most of the PFE showcases/reviews :3)
+(I don't post things (at least not right now), but I do see most of the PFE showcases/reviews :3)
+
+#### Twitter / X&#x20;
+
+[https://twitter.com/ItsMePok](https://twitter.com/ItsMePok)

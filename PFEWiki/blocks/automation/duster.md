@@ -24,7 +24,7 @@
 
 * Converts:
   * <img src="https://minecraft.wiki/images/thumb/Cobblestone.png/150px-Cobblestone.png?45867" alt="" data-size="line">Cobblestone -> <img src="https://minecraft.wiki/images/thumb/Gravel_JE5_BE4.png/150px-Gravel_JE5_BE4.png?bb814" alt="" data-size="line">Gravel
-  * <img src="https://minecraft.wiki/images/Dirt.png?89d72" alt="" data-size="line">Dirt -> <img src="https://minecraft.wiki/images/thumb/Sand_JE5_BE3.png/150px-Sand_JE5_BE3.png?ae2df" alt="" data-size="line">Sandim
+  * <img src="https://minecraft.wiki/images/Dirt.png?89d72" alt="" data-size="line">Dirt -> <img src="https://minecraft.wiki/images/thumb/Sand_JE5_BE3.png/150px-Sand_JE5_BE3.png?ae2df" alt="" data-size="line">Sand
 
 ### Notes:
 

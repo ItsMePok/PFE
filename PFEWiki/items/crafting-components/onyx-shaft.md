@@ -1,8 +1,6 @@
 # Onyx Shaft
 
-<figure><img src="https://github.com/user-attachments/assets/2711462c-b5b7-4923-88d2-523da33d3edd" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="https://github.com/user-attachments/assets/a3414dac-2ab0-4f48-9401-e1724dc29e06" alt=""><figcaption></figcaption></figure>
 
 ## Identifier: **poke:onyx\_shaft** <a href="#identifier" id="identifier"></a>
 
@@ -45,6 +43,10 @@
 * Onyx Upgrader
 * Shade Upgrader
 * Void Upgrader
+* Holy Pickaxe
+* Hellish Pickaxe
+* Godly Pickaxe
+* Demonic Pickaxe
 
 </details>
 
@@ -63,6 +65,11 @@
 |                   ![Onyx Ingot](https://github.com/user-attachments/assets/436247aa-b55d-4e05-aefc-8cfa2fee648a)                  |
 | ![Crying Obsidian](https://minecraft.wiki/images/thumb/Crying\_Obsidian\_JE1\_BE1.png/150px-Crying\_Obsidian\_JE1\_BE1.png?f1f04) |
 |                   ![Onyx Ingot](https://github.com/user-attachments/assets/436247aa-b55d-4e05-aefc-8cfa2fee648a)                  |
+
+Items:
+
+* <img src="https://github.com/user-attachments/assets/436247aa-b55d-4e05-aefc-8cfa2fee648a" alt="Onyx Ingot" data-size="line">Onyx Ingot
+* [<img src="https://minecraft.wiki/images/thumb/Crying_Obsidian_JE1_BE1.png/150px-Crying_Obsidian_JE1_BE1.png?f1f04" alt="Crying Obsidian" data-size="line">Crying Obsidian](https://minecraft.wiki/w/Crying\_Obsidian)
 {% endtab %}
 
 {% tab title="Structures" %}
