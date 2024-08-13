@@ -4,7 +4,7 @@
 		"description":{
 			"identifier":"poke:snowman",
 			"materials":{
-				"default":"snow_golem"
+				"default":"entity_alphatest"
 			},
 			"textures":{
 				"default":"textures/entity/bosses/poke_snowman"

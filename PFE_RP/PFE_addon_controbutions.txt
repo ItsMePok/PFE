@@ -1,5 +1,7 @@
 Anyone is allowed to view/learn from the code of PFE
-if you have any questions about addons you can ask on discord (username: itsmepok)
+if you have any questions about addons you can ask me on discord (username: itsmepok) im basically always open to helping
+things marked with "-c" at then end of the file name have a bunch of comments in them to help understand what some things do
+(Im trying to make the code more readable so sorry if there is still some areas that are not very organized(most things should be good though))
 
 Anything listed below has been used at some point to develop PFE
 ============================
@@ -19,7 +21,7 @@ Cobalt Robe
 -----
 Textures:
 Scythe Textures
-Sword Textures
+Claymore Textures (Claymores are not in yet but will be soon-ish)
 -----
 Cosmetics:
 Maxwell

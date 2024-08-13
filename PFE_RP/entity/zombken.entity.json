@@ -3,7 +3,7 @@
 	"minecraft:client_entity":{
 		"description":{
 			"identifier":"poke:zombken",
-			"min_engine_version":"1.12.0",
+			"min_engine_version":"1.21.0",
 			"materials":{
 				"default":"chicken",
 				"legs":"chicken_legs"
@@ -20,15 +20,18 @@
 				"look_at_target":"animation.common.look_at_target",
 				"baby_transform":"animation.poke.zombken.baby_transform",
 				"melee_attack":"animation.poke.zombken.attack",
+				"hurt":"animation.poke.zombken.hurt",
 				"controller":"controller.animation.poke.zombken"
 			},
 			"scripts":{
-				"animate":["controller","general","look_at_target",{"baby_transform":"query.is_baby"}
+				"animate":["controller","look_at_target",{"baby_transform":"query.is_baby"}
 				],
 				"pre_animation":[
 					"variable.wing_flap=((math.sin(query.wing_flap_position*60.3)+1)*query.wing_flap_speed*20);"
 				]
-				
+			},
+			"particle_effects": {
+				"feather":"poke:zombken_feather"
 			},
 			"render_controllers":[
 				"controller.render.poke.zombken"

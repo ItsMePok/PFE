@@ -1,9 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:recipe_shapeless": {
-        "tags":["stonecutter"],
-        "description": {"identifier": "poke:galaxy_trapdoor_sc"},
-        "ingredients":[{"item":"poke:galaxy_block"}],
-        "result":{"item": "poke:galaxy_trapdoor","count": 6}
-    }
-}

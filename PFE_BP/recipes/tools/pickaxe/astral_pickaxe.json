@@ -1,0 +1,18 @@
+{
+	"format_version":"1.20.10",
+	"minecraft:recipe_shaped":{
+		"description":{"identifier":"poke:astral_pickaxe"},
+		"tags":["crafting_table"],
+		"pattern":["CCC"," S "," S "],
+		"unlock":[
+			{"item":"poke:nebula_stick"},
+			{"item":"poke:raw_astral"},
+			{"item":"poke:astral_ingot"}
+		],
+		"key":{
+			"C":{"item":"poke:astral_ingot"},
+			"S":{"item":"poke:nebula_stick"}
+		},
+		"result":{"item":"poke:astral_pickaxe"}
+	}
+}

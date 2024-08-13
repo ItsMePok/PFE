@@ -1,0 +1,18 @@
+{
+	"format_version":"1.20.10",
+	"minecraft:recipe_shaped":{
+		"description":{"identifier":"poke:galaxy_pickaxe"},
+		"tags":["crafting_table"],
+		"pattern":["CCC"," S "," S "],
+		"unlock":[
+			{"item":"poke:godly_stick"},
+			{"item":"poke:raw_galaxy"},
+			{"item":"poke:galaxy_ingot"}
+		],
+		"key":{
+			"C":{"item":"poke:galaxy_ingot"},
+			"S":{"item":"poke:godly_stick"}
+		},
+		"result":{"item":"poke:galaxy_pickaxe"}
+	}
+}

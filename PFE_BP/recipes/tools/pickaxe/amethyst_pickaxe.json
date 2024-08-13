@@ -1,0 +1,18 @@
+{
+	"format_version":"1.20.10",
+	"minecraft:recipe_shaped":{
+		"description":{"identifier":"poke:amethyst_pickaxe"},
+		"tags":["crafting_table"],
+		"pattern":["CCC"," S "," S "],
+		"unlock":[
+			{"item":"stick"},
+			{"item":"amethyst_block"},
+			{"item":"amethyst_shard"}
+		],
+		"key":{
+			"C":{"item":"amethyst_block"},
+			"S":{"item":"stick"}
+		},
+		"result":{"item":"poke:amethyst_pickaxe"}
+	}
+}

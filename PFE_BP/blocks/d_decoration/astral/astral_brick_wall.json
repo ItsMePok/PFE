@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.80",
+	"format_version": "1.21.10",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:astral_brick_wall",
@@ -14,31 +14,67 @@
 				"pfe:wall_w":[false,true]
 			}
 		},
+		"permutations": [
+			{
+				"condition": "q.block_state('pfe:wall_n') && q.block_state('pfe:wall_s') && q.block_state('pfe:wall_e') && q.block_state('pfe:wall_w')",
+				"components": {
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							16,
+							16
+						]
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							16,
+							16
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('pfe:wall_n') == false || q.block_state('pfe:wall_s') == false || q.block_state('pfe:wall_e') == false || q.block_state('pfe:wall_w') == false",
+				"components": {
+					"minecraft:selection_box": {
+						"origin": [
+							-4,
+							0,
+							-4
+						],
+						"size": [
+							8,
+							16,
+							8
+						]
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-4,
+							0,
+							-4
+						],
+						"size": [
+							8,
+							16,
+							8
+						]
+					}
+				}
+			}
+		],
 		"components": {
-			"minecraft:selection_box": {
-				"origin": [
-					-4,
-					0,
-					-4
-				],
-				"size": [
-					8,
-					16,
-					8
-				]
-			},
-			"minecraft:collision_box": {
-				"origin": [
-					-4,
-					0,
-					-4
-				],
-				"size": [
-					8,
-					16,
-					8
-				]
-			},
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 1
 			},
@@ -47,6 +83,7 @@
 			},
 			"minecraft:geometry":{
 				"identifier": "geometry.poke.wall",
+				"culling": "poke:geometry.poke.wall",
 				"bone_visibility":{
 					"north": "q.block_state('pfe:wall_n')",
 					"south": "q.block_state('pfe:wall_s')",
@@ -57,15 +94,16 @@
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "poke_astral_bricks",
-					"render_method": "alpha_test",
+					"render_method": "opaque",
 					"ambient_occlusion": false,
-					"face_dimming": true
+					"face_dimming": false
 				}
 			},
 			"tag:pfe": {},
 			"tag:stone": {},
 			"tag:minecraft:stone": {},
 			"tag:stone_pick_diggable":{},
+			"tag:minecraft:is_pickaxe_item_destructible":{},
 			"tag:pfe_wall":{},
 			"minecraft:light_dampening": 0,
 			"minecraft:map_color": "#1b0420",

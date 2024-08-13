@@ -1,9 +1,0 @@
-{
-	"format_version": "1.16.100",
-	"minecraft:recipe_furnace": {
-		"description": {"identifier": "poke:cracked_cobalt_bricks"},
-		"tags": ["furnace","blast_furnace"],
-		"input": "poke:cobalt_bricks",
-		"output": "poke:cracked_cobalt_bricks"
-	}
-}

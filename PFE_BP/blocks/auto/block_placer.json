@@ -1,5 +1,5 @@
 {//Not ready yet (WIP)
-	"format_version": "1.20.80",
+	"format_version": "1.21.10",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:block_placer",
@@ -22,6 +22,7 @@
 			"tag:metal": {},
 			"tag:minecraft:metal": {},
 			"tag:stone_pick_diggable":{},
+			"tag:minecraft:is_pickaxe_item_destructible":{},
 			"minecraft:map_color": "#7a5a0f",
 			"minecraft:tick": {"interval_range":[10,10]},
 			"minecraft:custom_components":[

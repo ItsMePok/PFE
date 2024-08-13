@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.80",
+	"format_version": "1.21.10",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:honey_bricks_slab",
@@ -68,7 +68,8 @@
 			"minecraft:map_color": "#d87800",
 			
 			"tag:pfe": {},
-			"tag:stone_pick_diggable":{}
+			"tag:stone_pick_diggable":{},
+			"tag:minecraft:is_pickaxe_item_destructible":{}
 		}
 	}
 }

@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.80",
+  "format_version": "1.21.10",
   "minecraft:block": {
     "description": {
       "identifier": "poke:end_void_ore",
@@ -20,6 +20,7 @@
 			"tag:metal": {},
 			"tag:minecraft:metal": {},
 			"tag:stone_pick_diggable":{},
+			"tag:minecraft:is_pickaxe_item_destructible":{},
       "minecraft:loot": "loot_tables/poke/blocks/void_ore.json",
 			"minecraft:custom_components":[
 				"poke:fortune"

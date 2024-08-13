@@ -190,6 +190,7 @@
 "poke:cut_radium":{"sound":"copper","textures":"poke_cut_radium"},
 "poke:cut_shade":{"sound":"copper","textures":"poke_cut_shade"},
 //Walls
+"poke:honey_tile_wall":{"textures":"poke_honey_tiles","sound":"coral"},
 "poke:honey_brick_wall":{"textures":"poke_honey_bricks","sound":"coral"},
 "poke:cobalt_brick_wall":{"sound":"deepslate_bricks","textures":"poke_cobalt_bricks"},
 "poke:astral_brick_wall":{"sound":"deepslate_bricks","textures":"poke_astral_bricks"},

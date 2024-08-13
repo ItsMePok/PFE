@@ -1,0 +1,233 @@
+{
+	"format_version": "1.21.10",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "poke:listener",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"timer":{
+				"minecraft:timer": {
+					"time": 1800,
+					"looping": true,
+					"time_down_event": {
+						"event": "poke:despawn",
+						"target": "self"
+					}
+				}
+			},
+			"despawn":{
+				"minecraft:instant_despawn": {
+					"remove_child_entities": false
+				}
+			}
+		},
+		"components": {
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1
+			},
+			"minecraft:on_death": {
+				"event": "death_sound"
+			},
+			"minecraft:on_hurt": {
+				"event": "hurt_sound"
+			},
+			"minecraft:on_hurt_by_player": {
+				"event": "hurt_sound"
+			},
+			"minecraft:movement_sound_distance_offset": {
+				"value": 0.55
+			},
+			"minecraft:experience_reward": {
+				"on_bred": "math.random(100,700)",
+				"on_death": 7500
+			},
+			"minecraft:attack": {
+				"damage": 120
+			},
+			"minecraft:is_hidden_when_invisible": {},
+			"minecraft:type_family": {
+				"family": [
+					"warden",
+					"monster",
+					"mob",
+					"pfe:boss"
+				]
+			},
+			"minecraft:breathable": {
+				"total_supply": 999,
+				"suffocate_time": 999,
+				"breathes_lava": true,
+				"breathes_air": true,
+				"breathes_solids": true,
+				"breathes_water": true,
+				"generates_bubbles": true
+			},
+			"minecraft:navigation.walk": {
+				"can_path_over_water": true,
+				"can_path_over_lava": true,
+				"avoid_damage_blocks": true,
+				"can_float": true
+			},
+			"minecraft:preferred_path": {
+				"max_fall_blocks": 20
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:jump.static": {"jump_power": 0.82},
+			"minecraft:can_climb": {},
+			"minecraft:collision_box": {
+				"width": 2.9,
+				"height": 2.5
+			},
+			"minecraft:health": {
+				"value": 10000,
+				"max": 10000
+			},
+			"minecraft:scale": {
+				"value": 1.5
+			},
+			"minecraft:boss": {
+				"hud_range": 55,
+				"should_darken_sky": true,
+				"name": "entity.poke:listener.name"
+			},
+			"minecraft:movement": {
+				"value": 0.30
+			},
+			"minecraft:attack_damage": {
+				"value": 150
+			},
+			"minecraft:angry": {
+				"broadcast_anger_on_being_attacked": true,
+				"duration": 999
+			},
+			"minecraft:knockback_resistance": {
+				"value": 1
+			},
+			"minecraft:behavior.float": {
+				"priority": 0
+			},
+			"minecraft:behavior.nearest_prioritized_attackable_target": {
+				"priority": 2,
+				"attack_interval": 0,
+				"reselect_targets": true,
+				"scan_interval": 15,
+				"within_radius": 100.0,
+				"target_search_height": -1.0,
+				"entity_types": [
+					{
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"value": "player"
+						},
+						"max_dist": 100
+					}
+				]
+			},
+			"minecraft:behavior.sonic_boom": {
+				"priority": 0,
+				"duration": 2,
+				"speed_multiplier": 1,
+				"attack_damage": 40,
+				"attack_range_horizontal": 55,
+				"attack_range_vertical": 55,
+				"attack_cooldown": 2,
+				"knockback_vertical_strength": 0.5,
+				"knockback_horizontal_strength": 2.5,
+				"knockback_height_cap": 0.5,
+				"duration_until_attack_sound": 1.7,
+				"charge_sound": "sonic_charge",
+				"attack_sound": "sonic_boom"
+			},
+			"minecraft:behavior.melee_attack": {
+				"priority": 4,
+				"speed_multiplier": 1,
+				"melee_fov": 360
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/poke/entities/listener.json"
+			},
+			"minecraft:behavior.investigate_suspicious_location": {
+				"priority": 5,
+				"speed_multiplier": 0.7
+			},
+			"minecraft:behavior.random_stroll": {
+				"priority": 9,
+				"speed_multiplier": 0.5
+			},
+			"minecraft:behavior.random_look_around": {
+				"priority": 11
+			},
+			"minecraft:physics": {},
+			"minecraft:follow_range":{"value": 60},
+			"minecraft:fire_immune": {},
+			"minecraft:nameable": {
+				"name_actions":{
+					"name_filter": "despawn",
+					"on_named": {
+						"event": "poke:despawn",
+						"target": "self"
+					}
+				},
+				"default_trigger": {
+					"target": "self",
+					"event": "poke:renamed"
+				}
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"timer"
+					]
+				},
+				"queue_command": {
+					"command": [
+						"weather clear",
+						"execute as @a[r=55] run music stop 3",
+						"execute as @a[r=50] run music play record.listen 1 8"
+					]
+				}
+			},
+			"death_sound": {
+				"queue_command": {
+					"command": [
+						"execute as @a run music play music.game 1 5"
+					]
+				}
+			},
+			"hurt_sound": {
+				"randomize": [
+					{
+						"weight": 14
+					},
+					{
+						"queue_command": {
+							"command": [
+								"damage @e[r=20,rm=0.1,type=!item] 15 entity_attack entity @s"
+							]
+						},
+						"weight": 1
+					}
+				]
+			},
+			"poke:renamed":{
+				"remove": {
+					"component_groups": [
+						"timer"
+					]
+				}
+			},
+			"poke:despawn":{
+				"add": {
+					"component_groups": ["despawn"]
+				}
+			}
+			
+		}
+	}
+}

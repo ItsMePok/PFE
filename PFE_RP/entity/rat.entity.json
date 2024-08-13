@@ -4,7 +4,7 @@
 		"description":{
 			"identifier":"poke:rat",
 			"materials":{
-				"default":"entity"
+				"default":"entity_alphatest"
 			},
 			"textures":{
 				"black":"textures/entity/passive/rat/poke_black",

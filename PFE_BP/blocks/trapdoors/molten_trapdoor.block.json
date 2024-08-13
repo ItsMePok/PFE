@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.80",
+	"format_version": "1.21.10",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:molten_trapdoor",
@@ -42,7 +42,8 @@
 			"tag:metal": {},
 			"tag:minecraft:metal": {},
 			"tag:stone_pick_diggable":{},
-			"tag:minecraft:one_way_collidable":{},
+			"tag:minecraft:is_pickaxe_item_destructible":{},
+			"tag:one_way_collidable":{},
 			"minecraft:custom_components":[
 				"poke:trapdoor_event"
 			]

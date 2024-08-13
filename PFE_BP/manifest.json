@@ -1,16 +1,16 @@
 {
 	"header": {
-		"name": "§ev1.2.1.5 §uPFE §cBP",
+		"name": "§bv1.2.2 §uPFE §cBP",
 		"description": "§6By:§u ItsMePok §f& §dO2God §7||§e Wiki: https://pfewiki.gitbook.io/home",
-		"min_engine_version": [1, 21, 0],
-		"uuid": "7a990c4d-937f-408d-8f3f-8e4f5c546f78",
+		"min_engine_version": [1, 21, 20],
+		"uuid": "263cc40a-bf0f-4d0d-a68a-308ee6ca482f",
 		"version": [1, 0, 0]
 	},
 	"modules": [
 		{
 			"description": "PFE",
 			"type": "data",
-			"uuid": "5247ce36-efd4-4e9e-9550-c60bcf8944c6",
+			"uuid": "91bbef63-3f72-4ed2-856d-24358c09dae5",
 			"version": [1, 0, 0]
 		},
 		{
@@ -24,19 +24,7 @@
 	"dependencies": [
 		{
 			"module_name": "@minecraft/server",
-			"version": "1.12.0-beta"
-		}
-	],
-	"subpacks": [
-		{
-			"folder_name": "zdeco",
-			"name": "Blocks Only",
-			"memory_tier": 0
-		},
-		{
-			"folder_name": "main",
-			"name": "Normal",
-			"memory_tier": 0
+			"version": "1.13.0"
 		}
 	],
 	"format_version": 2,

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.8.0",
+	"format_version": "1.10.0",
 	"animations": {
 		"animation.poke.zombken.baby_transform": {
 			"loop": true,
@@ -112,6 +112,17 @@
 						"0.0833": [-0.1, -0.3, -0.2],
 						"0.1667": [0, 0, 0]
 					}
+				}
+			}
+		},
+		"animation.poke.zombken.hurt": {
+			"loop": true,
+			"animation_length": 1,
+			"particle_effects": {
+				"0.01": {
+					"effect": "feather",
+					"locator": "particles",
+					"pre_effect_script": "q.log(q.hurt_time)"
 				}
 			}
 		}

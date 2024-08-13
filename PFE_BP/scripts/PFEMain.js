@@ -39,10 +39,8 @@ function damage_item(item) {
     durabilityComponent.damage += Number(Math.round(Math.random() * 100) <= durabilityComponent.getDamageChance(unbreaking))
     return item
 }
-/*
-Makes unbreaking work but breaks the Hold to continue using :/
-
-function damage_item(item) {
+//Makes unbreaking work but breaks the Hold to continue using :/
+function damage_item_ub(item) {
     // check if the item does not have a durability component to avoid deleting itself
     if (!item.hasComponent("durability")) return item;
     // Get durability
@@ -67,9 +65,8 @@ function damage_item(item) {
     }
     return item
 }
-*/
 // Add your item IDs into this array
-const my_items = ["poke:medic_haxel","poke:cobalt_crossbow","poke:astral_crossbow","poke:godly_crossbow","poke:demonic_haxel","poke:holy_battleaxe","poke:godly_battleaxe","poke:galaxy_battleaxe","poke:astral_battleaxe","poke:amethyst_battleaxe","poke:netherite_battleaxe","poke:diamond_battleaxe","poke:gold_battleaxe","poke:void_battleaxe","poke:death_battleaxe","poke:demonic_battleaxe","poke:hellish_battleaxe","poke:emerald_battleaxe","poke:iron_battleaxe","poke:onyx_battleaxe","poke:shade_battleaxe","poke:cobalt_battleaxe","poke:stone_battleaxe","poke:wood_battleaxe","poke:radium_battleaxe","poke:hellish_scythe","poke:ember_scythe","poke:emerald_scythe","poke:nebula_battleaxe","poke:diamond_scythe","poke:shade_scythe","poke:nebula_scythe","poke:godly_scythe","poke:galactic_scythe","poke:radium_scythe","poke:amethyst_scythe","poke:onyx_scythe","poke:gold_scythe","poke:cobalt_scythe","poke:netherite_scythe","poke:void_scythe","poke:holy_scythe","poke:iron_scythe","poke:demonic_slasher","poke:death_scythe","poke:godly_haxel","poke:radium_haxel","poke:cobalt_haxel","poke:shade_haxel","poke:wooden_haxel","poke:stone_haxel","poke:iron_haxel","poke:gold_haxel","poke:emerald_haxel","poke:diamond_haxel","poke:netherite_haxel","poke:hellish_haxel","poke:holy_haxel","poke:amethyst_haxel","poke:haxel","poke:swift_pickaxe","poke:snow_shovel","poke:nebula_hoe","poke:cobalt_sword","poke:astral_sword","poke:onyx_sword","poke:demonic_sword","poke:void_sword","poke:pocket_knife","poke:amethyst_sword","poke:circuit_sword","poke:hellish_blade","poke:nebula_sword","poke:galaxy_sword","poke:godly_sword","poke:holy_sword","poke:shade_sword","poke:radium_sword",]
+const my_items = ["poke:cobalt_pickaxe","poke:onyx_pickaxe","poke:holy_pickaxe","poke:hellish_pickaxe","poke:godly_pickaxe","poke:demonic_pickaxe","poke:medic_haxel","poke:cobalt_crossbow","poke:astral_crossbow","poke:godly_crossbow","poke:demonic_haxel","poke:holy_battleaxe","poke:godly_battleaxe","poke:galaxy_battleaxe","poke:astral_battleaxe","poke:amethyst_battleaxe","poke:netherite_battleaxe","poke:diamond_battleaxe","poke:gold_battleaxe","poke:void_battleaxe","poke:death_battleaxe","poke:demonic_battleaxe","poke:hellish_battleaxe","poke:emerald_battleaxe","poke:iron_battleaxe","poke:onyx_battleaxe","poke:shade_battleaxe","poke:cobalt_battleaxe","poke:stone_battleaxe","poke:wood_battleaxe","poke:radium_battleaxe","poke:hellish_scythe","poke:ember_scythe","poke:emerald_scythe","poke:nebula_battleaxe","poke:diamond_scythe","poke:shade_scythe","poke:nebula_scythe","poke:godly_scythe","poke:galactic_scythe","poke:radium_scythe","poke:amethyst_scythe","poke:onyx_scythe","poke:gold_scythe","poke:cobalt_scythe","poke:netherite_scythe","poke:void_scythe","poke:holy_scythe","poke:iron_scythe","poke:demonic_slasher","poke:death_scythe","poke:godly_haxel","poke:radium_haxel","poke:cobalt_haxel","poke:shade_haxel","poke:wooden_haxel","poke:stone_haxel","poke:iron_haxel","poke:gold_haxel","poke:emerald_haxel","poke:diamond_haxel","poke:netherite_haxel","poke:hellish_haxel","poke:holy_haxel","poke:amethyst_haxel","poke:haxel","poke:swift_pickaxe","poke:snow_shovel","poke:nebula_hoe","poke:cobalt_sword","poke:astral_sword","poke:onyx_sword","poke:demonic_sword","poke:void_sword","poke:pocket_knife","poke:amethyst_sword","poke:circuit_sword","poke:hellish_blade","poke:nebula_sword","poke:galaxy_sword","poke:godly_sword","poke:holy_sword","poke:shade_sword","poke:radium_sword",]
 world.afterEvents.playerBreakBlock.subscribe(event => {
     // If there's no item, skip
     if (!event.itemStackAfterBreak) return
@@ -79,7 +76,7 @@ world.afterEvents.playerBreakBlock.subscribe(event => {
     if (world.getPlayers({
         gameMode: GameMode.creative
     }).includes(event.player)) return
-    const newItem = damage_item(event.itemStackAfterBreak)
+    const newItem = damage_item_ub(event.itemStackAfterBreak)
     event.player.getComponent(EntityComponentTypes.Equippable).setEquipment(EquipmentSlot.Mainhand, newItem)
     if (!newItem) {
         event.player.playSound("random.break")
@@ -92,6 +89,7 @@ const pfeefood = ["poke:xp_vial","poke:golden_chicken","poke:rotten_chicken","po
 world.afterEvents.itemCompleteUse.subscribe(pfefood => {
     if (!pfeefood.includes(pfefood.itemStack.typeId)) return;
     if (pfefood.itemStack.typeId == "poke:xp_vial") {pfefood.source.runCommandAsync("xp 160 @s");return};
+    if (pfefood.itemStack.typeId == "poke:cobalt_potion") {pfefood.source.addEffect('night_vision', 3600);pfefood.source.addEffect('regeneration', 2400)}
     if (pfefood.itemStack.typeId == "poke:cobalt_soup"){pfefood.source.addEffect('night_vision', 2400,{showParticles: false});return};
     if (pfefood.itemStack.typeId == "poke:root_beer") {pfefood.source.addEffect('speed', 600, {amplifier: 4,});return};
     if (pfefood.itemStack.typeId == "poke:crimson_sporeshroom_stew") {pfefood.source.addEffect('fire_resistance', 1200);return};
@@ -780,7 +778,7 @@ class PFECassette {
         return;
     }
 }
-//Runs the command listed as a tag on the item used & Takes durability (with unbreaking in mind) if applicable
+//Windzooka & Blazooka Functions
 class PFEWindzooka {
     onUse(data){
         const plocationx= data.source.getViewDirection().x;
@@ -815,6 +813,7 @@ class PFEWindzooka {
 Baisc Item Use
 requires item components: use_modifiers || cooldown || 
 if using durability it requires a max of 100 damage chance)
+unbreaking does not work on this due to it breaking hold to continue using
 */
 class PFEOnUse {
     onUse(data){
@@ -1099,79 +1098,79 @@ world.beforeEvents.worldInitialize.subscribe(event => {
     event.itemComponentRegistry.registerCustomComponent(
         "poke:cc_zooka", new PFEWindzooka()
     );
-    event.blockTypeRegistry.registerCustomComponent(
+    event.blockComponentRegistry.registerCustomComponent(
         "poke:trapdoor_event", new PFETrapdoor()
     );
-    event.blockTypeRegistry.registerCustomComponent(
+    event.blockComponentRegistry.registerCustomComponent(
         "poke:fortune", new PFEFortune()
     );
-    event.blockTypeRegistry.registerCustomComponent(
+    event.blockComponentRegistry.registerCustomComponent(
         "poke:slabs", new PFESlabs()
     );
-    event.blockTypeRegistry.registerCustomComponent(
+    event.blockComponentRegistry.registerCustomComponent(
         "poke:cc_bulbs", new PFEBulbs()
     );
-    event.blockTypeRegistry.registerCustomComponent(
+    event.blockComponentRegistry.registerCustomComponent(
         "poke:cc_phantomic_conduit", new PFEPhantomicConduit()
     );
-    event.blockTypeRegistry.registerCustomComponent(
+    event.blockComponentRegistry.registerCustomComponent(
         "poke:cc_da_conduit", new PFEDAConduit()
     );
-    event.blockTypeRegistry.registerCustomComponent(
+    event.blockComponentRegistry.registerCustomComponent(
         "poke:cc_cobble_gen", new PFECobbleGen()
     );
-    event.blockTypeRegistry.registerCustomComponent(
+    event.blockComponentRegistry.registerCustomComponent(
         "poke:cc_cobbler", new PFECobbler()
     );
-    event.blockTypeRegistry.registerCustomComponent(
+    event.blockComponentRegistry.registerCustomComponent(
         "poke:cc_block_breaker", new PFEBlockBreaker()
     );
-    event.blockTypeRegistry.registerCustomComponent(
+    event.blockComponentRegistry.registerCustomComponent(
         "poke:cc_dirter", new PFEDirter()
     );
-    event.blockTypeRegistry.registerCustomComponent(
+    event.blockComponentRegistry.registerCustomComponent(
         "poke:cc_duster", new PFEDuster()
     );
-    event.blockTypeRegistry.registerCustomComponent(
+    event.blockComponentRegistry.registerCustomComponent(
         "poke:cc_magnet_block", new PFEMagnetBlock()
     );
-    event.blockTypeRegistry.registerCustomComponent(
+    event.blockComponentRegistry.registerCustomComponent(
         "poke:cc_calibrate", new PFECalibrate()
     );
-    event.blockTypeRegistry.registerCustomComponent(
+    event.blockComponentRegistry.registerCustomComponent(
         "poke:cc_cblock_breaker", new PFECBlockBreaker()
     );
-    event.blockTypeRegistry.registerCustomComponent(
+    event.blockComponentRegistry.registerCustomComponent(
         "poke:cc_ccobble_gen", new PFECCobbleGen()
     );
-    event.blockTypeRegistry.registerCustomComponent(
+    event.blockComponentRegistry.registerCustomComponent(
         "poke:crops", new PFECrop()
     );
-    event.blockTypeRegistry.registerCustomComponent(
+    event.blockComponentRegistry.registerCustomComponent(
         "poke:cc_barometer", new PFEBarometer()
     );
-    event.blockTypeRegistry.registerCustomComponent(
+    event.blockComponentRegistry.registerCustomComponent(
         "poke:cc_lava_sponge", new PFELavaSponge()
     );
     event.itemComponentRegistry.registerCustomComponent(
         "poke:cc_upgrader", new PFEUpgrader()
     );
-    event.blockTypeRegistry.registerCustomComponent(
+    event.blockComponentRegistry.registerCustomComponent(
         "poke:cc_block_seat", new PFEBlockSeat()
     );
-    event.blockTypeRegistry.registerCustomComponent(
+    event.blockComponentRegistry.registerCustomComponent(
         "poke:cc_slab_loot", new PFESlabLoot()
     );
-    event.blockTypeRegistry.registerCustomComponent(
+    event.blockComponentRegistry.registerCustomComponent(
         "poke:cc_block_placer", new PFEBlockPlacer()
     );
-    event.blockTypeRegistry.registerCustomComponent(
+    event.blockComponentRegistry.registerCustomComponent(
         "poke:cc_block_interact", new PFEBlockInteract()
     )
-    event.blockTypeRegistry.registerCustomComponent(
+    event.blockComponentRegistry.registerCustomComponent(
         "poke:cc_8ball", new PFE8Ball()
     )
-    event.blockTypeRegistry.registerCustomComponent(
+    event.blockComponentRegistry.registerCustomComponent(
         "poke:cc_wall", new PFEWall()
     )
     return;

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.80",
+	"format_version": "1.21.10",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:spell_crafter",
@@ -38,6 +38,7 @@
 			"tag:metal": {},
 			"tag:minecraft:metal": {},
 			"tag:stone_pick_diggable":{},
+			"tag:minecraft:is_pickaxe_item_destructible":{},
 			"minecraft:map_color": "#697c79",
 			"minecraft:crafting_table": {"crafting_tags": ["poke_spell_crafter"],"table_name": "Spell Crafter"}
 		},

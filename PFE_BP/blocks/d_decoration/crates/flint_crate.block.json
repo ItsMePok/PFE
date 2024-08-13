@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.80",
+	"format_version": "1.21.10",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:flint_crate",
@@ -29,6 +29,7 @@
 			},
 			"tag:pfe":{},
 			"tag:wood": {},
+			"tag:minecraft:is_hatchet_item_destructible":{},
 			"tag:minecraft:wood": {},
 			"minecraft:map_color": "#333333"
 		}

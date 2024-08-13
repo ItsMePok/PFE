@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.80",
+	"format_version": "1.21.10",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:shade_ore",
@@ -17,6 +17,7 @@
 			"tag:metal": {},
 			"tag:minecraft:metal": {},
 			"tag:stone_pick_diggable":{},
+			"tag:minecraft:is_pickaxe_item_destructible":{},
 			"minecraft:geometry":{"identifier": "minecraft:geometry.full_block"},
 			"minecraft:loot": "loot_tables/poke/blocks/shade_ore.json",
 			"minecraft:custom_components":[

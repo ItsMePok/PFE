@@ -1,9 +1,0 @@
-{
-	"format_version":"1.16.100",
-	"minecraft:recipe_shapeless":{
-		"description":{"identifier":"poke:holy_b_w_sc_b"},
-		"tags":["stonecutter"],
-		"ingredients":[{"item":"poke:holy_bricks"}],
-		"result":{"item":"poke:holy_brick_wall"}
-	}
-}

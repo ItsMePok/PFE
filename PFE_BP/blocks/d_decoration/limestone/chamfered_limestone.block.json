@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.80",
+	"format_version": "1.21.10",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:chamfered_limestone",
@@ -25,6 +25,7 @@
 			"tag:stone": {},
 			"tag:minecraft:stone": {},
 			"tag:stone_pick_diggable":{},
+			"tag:minecraft:is_pickaxe_item_destructible":{},
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 30
 			},

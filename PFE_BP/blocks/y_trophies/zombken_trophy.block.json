@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.80",
+	"format_version": "1.21.10",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:zombken_trophy",
@@ -56,7 +56,8 @@
 			"tag:pfe": {},
 			"tag:stone": {},
 			"tag:minecraft:stone": {},
-			"tag:stone_pick_diggable":{}
+			"tag:stone_pick_diggable":{},
+			"tag:minecraft:is_pickaxe_item_destructible":{}
 		},
 		"permutations": [
 			// Facing north

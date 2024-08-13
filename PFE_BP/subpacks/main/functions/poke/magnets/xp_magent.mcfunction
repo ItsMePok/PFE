@@ -1,1 +1,0 @@
-execute as @p run tp @e[r=30,type=minecraft:xp_orb] @s 

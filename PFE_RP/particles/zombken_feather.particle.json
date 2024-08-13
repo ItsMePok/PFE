@@ -9,15 +9,15 @@
 			}
 		},
 		"components": {
-			"minecraft:emitter_rate_manual": {
-				"max_particles": 1
-			},
 			"minecraft:emitter_lifetime_once": {
-				"active_time": 1
+				"active_time": 0.1
+			},
+			"minecraft:emitter_rate_instant": {
+				"num_particles": 1
 			},
 			"minecraft:emitter_shape_sphere": {
 				"offset": [0, 0.8, 0],
-				"radius": 0.5,
+				"radius": 0.3,
 				"surface_only": true,
 				"direction": "outwards"
 			},

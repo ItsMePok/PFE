@@ -1,10 +1,10 @@
 {
 	"header": {
-		"name": "§ev1.2.1.5 §uPFE §aRP",
+		"name": "§b1.2.2 §uPFE §aRP",
 		"description": "pack.description",
-		"uuid": "8690281c-ed19-4d98-a62c-d8fc7b6e13cf",
+		"uuid": "481886cd-d54d-403d-b4bd-363a72bf4635",
 		"version": [1, 0, 0],
-		"min_engine_version": [1, 21, 0]
+		"min_engine_version": [1, 21, 20]
 	},
 	"modules": [
 		{
