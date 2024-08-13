@@ -2,6 +2,10 @@
 
 
 
+<figure><img src="../.gitbook/assets/PFEv1.2.2KeyArt_MCPEDL.png" alt=""><figcaption><p>1.2.2 - MCPEDL &#x26; Curseforge</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/PFEv1.2.2KeyArt_ModBay.png" alt=""><figcaption><p>1.2.2 - Modbay &#x26; Github</p></figcaption></figure>
+
 <figure><img src="../.gitbook/assets/PFE1.2.1keyart.jpg" alt=""><figcaption><p>1.2.1</p></figcaption></figure>
 
 
