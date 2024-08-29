@@ -30,7 +30,7 @@
 					{"items":["poke:molten_slimeball"],"repair_amount": "query.max_durability*0.25"}
 				]
 			},
-			"minecraft:damage": 21,
+			"minecraft:damage": {"value": 21},
 			"minecraft:enchantable": {
 				"value": 75,
 				"slot": "sword"

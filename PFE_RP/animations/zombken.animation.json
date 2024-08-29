@@ -114,7 +114,7 @@
 					}
 				}
 			}
-		},
+		}/*,
 		"animation.poke.zombken.hurt": {
 			"loop": true,
 			"animation_length": 1,
@@ -125,6 +125,6 @@
 					"pre_effect_script": "q.log(q.hurt_time)"
 				}
 			}
-		}
+		}*/
 	}
 }

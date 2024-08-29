@@ -12,14 +12,13 @@
 			{"item":"poke:nebula_ingot"},
 			{"item":"poke:galaxy_ingot"},
 			{"item":"poke:nebula_core"},
-			{"item":"poke:power_cell"},
 			{"item":"poke:red_button"},
 			{"item":"poke:antenna"}
 		],
 		"key":{
 			"G":{"item":"poke:galaxy_ingot"},
 			"C":{"item":"poke:nebula_core"},
-			"P":{"item":"poke:power_cell"},
+			"P":{"item":"poke:radium_block"},
 			"B":{"item":"poke:red_button"},
 			"A":{"item":"poke:antenna"}
 		},

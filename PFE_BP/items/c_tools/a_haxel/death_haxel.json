@@ -42,7 +42,7 @@
 				"value": 30
 			},
 			"minecraft:hover_text_color": "gray",
-			"minecraft:damage": 20,
+			"minecraft:damage": {"value": 20},
 			"minecraft:digger": {
 				"use_efficiency": true,
 				"destroy_speeds": [

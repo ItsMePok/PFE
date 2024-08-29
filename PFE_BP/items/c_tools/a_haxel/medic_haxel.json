@@ -42,7 +42,7 @@
 				"value": 77
 			},
 			"minecraft:hover_text_color": "minecoin_gold",
-			"minecraft:damage": 11,
+			"minecraft:damage": {"value": 11},
 			"minecraft:digger": {
 				"use_efficiency": true,
 				"destroy_speeds": [

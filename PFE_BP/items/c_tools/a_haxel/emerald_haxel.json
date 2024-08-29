@@ -51,7 +51,7 @@
 				"value": 50
 			},
 			"minecraft:hover_text_color": "material_emerald",
-			"minecraft:damage": 6,
+			"minecraft:damage": {"value": 6},
 			"minecraft:digger": {
 				"use_efficiency": true,
 				"destroy_speeds": [

@@ -8,21 +8,16 @@
 					"animations": [
 						{"move": "q.modified_move_speed"},
 						{"melee_attack": "v.attack_time > 0.0"},
-						"general",
-						{"hurt":"q.hurt_time != 0"}
+						"general"
 					],
 					"transitions": [
-						{
-							"hurt":"q.hurt_time!=0"
-						}
 					]
 				},
 				"hurt":{
 					"animations": [
 						{"move": "q.modified_move_speed"},
 						{"melee_attack": "v.attack_time > 0.0"},
-						"general",
-						"hurt"
+						"general"
 					],
 					"transitions": [
 						{

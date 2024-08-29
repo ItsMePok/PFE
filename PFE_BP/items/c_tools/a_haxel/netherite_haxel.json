@@ -54,7 +54,7 @@
 				"value": 50
 			},
 			"minecraft:hover_text_color": "material_netherite",
-			"minecraft:damage": 7,
+			"minecraft:damage": {"value": 7},
 			"minecraft:digger": {
 				"use_efficiency": true,
 				"destroy_speeds": [

@@ -1,9 +1,9 @@
 {
 	"header": {
-		"name": "§bv1.2.2 §uPFE §cBP",
+		"name": "§ev1.2.2.1 §uPFE §cBP",
 		"description": "§6By:§u ItsMePok §f& §dO2God §7||§e Wiki: https://pfewiki.gitbook.io/home",
 		"min_engine_version": [1, 21, 20],
-		"uuid": "263cc40a-bf0f-4d0d-a68a-308ee6ca482f",
+		"uuid": "cf80b509-750a-470c-b54f-de4ad0ccf09d",
 		"version": [1, 0, 0]
 	},
 	"modules": [

@@ -14,7 +14,7 @@
 			"minecraft:durability": {
 				"max_durability": 3985
 			},
-			"minecraft:damage": 27,
+			"minecraft:damage": {"value": 27},
 			"minecraft:icon":"poke_astral_scythe",
 			"minecraft:enchantable": {
 				"value": 140,

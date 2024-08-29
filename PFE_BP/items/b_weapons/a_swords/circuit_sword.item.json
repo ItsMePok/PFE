@@ -30,7 +30,7 @@
 					}
 				]
 			},
-			"minecraft:damage": 15,
+			"minecraft:damage": {"value": 15},
 			"minecraft:can_destroy_in_creative": false,
 			"minecraft:enchantable": {
 				"slot": "sword",

@@ -15,7 +15,7 @@
 			"minecraft:durability": {
 				"max_durability": 3000,"damage_chance": {"max": 100,"min": 60}
 			},
-			"minecraft:damage": 12,
+			"minecraft:damage": {"value": 12},
 			"minecraft:enchantable": {
 				"value": 27,
 				"slot": "sword"

@@ -53,7 +53,7 @@
 				"value": 50
 			},
 			"minecraft:hover_text_color": "material_amethyst",
-			"minecraft:damage": 8,
+			"minecraft:damage": {"value": 8},
 			"minecraft:digger": {
 				"use_efficiency": true,
 				"destroy_speeds": [

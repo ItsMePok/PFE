@@ -11,7 +11,7 @@
 		"components": {
 			"minecraft:max_stack_size": 1,
 			"minecraft:icon":"poke_galaxy_sword",
-			"minecraft:damage": 21,
+			"minecraft:damage": {"value": 21},
 			"minecraft:can_destroy_in_creative": false,
 			"minecraft:hand_equipped": true,
 			"minecraft:durability": {

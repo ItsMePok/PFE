@@ -75,7 +75,6 @@
 		"poke_void_crossbow":{"textures":"textures/items/void/poke_void_crossbow"},
 		"poke_hellish_crossbow":{"textures":"textures/items/hellish/poke_hellish_crossbow"},
 		//Arrow
-		"poke_shuriken":{"textures":"textures/items/misc/poke_shuriken"},
 		"poke_volt_arrow":{"textures":"textures/items/misc/poke_volt_arrow"},
 		"poke_hellish_arrow":{"textures":"textures/items/hellish/poke_hellish_arrow"},
 		"poke_void_arrow":{"textures":"textures/items/void/poke_void_arrow"},

@@ -18,7 +18,7 @@
 					"min": 60
 				}
 			},
-			"minecraft:damage": 100,
+			"minecraft:damage": {"value": 100},
 			"minecraft:icon":"poke_nebula_sword",
 			"minecraft:enchantable": {
 				"value": 100,

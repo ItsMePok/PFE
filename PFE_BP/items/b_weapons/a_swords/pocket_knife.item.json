@@ -11,7 +11,7 @@
 		"components": {
 			"minecraft:max_stack_size": 1,
 			"minecraft:icon":"poke_pocket_knife",
-			"minecraft:damage": 3,
+			"minecraft:damage": {"value": 3},
 			"minecraft:can_destroy_in_creative": false,
 			"minecraft:durability": {
 				"max_durability": 251,

@@ -34,7 +34,7 @@
 					"min": 80
 				}
 			},
-			"minecraft:damage": 12,
+			"minecraft:damage": {"value": 12},
 			"minecraft:icon":"poke_radium_scythe",
 			"minecraft:enchantable": {
 				"value": 75,

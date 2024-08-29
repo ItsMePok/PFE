@@ -300,12 +300,6 @@
 "poke:block_breaker":{"sound":"wood","textures":"poke_block_breaker"},
 //Crafting
 "poke:spell_crafter":{"sound":"stone","textures":"poke_spell_crafter"},
-"poke:dye_unmixer":{"sound":"metal","textures":"poke_dye_unmixer"},
+"poke:dye_unmixer":{"sound":"metal","textures":"poke_dye_unmixer"}
 //unused - wip
-"poke:key_block_room":{"sound":"deepslate_bricks","textures":"poke_key_block"},
-"poke:key_block_start":{"sound":"deepslate_bricks","textures":"poke_key_block"},
-"poke:key_block_hall":{"sound":"deepslate_bricks","textures":"poke_key_block"},
-"poke:power_cell":{"sound":"metal","textures":"poke_power_cell"},
-"poke:astral_bulb_slab":{"sound":"copper","textures":"poke_astral_bulb"},
-"poke:block_placer":{"textures":"poke_block_breaker"}
 }

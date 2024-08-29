@@ -13,7 +13,7 @@
 			"minecraft:durability": {
 				"max_durability": 25100
 			},
-			"minecraft:damage": 44,
+			"minecraft:damage": {"value": 44},
 			"minecraft:digger": {
 				"destroy_speeds": [
 					{"block":"minecraft:web","speed": 60},

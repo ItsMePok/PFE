@@ -5,8 +5,7 @@
 			"identifier": "poke:zombken",
 			"is_spawnable": true,
 			"is_summonable": true,
-			"is_experimental": false,
-			"runtime_identifier": "minecraft:parrot"
+			"is_experimental": false
 		},
 		"component_groups": {
 			"despawn_normal":{

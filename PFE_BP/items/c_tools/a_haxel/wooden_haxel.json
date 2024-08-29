@@ -55,7 +55,7 @@
 				"value": 50
 			},
 			"minecraft:hover_text_color": "material_copper",
-			"minecraft:damage": 3,
+			"minecraft:damage": {"value": 3},
 			"minecraft:digger": {
 				"use_efficiency": true,
 				"destroy_speeds": [

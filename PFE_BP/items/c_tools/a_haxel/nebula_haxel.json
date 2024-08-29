@@ -42,7 +42,7 @@
 				"value": 30
 			},
 			"minecraft:hover_text_color": "aqua",
-			"minecraft:damage": 23,
+			"minecraft:damage": {"value": 23},
 			"minecraft:digger": {
 				"use_efficiency": true,
 				"destroy_speeds": [
