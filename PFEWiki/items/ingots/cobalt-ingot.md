@@ -88,6 +88,6 @@ Items:
 
 Outputs:
 
-* 9x Cobalt Ingots
+* 9x <img src="https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694" alt="" data-size="line"> Cobalt Ingots
 {% endtab %}
 {% endtabs %}

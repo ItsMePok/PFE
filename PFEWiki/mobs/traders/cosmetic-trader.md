@@ -1,5 +1,7 @@
 # Cosmetic-Trader
 
+<figure><img src="../../.gitbook/assets/cosmetic_trader.png" alt=""><figcaption></figcaption></figure>
+
 ### Cosmetic Trader
 
 Identifier: **poke:cosmetic\_trader**

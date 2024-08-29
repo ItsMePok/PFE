@@ -1,11 +1,12 @@
 # Frequently Asked Questions (FAQ)
 
-## Why Are Half the Items Missing Textures in v1.2.0+?
+## Why Are the Automation Blocks not working?
 
-* Make Sure the **Holiday Creator Features** Experimental Toggle is off (This is removed in Minecraft 1.21.20)
-* Try Turing on **Remove Texture Limit** (Main Menu: Settings -> Video -> Remove Texture Limit: ON)
+{% hint style="warning" %}
+Note: in 1.2.2 there was an issue that resulted in the automation blocks not working
 
-## Why Are the Automation Blocks not working in v1.2.0+?
+a temporary fix can be found in [v1.2.2.1.md](changelog-history/betas/v1.2.2.1.md "mention")
+{% endhint %}
 
 * Try Powering them with Redstone, The Block itself needs to be [Strong Powered](https://minecraft.wiki/w/Redstone\_mechanics#Strongly\_powered\_vs.\_weakly\_powered). the simplest solution is powering it with a lever
 * Try Breaking and Replacing them
@@ -115,3 +116,8 @@ More info on how the different automation blocks work can be found [Here](blocks
 * Volt Ring: Fires a Volt Arrow
 * Warp Ring: Fires an Ender Pearl
 * Zeus Ring: Strikes Nearby Entities with lightning
+
+## Why Are Half the Items Missing Textures in v1.2.0+?
+
+* Make Sure the **Holiday Creator Features** Experimental Toggle is off (This is removed in Minecraft 1.21.20)
+* Try Turing on **Remove Texture Limit** (Main Menu: Settings -> Video -> Remove Texture Limit: ON)
