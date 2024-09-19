@@ -1,11 +1,11 @@
-{
+{"format_version": "1.19.0",
 	"tiers": [
 		{
 			"groups": [
 				{
 					"trades": [
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"wants": [
 								{
 									"item": "poke:banished_star_x3",
@@ -20,7 +20,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"wants": [
 								{
 									"item": "poke:banished_star_x4",
@@ -35,7 +35,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"wants": [
 								{
 									"item": "poke:banished_star_x7",
@@ -50,7 +50,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"wants": [
 								{
 									"item": "poke:banished_star_x8",
@@ -65,7 +65,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"wants": [
 								{
 									"item": "poke:banished_star_x2",
@@ -80,7 +80,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"wants": [
 								{
 									"item": "poke:banished_star_x3",
@@ -95,7 +95,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"wants": [
 								{
 									"item": "poke:banished_star_x3",
@@ -110,7 +110,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"wants": [
 								{
 									"item": "poke:banished_star_x3",
@@ -125,7 +125,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"wants": [
 								{
 									"item": "poke:banished_star_x3",
@@ -140,7 +140,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"wants": [
 								{
 									"item": "poke:banished_star_x4",
@@ -155,7 +155,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"wants": [
 								{
 									"item": "poke:banished_star_x2",
@@ -170,7 +170,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"wants": [
 								{
 									"item": "poke:banished_star_x2",
@@ -185,7 +185,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"wants": [
 								{
 									"item": "poke:banished_star_x5",
@@ -200,7 +200,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"wants": [
 								{
 									"item": "poke:banished_star_x6",
@@ -215,7 +215,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"wants": [
 								{
 									"item": "poke:banished_star_x6",

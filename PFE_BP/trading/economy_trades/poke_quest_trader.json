@@ -1,11 +1,11 @@
-{
+{"format_version": "1.19.0",
 	"tiers": [
 		{
 			"groups": [
 				{
 					"trades": [
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"wants": [
 								{
 									"item": "paper",
@@ -19,7 +19,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"wants": [
 								{
 									"item": "paper",
@@ -33,7 +33,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"wants": [
 								{
 									"item": "paper",
@@ -47,7 +47,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"wants": [
 								{
 									"item": "paper",
@@ -61,7 +61,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"wants": [
 								{
 									"item": "poke:iron_token",

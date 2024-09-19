@@ -185,11 +185,6 @@
 					"ambient.in.water": "mob.guardian.ambient",
 					"death": "mob.guardian.land_death",
 					"death.in.water": "mob.guardian.death",
-					"guardian.flop": {
-						"pitch": 1,
-						"sound": "mob.guardian.flop",
-						"volume": 1
-					},
 					"hurt": "mob.guardian.land_hit",
 					"hurt.in.water": "mob.guardian.hit"
 				},
@@ -706,25 +701,6 @@
 					}
 				},
 				"pitch": [0.8, 1.2],
-				"volume": 1
-			}
-		}
-	},
-	"individual_event_sounds": {
-		"events": {
-			"poke.empty.cassette": {
-				"pitch": 1,
-				"sound": "poke.empty.cassette",
-				"volume": 1
-			},
-			"poke.record.galactic.march": {
-				"pitch": 1,
-				"sound": "play.galactic.march",
-				"volume": 1
-			},
-			"poke.record.listen": {
-				"pitch": 1,
-				"sound": "record.listen",
 				"volume": 1
 			}
 		}

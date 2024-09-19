@@ -329,7 +329,7 @@ class PFEPhantomicConduit {
 //Demonic Allay Conduit
 class PFEDAConduit {
     onTick(data) {
-        const block_location = data.block.x + ' '+ data.block.y + ' '+ data.block.z
+        const block_location = `${data.block.x} ${data.block.y} ${data.block.z}`
        // if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
             data.block.setPermutation(data.block.permutation.withState('pfe:active', 1))
             data.dimension.runCommand('execute positioned '+block_location+' as @e[r=50,family=pfe:demonic_allay] run damage @s 20')
@@ -345,12 +345,11 @@ class PFEDAConduit {
 //Cobblestone Generator's ability
 class PFECobbleGen {
     onTick(data) {
-        var block_location_x = data.block.x
-        var block_location_y = data.block.y
-        var block_location_z = data.block.z
        // if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
             data.block.setPermutation(data.block.permutation.withState('pfe:active', 1))
-            data.dimension.runCommand('execute positioned '+block_location_x+' '+block_location_y+' '+block_location_z+' if block ~ ~1 ~ air run setblock ~ ~1 ~ cobblestone')
+            if (data.block.above().typeId != 'minecraft:air')return;
+            data.block.above().setType('minecraft:cobblestone')
+            //data.dimension.runCommand('execute positioned '+block_location_x+' '+block_location_y+' '+block_location_z+' if block ~ ~1 ~ air run setblock ~ ~1 ~ cobblestone')
             return;
        /* }
         if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== undefined) {
@@ -539,7 +538,7 @@ class PFEDuster {
 //Magnet(Block)'s ability
 class PFEMagnetBlock{
     onTick(data) {
-        const block_location = data.block.x + ' '+ data.block.y + ' '+ data.block.z
+        const block_location = `${data.block.x} ${data.block.y} ${data.block.z}`
         //if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
             data.block.setPermutation(data.block.permutation.withState('pfe:active', 1))
             data.dimension.runCommand('execute positioned '+block_location+' as @e[type=item,r=10] run tp @s '+ block_location)
@@ -555,9 +554,7 @@ class PFEMagnetBlock{
 //Bulb Light Color 
 class PFEBulbs{
     onPlayerInteract(data) {
-        var block_location_x = data.block.x
-        var block_location_y = data.block.y
-        var block_location_z = data.block.z
+        const block_location = `${data.block.x} ${data.block.y} ${data.block.z}`
         var light_color = data.block.permutation.getState('pfe:color')
         var sound_pitch = 1 + light_color / 10
         //resets if at the maximum (15)
@@ -565,7 +562,7 @@ class PFEBulbs{
             //set pfe:color state to default (0)
             data.block.setPermutation(data.block.permutation.withState('pfe:color',0))
             //play sound
-            data.block.dimension.runCommandAsync('playsound block.copper_bulb.turn_on @a '+ block_location_x + ' '+ block_location_y+' '+ block_location_z + ' 1 ' + sound_pitch)
+            data.block.dimension.runCommandAsync('playsound block.copper_bulb.turn_on @a '+ block_location + ' 1 ' + sound_pitch)
             return;
         }
         //Adds 1 to the current state of pfe:color
@@ -574,7 +571,7 @@ class PFEBulbs{
             data.block.setPermutation(
             data.block.permutation.withState('pfe:color',light_color + 1))
             //play sound
-            data.block.dimension.runCommandAsync('playsound block.copper_bulb.turn_on @a '+ block_location_x + ' '+ block_location_y+' '+ block_location_z + ' 1 ' + sound_pitch)
+            data.block.dimension.runCommandAsync('playsound block.copper_bulb.turn_on @a '+ block_location + ' 1 ' + sound_pitch)
             return;
         }
     }
@@ -622,33 +619,31 @@ class PFECalibrate {
 //Calibrated Block Breakers
 class PFECBlockBreaker {
     onTick(data) {
-        var block_location_x = data.block.x
-        var block_location_y = data.block.y
-        var block_location_z = data.block.z
+        const block_location = `${data.block.x} ${data.block.y} ${data.block.z}`
         //if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
             data.block.setPermutation(data.block.permutation.withState('pfe:active', 1))
             if (data.block.typeId == 'poke:block_breaker_east') {  
-                data.dimension.runCommand('execute positioned '+block_location_x+' '+block_location_y+' '+block_location_z+' unless block ~1 ~ ~ bedrock run setblock ~1 ~ ~ air destroy')
+                data.dimension.runCommand('execute positioned '+block_location+' unless block ~1 ~ ~ bedrock run setblock ~1 ~ ~ air destroy')
                 return;
             }
             if (data.block.typeId == 'poke:block_breaker_west') {  
-                data.dimension.runCommand('execute positioned '+block_location_x+' '+block_location_y+' '+block_location_z+' unless block ~-1 ~ ~ bedrock run setblock ~-1 ~ ~ air destroy')
+                data.dimension.runCommand('execute positioned '+block_location+' unless block ~-1 ~ ~ bedrock run setblock ~-1 ~ ~ air destroy')
                 return;
             }
             if (data.block.typeId == 'poke:block_breaker_south') {  
-                data.dimension.runCommand('execute positioned '+block_location_x+' '+block_location_y+' '+block_location_z+' unless block ~ ~ ~1 bedrock run setblock ~ ~ ~1 air destroy')
+                data.dimension.runCommand('execute positioned '+block_location+' unless block ~ ~ ~1 bedrock run setblock ~ ~ ~1 air destroy')
                 return;
             }
             if (data.block.typeId == 'poke:block_breaker_north') {  
-                data.dimension.runCommand('execute positioned '+block_location_x+' '+block_location_y+' '+block_location_z+' unless block ~ ~ ~-1 bedrock run setblock ~ ~ ~-1 air destroy')
+                data.dimension.runCommand('execute positioned '+block_location+' unless block ~ ~ ~-1 bedrock run setblock ~ ~ ~-1 air destroy')
                 return;
             }
             if (data.block.typeId == 'poke:block_breaker_up') {  
-                data.dimension.runCommand('execute positioned '+block_location_x+' '+block_location_y+' '+block_location_z+' unless block ~ ~1 ~ bedrock run setblock ~ ~1 ~ air destroy')
+                data.dimension.runCommand('execute positioned '+block_location+' unless block ~ ~1 ~ bedrock run setblock ~ ~1 ~ air destroy')
                 return;
             }
             if (data.block.typeId == 'poke:block_breaker_down') {  
-                data.dimension.runCommand('execute positioned '+block_location_x+' '+block_location_y+' '+block_location_z+' unless block ~ ~-1 ~ bedrock run setblock ~ ~-1 ~ air destroy')
+                data.dimension.runCommand('execute positioned '+block_location+' unless block ~ ~-1 ~ bedrock run setblock ~ ~-1 ~ air destroy')
                 return;
             }
             return;
@@ -663,33 +658,37 @@ class PFECBlockBreaker {
 //Calibrated Cobble Gens 
 class PFECCobbleGen {
     onTick(data) {
-        var block_location_x = data.block.x
-        var block_location_y = data.block.y
-        var block_location_z = data.block.z
+        const block_location = `${data.block.x} ${data.block.y} ${data.block.z}`
         //if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
             data.block.setPermutation(data.block.permutation.withState('pfe:active', 1))
-            if (data.block.typeId == 'poke:calibrated_cobblestone_generator_east') {  
-                data.dimension.runCommand('execute positioned '+block_location_x+' '+block_location_y+' '+block_location_z+' if block ~1 ~ ~ air run setblock ~1 ~ ~ cobblestone')
+            if (data.block.typeId == 'poke:calibrated_cobblestone_generator_east') {
+                if (data.block.east().typeId != 'minecraft:air')return;
+                data.block.east().setType('minecraft:cobblestone')
                 return;
             }
-            if (data.block.typeId == 'poke:calibrated_cobblestone_generator_west') {  
-                data.dimension.runCommand('execute positioned '+block_location_x+' '+block_location_y+' '+block_location_z+' if block ~-1 ~ ~ air run setblock ~-1 ~ ~ cobblestone')
+            if (data.block.typeId == 'poke:calibrated_cobblestone_generator_west') {
+                if (data.block.west().typeId != 'minecraft:air')return;
+                data.block.west().setType('minecraft:cobblestone')
                 return;
             }
-            if (data.block.typeId == 'poke:calibrated_cobblestone_generator_south') {  
-                data.dimension.runCommand('execute positioned '+block_location_x+' '+block_location_y+' '+block_location_z+' if block ~ ~ ~1 air run setblock ~ ~ ~1 cobblestone')
+            if (data.block.typeId == 'poke:calibrated_cobblestone_generator_south') {
+                if (data.block.south().typeId != 'minecraft:air')return;
+                data.block.south().setType('minecraft:cobblestone')
                 return;
             }
-            if (data.block.typeId == 'poke:calibrated_cobblestone_generator_north') {  
-                data.dimension.runCommand('execute positioned '+block_location_x+' '+block_location_y+' '+block_location_z+' if block ~ ~ ~-1 air run setblock ~ ~ ~-1 cobblestone')
+            if (data.block.typeId == 'poke:calibrated_cobblestone_generator_north') {
+                if (data.block.north().typeId != 'minecraft:air')return;
+                data.block.north().setType('minecraft:cobblestone')
                 return;
             }
-            if (data.block.typeId == 'poke:calibrated_cobblestone_generator_up') {  
-                data.dimension.runCommand('execute positioned '+block_location_x+' '+block_location_y+' '+block_location_z+' if block ~ ~1 ~ air run setblock ~ ~1 ~ cobblestone')
+            if (data.block.typeId == 'poke:calibrated_cobblestone_generator_up') {
+                if (data.block.above().typeId != 'minecraft:air')return;
+                data.block.above().setType('minecraft:cobblestone')
                 return;
             }
-            if (data.block.typeId == 'poke:calibrated_cobblestone_generator_down') {  
-                data.dimension.runCommand('execute positioned '+block_location_x+' '+block_location_y+' '+block_location_z+' if block ~ ~-1 ~ air run setblock ~ ~-1 ~ cobblestone')
+            if (data.block.typeId == 'poke:calibrated_cobblestone_generator_down') {
+                if (data.block.below().typeId != 'minecraft:air')return;
+                data.block.below().setType('minecraft:cobblestone')
                 return;
             }
             return;
@@ -713,7 +712,7 @@ class PFECrop{
         return;
     }  
     onPlayerInteract(data) {
-        const block_location = data.block.x + ' '+ data.block.y + ' '+ data.block.z
+        const block_location = `${data.block.x} ${data.block.y} ${data.block.z}`
         const mainhand = data.player.getComponent(EntityComponentTypes.Equippable).getEquipment('Mainhand')
         var growth_state = data.block.permutation.getState('poke:growth_stage')
         var growth_stage = growth_state +(1,2,3)
@@ -742,7 +741,7 @@ class PFECrop{
 //Lava Sponge
 class PFELavaSponge{
     onTick(data) {
-        const block_location = data.block.x + ' '+ data.block.y + ' '+ data.block.z
+        const block_location = `${data.block.x} ${data.block.y} ${data.block.z}`
         data.dimension.runCommand('execute positioned '+block_location+' run function poke/blocks/lava_sponge')
         return;
     }

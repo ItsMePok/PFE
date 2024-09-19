@@ -1,11 +1,11 @@
-{
+{"format_version": "1.19.0",
 	"tiers": [
 		{
 			"groups": [
 				{
 					"trades": [
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"wants": [
 								{
 									"item": "poke:rotten_chicken",
@@ -19,7 +19,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"wants": [
 								{
 									"item": "poke:knightling_helmet"
@@ -32,7 +32,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"wants": [
 								{
 									"item": "poke:necromancer_crown"
@@ -45,7 +45,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"wants": [
 								{
 									"item": "poke:necromancer_staff"
@@ -59,7 +59,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"wants": [
 								{
 									"item": "poke:charred_poppy"
@@ -72,7 +72,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"wants": [
 								{
 									"item": "poke:floppy_disk"
@@ -85,7 +85,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"wants": [
 								{
 									"item": "poke:ruin_key",
@@ -100,7 +100,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"wants": [
 								{
 									"item": "poke:gold_token",

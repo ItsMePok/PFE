@@ -1,11 +1,11 @@
-{
+{"format_version": "1.19.0",
 	"tiers": [
-		{
+		{"total_exp_required": -1,
 			"groups": [
 				{
 					"trades": [
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"reward_exp": false,
 							"wants": [
 								{
@@ -21,7 +21,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"reward_exp": false,
 							"wants": [
 								{
@@ -37,7 +37,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"reward_exp": false,
 							"wants": [
 								{
@@ -53,7 +53,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"reward_exp": false,
 							"wants": [
 								{
@@ -69,7 +69,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"reward_exp": false,
 							"wants": [
 								{
@@ -85,7 +85,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"reward_exp": false,
 							"wants": [
 								{
@@ -101,7 +101,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"reward_exp": false,
 							"wants": [
 								{
@@ -117,7 +117,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"reward_exp": false,
 							"wants": [
 								{
@@ -133,7 +133,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"wants": [
 								{
 									"item": "poke:iron_token",
@@ -156,7 +156,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"wants": [
 								{
 									"item": "poke:gold_token",
@@ -179,7 +179,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"wants": [
 								{
 									"item": "poke:diamond_token",
@@ -202,7 +202,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"wants": [
 								{
 									"item": "poke:platinum_token",
@@ -225,7 +225,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"wants": [
 								{
 									"item": "poke:gold_token",
@@ -240,7 +240,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"wants": [
 								{
 									"item": "poke:diamond_token",
@@ -255,7 +255,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"wants": [
 								{
 									"item": "poke:diamond_token",
@@ -280,7 +280,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"wants": [
 								{
 									"item": "poke:platinum_token",
@@ -295,7 +295,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"wants": [
 								{
 									"item": "poke:iron_token",
@@ -311,7 +311,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"wants": [
 								{
 									"item": "poke:iron_token",
@@ -327,7 +327,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"wants": [
 								{
 									"item": "poke:diamond_token",
@@ -350,7 +350,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"wants": [
 								{
 									"item": "poke:gold_token",
@@ -385,7 +385,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"wants": [
 								{
 									"item": "poke:diamond_token",
@@ -420,7 +420,7 @@
 							]
 						},
 						{
-							"max_uses": -1,
+							"max_uses": 2147483647,
 							"wants": [
 								{
 									"item": "poke:diamond_token",
