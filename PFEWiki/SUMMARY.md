@@ -254,6 +254,7 @@
     * [v1.0.1](changelog-history/full-releases/v1.0.1.md)
     * [v1.0.0 (Initial Release)](changelog-history/full-releases/v1.0.0-initial-release.md)
   * [Betas](changelog-history/betas/README.md)
+    * [v1.2.2.2](changelog-history/betas/v1.2.2.2.md)
     * [v1.2.2.1](changelog-history/betas/v1.2.2.1.md)
     * [v1.2.1.5](changelog-history/betas/v1.2.1.5.md)
     * [v1.2.1.4](changelog-history/betas/v1.2.1.4.md)

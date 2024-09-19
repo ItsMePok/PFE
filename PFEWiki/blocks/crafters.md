@@ -14,12 +14,12 @@
 
 * PFE spells
 * Empty Vial
-* Spell [Pottery sherd](broken-reference)
+* [Spell Pottery sherd](pottery-sherds.md)
 * Magic 8 Ball
 
 
 
-## Dye unmixer
+## Dye Un-mixer
 
 <figure><img src="../.gitbook/assets/dye_unmixer.png" alt="Dye Unmixer"><figcaption></figcaption></figure>
 
