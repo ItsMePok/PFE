@@ -36,7 +36,7 @@ Trimmable: **Yes**
 
 ## Amethyst Chestplate
 
-![poke\_amethyst\_chestplate](https://github.com/ItsMePok/PFE/assets/136857747/152d7e40-7e7a-4a28-8c47-38edc61b281a)
+![](https://github.com/ItsMePok/PFE/assets/136857747/152d7e40-7e7a-4a28-8c47-38edc61b281a)
 
 Identifier: **poke:amethyst\_chestplate**
 
