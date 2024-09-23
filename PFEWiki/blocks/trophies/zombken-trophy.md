@@ -2,6 +2,10 @@
 
 <figure><img src="https://github.com/user-attachments/assets/720f2c1f-f6a1-42b5-ac30-12ed6e134a52" alt=""><figcaption></figcaption></figure>
 
+## Description:
+
+&#x20;    This is the trophy for you can get after defeating the Zombken
+
 ## Obtaining:
 
 {% tabs %}

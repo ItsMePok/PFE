@@ -4,6 +4,10 @@
 
 <figure><img src="https://github.com/user-attachments/assets/866e482f-f9ec-4b86-ab6c-92002e52fb24" alt=""><figcaption></figcaption></figure>
 
+## Description:
+
+&#x20;    This is the trophy for you can get after defeating the Furnace Golem&#x20;
+
 ## Usage:
 
 * On Interacting:

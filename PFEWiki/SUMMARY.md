@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Home](README.md)
+* [Current Issues](current-issues.md)
 * [Frequently Asked Questions (FAQ)](faq.md)
 * [Armor](armor/README.md)
   * [Full Armor Sets](armor/full-armor-sets/README.md)
@@ -43,6 +44,8 @@
     * [Block Breaker](blocks/automation/block-breaker.md)
     * [Cobbler](blocks/automation/cobbler.md)
     * [Cobblestone Generator](blocks/automation/cobblestone-generator.md)
+    * [Calibrated Cobblestone Generator](blocks/automation/cobblestone-generator-1.md)
+    * [Calibrated Block Breaker](blocks/automation/cobblestone-generator-2.md)
     * [Dirter](blocks/automation/dirter.md)
     * [Duster](blocks/automation/duster.md)
     * [Barometer](blocks/automation/barometer.md)
@@ -347,6 +350,7 @@
     * [Upgraders v1.0](changelog-history/pfe-split/upgraders-v1.0.md)
 * [Misc / Other info](misc-other-info/README.md)
   * [Brewing Guide](misc-other-info/brewing-guide.md)
+  * [Interact Abilities](misc-other-info/interact-abilities.md)
   * [Vanilla Files modified](misc-other-info/vanilla-files-modified.md)
   * [Keyarts](misc-other-info/keyarts.md)
   * [Other Images](misc-other-info/other-images.md)

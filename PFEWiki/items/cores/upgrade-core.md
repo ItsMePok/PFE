@@ -1,17 +1,22 @@
-## Upgrade Core
-![poke_upgrade_core](https://github.com/ItsMePok/PFE/assets/136857747/38584129-72d6-42b8-a69b-cd3b461025e8)
+# Upgrade Core
 
-Identifier: **poke:upgrade_core**
+![poke\_upgrade\_core](https://github.com/ItsMePok/PFE/assets/136857747/38584129-72d6-42b8-a69b-cd3b461025e8)
 
-### Usage:
- * Crafting Component
+Identifier: **poke:upgrade\_core**
 
-### Obtaining:
- * Sold by the [Token Trader](https://pfewiki.gitbook.io/home/mobs/traders/token-trader) for 1 [Gold Token](https://pfewiki.gitbook.io/home/items/tokens/gold-token)
- * Sold by the [Shopkeeper](https://github.com/ItsMePok/PFE/wiki/Shopkeeper) for 1 [Banished Star x4](https://pfewiki.gitbook.io/home/items/banished-stars/banished-star-x4)
+## Usage:
 
-### Used in Crafting:
-#### Armor
+* Crafting Component
+
+## Obtaining:
+
+* Sold by the[ Token Trader](../../mobs/traders/token-trader.md) for 1 [Gold Token](../tokens/gold-token.md)
+* Sold by the [Shopkeeper](../../mobs/traders/shopkeeper.md) for 1 [Banished Star x4](../banished-stars/banished-star-x4.md)
+
+## Used in Crafting:
+
+### Armor
+
 * [Amethyst Helmet](https://github.com/ItsMePok/PFE/wiki/Amethyst-Armor#amethyst-helmet)
 * [Amethyst Chestplate](https://github.com/ItsMePok/PFE/wiki/Amethyst-Armor#amethyst-chestplate)
 * [Amethyst Leggings](https://github.com/ItsMePok/PFE/wiki/Amethyst-Armor#amethyst-leggings)
@@ -42,8 +47,12 @@ Identifier: **poke:upgrade_core**
 * [Springy Robey Chestplate](https://github.com/ItsMePok/PFE/wiki/Springy-Robey#chestplate)
 * [Swift Robe Helmet](https://github.com/ItsMePok/PFE/wiki/Swift-Robe#helmet)
 * [Swift Robe Chestplate](https://github.com/ItsMePok/PFE/wiki/Swift-Robe#chestplate)
-#### Blocks
-* [Calibrated Block Breaker](https://github.com/ItsMePok/PFE/wiki/Calibrated-Block-Breaker)
-#### Items
-* [Cobalt Haxel](https://github.com/ItsMePok/PFE/wiki/Cobalt-Haxel)
-* [Shade Haxel](https://github.com/ItsMePok/PFE/wiki/Shade-Haxel)
+
+### Blocks
+
+* <img src="https://github.com/user-attachments/assets/02ae54a7-e8a3-4888-b37e-b83721e6ab63" alt="Calibrated Block Breaker" data-size="line">[Calibrated Block Breaker](../../blocks/automation/cobblestone-generator-2.md)
+
+### Items
+
+* [Cobalt Haxel](../../tools/haxel/cobalt-haxel.md)
+* [Shade Haxel](../../tools/haxel/shade-haxel.md)

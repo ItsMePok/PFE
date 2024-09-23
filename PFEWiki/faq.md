@@ -26,6 +26,10 @@ More info on how the different automation blocks work can be found [Here](blocks
 * Most of them can be crafted in the <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="Crafting Table" data-size="line">[Crafting Table](https://minecraft.wiki/w/Crafting\_Table)
 * A few can only be acquired from the [Token Trader](mobs/traders/token-trader.md)
 
+## How do I use the item Abilities?
+
+* Some Items (ex. Haxels) have an interact ability, more info on how to use them can be found here: [interact-abilities.md](misc-other-info/interact-abilities.md "mention")
+
 ## What do the upgraders do?
 
 * All the Ore upgraders

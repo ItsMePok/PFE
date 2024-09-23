@@ -28,19 +28,19 @@ A higher weight makes it more likely to be selected from that pool
 
 (3 of these ↓)
 
-|                                                                                           Item                                                                                          |  #  | Weight |
-| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-: | :----: |
-|                                                                                      Cassette - Far                                                                                     |  1  |    1   |
-|                                                                                     Cassette - Boss                                                                                     |  1  |    1   |
-|                                                                                     End Crystal Hat                                                                                     |  1  |    1   |
-| [<img src="https://github.com/ItsMePok/PFE/assets/136857747/cd2e69eb-3e99-470c-89c4-ddf91c05de21" alt="" data-size="line">Diamond Upgrade Core](../items/cores/diamond-upgrade-core.md) |  1  |    1   |
-|                                                                                   Charged Cobalt Block                                                                                  |  1  |    1   |
-|                                                                                   Night Vision Goggles                                                                                  |  1  |    1   |
-|         [<img src="https://github.com/ItsMePok/PFE/assets/136857747/38584129-72d6-42b8-a69b-cd3b461025e8" alt="" data-size="line">Upgrade Core](../items/cores/upgrade-core.md)         |  1  |    2   |
-|                                                                                 Calibrated Block Breaker                                                                                |  1  |    2   |
-|                                                                             Calibrated Cobblestone Generator                                                                            |  1  |    2   |
-|                                                                                         Antenna                                                                                         |  1  |    3   |
-|                                                                                          Empty                                                                                          |  -  |    4   |
+|                                                                                                          Item                                                                                                          |  #  | Weight |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-: | :----: |
+|                                                                                                     Cassette - Far                                                                                                     |  1  |    1   |
+|                                                                                                     Cassette - Boss                                                                                                    |  1  |    1   |
+|                                                                                                     End Crystal Hat                                                                                                    |  1  |    1   |
+|                 [<img src="https://github.com/ItsMePok/PFE/assets/136857747/cd2e69eb-3e99-470c-89c4-ddf91c05de21" alt="" data-size="line">Diamond Upgrade Core](../items/cores/diamond-upgrade-core.md)                |  1  |    1   |
+|                                                                                                  Charged Cobalt Block                                                                                                  |  1  |    1   |
+|                                                                                                  Night Vision Goggles                                                                                                  |  1  |    1   |
+|                         [<img src="https://github.com/ItsMePok/PFE/assets/136857747/38584129-72d6-42b8-a69b-cd3b461025e8" alt="" data-size="line">Upgrade Core](../items/cores/upgrade-core.md)                        |  1  |    2   |
+| [<img src="https://github.com/user-attachments/assets/02ae54a7-e8a3-4888-b37e-b83721e6ab63" alt="Calibrated Block Breaker" data-size="line">Calibrated Block Breaker](../blocks/automation/cobblestone-generator-2.md) |  1  |    2   |
+|         [<img src="https://github.com/user-attachments/assets/9051e0cd-612d-415a-863c-81739eadbee8" alt="" data-size="line">Calibrated Cobblestone Generator](../blocks/automation/cobblestone-generator-1.md)         |  1  |    2   |
+|                                                                                                         Antenna                                                                                                        |  1  |    3   |
+|                                                                                                          Empty                                                                                                         |  -  |    4   |
 
 (8-16 of these ↓)
 

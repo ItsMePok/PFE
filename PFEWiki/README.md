@@ -1,6 +1,6 @@
 # Home
 
-#### This Wiki assumes the latest PFE Version: [v1.2.2.1.md](changelog-history/betas/v1.2.2.1.md "mention")
+#### This Wiki assumes the latest PFE Version: [v1.2.2.2.md](changelog-history/betas/v1.2.2.2.md "mention")
 
 
 

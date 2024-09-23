@@ -4,6 +4,10 @@
 
 <figure><img src="https://github.com/user-attachments/assets/654b5911-e9c4-4ad7-b7e8-d4fcd87d0151" alt=""><figcaption></figcaption></figure>
 
+## Description:
+
+&#x20;    This is the trophy for you can get after defeating the Listener
+
 ## Usage:
 
 * On Interacting:
