@@ -1,6 +1,6 @@
 # Home
 
-#### This Wiki assumes the latest PFE Version: 1.2.2 (Not out yet, sorry if some info is not 100% accurate because of this)
+#### This Wiki assumes the latest PFE Version: [v1.2.2.1.md](changelog-history/betas/v1.2.2.1.md "mention")
 
 
 
