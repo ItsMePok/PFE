@@ -1,0 +1,59 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:cobalt_sword",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.sword"
+			}
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:icon":"poke_cobalt_sword",
+			"minecraft:damage": {"value": 6},
+			"minecraft:can_destroy_in_creative": false,
+			"minecraft:hand_equipped": true,
+			"minecraft:durability": {
+				"max_durability": 300,
+				"damage_chance": {
+					"max": 100,
+					"min": 60
+				}
+			},
+			"minecraft:enchantable": {
+				"value": 12,
+				"slot": "sword"
+			},
+			"minecraft:digger": {
+				"destroy_speeds": [
+					{"block":"minecraft:web","speed": 60},
+					{"block":"minecraft:bamboo_sapling","speed": 60},
+					{"block":"minecraft:bamboo","speed": 60}
+				]
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"poke:cobalt_ingot"
+						],
+						"repair_amount": "query.max_durability*0.25"
+					},
+					{
+						"items": [
+							"poke:repair_core"
+						],
+						"repair_amount": "query.max_durability"
+					},
+					{
+						"items": [
+							"poke:cobalt_nugget"
+						],
+						"repair_amount": "query.max_durability*0.028"
+					}
+				]
+			}
+		}
+	}
+}

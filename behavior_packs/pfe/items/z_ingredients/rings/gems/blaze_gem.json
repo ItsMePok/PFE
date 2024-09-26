@@ -1,0 +1,14 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:blaze_gem",
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"components": {
+			"minecraft:icon":"poke_blaze_gem"
+		}
+	}
+}

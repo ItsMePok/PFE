@@ -1,0 +1,55 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:snow_shovel",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.shovel"
+			}
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:icon":"poke_snow_shovel",
+			"minecraft:damage": {"value": 4},
+			"minecraft:digger": {
+				"destroy_speeds": [
+					{
+						"speed": 50,
+						"block": {
+							"tags": "query.any_tag('snow')"
+						}
+					},
+					{
+						"block": "minecraft:snow",
+						"speed": 50
+					},
+					{
+						"block": "powder_snow",
+						"speed": 50
+					}
+				]
+			},
+			"minecraft:hand_equipped": true,
+			"minecraft:durability": {
+				"max_durability": 2500
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"poke:poke_plastic"
+						],
+						"repair_amount": "query.max_durability*0.25"
+					},
+					{
+						"items": [
+							"poke:repair_core"
+						],
+						"repair_amount": "query.max_durability"
+					}
+				]
+			}
+		}
+	}
+}

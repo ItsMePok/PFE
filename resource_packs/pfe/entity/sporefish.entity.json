@@ -1,0 +1,37 @@
+{
+	"format_version":"1.8.0",
+	"minecraft:client_entity":{
+		"description":{
+			"identifier":"poke:sporefish",
+			"materials":{
+				"default":"entity_alphatest"
+			},
+			"textures":{
+				"default":"textures/entity/passive/poke_sporefish"
+			},
+			"geometry":{
+				"default":"geometry.poke.sporefish"
+			},
+			"scripts":{
+				"pre_animation":[
+					"variable.zrot=!query.is_in_water?Math.cos((query.time_stamp+query.frame_alpha)*14.32)*90:0.0;",
+					"variable.animationamountblend=Math.lerp(variable.AnimationAmountPrev,variable.AnimationAmount,query.frame_alpha);"
+				]
+			},
+			"animations":{
+				"flop":"animation.sporefish.flop",
+				"swim":"animation.sporefish.swim"
+			},
+			"animation_controllers":[
+				{
+					"general":"controller.animation.fish.general"
+				}
+			],
+			"render_controllers":["controller.render.poke.default"],
+			"spawn_egg":{
+				"base_color":"#066987",
+				"overlay_color":"#d98209"
+			}
+		}
+	}
+}

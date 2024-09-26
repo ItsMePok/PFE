@@ -1,0 +1,45 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:ring_2",//Blaze Ring
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": ["poke:repair_core"],
+						"repair_amount": "query.max_durability"
+					}
+				]
+			},
+			"minecraft:icon":"poke_ring_2",
+			"minecraft:cooldown": {
+				"category": "poke:ring_2",
+				"duration": 15
+			},
+			"minecraft:durability": {
+				"max_durability": 2500,
+				"damage_chance": {
+					"min": 60,
+					"max": 100
+				}
+			},
+			"minecraft:enchantable": {
+				"slot": "flintsteel",
+				"value": 23
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:tags": {"tags": [
+				"poke:blaze_ring_proj"//Projectile id for script
+			]},
+			"minecraft:use_modifiers": {
+				"use_duration": 0,
+				"movement_modifier": 0.25
+			}
+		}
+	}
+}

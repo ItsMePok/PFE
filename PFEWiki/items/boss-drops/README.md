@@ -1,2 +1,0 @@
-# Boss Drops
-
