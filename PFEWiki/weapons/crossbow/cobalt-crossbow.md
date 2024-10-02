@@ -1,6 +1,6 @@
 # Cobalt Crossbow
 
-![poke\_cobalt\_crossbow](https://github.com/ItsMePok/PFE/assets/136857747/08979f6f-8a41-4d74-9516-35f8bb094111)
+![](https://github.com/ItsMePok/PFE/assets/136857747/08979f6f-8a41-4d74-9516-35f8bb094111)
 
 Identifier: **poke:cobalt\_crossbow**
 

@@ -1,6 +1,6 @@
 # Honey Crossbow
 
-![poke\_honey\_crossbow](https://github.com/user-attachments/assets/6ad3e2f1-1e81-47e3-9cbf-8d38e1bd9bea)
+![](https://github.com/user-attachments/assets/6ad3e2f1-1e81-47e3-9cbf-8d38e1bd9bea)
 
 Identifier: **poke:honey\_crossbow**
 

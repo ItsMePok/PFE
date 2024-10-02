@@ -1,6 +1,8 @@
 # Repair Core
 
-## ntifier: **poke:repair\_core** <a href="#identifier" id="identifier"></a>
+<figure><img src="https://github.com/ItsMePok/PFE/assets/136857747/f15d8501-f297-4a77-b6de-3681297cdb09" alt=""><figcaption></figcaption></figure>
+
+## identifier: **poke:repair\_core** <a href="#identifier" id="identifier"></a>
 
 ## Usage:
 
@@ -8,9 +10,9 @@
 {% tab title="Anvil" %}
 <figure><img src="https://minecraft.wiki/images/thumb/Anvil_(N)_BE3.png/150px-Anvil_(N)_BE3.png?30415" alt=""><figcaption><p>Used in the 2nd slot of the <a href="https://minecraft.wiki/w/Anvil#Repairing_and_renaming_items">Anvil</a></p></figcaption></figure>
 
-|                                Input                               |                                                                Input 2                                                               |     Output    |
-| :----------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------: | :-----------: |
-| Any Item from PFE that takes Durability. **(Excluding Upgraders)** | <img src="https://github.com/ItsMePok/PFE/assets/136857747/f15d8501-f297-4a77-b6de-3681297cdb09" alt="" data-size="line">Repair Core | Repaired Item |
+|                                                 Input                                                |                                                                Input 2                                                               |     Output    |
+| :--------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------: | :-----------: |
+| Any Item from PFE that takes Durability. **(Excluding** [**Upgraders**](../../tools/upgraders/)**)** | <img src="https://github.com/ItsMePok/PFE/assets/136857747/f15d8501-f297-4a77-b6de-3681297cdb09" alt="" data-size="line">Repair Core | Repaired Item |
 {% endtab %}
 {% endtabs %}
 

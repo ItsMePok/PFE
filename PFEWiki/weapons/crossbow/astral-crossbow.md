@@ -1,6 +1,6 @@
 # Astral Crossbow
 
-![poke\_astral\_crossbow](https://github.com/ItsMePok/PFE/assets/136857747/9ec296fd-5069-4f8e-a2b3-c35664e5046b)
+![](https://github.com/ItsMePok/PFE/assets/136857747/9ec296fd-5069-4f8e-a2b3-c35664e5046b)
 
 Identifier: **poke:astral\_crossbow**
 

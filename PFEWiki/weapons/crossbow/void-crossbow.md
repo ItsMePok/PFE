@@ -1,22 +1,22 @@
 # Void Crossbow
 
-![poke\_void\_crossbow](https://github.com/ItsMePok/PFE/assets/136857747/b0d81c18-79b2-4179-9ca2-9f6c927ffdd3)
+![](https://github.com/ItsMePok/PFE/assets/136857747/b0d81c18-79b2-4179-9ca2-9f6c927ffdd3)
 
-Identifier: **poke:void\_crossbow**
+## Identifier: **poke:void\_crossbow** <a href="#identifier" id="identifier"></a>
 
-Durability: **2000**
+## Durability: **2000** <a href="#durability" id="durability"></a>
 
-Damage: **Based on the Arrow shot**
+## Damage: **Based on the Arrow shot** <a href="#damage" id="damage"></a>
 
-Enchant type: **Flint & Steel** (Check Notes for more info)
+## Enchant type: **Flint & Steel** (Check Notes for more info) <a href="#enchant-type" id="enchant-type"></a>
 
-Repairable with:
+## Repairable with:
 
 * [**Repair Core**](https://pfewiki.gitbook.io/home/items/cores/repair-core)
 * [**Void Ingot**](https://pfewiki.gitbook.io/home/items/ingots/void-ingot)
 * [**Void Nugget**](https://pfewiki.gitbook.io/home/items/nuggets/void-nugget)
 
-Can Shoot:
+## Can Shoot:
 
 * [**Galaxy Arrow**](https://pfewiki.gitbook.io/home/weapons/arrows/galaxy-arrow)
 * [**Void Arrow**](https://pfewiki.gitbook.io/home/weapons/arrows/void-arrow)

@@ -5,25 +5,28 @@
 ## Potions
 
 * Cobalt Potion
-  * Awkward Potion + Cobalt Ingot
+  * <img src="https://minecraft.wiki/images/Water_Bottle_JE2_BE2.png?acae5" alt="" data-size="line"> [Awkward Potion](https://minecraft.wiki/w/Potion#Base\_potions)  + Cobalt Ingot
 * Hellish Potion
-  * Awkward Potion + Hellish Ingot
+  * <img src="https://minecraft.wiki/images/Water_Bottle_JE2_BE2.png?acae5" alt="" data-size="line"> [Awkward Potion](https://minecraft.wiki/w/Potion#Base\_potions)  + Hellish Ingot
 * Demonic Potion
-  * Awkward Potion + Demonic Ingot
+  * <img src="https://minecraft.wiki/images/Water_Bottle_JE2_BE2.png?acae5" alt="" data-size="line"> [Awkward Potion](https://minecraft.wiki/w/Potion#Base\_potions)  + Demonic Ingot
 * Void Potion
-  * Awkward Potion + Void Ingot
+  * <img src="https://minecraft.wiki/images/Water_Bottle_JE2_BE2.png?acae5" alt="" data-size="line"> [Awkward Potion +](https://minecraft.wiki/w/Potion#Base\_potions) Void Ingot
 * Death Potion
-  * Awkward Potion + Death Ingot
+  * <img src="https://minecraft.wiki/images/Water_Bottle_JE2_BE2.png?acae5" alt="" data-size="line"> [Awkward Potion](https://minecraft.wiki/w/Potion#Base\_potions)  + Death Ingot
 * Nebula Potion
-  * Awkward Potion + Nebula Ingot
+  * <img src="https://minecraft.wiki/images/Water_Bottle_JE2_BE2.png?acae5" alt="" data-size="line"> [Awkward Potion](https://minecraft.wiki/w/Potion#Base\_potions) + Nebula Ingot
 
 ## Food
 
 * Root Beer
-  * Sugar Water + Beetroot
+  * Sugar Water + <img src="https://minecraft.wiki/images/Beetroot_JE2_BE2.png?649dc" alt="" data-size="line"> [Beetroot](https://minecraft.wiki/w/Beetroot)
 * Eggnog
-  * Milk Bottle + Egg
+  * Milk Bottle + <img src="https://minecraft.wiki/images/thumb/Egg_JE2_BE2.png/150px-Egg_JE2_BE2.png?495d9" alt="" data-size="line"> [Egg](https://minecraft.wiki/w/Egg)
 * Hot Coco
-  * Milk Bottle + Coco Beans
+  * Milk Bottle + <img src="https://minecraft.wiki/images/thumb/Cocoa_Beans_JE4_BE3.png/150px-Cocoa_Beans_JE4_BE3.png?48f20" alt="" data-size="line"> [Coco Beans](https://minecraft.wiki/w/Cocoa\_Beans)
 * Sugar Water
-  * Water Bottle + Sugar
+  * <img src="https://minecraft.wiki/images/Water_Bottle_JE2_BE2.png?acae5" alt="" data-size="line"> [Water Bottle](https://minecraft.wiki/w/Potion#Base\_potions) + <img src="https://minecraft.wiki/images/Sugar_JE2_BE2.png?9185b" alt="" data-size="line"> [Sugar](https://minecraft.wiki/w/Sugar)
+* Pumpkin Spice
+  * Milk Bottle + <img src="https://minecraft.wiki/images/thumb/Carved_Pumpkin_(N)_JE5.png/150px-Carved_Pumpkin_(N)_JE5.png?32a4a" alt="Uncarved Pumpkin" data-size="line"> [Pumpkin (UNCARVED)](https://minecraft.wiki/w/Pumpkin)
+

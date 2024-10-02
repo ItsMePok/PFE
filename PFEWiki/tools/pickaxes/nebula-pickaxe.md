@@ -40,8 +40,8 @@
 
 Items:
 
-* <img src="https://github.com/user-attachments/assets/21b0e1ab-de86-4f43-8618-453683820f4b" alt="Nebula Ingot" data-size="line">Nebula Ingot
-* <img src="https://github.com/user-attachments/assets/057890f5-7558-4ffa-bba9-40c022d46622" alt="Nebula Core" data-size="line">Nebula Core
+* <img src="https://github.com/user-attachments/assets/21b0e1ab-de86-4f43-8618-453683820f4b" alt="Nebula Ingot" data-size="line">[Nebula Ingot](../../items/ingots/nebula-ingot.md)
+* <img src="https://github.com/user-attachments/assets/057890f5-7558-4ffa-bba9-40c022d46622" alt="Nebula Core" data-size="line">[Nebula Core](../../items/cores/nebula-core.md)
 * <img src="https://github.com/user-attachments/assets/35eabd0d-edb3-4a69-9890-d02d3674dd6d" alt="Nebula Stick" data-size="line">Nebula Stick
 {% endtab %}
 {% endtabs %}

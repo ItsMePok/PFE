@@ -1,6 +1,6 @@
 # Floppy Disk
 
-![poke\_floppy\_disk](https://github.com/ItsMePok/PFE/assets/136857747/e9d33ff5-9520-4b5d-99f6-33a9906ee64b)
+![](https://github.com/ItsMePok/PFE/assets/136857747/e9d33ff5-9520-4b5d-99f6-33a9906ee64b)
 
 Identifier: **poke:floppy\_disk**
 

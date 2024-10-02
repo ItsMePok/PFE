@@ -1,24 +1,52 @@
 # Amethyst Sword
 
-![poke\_amethyst\_sword](https://github.com/ItsMePok/PFE/assets/136857747/42582fd4-22b8-4331-af44-6d87f83a0b6d)
+<div align="center" data-full-width="false">
 
-Identifier: **poke:amethyst\_sword**
+<img src="https://github.com/ItsMePok/PFE/assets/136857747/42582fd4-22b8-4331-af44-6d87f83a0b6d" alt="">
 
-Durability: **2000**
+</div>
 
-Damage: **9**
+## Identifier: **poke:amethyst\_sword** <a href="#identifier" id="identifier"></a>
 
-Mining Speed: **60**
+## Durability: **2000** <a href="#durability" id="durability"></a>
 
-Enchant type: **Sword**
+## Damage: **9** <a href="#damage" id="damage"></a>
 
-Repairable with:
+## Mining Speed: **60** <a href="#mining-speed" id="mining-speed"></a>
 
-* [**Repair Core**](https://pfewiki.gitbook.io/home/items/cores/repair-core)
-* [**Amethyst Shard**](https://minecraft.wiki/w/Amethyst\_Shard)
+## Enchant type: **Sword** <a href="#enchant-type" id="enchant-type"></a>
 
-Can Break:
+## Repairable with:
 
-* **Cobwebs**
-* **Bamboo**
-* **Bamboo Sapling**
+* <img src="https://github.com/ItsMePok/PFE/assets/136857747/f15d8501-f297-4a77-b6de-3681297cdb09" alt="" data-size="line">[**Repair Core**](../../items/cores/repair-core.md)
+* <img src="https://minecraft.wiki/images/Amethyst_Shard_JE2_BE1.png?56555" alt="" data-size="line">[**Amethyst Shard**](https://minecraft.wiki/w/Amethyst\_Shard)
+
+
+
+## Can Break:
+
+* <img src="https://minecraft.wiki/images/thumb/Cobweb_JE5.png/150px-Cobweb_JE5.png?54818" alt="" data-size="line">[**Cobwebs**](https://minecraft.wiki/w/Cobweb)
+* <img src="https://minecraft.wiki/images/thumb/Leafless_Bamboo_JE1_BE2.png/150px-Leafless_Bamboo_JE1_BE2.png?c0e8e" alt="" data-size="line">[**Bamboo**](https://minecraft.wiki/w/Bamboo)
+* <img src="https://minecraft.wiki/images/thumb/Bamboo_Shoot_JE1_BE1.png/150px-Bamboo_Shoot_JE1_BE1.png?34e69" alt="" data-size="line">[**Bamboo Sapling**](https://minecraft.wiki/w/Bamboo)
+
+## Obtaining:
+
+{% tabs %}
+{% tab title="Recipe" %}
+<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
+
+|     |                                                                                                                                        |     |
+| :-: | :------------------------------------------------------------------------------------------------------------------------------------: | :-: |
+|     | ![Amethyst Block](https://minecraft.wiki/images/thumb/Block\_of\_Amethyst\_JE3\_BE1.png/150px-Block\_of\_Amethyst\_JE3\_BE1.png?14501) |     |
+|     | ![Amethyst Block](https://minecraft.wiki/images/thumb/Block\_of\_Amethyst\_JE3\_BE1.png/150px-Block\_of\_Amethyst\_JE3\_BE1.png?14501) |     |
+|     |                         ![Netherite Sword](https://minecraft.wiki/images/Netherite\_Sword\_JE2\_BE2.png?8e866)                         |     |
+
+Items:
+
+* <img src="https://minecraft.wiki/images/thumb/Block_of_Amethyst_JE3_BE1.png/150px-Block_of_Amethyst_JE3_BE1.png?14501" alt="Amethyst Block" data-size="line"> [Amethyst Block](https://minecraft.wiki/w/Block\_of\_Amethyst)
+* <img src="https://minecraft.wiki/images/Netherite_Sword_JE2_BE2.png?8e866" alt="Netherite Sword" data-size="line"> [Netherite Sword](https://minecraft.wiki/w/Netherite\_Sword)
+{% endtab %}
+{% endtabs %}
+
+
+

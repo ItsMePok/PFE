@@ -1,4 +1,4 @@
-# Cobalt-Ingot
+# Cobalt Ingot
 
 
 
@@ -48,7 +48,7 @@
 ## Potions
 
 * Cobalt Potion
-  * Awkward Potion + Cobalt Ingot
+  * <img src="https://minecraft.wiki/images/Water_Bottle_JE2_BE2.png?acae5" alt="" data-size="line"> [Awkward Potion](https://minecraft.wiki/w/Potion#Base\_potions) + <img src="https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694" alt="" data-size="line"> [Cobalt Ingot](cobalt-ingot.md)
 
 
 
@@ -70,7 +70,7 @@ More info about brewing can be found in the: [brewing-guide.md](../../misc-other
 
 Items:
 
-* <img src="https://github.com/user-attachments/assets/8cdeb228-b758-4b2c-873a-208cf8bcdc77" alt="Cobalt Nugget" data-size="line">Cobalt Nugget
+* <img src="https://github.com/user-attachments/assets/8cdeb228-b758-4b2c-873a-208cf8bcdc77" alt="Cobalt Nugget" data-size="line">[Cobalt Nugget](../nuggets/cobalt-nugget.md)
 {% endtab %}
 
 {% tab title="Recipe 2" %}
@@ -84,10 +84,10 @@ Items:
 
 Items:
 
-* <img src="https://github.com/user-attachments/assets/4a13c762-0f6f-40af-84e8-d50db1294a5d" alt="Cobalt Block" data-size="line">Cobalt Block
+* <img src="https://github.com/user-attachments/assets/4a13c762-0f6f-40af-84e8-d50db1294a5d" alt="Cobalt Block" data-size="line">[Cobalt Block](../../blocks/ore-blocks/cobalt-block.md)
 
 Outputs:
 
-* 9x <img src="https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694" alt="" data-size="line"> Cobalt Ingots
+* 9x <img src="https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694" alt="" data-size="line"> [Cobalt Ingots](cobalt-ingot.md)
 {% endtab %}
 {% endtabs %}

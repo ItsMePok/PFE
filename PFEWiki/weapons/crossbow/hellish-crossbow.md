@@ -1,6 +1,6 @@
 # Hellish Crossbow
 
-![poke\_hellish\_crossbow](https://github.com/ItsMePok/PFE/assets/136857747/a16795dd-6bb8-4658-a152-b746b4a484cf)
+![](https://github.com/ItsMePok/PFE/assets/136857747/a16795dd-6bb8-4658-a152-b746b4a484cf)
 
 Identifier: **poke:hellish\_crossbow**
 

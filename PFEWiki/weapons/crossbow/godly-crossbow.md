@@ -1,6 +1,6 @@
 # Godly Crossbow
 
-![poke\_godly\_crossbow](https://github.com/ItsMePok/PFE/assets/136857747/8ac541e6-5659-4d33-a4d1-53b5c61c6673)
+![](https://github.com/ItsMePok/PFE/assets/136857747/8ac541e6-5659-4d33-a4d1-53b5c61c6673)
 
 Identifier: **poke:godly\_crossbow**
 

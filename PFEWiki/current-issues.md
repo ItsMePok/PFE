@@ -24,3 +24,8 @@ A full list of bugs can be found in the PFE Discord: [https://discord.gg/PbkBYcE
 **Temp Fix**: The automation blocks are always active (Added in [v1.2.2.1.md](changelog-history/betas/v1.2.2.1.md "mention"))&#x20;
 {% endhint %}
 
+{% hint style="danger" %}
+**Issue:** Barometer is Broken\
+\
+**When is this Fixable?:** currently uncertain
+{% endhint %}
