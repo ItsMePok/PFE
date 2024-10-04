@@ -535,6 +535,8 @@ tile.poke:cobbled_shadowstone_wall.name=Cobbled Shadowstone Wall
 tile.poke:limestone_brick_wall.name=Limestone Brick Wall
 tile.poke:honey_tile_wall.name=Honey Tile Wall
 ##Sherds
+item.poke:pfe-spook_pottery_sherd=Spook Pottery Sherd
+item.poke:pfe-spook_pottery_sherd.name=Spook Pottery Sherd
 item.poke:pfe-knightling_pottery_sherd=Knightling Pottery Sherd
 item.poke:pfe-knightling_pottery_sherd.name=Knightling Pottery Sherd
 item.poke:pfe-star_pottery_sherd=Star Pottery Sherd

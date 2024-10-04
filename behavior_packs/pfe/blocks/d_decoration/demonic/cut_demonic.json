@@ -8,6 +8,10 @@
 			}
 		},
 		"components": {
+			"minecraft:redstone_conductivity": {
+				"redstone_conductor": true,
+				"allows_wire_to_step_down": true
+			},
 			"minecraft:collision_box": true,
 			"minecraft:selection_box": true,
 			"minecraft:destructible_by_mining": {

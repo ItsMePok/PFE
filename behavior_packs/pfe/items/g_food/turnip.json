@@ -21,7 +21,7 @@
 				"use_duration": 1.6
 			},
 			"minecraft:use_animation": "eat",
-			"minecraft:block_placer": {"use_on":["minecraft:farmland"],"block": "poke:turnip_crop"},
+			"minecraft:block_placer": {"use_on":["minecraft:farmland"],"block": "poke:turnip_crop"/*,"replace_block_item":true*/},
 			"minecraft:tags": {
 				"tags": ["minecraft:is_food"]
 			}

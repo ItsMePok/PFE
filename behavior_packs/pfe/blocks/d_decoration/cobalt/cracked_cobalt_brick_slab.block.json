@@ -11,6 +11,10 @@
 			{
 				"condition": "q.block_state('poke:double')",
 				"components": {
+					"minecraft:redstone_conductivity": {
+						"redstone_conductor": true,
+						"allows_wire_to_step_down": true
+					},
 					"minecraft:custom_components":[
 						"poke:cc_slab_loot"
 					]

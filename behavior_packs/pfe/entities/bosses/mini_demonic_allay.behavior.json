@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.10",
+	"format_version": "1.21.40",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:mini_demonic_allay",
@@ -15,6 +15,7 @@
 			}
 		},
 		"components": {
+			"minecraft:dimension_bound":{},
 			"minecraft:scale": {
 				"value": 0.5
 			},
@@ -75,7 +76,7 @@
 			"minecraft:damage_sensor": {
 				"triggers": {
 					"cause": "fall",
-					"deals_damage": false
+					"deals_damage": "no"
 				}
 			},
 			"minecraft:jump.static": {},

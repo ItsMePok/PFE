@@ -9,6 +9,10 @@
 			}
 		},
 		"components": {
+			"minecraft:redstone_conductivity": {
+				"redstone_conductor": true,
+				"allows_wire_to_step_down": true
+			},
 			"minecraft:map_color": "#212250",
 			"tag:pfe": {},
 			"tag:metal": {},

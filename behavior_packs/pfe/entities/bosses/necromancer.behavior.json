@@ -1,5 +1,5 @@
 { //this entity model, animations & textures was made by O2God for PFE
-	"format_version": "1.21.10",
+	"format_version": "1.21.40",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:necromancer",
@@ -230,7 +230,7 @@
 				"triggers": [
 					{
 						"cause": "fall",
-						"deals_damage": false
+						"deals_damage": "no"
 					}
 				]
 			},

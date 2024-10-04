@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.10",
+	"format_version": "1.21.40",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:dummy_block",
@@ -9,6 +9,7 @@
 			"runtime_identifier": "minecraft:snowball"
 		},
 		"components":{
+			"minecraft:transient":{},
 			"minecraft:collision_box": {
 				"height": 1,
 				"width": 1

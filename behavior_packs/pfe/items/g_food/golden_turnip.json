@@ -20,7 +20,7 @@
 				"use_duration": 1.6
 			},
 			"minecraft:use_animation": "eat",
-			"minecraft:block_placer": {"block": "poke:golden_turnip_trophy"},
+			"minecraft:block_placer": {"block": "poke:golden_turnip_trophy"/*,"replace_block_item":true*/},
 			"minecraft:hover_text_color":"minecoin_gold",
 			"minecraft:tags": {
 				"tags": ["minecraft:is_food"]

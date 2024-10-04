@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.10",
+	"format_version": "1.21.40",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:mushroom_buddy",
@@ -255,7 +255,7 @@
 			"minecraft:damage_sensor": {
 				"triggers": {
 					"cause": "fall",
-					"deals_damage": false
+					"deals_damage": "no"
 				}
 			},
 			

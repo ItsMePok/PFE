@@ -1,5 +1,5 @@
 {
-	"format_version": "1.16.0",
+	"format_version": "1.21.40",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:crimson_sporeshroom",
@@ -823,6 +823,7 @@
 				"is_pushable": true,
 				"is_pushable_by_piston": true
 			},
+			"minecraft:fire_immune": {},
 			"minecraft:conditional_bandwidth_optimization": {},
 			"minecraft:damage_sensor": {
 				"triggers": [
@@ -845,7 +846,7 @@
 							},
 							"event": "minecraft:become_brown"
 						},
-						"deals_damage": false,
+						"deals_damage": "no",
 						"on_damage_sound_event": "convert_mooshroom"
 					},
 					{
@@ -867,7 +868,7 @@
 							},
 							"event": "minecraft:become_red"
 						},
-						"deals_damage": false,
+						"deals_damage": "no",
 						"on_damage_sound_event": "convert_mooshroom"
 					}
 				]

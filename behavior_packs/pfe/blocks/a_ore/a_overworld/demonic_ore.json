@@ -18,6 +18,10 @@
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 2//Deepslate
 			},
+			"minecraft:redstone_conductivity": {
+				"redstone_conductor": true,
+				"allows_wire_to_step_down": true
+			},
 			"minecraft:geometry":{"identifier": "minecraft:geometry.full_block"},
 			"minecraft:loot": "loot_tables/poke/blocks/demonic_ore.json"
 			,

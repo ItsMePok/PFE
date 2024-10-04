@@ -100,27 +100,28 @@ world.afterEvents.playerBreakBlock.subscribe(data => {
 const pfeFoodList = ["poke:pumpkin_spice","poke:xp_vial","poke:golden_chicken","poke:rotten_chicken","poke:demonic_potion","poke:hellish_potion","poke:nebula_potion","poke:void_potion","poke:death_potion","poke:cobalt_potion","poke:cobalt_soup","poke:crimson_sporeshroom_stew","poke:root_beer","poke:hellish_soup","poke:nebula_noodles","poke:warped_sporeshroom_stew","poke:milk_bottle","poke:banished_star_x10","poke:banished_star_x9"];
 world.afterEvents.itemCompleteUse.subscribe(item => {
     if (!pfeFoodList.includes(item.itemStack.typeId)) return;
-    if (item.itemStack.typeId == "poke:xp_vial") {item.source.runCommandAsync("xp 160 @s");return};
-    if (item.itemStack.typeId == "poke:cobalt_potion") {item.source.addEffect('night_vision', 3600);item.source.addEffect('regeneration', 2400)}
-    if (item.itemStack.typeId == "poke:cobalt_soup"){item.source.addEffect('night_vision', 2400,{showParticles: false});return};
-    if (item.itemStack.typeId == "poke:root_beer") {item.source.addEffect('speed', 600, {amplifier: 4,});return};
-    if (item.itemStack.typeId == "poke:pumpkin_spice") {item.source.addEffect('invisibility', 600);item.source.addEffect('speed', 600, {amplifier: 4,});return};
-    if (item.itemStack.typeId == "poke:crimson_sporeshroom_stew") {item.source.addEffect('fire_resistance', 1200);return};
-    if (item.itemStack.typeId == "poke:warped_sporeshroom_stew") {item.source.addEffect('fire_resistance', 1200);return};
-    if (item.itemStack.typeId == "poke:hellish_soup") {item.source.addEffect('fire_resistance', 1200);return};
-    if (item.itemStack.typeId == "poke:nebula_noodles") {item.source.addEffect('strength', 600, {amplifier: 7,});return};
-    if (item.itemStack.typeId == "poke:milk_bottle") {item.source.runCommandAsync("effect @s clear");return};
-    if (item.itemStack.typeId == "poke:demonic_potion") {item.source.runCommandAsync("function pfe_items/demonic_potion");return};
-    if (item.itemStack.typeId == "poke:hellish_potion") {item.source.runCommandAsync("function pfe_items/hellish_potion");return};
-    if (item.itemStack.typeId == "poke:nebula_potion") {item.source.runCommandAsync("function pfe_items/nebula_potion");return};
-    if (item.itemStack.typeId == "poke:void_potion") {item.source.runCommandAsync("function pfe_items/void_potion");return};
-    if (item.itemStack.typeId == "poke:death_potion") {item.source.runCommandAsync("kill @s");return};
-    if (item.itemStack.typeId == "poke:rotten_chicken") {item.source.addEffect('nausea', 400);return};
-    if (item.itemStack.typeId == "poke:golden_chicken") {item.source.addEffect('village_hero', 400, {amplifier: 1,});return};
-    if (item.itemStack.typeId == "poke:demonic_potion") {item.source.runCommandAsync("function pfe_items/demonic_potion");return};
-    if (item.itemStack.typeId == "poke:banished_star_x10") {item.source.runCommandAsync("damage @a[r=100] 32767000 entity_attack entity @s");return};
-    if (item.itemStack.typeId == "poke:banished_star_x9") {item.source.runCommandAsync("damage @s 32767000 entity_attack");return};
-    console.warn('not found')
+    switch(item.itemStack.typeId){
+        case 'poke:xp_vial':{item.source.runCommandAsync("xp 160 @s");return};
+        case 'poke:cobalt_potion':{item.source.addEffect('night_vision', 3600);item.source.addEffect('regeneration', 2400)}
+        case 'poke:cobalt_soup':{item.source.addEffect('night_vision', 2400,{showParticles: false});return};
+        case 'poke:root_beer':{item.source.addEffect('speed', 600, {amplifier: 4,});return};
+        case 'poke:pumpkin_spice':{item.source.addEffect('invisibility', 600);item.source.addEffect('speed', 600, {amplifier: 4,});return};
+        case 'poke:crimson_sporeshroom_stew':{item.source.addEffect('fire_resistance', 1200);return};
+        case 'poke:warped_sporeshroom_stew':{item.source.addEffect('fire_resistance', 1200);return};
+        case 'poke:hellish_soup':{item.source.addEffect('fire_resistance', 1200);return};
+        case 'poke:nebula_noodles':{item.source.addEffect('strength', 600, {amplifier: 7,});return};
+        case 'poke:milk_bottle':{item.source.runCommandAsync("effect @s clear");return};
+        case 'poke:demonic_potion':{item.source.runCommandAsync("function pfe_items/demonic_potion");return};
+        case 'poke:hellish_potion':{item.source.runCommandAsync("function pfe_items/hellish_potion");return};
+        case 'poke:nebula_potion':{item.source.runCommandAsync("function pfe_items/nebula_potion");return};
+        case 'poke:void_potion':{item.source.runCommandAsync("function pfe_items/void_potion");return};
+        case 'poke:death_potion':{item.source.runCommandAsync("kill @s");return};
+        case 'poke:rotten_chicken':{item.source.addEffect('nausea', 400);return};
+        case 'poke:golden_chicken':{item.source.addEffect('village_hero', 400, {amplifier: 1,});return};
+        case 'poke:demonic_potion':{item.source.runCommandAsync("function pfe_items/demonic_potion");return};
+        case 'poke:banished_star_x10':{item.source.runCommandAsync("damage @a[r=100] 32767000 entity_attack entity @s");return};
+        case 'poke:banished_star_x9':{item.source.runCommandAsync("damage @s 32767000 entity_attack");return};
+    }
     return;
 });
 // Projectile shooters & Windzooka/Blazooka
@@ -334,87 +335,87 @@ class PFEPhantomicConduit {
         var block_location_x = data.block.x
         var block_location_y = data.block.y
         var block_location_z = data.block.z
-       // if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
+        if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
         data.block.setPermutation(data.block.permutation.withState('pfe:active', 1))
         data.dimension.runCommand('execute positioned '+block_location_x+' '+block_location_y+' '+block_location_z+' as @e[r=50,family=phantom] run damage @s 20')
         return;
-       /* }
+        }
         if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== undefined) {
             data.block.setPermutation(data.block.permutation.withState('pfe:active', 0))
             return;
         }
-        return;*/
+        return;
     }
 }
 //Demonic Allay Conduit
 class PFEDemonicAConduit {
     onTick(data:BlockComponentTickEvent) {
         const block_location = `${data.block.x} ${data.block.y} ${data.block.z}`
-       // if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
+        if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
             data.block.setPermutation(data.block.permutation.withState('pfe:active', 1))
             data.dimension.runCommand('execute positioned '+block_location+' as @e[r=50,family=pfe:demonic_allay] run damage @s 20')
         return;
-        /*}
+        }
         if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== undefined) {
             data.block.setPermutation(data.block.permutation.withState('pfe:active', 0))
             return;
         }
-        return;*/
+        return;
     }
 }
 //Cobblestone Generator's ability
 class PFECobbleGen {
     onTick(data:BlockComponentTickEvent) {
-       // if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
+        if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
             data.block.setPermutation(data.block.permutation.withState('pfe:active', 1))
             if (data.block.above()?.typeId != 'minecraft:air')return;
             data.block.above()?.setType('minecraft:cobblestone')
             //data.dimension.runCommand('execute positioned '+block_location_x+' '+block_location_y+' '+block_location_z+' if block ~ ~1 ~ air run setblock ~ ~1 ~ cobblestone')
             return;
-       /* }
+        }
         if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== undefined) {
             data.block.setPermutation(data.block.permutation.withState('pfe:active', 0))
             return;
         }
-        return;*/
+        return;
     }
 }
 //Cobbler's ability
 class PFECobbler {
     onTick(data:BlockComponentTickEvent) {
         const block_location = `${data.block.x} ${data.block.y} ${data.block.z}`
-       // if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
+        if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
             data.block.setPermutation(data.block.permutation.withState('pfe:active', 1))
             data.dimension.runCommand(`execute positioned ${block_location} run structure load poke:cobblestone_item ~ ~-1 ~`)
             return;
-        /*}
+        }
         if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== undefined) {
             data.block.setPermutation(data.block.permutation.withState('pfe:active', 0))
             return;
         }
-        return;*/
+        return;
     }
 }
 //Block Breaker's ability
 class PFEBlockBreaker {
     onTick(data:BlockComponentTickEvent) {
         const block_location = `${data.block.x} ${data.block.y} ${data.block.z}`
-        //if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
+        if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
             data.block.setPermutation(data.block.permutation.withState('pfe:active', 1))
             data.dimension.runCommand(`execute positioned ${block_location} unless block ~ ~-1 ~ bedrock run setblock ~ ~-1 ~ air destroy`)
             return;
-        /*}
+        }
         if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== undefined) {
             data.block.setPermutation(data.block.permutation.withState('pfe:active', 0))
             return;
         }
-        return;*/
+        return;
     }
 }
 //Dirter's ability
 class PFEDirter{
     onTick(data:BlockComponentTickEvent) {
-        //if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
+        if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
             data.block.setPermutation(data.block.permutation.withState('pfe:active', 1))
             if (data.block.typeId == 'poke:dirter_east') {
                 if (data.block.east()?.typeId == 'minecraft:cobblestone'){
@@ -459,18 +460,18 @@ class PFEDirter{
                 }
             }
             return;
-        /*}
+        }
         if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== undefined) {
             data.block.setPermutation(data.block.permutation.withState('pfe:active', 0))
             return;
         }
-        return;*/
+        return;
     }
 }
 //Duster's ability
 class PFEDuster {
     onTick(data:BlockComponentTickEvent) {
-        //if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
+        if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
             data.block.setPermutation(data.block.permutation.withState('pfe:active', 1))
             if (data.block.typeId == 'poke:duster_east') {  
                 if (data.block.east()?.typeId == 'minecraft:dirt') {
@@ -543,28 +544,28 @@ class PFEDuster {
                 }
             }
             return;
-       /* }
+        }
         if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== undefined) {
             data.block.setPermutation(data.block.permutation.withState('pfe:active', 0))
             return;
         }
-        return;*/
+        return;
     }
 }
 //Magnet(Block)'s ability
 class PFEMagnetBlock{
     onTick(data:BlockComponentTickEvent) {
         const block_location = `${data.block.x} ${data.block.y} ${data.block.z}`
-        //if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
+        if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
             data.block.setPermutation(data.block.permutation.withState('pfe:active', 1))
             data.dimension.runCommand(`execute positioned ${block_location} as @e[type=item,r=10] run tp @s ${block_location}`)
             return;
-        /*}
+        }
         if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== undefined) {
             data.block.setPermutation(data.block.permutation.withState('pfe:active', 0))
             return;
         }
-        return;*/
+        return;
     }
 }
 //Bulb Light Color 
@@ -637,7 +638,7 @@ class PFECalibrate {
 class PFECaliBlockBreaker {
     onTick(data:BlockComponentTickEvent) {
         const block_location = `${data.block.x} ${data.block.y} ${data.block.z}`
-        //if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
+        if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
             data.block.setPermutation(data.block.permutation.withState('pfe:active', 1))
             if (data.block.typeId == 'poke:block_breaker_east') {  
                 data.dimension.runCommand('execute positioned '+block_location+' unless block ~1 ~ ~ bedrock run setblock ~1 ~ ~ air destroy')
@@ -664,18 +665,18 @@ class PFECaliBlockBreaker {
                 return;
             }
             return;
-       /* };
+        };
         if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== undefined) {
             data.block.setPermutation(data.block.permutation.withState('pfe:active', 0))
             return;
         }
-        return;*/
+        return;
     }
 }
 //Calibrated Cobble Gens 
 class PFECaliCobbleGen {
     onTick(data:BlockComponentTickEvent) {
-        //if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
+        if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
             data.block.setPermutation(data.block.permutation.withState('pfe:active', 1))
             if (data.block.typeId == 'poke:calibrated_cobblestone_generator_east') {
                 if (data.block.east()?.typeId != 'minecraft:air')return;
@@ -708,12 +709,12 @@ class PFECaliCobbleGen {
                 return;
             }
             return;
-        /*}
+        }
         if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== undefined) {
             data.block.setPermutation(data.block.permutation.withState('pfe:active', 0))
             return;
         }
-        return;*/
+        return;
     }
 }
 //Crops
@@ -777,7 +778,7 @@ class PFELavaSponge{
 class PFEBarometer{
     onTick(data:BlockComponentTickEvent) {
         var weather = data.block.permutation.getState('pfe:weather')
-        //if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
+        if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
             //@ts-ignore
             if (data.dimension.getWeather() == 'Clear' && weather != 0){
                 data.block.setPermutation(data.block.permutation.withState('pfe:weather',0))
@@ -794,7 +795,7 @@ class PFEBarometer{
                 return;
             }
             return;
-        //}
+        }
     }
 }
 //Cassettes

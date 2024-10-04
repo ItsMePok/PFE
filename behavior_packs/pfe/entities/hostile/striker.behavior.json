@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.10",
+	"format_version": "1.21.40",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:striker",
@@ -13,11 +13,16 @@
 				"minecraft:damage_sensor": {
 					"triggers": {
 						"on_damage": {
-							"filters": {
-								"other_with_families": "lightning"
-							}
+							"filters": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "lightning"
+								}
+							]
+
 						},
-						"deals_damage": false
+						"deals_damage": "no"
 					}
 				}
 			},

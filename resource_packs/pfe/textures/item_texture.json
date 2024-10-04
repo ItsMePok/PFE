@@ -456,6 +456,7 @@
 		"poke_farm_quest":{"textures":"textures/items/prog/poke_farm_quest.png"},
 		"poke_craft_quest":{"textures":"textures/items/prog/poke_craft_quest.png"},
 		//Sherds
+		"poke_spook_pottery_sherd":{"textures":"textures/items/sherds/poke_spook"},
 		"poke_spell_pottery_sherd":{"textures":"textures/items/sherds/poke_spell"},
 		"poke_fish_pottery_sherd":{"textures":"textures/items/sherds/poke_fish"},
 		"poke_storm_pottery_sherd":{"textures":"textures/items/sherds/poke_storm"},

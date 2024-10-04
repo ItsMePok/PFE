@@ -1,5 +1,5 @@
 {
-	"format_version": "1.16.0",
+	"format_version": "1.21.40",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:duck",
@@ -153,7 +153,7 @@
 			"minecraft:damage_sensor": {
 				"triggers": {
 					"cause": "fall",
-					"deals_damage": false
+					"deals_damage": "no"
 				}
 			},
 			"minecraft:leashable": {

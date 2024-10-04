@@ -4,14 +4,15 @@
 		"description": {"identifier": "poke:baguette"},
 		"tags": ["crafting_table"],
 		"unlock": [
-			{"item":"bread"}	
+			{"item":"minecraft:bread"}	,
+			{"item":"minecraft:wheat"}
 		],
 		"key": {
-			"X":{"item":"bread"},
-			"Y":{"item":"bread"}
+			"X":{"item":"minecraft:bread"},
+			"Y":{"item":"minecraft:wheat"}
 		},
 		"pattern": [
-			"  X",
+			"  Y",
 			" X ",
 			"Y  "
 		],

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.16.0",
+	"format_version": "1.21.40",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:gilded_allay",
@@ -45,8 +45,8 @@
 				"mass": 0.5
 			},
 			"minecraft:breathable": {
-				"totalSupply": 15,
-				"suffocateTime": 0
+				"total_supply": 15,
+				"suffocate_time": 0
 			},
 			"minecraft:nameable": {},
 			"minecraft:leashable": {
@@ -99,7 +99,7 @@
 								]
 							}
 						},
-						"deals_damage": false
+						"deals_damage": "no"
 					}
 				]
 			},

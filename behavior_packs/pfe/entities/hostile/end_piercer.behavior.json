@@ -1,5 +1,5 @@
 {
-	"format_version": "1.16.0",
+	"format_version":"1.21.40",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:end_piercer",
@@ -94,10 +94,11 @@
 				"target_teleport_chance": 0.05,
 				"light_teleport_chance": 0.05
 			},
-			"minecraft:lookat": {
+			"minecraft:looked_at": {
 				"search_radius": 64,
-				"set_target": true,
-				"look_cooldown": 5,
+				"set_target": "once_and_stop_scanning",
+				"looked_at_cooldown": [5,5],
+				//"find_players_only":true,
 				"filters": {
 					"all_of": [
 						{

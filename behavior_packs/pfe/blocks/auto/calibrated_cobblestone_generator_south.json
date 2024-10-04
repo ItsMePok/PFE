@@ -15,6 +15,10 @@
 			}
 		],
 		"components": {
+			"minecraft:redstone_conductivity": {
+				"redstone_conductor": true,
+				"allows_wire_to_step_down": true
+			},
 			"minecraft:destructible_by_mining": {"seconds_to_destroy": 1},
 			"minecraft:destructible_by_explosion": {"explosion_resistance": 30},
 			"minecraft:map_color": "#17273b",

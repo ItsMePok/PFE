@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.10",
+	"format_version": "1.21.40",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:shuriken_proj",
@@ -52,7 +52,7 @@
 				"triggers": [
 					{
 						"cause": "all",
-						"deals_damage": false
+						"deals_damage": "no"
 					}
 				]
 			}
