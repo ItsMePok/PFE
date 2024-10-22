@@ -83,7 +83,7 @@
 				"duration": 2
 			},
 			"minecraft:tags": {"tags": [
-				"function pfe_items/battleaxe/netherite"
+				"pfe:Command:function pfe_items/battleaxe/netherite:pfeCommandEnd"
 			]},
 			"minecraft:custom_components": [
 				"poke:cc_on_use"

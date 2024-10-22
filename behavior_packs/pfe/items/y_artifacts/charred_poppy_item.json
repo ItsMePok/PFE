@@ -2,14 +2,14 @@
 	"format_version": "1.21.40",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:charred_poppy",
+			"identifier": "poke:charred_poppy_item",//"identifier": "poke:charred_poppy",
 			"menu_category": {
 				"category": "items"
 			}
 		},
 		"components": {
 			"minecraft:max_stack_size": 64,
-			"minecraft:icon":"poke_chared_poppy",
+			"minecraft:icon":"poke_charred_poppy",
 			"minecraft:fuel": {
 				"duration": 160
 			},

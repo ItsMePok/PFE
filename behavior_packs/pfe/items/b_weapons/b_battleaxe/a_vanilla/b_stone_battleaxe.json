@@ -48,7 +48,7 @@
         "duration": 3
       },
       "minecraft:tags": {"tags": [
-				"function pfe_items/battleaxe/stone"
+				"pfe:Command:function pfe_items/battleaxe/stone:pfeCommandEnd"
 			]},
 			"minecraft:custom_components": [
 				"poke:cc_on_use"

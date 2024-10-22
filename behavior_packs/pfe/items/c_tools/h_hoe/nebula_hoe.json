@@ -134,7 +134,8 @@
 				]
 			},
 			"minecraft:tags": {"tags": [
-				"function pfe_items/nebula_hoe"
+				"pfe:Command:function pfe_items/nebula_hoe:pfeCommandEnd",
+				"minecraft:is_hoe"
 			]},
 			"minecraft:custom_components": [
 				"poke:cc_on_use"

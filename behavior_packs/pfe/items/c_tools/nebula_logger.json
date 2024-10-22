@@ -24,9 +24,14 @@
 				"slot": "axe",
 				"value": 30
 			},
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:is_axe"
+				]
+			},
 			"minecraft:digger": {
 				"destroy_speeds": [
-					{"block":{"tags": "query.any_tag( 'wood','axe','leaves')"},"speed": 32}
+					{"block":{"tags": "query.any_tag( 'minecraft:is_hatchet_item_destructible','minecraft:is_axe_item_destructible','wood','axe','leaves')"},"speed": 32}
 				]
 			}
 		}

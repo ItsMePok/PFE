@@ -35,7 +35,7 @@
       },
       "minecraft:hand_equipped": true,
       "minecraft:tags": {"tags": [
-				"tp @e[r=55,family=monster] @s"
+				"pfe:Command:tp @e[r=55,family=monster] @s:pfeCommandEnd"
 			]},
 			"minecraft:custom_components": [
 				"poke:cc_on_use"

@@ -28,6 +28,7 @@
 				"tags": [
 					"minecraft:is_pickaxe",
 					"minecraft:digger",
+					"minecraft:is_tool",
 					"pfe:pickaxe"
 				]
 			},
@@ -41,7 +42,7 @@
 			"minecraft:digger": {
 				"use_efficiency": true,
 				"destroy_speeds": [
-					{"block": {	"tags": "query.any_tag('dirt', 'pfe', 'sand', 'gravel', 'grass', 'snow', 'wood', 'pumpkin', 'plant', 'stone', 'metal', 'rail', 'text_sign', 'diamond_pick_diggable')"},"speed":150},
+					{"block": {	"tags": "query.any_tag('minecraft:diamond_tier_destructible','minecraft:netherite_tier_destructible','pickaxe','minecraft:wood_tier_destructible','minecraft:stone_tier_destructible','minecraft:gold_tier_destructible','minecraft:iron_tier_destructible','minecraft:is_pickaxe_item_destructible', 'dirt', 'pfe', 'sand', 'gravel', 'grass', 'snow', 'wood', 'pumpkin', 'plant', 'stone', 'metal', 'rail', 'text_sign', 'diamond_pick_diggable')"},"speed":150},
 					{"block": "minecraft:heavy_core","speed":150},
 					{"block": "minecraft:shroomlight","speed":150},
 					{"block": "minecraft:crimson_hyphae","speed":150},

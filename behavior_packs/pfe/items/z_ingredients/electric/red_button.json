@@ -10,7 +10,7 @@
 		"components": {
 			"minecraft:icon":"poke_red_button",
 			"minecraft:tags": {"tags": [
-				"stopsound @s"
+				"pfe:Command:stopsound @s:pfeCommandEnd"
 			]},
 			"minecraft:custom_components": [
 				"poke:cc_on_use"

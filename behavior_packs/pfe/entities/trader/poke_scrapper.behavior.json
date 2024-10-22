@@ -45,7 +45,7 @@
 							"event":"poke:shear"
 						},
 						"add_items": {
-							"table": "loot_tables/poke/entities/sporeshroom_milk_bottle.json"
+							"table": "loot_tables/poke/empty.json"
 						},
 						"use_item": true,
 						"play_sounds": "shear",

@@ -13,7 +13,7 @@
 			"minecraft:use_animation": "drink",
 			"minecraft:durability": {"max_durability": 0},
 			"minecraft:tags": {"tags": [
-				"kill @s"
+				"pfe:Command:kill @s:pfeCommandEnd"
 			]},
 			"minecraft:custom_components": [
 				"poke:cc_on_use"

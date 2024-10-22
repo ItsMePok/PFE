@@ -48,7 +48,7 @@
         "duration": 2
       },
 			"minecraft:tags": {"tags": [
-				"function pfe_items/battleaxe/hellish"
+				"pfe:Command:function pfe_items/battleaxe/hellish:pfeCommandEnd"
 			]},
 			"minecraft:custom_components": [
 				"poke:cc_on_use"

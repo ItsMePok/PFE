@@ -12,7 +12,7 @@
 			"minecraft:icon":"poke_empty_vial",
 			"minecraft:tags":{
 				"tags":[
-					"function pfe_items/xp_vial"
+					"pfe:Command:function pfe_items/xp_vial:pfeCommandEnd"
 				]
 			},
 			"minecraft:custom_components":[

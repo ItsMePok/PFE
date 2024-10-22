@@ -42,7 +42,7 @@
         "duration": 2
       },
 			"minecraft:tags": {"tags": [
-				"function pfe_items/battleaxe/molten"
+				"pfe:Command:function pfe_items/battleaxe/molten:pfeCommandEnd"
 			]},
 			"minecraft:custom_components": [
 				"poke:cc_on_use"

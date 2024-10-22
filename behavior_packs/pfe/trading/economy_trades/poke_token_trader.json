@@ -228,6 +228,21 @@
 							"max_uses": 2147483647,
 							"wants": [
 								{
+									"item": "poke:iron_token",
+									"quantity": 1
+								}
+							],
+							"gives": [
+								{
+									"item": "poke:pfe-spook_pottery_sherd",
+									"quantity": 1
+								}
+							]
+						},
+						{
+							"max_uses": 2147483647,
+							"wants": [
+								{
 									"item": "poke:gold_token",
 									"quantity": 1
 								}

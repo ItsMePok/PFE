@@ -34,7 +34,7 @@
 				"value": 28
 			},
 			"minecraft:tags": {"tags": [
-				"effect @s strength 25 2 true"
+				"pfe:Command:effect @s strength 25 2 true:pfeCommandEnd"
 			]},
 			"minecraft:custom_components": [
 				"poke:cc_on_use"

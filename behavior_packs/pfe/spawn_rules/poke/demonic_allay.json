@@ -9,7 +9,7 @@
 			{
 				"minecraft:spawns_underground": {},
 				"minecraft:difficulty_filter": {
-					"max": "hard",
+					"max": "easy",
 					"min": "easy"
 				},
 				"minecraft:spawns_on_block_filter":[
@@ -24,7 +24,67 @@
 					"minecraft:glowstone"
 				],
 				"minecraft:weight": {
-					"default": 10
+					"default": 1
+				},
+				"minecraft:biome_filter": {
+					"any_of": [
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "nether"
+						}
+					]
+				}
+			},
+			{
+				"minecraft:spawns_underground": {},
+				"minecraft:difficulty_filter": {
+					"max": "normal",
+					"min": "normal"
+				},
+				"minecraft:spawns_on_block_filter":[
+					"minecraft:netherrack",
+					"minecraft:crimson_nylium",
+					"minecraft:basalt",
+					"minecraft:lava",
+					"minecraft:soul_sand",
+					"minecraft:soul_soil",
+					"minecraft:magma",
+					"minecraft:blackstone",
+					"minecraft:glowstone"
+				],
+				"minecraft:weight": {
+					"default": 2
+				},
+				"minecraft:biome_filter": {
+					"any_of": [
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "nether"
+						}
+					]
+				}
+			},
+			{
+				"minecraft:spawns_underground": {},
+				"minecraft:difficulty_filter": {
+					"max": "hard",
+					"min": "hard"
+				},
+				"minecraft:spawns_on_block_filter":[
+					"minecraft:netherrack",
+					"minecraft:crimson_nylium",
+					"minecraft:basalt",
+					"minecraft:lava",
+					"minecraft:soul_sand",
+					"minecraft:soul_soil",
+					"minecraft:magma",
+					"minecraft:blackstone",
+					"minecraft:glowstone"
+				],
+				"minecraft:weight": {
+					"default": 5
 				},
 				"minecraft:biome_filter": {
 					"any_of": [

@@ -218,7 +218,7 @@
 		"poke_receiver":{"textures":"textures/items/electric/poke_receiver"},
 		"poke_gps_module":{"textures":"textures/items/electric/poke_gps_module"},
 		//Boss Drops
-		"poke_chared_poppy":{"textures":"textures/items/boss/poke_chared_poppy.png"},
+		"poke_charred_poppy":{"textures":"textures/blocks/flower/poke_charred_poppy.png"},
 		"poke_rotten_chicken":{"textures":"textures/items/boss/poke_rotten_chicken"},
 		"poke_floppy_disk":{"textures":"textures/items/boss/poke_floppy_disk"},
 		//Sticks

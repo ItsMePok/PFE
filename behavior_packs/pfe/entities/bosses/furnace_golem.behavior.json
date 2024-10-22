@@ -208,7 +208,7 @@
 							{
 								"summon_cap": 8,
 								"entity_lifespan": 30,
-								"entity_type": "minecraft:blaze",
+								"entity_type": "poke:soul_blaze",
 								"shape": "circle",
 								"size": 6,
 								"num_entities_spawned": 2,

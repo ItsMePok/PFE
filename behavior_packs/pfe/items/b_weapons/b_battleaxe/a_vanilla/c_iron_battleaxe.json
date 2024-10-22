@@ -89,7 +89,7 @@
 				"duration": 5
 			},
 			"minecraft:tags": {"tags": [
-				"function pfe_items/battleaxe/iron"
+				"pfe:Command:function pfe_items/battleaxe/iron:pfeCommandEnd"
 			]},
 			"minecraft:custom_components": [
 				"poke:cc_on_use"

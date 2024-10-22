@@ -34,7 +34,7 @@
 				"value": 16
 			},
 			"minecraft:tags": {"tags": [
-				"function pfe_items/grim_ring"
+				"pfe:Command:function pfe_items/grim_ring:pfeCommandEnd"
 			]},
 			"minecraft:custom_components": [
 				"poke:cc_on_use"

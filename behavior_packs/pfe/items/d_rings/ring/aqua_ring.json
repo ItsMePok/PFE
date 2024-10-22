@@ -34,7 +34,7 @@
 				"value": 17
 			},
 			"minecraft:tags": {"tags": [
-				"function pfe_items/aqua_ring"
+				"pfe:Command:function pfe_items/aqua_ring:pfeCommandEnd"
 			]},
 			"minecraft:custom_components": [
 				"poke:cc_on_use"

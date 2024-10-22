@@ -63,7 +63,7 @@
 			},
 			"minecraft:hand_equipped": true,
 			"minecraft:tags": {"tags": [
-				"tp @e[type=xp_orb] ~~~"
+				"pfe:Command:tp @e[type=xp_orb] ~~~:pfeCommandEnd"
 			]},
 			"minecraft:custom_components": [
 				"poke:cc_on_use"

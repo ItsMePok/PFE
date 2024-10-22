@@ -1,0 +1,35 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "poke:soul_blaze",
+      "population_control": "monster"
+    },
+    "conditions": [
+      {
+        "minecraft:difficulty_filter": {
+          "min": "normal",
+          "max": "hard"
+        },
+        "minecraft:spawns_above_block_filter": {
+          "blocks":["minecraft:soul_sand","minecraft:soul_soil","minecraft:soul_fire"]
+        },
+        "minecraft:density_limit": {
+          "surface": 2,
+          "underground": 2
+        },
+        "minecraft:biome_filter":[
+          {
+            "test": "has_biome_tag",
+            "operator": "equals",
+            "value": "nether"
+          }
+        ],
+        "minecraft:weight": {
+          "rarity": 1,
+          "default": 3
+        }
+      }
+    ]
+  }
+}

@@ -34,7 +34,7 @@
 				"value": 18
 			},
 			"minecraft:tags": {"tags": [
-				"effect @s invisibility 60 0 true"
+				"pfe:Command:effect @s invisibility 60 0 true:pfeCommandEnd"
 			]},
 			"minecraft:custom_components": [
 				"poke:cc_on_use"

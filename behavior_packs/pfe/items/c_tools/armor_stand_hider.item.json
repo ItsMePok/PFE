@@ -11,7 +11,7 @@
 			"minecraft:max_stack_size": 1,
 			"minecraft:icon":"poke_armor_stand_hider",
 			"minecraft:tags": {"tags": [
-				"execute as @e[type=minecraft:armor_stand,c=1,r=2] run effect @s invisibility 9999999 0 true"
+				"pfe:Command:execute as @e[type=minecraft:armor_stand,c=1,r=2] run effect @s invisibility 9999999 0 true:pfeCommandEnd"
 			]},
 			"minecraft:custom_components": [
 				"poke:cc_on_use"

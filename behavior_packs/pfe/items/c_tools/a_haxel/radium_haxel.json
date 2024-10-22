@@ -10,7 +10,8 @@
 		},
 		"components": {
 			"minecraft:tags": {"tags": [
-				"function pfe_items/haxel/5x3"
+				"pfe:Command:function pfe_items/haxel/5x3:pfeCommandEnd",
+				"minecraft:is_pickaxe"
 			]},
 			"minecraft:custom_components": [
 				"poke:cc_on_use"

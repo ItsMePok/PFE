@@ -31,7 +31,7 @@
 			},
 			"minecraft:hand_equipped":true,
 			"minecraft:tags":{"tags":[
-				"tp @e[type=item] @a[r=0.1]"
+				"pfe:Command:tp @e[type=item] @a[r=0.1]:pfeCommandEnd"
 			]},
 			"minecraft:custom_components":[
 				"poke:cc_on_use"

@@ -38,7 +38,7 @@
 				]
 			},
 			"minecraft:tags": {"tags": [
-				"kill @e[type=item,r=50]"
+				"pfe:Command:kill @e[type=item,r=50]:pfeCommandEnd"
 			]},
 			"minecraft:custom_components": [
 				"poke:cc_on_use"

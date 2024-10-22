@@ -13,7 +13,7 @@
 				"value": true
 			},
 			"minecraft:tags": {"tags": [
-				"tp @e[family=!pfe_exclude,type=!player] @s"
+				"pfe:Command:tp @e[family=!pfe_exclude,type=!player] @s:pfeCommandEnd"
 			]},
 			"minecraft:custom_components": [
 				"poke:cc_on_use"

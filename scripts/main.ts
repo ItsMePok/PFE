@@ -118,7 +118,6 @@ world.afterEvents.itemCompleteUse.subscribe(item => {
         case 'poke:death_potion':{item.source.runCommandAsync("kill @s");return};
         case 'poke:rotten_chicken':{item.source.addEffect('nausea', 400);return};
         case 'poke:golden_chicken':{item.source.addEffect('village_hero', 400, {amplifier: 1,});return};
-        case 'poke:demonic_potion':{item.source.runCommandAsync("function pfe_items/demonic_potion");return};
         case 'poke:banished_star_x10':{item.source.runCommandAsync("damage @a[r=100] 32767000 entity_attack entity @s");return};
         case 'poke:banished_star_x9':{item.source.runCommandAsync("damage @s 32767000 entity_attack");return};
     }
@@ -853,8 +852,9 @@ unbreaking does not work on this due to it breaking hold to continue using
 class PFEOnUse {
     onUse(data:ItemComponentUseEvent){
         if (data.itemStack===undefined)return;
-        const id = data.itemStack.getTags() //Command is in the tag of the item without the '/'
-        data.source.runCommand(''+id)
+        const ItemTags = data.itemStack!.getTags().toString();
+        let Command = ItemTags.substring(ItemTags.indexOf('pfe:Command:'),ItemTags.indexOf(':pfeCommandEnd')).substring(12);//Command is in the tag of the item without the '/'
+        data.source.runCommand(''+Command)
         //@ts-ignore
         const cooldownComp:ItemCooldownComponent=data.itemStack.getComponent('minecraft:cooldown')
         if (cooldownComp!=undefined)cooldownComp.startCooldown(data.source);

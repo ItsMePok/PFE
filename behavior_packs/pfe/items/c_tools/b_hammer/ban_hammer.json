@@ -10,7 +10,7 @@
 		},
 		"components": {
 			"minecraft:tags": {"tags": [
-				"function pfe_items/haxel/ban"
+				"pfe:Command:function pfe_items/haxel/ban:pfeCommandEnd"
 			]},
 			"minecraft:custom_components": [
 				"poke:cc_on_use"

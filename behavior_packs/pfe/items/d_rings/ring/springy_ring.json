@@ -34,7 +34,7 @@
 				"value": 18
 			},
 			"minecraft:tags": {"tags": [
-				"function poke/rings/springy_ring_event"
+				"pfe:Command:function poke/rings/springy_ring_event:pfeCommandEnd"
 			]},
 			"minecraft:custom_components": [
 				"poke:cc_on_use"

@@ -1,5 +1,5 @@
 {
-	"format_version":"1.21.10",//Format version is the version it was built for. its 1.21.10 because that is the minimum version that Beta Api is not needed for what PFE uses (as of 1.2.2) 
+	"format_version": "1.21.40",//Format version is the version it was built for. its 1.21.10 because that is the minimum version that Beta Api is not needed for what PFE uses (as of 1.2.2) 
 	"minecraft:item":{
 		"description":{
 			"identifier":"poke:nebula_pickaxe",//Item Identifier. everything is prefixed with poke: or pfe:

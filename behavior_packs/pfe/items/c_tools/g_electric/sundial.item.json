@@ -29,7 +29,7 @@
 				]
 			},
 			"minecraft:tags": {"tags": [
-				"function pfe_items/sundial"
+				"pfe:Command:function pfe_items/sundial:pfeCommandEnd"
 			]},
 			"minecraft:custom_components": [
 				"poke:cc_on_use"

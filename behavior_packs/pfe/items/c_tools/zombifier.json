@@ -25,7 +25,7 @@
 				"use_duration": 0,
 				"movement_modifier": 1
 			},
-			"minecraft:tags": {"tags": ["function pfe_items/zombfier"]}
+			"minecraft:tags": {"tags": ["pfe:Command:function pfe_items/zombfier:pfeCommandEnd"]}
 		}
 	}
 }

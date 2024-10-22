@@ -33,7 +33,7 @@
 				"slot": "flintsteel",
 				"value": 37
 			},
-			"minecraft:tags": {"tags": ["function pfe_items/gravity_ring"]},
+			"minecraft:tags": {"tags": ["pfe:Command:function pfe_items/gravity_ring:pfeCommandEnd"]},
 			"minecraft:custom_components": [
 				"poke:cc_on_use"
 			],

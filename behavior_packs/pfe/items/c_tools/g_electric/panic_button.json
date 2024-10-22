@@ -25,7 +25,7 @@
 				]
 			},
 			"minecraft:tags": {"tags": [
-				"function pfe_items/panic_button"
+				"pfe:Command:function pfe_items/panic_button:pfeCommandEnd"
 			]},
 			"minecraft:custom_components": [
 				"poke:cc_on_use"

@@ -14,7 +14,7 @@
 				"max_durability": 7
 			},
 			"minecraft:tags": {"tags": [
-				"function pfe_items/rocket_replenisher"
+				"pfe:Command:function pfe_items/rocket_replenisher:pfeCommandEnd"
 			]},
 			"minecraft:custom_components": [
 				"poke:cc_on_use"

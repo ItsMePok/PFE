@@ -5,8 +5,7 @@
 		"pattern":[" X "," Z "],
 		"unlock":[
 			{"item":"paper"},
-			{"item":"poke:sugar_water"},
-			{"item":"feather"}
+			{"item":"fire_charge"}
 		],
 		"key":{
 			"Z":{"item":"paper"},

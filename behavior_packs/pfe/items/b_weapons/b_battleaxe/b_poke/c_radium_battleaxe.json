@@ -48,7 +48,7 @@
         "duration": 2.25
       },
 			"minecraft:tags": {"tags": [
-				"function pfe_items/battleaxe/radium"
+				"pfe:Command:function pfe_items/battleaxe/radium:pfeCommandEnd"
 			]},
 			"minecraft:custom_components": [
 				"poke:cc_on_use"

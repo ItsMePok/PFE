@@ -7,7 +7,7 @@
 		"components": {
 			"minecraft:icon":"poke_craft_quest",
 			"minecraft:tags": {"tags": [
-				"function pfe_items/q_info/craft_6"
+				"pfe:Command:function pfe_items/q_info/craft_6:pfeCommandEnd"
 			]},
 			"minecraft:custom_components": [
 				"poke:cc_on_use"

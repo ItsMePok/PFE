@@ -42,7 +42,7 @@
 				"duration": 2.5
 			},
 			"minecraft:tags": {"tags": [
-				"function pfe_items/battleaxe/diamond"
+				"pfe:Command:function pfe_items/battleaxe/diamond:pfeCommandEnd"
 			]},
 			"minecraft:custom_components": [
 				"poke:cc_on_use"

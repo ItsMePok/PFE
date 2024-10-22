@@ -35,7 +35,7 @@
       },
       "minecraft:hand_equipped": true,
 			"minecraft:tags": {"tags": [
-				"tp @e[r=15,family=mob] @s"
+				"pfe:Command:tp @e[r=15,family=mob] @s:pfeCommandEnd"
 			]},
 			"minecraft:custom_components": [
 				"poke:cc_on_use"

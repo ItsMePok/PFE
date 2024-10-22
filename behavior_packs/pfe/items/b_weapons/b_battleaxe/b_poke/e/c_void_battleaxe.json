@@ -49,7 +49,7 @@
       },
       "tag:minecraft:is_sword": {},
 			"minecraft:tags": {"tags": [
-				"function pfe_items/battleaxe/void"
+				"pfe:Command:function pfe_items/battleaxe/void:pfeCommandEnd"
 			]},
 			"minecraft:custom_components": [
 				"poke:cc_on_use"

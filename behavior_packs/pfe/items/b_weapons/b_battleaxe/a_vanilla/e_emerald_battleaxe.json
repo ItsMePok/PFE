@@ -83,7 +83,7 @@
 				"duration": 2.5
 			},
 			"minecraft:tags": {"tags": [
-				"function pfe_items/battleaxe/emerald"
+				"pfe:Command:function pfe_items/battleaxe/emerald:pfeCommandEnd"
 			]},
 			"minecraft:custom_components": [
 				"poke:cc_on_use"
