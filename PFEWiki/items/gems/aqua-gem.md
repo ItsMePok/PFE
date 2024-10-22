@@ -1,6 +1,6 @@
 # Aqua Gem
 
-![poke\_aqua\_gem](https://github.com/ItsMePok/PFE/assets/136857747/7cac49d0-bdf8-4827-a80e-663065c5a6fd)
+![](https://github.com/ItsMePok/PFE/assets/136857747/7cac49d0-bdf8-4827-a80e-663065c5a6fd)
 
 Item Identifier: **poke:aqua\_gem**
 

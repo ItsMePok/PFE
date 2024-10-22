@@ -1,4 +1,4 @@
-# End-Guard-Tower
+# End Guard Tower
 
 ### End Guard Tower
 
@@ -24,25 +24,35 @@ If you are using an older world you may need to explore further to find the Stru
 A higher weight makes it more likely to be selected from that pool
 {% endhint %}
 
-#### **Barrel 1:**
+### **Barrel 1:**
 
-> \[!NOTE] The Barrel at the top of the tower always have this loot
->
-> <img src="https://github.com/ItsMePok/PFE/assets/136857747/3c688f55-d50c-4f86-a45e-9b1a6b1eea00" alt="End Guard Tower - Top Barrel" data-size="original">
->
-> * 10x Cobwebs
-> * 3x [Galaxy Arrows](https://pfewiki.gitbook.io/home/weapons/arrows/galaxy-arrow)
-> * 2x [Raw Astral](https://github.com/ItsMePok/PFE/wiki/Raw-Astral)
-> * 1x [Nebula Potion](https://github.com/ItsMePok/PFE/wiki/Nebula-Potion)
-> * 1x [Death Potion](https://github.com/ItsMePok/PFE/wiki/Death-Potion)
-> * 1x [Boss Event Bounty](https://github.com/ItsMePok/PFE/wiki/Boss-Event-Bounty)
-> * 1x Book: Travel log 2
+{% hint style="info" %}
+
+
+The Barrel at the top of the tower always have this loot
+
+<img src="https://github.com/ItsMePok/PFE/assets/136857747/3c688f55-d50c-4f86-a45e-9b1a6b1eea00" alt="End Guard Tower - Top Barrel" data-size="original">
+
+* 10x Cobwebs
+* 3x [Galaxy Arrows](https://pfewiki.gitbook.io/home/weapons/arrows/galaxy-arrow)
+* 2x [Raw Astral](https://github.com/ItsMePok/PFE/wiki/Raw-Astral)
+* 1x [Nebula Potion](https://github.com/ItsMePok/PFE/wiki/Nebula-Potion)
+* 1x [Death Potion](https://github.com/ItsMePok/PFE/wiki/Death-Potion)
+* 1x [Boss Event Bounty](https://github.com/ItsMePok/PFE/wiki/Boss-Event-Bounty)
+* 1x Book: Travel log 2
+{% endhint %}
+
+
 
 ***
 
-> \[!NOTE] A higher weight makes it more likely to be selected from that pool
+{% hint style="info" %}
+A higher weight makes it more likely to be selected from that pool
+{% endhint %}
 
-#### **Barrel 2:**
+
+
+### **Barrel 2:**
 
 (1 of these ↓)
 
@@ -93,9 +103,9 @@ A higher weight makes it more likely to be selected from that pool
 | Total Mobs | 6 (+3 Per each additional player)                             |
 | Cooldown   | 10 Minutes                                                    |
 
-> \[!NOTE] The Trial Spawner has an ominous variant, it can be triggered with the Trial Omen effect
->
-> Minecraft wiki link for more info: https://minecraft.wiki/w/Trial\_Omen
+{% hint style="info" %}
+The Trial Spawner has an ominous variant, it can be triggered with the [Trial Omen](https://minecraft.wiki/w/Trial\_Omen) effect
+{% endhint %}
 
 #### Completion Loot:
 
@@ -114,6 +124,6 @@ A higher weight makes it more likely to be selected from that pool
 
 ***
 
-#### In-game Screenshots:
+## In-game Screenshots:
 
 ![End Guard Tower Generating in the End](https://github.com/ItsMePok/PFE/assets/136857747/be91f575-b750-43c2-81b6-c90b97c06eed)

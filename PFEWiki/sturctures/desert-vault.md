@@ -1,12 +1,10 @@
-# Desert-Vault
+# Desert Vault
 
-### Desert Vault
+<figure><img src="https://github.com/ItsMePok/PFE/assets/136857747/e0b6c856-a0cf-4ee6-a0bd-e400a0c41980" alt=""><figcaption></figcaption></figure>
 
-![](https://github.com/ItsMePok/PFE/assets/136857747/e0b6c856-a0cf-4ee6-a0bd-e400a0c41980)
 
-**Structure identifier:**
 
-* poke:desert\_vault
+## **Structure identifier:** poke:desert\_vault
 
 ## Generation
 
@@ -26,7 +24,7 @@ If you are using an older world you may need to explore further to find the Stru
 A higher weight makes it more likely to be selected from that pool
 {% endhint %}
 
-#### **Vault:**
+### **Vault:**
 
 * The Vault can be opened with a Trial Key
 
@@ -54,7 +52,7 @@ A higher weight makes it more likely to be selected from that pool
 
 ***
 
-#### **Suspicious Sand:**
+### **Suspicious Sand:**
 
 (1 of these ↓)
 
@@ -72,6 +70,6 @@ A higher weight makes it more likely to be selected from that pool
 
 ***
 
-### In-game Screenshots:
+## In-game Screenshots:
 
 ![Desert Vault Generating in the Desert ](https://github.com/ItsMePok/PFE/assets/136857747/5f711b58-4f41-4afe-8d23-59f6ca24e5cc)

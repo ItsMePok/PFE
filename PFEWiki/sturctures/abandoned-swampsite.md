@@ -1,4 +1,4 @@
-# Abandoned-Swampsite
+# Abandoned Swampsite
 
 ![](https://github.com/ItsMePok/PFE/assets/136857747/c73031c1-f564-4d6e-89e0-793225c14624)
 
@@ -20,7 +20,7 @@ If you are using an older world you may need to explore further to find the Stru
 A higher weight makes it more likely to be selected from that pool
 {% endhint %}
 
-#### **Barrel:**
+### **Barrel:**
 
 (2 of these ↓)
 
@@ -56,6 +56,6 @@ A higher weight makes it more likely to be selected from that pool
 | [<img src="https://github.com/ItsMePok/PFE/assets/136857747/1c78ba2a-4a5b-4b7b-83ff-ed21aa75ebd8" alt="" data-size="line">Copper Token](../items/tokens/copper-token.md) | 1      | 20     |
 | Empty                                                                                                                                                                    | -      | 50     |
 
-### In-game Screenshots:
+## In-game Screenshots:
 
 ![Abandoned Swampsite in the Swamp](https://github.com/ItsMePok/PFE/assets/136857747/a2c7a0c7-9bad-47b0-b606-79f0d5f527ff)

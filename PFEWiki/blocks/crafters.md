@@ -14,7 +14,7 @@
 
 * PFE spells
 * Empty Vial
-* [Spell Pottery sherd](pottery-sherds.md)
+* [Spell Pottery sherd](pottery-sherds/)
 * Magic 8 Ball
 
 

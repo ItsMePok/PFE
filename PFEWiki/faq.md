@@ -2,16 +2,13 @@
 
 ## Why Are the Automation Blocks not working?
 
-{% hint style="warning" %}
-Note: in 1.2.2 there was an issue that resulted in the automation blocks not working
-
-a temporary fix can be found in [v1.2.2.1.md](changelog-history/betas/v1.2.2.1.md "mention")
-{% endhint %}
-
 * Try Powering them with Redstone, The Block itself needs to be [Strong Powered](https://minecraft.wiki/w/Redstone\_mechanics#Strongly\_powered\_vs.\_weakly\_powered). the simplest solution is powering it with a lever
+* Make Sure PFE & Minecraft are up to date
 * Try Breaking and Replacing them
 
 More info on how the different automation blocks work can be found [Here](blocks/automation/) (Blocks -> Automation)
+
+***
 
 ## How do I get Tokens?
 
@@ -21,14 +18,26 @@ More info on how the different automation blocks work can be found [Here](blocks
   * Quests from the [Quest Trader](mobs/traders/quest-trader.md)
 * More info can be found [Here](items/tokens/) (Items -> Tokens)
 
-## Where do I find the Traders
+***
+
+## Where do I find the Traders?
 
 * Most of them can be crafted in the <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="Crafting Table" data-size="line">[Crafting Table](https://minecraft.wiki/w/Crafting\_Table)
 * A few can only be acquired from the [Token Trader](mobs/traders/token-trader.md)
 
+***
+
+## An Update had changes to a Trader, but those trades are not there?
+
+* If a trade is updated in an update you will need to re-place the trader (currently all PFE traders will drop a spawn egg on death)
+
+***
+
 ## How do I use the item Abilities?
 
 * Some Items (ex. Haxels) have an interact ability, more info on how to use them can be found here: [interact-abilities.md](misc-other-info/interact-abilities.md "mention")
+
+***
 
 ## What do the upgraders do?
 
@@ -50,6 +59,8 @@ More info on how the different automation blocks work can be found [Here](blocks
   * Quartz Ore -> Quartz Block
 * Amethyst Upgrader
   * Amethyst Block -> Budding Amethyst
+
+***
 
 ## Where do Ores generate?
 
@@ -98,6 +109,8 @@ More info on how the different automation blocks work can be found [Here](blocks
 * Demonic: -50 || 0
 * Limestone: 16 || 192
 
+***
+
 ## What do the Rings do?
 
 * Aqua Ring: Gives Water Breathing for 60 Seconds
@@ -120,6 +133,8 @@ More info on how the different automation blocks work can be found [Here](blocks
 * Volt Ring: Fires a Volt Arrow
 * Warp Ring: Fires an Ender Pearl
 * Zeus Ring: Strikes Nearby Entities with lightning
+
+***
 
 ## Why Are Half the Items Missing Textures in v1.2.0+?
 

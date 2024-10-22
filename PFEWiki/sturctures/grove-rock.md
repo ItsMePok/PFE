@@ -1,6 +1,4 @@
-# Grove-Rock
-
-### Grove Rock
+# Grove Rock
 
 ![](https://github.com/ItsMePok/PFE/assets/136857747/3fa2dbf2-115a-417e-9c32-0c3e889c8269)
 
@@ -24,7 +22,7 @@ If you are using an older world you may need to explore further to find the Stru
 A higher weight makes it more likely to be selected from that pool
 {% endhint %}
 
-#### **Barrel:**
+### **Barrel:**
 
 (1 of these ↓)
 
@@ -61,6 +59,6 @@ A higher weight makes it more likely to be selected from that pool
 | [<img src="https://github.com/ItsMePok/PFE/assets/136857747/1c78ba2a-4a5b-4b7b-83ff-ed21aa75ebd8" alt="" data-size="line">Copper Token](../items/tokens/copper-token.md) | 1      | 20     |
 | Empty                                                                                                                                                                    | -      | 50     |
 
-### In-game Screenshots:
+## In-game Screenshots:
 
 ![Grove Rock Generation in the Cherry Grove](https://github.com/ItsMePok/PFE/assets/136857747/55d0b4de-d0ca-4458-ad5a-8c454f295d49)

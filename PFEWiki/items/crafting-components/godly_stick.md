@@ -1,8 +1,10 @@
-# Copy of Onyx Shaft
+# Godly Stick
 
 <figure><img src="https://github.com/user-attachments/assets/ee155826-bf49-494d-8d64-b2c330db0604" alt=""><figcaption></figcaption></figure>
 
 ## Identifier: **poke:godly\_stick** <a href="#identifier" id="identifier"></a>
+
+## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line">Stack Size: 64
 
 ## Obtaining:
 
@@ -20,7 +22,7 @@
 
 Items:
 
-* <img src="https://github.com/user-attachments/assets/0e423f55-1bf7-4893-a9c2-10b7ba3aab4b" alt="Godly Ingot" data-size="line"> Godly Ingot
+* <img src="https://github.com/user-attachments/assets/0e423f55-1bf7-4893-a9c2-10b7ba3aab4b" alt="Godly Ingot" data-size="line"> [Godly Ingot](../ingots/godly-ingot.md)
 {% endtab %}
 
 {% tab title="Structures" %}

@@ -18,4 +18,4 @@
 
 ## Download Link:
 
-{% embed url="https://github.com/ItsMePok/Addon-Archive/raw/main/PFE/PFE%20Split/[1.21.20+]ScythesPFESplit.mcaddon" %}
+{% embed url="https://github.com/ItsMePok/Addon-Archive/tree/main/PFE/PFE%20Split" %}

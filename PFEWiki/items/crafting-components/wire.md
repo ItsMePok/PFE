@@ -6,7 +6,7 @@
 
 ## Identifier: **poke:wire** <a href="#identifier" id="identifier"></a>
 
-## Usage:
+## Usage: Crafting Component
 
 <details>
 
@@ -24,9 +24,7 @@
 
 </details>
 
-* Crafting Component
-
-
+## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line">Stack Size: 64
 
 ## Obtaining:
 

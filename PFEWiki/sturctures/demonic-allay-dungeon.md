@@ -1,6 +1,4 @@
-# Demonic-Allay-Dungeon
-
-### Demonic Allay Dungeon
+# Demonic Allay Dungeon
 
 ![](https://github.com/ItsMePok/PFE/assets/136857747/4439e000-6fb5-4bc2-ba3b-3f053c50b9f3)
 
@@ -57,7 +55,7 @@ Demonic Allay's that spawn from an Ominous Trial Spawner will always be holding 
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------ |
 | [<img src="https://github.com/ItsMePok/PFE/assets/136857747/aa3d5a31-9866-4bd1-bc09-ba7fa6775f7e" alt="" data-size="line">Iron Token](../items/tokens/iron-token.md) | 2-7    | 1      |
 
-### In-game Screenshots:
+## In-game Screenshots:
 
 ![Demonic Allay Dungeon's Inside](https://github.com/ItsMePok/PFE/assets/136857747/604da467-34ca-4904-a8e1-20a383077224)
 

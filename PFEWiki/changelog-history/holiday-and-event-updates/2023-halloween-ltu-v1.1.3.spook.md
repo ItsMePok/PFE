@@ -1,9 +1,9 @@
-# 2023 Halloween LTU (v1.1.3.Spook)
+# 2023 - Halloween LTU (v1.1.3.Spook)
 
 <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-This is a fork of v1.1.3
+This is a fork of [1.1.3.6.md](../betas/1.1.3.6.md "mention")
 {% endhint %}
 
 Download links:
