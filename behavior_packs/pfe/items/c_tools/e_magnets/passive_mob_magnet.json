@@ -1,0 +1,53 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:item": {
+    "description": {
+      "identifier": "poke:passive_mob_magnet",
+      "menu_category": {
+        "category": "none"
+      }
+    },
+    "components": {
+      "minecraft:icon":"poke_passive_mob_magnet",
+      "minecraft:max_stack_size": 1,
+      "minecraft:durability": {
+        "max_durability": 300
+      },
+      "minecraft:enchantable": {
+        "slot": "shield",
+        "value": 30
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": [
+              "poke:repair_core"
+            ],
+            "repair_amount": "query.max_durability"
+          },
+          {
+            "items": [
+              "poke:magnet_core"
+            ],
+            "repair_amount": "query.max_durability*0.25"
+          }
+        ]
+      },
+      "minecraft:hand_equipped": true,
+			"minecraft:tags": {"tags": [
+				"pfe:Command:tp @e[r=15,family=mob] @s:pfeCommandEnd"
+			]},
+			"minecraft:custom_components": [
+				"poke:cc_on_use"
+			],
+			"minecraft:use_modifiers": {
+			  "use_duration": 0,
+			  "movement_modifier": 1
+			},
+			"minecraft:cooldown": {
+				"category": "poke:passive_mob_magnet",
+				"duration": 0.2
+			}
+    }
+  }
+}

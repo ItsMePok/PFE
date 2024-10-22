@@ -1,0 +1,14 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_brewing_mix": {
+		"description": {
+			"identifier": "poke:pumpkin_spice_2"
+		},
+		"tags": [
+			"brewing_stand"
+		],
+		"input": "poke:milk_bottle",
+		"reagent": "carved_pumpkin",
+		"output": "poke:pumpkin_spice"
+	}
+}

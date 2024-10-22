@@ -1,0 +1,35 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:block": {
+		"description": {
+			"identifier": "poke:radium_block",
+			"menu_category": {
+				"category": "construction"
+			}
+		},
+		"components": {
+			"minecraft:redstone_conductivity": {
+				"redstone_conductor": true,
+				"allows_wire_to_step_down": true
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 1
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 30
+			},
+			"minecraft:map_color": "#7df310",
+			"tag:pfe": {},
+			"tag:metal": {},
+			"tag:minecraft:metal": {},
+			"tag:stone_pick_diggable":{},
+			"tag:minecraft:is_pickaxe_item_destructible":{},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "poke_radium_block",
+					"render_method": "opaque"
+				}
+			}
+		}
+	}
+}

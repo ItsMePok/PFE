@@ -1,0 +1,18 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "poke:mine_quest",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"runtime_identifier": "minecraft:snowball"
+		},
+		"components":{
+			"minecraft:transient":{},
+			"minecraft:loot":{"table":"loot_tables/poke/quests/mine_quest.json"},
+			"minecraft:timer": {"time": 0.01,"looping": true,"time_down_event": {"event": "poke:get_quest","target": "self"}}
+		},
+		"events": {"poke:get_quest": {"queue_command":{"command":["kill @s"]}}}
+	}
+}

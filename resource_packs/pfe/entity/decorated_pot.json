@@ -1,0 +1,32 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:decorated_pot",
+      "textures": {
+        "pfe-knightling_pottery_sherd": "textures/blocks/pot/poke_knightling",
+        "pfe-star_pottery_sherd": "textures/blocks/pot/poke_star",
+        "pfe-cassette_pottery_sherd": "textures/blocks/pot/poke_cassette",
+        "pfe-empty_pottery_sherd": "textures/blocks/pot/poke_empty",
+        "pfe-crowned_pottery_sherd": "textures/blocks/pot/poke_crowned",
+        "pfe-storm_pottery_sherd": "textures/blocks/pot/poke_storm",
+        "pfe-fish_pottery_sherd": "textures/blocks/pot/poke_fish",
+        "pfe-poke_pottery_sherd": "textures/blocks/pot/poke_poke",
+        "pfe-modbay_pottery_sherd": "textures/blocks/pot/poke_modbay",
+        "pfe-mcpedl_pottery_sherd": "textures/blocks/pot/poke_mcpedl",
+        "pfe-curseforge_pottery_sherd": "textures/blocks/pot/poke_curseforge",
+        "pfe-github_pottery_sherd": "textures/blocks/pot/poke_github",
+        "pfe-ingot_pottery_sherd": "textures/blocks/pot/poke_ingot",
+        "pfe-craft_pottery_sherd": "textures/blocks/pot/poke_craft",
+        "pfe-snake_pottery_sherd": "textures/blocks/pot/poke_snake",
+        "pfe-enderman_pottery_sherd": "textures/blocks/pot/poke_enderman",
+        "pfe-listener_pottery_sherd": "textures/blocks/pot/poke_listener",
+        "pfe-mushroom_buddy_pottery_sherd": "textures/blocks/pot/poke_mushroom_buddy",
+        "pfe-wizard_pottery_sherd": "textures/blocks/pot/poke_wizard",
+        "pfe-bee_pottery_sherd": "textures/blocks/pot/poke_bee",
+        "pfe-spell_pottery_sherd": "textures/blocks/pot/poke_spell",
+        "pfe-spook_pottery_sherd": "textures/blocks/pot/poke_spook"
+      }
+    }
+  }
+}

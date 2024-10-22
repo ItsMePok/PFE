@@ -1,0 +1,81 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:block": {
+		"description": {
+			"identifier": "poke:cut_shade_slab",
+			"menu_category": {"category": "construction","group": "itemGroup.name.slab"},
+			"traits": {"minecraft:placement_position": {"enabled_states": ["minecraft:vertical_half"]}},
+			"states": {"poke:double": [false, true]}
+		},
+		"permutations": [
+			// Bottom Slab
+			{
+				"condition": "q.block_state('poke:double')",
+				"components": {
+					"minecraft:redstone_conductivity": {
+						"redstone_conductor": true,
+						"allows_wire_to_step_down": true
+					},
+					"minecraft:custom_components":[
+						"poke:cc_slab_loot"
+					]
+					
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:vertical_half') == 'bottom' && !q.block_state('poke:double')",
+				"components": {
+					"minecraft:custom_components":[
+						"poke:slabs",
+						"poke:cc_block_seat"
+					],
+					"minecraft:collision_box": {"origin": [-8, 0, -8],"size": [16, 8, 16]},
+					"minecraft:geometry": {
+						"identifier": "geometry.poke_slab",
+						"bone_visibility": {"bottom_slab": "q.block_state('minecraft:vertical_half') == 'bottom'","top_slab": "q.block_state('minecraft:vertical_half') == 'top'"}
+					},
+					"minecraft:selection_box": {"origin": [-8, 0, -8],"size": [16, 8, 16]},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "poke_cut_shade"
+						}
+					}
+				}
+			},
+			// Top Slab
+			{
+				"condition": "q.block_state('minecraft:vertical_half') == 'top' && !q.block_state('poke:double')",
+				"components": {
+					"minecraft:custom_components":[
+						"poke:slabs"
+					],
+					"minecraft:collision_box": {
+						"origin": [-8, 8, -8],
+						"size": [16, 8, 16]
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.poke_slab",
+						"bone_visibility": {"bottom_slab": "q.block_state('minecraft:vertical_half') == 'bottom'","top_slab": "q.block_state('minecraft:vertical_half') == 'top'"}
+					},
+					"minecraft:selection_box": {"origin": [-8, 8, -8],"size": [16, 8, 16]},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "poke_cut_shade"
+						}
+					}
+				}
+			}
+		],
+		"components": {
+			"minecraft:destructible_by_mining": {"seconds_to_destroy": 7},
+			"minecraft:destructible_by_explosion": {"explosion_resistance": 6},
+			"minecraft:map_color": "#1a37bb",
+			
+			"tag:pfe": {},
+			"tag:metal": {},
+			"tag:minecraft:metal": {},
+			"tag:stone_pick_diggable":{},
+			"tag:minecraft:is_pickaxe_item_destructible":{}
+		}
+	}
+}

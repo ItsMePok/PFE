@@ -1,0 +1,28 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:red_button",
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"components": {
+			"minecraft:icon":"poke_red_button",
+			"minecraft:tags": {"tags": [
+				"pfe:Command:stopsound @s:pfeCommandEnd"
+			]},
+			"minecraft:custom_components": [
+				"poke:cc_on_use"
+			],
+			"minecraft:use_modifiers": {
+				"use_duration": 0,
+				"movement_modifier": 1
+			},
+			"minecraft:cooldown":{
+				"category": "poke:red_button",
+				"duration": 0.2
+			}
+		}
+	}
+}

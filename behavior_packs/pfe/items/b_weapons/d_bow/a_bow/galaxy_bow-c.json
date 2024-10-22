@@ -1,0 +1,87 @@
+{
+	"format_version": "1.21.40",//Format version is the version it was built for. its 1.21.10 because that is the minimum version that Beta Api was not needed for what PFE uses (as of PFE v1.2.2)
+	"minecraft:item":{
+		"description":{
+			"identifier":"poke:galaxy_bow",//Item Identifier Actaul item name is Galaxy BurstBow (changed the name after it was initally added but preserving backwards compatibily is important imo)
+			"menu_category":{"category":"equipment"}//Equipment Category, not in a tab because there is not a bows specific one to add it to (they should add the ability to make groups because having all the stray items is starting to become a problem in PFE lol)
+		},
+		"components":{
+			"minecraft:repairable":{//Makes the item repairable in the anvil
+				"repair_items":[//Items that can repair the Galaxy BurstBow
+					{"items":["poke:repair_core"],"repair_amount":"query.max_durability"},//Repair Core is always 100% of max
+					{"items":["poke:galaxy_ingot"],"repair_amount":"q.max_durability*0.25"},//Ingot is 25% of max
+					{"items":["poke:galaxy_nugget"],"repair_amount":"q.max_durability*0.028"}//Nugget is 2.8%of max
+				]
+			},
+			"minecraft:icon":"poke_galaxy_bow",//Item Texture in the hotbar (held texture is defined in the attachable due to it having animations)
+			"minecraft:use_modifiers":{//Use modifiers controls some of the thing that happen while the player uses this item
+				"movement_modifier":0.3,//Slows the player down while using the item
+				"use_duration":0.01//Use Duration. basically how long until the item is done being used (not 100% sure why but this basically makes it infinite)
+			},
+			"minecraft:max_stack_size":1,//the Stack size of the item 1 / unstackable
+			"minecraft:shooter":{
+				"ammunition":[//Projectiles that the bow can shoot
+					{
+						"item":"poke:galaxy_arrow",//Item of the projectile
+						"search_inventory":true,//Searches the inventory to see if this projectile is there
+						"use_in_creative":true,//If it can be used in creative without having the arrow needed to fire
+						"use_offhand":true//Allows offhand to take priority if its there
+					},
+					{
+						"item":"poke:void_arrow",
+						"search_inventory":true,
+						"use_in_creative":true,
+						"use_offhand":true
+					},
+					{
+						"item":"poke:holy_arrow",
+						"search_inventory":true,
+						"use_in_creative":true,
+						"use_offhand":true
+					},
+					{
+						"item":"poke:hellish_arrow",
+						"search_inventory":true,
+						"use_in_creative":true,
+						"use_offhand":true
+					},
+					{
+						"item":"poke:volt_arrow",
+						"search_inventory":true,
+						"use_in_creative":true,
+						"use_offhand":true
+					},
+					{
+						"item":"arrow",//Vanilla Arrow, Tipped arrows should work as well
+						"search_inventory":true,
+						"use_in_creative":true,
+						"use_offhand":true
+					}
+				],
+				"charge_on_draw":false,//False so it does not store the arrow
+				"max_draw_duration":0.25,//How long until the bow is fully drawn
+				"scale_power_by_draw_duration":true//Arrow goes farther based on how much how long it was drawn (capped at the max draw duration)
+			},
+			"minecraft:hand_equipped":true,//This is not necessary as the way its held is based on the attachable file in the RP (RP/attachables/item/bow/galaxy_bow.json)
+			"minecraft:use_animation":"none",//Not needed but here anyways
+			"minecraft:enchantable":{"value":75,"slot":"bow"},//Makes it able to be enchanted with bow enchants
+			"minecraft:durability":{//Item Durability
+				"damage_chance":{"min":50,"max":100},//The chance that the item has to not take durability with unbreaking
+				"max_durability":2000//Total Durability that the item has
+			},
+			"minecraft:custom_components":[
+				"poke:cc_bowAim"
+			]
+		}
+	}
+}
+/*
+Other things:
+- Charging Animations were done from:
+  - Script After Event (PFEMain.js), Cutsom component: "poke:cc_bow_aim" (shows where you are aiming to others)
+  - The attachable file (RP/attachables/item/bow/galaxy_bow.json)
+  - Animations (RP/animations/attachables/poke.16.item.animation(animation.poke.bow.frames))
+  - Animation Controller (RP/animation_controllers/poke.bow.animation_controllers.json(controller.animation.poke.bow))
+  - Render Controller (RP/render_controllers/poke.bow.render_controllers.json)
+  -
+*/

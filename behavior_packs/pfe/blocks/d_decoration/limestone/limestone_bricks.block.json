@@ -1,0 +1,31 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:block": {
+		"description": {
+			"identifier": "poke:limestone_bricks",
+			"menu_category": {
+				"category": "construction",
+				"group": "itemGroup.name.stoneBrick"
+			}
+		},
+		"components": {
+			"minecraft:redstone_conductivity": {
+				"redstone_conductor": true,
+				"allows_wire_to_step_down": true
+			},
+			"minecraft:collision_box": true,
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 1
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 30
+			},
+			"tag:pfe": {},
+			"tag:stone": {},
+			"tag:minecraft:stone": {},
+			"tag:stone_pick_diggable":{},
+			"tag:minecraft:is_pickaxe_item_destructible":{},
+			"minecraft:map_color": "#dadada"
+		}
+	}
+}

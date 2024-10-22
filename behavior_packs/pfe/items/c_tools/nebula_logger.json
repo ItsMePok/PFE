@@ -1,0 +1,39 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:nebula_logger",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.axe"
+			}
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:icon":"poke_nebula_logger",
+			"minecraft:hand_equipped": {"value": true},
+			"minecraft:damage": {"value": 14},
+			"minecraft:durability": {
+				"damage_chance": {
+					"min": 10,
+					"max": 100
+				},
+				"max_durability": 6500
+			},
+			"minecraft:enchantable": {
+				"slot": "axe",
+				"value": 30
+			},
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:is_axe"
+				]
+			},
+			"minecraft:digger": {
+				"destroy_speeds": [
+					{"block":{"tags": "query.any_tag( 'minecraft:is_hatchet_item_destructible','minecraft:is_axe_item_destructible','wood','axe','leaves')"},"speed": 32}
+				]
+			}
+		}
+	}
+}

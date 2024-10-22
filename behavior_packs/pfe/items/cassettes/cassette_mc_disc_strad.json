@@ -1,0 +1,20 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:item": {
+    "description": {
+      "identifier": "poke:cassette_mc_disc_strad",
+      "menu_category": {
+        "category": "items",
+        "group":"itemGroup.name.record"
+      }
+    },
+    "components": {
+      "minecraft:icon":"poke_cassette_mc_disc_strad",
+      "minecraft:tags": {"tags": ["minecraft:music_disc"]},
+      "minecraft:record": {"comparator_signal": 9,"sound_event": "record.strad","duration": 188},
+      "minecraft:custom_components": [
+        "poke:cas"
+      ]
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:raw_shade",
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"components": {
+			"minecraft:icon":"poke_raw_shade",
+			"minecraft:hover_text_color":"green"
+		}
+	}
+}

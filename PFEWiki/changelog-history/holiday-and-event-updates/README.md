@@ -1,2 +1,0 @@
-# Holiday & Event Updates
-
