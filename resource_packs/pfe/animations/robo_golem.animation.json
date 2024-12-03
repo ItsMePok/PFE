@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.robo_golem.move": {
+		"animation.poke_pfe.robo_golem.move": {
 			"loop": true,
 			"bones": {
 				"arm0": {
@@ -20,7 +20,7 @@
 				}
 			}
 		},
-		"animation.robo_golem.move_to_target": {
+		"animation.poke_pfe.robo_golem.move_to_target": {
 			"loop": true,
 			"bones": {
 				"arm0": {
@@ -39,7 +39,7 @@
 				}
 			}
 		},
-		"animation.robo_golem.walk": {
+		"animation.poke_pfe.robo_golem.walk": {
 			"loop": true,
 			"bones": {
 				"body": {
@@ -72,7 +72,7 @@
 				}
 			}
 		},
-		"animation.robo_golem.walk_to_target": {
+		"animation.poke_pfe.robo_golem.walk_to_target": {
 			"loop": true,
 			"bones": {
 				"body": {

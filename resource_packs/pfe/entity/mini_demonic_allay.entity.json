@@ -10,17 +10,17 @@
 				"default":"textures/entity/hostile/poke_demonic_allay"
 			},
 			"geometry":{
-				"default":"geometry.poke.demonic_allay"
+				"default":"geometry.poke_pfe.demonic_allay"
 			},
 			"spawn_egg":{
 				"base_color":"#2e041e",
 				"overlay_color":"#ff2600"
 			},
 			"animations":{
-				"idle":"animation.demonic_allay.idle",
-				"fly":"animation.demonic_allay.fly",
+				"idle":"animation.poke_pfe.demonic_allay.idle",
+				"fly":"animation.poke_pfe.demonic_allay.fly",
 				"hold_item_fly":"animation.allay.hold_item_fly",
-				"hold_item":"animation.demonic_allay.hold_item",
+				"hold_item":"animation.poke_pfe.demonic_allay.hold_item",
 				"general":"controller.animation.allay.general",
 				"holding":"controller.animation.allay.holding"
 			},

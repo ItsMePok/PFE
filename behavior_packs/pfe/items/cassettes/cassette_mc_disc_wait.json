@@ -9,6 +9,7 @@
       }
     },
     "components": {
+			"minecraft:rarity":"uncommon",
       "minecraft:icon":"poke_cassette_mc_disc_wait",
       "minecraft:tags": {"tags": ["minecraft:music_disc"]},
       "minecraft:record": {"comparator_signal": 12,"sound_event": "record.wait","duration": 238},

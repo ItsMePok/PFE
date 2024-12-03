@@ -74,7 +74,7 @@
 				}
 			},
 			"minecraft:loot": {
-				"table": "loot_tables/poke/entities/sculk_enderman.json"
+				"table": "loot_tables/poke/pfe/sculk_enderman.json"
 			},
 			"minecraft:health": {
 				"value": 40,

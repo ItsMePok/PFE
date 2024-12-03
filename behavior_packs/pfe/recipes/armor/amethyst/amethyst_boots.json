@@ -4,7 +4,7 @@
 		"description": {
 			"identifier": "poke:amethyst_boots"
 		},
-		"tags": ["crafting_table"],
+		"tags": ["crafting_table","pde"],
 		"pattern": [
 			"BBB",
 			"BUB",

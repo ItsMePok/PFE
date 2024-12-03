@@ -148,7 +148,7 @@
 				"melee_fov": 360
 			},
 			"minecraft:loot": {
-				"table": "loot_tables/poke/entities/listener.json"
+				"table": "loot_tables/poke/pfe/listener.json"
 			},
 			"minecraft:behavior.investigate_suspicious_location": {
 				"priority": 5,

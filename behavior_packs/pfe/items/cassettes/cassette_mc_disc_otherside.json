@@ -9,6 +9,7 @@
       }
     },
     "components": {
+			"minecraft:rarity":"rare",
       "minecraft:custom_components": ["poke:cas"],
       "minecraft:icon":{
         "textures": {

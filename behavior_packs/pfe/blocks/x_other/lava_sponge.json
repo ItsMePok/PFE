@@ -4,7 +4,8 @@
 		"description": {
 			"identifier": "poke:lava_sponge",
 			"menu_category": {
-				"category": "items"
+				"category": "items",
+				"group": "itemGroup.name.sponge"
 			}
 		},
 		"components": {

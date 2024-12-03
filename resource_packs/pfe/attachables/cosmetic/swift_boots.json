@@ -12,15 +12,16 @@
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {
-				"default": "geometry.poke.speed_boots"
+				"default": "geometry.poke_pfe.speed_boots"
 			},
 			"scripts": {
+				"animate": ["control"],
 				"parent_setup": "variable.boot_layer_visible = 0.0;"
 			},
 			"animations": {
-				"idle": "animation.speed_boots.idle",
-				"move": "animation.speed_boots.move",
-				"control": "controller.animation.speed_boots"
+				"idle": "animation.poke_pfe.speed_boots.idle",
+				"move": "animation.poke_pfe.speed_boots.move",
+				"control": "controller.animation.poke_pfe.speed_boots"
 			},
 			"render_controllers": [
 				"controller.render.armor"

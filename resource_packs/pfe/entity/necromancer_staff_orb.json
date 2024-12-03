@@ -10,11 +10,11 @@
 				"default":"textures/entity/arrows/poke_necromancer_orb"
 			},
 			"geometry":{
-				"default":"geometry.poke.necromancer_orb_projectile"
+				"default":"geometry.poke_pfe.necromancer_orb_projectile"
 			},
 			"animations":{
 				"move":"animation.arrow.move",
-				"trail":"animation.poke.necromancer_orb_projectile.trail"
+				"trail":"animation.poke_pfe.necromancer_orb_projectile.trail"
 			},
 			"render_controllers":[
 				"controller.render.arrow"

@@ -22,7 +22,7 @@
 			"tag:minecraft:metal": {},
 			"tag:stone_pick_diggable":{},
 			"tag:minecraft:is_pickaxe_item_destructible":{},
-			"minecraft:loot": "loot_tables/poke/blocks/demonic_ore.json",
+			"minecraft:loot": "loot_tables/poke/pfe/demonic_ore.json",
 			"minecraft:custom_components":[
 				"poke:fortune"
 			]

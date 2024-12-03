@@ -9,6 +9,9 @@
 			}
 		},
 		"components": {
+			"minecraft:custom_components": [
+				"poke:normalMining"
+			],
 			"minecraft:max_stack_size": 1,
 			"minecraft:icon":"poke_snow_shovel",
 			"minecraft:damage": {"value": 4},
@@ -38,7 +41,7 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:poke_plastic"
+							"poke:plastic"
 						],
 						"repair_amount": "query.max_durability*0.25"
 					},

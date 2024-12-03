@@ -1,29 +1,35 @@
-import { system, world, EquipmentSlot, GameMode, EntityComponentTypes, ItemComponentTypes, ItemStack,Enchantment, ItemEnchantableComponent, Player, EnchantmentType, ItemDurabilityComponent, EntityProjectileComponent, BlockComponentPlayerInteractEvent, BlockComponentPlayerDestroyEvent, BlockComponentTickEvent, EntityEquippableComponent, BlockComponentRandomTickEvent, ItemComponentUseEvent, ItemCooldownComponent, ItemComponentUseOnEvent, EntityInventoryComponent, BlockComponentOnPlaceEvent, Block} from "@minecraft/server";
+import { system, world, EquipmentSlot, GameMode, EntityComponentTypes, ItemComponentTypes, ItemStack,Enchantment, ItemEnchantableComponent, Player, ItemDurabilityComponent, EntityProjectileComponent, BlockComponentPlayerInteractEvent, BlockComponentPlayerDestroyEvent, BlockComponentTickEvent, EntityEquippableComponent, BlockComponentRandomTickEvent, ItemComponentUseEvent, ItemCooldownComponent, ItemComponentUseOnEvent, BlockComponentOnPlaceEvent, Direction} from "@minecraft/server";
 import { MinecraftEnchantmentTypes, MinecraftItemTypes } from "@minecraft/vanilla-data";
+import { PFEBossEventConfig, PFEBossEventConfigName, PFEBossEventUI, PFEDefaultBossEventSettings, PFEStartBossEvent } from "./bossEvents";
+import { PFEHaxelMining } from "./haxelMining";
+
 //Armor effects. I split into 4 because it should reduce the amount of commands running at a time reducing the random lag spikes
 system.runInterval(() => {
-    world.getDimension("overworld").runCommandAsync("execute as @a run function pfe_armor/effects");
+    world.getDimension("overworld").runCommandAsync("execute as @a run function poke/pfe/effects");
     system.runTimeout(() => {
-        world.getDimension("overworld").runCommandAsync("execute as @a run function pfe_armor/effects_2");
+        world.getDimension("overworld").runCommandAsync("execute as @a run function poke/pfe/effects_2");
         system.runTimeout(() => {
-            world.getDimension("overworld").runCommandAsync("execute as @a run function pfe_armor/effects_3");
+            world.getDimension("overworld").runCommandAsync("execute as @a run function poke/pfe/effects_3");
             system.runTimeout(() => {
-                world.getDimension("overworld").runCommandAsync("execute as @a run function pfe_armor/effects_4");
+                world.getDimension("overworld").runCommandAsync("execute as @a run function poke/pfe/effects_4");
             }, 40);
         }, 80);
     }, 120);
 }, 180);
 
-// Boss events
-system.runInterval(() => {
-    world.getDimension("overworld").runCommandAsync("execute at @r run summon poke:boss_event ~ -65 ~")
-}, 108000);
+function PFEDecrementStack(item:ItemStack) {
+    if (item.amount<=1)return undefined
+    else {
+        item.amount = item.amount -1
+        return item
+    }
+}
 // Tool Durability gotten from https://wiki.bedrock.dev/items/tool-durability.html
 function damage_item(item:ItemStack) {
     // Get durability
-    if (!item.hasComponent("durability")) return item;
+    if (!item.hasComponent(ItemComponentTypes.Durability)) return item;
     //@ts-ignore
-    const durabilityComponent:ItemDurabilityComponent = item.getComponent("durability")
+    const durabilityComponent:ItemDurabilityComponent = item.getComponent(ItemComponentTypes.Durability)
     //@ts-ignore
     const enchantComponent:ItemEnchantableComponent = item.getComponent('minecraft:enchantable')
     let unbreaking:number = 0
@@ -48,12 +54,12 @@ function damage_item(item:ItemStack) {
     return item
 }
 //Makes unbreaking work but breaks the Hold to continue using :/
-function damage_item_ub(item:ItemStack) {
+function damage_item_ub(item:ItemStack,multiplier:undefined|number) {
     // check if the item does not have a durability component to avoid deleting itself
-    if (!item.hasComponent("durability")) return item;
+    if (!item.hasComponent(ItemComponentTypes.Durability)) return item;
     // Get durability
     //@ts-ignore
-    const durabilityComponent:ItemDurabilityComponent = item.getComponent("durability")
+    const durabilityComponent:ItemDurabilityComponent = item.getComponent(ItemComponentTypes.Durability)
     var unbreakingL = 0
     // Get unbreaking level
     if (item.hasComponent(ItemComponentTypes.Enchantable)) {
@@ -68,34 +74,18 @@ function damage_item_ub(item:ItemStack) {
     //console.warn (durabilityComponent.getDamageChance(unbreakingL))
     //console.warn(Number(Math.round(Math.random() * 100) <= durabilityComponent.getDamageChance(unbreakingL)))
     //console.warn('---')
-
+    let damage = Number(Math.round(Math.random() * 100) <= durabilityComponent.getDamageChance(unbreakingL))
+    if (typeof multiplier == "number"){
+        damage = damage*multiplier
+    }
+    if(durabilityComponent.damage + damage ==durabilityComponent.maxDurability)return undefined;
     // Apply damage
-    durabilityComponent.damage += Number(Math.round(Math.random() * 100) <= durabilityComponent.getDamageChance(unbreakingL))
+    durabilityComponent.damage += damage
     if (durabilityComponent.damage == durabilityComponent.maxDurability) {
         return item
     }
     return item
 }
-// Add your item IDs into this array
-const my_items = ["poke:cobalt_pickaxe","poke:onyx_pickaxe","poke:holy_pickaxe","poke:hellish_pickaxe","poke:godly_pickaxe","poke:demonic_pickaxe","poke:amethyst_pickaxe","poke:astral_pickaxe","poke:death_pickaxe","poke:emerald_pickaxe","poke:galaxy_pickaxe","poke:medic_pickaxe","poke:nebula_pickaxe","poke:molten_pickaxe","poke:radium_pickaxe","poke:shade_pickaxe","poke:void_pickaxe","poke:medic_haxel","poke:cobalt_crossbow","poke:astral_crossbow","poke:godly_crossbow","poke:demonic_haxel","poke:holy_battleaxe","poke:godly_battleaxe","poke:galaxy_battleaxe","poke:astral_battleaxe","poke:amethyst_battleaxe","poke:netherite_battleaxe","poke:diamond_battleaxe","poke:gold_battleaxe","poke:void_battleaxe","poke:death_battleaxe","poke:demonic_battleaxe","poke:hellish_battleaxe","poke:emerald_battleaxe","poke:iron_battleaxe","poke:onyx_battleaxe","poke:shade_battleaxe","poke:cobalt_battleaxe","poke:stone_battleaxe","poke:wood_battleaxe","poke:radium_battleaxe","poke:hellish_scythe","poke:ember_scythe","poke:emerald_scythe","poke:nebula_battleaxe","poke:diamond_scythe","poke:shade_scythe","poke:nebula_scythe","poke:godly_scythe","poke:galactic_scythe","poke:radium_scythe","poke:amethyst_scythe","poke:onyx_scythe","poke:gold_scythe","poke:cobalt_scythe","poke:netherite_scythe","poke:void_scythe","poke:holy_scythe","poke:iron_scythe","poke:demonic_slasher","poke:death_scythe","poke:godly_haxel","poke:radium_haxel","poke:cobalt_haxel","poke:shade_haxel","poke:wooden_haxel","poke:stone_haxel","poke:iron_haxel","poke:gold_haxel","poke:emerald_haxel","poke:diamond_haxel","poke:netherite_haxel","poke:hellish_haxel","poke:holy_haxel","poke:amethyst_haxel","poke:haxel","poke:swift_pickaxe","poke:snow_shovel","poke:nebula_hoe","poke:cobalt_sword","poke:astral_sword","poke:onyx_sword","poke:demonic_sword","poke:void_sword","poke:pocket_knife","poke:amethyst_sword","poke:circuit_sword","poke:hellish_blade","poke:nebula_sword","poke:galaxy_sword","poke:godly_sword","poke:holy_sword","poke:shade_sword","poke:radium_sword",]
-world.afterEvents.playerBreakBlock.subscribe(data => {
-    // If there's no item, skip
-    if (!data.itemStackAfterBreak) return
-    // If the item is not in our item IDs, skip
-    if (!my_items.includes(data.itemStackAfterBreak.typeId)) return
-    // If player is in creative, skip
-    if (world.getPlayers({
-        gameMode: GameMode.creative
-    }).includes(data.player)) return
-    const newItem = damage_item_ub(data.itemStackAfterBreak)
-    //@ts-ignore
-    data.player.getComponent(EntityComponentTypes.Equippable)!.setEquipment(EquipmentSlot.Mainhand, newItem)
-    if (!newItem) {
-        data.player.playSound("random.break")
-    }
-    return;
-});
-// End of Tool durability 
 //Food effects
 const pfeFoodList = ["poke:pumpkin_spice","poke:xp_vial","poke:golden_chicken","poke:rotten_chicken","poke:demonic_potion","poke:hellish_potion","poke:nebula_potion","poke:void_potion","poke:death_potion","poke:cobalt_potion","poke:cobalt_soup","poke:crimson_sporeshroom_stew","poke:root_beer","poke:hellish_soup","poke:nebula_noodles","poke:warped_sporeshroom_stew","poke:milk_bottle","poke:banished_star_x10","poke:banished_star_x9"];
 world.afterEvents.itemCompleteUse.subscribe(item => {
@@ -111,10 +101,10 @@ world.afterEvents.itemCompleteUse.subscribe(item => {
         case 'poke:hellish_soup':{item.source.addEffect('fire_resistance', 1200);return};
         case 'poke:nebula_noodles':{item.source.addEffect('strength', 600, {amplifier: 7,});return};
         case 'poke:milk_bottle':{item.source.runCommandAsync("effect @s clear");return};
-        case 'poke:demonic_potion':{item.source.runCommandAsync("function pfe_items/demonic_potion");return};
-        case 'poke:hellish_potion':{item.source.runCommandAsync("function pfe_items/hellish_potion");return};
-        case 'poke:nebula_potion':{item.source.runCommandAsync("function pfe_items/nebula_potion");return};
-        case 'poke:void_potion':{item.source.runCommandAsync("function pfe_items/void_potion");return};
+        case 'poke:demonic_potion':{item.source.runCommandAsync("function poke/pfe/demonic_potion");return};
+        case 'poke:hellish_potion':{item.source.runCommandAsync("function poke/pfe/hellish_potion");return};
+        case 'poke:nebula_potion':{item.source.runCommandAsync("function poke/pfe/nebula_potion");return};
+        case 'poke:void_potion':{item.source.runCommandAsync("function poke/pfe/void_potion");return};
         case 'poke:death_potion':{item.source.runCommandAsync("kill @s");return};
         case 'poke:rotten_chicken':{item.source.addEffect('nausea', 400);return};
         case 'poke:golden_chicken':{item.source.addEffect('village_hero', 400, {amplifier: 1,});return};
@@ -188,13 +178,13 @@ world.afterEvents.entityHitEntity.subscribe(data => {
             case 'poke:galactic_scythe':{data.damagingEntity.addEffect('speed', 100, {amplifier: 9});data.damagingEntity.addEffect('fire_resistance', 300);data.hitEntity.addEffect('wither', 80, {amplifier: 2});data.hitEntity.addEffect('weakness', 80, {amplifier: 2});return;}
             case 'poke:astral_scythe':{data.damagingEntity.addEffect('speed', 120, {amplifier: 9});data.damagingEntity.addEffect('fire_resistance', 300);data.hitEntity.addEffect('wither', 120, {amplifier: 2});data.hitEntity.addEffect('weakness', 120, {amplifier: 3});return;}
             case 'poke:ember_scythe':{data.damagingEntity.addEffect('speed', 100, {amplifier: 6});data.hitEntity.addEffect('nausea', 80, {amplifier: 1});data.hitEntity.addEffect('blindness', 80);return;}
-            case 'poke:void_scythe':{data.damagingEntity.addEffect('speed', 200, {amplifier: 6});data.hitEntity.runCommand('function pfe_items/scythe/void');return;}
-            case 'poke:death_scythe':{data.damagingEntity.addEffect('speed', 200, {amplifier: 6});data.hitEntity.runCommand('function pfe_items/scythe/death');return;}
-            case 'poke:nebula_scythe':{data.damagingEntity.runCommand('function pfe_items/scythe/nebula');data.hitEntity.addEffect('wither', 80, {amplifier: 3});return;}
+            case 'poke:void_scythe':{data.damagingEntity.addEffect('speed', 200, {amplifier: 6});data.hitEntity.runCommand('function poke/pfe/void_scythe');return;}
+            case 'poke:death_scythe':{data.damagingEntity.addEffect('speed', 200, {amplifier: 6});data.hitEntity.runCommand('function poke/pfe/death_scythe');return;}
+            case 'poke:nebula_scythe':{data.damagingEntity.runCommand('function poke/pfe/nebula_scythe');data.hitEntity.addEffect('wither', 80, {amplifier: 3});return;}
             case 'poke:cobalt_scythe':{data.damagingEntity.addEffect('speed', 100, {amplifier: 6});data.hitEntity.addEffect('wither', 40, {amplifier: 1});return;}
             case 'poke:nebula_sword':{data.damagingEntity.addEffect('strength', 40, {amplifier: 4});data.hitEntity.addEffect('weakness', 20, {amplifier: 2});return;}
             case 'poke:ban_hammer':{data.damagingEntity.addEffect('strength', 40, {amplifier: 4});data.hitEntity.addEffect('weakness', 20, {amplifier: 2});return;}
-            case 'poke:circuit_sword':{data.damagingEntity.runCommand('function pfe_items/circuit_sword');data.hitEntity.addEffect('blindness', 100);return;}
+            case 'poke:circuit_sword':{data.damagingEntity.runCommand('function poke/pfe/circuit_sword');data.hitEntity.addEffect('blindness', 100);return;}
         }
         return;
     }
@@ -227,26 +217,26 @@ class PFEFortune {
         if (!enchantableComponent.hasEnchantment(MinecraftEnchantmentTypes.Fortune)) return;
         let fortuneLevel=enchantableComponent.getEnchantment(MinecraftEnchantmentTypes.Fortune)!.level
         let rng = Math.round(Math.random())
-        console.warn(rng)
+        //console.warn(rng)
         const blockLocation = `${data.block.x} ${data.block.y} ${data.block.z}`
         const blockId = data.destroyedBlockPermutation.type.id.substring(5)
         if (data.player?.getGameMode() == GameMode.survival) {
             if (fortuneLevel == 3) {
-                data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/blocks/${blockId}"`)
-                data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/blocks/${blockId}"`)
+                data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}"`)
+                data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}"`)
                 if (rng == 0) return;
-                data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/blocks/${blockId}"`)
+                data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}"`)
                 return;
             }
             if (fortuneLevel == 2) {
-                data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/blocks/${blockId}"`)
+                data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}"`)
                 if (rng == 0) return;
-                data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/blocks/${blockId}"`)
+                data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}"`)
                 return;
             }
             if (fortuneLevel == 1) {
                 if (rng == 0) return;
-                data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/blocks/${blockId}"`)
+                data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}"`)
                 return;
             }
             return;
@@ -264,7 +254,7 @@ class PFESlabs {
         const equippableComponent:EntityEquippableComponent = data.player!.getComponent(EntityComponentTypes.Equippable)
         const mainhand:ItemStack|undefined = equippableComponent.getEquipment(EquipmentSlot.Mainhand)
         if (mainhand != undefined){
-            if (mainhand.typeId == slabId && data.face == 'Up' && data.block.permutation.getState('poke:double') == false) {
+            if (mainhand.typeId == slabId && ((data.block.permutation.getState('minecraft:vertical_half') == "bottom" && data.face == Direction.Up)||(data.block.permutation.getState('minecraft:vertical_half') == "top" && data.face == Direction.Down)) && data.block.permutation.getState('poke:double') == false) {
                 var itemStackAmount = mainhand.amount -1
                 data.block.setPermutation(data.block.permutation.withState('poke:double',true))
                 data.block.dimension.runCommandAsync(`playsound use.stone @a ${blockLocation}`)
@@ -276,9 +266,7 @@ class PFESlabs {
                 equippableComponent.setEquipment(EquipmentSlot.Mainhand, new ItemStack(slabId, itemStackAmount))
                 return;
             }
-            else {
-                return
-            }
+            else return;
         }
         return;
     }
@@ -416,46 +404,48 @@ class PFEDirter{
     onTick(data:BlockComponentTickEvent) {
         if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
             data.block.setPermutation(data.block.permutation.withState('pfe:active', 1))
-            if (data.block.typeId == 'poke:dirter_east') {
-                if (data.block.east()?.typeId == 'minecraft:cobblestone'){
-                    data.block.east()?.setType('minecraft:dirt')
-                    return;
+            switch(data.block.typeId){
+                case 'poke:dirter_east':{
+                    if (data.block.east()?.typeId == 'minecraft:cobblestone'){
+                        data.block.east()?.setType('minecraft:dirt')
+                        break;
+                    }
                 }
-            }
-            if (data.block.typeId == 'poke:dirter_west') {
-                if (data.block.west()?.typeId == 'minecraft:cobblestone'){
-                    data.block.west()?.setType('minecraft:dirt')
-                    return;
+                case 'poke:dirter_west':{
+                    if (data.block.west()?.typeId == 'minecraft:cobblestone'){
+                        data.block.west()?.setType('minecraft:dirt')
+                        break;
+                    }
                 }
-            }
-            if (data.block.typeId == 'poke:dirter_south') {
-                if (data.block.south()?.typeId == 'minecraft:cobblestone'){
-                    data.block.south()?.setType('minecraft:dirt')
-                    return;
+                case 'poke:dirter_south':{
+                    if (data.block.south()?.typeId == 'minecraft:cobblestone'){
+                        data.block.south()?.setType('minecraft:dirt')
+                        break;
+                    }
                 }
-            }
-            if (data.block.typeId == 'poke:dirter_north') {
-                if (data.block.north()?.typeId == 'minecraft:cobblestone'){
-                    data.block.north()?.setType('minecraft:dirt')
-                    return;
+                case 'poke:dirter_north':{
+                    if (data.block.north()?.typeId == 'minecraft:cobblestone'){
+                        data.block.north()?.setType('minecraft:dirt')
+                        break;
+                    }
                 }
-            }
-            if (data.block.typeId == 'poke:dirter_up') {
-                if (data.block.above()?.typeId == 'minecraft:cobblestone'){
-                    data.block.above()?.setType('minecraft:dirt')
-                    return;
+                case 'poke:dirter_up':{
+                    if (data.block.above()?.typeId == 'minecraft:cobblestone'){
+                        data.block.above()?.setType('minecraft:dirt')
+                        break;
+                    }
                 }
-            }
-            if (data.block.typeId == 'poke:dirter_down') {
-                if (data.block.below()?.typeId == 'minecraft:cobblestone'){
-                    data.block.below()?.setType('minecraft:dirt')
-                    return;
+                case 'poke:dirter_down':{
+                    if (data.block.below()?.typeId == 'minecraft:cobblestone'){
+                        data.block.below()?.setType('minecraft:dirt')
+                        break;
+                    }
                 }
-            }
-            if (data.block.typeId == 'poke:dirter') {
-                if (data.block.below()?.typeId == 'minecraft:cobblestone'){
-                    data.block.below()?.setType('minecraft:dirt')
-                    return;
+                case 'poke:dirter':{
+                    if (data.block.below()?.typeId == 'minecraft:cobblestone'){
+                        data.block.below()?.setType('minecraft:dirt')
+                        return;
+                    }
                 }
             }
             return;
@@ -472,74 +462,76 @@ class PFEDuster {
     onTick(data:BlockComponentTickEvent) {
         if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
             data.block.setPermutation(data.block.permutation.withState('pfe:active', 1))
-            if (data.block.typeId == 'poke:duster_east') {  
-                if (data.block.east()?.typeId == 'minecraft:dirt') {
-                    data.block.east()?.setType('minecraft:sand')
-                    return;
+            switch(data.block.typeId){
+                case 'poke:duster_east':{
+                    if (data.block.east()?.typeId == 'minecraft:dirt') {
+                        data.block.east()?.setType('minecraft:sand')
+                        break;
+                    }
+                    if (data.block.east()?.typeId == 'minecraft:cobblestone') {
+                        data.block.east()?.setType('minecraft:gravel')
+                        break;
+                    }
                 }
-                if (data.block.east()?.typeId == 'minecraft:cobblestone') {
-                    data.block.east()?.setType('minecraft:gravel')
-                    return;
+                case 'poke:duster_west':{
+                    if (data.block.west()?.typeId == 'minecraft:dirt') {
+                        data.block.west()?.setType('minecraft:sand')
+                        break;
+                    }
+                    if (data.block.west()?.typeId == 'minecraft:cobblestone') {
+                        data.block.west()?.setType('minecraft:gravel')
+                        break;
+                    }
                 }
-            }
-            if (data.block.typeId == 'poke:duster_west') {  
-                if (data.block.west()?.typeId == 'minecraft:dirt') {
-                    data.block.west()?.setType('minecraft:sand')
-                    return;
+                case 'poke:duster_south':{
+                    if (data.block.south()?.typeId == 'minecraft:dirt') {
+                        data.block.south()?.setType('minecraft:sand')
+                        break;
+                    }
+                    if (data.block.south()?.typeId == 'minecraft:cobblestone') {
+                        data.block.south()?.setType('minecraft:gravel')
+                        break;
+                    }
                 }
-                if (data.block.west()?.typeId == 'minecraft:cobblestone') {
-                    data.block.west()?.setType('minecraft:gravel')
-                    return;
+                case 'poke:duster_north':{
+                    if (data.block.north()?.typeId == 'minecraft:dirt') {
+                        data.block.north()?.setType('minecraft:sand')
+                        break;
+                    }
+                    if (data.block.north()?.typeId == 'minecraft:cobblestone') {
+                        data.block.north()?.setType('minecraft:gravel')
+                        break;
+                    }
                 }
-            }
-            if (data.block.typeId == 'poke:duster_south') {  
-                if (data.block.south()?.typeId == 'minecraft:dirt') {
-                    data.block.south()?.setType('minecraft:sand')
-                    return;
+                case 'poke:duster_up':{
+                    if (data.block.above()?.typeId == 'minecraft:dirt') {
+                        data.block.above()?.setType('minecraft:sand')
+                        break;
+                    }
+                    if (data.block.above()?.typeId == 'minecraft:cobblestone') {
+                        data.block.above()?.setType('minecraft:gravel')
+                        break;
+                    }
                 }
-                if (data.block.south()?.typeId == 'minecraft:cobblestone') {
-                    data.block.south()?.setType('minecraft:gravel')
-                    return;
+                case 'poke:duster_down':{
+                    if (data.block.below()?.typeId == 'minecraft:dirt') {
+                        data.block.below()?.setType('minecraft:sand')
+                        break;
+                    }
+                    if (data.block.below()?.typeId == 'minecraft:cobblestone') {
+                        data.block.below()?.setType('minecraft:gravel')
+                        break;
+                    }
                 }
-            }
-            if (data.block.typeId == 'poke:duster_north') {  
-                if (data.block.north()?.typeId == 'minecraft:dirt') {
-                    data.block.north()?.setType('minecraft:sand')
-                    return;
-                }
-                if (data.block.north()?.typeId == 'minecraft:cobblestone') {
-                    data.block.north()?.setType('minecraft:gravel')
-                    return;
-                }
-            }
-            if (data.block.typeId == 'poke:duster_up') {  
-                if (data.block.above()?.typeId == 'minecraft:dirt') {
-                    data.block.above()?.setType('minecraft:sand')
-                    return;
-                }
-                if (data.block.above()?.typeId == 'minecraft:cobblestone') {
-                    data.block.above()?.setType('minecraft:gravel')
-                    return;
-                }
-            }
-            if (data.block.typeId == 'poke:duster_down') {  
-                if (data.block.below()?.typeId == 'minecraft:dirt') {
-                    data.block.below()?.setType('minecraft:sand')
-                    return;
-                }
-                if (data.block.below()?.typeId == 'minecraft:cobblestone') {
-                    data.block.below()?.setType('minecraft:gravel')
-                    return;
-                }
-            }
-            if (data.block.typeId == 'poke:duster') {  
-                if (data.block.below()?.typeId == 'minecraft:dirt') {
-                    data.block.below()?.setType('minecraft:sand')
-                    return;
-                }
-                if (data.block.below()?.typeId == 'minecraft:cobblestone') {
-                    data.block.below()?.setType('minecraft:gravel')
-                    return;
+                case 'poke:duster':{
+                    if (data.block.below()?.typeId == 'minecraft:dirt') {
+                        data.block.below()?.setType('minecraft:sand')
+                        break;
+                    }
+                    if (data.block.below()?.typeId == 'minecraft:cobblestone') {
+                        data.block.below()?.setType('minecraft:gravel')
+                        break;
+                    }
                 }
             }
             return;
@@ -596,40 +588,17 @@ class PFEBulbs{
 //Calibrate Blocks
 class PFECalibrate {
     onPlayerInteract(data:BlockComponentPlayerInteractEvent) {
-        const ValidId = ['poke:duster','poke:dirter']
-        const bid = data.block.typeId
-        const blockId = bid.substring(0,bid.lastIndexOf("_"))
-        const blockFace = data.face
-        data.dimension.playSound('poke.calibrate', data.block.location)
-        if(ValidId.includes(bid)){
+        const OldId = ['poke:duster','poke:dirter']
+        const bId = data.block.typeId
+        const newBlock = `${bId.substring(0,bId.lastIndexOf("_"))}_${data.face.toLowerCase()}`
+        if(newBlock == bId)return;
+        if(OldId.includes(bId)){
             //Converts old Dirter / Duster into the Calibrated ones
-            data.block.setType(bid+'_up')
+            data.block.setType(bId+'_up')
             return;
         }
-        if (blockFace == 'East') {
-            data.block.setType(blockId+'_east')
-            return;
-        }
-        if (blockFace == 'West') {
-            data.block.setType(blockId+'_west')
-            return;
-        }
-        if (blockFace == 'North') {
-            data.block.setType(blockId+'_north')
-            return;
-        }
-        if (blockFace == 'South') {
-            data.block.setType(blockId+'_south')
-            return;
-        }
-        if (blockFace == 'Up') {
-            data.block.setType(blockId+'_up')
-            return;
-        }
-        if (blockFace == 'Down') {
-            data.block.setType(blockId+'_down')
-            return;
-        }
+        data.block.setType(newBlock)
+        data.dimension.playSound('poke.calibrate', data.block.center())
         return;
     }
 }
@@ -763,7 +732,7 @@ class PFECrop{
 class PFELavaSponge{
     onTick(data:BlockComponentTickEvent) {
         const block_location = `${data.block.x} ${data.block.y} ${data.block.z}`
-        data.dimension.runCommand('execute positioned '+block_location+' run function poke/blocks/lava_sponge')
+        data.dimension.runCommand('execute positioned '+block_location+' run function poke/pfe/lava_sponge')
         return;
     }
 }
@@ -802,8 +771,15 @@ class PFECassette {
     onUse(data:ItemComponentUseEvent){
         const id = data.itemStack!.typeId
         const trackId = id.substring(id.lastIndexOf("_")).substring(1)
-        data.source.playMusic(`poke.record.${trackId}`,{fade:2.5})
-        data.source.playSound('poke.cassette_activate')
+        if (data.source.isSneaking){
+            data.source.queueMusic(`poke.record.${trackId}`)
+            data.source.playSound('poke.cassette_activate')
+            data.source.sendMessage({translate:`translation.poke:trackQueued`})
+            return;
+        }else{
+            data.source.playMusic(`poke.record.${trackId}`,{fade:2.5})
+            data.source.playSound('poke.cassette_activate')
+        }
         return;
     }
 }
@@ -815,7 +791,7 @@ class PFEWindzooka {
         const equippableComponent:EntityEquippableComponent= data.source.getComponent(EntityComponentTypes.Equippable)
         if (equippableComponent === undefined)return;
         const vierDirection= data.source.getViewDirection();
-        const location= data.source.location;
+        const location= data.source.getHeadLocation();
         const id = data.itemStack.getTags()
         //@ts-ignore
         const cooldownComp:ItemCooldownComponent=data.itemStack.getComponent('minecraft:cooldown')
@@ -880,7 +856,7 @@ class PFEUpgrader {
         const block_location = `${data.block.x} ${data.block.y} ${data.block.z}`
         const itemIds = data.itemStack.typeId
         const itemId = itemIds.substring(5)
-        data.source.runCommandAsync(`execute positioned ${block_location} run function pfe_items/upgraders/${itemId}`)
+        data.source.runCommandAsync(`execute positioned ${block_location} run function poke/pfe/${itemId}`)
         if (player.getGameMode() == GameMode.creative) return;
         const newItem = damage_item(data.itemStack)
         equippableComponent.setEquipment(EquipmentSlot.Mainhand, newItem)
@@ -953,8 +929,8 @@ class PFECrossbowAim {
     onUse(data:ItemComponentUseEvent){
         const cPlayers = data.source.dimension.getPlayers({excludeNames:[''+data.source.name]})
         var cPlayersLength = cPlayers.length;
-        //data.source.playAnimation('third_person_crossbow_equipped',{stopExpression:'!q.is_using_item',controller:'pfe-controller.animation.poke.crossbow2'})//Hand charging for everyone else
-        //data.source.playAnimation('waffle',{stopExpression:'!q.is_using_item',controller:'pfe-controller.animation.poke.crossbow2'})
+        //data.source.playAnimation('third_person_crossbow_equipped',{stopExpression:'!q.is_using_item',controller:'pfe-controller.animation.poke_pfe.crossbow2'})//Hand charging for everyone else
+        //data.source.playAnimation('waffle',{stopExpression:'!q.is_using_item',controller:'pfe-controller.animation.poke_pfe.crossbow2'})
         data.source.playAnimation('animation.player.first_person.crossbow_equipped',{stopExpression:'!q.is_using_item', players:[data.source.name+'']}) //Hand charging movement
         for (var i = cPlayersLength; i > 0; i--) {
             data.source.playAnimation('third_person_crossbow_equipped',{stopExpression: '!q.is_using_item', players:[cPlayers[i-1].name]})//Hand charging for everyone else
@@ -1130,100 +1106,161 @@ class PFEWall{
         return;
     }
 }
+//Cassette Trader spawning
+system.runInterval(() => {
+    let allPlayers = world.getAllPlayers()
+    let randomPlayer = allPlayers.at(Math.abs(Math.round(Math.random() * (allPlayers.length-1))))
+    randomPlayer?.dimension.spawnEntity('poke:cassette_trader',randomPlayer.location).runCommand(`spreadplayers ~ ~ 30 40 @s ~10`)
+}, 216000/*3hrs*/ );
+
 //Custom Component Registry (may warn about a spike on world loading because of how many components)
-world.beforeEvents.worldInitialize.subscribe(event => {
-    event.itemComponentRegistry.registerCustomComponent(
+world.beforeEvents.worldInitialize.subscribe(data => {
+    if (typeof world.getDynamicProperty(PFEBossEventConfigName) == "string"){
+        //@ts-ignore
+        let settings:PFEBossEventConfig = JSON.parse(world.getDynamicProperty(PFEBossEventConfigName))
+        //To prevent errors it will reset the settings to default if a setting was missing/invalid
+        if ((typeof settings.ticks != "number")||(typeof settings.furnaceGolem != "object")||(typeof settings.knightling != "object")||(typeof settings.listener != "object")||(typeof settings.zombken != "object")||(typeof settings.miniDemonicAllay != "object")||(typeof settings.necromancer != "object")||(typeof settings.snowman != "object")||(typeof settings.sparky != "object")||(typeof settings.superStriker != "object")||(typeof settings.theLogger != "object")){
+            //console.warn(`Some Boss Event Settings were invalid; Resetting settings to default || PFE`)
+            world.setDynamicProperty(PFEBossEventConfigName,JSON.stringify(PFEDefaultBossEventSettings));
+        };
+        
+    } else{
+        //console.warn(`Some Boss Event Settings were invalid; Resetting settings to default || PFE`)
+        world.setDynamicProperty(PFEBossEventConfigName,JSON.stringify(PFEDefaultBossEventSettings))
+    }
+    data.itemComponentRegistry.registerCustomComponent(
+        "poke:boss_event_config", new PFEBossEventUI()
+    )
+    //Item Components
+    data.itemComponentRegistry.registerCustomComponent(
+        "poke:boss_event", {onUse(data){
+            if(PFEStartBossEvent() == 0){
+                data.source.sendMessage({translate:`translation.poke:bossEventNoSpawnError`})
+                data.source.playSound(`note.didgeridoo`,{pitch:0.825})
+                return
+            };
+            if(data.source.getGameMode() == GameMode.creative)return;
+            //@ts-ignore
+            data.source.getComponent(EntityComponentTypes.Equippable).setEquipment(EquipmentSlot.Mainhand, PFEDecrementStack(data.itemStack!))
+        }}
+    )
+    data.itemComponentRegistry.registerCustomComponent(
+        "poke:normalMining", {
+            onMineBlock(data){
+                if (data.source.typeId != "minecraft:player")return;
+                //@ts-ignore
+                if(data.source.getGameMode() == GameMode.creative)return;
+                const newItem = damage_item_ub(data.itemStack!,undefined)
+                //@ts-ignore
+                data.source.getComponent(EntityComponentTypes.Equippable)!.setEquipment(EquipmentSlot.Mainhand, newItem)
+                if (!newItem) {
+                    //@ts-ignore
+                    data.source.playSound("random.break")
+                }
+                return;
+            }
+        }
+    )
+    data.itemComponentRegistry.registerCustomComponent(
+        "poke:haxelMining", new PFEHaxelMining()
+    )
+    data.itemComponentRegistry.registerCustomComponent(
         "poke:cc_dodge", new PFEDodge()
     )
-    event.itemComponentRegistry.registerCustomComponent(
+    data.itemComponentRegistry.registerCustomComponent(
         "poke:cc_bowAim", new PFEBowAim()
     );
-    event.itemComponentRegistry.registerCustomComponent(
+    data.itemComponentRegistry.registerCustomComponent(
         "poke:cc_crossbowAim", new PFECrossbowAim()
     );
-    event.itemComponentRegistry.registerCustomComponent(
+    data.itemComponentRegistry.registerCustomComponent(
         "poke:cc_spawnEgg", new PFESpawnEgg()
     );
-    event.itemComponentRegistry.registerCustomComponent(
+    data.itemComponentRegistry.registerCustomComponent(
         "poke:cas", new PFECassette()
     );
-    event.itemComponentRegistry.registerCustomComponent(
+    data.itemComponentRegistry.registerCustomComponent(
         "poke:cc_on_use", new PFEOnUse()
     );
-    event.itemComponentRegistry.registerCustomComponent(
+    data.itemComponentRegistry.registerCustomComponent(
         "poke:cc_zooka", new PFEWindzooka()
     );
-    event.blockComponentRegistry.registerCustomComponent(
-        "poke:trapdoor_event", new PFETrapdoor()
-    );
-    event.blockComponentRegistry.registerCustomComponent(
-        "poke:fortune", new PFEFortune()
-    );
-    event.blockComponentRegistry.registerCustomComponent(
-        "poke:slabs", new PFESlabs()
-    );
-    event.blockComponentRegistry.registerCustomComponent(
-        "poke:cc_bulbs", new PFEBulbs()
-    );
-    event.blockComponentRegistry.registerCustomComponent(
-        "poke:cc_phantomic_conduit", new PFEPhantomicConduit()
-    );
-    event.blockComponentRegistry.registerCustomComponent(
-        "poke:cc_da_conduit", new PFEDemonicAConduit()
-    );
-    event.blockComponentRegistry.registerCustomComponent(
-        "poke:cc_cobble_gen", new PFECobbleGen()
-    );
-    event.blockComponentRegistry.registerCustomComponent(
-        "poke:cc_cobbler", new PFECobbler()
-    );
-    event.blockComponentRegistry.registerCustomComponent(
-        "poke:cc_block_breaker", new PFEBlockBreaker()
-    );
-    event.blockComponentRegistry.registerCustomComponent(
-        "poke:cc_dirter", new PFEDirter()
-    );
-    event.blockComponentRegistry.registerCustomComponent(
-        "poke:cc_duster", new PFEDuster()
-    );
-    event.blockComponentRegistry.registerCustomComponent(
-        "poke:cc_magnet_block", new PFEMagnetBlock()
-    );
-    event.blockComponentRegistry.registerCustomComponent(
-        "poke:cc_calibrate", new PFECalibrate()
-    );
-    event.blockComponentRegistry.registerCustomComponent(
-        "poke:cc_CaliBlockBreaker", new PFECaliBlockBreaker()
-    );
-    event.blockComponentRegistry.registerCustomComponent(
-        "poke:cc_CaliCobbleGen", new PFECaliCobbleGen()
-    );
-    event.blockComponentRegistry.registerCustomComponent(
-        "poke:crops", new PFECrop()
-    );
-    event.blockComponentRegistry.registerCustomComponent(
-        "poke:cc_barometer", new PFEBarometer()
-    );
-    event.blockComponentRegistry.registerCustomComponent(
-        "poke:cc_lava_sponge", new PFELavaSponge()
-    );
-    event.itemComponentRegistry.registerCustomComponent(
+    data.itemComponentRegistry.registerCustomComponent(
         "poke:cc_upgrader", new PFEUpgrader()
     );
-    event.blockComponentRegistry.registerCustomComponent(
+    //Block Components
+    data.blockComponentRegistry.registerCustomComponent(
+        "poke:trapdoor_event", new PFETrapdoor()
+    );
+    data.blockComponentRegistry.registerCustomComponent(
+        "poke:fortune", new PFEFortune()
+    );
+    data.blockComponentRegistry.registerCustomComponent(
+        "poke:slabs", new PFESlabs()
+    );
+    data.blockComponentRegistry.registerCustomComponent(
+        "poke:cc_bulbs", new PFEBulbs()
+    );
+    data.blockComponentRegistry.registerCustomComponent(
+        "poke:cc_phantomic_conduit", new PFEPhantomicConduit()
+    );
+    data.blockComponentRegistry.registerCustomComponent(
+        "poke:cc_da_conduit", new PFEDemonicAConduit()
+    );
+    data.blockComponentRegistry.registerCustomComponent(
+        "poke:cc_cobble_gen", new PFECobbleGen()
+    );
+    data.blockComponentRegistry.registerCustomComponent(
+        "poke:cc_cobbler", new PFECobbler()
+    );
+    data.blockComponentRegistry.registerCustomComponent(
+        "poke:cc_block_breaker", new PFEBlockBreaker()
+    );
+    data.blockComponentRegistry.registerCustomComponent(
+        "poke:cc_dirter", new PFEDirter()
+    );
+    data.blockComponentRegistry.registerCustomComponent(
+        "poke:cc_duster", new PFEDuster()
+    );
+    data.blockComponentRegistry.registerCustomComponent(
+        "poke:cc_magnet_block", new PFEMagnetBlock()
+    );
+    data.blockComponentRegistry.registerCustomComponent(
+        "poke:cc_calibrate", new PFECalibrate()
+    );
+    data.blockComponentRegistry.registerCustomComponent(
+        "poke:cc_CaliBlockBreaker", new PFECaliBlockBreaker()
+    );
+    data.blockComponentRegistry.registerCustomComponent(
+        "poke:cc_CaliCobbleGen", new PFECaliCobbleGen()
+    );
+    data.blockComponentRegistry.registerCustomComponent(
+        "poke:crops", new PFECrop()
+    );
+    data.blockComponentRegistry.registerCustomComponent(
+        "poke:cc_barometer", new PFEBarometer()
+    );
+    data.blockComponentRegistry.registerCustomComponent(
+        "poke:cc_lava_sponge", new PFELavaSponge()
+    );
+    data.blockComponentRegistry.registerCustomComponent(
         "poke:cc_block_seat", new PFEBlockSeat()
     );
-    event.blockComponentRegistry.registerCustomComponent(
+    data.blockComponentRegistry.registerCustomComponent(
         "poke:cc_slab_loot", new PFESlabLoot()
     );
-    event.blockComponentRegistry.registerCustomComponent(
+    data.blockComponentRegistry.registerCustomComponent(
         "poke:cc_block_interact", new PFEBlockInteract()
-    )
-    event.blockComponentRegistry.registerCustomComponent(
+    );
+    data.blockComponentRegistry.registerCustomComponent(
         "poke:cc_8ball", new PFE8Ball()
-    )
-    event.blockComponentRegistry.registerCustomComponent(
+    );
+    data.blockComponentRegistry.registerCustomComponent(
         "poke:cc_wall", new PFEWall()
-    )
+    );
     return;
 })
+
+export {
+    damage_item_ub
+}

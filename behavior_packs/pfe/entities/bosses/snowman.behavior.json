@@ -84,7 +84,7 @@
 			"height": 1.8
 			},
 			"minecraft:loot": {
-			"table": "loot_tables/poke/entities/snowman.json"
+			"table": "loot_tables/poke/pfe/snowman.json"
 			},
 			"minecraft:health": {
 			"value": 500,

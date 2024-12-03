@@ -50,7 +50,7 @@
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 24
 			},
-			"minecraft:geometry": "geometry.poke.limestone_tombstone",
+			"minecraft:geometry": "geometry.poke_pfe.limestone_tombstone",
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "poke_limestone_tombstone",

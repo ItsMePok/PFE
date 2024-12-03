@@ -1,7 +1,7 @@
 {
   "format_version": "1.20.80",
   "animations": {
-    "animation.poke.crossbow.wield": {
+    "animation.poke_pfe.crossbow.wield": {
       "loop": true,
       "bones": {
         "rightitem": {
@@ -10,7 +10,7 @@
         }
       }
     },
-    "animation.poke.crossbow.wield_first_person_pull": {
+    "animation.poke_pfe.crossbow.wield_first_person_pull": {
       "loop": true,
       "bones": {
         "rightitem": {

@@ -18,7 +18,7 @@
 			},
 			"animation_controllers":[
 				{
-					"move":"controller.animation.silverfish.move"
+					"move":"controller.animation.poke_pfe.silverfish.move"
 				}
 			],
 			"render_controllers":[

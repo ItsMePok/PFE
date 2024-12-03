@@ -617,28 +617,28 @@
 			"category": "player",
 			"max_distance": 8,
 			"sounds": [
-				"sounds/pfe/aqua_ring_use"
+				"sounds/poke/pfe/aqua_ring_use"
 			]
 		},
 		"poke.calibrate":{
 			"category": "block",
 			"max_distance": 8,
 			"sounds": [
-				"sounds/pfe/calibrate"
+				"sounds/poke/pfe/calibrate"
 			]
 		},
 		"poke.ice_ring_use":{
 			"category": "player",
 			"max_distance": 16,
 			"sounds": [
-				"sounds/pfe/ice_ring_use"
+				"sounds/poke/pfe/ice_ring_use"
 			]
 		},
 		"poke.rocket_replenisher_use":{
 			"category": "player",
 			"max_distance": 8,
 			"sounds": [
-				"sounds/pfe/rocket_replenisher"
+				"sounds/poke/pfe/rocket_replenisher"
 			]
 		},
 		"poke.knightling.bonk":{
@@ -646,7 +646,7 @@
 			"max_distance": 8,
 			"sounds": [
 				{
-					"name": "sounds/pfe/bonk",
+					"name": "sounds/poke/pfe/bonk",
 					"volume": 0.8
 				}
 			]
@@ -655,21 +655,21 @@
 			"category": "player",
 			"max_distance": 10,
 			"sounds": [
-				"sounds/pfe/cassette_activate"
+				"sounds/poke/pfe/cassette_activate"
 			]
 		},
 		"poke.battleaxe":{
 			"category": "player",
 			"max_distance": 10,
 			"sounds": [
-				"sounds/pfe/battleaxe"
+				"sounds/poke/pfe/battleaxe"
 			]
 		},
 		"poke.med_ring_use":{
 			"category": "player",
 			"max_distance": 10,
 			"sounds": [
-				"sounds/pfe/med_ring_use"
+				"sounds/poke/pfe/med_ring_use"
 			]
 		},
 		"record.listen": {
@@ -678,7 +678,7 @@
 			"sounds": [
 				{
 					
-					"name": "sounds/pfe/listener_boss",
+					"name": "sounds/poke/pfe/listener_boss",
 					"stream": true
 				}
 			]
@@ -688,7 +688,7 @@
 			"max_distance": 64,
 			"sounds": [
 				{
-					"name": "sounds/pfe/quest_comp",
+					"name": "sounds/poke/pfe/quest_comp",
 					"volume": 0.8
 				}
 			]
@@ -698,7 +698,7 @@
 			"max_distance": 64,
 			"sounds": [
 				{
-					"name": "sounds/pfe/quest_info",
+					"name": "sounds/poke/pfe/quest_info",
 					"volume": 0.8
 				}
 			]
@@ -709,7 +709,7 @@
 			"sounds" : [
 				{
 					
-					"name" : "sounds/pfe/listener_boss",
+					"name" : "sounds/poke/pfe/listener_boss",
 					"stream" : true
 				}
 			]
@@ -719,7 +719,7 @@
 			"sounds": [
 				{
 					"stream": true,
-					"name": "sounds/pfe/listener_boss_hurt"
+					"name": "sounds/poke/pfe/listener_boss_hurt"
 				}
 			]
 		},
@@ -727,7 +727,7 @@
 			"category": "player",
 			"max_distance": 32,
 			"sounds": [
-				"sounds/pfe/listener_victory"
+				"sounds/poke/pfe/listener_victory"
 			]
 		},
 		"play.galactic_march": {
@@ -736,7 +736,7 @@
 			"sounds": [
 				{
 					"stream":true,
-					"name": "sounds/pfe/galactic_march"
+					"name": "sounds/poke/pfe/galactic_march"
 				}
 			]
 		},
@@ -746,7 +746,7 @@
 			"sounds": [
 				{
 					"stream":true,
-					"name": "sounds/pfe/galactic_march"
+					"name": "sounds/poke/pfe/galactic_march"
 				}
 			]
 		},

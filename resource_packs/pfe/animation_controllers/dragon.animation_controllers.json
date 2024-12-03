@@ -1,7 +1,7 @@
 {
 	"format_version": "1.19.0",
 	"animation_controllers": {
-		"controller.animation.poke.dragon.flying": {
+		"controller.animation.poke_pfe.dragon.flying": {
 			"initial_state": "tail_default",
 			"states": {
 				"tail_default": {

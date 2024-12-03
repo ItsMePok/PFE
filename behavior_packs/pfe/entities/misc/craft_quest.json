@@ -10,7 +10,7 @@
 		},
 		"components":{
 			"minecraft:transient":{},
-			"minecraft:loot":{"table":"loot_tables/poke/quests/craft_quest.json"},
+			"minecraft:loot":{"table":"loot_tables/poke/pfe/craft_quest.json"},
 			"minecraft:timer": {"time": 0.01,"looping": true,"time_down_event": {"event": "poke:get_quest","target": "self"}}
 		},
 		"events": {"poke:get_quest": {"queue_command":{"command":["kill @s"]}}}

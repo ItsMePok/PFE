@@ -25,7 +25,7 @@
 				"explosion_resistance": 30
 			},
 			"minecraft:map_color": "#022c02",
-			"minecraft:geometry":"geometry.poke.trapdoor",
+			"minecraft:geometry":"geometry.poke_pfe.trapdoor",
 			"minecraft:material_instances": {
 				"*": {"texture": "poke_shade_trapdoor",
 			"render_method": "blend"}

@@ -1,0 +1,82 @@
+{"format_version": "1.19.0",
+	"tiers": [
+		{"total_exp_required": 0,
+			"groups": [
+				{
+					"trades": [
+						{
+							"max_uses": 2147483647,
+							"wants": [
+								{
+									"item": "paper",
+									"quantity": 1
+								}
+							],
+							"gives": [
+								{
+									"item": "poke:kill_quest"
+								}
+							]
+						},
+						{
+							"max_uses": 2147483647,
+							"wants": [
+								{
+									"item": "paper",
+									"quantity": 1
+								}
+							],
+							"gives": [
+								{
+									"item": "poke:mine_quest"
+								}
+							]
+						},
+						{
+							"max_uses": 2147483647,
+							"wants": [
+								{
+									"item": "paper",
+									"quantity": 1
+								}
+							],
+							"gives": [
+								{
+									"item": "poke:farm_quest"
+								}
+							]
+						},
+						{
+							"max_uses": 2147483647,
+							"wants": [
+								{
+									"item": "paper",
+									"quantity": 1
+								}
+							],
+							"gives": [
+								{
+									"item": "poke:craft_quest"
+								}
+							]
+						},
+						{
+							"max_uses": 2147483647,
+							"wants": [
+								{
+									"item": "poke:iron_token",
+									"quantity": 2
+								}
+							],
+							"gives": [
+								{
+									"item": "poke:boss_event_bounty"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

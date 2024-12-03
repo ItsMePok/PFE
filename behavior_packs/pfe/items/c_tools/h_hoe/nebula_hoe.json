@@ -134,11 +134,12 @@
 				]
 			},
 			"minecraft:tags": {"tags": [
-				"pfe:Command:function pfe_items/nebula_hoe:pfeCommandEnd",
+				"pfe:Command:function poke/pfe/nebula_hoe:pfeCommandEnd",
 				"minecraft:is_hoe"
 			]},
 			"minecraft:custom_components": [
-				"poke:cc_on_use"
+				"poke:cc_on_use",
+				"poke:normalMining"
 			],
 			"minecraft:use_modifiers": {
 			  "use_duration": 0,

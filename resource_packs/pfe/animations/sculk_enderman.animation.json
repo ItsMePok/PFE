@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.sculk_enderman.arms_legs": {
+		"animation.poke_pfe.sculk_enderman.arms_legs": {
 			"loop": true,
 			"bones": {
 				"leftArm": {
@@ -18,7 +18,7 @@
 				}
 			}
 		},
-		"animation.sculk_enderman.carrying": {
+		"animation.poke_pfe.sculk_enderman.carrying": {
 			"loop": true,
 			"bones": {
 				"leftArm": {
@@ -29,7 +29,7 @@
 				}
 			}
 		},
-		"animation.sculk_enderman.scary_face": {
+		"animation.poke_pfe.sculk_enderman.scary_face": {
 			"loop": true,
 			"bones": {
 				"hat": {
@@ -40,7 +40,7 @@
 				}
 			}
 		},
-		"animation.sculk_enderman.attack.rotations": {
+		"animation.poke_pfe.sculk_enderman.attack.rotations": {
 			"loop": true,
 			"bones": {
 				"body": {
@@ -58,7 +58,7 @@
 				}
 			}
 		},
-		"animation.sculk_enderman.bob": {
+		"animation.poke_pfe.sculk_enderman.bob": {
 			"loop": true,
 			"bones": {
 				"leftArm": {
@@ -69,7 +69,7 @@
 				}
 			}
 		},
-		"animation.sculk_enderman.move": {
+		"animation.poke_pfe.sculk_enderman.move": {
 			"loop": true,
 			"bones": {
 				"leftArm": {

@@ -45,7 +45,6 @@ Crab Pal
 
 PFE Wiki
 New: https://pfewiki.gitbook.io/home
-Old: https://github.com/ItsMePok/PFE/wiki
 
 Code for Slabs & Tool Durability were copied from the bedrock wiki
 https://wiki.bedrock.dev/
@@ -117,7 +116,7 @@ https://bedrock.dev/
 https://github.com/Mojang/bedrock-samples
 https://jaylydev.github.io/scriptapi-docs/
 https://learn.microsoft.com/en-us/minecraft/creator/scriptapi/
-https://github.com/ItsMePok/PFE/wiki
+https://pfewiki.gitbook.io/home
 
 Programs/Sites I have used but no longer using
 

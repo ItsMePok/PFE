@@ -3,8 +3,8 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.poke.carved_melon",
-				"texture_width": 48,
+				"identifier": "geometry.poke_pfe.carved_melon",
+				"texture_width": 16,
 				"texture_height": 16,
 				"visible_bounds_width": 2,
 				"visible_bounds_height": 2.5,
@@ -20,11 +20,11 @@
 							"size": [16, 16, 16],
 							"uv": {
 								"north": {"uv": [0, 0], "uv_size": [16, 16]},
-								"east": {"uv": [16, 0], "uv_size": [16, 16]},
-								"south": {"uv": [16, 0], "uv_size": [16, 16]},
-								"west": {"uv": [16, 0], "uv_size": [16, 16]},
-								"up": {"uv": [32, 0], "uv_size": [16, 16]},
-								"down": {"uv": [32, 16], "uv_size": [16, -16]}
+								"east": {"uv": [0, 0], "uv_size": [16, 16]},
+								"south": {"uv": [0, 0], "uv_size": [16, 16]},
+								"west": {"uv": [0, 0], "uv_size": [16, 16]},
+								"up": {"uv": [0, 0], "uv_size": [16, 16]},
+								"down": {"uv": [0, 16], "uv_size": [16, -16]}
 							}
 						}
 					]
@@ -61,13 +61,13 @@
 				},
 				"ground": {
 					"rotation": [0, 0, 0],
-					"translation": [0, 0.5, 0],
-					"scale": [0.33, 0.33, 0.33],
+					"translation": [0, 3, 0],
+					"scale": [0.25, 0.25, 0.25],
 					"rotation_pivot": [0, 0, 0],
 					"scale_pivot": [0, 0, 0]
 				},
 				"gui": {
-					"rotation": [30, 135, 0],
+					"rotation": [30, -135, 0],
 					"translation": [0, 0, 0],
 					"scale": [1, 1, 1],
 					"rotation_pivot": [0, 0, 0],

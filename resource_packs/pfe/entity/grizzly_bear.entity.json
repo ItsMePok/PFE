@@ -10,7 +10,7 @@
 				"default":"textures/entity/neutral/poke_grizzly_bear"
 			},
 			"geometry":{
-				"default":"geometry.poke.bear"
+				"default":"geometry.poke_pfe.bear"
 			},
 			"animations":{
 				"walk":"animation.grizzly_bear.walk",

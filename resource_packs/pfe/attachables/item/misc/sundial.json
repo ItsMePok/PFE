@@ -18,10 +18,10 @@
 		  "item_frame_8": "textures/items/sundial/8",
 		  "enchanted": "textures/misc/enchanted_item_glint"
 		},
-		"geometry": {"default": "geometry.poke.16.item"},
+		"geometry": {"default": "geometry.poke_pfe.16.item"},
 		"animations": {
-		  "1p": "animation.poke.16.item.fp",
-		  "3p": "animation.poke.16.item.3p"
+		  "1p": "animation.poke_pfe.16.item.fp",
+		  "3p": "animation.poke_pfe.16.item.3p"
 		},
 		"scripts": {
 		  "animate": [
@@ -29,7 +29,7 @@
 			{"3p":"!c.is_first_person"}
 		  ]
 		},
-		"render_controllers": ["controller.render.poke.item.16"]
+		"render_controllers": ["controller.render.poke_pfe.item.16"]
 	  }
 	}
   }

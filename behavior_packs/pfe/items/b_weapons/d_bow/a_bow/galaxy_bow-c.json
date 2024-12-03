@@ -80,8 +80,8 @@ Other things:
 - Charging Animations were done from:
   - Script After Event (PFEMain.js), Cutsom component: "poke:cc_bow_aim" (shows where you are aiming to others)
   - The attachable file (RP/attachables/item/bow/galaxy_bow.json)
-  - Animations (RP/animations/attachables/poke.16.item.animation(animation.poke.bow.frames))
-  - Animation Controller (RP/animation_controllers/poke.bow.animation_controllers.json(controller.animation.poke.bow))
+  - Animations (RP/animations/attachables/poke.16.item.animation(animation.poke_pfe.bow.frames))
+  - Animation Controller (RP/animation_controllers/poke.bow.animation_controllers.json(controller.animation.poke_pfe.bow))
   - Render Controller (RP/render_controllers/poke.bow.render_controllers.json)
   -
 */

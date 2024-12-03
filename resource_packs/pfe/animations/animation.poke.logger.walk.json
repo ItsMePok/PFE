@@ -1,7 +1,7 @@
 {
 	"format_version": "1.10.0",
 	"animations": {
-		"animation.poke.logger.walk": {
+		"animation.poke_pfe.logger.walk": {
 			"loop": true,
 			"anim_time_update": "query.modified_distance_moved",
 			"bones": {
@@ -29,7 +29,7 @@
 				}
 			}
 		},
-		"animation.poke.logger.melee_attack": {
+		"animation.poke_pfe.logger.melee_attack": {
 			"animation_length": 0.3333,
 			"bones": {
 				"LArm": {
@@ -68,7 +68,7 @@
 				}
 			}
 		},
-		"animation.poke.logger.chainsaw_setup": {
+		"animation.poke_pfe.logger.chainsaw_setup": {
 			"loop": true,
 			"animation_length": 0.1667,
 			"bones": {

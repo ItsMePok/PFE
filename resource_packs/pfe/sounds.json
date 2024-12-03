@@ -1,6 +1,37 @@
 {
 	"entity_sounds": {
 		"entities": {
+			"poke:retro_llama": {
+				"events": {
+					"add.chest": {
+						"pitch": [0.8, 1.2],
+						"sound": "mob.horse.armor",
+						"volume": 1
+					},
+					"ambient": "mob.llama.idle",
+					"armor": {
+						"pitch": 1,
+						"sound": "mob.llama.swag",
+						"volume": 0.5
+					},
+					"death": "mob.llama.death",
+					"eat": {
+						"pitch": [0.8, 1.2],
+						"sound": "mob.llama.eat",
+						"volume": [0.5, 1.5]
+					},
+					"hurt": "mob.llama.hurt",
+					"mad": "mob.llama.angry",
+					"shoot": "mob.llama.spit",
+					"step": {
+						"pitch": 1,
+						"sound": "mob.llama.step",
+						"volume": 0.15
+					}
+				},
+				"pitch": [0.8, 1.2],
+				"volume": 0.8
+			},
 			"poke:soul_blaze": {
 				"events": {
 					"ambient": "mob.blaze.breathe",

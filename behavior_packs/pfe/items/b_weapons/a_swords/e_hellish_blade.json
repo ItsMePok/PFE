@@ -9,6 +9,9 @@
 			}
 		},
 		"components": {
+			"minecraft:custom_components":[
+				"poke:normalMining"
+			],
 			"minecraft:damage": {"value": 15},
 			"minecraft:durability": {
 				"max_durability": 1800,

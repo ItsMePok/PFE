@@ -29,10 +29,11 @@
 				]
 			},
 			"minecraft:tags": {"tags": [
-				"pfe:Command:function pfe_items/sundial:pfeCommandEnd"
+				"pfe:Command:function poke/pfe/sundial:pfeCommandEnd"
 			]},
-			"minecraft:custom_components": [
-				"poke:cc_on_use"
+			"minecraft:custom_components":[
+				"poke:cc_on_use",
+				"poke:normalMining"
 			],
 			"minecraft:use_modifiers": {
 				"use_duration": 0,

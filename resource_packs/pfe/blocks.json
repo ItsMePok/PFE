@@ -48,10 +48,10 @@
 "poke:molten_lava_sponge":{"sound":"moss_block","textures":"poke_molten_lava_sponge"},
 //Melons
 "poke:gilded_melon":{"sound":"wood","textures":{"up":"poke_gilded_melon_top","side":"poke_gilded_melon_side","down":"poke_gilded_melon_top"}},
-"poke:gilded_carved_melon":{"sound":"wood","textures":"poke_gilded_carved_melon"},
-"poke:carved_carved_melon":{"sound":"wood","textures":"poke_carved_carved_melon"},
-"poke:carved_melon":{"sound":"wood","textures":"poke_carved_melon"},
-"poke:charred_melon":{"sound":"roots","textures":"poke_charred_melon"},
+"poke:gilded_carved_melon":{"sound":"wood"},
+"poke:carved_carved_melon":{"sound":"wood"},
+"poke:carved_melon":{"sound":"wood"},
+"poke:charred_melon":{"sound":"roots"},
 //Crates
 "poke:sugarcane_crate":{"textures":"poke_sugarcane_crate","sound":"wood"},
 "poke:empty_crate":{"textures":"poke_empty_crate","sound":"wood"},

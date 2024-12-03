@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.poke.ring.first_person_hold": {
+		"animation.poke_pfe.ring.first_person_hold": {
 			"loop": true,
 			"bones": {
 				"root_item": {
@@ -14,7 +14,7 @@
 				}
 			}
 		},
-		"animation.poke.ring.third_person_hold": {
+		"animation.poke_pfe.ring.third_person_hold": {
 			"loop": true,
 			"bones": {
 				"root_item": {

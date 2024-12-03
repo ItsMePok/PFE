@@ -1,7 +1,7 @@
 {
 	"format_version": "1.10.0",
 	"animation_controllers": {
-		"controller.animation.poke.knightling": {
+		"controller.animation.poke_pfe.knightling": {
 			"initial_state": "idle",
 			"states": {
 				"idle": {

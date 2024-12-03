@@ -1,7 +1,7 @@
 {
 	"format_version": "1.10.0",
 	"animation_controllers": {
-		"controller.animation.speed_boots": {
+		"controller.animation.poke_pfe.speed_boots": {
 			"initial_state": "idle",
 			"states": {
 				"idle": {

@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.maxwell.first_person_hold": {
+		"animation.poke_pfe.maxwell.first_person_hold": {
 			"loop": true,
 			"bones": {
 				"Head": {
@@ -9,7 +9,7 @@
 				}
 			}
 		},
-		"animation.maxwell.third_person_hold": {
+		"animation.poke_pfe.maxwell.third_person_hold": {
 			"loop": true,
 			"animation_length": 7,
 			"bones": {

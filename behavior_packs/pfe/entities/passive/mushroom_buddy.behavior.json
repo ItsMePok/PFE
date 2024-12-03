@@ -178,7 +178,7 @@
 			"minecraft:attack_damage": {
 				"value": 4
 			},"minecraft:loot": {
-				"table":"loot_tables/poke/entities/mushroom_buddy.json"
+				"table":"loot_tables/poke/pfe/mushroom_buddy.json"
 			},
 			"minecraft:nameable": {},
 			"minecraft:type_family": {

@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.poke.magic_8_ball",
+				"identifier": "geometry.poke_pfe.magic_8_ball",
 				"texture_width": 32,
 				"texture_height": 32,
 				"visible_bounds_width": 2,

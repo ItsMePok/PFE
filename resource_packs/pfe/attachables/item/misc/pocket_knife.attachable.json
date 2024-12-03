@@ -13,7 +13,7 @@
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {
-				"default": "geometry.poke.pocket_knife"
+				"default": "geometry.poke_pfe.pocket_knife"
 			},
 			"animations": {
 				"first_person_hold": "animation.pocket_knife.first_person_hold",

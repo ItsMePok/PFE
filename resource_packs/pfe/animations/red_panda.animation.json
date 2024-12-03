@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.red_panda.baby_transform": {
+		"animation.poke_pfe.red_panda.baby_transform": {
 			"loop": true,
 			"bones": {
 				"head": {
@@ -14,7 +14,7 @@
 				}
 			}
 		},
-		"animation.red_panda.walk": {
+		"animation.poke_pfe.red_panda.walk": {
 			"anim_time_update": "query.modified_distance_moved",
 			"loop": true,
 			"bones": {
@@ -48,10 +48,10 @@
 				}
 			}
 		},
-		"animation.red_panda.setup": {
+		"animation.poke_pfe.red_panda.setup": {
 			"loop": true
 		},
-		"animation.red_panda.crouch": {
+		"animation.poke_pfe.red_panda.crouch": {
 			"loop": true,
 			"bones": {
 				"body": {
@@ -128,7 +128,7 @@
 				}
 			}
 		},
-		"animation.red_panda.pounce": {
+		"animation.poke_pfe.red_panda.pounce": {
 			"loop": true,
 			"bones": {
 				"body": {
@@ -157,7 +157,7 @@
 				}
 			}
 		},
-		"animation.red_panda.sit": {
+		"animation.poke_pfe.red_panda.sit": {
 			"loop": true,
 			"bones": {
 				"body": {
@@ -246,7 +246,7 @@
 				}
 			}
 		},
-		"animation.red_panda.sleep": {
+		"animation.poke_pfe.red_panda.sleep": {
 			"loop": true,
 			"bones": {
 				"body": {
@@ -287,7 +287,7 @@
 				}
 			}
 		},
-		"animation.red_panda.stuck": {
+		"animation.poke_pfe.red_panda.stuck": {
 			"loop": true,
 			"bones": {
 				"body": {
@@ -304,7 +304,7 @@
 				}
 			}
 		},
-		"animation.red_panda.wiggle": {
+		"animation.poke_pfe.red_panda.wiggle": {
 			"loop": true,
 			"bones": {
 				"body": {

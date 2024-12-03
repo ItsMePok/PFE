@@ -168,7 +168,7 @@
 				]
 			},
 			"minecraft:loot": {
-				"table": "loot_tables/poke/entities/boss_event_token_easy.json"
+				"table": "loot_tables/poke/pfe/boss_event_token_easy.json"
 			},
 			"minecraft:movement": {
 				"value": 0.25

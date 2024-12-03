@@ -192,7 +192,7 @@
 				"height": 2.7
 			},
 			"minecraft:loot": {
-				"table": "loot_tables/poke/entities/necromancer.json"
+				"table": "loot_tables/poke/pfe/necromancer.json"
 			},
 			"minecraft:health": {
 				"value": 1500,

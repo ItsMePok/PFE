@@ -43,7 +43,7 @@
 					"value":1
 				},
 				"minecraft:loot":{
-					"table":"loot_tables/poke/entities/raccoon.json"
+					"table":"loot_tables/poke/pfe/raccoon.json"
 				},
 				"minecraft:breedable":{
 					"require_tame":true,

@@ -4,7 +4,8 @@
 		"description": {
 			"identifier": "poke:cut_hellish",
 			"menu_category": {
-				"category": "construction"
+				"category": "construction",
+				"group": "itemGroup.name.cutBlock"
 			}
 		},
 		"components": {

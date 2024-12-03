@@ -10,7 +10,7 @@
 				"default":"textures/entity/traders/poke_token_trader"
 			},
 			"geometry":{
-				"default":"geometry.poke.token_trader"
+				"default":"geometry.poke_pfe.token_trader"
 			},
 			"scripts":{
 				"scale":1,"pre_animation":["variable.raise_arms=1;"]
@@ -29,7 +29,7 @@
 					"move":"controller.animation.token_trader.move"
 				}
 			],
-			"render_controllers":["controller.render.poke.default"],
+			"render_controllers":["controller.render.poke_pfe.default"],
 			"spawn_egg":{
 				"texture":"poke_spawn_token_trader"
 			},

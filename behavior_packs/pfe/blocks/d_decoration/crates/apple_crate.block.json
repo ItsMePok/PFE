@@ -4,7 +4,8 @@
 		"description":{
 			"identifier":"poke:apple_crate",
 			"menu_category":{
-				"category":"construction"
+				"category":"construction",
+				"group": "itemGroup.name.crate"
 			}
 		},
 		"components":{
@@ -20,7 +21,7 @@
 				"destroy_chance_modifier": 20,
 				"catch_chance_modifier": 5
 			},
-			"minecraft:geometry":{"identifier": "geometry.poke.crate"},
+			"minecraft:geometry":{"identifier": "geometry.poke_pfe.crate"},
 			"minecraft:material_instances":{
 				"*": {
 					"texture": "poke_apple_crate",

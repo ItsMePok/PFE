@@ -1,5 +1,5 @@
 // scripts/main.ts
-import { system, world, EquipmentSlot, GameMode, EntityComponentTypes, ItemComponentTypes, ItemStack } from "@minecraft/server";
+import { system as system3, world as world2, EquipmentSlot as EquipmentSlot2, GameMode as GameMode2, EntityComponentTypes as EntityComponentTypes2, ItemComponentTypes as ItemComponentTypes2, ItemStack as ItemStack2, Direction } from "@minecraft/server";
 
 // node_modules/@minecraft/vanilla-data/lib/index.js
 var MinecraftBiomeTypes = ((MinecraftBiomeTypes2) => {
@@ -2718,26 +2718,304 @@ var MinecraftItemTypes = ((MinecraftItemTypes2) => {
   return MinecraftItemTypes2;
 })(MinecraftItemTypes || {});
 
-// scripts/main.ts
+// scripts/bossEvents.ts
+import { system, world } from "@minecraft/server";
+import { ActionFormData, ModalFormData } from "@minecraft/server-ui";
+var PFEBossEventConfigName = `pfe:bossEventConfig`;
+var PFEBossEventBosses = [
+  `poke:zombken`,
+  `poke:super_striker`,
+  `poke:knightling`,
+  `poke:mini_demonic_allay`,
+  `poke:necromancer`,
+  `poke:snowman`,
+  `poke:robo_golem`,
+  `poke:dragon`,
+  `poke:the_logger`,
+  `poke:listener`
+];
+var TotalBosses = PFEBossEventBosses.length;
+var PFEDefaultBossEventSettings = {
+  "zombken": { "e": true, "%": 75 },
+  "superStriker": { "e": true, "%": 75 },
+  "knightling": { "e": true, "%": 5 },
+  "miniDemonicAllay": { "e": true, "%": 5 },
+  "necromancer": { "e": true, "%": 1 },
+  "snowman": { "e": true, "%": 5 },
+  "furnaceGolem": { "e": false, "%": 0 },
+  "sparky": { "e": false, "%": 0 },
+  "theLogger": { "e": false, "%": 0 },
+  "listener": { "e": false, "%": 0 },
+  "ticks": 108e3
+};
+function PFEBossEventUIMainMenu(player) {
+  let settings = JSON.parse(world.getDynamicProperty(PFEBossEventConfigName).toString());
+  let EnabledBosses = 0;
+  if (settings.zombken.e)
+    EnabledBosses++;
+  if (settings.superStriker.e)
+    EnabledBosses++;
+  if (settings.knightling.e)
+    EnabledBosses++;
+  if (settings.miniDemonicAllay.e)
+    EnabledBosses++;
+  if (settings.necromancer.e)
+    EnabledBosses++;
+  if (settings.snowman.e)
+    EnabledBosses++;
+  if (settings.furnaceGolem.e)
+    EnabledBosses++;
+  if (settings.sparky.e)
+    EnabledBosses++;
+  if (settings.theLogger.e)
+    EnabledBosses++;
+  if (settings.listener.e)
+    EnabledBosses++;
+  new ActionFormData().title({ translate: `translation.poke:bossEventMainMenuTitle` }).button({ translate: `translation.poke:bossEventMainMenuEnableBosses`, with: [`${EnabledBosses}`, `${TotalBosses}`] }, "textures/items/misc/poke_spawn_enabled").button({ translate: `translation.poke:bossEventMainMenuBossChances` }, "textures/items/misc/poke_spawn_weight").button({ translate: `translation.poke:bossEventSettings` }, "textures/ui/settings_glyph_color_2x").button({ translate: `translation.poke:bossEventClose` }, "textures/ui/redX1").show(player).then((ui) => {
+    if (ui.canceled || ui.selection == 3) {
+      return;
+    }
+    ;
+    if (ui.selection == 0) {
+      PFEBossEventUIEnabledBosses(player);
+      return;
+    }
+    ;
+    if (ui.selection == 1) {
+      PFEBossEventUIBossChances(player);
+      return;
+    }
+    ;
+    if (ui.selection == 2) {
+      PFEBossEventUISettings(player);
+      return;
+    }
+    ;
+  });
+}
+function PFEBossEventUISettings(player) {
+  let settings = JSON.parse(world.getDynamicProperty(PFEBossEventConfigName).toString());
+  new ActionFormData().title({ translate: `translation.poke:bossEventMainMenuTitle` }).button({ translate: `translation.poke:bossEventManual` }, "textures/items/boss/poke_boss_event").button({ translate: `translation.poke:bossEventTiming` }, "textures/items/misc/poke_spawn_time").button({ translate: `translation.poke:bossEventSettingsReset` }, "textures/ui/refresh_light").button({ translate: `translation.poke:bossEventGoBack` }, "textures/ui/redX1").show(player).then((ui) => {
+    if (ui.canceled || ui.selection == 3) {
+      PFEBossEventUIMainMenu(player);
+      return;
+    }
+    ;
+    if (ui.selection == 0) {
+      PFEStartBossEvent();
+    }
+    if (ui.selection == 1) {
+      PFEBossEventTiming(player);
+      return;
+    }
+    ;
+    if (ui.selection == 2) {
+      world.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(PFEDefaultBossEventSettings));
+      return;
+    }
+    ;
+  });
+}
+function PFEBossEventUIEnabledBosses(player) {
+  let settings = JSON.parse(world.getDynamicProperty(PFEBossEventConfigName).toString());
+  new ModalFormData().title({ translate: `translation.poke:bossEventMainMenuTitle` }).toggle({ translate: `entity.poke:zombken.name` }, settings.zombken.e).toggle({ translate: `entity.poke:super_striker.name` }, settings.superStriker.e).toggle({ translate: `entity.poke:knightling.name` }, settings.knightling.e).toggle({ translate: `entity.poke:mini_demonic_allay.name` }, settings.miniDemonicAllay.e).toggle({ translate: `entity.poke:necromancer.name` }, settings.necromancer.e).toggle({ translate: `entity.poke:snowman.name` }, settings.snowman.e).toggle({ translate: `entity.poke:robo_golem.name` }, settings.furnaceGolem.e).toggle({ translate: `entity.poke:dragon.name` }, settings.sparky.e).toggle({ translate: `entity.poke:the_logger.name` }, settings.theLogger.e).toggle({ translate: `entity.poke:listener.name` }, settings.listener.e).submitButton(`translation.poke:BossEventUISubmit`).show(player).then((ui) => {
+    if (!ui.canceled) {
+      settings.zombken.e = Boolean(ui.formValues.at(0));
+      settings.superStriker.e = Boolean(ui.formValues.at(1));
+      settings.knightling.e = Boolean(ui.formValues.at(2));
+      settings.miniDemonicAllay.e = Boolean(ui.formValues.at(3));
+      settings.necromancer.e = Boolean(ui.formValues.at(4));
+      settings.snowman.e = Boolean(ui.formValues.at(5));
+      settings.furnaceGolem.e = Boolean(ui.formValues.at(6));
+      settings.sparky.e = Boolean(ui.formValues.at(7));
+      settings.theLogger.e = Boolean(ui.formValues.at(8));
+      settings.listener.e = Boolean(ui.formValues.at(9));
+      world.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(settings));
+    }
+    PFEBossEventUIMainMenu(player);
+    return;
+  });
+}
+function PFEBossEventTiming(player) {
+  let settings = JSON.parse(world.getDynamicProperty(PFEBossEventConfigName).toString());
+  new ModalFormData().title({ translate: `translation.poke:bossEventMainMenuTitle` }).textField({ translate: `translation.poke:BossEventTimeDesc` }, { translate: `translation.poke:BossEventTimePlaceholder` }, `${settings.ticks}`).submitButton(`translation.poke:BossEventUISubmit`).show(player).then((ui) => {
+    if (!ui.canceled) {
+      let newTicks = Number(ui.formValues.at(0));
+      if (Number(isNaN(newTicks))) {
+        return;
+      } else {
+        settings.ticks = Number(ui.formValues.at(0));
+        world.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(settings));
+      }
+    }
+    PFEBossEventUIMainMenu(player);
+    return;
+  });
+}
+function PFEBossEventUIBossChances(player) {
+  let settings = JSON.parse(world.getDynamicProperty(PFEBossEventConfigName).toString());
+  new ModalFormData().title({ translate: `translation.poke:bossEventMainMenuTitle` }).slider({ translate: `entity.poke:zombken.name` }, 0, 100, 1, settings.zombken["%"]).slider({ translate: `entity.poke:super_striker.name` }, 0, 100, 1, settings.superStriker["%"]).slider({ translate: `entity.poke:knightling.name` }, 0, 100, 1, settings.knightling["%"]).slider({ translate: `entity.poke:mini_demonic_allay.name` }, 0, 100, 1, settings.miniDemonicAllay["%"]).slider({ translate: `entity.poke:necromancer.name` }, 0, 100, 1, settings.necromancer["%"]).slider({ translate: `entity.poke:snowman.name` }, 0, 100, 1, settings.snowman["%"]).slider({ translate: `entity.poke:robo_golem.name` }, 0, 100, 1, settings.furnaceGolem["%"]).slider({ translate: `entity.poke:dragon.name` }, 0, 100, 1, settings.sparky["%"]).slider({ translate: `entity.poke:the_logger.name` }, 0, 100, 1, settings.theLogger["%"]).slider({ translate: `entity.poke:listener.name` }, 0, 100, 1, settings.listener["%"]).submitButton(`translation.poke:BossEventUISubmit`).show(player).then((ui) => {
+    if (!ui.canceled) {
+      settings.zombken["%"] = Number(ui.formValues.at(0));
+      settings.superStriker["%"] = Number(ui.formValues.at(1));
+      settings.knightling["%"] = Number(ui.formValues.at(2));
+      settings.miniDemonicAllay["%"] = Number(ui.formValues.at(3));
+      settings.necromancer["%"] = Number(ui.formValues.at(4));
+      settings.snowman["%"] = Number(ui.formValues.at(5));
+      settings.furnaceGolem["%"] = Number(ui.formValues.at(6));
+      settings.sparky["%"] = Number(ui.formValues.at(7));
+      settings.theLogger["%"] = Number(ui.formValues.at(8));
+      settings.listener["%"] = Number(ui.formValues.at(9));
+      world.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(settings));
+    }
+    PFEBossEventUIMainMenu(player);
+    return;
+  });
+}
+function PFEBossEventTicks() {
+  let settings = PFEDefaultBossEventSettings;
+  if (typeof world.getDynamicProperty(PFEBossEventConfigName) != "string") {
+    return PFEDefaultBossEventSettings.ticks;
+  } else
+    settings = JSON.parse(world.getDynamicProperty(PFEBossEventConfigName).toString());
+  return settings.ticks;
+}
+function PFEStartBossEvent() {
+  let settings = JSON.parse(world.getDynamicProperty(PFEBossEventConfigName).toString());
+  let allPlayers = world.getAllPlayers();
+  let randomPlayer = allPlayers.at(Math.abs(Math.round(Math.random() * (allPlayers.length - 1))));
+  if (!settings.zombken.e)
+    settings.zombken["%"] = 0;
+  if (!settings.superStriker.e)
+    settings.superStriker["%"] = 0;
+  if (!settings.knightling.e)
+    settings.knightling["%"] = 0;
+  if (!settings.miniDemonicAllay.e)
+    settings.miniDemonicAllay["%"] = 0;
+  if (!settings.necromancer.e)
+    settings.necromancer["%"] = 0;
+  if (!settings.snowman.e)
+    settings.snowman["%"] = 0;
+  if (!settings.furnaceGolem.e)
+    settings.furnaceGolem["%"] = 0;
+  if (!settings.sparky.e)
+    settings.sparky["%"] = 0;
+  if (!settings.theLogger.e)
+    settings.theLogger["%"] = 0;
+  if (!settings.listener.e)
+    settings.listener["%"] = 0;
+  let zombkenWeight = settings.zombken["%"];
+  let superStrikerWeight = settings.superStriker["%"];
+  let knightlingWeight = settings.knightling["%"];
+  let miniDemonicAllayWeight = settings.miniDemonicAllay["%"];
+  let necromancerWeight = settings.necromancer["%"];
+  let snowmanWeight = settings.snowman["%"];
+  let furnaceGolemWeight = settings.furnaceGolem["%"];
+  let sparkyWeight = settings.sparky["%"];
+  let theLoggerWeight = settings.theLogger["%"];
+  let listenerWeight = settings.listener["%"];
+  let weights = [zombkenWeight, superStrikerWeight, knightlingWeight, miniDemonicAllayWeight, necromancerWeight, snowmanWeight, furnaceGolemWeight, sparkyWeight, theLoggerWeight, listenerWeight];
+  if (zombkenWeight + superStrikerWeight + knightlingWeight + miniDemonicAllayWeight + necromancerWeight + snowmanWeight + furnaceGolemWeight + sparkyWeight + theLoggerWeight + listenerWeight == 0)
+    return 0;
+  const weightedRandom = (array, weights2) => {
+    const totalWeight = weights2.reduce((a, b) => a + b, 0);
+    let random = Math.random() * totalWeight;
+    return array.find((_, i) => (random -= weights2[i]) <= 0);
+  };
+  let selectedBoss = weightedRandom(PFEBossEventBosses, weights);
+  randomPlayer?.dimension.spawnEntity(selectedBoss, randomPlayer.location).runCommand(`spreadplayers ~ ~ 30 40 @s ~10`);
+  world.sendMessage({ rawtext: [{ translate: `translation.${selectedBoss}_boss_event_near` }, { text: `: ${randomPlayer?.name}` }] });
+}
 system.runInterval(() => {
-  world.getDimension("overworld").runCommandAsync("execute as @a run function pfe_armor/effects");
-  system.runTimeout(() => {
-    world.getDimension("overworld").runCommandAsync("execute as @a run function pfe_armor/effects_2");
-    system.runTimeout(() => {
-      world.getDimension("overworld").runCommandAsync("execute as @a run function pfe_armor/effects_3");
-      system.runTimeout(() => {
-        world.getDimension("overworld").runCommandAsync("execute as @a run function pfe_armor/effects_4");
+  PFEStartBossEvent();
+}, PFEBossEventTicks());
+var PFEBossEventUI = class {
+  onUse(data) {
+    if (world.getDynamicProperty(PFEBossEventConfigName) == void 0) {
+      world.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(PFEDefaultBossEventSettings));
+    }
+    PFEBossEventUIMainMenu(data.source);
+    return;
+  }
+};
+
+// scripts/haxelMining.ts
+import { EntityComponentTypes, EquipmentSlot, GameMode, ItemComponentTypes, ItemStack, system as system2 } from "@minecraft/server";
+var PFEHaxelMining = class {
+  onUse(data) {
+    const ItemTags = data.itemStack.getTags().toString();
+    let ComponentInfo = JSON.parse(ItemTags.substring(ItemTags.indexOf("pfe:HaxelMining:"), ItemTags.indexOf(":pfeHaxelMiningEnd")).substring(16));
+    let location = { x: Math.round(data.source.location.x - ComponentInfo.radius.x / 2), y: Math.round(data.source.location.y - 0.01), z: Math.round(data.source.location.z - ComponentInfo.radius.z / 2) };
+    system2.runJob(PFEMine(ComponentInfo, location, data.source, data.source.dimension, data.itemStack.getComponent(ItemComponentTypes.Enchantable).hasEnchantment(MinecraftEnchantmentTypes.SilkTouch), data.itemStack));
+  }
+};
+var BannedBlocks = [MinecraftBlockTypes.Air, MinecraftBlockTypes.LightBlock, MinecraftBlockTypes.Barrier, MinecraftBlockTypes.Jigsaw, MinecraftBlockTypes.StructureBlock, MinecraftBlockTypes.CommandBlock, MinecraftBlockTypes.ChainCommandBlock, MinecraftBlockTypes.RepeatingCommandBlock, MinecraftBlockTypes.BorderBlock, MinecraftBlockTypes.Allow, MinecraftBlockTypes.Deny, "minecraft:light_block_0", "minecraft:light_block_1", "minecraft:light_block_2", "minecraft:light_block_3", "minecraft:light_block_4", "minecraft:light_block_5", "minecraft:light_block_6", "minecraft:light_block_7", "minecraft:light_block_8", "minecraft:light_block_9", "minecraft:light_block_10", "minecraft:light_block_11", "minecraft:light_block_13", "minecraft:light_block_14", "minecraft:light_block_15"];
+function* PFEMine(data, location, player, dim, silkTouch, item) {
+  let DurabilityAmount = 0;
+  for (let x = location.x; x < location.x + data.radius.x; x++) {
+    for (let y = location.y; y < location.y + data.radius.y; y++) {
+      for (let z = location.z; z < location.z + data.radius.z; z++) {
+        const block = dim.getBlock({ x, y, z });
+        if (block) {
+          if (BannedBlocks.includes(block.typeId) || block.typeId == MinecraftBlockTypes.Bedrock && !data.canBreakBedrock || block.isLiquid && !data.canBreakLiquids) {
+          } else {
+            DurabilityAmount = DurabilityAmount + 1;
+            if (silkTouch) {
+              let blockItemStack = block.getItemStack(1, false);
+              if (!blockItemStack)
+                blockItemStack = new ItemStack(block.typeId);
+              block.dimension.spawnItem(blockItemStack, player.location);
+              block.setType(MinecraftBlockTypes.Air);
+            } else {
+              let blockLocation = `${block.location.x} ${block.location.y} ${block.location.z}`;
+              block.dimension.runCommand(`setblock ${blockLocation} air destroy`);
+            }
+          }
+        }
+        yield;
+      }
+    }
+  }
+  if (DurabilityAmount != 0) {
+    if (item.hasComponent(ItemComponentTypes.Durability) && player.getGameMode() != GameMode.creative) {
+      let newItem = damage_item_ub(item, DurabilityAmount);
+      player.getComponent(EntityComponentTypes.Equippable).setEquipment(EquipmentSlot.Mainhand, newItem);
+      if (!newItem) {
+        player.playSound("random.break");
+      }
+    }
+    player.dimension.playSound("dig.stone", player.location);
+  }
+  if (!silkTouch) {
+    player.runCommand(`tp @e[type=item,r=${data.radius.x}] @s`);
+  }
+}
+
+// scripts/main.ts
+system3.runInterval(() => {
+  world2.getDimension("overworld").runCommandAsync("execute as @a run function poke/pfe/effects");
+  system3.runTimeout(() => {
+    world2.getDimension("overworld").runCommandAsync("execute as @a run function poke/pfe/effects_2");
+    system3.runTimeout(() => {
+      world2.getDimension("overworld").runCommandAsync("execute as @a run function poke/pfe/effects_3");
+      system3.runTimeout(() => {
+        world2.getDimension("overworld").runCommandAsync("execute as @a run function poke/pfe/effects_4");
       }, 40);
     }, 80);
   }, 120);
 }, 180);
-system.runInterval(() => {
-  world.getDimension("overworld").runCommandAsync("execute at @r run summon poke:boss_event ~ -65 ~");
-}, 108e3);
-function damage_item(item) {
-  if (!item.hasComponent("durability"))
+function PFEDecrementStack(item) {
+  if (item.amount <= 1)
+    return void 0;
+  else {
+    item.amount = item.amount - 1;
     return item;
-  const durabilityComponent = item.getComponent("durability");
+  }
+}
+function damage_item(item) {
+  if (!item.hasComponent(ItemComponentTypes2.Durability))
+    return item;
+  const durabilityComponent = item.getComponent(ItemComponentTypes2.Durability);
   const enchantComponent = item.getComponent("minecraft:enchantable");
   let unbreaking = 0;
   if (item.hasComponent("enchantments")) {
@@ -2757,41 +3035,30 @@ function damage_item(item) {
   durabilityComponent.damage += Number(Math.round(Math.random() * 100) <= durabilityComponent.getDamageChance(unbreaking));
   return item;
 }
-function damage_item_ub(item) {
-  if (!item.hasComponent("durability"))
+function damage_item_ub(item, multiplier) {
+  if (!item.hasComponent(ItemComponentTypes2.Durability))
     return item;
-  const durabilityComponent = item.getComponent("durability");
+  const durabilityComponent = item.getComponent(ItemComponentTypes2.Durability);
   var unbreakingL = 0;
-  if (item.hasComponent(ItemComponentTypes.Enchantable)) {
-    if (item.getComponent(ItemComponentTypes.Enchantable).hasEnchantment("unbreaking")) {
-      unbreakingL = item.getComponent(ItemComponentTypes.Enchantable).getEnchantment("unbreaking").level;
+  if (item.hasComponent(ItemComponentTypes2.Enchantable)) {
+    if (item.getComponent(ItemComponentTypes2.Enchantable).hasEnchantment("unbreaking")) {
+      unbreakingL = item.getComponent(ItemComponentTypes2.Enchantable).getEnchantment("unbreaking").level;
     }
   }
-  durabilityComponent.damage += Number(Math.round(Math.random() * 100) <= durabilityComponent.getDamageChance(unbreakingL));
+  let damage = Number(Math.round(Math.random() * 100) <= durabilityComponent.getDamageChance(unbreakingL));
+  if (typeof multiplier == "number") {
+    damage = damage * multiplier;
+  }
+  if (durabilityComponent.damage + damage == durabilityComponent.maxDurability)
+    return void 0;
+  durabilityComponent.damage += damage;
   if (durabilityComponent.damage == durabilityComponent.maxDurability) {
     return item;
   }
   return item;
 }
-var my_items = ["poke:cobalt_pickaxe", "poke:onyx_pickaxe", "poke:holy_pickaxe", "poke:hellish_pickaxe", "poke:godly_pickaxe", "poke:demonic_pickaxe", "poke:amethyst_pickaxe", "poke:astral_pickaxe", "poke:death_pickaxe", "poke:emerald_pickaxe", "poke:galaxy_pickaxe", "poke:medic_pickaxe", "poke:nebula_pickaxe", "poke:molten_pickaxe", "poke:radium_pickaxe", "poke:shade_pickaxe", "poke:void_pickaxe", "poke:medic_haxel", "poke:cobalt_crossbow", "poke:astral_crossbow", "poke:godly_crossbow", "poke:demonic_haxel", "poke:holy_battleaxe", "poke:godly_battleaxe", "poke:galaxy_battleaxe", "poke:astral_battleaxe", "poke:amethyst_battleaxe", "poke:netherite_battleaxe", "poke:diamond_battleaxe", "poke:gold_battleaxe", "poke:void_battleaxe", "poke:death_battleaxe", "poke:demonic_battleaxe", "poke:hellish_battleaxe", "poke:emerald_battleaxe", "poke:iron_battleaxe", "poke:onyx_battleaxe", "poke:shade_battleaxe", "poke:cobalt_battleaxe", "poke:stone_battleaxe", "poke:wood_battleaxe", "poke:radium_battleaxe", "poke:hellish_scythe", "poke:ember_scythe", "poke:emerald_scythe", "poke:nebula_battleaxe", "poke:diamond_scythe", "poke:shade_scythe", "poke:nebula_scythe", "poke:godly_scythe", "poke:galactic_scythe", "poke:radium_scythe", "poke:amethyst_scythe", "poke:onyx_scythe", "poke:gold_scythe", "poke:cobalt_scythe", "poke:netherite_scythe", "poke:void_scythe", "poke:holy_scythe", "poke:iron_scythe", "poke:demonic_slasher", "poke:death_scythe", "poke:godly_haxel", "poke:radium_haxel", "poke:cobalt_haxel", "poke:shade_haxel", "poke:wooden_haxel", "poke:stone_haxel", "poke:iron_haxel", "poke:gold_haxel", "poke:emerald_haxel", "poke:diamond_haxel", "poke:netherite_haxel", "poke:hellish_haxel", "poke:holy_haxel", "poke:amethyst_haxel", "poke:haxel", "poke:swift_pickaxe", "poke:snow_shovel", "poke:nebula_hoe", "poke:cobalt_sword", "poke:astral_sword", "poke:onyx_sword", "poke:demonic_sword", "poke:void_sword", "poke:pocket_knife", "poke:amethyst_sword", "poke:circuit_sword", "poke:hellish_blade", "poke:nebula_sword", "poke:galaxy_sword", "poke:godly_sword", "poke:holy_sword", "poke:shade_sword", "poke:radium_sword"];
-world.afterEvents.playerBreakBlock.subscribe((data) => {
-  if (!data.itemStackAfterBreak)
-    return;
-  if (!my_items.includes(data.itemStackAfterBreak.typeId))
-    return;
-  if (world.getPlayers({
-    gameMode: GameMode.creative
-  }).includes(data.player))
-    return;
-  const newItem = damage_item_ub(data.itemStackAfterBreak);
-  data.player.getComponent(EntityComponentTypes.Equippable).setEquipment(EquipmentSlot.Mainhand, newItem);
-  if (!newItem) {
-    data.player.playSound("random.break");
-  }
-  return;
-});
 var pfeFoodList = ["poke:pumpkin_spice", "poke:xp_vial", "poke:golden_chicken", "poke:rotten_chicken", "poke:demonic_potion", "poke:hellish_potion", "poke:nebula_potion", "poke:void_potion", "poke:death_potion", "poke:cobalt_potion", "poke:cobalt_soup", "poke:crimson_sporeshroom_stew", "poke:root_beer", "poke:hellish_soup", "poke:nebula_noodles", "poke:warped_sporeshroom_stew", "poke:milk_bottle", "poke:banished_star_x10", "poke:banished_star_x9"];
-world.afterEvents.itemCompleteUse.subscribe((item) => {
+world2.afterEvents.itemCompleteUse.subscribe((item) => {
   if (!pfeFoodList.includes(item.itemStack.typeId))
     return;
   switch (item.itemStack.typeId) {
@@ -2856,25 +3123,25 @@ world.afterEvents.itemCompleteUse.subscribe((item) => {
       ;
     case "poke:demonic_potion":
       {
-        item.source.runCommandAsync("function pfe_items/demonic_potion");
+        item.source.runCommandAsync("function poke/pfe/demonic_potion");
         return;
       }
       ;
     case "poke:hellish_potion":
       {
-        item.source.runCommandAsync("function pfe_items/hellish_potion");
+        item.source.runCommandAsync("function poke/pfe/hellish_potion");
         return;
       }
       ;
     case "poke:nebula_potion":
       {
-        item.source.runCommandAsync("function pfe_items/nebula_potion");
+        item.source.runCommandAsync("function poke/pfe/nebula_potion");
         return;
       }
       ;
     case "poke:void_potion":
       {
-        item.source.runCommandAsync("function pfe_items/void_potion");
+        item.source.runCommandAsync("function poke/pfe/void_potion");
         return;
       }
       ;
@@ -2912,7 +3179,7 @@ world.afterEvents.itemCompleteUse.subscribe((item) => {
   return;
 });
 var pfeProjItems = ["poke:volt_ring", "poke:nuke_ring", "poke:necromancer_staff", "poke:ring_3", "poke:ring_4", "poke:ring_2", "poke:arrow_ring", "poke:shade_ring"];
-world.afterEvents.itemUse.subscribe((data) => {
+world2.afterEvents.itemUse.subscribe((data) => {
   if (!pfeProjItems.includes(data.itemStack.typeId))
     return;
   const headLocate = data.source.getHeadLocation();
@@ -2929,25 +3196,25 @@ world.afterEvents.itemUse.subscribe((data) => {
     projComp.shoot(angle);
   }
   ;
-  if (world.getPlayers({
-    gameMode: GameMode.creative
+  if (world2.getPlayers({
+    gameMode: GameMode2.creative
   }).includes(data.source))
     return;
   const newItem = damage_item(data.itemStack);
-  data.source.getComponent(EntityComponentTypes.Equippable).setEquipment(EquipmentSlot.Mainhand, newItem);
+  data.source.getComponent(EntityComponentTypes2.Equippable).setEquipment(EquipmentSlot2.Mainhand, newItem);
   if (!newItem) {
     data.source.playSound("random.break");
   }
   return;
 });
 var hit_effects = ["poke:astral_scythe", "poke:medic_scythe", "poke:demonic_sword", "poke:hellish_sword", "poke:godly_sword", "poke:holy_sword", "poke:radium_sword", "poke:astral_sword", "poke:shade_sword", "poke:nebula_sword", "poke:amethyst_scythe", "poke:holy_scythe", "poke:hellish_scythe", "poke:godly_scythe", "poke:galactic_scythe", "poke:demonic_slasher", "poke:ember_scythe", "poke:death_scythe", "poke:void_scythe", "poke:radium_scythe", "poke:netherite_scythe", "poke:diamond_scythe", "poke:shade_scythe", "poke:onyx_scythe", "poke:iron_scythe", "poke:gold_scythe", "poke:emerald_scythe", "poke:nebula_scythe", "poke:cobalt_scythe", "poke:circuit_sword", "poke:ban_hammer"];
-world.afterEvents.entityHitEntity.subscribe((data) => {
-  if (data.damagingEntity.hasComponent(EntityComponentTypes.Equippable)) {
-    if (data.damagingEntity.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Mainhand) == void 0)
+world2.afterEvents.entityHitEntity.subscribe((data) => {
+  if (data.damagingEntity.hasComponent(EntityComponentTypes2.Equippable)) {
+    if (data.damagingEntity.getComponent(EntityComponentTypes2.Equippable).getEquipment(EquipmentSlot2.Mainhand) == void 0)
       return;
-    if (!hit_effects.includes(data.damagingEntity.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Mainhand).type.id))
+    if (!hit_effects.includes(data.damagingEntity.getComponent(EntityComponentTypes2.Equippable).getEquipment(EquipmentSlot2.Mainhand).type.id))
       return;
-    const itemId = data.damagingEntity.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Mainhand).typeId;
+    const itemId = data.damagingEntity.getComponent(EntityComponentTypes2.Equippable).getEquipment(EquipmentSlot2.Mainhand).typeId;
     switch (itemId) {
       case "poke:demonic_sword": {
         data.hitEntity.addEffect("slowness", 100, { amplifier: 3 });
@@ -3078,16 +3345,16 @@ world.afterEvents.entityHitEntity.subscribe((data) => {
       }
       case "poke:void_scythe": {
         data.damagingEntity.addEffect("speed", 200, { amplifier: 6 });
-        data.hitEntity.runCommand("function pfe_items/scythe/void");
+        data.hitEntity.runCommand("function poke/pfe/void_scythe");
         return;
       }
       case "poke:death_scythe": {
         data.damagingEntity.addEffect("speed", 200, { amplifier: 6 });
-        data.hitEntity.runCommand("function pfe_items/scythe/death");
+        data.hitEntity.runCommand("function poke/pfe/death_scythe");
         return;
       }
       case "poke:nebula_scythe": {
-        data.damagingEntity.runCommand("function pfe_items/scythe/nebula");
+        data.damagingEntity.runCommand("function poke/pfe/nebula_scythe");
         data.hitEntity.addEffect("wither", 80, { amplifier: 3 });
         return;
       }
@@ -3107,7 +3374,7 @@ world.afterEvents.entityHitEntity.subscribe((data) => {
         return;
       }
       case "poke:circuit_sword": {
-        data.damagingEntity.runCommand("function pfe_items/circuit_sword");
+        data.damagingEntity.runCommand("function poke/pfe/circuit_sword");
         data.hitEntity.addEffect("blindness", 100);
         return;
       }
@@ -3131,39 +3398,38 @@ var PFETrapdoor = class {
 };
 var PFEFortune = class {
   onPlayerDestroy(data) {
-    const equippableComponent = data.player?.getComponent(EntityComponentTypes.Equippable);
+    const equippableComponent = data.player?.getComponent(EntityComponentTypes2.Equippable);
     if (equippableComponent === void 0)
       return;
-    if (!equippableComponent.getEquipment(EquipmentSlot.Mainhand)?.hasComponent(ItemComponentTypes.Enchantable))
+    if (!equippableComponent.getEquipment(EquipmentSlot2.Mainhand)?.hasComponent(ItemComponentTypes2.Enchantable))
       return;
-    const enchantableComponent = equippableComponent.getEquipment(EquipmentSlot.Mainhand)?.getComponent(ItemComponentTypes.Enchantable);
+    const enchantableComponent = equippableComponent.getEquipment(EquipmentSlot2.Mainhand)?.getComponent(ItemComponentTypes2.Enchantable);
     if (!enchantableComponent.hasEnchantment(MinecraftEnchantmentTypes.Fortune))
       return;
     let fortuneLevel = enchantableComponent.getEnchantment(MinecraftEnchantmentTypes.Fortune).level;
     let rng = Math.round(Math.random());
-    console.warn(rng);
     const blockLocation = `${data.block.x} ${data.block.y} ${data.block.z}`;
     const blockId = data.destroyedBlockPermutation.type.id.substring(5);
-    if (data.player?.getGameMode() == GameMode.survival) {
+    if (data.player?.getGameMode() == GameMode2.survival) {
       if (fortuneLevel == 3) {
-        data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/blocks/${blockId}"`);
-        data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/blocks/${blockId}"`);
+        data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}"`);
+        data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}"`);
         if (rng == 0)
           return;
-        data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/blocks/${blockId}"`);
+        data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}"`);
         return;
       }
       if (fortuneLevel == 2) {
-        data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/blocks/${blockId}"`);
+        data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}"`);
         if (rng == 0)
           return;
-        data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/blocks/${blockId}"`);
+        data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}"`);
         return;
       }
       if (fortuneLevel == 1) {
         if (rng == 0)
           return;
-        data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/blocks/${blockId}"`);
+        data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}"`);
         return;
       }
       return;
@@ -3177,24 +3443,23 @@ var PFESlabs = class {
       return;
     const blockLocation = `${data.block.location.x} ${data.block.location.y} ${data.block.location.z}`;
     const slabId = data.block.typeId;
-    const equippableComponent = data.player.getComponent(EntityComponentTypes.Equippable);
-    const mainhand = equippableComponent.getEquipment(EquipmentSlot.Mainhand);
+    const equippableComponent = data.player.getComponent(EntityComponentTypes2.Equippable);
+    const mainhand = equippableComponent.getEquipment(EquipmentSlot2.Mainhand);
     if (mainhand != void 0) {
-      if (mainhand.typeId == slabId && data.face == "Up" && data.block.permutation.getState("poke:double") == false) {
+      if (mainhand.typeId == slabId && (data.block.permutation.getState("minecraft:vertical_half") == "bottom" && data.face == Direction.Up || data.block.permutation.getState("minecraft:vertical_half") == "top" && data.face == Direction.Down) && data.block.permutation.getState("poke:double") == false) {
         var itemStackAmount = mainhand.amount - 1;
         data.block.setPermutation(data.block.permutation.withState("poke:double", true));
         data.block.dimension.runCommandAsync(`playsound use.stone @a ${blockLocation}`);
         if (data.player?.getGameMode() == "creative")
           return;
         if (itemStackAmount <= 0) {
-          equippableComponent.setEquipment(EquipmentSlot.Mainhand, new ItemStack("minecraft:air", 1));
+          equippableComponent.setEquipment(EquipmentSlot2.Mainhand, new ItemStack2("minecraft:air", 1));
           return;
         }
-        equippableComponent.setEquipment(EquipmentSlot.Mainhand, new ItemStack(slabId, itemStackAmount));
+        equippableComponent.setEquipment(EquipmentSlot2.Mainhand, new ItemStack2(slabId, itemStackAmount));
         return;
-      } else {
+      } else
         return;
-      }
     }
     return;
   }
@@ -3207,7 +3472,7 @@ var PFESlabLoot = class {
     const blockState = data.destroyedBlockPermutation.getState("poke:double");
     if (gm == "survival") {
       if (blockState == true) {
-        data.dimension.spawnItem(new ItemStack(blockId, 1), block_location);
+        data.dimension.spawnItem(new ItemStack2(blockId, 1), block_location);
         return;
       }
       return;
@@ -3223,7 +3488,7 @@ var PFEBlockSeat = class {
       z: data.block.location.z + 0.5
     };
     const slabId = data.block.typeId;
-    const mainhand = data.player.getComponent(EntityComponentTypes.Equippable).getEquipment("Mainhand");
+    const mainhand = data.player.getComponent(EntityComponentTypes2.Equippable).getEquipment("Mainhand");
     const options = {
       type: "poke:seat"
     };
@@ -3322,46 +3587,48 @@ var PFEDirter = class {
   onTick(data) {
     if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== void 0) {
       data.block.setPermutation(data.block.permutation.withState("pfe:active", 1));
-      if (data.block.typeId == "poke:dirter_east") {
-        if (data.block.east()?.typeId == "minecraft:cobblestone") {
-          data.block.east()?.setType("minecraft:dirt");
-          return;
+      switch (data.block.typeId) {
+        case "poke:dirter_east": {
+          if (data.block.east()?.typeId == "minecraft:cobblestone") {
+            data.block.east()?.setType("minecraft:dirt");
+            break;
+          }
         }
-      }
-      if (data.block.typeId == "poke:dirter_west") {
-        if (data.block.west()?.typeId == "minecraft:cobblestone") {
-          data.block.west()?.setType("minecraft:dirt");
-          return;
+        case "poke:dirter_west": {
+          if (data.block.west()?.typeId == "minecraft:cobblestone") {
+            data.block.west()?.setType("minecraft:dirt");
+            break;
+          }
         }
-      }
-      if (data.block.typeId == "poke:dirter_south") {
-        if (data.block.south()?.typeId == "minecraft:cobblestone") {
-          data.block.south()?.setType("minecraft:dirt");
-          return;
+        case "poke:dirter_south": {
+          if (data.block.south()?.typeId == "minecraft:cobblestone") {
+            data.block.south()?.setType("minecraft:dirt");
+            break;
+          }
         }
-      }
-      if (data.block.typeId == "poke:dirter_north") {
-        if (data.block.north()?.typeId == "minecraft:cobblestone") {
-          data.block.north()?.setType("minecraft:dirt");
-          return;
+        case "poke:dirter_north": {
+          if (data.block.north()?.typeId == "minecraft:cobblestone") {
+            data.block.north()?.setType("minecraft:dirt");
+            break;
+          }
         }
-      }
-      if (data.block.typeId == "poke:dirter_up") {
-        if (data.block.above()?.typeId == "minecraft:cobblestone") {
-          data.block.above()?.setType("minecraft:dirt");
-          return;
+        case "poke:dirter_up": {
+          if (data.block.above()?.typeId == "minecraft:cobblestone") {
+            data.block.above()?.setType("minecraft:dirt");
+            break;
+          }
         }
-      }
-      if (data.block.typeId == "poke:dirter_down") {
-        if (data.block.below()?.typeId == "minecraft:cobblestone") {
-          data.block.below()?.setType("minecraft:dirt");
-          return;
+        case "poke:dirter_down": {
+          if (data.block.below()?.typeId == "minecraft:cobblestone") {
+            data.block.below()?.setType("minecraft:dirt");
+            break;
+          }
         }
-      }
-      if (data.block.typeId == "poke:dirter") {
-        if (data.block.below()?.typeId == "minecraft:cobblestone") {
-          data.block.below()?.setType("minecraft:dirt");
-          return;
+        case "poke:dirter": {
+          if (data.block.below()?.typeId == "minecraft:cobblestone") {
+            data.block.below()?.setType("minecraft:dirt");
+            return;
+          }
         }
       }
       return;
@@ -3377,74 +3644,76 @@ var PFEDuster = class {
   onTick(data) {
     if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== void 0) {
       data.block.setPermutation(data.block.permutation.withState("pfe:active", 1));
-      if (data.block.typeId == "poke:duster_east") {
-        if (data.block.east()?.typeId == "minecraft:dirt") {
-          data.block.east()?.setType("minecraft:sand");
-          return;
+      switch (data.block.typeId) {
+        case "poke:duster_east": {
+          if (data.block.east()?.typeId == "minecraft:dirt") {
+            data.block.east()?.setType("minecraft:sand");
+            break;
+          }
+          if (data.block.east()?.typeId == "minecraft:cobblestone") {
+            data.block.east()?.setType("minecraft:gravel");
+            break;
+          }
         }
-        if (data.block.east()?.typeId == "minecraft:cobblestone") {
-          data.block.east()?.setType("minecraft:gravel");
-          return;
+        case "poke:duster_west": {
+          if (data.block.west()?.typeId == "minecraft:dirt") {
+            data.block.west()?.setType("minecraft:sand");
+            break;
+          }
+          if (data.block.west()?.typeId == "minecraft:cobblestone") {
+            data.block.west()?.setType("minecraft:gravel");
+            break;
+          }
         }
-      }
-      if (data.block.typeId == "poke:duster_west") {
-        if (data.block.west()?.typeId == "minecraft:dirt") {
-          data.block.west()?.setType("minecraft:sand");
-          return;
+        case "poke:duster_south": {
+          if (data.block.south()?.typeId == "minecraft:dirt") {
+            data.block.south()?.setType("minecraft:sand");
+            break;
+          }
+          if (data.block.south()?.typeId == "minecraft:cobblestone") {
+            data.block.south()?.setType("minecraft:gravel");
+            break;
+          }
         }
-        if (data.block.west()?.typeId == "minecraft:cobblestone") {
-          data.block.west()?.setType("minecraft:gravel");
-          return;
+        case "poke:duster_north": {
+          if (data.block.north()?.typeId == "minecraft:dirt") {
+            data.block.north()?.setType("minecraft:sand");
+            break;
+          }
+          if (data.block.north()?.typeId == "minecraft:cobblestone") {
+            data.block.north()?.setType("minecraft:gravel");
+            break;
+          }
         }
-      }
-      if (data.block.typeId == "poke:duster_south") {
-        if (data.block.south()?.typeId == "minecraft:dirt") {
-          data.block.south()?.setType("minecraft:sand");
-          return;
+        case "poke:duster_up": {
+          if (data.block.above()?.typeId == "minecraft:dirt") {
+            data.block.above()?.setType("minecraft:sand");
+            break;
+          }
+          if (data.block.above()?.typeId == "minecraft:cobblestone") {
+            data.block.above()?.setType("minecraft:gravel");
+            break;
+          }
         }
-        if (data.block.south()?.typeId == "minecraft:cobblestone") {
-          data.block.south()?.setType("minecraft:gravel");
-          return;
+        case "poke:duster_down": {
+          if (data.block.below()?.typeId == "minecraft:dirt") {
+            data.block.below()?.setType("minecraft:sand");
+            break;
+          }
+          if (data.block.below()?.typeId == "minecraft:cobblestone") {
+            data.block.below()?.setType("minecraft:gravel");
+            break;
+          }
         }
-      }
-      if (data.block.typeId == "poke:duster_north") {
-        if (data.block.north()?.typeId == "minecraft:dirt") {
-          data.block.north()?.setType("minecraft:sand");
-          return;
-        }
-        if (data.block.north()?.typeId == "minecraft:cobblestone") {
-          data.block.north()?.setType("minecraft:gravel");
-          return;
-        }
-      }
-      if (data.block.typeId == "poke:duster_up") {
-        if (data.block.above()?.typeId == "minecraft:dirt") {
-          data.block.above()?.setType("minecraft:sand");
-          return;
-        }
-        if (data.block.above()?.typeId == "minecraft:cobblestone") {
-          data.block.above()?.setType("minecraft:gravel");
-          return;
-        }
-      }
-      if (data.block.typeId == "poke:duster_down") {
-        if (data.block.below()?.typeId == "minecraft:dirt") {
-          data.block.below()?.setType("minecraft:sand");
-          return;
-        }
-        if (data.block.below()?.typeId == "minecraft:cobblestone") {
-          data.block.below()?.setType("minecraft:gravel");
-          return;
-        }
-      }
-      if (data.block.typeId == "poke:duster") {
-        if (data.block.below()?.typeId == "minecraft:dirt") {
-          data.block.below()?.setType("minecraft:sand");
-          return;
-        }
-        if (data.block.below()?.typeId == "minecraft:cobblestone") {
-          data.block.below()?.setType("minecraft:gravel");
-          return;
+        case "poke:duster": {
+          if (data.block.below()?.typeId == "minecraft:dirt") {
+            data.block.below()?.setType("minecraft:sand");
+            break;
+          }
+          if (data.block.below()?.typeId == "minecraft:cobblestone") {
+            data.block.below()?.setType("minecraft:gravel");
+            break;
+          }
         }
       }
       return;
@@ -3491,39 +3760,17 @@ var PFEBulbs = class {
 };
 var PFECalibrate = class {
   onPlayerInteract(data) {
-    const ValidId = ["poke:duster", "poke:dirter"];
-    const bid = data.block.typeId;
-    const blockId = bid.substring(0, bid.lastIndexOf("_"));
-    const blockFace = data.face;
-    data.dimension.playSound("poke.calibrate", data.block.location);
-    if (ValidId.includes(bid)) {
-      data.block.setType(bid + "_up");
+    const OldId = ["poke:duster", "poke:dirter"];
+    const bId = data.block.typeId;
+    const newBlock = `${bId.substring(0, bId.lastIndexOf("_"))}_${data.face.toLowerCase()}`;
+    if (newBlock == bId)
+      return;
+    if (OldId.includes(bId)) {
+      data.block.setType(bId + "_up");
       return;
     }
-    if (blockFace == "East") {
-      data.block.setType(blockId + "_east");
-      return;
-    }
-    if (blockFace == "West") {
-      data.block.setType(blockId + "_west");
-      return;
-    }
-    if (blockFace == "North") {
-      data.block.setType(blockId + "_north");
-      return;
-    }
-    if (blockFace == "South") {
-      data.block.setType(blockId + "_south");
-      return;
-    }
-    if (blockFace == "Up") {
-      data.block.setType(blockId + "_up");
-      return;
-    }
-    if (blockFace == "Down") {
-      data.block.setType(blockId + "_down");
-      return;
-    }
+    data.block.setType(newBlock);
+    data.dimension.playSound("poke.calibrate", data.block.center());
     return;
   }
 };
@@ -3626,8 +3873,8 @@ var PFECrop = class {
     return;
   }
   onPlayerInteract(data) {
-    const equippableComponent = data.player?.getComponent(EntityComponentTypes.Equippable);
-    const mainhandItem = equippableComponent.getEquipment(EquipmentSlot.Mainhand);
+    const equippableComponent = data.player?.getComponent(EntityComponentTypes2.Equippable);
+    const mainhandItem = equippableComponent.getEquipment(EquipmentSlot2.Mainhand);
     if (mainhandItem === void 0)
       return;
     const block_location = `${data.block.x} ${data.block.y} ${data.block.z}`;
@@ -3642,12 +3889,12 @@ var PFECrop = class {
       data.block.setPermutation(data.block.permutation.withState("poke:growth_stage", growth_stage));
       data.dimension.runCommand("playsound item.bone_meal.use @a " + block_location);
       data.dimension.runCommand("particle minecraft:crop_growth_emitter " + block_location);
-      if (data.player?.getGameMode() != GameMode.creative) {
+      if (data.player?.getGameMode() != GameMode2.creative) {
         if (itemAfterUse1 == 0) {
           data.player?.runCommand("clear @s bone_meal 0 1");
           return;
         }
-        equippableComponent.setEquipment(EquipmentSlot.Mainhand, new ItemStack(mainhandItem.typeId, itemAfterUse1));
+        equippableComponent.setEquipment(EquipmentSlot2.Mainhand, new ItemStack2(mainhandItem.typeId, itemAfterUse1));
         return;
       }
       return;
@@ -3658,7 +3905,7 @@ var PFECrop = class {
 var PFELavaSponge = class {
   onTick(data) {
     const block_location = `${data.block.x} ${data.block.y} ${data.block.z}`;
-    data.dimension.runCommand("execute positioned " + block_location + " run function poke/blocks/lava_sponge");
+    data.dimension.runCommand("execute positioned " + block_location + " run function poke/pfe/lava_sponge");
     return;
   }
 };
@@ -3686,8 +3933,15 @@ var PFECassette = class {
   onUse(data) {
     const id = data.itemStack.typeId;
     const trackId = id.substring(id.lastIndexOf("_")).substring(1);
-    data.source.playMusic(`poke.record.${trackId}`, { fade: 2.5 });
-    data.source.playSound("poke.cassette_activate");
+    if (data.source.isSneaking) {
+      data.source.queueMusic(`poke.record.${trackId}`);
+      data.source.playSound("poke.cassette_activate");
+      data.source.sendMessage({ translate: `translation.poke:trackQueued` });
+      return;
+    } else {
+      data.source.playMusic(`poke.record.${trackId}`, { fade: 2.5 });
+      data.source.playSound("poke.cassette_activate");
+    }
     return;
   }
 };
@@ -3695,11 +3949,11 @@ var PFEWindzooka = class {
   onUse(data) {
     if (data.itemStack === void 0)
       return;
-    const equippableComponent = data.source.getComponent(EntityComponentTypes.Equippable);
+    const equippableComponent = data.source.getComponent(EntityComponentTypes2.Equippable);
     if (equippableComponent === void 0)
       return;
     const vierDirection = data.source.getViewDirection();
-    const location = data.source.location;
+    const location = data.source.getHeadLocation();
     const id = data.itemStack.getTags();
     const cooldownComp = data.itemStack.getComponent("minecraft:cooldown");
     if (data.itemStack.typeId == "poke:windzooka") {
@@ -3715,7 +3969,7 @@ var PFEWindzooka = class {
     data.source.runCommand("" + id);
     cooldownComp.startCooldown(data.source);
     const newItem = damage_item(data.itemStack);
-    equippableComponent.setEquipment(EquipmentSlot.Mainhand, newItem);
+    equippableComponent.setEquipment(EquipmentSlot2.Mainhand, newItem);
     if (!newItem) {
       data.source.playSound("random.break");
     }
@@ -3736,8 +3990,8 @@ var PFEOnUse = class {
       return;
     }
     const newItem = damage_item(data.itemStack);
-    const equippableComponent = data.source.getComponent(EntityComponentTypes.Equippable);
-    equippableComponent.setEquipment(EquipmentSlot.Mainhand, newItem);
+    const equippableComponent = data.source.getComponent(EntityComponentTypes2.Equippable);
+    equippableComponent.setEquipment(EquipmentSlot2.Mainhand, newItem);
     if (!newItem) {
       data.source.playSound("random.break");
     }
@@ -3747,15 +4001,15 @@ var PFEOnUse = class {
 var PFEUpgrader = class {
   onUseOn(data) {
     const player = data.source;
-    const equippableComponent = data.source.getComponent(EntityComponentTypes.Equippable);
+    const equippableComponent = data.source.getComponent(EntityComponentTypes2.Equippable);
     const block_location = `${data.block.x} ${data.block.y} ${data.block.z}`;
     const itemIds = data.itemStack.typeId;
     const itemId = itemIds.substring(5);
-    data.source.runCommandAsync(`execute positioned ${block_location} run function pfe_items/upgraders/${itemId}`);
-    if (player.getGameMode() == GameMode.creative)
+    data.source.runCommandAsync(`execute positioned ${block_location} run function poke/pfe/${itemId}`);
+    if (player.getGameMode() == GameMode2.creative)
       return;
     const newItem = damage_item(data.itemStack);
-    equippableComponent.setEquipment(EquipmentSlot.Mainhand, newItem);
+    equippableComponent.setEquipment(EquipmentSlot2.Mainhand, newItem);
     if (!newItem) {
       player.playSound("random.break");
     }
@@ -3771,7 +4025,7 @@ var PFESpawnEgg = class {
     var faceLocY = --faceLoc.y;
     var faceLocZ = --faceLoc.z;
     var amount = data.itemStack.amount;
-    const equippableComponent = data.source.getComponent(EntityComponentTypes.Equippable);
+    const equippableComponent = data.source.getComponent(EntityComponentTypes2.Equippable);
     if (blockFace == "North") {
       var faceLocZ = faceLocZ + 1.5;
     }
@@ -3796,10 +4050,10 @@ var PFESpawnEgg = class {
     if (player.getGameMode() == "creative")
       return;
     if (amount <= 1) {
-      equippableComponent.setEquipment(EquipmentSlot.Mainhand, new ItemStack("minecraft:air", 1));
+      equippableComponent.setEquipment(EquipmentSlot2.Mainhand, new ItemStack2("minecraft:air", 1));
       return;
     }
-    equippableComponent.setEquipment(EquipmentSlot.Mainhand, new ItemStack(data.itemStack.typeId, amount - 1));
+    equippableComponent.setEquipment(EquipmentSlot2.Mainhand, new ItemStack2(data.itemStack.typeId, amount - 1));
     return;
   }
 };
@@ -3846,7 +4100,7 @@ var PFEBlockInteract = class {
   }
 };
 var logList = ["minecraft:acacia_wood", "minecraft:birch_wood", "minecraft:cherry_wood", "minecraft:dark_oak_wood", "minecraft:jungle_wood", "minecraft:mangrove_wood", "minecraft:oak_wood", "minecraft:spruce_wood", "minecraft:acacia_log", "minecraft:birch_log", "minecraft:cherry_log", "minecraft:dark_oak_log", "minecraft:jungle_log", "minecraft:mangrove_log", "minecraft:oak_log", "minecraft:spruce_log"];
-world.beforeEvents.playerBreakBlock.subscribe((data) => {
+world2.beforeEvents.playerBreakBlock.subscribe((data) => {
   if (data.itemStack == void 0)
     return;
   if (data.itemStack.typeId != "poke:nebula_logger")
@@ -3865,7 +4119,7 @@ world.beforeEvents.playerBreakBlock.subscribe((data) => {
       checked.add(key);
       let currentBlock = dimension.getBlock(location);
       if (currentBlock && logList.includes(currentBlock.typeId)) {
-        system.run(() => {
+        system3.run(() => {
           dimension.runCommand(`setblock ${location.x} ${location.y} ${location.z} air destroy`);
         });
         let adjacent = [
@@ -3901,20 +4155,20 @@ var PFEDodge = class {
     if (data.itemStack === void 0)
       return;
     const cooldownComponent = data.itemStack.getComponent("minecraft:cooldown");
-    const equippableComponent = data.source.getComponent(EntityComponentTypes.Equippable);
+    const equippableComponent = data.source.getComponent(EntityComponentTypes2.Equippable);
     const moveDir = data.source.getVelocity();
     var amount = data.itemStack.amount;
     data.source.dimension.spawnParticle("minecraft:wind_explosion_emitter", data.source.location);
     data.source.applyKnockback(moveDir.x, moveDir.z, 5, moveDir.y + 0.5);
     data.source.playSound("wind_charge.burst");
-    if (data.source.getGameMode() == GameMode.creative)
+    if (data.source.getGameMode() == GameMode2.creative)
       return;
     cooldownComponent.startCooldown(data.source);
     if (amount <= 1) {
-      equippableComponent.setEquipment(EquipmentSlot.Mainhand, new ItemStack("minecraft:air", 1));
+      equippableComponent.setEquipment(EquipmentSlot2.Mainhand, new ItemStack2("minecraft:air", 1));
       return;
     }
-    equippableComponent.setEquipment(EquipmentSlot.Mainhand, new ItemStack(data.itemStack.typeId, amount - 1));
+    equippableComponent.setEquipment(EquipmentSlot2.Mainhand, new ItemStack2(data.itemStack.typeId, amount - 1));
     return;
   }
 };
@@ -4002,132 +4256,192 @@ var PFEWall = class {
     return;
   }
 };
-world.beforeEvents.worldInitialize.subscribe((event) => {
-  event.itemComponentRegistry.registerCustomComponent(
+system3.runInterval(
+  () => {
+    let allPlayers = world2.getAllPlayers();
+    let randomPlayer = allPlayers.at(Math.abs(Math.round(Math.random() * (allPlayers.length - 1))));
+    randomPlayer?.dimension.spawnEntity("poke:cassette_trader", randomPlayer.location).runCommand(`spreadplayers ~ ~ 30 40 @s ~10`);
+  },
+  216e3
+  /*3hrs*/
+);
+world2.beforeEvents.worldInitialize.subscribe((data) => {
+  if (typeof world2.getDynamicProperty(PFEBossEventConfigName) == "string") {
+    let settings = JSON.parse(world2.getDynamicProperty(PFEBossEventConfigName));
+    if (typeof settings.ticks != "number" || typeof settings.furnaceGolem != "object" || typeof settings.knightling != "object" || typeof settings.listener != "object" || typeof settings.zombken != "object" || typeof settings.miniDemonicAllay != "object" || typeof settings.necromancer != "object" || typeof settings.snowman != "object" || typeof settings.sparky != "object" || typeof settings.superStriker != "object" || typeof settings.theLogger != "object") {
+      world2.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(PFEDefaultBossEventSettings));
+    }
+    ;
+  } else {
+    world2.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(PFEDefaultBossEventSettings));
+  }
+  data.itemComponentRegistry.registerCustomComponent(
+    "poke:boss_event_config",
+    new PFEBossEventUI()
+  );
+  data.itemComponentRegistry.registerCustomComponent(
+    "poke:boss_event",
+    { onUse(data2) {
+      if (PFEStartBossEvent() == 0) {
+        data2.source.sendMessage({ translate: `translation.poke:bossEventNoSpawnError` });
+        data2.source.playSound(`note.didgeridoo`, { pitch: 0.825 });
+        return;
+      }
+      ;
+      if (data2.source.getGameMode() == GameMode2.creative)
+        return;
+      data2.source.getComponent(EntityComponentTypes2.Equippable).setEquipment(EquipmentSlot2.Mainhand, PFEDecrementStack(data2.itemStack));
+    } }
+  );
+  data.itemComponentRegistry.registerCustomComponent(
+    "poke:normalMining",
+    {
+      onMineBlock(data2) {
+        if (data2.source.typeId != "minecraft:player")
+          return;
+        if (data2.source.getGameMode() == GameMode2.creative)
+          return;
+        const newItem = damage_item_ub(data2.itemStack, void 0);
+        data2.source.getComponent(EntityComponentTypes2.Equippable).setEquipment(EquipmentSlot2.Mainhand, newItem);
+        if (!newItem) {
+          data2.source.playSound("random.break");
+        }
+        return;
+      }
+    }
+  );
+  data.itemComponentRegistry.registerCustomComponent(
+    "poke:haxelMining",
+    new PFEHaxelMining()
+  );
+  data.itemComponentRegistry.registerCustomComponent(
     "poke:cc_dodge",
     new PFEDodge()
   );
-  event.itemComponentRegistry.registerCustomComponent(
+  data.itemComponentRegistry.registerCustomComponent(
     "poke:cc_bowAim",
     new PFEBowAim()
   );
-  event.itemComponentRegistry.registerCustomComponent(
+  data.itemComponentRegistry.registerCustomComponent(
     "poke:cc_crossbowAim",
     new PFECrossbowAim()
   );
-  event.itemComponentRegistry.registerCustomComponent(
+  data.itemComponentRegistry.registerCustomComponent(
     "poke:cc_spawnEgg",
     new PFESpawnEgg()
   );
-  event.itemComponentRegistry.registerCustomComponent(
+  data.itemComponentRegistry.registerCustomComponent(
     "poke:cas",
     new PFECassette()
   );
-  event.itemComponentRegistry.registerCustomComponent(
+  data.itemComponentRegistry.registerCustomComponent(
     "poke:cc_on_use",
     new PFEOnUse()
   );
-  event.itemComponentRegistry.registerCustomComponent(
+  data.itemComponentRegistry.registerCustomComponent(
     "poke:cc_zooka",
     new PFEWindzooka()
   );
-  event.blockComponentRegistry.registerCustomComponent(
-    "poke:trapdoor_event",
-    new PFETrapdoor()
-  );
-  event.blockComponentRegistry.registerCustomComponent(
-    "poke:fortune",
-    new PFEFortune()
-  );
-  event.blockComponentRegistry.registerCustomComponent(
-    "poke:slabs",
-    new PFESlabs()
-  );
-  event.blockComponentRegistry.registerCustomComponent(
-    "poke:cc_bulbs",
-    new PFEBulbs()
-  );
-  event.blockComponentRegistry.registerCustomComponent(
-    "poke:cc_phantomic_conduit",
-    new PFEPhantomicConduit()
-  );
-  event.blockComponentRegistry.registerCustomComponent(
-    "poke:cc_da_conduit",
-    new PFEDemonicAConduit()
-  );
-  event.blockComponentRegistry.registerCustomComponent(
-    "poke:cc_cobble_gen",
-    new PFECobbleGen()
-  );
-  event.blockComponentRegistry.registerCustomComponent(
-    "poke:cc_cobbler",
-    new PFECobbler()
-  );
-  event.blockComponentRegistry.registerCustomComponent(
-    "poke:cc_block_breaker",
-    new PFEBlockBreaker()
-  );
-  event.blockComponentRegistry.registerCustomComponent(
-    "poke:cc_dirter",
-    new PFEDirter()
-  );
-  event.blockComponentRegistry.registerCustomComponent(
-    "poke:cc_duster",
-    new PFEDuster()
-  );
-  event.blockComponentRegistry.registerCustomComponent(
-    "poke:cc_magnet_block",
-    new PFEMagnetBlock()
-  );
-  event.blockComponentRegistry.registerCustomComponent(
-    "poke:cc_calibrate",
-    new PFECalibrate()
-  );
-  event.blockComponentRegistry.registerCustomComponent(
-    "poke:cc_CaliBlockBreaker",
-    new PFECaliBlockBreaker()
-  );
-  event.blockComponentRegistry.registerCustomComponent(
-    "poke:cc_CaliCobbleGen",
-    new PFECaliCobbleGen()
-  );
-  event.blockComponentRegistry.registerCustomComponent(
-    "poke:crops",
-    new PFECrop()
-  );
-  event.blockComponentRegistry.registerCustomComponent(
-    "poke:cc_barometer",
-    new PFEBarometer()
-  );
-  event.blockComponentRegistry.registerCustomComponent(
-    "poke:cc_lava_sponge",
-    new PFELavaSponge()
-  );
-  event.itemComponentRegistry.registerCustomComponent(
+  data.itemComponentRegistry.registerCustomComponent(
     "poke:cc_upgrader",
     new PFEUpgrader()
   );
-  event.blockComponentRegistry.registerCustomComponent(
+  data.blockComponentRegistry.registerCustomComponent(
+    "poke:trapdoor_event",
+    new PFETrapdoor()
+  );
+  data.blockComponentRegistry.registerCustomComponent(
+    "poke:fortune",
+    new PFEFortune()
+  );
+  data.blockComponentRegistry.registerCustomComponent(
+    "poke:slabs",
+    new PFESlabs()
+  );
+  data.blockComponentRegistry.registerCustomComponent(
+    "poke:cc_bulbs",
+    new PFEBulbs()
+  );
+  data.blockComponentRegistry.registerCustomComponent(
+    "poke:cc_phantomic_conduit",
+    new PFEPhantomicConduit()
+  );
+  data.blockComponentRegistry.registerCustomComponent(
+    "poke:cc_da_conduit",
+    new PFEDemonicAConduit()
+  );
+  data.blockComponentRegistry.registerCustomComponent(
+    "poke:cc_cobble_gen",
+    new PFECobbleGen()
+  );
+  data.blockComponentRegistry.registerCustomComponent(
+    "poke:cc_cobbler",
+    new PFECobbler()
+  );
+  data.blockComponentRegistry.registerCustomComponent(
+    "poke:cc_block_breaker",
+    new PFEBlockBreaker()
+  );
+  data.blockComponentRegistry.registerCustomComponent(
+    "poke:cc_dirter",
+    new PFEDirter()
+  );
+  data.blockComponentRegistry.registerCustomComponent(
+    "poke:cc_duster",
+    new PFEDuster()
+  );
+  data.blockComponentRegistry.registerCustomComponent(
+    "poke:cc_magnet_block",
+    new PFEMagnetBlock()
+  );
+  data.blockComponentRegistry.registerCustomComponent(
+    "poke:cc_calibrate",
+    new PFECalibrate()
+  );
+  data.blockComponentRegistry.registerCustomComponent(
+    "poke:cc_CaliBlockBreaker",
+    new PFECaliBlockBreaker()
+  );
+  data.blockComponentRegistry.registerCustomComponent(
+    "poke:cc_CaliCobbleGen",
+    new PFECaliCobbleGen()
+  );
+  data.blockComponentRegistry.registerCustomComponent(
+    "poke:crops",
+    new PFECrop()
+  );
+  data.blockComponentRegistry.registerCustomComponent(
+    "poke:cc_barometer",
+    new PFEBarometer()
+  );
+  data.blockComponentRegistry.registerCustomComponent(
+    "poke:cc_lava_sponge",
+    new PFELavaSponge()
+  );
+  data.blockComponentRegistry.registerCustomComponent(
     "poke:cc_block_seat",
     new PFEBlockSeat()
   );
-  event.blockComponentRegistry.registerCustomComponent(
+  data.blockComponentRegistry.registerCustomComponent(
     "poke:cc_slab_loot",
     new PFESlabLoot()
   );
-  event.blockComponentRegistry.registerCustomComponent(
+  data.blockComponentRegistry.registerCustomComponent(
     "poke:cc_block_interact",
     new PFEBlockInteract()
   );
-  event.blockComponentRegistry.registerCustomComponent(
+  data.blockComponentRegistry.registerCustomComponent(
     "poke:cc_8ball",
     new PFE8Ball()
   );
-  event.blockComponentRegistry.registerCustomComponent(
+  data.blockComponentRegistry.registerCustomComponent(
     "poke:cc_wall",
     new PFEWall()
   );
   return;
 });
+export {
+  damage_item_ub
+};
 
 //# sourceMappingURL=../debug/main.js.map

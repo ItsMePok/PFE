@@ -1,7 +1,7 @@
 {
 	"format_version": "1.10.0",
 	"animation_controllers": {
-		"controller.animation.poke.zombken": {
+		"controller.animation.poke_pfe.zombken": {
 			"initial_state": "move",
 			"states": {
 				"move": {

@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.poke.listener.idle": {
+		"animation.poke_pfe.listener.idle": {
 			"loop": true,
 			"animation_length": 10,
 			"bones": {
@@ -129,7 +129,7 @@
 				}
 			}
 		},
-		"animation.poke.listener.default_pose": {
+		"animation.poke_pfe.listener.default_pose": {
 			"loop": true,
 			"bones": {
 				"head": {
@@ -202,7 +202,7 @@
 				}
 			}
 		},
-		"animation.poke.listener.melee": {
+		"animation.poke_pfe.listener.melee": {
 			"loop": true,
 			"bones": {
 				"head": {
@@ -275,7 +275,7 @@
 				}
 			}
 		},
-		"animation.poke.listener.ranged": {
+		"animation.poke_pfe.listener.ranged": {
 			"loop": true,
 			"bones": {
 				"head": {
@@ -348,7 +348,7 @@
 				}
 			}
 		},
-		"animation.poke.listener.jump": {
+		"animation.poke_pfe.listener.jump": {
 			"loop": true,
 			"bones": {
 				"head": {
@@ -421,7 +421,7 @@
 				}
 			}
 		},
-		"animation.poke.listener.twitch": {
+		"animation.poke_pfe.listener.twitch": {
 			"loop": true,
 			"bones": {
 				"head": {
@@ -494,7 +494,7 @@
 				}
 			}
 		},
-		"animation.poke.listener.hurt": {
+		"animation.poke_pfe.listener.hurt": {
 			"loop": true,
 			"bones": {
 				"head": {
@@ -567,7 +567,7 @@
 				}
 			}
 		},
-		"animation.poke.listener.walk": {
+		"animation.poke_pfe.listener.walk": {
 			"loop": true,
 			"animation_length": 2,
 			"anim_time_update": "query.modified_distance_moved",
@@ -768,7 +768,7 @@
 				}
 			}
 		},
-		"animation.poke.listener.run": {
+		"animation.poke_pfe.listener.run": {
 			"loop": true,
 			"anim_time_update": "query.modified_distance_moved",
 			"bones": {

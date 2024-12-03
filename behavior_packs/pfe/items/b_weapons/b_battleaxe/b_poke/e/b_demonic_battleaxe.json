@@ -48,10 +48,11 @@
         "duration": 2
       },
 			"minecraft:tags": {"tags": [
-				"pfe:Command:function pfe_items/battleaxe/demonic:pfeCommandEnd"
+				"pfe:Command:function poke/pfe/demonic_battleaxe:pfeCommandEnd"
 			]},
-			"minecraft:custom_components": [
-				"poke:cc_on_use"
+			"minecraft:custom_components":[
+				"poke:cc_on_use",
+				"poke:normalMining"
 			],
       "minecraft:use_modifiers": {
         "use_duration": 0,

@@ -38,7 +38,7 @@
 				]
 			},
 			"minecraft:loot": {
-				"table": "loot_tables/poke/entities/sporefish.json"
+				"table": "loot_tables/poke/pfe/sporefish.json"
 			},
 			"minecraft:scale": {
 				"value": 1

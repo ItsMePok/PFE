@@ -1,7 +1,7 @@
 {
 	"format_version": "1.10.0",
 	"animations": {
-		"animation.poke.necromancer.summon": {
+		"animation.poke_pfe.necromancer.summon": {
 			"loop": true,
 			"bones": {
 				"rightArm": {
@@ -9,7 +9,7 @@
 				}
 			}
 		},
-		"animation.poke.necromancer.walk": {
+		"animation.poke_pfe.necromancer.walk": {
 			"loop": true,
 			"anim_time_update": "query.modified_distance_moved",
 			"bones": {
@@ -30,7 +30,7 @@
 				}
 			}
 		},
-		"animation.poke.necromancer.idle": {
+		"animation.poke_pfe.necromancer.idle": {
 			"loop": true,
 			"animation_length": 2.25,
 			"bones": {
@@ -53,7 +53,7 @@
 				}
 			}
 		},
-		"animation.poke.necromancer.melee_attack": {
+		"animation.poke_pfe.necromancer.melee_attack": {
 			"loop": true,
 			"animation_length": 0.375,
 			"bones": {
@@ -78,7 +78,7 @@
 				}
 			}
 		},
-		"animation.poke.necromancer.cape": {
+		"animation.poke_pfe.necromancer.cape": {
 			"loop": true
 		}
 	}

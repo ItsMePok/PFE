@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.poke.big_dapper_fit",
+				"identifier": "geometry.poke_pfe.big_dapper_fit",
 				"texture_width": 42,
 				"texture_height": 42,
 				"visible_bounds_width": 12,

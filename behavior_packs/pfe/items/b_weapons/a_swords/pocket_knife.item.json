@@ -34,19 +34,19 @@
 						"items": [
 							"poke:repair_core"
 						],
-						"repair_amount": 251
+						"repair_amount": "q.max_durability"
 					},
 					{
 						"items": [
 							"poke:cobalt_ingot"
 						],
-						"repair_amount": 50
+						"repair_amount": "q.max_durability *0.25"
 					},
 					{
 						"items": [
 							"iron_ingot"
 						],
-						"repair_amount": 50
+						"repair_amount": "q.max_durability *0.25"
 					}
 				]
 			},
@@ -58,7 +58,8 @@
 				]
 			},
 			"minecraft:custom_components": [
-				"poke:cc_upgrader"
+				"poke:cc_upgrader",
+				"poke:normalMining"
 			]
 		}
 	}

@@ -36,8 +36,9 @@
 			"minecraft:tags": {"tags": [
 				"pfe:Command:effect @a[rm=0.1,r=10] darkness 15 1 true:pfeCommandEnd"
 			]},
-			"minecraft:custom_components": [
-				"poke:cc_on_use"
+			"minecraft:custom_components":[
+				"poke:cc_on_use",
+				"poke:normalMining"
 			],
 			"minecraft:use_modifiers": {
 				"use_duration": 0,

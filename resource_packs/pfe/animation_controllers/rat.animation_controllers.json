@@ -1,7 +1,7 @@
 {
 	"format_version": "1.19.0",
 	"animation_controllers": {
-		"controller.animation.poke.rat.movement": {
+		"controller.animation.poke_pfe.rat.movement": {
 			"initial_state": "idle",
 			"states": {
 				"idle": {

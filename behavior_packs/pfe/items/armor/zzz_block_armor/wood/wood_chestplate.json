@@ -24,21 +24,19 @@
 			"minecraft:icon": { "textures": {"default": "poke_wood_chestplate" }}, 
 			"minecraft:wearable": {
 				"slot": "slot.armor.chest",
-				"protection": 3
+				"protection": 2
 			},
 			"minecraft:repairable": {
-				"repair_items": [ 					{ 						"items": [ 							"poke:repair_core" 						], 						"repair_amount": "query.max_durability" 					},
+				"repair_items": [
+					{
+						"items": ["poke:repair_core"],
+						"repair_amount": "query.max_durability"
+					},
 					{
 						"items": [
 							"minecraft:log"
 						],
 						"repair_amount": "query.max_durability*0.25"
-					},
-					{
-						"items": [
-							"poke:wood_chestplate"
-						],
-						"repair_amount": "context.other->query.remaining_durability+0.12*context.other->query.max_durability"
 					}
 				]
 			},

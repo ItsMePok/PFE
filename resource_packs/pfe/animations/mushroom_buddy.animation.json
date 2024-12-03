@@ -230,7 +230,7 @@
 				}
 			}
 		},
-		"animation.poke.mushroom_buddy.idle": {
+		"animation.poke_pfe.mushroom_buddy.idle": {
 			"loop": "hold_on_last_frame"
 		},
 		"animation.mushroom_buddy.idle": {

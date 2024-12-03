@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.speed_boots.idle": {
+		"animation.poke_pfe.speed_boots.idle": {
 			"loop": true,
 			"animation_length": 4,
 			"bones": {
@@ -93,7 +93,7 @@
 				}
 			}
 		},
-		"animation.speed_boots.move": {
+		"animation.poke_pfe.speed_boots.move": {
 			"loop": true,
 			"animation_length": 1,
 			"bones": {

@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.poke.halo.first_person_hold": {
+		"animation.poke_pfe.halo.first_person_hold": {
 			"loop": true,
 			"bones": {
 				"root_item": {
@@ -10,7 +10,7 @@
 				}
 			}
 		},
-		"animation.poke.halo.third_person_hold": {
+		"animation.poke_pfe.halo.third_person_hold": {
 			"loop": true,
 			"animation_length": 16,
 			"bones": {

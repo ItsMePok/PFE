@@ -9,11 +9,11 @@
 				"enchanted": "entity_alphatest_glint"
 			},
 			"textures": {
-				"default": "textures/entity/attachable/poke_cosmetic_cosmetic_cosmetic",
+				"default": "textures/items/cosmetic/poke_cosmetic_cosmetic",
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {
-				"default": "geometry.poke.cosmetic_cosmetic_cosmetic"
+				"default": "geometry.poke_pfe.cosmetic_cosmetic_cosmetic"
 			}
 		}
 	}

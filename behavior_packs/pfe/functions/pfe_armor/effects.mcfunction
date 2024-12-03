@@ -1,7 +1,0 @@
-execute if entity @s[hasitem=[{location=slot.armor.head,item=poke:ember_robe_helmet},{location=slot.armor.chest,item=poke:ember_robe_chestplate}]] run function pfe_armor/robes/ember_robe_effects
-execute if entity @s[hasitem=[{location=slot.armor.head,item=poke:springy_robey_helmet},{location=slot.armor.chest,item=poke:springy_robey_chestplate}]] run function pfe_armor/robes/springy_robey_effects
-execute if entity @s[hasitem=[{location=slot.armor.feet,item=poke:onyx_boots},{location=slot.armor.legs,item=poke:onyx_leggings}]] run function pfe_armor/onyx_effects
-execute if entity @s[hasitem=[{location=slot.armor.feet,item=poke:void_boots},{location=slot.armor.legs,item=poke:void_leggings}]] run function pfe_armor/void_effects
-execute if entity @s[hasitem=[{location=slot.armor.feet,item=poke:galaxy_boots},{location=slot.armor.legs,item=poke:galaxy_leggings}]] run function pfe_armor/galaxy_effects
-execute if entity @s[hasitem=[{location=slot.armor.feet,item=poke:nebula_boots},{location=slot.armor.legs,item=poke:nebula_leggings}]] run function pfe_armor/nebula_effects
-execute if entity @s[hasitem=[{location=slot.armor.feet,item=poke:amethyst_boots},{location=slot.armor.legs,item=poke:amethyst_leggings}]] run function pfe_armor/amethyst_effects

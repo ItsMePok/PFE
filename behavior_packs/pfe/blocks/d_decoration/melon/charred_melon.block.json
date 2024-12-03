@@ -22,7 +22,7 @@
 			"minecraft:collision_box": true,
 			"minecraft:selection_box": true,
 			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 0.3
+				"seconds_to_destroy": 1.5
 			},
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 4
@@ -36,10 +36,17 @@
 			"tag:minecraft:pumpkin": {},
 			"minecraft:light_emission": 1,
 			"minecraft:map_color": "#111010",
-			"minecraft:geometry":"geometry.poke.carved_melon",
+			"minecraft:geometry":"geometry.poke_pfe.carved_melon",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "poke_charred_melon"
+					"texture": "poke_charred_melon_side"
+				},
+				"up":{
+					"texture": "poke_charred_melon_top"
+				},
+				"down":"up",
+				"north":{
+					"texture": "poke_charred_melon_face"
 				}
 			}
 		},

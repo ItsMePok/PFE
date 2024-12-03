@@ -4,7 +4,8 @@
 		"description": {
 			"identifier": "poke:shade_bulb",
 			"menu_category": {
-				"category": "construction"
+				"category": "construction",
+				"group": "itemGroup.name.bulb"
 			},
 			"states": {
 				"pfe:color":{"values": {"min": 0,"max": 15}}

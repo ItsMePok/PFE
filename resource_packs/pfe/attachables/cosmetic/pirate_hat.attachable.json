@@ -10,11 +10,10 @@
 			},
 			"textures": {
 				"default": "textures/entity/attachable/poke_pirate_hat",
-				"enchanted": "textures/misc/enchanted_item_glint",
-				"poke_feather":"textures/models/armor/poke_feather"
+				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {
-				"default": "geometry.poke.pirate_hat"
+				"default": "geometry.poke_pfe.pirate_hat"
 			}
 		}
 	}

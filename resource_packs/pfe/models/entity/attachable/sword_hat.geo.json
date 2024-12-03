@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.poke.sword_hat",
+				"identifier": "geometry.poke_pfe.sword_hat",
 				"texture_width": 16,
 				"texture_height": 16,
 				"visible_bounds_width": 5,

@@ -9,6 +9,9 @@
 			}
 		},
 		"components": {
+			"minecraft:custom_components":[
+				"poke:normalMining"
+			],
 			"minecraft:max_stack_size": 1,
 			"minecraft:hand_equipped": true,
 			"minecraft:icon":"poke_circuit_sword",

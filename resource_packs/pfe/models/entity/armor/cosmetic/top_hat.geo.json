@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.poke.top_hat",
+				"identifier": "geometry.poke_pfe.top_hat",
 				"texture_width": 64,
 				"texture_height": 64,
 				"visible_bounds_width": 2,

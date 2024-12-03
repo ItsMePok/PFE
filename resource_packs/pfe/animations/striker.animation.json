@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.striker.attack": {
+		"animation.poke_pfe.striker.attack": {
 			"loop": true,
 			"bones": {
 				"leftarm": {

@@ -34,10 +34,11 @@
 				"value": 30
 			},
 			"minecraft:tags": {"tags": [
-				"function pfe_items/windzooka"
+				"function poke/pfe/windzooka"
 			]},
 			"minecraft:custom_components": [
-				"poke:cc_zooka"
+				"poke:cc_zooka",
+				"poke:normalMining"
 			]
 		}
 	}

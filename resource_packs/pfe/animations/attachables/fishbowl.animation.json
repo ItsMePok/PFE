@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.poke.fishbowl.first_person_hold": {
+		"animation.poke_pfe.fishbowl.first_person_hold": {
 			"loop": true,
 			"bones": {
 				"root_item": {
@@ -15,7 +15,7 @@
 				}
 			}
 		},
-		"animation.poke.fishbowl.third_person_hold": {
+		"animation.poke_pfe.fishbowl.third_person_hold": {
 			"loop": true,
 			"animation_length": 9,
 			"bones": {

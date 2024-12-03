@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.poke.dragon.wing_off": {
+		"animation.poke_pfe.dragon.wing_off": {
 			"loop": "hold_on_last_frame",
 			"animation_length": 0.375,
 			"bones": {
@@ -235,7 +235,7 @@
 				}
 			}
 		},
-		"animation.dragon.wing_Off2": {
+		"animation.poke_pfe.dragon.wing_Off2": {
 			"loop": "hold_on_last_frame",
 			"animation_length": 0.375,
 			"bones": {

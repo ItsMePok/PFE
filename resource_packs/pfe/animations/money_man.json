@@ -37,14 +37,14 @@
 			}
 		},
 		"animation.money_man.move": {
-			"anim_time_update": "query.modified_distance_moved",
 			"loop": true,
+			"anim_time_update": "query.modified_distance_moved",
 			"bones": {
-				"leg0": {
-					"rotation": ["(math.cos(query.anim_time * 38.17) * 40.0) - this", "-this", 0]
-				},
 				"leg1": {
 					"rotation": ["(math.cos(query.anim_time * 38.17 + 180) * 40.0) - this", "-this", 0]
+				},
+				"leg0": {
+					"rotation": ["(math.cos(query.anim_time * 38.17) * 40.0) - this", "-this", 0]
 				}
 			}
 		},
@@ -58,7 +58,7 @@
 		},
 		"animation.money_man.idle_c": {
 			"loop": true,
-			"animation_length": 2.5,
+			"animation_length": 5,
 			"bones": {
 				"melon_mask": {
 					"rotation": {
@@ -73,6 +73,22 @@
 					"scale": {
 						"0.0": [1, 1, 1],
 						"2.5": [1, 1, 1]
+					}
+				},
+				"arms": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"2.5": {
+							"post": [-3, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"5.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
 					}
 				}
 			}

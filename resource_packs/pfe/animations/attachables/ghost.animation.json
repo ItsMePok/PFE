@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.poke.ghost.first_person_hold": {
+		"animation.poke_pfe.ghost.first_person_hold": {
 			"loop": true,
 			"bones": {
 				"root_item": {
@@ -10,7 +10,7 @@
 				}
 			}
 		},
-		"animation.poke.ghost.third_person_hold": {
+		"animation.poke_pfe.ghost.third_person_hold": {
 			"loop": true,
 			"animation_length": 8,
 			"bones": {

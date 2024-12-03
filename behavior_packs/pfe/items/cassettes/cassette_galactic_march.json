@@ -9,6 +9,7 @@
 			}
 		},
 		"components": {
+			"minecraft:rarity":"uncommon",
 			"minecraft:icon":"poke_cassette_galactic_march",
 			"minecraft:custom_components": [
 				"poke:cas"

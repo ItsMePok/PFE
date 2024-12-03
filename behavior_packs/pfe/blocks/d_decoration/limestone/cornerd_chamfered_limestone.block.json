@@ -33,7 +33,7 @@
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 30
 			},
-			"minecraft:geometry": "geometry.poke.cornerd_chamfered_limestone",
+			"minecraft:geometry": "geometry.poke_pfe.cornerd_chamfered_limestone",
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "poke_cornered_chamfered_limestone",

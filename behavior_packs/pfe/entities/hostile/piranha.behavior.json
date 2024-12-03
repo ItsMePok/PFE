@@ -38,7 +38,7 @@
 				]
 			},
 			"minecraft:loot": {
-				"table": "loot_tables/poke/entities/piranha.json"
+				"table": "loot_tables/poke/pfe/piranha.json"
 			},
 			"minecraft:scale": {
 				"value": 1

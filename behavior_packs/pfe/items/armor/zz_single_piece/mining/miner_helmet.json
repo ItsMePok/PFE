@@ -36,7 +36,7 @@
 					},
 					{
 						"items": [
-							"minecraft:plastic"
+							"poke:plastic"
 						],
 						"repair_amount": "query.max_durability * 0.25"
 					}

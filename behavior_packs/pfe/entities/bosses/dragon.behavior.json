@@ -207,7 +207,7 @@
 				"push_towards_closest_space": true
 			},
 			"minecraft:loot": {
-				"table": "loot_tables/poke/entities/dragon.json"
+				"table": "loot_tables/poke/pfe/dragon.json"
 			},
 			"minecraft:behavior.nearest_prioritized_attackable_target": {
 				"priority": 1,
@@ -253,7 +253,6 @@
 				"name": "entity.poke:dragon.name",
 				"should_darken_sky": true
 			},
-			"minecraft:on_target_acquired":"poke:debug",
 			"minecraft:behavior.look_at_target": {
 				"look_distance": 8,
 				"probability": 0.02,

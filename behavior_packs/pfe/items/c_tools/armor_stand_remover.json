@@ -11,10 +11,11 @@
 			"minecraft:max_stack_size": 1,
 			"minecraft:icon":"poke_armor_stand_remover",
 			"minecraft:tags": {"tags": [
-				"pfe:Command:function pfe_items/armor_stand_remover:pfeCommandEnd"
+				"pfe:Command:function poke/pfe/armor_stand_remover:pfeCommandEnd"
 			]},
-			"minecraft:custom_components": [
-				"poke:cc_on_use"
+			"minecraft:custom_components":[
+				"poke:cc_on_use",
+				"poke:normalMining"
 			],
 			"minecraft:use_modifiers": {
 			  "use_duration": 0,

@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.poke.dye_unmixer",
+				"identifier": "geometry.poke_pfe.dye_unmixer",
 				"texture_width": 64,
 				"texture_height": 64,
 				"visible_bounds_width": 2,

@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.poke.knightling.walk": {
+		"animation.poke_pfe.knightling.walk": {
 			"loop": true,
 			"animation_length": 10,
 			"bones": {
@@ -171,7 +171,7 @@
 				}
 			}
 		},
-		"animation.poke.knightling.idle": {
+		"animation.poke_pfe.knightling.idle": {
 			"loop": true,
 			"animation_length": 10.0417,
 			"bones": {

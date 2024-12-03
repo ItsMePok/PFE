@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.poke.cosmetic_cosmetic_cosmetic",
+				"identifier": "geometry.poke_pfe.cosmetic_cosmetic_cosmetic",
 				"texture_width": 1024,
 				"texture_height": 1024,
 				"visible_bounds_width": 60,

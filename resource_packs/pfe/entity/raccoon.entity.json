@@ -12,18 +12,18 @@
 				"tame":"textures/entity/neutral/raccoon/poke_raccoon"
 			},
 			"geometry":{
-				"default":"geometry.poke.raccoon"
+				"default":"geometry.poke_pfe.raccoon"
 			},
 			"animations":{
-				"running":"animation.run.raccoon",
-				"idle":"animation.idle.raccoon",
-				"sit":"animation.poke.raccoon.sit"
+				"running":"animation.poke_pfe.run.raccoon",
+				"idle":"animation.poke_pfe.idle.raccoon",
+				"sit":"animation.poke_pfe.raccoon.sit"
 			},
 			"animation_controllers":[
-				{"movement":"controller.animation.poke.raccoon.movement"},
-				{"sitting":"controller.animation.poke.raccoon.sitting"}
+				{"movement":"controller.animation.poke_pfe.raccoon.movement"},
+				{"sitting":"controller.animation.poke_pfe.raccoon.sitting"}
 			],
-			"render_controllers":["controller.render.poke.default"],
+			"render_controllers":["controller.render.poke_pfe.default"],
 			"spawn_egg":{
 				"base_color":"#464646",
 				"overlay_color":"#ffffff"

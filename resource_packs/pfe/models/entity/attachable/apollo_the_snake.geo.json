@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.poke.apollo_the_snake",
+				"identifier": "geometry.poke_pfe.apollo_the_snake",
 				"texture_width": 64,
 				"texture_height": 64,
 				"visible_bounds_width": 3,

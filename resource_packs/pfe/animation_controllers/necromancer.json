@@ -1,7 +1,7 @@
 {
 	"format_version": "1.10.0",
 	"animation_controllers": {
-		"controller.animation.necromancer.melee_attacking": {
+		"controller.animation.poke_pfe.necromancer.melee_attacking": {
 			"initial_state": "default",
 			"states": {
 				"default": {
@@ -17,7 +17,7 @@
 				}
 			}
 		},
-		"controller.animation.poke.necromancer": {
+		"controller.animation.poke_pfe.necromancer": {
 			"initial_state": "idle",
 			"states": {
 				"idle": {

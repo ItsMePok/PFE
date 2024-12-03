@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.poke.soul_blaze.move": {
+		"animation.poke_pfe.soul_blaze.move": {
 			"loop": true,
 			"bones": {
 				"upperBodyParts0": {

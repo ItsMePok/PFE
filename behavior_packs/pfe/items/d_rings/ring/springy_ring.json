@@ -34,10 +34,11 @@
 				"value": 18
 			},
 			"minecraft:tags": {"tags": [
-				"pfe:Command:function poke/rings/springy_ring_event:pfeCommandEnd"
+				"pfe:Command:function poke/pfe/springy_ring_event:pfeCommandEnd"
 			]},
-			"minecraft:custom_components": [
-				"poke:cc_on_use"
+			"minecraft:custom_components":[
+				"poke:cc_on_use",
+				"poke:normalMining"
 			],
 			"minecraft:use_modifiers": {
 				"use_duration": 0,

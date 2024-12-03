@@ -10,12 +10,12 @@
     },
     "components": {
 			"minecraft:type_family": {"family": ["poke:traders","mob"]},
-			"minecraft:loot": {"table": "loot_tables/poke/entities/money_man.json"},
+			"minecraft:loot": {"table": "loot_tables/poke/pfe/money_man.json"},
 			"minecraft:health": {"value": 20},
 			"minecraft:collision_box": {"width": 0.6,"height": 1.9},
 			"minecraft:movement": {"value": 0.0},"minecraft:behavior.float": {"priority": 0},
 			"minecraft:behavior.trade_with_player": {"priority": 1},
-			"minecraft:economy_trade_table": {"display_name": "Money Man","table": "trading/economy_trades/poke_money_man.json","new_screen": true,
+			"minecraft:economy_trade_table": {"display_name": "Money Man","table": "trading/economy_trades//poke/pfe/money_man.json","new_screen": true,
 			"hero_demand_discount": 0,
 			"persist_trades": false,
 			"cured_discount": [
@@ -73,7 +73,7 @@
 					{"item":"poke:miner_helmet"},
 					{"item":"poke:night_vision_goggles"}
 				],
-				"singular_pickup": false
+				"singular_pickup": true
 			},
 			"minecraft:behavior.pickup_items": {
 				"priority": 1,

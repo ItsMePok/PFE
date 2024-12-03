@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.poke.necromancer_crown": {
+		"animation.poke_pfe.necromancer_crown": {
 			"loop": "hold_on_last_frame",
 			"bones": {
 				"helmet": {

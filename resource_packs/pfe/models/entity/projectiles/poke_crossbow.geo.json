@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.poke.crossbow_pulling_0",
+				"identifier": "geometry.poke_pfe.crossbow_pulling_0",
 				"texture_width": 16.0,
 				"texture_height": 16.0
 			},
@@ -23,7 +23,7 @@
 		},
 		{
 			"description": {
-				"identifier": "geometry.poke.crossbow_pulling_1",
+				"identifier": "geometry.poke_pfe.crossbow_pulling_1",
 				"texture_width": 16.0,
 				"texture_height": 16.0
 			},
@@ -43,7 +43,7 @@
 		},
 		{
 			"description": {
-				"identifier": "geometry.poke.crossbow_pulling_2",
+				"identifier": "geometry.poke_pfe.crossbow_pulling_2",
 				"texture_width": 16.0,
 				"texture_height": 16.0
 			},
@@ -63,7 +63,7 @@
 		},
 		{
 			"description": {
-				"identifier": "geometry.poke.crossbow_standby",
+				"identifier": "geometry.poke_pfe.crossbow_standby",
 				"texture_width": 16.0,
 				"texture_height": 16.0
 			},
@@ -83,7 +83,7 @@
 		},
 		{
 			"description": {
-				"identifier": "geometry.poke.crossbow_arrow",
+				"identifier": "geometry.poke_pfe.crossbow_arrow",
 				"texture_width": 16.0,
 				"texture_height": 16.0
 			},
@@ -103,7 +103,7 @@
 		},
 		{
 			"description": {
-				"identifier": "geometry.poke.crossbow_rocket",
+				"identifier": "geometry.poke_pfe.crossbow_rocket",
 				"texture_width": 16.0,
 				"texture_height": 16.0
 			},

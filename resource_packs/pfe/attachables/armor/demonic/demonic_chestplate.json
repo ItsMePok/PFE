@@ -8,11 +8,11 @@
 				"enchanted": "armor_enchanted"
 			},
 			"textures": {
-				"default": "textures/models/armor/poke_demonic_chestplate",
+				"default": "textures/models/armor/poke_demonic_helmet",
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {
-				"default": "geometry.poke.godly_chestplate"
+				"default": "geometry.poke_pfe.godly_chestplate"
 			},
 			"scripts": {
 				"parent_setup": "variable.chest_layer_visible = 0.0;"

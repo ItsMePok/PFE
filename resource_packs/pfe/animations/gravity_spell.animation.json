@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.poke.gravity_spell.idle": {
+		"animation.poke_pfe.gravity_spell.idle": {
 			"loop": "hold_on_last_frame",
 			"animation_length": 21,
 			"bones": {

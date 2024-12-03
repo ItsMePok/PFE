@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.poke.hellish_helmet",
+				"identifier": "geometry.poke_pfe.hellish_helmet",
 				"texture_width": 64,
 				"texture_height": 32,
 				"visible_bounds_width": 3,

@@ -10,17 +10,17 @@
 				"default":"textures/entity/passive/poke_shroomfin"
 			},
 			"geometry":{
-				"default":"geometry.poke.shroomfin"
+				"default":"geometry.poke_pfe.shroomfin"
 			},
 			"animations":{
-				"move":"animation.shroomfin.move"
+				"move":"animation.poke_pfe.shroomfin.move"
 			},
 			"animation_controllers":[
 				{
-					"general":"controller.animation.dolphin.general"
+					"general":"controller.animation.poke_pfe.dolphin.general"
 				}
 			],
-			"render_controllers":["controller.render.poke.default"],
+			"render_controllers":["controller.render.poke_pfe.default"],
 			"spawn_egg":{
 				"base_color":"#d10051",
 				"overlay_color":"#7b7b7b"

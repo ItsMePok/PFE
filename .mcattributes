@@ -1,2 +1,4 @@
 diagnostic.disable.=true
 diagnostic.disable.debugger.internal.exception=true
+diagnostic.disable.minecraft.language.comment.invalid=true
+diagnostic.disable.behaviorpack.item.component.missing=true

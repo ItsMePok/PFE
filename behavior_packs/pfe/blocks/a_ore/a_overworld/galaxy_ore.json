@@ -20,9 +20,11 @@
 			"tag:stone_pick_diggable":{},
 			"tag:minecraft:is_pickaxe_item_destructible":{},
 			"minecraft:geometry":{"identifier": "minecraft:geometry.full_block"},
-			"minecraft:loot": "loot_tables/poke/blocks/galaxy_ore.json",
+			"minecraft:material_instances": {"*": {"texture": "poke_galaxy_ore"}},
+			"minecraft:loot": "loot_tables/poke/pfe/galaxy_ore.json",
 			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 1.5
+				"seconds_to_destroy": 15,
+				"item_specific_speeds": [{"item":{"tags": "q.any_tag('minecraft:is_pickaxe')"},"destroy_speed": 3}]
 			},
 			"minecraft:custom_components":[
 				"poke:fortune"

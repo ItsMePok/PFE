@@ -9,6 +9,9 @@
 			}
 		},
 		"components": {
+			"minecraft:custom_components":[
+				"poke:normalMining"
+			],
 			"minecraft:can_destroy_in_creative": false,
 			"minecraft:durability": {
 				"max_durability": 2870,

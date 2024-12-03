@@ -11,7 +11,7 @@
 				"default":"textures/entity/traders/poke_cosmetic_trader"
 			},
 			"geometry":{
-				"default":"geometry.poke.cosmetic_trader"
+				"default":"geometry.poke_pfe.cosmetic_trader"
 			},
 			"animations":{
 				"general":"animation.money_man.general",
@@ -22,7 +22,7 @@
 				"idle":"animation.money_man.idle_c"
 			},
 			"scripts":{"animate":["idle","move_c","general_c"]},
-			"render_controllers":["controller.render.poke.default"],
+			"render_controllers":["controller.render.poke_pfe.default"],
 			"spawn_egg":{
 				"texture":"poke_spawn_cosmetic_trader"
 			},

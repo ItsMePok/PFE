@@ -63,7 +63,7 @@
 				"value": 1
 			},
 			"minecraft:loot":{
-				"table": "loot_tables/poke/entities/logger.json"
+				"table": "loot_tables/poke/pfe/logger.json"
 			},
 			"minecraft:physics": {
 				"has_gravity": true,

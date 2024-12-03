@@ -4,7 +4,8 @@
 		"description": {
 			"identifier": "poke:zombken_trophy",
 			"menu_category": {
-				"category": "construction"
+				"category": "construction",
+				"group": "itemGroup.name.trophy"
 			},
 			"traits": {
 				"minecraft:placement_direction": {"enabled_states": ["minecraft:cardinal_direction"]}
@@ -35,7 +36,7 @@
 					8
 				]
 			},
-			"minecraft:loot": "loot_tables/poke/trophy/zombken_trophy.json",
+			"minecraft:loot": "loot_tables/poke/pfe/zombken_trophy.json",
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 1
 			},

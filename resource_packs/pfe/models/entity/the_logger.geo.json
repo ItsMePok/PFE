@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.poke.the_logger",
+				"identifier": "geometry.poke_pfe.the_logger",
 				"texture_width": 156,
 				"texture_height": 156,
 				"visible_bounds_width": 6,

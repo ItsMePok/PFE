@@ -13,10 +13,10 @@
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"animations": {
-				"first_person_hold": "animation.poke.necromancer_crown"
+				"first_person_hold": "animation.poke_pfe.necromancer_crown"
 			},
 			"geometry": {
-				"default": "geometry.poke.necromancer_crown"
+				"default": "geometry.poke_pfe.necromancer_crown"
 			},
 			"scripts": {
 				"animate": [

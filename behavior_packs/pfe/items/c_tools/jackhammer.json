@@ -29,10 +29,11 @@
 				"value": 30
 			},
 			"minecraft:tags": {"tags": [
-				"pfe:Command:function pfe_items/jackhammer:pfeCommandEnd"
+				"pfe:Command:function poke/pfe/jackhammer:pfeCommandEnd"
 			]},
 			"minecraft:custom_components": [
-				"poke:cc_on_use"
+				"poke:cc_on_use",
+				"poke:normalMining"
 			],
 			"minecraft:use_modifiers": {
 			  "use_duration": 0,

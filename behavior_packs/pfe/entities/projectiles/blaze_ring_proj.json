@@ -40,7 +40,7 @@
           }
         }
       },
-      "particle": "blaze_ring_proj",
+      //"particle": "poke:blaze_ring_proj",
       "power": 1.6,
       "gravity": 0.0001,
       "inertia": 1,

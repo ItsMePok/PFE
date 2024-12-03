@@ -4,7 +4,8 @@
 		"description": {
 			"identifier": "poke:molten_lava_sponge",
 			"menu_category": {
-				"category": "items"
+				"category": "nature",
+				"group": "itemGroup.name.sponge"
 			}
 		},
 		"components": {

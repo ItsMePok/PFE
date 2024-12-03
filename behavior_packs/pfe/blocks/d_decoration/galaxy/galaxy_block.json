@@ -4,7 +4,8 @@
 		"description": {
 			"identifier": "poke:galaxy_block",
 			"menu_category": {
-				"category": "construction"
+				"category": "construction",
+				"group": "itemGroup.name.oreBlock"
 			}
 		},
 		"components": {

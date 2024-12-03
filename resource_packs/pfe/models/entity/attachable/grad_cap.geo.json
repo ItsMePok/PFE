@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.poke.grad_cap",
+				"identifier": "geometry.poke_pfe.grad_cap",
 				"texture_width": 64,
 				"texture_height": 64,
 				"visible_bounds_width": 2,

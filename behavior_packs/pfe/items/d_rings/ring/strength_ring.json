@@ -36,8 +36,9 @@
 			"minecraft:tags": {"tags": [
 				"pfe:Command:effect @s strength 25 2 true:pfeCommandEnd"
 			]},
-			"minecraft:custom_components": [
-				"poke:cc_on_use"
+			"minecraft:custom_components":[
+				"poke:cc_on_use",
+				"poke:normalMining"
 			],
 			"minecraft:use_modifiers": {
 				"use_duration": 0,

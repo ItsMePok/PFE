@@ -10,7 +10,7 @@
 				"default":"textures/entity/passive/poke_shallow_cod"
 			},
 			"geometry":{
-				"default":"geometry.poke.sporefish"
+				"default":"geometry.poke_pfe.sporefish"
 			},
 			"scripts":{
 				"pre_animation":[
@@ -19,15 +19,15 @@
 				]
 			},
 			"animations":{
-				"flop":"animation.shallow_cod.flop",
-				"swim":"animation.shallow_cod.swim"
+				"flop":"animation.poke_pfe.shallow_cod.flop",
+				"swim":"animation.poke_pfe.shallow_cod.swim"
 			},
 			"animation_controllers":[
 				{
 					"general":"controller.animation.fish.general"
 				}
 			],
-			"render_controllers":["controller.render.poke.default"],
+			"render_controllers":["controller.render.poke_pfe.default"],
 			"spawn_egg":{
 				"base_color":"#b1a492",
 				"overlay_color":"#d7b17f"

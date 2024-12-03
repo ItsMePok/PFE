@@ -9,7 +9,9 @@
 		},
 		"components": {
 			"minecraft:icon":"poke_boss_event",
-			"minecraft:entity_placer": {"entity": "poke:boss_event"}
+			"minecraft:custom_components": [
+				"poke:boss_event"
+			]
 		}
 	}
 }

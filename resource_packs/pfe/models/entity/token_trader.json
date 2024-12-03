@@ -1,6 +1,6 @@
 {
 	"format_version": "1.8.0",
-	"geometry.poke.token_trader": {
+	"geometry.poke_pfe.token_trader": {
 		"texturewidth": 128,
 		"textureheight": 128,
 		"visible_bounds_width": 2,
