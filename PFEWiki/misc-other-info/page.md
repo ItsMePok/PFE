@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Page
 
 ## Can Break:
@@ -23,3 +27,5 @@ Items:
 *
 {% endtab %}
 {% endtabs %}
+
+&#x20;

@@ -1,4 +1,4 @@
-# Changelog-History
+# Changelogs & Other Addons
 
 {% hint style="info" %}
 Version Syntax:
@@ -18,4 +18,12 @@ Version Syntax:
 
 {% content-ref url="holiday-and-event-updates/" %}
 [holiday-and-event-updates](holiday-and-event-updates/)
+{% endcontent-ref %}
+
+{% content-ref url="other-addons/" %}
+[other-addons](other-addons/)
+{% endcontent-ref %}
+
+{% content-ref url="pfe-split/" %}
+[pfe-split](pfe-split/)
 {% endcontent-ref %}

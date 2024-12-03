@@ -1,8 +1,8 @@
 # Shade Haxel
 
-![poke\_shade\_haxel](https://github.com/ItsMePok/PFE/assets/136857747/b09458ed-42e9-4649-af15-41bae47db3d7)
+![](https://github.com/ItsMePok/PFE/assets/136857747/b09458ed-42e9-4649-af15-41bae47db3d7)
 
-Identifier: **poke:shade\_haxel**
+## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:shade\_haxel**
 
 Durability: **2500**
 

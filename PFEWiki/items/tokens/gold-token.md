@@ -1,6 +1,6 @@
 # Gold Token
 
-![poke\_gold\_token](https://github.com/ItsMePok/PFE/assets/136857747/76b75bd2-9056-44b3-b46a-50dd77c6abf5)
+![](https://github.com/ItsMePok/PFE/assets/136857747/76b75bd2-9056-44b3-b46a-50dd77c6abf5)
 
 Identifier: **poke:gold\_token**
 

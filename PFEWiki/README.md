@@ -1,7 +1,7 @@
 # Home
 
 {% hint style="info" %}
-#### This Wiki assumes the PFE Version(s): [v1.2.3.md](changelog-history/full-releases/v1.2.3.md "mention") / [2024-pfe-spook-ltu.md](changelog-history/holiday-and-event-updates/2024-pfe-spook-ltu.md "mention")
+#### This Wiki assumes the PFE Version(s): [v1.2.4.md](changelog-history/full-releases/v1.2.4.md "mention")
 {% endhint %}
 
 ### Welcome to the wiki for PFE!
@@ -16,7 +16,7 @@ Most things do have some general info until I make the individual pages for them
 
 ## Experimental Toggles Needed: None
 
-## Lowest Supported Minecraft Version: 1.21.40
+## Lowest Supported Minecraft Version: 1.21.50
 
 ***
 
@@ -78,16 +78,14 @@ _you can also dm me on discord: itsmepok_
 
 ***
 
-### Very boring social media things that I don't really use but I thought I should put here anyways because why not lol:
+### Other Links:
 
 ### YouTube
 
 {% embed url="https://www.youtube.com/itsmepok" %}
 
-(I don't post things (at least not right now), but I do see most of the PFE showcases/reviews :3)
-
 ***
 
-### Twitter / X
+### Bluesky
 
-[https://twitter.com/ItsMePok](https://twitter.com/ItsMePok)
+{% embed url="https://bsky.app/profile/itsmepok.bsky.social" %}

@@ -1,8 +1,8 @@
 # Stone Haxel
 
-![poke\_stone\_haxel](https://github.com/ItsMePok/PFE/assets/136857747/3d5782a6-d082-442e-b153-d4d8155d7420)
+![](https://github.com/ItsMePok/PFE/assets/136857747/3d5782a6-d082-442e-b153-d4d8155d7420)
 
-Identifier: **poke:stone\_haxel**
+## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:stone\_haxel**
 
 Durability: **128**
 

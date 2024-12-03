@@ -1,8 +1,8 @@
 # Hellish Haxel
 
-![poke\_hellish\_haxel](https://github.com/ItsMePok/PFE/assets/136857747/39d40020-af9d-487b-9d77-b7e199a85362)
+![](https://github.com/ItsMePok/PFE/assets/136857747/39d40020-af9d-487b-9d77-b7e199a85362)
 
-Identifier: **poke:hellish\_haxel**
+## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:hellish\_haxel**
 
 Durability: **4000**
 

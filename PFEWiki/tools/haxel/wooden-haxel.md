@@ -1,8 +1,8 @@
 # Wooden Haxel
 
-![poke\_wooden\_haxel](https://github.com/ItsMePok/PFE/assets/136857747/187ff92e-f048-471a-872e-ebb7498b8ebf)
+![](https://github.com/ItsMePok/PFE/assets/136857747/187ff92e-f048-471a-872e-ebb7498b8ebf)
 
-Identifier: **poke:wooden\_haxel**
+## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:wooden\_haxel**
 
 Durability: **64**
 
@@ -20,7 +20,7 @@ Enchant type: **Axe**
 Repairable with:
 
 * [**Repair Core**](https://pfewiki.gitbook.io/home/items/cores/repair-core)
-* **Any Log**
+* **Any Vanilla Log**
 
 Can Break:
 

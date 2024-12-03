@@ -1,6 +1,6 @@
 # Void Arrow
 
-![poke\_void\_arrow](https://github.com/ItsMePok/PFE/assets/136857747/375e3d1c-2367-4a97-b9ff-22b79fcd7f56)
+![](https://github.com/ItsMePok/PFE/assets/136857747/375e3d1c-2367-4a97-b9ff-22b79fcd7f56)
 
 Item Identifier: **poke:void\_arrow**
 
@@ -14,12 +14,12 @@ Effects:
 
 Can be shot by:
 
-* All PFE [Crossbows](https://github.com/ItsMePok/PFE/wiki/Weapons#crossbows)
+* All PFE Crossbows
 * All PFE Burstbows
 
 ## Obtaining:
 
-* Crafted with 8 Arrows & 1 [Void Nugget](https://pfewiki.gitbook.io/home/items/nuggets/void-nugget)
+* Crafted with 8 Arrows & 1 Void Nugget
 
 ## Notes:
 

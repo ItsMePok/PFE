@@ -5,4 +5,4 @@
 * Compressed storage
 * Can be un-crafted back into the resource & empty crate
 * is Flammable
-* Made in thecrafting table&#x20;
+* Made in the crafting table&#x20;

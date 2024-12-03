@@ -18,9 +18,3 @@ A full list of bugs can be found in the PFE Discord: [https://discord.gg/PbkBYcE
 **When is this Fixable?:** currently uncertain
 {% endhint %}
 
-{% hint style="warning" %}
-**Issue:** Ban Hammer can no longer obtain bedrock\
-\
-**When is this Fixable?:** currently uncertain, a rework to the entire Haxel system will be needed
-{% endhint %}
-

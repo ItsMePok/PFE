@@ -1,6 +1,6 @@
 # Copper Token
 
-![poke\_copper\_token](https://github.com/ItsMePok/PFE/assets/136857747/1c78ba2a-4a5b-4b7b-83ff-ed21aa75ebd8)
+![](https://github.com/ItsMePok/PFE/assets/136857747/1c78ba2a-4a5b-4b7b-83ff-ed21aa75ebd8)
 
 Identifier: **poke:copper\_token**
 

@@ -2,7 +2,7 @@
 
 <figure><img src="https://github.com/user-attachments/assets/e58f477e-f83e-462f-86f8-48883f72b861" alt=""><figcaption></figcaption></figure>
 
-## Identifier: **poke:cobalt\_pickaxe** <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:cobalt\_pickaxe** <a href="#identifier" id="identifier"></a>
 
 ## Basic info:
 
@@ -16,6 +16,10 @@
 
 ### Mining Speed: 5 <a href="#mining-speed" id="mining-speed"></a>
 
+### <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 1
+
+### <img src="https://minecraft.wiki/images/Red_Dye_JE3_BE3.png?fbdd1" alt="" data-size="line">[Dyeable](https://minecraft.wiki/w/Dye#Dyeing_armor): Yes
+
 ### Repair Items: <a href="#repair" id="repair"></a>
 
 * [<img src="https://github.com/ItsMePok/PFE/assets/136857747/f15d8501-f297-4a77-b6de-3681297cdb09" alt="" data-size="line">Repair Core](../../items/cores/repair-core.md) (100% Durability)
@@ -24,7 +28,7 @@
 
 ### Usage:
 
-* Breaks Blocks that an [<img src="https://minecraft.wiki/images/Iron_Pickaxe_JE3_BE2.png?8a6ea" alt="" data-size="line">Iron Pickaxe](https://minecraft.wiki/w/Iron\_Pickaxe) or worse can break
+* Breaks Blocks that an [<img src="https://minecraft.wiki/images/Iron_Pickaxe_JE3_BE2.png?8a6ea" alt="" data-size="line">Iron Pickaxe](https://minecraft.wiki/w/Iron_Pickaxe) or worse can break
 
 ## Obtaining:
 
@@ -35,8 +39,8 @@
 |                                                                                                  |                                                                                                  |                                                                                                  |
 | :----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: |
 | ![Cobalt Ingot](https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694) | ![Cobalt Ingot](https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694) | ![Cobalt Ingot](https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694) |
-|                                                                                                  |                 ![Stick](https://minecraft.wiki/images/Stick\_JE1\_BE1.png?1fc15)                |                                                                                                  |
-|                                                                                                  |                 ![Stick](https://minecraft.wiki/images/Stick\_JE1\_BE1.png?1fc15)                |                                                                                                  |
+|                                                                                                  |                  ![Stick](https://minecraft.wiki/images/Stick_JE1_BE1.png?1fc15)                 |                                                                                                  |
+|                                                                                                  |                  ![Stick](https://minecraft.wiki/images/Stick_JE1_BE1.png?1fc15)                 |                                                                                                  |
 
 Items:
 

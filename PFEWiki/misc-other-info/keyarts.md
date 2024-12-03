@@ -30,7 +30,7 @@
 
 <figure><img src="../.gitbook/assets/Minecraft_6_27_2023_7_01_45_PM_1.jpg" alt=""><figcaption><p>1.1.0</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>1.0.9</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>1.0.9</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/Pokes-Fantasy-Expansion-Addon-MCPE-Thumbnail.png" alt=""><figcaption><p>1.0.8</p></figcaption></figure>
 

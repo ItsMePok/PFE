@@ -1,20 +1,22 @@
 # Knightling Helmet
 
-![poke\_knightling\_helmet](https://github.com/ItsMePok/PFE/assets/136857747/e0957c68-25ab-47ac-b92d-d8f3d6ef0a85)
+![](https://github.com/ItsMePok/PFE/assets/136857747/e0957c68-25ab-47ac-b92d-d8f3d6ef0a85)
 
-Identifier: **poke:knightling\_helmet**
+## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:knightling\_helmet**
 
-Durability: **1500**
+## Durability: **1500**
 
-Armor: **6**
+## Armor: **6**
 
-Enchant type: **Helmet**
+## Enchant type: **Helmet**
 
-Repairable with:
+## Repairable with:
 
 * [**Repair Core**](https://pfewiki.gitbook.io/home/items/cores/repair-core)
 
-Trimmable: **No**
+## Trimmable: Yes
+
+## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 1
 
 ## Obtaining:
 

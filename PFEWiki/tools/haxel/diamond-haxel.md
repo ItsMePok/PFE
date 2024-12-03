@@ -1,8 +1,8 @@
 # Diamond Haxel
 
-![poke\_diamond\_haxel](https://github.com/ItsMePok/PFE/assets/136857747/f68c6358-2870-4c8f-9143-746545071a10)
+![](https://github.com/ItsMePok/PFE/assets/136857747/f68c6358-2870-4c8f-9143-746545071a10)
 
-Identifier: **poke:diamond\_haxel**
+## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:diamond\_haxel**
 
 Durability: **2048**
 
@@ -32,4 +32,4 @@ Can Break:
 * Crafted With:
   * 1x [**Emerald Haxel**](https://github.com/ItsMePok/PFE/wiki/Emerald-Haxel)
   * 4x [**Diamond**](https://minecraft.wiki/w/Diamond)
-  * 4x [**Diamond Block**](https://minecraft.wiki/w/Block\_of\_Diamond)
+  * 4x [**Diamond Block**](https://minecraft.wiki/w/Block_of_Diamond)

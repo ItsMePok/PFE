@@ -2,7 +2,7 @@
 
 ## Amethyst Armor
 
-#### Set Effects:
+### <img src="https://github.com/user-attachments/assets/53329be8-f7e5-4c01-b7e4-a27b567c7998" alt="" data-size="line"> Set Effects:
 
 * Regeneration 2
 * Hero of Village 2
@@ -23,16 +23,16 @@ Enchant type: **Helmet**
 Repairable with:
 
 * [**Repair Core**](https://pfewiki.gitbook.io/home/items/cores/repair-core)
-* [<img src="https://minecraft.wiki/images/Amethyst_Shard_JE2_BE1.png?56555" alt="" data-size="line">Amethyst Shard](https://minecraft.wiki/w/Amethyst\_Shard)
+* [<img src="https://minecraft.wiki/images/Amethyst_Shard_JE2_BE1.png?56555" alt="" data-size="line">Amethyst Shard](https://minecraft.wiki/w/Amethyst_Shard)
 
 Trimmable: **Yes**
 
 ### Recipe:
 
-| [![](https://minecraft.wiki/images/thumb/Block\_of\_Amethyst\_JE3\_BE1.png/150px-Block\_of\_Amethyst\_JE3\_BE1.png?14501)](https://minecraft.wiki/w/Block\_of\_Amethyst) | [![](https://minecraft.wiki/images/thumb/Block\_of\_Amethyst\_JE3\_BE1.png/150px-Block\_of\_Amethyst\_JE3\_BE1.png?14501)](https://minecraft.wiki/w/Block\_of\_Amethyst) | [![](https://minecraft.wiki/images/thumb/Block\_of\_Amethyst\_JE3\_BE1.png/150px-Block\_of\_Amethyst\_JE3\_BE1.png?14501)](https://minecraft.wiki/w/Block\_of\_Amethyst) |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [![](https://minecraft.wiki/images/thumb/Block\_of\_Amethyst\_JE3\_BE1.png/150px-Block\_of\_Amethyst\_JE3\_BE1.png?14501)](https://minecraft.wiki/w/Block\_of\_Amethyst) | [![](https://github.com/ItsMePok/PFE/assets/136857747/38584129-72d6-42b8-a69b-cd3b461025e8)](https://pfewiki.gitbook.io/home/items/cores/upgrade-core)                   | [![](https://minecraft.wiki/images/thumb/Block\_of\_Amethyst\_JE3\_BE1.png/150px-Block\_of\_Amethyst\_JE3\_BE1.png?14501)](https://minecraft.wiki/w/Block\_of\_Amethyst) |
-| [![](https://minecraft.wiki/images/thumb/Block\_of\_Amethyst\_JE3\_BE1.png/150px-Block\_of\_Amethyst\_JE3\_BE1.png?14501)](https://minecraft.wiki/w/Block\_of\_Amethyst) | [![](https://minecraft.wiki/images/Netherite\_Helmet\_\(item\)\_JE1.png?1c7fb)](https://minecraft.wiki/w/Netherite\_Helmet)                                              | [![](https://minecraft.wiki/images/thumb/Block\_of\_Amethyst\_JE3\_BE1.png/150px-Block\_of\_Amethyst\_JE3\_BE1.png?14501)](https://minecraft.wiki/w/Block\_of\_Amethyst) |
+| [![](https://minecraft.wiki/images/thumb/Block_of_Amethyst_JE3_BE1.png/150px-Block_of_Amethyst_JE3_BE1.png?14501)](https://minecraft.wiki/w/Block_of_Amethyst) | [![](https://minecraft.wiki/images/thumb/Block_of_Amethyst_JE3_BE1.png/150px-Block_of_Amethyst_JE3_BE1.png?14501)](https://minecraft.wiki/w/Block_of_Amethyst) | [![](https://minecraft.wiki/images/thumb/Block_of_Amethyst_JE3_BE1.png/150px-Block_of_Amethyst_JE3_BE1.png?14501)](https://minecraft.wiki/w/Block_of_Amethyst) |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [![](https://minecraft.wiki/images/thumb/Block_of_Amethyst_JE3_BE1.png/150px-Block_of_Amethyst_JE3_BE1.png?14501)](https://minecraft.wiki/w/Block_of_Amethyst) | [![](https://github.com/ItsMePok/PFE/assets/136857747/38584129-72d6-42b8-a69b-cd3b461025e8)](https://pfewiki.gitbook.io/home/items/cores/upgrade-core)         | [![](https://minecraft.wiki/images/thumb/Block_of_Amethyst_JE3_BE1.png/150px-Block_of_Amethyst_JE3_BE1.png?14501)](https://minecraft.wiki/w/Block_of_Amethyst) |
+| [![](https://minecraft.wiki/images/thumb/Block_of_Amethyst_JE3_BE1.png/150px-Block_of_Amethyst_JE3_BE1.png?14501)](https://minecraft.wiki/w/Block_of_Amethyst) | [![](https://minecraft.wiki/images/Netherite_Helmet_\(item\)_JE1.png?1c7fb)](https://minecraft.wiki/w/Netherite_Helmet)                                        | [![](https://minecraft.wiki/images/thumb/Block_of_Amethyst_JE3_BE1.png/150px-Block_of_Amethyst_JE3_BE1.png?14501)](https://minecraft.wiki/w/Block_of_Amethyst) |
 
 ## Amethyst Chestplate
 
@@ -49,16 +49,16 @@ Enchant type: **Chestplate**
 Repairable with:
 
 * [**Repair Core**](https://pfewiki.gitbook.io/home/items/cores/repair-core)
-* [<img src="https://minecraft.wiki/images/Amethyst_Shard_JE2_BE1.png?56555" alt="" data-size="line">Amethyst Shard](https://minecraft.wiki/w/Amethyst\_Shard)
+* [<img src="https://minecraft.wiki/images/Amethyst_Shard_JE2_BE1.png?56555" alt="" data-size="line">Amethyst Shard](https://minecraft.wiki/w/Amethyst_Shard)
 
 Trimmable: **Yes**
 
 ### Recipe:
 
-| [![](https://minecraft.wiki/images/thumb/Block\_of\_Amethyst\_JE3\_BE1.png/150px-Block\_of\_Amethyst\_JE3\_BE1.png?14501)](https://minecraft.wiki/w/Block\_of\_Amethyst) | [![](https://minecraft.wiki/images/thumb/Block\_of\_Amethyst\_JE3\_BE1.png/150px-Block\_of\_Amethyst\_JE3\_BE1.png?14501)](https://minecraft.wiki/w/Block\_of\_Amethyst) | [![](https://minecraft.wiki/images/thumb/Block\_of\_Amethyst\_JE3\_BE1.png/150px-Block\_of\_Amethyst\_JE3\_BE1.png?14501)](https://minecraft.wiki/w/Block\_of\_Amethyst) |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [![](https://minecraft.wiki/images/thumb/Block\_of\_Amethyst\_JE3\_BE1.png/150px-Block\_of\_Amethyst\_JE3\_BE1.png?14501)](https://minecraft.wiki/w/Block\_of\_Amethyst) | [![](https://github.com/ItsMePok/PFE/assets/136857747/38584129-72d6-42b8-a69b-cd3b461025e8)](https://pfewiki.gitbook.io/home/items/cores/upgrade-core)                   | [![](https://minecraft.wiki/images/thumb/Block\_of\_Amethyst\_JE3\_BE1.png/150px-Block\_of\_Amethyst\_JE3\_BE1.png?14501)](https://minecraft.wiki/w/Block\_of\_Amethyst) |
-| [![](https://minecraft.wiki/images/thumb/Block\_of\_Amethyst\_JE3\_BE1.png/150px-Block\_of\_Amethyst\_JE3\_BE1.png?14501)](https://minecraft.wiki/w/Block\_of\_Amethyst) | [![](https://minecraft.wiki/images/Netherite\_Chestplate\_\(item\)\_JE1.png?8b56d)](https://minecraft.wiki/w/Netherite\_Chestplate)                                      | [![](https://minecraft.wiki/images/thumb/Block\_of\_Amethyst\_JE3\_BE1.png/150px-Block\_of\_Amethyst\_JE3\_BE1.png?14501)](https://minecraft.wiki/w/Block\_of\_Amethyst) |
+| [![](https://minecraft.wiki/images/thumb/Block_of_Amethyst_JE3_BE1.png/150px-Block_of_Amethyst_JE3_BE1.png?14501)](https://minecraft.wiki/w/Block_of_Amethyst) | [![](https://minecraft.wiki/images/thumb/Block_of_Amethyst_JE3_BE1.png/150px-Block_of_Amethyst_JE3_BE1.png?14501)](https://minecraft.wiki/w/Block_of_Amethyst) | [![](https://minecraft.wiki/images/thumb/Block_of_Amethyst_JE3_BE1.png/150px-Block_of_Amethyst_JE3_BE1.png?14501)](https://minecraft.wiki/w/Block_of_Amethyst) |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [![](https://minecraft.wiki/images/thumb/Block_of_Amethyst_JE3_BE1.png/150px-Block_of_Amethyst_JE3_BE1.png?14501)](https://minecraft.wiki/w/Block_of_Amethyst) | [![](https://github.com/ItsMePok/PFE/assets/136857747/38584129-72d6-42b8-a69b-cd3b461025e8)](https://pfewiki.gitbook.io/home/items/cores/upgrade-core)         | [![](https://minecraft.wiki/images/thumb/Block_of_Amethyst_JE3_BE1.png/150px-Block_of_Amethyst_JE3_BE1.png?14501)](https://minecraft.wiki/w/Block_of_Amethyst) |
+| [![](https://minecraft.wiki/images/thumb/Block_of_Amethyst_JE3_BE1.png/150px-Block_of_Amethyst_JE3_BE1.png?14501)](https://minecraft.wiki/w/Block_of_Amethyst) | [![](https://minecraft.wiki/images/Netherite_Chestplate_\(item\)_JE1.png?8b56d)](https://minecraft.wiki/w/Netherite_Chestplate)                                | [![](https://minecraft.wiki/images/thumb/Block_of_Amethyst_JE3_BE1.png/150px-Block_of_Amethyst_JE3_BE1.png?14501)](https://minecraft.wiki/w/Block_of_Amethyst) |
 
 ## Amethyst Leggings
 
@@ -75,16 +75,16 @@ Enchant type: **Leggings**
 Repairable with:
 
 * [**Repair Core**](https://pfewiki.gitbook.io/home/items/cores/repair-core)
-* [<img src="https://minecraft.wiki/images/Amethyst_Shard_JE2_BE1.png?56555" alt="" data-size="line">Amethyst Shard](https://minecraft.wiki/w/Amethyst\_Shard)
+* [<img src="https://minecraft.wiki/images/Amethyst_Shard_JE2_BE1.png?56555" alt="" data-size="line">Amethyst Shard](https://minecraft.wiki/w/Amethyst_Shard)
 
 Trimmable: **Yes**
 
 ### Recipe:
 
-| [![](https://minecraft.wiki/images/thumb/Block\_of\_Amethyst\_JE3\_BE1.png/150px-Block\_of\_Amethyst\_JE3\_BE1.png?14501)](https://minecraft.wiki/w/Block\_of\_Amethyst) | [![](https://minecraft.wiki/images/thumb/Block\_of\_Amethyst\_JE3\_BE1.png/150px-Block\_of\_Amethyst\_JE3\_BE1.png?14501)](https://minecraft.wiki/w/Block\_of\_Amethyst) | [![](https://minecraft.wiki/images/thumb/Block\_of\_Amethyst\_JE3\_BE1.png/150px-Block\_of\_Amethyst\_JE3\_BE1.png?14501)](https://minecraft.wiki/w/Block\_of\_Amethyst) |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [![](https://minecraft.wiki/images/thumb/Block\_of\_Amethyst\_JE3\_BE1.png/150px-Block\_of\_Amethyst\_JE3\_BE1.png?14501)](https://minecraft.wiki/w/Block\_of\_Amethyst) | [![](https://github.com/ItsMePok/PFE/assets/136857747/38584129-72d6-42b8-a69b-cd3b461025e8)](https://pfewiki.gitbook.io/home/items/cores/upgrade-core)                   | [![](https://minecraft.wiki/images/thumb/Block\_of\_Amethyst\_JE3\_BE1.png/150px-Block\_of\_Amethyst\_JE3\_BE1.png?14501)](https://minecraft.wiki/w/Block\_of\_Amethyst) |
-| [![](https://minecraft.wiki/images/thumb/Block\_of\_Amethyst\_JE3\_BE1.png/150px-Block\_of\_Amethyst\_JE3\_BE1.png?14501)](https://minecraft.wiki/w/Block\_of\_Amethyst) | [![](https://minecraft.wiki/images/Netherite\_Leggings\_\(item\)\_JE1.png?fea9e)](https://minecraft.wiki/w/Netherite\_Leggings)                                          | [![](https://minecraft.wiki/images/thumb/Block\_of\_Amethyst\_JE3\_BE1.png/150px-Block\_of\_Amethyst\_JE3\_BE1.png?14501)](https://minecraft.wiki/w/Block\_of\_Amethyst) |
+| [![](https://minecraft.wiki/images/thumb/Block_of_Amethyst_JE3_BE1.png/150px-Block_of_Amethyst_JE3_BE1.png?14501)](https://minecraft.wiki/w/Block_of_Amethyst) | [![](https://minecraft.wiki/images/thumb/Block_of_Amethyst_JE3_BE1.png/150px-Block_of_Amethyst_JE3_BE1.png?14501)](https://minecraft.wiki/w/Block_of_Amethyst) | [![](https://minecraft.wiki/images/thumb/Block_of_Amethyst_JE3_BE1.png/150px-Block_of_Amethyst_JE3_BE1.png?14501)](https://minecraft.wiki/w/Block_of_Amethyst) |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [![](https://minecraft.wiki/images/thumb/Block_of_Amethyst_JE3_BE1.png/150px-Block_of_Amethyst_JE3_BE1.png?14501)](https://minecraft.wiki/w/Block_of_Amethyst) | [![](https://github.com/ItsMePok/PFE/assets/136857747/38584129-72d6-42b8-a69b-cd3b461025e8)](https://pfewiki.gitbook.io/home/items/cores/upgrade-core)         | [![](https://minecraft.wiki/images/thumb/Block_of_Amethyst_JE3_BE1.png/150px-Block_of_Amethyst_JE3_BE1.png?14501)](https://minecraft.wiki/w/Block_of_Amethyst) |
+| [![](https://minecraft.wiki/images/thumb/Block_of_Amethyst_JE3_BE1.png/150px-Block_of_Amethyst_JE3_BE1.png?14501)](https://minecraft.wiki/w/Block_of_Amethyst) | [![](https://minecraft.wiki/images/Netherite_Leggings_\(item\)_JE1.png?fea9e)](https://minecraft.wiki/w/Netherite_Leggings)                                    | [![](https://minecraft.wiki/images/thumb/Block_of_Amethyst_JE3_BE1.png/150px-Block_of_Amethyst_JE3_BE1.png?14501)](https://minecraft.wiki/w/Block_of_Amethyst) |
 
 ## Amethyst Boots
 
@@ -101,13 +101,13 @@ Enchant type: **Boots**
 Repairable with:
 
 * [**Repair Core**](https://pfewiki.gitbook.io/home/items/cores/repair-core)
-* [<img src="https://minecraft.wiki/images/Amethyst_Shard_JE2_BE1.png?56555" alt="" data-size="line">Amethyst Shard](https://minecraft.wiki/w/Amethyst\_Shard)
+* [<img src="https://minecraft.wiki/images/Amethyst_Shard_JE2_BE1.png?56555" alt="" data-size="line">Amethyst Shard](https://minecraft.wiki/w/Amethyst_Shard)
 
 Trimmable: **Yes**
 
 ### Recipe:
 
-| [![](https://minecraft.wiki/images/thumb/Block\_of\_Amethyst\_JE3\_BE1.png/150px-Block\_of\_Amethyst\_JE3\_BE1.png?14501)](https://minecraft.wiki/w/Block\_of\_Amethyst) | [![](https://minecraft.wiki/images/thumb/Block\_of\_Amethyst\_JE3\_BE1.png/150px-Block\_of\_Amethyst\_JE3\_BE1.png?14501)](https://minecraft.wiki/w/Block\_of\_Amethyst) | [![](https://minecraft.wiki/images/thumb/Block\_of\_Amethyst\_JE3\_BE1.png/150px-Block\_of\_Amethyst\_JE3\_BE1.png?14501)](https://minecraft.wiki/w/Block\_of\_Amethyst) |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [![](https://minecraft.wiki/images/thumb/Block\_of\_Amethyst\_JE3\_BE1.png/150px-Block\_of\_Amethyst\_JE3\_BE1.png?14501)](https://minecraft.wiki/w/Block\_of\_Amethyst) | [![](https://github.com/ItsMePok/PFE/assets/136857747/38584129-72d6-42b8-a69b-cd3b461025e8)](https://pfewiki.gitbook.io/home/items/cores/upgrade-core)                   | [![](https://minecraft.wiki/images/thumb/Block\_of\_Amethyst\_JE3\_BE1.png/150px-Block\_of\_Amethyst\_JE3\_BE1.png?14501)](https://minecraft.wiki/w/Block\_of\_Amethyst) |
-| [![](https://minecraft.wiki/images/thumb/Block\_of\_Amethyst\_JE3\_BE1.png/150px-Block\_of\_Amethyst\_JE3\_BE1.png?14501)](https://minecraft.wiki/w/Block\_of\_Amethyst) | [![](https://minecraft.wiki/images/Netherite\_Boots\_\(item\)\_JE1.png?a161f)](https://minecraft.wiki/w/Netherite\_Boots)                                                | [![](https://minecraft.wiki/images/thumb/Block\_of\_Amethyst\_JE3\_BE1.png/150px-Block\_of\_Amethyst\_JE3\_BE1.png?14501)](https://minecraft.wiki/w/Block\_of\_Amethyst) |
+| [![](https://minecraft.wiki/images/thumb/Block_of_Amethyst_JE3_BE1.png/150px-Block_of_Amethyst_JE3_BE1.png?14501)](https://minecraft.wiki/w/Block_of_Amethyst) | [![](https://minecraft.wiki/images/thumb/Block_of_Amethyst_JE3_BE1.png/150px-Block_of_Amethyst_JE3_BE1.png?14501)](https://minecraft.wiki/w/Block_of_Amethyst) | [![](https://minecraft.wiki/images/thumb/Block_of_Amethyst_JE3_BE1.png/150px-Block_of_Amethyst_JE3_BE1.png?14501)](https://minecraft.wiki/w/Block_of_Amethyst) |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [![](https://minecraft.wiki/images/thumb/Block_of_Amethyst_JE3_BE1.png/150px-Block_of_Amethyst_JE3_BE1.png?14501)](https://minecraft.wiki/w/Block_of_Amethyst) | [![](https://github.com/ItsMePok/PFE/assets/136857747/38584129-72d6-42b8-a69b-cd3b461025e8)](https://pfewiki.gitbook.io/home/items/cores/upgrade-core)         | [![](https://minecraft.wiki/images/thumb/Block_of_Amethyst_JE3_BE1.png/150px-Block_of_Amethyst_JE3_BE1.png?14501)](https://minecraft.wiki/w/Block_of_Amethyst) |
+| [![](https://minecraft.wiki/images/thumb/Block_of_Amethyst_JE3_BE1.png/150px-Block_of_Amethyst_JE3_BE1.png?14501)](https://minecraft.wiki/w/Block_of_Amethyst) | [![](https://minecraft.wiki/images/Netherite_Boots_\(item\)_JE1.png?a161f)](https://minecraft.wiki/w/Netherite_Boots)                                          | [![](https://minecraft.wiki/images/thumb/Block_of_Amethyst_JE3_BE1.png/150px-Block_of_Amethyst_JE3_BE1.png?14501)](https://minecraft.wiki/w/Block_of_Amethyst) |

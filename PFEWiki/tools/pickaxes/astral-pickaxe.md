@@ -2,7 +2,7 @@
 
 <figure><img src="https://github.com/user-attachments/assets/e5f27edf-429f-4fe7-a11e-34e498e0bb8b" alt=""><figcaption></figcaption></figure>
 
-## Identifier: **poke:astral\_pickaxe** <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:astral\_pickaxe** <a href="#identifier" id="identifier"></a>
 
 ## Basic info:
 
@@ -15,6 +15,10 @@
 ### Enchant Type: Pickaxe <a href="#enchant-type" id="enchant-type"></a>
 
 ### Mining Speed: 25 <a href="#mining-speed" id="mining-speed"></a>
+
+### <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 1
+
+### <img src="https://minecraft.wiki/images/Red_Dye_JE3_BE3.png?fbdd1" alt="" data-size="line">[Dyeable](https://minecraft.wiki/w/Dye#Dyeing_armor): Yes
 
 ### Repair Items: <a href="#repair" id="repair"></a>
 

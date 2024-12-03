@@ -4,7 +4,7 @@
 
 <figure><img src="https://github.com/user-attachments/assets/9fbada47-b090-4b56-a50c-9e83343b2c3e" alt=""><figcaption></figcaption></figure>
 
-## Identifier: **poke:onyx\_pickaxe** <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:onyx\_pickaxe** <a href="#identifier" id="identifier"></a>
 
 ## Basic info:
 
@@ -17,6 +17,10 @@
 ### Enchant Type: Pickaxe <a href="#enchant-type" id="enchant-type"></a>
 
 ### Mining Speed: 7 <a href="#mining-speed" id="mining-speed"></a>
+
+### <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 1
+
+### <img src="https://minecraft.wiki/images/Red_Dye_JE3_BE3.png?fbdd1" alt="" data-size="line">[Dyeable](https://minecraft.wiki/w/Dye#Dyeing_armor): Yes
 
 ### Repair Items: <a href="#repair" id="repair"></a>
 
@@ -37,8 +41,8 @@
 |                                                                                                |                                                                                                |                                                                                                |
 | :--------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------: |
 | ![Onyx Ingot](https://github.com/user-attachments/assets/637c75db-659f-4e80-b8a0-1454c23727b6) | ![Onyx Ingot](https://github.com/user-attachments/assets/637c75db-659f-4e80-b8a0-1454c23727b6) | ![Onyx Ingot](https://github.com/user-attachments/assets/637c75db-659f-4e80-b8a0-1454c23727b6) |
-|                                                                                                |                ![Stick](https://minecraft.wiki/images/Stick\_JE1\_BE1.png?1fc15)               |                                                                                                |
-|                                                                                                |                ![Stick](https://minecraft.wiki/images/Stick\_JE1\_BE1.png?1fc15)               |                                                                                                |
+|                                                                                                |                 ![Stick](https://minecraft.wiki/images/Stick_JE1_BE1.png?1fc15)                |                                                                                                |
+|                                                                                                |                 ![Stick](https://minecraft.wiki/images/Stick_JE1_BE1.png?1fc15)                |                                                                                                |
 
 Items:
 

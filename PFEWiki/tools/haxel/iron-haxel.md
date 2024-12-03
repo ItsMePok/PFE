@@ -1,8 +1,8 @@
 # Iron Haxel
 
-![poke\_iron\_haxel](https://github.com/ItsMePok/PFE/assets/136857747/a77121b0-b01f-4fee-8022-bdde925d3c38)
+![](https://github.com/ItsMePok/PFE/assets/136857747/a77121b0-b01f-4fee-8022-bdde925d3c38)
 
-Identifier: **poke:iron\_haxel**
+## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:iron\_haxel**
 
 Durability: **256**
 

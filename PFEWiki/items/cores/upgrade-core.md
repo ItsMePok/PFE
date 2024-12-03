@@ -1,6 +1,6 @@
 # Upgrade Core
 
-![poke\_upgrade\_core](https://github.com/ItsMePok/PFE/assets/136857747/38584129-72d6-42b8-a69b-cd3b461025e8)
+![](https://github.com/ItsMePok/PFE/assets/136857747/38584129-72d6-42b8-a69b-cd3b461025e8)
 
 Identifier: **poke:upgrade\_core**
 

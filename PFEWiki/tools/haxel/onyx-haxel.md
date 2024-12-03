@@ -1,8 +1,8 @@
 # Onyx Haxel
 
-![poke\_onyx\_haxel](https://github.com/ItsMePok/PFE/assets/136857747/7455cbaa-9d81-40de-a9aa-d0d5f3a8f9dd)
+![](https://github.com/ItsMePok/PFE/assets/136857747/7455cbaa-9d81-40de-a9aa-d0d5f3a8f9dd)
 
-Identifier: **poke:haxel**
+## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:haxel**
 
 Durability: **5250**
 

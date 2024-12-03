@@ -1,8 +1,8 @@
 # Banished Star x5
 
-![poke\_banished\_star\_x5](https://github.com/ItsMePok/PFE/assets/136857747/9086e115-5294-4526-8dff-b4b36cb51c1c)
+![](https://github.com/ItsMePok/PFE/assets/136857747/9086e115-5294-4526-8dff-b4b36cb51c1c)
 
-Identifier: **poke:banished\_star\_x5**
+## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:banished\_star\_x5** <a href="#identifier" id="identifier"></a>
 
 ## Usage:
 

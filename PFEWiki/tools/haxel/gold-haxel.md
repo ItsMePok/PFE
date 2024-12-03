@@ -1,8 +1,8 @@
 # Gold Haxel
 
-![poke\_gold\_haxel](https://github.com/ItsMePok/PFE/assets/136857747/baac8c3d-0898-4274-a85f-071d9af3529b)
+![](https://github.com/ItsMePok/PFE/assets/136857747/baac8c3d-0898-4274-a85f-071d9af3529b)
 
-Identifier: **poke:gold\_haxel**
+## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:gold\_haxel**
 
 Durability: **512**
 

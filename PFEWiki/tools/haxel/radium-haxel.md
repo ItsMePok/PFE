@@ -1,8 +1,8 @@
 # Radium Haxel
 
-![poke\_radium\_haxel](https://github.com/ItsMePok/PFE/assets/136857747/1d19d0a5-ec3a-416f-bf83-9b24005a1e65)
+![](https://github.com/ItsMePok/PFE/assets/136857747/1d19d0a5-ec3a-416f-bf83-9b24005a1e65)
 
-Identifier: **poke:radium\_haxel**
+## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:radium\_haxel**
 
 Durability: **3000**
 

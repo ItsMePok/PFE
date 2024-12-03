@@ -1,6 +1,6 @@
 # Holy Arrow
 
-![poke\_holy\_arrow](https://github.com/ItsMePok/PFE/assets/136857747/26e6bfb8-056e-4cf1-81bb-9d3a32cd4a58)
+![](https://github.com/ItsMePok/PFE/assets/136857747/26e6bfb8-056e-4cf1-81bb-9d3a32cd4a58)
 
 Item Identifier: **poke:holy\_arrow**
 
@@ -14,12 +14,12 @@ Effects:
 
 Can be shot by:
 
-* All PFE [Crossbows](https://github.com/ItsMePok/PFE/wiki/Weapons#crossbows)
+* All PFE Crossbows
 * All PFE Burstbows
 
 ## Obtaining:
 
-* Crafted with 8 Arrows & 1 [Holy Nugget](https://github.com/ItsMePok/PFE/wiki/Holy-Nugget)
+* Crafted with 8 Arrows & 1 Holy Nugget
 
 ## Notes:
 

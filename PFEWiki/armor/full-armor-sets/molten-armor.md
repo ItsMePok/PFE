@@ -1,6 +1,6 @@
 # Molten Armor
 
-Set Effects:
+### <img src="https://github.com/user-attachments/assets/53329be8-f7e5-4c01-b7e4-a27b567c7998" alt="" data-size="line"> Set Effects:
 
 * Strength 2
 * Regeneration 3

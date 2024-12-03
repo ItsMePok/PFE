@@ -1,8 +1,8 @@
 # Death Haxel
 
-![poke\_death\_haxel](https://github.com/ItsMePok/PFE/assets/136857747/a99316e2-741f-4578-8618-d863cb63f21e)
+![](https://github.com/ItsMePok/PFE/assets/136857747/a99316e2-741f-4578-8618-d863cb63f21e)
 
-Identifier: **poke:death\_haxel**
+## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:death\_haxel**
 
 Durability: **5280**
 

@@ -1,0 +1,99 @@
+# Emojis
+
+{% hint style="warning" %}
+**↓ Ignore this if you did not modify PFE prior to importing ↓**
+
+This page assumes that you did not remove the glyphF0 file (see: [vanilla-files-modified.md](vanilla-files-modified.md "mention"))
+
+***
+{% endhint %}
+
+e
+
+{% hint style="info" %}
+The Unicode character can be copy/pasted into Minecraft for that emoji to show up
+
+More info about emojis can be found here: [https://wiki.bedrock.dev/concepts/emojis.html](https://wiki.bedrock.dev/concepts/emojis.html#app)
+{% endhint %}
+
+| Name                                                          | Icon                                                                                                                                       | Unicode Character | Hex    |
+| ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ----------------- | ------ |
+| Ban Hammer                                                    | <img src="https://github.com/user-attachments/assets/9d9cce25-0d83-4086-9e74-0f97c52190d4" alt="Ban Hammer" data-size="line">              |                  | 0xf000 |
+| Nebula Battleaxe                                              |                                                                                                                                            |                  | 0xf001 |
+| [Banished Star ](../items/banished-stars/banished-star.md)    |                                                                                                                                            |                  | 0xf002 |
+| [Floppy Disk](../items/boss-drops/floppy-disk.md)             | <img src="https://github.com/ItsMePok/PFE/assets/136857747/e9d33ff5-9520-4b5d-99f6-33a9906ee64b" alt="" data-size="line">                  |                  | 0xf003 |
+| Listener                                                      |                                                                                                                                            |                  | 0xf004 |
+| Necromancer Spawn Egg                                         |                                                                                                                                            |                  | 0xf005 |
+| Cassette - 5                                                  |                                                                                                                                            |                  | 0xf006 |
+| Crown                                                         |                                                                                                                                            |                  | 0xf007 |
+| Magnet                                                        |                                                                                                                                            |                  | 0xf008 |
+| Necromancer                                                   |                                                                                                                                            |                  | 0xf009 |
+| Hot Coco                                                      |                                                                                                                                            |                  | 0xf00a |
+| Panic Button                                                  |                                                                                                                                            |                  | 0xf00b |
+| [Receiver](../items/crafting-components/receiver.md)          | <img src="https://github.com/user-attachments/assets/d5e4412f-b092-413f-99d9-a9e09033cd29" alt="" data-size="line">                        |                  | 0xf00c |
+| [Speed Boots](../armor/speed-boots.md)                        | <img src="https://github.com/ItsMePok/PFE/assets/136857747/131bce4c-1f58-45d7-94eb-c7965e300f17" alt="" data-size="line">                  |                  | 0xf00d |
+| [Knightling Helmet](../armor/knightling-helmet.md)            | <img src="https://github.com/ItsMePok/PFE/assets/136857747/e0957c68-25ab-47ac-b92d-d8f3d6ef0a85" alt="Knightling Helmet" data-size="line"> |                  | 0xf00e |
+| [Nebula ingot](../items/ingots/nebula-ingot.md)               | <img src="https://github.com/user-attachments/assets/21b0e1ab-de86-4f43-8618-453683820f4b" alt="" data-size="line">                        |                  | 0xf00f |
+| $1                                                            |                                                                                                                                            |                  | 0xf010 |
+| $5                                                            |                                                                                                                                            |                  | 0xf011 |
+| $10                                                           |                                                                                                                                            |                  | 0xf012 |
+| $20                                                           |                                                                                                                                            |                  | 0xf013 |
+| $50                                                           |                                                                                                                                            |                  | 0xf014 |
+| $100                                                          |                                                                                                                                            |                  | 0xf015 |
+| $500                                                          |                                                                                                                                            |                  | 0xf016 |
+| Zombken                                                       | <img src="https://github.com/user-attachments/assets/6d5e0b3a-d887-4827-bcf3-ea47911a95b1" alt="" data-size="line">                        |                  | 0xf017 |
+| Demonic Allay                                                 | <img src="https://github.com/user-attachments/assets/20dc2cb0-8d87-4157-8db3-bae28ef15b64" alt="" data-size="line">                        |                  | 0xf018 |
+| Grizzly Bear                                                  | <img src="https://github.com/user-attachments/assets/1cf87e82-4c31-4713-ad68-7360fde40def" alt="" data-size="line">                        |                  | 0xf019 |
+| Furnace Golem                                                 | <img src="https://github.com/user-attachments/assets/f1651577-a289-4d58-aed9-e402f0f202d1" alt="" data-size="line">                        |                  | 0xf01a |
+| Red Panda                                                     | <img src="https://github.com/user-attachments/assets/d8bd515a-aed1-4c8c-8141-c081cba6dc64" alt="" data-size="line">                        |                  | 0xf01b |
+| [Copper Token](../items/tokens/copper-token.md)               | <img src="https://github.com/ItsMePok/PFE/assets/136857747/1c78ba2a-4a5b-4b7b-83ff-ed21aa75ebd8" alt="" data-size="line">                  |                  | 0xf01c |
+| $1 (Old)                                                      |                                                                                                                                            |                  | 0xf01d |
+| Apollo the Snake                                              | <img src="https://github.com/user-attachments/assets/3d12db84-a7f5-40a4-99be-4659a23bc287" alt="" data-size="line">                        |                  | 0xf01e |
+| Listener - :3                                                 | <img src="https://github.com/user-attachments/assets/26b9f589-deaa-4abe-9f10-67df02e6aa1d" alt="" data-size="line">                        |                  | 0xf01f |
+| Info                                                          | <img src="https://github.com/user-attachments/assets/b8d42881-26e5-4398-93ed-aae49ad4d312" alt="" data-size="line">                        |                  | 0xf020 |
+| [Prismarine Shard](https://minecraft.wiki/w/Prismarine_Shard) | <img src="https://minecraft.wiki/images/Prismarine_Shard_JE2_BE2.png?ef03b" alt="" data-size="line">                                       |                  | 0xf021 |
+| Raccoon                                                       | <img src="https://github.com/user-attachments/assets/6b2ba129-7ce5-4131-891a-9a8c124bb7d8" alt="" data-size="line">                        |                  | 0xf022 |
+| [Scrapper](../mobs/traders/scrapper.md)                       | <img src="https://github.com/user-attachments/assets/67ed9674-d15b-4ee5-9757-22c486b17bf1" alt="" data-size="line">                        |                  | 0xf023 |
+| [Cosmetic Trader](../mobs/traders/cosmetic-trader.md)         | <img src="https://github.com/user-attachments/assets/0856c7e2-92d2-4860-9abd-b9fe8171266b" alt="" data-size="line">                        |                  | 0xf024 |
+| [Money Man](../mobs/traders/money-man.md)                     | <img src="https://github.com/user-attachments/assets/b8730220-4755-4ead-a51c-da527ff5f245" alt="" data-size="line">                        |                  | 0xf025 |
+| Danger                                                        | <img src="https://github.com/user-attachments/assets/ed1f8986-3b2c-426b-b254-a93c49325041" alt="" data-size="line">                        |                  | 0xf026 |
+| [Upgrade Core](../items/cores/upgrade-core.md)                | <img src="https://github.com/ItsMePok/PFE/assets/136857747/38584129-72d6-42b8-a69b-cd3b461025e8" alt="" data-size="line">                  |                  | 0xf027 |
+| [Repair Core](../items/cores/repair-core.md)                  | <img src="https://github.com/ItsMePok/PFE/assets/136857747/f15d8501-f297-4a77-b6de-3681297cdb09" alt="" data-size="line">                  |                  | 0xf028 |
+| Sundial                                                       | <img src="https://github.com/user-attachments/assets/c239d81f-8290-4661-a140-45ada10d53de" alt="" data-size="line">                        |                  | 0xf029 |
+| Cassette - 11                                                 | <img src="https://github.com/user-attachments/assets/2899fc15-710e-4530-a3f3-17b87699a2a6" alt="" data-size="line">                        |                  | 0xf02a |
+| Cassette - Cat                                                | <img src="https://github.com/user-attachments/assets/34b07696-af86-4a48-bf19-a97ab0dc4516" alt="" data-size="line">                        |                  | 0xf02b |
+| [Holy Haxel](../tools/haxel/holy-haxel.md)                    | <img src="https://github.com/ItsMePok/PFE/assets/136857747/f94c8a21-7abe-4e4b-bc19-e67eb957f71c" alt="" data-size="line">                  |                  | 0xf02c |
+| [Hellish Haxel](../tools/haxel/hellish-haxel.md)              | <img src="https://github.com/ItsMePok/PFE/assets/136857747/39d40020-af9d-487b-9d77-b7e199a85362" alt="" data-size="line">                  |                  | 0xf02d |
+| Piranha                                                       | <img src="https://github.com/user-attachments/assets/5afd9bb2-e783-47b6-8f53-ae803a215542" alt="" data-size="line">                        |                  | 0xf02e |
+| Sculk Enderman                                                | <img src="https://github.com/user-attachments/assets/af6ad833-936f-41e8-8950-626e8c20261e" alt="" data-size="line">                        |                  | 0xf02f |
+| Warped Sporeshroom                                            | <img src="https://github.com/user-attachments/assets/92b2910f-e79f-4da6-a9eb-b99341d94444" alt="" data-size="line">                        |                  | 0xf030 |
+| Crimson Sporeshroom                                           | <img src="https://github.com/user-attachments/assets/18e7eb1b-3c6f-4959-8cf9-c0bca1ba08c8" alt="" data-size="line">                        |                  | 0xf031 |
+| Woodspike Guardian                                            | <img src="https://github.com/user-attachments/assets/7050fe43-68c1-4e6d-9b7c-e647287c029f" alt="" data-size="line">                        |                  | 0xf032 |
+| Orange Squid                                                  | <img src="https://github.com/user-attachments/assets/9626ecf6-7ccf-49dd-a5c0-ca97e4ca2383" alt="" data-size="line">                        |                  | 0xf033 |
+| Pink Squid                                                    | <img src="https://github.com/user-attachments/assets/cf5d51fd-791c-444f-a001-31851b5985f3" alt="" data-size="line">                        |                  | 0xf034 |
+| End Phantom                                                   | <img src="https://github.com/user-attachments/assets/2fbf122b-3f93-467e-95a6-78db6eaa7ca4" alt="" data-size="line">                        |                  | 0xf035 |
+| Gilded Allay                                                  | <img src="https://github.com/user-attachments/assets/622e6b0a-d124-4a2d-bbe8-5c435c69e19f" alt="" data-size="line">                        |                  | 0xf036 |
+| Duck                                                          | <img src="https://github.com/user-attachments/assets/9da7c109-02b1-4f17-a936-588bc22343d2" alt="" data-size="line">                        |                  | 0xf037 |
+| Sporefin                                                      | <img src="https://github.com/user-attachments/assets/a910191a-9013-4284-800e-9edf0a014fef" alt="" data-size="line">                        |                  | 0xf038 |
+| Woods Goat                                                    | <img src="https://github.com/user-attachments/assets/f333f8ac-062d-4ccb-b962-1aa5e594b96c" alt="" data-size="line">                        |                  | 0xf039 |
+| Windswept Bear                                                | <img src="https://github.com/user-attachments/assets/3c11129f-afe5-47b0-93bd-15dd3cfdc021" alt="" data-size="line">                        |                  | 0xf03a |
+| Nebula Bug                                                    | <img src="https://github.com/user-attachments/assets/67865697-1f10-48c2-a6fa-f8f0709bea94" alt="" data-size="line">                        |                  | 0xf03b |
+| Sparky                                                        | <img src="https://github.com/user-attachments/assets/4f0f486f-3fc3-4bbf-a1c6-3535293ad58d" alt="" data-size="line">                        |                  | 0xf03c |
+| Cobalt Golem                                                  | <img src="https://github.com/user-attachments/assets/f28c4097-c993-4396-b98e-615eddc837c5" alt="" data-size="line">                        |                  | 0xf03d |
+| Mushroom Buddy                                                | <img src="https://github.com/user-attachments/assets/12e1e85c-c52f-4bad-a271-8da7520d749e" alt="" data-size="line">                        |                  | 0xf03e |
+| Bone Bear                                                     | <img src="https://github.com/user-attachments/assets/776c6c75-03a5-4d40-a598-9273ee9c7e22" alt="" data-size="line">                        |                  | 0xf03f |
+| Sporecats                                                     | <img src="https://github.com/user-attachments/assets/15ba3571-0d2f-4161-ab74-d551529a8cc2" alt="" data-size="line">                        |                  | 0xf040 |
+| Pale Ocelot                                                   | <img src="https://github.com/user-attachments/assets/b14a65ed-70d5-42c1-ac91-19f03d1b8380" alt="" data-size="line">                        |                  | 0xf041 |
+| Yak                                                           | <img src="https://github.com/user-attachments/assets/913cafd7-a0da-4811-a952-b59008e739ea" alt="" data-size="line">                        |                  | 0xf042 |
+| Sporefish                                                     | <img src="https://github.com/user-attachments/assets/0fdbd375-430c-466c-8eb8-4b955a57521d" alt="" data-size="line">                        |                  | 0xf043 |
+| Red Sporefish                                                 | <img src="https://github.com/user-attachments/assets/b443b25c-5d39-4fe7-8b81-3c17efc9f854" alt="" data-size="line">                        |                  | 0xf044 |
+| Brown Sporefish                                               | <img src="https://github.com/user-attachments/assets/ece25b7a-a6d2-489a-b305-a6531dda0e58" alt="" data-size="line">                        |                  | 0xf045 |
+| Shallow Cod                                                   | <img src="https://github.com/user-attachments/assets/b600adca-7602-4a5f-bee8-0b2d4ed373ec" alt="" data-size="line">                        |                  | 0xf046 |
+| [Quest Trader](../mobs/traders/quest-trader.md)               | <img src="https://github.com/user-attachments/assets/d0a43b43-6674-49e0-a044-aae613584891" alt="" data-size="line">                        |                  | 0xf047 |
+| Snowman                                                       | <img src="https://github.com/user-attachments/assets/d60b5c1b-df1a-4cc9-8db6-4e91b18d22f3" alt="" data-size="line">                        |                  | 0xf048 |
+| Striker                                                       | <img src="https://github.com/user-attachments/assets/dd6ddd88-a93f-4fd0-af0e-c56320652923" alt="" data-size="line">                        |                  | 0xf049 |
+| Rat                                                           | <img src="https://github.com/user-attachments/assets/a9c0bd82-46ac-4cca-8164-5fd90f9602b8" alt="" data-size="line">                        |                  | 0xf04a |
+| The Logger                                                    | <img src="https://github.com/user-attachments/assets/f6faa954-9386-48c6-94e1-2adcdd984d5b" alt="" data-size="line">                        |                  | 0xf04b |
+| [Soul Blaze](../mobs/hostile-mobs/soul-blaze.md)              | <img src="https://github.com/user-attachments/assets/006c02eb-0cef-4288-a074-ad3a1771f1d7" alt="" data-size="line">                        |                  | 0xf04c |
+| [Cassette Trader](../mobs/traders/cassette-trader.md)         | <h3><img src="https://github.com/user-attachments/assets/de1365f6-2eac-498b-98d7-e391fb69cc00" alt="" data-size="line"></h3>               |                  | 0xf04d |
+| Retro Llama                                                   |                                                                                                                                            |                  | 0xf04e |

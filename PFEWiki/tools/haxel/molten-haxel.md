@@ -1,8 +1,8 @@
 # Molten Haxel
 
-![poke\_molten\_haxel](https://github.com/ItsMePok/PFE/assets/136857747/17a1b8b9-1141-41a3-b537-a3e89edbcfca)
+![](https://github.com/ItsMePok/PFE/assets/136857747/17a1b8b9-1141-41a3-b537-a3e89edbcfca)
 
-Identifier: **poke:molten\_haxel**
+## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:molten\_haxel**
 
 Durability: **4750**
 

@@ -1,8 +1,8 @@
 # Emerald Haxel
 
-![poke\_emerald\_haxel](https://github.com/ItsMePok/PFE/assets/136857747/750a12ac-316b-4488-a71f-ffb504913f24)
+![](https://github.com/ItsMePok/PFE/assets/136857747/750a12ac-316b-4488-a71f-ffb504913f24)
 
-Identifier: **poke:emerald\_haxel**
+## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:emerald\_haxel**
 
 Durability: **1024**
 

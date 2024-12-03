@@ -1,8 +1,8 @@
 # Galaxy Haxel
 
-![poke\_galaxy\_haxel](https://github.com/ItsMePok/PFE/assets/136857747/cdc5cdbf-41ed-424b-959b-f6fce9bccdc3)
+![](https://github.com/ItsMePok/PFE/assets/136857747/cdc5cdbf-41ed-424b-959b-f6fce9bccdc3)
 
-Identifier: **poke:galaxy\_haxel**
+## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:galaxy\_haxel**
 
 Durability: **7000**
 

@@ -1,8 +1,8 @@
 # Astral Haxel
 
-![poke\_astral\_haxel](https://github.com/ItsMePok/PFE/assets/136857747/9f762b71-0d74-4490-a052-0084b1a32a70)
+![](https://github.com/ItsMePok/PFE/assets/136857747/9f762b71-0d74-4490-a052-0084b1a32a70)
 
-Identifier: **poke:astral\_haxel**
+## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:astral\_haxel**
 
 Durability: **7000**
 

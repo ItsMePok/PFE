@@ -2,7 +2,7 @@
 
 <figure><img src="https://github.com/ItsMePok/PFE/assets/136857747/f15d8501-f297-4a77-b6de-3681297cdb09" alt=""><figcaption></figcaption></figure>
 
-## identifier: **poke:repair\_core** <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:repair\_core** <a href="#identifier" id="identifier"></a>
 
 ## Usage:
 
@@ -37,3 +37,5 @@
 <table><thead><tr><th>Wants</th><th data-type="number">Amount</th><th>Gives</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><a href="../banished-stars/banished-star-x3.md"><img src="https://github.com/ItsMePok/PFE/assets/136857747/1174ceba-b39a-420f-bc70-6d78bcbe5951" alt="" data-size="line">Banished Star x3</a></td><td>1</td><td><img src="https://github.com/ItsMePok/PFE/assets/136857747/f15d8501-f297-4a77-b6de-3681297cdb09" alt="" data-size="line">Repair Core</td><td>1</td></tr></tbody></table>
 {% endtab %}
 {% endtabs %}
+
+.

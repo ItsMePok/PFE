@@ -2,7 +2,7 @@
 
 ## Why Are the Automation Blocks not working?
 
-* Try Powering them with Redstone, The Block itself needs to be [Strong Powered](https://minecraft.wiki/w/Redstone\_mechanics#Strongly\_powered\_vs.\_weakly\_powered). the simplest solution is powering it with a lever
+* Try Powering them with Redstone, The Block itself needs to be [Strong Powered](https://minecraft.wiki/w/Redstone_mechanics#Strongly_powered_vs._weakly_powered). a solution is powering it with a lever
 * Make Sure PFE & Minecraft are up to date
 * Try Breaking and Replacing them
 
@@ -22,14 +22,15 @@ More info on how the different automation blocks work can be found [Here](blocks
 
 ## Where do I find the Traders?
 
-* Most of them can be crafted in the <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="Crafting Table" data-size="line">[Crafting Table](https://minecraft.wiki/w/Crafting\_Table)
+* Most of them can be crafted in the <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="Crafting Table" data-size="line">[Crafting Table](https://minecraft.wiki/w/Crafting_Table)
 * A few can only be acquired from the [Token Trader](mobs/traders/token-trader.md)
+* [Cassette Trader](mobs/traders/cassette-trader.md) will spawn randomly
 
 ***
 
 ## An Update had changes to a Trader, but those trades are not there?
 
-* If a trade is updated in an update you will need to re-place the trader (currently all PFE traders will drop a spawn egg on death)
+* If a trade is updated in an update you will need to re-place the trader (PFE traders will drop a spawn egg on death (excluding the cassette trader))
 
 ***
 

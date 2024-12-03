@@ -1,8 +1,8 @@
 # Netherite Haxel
 
-![poke\_netherite\_haxel](https://github.com/ItsMePok/PFE/assets/136857747/9730d9d1-bbdf-4495-aaf3-79d7c931af3e)
+![](https://github.com/ItsMePok/PFE/assets/136857747/9730d9d1-bbdf-4495-aaf3-79d7c931af3e)
 
-Identifier: **poke:netherite\_haxel**
+## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:netherite\_haxel**
 
 Durability: **4096**
 

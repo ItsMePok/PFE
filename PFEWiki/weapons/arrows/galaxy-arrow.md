@@ -1,6 +1,6 @@
 # Galaxy Arrow
 
-![poke\_galaxy\_arrow](https://github.com/ItsMePok/PFE/assets/136857747/df8e95d2-c1e2-44fe-a1bb-6b1dd5ff2304)
+![](https://github.com/ItsMePok/PFE/assets/136857747/df8e95d2-c1e2-44fe-a1bb-6b1dd5ff2304)
 
 Item Identifier: **poke:galaxy\_arrow**
 
@@ -19,7 +19,7 @@ Can be shot by:
 
 ## Obtaining:
 
-* Crafted with 8 Arrows & 1 [Galaxy Nugget](https://pfewiki.gitbook.io/home/items/nuggets/galaxy-nugget)
+* Crafted with 8 Arrows & 1 Galaxy Nugget
 
 ## Notes:
 
