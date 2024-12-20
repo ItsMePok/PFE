@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.poke.carved_melon_helmet",
+				"identifier": "geometry.poke_pfe.carved_melon_helmet",
 				"texture_width": 48,
 				"texture_height": 16,
 				"visible_bounds_width": 2,

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:chiseled_limestone",
@@ -33,7 +33,7 @@
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 30
 			},
-			"minecraft:geometry": "geometry.poke.chiseled_limestone",
+			"minecraft:geometry": "geometry.poke_pfe.chiseled_limestone",
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "poke_chiseled_limestone",

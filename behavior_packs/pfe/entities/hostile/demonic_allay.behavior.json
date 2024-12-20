@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:demonic_allay",
@@ -26,7 +26,7 @@
 				]
 			},
 			"minecraft:equipment": {
-				"table": "loot_tables/poke/entities/demonic_allay.json"
+				"table": "loot_tables/poke/pfe/demonic_allay.json"
 			},
 			"minecraft:health": {
 				"value": 8,

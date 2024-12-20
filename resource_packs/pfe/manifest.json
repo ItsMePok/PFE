@@ -1,10 +1,11 @@
 {
 	"header": {
-		"name": "§uPFE §6Spook §fLTU (2024) §aRP§r",
+		"name": "§3v1.2.4.H §uPFE §aRP§r",
 		"description": "pack.description",
-		"uuid": "b37db46a-2a24-474b-a6db-0712ff65a3bf",
-		"version": [1, 0, 0],
-		"min_engine_version": [1, 21, 40]
+		"pack_scope": "any",
+		"uuid": "13fd1467-9041-4db3-a1b8-d10b3114989e",
+		"version": [1, 2, 41],
+		"min_engine_version": [1, 21, 50]
 	},
 	"modules": [
 		{
@@ -14,8 +15,16 @@
 			"version": [1, 0, 0]
 		}
 	],
+	"dependencies": [
+		{ //BP Manifest
+			"uuid": "c4c03f37-bf68-41e6-8225-d7f2c58e5dd9",
+			"version": [1, 2, 41]
+		}
+	],
 	"format_version": 2,
 	"metadata": {
+		"url": "https://github.com/ItsMePok/PFE",
+		"product_type": "addon",
 		"authors": ["ItsMePok"],
 		"generated_with": {
 			"blockbench_block_wizard": ["1.2.1"],

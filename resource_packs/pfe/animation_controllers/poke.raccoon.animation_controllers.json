@@ -1,7 +1,7 @@
 {
 	"format_version": "1.19.0",
 	"animation_controllers": {
-		"controller.animation.poke.raccoon.movement": {
+		"controller.animation.poke_pfe.raccoon.movement": {
 			"initial_state": "idle",
 			"states": {
 				"idle": {
@@ -28,7 +28,7 @@
 				}
 			}
 		},
-		"controller.animation.poke.raccoon.sitting" : {
+		"controller.animation.poke_pfe.raccoon.sitting" : {
 			"initial_state" : "idle",
 			"states" : {
 				"idle" : {

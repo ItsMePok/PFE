@@ -12,11 +12,11 @@
 				"default": "textures/entity/hostile/poke_soul_blaze"
 			},
 			"geometry": {
-				"default": "geometry.poke.soul_blaze"
+				"default": "geometry.poke_pfe.soul_blaze"
 			},
 			"animations": {
 				"look_at_target": "animation.common.look_at_target",
-				"move": "animation.poke.soul_blaze.move",
+				"move": "animation.poke_pfe.soul_blaze.move",
 				"flame": "controller.animation.blaze.flame",
 				"move_controller": "controller.animation.blaze.move"
 			},

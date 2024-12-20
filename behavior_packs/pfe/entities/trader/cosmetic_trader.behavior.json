@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:cosmetic_trader",
@@ -9,13 +9,13 @@
 		},
 		"components": {
 			"minecraft:type_family": {"family": ["poke:traders","mob"]},
-			"minecraft:loot": {"table": "loot_tables/poke/entities/cosmetic_trader.json"},
+			"minecraft:loot": {"table": "loot_tables/poke/pfe/cosmetic_trader.json"},
 			"minecraft:health": {"value": 20},
 			"minecraft:collision_box": {"width": 0.6,"height": 1.9},
 			"minecraft:movement": {"value": 0.0},
 			"minecraft:behavior.float": {"priority": 0},
 			"minecraft:behavior.trade_with_player": {"priority": 2},
-			"minecraft:economy_trade_table": {"display_name": "Cosmetic Trader","table": "trading/economy_trades/poke_cosmetic_trader.json","new_screen": true,"hero_demand_discount": 0,"persist_trades": false,"cured_discount": [0,0],"convert_trades_economy": false,"use_legacy_price_formula": true},
+			"minecraft:economy_trade_table": {"display_name": "Cosmetic Trader","table": "trading/economy_trades/poke/pfe/cosmetic_trader.json","new_screen": true,"hero_demand_discount": 0,"persist_trades": false,"cured_discount": [0,0],"convert_trades_economy": false,"use_legacy_price_formula": true},
 			"minecraft:behavior.look_at_trading_player": {"priority": 2},
 			"minecraft:behavior.look_at_player": {"priority": 8,"look_distance": 8,"probability": 0.02},
 			"minecraft:physics": {},
@@ -65,7 +65,7 @@
 					{"item":"poke:miner_helmet"},
 					{"item":"poke:night_vision_goggles"}
 				],
-				"singular_pickup": false
+				"singular_pickup": true
 			},
 			"minecraft:behavior.pickup_items": {
 				"priority": 1,

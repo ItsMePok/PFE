@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.20",
+  "minecraft:structure_set": {
+    "description": {
+      "identifier": "poke:limestone_village"
+    },
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 10865283,
+      "separation": 8,
+      "spacing": 34,
+      "spread_type": "linear"
+    },
+    "structures": [
+      {
+        "structure": "poke:limestone_village",
+        "weight": 1
+      }
+    ]
+  }
+}

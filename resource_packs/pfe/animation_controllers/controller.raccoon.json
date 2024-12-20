@@ -1,7 +1,7 @@
 {
   "format_version": "1.10.0",
   "animation_controllers": {
-    "controller.animation.raccoon": {
+    "controller.animation.poke_pfe.raccoon": {
       "initial_state": "default",
       "states": {
         "default": {

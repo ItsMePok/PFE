@@ -102,6 +102,7 @@
 					"underground": 1,
 					"surface": 1
 				},
+				"minecraft:world_age_filter": {"min": 10368000},
 				"minecraft:spawns_on_block_filter":["minecraft:air"],
 				"minecraft:herd":{
 					"min_size": 1,

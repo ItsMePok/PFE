@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.poke.dragon.o2.flying": {
+		"animation.poke_pfe.dragon.o2.flying": {
 			"loop": true,
 			"animation_length": 0.6667,
 			"bones": {
@@ -171,7 +171,7 @@
 				}
 			}
 		},
-		"animation.poke.dragon.o2.tail_left": {
+		"animation.poke_pfe.dragon.o2.tail_left": {
 			"loop": "hold_on_last_frame",
 			"bones": {
 				"bone": {
@@ -194,7 +194,7 @@
 				}
 			}
 		},
-		"animation.poke.dragon.o2.tail_right": {
+		"animation.poke_pfe.dragon.o2.tail_right": {
 			"loop": true,
 			"bones": {
 				"bone": {
@@ -217,7 +217,7 @@
 				}
 			}
 		},
-		"animation.poke.dragon.o2.tail_default": {
+		"animation.poke_pfe.dragon.o2.tail_default": {
 			"loop": true,
 			"bones": {
 				"bone": {

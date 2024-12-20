@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:cobalt_golem",
@@ -209,7 +209,7 @@
 				]
 			},
 			"minecraft:loot": {
-				"table": "loot_tables/poke/entities/cobalt_golem.json"
+				"table": "loot_tables/poke/pfe/cobalt_golem.json"
 			},
 			"minecraft:breathable": {
 				"total_supply": 15,
@@ -302,7 +302,7 @@
 			"minecraft:entity_spawned": {
 				"queue_command": {
 					"command": [
-						"playanimation @s animation.poke.cobalt_golem.spawn"
+						"playanimation @s animation.poke_pfe.cobalt_golem.spawn"
 					]
 				},
 				"randomize": [

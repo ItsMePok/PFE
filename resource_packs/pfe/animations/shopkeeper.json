@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.shopkeeper.baby_transform": {
+		"animation.poke_pfe.shopkeeper.baby_transform": {
 			"loop": true,
 			"bones": {
 				"head": {
@@ -9,7 +9,7 @@
 				}
 			}
 		},
-		"animation.shopkeeper.general": {
+		"animation.poke_pfe.shopkeeper.general": {
 			"loop": true,
 			"bones": {
 				"arms": {
@@ -18,7 +18,7 @@
 				}
 			}
 		},
-		"animation.shopkeeper.general.v1.0": {
+		"animation.poke_pfe.shopkeeper.general.v1.0": {
 			"loop": true,
 			"bones": {
 				"arms": {
@@ -27,7 +27,7 @@
 				}
 			}
 		},
-		"animation.shopkeeper.get_in_bed": {
+		"animation.poke_pfe.shopkeeper.get_in_bed": {
 			"loop": true,
 			"bones": {
 				"body": {
@@ -36,7 +36,7 @@
 				}
 			}
 		},
-		"animation.shopkeeper.move": {
+		"animation.poke_pfe.shopkeeper.move": {
 			"anim_time_update": "query.modified_distance_moved",
 			"loop": true,
 			"bones": {
@@ -48,7 +48,7 @@
 				}
 			}
 		},
-		"animation.shopkeeper.raise_arms": {
+		"animation.poke_pfe.shopkeeper.raise_arms": {
 			"loop": true,
 			"bones": {
 				"arms": {
@@ -56,7 +56,7 @@
 				}
 			}
 		},
-		"animation.shopkeeper.idle": {
+		"animation.poke_pfe.shopkeeper.idle": {
 			"loop": true,
 			"animation_length": 3,
 			"bones": {

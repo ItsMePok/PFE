@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.poke.shroomfin",
+				"identifier": "geometry.poke_pfe.shroomfin",
 				"texture_width": 64,
 				"texture_height": 64,
 				"visible_bounds_width": 5,

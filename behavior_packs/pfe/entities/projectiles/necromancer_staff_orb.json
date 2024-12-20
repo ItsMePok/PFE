@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:necromancer_staff_orb",
@@ -36,7 +36,7 @@
 				"uncertainty_multiplier": 0,
 				"uncertainty_base": 0,
 				"stop_on_hurt": false,
-				"particle": "necromancer_orb",
+				//"particle": "poke:necromancer_orb",
 				"on_hit": {
 					"impact_damage": {"damage": 5},
 					"definition_event": {

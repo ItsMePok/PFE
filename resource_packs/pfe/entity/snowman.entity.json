@@ -10,9 +10,9 @@
 				"default":"textures/entity/bosses/poke_snowman"
 			},
 			"geometry":{
-				"default":"geometry.poke.snowman"
+				"default":"geometry.poke_pfe.snowman"
 			},
-			"render_controllers":["controller.render.poke.default"],
+			"render_controllers":["controller.render.poke_pfe.default"],
 			"spawn_egg":{
 				"base_color":"#e6fff5",
 				"overlay_color":"#272727"

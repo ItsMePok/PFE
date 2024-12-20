@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:miner_helmet",
@@ -36,7 +36,7 @@
 					},
 					{
 						"items": [
-							"minecraft:plastic"
+							"poke:plastic"
 						],
 						"repair_amount": "query.max_durability * 0.25"
 					}

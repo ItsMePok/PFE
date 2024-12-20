@@ -4,6 +4,9 @@
     "description": {
       "identifier": "minecraft:decorated_pot",
       "textures": {
+        "pfe-tree_pottery_sherd": "textures/blocks/pot/poke_tree",
+        "pfe-present_pottery_sherd": "textures/blocks/pot/poke_present",
+        "pfe-snowflake_pottery_sherd": "textures/blocks/pot/poke_snowflake",
         "pfe-knightling_pottery_sherd": "textures/blocks/pot/poke_knightling",
         "pfe-star_pottery_sherd": "textures/blocks/pot/poke_star",
         "pfe-cassette_pottery_sherd": "textures/blocks/pot/poke_cassette",

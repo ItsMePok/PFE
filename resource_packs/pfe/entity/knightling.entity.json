@@ -10,13 +10,13 @@
 				"default":"textures/entity/bosses/poke_knightling"
 			},
 			"geometry":{
-				"default":"geometry.poke.knightling"
+				"default":"geometry.poke_pfe.knightling"
 			},
 			"animations":{
-				"idle":"animation.poke.knightling.idle",
+				"idle":"animation.poke_pfe.knightling.idle",
 				"look_at_target":"animation.common.look_at_target",
-				"move":"animation.poke.knightling.walk",
-				"controller":"controller.animation.poke.knightling"
+				"move":"animation.poke_pfe.knightling.walk",
+				"controller":"controller.animation.poke_pfe.knightling"
 			},
 			"scripts":{
 				"animate":[
@@ -26,7 +26,7 @@
 			"sound_effects":{
 				"poke.knightling.bonk":"poke.knightling.bonk"
 			},
-			"render_controllers":["controller.render.poke.default"],
+			"render_controllers":["controller.render.poke_pfe.default"],
 			"spawn_egg":{
 				"texture":"poke_spawn_knightling"
 			}

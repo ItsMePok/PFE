@@ -1,6 +1,73 @@
 {
+	"block_sounds": {
+		"cobalt" : {
+         "events" : {
+            "break" : {
+               "pitch" : 0.80,
+               "sound" : "poke.battleaxe",
+               "volume" : 1.0
+            },
+            "default" : "",
+            "hit" : {
+               "pitch" : 0.50,
+               "sound" : "poke.battleaxe",
+               "volume" : 0.30
+            },
+            "item.use.on" : {
+               "pitch" : 0.80,
+               "sound" : "poke.battleaxe"
+            },
+            "place" : {
+               "pitch" : 0.80,
+               "sound" : "poke.battleaxe",
+               "volume" : 1.0
+            },
+            "power.off" : {
+               "pitch" : 0.50,
+               "sound" : "poke.battleaxe"
+            },
+            "power.on" : {
+               "pitch" : 0.60,
+               "sound" : "poke.battleaxe"
+            }
+         },
+         "pitch" : 1.0,
+         "volume" : 1.0
+      }
+	},
 	"entity_sounds": {
 		"entities": {
+			"poke:retro_llama": {
+				"events": {
+					"add.chest": {
+						"pitch": [0.8, 1.2],
+						"sound": "mob.horse.armor",
+						"volume": 1
+					},
+					"ambient": "mob.llama.idle",
+					"armor": {
+						"pitch": 1,
+						"sound": "mob.llama.swag",
+						"volume": 0.5
+					},
+					"death": "mob.llama.death",
+					"eat": {
+						"pitch": [0.8, 1.2],
+						"sound": "mob.llama.eat",
+						"volume": [0.5, 1.5]
+					},
+					"hurt": "mob.llama.hurt",
+					"mad": "mob.llama.angry",
+					"shoot": "mob.llama.spit",
+					"step": {
+						"pitch": 1,
+						"sound": "mob.llama.step",
+						"volume": 0.15
+					}
+				},
+				"pitch": [0.8, 1.2],
+				"volume": 0.8
+			},
 			"poke:soul_blaze": {
 				"events": {
 					"ambient": "mob.blaze.breathe",
@@ -591,19 +658,16 @@
 						"sound": "poke.boss.victory"
 					},
 					"hurt": {
-						"pitch": 1,
 						"sound": "poke.knightling.bonk",
 						"volume": 0.8
 					},
 					"irongolem.crack": "mob.irongolem.crack",
 					"irongolem.repair": "mob.irongolem.repair",
 					"step": {
-						"pitch": 1,
 						"sound": "mob.irongolem.walk",
 						"volume": 1
 					},
 					"throw": {
-						"pitch": 1,
 						"sound": "mob.irongolem.throw",
 						"volume": 1
 					}

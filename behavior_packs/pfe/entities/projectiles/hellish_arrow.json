@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:hellish_arrow",
@@ -60,9 +60,6 @@
 			"minecraft:pushable": {
 				"is_pushable": false,
 				"is_pushable_by_piston": true
-			},
-			"minecraft:loot": {
-				"table": "loot_tables/poke/arrow/hellish_arrow.json"
 			}
 		}
 	}

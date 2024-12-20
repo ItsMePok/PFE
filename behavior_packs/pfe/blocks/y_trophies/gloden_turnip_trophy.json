@@ -1,15 +1,16 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:golden_turnip_trophy",
 			"menu_category": {
-				"category": "construction"
+				"category": "construction",
+				"group": "itemGroup.name.trophy"
 			},
 			"traits": {"minecraft:placement_direction": {"enabled_states": ["minecraft:cardinal_direction"]}}
 		},
 		"components": {
-			"minecraft:loot": "loot_tables/poke/trophy/golden_turnip.json",
+			"minecraft:loot": "loot_tables/poke/pfe/golden_turnip.json",
 			"minecraft:selection_box": {
 				"origin": [
 					-7.25,
@@ -40,7 +41,7 @@
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 200
 			},
-			"minecraft:geometry": "geometry.poke.golden_turnip_trophy",
+			"minecraft:geometry": "geometry.poke_pfe.golden_turnip_trophy",
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "poke_golden_turnip_trophy",

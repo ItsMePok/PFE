@@ -13,11 +13,11 @@
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {
-				"default": "geometry.poke.scythe"
+				"default": "geometry.poke_pfe.scythe"
 			},
 			"animations": {
-				"first_person_hold": "animation.poke.rr.1p",
-				"third_person_hold": "animation.poke.rr.3p"
+				"first_person_hold": "animation.poke_pfe.rr.1p",
+				"third_person_hold": "animation.poke_pfe.rr.3p"
 			},
 			"scripts": {
 				"animate": [

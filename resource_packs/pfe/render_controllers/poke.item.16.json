@@ -1,7 +1,7 @@
 {
   "format_version": "1.10",
   "render_controllers": {
-    "controller.render.poke.item.16": {
+    "controller.render.poke_pfe.item.16": {
       "arrays": {
         "textures": {
           "array.item_frames": [

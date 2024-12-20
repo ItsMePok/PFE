@@ -19,7 +19,7 @@
 			"scripts":{
 				"animate":["move","squid_rotate"]
 			},
-			"render_controllers":["controller.render.poke.default"],
+			"render_controllers":["controller.render.poke_pfe.default"],
 			"spawn_egg":{
 				"base_color":"#ff50e2",
 				"overlay_color":"#404040"

@@ -5,8 +5,8 @@
 			"loop": true,
 			"bones": {
 				"Main": {
-					"rotation": [39.60991, 27.72884, -72.89009],
-					"position": [-2, -1, 10]
+					"rotation": [53.76357, 10.5009, -62.69207],
+					"position": [-2, 16, 6]
 				}
 			}
 		},
@@ -14,7 +14,7 @@
 			"loop": true,
 			"bones": {
 				"Main": {
-					"position": [0, 1, 1]
+					"position": [-0.5, 16, -6]
 				}
 			}
 		}

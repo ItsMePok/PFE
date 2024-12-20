@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:zombken",
@@ -65,7 +65,7 @@
 				"value": 2
 			},
 			"minecraft:loot": {
-				"table": "loot_tables/poke/entities/zombken.json"
+				"table": "loot_tables/poke/pfe/zombken.json"
 			},
 			"minecraft:experience_reward": {
 				"on_bred": "math.random(10,70)",

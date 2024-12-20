@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:banished_star_x10",
@@ -8,6 +8,9 @@
 			}
 		},
 		"components": {
+			"minecraft:custom_components": [
+				"poke:consumeEffects"
+			],
 			"minecraft:icon":{
 				"textures": {
 					"default": "poke_banished_star_x10"

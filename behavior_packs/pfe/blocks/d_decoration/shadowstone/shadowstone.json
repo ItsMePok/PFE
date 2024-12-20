@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:shadowstone",
@@ -26,7 +26,7 @@
 			"tag:stone_pick_diggable":{},
 			"tag:minecraft:is_pickaxe_item_destructible":{},
 			"minecraft:map_color": "#2a1d2c",
-			"minecraft:loot": "loot_tables/poke/blocks/shadowstone.json"
+			"minecraft:loot": "loot_tables/poke/pfe/shadowstone.json"
 		}
 	}
 }

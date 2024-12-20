@@ -1,10 +1,11 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:red_present",
 			"menu_category": {
-				"category": "construction"
+				"category": "construction",
+				"group": "itemGroup.name.funBlock"
 			}
 		},
 		"components": {
@@ -31,7 +32,7 @@
 			"tag:axe": {},
 			"tag:wood":{},
 			"tag:minecraft:wood":{},
-			"minecraft:geometry": "geometry.poke.red_present",
+			"minecraft:geometry": "geometry.poke_pfe.red_present",
 			"minecraft:map_color": "#9b2626",
 			"minecraft:material_instances": {
 				"*": {
@@ -39,7 +40,7 @@
 					"render_method": "alpha_test",
 					"ambient_occlusion": false
 				}
-			},"minecraft:loot": "loot_tables/poke/blocks/present.json"
+			},"minecraft:loot": "loot_tables/poke/pfe/present.json"
 		}
 	}
 }

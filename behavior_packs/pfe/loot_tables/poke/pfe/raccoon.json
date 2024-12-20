@@ -1,0 +1,15 @@
+{
+	"pools": [
+		{
+			"rolls": 3,
+			"entries": [
+				{
+					"type": "item",
+					"name": "poke:trash_lid",
+					"weight": 1
+				},
+				{"type": "empty","weight": 50}
+			]
+		}
+	]
+}

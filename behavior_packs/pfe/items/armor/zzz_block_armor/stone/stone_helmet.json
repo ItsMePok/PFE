@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:stone_helmet",
@@ -15,7 +15,7 @@
 				"slot": "armor_head"
 			},
 			"minecraft:durability": {
-				"max_durability": 128,
+				"max_durability": 105,
 				"damage_chance": {
 					"min": 60,
 					"max": 100
@@ -24,27 +24,26 @@
 			"minecraft:icon": { "textures": {"default": "poke_stone_helmet" }}, 
 			"minecraft:wearable": {
 				"slot": "slot.armor.head",
-				"protection": 2
+				"protection": 1
 			},
 			"minecraft:repairable": {
-				"repair_items": [ 					{ 						"items": [ 							"poke:repair_core" 						], 						"repair_amount": "query.max_durability" 					},
+				"repair_items": [
+					{
+						"items": ["poke:repair_core"],
+						"repair_amount": "query.max_durability"
+					},
 					{
 						"items": [
 							"minecraft:cobblestone"
 						],
 						"repair_amount": "query.max_durability*0.25"
-					},
-					{
-						"items": [
-							"poke:stone_helmet"
-						],
-						"repair_amount": "context.other->query.remaining_durability+0.12*context.other->query.max_durability"
 					}
 				]
 			},
 			"minecraft:tags": { 
-			  "tags": [ 
-				"minecraft:is_armor", 
+			  "tags": [
+				"pfe:SingleArmor",
+				"minecraft:is_armor",
 				"minecraft:trimmable_armors" 
 			  ] 
 			} 

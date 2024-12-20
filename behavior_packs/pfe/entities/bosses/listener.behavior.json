@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:listener",
@@ -148,7 +148,7 @@
 				"melee_fov": 360
 			},
 			"minecraft:loot": {
-				"table": "loot_tables/poke/entities/listener.json"
+				"table": "loot_tables/poke/pfe/listener.json"
 			},
 			"minecraft:behavior.investigate_suspicious_location": {
 				"priority": 5,

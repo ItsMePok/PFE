@@ -1,10 +1,11 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:listener_trophy",
 			"menu_category": {
-				"category": "construction"
+				"category": "construction",
+				"group": "itemGroup.name.trophy"
 			},
 			"traits": {"minecraft:placement_direction": {"enabled_states": ["minecraft:cardinal_direction"]}}
 		},
@@ -39,7 +40,7 @@
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 200
 			},
-			"minecraft:geometry": "geometry.poke.listener_trophy",
+			"minecraft:geometry": "geometry.poke_pfe.listener_trophy",
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "poke_listener_trophy",
@@ -56,7 +57,7 @@
 			"tag:minecraft:stone": {},
 			"tag:stone_pick_diggable":{},
 			"tag:minecraft:is_pickaxe_item_destructible":{},
-			"minecraft:loot": "loot_tables/poke/trophy/listener_trophy.json",
+			"minecraft:loot": "loot_tables/poke/pfe/listener_trophy.json",
 			"minecraft:custom_components": [
 				"poke:cc_block_interact"
 			]

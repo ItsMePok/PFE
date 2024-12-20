@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.40",
+  "format_version": "1.21.50",
   "minecraft:item": {
     "description": {
       "identifier": "poke:cassette_mc_disc_strad",
@@ -9,6 +9,7 @@
       }
     },
     "components": {
+			"minecraft:rarity":"uncommon",
       "minecraft:icon":"poke_cassette_mc_disc_strad",
       "minecraft:tags": {"tags": ["minecraft:music_disc"]},
       "minecraft:record": {"comparator_signal": 9,"sound_event": "record.strad","duration": 188},

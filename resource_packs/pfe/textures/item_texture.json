@@ -558,7 +558,7 @@
 		"poke_cassette_mc_disc_5":{"textures":"textures/items/cassette/poke_cassette_mc_disc_5"},
 		"poke_cassette_mc_disc_otherside":{"textures":"textures/items/cassette/poke_cassette_mc_disc_otherside"},
 		"poke_cassette_mc_disc_relic":{"textures":"textures/items/cassette/poke_cassette_mc_disc_relic"},
-		"poke_cassette_listener":{"textures":"textures/items/cassette/poke_casette_listener"},
+		"poke_cassette_listener":{"textures":"textures/items/cassette/poke_cassette_listener"},
 		"poke_cassette_galactic_march":{"textures":"textures/items/cassette/poke_cassette_galactic_march"},
 		"poke_empty_cassette":{"textures":"textures/items/cassette/poke_empty_cassette"},
 		//Single Piece Armor
@@ -660,7 +660,8 @@
 		"poke_springy_robey_chestplate":{"textures":"textures/items/robes/springy_robey/poke_springy_robey_chestplate"},
 		"poke_feather_robe_helmet":{"textures":"textures/items/robes/feather_robe/poke_feather_robe_hat"},
 		"poke_feather_robe_chestplate":{"textures":"textures/items/robes/feather_robe/poke_feather_robe_chestplate"},
-		"poke_swift_boots":{"textures":"textures/items/swift/poke_swift_boots"}
+		"poke_swift_boots":{"textures":"textures/items/swift/poke_swift_boots"},
+		"poke_party_hat": {"textures": "textures/items/party_hat.png"}
 	},
 	"resource_pack_name":"Poke",
 	"texture_name":"atlas.items"

@@ -12,15 +12,15 @@
 				"default":"textures/entity/bosses/poke_zombken"
 			},
 			"geometry":{
-				"default":"geometry.poke.zombken"
+				"default":"geometry.poke_pfe.zombken"
 			},
 			"animations":{
-				"move":"animation.poke.zombken.move",
-				"general":"animation.poke.zombken.general",
+				"move":"animation.poke_pfe.zombken.move",
+				"general":"animation.poke_pfe.zombken.general",
 				"look_at_target":"animation.common.look_at_target",
-				"baby_transform":"animation.poke.zombken.baby_transform",
-				"melee_attack":"animation.poke.zombken.attack",
-				"controller":"controller.animation.poke.zombken"
+				"baby_transform":"animation.poke_pfe.zombken.baby_transform",
+				"melee_attack":"animation.poke_pfe.zombken.attack",
+				"controller":"controller.animation.poke_pfe.zombken"
 			},
 			"scripts":{
 				"animate":["controller","look_at_target",{"baby_transform":"query.is_baby"}
@@ -30,7 +30,7 @@
 				]
 			},
 			"render_controllers":[
-				"controller.render.poke.zombken"
+				"controller.render.poke_pfe.zombken"
 			],
 			"spawn_egg":{
 				"texture":"poke_spawn_zombken"

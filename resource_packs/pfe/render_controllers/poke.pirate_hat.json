@@ -3,8 +3,7 @@
 	"render_controllers": {
 		"controller.render.pirate_hat": {
 			"textures": [
-				"texture.default",
-				"texture.poke_feather"
+				"texture.default"
 			],
 			"geometry": "geometry.default",
 			"materials": [

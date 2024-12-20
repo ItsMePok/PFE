@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.shallow_cod.flop": {
+		"animation.poke_pfe.shallow_cod.flop": {
 			"loop": true,
 			"bones": {
 				"body": {
@@ -15,7 +15,7 @@
 				}
 			}
 		},
-		"animation.shallow_cod.swim": {
+		"animation.poke_pfe.shallow_cod.swim": {
 			"loop": true,
 			"bones": {
 				"body": {

@@ -10,12 +10,12 @@
 				"default":"textures/items/misc/poke_shuriken"
 			},
 			"geometry":{
-				"default":"geometry.poke.shuriken"
+				"default":"geometry.poke_pfe.shuriken"
 			},
 			"animations":{
-				"move":"animation.poke.shuriken.move"
+				"move":"animation.poke_pfe.shuriken.move"
 			},
-			"render_controllers":["controller.render.poke.default"],
+			"render_controllers":["controller.render.poke_pfe.default"],
 			"scripts":{
 				"animate":[
 					"move"

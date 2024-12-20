@@ -10,7 +10,7 @@
 				"default":"textures/entity/neutral/poke_woods_goat"
 			},
 			"geometry":{
-				"default":"geometry.poke.goat"
+				"default":"geometry.poke_pfe.goat"
 			},
 			"spawn_egg":{
 				"base_color":"#642900",
@@ -40,7 +40,7 @@
 				"ram_attack":"animation.woods_goat.ram_attack",
 				"horns":"animation.woods_goat.horns"
 			},
-			"render_controllers":["controller.render.poke.default"]
+			"render_controllers":["controller.render.poke_pfe.default"]
 		}
 	}
 }

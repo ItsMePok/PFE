@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:mail_cart",
@@ -7,7 +7,7 @@
 			"is_summonable": true,
 			"is_experimental": false,
 			"animations": {
-				"death":"controller.animation.poke.mail_cart.death"
+				"death":"controller.animation.poke_pfe.mail_cart.death"
 			},"scripts": {"animate": ["death"]},
 			"runtime_identifier": "minecraft:chest_minecart"
 		},
@@ -52,7 +52,7 @@
 				"height": 0.7
 			},
 			"minecraft:loot": {
-				"table": "loot_tables/poke/entites/mail_cart.json"
+				"table": "loot_tables/poke/pfe/entities/mail_cart.json"
 			},
 			"minecraft:on_hurt":{
 				"target": "self",

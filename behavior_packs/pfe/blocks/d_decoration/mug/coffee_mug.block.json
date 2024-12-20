@@ -1,10 +1,11 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:coffee_mug",
 			"menu_category": {
-				"category": "items"
+				"category": "items",
+				"group": "itemGroup.name.mug"
 			},
 			"traits": {
 				"minecraft:placement_direction": {
@@ -27,7 +28,7 @@
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 8
 			},
-			"minecraft:geometry": "geometry.poke.coffee_mug",
+			"minecraft:geometry": "geometry.poke_pfe.coffee_mug",
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "poke_coffee_mug",

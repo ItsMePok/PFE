@@ -11,7 +11,7 @@
 				"default":"textures/entity/hostile/poke_ender_phantom"
 			},
 			"geometry":{
-				"default":"geometry.poke.ender_phantom"
+				"default":"geometry.poke_pfe.ender_phantom"
 			},
 			"scripts":{
 				"initialize":["variable.runtimeid=0;","variable.tailrotx=-5.0;","variable.wingrotz=0.0;"],

@@ -10,14 +10,14 @@
 				"default":"textures/entity/bosses/poke_dragon"
 			},
 			"geometry":{
-				"default":"geometry.poke.dragon"
+				"default":"geometry.poke_pfe.dragon"
 			},
 			"animations":{
-				"wing_off":"animation.poke.dragon.wing_off",
-				"flying":"animation.poke.dragon.o2.flying",
-				"controller":"controller.animation.poke.dragon.flying"
+				"wing_off":"animation.poke_pfe.dragon.wing_off",
+				"flying":"animation.poke_pfe.dragon.o2.flying",
+				"controller":"controller.animation.poke_pfe.dragon.flying"
 			},
-			"render_controllers":["controller.render.poke.default"],
+			"render_controllers":["controller.render.poke_pfe.default"],
 			"scripts":{
 				"animate":[
 					"flying"

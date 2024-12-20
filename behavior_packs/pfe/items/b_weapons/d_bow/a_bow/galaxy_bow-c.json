@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.40",//Format version is the version it was built for. its 1.21.10 because that is the minimum version that Beta Api was not needed for what PFE uses (as of PFE v1.2.2)
+	"format_version": "1.21.50",//Format version is the version it was built for. its 1.21.10 because that is the minimum version that Beta Api was not needed for what PFE uses (as of PFE v1.2.2)
 	"minecraft:item":{
 		"description":{
 			"identifier":"poke:galaxy_bow",//Item Identifier Actaul item name is Galaxy BurstBow (changed the name after it was initally added but preserving backwards compatibily is important imo)
@@ -80,8 +80,8 @@ Other things:
 - Charging Animations were done from:
   - Script After Event (PFEMain.js), Cutsom component: "poke:cc_bow_aim" (shows where you are aiming to others)
   - The attachable file (RP/attachables/item/bow/galaxy_bow.json)
-  - Animations (RP/animations/attachables/poke.16.item.animation(animation.poke.bow.frames))
-  - Animation Controller (RP/animation_controllers/poke.bow.animation_controllers.json(controller.animation.poke.bow))
+  - Animations (RP/animations/attachables/poke.16.item.animation(animation.poke_pfe.bow.frames))
+  - Animation Controller (RP/animation_controllers/poke.bow.animation_controllers.json(controller.animation.poke_pfe.bow))
   - Render Controller (RP/render_controllers/poke.bow.render_controllers.json)
   -
 */

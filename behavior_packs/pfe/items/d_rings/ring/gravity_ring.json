@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:gravity_ring",
@@ -33,9 +33,10 @@
 				"slot": "flintsteel",
 				"value": 37
 			},
-			"minecraft:tags": {"tags": ["pfe:Command:function pfe_items/gravity_ring:pfeCommandEnd"]},
-			"minecraft:custom_components": [
-				"poke:cc_on_use"
+			"minecraft:tags": {"tags": ["pfe:Command:function poke/pfe/gravity_ring:pfeCommandEnd"]},
+			"minecraft:custom_components":[
+				"poke:cc_on_use",
+				"poke:normalMining"
 			],
 			"minecraft:use_modifiers": {
 				"use_duration": 0,

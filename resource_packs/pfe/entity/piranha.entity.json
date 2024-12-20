@@ -10,7 +10,7 @@
 				"default":"textures/entity/hostile/poke_piranha"
 			},
 			"geometry":{
-				"default":"geometry.piranha"
+				"default":"geometry.poke_pfe.piranha"
 			},
 			"scripts":{
 				"pre_animation":[
@@ -19,15 +19,15 @@
 				]
 			},
 			"animations":{
-				"flop":"animation.piranha.flop",
-				"swim":"animation.piranha.swim"
+				"flop":"animation.poke_pfe.piranha.flop",
+				"swim":"animation.poke_pfe.piranha.swim"
 			},
 			"animation_controllers":[
 				{
 					"general":"controller.animation.fish.general"
 				}
 			],
-			"render_controllers":["controller.render.poke.default"],
+			"render_controllers":["controller.render.poke_pfe.default"],
 			"spawn_egg":{
 				"base_color":"#f91414",
 				"overlay_color":"#00b8e2"

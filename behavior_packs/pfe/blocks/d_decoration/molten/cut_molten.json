@@ -1,10 +1,11 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:cut_molten",
 			"menu_category": {
-				"category": "construction"
+				"category": "construction",
+				"group": "itemGroup.name.cutBlock"
 			}
 		},
 		"components": {

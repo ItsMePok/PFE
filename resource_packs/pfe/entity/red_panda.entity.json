@@ -14,16 +14,16 @@
 				"default":"geometry.red_panda"
 			},
 			"animations":{
-				"walk":"animation.red_panda.walk",
+				"walk":"animation.poke_pfe.red_panda.walk",
 				"look_at_target":"animation.common.look_at_target",
-				"baby_transform":"animation.red_panda.baby_transform",
-				"crouch":"animation.red_panda.crouch",
-				"sleep":"animation.red_panda.sleep",
-				"setup":"animation.red_panda.setup",
-				"sit":"animation.red_panda.sit",
-				"wiggle":"animation.red_panda.wiggle",
-				"stuck":"animation.red_panda.stuck",
-				"pounce":"animation.red_panda.pounce",
+				"baby_transform":"animation.poke_pfe.red_panda.baby_transform",
+				"crouch":"animation.poke_pfe.red_panda.crouch",
+				"sleep":"animation.poke_pfe.red_panda.sleep",
+				"setup":"animation.poke_pfe.red_panda.setup",
+				"sit":"animation.poke_pfe.red_panda.sit",
+				"wiggle":"animation.poke_pfe.red_panda.wiggle",
+				"stuck":"animation.poke_pfe.red_panda.stuck",
+				"pounce":"animation.poke_pfe.red_panda.pounce",
 				"move":"controller.animation.fox.move"
 			},
 			"scripts":{

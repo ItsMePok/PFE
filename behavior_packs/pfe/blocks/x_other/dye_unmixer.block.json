@@ -1,10 +1,11 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:dye_unmixer",
 			"menu_category": {
-				"category": "items"
+				"category": "items",
+				"group": "itemGroup.name.crafting"
 			},
 			"traits": {
 				"minecraft:placement_direction": {
@@ -21,7 +22,7 @@
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 24
 			},
-			"minecraft:geometry": "geometry.poke.dye_unmixer",
+			"minecraft:geometry": "geometry.poke_pfe.dye_unmixer",
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "poke_dye_unmixer",

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:ore_ring",
@@ -34,10 +34,11 @@
 			},
 			"minecraft:max_stack_size": 1,
 			"minecraft:tags": {"tags": [
-				"pfe:Command:loot give @s loot \"poke/rings/ore_ring\":pfeCommandEnd"
+				"pfe:Command:loot give @s loot \"poke/pfe/ore_ring\":pfeCommandEnd"
 			]},
-			"minecraft:custom_components": [
-				"poke:cc_on_use"
+			"minecraft:custom_components":[
+				"poke:cc_on_use",
+				"poke:normalMining"
 			],
 			"minecraft:use_modifiers": {
 				"use_duration": 0,

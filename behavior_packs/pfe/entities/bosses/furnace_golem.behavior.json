@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:robo_golem",
@@ -136,7 +136,7 @@
 				]
 			},
 			"minecraft:loot": {
-				"table": "loot_tables/poke/entities/furnace_golem.json"
+				"table": "loot_tables/poke/pfe/furnace_golem.json"
 			},
 			"minecraft:health": {
 				"value": 4500,
@@ -208,7 +208,7 @@
 							{
 								"summon_cap": 8,
 								"entity_lifespan": 30,
-								"entity_type": "poke:soul_blaze",
+								"entity_type": "minecraft:blaze",
 								"shape": "circle",
 								"size": 6,
 								"num_entities_spawned": 2,
@@ -316,7 +316,7 @@
 					{
 						"queue_command": {
 							"command": [
-								"function poke/entities/robo_golem_slam"
+								"function poke/pfe/robo_golem_slam"
 							]
 						},
 						"weight": 1

@@ -1,0 +1,19 @@
+{
+  "format_version": "1.21.20",
+  "minecraft:template_pool": {
+    "description": {
+      "identifier": "poke:crate_patch"
+    },
+    "elements": [
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "poke/village/sc_crate_patch",
+          "processors": "poke:path" /*,
+          "projection": "minecraft:terrain_matching"*/
+        },
+        "weight": 1
+      }
+    ]
+  }
+}

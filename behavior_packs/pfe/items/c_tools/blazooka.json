@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:blazooka",
@@ -27,7 +27,7 @@
 				"value": 30
 			},
 			"minecraft:tags": {"tags": [
-				"function pfe_items/windzooka"
+				"function poke/pfe/windzooka"
 			]},
 			"minecraft:custom_components": [
 				"poke:cc_zooka"

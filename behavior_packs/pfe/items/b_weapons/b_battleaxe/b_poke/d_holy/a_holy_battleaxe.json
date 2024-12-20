@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.40",
+  "format_version": "1.21.50",
   "minecraft:item": {
     "description": {
       "identifier": "poke:holy_battleaxe",
@@ -49,10 +49,11 @@
       },
       "tag:minecraft:is_sword": {},
 			"minecraft:tags": {"tags": [
-				"pfe:Command:function pfe_items/battleaxe/holy:pfeCommandEnd"
+				"pfe:Command:function poke/pfe/holy_battleaxe:pfeCommandEnd"
 			]},
-			"minecraft:custom_components": [
-				"poke:cc_on_use"
+			"minecraft:custom_components":[
+				"poke:cc_on_use",
+				"poke:normalMining"
 			],
       "minecraft:use_modifiers": {
         "use_duration": 0,

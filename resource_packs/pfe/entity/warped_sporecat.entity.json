@@ -21,7 +21,7 @@
 				"bella_tame":"textures/entity/passive/poke_sporecat/bella_tame"
 			},
 			"geometry":{
-				"default":"geometry.poke.sporecat"
+				"default":"geometry.poke_pfe.sporecat"
 			},
 			"animations":{
 				"sneak":"animation.warped_sporecat.sneak",
@@ -43,7 +43,7 @@
 					"baby":"controller.animation.cat.baby"
 				}
 			],
-			"render_controllers":["controller.render.poke.sporecat"],
+			"render_controllers":["controller.render.poke_pfe.sporecat"],
 			"spawn_egg":{
 				"base_color":"#12b8b2",
 				"overlay_color":"#ff8900"

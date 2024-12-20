@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.demonic_allay.idle": {
+		"animation.poke_pfe.demonic_allay.idle": {
 			"loop": true,
 			"animation_length": 2,
 			"bones": {
@@ -249,7 +249,7 @@
 				}
 			}
 		},
-		"animation.demonic_allay.fly": {
+		"animation.poke_pfe.demonic_allay.fly": {
 			"loop": true,
 			"animation_length": 2,
 			"bones": {
@@ -613,7 +613,7 @@
 				}
 			}
 		},
-		"animation.demonic_allay.hold_item": {
+		"animation.poke_pfe.demonic_allay.hold_item": {
 			"loop": "hold_on_last_frame",
 			"animation_length": 2,
 			"bones": {

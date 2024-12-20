@@ -1,10 +1,11 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:magic_8_ball",
 			"menu_category": {
-				"category": "construction"
+				"category": "construction",
+				"group": "itemGroup.name.funBlock"
 			},
 			"traits": {
 				"minecraft:placement_direction": {
@@ -31,7 +32,7 @@
 				"destroy_chance_modifier": 20,
 				"catch_chance_modifier": 5
 			},
-			"minecraft:geometry": "geometry.poke.magic_8_ball",
+			"minecraft:geometry": "geometry.poke_pfe.magic_8_ball",
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "poke_magic_8_ball",

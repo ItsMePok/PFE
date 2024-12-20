@@ -11,7 +11,7 @@
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {
-				"default": "geometry.poke.ban_hammer_3d"
+				"default": "geometry.poke_pfe.ban_hammer_3d"
 			},
 			"render_controllers": [
 				"controller.render.default"

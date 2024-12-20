@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:cobalt_ore",
@@ -11,7 +11,8 @@
 		"components": {
 			"minecraft:map_color": "#3619bb",
 			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 1.5
+				"seconds_to_destroy": 15,
+				"item_specific_speeds": [{"item":{"tags": "q.any_tag('minecraft:is_pickaxe')"},"destroy_speed": 3}]
 			},
 			"minecraft:redstone_conductivity": {
 				"redstone_conductor": true,
@@ -23,7 +24,8 @@
 			"tag:stone_pick_diggable":{},
 			"tag:minecraft:is_pickaxe_item_destructible":{},
 			"minecraft:geometry":{"identifier": "minecraft:geometry.full_block"},
-			"minecraft:loot": "loot_tables/poke/blocks/cobalt_ore.json",
+			"minecraft:material_instances": {"*": {"texture": "poke_cobalt_ore"}},
+			"minecraft:loot": "loot_tables/poke/pfe/cobalt_ore.json",
 			"minecraft:custom_components":[
 				"poke:fortune"
 			]

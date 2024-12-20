@@ -9,17 +9,7 @@
 			},
 			"textures": {
 				"default": "textures/models/armor/poke_onyx_2",
-				"enchanted": "textures/misc/enchanted_item_glint",
-				"amethyst_palette":"textures/models/armor/trims/color_palettes/pumpkin",
-				"copper_palette":"textures/models/armor/trims/color_palettes/pumpkin",
-				"diamond_palette":"textures/models/armor/trims/color_palettes/pumpkin",
-				"emerald_palette":"textures/models/armor/trims/color_palettes/pumpkin",
-				"gold_palette":"textures/models/armor/trims/color_palettes/pumpkin",
-				"iron_palette":"textures/models/armor/trims/color_palettes/pumpkin",
-				"lapis_palette":"textures/models/armor/trims/color_palettes/pumpkin",
-				"quartz_palette":"textures/models/armor/trims/color_palettes/pumpkin",
-				"netherite_palette":"textures/models/armor/trims/color_palettes/pumpkin",
-				"redstone_palette":"textures/models/armor/trims/color_palettes/pumpkin" 
+				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {
 				"default": "geometry.humanoid.armor.leggings"

@@ -1,5 +1,5 @@
 {
-	"format_version":"1.21.40",
+	"format_version":"1.21.50",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:nebula_bug",
@@ -51,7 +51,7 @@
 			},
 			"minecraft:nameable": {},
 			"minecraft:loot": {
-				"table": "loot_tables/poke/entities/nebula_bug.json"
+				"table": "loot_tables/poke/pfe/nebula_bug.json"
 			},
 			"minecraft:health": {
 				"value": 8,

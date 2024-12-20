@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.poke.miner_helmet",
+				"identifier": "geometry.poke_pfe.miner_helmet",
 				"texture_width": 64,
 				"texture_height": 64,
 				"visible_bounds_width": 2,

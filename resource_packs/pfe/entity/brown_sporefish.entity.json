@@ -10,7 +10,7 @@
 				"default":"textures/entity/passive/poke_brown_sporefish"
 			},
 			"geometry":{
-				"default":"geometry.poke.sporefish"
+				"default":"geometry.poke_pfe.sporefish"
 			},
 			"scripts":{
 				"pre_animation":[
@@ -27,7 +27,7 @@
 					"general":"controller.animation.fish.general"
 				}
 			],
-			"render_controllers":["controller.render.poke.default"],
+			"render_controllers":["controller.render.poke_pfe.default"],
 			"spawn_egg":{
 				"base_color":"#a57a56",
 				"overlay_color":"#f4f4f4"

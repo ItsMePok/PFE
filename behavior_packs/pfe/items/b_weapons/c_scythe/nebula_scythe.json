@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:nebula_scythe",
@@ -9,6 +9,10 @@
 			}
 		},
 		"components": {
+			"minecraft:custom_components":[
+				"poke:normalMining",
+				"poke:hitEffects"
+			],
 			"minecraft:can_destroy_in_creative": false,
 			"minecraft:durability": {
 				"max_durability": 25100

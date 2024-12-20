@@ -1,0 +1,18 @@
+{
+	"format_version": "1.21.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:boss_event_config",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.config"
+			}
+		},
+		"components": {
+			"minecraft:icon":"poke_boss_event_config",
+			"minecraft:custom_components": [
+				"poke:boss_event_config"
+			]
+		}
+	}
+}

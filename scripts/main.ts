@@ -1,7 +1,42 @@
-import { system, world, EquipmentSlot, GameMode, EntityComponentTypes, ItemComponentTypes, ItemStack,Enchantment, ItemEnchantableComponent, Player, EnchantmentType, ItemDurabilityComponent, EntityProjectileComponent, BlockComponentPlayerInteractEvent, BlockComponentPlayerDestroyEvent, BlockComponentTickEvent, EntityEquippableComponent, BlockComponentRandomTickEvent, ItemComponentUseEvent, ItemCooldownComponent, ItemComponentUseOnEvent, EntityInventoryComponent, BlockComponentOnPlaceEvent, Block} from "@minecraft/server";
-import { MinecraftEnchantmentTypes, MinecraftItemTypes } from "@minecraft/vanilla-data";
+import { system, world, EquipmentSlot, GameMode, EntityComponentTypes, ItemComponentTypes, ItemStack,Enchantment, ItemEnchantableComponent, Player, ItemDurabilityComponent, EntityProjectileComponent, BlockComponentPlayerInteractEvent, BlockComponentPlayerDestroyEvent, BlockComponentTickEvent, EntityEquippableComponent, BlockComponentRandomTickEvent, ItemComponentUseEvent, ItemCooldownComponent, ItemComponentUseOnEvent, BlockComponentOnPlaceEvent, Direction, ItemComponentMineBlockEvent} from "@minecraft/server";
+import { MinecraftBlockTypes, MinecraftEffectTypes, MinecraftEnchantmentTypes, MinecraftItemTypes } from "@minecraft/vanilla-data";
+import { PFEBossEventConfig, PFEBossEventConfigName, PFEBossEventUI, PFEDefaultBossEventSettings, PFEStartBossEvent } from "./bossEvents";
+import { PFEHaxelMining } from "./haxelMining";
+
 //Armor effects. I split into 4 because it should reduce the amount of commands running at a time reducing the random lag spikes
 system.runInterval(() => {
+    world.getDimension("overworld").runCommandAsync("execute as @a run function poke/pfe/effects");
+    system.runTimeout(() => {
+        world.getDimension("overworld").runCommandAsync("execute as @a run function poke/pfe/effects_2");
+        system.runTimeout(() => {
+            world.getDimension("overworld").runCommandAsync("execute as @a run function poke/pfe/effects_3");
+            system.runTimeout(() => {
+                world.getDimension("overworld").runCommandAsync("execute as @a run function poke/pfe/effects_4");
+            }, 40);
+        }, 80);
+    }, 120);
+}, 180);
+
+interface PFEArmorEffectInfo{
+    "id":MinecraftEffectTypes
+    "amp"?:number
+}
+/*system.runInterval(() => {
+    world.getAllPlayers().forEach((data =>{
+        //@ts-ignore
+        let EquippableComponent:EntityEquippableComponent = data.getComponent(EntityComponentTypes.Equippable)
+        let EquipmentCount = 0
+        const Armor = [EquippableComponent.getEquipment(EquipmentSlot.Head),EquippableComponent.getEquipment(EquipmentSlot.Chest),EquippableComponent.getEquipment(EquipmentSlot.Legs),EquippableComponent.getEquipment(EquipmentSlot.Feet)]
+        Armor.forEach((item =>{
+            if (item == undefined)return;
+            if (item.hasTag('pfe:SingleArmor')){
+                const ItemTags = item!.getTags().toString();
+                let ComponentInfo:PFEArmorEffectInfo[] = JSON.parse(ItemTags.substring(ItemTags.indexOf('pfe:ArmorEffect:'),ItemTags.indexOf(':pfeArmorEffectEnd')).substring(16));
+                ComponentInfo.forEach((effect =>{
+                    data.addEffect(effect.id,600,{amplifier:effect.amp,showParticles:false})
+                }))
+            }
+        }))system.runInterval(() => {
     world.getDimension("overworld").runCommandAsync("execute as @a run function pfe_armor/effects");
     system.runTimeout(() => {
         world.getDimension("overworld").runCommandAsync("execute as @a run function pfe_armor/effects_2");
@@ -13,17 +48,21 @@ system.runInterval(() => {
         }, 80);
     }, 120);
 }, 180);
+*/
 
-// Boss events
-system.runInterval(() => {
-    world.getDimension("overworld").runCommandAsync("execute at @r run summon poke:boss_event ~ -65 ~")
-}, 108000);
+function PFEDecrementStack(item:ItemStack) {
+    if (item.amount<=1)return undefined
+    else {
+        item.amount = item.amount -1
+        return item
+    }
+}
 // Tool Durability gotten from https://wiki.bedrock.dev/items/tool-durability.html
-function damage_item(item:ItemStack) {
+function PFEDamageItem(item:ItemStack) {
     // Get durability
-    if (!item.hasComponent("durability")) return item;
+    if (!item.hasComponent(ItemComponentTypes.Durability)) return item;
     //@ts-ignore
-    const durabilityComponent:ItemDurabilityComponent = item.getComponent("durability")
+    const durabilityComponent:ItemDurabilityComponent = item.getComponent(ItemComponentTypes.Durability)
     //@ts-ignore
     const enchantComponent:ItemEnchantableComponent = item.getComponent('minecraft:enchantable')
     let unbreaking:number = 0
@@ -47,13 +86,14 @@ function damage_item(item:ItemStack) {
     durabilityComponent.damage += Number(Math.round(Math.random() * 100) <= durabilityComponent.getDamageChance(unbreaking))
     return item
 }
+
 //Makes unbreaking work but breaks the Hold to continue using :/
-function damage_item_ub(item:ItemStack) {
+function PFEDamageItemUB(item:ItemStack,multiplier:undefined|number) {
     // check if the item does not have a durability component to avoid deleting itself
-    if (!item.hasComponent("durability")) return item;
+    if (!item.hasComponent(ItemComponentTypes.Durability)) return item;
     // Get durability
     //@ts-ignore
-    const durabilityComponent:ItemDurabilityComponent = item.getComponent("durability")
+    const durabilityComponent:ItemDurabilityComponent = item.getComponent(ItemComponentTypes.Durability)
     var unbreakingL = 0
     // Get unbreaking level
     if (item.hasComponent(ItemComponentTypes.Enchantable)) {
@@ -68,149 +108,30 @@ function damage_item_ub(item:ItemStack) {
     //console.warn (durabilityComponent.getDamageChance(unbreakingL))
     //console.warn(Number(Math.round(Math.random() * 100) <= durabilityComponent.getDamageChance(unbreakingL)))
     //console.warn('---')
-
+    let damage = Number(Math.round(Math.random() * 100) <= durabilityComponent.getDamageChance(unbreakingL))
+    if (typeof multiplier == "number"){
+        damage = damage*multiplier
+    }
+    if(durabilityComponent.damage + damage ==durabilityComponent.maxDurability)return undefined;
     // Apply damage
-    durabilityComponent.damage += Number(Math.round(Math.random() * 100) <= durabilityComponent.getDamageChance(unbreakingL))
+    durabilityComponent.damage += damage
     if (durabilityComponent.damage == durabilityComponent.maxDurability) {
         return item
     }
     return item
 }
-// Add your item IDs into this array
-const my_items = ["poke:cobalt_pickaxe","poke:onyx_pickaxe","poke:holy_pickaxe","poke:hellish_pickaxe","poke:godly_pickaxe","poke:demonic_pickaxe","poke:amethyst_pickaxe","poke:astral_pickaxe","poke:death_pickaxe","poke:emerald_pickaxe","poke:galaxy_pickaxe","poke:medic_pickaxe","poke:nebula_pickaxe","poke:molten_pickaxe","poke:radium_pickaxe","poke:shade_pickaxe","poke:void_pickaxe","poke:medic_haxel","poke:cobalt_crossbow","poke:astral_crossbow","poke:godly_crossbow","poke:demonic_haxel","poke:holy_battleaxe","poke:godly_battleaxe","poke:galaxy_battleaxe","poke:astral_battleaxe","poke:amethyst_battleaxe","poke:netherite_battleaxe","poke:diamond_battleaxe","poke:gold_battleaxe","poke:void_battleaxe","poke:death_battleaxe","poke:demonic_battleaxe","poke:hellish_battleaxe","poke:emerald_battleaxe","poke:iron_battleaxe","poke:onyx_battleaxe","poke:shade_battleaxe","poke:cobalt_battleaxe","poke:stone_battleaxe","poke:wood_battleaxe","poke:radium_battleaxe","poke:hellish_scythe","poke:ember_scythe","poke:emerald_scythe","poke:nebula_battleaxe","poke:diamond_scythe","poke:shade_scythe","poke:nebula_scythe","poke:godly_scythe","poke:galactic_scythe","poke:radium_scythe","poke:amethyst_scythe","poke:onyx_scythe","poke:gold_scythe","poke:cobalt_scythe","poke:netherite_scythe","poke:void_scythe","poke:holy_scythe","poke:iron_scythe","poke:demonic_slasher","poke:death_scythe","poke:godly_haxel","poke:radium_haxel","poke:cobalt_haxel","poke:shade_haxel","poke:wooden_haxel","poke:stone_haxel","poke:iron_haxel","poke:gold_haxel","poke:emerald_haxel","poke:diamond_haxel","poke:netherite_haxel","poke:hellish_haxel","poke:holy_haxel","poke:amethyst_haxel","poke:haxel","poke:swift_pickaxe","poke:snow_shovel","poke:nebula_hoe","poke:cobalt_sword","poke:astral_sword","poke:onyx_sword","poke:demonic_sword","poke:void_sword","poke:pocket_knife","poke:amethyst_sword","poke:circuit_sword","poke:hellish_blade","poke:nebula_sword","poke:galaxy_sword","poke:godly_sword","poke:holy_sword","poke:shade_sword","poke:radium_sword",]
-world.afterEvents.playerBreakBlock.subscribe(data => {
-    // If there's no item, skip
-    if (!data.itemStackAfterBreak) return
-    // If the item is not in our item IDs, skip
-    if (!my_items.includes(data.itemStackAfterBreak.typeId)) return
-    // If player is in creative, skip
-    if (world.getPlayers({
-        gameMode: GameMode.creative
-    }).includes(data.player)) return
-    const newItem = damage_item_ub(data.itemStackAfterBreak)
-    //@ts-ignore
-    data.player.getComponent(EntityComponentTypes.Equippable)!.setEquipment(EquipmentSlot.Mainhand, newItem)
-    if (!newItem) {
-        data.player.playSound("random.break")
-    }
-    return;
-});
-// End of Tool durability 
-//Food effects
-const pfeFoodList = ["poke:pumpkin_spice","poke:xp_vial","poke:golden_chicken","poke:rotten_chicken","poke:demonic_potion","poke:hellish_potion","poke:nebula_potion","poke:void_potion","poke:death_potion","poke:cobalt_potion","poke:cobalt_soup","poke:crimson_sporeshroom_stew","poke:root_beer","poke:hellish_soup","poke:nebula_noodles","poke:warped_sporeshroom_stew","poke:milk_bottle","poke:banished_star_x10","poke:banished_star_x9"];
-world.afterEvents.itemCompleteUse.subscribe(item => {
-    if (!pfeFoodList.includes(item.itemStack.typeId)) return;
-    switch(item.itemStack.typeId){
-        case 'poke:xp_vial':{item.source.runCommandAsync("xp 160 @s");return};
-        case 'poke:cobalt_potion':{item.source.addEffect('night_vision', 3600);item.source.addEffect('regeneration', 2400)}
-        case 'poke:cobalt_soup':{item.source.addEffect('night_vision', 2400,{showParticles: false});return};
-        case 'poke:root_beer':{item.source.addEffect('speed', 600, {amplifier: 4,});return};
-        case 'poke:pumpkin_spice':{item.source.addEffect('invisibility', 600);item.source.addEffect('speed', 600, {amplifier: 4,});return};
-        case 'poke:crimson_sporeshroom_stew':{item.source.addEffect('fire_resistance', 1200);return};
-        case 'poke:warped_sporeshroom_stew':{item.source.addEffect('fire_resistance', 1200);return};
-        case 'poke:hellish_soup':{item.source.addEffect('fire_resistance', 1200);return};
-        case 'poke:nebula_noodles':{item.source.addEffect('strength', 600, {amplifier: 7,});return};
-        case 'poke:milk_bottle':{item.source.runCommandAsync("effect @s clear");return};
-        case 'poke:demonic_potion':{item.source.runCommandAsync("function pfe_items/demonic_potion");return};
-        case 'poke:hellish_potion':{item.source.runCommandAsync("function pfe_items/hellish_potion");return};
-        case 'poke:nebula_potion':{item.source.runCommandAsync("function pfe_items/nebula_potion");return};
-        case 'poke:void_potion':{item.source.runCommandAsync("function pfe_items/void_potion");return};
-        case 'poke:death_potion':{item.source.runCommandAsync("kill @s");return};
-        case 'poke:rotten_chicken':{item.source.addEffect('nausea', 400);return};
-        case 'poke:golden_chicken':{item.source.addEffect('village_hero', 400, {amplifier: 1,});return};
-        case 'poke:banished_star_x10':{item.source.runCommandAsync("damage @a[r=100] 32767000 entity_attack entity @s");return};
-        case 'poke:banished_star_x9':{item.source.runCommandAsync("damage @s 32767000 entity_attack");return};
-    }
-    return;
-});
-// Projectile shooters & Windzooka/Blazooka
-const pfeProjItems = ["poke:volt_ring","poke:nuke_ring","poke:necromancer_staff","poke:ring_3","poke:ring_4","poke:ring_2","poke:arrow_ring","poke:shade_ring"]
-world.afterEvents.itemUse.subscribe(data => {
-    if (!pfeProjItems.includes(data.itemStack.typeId)) return;
-    const headLocate = data.source.getHeadLocation();
-    //@ts-ignore
-    const ticks:number = data.itemStack.getComponent('cooldown').cooldownTicks
-    //@ts-ignore
-    if (data.itemStack.getComponent('cooldown').getCooldownTicksRemaining(data.source) != ticks -1) return;
-    if (pfeProjItems.includes(data.itemStack.typeId)){ //Projectile shooters. projectile id defined in a tag on the item
-        const pTag = data.itemStack.getTags();
-        const angle = data.source.getViewDirection();
-        const projEntity = data.source.dimension.spawnEntity(''+pTag,headLocate);
-        //@ts-ignore
-        const projComp:EntityProjectileComponent = projEntity.getComponent("projectile");
-        data.source.playSound('random.bow')
-        projComp.owner = data.source;
-        projComp.shoot(angle);
-    };
-    if (world.getPlayers({
-        gameMode: GameMode.creative
-    }).includes(data.source)) return
-    const newItem = damage_item(data.itemStack)
-    //@ts-ignore
-    data.source.getComponent(EntityComponentTypes.Equippable).setEquipment(EquipmentSlot.Mainhand, newItem)
-    if (!newItem) {
-        data.source.playSound("random.break")
-    }
-    return;
-});
-//Hit Effects 
-const hit_effects = ["poke:astral_scythe","poke:medic_scythe","poke:demonic_sword","poke:hellish_sword","poke:godly_sword","poke:holy_sword","poke:radium_sword","poke:astral_sword","poke:shade_sword","poke:nebula_sword","poke:amethyst_scythe","poke:holy_scythe","poke:hellish_scythe","poke:godly_scythe","poke:galactic_scythe","poke:demonic_slasher","poke:ember_scythe","poke:death_scythe","poke:void_scythe","poke:radium_scythe","poke:netherite_scythe","poke:diamond_scythe","poke:shade_scythe","poke:onyx_scythe","poke:iron_scythe","poke:gold_scythe","poke:emerald_scythe","poke:nebula_scythe","poke:cobalt_scythe","poke:circuit_sword","poke:ban_hammer"]
-world.afterEvents.entityHitEntity.subscribe(data => {
-    if (data.damagingEntity.hasComponent(EntityComponentTypes.Equippable)) {
-        //@ts-ignore
-        if (data.damagingEntity.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Mainhand) == undefined) return;
-        //@ts-ignore
-        if (!hit_effects.includes(data.damagingEntity.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Mainhand).type.id)) return;
-        //@ts-ignore
-        const itemId = data.damagingEntity.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Mainhand).typeId
-        switch(itemId){
-            case 'poke:demonic_sword':{data.hitEntity.addEffect('slowness', 100, {amplifier: 3});return;}
-            case 'poke:hellish_blade':{data.hitEntity.addEffect('slowness', 40, {amplifier: 3});return;}
-            case 'poke:godly_sword':{data.damagingEntity.addEffect('strength', 100, {amplifier: 2});return;}
-            case 'poke:holy_sword':{data.damagingEntity.addEffect('strength', 40, {amplifier: 1});return;}
-            case 'poke:astral_sword':{data.damagingEntity.addEffect('strength', 100, {amplifier: 2});return;}
-            case 'poke:shade_sword':{data.hitEntity.addEffect('slowness', 40, {amplifier: 2});data.hitEntity.addEffect('wither', 60, {amplifier: 1});return;}
-            case 'poke:radium_sword':{data.hitEntity.addEffect('slowness', 220, {amplifier: 3});data.hitEntity.addEffect('wither', 240, {amplifier: 4});return;}
-            case 'poke:amethyst_scythe':{data.damagingEntity.addEffect('speed', 100, {amplifier: 4});data.hitEntity.addEffect('blindness', 20);return;}
-            case 'poke:demonic_slasher':{data.damagingEntity.addEffect('speed', 100, {amplifier: 7});data.hitEntity.addEffect('wither', 80, {amplifier:1});return;}
-            case 'poke:gold_scythe':{data.damagingEntity.addEffect('speed', 100, {amplifier: 2});data.damagingEntity.addEffect('haste', 600, {amplifier: 2});return;}
-            case 'poke:emerald_scythe':{data.damagingEntity.addEffect('speed', 100, {amplifier: 2});data.damagingEntity.addEffect('village_hero', 2400, {amplifier: 1});return;}
-            case 'poke:iron_scythe':{data.damagingEntity.addEffect('speed', 100, {amplifier: 2});return;}
-            case 'poke:onyx_scythe':{data.damagingEntity.addEffect('speed', 200, {amplifier: 5});data.damagingEntity.addEffect('jump_boost', 100, {amplifier: 2});data.hitEntity.addEffect('weakness', 120, {amplifier: 2});return;}
-            case 'poke:godly_scythe':{data.damagingEntity.addEffect('speed', 200, {amplifier: 6});data.damagingEntity.addEffect('slow_falling', 2400);data.damagingEntity.addEffect('jump_boost', 1200, {amplifier: 3});return;}
-            case 'poke:hellish_scythe':{data.damagingEntity.addEffect('speed', 100, {amplifier: 7});data.damagingEntity.addEffect('fire_resistance', 2400);data.hitEntity.addEffect('mining_fatigue', 400, {amplifier: 1});return;}
-            case 'poke:holy_scythe':{data.damagingEntity.addEffect('speed', 200, {amplifier: 6});data.damagingEntity.addEffect('slow_falling', 2400, {amplifier: 1});data.hitEntity.addEffect('darkness', 400);return;}
-            case 'poke:shade_scythe':{data.damagingEntity.addEffect('absorption', 600, {amplifier: 1});data.damagingEntity.addEffect('strength', 100, {amplifier: 1});data.hitEntity.addEffect('slowness', 160, {amplifier: 2});return;}
-            case 'poke:diamond_scythe':{data.damagingEntity.addEffect('speed', 160, {amplifier: 3});data.hitEntity.addEffect('weakness', 100, {amplifier: 1});data.hitEntity.addEffect('blindness', 80);return;}
-            case 'poke:netherite_scythe':{data.damagingEntity.addEffect('speed', 160, {amplifier: 3});data.hitEntity.addEffect('hunger', 120, {amplifier: 1});data.hitEntity.addEffect('slowness', 80, {amplifier: 2});return;}
-            case 'poke:radium_scythe':{data.damagingEntity.addEffect('speed', 100, {amplifier: 5});data.hitEntity.addEffect('nausea', 80, {amplifier: 1});data.hitEntity.addEffect('fatal_poison', 160, {amplifier: 2});return;}
-            case 'poke:medic_scythe':{data.damagingEntity.addEffect('speed', 100, {amplifier: 6});data.damagingEntity.addEffect('health_boost', 2400, {amplifier: 2});return;}
-            case 'poke:galactic_scythe':{data.damagingEntity.addEffect('speed', 100, {amplifier: 9});data.damagingEntity.addEffect('fire_resistance', 300);data.hitEntity.addEffect('wither', 80, {amplifier: 2});data.hitEntity.addEffect('weakness', 80, {amplifier: 2});return;}
-            case 'poke:astral_scythe':{data.damagingEntity.addEffect('speed', 120, {amplifier: 9});data.damagingEntity.addEffect('fire_resistance', 300);data.hitEntity.addEffect('wither', 120, {amplifier: 2});data.hitEntity.addEffect('weakness', 120, {amplifier: 3});return;}
-            case 'poke:ember_scythe':{data.damagingEntity.addEffect('speed', 100, {amplifier: 6});data.hitEntity.addEffect('nausea', 80, {amplifier: 1});data.hitEntity.addEffect('blindness', 80);return;}
-            case 'poke:void_scythe':{data.damagingEntity.addEffect('speed', 200, {amplifier: 6});data.hitEntity.runCommand('function pfe_items/scythe/void');return;}
-            case 'poke:death_scythe':{data.damagingEntity.addEffect('speed', 200, {amplifier: 6});data.hitEntity.runCommand('function pfe_items/scythe/death');return;}
-            case 'poke:nebula_scythe':{data.damagingEntity.runCommand('function pfe_items/scythe/nebula');data.hitEntity.addEffect('wither', 80, {amplifier: 3});return;}
-            case 'poke:cobalt_scythe':{data.damagingEntity.addEffect('speed', 100, {amplifier: 6});data.hitEntity.addEffect('wither', 40, {amplifier: 1});return;}
-            case 'poke:nebula_sword':{data.damagingEntity.addEffect('strength', 40, {amplifier: 4});data.hitEntity.addEffect('weakness', 20, {amplifier: 2});return;}
-            case 'poke:ban_hammer':{data.damagingEntity.addEffect('strength', 40, {amplifier: 4});data.hitEntity.addEffect('weakness', 20, {amplifier: 2});return;}
-            case 'poke:circuit_sword':{data.damagingEntity.runCommand('function pfe_items/circuit_sword');data.hitEntity.addEffect('blindness', 100);return;}
-        }
-        return;
-    }
-})
 //Trapdoor block events
 class PFETrapdoor {
     onPlayerInteract(data:BlockComponentPlayerInteractEvent) {
         const blockLocation = `${data.block.location.x} ${data.block.location.y} ${data.block.location.z}`
         if (data.block.permutation.hasTag('pfe_trapdoor_open') == true) {
             data.block.setPermutation(data.block.permutation.withState('poke:trapdoor_open','no'))
-            data.block.dimension.runCommandAsync(`playsound open.iron_trapdoor @a ${blockLocation}`)
+            data.block.dimension.playSound(`open.iron_trapdoor`,data.block.center())
             return;
         }
         else {
             data.block.setPermutation(data.block.permutation.withState('poke:trapdoor_open','yes'))
-            data.block.dimension.runCommandAsync(`playsound close.iron_trapdoor @a ${blockLocation}`)
+            data.block.dimension.playSound(`close.iron_trapdoor`,data.block.center())
             return;
         }
     }
@@ -227,26 +148,26 @@ class PFEFortune {
         if (!enchantableComponent.hasEnchantment(MinecraftEnchantmentTypes.Fortune)) return;
         let fortuneLevel=enchantableComponent.getEnchantment(MinecraftEnchantmentTypes.Fortune)!.level
         let rng = Math.round(Math.random())
-        console.warn(rng)
+        //console.warn(rng)
         const blockLocation = `${data.block.x} ${data.block.y} ${data.block.z}`
         const blockId = data.destroyedBlockPermutation.type.id.substring(5)
         if (data.player?.getGameMode() == GameMode.survival) {
             if (fortuneLevel == 3) {
-                data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/blocks/${blockId}"`)
-                data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/blocks/${blockId}"`)
+                data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}"`)
+                data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}"`)
                 if (rng == 0) return;
-                data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/blocks/${blockId}"`)
+                data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}"`)
                 return;
             }
             if (fortuneLevel == 2) {
-                data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/blocks/${blockId}"`)
+                data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}"`)
                 if (rng == 0) return;
-                data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/blocks/${blockId}"`)
+                data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}"`)
                 return;
             }
             if (fortuneLevel == 1) {
                 if (rng == 0) return;
-                data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/blocks/${blockId}"`)
+                data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}"`)
                 return;
             }
             return;
@@ -264,10 +185,10 @@ class PFESlabs {
         const equippableComponent:EntityEquippableComponent = data.player!.getComponent(EntityComponentTypes.Equippable)
         const mainhand:ItemStack|undefined = equippableComponent.getEquipment(EquipmentSlot.Mainhand)
         if (mainhand != undefined){
-            if (mainhand.typeId == slabId && data.face == 'Up' && data.block.permutation.getState('poke:double') == false) {
+            if (mainhand.typeId == slabId && ((data.block.permutation.getState('minecraft:vertical_half') == "bottom" && data.face == Direction.Up)||(data.block.permutation.getState('minecraft:vertical_half') == "top" && data.face == Direction.Down)) && data.block.permutation.getState('poke:double') == false) {
                 var itemStackAmount = mainhand.amount -1
                 data.block.setPermutation(data.block.permutation.withState('poke:double',true))
-                data.block.dimension.runCommandAsync(`playsound use.stone @a ${blockLocation}`)
+                data.block.dimension.playSound(`use.stone`,data.block.center())
                 if (data.player?.getGameMode() == 'creative') return;
                 if (itemStackAmount <= 0) {
                     equippableComponent.setEquipment(EquipmentSlot.Mainhand, new ItemStack('minecraft:air',1))
@@ -276,9 +197,7 @@ class PFESlabs {
                 equippableComponent.setEquipment(EquipmentSlot.Mainhand, new ItemStack(slabId, itemStackAmount))
                 return;
             }
-            else {
-                return
-            }
+            else return;
         }
         return;
     }
@@ -416,46 +335,48 @@ class PFEDirter{
     onTick(data:BlockComponentTickEvent) {
         if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
             data.block.setPermutation(data.block.permutation.withState('pfe:active', 1))
-            if (data.block.typeId == 'poke:dirter_east') {
-                if (data.block.east()?.typeId == 'minecraft:cobblestone'){
-                    data.block.east()?.setType('minecraft:dirt')
-                    return;
+            switch(data.block.typeId){
+                case 'poke:dirter_east':{
+                    if (data.block.east()?.typeId == 'minecraft:cobblestone'){
+                        data.block.east()?.setType('minecraft:dirt')
+                        break;
+                    }
                 }
-            }
-            if (data.block.typeId == 'poke:dirter_west') {
-                if (data.block.west()?.typeId == 'minecraft:cobblestone'){
-                    data.block.west()?.setType('minecraft:dirt')
-                    return;
+                case 'poke:dirter_west':{
+                    if (data.block.west()?.typeId == 'minecraft:cobblestone'){
+                        data.block.west()?.setType('minecraft:dirt')
+                        break;
+                    }
                 }
-            }
-            if (data.block.typeId == 'poke:dirter_south') {
-                if (data.block.south()?.typeId == 'minecraft:cobblestone'){
-                    data.block.south()?.setType('minecraft:dirt')
-                    return;
+                case 'poke:dirter_south':{
+                    if (data.block.south()?.typeId == 'minecraft:cobblestone'){
+                        data.block.south()?.setType('minecraft:dirt')
+                        break;
+                    }
                 }
-            }
-            if (data.block.typeId == 'poke:dirter_north') {
-                if (data.block.north()?.typeId == 'minecraft:cobblestone'){
-                    data.block.north()?.setType('minecraft:dirt')
-                    return;
+                case 'poke:dirter_north':{
+                    if (data.block.north()?.typeId == 'minecraft:cobblestone'){
+                        data.block.north()?.setType('minecraft:dirt')
+                        break;
+                    }
                 }
-            }
-            if (data.block.typeId == 'poke:dirter_up') {
-                if (data.block.above()?.typeId == 'minecraft:cobblestone'){
-                    data.block.above()?.setType('minecraft:dirt')
-                    return;
+                case 'poke:dirter_up':{
+                    if (data.block.above()?.typeId == 'minecraft:cobblestone'){
+                        data.block.above()?.setType('minecraft:dirt')
+                        break;
+                    }
                 }
-            }
-            if (data.block.typeId == 'poke:dirter_down') {
-                if (data.block.below()?.typeId == 'minecraft:cobblestone'){
-                    data.block.below()?.setType('minecraft:dirt')
-                    return;
+                case 'poke:dirter_down':{
+                    if (data.block.below()?.typeId == 'minecraft:cobblestone'){
+                        data.block.below()?.setType('minecraft:dirt')
+                        break;
+                    }
                 }
-            }
-            if (data.block.typeId == 'poke:dirter') {
-                if (data.block.below()?.typeId == 'minecraft:cobblestone'){
-                    data.block.below()?.setType('minecraft:dirt')
-                    return;
+                case 'poke:dirter':{
+                    if (data.block.below()?.typeId == 'minecraft:cobblestone'){
+                        data.block.below()?.setType('minecraft:dirt')
+                        return;
+                    }
                 }
             }
             return;
@@ -472,74 +393,76 @@ class PFEDuster {
     onTick(data:BlockComponentTickEvent) {
         if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
             data.block.setPermutation(data.block.permutation.withState('pfe:active', 1))
-            if (data.block.typeId == 'poke:duster_east') {  
-                if (data.block.east()?.typeId == 'minecraft:dirt') {
-                    data.block.east()?.setType('minecraft:sand')
-                    return;
+            switch(data.block.typeId){
+                case 'poke:duster_east':{
+                    if (data.block.east()?.typeId == 'minecraft:dirt') {
+                        data.block.east()?.setType('minecraft:sand')
+                        break;
+                    }
+                    if (data.block.east()?.typeId == 'minecraft:cobblestone') {
+                        data.block.east()?.setType('minecraft:gravel')
+                        break;
+                    }
                 }
-                if (data.block.east()?.typeId == 'minecraft:cobblestone') {
-                    data.block.east()?.setType('minecraft:gravel')
-                    return;
+                case 'poke:duster_west':{
+                    if (data.block.west()?.typeId == 'minecraft:dirt') {
+                        data.block.west()?.setType('minecraft:sand')
+                        break;
+                    }
+                    if (data.block.west()?.typeId == 'minecraft:cobblestone') {
+                        data.block.west()?.setType('minecraft:gravel')
+                        break;
+                    }
                 }
-            }
-            if (data.block.typeId == 'poke:duster_west') {  
-                if (data.block.west()?.typeId == 'minecraft:dirt') {
-                    data.block.west()?.setType('minecraft:sand')
-                    return;
+                case 'poke:duster_south':{
+                    if (data.block.south()?.typeId == 'minecraft:dirt') {
+                        data.block.south()?.setType('minecraft:sand')
+                        break;
+                    }
+                    if (data.block.south()?.typeId == 'minecraft:cobblestone') {
+                        data.block.south()?.setType('minecraft:gravel')
+                        break;
+                    }
                 }
-                if (data.block.west()?.typeId == 'minecraft:cobblestone') {
-                    data.block.west()?.setType('minecraft:gravel')
-                    return;
+                case 'poke:duster_north':{
+                    if (data.block.north()?.typeId == 'minecraft:dirt') {
+                        data.block.north()?.setType('minecraft:sand')
+                        break;
+                    }
+                    if (data.block.north()?.typeId == 'minecraft:cobblestone') {
+                        data.block.north()?.setType('minecraft:gravel')
+                        break;
+                    }
                 }
-            }
-            if (data.block.typeId == 'poke:duster_south') {  
-                if (data.block.south()?.typeId == 'minecraft:dirt') {
-                    data.block.south()?.setType('minecraft:sand')
-                    return;
+                case 'poke:duster_up':{
+                    if (data.block.above()?.typeId == 'minecraft:dirt') {
+                        data.block.above()?.setType('minecraft:sand')
+                        break;
+                    }
+                    if (data.block.above()?.typeId == 'minecraft:cobblestone') {
+                        data.block.above()?.setType('minecraft:gravel')
+                        break;
+                    }
                 }
-                if (data.block.south()?.typeId == 'minecraft:cobblestone') {
-                    data.block.south()?.setType('minecraft:gravel')
-                    return;
+                case 'poke:duster_down':{
+                    if (data.block.below()?.typeId == 'minecraft:dirt') {
+                        data.block.below()?.setType('minecraft:sand')
+                        break;
+                    }
+                    if (data.block.below()?.typeId == 'minecraft:cobblestone') {
+                        data.block.below()?.setType('minecraft:gravel')
+                        break;
+                    }
                 }
-            }
-            if (data.block.typeId == 'poke:duster_north') {  
-                if (data.block.north()?.typeId == 'minecraft:dirt') {
-                    data.block.north()?.setType('minecraft:sand')
-                    return;
-                }
-                if (data.block.north()?.typeId == 'minecraft:cobblestone') {
-                    data.block.north()?.setType('minecraft:gravel')
-                    return;
-                }
-            }
-            if (data.block.typeId == 'poke:duster_up') {  
-                if (data.block.above()?.typeId == 'minecraft:dirt') {
-                    data.block.above()?.setType('minecraft:sand')
-                    return;
-                }
-                if (data.block.above()?.typeId == 'minecraft:cobblestone') {
-                    data.block.above()?.setType('minecraft:gravel')
-                    return;
-                }
-            }
-            if (data.block.typeId == 'poke:duster_down') {  
-                if (data.block.below()?.typeId == 'minecraft:dirt') {
-                    data.block.below()?.setType('minecraft:sand')
-                    return;
-                }
-                if (data.block.below()?.typeId == 'minecraft:cobblestone') {
-                    data.block.below()?.setType('minecraft:gravel')
-                    return;
-                }
-            }
-            if (data.block.typeId == 'poke:duster') {  
-                if (data.block.below()?.typeId == 'minecraft:dirt') {
-                    data.block.below()?.setType('minecraft:sand')
-                    return;
-                }
-                if (data.block.below()?.typeId == 'minecraft:cobblestone') {
-                    data.block.below()?.setType('minecraft:gravel')
-                    return;
+                case 'poke:duster':{
+                    if (data.block.below()?.typeId == 'minecraft:dirt') {
+                        data.block.below()?.setType('minecraft:sand')
+                        break;
+                    }
+                    if (data.block.below()?.typeId == 'minecraft:cobblestone') {
+                        data.block.below()?.setType('minecraft:gravel')
+                        break;
+                    }
                 }
             }
             return;
@@ -596,40 +519,17 @@ class PFEBulbs{
 //Calibrate Blocks
 class PFECalibrate {
     onPlayerInteract(data:BlockComponentPlayerInteractEvent) {
-        const ValidId = ['poke:duster','poke:dirter']
-        const bid = data.block.typeId
-        const blockId = bid.substring(0,bid.lastIndexOf("_"))
-        const blockFace = data.face
-        data.dimension.playSound('poke.calibrate', data.block.location)
-        if(ValidId.includes(bid)){
+        const OldId = ['poke:duster','poke:dirter']
+        const bId = data.block.typeId
+        const newBlock = `${bId.substring(0,bId.lastIndexOf("_"))}_${data.face.toLowerCase()}`
+        if(newBlock == bId)return;
+        if(OldId.includes(bId)){
             //Converts old Dirter / Duster into the Calibrated ones
-            data.block.setType(bid+'_up')
+            data.block.setType(bId+'_up')
             return;
         }
-        if (blockFace == 'East') {
-            data.block.setType(blockId+'_east')
-            return;
-        }
-        if (blockFace == 'West') {
-            data.block.setType(blockId+'_west')
-            return;
-        }
-        if (blockFace == 'North') {
-            data.block.setType(blockId+'_north')
-            return;
-        }
-        if (blockFace == 'South') {
-            data.block.setType(blockId+'_south')
-            return;
-        }
-        if (blockFace == 'Up') {
-            data.block.setType(blockId+'_up')
-            return;
-        }
-        if (blockFace == 'Down') {
-            data.block.setType(blockId+'_down')
-            return;
-        }
+        data.block.setType(newBlock)
+        data.dimension.playSound('poke.calibrate', data.block.center())
         return;
     }
 }
@@ -762,8 +662,16 @@ class PFECrop{
 //Lava Sponge
 class PFELavaSponge{
     onTick(data:BlockComponentTickEvent) {
-        const block_location = `${data.block.x} ${data.block.y} ${data.block.z}`
-        data.dimension.runCommand('execute positioned '+block_location+' run function poke/blocks/lava_sponge')
+        switch (MinecraftBlockTypes.Lava||MinecraftBlockTypes.FlowingLava){
+            case data.block.north()?.typeId:break;
+            case data.block.south()?.typeId:break;
+            case data.block.east()?.typeId:break;
+            case data.block.west()?.typeId:break;
+            case data.block.below()?.typeId:break;
+            case data.block.above()?.typeId:break;
+            default:return;
+        }
+        data.dimension.runCommand(`execute positioned ${data.block.x} ${data.block.y} ${data.block.z} run function poke/pfe/lava_sponge_to_molten`)
         return;
     }
 }
@@ -802,8 +710,15 @@ class PFECassette {
     onUse(data:ItemComponentUseEvent){
         const id = data.itemStack!.typeId
         const trackId = id.substring(id.lastIndexOf("_")).substring(1)
-        data.source.playMusic(`poke.record.${trackId}`,{fade:2.5})
-        data.source.playSound('poke.cassette_activate')
+        if (data.source.isSneaking){
+            data.source.queueMusic(`poke.record.${trackId}`)
+            data.source.playSound('poke.cassette_activate')
+            data.source.sendMessage({translate:`translation.poke:trackQueued`})
+            return;
+        }else{
+            data.source.playMusic(`poke.record.${trackId}`,{fade:2.5})
+            data.source.playSound('poke.cassette_activate')
+        }
         return;
     }
 }
@@ -815,7 +730,7 @@ class PFEWindzooka {
         const equippableComponent:EntityEquippableComponent= data.source.getComponent(EntityComponentTypes.Equippable)
         if (equippableComponent === undefined)return;
         const vierDirection= data.source.getViewDirection();
-        const location= data.source.location;
+        const location= data.source.getHeadLocation();
         const id = data.itemStack.getTags()
         //@ts-ignore
         const cooldownComp:ItemCooldownComponent=data.itemStack.getComponent('minecraft:cooldown')
@@ -831,7 +746,7 @@ class PFEWindzooka {
         }
         data.source.runCommand(''+id)
         cooldownComp.startCooldown(data.source)
-        const newItem = damage_item(data.itemStack)
+        const newItem = PFEDamageItem(data.itemStack)
         equippableComponent.setEquipment(EquipmentSlot.Mainhand, newItem)
         if (!newItem) {
             data.source.playSound("random.break")
@@ -860,7 +775,7 @@ class PFEOnUse {
         if (cooldownComp!=undefined)cooldownComp.startCooldown(data.source);
         //if (data.source.getGameMode() == 'creative') return; // <-- prevented items from being held down to continue using 
         if (!data.itemStack.hasComponent('minecraft:durability')) {return;}
-        const newItem = damage_item(data.itemStack)
+        const newItem = PFEDamageItem(data.itemStack)
         //@ts-ignore
         const equippableComponent:EntityEquippableComponent= data.source.getComponent(EntityComponentTypes.Equippable)
         equippableComponent.setEquipment(EquipmentSlot.Mainhand, newItem)
@@ -880,9 +795,9 @@ class PFEUpgrader {
         const block_location = `${data.block.x} ${data.block.y} ${data.block.z}`
         const itemIds = data.itemStack.typeId
         const itemId = itemIds.substring(5)
-        data.source.runCommandAsync(`execute positioned ${block_location} run function pfe_items/upgraders/${itemId}`)
+        data.source.runCommandAsync(`execute positioned ${block_location} run function poke/pfe/${itemId}`)
         if (player.getGameMode() == GameMode.creative) return;
-        const newItem = damage_item(data.itemStack)
+        const newItem = PFEDamageItem(data.itemStack)
         equippableComponent.setEquipment(EquipmentSlot.Mainhand, newItem)
         if (!newItem) {
             player.playSound("random.break")
@@ -953,8 +868,8 @@ class PFECrossbowAim {
     onUse(data:ItemComponentUseEvent){
         const cPlayers = data.source.dimension.getPlayers({excludeNames:[''+data.source.name]})
         var cPlayersLength = cPlayers.length;
-        //data.source.playAnimation('third_person_crossbow_equipped',{stopExpression:'!q.is_using_item',controller:'pfe-controller.animation.poke.crossbow2'})//Hand charging for everyone else
-        //data.source.playAnimation('waffle',{stopExpression:'!q.is_using_item',controller:'pfe-controller.animation.poke.crossbow2'})
+        //data.source.playAnimation('third_person_crossbow_equipped',{stopExpression:'!q.is_using_item',controller:'pfe-controller.animation.poke_pfe.crossbow2'})//Hand charging for everyone else
+        //data.source.playAnimation('waffle',{stopExpression:'!q.is_using_item',controller:'pfe-controller.animation.poke_pfe.crossbow2'})
         data.source.playAnimation('animation.player.first_person.crossbow_equipped',{stopExpression:'!q.is_using_item', players:[data.source.name+'']}) //Hand charging movement
         for (var i = cPlayersLength; i > 0; i--) {
             data.source.playAnimation('third_person_crossbow_equipped',{stopExpression: '!q.is_using_item', players:[cPlayers[i-1].name]})//Hand charging for everyone else
@@ -973,57 +888,6 @@ class PFEBlockInteract{
         }
     }
 }
-//from bedrock add-ons discord. was slightly modified to better fit the item(s) that would be using it
-const logList = ["minecraft:acacia_wood","minecraft:birch_wood","minecraft:cherry_wood","minecraft:dark_oak_wood","minecraft:jungle_wood","minecraft:mangrove_wood","minecraft:oak_wood","minecraft:spruce_wood","minecraft:acacia_log","minecraft:birch_log","minecraft:cherry_log","minecraft:dark_oak_log","minecraft:jungle_log","minecraft:mangrove_log","minecraft:oak_log","minecraft:spruce_log"]
-world.beforeEvents.playerBreakBlock.subscribe(data => {
-    if (data.itemStack == undefined) return
-    if(data.itemStack.typeId != 'poke:nebula_logger') return
-    var block = data.block;
-    var veinMiner = (logList.includes(block.typeId));
-    if (veinMiner) {
-        let dimension = block.dimension;
-        let toBreak = [block.location];
-        let checked = new Set();
-
-        while (toBreak.length > 0) {
-            let location = toBreak.shift()!;
-            let key = `${location.x},${location.y},${location.z}`;
-            if (checked.has(key)) continue;
-            checked.add(key);
-
-            let currentBlock = dimension.getBlock(location);
-            if (currentBlock && logList.includes(currentBlock.typeId)) {
-                system.run(() => {
-                    dimension.runCommand(`setblock ${location.x} ${location.y} ${location.z} air destroy`);
-                });
-                let adjacent = [
-                    {x: location.x + 1, y: location.y, z: location.z},
-                    {x: location.x - 1, y: location.y, z: location.z},
-                    {x: location.x, y: location.y + 1, z: location.z},
-                    {x: location.x, y: location.y - 1, z: location.z},
-                    {x: location.x, y: location.y, z: location.z + 1},
-                    {x: location.x, y: location.y, z: location.z - 1},
-                    {x: location.x, y: location.y +1, z: location.z + 1},
-                    {x: location.x, y: location.y +1, z: location.z - 1},
-                    {x: location.x +1, y: location.y +1, z: location.z},
-                    {x: location.x -1, y: location.y +1, z: location.z},
-                    {x: location.x +1, y: location.y, z: location.z + 1},
-                    {x: location.x +1, y: location.y, z: location.z - 1},
-                    {x: location.x -1, y: location.y, z: location.z + 1},
-                    {x: location.x -1, y: location.y, z: location.z - 1},
-                    {x: location.x +1, y: location.y +1, z: location.z + 1},
-                    {x: location.x +1, y: location.y +1, z: location.z - 1},
-                    {x: location.x -1, y: location.y +1, z: location.z + 1},
-                    {x: location.x -1, y: location.y +1, z: location.z - 1}
-                ];
-                for (let loc of adjacent) {
-                    toBreak.push(loc);
-                }
-            }
-        }
-        data.cancel = true;
-    }
-});
 /**
  * Dodge Spell
  */
@@ -1039,7 +903,7 @@ class PFEDodge{
         data.source.dimension.spawnParticle('minecraft:wind_explosion_emitter',data.source.location)
         //console.warn(moveDirX+' || '+moveDirY+' || '+moveDirZ)
         data.source.applyKnockback(moveDir.x,moveDir.z,5,moveDir.y+0.5);
-        data.source.playSound('wind_charge.burst');
+        data.source.playSound('component.jump_to_block');
         if (data.source.getGameMode() == GameMode.creative) return;
         cooldownComponent.startCooldown(data.source)
         if (amount <= 1) {
@@ -1054,7 +918,7 @@ class PFE8Ball{
     onPlayerInteract(data:BlockComponentPlayerInteractEvent) {
         var RNG= Math.floor(Math.random() * 19)
         //console.warn(RNG)
-        data.player?.runCommand('tellraw @s {\"rawtext\":[{\"translate\":\"translation.poke:8ball'+RNG+'\",\"with\":{\"rawtext\":[{\"text\":\"\"}]}}]}')
+        data.player?.sendMessage({rawtext:[{translate:`translation.poke:8ball${RNG}`}]})
         return;
     }
 }
@@ -1130,100 +994,367 @@ class PFEWall{
         return;
     }
 }
+//Cassette Trader spawning
+system.runInterval(() => {
+    let allPlayers = world.getAllPlayers()
+    let randomPlayer = allPlayers.at(Math.abs(Math.round(Math.random() * (allPlayers.length-1))))
+    randomPlayer?.dimension.spawnEntity('poke:cassette_trader',randomPlayer.location).runCommand(`spreadplayers ~ ~ 30 40 @s ~10`)
+}, 216000/*3hrs*/ );
+
+function* PFEVeinMiner(data:ItemComponentMineBlockEvent){
+    let blocks = [data.block,data.block.above(),data.block.east(),data.block.north(),data.block.south(),data.block.west()]
+    let currentBlock = blocks.at(0)
+    for (let x = blocks.length; x < 0; blocks = blocks.concat([currentBlock,currentBlock?.above(),currentBlock?.east(),currentBlock?.north(),currentBlock?.south(),currentBlock?.west()])) {
+        if (currentBlock?.hasTag(`log`)){}
+    }
+}
 //Custom Component Registry (may warn about a spike on world loading because of how many components)
-world.beforeEvents.worldInitialize.subscribe(event => {
-    event.itemComponentRegistry.registerCustomComponent(
+world.beforeEvents.worldInitialize.subscribe(data => {
+    if (typeof world.getDynamicProperty(PFEBossEventConfigName) == "string"){
+        //@ts-ignore
+        let settings:PFEBossEventConfig = JSON.parse(world.getDynamicProperty(PFEBossEventConfigName))
+        //To prevent errors it will reset the settings to default if a setting was missing/invalid
+        if ((typeof settings.ticks != "number")||(typeof settings.furnaceGolem != "object")||(typeof settings.knightling != "object")||(typeof settings.listener != "object")||(typeof settings.zombken != "object")||(typeof settings.miniDemonicAllay != "object")||(typeof settings.necromancer != "object")||(typeof settings.snowman != "object")||(typeof settings.sparky != "object")||(typeof settings.superStriker != "object")||(typeof settings.theLogger != "object")){
+            //console.warn(`Some Boss Event Settings were invalid; Resetting settings to default || PFE`)
+            world.setDynamicProperty(PFEBossEventConfigName,JSON.stringify(PFEDefaultBossEventSettings));
+        };
+        
+    } else{
+        //console.warn(`Some Boss Event Settings were invalid; Resetting settings to default || PFE`)
+        world.setDynamicProperty(PFEBossEventConfigName,JSON.stringify(PFEDefaultBossEventSettings))
+    }
+    data.itemComponentRegistry.registerCustomComponent(
+        "poke:boss_event_config", new PFEBossEventUI()
+    )
+    //Item Components
+    data.itemComponentRegistry.registerCustomComponent(
+        "poke:boss_event", {onUse(data){
+            if(PFEStartBossEvent() == 0){
+                data.source.sendMessage({translate:`translation.poke:bossEventNoSpawnError`})
+                data.source.playSound(`note.didgeridoo`,{pitch:0.825})
+                return
+            };
+            if(data.source.getGameMode() == GameMode.creative)return;
+            //@ts-ignore
+            data.source.getComponent(EntityComponentTypes.Equippable).setEquipment(EquipmentSlot.Mainhand, PFEDecrementStack(data.itemStack!))
+        }}
+    )
+    data.itemComponentRegistry.registerCustomComponent(
+        'poke:veinMiner',{
+            onMineBlock(data){
+                if (!data.minedBlockPermutation.hasTag('minecraft:is_axe_item_destructible'))return;
+                let dimension = data.block.dimension;
+                let location = data.block.location
+                let toBreak = [
+                    {x: location.x + 1, y: location.y, z: location.z},
+                    {x: location.x - 1, y: location.y, z: location.z},
+                    {x: location.x, y: location.y + 1, z: location.z},
+                    {x: location.x, y: location.y - 1, z: location.z},
+                    {x: location.x, y: location.y, z: location.z + 1},
+                    {x: location.x, y: location.y, z: location.z - 1},
+                    {x: location.x, y: location.y +1, z: location.z + 1},
+                    {x: location.x, y: location.y +1, z: location.z - 1},
+                    {x: location.x +1, y: location.y +1, z: location.z},
+                    {x: location.x -1, y: location.y +1, z: location.z},
+                    {x: location.x +1, y: location.y, z: location.z + 1},
+                    {x: location.x +1, y: location.y, z: location.z - 1},
+                    {x: location.x -1, y: location.y, z: location.z + 1},
+                    {x: location.x -1, y: location.y, z: location.z - 1},
+                    {x: location.x +1, y: location.y +1, z: location.z + 1},
+                    {x: location.x +1, y: location.y +1, z: location.z - 1},
+                    {x: location.x -1, y: location.y +1, z: location.z + 1},
+                    {x: location.x -1, y: location.y +1, z: location.z - 1},
+                    {x: location.x +1, y: location.y -1, z: location.z + 1},
+                    {x: location.x +1, y: location.y -1, z: location.z - 1},
+                    {x: location.x -1, y: location.y -1, z: location.z + 1},
+                    {x: location.x -1, y: location.y -1, z: location.z - 1},
+                    {x: location.x, y: location.y -1, z: location.z + 1},
+                    {x: location.x, y: location.y -1, z: location.z - 1},
+                    {x: location.x +1, y: location.y -1, z: location.z},
+                    {x: location.x -1, y: location.y -1, z: location.z},
+                ];
+                let checked = new Set();
+                //cap is 256 so game world will not crash if used on an excessive amount of blocks
+                let max = 0
+                while (max < 256 && toBreak.length > 0) {
+                    location = toBreak.shift()!;
+                    let key = `${location.x},${location.y},${location.z}`;
+                    if (checked.has(key)) {
+                        //console.warn(`block already checked`)
+                        continue
+                    };
+                    checked.add(key);
+                    let currentBlock = undefined
+                    //to prevent the vein miner from randomly stopping if outside of world bounds
+                    try {
+                        currentBlock = dimension.getBlock(location);
+                    } catch (error) {
+                        continue
+                    }
+                    //console.warn(currentBlock?.getTags())
+                    if (data.minedBlockPermutation.matches(currentBlock!.typeId)) {
+                        dimension.runCommand(`setblock ${location.x} ${location.y} ${location.z} air destroy`);
+                        max = max+1
+                        //console.warn(max)
+                        let adjacent = [
+                            {x: location.x + 1, y: location.y, z: location.z},
+                            {x: location.x - 1, y: location.y, z: location.z},
+                            {x: location.x, y: location.y + 1, z: location.z},
+                            {x: location.x, y: location.y - 1, z: location.z},
+                            {x: location.x, y: location.y, z: location.z + 1},
+                            {x: location.x, y: location.y, z: location.z - 1},
+                            {x: location.x, y: location.y +1, z: location.z + 1},
+                            {x: location.x, y: location.y +1, z: location.z - 1},
+                            {x: location.x +1, y: location.y +1, z: location.z},
+                            {x: location.x -1, y: location.y +1, z: location.z},
+                            {x: location.x +1, y: location.y, z: location.z + 1},
+                            {x: location.x +1, y: location.y, z: location.z - 1},
+                            {x: location.x -1, y: location.y, z: location.z + 1},
+                            {x: location.x -1, y: location.y, z: location.z - 1},
+                            {x: location.x +1, y: location.y +1, z: location.z + 1},
+                            {x: location.x +1, y: location.y +1, z: location.z - 1},
+                            {x: location.x -1, y: location.y +1, z: location.z + 1},
+                            {x: location.x -1, y: location.y +1, z: location.z - 1},
+                            {x: location.x +1, y: location.y -1, z: location.z + 1},
+                            {x: location.x +1, y: location.y -1, z: location.z - 1},
+                            {x: location.x -1, y: location.y -1, z: location.z + 1},
+                            {x: location.x -1, y: location.y -1, z: location.z - 1},
+                            {x: location.x, y: location.y -1, z: location.z + 1},
+                            {x: location.x, y: location.y -1, z: location.z - 1},
+                            {x: location.x +1, y: location.y -1, z: location.z},
+                            {x: location.x -1, y: location.y -1, z: location.z},
+                        ];
+                        for (let loc of adjacent) {
+                            toBreak.push(loc)
+                        }
+                    }
+                }
+            }
+        }
+    )
+    data.itemComponentRegistry.registerCustomComponent(
+        "poke:normalMining", {
+            onMineBlock(data){
+                if (data.source.typeId != "minecraft:player")return;
+                //@ts-ignore
+                if(data.source.getGameMode() == GameMode.creative)return;
+                const newItem = PFEDamageItemUB(data.itemStack!,undefined)
+                //@ts-ignore
+                data.source.getComponent(EntityComponentTypes.Equippable)!.setEquipment(EquipmentSlot.Mainhand, newItem)
+                if (!newItem) {
+                    //@ts-ignore
+                    data.source.playSound("random.break")
+                }
+                return;
+            }
+        }
+    )
+    data.itemComponentRegistry.registerCustomComponent(
+        "poke:shootProjectile", {
+            onUse(data:ItemComponentUseEvent){
+                if(data.itemStack==undefined)return;
+                const headLocate = data.source.getHeadLocation();
+                //@ts-ignore
+                const ticks:number = data.itemStack.getComponent('cooldown').cooldownTicks
+                //@ts-ignore
+                if (data.itemStack.getComponent('cooldown').getCooldownTicksRemaining(data.source) != ticks -1) return;
+                //Projectile shooters. projectile id defined in a tag on the item
+                    const pTag = data.itemStack.getTags();
+                    const angle = data.source.getViewDirection();
+                    const projEntity = data.source.dimension.spawnEntity(''+pTag,headLocate);
+                    //@ts-ignore
+                    const projComp:EntityProjectileComponent = projEntity.getComponent("projectile");
+                    data.source.playSound('random.bow')
+                    projComp.owner = data.source;
+                    projComp.shoot(angle);
+                if (data.source.getGameMode() == GameMode.creative) return
+                const newItem = PFEDamageItem(data.itemStack)
+                //@ts-ignore
+                data.source.getComponent(EntityComponentTypes.Equippable).setEquipment(EquipmentSlot.Mainhand, newItem)
+                if (!newItem) {
+                    data.source.playSound("random.break")
+                }
+                return;
+            }
+        }
+    )
+    data.itemComponentRegistry.registerCustomComponent(
+        "poke:hitEffects",{
+            onHitEntity(data){
+                const hit_effects = ["poke:holy_scythe","poke:hellish_scythe","poke:godly_scythe","poke:galactic_scythe","poke:demonic_slasher","poke:ember_scythe","poke:death_scythe","poke:void_scythe","poke:radium_scythe","poke:netherite_scythe","poke:diamond_scythe","poke:shade_scythe","poke:onyx_scythe","poke:iron_scythe","poke:gold_scythe","poke:emerald_scythe","poke:nebula_scythe","poke:ban_hammer"]
+                if (data.attackingEntity.hasComponent(EntityComponentTypes.Equippable)) {
+                    //@ts-ignore
+                    if (data.attackingEntity.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Mainhand) == undefined) return;
+                    //@ts-ignore
+                    if (!hit_effects.includes(data.attackingEntity.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Mainhand).type.id)) return;
+                    //@ts-ignore
+                    const itemId = data.attackingEntity.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Mainhand).typeId
+                    switch(itemId){
+                        case 'poke:demonic_sword':{data.hitEntity.addEffect('slowness', 100, {amplifier: 3});return;}
+                        case 'poke:hellish_blade':{data.hitEntity.addEffect('slowness', 40, {amplifier: 3});return;}
+                        case 'poke:godly_sword':{data.attackingEntity.addEffect('strength', 100, {amplifier: 2});return;}
+                        case 'poke:holy_sword':{data.attackingEntity.addEffect('strength', 40, {amplifier: 1});return;}
+                        case 'poke:astral_sword':{data.attackingEntity.addEffect('strength', 100, {amplifier: 2});return;}
+                        case 'poke:shade_sword':{data.hitEntity.addEffect('slowness', 40, {amplifier: 2});data.hitEntity.addEffect('wither', 60, {amplifier: 1});return;}
+                        case 'poke:radium_sword':{data.hitEntity.addEffect('slowness', 220, {amplifier: 3});data.hitEntity.addEffect('wither', 240, {amplifier: 4});return;}
+                        case 'poke:amethyst_scythe':{data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, {amplifier: 4});data.hitEntity.addEffect('blindness', 20);return;}
+                        case 'poke:demonic_slasher':{data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, {amplifier: 7});data.hitEntity.addEffect('wither', 80, {amplifier:1});return;}
+                        case 'poke:gold_scythe':{data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, {amplifier: 2});data.attackingEntity.addEffect('haste', 600, {amplifier: 2});return;}
+                        case 'poke:emerald_scythe':{data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, {amplifier: 2});data.attackingEntity.addEffect('village_hero', 2400, {amplifier: 1});return;}
+                        case 'poke:iron_scythe':{data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, {amplifier: 2});return;}
+                        case 'poke:onyx_scythe':{data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 200, {amplifier: 5});data.attackingEntity.addEffect('jump_boost', 100, {amplifier: 2});data.hitEntity.addEffect('weakness', 120, {amplifier: 2});return;}
+                        case 'poke:godly_scythe':{data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 200, {amplifier: 6});data.attackingEntity.addEffect('slow_falling', 2400);data.attackingEntity.addEffect('jump_boost', 1200, {amplifier: 3});return;}
+                        case 'poke:hellish_scythe':{data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, {amplifier: 7});data.attackingEntity.addEffect(MinecraftEffectTypes.FireResistance, 2400);data.hitEntity.addEffect('mining_fatigue', 400, {amplifier: 1});return;}
+                        case 'poke:holy_scythe':{data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 200, {amplifier: 6});data.attackingEntity.addEffect('slow_falling', 2400, {amplifier: 1});data.hitEntity.addEffect('darkness', 400);return;}
+                        case 'poke:shade_scythe':{data.attackingEntity.addEffect('absorption', 600, {amplifier: 1});data.attackingEntity.addEffect('strength', 100, {amplifier: 1});data.hitEntity.addEffect('slowness', 160, {amplifier: 2});return;}
+                        case 'poke:diamond_scythe':{data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 160, {amplifier: 3});data.hitEntity.addEffect('weakness', 100, {amplifier: 1});data.hitEntity.addEffect('blindness', 80);return;}
+                        case 'poke:netherite_scythe':{data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 160, {amplifier: 3});data.hitEntity.addEffect('hunger', 120, {amplifier: 1});data.hitEntity.addEffect('slowness', 80, {amplifier: 2});return;}
+                        case 'poke:radium_scythe':{data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, {amplifier: 5});data.hitEntity.addEffect('nausea', 80, {amplifier: 1});data.hitEntity.addEffect('fatal_poison', 160, {amplifier: 2});return;}
+                        case 'poke:medic_scythe':{data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, {amplifier: 6});data.attackingEntity.addEffect('health_boost', 2400, {amplifier: 2});return;}
+                        case 'poke:galactic_scythe':{data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, {amplifier: 9});data.attackingEntity.addEffect(MinecraftEffectTypes.FireResistance, 300);data.hitEntity.addEffect('wither', 80, {amplifier: 2});data.hitEntity.addEffect('weakness', 80, {amplifier: 2});return;}
+                        case 'poke:astral_scythe':{data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 120, {amplifier: 9});data.attackingEntity.addEffect(MinecraftEffectTypes.FireResistance, 300);data.hitEntity.addEffect('wither', 120, {amplifier: 2});data.hitEntity.addEffect('weakness', 120, {amplifier: 3});return;}
+                        case 'poke:ember_scythe':{data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, {amplifier: 6});data.hitEntity.addEffect('nausea', 80, {amplifier: 1});data.hitEntity.addEffect('blindness', 80);return;}
+                        case 'poke:void_scythe':{data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 200, {amplifier: 6});data.hitEntity.runCommand('function poke/pfe/void_scythe');return;}
+                        case 'poke:death_scythe':{data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 200, {amplifier: 6});data.hitEntity.runCommand('function poke/pfe/death_scythe');return;}
+                        case 'poke:nebula_scythe':{data.attackingEntity.runCommand('function poke/pfe/nebula_scythe');data.hitEntity.addEffect('wither', 80, {amplifier: 3});return;}
+                        case 'poke:cobalt_scythe':{data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, {amplifier: 6});data.hitEntity.addEffect('wither', 40, {amplifier: 1});return;}
+                        case 'poke:nebula_sword':{data.attackingEntity.addEffect('strength', 40, {amplifier: 4});data.hitEntity.addEffect('weakness', 20, {amplifier: 2});return;}
+                        case 'poke:ban_hammer':{data.attackingEntity.addEffect('strength', 40, {amplifier: 4});data.hitEntity.addEffect('weakness', 20, {amplifier: 2});return;}
+                        case 'poke:circuit_sword':{data.attackingEntity.runCommand('function poke/pfe/circuit_sword');data.hitEntity.addEffect('blindness', 100);return;}
+                    }
+                    return;
+                }
+            }
+        }
+    )
+    data.itemComponentRegistry.registerCustomComponent(
+        "poke:consumeEffects", {
+            onConsume(data){
+                switch(data.itemStack.typeId){
+                    case 'poke:xp_vial':{data.source.runCommandAsync("xp 160 @s");return};
+                    case 'poke:cobalt_potion':{data.source.addEffect(MinecraftEffectTypes.NightVision, 3600);data.source.addEffect(MinecraftEffectTypes.Regeneration, 2400)}
+                    case 'poke:cobalt_soup':{data.source.addEffect(MinecraftEffectTypes.NightVision, 2400,{showParticles: false});return};
+                    case 'poke:root_beer':{data.source.addEffect(MinecraftEffectTypes.Speed, 600, {amplifier: 4,});return};
+                    case 'poke:pumpkin_spice':{data.source.addEffect(MinecraftEffectTypes.Invisibility, 600);data.source.addEffect(MinecraftEffectTypes.Speed, 600, {amplifier: 4,});return};
+                    case 'poke:crimson_sporeshroom_stew':{data.source.addEffect(MinecraftEffectTypes.FireResistance, 1200);return};
+                    case 'poke:warped_sporeshroom_stew':{data.source.addEffect(MinecraftEffectTypes.FireResistance, 1200);return};
+                    case 'poke:hellish_soup':{data.source.addEffect(MinecraftEffectTypes.FireResistance, 1200);return};
+                    case 'poke:nebula_noodles':{data.source.addEffect(MinecraftEffectTypes.Strength, 600, {amplifier: 7,});return};
+                    case 'poke:milk_bottle':{data.source.runCommandAsync("effect @s clear");return};
+                    case 'poke:demonic_potion':{data.source.runCommandAsync("function poke/pfe/demonic_potion");return};
+                    case 'poke:hellish_potion':{data.source.runCommandAsync("function poke/pfe/hellish_potion");return};
+                    case 'poke:nebula_potion':{data.source.runCommandAsync("function poke/pfe/nebula_potion");return};
+                    case 'poke:void_potion':{data.source.runCommandAsync("function poke/pfe/void_potion");return};
+                    case 'poke:death_potion':{data.source.kill();return};
+                    case 'poke:rotten_chicken':{data.source.addEffect(MinecraftEffectTypes.Nausea, 400);return};
+                    case 'poke:golden_chicken':{data.source.addEffect(MinecraftEffectTypes.VillageHero, 400, {amplifier: 1,});return};
+                    case 'poke:banished_star_x10':{data.source.runCommandAsync("damage @a[r=100] 32767000 entity_attack entity @s");return};
+                    case 'poke:banished_star_x9':{data.source.runCommandAsync("damage @s 32767000 entity_attack");return};
+                }
+                return;
+            }
+        }
+    )
+    data.itemComponentRegistry.registerCustomComponent(
+        "poke:haxelMining", new PFEHaxelMining()
+    )
+    data.itemComponentRegistry.registerCustomComponent(
         "poke:cc_dodge", new PFEDodge()
     )
-    event.itemComponentRegistry.registerCustomComponent(
+    data.itemComponentRegistry.registerCustomComponent(
         "poke:cc_bowAim", new PFEBowAim()
     );
-    event.itemComponentRegistry.registerCustomComponent(
+    data.itemComponentRegistry.registerCustomComponent(
         "poke:cc_crossbowAim", new PFECrossbowAim()
     );
-    event.itemComponentRegistry.registerCustomComponent(
+    data.itemComponentRegistry.registerCustomComponent(
         "poke:cc_spawnEgg", new PFESpawnEgg()
     );
-    event.itemComponentRegistry.registerCustomComponent(
+    data.itemComponentRegistry.registerCustomComponent(
         "poke:cas", new PFECassette()
     );
-    event.itemComponentRegistry.registerCustomComponent(
+    data.itemComponentRegistry.registerCustomComponent(
         "poke:cc_on_use", new PFEOnUse()
     );
-    event.itemComponentRegistry.registerCustomComponent(
+    data.itemComponentRegistry.registerCustomComponent(
         "poke:cc_zooka", new PFEWindzooka()
     );
-    event.blockComponentRegistry.registerCustomComponent(
-        "poke:trapdoor_event", new PFETrapdoor()
-    );
-    event.blockComponentRegistry.registerCustomComponent(
-        "poke:fortune", new PFEFortune()
-    );
-    event.blockComponentRegistry.registerCustomComponent(
-        "poke:slabs", new PFESlabs()
-    );
-    event.blockComponentRegistry.registerCustomComponent(
-        "poke:cc_bulbs", new PFEBulbs()
-    );
-    event.blockComponentRegistry.registerCustomComponent(
-        "poke:cc_phantomic_conduit", new PFEPhantomicConduit()
-    );
-    event.blockComponentRegistry.registerCustomComponent(
-        "poke:cc_da_conduit", new PFEDemonicAConduit()
-    );
-    event.blockComponentRegistry.registerCustomComponent(
-        "poke:cc_cobble_gen", new PFECobbleGen()
-    );
-    event.blockComponentRegistry.registerCustomComponent(
-        "poke:cc_cobbler", new PFECobbler()
-    );
-    event.blockComponentRegistry.registerCustomComponent(
-        "poke:cc_block_breaker", new PFEBlockBreaker()
-    );
-    event.blockComponentRegistry.registerCustomComponent(
-        "poke:cc_dirter", new PFEDirter()
-    );
-    event.blockComponentRegistry.registerCustomComponent(
-        "poke:cc_duster", new PFEDuster()
-    );
-    event.blockComponentRegistry.registerCustomComponent(
-        "poke:cc_magnet_block", new PFEMagnetBlock()
-    );
-    event.blockComponentRegistry.registerCustomComponent(
-        "poke:cc_calibrate", new PFECalibrate()
-    );
-    event.blockComponentRegistry.registerCustomComponent(
-        "poke:cc_CaliBlockBreaker", new PFECaliBlockBreaker()
-    );
-    event.blockComponentRegistry.registerCustomComponent(
-        "poke:cc_CaliCobbleGen", new PFECaliCobbleGen()
-    );
-    event.blockComponentRegistry.registerCustomComponent(
-        "poke:crops", new PFECrop()
-    );
-    event.blockComponentRegistry.registerCustomComponent(
-        "poke:cc_barometer", new PFEBarometer()
-    );
-    event.blockComponentRegistry.registerCustomComponent(
-        "poke:cc_lava_sponge", new PFELavaSponge()
-    );
-    event.itemComponentRegistry.registerCustomComponent(
+    data.itemComponentRegistry.registerCustomComponent(
         "poke:cc_upgrader", new PFEUpgrader()
     );
-    event.blockComponentRegistry.registerCustomComponent(
+    //Block Components
+    data.blockComponentRegistry.registerCustomComponent(
+        "poke:trapdoor_event", new PFETrapdoor()
+    );
+    data.blockComponentRegistry.registerCustomComponent(
+        "poke:fortune", new PFEFortune()
+    );
+    data.blockComponentRegistry.registerCustomComponent(
+        "poke:slabs", new PFESlabs()
+    );
+    data.blockComponentRegistry.registerCustomComponent(
+        "poke:cc_bulbs", new PFEBulbs()
+    );
+    data.blockComponentRegistry.registerCustomComponent(
+        "poke:cc_phantomic_conduit", new PFEPhantomicConduit()
+    );
+    data.blockComponentRegistry.registerCustomComponent(
+        "poke:cc_da_conduit", new PFEDemonicAConduit()
+    );
+    data.blockComponentRegistry.registerCustomComponent(
+        "poke:cc_cobble_gen", new PFECobbleGen()
+    );
+    data.blockComponentRegistry.registerCustomComponent(
+        "poke:cc_cobbler", new PFECobbler()
+    );
+    data.blockComponentRegistry.registerCustomComponent(
+        "poke:cc_block_breaker", new PFEBlockBreaker()
+    );
+    data.blockComponentRegistry.registerCustomComponent(
+        "poke:cc_dirter", new PFEDirter()
+    );
+    data.blockComponentRegistry.registerCustomComponent(
+        "poke:cc_duster", new PFEDuster()
+    );
+    data.blockComponentRegistry.registerCustomComponent(
+        "poke:cc_magnet_block", new PFEMagnetBlock()
+    );
+    data.blockComponentRegistry.registerCustomComponent(
+        "poke:cc_calibrate", new PFECalibrate()
+    );
+    data.blockComponentRegistry.registerCustomComponent(
+        "poke:cc_CaliBlockBreaker", new PFECaliBlockBreaker()
+    );
+    data.blockComponentRegistry.registerCustomComponent(
+        "poke:cc_CaliCobbleGen", new PFECaliCobbleGen()
+    );
+    data.blockComponentRegistry.registerCustomComponent(
+        "poke:crops", new PFECrop()
+    );
+    data.blockComponentRegistry.registerCustomComponent(
+        "poke:cc_barometer", new PFEBarometer()
+    );
+    data.blockComponentRegistry.registerCustomComponent(
+        "poke:cc_lava_sponge", new PFELavaSponge()
+    );
+    data.blockComponentRegistry.registerCustomComponent(
         "poke:cc_block_seat", new PFEBlockSeat()
     );
-    event.blockComponentRegistry.registerCustomComponent(
+    data.blockComponentRegistry.registerCustomComponent(
         "poke:cc_slab_loot", new PFESlabLoot()
     );
-    event.blockComponentRegistry.registerCustomComponent(
+    data.blockComponentRegistry.registerCustomComponent(
         "poke:cc_block_interact", new PFEBlockInteract()
-    )
-    event.blockComponentRegistry.registerCustomComponent(
+    );
+    data.blockComponentRegistry.registerCustomComponent(
         "poke:cc_8ball", new PFE8Ball()
-    )
-    event.blockComponentRegistry.registerCustomComponent(
+    );
+    data.blockComponentRegistry.registerCustomComponent(
         "poke:cc_wall", new PFEWall()
-    )
+    );
     return;
 })
+
+export {
+    PFEDamageItemUB
+}

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.13.0",
+	"format_version": "1.21.50",
 	"minecraft:structure_template_feature": {
 		"description": {
 			"identifier": "poke:broken_conduit_warm"

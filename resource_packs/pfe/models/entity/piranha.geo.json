@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.piranha",
+				"identifier": "geometry.poke_pfe.piranha",
 				"texture_width": 32,
 				"texture_height": 32,
 				"visible_bounds_width": 3,

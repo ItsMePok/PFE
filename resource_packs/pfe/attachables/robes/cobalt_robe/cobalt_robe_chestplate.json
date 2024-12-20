@@ -28,20 +28,10 @@
 		  "tide_trim":"textures/models/armor/trims/robe_tide",
 		  "vex_trim":"textures/models/armor/trims/robe_vex",
 		  "ward_trim":"textures/models/armor/trims/robe_ward",
-		  "wild_trim":"textures/models/armor/trims/robe_wild",
-		  "amethyst_palette":"textures/models/armor/trims/color_palettes/pumpkin",
-		  "copper_palette":"textures/models/armor/trims/color_palettes/pumpkin",
-		  "diamond_palette":"textures/models/armor/trims/color_palettes/pumpkin",
-		  "emerald_palette":"textures/models/armor/trims/color_palettes/pumpkin",
-		  "gold_palette":"textures/models/armor/trims/color_palettes/pumpkin",
-		  "iron_palette":"textures/models/armor/trims/color_palettes/pumpkin",
-		  "lapis_palette":"textures/models/armor/trims/color_palettes/pumpkin",
-		  "quartz_palette":"textures/models/armor/trims/color_palettes/pumpkin",
-		  "netherite_palette":"textures/models/armor/trims/color_palettes/pumpkin",
-			"redstone_palette":"textures/models/armor/trims/color_palettes/pumpkin"
+		  "wild_trim":"textures/models/armor/trims/robe_wild"
 		  }, 
 		"geometry": { 
-		  "default": "geometry.poke.ember_robe_chestplate"
+		  "default": "geometry.poke_pfe.ember_robe_chestplate"
 		}
 	  }
 	}

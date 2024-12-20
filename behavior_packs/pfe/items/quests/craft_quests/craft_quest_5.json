@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:craft_quest_5"
@@ -7,10 +7,11 @@
 		"components": {
 			"minecraft:icon":"poke_craft_quest",
 			"minecraft:tags": {"tags": [
-				"pfe:Command:function pfe_items/q_info/craft_5:pfeCommandEnd"
+				"pfe:Command:function poke/pfe/q_info_craft_5:pfeCommandEnd"
 			]},
-			"minecraft:custom_components": [
-				"poke:cc_on_use"
+			"minecraft:custom_components":[
+				"poke:cc_on_use",
+				"poke:normalMining"
 			],
 			"minecraft:use_modifiers": {
 				"use_duration": 0,

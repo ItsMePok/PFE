@@ -3,7 +3,7 @@
 	"minecraft:geometry" : [
 		{
 			"description" : {
-				"identifier" : "geometry.poke.bow_pulling_0",
+				"identifier" : "geometry.poke_pfe.bow_pulling_0",
 				"texture_width" : 16.0,
 				"texture_height" : 16.0
 			},
@@ -23,7 +23,7 @@
 		},
 		{
 			"description" : {
-				"identifier" : "geometry.poke.bow_pulling_1",
+				"identifier" : "geometry.poke_pfe.bow_pulling_1",
 				"texture_width" : 16.0,
 				"texture_height" : 16.0
 			},
@@ -43,7 +43,7 @@
 		},
 		{
 			"description" : {
-				"identifier" : "geometry.poke.bow_pulling_2",
+				"identifier" : "geometry.poke_pfe.bow_pulling_2",
 				"texture_width" : 16.0,
 				"texture_height" : 16.0
 			},
@@ -63,7 +63,7 @@
 		},
 		{
 			"description" : {
-				"identifier" : "geometry.poke.bow_standby",
+				"identifier" : "geometry.poke_pfe.bow_standby",
 				"texture_width" : 16.0,
 				"texture_height" : 16.0
 			},

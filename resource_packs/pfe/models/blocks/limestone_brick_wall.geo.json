@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.poke.limestone_brick_wall",
+				"identifier": "geometry.poke_pfe.limestone_brick_wall",
 				"texture_width": 16,
 				"texture_height": 16,
 				"visible_bounds_width": 2,

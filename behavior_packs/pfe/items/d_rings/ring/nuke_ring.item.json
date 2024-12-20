@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:nuke_ring",
@@ -8,6 +8,9 @@
 			}
 		},
 		"components": {
+			"minecraft:custom_components": [
+				"poke:shootProjectile"
+			],
 			"minecraft:repairable": {
 				"repair_items": [
 					{

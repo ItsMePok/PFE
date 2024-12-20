@@ -10,23 +10,23 @@
 				"default":"entity_emissive"
 			},
 			"geometry":{
-				"default":"geometry.poke.listener"
+				"default":"geometry.poke_pfe.listener"
 			},
-			"render_controllers":["controller.render.poke.default"],
+			"render_controllers":["controller.render.poke_pfe.default"],
 			"spawn_egg":{
 				"texture":"poke_spawn_listener"
 			},
 			"animations":{
-				"controller":"controller.animation.poke.listener",
+				"controller":"controller.animation.poke_pfe.listener",
 				"look_at_target":"animation.common.look_at_target",
-				"idle":"animation.poke.listener.idle",
-				"walk":"animation.poke.listener.walk",
-				"run":"animation.poke.listener.run",
-				"jump":"animation.poke.listener.jump",
-				"melee":"animation.poke.listener.melee",
-				"hurt":"animation.poke.listener.hurt",
-				"ranged":"animation.poke.listener.ranged",
-				"twitch":"animation.poke.listener.twitch"
+				"idle":"animation.poke_pfe.listener.idle",
+				"walk":"animation.poke_pfe.listener.walk",
+				"run":"animation.poke_pfe.listener.run",
+				"jump":"animation.poke_pfe.listener.jump",
+				"melee":"animation.poke_pfe.listener.melee",
+				"hurt":"animation.poke_pfe.listener.hurt",
+				"ranged":"animation.poke_pfe.listener.ranged",
+				"twitch":"animation.poke_pfe.listener.twitch"
 			},
 			"scripts":{
 				"animate":[

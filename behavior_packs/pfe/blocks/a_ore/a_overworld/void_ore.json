@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:void_ore",
@@ -14,7 +14,8 @@
 				"allows_wire_to_step_down": true
 			},
 			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 2//Deepslate
+				"seconds_to_destroy": 22.5,
+				"item_specific_speeds": [{"item":{"tags": "q.any_tag('minecraft:is_pickaxe')"},"destroy_speed": 4.5}]
 			},
 			"minecraft:map_color": "#131313",
 			"tag:pfe": {},
@@ -23,7 +24,8 @@
 			"tag:stone_pick_diggable":{},
 			"tag:minecraft:is_pickaxe_item_destructible":{},
 			"minecraft:geometry":{"identifier": "minecraft:geometry.full_block"},
-			"minecraft:loot": "loot_tables/poke/blocks/void_ore.json",
+			"minecraft:material_instances": {"*": {"texture": "poke_void_ore"}},
+			"minecraft:loot": "loot_tables/poke/pfe/void_ore.json",
 			"minecraft:custom_components":[
 				"poke:fortune"
 			]

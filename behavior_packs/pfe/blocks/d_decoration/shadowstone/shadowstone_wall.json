@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:shadowstone_wall",
@@ -82,8 +82,8 @@
 				"explosion_resistance": 30
 			},
 			"minecraft:geometry":{
-				"identifier": "geometry.poke.wall",
-				"culling": "poke:geometry.poke.wall",
+				"identifier": "geometry.poke_pfe.wall",
+				"culling": "poke:geometry.poke_pfe.wall",
 				"bone_visibility":{
 					"north": "q.block_state('pfe:wall_n')",
 					"south": "q.block_state('pfe:wall_s')",

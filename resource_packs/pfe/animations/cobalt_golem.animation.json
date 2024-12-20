@@ -1,7 +1,7 @@
 {
 	"format_version": "1.10.0",
 	"animations": {
-		"animation.poke.cobalt_golem.spawn": {
+		"animation.poke_pfe.cobalt_golem.spawn": {
 			"animation_length": 1,
 			"bones": {
 				"MainBody": {

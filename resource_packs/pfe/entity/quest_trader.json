@@ -5,16 +5,16 @@
 			"identifier":"poke:quest_trader",
 			"materials":{"default":"villager"},
 			"textures":{"default":"textures/entity/traders/poke_quest_trader"},
-			"geometry":{"default":"geometry.poke.quest.trader"},
+			"geometry":{"default":"geometry.poke_pfe.quest.trader"},
 			"animations":{
-				"general":"animation.shopkeeper.general",
+				"general":"animation.poke_pfe.shopkeeper.general",
 				"look_at_target":"animation.common.look_at_target",
-				"move":"animation.shopkeeper.move",
-				"idle":"animation.shopkeeper.idle",
-				"move_c":"controller.animation.shopkeeper.move",
-				"general_c":"controller.animation.shopkeeper.general"
+				"move":"animation.poke_pfe.shopkeeper.move",
+				"idle":"animation.poke_pfe.shopkeeper.idle",
+				"move_c":"controller.animation.poke_pfe.shopkeeper.move",
+				"general_c":"controller.animation.poke_pfe.shopkeeper.general"
 			},
-			"render_controllers":["controller.render.poke.default"],
+			"render_controllers":["controller.render.poke_pfe.default"],
 			"scripts":{"animate":["idle","move_c","general_c"]},
 			"spawn_egg":{
 				"texture":"poke_spawn_quest_trader"

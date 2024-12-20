@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:turnip_crop",
@@ -19,7 +19,7 @@
 						"origin": [-8, 0, -8],
 						"size": [16, 3, 16]
 					},
-					"minecraft:loot": "loot_tables/poke/blocks/turnip_crop_ungrown.json",
+					"minecraft:loot": "loot_tables/poke/pfe/turnip_crop_ungrown.json",
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "poke_turnip_1",
@@ -40,7 +40,7 @@
 						"origin": [-8, 0, -8],
 						"size": [16, 3, 16]
 					},
-					"minecraft:loot": "loot_tables/poke/blocks/turnip_crop_ungrown.json",
+					"minecraft:loot": "loot_tables/poke/pfe/turnip_crop_ungrown.json",
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "poke_turnip_1",
@@ -61,7 +61,7 @@
 						"origin": [-8, 0, -8],
 						"size": [16, 5, 16]
 					},
-					"minecraft:loot": "loot_tables/poke/blocks/turnip_crop_ungrown.json",
+					"minecraft:loot": "loot_tables/poke/pfe/turnip_crop_ungrown.json",
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "poke_turnip_2",
@@ -82,7 +82,7 @@
 						"origin": [-8, 0, -8],
 						"size": [16, 5, 16]
 					},
-					"minecraft:loot": "loot_tables/poke/blocks/turnip_crop_ungrown.json",
+					"minecraft:loot": "loot_tables/poke/pfe/turnip_crop_ungrown.json",
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "poke_turnip_2",
@@ -103,7 +103,7 @@
 						"origin": [-8, 0, -8],
 						"size": [16, 5, 16]
 					},
-					"minecraft:loot": "loot_tables/poke/blocks/turnip_crop_ungrown.json",
+					"minecraft:loot": "loot_tables/poke/pfe/turnip_crop_ungrown.json",
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "poke_turnip_2",
@@ -124,7 +124,7 @@
 						"origin": [-8, 0, -8],
 						"size": [16, 8, 16]
 					},
-					"minecraft:loot": "loot_tables/poke/blocks/turnip_crop.json",
+					"minecraft:loot": "loot_tables/poke/pfe/turnip_crop.json",
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "poke_turnip_3",
@@ -144,7 +144,7 @@
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 0
 			},
-			"minecraft:geometry": "geometry.poke.charred_poppy",
+			"minecraft:geometry": "geometry.poke_pfe.charred_poppy",
 			"minecraft:placement_filter":{"conditions": [{
 				"allowed_faces": [
 					"up"

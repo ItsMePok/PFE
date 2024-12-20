@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.poke.nv_goggles",
+				"identifier": "geometry.poke_pfe.nv_goggles",
 				"texture_width": 64,
 				"texture_height": 64,
 				"visible_bounds_width": 5,

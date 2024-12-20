@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:token_trader",
@@ -10,12 +10,12 @@
 		},
 		"components": {
 			"minecraft:type_family": {"family": ["poke:traders","mob"]},
-			"minecraft:loot": {"table": "loot_tables/poke/entities/token_trader.json"},
+			"minecraft:loot": {"table": "loot_tables/poke/pfe/token_trader.json"},
 			"minecraft:health": {"value": 20},
 			"minecraft:collision_box": {"width": 0.6,"height": 1.9},
 			"minecraft:movement": {"value": 0.0},"minecraft:behavior.float": {"priority": 0},
 			"minecraft:behavior.trade_with_player": {"priority": 1},
-			"minecraft:economy_trade_table": {"display_name": "Token Trader","table": "trading/economy_trades/poke_token_trader.json","new_screen": true,
+			"minecraft:economy_trade_table": {"display_name": "Token Trader","table": "trading/economy_trades/poke/pfe/token_trader.json","new_screen": true,
 			"hero_demand_discount": 0,
 			"persist_trades": false,
 			"cured_discount": [
@@ -73,7 +73,7 @@
 					{"item":"poke:miner_helmet"},
 					{"item":"poke:night_vision_goggles"}
 				],
-				"singular_pickup": false
+				"singular_pickup": true
 			},
 			"minecraft:behavior.pickup_items": {
 				"priority": 1,

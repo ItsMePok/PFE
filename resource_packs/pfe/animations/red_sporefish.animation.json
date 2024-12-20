@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.red_sporefish.flop": {
+		"animation.poke_pfe.red_sporefish.flop": {
 			"loop": true,
 			"bones": {
 				"body": {
@@ -15,7 +15,7 @@
 				}
 			}
 		},
-		"animation.red_sporefish.swim": {
+		"animation.poke_pfe.red_sporefish.swim": {
 			"loop": true,
 			"bones": {
 				"body": {

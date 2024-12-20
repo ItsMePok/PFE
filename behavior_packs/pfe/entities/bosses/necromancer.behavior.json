@@ -1,5 +1,5 @@
 { //this entity model, animations & textures was made by O2God for PFE
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:necromancer",
@@ -192,7 +192,7 @@
 				"height": 2.7
 			},
 			"minecraft:loot": {
-				"table": "loot_tables/poke/entities/necromancer.json"
+				"table": "loot_tables/poke/pfe/necromancer.json"
 			},
 			"minecraft:health": {
 				"value": 1500,

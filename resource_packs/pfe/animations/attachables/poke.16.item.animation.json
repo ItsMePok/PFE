@@ -1,7 +1,7 @@
 {
 	"format_version": "1.10.0",
 	"animations": {
-		"animation.poke.16.item.fp": {
+		"animation.poke_pfe.16.item.fp": {
 			"loop": true,
 			"bones": {
 				"rightitem": {
@@ -11,7 +11,7 @@
 				}
 			}
 		},
-		"animation.poke.16.item.3p": {
+		"animation.poke_pfe.16.item.3p": {
 			"loop": true,
 			"bones": {
 				"rightitem": {
@@ -21,7 +21,7 @@
 				}
 			}
 		},
-		"animation.poke.scythe.first_person_hold": {
+		"animation.poke_pfe.scythe.first_person_hold": {
 			"loop": "hold_on_last_frame",
 			"bones": {
 				"root_item": {
@@ -35,7 +35,7 @@
 				}
 			}
 		},
-		"animation.poke.baguette.1p": {
+		"animation.poke_pfe.baguette.1p": {
 			"loop": "hold_on_last_frame",
 			"bones": {
 				"root_item": {
@@ -49,7 +49,7 @@
 				}
 			}
 		},
-		"animation.poke.scythe.third_person_hold": {
+		"animation.poke_pfe.scythe.third_person_hold": {
 			"loop": true,
 			"bones": {
 				"root_item": {
@@ -64,7 +64,7 @@
 				}
 			}
 		},
-		"animation.poke.baguette.3p": {
+		"animation.poke_pfe.baguette.3p": {
 			"loop": "hold_on_last_frame",
 			"bones": {
 				"bone": {
@@ -74,7 +74,7 @@
 				}
 			}
 		},
-		"animation.poke.rr.3p": {
+		"animation.poke_pfe.rr.3p": {
 			"loop": "hold_on_last_frame",
 			"bones": {
 				"bone": {
@@ -83,7 +83,7 @@
 				}
 			}
 		},
-		"animation.poke.rr.1p": {
+		"animation.poke_pfe.rr.1p": {
 			"loop": "hold_on_last_frame",
 			"bones": {
 				"root_item": {
@@ -96,7 +96,7 @@
 				}
 			}
 		},
-		"animation.poke.crossbow.wield_first_person_pull": {
+		"animation.poke_pfe.crossbow.wield_first_person_pull": {
 			"loop": true,
 			"bones": {
 				"rightitem": {
@@ -108,7 +108,7 @@
 				}
 			}
 		},
-		"animation.poke.blazooka.3p": {
+		"animation.poke_pfe.blazooka.3p": {
 			"loop": "hold_on_last_frame",
 			"bones": {
 				"bone": {
@@ -118,7 +118,7 @@
 				}
 			}
 		},
-		"animation.poke.blazooka.1p": {
+		"animation.poke_pfe.blazooka.1p": {
 			"loop": "hold_on_last_frame",
 			"bones": {
 				"root_item": {
@@ -132,7 +132,7 @@
 				}
 			}
 		},
-		"animation.poke.baguette.eat": {
+		"animation.poke_pfe.baguette.eat": {
 			"loop": true,
 			"animation_length": 1.625,
 			"bones": {
@@ -156,7 +156,7 @@
 				}
 			}
 		},
-		"animation.poke.bow.frames": {
+		"animation.poke_pfe.bow.frames": {
 			"loop": "hold_on_last_frame",
 			"animation_length": 0.25,
 			"timeline": {
@@ -165,7 +165,7 @@
 				"0.25": "v.frame=3;"
 			}
 		},
-		"animation.poke.crossbow.frames": {
+		"animation.poke_pfe.crossbow.frames": {
 			"loop": false,
 			"animation_length": 1.25,
 			"sound_effects": {
@@ -189,14 +189,14 @@
 				"1.25": "v.frame=4;"
 			}
 		},
-		"animation.poke.crossbow.charged": {
+		"animation.poke_pfe.crossbow.charged": {
 			"loop": "hold_on_last_frame",
 			"animation_length": 0,
 			"timeline": {
 				"0.0": "v.charged=1;v.frame=4;"
 			}
 		},
-		"animation.poke.crossbow.shoot": {
+		"animation.poke_pfe.crossbow.shoot": {
 			"loop": true,
 			"animation_length": 0.1,
 			"sound_effects": {
@@ -208,7 +208,7 @@
 				"0.1": "v.charged=2;"
 			}
 		},
-		"animation.poke.sword.1p": {
+		"animation.poke_pfe.sword.1p": {
 			"loop": true,
 			"bones": {
 				"bone": {
@@ -218,7 +218,7 @@
 				}
 			}
 		},
-		"animation.poke.sword.3p": {
+		"animation.poke_pfe.sword.3p": {
 			"loop": true,
 			"bones": {
 				"bone": {

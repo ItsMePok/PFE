@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:warped_sporeshroom",
@@ -86,7 +86,7 @@
 								}
 							},
 							"add_items": {
-								"table": "loot_tables/poke/entities/sporeshroom_milk_bottle.json"
+								"table": "loot_tables/poke/pfe/sporeshroom_milk_bottle.json"
 							},
 							"use_item": true,
 							"play_sounds": "milk_suspiciously",
@@ -118,7 +118,7 @@
 								"target": "self"
 							},
 							"add_items": {
-								"table": "loot_tables/poke/entities/warped_sporeshroom_milk.json"
+								"table": "loot_tables/poke/pfe/warped_sporeshroom_milk.json"
 							},
 							"use_item": true,
 							"play_sounds": "milk_suspiciously",
@@ -584,7 +584,7 @@
 							"hurt_item": 1,
 							"play_sounds": "shear",
 							"spawn_items": {
-								"table": "loot_tables/poke/entities/warped_sporeshroom_shear.json"
+								"table": "loot_tables/poke/pfe/warped_sporeshroom_shear.json"
 							},
 							"particle_on_start": {
 								"particle_type": "largeexplode",

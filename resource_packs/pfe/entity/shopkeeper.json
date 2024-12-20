@@ -10,25 +10,25 @@
 				"default":"textures/entity/traders/poke_shopkeeper"
 			},
 			"geometry":{
-				"default":"geometry.poke.shopkeeper"
+				"default":"geometry.poke_pfe.shopkeeper"
 			},
 			"scripts":{
 				"scale":1
 			},
 			"animations":{
-				"general":"animation.shopkeeper.general",
+				"general":"animation.poke_pfe.shopkeeper.general",
 				"look_at_target":"animation.common.look_at_target",
-				"move":"animation.shopkeeper.move"
+				"move":"animation.poke_pfe.shopkeeper.move"
 			},
 			"animation_controllers":[
 				{
-					"general":"controller.animation.shopkeeper.general"
+					"general":"controller.animation.poke_pfe.shopkeeper.general"
 				},
 				{
-					"move":"controller.animation.shopkeeper.move"
+					"move":"controller.animation.poke_pfe.shopkeeper.move"
 				}
 			],
-			"render_controllers":["controller.render.poke.default"],
+			"render_controllers":["controller.render.poke_pfe.default"],
 			"spawn_egg":{
 				"texture":"poke_spawn_shopkeeper"
 			},

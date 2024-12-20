@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:cobalt_edged_glass",
@@ -15,6 +15,7 @@
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 0
 			},
+			"minecraft:geometry":{"identifier": "minecraft:geometry.full_block"},
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "poke_cobalt_edged_glass",

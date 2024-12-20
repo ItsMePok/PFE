@@ -10,19 +10,19 @@
 				"default":"textures/entity/bosses/poke_the_logger"
 			},
 			"geometry":{
-				"default":"geometry.poke.the_logger"
+				"default":"geometry.poke_pfe.the_logger"
 			},
-			"render_controllers":["controller.render.poke.default"],
+			"render_controllers":["controller.render.poke_pfe.default"],
 			"spawn_egg":{
 				"texture":"poke_spawn_logger"
 			},
 			"animations":{
-				"walk":"animation.poke.logger.walk",
-				"attack":"controller.animation.poke.logger.attack",
+				"walk":"animation.poke_pfe.logger.walk",
+				"attack":"controller.animation.poke_pfe.logger.attack",
 				"look_at_target":"animation.common.look_at_target",
-				"chainsaw_setup":"animation.poke.logger.chainsaw_setup",
-				"melee_attack":"animation.poke.logger.melee_attack",
-				"movement":"controller.animation.poke.logger.movement"//animationcontroller-controlsmultipleanimations
+				"chainsaw_setup":"animation.poke_pfe.logger.chainsaw_setup",
+				"melee_attack":"animation.poke_pfe.logger.melee_attack",
+				"movement":"controller.animation.poke_pfe.logger.movement"//animationcontroller-controlsmultipleanimations
 			},
 			"scripts":{
 				"animate":["movement","attack","look_at_target"]//animationsthatgetanimated

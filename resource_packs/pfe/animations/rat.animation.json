@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.poke.rat.walk": {
+		"animation.poke_pfe.rat.walk": {
 			"loop": true,
 			"anim_time_update": "query.modified_distance_moved",
 			"bones": {
@@ -40,7 +40,7 @@
 				}
 			}
 		},
-		"animation.poke.rat.idle": {
+		"animation.poke_pfe.rat.idle": {
 			"loop": true,
 			"animation_length": 5,
 			"bones": {
@@ -189,7 +189,7 @@
 				}
 			}
 		},
-		"animation.poke.rat.dance": {
+		"animation.poke_pfe.rat.dance": {
 			"loop": true,
 			"animation_length": 0.8,
 			"bones": {
@@ -408,7 +408,7 @@
 				]
 			}
 		},
-		"animation.poke.rat.sit": {
+		"animation.poke_pfe.rat.sit": {
 			"loop": true,
 			"bones": {
 				"body": {

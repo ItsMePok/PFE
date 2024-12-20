@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.raccoon.angry": {
+		"animation.poke_pfe.raccoon.angry": {
 			"loop": true,
 			"bones": {
 				"tail": {
@@ -9,7 +9,7 @@
 				}
 			}
 		},
-		"animation.raccoon.baby_scaling": {
+		"animation.poke_pfe.raccoon.baby_scaling": {
 			"loop": true,
 			"bones": {
 				"Head": {
@@ -18,7 +18,7 @@
 				}
 			}
 		},
-		"animation.raccoon.head_rot_z": {
+		"animation.poke_pfe.raccoon.head_rot_z": {
 			"loop": true,
 			"bones": {
 				"head": {
@@ -26,7 +26,7 @@
 				}
 			}
 		},
-		"animation.raccoon.leg_default": {
+		"animation.poke_pfe.raccoon.leg_default": {
 			"loop": true,
 			"bones": {
 				"leg0": {
@@ -43,7 +43,7 @@
 				}
 			}
 		},
-		"animation.raccoon.shaking": {
+		"animation.poke_pfe.raccoon.shaking": {
 			"loop": true,
 			"bones": {
 				"body": {
@@ -54,7 +54,7 @@
 				}
 			}
 		},
-		"animation.raccoon.sitting": {
+		"animation.poke_pfe.raccoon.sitting": {
 			"loop": true,
 			"bones": {
 				"body": {
@@ -86,7 +86,7 @@
 				}
 			}
 		},
-		"animation.raccoon.tail_default": {
+		"animation.poke_pfe.raccoon.tail_default": {
 			"loop": true,
 			"bones": {
 				"tail": {
@@ -94,7 +94,7 @@
 				}
 			}
 		},
-		"animation.idle.raccoon": {
+		"animation.poke_pfe.idle.raccoon": {
 			"loop": true,
 			"animation_length": 4.1667,
 			"bones": {
@@ -179,7 +179,7 @@
 				}
 			}
 		},
-		"animation.walk.raccoon": {
+		"animation.poke_pfe.walk.raccoon": {
 			"loop": true,
 			"animation_length": 0.75,
 			"bones": {
@@ -240,7 +240,7 @@
 				}
 			}
 		},
-		"animation.run.raccoon": {
+		"animation.poke_pfe.run.raccoon": {
 			"loop": true,
 			"animation_length": 1.08333,
 			"bones": {
@@ -370,7 +370,7 @@
 				}
 			}
 		},
-		"animation.poke.raccoon.sit": {
+		"animation.poke_pfe.raccoon.sit": {
 			"loop": "hold_on_last_frame",
 			"bones": {
 				"Ll": {
@@ -399,7 +399,7 @@
 				}
 			}
 		},
-		"animation.poke.raccoon.setup": {
+		"animation.poke_pfe.raccoon.setup": {
 			"loop": true,
 			"bones": {
 				"Body": {

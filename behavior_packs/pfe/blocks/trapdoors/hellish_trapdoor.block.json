@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:hellish_trapdoor",
@@ -25,7 +25,7 @@
 				"explosion_resistance": 30
 			},
 			"minecraft:map_color": "#c02318",
-			"minecraft:geometry":"geometry.poke.trapdoor",
+			"minecraft:geometry":"geometry.poke_pfe.trapdoor",
 			"minecraft:material_instances": {
 				"*": {"texture": "poke_hellish_trapdoor",
 			"render_method": "blend"}

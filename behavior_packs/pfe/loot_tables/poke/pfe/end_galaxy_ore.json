@@ -1,0 +1,44 @@
+{
+	"pools": [
+		{
+			"rolls": 7,
+			"entries": [
+				{
+					"type": "item",
+					"name": "poke:galaxy_nugget"
+				},
+				{
+					"type": "empty"
+				}
+			]
+		},
+		{
+			"rolls": 2,
+			"entries": [
+				{
+					"type": "item",
+					"name": "poke:galaxy_nugget"
+				}
+			]
+		},
+        {
+            "rolls":1,
+            "entries": [
+                {
+                    "type": "empty",
+                    "weight": 9999
+                },
+                {
+                    "type": "item",
+                    "name": "poke:pickaxe_hat",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "poke:pfe-ingot_pottery_sherd",
+                    "weight": 1
+                }
+            ]
+        }
+	]
+}

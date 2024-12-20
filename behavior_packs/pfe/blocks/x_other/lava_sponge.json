@@ -1,10 +1,11 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:lava_sponge",
 			"menu_category": {
-				"category": "items"
+				"category": "items",
+				"group": "itemGroup.name.sponge"
 			}
 		},
 		"components": {

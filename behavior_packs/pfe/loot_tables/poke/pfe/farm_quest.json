@@ -1,0 +1,33 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "poke:farm_quest_1"
+				},
+				{
+					"type": "item",
+					"name": "poke:farm_quest_2"
+				},
+				{
+					"type": "item",
+					"name": "poke:farm_quest_3"
+				},
+				{
+					"type": "item",
+					"name": "poke:farm_quest_4"
+				},
+				{
+					"type": "item",
+					"name": "poke:farm_quest_5"
+				},
+				{
+					"type": "item",
+					"name": "poke:farm_quest_6"
+				}
+			]
+		}
+	]
+}

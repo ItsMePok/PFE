@@ -32,14 +32,12 @@
 				"sit":"animation.mushroom_buddy.sit",
 				"look_at_target":"animation.common.look_at_target",
 				"baby_transform":"animation.mushroom_buddy.baby_transform",
-				"lie_down":"animation.mushroom_buddy.lie_down",
 				"move":"controller.animation.cat.move",
-				"baby":"controller.animation.cat.baby",
-				"mushroom_buddy_control":"controller.animation.poke.mushroom.buddy",
-				"idle":"animation.poke.mushroom_buddy.idle"
+				"mushroom_buddy_control":"controller.animation.poke_pfe.mushroom.buddy",
+				"idle":"animation.poke_pfe.mushroom_buddy.idle"
 			},
 			"scripts":{"animate":["mushroom_buddy_control"]},
-			"render_controllers":["controller.render.poke.mushroom.buddy"],
+			"render_controllers":["controller.render.poke_pfe.mushroom.buddy"],
 			"spawn_egg":{
 				"base_color":"#ff0066",
 				"overlay_color":"#ffffff"

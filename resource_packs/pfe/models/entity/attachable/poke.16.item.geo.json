@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.poke.16.item",
+				"identifier": "geometry.poke_pfe.16.item",
 				"texture_width": 16,
 				"texture_height": 16,
 				"visible_bounds_width": 1,

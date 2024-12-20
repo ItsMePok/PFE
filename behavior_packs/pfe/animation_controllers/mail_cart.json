@@ -1,7 +1,7 @@
 {
 	"format_version": "1.10.0",
 	"animation_controllers": {
-		"controller.animation.poke.mail_cart.death": {
+		"controller.animation.poke_pfe.mail_cart.death": {
 		"initial_state":"default",
 			"states": {
 				"default": {
@@ -12,7 +12,7 @@
 					]
 				},
 				"dead": {
-					"on_entry": ["/function poke/entities/mail_cart"]
+					"on_entry": ["/function poke/pfe/mail_cart"]
 				}
 			}
 		}
