@@ -1,5 +1,5 @@
 // scripts/main.ts
-import { system as system3, world as world2, EquipmentSlot as EquipmentSlot2, GameMode as GameMode2, EntityComponentTypes as EntityComponentTypes2, ItemComponentTypes as ItemComponentTypes2, ItemStack as ItemStack2, Direction } from "@minecraft/server";
+import { system as system3, world as world3, EquipmentSlot as EquipmentSlot2, GameMode as GameMode2, EntityComponentTypes as EntityComponentTypes2, ItemComponentTypes as ItemComponentTypes2, ItemStack as ItemStack2, Direction } from "@minecraft/server";
 
 // node_modules/@minecraft/vanilla-data/lib/index.js
 var MinecraftBiomeTypes = ((MinecraftBiomeTypes2) => {
@@ -2941,16 +2941,42 @@ var PFEBossEventUI = class {
 
 // scripts/haxelMining.ts
 import { EntityComponentTypes, EquipmentSlot, GameMode, ItemComponentTypes, ItemStack, system as system2 } from "@minecraft/server";
+import { ActionFormData as ActionFormData2, ModalFormData as ModalFormData2 } from "@minecraft/server-ui";
+var PFEHaxelConfigDefault = {
+  "blacklist": [
+    MinecraftBlockTypes.Chest,
+    MinecraftBlockTypes.Barrel,
+    MinecraftBlockTypes.BuddingAmethyst,
+    MinecraftBlockTypes.MobSpawner,
+    MinecraftBlockTypes.TrialSpawner,
+    MinecraftBlockTypes.Vault,
+    MinecraftBlockTypes.Bed
+  ]
+};
 var PFEHaxelMining = class {
   onUse(data) {
+    let dynamicProperty = data.itemStack?.getDynamicProperty("pfe:haxelInfo");
+    console.warn(dynamicProperty);
+    if (dynamicProperty == void 0) {
+      data.itemStack?.setDynamicProperty("pfe:haxelInfo", JSON.stringify(PFEHaxelConfigDefault));
+      data.source.getComponent(EntityComponentTypes.Equippable).setEquipment(EquipmentSlot.Mainhand, data.itemStack);
+      dynamicProperty = PFEHaxelConfigDefault;
+    } else
+      dynamicProperty = JSON.parse(dynamicProperty);
     const ItemTags = data.itemStack.getTags().toString();
     let ComponentInfo = JSON.parse(ItemTags.substring(ItemTags.indexOf("pfe:HaxelMining:"), ItemTags.indexOf(":pfeHaxelMiningEnd")).substring(16));
+    if (data.source.isSneaking) {
+      PFEHaxelConfigMenu(data, ComponentInfo);
+      return;
+    }
+    let localBlacklist = [];
+    localBlacklist = dynamicProperty.blacklist;
+    let BannedBlocks = [MinecraftBlockTypes.Air, MinecraftBlockTypes.LightBlock, MinecraftBlockTypes.Barrier, MinecraftBlockTypes.Jigsaw, MinecraftBlockTypes.StructureBlock, MinecraftBlockTypes.CommandBlock, MinecraftBlockTypes.ChainCommandBlock, MinecraftBlockTypes.RepeatingCommandBlock, MinecraftBlockTypes.BorderBlock, MinecraftBlockTypes.Allow, MinecraftBlockTypes.Deny, "minecraft:light_block_0", "minecraft:light_block_1", "minecraft:light_block_2", "minecraft:light_block_3", "minecraft:light_block_4", "minecraft:light_block_5", "minecraft:light_block_6", "minecraft:light_block_7", "minecraft:light_block_8", "minecraft:light_block_9", "minecraft:light_block_10", "minecraft:light_block_11", "minecraft:light_block_13", "minecraft:light_block_14", "minecraft:light_block_15"];
     let location = { x: Math.round(data.source.location.x - ComponentInfo.radius.x / 2), y: Math.round(data.source.location.y - 0.01), z: Math.round(data.source.location.z - ComponentInfo.radius.z / 2) };
-    system2.runJob(PFEMine(ComponentInfo, location, data.source, data.source.dimension, data.itemStack.getComponent(ItemComponentTypes.Enchantable).hasEnchantment(MinecraftEnchantmentTypes.SilkTouch), data.itemStack));
+    system2.runJob(PFEMine(BannedBlocks.concat(localBlacklist), ComponentInfo, location, data.source, data.source.dimension, data.itemStack.getComponent(ItemComponentTypes.Enchantable).hasEnchantment(MinecraftEnchantmentTypes.SilkTouch), data.itemStack));
   }
 };
-var BannedBlocks = [MinecraftBlockTypes.Air, MinecraftBlockTypes.LightBlock, MinecraftBlockTypes.Barrier, MinecraftBlockTypes.Jigsaw, MinecraftBlockTypes.StructureBlock, MinecraftBlockTypes.CommandBlock, MinecraftBlockTypes.ChainCommandBlock, MinecraftBlockTypes.RepeatingCommandBlock, MinecraftBlockTypes.BorderBlock, MinecraftBlockTypes.Allow, MinecraftBlockTypes.Deny, "minecraft:light_block_0", "minecraft:light_block_1", "minecraft:light_block_2", "minecraft:light_block_3", "minecraft:light_block_4", "minecraft:light_block_5", "minecraft:light_block_6", "minecraft:light_block_7", "minecraft:light_block_8", "minecraft:light_block_9", "minecraft:light_block_10", "minecraft:light_block_11", "minecraft:light_block_13", "minecraft:light_block_14", "minecraft:light_block_15"];
-function* PFEMine(data, location, player, dim, silkTouch, item) {
+function* PFEMine(BannedBlocks, data, location, player, dim, silkTouch, item) {
   let DurabilityAmount = 0;
   for (let x = location.x; x < location.x + data.radius.x; x++) {
     for (let y = location.y; y < location.y + data.radius.y; y++) {
@@ -2978,7 +3004,7 @@ function* PFEMine(data, location, player, dim, silkTouch, item) {
   }
   if (DurabilityAmount != 0) {
     if (item.hasComponent(ItemComponentTypes.Durability) && player.getGameMode() != GameMode.creative) {
-      let newItem = damage_item_ub(item, DurabilityAmount);
+      let newItem = PFEDamageItemUB(item, DurabilityAmount);
       player.getComponent(EntityComponentTypes.Equippable).setEquipment(EquipmentSlot.Mainhand, newItem);
       if (!newItem) {
         player.playSound("random.break");
@@ -2987,19 +3013,532 @@ function* PFEMine(data, location, player, dim, silkTouch, item) {
     player.dimension.playSound("dig.stone", player.location);
   }
   if (!silkTouch) {
-    player.runCommand(`tp @e[type=item,r=${data.radius.x}] @s`);
+    player.runCommand(`tp @e[type=item,r=${Math.max(data.radius.x, data.radius.y) + 1}] @s`);
+  }
+}
+function PFEHaxelConfigMenu(data, ComponentInfo) {
+  let dynamicProperty = data.itemStack?.getDynamicProperty("pfe:haxelInfo");
+  dynamicProperty = JSON.parse(dynamicProperty);
+  let Ui = new ActionFormData2().title({ translate: `translation.poke:haxelConfig.mainMenu.title`, with: { rawtext: [{ translate: `item.${data.itemStack?.typeId}`.replace(`\xA79PFE\xA7r`, ``) }] } }).button({ translate: `translation.poke:haxelConfig.mainMenu.blacklistAdd` }, `textures/items/misc/poke_blacklist_add`);
+  if (dynamicProperty.blacklist.length >= 1) {
+    Ui.button({ translate: `translation.poke:haxelConfig.mainMenu.blacklistRemove` }, `textures/items/misc/poke_blacklist_remove`);
+  }
+  Ui.show(data.source).then((response) => {
+    if (response.canceled)
+      return;
+    if (response.selection == 0) {
+      PFEHaxelConfigBlackListAdd(data, ComponentInfo, dynamicProperty);
+      return;
+    }
+    if (response.selection == 1) {
+      PFEHaxelConfigBlackListRemove(data, ComponentInfo, dynamicProperty);
+      return;
+    }
+  });
+}
+function PFEHaxelConfigBlackListAdd(data, ComponentInfo, dynamicProperty) {
+  let Ui = new ModalFormData2().title({ translate: `translation.poke:haxelConfig.mainMenu.title`, with: { rawtext: [{ translate: `item.${data.itemStack?.typeId}`.replace(`\xA79PFE\xA7r`, ``) }] } }).textField({ translate: `translation.poke:haxelConfig.blacklistAdd.textLabel` }, "", "").submitButton({ translate: `translation.poke:haxelConfig.blacklistAdd.submit` });
+  Ui.show(data.source).then((response) => {
+    if (response.canceled)
+      return;
+    let block = response.formValues?.at(0);
+    if (block == "")
+      return;
+    if (typeof block == "string") {
+      if (!block.includes(":")) {
+        block = `minecraft:${block}`;
+      }
+      dynamicProperty.blacklist = dynamicProperty.blacklist.concat(block);
+      data.itemStack?.setDynamicProperty("pfe:haxelInfo", JSON.stringify(dynamicProperty));
+      data.source.getComponent(EntityComponentTypes.Equippable).setEquipment(EquipmentSlot.Mainhand, data.itemStack);
+    }
+  });
+}
+function PFEHaxelConfigBlackListRemove(data, ComponentInfo, dynamicProperty) {
+  let Ui = new ActionFormData2().title({ translate: `translation.poke:haxelConfig.mainMenu.blacklistRemove` });
+  dynamicProperty.blacklist.forEach((block) => {
+    Ui.button({ translate: `tile.${block.replace(`minecraft:`, ``)}.name` });
+  });
+  Ui.show(data.source).then((response) => {
+    if (response.canceled)
+      return;
+    for (let i = dynamicProperty.blacklist.length; i >= -1; i--) {
+      if (response.selection == i) {
+        dynamicProperty.blacklist.splice(i, 1);
+        data.itemStack?.setDynamicProperty("pfe:haxelInfo", JSON.stringify(dynamicProperty));
+        data.source.getComponent(EntityComponentTypes.Equippable).setEquipment(EquipmentSlot.Mainhand, data.itemStack);
+      }
+    }
+  });
+}
+
+// scripts/time.ts
+import { world as world2 } from "@minecraft/server";
+import { ActionFormData as ActionFormData3, ModalFormData as ModalFormData3 } from "@minecraft/server-ui";
+var PFEDefaultHolidays = [
+  {
+    "name": "XMAS",
+    "days": [24, 25, 26],
+    "month": [11]
+  },
+  {
+    "name": "Halloween",
+    "days": [31],
+    "month": [9]
+  },
+  {
+    "name": "AprilFools",
+    "days": [1],
+    "month": [3]
+  }
+];
+function PFETimeConfigUIMainMenu(player) {
+  let currentTime = new Date(Date.now() + PFETimeZoneOffset(player));
+  let UI = new ActionFormData3().body({ translate: `translation.poke:timeUiMainMenuBody`, with: { rawtext: [{ text: player.name }, { text: `${currentTime.toDateString()}, ${currentTime.toLocaleTimeString()}` }, { translate: `${PFETimeGreeting(currentTime)}` }] } });
+  if (player.getDynamicProperty(`pfe:timezone`)) {
+    UI.button({ translate: `translation.poke:timeChangeTimezone` }, PFETimeIcon(currentTime));
+  } else {
+    UI.button({ translate: `translation.poke:timeSetTimezone` }, PFETimeIcon(currentTime));
+  }
+  if (player.getDynamicProperty(`pfe:birthday`)) {
+    UI.button({ translate: `translation.poke:timeChangeBirthday` }, `textures/poke/pfe/birthday_cake`);
+  } else {
+    UI.button({ translate: `translation.poke:timeSetBirthday` }, `textures/poke/pfe/birthday_cake`);
+  }
+  if (PFEDefaultHolidays.at(0)?.days?.includes(currentTime.getDate()) && PFEDefaultHolidays.at(0)?.month?.includes(currentTime.getMonth()) && !player.hasTag(`pfe:${currentTime.getFullYear()}LTU-${PFEDefaultHolidays.at(0)?.name}`)) {
+    UI.button({ translate: `translation.poke:claimGift` }, `textures/items/pfe-gift_box`);
+  }
+  UI.show(player).then((response) => {
+    if (response.canceled) {
+      return;
+    }
+    if (response.selection == 0) {
+      PFESetTimeZone(player, currentTime);
+    }
+    if (response.selection == 1) {
+      PFESetBirthday(player);
+    }
+    if (response.selection == 2) {
+      player.runCommand(`give @s poke:red_present 16`);
+      player.addTag(`pfe:${currentTime.getFullYear()}LTU-${PFEDefaultHolidays.at(0)?.name}`);
+    }
+  });
+}
+function PFESetBirthday(player) {
+  let UI = new ModalFormData3().dropdown({ translate: `translation.poke:setBirthdayDay` }, [`1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`, `10`, `11`, `12`, `13`, `14`, `15`, `16`, `17`, `18`, `19`, `20`, `21`, `22`, `23`, `24`, `25`, `26`, `27`, `28`, `29`, `30`, `31`]).dropdown({ translate: `translation.poke:setBirthdayDay` }, [{ translate: `translation.poke:setBirthdayJan` }, { translate: `translation.poke:setBirthdayFeb` }, { translate: `translation.poke:setBirthdayMar` }, { translate: `translation.poke:setBirthdayApr` }, { translate: `translation.poke:setBirthdayMay` }, { translate: `translation.poke:setBirthdayJun` }, { translate: `translation.poke:setBirthdayJul` }, { translate: `translation.poke:setBirthdayAug` }, { translate: `translation.poke:setBirthdaySep` }, { translate: `translation.poke:setBirthdayOct` }, { translate: `translation.poke:setBirthdayNov` }, { translate: `translation.poke:setBirthdayDec` }]).toggle({ translate: `translation.poke:setBirthdayGlobalMessage` });
+  UI.show(player).then((response) => {
+    if (response.formValues?.at(2)) {
+      let birthdays = JSON.parse(world2.getDynamicProperty(`pfe:birthdays`).toString());
+      let newBirthday = true;
+      birthdays.forEach((birthday) => {
+        if (birthday.name == player.name) {
+          birthday.day = Number(response.formValues?.at(0)) + 1;
+          birthday.month = Number(response.formValues?.at(1));
+          birthday.announce = Boolean(response.formValues?.at(2));
+        }
+      });
+      if (newBirthday) {
+        birthdays.concat([{ day: Number(response.formValues.at(0)) + 1, month: Number(response.formValues.at(1)), announce: Boolean(response.formValues?.at(2)), name: player.name, style: "normal", year: void 0 }]);
+      }
+      world2.setDynamicProperty(`pfe:birthdays`, JSON.stringify(birthdays));
+      player.setDynamicProperty(`pfe:birthday`, JSON.stringify({ day: Number(response.formValues.at(0)) + 1, month: Number(response.formValues.at(1)), announce: Boolean(response.formValues?.at(2)), name: player.name, style: "normal", year: void 0 }));
+    }
+  });
+}
+function PFETimeIcon(currentTime) {
+  switch (currentTime.getHours()) {
+    case 0: {
+      return "textures/poke/pfe/12am";
+      break;
+    }
+    case 1: {
+      return "textures/poke/pfe/1am";
+      break;
+    }
+    case 2: {
+      return "textures/poke/pfe/2am";
+      break;
+    }
+    case 3: {
+      return "textures/poke/pfe/3am";
+      break;
+    }
+    case 4: {
+      return "textures/poke/pfe/4am";
+      break;
+    }
+    case 5: {
+      return "textures/poke/pfe/5am";
+      break;
+    }
+    case 6: {
+      return "textures/poke/pfe/6am";
+      break;
+    }
+    case 7: {
+      return "textures/poke/pfe/7am";
+      break;
+    }
+    case 8: {
+      return "textures/poke/pfe/8am";
+      break;
+    }
+    case 9: {
+      return "textures/poke/pfe/9am";
+      break;
+    }
+    case 10: {
+      return "textures/poke/pfe/10am";
+      break;
+    }
+    case 11: {
+      return "textures/poke/pfe/11am";
+      break;
+    }
+    case 12: {
+      return "textures/poke/pfe/12pm";
+      break;
+    }
+    case 13: {
+      return "textures/poke/pfe/1pm";
+      break;
+    }
+    case 14: {
+      return "textures/poke/pfe/2pm";
+      break;
+    }
+    case 15: {
+      return "textures/poke/pfe/3pm";
+      break;
+    }
+    case 16: {
+      return "textures/poke/pfe/4pm";
+      break;
+    }
+    case 17: {
+      return "textures/poke/pfe/5pm";
+      break;
+    }
+    case 18: {
+      return "textures/poke/pfe/6pm";
+      break;
+    }
+    case 19: {
+      return "textures/poke/pfe/7pm";
+      break;
+    }
+    case 20: {
+      return "textures/poke/pfe/8pm";
+      break;
+    }
+    case 21: {
+      return "textures/poke/pfe/9pm";
+      break;
+    }
+    case 22: {
+      return "textures/poke/pfe/10pm";
+      break;
+    }
+    case 23: {
+      return "textures/poke/pfe/11pm";
+      break;
+    }
+  }
+}
+function PFETimeZoneOffset(player) {
+  let timezone = void 0;
+  if (player?.getDynamicProperty(`pfe:timezone`)) {
+    timezone = Number(player.getDynamicProperty(`pfe:timezone`));
+    return timezone;
+  }
+  return 0;
+}
+function PFESetTimeZone(player, currentTime) {
+  let Ui = new ActionFormData3();
+  let Timezones = [
+    {
+      "name": "\xA7uUTC \xA7a+\xA7u14:00\xA7r:\nLINT",
+      "offset": 504e5
+    },
+    {
+      "name": "\xA7uUTC \xA7a+\xA7u13:45\xA7r:\nCHADT",
+      "offset": 495e5
+    },
+    {
+      "name": "\xA7uUTC \xA7a+\xA7u13:00\xA7r:\nNZDT/PHOT/TKT/TOT",
+      "offset": 468e5
+    },
+    {
+      "name": "\xA7uUTC \xA7a+\xA7u12:45\xA7r:\nCHAST",
+      "offset": 459e5
+    },
+    {
+      "name": "\xA7uUTC \xA7a+\xA7u12:00\xA7r:\nANAT/FJT/GILT/MAGT/MHT/NZST/PETT/TVT/WAKT",
+      "offset": 432e5
+    },
+    {
+      "name": "\xA7uUTC \xA7a+\xA7u11:00\xA7r:\nAEDT/BST/KOST/LHST/MIST/NCT/NFT/PONT/SKAT/SBT/SRET/VUT",
+      "offset": 396e5
+    },
+    {
+      "name": "\xA7uUTC \xA7a+\xA7u10:00\xA7r:\nACDT/LHST",
+      "offset": 378e5
+    },
+    {
+      "name": "\xA7uUTC \xA7a+\xA7u10:00\xA7r:\nAEST/CHST/CHUT/DDUT/PGT/VLAT",
+      "offset": 36e6
+    },
+    {
+      "name": "\xA7uUTC \xA7a+\xA7u09:30\xA7r:\nACST",
+      "offset": 342e5
+    },
+    {
+      "name": "\xA7uUTC \xA7a+\xA7u09:00\xA7r:\nCHOST/JST/KST/PWT/TLT/ULAST/WIT/YAKT",
+      "offset": 324e5
+    },
+    {
+      "name": "\xA7uUTC \xA7a+\xA7u08:45\xA7r:\nACWST",
+      "offset": 315e5
+    },
+    {
+      "name": "\xA7uUTC \xA7a+\xA7u08:00\xA7r:\nAWST/BNT/CHOT/CST/HKT/HOVST/IRKT/MYT/PHT/SGT/TST/ULAT/WITA/WST/ACT",
+      "offset": 288e5
+    },
+    {
+      "name": "\xA7uUTC \xA7a+\xA7u07:00\xA7r:\nTHA/WIB/CXT/DAVT/HOVT/ICT/KRAT/NOVT",
+      "offset": 252e5
+    },
+    {
+      "name": "\xA7uUTC \xA7a+\xA7u06:30\xA7r:\nCCT/MMT",
+      "offset": 234e5
+    },
+    {
+      "name": "\xA7uUTC \xA7a+\xA7u06:00\xA7r:\nBIOT/BST/BTT/IOT/KGT/OMST/VOST/ALMT",
+      "offset": 216e5
+    },
+    {
+      "name": "\xA7uUTC \xA7a+\xA7u05:45\xA7r:\nNPT",
+      "offset": 207e5
+    },
+    {
+      "name": "\xA7uUTC \xA7a+\xA7u05:30\xA7r:\nIST/SLST",
+      "offset": 198e5
+    },
+    {
+      "name": "\xA7uUTC \xA7a+\xA7u05:00\xA7r:\nAQTT/HMT/MAWT/MVT/ORAT/PKT/TFT/TJT/TMT/UZT/YEKT",
+      "offset": 18e6
+    },
+    {
+      "name": "\xA7uUTC \xA7a+\xA7u04:30\xA7r:\nAFT/IRDT",
+      "offset": 162e5
+    },
+    {
+      "name": "\xA7uUTC \xA7a+\xA7u04:00\xA7r:\nAMT/AZT/GET/GST/MUT/RET/SAMT/SCT",
+      "offset": 144e5
+    },
+    {
+      "name": "\xA7uUTC \xA7a+\xA7u03:30\xA7r:\nIRST",
+      "offset": 126e5
+    },
+    {
+      "name": "\xA7uUTC \xA7a+\xA7u03:00\xA7r:\nAST/EAT/EEST/FET/IDT/MSK/SYOT/TRT/VOLT",
+      "offset": 108e5
+    },
+    {
+      "name": "\xA7uUTC \xA7a+\xA7u02:00\xA7r:\nEET/CAT/SAST/CEST/HAEC/IST/KALT/MEST/WAST",
+      "offset": 72e5
+    },
+    {
+      "name": "\xA7uUTC \xA7a+\xA7u01:00\xA7r:\nCET/BST/DFT/IST/MET/WAT",
+      "offset": 36e5
+    },
+    {
+      "name": "\xA7uUTC \xA7a+\xA7u00:00\xA7r:\nGMT/UTC/AZOST/EGST/WET",
+      "offset": 0
+    },
+    {
+      "name": "\xA7uUTC \xA7c-\xA7u01:00\xA7r:\nAZOT/CVT/EGT",
+      "offset": -36e5
+    },
+    {
+      "name": "\xA7uUTC \xA7c-\xA7u02:00\xA7r:\nBRST/FNT/GST/PMDT/UYST/WGST",
+      "offset": -72e5
+    },
+    {
+      "name": "\xA7uUTC \xA7c-\xA7u02:30\xA7r:\nNDT",
+      "offset": -9e6
+    },
+    {
+      "name": "\xA7uUTC \xA7c-\xA7u03:00\xA7r:\nADT/AMST/ART/BRT/CLST/FKST/GFT/PMST/PYST/ROTT/SRT/UYT",
+      "offset": -108e5
+    },
+    {
+      "name": "\xA7uUTC \xA7c-\xA7u03:30\xA7r:\nNST",
+      "offset": -126e5
+    },
+    {
+      "name": "\xA7uUTC \xA7c-\xA7u04:00\xA7r:\nAMT/AST/EDT/BOT/CDT/COST/ECT/FKT/GYT/PYT/VET",
+      "offset": -144e5
+    },
+    {
+      "name": "\xA7uUTC \xA7c-\xA7u05:00\xA7r:\nEST/CDT/ACT/COT/CST/EASST/ECT/PET",
+      "offset": -18e6
+    },
+    {
+      "name": "\xA7uUTC \xA7c-\xA7u06:00\xA7r:\nCST/MDT/EAST/GALT",
+      "offset": -216e5
+    },
+    {
+      "name": "\xA7uUTC \xA7c-\xA7u07:00\xA7r:\nMST/PDT",
+      "offset": -252e5
+    },
+    {
+      "name": "\xA7uUTC \xA7c-\xA7u08:00\xA7r:\nPST/AKDT/CIST",
+      "offset": -288e5
+    },
+    {
+      "name": "\xA7uUTC \xA7c-\xA7u09:00\xA7r:\nAKST/GAMT/GIT/HDT",
+      "offset": -324e5
+    },
+    {
+      "name": "\xA7uUTC \xA7c-\xA7u09:30\xA7r:\nMART/MIT",
+      "offset": -342e5
+    },
+    {
+      "name": "\xA7uUTC \xA7c-\xA7u10:00\xA7r:\nHST/SDT/TAHT",
+      "offset": -36e6
+    },
+    {
+      "name": "\xA7uUTC \xA7c-\xA7u11:00\xA7r:\nNUT/SST",
+      "offset": -396e5
+    },
+    {
+      "name": "\xA7uUTC \xA7c-\xA7u12:00\xA7r:\nBIT/IDLW",
+      "offset": -432e5
+    }
+  ];
+  Timezones.forEach((timezone) => {
+    Ui.button(timezone.name, PFETimeIcon(new Date(Date.now() + timezone.offset)));
+  });
+  Ui.show(player).then((response) => {
+    if (response.canceled) {
+      return;
+    }
+    player.setDynamicProperty(`pfe:timezone`, Timezones.at(Number(response.selection)).offset);
+  });
+}
+function PFETimeGreeting(date, generic) {
+  if (!generic) {
+    if ((date.getDate() == 24 || date.getDate() == 25) && date.getMonth() == 11) {
+      return `translation.poke:timeHolidayGreet`;
+    }
+  }
+  let hour = date.getHours();
+  switch (hour) {
+    case 1: {
+      return `translation.poke:timeMorningGreet`;
+      break;
+    }
+    case 2: {
+      return `translation.poke:timeMorningGreet`;
+      break;
+    }
+    case 3: {
+      return `translation.poke:timeMorningGreet`;
+      break;
+    }
+    case 4: {
+      return `translation.poke:timeMorningGreet`;
+      break;
+    }
+    case 5: {
+      return `translation.poke:timeMorningGreet`;
+      break;
+    }
+    case 6: {
+      return `translation.poke:timeMorningGreet`;
+      break;
+    }
+    case 7: {
+      return `translation.poke:timeMorningGreet`;
+      break;
+    }
+    case 8: {
+      return `translation.poke:timeMorningGreet`;
+      break;
+    }
+    case 9: {
+      return `translation.poke:timeMorningGreet`;
+      break;
+    }
+    case 10: {
+      return `translation.poke:timeMorningGreet`;
+      break;
+    }
+    case 11: {
+      return `translation.poke:timeMorningGreet`;
+      break;
+    }
+    case 12: {
+      return `translation.poke:timeNoonGreet`;
+      break;
+    }
+    case 13: {
+      return `translation.poke:timeNoonGreet`;
+      break;
+    }
+    case 14: {
+      return `translation.poke:timeNoonGreet`;
+      break;
+    }
+    case 15: {
+      return `translation.poke:timeNoonGreet`;
+      break;
+    }
+    case 16: {
+      return `translation.poke:timeNoonGreet`;
+      break;
+    }
+    case 17: {
+      return `translation.poke:timeNightGreet`;
+      break;
+    }
+    case 18: {
+      return `translation.poke:timeNightGreet`;
+      break;
+    }
+    case 19: {
+      return `translation.poke:timeNightGreet`;
+      break;
+    }
+    case 20: {
+      return `translation.poke:timeNightGreet`;
+      break;
+    }
+    case 21: {
+      return `translation.poke:timeNightGreet`;
+      break;
+    }
+    case 22: {
+      return `translation.poke:timeNightGreet`;
+      break;
+    }
+    case 23: {
+      return `translation.poke:timeNightGreet`;
+      break;
+    }
   }
 }
 
 // scripts/main.ts
 system3.runInterval(() => {
-  world2.getDimension("overworld").runCommandAsync("execute as @a run function poke/pfe/effects");
+  world3.getDimension("overworld").runCommandAsync("execute as @a run function poke/pfe/effects");
   system3.runTimeout(() => {
-    world2.getDimension("overworld").runCommandAsync("execute as @a run function poke/pfe/effects_2");
+    world3.getDimension("overworld").runCommandAsync("execute as @a run function poke/pfe/effects_2");
     system3.runTimeout(() => {
-      world2.getDimension("overworld").runCommandAsync("execute as @a run function poke/pfe/effects_3");
+      world3.getDimension("overworld").runCommandAsync("execute as @a run function poke/pfe/effects_3");
       system3.runTimeout(() => {
-        world2.getDimension("overworld").runCommandAsync("execute as @a run function poke/pfe/effects_4");
+        world3.getDimension("overworld").runCommandAsync("execute as @a run function poke/pfe/effects_4");
       }, 40);
     }, 80);
   }, 120);
@@ -3012,7 +3551,7 @@ function PFEDecrementStack(item) {
     return item;
   }
 }
-function damage_item(item) {
+function PFEDamageItem(item) {
   if (!item.hasComponent(ItemComponentTypes2.Durability))
     return item;
   const durabilityComponent = item.getComponent(ItemComponentTypes2.Durability);
@@ -3035,7 +3574,7 @@ function damage_item(item) {
   durabilityComponent.damage += Number(Math.round(Math.random() * 100) <= durabilityComponent.getDamageChance(unbreaking));
   return item;
 }
-function damage_item_ub(item, multiplier) {
+function PFEDamageItemUB(item, multiplier) {
   if (!item.hasComponent(ItemComponentTypes2.Durability))
     return item;
   const durabilityComponent = item.getComponent(ItemComponentTypes2.Durability);
@@ -3057,1223 +3596,54 @@ function damage_item_ub(item, multiplier) {
   }
   return item;
 }
-var pfeFoodList = ["poke:pumpkin_spice", "poke:xp_vial", "poke:golden_chicken", "poke:rotten_chicken", "poke:demonic_potion", "poke:hellish_potion", "poke:nebula_potion", "poke:void_potion", "poke:death_potion", "poke:cobalt_potion", "poke:cobalt_soup", "poke:crimson_sporeshroom_stew", "poke:root_beer", "poke:hellish_soup", "poke:nebula_noodles", "poke:warped_sporeshroom_stew", "poke:milk_bottle", "poke:banished_star_x10", "poke:banished_star_x9"];
-world2.afterEvents.itemCompleteUse.subscribe((item) => {
-  if (!pfeFoodList.includes(item.itemStack.typeId))
-    return;
-  switch (item.itemStack.typeId) {
-    case "poke:xp_vial":
-      {
-        item.source.runCommandAsync("xp 160 @s");
-        return;
-      }
-      ;
-    case "poke:cobalt_potion": {
-      item.source.addEffect("night_vision", 3600);
-      item.source.addEffect("regeneration", 2400);
-    }
-    case "poke:cobalt_soup":
-      {
-        item.source.addEffect("night_vision", 2400, { showParticles: false });
-        return;
-      }
-      ;
-    case "poke:root_beer":
-      {
-        item.source.addEffect("speed", 600, { amplifier: 4 });
-        return;
-      }
-      ;
-    case "poke:pumpkin_spice":
-      {
-        item.source.addEffect("invisibility", 600);
-        item.source.addEffect("speed", 600, { amplifier: 4 });
-        return;
-      }
-      ;
-    case "poke:crimson_sporeshroom_stew":
-      {
-        item.source.addEffect("fire_resistance", 1200);
-        return;
-      }
-      ;
-    case "poke:warped_sporeshroom_stew":
-      {
-        item.source.addEffect("fire_resistance", 1200);
-        return;
-      }
-      ;
-    case "poke:hellish_soup":
-      {
-        item.source.addEffect("fire_resistance", 1200);
-        return;
-      }
-      ;
-    case "poke:nebula_noodles":
-      {
-        item.source.addEffect("strength", 600, { amplifier: 7 });
-        return;
-      }
-      ;
-    case "poke:milk_bottle":
-      {
-        item.source.runCommandAsync("effect @s clear");
-        return;
-      }
-      ;
-    case "poke:demonic_potion":
-      {
-        item.source.runCommandAsync("function poke/pfe/demonic_potion");
-        return;
-      }
-      ;
-    case "poke:hellish_potion":
-      {
-        item.source.runCommandAsync("function poke/pfe/hellish_potion");
-        return;
-      }
-      ;
-    case "poke:nebula_potion":
-      {
-        item.source.runCommandAsync("function poke/pfe/nebula_potion");
-        return;
-      }
-      ;
-    case "poke:void_potion":
-      {
-        item.source.runCommandAsync("function poke/pfe/void_potion");
-        return;
-      }
-      ;
-    case "poke:death_potion":
-      {
-        item.source.runCommandAsync("kill @s");
-        return;
-      }
-      ;
-    case "poke:rotten_chicken":
-      {
-        item.source.addEffect("nausea", 400);
-        return;
-      }
-      ;
-    case "poke:golden_chicken":
-      {
-        item.source.addEffect("village_hero", 400, { amplifier: 1 });
-        return;
-      }
-      ;
-    case "poke:banished_star_x10":
-      {
-        item.source.runCommandAsync("damage @a[r=100] 32767000 entity_attack entity @s");
-        return;
-      }
-      ;
-    case "poke:banished_star_x9":
-      {
-        item.source.runCommandAsync("damage @s 32767000 entity_attack");
-        return;
-      }
-      ;
-  }
-  return;
-});
-var pfeProjItems = ["poke:volt_ring", "poke:nuke_ring", "poke:necromancer_staff", "poke:ring_3", "poke:ring_4", "poke:ring_2", "poke:arrow_ring", "poke:shade_ring"];
-world2.afterEvents.itemUse.subscribe((data) => {
-  if (!pfeProjItems.includes(data.itemStack.typeId))
-    return;
-  const headLocate = data.source.getHeadLocation();
-  const ticks = data.itemStack.getComponent("cooldown").cooldownTicks;
-  if (data.itemStack.getComponent("cooldown").getCooldownTicksRemaining(data.source) != ticks - 1)
-    return;
-  if (pfeProjItems.includes(data.itemStack.typeId)) {
-    const pTag = data.itemStack.getTags();
-    const angle = data.source.getViewDirection();
-    const projEntity = data.source.dimension.spawnEntity("" + pTag, headLocate);
-    const projComp = projEntity.getComponent("projectile");
-    data.source.playSound("random.bow");
-    projComp.owner = data.source;
-    projComp.shoot(angle);
-  }
-  ;
-  if (world2.getPlayers({
-    gameMode: GameMode2.creative
-  }).includes(data.source))
-    return;
-  const newItem = damage_item(data.itemStack);
-  data.source.getComponent(EntityComponentTypes2.Equippable).setEquipment(EquipmentSlot2.Mainhand, newItem);
-  if (!newItem) {
-    data.source.playSound("random.break");
-  }
-  return;
-});
-var hit_effects = ["poke:astral_scythe", "poke:medic_scythe", "poke:demonic_sword", "poke:hellish_sword", "poke:godly_sword", "poke:holy_sword", "poke:radium_sword", "poke:astral_sword", "poke:shade_sword", "poke:nebula_sword", "poke:amethyst_scythe", "poke:holy_scythe", "poke:hellish_scythe", "poke:godly_scythe", "poke:galactic_scythe", "poke:demonic_slasher", "poke:ember_scythe", "poke:death_scythe", "poke:void_scythe", "poke:radium_scythe", "poke:netherite_scythe", "poke:diamond_scythe", "poke:shade_scythe", "poke:onyx_scythe", "poke:iron_scythe", "poke:gold_scythe", "poke:emerald_scythe", "poke:nebula_scythe", "poke:cobalt_scythe", "poke:circuit_sword", "poke:ban_hammer"];
-world2.afterEvents.entityHitEntity.subscribe((data) => {
-  if (data.damagingEntity.hasComponent(EntityComponentTypes2.Equippable)) {
-    if (data.damagingEntity.getComponent(EntityComponentTypes2.Equippable).getEquipment(EquipmentSlot2.Mainhand) == void 0)
-      return;
-    if (!hit_effects.includes(data.damagingEntity.getComponent(EntityComponentTypes2.Equippable).getEquipment(EquipmentSlot2.Mainhand).type.id))
-      return;
-    const itemId = data.damagingEntity.getComponent(EntityComponentTypes2.Equippable).getEquipment(EquipmentSlot2.Mainhand).typeId;
-    switch (itemId) {
-      case "poke:demonic_sword": {
-        data.hitEntity.addEffect("slowness", 100, { amplifier: 3 });
-        return;
-      }
-      case "poke:hellish_blade": {
-        data.hitEntity.addEffect("slowness", 40, { amplifier: 3 });
-        return;
-      }
-      case "poke:godly_sword": {
-        data.damagingEntity.addEffect("strength", 100, { amplifier: 2 });
-        return;
-      }
-      case "poke:holy_sword": {
-        data.damagingEntity.addEffect("strength", 40, { amplifier: 1 });
-        return;
-      }
-      case "poke:astral_sword": {
-        data.damagingEntity.addEffect("strength", 100, { amplifier: 2 });
-        return;
-      }
-      case "poke:shade_sword": {
-        data.hitEntity.addEffect("slowness", 40, { amplifier: 2 });
-        data.hitEntity.addEffect("wither", 60, { amplifier: 1 });
-        return;
-      }
-      case "poke:radium_sword": {
-        data.hitEntity.addEffect("slowness", 220, { amplifier: 3 });
-        data.hitEntity.addEffect("wither", 240, { amplifier: 4 });
-        return;
-      }
-      case "poke:amethyst_scythe": {
-        data.damagingEntity.addEffect("speed", 100, { amplifier: 4 });
-        data.hitEntity.addEffect("blindness", 20);
-        return;
-      }
-      case "poke:demonic_slasher": {
-        data.damagingEntity.addEffect("speed", 100, { amplifier: 7 });
-        data.hitEntity.addEffect("wither", 80, { amplifier: 1 });
-        return;
-      }
-      case "poke:gold_scythe": {
-        data.damagingEntity.addEffect("speed", 100, { amplifier: 2 });
-        data.damagingEntity.addEffect("haste", 600, { amplifier: 2 });
-        return;
-      }
-      case "poke:emerald_scythe": {
-        data.damagingEntity.addEffect("speed", 100, { amplifier: 2 });
-        data.damagingEntity.addEffect("village_hero", 2400, { amplifier: 1 });
-        return;
-      }
-      case "poke:iron_scythe": {
-        data.damagingEntity.addEffect("speed", 100, { amplifier: 2 });
-        return;
-      }
-      case "poke:onyx_scythe": {
-        data.damagingEntity.addEffect("speed", 200, { amplifier: 5 });
-        data.damagingEntity.addEffect("jump_boost", 100, { amplifier: 2 });
-        data.hitEntity.addEffect("weakness", 120, { amplifier: 2 });
-        return;
-      }
-      case "poke:godly_scythe": {
-        data.damagingEntity.addEffect("speed", 200, { amplifier: 6 });
-        data.damagingEntity.addEffect("slow_falling", 2400);
-        data.damagingEntity.addEffect("jump_boost", 1200, { amplifier: 3 });
-        return;
-      }
-      case "poke:hellish_scythe": {
-        data.damagingEntity.addEffect("speed", 100, { amplifier: 7 });
-        data.damagingEntity.addEffect("fire_resistance", 2400);
-        data.hitEntity.addEffect("mining_fatigue", 400, { amplifier: 1 });
-        return;
-      }
-      case "poke:holy_scythe": {
-        data.damagingEntity.addEffect("speed", 200, { amplifier: 6 });
-        data.damagingEntity.addEffect("slow_falling", 2400, { amplifier: 1 });
-        data.hitEntity.addEffect("darkness", 400);
-        return;
-      }
-      case "poke:shade_scythe": {
-        data.damagingEntity.addEffect("absorption", 600, { amplifier: 1 });
-        data.damagingEntity.addEffect("strength", 100, { amplifier: 1 });
-        data.hitEntity.addEffect("slowness", 160, { amplifier: 2 });
-        return;
-      }
-      case "poke:diamond_scythe": {
-        data.damagingEntity.addEffect("speed", 160, { amplifier: 3 });
-        data.hitEntity.addEffect("weakness", 100, { amplifier: 1 });
-        data.hitEntity.addEffect("blindness", 80);
-        return;
-      }
-      case "poke:netherite_scythe": {
-        data.damagingEntity.addEffect("speed", 160, { amplifier: 3 });
-        data.hitEntity.addEffect("hunger", 120, { amplifier: 1 });
-        data.hitEntity.addEffect("slowness", 80, { amplifier: 2 });
-        return;
-      }
-      case "poke:radium_scythe": {
-        data.damagingEntity.addEffect("speed", 100, { amplifier: 5 });
-        data.hitEntity.addEffect("nausea", 80, { amplifier: 1 });
-        data.hitEntity.addEffect("fatal_poison", 160, { amplifier: 2 });
-        return;
-      }
-      case "poke:medic_scythe": {
-        data.damagingEntity.addEffect("speed", 100, { amplifier: 6 });
-        data.damagingEntity.addEffect("health_boost", 2400, { amplifier: 2 });
-        return;
-      }
-      case "poke:galactic_scythe": {
-        data.damagingEntity.addEffect("speed", 100, { amplifier: 9 });
-        data.damagingEntity.addEffect("fire_resistance", 300);
-        data.hitEntity.addEffect("wither", 80, { amplifier: 2 });
-        data.hitEntity.addEffect("weakness", 80, { amplifier: 2 });
-        return;
-      }
-      case "poke:astral_scythe": {
-        data.damagingEntity.addEffect("speed", 120, { amplifier: 9 });
-        data.damagingEntity.addEffect("fire_resistance", 300);
-        data.hitEntity.addEffect("wither", 120, { amplifier: 2 });
-        data.hitEntity.addEffect("weakness", 120, { amplifier: 3 });
-        return;
-      }
-      case "poke:ember_scythe": {
-        data.damagingEntity.addEffect("speed", 100, { amplifier: 6 });
-        data.hitEntity.addEffect("nausea", 80, { amplifier: 1 });
-        data.hitEntity.addEffect("blindness", 80);
-        return;
-      }
-      case "poke:void_scythe": {
-        data.damagingEntity.addEffect("speed", 200, { amplifier: 6 });
-        data.hitEntity.runCommand("function poke/pfe/void_scythe");
-        return;
-      }
-      case "poke:death_scythe": {
-        data.damagingEntity.addEffect("speed", 200, { amplifier: 6 });
-        data.hitEntity.runCommand("function poke/pfe/death_scythe");
-        return;
-      }
-      case "poke:nebula_scythe": {
-        data.damagingEntity.runCommand("function poke/pfe/nebula_scythe");
-        data.hitEntity.addEffect("wither", 80, { amplifier: 3 });
-        return;
-      }
-      case "poke:cobalt_scythe": {
-        data.damagingEntity.addEffect("speed", 100, { amplifier: 6 });
-        data.hitEntity.addEffect("wither", 40, { amplifier: 1 });
-        return;
-      }
-      case "poke:nebula_sword": {
-        data.damagingEntity.addEffect("strength", 40, { amplifier: 4 });
-        data.hitEntity.addEffect("weakness", 20, { amplifier: 2 });
-        return;
-      }
-      case "poke:ban_hammer": {
-        data.damagingEntity.addEffect("strength", 40, { amplifier: 4 });
-        data.hitEntity.addEffect("weakness", 20, { amplifier: 2 });
-        return;
-      }
-      case "poke:circuit_sword": {
-        data.damagingEntity.runCommand("function poke/pfe/circuit_sword");
-        data.hitEntity.addEffect("blindness", 100);
-        return;
-      }
-    }
-    return;
-  }
-});
-var PFETrapdoor = class {
-  onPlayerInteract(data) {
-    const blockLocation = `${data.block.location.x} ${data.block.location.y} ${data.block.location.z}`;
-    if (data.block.permutation.hasTag("pfe_trapdoor_open") == true) {
-      data.block.setPermutation(data.block.permutation.withState("poke:trapdoor_open", "no"));
-      data.block.dimension.runCommandAsync(`playsound open.iron_trapdoor @a ${blockLocation}`);
-      return;
-    } else {
-      data.block.setPermutation(data.block.permutation.withState("poke:trapdoor_open", "yes"));
-      data.block.dimension.runCommandAsync(`playsound close.iron_trapdoor @a ${blockLocation}`);
-      return;
-    }
-  }
-};
-var PFEFortune = class {
-  onPlayerDestroy(data) {
-    const equippableComponent = data.player?.getComponent(EntityComponentTypes2.Equippable);
-    if (equippableComponent === void 0)
-      return;
-    if (!equippableComponent.getEquipment(EquipmentSlot2.Mainhand)?.hasComponent(ItemComponentTypes2.Enchantable))
-      return;
-    const enchantableComponent = equippableComponent.getEquipment(EquipmentSlot2.Mainhand)?.getComponent(ItemComponentTypes2.Enchantable);
-    if (!enchantableComponent.hasEnchantment(MinecraftEnchantmentTypes.Fortune))
-      return;
-    let fortuneLevel = enchantableComponent.getEnchantment(MinecraftEnchantmentTypes.Fortune).level;
-    let rng = Math.round(Math.random());
-    const blockLocation = `${data.block.x} ${data.block.y} ${data.block.z}`;
-    const blockId = data.destroyedBlockPermutation.type.id.substring(5);
-    if (data.player?.getGameMode() == GameMode2.survival) {
-      if (fortuneLevel == 3) {
-        data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}"`);
-        data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}"`);
-        if (rng == 0)
-          return;
-        data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}"`);
-        return;
-      }
-      if (fortuneLevel == 2) {
-        data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}"`);
-        if (rng == 0)
-          return;
-        data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}"`);
-        return;
-      }
-      if (fortuneLevel == 1) {
-        if (rng == 0)
-          return;
-        data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}"`);
-        return;
-      }
-      return;
-    }
-    return;
-  }
-};
-var PFESlabs = class {
-  onPlayerInteract(data) {
-    if (data.block.permutation.getState("poke:double") == true)
-      return;
-    const blockLocation = `${data.block.location.x} ${data.block.location.y} ${data.block.location.z}`;
-    const slabId = data.block.typeId;
-    const equippableComponent = data.player.getComponent(EntityComponentTypes2.Equippable);
-    const mainhand = equippableComponent.getEquipment(EquipmentSlot2.Mainhand);
-    if (mainhand != void 0) {
-      if (mainhand.typeId == slabId && (data.block.permutation.getState("minecraft:vertical_half") == "bottom" && data.face == Direction.Up || data.block.permutation.getState("minecraft:vertical_half") == "top" && data.face == Direction.Down) && data.block.permutation.getState("poke:double") == false) {
-        var itemStackAmount = mainhand.amount - 1;
-        data.block.setPermutation(data.block.permutation.withState("poke:double", true));
-        data.block.dimension.runCommandAsync(`playsound use.stone @a ${blockLocation}`);
-        if (data.player?.getGameMode() == "creative")
-          return;
-        if (itemStackAmount <= 0) {
-          equippableComponent.setEquipment(EquipmentSlot2.Mainhand, new ItemStack2("minecraft:air", 1));
-          return;
-        }
-        equippableComponent.setEquipment(EquipmentSlot2.Mainhand, new ItemStack2(slabId, itemStackAmount));
-        return;
-      } else
-        return;
-    }
-    return;
-  }
-};
-var PFESlabLoot = class {
-  onPlayerDestroy(data) {
-    const block_location = data.block.location;
-    const gm = data.player?.getGameMode();
-    const blockId = data.destroyedBlockPermutation.type.id;
-    const blockState = data.destroyedBlockPermutation.getState("poke:double");
-    if (gm == "survival") {
-      if (blockState == true) {
-        data.dimension.spawnItem(new ItemStack2(blockId, 1), block_location);
-        return;
-      }
-      return;
-    }
-    return;
-  }
-};
-var PFEBlockSeat = class {
-  onPlayerInteract(data) {
-    const BlockLocation = {
-      x: data.block.location.x + 0.5,
-      y: data.block.location.y + 0.5,
-      z: data.block.location.z + 0.5
-    };
-    const slabId = data.block.typeId;
-    const mainhand = data.player.getComponent(EntityComponentTypes2.Equippable).getEquipment("Mainhand");
-    const options = {
-      type: "poke:seat"
-    };
-    if (mainhand?.typeId != slabId && !data.player?.isSneaking) {
-      if (data.block.permutation.getState("minecraft:vertical_half") == "bottom" && data.block.permutation.getState("poke:double") == false) {
-        if (data.dimension.getEntities(options).length > 0) {
-          return;
-        } else {
-          data.dimension.spawnEntity("poke:seat", BlockLocation).getComponent("minecraft:rideable").addRider(data.player);
-          return;
-        }
-      }
-    }
-    return;
-  }
-};
-var PFEPhantomicConduit = class {
-  onTick(data) {
-    var block_location_x = data.block.x;
-    var block_location_y = data.block.y;
-    var block_location_z = data.block.z;
-    if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== void 0) {
-      data.block.setPermutation(data.block.permutation.withState("pfe:active", 1));
-      data.dimension.runCommand("execute positioned " + block_location_x + " " + block_location_y + " " + block_location_z + " as @e[r=50,family=phantom] run damage @s 20");
-      return;
-    }
-    if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== void 0) {
-      data.block.setPermutation(data.block.permutation.withState("pfe:active", 0));
-      return;
-    }
-    return;
-  }
-};
-var PFEDemonicAConduit = class {
-  onTick(data) {
-    const block_location = `${data.block.x} ${data.block.y} ${data.block.z}`;
-    if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== void 0) {
-      data.block.setPermutation(data.block.permutation.withState("pfe:active", 1));
-      data.dimension.runCommand("execute positioned " + block_location + " as @e[r=50,family=pfe:demonic_allay] run damage @s 20");
-      return;
-    }
-    if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== void 0) {
-      data.block.setPermutation(data.block.permutation.withState("pfe:active", 0));
-      return;
-    }
-    return;
-  }
-};
-var PFECobbleGen = class {
-  onTick(data) {
-    if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== void 0) {
-      data.block.setPermutation(data.block.permutation.withState("pfe:active", 1));
-      if (data.block.above()?.typeId != "minecraft:air")
-        return;
-      data.block.above()?.setType("minecraft:cobblestone");
-      return;
-    }
-    if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== void 0) {
-      data.block.setPermutation(data.block.permutation.withState("pfe:active", 0));
-      return;
-    }
-    return;
-  }
-};
-var PFECobbler = class {
-  onTick(data) {
-    const block_location = `${data.block.x} ${data.block.y} ${data.block.z}`;
-    if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== void 0) {
-      data.block.setPermutation(data.block.permutation.withState("pfe:active", 1));
-      data.dimension.runCommand(`execute positioned ${block_location} run structure load poke:cobblestone_item ~ ~-1 ~`);
-      return;
-    }
-    if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== void 0) {
-      data.block.setPermutation(data.block.permutation.withState("pfe:active", 0));
-      return;
-    }
-    return;
-  }
-};
-var PFEBlockBreaker = class {
-  onTick(data) {
-    const block_location = `${data.block.x} ${data.block.y} ${data.block.z}`;
-    if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== void 0) {
-      data.block.setPermutation(data.block.permutation.withState("pfe:active", 1));
-      data.dimension.runCommand(`execute positioned ${block_location} unless block ~ ~-1 ~ bedrock run setblock ~ ~-1 ~ air destroy`);
-      return;
-    }
-    if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== void 0) {
-      data.block.setPermutation(data.block.permutation.withState("pfe:active", 0));
-      return;
-    }
-    return;
-  }
-};
-var PFEDirter = class {
-  onTick(data) {
-    if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== void 0) {
-      data.block.setPermutation(data.block.permutation.withState("pfe:active", 1));
-      switch (data.block.typeId) {
-        case "poke:dirter_east": {
-          if (data.block.east()?.typeId == "minecraft:cobblestone") {
-            data.block.east()?.setType("minecraft:dirt");
-            break;
-          }
-        }
-        case "poke:dirter_west": {
-          if (data.block.west()?.typeId == "minecraft:cobblestone") {
-            data.block.west()?.setType("minecraft:dirt");
-            break;
-          }
-        }
-        case "poke:dirter_south": {
-          if (data.block.south()?.typeId == "minecraft:cobblestone") {
-            data.block.south()?.setType("minecraft:dirt");
-            break;
-          }
-        }
-        case "poke:dirter_north": {
-          if (data.block.north()?.typeId == "minecraft:cobblestone") {
-            data.block.north()?.setType("minecraft:dirt");
-            break;
-          }
-        }
-        case "poke:dirter_up": {
-          if (data.block.above()?.typeId == "minecraft:cobblestone") {
-            data.block.above()?.setType("minecraft:dirt");
-            break;
-          }
-        }
-        case "poke:dirter_down": {
-          if (data.block.below()?.typeId == "minecraft:cobblestone") {
-            data.block.below()?.setType("minecraft:dirt");
-            break;
-          }
-        }
-        case "poke:dirter": {
-          if (data.block.below()?.typeId == "minecraft:cobblestone") {
-            data.block.below()?.setType("minecraft:dirt");
-            return;
-          }
-        }
-      }
-      return;
-    }
-    if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== void 0) {
-      data.block.setPermutation(data.block.permutation.withState("pfe:active", 0));
-      return;
-    }
-    return;
-  }
-};
-var PFEDuster = class {
-  onTick(data) {
-    if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== void 0) {
-      data.block.setPermutation(data.block.permutation.withState("pfe:active", 1));
-      switch (data.block.typeId) {
-        case "poke:duster_east": {
-          if (data.block.east()?.typeId == "minecraft:dirt") {
-            data.block.east()?.setType("minecraft:sand");
-            break;
-          }
-          if (data.block.east()?.typeId == "minecraft:cobblestone") {
-            data.block.east()?.setType("minecraft:gravel");
-            break;
-          }
-        }
-        case "poke:duster_west": {
-          if (data.block.west()?.typeId == "minecraft:dirt") {
-            data.block.west()?.setType("minecraft:sand");
-            break;
-          }
-          if (data.block.west()?.typeId == "minecraft:cobblestone") {
-            data.block.west()?.setType("minecraft:gravel");
-            break;
-          }
-        }
-        case "poke:duster_south": {
-          if (data.block.south()?.typeId == "minecraft:dirt") {
-            data.block.south()?.setType("minecraft:sand");
-            break;
-          }
-          if (data.block.south()?.typeId == "minecraft:cobblestone") {
-            data.block.south()?.setType("minecraft:gravel");
-            break;
-          }
-        }
-        case "poke:duster_north": {
-          if (data.block.north()?.typeId == "minecraft:dirt") {
-            data.block.north()?.setType("minecraft:sand");
-            break;
-          }
-          if (data.block.north()?.typeId == "minecraft:cobblestone") {
-            data.block.north()?.setType("minecraft:gravel");
-            break;
-          }
-        }
-        case "poke:duster_up": {
-          if (data.block.above()?.typeId == "minecraft:dirt") {
-            data.block.above()?.setType("minecraft:sand");
-            break;
-          }
-          if (data.block.above()?.typeId == "minecraft:cobblestone") {
-            data.block.above()?.setType("minecraft:gravel");
-            break;
-          }
-        }
-        case "poke:duster_down": {
-          if (data.block.below()?.typeId == "minecraft:dirt") {
-            data.block.below()?.setType("minecraft:sand");
-            break;
-          }
-          if (data.block.below()?.typeId == "minecraft:cobblestone") {
-            data.block.below()?.setType("minecraft:gravel");
-            break;
-          }
-        }
-        case "poke:duster": {
-          if (data.block.below()?.typeId == "minecraft:dirt") {
-            data.block.below()?.setType("minecraft:sand");
-            break;
-          }
-          if (data.block.below()?.typeId == "minecraft:cobblestone") {
-            data.block.below()?.setType("minecraft:gravel");
-            break;
-          }
-        }
-      }
-      return;
-    }
-    if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== void 0) {
-      data.block.setPermutation(data.block.permutation.withState("pfe:active", 0));
-      return;
-    }
-    return;
-  }
-};
-var PFEMagnetBlock = class {
-  onTick(data) {
-    const block_location = `${data.block.x} ${data.block.y} ${data.block.z}`;
-    if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== void 0) {
-      data.block.setPermutation(data.block.permutation.withState("pfe:active", 1));
-      data.dimension.runCommand(`execute positioned ${block_location} as @e[type=item,r=10] run tp @s ${block_location}`);
-      return;
-    }
-    if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== void 0) {
-      data.block.setPermutation(data.block.permutation.withState("pfe:active", 0));
-      return;
-    }
-    return;
-  }
-};
-var PFEBulbs = class {
-  onPlayerInteract(data) {
-    const block_location = `${data.block.x} ${data.block.y} ${data.block.z}`;
-    let light_color = data.block.permutation.getState("pfe:color");
-    let sound_pitch = 1 + light_color / 10;
-    if (data.block.permutation.getState("pfe:color") == 15) {
-      data.block.setPermutation(data.block.permutation.withState("pfe:color", 0));
-      data.block.dimension.runCommandAsync(`playsound block.copper_bulb.turn_on @a  ${block_location} 1 ${sound_pitch}`);
-      return;
-    } else {
-      data.block.setPermutation(
-        data.block.permutation.withState("pfe:color", light_color + 1)
-      );
-      data.block.dimension.runCommandAsync(`playsound block.copper_bulb.turn_on @a ${block_location} 1 ${sound_pitch}`);
-      return;
-    }
-  }
-};
-var PFECalibrate = class {
-  onPlayerInteract(data) {
-    const OldId = ["poke:duster", "poke:dirter"];
-    const bId = data.block.typeId;
-    const newBlock = `${bId.substring(0, bId.lastIndexOf("_"))}_${data.face.toLowerCase()}`;
-    if (newBlock == bId)
-      return;
-    if (OldId.includes(bId)) {
-      data.block.setType(bId + "_up");
-      return;
-    }
-    data.block.setType(newBlock);
-    data.dimension.playSound("poke.calibrate", data.block.center());
-    return;
-  }
-};
-var PFECaliBlockBreaker = class {
-  onTick(data) {
-    const block_location = `${data.block.x} ${data.block.y} ${data.block.z}`;
-    if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== void 0) {
-      data.block.setPermutation(data.block.permutation.withState("pfe:active", 1));
-      if (data.block.typeId == "poke:block_breaker_east") {
-        data.dimension.runCommand("execute positioned " + block_location + " unless block ~1 ~ ~ bedrock run setblock ~1 ~ ~ air destroy");
-        return;
-      }
-      if (data.block.typeId == "poke:block_breaker_west") {
-        data.dimension.runCommand("execute positioned " + block_location + " unless block ~-1 ~ ~ bedrock run setblock ~-1 ~ ~ air destroy");
-        return;
-      }
-      if (data.block.typeId == "poke:block_breaker_south") {
-        data.dimension.runCommand("execute positioned " + block_location + " unless block ~ ~ ~1 bedrock run setblock ~ ~ ~1 air destroy");
-        return;
-      }
-      if (data.block.typeId == "poke:block_breaker_north") {
-        data.dimension.runCommand("execute positioned " + block_location + " unless block ~ ~ ~-1 bedrock run setblock ~ ~ ~-1 air destroy");
-        return;
-      }
-      if (data.block.typeId == "poke:block_breaker_up") {
-        data.dimension.runCommand("execute positioned " + block_location + " unless block ~ ~1 ~ bedrock run setblock ~ ~1 ~ air destroy");
-        return;
-      }
-      if (data.block.typeId == "poke:block_breaker_down") {
-        data.dimension.runCommand("execute positioned " + block_location + " unless block ~ ~-1 ~ bedrock run setblock ~ ~-1 ~ air destroy");
-        return;
-      }
-      return;
-    }
-    ;
-    if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== void 0) {
-      data.block.setPermutation(data.block.permutation.withState("pfe:active", 0));
-      return;
-    }
-    return;
-  }
-};
-var PFECaliCobbleGen = class {
-  onTick(data) {
-    if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== void 0) {
-      data.block.setPermutation(data.block.permutation.withState("pfe:active", 1));
-      if (data.block.typeId == "poke:calibrated_cobblestone_generator_east") {
-        if (data.block.east()?.typeId != "minecraft:air")
-          return;
-        data.block.east()?.setType("minecraft:cobblestone");
-        return;
-      }
-      if (data.block.typeId == "poke:calibrated_cobblestone_generator_west") {
-        if (data.block.west()?.typeId != "minecraft:air")
-          return;
-        data.block.west()?.setType("minecraft:cobblestone");
-        return;
-      }
-      if (data.block.typeId == "poke:calibrated_cobblestone_generator_south") {
-        if (data.block.south()?.typeId != "minecraft:air")
-          return;
-        data.block.south()?.setType("minecraft:cobblestone");
-        return;
-      }
-      if (data.block.typeId == "poke:calibrated_cobblestone_generator_north") {
-        if (data.block.north()?.typeId != "minecraft:air")
-          return;
-        data.block.north()?.setType("minecraft:cobblestone");
-        return;
-      }
-      if (data.block.typeId == "poke:calibrated_cobblestone_generator_up") {
-        if (data.block.above()?.typeId != "minecraft:air")
-          return;
-        data.block.above()?.setType("minecraft:cobblestone");
-        return;
-      }
-      if (data.block.typeId == "poke:calibrated_cobblestone_generator_down") {
-        if (data.block.below()?.typeId != "minecraft:air")
-          return;
-        data.block.below()?.setType("minecraft:cobblestone");
-        return;
-      }
-      return;
-    }
-    if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== void 0) {
-      data.block.setPermutation(data.block.permutation.withState("pfe:active", 0));
-      return;
-    }
-    return;
-  }
-};
-var PFECrop = class {
-  onRandomTick(data) {
-    var growth_state = data.block.permutation.getState("poke:growth_stage");
-    var growth_stage = growth_state + 1;
-    if (growth_state != void 0 || 6) {
-      data.block.setPermutation(data.block.permutation.withState("poke:growth_stage", growth_stage));
-      return;
-    }
-    return;
-  }
-  onPlayerInteract(data) {
-    const equippableComponent = data.player?.getComponent(EntityComponentTypes2.Equippable);
-    const mainhandItem = equippableComponent.getEquipment(EquipmentSlot2.Mainhand);
-    if (mainhandItem === void 0)
-      return;
-    const block_location = `${data.block.x} ${data.block.y} ${data.block.z}`;
-    let growth_state = data.block.permutation.getState("poke:growth_stage");
-    let growth_stage = growth_state + Math.round(Math.random() * 3);
-    var itemAfterUse = mainhandItem.amount;
-    var itemAfterUse1 = itemAfterUse - 1;
-    if (growth_stage > 6) {
-      growth_stage = 6;
-    }
-    if (mainhandItem.typeId == MinecraftItemTypes.BoneMeal && growth_state != 6) {
-      data.block.setPermutation(data.block.permutation.withState("poke:growth_stage", growth_stage));
-      data.dimension.runCommand("playsound item.bone_meal.use @a " + block_location);
-      data.dimension.runCommand("particle minecraft:crop_growth_emitter " + block_location);
-      if (data.player?.getGameMode() != GameMode2.creative) {
-        if (itemAfterUse1 == 0) {
-          data.player?.runCommand("clear @s bone_meal 0 1");
-          return;
-        }
-        equippableComponent.setEquipment(EquipmentSlot2.Mainhand, new ItemStack2(mainhandItem.typeId, itemAfterUse1));
-        return;
-      }
-      return;
-    }
-    return;
-  }
-};
-var PFELavaSponge = class {
-  onTick(data) {
-    const block_location = `${data.block.x} ${data.block.y} ${data.block.z}`;
-    data.dimension.runCommand("execute positioned " + block_location + " run function poke/pfe/lava_sponge");
-    return;
-  }
-};
-var PFEBarometer = class {
-  onTick(data) {
-    var weather = data.block.permutation.getState("pfe:weather");
-    if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== void 0) {
-      if (data.dimension.getWeather() == "Clear" && weather != 0) {
-        data.block.setPermutation(data.block.permutation.withState("pfe:weather", 0));
-        return;
-      }
-      if (data.dimension.getWeather() != "Thunder" && data.dimension.getWeather() == "Rain" && weather != 1) {
-        data.block.setPermutation(data.block.permutation.withState("pfe:weather", 1));
-        return;
-      }
-      if (data.dimension.getWeather() == "Thunder" && weather != 2) {
-        data.block.setPermutation(data.block.permutation.withState("pfe:weather", 2));
-        return;
-      }
-      return;
-    }
-  }
-};
-var PFECassette = class {
-  onUse(data) {
-    const id = data.itemStack.typeId;
-    const trackId = id.substring(id.lastIndexOf("_")).substring(1);
-    if (data.source.isSneaking) {
-      data.source.queueMusic(`poke.record.${trackId}`);
-      data.source.playSound("poke.cassette_activate");
-      data.source.sendMessage({ translate: `translation.poke:trackQueued` });
-      return;
-    } else {
-      data.source.playMusic(`poke.record.${trackId}`, { fade: 2.5 });
-      data.source.playSound("poke.cassette_activate");
-    }
-    return;
-  }
-};
-var PFEWindzooka = class {
-  onUse(data) {
-    if (data.itemStack === void 0)
-      return;
-    const equippableComponent = data.source.getComponent(EntityComponentTypes2.Equippable);
-    if (equippableComponent === void 0)
-      return;
-    const vierDirection = data.source.getViewDirection();
-    const location = data.source.getHeadLocation();
-    const id = data.itemStack.getTags();
-    const cooldownComp = data.itemStack.getComponent("minecraft:cooldown");
-    if (data.itemStack.typeId == "poke:windzooka") {
-      data.source.applyKnockback(vierDirection.x, vierDirection.z, -7, -vierDirection.y * 4);
-      data.source.playSound("wind_charge.burst");
-      data.source.dimension.spawnParticle("minecraft:wind_explosion_emitter", location);
-    } else {
-      data.source.applyKnockback(vierDirection.x, vierDirection.z, 7, -vierDirection.y * -4);
-      data.source.playSound("wind_charge.burst");
-      data.source.dimension.spawnParticle("minecraft:wind_explosion_emitter", location);
-      data.source.dimension.spawnParticle("poke:blazooka_flame", location);
-    }
-    data.source.runCommand("" + id);
-    cooldownComp.startCooldown(data.source);
-    const newItem = damage_item(data.itemStack);
-    equippableComponent.setEquipment(EquipmentSlot2.Mainhand, newItem);
-    if (!newItem) {
-      data.source.playSound("random.break");
-    }
-    return;
-  }
-};
-var PFEOnUse = class {
-  onUse(data) {
-    if (data.itemStack === void 0)
-      return;
-    const ItemTags = data.itemStack.getTags().toString();
-    let Command = ItemTags.substring(ItemTags.indexOf("pfe:Command:"), ItemTags.indexOf(":pfeCommandEnd")).substring(12);
-    data.source.runCommand("" + Command);
-    const cooldownComp = data.itemStack.getComponent("minecraft:cooldown");
-    if (cooldownComp != void 0)
-      cooldownComp.startCooldown(data.source);
-    if (!data.itemStack.hasComponent("minecraft:durability")) {
-      return;
-    }
-    const newItem = damage_item(data.itemStack);
-    const equippableComponent = data.source.getComponent(EntityComponentTypes2.Equippable);
-    equippableComponent.setEquipment(EquipmentSlot2.Mainhand, newItem);
-    if (!newItem) {
-      data.source.playSound("random.break");
-    }
-    return;
-  }
-};
-var PFEUpgrader = class {
-  onUseOn(data) {
-    const player = data.source;
-    const equippableComponent = data.source.getComponent(EntityComponentTypes2.Equippable);
-    const block_location = `${data.block.x} ${data.block.y} ${data.block.z}`;
-    const itemIds = data.itemStack.typeId;
-    const itemId = itemIds.substring(5);
-    data.source.runCommandAsync(`execute positioned ${block_location} run function poke/pfe/${itemId}`);
-    if (player.getGameMode() == GameMode2.creative)
-      return;
-    const newItem = damage_item(data.itemStack);
-    equippableComponent.setEquipment(EquipmentSlot2.Mainhand, newItem);
-    if (!newItem) {
-      player.playSound("random.break");
-    }
-    return;
-  }
-};
-var PFESpawnEgg = class {
-  onUseOn(data) {
-    const player = data.source;
-    const faceLoc = data.faceLocation;
-    const blockFace = data.blockFace;
-    var faceLocX = --faceLoc.x;
-    var faceLocY = --faceLoc.y;
-    var faceLocZ = --faceLoc.z;
-    var amount = data.itemStack.amount;
-    const equippableComponent = data.source.getComponent(EntityComponentTypes2.Equippable);
-    if (blockFace == "North") {
-      var faceLocZ = faceLocZ + 1.5;
-    }
-    if (blockFace == "South") {
-      var faceLocZ = faceLocZ - 1.5;
-    }
-    if (blockFace == "East") {
-      var faceLocX = faceLocX - 1.5;
-    }
-    if (blockFace == "West") {
-      var faceLocX = faceLocX + 1.5;
-    }
-    if (blockFace == "Up") {
-      var faceLocY = faceLocY - 1.5;
-    }
-    if (blockFace == "Down") {
-      var faceLocY = faceLocY + 2;
-    }
-    const vec3 = { x: -faceLocX, y: -faceLocY, z: -faceLocZ };
-    const mobId = data.itemStack.getTags();
-    player.dimension.spawnEntity("" + mobId, vec3);
-    if (player.getGameMode() == "creative")
-      return;
-    if (amount <= 1) {
-      equippableComponent.setEquipment(EquipmentSlot2.Mainhand, new ItemStack2("minecraft:air", 1));
-      return;
-    }
-    equippableComponent.setEquipment(EquipmentSlot2.Mainhand, new ItemStack2(data.itemStack.typeId, amount - 1));
-    return;
-  }
-};
-var PFEBowAim = class {
-  onUse(data) {
-    const cPlayers = data.source.dimension.getPlayers({ excludeNames: ["" + data.source.name] });
-    var cPlayersLength = cPlayers.length;
-    for (var i = cPlayersLength; i > 0; i--) {
-      data.source.playAnimation("animation.humanoid.bow_and_arrow", { stopExpression: "!q.is_using_item", players: [cPlayers[i - 1].name] });
-    }
-    return;
-  }
-};
-var PFECrossbowAim = class {
-  onUse(data) {
-    const cPlayers = data.source.dimension.getPlayers({ excludeNames: ["" + data.source.name] });
-    var cPlayersLength = cPlayers.length;
-    data.source.playAnimation("animation.player.first_person.crossbow_equipped", { stopExpression: "!q.is_using_item", players: [data.source.name + ""] });
-    for (var i = cPlayersLength; i > 0; i--) {
-      data.source.playAnimation("third_person_crossbow_equipped", { stopExpression: "!q.is_using_item", players: [cPlayers[i - 1].name] });
-    }
-    return;
-  }
-};
-var PFEBlockInteract = class {
-  onPlayerInteract(data) {
-    switch (data.block.typeId) {
-      case "poke:listener_trophy": {
-        data.player?.playMusic("record.listen", { fade: 5 });
-        return;
-      }
-      case "poke:furnace_golem_trophy": {
-        data.player?.playMusic("poke.record.pigstep", { fade: 5 });
-        return;
-      }
-      case "poke:cobalt_golem_block":
-        {
-          data.dimension.spawnEntity("poke:cobalt_golem", data.block.location);
-          data.block.setType("minecraft:air");
-          return;
-        }
-        return;
-    }
-  }
-};
-var logList = ["minecraft:acacia_wood", "minecraft:birch_wood", "minecraft:cherry_wood", "minecraft:dark_oak_wood", "minecraft:jungle_wood", "minecraft:mangrove_wood", "minecraft:oak_wood", "minecraft:spruce_wood", "minecraft:acacia_log", "minecraft:birch_log", "minecraft:cherry_log", "minecraft:dark_oak_log", "minecraft:jungle_log", "minecraft:mangrove_log", "minecraft:oak_log", "minecraft:spruce_log"];
-world2.beforeEvents.playerBreakBlock.subscribe((data) => {
-  if (data.itemStack == void 0)
-    return;
-  if (data.itemStack.typeId != "poke:nebula_logger")
-    return;
-  var block = data.block;
-  var veinMiner = logList.includes(block.typeId);
-  if (veinMiner) {
-    let dimension = block.dimension;
-    let toBreak = [block.location];
-    let checked = /* @__PURE__ */ new Set();
-    while (toBreak.length > 0) {
-      let location = toBreak.shift();
-      let key = `${location.x},${location.y},${location.z}`;
-      if (checked.has(key))
-        continue;
-      checked.add(key);
-      let currentBlock = dimension.getBlock(location);
-      if (currentBlock && logList.includes(currentBlock.typeId)) {
-        system3.run(() => {
-          dimension.runCommand(`setblock ${location.x} ${location.y} ${location.z} air destroy`);
-        });
-        let adjacent = [
-          { x: location.x + 1, y: location.y, z: location.z },
-          { x: location.x - 1, y: location.y, z: location.z },
-          { x: location.x, y: location.y + 1, z: location.z },
-          { x: location.x, y: location.y - 1, z: location.z },
-          { x: location.x, y: location.y, z: location.z + 1 },
-          { x: location.x, y: location.y, z: location.z - 1 },
-          { x: location.x, y: location.y + 1, z: location.z + 1 },
-          { x: location.x, y: location.y + 1, z: location.z - 1 },
-          { x: location.x + 1, y: location.y + 1, z: location.z },
-          { x: location.x - 1, y: location.y + 1, z: location.z },
-          { x: location.x + 1, y: location.y, z: location.z + 1 },
-          { x: location.x + 1, y: location.y, z: location.z - 1 },
-          { x: location.x - 1, y: location.y, z: location.z + 1 },
-          { x: location.x - 1, y: location.y, z: location.z - 1 },
-          { x: location.x + 1, y: location.y + 1, z: location.z + 1 },
-          { x: location.x + 1, y: location.y + 1, z: location.z - 1 },
-          { x: location.x - 1, y: location.y + 1, z: location.z + 1 },
-          { x: location.x - 1, y: location.y + 1, z: location.z - 1 }
-        ];
-        for (let loc of adjacent) {
-          toBreak.push(loc);
-        }
-      }
-    }
-    data.cancel = true;
-  }
-});
-var PFEDodge = class {
-  onUse(data) {
-    if (data.itemStack === void 0)
-      return;
-    const cooldownComponent = data.itemStack.getComponent("minecraft:cooldown");
-    const equippableComponent = data.source.getComponent(EntityComponentTypes2.Equippable);
-    const moveDir = data.source.getVelocity();
-    var amount = data.itemStack.amount;
-    data.source.dimension.spawnParticle("minecraft:wind_explosion_emitter", data.source.location);
-    data.source.applyKnockback(moveDir.x, moveDir.z, 5, moveDir.y + 0.5);
-    data.source.playSound("wind_charge.burst");
-    if (data.source.getGameMode() == GameMode2.creative)
-      return;
-    cooldownComponent.startCooldown(data.source);
-    if (amount <= 1) {
-      equippableComponent.setEquipment(EquipmentSlot2.Mainhand, new ItemStack2("minecraft:air", 1));
-      return;
-    }
-    equippableComponent.setEquipment(EquipmentSlot2.Mainhand, new ItemStack2(data.itemStack.typeId, amount - 1));
-    return;
-  }
-};
-var PFE8Ball = class {
-  onPlayerInteract(data) {
-    var RNG = Math.floor(Math.random() * 19);
-    data.player?.runCommand('tellraw @s {"rawtext":[{"translate":"translation.poke:8ball' + RNG + '","with":{"rawtext":[{"text":""}]}}]}');
-    return;
-  }
-};
-var pfeWallNoC = ["minecraft:piston_arm_collision", "minecraft:sticky_piston_arm_collision", "minecraft:air", "minecraft:water", "minecraft:lava", "minecraft:waterlily", "minecraft:flowing_water", "minecraft:flowing_lava", "minecraft:short_grass", "minecraft:tall_grass", "minecraft:seagrass", "minecraft:kelp", "minecraft:oak_leaves", "minecraft:acacia_leaves", "minecraft:azalea_leaves", "minecraft:azalea_leaves_flowered", "minecraft:birch_leaves", "minecraft:cherry_leaves", "minecraft:dark_oak_leaves", "minecraft:jungle_leaves", "minecraft:mangrove_leaves", "minecraft:spruce_leaves"];
-var PFEWall = class {
-  onPlace(data) {
-    const northB = data.block.north();
-    const southB = data.block.south();
-    const eastB = data.block.east();
-    const westB = data.block.west();
-    if (northB === void 0)
-      return;
-    if (southB === void 0)
-      return;
-    if (eastB === void 0)
-      return;
-    if (westB === void 0)
-      return;
-    if (!pfeWallNoC.includes(northB.typeId)) {
-      data.block.setPermutation(data.block.permutation.withState("pfe:wall_n", true));
-      if (northB.hasTag("pfe_wall")) {
-        northB.setPermutation(northB.permutation.withState("pfe:wall_s", true));
-      }
-    } else {
-      data.block.setPermutation(data.block.permutation.withState("pfe:wall_n", false));
-    }
-    if (!pfeWallNoC.includes(southB.typeId)) {
-      data.block.setPermutation(data.block.permutation.withState("pfe:wall_s", true));
-      if (southB.hasTag("pfe_wall")) {
-        southB.setPermutation(southB.permutation.withState("pfe:wall_n", true));
-      }
-    } else {
-      data.block.setPermutation(data.block.permutation.withState("pfe:wall_s", false));
-    }
-    if (!pfeWallNoC.includes(eastB.typeId)) {
-      data.block.setPermutation(data.block.permutation.withState("pfe:wall_e", true));
-      if (eastB.hasTag("pfe_wall")) {
-        eastB.setPermutation(eastB.permutation.withState("pfe:wall_w", true));
-      }
-    } else {
-      data.block.setPermutation(data.block.permutation.withState("pfe:wall_e", false));
-    }
-    if (!pfeWallNoC.includes(westB.typeId)) {
-      data.block.setPermutation(data.block.permutation.withState("pfe:wall_w", true));
-      if (westB.hasTag("pfe_wall")) {
-        westB.setPermutation(westB.permutation.withState("pfe:wall_e", true));
-      }
-    } else {
-      data.block.setPermutation(data.block.permutation.withState("pfe:wall_w", false));
-    }
-    return;
-  }
-  onPlayerDestroy(data) {
-    const northB = data.block.north();
-    const southB = data.block.south();
-    const eastB = data.block.east();
-    const westB = data.block.west();
-    if (northB === void 0)
-      return;
-    if (southB === void 0)
-      return;
-    if (eastB === void 0)
-      return;
-    if (westB === void 0)
-      return;
-    if (northB.hasTag("pfe_wall")) {
-      northB.setPermutation(northB.permutation.withState("pfe:wall_s", false));
-    }
-    if (southB.hasTag("pfe_wall")) {
-      southB.setPermutation(southB.permutation.withState("pfe:wall_n", false));
-    }
-    if (eastB.hasTag("pfe_wall")) {
-      eastB.setPermutation(eastB.permutation.withState("pfe:wall_w", false));
-    }
-    if (westB.hasTag("pfe_wall")) {
-      westB.setPermutation(westB.permutation.withState("pfe:wall_e", false));
-    }
-    return;
-  }
-};
 system3.runInterval(
   () => {
-    let allPlayers = world2.getAllPlayers();
+    let allPlayers = world3.getAllPlayers();
     let randomPlayer = allPlayers.at(Math.abs(Math.round(Math.random() * (allPlayers.length - 1))));
     randomPlayer?.dimension.spawnEntity("poke:cassette_trader", randomPlayer.location).runCommand(`spreadplayers ~ ~ 30 40 @s ~10`);
   },
   216e3
   /*3hrs*/
 );
-world2.beforeEvents.worldInitialize.subscribe((data) => {
-  if (typeof world2.getDynamicProperty(PFEBossEventConfigName) == "string") {
-    let settings = JSON.parse(world2.getDynamicProperty(PFEBossEventConfigName));
+world3.afterEvents.playerJoin.subscribe((data) => {
+  let birthdays = JSON.parse(world3.getDynamicProperty(`pfe:birthdays`).toString());
+  system3.runTimeout(() => {
+    world3.getAllPlayers().forEach((player) => {
+      if (player.id == data.playerId) {
+        let currentTime = new Date(Date.now() + PFETimeZoneOffset(player));
+        birthdays.forEach((birthday) => {
+          if (birthday.day == currentTime.getDate() && birthday.month == currentTime.getMonth()) {
+            let name = { text: birthday.name };
+            if (birthday.style == "dev") {
+              name.translate = `translation.poke:birthdayDev`;
+            }
+            if (birthday.name = player.name) {
+              name.translate = `translation.poke:birthdayOwn`;
+            } else if (birthday.name?.endsWith(`s`)) {
+              name.text = `${birthday.name}'`;
+            } else {
+              name.text = `${birthday.name}'s`;
+            }
+            player.sendMessage({ translate: `translation.poke:birthdayAnnounce`, with: { rawtext: [{ translate: PFETimeGreeting(currentTime, true) }, { text: player.name }, name] } });
+          }
+        });
+      }
+    });
+  }, 600);
+});
+world3.beforeEvents.worldInitialize.subscribe((data) => {
+  let birthdayProperty = world3.getDynamicProperty(`pfe:birthdays`);
+  if (typeof birthdayProperty != "string") {
+    world3.setDynamicProperty(`pfe:birthdays`, JSON.stringify([{ day: 16, month: 11, year: 2005, style: "dev", name: `ItsMePok`, announce: true }]));
+  }
+  if (typeof world3.getDynamicProperty(PFEBossEventConfigName) == "string") {
+    let settings = JSON.parse(world3.getDynamicProperty(PFEBossEventConfigName));
     if (typeof settings.ticks != "number" || typeof settings.furnaceGolem != "object" || typeof settings.knightling != "object" || typeof settings.listener != "object" || typeof settings.zombken != "object" || typeof settings.miniDemonicAllay != "object" || typeof settings.necromancer != "object" || typeof settings.snowman != "object" || typeof settings.sparky != "object" || typeof settings.superStriker != "object" || typeof settings.theLogger != "object") {
-      world2.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(PFEDefaultBossEventSettings));
+      world3.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(PFEDefaultBossEventSettings));
     }
     ;
   } else {
-    world2.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(PFEDefaultBossEventSettings));
+    world3.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(PFEDefaultBossEventSettings));
   }
   data.itemComponentRegistry.registerCustomComponent(
     "poke:boss_event_config",
@@ -4294,6 +3664,97 @@ world2.beforeEvents.worldInitialize.subscribe((data) => {
     } }
   );
   data.itemComponentRegistry.registerCustomComponent(
+    "poke:veinMiner",
+    {
+      onMineBlock(data2) {
+        if (!data2.minedBlockPermutation.hasTag("minecraft:is_axe_item_destructible"))
+          return;
+        let dimension = data2.block.dimension;
+        let location = data2.block.location;
+        let toBreak = [
+          { x: location.x + 1, y: location.y, z: location.z },
+          { x: location.x - 1, y: location.y, z: location.z },
+          { x: location.x, y: location.y + 1, z: location.z },
+          { x: location.x, y: location.y - 1, z: location.z },
+          { x: location.x, y: location.y, z: location.z + 1 },
+          { x: location.x, y: location.y, z: location.z - 1 },
+          { x: location.x, y: location.y + 1, z: location.z + 1 },
+          { x: location.x, y: location.y + 1, z: location.z - 1 },
+          { x: location.x + 1, y: location.y + 1, z: location.z },
+          { x: location.x - 1, y: location.y + 1, z: location.z },
+          { x: location.x + 1, y: location.y, z: location.z + 1 },
+          { x: location.x + 1, y: location.y, z: location.z - 1 },
+          { x: location.x - 1, y: location.y, z: location.z + 1 },
+          { x: location.x - 1, y: location.y, z: location.z - 1 },
+          { x: location.x + 1, y: location.y + 1, z: location.z + 1 },
+          { x: location.x + 1, y: location.y + 1, z: location.z - 1 },
+          { x: location.x - 1, y: location.y + 1, z: location.z + 1 },
+          { x: location.x - 1, y: location.y + 1, z: location.z - 1 },
+          { x: location.x + 1, y: location.y - 1, z: location.z + 1 },
+          { x: location.x + 1, y: location.y - 1, z: location.z - 1 },
+          { x: location.x - 1, y: location.y - 1, z: location.z + 1 },
+          { x: location.x - 1, y: location.y - 1, z: location.z - 1 },
+          { x: location.x, y: location.y - 1, z: location.z + 1 },
+          { x: location.x, y: location.y - 1, z: location.z - 1 },
+          { x: location.x + 1, y: location.y - 1, z: location.z },
+          { x: location.x - 1, y: location.y - 1, z: location.z }
+        ];
+        let checked = /* @__PURE__ */ new Set();
+        let max = 0;
+        while (max < 256 && toBreak.length > 0) {
+          location = toBreak.shift();
+          let key = `${location.x},${location.y},${location.z}`;
+          if (checked.has(key)) {
+            continue;
+          }
+          ;
+          checked.add(key);
+          let currentBlock = void 0;
+          try {
+            currentBlock = dimension.getBlock(location);
+          } catch (error) {
+            continue;
+          }
+          if (data2.minedBlockPermutation.matches(currentBlock.typeId)) {
+            dimension.runCommand(`setblock ${location.x} ${location.y} ${location.z} air destroy`);
+            max = max + 1;
+            let adjacent = [
+              { x: location.x + 1, y: location.y, z: location.z },
+              { x: location.x - 1, y: location.y, z: location.z },
+              { x: location.x, y: location.y + 1, z: location.z },
+              { x: location.x, y: location.y - 1, z: location.z },
+              { x: location.x, y: location.y, z: location.z + 1 },
+              { x: location.x, y: location.y, z: location.z - 1 },
+              { x: location.x, y: location.y + 1, z: location.z + 1 },
+              { x: location.x, y: location.y + 1, z: location.z - 1 },
+              { x: location.x + 1, y: location.y + 1, z: location.z },
+              { x: location.x - 1, y: location.y + 1, z: location.z },
+              { x: location.x + 1, y: location.y, z: location.z + 1 },
+              { x: location.x + 1, y: location.y, z: location.z - 1 },
+              { x: location.x - 1, y: location.y, z: location.z + 1 },
+              { x: location.x - 1, y: location.y, z: location.z - 1 },
+              { x: location.x + 1, y: location.y + 1, z: location.z + 1 },
+              { x: location.x + 1, y: location.y + 1, z: location.z - 1 },
+              { x: location.x - 1, y: location.y + 1, z: location.z + 1 },
+              { x: location.x - 1, y: location.y + 1, z: location.z - 1 },
+              { x: location.x + 1, y: location.y - 1, z: location.z + 1 },
+              { x: location.x + 1, y: location.y - 1, z: location.z - 1 },
+              { x: location.x - 1, y: location.y - 1, z: location.z + 1 },
+              { x: location.x - 1, y: location.y - 1, z: location.z - 1 },
+              { x: location.x, y: location.y - 1, z: location.z + 1 },
+              { x: location.x, y: location.y - 1, z: location.z - 1 },
+              { x: location.x + 1, y: location.y - 1, z: location.z },
+              { x: location.x - 1, y: location.y - 1, z: location.z }
+            ];
+            for (let loc of adjacent) {
+              toBreak.push(loc);
+            }
+          }
+        }
+      }
+    }
+  );
+  data.itemComponentRegistry.registerCustomComponent(
     "poke:normalMining",
     {
       onMineBlock(data2) {
@@ -4301,7 +3762,7 @@ world2.beforeEvents.worldInitialize.subscribe((data) => {
           return;
         if (data2.source.getGameMode() == GameMode2.creative)
           return;
-        const newItem = damage_item_ub(data2.itemStack, void 0);
+        const newItem = PFEDamageItemUB(data2.itemStack, void 0);
         data2.source.getComponent(EntityComponentTypes2.Equippable).setEquipment(EquipmentSlot2.Mainhand, newItem);
         if (!newItem) {
           data2.source.playSound("random.break");
@@ -4311,137 +3772,1272 @@ world2.beforeEvents.worldInitialize.subscribe((data) => {
     }
   );
   data.itemComponentRegistry.registerCustomComponent(
+    "poke:shootProjectile",
+    {
+      onUse(data2) {
+        if (data2.itemStack == void 0)
+          return;
+        const headLocate = data2.source.getHeadLocation();
+        const ticks = data2.itemStack.getComponent("cooldown").cooldownTicks;
+        if (data2.itemStack.getComponent("cooldown").getCooldownTicksRemaining(data2.source) != ticks - 1)
+          return;
+        const pTag = data2.itemStack.getTags();
+        const angle = data2.source.getViewDirection();
+        const projEntity = data2.source.dimension.spawnEntity("" + pTag, headLocate);
+        const projComp = projEntity.getComponent("projectile");
+        data2.source.playSound("random.bow");
+        projComp.owner = data2.source;
+        projComp.shoot(angle);
+        if (data2.source.getGameMode() == GameMode2.creative)
+          return;
+        const newItem = PFEDamageItem(data2.itemStack);
+        data2.source.getComponent(EntityComponentTypes2.Equippable).setEquipment(EquipmentSlot2.Mainhand, newItem);
+        if (!newItem) {
+          data2.source.playSound("random.break");
+        }
+        return;
+      }
+    }
+  );
+  data.itemComponentRegistry.registerCustomComponent(
+    "poke:hitEffects",
+    {
+      onHitEntity(data2) {
+        switch (data2.itemStack?.typeId) {
+          case "poke:demonic_sword": {
+            data2.hitEntity.addEffect("slowness", 100, { amplifier: 3 });
+            return;
+          }
+          case "poke:hellish_blade": {
+            data2.hitEntity.addEffect("slowness", 40, { amplifier: 3 });
+            return;
+          }
+          case "poke:godly_sword": {
+            data2.attackingEntity.addEffect("strength", 100, { amplifier: 2 });
+            return;
+          }
+          case "poke:holy_sword": {
+            data2.attackingEntity.addEffect("strength", 40, { amplifier: 1 });
+            return;
+          }
+          case "poke:astral_sword": {
+            data2.attackingEntity.addEffect("strength", 100, { amplifier: 2 });
+            return;
+          }
+          case "poke:shade_sword": {
+            data2.hitEntity.addEffect("slowness", 40, { amplifier: 2 });
+            data2.hitEntity.addEffect("wither", 60, { amplifier: 1 });
+            return;
+          }
+          case "poke:radium_sword": {
+            data2.hitEntity.addEffect("slowness", 220, { amplifier: 3 });
+            data2.hitEntity.addEffect("wither", 240, { amplifier: 4 });
+            return;
+          }
+          case "poke:amethyst_scythe": {
+            data2.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 4 });
+            data2.hitEntity.addEffect("blindness", 20);
+            return;
+          }
+          case "poke:demonic_slasher": {
+            data2.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 7 });
+            data2.hitEntity.addEffect("wither", 80, { amplifier: 1 });
+            return;
+          }
+          case "poke:gold_scythe": {
+            data2.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 2 });
+            data2.attackingEntity.addEffect("haste", 600, { amplifier: 2 });
+            return;
+          }
+          case "poke:emerald_scythe": {
+            data2.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 2 });
+            data2.attackingEntity.addEffect("village_hero", 2400, { amplifier: 1 });
+            return;
+          }
+          case "poke:iron_scythe": {
+            data2.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 2 });
+            return;
+          }
+          case "poke:onyx_scythe": {
+            data2.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 200, { amplifier: 5 });
+            data2.attackingEntity.addEffect("jump_boost", 100, { amplifier: 2 });
+            data2.hitEntity.addEffect("weakness", 120, { amplifier: 2 });
+            return;
+          }
+          case "poke:godly_scythe": {
+            data2.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 200, { amplifier: 6 });
+            data2.attackingEntity.addEffect("slow_falling", 2400);
+            data2.attackingEntity.addEffect("jump_boost", 1200, { amplifier: 3 });
+            return;
+          }
+          case "poke:hellish_scythe": {
+            data2.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 7 });
+            data2.attackingEntity.addEffect(MinecraftEffectTypes.FireResistance, 2400);
+            data2.hitEntity.addEffect("mining_fatigue", 400, { amplifier: 1 });
+            return;
+          }
+          case "poke:holy_scythe": {
+            data2.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 200, { amplifier: 6 });
+            data2.attackingEntity.addEffect("slow_falling", 2400, { amplifier: 1 });
+            data2.hitEntity.addEffect("darkness", 400);
+            return;
+          }
+          case "poke:shade_scythe": {
+            data2.attackingEntity.addEffect("absorption", 600, { amplifier: 1 });
+            data2.attackingEntity.addEffect("strength", 100, { amplifier: 1 });
+            data2.hitEntity.addEffect("slowness", 160, { amplifier: 2 });
+            return;
+          }
+          case "poke:diamond_scythe": {
+            data2.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 160, { amplifier: 3 });
+            data2.hitEntity.addEffect("weakness", 100, { amplifier: 1 });
+            data2.hitEntity.addEffect("blindness", 80);
+            return;
+          }
+          case "poke:netherite_scythe": {
+            data2.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 160, { amplifier: 3 });
+            data2.hitEntity.addEffect("hunger", 120, { amplifier: 1 });
+            data2.hitEntity.addEffect("slowness", 80, { amplifier: 2 });
+            return;
+          }
+          case "poke:radium_scythe": {
+            data2.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 5 });
+            data2.hitEntity.addEffect("nausea", 80, { amplifier: 1 });
+            data2.hitEntity.addEffect("fatal_poison", 160, { amplifier: 2 });
+            return;
+          }
+          case "poke:medic_scythe": {
+            data2.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 6 });
+            data2.attackingEntity.addEffect("health_boost", 2400, { amplifier: 2 });
+            return;
+          }
+          case "poke:galactic_scythe": {
+            data2.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 9 });
+            data2.attackingEntity.addEffect(MinecraftEffectTypes.FireResistance, 300);
+            data2.hitEntity.addEffect("wither", 80, { amplifier: 2 });
+            data2.hitEntity.addEffect("weakness", 80, { amplifier: 2 });
+            return;
+          }
+          case "poke:astral_scythe": {
+            data2.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 120, { amplifier: 9 });
+            data2.attackingEntity.addEffect(MinecraftEffectTypes.FireResistance, 300);
+            data2.hitEntity.addEffect("wither", 120, { amplifier: 2 });
+            data2.hitEntity.addEffect("weakness", 120, { amplifier: 3 });
+            return;
+          }
+          case "poke:ember_scythe": {
+            data2.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 6 });
+            data2.hitEntity.addEffect("nausea", 80, { amplifier: 1 });
+            data2.hitEntity.addEffect("blindness", 80);
+            return;
+          }
+          case "poke:void_scythe": {
+            data2.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 200, { amplifier: 6 });
+            data2.hitEntity.runCommand("function poke/pfe/void_scythe");
+            return;
+          }
+          case "poke:death_scythe": {
+            data2.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 200, { amplifier: 6 });
+            data2.hitEntity.runCommand("function poke/pfe/death_scythe");
+            return;
+          }
+          case "poke:nebula_scythe": {
+            data2.attackingEntity.runCommand("function poke/pfe/nebula_scythe");
+            data2.hitEntity.addEffect("wither", 80, { amplifier: 3 });
+            return;
+          }
+          case "poke:cobalt_scythe": {
+            data2.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 6 });
+            data2.hitEntity.addEffect("wither", 40, { amplifier: 1 });
+            return;
+          }
+          case "poke:nebula_sword": {
+            data2.attackingEntity.addEffect("strength", 40, { amplifier: 4 });
+            data2.hitEntity.addEffect("weakness", 20, { amplifier: 2 });
+            return;
+          }
+          case "poke:ban_hammer": {
+            data2.attackingEntity.addEffect("strength", 40, { amplifier: 4 });
+            data2.hitEntity.addEffect("weakness", 20, { amplifier: 2 });
+            return;
+          }
+          case "poke:circuit_sword": {
+            data2.attackingEntity.runCommand("function poke/pfe/circuit_sword");
+            data2.hitEntity.addEffect("blindness", 100);
+            return;
+          }
+        }
+        return;
+      }
+    }
+  );
+  data.itemComponentRegistry.registerCustomComponent(
+    "poke:consumeEffects",
+    {
+      onConsume(data2) {
+        switch (data2.itemStack.typeId) {
+          case "poke:xp_vial":
+            {
+              data2.source.runCommandAsync("xp 160 @s");
+              return;
+            }
+            ;
+          case "poke:cobalt_potion": {
+            data2.source.addEffect(MinecraftEffectTypes.NightVision, 3600);
+            data2.source.addEffect(MinecraftEffectTypes.Regeneration, 2400);
+          }
+          case "poke:cobalt_soup":
+            {
+              data2.source.addEffect(MinecraftEffectTypes.NightVision, 2400, { showParticles: false });
+              return;
+            }
+            ;
+          case "poke:root_beer":
+            {
+              data2.source.addEffect(MinecraftEffectTypes.Speed, 600, { amplifier: 4 });
+              return;
+            }
+            ;
+          case "poke:pumpkin_spice":
+            {
+              data2.source.addEffect(MinecraftEffectTypes.Invisibility, 600);
+              data2.source.addEffect(MinecraftEffectTypes.Speed, 600, { amplifier: 4 });
+              return;
+            }
+            ;
+          case "poke:crimson_sporeshroom_stew":
+            {
+              data2.source.addEffect(MinecraftEffectTypes.FireResistance, 1200);
+              return;
+            }
+            ;
+          case "poke:warped_sporeshroom_stew":
+            {
+              data2.source.addEffect(MinecraftEffectTypes.FireResistance, 1200);
+              return;
+            }
+            ;
+          case "poke:hellish_soup":
+            {
+              data2.source.addEffect(MinecraftEffectTypes.FireResistance, 1200);
+              return;
+            }
+            ;
+          case "poke:nebula_noodles":
+            {
+              data2.source.addEffect(MinecraftEffectTypes.Strength, 600, { amplifier: 7 });
+              return;
+            }
+            ;
+          case "poke:milk_bottle":
+            {
+              data2.source.runCommandAsync("effect @s clear");
+              return;
+            }
+            ;
+          case "poke:demonic_potion":
+            {
+              data2.source.runCommandAsync("function poke/pfe/demonic_potion");
+              return;
+            }
+            ;
+          case "poke:hellish_potion":
+            {
+              data2.source.runCommandAsync("function poke/pfe/hellish_potion");
+              return;
+            }
+            ;
+          case "poke:nebula_potion":
+            {
+              data2.source.runCommandAsync("function poke/pfe/nebula_potion");
+              return;
+            }
+            ;
+          case "poke:void_potion":
+            {
+              data2.source.runCommandAsync("function poke/pfe/void_potion");
+              return;
+            }
+            ;
+          case "poke:death_potion":
+            {
+              data2.source.kill();
+              return;
+            }
+            ;
+          case "poke:rotten_chicken":
+            {
+              data2.source.addEffect(MinecraftEffectTypes.Nausea, 400);
+              return;
+            }
+            ;
+          case "poke:golden_chicken":
+            {
+              data2.source.addEffect(MinecraftEffectTypes.VillageHero, 400, { amplifier: 1 });
+              return;
+            }
+            ;
+          case "poke:banished_star_x10":
+            {
+              data2.source.runCommandAsync("damage @a[r=100] 32767000 entity_attack entity @s");
+              return;
+            }
+            ;
+          case "poke:banished_star_x9":
+            {
+              data2.source.runCommandAsync("damage @s 32767000 entity_attack");
+              return;
+            }
+            ;
+        }
+        return;
+      }
+    }
+  );
+  data.itemComponentRegistry.registerCustomComponent(
+    "pfe:timeConfig",
+    {
+      onUse(data2) {
+        PFETimeConfigUIMainMenu(data2.source);
+      }
+    }
+  );
+  data.itemComponentRegistry.registerCustomComponent(
     "poke:haxelMining",
     new PFEHaxelMining()
   );
   data.itemComponentRegistry.registerCustomComponent(
     "poke:cc_dodge",
-    new PFEDodge()
+    {
+      onUse(data2) {
+        if (data2.itemStack === void 0)
+          return;
+        const cooldownComponent = data2.itemStack.getComponent("minecraft:cooldown");
+        const equippableComponent = data2.source.getComponent(EntityComponentTypes2.Equippable);
+        const moveDir = data2.source.getVelocity();
+        var amount = data2.itemStack.amount;
+        data2.source.dimension.spawnParticle("minecraft:wind_explosion_emitter", data2.source.location);
+        data2.source.applyKnockback(moveDir.x, moveDir.z, 5, moveDir.y + 0.5);
+        data2.source.playSound("component.jump_to_block");
+        if (data2.source.getGameMode() == GameMode2.creative)
+          return;
+        cooldownComponent.startCooldown(data2.source);
+        if (amount <= 1) {
+          equippableComponent.setEquipment(EquipmentSlot2.Mainhand, new ItemStack2("minecraft:air", 1));
+          return;
+        }
+        equippableComponent.setEquipment(EquipmentSlot2.Mainhand, new ItemStack2(data2.itemStack.typeId, amount - 1));
+        return;
+      }
+    }
   );
   data.itemComponentRegistry.registerCustomComponent(
     "poke:cc_bowAim",
-    new PFEBowAim()
+    {
+      onUse(data2) {
+        const cPlayers = data2.source.dimension.getPlayers({ excludeNames: ["" + data2.source.name] });
+        var cPlayersLength = cPlayers.length;
+        for (var i = cPlayersLength; i > 0; i--) {
+          data2.source.playAnimation("animation.humanoid.bow_and_arrow", { stopExpression: "!q.is_using_item", players: [cPlayers[i - 1].name] });
+        }
+        return;
+      }
+    }
   );
   data.itemComponentRegistry.registerCustomComponent(
     "poke:cc_crossbowAim",
-    new PFECrossbowAim()
+    {
+      onUse(data2) {
+        const cPlayers = data2.source.dimension.getPlayers({ excludeNames: ["" + data2.source.name] });
+        var cPlayersLength = cPlayers.length;
+        data2.source.playAnimation("animation.player.first_person.crossbow_equipped", { stopExpression: "!q.is_using_item", players: [data2.source.name + ""] });
+        for (var i = cPlayersLength; i > 0; i--) {
+          data2.source.playAnimation("third_person_crossbow_equipped", { stopExpression: "!q.is_using_item", players: [cPlayers[i - 1].name] });
+        }
+        return;
+      }
+    }
   );
   data.itemComponentRegistry.registerCustomComponent(
     "poke:cc_spawnEgg",
-    new PFESpawnEgg()
+    {
+      onUseOn(data2) {
+        const player = data2.source;
+        const faceLoc = data2.faceLocation;
+        const blockFace = data2.blockFace;
+        var faceLocX = --faceLoc.x;
+        var faceLocY = --faceLoc.y;
+        var faceLocZ = --faceLoc.z;
+        var amount = data2.itemStack.amount;
+        const equippableComponent = data2.source.getComponent(EntityComponentTypes2.Equippable);
+        if (blockFace == "North") {
+          var faceLocZ = faceLocZ + 1.5;
+        }
+        if (blockFace == "South") {
+          var faceLocZ = faceLocZ - 1.5;
+        }
+        if (blockFace == "East") {
+          var faceLocX = faceLocX - 1.5;
+        }
+        if (blockFace == "West") {
+          var faceLocX = faceLocX + 1.5;
+        }
+        if (blockFace == "Up") {
+          var faceLocY = faceLocY - 1.5;
+        }
+        if (blockFace == "Down") {
+          var faceLocY = faceLocY + 2;
+        }
+        const vec3 = { x: -faceLocX, y: -faceLocY, z: -faceLocZ };
+        const mobId = data2.itemStack.getTags();
+        player.dimension.spawnEntity("" + mobId, vec3);
+        if (player.getGameMode() == "creative")
+          return;
+        if (amount <= 1) {
+          equippableComponent.setEquipment(EquipmentSlot2.Mainhand, new ItemStack2("minecraft:air", 1));
+          return;
+        }
+        equippableComponent.setEquipment(EquipmentSlot2.Mainhand, new ItemStack2(data2.itemStack.typeId, amount - 1));
+        return;
+      }
+    }
   );
   data.itemComponentRegistry.registerCustomComponent(
     "poke:cas",
-    new PFECassette()
+    {
+      onUse(data2) {
+        const id = data2.itemStack.typeId;
+        const trackId = id.substring(id.lastIndexOf("_")).substring(1);
+        if (data2.source.isSneaking) {
+          data2.source.queueMusic(`poke.record.${trackId}`);
+          data2.source.playSound("poke.cassette_activate");
+          data2.source.sendMessage({ translate: `translation.poke:trackQueued` });
+          return;
+        } else {
+          data2.source.playMusic(`poke.record.${trackId}`, { fade: 2.5 });
+          data2.source.playSound("poke.cassette_activate");
+        }
+        return;
+      }
+    }
   );
   data.itemComponentRegistry.registerCustomComponent(
     "poke:cc_on_use",
-    new PFEOnUse()
+    {
+      onUse(data2) {
+        if (data2.itemStack === void 0)
+          return;
+        const ItemTags = data2.itemStack.getTags().toString();
+        let Command = ItemTags.substring(ItemTags.indexOf("pfe:Command:"), ItemTags.indexOf(":pfeCommandEnd")).substring(12);
+        data2.source.runCommand("" + Command);
+        const cooldownComp = data2.itemStack.getComponent("minecraft:cooldown");
+        if (cooldownComp != void 0)
+          cooldownComp.startCooldown(data2.source);
+        if (!data2.itemStack.hasComponent("minecraft:durability")) {
+          return;
+        }
+        const newItem = PFEDamageItem(data2.itemStack);
+        const equippableComponent = data2.source.getComponent(EntityComponentTypes2.Equippable);
+        equippableComponent.setEquipment(EquipmentSlot2.Mainhand, newItem);
+        if (!newItem) {
+          data2.source.playSound("random.break");
+        }
+        return;
+      }
+    }
   );
   data.itemComponentRegistry.registerCustomComponent(
     "poke:cc_zooka",
-    new PFEWindzooka()
+    {
+      onUse(data2) {
+        if (data2.itemStack === void 0)
+          return;
+        const equippableComponent = data2.source.getComponent(EntityComponentTypes2.Equippable);
+        if (equippableComponent === void 0)
+          return;
+        const vierDirection = data2.source.getViewDirection();
+        const location = data2.source.getHeadLocation();
+        const id = data2.itemStack.getTags();
+        const cooldownComp = data2.itemStack.getComponent("minecraft:cooldown");
+        if (data2.itemStack.typeId == "poke:windzooka") {
+          data2.source.applyKnockback(vierDirection.x, vierDirection.z, -7, -vierDirection.y * 4);
+          data2.source.playSound("wind_charge.burst");
+          data2.source.dimension.spawnParticle("minecraft:wind_explosion_emitter", location);
+        } else {
+          data2.source.applyKnockback(vierDirection.x, vierDirection.z, 7, -vierDirection.y * -4);
+          data2.source.playSound("wind_charge.burst");
+          data2.source.dimension.spawnParticle("minecraft:wind_explosion_emitter", location);
+          data2.source.dimension.spawnParticle("poke:blazooka_flame", location);
+        }
+        data2.source.runCommand("" + id);
+        cooldownComp.startCooldown(data2.source);
+        const newItem = PFEDamageItem(data2.itemStack);
+        equippableComponent.setEquipment(EquipmentSlot2.Mainhand, newItem);
+        if (!newItem) {
+          data2.source.playSound("random.break");
+        }
+        return;
+      }
+    }
   );
   data.itemComponentRegistry.registerCustomComponent(
     "poke:cc_upgrader",
-    new PFEUpgrader()
+    {
+      onUseOn(data2) {
+        const player = data2.source;
+        const equippableComponent = data2.source.getComponent(EntityComponentTypes2.Equippable);
+        const block_location = `${data2.block.x} ${data2.block.y} ${data2.block.z}`;
+        const itemIds = data2.itemStack.typeId;
+        const itemId = itemIds.substring(5);
+        data2.source.runCommandAsync(`execute positioned ${block_location} run function poke/pfe/${itemId}`);
+        if (player.getGameMode() == GameMode2.creative)
+          return;
+        const newItem = PFEDamageItem(data2.itemStack);
+        equippableComponent.setEquipment(EquipmentSlot2.Mainhand, newItem);
+        if (!newItem) {
+          player.playSound("random.break");
+        }
+        return;
+      }
+    }
   );
   data.blockComponentRegistry.registerCustomComponent(
     "poke:trapdoor_event",
-    new PFETrapdoor()
+    {
+      onPlayerInteract(data2) {
+        const blockLocation = `${data2.block.location.x} ${data2.block.location.y} ${data2.block.location.z}`;
+        if (data2.block.permutation.hasTag("pfe_trapdoor_open") == true) {
+          data2.block.setPermutation(data2.block.permutation.withState("poke:trapdoor_open", "no"));
+          data2.block.dimension.playSound(`open.iron_trapdoor`, data2.block.center());
+          return;
+        } else {
+          data2.block.setPermutation(data2.block.permutation.withState("poke:trapdoor_open", "yes"));
+          data2.block.dimension.playSound(`close.iron_trapdoor`, data2.block.center());
+          return;
+        }
+      }
+    }
   );
   data.blockComponentRegistry.registerCustomComponent(
     "poke:fortune",
-    new PFEFortune()
+    {
+      onPlayerDestroy(data2) {
+        const equippableComponent = data2.player?.getComponent(EntityComponentTypes2.Equippable);
+        if (equippableComponent === void 0)
+          return;
+        if (!equippableComponent.getEquipment(EquipmentSlot2.Mainhand)?.hasComponent(ItemComponentTypes2.Enchantable))
+          return;
+        const enchantableComponent = equippableComponent.getEquipment(EquipmentSlot2.Mainhand)?.getComponent(ItemComponentTypes2.Enchantable);
+        if (!enchantableComponent.hasEnchantment(MinecraftEnchantmentTypes.Fortune))
+          return;
+        let fortuneLevel = enchantableComponent.getEnchantment(MinecraftEnchantmentTypes.Fortune).level;
+        let rng = Math.round(Math.random());
+        const blockLocation = `${data2.block.x} ${data2.block.y} ${data2.block.z}`;
+        const blockId = data2.destroyedBlockPermutation.type.id.substring(5);
+        if (data2.player?.getGameMode() == GameMode2.survival) {
+          if (fortuneLevel == 3) {
+            data2.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}"`);
+            data2.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}"`);
+            if (rng == 0)
+              return;
+            data2.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}"`);
+            return;
+          }
+          if (fortuneLevel == 2) {
+            data2.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}"`);
+            if (rng == 0)
+              return;
+            data2.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}"`);
+            return;
+          }
+          if (fortuneLevel == 1) {
+            if (rng == 0)
+              return;
+            data2.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}"`);
+            return;
+          }
+          return;
+        }
+        return;
+      }
+    }
   );
   data.blockComponentRegistry.registerCustomComponent(
     "poke:slabs",
-    new PFESlabs()
+    {
+      onPlayerInteract(data2) {
+        if (data2.block.permutation.getState("poke:double") == true)
+          return;
+        const blockLocation = `${data2.block.location.x} ${data2.block.location.y} ${data2.block.location.z}`;
+        const slabId = data2.block.typeId;
+        const equippableComponent = data2.player.getComponent(EntityComponentTypes2.Equippable);
+        const mainhand = equippableComponent.getEquipment(EquipmentSlot2.Mainhand);
+        if (mainhand != void 0) {
+          if (mainhand.typeId == slabId && (data2.block.permutation.getState("minecraft:vertical_half") == "bottom" && data2.face == Direction.Up || data2.block.permutation.getState("minecraft:vertical_half") == "top" && data2.face == Direction.Down) && data2.block.permutation.getState("poke:double") == false) {
+            var itemStackAmount = mainhand.amount - 1;
+            data2.block.setPermutation(data2.block.permutation.withState("poke:double", true));
+            data2.block.dimension.playSound(`use.stone`, data2.block.center());
+            if (data2.player?.getGameMode() == "creative")
+              return;
+            if (itemStackAmount <= 0) {
+              equippableComponent.setEquipment(EquipmentSlot2.Mainhand, new ItemStack2("minecraft:air", 1));
+              return;
+            }
+            equippableComponent.setEquipment(EquipmentSlot2.Mainhand, new ItemStack2(slabId, itemStackAmount));
+            return;
+          } else
+            return;
+        }
+        return;
+      }
+    }
   );
   data.blockComponentRegistry.registerCustomComponent(
     "poke:cc_bulbs",
-    new PFEBulbs()
+    {
+      onPlayerInteract(data2) {
+        const block_location = `${data2.block.x} ${data2.block.y} ${data2.block.z}`;
+        let light_color = data2.block.permutation.getState("pfe:color");
+        let sound_pitch = 1 + light_color / 10;
+        if (data2.block.permutation.getState("pfe:color") == 15) {
+          data2.block.setPermutation(data2.block.permutation.withState("pfe:color", 0));
+          data2.block.dimension.runCommandAsync(`playsound block.copper_bulb.turn_on @a  ${block_location} 1 ${sound_pitch}`);
+          return;
+        } else {
+          data2.block.setPermutation(
+            data2.block.permutation.withState("pfe:color", light_color + 1)
+          );
+          data2.block.dimension.runCommandAsync(`playsound block.copper_bulb.turn_on @a ${block_location} 1 ${sound_pitch}`);
+          return;
+        }
+      }
+    }
   );
   data.blockComponentRegistry.registerCustomComponent(
     "poke:cc_phantomic_conduit",
-    new PFEPhantomicConduit()
+    {
+      onTick(data2) {
+        var block_location_x = data2.block.x;
+        var block_location_y = data2.block.y;
+        var block_location_z = data2.block.z;
+        if (data2.block.getRedstonePower() != 0 && data2.block.getRedstonePower() !== void 0) {
+          data2.block.setPermutation(data2.block.permutation.withState("pfe:active", 1));
+          data2.dimension.runCommand("execute positioned " + block_location_x + " " + block_location_y + " " + block_location_z + " as @e[r=50,family=phantom] run damage @s 20");
+          return;
+        }
+        if (data2.block.getRedstonePower() == 0 && data2.block.getRedstonePower() !== void 0) {
+          data2.block.setPermutation(data2.block.permutation.withState("pfe:active", 0));
+          return;
+        }
+        return;
+      }
+    }
   );
   data.blockComponentRegistry.registerCustomComponent(
     "poke:cc_da_conduit",
-    new PFEDemonicAConduit()
+    {
+      onTick(data2) {
+        const block_location = `${data2.block.x} ${data2.block.y} ${data2.block.z}`;
+        if (data2.block.getRedstonePower() != 0 && data2.block.getRedstonePower() !== void 0) {
+          data2.block.setPermutation(data2.block.permutation.withState("pfe:active", 1));
+          data2.dimension.runCommand("execute positioned " + block_location + " as @e[r=50,family=pfe:demonic_allay] run damage @s 20");
+          return;
+        }
+        if (data2.block.getRedstonePower() == 0 && data2.block.getRedstonePower() !== void 0) {
+          data2.block.setPermutation(data2.block.permutation.withState("pfe:active", 0));
+          return;
+        }
+        return;
+      }
+    }
   );
   data.blockComponentRegistry.registerCustomComponent(
     "poke:cc_cobble_gen",
-    new PFECobbleGen()
+    {
+      onTick(data2) {
+        if (data2.block.getRedstonePower() != 0 && data2.block.getRedstonePower() !== void 0) {
+          data2.block.setPermutation(data2.block.permutation.withState("pfe:active", 1));
+          if (data2.block.above()?.typeId != "minecraft:air")
+            return;
+          data2.block.above()?.setType("minecraft:cobblestone");
+          return;
+        }
+        if (data2.block.getRedstonePower() == 0 && data2.block.getRedstonePower() !== void 0) {
+          data2.block.setPermutation(data2.block.permutation.withState("pfe:active", 0));
+          return;
+        }
+        return;
+      }
+    }
   );
   data.blockComponentRegistry.registerCustomComponent(
     "poke:cc_cobbler",
-    new PFECobbler()
+    {
+      onTick(data2) {
+        const block_location = `${data2.block.x} ${data2.block.y} ${data2.block.z}`;
+        if (data2.block.getRedstonePower() != 0 && data2.block.getRedstonePower() !== void 0) {
+          data2.block.setPermutation(data2.block.permutation.withState("pfe:active", 1));
+          data2.dimension.runCommand(`execute positioned ${block_location} run structure load poke:cobblestone_item ~ ~-1 ~`);
+          return;
+        }
+        if (data2.block.getRedstonePower() == 0 && data2.block.getRedstonePower() !== void 0) {
+          data2.block.setPermutation(data2.block.permutation.withState("pfe:active", 0));
+          return;
+        }
+        return;
+      }
+    }
   );
   data.blockComponentRegistry.registerCustomComponent(
     "poke:cc_block_breaker",
-    new PFEBlockBreaker()
+    {
+      onTick(data2) {
+        const block_location = `${data2.block.x} ${data2.block.y} ${data2.block.z}`;
+        if (data2.block.getRedstonePower() != 0 && data2.block.getRedstonePower() !== void 0) {
+          data2.block.setPermutation(data2.block.permutation.withState("pfe:active", 1));
+          data2.dimension.runCommand(`execute positioned ${block_location} unless block ~ ~-1 ~ bedrock run setblock ~ ~-1 ~ air destroy`);
+          return;
+        }
+        if (data2.block.getRedstonePower() == 0 && data2.block.getRedstonePower() !== void 0) {
+          data2.block.setPermutation(data2.block.permutation.withState("pfe:active", 0));
+          return;
+        }
+        return;
+      }
+    }
   );
   data.blockComponentRegistry.registerCustomComponent(
     "poke:cc_dirter",
-    new PFEDirter()
+    {
+      onTick(data2) {
+        if (data2.block.getRedstonePower() != 0 && data2.block.getRedstonePower() !== void 0) {
+          data2.block.setPermutation(data2.block.permutation.withState("pfe:active", 1));
+          switch (data2.block.typeId) {
+            case "poke:dirter_east": {
+              if (data2.block.east()?.typeId == "minecraft:cobblestone") {
+                data2.block.east()?.setType("minecraft:dirt");
+                break;
+              }
+            }
+            case "poke:dirter_west": {
+              if (data2.block.west()?.typeId == "minecraft:cobblestone") {
+                data2.block.west()?.setType("minecraft:dirt");
+                break;
+              }
+            }
+            case "poke:dirter_south": {
+              if (data2.block.south()?.typeId == "minecraft:cobblestone") {
+                data2.block.south()?.setType("minecraft:dirt");
+                break;
+              }
+            }
+            case "poke:dirter_north": {
+              if (data2.block.north()?.typeId == "minecraft:cobblestone") {
+                data2.block.north()?.setType("minecraft:dirt");
+                break;
+              }
+            }
+            case "poke:dirter_up": {
+              if (data2.block.above()?.typeId == "minecraft:cobblestone") {
+                data2.block.above()?.setType("minecraft:dirt");
+                break;
+              }
+            }
+            case "poke:dirter_down": {
+              if (data2.block.below()?.typeId == "minecraft:cobblestone") {
+                data2.block.below()?.setType("minecraft:dirt");
+                break;
+              }
+            }
+            case "poke:dirter": {
+              if (data2.block.below()?.typeId == "minecraft:cobblestone") {
+                data2.block.below()?.setType("minecraft:dirt");
+                return;
+              }
+            }
+          }
+          return;
+        }
+        if (data2.block.getRedstonePower() == 0 && data2.block.getRedstonePower() !== void 0) {
+          data2.block.setPermutation(data2.block.permutation.withState("pfe:active", 0));
+          return;
+        }
+        return;
+      }
+    }
   );
   data.blockComponentRegistry.registerCustomComponent(
     "poke:cc_duster",
-    new PFEDuster()
+    {
+      onTick(data2) {
+        if (data2.block.getRedstonePower() != 0 && data2.block.getRedstonePower() !== void 0) {
+          data2.block.setPermutation(data2.block.permutation.withState("pfe:active", 1));
+          switch (data2.block.typeId) {
+            case "poke:duster_east": {
+              if (data2.block.east()?.typeId == "minecraft:dirt") {
+                data2.block.east()?.setType("minecraft:sand");
+                break;
+              }
+              if (data2.block.east()?.typeId == "minecraft:cobblestone") {
+                data2.block.east()?.setType("minecraft:gravel");
+                break;
+              }
+            }
+            case "poke:duster_west": {
+              if (data2.block.west()?.typeId == "minecraft:dirt") {
+                data2.block.west()?.setType("minecraft:sand");
+                break;
+              }
+              if (data2.block.west()?.typeId == "minecraft:cobblestone") {
+                data2.block.west()?.setType("minecraft:gravel");
+                break;
+              }
+            }
+            case "poke:duster_south": {
+              if (data2.block.south()?.typeId == "minecraft:dirt") {
+                data2.block.south()?.setType("minecraft:sand");
+                break;
+              }
+              if (data2.block.south()?.typeId == "minecraft:cobblestone") {
+                data2.block.south()?.setType("minecraft:gravel");
+                break;
+              }
+            }
+            case "poke:duster_north": {
+              if (data2.block.north()?.typeId == "minecraft:dirt") {
+                data2.block.north()?.setType("minecraft:sand");
+                break;
+              }
+              if (data2.block.north()?.typeId == "minecraft:cobblestone") {
+                data2.block.north()?.setType("minecraft:gravel");
+                break;
+              }
+            }
+            case "poke:duster_up": {
+              if (data2.block.above()?.typeId == "minecraft:dirt") {
+                data2.block.above()?.setType("minecraft:sand");
+                break;
+              }
+              if (data2.block.above()?.typeId == "minecraft:cobblestone") {
+                data2.block.above()?.setType("minecraft:gravel");
+                break;
+              }
+            }
+            case "poke:duster_down": {
+              if (data2.block.below()?.typeId == "minecraft:dirt") {
+                data2.block.below()?.setType("minecraft:sand");
+                break;
+              }
+              if (data2.block.below()?.typeId == "minecraft:cobblestone") {
+                data2.block.below()?.setType("minecraft:gravel");
+                break;
+              }
+            }
+            case "poke:duster": {
+              if (data2.block.below()?.typeId == "minecraft:dirt") {
+                data2.block.below()?.setType("minecraft:sand");
+                break;
+              }
+              if (data2.block.below()?.typeId == "minecraft:cobblestone") {
+                data2.block.below()?.setType("minecraft:gravel");
+                break;
+              }
+            }
+          }
+          return;
+        }
+        if (data2.block.getRedstonePower() == 0 && data2.block.getRedstonePower() !== void 0) {
+          data2.block.setPermutation(data2.block.permutation.withState("pfe:active", 0));
+          return;
+        }
+        return;
+      }
+    }
   );
   data.blockComponentRegistry.registerCustomComponent(
     "poke:cc_magnet_block",
-    new PFEMagnetBlock()
+    {
+      onTick(data2) {
+        const block_location = `${data2.block.x} ${data2.block.y} ${data2.block.z}`;
+        if (data2.block.getRedstonePower() != 0 && data2.block.getRedstonePower() !== void 0) {
+          data2.block.setPermutation(data2.block.permutation.withState("pfe:active", 1));
+          data2.dimension.runCommand(`execute positioned ${block_location} as @e[type=item,r=10] run tp @s ${block_location}`);
+          return;
+        }
+        if (data2.block.getRedstonePower() == 0 && data2.block.getRedstonePower() !== void 0) {
+          data2.block.setPermutation(data2.block.permutation.withState("pfe:active", 0));
+          return;
+        }
+        return;
+      }
+    }
   );
   data.blockComponentRegistry.registerCustomComponent(
     "poke:cc_calibrate",
-    new PFECalibrate()
+    {
+      onPlayerInteract(data2) {
+        const OldId = ["poke:duster", "poke:dirter"];
+        const bId = data2.block.typeId;
+        const newBlock = `${bId.substring(0, bId.lastIndexOf("_"))}_${data2.face.toLowerCase()}`;
+        if (newBlock == bId)
+          return;
+        if (OldId.includes(bId)) {
+          data2.block.setType(bId + "_up");
+          return;
+        }
+        data2.block.setType(newBlock);
+        data2.dimension.playSound("poke.calibrate", data2.block.center());
+        return;
+      }
+    }
   );
   data.blockComponentRegistry.registerCustomComponent(
     "poke:cc_CaliBlockBreaker",
-    new PFECaliBlockBreaker()
+    {
+      onTick(data2) {
+        const block_location = `${data2.block.x} ${data2.block.y} ${data2.block.z}`;
+        if (data2.block.getRedstonePower() != 0 && data2.block.getRedstonePower() !== void 0) {
+          data2.block.setPermutation(data2.block.permutation.withState("pfe:active", 1));
+          if (data2.block.typeId == "poke:block_breaker_east") {
+            data2.dimension.runCommand("execute positioned " + block_location + " unless block ~1 ~ ~ bedrock run setblock ~1 ~ ~ air destroy");
+            return;
+          }
+          if (data2.block.typeId == "poke:block_breaker_west") {
+            data2.dimension.runCommand("execute positioned " + block_location + " unless block ~-1 ~ ~ bedrock run setblock ~-1 ~ ~ air destroy");
+            return;
+          }
+          if (data2.block.typeId == "poke:block_breaker_south") {
+            data2.dimension.runCommand("execute positioned " + block_location + " unless block ~ ~ ~1 bedrock run setblock ~ ~ ~1 air destroy");
+            return;
+          }
+          if (data2.block.typeId == "poke:block_breaker_north") {
+            data2.dimension.runCommand("execute positioned " + block_location + " unless block ~ ~ ~-1 bedrock run setblock ~ ~ ~-1 air destroy");
+            return;
+          }
+          if (data2.block.typeId == "poke:block_breaker_up") {
+            data2.dimension.runCommand("execute positioned " + block_location + " unless block ~ ~1 ~ bedrock run setblock ~ ~1 ~ air destroy");
+            return;
+          }
+          if (data2.block.typeId == "poke:block_breaker_down") {
+            data2.dimension.runCommand("execute positioned " + block_location + " unless block ~ ~-1 ~ bedrock run setblock ~ ~-1 ~ air destroy");
+            return;
+          }
+          return;
+        }
+        ;
+        if (data2.block.getRedstonePower() == 0 && data2.block.getRedstonePower() !== void 0) {
+          data2.block.setPermutation(data2.block.permutation.withState("pfe:active", 0));
+          return;
+        }
+        return;
+      }
+    }
   );
   data.blockComponentRegistry.registerCustomComponent(
     "poke:cc_CaliCobbleGen",
-    new PFECaliCobbleGen()
+    {
+      onTick(data2) {
+        if (data2.block.getRedstonePower() != 0 && data2.block.getRedstonePower() !== void 0) {
+          data2.block.setPermutation(data2.block.permutation.withState("pfe:active", 1));
+          if (data2.block.typeId == "poke:calibrated_cobblestone_generator_east") {
+            if (data2.block.east()?.typeId != "minecraft:air")
+              return;
+            data2.block.east()?.setType("minecraft:cobblestone");
+            return;
+          }
+          if (data2.block.typeId == "poke:calibrated_cobblestone_generator_west") {
+            if (data2.block.west()?.typeId != "minecraft:air")
+              return;
+            data2.block.west()?.setType("minecraft:cobblestone");
+            return;
+          }
+          if (data2.block.typeId == "poke:calibrated_cobblestone_generator_south") {
+            if (data2.block.south()?.typeId != "minecraft:air")
+              return;
+            data2.block.south()?.setType("minecraft:cobblestone");
+            return;
+          }
+          if (data2.block.typeId == "poke:calibrated_cobblestone_generator_north") {
+            if (data2.block.north()?.typeId != "minecraft:air")
+              return;
+            data2.block.north()?.setType("minecraft:cobblestone");
+            return;
+          }
+          if (data2.block.typeId == "poke:calibrated_cobblestone_generator_up") {
+            if (data2.block.above()?.typeId != "minecraft:air")
+              return;
+            data2.block.above()?.setType("minecraft:cobblestone");
+            return;
+          }
+          if (data2.block.typeId == "poke:calibrated_cobblestone_generator_down") {
+            if (data2.block.below()?.typeId != "minecraft:air")
+              return;
+            data2.block.below()?.setType("minecraft:cobblestone");
+            return;
+          }
+          return;
+        }
+        if (data2.block.getRedstonePower() == 0 && data2.block.getRedstonePower() !== void 0) {
+          data2.block.setPermutation(data2.block.permutation.withState("pfe:active", 0));
+          return;
+        }
+        return;
+      }
+    }
   );
   data.blockComponentRegistry.registerCustomComponent(
     "poke:crops",
-    new PFECrop()
+    {
+      onRandomTick(data2) {
+        var growth_state = data2.block.permutation.getState("poke:growth_stage");
+        var growth_stage = growth_state + 1;
+        if (growth_state != void 0 || 6) {
+          data2.block.setPermutation(data2.block.permutation.withState("poke:growth_stage", growth_stage));
+          return;
+        }
+        return;
+      },
+      onPlayerInteract(data2) {
+        const equippableComponent = data2.player?.getComponent(EntityComponentTypes2.Equippable);
+        const mainhandItem = equippableComponent.getEquipment(EquipmentSlot2.Mainhand);
+        if (mainhandItem === void 0)
+          return;
+        const block_location = `${data2.block.x} ${data2.block.y} ${data2.block.z}`;
+        let growth_state = data2.block.permutation.getState("poke:growth_stage");
+        let growth_stage = growth_state + Math.round(Math.random() * 3);
+        var itemAfterUse = mainhandItem.amount;
+        var itemAfterUse1 = itemAfterUse - 1;
+        if (growth_stage > 6) {
+          growth_stage = 6;
+        }
+        if (mainhandItem.typeId == MinecraftItemTypes.BoneMeal && growth_state != 6) {
+          data2.block.setPermutation(data2.block.permutation.withState("poke:growth_stage", growth_stage));
+          data2.dimension.runCommand("playsound item.bone_meal.use @a " + block_location);
+          data2.dimension.runCommand("particle minecraft:crop_growth_emitter " + block_location);
+          if (data2.player?.getGameMode() != GameMode2.creative) {
+            if (itemAfterUse1 == 0) {
+              data2.player?.runCommand("clear @s bone_meal 0 1");
+              return;
+            }
+            equippableComponent.setEquipment(EquipmentSlot2.Mainhand, new ItemStack2(mainhandItem.typeId, itemAfterUse1));
+            return;
+          }
+          return;
+        }
+        return;
+      }
+    }
   );
   data.blockComponentRegistry.registerCustomComponent(
     "poke:cc_barometer",
-    new PFEBarometer()
+    {
+      onTick(data2) {
+        var weather = data2.block.permutation.getState("pfe:weather");
+        if (data2.block.getRedstonePower() != 0 && data2.block.getRedstonePower() !== void 0) {
+          if (data2.dimension.getWeather() == "Clear" && weather != 0) {
+            data2.block.setPermutation(data2.block.permutation.withState("pfe:weather", 0));
+            return;
+          }
+          if (data2.dimension.getWeather() != "Thunder" && data2.dimension.getWeather() == "Rain" && weather != 1) {
+            data2.block.setPermutation(data2.block.permutation.withState("pfe:weather", 1));
+            return;
+          }
+          if (data2.dimension.getWeather() == "Thunder" && weather != 2) {
+            data2.block.setPermutation(data2.block.permutation.withState("pfe:weather", 2));
+            return;
+          }
+          return;
+        }
+      }
+    }
   );
   data.blockComponentRegistry.registerCustomComponent(
     "poke:cc_lava_sponge",
-    new PFELavaSponge()
+    {
+      onTick(data2) {
+        switch (MinecraftBlockTypes.Lava || MinecraftBlockTypes.FlowingLava) {
+          case data2.block.north()?.typeId:
+            break;
+          case data2.block.south()?.typeId:
+            break;
+          case data2.block.east()?.typeId:
+            break;
+          case data2.block.west()?.typeId:
+            break;
+          case data2.block.below()?.typeId:
+            break;
+          case data2.block.above()?.typeId:
+            break;
+          default:
+            return;
+        }
+        data2.dimension.runCommand(`execute positioned ${data2.block.x} ${data2.block.y} ${data2.block.z} run function poke/pfe/lava_sponge_to_molten`);
+        return;
+      }
+    }
   );
   data.blockComponentRegistry.registerCustomComponent(
     "poke:cc_block_seat",
-    new PFEBlockSeat()
+    {
+      onPlayerInteract(data2) {
+        const slabId = data2.block.typeId;
+        const mainhand = data2.player.getComponent(EntityComponentTypes2.Equippable).getEquipment("Mainhand");
+        const options = {
+          type: "poke:seat",
+          location: data2.block.center(),
+          maxDistance: 0.24
+        };
+        if (mainhand?.typeId != slabId && !data2.player?.isSneaking) {
+          if (data2.block.permutation.getState("minecraft:vertical_half") == "bottom" && data2.block.permutation.getState("poke:double") == false) {
+            if (data2.dimension.getEntities(options).length > 0) {
+              return;
+            } else {
+              data2.dimension.spawnEntity("poke:seat", data2.block.center()).getComponent("minecraft:rideable").addRider(data2.player);
+              return;
+            }
+          }
+        }
+        return;
+      }
+    }
   );
   data.blockComponentRegistry.registerCustomComponent(
     "poke:cc_slab_loot",
-    new PFESlabLoot()
+    {
+      onPlayerDestroy(data2) {
+        const block_location = data2.block.location;
+        const gm = data2.player?.getGameMode();
+        const blockId = data2.destroyedBlockPermutation.type.id;
+        const blockState = data2.destroyedBlockPermutation.getState("poke:double");
+        if (gm == "survival") {
+          if (blockState == true) {
+            data2.dimension.spawnItem(new ItemStack2(blockId, 1), block_location);
+            return;
+          }
+          return;
+        }
+        return;
+      }
+    }
   );
   data.blockComponentRegistry.registerCustomComponent(
     "poke:cc_block_interact",
-    new PFEBlockInteract()
+    {
+      onPlayerInteract(data2) {
+        switch (data2.block.typeId) {
+          case "poke:listener_trophy": {
+            data2.player?.playMusic("record.listen", { fade: 5 });
+            return;
+          }
+          case "poke:furnace_golem_trophy": {
+            data2.player?.playMusic("poke.record.pigstep", { fade: 5 });
+            return;
+          }
+          case "poke:cobalt_golem_block":
+            {
+              data2.dimension.spawnEntity("poke:cobalt_golem", data2.block.location);
+              data2.block.setType("minecraft:air");
+              return;
+            }
+            return;
+        }
+      }
+    }
   );
   data.blockComponentRegistry.registerCustomComponent(
     "poke:cc_8ball",
-    new PFE8Ball()
+    {
+      onPlayerInteract(data2) {
+        var RNG = Math.floor(Math.random() * 19);
+        data2.player?.sendMessage({ rawtext: [{ translate: `translation.poke:8ball${RNG}` }] });
+        return;
+      }
+    }
   );
   data.blockComponentRegistry.registerCustomComponent(
     "poke:cc_wall",
-    new PFEWall()
+    {
+      onPlace(data2) {
+        const pfeWallNoC = ["minecraft:piston_arm_collision", "minecraft:sticky_piston_arm_collision", "minecraft:air", "minecraft:water", "minecraft:lava", "minecraft:waterlily", "minecraft:flowing_water", "minecraft:flowing_lava", "minecraft:short_grass", "minecraft:tall_grass", "minecraft:seagrass", "minecraft:kelp", "minecraft:oak_leaves", "minecraft:acacia_leaves", "minecraft:azalea_leaves", "minecraft:azalea_leaves_flowered", "minecraft:birch_leaves", "minecraft:cherry_leaves", "minecraft:dark_oak_leaves", "minecraft:jungle_leaves", "minecraft:mangrove_leaves", "minecraft:spruce_leaves"];
+        const northB = data2.block.north();
+        const southB = data2.block.south();
+        const eastB = data2.block.east();
+        const westB = data2.block.west();
+        if (northB === void 0)
+          return;
+        if (southB === void 0)
+          return;
+        if (eastB === void 0)
+          return;
+        if (westB === void 0)
+          return;
+        if (!pfeWallNoC.includes(northB.typeId)) {
+          data2.block.setPermutation(data2.block.permutation.withState("pfe:wall_n", true));
+          if (northB.hasTag("pfe_wall")) {
+            northB.setPermutation(northB.permutation.withState("pfe:wall_s", true));
+          }
+        } else {
+          data2.block.setPermutation(data2.block.permutation.withState("pfe:wall_n", false));
+        }
+        if (!pfeWallNoC.includes(southB.typeId)) {
+          data2.block.setPermutation(data2.block.permutation.withState("pfe:wall_s", true));
+          if (southB.hasTag("pfe_wall")) {
+            southB.setPermutation(southB.permutation.withState("pfe:wall_n", true));
+          }
+        } else {
+          data2.block.setPermutation(data2.block.permutation.withState("pfe:wall_s", false));
+        }
+        if (!pfeWallNoC.includes(eastB.typeId)) {
+          data2.block.setPermutation(data2.block.permutation.withState("pfe:wall_e", true));
+          if (eastB.hasTag("pfe_wall")) {
+            eastB.setPermutation(eastB.permutation.withState("pfe:wall_w", true));
+          }
+        } else {
+          data2.block.setPermutation(data2.block.permutation.withState("pfe:wall_e", false));
+        }
+        if (!pfeWallNoC.includes(westB.typeId)) {
+          data2.block.setPermutation(data2.block.permutation.withState("pfe:wall_w", true));
+          if (westB.hasTag("pfe_wall")) {
+            westB.setPermutation(westB.permutation.withState("pfe:wall_e", true));
+          }
+        } else {
+          data2.block.setPermutation(data2.block.permutation.withState("pfe:wall_w", false));
+        }
+        return;
+      },
+      onPlayerDestroy(data2) {
+        const northB = data2.block.north();
+        const southB = data2.block.south();
+        const eastB = data2.block.east();
+        const westB = data2.block.west();
+        if (northB === void 0)
+          return;
+        if (southB === void 0)
+          return;
+        if (eastB === void 0)
+          return;
+        if (westB === void 0)
+          return;
+        if (northB.hasTag("pfe_wall")) {
+          northB.setPermutation(northB.permutation.withState("pfe:wall_s", false));
+        }
+        if (southB.hasTag("pfe_wall")) {
+          southB.setPermutation(southB.permutation.withState("pfe:wall_n", false));
+        }
+        if (eastB.hasTag("pfe_wall")) {
+          eastB.setPermutation(eastB.permutation.withState("pfe:wall_w", false));
+        }
+        if (westB.hasTag("pfe_wall")) {
+          westB.setPermutation(westB.permutation.withState("pfe:wall_e", false));
+        }
+        return;
+      }
+    }
   );
   return;
 });
 export {
-  damage_item_ub
+  PFEDamageItemUB
 };
 
 //# sourceMappingURL=../debug/main.js.map

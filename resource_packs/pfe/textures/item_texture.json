@@ -174,7 +174,9 @@
 		"poke_ruin_key":{"textures":"textures/items/misc/poke_ruin_key.png"},
 		//Bounties
 		"poke_boss_event":{"textures":"textures/items/boss/poke_boss_event.png"},
+		//Configs
 		"poke_boss_event_config":{"textures":"textures/items/misc/poke_boss_event_config"},
+		"poke_calendar":{"textures":"textures/poke/pfe/calendar"},
 		//Voiding
 		"poke_item_voider":{"textures":"textures/items/void/poke_item_voider"},
 		//Minecarts
@@ -189,6 +191,7 @@
 		"poke_windzooka":{"textures":"textures/items/misc/poke_windzooka"},
 
 		//Bundled Items
+		"pfe-gift_box":{"textures":"textures/items/pfe-gift_box"},
 		"poke_bundled_feathers":{"textures":"textures/items/misc/poke_bundled_feathers.png"},
 		"poke_bundled_sugarcane":{"textures":"textures/items/misc/poke_bundled_sugarcane.png"},
 		//Armor Stand
@@ -458,6 +461,9 @@
 		"poke_farm_quest":{"textures":"textures/items/prog/poke_farm_quest.png"},
 		"poke_craft_quest":{"textures":"textures/items/prog/poke_craft_quest.png"},
 		//Sherds
+		"poke_snowflake_pottery_sherd":{"textures":"textures/items/sherds/poke_snowflake"},
+		"poke_present_pottery_sherd":{"textures":"textures/items/sherds/poke_present"},
+		"poke_tree_pottery_sherd":{"textures":"textures/items/sherds/poke_tree"},
 		"poke_spook_pottery_sherd":{"textures":"textures/items/sherds/poke_spook"},
 		"poke_spell_pottery_sherd":{"textures":"textures/items/sherds/poke_spell"},
 		"poke_fish_pottery_sherd":{"textures":"textures/items/sherds/poke_fish"},

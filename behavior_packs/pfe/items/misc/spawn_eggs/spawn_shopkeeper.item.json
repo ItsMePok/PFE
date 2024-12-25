@@ -1,0 +1,23 @@
+{
+	"format_version": "1.21.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:spawn_shopkeeper",
+			"menu_category": {
+				"category": "nature",
+				"group": "itemGroup.name.mobEgg"
+			}
+		},
+		"components": {
+			"minecraft:icon":"poke_spawn_shopkeeper",
+			"minecraft:custom_components":[
+				"poke:cc_spawnEgg"
+			],
+			"minecraft:tags":{
+				"tags":[
+					"poke:shopkeeper"
+				]
+			}
+		}
+	}
+}

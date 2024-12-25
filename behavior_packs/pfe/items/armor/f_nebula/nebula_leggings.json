@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:nebula_leggings",
@@ -47,7 +47,8 @@
 					"minecraft:is_armor", 
 					"minecraft:trimmable_armors" 
 				] 
-			} 
+			},
+			"minecraft:rarity":"epic"
 		} 
 	} 
 }

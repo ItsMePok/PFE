@@ -1,0 +1,508 @@
+{
+  "format_version": "1.21.60",
+  "minecraft:crafting_items_catalog": {
+    "categories": [
+      {
+        "category_name": "construction",
+        "groups": [
+          {
+            "group_identifier": {
+              "icon": "poke:empty_crate",
+              "name": "poke:itemGroup.name.crate"
+            },
+            "items": [
+              "poke:empty_crate",
+              "poke:apple_crate",
+              "poke:carrot_crate",
+              "poke:potato_crate",
+              "poke:beetroot_crate",
+              "poke:sweet_berry_crate",
+              "poke:glow_berry_crate",
+              "poke:melon_crate",
+              "poke:pumpkin_crate",
+              "poke:sugarcane_crate",
+              "poke:red_mushroom_crate",
+              "poke:brown_mushroom_crate",
+              "poke:nether_wart_crate",
+              "poke:chorus_fruit_crate",
+              "poke:rotten_flesh_crate",
+              "poke:flint_crate"
+            ]
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.planks"
+            },
+            "items": [
+            ]
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.walls"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.fence"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.fenceGate"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.stairs"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.door"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.trapdoor"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.glass"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.glassPane"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.slab"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.stoneBrick"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.sandstone"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.copper"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.wool"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.woolCarpet"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.concretePowder"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.concrete"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.stainedClay"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.glazedTerracotta"
+            },
+            "items": []
+          },
+          {
+            "items": []
+          }
+        ]
+      },
+      {
+        "category_name": "nature",
+        "groups": [
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.ore"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.stone"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.log"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.wood"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.leaves"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.sapling"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.seed"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.crop"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.grass"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.coral_decorations"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.flower"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.dye"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.rawFood"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.mushroom"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.monsterStoneEgg"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.mobEgg"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.coral"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.sculk"
+            },
+            "items": []
+          },
+          {
+            "items": []
+          }
+        ]
+      },
+      {
+        "category_name": "equipment",
+        "groups": [
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.helmet"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.chestplate"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.leggings"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.boots"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.sword"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.axe"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.pickaxe"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.shovel"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.hoe"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.arrow"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.cookedFood"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.miscFood"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.goatHorn"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.bundles"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.horseArmor"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.potion"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.splashPotion"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.lingeringPotion"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.ominousBottle"
+            },
+            "items": []
+          },
+          {
+            "items": []
+          }
+        ]
+      },
+      {
+        "category_name": "items",
+        "groups": [
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.bed"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.candles"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.anvil"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.chest"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.shulkerBox"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.record"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.sign"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.hanging_sign"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.skull"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.boat"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.chestboat"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.rail"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.minecart"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.buttons"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.pressurePlate"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.banner_pattern"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.potterySherds"
+            },
+            "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "minecraft:itemGroup.name.smithing_templates"
+            },
+            "items": []
+          },
+          {
+            "items": []
+          }
+        ]
+      }
+    ]
+  }
+}

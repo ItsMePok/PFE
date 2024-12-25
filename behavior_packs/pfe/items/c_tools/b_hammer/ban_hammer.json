@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:ban_hammer",
@@ -14,7 +14,8 @@
 				"minecraft:is_pickaxe"
 			]},
 			"minecraft:custom_components": [
-				"poke:haxelMining"
+				"poke:haxelMining",
+				"poke:hitEffects"
 			],
 			"minecraft:use_modifiers": {
 			  "use_duration": 0,

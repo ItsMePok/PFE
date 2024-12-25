@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.40",//Format version is the version it was built for
+	"format_version": "1.21.50",//Format version is the version it was built for
 	"minecraft:item":{
 		"description":{
 			"identifier":"poke:nebula_pickaxe",//Item Identifier. everything is prefixed with poke: or pfe:
@@ -14,7 +14,7 @@
 			"minecraft:durability":{//Item durability
 				"max_durability":5280,//The amount of durability the item has
 				"damage_chance":{"max":100,"min":30}//Damage chance applies when the tool has unbreaking. basically the chance it takes damage 
-				//(see the "damage_item_ub" function in the PFEMain.js for more info on the durability)
+				//(see the "PFEDamageItemUB" function in the main.js for more info on the durability)
 			},
 			"minecraft:icon":{"textures": {//Item icon defined in "item_texture.json" in the RP/textures folder
 				"default": "poke_nebula_pickaxe",//default texture

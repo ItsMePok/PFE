@@ -17,7 +17,7 @@
 			},
 			"animation_controllers":[
 				{
-					"general":"controller.animation.poke_pfe.dolphin.general"
+					"general":"controller.animation.dolphin.general"
 				}
 			],
 			"render_controllers":["controller.render.poke_pfe.default"],

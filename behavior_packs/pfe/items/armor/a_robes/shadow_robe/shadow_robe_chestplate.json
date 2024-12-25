@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:shadow_robe_chestplate",
@@ -41,6 +41,7 @@
 			},
 			"minecraft:tags": {
 				"tags": [
+					"pfe:SingleArmor",
 					"minecraft:trimmable_armors",
 					"minecraft:is_armor"
 				]

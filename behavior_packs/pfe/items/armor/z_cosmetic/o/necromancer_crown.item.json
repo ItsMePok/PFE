@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:necromancer_crown",
@@ -16,7 +16,7 @@
 				}
 			},
 			"minecraft:wearable": {
-				"slot": "slot.weapon.offhand"
+				"slot": "slot.armor.head"
 			}
 		}
 	}

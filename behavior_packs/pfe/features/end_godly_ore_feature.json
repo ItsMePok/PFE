@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.40",
+  "format_version": "1.21.50",
   "minecraft:ore_feature": {
     "description": {
       "identifier": "poke:end_godly_ore_feature"

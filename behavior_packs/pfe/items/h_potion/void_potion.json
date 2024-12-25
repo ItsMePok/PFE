@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:void_potion",
@@ -9,6 +9,9 @@
 			}
 		},
 		"components": {
+			"minecraft:custom_components": [
+				"poke:consumeEffects"
+			],
 			"minecraft:max_stack_size": 16,
 			"minecraft:icon":"poke_void_potion",
 			"minecraft:food": {

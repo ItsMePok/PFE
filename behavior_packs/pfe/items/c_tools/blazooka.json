@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:blazooka",
@@ -35,7 +35,8 @@
 			"minecraft:use_modifiers": {
 				"use_duration": 0,
 				"movement_modifier": 1
-			}
+			},
+			"minecraft:rarity":"uncommon"
 		}
 	}
 }

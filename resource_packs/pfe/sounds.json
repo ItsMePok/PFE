@@ -1,4 +1,40 @@
 {
+	"block_sounds": {
+		"cobalt" : {
+         "events" : {
+            "break" : {
+               "pitch" : 0.80,
+               "sound" : "poke.battleaxe",
+               "volume" : 1.0
+            },
+            "default" : "",
+            "hit" : {
+               "pitch" : 0.50,
+               "sound" : "poke.battleaxe",
+               "volume" : 0.30
+            },
+            "item.use.on" : {
+               "pitch" : 0.80,
+               "sound" : "poke.battleaxe"
+            },
+            "place" : {
+               "pitch" : 0.80,
+               "sound" : "poke.battleaxe",
+               "volume" : 1.0
+            },
+            "power.off" : {
+               "pitch" : 0.50,
+               "sound" : "poke.battleaxe"
+            },
+            "power.on" : {
+               "pitch" : 0.60,
+               "sound" : "poke.battleaxe"
+            }
+         },
+         "pitch" : 1.0,
+         "volume" : 1.0
+      }
+	},
 	"entity_sounds": {
 		"entities": {
 			"poke:retro_llama": {
@@ -622,19 +658,16 @@
 						"sound": "poke.boss.victory"
 					},
 					"hurt": {
-						"pitch": 1,
 						"sound": "poke.knightling.bonk",
 						"volume": 0.8
 					},
 					"irongolem.crack": "mob.irongolem.crack",
 					"irongolem.repair": "mob.irongolem.repair",
 					"step": {
-						"pitch": 1,
 						"sound": "mob.irongolem.walk",
 						"volume": 1
 					},
 					"throw": {
-						"pitch": 1,
 						"sound": "mob.irongolem.throw",
 						"volume": 1
 					}

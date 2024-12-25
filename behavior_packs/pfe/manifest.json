@@ -1,10 +1,10 @@
 {
 	"header": {
-		"name": "§bv1.2.4 §uPFE §cBP§r",
+		"name": "v1.2.5 §uPFE §cBP§r",
 		"description": "§6By:§u ItsMePok §f& §dO2God §7||§e Wiki: https://pfewiki.gitbook.io/home§r",
 		"pack_scope":	"world",
-		"uuid": "7f637f9b-455a-4440-a70e-99c742189aff",
-		"version": [1, 2, 4],
+		"uuid": "976a6976-ff0f-4aba-a8a7-a663db51f75b",
+		"version": [1, 2, 50],
 		"min_engine_version": [1, 21, 50]
 	},
 	"modules": [
@@ -24,12 +24,12 @@
 	],
 	"dependencies": [
 		{//RP Manifest
-		"uuid": "aca3d75e-6204-4b41-942d-84254905561d",
-		"version": [1, 2, 4]
+			"uuid": "10c91e92-cb3c-4130-8901-0236f65dfa2f",
+			"version": [1, 2, 50]
 		},
 		{
 			"module_name": "@minecraft/server",
-			"version": "1.15.0"
+			"version": "1.16.0"
 		},
 		{
 			"module_name": "@minecraft/server-ui",
@@ -39,6 +39,7 @@
 	"format_version": 2,
 	"metadata": {
 		"url": "https://github.com/ItsMePok/PFE",
+		"license": "MIT",// RP/LICENSE
 		"product_type": "addon",
 		"authors": ["ItsMePok"],
 		"generated_with": {

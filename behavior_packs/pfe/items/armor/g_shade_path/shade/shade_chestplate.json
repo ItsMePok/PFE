@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:shade_chestplate",
@@ -38,8 +38,9 @@
 				]
 			}, 
 			"minecraft:tags": { 
-			  "tags": [ 
-				"minecraft:is_armor", 
+			  "tags": [
+				"pfe:SingleArmor",
+				"minecraft:is_armor",
 				"minecraft:trimmable_armors" 
 			  ] 
 			} 

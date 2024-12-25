@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.20",
+	"format_version": "1.21.50",
 	"sound_definitions": {
 		"poke.record.key": {
 			"category": "ui",
@@ -624,7 +624,11 @@
 			"category": "block",
 			"max_distance": 8,
 			"sounds": [
-				"sounds/poke/pfe/calibrate"
+				{"name": "sounds/poke/pfe/calibrate","pitch": 1},
+				{"name": "sounds/poke/pfe/calibrate","pitch": 0.9},
+				{"name": "sounds/poke/pfe/calibrate","pitch": 0.95},
+				{"name": "sounds/poke/pfe/calibrate","pitch": 0.975},
+				{"name": "sounds/poke/pfe/calibrate","pitch": 0.9875}
 			]
 		},
 		"poke.ice_ring_use":{
@@ -655,21 +659,78 @@
 			"category": "player",
 			"max_distance": 10,
 			"sounds": [
-				"sounds/poke/pfe/cassette_activate"
+				{
+					"pitch": 0.95,
+					"name": "sounds/poke/pfe/cassette_activate"
+				},
+				{
+					"pitch": 0.975,
+					"name": "sounds/poke/pfe/cassette_activate"
+				},
+				{
+					"pitch": 1,
+					"name": "sounds/poke/pfe/cassette_activate"
+				},
+				{
+					"pitch": 1.025,
+					"name": "sounds/poke/pfe/cassette_activate"
+				},
+				{
+					"pitch": 1.05,
+					"name": "sounds/poke/pfe/cassette_activate"
+				}
 			]
 		},
 		"poke.battleaxe":{
 			"category": "player",
 			"max_distance": 10,
 			"sounds": [
-				"sounds/poke/pfe/battleaxe"
+				{
+					"pitch": 0.95,
+					"name": "sounds/poke/pfe/battleaxe"
+				},
+				{
+					"pitch": 0.975,
+					"name": "sounds/poke/pfe/battleaxe"
+				},
+				{
+					"pitch": 1,
+					"name": "sounds/poke/pfe/battleaxe"
+				},
+				{
+					"pitch": 1.025,
+					"name": "sounds/poke/pfe/battleaxe"
+				},
+				{
+					"pitch": 1.05,
+					"name": "sounds/poke/pfe/battleaxe"
+				}
 			]
 		},
 		"poke.med_ring_use":{
 			"category": "player",
 			"max_distance": 10,
 			"sounds": [
-				"sounds/poke/pfe/med_ring_use"
+				{
+					"pitch": 0.95,
+					"name": "sounds/poke/pfe/med_ring_use"
+				},
+				{
+					"pitch": 0.975,
+					"name": "sounds/poke/pfe/med_ring_use"
+				},
+				{
+					"pitch": 1,
+					"name": "sounds/poke/pfe/med_ring_use"
+				},
+				{
+					"pitch": 1.025,
+					"name": "sounds/poke/pfe/med_ring_use"
+				},
+				{
+					"pitch": 1.05,
+					"name": "sounds/poke/pfe/med_ring_use"
+				}
 			]
 		},
 		"record.listen": {
@@ -677,7 +738,6 @@
 			"max_distance": 64,
 			"sounds": [
 				{
-					
 					"name": "sounds/poke/pfe/listener_boss",
 					"stream": true
 				}
@@ -688,6 +748,27 @@
 			"max_distance": 64,
 			"sounds": [
 				{
+					"pitch": 0.95,
+					"name": "sounds/poke/pfe/quest_comp",
+					"volume": 0.8
+				},
+				{
+					"pitch": 0.975,
+					"name": "sounds/poke/pfe/quest_comp",
+					"volume": 0.8
+				},
+				{
+					"pitch": 1,
+					"name": "sounds/poke/pfe/quest_comp",
+					"volume": 0.8
+				},
+				{
+					"pitch": 1.025,
+					"name": "sounds/poke/pfe/quest_comp",
+					"volume": 0.8
+				},
+				{
+					"pitch": 1.05,
 					"name": "sounds/poke/pfe/quest_comp",
 					"volume": 0.8
 				}
@@ -698,6 +779,27 @@
 			"max_distance": 64,
 			"sounds": [
 				{
+					"pitch": 0.95,
+					"name": "sounds/poke/pfe/quest_info",
+					"volume": 0.8
+				},
+				{
+					"pitch": 0.975,
+					"name": "sounds/poke/pfe/quest_info",
+					"volume": 0.8
+				},
+				{
+					"pitch": 1,
+					"name": "sounds/poke/pfe/quest_info",
+					"volume": 0.8
+				},
+				{
+					"pitch": 1.025,
+					"name": "sounds/poke/pfe/quest_info",
+					"volume": 0.8
+				},
+				{
+					"pitch": 1.05,
 					"name": "sounds/poke/pfe/quest_info",
 					"volume": 0.8
 				}
@@ -708,7 +810,6 @@
 			"max_distance" : 64.0,
 			"sounds" : [
 				{
-					
 					"name" : "sounds/poke/pfe/listener_boss",
 					"stream" : true
 				}
@@ -835,7 +936,6 @@
 			"max_distance": 256,
 			"sounds": [
 				{
-					
 					"name": "sounds/music/game/records/11",
 					"stream": true,
 					"volume": 0.50
@@ -847,7 +947,6 @@
 			"max_distance": 256,
 			"sounds": [
 				{
-					
 					"name": "sounds/music/game/records/13",
 					"stream": true,
 					"volume": 0.50
@@ -859,7 +958,6 @@
 			"max_distance": 256,
 			"sounds": [
 				{
-					
 					"name": "sounds/music/game/records/blocks",
 					"stream": true,
 					"volume": 0.50
@@ -871,7 +969,6 @@
 			"max_distance": 256,
 			"sounds": [
 				{
-					
 					"name": "sounds/music/game/records/cat",
 					"stream": true,
 					"volume": 0.50
@@ -883,7 +980,6 @@
 			"max_distance": 256,
 			"sounds": [
 				{
-					
 					"name": "sounds/music/game/records/chirp",
 					"stream": true,
 					"volume": 0.50
@@ -895,7 +991,6 @@
 			"max_distance": 256,
 			"sounds": [
 				{
-					
 					"name": "sounds/music/game/records/far",
 					"stream": true,
 					"volume": 0.50
@@ -907,7 +1002,6 @@
 			"max_distance": 256,
 			"sounds": [
 				{
-					
 					"name": "sounds/music/game/records/mall",
 					"stream": true,
 					"volume": 0.50
@@ -919,7 +1013,6 @@
 			"max_distance": 256,
 			"sounds": [
 				{
-					
 					"name": "sounds/music/game/records/mellohi",
 					"stream": true,
 					"volume": 0.50
@@ -931,7 +1024,6 @@
 			"max_distance": 256,
 			"sounds": [
 				{
-					
 					"name": "sounds/music/game/records/stal",
 					"stream": true,
 					"volume": 0.50
@@ -943,7 +1035,6 @@
 			"max_distance": 256,
 			"sounds": [
 				{
-					
 					"name": "sounds/music/game/records/strad",
 					"stream": true,
 					"volume": 0.50
@@ -955,7 +1046,6 @@
 			"max_distance": 256,
 			"sounds": [
 				{
-					
 					"name": "sounds/music/game/records/wait",
 					"stream": true,
 					"volume": 0.50
@@ -967,7 +1057,6 @@
 			"max_distance": 256,
 			"sounds": [
 				{
-					
 					"name": "sounds/music/game/records/pigstep_master",
 					"stream": true,
 					"volume": 0.50
@@ -979,7 +1068,6 @@
 			"max_distance": 256,
 			"sounds": [
 				{
-					
 					"name": "sounds/music/game/records/relic",
 					"stream": true,
 					"volume": 0.50
@@ -991,7 +1079,6 @@
 			"max_distance": 256,
 			"sounds": [
 				{
-					
 					"name": "sounds/music/game/records/otherside",
 					"stream": true,
 					"volume": 0.50
@@ -1003,7 +1090,6 @@
 			"max_distance": 256,
 			"sounds": [
 				{
-					
 					"name": "sounds/music/game/records/5",
 					"stream": true,
 					"volume": 0.50
@@ -1015,7 +1101,6 @@
 			"max_distance": 256,
 			"sounds": [
 				{
-					
 					"name": "sounds/music/game/records/ward",
 					"stream": true,
 					"volume": 0.50
@@ -1037,7 +1122,6 @@
 			"max_distance" : 256,
 			"sounds" : [
 				{
-					
 					"name" : "sounds/block/bell/bell_use01",
 					"pitch" : 0.950
 				},

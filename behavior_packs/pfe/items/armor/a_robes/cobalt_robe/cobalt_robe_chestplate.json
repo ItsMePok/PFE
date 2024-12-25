@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.40",
+	"format_version": "1.21.50",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:cobalt_robe_chestplate",
@@ -23,8 +23,8 @@
 			},
 			"minecraft:icon": { 
 			  "textures": { 
-				"default": "poke_cobalt_robe_chestplate" } 
-			}, 
+				"default": "poke_cobalt_robe_chestplate" 
+			}}, 
 			"minecraft:wearable": {
 				"slot": "slot.armor.chest",
 				"protection": 10
@@ -32,15 +32,14 @@
 			"minecraft:repairable": {
 				"repair_items": [
 					{
-						"items": [
-							"poke:repair_core"
-						],
+						"items": ["poke:repair_core"],
 						"repair_amount": "query.max_durability"
 					}
 				]
 			},
 			"minecraft:tags": {
 				"tags": [
+					"pfe:SingleArmor",
 					"minecraft:trimmable_armors",
 					"minecraft:is_armor",
 					"pfe:robe"
