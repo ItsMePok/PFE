@@ -4,7 +4,9 @@
 
 <figure><img src="https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694" alt=""><figcaption></figcaption></figure>
 
-## Identifier: poke:cobalt\_ingot <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: poke:cobalt\_ingot <a href="#identifier" id="identifier"></a>
+
+## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 64
 
 ## Usage:
 
@@ -48,7 +50,7 @@
 ## Potions
 
 * Cobalt Potion
-  * <img src="https://minecraft.wiki/images/Water_Bottle_JE2_BE2.png?acae5" alt="" data-size="line"> [Awkward Potion](https://minecraft.wiki/w/Potion#Base\_potions) + <img src="https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694" alt="" data-size="line"> [Cobalt Ingot](cobalt-ingot.md)
+  * <img src="https://minecraft.wiki/images/Water_Bottle_JE2_BE2.png?acae5" alt="" data-size="line"> [Awkward Potion](https://minecraft.wiki/w/Potion#Base_potions) + <img src="https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694" alt="" data-size="line"> [Cobalt Ingot](cobalt-ingot.md)
 
 
 
@@ -56,7 +58,7 @@ More info about brewing can be found in the: [brewing-guide.md](../../misc-other
 {% endtab %}
 {% endtabs %}
 
-## Obtaining:
+## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining:
 
 {% tabs %}
 {% tab title="Recipe" %}
@@ -88,6 +90,6 @@ Items:
 
 Outputs:
 
-* 9x <img src="https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694" alt="" data-size="line"> [Cobalt Ingots](cobalt-ingot.md)
+* 9x <img src="https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694" alt="Cobalt Ingot." data-size="line"> [Cobalt Ingots](cobalt-ingot.md)
 {% endtab %}
 {% endtabs %}

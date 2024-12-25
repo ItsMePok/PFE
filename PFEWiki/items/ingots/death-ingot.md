@@ -4,7 +4,9 @@
 
 <figure><img src="https://github.com/user-attachments/assets/f4818c7c-f8c9-4218-b546-70a6a439e4cb" alt=""><figcaption></figcaption></figure>
 
-## Identifier: poke:death\_ingot <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: poke:death\_ingot <a href="#identifier" id="identifier"></a>
+
+## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 64
 
 ## Usage:
 
@@ -22,7 +24,7 @@
 {% endtab %}
 {% endtabs %}
 
-## Obtaining:
+## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining:
 
 {% tabs %}
 {% tab title="Recipe" %}

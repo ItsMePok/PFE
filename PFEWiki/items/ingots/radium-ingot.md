@@ -6,7 +6,9 @@
 
 
 
-## Identifier: poke:radium\_ingot <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: poke:radium\_ingot <a href="#identifier" id="identifier"></a>
+
+## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 64
 
 ## Usage:
 
@@ -20,7 +22,7 @@
 {% endtab %}
 {% endtabs %}
 
-## Obtaining:
+## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining:
 
 {% tabs %}
 {% tab title="Recipe" %}
@@ -35,7 +37,7 @@
 Items:
 
 * <img src="https://github.com/user-attachments/assets/98da9682-eaf5-4bb5-932c-1c12295decc7" alt="Shade Ingot" data-size="line">Shade Ingot
-* <img src="https://github.com/user-attachments/assets/e13f83a8-b0d5-47ed-bd3d-9623c9a5fab5" alt="Molten Slimeball" data-size="line">Molten Slimeball
+* <img src="https://github.com/user-attachments/assets/e13f83a8-b0d5-47ed-bd3d-9623c9a5fab5" alt="Molten Slimeball" data-size="line">[Molten Slimeball](molten-slimeball.md)
 * <img src="https://github.com/user-attachments/assets/41cf9ac1-c89c-4eea-9249-76036a858251" alt="Astral Ingot" data-size="line">Astral Ingot
 {% endtab %}
 
