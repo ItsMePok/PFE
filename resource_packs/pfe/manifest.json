@@ -1,10 +1,10 @@
 {
 	"header": {
-		"name": "§3v1.2.4.H §uPFE §aRP§r",
+		"name": "v1.2.5 §uPFE §aRP§r",
 		"description": "pack.description",
 		"pack_scope": "any",
-		"uuid": "13fd1467-9041-4db3-a1b8-d10b3114989e",
-		"version": [1, 2, 41],
+		"uuid": "10c91e92-cb3c-4130-8901-0236f65dfa2f",
+		"version": [1, 2, 50],
 		"min_engine_version": [1, 21, 50]
 	},
 	"modules": [
@@ -17,13 +17,14 @@
 	],
 	"dependencies": [
 		{ //BP Manifest
-			"uuid": "c4c03f37-bf68-41e6-8225-d7f2c58e5dd9",
-			"version": [1, 2, 41]
+			"uuid": "976a6976-ff0f-4aba-a8a7-a663db51f75b",
+			"version": [1, 2, 50]
 		}
 	],
 	"format_version": 2,
 	"metadata": {
 		"url": "https://github.com/ItsMePok/PFE",
+		"license": "MIT",// RP/LICENSE
 		"product_type": "addon",
 		"authors": ["ItsMePok"],
 		"generated_with": {

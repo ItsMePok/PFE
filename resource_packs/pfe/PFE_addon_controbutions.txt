@@ -8,6 +8,7 @@ Anything listed below has been used at some point to develop PFE
 Things made by o2god for PFE:
 -----
 Mobs:
+
 Raccoon
 Necromancer
 Mushroom Buddy 
@@ -17,9 +18,11 @@ Rat
 Logger
 -----
 Armor:
+
 Cobalt Robe
 -----
 Textures:
+
 Scythe Textures
 Claymore Textures (Claymores are not in yet but will be soon-ish)
 -----
@@ -43,10 +46,9 @@ Ferret
 Crab Pal
 ============================
 
-PFE Wiki
-New: https://pfewiki.gitbook.io/home
+PFE Wiki: https://pfewiki.gitbook.io/home
 
-Code for Slabs & Tool Durability were copied from the bedrock wiki
+Initial Code for Slabs & Tool Durability were copied from the bedrock wiki
 https://wiki.bedrock.dev/
 
 Animated item texture for the Sundial
@@ -62,7 +64,7 @@ https://www.blockbench.net/
 Asprite (For Textures)
 https://www.aseprite.org/
 
-Mcreator (For Java Port (WIP))
+MCreator (For Java Port (WIP))
 https://mcreator.net/
 
 Note Block Studio (For Boss Music, and other sound effects)
@@ -74,6 +76,9 @@ https://www.foobar2000.org/
 Regolith (Addon Compiling)
 https://bedrock-oss.github.io/regolith/
 
+Minecraft Creator Tools (Addon Compatibility & Validation)
+https://github.com/Mojang/minecraft-creator-tools
+
 VS Code
 https://code.visualstudio.com/
 
@@ -82,15 +87,13 @@ BlockceptionLtd.blockceptionvscodeminecraftbedrockdevelopmentextension
 destruc7i0n.vscode-bedrock-definitions
 streetsidesoftware.code-spell-checker
 SuperAnt.mc-dp-icons
-oderwat.indent-rainbow
-arcensoth.language-mcfunction
-Nobuwu.mc-color
+ms-vscode.vscode-js-profile-flame
 mojang-studios.minecraft-debugger
-zz5840.minecraft-lang-colorizer
+mechatroner.rainbow-csv
+BedrockOSS.regolith
 JannisX11.snowstorm
 netcorext.uuid-generator
 AntiAntiSepticeye.vscode-color-picker
-BedrockOSS.regolith
 
 Snowstorm (For Particles)
 https://snowstorm.app/
@@ -109,6 +112,8 @@ https://modbay.org/mods/372-pokes-fantasy-expansion.html
 
 GitHub Repository
 https://github.com/ItsMePok/PFE
+Old PFE versions:
+https://github.com/ItsMePok/Addon-Archive/tree/main/PFE
 
 Wikis & Info
 https://wiki.bedrock.dev/
@@ -126,10 +131,10 @@ https://bridge-core.app/
 Paint.net (For Textures)
 https://www.getpaint.net/
 
-Mcreator (For bedrock edition when first starting bedrock addons)
+MCreator (For bedrock edition when first starting bedrock addons)
 https://mcreator.net/
 
-MediaFire (for download option)
+MediaFire (For download option)
 https://www.mediafire.com/
 
 (Im putting theses here but i don't feel good about using them in the past)

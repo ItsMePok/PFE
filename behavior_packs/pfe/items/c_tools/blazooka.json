@@ -35,7 +35,8 @@
 			"minecraft:use_modifiers": {
 				"use_duration": 0,
 				"movement_modifier": 1
-			}
+			},
+			"minecraft:rarity":"uncommon"
 		}
 	}
 }

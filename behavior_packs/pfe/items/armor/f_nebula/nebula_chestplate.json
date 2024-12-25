@@ -47,7 +47,8 @@
 					"minecraft:is_armor", 
 					"minecraft:trimmable_armors" 
 				] 
-			} 
+			},
+			"minecraft:rarity":"epic"
 		} 
 	} 
 }

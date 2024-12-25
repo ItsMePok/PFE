@@ -8,7 +8,8 @@
 			}
 		},
 		"components":{
-			"minecraft:icon":"poke_nebula_core"
+			"minecraft:icon":"poke_nebula_core",
+			"minecraft:rarity":"epic"
 		}
 	}
 }

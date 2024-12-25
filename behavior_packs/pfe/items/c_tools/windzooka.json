@@ -39,7 +39,8 @@
 			"minecraft:custom_components": [
 				"poke:cc_zooka",
 				"poke:normalMining"
-			]
+			],
+			"minecraft:rarity":"uncommon"
 		}
 	}
 }

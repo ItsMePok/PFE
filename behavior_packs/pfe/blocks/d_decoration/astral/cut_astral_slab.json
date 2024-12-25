@@ -15,6 +15,9 @@
 						"redstone_conductor": true,
 						"allows_wire_to_step_down": true
 					},
+					"minecraft:geometry": {
+						"identifier": "minecraft:geometry.full_block"
+					},
 					"minecraft:custom_components":[
 						"poke:cc_slab_loot"
 					]
@@ -31,7 +34,7 @@
 								"can_contain_liquid": true,
 								"liquid_type": "water",
 								"on_liquid_touches": "blocking",
-								"stops_liquid_flowing_out_from_direction": ["down"]
+								"stops_liquid_flowing_from_direction": ["down"]
 							}
 						]
 					},*/
@@ -62,7 +65,7 @@
 								"can_contain_liquid": true,
 								"liquid_type": "water",
 								"on_liquid_touches": "blocking",
-								"stops_liquid_flowing_out_from_direction": ["up"]
+								"stops_liquid_flowing_from_direction": ["up"]
 							}
 						]
 					},*/

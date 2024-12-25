@@ -47,7 +47,16 @@
 				"is_pushable_by_piston": true
 			},
 			"minecraft:despawn": {
-				"despawn_from_distance": {"min_distance": 2,"max_distance": 3},
+				"despawn_from_distance": {"min_distance": 2,"max_distance": 2},
+				"filters": {
+					"any_of": [
+						{
+							"test": "rider_count",
+							"operator": "==",
+							"value": 0
+						}
+					]
+				},
 				"despawn_from_simulation_edge": true
 			}
 		},

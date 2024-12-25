@@ -15,10 +15,12 @@
 						"redstone_conductor": true,
 						"allows_wire_to_step_down": true
 					},
+					"minecraft:geometry": {
+						"identifier": "minecraft:geometry.full_block"
+					},
 					"minecraft:custom_components":[
 						"poke:cc_slab_loot"
 					]
-					
 				}
 			},
 			// Bottom Slab
@@ -31,7 +33,7 @@
 								"can_contain_liquid": true,
 								"liquid_type": "water",
 								"on_liquid_touches": "blocking",
-								"stops_liquid_flowing_out_from_direction": ["down"]
+								"stops_liquid_flowing_from_direction": ["down"]
 							}
 						]
 					},*/
@@ -44,12 +46,7 @@
 						"identifier": "geometry.poke_pfe_slab",
 						"bone_visibility": {"bottom_slab": "q.block_state('minecraft:vertical_half') == 'bottom'","top_slab": "q.block_state('minecraft:vertical_half') == 'top'"}
 					},
-					"minecraft:selection_box": {"origin": [-8, 0, -8],"size": [16, 8, 16]},
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "poke_limestone"
-						}
-					}
+					"minecraft:selection_box": {"origin": [-8, 0, -8],"size": [16, 8, 16]}
 				}
 			},
 			// Top Slab
@@ -62,7 +59,7 @@
 								"can_contain_liquid": true,
 								"liquid_type": "water",
 								"on_liquid_touches": "blocking",
-								"stops_liquid_flowing_out_from_direction": ["up"]
+								"stops_liquid_flowing_from_direction": ["up"]
 							}
 						]
 					},*/
@@ -77,12 +74,7 @@
 						"identifier": "geometry.poke_pfe_slab",
 						"bone_visibility": {"bottom_slab": "q.block_state('minecraft:vertical_half') == 'bottom'","top_slab": "q.block_state('minecraft:vertical_half') == 'top'"}
 					},
-					"minecraft:selection_box": {"origin": [-8, 8, -8],"size": [16, 8, 16]},
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "poke_limestone"
-						}
-					}
+					"minecraft:selection_box": {"origin": [-8, 8, -8],"size": [16, 8, 16]}
 				}
 			}
 		],
@@ -90,12 +82,16 @@
 			"minecraft:destructible_by_mining": {"seconds_to_destroy": 7},
 			"minecraft:destructible_by_explosion": {"explosion_resistance": 6},
 			"minecraft:map_color": "#1a37bb",
-			
 			"tag:pfe": {},
 			"tag:stone": {},
 			"tag:minecraft:stone": {},
 			"tag:stone_pick_diggable":{},
-			"tag:minecraft:is_pickaxe_item_destructible":{}
+			"tag:minecraft:is_pickaxe_item_destructible":{},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "poke_limestone"
+				}
+			}
 		}
 	}
 }

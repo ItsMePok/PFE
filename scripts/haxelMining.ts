@@ -8,7 +8,12 @@ interface PFEHaxelConfig{
 const PFEHaxelConfigDefault:PFEHaxelConfig = {
   "blacklist":[
     MinecraftBlockTypes.Chest,
-    MinecraftBlockTypes.Barrel
+    MinecraftBlockTypes.Barrel,
+    MinecraftBlockTypes.BuddingAmethyst,
+    MinecraftBlockTypes.MobSpawner,
+    MinecraftBlockTypes.TrialSpawner,
+    MinecraftBlockTypes.Vault,
+    MinecraftBlockTypes.Bed
   ]
 }
 interface PFEHaxelComponentInfo {

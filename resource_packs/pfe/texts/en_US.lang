@@ -306,7 +306,7 @@ item.poke:carved_melon_mask=Carved Melon Mask~LINEBREAK~§7Cosmetic~LINEBREAK~§
 item.poke:viking_helmet=Viking Helmet~LINEBREAK~§7Cosmetic~LINEBREAK~§9PFE§r
 item.poke:apollo_the_snake=Apollo the Snake~LINEBREAK~§7Offhand Cosmetic~LINEBREAK~§9PFE§r
 item.poke:dapper_fit=Dapper Fit~LINEBREAK~§7Offhand Cosmetic~LINEBREAK~§9PFE§r
-item.poke:maxwell=Maxwel~LINEBREAK~§7Offhand Cosmetic~LINEBREAK~§9PFE§r
+item.poke:maxwell=Maxwell~LINEBREAK~§7Offhand Cosmetic~LINEBREAK~§9PFE§r
 item.poke:big_dapper_fit=Big Dapper Fit~LINEBREAK~§7Offhand Cosmetic~LINEBREAK~§9PFE§r
 item.poke:mr_duck=Mr. Duck~LINEBREAK~§7Offhand Cosmetic~LINEBREAK~§9PFE§r
 item.poke:little_dapper_fit=Little Dapper Fit~LINEBREAK~§7Offhand Cosmetic~LINEBREAK~§9PFE§r
@@ -535,6 +535,12 @@ tile.poke:cobbled_shadowstone_wall.name=Cobbled Shadowstone Wall~LINEBREAK~§9PF
 tile.poke:limestone_brick_wall.name=Limestone Brick Wall~LINEBREAK~§9PFE§r
 tile.poke:honey_tile_wall.name=Honey Tile Wall~LINEBREAK~§9PFE§r
 ##Sherds
+item.poke:pfe-tree_pottery_sherd=Tree Pottery Sherd~LINEBREAK~§9PFE§r
+item.poke:pfe-tree_pottery_sherd.name=Tree Pottery Sherd
+item.poke:pfe-present_pottery_sherd=Present Pottery Sherd~LINEBREAK~§9PFE§r
+item.poke:pfe-present_pottery_sherd.name=Present Pottery Sherd
+item.poke:pfe-snowflake_pottery_sherd=Snowflake Pottery Sherd~LINEBREAK~§9PFE§r
+item.poke:pfe-snowflake_pottery_sherd.name=Snowflake Pottery Sherd
 item.poke:pfe-spook_pottery_sherd=Spook Pottery Sherd~LINEBREAK~§9PFE§r
 item.poke:pfe-spook_pottery_sherd.name=Spook Pottery Sherd
 item.poke:pfe-knightling_pottery_sherd=Knightling Pottery Sherd~LINEBREAK~§9PFE§r
@@ -1185,8 +1191,37 @@ translation.poke:haxelConfig.blacklistAdd.textLabel=Block identifier
 translation.poke:haxelConfig.blacklistAdd.submit=Add Block to Blacklist
 
 translation.poke:haxelConfig.blacklistAdd.body=Input a block identifier into the text field below, §c~LINEBREAK~If no namespace is provided "minecraft:" will be assumed~LINEBREAK~~LINEBREAK~§rUnsure of the block identifier? use the %s to see what the interacted block's identifier
-item.poke:identifier.name=Identifier
+item.poke:identifier.name=Identifier~LINEBREAK~§9PFE§r
 item.poke:identifier=Identifier~LINEBREAK~§7Tells you the §rBlock identifier§7 of the block you interact with~LINEBREAK~§9PFE§r
-
-
-item.legends:party_hat=Party Hat
+translation.poke:timeUiMainMenuBody=%3 %1! ~LINEBREAK~It's %2  ## %3 = Time Greeting || %1 = Player's name || %2 Time
+translation.poke:timeMorningGreet=Good Morning
+translation.poke:timeNoonGreet=Good Afternoon
+translation.poke:timeNightGreet=Good Evening
+translation.poke:timeHolidayGreet=Happy Holidays
+translation.poke:timeHalloweenGreet=Happy Halloween
+translation.poke:timeChangeTimezone=Change Timezone
+translation.poke:timeSetTimezone=Set Timezone
+translation.poke:timeSetBirthday=Set Birthday
+translation.poke:timeChangeBirthday=Change Birthday
+translation.poke:setBirthdayGlobalMessage=inform others that its your birthday when they join on that day?
+translation.poke:setBirthdayDay=Day
+translation.poke:setBirthdayMonth=Month
+translation.poke:setBirthdayJan=January
+translation.poke:setBirthdayFeb=February
+translation.poke:setBirthdayMar=March
+translation.poke:setBirthdayApr=April
+translation.poke:setBirthdayMay=May
+translation.poke:setBirthdayJun=June
+translation.poke:setBirthdayJul=July
+translation.poke:setBirthdayAug=August
+translation.poke:setBirthdaySep=September
+translation.poke:setBirthdayOct=October
+translation.poke:setBirthdayNov=November
+translation.poke:setBirthdayDec=December
+translation.poke:birthdayDev= (§oPFE Addon Developer§r)
+translation.poke:birthdayAnnounce=%1 %2 it's %3 Birthday! ## %1 = Time Greeting || %2 = Player name || %3 Birthday player's name
+translation.poke:birthdayOwn=your
+translation.poke:claimGift=Claim Gift
+item.poke:party_hat=Party Hat~LINEBREAK~§9PFE§r
+item.poke:calendar=Calendar~LINEBREAK~§9PFE§r
+item.poke:pfe-gift_box=Gift Box~LINEBREAK~§9PFE§r

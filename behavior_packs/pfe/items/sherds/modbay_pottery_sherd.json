@@ -5,16 +5,17 @@
 			"identifier": "poke:pfe-modbay_pottery_sherd",
 			"menu_category": {
 				"category": "items",
-                "group":"itemGroup.name.potterySherds"
+				"group":"itemGroup.name.potterySherds"
 			}
 		},
 		"components": {
 			"minecraft:icon":"poke_modbay_pottery_sherd",
-            "minecraft:tags":{
-                "tags":[
-                    "minecraft:decorated_pot_sherds"
-                ]
-            }
+			"minecraft:tags":{
+				"tags":[
+					"minecraft:decorated_pot_sherds"
+				]
+			},
+			"minecraft:rarity":"uncommon"
 		}
 	}
 }

@@ -15,14 +15,18 @@
 				}
 			},
 			"minecraft:dyeable": {
-				"default_color": "#436068"
+				"default_color": "#FFFFFF"
 			},
 			"minecraft:bundle_interaction": {
-				"num_viewable_slots": 64
+				"num_viewable_slots": 1
 			},
 			"minecraft:storage_item": {
 				"allow_nested_storage_items": true,
 				"weight_in_storage_item": 1,
+				"banned_items": [
+					"minecraft:shulker_box",
+					"minecraft:undyed_shulker_box"
+				],
 				"max_slots": 64,
 				"max_weight_limit": 64
 			},

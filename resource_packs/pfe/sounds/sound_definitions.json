@@ -624,7 +624,11 @@
 			"category": "block",
 			"max_distance": 8,
 			"sounds": [
-				"sounds/poke/pfe/calibrate"
+				{"name": "sounds/poke/pfe/calibrate","pitch": 1},
+				{"name": "sounds/poke/pfe/calibrate","pitch": 0.9},
+				{"name": "sounds/poke/pfe/calibrate","pitch": 0.95},
+				{"name": "sounds/poke/pfe/calibrate","pitch": 0.975},
+				{"name": "sounds/poke/pfe/calibrate","pitch": 0.9875}
 			]
 		},
 		"poke.ice_ring_use":{
