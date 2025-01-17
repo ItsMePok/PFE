@@ -2,7 +2,11 @@
 	"format_version": "1.21.50",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:carrot_crate"
+			"identifier": "poke:carrot_crate",
+			"menu_category": {
+				"category": "construction",
+				"group": "itemGroup.name.crate"
+			}
 		},
 		"components":{
 			"minecraft:collision_box":true,

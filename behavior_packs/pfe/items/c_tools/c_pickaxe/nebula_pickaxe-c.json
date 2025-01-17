@@ -6,6 +6,7 @@
 			"menu_category":{"category":"equipment","group":"itemGroup.name.pickaxe"}//Equipment tab under the Pickaxes
 		},
 		"components":{
+			"minecraft:rarity":"epic",//Rarity of the item (epic = magenta, common = white, uncommon = yellow, rare = blue)
 			"minecraft:custom_components": [
 				"poke:normalMining"//Controls durability when breaking blocks
 			],

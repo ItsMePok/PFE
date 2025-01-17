@@ -8,6 +8,7 @@
 			}
 		},
 		"components": {
+			"minecraft:rarity":"uncommon",
 			"minecraft:icon":"poke_ban_hammer_head"
 		}
 	}

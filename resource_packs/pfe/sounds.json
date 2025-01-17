@@ -397,6 +397,29 @@
 				"pitch": [0.8, 1.2],
 				"volume": 1
 			},
+			"poke:grizzly_bear": {
+				"events": {
+					"ambient": "mob.polarbear.idle",
+					"ambient.baby": "mob.polarbear_baby.idle",
+					"death": "mob.polarbear.death",
+					"hurt": {
+						"sound": "mob.polarbear.hurt",
+						"volume": 0.7
+					},
+					"mob.warning": {
+						"pitch": 1,
+						"sound": "mob.polarbear.warning",
+						"volume": 1.2
+					},
+					"step": {
+						"pitch": 1,
+						"sound": "mob.polarbear.step",
+						"volume": 0.7
+					}
+				},
+				"pitch": [0.8, 1.2],
+				"volume": 1
+			},
 			"poke:bone_bear": {
 				"events": {
 					"ambient": "mob.polarbear.idle",
@@ -533,6 +556,19 @@
 					"hurt": "mob.villager.hit"
 				},
 				"pitch": [0.8, 1.2],
+				"volume": 1
+			},
+			"poke:cassette_trader": {
+				"events": {
+					"ambient": "mob.villager.idle",
+					"death": "mob.villager.death",
+					"death.to.zombie": "mob.villager.death",
+					"haggle": "mob.villager.haggle",
+					"haggle.no": "mob.villager.no",
+					"haggle.yes": "mob.villager.yes",
+					"hurt": "mob.villager.hit"
+				},
+				"pitch": [0.8, 1],
 				"volume": 1
 			},
 			"poke:raccoon": {

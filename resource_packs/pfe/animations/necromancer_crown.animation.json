@@ -4,7 +4,7 @@
 		"animation.poke_pfe.necromancer_crown": {
 			"loop": true,
 			"bones": {
-				"helmet": {
+				"Head": {
 					"scale": 0
 				},
 				"root_item": {
@@ -15,7 +15,10 @@
 		"animation.poke_pfe.necromancer_crown_3p": {
 			"loop": "hold_on_last_frame",
 			"bones": {
-				"helmet": {
+				"Head": {
+					"scale": 1
+				},
+				"root_item": {
 					"scale": 1
 				}
 			}

@@ -1,5 +1,5 @@
 {
-	"format_version":"1.8.0",
+	"format_version":"1.10.0",
 	"minecraft:client_entity":{
 		"description":{
 			"identifier":"poke:nebula_bug",
@@ -14,13 +14,14 @@
 				"default":"geometry.nebula_bug"
 			},
 			"animations":{
-				"move":"animation.nebula_bug.move"
+				"move":"animation.nebula_bug.move",
+				"controller":"controller.animation.poke_pfe.silverfish.move"
 			},
-			"animation_controllers":[
-				{
-					"move":"controller.animation.poke_pfe.silverfish.move"
-				}
-			],
+			"scripts": {
+				"animate": [
+					"controller"
+				]
+			},
 			"render_controllers":[
 				"controller.render.silverfish"
 			],

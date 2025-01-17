@@ -14,6 +14,20 @@
 			},
 			"geometry": {
 				"default": "geometry.poke_pfe.necromancer_crown"
+			},
+			"animations": {
+				"first_person_hold": "animation.poke_pfe.necromancer_crown",
+				"third_person_hold": "animation.poke_pfe.necromancer_crown_3p"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"first_person_hold": "c.is_first_person"
+					},
+					{
+						"third_person_hold": "!c.is_first_person"
+					}
+				]
 			}
 		}
 	}

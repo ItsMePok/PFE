@@ -10,7 +10,7 @@
 		"components": {
 			"minecraft:icon":"poke_calendar",
 			"minecraft:custom_components": [
-				"pfe:timeConfig"
+				"poke:timeConfig"
 			]
 		}
 	}

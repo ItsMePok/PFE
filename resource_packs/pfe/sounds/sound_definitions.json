@@ -1,6 +1,32 @@
 {
 	"format_version": "1.21.50",
 	"sound_definitions": {
+		"poke.boltbow.noAmmo":{
+			"category": "player",
+			"max_distance": 10,
+			"sounds": [
+				{
+					"pitch": 0.985,
+					"name": "sounds/poke/pfe/boltbowNoAmmo"
+				},
+				{
+					"pitch": 0.975,
+					"name": "sounds/poke/pfe/boltbowNoAmmo"
+				},
+				{
+					"pitch": 1,
+					"name": "sounds/poke/pfe/boltbowNoAmmo"
+				},
+				{
+					"pitch": 1.025,
+					"name": "sounds/poke/pfe/boltbowNoAmmo"
+				},
+				{
+					"pitch": 1.05,
+					"name": "sounds/poke/pfe/boltbowNoAmmo"
+				}
+			]
+		},
 		"poke.record.key": {
 			"category": "ui",
 			"max_distance": 256,
@@ -439,7 +465,7 @@
 			"max_distance": 256,
 			"sounds": [
 				{
-					"name" : "sounds/music/game/shuniji",
+					"name" : "sounds/music/game/water/shuniji",
 					"stream" : true
 				}
 			]

@@ -2,7 +2,6 @@
     "pools": [
         {
             "rolls": 1,
-            "bonus_rolls": 1,
             "entries": [
                 {
                     "type": "item",
@@ -12,7 +11,7 @@
                 {
                     "type": "item",
                     "name": "poke:necromancer_crown",
-                    "weight": 2
+                    "weight": 1
                 }
             ]
         },

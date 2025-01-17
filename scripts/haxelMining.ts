@@ -1,7 +1,7 @@
-import { Dimension, EntityComponentTypes, EquipmentSlot, GameMode, ItemComponentTypes, ItemComponentUseEvent, ItemStack, MolangVariableMap, Player, system, Vector3 } from "@minecraft/server";
+import { Dimension, EntityComponentTypes, EquipmentSlot, ItemComponentTypes, ItemComponentUseEvent, ItemStack, Player, system, Vector3 } from "@minecraft/server";
 import { MinecraftBlockTypes, MinecraftEnchantmentTypes } from "@minecraft/vanilla-data";
 import { ActionFormData, ModalFormData } from "@minecraft/server-ui";
-import { PFEDamageItemUB } from "./main";
+import { PokeDamageItemUB } from "./commonFunctions";
 interface PFEHaxelConfig{
   "blacklist": string[];
 }
@@ -25,7 +25,7 @@ class PFEHaxelMining{
   onUse(data:ItemComponentUseEvent){
     //@ts-ignore
     let dynamicProperty:PFEHaxelConfig= data.itemStack?.getDynamicProperty('pfe:haxelInfo')
-    console.warn(dynamicProperty)
+    //console.warn(dynamicProperty)
     if(dynamicProperty == undefined){
       data.itemStack?.setDynamicProperty('pfe:haxelInfo',JSON.stringify(PFEHaxelConfigDefault))
       //@ts-ignore
@@ -42,7 +42,7 @@ class PFEHaxelMining{
     //Blocks that should never be broken by haxels
     let localBlacklist:string[] = []
     localBlacklist = dynamicProperty.blacklist!
-    let BannedBlocks:string[]=[MinecraftBlockTypes.Air,MinecraftBlockTypes.LightBlock,MinecraftBlockTypes.Barrier,MinecraftBlockTypes.Jigsaw,MinecraftBlockTypes.StructureBlock,MinecraftBlockTypes.CommandBlock,MinecraftBlockTypes.ChainCommandBlock,MinecraftBlockTypes.RepeatingCommandBlock,MinecraftBlockTypes.BorderBlock,MinecraftBlockTypes.Allow,MinecraftBlockTypes.Deny,"minecraft:light_block_0","minecraft:light_block_1","minecraft:light_block_2","minecraft:light_block_3","minecraft:light_block_4","minecraft:light_block_5","minecraft:light_block_6","minecraft:light_block_7","minecraft:light_block_8","minecraft:light_block_9","minecraft:light_block_10","minecraft:light_block_11","minecraft:light_block_13","minecraft:light_block_14","minecraft:light_block_15"]
+    let BannedBlocks:string[]=[MinecraftBlockTypes.Air,MinecraftBlockTypes.LightBlock0,MinecraftBlockTypes.LightBlock1,MinecraftBlockTypes.LightBlock2,MinecraftBlockTypes.LightBlock3,MinecraftBlockTypes.LightBlock4,MinecraftBlockTypes.LightBlock5,MinecraftBlockTypes.LightBlock6,MinecraftBlockTypes.LightBlock7,MinecraftBlockTypes.LightBlock8,MinecraftBlockTypes.LightBlock9,MinecraftBlockTypes.LightBlock10,MinecraftBlockTypes.LightBlock11,MinecraftBlockTypes.LightBlock12,MinecraftBlockTypes.LightBlock13,MinecraftBlockTypes.LightBlock14,MinecraftBlockTypes.LightBlock15,MinecraftBlockTypes.Barrier,MinecraftBlockTypes.Jigsaw,MinecraftBlockTypes.StructureBlock,MinecraftBlockTypes.CommandBlock,MinecraftBlockTypes.ChainCommandBlock,MinecraftBlockTypes.RepeatingCommandBlock,MinecraftBlockTypes.BorderBlock,MinecraftBlockTypes.Allow,MinecraftBlockTypes.Deny]
     let location:Vector3 = {x: Math.round(data.source.location.x-(ComponentInfo.radius.x/2)),y:Math.round(data.source.location.y-0.01),z:Math.round(data.source.location.z-(ComponentInfo.radius.z/2))}
     //@ts-ignore
     system.runJob(PFEMine(BannedBlocks.concat(localBlacklist),ComponentInfo,location,data.source,data.source.dimension,data.itemStack!.getComponent(ItemComponentTypes.Enchantable)!.hasEnchantment(MinecraftEnchantmentTypes.SilkTouch),data.itemStack))
@@ -83,17 +83,9 @@ function* PFEMine(BannedBlocks:string[],data:PFEHaxelComponentInfo,location:Vect
     }
   }
   if (DurabilityAmount != 0){
-    if (item.hasComponent(ItemComponentTypes.Durability) && player.getGameMode() != GameMode.creative) {
-      //console.warn(DurabilityAmount)
-      let newItem = PFEDamageItemUB(item, DurabilityAmount);
-      //@ts-ignore
-      player.getComponent(EntityComponentTypes.Equippable)!.setEquipment(EquipmentSlot.Mainhand, newItem)
-      if (!newItem) {
-          player.playSound("random.break")
-      }
-    }
     player.dimension.playSound("dig.stone", player.location);
   }
+  PokeDamageItemUB(item, DurabilityAmount,player,EquipmentSlot.Mainhand);
   if (!silkTouch){
     //to reduce item lag
     player.runCommand(`tp @e[type=item,r=${Math.max(data.radius.x,data.radius.y)+1}] @s`)
@@ -107,9 +99,9 @@ function PFEHaxelConfigMenu(data:ItemComponentUseEvent,ComponentInfo:PFEHaxelCom
   dynamicProperty=JSON.parse(dynamicProperty)
   let Ui = new ActionFormData()
   .title({translate:`translation.poke:haxelConfig.mainMenu.title`,with:{rawtext:[{translate:`item.${data.itemStack?.typeId}`.replace(`§9PFE§r`,``)}]}})
-  .button({translate:`translation.poke:haxelConfig.mainMenu.blacklistAdd`},`textures/items/misc/poke_blacklist_add`)
+  .button({translate:`translation.poke:haxelConfig.mainMenu.blacklistAdd`},`textures/poke/common/blacklist_add`)
   if (dynamicProperty.blacklist.length >= 1){
-    Ui.button({translate:`translation.poke:haxelConfig.mainMenu.blacklistRemove`},`textures/items/misc/poke_blacklist_remove`)
+    Ui.button({translate:`translation.poke:haxelConfig.mainMenu.blacklistRemove`},`textures/poke/common/blacklist_remove`)
   }
   //@ts-ignore
   Ui.show(data.source).then((response =>{

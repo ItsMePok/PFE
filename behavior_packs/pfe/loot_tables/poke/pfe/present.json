@@ -5,123 +5,143 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "poke:astral_ingot",
-					"weight": 10
-				},{
-					"type": "item",
-					"name": "poke:cobalt_ingot",
-					"weight": 10
-				},{
-					"type": "item",
-					"name": "poke:void_ingot",
-					"weight": 10
-				},{
-					"type": "item",
-					"name": "poke:godly_ingot",
-					"weight": 10
-				},{
-					"type": "item",
-					"name": "poke:galaxy_ingot",
-					"weight": 10
-				},{
-					"type": "item",
-					"name": "poke:holy_ingot",
-					"weight": 10
-				},{
-					"type": "item",
-					"name": "poke:demonic_ingot",
-					"weight": 10
-				},{
-					"type": "item",
-					"name": "poke:hellish_ingot",
-					"weight": 10
-				},{
-					"type": "item",
-					"name": "poke:onyx_ingot",
-					"weight": 10
-				},{
-					"type": "item",
-					"name": "poke:shade_ingot",
-					"weight": 10
-				},{
-					"type": "item",
-					"name": "poke:nebula_noodles",
-					"weight": 10
-				},{
-					"type": "item",
-					"name": "poke:nebula_potion",
-					"weight": 10
-				},{
-					"type": "item",
-					"name": "poke:void_potion",
-					"weight": 10
-				},{
-					"type": "item",
-					"name": "poke:cobalt_potion",
-					"weight": 10
-				},{
-					"type": "item",
-					"name": "poke:death_potion",
-					"weight": 10
-				},{
-					"type": "item",
-					"name": "poke:eggnog",
-					"weight": 10
+					"name": "poke:astral_ingot"
 				},
 				{
 					"type": "item",
-					"name": "poke:cobalt_soup",
-					"weight": 10
+					"name": "poke:cobalt_ingot"
 				},
 				{
 					"type": "item",
-					"name": "poke:molten_slimeball",
-					"weight": 10
+					"name": "poke:void_ingot"
 				},
 				{
 					"type": "item",
-					"name": "poke:death_ingot",
-					"weight": 10
+					"name": "poke:godly_ingot"
 				},
 				{
 					"type": "item",
-					"name": "poke:medic_ingot",
-					"weight": 10
+					"name": "poke:galaxy_ingot"
 				},
 				{
 					"type": "item",
-					"name": "poke:radium_ingot",
-					"weight": 10
+					"name": "poke:holy_ingot"
 				},
 				{
 					"type": "item",
-					"name": "poke:splash_death_potion",
-					"weight": 1
+					"name": "poke:demonic_ingot"
 				},
 				{
 					"type": "item",
-					"name": "poke:pfe-mcpedl_pottery_sherd",
-					"weight": 1
+					"name": "poke:hellish_ingot"
 				},
 				{
 					"type": "item",
-					"name": "poke:pfe-present_pottery_sherd",
-					"weight": 1
+					"name": "poke:onyx_ingot"
 				},
 				{
 					"type": "item",
-					"name": "poke:pfe-tree_pottery_sherd",
-					"weight": 1
+					"name": "poke:shade_ingot"
 				},
 				{
 					"type": "item",
-					"name": "poke:pfe-snowflake_pottery_sherd",
-					"weight": 1
+					"name": "poke:nebula_noodles"
 				},
 				{
 					"type": "item",
-					"name": "poke:pfe-gift_box",
-					"weight": 1
+					"name": "poke:nebula_potion"
+				},
+				{
+					"type": "item",
+					"name": "poke:void_potion"
+				},
+				{
+					"type": "item",
+					"name": "poke:cobalt_potion"
+				},
+				{
+					"type": "item",
+					"name": "poke:death_potion"
+				},
+				{
+					"type": "item",
+					"name": "poke:eggnog"
+				},
+				{
+					"type": "item",
+					"name": "poke:cobalt_soup"
+				},
+				{
+					"type": "item",
+					"name": "poke:molten_slimeball"
+				},
+				{
+					"type": "item",
+					"name": "poke:death_ingot"
+				},
+				{
+					"type": "item",
+					"name": "poke:medic_ingot"
+				},
+				{
+					"type": "item",
+					"name": "poke:radium_ingot"
+				},
+				{
+					"type": "item",
+					"name": "poke:splash_death_potion"
+				},
+				{
+					"type": "item",
+					"name": "poke:pfe-mcpedl_pottery_sherd"
+				},
+				{
+					"type": "item",
+					"name": "poke:pfe-present_pottery_sherd"
+				},
+				{
+					"type": "item",
+					"name": "poke:pfe-tree_pottery_sherd"
+				},
+				{
+					"type": "item",
+					"name": "poke:pfe-snowflake_pottery_sherd"
+				},
+				{
+					"type": "item",
+					"name": "poke:pfe-gift_box"
+				},
+				{
+					"type": "item",
+					"name": "poke:upgrade_core"
+				},
+				{
+					"type": "item",
+					"name": "poke:diamond_upgrade_core"
+				},
+				{
+					"type": "item",
+					"name": "poke:copper_token"
+				},
+				{
+					"type": "item",
+					"name": "poke:iron_token"
+				},
+				{
+					"type": "item",
+					"name": "poke:diamond_token"
+				},
+				{
+					"type": "item",
+					"name": "poke:gold_token"
+				},
+				{
+					"type": "item",
+					"name": "poke:repair_core"
+				},
+				{
+					"type": "item",
+					"name": "poke:capacity_core"
 				}
 			]
 		}

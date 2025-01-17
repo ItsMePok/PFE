@@ -63,7 +63,6 @@
 				"scale_power_by_draw_duration":true//Arrow goes farther based on how much how long it was drawn (capped at the max draw duration)
 			},
 			"minecraft:hand_equipped":true,//This is not necessary as the way its held is based on the attachable file in the RP (RP/attachables/item/bow/galaxy_bow.json)
-			"minecraft:use_animation":"none",//Not needed but here anyways
 			"minecraft:enchantable":{"value":75,"slot":"bow"},//Makes it able to be enchanted with bow enchants
 			"minecraft:durability":{//Item Durability
 				"damage_chance":{"min":50,"max":100},//The chance that the item has to not take durability with unbreaking

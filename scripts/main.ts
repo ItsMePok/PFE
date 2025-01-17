@@ -1,18 +1,20 @@
-import { system, world, EquipmentSlot, GameMode, EntityComponentTypes, ItemComponentTypes, ItemStack,Enchantment, ItemEnchantableComponent, Player, ItemDurabilityComponent, EntityProjectileComponent, BlockComponentPlayerInteractEvent, BlockComponentPlayerDestroyEvent, BlockComponentTickEvent, EntityEquippableComponent, BlockComponentRandomTickEvent, ItemComponentUseEvent, ItemCooldownComponent, ItemComponentUseOnEvent, BlockComponentOnPlaceEvent, Direction, ItemComponentMineBlockEvent, RawMessage, EntityQueryOptions} from "@minecraft/server";
-import { MinecraftBlockTypes, MinecraftEffectTypes, MinecraftEnchantmentTypes, MinecraftItemTypes } from "@minecraft/vanilla-data";
+import { system, world, EquipmentSlot, GameMode, EntityComponentTypes, ItemComponentTypes, ItemStack, ItemEnchantableComponent, Player, EntityProjectileComponent, BlockComponentPlayerInteractEvent, BlockComponentPlayerDestroyEvent, BlockComponentTickEvent, EntityEquippableComponent, BlockComponentRandomTickEvent, ItemComponentUseEvent, ItemCooldownComponent, ItemComponentUseOnEvent, BlockComponentOnPlaceEvent, Direction, RawMessage, EntityQueryOptions, MinecraftDimensionTypes} from "@minecraft/server";
+import { MinecraftBlockTypes, MinecraftEffectTypes, MinecraftEnchantmentTypes, MinecraftEntityTypes, MinecraftItemTypes } from "@minecraft/vanilla-data";
 import { PFEBossEventConfig, PFEBossEventConfigName, PFEBossEventUI, PFEDefaultBossEventSettings, PFEStartBossEvent } from "./bossEvents";
 import { PFEHaxelMining } from "./haxelMining";
-import { PFEBirthdays, PFETimeConfigUIMainMenu, PFETimeGreeting, PFETimeZoneOffset } from "./time";
+import { PokeDamageItemUB, PokeDecrementStack } from "./commonFunctions";
+import { PokeBirthdays, PokeTimeConfigUIMainMenu, PokeTimeGreeting, PokeTimeZoneOffset } from "./time";
+import { PFEBoltBowsComponent } from "./boltbow";
 
 //Armor effects. I split into 4 because it should reduce the amount of commands running at a time reducing the random lag spikes
 system.runInterval(() => {
-    world.getDimension("overworld").runCommandAsync("execute as @a run function poke/pfe/effects");
+    world.getDimension(MinecraftDimensionTypes.overworld).runCommandAsync("execute as @a run function poke/pfe/effects");
     system.runTimeout(() => {
-        world.getDimension("overworld").runCommandAsync("execute as @a run function poke/pfe/effects_2");
+        world.getDimension(MinecraftDimensionTypes.overworld).runCommandAsync("execute as @a run function poke/pfe/effects_2");
         system.runTimeout(() => {
-            world.getDimension("overworld").runCommandAsync("execute as @a run function poke/pfe/effects_3");
+            world.getDimension(MinecraftDimensionTypes.overworld).runCommandAsync("execute as @a run function poke/pfe/effects_3");
             system.runTimeout(() => {
-                world.getDimension("overworld").runCommandAsync("execute as @a run function poke/pfe/effects_4");
+                world.getDimension(MinecraftDimensionTypes.overworld).runCommandAsync("execute as @a run function poke/pfe/effects_4");
             }, 40);
         }, 80);
     }, 120);
@@ -51,91 +53,19 @@ interface PFEArmorEffectInfo{
 }, 180);
 */
 
-function PFEDecrementStack(item:ItemStack) {
-    if (item.amount<=1)return undefined
-    else {
-        item.amount = item.amount -1
-        return item
-    }
-}
-// Tool Durability gotten from https://wiki.bedrock.dev/items/tool-durability.html
-function PFEDamageItem(item:ItemStack) {
-    // Get durability
-    if (!item.hasComponent(ItemComponentTypes.Durability)) return item;
-    //@ts-ignore
-    const durabilityComponent:ItemDurabilityComponent = item.getComponent(ItemComponentTypes.Durability)
-    //@ts-ignore
-    const enchantComponent:ItemEnchantableComponent = item.getComponent('minecraft:enchantable')
-    let unbreaking:number = 0
-    // Get unbreaking level
-    if (item.hasComponent("enchantments")) {
-        let unbreakingEnchant:Enchantment|undefined = undefined
-        if (enchantComponent != undefined) {
-            unbreakingEnchant = enchantComponent.getEnchantment(MinecraftEnchantmentTypes.Unbreaking)
-        }
-        if (unbreakingEnchant === undefined) {
-            unbreaking = 0
-        } else {
-            unbreaking = unbreakingEnchant.level
-        }
-    }
-    // Apply damage
-    if (durabilityComponent.damage == durabilityComponent.maxDurability) {
-
-        return
-    }
-    durabilityComponent.damage += Number(Math.round(Math.random() * 100) <= durabilityComponent.getDamageChance(unbreaking))
-    return item
-}
-
-//Makes unbreaking work but breaks the Hold to continue using :/
-function PFEDamageItemUB(item:ItemStack,multiplier:undefined|number) {
-    // check if the item does not have a durability component to avoid deleting itself
-    if (!item.hasComponent(ItemComponentTypes.Durability)) return item;
-    // Get durability
-    //@ts-ignore
-    const durabilityComponent:ItemDurabilityComponent = item.getComponent(ItemComponentTypes.Durability)
-    var unbreakingL = 0
-    // Get unbreaking level
-    if (item.hasComponent(ItemComponentTypes.Enchantable)) {
-        //@ts-ignore
-        if (item.getComponent(ItemComponentTypes.Enchantable)!.hasEnchantment("unbreaking")){
-            //@ts-ignore
-            unbreakingL = item.getComponent(ItemComponentTypes.Enchantable)!.getEnchantment("unbreaking").level
-        }
-    }
-    //console.warn('---')
-    //console.warn(unbreakingL +' ---'+ unbreakingL.level)
-    //console.warn (durabilityComponent.getDamageChance(unbreakingL))
-    //console.warn(Number(Math.round(Math.random() * 100) <= durabilityComponent.getDamageChance(unbreakingL)))
-    //console.warn('---')
-    let damage = Number(Math.round(Math.random() * 100) <= durabilityComponent.getDamageChance(unbreakingL))
-    if (typeof multiplier == "number"){
-        damage = damage*multiplier
-    }
-    if(durabilityComponent.damage + damage ==durabilityComponent.maxDurability)return undefined;
-    // Apply damage
-    durabilityComponent.damage += damage
-    if (durabilityComponent.damage == durabilityComponent.maxDurability) {
-        return item
-    }
-    return item
-}
-//Cassette Trader spawning
-system.runInterval(() => {
-    let allPlayers = world.getAllPlayers()
-    let randomPlayer = allPlayers.at(Math.abs(Math.round(Math.random() * (allPlayers.length-1))))
-    randomPlayer?.dimension.spawnEntity('poke:cassette_trader',randomPlayer.location).runCommand(`spreadplayers ~ ~ 30 40 @s ~10`)
-}, 216000/*3hrs*/ );
+/*world.afterEvents.itemStopUse.subscribe(data=>{
+    data.source.setDynamicProperty(`poke:isUsingItem`,false)
+    console.warn(`set use to false`)
+})*/
 
 world.afterEvents.playerJoin.subscribe((data =>{
-    let birthdays:PFEBirthdays[] = JSON.parse(world.getDynamicProperty(`pfe:birthdays`)!.toString())
+    let birthdays:PokeBirthdays[] = JSON.parse(world.getDynamicProperty(`poke:birthdays`)!.toString())
     //console.warn(JSON.stringify(birthdays))
     system.runTimeout(()=>{
         world.getAllPlayers().forEach((player =>{
             //console.warn(`Joined Id ${player.id}, your: ${player.id}`)
             if (player.id == data.playerId){
-                let currentTime = new Date(Date.now()+PFETimeZoneOffset(player))
+                let currentTime = new Date(Date.now()+PokeTimeZoneOffset(player))
                 birthdays.forEach((birthday =>{ 
                    //console.warn(`${birthday.day == currentTime.getDate() && birthday.month == currentTime.getMonth()} Day ${currentTime.getDate()}, Month: ${currentTime.getMonth()}`)
                     if (birthday.day == currentTime.getDate() && birthday.month == currentTime.getMonth()){
@@ -143,7 +73,7 @@ world.afterEvents.playerJoin.subscribe((data =>{
                         if (birthday.style == "dev"){
                             name.translate = `translation.poke:birthdayDev`
                         }
-                        if(birthday.name = player.name){
+                        if(birthday.name == player.name){
                             name.translate = `translation.poke:birthdayOwn`
                         }
                         else if (birthday.name?.endsWith(`s`)){
@@ -152,20 +82,57 @@ world.afterEvents.playerJoin.subscribe((data =>{
                         else{
                             name.text = `${birthday.name}'s`
                         }
-                        player.sendMessage({translate:`translation.poke:birthdayAnnounce`,with:{rawtext:[{translate:PFETimeGreeting(currentTime,true)},{text:player.name},name]}})
+                        player.sendMessage({translate:`translation.poke:birthdayAnnounce`,with:{rawtext:[PokeTimeGreeting(currentTime,player,undefined,true),{text:player.name},name]}})
                     }
                 }))
             }
         }))
     },600)
 }))
-
+function PFEHourTimeDownEvents() {
+    let currentTime = new Date(Date.now())
+    //Cassette Trader spawning
+    console.warn(`Attempting to spawn cassette trader`)
+    let allPlayers = world.getAllPlayers()
+    let randomPlayer = allPlayers.at(Math.abs(Math.round(Math.random() * (allPlayers.length-1))))
+    randomPlayer?.dimension.spawnEntity('poke:cassette_trader',randomPlayer.location).runCommand(`spreadplayers ~ ~ 30 40 @s ~10`)
+}
+function PFETimeValidation(){
+    let currentTime = new Date(Date.now())
+    if (currentTime.getMinutes() == 0){
+        PFEHourTimeDownEvents()
+    }else{
+        system.runTimeout(()=>{
+            PFETimeValidation()
+        },Math.abs(60 -new Date(Date.now()).getSeconds())*20)
+    }
+}
 //Custom Component Registry
 world.beforeEvents.worldInitialize.subscribe(data => {
-    let birthdayProperty = world.getDynamicProperty(`pfe:birthdays`)
-    if (typeof birthdayProperty != "string"){
-        world.setDynamicProperty(`pfe:birthdays`,JSON.stringify([{day:16,month:11,year:2005,style:"dev",name:`ItsMePok`,announce:true}]))
+    system.runTimeout(()=>{
+        PFETimeValidation()
+    },Math.abs(60 -new Date(Date.now()).getSeconds())*20)
+    let birthdayProperty = world.getDynamicProperty(`poke:birthdays`)
+    if (typeof birthdayProperty != "string")world.setDynamicProperty(`poke:birthdays`,`[]`)
+    if (typeof world.getDynamicProperty(`poke:customEvents`)!= "string"){
+        world.setDynamicProperty(`poke:customEvents`,'[]')
+        console.warn(`Custom events were invalid; resetting to default (Ignore if this world was just created) || Poke-Calendar`)
+    }else{
+        try {
+            JSON.parse(world.getDynamicProperty(`poke:customEvents`)?.toString()!)
+        }
+        catch{
+            console.warn(`Custom events were invalid; resetting to default || Poke-Calendar`)
+            world.setDynamicProperty(`poke:customEvents`,'[]')
+        }
     }
+    data.itemComponentRegistry.registerCustomComponent(
+        "poke:timeConfig", {
+            onUse(data){
+                PokeTimeConfigUIMainMenu(data.source)
+            }
+        }
+    )
     if (typeof world.getDynamicProperty(PFEBossEventConfigName) == "string"){
         //@ts-ignore
         let settings:PFEBossEventConfig = JSON.parse(world.getDynamicProperty(PFEBossEventConfigName))
@@ -183,6 +150,20 @@ world.beforeEvents.worldInitialize.subscribe(data => {
     )
     //Item Components
     data.itemComponentRegistry.registerCustomComponent(
+        `poke-pfe:identifier`, {
+            onUseOn(data){
+                if (data.source.typeId == MinecraftEntityTypes.Player){
+                    console.warn(`sent`)
+                    //@ts-ignore
+                    data.source.sendMessage({translate:`translation.poke-pfe:identifierMessage`,with:[data.block.typeId]})
+                }
+            }
+        }
+    )
+    data.itemComponentRegistry.registerCustomComponent(
+        `poke:boltbow`, new PFEBoltBowsComponent()
+    )
+    data.itemComponentRegistry.registerCustomComponent(
         "poke:boss_event", {onUse(data){
             if(PFEStartBossEvent() == 0){
                 data.source.sendMessage({translate:`translation.poke:bossEventNoSpawnError`})
@@ -191,7 +172,7 @@ world.beforeEvents.worldInitialize.subscribe(data => {
             };
             if(data.source.getGameMode() == GameMode.creative)return;
             //@ts-ignore
-            data.source.getComponent(EntityComponentTypes.Equippable).setEquipment(EquipmentSlot.Mainhand, PFEDecrementStack(data.itemStack!))
+            data.source.getComponent(EntityComponentTypes.Equippable).setEquipment(EquipmentSlot.Mainhand, PokeDecrementStack(data.itemStack!))
         }}
     )
     data.itemComponentRegistry.registerCustomComponent(
@@ -290,16 +271,7 @@ world.beforeEvents.worldInitialize.subscribe(data => {
     data.itemComponentRegistry.registerCustomComponent(
         "poke:normalMining", {
             onMineBlock(data){
-                if (data.source.typeId != "minecraft:player")return;
-                //@ts-ignore
-                if(data.source.getGameMode() == GameMode.creative)return;
-                const newItem = PFEDamageItemUB(data.itemStack!,undefined)
-                //@ts-ignore
-                data.source.getComponent(EntityComponentTypes.Equippable)!.setEquipment(EquipmentSlot.Mainhand, newItem)
-                if (!newItem) {
-                    //@ts-ignore
-                    data.source.playSound("random.break")
-                }
+                PokeDamageItemUB(data.itemStack!,undefined,data.source,EquipmentSlot.Mainhand)
                 return;
             }
         }
@@ -322,13 +294,7 @@ world.beforeEvents.worldInitialize.subscribe(data => {
                     data.source.playSound('random.bow')
                     projComp.owner = data.source;
                     projComp.shoot(angle);
-                if (data.source.getGameMode() == GameMode.creative) return
-                const newItem = PFEDamageItem(data.itemStack)
-                //@ts-ignore
-                data.source.getComponent(EntityComponentTypes.Equippable).setEquipment(EquipmentSlot.Mainhand, newItem)
-                if (!newItem) {
-                    data.source.playSound("random.break")
-                }
+                PokeDamageItemUB(data.itemStack,undefined,data.source,EquipmentSlot.Mainhand)
                 return;
             }
         }
@@ -402,13 +368,6 @@ world.beforeEvents.worldInitialize.subscribe(data => {
         }
     )
     data.itemComponentRegistry.registerCustomComponent(
-        "pfe:timeConfig", {
-            onUse(data){
-                PFETimeConfigUIMainMenu(data.source)
-            }
-        }
-    );
-    data.itemComponentRegistry.registerCustomComponent(
         "poke:haxelMining", new PFEHaxelMining()
     );
     data.itemComponentRegistry.registerCustomComponent(
@@ -443,7 +402,7 @@ world.beforeEvents.worldInitialize.subscribe(data => {
                 const cPlayers = data.source.dimension.getPlayers({excludeNames:[''+data.source.name]})
                 var cPlayersLength = cPlayers.length;
                 for (var i = cPlayersLength; i > 0; i--) {
-                    data.source.playAnimation('animation.humanoid.bow_and_arrow',{stopExpression: '!q.is_using_item', players:[cPlayers[i-1].name]})
+                    //data.source.playAnimation('animation.humanoid.bow_and_arrow',{stopExpression: '!q.is_using_item', players:[cPlayers[i-1].name]})
                 }
                 return;
             }
@@ -477,22 +436,22 @@ world.beforeEvents.worldInitialize.subscribe(data => {
                 var amount = data.itemStack.amount
                 //@ts-ignore
                 const equippableComponent:EntityEquippableComponent= data.source.getComponent(EntityComponentTypes.Equippable)
-                if(blockFace == 'North'){
+                if(blockFace == Direction.North){
                     var faceLocZ = faceLocZ +1.5
                 }
-                if(blockFace == 'South'){
+                if(blockFace == Direction.South){
                     var faceLocZ = faceLocZ -1.5
                 }
-                if(blockFace == 'East'){
+                if(blockFace == Direction.East){
                     var faceLocX = faceLocX -1.5
                 }
-                if(blockFace == 'West'){
+                if(blockFace == Direction.West){
                     var faceLocX = faceLocX +1.5
                 }
-                if(blockFace == 'Up'){
+                if(blockFace == Direction.Up){
                     var faceLocY = faceLocY -1.5
                 }
-                if(blockFace == 'Down'){
+                if(blockFace == Direction.Down){
                     var faceLocY = faceLocY +2
                 }
                 /**↓This exists because a bug is causing it to be inverted,
@@ -537,19 +496,14 @@ world.beforeEvents.worldInitialize.subscribe(data => {
                 if (data.itemStack===undefined)return;
                 const ItemTags = data.itemStack!.getTags().toString();
                 let Command = ItemTags.substring(ItemTags.indexOf('pfe:Command:'),ItemTags.indexOf(':pfeCommandEnd')).substring(12);//Command is in the tag of the item without the '/'
-                data.source.runCommand(''+Command)
+                data.source.runCommand(`${Command}`)
                 //@ts-ignore
                 const cooldownComp:ItemCooldownComponent=data.itemStack.getComponent('minecraft:cooldown')
                 if (cooldownComp!=undefined)cooldownComp.startCooldown(data.source);
-                //if (data.source.getGameMode() == 'creative') return; // <-- prevented items from being held down to continue using 
-                if (!data.itemStack.hasComponent('minecraft:durability')) {return;}
-                const newItem = PFEDamageItem(data.itemStack)
-                //@ts-ignore
-                const equippableComponent:EntityEquippableComponent= data.source.getComponent(EntityComponentTypes.Equippable)
-                equippableComponent.setEquipment(EquipmentSlot.Mainhand, newItem)
-                if (!newItem) {
-                    data.source.playSound("random.break")
+                if (data.itemStack.isStackable){
+                    return
                 }
+                PokeDamageItemUB(data.itemStack,undefined,data.source,EquipmentSlot.Mainhand)
                 return;
             }
         }
@@ -558,9 +512,6 @@ world.beforeEvents.worldInitialize.subscribe(data => {
         "poke:cc_zooka", {
             onUse(data:ItemComponentUseEvent){
                 if (data.itemStack === undefined)return;
-                //@ts-ignore
-                const equippableComponent:EntityEquippableComponent= data.source.getComponent(EntityComponentTypes.Equippable)
-                if (equippableComponent === undefined)return;
                 const vierDirection= data.source.getViewDirection();
                 const location= data.source.getHeadLocation();
                 const id = data.itemStack.getTags()
@@ -578,32 +529,35 @@ world.beforeEvents.worldInitialize.subscribe(data => {
                 }
                 data.source.runCommand(''+id)
                 cooldownComp.startCooldown(data.source)
-                const newItem = PFEDamageItem(data.itemStack)
-                equippableComponent.setEquipment(EquipmentSlot.Mainhand, newItem)
-                if (!newItem) {
-                    data.source.playSound("random.break")
-                }
+                PokeDamageItemUB(data.itemStack,undefined,data.source,EquipmentSlot.Mainhand)
                 return;
             }
         }
     );
     data.itemComponentRegistry.registerCustomComponent(
-        "poke:cc_upgrader", {
+        "poke-pfe:upgrader", {
             onUseOn(data:ItemComponentUseOnEvent){
-                //@ts-ignore
-                const player:Player = data.source
-                //@ts-ignore
-                const equippableComponent:EntityEquippableComponent= data.source.getComponent(EntityComponentTypes.Equippable)
-                const block_location = `${data.block.x} ${data.block.y} ${data.block.z}`
-                const itemIds = data.itemStack.typeId
-                const itemId = itemIds.substring(5)
-                data.source.runCommandAsync(`execute positioned ${block_location} run function poke/pfe/${itemId}`)
-                if (player.getGameMode() == GameMode.creative) return;
-                const newItem = PFEDamageItem(data.itemStack)
-                equippableComponent.setEquipment(EquipmentSlot.Mainhand, newItem)
-                if (!newItem) {
-                    player.playSound("random.break")
+                interface PFEUpgraderComponentInfo {
+                    canUpgrade:string[]
                 }
+                /*
+                \"\",
+
+                poke-pfe:UpgraderInfo:{\"canUpgrade\":[\"poke:carved_melon\",\"poke:gilded_carved_melon\",\"minecraft:pumpkin\",\"minecraft:melon_block\",\"poke:gilded_melon\",\"minecraft:brown_mushroom_block",\"minecraft:red_mushroom_block\"]}:poke-pfe:UpgraderInfoEnd
+                */
+                let tagData = data.itemStack.getTags().toString()
+                let componentInfo:PFEUpgraderComponentInfo = JSON.parse(tagData.substring(tagData.indexOf(`poke-pfe:UpgraderInfo:`),tagData.lastIndexOf(`:poke-pfe:UpgraderInfoEnd`)).substring(22))
+                console.warn(JSON.stringify(componentInfo))
+                let multi = 1
+                if (componentInfo.canUpgrade.includes(data.block.typeId)){
+                    const block_location = `${data.block.x} ${data.block.y} ${data.block.z}`
+                    const itemIds = data.itemStack.typeId
+                    const itemId = itemIds.substring(5)
+                    data.source.runCommandAsync(`execute positioned ${block_location} run function poke/pfe/${itemId}`)
+                }else{
+                    multi = 0
+                }
+                PokeDamageItemUB(data.itemStack,multi,data.source,EquipmentSlot.Mainhand)
                 return;
             }
         }
@@ -1304,6 +1258,3 @@ world.beforeEvents.worldInitialize.subscribe(data => {
     );
     return;
 })
-export {
-    PFEDamageItemUB
-}

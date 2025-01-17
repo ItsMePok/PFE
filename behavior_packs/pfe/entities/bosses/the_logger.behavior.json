@@ -26,6 +26,10 @@
 			}
 		},
 		"components": {
+			"minecraft:variable_max_auto_step": {
+				"base_value": 3.375,
+				"jump_prevented_value": 5
+			},
 			"minecraft:behavior.hurt_by_target": {
 				"priority": 1
 			},

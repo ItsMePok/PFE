@@ -4,7 +4,7 @@
 		"description": {
 			"identifier": "poke:duck_egg",
 			"menu_category": {
-				"category": "equipment"
+				"category": "nature"
 			}
 		},
 		"components": {

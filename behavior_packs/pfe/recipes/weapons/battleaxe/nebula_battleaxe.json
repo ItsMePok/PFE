@@ -20,15 +20,15 @@
 				"item": "poke:nebula_block"
 			},
 			{
-				"item": "poke:void_battleaxe"
+				"item": "poke:astral_battleaxe"
 			},
 			{
-				"item": "poke:galaxy_battleaxe"
+				"item": "poke:death_battleaxe"
 			}
 		],
 		"key": {
 			"V": {
-				"item": "poke:void_battleaxe"
+				"item": "poke:death_battleaxe"
 			},
 			"D": {
 				"item": "poke:nebula_block"
@@ -40,7 +40,7 @@
 				"item": "poke:platinum_upgrade_core"
 			},
 			"G": {
-				"item": "poke:galaxy_battleaxe"
+				"item": "poke:astral_battleaxe"
 			}
 		},
 		"result": [

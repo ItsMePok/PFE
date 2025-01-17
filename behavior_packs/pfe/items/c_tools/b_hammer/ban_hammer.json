@@ -9,6 +9,7 @@
 			}
 		},
 		"components": {
+			"minecraft:rarity":"rare",
 			"minecraft:tags": {"tags": [
 				"pfe:HaxelMining:{\"radius\":{\"x\":5,\"y\":7,\"z\":5},\"canBreakLiquids\":true,\"canBreakBedrock\":true}:pfeHaxelMiningEnd",
 				"minecraft:is_pickaxe"
@@ -18,7 +19,7 @@
 				"poke:hitEffects"
 			],
 			"minecraft:use_modifiers": {
-			  "use_duration": 0,
+			  "use_duration": 0.1,
 			  "movement_modifier": 1
 			},
 			"minecraft:cooldown": {
@@ -35,7 +36,6 @@
 			},
 			"minecraft:should_despawn": false,
 			"minecraft:can_destroy_in_creative": false,
-			"minecraft:hover_text_color":{"value":"gold"},
 			"minecraft:digger": {
 				"use_efficiency": true,
 				"destroy_speeds": [

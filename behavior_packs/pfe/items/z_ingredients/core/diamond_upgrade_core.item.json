@@ -8,6 +8,7 @@
 			}
 		},
 		"components": {
+			"minecraft:rarity":"common",
 			"minecraft:icon":"poke_diamond_upgrade_core"
 		}
 	}

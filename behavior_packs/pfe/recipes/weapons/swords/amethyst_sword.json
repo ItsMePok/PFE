@@ -4,18 +4,18 @@
 		"description": {
 			"identifier": "poke:amethyst_sword"
 		},
+		"assume_symmetry": true,
 		"tags": [
 			"crafting_table"
 		],
 		"pattern": [
-			" Y ",
-			" Y ",
-			" X "
+			"Y",
+			"U",
+			"X"
 		],
-        "unlock": [
-			{
-				"item": "amethyst_shard"
-			}
+		"unlock": [
+			{"item": "netherite_sword"},
+			{"item": "amethyst_shard"}
 		],
 		"key": {
 			"Y": {
@@ -23,6 +23,9 @@
 			},
 			"X": {
 				"item": "netherite_sword"
+			},
+			"U": {
+				"item": "poke:upgrade_core"
 			}
 		},
 		"result": {

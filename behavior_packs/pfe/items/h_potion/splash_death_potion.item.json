@@ -4,7 +4,8 @@
 		"description": {
 			"identifier": "poke:splash_death_potion",
 			"menu_category": {
-				"category": "none"
+				"category": "equipment",
+				"group": "itemGroup.name.splashPotion"
 			}
 		},
 		"components": {
@@ -13,7 +14,7 @@
 			"minecraft:use_animation": "drink",
 			"minecraft:durability": {"max_durability": 0},
 			"minecraft:tags": {"tags": [
-				"pfe:Command:kill @s:pfeCommandEnd"
+				"pfe:Command:function poke/pfe/splash_death_potion:pfeCommandEnd"
 			]},
 			"minecraft:custom_components":[
 				"poke:cc_on_use",

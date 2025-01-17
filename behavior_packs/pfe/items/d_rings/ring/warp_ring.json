@@ -1,8 +1,8 @@
-{
+{//Warp Ring
 	"format_version": "1.21.50",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:ring_3",//Warp Ring
+			"identifier": "poke:ring_3",
 			"menu_category": {
 				"category": "equipment"
 			}

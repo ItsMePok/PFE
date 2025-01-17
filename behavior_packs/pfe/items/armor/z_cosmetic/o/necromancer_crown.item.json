@@ -16,7 +16,7 @@
 				}
 			},
 			"minecraft:wearable": {
-				"slot": "slot.armor.head"
+				"slot": "slot.weapon.offhand"
 			}
 		}
 	}

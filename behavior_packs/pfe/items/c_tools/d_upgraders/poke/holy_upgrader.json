@@ -18,13 +18,14 @@
 					"min": 60
 				}
 			},
-			"minecraft:cooldown": {
-				"category": "poke:upgrader_use",
-				"duration": 0.2
-			},
 			"minecraft:custom_components": [
-				"poke:cc_upgrader"
-			]
+				"poke-pfe:upgrader"
+			],
+			"minecraft:tags": {
+				"tags": [
+					"poke-pfe:UpgraderInfo:{\"canUpgrade\":[\"poke:holy_ore\",\"poke:deepslate_holy_ore\",\"poke:end_holy_ore\"]}:poke-pfe:UpgraderInfoEnd"
+				]
+			}
 		}
 	}
 }

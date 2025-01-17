@@ -1,0 +1,22 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "poke:void_boltbow"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": [
+			{"item":"poke:void_crossbow"},
+			{"item":"arrow"}
+		],
+		"ingredients": [
+			{"item":"poke:void_crossbow"},
+			{"item":"poke:upgrade_core"}
+		],
+		"result": {
+			"item": "poke:void_boltbow"
+		}
+	}
+}

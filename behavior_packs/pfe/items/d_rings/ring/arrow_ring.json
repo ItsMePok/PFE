@@ -41,7 +41,7 @@
 			]},
 			"minecraft:use_modifiers": {
 				"use_duration": 0,
-				"movement_modifier": 0.75
+				"movement_modifier": 1
 			}
 		}
 	}

@@ -12,6 +12,24 @@
 		"poke_cobbled_shadowstone":{"textures":"textures/blocks/stone/poke_cobbled_shadowstone"},
 		"poke_magic_8_ball":{"textures":"textures/blocks/misc/poke_8_ball"},
 		"poke_spell_crafter":{"textures":"textures/blocks/crafting/poke_spell_crafter"},
+		"poke_block_breaker_side":{
+			"textures":[
+				{"path":"textures/poke/pfe/block_breaker_side","overlay_color":"#610310"},
+				{"path":"textures/poke/pfe/block_breaker_side","overlay_color":"#ce0c0c"}
+			]
+		},
+		"poke_block_breaker_top":{
+			"textures":[
+				{"path":"textures/poke/pfe/block_breaker_top","overlay_color":"#610310"},
+				{"path":"textures/poke/pfe/block_breaker_top","overlay_color":"#ce0c0c"}
+			]
+		},
+		"poke_block_breaker_bottom":{
+			"textures":[
+				{"path":"textures/poke/pfe/block_breaker_bottom","overlay_color":"#610310"},
+				{"path":"textures/poke/pfe/block_breaker_bottom","overlay_color":"#ce0c0c"}
+			]
+		},
 		"poke_duster_side_alt":{
 			"textures":[
 				{"path":"textures/blocks/automation/poke_duster_side_alt","overlay_color":"#610310"},
@@ -148,14 +166,14 @@
 				{"path":"textures/blocks/automation/poke_block_breaker_side90","overlay_color":"#ce0c0c"}
 			]
 		},
-		"poke_block_breaker_side":{
+		"poke_cali_block_breaker_side":{
 			"textures":[
 				{"path":"textures/blocks/automation/poke_block_breaker_side","overlay_color":"#610310"},
 				{"path":"textures/blocks/automation/poke_block_breaker_side","overlay_color":"#ce0c0c"}
 			]
 		},
-		"poke_block_breaker_bottom":{"textures":"textures/blocks/automation/poke_block_breaker_bottom"},
-		"poke_block_breaker_top":{"textures":"textures/blocks/automation/poke_block_breaker_top"},
+		"poke_cali_block_breaker_bottom":{"textures":"textures/blocks/automation/poke_block_breaker_bottom"},
+		"poke_cali_block_breaker_top":{"textures":"textures/blocks/automation/poke_block_breaker_top"},
 		"poke_block_breaker_front":{
 			"textures":[
 				{"path":"textures/blocks/automation/poke_block_breaker_front","overlay_color":"#610310"},
@@ -586,7 +604,6 @@
 		"poke_holy_bricks":{"textures":{"path":"textures/blocks/poke_bricks","overlay_color": "#686862"}},
 		"poke_red_present":{"textures":"textures/blocks/pfe_present/0"},
 		"poke_apple_crate":{"textures":"textures/blocks/crate/poke_apple"},
-		"poke_block_breaker":{"textures":"textures/blocks/automation/poke_block_breaker"},
 		"poke_medic_block":{"textures":"textures/blocks/ore_block/poke_medic_block"},
 		"poke_death_block":{"textures":"textures/blocks/ore_block/poke_death_block"},
 		"poke_limestone_tombstone":{"textures":"textures/blocks/misc/poke_limestone_tombstone"},
