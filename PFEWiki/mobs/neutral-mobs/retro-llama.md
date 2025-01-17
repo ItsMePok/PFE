@@ -1,10 +1,10 @@
 # Retro Llama
 
+<div data-full-width="true"><figure><img src="https://github.com/user-attachments/assets/ec40b650-009e-4400-b208-35a2107a284f" alt=""><figcaption></figcaption></figure></div>
+
 {% hint style="warning" %}
 Due to an issue: the Retro llama will be unable to render other carpet colors
 {% endhint %}
-
-
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line">Identifier: **poke:retro\_llama** <a href="#identifier" id="identifier"></a>
 
@@ -33,8 +33,6 @@ The Retro Llama is a variant of the <img src="https://minecraft.wiki/images/thum
 {% hint style="info" %}
 Must be tamed to breed
 {% endhint %}
-
-##
 
 ***
 

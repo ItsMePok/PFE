@@ -1,6 +1,6 @@
 # Present Pottery Sherd
 
-
+<figure><img src="https://github.com/user-attachments/assets/b5d48316-3453-4ba5-a1d6-bc7a1db5188e" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:pfe-present\_pottery\_sherd** <a href="#identifier" id="identifier"></a>
 

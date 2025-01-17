@@ -6,7 +6,7 @@
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:boss\_event\_config** <a href="#identifier" id="identifier"></a>
 
-## [Interact Ability](../../misc-other-info/interact-abilities.md): Opens the Boss Event Config UI
+## [Interact Ability](../misc-other-info/interact-abilities.md): Opens the Boss Event Config UI
 
 ## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 64
 
@@ -29,8 +29,6 @@ This Menu can be accessed with the Boss Event Config Menu Item even without oper
 
 It is planned for this will require operator if/when that functionality is no longer experimental
 {% endhint %}
-
-
 
 ### Menus:
 

@@ -30,9 +30,19 @@ Items:
 
 ## Menu Options:
 
+
+
+### Main Menu:
+
 {% stepper %}
 {% step %}
 ### Change Timezone
+
+{% hint style="info" %}
+this will only appear if you are yet to set it
+{% endhint %}
+
+
 
 Time is based on your system's time
 
@@ -40,13 +50,17 @@ By default, the timezone is set to UTC
 {% endstep %}
 
 {% step %}
-### Change Birthday
+### Change Birthday (if not set yet)
+
+{% hint style="info" %}
+his will only appear if you are yet to set it
+{% endhint %}
 
 ### Options:
 
 * Dropdown: Day
 * Dropdown: Month
-* Toggle: inform others that it's your birthday when they join on that day?
+* Toggle: Inform others that it's your birthday when they join on that day?
 
 {% hint style="info" %}
 Enabling the toggle will send a message to player when they join on your birthday saying:
@@ -58,11 +72,55 @@ Good Morning (PLAYERNAME) it's (BIRTHDAY PLAYERNAME)'s Birthday!
 {% endstep %}
 
 {% step %}
-### Claim Gift&#x20;
+### [Upcoming Events](calendar.md#upcoming-events-1)
+{% endstep %}
+
+{% step %}
+### [Additional Options](calendar.md#additional-options-1)
+{% endstep %}
+
+{% step %}
+### Claim Gift
 
 {% hint style="info" %}
 This will only appear if you have a gift available to claim
 {% endhint %}
+{% endstep %}
+{% endstepper %}
+
+***
+
+### Upcoming Events
+
+{% stepper %}
+{% step %}
+###
+
+
+{% endstep %}
+
+{% step %}
+###
+
+
+{% endstep %}
+{% endstepper %}
+
+***
+
+### Additional Options:
+
+{% stepper %}
+{% step %}
+###
+
+
+{% endstep %}
+
+{% step %}
+###
+
+
 {% endstep %}
 {% endstepper %}
 

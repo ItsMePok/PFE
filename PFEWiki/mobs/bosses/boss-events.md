@@ -1,7 +1,7 @@
 # Boss Events
 
 {% hint style="info" %}
-This Is the default config; this can be modified in the <img src="https://github.com/user-attachments/assets/a7627a43-c3d4-4924-8a95-c87394c7d164" alt="" data-size="line"> [Boss Event Config](../../items/misc/boss-event-config-menu.md)
+This Is the default config; this can be modified in the <img src="https://github.com/user-attachments/assets/a7627a43-c3d4-4924-8a95-c87394c7d164" alt="" data-size="line"> [Boss Event Config](../../configs-uis-events/boss-event-config-menu.md)
 {% endhint %}
 
 ## Starting

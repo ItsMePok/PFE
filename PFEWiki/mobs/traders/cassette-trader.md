@@ -24,4 +24,4 @@ The Random Cassette excludes the following:
 
 * Spawns after 3hrs (216000 ticks) of playtime (**in a single session**)
 * Spawns around a random player
-* Spawns with 2 [Retro llamas](https://minecraft.wiki/w/Trader_Llama)
+* Spawns with 2 [Retro Llamas](../neutral-mobs/retro-llama.md)

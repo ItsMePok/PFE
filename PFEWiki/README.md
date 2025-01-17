@@ -1,7 +1,7 @@
 # Home
 
 {% hint style="info" %}
-#### This Wiki assumes the PFE Version(s): [v1.2.4.md](changelog-history/full-releases/v1.2.4.md "mention")
+#### This Wiki assumes the PFE Version: [v1.2.6.md](changelog-history/full-releases/v1.2.6.md "mention")
 {% endhint %}
 
 ### Welcome to the wiki for PFE!

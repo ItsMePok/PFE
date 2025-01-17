@@ -1,6 +1,6 @@
 # Tree Pottery Sherd
 
-
+<figure><img src="https://github.com/user-attachments/assets/8a675011-fce8-4c65-b162-4c79a294ec79" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:pfe-tree\_pottery\_sherd** <a href="#identifier" id="identifier"></a>
 

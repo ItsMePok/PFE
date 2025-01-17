@@ -1,6 +1,6 @@
 # Snowflake Pottery Sherd
 
-
+<figure><img src="https://github.com/user-attachments/assets/85dafcd5-7833-4793-9c7a-9ddd089fc4b5" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:pfe-snowflake\_pottery\_sherd** <a href="#identifier" id="identifier"></a>
 
