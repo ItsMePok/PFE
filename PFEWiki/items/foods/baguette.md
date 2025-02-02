@@ -51,16 +51,14 @@
 {% endtab %}
 
 {% tab title="Mob Drop" %}
-### Dropped from the Demonic Allay
+<figure><img src="https://github.com/user-attachments/assets/20dc2cb0-8d87-4157-8db3-bae28ef15b64" alt=""><figcaption><p>Dropped by the <a href="../../mobs/hostile-mobs/demonic-allay.md">Demonic Allay</a></p></figcaption></figure>
+
+| Item                                                                                                                                  | Amount | Chance of Holding |
+| ------------------------------------------------------------------------------------------------------------------------------------- | ------ | ----------------- |
+| <img src="https://github.com/user-attachments/assets/faa23787-87a1-4aee-8d45-01ec89b1e3d2" alt="Baguette." data-size="line"> Baguette | 1      | 1/235             |
 
 {% hint style="info" %}
-The Demonic Allay will be holding this item if it can drop it
+The Demonic Allay needs to spawn holding this item for it to drop
 {% endhint %}
-
-| Item                                                                                                                                        | Amount | Weight |
-| ------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------ |
-| <img src="https://github.com/user-attachments/assets/faa23787-87a1-4aee-8d45-01ec89b1e3d2" alt="" data-size="line"> [Baguette](baguette.md) | 1      | 1      |
 {% endtab %}
 {% endtabs %}
-
-.

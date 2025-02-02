@@ -8,8 +8,6 @@ This page assumes that you did not remove the glyphF0 file (see: [vanilla-files-
 ***
 {% endhint %}
 
-e
-
 {% hint style="info" %}
 The Unicode character can be copy/pasted into Minecraft for that emoji to show up
 
@@ -96,4 +94,4 @@ More info about emojis can be found here: [https://wiki.bedrock.dev/concepts/emo
 | The Logger                                                    | <img src="https://github.com/user-attachments/assets/f6faa954-9386-48c6-94e1-2adcdd984d5b" alt="" data-size="line">                        |                  | 0xf04b |
 | [Soul Blaze](../mobs/hostile-mobs/soul-blaze.md)              | <img src="https://github.com/user-attachments/assets/006c02eb-0cef-4288-a074-ad3a1771f1d7" alt="" data-size="line">                        |                  | 0xf04c |
 | [Cassette Trader](../mobs/traders/cassette-trader.md)         | <h3><img src="https://github.com/user-attachments/assets/de1365f6-2eac-498b-98d7-e391fb69cc00" alt="" data-size="line"></h3>               |                  | 0xf04d |
-| Retro Llama                                                   |                                                                                                                                            |                  | 0xf04e |
+| [Retro Llama](../mobs/neutral-mobs/retro-llama.md)            | <img src="https://github.com/user-attachments/assets/f589f872-14e5-4115-bc6a-f907197bde17" alt="Retro Llama." data-size="line">            |                  | 0xf04e |

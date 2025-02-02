@@ -45,7 +45,7 @@
 Items:
 
 * <img src="https://github.com/user-attachments/assets/3e6cd2a4-3434-4f70-8255-9cd357bfb920" alt="Holy Ingot" data-size="line">Holy Ingot
-* [<img src="https://github.com/user-attachments/assets/a3414dac-2ab0-4f48-9401-e1724dc29e06" alt="Onyx Shaft" data-size="line">Onyx Shaft](../../items/crafting-components/onyx-shaft.md)
+* [<img src="https://github.com/user-attachments/assets/a3414dac-2ab0-4f48-9401-e1724dc29e06" alt="Onyx Shaft" data-size="line">Onyx Shaft](../../items/sticks/onyx-shaft.md)
 {% endtab %}
 {% endtabs %}
 

@@ -45,7 +45,7 @@
 Items:
 
 * <img src="https://github.com/user-attachments/assets/2332c89f-38d6-4a08-944a-9421758259aa" alt="Demonic Ingot" data-size="line">Demonic Ingot
-* [<img src="https://github.com/user-attachments/assets/a3414dac-2ab0-4f48-9401-e1724dc29e06" alt="Onyx Shaft" data-size="line">Onyx Shaft](../../items/crafting-components/onyx-shaft.md)
+* [<img src="https://github.com/user-attachments/assets/a3414dac-2ab0-4f48-9401-e1724dc29e06" alt="Onyx Shaft" data-size="line">Onyx Shaft](../../items/sticks/onyx-shaft.md)
 {% endtab %}
 {% endtabs %}
 

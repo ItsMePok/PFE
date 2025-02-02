@@ -10,7 +10,7 @@ This addon is based off a removed Minecraft feature, more info can be found here
 
 ### GitHub:
 
-
+{% embed url="https://github.com/ItsMePok/Copper-Horn/releases/tag/1.0" %}
 
 ### Curseforge:
 

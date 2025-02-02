@@ -45,7 +45,7 @@
 Items:
 
 * <img src="https://github.com/user-attachments/assets/e6e26a7c-8964-439e-879d-144557e277d7" alt="Hellish Ingot" data-size="line">Hellish Ingot
-* [<img src="https://github.com/user-attachments/assets/a3414dac-2ab0-4f48-9401-e1724dc29e06" alt="Onyx Shaft" data-size="line">Onyx Shaft](../../items/crafting-components/onyx-shaft.md)
+* [<img src="https://github.com/user-attachments/assets/a3414dac-2ab0-4f48-9401-e1724dc29e06" alt="Onyx Shaft" data-size="line">Onyx Shaft](../../items/sticks/onyx-shaft.md)
 {% endtab %}
 {% endtabs %}
 

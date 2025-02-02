@@ -4,7 +4,7 @@
 
 * Interacting with them will do different things based on the ring
 
-(below is here until pages are done but can also be found in [FAQ](../faq.md))
+(below is here until pages are done but can also be found in [FAQ](../../faq.md))
 
 ## What do the Rings do?
 
