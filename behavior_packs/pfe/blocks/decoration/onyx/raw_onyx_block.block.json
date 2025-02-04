@@ -1,0 +1,26 @@
+  {
+    "format_version": "1.21.60",
+    "minecraft:block": {
+      "description": {
+        "identifier": "poke:raw_onyx_block"
+      },
+      "components": {
+        "minecraft:redstone_conductivity": {
+          "redstone_conductor": true,
+          "allows_wire_to_step_down": true
+        },
+        "minecraft:destructible_by_mining": {
+          "seconds_to_destroy": 1
+        },
+        "minecraft:map_color": "#343552",
+        "tag:pfe": {},
+        "tag:metal": {},
+        "tag:minecraft:metal": {},
+        "tag:stone_pick_diggable":{},
+			"tag:minecraft:is_pickaxe_item_destructible":{},
+        "minecraft:destructible_by_explosion": {
+          "explosion_resistance": 30
+        }
+      }
+    }
+  }

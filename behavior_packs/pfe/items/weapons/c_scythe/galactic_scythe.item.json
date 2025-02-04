@@ -1,0 +1,48 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:galactic_scythe",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:custom_components":[
+				"poke:normalMining",
+				"poke:hitEffects"
+			],
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:durability": {
+				"max_durability": 3500
+			},
+			"minecraft:damage": {"value": 23},
+			"minecraft:icon":"poke_galactic_scythe",
+			"minecraft:enchantable": {
+				"value": 140,
+				"slot": "sword"
+			},
+			"minecraft:can_destroy_in_creative": false,
+			"minecraft:digger": {
+				"destroy_speeds": [
+					{"block":"minecraft:web","speed": 60},
+					{"block":"minecraft:bamboo_sapling","speed": 60},
+					{"block":"minecraft:bamboo","speed": 60}
+				]
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"poke:repair_core"
+						],
+						"repair_amount": "query.max_durability"
+					},
+					{"items":["poke:galaxy_ingot"],"repair_amount": "query.max_durability*0.25"},
+					{"items":["poke:galaxy_nugget"],"repair_amount": "query.max_durability*0.028"}
+				]
+			}
+		}
+	}
+}

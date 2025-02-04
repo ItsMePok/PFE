@@ -10,7 +10,8 @@
 				"default":"textures/entity/traders/pfe_scrapper"
 			},
 			"geometry":{
-				"default":"geometry.poke_pfe.scrapper"
+				"default":"geometry.poke_pfe.scrapper",
+				"no_cosmetic":"geometry.poke_pfe.scrapper_noCosmetic"
 			},
 			"animations":{
 				"general":"animation.poke_pfe.shopkeeper.general",
@@ -25,7 +26,7 @@
 					"move":"controller.animation.poke_pfe.shopkeeper.move"
 				}
 			],
-			"render_controllers":["controller.render.poke_pfe.default"],
+			"render_controllers":["controller.render.poke_pfe.trader"],
 			"spawn_egg":{
 				"texture":"poke_spawn_scrapper"
 			},

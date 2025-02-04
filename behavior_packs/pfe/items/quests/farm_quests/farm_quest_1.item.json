@@ -1,0 +1,26 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:farm_quest_1"
+		},
+		"components": {
+			"minecraft:icon":"poke_farm_quest",
+			"minecraft:tags": {"tags": [
+				"pfe:Command:function poke/pfe/q_info_farm_1:pfeCommandEnd"
+			]},
+			"minecraft:custom_components":[
+				"poke:cc_on_use",
+				"poke:normalMining"
+			],
+			"minecraft:use_modifiers": {
+				"use_duration": 0,
+				"movement_modifier": 1
+			},
+			"minecraft:cooldown":{
+				"category": "poke:quest",
+				"duration": 0.75
+			}
+		}
+	}
+}

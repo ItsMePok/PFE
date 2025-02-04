@@ -1,0 +1,18 @@
+{
+	"format_version": "1.18.0",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "poke:onyx_ore.feature"
+		},
+		"count": 9,
+		"replace_rules": [
+			{
+				"places_block": "poke:onyx",//Onyx Ore
+				"may_replace": [
+					"minecraft:deepslate",
+					"minecraft:tuff"
+				]
+			}
+		]
+	}
+}

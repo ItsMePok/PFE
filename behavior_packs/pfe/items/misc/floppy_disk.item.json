@@ -1,0 +1,15 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:floppy_disk",
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"components": {
+			"minecraft:icon":"poke_floppy_disk",
+			"minecraft:rarity":"epic"
+		}
+	}
+}

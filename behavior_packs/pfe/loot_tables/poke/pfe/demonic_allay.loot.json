@@ -1,0 +1,157 @@
+{
+	"pools": [
+		{
+			// Total Weight: 235
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "poke:hellish_blade",
+					"functions": [
+						{
+							"function": "enchant_randomly",
+							"treasure": true
+						}
+					],
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "poke:hellish_blade",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "poke:demonic_ingot",
+					"weight": 20
+				},
+				{
+					"type": "item",
+					"name": "poke:demonic_nugget",
+					"weight": 20
+				},
+				{
+					"type": "item",
+					"name": "poke:hellish_ingot",
+					"weight": 20
+				},
+				{
+					"type": "item",
+					"name": "poke:hellish_nugget",
+					"weight": 20
+				},
+				{
+					"type": "item",
+					"name": "minecraft:golden_sword",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "minecraft:stone_sword",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "minecraft:gold_ingot",
+					"weight": 20
+				},
+				{
+					"type": "item",
+					"name": "minecraft:basalt",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "minecraft:netherrack",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "minecraft:soul_sand",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "minecraft:soul_soil",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "minecraft:quartz",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "minecraft:gold_nugget",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "poke:raw_onyx",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "poke:raw_shade",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "poke:raw_hellish",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "poke:raw_demonic",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "minecraft:nether_brick",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "minecraft:netherbrick",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "minecraft:leather",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "minecraft:ender_pearl",
+					"weight": 3
+				},
+				{
+					"type": "item",
+					"name": "minecraft:blaze_powder",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "poke:baguette",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "poke:warped_sporeshroom_stew",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "poke:crimson_sporeshroom_stew",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "minecraft:bowl",
+					"weight": 1
+				},
+				{"type": "empty","weight": 50}
+			]
+		}
+	]
+}

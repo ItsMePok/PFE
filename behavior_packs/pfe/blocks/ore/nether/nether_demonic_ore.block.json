@@ -1,0 +1,30 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:block": {
+		"description": {
+			"identifier": "poke:nether_demonic_ore",
+			"menu_category": {
+				"category": "nature"
+			}
+		},
+		"components": {
+			"minecraft:redstone_conductivity": {
+				"redstone_conductor": true,
+				"allows_wire_to_step_down": true
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 1.25//Netherrack
+			},
+			"minecraft:map_color": "#2c1919",
+			"tag:pfe": {},
+			"tag:metal": {},
+			"tag:minecraft:metal": {},
+			"tag:stone_pick_diggable":{},
+			"tag:minecraft:is_pickaxe_item_destructible":{},
+			"minecraft:loot": "loot_tables/poke/pfe/demonic_ore.loot.json",
+			"minecraft:custom_components":[
+				"poke:fortune"
+			]
+		}
+	}
+}

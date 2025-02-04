@@ -1,0 +1,20 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:pfe-present_pottery_sherd",
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"components": {
+			"minecraft:icon":"poke_present_pottery_sherd",
+			"minecraft:tags":{
+				"tags":[
+					"minecraft:decorated_pot_sherds"
+				]
+			},
+			"minecraft:rarity":"uncommon"
+		}
+	}
+}

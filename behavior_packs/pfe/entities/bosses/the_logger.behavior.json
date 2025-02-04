@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.50",
+	"format_version": "1.21.60",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:the_logger",
@@ -67,7 +67,7 @@
 				"value": 1
 			},
 			"minecraft:loot":{
-				"table": "loot_tables/poke/pfe/logger.json"
+				"table": "loot_tables/poke/pfe/logger.loot.json"
 			},
 			"minecraft:physics": {
 				"has_gravity": true,

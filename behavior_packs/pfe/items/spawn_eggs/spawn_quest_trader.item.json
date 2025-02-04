@@ -1,0 +1,24 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:spawn_quest_trader",
+			"menu_category": {
+				"category": "nature",
+				"group": "minecraft:itemGroup.name.mobEgg"
+			}
+		},
+		"components": {
+			"minecraft:max_stack_size": 64,
+			"minecraft:icon":"poke_spawn_quest_trader",
+			"minecraft:custom_components":[
+				"poke:cc_spawnEgg"
+			],
+			"minecraft:tags":{
+				"tags":[
+					"poke:quest_trader"
+				]
+			}
+		}
+	}
+}

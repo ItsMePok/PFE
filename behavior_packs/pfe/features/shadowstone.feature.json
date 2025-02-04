@@ -1,0 +1,17 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "poke:shadowstone.feature"
+		},
+		"count": 50,
+		"replace_rules": [
+			{
+				"places_block":"poke:shadowstone",
+				"may_replace": [
+					"minecraft:end_stone"
+				]
+			}
+		]
+	}
+}

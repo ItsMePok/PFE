@@ -1,0 +1,15 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:item":{
+		"description":{
+			"identifier":"poke:nebula_core",
+			"menu_category":{
+				"category":"items"
+			}
+		},
+		"components":{
+			"minecraft:icon":"poke_nebula_core",
+			"minecraft:rarity":"epic"
+		}
+	}
+}

@@ -1,0 +1,41 @@
+{
+	"format_version": "1.21.10",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "poke:grove_rock.feature_rule",
+			"places_feature": "poke:grove_rock.feature"
+		},
+		"conditions": {
+			"placement_pass": "first_pass",
+			"minecraft:biome_filter": [
+				{
+					"any_of": [
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "cherry_grove"
+						}
+					]
+				}
+			]
+		},
+		"distribution": {
+			"iterations": 1,
+			"x": {
+				"distribution": "uniform",
+				"extent": [
+					0,
+					140
+				]
+			},
+			"y": "query.heightmap(v.worldx, v.worldz)", //Generates the feature on the highest block on the column
+			"z": {
+				"distribution": "uniform",
+				"extent": [
+					0,
+					140
+				]
+			}
+		}
+	}
+}

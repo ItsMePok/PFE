@@ -1,0 +1,26 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:craft_quest_2"
+		},
+		"components": {
+			"minecraft:icon":"poke_craft_quest",
+			"minecraft:tags": {"tags": [
+				"pfe:Command:function poke/pfe/q_info_craft_2:pfeCommandEnd"
+			]},
+			"minecraft:custom_components":[
+				"poke:cc_on_use",
+				"poke:normalMining"
+			],
+			"minecraft:use_modifiers": {
+				"use_duration": 0,
+				"movement_modifier": 1
+			},
+			"minecraft:cooldown":{
+				"category": "poke:quest",
+				"duration": 0.75
+			}
+		}
+	}
+}

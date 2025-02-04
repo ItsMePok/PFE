@@ -1,0 +1,14 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:structure_template_feature": {
+		"description": {
+			"identifier": "poke:abandoned_swampsite.feature"
+		},
+		"structure_name": "poke:abandoned_swampsite",
+		"adjustment_radius": 16,
+		"facing_direction": "random",
+		"constraints": {
+			"grounded": {}
+		}
+	}
+}

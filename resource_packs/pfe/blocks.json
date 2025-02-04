@@ -1,5 +1,5 @@
 {
-"format_version":[1,1,0],
+"format_version":"1.21.10",
 //Fun :3
 "poke:magic_8_ball":{"sound":"calcite"},
 "poke:cobalt_golem_block":{"sound":"copper","textures":"poke_cobalt_golem_block"},

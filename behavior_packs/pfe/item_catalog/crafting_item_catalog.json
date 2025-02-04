@@ -7,6 +7,30 @@
         "groups": [
           {
             "group_identifier": {
+              "name": "poke:itemGroup.name.oreBlock",
+              "icon": "poke:cobalt_block"
+            },
+            "items": [
+              "poke:hellish_block",
+              "poke:demonic_block",
+              "poke:ember_block",
+              "poke:godly_block",
+              "poke:scrappy_block",
+              "poke:radium_block",
+              "poke:shade_block",
+              "poke:onyx_block",
+              "poke:cobalt_block",
+              "poke:nebula_block",
+              "poke:galaxy_block",
+              "poke:medic_block",
+              "poke:astral_block",
+              "poke:death_block",
+              "poke:void_block",
+              "poke:holy_block"
+            ]
+          },
+          {
+            "group_identifier": {
               "icon": "poke:empty_crate",
               "name": "poke:itemGroup.name.crate"
             },
@@ -85,12 +109,6 @@
               "poke:listener_trophy",
               "poke:golden_turnip_trophy"
             ]
-          },
-          {
-            "group_identifier": {
-              "name": "poke:itemGroup.name.quests"
-            },
-            "items": []
           },
           {
             "group_identifier": {
@@ -191,7 +209,61 @@
             "group_identifier": {
               "name": "minecraft:itemGroup.name.slab"
             },
-            "items": []
+            "items": [
+              "poke:hellish_bricks_slab",
+              "poke:molten_bricks_slab",
+              "poke:honey_bricks_slab",
+              "poke:radium_bricks_slab",
+              "poke:shade_bricks_slab",
+              "poke:cobalt_bricks_slab",
+              "poke:nebula_bricks_slab",
+              "poke:galaxy_bricks_slab",
+              "poke:medic_bricks_slab",
+              "poke:godly_bricks_slab",
+              "poke:holy_bricks_slab",
+              "poke:limestone_brick_slab",
+              "poke:demonic_bricks_slab",
+              "poke:onyx_bricks_slab",
+              "poke:astral_bricks_slab",
+              "poke:death_bricks_slab",
+              "poke:void_bricks_slab",
+              "poke:cut_hellish_slab",
+              "poke:cut_molten_slab",
+              "poke:cut_radium_slab",
+              "poke:cut_shade_slab",
+              "poke:cut_cobalt_slab",
+              "poke:cut_nebula_slab",
+              "poke:cut_galaxy_slab",
+              "poke:cut_astral_slab",
+              "poke:cut_medic_slab",
+              "poke:cut_godly_slab",
+              "poke:cut_holy_slab",
+              "poke:cut_demonic_slab",
+              "poke:cut_onyx_slab",
+              "poke:cut_death_slab",
+              "poke:cut_void_slab",
+              "poke:raw_hellish_slab",
+              "poke:raw_demonic_slab",
+              "poke:raw_godly_slab",
+              "poke:raw_shade_slab",
+              "poke:raw_cobalt_slab",
+              "poke:raw_onyx_slab",
+              "poke:raw_nebula_slab",
+              "poke:raw_galaxy_slab",
+              "poke:raw_astral_slab",
+              "poke:raw_holy_slab",
+              "poke:raw_void_slab",
+              "poke:honey_tiles_slab",
+              "poke:chiseled_cobalt_slab",
+              "poke:cracked_cobalt_bricks_slab",
+              "poke:cobbled_shadowstone_slab",
+              "poke:shadowstone_slab",
+              "poke:polished_shadowstone_slab",
+              "poke:cobbled_limestone_slab",
+              "poke:limestone_slab",
+              "poke:smooth_limestone_slab",
+              "poke:beveled_limestone_slab"
+            ]
           },
           {
             "group_identifier": {
@@ -290,7 +362,12 @@
             "group_identifier": {
               "name": "minecraft:itemGroup.name.stone"
             },
-            "items": []
+            "items": [
+              "poke:limestone",
+              "poke:cobbled_limestone",
+              "poke:shadowstone",
+              "poke:cobbled_shadowstone"
+            ]
           },
           {
             "group_identifier": {
@@ -328,7 +405,8 @@
             },
             "items": [
               "poke:turnip",
-              "poke:golden_turnip"
+              "poke:golden_turnip",
+              "poke:turnip_crop" //
             ]
           },
           {
@@ -397,7 +475,9 @@
               "poke:furnace_golem",
               "poke:spawn_dragon",
               "poke:spawn_the_logger",
-              "poke:spawn_listener"
+              "poke:spawn_listener",
+              "poke:wither_spawner",
+              "poke:cobalt_golem_block"
             ]
           },
           {
@@ -426,7 +506,10 @@
             ]
           },
           {
-            "items": []
+            "items": [
+              "poke:lava_sponge",
+              "poke:molten_lava_sponge"
+            ]
           }
         ]
       },
@@ -913,6 +996,7 @@
               "poke:void_crossbow",
               "poke:astral_crossbow",
               "poke:honey_crossbow",
+              "poke:wood_boltbow",
               "poke:cobalt_boltbow",
               "poke:hellish_boltbow",
               "poke:godly_boltbow",
@@ -996,7 +1080,23 @@
             ]
           },
           {
-            "items": []
+            "group_identifier": {
+              "name": "poke:itemGroup.name.armorStandTools",
+              "icon": "poke:armor_stand_hider"
+            },
+            "items": [
+              "poke:armor_stand_hider",
+              "poke:armor_stand_unhider",
+              "poke:armor_stand_remover"
+            ]
+          },
+          {
+            "items": [
+              "poke:windzooka",
+              "poke:blazooka",
+              "poke-pfe:identifier",
+              "poke:item_voider"
+            ]
           }
         ]
       },
@@ -1023,6 +1123,17 @@
           },
           {
             "group_identifier": {
+              "name": "poke:itemGroup.name.crafting",
+              "icon": "poke:spell_crafter"
+            },
+            "items": [
+              "poke:spell_crafter",
+              "poke:dye_unmixer",
+              "poke:pfe_crafting_table"
+            ]
+          },
+          {
+            "group_identifier": {
               "name": "minecraft:itemGroup.name.chest"
             },
             "items": []
@@ -1041,7 +1152,8 @@
           },
           {
             "group_identifier": {
-              "name": "poke:itemGroup.name.cassette"
+              "name": "poke:itemGroup.name.cassette",
+              "icon": "poke:empty_cassette"
             },
             "items": [
               "poke:empty_cassette",
@@ -1168,7 +1280,9 @@
             "group_identifier": {
               "name": "minecraft:itemGroup.name.minecart"
             },
-            "items": []
+            "items": [
+              "poke:mail_cart"
+            ]
           },
           {
             "group_identifier": {
@@ -1187,6 +1301,65 @@
               "name": "minecraft:itemGroup.name.banner_pattern"
             },
             "items": []
+          },
+          {
+            "group_identifier": {
+              "name": "poke:itemGroup.name.ingots"
+            },
+            "items": [
+              "poke:cobalt_ingot",
+              "poke:shade_ingot",
+              "poke:onyx_ingot",
+              "poke:holy_ingot",
+              "poke:hellish_ingot",
+              "poke:godly_ingot",
+              "poke:demonic_ingot",
+              "poke:galaxy_ingot",
+              "poke:void_ingot",
+              "poke:astral_ingot",
+              "poke:radium_ingot",
+              "poke:medic_ingot",
+              "poke:death_ingot",
+              "poke:molten_slimeball"
+            ]
+          },
+          {
+            "group_identifier": {
+              "name": "poke:itemGroup.name.nuggets"
+            },
+            "items": [
+              "poke:cobalt_nugget",
+              "poke:shade_nugget",
+              "poke:onyx_nugget",
+              "poke:holy_nugget",
+              "poke:hellish_nugget",
+              "poke:godly_nugget",
+              "poke:demonic_nugget",
+              "poke:galaxy_nugget",
+              "poke:void_nugget",
+              "poke:astral_nugget",
+              "poke:radium_nugget",
+              "poke:medic_nugget",
+              "poke:death_nugget"
+            ]
+          },
+          {
+            "group_identifier": {
+              "name": "poke:itemGroup.name.rawOre"
+            },
+            "items": [
+              "poke:raw_cobalt",
+              "poke:raw_shade",
+              "poke:raw_onyx",
+              "poke:raw_holy",
+              "poke:raw_hellish",
+              "poke:raw_godly",
+              "poke:raw_demonic",
+              "poke:raw_galaxy",
+              "poke:raw_void",
+              "poke:raw_astral",
+              "poke:raw_nebula"
+            ]
           },
           {
             "group_identifier": {
@@ -1296,9 +1469,38 @@
           },
           {
             "group_identifier": {
-              "name": "poke:itemGroup.name.quests"
+              "name": "poke:itemGroup.name.quests",
+              "icon": "poke:mine_quest"
             },
-            "items": []
+            "items": [
+              "poke:mine_quest",
+              "poke:mine_quest_1",
+              "poke:mine_quest_2",
+              "poke:mine_quest_3",
+              "poke:kill_quest",
+              "poke:kill_quest_1",
+              "poke:kill_quest_2",
+              "poke:kill_quest_3",
+              "poke:kill_quest_4",
+              "poke:kill_quest_5",
+              "poke:kill_quest_6",
+              "poke:kill_quest_7",
+              "poke:farm_quest",
+              "poke:farm_quest_1",
+              "poke:farm_quest_2",
+              "poke:farm_quest_3",
+              "poke:farm_quest_4",
+              "poke:farm_quest_5",
+              "poke:farm_quest_6",
+              "poke:craft_quest",
+              "poke:craft_quest_1",
+              "poke:craft_quest_2",
+              "poke:craft_quest_3",
+              "poke:craft_quest_4",
+              "poke:craft_quest_5",
+              "poke:craft_quest_6",
+              "poke:craft_quest_7"
+            ]
           },
           {
             "group_identifier": {
@@ -1361,7 +1563,10 @@
             ]
           },
           {
-            "items": []
+            "items": [
+              "poke:magic_8_ball",
+              "poke:red_present"
+            ]
           }
         ]
       }

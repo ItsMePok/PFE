@@ -92,7 +92,7 @@ world.afterEvents.playerJoin.subscribe((data =>{
 function PFEHourTimeDownEvents() {
     let currentTime = new Date(Date.now())
     //Cassette Trader spawning
-    console.warn(`Attempting to spawn cassette trader`)
+    //console.warn(`Attempting to spawn cassette trader`)
     let allPlayers = world.getAllPlayers()
     let randomPlayer = allPlayers.at(Math.abs(Math.round(Math.random() * (allPlayers.length-1))))
     randomPlayer?.dimension.spawnEntity('poke:cassette_trader',randomPlayer.location).runCommand(`spreadplayers ~ ~ 30 40 @s ~10`)
@@ -597,21 +597,21 @@ world.beforeEvents.worldInitialize.subscribe(data => {
                 const blockId = data.destroyedBlockPermutation.type.id.substring(5)
                 if (data.player?.getGameMode() == GameMode.survival) {
                     if (fortuneLevel == 3) {
-                        data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}"`)
-                        data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}"`)
+                        data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}.loot"`)
+                        data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}.loot"`)
                         if (rng == 0) return;
-                        data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}"`)
+                        data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}.loot"`)
                         return;
                     }
                     if (fortuneLevel == 2) {
-                        data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}"`)
+                        data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}.loot"`)
                         if (rng == 0) return;
-                        data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}"`)
+                        data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}.loot"`)
                         return;
                     }
                     if (fortuneLevel == 1) {
                         if (rng == 0) return;
-                        data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}"`)
+                        data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}.loot"`)
                         return;
                     }
                     return;

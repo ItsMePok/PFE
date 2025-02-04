@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.50",
+	"format_version": "1.21.60",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:super_striker",
@@ -168,7 +168,7 @@
 				]
 			},
 			"minecraft:loot": {
-				"table": "loot_tables/poke/pfe/boss_event_token_easy.json"
+				"table": "loot_tables/poke/pfe/boss_event_token_easy.loot.json"
 			},
 			"minecraft:movement": {
 				"value": 0.25

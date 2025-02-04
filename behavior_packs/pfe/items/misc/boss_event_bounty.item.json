@@ -1,0 +1,17 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:boss_event_bounty",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:icon":"poke_boss_event",
+			"minecraft:custom_components": [
+				"poke:boss_event"
+			]
+		}
+	}
+}

@@ -317,7 +317,7 @@ item.poke:pok_bot_cosmetic=Cube~LINEBREAK~§7Chestplate Cosmetic~LINEBREAK~§9PF
 ##Single Armor Piece
 item.poke:night_vision_goggles=Night Vision Goggles~LINEBREAK~§7Grants Night Vision~LINEBREAK~Offhand Cosmetic~LINEBREAK~§9PFE§r
 item.poke:miner_helmet=Miner Helmet~LINEBREAK~§9PFE§r
-item.poke:crown_helmet=Crown~LINEBREAK~§9PFE§r
+item.poke:crown_helmet=Crown~LINEBREAK~§7Cosmetic~LINEBREAK~§9PFE§r
 item.poke:swift_boots=Speed Boots~LINEBREAK~§9PFE§r
 item.poke:knightling_helmet=Knightling Helmet~LINEBREAK~§9PFE§r
 ##Armor Stand things
@@ -342,7 +342,7 @@ item.poke:sundial=Sundial~LINEBREAK~§9PFE§r
 ##Boss Drops
 item.poke:floppy_disk=Floppy Disk~LINEBREAK~§9PFE§r
 item.poke:rotten_chicken=Rotten Chicken~LINEBREAK~§9PFE§r
-item.poke:charred_poppy_item=Charred Poppy~LINEBREAK~§9PFE§r
+item.poke:charred_poppy=Charred Poppy~LINEBREAK~§9PFE§r
 tile.poke:charred_poppy.name=Charred Poppy~LINEBREAK~§9PFE§r
 ##Glass
 tile.poke:cobalt_edged_glass.name=Cobalt Glass~LINEBREAK~§9PFE§r
@@ -433,8 +433,10 @@ item.poke:pumpkin_spice=Pumpkin Spice~LINEBREAK~§9PFE§r
 ##Stone
 tile.poke:shadowstone.name=Shadowstone~LINEBREAK~§9PFE§r
 tile.poke:cobbled_shadowstone.name=Cobbled Shadowstone~LINEBREAK~§9PFE§r
+item.poke:cobbled_shadowstone=Cobbled Shadowstone~LINEBREAK~§9PFE§r
 tile.poke:polished_shadowstone.name=Polished Shadowstone~LINEBREAK~§9PFE§r
 tile.poke:cobbled_limestone.name=Cobbled Limestone~LINEBREAK~§9PFE§r
+item.poke:cobbled_limestone=Cobbled Limestone~LINEBREAK~§9PFE§r
 tile.poke:limestone.name=Limestone~LINEBREAK~§9PFE§r
 tile.poke:chiseled_limestone.name=Chiseled Limestone~LINEBREAK~§9PFE§r
 tile.poke:chamfered_limestone.name=Chamfered Limestone~LINEBREAK~§9PFE§r

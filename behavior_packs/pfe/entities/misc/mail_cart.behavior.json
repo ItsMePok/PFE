@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.50",
+	"format_version": "1.21.60",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:mail_cart",
@@ -52,7 +52,7 @@
 				"height": 0.7
 			},
 			"minecraft:loot": {
-				"table": "loot_tables/poke/pfe/entities/mail_cart.json"
+				"table": "loot_tables/poke/pfe/entities/mail_cart.loot.json"
 			},
 			"minecraft:on_hurt":{
 				"target": "self",

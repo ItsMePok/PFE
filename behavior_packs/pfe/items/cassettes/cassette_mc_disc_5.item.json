@@ -1,0 +1,15 @@
+{
+  "format_version": "1.21.60",
+  "minecraft:item": {
+    "description": {
+      "identifier": "poke:cassette_mc_disc_5"
+    },
+    "components": {
+			"minecraft:rarity":"uncommon",
+      "minecraft:icon":"poke_cassette_mc_disc_5",
+      "minecraft:custom_components": ["poke:cas"],
+      "minecraft:tags": {"tags": ["minecraft:music_disc"]},
+      "minecraft:record": {"comparator_signal": 15,"sound_event": "record.5","duration": 178}
+    }
+  }
+}

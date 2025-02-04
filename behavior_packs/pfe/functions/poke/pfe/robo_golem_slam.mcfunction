@@ -1,4 +1,5 @@
 playanimation @s animation.poke_pfe.robo_golem.smash
+effect @s slowness 0 25 true
 camerashake add @a[r=20] 0.5 0.1 positional
 effect @e[r=10,rm=0.1,type=!wither_skeleton,type=!poke:demonic_allay,type=!fireball] levitation 1 10 true
 damage @a[r=10] 40 entity_attack entity @e[type=poke:robo_golem,c=1]

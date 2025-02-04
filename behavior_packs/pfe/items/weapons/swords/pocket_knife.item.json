@@ -1,0 +1,71 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:pocket_knife",
+			"menu_category": {
+				"category": "equipment",
+				"group": "minecraft:itemGroup.name.sword"
+			}
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:icon":"poke_pocket_knife",
+			"minecraft:damage": {"value": 3},
+			"minecraft:can_destroy_in_creative": false,
+			"minecraft:durability": {
+				"max_durability": 251,
+				"damage_chance": {
+					"max": 100,
+					"min": 60
+				}
+			},
+			"minecraft:enchantable": {
+				"slot": "sword",
+				"value": 5
+			},
+			"minecraft:cooldown": {
+				"category": "poke:pocket_knife_use",
+				"duration": 0.2
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"poke:repair_core"
+						],
+						"repair_amount": "q.max_durability"
+					},
+					{
+						"items": [
+							"poke:cobalt_ingot"
+						],
+						"repair_amount": "q.max_durability *0.25"
+					},
+					{
+						"items": [
+							"iron_ingot"
+						],
+						"repair_amount": "q.max_durability *0.25"
+					}
+				]
+			},
+			"minecraft:digger": {
+				"destroy_speeds": [
+					{"block":"minecraft:web","speed": 60},
+					{"block":"minecraft:bamboo_sapling","speed": 60},
+					{"block":"minecraft:bamboo","speed": 60}
+				]
+			},
+			"minecraft:custom_components": [
+				"poke-pfe:upgrader",
+				"poke:normalMining"
+			],
+			"minecraft:tags": {
+				"tags": [
+					"poke-pfe:UpgraderInfo:{\"canUpgrade\":[\"poke:carved_melon\",\"poke:gilded_carved_melon\",\"minecraft:pumpkin\",\"minecraft:melon_block\",\"poke:gilded_melon\",\"minecraft:brown_mushroom_block\",\"minecraft:red_mushroom_block\"]}:poke-pfe:UpgraderInfoEnd"
+				]
+			}
+		}
+	}
+}

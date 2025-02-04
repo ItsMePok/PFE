@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.50",
+	"format_version": "1.21.60",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:crimson_sporeshroom",
@@ -81,7 +81,7 @@
 								}
 							},
 							"add_items": {
-								"table": "loot_tables/poke/pfe/sporeshroom_milk_bottle.json"
+								"table": "loot_tables/poke/pfe/sporeshroom_milk_bottle.loot.json"
 							},
 							"use_item": true,
 							"play_sounds": "milk_suspiciously",
@@ -113,7 +113,7 @@
 								"target": "self"
 							},
 							"add_items": {
-								"table": "loot_tables/poke/pfe/crimson_sporeshroom_milk.json"
+								"table": "loot_tables/poke/pfe/crimson_sporeshroom_milk.loot.json"
 							},
 							"use_item": true,
 							"play_sounds": "milk_suspiciously",

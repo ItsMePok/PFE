@@ -1,0 +1,20 @@
+{
+	"format_version": "1.18.0",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "poke:nebula_ore.feature"
+		},
+		"count": 7,
+		"replace_rules": [
+			{
+				"places_block": {
+					"name": "poke:nebula_ore",
+					"states": {}
+				},
+				"may_replace": [
+					"minecraft:end_stone"
+				]
+			}
+		]
+	}
+}

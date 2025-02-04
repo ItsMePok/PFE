@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.50",
+	"format_version": "1.21.60",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:cobalt_golem",
@@ -209,7 +209,7 @@
 				]
 			},
 			"minecraft:loot": {
-				"table": "loot_tables/poke/pfe/cobalt_golem.json"
+				"table": "loot_tables/poke/pfe/cobalt_golem.loot.json"
 			},
 			"minecraft:breathable": {
 				"total_supply": 15,

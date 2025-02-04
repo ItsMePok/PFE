@@ -1,5 +1,5 @@
 { //this entity model, animations & textures was made by O2God for PFE
-	"format_version": "1.21.50",
+	"format_version": "1.21.60",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:dragon",
@@ -207,7 +207,7 @@
 				"push_towards_closest_space": true
 			},
 			"minecraft:loot": {
-				"table": "loot_tables/poke/pfe/dragon.json"
+				"table": "loot_tables/poke/pfe/dragon.loot.json"
 			},
 			"minecraft:behavior.nearest_prioritized_attackable_target": {
 				"priority": 1,

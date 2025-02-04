@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.50",
+	"format_version": "1.21.60",
 	"sound_definitions": {
 		"poke.boltbow.noAmmo":{
 			"category": "player",

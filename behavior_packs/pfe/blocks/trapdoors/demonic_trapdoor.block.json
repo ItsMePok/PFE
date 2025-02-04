@@ -1,11 +1,10 @@
 {
-	"format_version": "1.21.50",
+	"format_version": "1.21.60",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:demonic_trapdoor",
 			"menu_category": {
-				"category": "construction",
-				"group": "itemGroup.name.trapdoor"
+				"category": "construction"
 			},
 			"traits": {
 				"minecraft:placement_direction": {

@@ -1,0 +1,13 @@
+{
+  "format_version": "1.21.60",
+  "minecraft:item": {
+    "description": {
+      "identifier": "poke:cassette_balladofthecats"
+    },
+    "components": {
+      "minecraft:icon":"poke_cassette_balladofthecats",
+      "minecraft:custom_components": ["poke:cas"],
+      "minecraft:tags": {"tags": ["minecraft:music_disc"]}
+    }
+  }
+}
