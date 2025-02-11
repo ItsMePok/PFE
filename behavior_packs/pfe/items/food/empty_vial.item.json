@@ -4,7 +4,7 @@
 		"description": {
 			"identifier": "poke:empty_vial",
 			"menu_category": {
-				"category": "items"
+				"category": "equipment"
 			}
 		},
 		"components": {

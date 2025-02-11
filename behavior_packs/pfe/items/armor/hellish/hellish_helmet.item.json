@@ -4,8 +4,7 @@
 		"description": {
 			"identifier": "poke:hellish_helmet",
 			"menu_category": {
-				"category": "equipment",
-				"group": "minecraft:itemGroup.name.helmet"
+				"category": "equipment"
 			}
 		},
 		"components": {
@@ -43,12 +42,13 @@
 				]
 			},
 			"minecraft:tags": { 
-			  "tags": [
-				"pfe:SingleArmor",
-				"minecraft:is_armor",
-				"minecraft:trimmable_armors" 
-			  ] 
-			} 
-		  } 
-		} 
-	  }
+				"tags": [
+					"pfe:SingleArmor",
+					"novelty:is_hat",
+					"minecraft:is_armor",
+					"minecraft:trimmable_armors" 
+				]
+			}
+		}
+	}
+}

@@ -8,6 +8,12 @@
       }
     },
     "components": {
+      "minecraft:rarity":"common",
+      "minecraft:tags": {
+        "tags": [
+          "novelty:is_face"
+        ]
+      },
       "minecraft:wearable": {
         "slot": "slot.armor.head"
       },

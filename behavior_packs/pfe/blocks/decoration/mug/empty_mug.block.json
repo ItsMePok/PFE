@@ -4,8 +4,7 @@
 		"description": {
 			"identifier": "poke:empty_mug",
 			"menu_category": {
-				"category": "items",
-				"group": "minecraft:itemGroup.name.mug"
+				"category": "items"
 			},
 			"traits": {
 				"minecraft:placement_direction": {
@@ -16,6 +15,19 @@
 			}
 		},
 		"components": {
+			"minecraft:redstone_conductivity": {
+				"allows_wire_to_step_down": false,
+				"redstone_conductor": false
+			},
+			"minecraft:liquid_detection": {
+				"detection_rules": [
+					{
+						"can_contain_liquid": true,
+						"liquid_type": "water",
+						"on_liquid_touches": "blocking"
+					}
+				]
+			},
 			"minecraft:collision_box": {
 				"origin": [
 					-4,

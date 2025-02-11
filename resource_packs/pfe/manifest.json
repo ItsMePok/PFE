@@ -1,11 +1,11 @@
 {
 	"header": {
-		"name": "v1.2.6 §uPFE §aRP§r",
+		"name": "v1.2.7 §uPFE §aRP§r",
 		"description": "pack.description",
 		"pack_scope": "any",
-		"uuid": "486a8108-12f6-4ba6-b2d9-42a7427fe4ad",
-		"version": [1, 2, 60],
-		"min_engine_version": [1, 21, 50]
+		"uuid": "7a9008c2-89d3-4f85-838b-e42b221efbd1",
+		"version": [1, 2, 70],
+		"min_engine_version": [1, 21, 60]
 	},
 	"modules": [
 		{
@@ -17,8 +17,8 @@
 	],
 	"dependencies": [
 		{ //BP Manifest
-			"uuid": "6339bb00-6a0e-4809-8b84-32b707845933",
-		"version": [1, 2, 60]
+			"uuid": "634998df-b8eb-4c26-95ad-e1476ddd7e4b",
+			"version": [1, 2, 70]
 		}
 	],
 	"format_version": 2,

@@ -43,11 +43,12 @@
 			},
 			"minecraft:tags": { 
 			  "tags": [
-				"pfe:SingleArmor",
-				"minecraft:is_armor",
-				"minecraft:trimmable_armors" 
-			  ] 
-			} 
-		  } 
-		} 
-	  }
+					"pfe:SingleArmor",
+					"minecraft:is_armor",
+					"minecraft:trimmable_armors",
+					"novelty:is_foot"
+			  ]
+			}
+		}
+	}
+}

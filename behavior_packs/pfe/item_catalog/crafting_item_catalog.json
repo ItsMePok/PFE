@@ -7,6 +7,56 @@
         "groups": [
           {
             "group_identifier": {
+              "name": "poke:itemGroup.name.cutBlocks",
+              "icon": "poke:cut_hellish"
+            },
+            "items": [
+              "poke:cut_hellish",
+              "poke:cut_molten",
+              "poke:cut_radium",
+              "poke:cut_shade",
+              "poke:cut_cobalt",
+              "poke:cut_onyx",
+              "poke:cut_nebula",
+              "poke:cut_galaxy",
+              "poke:cut_astral",
+              "poke:cut_medic",
+              "poke:cut_godly",
+              "poke:cut_holy",
+              "poke:cut_demonic",
+              "poke:cut_death",
+              "poke:cut_void"
+            ]
+          },
+          {
+            "group_identifier": {
+              "name": "poke:itemGroup.name.bricks",
+              "icon": "poke:hellish_bricks"
+            },
+            "items": [
+              "poke:hellish_bricks",
+              "poke:molten_bricks",
+              "poke:honey_bricks",
+              "poke:chiseled_honey_bricks",
+              "poke:radium_bricks",
+              "poke:shade_bricks",
+              "poke:cobalt_bricks",
+              "poke:cracked_cobalt_bricks",
+              "poke:onyx_bricks",
+              "poke:nebula_bricks",
+              "poke:galaxy_bricks",
+              "poke:astral_bricks",
+              "poke:medic_bricks",
+              "poke:godly_bricks",
+              "poke:limestone_bricks",
+              "poke:holy_bricks",
+              "poke:demonic_bricks",
+              "poke:death_bricks",
+              "poke:void_bricks"
+            ]
+          },
+          {
+            "group_identifier": {
               "name": "poke:itemGroup.name.oreBlock",
               "icon": "poke:cobalt_block"
             },
@@ -106,8 +156,8 @@
             "items": [
               "poke:zombken_trophy",
               "poke:furnace_golem_trophy",
-              "poke:listener_trophy",
-              "poke:golden_turnip_trophy"
+              "poke:listener_trophy"
+              //,"poke:golden_turnip_trophy"
             ]
           },
           {
@@ -320,7 +370,18 @@
             "items": []
           },
           {
-            "items": []
+            "items": [
+              "poke:honey_tiles",
+              "poke:polished_shadowstone",
+              "poke:polished_limestone",
+              "poke:chamfered_limestone",
+              "poke:cornered_chamfered_limestone",
+              "poke:chiseled_limestone",
+              "poke:smooth_limestone",
+              "poke:beveled_limestone",
+              "poke:limestone_tombstone",
+              "poke:chiseled_cobalt"
+            ]
           }
         ]
       },
@@ -426,7 +487,7 @@
               "name": "minecraft:itemGroup.name.flower"
             },
             "items": [
-              //"poke:charred_poppy",
+              "poke:charred_poppy",
               "poke:charred_poppy_item"
             ]
           },
@@ -508,7 +569,8 @@
           {
             "items": [
               "poke:lava_sponge",
-              "poke:molten_lava_sponge"
+              "poke:molten_lava_sponge",
+              "poke:duck_egg"
             ]
           }
         ]
@@ -749,12 +811,14 @@
               "poke:warped_sporeshroom_stew",
               "poke:crimson_sporeshroom_stew",
               "poke:baguette",
+              "poke:hot_coco",
               "poke:eggnog",
               "poke:root_beer",
               "poke:apple_juice",
               "poke:pumpkin_spice",
               "poke:milk_bottle",
               "poke:sugar_water",
+              "poke:coffee_mug",
               "poke:cheese",
               "poke:rotten_chicken",
               "poke:golden_chicken"
@@ -979,7 +1043,8 @@
               "poke:poppy_hat",
               "poke:steampunk_hat",
               "poke:sword_hat",
-              "poke:night_vision_goggles"
+              "poke:night_vision_goggles",
+              "poke:carved_melon_helmet"
             ]
           },
           {
@@ -1094,8 +1159,15 @@
             "items": [
               "poke:windzooka",
               "poke:blazooka",
+              "poke:panic_button",
+              "poke:sundial",
+              "poke:jackhammer",
+              "poke:rocket_replenisher",
               "poke-pfe:identifier",
-              "poke:item_voider"
+              "poke:item_voider",
+              "poke:empty_vial",
+              "poke:xp_vial",
+              "poke:boss_event_bounty"
             ]
           }
         ]
@@ -1304,7 +1376,8 @@
           },
           {
             "group_identifier": {
-              "name": "poke:itemGroup.name.ingots"
+              "name": "poke:itemGroup.name.ingots",
+              "icon": "poke:cobalt_ingot"
             },
             "items": [
               "poke:cobalt_ingot",
@@ -1317,6 +1390,7 @@
               "poke:galaxy_ingot",
               "poke:void_ingot",
               "poke:astral_ingot",
+              "poke:nebula_ingot",
               "poke:radium_ingot",
               "poke:medic_ingot",
               "poke:death_ingot",
@@ -1325,7 +1399,8 @@
           },
           {
             "group_identifier": {
-              "name": "poke:itemGroup.name.nuggets"
+              "name": "poke:itemGroup.name.nuggets",
+              "icon": "poke:cobalt_nugget"
             },
             "items": [
               "poke:cobalt_nugget",
@@ -1338,6 +1413,7 @@
               "poke:galaxy_nugget",
               "poke:void_nugget",
               "poke:astral_nugget",
+              "poke:nebula_nugget",
               "poke:radium_nugget",
               "poke:medic_nugget",
               "poke:death_nugget"
@@ -1345,7 +1421,8 @@
           },
           {
             "group_identifier": {
-              "name": "poke:itemGroup.name.rawOre"
+              "name": "poke:itemGroup.name.rawOre",
+              "icon": "poke:raw_cobalt"
             },
             "items": [
               "poke:raw_cobalt",
@@ -1418,9 +1495,9 @@
               "poke:platinum_upgrade_core",
               "poke:repair_core",
               "poke:capacity_core",
-              "poke:bursting_core",
-              "poke:flaming_core",
-              "poke:rapid_fire_core",
+              //"poke:bursting_core",
+              //"poke:flaming_core",
+              //"poke:rapid_fire_core",
               "poke:magnet_core",
               "poke:nebula_core"
             ]
@@ -1563,9 +1640,36 @@
             ]
           },
           {
+            "group_identifier": {
+              "name": "poke:itemGroup.name.electricalComponents"
+            },
             "items": [
+              "poke:plastic",
+              "poke:wire",
+              "poke:electric_component",
+              "poke:red_button",
+              "poke:gps_module",
+              "poke:receiver",
+              "poke:antenna",
+              "poke:item_manipulator"
+            ]
+          },
+          {
+            "items": [
+              "poke:onyx_shaft",
+              "poke:demonic_stick",
+              "poke:godly_stick",
+              "poke:nebula_stick",
+              "poke:empty_mug",
               "poke:magic_8_ball",
-              "poke:red_present"
+              "poke:red_present",
+              "poke:ban_hammer_head",
+              "poke:ban_hammer_shaft",
+              "poke:ban_hammer_grip",
+              "poke:bundled_sugarcane",
+              "poke:bundled_feathers",
+              "poke:ruin_key",
+              "poke:floppy_disk"
             ]
           }
         ]

@@ -11,7 +11,10 @@
 			"minecraft:map_color": "#3619bb",
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 22.5,
-				"item_specific_speeds": [{"item":{"tags": "q.any_tag('minecraft:is_pickaxe')"},"destroy_speed": 4.5}]
+				"item_specific_speeds": [{"item":{"tags": "q.any_tag('minecraft:is_pickaxe')"},"destroy_speed": 3.4}]
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 22.5
 			},
 			"minecraft:redstone_conductivity": {
 				"redstone_conductor": true,

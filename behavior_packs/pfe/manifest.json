@@ -1,10 +1,10 @@
 {
 	"header": {
-		"name": "v1.2.6 §uPFE §cBP§r",
+		"name": "v1.2.7 §uPFE §cBP§r",
 		"description": "§6By:§u ItsMePok §f& §dO2God §7||§e Wiki: https://pfewiki.gitbook.io/home§r",
 		"pack_scope":	"world",
-		"uuid": "6339bb00-6a0e-4809-8b84-32b707845933",
-		"version": [1, 2, 60],
+		"uuid": "634998df-b8eb-4c26-95ad-e1476ddd7e4b",
+		"version": [1, 2, 70],
 		"min_engine_version": [1, 21, 50]
 	},
 	"modules": [
@@ -24,8 +24,8 @@
 	],
 	"dependencies": [
 		{//RP Manifest
-			"uuid": "486a8108-12f6-4ba6-b2d9-42a7427fe4ad",
-			"version": [1, 2, 60]
+			"uuid": "7a9008c2-89d3-4f85-838b-e42b221efbd1",
+			"version": [1, 2, 70]
 		},
 		{
 			"module_name": "@minecraft/server",

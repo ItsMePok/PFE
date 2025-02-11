@@ -41,7 +41,8 @@
 				"tags": [
 				"pfe:SingleArmor",
 				"minecraft:is_armor",
-				"minecraft:trimmable_armors" 
+				"minecraft:trimmable_armors",
+					"novelty:is_foot"
 				] 
 			} 
 		} 

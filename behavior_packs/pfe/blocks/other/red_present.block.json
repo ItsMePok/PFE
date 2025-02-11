@@ -5,6 +5,13 @@
 			"identifier": "poke:red_present",
 			"menu_category": {
 				"category": "items"
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
+				}
 			}
 		},
 		"components": {
@@ -13,22 +20,32 @@
 					{
 						"can_contain_liquid": true,
 						"liquid_type": "water",
-						"on_liquid_touches": "popped",
-						"stops_liquid_flowing_from_direction": []
+						"on_liquid_touches": "popped"
 					}
 				]
 			},
-			"minecraft:collision_box": false,
-			"minecraft:selection_box": {
+			"minecraft:collision_box": {
 				"origin": [
-					-4,
+					-4.25,
 					0,
-					-4
+					-4.25
 				],
 				"size": [
-					8,
+					9.5,
+					12.25,
+					9.5
+				]
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-5,
+					0,
+					-5
+				],
+				"size": [
 					10,
-					8
+					12.25,
+					10
 				]
 			},
 			"minecraft:destructible_by_mining": {
@@ -50,6 +67,60 @@
 					"ambient_occlusion": false
 				}
 			},"minecraft:loot": "loot_tables/poke/pfe/present.loot.json"
-		}
+		},
+		"permutations": [
+			// Facing north
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			// Facing south
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			// Facing west
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			// Facing east
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-90,
+							0
+						]
+					}
+				}
+			}
+		]
 	}
 }

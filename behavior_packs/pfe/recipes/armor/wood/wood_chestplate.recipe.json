@@ -14,12 +14,12 @@
 		],
 		"unlock": [
 			{
-				"item": "log"
+				"tag": "minecraft:logs"
 			}
 		],
 		"key": {
 			"X": {
-				"item": "log"
+				"tag": "minecraft:logs"
 			}
 		},
 		"result": {

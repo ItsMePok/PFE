@@ -5,12 +5,18 @@
 			"identifier": "poke:charred_poppy"
 		},
 		"components": {
+			"minecraft:compostable": {
+				"composting_chance": 100
+			},
 			"minecraft:max_stack_size": 64,
 			/*"minecraft:wearable": {
 				"slot": "slot.armor.head"//Stack size must be 1
 			},*/
 			"minecraft:fuel": {
 				"duration": 160
+			},
+			"minecraft:display_name":{
+				"value": "tile.poke:charred_poppy.name"
 			},
 			"minecraft:rarity":"uncommon",
 			"minecraft:block_placer": {

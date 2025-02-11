@@ -12,12 +12,13 @@
 				"redstone_conductor": true,
 				"allows_wire_to_step_down": true
 			},
-      "minecraft:destructible_by_mining": {
-        "seconds_to_destroy": 2//Endstone
-      },
-      "minecraft:destructible_by_explosion": {
-        "explosion_resistance": 1
-      },
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 15,
+				"item_specific_speeds": [{"item":{"tags": "q.any_tag('minecraft:is_pickaxe')"},"destroy_speed": 3}]
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 45
+			},
       "minecraft:map_color": "#131313",
       "tag:pfe": {},
 			"tag:metal": {},

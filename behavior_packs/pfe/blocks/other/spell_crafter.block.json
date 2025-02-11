@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.50",
+	"format_version": "1.21.60",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:spell_crafter",
@@ -13,6 +13,15 @@
 			}
 		},
 		"components": {
+			"minecraft:liquid_detection": {
+				"detection_rules": [
+					{
+						"can_contain_liquid": true,
+						"liquid_type": "water",
+						"on_liquid_touches": "blocking"
+					}
+				]
+			},
 			"minecraft:selection_box": {
 				"origin": [-6,0,-6],
 				"size": [12,4,12]

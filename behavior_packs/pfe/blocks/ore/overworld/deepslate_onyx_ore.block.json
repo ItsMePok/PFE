@@ -1,8 +1,8 @@
-{ // Block: Deepslate Hellish Ore
+{
 	"format_version": "1.21.60",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:hellite_ore",//Deepslate Hellish Ore
+			"identifier": "poke:onyx",//Deepslate Onyx Ore
 			"menu_category": {
 				"category": "nature"
 			}
@@ -12,19 +12,22 @@
 				"redstone_conductor": true,
 				"allows_wire_to_step_down": true
 			},
-			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 22.5,
-				"item_specific_speeds": [{"item":{"tags": "q.any_tag('minecraft:is_pickaxe')"},"destroy_speed": 4.5}]
-			},
-			"minecraft:map_color": "#c91f1f",
+			"minecraft:map_color": "#212250",
 			"tag:pfe": {},
 			"tag:metal": {},
 			"tag:minecraft:metal": {},
 			"tag:stone_pick_diggable":{},
 			"tag:minecraft:is_pickaxe_item_destructible":{},
 			"minecraft:geometry":{"identifier": "minecraft:geometry.full_block"},
-			"minecraft:material_instances": {"*": {"texture": "poke_deepslate_hellish_ore"}},
-			"minecraft:loot": "loot_tables/poke/pfe/hellish_ore.loot.json",
+			"minecraft:material_instances": {"*": {"texture": "poke_onyx"}},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 22.5,
+				"item_specific_speeds": [{"item":{"tags": "q.any_tag('minecraft:is_pickaxe')"},"destroy_speed": 3.4}]
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 22.5
+			},
+			"minecraft:loot": "loot_tables/poke/pfe/onyx_ore.loot.json",
 			"minecraft:custom_components":[
 				"poke:fortune"
 			]

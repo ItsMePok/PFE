@@ -17,6 +17,15 @@
 			}
 		},
 		"components": {
+			"minecraft:liquid_detection": {
+				"detection_rules": [
+					{
+						"can_contain_liquid": true,
+						"liquid_type": "water",
+						"on_liquid_touches": "blocking"
+					}
+				]
+			},
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 0.4
 			},

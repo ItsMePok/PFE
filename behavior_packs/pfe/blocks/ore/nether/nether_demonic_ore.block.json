@@ -13,7 +13,11 @@
 				"allows_wire_to_step_down": true
 			},
 			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 1.25//Netherrack
+				"seconds_to_destroy": 15,
+				"item_specific_speeds": [{"item":{"tags": "q.any_tag('minecraft:is_pickaxe')"},"destroy_speed": 2.25}]
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 15
 			},
 			"minecraft:map_color": "#2c1919",
 			"tag:pfe": {},

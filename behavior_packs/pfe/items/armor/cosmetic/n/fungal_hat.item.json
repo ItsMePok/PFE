@@ -8,6 +8,12 @@
 			}
 		},
 		"components": {
+      "minecraft:rarity":"common",
+      "minecraft:tags": {
+        "tags": [
+          "novelty:is_hat"
+        ]
+      },
 			"minecraft:icon":{
 				"textures": {
 					"default": "poke_fungal_hat"

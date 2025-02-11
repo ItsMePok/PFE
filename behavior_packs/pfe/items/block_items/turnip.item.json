@@ -8,6 +8,10 @@
 			}
 		},
 		"components": {
+			"minecraft:compostable": {
+				"composting_chance": 65
+			},
+			"minecraft:rarity":"common",
 			"minecraft:max_stack_size": 64,
 			"minecraft:icon":"poke_turnip",
 			"minecraft:food": {
@@ -20,7 +24,7 @@
 				"use_duration": 1.6
 			},
 			"minecraft:use_animation": "eat",
-			"minecraft:block_placer": {"use_on":["minecraft:farmland"],"block": "poke:turnip","replace_block_item":true},
+			"minecraft:block_placer": {"use_on":[{"name": "minecraft:farmland"}],"block": "poke:turnip","replace_block_item":true},
 			"minecraft:tags": {
 				"tags": ["minecraft:is_food"]
 			}

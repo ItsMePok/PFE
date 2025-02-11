@@ -8,6 +8,12 @@
 			}
 		},
 		"components": {
+      "minecraft:rarity":"common",
+      "minecraft:tags": {
+        "tags": [
+          "novelty:is_hat"
+        ]
+      },
 			"minecraft:max_stack_size": 1,
 			"minecraft:icon":"poke_horns",
 			"minecraft:wearable": {

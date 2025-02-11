@@ -1,10 +1,19 @@
 {
-	"format_version": "1.21.50",
+	"format_version": "1.21.60",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:charred_poppy"
 		},
 		"components": {
+			"minecraft:liquid_detection": {
+				"detection_rules": [
+					{
+						"can_contain_liquid": true,
+						"liquid_type": "water",
+						"on_liquid_touches": "popped"
+					}
+				]
+			},
 			"minecraft:collision_box": false,
 			"minecraft:selection_box": {
 				"origin": [

@@ -4,8 +4,7 @@
 		"description": {
 			"identifier": "poke:nebula_helmet",
 			"menu_category": {
-				"category": "equipment",
-				"group": "minecraft:itemGroup.name.helmet"
+				"category": "equipment"
 			}
 		},
 		"components": {
@@ -44,11 +43,12 @@
 			}, 
 			"minecraft:tags": { 
 				"tags": [ 
-					"minecraft:is_armor", 
+					"minecraft:is_armor",
+					"novelty:is_hat",
 					"minecraft:trimmable_armors" 
 				] 
 			},
 			"minecraft:rarity":"epic"
-		} 
+		}
 	} 
 }

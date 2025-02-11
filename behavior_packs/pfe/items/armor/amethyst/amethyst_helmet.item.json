@@ -4,11 +4,11 @@
 		"description": {
 			"identifier": "poke:amethyst_helmet",
 			"menu_category": {
-				"category": "equipment",
-				"group": "minecraft:itemGroup.name.helmet"
+				"category": "equipment"
 			}
 		},
 		"components": {
+			"minecraft:rarity":"common",
 			"minecraft:max_stack_size": 1,
 			"minecraft:enchantable": {
 				"value": 50,
@@ -22,8 +22,7 @@
 				}
 			},
 			"minecraft:icon": { 
-			  "textures": { 
-				"default": "poke_amethyst_helmet" } 
+			  "textures": {"default": "poke_amethyst_helmet"} 
 			}, 
 			"minecraft:wearable": {
 				"slot": "slot.armor.head",
@@ -48,6 +47,7 @@
 			"minecraft:tags": {
 				"tags": [
 					"pfe:SingleArmor",
+					"novelty:is_hat",
 					"minecraft:trimmable_armors",
 					"minecraft:is_armor"
 				]

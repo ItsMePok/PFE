@@ -20,10 +20,11 @@
 			}, 
 			"minecraft:tags": { 
 				"tags": [ 
-					"minecraft:is_armor", 
-					"minecraft:trimmable_armors" 
-				] 
-			} 
-		} 
-	} 
+					"minecraft:is_armor",
+					"minecraft:trimmable_armors",
+					"novelty:is_foot"
+				]
+			}
+		}
+	}
 }

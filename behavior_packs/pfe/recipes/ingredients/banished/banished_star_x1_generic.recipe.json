@@ -1,0 +1,31 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:banished_star_x1_generic"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": [
+			{
+				"tag": "minecraft:stone_crafting_materials"
+			}
+		],
+		"pattern": [
+			"XXX",
+			"XXX",
+			"XXX"
+		],
+		"key": {
+			"X":{
+				"tag": "minecraft:stone_crafting_materials"
+			}
+		},
+		"result": {
+			"item": "poke:banished_star",
+			"count": 1
+		},
+		"priority": 9
+	}
+}

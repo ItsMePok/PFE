@@ -4,6 +4,7 @@
 		"description": {
 			"identifier": "poke:banished_star_uncraft_cobblestone"
 		},
+		"assume_symmetry": false,
 		"unlock": [
 			{
 				"item": "poke:banished_star"

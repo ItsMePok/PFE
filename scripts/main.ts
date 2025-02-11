@@ -153,7 +153,7 @@ world.beforeEvents.worldInitialize.subscribe(data => {
         `poke-pfe:identifier`, {
             onUseOn(data){
                 if (data.source.typeId == MinecraftEntityTypes.Player){
-                    console.warn(`sent`)
+                    //console.warn(`sent`)
                     //@ts-ignore
                     data.source.sendMessage({translate:`translation.poke-pfe:identifierMessage`,with:[data.block.typeId]})
                 }
@@ -1100,6 +1100,36 @@ world.beforeEvents.worldInitialize.subscribe(data => {
     );
     data.blockComponentRegistry.registerCustomComponent(
         "poke:cc_lava_sponge", {
+            onPlace(data){
+                /*
+                Drying molten lava sponge to lava sponge
+                
+                switch(MinecraftBlockTypes.Water||MinecraftBlockTypes.FlowingWater){
+                    case data.block.north()?.typeId:break;
+                    case data.block.south()?.typeId:break;
+                    case data.block.east()?.typeId:break;
+                    case data.block.west()?.typeId:break;
+                    case data.block.below()?.typeId:break;
+                    case data.block.above()?.typeId:break;
+                    default:return;
+                };
+                data.block.setType(`poke:lava_sponge`);
+                data.dimension.playSound(`random.fizz`,data.block.center());
+                data.dimension.spawnParticle(`minecraft:cauldron_explosion_emitter`,data.block.center());
+                return
+                */
+                switch (MinecraftBlockTypes.Lava||MinecraftBlockTypes.FlowingLava){
+                    case data.block.north()?.typeId:break;
+                    case data.block.south()?.typeId:break;
+                    case data.block.east()?.typeId:break;
+                    case data.block.west()?.typeId:break;
+                    case data.block.below()?.typeId:break;
+                    case data.block.above()?.typeId:break;
+                    default:return
+                }
+                data.dimension.runCommand(`execute positioned ${data.block.x} ${data.block.y} ${data.block.z} run function poke/pfe/lava_sponge_to_molten`)
+                return;
+            },
             onTick(data:BlockComponentTickEvent) {
                 switch (MinecraftBlockTypes.Lava||MinecraftBlockTypes.FlowingLava){
                     case data.block.north()?.typeId:break;

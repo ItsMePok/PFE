@@ -15,6 +15,19 @@
 			}
 		},
 		"components": {
+			"minecraft:redstone_conductivity": {
+				"allows_wire_to_step_down": false,
+				"redstone_conductor": false
+			},
+			"minecraft:liquid_detection": {
+				"detection_rules": [
+					{
+						"can_contain_liquid": true,
+						"liquid_type": "water",
+						"on_liquid_touches": "blocking"
+					}
+				]
+			},
 			"minecraft:collision_box": {
 				"origin": [
 					-6,
@@ -45,7 +58,8 @@
 			"tag:stone_pick_diggable":{},
 			"tag:minecraft:is_pickaxe_item_destructible":{},
 			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 1
+				"seconds_to_destroy": 7.5,
+				"item_specific_speeds": [{"item":{"tags": "q.any_tag('minecraft:is_pickaxe')"},"destroy_speed": 1.15}]
 			},
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 24

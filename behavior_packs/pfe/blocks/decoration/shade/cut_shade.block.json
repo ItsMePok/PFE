@@ -4,8 +4,7 @@
 		"description": {
 			"identifier": "poke:cut_shade",
 			"menu_category": {
-				"category": "construction",
-				"group": "minecraft:itemGroup.name.cutBlock"
+				"category": "construction"
 			}
 		},
 		"components": {

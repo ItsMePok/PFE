@@ -5075,7 +5075,6 @@ world3.beforeEvents.worldInitialize.subscribe((data) => {
     {
       onUseOn(data2) {
         if (data2.source.typeId == MinecraftEntityTypes.Player) {
-          console.warn(`sent`);
           data2.source.sendMessage({ translate: `translation.poke-pfe:identifierMessage`, with: [data2.block.typeId] });
         }
       }
@@ -6255,6 +6254,26 @@ world3.beforeEvents.worldInitialize.subscribe((data) => {
   data.blockComponentRegistry.registerCustomComponent(
     "poke:cc_lava_sponge",
     {
+      onPlace(data2) {
+        switch (MinecraftBlockTypes.Lava || MinecraftBlockTypes.FlowingLava) {
+          case data2.block.north()?.typeId:
+            break;
+          case data2.block.south()?.typeId:
+            break;
+          case data2.block.east()?.typeId:
+            break;
+          case data2.block.west()?.typeId:
+            break;
+          case data2.block.below()?.typeId:
+            break;
+          case data2.block.above()?.typeId:
+            break;
+          default:
+            return;
+        }
+        data2.dimension.runCommand(`execute positioned ${data2.block.x} ${data2.block.y} ${data2.block.z} run function poke/pfe/lava_sponge_to_molten`);
+        return;
+      },
       onTick(data2) {
         switch (MinecraftBlockTypes.Lava || MinecraftBlockTypes.FlowingLava) {
           case data2.block.north()?.typeId:

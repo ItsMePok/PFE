@@ -4,11 +4,11 @@
 		"description": {
 			"identifier": "poke:onyx_helmet",
 			"menu_category": {
-				"category": "equipment",
-				"group": "minecraft:itemGroup.name.helmet"
+				"category": "equipment"
 			}
 		},
 		"components": {
+			"minecraft:rarity":"common",
 			"minecraft:max_stack_size": 1,
 			"minecraft:enchantable": {
 				"value": 100,
@@ -22,17 +22,11 @@
 				}
 			},
 			"minecraft:icon": { 
-			  "textures": { 
-				"default": "poke_onyx_helmet" } 
+			  "textures": {"default": "poke_onyx_helmet"} 
 			}, 
 			"minecraft:repairable": {
 				"repair_items": [
-					{
-						"items": [
-							"poke:repair_core"
-						],
-						"repair_amount": "query.max_durability"
-					},
+					{"items": ["poke:repair_core"],"repair_amount": "query.max_durability"},
 					{"items": ["poke:onyx_ingot"],"repair_amount": "query.max_durability*0.25"},
 					{"items": ["poke:onyx_nugget"],"repair_amount": "query.max_durability*0.028"}
 				]
@@ -43,11 +37,12 @@
 			}, 
 			"minecraft:tags": { 
 			  "tags": [
-				"pfe:SingleArmor",
-				"minecraft:is_armor",
-				"minecraft:trimmable_armors" 
-			  ] 
-			} 
-		  } 
-		} 
-	  }
+					"pfe:SingleArmor",
+					"novelty:is_hat",
+					"minecraft:is_armor",
+					"minecraft:trimmable_armors"
+				]
+			}
+		}
+	}
+}

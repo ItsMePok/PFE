@@ -36,7 +36,12 @@
 					},
 					{
 						"items": [
-							"minecraft:log"
+							"minecraft:log",
+							"minecraft:log2",
+							"minecraft:mangrove_log",
+							"minecraft:cherry_log",
+							"minecraft:bamboo_block",
+							"minecraft:pale_oak_log"
 						],
 						"repair_amount": "query.max_durability*0.25"
 					}

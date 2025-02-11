@@ -89,7 +89,10 @@
 			}
 		],
 		"components": {
-			"minecraft:destructible_by_mining": {"seconds_to_destroy": 7},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 7.5,
+				"item_specific_speeds": [{"item":{"tags": "q.any_tag('minecraft:is_pickaxe')"},"destroy_speed": 1.15}]
+			},
 			"minecraft:destructible_by_explosion": {"explosion_resistance": 6},
 			"minecraft:map_color": "#1a37bb",
 			

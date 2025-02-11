@@ -1,6 +1,5 @@
-pack.name=§bv1.2.2 PFE RP
+pack.name=§bv1.2.7 PFE RP
 pack.description=§6By:§u ItsMePok §f& §dO2God §7||§e Wiki: https:pfewiki.gitbook.io/home
-##Sword
 item.poke:hellish_blade=Hellish Blade~LINEBREAK~§9PFE§r
 item.poke:amethyst_sword=Ameythyst Sword~LINEBREAK~§9PFE§r
 item.poke:onyx_sword=Onyx Sword~LINEBREAK~§9PFE§r
@@ -17,7 +16,6 @@ item.poke:death_sword=Death Sword~LINEBREAK~§9PFE§r
 item.poke:void_sword=Void Sword~LINEBREAK~§9PFE§r
 item.poke:nebula_sword=Nebula Sword~LINEBREAK~§9PFE§r
 item.poke:pocket_knife=Pocket Knife~LINEBREAK~§9PFE§r
-##Battleaxe
 item.poke:diamond_battleaxe=Diamond Battleaxe~LINEBREAK~§9PFE§r
 item.poke:iron_battleaxe=Iron Battleaxe~LINEBREAK~§9PFE§r
 item.poke:emerald_battleaxe=Emerald Battleaxe~LINEBREAK~§9PFE§r
@@ -41,7 +39,6 @@ item.poke:death_battleaxe=Death Battleaxe~LINEBREAK~§9PFE§r
 item.poke:molten_battleaxe=Molten Battleaxe~LINEBREAK~§9PFE§r
 item.poke:radium_battleaxe=Radium Battleaxe~LINEBREAK~§9PFE§r
 item.poke:medic_battleaxe=Medic Battleaxe~LINEBREAK~§9PFE§r
-##Rings
 item.poke:ring_4=Dragon Ring~LINEBREAK~§9PFE§r
 item.poke:ring_1=Rain Ring~LINEBREAK~§9PFE§r
 item.poke:zeus_ring=Zeus Ring~LINEBREAK~§9PFE§r
@@ -62,7 +59,6 @@ item.poke:aqua_ring=Aqua Ring~LINEBREAK~§9PFE§r
 item.poke:gravity_ring=Gravity Ring~LINEBREAK~§9PFE§r
 item.poke:volt_ring=Volt Ring~LINEBREAK~§9PFE§r
 item.poke:arrow_ring=Arrow Ring~LINEBREAK~§9PFE§r
-##Gems
 item.poke:arrow_gem=Arrow Gem~LINEBREAK~§9PFE§r
 item.poke:kapow_gem=Kapow Gem~LINEBREAK~§9PFE§r
 item.poke:zeus_gem=Zeus Gem~LINEBREAK~§9PFE§r
@@ -82,14 +78,12 @@ item.poke:grim_gem=Grim Gem~LINEBREAK~§9PFE§r
 item.poke:warp_gem=Warp Gem~LINEBREAK~§9PFE§r
 item.poke:shadow_gem=Shadow Gem~LINEBREAK~§9PFE§r
 item.poke:volt_gem=Volt Gem~LINEBREAK~§9PFE§r
-##Gem Holder
 item.poke:diamond_gem_holder=Diamond Gem Holder~LINEBREAK~§9PFE§r
 item.poke:gem_holder=Golden Gem Holder~LINEBREAK~§9PFE§r
 item.poke:obsidian_gem_holder=Obsidian Gem Holder~LINEBREAK~§9PFE§r
 item.poke:echo_holder=Echo Holder~LINEBREAK~§9PFE§r
 item.poke:kapow_holder=Kapow Holder~LINEBREAK~§9PFE§r
 item.poke:ender_holder=Ender Holder~LINEBREAK~§9PFE§r
-##Ingots
 item.poke:molten_slimeball=Molten Slimeball~LINEBREAK~§9PFE§r
 item.poke:shade_ingot=Shade Ingot~LINEBREAK~§9PFE§r
 item.poke:hellish_ingot=Hellish Ingot~LINEBREAK~§9PFE§r
@@ -105,7 +99,6 @@ item.poke:astral_ingot=Astral Ingot~LINEBREAK~§9PFE§r
 item.poke:death_ingot=Death Ingot~LINEBREAK~§9PFE§r
 item.poke:medic_ingot=Medic Ingot~LINEBREAK~§9PFE§r
 item.poke:radium_ingot=Radium Ingot~LINEBREAK~§9PFE§r
-##Currency
 item.poke:dollor_bill_1=$1~LINEBREAK~§9PFE§r
 item.poke:dollor_bill_5=$5~LINEBREAK~§9PFE§r
 item.poke:dollor_bill_10=$10~LINEBREAK~§9PFE§r
@@ -116,12 +109,10 @@ item.poke:pma_bill_20=$20~LINEBREAK~§9PFE§r
 item.poke:pma_bill_50=$50~LINEBREAK~§9PFE§r
 item.poke:pma_bill_100=$100~LINEBREAK~§9PFE§r
 item.poke:pma_bill_500=$500~LINEBREAK~§9PFE§r
-##Ban Hammer
 item.poke:ban_hammer=Banished Ban Hammer~LINEBREAK~§9PFE§r
 item.poke:ban_hammer_head=Ban Hammer Head~LINEBREAK~§9PFE§r
 item.poke:ban_hammer_shaft=Ban Hammer Shaft~LINEBREAK~§9PFE§r
 item.poke:ban_hammer_grip=Ban Hammer Grip~LINEBREAK~§9PFE§r
-##Armor
 item.poke:amethyst_helmet=Amethyst Helmet~LINEBREAK~§9PFE§r
 item.poke:amethyst_chestplate=Amethyst Chestplate~LINEBREAK~§9PFE§r
 item.poke:amethyst_leggings=Amethyst Leggings~LINEBREAK~§9PFE§r
@@ -199,7 +190,6 @@ item.poke:wood_helmet=Wood Helmet~LINEBREAK~§9PFE§r
 item.poke:wood_chestplate=Wood Chestplate~LINEBREAK~§9PFE§r
 item.poke:wood_leggings=Wood Leggings~LINEBREAK~§9PFE§r
 item.poke:wood_boots=Wood Boots~LINEBREAK~§9PFE§r
-##Robes
 item.poke:ember_robe_helmet=Ember Robe Helmet~LINEBREAK~§9PFE§r
 item.poke:ember_robe_chestplate=Ember Robe Chestplate~LINEBREAK~§9PFE§r
 item.poke:cobalt_robe_helmet=Cobalt Robe Helmet~LINEBREAK~§9PFE§r
@@ -218,7 +208,6 @@ item.poke:shadow_robe_helmet=Shadow Robe Helmet~LINEBREAK~§9PFE§r
 item.poke:shadow_robe_chestplate=Shadow Robe Chestplate~LINEBREAK~§9PFE§r
 item.poke:swift_robe_helmet=Swift Robe Helmet~LINEBREAK~§9PFE§r
 item.poke:swift_robe_chestplate=Swift Robe Chestplate~LINEBREAK~§9PFE§r
-##Scythes
 item.poke:demonic_slasher=Demonic Scythe~LINEBREAK~§9PFE§r
 item.poke:galactic_scythe=Galactic Scythe~LINEBREAK~§9PFE§r
 item.poke:cobalt_scythe=Cobalt Scythe~LINEBREAK~§9PFE§r
@@ -240,12 +229,10 @@ item.poke:iron_scythe=Iron Scythe~LINEBREAK~§9PFE§r
 item.poke:medic_scythe=Medic Scythe~LINEBREAK~§9PFE§r
 item.poke:astral_scythe=Astral Scythe~LINEBREAK~§9PFE§r
 item.poke:death_scythe=Death Scythe~LINEBREAK~§9PFE§r
-##Sticks
 item.poke:demonic_stick=Demonic Stick~LINEBREAK~§9PFE§r
 item.poke:onyx_shaft=Onyx Shaft~LINEBREAK~§9PFE§r
 item.poke:godly_stick=Godly Stick~LINEBREAK~§9PFE§r
 item.poke:nebula_stick=Nebula Stick~LINEBREAK~§9PFE§r
-##Haxels
 item.poke:haxel=Onyx Haxel~LINEBREAK~§9PFE§r
 item.poke:wooden_haxel=Wooden Haxel~LINEBREAK~§9PFE§r
 item.poke:stone_haxel=Stone Haxel~LINEBREAK~§9PFE§r
@@ -269,17 +256,14 @@ item.poke:nebula_haxel=Nebula Haxel~LINEBREAK~§9PFE§r
 item.poke:galaxy_haxel=Galaxy Haxel~LINEBREAK~§9PFE§r
 item.poke:astral_haxel=Astral Haxel~LINEBREAK~§9PFE§r
 item.poke:death_haxel=Death Haxel~LINEBREAK~§9PFE§r
-##Bow
 item.poke:holy_bow=Holy Burstbow~LINEBREAK~§9PFE§r
 item.poke:galaxy_bow=Galaxy Burstbow~LINEBREAK~§9PFE§r
-##Crossbow
 item.poke:void_crossbow=Void Crossbow~LINEBREAK~§9PFE§r
 item.poke:hellish_crossbow=Hellish Crossbow~LINEBREAK~§9PFE§r
 item.poke:cobalt_crossbow=Cobalt Crossbow~LINEBREAK~§9PFE§r
 item.poke:godly_crossbow=Godly Crossbow~LINEBREAK~§9PFE§r
 item.poke:astral_crossbow=Astral Crossbow~LINEBREAK~§9PFE§r
 item.poke:honey_crossbow=Honey Crossbow~LINEBREAK~§9PFE§r
-##Cosmetics
 item.poke:crab_pal=Crab Pal~LINEBREAK~§7Offhand Cosmetic~LINEBREAK~§9PFE§r
 item.poke:poppy_hat=Poppy Hat~LINEBREAK~§7Offhand Cosmetic~LINEBREAK~§9PFE§r
 item.poke:end_crystal_hat=End Crystal Hat~LINEBREAK~§7Offhand Cosmetic~LINEBREAK~§9PFE§r
@@ -314,18 +298,15 @@ item.poke:cosmetic_cosmetic=Cosmetic Cosmetic~LINEBREAK~§7Cosmetic~LINEBREAK~§
 item.poke:goggles=Goggles~LINEBREAK~§7Cosmetic~LINEBREAK~§9PFE§r
 item.poke:caged_soul=Caged Soul~LINEBREAK~§7Offhand Cosmetic~LINEBREAK~§9PFE§r
 item.poke:pok_bot_cosmetic=Cube~LINEBREAK~§7Chestplate Cosmetic~LINEBREAK~§9PFE§r
-##Single Armor Piece
 item.poke:night_vision_goggles=Night Vision Goggles~LINEBREAK~§7Grants Night Vision~LINEBREAK~Offhand Cosmetic~LINEBREAK~§9PFE§r
 item.poke:miner_helmet=Miner Helmet~LINEBREAK~§9PFE§r
 item.poke:crown_helmet=Crown~LINEBREAK~§7Cosmetic~LINEBREAK~§9PFE§r
 item.poke:swift_boots=Speed Boots~LINEBREAK~§9PFE§r
 item.poke:knightling_helmet=Knightling Helmet~LINEBREAK~§9PFE§r
-##Armor Stand things
 item.poke:armor_stand_shielder=Armor Stand Shielder~LINEBREAK~§cWIP~LINEBREAK~§9PFE§r
 item.poke:armor_stand_remover=Armor Stand Remover~LINEBREAK~§9PFE§r
 item.poke:armor_stand_hider=Armor Stand Hider~LINEBREAK~§9PFE§r
 item.poke:armor_stand_unhider=Armor Stand Un-Hider~LINEBREAK~§9PFE§r
-##Electrical Crafting Components
 item.poke:red_button=Red Button~LINEBREAK~§9PFE§r
 item.poke:antenna=Antenna~LINEBREAK~§9PFE§r
 item.poke:item_manipulator=Item Manipulator~LINEBREAK~§9PFE§r
@@ -334,36 +315,23 @@ item.poke:receiver=Receiver~LINEBREAK~§9PFE§r
 item.poke:wire=Wire~LINEBREAK~§9PFE§r
 item.poke:plastic=Plastic~LINEBREAK~§9PFE§r
 item.poke:gps_module=GPS Module~LINEBREAK~§9PFE§r
-##Electrical Tools
 item.poke:rocket_replenisher=Rocket Replenisher~LINEBREAK~§9PFE§r
 item.poke:panic_button=Panic Button~LINEBREAK~§9PFE§r
 item.poke:quantum_teleporter=Quantum Teleporter~LINEBREAK~§cWarning§r§7: This Teleports ALL Entities to the user~LINEBREAK~This can cause irreversible damage~LINEBREAK~§9PFE§r
 item.poke:sundial=Sundial~LINEBREAK~§9PFE§r
-##Boss Drops
 item.poke:floppy_disk=Floppy Disk~LINEBREAK~§9PFE§r
 item.poke:rotten_chicken=Rotten Chicken~LINEBREAK~§9PFE§r
-item.poke:charred_poppy=Charred Poppy~LINEBREAK~§9PFE§r
 tile.poke:charred_poppy.name=Charred Poppy~LINEBREAK~§9PFE§r
-##Glass
 tile.poke:cobalt_edged_glass.name=Cobalt Glass~LINEBREAK~§9PFE§r
-##Voiding
 item.poke:item_voider=Item Voider~LINEBREAK~§9PFE§r
-##Key
 item.poke:ruin_key=Ruin Key~LINEBREAK~§9PFE§r
-##Bounties
 item.poke:boss_event_bounty=Bounty~LINEBREAK~§7Starts a Boss Event~LINEBREAK~§9PFE§r
-##Minecarts
 item.poke:mail_cart=Mail Minecart~LINEBREAK~§7will not get unloaded~LINEBREAK~§9PFE§r
-##Tiles
 tile.poke:honey_tiles.name=Honey Tiles~LINEBREAK~§9PFE§r
-##Chiseled
 tile.poke:chiseled_cobalt.name=Chiseled Cobalt~LINEBREAK~§9PFE§r
-##-zookas
 item.poke:windzooka=Windzooka~LINEBREAK~§bLaunches the user backwards~LINEBREAK~§7Offhand Cosmetic~LINEBREAK~§9PFE§r
 item.poke:blazooka=Blazooka~LINEBREAK~§cLaunches the user forward~LINEBREAK~§7Offhand Cosmetic~LINEBREAK~§9PFE§r
-##Crops
 tile.poke:turnip_crop.name=Turnip Crop~LINEBREAK~§9PFE§r
-##Pickaxe
 item.poke:shade_pickaxe=Shade Pickaxe~LINEBREAK~§9PFE§r
 item.poke:radium_pickaxe=Radium Pickaxe~LINEBREAK~§9PFE§r
 item.poke:banished_pickaxe=Banished Pickaxe~LINEBREAK~§9PFE§r
@@ -384,26 +352,18 @@ item.poke:onyx_pickaxe=Onyx Pickaxe~LINEBREAK~§9PFE§r
 item.poke:cobalt_pickaxe=Cobalt Pickaxe~LINEBREAK~§9PFE§r
 item.poke:swift_pickaxe=Quickaxe~LINEBREAK~§9PFE§r
 item.poke:jackhammer=Jackhammer~LINEBREAK~§9PFE§r
-##Hoes
 item.poke:nebula_hoe=Nebula Hoe~LINEBREAK~§9PFE§r
-##Axes
 item.poke:nebula_logger=Nebula Logger~LINEBREAK~§9PFE§r
-##Shovels
 item.poke:snow_shovel=Snow Shovel~LINEBREAK~§9PFE§r
-##Fun :3
 tile.poke:magic_8_ball.name=Magic 8 Ball~LINEBREAK~§9PFE§r
 tile.poke:red_present.name=Red Present~LINEBREAK~§9PFE§r
-##Mugs
 tile.poke:coffee_mug.name=Coffee Mug~LINEBREAK~§9PFE§r
 tile.poke:empty_mug.name=Empty Mug~LINEBREAK~§9PFE§r
-##Staffs
 item.poke:necromancer_staff=Necromancer Staff~LINEBREAK~§9PFE§r
 item.poke:zombifier=Zombifier~LINEBREAK~§9PFE§r
 item.poke:purifier=Purifier~LINEBREAK~§9PFE§r
-##Bundled Items
 item.poke:bundled_feathers=Bundled Feathers~LINEBREAK~§9PFE§r
 item.poke:bundled_sugarcane=Bundled Sugarcane~LINEBREAK~§9PFE§r
-##Food
 item.poke:grilled_cheese=Grilled Cheese~LINEBREAK~§9PFE§r
 item.poke:nebula_noodles=Nebula Noodles~LINEBREAK~§9PFE§r
 item.poke:raw_sporefish=Raw Sporefish~LINEBREAK~§9PFE§r
@@ -430,13 +390,10 @@ item.poke:cheese=Cheese~LINEBREAK~§9PFE§r
 item.poke:warped_sporeshroom_stew=Warped Sporeshroom Stew~LINEBREAK~§9PFE§r
 item.poke:crimson_sporeshroom_stew=Crimson Sporeshroom Stew~LINEBREAK~§9PFE§r
 item.poke:pumpkin_spice=Pumpkin Spice~LINEBREAK~§9PFE§r
-##Stone
 tile.poke:shadowstone.name=Shadowstone~LINEBREAK~§9PFE§r
 tile.poke:cobbled_shadowstone.name=Cobbled Shadowstone~LINEBREAK~§9PFE§r
-item.poke:cobbled_shadowstone=Cobbled Shadowstone~LINEBREAK~§9PFE§r
 tile.poke:polished_shadowstone.name=Polished Shadowstone~LINEBREAK~§9PFE§r
 tile.poke:cobbled_limestone.name=Cobbled Limestone~LINEBREAK~§9PFE§r
-item.poke:cobbled_limestone=Cobbled Limestone~LINEBREAK~§9PFE§r
 tile.poke:limestone.name=Limestone~LINEBREAK~§9PFE§r
 tile.poke:chiseled_limestone.name=Chiseled Limestone~LINEBREAK~§9PFE§r
 tile.poke:chamfered_limestone.name=Chamfered Limestone~LINEBREAK~§9PFE§r
@@ -445,7 +402,6 @@ tile.poke:smooth_limestone.name=Smooth Limestone~LINEBREAK~§9PFE§r
 tile.poke:cornered_chamfered_limestone.name=Cornered Chamfered Limestone~LINEBREAK~§9PFE§r
 tile.poke:beveled_limestone.name=Beveled Limestone~LINEBREAK~§9PFE§r
 tile.poke:limestone_tombstone.name=Limestone Tombstone~LINEBREAK~§9PFE§r
-##Cut Blocks
 tile.poke:cut_cobalt.name=Cut Cobalt~LINEBREAK~§9PFE§r
 tile.poke:cut_void.name=Cut Void~LINEBREAK~§9PFE§r
 tile.poke:cut_shade.name=Cut Shade~LINEBREAK~§9PFE§r
@@ -461,7 +417,6 @@ tile.poke:cut_galaxy.name=Cut Galaxy~LINEBREAK~§9PFE§r
 tile.poke:cut_demonic.name=Cut Demonic~LINEBREAK~§9PFE§r
 tile.poke:cut_death.name=Cut Death~LINEBREAK~§9PFE§r
 tile.poke:cut_astral.name=Cut Astral~LINEBREAK~§9PFE§r
-##Slabs
 tile.poke:limestone_brick_slab.name=Limestone Brick Slab~LINEBREAK~§9PFE§r
 tile.poke:cut_void_slab.name=Cut Void Slab~LINEBREAK~§9PFE§r
 tile.poke:cut_shade_slab.name=Cut Shade Slab~LINEBREAK~§9PFE§r
@@ -515,7 +470,6 @@ tile.poke:holy_bricks_slab.name=Holy Bricks Slab~LINEBREAK~§9PFE§r
 tile.poke:astral_bricks_slab.name=Astral Bricks Slab~LINEBREAK~§9PFE§r
 tile.poke:radium_bricks_slab.name=Radium Bricks Slab~LINEBREAK~§9PFE§r
 tile.poke:cracked_cobalt_bricks_slab.name=Cracked Cobalt Bricks Slab~LINEBREAK~§9PFE§r
-##Walls
 tile.poke:honey_brick_wall.name=Honey Brick Wall~LINEBREAK~§9PFE§r
 tile.poke:cobalt_brick_wall.name=Cobalt Brick Wall~LINEBREAK~§9PFE§r
 tile.poke:astral_brick_wall.name=Astral Brick Wall~LINEBREAK~§9PFE§r
@@ -536,7 +490,6 @@ tile.poke:shadowstone_wall.name=Shadowstone Wall~LINEBREAK~§9PFE§r
 tile.poke:cobbled_shadowstone_wall.name=Cobbled Shadowstone Wall~LINEBREAK~§9PFE§r
 tile.poke:limestone_brick_wall.name=Limestone Brick Wall~LINEBREAK~§9PFE§r
 tile.poke:honey_tile_wall.name=Honey Tile Wall~LINEBREAK~§9PFE§r
-##Sherds
 item.poke:pfe-tree_pottery_sherd=Tree Pottery Sherd~LINEBREAK~§9PFE§r
 item.poke:pfe-tree_pottery_sherd.name=Tree Pottery Sherd
 item.poke:pfe-present_pottery_sherd=Present Pottery Sherd~LINEBREAK~§9PFE§r
@@ -587,7 +540,6 @@ item.poke:pfe-bee_pottery_sherd=Bee Pottery Sherd~LINEBREAK~§9PFE§r
 item.poke:pfe-bee_pottery_sherd.name=Bee Pottery Sherd~LINEBREAK~§9PFE§r
 item.poke:pfe-spell_pottery_sherd=Spell Pottery Sherd~LINEBREAK~§9PFE§r
 item.poke:pfe-spell_pottery_sherd.name=Spell Pottery Sherd
-##Cassettes
 item.poke:empty_cassette=Empty Cassette~LINEBREAK~§9PFE§r
 item.poke:cassette_mc_disc_cat=Cassette~LINEBREAK~§9PFE§r
 item.poke:cassette_mc_disc_blocks=Cassette~LINEBREAK~§9PFE§r
@@ -670,7 +622,6 @@ item.poke:cassette_wethands=Cassette ~LINEBREAK~§7C418 - Wet Hands~LINEBREAK~§
 item.poke:cassette_clark=Cassette ~LINEBREAK~§7C418 - Clark~LINEBREAK~§9PFE§r
 item.poke:cassette_sweden=Cassette ~LINEBREAK~§7C418 - Sweden~LINEBREAK~§9PFE§r
 item.poke:cassette_danny=Cassette ~LINEBREAK~§7C418 - Danny~LINEBREAK~§9PFE§r
-##Banished Stars
 item.poke:banished_star=Banished Star~LINEBREAK~§9PFE§r
 item.poke:banished_star_x2=Banished Star x2~LINEBREAK~§9PFE§r
 item.poke:banished_star_x3=Banished Star x3~LINEBREAK~§9PFE§r
@@ -681,7 +632,6 @@ item.poke:banished_star_x7=Banished Star x7~LINEBREAK~§9PFE§r
 item.poke:banished_star_x8=Banished Star x8~LINEBREAK~§9PFE§r
 item.poke:banished_star_x9=Banished Star x9~LINEBREAK~§9PFE§r
 item.poke:banished_star_x10=Banished Star x10~LINEBREAK~§9PFE§r
-##Crates
 tile.poke:sweet_berry_crate.name=Sweet Berry Crate~LINEBREAK~§9PFE§r
 tile.poke:brown_mushroom_crate.name=Brown Mushroom Crate~LINEBREAK~§9PFE§r
 tile.poke:melon_crate.name=Melon Crate~LINEBREAK~§9PFE§r
@@ -698,7 +648,6 @@ tile.poke:sugarcane_crate.name=Sugarcane Crate~LINEBREAK~§9PFE§r
 tile.poke:apple_crate.name=Apple Crate~LINEBREAK~§9PFE§r
 tile.poke:rotten_flesh_crate.name=Rotten Flesh Crate~LINEBREAK~§9PFE§r
 tile.poke:flint_crate.name=Flint Crate~LINEBREAK~§9PFE§r
-##Raw Ore
 item.poke:raw_astral=Raw Astral~LINEBREAK~§9PFE§r
 item.poke:raw_cobalt=Raw Cobalt~LINEBREAK~§9PFE§r
 item.poke:raw_nebula=Raw Nebula~LINEBREAK~§9PFE§r
@@ -710,19 +659,17 @@ item.poke:raw_hellish=Raw Hellish~LINEBREAK~§9PFE§r
 item.poke:raw_demonic=Raw Demonic~LINEBREAK~§9PFE§r
 item.poke:raw_godly=Raw Godly~LINEBREAK~§9PFE§r
 item.poke:raw_shade=Raw Shade~LINEBREAK~§9PFE§r
-##Raw Ore Block
-tile.poke:raw_astral_block.name=Raw Astral Block~LINEBREAK~§9PFE§r
-tile.poke:raw_cobalt_block.name=Raw Cobalt Block~LINEBREAK~§9PFE§r
-tile.poke:raw_demonic_block.name=Raw Demonic Block~LINEBREAK~§9PFE§r
-tile.poke:raw_galaxy_block.name=Raw Galaxy Block~LINEBREAK~§9PFE§r
-tile.poke:raw_godly_block.name=Raw Godly Block~LINEBREAK~§9PFE§r
-tile.poke:raw_hellish_block.name=Raw Hellish Block~LINEBREAK~§9PFE§r
-tile.poke:raw_holy_block.name=Raw Holy Block~LINEBREAK~§9PFE§r
-tile.poke:raw_onyx_block.name=Raw Onyx Block~LINEBREAK~§9PFE§r
-tile.poke:raw_nebula_block.name=Raw Nebula Block~LINEBREAK~§9PFE§r
-tile.poke:raw_shade_block.name=Raw Shade Block~LINEBREAK~§9PFE§r
-tile.poke:raw_void_block.name=Raw Void Block~LINEBREAK~§9PFE§r
-##Arrows
+tile.poke:raw_astral_block.name=Block of Raw Astral~LINEBREAK~§9PFE§r
+tile.poke:raw_cobalt_block.name=Block of Raw Cobalt~LINEBREAK~§9PFE§r
+tile.poke:raw_demonic_block.name=Block of Raw Demonic~LINEBREAK~§9PFE§r
+tile.poke:raw_galaxy_block.name=Block of Raw Galaxy~LINEBREAK~§9PFE§r
+tile.poke:raw_godly_block.name=Block of Raw Godly~LINEBREAK~§9PFE§r
+tile.poke:raw_hellish_block.name=Block of Raw Hellish~LINEBREAK~§9PFE§r
+tile.poke:raw_holy_block.name=Block of Raw Holy~LINEBREAK~§9PFE§r
+tile.poke:raw_onyx_block.name=Block of Raw Onyx~LINEBREAK~§9PFE§r
+tile.poke:raw_nebula_block.name=Block of Raw Nebula~LINEBREAK~§9PFE§r
+tile.poke:raw_shade_block.name=Block of Raw Shade~LINEBREAK~§9PFE§r
+tile.poke:raw_void_block.name=Block of Raw Void~LINEBREAK~§9PFE§r
 item.poke:shuriken=Shuriken~LINEBREAK~§9PFE§r
 item.poke:holy_arrow=Holy Arrow~LINEBREAK~§9PFE§r
 item.poke:hellish_arrow=Hellish Arrow~LINEBREAK~§9PFE§r
@@ -735,7 +682,6 @@ entity.poke:galaxy_arrow.name=Galaxy Arrow
 entity.poke:void_arrow.name=Void Arrow
 entity.poke:volt_arrow.name=§b Volt Arrow
 entity.poke:volt_arrow_proj.name=§b Volt Arrow
-##Spawn Eggs
 item.spawn_egg.entity.poke:cassette_trader.name=Spawn §d Cassette Trader~LINEBREAK~§9PFE§r
 tile.poke:cobalt_golem_block.name= Charged Cobalt Block~LINEBREAK~§9PFE§r
 item.poke:duck_egg=Duck Egg~LINEBREAK~§9PFE§r
@@ -803,7 +749,6 @@ item.spawn_egg.entity.poke:piranha.name=Spawn §c Piranha~LINEBREAK~§9PFE§r
 item.spawn_egg.entity.poke:yak.name=Spawn §n Yak~LINEBREAK~§9PFE§r
 item.spawn_egg.entity.poke:soul_blaze.name=Spawn §b Soul Blaze~LINEBREAK~§9PFE§r
 item.spawn_egg.entity.poke:retro_llama.name=Spawn §d Retro Llama~LINEBREAK~§9PFE§r
-##Translations
 translation.poke:qinfo_quest=§l§6 Quest
 translation.poke:qinfo_reward=§l§b Reward
 translation.poke:qinfo_gather=§l§d Gather
@@ -829,12 +774,10 @@ translation.poke:8ball17=§l§a Outlook good §r
 translation.poke:8ball18=§l§a Yes §r
 translation.poke:8ball19=§l§a Signs point to yes §r
 translation.poke:8ball20=§l§c Don't count on it §r
-##Action Hints
 action.hint.exit.poke:cobalt_golem=Press :_input_key.sneak: to dismount
 action.hint.exit.poke:seat=Press :_input_key.jump: or :_input_key.sneak: to get up
 action.poke.seat.sit=Sit
 action.hint.exit.poke:retro_llama=Press :_input_key.sneak: to dismount
-##Upgraders
 item.poke:redstone_upgrader=Redstone Upgrader~LINEBREAK~§9PFE§r
 item.poke:lapis_upgrader=Lapis Upgrader~LINEBREAK~§9PFE§r
 item.poke:copper_upgrader=Copper Upgrader~LINEBREAK~§9PFE§r
@@ -860,7 +803,6 @@ item.poke:netherite_upgrader=Netherite Upgrader~LINEBREAK~§9PFE§r
 item.poke:nether_upgrader=Nether Upgrader~LINEBREAK~§9PFE§r
 item.poke:end_upgrader=End Upgrader~LINEBREAK~§9PFE§r
 item.poke:obsidian_depressor=Obsidian Depressor~LINEBREAK~§9PFE§r
-##Ores
 tile.poke:onyx.name=Deepslate Onyx Ore~LINEBREAK~§9PFE§r
 tile.poke:holy_ore.name=Holy Ore~LINEBREAK~§9PFE§r
 tile.poke:nether_shade_ore.name=Nether Shade Ore~LINEBREAK~§9PFE§r
@@ -885,24 +827,22 @@ tile.poke:galaxy_ore.name=Galaxy Ore~LINEBREAK~§9PFE§r
 tile.poke:void_ore.name=Deepslate Void Ore~LINEBREAK~§9PFE§r
 tile.poke:nether_hellish_ore.name=Nether Hellish Ore~LINEBREAK~§9PFE§r
 tile.poke:nether_demonic_ore.name=Nether Demonic Ore~LINEBREAK~§9PFE§r
-##Ore Blocks
-tile.poke:hellish_block.name=Hellish Block~LINEBREAK~§9PFE§r
-tile.poke:radium_block.name=Radium Block~LINEBREAK~§9PFE§r
-tile.poke:medic_block.name=Medic Block~LINEBREAK~§9PFE§r
-tile.poke:ember_block.name=Molten Block~LINEBREAK~§9PFE§r
-tile.poke:cobalt_block.name=Cobalt Block~LINEBREAK~§9PFE§r
-tile.poke:holy_block.name=Holy Block~LINEBREAK~§9PFE§r
-tile.poke:nebula_block.name=Nebula Block~LINEBREAK~§9PFE§r
-tile.poke:void_block.name=Void Block~LINEBREAK~§9PFE§r
-tile.poke:shade_block.name=Shade Block~LINEBREAK~§9PFE§r
-tile.poke:godly_block.name=Godly Block~LINEBREAK~§9PFE§r
-tile.poke:galaxy_block.name=Galaxy Block~LINEBREAK~§9PFE§r
-tile.poke:demonic_block.name=Demonic Block~LINEBREAK~§9PFE§r
-tile.poke:onyx_block.name=Onyx Block~LINEBREAK~§9PFE§r
-tile.poke:scrappy_block.name=Scrappy Block~LINEBREAK~§9PFE§r
-tile.poke:astral_block.name=Astral Block~LINEBREAK~§9PFE§r
-tile.poke:death_block.name=Death Block~LINEBREAK~§9PFE§r
-##Mobs
+tile.poke:hellish_block.name=Block of Hellish~LINEBREAK~§9PFE§r
+tile.poke:radium_block.name=Block of Radium~LINEBREAK~§9PFE§r
+tile.poke:medic_block.name=Block of Medic~LINEBREAK~§9PFE§r
+tile.poke:ember_block.name=Block of Molten~LINEBREAK~§9PFE§r
+tile.poke:cobalt_block.name=Block of Cobalt~LINEBREAK~§9PFE§r
+tile.poke:holy_block.name=Block of Holy~LINEBREAK~§9PFE§r
+tile.poke:nebula_block.name=Block of Nebula~LINEBREAK~§9PFE§r
+tile.poke:void_block.name=Block of Void~LINEBREAK~§9PFE§r
+tile.poke:shade_block.name=Block of Shade~LINEBREAK~§9PFE§r
+tile.poke:godly_block.name=Block of Godly~LINEBREAK~§9PFE§r
+tile.poke:galaxy_block.name=Block of Galaxy~LINEBREAK~§9PFE§r
+tile.poke:demonic_block.name=Block of Demonic~LINEBREAK~§9PFE§r
+tile.poke:onyx_block.name=Block of Onyx~LINEBREAK~§9PFE§r
+tile.poke:scrappy_block.name=Block of Netherite Scrap~LINEBREAK~§9PFE§r
+tile.poke:astral_block.name=Block of Astral~LINEBREAK~§9PFE§r
+tile.poke:death_block.name=Block of Death~LINEBREAK~§9PFE§r
 entity.poke:zombken.name=§2 Zombken §r
 entity.poke:shopkeeper.name= Shopkeeper
 entity.poke:ender_phantom.name=§u Ender Phantom §r
@@ -954,7 +894,6 @@ entity.poke:token_trader.name=§5 Token Trader §r
 entity.poke:soul_blaze.name=§b Soul Blaze §r
 entity.cassette_trader.name=§d Cassette Trader §r
 entity.poke:retro_llama.name=§d Retro Llama §r
-##Nuggets
 item.poke:radium_nugget=Radium Nugget~LINEBREAK~§9PFE§r
 item.poke:godly_nugget=Godly Nugget~LINEBREAK~§9PFE§r
 item.poke:void_nugget=Void Nugget~LINEBREAK~§9PFE§r
@@ -969,7 +908,6 @@ item.poke:astral_nugget=Astral Nugget~LINEBREAK~§9PFE§r
 item.poke:cobalt_nugget=Cobalt Nugget~LINEBREAK~§9PFE§r
 item.poke:death_nugget=Death Nugget~LINEBREAK~§9PFE§r
 item.poke:medic_nugget=Medic Nugget~LINEBREAK~§9PFE§r
-##Quests
 item.poke:kill_quest=Get Kill Quest~LINEBREAK~§7Interact to get Quest~LINEBREAK~§9PFE§r
 item.poke:kill_quest_1=Kill Quest 1~LINEBREAK~§7Interact for details~LINEBREAK~§9PFE§r
 item.poke:kill_quest_2=Kill Quest 2~LINEBREAK~§7Interact for details~LINEBREAK~§9PFE§r
@@ -997,7 +935,6 @@ item.poke:craft_quest_4=Craft Quest 4~LINEBREAK~§7Interact for details~LINEBREA
 item.poke:craft_quest_5=Craft Quest 5~LINEBREAK~§7Interact for details~LINEBREAK~§9PFE§r
 item.poke:craft_quest_6=Craft Quest 6~LINEBREAK~§7Interact for details~LINEBREAK~§9PFE§r
 item.poke:craft_quest_7=Craft Quest 7~LINEBREAK~§7Interact for details~LINEBREAK~§9PFE§r
-##Automation
 tile.poke:cobble_gen.name=Cobbler~LINEBREAK~§9PFE§r
 tile.poke:barometer.name=Barometer~LINEBREAK~§9PFE§r
 tile.poke:cobblestone_gen.name=Cobblestone Generator
@@ -1031,7 +968,6 @@ tile.poke:block_breaker_up.name=Block Breaker~LINEBREAK~§eUp~LINEBREAK~§9PFE§
 tile.poke:block_breaker_down.name=Block Breaker~LINEBREAK~§eDown~LINEBREAK~§9PFE§r
 tile.poke:block_breaker.name=Block Breaker~LINEBREAK~§9PFE§r
 tile.poke:block_breaker_south.name=Calibrated Block Breaker~LINEBREAK~§9PFE§r
-##Bricks
 tile.poke:limestone_bricks.name=Limestone Bricks~LINEBREAK~§9PFE§r
 tile.poke:galaxy_bricks.name=Galaxy Bricks~LINEBREAK~§9PFE§r
 tile.poke:onyx_bricks.name=Onyx Bricks~LINEBREAK~§9PFE§r
@@ -1051,7 +987,6 @@ tile.poke:radium_bricks.name=Radium Bricks~LINEBREAK~§9PFE§r
 tile.poke:honey_bricks.name=Honey Bricks~LINEBREAK~§9PFE§r
 tile.poke:cracked_cobalt_bricks.name=Cracked Cobalt Bricks~LINEBREAK~§9PFE§r
 tile.poke:chiseled_honey_bricks.name=Chiseled Honey Bricks~LINEBREAK~§9PFE§r
-##Trapdoors
 tile.poke:honey_trapdoor.name=Honey Trapdoor~LINEBREAK~§9PFE§r
 tile.poke:cobalt_trapdoor.name=Cobalt Trapdoor~LINEBREAK~§9PFE§r
 tile.poke:void_trapdoor.name=Void Trapdoor~LINEBREAK~§9PFE§r
@@ -1068,7 +1003,6 @@ tile.poke:galaxy_trapdoor.name=Galaxy Trapdoor~LINEBREAK~§9PFE§r
 tile.poke:astral_trapdoor.name=Astral Trapdoor~LINEBREAK~§9PFE§r
 tile.poke:death_trapdoor.name=Death Trapdoor~LINEBREAK~§9PFE§r
 tile.poke:demonic_trapdoor.name=Demonic Trapdoor~LINEBREAK~§9PFE§r
-##Potions
 item.poke:empty_vial=Empty Vial~LINEBREAK~§9PFE§r
 item.poke:xp_vial=Experience Vial~LINEBREAK~§9PFE§r
 item.poke:hellish_potion=Hellish Potion~LINEBREAK~§9PFE§r
@@ -1078,7 +1012,6 @@ item.poke:death_potion=Death Potion~LINEBREAK~§9PFE§r
 item.poke:cobalt_potion=Cobalt Potion~LINEBREAK~§9PFE§r
 item.poke:void_potion=Void Potion~LINEBREAK~§9PFE§r
 item.poke:nebula_potion=Nebula Potion~LINEBREAK~§9PFE§r
-##Bulbs
 tile.poke:beeulb.name=Beeulb~LINEBREAK~§9PFE§r
 tile.poke:cobalt_bulb.name=Cobalt Bulb~LINEBREAK~§9PFE§r
 tile.poke:limestone_bulb.name=Limestone Bulb~LINEBREAK~§9PFE§r
@@ -1096,52 +1029,43 @@ tile.poke:galaxy_bulb.name=Galaxy Bulb~LINEBREAK~§9PFE§r
 tile.poke:demonic_bulb.name=Demonic Bulb~LINEBREAK~§9PFE§r
 tile.poke:death_bulb.name=Death Bulb~LINEBREAK~§9PFE§r
 tile.poke:astral_bulb.name=Astral Bulb~LINEBREAK~§9PFE§r
-##Spell
 item.poke:dodge_spell=Dodge Spell~LINEBREAK~§9PFE§r
 item.poke:gravity_spell=Gravity Spell~LINEBREAK~§9PFE§r
 item.poke:fireball_spell=Fireball Spell~LINEBREAK~§9PFE§r
-##Crafters
 poke:spell_crafter=Spell Crafter
 poke:dye_unmixer=Dye Unmixer
 poke:pfe_crafting_table=PFE Crafting
 tile.poke:pfe_crafting_table.name=Crafting Table~LINEBREAK~§9PFE§r
 tile.poke:spell_crafter.name=Spell Crafter~LINEBREAK~§9PFE§r
 tile.poke:dye_unmixer.name=Dye Unmixer~LINEBREAK~§9PFE§r
-##Trophies
 tile.poke:furnace_golem_trophy.name= Furnace Golem Trophy~LINEBREAK~§9PFE§r
 tile.poke:golden_turnip_trophy.name=Golden Turnip Trophy~LINEBREAK~§9PFE§r
 tile.poke:listener_trophy.name= Listener Trophy~LINEBREAK~§9PFE§r
 tile.poke:zombken_trophy.name= Zombken Trophy~LINEBREAK~§9PFE§r
-##Cores
 item.poke:platinum_upgrade_core=Platinum Upgrade Core~LINEBREAK~§9PFE§r
 item.poke:diamond_upgrade_core=Diamond Upgrade Core~LINEBREAK~§9PFE§r
 item.poke:repair_core=Repair Core~LINEBREAK~§7Repairs most PFE items~LINEBREAK~§9PFE§r
 item.poke:upgrade_core=Upgrade Core~LINEBREAK~§9PFE§r
 item.poke:magnet_core=Magnet Core~LINEBREAK~§9PFE§r
 item.poke:nebula_core=Nebula Core~LINEBREAK~§9PFE§r
-##Magnets
 item.poke:player_magnet=Player Magnet~LINEBREAK~§9PFE§r
 tile.poke:magnet.name=Magnet~LINEBREAK~§9PFE§r
 item.poke:xp_magnet=XP Magnet~LINEBREAK~§9PFE§r
 item.poke:hostile_mob_magnet=Hostile Mob Magnet~LINEBREAK~§9PFE§r
 item.poke:nebula_magnet=Nebula Magnet~LINEBREAK~§9PFE§r
 item.poke:item_magnet=Item Magnet~LINEBREAK~§9PFE§r
-##Tokens
 item.poke:copper_token=Copper Token~LINEBREAK~§9PFE§r
 item.poke:iron_token=Iron Token~LINEBREAK~§9PFE§r
 item.poke:gold_token=Gold Token~LINEBREAK~§9PFE§r
 item.poke:diamond_token=Diamond Token~LINEBREAK~§9PFE§r
 item.poke:platinum_token=Platinum Token~LINEBREAK~§9PFE§r
-##Melons
 tile.poke:carved_melon.name=Carved Melon~LINEBREAK~§9PFE§r
 tile.poke:carved_carved_melon.name=Carved Carved Melon~LINEBREAK~§9PFE§r
 tile.poke:gilded_carved_melon.name=Gilded Carved Melon~LINEBREAK~§9PFE§r
 tile.poke:gilded_melon.name=Gilded Melon~LINEBREAK~§9PFE§r
 tile.poke:charred_melon.name=Charred Melon~LINEBREAK~§9PFE§r
-##Sponges
 tile.poke:lava_sponge.name=Lava Sponge~LINEBREAK~§9PFE§r
 tile.poke:molten_lava_sponge.name=Molten Lava Sponge~LINEBREAK~§9PFE§r
-##WIP & Unused
 tile.poke:key_block_room.name=Key Block - Room~LINEBREAK~§cWIP~LINEBREAK~§9PFE§r
 tile.poke:key_block_start.name=Key Block - Start~LINEBREAK~§cWIP~LINEBREAK~§9PFE§r
 tile.poke:key_block_hall.name=Key Block - Hall~LINEBREAK~§cWIP~LINEBREAK~§9PFE§r
@@ -1149,8 +1073,6 @@ item.poke:colorizer=Colorizer~LINEBREAK~§cUNUSED~LINEBREAK~§9PFE§r
 item.poke:passive_mob_magnet=Passive Mob Magnet~LINEBREAK~§cWIP~LINEBREAK~§9PFE§r
 item.poke:battery=Battery~LINEBREAK~§9PFE§r
 item.poke:cosmetic_cosmetic_cosmetic=Cosmetic Cosmetic Cosmetic~LINEBREAK~§9PFE§r
-
-##Boss Event UI
 item.poke:boss_event_config=Boss Event Config Menu~LINEBREAK~§9PFE§r
 translation.poke:bossEventMainMenuTitle=Boss Event Config
 translation.poke:bossEventMainMenuEnableBosses=Enabled Bosses [%s/%s]
@@ -1166,7 +1088,6 @@ translation.poke:BossEventTimeDesc=The amount of Time (§ein ticks§r) that the 
 translation.poke:bossEventGoBack=Go Back
 translation.poke:bossEventClose=Close
 translation.poke:trackQueued=Music track added to queue
-
 translation.poke:zombken_boss_event_near=§a Boss is Nearest to§r
 translation.poke:knightling_boss_event_near=§7 Boss is Nearest to§r
 translation.poke:necromancer_boss_event_near=§u The Necromancer has emerged and is nearest to§r
@@ -1177,26 +1098,23 @@ translation.poke:robo_golem_boss_event_near=§v Boss is Nearest to§r
 translation.poke:dragon_boss_event_near=§u Boss is Nearest to§r
 translation.poke:the_logger_boss_event_near=§9 Boss is Nearest to§r
 translation.poke:listener_boss_event_near=§n Boss is Nearest to§r
-
 translation.poke:travel_log_1.page1=____________~LINEBREAK~Travel Log #1~LINEBREAK~____________~LINEBREAK~~LINEBREAK~Hello if you're reading this I am gone.. Or I left this log inside that stupid tower..§o those wardens with there stupid stupid sonic booms.. All because I stepped funny!§r Anyways attached is a note i found.. ->§r
 translation.poke:travel_log_1.page2=Dear Rodgér,~LINEBREAK~~LINEBREAK~I've been meaning to tell you that I found this weird.. egg?~LINEBREAK~I am going to inspect it further and see if it can help with that experiment of yours~LINEBREAK~~LINEBREAK~>§kUnknown
 translation.poke:only_cobblestone.page1=Don't listen to him..~LINEBREAK~I only thought it was §o"just cobblestone"...~LINEBREAK~§r~LINEBREAK~It was too good to be true...~LINEBREAK~I should not have trusted him..~LINEBREAK~I was just trying to ascend to power...
 translation.poke:only_cobblestone.page2=I never knew how much it would cost..~LINEBREAK~that.. that.... whatever that thing is should be BANISHED!
-
-## Item Catalogs
 poke:itemGroup.name.cosmetic=Cosmetics~LINEBREAK~§9PFE§r
 poke:itemGroup.name.crate=Crates~LINEBREAK~§9PFE§r
-poke:itemGroup.name.bulb=Bulbs~LINEBREAK~§9PFE§r
-poke:itemGroup.name.cutBlock=Cut Blocks~LINEBREAK~§9PFE§r
-poke:itemGroup.name.brick=Bricks~LINEBREAK~§9PFE§r
-poke:itemGroup.name.melon=Melons~LINEBREAK~§9PFE§r
+poke:itemGroup.name.bulbs=Bulbs~LINEBREAK~§9PFE§r
+poke:itemGroup.name.cutBlocks=Cut Blocks~LINEBREAK~§9PFE§r
+poke:itemGroup.name.bricks=Bricks~LINEBREAK~§9PFE§r
+poke:itemGroup.name.melons=Melons~LINEBREAK~§9PFE§r
 poke:itemGroup.name.trophy=Trophies~LINEBREAK~§9PFE§r
 poke:itemGroup.name.automation=Automation~LINEBREAK~§9PFE§r
 poke:itemGroup.name.cassette=Cassettes~LINEBREAK~§9PFE§r
-poke:itemGroup.name.gem=Gems~LINEBREAK~§9PFE§r
+poke:itemGroup.name.gems=Gems~LINEBREAK~§9PFE§r
 poke:itemGroup.name.holder=Gem Holders~LINEBREAK~§9PFE§r
-poke:itemGroup.name.ring=Rings~LINEBREAK~§9PFE§r
-poke:itemGroup.name.battleaxe=Battleaxes~LINEBREAK~§7:_input_key.use: deals damage in a radius~LINEBREAK~§9PFE§r
+poke:itemGroup.name.rings=Rings~LINEBREAK~§9PFE§r
+poke:itemGroup.name.battleaxe=Battleaxes~LINEBREAK~§7Interacting deals damage in a radius~LINEBREAK~§9PFE§r
 poke:itemGroup.name.upgraders=Upgraders~LINEBREAK~§7Interacting on certain blocks will upgrade them~LINEBREAK~§9PFE§r
 poke:itemGroup.name.configs=Configs~LINEBREAK~§9PFE§r
 poke:itemGroup.name.bows=Bows~LINEBREAK~§9PFE§r
@@ -1205,27 +1123,36 @@ poke:itemGroup.name.magnets=Magnets~LINEBREAK~§9PFE§r
 poke:itemGroup.name.haxel=Haxels~LINEBREAK~§7Interacting mines blocks in a radius~LINEBREAK~Crouching & Interacting allows you to configure its settings~LINEBREAK~§9PFE§r
 poke:itemGroup.name.scythe=Scythes~LINEBREAK~§9PFE§r
 poke:itemGroup.name.banished_stars=Banished Stars~LINEBREAK~§9PFE§r
-
+poke:itemGroup.name.electricalComponents=Electrical Components~LINEBREAK~§9PFE§r
+poke:itemGroup.name.oreBlock=Ore Blocks~LINEBREAK~§9PFE§r
+poke:itemGroup.name.rawBlocks=Raw Ore Blocks~LINEBREAK~§9PFE§r
+poke:itemGroup.name.staffs=Staffs~LINEBREAK~§9PFE§r
+poke:itemGroup.name.armorStandTools=Armor Stand Tools~LINEBREAK~§9PFE§r
+poke:itemGroup.name.crafting=Crating Tables~LINEBREAK~§9PFE§r
+poke:itemGroup.name.quests=Quests~LINEBREAK~§9PFE§r
+poke:itemGroup.name.currency=Currencies~LINEBREAK~§9PFE§r
+poke:itemGroup.name.cores=Cores~LINEBREAK~§9PFE§r
+poke:itemGroup.name.gemHolder=Gem Holders~LINEBREAK~§9PFE§r
+poke:itemGroup.name.rawOre=Raw Ore~LINEBREAK~§9PFE§r
+poke:itemGroup.name.ingots=Ingots~LINEBREAK~§9PFE§r
+poke:itemGroup.name.nuggets=Nuggets~LINEBREAK~§9PFE§r
 translation.poke:haxelConfig.mainMenu.title=Configuring: %s
 translation.poke:haxelConfig.mainMenu.blacklistAdd=Add Block to Blacklist
 translation.poke:haxelConfig.mainMenu.blacklistRemove=Remove Block from Blacklist
 translation.poke:haxelConfig.blacklistAdd.textLabel=Block identifier
 translation.poke:haxelConfig.blacklistAdd.submit=Add Block to Blacklist
-
 translation.poke:haxelConfig.blacklistAdd.body=Input a block identifier into the text field below, §c~LINEBREAK~If no namespace is provided "minecraft:" will be assumed~LINEBREAK~~LINEBREAK~§rUnsure of the block identifier? use the %s to see what the interacted block's identifier
 item.poke:identifier.name=Identifier~LINEBREAK~§9PFE§r
 item.poke-pfe:identifier=Identifier~LINEBREAK~§7Tells you the Block identifier of the block you interact with~LINEBREAK~§9PFE§r
-
 item.poke:party_hat=Party Hat~LINEBREAK~§9PFE§r
 item.poke:calendar=Calendar~LINEBREAK~§9PFE§r
 item.poke:pfe-gift_box=Gift Box~LINEBREAK~§9PFE§r
-
-translation.poke:ammoUIMainMenuTitle=Managing Ammo for %1	## %1 = Item Name
+translation.poke:ammoUIMainMenuTitle=Managing Ammo for %1
 translation.poke:ammoUIAddAmmo=Add Ammo
 translation.poke:ammoUIUpgrade=Upgrade
-translation.poke-pfe:identifierMessage=This block's Identifier is: %1 ## %1 = Block Identifier
+translation.poke-pfe:identifierMessage=This block's Identifier is: %1
 translation.poke:ammoUIQuickReload=Quick Reload [%1/%2]
-translation.poke:ammoUIUpgradeTitle=Upgrading %1	## %1 = "item.<Item Identifier>" <- (gets translated)
+translation.poke:ammoUIUpgradeTitle=Upgrading %1
 item.poke:capacity_core=Capacity Core~LINEBREAK~§7Upgrades the Max Capacity of Boltbows~LINEBREAK~§9PFE§r
 item.poke:capacity_core.name=Capacity Cores
 item.poke:astral_boltbow=Astral Boltbow~LINEBREAK~§9PFE§r
@@ -1236,8 +1163,7 @@ item.poke:void_boltbow=Void Boltbow~LINEBREAK~§9PFE§r
 item.poke:godly_boltbow=Godly Boltbow~LINEBREAK~§9PFE§r
 item.poke:honey_boltbow=Honey Boltbow~LINEBREAK~§9PFE§r
 translation.poke-pfe:splashDeathPotion=The bottle dissolved before you could throw it
-translation.poke:ammoUpgradeCapacity=Upgrade Capacity [LVL:%1]~LINEBREAK~Cost: %2 %3	## %1 Current Upgrade Level | %2 Amount to upgrade | %3 = Capacity Core Translation String
-
+translation.poke:ammoUpgradeCapacity=Upgrade Capacity [LVL:%1]~LINEBREAK~Cost: %2 %3
 translation.poke:timeCreateEvent=Create Event
 translation.poke:timeEditEventGift=Edit Gift
 translation.poke:timeAddEventGift=Add Gift
@@ -1251,7 +1177,7 @@ translation.poke:timeEditGreetingTitle=Changing Greeting
 translation.poke:timeEditGreetingTextFieldLabel=Greeting:~LINEBREAK~Leave blank for a generic greeting~LINEBREAK~You can start it with % to indicate a translation string
 translation.poke:timeDeleteEventTitle=Deleting: %1?
 translation.poke:timeEditGiftTitle=Changing Gift
-translation.poke:timeUiMainMenuBody=%1 %2! ~LINEBREAK~It's %3	## %1 = Time Greeting || %2 = Player's name || %3 Time
+translation.poke:timeUiMainMenuBody=%1 %2! ~LINEBREAK~It's %3
 translation.poke:timeMorningGreet=Good Morning
 translation.poke:timeNoonGreet=Good Afternoon
 translation.poke:timeNightGreet=Good Evening
@@ -1277,9 +1203,9 @@ translation.poke:setBirthdayOct=October
 translation.poke:setBirthdayNov=November
 translation.poke:setBirthdayDec=December
 translation.poke:birthdayDev= (§oPFE Addon Developer§r)
-translation.poke:birthdayAnnounce=%1 %2 it's %3 Birthday!	## %1 = Time Greeting || %2 = Player name || %3 Birthday player's name
+translation.poke:birthdayAnnounce=%1 %2 it's %3 Birthday!
 translation.poke:birthdayOwn=your
-translation.poke:claimGift=Claim Gift ~LINEBREAK~%1	## %1 = Event name
+translation.poke:claimGift=Claim Gift ~LINEBREAK~%1
 translation.poke:goBack=Go Back
 translation.poke:timeEventInfo=Event Name: %1~LINEBREAK~Time until event starts: %2~LINEBREAK~Event Day(s): %3~LINEBREAK~%4%5%6
 translation.poke:giftClaimed=§aGift Claimed

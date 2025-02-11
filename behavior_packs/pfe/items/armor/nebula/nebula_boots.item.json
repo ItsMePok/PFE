@@ -44,7 +44,8 @@
 			"minecraft:tags": { 
 				"tags": [ 
 					"minecraft:is_armor", 
-					"minecraft:trimmable_armors" 
+					"minecraft:trimmable_armors",
+					"novelty:is_foot"
 				] 
 			},
 			"minecraft:rarity":"epic"

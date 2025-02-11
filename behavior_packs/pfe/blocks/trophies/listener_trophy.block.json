@@ -6,6 +6,15 @@
 			"traits": {"minecraft:placement_direction": {"enabled_states": ["minecraft:cardinal_direction"]}}
 		},
 		"components": {
+			"minecraft:liquid_detection": {
+				"detection_rules": [
+					{
+						"can_contain_liquid": true,
+						"liquid_type": "water",
+						"on_liquid_touches": "blocking"
+					}
+				]
+			},
 			"minecraft:selection_box": {
 				"origin": [
 					-2,
@@ -31,7 +40,8 @@
 				]
 			},
 			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 1
+				"seconds_to_destroy": 7.5,
+				"item_specific_speeds": [{"item":{"tags": "q.any_tag('minecraft:is_pickaxe')"},"destroy_speed": 1.15}]
 			},
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 200

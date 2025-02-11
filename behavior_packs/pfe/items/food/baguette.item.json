@@ -4,8 +4,7 @@
 		"description": {
 			"identifier": "poke:baguette",
 			"menu_category": {
-				"category": "equipment",
-				"group": "minecraft:itemGroup.name.miscFood"
+				"category": "equipment"
 			}
 		},
 		"components": {

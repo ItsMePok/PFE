@@ -6,6 +6,15 @@
 			"traits": {"minecraft:placement_direction": {"enabled_states": ["minecraft:cardinal_direction"]}}
 		},
 		"components": {
+			"minecraft:liquid_detection": {
+				"detection_rules": [
+					{
+						"can_contain_liquid": true,
+						"liquid_type": "water",
+						"on_liquid_touches": "blocking"
+					}
+				]
+			},
 			"minecraft:loot": "loot_tables/poke/pfe/golden_turnip.loot.json",
 			"minecraft:selection_box": {
 				"origin": [
