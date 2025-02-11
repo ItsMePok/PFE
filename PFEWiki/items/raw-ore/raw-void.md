@@ -24,7 +24,7 @@
 
 ### Items:
 
-* <img src="https://github.com/user-attachments/assets/747e33df-a17c-402a-be00-e5662a1fb4af" alt="Raw Void Block." data-size="line"> [Raw Void Block](../../blocks/raw-ore-blocks/raw-void-block.md)
+* <img src="https://github.com/user-attachments/assets/747e33df-a17c-402a-be00-e5662a1fb4af" alt="Raw Void Block." data-size="line"> [Raw Void Block](../../blocks/raw-ore-blocks/block-of-raw-void.md)
 
 ### Outputs:
 

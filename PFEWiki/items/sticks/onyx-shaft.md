@@ -2,7 +2,7 @@
 
 <figure><img src="https://github.com/user-attachments/assets/a3414dac-2ab0-4f48-9401-e1724dc29e06" alt=""><figcaption></figcaption></figure>
 
-## Identifier: **poke:onyx\_shaft** <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:onyx\_shaft** <a href="#identifier" id="identifier"></a>
 
 ## Usage:
 
@@ -60,16 +60,16 @@
 
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-|                                                                                                                                   |
-| :-------------------------------------------------------------------------------------------------------------------------------: |
-|                   ![Onyx Ingot](https://github.com/user-attachments/assets/436247aa-b55d-4e05-aefc-8cfa2fee648a)                  |
-| ![Crying Obsidian](https://minecraft.wiki/images/thumb/Crying\_Obsidian\_JE1\_BE1.png/150px-Crying\_Obsidian\_JE1\_BE1.png?f1f04) |
-|                   ![Onyx Ingot](https://github.com/user-attachments/assets/436247aa-b55d-4e05-aefc-8cfa2fee648a)                  |
+|                                                                                                                             |
+| :-------------------------------------------------------------------------------------------------------------------------: |
+|                ![Onyx Ingot](https://github.com/user-attachments/assets/436247aa-b55d-4e05-aefc-8cfa2fee648a)               |
+| ![Crying Obsidian](https://minecraft.wiki/images/thumb/Crying_Obsidian_JE1_BE1.png/150px-Crying_Obsidian_JE1_BE1.png?f1f04) |
+|                ![Onyx Ingot](https://github.com/user-attachments/assets/436247aa-b55d-4e05-aefc-8cfa2fee648a)               |
 
 Items:
 
-* <img src="https://github.com/user-attachments/assets/436247aa-b55d-4e05-aefc-8cfa2fee648a" alt="Onyx Ingot" data-size="line">Onyx Ingot
-* [<img src="https://minecraft.wiki/images/thumb/Crying_Obsidian_JE1_BE1.png/150px-Crying_Obsidian_JE1_BE1.png?f1f04" alt="Crying Obsidian" data-size="line">Crying Obsidian](https://minecraft.wiki/w/Crying\_Obsidian)
+* <img src="https://github.com/user-attachments/assets/436247aa-b55d-4e05-aefc-8cfa2fee648a" alt="Onyx Ingot" data-size="line"> Onyx Ingot
+* [<img src="https://minecraft.wiki/images/thumb/Crying_Obsidian_JE1_BE1.png/150px-Crying_Obsidian_JE1_BE1.png?f1f04" alt="Crying Obsidian" data-size="line"> Crying Obsidian](https://minecraft.wiki/w/Crying_Obsidian)
 {% endtab %}
 
 {% tab title="Structures" %}
@@ -78,8 +78,6 @@ Found in the [Abandoned Ship](../../sturctures/abandoned-ship.md)
 {% content-ref url="../../sturctures/abandoned-ship.md" %}
 [abandoned-ship.md](../../sturctures/abandoned-ship.md)
 {% endcontent-ref %}
-
-
 
 
 

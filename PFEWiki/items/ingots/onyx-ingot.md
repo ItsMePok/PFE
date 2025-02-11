@@ -14,7 +14,7 @@
 
 <div><figure><img src="https://minecraft.wiki/images/Lit_Furnace_(S).gif?40e71" alt=""><figcaption><p>      Smelted in a <a href="https://minecraft.wiki/w/Furnace">Furnace</a>     </p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/thumb/Blast_Furnace_(S)_JE1.png/150px-Blast_Furnace_(S)_JE1.png?f1920" alt=""><figcaption><p>Smelted in a <a href="https://minecraft.wiki/w/Blast_Furnace">Blast Furnace</a></p></figcaption></figure></div>
 
-<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td></td><td></td><td>1</td></tr></tbody></table>
+<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td></td><td><img src="https://github.com/user-attachments/assets/637c75db-659f-4e80-b8a0-1454c23727b6" alt="Onyx Ingot." data-size="line"> Onyx Ingot</td><td>1</td></tr></tbody></table>
 {% endtab %}
 
 {% tab title="Recipe" %}

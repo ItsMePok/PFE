@@ -24,7 +24,7 @@
 
 ### Items:
 
-* <img src="https://github.com/user-attachments/assets/ad2a2a10-b2fc-45fd-ad62-a1c0765e5ee0" alt="Raw Cobalt Block." data-size="line"> [Raw Cobalt Block](../../blocks/raw-ore-blocks/raw-cobalt-block.md)
+* <img src="https://github.com/user-attachments/assets/ad2a2a10-b2fc-45fd-ad62-a1c0765e5ee0" alt="Raw Cobalt Block." data-size="line"> [Raw Cobalt Block](../../blocks/raw-ore-blocks/block-of-raw-cobalt.md)
 
 ### Outputs:
 

@@ -30,7 +30,7 @@
 
 Items:
 
-* <img src="https://github.com/user-attachments/assets/d7998150-2531-4071-91d8-5210c8bc5795" alt="" data-size="line"> [Nebula Block](../../blocks/ore-blocks/nebula-block.md)
+* <img src="https://github.com/user-attachments/assets/d7998150-2531-4071-91d8-5210c8bc5795" alt="" data-size="line"> [Nebula Block](../../blocks/ore-blocks/block-of-nebula.md)
 {% endtab %}
 
 {% tab title="Recipe 2" %}

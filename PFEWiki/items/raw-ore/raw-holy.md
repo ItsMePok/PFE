@@ -24,7 +24,7 @@
 
 ### Items:
 
-* <img src="https://github.com/user-attachments/assets/b6e9fe92-93ba-4fb5-a4fc-362f5a7cd7ea" alt="Raw Holy Block." data-size="line"> [Raw Holy Block](../../blocks/raw-ore-blocks/raw-holy-block.md)
+* <img src="https://github.com/user-attachments/assets/b6e9fe92-93ba-4fb5-a4fc-362f5a7cd7ea" alt="Raw Holy Block." data-size="line"> [Raw Holy Block](../../blocks/raw-ore-blocks/block-of-raw-holy.md)
 
 ### Outputs:
 

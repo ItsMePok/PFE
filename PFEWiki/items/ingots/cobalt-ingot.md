@@ -11,6 +11,21 @@
 ## Usage:
 
 {% tabs %}
+{% tab title="Brewing" %}
+
+
+<figure><img src="https://minecraft.wiki/images/thumb/Brewing_Stand_(empty)_JE10.png/150px-Brewing_Stand_(empty)_JE10.png?58d74" alt=""><figcaption><p>Brewed using the <a href="https://minecraft.wiki/w/Brewing_Stand">Brewing Stand</a></p></figcaption></figure>
+
+## Potions
+
+* Cobalt Potion
+  * <img src="https://minecraft.wiki/images/Water_Bottle_JE2_BE2.png?acae5" alt="" data-size="line"> [Awkward Potion](https://minecraft.wiki/w/Potion#Base_potions) + <img src="https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694" alt="Cobalt Ingot." data-size="line"> Cobalt Ingot
+
+{% hint style="info" %}
+More info about brewing can be found in the: [brewing-guide.md](../../misc-other-info/brewing-guide.md "mention")
+{% endhint %}
+{% endtab %}
+
 {% tab title="Used in Recips for" %}
 * <img src="https://github.com/user-attachments/assets/8cdeb228-b758-4b2c-873a-208cf8bcdc77" alt="Cobalt Nugget" data-size="line">Cobalt Nugget
 * Heart of the Sea
@@ -41,32 +56,15 @@
 * Item Manipulator
 * Medic Ingot
 {% endtab %}
-
-{% tab title="Brewing" %}
-
-
-<figure><img src="https://minecraft.wiki/images/thumb/Brewing_Stand_(empty)_JE10.png/150px-Brewing_Stand_(empty)_JE10.png?58d74" alt=""><figcaption><p>Brewed using the <a href="https://minecraft.wiki/w/Brewing_Stand">Brewing Stand</a></p></figcaption></figure>
-
-## Potions
-
-* Cobalt Potion
-  * <img src="https://minecraft.wiki/images/Water_Bottle_JE2_BE2.png?acae5" alt="" data-size="line"> [Awkward Potion](https://minecraft.wiki/w/Potion#Base_potions) + <img src="https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694" alt="" data-size="line"> [Cobalt Ingot](cobalt-ingot.md)
-
-
-
-More info about brewing can be found in the: [brewing-guide.md](../../misc-other-info/brewing-guide.md "mention")
-{% endtab %}
 {% endtabs %}
 
 ## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining:
 
 {% tabs %}
 {% tab title="Smelting" %}
+<div><figure><img src="https://minecraft.wiki/images/Lit_Furnace_(S).gif?40e71" alt=""><figcaption><p>      Smelted in a <a href="https://minecraft.wiki/w/Furnace">Furnace</a>     </p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/thumb/Lit_Blast_Furnace_JE1.gif/150px-Lit_Blast_Furnace_JE1.gif?dc6a7" alt="Blast Furnace."><figcaption><p>Smelted in a <a href="https://minecraft.wiki/w/Blast_Furnace">Blast Furnace</a></p></figcaption></figure></div>
 
-
-<div><figure><img src="https://minecraft.wiki/images/Lit_Furnace_(S).gif?40e71" alt=""><figcaption><p>      Smelted in a <a href="https://minecraft.wiki/w/Furnace">Furnace</a>     </p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/thumb/Lit_Blast_Furnace_JE1.gif/150px-Lit_Blast_Furnace_JE1.gif?dc6a7" alt=""><figcaption><p>Smelted in a <a href="https://minecraft.wiki/w/Blast_Furnace">Blast Furnace</a></p></figcaption></figure></div>
-
-<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td></td><td></td><td>1</td></tr></tbody></table>
+<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="https://github.com/user-attachments/assets/7148a15d-59ed-4a2b-81aa-f031d3d5ef55" alt="Raw Cobalt." data-size="line"> Raw Cobalt</td><td><img src="https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694" alt="Cobalt Ingot." data-size="line"> Cobalt Ingot</td><td>1</td></tr></tbody></table>
 {% endtab %}
 
 {% tab title="Recipe" %}
@@ -98,6 +96,42 @@ Items:
 
 Outputs:
 
-* 9x <img src="https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694" alt="Cobalt Ingot." data-size="line"> [Cobalt Ingots](cobalt-ingot.md)
+* 9x <img src="https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694" alt="Cobalt Ingot." data-size="line"> Cobalt Ingots
+{% endtab %}
+
+{% tab title="Structure Loot" %}
+
+
+| Item                                                                                                                                          | Amount | Chance        |
+| --------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------------- |
+| <img src="https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694" alt="Cobalt Ingot." data-size="line"> Cobalt Ingot | 1      | 3/88 (\~3.4%) |
+{% endtab %}
+
+{% tab title="Ore Ring" %}
+<figure><img src="https://github.com/user-attachments/assets/03ca69b9-0b12-4b37-ace1-cf83bda706ca" alt=""><figcaption><p>Obtained by using the <a href="../../tools/rings/ore-ring.md">Ore Ring</a></p></figcaption></figure>
+
+| Item                                                                                                                                          | Amount | Chance |
+| --------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------ |
+| <img src="https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694" alt="Cobalt Ingot." data-size="line"> Cobalt Ingot | 1      | 1/35   |
+{% endtab %}
+
+{% tab title="Present" %}
+
+
+| Item | Amount | Chance |
+| ---- | ------ | ------ |
+|      |        |        |
+{% endtab %}
+
+{% tab title="Mob Loot" %}
+<figure><img src="https://github.com/user-attachments/assets/a9c0bd82-46ac-4cca-8164-5fd90f9602b8" alt=""><figcaption><p>Dropped by the <a href="../../mobs/neutral-mobs/rat.md">Rat</a></p></figcaption></figure>
+
+| Item                                                                                                                                          | Amount | Chance of Holding |
+| --------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ----------------- |
+| <img src="https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694" alt="Cobalt Ingot." data-size="line"> Cobalt Ingot | 1      | 1/10 (10%)        |
+
+{% hint style="info" %}
+The Rat needs to spawn holding this item to be able to drop it
+{% endhint %}
 {% endtab %}
 {% endtabs %}

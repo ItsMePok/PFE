@@ -24,7 +24,7 @@
 
 ### Items:
 
-* <img src="https://github.com/user-attachments/assets/0fbdda80-41e4-4426-aa6d-017f0456eeae" alt="Raw Astral Block." data-size="line"> [Raw Astral Block](../../blocks/raw-ore-blocks/raw-astral-block.md)
+* <img src="https://github.com/user-attachments/assets/0fbdda80-41e4-4426-aa6d-017f0456eeae" alt="Raw Astral Block." data-size="line"> [Raw Astral Block](../../blocks/raw-ore-blocks/block-of-raw-astral.md)
 
 ### Outputs:
 
@@ -45,3 +45,4 @@
 {% endtab %}
 {% endtabs %}
 
+.

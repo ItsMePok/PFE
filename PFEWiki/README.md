@@ -1,7 +1,7 @@
 # Home
 
 {% hint style="info" %}
-#### This Wiki assumes the PFE Version: [v1.2.6.md](changelog-history/full-releases/v1.2.6.md "mention")
+#### This Wiki assumes the PFE Version: [v1.2.7.md](changelog-history/full-releases/v1.2.7.md "mention")
 {% endhint %}
 
 ### Welcome to the wiki for PFE!
@@ -16,7 +16,7 @@ Most things do have some general info until I make the individual pages for them
 
 ## Experimental Toggles Needed: None
 
-## Lowest Supported Minecraft Version: 1.21.50
+## Lowest Supported Minecraft Version: 1.21.60
 
 ***
 

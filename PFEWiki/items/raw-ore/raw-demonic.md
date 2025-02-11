@@ -24,7 +24,7 @@
 
 ### Items:
 
-* <img src="https://github.com/user-attachments/assets/43617968-5e4a-4cd7-b2e0-b44deeec55d0" alt="Raw Demonic Block." data-size="line"> [Raw Demonic Block](../../blocks/raw-ore-blocks/raw-demonic-block.md)
+* <img src="https://github.com/user-attachments/assets/43617968-5e4a-4cd7-b2e0-b44deeec55d0" alt="Raw Demonic Block." data-size="line"> [Raw Demonic Block](../../blocks/raw-ore-blocks/block-of-raw-demonic.md)
 
 ### Outputs:
 

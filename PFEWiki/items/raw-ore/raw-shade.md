@@ -24,7 +24,7 @@
 
 ### Items:
 
-* <img src="https://github.com/user-attachments/assets/dd33c85d-d0d6-4078-bef7-ee007cc7731c" alt="Raw Shade Block." data-size="line"> [Raw Shade Block](../../blocks/raw-ore-blocks/raw-shade-block.md)
+* <img src="https://github.com/user-attachments/assets/dd33c85d-d0d6-4078-bef7-ee007cc7731c" alt="Raw Shade Block." data-size="line"> [Raw Shade Block](../../blocks/raw-ore-blocks/block-of-raw-shade.md)
 
 ### Outputs:
 

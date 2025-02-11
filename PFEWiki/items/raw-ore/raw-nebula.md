@@ -24,7 +24,7 @@
 
 ### Items:
 
-* <img src="https://github.com/user-attachments/assets/160e5d54-b32e-4b78-9d75-676e05f591f0" alt="Raw Nebula Block." data-size="line"> [Raw Nebula Block](../../blocks/raw-ore-blocks/raw-nebula-block.md)
+* <img src="https://github.com/user-attachments/assets/160e5d54-b32e-4b78-9d75-676e05f591f0" alt="Raw Nebula Block." data-size="line"> [Raw Nebula Block](../../blocks/raw-ore-blocks/block-of-raw-nebula.md)
 
 ### Outputs:
 

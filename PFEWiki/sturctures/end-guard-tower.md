@@ -60,24 +60,24 @@ A higher weight makes it more likely to be selected from that pool
 
 (8-16 of these ↓)
 
-| Item                                                                                                                                                                                                  | Amount | Weight |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------ |
-| Necromancer Spawn Egg                                                                                                                                                                                 | 1      | 2      |
-| Knightling Spawn Egg                                                                                                                                                                                  | 1      | 2      |
-| Diamond Token                                                                                                                                                                                         | 1 - 2  | 2      |
-| <img src="https://github.com/user-attachments/assets/160e5d54-b32e-4b78-9d75-676e05f591f0" alt="Raw Nebula Block." data-size="line"> [Raw Nebula Block](../blocks/raw-ore-blocks/raw-nebula-block.md) | 1      | 2      |
-| <img src="https://minecraft.wiki/images/Diamond_JE3_BE3.png?99d00" alt="Diamond." data-size="line"> [Diamond](https://minecraft.wiki/w/Diamond)                                                       | 1 - 5  | 5      |
-| <img src="https://github.com/ItsMePok/PFE/assets/136857747/aa3d5a31-9866-4bd1-bc09-ba7fa6775f7e" alt="" data-size="line"> [Iron Token](../items/tokens/iron-token.md)                                 | 1 - 3  | 8      |
-| Void Potion                                                                                                                                                                                           | 1      | 10     |
-| Nebula Potion                                                                                                                                                                                         | 1      | 10     |
-| <img src="https://github.com/user-attachments/assets/2a203cab-9df5-4865-8ac9-69f02ee1c415" alt="Raw Godly." data-size="line"> [Raw Godly](../items/raw-ore/raw-godly.md)                              | 1 - 5  | 15     |
-| <img src="https://minecraft.wiki/images/Gold_Ingot_JE4_BE2.png?80cd6" alt="" data-size="line"> [Gold Ingot](https://minecraft.wiki/w/Gold_Ingot)                                                      | 2 - 7  | 15     |
-| <img src="https://github.com/user-attachments/assets/27d0d1a6-0c75-453b-bd55-0daf466dd02e" alt="" data-size="line"> [Raw Nebula](../items/raw-ore/raw-nebula.md)                                      | 1      | 15     |
-| Nebula Noodles                                                                                                                                                                                        | 1 - 3  | 25     |
-| <img src="https://github.com/ItsMePok/PFE/assets/136857747/1c78ba2a-4a5b-4b7b-83ff-ed21aa75ebd8" alt="" data-size="line"> [Copper Token ](../items/tokens/copper-token.md)                            | 4 - 6  | 25     |
-| <img src="https://github.com/user-attachments/assets/3ce048b9-eeba-4f16-b798-7d64c64d8019" alt="" data-size="line"> [Raw Void](../items/raw-ore/raw-void.md)                                          | 3 - 7  | 25     |
-| <img src="https://minecraft.wiki/images/Enchanted_Book.gif?b21c4" alt="" data-size="line"> [Enchanted Book](https://minecraft.wiki/w/Enchanted_Book)                                                  | 1      | 20     |
-| Empty                                                                                                                                                                                                 | -      | 15     |
+| Item                                                                                                                                                                                                     | Amount | Weight |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------ |
+| Necromancer Spawn Egg                                                                                                                                                                                    | 1      | 2      |
+| Knightling Spawn Egg                                                                                                                                                                                     | 1      | 2      |
+| Diamond Token                                                                                                                                                                                            | 1 - 2  | 2      |
+| <img src="https://github.com/user-attachments/assets/160e5d54-b32e-4b78-9d75-676e05f591f0" alt="Raw Nebula Block." data-size="line"> [Raw Nebula Block](../blocks/raw-ore-blocks/block-of-raw-nebula.md) | 1      | 2      |
+| <img src="https://minecraft.wiki/images/Diamond_JE3_BE3.png?99d00" alt="Diamond." data-size="line"> [Diamond](https://minecraft.wiki/w/Diamond)                                                          | 1 - 5  | 5      |
+| <img src="https://github.com/ItsMePok/PFE/assets/136857747/aa3d5a31-9866-4bd1-bc09-ba7fa6775f7e" alt="" data-size="line"> [Iron Token](../items/tokens/iron-token.md)                                    | 1 - 3  | 8      |
+| Void Potion                                                                                                                                                                                              | 1      | 10     |
+| Nebula Potion                                                                                                                                                                                            | 1      | 10     |
+| <img src="https://github.com/user-attachments/assets/2a203cab-9df5-4865-8ac9-69f02ee1c415" alt="Raw Godly." data-size="line"> [Raw Godly](../items/raw-ore/raw-godly.md)                                 | 1 - 5  | 15     |
+| <img src="https://minecraft.wiki/images/Gold_Ingot_JE4_BE2.png?80cd6" alt="" data-size="line"> [Gold Ingot](https://minecraft.wiki/w/Gold_Ingot)                                                         | 2 - 7  | 15     |
+| <img src="https://github.com/user-attachments/assets/27d0d1a6-0c75-453b-bd55-0daf466dd02e" alt="" data-size="line"> [Raw Nebula](../items/raw-ore/raw-nebula.md)                                         | 1      | 15     |
+| Nebula Noodles                                                                                                                                                                                           | 1 - 3  | 25     |
+| <img src="https://github.com/ItsMePok/PFE/assets/136857747/1c78ba2a-4a5b-4b7b-83ff-ed21aa75ebd8" alt="" data-size="line"> [Copper Token ](../items/tokens/copper-token.md)                               | 4 - 6  | 25     |
+| <img src="https://github.com/user-attachments/assets/3ce048b9-eeba-4f16-b798-7d64c64d8019" alt="" data-size="line"> [Raw Void](../items/raw-ore/raw-void.md)                                             | 3 - 7  | 25     |
+| <img src="https://minecraft.wiki/images/Enchanted_Book.gif?b21c4" alt="" data-size="line"> [Enchanted Book](https://minecraft.wiki/w/Enchanted_Book)                                                     | 1      | 20     |
+| Empty                                                                                                                                                                                                    | -      | 15     |
 
 (4 of these ↓)
 

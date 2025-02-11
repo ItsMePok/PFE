@@ -24,7 +24,7 @@
 
 ### Items:
 
-* <img src="https://github.com/user-attachments/assets/88aab0b1-c76b-436e-9c83-4e4abf01460e" alt="Raw Galaxy Block." data-size="line"> [Raw Galaxy Block](../../blocks/raw-ore-blocks/raw-galaxy-block.md)
+* <img src="https://github.com/user-attachments/assets/88aab0b1-c76b-436e-9c83-4e4abf01460e" alt="Raw Galaxy Block." data-size="line"> [Raw Galaxy Block](../../blocks/raw-ore-blocks/block-of-raw-galaxy.md)
 
 ### Outputs:
 

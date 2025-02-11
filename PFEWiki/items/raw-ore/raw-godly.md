@@ -24,7 +24,7 @@
 
 ### Items:
 
-* <img src="https://github.com/user-attachments/assets/1f7add1a-6a72-47bc-83b6-795e4bd7301e" alt="Raw Godly Block." data-size="line"> [Raw Godly Block](../../blocks/raw-ore-blocks/raw-godly-block.md)
+* <img src="https://github.com/user-attachments/assets/1f7add1a-6a72-47bc-83b6-795e4bd7301e" alt="Raw Godly Block." data-size="line"> [Raw Godly Block](../../blocks/raw-ore-blocks/block-of-raw-godly.md)
 
 ### Outputs:
 

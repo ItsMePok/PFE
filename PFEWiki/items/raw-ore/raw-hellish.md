@@ -24,7 +24,7 @@
 
 ### Items:
 
-* <img src="https://github.com/user-attachments/assets/c7dfe120-db74-45f5-bd58-416745dfd18b" alt="Raw Hellish Block." data-size="line"> [Raw Hellish Block](../../blocks/raw-ore-blocks/raw-hellish-block.md)
+* <img src="https://github.com/user-attachments/assets/c7dfe120-db74-45f5-bd58-416745dfd18b" alt="Raw Hellish Block." data-size="line"> [Raw Hellish Block](../../blocks/raw-ore-blocks/block-of-raw-hellish.md)
 
 ### Outputs:
 

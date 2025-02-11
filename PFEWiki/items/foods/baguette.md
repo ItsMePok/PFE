@@ -20,6 +20,8 @@
 
 ### &#x20;    [Enchantability](https://minecraft.wiki/w/Enchanting_mechanics#Enchantability): 30
 
+### <img src="https://minecraft.wiki/images/thumb/Composter_(level_8)_BE2.png/150px-Composter_(level_8)_BE2.png?7ecec" alt="Composter" data-size="line"> [Composting Chance](https://minecraft.wiki/w/Composter#Composting): 85%
+
 ## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 64
 
 ## <img src="https://github.com/user-attachments/assets/2033baae-dc33-4acd-a5a3-52e549146bea" alt="" data-size="line"> Smelting:

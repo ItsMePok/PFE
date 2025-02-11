@@ -21,7 +21,7 @@
 Items:
 
 * <img src="https://github.com/user-attachments/assets/21b0e1ab-de86-4f43-8618-453683820f4b" alt="Nebula Ingot" data-size="line"> [Nebula Ingot](../ingots/nebula-ingot.md)
-* <img src="https://github.com/user-attachments/assets/d7998150-2531-4071-91d8-5210c8bc5795" alt="" data-size="line"> [Nebula Block](../../blocks/ore-blocks/nebula-block.md)
+* <img src="https://github.com/user-attachments/assets/d7998150-2531-4071-91d8-5210c8bc5795" alt="" data-size="line"> [Nebula Block](../../blocks/ore-blocks/block-of-nebula.md)
 * <img src="https://github.com/ItsMePok/PFE/assets/136857747/e9d33ff5-9520-4b5d-99f6-33a9906ee64b" alt="Floppy Disk" data-size="line">[Floppy Disk](../boss-drops/floppy-disk.md)
 {% endtab %}
 {% endtabs %}
