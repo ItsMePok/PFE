@@ -10,21 +10,6 @@
 
 ## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 64
 
-## Usage:
-
-{% tabs %}
-{% tab title="Used in Recips for" %}
-* Medic Block
-* Medic Nugget
-* Medic Scythe
-* Medic Pickaxe
-{% endtab %}
-
-{% tab title="Second Tab" %}
-
-{% endtab %}
-{% endtabs %}
-
 ## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining:
 
 {% tabs %}
@@ -36,6 +21,12 @@
 |  ![Godly Ingot](https://github.com/user-attachments/assets/0e423f55-1bf7-4893-a9c2-10b7ba3aab4b) |  ![Godly Ingot](https://github.com/user-attachments/assets/0e423f55-1bf7-4893-a9c2-10b7ba3aab4b) |  ![Godly Ingot](https://github.com/user-attachments/assets/0e423f55-1bf7-4893-a9c2-10b7ba3aab4b) |
 |  ![Godly Ingot](https://github.com/user-attachments/assets/0e423f55-1bf7-4893-a9c2-10b7ba3aab4b) |       ![](https://github.com/user-attachments/assets/e13f83a8-b0d5-47ed-bd3d-9623c9a5fab5)       | ![Cobalt Ingot](https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694) |
 | ![Cobalt Ingot](https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694) | ![Cobalt Ingot](https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694) | ![Cobalt Ingot](https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694) |
+
+Items:
+
+* Godly Ingot
+* Cobalt Ingot
+* Molten Slimeball
 {% endtab %}
 
 {% tab title="Recipe 2" %}
@@ -46,5 +37,13 @@
 |                                                                                                 |
 | :---------------------------------------------------------------------------------------------: |
 | ![Medic Ingot](https://github.com/user-attachments/assets/28cf0752-7ccd-4aa4-91bf-4987fb9da51c) |
+
+Items:
+
+* Medic Block
+
+Outputs:
+
+* 9x: Medic Ingot
 {% endtab %}
 {% endtabs %}

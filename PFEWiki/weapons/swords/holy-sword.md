@@ -1,6 +1,10 @@
 # Holy Sword
 
-.
+{% hint style="danger" %}
+This Page is not complete yet. Check back later
+{% endhint %}
+
+
 
 ## Identifier: poke:holy\_sword <a href="#identifier" id="identifier"></a>
 

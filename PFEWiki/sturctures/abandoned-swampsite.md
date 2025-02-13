@@ -50,11 +50,11 @@ A higher weight makes it more likely to be selected from that pool
 
 (5 of these ↓)
 
-| Item                                                                                                                                                                     | Amount | Weight |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ | ------ |
-| [<img src="https://github.com/ItsMePok/PFE/assets/136857747/aa3d5a31-9866-4bd1-bc09-ba7fa6775f7e" alt="" data-size="line">Iron Token](../items/tokens/iron-token.md)     | 1      | 15     |
-| [<img src="https://github.com/ItsMePok/PFE/assets/136857747/1c78ba2a-4a5b-4b7b-83ff-ed21aa75ebd8" alt="" data-size="line">Copper Token](../items/tokens/copper-token.md) | 1      | 20     |
-| Empty                                                                                                                                                                    | -      | 50     |
+| Item                                                                                                                                                                              | Amount | Weight |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------ |
+| [<img src="https://github.com/ItsMePok/PFE/assets/136857747/aa3d5a31-9866-4bd1-bc09-ba7fa6775f7e" alt="" data-size="line">Iron Token](../items/currency/tokens/iron-token.md)     | 1      | 15     |
+| [<img src="https://github.com/ItsMePok/PFE/assets/136857747/1c78ba2a-4a5b-4b7b-83ff-ed21aa75ebd8" alt="" data-size="line">Copper Token](../items/currency/tokens/copper-token.md) | 1      | 20     |
+| Empty                                                                                                                                                                             | -      | 50     |
 
 ## In-game Screenshots:
 

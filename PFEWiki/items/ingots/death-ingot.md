@@ -8,22 +8,6 @@
 
 ## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 64
 
-## Usage:
-
-{% tabs %}
-{% tab title="Used in Recips for" %}
-* Death Block
-* Death Nugget
-* Death Trapdoor
-* Death Sword
-* Death Pickaxe
-{% endtab %}
-
-{% tab title="Brewing" %}
-* Ingredient for Brewing Death Potion
-{% endtab %}
-{% endtabs %}
-
 ## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining:
 
 {% tabs %}
@@ -35,6 +19,12 @@
 | ![Void Ingot](https://github.com/user-attachments/assets/790448a7-113f-413d-a389-128319f007a7) |    ![Void Ingot](https://github.com/user-attachments/assets/790448a7-113f-413d-a389-128319f007a7)    | ![Void Ingot](https://github.com/user-attachments/assets/790448a7-113f-413d-a389-128319f007a7) |
 | ![Void Ingot](https://github.com/user-attachments/assets/790448a7-113f-413d-a389-128319f007a7) | ![Molten Slimeball](https://github.com/user-attachments/assets/e13f83a8-b0d5-47ed-bd3d-9623c9a5fab5) | ![Onyx Ingot](https://github.com/user-attachments/assets/637c75db-659f-4e80-b8a0-1454c23727b6) |
 | ![Onyx Ingot](https://github.com/user-attachments/assets/637c75db-659f-4e80-b8a0-1454c23727b6) |    ![Onyx Ingot](https://github.com/user-attachments/assets/637c75db-659f-4e80-b8a0-1454c23727b6)    | ![Onyx Ingot](https://github.com/user-attachments/assets/637c75db-659f-4e80-b8a0-1454c23727b6) |
+
+Items:
+
+* Void Ingot
+* Onyx Ingot
+* Molten Slimeball
 {% endtab %}
 
 {% tab title="Recipe 2" %}
@@ -45,5 +35,14 @@
 |                                                                                                 |
 | :---------------------------------------------------------------------------------------------: |
 | ![Death Block](https://github.com/user-attachments/assets/af642063-35e7-4d6f-946b-81bc19c7dd98) |
+
+Items:
+
+* Death Block
+
+Outputs:
+
+* 9x: Death Ingots
 {% endtab %}
 {% endtabs %}
+

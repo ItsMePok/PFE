@@ -10,7 +10,7 @@ Identifier: **poke:upgrade\_core**
 
 ## Obtaining:
 
-* Sold by the[ Token Trader](../../mobs/traders/token-trader.md) for 1 [Gold Token](../tokens/gold-token.md)
+* Sold by the[ Token Trader](../../mobs/traders/token-trader.md) for 1 [Gold Token](../currency/tokens/gold-token.md)
 * Sold by the [Shopkeeper](../../mobs/traders/shopkeeper.md) for 1 [Banished Star x4](../banished-stars/banished-star-x4.md)
 
 ## Used in Crafting:

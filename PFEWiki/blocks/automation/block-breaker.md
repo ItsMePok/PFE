@@ -2,7 +2,7 @@
 
 
 
-<figure><img src="https://github.com/user-attachments/assets/59e91e4a-dab2-4e5f-806e-1af64adc4099" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/user-attachments/assets/59e91e4a-dab2-4e5f-806e-1af64adc4099" alt=""><figcaption><p>Block Breaker Texture Before v1.2.6</p></figcaption></figure>
 
 Identifier: **poke:block\_breaker**
 
@@ -23,9 +23,9 @@ Identifier: **poke:block\_breaker**
 
 |                                                                                                  |                                                                                            |                                                                                                  |
 | :----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: |
-| ![Cobalt Ingot](https://github.com/user-attachments/assets/f2b33b06-67a6-4a44-9c12-0259f8eb17a4) | ![Planks](https://minecraft.wiki/images/thumb/Oak\_Planks.png/150px-Oak\_Planks.png?d9efa) | ![Cobalt Ingot](https://github.com/user-attachments/assets/f2b33b06-67a6-4a44-9c12-0259f8eb17a4) |
-|    ![Planks](https://minecraft.wiki/images/thumb/Oak\_Planks.png/150px-Oak\_Planks.png?d9efa)    | ![](https://github.com/ItsMePok/PFE/assets/136857747/a77121b0-b01f-4fee-8022-bdde925d3c38) |    ![Planks](https://minecraft.wiki/images/thumb/Oak\_Planks.png/150px-Oak\_Planks.png?d9efa)    |
-| ![Cobalt Ingot](https://github.com/user-attachments/assets/f2b33b06-67a6-4a44-9c12-0259f8eb17a4) | ![Planks](https://minecraft.wiki/images/thumb/Oak\_Planks.png/150px-Oak\_Planks.png?d9efa) | ![Cobalt Ingot](https://github.com/user-attachments/assets/f2b33b06-67a6-4a44-9c12-0259f8eb17a4) |
+| ![Cobalt Ingot](https://github.com/user-attachments/assets/f2b33b06-67a6-4a44-9c12-0259f8eb17a4) |  ![Planks](https://minecraft.wiki/images/thumb/Oak_Planks.png/150px-Oak_Planks.png?d9efa)  | ![Cobalt Ingot](https://github.com/user-attachments/assets/f2b33b06-67a6-4a44-9c12-0259f8eb17a4) |
+|     ![Planks](https://minecraft.wiki/images/thumb/Oak_Planks.png/150px-Oak_Planks.png?d9efa)     | ![](https://github.com/ItsMePok/PFE/assets/136857747/a77121b0-b01f-4fee-8022-bdde925d3c38) |     ![Planks](https://minecraft.wiki/images/thumb/Oak_Planks.png/150px-Oak_Planks.png?d9efa)     |
+| ![Cobalt Ingot](https://github.com/user-attachments/assets/f2b33b06-67a6-4a44-9c12-0259f8eb17a4) |  ![Planks](https://minecraft.wiki/images/thumb/Oak_Planks.png/150px-Oak_Planks.png?d9efa)  | ![Cobalt Ingot](https://github.com/user-attachments/assets/f2b33b06-67a6-4a44-9c12-0259f8eb17a4) |
 {% endtab %}
 
 {% tab title="Structures" %}

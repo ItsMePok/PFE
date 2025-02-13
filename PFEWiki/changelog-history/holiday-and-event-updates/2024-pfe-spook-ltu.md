@@ -26,9 +26,9 @@ This was made for Minecraft Version: 1.21.40+
 
 ### Furnace Golem will now spawn <img src="https://github.com/user-attachments/assets/006c02eb-0cef-4288-a074-ad3a1771f1d7" alt="" data-size="line"> [Soul Blazes](../../mobs/hostile-mobs/soul-blaze.md)
 
-### Token Trader now the <img src="https://github.com/user-attachments/assets/5ecfb098-a454-42ea-804f-03537ecbe44f" alt="" data-size="line"> [Spook Pottery Sherd](../../blocks/pottery-sherds/spook-pottery-sherd.md) for 1 [<img src="https://github.com/ItsMePok/PFE/assets/136857747/aa3d5a31-9866-4bd1-bc09-ba7fa6775f7e" alt="" data-size="line">Iron Token](../../items/tokens/iron-token.md)
+### Token Trader now the <img src="https://github.com/user-attachments/assets/5ecfb098-a454-42ea-804f-03537ecbe44f" alt="" data-size="line"> [Spook Pottery Sherd](../../blocks/pottery-sherds/spook-pottery-sherd.md) for 1 [<img src="https://github.com/ItsMePok/PFE/assets/136857747/aa3d5a31-9866-4bd1-bc09-ba7fa6775f7e" alt="" data-size="line">Iron Token](../../items/currency/tokens/iron-token.md)
 
-### Some items from the <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FoRbYFakTMIUgDeJx6IfE%2Fuploads%2Fkmj7g6oG8ekeTfkO9jTM%2Fcosmetic_trader.png?alt=media&#x26;token=d208e7f4-1a04-4c9a-995d-c19838e3d82c" alt="" data-size="line">[Cosmetic Trader](../../mobs/traders/cosmetic-trader.md) has been reduced to 1 [<img src="https://github.com/ItsMePok/PFE/assets/136857747/1c78ba2a-4a5b-4b7b-83ff-ed21aa75ebd8" alt="" data-size="line">Copper Token](../../items/tokens/copper-token.md)
+### Some items from the <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FoRbYFakTMIUgDeJx6IfE%2Fuploads%2Fkmj7g6oG8ekeTfkO9jTM%2Fcosmetic_trader.png?alt=media&#x26;token=d208e7f4-1a04-4c9a-995d-c19838e3d82c" alt="" data-size="line">[Cosmetic Trader](../../mobs/traders/cosmetic-trader.md) has been reduced to 1 [<img src="https://github.com/ItsMePok/PFE/assets/136857747/1c78ba2a-4a5b-4b7b-83ff-ed21aa75ebd8" alt="" data-size="line">Copper Token](../../items/currency/tokens/copper-token.md)
 
 ### Demonic allays can no longer leave the dimension that they are spawned
 
@@ -36,7 +36,7 @@ This was made for Minecraft Version: 1.21.40+
 
 ## ![:melon\~1:](https://cdn.discordapp.com/emojis/1256350899006341221.webp?size=44\&quality=lossless) **Blocks & Ores**![:melon\~1:](https://cdn.discordapp.com/emojis/1256350899006341221.webp?size=44\&quality=lossless)
 
-### <img src="https://cdn.discordapp.com/emojis/1256350899006341221.webp?size=44&#x26;quality=lossless" alt="" data-size="line"> [Carved Melons](../../blocks/melons.md) & Chamfered, Corner Chamfered, Chiseled Limestone now conduct <img src="https://minecraft.wiki/images/thumb/Redstone_Dust_JE2_BE2.png/150px-Redstone_Dust_JE2_BE2.png?8cf17" alt="" data-size="line">[Redstone](https://minecraft.wiki/w/Redstone\_Dust)
+### <img src="https://cdn.discordapp.com/emojis/1256350899006341221.webp?size=44&#x26;quality=lossless" alt="" data-size="line"> [Carved Melons](../../blocks/melons/) & Chamfered, Corner Chamfered, Chiseled Limestone now conduct <img src="https://minecraft.wiki/images/thumb/Redstone_Dust_JE2_BE2.png/150px-Redstone_Dust_JE2_BE2.png?8cf17" alt="" data-size="line">[Redstone](https://minecraft.wiki/w/Redstone_Dust)
 
 ## ![:recipe:](https://cdn.discordapp.com/emojis/1256322223396880527.webp?size=44\&quality=lossless) **Recipes**![:recipe:](https://cdn.discordapp.com/emojis/1256322223396880527.webp?size=44\&quality=lossless) ﻿﻿
 
@@ -86,7 +86,7 @@ they will also spawn even less frequently on lower difficulties
 
 ## ![:bug\~1:](https://cdn.discordapp.com/emojis/1256350899933151273.webp?size=44\&quality=lossless) **Bug Fixes**![:bug\~1:](https://cdn.discordapp.com/emojis/1256350899933151273.webp?size=44\&quality=lossless)
 
-### [Automation Blocks](../../blocks/automation/) work with <img src="https://minecraft.wiki/images/thumb/Redstone_Dust_JE2_BE2.png/150px-Redstone_Dust_JE2_BE2.png?8cf17" alt="" data-size="line">[Redstone](https://minecraft.wiki/w/Redstone\_Dust) again
+### [Automation Blocks](../../blocks/automation/) work with <img src="https://minecraft.wiki/images/thumb/Redstone_Dust_JE2_BE2.png/150px-Redstone_Dust_JE2_BE2.png?8cf17" alt="" data-size="line">[Redstone](https://minecraft.wiki/w/Redstone_Dust) again
 
 {% hint style="warning" %}
 due to another issue the Barometer is still broken, this will be fixed whenever i am able to
@@ -172,11 +172,7 @@ This allows the Nebula Logger to strip logs
 
 * Furnace Golem will now spawn <img src="https://github.com/user-attachments/assets/006c02eb-0cef-4288-a074-ad3a1771f1d7" alt="" data-size="line"> [Soul Blazes](../../mobs/hostile-mobs/soul-blaze.md)
 
-<!---->
-
-* Token Trader now the <img src="https://github.com/user-attachments/assets/5ecfb098-a454-42ea-804f-03537ecbe44f" alt="" data-size="line"> [Spook Pottery Sherd](../../blocks/pottery-sherds/spook-pottery-sherd.md) for 1 [<img src="https://github.com/ItsMePok/PFE/assets/136857747/aa3d5a31-9866-4bd1-bc09-ba7fa6775f7e" alt="" data-size="line">Iron Token](../../items/tokens/iron-token.md)
-
-<!---->
+- Token Trader now the <img src="https://github.com/user-attachments/assets/5ecfb098-a454-42ea-804f-03537ecbe44f" alt="" data-size="line"> [Spook Pottery Sherd](../../blocks/pottery-sherds/spook-pottery-sherd.md) for 1 [<img src="https://github.com/ItsMePok/PFE/assets/136857747/aa3d5a31-9866-4bd1-bc09-ba7fa6775f7e" alt="" data-size="line">Iron Token](../../items/currency/tokens/iron-token.md)
 
 * Some items sold by the cosmetic trader have been reduced to 1 copper token
 

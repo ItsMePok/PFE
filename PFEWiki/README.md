@@ -11,7 +11,7 @@ This wiki is still a work in progress, same pages are not yet made or unfinished
 
 
 
-Most things do have some general info until I make the individual pages for them
+Some things do have some general info until I finish the individual pages for them
 {% endhint %}
 
 ## Experimental Toggles Needed: None
@@ -77,8 +77,6 @@ I highly recommend avoiding those sites as they can contain malicious things
 _you can also dm me on discord: itsmepok_
 
 ***
-
-### Other Links:
 
 ### YouTube
 

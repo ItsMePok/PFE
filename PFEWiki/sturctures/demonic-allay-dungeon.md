@@ -18,7 +18,7 @@ Structures will only generate in newly generated chunks.&#x20;
 If you are using an older world you may need to explore further to find the Structures
 {% endhint %}
 
-* Can generate in the Nether from Y=16 -> Y=108 with a [Gaussian Distribution](https://en.wikipedia.org/wiki/Normal\_distribution)
+* Can generate in the Nether from Y=16 -> Y=108 with a [Gaussian Distribution](https://en.wikipedia.org/wiki/Normal_distribution)
 
 ### Trial Spawner
 
@@ -44,16 +44,16 @@ Demonic Allay's that spawn from an Ominous Trial Spawner will always be holding 
 
 (1 of these if not ominous ↓)
 
-| Item                                                                                                                                                                     | Amount | Weight |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ | ------ |
-| [<img src="https://github.com/ItsMePok/PFE/assets/136857747/aa3d5a31-9866-4bd1-bc09-ba7fa6775f7e" alt="" data-size="line">Iron Token](../items/tokens/iron-token.md)     | 1-2    | 1      |
-| [<img src="https://github.com/ItsMePok/PFE/assets/136857747/1c78ba2a-4a5b-4b7b-83ff-ed21aa75ebd8" alt="" data-size="line">Copper Token](../items/tokens/copper-token.md) | 3-6    | 1      |
+| Item                                                                                                                                                                              | Amount | Weight |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------ |
+| [<img src="https://github.com/ItsMePok/PFE/assets/136857747/aa3d5a31-9866-4bd1-bc09-ba7fa6775f7e" alt="" data-size="line">Iron Token](../items/currency/tokens/iron-token.md)     | 1-2    | 1      |
+| [<img src="https://github.com/ItsMePok/PFE/assets/136857747/1c78ba2a-4a5b-4b7b-83ff-ed21aa75ebd8" alt="" data-size="line">Copper Token](../items/currency/tokens/copper-token.md) | 3-6    | 1      |
 
 (1 of these if ominous ↓)
 
-| Item                                                                                                                                                                 | Amount | Weight |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------ |
-| [<img src="https://github.com/ItsMePok/PFE/assets/136857747/aa3d5a31-9866-4bd1-bc09-ba7fa6775f7e" alt="" data-size="line">Iron Token](../items/tokens/iron-token.md) | 2-7    | 1      |
+| Item                                                                                                                                                                          | Amount | Weight |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------ |
+| [<img src="https://github.com/ItsMePok/PFE/assets/136857747/aa3d5a31-9866-4bd1-bc09-ba7fa6775f7e" alt="" data-size="line">Iron Token](../items/currency/tokens/iron-token.md) | 2-7    | 1      |
 
 ## In-game Screenshots:
 
