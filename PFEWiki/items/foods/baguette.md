@@ -14,7 +14,7 @@
 
 ### &#x20;    <img src="https://minecraft.wiki/images/Slowness_JE4.png?d415c" alt="" data-size="line"> **Speed Modifier while Consuming**: 0.32
 
-## <img src="https://minecraft.wiki/images/thumb/Enchanting_Table.gif/150px-Enchanting_Table.gif?904a7" alt="" data-size="line"> Enchanting
+## <img src="https://minecraft.wiki/images/thumb/Enchanting_Table.gif/150px-Enchanting_Table.gif?904a7" alt="" data-size="line"> Enchanting:
 
 ### &#x20;    <img src="https://minecraft.wiki/images/Enchanted_Book.gif?b21c4" alt="" data-size="line"> Enchantment Type: <img src="https://minecraft.wiki/images/Iron_Sword_JE2_BE2.png?62770" alt="" data-size="line"> [Sword](https://minecraft.wiki/w/Sword#Enchantments)
 

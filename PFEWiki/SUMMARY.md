@@ -853,7 +853,7 @@
     * [Coffee Mug](blocks/misc/coffee-mug.md)
     * [Empty Mug](blocks/misc/empty-mug.md)
     * [Magic 8 Ball](blocks/misc/magic-8-ball.md)
-    * [Page 1](blocks/misc/page-1.md)
+    * [Red Present](blocks/misc/red-present.md)
 * [Mobs](mobs/README.md)
   * [Hostile Mobs](mobs/hostile-mobs/README.md)
     * [Soul Blaze](mobs/hostile-mobs/soul-blaze.md)
@@ -1067,3 +1067,4 @@
       * [Galactic March](misc-other-info/music-sound-effects/music/galactic-march.md)
   * [Planned Features](misc-other-info/planned-features.md)
   * [Page](misc-other-info/page.md)
+* [Obtaining Temp](obtaining-temp.md)
