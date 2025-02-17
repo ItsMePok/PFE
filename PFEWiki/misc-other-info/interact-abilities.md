@@ -7,7 +7,7 @@ This is based on default key bindings, if you have modified your bindings, it is
 
 ***
 
-In Minecraft versions after 1.21.60; you can type`:_input_key.use:` onto chat to see what button/key it would be
+In Minecraft versions after 1.21.60; you can type`:_input_key.use:` into chat to see what button/key it would be
 {% endhint %}
 
 ### Windows / Chrome OS:&#x20;
