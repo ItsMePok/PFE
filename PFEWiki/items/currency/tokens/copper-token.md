@@ -32,6 +32,8 @@
 `Chance` is getting at least the lowest `#` of that item
 {% endhint %}
 
+e
+
 <figure><img src="https://github.com/user-attachments/assets/4f0f486f-3fc3-4bbf-a1c6-3535293ad58d" alt=""><figcaption><p>Dropped by <a href="../../../mobs/bosses/sparky.md">Sparky</a></p></figcaption></figure>
 
 <table><thead><tr><th align="center">Item</th><th width="78" align="center">#</th><th align="center">Chance</th><th data-type="checkbox">Looting Works?</th></tr></thead><tbody><tr><td align="center"><img src="https://github.com/ItsMePok/PFE/assets/136857747/1c78ba2a-4a5b-4b7b-83ff-ed21aa75ebd8" alt="Copper Token." data-size="line"> Copper Token</td><td align="center">20-32</td><td align="center">100%</td><td>true</td></tr></tbody></table>

@@ -68,7 +68,7 @@
 
 Items:
 
-* <img src="https://github.com/user-attachments/assets/436247aa-b55d-4e05-aefc-8cfa2fee648a" alt="Onyx Ingot" data-size="line"> Onyx Ingot
+* <img src="https://github.com/user-attachments/assets/436247aa-b55d-4e05-aefc-8cfa2fee648a" alt="Onyx Ingot" data-size="line"> [Onyx Ingot](../ingots/onyx-ingot.md)
 * [<img src="https://minecraft.wiki/images/thumb/Crying_Obsidian_JE1_BE1.png/150px-Crying_Obsidian_JE1_BE1.png?f1f04" alt="Crying Obsidian" data-size="line"> Crying Obsidian](https://minecraft.wiki/w/Crying_Obsidian)
 {% endtab %}
 

@@ -6,9 +6,9 @@ hidden: true
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:** <a href="#identifier" id="identifier"></a>
 
-## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 64
+## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 64 <a href="#stack-size" id="stack-size"></a>
 
-## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining:
+## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining: <a href="#obtaining" id="obtaining"></a>
 
 ### <img src="https://minecraft.wiki/images/Clock_JE3_BE3.gif?8eaae" alt="" data-size="line"> **Use Duration**:&#x20;
 
@@ -26,9 +26,9 @@ hidden: true
 
 ## <img src="https://github.com/user-attachments/assets/53329be8-f7e5-4c01-b7e4-a27b567c7998" alt="" data-size="line"> Effects Granted:
 
-## <img src="https://github.com/user-attachments/assets/2033baae-dc33-4acd-a5a3-52e549146bea" alt="" data-size="line"> Smelting:
+## <img src="https://github.com/user-attachments/assets/2033baae-dc33-4acd-a5a3-52e549146bea" alt="" data-size="line"> Smelting: <a href="#smelting" id="smelting"></a>
 
-## <img src="https://minecraft.wiki/images/Book_and_Quill_JE2_BE2.png?2128f" alt="Book and Quill." data-size="line"> Description: <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Book_and_Quill_JE2_BE2.png?2128f" alt="Book and Quill." data-size="line"> Description: <a href="#description" id="description"></a>
 
 {% tabs %}
 {% tab title="Block Drop" %}
