@@ -8,7 +8,8 @@
 			}
 		},
 		"components": {
-			"minecraft:icon":"poke_gold_token"
+			"minecraft:rarity": "common",
+			"minecraft:icon": "poke_gold_token"
 		}
 	}
 }

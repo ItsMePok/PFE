@@ -35,12 +35,12 @@
 				}
 			]
 		},
-		{
-			"rolls":{
-				"max":5,
-				"min":2
+		{ // Total Weight: 15
+			"rolls": {
+				"min": 2,
+				"max": 5
 			},
-			"entries":[
+			"entries": [
 				{
 					"type": "item",
 					"name": "poke:apollo_the_snake",
@@ -65,12 +65,12 @@
 					"type": "item",
 					"name": "poke:volt_arrow",
 					"weight": 2,
-					"functions":[
+					"functions": [
 						{
-							"function":"set_count",
-							"count":{
-								"min":2,
-								"max":16
+							"function": "set_count",
+							"count": {
+								"min": 2,
+								"max": 16
 							}
 						}
 					]

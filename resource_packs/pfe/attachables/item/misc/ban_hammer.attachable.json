@@ -7,7 +7,7 @@
 				"default": "entity_alphatest"
 			},
 			"textures": {
-				"default": "textures/items/banished/poke_ban_hammer_3d",
+				"default": "textures/poke/pfe/ban_hammer_attachable",
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {

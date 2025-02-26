@@ -5,7 +5,7 @@
 			"identifier": "poke:caged_soul",
 			"basic_render_parameters": {
 				"material": "particles_alpha",
-				"texture": "textures/particles/pfe/particles"
+				"texture": "textures/poke/pfe/particles"
 			}
 		},
 		"components": {
@@ -31,17 +31,30 @@
 			},
 			"minecraft:particle_initial_speed": 2,
 			"minecraft:particle_motion_dynamic": {
-				"linear_acceleration": [0, 1, 5],
+				"linear_acceleration": [
+					0,
+					1,
+					5
+				],
 				"linear_drag_coefficient": 3
 			},
 			"minecraft:particle_appearance_billboard": {
-				"size": [0.25, 0.25],
+				"size": [
+					0.25,
+					0.25
+				],
 				"facing_camera_mode": "lookat_xyz",
 				"uv": {
 					"texture_width": 128,
 					"texture_height": 128,
-					"uv": ["Math.floor(v.particle_random_3 * 2) * 8", "88+Math.floor(v.particle_random_4 * 2) * 8"],
-					"uv_size": [8, 8]
+					"uv": [
+						"Math.floor(v.particle_random_3 * 2) * 8",
+						"88+Math.floor(v.particle_random_4 * 2) * 8"
+					],
+					"uv_size": [
+						8,
+						8
+					]
 				}
 			},
 			"minecraft:particle_motion_collision": {

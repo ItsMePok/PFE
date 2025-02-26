@@ -3,13 +3,15 @@
 	"minecraft:attachable": {
 		"description": {
 			"identifier": "poke:quantum_teleporter",
-			"render_controllers": ["controller.render.item_default"],
+			"render_controllers": [
+				"controller.render.item_default"
+			],
 			"materials": {
 				"default": "entity_alphatest",
 				"enchanted": "entity_alphatest_glint"
 			},
 			"textures": {
-				"default": "textures/items/electric/poke_quantum_teleporter",
+				"default": "textures/poke/pfe/quantum_teleporter",
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {

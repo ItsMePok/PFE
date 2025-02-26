@@ -1,6 +1,6 @@
 {
 	"pools": [
-		{
+		{ // Total: 35 Items (2/7 chance to get a item)
 			"rolls": 10,
 			"entries": [
 				{

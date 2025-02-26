@@ -1,9 +1,12 @@
 import { Dimension, EntityComponentTypes, EquipmentSlot, ItemComponentTypes, ItemComponentUseEvent, ItemStack, Player, system, Vector3 } from "@minecraft/server";
 import { MinecraftBlockTypes, MinecraftEnchantmentTypes } from "@minecraft/vanilla-data";
 import { ActionFormData, ModalFormData } from "@minecraft/server-ui";
-import { PokeDamageItemUB } from "./commonFunctions";
+import { PokeDamageItemUB, PokeSaveProperty } from "./commonFunctions";
+const PFEHaxelVersion:number = 2
+const PFEHaxelInfoProperty = `pfe:haxelInfo`
 interface PFEHaxelConfig{
   "blacklist": string[];
+  "v":undefined|typeof PFEHaxelVersion
 }
 const PFEHaxelConfigDefault:PFEHaxelConfig = {
   "blacklist":[
@@ -14,7 +17,8 @@ const PFEHaxelConfigDefault:PFEHaxelConfig = {
     MinecraftBlockTypes.TrialSpawner,
     MinecraftBlockTypes.Vault,
     MinecraftBlockTypes.Bed
-  ]
+  ],
+  "v": PFEHaxelVersion
 }
 interface PFEHaxelComponentInfo {
   "radius": Vector3;
@@ -23,17 +27,35 @@ interface PFEHaxelComponentInfo {
 }
 class PFEHaxelMining{
   onUse(data:ItemComponentUseEvent){
+    if (!data.itemStack)return;
     //@ts-ignore
-    let dynamicProperty:PFEHaxelConfig= data.itemStack?.getDynamicProperty('pfe:haxelInfo')
+    let dynamicProperty:PFEHaxelConfig= data.itemStack.getDynamicProperty('pfe:haxelInfo')
     //console.warn(dynamicProperty)
     if(dynamicProperty == undefined){
-      data.itemStack?.setDynamicProperty('pfe:haxelInfo',JSON.stringify(PFEHaxelConfigDefault))
+      data.itemStack.setDynamicProperty('pfe:haxelInfo',JSON.stringify(PFEHaxelConfigDefault))
       //@ts-ignore
       data.source.getComponent(EntityComponentTypes.Equippable)!.setEquipment(EquipmentSlot.Mainhand, data.itemStack)
       dynamicProperty=PFEHaxelConfigDefault
       //@ts-ignore
     }else dynamicProperty=JSON.parse(dynamicProperty)
-    const ItemTags = data.itemStack!.getTags().toString();
+    if (!dynamicProperty.v){// Identifiers in the blacklist could not work correctly if it had uppercase letters
+      if (!(dynamicProperty.blacklist.length < 1)){
+        let newBlacklist:string[] = []
+        for(let i = dynamicProperty.blacklist.length-1; i > -1; i--){
+          let blacklistedBlock = dynamicProperty.blacklist.at(i)
+          if (!blacklistedBlock)continue
+          let newBlacklistedBlock = blacklistedBlock.replace(blacklistedBlock,blacklistedBlock.toLowerCase())
+          newBlacklist.concat([newBlacklistedBlock])
+        }
+        let newProperty:PFEHaxelConfig = {
+          "blacklist":newBlacklist,
+          "v":PFEHaxelVersion
+        }
+        PokeSaveProperty(PFEHaxelInfoProperty,data.itemStack,JSON.stringify(newProperty),data.source,EquipmentSlot.Mainhand)
+        dynamicProperty = newProperty
+      }
+    }
+    const ItemTags = data.itemStack.getTags().toString();
     let ComponentInfo:PFEHaxelComponentInfo = JSON.parse(ItemTags.substring(ItemTags.indexOf('pfe:HaxelMining:'),ItemTags.indexOf(':pfeHaxelMiningEnd')).substring(16));
     if(data.source.isSneaking){
       PFEHaxelConfigMenu(data,ComponentInfo)
@@ -132,7 +154,7 @@ Ui.show(data.source).then((response =>{
     if (!block.includes(':')){
       block = `minecraft:${block}`
     }
-    dynamicProperty.blacklist=dynamicProperty.blacklist.concat(block)
+    dynamicProperty.blacklist=dynamicProperty.blacklist.concat(block.toLowerCase())/* Identifiers must be lowercase (some devices could auto-capitalize the first letter)*/
     data.itemStack?.setDynamicProperty('pfe:haxelInfo',JSON.stringify(dynamicProperty))
     //@ts-ignore
     data.source.getComponent(EntityComponentTypes.Equippable)!.setEquipment(EquipmentSlot.Mainhand, data.itemStack)

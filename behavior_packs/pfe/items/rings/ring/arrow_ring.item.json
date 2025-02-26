@@ -14,12 +14,14 @@
 			"minecraft:repairable": {
 				"repair_items": [
 					{
-						"items": ["poke:repair_core"],
+						"items": [
+							"poke:repair_core"
+						],
 						"repair_amount": "query.max_durability"
 					}
 				]
 			},
-			"minecraft:icon":"poke_arrow_ring",
+			"minecraft:icon": "poke_arrow_ring",
 			"minecraft:cooldown": {
 				"duration": 0.1,
 				"category": "poke:arrow_ring"
@@ -36,9 +38,11 @@
 				"slot": "flintsteel",
 				"value": 7
 			},
-			"minecraft:tags": {"tags": [
-				"poke:arrow_ring_proj"//Projectile id for script
-			]},
+			"minecraft:tags": {
+				"tags": [
+					"poke:arrow_ring_proj" //Projectile id for script
+				]
+			},
 			"minecraft:use_modifiers": {
 				"use_duration": 0,
 				"movement_modifier": 1

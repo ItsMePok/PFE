@@ -8,7 +8,7 @@
 			}
 		},
 		"components": {
-			"minecraft:icon":"poke_item_voider",
+			"minecraft:icon": "poke_item_voider",
 			"minecraft:durability": {
 				"max_durability": 450,
 				"damage_chance": {
@@ -37,10 +37,12 @@
 					}
 				]
 			},
-			"minecraft:tags": {"tags": [
-				"pfe:Command:kill @e[type=item,r=50]:pfeCommandEnd"
-			]},
-			"minecraft:custom_components":[
+			"minecraft:tags": {
+				"tags": [
+					"pfe:Command:kill @e[type=item,r=50]:pfeCommandEnd"
+				]
+			},
+			"minecraft:custom_components": [
 				"poke:cc_on_use",
 				"poke:normalMining"
 			],

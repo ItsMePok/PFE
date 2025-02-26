@@ -3,13 +3,15 @@
 	"minecraft:attachable": {
 		"description": {
 			"identifier": "poke:demonic_slasher",
-			"render_controllers": ["controller.render.item_default"],
+			"render_controllers": [
+				"controller.render.item_default"
+			],
 			"materials": {
 				"default": "entity_alphatest",
 				"enchanted": "entity_alphatest_glint"
 			},
 			"textures": {
-				"default": "textures/items/demonic/poke_demonic_slasher",
+				"default": "textures/poke/pfe/demonic_slasher",
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {

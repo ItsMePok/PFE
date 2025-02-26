@@ -8,7 +8,8 @@
 			}
 		},
 		"components": {
-			"minecraft:icon":"poke_dollor_bill_1"
+			"minecraft:rarity": "common",
+			"minecraft:icon": "poke_dollar_bill_1"
 		}
 	}
 }

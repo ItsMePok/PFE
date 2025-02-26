@@ -7,15 +7,18 @@
 				"category": "equipment"
 			}
 		},
-		"components": {"minecraft:hover_text_color":"green",
-			"minecraft:icon":"poke_quantum_teleporter",
+		"components": {
+			"minecraft:hover_text_color": "green",
+			"minecraft:icon": "poke_quantum_teleporter",
 			"minecraft:hand_equipped": {
 				"value": true
 			},
-			"minecraft:tags": {"tags": [
-				"pfe:Command:tp @e[family=!pfe_exclude,type=!player] @s:pfeCommandEnd"
-			]},
-			"minecraft:custom_components":[
+			"minecraft:tags": {
+				"tags": [
+					"pfe:Command:tp @e[family=!pfe_exclude,type=!player] @s:pfeCommandEnd"
+				]
+			},
+			"minecraft:custom_components": [
 				"poke:cc_on_use",
 				"poke:normalMining"
 			],
@@ -23,7 +26,7 @@
 				"use_duration": 0,
 				"movement_modifier": 1
 			},
-			"minecraft:cooldown":{
+			"minecraft:cooldown": {
 				"category": "poke:quantum_teleporter",
 				"duration": 0.2
 			}

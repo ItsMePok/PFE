@@ -11,12 +11,14 @@
 			"minecraft:repairable": {
 				"repair_items": [
 					{
-						"items": ["poke:repair_core"],
+						"items": [
+							"poke:repair_core"
+						],
 						"repair_amount": "query.max_durability"
 					}
 				]
 			},
-			"minecraft:icon":"poke_springy_ring",
+			"minecraft:icon": "poke_springy_ring",
 			"minecraft:max_stack_size": 1,
 			"minecraft:cooldown": {
 				"category": "poke:springy_ring",
@@ -33,10 +35,12 @@
 				"slot": "flintsteel",
 				"value": 18
 			},
-			"minecraft:tags": {"tags": [
-				"pfe:Command:function poke/pfe/springy_ring_event:pfeCommandEnd"
-			]},
-			"minecraft:custom_components":[
+			"minecraft:tags": {
+				"tags": [
+					"pfe:Command:function poke/pfe/springy_ring_event:pfeCommandEnd"
+				]
+			},
+			"minecraft:custom_components": [
 				"poke:cc_on_use",
 				"poke:normalMining"
 			],

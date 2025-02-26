@@ -2,14 +2,16 @@
 	"format_version": "1.10.0",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "poke:ring_1",
-			"render_controllers": ["controller.render.item_default"],
+			"identifier": "poke:ring_1", // Rain Ring
+			"render_controllers": [
+				"controller.render.item_default"
+			],
 			"materials": {
 				"default": "entity_alphatest",
 				"enchanted": "entity_alphatest_glint"
 			},
 			"textures": {
-				"default": "textures/items/rings/poke_ring_1",
+				"default": "textures/poke/pfe/rain_ring",
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {

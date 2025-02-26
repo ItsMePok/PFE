@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.nebula_bug",
+				"identifier": "geometry.poke_pfe.nebula_bug",
 				"texture_width": 64,
 				"texture_height": 32,
 				"visible_bounds_width": 3,

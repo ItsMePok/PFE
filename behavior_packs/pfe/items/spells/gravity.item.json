@@ -8,10 +8,10 @@
 			}
 		},
 		"components": {
-			"minecraft:icon":"poke_gravity_spell",
+			"minecraft:icon": "poke_gravity_spell",
 			"minecraft:use_modifiers": {
 				"movement_modifier": 0.8,
-				"use_duration": 0.01
+				"use_duration": 999
 			},
 			"minecraft:cooldown": {
 				"category": "poke:gravity_spell",
@@ -22,7 +22,8 @@
 				"ammunition": [
 					{
 						"item": "poke:gravity_spell",
-						"use_in_creative": true,"search_inventory": true
+						"use_in_creative": true,
+						"search_inventory": true
 					}
 				],
 				"charge_on_draw": false,
@@ -33,7 +34,7 @@
 				"minimum_critical_power": 0,
 				"projectile_entity": "poke:gravity_spell"
 			},
-			"minecraft:hover_text_color":"material_amethyst"
+			"minecraft:hover_text_color": "material_amethyst"
 		}
 	}
 }

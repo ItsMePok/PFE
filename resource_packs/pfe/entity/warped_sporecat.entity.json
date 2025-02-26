@@ -1,52 +1,53 @@
 {
-	"format_version":"1.8.0",
-	"minecraft:client_entity":{
-		"description":{
-			"identifier":"poke:warped_sporecat",
-			"materials":{
-				"default":"cat"
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "poke:warped_sporecat",
+			"materials": {
+				"default": "cat"
 			},
-			"textures":{
-				"white":"textures/entity/passive/poke_sporecat/white",
-				"red":"textures/entity/passive/poke_sporecat/red",
-				"siamese":"textures/entity/passive/poke_sporecat/siamese",
-				"persian":"textures/entity/passive/poke_sporecat/persian",
-				"calico":"textures/entity/passive/poke_sporecat/calico",
-				"white_tame":"textures/entity/passive/poke_sporecat/white_tame",
-				"red_tame":"textures/entity/passive/poke_sporecat/redtabby_tame",
-				"siamese_tame":"textures/entity/passive/poke_sporecat/siamesecat_tame",
-				"calico_tame":"textures/entity/passive/poke_sporecat/calico_tame",
-				"persian_tame":"textures/entity/passive/poke_sporecat/persian_tame",
-				"bella":"textures/entity/passive/poke_sporecat/bella",
-				"bella_tame":"textures/entity/passive/poke_sporecat/bella_tame"
+			"textures": {
+				"white": "textures/entity/passive/poke_sporecat/white",
+				"red": "textures/entity/passive/poke_sporecat/red",
+				"siamese": "textures/entity/passive/poke_sporecat/siamese",
+				"persian": "textures/entity/passive/poke_sporecat/persian",
+				"calico": "textures/entity/passive/poke_sporecat/calico",
+				"white_tame": "textures/entity/passive/poke_sporecat/white_tame",
+				"red_tame": "textures/entity/passive/poke_sporecat/redtabby_tame",
+				"siamese_tame": "textures/entity/passive/poke_sporecat/siamesecat_tame",
+				"calico_tame": "textures/entity/passive/poke_sporecat/calico_tame",
+				"persian_tame": "textures/entity/passive/poke_sporecat/persian_tame",
+				"bella": "textures/entity/passive/poke_sporecat/bella",
+				"bella_tame": "textures/entity/passive/poke_sporecat/bella_tame"
 			},
-			"geometry":{
-				"default":"geometry.poke_pfe.sporecat"
+			"geometry": {
+				"default": "geometry.poke_pfe.sporecat"
 			},
-			"animations":{
-				"sneak":"animation.warped_sporecat.sneak",
-				"walk":"animation.warped_sporecat.walk",
-				"sprint":"animation.warped_sporecat.sprint",
-				"sit":"animation.warped_sporecat.sit",
-				"look_at_target":"animation.common.look_at_target",
-				"baby_transform":"animation.warped_sporecat.baby_transform",
-				"lie_down":"animation.warped_sporecat.lie_down"
+			"animations": {
+				"sneak": "animation.warped_sporecat.sneak",
+				"walk": "animation.warped_sporecat.walk",
+				"sprint": "animation.warped_sporecat.sprint",
+				"sit": "animation.warped_sporecat.sit",
+				"look_at_target": "animation.common.look_at_target",
+				"baby_transform": "animation.warped_sporecat.baby_transform",
+				"lie_down": "animation.warped_sporecat.lie_down"
 			},
-			"animation_controllers":[
+			"animation_controllers": [
 				{
-					"look_at_target":"controller.animation.cat.look_at_target"
+					"look_at_target": "controller.animation.cat.look_at_target"
 				},
 				{
-					"move":"controller.animation.cat.move"
+					"move": "controller.animation.cat.move"
 				},
 				{
-					"baby":"controller.animation.cat.baby"
+					"baby": "controller.animation.cat.baby"
 				}
 			],
-			"render_controllers":["controller.render.poke_pfe.sporecat"],
-			"spawn_egg":{
-				"base_color":"#12b8b2",
-				"overlay_color":"#ff8900"
+			"render_controllers": [
+				"controller.render.poke_pfe.sporecat"
+			],
+			"spawn_egg": {
+				"texture": "poke_sporecat_spawn_egg"
 			}
 		}
 	}

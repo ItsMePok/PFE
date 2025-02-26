@@ -1,36 +1,37 @@
 {
-	"format_version":"1.8.0",
-	"minecraft:client_entity":{
-		"description":{
-			"identifier":"poke:piranha",
-			"materials":{
-				"default":"entity_alphatest"
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "poke:piranha",
+			"materials": {
+				"default": "entity_alphatest"
 			},
-			"textures":{
-				"default":"textures/entity/hostile/poke_piranha"
+			"textures": {
+				"default": "textures/entity/hostile/poke_piranha"
 			},
-			"geometry":{
-				"default":"geometry.poke_pfe.piranha"
+			"geometry": {
+				"default": "geometry.poke_pfe.piranha"
 			},
-			"scripts":{
-				"pre_animation":[
+			"scripts": {
+				"pre_animation": [
 					"variable.zrot=!query.is_in_water?Math.cos((query.time_stamp+query.frame_alpha)*14.32)*90:0.0;",
 					"variable.animationamountblend=Math.lerp(variable.AnimationAmountPrev,variable.AnimationAmount,query.frame_alpha);"
 				]
 			},
-			"animations":{
-				"flop":"animation.poke_pfe.piranha.flop",
-				"swim":"animation.poke_pfe.piranha.swim"
+			"animations": {
+				"flop": "animation.poke_pfe.piranha.flop",
+				"swim": "animation.poke_pfe.piranha.swim"
 			},
-			"animation_controllers":[
+			"animation_controllers": [
 				{
-					"general":"controller.animation.fish.general"
+					"general": "controller.animation.fish.general"
 				}
 			],
-			"render_controllers":["controller.render.poke_pfe.default"],
-			"spawn_egg":{
-				"base_color":"#f91414",
-				"overlay_color":"#00b8e2"
+			"render_controllers": [
+				"controller.render.poke_pfe.default"
+			],
+			"spawn_egg": {
+				"texture": "poke_piranha_spawn_egg"
 			}
 		}
 	}

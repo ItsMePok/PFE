@@ -1,6 +1,6 @@
 {
     "pools": [
-      {
+      { // Total Weight: 41
         "rolls": {
           "min": 2,
           "max": 5
@@ -108,7 +108,7 @@
           }
         ]
       },
-      {
+      { // Total Weight: 116
         "rolls": {
           "min": 1,
           "max": 2

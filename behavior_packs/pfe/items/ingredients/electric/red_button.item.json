@@ -8,11 +8,13 @@
 			}
 		},
 		"components": {
-			"minecraft:icon":"poke_red_button",
-			"minecraft:tags": {"tags": [
-				"pfe:Command:stopsound @s:pfeCommandEnd"
-			]},
-			"minecraft:custom_components":[
+			"minecraft:icon": "poke_red_button",
+			"minecraft:tags": {
+				"tags": [
+					"pfe:Command:stopsound @s:pfeCommandEnd"
+				]
+			},
+			"minecraft:custom_components": [
 				"poke:cc_on_use",
 				"poke:normalMining"
 			],
@@ -20,7 +22,7 @@
 				"use_duration": 0,
 				"movement_modifier": 1
 			},
-			"minecraft:cooldown":{
+			"minecraft:cooldown": {
 				"category": "poke:red_button",
 				"duration": 0.2
 			}

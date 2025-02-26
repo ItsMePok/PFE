@@ -225,6 +225,10 @@ function PokeGetObjectById(array:any[], id:string|number){
 
 /**
  * 
+ * Saves a dynamic property to an item
+ * 
+ * `slot` can be defined to override what slot this item will get replaced to (default: Mainhand)
+ * 
  * returns false if it fails to save the property
  */
 function PokeSaveProperty(propertyId:string,item:ItemStack,save:string|boolean|number|Vector3,entity:Entity,slot?:EquipmentSlot){

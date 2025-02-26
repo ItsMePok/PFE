@@ -1,4 +1,4 @@
-{//Blaze Ring
+{ //Blaze Ring
 	"format_version": "1.21.60",
 	"minecraft:item": {
 		"description": {
@@ -14,12 +14,14 @@
 			"minecraft:repairable": {
 				"repair_items": [
 					{
-						"items": ["poke:repair_core"],
+						"items": [
+							"poke:repair_core"
+						],
 						"repair_amount": "query.max_durability"
 					}
 				]
 			},
-			"minecraft:icon":"poke_ring_2",
+			"minecraft:icon": "poke_blaze_ring",
 			"minecraft:cooldown": {
 				"category": "poke:ring_2",
 				"duration": 15
@@ -36,9 +38,11 @@
 				"value": 23
 			},
 			"minecraft:max_stack_size": 1,
-			"minecraft:tags": {"tags": [
-				"poke:blaze_ring_proj"//Projectile id for script
-			]},
+			"minecraft:tags": {
+				"tags": [
+					"poke:blaze_ring_proj" //Projectile id for script
+				]
+			},
 			"minecraft:use_modifiers": {
 				"use_duration": 0,
 				"movement_modifier": 0.25

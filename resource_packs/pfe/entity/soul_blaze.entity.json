@@ -23,11 +23,17 @@
 			"particle_effects": {
 				"charged_flames": "poke:soulflame_emitter"
 			},
-			"scripts": {"animate": ["flame","move_controller"]},
-			"render_controllers": ["controller.render.blaze"],
+			"scripts": {
+				"animate": [
+					"flame",
+					"move_controller"
+				]
+			},
+			"render_controllers": [
+				"controller.render.blaze"
+			],
 			"spawn_egg": {
-				"base_color": "#00fff6",
-				"overlay_color": "#644937"
+				"texture": "poke_soul_blaze_spawn_egg"
 			}
 		}
 	}

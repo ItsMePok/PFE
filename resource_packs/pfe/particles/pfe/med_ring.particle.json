@@ -5,7 +5,7 @@
 			"identifier": "poke:med_ring_particle",
 			"basic_render_parameters": {
 				"material": "particles_alpha",
-				"texture": "textures/particles/pfe/particles"
+				"texture": "textures/poke/pfe/particles"
 			}
 		},
 		"components": {
@@ -19,7 +19,11 @@
 				"active_time": 1
 			},
 			"minecraft:emitter_shape_sphere": {
-				"offset": [0, 0.8, 0],
+				"offset": [
+					0,
+					0.8,
+					0
+				],
 				"radius": 0.5,
 				"surface_only": true,
 				"direction": "outwards"
@@ -32,18 +36,31 @@
 			},
 			"minecraft:particle_initial_speed": 1.5,
 			"minecraft:particle_motion_dynamic": {
-				"linear_acceleration": [0, 1, 0],
+				"linear_acceleration": [
+					0,
+					1,
+					0
+				],
 				"linear_drag_coefficient": 0.5,
 				"rotation_acceleration": "variable.particle_random_2 * 35"
 			},
 			"minecraft:particle_appearance_billboard": {
-				"size": ["math.max(0,variable.size*(1-variable.particle_age))", "math.max(0,variable.size*(1-variable.particle_age))"],
+				"size": [
+					"math.max(0,variable.size*(1-variable.particle_age))",
+					"math.max(0,variable.size*(1-variable.particle_age))"
+				],
 				"facing_camera_mode": "lookat_xyz",
 				"uv": {
 					"texture_width": 128,
 					"texture_height": 128,
-					"uv": [0, 41],
-					"uv_size": [8, 7]
+					"uv": [
+						0,
+						41
+					],
+					"uv_size": [
+						8,
+						7
+					]
 				}
 			},
 			"minecraft:particle_motion_collision": {

@@ -16,7 +16,7 @@
 			"minecraft:icon":"poke_galaxy_bow",//Item Texture in the hotbar (held texture is defined in the attachable due to it having animations)
 			"minecraft:use_modifiers":{//Use modifiers controls some of the thing that happen while the player uses this item
 				"movement_modifier":0.3,//Slows the player down while using the item
-				"use_duration":0.01//Use Duration. basically how long until the item is done being used (not 100% sure why but this basically makes it infinite)
+				"use_duration":90//Use Duration. basically how long until the item is done being used
 			},
 			"minecraft:max_stack_size":1,//the Stack size of the item 1 / unstackable
 			"minecraft:shooter":{

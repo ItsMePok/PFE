@@ -12,13 +12,13 @@
 				"max_durability": 1150
 			},
 			"minecraft:hand_equipped": true,
-			"minecraft:icon":"poke_zombifier",
+			"minecraft:icon": "poke_zombifier",
 			"minecraft:cooldown": {
 				"category": "poke:zombifier",
 				"duration": 1.5
 			},
 			"minecraft:max_stack_size": 1,
-			"minecraft:custom_components":[
+			"minecraft:custom_components": [
 				"poke:cc_on_use",
 				"poke:normalMining"
 			],
@@ -26,7 +26,11 @@
 				"use_duration": 0,
 				"movement_modifier": 1
 			},
-			"minecraft:tags": {"tags": ["pfe:Command:function poke/pfe/zombfier:pfeCommandEnd"]}
+			"minecraft:tags": {
+				"tags": [
+					"pfe:Command:function poke/pfe/zombfier:pfeCommandEnd"
+				]
+			}
 		}
 	}
 }

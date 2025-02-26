@@ -9,11 +9,11 @@
 		},
 		"components": {
 			"minecraft:max_stack_size": 1,
-			"minecraft:icon":"poke_windzooka",
+			"minecraft:icon": "poke_windzooka",
 			"minecraft:hand_equipped": {
 				"value": true
 			},
-			"minecraft:allow_off_hand": true, 
+			"minecraft:allow_off_hand": true,
 			"minecraft:cooldown": {
 				"category": "poke:windzooka",
 				"duration": 0.5
@@ -33,14 +33,16 @@
 				"slot": "shield",
 				"value": 30
 			},
-			"minecraft:tags": {"tags": [
-				"function poke/pfe/windzooka"
-			]},
+			"minecraft:tags": {
+				"tags": [
+					"function poke/pfe/windzooka"
+				]
+			},
 			"minecraft:custom_components": [
 				"poke:cc_zooka",
 				"poke:normalMining"
 			],
-			"minecraft:rarity":"uncommon"
+			"minecraft:rarity": "uncommon"
 		}
 	}
 }

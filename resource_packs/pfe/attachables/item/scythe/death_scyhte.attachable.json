@@ -3,13 +3,15 @@
 	"minecraft:attachable": {
 		"description": {
 			"identifier": "poke:death_scythe",
-			"render_controllers": ["controller.render.item_default"],
+			"render_controllers": [
+				"controller.render.item_default"
+			],
 			"materials": {
 				"default": "entity_alphatest",
 				"enchanted": "entity_alphatest_glint"
 			},
 			"textures": {
-				"default": "textures/items/scythe/poke_death",
+				"default": "textures/poke/pfe/death_scythe",
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {

@@ -9,32 +9,38 @@
 		},
 		"components": {
 			"minecraft:repairable": {
-					"repair_items": [
-						{
-							"items": ["poke:repair_core"],
-							"repair_amount": "query.max_durability"
-						}
-					]
+				"repair_items": [
+					{
+						"items": [
+							"poke:repair_core"
+						],
+						"repair_amount": "query.max_durability"
+					}
+				]
 			},
 			"minecraft:max_stack_size": 1,
-			"minecraft:icon":"poke_gravity_ring",
+			"minecraft:icon": "poke_gravity_ring",
 			"minecraft:cooldown": {
 				"category": "poke.gravity_ring",
 				"duration": 1
 			},
 			"minecraft:durability": {
-					"max_durability": 3500,
-					"damage_chance": {
-						"min": 60,
-						"max": 100
-					}
+				"max_durability": 3500,
+				"damage_chance": {
+					"min": 60,
+					"max": 100
+				}
 			},
 			"minecraft:enchantable": {
 				"slot": "flintsteel",
 				"value": 37
 			},
-			"minecraft:tags": {"tags": ["pfe:Command:function poke/pfe/gravity_ring:pfeCommandEnd"]},
-			"minecraft:custom_components":[
+			"minecraft:tags": {
+				"tags": [
+					"pfe:Command:function poke/pfe/gravity_ring:pfeCommandEnd"
+				]
+			},
+			"minecraft:custom_components": [
 				"poke:cc_on_use",
 				"poke:normalMining"
 			],

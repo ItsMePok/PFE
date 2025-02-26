@@ -1,35 +1,40 @@
 {
-	"format_version":"1.10.0",
-	"minecraft:client_entity":{
-		"description":{
-			"identifier":"poke:necromancer",
-			"materials":{
-				"default":"entity_emissive_alpha"
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "poke:necromancer",
+			"materials": {
+				"default": "entity_emissive_alpha"
 			},
-			"textures":{
-				"default":"textures/entity/bosses/poke_necromancer"
+			"textures": {
+				"default": "textures/entity/bosses/poke_necromancer" //2
 			},
-			"geometry":{
-				"default":"geometry.poke_pfe.necromancer"
+			"geometry": {
+				"default": "geometry.poke_pfe.necromancer"
 			},
-			"animations":{
-				"look_at_target_default":"animation.common.look_at_target",
-				"idle":"animation.poke_pfe.necromancer.idle",
-				"walk":"animation.poke_pfe.necromancer.walk",
-				"summon":"animation.poke_pfe.necromancer.summon",
-				"melee_attack":"animation.poke_pfe.necromancer.melee_attack",
-				"controller":"controller.animation.poke_pfe.necromancer",
-				"melee_attack_controller":"controller.animation.poke_pfe.necromancer.melee_attacking"
+			"animations": {
+				"look_at_target_default": "animation.common.look_at_target",
+				"idle": "animation.poke_pfe.necromancer.idle",
+				"walk": "animation.poke_pfe.necromancer.walk",
+				"summon": "animation.poke_pfe.necromancer.summon",
+				"melee_attack": "animation.poke_pfe.necromancer.melee_attack",
+				"controller": "controller.animation.poke_pfe.necromancer",
+				"melee_attack_controller": "controller.animation.poke_pfe.necromancer.melee_attacking"
 			},
-			"scripts":{
-				"animate":["controller","melee_attack_controller"]
+			"scripts": {
+				"animate": [
+					"controller",
+					"melee_attack_controller"
+				]
 			},
-			"particle_effects":{
-				"spell":"minecraft:evoker_spell"
+			"particle_effects": {
+				"spell": "minecraft:evoker_spell" //2
 			},
-			"render_controllers":["controller.render.poke_pfe.default"],
-			"spawn_egg":{
-				"texture":"poke_spawn_necromancer"
+			"render_controllers": [
+				"controller.render.poke_pfe.default"
+			],
+			"spawn_egg": {
+				"texture": "poke_necromancer_spawn_egg"
 			}
 		}
 	}

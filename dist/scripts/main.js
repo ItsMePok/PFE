@@ -1603,7 +1603,6 @@ var MinecraftItemTypes = ((MinecraftItemTypes2) => {
   MinecraftItemTypes2["AcaciaTrapdoor"] = "minecraft:acacia_trapdoor";
   MinecraftItemTypes2["AcaciaWood"] = "minecraft:acacia_wood";
   MinecraftItemTypes2["ActivatorRail"] = "minecraft:activator_rail";
-  MinecraftItemTypes2["Air"] = "minecraft:air";
   MinecraftItemTypes2["AllaySpawnEgg"] = "minecraft:allay_spawn_egg";
   MinecraftItemTypes2["Allium"] = "minecraft:allium";
   MinecraftItemTypes2["Allow"] = "minecraft:allow";
@@ -3355,6 +3354,8 @@ function PokeSaveProperty(propertyId, item, save, entity, slot) {
 }
 
 // scripts/haxelMining.ts
+var PFEHaxelVersion = 2;
+var PFEHaxelInfoProperty = `pfe:haxelInfo`;
 var PFEHaxelConfigDefault = {
   "blacklist": [
     MinecraftBlockTypes.Chest,
@@ -3364,17 +3365,38 @@ var PFEHaxelConfigDefault = {
     MinecraftBlockTypes.TrialSpawner,
     MinecraftBlockTypes.Vault,
     MinecraftBlockTypes.Bed
-  ]
+  ],
+  "v": PFEHaxelVersion
 };
 var PFEHaxelMining = class {
   onUse(data) {
-    let dynamicProperty = data.itemStack?.getDynamicProperty("pfe:haxelInfo");
+    if (!data.itemStack)
+      return;
+    let dynamicProperty = data.itemStack.getDynamicProperty("pfe:haxelInfo");
     if (dynamicProperty == void 0) {
-      data.itemStack?.setDynamicProperty("pfe:haxelInfo", JSON.stringify(PFEHaxelConfigDefault));
+      data.itemStack.setDynamicProperty("pfe:haxelInfo", JSON.stringify(PFEHaxelConfigDefault));
       data.source.getComponent(EntityComponentTypes2.Equippable).setEquipment(EquipmentSlot2.Mainhand, data.itemStack);
       dynamicProperty = PFEHaxelConfigDefault;
     } else
       dynamicProperty = JSON.parse(dynamicProperty);
+    if (!dynamicProperty.v) {
+      if (!(dynamicProperty.blacklist.length < 1)) {
+        let newBlacklist = [];
+        for (let i = dynamicProperty.blacklist.length - 1; i > -1; i--) {
+          let blacklistedBlock = dynamicProperty.blacklist.at(i);
+          if (!blacklistedBlock)
+            continue;
+          let newBlacklistedBlock = blacklistedBlock.replace(blacklistedBlock, blacklistedBlock.toLowerCase());
+          newBlacklist.concat([newBlacklistedBlock]);
+        }
+        let newProperty = {
+          "blacklist": newBlacklist,
+          "v": PFEHaxelVersion
+        };
+        PokeSaveProperty(PFEHaxelInfoProperty, data.itemStack, JSON.stringify(newProperty), data.source, EquipmentSlot2.Mainhand);
+        dynamicProperty = newProperty;
+      }
+    }
     const ItemTags = data.itemStack.getTags().toString();
     let ComponentInfo = JSON.parse(ItemTags.substring(ItemTags.indexOf("pfe:HaxelMining:"), ItemTags.indexOf(":pfeHaxelMiningEnd")).substring(16));
     if (data.source.isSneaking) {
@@ -3454,7 +3476,7 @@ function PFEHaxelConfigBlackListAdd(data, ComponentInfo, dynamicProperty) {
       if (!block.includes(":")) {
         block = `minecraft:${block}`;
       }
-      dynamicProperty.blacklist = dynamicProperty.blacklist.concat(block);
+      dynamicProperty.blacklist = dynamicProperty.blacklist.concat(block.toLowerCase());
       data.itemStack?.setDynamicProperty("pfe:haxelInfo", JSON.stringify(dynamicProperty));
       data.source.getComponent(EntityComponentTypes2.Equippable).setEquipment(EquipmentSlot2.Mainhand, data.itemStack);
     }
@@ -4677,7 +4699,7 @@ var PFEBoltBowsComponent = class {
     let ammoComponent = JSON.parse(data.itemStack.getDynamicProperty(PFEAmmoProperty).toString()).at(0);
     const cPlayers = data.source.dimension.getPlayers({ excludeNames: ["" + data.source.name] });
     for (var i = cPlayers.length; i > 0; i--) {
-      data.source.playAnimation("animation.poke-pfe.humanoid.boltbow_hold_3p", { blendOutTime: 0.5, stopExpression: `!q.is_item_name_any('slot.weapon.mainhand','${data.itemStack.typeId}')`, players: [cPlayers[i - 1].name] });
+      data.source.playAnimation("animation.poke_pfe.humanoid.boltbow_hold_3p", { blendOutTime: 0.5, stopExpression: `!q.is_item_name_any('slot.weapon.mainhand','${data.itemStack.typeId}')`, players: [cPlayers[i - 1].name] });
     }
     const cooldownComponent = data.itemStack.getComponent(ItemComponentTypes3.Cooldown);
     if (cooldownComponent) {
@@ -5205,9 +5227,6 @@ world3.beforeEvents.worldInitialize.subscribe((data) => {
         if (data2.itemStack == void 0)
           return;
         const headLocate = data2.source.getHeadLocation();
-        const ticks = data2.itemStack.getComponent("cooldown").cooldownTicks;
-        if (data2.itemStack.getComponent("cooldown").getCooldownTicksRemaining(data2.source) != ticks - 1)
-          return;
         const pTag = data2.itemStack.getTags();
         const angle = data2.source.getViewDirection();
         const projEntity = data2.source.dimension.spawnEntity("" + pTag, headLocate);
@@ -5577,28 +5596,36 @@ world3.beforeEvents.worldInitialize.subscribe((data) => {
         const player = data2.source;
         const faceLoc = data2.faceLocation;
         const blockFace = data2.blockFace;
-        var faceLocX = --faceLoc.x;
-        var faceLocY = --faceLoc.y;
-        var faceLocZ = --faceLoc.z;
+        let faceLocX = --faceLoc.x;
+        let faceLocY = --faceLoc.y;
+        let faceLocZ = --faceLoc.z;
         var amount = data2.itemStack.amount;
         const equippableComponent = data2.source.getComponent(EntityComponentTypes4.Equippable);
-        if (blockFace == Direction.North) {
-          var faceLocZ = faceLocZ + 1.5;
-        }
-        if (blockFace == Direction.South) {
-          var faceLocZ = faceLocZ - 1.5;
-        }
-        if (blockFace == Direction.East) {
-          var faceLocX = faceLocX - 1.5;
-        }
-        if (blockFace == Direction.West) {
-          var faceLocX = faceLocX + 1.5;
-        }
-        if (blockFace == Direction.Up) {
-          var faceLocY = faceLocY - 1.5;
-        }
-        if (blockFace == Direction.Down) {
-          var faceLocY = faceLocY + 2;
+        switch (blockFace) {
+          case Direction.North: {
+            faceLocZ += 1.5;
+            break;
+          }
+          case Direction.South: {
+            faceLocZ += -1.5;
+            break;
+          }
+          case Direction.East: {
+            faceLocX += -1.5;
+            break;
+          }
+          case Direction.West: {
+            faceLocX += 1.5;
+            break;
+          }
+          case Direction.Up: {
+            faceLocY += -1.5;
+            break;
+          }
+          case Direction.Down: {
+            faceLocY += 2;
+            break;
+          }
         }
         const vec3 = { x: -faceLocX, y: -faceLocY, z: -faceLocZ };
         const mobId = data2.itemStack.getTags();

@@ -3,13 +3,15 @@
 	"minecraft:attachable": {
 		"description": {
 			"identifier": "poke:caged_soul",
-			"render_controllers": ["controller.render.armor"],
+			"render_controllers": [
+				"controller.render.armor"
+			],
 			"materials": {
 				"default": "entity_alphatest",
 				"enchanted": "entity_alphatest_glint"
 			},
 			"textures": {
-				"default": "textures/entity/attachable/poke_caged_soul",
+				"default": "textures/poke/pfe/caged_soul_attachable",
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {
@@ -20,7 +22,7 @@
 				"third_person_hold": "animation.caged_soul.third_person_hold"
 			},
 			"particle_effects": {
-				"cagedsoulwisp":"poke:caged_soul"
+				"cagedsoulwisp": "poke:caged_soul"
 			},
 			"scripts": {
 				"animate": [

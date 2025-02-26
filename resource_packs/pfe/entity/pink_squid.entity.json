@@ -1,28 +1,32 @@
 {
-	"format_version":"1.10.0",
-	"minecraft:client_entity":{
-		"description":{
-			"identifier":"poke:pink_squid",
-			"materials":{
-				"default":"entity_alphatest"
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "poke:pink_squid",
+			"materials": {
+				"default": "entity_alphatest"
 			},
-			"textures":{
-				"default":"textures/entity/passive/poke_pink_squid"
+			"textures": {
+				"default": "textures/entity/passive/poke_pink_squid"
 			},
-			"geometry":{
-				"default":"geometry.pink_squid"
+			"geometry": {
+				"default": "geometry.poke_pfe.pink_squid"
 			},
-			"animations":{
-				"move":"animation.pink_squid.move",
-				"squid_rotate":"animation.pink_squid.rotate"
+			"animations": {
+				"move": "animation.poke_pfe.pink_squid.move",
+				"squid_rotate": "animation.poke_pfe.pink_squid.rotate"
 			},
-			"scripts":{
-				"animate":["move","squid_rotate"]
+			"scripts": {
+				"animate": [
+					"move",
+					"squid_rotate"
+				]
 			},
-			"render_controllers":["controller.render.poke_pfe.default"],
-			"spawn_egg":{
-				"base_color":"#ff50e2",
-				"overlay_color":"#404040"
+			"render_controllers": [
+				"controller.render.poke_pfe.default"
+			],
+			"spawn_egg": {
+				"texture": "poke_pink_squid_spawn_egg"
 			}
 		}
 	}

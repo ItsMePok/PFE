@@ -3,13 +3,15 @@
 	"minecraft:attachable": {
 		"description": {
 			"identifier": "poke:pocket_knife",
-			"render_controllers": ["controller.render.item_default"],
+			"render_controllers": [
+				"controller.render.item_default"
+			],
 			"materials": {
 				"default": "entity_alphatest",
 				"enchanted": "entity_alphatest_glint"
 			},
 			"textures": {
-				"default": "textures/entity/attachable/poke_pocket_knife",
+				"default": "textures/poke/pfe/pocket_knife_attachable",
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {

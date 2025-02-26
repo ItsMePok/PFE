@@ -1,36 +1,36 @@
 {
-	"format_version":"1.8.0",
-	"minecraft:client_entity":{
-		"description":{
-			"identifier":"poke:crimson_sporeshroom",
-			"min_engine_version":"1.8.0",
-			"materials":{
-				"default":"entity_alphatest"
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "poke:crimson_sporeshroom",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "entity_alphatest"
 			},
-			"textures":{
-				"default":"textures/entity/passive/poke_crimson_sporeshroom",
-				"brown":"textures/entity/passive/poke_crimson_sporeshroom"
+			"textures": {
+				"default": "textures/entity/passive/poke_crimson_sporeshroom" //2
 			},
-			"geometry":{
-				"default":"geometry.crimson_sporeshroom"
+			"geometry": {
+				"default": "geometry.warped_sporeshroom"
 			},
-			"animations":{
-				"walk":"animation.crimson_sporeshroom.walk",
-				"look_at_target":"animation.common.look_at_target",
-				"baby_transform":"animation.crimson_sporeshroom.baby_transform"
+			"animations": {
+				"walk": "animation.crimson_sporeshroom.walk",
+				"look_at_target": "animation.common.look_at_target",
+				"baby_transform": "animation.crimson_sporeshroom.baby_transform"
 			},
-			"animation_controllers":[
+			"animation_controllers": [
 				{
-					"move":"controller.animation.mooshroom.move"
+					"move": "controller.animation.mooshroom.move" //2
 				},
 				{
-					"baby":"controller.animation.mooshroom.baby"
+					"baby": "controller.animation.mooshroom.baby" //2
 				}
 			],
-			"render_controllers":["controller.render.mooshroom"],
-			"spawn_egg":{
-				"base_color":"#89284b",
-				"overlay_color":"#f6952a"
+			"render_controllers": [
+				"controller.render.poke_pfe.default"
+			],
+			"spawn_egg": {
+				"texture": "poke_crimson_sporeshroom_spawn_egg"
 			}
 		}
 	}

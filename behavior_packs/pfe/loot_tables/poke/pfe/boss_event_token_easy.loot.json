@@ -1,6 +1,6 @@
 {
 	"pools": [
-		{
+		{ // Total Weight: 77
 			"rolls": {"min": 4,"max": 6},
 			"entries": [
 				{

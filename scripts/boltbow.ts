@@ -51,7 +51,7 @@ class PFEBoltBowsComponent{
     let ammoComponent:PFEAmmoStorageInfo = JSON.parse(data.itemStack.getDynamicProperty(PFEAmmoProperty)!.toString()).at(0)
     const cPlayers = data.source.dimension.getPlayers({excludeNames:[''+data.source.name]})
     for (var i = cPlayers.length; i > 0; i--) {
-        data.source.playAnimation('animation.poke-pfe.humanoid.boltbow_hold_3p',{blendOutTime:0.5,stopExpression: `!q.is_item_name_any('slot.weapon.mainhand','${data.itemStack.typeId}')`, players:[cPlayers[i-1].name]})
+        data.source.playAnimation('animation.poke_pfe.humanoid.boltbow_hold_3p',{blendOutTime:0.5,stopExpression: `!q.is_item_name_any('slot.weapon.mainhand','${data.itemStack.typeId}')`, players:[cPlayers[i-1].name]})
     }
     //@ts-ignore
     const cooldownComponent:ItemCooldownComponent = data.itemStack.getComponent(ItemComponentTypes.Cooldown)

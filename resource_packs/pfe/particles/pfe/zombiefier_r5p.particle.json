@@ -5,7 +5,7 @@
 			"identifier": "poke:zombfier_r5p",
 			"basic_render_parameters": {
 				"material": "particles_alpha",
-				"texture": "textures/particles/pfe/particles"
+				"texture": "textures/poke/pfe/particles"
 			}
 		},
 		"components": {
@@ -32,13 +32,22 @@
 			},
 			"minecraft:particle_initial_speed": 3,
 			"minecraft:particle_appearance_billboard": {
-				"size": ["variable.size*(1-variable.particle_age)", "variable.size*(1-variable.particle_age)"],
+				"size": [
+					"variable.size*(1-variable.particle_age)",
+					"variable.size*(1-variable.particle_age)"
+				],
 				"facing_camera_mode": "rotate_xyz",
 				"uv": {
 					"texture_width": 128,
 					"texture_height": 128,
-					"uv": [32, 88],
-					"uv_size": [8, 8]
+					"uv": [
+						32,
+						88
+					],
+					"uv_size": [
+						8,
+						8
+					]
 				}
 			},
 			"minecraft:particle_appearance_lighting": {},

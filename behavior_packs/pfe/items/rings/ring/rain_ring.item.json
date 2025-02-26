@@ -1,4 +1,4 @@
-{//Rain Ring
+{ //Rain Ring
 	"format_version": "1.21.60",
 	"minecraft:item": {
 		"description": {
@@ -11,12 +11,14 @@
 			"minecraft:repairable": {
 				"repair_items": [
 					{
-						"items": ["poke:repair_core"],
+						"items": [
+							"poke:repair_core"
+						],
 						"repair_amount": "query.max_durability"
 					}
 				]
 			},
-			"minecraft:icon":"poke_ring_1",
+			"minecraft:icon": "poke_rain_ring",
 			"minecraft:cooldown": {
 				"duration": 10,
 				"category": "poke:ring_1"
@@ -33,10 +35,12 @@
 				"value": 17
 			},
 			"minecraft:max_stack_size": 1,
-			"minecraft:tags": {"tags": [
-				"pfe:Command:toggledownfall:pfeCommandEnd"
-			]},
-			"minecraft:custom_components":[
+			"minecraft:tags": {
+				"tags": [
+					"pfe:Command:toggledownfall:pfeCommandEnd"
+				]
+			},
+			"minecraft:custom_components": [
 				"poke:cc_on_use",
 				"poke:normalMining"
 			],

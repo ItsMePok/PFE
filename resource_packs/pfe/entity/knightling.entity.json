@@ -1,34 +1,36 @@
 {
-	"format_version":"1.10.0",
-	"minecraft:client_entity":{
-		"description":{
-			"identifier":"poke:knightling",
-			"materials":{
-				"default":"entity"
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "poke:knightling",
+			"materials": {
+				"default": "entity"
 			},
-			"textures":{
-				"default":"textures/entity/bosses/poke_knightling"
+			"textures": {
+				"default": "textures/entity/bosses/poke_knightling" //2
 			},
-			"geometry":{
-				"default":"geometry.poke_pfe.knightling"
+			"geometry": {
+				"default": "geometry.poke_pfe.knightling"
 			},
-			"animations":{
-				"idle":"animation.poke_pfe.knightling.idle",
-				"look_at_target":"animation.common.look_at_target",
-				"move":"animation.poke_pfe.knightling.walk",
-				"controller":"controller.animation.poke_pfe.knightling"
+			"animations": {
+				"idle": "animation.poke_pfe.knightling.idle",
+				"look_at_target": "animation.common.look_at_target",
+				"move": "animation.poke_pfe.knightling.walk",
+				"controller": "controller.animation.poke_pfe.knightling"
 			},
-			"scripts":{
-				"animate":[
+			"scripts": {
+				"animate": [
 					"controller"
 				]
 			},
-			"sound_effects":{
-				"poke.knightling.bonk":"poke.knightling.bonk"
+			"sound_effects": {
+				"poke.knightling.bonk": "poke.knightling.bonk"
 			},
-			"render_controllers":["controller.render.poke_pfe.default"],
-			"spawn_egg":{
-				"texture":"poke_spawn_knightling"
+			"render_controllers": [
+				"controller.render.poke_pfe.default"
+			],
+			"spawn_egg": {
+				"texture": "poke_knightling_spawn_egg"
 			}
 		}
 	}

@@ -281,10 +281,6 @@ world.beforeEvents.worldInitialize.subscribe(data => {
             onUse(data:ItemComponentUseEvent){
                 if(data.itemStack==undefined)return;
                 const headLocate = data.source.getHeadLocation();
-                //@ts-ignore
-                const ticks:number = data.itemStack.getComponent('cooldown').cooldownTicks
-                //@ts-ignore
-                if (data.itemStack.getComponent('cooldown').getCooldownTicksRemaining(data.source) != ticks -1) return;
                 //Projectile shooters. projectile id defined in a tag on the item
                     const pTag = data.itemStack.getTags();
                     const angle = data.source.getViewDirection();
@@ -430,29 +426,19 @@ world.beforeEvents.worldInitialize.subscribe(data => {
                 const player:Player = data.source
                 const faceLoc = data.faceLocation
                 const blockFace= data.blockFace
-                var faceLocX = --faceLoc.x
-                var faceLocY = --faceLoc.y
-                var faceLocZ = --faceLoc.z
+                let faceLocX = --faceLoc.x
+                let faceLocY = --faceLoc.y
+                let faceLocZ = --faceLoc.z
                 var amount = data.itemStack.amount
                 //@ts-ignore
                 const equippableComponent:EntityEquippableComponent= data.source.getComponent(EntityComponentTypes.Equippable)
-                if(blockFace == Direction.North){
-                    var faceLocZ = faceLocZ +1.5
-                }
-                if(blockFace == Direction.South){
-                    var faceLocZ = faceLocZ -1.5
-                }
-                if(blockFace == Direction.East){
-                    var faceLocX = faceLocX -1.5
-                }
-                if(blockFace == Direction.West){
-                    var faceLocX = faceLocX +1.5
-                }
-                if(blockFace == Direction.Up){
-                    var faceLocY = faceLocY -1.5
-                }
-                if(blockFace == Direction.Down){
-                    var faceLocY = faceLocY +2
+                switch(blockFace){
+                    case Direction.North:{faceLocZ += 1.5;break}
+                    case Direction.South:{faceLocZ += -1.5;break}
+                    case Direction.East:{faceLocX += -1.5;break}
+                    case Direction.West:{faceLocX += 1.5;break}
+                    case Direction.Up:{faceLocY += -1.5;break}
+                    case Direction.Down:{faceLocY += 2;break}
                 }
                 /**↓This exists because a bug is causing it to be inverted,
                  *  so it inverts the position (this also causes it to not be exactly where you interacted
