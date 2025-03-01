@@ -1,22 +1,22 @@
 # Home
 
-{% hint style="info" %}
-#### This Wiki assumes the PFE Version: [v1.2.7.md](changelog-history/full-releases/v1.2.7.md "mention")
-{% endhint %}
-
-### Welcome to the wiki for PFE!
-
 {% hint style="warning" %}
-This wiki is still a work in progress, same pages are not yet made or unfinished
+This wiki is still a work in progress, same pages are unfinished
 
 
 
 Some things do have some general info until I finish the individual pages for them
 {% endhint %}
 
-## Experimental Toggles Needed: None
+{% hint style="info" %}
+#### This Wiki assumes the PFE Version: [v1.2.7.md](changelog-history/full-releases/v1.2.7.md "mention")
+{% endhint %}
 
-## Lowest Supported Minecraft Version: 1.21.60
+### Welcome to the wiki for PFE!
+
+### Experimental Toggles Needed: None
+
+### Lowest Supported Minecraft Version: 1.21.60
 
 ***
 
@@ -38,7 +38,7 @@ I highly recommend avoiding those sites as they can contain malicious things
 
 ### CurseForge
 
-{% embed url="https://www.curseforge.com/minecraft-bedrock/addons/pfe" %}
+{% embed url="https://www.curseforge.com/minecraft-bedrock/addons/pfe" fullWidth="false" %}
 
 ***
 

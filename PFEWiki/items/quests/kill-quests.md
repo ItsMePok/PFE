@@ -1,9 +1,5 @@
 # Kill Quests
 
-{% hint style="danger" %}
-This Page is not complete yet. Check back later.
-{% endhint %}
-
 <figure><img src="https://github.com/user-attachments/assets/73bf5dab-49dd-404a-9e48-4f2389960cf4" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Book_and_Quill_JE2_BE2.png?2128f" alt="Book and Quill." data-size="line"> Description: <a href="#description" id="description"></a>

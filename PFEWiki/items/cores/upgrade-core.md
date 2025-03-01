@@ -50,7 +50,7 @@ Identifier: **poke:upgrade\_core**
 
 ### Blocks
 
-* <img src="https://github.com/user-attachments/assets/02ae54a7-e8a3-4888-b37e-b83721e6ab63" alt="Calibrated Block Breaker" data-size="line">[Calibrated Block Breaker](../../blocks/automation/cobblestone-generator-2.md)
+* <img src="https://github.com/user-attachments/assets/02ae54a7-e8a3-4888-b37e-b83721e6ab63" alt="Calibrated Block Breaker" data-size="line">[Calibrated Block Breaker](../../blocks/automation/calibrated-block-breaker.md)
 
 ### Items
 

@@ -16,7 +16,7 @@ More info on how the different automation blocks work can be found [Here](blocks
   * [Bosses](mobs/bosses/)
   * &#x20;PFE [Structures](sturctures/)
   * Quests from the [Quest Trader](mobs/traders/quest-trader.md)
-* More info can be found [Here](items/currency/tokens/) (Items -> Tokens)
+* More info can be found [Here](items/currency/tokens/) (Items -> Currency -> Tokens)
 
 ***
 
@@ -67,7 +67,7 @@ More info on how the different automation blocks work can be found [Here](blocks
 
 ### **Overworld:**
 
-* Cobalt
+* Cobalt \[Y = Any]
 * Void
 * Shade
 * Onyx

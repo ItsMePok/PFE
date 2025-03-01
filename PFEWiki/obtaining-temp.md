@@ -30,6 +30,12 @@ hidden: true
 
 ## <img src="https://minecraft.wiki/images/Book_and_Quill_JE2_BE2.png?2128f" alt="Book and Quill." data-size="line"> Description: <a href="#description" id="description"></a>
 
+## <img src="https://github.com/user-attachments/assets/4ab38071-56d5-4e2e-b183-6258e6c7b4df" alt="Interact Ability." data-size="line"> Interact Ability: <a href="#interact-ability" id="interact-ability"></a>
+
+### **Interacting**:  <a href="#interacting" id="interacting"></a>
+
+### **Crouching + Interacting**:  <a href="#crouch-interacting" id="crouch-interacting"></a>
+
 {% tabs %}
 {% tab title="Block Drop" %}
 
@@ -46,9 +52,15 @@ hidden: true
 
 <figure><img src="https://github.com/user-attachments/assets/adc1c7b5-4611-4b54-b1a4-1fcaafe6c896" alt=""><figcaption><p>Sold by the <a href="mobs/traders/shopkeeper.md">Shopkeeper</a></p></figcaption></figure>
 
-| Wants | Gives |
-| ----- | ----- |
-|       |       |
+<table data-full-width="false"><thead><tr><th align="center">Wants</th><th width="88" align="center">Amount</th><th align="center">Gives</th><th width="85" align="center">Amount</th></tr></thead><tbody><tr><td align="center"></td><td align="center"></td><td align="center"></td><td align="center"></td></tr><tr><td align="center"></td><td align="center"></td><td align="center"></td><td align="center"></td></tr></tbody></table>
+{% endtab %}
+
+{% tab title="Token Trader " %}
+
+
+<figure><img src="https://github.com/user-attachments/assets/30c5b799-c00c-4ecd-b540-59b99cce7cbe" alt=""><figcaption><p>Sold by the <a href="mobs/traders/token-trader.md">Token Trader</a></p></figcaption></figure>
+
+<table data-full-width="false"><thead><tr><th align="center">Wants</th><th width="88" align="center">Amount</th><th align="center">Gives</th><th width="85" align="center">Amount</th></tr></thead><tbody><tr><td align="center"></td><td align="center"></td><td align="center"></td><td align="center"></td></tr><tr><td align="center"></td><td align="center"></td><td align="center"></td><td align="center"></td></tr></tbody></table>
 {% endtab %}
 {% endtabs %}
 
