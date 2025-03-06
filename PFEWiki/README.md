@@ -9,7 +9,7 @@ Some things do have some general info until I finish the individual pages for th
 {% endhint %}
 
 {% hint style="info" %}
-#### This Wiki assumes the PFE Version: [v1.2.7.md](changelog-history/full-releases/v1.2.7.md "mention")
+#### This Wiki assumes the PFE Version: [v1.2.7.md](changelog-history/full-releases/v1.2.7.md "mention") / [1.2.73.md](changelog-history/betas/1.2.73.md "mention")
 {% endhint %}
 
 ### Welcome to the wiki for PFE!
