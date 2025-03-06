@@ -1,8 +1,8 @@
 {
 	"pools": [
-		{//Rare Items
+		{ //Rare Items
 			"rolls": 3,
-			"entries": [
+			"entries": [ // Total Weight: 22
 				{
 					"type": "empty",
 					"weight": 4
@@ -62,15 +62,15 @@
 					"name": "poke:antenna",
 					"weight": 3
 				},
-                {
-                    "type": "item",
-                    "name": "poke:pfe-wizard_pottery_sherd",
-                    "weight": 1
-                }
+				{
+					"type": "item",
+					"name": "poke:pfe-wizard_pottery_sherd",
+					"weight": 1
+				}
 			]
 		},
-		{//Common Items
-		 // Total Weight: 88
+		{ //Common Items
+			// Total Weight: 88
 			"rolls": {
 				"min": 8,
 				"max": 16
@@ -192,7 +192,7 @@
 				}
 			]
 		},
-		{//Tokens // Total Weight: 41
+		{ //Tokens // Total Weight: 41
 			"rolls": 5,
 			"entries": [
 				{

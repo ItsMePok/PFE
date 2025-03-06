@@ -3405,6 +3405,7 @@ var PFEHaxelMining = class {
     }
     let localBlacklist = [];
     localBlacklist = dynamicProperty.blacklist;
+    console.warn(JSON.stringify(localBlacklist));
     let BannedBlocks = [MinecraftBlockTypes.Air, MinecraftBlockTypes.LightBlock0, MinecraftBlockTypes.LightBlock1, MinecraftBlockTypes.LightBlock2, MinecraftBlockTypes.LightBlock3, MinecraftBlockTypes.LightBlock4, MinecraftBlockTypes.LightBlock5, MinecraftBlockTypes.LightBlock6, MinecraftBlockTypes.LightBlock7, MinecraftBlockTypes.LightBlock8, MinecraftBlockTypes.LightBlock9, MinecraftBlockTypes.LightBlock10, MinecraftBlockTypes.LightBlock11, MinecraftBlockTypes.LightBlock12, MinecraftBlockTypes.LightBlock13, MinecraftBlockTypes.LightBlock14, MinecraftBlockTypes.LightBlock15, MinecraftBlockTypes.Barrier, MinecraftBlockTypes.Jigsaw, MinecraftBlockTypes.StructureBlock, MinecraftBlockTypes.CommandBlock, MinecraftBlockTypes.ChainCommandBlock, MinecraftBlockTypes.RepeatingCommandBlock, MinecraftBlockTypes.BorderBlock, MinecraftBlockTypes.Allow, MinecraftBlockTypes.Deny];
     let location = { x: Math.round(data.source.location.x - ComponentInfo.radius.x / 2), y: Math.round(data.source.location.y - 0.01), z: Math.round(data.source.location.z - ComponentInfo.radius.z / 2) };
     system2.runJob(PFEMine(BannedBlocks.concat(localBlacklist), ComponentInfo, location, data.source, data.source.dimension, data.itemStack.getComponent(ItemComponentTypes2.Enchantable).hasEnchantment(MinecraftEnchantmentTypes.SilkTouch), data.itemStack));
@@ -3436,7 +3437,7 @@ function* PFEMine(BannedBlocks, data, location, player, dim, silkTouch, item) {
       }
     }
   }
-  if (DurabilityAmount != 0) {
+  if (DurabilityAmount != 0 && silkTouch) {
     player.dimension.playSound("dig.stone", player.location);
   }
   PokeDamageItemUB(item, DurabilityAmount, player, EquipmentSlot2.Mainhand);
@@ -3455,16 +3456,16 @@ function PFEHaxelConfigMenu(data, ComponentInfo) {
     if (response.canceled)
       return;
     if (response.selection == 0) {
-      PFEHaxelConfigBlackListAdd(data, ComponentInfo, dynamicProperty);
+      PFEHaxelConfigBlackListAdd(data, dynamicProperty);
       return;
     }
     if (response.selection == 1) {
-      PFEHaxelConfigBlackListRemove(data, ComponentInfo, dynamicProperty);
+      PFEHaxelConfigBlackListRemove(data, dynamicProperty);
       return;
     }
   });
 }
-function PFEHaxelConfigBlackListAdd(data, ComponentInfo, dynamicProperty) {
+function PFEHaxelConfigBlackListAdd(data, dynamicProperty) {
   let Ui = new ModalFormData2().title({ translate: `translation.poke:haxelConfig.mainMenu.title`, with: { rawtext: [{ translate: `item.${data.itemStack?.typeId}`.replace(`\xA79PFE\xA7r`, ``) }] } }).textField({ translate: `translation.poke:haxelConfig.blacklistAdd.textLabel` }, "", "").submitButton({ translate: `translation.poke:haxelConfig.blacklistAdd.submit` });
   Ui.show(data.source).then((response) => {
     if (response.canceled)
@@ -3476,13 +3477,19 @@ function PFEHaxelConfigBlackListAdd(data, ComponentInfo, dynamicProperty) {
       if (!block.includes(":")) {
         block = `minecraft:${block}`;
       }
-      dynamicProperty.blacklist = dynamicProperty.blacklist.concat(block.toLowerCase());
-      data.itemStack?.setDynamicProperty("pfe:haxelInfo", JSON.stringify(dynamicProperty));
-      data.source.getComponent(EntityComponentTypes2.Equippable).setEquipment(EquipmentSlot2.Mainhand, data.itemStack);
+      block = block.toLowerCase();
+      console.warn(block);
+      let newProperty = {
+        "blacklist": dynamicProperty.blacklist.concat([block]),
+        "v": dynamicProperty.v
+      };
+      if (data.itemStack == void 0)
+        return;
+      PokeSaveProperty(PFEHaxelInfoProperty, data.itemStack, JSON.stringify(newProperty), data.source, EquipmentSlot2.Mainhand);
     }
   });
 }
-function PFEHaxelConfigBlackListRemove(data, ComponentInfo, dynamicProperty) {
+function PFEHaxelConfigBlackListRemove(data, dynamicProperty) {
   let Ui = new ActionFormData3().title({ translate: `translation.poke:haxelConfig.mainMenu.blacklistRemove` });
   dynamicProperty.blacklist.forEach((block) => {
     Ui.button({ translate: `tile.${block.replace(`minecraft:`, ``)}.name` });
@@ -3493,8 +3500,9 @@ function PFEHaxelConfigBlackListRemove(data, ComponentInfo, dynamicProperty) {
     for (let i = dynamicProperty.blacklist.length; i >= -1; i--) {
       if (response.selection == i) {
         dynamicProperty.blacklist.splice(i, 1);
-        data.itemStack?.setDynamicProperty("pfe:haxelInfo", JSON.stringify(dynamicProperty));
-        data.source.getComponent(EntityComponentTypes2.Equippable).setEquipment(EquipmentSlot2.Mainhand, data.itemStack);
+        if (data.itemStack == void 0)
+          return;
+        PokeSaveProperty(PFEHaxelInfoProperty, data.itemStack, JSON.stringify(dynamicProperty), data.source, EquipmentSlot2.Mainhand);
       }
     }
   });
