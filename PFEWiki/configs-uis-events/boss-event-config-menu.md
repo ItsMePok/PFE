@@ -2,7 +2,11 @@
 
 <figure><img src="https://github.com/user-attachments/assets/a7627a43-c3d4-4924-8a95-c87394c7d164" alt=""><figcaption></figcaption></figure>
 
+{% hint style="danger" %}
+This item is no longer obtainable after v1.2.8 / v1.2.74
 
+It has been replaced with the Config
+{% endhint %}
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:boss\_event\_config** <a href="#identifier" id="identifier"></a>
 

@@ -1,26 +1,22 @@
 # Home
 
 {% hint style="warning" %}
-This wiki is still a work in progress, same pages are unfinished
-
-
-
-Some things do have some general info until I finish the individual pages for them
+This wiki is still a work in progress, some pages are unfinished
 {% endhint %}
 
 {% hint style="info" %}
-#### This Wiki assumes the PFE Version: [v1.2.7.md](changelog-history/full-releases/v1.2.7.md "mention") / [1.2.73.md](changelog-history/betas/1.2.73.md "mention")
+#### This Wiki assumes the PFE Version: [v1.2.7.md](changelog-history/full-releases/v1.2.7.md "mention") / [v1.2.73.md](changelog-history/betas/v1.2.73.md "mention")
 {% endhint %}
-
-### Welcome to the wiki for PFE!
-
-### Experimental Toggles Needed: None
-
-### Lowest Supported Minecraft Version: 1.21.60
 
 ***
 
+## Current Minecraft Requirements:
 
+### Experimental Toggles: <mark style="color:yellow;">None</mark>
+
+### Lowest Supported Minecraft Version: <mark style="color:yellow;">1.21.60</mark>
+
+***
 
 ## Official PFE Links
 

@@ -2,9 +2,9 @@
 
 ## Why Are the Automation Blocks not working?
 
-* Try Powering them with Redstone, The Block itself needs to be [Strong Powered](https://minecraft.wiki/w/Redstone_mechanics#Strongly_powered_vs._weakly_powered). a solution is powering it with a lever
-* Make Sure PFE & Minecraft are up to date
-* Try Breaking and Replacing them
+* Try powering them with Redstone, the block itself needs to be [Strong Powered](https://minecraft.wiki/w/Redstone_mechanics#Strongly_powered_vs._weakly_powered). a solution is powering it with a lever
+* Make sure both PFE & Minecraft are up to date
+* Try breaking and replacing the block
 
 More info on how the different automation blocks work can be found [Here](blocks/automation/) (Blocks -> Automation)
 
@@ -12,11 +12,10 @@ More info on how the different automation blocks work can be found [Here](blocks
 
 ## How do I get Tokens?
 
-* Can be obtained from:
+* [Tokens ](items/currency/tokens/)can be obtained from:
   * [Bosses](mobs/bosses/)
   * &#x20;PFE [Structures](sturctures/)
   * Quests from the [Quest Trader](mobs/traders/quest-trader.md)
-* More info can be found [Here](items/currency/tokens/) (Items -> Currency -> Tokens)
 
 ***
 

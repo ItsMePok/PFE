@@ -25,6 +25,14 @@
 | Item                                                                                                                                                | Amount | Chance        |
 | --------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------------- |
 | <img src="https://github.com/ItsMePok/PFE/assets/136857747/1c78ba2a-4a5b-4b7b-83ff-ed21aa75ebd8" alt="Copper Token." data-size="line"> Copper Token | 1      | 2/7 (\~28.5%) |
+
+***
+
+Collecting Loot from the [Fisher](../../../blocks/automation/fisher.md)
+
+| Item                                                                                                                                                | Amount | Chance         |
+| --------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | -------------- |
+| <img src="https://github.com/ItsMePok/PFE/assets/136857747/1c78ba2a-4a5b-4b7b-83ff-ed21aa75ebd8" alt="Copper Token." data-size="line"> Copper Token | 1      | 1/29 (\~3.25%) |
 {% endtab %}
 
 {% tab title="Mob Drops" %}

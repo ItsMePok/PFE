@@ -11,9 +11,13 @@ This item will not take durability
 ## Interact Ability:
 
 * Mines a 5x5x7 around the player
-  * can break bedrock
+  * can break Bedrock
     * need silk touch to obtain
   * can break liquids
+
+## Hit Effects:
+
+* Strength 2 for [2 seconds](#user-content-fn-1)[^1]
 
 ## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 1
 
@@ -36,3 +40,5 @@ Items:
 * <img src="https://github.com/ItsMePok/PFE/assets/136857747/11c70f17-8411-4e05-bec6-497ff08acd81" alt="Ban Hammer Shaft" data-size="line"> [Ban Hammer Shaft](ban-hammer-shaft.md)
 {% endtab %}
 {% endtabs %}
+
+[^1]: 40 ticks
