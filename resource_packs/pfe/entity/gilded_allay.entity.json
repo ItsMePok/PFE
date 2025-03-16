@@ -7,7 +7,7 @@
 				"default": "allay" //2
 			},
 			"textures": {
-				"default": "textures/entity/passive/poke_gilded_allay" //2
+				"default": "textures/poke/pfe/gilded_allay_entity" //2
 			},
 			"geometry": {
 				"default": "geometry.allay" //2

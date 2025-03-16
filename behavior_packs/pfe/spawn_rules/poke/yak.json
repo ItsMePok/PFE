@@ -11,29 +11,19 @@
 				"minecraft:biome_filter": {
 					"any_of": [
 						{
-							"test": "has_biome_tag",
+							"test": "is_temperature_type",
 							"operator": "==",
-							"value": "taiga"
-						},
-						{
-							"test": "has_biome_tag",
-							"operator": "==",
-							"value": "meadow"
-						},
-						{
-							"test": "has_biome_tag",
-							"operator": "==",
-							"value": "flower_forest"
-						},
-						{
-							"test": "has_biome_tag",
-							"operator": "==",
-							"value": "savanna"
+							"value": "cold"
 						}
 					]
 				},
-				"minecraft:weight": {"default": 5},
-				"minecraft:herd":{"min_size": 1,"max_size": 3}
+				"minecraft:weight": {
+					"default": 5
+				},
+				"minecraft:herd": {
+					"min_size": 1,
+					"max_size": 3
+				}
 			}
 		]
 	}

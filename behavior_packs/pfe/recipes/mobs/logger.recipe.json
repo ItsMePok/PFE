@@ -4,23 +4,53 @@
 		"description": {
 			"identifier": "poke:spawn_the_logger"
 		},
-		"tags": ["crafting_table"],
-		"pattern": ["ABS","CEC","CGC"],
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"ABS",
+			"CEC",
+			"CGC"
+		],
 		"unlock": [
-			{"item":"poke:antenna"},
-			{"item":"poke:hellish_bulb"},
-			{"item":"soul_campfire"},
-			{"item":"poke:cobalt_block"},
-			{"item":"egg"},
-			{"item":"poke:cobalt_golem_block"}
+			{
+				"item": "poke:antenna"
+			},
+			{
+				"item": "poke:hellish_bulb"
+			},
+			{
+				"item": "soul_campfire"
+			},
+			{
+				"item": "poke:cobalt_block"
+			},
+			{
+				"tag": "minecraft:egg"
+			},
+			{
+				"item": "poke:cobalt_golem_block"
+			}
 		],
 		"key": {
-			"A":{"item":"poke:antenna"},
-			"B":{"item":"poke:hellish_bulb"},
-			"S":{"item":"soul_campfire"},
-			"C":{"item":"poke:cobalt_block"},
-			"E":{"item":"egg"},
-			"G":{"item":"poke:cobalt_golem_block"}
+			"A": {
+				"item": "poke:antenna"
+			},
+			"B": {
+				"item": "poke:hellish_bulb"
+			},
+			"S": {
+				"item": "soul_campfire"
+			},
+			"C": {
+				"item": "poke:cobalt_block"
+			},
+			"E": {
+				"tag": "minecraft:egg"
+			},
+			"G": {
+				"item": "poke:cobalt_golem_block"
+			}
 		},
 		"result": {
 			"item": "poke:spawn_the_logger"

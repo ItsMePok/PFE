@@ -4,6 +4,7 @@
 		"description": {
 			"identifier": "poke:blaze_ring"
 		},
+		"group": "pfe:rings",
 		"ingredients": [
 			{
 				"item": "poke:gem_holder",
@@ -17,7 +18,7 @@
 		"unlock": [
 			{
 				"item": "poke:blaze_gem"
-			}	
+			}
 		],
 		"tags": [
 			"crafting_table"

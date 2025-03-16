@@ -4,7 +4,7 @@
 		"description": {
 			"identifier": "poke:listener",
 			"textures": {
-				"default": "textures/entity/bosses/poke_listener" //2
+				"default": "textures/poke/pfe/listener_entity" //2
 			},
 			"materials": {
 				"default": "entity_emissive"

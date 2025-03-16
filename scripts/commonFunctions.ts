@@ -1,4 +1,4 @@
-import { Entity, EntityComponentTypes, EntityEquippableComponent, EntityInventoryComponent, EquipmentSlot, GameMode, ItemComponentTypes, ItemDurabilityComponent, ItemStack, Player, RawMessage, Vector3 } from "@minecraft/server";
+import { Dimension, Entity, EntityComponentTypes, EntityEquippableComponent, EntityInventoryComponent, EquipmentSlot, GameMode, ItemComponentTypes, ItemDurabilityComponent, ItemStack, Player, RawMessage, Vector3, world } from "@minecraft/server";
 import { ActionFormData } from "@minecraft/server-ui";
 import { MinecraftEnchantmentTypes, MinecraftEntityTypes } from "@minecraft/vanilla-data";
 
@@ -10,7 +10,10 @@ export {
   PokeGetItemFromInventory,
   PokeItemTranslateString,
   PokeGetObjectById,
-  PokeSaveProperty
+  PokeSaveProperty,
+  PokeGetSegmentOfStringInfo,
+  PokeGetSegmentOfString,
+  PokeSpawnLootTable
 }
 
 // Tool Durability initially from https://wiki.bedrock.dev/items/tool-durability.html
@@ -243,4 +246,52 @@ function PokeSaveProperty(propertyId:string,item:ItemStack,save:string|boolean|n
   }else{
     return false
   }
+}
+
+/**
+ * 
+ * - string: the entire sting
+ * - startAfter: the start of the string you want to cut
+ * - endBefore: the end of the string after the segmented part
+ * - returnId: the id of the segment
+ *   - the segment will get returned in a object under this value
+ */
+interface PokeGetSegmentOfStringInfo{
+  string:string,
+  startAfter:string,
+  endBefore:string,
+  returnId:string
+}
+
+/**
+ * 
+ * Gets segments of strings & returns them in a object
+ * 
+ * Returns false if it fails to parse the given strings
+ */
+function PokeGetSegmentOfString(string:PokeGetSegmentOfStringInfo[]){
+  let returnedValue:string = "{"
+  for (let i = string.length-1; i > -1; i--){
+    let checking = string.at(i)
+    if (!checking)continue
+    let segment = checking.string.substring(checking.string.indexOf(checking.startAfter),checking.string.indexOf(checking.endBefore)).substring(checking.startAfter.length)
+    returnedValue = `${returnedValue},"${checking.returnId}":"${segment}"`
+  }
+  returnedValue = `${returnedValue.replace(`{,`,'{')}}`
+  if (returnedValue.length < 2)return false
+  try {
+    return JSON.parse(returnedValue)
+  } catch (error) {
+    return false
+  }
+}
+
+function PokeSpawnLootTable(lootTable:string,position:Vector3,dimension:Dimension,amount?:number){
+  console.warn(`loot spawn ${position.x} ${position.y} ${position.z} loot "${lootTable}"`)
+  if (amount){
+    for (let i = amount -1; i > -1; i--){
+      dimension.runCommand(`loot spawn ${position.x} ${position.y} ${position.z} loot "${lootTable}"`)
+    }
+    return;
+  }else dimension.runCommand(`loot spawn ${position.x} ${position.y} ${position.z} loot "${lootTable}"`)
 }

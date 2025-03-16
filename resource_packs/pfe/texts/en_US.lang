@@ -1,5 +1,58 @@
-pack.name=§bv1.2.7 PFE RP
+pack.name=§bv1.2.8 PFE RP
 pack.description=§6By:§u ItsMePok §f& §dO2God §7||§e Wiki: https:pfewiki.gitbook.io/home
+poke_pfe.tag=§9PFE§r
+
+item.poke_pfe.config=Config
+item.poke_pfe.config.desc=Allows you to configure options for PFE
+
+poke_pfe.effect.instant=Instant
+poke_pfe.effect.death=Death
+
+translation.poke_pfe.enabled=Enabled
+translation.poke_pfe.disabled=Disabled
+translation.poke_pfe.bossEventConfig=Confgure boss events
+translation.poke_pfe.disableConfig=Confgure disabled features
+translation.poke_pfe.death_aromr_radius=Death armor's damage
+translation.poke_pfe.cactus_aromr_radius=Cactus armor's damage
+translation.poke_pfe.insuffictPerms=Insufficent Permissions
+translation.poke_pfe.insuffictPerms.desc=You don't have the correct permissions to use this. Give yourself the tag
+translation.poke_pfe.insuffictPerms.desc2=Not sure how? Run this command:
+
+item.poke_pfe.quantum_teleporter=Quantum Teleporter
+item.poke_pfe.kapow_ring=Kapow Ring
+item.poke_pfe.nuke_ring=Nuke Ring
+item.poke_pfe.sundial=Sundail
+item.poke_pfe.wither_spawner=Wither Spawner
+item.poke_pfe.bounty=Bounty
+
+item.poke_pfe.hellish_potion=Hellish Potion
+item.poke_pfe.demonic_potion=Demonic Potion
+item.poke_pfe.splash_death_potion=Splash Death Potion
+item.poke_pfe.death_potion=Death Potion
+item.poke_pfe.cobalt_potion=Cobalt Potion
+item.poke_pfe.void_potion=Void Potion
+item.poke_pfe.nebula_potion=Nebula Potion
+
+tile.poke_pfe.astral_drain=Astral Drain
+tile.poke_pfe.banished_drain=Banished Drain
+tile.poke_pfe.cobalt_drain=Cobalt Drain
+tile.poke_pfe.death_drain=Death Drain
+tile.poke_pfe.demonic_drain=Demonic Drain
+tile.poke_pfe.galaxy_drain=Galaxy Drain
+tile.poke_pfe.godly_drain=Godly Drain
+tile.poke_pfe.hellish_drain=Hellish Drain
+tile.poke_pfe.holy_drain=Holy Drain
+tile.poke_pfe.honey_drain=Honey Drain
+tile.poke_pfe.limestone_drain=Limestone Drain
+tile.poke_pfe.medic_drain=Medic Drain
+tile.poke_pfe.molten_drain=Molten Drain
+tile.poke_pfe.nebula_drain=Nebula Drain
+tile.poke_pfe.onyx_drain=Onyx Drain
+tile.poke_pfe.radium_drain=Radium Drain
+tile.poke_pfe.shade_drain=Shade Drain
+tile.poke_pfe.shadowstone_drain=Shadowstone Drain
+tile.poke_pfe.void_drain=Void Drain
+
 item.poke:hellish_blade=Hellish Blade~LINEBREAK~§9PFE§r
 item.poke:amethyst_sword=Ameythyst Sword~LINEBREAK~§9PFE§r
 item.poke:onyx_sword=Onyx Sword~LINEBREAK~§9PFE§r
@@ -736,7 +789,7 @@ item.spawn_egg.entity.poke:warped_sporecat.name=Spawn §b Sporecat~LINEBREAK~
 item.spawn_egg.entity.poke:windswept_bear.name=Spawn §7 Windswept Bear~LINEBREAK~§9PFE§r
 item.spawn_egg.entity.poke:woodspike_guardian.name=Spawn  Woodspike Guardian~LINEBREAK~§9PFE§r
 item.spawn_egg.entity.poke:duck.name=Spawn §2 Duck~LINEBREAK~§9PFE§r
-item.spawn_egg.entity.poke:super_striker.name=§e Super Striker~LINEBREAK~§9PFE§r
+item.spawn_egg.entity.poke:super_striker.name=Spawn §e Super Striker~LINEBREAK~§9PFE§r
 item.spawn_egg.entity.poke:the_logger.name=Spawn §9 The Logger~LINEBREAK~§9PFE§r
 item.spawn_egg.entity.poke:quest_trader.name=Spawn §h Quest Trader~LINEBREAK~§9PFE§r
 item.spawn_egg.entity.poke:striker.name=Spawn  Striker~LINEBREAK~§9PFE§r
@@ -1005,13 +1058,6 @@ tile.poke:death_trapdoor.name=Death Trapdoor~LINEBREAK~§9PFE§r
 tile.poke:demonic_trapdoor.name=Demonic Trapdoor~LINEBREAK~§9PFE§r
 item.poke:empty_vial=Empty Vial~LINEBREAK~§9PFE§r
 item.poke:xp_vial=Experience Vial~LINEBREAK~§9PFE§r
-item.poke:hellish_potion=Hellish Potion~LINEBREAK~§9PFE§r
-item.poke:demonic_potion=Demonic Potion~LINEBREAK~§9PFE§r
-item.poke:splash_death_potion=Splash Death Potion~LINEBREAK~§9PFE§r
-item.poke:death_potion=Death Potion~LINEBREAK~§9PFE§r
-item.poke:cobalt_potion=Cobalt Potion~LINEBREAK~§9PFE§r
-item.poke:void_potion=Void Potion~LINEBREAK~§9PFE§r
-item.poke:nebula_potion=Nebula Potion~LINEBREAK~§9PFE§r
 tile.poke:beeulb.name=Beeulb~LINEBREAK~§9PFE§r
 tile.poke:cobalt_bulb.name=Cobalt Bulb~LINEBREAK~§9PFE§r
 tile.poke:limestone_bulb.name=Limestone Bulb~LINEBREAK~§9PFE§r
@@ -1225,3 +1271,8 @@ translation.poke:timeEventOptionsTitle=Event Options
 translation.poke:timeEventOptionsEditTime=Edit Date & Time
 translation.poke:timeEventEditTimeTitle=Editing Date & Time
 translation.poke:timeEditGiftTextFieldLabel=The gift the players can claim during the event window~LINEBREAK~~LINEBREAK~This works using a Minecraft command (ex. /give)
+
+tile.poke_pfe:fisher.name=Fisher~LINEBREAK~§7When in water:~LINEBREAK~- Automatically catches fish~LINEBREAK~§9PFE§r
+item.poke_pfe:resist_gem=Resist Gem~LINEBREAK~§9PFE§r
+item.poke_pfe:resist_ring=Resist Ring~LINEBREAK~§9PFE§r
+tile.poke_pfe:elevator.name=Elevator~LINEBREAK~§7Takes you to the next Elevator Block~LINEBREAK~:_input_key.jump:= UP~LINEBREAK~:_input_key.sneak: + :_input_key.jump: = Down

@@ -8,7 +8,7 @@
 				"enchanted": "armor_enchanted"
 			},
 			"textures": {
-				"default": "textures/models/armor/nebula/poke_leggings",
+				"default": "textures/poke/pfe/nebula_leggings",
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {

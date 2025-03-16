@@ -4,6 +4,7 @@
 		"description": {
 			"identifier": "poke:dragon_ring"
 		},
+		"group": "pfe:rings",
 		"ingredients": [
 			{
 				"item": "poke:gem_holder",
@@ -20,7 +21,7 @@
 		"unlock": [
 			{
 				"item": "poke:dragon_gem"
-			}	
+			}
 		],
 		"result": {
 			"item": "poke:ring_4",

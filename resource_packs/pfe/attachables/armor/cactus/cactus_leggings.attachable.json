@@ -8,7 +8,7 @@
 				"enchanted": "armor_enchanted"
 			},
 			"textures": {
-				"default": "textures/models/armor/poke_cactus_2",
+				"default": "textures/poke/pfe/cactus_2_armor",
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {

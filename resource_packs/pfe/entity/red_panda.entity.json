@@ -7,8 +7,8 @@
 				"default": "fox"
 			},
 			"textures": {
-				"red": "textures/entity/neutral/red_panda/poke_red",
-				"arctic": "textures/entity/neutral/red_panda/poke_shade"
+				"red": "textures/poke/pfe/red_panda_entity",
+				"arctic": "textures/poke/pfe/red_panda_shade_entity"
 			},
 			"geometry": {
 				"default": "geometry.poke_pfe.red_panda"

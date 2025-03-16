@@ -1,15 +1,16 @@
 {
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.formatOnSave": false
   },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.formatOnSave": false
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.formatOnSave": false
   },
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.formatOnSave": true,
+    "prettier.embeddedLanguageFormatting": "off"
   },
   "git.ignoreLimitWarning": true,
   "editor.formatOnSave": true,
@@ -26,13 +27,19 @@
   },
   "cSpell.words": [
     "boltbow",
+    "eastside",
     "gametest",
     "gametests",
     "Haxels",
     "mcaddon",
     "mcpedl",
+    "minecart",
     "modbay",
-    "netherrack"
+    "netherrack",
+    "northside",
+    "southside",
+    "stackable",
+    "westside"
   ],
   "editor.tabSize": 2,
   "eslint.experimental.useFlatConfig": true

@@ -7,7 +7,7 @@
 				"default": "entity_emissive_alpha"
 			},
 			"textures": {
-				"default": "textures/entity/bosses/poke_the_logger"
+				"default": "textures/poke/pfe/the_logger_entity"
 			},
 			"geometry": {
 				"default": "geometry.poke_pfe.the_logger"

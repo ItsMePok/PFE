@@ -7,7 +7,7 @@
 				"default": "entity_alphatest"
 			},
 			"textures": {
-				"default": "textures/entity/bosses/poke_dragon"
+				"default": "textures/poke/pfe/sparky_entity"
 			},
 			"geometry": {
 				"default": "geometry.poke_pfe.dragon"
@@ -15,6 +15,9 @@
 			"animations": {
 				"wing_off": "animation.poke_pfe.dragon.wing_off",
 				"flying": "animation.poke_pfe.dragon.o2.flying", //2
+				"tail_default": "animation.poke_pfe.dragon.o2.tail_default",
+				"tail_left": "animation.poke_pfe.dragon.o2.tail_left",
+				"tail_right": "animation.poke_pfe.dragon.o2.tail_right",
 				"controller": "controller.animation.poke_pfe.dragon.flying" //2
 			},
 			"render_controllers": [

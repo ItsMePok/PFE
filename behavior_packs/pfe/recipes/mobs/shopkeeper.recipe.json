@@ -4,16 +4,32 @@
 		"description": {
 			"identifier": "poke:spawn_shopkeeper"
 		},
-		"tags": ["crafting_table"],
-		"pattern": [" E ","EXE"," E "],
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" E ",
+			"EXE",
+			" E "
+		],
 		"unlock": [
-			{"item":"egg"},
-			{"item":"poke:copper_token"},
-			{"item":"poke:banished_star"}
+			{
+				"tag": "minecraft:egg"
+			},
+			{
+				"item": "poke:copper_token"
+			},
+			{
+				"item": "poke:banished_star"
+			}
 		],
 		"key": {
-			"X": {"item":"egg"},
-			"E":{"item":"poke:banished_star"}
+			"X": {
+				"tag": "minecraft:egg"
+			},
+			"E": {
+				"item": "poke:banished_star"
+			}
 		},
 		"result": {
 			"item": "poke:spawn_shopkeeper"

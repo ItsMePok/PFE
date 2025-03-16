@@ -8,7 +8,7 @@
 			"is_experimental": false
 		},
 		"component_groups": {
-			"despawn":{
+			"despawn": {
 				"minecraft:instant_despawn": {
 					"remove_child_entities": false
 				}
@@ -255,7 +255,7 @@
 		},
 		"components": {
 			"minecraft:nameable": {
-				"name_actions":[
+				"name_actions": [
 					{
 						"name_filter": "despawn",
 						"on_named": {
@@ -266,8 +266,8 @@
 					{
 						"name_filter": "shady",
 						"on_named": {
-						"event": "poke:renamed",
-						"target": "self"
+							"event": "poke:renamed",
+							"target": "self"
 						}
 					}
 				]
@@ -496,19 +496,34 @@
 					},
 					{
 						"filters": {
-							"test": "is_snow_covered",
-							"value": true
+							"test": "is_temperature_type",
+							"operator": "==",
+							"value": "cold"
 						},
-						"add": {
-							"component_groups": [
-								"poke:red_panda_green"
-							]
-						}
+						"randomize": [
+							{
+								"add": {
+									"component_groups": [
+										"poke:red_panda_green"
+									]
+								},
+								"weight": 1
+							},
+							{
+								"add": {
+									"component_groups": [
+										"poke:red_panda_red"
+									]
+								},
+								"weight": 99
+							}
+						]
 					},
 					{
 						"filters": {
-							"test": "is_snow_covered",
-							"value": false
+							"test": "is_temperature_type",
+							"operator": "!=",
+							"value": "cold"
 						},
 						"add": {
 							"component_groups": [
@@ -518,7 +533,7 @@
 					}
 				]
 			},
-			"poke:renamed":{
+			"poke:renamed": {
 				"add": {
 					"component_groups": [
 						"poke:red_panda_green"

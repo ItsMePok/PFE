@@ -8,7 +8,7 @@
 				"default": "minecart" //2
 			},
 			"textures": {
-				"default": "textures/entity/passive/poke_mail_cart" //2
+				"default": "textures/poke/pfe/mail_cart_entity" //2
 			},
 			"geometry": {
 				"default": "geometry.poke_pfe.mail_cart"

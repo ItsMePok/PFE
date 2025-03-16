@@ -35,12 +35,12 @@
 				"item": "iron_ingot"
 			},
 			{
-				"item": "egg"
+				"tag": "minecraft:egg"
 			}
 		],
 		"key": {
 			"X": {
-				"item": "egg"
+				"tag": "minecraft:egg"
 			},
 			"E": {
 				"item": "copper_ingot"

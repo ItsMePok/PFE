@@ -9,12 +9,12 @@
 			}
 		},
 		"components": {
-			"minecraft:icon":"poke_spawn_shopkeeper",
-			"minecraft:custom_components":[
+			"minecraft:icon": "poke_shopkeeper_spawn_egg",
+			"minecraft:custom_components": [
 				"poke:cc_spawnEgg"
 			],
-			"minecraft:tags":{
-				"tags":[
+			"minecraft:tags": {
+				"tags": [
 					"poke:shopkeeper"
 				]
 			}

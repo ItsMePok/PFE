@@ -4,14 +4,14 @@
 		"description": {
 			"identifier": "poke:boss_event_config",
 			"menu_category": {
-				"category": "equipment"
+				"category": "none"
 			}
 		},
 		"components": {
-			"minecraft:rarity":"common",
-			"minecraft:icon":"poke_boss_event_config",
+			"minecraft:rarity": "common",
+			"minecraft:icon": "poke_boss_event_config",
 			"minecraft:custom_components": [
-				"poke:boss_event_config"
+				"poke_pfe:config"
 			]
 		}
 	}

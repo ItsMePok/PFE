@@ -4,6 +4,7 @@
 		"description": {
 			"identifier": "poke:gravity_ring"
 		},
+		"group": "pfe:rings",
 		"ingredients": [
 			{
 				"item": "poke:diamond_gem_holder",
@@ -17,7 +18,7 @@
 		"unlock": [
 			{
 				"item": "poke:gravity_gem"
-			}	
+			}
 		],
 		"tags": [
 			"crafting_table"

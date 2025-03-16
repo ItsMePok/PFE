@@ -4,6 +4,7 @@
 		"description": {
 			"identifier": "poke:grim_ring"
 		},
+		"group": "pfe:rings",
 		"ingredients": [
 			{
 				"item": "poke:obsidian_gem_holder",
@@ -17,7 +18,7 @@
 		"unlock": [
 			{
 				"item": "poke:grim_gem"
-			}	
+			}
 		],
 		"tags": [
 			"crafting_table"

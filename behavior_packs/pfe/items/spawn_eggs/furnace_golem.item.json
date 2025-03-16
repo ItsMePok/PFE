@@ -8,12 +8,12 @@
 			}
 		},
 		"components": {
-			"minecraft:icon":"poke_furnace_golem",
-			"minecraft:custom_components":[
+			"minecraft:icon": "poke_furnace_golem_spawn_egg",
+			"minecraft:custom_components": [
 				"poke:cc_spawnEgg"
 			],
-			"minecraft:tags":{
-				"tags":[
+			"minecraft:tags": {
+				"tags": [
 					"poke:robo_golem"
 				]
 			}

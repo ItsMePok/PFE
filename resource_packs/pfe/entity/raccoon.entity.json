@@ -7,9 +7,9 @@
 				"default": "entity"
 			},
 			"textures": {
-				"default": "textures/entity/neutral/raccoon/poke_raccoon",
-				"angry": "textures/entity/neutral/raccoon/poke_raccoon",
-				"tame": "textures/entity/neutral/raccoon/poke_raccoon"
+				"default": "textures/poke/pfe/raccoon_entity",
+				"angry": "textures/poke/pfe/raccoon_entity",
+				"tame": "textures/poke/pfe/raccoon_entity"
 			},
 			"geometry": {
 				"default": "geometry.poke_pfe.raccoon"

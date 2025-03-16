@@ -7,6 +7,33 @@
         "groups": [
           {
             "group_identifier": {
+              "name": "poke:itemGroup.name.drain",
+              "icon": "poke_pfe:astral_drain"
+            },
+            "items": [
+              "poke_pfe:hellish_drain",
+              "poke_pfe:molten_drain",
+              "poke_pfe:honey_drain",
+              "poke_pfe:radium_drain",
+              "poke_pfe:shade_drain",
+              "poke_pfe:cobalt_drain",
+              "poke_pfe:onyx_drain",
+              "poke_pfe:nebula_drain",
+              "poke_pfe:galaxy_drain",
+              "poke_pfe:shadowstone_drain",
+              "poke_pfe:medic_drain",
+              "poke_pfe:godly_drain",
+              "poke_pfe:holy_drain",
+              "poke_pfe:demonic_drain",
+              "poke_pfe:limestone_drain",
+              "poke_pfe:banished_drain",
+              "poke_pfe:death_drain",
+              "poke_pfe:void_drain",
+              "poke_pfe:astral_drain"
+            ]
+          },
+          {
+            "group_identifier": {
               "name": "poke:itemGroup.name.cutBlocks",
               "icon": "poke:cut_hellish"
             },
@@ -106,7 +133,7 @@
           {
             "group_identifier": {
               "name": "poke:itemGroup.name.bulbs",
-              "icon":"poke:hellish_bulb"
+              "icon": "poke:hellish_bulb"
             },
             "items": [
               "poke:hellish_bulb",
@@ -126,13 +153,12 @@
               "poke:void_bulb",
               "poke:holy_bulb",
               "poke:limestone_bulb"
-
             ]
           },
           {
             "group_identifier": {
               "name": "poke:itemGroup.name.rawBlocks",
-              "icon":"poke:raw_hellish_block"
+              "icon": "poke:raw_hellish_block"
             },
             "items": [
               "poke:raw_hellish_block",
@@ -164,8 +190,7 @@
             "group_identifier": {
               "name": "minecraft:itemGroup.name.planks"
             },
-            "items": [
-            ]
+            "items": []
           },
           {
             "group_identifier": {
@@ -466,8 +491,8 @@
             },
             "items": [
               "poke:turnip",
-              "poke:golden_turnip",
-              "poke:turnip_crop" //
+              "poke:golden_turnip"
+              //,"poke:turnip_crop" //Old Block
             ]
           },
           {
@@ -487,8 +512,8 @@
               "name": "minecraft:itemGroup.name.flower"
             },
             "items": [
-              "poke:charred_poppy",
-              "poke:charred_poppy_item"
+              "poke:charred_poppy"
+              //,"poke:charred_poppy_item" // Old Item
             ]
           },
           {
@@ -938,11 +963,11 @@
             ]
           },
           {
-            "group_identifier":{
+            "group_identifier": {
               "name": "poke:itemGroup.name.haxel",
               "icon": "poke:wooden_haxel"
             },
-            "items":[
+            "items": [
               "poke:wooden_haxel",
               "poke:stone_haxel",
               "poke:iron_haxel",
@@ -1085,6 +1110,7 @@
               "poke:ring_1",
               "poke:zeus_ring",
               "poke:darkness_ring",
+              "poke_pfe:resist_ring",
               "poke:ice_ring",
               "poke:grim_ring",
               "poke:med_ring",
@@ -1444,7 +1470,6 @@
             },
             "items": [
               "poke:pfe-empty_pottery_sherd",
-
               "poke:pfe-bee_pottery_sherd",
               "poke:pfe-fish_pottery_sherd",
               "poke:pfe-snake_pottery_sherd",
@@ -1452,29 +1477,22 @@
               "poke:pfe-listener_pottery_sherd",
               "poke:pfe-enderman_pottery_sherd",
               "poke:pfe-crowned_pottery_sherd",
-
               "poke:pfe-cassette_pottery_sherd",
-
               "poke:pfe-craft_pottery_sherd",
               "poke:pfe-ingot_pottery_sherd",
               "poke:pfe-star_pottery_sherd",
               "poke:pfe-spell_pottery_sherd",
-
               "poke:pfe-curseforge_pottery_sherd",
               "poke:pfe-github_pottery_sherd",
               "poke:pfe-mcpedl_pottery_sherd",
               "poke:pfe-modbay_pottery_sherd",
-
               "poke:pfe-mushroom_buddy_pottery_sherd",
               "poke:pfe-poke_pottery_sherd",
               "poke:pfe-present_pottery_sherd",
-
               "poke:pfe-spook_pottery_sherd",
-
               "poke:pfe-storm_pottery_sherd",
               "poke:pfe-tree_pottery_sherd",
               "poke:pfe-snowflake_pottery_sherd",
-
               "poke:pfe-wizard_pottery_sherd"
             ]
           },
@@ -1515,6 +1533,7 @@
               "poke:block_breaker_south",
               "poke:dirter_up",
               "poke:duster_up",
+              "poke_pfe:fisher",
               "poke:magnet",
               "poke:barometer",
               "poke:phantomed_conduit",
@@ -1612,6 +1631,7 @@
               "poke:rain_gem",
               "poke:zeus_gem",
               "poke:darkness_gem",
+              "poke_pfe:resist_gem",
               "poke:ice_gem",
               "poke:grim_gem",
               "poke:med_gem",
@@ -1624,7 +1644,6 @@
               "poke:ore_gem"
             ]
           },
-          
           {
             "group_identifier": {
               "name": "poke:itemGroup.name.gemHolder",

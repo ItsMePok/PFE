@@ -8,7 +8,7 @@
 			}
 		},
 		"components": {
-			"minecraft:icon":"poke_bursting_core"
+			"minecraft:icon": "poke_bursting_core"
 		}
 	}
 }

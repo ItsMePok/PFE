@@ -8,7 +8,7 @@
 				"body_layer": "silverfish_layers" //2
 			},
 			"textures": {
-				"default": "textures/entity/hostile/poke_nebula_bug"
+				"default": "textures/poke/pfe/nebula_bug_entity"
 			},
 			"geometry": {
 				"default": "geometry.poke_pfe.nebula_bug"

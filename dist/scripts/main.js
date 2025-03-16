@@ -1,5 +1,5 @@
 // scripts/main.ts
-import { system as system3, world as world3, EquipmentSlot as EquipmentSlot4, GameMode as GameMode3, EntityComponentTypes as EntityComponentTypes4, ItemComponentTypes as ItemComponentTypes4, ItemStack as ItemStack4, Direction, MinecraftDimensionTypes as MinecraftDimensionTypes2 } from "@minecraft/server";
+import { system as system3, world as world5, EquipmentSlot as EquipmentSlot4, GameMode as GameMode3, EntityComponentTypes as EntityComponentTypes4, ItemComponentTypes as ItemComponentTypes4, ItemStack as ItemStack4, Direction, MinecraftDimensionTypes as MinecraftDimensionTypes2 } from "@minecraft/server";
 
 // node_modules/@minecraft/vanilla-data/lib/index.js
 var MinecraftBiomeTypes = ((MinecraftBiomeTypes2) => {
@@ -3202,15 +3202,6 @@ function PFEStartBossEvent() {
 system.runInterval(() => {
   PFEStartBossEvent();
 }, PFEBossEventTicks());
-var PFEBossEventUI = class {
-  onUse(data) {
-    if (world.getDynamicProperty(PFEBossEventConfigName) == void 0) {
-      world.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(PFEDefaultBossEventSettings));
-    }
-    PFEBossEventUIMainMenu(data.source);
-    return;
-  }
-};
 
 // scripts/haxelMining.ts
 import { EntityComponentTypes as EntityComponentTypes2, EquipmentSlot as EquipmentSlot2, ItemComponentTypes as ItemComponentTypes2, ItemStack as ItemStack2, system as system2 } from "@minecraft/server";
@@ -3351,6 +3342,16 @@ function PokeSaveProperty(propertyId, item, save, entity, slot) {
   } else {
     return false;
   }
+}
+function PokeSpawnLootTable(lootTable, position, dimension, amount) {
+  console.warn(`loot spawn ${position.x} ${position.y} ${position.z} loot "${lootTable}"`);
+  if (amount) {
+    for (let i = amount - 1; i > -1; i--) {
+      dimension.runCommand(`loot spawn ${position.x} ${position.y} ${position.z} loot "${lootTable}"`);
+    }
+    return;
+  } else
+    dimension.runCommand(`loot spawn ${position.x} ${position.y} ${position.z} loot "${lootTable}"`);
 }
 
 // scripts/haxelMining.ts
@@ -3509,7 +3510,7 @@ function PFEHaxelConfigBlackListRemove(data, dynamicProperty) {
 }
 
 // scripts/time.ts
-import { GameMode as GameMode2, world as world2 } from "@minecraft/server";
+import { GameMode as GameMode2, world as world3 } from "@minecraft/server";
 import { ActionFormData as ActionFormData4, ModalFormData as ModalFormData3 } from "@minecraft/server-ui";
 var PokeCalendarVersion = 1;
 var PokeCustomEventId = `poke:customEvents`;
@@ -3674,7 +3675,7 @@ var PFEDefaultHolidays = [
 ];
 function PokeTimeCheck(event, player, claimCheck) {
   if (event == null || event.dates == void 0) {
-    PokeErrorScreen(player, void 0, world2.setDynamicProperty(PokeCustomEventId, JSON.stringify([])));
+    PokeErrorScreen(player, void 0, world3.setDynamicProperty(PokeCustomEventId, JSON.stringify([])));
     return;
   }
   let currentTime = new Date(Date.now() + PokeTimeZoneOffset(player));
@@ -3725,7 +3726,7 @@ function PokeTimeDebug(player) {
     }
     let selection = 0;
     if (response.selection == selection) {
-      world2.setDynamicProperty(PokeCustomEventId, JSON.stringify([]));
+      world3.setDynamicProperty(PokeCustomEventId, JSON.stringify([]));
       return;
     } else
       selection++;
@@ -3742,13 +3743,13 @@ function PokeTimeDebug(player) {
         { id: `custom:9`, dates: [{ month: 0, days: [1, 2, 3, 4, 5] }, { month: 1, days: [6, 7, 8, 9, 10] }], greeting: "generic", name: { text: `Custom Event 9` }, icon: `textures/poke/common/event_default`, repeat: true, gift: void 0, fixedTime: false, v: PokeCalendarVersion },
         { id: `custom:10`, dates: [{ month: 0, days: [1, 2, 3, 4, 5] }, { month: 1, days: [6, 7, 8, 9, 10] }], greeting: "generic", name: { text: `Custom Event 10` }, icon: `textures/poke/common/event_default`, repeat: true, gift: void 0, fixedTime: false, v: PokeCalendarVersion }
       ];
-      let customEvents = world2.getDynamicProperty(PokeCustomEventId);
+      let customEvents = world3.getDynamicProperty(PokeCustomEventId);
       if (!customEvents) {
-        world2.setDynamicProperty(PokeCustomEventId, JSON.stringify(newEvents));
+        world3.setDynamicProperty(PokeCustomEventId, JSON.stringify(newEvents));
         return;
       }
       customEvents = JSON.parse(customEvents).concat(newEvents);
-      world2.setDynamicProperty(PokeCustomEventId, JSON.stringify(customEvents));
+      world3.setDynamicProperty(PokeCustomEventId, JSON.stringify(customEvents));
       return;
     } else
       selection++;
@@ -3771,13 +3772,13 @@ function PokeTimeDebug(player) {
         { id: `9`, day: time.getDate() - 1, announce: true, month: time.getMonth(), style: "normal", name: `Custom 9` },
         { id: `10`, day: time.getDate() - 1, announce: true, month: time.getMonth(), style: "dev", name: `Custom 10` }
       ];
-      let birthdays = world2.getDynamicProperty(PokeCustomEventId);
+      let birthdays = world3.getDynamicProperty(PokeCustomEventId);
       if (!birthdays) {
-        world2.setDynamicProperty(PokeCustomEventId, JSON.stringify(newBirthdays));
+        world3.setDynamicProperty(PokeCustomEventId, JSON.stringify(newBirthdays));
         return;
       }
       birthdays = JSON.parse(birthdays).concat(newBirthdays);
-      world2.setDynamicProperty(`poke:birthdays`, JSON.stringify(birthdays));
+      world3.setDynamicProperty(`poke:birthdays`, JSON.stringify(birthdays));
       return;
     } else
       selection++;
@@ -3890,7 +3891,7 @@ function PokeSetBirthday(player) {
       id: player.id
     };
     if (response.formValues?.at(2)) {
-      let birthdays = JSON.parse(world2.getDynamicProperty(`poke:birthdays`).toString());
+      let birthdays = JSON.parse(world3.getDynamicProperty(`poke:birthdays`).toString());
       for (let i = birthdays.length - 1; i > -1; i--) {
         let birthday = birthdays.at(i);
         if (birthday && (birthday.id == player.id || !birthday.id && birthday.name == player.name)) {
@@ -3900,14 +3901,14 @@ function PokeSetBirthday(player) {
         }
         continue;
       }
-      world2.setDynamicProperty(`poke:birthdays`, JSON.stringify(birthdays));
+      world3.setDynamicProperty(`poke:birthdays`, JSON.stringify(birthdays));
       player.setDynamicProperty(`poke:birthday`, JSON.stringify(newBirthday));
     } else {
-      let birthdays = JSON.parse(world2.getDynamicProperty(`poke:birthdays`).toString());
+      let birthdays = JSON.parse(world3.getDynamicProperty(`poke:birthdays`).toString());
       let replaceBirthday = PokeGetObjectById(birthdays, player.id);
       if (replaceBirthday) {
         birthdays = birthdays.slice(replaceBirthday.position, replaceBirthday.position);
-        world2.setDynamicProperty(`poke:birthdays`, JSON.stringify(birthdays));
+        world3.setDynamicProperty(`poke:birthdays`, JSON.stringify(birthdays));
       }
       player.setDynamicProperty(`poke:birthday`, JSON.stringify(newBirthday));
     }
@@ -4377,7 +4378,7 @@ function PokeTimeAdditionalOptions(player) {
   });
 }
 function PokeTimeGetAllEvents() {
-  return PFEDefaultHolidays.concat(JSON.parse(world2.getDynamicProperty(PokeCustomEventId).toString()));
+  return PFEDefaultHolidays.concat(JSON.parse(world3.getDynamicProperty(PokeCustomEventId).toString()));
 }
 function PokeTimeDateString(event, player) {
   let returnString = [];
@@ -4447,7 +4448,7 @@ function PokeTimeCreateEvent(player, event) {
         if (response.formValues?.at(0)?.toString().startsWith(`%`)) {
           name = { translate: response.formValues.at(1)?.toString().substring(1) };
         }
-        let newEventList = world2.getDynamicProperty(PokeCustomEventId);
+        let newEventList = world3.getDynamicProperty(PokeCustomEventId);
         let replaceEvent = void 0;
         if (typeof newEventList == "string") {
           newEventList = JSON.parse(newEventList);
@@ -4458,7 +4459,7 @@ function PokeTimeCreateEvent(player, event) {
         if (!newEventList || typeof newEventList == "string") {
           return;
         }
-        if (world2.getDynamicProperty(PokeCustomEventId) != void 0 || world2.getDynamicProperty(PokeCustomEventId) != `[]`) {
+        if (world3.getDynamicProperty(PokeCustomEventId) != void 0 || world3.getDynamicProperty(PokeCustomEventId) != `[]`) {
         }
         let event2 = replaceEvent?.value;
         if (replaceEvent) {
@@ -4493,7 +4494,7 @@ function PokeTimeCreateEvent(player, event) {
           newEventList = newEventList.concat([event2]);
         }
         if (newEventList?.at(0))
-          world2.setDynamicProperty(PokeCustomEventId, JSON.stringify(newEventList));
+          world3.setDynamicProperty(PokeCustomEventId, JSON.stringify(newEventList));
       } else {
         let id = response.formValues?.at(0)?.toString().replace(`custom:`, "").replace(" ", "");
         if (!id) {
@@ -4516,8 +4517,8 @@ function PokeTimeCreateEvent(player, event) {
           greeting: event.greeting,
           v: PokeCalendarVersion
         };
-        let customEvents = world2.getDynamicProperty(PokeCustomEventId)?.toString().replace(JSON.stringify(event), JSON.stringify(newEvent));
-        world2.setDynamicProperty(PokeCustomEventId, customEvents);
+        let customEvents = world3.getDynamicProperty(PokeCustomEventId)?.toString().replace(JSON.stringify(event), JSON.stringify(newEvent));
+        world3.setDynamicProperty(PokeCustomEventId, customEvents);
       }
       PokeEventOptions(player, event);
       return;
@@ -4601,8 +4602,8 @@ function PokeTimeEditGift(player, event) {
       nonModifiable: event.nonModifiable,
       v: PokeCalendarVersion
     };
-    let customEvents = world2.getDynamicProperty(PokeCustomEventId)?.toString().replace(JSON.stringify(event), JSON.stringify(newEvent));
-    world2.setDynamicProperty(PokeCustomEventId, customEvents);
+    let customEvents = world3.getDynamicProperty(PokeCustomEventId)?.toString().replace(JSON.stringify(event), JSON.stringify(newEvent));
+    world3.setDynamicProperty(PokeCustomEventId, customEvents);
     PokeEventOptions(player, newEvent);
   });
 }
@@ -4644,8 +4645,8 @@ function PokeTimeEditGreeting(player, event) {
       nonModifiable: event.nonModifiable,
       v: PokeCalendarVersion
     };
-    let customEvents = world2.getDynamicProperty(PokeCustomEventId)?.toString().replace(JSON.stringify(event), JSON.stringify(newEvent));
-    world2.setDynamicProperty(PokeCustomEventId, customEvents);
+    let customEvents = world3.getDynamicProperty(PokeCustomEventId)?.toString().replace(JSON.stringify(event), JSON.stringify(newEvent));
+    world3.setDynamicProperty(PokeCustomEventId, customEvents);
     PokeEventOptions(player, newEvent);
     return;
   });
@@ -4663,14 +4664,14 @@ function PokeTimeDeleteEvent(player, event) {
         PokeErrorScreen(player, { translate: `translation.poke:timeErrorIncorrectDeleteId` }, PokeEventOptions(player, event));
         return;
       }
-      let customEvents = JSON.parse(world2.getDynamicProperty(PokeCustomEventId));
+      let customEvents = JSON.parse(world3.getDynamicProperty(PokeCustomEventId));
       let replacedEvent = PokeGetObjectById(customEvents, event.id);
       if (!replacedEvent) {
         return;
       }
       let newEvents = JSON.stringify(customEvents);
       newEvents = newEvents.replace(JSON.stringify(replacedEvent.value), ``).replace(`,,`, `,`).replace(`,]`, `]`).replace(`[,`, `[`);
-      world2.setDynamicProperty(PokeCustomEventId, newEvents);
+      world3.setDynamicProperty(PokeCustomEventId, newEvents);
     }
   });
 }
@@ -5006,23 +5007,150 @@ function PFEAmmoUpgrade(player, item) {
   });
 }
 
+// scripts/disableConfig.ts
+import { world as world4 } from "@minecraft/server";
+import { ActionFormData as ActionFormData6 } from "@minecraft/server-ui";
+var PFEDisableConfigName = "poke_pfe:disable_config";
+var PFEDisableConfigVersion = 1;
+var PFEDisabledOnUseItems = ["poke:sundial", "poke:quantum_teleporter", "poke:kapow_ring"];
+var PFEDisableConfigDefault = {
+  "v": PFEDisableConfigVersion,
+  "bounty": true,
+  "cactusArmorRadius": true,
+  "deathArmorRadius": true,
+  "kapowRing": true,
+  "nukeRing": true,
+  "quantumTeleporter": true,
+  "sundial": true,
+  "witherSpawner": true
+};
+function PFEDisableConfigMainMenu(data) {
+  let player = data.source;
+  let UI = new ActionFormData6();
+  let options = JSON.parse(world4.getDynamicProperty(PFEDisableConfigName).toString());
+  if (options.quantumTeleporter) {
+    UI.button({ rawtext: [{ translate: `item.poke_pfe.quantum_teleporter` }, { text: ":\xA7a\n" }, { translate: `translation.poke_pfe.enabled` }] }, `textures/poke/pfe/quantum_teleporter`);
+  } else {
+    UI.button({ rawtext: [{ translate: `item.poke_pfe.quantum_teleporter` }, { text: ":\xA7c\n" }, { translate: `translation.poke_pfe.disabled` }] }, `textures/poke/pfe/quantum_teleporter`);
+  }
+  if (options.kapowRing) {
+    UI.button({ rawtext: [{ translate: `item.poke_pfe.kapow_ring` }, { text: ":\xA7a\n" }, { translate: `translation.poke_pfe.enabled` }] }, `textures/poke/pfe/kapow_ring`);
+  } else {
+    UI.button({ rawtext: [{ translate: `item.poke_pfe.kapow_ring` }, { text: ":\xA7c\n" }, { translate: `translation.poke_pfe.disabled` }] }, `textures/poke/pfe/kapow_ring`);
+  }
+  if (options.nukeRing) {
+    UI.button({ rawtext: [{ translate: `item.poke_pfe.nuke_ring` }, { text: ":\xA7a\n" }, { translate: `translation.poke_pfe.enabled` }] }, `textures/poke/pfe/nuke_ring`);
+  } else {
+    UI.button({ rawtext: [{ translate: `item.poke_pfe.nuke_ring` }, { text: ":\xA7c\n" }, { translate: `translation.poke_pfe.disabled` }] }, `textures/poke/pfe/nuke_ring`);
+  }
+  if (options.sundial) {
+    UI.button({ rawtext: [{ translate: `item.poke_pfe.sundial` }, { text: ":\xA7a\n" }, { translate: `translation.poke_pfe.enabled` }] }, `textures/poke/pfe/sundial_1`);
+  } else {
+    UI.button({ rawtext: [{ translate: `item.poke_pfe.sundial` }, { text: ":\xA7c\n" }, { translate: `translation.poke_pfe.disabled` }] }, `textures/poke/pfe/sundial_1`);
+  }
+  if (options.witherSpawner) {
+    UI.button({ rawtext: [{ translate: `item.poke_pfe.wither_spawner` }, { text: ":\xA7a\n" }, { translate: `translation.poke_pfe.enabled` }] }, `textures/poke/pfe/wither_spawner`);
+  } else {
+    UI.button({ rawtext: [{ translate: `item.poke_pfe.wither_spawner` }, { text: ":\xA7c\n" }, { translate: `translation.poke_pfe.disabled` }] }, `textures/poke/pfe/wither_spawner`);
+  }
+  if (options.bounty) {
+    UI.button({ rawtext: [{ translate: `item.poke_pfe.bounty` }, { text: ":\xA7a\n" }, { translate: `translation.poke_pfe.enabled` }] }, `textures/poke/pfe/bounty`);
+  } else {
+    UI.button({ rawtext: [{ translate: `item.poke_pfe.bounty` }, { text: ":\xA7c\n" }, { translate: `translation.poke_pfe.disabled` }] }, `textures/poke/pfe/bounty`);
+  }
+  UI.show(player).then((response) => {
+    let selection = 0;
+    let newProperty = options;
+    if (response.selection == selection) {
+      if (newProperty.quantumTeleporter) {
+        newProperty.quantumTeleporter = false;
+        console.warn(`Disabled Qunantum Teleporter`);
+      } else
+        newProperty.quantumTeleporter = true;
+      world4.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
+      PFEDisableConfigMainMenu(data);
+      return;
+    } else
+      selection++;
+    if (response.selection == selection) {
+      if (newProperty.kapowRing) {
+        newProperty.kapowRing = false;
+        console.warn(`Disabled Kapow Ring`);
+      } else
+        newProperty.kapowRing = true;
+      world4.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
+      PFEDisableConfigMainMenu(data);
+      return;
+    } else
+      selection++;
+    if (response.selection == selection) {
+      if (newProperty.nukeRing) {
+        newProperty.nukeRing = false;
+        console.warn(`Disabled Nuke Ring`);
+      } else
+        newProperty.nukeRing = true;
+      world4.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
+      PFEDisableConfigMainMenu(data);
+      return;
+    } else
+      selection++;
+    if (response.selection == selection) {
+      if (newProperty.sundial) {
+        newProperty.sundial = false;
+        console.warn(`Disabled Sundial`);
+      } else
+        newProperty.sundial = true;
+      world4.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
+      PFEDisableConfigMainMenu(data);
+      return;
+    } else
+      selection++;
+    if (response.selection == selection) {
+      if (newProperty.witherSpawner) {
+        newProperty.witherSpawner = false;
+        console.warn(`Disabled Wither Spawner`);
+      } else
+        newProperty.witherSpawner = true;
+      world4.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
+      PFEDisableConfigMainMenu(data);
+      return;
+    } else
+      selection++;
+    if (response.selection == selection) {
+      if (newProperty.bounty) {
+        newProperty.bounty = false;
+        console.warn(`Disabled Bounty`);
+      } else
+        newProperty.bounty = true;
+      world4.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
+      PFEDisableConfigMainMenu(data);
+      return;
+    } else
+      selection++;
+    if (response.canceled || response.selection == selection) {
+      return;
+    }
+  });
+}
+
 // scripts/main.ts
+import { ActionFormData as ActionFormData7 } from "@minecraft/server-ui";
 system3.runInterval(() => {
-  world3.getDimension(MinecraftDimensionTypes2.overworld).runCommandAsync("execute as @a run function poke/pfe/effects");
+  world5.getDimension(MinecraftDimensionTypes2.overworld).runCommandAsync("execute as @a run function poke/pfe/effects");
   system3.runTimeout(() => {
-    world3.getDimension(MinecraftDimensionTypes2.overworld).runCommandAsync("execute as @a run function poke/pfe/effects_2");
+    world5.getDimension(MinecraftDimensionTypes2.overworld).runCommandAsync("execute as @a run function poke/pfe/effects_2");
     system3.runTimeout(() => {
-      world3.getDimension(MinecraftDimensionTypes2.overworld).runCommandAsync("execute as @a run function poke/pfe/effects_3");
+      world5.getDimension(MinecraftDimensionTypes2.overworld).runCommandAsync("execute as @a run function poke/pfe/effects_3");
       system3.runTimeout(() => {
-        world3.getDimension(MinecraftDimensionTypes2.overworld).runCommandAsync("execute as @a run function poke/pfe/effects_4");
+        world5.getDimension(MinecraftDimensionTypes2.overworld).runCommandAsync("execute as @a run function poke/pfe/effects_4");
       }, 40);
     }, 80);
   }, 120);
 }, 180);
-world3.afterEvents.playerJoin.subscribe((data) => {
-  let birthdays = JSON.parse(world3.getDynamicProperty(`poke:birthdays`).toString());
+world5.afterEvents.playerJoin.subscribe((data) => {
+  let birthdays = JSON.parse(world5.getDynamicProperty(`poke:birthdays`).toString());
   system3.runTimeout(() => {
-    world3.getAllPlayers().forEach((player) => {
+    world5.getAllPlayers().forEach((player) => {
       if (player.id == data.playerId) {
         let currentTime = new Date(Date.now() + PokeTimeZoneOffset(player));
         birthdays.forEach((birthday) => {
@@ -5047,7 +5175,7 @@ world3.afterEvents.playerJoin.subscribe((data) => {
 });
 function PFEHourTimeDownEvents() {
   let currentTime = new Date(Date.now());
-  let allPlayers = world3.getAllPlayers();
+  let allPlayers = world5.getAllPlayers();
   let randomPlayer = allPlayers.at(Math.abs(Math.round(Math.random() * (allPlayers.length - 1))));
   randomPlayer?.dimension.spawnEntity("poke:cassette_trader", randomPlayer.location).runCommand(`spreadplayers ~ ~ 30 40 @s ~10`);
 }
@@ -5061,22 +5189,25 @@ function PFETimeValidation() {
     }, Math.abs(60 - new Date(Date.now()).getSeconds()) * 20);
   }
 }
-world3.beforeEvents.worldInitialize.subscribe((data) => {
+world5.beforeEvents.worldInitialize.subscribe((data) => {
   system3.runTimeout(() => {
     PFETimeValidation();
   }, Math.abs(60 - new Date(Date.now()).getSeconds()) * 20);
-  let birthdayProperty = world3.getDynamicProperty(`poke:birthdays`);
+  if (typeof world5.getDynamicProperty(PFEDisableConfigName) != "string") {
+    world5.setDynamicProperty(PFEDisableConfigName, JSON.stringify(PFEDisableConfigDefault));
+  }
+  let birthdayProperty = world5.getDynamicProperty(`poke:birthdays`);
   if (typeof birthdayProperty != "string")
-    world3.setDynamicProperty(`poke:birthdays`, `[]`);
-  if (typeof world3.getDynamicProperty(`poke:customEvents`) != "string") {
-    world3.setDynamicProperty(`poke:customEvents`, "[]");
+    world5.setDynamicProperty(`poke:birthdays`, `[]`);
+  if (typeof world5.getDynamicProperty(`poke:customEvents`) != "string") {
+    world5.setDynamicProperty(`poke:customEvents`, "[]");
     console.warn(`Custom events were invalid; resetting to default (Ignore if this world was just created) || Poke-Calendar`);
   } else {
     try {
-      JSON.parse(world3.getDynamicProperty(`poke:customEvents`)?.toString());
+      JSON.parse(world5.getDynamicProperty(`poke:customEvents`)?.toString());
     } catch {
       console.warn(`Custom events were invalid; resetting to default || Poke-Calendar`);
-      world3.setDynamicProperty(`poke:customEvents`, "[]");
+      world5.setDynamicProperty(`poke:customEvents`, "[]");
     }
   }
   data.itemComponentRegistry.registerCustomComponent(
@@ -5087,19 +5218,15 @@ world3.beforeEvents.worldInitialize.subscribe((data) => {
       }
     }
   );
-  if (typeof world3.getDynamicProperty(PFEBossEventConfigName) == "string") {
-    let settings = JSON.parse(world3.getDynamicProperty(PFEBossEventConfigName));
+  if (typeof world5.getDynamicProperty(PFEBossEventConfigName) == "string") {
+    let settings = JSON.parse(world5.getDynamicProperty(PFEBossEventConfigName));
     if (typeof settings.ticks != "number" || typeof settings.furnaceGolem != "object" || typeof settings.knightling != "object" || typeof settings.listener != "object" || typeof settings.zombken != "object" || typeof settings.miniDemonicAllay != "object" || typeof settings.necromancer != "object" || typeof settings.snowman != "object" || typeof settings.sparky != "object" || typeof settings.superStriker != "object" || typeof settings.theLogger != "object") {
-      world3.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(PFEDefaultBossEventSettings));
+      world5.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(PFEDefaultBossEventSettings));
     }
     ;
   } else {
-    world3.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(PFEDefaultBossEventSettings));
+    world5.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(PFEDefaultBossEventSettings));
   }
-  data.itemComponentRegistry.registerCustomComponent(
-    "poke:boss_event_config",
-    new PFEBossEventUI()
-  );
   data.itemComponentRegistry.registerCustomComponent(
     `poke-pfe:identifier`,
     {
@@ -5117,6 +5244,9 @@ world3.beforeEvents.worldInitialize.subscribe((data) => {
   data.itemComponentRegistry.registerCustomComponent(
     "poke:boss_event",
     { onUse(data2) {
+      let options = JSON.parse(world5.getDynamicProperty(PFEDisableConfigName).toString());
+      if (!options.bounty)
+        return;
       if (PFEStartBossEvent() == 0) {
         data2.source.sendMessage({ translate: `translation.poke:bossEventNoSpawnError` });
         data2.source.playSound(`note.didgeridoo`, { pitch: 0.825 });
@@ -5234,6 +5364,11 @@ world3.beforeEvents.worldInitialize.subscribe((data) => {
       onUse(data2) {
         if (data2.itemStack == void 0)
           return;
+        if (data2.itemStack.typeId == "poke:nuke_ring") {
+          let options = JSON.parse(world5.getDynamicProperty(PFEDisableConfigName).toString());
+          if (!options.nukeRing)
+            return;
+        }
         const headLocate = data2.source.getHeadLocation();
         const pTag = data2.itemStack.getTags();
         const angle = data2.source.getViewDirection();
@@ -5405,8 +5540,7 @@ world3.beforeEvents.worldInitialize.subscribe((data) => {
             return;
           }
           case "poke:ban_hammer": {
-            data2.attackingEntity.addEffect("strength", 40, { amplifier: 4 });
-            data2.hitEntity.addEffect("weakness", 20, { amplifier: 2 });
+            data2.attackingEntity.addEffect("strength", 40, { amplifier: 1 });
             return;
           }
           case "poke:circuit_sword": {
@@ -5543,6 +5677,48 @@ world3.beforeEvents.worldInitialize.subscribe((data) => {
     }
   );
   data.itemComponentRegistry.registerCustomComponent(
+    "poke_pfe:config",
+    {
+      onUse(data2) {
+        if (data2.source.getGameMode() == GameMode3.creative || data2.source.hasTag(`poke:config`)) {
+          let UI = new ActionFormData7();
+          UI.button({ translate: `translation.poke_pfe.bossEventConfig` }, `textures/poke/common/spawn_enabled`);
+          UI.button({ translate: `translation.poke_pfe.disableConfig` }, `textures/poke/common/blacklist_add`);
+          UI.show(data2.source).then((response) => {
+            let selection = 0;
+            if (response.selection == selection) {
+              if (world5.getDynamicProperty(PFEBossEventConfigName) == void 0) {
+                world5.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(PFEDefaultBossEventSettings));
+              }
+              PFEBossEventUIMainMenu(data2.source);
+              return;
+            } else
+              selection++;
+            if (response.selection == selection) {
+              PFEDisableConfigMainMenu(data2);
+            } else
+              selection++;
+            if (response.selection == selection || response.canceled) {
+              return;
+            }
+          });
+        } else {
+          let UI = new ActionFormData7();
+          UI.title({ translate: `translation.poke_pfe.insuffictPerms` });
+          UI.body({ rawtext: [{ translate: `translation.poke_pfe.insuffictPerms.desc` }, { text: `poke:config
+
+` }, { translate: `translation.poke_pfe.insuffictPerms.desc2` }, { text: `
+/tag @s add poke:config` }] });
+          UI.button({ translate: `translation.poke:bossEventClose` }, `textures/poke/common/close`);
+          UI.show(data2.source).then((responce) => {
+            return;
+          });
+          return;
+        }
+      }
+    }
+  );
+  data.itemComponentRegistry.registerCustomComponent(
     "poke:haxelMining",
     new PFEHaxelMining()
   );
@@ -5601,6 +5777,11 @@ world3.beforeEvents.worldInitialize.subscribe((data) => {
     "poke:cc_spawnEgg",
     {
       onUseOn(data2) {
+        if (data2.itemStack.typeId == "poke:wither_spawner") {
+          let options = JSON.parse(world5.getDynamicProperty(PFEDisableConfigName).toString());
+          if (!options.witherSpawner)
+            return;
+        }
         const player = data2.source;
         const faceLoc = data2.faceLocation;
         const blockFace = data2.blockFace;
@@ -5674,6 +5855,17 @@ world3.beforeEvents.worldInitialize.subscribe((data) => {
       onUse(data2) {
         if (data2.itemStack === void 0)
           return;
+        if (PFEDisabledOnUseItems.includes(data2.itemStack.typeId)) {
+          let options = JSON.parse(world5.getDynamicProperty(PFEDisableConfigName).toString());
+          switch (true) {
+            case (data2.itemStack.typeId == "poke:quantum_teleporter" && !options.quantumTeleporter):
+              return;
+            case (data2.itemStack.typeId == "poke:sundial" && !options.sundial):
+              return;
+            case (data2.itemStack.typeId == "poke:kapow_ring" && !options.kapowRing):
+              return;
+          }
+        }
         const ItemTags = data2.itemStack.getTags().toString();
         let Command = ItemTags.substring(ItemTags.indexOf("pfe:Command:"), ItemTags.indexOf(":pfeCommandEnd")).substring(12);
         data2.source.runCommand(`${Command}`);
@@ -6486,6 +6678,111 @@ world3.beforeEvents.worldInitialize.subscribe((data) => {
           westB.setPermutation(westB.permutation.withState("pfe:wall_e", false));
         }
         return;
+      }
+    }
+  );
+  const PFEFisherComponentInfo = {
+    baitBlockState: "poke_pfe:bait",
+    baitStates: [4, 3, 2, 1, 0]
+  };
+  data.blockComponentRegistry.registerCustomComponent(
+    "poke_pfe:fisher",
+    {
+      onRandomTick(data2) {
+        if (data2.block.isWaterlogged && data2.block.permutation.getState(PFEFisherComponentInfo.baitBlockState) != 0) {
+          data2.block.setPermutation(data2.block.permutation.withState(PFEFisherComponentInfo.baitBlockState, Math.max(Number(data2.block.permutation.getState(PFEFisherComponentInfo.baitBlockState)) - 1, 0)));
+          data2.block.dimension.playSound(`poke_pfe.fisher.catch`, data2.block.center());
+        }
+      },
+      onPlayerInteract(data2) {
+        let baitState = data2.block.permutation.getState(PFEFisherComponentInfo.baitBlockState);
+        let lootTable = "poke/pfe/fisher_block.loot";
+        let spawnLocation = data2.block.center();
+        spawnLocation.y += 1;
+        switch (baitState) {
+          case 4:
+            {
+              data2.block.dimension.playSound(`poke_pfe.fisher.noLoot`, data2.block.center());
+              return;
+              break;
+            }
+            ;
+          case 3: {
+            PokeSpawnLootTable(lootTable, spawnLocation, data2.block.dimension, 1);
+            break;
+          }
+          case 2: {
+            PokeSpawnLootTable(lootTable, spawnLocation, data2.block.dimension, 2);
+            break;
+          }
+          case 1: {
+            PokeSpawnLootTable(lootTable, spawnLocation, data2.block.dimension, 3);
+            break;
+          }
+          case 0: {
+            PokeSpawnLootTable(lootTable, spawnLocation, data2.block.dimension, 4);
+            break;
+          }
+        }
+        data2.block.setPermutation(data2.block.permutation.withState(PFEFisherComponentInfo.baitBlockState, 4));
+      },
+      onPlayerDestroy(data2) {
+        let baitState = data2.destroyedBlockPermutation.getState(PFEFisherComponentInfo.baitBlockState);
+        let lootTable = "poke/pfe/fisher_block.loot";
+        let spawnLocation = data2.block.center();
+        spawnLocation.y += 1;
+        switch (baitState) {
+          case 4:
+            break;
+          case 3: {
+            PokeSpawnLootTable(lootTable, spawnLocation, data2.block.dimension, 1);
+            break;
+          }
+          case 2: {
+            PokeSpawnLootTable(lootTable, spawnLocation, data2.block.dimension, 2);
+            break;
+          }
+          case 1: {
+            PokeSpawnLootTable(lootTable, spawnLocation, data2.block.dimension, 3);
+            break;
+          }
+          case 0: {
+            PokeSpawnLootTable(lootTable, spawnLocation, data2.block.dimension, 4);
+            break;
+          }
+        }
+      }
+    }
+  );
+  data.blockComponentRegistry.registerCustomComponent(
+    "poke_pfe:elevator",
+    {
+      onStepOff(data2) {
+        if (!data2.entity)
+          return;
+        let player = data2.entity;
+        if (player.typeId == MinecraftEntityTypes.Player) {
+          let maxSearchHeight = 64;
+          if (player.isJumping) {
+            if (player.isSneaking) {
+              for (let i = data2.block.y - 1; i >= Math.max(data2.block.y - maxSearchHeight, data2.dimension.heightRange.min); Math.min(i--, data2.dimension.heightRange.min)) {
+                if (data2.block.below(Math.abs(i - data2.block.y))?.hasTag(`poke_pfe:elevator`) && !Boolean(data2.block.below(Math.abs(i - data2.block.y))?.getRedstonePower())) {
+                  player.teleport({ x: data2.block.center().x, y: i + 1, z: data2.block.center().z });
+                  player.playSound(`mob.endermen.portal`, { location: { x: data2.block.x, y: i + 1, z: data2.block.z } });
+                  return;
+                }
+              }
+            } else {
+              for (let i = data2.block.y + 1; i <= Math.min(data2.block.y + maxSearchHeight, data2.dimension.heightRange.max); Math.min(i++, data2.dimension.heightRange.max)) {
+                if (data2.block.above(i - data2.block.y)?.hasTag(`poke_pfe:elevator`) && !Boolean(data2.block.above(i - data2.block.y)?.getRedstonePower())) {
+                  player.teleport({ x: data2.block.center().x, y: i + 1, z: data2.block.center().z });
+                  player.playSound(`mob.endermen.portal`, { location: { x: data2.block.x, y: i + 1, z: data2.block.z } });
+                  return;
+                }
+              }
+            }
+          }
+        }
       }
     }
   );

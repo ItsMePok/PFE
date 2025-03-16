@@ -8,7 +8,7 @@
 				"enchanted": "armor_enchanted"
 			},
 			"textures": {
-				"default": "textures/models/armor/poke_fungal_hat",
+				"default": "textures/poke/pfe/fungal_hat_armor",
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {

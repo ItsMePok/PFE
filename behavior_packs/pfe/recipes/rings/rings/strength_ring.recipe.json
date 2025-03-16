@@ -4,13 +4,14 @@
 		"description": {
 			"identifier": "poke:strength_ring"
 		},
+		"group": "pfe:rings",
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
 				"item": "poke:strength_gem"
-			}	
+			}
 		],
 		"ingredients": [
 			{

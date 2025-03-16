@@ -4,6 +4,7 @@
 		"description": {
 			"identifier": "poke:shadow_ring"
 		},
+		"group": "pfe:rings",
 		"ingredients": [
 			{
 				"item": "poke:diamond_gem_holder",

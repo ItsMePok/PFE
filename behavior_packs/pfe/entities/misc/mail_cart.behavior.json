@@ -7,26 +7,31 @@
 			"is_summonable": true,
 			"is_experimental": false,
 			"animations": {
-				"death":"controller.animation.poke_pfe.mail_cart.death"
-			},"scripts": {"animate": ["death"]},
+				"death": "controller.animation.poke_pfe.mail_cart.death"
+			},
+			"scripts": {
+				"animate": [
+					"death"
+				]
+			},
 			"runtime_identifier": "minecraft:chest_minecart"
 		},
 		"component_groups": {
-			"despawn":{
+			"despawn": {
 				"minecraft:instant_despawn": {
 					"remove_child_entities": false
 				}
 			}
 		},
 		"events": {
-			"poke:death":{
+			"poke:death": {
 				"add": {
 					"component_groups": [
 						"despawn"
 					]
 				},
 				"queue_command": {
-					"command":[
+					"command": [
 						"structure load \"poke:mail_cart\" ~~~"
 					]
 				}
@@ -43,18 +48,20 @@
 				"max": 1
 			},
 			"minecraft:type_family": {
-				"family": ["minecart","inanimate"]
+				"family": [
+					"minecart",
+					"inanimate"
+				]
 			},
-			
-			"minecraft:is_stackable":true,
+			"minecraft:is_stackable": true,
 			"minecraft:collision_box": {
 				"width": 0.98,
 				"height": 0.7
 			},
 			"minecraft:loot": {
-				"table": "loot_tables/poke/pfe/entities/mail_cart.loot.json"
+				"table": "loot_tables/poke/pfe/mail_cart.loot.json"
 			},
-			"minecraft:on_hurt":{
+			"minecraft:on_hurt": {
 				"target": "self",
 				"event": "poke:death"
 			},
@@ -78,18 +85,23 @@
 			},
 			"minecraft:conditional_bandwidth_optimization": {
 				"default_values": {
-				  "max_optimized_distance": 60.0,
-				  "max_dropped_ticks": 20,
-				  "use_motion_prediction_hints": true
+					"max_optimized_distance": 60.0,
+					"max_dropped_ticks": 20,
+					"use_motion_prediction_hints": true
 				},
 				"conditional_values": [
-				  {
-					"max_optimized_distance": 0.0,
-					"max_dropped_ticks": 0,
-					"conditional_values": [
-					  { "test": "is_moving", "subject": "self", "operator": "==", "value": true}
-					]
-				  }
+					{
+						"max_optimized_distance": 0.0,
+						"max_dropped_ticks": 0,
+						"conditional_values": [
+							{
+								"test": "is_moving",
+								"subject": "self",
+								"operator": "==",
+								"value": true
+							}
+						]
+					}
 				]
 			}
 		}

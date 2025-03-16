@@ -18,7 +18,9 @@
 				"value": true
 			},
 			"minecraft:tags": {
-				"tags": ["minecraft:arrow"]
+				"tags": [
+					"minecraft:arrow"
+				]
 			}
 		}
 	}

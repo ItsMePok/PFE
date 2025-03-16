@@ -7,18 +7,18 @@
 				"default": "cat"
 			},
 			"textures": {
-				"white": "textures/entity/passive/poke_sporecat/white",
-				"red": "textures/entity/passive/poke_sporecat/red",
-				"siamese": "textures/entity/passive/poke_sporecat/siamese",
-				"persian": "textures/entity/passive/poke_sporecat/persian",
-				"calico": "textures/entity/passive/poke_sporecat/calico",
-				"white_tame": "textures/entity/passive/poke_sporecat/white_tame",
-				"red_tame": "textures/entity/passive/poke_sporecat/redtabby_tame",
-				"siamese_tame": "textures/entity/passive/poke_sporecat/siamesecat_tame",
-				"calico_tame": "textures/entity/passive/poke_sporecat/calico_tame",
-				"persian_tame": "textures/entity/passive/poke_sporecat/persian_tame",
-				"bella": "textures/entity/passive/poke_sporecat/bella",
-				"bella_tame": "textures/entity/passive/poke_sporecat/bella_tame"
+				"white": "textures/poke/pfe/sporecat_soul_entity",
+				"red": "textures/poke/pfe/sporecat_crimson_entity",
+				"siamese": "textures/poke/pfe/sporecat_warped_entity",
+				"persian": "textures/poke/pfe/sporecat_wastes_entity",
+				"calico": "textures/poke/pfe/sporecat_basalt_entity",
+				"white_tame": "textures/poke/pfe/sporecat_soul_tame_entity",
+				"red_tame": "textures/poke/pfe/sporecat_crimson_tame_entity",
+				"siamese_tame": "textures/poke/pfe/sporecat_warped_tame_entity",
+				"calico_tame": "textures/poke/pfe/sporecat_basalt_tame_entity",
+				"persian_tame": "textures/poke/pfe/sporecat_wastes_tame_entity",
+				"bella": "textures/poke/pfe/sporecat_bella_entity",
+				"bella_tame": "textures/poke/pfe/sporecat_bella_tame_entity"
 			},
 			"geometry": {
 				"default": "geometry.poke_pfe.sporecat"

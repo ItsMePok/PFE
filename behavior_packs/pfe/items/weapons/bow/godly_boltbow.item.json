@@ -8,8 +8,8 @@
 			}
 		},
 		"components": {
-			"minecraft:rarity":"common",
-			"minecraft:icon":"poke_godly_boltbow",
+			"minecraft:rarity": "common",
+			"minecraft:icon": "poke_godly_boltbow",
 			"minecraft:can_destroy_in_creative": {
 				"value": false
 			},
@@ -21,15 +21,21 @@
 			"minecraft:repairable": {
 				"repair_items": [
 					{
-						"items": ["poke:repair_core"],
+						"items": [
+							"poke:repair_core"
+						],
 						"repair_amount": "query.max_durability"
 					},
 					{
-						"items": ["poke:godly_ingot"],
+						"items": [
+							"poke:godly_ingot"
+						],
 						"repair_amount": "query.max_durability*0.25"
 					},
 					{
-						"items": ["poke:godly_nugget"],
+						"items": [
+							"poke:godly_nugget"
+						],
 						"repair_amount": "query.max_durability*0.028"
 					}
 				]
@@ -45,7 +51,7 @@
 				},
 				"max_durability": 2000
 			},
-			"minecraft:custom_components":[
+			"minecraft:custom_components": [
 				"poke:cc_bowAim",
 				"poke:boltbow"
 			]

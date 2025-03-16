@@ -8,8 +8,8 @@
 				"default": "entity_alphatest"
 			},
 			"textures": {
-				"default": "textures/entity/passive/poke_warped_sporeshroom",
-				"brown": "textures/entity/passive/poke_warped_sporeshroom"
+				"default": "textures/poke/pfe/warped_sporeshroom_entity",
+				"brown": "textures/poke/pfe/warped_sporeshroom_entity"
 			},
 			"geometry": {
 				"default": "geometry.warped_sporeshroom"

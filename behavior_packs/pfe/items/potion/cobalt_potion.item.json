@@ -8,11 +8,15 @@
 			}
 		},
 		"components": {
+			"minecraft:rarity": "common",
 			"minecraft:custom_components": [
 				"poke:consumeEffects"
 			],
 			"minecraft:max_stack_size": 16,
-			"minecraft:icon":"poke_cobalt_potion",
+			"minecraft:icon": "poke_cobalt_potion",
+			"minecraft:display_name": {
+				"value": "%item.poke_pfe.cobalt_potion\n§7%potion.nightVision (3:00)\n%potion.regeneration (2:00)\n%poke_pfe.tag"
+			},
 			"minecraft:food": {
 				"nutrition": 0,
 				"saturation_modifier": 0,

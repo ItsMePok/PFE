@@ -8,7 +8,7 @@
 				"invisible": "phantom_invisible" //2
 			},
 			"textures": {
-				"default": "textures/entity/hostile/poke_ender_phantom" //2
+				"default": "textures/poke/pfe/ender_phantom_entity"
 			},
 			"geometry": {
 				"default": "geometry.poke_pfe.ender_phantom"

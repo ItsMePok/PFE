@@ -7,7 +7,7 @@
 				"default":"arrow"
 			},
 			"textures":{
-				"default":"textures/entity/arrows/poke_hellish_arrow"
+				"default":"textures/poke/pfe/hellish_arrow_entity"
 			},
 			"geometry":{
 				"default":"geometry.arrow"

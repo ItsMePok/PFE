@@ -7,7 +7,7 @@
 				"default": "villager" //2
 			},
 			"textures": {
-				"default": "textures/entity/traders/poke_money_man" //2
+				"default": "textures/poke/pfe/money_man_entity"
 			},
 			"geometry": {
 				"default": "geometry.poke_pfe.money_man"

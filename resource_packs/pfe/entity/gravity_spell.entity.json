@@ -1,23 +1,25 @@
 {
-	"format_version":"1.10.0",
-	"minecraft:client_entity":{
-		"description":{
-			"identifier":"poke:gravity_spell",
-			"materials":{
-				"default":"entity_emissive_alpha"
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "poke:gravity_spell",
+			"materials": {
+				"default": "entity_emissive_alpha"
 			},
-			"textures":{
-				"default":"textures/entity/arrows/poke_gravity_spell"
+			"textures": {
+				"default": "textures/poke/pfe/gravity_spell_entity"
 			},
-			"geometry":{
-				"default":"geometry.poke_pfe.gravity_spell"
+			"geometry": {
+				"default": "geometry.poke_pfe.gravity_spell"
 			},
-			"animations":{
-				"move":"animation.poke_pfe.gravity_spell.idle"
+			"animations": {
+				"move": "animation.poke_pfe.gravity_spell.idle"
 			},
-			"render_controllers":["controller.render.poke_pfe.default"],
-			"scripts":{
-				"animate":[
+			"render_controllers": [
+				"controller.render.poke_pfe.default"
+			],
+			"scripts": {
+				"animate": [
 					"move"
 				]
 			}

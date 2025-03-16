@@ -8,7 +8,7 @@
         "enchanted": "armor_enchanted"
       },
       "textures": {
-        "default": "textures/models/armor/poke_flower_lilly_hat",
+        "default": "textures/poke/pfe/flower_lilly_hat_armor",
         "enchanted": "textures/misc/enchanted_item_glint"
       },
       "geometry": {

@@ -7,7 +7,7 @@
 				"default": "arrow"
 			},
 			"textures": {
-				"default": "textures/entity/arrows/poke_volt_arrow"
+				"default": "textures/poke/pfe/volt_arrow_entity"
 			},
 			"geometry": {
 				"default": "geometry.arrow"

@@ -7,7 +7,7 @@
 				"default": "goat"
 			},
 			"textures": {
-				"default": "textures/entity/neutral/poke_woods_goat"
+				"default": "textures/poke/pfe/woods_goat_entity"
 			},
 			"geometry": {
 				"default": "geometry.poke_pfe.goat"

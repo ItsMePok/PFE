@@ -7,7 +7,7 @@
 				"default": "entity_alphatest"
 			},
 			"textures": {
-				"default": "textures/entity/passive/poke_cobalt_golem" //2
+				"default": "textures/poke/pfe/cobalt_golem_entity" //2
 			},
 			"geometry": {
 				"default": "geometry.poke_pfe.cobalt_golem"

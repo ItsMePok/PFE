@@ -9,7 +9,7 @@
 				"head": "blaze_head"
 			},
 			"textures": {
-				"default": "textures/entity/hostile/poke_soul_blaze"
+				"default": "textures/poke/pfe/soul_blaze_entity"
 			},
 			"geometry": {
 				"default": "geometry.poke_pfe.soul_blaze"

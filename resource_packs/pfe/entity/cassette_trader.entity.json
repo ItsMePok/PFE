@@ -8,7 +8,7 @@
 				"masked": "villager_v2_masked" //2
 			},
 			"textures": {
-				"default": "textures/entity/traders/poke_cassette_trader" //2
+				"default": "textures/poke/pfe/cassette_trader_entity" //2
 			},
 			"geometry": {
 				"default": "geometry.poke_pfe.cassette_trader"

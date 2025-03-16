@@ -7,7 +7,7 @@
 				"default": "entity_alphatest"
 			},
 			"textures": {
-				"default": "textures/entity/passive/poke_brown_sporefish"//2
+				"default": "textures/poke/pfe/brown_sporefish_entity"
 			},
 			"geometry": {
 				"default": "geometry.poke_pfe.sporefish"

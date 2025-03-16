@@ -7,14 +7,14 @@
 				"default": "entity_alphatest"
 			},
 			"textures": {
-				"default": "textures/entity/passive/poke_pink_squid"
+				"default": "textures/poke/pfe/pink_squid_entity"
 			},
 			"geometry": {
 				"default": "geometry.poke_pfe.pink_squid"
 			},
 			"animations": {
-				"move": "animation.poke_pfe.pink_squid.move",
-				"squid_rotate": "animation.poke_pfe.pink_squid.rotate"
+				"move": "animation.poke_pfe.orange_squid.move",
+				"squid_rotate": "animation.poke_pfe.orange_squid.rotate"
 			},
 			"scripts": {
 				"animate": [

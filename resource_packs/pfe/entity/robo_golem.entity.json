@@ -7,7 +7,7 @@
 				"default": "entity_emissive"
 			},
 			"textures": {
-				"default": "textures/entity/bosses/poke_robo_golem"
+				"default": "textures/poke/pfe/furnace_golem_entity"
 			},
 			"geometry": {
 				"default": "geometry.poke_pfe.furnace_golem"
@@ -20,7 +20,7 @@
 				"look_at_target": "animation.common.look_at_target",
 				"move_controller": "controller.animation.iron_golem.move",
 				"arm_controller": "controller.animation.furnace_golem.arm_movement",
-				"smash": "animation.poke_pfe.robo_golem.smash"
+				"smash": "animation.poke_pfe.robo_golem.smash" // Played via function
 			},
 			"scripts": {
 				"pre_animation": [

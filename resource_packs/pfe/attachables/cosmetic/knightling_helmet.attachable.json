@@ -8,7 +8,7 @@
 				"enchanted": "armor_enchanted"
 			},
 			"textures": {
-				"default": "textures/models/armor/poke_knightling_helmet",
+				"default": "textures/poke/pfe/knightling_helmet_armor",
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {

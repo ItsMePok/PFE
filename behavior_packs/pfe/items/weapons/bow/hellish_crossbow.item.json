@@ -8,7 +8,12 @@
 			}
 		},
 		"components": {
-			"minecraft:icon":"poke_hellish_crossbow",
+			"minecraft:tags": {
+				"tags": [
+					"pfe:crossbow"
+				]
+			},
+			"minecraft:icon": "poke_hellish_crossbow",
 			"minecraft:use_modifiers": {
 				"movement_modifier": 0.33,
 				"use_duration": 1.25
@@ -62,22 +67,34 @@
 			"minecraft:repairable": {
 				"repair_items": [
 					{
-						"items": ["poke:repair_core"],
+						"items": [
+							"poke:repair_core"
+						],
 						"repair_amount": "query.max_durability"
 					},
 					{
-						"items": ["poke:hellish_ingot"],
+						"items": [
+							"poke:hellish_ingot"
+						],
 						"repair_amount": "query.max_durability*0.25"
 					},
 					{
-						"items": ["poke:hellish_nugget"],
+						"items": [
+							"poke:hellish_nugget"
+						],
 						"repair_amount": "query.max_durability*0.028"
 					}
 				]
-			}, 
-			"minecraft:tags": {"tags": ["minecraft:is_crossbow"]},
+			},
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:is_crossbow"
+				]
+			},
 			"minecraft:hand_equipped": true,
-			"minecraft:use_animation":{"value": "crossbow"},
+			"minecraft:use_animation": {
+				"value": "crossbow"
+			},
 			"minecraft:enchantable": {
 				"value": 75,
 				"slot": "flintsteel"
@@ -89,7 +106,7 @@
 				},
 				"max_durability": 1250
 			},
-			"minecraft:custom_components":[
+			"minecraft:custom_components": [
 				"poke:cc_crossbowAim"
 			]
 		}

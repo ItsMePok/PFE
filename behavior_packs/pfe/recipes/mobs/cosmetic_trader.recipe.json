@@ -4,19 +4,41 @@
 		"description": {
 			"identifier": "poke:spawn_cosmetic_trader"
 		},
-		"tags": ["crafting_table"],
-		"pattern": [" B ","CXY"," M "],
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" B ",
+			"CXY",
+			" M "
+		],
 		"unlock": [
-			{"item":"egg"},
-			{"item":"poke:copper_token"},
-			{"item":"dye"}
+			{
+				"tag": "minecraft:egg"
+			},
+			{
+				"item": "poke:copper_token"
+			},
+			{
+				"item": "dye"
+			}
 		],
 		"key": {
-			"X":{"item":"egg"},
-			"B":{"item":"black_dye"},
-			"C":{"item":"cyan_dye"},
-			"M":{"item":"magenta_dye"},
-			"Y":{"item":"yellow_dye"}
+			"X": {
+				"tag": "minecraft:egg"
+			},
+			"B": {
+				"item": "black_dye"
+			},
+			"C": {
+				"item": "cyan_dye"
+			},
+			"M": {
+				"item": "magenta_dye"
+			},
+			"Y": {
+				"item": "yellow_dye"
+			}
 		},
 		"result": {
 			"item": "poke:spawn_cosmetic_trader"

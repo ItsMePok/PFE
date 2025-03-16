@@ -4,6 +4,7 @@
 		"description": {
 			"identifier": "poke:kapow_ring"
 		},
+		"group": "pfe:rings",
 		"tags": [
 			"crafting_table"
 		],
@@ -18,7 +19,7 @@
 		"unlock": [
 			{
 				"item": "poke:kapow_gem"
-			}	
+			}
 		],
 		"result": {
 			"item": "poke:kapow_ring"

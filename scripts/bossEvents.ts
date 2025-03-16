@@ -293,5 +293,6 @@ PFEBossEventUI,
 PFEDefaultBossEventSettings,
 PFEBossEventConfigName,
 PFEStartBossEvent,
-PFEBossEventConfig
+PFEBossEventConfig,
+PFEBossEventUIMainMenu
 }

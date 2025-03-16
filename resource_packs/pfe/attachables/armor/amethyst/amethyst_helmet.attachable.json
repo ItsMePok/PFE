@@ -8,7 +8,7 @@
 				"enchanted": "armor_enchanted"
 			},
 			"textures": {
-				"default": "textures/models/armor/poke_amethyst_1",
+				"default": "textures/poke/pfe/amethyst_1_armor",
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {

@@ -8,7 +8,7 @@
 				"default": "entity_alphatest"
 			},
 			"textures": {
-				"default": "textures/entity/passive/poke_yak"
+				"default": "textures/poke/pfe/yak_entity"
 			},
 			"geometry": {
 				"default": "geometry.poke_pfe.yak"

@@ -8,7 +8,7 @@
 				"enchanted": "armor_enchanted"
 			},
 			"textures": {
-				"default": "textures/models/armor/poke_onyx_1",
+				"default": "textures/poke/pfe/onyx_1_armor",
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {

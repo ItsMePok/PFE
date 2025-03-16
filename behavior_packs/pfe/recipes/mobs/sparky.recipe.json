@@ -14,6 +14,9 @@
 		],
 		"unlock": [
 			{
+				"tag": "minecraft:egg"
+			},
+			{
 				"item": "poke:astral_ingot"
 			},
 			{
@@ -21,13 +24,27 @@
 			}
 		],
 		"key": {
-			"C":{"item":"lightning_rod"},
-			"E":{"item":"egg"},
-			"W":{"item":"wind_charge"},
-			"B":{"item":"poke:banished_star_x5"},
-			"F":{"item":"fire_charge"},
-			"A":{"item":"poke:astral_ingot"},
-			"D":{"item":"dragon_breath"}
+			"C": {
+				"item": "lightning_rod"
+			},
+			"E": {
+				"tag": "minecraft:egg"
+			},
+			"W": {
+				"item": "wind_charge"
+			},
+			"B": {
+				"item": "poke:banished_star_x5"
+			},
+			"F": {
+				"item": "fire_charge"
+			},
+			"A": {
+				"item": "poke:astral_ingot"
+			},
+			"D": {
+				"item": "dragon_breath"
+			}
 		},
 		"result": {
 			"item": "poke:spawn_dragon"

@@ -4,6 +4,7 @@
 		"description": {
 			"identifier": "poke:ore_ring"
 		},
+		"group": "pfe:rings",
 		"ingredients": [
 			{
 				"item": "poke:obsidian_gem_holder",

@@ -7,7 +7,7 @@
 				"default": "polar_bear" //2
 			},
 			"textures": {
-				"default": "textures/entity/neutral/poke_grizzly_bear" //2
+				"default": "textures/poke/pfe/grizzly_bear_entity" //2
 			},
 			"geometry": {
 				"default": "geometry.poke_pfe.bear"

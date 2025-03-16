@@ -4,16 +4,32 @@
 		"description": {
 			"identifier": "poke:money_man"
 		},
-		"tags": ["crafting_table"],
-		"pattern": [" E ","EXE"," E "],
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" E ",
+			"EXE",
+			" E "
+		],
 		"unlock": [
-			{"item":"egg"},
-			{"item":"emerald"},
-			{"item":"poke:cobalt_ingot"}
+			{
+				"tag": "minecraft:egg"
+			},
+			{
+				"item": "emerald"
+			},
+			{
+				"item": "poke:cobalt_ingot"
+			}
 		],
 		"key": {
-			"X": {"item":"egg"},
-			"E":{"item":"emerald"}
+			"X": {
+				"tag": "minecraft:egg"
+			},
+			"E": {
+				"item": "emerald"
+			}
 		},
 		"result": {
 			"item": "poke:money_man"

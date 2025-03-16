@@ -4,6 +4,7 @@
 		"description": {
 			"identifier": "poke:med_ring"
 		},
+		"group": "pfe:rings",
 		"ingredients": [
 			{
 				"item": "poke:gem_holder",
@@ -17,7 +18,7 @@
 		"unlock": [
 			{
 				"item": "poke:med_gem"
-			}	
+			}
 		],
 		"tags": [
 			"crafting_table"

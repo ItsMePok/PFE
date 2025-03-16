@@ -9,7 +9,7 @@
 				"ghost": "guardian_ghost"
 			},
 			"textures": {
-				"default": "textures/entity/hostile/poke_woodspike_guardian",
+				"default": "textures/poke/pfe/woodspike_guardian_entity",
 				"elder": "textures/entity/guardian_elder",
 				"beam": "textures/entity/guardian_beam"
 			},

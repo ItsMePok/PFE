@@ -7,7 +7,7 @@
 				"default": "polar_bear"
 			},
 			"textures": {
-				"default": "textures/entity/neutral/poke_windswept_bear"
+				"default": "textures/poke/pfe/windswept_bear_entity"
 			},
 			"geometry": {
 				"default": "geometry.poke_pfe.bear"

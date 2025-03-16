@@ -14,7 +14,7 @@
 		],
 		"unlock": [
 			{
-				"item": "egg"
+				"tag": "minecraft:egg"
 			},
 			{
 				"item": "rotten_flesh"
@@ -28,7 +28,7 @@
 				"item": "rotten_flesh"
 			},
 			"F": {
-				"item": "egg"
+				"tag": "minecraft:egg"
 			},
 			"Y": {
 				"item": "chicken"

@@ -22,7 +22,10 @@
 			},
 			"minecraft:nameable": {},
 			"minecraft:type_family": {
-				"family": ["squid", "mob"]
+				"family": [
+					"squid",
+					"mob"
+				]
 			},
 			"minecraft:collision_box": {
 				"width": 0.95,
@@ -107,7 +110,9 @@
 						"weight": 5,
 						"remove": {},
 						"add": {
-							"component_groups": ["minecraft:squid_baby"]
+							"component_groups": [
+								"minecraft:squid_baby"
+							]
 						}
 					}
 				]

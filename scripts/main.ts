@@ -1,10 +1,12 @@
-import { system, world, EquipmentSlot, GameMode, EntityComponentTypes, ItemComponentTypes, ItemStack, ItemEnchantableComponent, Player, EntityProjectileComponent, BlockComponentPlayerInteractEvent, BlockComponentPlayerDestroyEvent, BlockComponentTickEvent, EntityEquippableComponent, BlockComponentRandomTickEvent, ItemComponentUseEvent, ItemCooldownComponent, ItemComponentUseOnEvent, BlockComponentOnPlaceEvent, Direction, RawMessage, EntityQueryOptions, MinecraftDimensionTypes} from "@minecraft/server";
+import { system, world, EquipmentSlot, GameMode, EntityComponentTypes, ItemComponentTypes, ItemStack, ItemEnchantableComponent, Player, EntityProjectileComponent, BlockComponentPlayerInteractEvent, BlockComponentPlayerDestroyEvent, BlockComponentTickEvent, EntityEquippableComponent, BlockComponentRandomTickEvent, ItemComponentUseEvent, ItemCooldownComponent, ItemComponentUseOnEvent, BlockComponentOnPlaceEvent, Direction, RawMessage, EntityQueryOptions, MinecraftDimensionTypes, EntityMovementJumpComponent} from "@minecraft/server";
 import { MinecraftBlockTypes, MinecraftEffectTypes, MinecraftEnchantmentTypes, MinecraftEntityTypes, MinecraftItemTypes } from "@minecraft/vanilla-data";
-import { PFEBossEventConfig, PFEBossEventConfigName, PFEBossEventUI, PFEDefaultBossEventSettings, PFEStartBossEvent } from "./bossEvents";
+import { PFEBossEventConfig, PFEBossEventConfigName, PFEBossEventUI, PFEBossEventUIMainMenu, PFEDefaultBossEventSettings, PFEStartBossEvent } from "./bossEvents";
 import { PFEHaxelMining } from "./haxelMining";
-import { PokeDamageItemUB, PokeDecrementStack } from "./commonFunctions";
+import { PokeDamageItemUB, PokeDecrementStack, PokeSpawnLootTable } from "./commonFunctions";
 import { PokeBirthdays, PokeTimeConfigUIMainMenu, PokeTimeGreeting, PokeTimeZoneOffset } from "./time";
 import { PFEBoltBowsComponent } from "./boltbow";
+import { PFEDiableConfigOptions, PFEDisableConfigDefault, PFEDisableConfigMainMenu, PFEDisableConfigName, PFEDisabledOnUseItems } from "./disableConfig";
+import { ActionFormData } from "@minecraft/server-ui";
 
 //Armor effects. I split into 4 because it should reduce the amount of commands running at a time reducing the random lag spikes
 system.runInterval(() => {
@@ -52,11 +54,6 @@ interface PFEArmorEffectInfo{
     }, 120);
 }, 180);
 */
-
-/*world.afterEvents.itemStopUse.subscribe(data=>{
-    data.source.setDynamicProperty(`poke:isUsingItem`,false)
-    console.warn(`set use to false`)
-})*/
 
 world.afterEvents.playerJoin.subscribe((data =>{
     let birthdays:PokeBirthdays[] = JSON.parse(world.getDynamicProperty(`poke:birthdays`)!.toString())
@@ -107,11 +104,16 @@ function PFETimeValidation(){
         },Math.abs(60 -new Date(Date.now()).getSeconds())*20)
     }
 }
-//Custom Component Registry
+//Custom Component Registry & Inital Setup
 world.beforeEvents.worldInitialize.subscribe(data => {
     system.runTimeout(()=>{
         PFETimeValidation()
     },Math.abs(60 -new Date(Date.now()).getSeconds())*20)
+
+    if (typeof world.getDynamicProperty(PFEDisableConfigName) != "string"){
+        world.setDynamicProperty(PFEDisableConfigName,JSON.stringify(PFEDisableConfigDefault))
+    }
+
     let birthdayProperty = world.getDynamicProperty(`poke:birthdays`)
     if (typeof birthdayProperty != "string")world.setDynamicProperty(`poke:birthdays`,`[]`)
     if (typeof world.getDynamicProperty(`poke:customEvents`)!= "string"){
@@ -145,9 +147,6 @@ world.beforeEvents.worldInitialize.subscribe(data => {
         //console.warn(`Some Boss Event Settings were invalid; Resetting settings to default || PFE`)
         world.setDynamicProperty(PFEBossEventConfigName,JSON.stringify(PFEDefaultBossEventSettings))
     }
-    data.itemComponentRegistry.registerCustomComponent(
-        "poke:boss_event_config", new PFEBossEventUI()
-    )
     //Item Components
     data.itemComponentRegistry.registerCustomComponent(
         `poke-pfe:identifier`, {
@@ -165,6 +164,8 @@ world.beforeEvents.worldInitialize.subscribe(data => {
     )
     data.itemComponentRegistry.registerCustomComponent(
         "poke:boss_event", {onUse(data){
+            let options:PFEDiableConfigOptions = JSON.parse(world.getDynamicProperty(PFEDisableConfigName)!.toString())
+            if (!options.bounty)return;
             if(PFEStartBossEvent() == 0){
                 data.source.sendMessage({translate:`translation.poke:bossEventNoSpawnError`})
                 data.source.playSound(`note.didgeridoo`,{pitch:0.825})
@@ -280,6 +281,10 @@ world.beforeEvents.worldInitialize.subscribe(data => {
         "poke:shootProjectile", {
             onUse(data:ItemComponentUseEvent){
                 if(data.itemStack==undefined)return;
+                if (data.itemStack.typeId == "poke:nuke_ring"){
+                    let options:PFEDiableConfigOptions = JSON.parse(world.getDynamicProperty(PFEDisableConfigName)!.toString())
+                    if (!options.nukeRing)return;
+                }
                 const headLocate = data.source.getHeadLocation();
                 //Projectile shooters. projectile id defined in a tag on the item
                     const pTag = data.itemStack.getTags();
@@ -328,7 +333,7 @@ world.beforeEvents.worldInitialize.subscribe(data => {
                     case 'poke:nebula_scythe':{data.attackingEntity.runCommand('function poke/pfe/nebula_scythe');data.hitEntity.addEffect('wither', 80, {amplifier: 3});return;}
                     case 'poke:cobalt_scythe':{data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, {amplifier: 6});data.hitEntity.addEffect('wither', 40, {amplifier: 1});return;}
                     case 'poke:nebula_sword':{data.attackingEntity.addEffect('strength', 40, {amplifier: 4});data.hitEntity.addEffect('weakness', 20, {amplifier: 2});return;}
-                    case 'poke:ban_hammer':{data.attackingEntity.addEffect('strength', 40, {amplifier: 4});data.hitEntity.addEffect('weakness', 20, {amplifier: 2});return;}
+                    case 'poke:ban_hammer':{data.attackingEntity.addEffect('strength', 40, {amplifier: 1});return;}
                     case 'poke:circuit_sword':{data.attackingEntity.runCommand('function poke/pfe/circuit_sword');data.hitEntity.addEffect('blindness', 100);return;}
                 }
                 return;
@@ -360,6 +365,43 @@ world.beforeEvents.worldInitialize.subscribe(data => {
                     case 'poke:banished_star_x9':{data.source.runCommandAsync("damage @s 32767000 entity_attack");return};
                 }
                 return;
+            }
+        }
+    )
+    data.itemComponentRegistry.registerCustomComponent(
+        "poke_pfe:config",{
+            onUse(data){
+                if ((data.source.getGameMode() == GameMode.creative) || data.source.hasTag(`poke:config`)) {
+                    let UI = new ActionFormData()
+                    UI.button({translate:`translation.poke_pfe.bossEventConfig`},`textures/poke/common/spawn_enabled`)
+                    UI.button({translate:`translation.poke_pfe.disableConfig`},`textures/poke/common/blacklist_add`)
+                    UI.show(data.source).then(response =>{
+                        let selection = 0
+                        if (response.selection == selection){
+                            if (world.getDynamicProperty(PFEBossEventConfigName) == undefined){
+                                //console.warn(`Some Boss Event Settings were invalid; Resetting settings to default || PFE`)
+                                world.setDynamicProperty(PFEBossEventConfigName,JSON.stringify(PFEDefaultBossEventSettings))
+                            }
+                            PFEBossEventUIMainMenu(data.source)
+                            return
+                        }else selection++
+                        if (response.selection == selection){
+                            PFEDisableConfigMainMenu(data)
+                        }else selection++
+                        if ((response.selection == selection) || response.canceled){
+                            return
+                        }
+                    })
+                }else{
+                    let UI = new ActionFormData()
+                    UI.title({translate:`translation.poke_pfe.insuffictPerms`})
+                    UI.body({rawtext:[{translate:`translation.poke_pfe.insuffictPerms.desc`},{text:`poke:config\n\n`},{translate:`translation.poke_pfe.insuffictPerms.desc2`},{text:`\n/tag @s add poke:config`}]})
+                    UI.button({translate:`translation.poke:bossEventClose`},`textures/poke/common/close`)
+                    UI.show(data.source).then(responce =>{
+                        return
+                    })
+                    return
+                }
             }
         }
     )
@@ -422,6 +464,10 @@ world.beforeEvents.worldInitialize.subscribe(data => {
     data.itemComponentRegistry.registerCustomComponent(
         "poke:cc_spawnEgg", {
             onUseOn(data:ItemComponentUseOnEvent){
+                if (data.itemStack.typeId == "poke:wither_spawner"){
+                    let options:PFEDiableConfigOptions = JSON.parse(world.getDynamicProperty(PFEDisableConfigName)!.toString())
+                    if (!options.witherSpawner)return;
+                }
                 //@ts-ignore
                 const player:Player = data.source
                 const faceLoc = data.faceLocation
@@ -480,6 +526,14 @@ world.beforeEvents.worldInitialize.subscribe(data => {
         "poke:cc_on_use", {
             onUse(data:ItemComponentUseEvent){
                 if (data.itemStack===undefined)return;
+                if (PFEDisabledOnUseItems.includes(data.itemStack.typeId)){
+                    let options:PFEDiableConfigOptions = JSON.parse(world.getDynamicProperty(PFEDisableConfigName)!.toString())
+                    switch(true){
+                        case data.itemStack.typeId == "poke:quantum_teleporter" && !options.quantumTeleporter:return;
+                        case data.itemStack.typeId == "poke:sundial" && !options.sundial:return;
+                        case data.itemStack.typeId == "poke:kapow_ring" && !options.kapowRing:return;
+                    }
+                }
                 const ItemTags = data.itemStack!.getTags().toString();
                 let Command = ItemTags.substring(ItemTags.indexOf('pfe:Command:'),ItemTags.indexOf(':pfeCommandEnd')).substring(12);//Command is in the tag of the item without the '/'
                 data.source.runCommand(`${Command}`)
@@ -1272,5 +1326,85 @@ world.beforeEvents.worldInitialize.subscribe(data => {
             }
         }
     );
+    const PFEFisherComponentInfo={
+        baitBlockState: "poke_pfe:bait",
+        baitStates:[4,3,2,1,0]
+    }
+    data.blockComponentRegistry.registerCustomComponent(
+        "poke_pfe:fisher", {
+            
+            onRandomTick(data){
+                if (data.block.isWaterlogged && (data.block.permutation.getState(PFEFisherComponentInfo.baitBlockState) != 0)){
+                    data.block.setPermutation(data.block.permutation.withState(PFEFisherComponentInfo.baitBlockState,Math.max(Number(data.block.permutation.getState(PFEFisherComponentInfo.baitBlockState))-1,0)))
+                    data.block.dimension.playSound(`poke_pfe.fisher.catch`,data.block.center())
+                }
+            },
+            onPlayerInteract(data){
+                let baitState = data.block.permutation.getState(PFEFisherComponentInfo.baitBlockState)
+                let lootTable = "poke/pfe/fisher_block.loot"
+                let spawnLocation = data.block.center()
+                spawnLocation.y += 1
+                switch(baitState){
+                    case 4: {
+                        data.block.dimension.playSound(`poke_pfe.fisher.noLoot`,data.block.center())
+                        return;break;
+                    };
+                    case 3: {PokeSpawnLootTable(lootTable,spawnLocation,data.block.dimension,1);break;}
+                    case 2: {PokeSpawnLootTable(lootTable,spawnLocation,data.block.dimension,2);break;}
+                    case 1: {PokeSpawnLootTable(lootTable,spawnLocation,data.block.dimension,3);break;}
+                    case 0: {PokeSpawnLootTable(lootTable,spawnLocation,data.block.dimension,4);break;}
+                }
+                data.block.setPermutation(data.block.permutation.withState(PFEFisherComponentInfo.baitBlockState,4))
+            },
+            onPlayerDestroy(data){
+                let baitState = data.destroyedBlockPermutation.getState(PFEFisherComponentInfo.baitBlockState)
+                let lootTable = "poke/pfe/fisher_block.loot"
+                let spawnLocation = data.block.center()
+                spawnLocation.y += 1
+                switch(baitState){
+                    case 4: break;
+                    case 3: {PokeSpawnLootTable(lootTable,spawnLocation,data.block.dimension,1);break;}
+                    case 2: {PokeSpawnLootTable(lootTable,spawnLocation,data.block.dimension,2);break;}
+                    case 1: {PokeSpawnLootTable(lootTable,spawnLocation,data.block.dimension,3);break;}
+                    case 0: {PokeSpawnLootTable(lootTable,spawnLocation,data.block.dimension,4);break;}
+                }
+            }
+        }
+    )
+    data.blockComponentRegistry.registerCustomComponent(
+        "poke_pfe:elevator", {
+            onStepOff(data){
+                if (!data.entity)return;
+                //@ts-ignore
+                let player:Player = data.entity
+                if (player.typeId == MinecraftEntityTypes.Player){
+                    let maxSearchHeight = 64
+                    if (player.isJumping){
+                        if (player.isSneaking){
+                            for (let i = data.block.y-1; i >= Math.max((data.block.y - maxSearchHeight), data.dimension.heightRange.min); Math.min(i--,data.dimension.heightRange.min)){
+                                //console.warn(`$Checking Y= ${i} \nBlock ID = ${data.block.below(Math.abs(i-data.block.y))?.typeId} \nBelow Amount = ${Math.abs(i-data.block.y)}\nRedstone Power = ${data.block.below(Math.abs(i-data.block.y))?.getRedstonePower()}\nHas Tag? = ${data.block.below(Math.abs(i-data.block.y))?.hasTag(`poke_pfe:elevator`)}`)
+                                if (data.block.below(Math.abs(i-data.block.y))?.hasTag(`poke_pfe:elevator`) && !Boolean(data.block.below(Math.abs(i-data.block.y))?.getRedstonePower())){
+                                    //console.warn(`TELEPORTING`)
+                                    player.teleport({x:data.block.center().x,y:i+1,z:data.block.center().z})
+                                    player.playSound(`mob.endermen.portal`,{location:{x:data.block.x,y:i+1,z:data.block.z}})
+                                    return
+                                }
+                            }
+                        }else{
+                            for (let i = data.block.y+1; i <= Math.min((data.block.y + maxSearchHeight), data.dimension.heightRange.max); Math.min(i++,data.dimension.heightRange.max)){
+                                //console.warn(`$Checking Y= ${i} \nBlock ID = ${data.block.above(i-data.block.y)?.typeId} \nAbove Amount = ${i-data.block.y}\nRedstone Power = ${data.block.above(i-data.block.y)?.getRedstonePower()}\nHas Tag? = ${data.block.above(i-data.block.y)?.hasTag(`poke_pfe:elevator`)}`)
+                                if (data.block.above(i-data.block.y)?.hasTag(`poke_pfe:elevator`) && !Boolean(data.block.above(i-data.block.y)?.getRedstonePower())){
+                                    //console.warn(`TELEPORTING`)
+                                    player.teleport({x:data.block.center().x,y:i+1,z:data.block.center().z})
+                                    player.playSound(`mob.endermen.portal`,{location:{x:data.block.x,y:i+1,z:data.block.z}})
+                                    return
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    )
     return;
 })

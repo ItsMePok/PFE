@@ -7,7 +7,7 @@
 				"default": "entity_alphatest"
 			},
 			"textures": {
-				"default": "textures/entity/bosses/poke_snowman"
+				"default": "textures/poke/pfe/snowman_entity"
 			},
 			"geometry": {
 				"default": "geometry.poke_pfe.snowman"

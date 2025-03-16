@@ -500,9 +500,6 @@
 		"poke_magnet_core": {
 			"textures": "textures/poke/pfe/magnet_core"
 		},
-		"poke_capacity_core": {
-			"textures": "textures/poke/pfe/capacity_core"
-		},
 		//Keys/Misc
 		"poke_ruin_key": {
 			"textures": "textures/poke/pfe/ruin_key"
@@ -917,6 +914,15 @@
 		"poke_platinum_upgrade_core": {
 			"textures": "textures/poke/pfe/platinum_upgrade_core"
 		},
+		"poke_capacity_core": {
+			"textures": "textures/poke/pfe/capacity_core"
+		},
+		"poke_bursting_core": {
+			"textures": "textures/poke/pfe/bursting_core"
+		},
+		"poke_blank_core": {
+			"textures": "textures/poke/pfe/blank_core"
+		},
 		//Ingots
 		"poke_cobalt_ingot": {
 			"textures": "textures/poke/pfe/cobalt_ingot"
@@ -1061,6 +1067,9 @@
 			"textures": "textures/poke/pfe/diamond_holder"
 		},
 		//Gem
+		"poke_resist_gem": {
+			"textures": "textures/poke/pfe/resist_gem"
+		},
 		"poke_volt_gem": {
 			"textures": "textures/poke/pfe/volt_gem"
 		},
@@ -1119,6 +1128,9 @@
 			"textures": "textures/poke/pfe/aqua_gem"
 		},
 		//Ring
+		"poke_resist_ring": {
+			"textures": "textures/poke/pfe/resist_ring"
+		},
 		"poke_volt_ring": {
 			"textures": "textures/poke/pfe/volt_ring"
 		},
@@ -2049,6 +2061,9 @@
 		},
 		"poke_swift_boots": {
 			"textures": "textures/poke/pfe/swift_boots"
+		},
+		"poke_party_hat": {
+			"textures": "textures/poke/pfe/party_hat"
 		}
 	},
 	"resource_pack_name": "Poke",

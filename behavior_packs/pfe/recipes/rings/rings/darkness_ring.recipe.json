@@ -4,6 +4,7 @@
 		"description": {
 			"identifier": "poke:darkness_ring"
 		},
+		"group": "pfe:rings",
 		"tags": [
 			"crafting_table"
 		],
@@ -20,7 +21,10 @@
 		"unlock": [
 			{
 				"item": "poke:darkness_gem"
-			}	
+			},
+			{
+				"item": "poke:echo_holder"
+			}
 		],
 		"result": {
 			"item": "poke:darkness_ring",

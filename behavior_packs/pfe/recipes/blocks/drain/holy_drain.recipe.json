@@ -1,0 +1,31 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:holy_drain"
+    },
+    "unlock": [
+      {
+        "item": "poke:holy_ingot"
+      }
+    ],
+    "key": {
+      "X": {
+        "item": "poke:holy_ingot"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:holy_drain",
+      "count": 4
+    },
+    "pattern": [
+      "X X",
+      " X ",
+      "X X"
+    ],
+    "group": "poke:drain",
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke_pfe:config",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:rarity": "common",
+			"minecraft:display_name": {
+				"value": "%item.poke_pfe.config\n§7%item.poke_pfe.config.desc\n%poke_pfe.tag"
+			},
+			"minecraft:icon": "poke_boss_event_config",
+			"minecraft:custom_components": [
+				"poke_pfe:config"
+			]
+		}
+	}
+}

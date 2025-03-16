@@ -8,7 +8,7 @@
 			}
 		},
 		"components": {
-			"minecraft:icon":"poke_flaming_core"
+			"minecraft:icon": "poke_blank_core"
 		}
 	}
 }

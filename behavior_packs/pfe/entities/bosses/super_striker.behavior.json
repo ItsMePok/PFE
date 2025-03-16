@@ -20,7 +20,6 @@
 									"value": "lightning"
 								}
 							]
-
 						},
 						"deals_damage": "no"
 					}
@@ -29,10 +28,12 @@
 			"minecraft:ranged_attack": {
 				"minecraft:behavior.ranged_attack": {
 					"priority": 0,
-					"attack_interval": 4,
-					"attack_radius": 15.0,
-					"burst_interval": 0.5,
-					"burst_shots": 2
+					"attack_interval": 3,
+					"attack_radius": 50.0,
+					"ranged_fov": 170,
+					"charge_shoot_trigger": 0.5,
+					"charge_charged_trigger": 0.5,
+					"burst_shots": 3
 				},
 				"minecraft:shooter": {
 					"def": "poke:volt_arrow"
@@ -50,10 +51,10 @@
 						},
 						{
 							"filters": {
-								"test": "has_ranged_weapon",
+								"test": "has_equipment",
 								"subject": "self",
-								"operator": "==",
-								"value": false
+								"operator": "!=",
+								"value": "poke:void_crossbow"
 							},
 							"event": "minecraft:melee_mode"
 						}
@@ -62,7 +63,7 @@
 			},
 			"minecraft:melee_attack": {
 				"minecraft:behavior.melee_attack": {
-					"priority": 4,
+					"priority": 0,
 					"track_target": true,
 					"speed_multiplier": 1.25
 				},
@@ -93,12 +94,12 @@
 					]
 				}
 			},
-			"despawn":{
+			"despawn": {
 				"minecraft:instant_despawn": {
 					"remove_child_entities": false
 				}
 			},
-			"timer":{
+			"timer": {
 				"minecraft:timer": {
 					"time": 1800,
 					"looping": true,
@@ -108,7 +109,7 @@
 					}
 				}
 			},
-			"persistent":{
+			"persistent": {
 				"minecraft:persistent": {}
 			}
 		},
@@ -121,8 +122,15 @@
 			"minecraft:scale": {
 				"value": 1.75
 			},
+			"minecraft:behavior.charge_held_item": {
+				"priority": 3,
+				"items": [
+					"poke:volt_arrow",
+					"minecraft:arrow"
+				]
+			},
 			"minecraft:damage_sensor": {
-				"triggers":[
+				"triggers": [
 					{
 						"cause": "fire",
 						"deals_damage": "no"
@@ -130,11 +138,21 @@
 					{
 						"cause": "lightning",
 						"deals_damage": "no"
+					},
+					{
+						"cause": "campfire",
+						"deals_damage": "yes",
+						"damage_multiplier": 0.1
+					},
+					{
+						"cause": "entity_attack",
+						"damage_multiplier": 0.5,
+						"deals_damage": "yes"
 					}
 				]
 			},
 			"minecraft:experience_reward": {
-				"on_death": "5 * (query.last_hit_by_player ? 5 + (query.equipment_count * Math.Random(1,3)) : 0)"
+				"on_death": "6 * (query.last_hit_by_player ? 5 + (query.equipment_count * Math.Random(1,3)) : 0)"
 			},
 			"minecraft:equip_item": {},
 			"minecraft:collision_box": {
@@ -142,7 +160,13 @@
 				"height": 1.9
 			},
 			"minecraft:type_family": {
-				"family": ["skeleton", "undead", "monster", "mob","pfe:boss"]
+				"family": [
+					"skeleton",
+					"undead",
+					"monster",
+					"mob",
+					"pfe:boss"
+				]
 			},
 			"minecraft:breathable": {
 				"total_supply": 15,
@@ -163,7 +187,7 @@
 							"value": true
 						},
 						"cause": "lava",
-						"damage_per_tick": 4
+						"damage_per_tick": 2
 					}
 				]
 			},
@@ -182,7 +206,7 @@
 			"minecraft:jump.static": {},
 			"minecraft:can_climb": {},
 			"minecraft:nameable": {
-				"name_actions":{
+				"name_actions": {
 					"name_filter": "despawn",
 					"on_named": {
 						"event": "poke:despawn",
@@ -195,7 +219,7 @@
 				}
 			},
 			"minecraft:equipment": {
-				"table": "loot_tables/entities/skeleton_gear.json"
+				"table": "loot_tables/poke/pfe/super_striker_equipment.loot.json"
 			},
 			"minecraft:shooter": {
 				"def": "poke:volt_arrow"
@@ -521,36 +545,51 @@
 		"events": {
 			"minecraft:entity_spawned": {
 				"add": {
-					"component_groups": ["minecraft:ranged_attack","timer"]
+					"component_groups": [
+						"minecraft:ranged_attack",
+						"timer"
+					]
 				}
 			},
 			"minecraft:spring_trap": {
 				"add": {
-					"component_groups": ["minecraft:lightning_immune"]
+					"component_groups": [
+						"minecraft:lightning_immune"
+					]
 				}
 			},
 			"minecraft:melee_mode": {
 				"remove": {
-					"component_groups": ["minecraft:ranged_attack"]
+					"component_groups": [
+						"minecraft:ranged_attack"
+					]
 				},
 				"add": {
-					"component_groups": ["minecraft:melee_attack"]
+					"component_groups": [
+						"minecraft:melee_attack"
+					]
 				}
 			},
 			"minecraft:ranged_mode": {
 				"remove": {
-					"component_groups": ["minecraft:melee_attack"]
+					"component_groups": [
+						"minecraft:melee_attack"
+					]
 				},
 				"add": {
-					"component_groups": ["minecraft:ranged_attack"]
+					"component_groups": [
+						"minecraft:ranged_attack"
+					]
 				}
 			},
-			"poke:despawn":{
+			"poke:despawn": {
 				"add": {
-					"component_groups": ["despawn"]
+					"component_groups": [
+						"despawn"
+					]
 				}
 			},
-			"poke:renamed":{
+			"poke:renamed": {
 				"remove": {
 					"component_groups": [
 						"timer"
