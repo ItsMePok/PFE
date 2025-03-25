@@ -1,5 +1,5 @@
 // scripts/main.ts
-import { system as system3, world as world5, EquipmentSlot as EquipmentSlot4, GameMode as GameMode3, EntityComponentTypes as EntityComponentTypes4, ItemComponentTypes as ItemComponentTypes4, ItemStack as ItemStack4, Direction, MinecraftDimensionTypes as MinecraftDimensionTypes2 } from "@minecraft/server";
+import { system as system3, world as world5, EquipmentSlot as EquipmentSlot4, GameMode as GameMode3, EntityComponentTypes as EntityComponentTypes4, ItemComponentTypes as ItemComponentTypes4, ItemStack as ItemStack4, Direction as Direction2, MinecraftDimensionTypes as MinecraftDimensionTypes2 } from "@minecraft/server";
 
 // node_modules/@minecraft/vanilla-data/lib/index.js
 var MinecraftBiomeTypes = ((MinecraftBiomeTypes2) => {
@@ -3208,7 +3208,7 @@ import { EntityComponentTypes as EntityComponentTypes2, EquipmentSlot as Equipme
 import { ActionFormData as ActionFormData3, ModalFormData as ModalFormData2 } from "@minecraft/server-ui";
 
 // scripts/commonFunctions.ts
-import { EntityComponentTypes, EquipmentSlot, GameMode, ItemComponentTypes } from "@minecraft/server";
+import { Direction, EntityComponentTypes, EquipmentSlot, GameMode, ItemComponentTypes } from "@minecraft/server";
 import { ActionFormData as ActionFormData2 } from "@minecraft/server-ui";
 function PokeDamageItemUB(item, multiplier, entity, slot) {
   if (!item.hasComponent(ItemComponentTypes.Durability)) {
@@ -3352,6 +3352,47 @@ function PokeSpawnLootTable(lootTable, position, dimension, amount) {
     return;
   } else
     dimension.runCommand(`loot spawn ${position.x} ${position.y} ${position.z} loot "${lootTable}"`);
+}
+function PokeClosestCardinal(vector, directions) {
+  let returnProperty = {
+    direction: Direction.Up,
+    vector
+  };
+  if (directions == "upDown") {
+    if (vector.y >= 0) {
+      returnProperty.direction = Direction.Up, returnProperty.vector = { x: 0, y: 1, z: 0 };
+    } else if (vector.y < 0) {
+      returnProperty.direction = Direction.Down, returnProperty.vector = { x: 0, y: -1, z: 0 };
+    }
+    return returnProperty;
+  } else
+    switch (true) {
+      case vector.y < -0.7: {
+        returnProperty.direction = Direction.Down, returnProperty.vector = { x: 0, y: -1, z: 0 };
+        break;
+      }
+      case vector.y > 0.7: {
+        returnProperty.direction = Direction.Up, returnProperty.vector = { x: 0, y: 1, z: 0 };
+        break;
+      }
+      case vector.x > 0.7: {
+        returnProperty.direction = Direction.East, returnProperty.vector = { x: 1, y: 0, z: 0 };
+        break;
+      }
+      case vector.x < -0.7: {
+        returnProperty.direction = Direction.West, returnProperty.vector = { x: -1, y: 0, z: 0 };
+        break;
+      }
+      case vector.z > 0.7: {
+        returnProperty.direction = Direction.South, returnProperty.vector = { x: 0, y: 0, z: 1 };
+        break;
+      }
+      case vector.z < -0.7: {
+        returnProperty.direction = Direction.North, returnProperty.vector = { x: 0, y: 0, z: -1 };
+        break;
+      }
+    }
+  return returnProperty;
 }
 
 // scripts/haxelMining.ts
@@ -5791,27 +5832,27 @@ world5.beforeEvents.worldInitialize.subscribe((data) => {
         var amount = data2.itemStack.amount;
         const equippableComponent = data2.source.getComponent(EntityComponentTypes4.Equippable);
         switch (blockFace) {
-          case Direction.North: {
+          case Direction2.North: {
             faceLocZ += 1.5;
             break;
           }
-          case Direction.South: {
+          case Direction2.South: {
             faceLocZ += -1.5;
             break;
           }
-          case Direction.East: {
+          case Direction2.East: {
             faceLocX += -1.5;
             break;
           }
-          case Direction.West: {
+          case Direction2.West: {
             faceLocX += 1.5;
             break;
           }
-          case Direction.Up: {
+          case Direction2.Up: {
             faceLocY += -1.5;
             break;
           }
-          case Direction.Down: {
+          case Direction2.Down: {
             faceLocY += 2;
             break;
           }
@@ -6000,7 +6041,7 @@ world5.beforeEvents.worldInitialize.subscribe((data) => {
         const equippableComponent = data2.player.getComponent(EntityComponentTypes4.Equippable);
         const mainhand = equippableComponent.getEquipment(EquipmentSlot4.Mainhand);
         if (mainhand != void 0) {
-          if (mainhand.typeId == slabId && (data2.block.permutation.getState("minecraft:vertical_half") == "bottom" && data2.face == Direction.Up || data2.block.permutation.getState("minecraft:vertical_half") == "top" && data2.face == Direction.Down) && data2.block.permutation.getState("poke:double") == false) {
+          if (mainhand.typeId == slabId && (data2.block.permutation.getState("minecraft:vertical_half") == "bottom" && data2.face == Direction2.Up || data2.block.permutation.getState("minecraft:vertical_half") == "top" && data2.face == Direction2.Down) && data2.block.permutation.getState("poke:double") == false) {
             var itemStackAmount = mainhand.amount - 1;
             data2.block.setPermutation(data2.block.permutation.withState("poke:double", true));
             data2.block.dimension.playSound(`use.stone`, data2.block.center());
@@ -6762,23 +6803,158 @@ world5.beforeEvents.worldInitialize.subscribe((data) => {
           return;
         let player = data2.entity;
         if (player.typeId == MinecraftEntityTypes.Player) {
-          let maxSearchHeight = 64;
+          let maxSearch = 64;
           if (player.isJumping) {
-            if (player.isSneaking) {
-              for (let i = data2.block.y - 1; i >= Math.max(data2.block.y - maxSearchHeight, data2.dimension.heightRange.min); Math.min(i--, data2.dimension.heightRange.min)) {
-                if (data2.block.below(Math.abs(i - data2.block.y))?.hasTag(`poke_pfe:elevator`) && !Boolean(data2.block.below(Math.abs(i - data2.block.y))?.getRedstonePower())) {
-                  player.teleport({ x: data2.block.center().x, y: i + 1, z: data2.block.center().z });
-                  player.playSound(`mob.endermen.portal`, { location: { x: data2.block.x, y: i + 1, z: data2.block.z } });
-                  return;
+            let viewDirection = player.getViewDirection();
+            let cardinalDirecion = PokeClosestCardinal(viewDirection, "upDown");
+            switch (cardinalDirecion.direction) {
+              case Direction2.Up: {
+                for (let i = data2.block.y + 1; i <= Math.min(data2.block.y + maxSearch, data2.dimension.heightRange.max); Math.min(i++, data2.dimension.heightRange.max)) {
+                  if (data2.block.above(i - data2.block.y)?.hasTag(`poke_pfe:elevator`) && !Boolean(data2.block.above(i - data2.block.y)?.getRedstonePower())) {
+                    player.teleport({ x: data2.block.center().x, y: i + 1, z: data2.block.center().z });
+                    player.playSound(`mob.endermen.portal`, { location: { x: data2.block.x, y: i + 1, z: data2.block.z } });
+                    return;
+                  }
                 }
+                ;
+                break;
               }
-            } else {
-              for (let i = data2.block.y + 1; i <= Math.min(data2.block.y + maxSearchHeight, data2.dimension.heightRange.max); Math.min(i++, data2.dimension.heightRange.max)) {
-                if (data2.block.above(i - data2.block.y)?.hasTag(`poke_pfe:elevator`) && !Boolean(data2.block.above(i - data2.block.y)?.getRedstonePower())) {
-                  player.teleport({ x: data2.block.center().x, y: i + 1, z: data2.block.center().z });
-                  player.playSound(`mob.endermen.portal`, { location: { x: data2.block.x, y: i + 1, z: data2.block.z } });
-                  return;
+              case Direction2.Down: {
+                for (let i = data2.block.y - 1; i >= Math.max(data2.block.y - maxSearch, data2.dimension.heightRange.min); Math.min(i--, data2.dimension.heightRange.min)) {
+                  if (data2.block.below(Math.abs(i - data2.block.y))?.hasTag(`poke_pfe:elevator`) && !Boolean(data2.block.below(Math.abs(i - data2.block.y))?.getRedstonePower())) {
+                    player.teleport({ x: data2.block.center().x, y: i + 1, z: data2.block.center().z });
+                    player.playSound(`mob.endermen.portal`, { location: { x: data2.block.x, y: i + 1, z: data2.block.z } });
+                    return;
+                  }
                 }
+                ;
+                break;
+              }
+            }
+          }
+        }
+      }
+    }
+  );
+  data.blockComponentRegistry.registerCustomComponent(
+    "poke_pfe:omnivator",
+    {
+      onStepOff(data2) {
+        if (!data2.entity)
+          return;
+        let player = data2.entity;
+        if (player.typeId == MinecraftEntityTypes.Player) {
+          let maxSearch = 64;
+          if (player.isJumping) {
+            let viewDirection = player.getViewDirection();
+            console.warn(`X: ${viewDirection.x}, Y: ${viewDirection.y}, Z: ${viewDirection.z}`);
+            let cardinalDirecion = PokeClosestCardinal(viewDirection);
+            switch (cardinalDirecion.direction) {
+              case Direction2.Up: {
+                for (let i = data2.block.y + 1; i <= Math.min(data2.block.y + maxSearch, data2.dimension.heightRange.max); Math.min(i++, data2.dimension.heightRange.max)) {
+                  console.warn(`Checking Y= ${i} 
+Block ID = ${data2.block.above(i - data2.block.y)?.typeId} 
+Above Amount = ${i - data2.block.y}
+Redstone Power = ${data2.block.above(i - data2.block.y)?.getRedstonePower()}
+Has Tag? = ${data2.block.above(i - data2.block.y)?.hasTag(`poke_pfe:elevator`)}`);
+                  if (data2.block.above(i - data2.block.y)?.hasTag(`poke_pfe:elevator`) && !Boolean(data2.block.above(i - data2.block.y)?.getRedstonePower())) {
+                    console.warn(`TELEPORTING`);
+                    player.teleport({ x: data2.block.center().x, y: i + 1, z: data2.block.center().z });
+                    player.playSound(`mob.endermen.portal`, { location: { x: data2.block.x, y: i + 1, z: data2.block.z } });
+                    return;
+                  }
+                }
+                ;
+                break;
+              }
+              case Direction2.Down: {
+                for (let i = data2.block.y - 1; i >= Math.max(data2.block.y - maxSearch, data2.dimension.heightRange.min); Math.min(i--, data2.dimension.heightRange.min)) {
+                  console.warn(`Checking Y= ${i} 
+Block ID = ${data2.block.below(Math.abs(i - data2.block.y))?.typeId} 
+Below Amount = ${Math.abs(i - data2.block.y)}
+Redstone Power = ${data2.block.below(Math.abs(i - data2.block.y))?.getRedstonePower()}
+Has Tag? = ${data2.block.below(Math.abs(i - data2.block.y))?.hasTag(`poke_pfe:elevator`)}`);
+                  if (data2.block.below(Math.abs(i - data2.block.y))?.hasTag(`poke_pfe:elevator`) && !Boolean(data2.block.below(Math.abs(i - data2.block.y))?.getRedstonePower())) {
+                    console.warn(`TELEPORTING`);
+                    player.teleport({ x: data2.block.center().x, y: i + 1, z: data2.block.center().z });
+                    player.playSound(`mob.endermen.portal`, { location: { x: data2.block.x, y: i + 1, z: data2.block.z } });
+                    return;
+                  }
+                }
+                ;
+                break;
+              }
+              case Direction2.North: {
+                for (let i = data2.block.z - 1; i >= data2.block.z - maxSearch; i--) {
+                  console.warn(`Checking Z= ${i} 
+Block ID = ${data2.block.north(Math.abs(i - data2.block.z))?.typeId} 
+North Amount = ${Math.abs(i - data2.block.z)}
+Redstone Power = ${data2.block.north(Math.abs(i - data2.block.z))?.getRedstonePower()}
+Has Tag? = ${data2.block.north(Math.abs(i - data2.block.z))?.hasTag(`poke_pfe:elevator`)}`);
+                  if (data2.block.north(Math.abs(i - data2.block.z))?.hasTag(`poke_pfe:elevator`) && !Boolean(data2.block.north(Math.abs(i - data2.block.z))?.getRedstonePower())) {
+                    console.warn(`TELEPORTING`);
+                    let newBlock = data2.block.north(Math.abs(i - data2.block.z));
+                    player.teleport({ x: newBlock.center().x, y: newBlock.y + 1, z: newBlock.center().z });
+                    player.playSound(`mob.endermen.portal`, { location: newBlock.center() });
+                    return;
+                  }
+                }
+                ;
+                break;
+              }
+              case Direction2.South: {
+                for (let i = data2.block.z + 1; i <= data2.block.z + maxSearch; i++) {
+                  console.warn(`Checking Z= ${i} 
+Block ID = ${data2.block.south(i - data2.block.z)?.typeId} 
+South Amount = ${i - data2.block.z}
+Redstone Power = ${data2.block.south(i - data2.block.z)?.getRedstonePower()}
+Has Tag? = ${data2.block.south(i - data2.block.z)?.hasTag(`poke_pfe:elevator`)}`);
+                  if (data2.block.south(i - data2.block.z)?.hasTag(`poke_pfe:elevator`) && !Boolean(data2.block.south(i - data2.block.z)?.getRedstonePower())) {
+                    console.warn(`TELEPORTING`);
+                    let newBlock = data2.block.south(i - data2.block.z);
+                    player.teleport({ x: newBlock.center().x, y: newBlock.y + 1, z: newBlock.center().z });
+                    player.playSound(`mob.endermen.portal`, { location: newBlock.center() });
+                    return;
+                  }
+                }
+                ;
+                break;
+              }
+              case Direction2.West: {
+                for (let i = data2.block.x - 1; i >= data2.block.x - maxSearch; i--) {
+                  console.warn(`Checking X= ${i} 
+Block ID = ${data2.block.west(Math.abs(i - data2.block.x))?.typeId} 
+West Amount = ${Math.abs(i - data2.block.x)}
+Redstone Power = ${data2.block.west(Math.abs(i - data2.block.x))?.getRedstonePower()}
+Has Tag? = ${data2.block.west(Math.abs(i - data2.block.x))?.hasTag(`poke_pfe:elevator`)}`);
+                  if (data2.block.west(Math.abs(i - data2.block.x))?.hasTag(`poke_pfe:elevator`) && !Boolean(data2.block.west(Math.abs(i - data2.block.x))?.getRedstonePower())) {
+                    console.warn(`TELEPORTING`);
+                    let newBlock = data2.block.west(Math.abs(i - data2.block.x));
+                    player.teleport({ x: newBlock.center().x, y: newBlock.y + 1, z: newBlock.center().z });
+                    player.playSound(`mob.endermen.portal`, { location: newBlock.center() });
+                    return;
+                  }
+                }
+                ;
+                break;
+              }
+              case Direction2.East: {
+                for (let i = data2.block.x + 1; i <= data2.block.x + maxSearch; i++) {
+                  console.warn(`Checking X= ${i} 
+Block ID = ${data2.block.east(i - data2.block.x)?.typeId} 
+East Amount = ${i - data2.block.x}
+Redstone Power = ${data2.block.east(i - data2.block.x)?.getRedstonePower()}
+Has Tag? = ${data2.block.east(i - data2.block.x)?.hasTag(`poke_pfe:elevator`)}`);
+                  if (data2.block.east(i - data2.block.x)?.hasTag(`poke_pfe:elevator`) && !Boolean(data2.block.east(i - data2.block.x)?.getRedstonePower())) {
+                    console.warn(`TELEPORTING`);
+                    let newBlock = data2.block.east(i - data2.block.x);
+                    player.teleport({ x: newBlock.center().x, y: newBlock.y + 1, z: newBlock.center().z });
+                    player.playSound(`mob.endermen.portal`, { location: newBlock.center() });
+                    return;
+                  }
+                }
+                ;
+                break;
               }
             }
           }

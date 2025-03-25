@@ -8,8 +8,13 @@
 			}
 		},
 		"components": {
-			"minecraft:rarity":"common",
-			"minecraft:icon":"poke_diamond_upgrade_core"
+			"minecraft:rarity": "common",
+			"minecraft:tags": {
+				"tags": [
+					"poke:upgrade_core"
+				]
+			},
+			"minecraft:icon": "poke_diamond_upgrade_core"
 		}
 	}
 }

@@ -8,6 +8,10 @@
 			}
 		},
 		"components": {
+			"minecraft:rarity": "common",
+			"minecraft:display_name": {
+				"value": "%item.poke_pfe.kapow_ring\n%poke_pfe.tag"
+			},
 			"minecraft:repairable": {
 				"repair_items": [
 					{

@@ -1155,6 +1155,7 @@
               "icon": "poke:boss_event_config"
             },
             "items": [
+              "poke_pfe:config",
               "poke:calendar",
               "poke:boss_event_config"
             ]
@@ -1534,6 +1535,8 @@
               "poke:dirter_up",
               "poke:duster_up",
               "poke_pfe:fisher",
+              "poke_pfe:elevator",
+              "poke_pfe:omnivator",
               "poke:magnet",
               "poke:barometer",
               "poke:phantomed_conduit",

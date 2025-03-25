@@ -1,13 +1,19 @@
 pack.name=§bv1.2.8 PFE RP
 pack.description=§6By:§u ItsMePok §f& §dO2God §7||§e Wiki: https:pfewiki.gitbook.io/home
 poke_pfe.tag=§9PFE§r
-
+poke_pfe.toUse=To use
+poke_pfe.enabledDirections=Enabled directions
+poke_pfe.up=Up
+poke_pfe.down=Down
+poke_pfe.north=North
+poke_pfe.south=South
+poke_pfe.east=East
+poke_pfe.west=West
+poke_pfe.all=All
 item.poke_pfe.config=Config
 item.poke_pfe.config.desc=Allows you to configure options for PFE
-
 poke_pfe.effect.instant=Instant
 poke_pfe.effect.death=Death
-
 translation.poke_pfe.enabled=Enabled
 translation.poke_pfe.disabled=Disabled
 translation.poke_pfe.bossEventConfig=Confgure boss events
@@ -17,14 +23,12 @@ translation.poke_pfe.cactus_aromr_radius=Cactus armor's damage
 translation.poke_pfe.insuffictPerms=Insufficent Permissions
 translation.poke_pfe.insuffictPerms.desc=You don't have the correct permissions to use this. Give yourself the tag
 translation.poke_pfe.insuffictPerms.desc2=Not sure how? Run this command:
-
 item.poke_pfe.quantum_teleporter=Quantum Teleporter
 item.poke_pfe.kapow_ring=Kapow Ring
 item.poke_pfe.nuke_ring=Nuke Ring
 item.poke_pfe.sundial=Sundail
 item.poke_pfe.wither_spawner=Wither Spawner
 item.poke_pfe.bounty=Bounty
-
 item.poke_pfe.hellish_potion=Hellish Potion
 item.poke_pfe.demonic_potion=Demonic Potion
 item.poke_pfe.splash_death_potion=Splash Death Potion
@@ -32,7 +36,6 @@ item.poke_pfe.death_potion=Death Potion
 item.poke_pfe.cobalt_potion=Cobalt Potion
 item.poke_pfe.void_potion=Void Potion
 item.poke_pfe.nebula_potion=Nebula Potion
-
 tile.poke_pfe.astral_drain=Astral Drain
 tile.poke_pfe.banished_drain=Banished Drain
 tile.poke_pfe.cobalt_drain=Cobalt Drain
@@ -52,7 +55,10 @@ tile.poke_pfe.radium_drain=Radium Drain
 tile.poke_pfe.shade_drain=Shade Drain
 tile.poke_pfe.shadowstone_drain=Shadowstone Drain
 tile.poke_pfe.void_drain=Void Drain
-
+poke_pfe.elevator=Elevator
+poke_pfe.omnivator=Omnivator
+poke_pfe.elevator.1=Takes you to the next
+poke_pfe.elevator.2=Jump facing the way you want to go
 item.poke:hellish_blade=Hellish Blade~LINEBREAK~§9PFE§r
 item.poke:amethyst_sword=Ameythyst Sword~LINEBREAK~§9PFE§r
 item.poke:onyx_sword=Onyx Sword~LINEBREAK~§9PFE§r
@@ -97,7 +103,6 @@ item.poke:ring_1=Rain Ring~LINEBREAK~§9PFE§r
 item.poke:zeus_ring=Zeus Ring~LINEBREAK~§9PFE§r
 item.poke:ring_2=Blaze Ring~LINEBREAK~§9PFE§r
 item.poke:ring_3=Warp Ring~LINEBREAK~§9PFE§r
-item.poke:kapow_ring=Kapow Ring~LINEBREAK~§9PFE§r
 item.poke:shade_ring=Shade Ring~LINEBREAK~§9PFE§r
 item.poke:med_ring=Med Ring~LINEBREAK~§9PFE§r
 item.poke:strength_ring=Strength Ring~LINEBREAK~§9PFE§r
@@ -107,7 +112,6 @@ item.poke:darkness_ring=Darkness Ring~LINEBREAK~§9PFE§r
 item.poke:ice_ring=Ice Ring~LINEBREAK~§9PFE§r
 item.poke:grim_ring=Grim Ring~LINEBREAK~§9PFE§r
 item.poke:shadow_ring=Shadow Ring~LINEBREAK~§9PFE§r
-item.poke:nuke_ring=Nuke Ring~LINEBREAK~§9PFE§r
 item.poke:aqua_ring=Aqua Ring~LINEBREAK~§9PFE§r
 item.poke:gravity_ring=Gravity Ring~LINEBREAK~§9PFE§r
 item.poke:volt_ring=Volt Ring~LINEBREAK~§9PFE§r
@@ -371,7 +375,6 @@ item.poke:gps_module=GPS Module~LINEBREAK~§9PFE§r
 item.poke:rocket_replenisher=Rocket Replenisher~LINEBREAK~§9PFE§r
 item.poke:panic_button=Panic Button~LINEBREAK~§9PFE§r
 item.poke:quantum_teleporter=Quantum Teleporter~LINEBREAK~§cWarning§r§7: This Teleports ALL Entities to the user~LINEBREAK~This can cause irreversible damage~LINEBREAK~§9PFE§r
-item.poke:sundial=Sundial~LINEBREAK~§9PFE§r
 item.poke:floppy_disk=Floppy Disk~LINEBREAK~§9PFE§r
 item.poke:rotten_chicken=Rotten Chicken~LINEBREAK~§9PFE§r
 tile.poke:charred_poppy.name=Charred Poppy~LINEBREAK~§9PFE§r
@@ -1271,8 +1274,7 @@ translation.poke:timeEventOptionsTitle=Event Options
 translation.poke:timeEventOptionsEditTime=Edit Date & Time
 translation.poke:timeEventEditTimeTitle=Editing Date & Time
 translation.poke:timeEditGiftTextFieldLabel=The gift the players can claim during the event window~LINEBREAK~~LINEBREAK~This works using a Minecraft command (ex. /give)
-
 tile.poke_pfe:fisher.name=Fisher~LINEBREAK~§7When in water:~LINEBREAK~- Automatically catches fish~LINEBREAK~§9PFE§r
 item.poke_pfe:resist_gem=Resist Gem~LINEBREAK~§9PFE§r
 item.poke_pfe:resist_ring=Resist Ring~LINEBREAK~§9PFE§r
-tile.poke_pfe:elevator.name=Elevator~LINEBREAK~§7Takes you to the next Elevator Block~LINEBREAK~:_input_key.jump:= UP~LINEBREAK~:_input_key.sneak: + :_input_key.jump: = Down
+poke:itemGroup.name.drain=Drains~LINEBREAK~§9PFE§r

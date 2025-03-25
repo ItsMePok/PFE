@@ -2,13 +2,13 @@
 	"format_version": "1.21.60",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke_pfe:elevator",
+			"identifier": "poke_pfe:omnivator",
 			"menu_category": {
 				"category": "items"
 			}
 		},
 		"components": {
-			"minecraft:display_name": "%poke_pfe.elevator\n§7%poke_pfe.elevator.1 %poke_pfe.elevator / %poke_pfe.omnivator\n%poke_pfe.toUse: %poke_pfe.elevator.2\n%poke_pfe.enabledDirections: %poke_pfe.up, %poke_pfe.down\n%poke_pfe.tag",
+			"minecraft:display_name": "%poke_pfe.omnivator\n§7%poke_pfe.elevator.1 %poke_pfe.elevator / %poke_pfe.omnivator\n%poke_pfe.toUse: %poke_pfe.elevator.2\n%poke_pfe.enabledDirections: %poke_pfe.all\n%poke_pfe.tag",
 			"minecraft:redstone_conductivity": {
 				"redstone_conductor": true,
 				"allows_wire_to_step_down": true
@@ -30,13 +30,8 @@
 			"minecraft:material_instances": {
 				"*": {
 					"render_method": "opaque",
-					"texture": "poke_pfe_elevator_side"
-				},
-				"up": {
-					"render_method": "opaque",
-					"texture": "poke_pfe_elevator"
-				},
-				"down": "up"
+					"texture": "poke_pfe_omnivator"
+				}
 			},
 			"minecraft:geometry": {
 				"culling": "poke_pfe:block.culling",
@@ -50,7 +45,7 @@
 			"tag:poke_pfe:elevator": {},
 			"minecraft:map_color": "#202025",
 			"minecraft:custom_components": [
-				"poke_pfe:elevator"
+				"poke_pfe:omnivator"
 			]
 		}
 	}

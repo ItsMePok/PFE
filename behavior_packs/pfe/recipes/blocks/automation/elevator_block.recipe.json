@@ -10,7 +10,7 @@
 		],
 		"key": {
 			"L": {
-				"item": "poke:cobbled_limestone"
+				"tag": "minecraft:stone_crafting_materials"
 			},
 			"A": {
 				"item": "poke:antenna"
@@ -27,7 +27,7 @@
 		},
 		"unlock": [
 			{
-				"item": "poke:cobbled_limestone"
+				"tag": "minecraft:stone_crafting_materials"
 			},
 			{
 				"item": "poke:antenna"

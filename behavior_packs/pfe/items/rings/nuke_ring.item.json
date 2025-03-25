@@ -8,6 +8,10 @@
 			}
 		},
 		"components": {
+			"minecraft:rarity": "common",
+			"minecraft:display_name": {
+				"value": "%item.poke_pfe.nuke_ring\n%poke_pfe.tag"
+			},
 			"minecraft:custom_components": [
 				"poke:shootProjectile"
 			],

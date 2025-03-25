@@ -2200,6 +2200,16 @@
 				"path": "textures/poke/pfe/elevator_block"
 			}
 		},
+		"poke_pfe_elevator_side": {
+			"textures": {
+				"path": "textures/poke/pfe/elevator_side"
+			}
+		},
+		"poke_pfe_omnivator": {
+			"textures": {
+				"path": "textures/poke/pfe/omnivator"
+			}
+		},
 		"poke_pfe_shadowstone_drain": {
 			"textures": {
 				"path": "textures/poke/pfe/drain",

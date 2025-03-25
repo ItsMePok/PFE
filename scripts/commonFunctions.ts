@@ -1,4 +1,4 @@
-import { Dimension, Entity, EntityComponentTypes, EntityEquippableComponent, EntityInventoryComponent, EquipmentSlot, GameMode, ItemComponentTypes, ItemDurabilityComponent, ItemStack, Player, RawMessage, Vector3, world } from "@minecraft/server";
+import { Dimension, Direction, Entity, EntityComponentTypes, EntityEquippableComponent, EntityInventoryComponent, EquipmentSlot, GameMode, ItemComponentTypes, ItemDurabilityComponent, ItemStack, Player, RawMessage, Vector3, world } from "@minecraft/server";
 import { ActionFormData } from "@minecraft/server-ui";
 import { MinecraftEnchantmentTypes, MinecraftEntityTypes } from "@minecraft/vanilla-data";
 
@@ -13,7 +13,9 @@ export {
   PokeSaveProperty,
   PokeGetSegmentOfStringInfo,
   PokeGetSegmentOfString,
-  PokeSpawnLootTable
+  PokeSpawnLootTable,
+  PokeClosestCardinal,
+  PokeClosestCardinalInfo
 }
 
 // Tool Durability initially from https://wiki.bedrock.dev/items/tool-durability.html
@@ -294,4 +296,73 @@ function PokeSpawnLootTable(lootTable:string,position:Vector3,dimension:Dimensio
     }
     return;
   }else dimension.runCommand(`loot spawn ${position.x} ${position.y} ${position.z} loot "${lootTable}"`)
+}
+
+interface PokeClosestCardinalInfo{
+  "direction":Direction,
+  "vector":Vector3
+}
+
+/**
+ * Gets the cosest cardinal direction based on the view direction
+ * (N,S,W,E,U,P)
+ * 
+ * Returns PokeClosestCardinalInfo
+ */
+function PokeClosestCardinal(vector:Vector3, directions?:"all"|"upDown"){
+  let returnProperty:PokeClosestCardinalInfo = {
+    direction:Direction.Up,
+    vector:vector
+  }
+  if (directions == "upDown"){
+    if (vector.y >= 0){ // Up
+      returnProperty.direction = Direction.Up,
+      returnProperty.vector = {x:0,y:1,z:0}
+      //console.warn(`UP`)
+    }else if(vector.y < 0){ // Down
+      returnProperty.direction = Direction.Down,
+      returnProperty.vector = {x:0,y:-1,z:0}
+      //console.warn(`DOWN`)
+    }
+    return returnProperty
+  }else
+  switch (true){
+    case (vector.y < -0.70):{ // Down
+      returnProperty.direction = Direction.Down,
+      returnProperty.vector = {x:0,y:-1,z:0}
+      //console.warn(`DOWN`)
+      break
+    }
+    case vector.y > 0.70:{ // Up
+      returnProperty.direction = Direction.Up,
+      returnProperty.vector = {x:0,y:1,z:0}
+      //console.warn(`UP`)
+      break
+    }
+    case vector.x > 0.70:{ // East
+      returnProperty.direction = Direction.East,
+      returnProperty.vector = {x:1,y:0,z:0}
+      //console.warn(`EAST`)
+      break
+    }
+    case vector.x < -0.70:{ // West
+      returnProperty.direction = Direction.West,
+      returnProperty.vector = {x:-1,y:0,z:0}
+      //console.warn(`WEST`)
+      break
+    }
+    case vector.z > 0.70:{ // South
+      returnProperty.direction = Direction.South,
+      returnProperty.vector = {x:0,y:0,z:1}
+      //console.warn(`SOUTH`)
+      break
+    }
+    case vector.z < -0.70:{ // North
+      returnProperty.direction = Direction.North,
+      returnProperty.vector = {x:0,y:0,z:-1}
+      //console.warn(`NORTH`)
+      break
+    }
+  }
+  return returnProperty
 }

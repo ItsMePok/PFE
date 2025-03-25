@@ -8,6 +8,12 @@
 			}
 		},
 		"components": {
+			"minecraft:rarity": "common",
+			"minecraft:tags": {
+				"tags": [
+					"poke:upgrade_core"
+				]
+			},
 			"minecraft:icon": "poke_blank_core"
 		}
 	}
