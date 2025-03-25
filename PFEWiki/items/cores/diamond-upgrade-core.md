@@ -1,102 +1,32 @@
 # Diamond Upgrade Core
 
-![poke\_diamond\_upgrade\_core](https://github.com/ItsMePok/PFE/assets/136857747/cd2e69eb-3e99-470c-89c4-ddf91c05de21)
+<figure><img src="https://github.com/user-attachments/assets/8a39a047-08e9-45b1-ad5e-4b67a9fe7f67" alt=""><figcaption></figcaption></figure>
 
-Identifier: **poke:diamond\_upgrade\_core**
+## <img src="https://minecraft.wiki/images/Book_and_Quill_JE2_BE2.png?2128f" alt="Book and Quill." data-size="line"> Description: <a href="#description" id="description"></a>
 
-## Usage:
+* The <img src="https://github.com/user-attachments/assets/8a39a047-08e9-45b1-ad5e-4b67a9fe7f67" alt="Diamond Upgrade Core." data-size="line"> Diamond Upgrade Core is used as a crafting component for upgrading various things in PFE
 
-* Crafting Component
+## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:diamond\_upgrade\_core** <a href="#identifier" id="identifier"></a>
 
-## Obtaining:
+## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 64 <a href="#stack-size" id="stack-size"></a>
 
-* Sold by the [Token Trader](https://pfewiki.gitbook.io/home/mobs/traders/token-trader) for 1 [Diamond Token](https://pfewiki.gitbook.io/home/items/tokens/diamond-token)
-* Sold by the [Shopkeeper](https://github.com/ItsMePok/PFE/wiki/Shopkeeper) for 1 [Banished Star x7](https://pfewiki.gitbook.io/home/items/banished-stars/banished-star-x7)
-* Found in the [Abandoned Ship](https://pfewiki.gitbook.io/home/sturctures/abandoned-ship)
+## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining: <a href="#obtaining" id="obtaining"></a>
 
-## Used in Crafting:
+{% tabs %}
+{% tab title="Trade" %}
+<figure><img src="https://github.com/user-attachments/assets/30c5b799-c00c-4ecd-b540-59b99cce7cbe" alt=""><figcaption><p>Sold by the <a href="../../mobs/traders/token-trader.md">Token Trader</a></p></figcaption></figure>
 
-### Armor
+<table><thead><tr><th align="center">Wants</th><th data-type="number">Amount</th><th align="center">Gives</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td align="center"> <img src="https://github.com/user-attachments/assets/343bd597-b2ac-46ba-85a1-b711385968ff" alt="Diamond Token." data-size="line"> Diamond Token</td><td>1</td><td align="center"><img src="https://github.com/user-attachments/assets/8a39a047-08e9-45b1-ad5e-4b67a9fe7f67" alt="Diamond Upgrade Core." data-size="line"> Diamond Upgrade Core</td><td>1</td></tr></tbody></table>
 
-* [Demonic Helmet](https://github.com/ItsMePok/PFE/wiki/Demonic-Armor#demonic-helmet)
-* [Demonic Chestplate](https://github.com/ItsMePok/PFE/wiki/Demonic-Armor#demonic-chestplate)
-* [Demonic Leggings](https://github.com/ItsMePok/PFE/wiki/Demonic-Armor#demonic-leggings)
-* [Demonic Boots](https://github.com/ItsMePok/PFE/wiki/Demonic-Armor#demonic-boots)
-* [Godly Helmet](https://github.com/ItsMePok/PFE/wiki/Godly-Armor#godly-helmet)
-* [Godly Chestplate](https://github.com/ItsMePok/PFE/wiki/Godly-Armor#godly-chestplate)
-* [Godly Leggings](https://github.com/ItsMePok/PFE/wiki/Godly-Armor#godly-leggings)
-* [Godly Boots](https://github.com/ItsMePok/PFE/wiki/Godly-Armor#godly-boots)
-* [Hellish Helmet](https://github.com/ItsMePok/PFE/wiki/Hellish-Armor#hellish-helmet)
-* [Hellish Chestplate](https://github.com/ItsMePok/PFE/wiki/Hellish-Armor#hellish-chestplate)
-* [Hellish Leggings](https://github.com/ItsMePok/PFE/wiki/Hellish-Armor#hellish-leggings)
-* [Hellish Boots](https://github.com/ItsMePok/PFE/wiki/Hellish-Armor#hellish-boots)
-* [Holy Helmet](https://github.com/ItsMePok/PFE/wiki/Holy-Armor#holy-helmet)
-* [Holy Chestplate](https://github.com/ItsMePok/PFE/wiki/Holy-Armor#holy-chestplate)
-* [Holy Leggings](https://github.com/ItsMePok/PFE/wiki/Holy-Armor#holy-leggings)
-* [Holy Boots](https://github.com/ItsMePok/PFE/wiki/Holy-Armor#holy-boots)
-* [Medic Helmet](https://github.com/ItsMePok/PFE/wiki/Medic-Armor#medic-helmet)
-* [Medic Chestplate](https://github.com/ItsMePok/PFE/wiki/Medic-Armor#medic-chestplate)
-* [Medic Leggings](https://github.com/ItsMePok/PFE/wiki/Medic-Armor#medic-leggings)
-* [Medic Boots](https://github.com/ItsMePok/PFE/wiki/Medic-Armor#medic-boots)
-* [Molten Helmet](https://github.com/ItsMePok/PFE/wiki/Molten-Armor#molten-helmet)
-* [Molten Chestplate](https://github.com/ItsMePok/PFE/wiki/Molten-Armor#molten-chestplate)
-* [Molten Leggings](https://github.com/ItsMePok/PFE/wiki/Molten-Armor#molten-leggings)
-* [Molten Boots](https://github.com/ItsMePok/PFE/wiki/Molten-Armor#molten-boots)
-* [Radium Helmet](https://github.com/ItsMePok/PFE/wiki/Radium-Armor#radium-helmet)
-* [Radium Chestplate](https://github.com/ItsMePok/PFE/wiki/Radium-Armor#radium-chestplate)
-* [Radium Leggings](https://github.com/ItsMePok/PFE/wiki/Radium-Armor#radium-leggings)
-* [Radium Boots](https://github.com/ItsMePok/PFE/wiki/Radium-Armor#radium-boots)
+***
 
-### Blocks
+<figure><img src="https://github.com/user-attachments/assets/adc1c7b5-4611-4b54-b1a4-1fcaafe6c896" alt=""><figcaption><p>Sold by the <a href="../../mobs/traders/shopkeeper.md">Shopkeeper</a></p></figcaption></figure>
 
-* [Cobbler](https://github.com/ItsMePok/PFE/wiki/Cobbler)
+<table><thead><tr><th align="center">Wants</th><th data-type="number">Amount</th><th align="center">Gives</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td align="center"><img src="https://github.com/user-attachments/assets/e46be6a6-95e6-4a01-bf93-b449fa7a87ac" alt="Banished Star x7." data-size="line"> <a href="../banished-stars/banished-star-x7.md">Banished Star x7</a></td><td>1</td><td align="center"><img src="https://github.com/user-attachments/assets/8a39a047-08e9-45b1-ad5e-4b67a9fe7f67" alt="Diamond Upgrade Core." data-size="line"> Diamond Upgrade Core</td><td>1</td></tr></tbody></table>
+{% endtab %}
 
-### Items
+{% tab title="Structure Loot" %}
+Found in the [Abandoned Ship](https://pfewiki.gitbook.io/home/sturctures/abandoned-ship)
+{% endtab %}
+{% endtabs %}
 
-* [Gravity Gem](https://github.com/ItsMePok/PFE/wiki/Gravity-Gem)
-* [Nuke Ring](https://github.com/ItsMePok/PFE/wiki/Nuke-Ring)
-* [Demonic Haxel](https://github.com/ItsMePok/PFE/wiki/Demonic-Haxel)
-* [Godly Haxel](https://github.com/ItsMePok/PFE/wiki/Godly-Haxel)
-* [Hellish Haxel](https://github.com/ItsMePok/PFE/wiki/Hellish-Haxel)
-* [Holy Haxel](https://github.com/ItsMePok/PFE/wiki/Holy-Haxel)
-* [Medic Haxel](https://github.com/ItsMePok/PFE/wiki/Medic-Haxel)
-* [Molten Haxel](https://github.com/ItsMePok/PFE/wiki/Molten-Haxel)
-* [Radium Haxel](https://github.com/ItsMePok/PFE/wiki/Radium-Haxel)
-* [Demonic Upgrader](https://github.com/ItsMePok/PFE/wiki/Demonic-Upgrader)
-* [Godly Upgrader](https://github.com/ItsMePok/PFE/wiki/Godly-Upgrader)
-* [Hellish Upgrader](https://github.com/ItsMePok/PFE/wiki/Hellish-Upgrader)
-* [Holy Upgrader](https://github.com/ItsMePok/PFE/wiki/Holy-Upgrader)
-* [Onyx Upgrader](https://github.com/ItsMePok/PFE/wiki/Onyx-Upgrader)
-* [Demonic Battleaxe](https://github.com/ItsMePok/PFE/wiki/Demonic-Battleaxe)
-* [Galaxy Battleaxe](https://github.com/ItsMePok/PFE/wiki/Galaxy-Battleaxe)
-* [Godly Battleaxe](https://github.com/ItsMePok/PFE/wiki/Godly-Battleaxe)
-* [Medic Battleaxe](https://github.com/ItsMePok/PFE/wiki/Medic-Battleaxe)
-* [Molten Battleaxe](https://github.com/ItsMePok/PFE/wiki/Molten-Battleaxe)
-* [Void Battleaxe](https://github.com/ItsMePok/PFE/wiki/Void-Battleaxe)
-* [Demonic Slasher](https://github.com/ItsMePok/PFE/wiki/Demonic-Slasher)
-* [Ember Scythe](https://github.com/ItsMePok/PFE/wiki/Ember-Scythe)
-* [Godly Scythe](https://github.com/ItsMePok/PFE/wiki/Godly-Scythe)
-* [Hellish Scythe](https://github.com/ItsMePok/PFE/wiki/Hellish-Scythe)
-* [Holy Scythe](https://github.com/ItsMePok/PFE/wiki/Holy-Scythe)
-* [Radium Scythe](https://github.com/ItsMePok/PFE/wiki/Radium-Scythe)
-* [Demonic Sword](https://github.com/ItsMePok/PFE/wiki/Demonic-Sword)
-* [Godly Sword](https://github.com/ItsMePok/PFE/wiki/Godly-Sword)
-* [Hellish Sword](https://github.com/ItsMePok/PFE/wiki/Hellish-Sword)
-* [Holy Sword](https://github.com/ItsMePok/PFE/wiki/Holy-Sword)
-* [Radium Sword](https://github.com/ItsMePok/PFE/wiki/Radium-Sword)
-* [Amethyst Upgrader](diamond-upgrade-core.md)
-* [Coal Upgrader](diamond-upgrade-core.md)
-* [Cobalt Upgrader](diamond-upgrade-core.md)
-* [Copper Upgrader](diamond-upgrade-core.md)
-* [Diamond Upgrader](diamond-upgrade-core.md)
-* [Emerald Upgrader](diamond-upgrade-core.md)
-* [End Upgrader](diamond-upgrade-core.md)
-* [Gold Upgrader](diamond-upgrade-core.md)
-* [Iron Upgrader](diamond-upgrade-core.md)
-* [Lapis Upgrader](diamond-upgrade-core.md)
-* [Nether Upgrader](diamond-upgrade-core.md)
-* [Netherite Upgrader](diamond-upgrade-core.md)
-* [Obsidian Depressor](diamond-upgrade-core.md)
-* [Redstone Upgrader](diamond-upgrade-core.md)
-* [Shade Upgrader](diamond-upgrade-core.md)
-* [Stone Upgrader](diamond-upgrade-core.md)

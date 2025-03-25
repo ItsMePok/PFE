@@ -45,7 +45,7 @@ Outputs:
 * 1x <img src="https://github.com/user-attachments/assets/b182a1f3-ecc9-45bb-8a18-f805f919e587" alt="Cassette: Far." data-size="line"> Cassette: Far
 {% endtab %}
 
-{% tab title="Untitled" %}
+{% tab title="Structure Loot" %}
 {% hint style="info" %}
 `Chance` is getting at least the lowest `Amount` of that item
 {% endhint %}

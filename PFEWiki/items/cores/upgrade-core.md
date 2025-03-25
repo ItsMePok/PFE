@@ -1,58 +1,27 @@
 # Upgrade Core
 
-![](https://github.com/ItsMePok/PFE/assets/136857747/38584129-72d6-42b8-a69b-cd3b461025e8)
+<figure><img src="https://github.com/user-attachments/assets/39e7d999-c587-452b-b96d-56303d2c08e8" alt=""><figcaption></figcaption></figure>
 
-Identifier: **poke:upgrade\_core**
+## <img src="https://minecraft.wiki/images/Book_and_Quill_JE2_BE2.png?2128f" alt="Book and Quill." data-size="line"> Description: <a href="#description" id="description"></a>
 
-## Usage:
+* The <img src="https://github.com/user-attachments/assets/39e7d999-c587-452b-b96d-56303d2c08e8" alt="Upgrade Core." data-size="line"> Upgrade Core is used as a crafting component for upgrading various things in PFE
 
-* Crafting Component
+## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:upgrade\_core** <a href="#identifier" id="identifier"></a>
 
-## Obtaining:
+## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 64 <a href="#stack-size" id="stack-size"></a>
 
-* Sold by the[ Token Trader](../../mobs/traders/token-trader.md) for 1 [Gold Token](../currency/tokens/gold-token.md)
-* Sold by the [Shopkeeper](../../mobs/traders/shopkeeper.md) for 1 [Banished Star x4](../banished-stars/banished-star-x4.md)
+## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining: <a href="#obtaining" id="obtaining"></a>
 
-## Used in Crafting:
+{% tabs %}
+{% tab title="Trade" %}
+<figure><img src="https://github.com/user-attachments/assets/30c5b799-c00c-4ecd-b540-59b99cce7cbe" alt=""><figcaption><p>Sold by the <a href="../../mobs/traders/token-trader.md">Token Trader</a></p></figcaption></figure>
 
-### Armor
+<table><thead><tr><th align="center">Wants</th><th data-type="number">Amount</th><th align="center">Gives</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td align="center"> <img src="https://github.com/user-attachments/assets/38611ec4-5bcf-4443-93cc-604b57f75a40" alt="Gold Token." data-size="line"> <a href="../currency/tokens/gold-token.md">Gold Token</a></td><td>1</td><td align="center"><img src="https://github.com/user-attachments/assets/39e7d999-c587-452b-b96d-56303d2c08e8" alt="Upgrade Core." data-size="line"> Upgrade Core</td><td>1</td></tr></tbody></table>
 
-* [Amethyst Helmet](https://github.com/ItsMePok/PFE/wiki/Amethyst-Armor#amethyst-helmet)
-* [Amethyst Chestplate](https://github.com/ItsMePok/PFE/wiki/Amethyst-Armor#amethyst-chestplate)
-* [Amethyst Leggings](https://github.com/ItsMePok/PFE/wiki/Amethyst-Armor#amethyst-leggings)
-* [Amethyst Boots](https://github.com/ItsMePok/PFE/wiki/Amethyst-Armor#amethyst-boots)
-* [Onyx Helmet](https://github.com/ItsMePok/PFE/wiki/Onyx-Armor#onyx-helmet)
-* [Onyx Chestplate](https://github.com/ItsMePok/PFE/wiki/Onyx-Armor#onyx-chestplate)
-* [Onyx Leggings](https://github.com/ItsMePok/PFE/wiki/Onyx-Armor#onyx-leggings)
-* [Onyx Boots](https://github.com/ItsMePok/PFE/wiki/Onyx-Armor#onyx-boots)
-* [Shade Helmet](https://github.com/ItsMePok/PFE/wiki/Shade-Armor#shade-helmet)
-* [Shade Chestplate](https://github.com/ItsMePok/PFE/wiki/Shade-Armor#shade-chestplate)
-* [Shade Leggings](https://github.com/ItsMePok/PFE/wiki/Shade-Armor#shade-leggings)
-* [Shade Boots](https://github.com/ItsMePok/PFE/wiki/Shade-Armor#shade-boots)
-* [Cobalt Robe Helmet](https://github.com/ItsMePok/PFE/wiki/Cobalt-Robe#helmet)
-* [Cobalt Robe Chestplate](https://github.com/ItsMePok/PFE/wiki/Cobalt-Robe#chestplate)
-* [Ember Robe Helmet](https://github.com/ItsMePok/PFE/wiki/Ember-Robe#helmet)
-* [Ember Robe Chestplate](https://github.com/ItsMePok/PFE/wiki/Ember-Robe#chestplate)
-* [Feather Robe Helmet](https://github.com/ItsMePok/PFE/wiki/Feather-Robe#helmet)
-* [Feather Robe Chestplate](https://github.com/ItsMePok/PFE/wiki/Feather-Robe#chestplate)
-* [Gluttony Robe Helmet](https://github.com/ItsMePok/PFE/wiki/Gluttony-Robe#helmet)
-* [Gluttony Robe Chestplate](https://github.com/ItsMePok/PFE/wiki/Gluttony-Robe#chestplate)
-* [Hasted Robe Helmet](https://github.com/ItsMePok/PFE/wiki/Hasted-Robe#helmet)
-* [Hasted Robe Chestplate](https://github.com/ItsMePok/PFE/wiki/Hasted-Robe#chestplate)
-* [Heroic Robe Helmet](https://github.com/ItsMePok/PFE/wiki/Heroic-Robe#helmet)
-* [Heroic Robe Chestplate](https://github.com/ItsMePok/PFE/wiki/Heroic-Robe#chestplate)
-* [Shadow Robe Helmet](https://github.com/ItsMePok/PFE/wiki/Shadow-Robe#helmet)
-* [Shadow Robe Chestplate](https://github.com/ItsMePok/PFE/wiki/Shadow-Robe#chestplate)
-* [Springy Robey Helmet](https://github.com/ItsMePok/PFE/wiki/Springy-Robey#helmet)
-* [Springy Robey Chestplate](https://github.com/ItsMePok/PFE/wiki/Springy-Robey#chestplate)
-* [Swift Robe Helmet](https://github.com/ItsMePok/PFE/wiki/Swift-Robe#helmet)
-* [Swift Robe Chestplate](https://github.com/ItsMePok/PFE/wiki/Swift-Robe#chestplate)
+***
 
-### Blocks
+<figure><img src="https://github.com/user-attachments/assets/adc1c7b5-4611-4b54-b1a4-1fcaafe6c896" alt=""><figcaption><p>Sold by the <a href="../../mobs/traders/shopkeeper.md">Shopkeeper</a></p></figcaption></figure>
 
-* <img src="https://github.com/user-attachments/assets/02ae54a7-e8a3-4888-b37e-b83721e6ab63" alt="Calibrated Block Breaker" data-size="line">[Calibrated Block Breaker](../../blocks/automation/calibrated-block-breaker.md)
-
-### Items
-
-* [Cobalt Haxel](../../tools/haxel/cobalt-haxel.md)
-* [Shade Haxel](../../tools/haxel/shade-haxel.md)
+<table><thead><tr><th align="center">Wants</th><th data-type="number">Amount</th><th align="center">Gives</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td align="center"><a href="../banished-stars/banished-star-x4.md"><img src="https://pfewiki.gitbook.io/~gitbook/image?url=https%3A%2F%2Fgithub.com%2FItsMePok%2FPFE%2Fassets%2F136857747%2Ffe59da80-6212-4204-9d12-39e0bdbc55ff&#x26;width=768&#x26;dpr=1&#x26;quality=100&#x26;sign=aa843470&#x26;sv=1" alt="" data-size="line">Banished Star x4</a></td><td>1</td><td align="center"><img src="https://github.com/user-attachments/assets/39e7d999-c587-452b-b96d-56303d2c08e8" alt="Upgrade Core." data-size="line"> Upgrade Core</td><td>1</td></tr></tbody></table>
+{% endtab %}
+{% endtabs %}

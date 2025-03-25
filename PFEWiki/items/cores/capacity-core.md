@@ -1,18 +1,16 @@
 # Capacity Core
 
-e
+<figure><img src="https://github.com/user-attachments/assets/4cad10b4-b0cf-47d7-86a2-8da84875a267" alt=""><figcaption></figcaption></figure>
+
+## <img src="https://minecraft.wiki/images/Book_and_Quill_JE2_BE2.png?2128f" alt="Book and Quill." data-size="line"> Description: <a href="#description" id="description"></a>
+
+* The <img src="https://github.com/user-attachments/assets/4cad10b4-b0cf-47d7-86a2-8da84875a267" alt="Capacity Core." data-size="line"> Capacity Core is used in upgrading the [Boltbow's](../../weapons/boltbows/boltbow.md) maximum ammo capacity
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:capacity\_core** <a href="#identifier" id="identifier"></a>
 
-## Usage:
+## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 64 <a href="#stack-size" id="stack-size"></a>
 
-{% tabs %}
-{% tab title="Boltbow" %}
-Used in upgrading the Boltbow's Max ammo by 16 per level
-{% endtab %}
-{% endtabs %}
-
-## Obtaining:
+## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining: <a href="#obtaining" id="obtaining"></a>
 
 {% tabs %}
 {% tab title="Recipe" %}

@@ -24,6 +24,6 @@ Version Syntax:
 [other-addons](other-addons/)
 {% endcontent-ref %}
 
-{% content-ref url="pfe-split/" %}
-[pfe-split](pfe-split/)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
