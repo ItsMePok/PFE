@@ -1,0 +1,71 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:block": {
+		"description": {
+			"identifier": "poke:furnace_golem_trophy"
+		},
+		"components": {
+			"minecraft:liquid_detection": {
+				"detection_rules": [
+					{
+						"can_contain_liquid": true,
+						"liquid_type": "water",
+						"on_liquid_touches": "blocking"
+					}
+				]
+			},
+			"minecraft:loot": "loot_tables/poke/pfe/furnace_golem_trophy.loot.json",
+			"minecraft:selection_box": {
+				"origin": [
+					-4,
+					0,
+					-4
+				],
+				"size": [
+					8,
+					8,
+					8
+				]
+			},
+			"minecraft:collision_box": {
+				"origin": [
+					-4,
+					0,
+					-4
+				],
+				"size": [
+					8,
+					8,
+					8
+				]
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 7.5,
+				"item_specific_speeds": [{"item":{"tags": "q.any_tag('minecraft:is_pickaxe')"},"destroy_speed": 1.15}]
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 200
+			},
+			"minecraft:geometry": "geometry.poke_pfe.furnace_golem_trophy",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "poke_furnace_golem_trophy",
+					"render_method": "opaque",
+					"ambient_occlusion": false,
+					"face_dimming": true
+				}
+			},
+			"minecraft:light_emission": 3,
+			"minecraft:light_dampening": 0,
+			"tag:pfe": {},
+			"tag:stone": {},
+			"tag:minecraft:stone": {},
+			"tag:stone_pick_diggable":{},
+			"tag:minecraft:is_pickaxe_item_destructible":{},
+			"minecraft:map_color": "#e9e4a1",
+			"minecraft:custom_components": [
+				"poke:cc_block_interact"
+			]
+		}
+	}
+}

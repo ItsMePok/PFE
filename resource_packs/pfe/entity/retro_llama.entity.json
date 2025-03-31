@@ -29,7 +29,7 @@
 				"decor_green": "textures/entity/llama/decor/decor_green",
 				"decor_red": "textures/entity/llama/decor/decor_red",
 				"decor_black": "textures/entity/llama/decor/decor_black",
-				"decor_default": "textures/entity/passive/poke_retro_llama_decor"
+				"decor_default": "textures/poke/pfe/retro_llama_decor_entity"
 			},
 			"geometry": {
 				"default": "geometry.poke_pfe.retro_llama"
@@ -48,10 +48,11 @@
 					"baby": "controller.animation.llama.baby"
 				}
 			],
-			"render_controllers": ["controller.render.poke_pfe.llama"],
+			"render_controllers": [
+				"controller.render.poke_pfe.llama"
+			],
 			"spawn_egg": {
-				"base_color": "#e6cc88",
-				"overlay_color": "#9d00db"
+				"texture": "poke_retro_llama_spawn_egg"
 			}
 		}
 	}

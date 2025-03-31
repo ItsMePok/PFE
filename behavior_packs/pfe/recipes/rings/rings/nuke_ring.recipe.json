@@ -1,0 +1,55 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:nuke_ring"
+		},
+		"group": "pfe:rings",
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"U": {
+				"item": "poke:diamond_upgrade_core"
+			},
+			"P": {
+				"item": "poke:panic_button"
+			},
+			"R": {
+				"item": "poke:radium_block"
+			},
+			"K": {
+				"item": "poke:kapow_ring"
+			},
+			"B": {
+				"item": "poke:banished_star_x5"
+			}
+		},
+		"unlock": [
+			{
+				"item": "poke:diamond_upgrade_core"
+			},
+			{
+				"item": "poke:panic_button"
+			},
+			{
+				"item": "poke:radium_block"
+			},
+			{
+				"item": "poke:kapow_ring"
+			},
+			{
+				"item": "poke:banished_star"
+			}
+		],
+		"pattern": [
+			"UPU",
+			"RKR",
+			"BRB"
+		],
+		"result": {
+			"count": 1,
+			"item": "poke:nuke_ring"
+		}
+	}
+}

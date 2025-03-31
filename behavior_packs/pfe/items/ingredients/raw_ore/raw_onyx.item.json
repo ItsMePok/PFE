@@ -1,0 +1,14 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:raw_onyx",
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"components": {
+			"minecraft:icon":"poke_raw_onyx"
+		}
+	}
+}

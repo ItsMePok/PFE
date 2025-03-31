@@ -1,0 +1,14 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:rain_gem",
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"components": {
+			"minecraft:icon":"poke_rain_gem"
+		}
+	}
+}

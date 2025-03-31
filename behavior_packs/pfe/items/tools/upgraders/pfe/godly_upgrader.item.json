@@ -1,0 +1,31 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:godly_upgrader",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:icon":"poke_godly_upgrader",
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:durability": {
+				"max_durability": 300,
+				"damage_chance": {
+					"max": 100,
+					"min": 60
+				}
+			},
+			"minecraft:custom_components": [
+				"poke-pfe:upgrader"
+			],
+			"minecraft:tags": {
+				"tags": [
+					"poke-pfe:UpgraderInfo:{\"canUpgrade\":[\"poke:godly_ore\",\"poke:deepslate_godly_ore\",\"poke:end_godly_ore\"]}:poke-pfe:UpgraderInfoEnd"
+				]
+			}
+		}
+	}
+}

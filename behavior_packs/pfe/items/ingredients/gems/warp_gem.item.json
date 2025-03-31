@@ -1,0 +1,15 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:warp_gem",
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"components": {
+			"minecraft:hover_text_color":"green",
+			"minecraft:icon":"poke_warp_gem"
+		}
+	}
+}

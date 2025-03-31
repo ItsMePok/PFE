@@ -1,0 +1,20 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:capacity_core",
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"components": {
+			"minecraft:rarity": "common",
+			"minecraft:tags": {
+				"tags": [
+					"poke:upgrade_core"
+				]
+			},
+			"minecraft:icon": "poke_capacity_core"
+		}
+	}
+}

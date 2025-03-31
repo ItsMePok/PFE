@@ -1,0 +1,52 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "poke:dummy_block",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"runtime_identifier": "minecraft:snowball"
+		},
+		"components":{
+			"minecraft:transient":{},
+			"minecraft:collision_box": {
+				"height": 1,
+				"width": 1
+			},
+			"minecraft:timer": {
+				"time": 30,
+				"looping": true,
+				"time_down_event": {
+					"event": "poke:despawn",
+					"target": "self"
+				}
+			},
+			"minecraft:physics": {
+				"has_collision": true,
+				"has_gravity": false
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:projectile":{
+				
+			}
+		},
+		"events": {
+			"poke:despawn":{
+				"add": {
+					"component_groups": ["poke:despawn"]
+				}
+			}
+		},
+		"component_groups": {
+			"poke:despawn":{
+				"minecraft:instant_despawn": {
+					"remove_child_entities": true
+				}
+			}
+		}
+	}
+}

@@ -50,11 +50,11 @@
 			"loop": true,
 			"bones": {
 				"backLegL": {
-					"rotation": [-45, 0, 0],
+					"rotation": [-44.97272, -1.76749, -1.76833],
 					"position": [0, 0, 1]
 				},
 				"backLegR": {
-					"rotation": [-45, 0, 0],
+					"rotation": [-44.97272, 1.76749, 1.76833],
 					"position": [0, 0, 1]
 				},
 				"body": {

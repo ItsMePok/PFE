@@ -1,0 +1,35 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:decorated_pot",
+      "textures": {
+        "pfe-tree_pottery_sherd": "textures/poke/pfe/tree_pottery_block",
+        "pfe-present_pottery_sherd": "textures/poke/pfe/present_pottery_block",
+        "pfe-snowflake_pottery_sherd": "textures/poke/pfe/snowflake_pottery_block",
+        "pfe-knightling_pottery_sherd": "textures/poke/pfe/knightling_pottery_block",
+        "pfe-star_pottery_sherd": "textures/poke/pfe/star_pottery_block",
+        "pfe-cassette_pottery_sherd": "textures/poke/pfe/cassette_pottery_block",
+        "pfe-empty_pottery_sherd": "textures/poke/pfe/empty_pottery_block",
+        "pfe-crowned_pottery_sherd": "textures/poke/pfe/crowned_pottery_block",
+        "pfe-storm_pottery_sherd": "textures/poke/pfe/storm_pottery_block",
+        "pfe-fish_pottery_sherd": "textures/poke/pfe/fish_pottery_block",
+        "pfe-poke_pottery_sherd": "textures/poke/pfe/poke_pottery_block",
+        "pfe-modbay_pottery_sherd": "textures/poke/pfe/modbay_pottery_block",
+        "pfe-mcpedl_pottery_sherd": "textures/poke/pfe/mcpedl_pottery_block",
+        "pfe-curseforge_pottery_sherd": "textures/poke/pfe/curseforge_pottery_block",
+        "pfe-github_pottery_sherd": "textures/poke/pfe/github_pottery_block",
+        "pfe-ingot_pottery_sherd": "textures/poke/pfe/ingot_pottery_block",
+        "pfe-craft_pottery_sherd": "textures/poke/pfe/craft_pottery_block",
+        "pfe-snake_pottery_sherd": "textures/poke/pfe/snake_pottery_block",
+        "pfe-enderman_pottery_sherd": "textures/poke/pfe/enderman_pottery_block",
+        "pfe-listener_pottery_sherd": "textures/poke/pfe/listener_pottery_block",
+        "pfe-mushroom_buddy_pottery_sherd": "textures/poke/pfe/mushroom_buddy_pottery_block",
+        "pfe-wizard_pottery_sherd": "textures/poke/pfe/wizard_pottery_block",
+        "pfe-bee_pottery_sherd": "textures/poke/pfe/bee_pottery_block",
+        "pfe-spell_pottery_sherd": "textures/poke/pfe/spell_pottery_block",
+        "pfe-spook_pottery_sherd": "textures/poke/pfe/spook_pottery_block"
+      }
+    }
+  }
+}

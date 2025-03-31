@@ -1,42 +1,43 @@
 {
-	"format_version":"1.10.0",
-	"minecraft:client_entity":{
-		"description":{
-			"identifier":"poke:rat",
-			"materials":{
-				"default":"entity_alphatest"
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "poke:rat",
+			"materials": {
+				"default": "entity_alphatest"
 			},
-			"textures":{
-				"black":"textures/entity/passive/rat/poke_black",
-				"brown":"textures/entity/passive/rat/poke_brown",
-				"remy":"textures/entity/passive/rat/poke_remy",
-				"white":"textures/entity/passive/rat/poke_white"
+			"textures": {
+				"black": "textures/poke/pfe/rat_black_entity",
+				"brown": "textures/poke/pfe/rat_brown_entity",
+				"remy": "textures/poke/pfe/rat_remy_entity",
+				"white": "textures/poke/pfe/rat_white_entity"
 			},
-			"geometry":{
-				"default":"geometry.poke_pfe.rat"
+			"geometry": {
+				"default": "geometry.poke_pfe.rat"
 			},
-			"animations":{
-				"walk":"animation.poke_pfe.rat.walk",
-				"idle":"animation.poke_pfe.rat.idle",
-				"dance":"animation.poke_pfe.rat.dance",
-				"sit":"animation.poke_pfe.rat.sit",
-				"movement":"controller.animation.poke_pfe.rat.movement"
+			"animations": {
+				"walk": "animation.poke_pfe.rat.walk",
+				"idle": "animation.poke_pfe.rat.idle",
+				"dance": "animation.poke_pfe.rat.dance",
+				"sit": "animation.poke_pfe.rat.sit",
+				"movement": "controller.animation.poke_pfe.rat.movement"
 			},
-			"scripts":{
-				"animate":["movement"]
+			"scripts": {
+				"animate": [
+					"movement"
+				]
 			},
-			"render_controllers":[
+			"render_controllers": [
 				"controller.render.poke_pfe_rat"
 			],
-			"spawn_egg":{
-				"base_color":"#523222",
-				"overlay_color":"#e959d8"
+			"spawn_egg": {
+				"texture": "poke_rat_spawn_egg"
 			},
-			"enable_attachables":true,
-			"hide_armor":false,
-			"held_item_ignores_lighting":false,
-			"particle_effects":{
-				"rat_dance":"poke:rat_dance"
+			"enable_attachables": true,
+			"hide_armor": false,
+			"held_item_ignores_lighting": false,
+			"particle_effects": {
+				"rat_dance": "poke:rat_dance"
 			}
 		}
 	}

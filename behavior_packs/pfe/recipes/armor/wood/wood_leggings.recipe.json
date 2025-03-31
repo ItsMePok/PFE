@@ -1,0 +1,29 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:wood_leggings"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"XXX",
+			"X X",
+			"X X"
+		],
+		"unlock": [
+			{
+				"tag": "minecraft:logs"
+			}
+		],
+		"key": {
+			"X": {
+				"tag": "minecraft:logs"
+			}
+		},
+		"result": {
+			"item": "poke:wood_leggings"
+		}
+	}
+}

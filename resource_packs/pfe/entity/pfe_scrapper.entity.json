@@ -1,36 +1,39 @@
 {
-	"format_version":"1.8.0",
-	"minecraft:client_entity":{
-		"description":{
-			"identifier":"poke:scrapper",
-			"materials":{
-				"default":"villager"
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "poke:scrapper",
+			"materials": {
+				"default": "villager"
 			},
-			"textures":{
-				"default":"textures/entity/traders/pfe_scrapper"
+			"textures": {
+				"default": "textures/poke/pfe/scrapper_entity"
 			},
-			"geometry":{
-				"default":"geometry.poke_pfe.scrapper"
+			"geometry": {
+				"default": "geometry.poke_pfe.scrapper",
+				"no_cosmetic": "geometry.poke_pfe.scrapper_noCosmetic"
 			},
-			"animations":{
-				"general":"animation.poke_pfe.shopkeeper.general",
-				"look_at_target":"animation.common.look_at_target",
-				"move":"animation.poke_pfe.shopkeeper.move"
+			"animations": {
+				"general": "animation.poke_pfe.shopkeeper.general",
+				"look_at_target": "animation.common.look_at_target",
+				"move": "animation.poke_pfe.shopkeeper.move"
 			},
-			"animation_controllers":[
+			"animation_controllers": [
 				{
-					"general":"controller.animation.poke_pfe.shopkeeper.general"
+					"general": "controller.animation.poke_pfe.shopkeeper.general"
 				},
 				{
-					"move":"controller.animation.poke_pfe.shopkeeper.move"
+					"move": "controller.animation.poke_pfe.shopkeeper.move"
 				}
 			],
-			"render_controllers":["controller.render.poke_pfe.default"],
-			"spawn_egg":{
-				"texture":"poke_spawn_scrapper"
+			"render_controllers": [
+				"controller.render.poke_pfe.trader"
+			],
+			"spawn_egg": {
+				"texture": "poke_scrapper_spawn_egg"
 			},
-			"enable_attachables":true,
-			"hide_armor":false
+			"enable_attachables": true,
+			"hide_armor": false
 		}
 	}
 }

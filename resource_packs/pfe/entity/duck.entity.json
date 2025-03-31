@@ -1,47 +1,49 @@
 {
-	"format_version":"1.10.0",
-	"minecraft:client_entity":{
-		"description":{
-			"identifier":"poke:duck",
-			"min_engine_version":"1.12.0",
-			"materials":{
-				"default":"entity_alphatest",
-				"legs":"chicken_legs"
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "poke:duck",
+			"materials": {
+				"default": "entity_alphatest",
+				"legs": "entity_alphatest" //2
 			},
-			"textures":{
-				"green":"textures/entity/passive/duck/poke_green",
-				"tan":"textures/entity/passive/duck/poke_tan",
-				"white":"textures/entity/passive/duck/poke_white",
-				"black":"textures/entity/passive/duck/poke_black"
+			"textures": {
+				"green": "textures/poke/pfe/duck_green_entity",
+				"tan": "textures/poke/pfe/duck_tan_entity",
+				"white": "textures/poke/pfe/duck_white_entity",
+				"black": "textures/poke/pfe/duck_black_entity"
 			},
-			"geometry":{
-				"default":"geometry.poke_pfe.duck"
+			"geometry": {
+				"default": "geometry.poke_pfe.duck"
 			},
-			"animations":{
-				"move":"animation.poke_pfe.duck.move",
-				"general":"animation.poke_pfe.duck.general",
-				"look_at_target":"animation.common.look_at_target",
-				"baby_transform":"animation.poke_pfe.duck.baby_transform"
+			"animations": {
+				"move": "animation.poke_pfe.duck.move",
+				"general": "animation.poke_pfe.duck.general",
+				"look_at_target": "animation.common.look_at_target",
+				"baby_transform": "animation.poke_pfe.duck.baby_transform"
 			},
-			"scripts":{
-				"animate":[
-					"general",
+			"scripts": {
+				"animate": [
 					{
-						"move":"query.modified_move_speed"
+						"general": "!q.is_in_water"
+					},
+					{
+						"move": "query.modified_move_speed"
 					},
 					"look_at_target",
 					{
-						"baby_transform":"query.is_baby"
+						"baby_transform": "query.is_baby"
 					}
 				],
-				"pre_animation":[
+				"pre_animation": [
 					"variable.wing_flap=((math.sin(query.wing_flap_position*60.3)+1)*query.wing_flap_speed*20);"
 				]
 			},
-			"render_controllers":["controller.render.poke_pfe_duck"],
-			"spawn_egg":{
-				"base_color":"#244a0d",
-				"overlay_color":"#e6ae5f"
+			"render_controllers": [
+				"controller.render.poke_pfe_duck"
+			],
+			"spawn_egg": {
+				"texture": "poke_duck_spawn_egg"
 			}
 		}
 	}

@@ -3,13 +3,15 @@
 	"minecraft:attachable": {
 		"description": {
 			"identifier": "poke:mr_duck",
-			"render_controllers": ["controller.render.armor"],
+			"render_controllers": [
+				"controller.render.armor"
+			],
 			"materials": {
 				"default": "entity_alphatest",
 				"enchanted": "entity_alphatest_glint"
 			},
 			"textures": {
-				"default": "textures/entity/attachable/poke_mr_duck",
+				"default": "textures/poke/pfe/mr_duck_attachable",
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {

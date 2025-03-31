@@ -1,0 +1,33 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:shade_ring"
+		},
+		"group": "pfe:rings",
+		"tags": [
+			"crafting_table",
+			"ring_crafter"
+		],
+		"pattern": [
+			"O  ",
+			"X  "
+		],
+		"unlock": [
+			{
+				"item": "poke:shade_gem"
+			}
+		],
+		"key": {
+			"X": {
+				"item": "poke:ender_holder"
+			},
+			"O": {
+				"item": "poke:shade_gem"
+			}
+		},
+		"result": {
+			"item": "poke:shade_ring"
+		}
+	}
+}

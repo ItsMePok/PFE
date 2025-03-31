@@ -1,36 +1,65 @@
 {
 	"header": {
-		"name": "v1.2.5 §uPFE §aRP§r",
+		"name": "v1.2.80 §uPFE §aRP§r",
 		"description": "pack.description",
 		"pack_scope": "any",
-		"uuid": "10c91e92-cb3c-4130-8901-0236f65dfa2f",
-		"version": [1, 2, 50],
-		"min_engine_version": [1, 21, 50]
+		"uuid": "88bd8626-d5d6-4487-afd9-c1a5761b4c24",
+		"version": [
+			1,
+			2,
+			80
+		],
+		"min_engine_version": [
+			1,
+			21,
+			60
+		]
 	},
 	"modules": [
 		{
 			"description": "PFE",
 			"type": "resources",
 			"uuid": "38114885-0e5e-4240-a589-15fadf9a5e93",
-			"version": [1, 0, 0]
+			"version": [
+				1,
+				0,
+				0
+			]
 		}
 	],
 	"dependencies": [
 		{ //BP Manifest
-			"uuid": "976a6976-ff0f-4aba-a8a7-a663db51f75b",
-			"version": [1, 2, 50]
+			"uuid": "bbc63f5f-c139-4403-a628-63b573ae0656",
+			"version": [
+				1,
+				2,
+				80
+			]
 		}
 	],
 	"format_version": 2,
 	"metadata": {
 		"url": "https://github.com/ItsMePok/PFE",
-		"license": "MIT",// RP/LICENSE
+		"license": "MIT", // RP/LICENSE
 		"product_type": "addon",
-		"authors": ["ItsMePok"],
+		"authors": [
+			"ItsMePok"
+		],
 		"generated_with": {
-			"blockbench_block_wizard": ["1.2.1"],
-			"blockbench_item_wizard": ["1.0.1", "1.0.2", "1.0.4"],
-			"blockbench_entity_wizard": ["1.3.1", "1.3.2", "1.4.0", "1.5.1"]
+			"blockbench_block_wizard": [
+				"1.2.1"
+			],
+			"blockbench_item_wizard": [
+				"1.0.1",
+				"1.0.2",
+				"1.0.4"
+			],
+			"blockbench_entity_wizard": [
+				"1.3.1",
+				"1.3.2",
+				"1.4.0",
+				"1.5.1"
+			]
 		}
 	}
 }

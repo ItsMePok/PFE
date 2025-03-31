@@ -1,0 +1,21 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "poke:hellish_ore.feature"
+		},
+		"count": 5,
+		"replace_rules": [
+			{
+				"places_block": "poke:hellite_ore",//Deepslate Hellish Ore
+				"may_replace": [
+					"minecraft:deepslate"
+				]
+			},
+			{
+				"places_block": "poke:hellish_ore",
+				"may_replace": ["stone"]
+			}
+		]
+	}
+}

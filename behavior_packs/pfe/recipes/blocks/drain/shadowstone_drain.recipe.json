@@ -1,0 +1,31 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:shadowstone_drain"
+    },
+    "unlock": [
+      {
+        "item": "poke:cobbled_shadowstone"
+      }
+    ],
+    "key": {
+      "X": {
+        "item": "poke:cobbled_shadowstone"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:shadowstone_drain",
+      "count": 4
+    },
+    "pattern": [
+      "X X",
+      " X ",
+      "X X"
+    ],
+    "group": "poke:drain",
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

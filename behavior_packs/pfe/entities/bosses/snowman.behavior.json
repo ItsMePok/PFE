@@ -1,6 +1,6 @@
 { 
 	//this entity model, animations & textures was made by O2God for PFE
-	"format_version": "1.21.50",
+	"format_version": "1.21.60",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:snowman",
@@ -84,7 +84,7 @@
 			"height": 1.8
 			},
 			"minecraft:loot": {
-			"table": "loot_tables/poke/pfe/snowman.json"
+			"table": "loot_tables/poke/pfe/snowman.loot.json"
 			},
 			"minecraft:health": {
 			"value": 500,

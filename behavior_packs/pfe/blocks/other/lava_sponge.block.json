@@ -1,0 +1,32 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:block": {
+		"description": {
+			"identifier": "poke:lava_sponge",
+			"menu_category": {
+				"category": "nature"
+			}
+		},
+		"components": {
+			"minecraft:redstone_conductivity": {
+				"redstone_conductor": true,
+				"allows_wire_to_step_down": true
+			},
+			"minecraft:tick": {
+				"interval_range": [
+					10,
+					10
+				]
+			},
+			"minecraft:light_emission": 8,
+			"tag:pfe": {},
+			"tag:hoe": {},
+			"tag:stone_pick_diggable":{},
+			"tag:minecraft:is_pickaxe_item_destructible":{},
+			"minecraft:map_color": "#e25f22",
+			"minecraft:custom_components": [
+				"poke:cc_lava_sponge"
+			]
+		}
+	}
+}

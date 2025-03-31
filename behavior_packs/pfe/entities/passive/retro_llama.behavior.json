@@ -3,29 +3,96 @@
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:retro_llama",
-			"runtime_identifier": "minecraft:llama",
 			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false
 		},
 		"component_groups": {
-			"poke:decor_white": {"minecraft:mark_variant": {"value": 1}},
-			"poke:decor_orange": {"minecraft:mark_variant": {"value": 2}},
-			"poke:decor_magenta": {"minecraft:mark_variant": {"value": 3}},
-			"poke:decor_light_blue": {"minecraft:mark_variant": {"value": 4}},
-			"poke:decor_yellow": {"minecraft:mark_variant": {"value": 5}},
-			"poke:decor_lime": {"minecraft:mark_variant": {"value": 6}},
-			"poke:decor_pink": {"minecraft:mark_variant": {"value": 7}},
-			"poke:decor_gray": {"minecraft:mark_variant": {"value": 8}},
-			"poke:decor_silver": {"minecraft:mark_variant": {"value": 9}},
-			"poke:decor_cyan": {"minecraft:mark_variant": {"value": 10}},
-			"poke:decor_purple": {"minecraft:mark_variant": {"value": 11}},
-			"poke:decor_blue": {"minecraft:mark_variant": {"value": 12}},
-			"poke:decor_brown": {"minecraft:mark_variant": {"value": 13}},
-			"poke:decor_green": {"minecraft:mark_variant": {"value": 14}},
-			"poke:decor_red": {"minecraft:mark_variant": {"value": 15}},
-			"poke:decor_black": {"minecraft:mark_variant": {"value": 16}},
-			"poke:decor_default": {"minecraft:mark_variant": {"value": 17}},
+			"poke:decor_white": {
+				"minecraft:mark_variant": {
+					"value": 1
+				}
+			},
+			"poke:decor_orange": {
+				"minecraft:mark_variant": {
+					"value": 2
+				}
+			},
+			"poke:decor_magenta": {
+				"minecraft:mark_variant": {
+					"value": 3
+				}
+			},
+			"poke:decor_light_blue": {
+				"minecraft:mark_variant": {
+					"value": 4
+				}
+			},
+			"poke:decor_yellow": {
+				"minecraft:mark_variant": {
+					"value": 5
+				}
+			},
+			"poke:decor_lime": {
+				"minecraft:mark_variant": {
+					"value": 6
+				}
+			},
+			"poke:decor_pink": {
+				"minecraft:mark_variant": {
+					"value": 7
+				}
+			},
+			"poke:decor_gray": {
+				"minecraft:mark_variant": {
+					"value": 8
+				}
+			},
+			"poke:decor_silver": {
+				"minecraft:mark_variant": {
+					"value": 9
+				}
+			},
+			"poke:decor_cyan": {
+				"minecraft:mark_variant": {
+					"value": 10
+				}
+			},
+			"poke:decor_purple": {
+				"minecraft:mark_variant": {
+					"value": 11
+				}
+			},
+			"poke:decor_blue": {
+				"minecraft:mark_variant": {
+					"value": 12
+				}
+			},
+			"poke:decor_brown": {
+				"minecraft:mark_variant": {
+					"value": 13
+				}
+			},
+			"poke:decor_green": {
+				"minecraft:mark_variant": {
+					"value": 14
+				}
+			},
+			"poke:decor_red": {
+				"minecraft:mark_variant": {
+					"value": 15
+				}
+			},
+			"poke:decor_black": {
+				"minecraft:mark_variant": {
+					"value": 16
+				}
+			},
+			"poke:decor_default": {
+				"minecraft:mark_variant": {
+					"value": 17
+				}
+			},
 			"minecraft:llama_baby": {
 				"minecraft:is_baby": {},
 				"minecraft:scale": {
@@ -72,7 +139,7 @@
 				"minecraft:breedable": {
 					"require_tame": true,
 					"inherit_tamed": false,
-					"breeds_with":[
+					"breeds_with": [
 						{
 							"mate_type": "minecraft:llama",
 							"baby_type": "minecraft:llama",
@@ -97,8 +164,10 @@
 								"target": "baby"
 							}
 						}
-					], 
-					"breed_items": ["hay_block"]
+					],
+					"breed_items": [
+						"hay_block"
+					]
 				}
 			},
 			"minecraft:llama_wandering_trader": {
@@ -184,10 +253,16 @@
 			"minecraft:llama_wild": {
 				"minecraft:rideable": {
 					"seat_count": 1,
-					"family_types": ["player"],
+					"family_types": [
+						"player"
+					],
 					"interact_text": "action.interact.mount",
 					"seats": {
-						"position": [0, 1.25, -0.3]
+						"position": [
+							0,
+							1.25,
+							-0.3
+						]
 					}
 				},
 				"minecraft:tamemount": {
@@ -233,10 +308,16 @@
 				"minecraft:rideable": {
 					"seat_count": 1,
 					"crouching_skip_interact": true,
-					"family_types": ["player"],
+					"family_types": [
+						"player"
+					],
 					"interact_text": "action.interact.ride.horse",
 					"seats": {
-						"position": [0, 1.1, -0.2]
+						"position": [
+							0,
+							1.1,
+							-0.2
+						]
 					}
 				},
 				"minecraft:inventory": {
@@ -329,7 +410,7 @@
 				"minecraft:damage_sensor": {
 					"triggers": {
 						"cause": "all",
-						"deals_damage": true
+						"deals_damage": "yes"
 					}
 				}
 			}
@@ -344,9 +425,9 @@
 						"slot": 1,
 						"item": "carpet",
 						"on_equip": {
-							"event": "poke:carpet_check"
-							/*"filters": {
-								"any_of":[
+							//"event": "poke:carpet_check",
+							"filters": {
+								"any_of": [
 									{
 										"test": "has_equipment",
 										"value": "white_carpet",
@@ -471,30 +552,34 @@
 										"test": "has_equipment",
 										"value": "black_carpet",
 										"subject": "self",
-										"domain": "inventory",
+										"domain": "armor",
 										"event": "poke:decor_black",
 										"target": "self"
 									}
 								]
-							}*/
+							}
 						},
 						"on_unequip": {
 							"event": "poke:unequip_carpet",
 							"target": "self"
 						},
-						"accepted_items": ["carpet"]
+						"accepted_items": [
+							"carpet"
+						]
 					}
 				]
 			},
 			"minecraft:type_family": {
-				"family": ["llama", "mob"]
+				"family": [
+					"llama",
+					"mob"
+				]
 			},
 			"minecraft:breathable": {
 				"total_supply": 15,
 				"suffocate_time": 0
 			},
 			"minecraft:nameable": {},
-			
 			"minecraft:health": {
 				"value": {
 					"range_min": 15,
@@ -602,7 +687,7 @@
 			"minecraft:damage_sensor": {
 				"triggers": {
 					"cause": "all",
-					"deals_damage": true,
+					"deals_damage": "yes",
 					"on_damage": {
 						"filters": {
 							"test": "in_caravan",
@@ -683,23 +768,199 @@
 			}
 		},
 		"events": {
-			"poke:decor_white": {"add": {"component_groups": ["poke:decor_white"]},"remove": {"component_groups": ["poke:decor_default"]}},
-			"poke:decor_orange": {"add": {"component_groups": ["poke:decor_orange"]},"remove": {"component_groups": ["poke:decor_default"]}},
-			"poke:decor_magenta": {"add": {"component_groups": ["poke:decor_magenta"]},"remove": {"component_groups": ["poke:decor_default"]}},
-			"poke:decor_light_blue": {"add": {"component_groups": ["poke:decor_light_blue"]},"remove": {"component_groups": ["poke:decor_default"]}},
-			"poke:decor_yellow": {"add": {"component_groups": ["poke:decor_yellow"]},"remove": {"component_groups": ["poke:decor_default"]}},
-			"poke:decor_lime": {"add": {"component_groups": ["poke:decor_lime"]},"remove": {"component_groups": ["poke:decor_default"]}},
-			"poke:decor_pink": {"add": {"component_groups": ["poke:decor_pink"]},"remove": {"component_groups": ["poke:decor_default"]}},
-			"poke:decor_gray": {"add": {"component_groups": ["poke:decor_gray"]},"remove": {"component_groups": ["poke:decor_default"]}},
-			"poke:decor_silver": {"add": {"component_groups": ["poke:decor_silver"]},"remove": {"component_groups": ["poke:decor_default"]}},
-			"poke:decor_cyan": {"add": {"component_groups": ["poke:decor_cyan"]},"remove": {"component_groups": ["poke:decor_default"]}},
-			"poke:decor_purple": {"add": {"component_groups": ["poke:decor_purple"]},"remove": {"component_groups": ["poke:decor_default"]}},
-			"poke:decor_blue": {"add": {"component_groups": ["poke:decor_blue"]},"remove": {"component_groups": ["poke:decor_default"]}},
-			"poke:decor_brown": {"add": {"component_groups": ["poke:decor_brown"]},"remove": {"component_groups": ["poke:decor_default"]}},
-			"poke:decor_green": {"add": {"component_groups": ["poke:decor_green"]},"remove": {"component_groups": ["poke:decor_default"]}},
-			"poke:decor_red": {"add": {"component_groups": ["poke:decor_red"]},"remove": {"component_groups": ["poke:decor_default"]}},
-			"poke:decor_black": {"add": {"component_groups": ["poke:decor_black"]},"remove": {"component_groups": ["poke:decor_default"]}},
-			"poke:unequip_carpet":{
+			"poke:decor_white": {
+				"add": {
+					"component_groups": [
+						"poke:decor_white"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"poke:decor_default"
+					]
+				}
+			},
+			"poke:decor_orange": {
+				"add": {
+					"component_groups": [
+						"poke:decor_orange"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"poke:decor_default"
+					]
+				}
+			},
+			"poke:decor_magenta": {
+				"add": {
+					"component_groups": [
+						"poke:decor_magenta"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"poke:decor_default"
+					]
+				}
+			},
+			"poke:decor_light_blue": {
+				"add": {
+					"component_groups": [
+						"poke:decor_light_blue"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"poke:decor_default"
+					]
+				}
+			},
+			"poke:decor_yellow": {
+				"add": {
+					"component_groups": [
+						"poke:decor_yellow"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"poke:decor_default"
+					]
+				}
+			},
+			"poke:decor_lime": {
+				"add": {
+					"component_groups": [
+						"poke:decor_lime"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"poke:decor_default"
+					]
+				}
+			},
+			"poke:decor_pink": {
+				"add": {
+					"component_groups": [
+						"poke:decor_pink"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"poke:decor_default"
+					]
+				}
+			},
+			"poke:decor_gray": {
+				"add": {
+					"component_groups": [
+						"poke:decor_gray"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"poke:decor_default"
+					]
+				}
+			},
+			"poke:decor_silver": {
+				"add": {
+					"component_groups": [
+						"poke:decor_silver"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"poke:decor_default"
+					]
+				}
+			},
+			"poke:decor_cyan": {
+				"add": {
+					"component_groups": [
+						"poke:decor_cyan"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"poke:decor_default"
+					]
+				}
+			},
+			"poke:decor_purple": {
+				"add": {
+					"component_groups": [
+						"poke:decor_purple"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"poke:decor_default"
+					]
+				}
+			},
+			"poke:decor_blue": {
+				"add": {
+					"component_groups": [
+						"poke:decor_blue"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"poke:decor_default"
+					]
+				}
+			},
+			"poke:decor_brown": {
+				"add": {
+					"component_groups": [
+						"poke:decor_brown"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"poke:decor_default"
+					]
+				}
+			},
+			"poke:decor_green": {
+				"add": {
+					"component_groups": [
+						"poke:decor_green"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"poke:decor_default"
+					]
+				}
+			},
+			"poke:decor_red": {
+				"add": {
+					"component_groups": [
+						"poke:decor_red"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"poke:decor_default"
+					]
+				}
+			},
+			"poke:decor_black": {
+				"add": {
+					"component_groups": [
+						"poke:decor_black"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"poke:decor_default"
+					]
+				}
+			},
+			"poke:unequip_carpet": {
 				"add": {
 					"component_groups": [
 						"poke:decor_default"
@@ -744,14 +1005,20 @@
 			},
 			"minecraft:entity_born": {
 				"add": {
-					"component_groups": ["minecraft:llama_baby"]
+					"component_groups": [
+						"minecraft:llama_baby"
+					]
 				}
 			},
 			"minecraft:from_wandering_trader": {
 				"sequence": [
 					{
 						"add": {
-							"component_groups": ["minecraft:llama_adult", "minecraft:llama_wandering_trader","poke:decor_default"]
+							"component_groups": [
+								"minecraft:llama_adult",
+								"minecraft:llama_wandering_trader",
+								"poke:decor_default"
+							]
 						}
 					},
 					{
@@ -761,56 +1028,84 @@
 			},
 			"minecraft:ageable_grow_up": {
 				"remove": {
-					"component_groups": ["minecraft:llama_baby"]
+					"component_groups": [
+						"minecraft:llama_baby"
+					]
 				},
 				"add": {
-					"component_groups": ["minecraft:llama_adult", "minecraft:llama_wild"]
+					"component_groups": [
+						"minecraft:llama_adult",
+						"minecraft:llama_wild"
+					]
 				}
 			},
 			"minecraft:on_tame": {
 				"remove": {
-					"component_groups": ["minecraft:llama_wild"]
+					"component_groups": [
+						"minecraft:llama_wild"
+					]
 				},
 				"add": {
-					"component_groups": ["minecraft:llama_tamed", "minecraft:llama_unchested"]
+					"component_groups": [
+						"minecraft:llama_tamed",
+						"minecraft:llama_unchested"
+					]
 				}
 			},
 			"minecraft:join_caravan": {
 				"add": {
-					"component_groups": ["minecraft:in_caravan"]
+					"component_groups": [
+						"minecraft:in_caravan"
+					]
 				}
 			},
 			"minecraft:leave_caravan": {
 				"remove": {
-					"component_groups": ["minecraft:in_caravan"]
+					"component_groups": [
+						"minecraft:in_caravan"
+					]
 				}
 			},
 			"minecraft:mad_at_wolf": {
 				"add": {
-					"component_groups": ["minecraft:llama_angry_wolf"]
+					"component_groups": [
+						"minecraft:llama_angry_wolf"
+					]
 				}
 			},
 			"minecraft:defend_wandering_trader": {
 				"add": {
-					"component_groups": ["minecraft:llama_defend_trader"]
+					"component_groups": [
+						"minecraft:llama_defend_trader"
+					]
 				}
 			},
 			"minecraft:become_angry": {
 				"add": {
-					"component_groups": ["minecraft:llama_angry"]
+					"component_groups": [
+						"minecraft:llama_angry"
+					]
 				}
 			},
 			"minecraft:on_calm": {
 				"remove": {
-					"component_groups": ["minecraft:llama_angry", "minecraft:llama_angry_wolf", "minecraft:llama_defend_trader"]
+					"component_groups": [
+						"minecraft:llama_angry",
+						"minecraft:llama_angry_wolf",
+						"minecraft:llama_defend_trader"
+					]
 				}
 			},
 			"minecraft:on_chest": {
 				"remove": {
-					"component_groups": ["minecraft:llama_unchested"]
+					"component_groups": [
+						"minecraft:llama_unchested"
+					]
 				},
 				"add": {
-					"component_groups": ["minecraft:llama_chested"]
+					"component_groups": [
+						"minecraft:llama_chested"
+					]
 				}
 			},
 			"minecraft:add_attributes": {
@@ -820,31 +1115,41 @@
 							{
 								"weight": 32,
 								"add": {
-									"component_groups": ["minecraft:strength_1"]
+									"component_groups": [
+										"minecraft:strength_1"
+									]
 								}
 							},
 							{
 								"weight": 32,
 								"add": {
-									"component_groups": ["minecraft:strength_2"]
+									"component_groups": [
+										"minecraft:strength_2"
+									]
 								}
 							},
 							{
 								"weight": 32,
 								"add": {
-									"component_groups": ["minecraft:strength_3"]
+									"component_groups": [
+										"minecraft:strength_3"
+									]
 								}
 							},
 							{
 								"weight": 2,
 								"add": {
-									"component_groups": ["minecraft:strength_4"]
+									"component_groups": [
+										"minecraft:strength_4"
+									]
 								}
 							},
 							{
 								"weight": 2,
 								"add": {
-									"component_groups": ["minecraft:strength_5"]
+									"component_groups": [
+										"minecraft:strength_5"
+									]
 								}
 							}
 						]
@@ -854,25 +1159,33 @@
 							{
 								"weight": 25,
 								"add": {
-									"component_groups": ["minecraft:llama_creamy"]
+									"component_groups": [
+										"minecraft:llama_creamy"
+									]
 								}
 							},
 							{
 								"weight": 25,
 								"add": {
-									"component_groups": ["minecraft:llama_white"]
+									"component_groups": [
+										"minecraft:llama_white"
+									]
 								}
 							},
 							{
 								"weight": 25,
 								"add": {
-									"component_groups": ["minecraft:llama_brown"]
+									"component_groups": [
+										"minecraft:llama_brown"
+									]
 								}
 							},
 							{
 								"weight": 25,
 								"add": {
-									"component_groups": ["minecraft:llama_gray"]
+									"component_groups": [
+										"minecraft:llama_gray"
+									]
 								}
 							}
 						]
@@ -881,13 +1194,20 @@
 			},
 			"minecraft:spawn_baby": {
 				"add": {
-					"component_groups": ["minecraft:llama_baby","poke:decor_default"]
+					"component_groups": [
+						"minecraft:llama_baby",
+						"poke:decor_default"
+					]
 				},
 				"trigger": "minecraft:add_attributes"
 			},
 			"minecraft:spawn_adult": {
 				"add": {
-					"component_groups": ["minecraft:llama_adult", "minecraft:llama_wild","poke:decor_default"]
+					"component_groups": [
+						"minecraft:llama_adult",
+						"minecraft:llama_wild",
+						"poke:decor_default"
+					]
 				},
 				"trigger": "minecraft:add_attributes"
 			}

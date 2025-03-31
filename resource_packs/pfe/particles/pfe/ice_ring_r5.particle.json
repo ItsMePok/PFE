@@ -5,7 +5,7 @@
 			"identifier": "poke:ice_ring_r5",
 			"basic_render_parameters": {
 				"material": "particles_alpha",
-				"texture": "textures/particles/pfe/particles"
+				"texture": "textures/poke/pfe/particles"
 			}
 		},
 		"components": {
@@ -35,15 +35,27 @@
 			"minecraft:particle_initial_speed": 5,
 			"minecraft:particle_motion_dynamic": {},
 			"minecraft:particle_appearance_billboard": {
-				"size": ["variable.size*(1-variable.particle_age)", "variable.size*(1-variable.particle_age)"],
+				"size": [
+					"variable.size*(1-variable.particle_age)",
+					"variable.size*(1-variable.particle_age)"
+				],
 				"facing_camera_mode": "rotate_xyz",
 				"uv": {
 					"texture_width": 128,
 					"texture_height": 128,
 					"flipbook": {
-						"base_UV": ["math.round(math.random(0,4)) * 8", 96],
-						"size_UV": [8, 8],
-						"step_UV": [8, 0],
+						"base_UV": [
+							"math.round(math.random(0,4)) * 8",
+							96
+						],
+						"size_UV": [
+							8,
+							8
+						],
+						"step_UV": [
+							8,
+							0
+						],
 						"frames_per_second": 4,
 						"max_frame": 4,
 						"stretch_to_lifetime": true

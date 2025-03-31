@@ -1,40 +1,39 @@
 {
-	"format_version":"1.8.0",
-	"minecraft:client_entity":{
-		"description":{
-			"identifier":"poke:grizzly_bear",
-			"materials":{
-				"default":"polar_bear"
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "poke:grizzly_bear",
+			"materials": {
+				"default": "polar_bear" //2
 			},
-			"textures":{
-				"default":"textures/entity/neutral/poke_grizzly_bear"
+			"textures": {
+				"default": "textures/poke/pfe/grizzly_bear_entity" //2
 			},
-			"geometry":{
-				"default":"geometry.poke_pfe.bear"
+			"geometry": {
+				"default": "geometry.poke_pfe.bear"
 			},
-			"animations":{
-				"walk":"animation.grizzly_bear.walk",
-				"move":"animation.grizzly_bear.move",
-				"look_at_target":"animation.common.look_at_target",
-				"baby_transform":"animation.grizzly_bear.baby_transform"
+			"animations": {
+				"walk": "animation.grizzly_bear.walk",
+				"move": "animation.grizzly_bear.move",
+				"look_at_target": "animation.common.look_at_target",
+				"baby_transform": "animation.grizzly_bear.baby_transform"
 			},
-			"scripts":{
-				"scale":"1.2"
+			"scripts": {
+				"scale": "1.2"
 			},
-			"animation_controllers":[
+			"animation_controllers": [
 				{
-					"move":"controller.animation.polarbear.move"
+					"move": "controller.animation.polarbear.move" //2
 				},
 				{
-					"baby":"controller.animation.polarbear.baby"
+					"baby": "controller.animation.polarbear.baby" //2
 				}
 			],
-			"render_controllers":[
-				"controller.render.polarbear"
+			"render_controllers": [
+				"controller.render.polarbear" //2
 			],
-			"spawn_egg":{
-				"base_color":"#594106",
-				"overlay_color":"#ffc300"
+			"spawn_egg": {
+				"texture": "poke_grizzly_bear_spawn_egg"
 			}
 		}
 	}

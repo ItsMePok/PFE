@@ -1,0 +1,31 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "poke:blaze_ring"
+		},
+		"group": "pfe:rings",
+		"ingredients": [
+			{
+				"item": "poke:gem_holder",
+				"count": 1
+			},
+			{
+				"item": "poke:blaze_gem",
+				"count": 1
+			}
+		],
+		"unlock": [
+			{
+				"item": "poke:blaze_gem"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"result": {
+			"item": "poke:ring_2",
+			"count": 1
+		}
+	}
+}

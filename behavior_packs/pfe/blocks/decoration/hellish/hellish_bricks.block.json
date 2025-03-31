@@ -1,0 +1,32 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:block": {
+		"description": {
+			"identifier": "poke:hellish_bricks",
+			"menu_category": {
+				"category": "construction"
+			}
+		},
+		"components": {
+			"minecraft:redstone_conductivity": {
+				"redstone_conductor": true,
+				"allows_wire_to_step_down": true
+			},
+			"minecraft:collision_box": true,
+			"minecraft:selection_box": true,
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 7.5,
+				"item_specific_speeds": [{"item":{"tags": "q.any_tag('minecraft:is_pickaxe')"},"destroy_speed": 1.15}]
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 30
+			},
+			"tag:pfe": {},
+			"tag:metal": {},
+			"tag:minecraft:metal": {},
+			"tag:stone_pick_diggable":{},
+			"tag:minecraft:is_pickaxe_item_destructible":{},
+			"minecraft:map_color": "#c40e07"
+		}
+	}
+}

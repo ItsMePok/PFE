@@ -1,0 +1,38 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:spawn_shopkeeper"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" E ",
+			"EXE",
+			" E "
+		],
+		"unlock": [
+			{
+				"tag": "minecraft:egg"
+			},
+			{
+				"item": "poke:copper_token"
+			},
+			{
+				"item": "poke:banished_star"
+			}
+		],
+		"key": {
+			"X": {
+				"tag": "minecraft:egg"
+			},
+			"E": {
+				"item": "poke:banished_star"
+			}
+		},
+		"result": {
+			"item": "poke:spawn_shopkeeper"
+		}
+	}
+}

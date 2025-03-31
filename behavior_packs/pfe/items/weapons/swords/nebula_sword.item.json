@@ -1,0 +1,64 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:nebula_sword",
+			"menu_category": {
+				"category": "equipment",
+				"group": "minecraft:itemGroup.name.sword"
+			}
+		},
+		"components": {
+			"minecraft:rarity":"epic",
+			"minecraft:custom_components":[
+				"poke:normalMining",
+				"poke:hitEffects"
+			],
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:durability": {
+				"max_durability": 15000,
+				"damage_chance": {
+					"max": 100,
+					"min": 60
+				}
+			},
+			"minecraft:damage": {"value": 100},
+			"minecraft:icon":"poke_nebula_sword",
+			"minecraft:enchantable": {
+				"value": 100,
+				"slot": "sword"
+			},
+			"minecraft:can_destroy_in_creative": false,
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"poke:repair_core"
+						],
+						"repair_amount": "query.max_durability"
+					},
+					{
+						"items": [
+							"poke:nebula_ingot"
+						],
+						"repair_amount": "query.max_durability*0.25"
+					},
+					{
+						"items": [
+							"poke:nebula_nugget"
+						],
+						"repair_amount": "query.max_durability*0.028"
+					}
+				]
+			},
+			"minecraft:digger": {
+				"destroy_speeds": [
+					{"block":"minecraft:web","speed": 60},
+					{"block":"minecraft:bamboo_sapling","speed": 60},
+					{"block":"minecraft:bamboo","speed": 60}
+				]
+			}
+		}
+	}
+}

@@ -5,7 +5,7 @@
 			"identifier": "poke:blazooka_flame",
 			"basic_render_parameters": {
 				"material": "particles_alpha",
-				"texture": "textures/particles/pfe/particles"
+				"texture": "textures/poke/pfe/particles"
 			}
 		},
 		"components": {
@@ -38,15 +38,27 @@
 				"rotation_drag_coefficient": 3
 			},
 			"minecraft:particle_appearance_billboard": {
-				"size": ["variable.size*(1-variable.particle_age)", "variable.size*(1-variable.particle_age)"],
+				"size": [
+					"variable.size*(1-variable.particle_age)",
+					"variable.size*(1-variable.particle_age)"
+				],
 				"facing_camera_mode": "rotate_xyz",
 				"uv": {
 					"texture_width": 128,
 					"texture_height": 128,
 					"flipbook": {
-						"base_UV": [0, 24],
-						"size_UV": [8, 8],
-						"step_UV": [8, 0],
+						"base_UV": [
+							0,
+							24
+						],
+						"size_UV": [
+							8,
+							8
+						],
+						"step_UV": [
+							8,
+							0
+						],
 						"frames_per_second": 2,
 						"max_frame": 1,
 						"stretch_to_lifetime": true

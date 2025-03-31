@@ -1,0 +1,110 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:block": {
+		"description": {
+			"identifier": "poke:beveled_limestone_slab",
+			"menu_category": {"category": "construction"},
+			"traits": {"minecraft:placement_position": {"enabled_states": ["minecraft:vertical_half"]}},
+			"states": {"poke:double": [false, true]}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('poke:double')",
+				"components": {
+					"minecraft:liquid_detection": {
+						"detection_rules": [
+							{
+								"can_contain_liquid": false,
+								"liquid_type": "water",
+								"on_liquid_touches": "blocking",
+								"stops_liquid_flowing_from_direction": []
+							}
+						]
+					},
+					"minecraft:redstone_conductivity": {
+						"redstone_conductor": true,
+						"allows_wire_to_step_down": true
+					},
+					"minecraft:geometry": {
+						"identifier": "minecraft:geometry.full_block"
+					},
+					"minecraft:custom_components":[
+						"poke:cc_slab_loot"
+					]
+				}
+			},
+			// Bottom Slab
+			{
+				"condition": "q.block_state('minecraft:vertical_half') == 'bottom' && !q.block_state('poke:double')",
+				"components": {
+					"minecraft:liquid_detection": {
+						"detection_rules": [
+							{
+								"can_contain_liquid": true,
+								"liquid_type": "water",
+								"on_liquid_touches": "blocking",
+								"stops_liquid_flowing_from_direction": ["down"]
+							}
+						]
+					},
+					"minecraft:custom_components":[
+						"poke:slabs",
+						"poke:cc_block_seat"
+					],
+					"minecraft:collision_box": {"origin": [-8, 0, -8],"size": [16, 8, 16]},
+					"minecraft:geometry": {
+						"identifier": "geometry.poke_pfe_slab",
+						"bone_visibility": {"bottom_slab": "q.block_state('minecraft:vertical_half') == 'bottom'","top_slab": "q.block_state('minecraft:vertical_half') == 'top'"}
+					},
+					"minecraft:selection_box": {"origin": [-8, 0, -8],"size": [16, 8, 16]}
+				}
+			},
+			// Top Slab
+			{
+				"condition": "q.block_state('minecraft:vertical_half') == 'top' && !q.block_state('poke:double')",
+				"components": {
+					"minecraft:liquid_detection": {
+						"detection_rules": [
+							{
+								"can_contain_liquid": true,
+								"liquid_type": "water",
+								"on_liquid_touches": "blocking",
+								"stops_liquid_flowing_from_direction": ["up"]
+							}
+						]
+					},
+					"minecraft:custom_components":[
+						"poke:slabs"
+					],
+					"minecraft:collision_box": {
+						"origin": [-8, 8, -8],
+						"size": [16, 8, 16]
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.poke_pfe_slab",
+						"bone_visibility": {"bottom_slab": "q.block_state('minecraft:vertical_half') == 'bottom'","top_slab": "q.block_state('minecraft:vertical_half') == 'top'"}
+					},
+					"minecraft:selection_box": {"origin": [-8, 8, -8],"size": [16, 8, 16]}
+				}
+			}
+		],
+		"components": {
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 7.5,
+				"item_specific_speeds": [{"item":{"tags": "q.any_tag('minecraft:is_pickaxe')"},"destroy_speed": 1.15}]
+			},
+			"minecraft:destructible_by_explosion": {"explosion_resistance": 6},
+			"minecraft:map_color": "#1a37bb",
+			"tag:pfe": {},
+			"tag:stone": {},
+			"tag:minecraft:stone": {},
+			"tag:stone_pick_diggable":{},
+			"tag:minecraft:is_pickaxe_item_destructible":{},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "poke_beveled_limestone"
+				}
+			}
+		}
+	}
+}

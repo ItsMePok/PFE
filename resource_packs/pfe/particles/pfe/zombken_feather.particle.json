@@ -5,7 +5,7 @@
 			"identifier": "poke:zombken_feather",
 			"basic_render_parameters": {
 				"material": "particles_alpha",
-				"texture": "textures/particles/pfe/particles"
+				"texture": "textures/poke/pfe/particles"
 			}
 		},
 		"components": {
@@ -16,7 +16,11 @@
 				"num_particles": 1
 			},
 			"minecraft:emitter_shape_sphere": {
-				"offset": [0, 0.8, 0],
+				"offset": [
+					0,
+					0.8,
+					0
+				],
 				"radius": 0.3,
 				"surface_only": true,
 				"direction": "outwards"
@@ -30,17 +34,30 @@
 			},
 			"minecraft:particle_initial_speed": 1.5,
 			"minecraft:particle_motion_dynamic": {
-				"linear_acceleration": [0, -1, 0],
+				"linear_acceleration": [
+					0,
+					-1,
+					0
+				],
 				"linear_drag_coefficient": 0.8
 			},
 			"minecraft:particle_appearance_billboard": {
-				"size": [0.2, 0.2],
+				"size": [
+					0.2,
+					0.2
+				],
 				"facing_camera_mode": "lookat_xyz",
 				"uv": {
 					"texture_width": 128,
 					"texture_height": 128,
-					"uv": [66, 99],
-					"uv_size": [4, 4]
+					"uv": [
+						66,
+						99
+					],
+					"uv_size": [
+						4,
+						4
+					]
 				}
 			},
 			"minecraft:particle_motion_collision": {

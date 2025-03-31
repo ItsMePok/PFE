@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.50",
+	"format_version": "1.21.60",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:robo_golem",
@@ -136,7 +136,7 @@
 				]
 			},
 			"minecraft:loot": {
-				"table": "loot_tables/poke/pfe/furnace_golem.json"
+				"table": "loot_tables/poke/pfe/furnace_golem.loot.json"
 			},
 			"minecraft:health": {
 				"value": 4500,

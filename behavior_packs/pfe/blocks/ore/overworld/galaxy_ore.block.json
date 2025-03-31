@@ -1,0 +1,36 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:block": {
+		"description": {
+			"identifier": "poke:galaxy_ore",
+			"menu_category": {
+				"category": "nature"
+			}
+		},
+		"components": {
+			"minecraft:redstone_conductivity": {
+				"redstone_conductor": true,
+				"allows_wire_to_step_down": true
+			},
+			"minecraft:map_color": "#810baf",
+			"tag:pfe": {},
+			"tag:metal": {},
+			"tag:minecraft:metal": {},
+			"tag:stone_pick_diggable":{},
+			"tag:minecraft:is_pickaxe_item_destructible":{},
+			"minecraft:geometry":{"identifier": "minecraft:geometry.full_block"},
+			"minecraft:material_instances": {"*": {"texture": "poke_galaxy_ore"}},
+			"minecraft:loot": "loot_tables/poke/pfe/galaxy_ore.loot.json",
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 15,
+				"item_specific_speeds": [{"item":{"tags": "q.any_tag('minecraft:is_pickaxe')"},"destroy_speed": 2.25}]
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 15
+			},
+			"minecraft:custom_components":[
+				"poke:fortune"
+			]
+		}
+	}
+}

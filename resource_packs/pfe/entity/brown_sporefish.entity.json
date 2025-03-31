@@ -1,36 +1,37 @@
 {
-	"format_version":"1.8.0",
-	"minecraft:client_entity":{
-		"description":{
-			"identifier":"poke:brown_sporefish",
-			"materials":{
-				"default":"entity_alphatest"
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "poke:brown_sporefish",
+			"materials": {
+				"default": "entity_alphatest"
 			},
-			"textures":{
-				"default":"textures/entity/passive/poke_brown_sporefish"
+			"textures": {
+				"default": "textures/poke/pfe/brown_sporefish_entity"
 			},
-			"geometry":{
-				"default":"geometry.poke_pfe.sporefish"
+			"geometry": {
+				"default": "geometry.poke_pfe.sporefish"
 			},
-			"scripts":{
-				"pre_animation":[
+			"scripts": {
+				"pre_animation": [
 					"variable.zrot=!query.is_in_water?Math.cos((query.time_stamp+query.frame_alpha)*14.32)*90:0.0;",
 					"variable.animationamountblend=Math.lerp(variable.AnimationAmountPrev,variable.AnimationAmount,query.frame_alpha);"
 				]
 			},
-			"animations":{
-				"flop":"animation.brown_sporefish.flop",
-				"swim":"animation.brown_sporefish.swim"
+			"animations": {
+				"flop": "animation.brown_sporefish.flop",
+				"swim": "animation.brown_sporefish.swim"
 			},
-			"animation_controllers":[
+			"animation_controllers": [
 				{
-					"general":"controller.animation.fish.general"
+					"general": "controller.animation.fish.general" //2
 				}
 			],
-			"render_controllers":["controller.render.poke_pfe.default"],
-			"spawn_egg":{
-				"base_color":"#a57a56",
-				"overlay_color":"#f4f4f4"
+			"render_controllers": [
+				"controller.render.poke_pfe.default"
+			],
+			"spawn_egg": {
+				"texture": "poke_brown_sporefish_spawn_egg"
 			}
 		}
 	}

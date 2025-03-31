@@ -1,38 +1,39 @@
 {
-	"format_version":"1.10.0",
-	"minecraft:client_entity":{
-		"description":{
-			"identifier":"poke:yak",
-			"min_engine_version":"1.8.0",
-			"materials":{
-				"default":"entity_alphatest"
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "poke:yak",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "entity_alphatest"
 			},
-			"textures":{
-				"default":"textures/entity/passive/poke_yak"
+			"textures": {
+				"default": "textures/poke/pfe/yak_entity"
 			},
-			"geometry":{
-				"default":"geometry.poke_pfe.yak"
+			"geometry": {
+				"default": "geometry.poke_pfe.yak"
 			},
-			"animations":{
-				"walk":"animation.poke_pfe.yak.walk",
-				"look_at_target":"animation.common.look_at_target",
-				"baby_transform":"animation.poke_pfe.yak.baby_transform"
+			"animations": {
+				"walk": "animation.poke_pfe.yak.walk",
+				"look_at_target": "animation.common.look_at_target",
+				"baby_transform": "animation.poke_pfe.yak.baby_transform"
 			},
-			"scripts":{
-				"animate":[
+			"scripts": {
+				"animate": [
 					{
-						"walk":"query.modified_move_speed"
+						"walk": "query.modified_move_speed"
 					},
 					"look_at_target",
 					{
-						"baby_transform":"query.is_baby"
+						"baby_transform": "query.is_baby"
 					}
 				]
 			},
-			"render_controllers":["controller.render.poke_pfe.default"],
-			"spawn_egg":{
-				"base_color":"#77503d",
-				"overlay_color":"#555555"
+			"render_controllers": [
+				"controller.render.poke_pfe.default"
+			],
+			"spawn_egg": {
+				"texture": "poke_yak_spawn_egg"
 			}
 		}
 	}

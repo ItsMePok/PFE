@@ -1,46 +1,50 @@
 {
-	"format_version":"1.10.0",
-	"minecraft:client_entity":{
-		"description":{
-			"identifier":"poke:mushroom_buddy",
-			"materials":{
-				"default":"cat"
+	"format_version": "1.21.60",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "poke:mushroom_buddy",
+			"materials": {
+				"default": "entity"
 			},
-			"textures":{
-				"white":"textures/entity/passive/poke_mb/White.Mushroom.png",
-				"black":"textures/entity/passive/poke_mb/Black.Mushroom.png",
-				"red":"textures/entity/passive/poke_mb/Red.Mushroom.png",
-				"siamese":"textures/entity/passive/poke_mb/Orange.Mushroom.png",
-				"british":"textures/entity/passive/poke_mb/Blue.Green.Mushroom.png",
-				"calico":"textures/entity/passive/poke_mb/Light.Red.Mushroom.png",
-				"persian":"textures/entity/passive/poke_mb/Purple.Mushroom.png",
-				"ragdoll":"textures/entity/passive/poke_mb/Greenish.Mushroom.png",
-				"tabby":"textures/entity/passive/poke_mb/Pinkish.Mushroom.png",
-				"jellie":"textures/entity/passive/poke_mb/Purple.Pink.Mushroom.png",
-				"blackcat":"textures/entity/passive/poke_mb/Dark.Blue.Mushroom.png",
-				"britishshorthair":"textures/entity/passive/poke_mb/Rainbow.Mushroom.png",
-				"redtabby":"textures/entity/passive/poke_mb/Yellow.Mushroom.png",
-				"tuxedo":"textures/entity/passive/poke_mb/Green.Mushroom.png"
+			"textures": {
+				"white": "textures/poke/pfe/white_mushroom_buddy_entity.png",
+				"black": "textures/poke/pfe/black_mushroom_buddy_entity.png",
+				"red": "textures/poke/pfe/dark_red_mushroom_buddy_entity.png",
+				"siamese": "textures/poke/pfe/orange_mushroom_buddy_entity.png",
+				"british": "textures/poke/pfe/blue_green_mushroom_buddy_entity.png",
+				"calico": "textures/poke/pfe/red_mushroom_buddy_entity.png",
+				"persian": "textures/poke/pfe/purple_mushroom_buddy_entity.png",
+				"ragdoll": "textures/poke/pfe/cyan_mushroom_buddy_entity.png",
+				"tabby": "textures/poke/pfe/pink_mushroom_buddy_entity.png",
+				"jellie": "textures/poke/pfe/purple_pink_mushroom_buddy_entity.png",
+				"blackcat": "textures/poke/pfe/blue_mushroom_buddy_entity.png",
+				"britishshorthair": "textures/poke/pfe/rainbow_mushroom_buddy_entity.png",
+				"redtabby": "textures/poke/pfe/yellow_mushroom_buddy_entity.png",
+				"tuxedo": "textures/poke/pfe/lime_mushroom_buddy_entity.png"
 			},
-			"geometry":{
-				"default":"geometry.pfe_mushroom_buddy"
+			"geometry": {
+				"default": "geometry.poke_pfe.mushroom_buddy"
 			},
-			"animations":{
-				"sneak":"animation.mushroom_buddy.sneak",
-				"walk":"animation.mushroom_buddy.walk",
-				"sprint":"animation.mushroom_buddy.sprint",
-				"sit":"animation.mushroom_buddy.sit",
-				"look_at_target":"animation.common.look_at_target",
-				"baby_transform":"animation.mushroom_buddy.baby_transform",
-				"move":"controller.animation.cat.move",
-				"mushroom_buddy_control":"controller.animation.poke_pfe.mushroom.buddy",
-				"idle":"animation.poke_pfe.mushroom_buddy.idle"
+			"animations": {
+				"sneak": "animation.mushroom_buddy.sneak",
+				"walk": "animation.mushroom_buddy.walk",
+				"sprint": "animation.mushroom_buddy.sprint",
+				"sit": "animation.mushroom_buddy.sit",
+				"look_at_target": "animation.common.look_at_target",
+				"baby_transform": "animation.mushroom_buddy.baby_transform",
+				"mushroom_buddy_control": "controller.animation.poke_pfe.mushroom.buddy",
+				"idle": "animation.poke_pfe.mushroom_buddy.idle"
 			},
-			"scripts":{"animate":["mushroom_buddy_control"]},
-			"render_controllers":["controller.render.poke_pfe.mushroom.buddy"],
-			"spawn_egg":{
-				"base_color":"#ff0066",
-				"overlay_color":"#ffffff"
+			"scripts": {
+				"animate": [
+					"mushroom_buddy_control"
+				]
+			},
+			"render_controllers": [
+				"controller.render.poke_pfe.mushroom.buddy"
+			],
+			"spawn_egg": {
+				"texture": "poke_mushroom_buddy_spawn_egg"
 			}
 		}
 	}

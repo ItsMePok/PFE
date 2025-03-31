@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.50",
+	"format_version": "1.21.60",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:mini_demonic_allay",
@@ -39,10 +39,10 @@
 				]
 			},
 			"minecraft:equipment": {
-				"table": "loot_tables/poke/pfe/mini_demonic_allay.json"
+				"table": "loot_tables/poke/pfe/mini_demonic_allay.loot.json"
 			},
 			"minecraft:loot": {
-				"table": "loot_tables/poke/pfe/mini_demonic_allay_loot.json"
+				"table": "loot_tables/poke/pfe/mini_demonic_allay_loot.loot.json"
 			},
 			"minecraft:health": {
 				"value": 140,

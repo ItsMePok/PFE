@@ -1,0 +1,45 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke_pfe:resist_gem"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"C": {
+				"item": "minecraft:copper_ingot"
+			},
+			"M": {
+				"item": "poke:molten_slimeball"
+			},
+			"S": {
+				"item": "minecraft:shield"
+			}
+		},
+		"unlock": [
+			{
+				"item": "poke:molten_slimeball"
+			},
+			{
+				"item": "minecraft:copper_ingot"
+			},
+			{
+				"item": "poke:echo_holder"
+			},
+			{
+				"item": "minecraft:shield"
+			}
+		],
+		"pattern": [
+			"CMC",
+			"MSM",
+			"CMC"
+		],
+		"result": {
+			"count": 1,
+			"item": "poke_pfe:resist_gem"
+		}
+	}
+}

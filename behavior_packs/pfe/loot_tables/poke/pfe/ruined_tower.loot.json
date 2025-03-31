@@ -1,0 +1,369 @@
+{/*Ruined Tower hidden barrel*/
+	"pools": [
+		{
+			"rolls":1,
+			"type": "item",
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:written_book",
+					"count": 1,
+					"functions": [
+						{
+							"function": "set_book_contents",
+							"title": "Travel Log 1",
+							"author": "Lost Traveler",
+							"pages":[
+								"{\"rawtext\":[ {\"translate\":\"translation.poke:travel_log_1.page1\"}]}",
+								"{\"rawtext\":[ {\"translate\":\"translation.poke:travel_log_1.page2\"}]}"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls":1,
+			"type": "item",
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:written_book",
+					"count": 1,
+					"functions": [
+						{
+							"function": "set_book_contents",
+							"title": "Only Cobblestone",
+							"author": "§kLost Man§7",
+							"pages":[
+								"{\"rawtext\":[ {\"translate\":\"translation.poke:only_cobblestone.page1\"}]}",
+								"{\"rawtext\":[ {\"translate\":\"translation.poke:only_cobblestone.page2\"}]}"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:tropical_fish",
+					"functions": [
+						{
+							"function": "set_name",
+							"name": "§r§e§lKnockback Nemo§r"
+						},
+						{
+							"function": "specific_enchants",
+							"enchants": [
+								{
+									"id": "knockback",
+									"level": 2
+								}
+							]
+						}
+					],
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "poke:cassette_ancestry",
+					"weight": 1
+				},
+				{
+					"type": "empty",
+					"weight": 2
+				}
+			]
+		},
+		{ // Total weight: 232
+			"rolls": {
+				"min": 2,
+				"max": 4
+			},
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:diamond",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 3
+							}
+						}
+					],
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "poke:iron_token",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 3
+							}
+						}
+					],
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "poke:copper_token",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 6
+							}
+						}
+					],
+					"weight": 15
+				},
+				{
+					"type": "item",
+					"name": "minecraft:iron_ingot",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 5
+							}
+						}
+					],
+					"weight": 15
+				},
+				{
+					"type": "item",
+					"name": "minecraft:gold_ingot",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 2,
+								"max": 7
+							}
+						}
+					],
+					"weight": 15
+				},
+				{
+					"type": "item",
+					"name": "minecraft:emerald",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 3
+							}
+						}
+					],
+					"weight": 15
+				},
+				{
+					"type": "item",
+					"name": "minecraft:bone",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 4,
+								"max": 6
+							}
+						}
+					],
+					"weight": 25
+				},
+				{
+					"type": "item",
+					"name": "minecraft:sculk_sensor",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 3
+							}
+						}
+					],
+					"weight": 25
+				},
+				{
+					"type": "item",
+					"name": "minecraft:web",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 3,
+								"max": 7
+							}
+						}
+					],
+					"weight": 25
+				},
+				{
+					"type": "item",
+					"name": "minecraft:sculk_shrieker",
+					"weight": 20
+				},
+				{
+					"type": "item",
+					"name": "minecraft:amethyst_shard",
+					"weight": 15
+				},
+				{
+					"type": "item",
+					"name": "minecraft:web",
+					"weight": 10
+				},
+				{
+					"type": "item",
+					"name": "minecraft:echo_shard",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "minecraft:book",
+					"weight": 20,
+					"functions": [
+						{
+							"function": "enchant_randomly",
+							"treasure": true
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:golden_apple",
+					"weight": 20
+				},
+				{
+					"type": "item",
+					"name": "minecraft:appleEnchanted",
+					"weight": 2
+				},
+				{
+					"type": "empty",
+					"weight": 15
+				}
+			]
+		},
+		{
+			"rolls": 4,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:sculk",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 8
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:amethyst_shard",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 8
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:soul_lantern",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 8
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:string",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 8
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:cobbled_deepslate",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 8
+							}
+						}
+					]
+				},
+				{
+					"type": "loot_table",
+					"name": "loot_tables/poke/pfe/random_candles.loot.json",
+					"weight": 10
+				},
+				{
+					"type": "item",
+					"name": "minecraft:string",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 8
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:sculk",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 8
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

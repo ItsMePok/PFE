@@ -1,0 +1,28 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:trash_lid",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+      "minecraft:rarity":"common",
+      "minecraft:tags": {
+        "tags": [
+          "novelty:is_hat"
+        ]
+      },
+			"minecraft:icon":{
+				"textures": {
+					"default": "poke_trash_lid"
+				}
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:wearable": {
+				"slot": "slot.armor.head"
+			}
+		}
+	}
+}

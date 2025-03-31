@@ -1,40 +1,42 @@
 {
-	"format_version":"1.10.0",
-	"minecraft:client_entity":{
-		"description":{
-			"identifier":"poke:robo_golem",
-			"materials":{
-				"default":"entity_emissive"
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "poke:robo_golem",
+			"materials": {
+				"default": "entity_emissive"
 			},
-			"textures":{
-				"default":"textures/entity/bosses/poke_robo_golem"
+			"textures": {
+				"default": "textures/poke/pfe/furnace_golem_entity"
 			},
-			"geometry":{
-				"default":"geometry.poke_pfe.furnace_golem"
+			"geometry": {
+				"default": "geometry.poke_pfe.furnace_golem"
 			},
-			"animations":{
-				"walk":"animation.poke_pfe.robo_golem.walk",
-				"move":"animation.poke_pfe.robo_golem.move",
-				"walk_to_target":"animation.poke_pfe.robo_golem.walk_to_target",
-				"move_to_target":"animation.poke_pfe.robo_golem.move_to_target",
-				"look_at_target":"animation.common.look_at_target",
-				"move_controller":"controller.animation.iron_golem.move",
-				"arm_controller":"controller.animation.furnace_golem.arm_movement",
-				"smash":"animation.poke_pfe.robo_golem.smash"
+			"animations": {
+				"walk": "animation.poke_pfe.robo_golem.walk",
+				"move": "animation.poke_pfe.robo_golem.move",
+				"walk_to_target": "animation.poke_pfe.robo_golem.walk_to_target",
+				"move_to_target": "animation.poke_pfe.robo_golem.move_to_target",
+				"look_at_target": "animation.common.look_at_target",
+				"move_controller": "controller.animation.iron_golem.move",
+				"arm_controller": "controller.animation.furnace_golem.arm_movement",
+				"smash": "animation.poke_pfe.robo_golem.smash" // Played via function
 			},
-			"scripts":{
-				"pre_animation":[
+			"scripts": {
+				"pre_animation": [
 					"variable.modified_tcos0=Math.clamp(((Math.cos(query.modified_distance_moved*13.5)*Math.min(query.modified_move_speed,0.6)/variable.gliding_speed_value)*25.0),-12.5,12.5);"
 				],
-				"animate":[
+				"animate": [
 					"look_at_target",
 					"move_controller",
 					"arm_controller"
 				]
 			},
-			"render_controllers":["controller.render.poke_pfe.default"],
-			"spawn_egg":{
-				"texture":"poke_furnace_golem"
+			"render_controllers": [
+				"controller.render.poke_pfe.default"
+			],
+			"spawn_egg": {
+				"texture": "poke_furnace_golem_spawn_egg"
 			}
 		}
 	}

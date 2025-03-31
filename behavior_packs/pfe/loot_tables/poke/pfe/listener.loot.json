@@ -1,0 +1,121 @@
+{
+	"pools": [
+		{//Tokens // Total Weight: 45
+			"rolls": 12,
+			"entries": [
+				{
+					"type": "item",
+					"name": "poke:copper_token",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "poke:iron_token",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"name": "poke:gold_token",
+					"weight": 20
+				},
+				{
+					"type": "item",
+					"name": "poke:diamond_token",
+					"weight": 16
+				},
+				{
+					"type": "item",
+					"name": "poke:platinum_token",
+					"weight": 5
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "poke:floppy_disk"
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "poke:cassette_they_listen"
+				}
+			]
+		},
+		{
+			"rolls": 50,
+			"entries": [
+				{
+					"type": "item",
+					"name": "poke:onyx_block",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "poke:godly_block",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "poke:cobalt_block",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "poke:galaxy_block",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "poke:void_block",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "poke:nebula_block",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "poke:shade_block",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "poke:holy_block",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "poke:hellish_block",
+					"weight": 5
+				},
+				{
+					"type": "item",
+					"name": "poke:demonic_block",
+					"weight": 5
+				}
+			]
+		},
+        {
+            "rolls":1,
+            "entries":[
+                {
+                    "type":"empty",
+                    "weight": 49
+                },
+                {
+                    "type": "item",
+                    "name": "poke:pfe-listener_pottery_sherd",
+                    "weight": 1
+                }
+            ]
+        }
+	]
+}

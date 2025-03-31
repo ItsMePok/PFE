@@ -1,0 +1,67 @@
+{
+	"format_version": "1.21.20",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.poke_pfe.drain",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "block",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8, 0, -8],
+							"size": [16, 16, 16],
+							"inflate": 0.1,
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16]},
+								"east": {"uv": [0, 0], "uv_size": [16, 16]},
+								"south": {"uv": [0, 0], "uv_size": [16, 16]},
+								"west": {"uv": [0, 0], "uv_size": [16, 16]},
+								"up": {"uv": [16, 16], "uv_size": [-16, -16]},
+								"down": {"uv": [16, 16], "uv_size": [-16, -16]}
+							}
+						}
+					]
+				}
+			],
+			"item_display_transforms": {
+				"ground": {
+					"rotation": [0, 0, 0],
+					"translation": [0, 3, 0],
+					"scale": [0.25, 0.25, 0.25],
+					"rotation_pivot": [0, 0, 0],
+					"scale_pivot": [0, 0, 0]
+				},
+				"gui": {
+					"rotation": [27.5, 135, 0],
+					"translation": [0, 0, 0],
+					"scale": [0.65, 0.65, 0.65],
+					"rotation_pivot": [0, 0, 0],
+					"scale_pivot": [0, 0, 0],
+					"fit_to_frame": false
+				},
+				"head": {
+					"rotation": [0, 0, 0],
+					"translation": [0, 0, 0],
+					"scale": [0.95, 0.95, 0.95],
+					"rotation_pivot": [0, 0, 0],
+					"scale_pivot": [0, 0, 0]
+				},
+				"fixed": {
+					"rotation": [0, 0, 0],
+					"translation": [0, 0, 0],
+					"scale": [0.5, 0.5, 0.5],
+					"rotation_pivot": [0, 0, 0],
+					"scale_pivot": [0, 0, 0]
+				}
+			}
+		}
+	]
+}

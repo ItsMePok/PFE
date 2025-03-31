@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.50",
+	"format_version": "1.21.60",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:warped_sporeshroom",
@@ -86,7 +86,7 @@
 								}
 							},
 							"add_items": {
-								"table": "loot_tables/poke/pfe/sporeshroom_milk_bottle.json"
+								"table": "loot_tables/poke/pfe/sporeshroom_milk_bottle.loot.json"
 							},
 							"use_item": true,
 							"play_sounds": "milk_suspiciously",

@@ -3,17 +3,33 @@
 	"minecraft:attachable": {
 		"description": {
 			"identifier": "poke:necromancer_crown",
-			"render_controllers": ["controller.render.armor"],
+			"render_controllers": [
+				"controller.render.armor"
+			],
 			"materials": {
 				"default": "entity_emissive_alpha",
 				"enchanted": "entity_alphatest_glint"
 			},
 			"textures": {
-				"default": "textures/entity/bosses/poke_necromancer",
+				"default": "textures/poke/pfe/necromancer_entity",
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {
 				"default": "geometry.poke_pfe.necromancer_crown"
+			},
+			"animations": {
+				"first_person_hold": "animation.poke_pfe.necromancer_crown",
+				"third_person_hold": "animation.poke_pfe.necromancer_crown_3p"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"first_person_hold": "c.is_first_person"
+					},
+					{
+						"third_person_hold": "!c.is_first_person"
+					}
+				]
 			}
 		}
 	}

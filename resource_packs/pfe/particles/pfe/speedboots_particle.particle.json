@@ -5,7 +5,7 @@
 			"identifier": "poke:cube_cosmetic",
 			"basic_render_parameters": {
 				"material": "particles_alpha",
-				"texture": "textures/particles/pfe/particles"
+				"texture": "textures/poke/pfe/particles"
 			}
 		},
 		"components": {

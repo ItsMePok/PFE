@@ -1,39 +1,44 @@
 {
-	"format_version":"1.10.0",
-	"minecraft:client_entity":{
-		"description":{
-			"identifier":"poke:zombken",
-			"min_engine_version":"1.10.0",
-			"materials":{
-				"default":"chicken",
-				"legs":"chicken_legs"
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "poke:zombken",
+			"min_engine_version": "1.10.0",
+			"materials": {
+				"default": "chicken",
+				"legs": "chicken_legs"
 			},
-			"textures":{
-				"default":"textures/entity/bosses/poke_zombken"
+			"textures": {
+				"default": "textures/poke/pfe/zombken_entity"
 			},
-			"geometry":{
-				"default":"geometry.poke_pfe.zombken"
+			"geometry": {
+				"default": "geometry.poke_pfe.zombken"
 			},
-			"animations":{
-				"move":"animation.poke_pfe.zombken.move",
-				"general":"animation.poke_pfe.zombken.general",
-				"look_at_target":"animation.common.look_at_target",
-				"baby_transform":"animation.poke_pfe.zombken.baby_transform",
-				"melee_attack":"animation.poke_pfe.zombken.attack",
-				"controller":"controller.animation.poke_pfe.zombken"
+			"animations": {
+				"move": "animation.poke_pfe.zombken.move",
+				"general": "animation.poke_pfe.zombken.general",
+				"look_at_target": "animation.common.look_at_target",
+				"baby_transform": "animation.poke_pfe.zombken.baby_transform",
+				"melee_attack": "animation.poke_pfe.zombken.attack",
+				"controller": "controller.animation.poke_pfe.zombken"
 			},
-			"scripts":{
-				"animate":["controller","look_at_target",{"baby_transform":"query.is_baby"}
+			"scripts": {
+				"animate": [
+					"controller",
+					"look_at_target",
+					{
+						"baby_transform": "query.is_baby"
+					}
 				],
-				"pre_animation":[
+				"pre_animation": [
 					"variable.wing_flap=((math.sin(query.wing_flap_position*60.3)+1)*query.wing_flap_speed*20);"
 				]
 			},
-			"render_controllers":[
+			"render_controllers": [
 				"controller.render.poke_pfe.zombken"
 			],
-			"spawn_egg":{
-				"texture":"poke_spawn_zombken"
+			"spawn_egg": {
+				"texture": "poke_zombken_spawn_egg"
 			}
 		}
 	}

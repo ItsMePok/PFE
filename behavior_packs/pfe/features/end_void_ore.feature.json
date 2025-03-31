@@ -1,0 +1,22 @@
+{
+  "format_version": "1.21.60",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "poke:end_void_ore.feature"
+    },
+    "count": 7,
+    "replace_rules": [
+      {
+        "places_block": {
+          "name": "poke:end_void_ore",
+          "states": {}
+        },
+        "may_replace": [
+          {
+            "name": "minecraft:end_stone"
+          }
+        ]
+      }
+    ]
+  }
+}

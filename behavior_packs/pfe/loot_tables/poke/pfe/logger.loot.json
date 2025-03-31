@@ -1,0 +1,200 @@
+{
+	"pools": [
+		{//Cassette
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "poke:cassette_eldunknown",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "poke:cassette_disc_creator",
+					"weight": 1
+				}
+			]
+		},
+		{//Tokens // Total Weight: 114
+			"rolls": 8,
+			"entries": [
+				{
+					"type": "item",
+					"name": "poke:copper_token",
+					"weight": 15
+				},
+				{
+					"type": "item",
+					"name": "poke:iron_token",
+					"weight": 50
+				},
+				{
+					"type": "item",
+					"name": "poke:gold_token",
+					"weight": 32
+				},
+				{
+					"type": "item",
+					"name": "poke:diamond_token",
+					"weight": 16
+				},
+				{
+					"type": "item",
+					"name": "poke:platinum_token",
+					"weight": 1
+				}
+			]
+		},
+		{
+			"rolls":{
+				"min": 8,
+				"max": 16
+			},
+			"entries": [
+				{
+					"type": "item",
+					"name": "poke:cobalt_block",
+					"functions": [
+						{
+							"function": "looting_enchant",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "poke:shade_block",
+					"functions": [
+						{
+							"function": "looting_enchant",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "poke:onyx_block",
+					"functions": [
+						{
+							"function": "looting_enchant",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "poke:scrappy_block",
+					"functions": [
+						{
+							"function": "looting_enchant",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "poke:holy_block",
+					"functions": [
+						{
+							"function": "looting_enchant",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "poke:hellish_block",
+					"functions": [
+						{
+							"function": "looting_enchant",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "poke:ember_block",
+					"functions": [
+						{
+							"function": "looting_enchant",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "poke:medic_block",
+					"functions": [
+						{
+							"function": "looting_enchant",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "poke:demonic_block",
+					"functions": [
+						{
+							"function": "looting_enchant",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "poke:godly_block",
+					"functions": [
+						{
+							"function": "looting_enchant",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "poke:radium_block",
+					"functions": [
+						{
+							"function": "looting_enchant",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

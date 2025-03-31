@@ -1,39 +1,49 @@
 {
-	"format_version":"1.10.0",
-	"minecraft:client_entity":{
-		"description":{
-			"identifier":"poke:gilded_allay",
-			"materials":{
-				"default":"allay"
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "poke:gilded_allay",
+			"materials": {
+				"default": "allay" //2
 			},
-			"textures":{
-				"default":"textures/entity/passive/poke_gilded_allay"
+			"textures": {
+				"default": "textures/poke/pfe/gilded_allay_entity" //2
 			},
-			"geometry":{
-				"default":"geometry.allay"
+			"geometry": {
+				"default": "geometry.allay" //2
 			},
-			"spawn_egg":{
-				"base_color":"#ddc709",
-				"overlay_color":"#a38400"
+			"spawn_egg": {
+				"texture": "poke_gilded_allay_spawn_egg",
+				"base_color": "#ddc709",
+				"overlay_color": "#a38400"
 			},
-			"animations":{
-				"idle":"animation.allay.idle",
-				"fly":"animation.allay.fly",
-				"hold_item":"animation.allay.hold_item",
-				"hold_item_fly":"animation.allay.hold_item_fly",
-				"dance":"animation.allay.dance",
-				"general":"controller.animation.allay.general",
-				"holding":"controller.animation.allay.holding",
-				"dancing":"controller.animation.allay.dancing",
-				"look_at_target_default":"animation.allay.look_at_target.default",
-				"look_at_target":"controller.animation.allay.look_at_target"
+			"animations": {
+				"idle": "animation.allay.idle", //2
+				"fly": "animation.allay.fly", //2
+				"hold_item": "animation.allay.hold_item", //2
+				"hold_item_fly": "animation.allay.hold_item_fly", //2
+				"dance": "animation.allay.dance", //2
+				"general": "controller.animation.allay.general", //2
+				"holding": "controller.animation.allay.holding", //2
+				"dancing": "controller.animation.allay.dancing", //2
+				"look_at_target_default": "animation.allay.look_at_target.default", //2
+				"look_at_target": "controller.animation.allay.look_at_target" //2
 			},
-			"scripts":{
-				"pre_animation":["variable.holding_trident=query.is_item_name_any('slot.weapon.mainhand','minecraft:trident');"],
-				"animate":["general","holding","dancing","look_at_target_default"]
+			"scripts": {
+				"pre_animation": [
+					"variable.holding_trident=query.is_item_name_any('slot.weapon.mainhand','minecraft:trident');"
+				],
+				"animate": [
+					"general",
+					"holding",
+					"dancing",
+					"look_at_target_default"
+				]
 			},
-			"render_controllers":["controller.render.allay"],
-			"enable_attachables":true
+			"render_controllers": [
+				"controller.render.allay" //2
+			],
+			"enable_attachables": true
 		}
 	}
 }

@@ -1,46 +1,45 @@
 {
-	"format_version":"1.10.0",
-	"minecraft:client_entity":{
-		"description":{
-			"identifier":"poke:red_panda",
-			"materials":{
-				"default":"fox"
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "poke:red_panda",
+			"materials": {
+				"default": "fox"
 			},
-			"textures":{
-				"red":"textures/entity/neutral/red_panda/poke_red",
-				"arctic":"textures/entity/neutral/red_panda/poke_shade"
+			"textures": {
+				"red": "textures/poke/pfe/red_panda_entity",
+				"arctic": "textures/poke/pfe/red_panda_shade_entity"
 			},
-			"geometry":{
-				"default":"geometry.red_panda"
+			"geometry": {
+				"default": "geometry.poke_pfe.red_panda"
 			},
-			"animations":{
-				"walk":"animation.poke_pfe.red_panda.walk",
-				"look_at_target":"animation.common.look_at_target",
-				"baby_transform":"animation.poke_pfe.red_panda.baby_transform",
-				"crouch":"animation.poke_pfe.red_panda.crouch",
-				"sleep":"animation.poke_pfe.red_panda.sleep",
-				"setup":"animation.poke_pfe.red_panda.setup",
-				"sit":"animation.poke_pfe.red_panda.sit",
-				"wiggle":"animation.poke_pfe.red_panda.wiggle",
-				"stuck":"animation.poke_pfe.red_panda.stuck",
-				"pounce":"animation.poke_pfe.red_panda.pounce",
-				"move":"controller.animation.fox.move"
+			"animations": {
+				"walk": "animation.poke_pfe.red_panda.walk",
+				"look_at_target": "animation.common.look_at_target",
+				"baby_transform": "animation.poke_pfe.red_panda.baby_transform",
+				"crouch": "animation.poke_pfe.red_panda.crouch",
+				"sleep": "animation.poke_pfe.red_panda.sleep",
+				"setup": "animation.poke_pfe.red_panda.setup",
+				"sit": "animation.poke_pfe.red_panda.sit",
+				"wiggle": "animation.poke_pfe.red_panda.wiggle",
+				"stuck": "animation.poke_pfe.red_panda.stuck",
+				"pounce": "animation.poke_pfe.red_panda.pounce",
+				"move": "controller.animation.fox.move"
 			},
-			"scripts":{
-				"animate":[
+			"scripts": {
+				"animate": [
 					"setup",
 					{
-						"baby_transform":"query.is_baby"
+						"baby_transform": "query.is_baby"
 					},
 					"move"
 				]
 			},
-			"render_controllers":[
+			"render_controllers": [
 				"controller.render.fox"
 			],
-			"spawn_egg":{
-				"base_color":"#8b4211",
-				"overlay_color":"#8e6954"
+			"spawn_egg": {
+				"texture": "poke_red_panda_spawn_egg"
 			}
 		}
 	}

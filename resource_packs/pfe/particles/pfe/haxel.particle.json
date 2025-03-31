@@ -5,7 +5,7 @@
 			"identifier": "poke:haxel",
 			"basic_render_parameters": {
 				"material": "particles_alpha",
-				"texture": "textures/particles/pfe/particles"
+				"texture": "textures/poke/pfe/particles"
 			}
 		},
 		"components": {
@@ -24,7 +24,11 @@
 				"active_time": 1
 			},
 			"minecraft:emitter_shape_box": {
-				"half_dimensions": ["v.direction.x", "v.direction.y", "v.direction.z"],
+				"half_dimensions": [
+					"v.direction.x",
+					"v.direction.y",
+					"v.direction.z"
+				],
 				"surface_only": true,
 				"direction": "inwards"
 			},
@@ -33,18 +37,32 @@
 			},
 			"minecraft:particle_initial_speed": 0.5,
 			"minecraft:particle_appearance_billboard": {
-				"size": ["variable.size*(1-variable.particle_age)", "variable.size*(1-variable.particle_age)"],
+				"size": [
+					"variable.size*(1-variable.particle_age)",
+					"variable.size*(1-variable.particle_age)"
+				],
 				"facing_camera_mode": "rotate_xyz",
 				"uv": {
 					"texture_width": 128,
 					"texture_height": 128,
-					"uv": [32, 88],
-					"uv_size": [8, 8]
+					"uv": [
+						32,
+						88
+					],
+					"uv_size": [
+						8,
+						8
+					]
 				}
 			},
 			"minecraft:particle_appearance_lighting": {},
 			"minecraft:particle_appearance_tinting": {
-				"color": [0.38039, 0.44314, 0.49804, 1]
+				"color": [
+					0.38039,
+					0.44314,
+					0.49804,
+					1
+				]
 			}
 		}
 	}

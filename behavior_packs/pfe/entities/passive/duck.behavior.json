@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.50",
+	"format_version": "1.21.60",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:duck",
@@ -36,7 +36,14 @@
 				},
 				"minecraft:ageable": {
 					"duration": 1200,
-					"feed_items": ["wheat_seeds", "beetroot_seeds", "melon_seeds", "pumpkin_seeds","bread","poke:baguette"],
+					"feed_items": [
+						"wheat_seeds",
+						"beetroot_seeds",
+						"melon_seeds",
+						"pumpkin_seeds",
+						"bread",
+						"poke:baguette"
+					],
 					"grow_up": {
 						"event": "minecraft:ageable_grow_up",
 						"target": "self"
@@ -48,7 +55,9 @@
 					"big_wave_probability": 0.03,
 					"big_wave_speed": 10,
 					"drag_down_on_buoyancy_removed": 0,
-					"liquid_blocks": ["water"],
+					"liquid_blocks": [
+						"water"
+					],
 					"simulate_waves": true
 				},
 				"minecraft:behavior.follow_parent": {
@@ -62,7 +71,7 @@
 					"on_death": "query.last_hit_by_player ? Math.Random(1,3) : 0"
 				},
 				"minecraft:loot": {
-					"table": "loot_tables/poke/pfe/duck.json"
+					"table": "loot_tables/poke/pfe/duck.loot.json"
 				},
 				"minecraft:breedable": {
 					"require_tame": false,
@@ -74,7 +83,14 @@
 							"target": "baby"
 						}
 					},
-					"breed_items": ["wheat_seeds", "beetroot_seeds", "melon_seeds", "pumpkin_seeds","bread","poke:baguette"]
+					"breed_items": [
+						"wheat_seeds",
+						"beetroot_seeds",
+						"melon_seeds",
+						"pumpkin_seeds",
+						"bread",
+						"poke:baguette"
+					]
 				},
 				"minecraft:behavior.breed": {
 					"priority": 3,
@@ -82,9 +98,15 @@
 				},
 				"minecraft:rideable": {
 					"seat_count": 1,
-					"family_types": ["zombie"],
+					"family_types": [
+						"zombie"
+					],
 					"seats": {
-						"position": [0, 0.4, 0]
+						"position": [
+							0,
+							0.4,
+							0
+						]
 					}
 				},
 				"minecraft:buoyant": {
@@ -93,7 +115,9 @@
 					"big_wave_probability": 0.03,
 					"big_wave_speed": 10,
 					"drag_down_on_buoyancy_removed": 0,
-					"liquid_blocks": ["water"],
+					"liquid_blocks": [
+						"water"
+					],
 					"simulate_waves": true
 				},
 				"minecraft:spawn_entity": {
@@ -114,7 +138,11 @@
 		},
 		"components": {
 			"minecraft:type_family": {
-				"family": ["duck","mob","passive"]
+				"family": [
+					"duck",
+					"mob",
+					"passive"
+				]
 			},
 			"minecraft:breathable": {
 				"total_supply": 30,
@@ -164,10 +192,11 @@
 			"minecraft:balloonable": {
 				"mass": 0.5
 			},
-			
 			"minecraft:movement.basic": {},
 			"minecraft:floats_in_liquid": {},
-			"minecraft:jump.static": {},
+			"minecraft:jump.static": {
+				"jump_power": 0.55
+			},
 			"minecraft:can_climb": {},
 			"minecraft:despawn": {
 				"despawn_from_chance": true,
@@ -185,7 +214,12 @@
 			"minecraft:behavior.tempt": {
 				"priority": 6,
 				"speed_multiplier": 1,
-				"items": ["wheat_seeds", "beetroot_seeds", "melon_seeds", "pumpkin_seeds"]
+				"items": [
+					"wheat_seeds",
+					"beetroot_seeds",
+					"melon_seeds",
+					"pumpkin_seeds"
+				]
 			},
 			"minecraft:behavior.random_stroll": {
 				"priority": 7,
@@ -210,14 +244,16 @@
 				"scan_interval": 80,
 				"set_persistent": false,
 				"within_radius": 5,
-				"entity_types":{"filters": {
-					"any_of": [
-						{
-							"test": "is_family",
-							"value": "fish"
-						}
-					]
-				}},
+				"entity_types": {
+					"filters": {
+						"any_of": [
+							{
+								"test": "is_family",
+								"value": "fish"
+							}
+						]
+					}
+				},
 				"priority": 8
 			},
 			"minecraft:behavior.charge_attack": {
@@ -276,7 +312,9 @@
 		"events": {
 			"from_egg": {
 				"add": {
-					"component_groups": ["poke:duck_baby"]
+					"component_groups": [
+						"poke:duck_baby"
+					]
 				}
 			},
 			"minecraft:entity_spawned": {
@@ -370,20 +408,28 @@
 			"minecraft:entity_born": {
 				"remove": {},
 				"add": {
-					"component_groups": ["poke:duck_baby"]
+					"component_groups": [
+						"poke:duck_baby"
+					]
 				}
 			},
 			"minecraft:ageable_grow_up": {
 				"remove": {
-					"component_groups": ["poke:duck_baby"]
+					"component_groups": [
+						"poke:duck_baby"
+					]
 				},
 				"add": {
-					"component_groups": ["poke:duck_adult"]
+					"component_groups": [
+						"poke:duck_adult"
+					]
 				}
 			},
 			"minecraft:spawn_adult": {
 				"add": {
-					"component_groups": ["poke:duck_adult"]
+					"component_groups": [
+						"poke:duck_adult"
+					]
 				}
 			}
 		}

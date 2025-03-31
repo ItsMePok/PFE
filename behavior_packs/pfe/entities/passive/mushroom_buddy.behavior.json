@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.50",
+	"format_version": "1.21.60",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:mushroom_buddy",
@@ -76,11 +76,6 @@
 					"speed_multiplier": 0.5,
 					"within_radius": 16,
 					"items": ["beetroot","carrot","potato","poke:turnip","poke:golden_turnip","sweet_berries"]
-				},
-				"minecraft:leashable": {
-					"soft_distance": 4,
-					"hard_distance": 6,
-					"max_distance": 10
 				},
 				"minecraft:behavior.follow_owner": {
 					"priority": 4,
@@ -175,10 +170,15 @@
 			}
 		},
 		"components": {
+			"minecraft:leashable": {
+				"soft_distance": 4,
+				"hard_distance": 6,
+				"max_distance": 16
+			},
 			"minecraft:attack_damage": {
 				"value": 4
 			},"minecraft:loot": {
-				"table":"loot_tables/poke/pfe/mushroom_buddy.json"
+				"table":"loot_tables/poke/pfe/mushroom_buddy.loot.json"
 			},
 			"minecraft:nameable": {},
 			"minecraft:type_family": {

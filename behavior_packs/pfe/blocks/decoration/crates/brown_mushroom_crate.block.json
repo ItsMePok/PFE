@@ -1,0 +1,47 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:block": {
+		"description": {
+			"identifier": "poke:brown_mushroom_crate"
+		},
+		"components":{
+			"minecraft:liquid_detection": {
+				"detection_rules": [
+					{
+						"can_contain_liquid": true,
+						"liquid_type": "water",
+						"on_liquid_touches": "blocking",
+						"stops_liquid_flowing_from_direction": [
+							"down"
+						]
+					}
+				]
+			},
+			"minecraft:collision_box":true,
+			"minecraft:selection_box":true,
+			"minecraft:destructible_by_mining":{
+				"seconds_to_destroy":1
+			},
+			"minecraft:destructible_by_explosion":{
+				"explosion_resistance":30
+			},
+			"minecraft:flammable": {
+				"destroy_chance_modifier": 20,
+				"catch_chance_modifier": 5
+			},
+			"minecraft:geometry":{"identifier": "geometry.poke_pfe.crate"},
+			"minecraft:material_instances":{
+				"*": {
+					"texture": "poke_brown_mushroom_crate",
+					"render_method": "opaque"
+				}
+			},
+			"tag:pfe":{},
+			"tag:wood": {},
+			"tag:minecraft:is_hatchet_item_destructible":{},
+			"tag:minecraft:is_axe_item_destructible":{},
+			"tag:minecraft:wood": {},
+			"minecraft:map_color": "#895d4a"
+		}
+	}
+}

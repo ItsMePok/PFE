@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.50",
+	"format_version": "1.21.60",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:striker",
@@ -129,7 +129,7 @@
 				]
 			},
 			"minecraft:loot": {
-				"table": "loot_tables/poke/pfe/striker.json"
+				"table": "loot_tables/poke/pfe/striker.loot.json"
 			},
 			"minecraft:movement": {
 				"value": 0.25

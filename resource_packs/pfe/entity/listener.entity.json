@@ -1,35 +1,37 @@
 {
-	"format_version":"1.10.0",
-	"minecraft:client_entity":{
-		"description":{
-			"identifier":"poke:listener",
-			"textures":{
-				"default":"textures/entity/bosses/poke_listener"
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "poke:listener",
+			"textures": {
+				"default": "textures/poke/pfe/listener_entity" //2
 			},
-			"materials":{
-				"default":"entity_emissive"
+			"materials": {
+				"default": "entity_emissive"
 			},
-			"geometry":{
-				"default":"geometry.poke_pfe.listener"
+			"geometry": {
+				"default": "geometry.poke_pfe.listener"
 			},
-			"render_controllers":["controller.render.poke_pfe.default"],
-			"spawn_egg":{
-				"texture":"poke_spawn_listener"
+			"render_controllers": [
+				"controller.render.poke_pfe.default"
+			],
+			"spawn_egg": {
+				"texture": "poke_listener_spawn_egg"
 			},
-			"animations":{
-				"controller":"controller.animation.poke_pfe.listener",
-				"look_at_target":"animation.common.look_at_target",
-				"idle":"animation.poke_pfe.listener.idle",
-				"walk":"animation.poke_pfe.listener.walk",
-				"run":"animation.poke_pfe.listener.run",
-				"jump":"animation.poke_pfe.listener.jump",
-				"melee":"animation.poke_pfe.listener.melee",
-				"hurt":"animation.poke_pfe.listener.hurt",
-				"ranged":"animation.poke_pfe.listener.ranged",
-				"twitch":"animation.poke_pfe.listener.twitch"
+			"animations": {
+				"controller": "controller.animation.poke_pfe.listener",
+				"look_at_target": "animation.common.look_at_target",
+				"idle": "animation.poke_pfe.listener.idle",
+				"walk": "animation.poke_pfe.listener.walk",
+				"run": "animation.poke_pfe.listener.run",
+				"jump": "animation.poke_pfe.listener.jump",
+				"melee": "animation.poke_pfe.listener.melee",
+				"hurt": "animation.poke_pfe.listener.hurt",
+				"ranged": "animation.poke_pfe.listener.ranged",
+				"twitch": "animation.poke_pfe.listener.twitch"
 			},
-			"scripts":{
-				"animate":[
+			"scripts": {
+				"animate": [
 					"controller"
 				]
 			}

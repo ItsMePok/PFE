@@ -1,0 +1,15 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:dollor_bill_5",
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"components": {
+			"minecraft:rarity": "common",
+			"minecraft:icon": "poke_dollar_bill_5"
+		}
+	}
+}

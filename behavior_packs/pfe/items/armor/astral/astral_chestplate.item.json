@@ -1,0 +1,46 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:astral_chestplate",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:rarity":"common",
+			"minecraft:max_stack_size": 1,
+			"minecraft:enchantable": {
+				"value": 30,
+				"slot": "armor_torso"
+			},
+			"minecraft:durability": {
+				"max_durability": 5000,
+				"damage_chance": {
+					"min": 60,
+					"max": 100
+				}
+			},
+			"minecraft:icon": {"textures":{"default": "poke_astral_chestplate"}},
+			"minecraft:wearable": {
+				"slot": "slot.armor.chest",
+				"protection": 19
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{"items": ["poke:repair_core"],"repair_amount": "query.max_durability"},
+					{"items": ["poke:astral_ingot"],"repair_amount": "query.max_durability*0.25"},
+					{"items": ["poke:astral_nugget"],"repair_amount": "query.max_durability*0.028"}
+				]
+			}, 
+			"minecraft:tags": { 
+				"tags": [
+					"pfe:SingleArmor",
+					"novelty:is_back",
+					"minecraft:is_armor",
+					"minecraft:trimmable_armors"
+				]
+			}
+		}
+	}
+}

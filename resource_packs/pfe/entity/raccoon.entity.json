@@ -1,32 +1,37 @@
 {
-	"format_version":"1.8.0",
-	"minecraft:client_entity":{
-		"description":{
-			"identifier":"poke:raccoon",
-			"materials":{
-				"default":"entity"
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "poke:raccoon",
+			"materials": {
+				"default": "entity"
 			},
-			"textures":{
-				"default":"textures/entity/neutral/raccoon/poke_raccoon",
-				"angry":"textures/entity/neutral/raccoon/poke_raccoon",
-				"tame":"textures/entity/neutral/raccoon/poke_raccoon"
+			"textures": {
+				"default": "textures/poke/pfe/raccoon_entity",
+				"angry": "textures/poke/pfe/raccoon_entity",
+				"tame": "textures/poke/pfe/raccoon_entity"
 			},
-			"geometry":{
-				"default":"geometry.poke_pfe.raccoon"
+			"geometry": {
+				"default": "geometry.poke_pfe.raccoon"
 			},
-			"animations":{
-				"running":"animation.poke_pfe.run.raccoon",
-				"idle":"animation.poke_pfe.idle.raccoon",
-				"sit":"animation.poke_pfe.raccoon.sit"
+			"animations": {
+				"running": "animation.poke_pfe.run.raccoon",
+				"idle": "animation.poke_pfe.idle.raccoon",
+				"sit": "animation.poke_pfe.raccoon.sit"
 			},
-			"animation_controllers":[
-				{"movement":"controller.animation.poke_pfe.raccoon.movement"},
-				{"sitting":"controller.animation.poke_pfe.raccoon.sitting"}
+			"animation_controllers": [
+				{
+					"movement": "controller.animation.poke_pfe.raccoon.movement"
+				},
+				{
+					"sitting": "controller.animation.poke_pfe.raccoon.sitting"
+				}
 			],
-			"render_controllers":["controller.render.poke_pfe.default"],
-			"spawn_egg":{
-				"base_color":"#464646",
-				"overlay_color":"#ffffff"
+			"render_controllers": [
+				"controller.render.poke_pfe.default"
+			],
+			"spawn_egg": {
+				"texture": "poke_raccoon_spawn_egg"
 			}
 		}
 	}

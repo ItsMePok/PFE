@@ -1,0 +1,22 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:furnace_golem",
+			"menu_category": {
+				"category": "nature"
+			}
+		},
+		"components": {
+			"minecraft:icon": "poke_furnace_golem_spawn_egg",
+			"minecraft:custom_components": [
+				"poke:cc_spawnEgg"
+			],
+			"minecraft:tags": {
+				"tags": [
+					"poke:robo_golem"
+				]
+			}
+		}
+	}
+}
