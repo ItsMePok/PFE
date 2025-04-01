@@ -1066,6 +1066,7 @@
     * [v1.0.9.1](changelog-history/betas/v1.0.9.1.md)
     * [v1.0.8.1](changelog-history/betas/v1.0.8.1.md)
   * [Holiday & Event Updates](changelog-history/holiday-and-event-updates/README.md)
+    * [2025 - PFE 2](changelog-history/holiday-and-event-updates/2025-pfe-2.md)
     * [2024 - PFE Holiday LTU](changelog-history/holiday-and-event-updates/2024-pfe-holiday-ltu.md)
     * [2024 - PFE Spook LTU](changelog-history/holiday-and-event-updates/2024-pfe-spook-ltu.md)
     * [2024 - PFE April Fools LTU (v1.1.8.:3)](changelog-history/holiday-and-event-updates/april-fools-2024-ltu-v1.1.8.-3.md)
