@@ -5,7 +5,7 @@ This wiki is still a work in progress, some pages are unfinished
 {% endhint %}
 
 {% hint style="info" %}
-#### This Wiki assumes the PFE Version: [v1.2.80.md](changelog-history/full-releases/v1.2.80.md "mention")
+#### This Wiki assumes the PFE Version: [v1.2.80.md](changelog-history/full-releases/v1.2.80.md "mention") / [2025-pfe-2.md](changelog-history/holiday-and-event-updates/2025-pfe-2.md "mention")
 {% endhint %}
 
 ***
