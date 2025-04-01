@@ -1,15 +1,18 @@
 {
-  "format_version": "1.21.60",
-  "minecraft:block": {
-    "description": {
-      "identifier": "poke:demonic_allay_conduit",
-      "menu_category": {
-        "category": "items"
-      },
+	"format_version": "1.21.60",
+	"minecraft:block": {
+		"description": {
+			"identifier": "poke:demonic_allay_conduit",
+			"menu_category": {
+				"category": "items"
+			},
 			"states": {
-				"pfe:active":[0,1]
+				"pfe:active": [
+					0,
+					1
+				]
 			}
-    },
+		},
 		"permutations": [
 			{
 				"condition": "q.block_state('pfe:active') == 1",
@@ -18,23 +21,33 @@
 				}
 			}
 		],
-    "components": {
+		"components": {
 			"minecraft:redstone_conductivity": {
 				"redstone_conductor": true,
 				"allows_wire_to_step_down": true
 			},
-			"minecraft:destructible_by_mining": {"seconds_to_destroy": 1},
-			"minecraft:destructible_by_explosion": {"explosion_resistance": 30},
-      "minecraft:custom_components":[
-        "poke:cc_da_conduit"
-      ],
-      "minecraft:tick":{"interval_range":[100,100]},
-      "tag:pfe": {},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 1
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 30
+			},
+			"minecraft:custom_components": [
+				"pfe:forgetfullness",
+				"poke:cc_da_conduit"
+			],
+			"minecraft:tick": {
+				"interval_range": [
+					100,
+					100
+				]
+			},
+			"tag:pfe": {},
 			"tag:metal": {},
 			"tag:minecraft:metal": {},
-			"tag:stone_pick_diggable":{},
-			"tag:minecraft:is_pickaxe_item_destructible":{},
-      "minecraft:map_color": "#8dd4d1"
-    }
-  }
+			"tag:stone_pick_diggable": {},
+			"tag:minecraft:is_pickaxe_item_destructible": {},
+			"minecraft:map_color": "#8dd4d1"
+		}
+	}
 }

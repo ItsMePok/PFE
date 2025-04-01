@@ -1,12 +1,21 @@
-{// OLD ITEM poke:golden_turnip is the new version
+{ // OLD ITEM poke:golden_turnip is the new version
 	"format_version": "1.21.60",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:golden_turnip_trophy",
-			"traits": {"minecraft:placement_direction": {"enabled_states": ["minecraft:cardinal_direction"]}}
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
+				}
+			}
 		},
 		"components": {
 			"minecraft:loot": "loot_tables/poke/pfe/golden_turnip.loot.json",
+			"minecraft:custom_components": [
+				"pfe:forgetfullness"
+			],
 			"minecraft:selection_box": {
 				"origin": [
 					-7.25,
@@ -46,35 +55,75 @@
 					"face_dimming": true
 				}
 			},
-			"minecraft:placement_filter": {"conditions": [{"allowed_faces": ["up"]}]},
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [
+							"up"
+						]
+					}
+				]
+			},
 			"minecraft:light_emission": 4,
 			"minecraft:light_dampening": 0,
 			"tag:pfe": {},
 			"tag:minecraft:crop": {},
-			"tag:crop":{},
+			"tag:crop": {},
 			"tag:minecraft:wood": {},
-			"tag:wood":{},
-			"tag:hoe":{},
-			"tag:stone_pick_diggable":{},
-			"tag:minecraft:is_pickaxe_item_destructible":{},
+			"tag:wood": {},
+			"tag:hoe": {},
+			"tag:stone_pick_diggable": {},
+			"tag:minecraft:is_pickaxe_item_destructible": {},
 			"minecraft:map_color": "#d6ca1e"
 		},
 		"permutations": [
 			{
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
-				"components": {"minecraft:transformation": {"rotation": [0,0,0]}}
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
+				}
 			},
 			{
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
-				"components": {"minecraft:transformation": {"rotation": [0,180,0]}}
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
 			},
 			{
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
-				"components": {"minecraft:transformation": {"rotation": [0,90,0]}}
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
 			},
 			{
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
-				"components": {"minecraft:transformation": {"rotation": [0,270,0]}}
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						]
+					}
+				}
 			}
 		]
 	}

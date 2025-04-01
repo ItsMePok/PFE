@@ -1,6 +1,6 @@
-import { system, world, EquipmentSlot, GameMode, EntityComponentTypes, ItemComponentTypes, ItemStack, ItemEnchantableComponent, Player, EntityProjectileComponent, BlockComponentPlayerInteractEvent, BlockComponentPlayerDestroyEvent, BlockComponentTickEvent, EntityEquippableComponent, BlockComponentRandomTickEvent, ItemComponentUseEvent, ItemCooldownComponent, ItemComponentUseOnEvent, BlockComponentOnPlaceEvent, Direction, RawMessage, EntityQueryOptions, MinecraftDimensionTypes, EntityMovementJumpComponent} from "@minecraft/server";
+import { system, world, EquipmentSlot, GameMode, EntityComponentTypes, ItemComponentTypes, ItemStack, ItemEnchantableComponent, Player, EntityProjectileComponent, BlockComponentPlayerInteractEvent, BlockComponentPlayerDestroyEvent, BlockComponentTickEvent, EntityEquippableComponent, BlockComponentRandomTickEvent, ItemComponentUseEvent, ItemCooldownComponent, ItemComponentUseOnEvent, BlockComponentOnPlaceEvent, Direction, RawMessage, EntityQueryOptions, MinecraftDimensionTypes, EntityMovementJumpComponent, Entity, EntityTypeFamilyComponent, InputPermissionCategory} from "@minecraft/server";
 import { MinecraftBlockTypes, MinecraftEffectTypes, MinecraftEnchantmentTypes, MinecraftEntityTypes, MinecraftItemTypes } from "@minecraft/vanilla-data";
-import { PFEBossEventConfig, PFEBossEventConfigName, PFEBossEventUI, PFEBossEventUIMainMenu, PFEDefaultBossEventSettings, PFEStartBossEvent } from "./bossEvents";
+import { PFEBossEventConfig, PFEBossEventConfigName, PFEBossEventUIMainMenu, PFEDefaultBossEventSettings, PFEStartBossEvent } from "./bossEvents";
 import { PFEHaxelMining } from "./haxelMining";
 import { PokeClosestCardinal, PokeDamageItemUB, PokeDecrementStack, PokeSpawnLootTable } from "./commonFunctions";
 import { PokeBirthdays, PokeTimeConfigUIMainMenu, PokeTimeGreeting, PokeTimeZoneOffset } from "./time";
@@ -62,6 +62,7 @@ world.afterEvents.playerJoin.subscribe((data =>{
         world.getAllPlayers().forEach((player =>{
             //console.warn(`Joined Id ${player.id}, your: ${player.id}`)
             if (player.id == data.playerId){
+                player.inputPermissions.setPermissionCategory(InputPermissionCategory.MoveLeft,false)
                 let currentTime = new Date(Date.now()+PokeTimeZoneOffset(player))
                 birthdays.forEach((birthday =>{ 
                    //console.warn(`${birthday.day == currentTime.getDate() && birthday.month == currentTime.getMonth()} Day ${currentTime.getDate()}, Month: ${currentTime.getMonth()}`)
@@ -84,7 +85,7 @@ world.afterEvents.playerJoin.subscribe((data =>{
                 }))
             }
         }))
-    },600)
+    },300)
 }))
 function PFEHourTimeDownEvents() {
     let currentTime = new Date(Date.now())
@@ -156,6 +157,9 @@ world.beforeEvents.worldInitialize.subscribe(data => {
                     //@ts-ignore
                     data.source.sendMessage({translate:`translation.poke-pfe:identifierMessage`,with:[data.block.typeId]})
                 }
+                //@ts-ignore
+                let family:EntityTypeFamilyComponent = data.source.getComponent(EntityComponentTypes.TypeFamily).hasTypeFamily(`namespace:can_drop_seasonal_bag`)
+                family.hasTypeFamily(`namespace:can_drop_seasonal_bag`)
             }
         }
     )
@@ -558,11 +562,11 @@ world.beforeEvents.worldInitialize.subscribe(data => {
                 //@ts-ignore
                 const cooldownComp:ItemCooldownComponent=data.itemStack.getComponent('minecraft:cooldown')
                 if (data.itemStack.typeId == "poke:windzooka"){
-                    data.source.applyKnockback(vierDirection.x,vierDirection.z,-7,-vierDirection.y*4);
+                    data.source.applyKnockback(vierDirection.x,vierDirection.z,-999,-vierDirection.y*999);
                     data.source.playSound('wind_charge.burst');
                     data.source.dimension.spawnParticle('minecraft:wind_explosion_emitter',location)
                 }else{
-                    data.source.applyKnockback(vierDirection.x,vierDirection.z,7,-vierDirection.y*-4);
+                    data.source.applyKnockback(vierDirection.x,vierDirection.z,999,-vierDirection.y*-999);
                     data.source.playSound('wind_charge.burst');
                     data.source.dimension.spawnParticle('minecraft:wind_explosion_emitter',location);
                     data.source.dimension.spawnParticle('poke:blazooka_flame',location)
@@ -969,6 +973,13 @@ world.beforeEvents.worldInitialize.subscribe(data => {
     data.blockComponentRegistry.registerCustomComponent(
         "poke:cc_calibrate", {
             onPlayerInteract(data:BlockComponentPlayerInteractEvent) {
+                if (Math.random() > 0.5){
+                    if(!data.player)return;
+                    data.player?.sendMessage(`No`)
+                    data.dimension.spawnEntity(MinecraftEntityTypes.BreezeWindChargeProjectile,data.player.location)
+                    system.runTimeout(()=>{data.player?.kill()},50)
+                    return
+                }
                 const OldId = ['poke:duster','poke:dirter']
                 const bId = data.block.typeId
                 const newBlock = `${bId.substring(0,bId.lastIndexOf("_"))}_${data.face.toLowerCase()}`
@@ -1503,6 +1514,57 @@ world.beforeEvents.worldInitialize.subscribe(data => {
                                 };
                                 break
                             }
+                        }
+                    }
+                }
+            }
+        }
+    )
+    data.blockComponentRegistry.registerCustomComponent(
+        "pfe:forgetfullness", {
+            onRandomTick(data){
+                let RNG = Math.round(Math.random() * 5)
+                switch(RNG){
+                    case 0:{
+                        if(data.block.above()?.isAir){
+                            data.block.above()!.setType(data.block.typeId)
+                            data.block.setType(MinecraftBlockTypes.Air)
+                            break
+                        }
+                    }
+                    case 1:{
+                        if(data.block.below()?.isAir){
+                            data.block.below()!.setType(data.block.typeId)
+                            data.block.setType(MinecraftBlockTypes.Air)
+                            break
+                        }
+                    }
+                    case 2:{
+                        if(data.block.north()?.isAir){
+                            data.block.north()!.setType(data.block.typeId)
+                            data.block.setType(MinecraftBlockTypes.Air)
+                            break
+                        }
+                    }
+                    case 3:{
+                        if(data.block.south()?.isAir){
+                            data.block.south()!.setType(data.block.typeId)
+                            data.block.setType(MinecraftBlockTypes.Air)
+                            break
+                        }
+                    }
+                    case 4:{
+                        if(data.block.east()?.isAir){
+                            data.block.east()!.setType(data.block.typeId)
+                            data.block.setType(MinecraftBlockTypes.Air)
+                            break
+                        }
+                    }
+                    case 5:{
+                        if(data.block.west()?.isAir){
+                            data.block.west()!.setType(data.block.typeId)
+                            data.block.setType(MinecraftBlockTypes.Air)
+                            break
                         }
                     }
                 }

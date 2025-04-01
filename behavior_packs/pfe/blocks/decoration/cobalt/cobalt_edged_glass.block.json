@@ -29,7 +29,10 @@
 			"tag:minecraft:glass": {},
 			"tag:stone_pick_diggable": {},
 			"tag:minecraft:is_pickaxe_item_destructible": {},
-			"minecraft:light_dampening": 0
+			"minecraft:light_dampening": 0,
+			"minecraft:custom_components": [
+				"pfe:forgetfullness"
+			]
 		}
 	}
 }

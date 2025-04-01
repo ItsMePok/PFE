@@ -1,6 +1,8 @@
-{"format_version": "1.19.0",
+{
+	"format_version": "1.19.0",
 	"tiers": [
-		{"total_exp_required": 0,
+		{
+			"total_exp_required": 0,
 			"groups": [
 				{
 					"trades": [
@@ -14,7 +16,7 @@
 							],
 							"gives": [
 								{
-									"item": "poke:iron_token"
+									"item": "poke:copper_token"
 								}
 							]
 						},
@@ -27,7 +29,7 @@
 							],
 							"gives": [
 								{
-									"item": "poke:gold_token"
+									"item": "poke:copper_token"
 								}
 							]
 						},
@@ -40,7 +42,7 @@
 							],
 							"gives": [
 								{
-									"item": "poke:gold_token"
+									"item": "poke:copper_token"
 								}
 							]
 						},
@@ -53,7 +55,7 @@
 							],
 							"gives": [
 								{
-									"item": "poke:gold_token",
+									"item": "poke:copper_token",
 									"quantity": 2
 								}
 							]
@@ -67,7 +69,7 @@
 							],
 							"gives": [
 								{
-									"item": "poke:gold_token"
+									"item": "poke:copper_token"
 								}
 							]
 						},
@@ -80,7 +82,7 @@
 							],
 							"gives": [
 								{
-									"item": "poke:platinum_token"
+									"item": "poke:copper_token"
 								}
 							]
 						},
@@ -94,8 +96,8 @@
 							],
 							"gives": [
 								{
-									"item": "poke:iron_token",
-									"quantity":2
+									"item": "poke:copper_token",
+									"quantity": 1
 								}
 							]
 						},

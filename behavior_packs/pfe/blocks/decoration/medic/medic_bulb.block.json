@@ -4,7 +4,12 @@
 		"description": {
 			"identifier": "poke:medic_bulb",
 			"states": {
-				"pfe:color":{"values": {"min": 0,"max": 15}}
+				"pfe:color": {
+					"values": {
+						"min": 0,
+						"max": 15
+					}
+				}
 			}
 		},
 		"components": {
@@ -16,7 +21,14 @@
 			"minecraft:selection_box": true,
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 5,
-				"item_specific_speeds": [{"item":{"tags": "q.any_tag('minecraft:is_pickaxe')"},"destroy_speed": 0.75}]
+				"item_specific_speeds": [
+					{
+						"item": {
+							"tags": "q.any_tag('minecraft:is_pickaxe')"
+						},
+						"destroy_speed": 0.75
+					}
+				]
 			},
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 12
@@ -24,11 +36,12 @@
 			"tag:pfe": {},
 			"tag:metal": {},
 			"tag:minecraft:metal": {},
-			"tag:stone_pick_diggable":{},
-			"tag:minecraft:is_pickaxe_item_destructible":{},
+			"tag:stone_pick_diggable": {},
+			"tag:minecraft:is_pickaxe_item_destructible": {},
 			"minecraft:light_emission": 15,
 			"minecraft:map_color": "#1815c5",
-			"minecraft:custom_components":[
+			"minecraft:custom_components": [
+				"pfe:forgetfullness",
 				"poke:cc_bulbs"
 			]
 		}

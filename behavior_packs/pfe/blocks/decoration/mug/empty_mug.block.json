@@ -68,9 +68,12 @@
 			},
 			"minecraft:light_dampening": 0,
 			"tag:pfe": {},
-			"tag:stone_pick_diggable":{},
-			"tag:minecraft:is_pickaxe_item_destructible":{},
-			"minecraft:map_color": "#8e837b"
+			"tag:stone_pick_diggable": {},
+			"tag:minecraft:is_pickaxe_item_destructible": {},
+			"minecraft:map_color": "#8e837b",
+			"minecraft:custom_components": [
+				"pfe:forgetfullness"
+			]
 		},
 		"permutations": [
 			{

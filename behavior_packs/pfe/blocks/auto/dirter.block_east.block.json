@@ -33,6 +33,7 @@
 			"minecraft:map_color": "#2e2f31",
 			"minecraft:tick": {"interval_range":[10,10]},
 			"minecraft:custom_components":[
+				"pfe:forgetfullness",
 				"poke:cc_dirter",
 				"poke:cc_calibrate"
 			]

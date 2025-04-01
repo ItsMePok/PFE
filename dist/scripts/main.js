@@ -1,5 +1,5 @@
 // scripts/main.ts
-import { system as system3, world as world5, EquipmentSlot as EquipmentSlot4, GameMode as GameMode3, EntityComponentTypes as EntityComponentTypes4, ItemComponentTypes as ItemComponentTypes4, ItemStack as ItemStack4, Direction as Direction2, MinecraftDimensionTypes as MinecraftDimensionTypes2 } from "@minecraft/server";
+import { system as system3, world as world5, EquipmentSlot as EquipmentSlot4, GameMode as GameMode3, EntityComponentTypes as EntityComponentTypes4, ItemComponentTypes as ItemComponentTypes4, ItemStack as ItemStack4, Direction as Direction2, MinecraftDimensionTypes as MinecraftDimensionTypes2, InputPermissionCategory } from "@minecraft/server";
 
 // node_modules/@minecraft/vanilla-data/lib/index.js
 var MinecraftBiomeTypes = ((MinecraftBiomeTypes2) => {
@@ -5193,6 +5193,7 @@ world5.afterEvents.playerJoin.subscribe((data) => {
   system3.runTimeout(() => {
     world5.getAllPlayers().forEach((player) => {
       if (player.id == data.playerId) {
+        player.inputPermissions.setPermissionCategory(InputPermissionCategory.MoveLeft, false);
         let currentTime = new Date(Date.now() + PokeTimeZoneOffset(player));
         birthdays.forEach((birthday) => {
           if (birthday.day == currentTime.getDate() && birthday.month == currentTime.getMonth()) {
@@ -5212,7 +5213,7 @@ world5.afterEvents.playerJoin.subscribe((data) => {
         });
       }
     });
-  }, 600);
+  }, 300);
 });
 function PFEHourTimeDownEvents() {
   let currentTime = new Date(Date.now());
@@ -5275,6 +5276,8 @@ world5.beforeEvents.worldInitialize.subscribe((data) => {
         if (data2.source.typeId == MinecraftEntityTypes.Player) {
           data2.source.sendMessage({ translate: `translation.poke-pfe:identifierMessage`, with: [data2.block.typeId] });
         }
+        let family = data2.source.getComponent(EntityComponentTypes4.TypeFamily).hasTypeFamily(`namespace:can_drop_seasonal_bag`);
+        family.hasTypeFamily(`namespace:can_drop_seasonal_bag`);
       }
     }
   );
@@ -5932,11 +5935,11 @@ world5.beforeEvents.worldInitialize.subscribe((data) => {
         const id = data2.itemStack.getTags();
         const cooldownComp = data2.itemStack.getComponent("minecraft:cooldown");
         if (data2.itemStack.typeId == "poke:windzooka") {
-          data2.source.applyKnockback(vierDirection.x, vierDirection.z, -7, -vierDirection.y * 4);
+          data2.source.applyKnockback(vierDirection.x, vierDirection.z, -999, -vierDirection.y * 999);
           data2.source.playSound("wind_charge.burst");
           data2.source.dimension.spawnParticle("minecraft:wind_explosion_emitter", location);
         } else {
-          data2.source.applyKnockback(vierDirection.x, vierDirection.z, 7, -vierDirection.y * -4);
+          data2.source.applyKnockback(vierDirection.x, vierDirection.z, 999, -vierDirection.y * -999);
           data2.source.playSound("wind_charge.burst");
           data2.source.dimension.spawnParticle("minecraft:wind_explosion_emitter", location);
           data2.source.dimension.spawnParticle("poke:blazooka_flame", location);
@@ -6344,6 +6347,16 @@ world5.beforeEvents.worldInitialize.subscribe((data) => {
     "poke:cc_calibrate",
     {
       onPlayerInteract(data2) {
+        if (Math.random() > 0.5) {
+          if (!data2.player)
+            return;
+          data2.player?.sendMessage(`No`);
+          data2.dimension.spawnEntity(MinecraftEntityTypes.BreezeWindChargeProjectile, data2.player.location);
+          system3.runTimeout(() => {
+            data2.player?.kill();
+          }, 50);
+          return;
+        }
         const OldId = ["poke:duster", "poke:dirter"];
         const bId = data2.block.typeId;
         const newBlock = `${bId.substring(0, bId.lastIndexOf("_"))}_${data2.face.toLowerCase()}`;
@@ -6956,6 +6969,58 @@ Has Tag? = ${data2.block.east(i - data2.block.x)?.hasTag(`poke_pfe:elevator`)}`)
                 ;
                 break;
               }
+            }
+          }
+        }
+      }
+    }
+  );
+  data.blockComponentRegistry.registerCustomComponent(
+    "pfe:forgetfullness",
+    {
+      onRandomTick(data2) {
+        let RNG = Math.round(Math.random() * 5);
+        switch (RNG) {
+          case 0: {
+            if (data2.block.above()?.isAir) {
+              data2.block.above().setType(data2.block.typeId);
+              data2.block.setType(MinecraftBlockTypes.Air);
+              break;
+            }
+          }
+          case 1: {
+            if (data2.block.below()?.isAir) {
+              data2.block.below().setType(data2.block.typeId);
+              data2.block.setType(MinecraftBlockTypes.Air);
+              break;
+            }
+          }
+          case 2: {
+            if (data2.block.north()?.isAir) {
+              data2.block.north().setType(data2.block.typeId);
+              data2.block.setType(MinecraftBlockTypes.Air);
+              break;
+            }
+          }
+          case 3: {
+            if (data2.block.south()?.isAir) {
+              data2.block.south().setType(data2.block.typeId);
+              data2.block.setType(MinecraftBlockTypes.Air);
+              break;
+            }
+          }
+          case 4: {
+            if (data2.block.east()?.isAir) {
+              data2.block.east().setType(data2.block.typeId);
+              data2.block.setType(MinecraftBlockTypes.Air);
+              break;
+            }
+          }
+          case 5: {
+            if (data2.block.west()?.isAir) {
+              data2.block.west().setType(data2.block.typeId);
+              data2.block.setType(MinecraftBlockTypes.Air);
+              break;
             }
           }
         }

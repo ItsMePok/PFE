@@ -23,9 +23,12 @@
 			"tag:pfe": {},
 			"tag:metal": {},
 			"tag:minecraft:metal": {},
-			"tag:stone_pick_diggable":{},
-			"tag:minecraft:is_pickaxe_item_destructible":{},
-			"minecraft:map_color": "#141414"
+			"tag:stone_pick_diggable": {},
+			"tag:minecraft:is_pickaxe_item_destructible": {},
+			"minecraft:map_color": "#141414",
+			"minecraft:custom_components": [
+				"pfe:forgetfullness"
+			]
 		}
 	}
 }

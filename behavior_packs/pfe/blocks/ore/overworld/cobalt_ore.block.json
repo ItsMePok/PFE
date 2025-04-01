@@ -29,6 +29,7 @@
 			"minecraft:material_instances": {"*": {"texture": "poke_cobalt_ore"}},
 			"minecraft:loot": "loot_tables/poke/pfe/cobalt_ore.loot.json",
 			"minecraft:custom_components":[
+				"pfe:forgetfullness",
 				"poke:fortune"
 			]
 		}

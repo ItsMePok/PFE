@@ -12,11 +12,18 @@
 			"tag:pfe": {},
 			"tag:metal": {},
 			"tag:minecraft:metal": {},
-			"tag:stone_pick_diggable":{},
-			"tag:minecraft:is_pickaxe_item_destructible":{},
+			"tag:stone_pick_diggable": {},
+			"tag:minecraft:is_pickaxe_item_destructible": {},
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 22.5,
-				"item_specific_speeds": [{"item":{"tags": "q.any_tag('minecraft:is_pickaxe')"},"destroy_speed": 3.4}]
+				"item_specific_speeds": [
+					{
+						"item": {
+							"tags": "q.any_tag('minecraft:is_pickaxe')"
+						},
+						"destroy_speed": 3.4
+					}
+				]
 			},
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 22.5
@@ -25,37 +32,19 @@
 				"redstone_conductor": true,
 				"allows_wire_to_step_down": true
 			},
-			"minecraft:geometry":{"identifier": "minecraft:geometry.full_block"},
-			"minecraft:material_instances": {"*": {"texture": "poke_demonic_ore"}},
-			"minecraft:loot": "loot_tables/poke/pfe/demonic_ore.loot.json"
-			,
-			"minecraft:custom_components":[
+			"minecraft:geometry": {
+				"identifier": "minecraft:geometry.full_block"
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "poke_demonic_ore"
+				}
+			},
+			"minecraft:loot": "loot_tables/poke/pfe/demonic_ore.loot.json",
+			"minecraft:custom_components": [
+				"pfe:forgetfullness",
 				"poke:fortune"
 			]
 		}
-/*,
-		"events": {
-			"tnt": {
-				"randomize": [
-					{
-						"run_command": {
-							"command": [
-								"summon tnt ~~~",
-								"playsound note.didgeridoo @p[r=10] ~~~"
-							]
-						},
-						"weight": 1
-					},
-					{
-						"run_command": {
-							"command": [
-								"playsound note.chime @p[r=10]"
-							]
-						},
-						"weight": 100
-					}
-				]
-			}
-		}*/
 	}
 }

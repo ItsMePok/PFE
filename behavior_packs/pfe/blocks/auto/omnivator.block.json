@@ -45,6 +45,7 @@
 			"tag:poke_pfe:elevator": {},
 			"minecraft:map_color": "#202025",
 			"minecraft:custom_components": [
+				"pfe:forgetfullness",
 				"poke_pfe:omnivator"
 			]
 		}

@@ -14,9 +14,12 @@
 			},
 			"minecraft:light_emission": 8,
 			"tag:pfe": {},
+			"minecraft:custom_components": [
+				"pfe:forgetfullness"
+			],
 			"tag:hoe": {},
-			"tag:stone_pick_diggable":{},
-			"tag:minecraft:is_pickaxe_item_destructible":{},
+			"tag:stone_pick_diggable": {},
+			"tag:minecraft:is_pickaxe_item_destructible": {},
 			"minecraft:map_color": "#c5371e"
 		}
 	}

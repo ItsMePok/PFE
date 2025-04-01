@@ -1,6 +1,8 @@
-{"format_version": "1.19.0",
+{
+	"format_version": "1.19.0",
 	"tiers": [
-		{"total_exp_required": 0,
+		{
+			"total_exp_required": 0,
 			"groups": [
 				{
 					"trades": [
@@ -9,7 +11,7 @@
 							"wants": [
 								{
 									"item": "paper",
-									"quantity": 1
+									"quantity": 64
 								}
 							],
 							"gives": [
@@ -23,7 +25,7 @@
 							"wants": [
 								{
 									"item": "paper",
-									"quantity": 1
+									"quantity": 64
 								}
 							],
 							"gives": [
@@ -37,7 +39,7 @@
 							"wants": [
 								{
 									"item": "paper",
-									"quantity": 1
+									"quantity": 64
 								}
 							],
 							"gives": [
@@ -51,7 +53,7 @@
 							"wants": [
 								{
 									"item": "paper",
-									"quantity": 1
+									"quantity": 64
 								}
 							],
 							"gives": [
@@ -64,7 +66,7 @@
 							"max_uses": 2147483647,
 							"wants": [
 								{
-									"item": "poke:iron_token",
+									"item": "poke:platinum_token",
 									"quantity": 2
 								}
 							],

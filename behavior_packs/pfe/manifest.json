@@ -1,13 +1,13 @@
 {
 	"header": {
-		"name": "v1.2.80 §uPFE §cBP§r",
+		"name": "v2 §uPFE §cBP§r",
 		"description": "§6By:§u ItsMePok §f& §dO2God §7||§e Wiki: https://pfewiki.gitbook.io/home§r",
 		"pack_scope": "world",
-		"uuid": "bbc63f5f-c139-4403-a628-63b573ae0656",
+		"uuid": "5b9799dd-89fb-4d18-bb04-6b5fb7e192dc",
 		"version": [
-			1,
 			2,
-			80
+			0,
+			0
 		],
 		"min_engine_version": [
 			1,
@@ -40,11 +40,11 @@
 	],
 	"dependencies": [
 		{ //RP Manifest
-			"uuid": "88bd8626-d5d6-4487-afd9-c1a5761b4c24",
+			"uuid": "fc4a6f08-f630-4862-a372-b4b9d07fb831",
 			"version": [
-				1,
 				2,
-				80
+				0,
+				0
 			]
 		},
 		{

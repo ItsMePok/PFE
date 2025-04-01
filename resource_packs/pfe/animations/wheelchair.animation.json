@@ -1,0 +1,22 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.wheelchair.drive": {
+			"loop": true,
+			"bones": {
+				"wheel_back_right": {
+					"rotation": ["query.modified_distance_moved * 20", 0, 0]
+				},
+				"wheel_back_left": {
+					"rotation": ["query.modified_distance_moved * 20", 0, 0]
+				},
+				"steering_wheel": {
+					"rotation": [0, 0, "variable.steering * -0.6"]
+				},
+				"root": {
+					"rotation": [0, 0, "v.steering /8"]
+				}
+			}
+		}
+	}
+}

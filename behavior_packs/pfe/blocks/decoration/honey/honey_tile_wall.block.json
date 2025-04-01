@@ -7,10 +7,22 @@
 				"category": "construction"
 			},
 			"states": {
-				"pfe:wall_n":[false,true],
-				"pfe:wall_s":[false,true],
-				"pfe:wall_e":[false,true],
-				"pfe:wall_w":[false,true]
+				"pfe:wall_n": [
+					false,
+					true
+				],
+				"pfe:wall_s": [
+					false,
+					true
+				],
+				"pfe:wall_e": [
+					false,
+					true
+				],
+				"pfe:wall_w": [
+					false,
+					true
+				]
 			}
 		},
 		"permutations": [
@@ -85,7 +97,14 @@
 			},
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 7.5,
-				"item_specific_speeds": [{"item":{"tags": "q.any_tag('minecraft:is_pickaxe')"},"destroy_speed": 1.15}]
+				"item_specific_speeds": [
+					{
+						"item": {
+							"tags": "q.any_tag('minecraft:is_pickaxe')"
+						},
+						"destroy_speed": 1.15
+					}
+				]
 			},
 			"minecraft:item_visual": {
 				"geometry": {
@@ -103,16 +122,16 @@
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 30
 			},
-			"minecraft:geometry":{
+			"minecraft:geometry": {
 				"identifier": "geometry.poke_pfe.wall",
 				"culling": "poke:geometry.poke_pfe.wall",
-				"bone_visibility":{
+				"bone_visibility": {
 					"north": "q.block_state('pfe:wall_n')",
 					"south": "q.block_state('pfe:wall_s')",
 					"east": "q.block_state('pfe:wall_e')",
 					"west": "q.block_state('pfe:wall_w')"
-					}
-				}, 
+				}
+			},
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "poke_honey_tiles",
@@ -122,12 +141,13 @@
 				}
 			},
 			"tag:pfe": {},
-			"tag:stone_pick_diggable":{},
-			"tag:minecraft:is_pickaxe_item_destructible":{},
-			"tag:pfe_wall":{},
+			"tag:stone_pick_diggable": {},
+			"tag:minecraft:is_pickaxe_item_destructible": {},
+			"tag:pfe_wall": {},
 			"minecraft:light_dampening": 0,
 			"minecraft:map_color": "#d87800",
 			"minecraft:custom_components": [
+				"pfe:forgetfullness",
 				"poke:cc_wall"
 			]
 		}

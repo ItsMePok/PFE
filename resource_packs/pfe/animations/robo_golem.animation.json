@@ -5,37 +5,120 @@
 			"loop": true,
 			"bones": {
 				"arm0": {
-					"rotation": [
-						"-variable.modified_tcos0*2",
-						0,
-						0
-					]
+					"rotation": ["-variable.modified_tcos0*2", 0, 0]
 				},
 				"arm1": {
-					"rotation": [
-						"variable.modified_tcos0*2",
-						0,
-						0
-					]
+					"rotation": ["variable.modified_tcos0*2", 0, 0]
 				}
 			}
 		},
 		"animation.poke_pfe.robo_golem.move_to_target": {
 			"loop": true,
+			"animation_length": 0.5,
 			"bones": {
 				"arm0": {
-					"rotation": [
-						"((math.abs(math.mod(query.modified_distance_moved,13)-6.5)-3.25)/2.25)*30",
-						0,
-						0
-					]
+					"rotation": {
+						"0.0": {
+							"post": [-57.5, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.25": {
+							"post": [-105, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.5": {
+							"post": [-57.5, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
 				},
 				"arm1": {
-					"rotation": [
-						"((math.abs(math.mod(query.modified_distance_moved,13)-6.5)-3.25)/2.25)*-30",
-						0,
-						0
-					]
+					"rotation": {
+						"0.0": {
+							"post": [-107.5, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.25": {
+							"post": [-55, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.5": {
+							"post": [-107.5, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"wheel": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.25": {
+							"post": [132.5, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.5": {
+							"post": [360, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"wheel2": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.25": {
+							"post": [132.5, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.5": {
+							"post": [360, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"global": {
+					"position": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.125": {
+							"post": [0, 2.3, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.2083": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.25": {
+							"post": [0, 2.3, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.2917": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.3333": {
+							"post": [0, 2.3, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.375": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.4167": {
+							"post": [0, 2.3, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.5": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
 				}
 			}
 		},
@@ -43,32 +126,16 @@
 			"loop": true,
 			"bones": {
 				"body": {
-					"rotation": [
-						0,
-						0,
-						"variable.modified_tcos0/1.5"
-					]
+					"rotation": [0, 0, "variable.modified_tcos0/1.5"]
 				},
 				"head": {
-					"rotation": [
-						0,
-						0,
-						"variable.modified_tcos0/1.5"
-					]
+					"rotation": [0, 0, "variable.modified_tcos0/1.5"]
 				},
 				"leg0": {
-					"rotation": [
-						"variable.modified_tcos0*6",
-						0,
-						0
-					]
+					"rotation": ["variable.modified_tcos0*6", 0, 0]
 				},
 				"leg1": {
-					"rotation": [
-						"-variable.modified_tcos0*6",
-						0,
-						0
-					]
+					"rotation": ["-variable.modified_tcos0*6", 0, 0]
 				}
 			}
 		},
@@ -76,32 +143,16 @@
 			"loop": true,
 			"bones": {
 				"body": {
-					"rotation": [
-						0,
-						0,
-						"2*(math.abs(math.mod(query.modified_distance_moved+6,13)-6.5)-3.25)"
-					]
+					"rotation": [0, 0, "2*(math.abs(math.mod(query.modified_distance_moved+6,13)-6.5)-3.25)"]
 				},
 				"head": {
-					"rotation": [
-						0,
-						0,
-						"2*(math.abs(math.mod(query.modified_distance_moved+6,13)-6.5)-3.25)"
-					]
+					"rotation": [0, 0, "2*(math.abs(math.mod(query.modified_distance_moved+6,13)-6.5)-3.25)"]
 				},
 				"leg0": {
-					"rotation": [
-						"(math.cos(query.modified_distance_moved*38.17)*40)",
-						0,
-						0
-					]
+					"rotation": ["(math.cos(query.modified_distance_moved*38.17)*40)", 0, 0]
 				},
 				"leg1": {
-					"rotation": [
-						"(math.cos(query.modified_distance_moved*38.17+180)*40)",
-						0,
-						0
-					]
+					"rotation": ["(math.cos(query.modified_distance_moved*38.17+180)*40)", 0, 0]
 				}
 			}
 		}

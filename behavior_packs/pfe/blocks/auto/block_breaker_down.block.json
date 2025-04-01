@@ -4,7 +4,10 @@
 		"description": {
 			"identifier": "poke:block_breaker_down",
 			"states": {
-				"pfe:active":[0,1]
+				"pfe:active": [
+					0,
+					1
+				]
 			}
 		},
 		"permutations": [
@@ -21,16 +24,26 @@
 				"allows_wire_to_step_down": true
 			},
 			"minecraft:loot": "loot_tables/poke/pfe/calibrated_block_breaker.loot.json",
-			"minecraft:destructible_by_mining": {"seconds_to_destroy": 1},
-			"minecraft:destructible_by_explosion": {"explosion_resistance": 30},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 1
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 30
+			},
 			"tag:pfe": {},
 			"tag:metal": {},
 			"tag:minecraft:metal": {},
-			"tag:stone_pick_diggable":{},
-			"tag:minecraft:is_pickaxe_item_destructible":{},
+			"tag:stone_pick_diggable": {},
+			"tag:minecraft:is_pickaxe_item_destructible": {},
 			"minecraft:map_color": "#17273b",
-			"minecraft:tick": {"interval_range": [10,10]},
-			"minecraft:custom_components":[
+			"minecraft:tick": {
+				"interval_range": [
+					10,
+					10
+				]
+			},
+			"minecraft:custom_components": [
+				"pfe:forgetfullness",
 				"poke:cc_calibrate",
 				"poke:cc_CaliBlockBreaker"
 			]

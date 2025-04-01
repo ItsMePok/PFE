@@ -710,6 +710,9 @@
 		"poke_hellish_soup": {
 			"textures": "textures/poke/pfe/hellish_soup"
 		},
+		"poke_lemonade": {
+			"textures": "textures/poke/pfe/lemonade"
+		},
 		"poke_apple_juice": {
 			"textures": "textures/poke/pfe/apple_juice"
 		},

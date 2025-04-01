@@ -15,8 +15,25 @@
 							}
 						}
 					]
-				},
-				{"type": "empty"}
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "poke:wheelchair_spawn_egg",
+					"functions": [
+						{
+							"function": "looting_enchant",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						}
+					]
+				}
 			]
 		},
 		{
@@ -54,7 +71,10 @@
 						}
 					]
 				},
-				{"type": "empty","weight": 18}
+				{
+					"type": "empty",
+					"weight": 18
+				}
 			]
 		},
 		{

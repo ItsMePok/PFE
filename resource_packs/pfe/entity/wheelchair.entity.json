@@ -1,0 +1,30 @@
+{
+	"format_version": "1.19.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "poke:wheelchair",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/wheelchair"
+			},
+			"geometry": {
+				"default": "geometry.wheelchair"
+			},
+			"render_controllers": ["controller.render.default"],
+			"animations": {
+				"drive": "animation.wheelchair.drive"
+			},
+			"scripts": {
+				"initialize": ["variable.steering = 0;"],
+				"pre_animation": ["query.has_rider ? (variable.steering = Math.lerp(variable.steering, query.yaw_speed, 0.15));"],
+				"animate": ["drive"]
+			},
+			"spawn_egg": {
+				"base_color": "#1c1c1c",
+				"overlay_color": "#ffffff"
+			}
+		}
+	}
+}

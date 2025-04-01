@@ -3,9 +3,14 @@
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:block_breaker",
-			"menu_category": {"category": "items"},
+			"menu_category": {
+				"category": "items"
+			},
 			"states": {
-				"pfe:active":[0,1]
+				"pfe:active": [
+					0,
+					1
+				]
 			}
 		},
 		"permutations": [
@@ -21,16 +26,26 @@
 				"redstone_conductor": true,
 				"allows_wire_to_step_down": true
 			},
-			"minecraft:destructible_by_mining": {"seconds_to_destroy": 1},
-			"minecraft:destructible_by_explosion": {"explosion_resistance": 30},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 1
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 30
+			},
 			"tag:pfe": {},
 			"tag:metal": {},
 			"tag:minecraft:metal": {},
-			"tag:stone_pick_diggable":{},
-			"tag:minecraft:is_pickaxe_item_destructible":{},
+			"tag:stone_pick_diggable": {},
+			"tag:minecraft:is_pickaxe_item_destructible": {},
 			"minecraft:map_color": "#17273b",
-			"minecraft:tick": {"interval_range": [60,60]},
-			"minecraft:custom_components":[
+			"minecraft:tick": {
+				"interval_range": [
+					60,
+					60
+				]
+			},
+			"minecraft:custom_components": [
+				"pfe:forgetfullness",
 				"poke:cc_block_breaker"
 			]
 		}

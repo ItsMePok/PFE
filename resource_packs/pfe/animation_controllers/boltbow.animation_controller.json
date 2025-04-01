@@ -1,16 +1,45 @@
 {
 	"format_version": "1.19.0",
 	"animation_controllers": {
+		"controller.animation.poke_pfe.testParticle": {
+			"initial_state": "on",
+			"states": {
+				"on": {
+					"animations": [
+						"on"
+					],
+					"transitions": [
+						{
+							"off": "!query.is_item_name_any('slot.weapon.offhand','poke:maxwell')"
+						}
+					]
+				},
+				"off": {
+					"transitions": [
+						{
+							"on": "query.is_item_name_any('slot.weapon.offhand','poke:maxwell')"
+						}
+					]
+				}
+			}
+		},
 		"controller.animation.poke_pfe.boltbow.using": {
 			"states": {
 				"default": {
-					"animations": ["third_person_hold"],
+					"animations": [
+						"third_person_hold"
+					],
 					"transitions": [
-						{"active": "q.is_using_item"}
+						{
+							"active": "q.is_using_item"
+						}
 					]
 				},
 				"active": {
-					"animations": ["boltbow_hold_3p", "third_person_hold"]
+					"animations": [
+						"boltbow_hold_3p",
+						"third_person_hold"
+					]
 				}
 			}
 		},
@@ -18,13 +47,19 @@
 			"states": {
 				"default": {
 					"transitions": [
-						{"shot": "q.is_using_item"}
+						{
+							"shot": "q.is_using_item"
+						}
 					]
 				},
 				"shot": {
-					"animations": ["shoot"],
+					"animations": [
+						"shoot"
+					],
 					"transitions": [
-						{"default": "q.all_animations_finished"}
+						{
+							"default": "q.all_animations_finished"
+						}
 					]
 				}
 			}

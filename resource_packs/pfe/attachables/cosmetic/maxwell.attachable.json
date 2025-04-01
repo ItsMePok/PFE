@@ -19,7 +19,11 @@
 			},
 			"animations": {
 				"first_person_hold": "animation.poke_pfe.maxwell.first_person_hold",
-				"third_person_hold": "animation.poke_pfe.maxwell.third_person_hold"
+				"on": "animation.poke_pfe.maxwell.third_person_hold",
+				"controller": "controller.animation.poke_pfe.testParticle"
+			},
+			"particle_effects": {
+				"test_particle": "poke:end_phantom_trail_particle"
 			},
 			"scripts": {
 				"animate": [
@@ -27,7 +31,7 @@
 						"first_person_hold": "c.is_first_person"
 					},
 					{
-						"third_person_hold": "!c.is_first_person"
+						"controller": "!c.is_first_person"
 					}
 				]
 			}

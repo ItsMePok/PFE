@@ -1,0 +1,36 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "poke:moolip",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/moolip"
+			},
+			"geometry": {
+				"default": "geometry.moolip"
+			},
+			"animations": {
+				"walk": "animation.moolip.walk",
+				"look_at_target": "animation.common.look_at_target",
+				"baby_transform": "animation.moolip.baby_transform"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.mooshroom.move"
+				},
+				{
+					"baby": "controller.animation.mooshroom.baby"
+				}
+			],
+			"render_controllers": ["controller.render.mooshroom"],
+			"spawn_egg": {
+				"base_color": "#1c1c1c",
+				"overlay_color": "#ffffff"
+			}
+		}
+	}
+}

@@ -199,6 +199,7 @@
         }
       },
       "minecraft:custom_components": [
+        "pfe:forgetfullness",
         "poke_pfe:fisher"
       ]
     }

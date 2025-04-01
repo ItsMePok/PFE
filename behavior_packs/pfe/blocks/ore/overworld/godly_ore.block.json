@@ -14,7 +14,14 @@
 			},
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 15,
-				"item_specific_speeds": [{"item":{"tags": "q.any_tag('minecraft:is_pickaxe')"},"destroy_speed": 2.25}]
+				"item_specific_speeds": [
+					{
+						"item": {
+							"tags": "q.any_tag('minecraft:is_pickaxe')"
+						},
+						"destroy_speed": 2.25
+					}
+				]
 			},
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 15
@@ -23,12 +30,19 @@
 			"tag:pfe": {},
 			"tag:metal": {},
 			"tag:minecraft:metal": {},
-			"tag:stone_pick_diggable":{},
-			"tag:minecraft:is_pickaxe_item_destructible":{},
-			"minecraft:geometry":{"identifier": "minecraft:geometry.full_block"},
-			"minecraft:material_instances": {"*": {"texture": "poke_godly_ore"}},
+			"tag:stone_pick_diggable": {},
+			"tag:minecraft:is_pickaxe_item_destructible": {},
+			"minecraft:geometry": {
+				"identifier": "minecraft:geometry.full_block"
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "poke_godly_ore"
+				}
+			},
 			"minecraft:loot": "loot_tables/poke/pfe/godly_ore.loot.json",
-			"minecraft:custom_components":[
+			"minecraft:custom_components": [
+				"pfe:forgetfullness",
 				"poke:fortune"
 			]
 		}

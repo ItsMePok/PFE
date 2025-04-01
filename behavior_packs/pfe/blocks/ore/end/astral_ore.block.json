@@ -14,7 +14,14 @@
 			},
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 15,
-				"item_specific_speeds": [{"item":{"tags": "q.any_tag('minecraft:is_pickaxe')"},"destroy_speed": 3}]
+				"item_specific_speeds": [
+					{
+						"item": {
+							"tags": "q.any_tag('minecraft:is_pickaxe')"
+						},
+						"destroy_speed": 3
+					}
+				]
 			},
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 45
@@ -23,10 +30,11 @@
 			"tag:pfe": {},
 			"tag:metal": {},
 			"tag:minecraft:metal": {},
-			"tag:stone_pick_diggable":{},
-			"tag:minecraft:is_pickaxe_item_destructible":{},
+			"tag:stone_pick_diggable": {},
+			"tag:minecraft:is_pickaxe_item_destructible": {},
 			"minecraft:loot": "loot_tables/poke/pfe/astral_ore.loot.json",
-			"minecraft:custom_components":[
+			"minecraft:custom_components": [
+				"pfe:forgetfullness",
 				"poke:fortune"
 			]
 		}

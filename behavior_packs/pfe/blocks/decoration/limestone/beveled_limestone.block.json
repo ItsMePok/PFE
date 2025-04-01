@@ -17,17 +17,27 @@
 			"minecraft:selection_box": true,
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 7.5,
-				"item_specific_speeds": [{"item":{"tags": "q.any_tag('minecraft:is_pickaxe')"},"destroy_speed": 1.15}]
+				"item_specific_speeds": [
+					{
+						"item": {
+							"tags": "q.any_tag('minecraft:is_pickaxe')"
+						},
+						"destroy_speed": 1.15
+					}
+				]
 			},
 			"tag:pfe": {},
 			"tag:stone": {},
 			"tag:minecraft:stone": {},
-			"tag:stone_pick_diggable":{},
-			"tag:minecraft:is_pickaxe_item_destructible":{},
+			"tag:stone_pick_diggable": {},
+			"tag:minecraft:is_pickaxe_item_destructible": {},
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 30
 			},
-			"minecraft:map_color": "#ededed"
+			"minecraft:map_color": "#ededed",
+			"minecraft:custom_components": [
+				"pfe:forgetfullness"
+			]
 		}
 	}
 }

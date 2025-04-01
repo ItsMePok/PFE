@@ -4,7 +4,11 @@
 		"description": {
 			"identifier": "poke:zombken_trophy",
 			"traits": {
-				"minecraft:placement_direction": {"enabled_states": ["minecraft:cardinal_direction"]}
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
+				}
 			}
 		},
 		"components": {
@@ -41,10 +45,20 @@
 					8
 				]
 			},
+			"minecraft:custom_components": [
+				"pfe:forgetfullness"
+			],
 			"minecraft:loot": "loot_tables/poke/pfe/zombken_trophy.loot.json",
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 7.5,
-				"item_specific_speeds": [{"item":{"tags": "q.any_tag('minecraft:is_pickaxe')"},"destroy_speed": 1.15}]
+				"item_specific_speeds": [
+					{
+						"item": {
+							"tags": "q.any_tag('minecraft:is_pickaxe')"
+						},
+						"destroy_speed": 1.15
+					}
+				]
 			},
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 200
@@ -63,8 +77,8 @@
 			"tag:pfe": {},
 			"tag:stone": {},
 			"tag:minecraft:stone": {},
-			"tag:stone_pick_diggable":{},
-			"tag:minecraft:is_pickaxe_item_destructible":{}
+			"tag:stone_pick_diggable": {},
+			"tag:minecraft:is_pickaxe_item_destructible": {}
 		},
 		"permutations": [
 			// Facing north

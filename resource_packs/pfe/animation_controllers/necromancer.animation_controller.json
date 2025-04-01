@@ -6,13 +6,19 @@
 			"states": {
 				"default": {
 					"transitions": [
-						{"attack": "variable.attack_time > 0.0"}
+						{
+							"attack": "variable.attack_time > 0.0"
+						}
 					]
 				},
 				"attack": {
-					"animations": ["melee_attack"],
+					"animations": [
+						"melee_attack"
+					],
 					"transitions": [
-						{"default": "variable.attack_time <= 0.0"}
+						{
+							"default": "variable.attack_time <= 0.0"
+						}
 					]
 				}
 			}
@@ -21,23 +27,39 @@
 			"initial_state": "idle",
 			"states": {
 				"idle": {
-					"animations": ["idle", "look_at_target_default"],
+					"animations": [
+						"idle",
+						"look_at_target_default"
+					],
 					"transitions": [
-						{"walk": "query.ground_speed"},
-						{"summon": "query.is_casting"}
+						{
+							"walk": "query.ground_speed"
+						},
+						{
+							"summon": "query.is_casting"
+						}
 					],
 					"blend_transition": 0.25
 				},
 				"walk": {
-					"animations": ["walk", "look_at_target_default"],
+					"animations": [
+						"walk",
+						"look_at_target_default"
+					],
 					"transitions": [
-						{"idle": "!query.ground_speed"},
-						{"summon": "query.is_casting"}
+						{
+							"idle": "!query.ground_speed"
+						},
+						{
+							"summon": "query.is_casting"
+						}
 					],
 					"blend_transition": 0.25
 				},
 				"summon": {
-					"animations": ["summon"],
+					"animations": [
+						"summon"
+					],
 					"particle_effects": [
 						{
 							"effect": "spell",
@@ -45,7 +67,9 @@
 						}
 					],
 					"transitions": [
-						{"idle": "!query.is_casting"}
+						{
+							"idle": "!query.is_casting"
+						}
 					]
 				}
 			}

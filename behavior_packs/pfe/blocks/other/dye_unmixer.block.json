@@ -8,7 +8,9 @@
 			},
 			"traits": {
 				"minecraft:placement_direction": {
-					"enabled_states": ["minecraft:cardinal_direction"]
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
 				}
 			}
 		},
@@ -24,6 +26,9 @@
 			},
 			"minecraft:collision_box": true,
 			"minecraft:selection_box": true,
+			"minecraft:custom_components": [
+				"pfe:forgetfullness"
+			],
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 1.4
 			},
@@ -40,17 +45,26 @@
 			"tag:pfe": {},
 			"tag:metal": {},
 			"tag:minecraft:metal": {},
-			"tag:stone_pick_diggable":{},
-			"tag:minecraft:is_pickaxe_item_destructible":{},
+			"tag:stone_pick_diggable": {},
+			"tag:minecraft:is_pickaxe_item_destructible": {},
 			"minecraft:map_color": "#697c79",
-			"minecraft:crafting_table": {"crafting_tags": ["poke_dye_unmixer"],"table_name": "Dye Unmixer"}
+			"minecraft:crafting_table": {
+				"crafting_tags": [
+					"poke_dye_unmixer"
+				],
+				"table_name": "Dye Unmixer"
+			}
 		},
 		"permutations": [
 			{
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'north' ",
 				"components": {
 					"minecraft:transformation": {
-						"rotation": [0, 180, 0]
+						"rotation": [
+							0,
+							180,
+							0
+						]
 					}
 				}
 			},
@@ -58,7 +72,11 @@
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'south' ",
 				"components": {
 					"minecraft:transformation": {
-						"rotation": [0, 0, 0]
+						"rotation": [
+							0,
+							0,
+							0
+						]
 					}
 				}
 			},
@@ -66,7 +84,11 @@
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'east' ",
 				"components": {
 					"minecraft:transformation": {
-						"rotation": [0, 90, 0]
+						"rotation": [
+							0,
+							90,
+							0
+						]
 					}
 				}
 			},
@@ -74,7 +96,11 @@
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'west' ",
 				"components": {
 					"minecraft:transformation": {
-						"rotation": [0, 270, 0]
+						"rotation": [
+							0,
+							270,
+							0
+						]
 					}
 				}
 			}

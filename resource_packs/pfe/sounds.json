@@ -1,49 +1,79 @@
 {
-	"block_sounds": {
-		"poke_pfe:cobalt": {
-			"events": {
-				"break": {
-					"pitch": 0.80,
-					"sound": "poke.battleaxe",
-					"volume": 1.0
-				},
-				"default": "",
-				"hit": {
-					"pitch": 0.50,
-					"sound": "poke.battleaxe",
-					"volume": 0.30
-				},
-				"item.use.on": {
-					"pitch": 0.80,
-					"sound": "poke.battleaxe"
-				},
-				"place": {
-					"pitch": 0.80,
-					"sound": "poke.battleaxe",
-					"volume": 1.0
-				},
-				"power.off": {
-					"pitch": 0.50,
-					"sound": "poke.battleaxe"
-				},
-				"power.on": {
-					"pitch": 0.60,
-					"sound": "poke.battleaxe"
-				}
-			},
-			"pitch": 1.0,
-			"volume": 1.0
-		}
-	},
 	"entity_sounds": {
 		"entities": {
+			"poke:itpok": {
+				"events": {
+					"ambient": "mob.vindicator.idle",
+					"ambient.in.raid": {
+						"pitch": [0.8, 1.2],
+						"sound": "mob.vindicator.idle",
+						"volume": 3
+					},
+					"celebrate": "mob.vindicator.celebrate",
+					"death": "mob.vindicator.death",
+					"hurt": "mob.vindicator.hurt"
+				},
+				"pitch": [0.8, 1.2],
+				"volume": 1
+			},
+			"poke:melon_golem": {
+				"events": {
+					"death": "mob.snowgolem.death",
+					"hurt": "mob.snowgolem.hurt",
+					"shoot": "mob.snowgolem.shoot"
+				},
+				"pitch": [0.8, 1.2],
+				"volume": 1
+			},
+			"poke:moolip": {
+				"events": {
+					"ambient": "mob.cow.say",
+					"death": "mob.cow.hurt",
+					"eat": "mob.mooshroom.eat",
+					"hurt": "mob.cow.hurt",
+					"step": {
+						"pitch": [0.9, 1.1],
+						"sound": "mob.cow.step",
+						"volume": 0.65
+					}
+				},
+				"pitch": [0.8, 1.2],
+				"volume": 1
+			},
+			"poke:moobloom": {
+				"events": {
+					"ambient": "mob.cow.say",
+					"death": "mob.cow.hurt",
+					"eat": "mob.mooshroom.eat",
+					"hurt": "mob.cow.hurt",
+					"step": {
+						"pitch": [0.9, 1.1],
+						"sound": "mob.cow.step",
+						"volume": 0.65
+					}
+				},
+				"pitch": [0.8, 1.2],
+				"volume": 1
+			},
+			"poke:emocow": {
+				"events": {
+					"ambient": "mob.cow.say",
+					"death": "mob.cow.hurt",
+					"eat": "mob.mooshroom.eat",
+					"hurt": "mob.cow.hurt",
+					"step": {
+						"pitch": [0.9, 1.1],
+						"sound": "mob.cow.step",
+						"volume": 0.65
+					}
+				},
+				"pitch": [0.8, 1.2],
+				"volume": 1
+			},
 			"poke:retro_llama": {
 				"events": {
 					"add.chest": {
-						"pitch": [
-							0.8,
-							1.2
-						],
+						"pitch": [0.8, 1.2],
 						"sound": "mob.horse.armor",
 						"volume": 1
 					},
@@ -55,15 +85,9 @@
 					},
 					"death": "mob.llama.death",
 					"eat": {
-						"pitch": [
-							0.8,
-							1.2
-						],
+						"pitch": [0.8, 1.2],
 						"sound": "mob.llama.eat",
-						"volume": [
-							0.5,
-							1.5
-						]
+						"volume": [0.5, 1.5]
 					},
 					"hurt": "mob.llama.hurt",
 					"mad": "mob.llama.angry",
@@ -74,10 +98,7 @@
 						"volume": 0.15
 					}
 				},
-				"pitch": [
-					0.8,
-					1.2
-				],
+				"pitch": [0.8, 1.2],
 				"volume": 0.8
 			},
 			"poke:soul_blaze": {
@@ -87,10 +108,7 @@
 					"hurt": "mob.blaze.hit",
 					"shoot": "mob.blaze.shoot"
 				},
-				"pitch": [
-					0.8,
-					1.2
-				],
+				"pitch": [0.8, 1.2],
 				"volume": 1
 			},
 			"poke:super_striker": {
@@ -110,10 +128,7 @@
 						"volume": 1
 					}
 				},
-				"pitch": [
-					0.65,
-					0.9
-				],
+				"pitch": [0.65, 0.9],
 				"volume": 1
 			},
 			"poke:mini_demonic_allay": {
@@ -126,10 +141,7 @@
 					},
 					"hurt": "mob.allay.hurt"
 				},
-				"pitch": [
-					1.2,
-					1.5
-				],
+				"pitch": [1.2, 1.5],
 				"volume": 1
 			},
 			"poke:demonic_allay": {
@@ -139,10 +151,7 @@
 					"death": "mob.allay.death",
 					"hurt": "mob.allay.hurt"
 				},
-				"pitch": [
-					0.5,
-					0.8
-				],
+				"pitch": [0.5, 0.8],
 				"volume": 1
 			},
 			"poke:rat": {
@@ -154,10 +163,7 @@
 					"pant": "mob.fox.sniff",
 					"attack": "mob.fox.bite",
 					"shake": {
-						"pitch": [
-							1.2,
-							1.7
-						],
+						"pitch": [1.2, 1.7],
 						"sound": "mob.wolf.shake"
 					},
 					"step": {
@@ -167,10 +173,7 @@
 					},
 					"whine": "mob.fox.ambient"
 				},
-				"pitch": [
-					1.2,
-					1.7
-				],
+				"pitch": [1.2, 1.7],
 				"volume": 0.4
 			},
 			"poke:striker": {
@@ -187,10 +190,7 @@
 						"volume": 1
 					}
 				},
-				"pitch": [
-					0.8,
-					1.2
-				],
+				"pitch": [0.8, 1.2],
 				"volume": 1
 			},
 			"poke:ender_phantom": {
@@ -201,17 +201,11 @@
 					"flap": "mob.phantom.flap",
 					"hurt": "mob.phantom.hurt",
 					"swoop": {
-						"pitch": [
-							0.9,
-							1.05
-						],
+						"pitch": [0.9, 1.05],
 						"sound": "mob.phantom.swoop"
 					}
 				},
-				"pitch": [
-					0.7,
-					1.1
-				],
+				"pitch": [0.7, 1.1],
 				"volume": 10
 			},
 			"poke:gilded_allay": {
@@ -221,10 +215,7 @@
 					"death": "mob.allay.death",
 					"hurt": "mob.allay.hurt"
 				},
-				"pitch": [
-					0.8,
-					1.2
-				],
+				"pitch": [0.8, 1.2],
 				"volume": 1
 			},
 			"poke:end_piercer": {
@@ -239,10 +230,7 @@
 						"volume": 1
 					}
 				},
-				"pitch": [
-					0.8,
-					1.2
-				],
+				"pitch": [0.8, 1.2],
 				"volume": 1
 			},
 			"poke:piranha": {
@@ -261,10 +249,7 @@
 						"volume": 0.15
 					}
 				},
-				"pitch": [
-					0.8,
-					1.2
-				],
+				"pitch": [0.8, 1.2],
 				"volume": 1
 			},
 			"poke:yak": {
@@ -273,18 +258,12 @@
 					"death": "mob.cow.hurt",
 					"hurt": "mob.cow.hurt",
 					"step": {
-						"pitch": [
-							0.9,
-							1.1
-						],
+						"pitch": [0.9, 1.1],
 						"sound": "mob.cow.step",
 						"volume": 0.65
 					}
 				},
-				"pitch": [
-					0.6,
-					0.95
-				],
+				"pitch": [0.6, 0.95],
 				"volume": 1
 			},
 			"poke:duck": {
@@ -292,10 +271,7 @@
 					"ambient": "poke.duck.ambient",
 					"death": "mob.dolphin.attack",
 					"hurt": {
-						"pitch": [
-							0.9,
-							1.3
-						],
+						"pitch": [0.9, 1.3],
 						"sound": "poke.duck.ambient",
 						"volume": 1
 					},
@@ -310,10 +286,7 @@
 						"volume": 0.25
 					}
 				},
-				"pitch": [
-					0.6,
-					1.2
-				],
+				"pitch": [0.6, 1.2],
 				"volume": 1
 			},
 			"poke:woodspike_guardian": {
@@ -325,10 +298,7 @@
 					"hurt": "mob.guardian.land_hit",
 					"hurt.in.water": "mob.guardian.hit"
 				},
-				"pitch": [
-					0.8,
-					1.2
-				],
+				"pitch": [0.8, 1.2],
 				"volume": 1
 			},
 			"poke:windswept_bear": {
@@ -351,10 +321,7 @@
 						"volume": 0.7
 					}
 				},
-				"pitch": [
-					0.8,
-					1.2
-				],
+				"pitch": [0.8, 1.2],
 				"volume": 1
 			},
 			"poke:warped_sporecat": {
@@ -374,10 +341,7 @@
 					"purr": "mob.cat.purr",
 					"purreow": "mob.cat.purreow"
 				},
-				"pitch": [
-					0.8,
-					1.2
-				],
+				"pitch": [0.8, 1.2],
 				"volume": 1
 			},
 			"poke:shroomfin": {
@@ -403,10 +367,7 @@
 					"splash": "mob.dolphin.splash",
 					"swim": "mob.dolphin.swim"
 				},
-				"pitch": [
-					0.8,
-					1.2
-				],
+				"pitch": [0.8, 1.2],
 				"volume": 1
 			},
 			"poke:sculk_enderman": {
@@ -421,10 +382,7 @@
 						"volume": 1
 					}
 				},
-				"pitch": [
-					0.8,
-					1.2
-				],
+				"pitch": [0.8, 1.2],
 				"volume": 1
 			},
 			"poke:woods_goat": {
@@ -438,10 +396,7 @@
 					"hurt.screamer": "mob.goat.hurt.screamer",
 					"step": "mob.goat.step"
 				},
-				"pitch": [
-					0.8,
-					1.2
-				],
+				"pitch": [0.8, 1.2],
 				"volume": 1
 			},
 			"poke:shallow_cod": {
@@ -459,10 +414,7 @@
 						"volume": 0.15
 					}
 				},
-				"pitch": [
-					0.8,
-					1.2
-				],
+				"pitch": [0.8, 1.2],
 				"volume": 1
 			},
 			"poke:pale_ocelot": {
@@ -475,10 +427,7 @@
 						"volume": 0.45
 					}
 				},
-				"pitch": [
-					0.8,
-					1.2
-				],
+				"pitch": [0.8, 1.2],
 				"volume": 1
 			},
 			"poke:grizzly_bear": {
@@ -501,10 +450,7 @@
 						"volume": 0.7
 					}
 				},
-				"pitch": [
-					0.8,
-					1.2
-				],
+				"pitch": [0.8, 1.2],
 				"volume": 1
 			},
 			"poke:bone_bear": {
@@ -527,10 +473,7 @@
 						"volume": 0.7
 					}
 				},
-				"pitch": [
-					0.8,
-					1.2
-				],
+				"pitch": [0.8, 1.2],
 				"volume": 1
 			},
 			"poke:pink_squid": {
@@ -539,10 +482,7 @@
 					"death": "mob.squid.death",
 					"hurt": "mob.squid.hurt"
 				},
-				"pitch": [
-					0.8,
-					1.2
-				],
+				"pitch": [0.8, 1.2],
 				"volume": 0.4
 			},
 			"poke:orange_squid": {
@@ -551,10 +491,7 @@
 					"death": "mob.squid.death",
 					"hurt": "mob.squid.hurt"
 				},
-				"pitch": [
-					0.8,
-					1.2
-				],
+				"pitch": [0.8, 1.2],
 				"volume": 0.4
 			},
 			"poke:brown_sporefish": {
@@ -572,10 +509,7 @@
 						"volume": 0.15
 					}
 				},
-				"pitch": [
-					0.8,
-					1.2
-				],
+				"pitch": [0.8, 1.2],
 				"volume": 1
 			},
 			"poke:red_sporefish": {
@@ -593,10 +527,7 @@
 						"volume": 0.15
 					}
 				},
-				"pitch": [
-					0.8,
-					1.2
-				],
+				"pitch": [0.8, 1.2],
 				"volume": 1
 			},
 			"poke:sporefish": {
@@ -614,10 +545,7 @@
 						"volume": 0.15
 					}
 				},
-				"pitch": [
-					0.8,
-					1.2
-				],
+				"pitch": [0.8, 1.2],
 				"volume": 1
 			},
 			"poke:crimson_sporeshroom": {
@@ -627,18 +555,12 @@
 					"eat": "mob.mooshroom.eat",
 					"hurt": "mob.cow.hurt",
 					"step": {
-						"pitch": [
-							0.9,
-							1.1
-						],
+						"pitch": [0.9, 1.1],
 						"sound": "mob.cow.step",
 						"volume": 0.65
 					}
 				},
-				"pitch": [
-					0.8,
-					1.2
-				],
+				"pitch": [0.8, 1.2],
 				"volume": 1
 			},
 			"poke:warped_sporeshroom": {
@@ -648,18 +570,12 @@
 					"eat": "mob.mooshroom.eat",
 					"hurt": "mob.cow.hurt",
 					"step": {
-						"pitch": [
-							0.9,
-							1.1
-						],
+						"pitch": [0.9, 1.1],
 						"sound": "mob.cow.step",
 						"volume": 0.65
 					}
 				},
-				"pitch": [
-					0.8,
-					1.2
-				],
+				"pitch": [0.8, 1.2],
 				"volume": 1
 			},
 			"poke:cosmetic_trader": {
@@ -672,10 +588,7 @@
 					"haggle.yes": "mob.villager.yes",
 					"hurt": "mob.villager.hit"
 				},
-				"pitch": [
-					0.8,
-					1.2
-				],
+				"pitch": [0.8, 1.2],
 				"volume": 1
 			},
 			"poke:cassette_trader": {
@@ -688,10 +601,7 @@
 					"haggle.yes": "mob.villager.yes",
 					"hurt": "mob.villager.hit"
 				},
-				"pitch": [
-					0.8,
-					1
-				],
+				"pitch": [0.8, 1],
 				"volume": 1
 			},
 			"poke:raccoon": {
@@ -703,10 +613,7 @@
 					"pant": "mob.fox.sniff",
 					"attack": "mob.fox.bite",
 					"shake": {
-						"pitch": [
-							0.8,
-							1.2
-						],
+						"pitch": [0.8, 1.2],
 						"sound": "mob.wolf.shake"
 					},
 					"step": {
@@ -716,18 +623,12 @@
 					},
 					"whine": "mob.fox.ambient"
 				},
-				"pitch": [
-					0.8,
-					1.2
-				],
+				"pitch": [0.8, 1.2],
 				"volume": 1
 			},
 			"poke:token_trader": {
 				"volume": 1,
-				"pitch": [
-					0.8,
-					1.2
-				],
+				"pitch": [0.8, 1.2],
 				"events": {
 					"ambient": "mob.token_trader.idle",
 					"hurt": "mob.token_trader.hit",
@@ -740,10 +641,7 @@
 			},
 			"poke:shopkeeper": {
 				"volume": 1,
-				"pitch": [
-					0.8,
-					1
-				],
+				"pitch": [0.8, 1],
 				"events": {
 					"ambient": "mob.token_trader.idle",
 					"hurt": "mob.token_trader.hit",
@@ -756,10 +654,7 @@
 			},
 			"poke:scrapper": {
 				"volume": 1,
-				"pitch": [
-					0.6,
-					0.9
-				],
+				"pitch": [0.6, 0.9],
 				"events": {
 					"ambient": "mob.token_trader.idle",
 					"hurt": "mob.token_trader.hit",
@@ -772,10 +667,7 @@
 			},
 			"poke:quest_trader": {
 				"volume": 0.95,
-				"pitch": [
-					0.6,
-					0.8
-				],
+				"pitch": [0.6, 0.8],
 				"events": {
 					"ambient": "mob.token_trader.idle",
 					"hurt": "mob.token_trader.hit",
@@ -788,10 +680,7 @@
 			},
 			"poke:money_man": {
 				"volume": 1,
-				"pitch": [
-					0.7,
-					1
-				],
+				"pitch": [0.7, 1],
 				"events": {
 					"ambient": "mob.token_trader.idle",
 					"hurt": "mob.token_trader.hit",
@@ -827,10 +716,7 @@
 						"volume": 1
 					}
 				},
-				"pitch": [
-					0.8,
-					1
-				],
+				"pitch": [0.8, 1],
 				"volume": 1
 			},
 			"poke:knightling": {
@@ -855,10 +741,7 @@
 						"volume": 1
 					}
 				},
-				"pitch": [
-					0.8,
-					1
-				],
+				"pitch": [0.8, 1],
 				"volume": 1
 			},
 			"poke:necromancer": {
@@ -873,10 +756,7 @@
 					"prepare.summon": "mob.evocation_illager.prepare_summon",
 					"step": "mob.skeleton.step"
 				},
-				"pitch": [
-					0.6,
-					1.2
-				],
+				"pitch": [0.6, 1.2],
 				"volume": 1
 			},
 			"poke:zombken": {
@@ -899,10 +779,7 @@
 						"volume": 0.45
 					}
 				},
-				"pitch": [
-					0.8,
-					1.2
-				],
+				"pitch": [0.8, 1.2],
 				"volume": 1
 			},
 			"poke:dragon": {
@@ -925,10 +802,7 @@
 						"volume": 0.45
 					}
 				},
-				"pitch": [
-					0.8,
-					1.2
-				],
+				"pitch": [0.8, 1.2],
 				"volume": 1
 			},
 			"poke:listener": {
@@ -951,10 +825,7 @@
 						"volume": 1
 					}
 				},
-				"pitch": [
-					0.8,
-					1.2
-				],
+				"pitch": [0.8, 1.2],
 				"volume": 1
 			},
 			"poke:snowman": {
@@ -964,26 +835,53 @@
 						"sound": "poke.boss.victory"
 					},
 					"hurt": {
-						"pitch": [
-							0.8,
-							1.2
-						],
+						"pitch": [0.8, 1.2],
 						"sound": "mob.snowgolem.hurt"
 					},
 					"shoot": {
-						"pitch": [
-							0.33,
-							0.5
-						],
+						"pitch": [0.33, 0.5],
 						"sound": "mob.snowgolem.shoot"
 					}
 				},
-				"pitch": [
-					0.8,
-					1.2
-				],
+				"pitch": [0.8, 1.2],
 				"volume": 1
 			}
+		}
+	},
+	"block_sounds": {
+		"poke_pfe:cobalt": {
+			"events": {
+				"break": {
+					"pitch": 0.8,
+					"sound": "poke.battleaxe",
+					"volume": 1
+				},
+				"default": "",
+				"hit": {
+					"pitch": 0.5,
+					"sound": "poke.battleaxe",
+					"volume": 0.3
+				},
+				"item.use.on": {
+					"pitch": 0.8,
+					"sound": "poke.battleaxe"
+				},
+				"place": {
+					"pitch": 0.8,
+					"sound": "poke.battleaxe",
+					"volume": 1
+				},
+				"power.off": {
+					"pitch": 0.5,
+					"sound": "poke.battleaxe"
+				},
+				"power.on": {
+					"pitch": 0.6,
+					"sound": "poke.battleaxe"
+				}
+			},
+			"pitch": 1,
+			"volume": 1
 		}
 	}
 }

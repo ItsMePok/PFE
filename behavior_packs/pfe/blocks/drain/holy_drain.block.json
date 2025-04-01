@@ -62,7 +62,10 @@
 			"tag:metal": {},
 			"tag:minecraft:metal": {},
 			"tag:stone_pick_diggable": {},
-			"tag:minecraft:is_pickaxe_item_destructible": {}
+			"tag:minecraft:is_pickaxe_item_destructible": {},
+			"minecraft:custom_components": [
+				"pfe:forgetfullness"
+			]
 		}
 	}
 }

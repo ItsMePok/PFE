@@ -436,7 +436,7 @@
 		},
 		"poke_deepslate_godly_ore": {
 			"textures": [
-				"textures/blocks/deepslate/deepslate",
+				"textures/blocks/beacon",
 				"textures/poke/pfe/godly_ore_pattern"
 			],
 			"additive": true
@@ -1653,14 +1653,14 @@
 		},
 		"poke_deepslate_cobalt_ore": {
 			"textures": [
-				"textures/blocks/deepslate/deepslate",
+				"textures/blocks/beacon",
 				"textures/poke/pfe/cobalt_ore_pattern"
 			],
 			"additive": true
 		},
 		"poke_deepslate_shade_ore": {
 			"textures": [
-				"textures/blocks/deepslate/deepslate",
+				"textures/blocks/beacon",
 				"textures/poke/pfe/shade_ore_pattern"
 			],
 			"additive": true
@@ -1673,7 +1673,7 @@
 		},
 		"poke_deepslate_holy_ore": {
 			"textures": [
-				"textures/blocks/deepslate/deepslate",
+				"textures/blocks/beacon",
 				"textures/poke/pfe/holy_ore_pattern"
 			],
 			"additive": true
@@ -1749,7 +1749,7 @@
 		},
 		"poke_end_holy_ore": {
 			"textures": [
-				"textures/blocks/end_stone",
+				"textures/blocks/loom_side",
 				"textures/poke/pfe/holy_ore_pattern"
 			],
 			"additive": true
@@ -1953,21 +1953,21 @@
 		},
 		"poke_shade_ore": {
 			"textures": [
-				"textures/blocks/stone",
+				"textures/blocks/ochre_froglight_top",
 				"textures/poke/pfe/shade_ore_pattern"
 			],
 			"additive": true
 		},
 		"poke_hellish_ore": {
 			"textures": [
-				"textures/blocks/stone",
+				"textures/blocks/ochre_froglight_top",
 				"textures/poke/pfe/hellish_ore_pattern"
 			],
 			"additive": true
 		},
 		"poke_deepslate_hellish_ore": {
 			"textures": [
-				"textures/blocks/deepslate/deepslate",
+				"textures/blocks/beacon",
 				"textures/poke/pfe/hellish_ore_pattern"
 			],
 			"additive": true
@@ -1977,7 +1977,7 @@
 		},
 		"poke_onyx": {
 			"textures": [
-				"textures/blocks/deepslate/deepslate",
+				"textures/blocks/beacon",
 				"textures/poke/pfe/onyx_ore_pattern"
 			],
 			"additive": true
@@ -1993,7 +1993,7 @@
 		},
 		"poke_holy_ore": {
 			"textures": [
-				"textures/blocks/stone",
+				"textures/blocks/ochre_froglight_top",
 				"textures/poke/pfe/holy_ore_pattern"
 			],
 			"additive": true
@@ -2003,7 +2003,7 @@
 		},
 		"poke_nebula_ore": {
 			"textures": [
-				"textures/blocks/end_stone",
+				"textures/blocks/loom_side",
 				"textures/poke/pfe/nebula_ore_pattern"
 			],
 			"additive": true
@@ -2013,28 +2013,28 @@
 		},
 		"poke_godly_ore": {
 			"textures": [
-				"textures/blocks/stone",
+				"textures/blocks/ochre_froglight_top",
 				"textures/poke/pfe/godly_ore_pattern"
 			],
 			"additive": true
 		},
 		"poke_demonic_ore": {
 			"textures": [
-				"textures/blocks/deepslate/deepslate",
+				"textures/blocks/beacon",
 				"textures/poke/pfe/demonic_ore_pattern"
 			],
 			"additive": true
 		},
 		"poke_galaxy_ore": {
 			"textures": [
-				"textures/blocks/stone",
+				"textures/blocks/ochre_froglight_top",
 				"textures/poke/pfe/galaxy_ore_pattern"
 			],
 			"additive": true
 		},
 		"poke_void_ore": {
 			"textures": [
-				"textures/blocks/deepslate/deepslate",
+				"textures/blocks/beacon",
 				"textures/poke/pfe/void_ore_pattern"
 			],
 			"additive": true
@@ -2056,7 +2056,7 @@
 		},
 		"poke_cobalt_ore": {
 			"textures": [
-				"textures/blocks/stone",
+				"textures/blocks/ochre_froglight_top",
 				"textures/poke/pfe/cobalt_ore_pattern"
 			],
 			"additive": true
@@ -2066,14 +2066,14 @@
 		},
 		"poke_nether_hellish_ore": {
 			"textures": [
-				"textures/blocks/netherrack",
+				"textures/blocks/blue_ice",
 				"textures/poke/pfe/hellish_ore_pattern"
 			],
 			"additive": true
 		},
 		"poke_nether_demonic_ore": {
 			"textures": [
-				"textures/blocks/netherrack",
+				"textures/blocks/blue_ice",
 				"textures/poke/pfe/demonic_ore_pattern"
 			],
 			"additive": true
@@ -2098,21 +2098,21 @@
 		},
 		"poke_nether_shade_ore": {
 			"textures": [
-				"textures/blocks/netherrack",
+				"textures/blocks/blue_ice",
 				"textures/poke/pfe/shade_ore_pattern"
 			],
 			"additive": true
 		},
 		"poke_nether_onyx_ore": {
 			"textures": [
-				"textures/blocks/netherrack",
+				"textures/blocks/blue_ice",
 				"textures/poke/pfe/onyx_ore_pattern"
 			],
 			"additive": true
 		},
 		"poke_astral_ore": {
 			"textures": [
-				"textures/blocks/end_stone",
+				"textures/blocks/loom_side",
 				"textures/poke/pfe/astral_ore_pattern"
 			],
 			"additive": true
@@ -2176,21 +2176,21 @@
 		},
 		"poke_end_galaxy_ore": {
 			"textures": [
-				"textures/blocks/end_stone",
+				"textures/blocks/loom_side",
 				"textures/poke/pfe/galaxy_ore_pattern"
 			],
 			"additive": true
 		},
 		"poke_end_godly_ore": {
 			"textures": [
-				"textures/blocks/end_stone",
+				"textures/blocks/loom_side",
 				"textures/poke/pfe/godly_ore_pattern"
 			],
 			"additive": true
 		},
 		"poke_end_void_ore": {
 			"textures": [
-				"textures/blocks/end_stone",
+				"textures/blocks/loom_side",
 				"textures/poke/pfe/void_ore_pattern"
 			],
 			"additive": true

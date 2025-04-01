@@ -42,17 +42,24 @@
 					"ambient_occlusion": false
 				}
 			},
-			"minecraft:placement_filter": {"conditions": [{
-				"allowed_faces": [
-					"up"
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [
+							"up"
+						]
+					}
 				]
-			}]},
+			},
 			"tag:pfe": {},
 			"tag:crop": {},
 			"tag:minecraft:crop": {},
 			"minecraft:light_dampening": 0,
 			"minecraft:map_color": "#393730",
-			"minecraft:loot": "loot_tables/poke/pfe/charred_poppy.loot.json"
+			"minecraft:loot": "loot_tables/poke/pfe/charred_poppy.loot.json",
+			"minecraft:custom_components": [
+				"pfe:forgetfullness"
+			]
 		}
 	}
 }
