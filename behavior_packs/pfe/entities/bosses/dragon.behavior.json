@@ -1,4 +1,4 @@
-{ //this entity model, animations & textures was made by O2God for PFE
+{ /*this entity model, animations & textures was made by O2God for PFE*/
 	"format_version": "1.21.60",
 	"minecraft:entity": {
 		"description": {
@@ -58,7 +58,7 @@
 							"cooldown_time": 1,
 							"max_activation_range": 100,
 							"min_activation_range": 1,
-							"start_sound_event":"item.trident.thunder",
+							"start_sound_event": "item.trident.thunder",
 							"weight": 1
 						}
 					]
@@ -72,7 +72,7 @@
 					}
 				}
 			},
-			"poke:dragon_ranged":{
+			"poke:dragon_ranged": {
 				"minecraft:behavior.ranged_attack": {
 					"attack_interval_max": 5,
 					"attack_interval_min": 1,
@@ -82,7 +82,11 @@
 					"priority": 0
 				},
 				"minecraft:shooter": {
-					"projectiles": [{"def": "dragon_fireball"}]
+					"projectiles": [
+						{
+							"def": "dragon_fireball"
+						}
+					]
 				},
 				"minecraft:timer": {
 					"time": 10,
@@ -93,7 +97,7 @@
 					}
 				}
 			},
-			"timer":{
+			"timer": {
 				"minecraft:timer": {
 					"time": 1800,
 					"looping": true,
@@ -103,7 +107,7 @@
 					}
 				}
 			},
-			"despawn":{
+			"despawn": {
 				"minecraft:instant_despawn": {
 					"remove_child_entities": false
 				}
@@ -118,7 +122,7 @@
 				]
 			},
 			"minecraft:nameable": {
-				"name_actions":{
+				"name_actions": {
 					"name_filter": "despawn",
 					"on_named": {
 						"event": "poke:despawn",
@@ -143,42 +147,74 @@
 					{
 						"width": 14.5,
 						"height": 3,
-						"pivot": [0.4, 3.9, -5.7]
+						"pivot": [
+							0.4,
+							3.9,
+							-5.7
+						]
 					},
 					{
 						"width": 14.5,
 						"height": 3,
-						"pivot": [-21.5, 4.4, -5.8]
+						"pivot": [
+							-21.5,
+							4.4,
+							-5.8
+						]
 					},
 					{
 						"width": 14.5,
 						"height": 3,
-						"pivot": [-10.4, 4.4, -5.8]
+						"pivot": [
+							-10.4,
+							4.4,
+							-5.8
+						]
 					},
 					{
 						"width": 14.5,
 						"height": 3,
-						"pivot": [12.4, 4.4, -5.8]
+						"pivot": [
+							12.4,
+							4.4,
+							-5.8
+						]
 					},
 					{
 						"width": 14.5,
 						"height": 3,
-						"pivot": [21.9, 4.4, -5.8]
+						"pivot": [
+							21.9,
+							4.4,
+							-5.8
+						]
 					},
 					{
 						"width": 4.6,
 						"height": 3,
-						"pivot": [0.1, 4.25, 5.7]
+						"pivot": [
+							0.1,
+							4.25,
+							5.7
+						]
 					},
 					{
 						"width": 6,
 						"height": 3,
-						"pivot": [0.1, 3.5, -25.4]
+						"pivot": [
+							0.1,
+							3.5,
+							-25.4
+						]
 					},
 					{
 						"width": 7.8,
 						"height": 3,
-						"pivot": [-0.1, 3.3, -17.4]
+						"pivot": [
+							-0.1,
+							3.3,
+							-17.4
+						]
 					}
 				]
 			},
@@ -188,8 +224,16 @@
 			"minecraft:experience_reward": {
 				"on_death": 500
 			},
-			"minecraft:behavior.float": {"priority": 2},
-			"minecraft:navigation.generic": {"can_path_from_air": true,"blocks_to_avoid": ["grass_block","stone"]},
+			"minecraft:behavior.float": {
+				"priority": 2
+			},
+			"minecraft:navigation.generic": {
+				"can_path_from_air": true,
+				"blocks_to_avoid": [
+					"grass_block",
+					"stone"
+				]
+			},
 			"minecraft:movement": {
 				"value": 2.0
 			},
@@ -268,14 +312,16 @@
 					]
 				},
 				"queue_command": {
-					"command":[
+					"command": [
 						"tp @s ~ ~20 ~"
 					]
 				}
 			},
-			"poke:mode_switch_range":{
+			"poke:mode_switch_range": {
 				"add": {
-					"component_groups": ["poke:dragon_ranged"]
+					"component_groups": [
+						"poke:dragon_ranged"
+					]
 				},
 				"remove": {
 					"component_groups": [
@@ -283,9 +329,11 @@
 					]
 				}
 			},
-			"poke:mode_switch_spawning":{
+			"poke:mode_switch_spawning": {
 				"remove": {
-					"component_groups": ["poke:dragon_ranged"]
+					"component_groups": [
+						"poke:dragon_ranged"
+					]
 				},
 				"add": {
 					"component_groups": [
@@ -293,16 +341,18 @@
 					]
 				}
 			},
-			"poke:renamed":{
+			"poke:renamed": {
 				"remove": {
 					"component_groups": [
 						"timer"
 					]
 				}
 			},
-			"poke:despawn":{
+			"poke:despawn": {
 				"add": {
-					"component_groups": ["despawn"]
+					"component_groups": [
+						"despawn"
+					]
 				}
 			}
 		}

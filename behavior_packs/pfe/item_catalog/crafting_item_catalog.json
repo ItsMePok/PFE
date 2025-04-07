@@ -62,24 +62,44 @@
             },
             "items": [
               "poke:hellish_bricks",
+              "poke:cracked_hellish_bricks",
               "poke:molten_bricks",
+              "poke:cracked_molten_bricks",
               "poke:honey_bricks",
+              "poke:cracked_honey_bricks",
               "poke:chiseled_honey_bricks",
               "poke:radium_bricks",
+              "poke:cracked_radium_bricks",
               "poke:shade_bricks",
+              "poke:cracked_shade_bricks",
               "poke:cobalt_bricks",
               "poke:cracked_cobalt_bricks",
               "poke:onyx_bricks",
+              "poke:cracked_onyx_bricks",
               "poke:nebula_bricks",
+              "poke:cracked_nebula_bricks",
               "poke:galaxy_bricks",
+              "poke:cracked_galaxy_bricks",
+              "poke:shadowstone_bricks",
+              "poke:cracked_shadowstone_bricks",
               "poke:astral_bricks",
+              "poke:cracked_astral_bricks",
               "poke:medic_bricks",
+              "poke:cracked_medic_bricks",
               "poke:godly_bricks",
+              "poke:cracked_godly_bricks",
               "poke:limestone_bricks",
+              "poke:cracked_limestone_bricks",
               "poke:holy_bricks",
+              "poke:cracked_holy_bricks",
               "poke:demonic_bricks",
+              "poke:cracked_demonic_bricks",
+              "poke:banished_bricks",
+              "poke:cracked_banished_bricks",
               "poke:death_bricks",
-              "poke:void_bricks"
+              "poke:cracked_death_bricks",
+              "poke:void_bricks",
+              "poke:cracked_void_bricks"
             ]
           },
           {
@@ -423,6 +443,7 @@
               "poke:hellish_ore",
               "poke:holy_ore",
               "poke:godly_ore",
+              "poke_pfe:demonic_ore",
               "poke:galaxy_ore",
               "poke:deepslate_cobalt_ore",
               "poke:deepslate_shade_ore",
@@ -1046,6 +1067,7 @@
               "poke:armadillo_hat",
               "poke:carved_melon_mask",
               "poke:pirate_hat",
+              "poke:party_hat",
               "poke:viking_helmet",
               "poke:pok_bot_cosmetic",
               "poke:apollo_the_snake",
@@ -1152,12 +1174,11 @@
           {
             "group_identifier": {
               "name": "poke:itemGroup.name.configs",
-              "icon": "poke:boss_event_config"
+              "icon": "poke_pfe:config"
             },
             "items": [
               "poke_pfe:config",
-              "poke:calendar",
-              "poke:boss_event_config"
+              "poke:calendar"
             ]
           },
           {

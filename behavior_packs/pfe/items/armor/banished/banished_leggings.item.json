@@ -14,17 +14,18 @@
 				"value": 90,
 				"slot": "armor_legs"
 			},
-			"minecraft:icon":"poke_banished_leggings", 
+			"minecraft:icon": "poke_banished_leggings",
 			"minecraft:wearable": {
 				"slot": "slot.armor.legs",
 				"protection": 25
-			}, 
-			"minecraft:tags": { 
-				"tags": [ 
-					"minecraft:is_armor", 
-					"minecraft:trimmable_armors" 
-				] 
-			} 
-		} 
-	} 
+			},
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:is_armor",
+					"minecraft:trimmable_armors",
+					"poke_pfe:banished_armor_effects"
+				]
+			}
+		}
+	}
 }

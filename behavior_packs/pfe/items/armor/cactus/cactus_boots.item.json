@@ -20,7 +20,11 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": { "textures": {"default": "poke_cactus_boots" }},
+			"minecraft:icon": {
+				"textures": {
+					"default": "poke_cactus_boots"
+				}
+			},
 			"minecraft:wearable": {
 				"slot": "slot.armor.feet",
 				"protection": 2
@@ -40,10 +44,10 @@
 						"repair_amount": "query.max_durability*0.25"
 					}
 				]
-			}, 
-			"minecraft:tags": { 
+			},
+			"minecraft:tags": {
 				"tags": [
-					"pfe:SingleArmor",
+					"poke_pfe:cactus_armor_effects",
 					"minecraft:is_armor",
 					"minecraft:trimmable_armors",
 					"novelty:is_foot"

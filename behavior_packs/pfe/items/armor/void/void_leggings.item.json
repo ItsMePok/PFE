@@ -21,7 +21,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon":"poke_void_leggings", 
+			"minecraft:icon": "poke_void_leggings",
 			"minecraft:wearable": {
 				"slot": "slot.armor.legs",
 				"protection": 20
@@ -35,21 +35,26 @@
 						"repair_amount": "query.max_durability"
 					},
 					{
-						"items": ["poke:void_ingot"],
+						"items": [
+							"poke:void_ingot"
+						],
 						"repair_amount": "query.max_durability*0.25"
 					},
 					{
-						"items": ["poke:void_nugget"],
+						"items": [
+							"poke:void_nugget"
+						],
 						"repair_amount": "query.max_durability*0.028"
 					}
 				]
-			}, 
-			"minecraft:tags": { 
-				"tags": [ 
-					"minecraft:is_armor", 
-					"minecraft:trimmable_armors" 
-				] 
-			} 
-		} 
-	} 
+			},
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:is_armor",
+					"minecraft:trimmable_armors",
+					"poke_pfe:void_armor_effects"
+				]
+			}
+		}
+	}
 }

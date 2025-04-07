@@ -3,6 +3,7 @@
   "configurations": [
     {
       "type": "minecraft-js",
+      "targetModuleUuid": "0932aed9-1cfd-42e7-91f5-afe0525a2914",
       "port": 19144,
       "mode": "listen",
       "name": "Debug with Minecraft",

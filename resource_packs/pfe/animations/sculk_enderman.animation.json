@@ -50,11 +50,7 @@
 					"rotation": ["math.sin(math.sqrt(variable.attack_time) * 360) * 11.46", 0, 0]
 				},
 				"rightArm": {
-					"rotation": [
-						"math.sin(1.0 - math.pow(1.0 - variable.attack_time, 3.0) * 180.0) * (variable.is_brandishing_spear ? -1.0 : 1.0 )",
-						"variable.is_brandishing_spear ? 0.0 : (math.sin(math.sqrt(variable.attack_time) * 360) * 11.46) * 2.0",
-						0
-					]
+					"rotation": ["math.sin(1.0 - math.pow(1.0 - variable.attack_time, 3.0) * 180.0)", "(math.sin(math.sqrt(variable.attack_time) * 360) * 11.46) * 2.0", 0]
 				}
 			}
 		},

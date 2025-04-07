@@ -20,7 +20,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon":"poke_nebula_boots", 
+			"minecraft:icon": "poke_nebula_boots",
 			"minecraft:wearable": {
 				"slot": "slot.armor.feet",
 				"protection": 35
@@ -40,15 +40,16 @@
 						"repair_amount": "query.max_durability*0.25"
 					}
 				]
-			}, 
-			"minecraft:tags": { 
-				"tags": [ 
-					"minecraft:is_armor", 
-					"minecraft:trimmable_armors",
-					"novelty:is_foot"
-				] 
 			},
-			"minecraft:rarity":"epic"
-		} 
-	} 
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:is_armor",
+					"minecraft:trimmable_armors",
+					"novelty:is_foot",
+					"poke_pfe:nebula_armor_effects"
+				]
+			},
+			"minecraft:rarity": "epic"
+		}
+	}
 }

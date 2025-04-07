@@ -20,7 +20,11 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": { "textures": {"default": "poke_onyx_boots" }}, 
+			"minecraft:icon": {
+				"textures": {
+					"default": "poke_onyx_boots"
+				}
+			},
 			"minecraft:repairable": {
 				"repair_items": [
 					{
@@ -29,22 +33,32 @@
 						],
 						"repair_amount": "query.max_durability"
 					},
-					{"items": ["poke:onyx_ingot"],"repair_amount": "query.max_durability*0.25"},
-					{"items": ["poke:onyx_nugget"],"repair_amount": "query.max_durability*0.028"}
+					{
+						"items": [
+							"poke:onyx_ingot"
+						],
+						"repair_amount": "query.max_durability*0.25"
+					},
+					{
+						"items": [
+							"poke:onyx_nugget"
+						],
+						"repair_amount": "query.max_durability*0.028"
+					}
 				]
 			},
 			"minecraft:wearable": {
 				"slot": "slot.armor.feet",
 				"protection": 10
-			}, 
-			"minecraft:tags": { 
+			},
+			"minecraft:tags": {
 				"tags": [
-				"pfe:SingleArmor",
-				"minecraft:is_armor",
-				"minecraft:trimmable_armors",
+					"poke_pfe:onyx_armor_effects",
+					"minecraft:is_armor",
+					"minecraft:trimmable_armors",
 					"novelty:is_foot"
-				] 
-			} 
-		} 
-	} 
+				]
+			}
+		}
+	}
 }

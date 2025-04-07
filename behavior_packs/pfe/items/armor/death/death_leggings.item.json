@@ -21,7 +21,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon":"poke_death_leggings", 
+			"minecraft:icon": "poke_death_leggings",
 			"minecraft:wearable": {
 				"slot": "slot.armor.legs",
 				"protection": 21
@@ -47,13 +47,14 @@
 						"repair_amount": "query.max_durability * 0.03"
 					}
 				]
-			}, 
-			"minecraft:tags": { 
-				"tags": [ 
-					"minecraft:is_armor", 
-					"minecraft:trimmable_armors" 
-				] 
-			} 
-		} 
-	} 
+			},
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:is_armor",
+					"minecraft:trimmable_armors",
+					"poke_pfe:death_armor_effects"
+				]
+			}
+		}
+	}
 }

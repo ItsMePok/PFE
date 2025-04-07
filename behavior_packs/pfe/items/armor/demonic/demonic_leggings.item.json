@@ -21,7 +21,11 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": { "textures": {"default": "poke_demonic_leggings" }}, 
+			"minecraft:icon": {
+				"textures": {
+					"default": "poke_demonic_leggings"
+				}
+			},
 			"minecraft:wearable": {
 				"slot": "slot.armor.legs",
 				"protection": 15
@@ -42,13 +46,13 @@
 					}
 				]
 			},
-			"minecraft:tags": { 
-			  "tags": [
-				"pfe:SingleArmor",
-				"minecraft:is_armor",
-				"minecraft:trimmable_armors" 
-			  ] 
-			} 
-		  } 
-		} 
-	  }
+			"minecraft:tags": {
+				"tags": [
+					"poke_pfe:demonic_armor_effects",
+					"minecraft:is_armor",
+					"minecraft:trimmable_armors"
+				]
+			}
+		}
+	}
+}

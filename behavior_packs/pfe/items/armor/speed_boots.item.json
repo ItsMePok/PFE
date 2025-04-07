@@ -8,7 +8,7 @@
 			}
 		},
 		"components": {
-      "minecraft:rarity":"common",
+			"minecraft:rarity": "common",
 			"minecraft:max_stack_size": 1,
 			"minecraft:enchantable": {
 				"value": 9,
@@ -21,7 +21,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon":"poke_swift_boots",
+			"minecraft:icon": "poke_swift_boots",
 			"minecraft:wearable": {
 				"slot": "slot.armor.feet",
 				"protection": 6
@@ -29,22 +29,27 @@
 			"minecraft:repairable": {
 				"repair_items": [
 					{
-						"items": ["poke:repair_core"],
+						"items": [
+							"poke:repair_core"
+						],
 						"repair_amount": "query.max_durability"
 					},
 					{
-						"items": ["minecraft:diamond"],
+						"items": [
+							"minecraft:diamond"
+						],
 						"repair_amount": "query.max_durability*0.25"
 					}
 				]
 			},
-			"minecraft:tags": { 
-				"tags": [ 
+			"minecraft:tags": {
+				"tags": [
 					"minecraft:is_armor",
-          "novelty:is_foot",
-					"minecraft:trimmable_armors" 
-				] 
-			} 
-		} 
-	} 
+					"novelty:is_foot",
+					"minecraft:trimmable_armors",
+					"poke_pfe:speed_boots_effects"
+				]
+			}
+		}
+	}
 }

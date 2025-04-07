@@ -4,14 +4,23 @@
 		"description": {
 			"identifier": "poke:party_hat",
 			"menu_category": {
-				"category": "none"
+				"category": "equipment"
 			}
 		},
 		"components": {
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:is_armor"
+				]
+			},
+			"minecraft:dyeable": {
+				"default_color": "#FFFFFF"
+			},
 			"minecraft:max_stack_size": 1,
 			"minecraft:icon": {
 				"textures": {
-					"default": "poke_party_hat"
+					"default": "poke_party_hat",
+					"dyed": "poke_party_hat"
 				}
 			},
 			"minecraft:wearable": {

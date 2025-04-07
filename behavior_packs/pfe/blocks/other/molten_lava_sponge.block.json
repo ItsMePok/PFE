@@ -8,15 +8,18 @@
 			}
 		},
 		"components": {
+			"minecraft:display_name": "%poke_pfe.molten_lava_sponge\n%poke_pfe.tag",
+			"minecraft:custom_components": [
+				"poke_pfe:molten_lava_sponge"
+			],
 			"minecraft:redstone_conductivity": {
 				"redstone_conductor": true,
 				"allows_wire_to_step_down": true
 			},
 			"minecraft:light_emission": 8,
 			"tag:pfe": {},
-			"tag:hoe": {},
-			"tag:stone_pick_diggable":{},
-			"tag:minecraft:is_pickaxe_item_destructible":{},
+			"tag:sponge": {},
+			"tag:minecraft:is_hoe_item_destructible": {},
 			"minecraft:map_color": "#c5371e"
 		}
 	}

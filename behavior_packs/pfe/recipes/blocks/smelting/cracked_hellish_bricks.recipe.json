@@ -1,0 +1,14 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_furnace": {
+		"description": {
+			"identifier": "poke:cracked_hellish_bricks"
+		},
+		"tags": [
+			"furnace",
+			"blast_furnace"
+		],
+		"input": "poke:hellish_bricks",
+		"output": "poke:cracked_hellish_bricks"
+	}
+}

@@ -20,7 +20,11 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": { "textures": {"default": "poke_hellish_boots" }}, 
+			"minecraft:icon": {
+				"textures": {
+					"default": "poke_hellish_boots"
+				}
+			},
 			"minecraft:wearable": {
 				"slot": "slot.armor.feet",
 				"protection": 7
@@ -41,13 +45,13 @@
 					}
 				]
 			},
-			"minecraft:tags": { 
+			"minecraft:tags": {
 				"tags": [
-					"pfe:SingleArmor",
 					"minecraft:is_armor",
 					"minecraft:trimmable_armors",
-					"novelty:is_foot"
-			  ] 
+					"novelty:is_foot",
+					"poke_pfe:hellish_armor_effects"
+				]
 			}
 		}
 	}

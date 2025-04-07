@@ -3,19 +3,24 @@
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:night_vision_goggles",
-			"menu_category": {"category": "equipment"}
+			"menu_category": {
+				"category": "equipment"
+			}
 		},
 		"components": {
-      "minecraft:rarity":"common",
-      "minecraft:tags": {
-        "tags": [
-          "novelty:is_face"
-        ]
-      },
+			"minecraft:rarity": "common",
+			"minecraft:tags": {
+				"tags": [
+					"novelty:is_face",
+					"poke_pfe:night_vision_effects"
+				]
+			},
 			"minecraft:max_stack_size": 1,
-			"minecraft:icon":"poke_nv_goggles",
+			"minecraft:icon": "poke_nv_goggles",
 			"minecraft:allow_off_hand": true,
-			"minecraft:wearable": {"slot": "slot.weapon.offhand"}
+			"minecraft:wearable": {
+				"slot": "slot.weapon.offhand"
+			}
 		}
 	}
 }

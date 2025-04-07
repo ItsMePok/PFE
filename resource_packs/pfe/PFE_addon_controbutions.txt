@@ -3,9 +3,9 @@ if you have any questions about addons you can ask me on discord (username: itsm
 things marked with "-c" at then end of the file name have a bunch of comments in them to help understand what some things do
 (Im trying to make the code more readable so sorry if there is still some areas that are not very organized(most things should be good though))
 
-Anything listed below has been used at some point to develop PFE
+Contributions from other people:
 ============================
-Things made by o2god for PFE:
+Things made by raccoon_02god:
 -----
 Mobs:
 
@@ -45,9 +45,11 @@ Fishbowl
 Ferret
 Crab Pal
 ============================
+Battleaxe textures were made by mosqit4324
+============================
+Initial version of Demonic Allay made by just_erick
 
-PFE Wiki: https://pfewiki.gitbook.io/home
-
+============================
 Initial Code for Slabs & Tool Durability were copied from the bedrock wiki
 https://wiki.bedrock.dev/
 
@@ -55,8 +57,9 @@ Animated item texture for the Sundial
 Some Code from Hero Studios
 https://mcpedl.com/items-animateds-template-creators-pack/
 
-
 Programs & Websites Using:
+
+PFE Wiki: https://pfewiki.gitbook.io/home
 
 BlockBench (For Modeling & Item, Block, & Entity Wizard)
 https://www.blockbench.net/
@@ -84,11 +87,11 @@ https://code.visualstudio.com/
 
 VS Code Extensions:
 BlockceptionLtd.blockceptionvscodeminecraftbedrockdevelopmentextension
-destruc7i0n.vscode-bedrock-definitions
 streetsidesoftware.code-spell-checker
 SuperAnt.mc-dp-icons
 ms-vscode.vscode-js-profile-flame
 mojang-studios.minecraft-debugger
+Nobuwu.mc-color
 mechatroner.rainbow-csv
 BedrockOSS.regolith
 JannisX11.snowstorm
@@ -137,6 +140,10 @@ https://mcreator.net/
 MediaFire (For download option)
 https://www.mediafire.com/
 
-(Im putting theses here but i don't feel good about using them in the past)
+VSCode Extensions:
+destruc7i0n.vscode-bedrock-definitions
+
+Have used before but do not recommend:
+
 Linkvertize
 Lootlabs

@@ -21,7 +21,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon":"poke_molten_leggings",
+			"minecraft:icon": "poke_molten_leggings",
 			"minecraft:wearable": {
 				"slot": "slot.armor.legs",
 				"protection": 17
@@ -42,12 +42,13 @@
 					}
 				]
 			},
-			"minecraft:tags": { 
-				"tags": [ 
-					"minecraft:is_armor", 
-					"minecraft:trimmable_armors" 
-				] 
-			} 
-		} 
-	} 
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:is_armor",
+					"minecraft:trimmable_armors",
+					"poke_pfe:molten_armor_effects"
+				]
+			}
+		}
+	}
 }

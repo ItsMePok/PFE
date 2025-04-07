@@ -20,7 +20,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon":"poke_radium_boots", 
+			"minecraft:icon": "poke_radium_boots",
 			"minecraft:wearable": {
 				"slot": "slot.armor.feet",
 				"protection": 20
@@ -40,14 +40,14 @@
 						"repair_amount": "query.max_durability"
 					}
 				]
-			}, 
-			"minecraft:tags": { 
+			},
+			"minecraft:tags": {
 				"tags": [
-					"pfe:SingleArmor",
+					"poke_pfe:radium_armor_effects",
 					"minecraft:is_armor",
 					"minecraft:trimmable_armors",
 					"novelty:is_foot"
-			  ]
+				]
 			}
 		}
 	}

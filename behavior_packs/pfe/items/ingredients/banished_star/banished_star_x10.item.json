@@ -8,10 +8,19 @@
 			}
 		},
 		"components": {
+			"minecraft:display_name": {
+				"value": "%poke_pfe.banished_star10\n%poke_pfe.tag"
+			},
+			"minecraft:tags": {
+				"tags": [
+					"poke:banished_star"
+				]
+			},
+			"minecraft:rarity": "common",
 			"minecraft:custom_components": [
 				"poke:consumeEffects"
 			],
-			"minecraft:icon":{
+			"minecraft:icon": {
 				"textures": {
 					"default": "poke_banished_star_x10"
 				}

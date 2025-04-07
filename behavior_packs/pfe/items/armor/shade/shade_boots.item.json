@@ -20,12 +20,12 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon":"poke_shade_boots", 
+			"minecraft:icon": "poke_shade_boots",
 			"minecraft:wearable": {
 				"slot": "slot.armor.feet",
 				"protection": 8
 			},
-			"minecraft:hover_text_color":"green",
+			"minecraft:hover_text_color": "green",
 			"minecraft:repairable": {
 				"repair_items": [
 					{
@@ -41,14 +41,14 @@
 						"repair_amount": "query.max_durability*0.25"
 					}
 				]
-			}, 
-			"minecraft:tags": { 
-			  "tags": [
-					"pfe:SingleArmor",
+			},
+			"minecraft:tags": {
+				"tags": [
+					"poke_pfe:shade_armor_effects",
 					"minecraft:is_armor",
 					"minecraft:trimmable_armors",
 					"novelty:is_foot"
-			  ] 
+				]
 			}
 		}
 	}

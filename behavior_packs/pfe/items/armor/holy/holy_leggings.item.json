@@ -21,7 +21,11 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": { "textures": {"default": "poke_holy_leggings" }}, 
+			"minecraft:icon": {
+				"textures": {
+					"default": "poke_holy_leggings"
+				}
+			},
 			"minecraft:wearable": {
 				"slot": "slot.armor.legs",
 				"protection": 11
@@ -42,13 +46,14 @@
 					}
 				]
 			},
-			"minecraft:tags": { 
-			  "tags": [
-				"pfe:SingleArmor",
-				"minecraft:is_armor",
-				"minecraft:trimmable_armors" 
-			  ] 
-			} 
-		  } 
-		} 
-	  }
+			"minecraft:tags": {
+				"tags": [
+					"pfe:SingleArmor",
+					"minecraft:is_armor",
+					"minecraft:trimmable_armors",
+					"poke_pfe:holy_armor_effects"
+				]
+			}
+		}
+	}
+}

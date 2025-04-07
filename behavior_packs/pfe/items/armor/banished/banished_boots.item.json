@@ -13,16 +13,17 @@
 				"value": 90,
 				"slot": "armor_feet"
 			},
-			"minecraft:icon":"poke_banished_boots", 
+			"minecraft:icon": "poke_banished_boots",
 			"minecraft:wearable": {
 				"slot": "slot.armor.feet",
 				"protection": 20
-			}, 
-			"minecraft:tags": { 
-				"tags": [ 
+			},
+			"minecraft:tags": {
+				"tags": [
 					"minecraft:is_armor",
 					"minecraft:trimmable_armors",
-					"novelty:is_foot"
+					"novelty:is_foot",
+					"poke_pfe:banished_armor_effects"
 				]
 			}
 		}

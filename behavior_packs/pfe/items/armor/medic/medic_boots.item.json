@@ -20,7 +20,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon":"poke_medic_boots", 
+			"minecraft:icon": "poke_medic_boots",
 			"minecraft:wearable": {
 				"slot": "slot.armor.feet",
 				"protection": 10
@@ -47,13 +47,14 @@
 					}
 				]
 			},
-			"minecraft:tags": { 
-				"tags": [ 
+			"minecraft:tags": {
+				"tags": [
 					"minecraft:is_armor",
 					"minecraft:trimmable_armors",
-					"novelty:is_foot"
-				] 
-			} 
-		} 
-	} 
+					"novelty:is_foot",
+					"poke_pfe:medic_armor_effects"
+				]
+			}
+		}
+	}
 }

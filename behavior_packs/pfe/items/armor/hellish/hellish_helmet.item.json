@@ -20,7 +20,11 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": { "textures": {"default": "poke_hellish_helmet" }}, 
+			"minecraft:icon": {
+				"textures": {
+					"default": "poke_hellish_helmet"
+				}
+			},
 			"minecraft:wearable": {
 				"slot": "slot.armor.head",
 				"protection": 8
@@ -41,12 +45,12 @@
 					}
 				]
 			},
-			"minecraft:tags": { 
+			"minecraft:tags": {
 				"tags": [
-					"pfe:SingleArmor",
 					"novelty:is_hat",
 					"minecraft:is_armor",
-					"minecraft:trimmable_armors" 
+					"minecraft:trimmable_armors",
+					"poke_pfe:hellish_armor_effects"
 				]
 			}
 		}

@@ -8,11 +8,27 @@
 			},
 			"traits": {
 				"minecraft:placement_direction": {
-					"enabled_states": ["minecraft:cardinal_direction"]
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
 				}
 			}
 		},
 		"components": {
+			"minecraft:item_visual": {
+				"geometry": {
+					"identifier": "geometry.poke_pfe.dye_unmixer",
+					"bone_visibility": {
+						"screen": false
+					}
+				},
+				"material_instances": {
+					"*": {
+						"texture": "poke_dye_unmixer",
+						"render_method": "alpha_test"
+					}
+				}
+			},
 			"minecraft:liquid_detection": {
 				"detection_rules": [
 					{
@@ -40,17 +56,26 @@
 			"tag:pfe": {},
 			"tag:metal": {},
 			"tag:minecraft:metal": {},
-			"tag:stone_pick_diggable":{},
-			"tag:minecraft:is_pickaxe_item_destructible":{},
+			"tag:stone_pick_diggable": {},
+			"tag:minecraft:is_pickaxe_item_destructible": {},
 			"minecraft:map_color": "#697c79",
-			"minecraft:crafting_table": {"crafting_tags": ["poke_dye_unmixer"],"table_name": "Dye Unmixer"}
+			"minecraft:crafting_table": {
+				"crafting_tags": [
+					"poke_dye_unmixer"
+				],
+				"table_name": "Dye Unmixer"
+			}
 		},
 		"permutations": [
 			{
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'north' ",
 				"components": {
 					"minecraft:transformation": {
-						"rotation": [0, 180, 0]
+						"rotation": [
+							0,
+							180,
+							0
+						]
 					}
 				}
 			},
@@ -58,7 +83,11 @@
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'south' ",
 				"components": {
 					"minecraft:transformation": {
-						"rotation": [0, 0, 0]
+						"rotation": [
+							0,
+							0,
+							0
+						]
 					}
 				}
 			},
@@ -66,7 +95,11 @@
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'east' ",
 				"components": {
 					"minecraft:transformation": {
-						"rotation": [0, 90, 0]
+						"rotation": [
+							0,
+							90,
+							0
+						]
 					}
 				}
 			},
@@ -74,7 +107,11 @@
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'west' ",
 				"components": {
 					"minecraft:transformation": {
-						"rotation": [0, 270, 0]
+						"rotation": [
+							0,
+							270,
+							0
+						]
 					}
 				}
 			}

@@ -20,7 +20,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon":"poke_death_boots", 
+			"minecraft:icon": "poke_death_boots",
 			"minecraft:wearable": {
 				"slot": "slot.armor.feet",
 				"protection": 14
@@ -46,14 +46,15 @@
 						"repair_amount": "query.max_durability * 0.03"
 					}
 				]
-			}, 
-			"minecraft:tags": { 
-				"tags": [ 
+			},
+			"minecraft:tags": {
+				"tags": [
 					"minecraft:is_armor",
 					"minecraft:trimmable_armors",
-					"novelty:is_foot"
-				] 
-			} 
-		} 
-	} 
+					"novelty:is_foot",
+					"poke_pfe:death_armor_effects"
+				]
+			}
+		}
+	}
 }

@@ -21,7 +21,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon":"poke_radium_leggings", 
+			"minecraft:icon": "poke_radium_leggings",
 			"minecraft:wearable": {
 				"slot": "slot.armor.legs",
 				"protection": 24
@@ -41,14 +41,14 @@
 						"repair_amount": "query.max_durability"
 					}
 				]
-			}, 
-			"minecraft:tags": { 
-			  "tags": [
-				"pfe:SingleArmor",
-				"minecraft:is_armor",
-				"minecraft:trimmable_armors" 
-			  ] 
-			} 
-		  } 
-		} 
-	  }
+			},
+			"minecraft:tags": {
+				"tags": [
+					"poke_pfe:radium_armor_effects",
+					"minecraft:is_armor",
+					"minecraft:trimmable_armors"
+				]
+			}
+		}
+	}
+}

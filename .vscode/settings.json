@@ -1,17 +1,4 @@
 {
-  "[javascript]": {
-    "editor.formatOnSave": false
-  },
-  "[typescript]": {
-    "editor.formatOnSave": false
-  },
-  "[typescriptreact]": {
-    "editor.formatOnSave": false
-  },
-  "[json]": {
-    "editor.formatOnSave": true,
-    "prettier.embeddedLanguageFormatting": "off"
-  },
   "git.ignoreLimitWarning": true,
   "editor.formatOnSave": true,
   "search.exclude": {
@@ -27,6 +14,8 @@
   },
   "cSpell.words": [
     "boltbow",
+    "Burstbow",
+    "curseforge",
     "eastside",
     "gametest",
     "gametests",
@@ -37,10 +26,12 @@
     "modbay",
     "netherrack",
     "northside",
+    "Omnivator",
+    "Shadowstone",
     "southside",
     "stackable",
+    "Teleporter",
     "westside"
   ],
-  "editor.tabSize": 2,
-  "eslint.experimental.useFlatConfig": true
+  "editor.tabSize": 2
 }

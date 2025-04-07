@@ -8,7 +8,16 @@
 			}
 		},
 		"components": {
-			"minecraft:icon":"poke_banished_star_x6"
+			"minecraft:display_name": {
+				"value": "%poke_pfe.banished_star6\n%poke_pfe.tag"
+			},
+			"minecraft:tags": {
+				"tags": [
+					"poke:banished_star"
+				]
+			},
+			"minecraft:rarity": "common",
+			"minecraft:icon": "poke_banished_star_x6"
 		}
 	}
 }

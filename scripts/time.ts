@@ -190,8 +190,8 @@ const PFEDefaultHolidays:PokeEventConfig[] =[
     v:PokeCalendarVersion
   },
   {
-    name:{text:`Christmas`},
-    id:"poke-pfe:XMAS",
+    name:{text:`Easter`},
+    id:"just:Easter",
     dates:[{month:11,days:[24,25]}],
     repeat:true,
     gift: `give @s poke:red_present 16`,

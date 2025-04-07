@@ -3,12 +3,36 @@
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:magnet",
-			"menu_category": {"category": "items"},
+			"menu_category": {
+				"category": "items"
+			},
 			"states": {
-				"pfe:active":[0,1]
+				"pfe:active": [
+					0,
+					1
+				]
+			},
+			"traits": {
+				"minecraft:placement_position": {
+					"enabled_states": [
+						"minecraft:vertical_half"
+					]
+				}
 			}
 		},
 		"permutations": [
+			{
+				"condition": "q.block_state('minecraft:vertical_half') == 'top'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							180
+						]
+					}
+				}
+			},
 			{
 				"condition": "q.block_state('pfe:active') == 1",
 				"components": {
@@ -17,21 +41,40 @@
 			}
 		],
 		"components": {
+			"minecraft:display_name": "%poke_pfe.magnet_block\n%poke_pfe.tag",
+			"minecraft:geometry": {
+				"identifier": "geometry.poke_pfe.magnet_block"
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "poke_magnet_block",
+					"render_method": "opaque"
+				}
+			},
 			"minecraft:redstone_conductivity": {
 				"redstone_conductor": true,
 				"allows_wire_to_step_down": true
 			},
-			"minecraft:destructible_by_mining": {"seconds_to_destroy": 1},
-			"minecraft:destructible_by_explosion": {"explosion_resistance": 30},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 1
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 30
+			},
 			"tag:pfe": {},
 			"tag:metal": {},
 			"tag:minecraft:metal": {},
-			"tag:stone_pick_diggable":{},
-			"tag:minecraft:is_pickaxe_item_destructible":{},
+			"tag:stone_pick_diggable": {},
+			"tag:minecraft:is_pickaxe_item_destructible": {},
 			"minecraft:map_color": "#764f36",
-			"minecraft:tick": {"interval_range":[10,10]},
-			"minecraft:custom_components":[
-				"poke:cc_magnet_block"
+			"minecraft:tick": {
+				"interval_range": [
+					10,
+					10
+				]
+			},
+			"minecraft:custom_components": [
+				"poke_pfe:magnet_block"
 			]
 		}
 	}

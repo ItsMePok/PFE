@@ -20,7 +20,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon":"poke_galaxy_boots", 
+			"minecraft:icon": "poke_galaxy_boots",
 			"minecraft:wearable": {
 				"slot": "slot.armor.feet",
 				"protection": 12
@@ -28,26 +28,33 @@
 			"minecraft:repairable": {
 				"repair_items": [
 					{
-						"items": ["poke:repair_core"],
+						"items": [
+							"poke:repair_core"
+						],
 						"repair_amount": "query.max_durability"
 					},
 					{
-						"items": ["poke:galaxy_ingot"],
+						"items": [
+							"poke:galaxy_ingot"
+						],
 						"repair_amount": "query.max_durability*0.25"
 					},
 					{
-						"items": ["poke:galaxy_nugget"],
+						"items": [
+							"poke:galaxy_nugget"
+						],
 						"repair_amount": "query.max_durability*0.028"
 					}
 				]
 			},
-			"minecraft:tags": { 
-				"tags": [ 
+			"minecraft:tags": {
+				"tags": [
 					"minecraft:is_armor",
 					"minecraft:trimmable_armors",
-					"novelty:is_foot"
-				] 
-			} 
-		} 
-	} 
+					"novelty:is_foot",
+					"poke_pfe:galaxy_armor_effects"
+				]
+			}
+		}
+	}
 }

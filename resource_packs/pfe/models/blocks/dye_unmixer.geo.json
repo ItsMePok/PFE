@@ -63,6 +63,24 @@
 							}
 						}
 					]
+				},
+				{
+					"name": "screen",
+					"parent": "bone",
+					"pivot": [0, 16.8, 0],
+					"cubes": [
+						{
+							"origin": [-5, 16.8, -5],
+							"size": [10, 0, 10],
+							"uv": {
+								"north": {"uv": [44, 16], "uv_size": [14, 2]},
+								"east": {"uv": [44, 18], "uv_size": [14, 2]},
+								"south": {"uv": [44, 20], "uv_size": [14, 2]},
+								"west": {"uv": [44, 22], "uv_size": [14, 2]},
+								"up": {"uv": [44, 24], "uv_size": [8, 8]}
+							}
+						}
+					]
 				}
 			],
 			"item_display_transforms": {

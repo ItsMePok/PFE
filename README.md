@@ -1,5 +1,5 @@
 # PFE Info
- PFE is a Minecraft Bedrock Addon that Expands the endgame of Minecraft, adding **over 700** things for you to check out
+ PFE is a Minecraft Bedrock Addon that Expands the endgame of Minecraft, adding **over 900** things for you to check out
 
 ## Official PFE Links
 

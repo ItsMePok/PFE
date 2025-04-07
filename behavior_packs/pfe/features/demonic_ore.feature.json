@@ -7,10 +7,7 @@
 		"count": 4,
 		"replace_rules": [
 			{
-				"places_block": {
-					"name": "poke:demonic_ore",
-					"states": {}
-				},
+				"places_block": "poke_pfe:demonic_ore",
 				"may_replace": [
 					{
 						"name": "minecraft:stone",
@@ -35,7 +32,15 @@
 						"states": {
 							"stone_type": "diorite"
 						}
-					},
+					}
+				]
+			},
+			{
+				"places_block": {
+					"name": "poke:demonic_ore",
+					"states": {}
+				},
+				"may_replace": [
 					"minecraft:deepslate",
 					"minecraft:tuff"
 				]

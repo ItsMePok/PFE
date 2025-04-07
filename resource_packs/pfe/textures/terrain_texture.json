@@ -241,9 +241,6 @@
 		"poke_honey_tiles": {
 			"textures": "textures/poke/pfe/honey_tiles"
 		},
-		"poke_honey_bricks": {
-			"textures": "textures/poke/pfe/honey_bricks"
-		},
 		"poke_chiseled_honey_bricks": {
 			"textures": "textures/poke/pfe/chiseled_honey_bricks"
 		},
@@ -436,8 +433,8 @@
 		},
 		"poke_deepslate_godly_ore": {
 			"textures": [
-				"textures/blocks/deepslate/deepslate",
-				"textures/poke/pfe/godly_ore_pattern"
+				"textures/poke/pfe/godly_ore_pattern",
+				"textures/blocks/deepslate/deepslate"
 			],
 			"additive": true
 		},
@@ -1653,15 +1650,15 @@
 		},
 		"poke_deepslate_cobalt_ore": {
 			"textures": [
-				"textures/blocks/deepslate/deepslate",
-				"textures/poke/pfe/cobalt_ore_pattern"
+				"textures/poke/pfe/cobalt_ore_pattern",
+				"textures/blocks/deepslate/deepslate"
 			],
 			"additive": true
 		},
 		"poke_deepslate_shade_ore": {
 			"textures": [
-				"textures/blocks/deepslate/deepslate",
-				"textures/poke/pfe/shade_ore_pattern"
+				"textures/poke/pfe/shade_ore_pattern",
+				"textures/blocks/deepslate/deepslate"
 			],
 			"additive": true
 		},
@@ -1673,8 +1670,8 @@
 		},
 		"poke_deepslate_holy_ore": {
 			"textures": [
-				"textures/blocks/deepslate/deepslate",
-				"textures/poke/pfe/holy_ore_pattern"
+				"textures/poke/pfe/holy_ore_pattern",
+				"textures/blocks/deepslate/deepslate"
 			],
 			"additive": true
 		},
@@ -1726,11 +1723,113 @@
 		"poke_magnet_block": {
 			"textures": "textures/poke/pfe/magnet_block"
 		},
+		"poke_radium_block": {
+			"textures": "textures/poke/pfe/radium_block"
+		},
 		"poke_cracked_cobalt_bricks": {
 			"textures": {
 				"path": "textures/poke/pfe/cracked_bricks",
 				"overlay_color": "#2c2eb1"
 			}
+		},
+		"poke_cracked_void_bricks": {
+			"textures": {
+				"path": "textures/poke/pfe/cracked_bricks",
+				"overlay_color": "#0b0b0b"
+			}
+		},
+		"poke_cracked_radium_bricks": {
+			"textures": {
+				"path": "textures/poke/pfe/cracked_bricks",
+				"overlay_color": "#37ee0f"
+			}
+		},
+		"poke_cracked_onyx_bricks": {
+			"textures": {
+				"path": "textures/poke/pfe/cracked_bricks",
+				"overlay_color": "#1f1740"
+			}
+		},
+		"poke_cracked_death_bricks": {
+			"textures": {
+				"path": "textures/poke/pfe/cracked_bricks",
+				"overlay_color": "#17141d"
+			}
+		},
+		"poke_cracked_galaxy_bricks": {
+			"textures": {
+				"path": "textures/poke/pfe/cracked_bricks",
+				"overlay_color": "#7435a4"
+			}
+		},
+		"poke_cracked_godly_bricks": {
+			"textures": {
+				"path": "textures/poke/pfe/cracked_bricks",
+				"overlay_color": "#a09874"
+			}
+		},
+		"poke_cracked_hellish_bricks": {
+			"textures": {
+				"path": "textures/poke/pfe/cracked_bricks",
+				"overlay_color": "#c2222a"
+			}
+		},
+		"poke_cracked_demonic_bricks": {
+			"textures": {
+				"path": "textures/poke/pfe/cracked_bricks",
+				"overlay_color": "#2b0a0e"
+			}
+		},
+		"poke_cracked_molten_bricks": {
+			"textures": {
+				"path": "textures/poke/pfe/cracked_bricks",
+				"overlay_color": "#d06429"
+			}
+		},
+		"poke_cracked_medic_bricks": {
+			"textures": {
+				"path": "textures/poke/pfe/cracked_bricks",
+				"overlay_color": "#e132a7"
+			}
+		},
+		"poke_cracked_astral_bricks": {
+			"textures": {
+				"path": "textures/poke/pfe/cracked_bricks",
+				"overlay_color": "#1c0738"
+			}
+		},
+		"poke_cracked_shade_bricks": {
+			"textures": {
+				"path": "textures/poke/pfe/cracked_bricks",
+				"overlay_color": "#1c6f26"
+			}
+		},
+		"poke_cracked_holy_bricks": {
+			"textures": {
+				"path": "textures/poke/pfe/cracked_bricks",
+				"overlay_color": "#686862"
+			}
+		},
+		"poke_cracked_shadowstone_bricks": {
+			"textures": {
+				"path": "textures/poke/pfe/cracked_bricks",
+				"overlay_color": "#52315c"
+			}
+		},
+		"poke_cracked_banished_bricks": {
+			"textures": {
+				"path": "textures/poke/pfe/cracked_bricks",
+				"tint_color": "#323232"
+			}
+		},
+		"poke_cracked_limestone_bricks": {
+			"textures": "textures/poke/pfe/cracked_limestone_bricks"
+		},
+		"poke_cracked_honey_bricks": {
+			"textures": "textures/poke/pfe/cracked_honey_bricks"
+		},
+		"poke_cracked_nebula_bricks": {
+			"textures": "textures/poke/pfe/cracked_nebula_bricks"
 		},
 		"poke_void_bricks": {
 			"textures": {
@@ -1743,16 +1842,6 @@
 				"path": "textures/poke/pfe/bricks",
 				"overlay_color": "#37ee0f"
 			}
-		},
-		"poke_radium_block": {
-			"textures": "textures/poke/pfe/radium_block"
-		},
-		"poke_end_holy_ore": {
-			"textures": [
-				"textures/blocks/end_stone",
-				"textures/poke/pfe/holy_ore_pattern"
-			],
-			"additive": true
 		},
 		"poke_onyx_bricks": {
 			"textures": {
@@ -1808,9 +1897,6 @@
 				"overlay_color": "#e132a7"
 			}
 		},
-		"poke_nebula_bricks": {
-			"textures": "textures/poke/pfe/nebula_bricks"
-		},
 		"poke_astral_bricks": {
 			"textures": {
 				"path": "textures/poke/pfe/bricks",
@@ -1828,6 +1914,34 @@
 				"path": "textures/poke/pfe/bricks",
 				"overlay_color": "#686862"
 			}
+		},
+		"poke_shadowstone_bricks": {
+			"textures": {
+				"path": "textures/poke/pfe/bricks",
+				"overlay_color": "#52315c"
+			}
+		},
+		"poke_banished_bricks": {
+			"textures": {
+				"path": "textures/poke/pfe/bricks",
+				"tint_color": "#323232"
+			}
+		},
+		"poke_nebula_bricks": {
+			"textures": "textures/poke/pfe/nebula_bricks"
+		},
+		"poke_limestone_bricks": {
+			"textures": "textures/poke/pfe/limestone_bricks"
+		},
+		"poke_honey_bricks": {
+			"textures": "textures/poke/pfe/honey_bricks"
+		},
+		"poke_end_holy_ore": {
+			"textures": [
+				"textures/poke/pfe/holy_ore_pattern",
+				"textures/blocks/end_stone"
+			],
+			"additive": true
 		},
 		"poke_red_present": {
 			"textures": "textures/poke/pfe/red_present"
@@ -1934,10 +2048,10 @@
 		"poke_carved_melon_face": {
 			"textures": [
 				{
-					"path": "textures/blocks/melon_side"
+					"path": "textures/poke/pfe/zcarved_melon_pattern"
 				},
 				{
-					"path": "textures/poke/pfe/zcarved_melon_pattern"
+					"path": "textures/blocks/melon_side"
 				}
 			],
 			"additive": true
@@ -1953,22 +2067,22 @@
 		},
 		"poke_shade_ore": {
 			"textures": [
-				"textures/blocks/stone",
-				"textures/poke/pfe/shade_ore_pattern"
+				"textures/poke/pfe/shade_ore_pattern",
+				"textures/blocks/stone"
 			],
 			"additive": true
 		},
 		"poke_hellish_ore": {
 			"textures": [
-				"textures/blocks/stone",
-				"textures/poke/pfe/hellish_ore_pattern"
+				"textures/poke/pfe/hellish_ore_pattern",
+				"textures/blocks/stone"
 			],
 			"additive": true
 		},
 		"poke_deepslate_hellish_ore": {
 			"textures": [
-				"textures/blocks/deepslate/deepslate",
-				"textures/poke/pfe/hellish_ore_pattern"
+				"textures/poke/pfe/hellish_ore_pattern",
+				"textures/blocks/deepslate/deepslate"
 			],
 			"additive": true
 		},
@@ -1977,8 +2091,8 @@
 		},
 		"poke_onyx": {
 			"textures": [
-				"textures/blocks/deepslate/deepslate",
-				"textures/poke/pfe/onyx_ore_pattern"
+				"textures/poke/pfe/onyx_ore_pattern",
+				"textures/blocks/deepslate/deepslate"
 			],
 			"additive": true
 		},
@@ -1993,8 +2107,8 @@
 		},
 		"poke_holy_ore": {
 			"textures": [
-				"textures/blocks/stone",
-				"textures/poke/pfe/holy_ore_pattern"
+				"textures/poke/pfe/holy_ore_pattern",
+				"textures/blocks/stone"
 			],
 			"additive": true
 		},
@@ -2003,8 +2117,8 @@
 		},
 		"poke_nebula_ore": {
 			"textures": [
-				"textures/blocks/end_stone",
-				"textures/poke/pfe/nebula_ore_pattern"
+				"textures/poke/pfe/nebula_ore_pattern",
+				"textures/blocks/end_stone"
 			],
 			"additive": true
 		},
@@ -2013,29 +2127,36 @@
 		},
 		"poke_godly_ore": {
 			"textures": [
-				"textures/blocks/stone",
-				"textures/poke/pfe/godly_ore_pattern"
+				"textures/poke/pfe/godly_ore_pattern",
+				"textures/blocks/stone"
 			],
 			"additive": true
 		},
 		"poke_demonic_ore": {
 			"textures": [
-				"textures/blocks/deepslate/deepslate",
-				"textures/poke/pfe/demonic_ore_pattern"
+				"textures/poke/pfe/demonic_ore_pattern",
+				"textures/blocks/stone"
+			],
+			"additive": true
+		},
+		"poke_deepslate_demonic_ore": {
+			"textures": [
+				"textures/poke/pfe/demonic_ore_pattern",
+				"textures/blocks/deepslate/deepslate"
 			],
 			"additive": true
 		},
 		"poke_galaxy_ore": {
 			"textures": [
-				"textures/blocks/stone",
-				"textures/poke/pfe/galaxy_ore_pattern"
+				"textures/poke/pfe/galaxy_ore_pattern",
+				"textures/blocks/stone"
 			],
 			"additive": true
 		},
 		"poke_void_ore": {
 			"textures": [
-				"textures/blocks/deepslate/deepslate",
-				"textures/poke/pfe/void_ore_pattern"
+				"textures/poke/pfe/void_ore_pattern",
+				"textures/blocks/deepslate/deepslate"
 			],
 			"additive": true
 		},
@@ -2056,8 +2177,8 @@
 		},
 		"poke_cobalt_ore": {
 			"textures": [
-				"textures/blocks/stone",
-				"textures/poke/pfe/cobalt_ore_pattern"
+				"textures/poke/pfe/cobalt_ore_pattern",
+				"textures/blocks/stone"
 			],
 			"additive": true
 		},
@@ -2066,23 +2187,20 @@
 		},
 		"poke_nether_hellish_ore": {
 			"textures": [
-				"textures/blocks/netherrack",
-				"textures/poke/pfe/hellish_ore_pattern"
+				"textures/poke/pfe/hellish_ore_pattern",
+				"textures/blocks/netherrack"
 			],
 			"additive": true
 		},
 		"poke_nether_demonic_ore": {
 			"textures": [
-				"textures/blocks/netherrack",
-				"textures/poke/pfe/demonic_ore_pattern"
+				"textures/poke/pfe/demonic_ore_pattern",
+				"textures/blocks/netherrack"
 			],
 			"additive": true
 		},
 		"poke_limestone_brick_wall": {
 			"textures": "textures/poke/pfe/limestone_brick_wall"
-		},
-		"poke_limestone_bricks": {
-			"textures": "textures/poke/pfe/limestone_bricks"
 		},
 		"poke_zombken_trophy": {
 			"textures": "textures/poke/pfe/zombken_trophy"
@@ -2098,22 +2216,22 @@
 		},
 		"poke_nether_shade_ore": {
 			"textures": [
-				"textures/blocks/netherrack",
-				"textures/poke/pfe/shade_ore_pattern"
+				"textures/poke/pfe/shade_ore_pattern",
+				"textures/blocks/netherrack"
 			],
 			"additive": true
 		},
 		"poke_nether_onyx_ore": {
 			"textures": [
-				"textures/blocks/netherrack",
-				"textures/poke/pfe/onyx_ore_pattern"
+				"textures/poke/pfe/onyx_ore_pattern",
+				"textures/blocks/netherrack"
 			],
 			"additive": true
 		},
 		"poke_astral_ore": {
 			"textures": [
-				"textures/blocks/end_stone",
-				"textures/poke/pfe/astral_ore_pattern"
+				"textures/poke/pfe/astral_ore_pattern",
+				"textures/blocks/end_stone"
 			],
 			"additive": true
 		},
@@ -2176,22 +2294,22 @@
 		},
 		"poke_end_galaxy_ore": {
 			"textures": [
-				"textures/blocks/end_stone",
-				"textures/poke/pfe/galaxy_ore_pattern"
+				"textures/poke/pfe/galaxy_ore_pattern",
+				"textures/blocks/end_stone"
 			],
 			"additive": true
 		},
 		"poke_end_godly_ore": {
 			"textures": [
-				"textures/blocks/end_stone",
-				"textures/poke/pfe/godly_ore_pattern"
+				"textures/poke/pfe/godly_ore_pattern",
+				"textures/blocks/end_stone"
 			],
 			"additive": true
 		},
 		"poke_end_void_ore": {
 			"textures": [
-				"textures/blocks/end_stone",
-				"textures/poke/pfe/void_ore_pattern"
+				"textures/poke/pfe/void_ore_pattern",
+				"textures/blocks/end_stone"
 			],
 			"additive": true
 		},

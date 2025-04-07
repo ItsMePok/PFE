@@ -1,5 +1,554 @@
+var __create = Object.create;
+var __defProp = Object.defineProperty;
+var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+var __getOwnPropNames = Object.getOwnPropertyNames;
+var __getProtoOf = Object.getPrototypeOf;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __commonJS = (cb, mod) => function __require() {
+  return mod || (0, cb[__getOwnPropNames(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
+};
+var __copyProps = (to, from, except, desc) => {
+  if (from && typeof from === "object" || typeof from === "function") {
+    for (let key of __getOwnPropNames(from))
+      if (!__hasOwnProp.call(to, key) && key !== except)
+        __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
+  }
+  return to;
+};
+var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(
+  // If the importer is in node compatibility mode or this is not an ESM
+  // file that has been converted to a CommonJS file using a Babel-
+  // compatible transform (i.e. "__esModule" has not been set), then set
+  // "default" to the CommonJS "module.exports" for node compatibility.
+  isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
+  mod
+));
+
+// node_modules/@minecraft/math/lib/general/clamp.js
+var require_clamp = __commonJS({
+  "node_modules/@minecraft/math/lib/general/clamp.js"(exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    exports.clampNumber = void 0;
+    function clampNumber2(val, min, max) {
+      return Math.min(Math.max(val, min), max);
+    }
+    exports.clampNumber = clampNumber2;
+  }
+});
+
+// node_modules/@minecraft/math/lib/vector3/coreHelpers.js
+var require_coreHelpers = __commonJS({
+  "node_modules/@minecraft/math/lib/vector3/coreHelpers.js"(exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    exports.VECTOR3_SOUTH = exports.VECTOR3_NORTH = exports.VECTOR3_EAST = exports.VECTOR3_WEST = exports.VECTOR3_ZERO = exports.VECTOR3_ONE = exports.VECTOR3_BACK = exports.VECTOR3_FORWARD = exports.VECTOR3_RIGHT = exports.VECTOR3_LEFT = exports.VECTOR3_DOWN = exports.VECTOR3_UP = exports.Vector2Utils = exports.Vector3Utils = void 0;
+    var clamp_1 = require_clamp();
+    var Vector3Utils = class _Vector3Utils {
+      /**
+       * equals
+       *
+       * Check the equality of two vectors
+       */
+      static equals(v1, v2) {
+        return v1.x === v2.x && v1.y === v2.y && v1.z === v2.z;
+      }
+      /**
+       * add
+       *
+       * Add two vectors to produce a new vector
+       */
+      static add(v1, v2) {
+        return { x: v1.x + v2.x, y: v1.y + v2.y, z: v1.z + v2.z };
+      }
+      /**
+       * subtract
+       *
+       * Subtract two vectors to produce a new vector (v1-v2)
+       */
+      static subtract(v1, v2) {
+        return { x: v1.x - v2.x, y: v1.y - v2.y, z: v1.z - v2.z };
+      }
+      /** scale
+       *
+       * Multiple all entries in a vector by a single scalar value producing a new vector
+       */
+      static scale(v1, scale) {
+        return { x: v1.x * scale, y: v1.y * scale, z: v1.z * scale };
+      }
+      /**
+       * dot
+       *
+       * Calculate the dot product of two vectors
+       */
+      static dot(a, b) {
+        return a.x * b.x + a.y * b.y + a.z * b.z;
+      }
+      /**
+       * cross
+       *
+       * Calculate the cross product of two vectors. Returns a new vector.
+       */
+      static cross(a, b) {
+        return {
+          x: a.y * b.z - a.z * b.y,
+          y: a.z * b.x - a.x * b.z,
+          z: a.x * b.y - a.y * b.x
+        };
+      }
+      /**
+       * magnitude
+       *
+       * The magnitude of a vector
+       */
+      static magnitude(v) {
+        return Math.sqrt(v.x ** 2 + v.y ** 2 + v.z ** 2);
+      }
+      /**
+       * distance
+       *
+       * Calculate the distance between two vectors
+       */
+      static distance(a, b) {
+        return _Vector3Utils.magnitude(_Vector3Utils.subtract(a, b));
+      }
+      /**
+       * normalize
+       *
+       * Takes a vector 3 and normalizes it to a unit vector
+       */
+      static normalize(v) {
+        const mag = _Vector3Utils.magnitude(v);
+        return { x: v.x / mag, y: v.y / mag, z: v.z / mag };
+      }
+      /**
+       * floor
+       *
+       * Floor the components of a vector to produce a new vector
+       */
+      static floor(v) {
+        return { x: Math.floor(v.x), y: Math.floor(v.y), z: Math.floor(v.z) };
+      }
+      /**
+       * toString
+       *
+       * Create a string representation of a vector3
+       */
+      static toString(v, options) {
+        const decimals = options?.decimals ?? 2;
+        const str = [v.x.toFixed(decimals), v.y.toFixed(decimals), v.z.toFixed(decimals)];
+        return str.join(options?.delimiter ?? ", ");
+      }
+      /**
+       * clamp
+       *
+       * Clamps the components of a vector to limits to produce a new vector
+       */
+      static clamp(v, limits) {
+        return {
+          x: (0, clamp_1.clampNumber)(v.x, limits?.min?.x ?? Number.MIN_SAFE_INTEGER, limits?.max?.x ?? Number.MAX_SAFE_INTEGER),
+          y: (0, clamp_1.clampNumber)(v.y, limits?.min?.y ?? Number.MIN_SAFE_INTEGER, limits?.max?.y ?? Number.MAX_SAFE_INTEGER),
+          z: (0, clamp_1.clampNumber)(v.z, limits?.min?.z ?? Number.MIN_SAFE_INTEGER, limits?.max?.z ?? Number.MAX_SAFE_INTEGER)
+        };
+      }
+      /**
+       * lerp
+       *
+       * Constructs a new vector using linear interpolation on each component from two vectors.
+       */
+      static lerp(a, b, t) {
+        return {
+          x: a.x + (b.x - a.x) * t,
+          y: a.y + (b.y - a.y) * t,
+          z: a.z + (b.z - a.z) * t
+        };
+      }
+      /**
+       * slerp
+       *
+       * Constructs a new vector using spherical linear interpolation on each component from two vectors.
+       */
+      static slerp(a, b, t) {
+        const theta = Math.acos(_Vector3Utils.dot(a, b));
+        const sinTheta = Math.sin(theta);
+        const ta = Math.sin((1 - t) * theta) / sinTheta;
+        const tb = Math.sin(t * theta) / sinTheta;
+        return _Vector3Utils.add(_Vector3Utils.scale(a, ta), _Vector3Utils.scale(b, tb));
+      }
+      /**
+       * multiply
+       *
+       * Element-wise multiplication of two vectors together.
+       * Not to be confused with {@link Vector3Utils.dot} product or {@link Vector3Utils.cross} product
+       */
+      static multiply(a, b) {
+        return {
+          x: a.x * b.x,
+          y: a.y * b.y,
+          z: a.z * b.z
+        };
+      }
+      /**
+       * rotateX
+       *
+       * Rotates the vector around the x axis counterclockwise (left hand rule)
+       * @param a - Angle in radians
+       */
+      static rotateX(v, a) {
+        let cos = Math.cos(a);
+        let sin = Math.sin(a);
+        return {
+          x: v.x,
+          y: v.y * cos - v.z * sin,
+          z: v.z * cos + v.y * sin
+        };
+      }
+      /**
+       * rotateY
+       *
+       * Rotates the vector around the y axis counterclockwise (left hand rule)
+       * @param a - Angle in radians
+       */
+      static rotateY(v, a) {
+        let cos = Math.cos(a);
+        let sin = Math.sin(a);
+        return {
+          x: v.x * cos + v.z * sin,
+          y: v.y,
+          z: v.z * cos - v.x * sin
+        };
+      }
+      /**
+       * rotateZ
+       *
+       * Rotates the vector around the z axis counterclockwise (left hand rule)
+       * @param a - Angle in radians
+       */
+      static rotateZ(v, a) {
+        let cos = Math.cos(a);
+        let sin = Math.sin(a);
+        return {
+          x: v.x * cos - v.y * sin,
+          y: v.y * cos + v.x * sin,
+          z: v.z
+        };
+      }
+    };
+    exports.Vector3Utils = Vector3Utils;
+    var Vector2Utils = class {
+      /**
+       * toString
+       *
+       * Create a string representation of a vector2
+       */
+      static toString(v, options) {
+        const decimals = options?.decimals ?? 2;
+        const str = [v.x.toFixed(decimals), v.y.toFixed(decimals)];
+        return str.join(options?.delimiter ?? ", ");
+      }
+    };
+    exports.Vector2Utils = Vector2Utils;
+    exports.VECTOR3_UP = { x: 0, y: 1, z: 0 };
+    exports.VECTOR3_DOWN = { x: 0, y: -1, z: 0 };
+    exports.VECTOR3_LEFT = { x: -1, y: 0, z: 0 };
+    exports.VECTOR3_RIGHT = { x: 1, y: 0, z: 0 };
+    exports.VECTOR3_FORWARD = { x: 0, y: 0, z: 1 };
+    exports.VECTOR3_BACK = { x: 0, y: 0, z: -1 };
+    exports.VECTOR3_ONE = { x: 1, y: 1, z: 1 };
+    exports.VECTOR3_ZERO = { x: 0, y: 0, z: 0 };
+    exports.VECTOR3_WEST = { x: -1, y: 0, z: 0 };
+    exports.VECTOR3_EAST = { x: 1, y: 0, z: 0 };
+    exports.VECTOR3_NORTH = { x: 0, y: 0, z: 1 };
+    exports.VECTOR3_SOUTH = { x: 0, y: 0, z: -1 };
+  }
+});
+
+// node_modules/@minecraft/math/lib/vector3/vectorWrapper.js
+var require_vectorWrapper = __commonJS({
+  "node_modules/@minecraft/math/lib/vector3/vectorWrapper.js"(exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    exports.Vector2Builder = exports.Vector3Builder = void 0;
+    var coreHelpers_1 = require_coreHelpers();
+    var Vector3Builder = class {
+      constructor(first, y, z) {
+        if (typeof first === "object") {
+          this.x = first.x;
+          this.y = first.y;
+          this.z = first.z;
+        } else {
+          this.x = first;
+          this.y = y ?? 0;
+          this.z = z ?? 0;
+        }
+      }
+      /**
+       * Assigns the values of the passed in vector to this vector. Returns itself.
+       */
+      assign(vec) {
+        this.x = vec.x;
+        this.y = vec.y;
+        this.z = vec.z;
+        return this;
+      }
+      /**
+       * equals
+       *
+       * Check the equality of two vectors
+       */
+      equals(v) {
+        return coreHelpers_1.Vector3Utils.equals(this, v);
+      }
+      /**
+       * add
+       *
+       * Adds the vector v to this, returning itself.
+       */
+      add(v) {
+        return this.assign(coreHelpers_1.Vector3Utils.add(this, v));
+      }
+      /**
+       * subtract
+       *
+       * Subtracts the vector v from this, returning itself.
+       */
+      subtract(v) {
+        return this.assign(coreHelpers_1.Vector3Utils.subtract(this, v));
+      }
+      /** scale
+       *
+       * Scales this by the passed in value, returning itself.
+       */
+      scale(val) {
+        return this.assign(coreHelpers_1.Vector3Utils.scale(this, val));
+      }
+      /**
+       * dot
+       *
+       * Computes the dot product of this and the passed in vector.
+       */
+      dot(vec) {
+        return coreHelpers_1.Vector3Utils.dot(this, vec);
+      }
+      /**
+       * cross
+       *
+       * Computes the cross product of this and the passed in vector, returning itself.
+       */
+      cross(vec) {
+        return this.assign(coreHelpers_1.Vector3Utils.cross(this, vec));
+      }
+      /**
+       * magnitude
+       *
+       * The magnitude of the vector
+       */
+      magnitude() {
+        return coreHelpers_1.Vector3Utils.magnitude(this);
+      }
+      /**
+       * distance
+       *
+       * Calculate the distance between two vectors
+       */
+      distance(vec) {
+        return coreHelpers_1.Vector3Utils.distance(this, vec);
+      }
+      /**
+       * normalize
+       *
+       * Normalizes this vector, returning itself.
+       */
+      normalize() {
+        return this.assign(coreHelpers_1.Vector3Utils.normalize(this));
+      }
+      /**
+       * floor
+       *
+       * Floor the components of a vector to produce a new vector
+       */
+      floor() {
+        return this.assign(coreHelpers_1.Vector3Utils.floor(this));
+      }
+      /**
+       * toString
+       *
+       * Create a string representation of a vector
+       */
+      toString(options) {
+        return coreHelpers_1.Vector3Utils.toString(this, options);
+      }
+      /**
+       * clamp
+       *
+       * Clamps the components of a vector to limits to produce a new vector
+       */
+      clamp(limits) {
+        return this.assign(coreHelpers_1.Vector3Utils.clamp(this, limits));
+      }
+      /**
+       * lerp
+       *
+       * Constructs a new vector using linear interpolation on each component from two vectors.
+       */
+      lerp(vec, t) {
+        return this.assign(coreHelpers_1.Vector3Utils.lerp(this, vec, t));
+      }
+      /**
+       * slerp
+       *
+       * Constructs a new vector using spherical linear interpolation on each component from two vectors.
+       */
+      slerp(vec, t) {
+        return this.assign(coreHelpers_1.Vector3Utils.slerp(this, vec, t));
+      }
+      /**
+       * multiply
+       *
+       * Element-wise multiplication of two vectors together.
+       * Not to be confused with {@link Vector3Builder.dot} product or {@link Vector3Builder.cross} product
+       */
+      multiply(vec) {
+        return this.assign(coreHelpers_1.Vector3Utils.multiply(this, vec));
+      }
+      /**
+       * rotateX
+       *
+       * Rotates the vector around the x axis counterclockwise (left hand rule)
+       * @param a - Angle in radians
+       */
+      rotateX(a) {
+        return this.assign(coreHelpers_1.Vector3Utils.rotateX(this, a));
+      }
+      /**
+       * rotateY
+       *
+       * Rotates the vector around the y axis counterclockwise (left hand rule)
+       * @param a - Angle in radians
+       */
+      rotateY(a) {
+        return this.assign(coreHelpers_1.Vector3Utils.rotateY(this, a));
+      }
+      /**
+       * rotateZ
+       *
+       * Rotates the vector around the z axis counterclockwise (left hand rule)
+       * @param a - Angle in radians
+       */
+      rotateZ(a) {
+        return this.assign(coreHelpers_1.Vector3Utils.rotateZ(this, a));
+      }
+    };
+    exports.Vector3Builder = Vector3Builder;
+    var Vector2Builder = class {
+      constructor(first, y) {
+        if (typeof first === "object") {
+          this.x = first.x;
+          this.y = first.y;
+        } else {
+          this.x = first;
+          this.y = y ?? 0;
+        }
+      }
+      toString(options) {
+        return coreHelpers_1.Vector2Utils.toString(this, options);
+      }
+    };
+    exports.Vector2Builder = Vector2Builder;
+  }
+});
+
+// node_modules/@minecraft/math/lib/vector3/index.js
+var require_vector3 = __commonJS({
+  "node_modules/@minecraft/math/lib/vector3/index.js"(exports) {
+    "use strict";
+    var __createBinding = exports && exports.__createBinding || (Object.create ? function(o, m, k, k2) {
+      if (k2 === void 0)
+        k2 = k;
+      var desc = Object.getOwnPropertyDescriptor(m, k);
+      if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+        desc = { enumerable: true, get: function() {
+          return m[k];
+        } };
+      }
+      Object.defineProperty(o, k2, desc);
+    } : function(o, m, k, k2) {
+      if (k2 === void 0)
+        k2 = k;
+      o[k2] = m[k];
+    });
+    var __exportStar = exports && exports.__exportStar || function(m, exports2) {
+      for (var p in m)
+        if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports2, p))
+          __createBinding(exports2, m, p);
+    };
+    Object.defineProperty(exports, "__esModule", { value: true });
+    __exportStar(require_coreHelpers(), exports);
+    __exportStar(require_vectorWrapper(), exports);
+  }
+});
+
+// node_modules/@minecraft/math/lib/general/index.js
+var require_general = __commonJS({
+  "node_modules/@minecraft/math/lib/general/index.js"(exports) {
+    "use strict";
+    var __createBinding = exports && exports.__createBinding || (Object.create ? function(o, m, k, k2) {
+      if (k2 === void 0)
+        k2 = k;
+      var desc = Object.getOwnPropertyDescriptor(m, k);
+      if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+        desc = { enumerable: true, get: function() {
+          return m[k];
+        } };
+      }
+      Object.defineProperty(o, k2, desc);
+    } : function(o, m, k, k2) {
+      if (k2 === void 0)
+        k2 = k;
+      o[k2] = m[k];
+    });
+    var __exportStar = exports && exports.__exportStar || function(m, exports2) {
+      for (var p in m)
+        if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports2, p))
+          __createBinding(exports2, m, p);
+    };
+    Object.defineProperty(exports, "__esModule", { value: true });
+    __exportStar(require_clamp(), exports);
+  }
+});
+
+// node_modules/@minecraft/math/lib/index.js
+var require_lib = __commonJS({
+  "node_modules/@minecraft/math/lib/index.js"(exports) {
+    "use strict";
+    var __createBinding = exports && exports.__createBinding || (Object.create ? function(o, m, k, k2) {
+      if (k2 === void 0)
+        k2 = k;
+      var desc = Object.getOwnPropertyDescriptor(m, k);
+      if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+        desc = { enumerable: true, get: function() {
+          return m[k];
+        } };
+      }
+      Object.defineProperty(o, k2, desc);
+    } : function(o, m, k, k2) {
+      if (k2 === void 0)
+        k2 = k;
+      o[k2] = m[k];
+    });
+    var __exportStar = exports && exports.__exportStar || function(m, exports2) {
+      for (var p in m)
+        if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports2, p))
+          __createBinding(exports2, m, p);
+    };
+    Object.defineProperty(exports, "__esModule", { value: true });
+    __exportStar(require_vector3(), exports);
+    __exportStar(require_general(), exports);
+  }
+});
+
 // scripts/main.ts
-import { system as system3, world as world5, EquipmentSlot as EquipmentSlot4, GameMode as GameMode3, EntityComponentTypes as EntityComponentTypes4, ItemComponentTypes as ItemComponentTypes4, ItemStack as ItemStack4, Direction as Direction2, MinecraftDimensionTypes as MinecraftDimensionTypes2 } from "@minecraft/server";
+import { system as system3, world as world5, EquipmentSlot as EquipmentSlot4, GameMode as GameMode3, EntityComponentTypes as EntityComponentTypes4, ItemComponentTypes as ItemComponentTypes4, ItemStack as ItemStack4, Direction as Direction2 } from "@minecraft/server";
 
 // node_modules/@minecraft/vanilla-data/lib/index.js
 var MinecraftBiomeTypes = ((MinecraftBiomeTypes2) => {
@@ -237,7 +786,9 @@ var MinecraftBlockTypes = ((MinecraftBlockTypes2) => {
   MinecraftBlockTypes2["BubbleCoralFan"] = "minecraft:bubble_coral_fan";
   MinecraftBlockTypes2["BubbleCoralWallFan"] = "minecraft:bubble_coral_wall_fan";
   MinecraftBlockTypes2["BuddingAmethyst"] = "minecraft:budding_amethyst";
+  MinecraftBlockTypes2["Bush"] = "minecraft:bush";
   MinecraftBlockTypes2["Cactus"] = "minecraft:cactus";
+  MinecraftBlockTypes2["CactusFlower"] = "minecraft:cactus_flower";
   MinecraftBlockTypes2["Cake"] = "minecraft:cake";
   MinecraftBlockTypes2["Calcite"] = "minecraft:calcite";
   MinecraftBlockTypes2["CalibratedSculkSensor"] = "minecraft:calibrated_sculk_sensor";
@@ -601,6 +1152,7 @@ var MinecraftBlockTypes = ((MinecraftBlockTypes2) => {
   MinecraftBlockTypes2["FireCoralBlock"] = "minecraft:fire_coral_block";
   MinecraftBlockTypes2["FireCoralFan"] = "minecraft:fire_coral_fan";
   MinecraftBlockTypes2["FireCoralWallFan"] = "minecraft:fire_coral_wall_fan";
+  MinecraftBlockTypes2["FireflyBush"] = "minecraft:firefly_bush";
   MinecraftBlockTypes2["FletchingTable"] = "minecraft:fletching_table";
   MinecraftBlockTypes2["FlowerPot"] = "minecraft:flower_pot";
   MinecraftBlockTypes2["FloweringAzalea"] = "minecraft:flowering_azalea";
@@ -737,6 +1289,7 @@ var MinecraftBlockTypes = ((MinecraftBlockTypes2) => {
   MinecraftBlockTypes2["LargeAmethystBud"] = "minecraft:large_amethyst_bud";
   MinecraftBlockTypes2["LargeFern"] = "minecraft:large_fern";
   MinecraftBlockTypes2["Lava"] = "minecraft:lava";
+  MinecraftBlockTypes2["LeafLitter"] = "minecraft:leaf_litter";
   MinecraftBlockTypes2["Lectern"] = "minecraft:lectern";
   MinecraftBlockTypes2["Lever"] = "minecraft:lever";
   MinecraftBlockTypes2["LightBlock0"] = "minecraft:light_block_0";
@@ -1092,6 +1645,7 @@ var MinecraftBlockTypes = ((MinecraftBlockTypes2) => {
   MinecraftBlockTypes2["SeaLantern"] = "minecraft:sea_lantern";
   MinecraftBlockTypes2["SeaPickle"] = "minecraft:sea_pickle";
   MinecraftBlockTypes2["Seagrass"] = "minecraft:seagrass";
+  MinecraftBlockTypes2["ShortDryGrass"] = "minecraft:short_dry_grass";
   MinecraftBlockTypes2["ShortGrass"] = "minecraft:short_grass";
   MinecraftBlockTypes2["Shroomlight"] = "minecraft:shroomlight";
   MinecraftBlockTypes2["SilverGlazedTerracotta"] = "minecraft:silver_glazed_terracotta";
@@ -1188,6 +1742,7 @@ var MinecraftBlockTypes = ((MinecraftBlockTypes2) => {
   MinecraftBlockTypes2["SuspiciousGravel"] = "minecraft:suspicious_gravel";
   MinecraftBlockTypes2["SuspiciousSand"] = "minecraft:suspicious_sand";
   MinecraftBlockTypes2["SweetBerryBush"] = "minecraft:sweet_berry_bush";
+  MinecraftBlockTypes2["TallDryGrass"] = "minecraft:tall_dry_grass";
   MinecraftBlockTypes2["TallGrass"] = "minecraft:tall_grass";
   MinecraftBlockTypes2["Target"] = "minecraft:target";
   MinecraftBlockTypes2["TintedGlass"] = "minecraft:tinted_glass";
@@ -1315,6 +1870,7 @@ var MinecraftBlockTypes = ((MinecraftBlockTypes2) => {
   MinecraftBlockTypes2["WhiteTerracotta"] = "minecraft:white_terracotta";
   MinecraftBlockTypes2["WhiteTulip"] = "minecraft:white_tulip";
   MinecraftBlockTypes2["WhiteWool"] = "minecraft:white_wool";
+  MinecraftBlockTypes2["Wildflowers"] = "minecraft:wildflowers";
   MinecraftBlockTypes2["WitherRose"] = "minecraft:wither_rose";
   MinecraftBlockTypes2["WitherSkeletonSkull"] = "minecraft:wither_skeleton_skull";
   MinecraftBlockTypes2["WoodenButton"] = "minecraft:wooden_button";
@@ -1709,6 +2265,7 @@ var MinecraftItemTypes = ((MinecraftItemTypes2) => {
   MinecraftItemTypes2["BlueConcrete"] = "minecraft:blue_concrete";
   MinecraftItemTypes2["BlueConcretePowder"] = "minecraft:blue_concrete_powder";
   MinecraftItemTypes2["BlueDye"] = "minecraft:blue_dye";
+  MinecraftItemTypes2["BlueEgg"] = "minecraft:blue_egg";
   MinecraftItemTypes2["BlueGlazedTerracotta"] = "minecraft:blue_glazed_terracotta";
   MinecraftItemTypes2["BlueIce"] = "minecraft:blue_ice";
   MinecraftItemTypes2["BlueOrchid"] = "minecraft:blue_orchid";
@@ -1747,6 +2304,7 @@ var MinecraftItemTypes = ((MinecraftItemTypes2) => {
   MinecraftItemTypes2["BrownConcrete"] = "minecraft:brown_concrete";
   MinecraftItemTypes2["BrownConcretePowder"] = "minecraft:brown_concrete_powder";
   MinecraftItemTypes2["BrownDye"] = "minecraft:brown_dye";
+  MinecraftItemTypes2["BrownEgg"] = "minecraft:brown_egg";
   MinecraftItemTypes2["BrownGlazedTerracotta"] = "minecraft:brown_glazed_terracotta";
   MinecraftItemTypes2["BrownMushroom"] = "minecraft:brown_mushroom";
   MinecraftItemTypes2["BrownMushroomBlock"] = "minecraft:brown_mushroom_block";
@@ -1763,7 +2321,9 @@ var MinecraftItemTypes = ((MinecraftItemTypes2) => {
   MinecraftItemTypes2["BuddingAmethyst"] = "minecraft:budding_amethyst";
   MinecraftItemTypes2["Bundle"] = "minecraft:bundle";
   MinecraftItemTypes2["BurnPotterySherd"] = "minecraft:burn_pottery_sherd";
+  MinecraftItemTypes2["Bush"] = "minecraft:bush";
   MinecraftItemTypes2["Cactus"] = "minecraft:cactus";
+  MinecraftItemTypes2["CactusFlower"] = "minecraft:cactus_flower";
   MinecraftItemTypes2["Cake"] = "minecraft:cake";
   MinecraftItemTypes2["Calcite"] = "minecraft:calcite";
   MinecraftItemTypes2["CalibratedSculkSensor"] = "minecraft:calibrated_sculk_sensor";
@@ -2054,6 +2614,7 @@ var MinecraftItemTypes = ((MinecraftItemTypes2) => {
   MinecraftItemTypes2["FireCoral"] = "minecraft:fire_coral";
   MinecraftItemTypes2["FireCoralBlock"] = "minecraft:fire_coral_block";
   MinecraftItemTypes2["FireCoralFan"] = "minecraft:fire_coral_fan";
+  MinecraftItemTypes2["FireflyBush"] = "minecraft:firefly_bush";
   MinecraftItemTypes2["FireworkRocket"] = "minecraft:firework_rocket";
   MinecraftItemTypes2["FireworkStar"] = "minecraft:firework_star";
   MinecraftItemTypes2["FishingRod"] = "minecraft:fishing_rod";
@@ -2221,6 +2782,7 @@ var MinecraftItemTypes = ((MinecraftItemTypes2) => {
   MinecraftItemTypes2["LargeFern"] = "minecraft:large_fern";
   MinecraftItemTypes2["LavaBucket"] = "minecraft:lava_bucket";
   MinecraftItemTypes2["Lead"] = "minecraft:lead";
+  MinecraftItemTypes2["LeafLitter"] = "minecraft:leaf_litter";
   MinecraftItemTypes2["Leather"] = "minecraft:leather";
   MinecraftItemTypes2["LeatherBoots"] = "minecraft:leather_boots";
   MinecraftItemTypes2["LeatherChestplate"] = "minecraft:leather_chestplate";
@@ -2664,6 +3226,7 @@ var MinecraftItemTypes = ((MinecraftItemTypes2) => {
   MinecraftItemTypes2["SheepSpawnEgg"] = "minecraft:sheep_spawn_egg";
   MinecraftItemTypes2["ShelterPotterySherd"] = "minecraft:shelter_pottery_sherd";
   MinecraftItemTypes2["Shield"] = "minecraft:shield";
+  MinecraftItemTypes2["ShortDryGrass"] = "minecraft:short_dry_grass";
   MinecraftItemTypes2["ShortGrass"] = "minecraft:short_grass";
   MinecraftItemTypes2["Shroomlight"] = "minecraft:shroomlight";
   MinecraftItemTypes2["ShulkerShell"] = "minecraft:shulker_shell";
@@ -2786,6 +3349,7 @@ var MinecraftItemTypes = ((MinecraftItemTypes2) => {
   MinecraftItemTypes2["SweetBerries"] = "minecraft:sweet_berries";
   MinecraftItemTypes2["TadpoleBucket"] = "minecraft:tadpole_bucket";
   MinecraftItemTypes2["TadpoleSpawnEgg"] = "minecraft:tadpole_spawn_egg";
+  MinecraftItemTypes2["TallDryGrass"] = "minecraft:tall_dry_grass";
   MinecraftItemTypes2["TallGrass"] = "minecraft:tall_grass";
   MinecraftItemTypes2["Target"] = "minecraft:target";
   MinecraftItemTypes2["TideArmorTrimSmithingTemplate"] = "minecraft:tide_armor_trim_smithing_template";
@@ -2918,6 +3482,7 @@ var MinecraftItemTypes = ((MinecraftItemTypes2) => {
   MinecraftItemTypes2["WhiteTulip"] = "minecraft:white_tulip";
   MinecraftItemTypes2["WhiteWool"] = "minecraft:white_wool";
   MinecraftItemTypes2["WildArmorTrimSmithingTemplate"] = "minecraft:wild_armor_trim_smithing_template";
+  MinecraftItemTypes2["Wildflowers"] = "minecraft:wildflowers";
   MinecraftItemTypes2["WindCharge"] = "minecraft:wind_charge";
   MinecraftItemTypes2["WitchSpawnEgg"] = "minecraft:witch_spawn_egg";
   MinecraftItemTypes2["WitherRose"] = "minecraft:wither_rose";
@@ -3068,7 +3633,7 @@ function PFEBossEventUIMainMenu(player) {
 }
 function PFEBossEventUISettings(player) {
   let settings = JSON.parse(world.getDynamicProperty(PFEBossEventConfigName).toString());
-  new ActionFormData().title({ translate: `translation.poke:bossEventMainMenuTitle` }).button({ translate: `translation.poke:bossEventManual` }, "textures/items/boss/poke_boss_event").button({ translate: `translation.poke:bossEventTiming` }, "textures/poke/common/spawn_time").button({ translate: `translation.poke:bossEventSettingsReset` }, "textures/ui/refresh_light").button({ translate: `translation.poke:bossEventGoBack` }, "textures/poke/common/left_arrow").show(player).then((ui) => {
+  new ActionFormData().title({ translate: `translation.poke:bossEventMainMenuTitle` }).button({ translate: `translation.poke:bossEventManual` }, "textures/poke/pfe/bounty").button({ translate: `translation.poke:bossEventTiming` }, "textures/poke/common/spawn_time").button({ translate: `translation.poke:bossEventSettingsReset` }, "textures/ui/refresh_light").button({ translate: `translation.poke:bossEventGoBack` }, "textures/poke/common/left_arrow").show(player).then((ui) => {
     if (ui.canceled || ui.selection == 3) {
       PFEBossEventUIMainMenu(player);
       return;
@@ -3702,8 +4267,8 @@ var PFEDefaultHolidays = [
     v: PokeCalendarVersion
   },
   {
-    name: { text: `Christmas` },
-    id: "poke-pfe:XMAS",
+    name: { text: `Easter` },
+    id: "just:Easter",
     dates: [{ month: 11, days: [24, 25] }],
     repeat: true,
     gift: `give @s poke:red_present 16`,
@@ -5175,19 +5740,1235 @@ function PFEDisableConfigMainMenu(data) {
 }
 
 // scripts/main.ts
+var import_math = __toESM(require_lib());
 import { ActionFormData as ActionFormData7 } from "@minecraft/server-ui";
+var ArmorEffectDuration = 500;
+var PFEArmorEffectData = {
+  hellish: {
+    effects: [
+      {
+        effect: MinecraftEffectTypes.FireResistance,
+        maxAmp: 0
+      },
+      {
+        effect: MinecraftEffectTypes.Regeneration,
+        maxAmp: 2
+      },
+      {
+        effect: MinecraftEffectTypes.Resistance,
+        maxAmp: 1
+      }
+    ],
+    tag: `poke_pfe:hellish_armor_effects`
+  },
+  amethyst: {
+    effects: [
+      {
+        effect: MinecraftEffectTypes.Regeneration,
+        maxAmp: 1
+      },
+      {
+        effect: MinecraftEffectTypes.Haste,
+        maxAmp: 1
+      }
+    ],
+    tag: `poke_pfe:amethyst_armor_effects`
+  },
+  astral: {
+    effects: [
+      {
+        effect: MinecraftEffectTypes.Regeneration,
+        maxAmp: 3
+      },
+      {
+        effect: MinecraftEffectTypes.Resistance,
+        maxAmp: 3
+      },
+      {
+        effect: MinecraftEffectTypes.Speed,
+        maxAmp: 3
+      },
+      {
+        effect: MinecraftEffectTypes.WaterBreathing,
+        maxAmp: 0
+      },
+      {
+        effect: MinecraftEffectTypes.Haste,
+        maxAmp: 3
+      },
+      {
+        effect: MinecraftEffectTypes.HealthBoost,
+        maxAmp: 2
+      }
+    ],
+    tag: `poke_pfe:astral_armor_effects`
+  },
+  banished: {
+    effects: [
+      {
+        effect: MinecraftEffectTypes.Regeneration,
+        maxAmp: 2
+      },
+      {
+        effect: MinecraftEffectTypes.Resistance,
+        maxAmp: 3
+      },
+      {
+        effect: MinecraftEffectTypes.Slowness,
+        maxAmp: 1
+      },
+      {
+        effect: MinecraftEffectTypes.Haste,
+        maxAmp: 3
+      }
+    ],
+    tag: `poke_pfe:banished_armor_effects`
+  },
+  cactus: {
+    effects: [],
+    radiusEffect: {
+      type: "damage",
+      amountStep: 1,
+      maxAmount: 4,
+      maxRadius: 4,
+      radiusStep: 1
+    },
+    tag: `poke_pfe:cactus_armor_effects`
+  },
+  cobaltRobe: {
+    effects: [
+      {
+        effect: MinecraftEffectTypes.Strength,
+        maxAmp: 1
+      },
+      {
+        effect: MinecraftEffectTypes.ConduitPower,
+        maxAmp: 0
+      }
+    ],
+    tag: `poke_pfe:cobalt_robe_effects`
+  },
+  death: {
+    effects: [
+      {
+        effect: MinecraftEffectTypes.HealthBoost,
+        maxAmp: 3
+      },
+      {
+        effect: MinecraftEffectTypes.Resistance,
+        maxAmp: 2
+      },
+      {
+        effect: MinecraftEffectTypes.Regeneration,
+        maxAmp: 2
+      },
+      {
+        effect: MinecraftEffectTypes.FireResistance,
+        maxAmp: 0
+      }
+    ],
+    radiusEffect: {
+      type: "damage",
+      maxRadius: 10,
+      maxAmount: 15,
+      amountStep: 4,
+      radiusStep: 3
+    },
+    tag: `poke_pfe:death_armor_effects`
+  },
+  demonic: {
+    effects: [
+      {
+        effect: MinecraftEffectTypes.Strength,
+        maxAmp: 1
+      },
+      {
+        effect: MinecraftEffectTypes.Regeneration,
+        maxAmp: 2
+      },
+      {
+        effect: MinecraftEffectTypes.Resistance,
+        maxAmp: 1
+      },
+      {
+        effect: MinecraftEffectTypes.FireResistance,
+        maxAmp: 0
+      }
+    ],
+    tag: `poke_pfe:demonic_armor_effects`
+  },
+  emberRobe: {
+    effects: [
+      {
+        effect: MinecraftEffectTypes.Strength,
+        maxAmp: 1
+      },
+      {
+        effect: MinecraftEffectTypes.FireResistance,
+        maxAmp: 0
+      }
+    ],
+    tag: `poke_pfe:ember_robe_effects`
+  },
+  featherRobe: {
+    effects: [
+      {
+        effect: MinecraftEffectTypes.Strength,
+        maxAmp: 1
+      },
+      {
+        effect: MinecraftEffectTypes.SlowFalling,
+        maxAmp: 0
+      }
+    ],
+    tag: `poke_pfe:feather_robe_effects`
+  },
+  galaxy: {
+    effects: [
+      {
+        effect: MinecraftEffectTypes.Regeneration,
+        maxAmp: 3
+      },
+      {
+        effect: MinecraftEffectTypes.Resistance,
+        maxAmp: 2
+      },
+      {
+        effect: MinecraftEffectTypes.Speed,
+        maxAmp: 2
+      },
+      {
+        effect: MinecraftEffectTypes.Haste,
+        maxAmp: 2
+      },
+      {
+        effect: MinecraftEffectTypes.HealthBoost,
+        maxAmp: 0
+      }
+    ],
+    tag: `poke_pfe:galaxy_armor_effects`
+  },
+  gluttonyRobe: {
+    effects: [
+      {
+        effect: MinecraftEffectTypes.Strength,
+        maxAmp: 1
+      },
+      {
+        effect: MinecraftEffectTypes.Saturation,
+        maxAmp: 1
+      }
+    ],
+    tag: `poke_pfe:gluttony_robe_effects`
+  },
+  godly: {
+    effects: [
+      {
+        effect: MinecraftEffectTypes.Strength,
+        maxAmp: 1
+      },
+      {
+        effect: MinecraftEffectTypes.Regeneration,
+        maxAmp: 2
+      },
+      {
+        effect: MinecraftEffectTypes.Resistance,
+        maxAmp: 1
+      },
+      {
+        effect: MinecraftEffectTypes.Speed,
+        maxAmp: 1
+      },
+      {
+        effect: MinecraftEffectTypes.SlowFalling,
+        maxAmp: 0
+      }
+    ],
+    tag: `poke_pfe:godly_armor_effects`
+  },
+  hastedRobe: {
+    effects: [
+      {
+        effect: MinecraftEffectTypes.Strength,
+        maxAmp: 1
+      },
+      {
+        effect: MinecraftEffectTypes.Haste,
+        maxAmp: 1
+      }
+    ],
+    tag: `poke_pfe:hasted_robe_effects`
+  },
+  heroicRobe: {
+    effects: [
+      {
+        effect: MinecraftEffectTypes.Strength,
+        maxAmp: 1
+      },
+      {
+        effect: MinecraftEffectTypes.VillageHero,
+        maxAmp: 1
+      }
+    ],
+    tag: `poke_pfe:heroic_robe_effects`
+  },
+  holy: {
+    effects: [
+      {
+        effect: MinecraftEffectTypes.Regeneration,
+        maxAmp: 2
+      },
+      {
+        effect: MinecraftEffectTypes.Resistance,
+        maxAmp: 1
+      },
+      {
+        effect: MinecraftEffectTypes.Speed,
+        maxAmp: 1
+      }
+    ],
+    tag: `poke_pfe:holy_armor_effects`
+  },
+  medic: {
+    effects: [
+      {
+        effect: MinecraftEffectTypes.HealthBoost,
+        maxAmp: 3
+      },
+      {
+        effect: MinecraftEffectTypes.Resistance,
+        maxAmp: 1
+      },
+      {
+        effect: MinecraftEffectTypes.Speed,
+        maxAmp: 1
+      }
+    ],
+    radiusEffect: {
+      type: "heal",
+      maxAmount: 5,
+      maxRadius: 10,
+      amountStep: 2,
+      radiusStep: 3
+    },
+    tag: `poke_pfe:medic_armor_effects`
+  },
+  molten: {
+    effects: [
+      {
+        effect: MinecraftEffectTypes.Strength,
+        maxAmp: 1
+      },
+      {
+        effect: MinecraftEffectTypes.Regeneration,
+        maxAmp: 2
+      },
+      {
+        effect: MinecraftEffectTypes.Resistance,
+        maxAmp: 2
+      },
+      {
+        effect: MinecraftEffectTypes.FireResistance,
+        maxAmp: 0
+      }
+    ],
+    tag: `poke_pfe:molten_armor_effects`
+  },
+  nebula: {
+    effects: [
+      {
+        effect: MinecraftEffectTypes.Speed,
+        maxAmp: 3
+      },
+      {
+        effect: MinecraftEffectTypes.Regeneration,
+        maxAmp: 3
+      },
+      {
+        effect: MinecraftEffectTypes.Resistance,
+        maxAmp: 3
+      },
+      {
+        effect: MinecraftEffectTypes.Haste,
+        maxAmp: 3
+      },
+      {
+        effect: MinecraftEffectTypes.VillageHero,
+        maxAmp: 2
+      },
+      {
+        effect: MinecraftEffectTypes.FireResistance,
+        maxAmp: 0
+      },
+      {
+        effect: MinecraftEffectTypes.Strength,
+        maxAmp: 1
+      },
+      {
+        effect: MinecraftEffectTypes.WaterBreathing,
+        maxAmp: 0
+      },
+      {
+        effect: MinecraftEffectTypes.HealthBoost,
+        maxAmp: 3
+      }
+    ],
+    tag: `poke_pfe:nebula_armor_effects`
+  },
+  nightVision: {
+    effects: [
+      {
+        effect: MinecraftEffectTypes.NightVision,
+        maxAmp: 0
+      }
+    ],
+    tag: `poke_pfe:night_vision_effects`
+  },
+  onyx: {
+    effects: [
+      {
+        effect: MinecraftEffectTypes.Resistance,
+        maxAmp: 0
+      },
+      {
+        effect: MinecraftEffectTypes.Regeneration,
+        maxAmp: 1
+      }
+    ],
+    tag: `poke_pfe:onyx_armor_effects`
+  },
+  radium: {
+    effects: [
+      {
+        effect: MinecraftEffectTypes.Strength,
+        maxAmp: 2
+      },
+      {
+        effect: MinecraftEffectTypes.Regeneration,
+        maxAmp: 3
+      },
+      {
+        effect: MinecraftEffectTypes.Resistance,
+        maxAmp: 2
+      },
+      {
+        effect: MinecraftEffectTypes.Speed,
+        maxAmp: 2
+      }
+    ],
+    tag: `poke_pfe:radium_armor_effects`
+  },
+  shade: {
+    effects: [
+      {
+        effect: MinecraftEffectTypes.Strength,
+        maxAmp: 2
+      },
+      {
+        effect: MinecraftEffectTypes.Regeneration,
+        maxAmp: 2
+      },
+      {
+        effect: MinecraftEffectTypes.Resistance,
+        maxAmp: 2
+      },
+      {
+        effect: MinecraftEffectTypes.Slowness,
+        maxAmp: 2
+      }
+    ],
+    tag: `poke_pfe:shade_armor_effects`
+  },
+  shadowRobe: {
+    effects: [
+      {
+        effect: MinecraftEffectTypes.Strength,
+        maxAmp: 2
+        // Could get here with help from other sets
+      },
+      {
+        effect: MinecraftEffectTypes.NightVision,
+        maxAmp: 0
+      }
+    ],
+    tag: `poke_pfe:shadow_robe_effects`
+  },
+  speedBoots: {
+    effects: [
+      {
+        effect: MinecraftEffectTypes.Speed,
+        maxAmp: 3
+        // Could get here with help from other sets
+      }
+    ],
+    tag: `poke_pfe:speed_boots_effects`
+  },
+  springyRobe: {
+    effects: [
+      {
+        effect: MinecraftEffectTypes.Strength,
+        maxAmp: 1
+      },
+      {
+        effect: MinecraftEffectTypes.JumpBoost,
+        maxAmp: 1
+      }
+    ],
+    tag: `poke_pfe:springy_robe_effects`
+  },
+  swiftRobe: {
+    effects: [
+      {
+        effect: MinecraftEffectTypes.Strength,
+        maxAmp: 1
+      },
+      {
+        effect: MinecraftEffectTypes.Speed,
+        maxAmp: 3
+        // Could get here with help from other sets
+      }
+    ],
+    tag: `poke_pfe:swift_robe_effects`
+  },
+  void: {
+    effects: [
+      {
+        effect: MinecraftEffectTypes.Speed,
+        maxAmp: 1
+      },
+      {
+        effect: MinecraftEffectTypes.Resistance,
+        maxAmp: 1
+      },
+      {
+        effect: MinecraftEffectTypes.Regeneration,
+        maxAmp: 1
+      },
+      {
+        effect: MinecraftEffectTypes.FireResistance,
+        maxAmp: 0
+      }
+    ],
+    tag: `poke_pfe:void_armor_effects`
+  }
+};
+function CheckEffects(player, ArmorData) {
+  const Helmet = player.getComponent(EntityComponentTypes4.Equippable)?.getEquipment(EquipmentSlot4.Head) ?? false;
+  const Chestplate = player.getComponent(EntityComponentTypes4.Equippable)?.getEquipment(EquipmentSlot4.Chest) ?? false;
+  const Leggings = player.getComponent(EntityComponentTypes4.Equippable)?.getEquipment(EquipmentSlot4.Legs) ?? false;
+  const Boots = player.getComponent(EntityComponentTypes4.Equippable)?.getEquipment(EquipmentSlot4.Feet) ?? false;
+  const Offhand = player.getComponent(EntityComponentTypes4.Equippable)?.getEquipment(EquipmentSlot4.Offhand) ?? false;
+  let totalPieces = -1;
+  let effects = [];
+  let totalStrength = 0;
+  let totalSpeed = 0;
+  let totalResistance = 0;
+  let totalRegen = 0;
+  let totalJumboost = 0;
+  let totalSlowness = 0;
+  let totalHealthBoost = 0;
+  let totalVillageHero = 0;
+  let totalSaturation = 0;
+  let totalHaste = 0;
+  if (Offhand) {
+    totalPieces += 1;
+    switch (false) {
+      default:
+        totalPieces -= 1;
+      case !Offhand.hasTag(ArmorData.nightVision.tag): {
+        effects = effects.concat(ArmorData.nightVision.effects);
+        break;
+      }
+    }
+  }
+  if (Helmet) {
+    totalPieces += 1;
+    switch (true) {
+      case Helmet.hasTag(ArmorData.amethyst.tag): {
+        effects = effects.concat(ArmorData.amethyst.effects);
+        totalRegen += 1;
+        totalHaste += 1;
+        break;
+      }
+      case Helmet.hasTag(ArmorData.shade.tag): {
+        effects = effects.concat(ArmorData.shade.effects);
+        totalStrength += 1;
+        totalRegen += 1;
+        totalResistance += 1;
+        totalSlowness += 1;
+        break;
+      }
+      case Helmet.hasTag(ArmorData.radium.tag): {
+        effects = effects.concat(ArmorData.radium.effects);
+        totalStrength += 1;
+        totalRegen += 1;
+        totalResistance += 1;
+        totalSpeed += 1;
+        break;
+      }
+      case Helmet.hasTag(ArmorData.banished.tag): {
+        effects = effects.concat(ArmorData.banished.effects);
+        totalRegen += 1;
+        totalResistance += 1;
+        totalSlowness += 1;
+        totalHaste += 1;
+        break;
+      }
+      case Helmet.hasTag(ArmorData.onyx.tag): {
+        effects = effects.concat(ArmorData.onyx.effects);
+        totalRegen += 1;
+        break;
+      }
+      case Helmet.hasTag(ArmorData.holy.tag): {
+        effects = effects.concat(ArmorData.holy.effects);
+        totalRegen += 1;
+        totalResistance += 1;
+        totalSpeed += 1;
+        break;
+      }
+      case Helmet.hasTag(ArmorData.hellish.tag): {
+        effects = effects.concat(ArmorData.hellish.effects);
+        totalRegen += 1;
+        totalResistance += 1;
+        break;
+      }
+      case Helmet.hasTag(ArmorData.godly.tag): {
+        effects = effects.concat(ArmorData.godly.effects);
+        totalStrength += 1;
+        totalRegen += 1;
+        totalResistance += 1;
+        totalSpeed += 1;
+        break;
+      }
+      case Helmet.hasTag(ArmorData.demonic.tag): {
+        effects = effects.concat(ArmorData.demonic.effects);
+        totalStrength += 1;
+        totalRegen += 1;
+        totalResistance += 1;
+        break;
+      }
+      case Helmet.hasTag(ArmorData.medic.tag): {
+        effects = effects.concat(ArmorData.medic.effects);
+        totalHealthBoost += 1;
+        totalResistance += 1;
+        totalSpeed += 1;
+        break;
+      }
+      case Helmet.hasTag(ArmorData.molten.tag): {
+        effects = effects.concat(ArmorData.molten.effects);
+        totalStrength += 1;
+        totalRegen += 1;
+        totalResistance += 1;
+        break;
+      }
+      case Helmet.hasTag(ArmorData.galaxy.tag): {
+        effects = effects.concat(ArmorData.galaxy.effects);
+        totalRegen += 1;
+        totalResistance += 1;
+        totalSpeed += 1;
+        totalHaste += 1;
+        break;
+      }
+      case Helmet.hasTag(ArmorData.void.tag): {
+        effects = effects.concat(ArmorData.void.effects);
+        totalSpeed += 1;
+        totalResistance += 1;
+        totalRegen += 1;
+        break;
+      }
+      case Helmet.hasTag(ArmorData.astral.tag): {
+        effects = effects.concat(ArmorData.astral.effects);
+        totalRegen += 1;
+        totalResistance += 1;
+        totalSpeed += 1;
+        totalHaste += 1;
+        totalHealthBoost += 1;
+        break;
+      }
+      case Helmet.hasTag(ArmorData.death.tag): {
+        effects = effects.concat(ArmorData.death.effects);
+        totalHealthBoost += 1;
+        totalResistance += 1;
+        totalRegen += 1;
+        break;
+      }
+      case Helmet.hasTag(ArmorData.nebula.tag): {
+        effects = effects.concat(ArmorData.nebula.effects);
+        totalSpeed += 1;
+        totalRegen += 1;
+        totalResistance += 1;
+        totalHaste += 1;
+        totalVillageHero += 1;
+        totalStrength += 1;
+        totalHealthBoost += 1;
+        break;
+      }
+      case Helmet.hasTag(ArmorData.cactus.tag): {
+        effects = effects.concat(ArmorData.cactus.effects);
+        break;
+      }
+      case Helmet.hasTag(ArmorData.emberRobe.tag): {
+        effects = effects.concat(ArmorData.emberRobe.effects);
+        totalStrength += 1;
+        break;
+      }
+      case Helmet.hasTag(ArmorData.hastedRobe.tag): {
+        effects = effects.concat(ArmorData.hastedRobe.effects);
+        totalStrength += 1;
+        totalHaste += 1;
+        break;
+      }
+      case Helmet.hasTag(ArmorData.springyRobe.tag): {
+        effects = effects.concat(ArmorData.springyRobe.effects);
+        totalStrength += 1;
+        totalJumboost += 1;
+        break;
+      }
+      case Helmet.hasTag(ArmorData.heroicRobe.tag): {
+        effects = effects.concat(ArmorData.heroicRobe.effects);
+        totalStrength += 1;
+        totalVillageHero += 1;
+        break;
+      }
+      case Helmet.hasTag(ArmorData.cobaltRobe.tag): {
+        effects = effects.concat(ArmorData.cobaltRobe.effects);
+        totalStrength += 1;
+        break;
+      }
+      case Helmet.hasTag(ArmorData.swiftRobe.tag): {
+        effects = effects.concat(ArmorData.swiftRobe.effects);
+        totalStrength += 1;
+        totalSpeed += 1;
+        break;
+      }
+      case Helmet.hasTag(ArmorData.gluttonyRobe.tag): {
+        effects = effects.concat(ArmorData.gluttonyRobe.effects);
+        totalStrength += 1;
+        totalSaturation += 1;
+        break;
+      }
+      case Helmet.hasTag(ArmorData.featherRobe.tag): {
+        effects = effects.concat(ArmorData.featherRobe.effects);
+        totalStrength += 1;
+        break;
+      }
+      case Helmet.hasTag(ArmorData.shadowRobe.tag): {
+        effects = effects.concat(ArmorData.shadowRobe.effects);
+        totalStrength += 1;
+        break;
+      }
+      case Helmet.hasTag(ArmorData.nightVision.tag): {
+        effects = effects.concat(ArmorData.nightVision.effects);
+        break;
+      }
+      default:
+        totalPieces -= 1;
+    }
+  }
+  if (Chestplate) {
+    totalPieces += 1;
+    switch (true) {
+      case Chestplate.hasTag(ArmorData.amethyst.tag): {
+        effects = effects.concat(ArmorData.amethyst.effects);
+        totalRegen += 1;
+        totalHaste += 1;
+        break;
+      }
+      case Chestplate.hasTag(ArmorData.shade.tag): {
+        effects = effects.concat(ArmorData.shade.effects);
+        totalStrength += 1;
+        totalRegen += 1;
+        totalResistance += 1;
+        totalSlowness += 1;
+        break;
+      }
+      case Chestplate.hasTag(ArmorData.radium.tag): {
+        effects = effects.concat(ArmorData.radium.effects);
+        totalStrength += 1;
+        totalRegen += 1;
+        totalResistance += 1;
+        totalSpeed += 1;
+        break;
+      }
+      case Chestplate.hasTag(ArmorData.banished.tag): {
+        effects = effects.concat(ArmorData.banished.effects);
+        totalRegen += 1;
+        totalResistance += 1;
+        totalSlowness += 1;
+        totalHaste += 1;
+        break;
+      }
+      case Chestplate.hasTag(ArmorData.onyx.tag): {
+        effects = effects.concat(ArmorData.onyx.effects);
+        totalRegen += 1;
+        break;
+      }
+      case Chestplate.hasTag(ArmorData.holy.tag): {
+        effects = effects.concat(ArmorData.holy.effects);
+        totalRegen += 1;
+        totalResistance += 1;
+        totalSpeed += 1;
+        break;
+      }
+      case Chestplate.hasTag(ArmorData.hellish.tag): {
+        effects = effects.concat(ArmorData.hellish.effects);
+        totalRegen += 1;
+        totalResistance += 1;
+        break;
+      }
+      case Chestplate.hasTag(ArmorData.godly.tag): {
+        effects = effects.concat(ArmorData.godly.effects);
+        totalStrength += 1;
+        totalRegen += 1;
+        totalResistance += 1;
+        totalSpeed += 1;
+        break;
+      }
+      case Chestplate.hasTag(ArmorData.demonic.tag): {
+        effects = effects.concat(ArmorData.demonic.effects);
+        totalStrength += 1;
+        totalRegen += 1;
+        totalResistance += 1;
+        break;
+      }
+      case Chestplate.hasTag(ArmorData.medic.tag): {
+        effects = effects.concat(ArmorData.medic.effects);
+        totalHealthBoost += 1;
+        totalResistance += 1;
+        totalSpeed += 1;
+        break;
+      }
+      case Chestplate.hasTag(ArmorData.molten.tag): {
+        effects = effects.concat(ArmorData.molten.effects);
+        totalStrength += 1;
+        totalRegen += 1;
+        totalResistance += 1;
+        break;
+      }
+      case Chestplate.hasTag(ArmorData.galaxy.tag): {
+        effects = effects.concat(ArmorData.galaxy.effects);
+        totalRegen += 1;
+        totalResistance += 1;
+        totalSpeed += 1;
+        totalHaste += 1;
+        break;
+      }
+      case Chestplate.hasTag(ArmorData.void.tag): {
+        effects = effects.concat(ArmorData.void.effects);
+        totalSpeed += 1;
+        totalResistance += 1;
+        totalRegen += 1;
+        break;
+      }
+      case Chestplate.hasTag(ArmorData.astral.tag): {
+        effects = effects.concat(ArmorData.astral.effects);
+        totalRegen += 1;
+        totalResistance += 1;
+        totalSpeed += 1;
+        totalHaste += 1;
+        totalHealthBoost += 1;
+        break;
+      }
+      case Chestplate.hasTag(ArmorData.death.tag): {
+        effects = effects.concat(ArmorData.death.effects);
+        totalHealthBoost += 1;
+        totalResistance += 1;
+        totalRegen += 1;
+        break;
+      }
+      case Chestplate.hasTag(ArmorData.nebula.tag): {
+        effects = effects.concat(ArmorData.nebula.effects);
+        totalSpeed += 1;
+        totalRegen += 1;
+        totalResistance += 1;
+        totalHaste += 1;
+        totalVillageHero += 1;
+        totalStrength += 1;
+        totalHealthBoost += 1;
+        break;
+      }
+      case Chestplate.hasTag(ArmorData.cactus.tag): {
+        effects = effects.concat(ArmorData.cactus.effects);
+        break;
+      }
+      case Chestplate.hasTag(ArmorData.emberRobe.tag): {
+        effects = effects.concat(ArmorData.emberRobe.effects);
+        totalStrength += 1;
+        break;
+      }
+      case Chestplate.hasTag(ArmorData.hastedRobe.tag): {
+        effects = effects.concat(ArmorData.hastedRobe.effects);
+        totalStrength += 1;
+        totalHaste += 1;
+        break;
+      }
+      case Chestplate.hasTag(ArmorData.springyRobe.tag): {
+        effects = effects.concat(ArmorData.springyRobe.effects);
+        totalStrength += 1;
+        totalJumboost += 1;
+        break;
+      }
+      case Chestplate.hasTag(ArmorData.heroicRobe.tag): {
+        effects = effects.concat(ArmorData.heroicRobe.effects);
+        totalStrength += 1;
+        totalVillageHero += 1;
+        break;
+      }
+      case Chestplate.hasTag(ArmorData.cobaltRobe.tag): {
+        effects = effects.concat(ArmorData.cobaltRobe.effects);
+        totalStrength += 1;
+        break;
+      }
+      case Chestplate.hasTag(ArmorData.swiftRobe.tag): {
+        effects = effects.concat(ArmorData.swiftRobe.effects);
+        totalStrength += 1;
+        totalSpeed += 1;
+        break;
+      }
+      case Chestplate.hasTag(ArmorData.gluttonyRobe.tag): {
+        effects = effects.concat(ArmorData.gluttonyRobe.effects);
+        totalStrength += 1;
+        totalSaturation += 1;
+        break;
+      }
+      case Chestplate.hasTag(ArmorData.featherRobe.tag): {
+        effects = effects.concat(ArmorData.featherRobe.effects);
+        totalStrength += 1;
+        break;
+      }
+      case Chestplate.hasTag(ArmorData.shadowRobe.tag): {
+        effects = effects.concat(ArmorData.shadowRobe.effects);
+        totalStrength += 1;
+        break;
+      }
+      default:
+        totalPieces -= 1;
+    }
+  }
+  if (Leggings) {
+    totalPieces += 1;
+    switch (true) {
+      case Leggings.hasTag(ArmorData.amethyst.tag): {
+        effects = effects.concat(ArmorData.amethyst.effects);
+        totalRegen += 1;
+        totalHaste += 1;
+        break;
+      }
+      case Leggings.hasTag(ArmorData.shade.tag): {
+        effects = effects.concat(ArmorData.shade.effects);
+        totalStrength += 1;
+        totalRegen += 1;
+        totalResistance += 1;
+        totalSlowness += 1;
+        break;
+      }
+      case Leggings.hasTag(ArmorData.radium.tag): {
+        effects = effects.concat(ArmorData.radium.effects);
+        totalStrength += 1;
+        totalRegen += 1;
+        totalResistance += 1;
+        totalSpeed += 1;
+        break;
+      }
+      case Leggings.hasTag(ArmorData.banished.tag): {
+        effects = effects.concat(ArmorData.banished.effects);
+        totalRegen += 1;
+        totalResistance += 1;
+        totalSlowness += 1;
+        totalHaste += 1;
+        break;
+      }
+      case Leggings.hasTag(ArmorData.onyx.tag): {
+        effects = effects.concat(ArmorData.onyx.effects);
+        totalRegen += 1;
+        break;
+      }
+      case Leggings.hasTag(ArmorData.holy.tag): {
+        effects = effects.concat(ArmorData.holy.effects);
+        totalRegen += 1;
+        totalResistance += 1;
+        totalSpeed += 1;
+        break;
+      }
+      case Leggings.hasTag(ArmorData.hellish.tag): {
+        effects = effects.concat(ArmorData.hellish.effects);
+        totalRegen += 1;
+        totalResistance += 1;
+        break;
+      }
+      case Leggings.hasTag(ArmorData.godly.tag): {
+        effects = effects.concat(ArmorData.godly.effects);
+        totalStrength += 1;
+        totalRegen += 1;
+        totalResistance += 1;
+        totalSpeed += 1;
+        break;
+      }
+      case Leggings.hasTag(ArmorData.demonic.tag): {
+        effects = effects.concat(ArmorData.demonic.effects);
+        totalStrength += 1;
+        totalRegen += 1;
+        totalResistance += 1;
+        break;
+      }
+      case Leggings.hasTag(ArmorData.medic.tag): {
+        effects = effects.concat(ArmorData.medic.effects);
+        totalHealthBoost += 1;
+        totalResistance += 1;
+        totalSpeed += 1;
+        break;
+      }
+      case Leggings.hasTag(ArmorData.molten.tag): {
+        effects = effects.concat(ArmorData.molten.effects);
+        totalStrength += 1;
+        totalRegen += 1;
+        totalResistance += 1;
+        break;
+      }
+      case Leggings.hasTag(ArmorData.galaxy.tag): {
+        effects = effects.concat(ArmorData.galaxy.effects);
+        totalRegen += 1;
+        totalResistance += 1;
+        totalSpeed += 1;
+        totalHaste += 1;
+        break;
+      }
+      case Leggings.hasTag(ArmorData.void.tag): {
+        effects = effects.concat(ArmorData.void.effects);
+        totalSpeed += 1;
+        totalResistance += 1;
+        totalRegen += 1;
+        break;
+      }
+      case Leggings.hasTag(ArmorData.astral.tag): {
+        effects = effects.concat(ArmorData.astral.effects);
+        totalRegen += 1;
+        totalResistance += 1;
+        totalSpeed += 1;
+        totalHaste += 1;
+        totalHealthBoost += 1;
+        break;
+      }
+      case Leggings.hasTag(ArmorData.death.tag): {
+        effects = effects.concat(ArmorData.death.effects);
+        totalHealthBoost += 1;
+        totalResistance += 1;
+        totalRegen += 1;
+        break;
+      }
+      case Leggings.hasTag(ArmorData.nebula.tag): {
+        effects = effects.concat(ArmorData.nebula.effects);
+        totalSpeed += 1;
+        totalRegen += 1;
+        totalResistance += 1;
+        totalHaste += 1;
+        totalVillageHero += 1;
+        totalStrength += 1;
+        totalHealthBoost += 1;
+        break;
+      }
+      case Leggings.hasTag(ArmorData.cactus.tag): {
+        effects = effects.concat(ArmorData.cactus.effects);
+        break;
+      }
+      default:
+        totalPieces -= 1;
+    }
+  }
+  if (Boots) {
+    totalPieces += 1;
+    switch (true) {
+      case Boots.hasTag(ArmorData.amethyst.tag): {
+        effects = effects.concat(ArmorData.amethyst.effects);
+        totalRegen += 1;
+        totalHaste += 1;
+        break;
+      }
+      case Boots.hasTag(ArmorData.shade.tag): {
+        effects = effects.concat(ArmorData.shade.effects);
+        totalStrength += 1;
+        totalRegen += 1;
+        totalResistance += 1;
+        totalSlowness += 1;
+        break;
+      }
+      case Boots.hasTag(ArmorData.radium.tag): {
+        effects = effects.concat(ArmorData.radium.effects);
+        totalStrength += 1;
+        totalRegen += 1;
+        totalResistance += 1;
+        totalSpeed += 1;
+        break;
+      }
+      case Boots.hasTag(ArmorData.banished.tag): {
+        effects = effects.concat(ArmorData.banished.effects);
+        totalRegen += 1;
+        totalResistance += 1;
+        totalSlowness += 1;
+        totalHaste += 1;
+        break;
+      }
+      case Boots.hasTag(ArmorData.onyx.tag): {
+        effects = effects.concat(ArmorData.onyx.effects);
+        totalRegen += 1;
+        break;
+      }
+      case Boots.hasTag(ArmorData.holy.tag): {
+        effects = effects.concat(ArmorData.holy.effects);
+        totalRegen += 1;
+        totalResistance += 1;
+        totalSpeed += 1;
+        break;
+      }
+      case Boots.hasTag(ArmorData.hellish.tag): {
+        effects = effects.concat(ArmorData.hellish.effects);
+        totalRegen += 1;
+        totalResistance += 1;
+        break;
+      }
+      case Boots.hasTag(ArmorData.godly.tag): {
+        effects = effects.concat(ArmorData.godly.effects);
+        totalStrength += 1;
+        totalRegen += 1;
+        totalResistance += 1;
+        totalSpeed += 1;
+        break;
+      }
+      case Boots.hasTag(ArmorData.demonic.tag): {
+        effects = effects.concat(ArmorData.demonic.effects);
+        totalStrength += 1;
+        totalRegen += 1;
+        totalResistance += 1;
+        break;
+      }
+      case Boots.hasTag(ArmorData.medic.tag): {
+        effects = effects.concat(ArmorData.medic.effects);
+        totalHealthBoost += 1;
+        totalResistance += 1;
+        totalSpeed += 1;
+        break;
+      }
+      case Boots.hasTag(ArmorData.molten.tag): {
+        effects = effects.concat(ArmorData.molten.effects);
+        totalStrength += 1;
+        totalRegen += 1;
+        totalResistance += 1;
+        break;
+      }
+      case Boots.hasTag(ArmorData.galaxy.tag): {
+        effects = effects.concat(ArmorData.galaxy.effects);
+        totalRegen += 1;
+        totalResistance += 1;
+        totalSpeed += 1;
+        totalHaste += 1;
+        break;
+      }
+      case Boots.hasTag(ArmorData.void.tag): {
+        effects = effects.concat(ArmorData.void.effects);
+        totalSpeed += 1;
+        totalResistance += 1;
+        totalRegen += 1;
+        break;
+      }
+      case Boots.hasTag(ArmorData.astral.tag): {
+        effects = effects.concat(ArmorData.astral.effects);
+        totalRegen += 1;
+        totalResistance += 1;
+        totalSpeed += 1;
+        totalHaste += 1;
+        totalHealthBoost += 1;
+        break;
+      }
+      case Boots.hasTag(ArmorData.death.tag): {
+        effects = effects.concat(ArmorData.death.effects);
+        totalHealthBoost += 1;
+        totalResistance += 1;
+        totalRegen += 1;
+        break;
+      }
+      case Boots.hasTag(ArmorData.nebula.tag): {
+        effects = effects.concat(ArmorData.nebula.effects);
+        totalSpeed += 1;
+        totalRegen += 1;
+        totalResistance += 1;
+        totalHaste += 1;
+        totalVillageHero += 1;
+        totalStrength += 1;
+        totalHealthBoost += 1;
+        break;
+      }
+      case Boots.hasTag(ArmorData.cactus.tag): {
+        effects = effects.concat(ArmorData.cactus.effects);
+        break;
+      }
+      case Boots.hasTag(ArmorData.speedBoots.tag): {
+        effects = effects.concat(ArmorData.speedBoots.effects);
+        totalSpeed += 1;
+        break;
+      }
+      default:
+        totalPieces -= 1;
+    }
+  }
+  for (let effect of effects) {
+    let ActiveEffects = player.getEffect(effect.effect) ?? false;
+    if (!ActiveEffects) {
+      player.addEffect(effect.effect, ArmorEffectDuration, { showParticles: false, amplifier: 0 });
+    } else {
+      let CurrentEffect = 0;
+      switch (false) {
+        case effect.effect != MinecraftEffectTypes.Strength: {
+          CurrentEffect = totalStrength;
+          break;
+        }
+        case effect.effect != MinecraftEffectTypes.Speed: {
+          CurrentEffect = totalSpeed;
+          break;
+        }
+        case effect.effect != MinecraftEffectTypes.Resistance: {
+          CurrentEffect = totalResistance;
+          break;
+        }
+        case effect.effect != MinecraftEffectTypes.Regeneration: {
+          CurrentEffect = totalRegen;
+          break;
+        }
+        case effect.effect != MinecraftEffectTypes.JumpBoost: {
+          CurrentEffect = totalJumboost;
+          break;
+        }
+        case effect.effect != MinecraftEffectTypes.Slowness: {
+          CurrentEffect = totalSlowness;
+          break;
+        }
+        case effect.effect != MinecraftEffectTypes.HealthBoost: {
+          CurrentEffect = totalHealthBoost;
+          break;
+        }
+        case effect.effect != MinecraftEffectTypes.VillageHero: {
+          CurrentEffect = totalVillageHero;
+          break;
+        }
+        case effect.effect != MinecraftEffectTypes.Saturation: {
+          CurrentEffect = totalSaturation;
+          break;
+        }
+        case effect.effect != MinecraftEffectTypes.Haste: {
+          CurrentEffect = totalHaste;
+          break;
+        }
+      }
+      player.addEffect(effect.effect, ArmorEffectDuration, { showParticles: false, amplifier: Math.min(ActiveEffects.amplifier + 1, totalPieces, effect.maxAmp, (0, import_math.clampNumber)(CurrentEffect - 1, 0, 255)) });
+    }
+  }
+}
 system3.runInterval(() => {
-  world5.getDimension(MinecraftDimensionTypes2.overworld).runCommandAsync("execute as @a run function poke/pfe/effects");
-  system3.runTimeout(() => {
-    world5.getDimension(MinecraftDimensionTypes2.overworld).runCommandAsync("execute as @a run function poke/pfe/effects_2");
-    system3.runTimeout(() => {
-      world5.getDimension(MinecraftDimensionTypes2.overworld).runCommandAsync("execute as @a run function poke/pfe/effects_3");
-      system3.runTimeout(() => {
-        world5.getDimension(MinecraftDimensionTypes2.overworld).runCommandAsync("execute as @a run function poke/pfe/effects_4");
-      }, 40);
-    }, 80);
-  }, 120);
-}, 180);
+  for (let player of world5.getAllPlayers()) {
+    if (!player)
+      continue;
+    CheckEffects(player, PFEArmorEffectData);
+  }
+}, 20);
 world5.afterEvents.playerJoin.subscribe((data) => {
   let birthdays = JSON.parse(world5.getDynamicProperty(`poke:birthdays`).toString());
   system3.runTimeout(() => {
@@ -5229,6 +7010,119 @@ function PFETimeValidation() {
       PFETimeValidation();
     }, Math.abs(60 - new Date(Date.now()).getSeconds()) * 20);
   }
+}
+function Post(data, up, down) {
+  let Permutation = data.permutation;
+  let Post2 = false;
+  let PostCheckNorth = false;
+  let PostCheckSouth = false;
+  let PostCheckEast = false;
+  let PostCheckWest = false;
+  if (data.permutation.getState("poke:post_bit") == void 0)
+    return;
+  if (Permutation.getState("pfe:wall_n") == true) {
+    PostCheckNorth = true;
+  }
+  if (Permutation.getState("pfe:wall_s") == true) {
+    PostCheckSouth = true;
+  }
+  if (Permutation.getState("pfe:wall_e") == true) {
+    PostCheckEast = true;
+  }
+  if (Permutation.getState("pfe:wall_w") == true) {
+    PostCheckWest = true;
+  }
+  if (PostCheckNorth == false && PostCheckSouth == false && PostCheckEast == false && PostCheckWest == false)
+    Post2 = true;
+  if (PostCheckNorth == true && PostCheckSouth == false && PostCheckEast == false && PostCheckWest == false)
+    Post2 = true;
+  if (PostCheckNorth == false && PostCheckSouth == true && PostCheckEast == false && PostCheckWest == false)
+    Post2 = true;
+  if (PostCheckNorth == false && PostCheckSouth == false && PostCheckEast == true && PostCheckWest == false)
+    Post2 = true;
+  if (PostCheckNorth == false && PostCheckSouth == false && PostCheckEast == false && PostCheckWest == true)
+    Post2 = true;
+  if (PostCheckNorth && PostCheckEast || PostCheckNorth && PostCheckWest || PostCheckSouth && PostCheckEast || PostCheckSouth && PostCheckWest)
+    Post2 = true;
+  if (Post2) {
+    if (Permutation.getState("poke:post_bit") === void 0)
+      return;
+    UpdatePost(data, true);
+  } else {
+    if (Permutation.getState("poke:post_bit") === void 0)
+      return;
+    UpdatePost(data, false);
+  }
+}
+function UpdatePost(block, value, up) {
+  if (!value) {
+    let Post2 = false;
+    let PostCheckNorth = false;
+    let PostCheckSouth = false;
+    let PostCheckEast = false;
+    let PostCheckWest = false;
+    if (block.permutation.getState("pfe:wall_n") == true) {
+      PostCheckNorth = true;
+    }
+    if (block.permutation.getState("pfe:wall_s") == true) {
+      PostCheckSouth = true;
+    }
+    if (block.permutation.getState("pfe:wall_e") == true) {
+      PostCheckEast = true;
+    }
+    if (block.permutation.getState("pfe:wall_w") == true) {
+      PostCheckWest = true;
+    }
+    if (!PostCheckNorth && !PostCheckSouth && !PostCheckEast && !PostCheckWest)
+      Post2 = true;
+    if (PostCheckNorth && !PostCheckSouth && PostCheckEast == false && !PostCheckWest)
+      Post2 = true;
+    if (!PostCheckNorth && PostCheckSouth && PostCheckEast == false && !PostCheckWest)
+      Post2 = true;
+    if (!PostCheckNorth && !PostCheckSouth && PostCheckEast && !PostCheckWest)
+      Post2 = true;
+    if (!PostCheckNorth && !PostCheckSouth && !PostCheckEast && PostCheckWest)
+      Post2 = true;
+    if (PostCheckNorth && PostCheckEast || PostCheckNorth && PostCheckWest || PostCheckSouth && PostCheckEast || PostCheckSouth && PostCheckWest)
+      Post2 = true;
+    if (Post2) {
+      if (up) {
+        if (block.above()?.hasTag(`pfe_wall`)) {
+          UpdatePost(block.above(), true, true);
+        }
+      } else if (up === false) {
+        if (block.below()?.hasTag(`pfe_wall`)) {
+          UpdatePost(block.below(), true, false);
+        }
+      } else {
+        if (block.above()?.hasTag(`pfe_wall`)) {
+          UpdatePost(block.above(), true, true);
+        }
+        if (block.below()?.hasTag(`pfe_wall`)) {
+          UpdatePost(block.below(), true, false);
+        }
+      }
+      block.setPermutation(block.permutation.withState("poke:post_bit", true));
+      return;
+    }
+  }
+  if (up) {
+    if (block.above()?.hasTag(`pfe_wall`)) {
+      UpdatePost(block.above(), value, true);
+    }
+  } else if (up === false) {
+    if (block.below()?.hasTag(`pfe_wall`)) {
+      UpdatePost(block.below(), value, false);
+    }
+  } else {
+    if (block.above()?.hasTag(`pfe_wall`)) {
+      UpdatePost(block.above(), value, true);
+    }
+    if (block.below()?.hasTag(`pfe_wall`)) {
+      UpdatePost(block.below(), value, false);
+    }
+  }
+  block.setPermutation(block.permutation.withState("poke:post_bit", value));
 }
 world5.beforeEvents.worldInitialize.subscribe((data) => {
   system3.runTimeout(() => {
@@ -5284,20 +7178,22 @@ world5.beforeEvents.worldInitialize.subscribe((data) => {
   );
   data.itemComponentRegistry.registerCustomComponent(
     "poke:boss_event",
-    { onUse(data2) {
-      let options = JSON.parse(world5.getDynamicProperty(PFEDisableConfigName).toString());
-      if (!options.bounty)
-        return;
-      if (PFEStartBossEvent() == 0) {
-        data2.source.sendMessage({ translate: `translation.poke:bossEventNoSpawnError` });
-        data2.source.playSound(`note.didgeridoo`, { pitch: 0.825 });
-        return;
+    {
+      onUse(data2) {
+        let options = JSON.parse(world5.getDynamicProperty(PFEDisableConfigName).toString());
+        if (!options.bounty)
+          return;
+        if (PFEStartBossEvent() == 0) {
+          data2.source.sendMessage({ translate: `translation.poke:bossEventNoSpawnError` });
+          data2.source.playSound(`note.didgeridoo`, { pitch: 0.825 });
+          return;
+        }
+        ;
+        if (data2.source.getGameMode() == GameMode3.creative)
+          return;
+        data2.source.getComponent(EntityComponentTypes4.Equippable).setEquipment(EquipmentSlot4.Mainhand, PokeDecrementStack(data2.itemStack));
       }
-      ;
-      if (data2.source.getGameMode() == GameMode3.creative)
-        return;
-      data2.source.getComponent(EntityComponentTypes4.Equippable).setEquipment(EquipmentSlot4.Mainhand, PokeDecrementStack(data2.itemStack));
-    } }
+    }
   );
   data.itemComponentRegistry.registerCustomComponent(
     "poke:veinMiner",
@@ -5745,10 +7641,10 @@ world5.beforeEvents.worldInitialize.subscribe((data) => {
           });
         } else {
           let UI = new ActionFormData7();
-          UI.title({ translate: `translation.poke_pfe.insuffictPerms` });
-          UI.body({ rawtext: [{ translate: `translation.poke_pfe.insuffictPerms.desc` }, { text: `poke:config
+          UI.title({ translate: `translation.poke_pfe.insufficientPerms` });
+          UI.body({ rawtext: [{ translate: `translation.poke_pfe.insufficientPerms.desc` }, { text: `poke:config
 
-` }, { translate: `translation.poke_pfe.insuffictPerms.desc2` }, { text: `
+` }, { translate: `translation.poke_pfe.insufficientPerms.desc2` }, { text: `
 /tag @s add poke:config` }] });
           UI.button({ translate: `translation.poke:bossEventClose` }, `textures/poke/common/close`);
           UI.show(data2.source).then((responce) => {
@@ -5773,7 +7669,7 @@ world5.beforeEvents.worldInitialize.subscribe((data) => {
         const equippableComponent = data2.source.getComponent(EntityComponentTypes4.Equippable);
         const moveDir = data2.source.getVelocity();
         var amount = data2.itemStack.amount;
-        data2.source.dimension.spawnParticle("minecraft:wind_explosion_emitter", data2.source.location);
+        data2.source.spawnParticle("minecraft:wind_explosion_emitter", data2.source.location);
         data2.source.applyKnockback(moveDir.x, moveDir.z, 5, moveDir.y + 0.5);
         data2.source.playSound("component.jump_to_block");
         if (data2.source.getGameMode() == GameMode3.creative)
@@ -5934,12 +7830,15 @@ world5.beforeEvents.worldInitialize.subscribe((data) => {
         if (data2.itemStack.typeId == "poke:windzooka") {
           data2.source.applyKnockback(vierDirection.x, vierDirection.z, -7, -vierDirection.y * 4);
           data2.source.playSound("wind_charge.burst");
-          data2.source.dimension.spawnParticle("minecraft:wind_explosion_emitter", location);
+          data2.source.spawnParticle("minecraft:wind_explosion_emitter", location);
         } else {
-          data2.source.applyKnockback(vierDirection.x, vierDirection.z, 7, -vierDirection.y * -4);
+          if (vierDirection.y > 0.99)
+            data2.source.applyKnockback(vierDirection.x, vierDirection.z, 7, -vierDirection.y * -4);
+          else
+            data2.source.applyKnockback(vierDirection.x, vierDirection.z, 7, -vierDirection.y * -4);
           data2.source.playSound("wind_charge.burst");
-          data2.source.dimension.spawnParticle("minecraft:wind_explosion_emitter", location);
-          data2.source.dimension.spawnParticle("poke:blazooka_flame", location);
+          data2.source.spawnParticle("minecraft:wind_explosion_emitter", location);
+          data2.source.spawnParticle("poke:blazooka_flame", location);
         }
         data2.source.runCommand("" + id);
         cooldownComp.startCooldown(data2.source);
@@ -6323,10 +8222,11 @@ world5.beforeEvents.worldInitialize.subscribe((data) => {
     }
   );
   data.blockComponentRegistry.registerCustomComponent(
-    "poke:cc_magnet_block",
+    "poke_pfe:magnet_block",
     {
       onTick(data2) {
-        const block_location = `${data2.block.x} ${data2.block.y} ${data2.block.z}`;
+        let blockY = data2.block.permutation.getState(`minecraft:vertical_half`) == `top` ? data2.block.center().y - 0.5 : data2.block.center().y + 0.5;
+        const block_location = `${data2.block.x} ${blockY} ${data2.block.z}`;
         if (data2.block.getRedstonePower() != 0 && data2.block.getRedstonePower() !== void 0) {
           data2.block.setPermutation(data2.block.permutation.withState("pfe:active", 1));
           data2.dimension.runCommand(`execute positioned ${block_location} as @e[type=item,r=10] run tp @s ${block_location}`);
@@ -6565,6 +8465,34 @@ world5.beforeEvents.worldInitialize.subscribe((data) => {
     }
   );
   data.blockComponentRegistry.registerCustomComponent(
+    "poke_pfe:molten_lava_sponge",
+    {
+      onRandomTick(data2) {
+        switch (MinecraftBlockTypes.Water || MinecraftBlockTypes.FlowingWater) {
+          case data2.block.north()?.typeId:
+            break;
+          case data2.block.south()?.typeId:
+            break;
+          case data2.block.east()?.typeId:
+            break;
+          case data2.block.west()?.typeId:
+            break;
+          case data2.block.below()?.typeId:
+            break;
+          case data2.block.above()?.typeId:
+            break;
+          default:
+            return;
+        }
+        ;
+        data2.block.setType(`poke:lava_sponge`);
+        data2.dimension.playSound(`random.fizz`, data2.block.center());
+        data2.dimension.spawnParticle(`minecraft:cauldron_explosion_emitter`, data2.block.center());
+        return;
+      }
+    }
+  );
+  data.blockComponentRegistry.registerCustomComponent(
     "poke:cc_block_seat",
     {
       onPlayerInteract(data2) {
@@ -6646,77 +8574,111 @@ world5.beforeEvents.worldInitialize.subscribe((data) => {
     "poke:cc_wall",
     {
       onPlace(data2) {
-        const pfeWallNoC = ["minecraft:piston_arm_collision", "minecraft:sticky_piston_arm_collision", "minecraft:air", "minecraft:water", "minecraft:lava", "minecraft:waterlily", "minecraft:flowing_water", "minecraft:flowing_lava", "minecraft:short_grass", "minecraft:tall_grass", "minecraft:seagrass", "minecraft:kelp", "minecraft:oak_leaves", "minecraft:acacia_leaves", "minecraft:azalea_leaves", "minecraft:azalea_leaves_flowered", "minecraft:birch_leaves", "minecraft:cherry_leaves", "minecraft:dark_oak_leaves", "minecraft:jungle_leaves", "minecraft:mangrove_leaves", "minecraft:spruce_leaves"];
-        const northB = data2.block.north();
-        const southB = data2.block.south();
-        const eastB = data2.block.east();
-        const westB = data2.block.west();
-        if (northB === void 0)
+        const NorthBlock = data2.block.north();
+        const SouthBlock = data2.block.south();
+        const EastBlock = data2.block.east();
+        const WestBlock = data2.block.west();
+        const AboveBlock = data2.block.above();
+        const BelowBlock = data2.block.below();
+        if (!NorthBlock || !SouthBlock || !EastBlock || !WestBlock)
           return;
-        if (southB === void 0)
-          return;
-        if (eastB === void 0)
-          return;
-        if (westB === void 0)
-          return;
-        if (!pfeWallNoC.includes(northB.typeId)) {
+        if (!NorthBlock.isAir && !NorthBlock.isLiquid) {
           data2.block.setPermutation(data2.block.permutation.withState("pfe:wall_n", true));
-          if (northB.hasTag("pfe_wall")) {
-            northB.setPermutation(northB.permutation.withState("pfe:wall_s", true));
+          if (NorthBlock.permutation.getState("pfe:wall_s") != void 0) {
+            NorthBlock.setPermutation(NorthBlock.permutation.withState("pfe:wall_s", true));
+            Post(NorthBlock, true, true);
           }
         } else {
           data2.block.setPermutation(data2.block.permutation.withState("pfe:wall_n", false));
         }
-        if (!pfeWallNoC.includes(southB.typeId)) {
+        ;
+        if (!SouthBlock.isAir && !SouthBlock.isLiquid) {
           data2.block.setPermutation(data2.block.permutation.withState("pfe:wall_s", true));
-          if (southB.hasTag("pfe_wall")) {
-            southB.setPermutation(southB.permutation.withState("pfe:wall_n", true));
+          if (SouthBlock.permutation.getState("pfe:wall_n") != void 0) {
+            SouthBlock.setPermutation(SouthBlock.permutation.withState("pfe:wall_n", true));
+            Post(SouthBlock, true, true);
           }
         } else {
           data2.block.setPermutation(data2.block.permutation.withState("pfe:wall_s", false));
         }
-        if (!pfeWallNoC.includes(eastB.typeId)) {
+        ;
+        if (!EastBlock.isAir && !EastBlock.isLiquid) {
           data2.block.setPermutation(data2.block.permutation.withState("pfe:wall_e", true));
-          if (eastB.hasTag("pfe_wall")) {
-            eastB.setPermutation(eastB.permutation.withState("pfe:wall_w", true));
+          if (EastBlock.permutation.getState("pfe:wall_w") != void 0) {
+            EastBlock.setPermutation(EastBlock.permutation.withState("pfe:wall_w", true));
+            Post(EastBlock, true, true);
           }
         } else {
           data2.block.setPermutation(data2.block.permutation.withState("pfe:wall_e", false));
         }
-        if (!pfeWallNoC.includes(westB.typeId)) {
+        ;
+        if (!WestBlock.isAir && !WestBlock.isLiquid) {
           data2.block.setPermutation(data2.block.permutation.withState("pfe:wall_w", true));
-          if (westB.hasTag("pfe_wall")) {
-            westB.setPermutation(westB.permutation.withState("pfe:wall_e", true));
+          if (WestBlock.permutation.getState("pfe:wall_e") != void 0) {
+            WestBlock.setPermutation(WestBlock.permutation.withState("pfe:wall_e", true));
+            Post(WestBlock, true, true);
           }
         } else {
           data2.block.setPermutation(data2.block.permutation.withState("pfe:wall_w", false));
         }
+        ;
+        if (BelowBlock) {
+          if (!BelowBlock.isAir && !BelowBlock.isLiquid) {
+            data2.block.setPermutation(data2.block.permutation.withState("poke:connected_below", true));
+            if (BelowBlock.permutation.getState("poke:connected_above") != void 0) {
+              BelowBlock.setPermutation(BelowBlock.permutation.withState("poke:connected_above", true));
+            }
+          } else {
+            data2.block.setPermutation(data2.block.permutation.withState("poke:connected_below", false));
+          }
+          ;
+        }
+        if (AboveBlock) {
+          if (AboveBlock && !AboveBlock.isAir && !AboveBlock.isLiquid) {
+            data2.block.setPermutation(data2.block.permutation.withState("poke:connected_above", true));
+            if (AboveBlock.permutation.getState("poke:connected_below") != void 0) {
+              AboveBlock.setPermutation(AboveBlock.permutation.withState("poke:connected_below", true));
+            }
+          } else {
+            data2.block.setPermutation(data2.block.permutation.withState("poke:connected_above", false));
+          }
+          ;
+        }
+        Post(data2.block, true, true);
         return;
       },
       onPlayerDestroy(data2) {
-        const northB = data2.block.north();
-        const southB = data2.block.south();
-        const eastB = data2.block.east();
-        const westB = data2.block.west();
-        if (northB === void 0)
+        const NorthBlock = data2.block.north();
+        const SouthBlock = data2.block.south();
+        const EastBlock = data2.block.east();
+        const WestBlock = data2.block.west();
+        const AboveBlock = data2.block.above();
+        const BelowBlock = data2.block.below();
+        if (!NorthBlock || !SouthBlock || !EastBlock || !WestBlock || !AboveBlock || !BelowBlock)
           return;
-        if (southB === void 0)
-          return;
-        if (eastB === void 0)
-          return;
-        if (westB === void 0)
-          return;
-        if (northB.hasTag("pfe_wall")) {
-          northB.setPermutation(northB.permutation.withState("pfe:wall_s", false));
+        if (NorthBlock.permutation.getState("pfe:wall_s") != void 0) {
+          NorthBlock.setPermutation(NorthBlock.permutation.withState("pfe:wall_s", false));
+          Post(NorthBlock, true, true);
         }
-        if (southB.hasTag("pfe_wall")) {
-          southB.setPermutation(southB.permutation.withState("pfe:wall_n", false));
+        if (SouthBlock.permutation.getState("pfe:wall_n") != void 0) {
+          SouthBlock.setPermutation(SouthBlock.permutation.withState("pfe:wall_n", false));
+          Post(SouthBlock, true, true);
         }
-        if (eastB.hasTag("pfe_wall")) {
-          eastB.setPermutation(eastB.permutation.withState("pfe:wall_w", false));
+        if (EastBlock.permutation.getState("pfe:wall_w") != void 0) {
+          EastBlock.setPermutation(EastBlock.permutation.withState("pfe:wall_w", false));
+          Post(EastBlock, true, true);
         }
-        if (westB.hasTag("pfe_wall")) {
-          westB.setPermutation(westB.permutation.withState("pfe:wall_e", false));
+        if (WestBlock.permutation.getState("pfe:wall_e") != void 0) {
+          WestBlock.setPermutation(WestBlock.permutation.withState("pfe:wall_e", false));
+          Post(WestBlock, true, true);
+        }
+        if (AboveBlock.permutation.getState("poke:connected_above") != void 0) {
+          AboveBlock.setPermutation(AboveBlock.permutation.withState("poke:connected_below", false));
+          Post(AboveBlock, true, false);
+        }
+        if (BelowBlock.permutation.getState("poke:connected_below") != void 0) {
+          BelowBlock.setPermutation(BelowBlock.permutation.withState("poke:connected_above", false));
+          Post(BelowBlock, false, true);
         }
         return;
       }

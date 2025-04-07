@@ -8,7 +8,7 @@
 			}
 		},
 		"components": {
-			"minecraft:rarity":"common",
+			"minecraft:rarity": "common",
 			"minecraft:max_stack_size": 1,
 			"minecraft:enchantable": {
 				"value": 50,
@@ -21,9 +21,11 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": { 
-			  "textures": {"default": "poke_amethyst_helmet"} 
-			}, 
+			"minecraft:icon": {
+				"textures": {
+					"default": "poke_amethyst_helmet"
+				}
+			},
 			"minecraft:wearable": {
 				"slot": "slot.armor.head",
 				"protection": 5
@@ -46,7 +48,7 @@
 			},
 			"minecraft:tags": {
 				"tags": [
-					"pfe:SingleArmor",
+					"poke_pfe:amethyst_armor_effects",
 					"novelty:is_hat",
 					"minecraft:trimmable_armors",
 					"minecraft:is_armor"

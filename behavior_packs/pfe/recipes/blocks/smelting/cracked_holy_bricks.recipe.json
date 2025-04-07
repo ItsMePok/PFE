@@ -1,0 +1,14 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_furnace": {
+		"description": {
+			"identifier": "poke:cracked_holy_bricks"
+		},
+		"tags": [
+			"furnace",
+			"blast_furnace"
+		],
+		"input": "poke:holy_bricks",
+		"output": "poke:cracked_holy_bricks"
+	}
+}

@@ -1,0 +1,7 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "golden_turnip_block",
+		"heightmap": "golden_turnip_block_height"
+	}
+}

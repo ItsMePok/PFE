@@ -20,7 +20,11 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": { "textures": {"default": "poke_astral_boots" }},
+			"minecraft:icon": {
+				"textures": {
+					"default": "poke_astral_boots"
+				}
+			},
 			"minecraft:wearable": {
 				"slot": "slot.armor.feet",
 				"protection": 12
@@ -46,10 +50,10 @@
 						"repair_amount": "query.max_durability*0.028"
 					}
 				]
-			}, 
-			"minecraft:tags": { 
+			},
+			"minecraft:tags": {
 				"tags": [
-					"pfe:SingleArmor",
+					"poke_pfe:astral_armor_effects",
 					"minecraft:is_armor",
 					"minecraft:trimmable_armors",
 					"novelty:is_foot"

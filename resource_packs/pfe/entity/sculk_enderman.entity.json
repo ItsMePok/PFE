@@ -51,7 +51,7 @@
 				}
 			],
 			"render_controllers": [
-				"controller.render.enderman"
+				"controller.render.poke_pfe.sculk_enderman"
 			],
 			"spawn_egg": {
 				"texture": "poke_sculk_enderman_spawn_egg"

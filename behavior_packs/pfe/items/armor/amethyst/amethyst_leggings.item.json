@@ -21,10 +21,11 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": { 
-			  "textures": { 
-				"default": "poke_amethyst_leggings" } 
-			}, 
+			"minecraft:icon": {
+				"textures": {
+					"default": "poke_amethyst_leggings"
+				}
+			},
 			"minecraft:wearable": {
 				"slot": "slot.armor.legs",
 				"protection": 8
@@ -47,7 +48,7 @@
 			},
 			"minecraft:tags": {
 				"tags": [
-					"pfe:SingleArmor",
+					"poke_pfe:amethyst_armor_effects",
 					"minecraft:trimmable_armors",
 					"minecraft:is_armor"
 				]

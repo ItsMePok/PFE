@@ -20,7 +20,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon":"poke_molten_boots",
+			"minecraft:icon": "poke_molten_boots",
 			"minecraft:wearable": {
 				"slot": "slot.armor.feet",
 				"protection": 10
@@ -41,13 +41,14 @@
 					}
 				]
 			},
-			"minecraft:tags": { 
-				"tags": [ 
-					"minecraft:is_armor", 
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:is_armor",
 					"minecraft:trimmable_armors",
-					"novelty:is_foot"
-				] 
-			} 
-		} 
-	} 
+					"novelty:is_foot",
+					"poke_pfe:molten_armor_effects"
+				]
+			}
+		}
+	}
 }

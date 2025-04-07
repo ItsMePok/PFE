@@ -20,7 +20,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon":"poke_nebula_helmet",
+			"minecraft:icon": "poke_nebula_helmet",
 			"minecraft:wearable": {
 				"slot": "slot.armor.head",
 				"protection": 35
@@ -40,15 +40,16 @@
 						"repair_amount": "query.max_durability*0.25"
 					}
 				]
-			}, 
-			"minecraft:tags": { 
-				"tags": [ 
+			},
+			"minecraft:tags": {
+				"tags": [
 					"minecraft:is_armor",
 					"novelty:is_hat",
-					"minecraft:trimmable_armors" 
-				] 
+					"minecraft:trimmable_armors",
+					"poke_pfe:nebula_armor_effects"
+				]
 			},
-			"minecraft:rarity":"epic"
+			"minecraft:rarity": "epic"
 		}
-	} 
+	}
 }

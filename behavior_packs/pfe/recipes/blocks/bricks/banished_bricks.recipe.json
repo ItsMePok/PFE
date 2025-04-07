@@ -1,0 +1,30 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke:banished_bricks"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "XX",
+      "XX"
+    ],
+    "key": {
+      "X": {
+        "item": "poke:banished_star"
+      }
+    },
+    "group": "bricks",
+    "unlock": [
+      {
+        "tag": "poke:banished_star"
+      }
+    ],
+    "result": {
+      "item": "poke:banished_bricks",
+      "count": 4
+    }
+  }
+}
