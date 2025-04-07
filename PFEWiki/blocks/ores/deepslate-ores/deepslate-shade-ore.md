@@ -22,7 +22,7 @@ The block texture above could not be 100% accurate if you have a texture pack ap
 
 ### [Y Range](#user-content-fn-1)[^1]:
 
-* Highest: Y = -128
+* Highest: Y = 128
 * Lowest: Y = -4
 
 ### Distribution type: Uniform[^2]

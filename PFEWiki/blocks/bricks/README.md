@@ -2,5 +2,6 @@
 
 ## General info
 
-* Decoritive block
-* Made in stonecutter & crafting table
+* Decorative block
+* Made in stonecutter &/or crafting table
+

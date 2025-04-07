@@ -30,6 +30,8 @@ hidden: true
 
 ## <img src="https://minecraft.wiki/images/Book_and_Quill_JE2_BE2.png?2128f" alt="Book and Quill." data-size="line"> Description: <a href="#description" id="description"></a>
 
+## <img src="https://minecraft.wiki/images/Emerald_JE3_BE3.png?4c5f3" alt="Emerald." data-size="line"> Trades:
+
 ## <img src="https://github.com/user-attachments/assets/4ab38071-56d5-4e2e-b183-6258e6c7b4df" alt="Interact Ability." data-size="line"> Interact Ability: <a href="#interact-ability" id="interact-ability"></a>
 
 ### **Interacting**:  <a href="#interacting" id="interacting"></a>
@@ -155,6 +157,8 @@ Outputs:
 {% endtab %}
 {% endtabs %}
 
+e
+
 {% tabs %}
 {% tab title="Demonic Allay Drop" %}
 
@@ -170,6 +174,8 @@ The Demonic Allay needs to spawn holding this item for it to drop
 {% endhint %}
 {% endtab %}
 {% endtabs %}
+
+e
 
 {% tabs %}
 {% tab title="End Guard Tower" %}

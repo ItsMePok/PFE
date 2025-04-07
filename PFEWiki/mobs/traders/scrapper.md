@@ -4,7 +4,7 @@
 
 ## Identifier: poke:scrapper
 
-## Trades:
+## <img src="https://minecraft.wiki/images/Emerald_JE3_BE3.png?4c5f3" alt="Emerald." data-size="line"> Trades:
 
 | Wants             | Gives                    |
 | ----------------- | ------------------------ |

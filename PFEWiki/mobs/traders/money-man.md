@@ -4,7 +4,7 @@
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:money\_man**
 
-## Trades:
+## <img src="https://minecraft.wiki/images/Emerald_JE3_BE3.png?4c5f3" alt="Emerald." data-size="line"> Trades:
 
 {% hint style="warning" %}
 The Currency is not obtainable in survival & is really only useful for economy systems in servers
@@ -50,7 +50,7 @@ The Currency is not obtainable in survival & is really only useful for economy s
 
 |                                                                     |                                                                              |                                                                     |
 | :-----------------------------------------------------------------: | :--------------------------------------------------------------------------: | :-----------------------------------------------------------------: |
-|                                                                     |      ![Emerald](https://minecraft.wiki/images/Emerald_JE3_BE3.png?4c5f3)     |                                                                     |
+|                                                                     |     ![Emerald.](https://minecraft.wiki/images/Emerald_JE3_BE3.png?4c5f3)     |                                                                     |
 | ![Emerald](https://minecraft.wiki/images/Emerald_JE3_BE3.png?4c5f3) | ![Egg](https://minecraft.wiki/images/Egg_JE2_BE2.png?495d9\&format=original) | ![Emerald](https://minecraft.wiki/images/Emerald_JE3_BE3.png?4c5f3) |
 |                                                                     |      ![Emerald](https://minecraft.wiki/images/Emerald_JE3_BE3.png?4c5f3)     |                                                                     |
 

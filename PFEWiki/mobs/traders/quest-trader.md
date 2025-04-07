@@ -4,7 +4,7 @@
 
 ## Identifier: **poke:quest\_trader** <a href="#identifier" id="identifier"></a>
 
-## Trades:
+## <img src="https://minecraft.wiki/images/Emerald_JE3_BE3.png?4c5f3" alt="Emerald." data-size="line"> Trades:
 
 <table><thead><tr><th align="center">Wants</th><th data-type="number">#</th><th align="center">Gives</th><th data-type="number">#</th></tr></thead><tbody><tr><td align="center"><a href="https://minecraft.wiki/w/Paper"><img src="https://minecraft.wiki/images/Paper_JE2_BE2.png?9c3be" alt="" data-size="line">Paper</a></td><td>1</td><td align="center">Kill Quest</td><td>1</td></tr><tr><td align="center"><a href="https://minecraft.wiki/w/Paper"><img src="https://minecraft.wiki/images/Paper_JE2_BE2.png?9c3be" alt="" data-size="line">Paper</a></td><td>1</td><td align="center">Mine Quest</td><td>1</td></tr><tr><td align="center"><a href="https://minecraft.wiki/w/Paper"><img src="https://minecraft.wiki/images/Paper_JE2_BE2.png?9c3be" alt="" data-size="line">Paper</a></td><td>1</td><td align="center">Farm Quest</td><td>1</td></tr><tr><td align="center"><a href="https://minecraft.wiki/w/Paper"><img src="https://minecraft.wiki/images/Paper_JE2_BE2.png?9c3be" alt="" data-size="line">Paper</a></td><td>1</td><td align="center">Craft Quest</td><td>1</td></tr><tr><td align="center"><a href="../../items/currency/tokens/iron-token.md"><img src="https://github.com/ItsMePok/PFE/assets/136857747/aa3d5a31-9866-4bd1-bc09-ba7fa6775f7e" alt="" data-size="line">Iron Token</a></td><td>2</td><td align="center"><a href="../../items/misc/boss-event-bounty.md"><img src="https://github.com/ItsMePok/PFE/assets/136857747/96e32df1-7683-45df-b3c1-b3f9626231ed" alt="" data-size="line"> Boss Event Bounty</a></td><td>1</td></tr></tbody></table>
 
