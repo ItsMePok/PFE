@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.60",
+  "format_version": "1.21.70",
   "minecraft:entity": {
     "description": {
       "identifier": "poke:duck_egg_proj",
@@ -44,8 +44,7 @@
         "angle_offset": 0.0,
         "anchor": 1
       },
-	    "minecraft:physics": {
-      },
+      "minecraft:physics": {},
       "minecraft:pushable": {
         "is_pushable": true,
         "is_pushable_by_piston": true

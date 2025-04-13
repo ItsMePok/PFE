@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:swift_pickaxe",
@@ -9,6 +9,9 @@
 			}
 		},
 		"components": {
+			"minecraft:display_name": {
+				"value": "%poke_pfe.swift_pickaxe\n%poke_pfe.tag"
+			},
 			"minecraft:custom_components": [
 				"poke:normalMining"
 			],

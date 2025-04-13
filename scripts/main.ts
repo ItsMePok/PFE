@@ -1,1243 +1,13 @@
-import { system, world, EquipmentSlot, GameMode, EntityComponentTypes, ItemComponentTypes, ItemStack, ItemEnchantableComponent, Player, EntityProjectileComponent, BlockComponentPlayerInteractEvent, BlockComponentPlayerDestroyEvent, BlockComponentTickEvent, EntityEquippableComponent, BlockComponentRandomTickEvent, ItemComponentUseEvent, ItemCooldownComponent, ItemComponentUseOnEvent, BlockComponentOnPlaceEvent, Direction, RawMessage, EntityQueryOptions, MinecraftDimensionTypes, Block, EffectType, WorldInitializeBeforeEventSignal, HudElement } from "@minecraft/server";
+import { system, world, EquipmentSlot, GameMode, EntityComponentTypes, ItemComponentTypes, ItemStack, ItemEnchantableComponent, Player, EntityProjectileComponent, BlockComponentPlayerInteractEvent, BlockComponentPlayerDestroyEvent, BlockComponentTickEvent, EntityEquippableComponent, BlockComponentRandomTickEvent, ItemComponentUseEvent, ItemCooldownComponent, ItemComponentUseOnEvent, BlockComponentOnPlaceEvent, Direction, RawMessage, EntityQueryOptions, MinecraftDimensionTypes, Block, EffectType, WorldInitializeBeforeEventSignal, HudElement, Dimension, Vector3, Entity } from "@minecraft/server";
 import { MinecraftBlockTypes, MinecraftEffectTypes, MinecraftEnchantmentTypes, MinecraftEntityTypes, MinecraftItemTypes } from "@minecraft/vanilla-data";
 import { PFEBossEventConfig, PFEBossEventConfigName, PFEBossEventUIMainMenu, PFEDefaultBossEventSettings, PFEStartBossEvent } from "./bossEvents";
 import { PFEHaxelMining } from "./haxelMining";
 import { PokeClosestCardinal, PokeDamageItemUB, PokeDecrementStack, PokeSpawnLootTable } from "./commonFunctions";
 import { PokeBirthdays, PokeTimeConfigUIMainMenu, PokeTimeGreeting, PokeTimeZoneOffset } from "./time";
 import { PFEBoltBowsComponent } from "./boltbow";
-import { PFEDiableConfigOptions, PFEDisableConfigDefault, PFEDisableConfigMainMenu, PFEDisableConfigName, PFEDisabledOnUseItems } from "./disableConfig";
+import { PFEDisableConfigOptions, PFEDisableConfigDefault, PFEDisableConfigMainMenu, PFEDisableConfigName, PFEDisabledOnUseItems } from "./disableConfig";
 import { ActionFormData } from "@minecraft/server-ui";
-import { clampNumber } from "@minecraft/math";
-
-const ArmorEffectDuration = 500
-const PFEArmorEffectData: PFEArmorEffectInfo = {
-    hellish: {
-        effects: [
-            {
-                effect: MinecraftEffectTypes.FireResistance,
-                maxAmp: 0
-            },
-            {
-                effect: MinecraftEffectTypes.Regeneration,
-                maxAmp: 2
-            },
-            {
-                effect: MinecraftEffectTypes.Resistance,
-                maxAmp: 1
-            }
-        ],
-        tag: `poke_pfe:hellish_armor_effects`
-    },
-    amethyst: {
-        effects: [
-            {
-                effect: MinecraftEffectTypes.Regeneration,
-                maxAmp: 1
-            },
-            {
-                effect: MinecraftEffectTypes.Haste,
-                maxAmp: 1
-            }
-        ],
-        tag: `poke_pfe:amethyst_armor_effects`
-    },
-    astral: {
-        effects: [
-            {
-                effect: MinecraftEffectTypes.Regeneration,
-                maxAmp: 3
-            },
-            {
-                effect: MinecraftEffectTypes.Resistance,
-                maxAmp: 3
-            },
-            {
-                effect: MinecraftEffectTypes.Speed,
-                maxAmp: 3
-            },
-            {
-                effect: MinecraftEffectTypes.WaterBreathing,
-                maxAmp: 0
-            },
-            {
-                effect: MinecraftEffectTypes.Haste,
-                maxAmp: 3
-            },
-            {
-                effect: MinecraftEffectTypes.HealthBoost,
-                maxAmp: 2
-            }
-        ],
-        tag: `poke_pfe:astral_armor_effects`
-    },
-    banished: {
-        effects: [
-            {
-                effect: MinecraftEffectTypes.Regeneration,
-                maxAmp: 2
-            },
-            {
-                effect: MinecraftEffectTypes.Resistance,
-                maxAmp: 3
-            },
-            {
-                effect: MinecraftEffectTypes.Slowness,
-                maxAmp: 1
-            },
-            {
-                effect: MinecraftEffectTypes.Haste,
-                maxAmp: 3
-            }
-        ],
-        tag: `poke_pfe:banished_armor_effects`
-    },
-    cactus: {
-        effects: [],
-        radiusEffect: {
-            type: "damage",
-            amountStep: 1,
-            maxAmount: 4,
-            maxRadius: 4,
-            radiusStep: 1
-        },
-        tag: `poke_pfe:cactus_armor_effects`
-    },
-    cobaltRobe: {
-        effects: [
-            {
-                effect: MinecraftEffectTypes.Strength,
-                maxAmp: 1
-            },
-            {
-                effect: MinecraftEffectTypes.ConduitPower,
-                maxAmp: 0
-            }
-        ],
-        tag: `poke_pfe:cobalt_robe_effects`
-    },
-    death: {
-        effects: [
-            {
-                effect: MinecraftEffectTypes.HealthBoost,
-                maxAmp: 3
-            },
-            {
-                effect: MinecraftEffectTypes.Resistance,
-                maxAmp: 2
-            },
-            {
-                effect: MinecraftEffectTypes.Regeneration,
-                maxAmp: 2
-            },
-            {
-                effect: MinecraftEffectTypes.FireResistance,
-                maxAmp: 0
-            }
-        ],
-        radiusEffect: {
-            type: "damage",
-            maxRadius: 10,
-            maxAmount: 15,
-            amountStep: 4,
-            radiusStep: 3
-        },
-        tag: `poke_pfe:death_armor_effects`
-    },
-    demonic: {
-        effects: [
-            {
-                effect: MinecraftEffectTypes.Strength,
-                maxAmp: 1
-            },
-            {
-                effect: MinecraftEffectTypes.Regeneration,
-                maxAmp: 2
-            },
-            {
-                effect: MinecraftEffectTypes.Resistance,
-                maxAmp: 1
-            },
-            {
-                effect: MinecraftEffectTypes.FireResistance,
-                maxAmp: 0
-            }
-        ],
-        tag: `poke_pfe:demonic_armor_effects`
-    },
-    emberRobe: {
-        effects: [
-            {
-                effect: MinecraftEffectTypes.Strength,
-                maxAmp: 1
-            },
-            {
-                effect: MinecraftEffectTypes.FireResistance,
-                maxAmp: 0
-            }
-        ],
-        tag: `poke_pfe:ember_robe_effects`
-    },
-    featherRobe: {
-        effects: [
-            {
-                effect: MinecraftEffectTypes.Strength,
-                maxAmp: 1
-            },
-            {
-                effect: MinecraftEffectTypes.SlowFalling,
-                maxAmp: 0
-            }
-        ],
-        tag: `poke_pfe:feather_robe_effects`
-    },
-    galaxy: {
-        effects: [
-            {
-                effect: MinecraftEffectTypes.Regeneration,
-                maxAmp: 3
-            },
-            {
-                effect: MinecraftEffectTypes.Resistance,
-                maxAmp: 2
-            },
-            {
-                effect: MinecraftEffectTypes.Speed,
-                maxAmp: 2
-            },
-            {
-                effect: MinecraftEffectTypes.Haste,
-                maxAmp: 2
-            },
-            {
-                effect: MinecraftEffectTypes.HealthBoost,
-                maxAmp: 0
-            }
-        ],
-        tag: `poke_pfe:galaxy_armor_effects`
-    },
-    gluttonyRobe: {
-        effects: [
-            {
-                effect: MinecraftEffectTypes.Strength,
-                maxAmp: 1
-            },
-            {
-                effect: MinecraftEffectTypes.Saturation,
-                maxAmp: 1
-            }
-        ],
-        tag: `poke_pfe:gluttony_robe_effects`
-    },
-    godly: {
-        effects: [
-            {
-                effect: MinecraftEffectTypes.Strength,
-                maxAmp: 1
-            },
-            {
-                effect: MinecraftEffectTypes.Regeneration,
-                maxAmp: 2
-            },
-            {
-                effect: MinecraftEffectTypes.Resistance,
-                maxAmp: 1
-            },
-            {
-                effect: MinecraftEffectTypes.Speed,
-                maxAmp: 1
-            },
-            {
-                effect: MinecraftEffectTypes.SlowFalling,
-                maxAmp: 0
-            }
-        ],
-        tag: `poke_pfe:godly_armor_effects`
-    },
-    hastedRobe: {
-        effects: [
-            {
-                effect: MinecraftEffectTypes.Strength,
-                maxAmp: 1
-            },
-            {
-                effect: MinecraftEffectTypes.Haste,
-                maxAmp: 1
-            }
-        ],
-        tag: `poke_pfe:hasted_robe_effects`
-    },
-    heroicRobe: {
-        effects: [
-            {
-                effect: MinecraftEffectTypes.Strength,
-                maxAmp: 1
-            },
-            {
-                effect: MinecraftEffectTypes.VillageHero,
-                maxAmp: 1
-            }
-        ],
-        tag: `poke_pfe:heroic_robe_effects`
-    },
-    holy: {
-        effects: [
-            {
-                effect: MinecraftEffectTypes.Regeneration,
-                maxAmp: 2
-            },
-            {
-                effect: MinecraftEffectTypes.Resistance,
-                maxAmp: 1
-            },
-            {
-                effect: MinecraftEffectTypes.Speed,
-                maxAmp: 1
-            }
-        ],
-        tag: `poke_pfe:holy_armor_effects`
-    },
-    medic: {
-        effects: [
-            {
-                effect: MinecraftEffectTypes.HealthBoost,
-                maxAmp: 3
-            },
-            {
-                effect: MinecraftEffectTypes.Resistance,
-                maxAmp: 1
-            },
-            {
-                effect: MinecraftEffectTypes.Speed,
-                maxAmp: 1
-            }
-        ],
-        radiusEffect: {
-            type: "heal",
-            maxAmount: 5,
-            maxRadius: 10,
-            amountStep: 2,
-            radiusStep: 3
-        },
-        tag: `poke_pfe:medic_armor_effects`
-    },
-    molten: {
-        effects: [
-            {
-                effect: MinecraftEffectTypes.Strength,
-                maxAmp: 1
-            },
-            {
-                effect: MinecraftEffectTypes.Regeneration,
-                maxAmp: 2
-            },
-            {
-                effect: MinecraftEffectTypes.Resistance,
-                maxAmp: 2
-            },
-            {
-                effect: MinecraftEffectTypes.FireResistance,
-                maxAmp: 0
-            }
-        ],
-        tag: `poke_pfe:molten_armor_effects`
-    },
-    nebula: {
-        effects: [
-            {
-                effect: MinecraftEffectTypes.Speed,
-                maxAmp: 3
-            },
-            {
-                effect: MinecraftEffectTypes.Regeneration,
-                maxAmp: 3
-            },
-            {
-                effect: MinecraftEffectTypes.Resistance,
-                maxAmp: 3
-            },
-            {
-                effect: MinecraftEffectTypes.Haste,
-                maxAmp: 3
-            },
-            {
-                effect: MinecraftEffectTypes.VillageHero,
-                maxAmp: 2
-            },
-            {
-                effect: MinecraftEffectTypes.FireResistance,
-                maxAmp: 0
-            },
-            {
-                effect: MinecraftEffectTypes.Strength,
-                maxAmp: 1
-            },
-            {
-                effect: MinecraftEffectTypes.WaterBreathing,
-                maxAmp: 0
-            },
-            {
-                effect: MinecraftEffectTypes.HealthBoost,
-                maxAmp: 3
-            }
-        ],
-        tag: `poke_pfe:nebula_armor_effects`
-    },
-    nightVision: {
-        effects: [
-            {
-                effect: MinecraftEffectTypes.NightVision,
-                maxAmp: 0
-            }
-        ],
-        tag: `poke_pfe:night_vision_effects`
-    },
-    onyx: {
-        effects: [
-            {
-                effect: MinecraftEffectTypes.Resistance,
-                maxAmp: 0
-            },
-            {
-                effect: MinecraftEffectTypes.Regeneration,
-                maxAmp: 1
-            }
-        ],
-        tag: `poke_pfe:onyx_armor_effects`
-    },
-    radium: {
-        effects: [
-            {
-                effect: MinecraftEffectTypes.Strength,
-                maxAmp: 2
-            },
-            {
-                effect: MinecraftEffectTypes.Regeneration,
-                maxAmp: 3
-            },
-            {
-                effect: MinecraftEffectTypes.Resistance,
-                maxAmp: 2
-            },
-            {
-                effect: MinecraftEffectTypes.Speed,
-                maxAmp: 2
-            }
-        ],
-        tag: `poke_pfe:radium_armor_effects`
-    },
-    shade: {
-        effects: [
-            {
-                effect: MinecraftEffectTypes.Strength,
-                maxAmp: 2
-            },
-            {
-                effect: MinecraftEffectTypes.Regeneration,
-                maxAmp: 2
-            },
-            {
-                effect: MinecraftEffectTypes.Resistance,
-                maxAmp: 2
-            },
-            {
-                effect: MinecraftEffectTypes.Slowness,
-                maxAmp: 2
-            }
-        ],
-        tag: `poke_pfe:shade_armor_effects`
-    },
-    shadowRobe: {
-        effects: [
-            {
-                effect: MinecraftEffectTypes.Strength,
-                maxAmp: 2 // Could get here with help from other sets
-            },
-            {
-                effect: MinecraftEffectTypes.NightVision,
-                maxAmp: 0
-            }
-        ],
-        tag: `poke_pfe:shadow_robe_effects`
-    },
-    speedBoots: {
-        effects: [
-            {
-                effect: MinecraftEffectTypes.Speed,
-                maxAmp: 3 // Could get here with help from other sets
-            }
-        ],
-        tag: `poke_pfe:speed_boots_effects`
-    },
-    springyRobe: {
-        effects: [
-            {
-                effect: MinecraftEffectTypes.Strength,
-                maxAmp: 1
-            },
-            {
-                effect: MinecraftEffectTypes.JumpBoost,
-                maxAmp: 1
-            }
-        ],
-        tag: `poke_pfe:springy_robe_effects`
-    },
-    swiftRobe: {
-        effects: [
-            {
-                effect: MinecraftEffectTypes.Strength,
-                maxAmp: 1
-            },
-            {
-                effect: MinecraftEffectTypes.Speed,
-                maxAmp: 3 // Could get here with help from other sets
-            }
-        ],
-        tag: `poke_pfe:swift_robe_effects`
-    },
-    void: {
-        effects: [
-            {
-                effect: MinecraftEffectTypes.Speed,
-                maxAmp: 1
-            },
-            {
-                effect: MinecraftEffectTypes.Resistance,
-                maxAmp: 1
-            },
-            {
-                effect: MinecraftEffectTypes.Regeneration,
-                maxAmp: 1
-            },
-            {
-                effect: MinecraftEffectTypes.FireResistance,
-                maxAmp: 0
-            }
-        ],
-        tag: `poke_pfe:void_armor_effects`
-    }
-}
-interface PFEEffectArray {
-    effect: MinecraftEffectTypes,
-    maxAmp: number
-}
-interface PFEDamageInfo {
-    type: "heal" | "damage"
-    amountStep: number,
-    radiusStep: number,
-    maxAmount: number,
-    maxRadius: number
-}
-interface PFEArmorEffectSetData {
-    effects: PFEEffectArray[],
-    radiusEffect?: PFEDamageInfo,
-    tag: string
-}
-interface PFEArmorEffectInfo {
-    amethyst: PFEArmorEffectSetData,
-    onyx: PFEArmorEffectSetData,
-    void: PFEArmorEffectSetData,
-    galaxy: PFEArmorEffectSetData,
-    nebula: PFEArmorEffectSetData,
-    emberRobe: PFEArmorEffectSetData,
-    springyRobe: PFEArmorEffectSetData,
-    godly: PFEArmorEffectSetData,
-    banished: PFEArmorEffectSetData,
-    featherRobe: PFEArmorEffectSetData,
-    gluttonyRobe: PFEArmorEffectSetData,
-    hastedRobe: PFEArmorEffectSetData,
-    heroicRobe: PFEArmorEffectSetData,
-    nightVision: PFEArmorEffectSetData,
-    holy: PFEArmorEffectSetData,
-    hellish: PFEArmorEffectSetData,
-    molten: PFEArmorEffectSetData,
-    radium: PFEArmorEffectSetData,
-    shade: PFEArmorEffectSetData,
-    demonic: PFEArmorEffectSetData,
-    shadowRobe: PFEArmorEffectSetData,
-    swiftRobe: PFEArmorEffectSetData,
-    cobaltRobe: PFEArmorEffectSetData,
-    astral: PFEArmorEffectSetData,
-    medic: PFEArmorEffectSetData,
-    cactus: PFEArmorEffectSetData,
-    death: PFEArmorEffectSetData,
-    speedBoots: PFEArmorEffectSetData
-}
-function CheckEffects(player: Player, ArmorData: PFEArmorEffectInfo) {
-    const Helmet = player.getComponent(EntityComponentTypes.Equippable)?.getEquipment(EquipmentSlot.Head) ?? false
-    const Chestplate = player.getComponent(EntityComponentTypes.Equippable)?.getEquipment(EquipmentSlot.Chest) ?? false
-    const Leggings = player.getComponent(EntityComponentTypes.Equippable)?.getEquipment(EquipmentSlot.Legs) ?? false
-    const Boots = player.getComponent(EntityComponentTypes.Equippable)?.getEquipment(EquipmentSlot.Feet) ?? false
-    const Offhand = player.getComponent(EntityComponentTypes.Equippable)?.getEquipment(EquipmentSlot.Offhand) ?? false
-    let totalPieces = -1
-    let effects: PFEEffectArray[] = []
-    let totalStrength = 0
-    let totalSpeed = 0
-    let totalResistance = 0
-    let totalRegen = 0
-    let totalJumboost = 0
-    let totalSlowness = 0
-    let totalHealthBoost = 0
-    let totalVillageHero = 0
-    let totalSaturation = 0
-    let totalHaste = 0
-    if (Offhand) {
-        totalPieces += 1
-        switch (false) {
-            default: totalPieces -= 1
-            case !Offhand.hasTag(ArmorData.nightVision.tag): {
-                effects = effects.concat(ArmorData.nightVision.effects)
-                break
-            }
-        }
-    }
-    if (Helmet) {
-        totalPieces += 1
-        switch (true) {
-            case Helmet.hasTag(ArmorData.amethyst.tag): {
-                effects = effects.concat(ArmorData.amethyst.effects)
-                totalRegen += 1
-                totalHaste += 1
-                break
-            }
-            case Helmet.hasTag(ArmorData.shade.tag): {
-                effects = effects.concat(ArmorData.shade.effects)
-                totalStrength += 1
-                totalRegen += 1
-                totalResistance += 1
-                totalSlowness += 1
-                break
-            }
-            case Helmet.hasTag(ArmorData.radium.tag): {
-                effects = effects.concat(ArmorData.radium.effects)
-                totalStrength += 1
-                totalRegen += 1
-                totalResistance += 1
-                totalSpeed += 1
-                break
-            }
-            case Helmet.hasTag(ArmorData.banished.tag): {
-                effects = effects.concat(ArmorData.banished.effects)
-                totalRegen += 1
-                totalResistance += 1
-                totalSlowness += 1
-                totalHaste += 1
-                break
-            }
-            case Helmet.hasTag(ArmorData.onyx.tag): {
-                effects = effects.concat(ArmorData.onyx.effects)
-                totalRegen += 1
-                break
-            }
-            case Helmet.hasTag(ArmorData.holy.tag): {
-                effects = effects.concat(ArmorData.holy.effects)
-
-                totalRegen += 1
-                totalResistance += 1
-                totalSpeed += 1
-                break
-            }
-            case Helmet.hasTag(ArmorData.hellish.tag): {
-                effects = effects.concat(ArmorData.hellish.effects)
-                totalRegen += 1
-                totalResistance += 1
-                break
-            }
-            case Helmet.hasTag(ArmorData.godly.tag): {
-                effects = effects.concat(ArmorData.godly.effects)
-                totalStrength += 1
-                totalRegen += 1
-                totalResistance += 1
-                totalSpeed += 1
-                break
-            }
-            case Helmet.hasTag(ArmorData.demonic.tag): {
-                effects = effects.concat(ArmorData.demonic.effects)
-                totalStrength += 1
-                totalRegen += 1
-                totalResistance += 1
-                break
-            }
-            case Helmet.hasTag(ArmorData.medic.tag): {
-                effects = effects.concat(ArmorData.medic.effects)
-                totalHealthBoost += 1
-                totalResistance += 1
-                totalSpeed += 1
-                break
-            }
-            case Helmet.hasTag(ArmorData.molten.tag): {
-                effects = effects.concat(ArmorData.molten.effects)
-                totalStrength += 1
-                totalRegen += 1
-                totalResistance += 1
-                break
-            }
-            case Helmet.hasTag(ArmorData.galaxy.tag): {
-                effects = effects.concat(ArmorData.galaxy.effects)
-                totalRegen += 1
-                totalResistance += 1
-                totalSpeed += 1
-                totalHaste += 1
-                break
-            }
-            case Helmet.hasTag(ArmorData.void.tag): {
-                effects = effects.concat(ArmorData.void.effects)
-                totalSpeed += 1
-                totalResistance += 1
-                totalRegen += 1
-                break
-            }
-            case Helmet.hasTag(ArmorData.astral.tag): {
-                effects = effects.concat(ArmorData.astral.effects)
-                totalRegen += 1
-                totalResistance += 1
-                totalSpeed += 1
-                totalHaste += 1
-                totalHealthBoost += 1
-                break
-            }
-            case Helmet.hasTag(ArmorData.death.tag): {
-                effects = effects.concat(ArmorData.death.effects)
-                totalHealthBoost += 1
-                totalResistance += 1
-                totalRegen += 1
-                break
-            }
-            case Helmet.hasTag(ArmorData.nebula.tag): {
-                effects = effects.concat(ArmorData.nebula.effects)
-                totalSpeed += 1
-                totalRegen += 1
-                totalResistance += 1
-                totalHaste += 1
-                totalVillageHero += 1
-                totalStrength += 1
-                totalHealthBoost += 1
-                break
-            }
-            case Helmet.hasTag(ArmorData.cactus.tag): {
-                effects = effects.concat(ArmorData.cactus.effects)
-                break
-            }
-            case Helmet.hasTag(ArmorData.emberRobe.tag): {
-                effects = effects.concat(ArmorData.emberRobe.effects)
-                totalStrength += 1
-                break
-            }
-            case Helmet.hasTag(ArmorData.hastedRobe.tag): {
-                effects = effects.concat(ArmorData.hastedRobe.effects)
-                totalStrength += 1
-                totalHaste += 1
-                break
-            }
-            case Helmet.hasTag(ArmorData.springyRobe.tag): {
-                effects = effects.concat(ArmorData.springyRobe.effects)
-                totalStrength += 1
-                totalJumboost += 1
-                break
-            }
-            case Helmet.hasTag(ArmorData.heroicRobe.tag): {
-                effects = effects.concat(ArmorData.heroicRobe.effects)
-                totalStrength += 1
-                totalVillageHero += 1
-                break
-            }
-            case Helmet.hasTag(ArmorData.cobaltRobe.tag): {
-                effects = effects.concat(ArmorData.cobaltRobe.effects)
-                totalStrength += 1
-                break
-            }
-            case Helmet.hasTag(ArmorData.swiftRobe.tag): {
-                effects = effects.concat(ArmorData.swiftRobe.effects)
-                totalStrength += 1
-                totalSpeed += 1
-                break
-            }
-            case Helmet.hasTag(ArmorData.gluttonyRobe.tag): {
-                effects = effects.concat(ArmorData.gluttonyRobe.effects)
-                totalStrength += 1
-                totalSaturation += 1
-                break
-            }
-            case Helmet.hasTag(ArmorData.featherRobe.tag): {
-                effects = effects.concat(ArmorData.featherRobe.effects)
-                totalStrength += 1
-                break
-            }
-            case Helmet.hasTag(ArmorData.shadowRobe.tag): {
-                effects = effects.concat(ArmorData.shadowRobe.effects)
-                totalStrength += 1
-                break
-            }
-            case Helmet.hasTag(ArmorData.nightVision.tag): {
-                effects = effects.concat(ArmorData.nightVision.effects)
-                break
-            }
-            default: totalPieces -= 1;
-        }
-    }
-    if (Chestplate) {
-        totalPieces += 1
-        switch (true) {
-            case Chestplate.hasTag(ArmorData.amethyst.tag): {
-                effects = effects.concat(ArmorData.amethyst.effects)
-                totalRegen += 1
-                totalHaste += 1
-                break
-            }
-            case Chestplate.hasTag(ArmorData.shade.tag): {
-                effects = effects.concat(ArmorData.shade.effects)
-                totalStrength += 1
-                totalRegen += 1
-                totalResistance += 1
-                totalSlowness += 1
-                break
-            }
-            case Chestplate.hasTag(ArmorData.radium.tag): {
-                effects = effects.concat(ArmorData.radium.effects)
-                totalStrength += 1
-                totalRegen += 1
-                totalResistance += 1
-                totalSpeed += 1
-                break
-            }
-            case Chestplate.hasTag(ArmorData.banished.tag): {
-                effects = effects.concat(ArmorData.banished.effects)
-                totalRegen += 1
-                totalResistance += 1
-                totalSlowness += 1
-                totalHaste += 1
-                break
-            }
-            case Chestplate.hasTag(ArmorData.onyx.tag): {
-                effects = effects.concat(ArmorData.onyx.effects)
-                totalRegen += 1
-                break
-            }
-            case Chestplate.hasTag(ArmorData.holy.tag): {
-                effects = effects.concat(ArmorData.holy.effects)
-                totalRegen += 1
-                totalResistance += 1
-                totalSpeed += 1
-                break
-            }
-            case Chestplate.hasTag(ArmorData.hellish.tag): {
-                effects = effects.concat(ArmorData.hellish.effects)
-                totalRegen += 1
-                totalResistance += 1
-                break
-            }
-            case Chestplate.hasTag(ArmorData.godly.tag): {
-                effects = effects.concat(ArmorData.godly.effects)
-                totalStrength += 1
-                totalRegen += 1
-                totalResistance += 1
-                totalSpeed += 1
-                break
-            }
-            case Chestplate.hasTag(ArmorData.demonic.tag): {
-                effects = effects.concat(ArmorData.demonic.effects)
-                totalStrength += 1
-                totalRegen += 1
-                totalResistance += 1
-                break
-            }
-            case Chestplate.hasTag(ArmorData.medic.tag): {
-                effects = effects.concat(ArmorData.medic.effects)
-                totalHealthBoost += 1
-                totalResistance += 1
-                totalSpeed += 1
-                break
-            }
-            case Chestplate.hasTag(ArmorData.molten.tag): {
-                effects = effects.concat(ArmorData.molten.effects)
-                totalStrength += 1
-                totalRegen += 1
-                totalResistance += 1
-                break
-            }
-            case Chestplate.hasTag(ArmorData.galaxy.tag): {
-                effects = effects.concat(ArmorData.galaxy.effects)
-                totalRegen += 1
-                totalResistance += 1
-                totalSpeed += 1
-                totalHaste += 1
-                break
-            }
-            case Chestplate.hasTag(ArmorData.void.tag): {
-                effects = effects.concat(ArmorData.void.effects)
-                totalSpeed += 1
-                totalResistance += 1
-                totalRegen += 1
-                break
-            }
-            case Chestplate.hasTag(ArmorData.astral.tag): {
-                effects = effects.concat(ArmorData.astral.effects)
-                totalRegen += 1
-                totalResistance += 1
-                totalSpeed += 1
-                totalHaste += 1
-                totalHealthBoost += 1
-                break
-            }
-            case Chestplate.hasTag(ArmorData.death.tag): {
-                effects = effects.concat(ArmorData.death.effects)
-                totalHealthBoost += 1
-                totalResistance += 1
-                totalRegen += 1
-                break
-            }
-            case Chestplate.hasTag(ArmorData.nebula.tag): {
-                effects = effects.concat(ArmorData.nebula.effects)
-                totalSpeed += 1
-                totalRegen += 1
-                totalResistance += 1
-                totalHaste += 1
-                totalVillageHero += 1
-                totalStrength += 1
-                totalHealthBoost += 1
-                break
-            }
-            case Chestplate.hasTag(ArmorData.cactus.tag): {
-                effects = effects.concat(ArmorData.cactus.effects)
-                break
-            }
-            case Chestplate.hasTag(ArmorData.emberRobe.tag): {
-                effects = effects.concat(ArmorData.emberRobe.effects)
-                totalStrength += 1
-                break
-            }
-            case Chestplate.hasTag(ArmorData.hastedRobe.tag): {
-                effects = effects.concat(ArmorData.hastedRobe.effects)
-                totalStrength += 1
-                totalHaste += 1
-                break
-            }
-            case Chestplate.hasTag(ArmorData.springyRobe.tag): {
-                effects = effects.concat(ArmorData.springyRobe.effects)
-                totalStrength += 1
-                totalJumboost += 1
-                break
-            }
-            case Chestplate.hasTag(ArmorData.heroicRobe.tag): {
-                effects = effects.concat(ArmorData.heroicRobe.effects)
-                totalStrength += 1
-                totalVillageHero += 1
-                break
-            }
-            case Chestplate.hasTag(ArmorData.cobaltRobe.tag): {
-                effects = effects.concat(ArmorData.cobaltRobe.effects)
-                totalStrength += 1
-                break
-            }
-            case Chestplate.hasTag(ArmorData.swiftRobe.tag): {
-                effects = effects.concat(ArmorData.swiftRobe.effects)
-                totalStrength += 1
-                totalSpeed += 1
-                break
-            }
-            case Chestplate.hasTag(ArmorData.gluttonyRobe.tag): {
-                effects = effects.concat(ArmorData.gluttonyRobe.effects)
-                totalStrength += 1
-                totalSaturation += 1
-                break
-            }
-            case Chestplate.hasTag(ArmorData.featherRobe.tag): {
-                effects = effects.concat(ArmorData.featherRobe.effects)
-                totalStrength += 1
-                break
-            }
-            case Chestplate.hasTag(ArmorData.shadowRobe.tag): {
-                effects = effects.concat(ArmorData.shadowRobe.effects)
-                totalStrength += 1
-                break
-            }
-            default: totalPieces -= 1;
-        }
-    }
-    if (Leggings) {
-        totalPieces += 1
-        switch (true) {
-            case Leggings.hasTag(ArmorData.amethyst.tag): {
-                effects = effects.concat(ArmorData.amethyst.effects)
-                totalRegen += 1
-                totalHaste += 1
-                break
-            }
-            case Leggings.hasTag(ArmorData.shade.tag): {
-                effects = effects.concat(ArmorData.shade.effects)
-                totalStrength += 1
-                totalRegen += 1
-                totalResistance += 1
-                totalSlowness += 1
-                break
-            }
-            case Leggings.hasTag(ArmorData.radium.tag): {
-                effects = effects.concat(ArmorData.radium.effects)
-                totalStrength += 1
-                totalRegen += 1
-                totalResistance += 1
-                totalSpeed += 1
-                break
-            }
-            case Leggings.hasTag(ArmorData.banished.tag): {
-                effects = effects.concat(ArmorData.banished.effects)
-                totalRegen += 1
-                totalResistance += 1
-                totalSlowness += 1
-                totalHaste += 1
-                break
-            }
-            case Leggings.hasTag(ArmorData.onyx.tag): {
-                effects = effects.concat(ArmorData.onyx.effects)
-                totalRegen += 1
-                break
-            }
-            case Leggings.hasTag(ArmorData.holy.tag): {
-                effects = effects.concat(ArmorData.holy.effects)
-                totalRegen += 1
-                totalResistance += 1
-                totalSpeed += 1
-                break
-            }
-            case Leggings.hasTag(ArmorData.hellish.tag): {
-                effects = effects.concat(ArmorData.hellish.effects)
-                totalRegen += 1
-                totalResistance += 1
-                break
-            }
-            case Leggings.hasTag(ArmorData.godly.tag): {
-                effects = effects.concat(ArmorData.godly.effects)
-                totalStrength += 1
-                totalRegen += 1
-                totalResistance += 1
-                totalSpeed += 1
-                break
-            }
-            case Leggings.hasTag(ArmorData.demonic.tag): {
-                effects = effects.concat(ArmorData.demonic.effects)
-                totalStrength += 1
-                totalRegen += 1
-                totalResistance += 1
-                break
-            }
-            case Leggings.hasTag(ArmorData.medic.tag): {
-                effects = effects.concat(ArmorData.medic.effects)
-                totalHealthBoost += 1
-                totalResistance += 1
-                totalSpeed += 1
-                break
-            }
-            case Leggings.hasTag(ArmorData.molten.tag): {
-                effects = effects.concat(ArmorData.molten.effects)
-                totalStrength += 1
-                totalRegen += 1
-                totalResistance += 1
-                break
-            }
-            case Leggings.hasTag(ArmorData.galaxy.tag): {
-                effects = effects.concat(ArmorData.galaxy.effects)
-                totalRegen += 1
-                totalResistance += 1
-                totalSpeed += 1
-                totalHaste += 1
-                break
-            }
-            case Leggings.hasTag(ArmorData.void.tag): {
-                effects = effects.concat(ArmorData.void.effects)
-                totalSpeed += 1
-                totalResistance += 1
-                totalRegen += 1
-                break
-            }
-            case Leggings.hasTag(ArmorData.astral.tag): {
-                effects = effects.concat(ArmorData.astral.effects)
-                totalRegen += 1
-                totalResistance += 1
-                totalSpeed += 1
-                totalHaste += 1
-                totalHealthBoost += 1
-                break
-            }
-            case Leggings.hasTag(ArmorData.death.tag): {
-                effects = effects.concat(ArmorData.death.effects)
-                totalHealthBoost += 1
-                totalResistance += 1
-                totalRegen += 1
-                break
-            }
-            case Leggings.hasTag(ArmorData.nebula.tag): {
-                effects = effects.concat(ArmorData.nebula.effects)
-                totalSpeed += 1
-                totalRegen += 1
-                totalResistance += 1
-                totalHaste += 1
-                totalVillageHero += 1
-                totalStrength += 1
-                totalHealthBoost += 1
-                break
-            }
-            case Leggings.hasTag(ArmorData.cactus.tag): {
-                effects = effects.concat(ArmorData.cactus.effects)
-                break
-            }
-            default: totalPieces -= 1;
-        }
-    }
-    if (Boots) {
-        totalPieces += 1
-        switch (true) {
-            case Boots.hasTag(ArmorData.amethyst.tag): {
-                effects = effects.concat(ArmorData.amethyst.effects)
-                totalRegen += 1
-                totalHaste += 1
-                break
-            }
-            case Boots.hasTag(ArmorData.shade.tag): {
-                effects = effects.concat(ArmorData.shade.effects)
-                totalStrength += 1
-                totalRegen += 1
-                totalResistance += 1
-                totalSlowness += 1
-                break
-            }
-            case Boots.hasTag(ArmorData.radium.tag): {
-                effects = effects.concat(ArmorData.radium.effects)
-                totalStrength += 1
-                totalRegen += 1
-                totalResistance += 1
-                totalSpeed += 1
-                break
-            }
-            case Boots.hasTag(ArmorData.banished.tag): {
-                effects = effects.concat(ArmorData.banished.effects)
-                totalRegen += 1
-                totalResistance += 1
-                totalSlowness += 1
-                totalHaste += 1
-                break
-            }
-            case Boots.hasTag(ArmorData.onyx.tag): {
-                effects = effects.concat(ArmorData.onyx.effects)
-                totalRegen += 1
-                break
-            }
-            case Boots.hasTag(ArmorData.holy.tag): {
-                effects = effects.concat(ArmorData.holy.effects)
-                totalRegen += 1
-                totalResistance += 1
-                totalSpeed += 1
-                break
-            }
-            case Boots.hasTag(ArmorData.hellish.tag): {
-                effects = effects.concat(ArmorData.hellish.effects)
-                totalRegen += 1
-                totalResistance += 1
-                break
-            }
-            case Boots.hasTag(ArmorData.godly.tag): {
-                effects = effects.concat(ArmorData.godly.effects)
-                totalStrength += 1
-                totalRegen += 1
-                totalResistance += 1
-                totalSpeed += 1
-                break
-            }
-            case Boots.hasTag(ArmorData.demonic.tag): {
-                effects = effects.concat(ArmorData.demonic.effects)
-                totalStrength += 1
-                totalRegen += 1
-                totalResistance += 1
-                break
-            }
-            case Boots.hasTag(ArmorData.medic.tag): {
-                effects = effects.concat(ArmorData.medic.effects)
-                totalHealthBoost += 1
-                totalResistance += 1
-                totalSpeed += 1
-                break
-            }
-            case Boots.hasTag(ArmorData.molten.tag): {
-                effects = effects.concat(ArmorData.molten.effects)
-                totalStrength += 1
-                totalRegen += 1
-                totalResistance += 1
-                break
-            }
-            case Boots.hasTag(ArmorData.galaxy.tag): {
-                effects = effects.concat(ArmorData.galaxy.effects)
-                totalRegen += 1
-                totalResistance += 1
-                totalSpeed += 1
-                totalHaste += 1
-                break
-            }
-            case Boots.hasTag(ArmorData.void.tag): {
-                effects = effects.concat(ArmorData.void.effects)
-                totalSpeed += 1
-                totalResistance += 1
-                totalRegen += 1
-                break
-            }
-            case Boots.hasTag(ArmorData.astral.tag): {
-                effects = effects.concat(ArmorData.astral.effects)
-                totalRegen += 1
-                totalResistance += 1
-                totalSpeed += 1
-                totalHaste += 1
-                totalHealthBoost += 1
-                break
-            }
-            case Boots.hasTag(ArmorData.death.tag): {
-                effects = effects.concat(ArmorData.death.effects)
-                totalHealthBoost += 1
-                totalResistance += 1
-                totalRegen += 1
-                break
-            }
-            case Boots.hasTag(ArmorData.nebula.tag): {
-                effects = effects.concat(ArmorData.nebula.effects)
-                totalSpeed += 1
-                totalRegen += 1
-                totalResistance += 1
-                totalHaste += 1
-                totalVillageHero += 1
-                totalStrength += 1
-                totalHealthBoost += 1
-                break
-            }
-            case Boots.hasTag(ArmorData.cactus.tag): {
-                effects = effects.concat(ArmorData.cactus.effects)
-                break
-            }
-            case Boots.hasTag(ArmorData.speedBoots.tag): {
-                effects = effects.concat(ArmorData.speedBoots.effects)
-                totalSpeed += 1
-                break
-            }
-            default: totalPieces -= 1;
-        }
-    }
-    for (let effect of effects) {
-        let ActiveEffects = player.getEffect(effect.effect) ?? false
-        if (!ActiveEffects) {
-            player.addEffect(effect.effect, ArmorEffectDuration, { showParticles: false, amplifier: 0 })
-        } else {
-            let CurrentEffect = 0.
-            switch (false) {
-                case effect.effect != MinecraftEffectTypes.Strength: { CurrentEffect = totalStrength; break }
-                case effect.effect != MinecraftEffectTypes.Speed: { CurrentEffect = totalSpeed; break }
-                case effect.effect != MinecraftEffectTypes.Resistance: { CurrentEffect = totalResistance; break }
-                case effect.effect != MinecraftEffectTypes.Regeneration: { CurrentEffect = totalRegen; break }
-                case effect.effect != MinecraftEffectTypes.JumpBoost: { CurrentEffect = totalJumboost; break }
-                case effect.effect != MinecraftEffectTypes.Slowness: { CurrentEffect = totalSlowness; break }
-                case effect.effect != MinecraftEffectTypes.HealthBoost: { CurrentEffect = totalHealthBoost; break }
-                case effect.effect != MinecraftEffectTypes.VillageHero: { CurrentEffect = totalVillageHero; break }
-                case effect.effect != MinecraftEffectTypes.Saturation: { CurrentEffect = totalSaturation; break }
-                case effect.effect != MinecraftEffectTypes.Haste: { CurrentEffect = totalHaste; break }
-            }
-            player.addEffect(effect.effect, ArmorEffectDuration, { showParticles: false, amplifier: Math.min((ActiveEffects.amplifier + 1), totalPieces, effect.maxAmp, clampNumber(CurrentEffect - 1, 0, 255)) })
-        }
-    }
-}
+import { CheckEffects, PFEArmorEffectData } from "./armorEffects";
 
 system.runInterval(() => {
     for (let player of world.getAllPlayers()) {
@@ -1397,7 +167,7 @@ function UpdatePost(block: Block, value: boolean, up?: boolean) {
     block.setPermutation(block.permutation.withState('poke:post_bit', value))
 }
 
-//Custom Component Registry & Inital Setup
+//Custom Component Registry & Initial Setup
 world.beforeEvents.worldInitialize.subscribe(data => {
     system.runTimeout(() => {
         PFETimeValidation()
@@ -1411,13 +181,13 @@ world.beforeEvents.worldInitialize.subscribe(data => {
     if (typeof birthdayProperty != "string") world.setDynamicProperty(`poke:birthdays`, `[]`)
     if (typeof world.getDynamicProperty(`poke:customEvents`) != "string") {
         world.setDynamicProperty(`poke:customEvents`, '[]')
-        console.warn(`Custom events were invalid; resetting to default (Ignore if this world was just created) || Poke-Calendar`)
+        //console.warn(`Custom events were invalid; resetting to default (Ignore if this world was just created) || Poke-Calendar`)
     } else {
         try {
             JSON.parse(world.getDynamicProperty(`poke:customEvents`)?.toString()!)
         }
         catch {
-            console.warn(`Custom events were invalid; resetting to default || Poke-Calendar`)
+            //console.warn(`Custom events were invalid; resetting to default || Poke-Calendar`)
             world.setDynamicProperty(`poke:customEvents`, '[]')
         }
     }
@@ -1458,7 +228,7 @@ world.beforeEvents.worldInitialize.subscribe(data => {
     data.itemComponentRegistry.registerCustomComponent(
         "poke:boss_event", {
         onUse(data) {
-            let options: PFEDiableConfigOptions = JSON.parse(world.getDynamicProperty(PFEDisableConfigName)!.toString())
+            let options: PFEDisableConfigOptions = JSON.parse(world.getDynamicProperty(PFEDisableConfigName)!.toString())
             if (!options.bounty) return;
             if (PFEStartBossEvent() == 0) {
                 data.source.sendMessage({ translate: `translation.poke:bossEventNoSpawnError` })
@@ -1577,7 +347,7 @@ world.beforeEvents.worldInitialize.subscribe(data => {
         onUse(data: ItemComponentUseEvent) {
             if (data.itemStack == undefined) return;
             if (data.itemStack.typeId == "poke:nuke_ring") {
-                let options: PFEDiableConfigOptions = JSON.parse(world.getDynamicProperty(PFEDisableConfigName)!.toString())
+                let options: PFEDisableConfigOptions = JSON.parse(world.getDynamicProperty(PFEDisableConfigName)!.toString())
                 if (!options.nukeRing) return;
             }
             const headLocate = data.source.getHeadLocation();
@@ -1692,7 +462,7 @@ world.beforeEvents.worldInitialize.subscribe(data => {
                 UI.title({ translate: `translation.poke_pfe.insufficientPerms` })
                 UI.body({ rawtext: [{ translate: `translation.poke_pfe.insufficientPerms.desc` }, { text: `poke:config\n\n` }, { translate: `translation.poke_pfe.insufficientPerms.desc2` }, { text: `\n/tag @s add poke:config` }] })
                 UI.button({ translate: `translation.poke:bossEventClose` }, `textures/poke/common/close`)
-                UI.show(data.source).then(responce => {
+                UI.show(data.source).then(response => {
                     return
                 })
                 return
@@ -1760,7 +530,7 @@ world.beforeEvents.worldInitialize.subscribe(data => {
         "poke:cc_spawnEgg", {
         onUseOn(data: ItemComponentUseOnEvent) {
             if (data.itemStack.typeId == "poke:wither_spawner") {
-                let options: PFEDiableConfigOptions = JSON.parse(world.getDynamicProperty(PFEDisableConfigName)!.toString())
+                let options: PFEDisableConfigOptions = JSON.parse(world.getDynamicProperty(PFEDisableConfigName)!.toString())
                 if (!options.witherSpawner) return;
             }
             //@ts-ignore
@@ -1822,7 +592,7 @@ world.beforeEvents.worldInitialize.subscribe(data => {
         onUse(data: ItemComponentUseEvent) {
             if (data.itemStack === undefined) return;
             if (PFEDisabledOnUseItems.includes(data.itemStack.typeId)) {
-                let options: PFEDiableConfigOptions = JSON.parse(world.getDynamicProperty(PFEDisableConfigName)!.toString())
+                let options: PFEDisableConfigOptions = JSON.parse(world.getDynamicProperty(PFEDisableConfigName)!.toString())
                 switch (true) {
                     case data.itemStack.typeId == "poke:quantum_teleporter" && !options.quantumTeleporter: return;
                     case data.itemStack.typeId == "poke:sundial" && !options.sundial: return;
@@ -1883,7 +653,7 @@ world.beforeEvents.worldInitialize.subscribe(data => {
             */
             let tagData = data.itemStack.getTags().toString()
             let componentInfo: PFEUpgraderComponentInfo = JSON.parse(tagData.substring(tagData.indexOf(`poke-pfe:UpgraderInfo:`), tagData.lastIndexOf(`:poke-pfe:UpgraderInfoEnd`)).substring(22))
-            console.warn(JSON.stringify(componentInfo))
+            //console.warn(JSON.stringify(componentInfo))
             let multi = 1
             if (componentInfo.canUpgrade.includes(data.block.typeId)) {
                 const block_location = `${data.block.x} ${data.block.y} ${data.block.z}`
@@ -2702,13 +1472,13 @@ world.beforeEvents.worldInitialize.subscribe(data => {
                 if (player.isJumping) {
                     let viewDirection = player.getViewDirection()
                     //console.warn(`X: ${viewDirection.x}, Y: ${viewDirection.y}, Z: ${viewDirection.z}`)
-                    let cardinalDirecion = PokeClosestCardinal(viewDirection, "upDown")
-                    switch (cardinalDirecion.direction) {
+                    let cardinalDirection = PokeClosestCardinal(viewDirection, "upDown")
+                    switch (cardinalDirection.direction) {
                         case Direction.Up: {
                             for (let i = data.block.y + 1; i <= Math.min((data.block.y + maxSearch), data.dimension.heightRange.max); Math.min(i++, data.dimension.heightRange.max)) {
                                 //console.warn(`Checking Y= ${i} \nBlock ID = ${data.block.above(i-data.block.y)?.typeId} \nAbove Amount = ${i-data.block.y}\nRedstone Power = ${data.block.above(i-data.block.y)?.getRedstonePower()}\nHas Tag? = ${data.block.above(i-data.block.y)?.hasTag(`poke_pfe:elevator`)}`)
                                 if (data.block.above(i - data.block.y)?.hasTag(`poke_pfe:elevator`) && !Boolean(data.block.above(i - data.block.y)?.getRedstonePower())) {
-                                    //console.warn(`TELEPORTING`)
+
                                     player.teleport({ x: data.block.center().x, y: i + 1, z: data.block.center().z })
                                     player.playSound(`mob.endermen.portal`, { location: { x: data.block.x, y: i + 1, z: data.block.z } })
                                     return
@@ -2720,7 +1490,7 @@ world.beforeEvents.worldInitialize.subscribe(data => {
                             for (let i = data.block.y - 1; i >= Math.max((data.block.y - maxSearch), data.dimension.heightRange.min); Math.min(i--, data.dimension.heightRange.min)) {
                                 //console.warn(`Checking Y= ${i} \nBlock ID = ${data.block.below(Math.abs(i-data.block.y))?.typeId} \nBelow Amount = ${Math.abs(i-data.block.y)}\nRedstone Power = ${data.block.below(Math.abs(i-data.block.y))?.getRedstonePower()}\nHas Tag? = ${data.block.below(Math.abs(i-data.block.y))?.hasTag(`poke_pfe:elevator`)}`)
                                 if (data.block.below(Math.abs(i - data.block.y))?.hasTag(`poke_pfe:elevator`) && !Boolean(data.block.below(Math.abs(i - data.block.y))?.getRedstonePower())) {
-                                    //console.warn(`TELEPORTING`)
+
                                     player.teleport({ x: data.block.center().x, y: i + 1, z: data.block.center().z })
                                     player.playSound(`mob.endermen.portal`, { location: { x: data.block.x, y: i + 1, z: data.block.z } })
                                     return
@@ -2744,14 +1514,13 @@ world.beforeEvents.worldInitialize.subscribe(data => {
                 let maxSearch = 64
                 if (player.isJumping) {
                     let viewDirection = player.getViewDirection()
-                    console.warn(`X: ${viewDirection.x}, Y: ${viewDirection.y}, Z: ${viewDirection.z}`)
-                    let cardinalDirecion = PokeClosestCardinal(viewDirection)
-                    switch (cardinalDirecion.direction) {
+                    //console.warn(`X: ${viewDirection.x}, Y: ${viewDirection.y}, Z: ${viewDirection.z}`)
+                    let cardinalDirection = PokeClosestCardinal(viewDirection)
+                    switch (cardinalDirection.direction) {
                         case Direction.Up: {
                             for (let i = data.block.y + 1; i <= Math.min((data.block.y + maxSearch), data.dimension.heightRange.max); Math.min(i++, data.dimension.heightRange.max)) {
-                                console.warn(`Checking Y= ${i} \nBlock ID = ${data.block.above(i - data.block.y)?.typeId} \nAbove Amount = ${i - data.block.y}\nRedstone Power = ${data.block.above(i - data.block.y)?.getRedstonePower()}\nHas Tag? = ${data.block.above(i - data.block.y)?.hasTag(`poke_pfe:elevator`)}`)
+                                //console.warn(`Checking Y= ${i} \nBlock ID = ${data.block.above(i - data.block.y)?.typeId} \nAbove Amount = ${i - data.block.y}\nRedstone Power = ${data.block.above(i - data.block.y)?.getRedstonePower()}\nHas Tag? = ${data.block.above(i - data.block.y)?.hasTag(`poke_pfe:elevator`)}`)
                                 if (data.block.above(i - data.block.y)?.hasTag(`poke_pfe:elevator`) && !Boolean(data.block.above(i - data.block.y)?.getRedstonePower())) {
-                                    console.warn(`TELEPORTING`)
                                     player.teleport({ x: data.block.center().x, y: i + 1, z: data.block.center().z })
                                     player.playSound(`mob.endermen.portal`, { location: { x: data.block.x, y: i + 1, z: data.block.z } })
                                     return
@@ -2761,9 +1530,8 @@ world.beforeEvents.worldInitialize.subscribe(data => {
                         }
                         case Direction.Down: {
                             for (let i = data.block.y - 1; i >= Math.max((data.block.y - maxSearch), data.dimension.heightRange.min); Math.min(i--, data.dimension.heightRange.min)) {
-                                console.warn(`Checking Y= ${i} \nBlock ID = ${data.block.below(Math.abs(i - data.block.y))?.typeId} \nBelow Amount = ${Math.abs(i - data.block.y)}\nRedstone Power = ${data.block.below(Math.abs(i - data.block.y))?.getRedstonePower()}\nHas Tag? = ${data.block.below(Math.abs(i - data.block.y))?.hasTag(`poke_pfe:elevator`)}`)
+                                //console.warn(`Checking Y= ${i} \nBlock ID = ${data.block.below(Math.abs(i - data.block.y))?.typeId} \nBelow Amount = ${Math.abs(i - data.block.y)}\nRedstone Power = ${data.block.below(Math.abs(i - data.block.y))?.getRedstonePower()}\nHas Tag? = ${data.block.below(Math.abs(i - data.block.y))?.hasTag(`poke_pfe:elevator`)}`)
                                 if (data.block.below(Math.abs(i - data.block.y))?.hasTag(`poke_pfe:elevator`) && !Boolean(data.block.below(Math.abs(i - data.block.y))?.getRedstonePower())) {
-                                    console.warn(`TELEPORTING`)
                                     player.teleport({ x: data.block.center().x, y: i + 1, z: data.block.center().z })
                                     player.playSound(`mob.endermen.portal`, { location: { x: data.block.x, y: i + 1, z: data.block.z } })
                                     return
@@ -2773,9 +1541,8 @@ world.beforeEvents.worldInitialize.subscribe(data => {
                         }
                         case Direction.North: {
                             for (let i = data.block.z - 1; i >= data.block.z - maxSearch; i--) {
-                                console.warn(`Checking Z= ${i} \nBlock ID = ${data.block.north(Math.abs(i - data.block.z))?.typeId} \nNorth Amount = ${Math.abs(i - data.block.z)}\nRedstone Power = ${data.block.north(Math.abs(i - data.block.z))?.getRedstonePower()}\nHas Tag? = ${data.block.north(Math.abs(i - data.block.z))?.hasTag(`poke_pfe:elevator`)}`)
+                                //console.warn(`Checking Z= ${i} \nBlock ID = ${data.block.north(Math.abs(i - data.block.z))?.typeId} \nNorth Amount = ${Math.abs(i - data.block.z)}\nRedstone Power = ${data.block.north(Math.abs(i - data.block.z))?.getRedstonePower()}\nHas Tag? = ${data.block.north(Math.abs(i - data.block.z))?.hasTag(`poke_pfe:elevator`)}`)
                                 if (data.block.north(Math.abs(i - data.block.z))?.hasTag(`poke_pfe:elevator`) && !Boolean(data.block.north(Math.abs(i - data.block.z))?.getRedstonePower())) {
-                                    console.warn(`TELEPORTING`)
                                     let newBlock = data.block.north(Math.abs(i - data.block.z))!
                                     player.teleport({ x: newBlock.center().x, y: newBlock.y + 1, z: newBlock.center().z })
                                     player.playSound(`mob.endermen.portal`, { location: newBlock.center() })
@@ -2786,9 +1553,8 @@ world.beforeEvents.worldInitialize.subscribe(data => {
                         }
                         case Direction.South: {
                             for (let i = data.block.z + 1; i <= data.block.z + maxSearch; i++) {
-                                console.warn(`Checking Z= ${i} \nBlock ID = ${data.block.south(i - data.block.z)?.typeId} \nSouth Amount = ${i - data.block.z}\nRedstone Power = ${data.block.south(i - data.block.z)?.getRedstonePower()}\nHas Tag? = ${data.block.south(i - data.block.z)?.hasTag(`poke_pfe:elevator`)}`)
+                                //console.warn(`Checking Z= ${i} \nBlock ID = ${data.block.south(i - data.block.z)?.typeId} \nSouth Amount = ${i - data.block.z}\nRedstone Power = ${data.block.south(i - data.block.z)?.getRedstonePower()}\nHas Tag? = ${data.block.south(i - data.block.z)?.hasTag(`poke_pfe:elevator`)}`)
                                 if (data.block.south(i - data.block.z)?.hasTag(`poke_pfe:elevator`) && !Boolean(data.block.south(i - data.block.z)?.getRedstonePower())) {
-                                    console.warn(`TELEPORTING`)
                                     let newBlock = data.block.south(i - data.block.z)!
                                     player.teleport({ x: newBlock.center().x, y: newBlock.y + 1, z: newBlock.center().z })
                                     player.playSound(`mob.endermen.portal`, { location: newBlock.center() })
@@ -2799,9 +1565,8 @@ world.beforeEvents.worldInitialize.subscribe(data => {
                         }
                         case Direction.West: {
                             for (let i = data.block.x - 1; i >= data.block.x - maxSearch; i--) {
-                                console.warn(`Checking X= ${i} \nBlock ID = ${data.block.west(Math.abs(i - data.block.x))?.typeId} \nWest Amount = ${Math.abs(i - data.block.x)}\nRedstone Power = ${data.block.west(Math.abs(i - data.block.x))?.getRedstonePower()}\nHas Tag? = ${data.block.west(Math.abs(i - data.block.x))?.hasTag(`poke_pfe:elevator`)}`)
+                                //console.warn(`Checking X= ${i} \nBlock ID = ${data.block.west(Math.abs(i - data.block.x))?.typeId} \nWest Amount = ${Math.abs(i - data.block.x)}\nRedstone Power = ${data.block.west(Math.abs(i - data.block.x))?.getRedstonePower()}\nHas Tag? = ${data.block.west(Math.abs(i - data.block.x))?.hasTag(`poke_pfe:elevator`)}`)
                                 if (data.block.west(Math.abs(i - data.block.x))?.hasTag(`poke_pfe:elevator`) && !Boolean(data.block.west(Math.abs(i - data.block.x))?.getRedstonePower())) {
-                                    console.warn(`TELEPORTING`)
                                     let newBlock = data.block.west(Math.abs(i - data.block.x))!
                                     player.teleport({ x: newBlock.center().x, y: newBlock.y + 1, z: newBlock.center().z })
                                     player.playSound(`mob.endermen.portal`, { location: newBlock.center() })
@@ -2812,9 +1577,8 @@ world.beforeEvents.worldInitialize.subscribe(data => {
                         }
                         case Direction.East: {
                             for (let i = data.block.x + 1; i <= data.block.x + maxSearch; i++) {
-                                console.warn(`Checking X= ${i} \nBlock ID = ${data.block.east(i - data.block.x)?.typeId} \nEast Amount = ${i - data.block.x}\nRedstone Power = ${data.block.east(i - data.block.x)?.getRedstonePower()}\nHas Tag? = ${data.block.east(i - data.block.x)?.hasTag(`poke_pfe:elevator`)}`)
+                                //console.warn(`Checking X= ${i} \nBlock ID = ${data.block.east(i - data.block.x)?.typeId} \nEast Amount = ${i - data.block.x}\nRedstone Power = ${data.block.east(i - data.block.x)?.getRedstonePower()}\nHas Tag? = ${data.block.east(i - data.block.x)?.hasTag(`poke_pfe:elevator`)}`)
                                 if (data.block.east(i - data.block.x)?.hasTag(`poke_pfe:elevator`) && !Boolean(data.block.east(i - data.block.x)?.getRedstonePower())) {
-                                    console.warn(`TELEPORTING`)
                                     let newBlock = data.block.east(i - data.block.x)!
                                     player.teleport({ x: newBlock.center().x, y: newBlock.y + 1, z: newBlock.center().z })
                                     player.playSound(`mob.endermen.portal`, { location: newBlock.center() })

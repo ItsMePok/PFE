@@ -137,7 +137,7 @@
 					"speed_multiplier": 1
 				},
 				"minecraft:breedable": {
-					"require_tame": true,
+					"require_tame": false,
 					"inherit_tamed": false,
 					"breeds_with": [
 						{

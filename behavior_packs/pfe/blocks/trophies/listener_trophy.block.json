@@ -1,11 +1,18 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:listener_trophy",
-			"traits": {"minecraft:placement_direction": {"enabled_states": ["minecraft:cardinal_direction"]}}
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
+				}
+			}
 		},
 		"components": {
+			"minecraft:display_name": "%poke_pfe.listener_trophy\n%poke_pfe.tag",
 			"minecraft:liquid_detection": {
 				"detection_rules": [
 					{
@@ -41,7 +48,14 @@
 			},
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 7.5,
-				"item_specific_speeds": [{"item":{"tags": "q.any_tag('minecraft:is_pickaxe')"},"destroy_speed": 1.15}]
+				"item_specific_speeds": [
+					{
+						"item": {
+							"tags": "q.any_tag('minecraft:is_pickaxe')"
+						},
+						"destroy_speed": 1.15
+					}
+				]
 			},
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 200
@@ -61,8 +75,8 @@
 			"tag:pfe": {},
 			"tag:stone": {},
 			"tag:minecraft:stone": {},
-			"tag:stone_pick_diggable":{},
-			"tag:minecraft:is_pickaxe_item_destructible":{},
+			"tag:stone_pick_diggable": {},
+			"tag:minecraft:is_pickaxe_item_destructible": {},
 			"minecraft:loot": "loot_tables/poke/pfe/listener_trophy.loot.json",
 			"minecraft:custom_components": [
 				"poke:cc_block_interact"

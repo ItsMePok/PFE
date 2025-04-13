@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:platinum_token",
@@ -8,7 +8,10 @@
 			}
 		},
 		"components": {
-			"minecraft:icon":"poke_platinum_token"
+			"minecraft:display_name": {
+				"value": "%poke_pfe.platinum_token\n%poke_pfe.tag"
+			},
+			"minecraft:icon": "poke_platinum_token"
 		}
 	}
 }

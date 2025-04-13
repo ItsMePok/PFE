@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:wither_spawner",
@@ -8,12 +8,15 @@
 			}
 		},
 		"components": {
-			"minecraft:icon":"poke_wither_spawner",
-			"minecraft:custom_components":[
+			"minecraft:display_name": {
+				"value": "%poke_pfe.wither_spawner\n%poke_pfe.tag"
+			},
+			"minecraft:icon": "poke_wither_spawner",
+			"minecraft:custom_components": [
 				"poke:cc_spawnEgg"
 			],
-			"minecraft:tags":{
-				"tags":[
+			"minecraft:tags": {
+				"tags": [
 					"minecraft:wither"
 				]
 			},
@@ -24,7 +27,7 @@
 				},
 				"max_durability": 1
 			},
-			"minecraft:hover_text_color": "gold",
+			"minecraft:rarity": "uncommon",
 			"minecraft:max_stack_size": 1
 		}
 	}

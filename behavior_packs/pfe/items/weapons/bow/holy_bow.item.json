@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:holy_bow",
@@ -8,14 +8,32 @@
 			}
 		},
 		"components": {
-			"minecraft:repairable":{
-				"repair_items":[
-					{"items":["poke:repair_core"],"repair_amount":"query.max_durability"},
-					{"items":["poke:holy_ingot"],"repair_amount":"q.max_durability*0.25"},
-					{"items":["poke:holy_nugget"],"repair_amount":"q.max_durability*0.028"}
+			"minecraft:display_name": {
+				"value": "%poke_pfe.holy_bow\n%poke_pfe.tag"
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"poke:repair_core"
+						],
+						"repair_amount": "query.max_durability"
+					},
+					{
+						"items": [
+							"poke:holy_ingot"
+						],
+						"repair_amount": "q.max_durability*0.25"
+					},
+					{
+						"items": [
+							"poke:holy_nugget"
+						],
+						"repair_amount": "q.max_durability*0.028"
+					}
 				]
 			},
-			"minecraft:icon":{
+			"minecraft:icon": {
 				"textures": {
 					"default": "poke_holy_bow"
 				}
@@ -80,7 +98,7 @@
 				},
 				"max_durability": 1250
 			},
-			"minecraft:custom_components":[
+			"minecraft:custom_components": [
 				"poke:cc_bowAim"
 			]
 		}

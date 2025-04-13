@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:holy_arrow",
@@ -8,8 +8,11 @@
 			}
 		},
 		"components": {
+			"minecraft:display_name": {
+				"value": "%poke_pfe.holy_arrow\n%poke_pfe.tag"
+			},
 			"minecraft:max_stack_size": 64,
-			"minecraft:icon":"poke_holy_arrow",
+			"minecraft:icon": "poke_holy_arrow",
 			"minecraft:projectile": {
 				"projectile_entity": "poke:holy_arrow",
 				"minimum_critical_power": 0.5
@@ -18,7 +21,9 @@
 				"value": true
 			},
 			"minecraft:tags": {
-				"tags": ["minecraft:arrow"]
+				"tags": [
+					"minecraft:arrow"
+				]
 			}
 		}
 	}

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:astral_scythe",
@@ -8,7 +8,10 @@
 			}
 		},
 		"components": {
-			"minecraft:custom_components":[
+			"minecraft:display_name": {
+				"value": "%poke_pfe.astral_scythe\n%poke_pfe.tag"
+			},
+			"minecraft:custom_components": [
 				"poke:normalMining",
 				"poke:hitEffects"
 			],
@@ -17,8 +20,10 @@
 			"minecraft:durability": {
 				"max_durability": 3985
 			},
-			"minecraft:damage": {"value": 27},
-			"minecraft:icon":"poke_astral_scythe",
+			"minecraft:damage": {
+				"value": 27
+			},
+			"minecraft:icon": "poke_astral_scythe",
 			"minecraft:enchantable": {
 				"value": 140,
 				"slot": "sword"
@@ -26,9 +31,18 @@
 			"minecraft:can_destroy_in_creative": false,
 			"minecraft:digger": {
 				"destroy_speeds": [
-					{"block":"minecraft:web","speed": 60},
-					{"block":"minecraft:bamboo_sapling","speed": 60},
-					{"block":"minecraft:bamboo","speed": 60}
+					{
+						"block": "minecraft:web",
+						"speed": 60
+					},
+					{
+						"block": "minecraft:bamboo_sapling",
+						"speed": 60
+					},
+					{
+						"block": "minecraft:bamboo",
+						"speed": 60
+					}
 				]
 			},
 			"minecraft:repairable": {
@@ -39,8 +53,18 @@
 						],
 						"repair_amount": "query.max_durability"
 					},
-					{"items":["poke:galaxy_ingot"],"repair_amount": "query.max_durability*0.25"},
-					{"items":["poke:galaxy_nugget"],"repair_amount": "query.max_durability*0.028"}
+					{
+						"items": [
+							"poke:astral_ingot"
+						],
+						"repair_amount": "query.max_durability*0.25"
+					},
+					{
+						"items": [
+							"poke:astral_nugget"
+						],
+						"repair_amount": "query.max_durability*0.028"
+					}
 				]
 			}
 		}

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:carved_melon",
@@ -15,6 +15,7 @@
 			}
 		},
 		"components": {
+			"minecraft:display_name": "%poke_pfe.carved_melon\n%poke_pfe.tag",
 			"minecraft:redstone_conductivity": {
 				"allows_wire_to_step_down": true,
 				"redstone_conductor": true
@@ -29,22 +30,22 @@
 			},
 			"tag:pfe": {},
 			"tag:wood": {},
-			"tag:minecraft:is_hatchet_item_destructible":{},
-			"tag:minecraft:is_axe_item_destructible":{},
+			"tag:minecraft:is_hatchet_item_destructible": {},
+			"tag:minecraft:is_axe_item_destructible": {},
 			"tag:minecraft:wood": {},
 			"tag:pumpkin": {},
 			"tag:minecraft:pumpkin": {},
 			"minecraft:map_color": "#5cac30",
-			"minecraft:geometry":"geometry.poke_pfe.carved_melon",
+			"minecraft:geometry": "geometry.poke_pfe.carved_melon",
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "melon_side"
 				},
-				"up":{
+				"up": {
 					"texture": "melon_top"
 				},
-				"down":"up",
-				"north":{
+				"down": "up",
+				"north": {
 					"texture": "poke_carved_melon_face"
 				}
 			}
@@ -53,23 +54,50 @@
 			{
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
 				"components": {
-					"minecraft:transformation": {"rotation": [0,180,0]}
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
 				}
 			},
 			{
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
 				"components": {
-					"minecraft:transformation": {"rotation": [0,0,0]}}
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
+				}
 			},
 			{
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
 				"components": {
-					"minecraft:transformation": {"rotation": [0,270,0]}}
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						]
+					}
+				}
 			},
 			{
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
 				"components": {
-					"minecraft:transformation": {"rotation": [0,90,0]}}
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
 			}
 		]
 	}

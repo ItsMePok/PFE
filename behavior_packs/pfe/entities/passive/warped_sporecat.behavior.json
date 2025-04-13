@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:warped_sporecat",
@@ -9,7 +9,7 @@
 			"is_experimental": false
 		},
 		"component_groups": {
-			"despawn":{
+			"despawn": {
 				"minecraft:instant_despawn": {
 					"remove_child_entities": false
 				}
@@ -21,7 +21,11 @@
 				},
 				"minecraft:ageable": {
 					"duration": 1200,
-					"feed_items": ["fish", "salmon","poke:raw_sporefish"],
+					"feed_items": [
+						"fish",
+						"salmon",
+						"poke:raw_sporefish"
+					],
 					"grow_up": {
 						"event": "minecraft:ageable_grow_up",
 						"target": "self"
@@ -55,7 +59,11 @@
 							"target": "baby"
 						}
 					},
-					"breed_items": ["fish", "salmon","poke:raw_sporefish"]
+					"breed_items": [
+						"fish",
+						"salmon",
+						"poke:raw_sporefish"
+					]
 				}
 			},
 			"minecraft:warped_sporecat_wild": {
@@ -68,7 +76,11 @@
 				},
 				"minecraft:tameable": {
 					"probability": 0.33,
-					"tame_items": ["fish", "salmon","poke:raw_sporefish"],
+					"tame_items": [
+						"fish",
+						"salmon",
+						"poke:raw_sporefish"
+					],
 					"tame_event": {
 						"event": "minecraft:on_tame",
 						"target": "self"
@@ -76,9 +88,15 @@
 				},
 				"minecraft:rideable": {
 					"seat_count": 1,
-					"family_types": ["zombie"],
+					"family_types": [
+						"zombie"
+					],
 					"seats": {
-						"position": [0, 0.35, 0]
+						"position": [
+							0,
+							0.35,
+							0
+						]
 					}
 				},
 				"minecraft:behavior.nearest_attackable_target": {
@@ -119,7 +137,11 @@
 					"speed_multiplier": 0.5,
 					"within_radius": 16,
 					"can_get_scared": true,
-					"items": ["fish", "salmon","poke:raw_sporefish"]
+					"items": [
+						"fish",
+						"salmon",
+						"poke:raw_sporefish"
+					]
 				},
 				"minecraft:behavior.avoid_mob_type": {
 					"priority": 6,
@@ -155,7 +177,11 @@
 					"priority": 5,
 					"speed_multiplier": 0.5,
 					"within_radius": 16,
-					"items": ["fish", "salmon","poke:raw_sporefish"]
+					"items": [
+						"fish",
+						"salmon",
+						"poke:raw_sporefish"
+					]
 				},
 				"minecraft:is_dyeable": {
 					"interact_text": "action.interact.dye"
@@ -199,9 +225,20 @@
 					"offering_distance": 5,
 					"minimum_teleport_distance": 2,
 					"max_head_look_at_height": 10,
-					"target_range": [5, 5, 5],
-					"teleport_offset": [0, 1, 0],
-					"time_of_day_range": [0.74999, 0.8],
+					"target_range": [
+						5,
+						5,
+						5
+					],
+					"teleport_offset": [
+						0,
+						1,
+						0
+					],
+					"time_of_day_range": [
+						0.74999,
+						0.8
+					],
 					"speed_multiplier": 1,
 					"search_range": 5,
 					"search_height": 2,
@@ -261,7 +298,7 @@
 				"value": 4
 			},
 			"minecraft:nameable": {
-				"name_actions":[
+				"name_actions": [
 					{
 						"name_filter": "despawn",
 						"on_named": {
@@ -279,7 +316,10 @@
 				]
 			},
 			"minecraft:type_family": {
-				"family": ["cat", "mob"]
+				"family": [
+					"cat",
+					"mob"
+				]
 			},
 			"minecraft:breathable": {
 				"total_supply": 15,
@@ -398,14 +438,20 @@
 								"weight": 3,
 								"remove": {},
 								"add": {
-									"component_groups": ["minecraft:warped_sporecat_adult", "minecraft:warped_sporecat_wild"]
+									"component_groups": [
+										"minecraft:warped_sporecat_adult",
+										"minecraft:warped_sporecat_wild"
+									]
 								}
 							},
 							{
 								"weight": 1,
 								"remove": {},
 								"add": {
-									"component_groups": ["minecraft:warped_sporecat_baby", "minecraft:warped_sporecat_wild"]
+									"component_groups": [
+										"minecraft:warped_sporecat_baby",
+										"minecraft:warped_sporecat_wild"
+									]
 								}
 							}
 						]
@@ -415,31 +461,41 @@
 							{
 								"weight": 15,
 								"add": {
-									"component_groups": ["minecraft:warped_sporecat_white"]
+									"component_groups": [
+										"minecraft:warped_sporecat_white"
+									]
 								}
 							},
 							{
 								"weight": 15,
 								"add": {
-									"component_groups": ["minecraft:warped_sporecat_red"]
+									"component_groups": [
+										"minecraft:warped_sporecat_red"
+									]
 								}
 							},
 							{
 								"weight": 15,
 								"add": {
-									"component_groups": ["minecraft:warped_sporecat_siamese"]
+									"component_groups": [
+										"minecraft:warped_sporecat_siamese"
+									]
 								}
 							},
 							{
 								"weight": 15,
 								"add": {
-									"component_groups": ["minecraft:warped_sporecat_calico"]
+									"component_groups": [
+										"minecraft:warped_sporecat_calico"
+									]
 								}
 							},
 							{
 								"weight": 15,
 								"add": {
-									"component_groups": ["minecraft:warped_sporecat_persian"]
+									"component_groups": [
+										"minecraft:warped_sporecat_persian"
+									]
 								}
 							}
 						]
@@ -456,44 +512,59 @@
 						},
 						"remove": {},
 						"add": {
-							"component_groups": ["minecraft:warped_sporecat_baby", "minecraft:warped_sporecat_tame"]
+							"component_groups": [
+								"minecraft:warped_sporecat_baby",
+								"minecraft:warped_sporecat_tame"
+							]
 						}
 					}
 				]
 			},
 			"minecraft:ageable_grow_up": {
 				"remove": {
-					"component_groups": ["minecraft:warped_sporecat_baby"]
+					"component_groups": [
+						"minecraft:warped_sporecat_baby"
+					]
 				},
 				"add": {
-					"component_groups": ["minecraft:warped_sporecat_adult"]
+					"component_groups": [
+						"minecraft:warped_sporecat_adult"
+					]
 				}
 			},
 			"minecraft:on_tame": {
 				"sequence": [
 					{
 						"remove": {
-							"component_groups": ["minecraft:warped_sporecat_wild"]
+							"component_groups": [
+								"minecraft:warped_sporecat_wild"
+							]
 						}
 					},
 					{
 						"add": {
-							"component_groups": ["minecraft:warped_sporecat_tame"]
+							"component_groups": [
+								"minecraft:warped_sporecat_tame"
+							]
 						}
 					}
 				]
 			},
 			"minecraft:pet_slept_with_owner": {
 				"add": {
-					"component_groups": ["minecraft:cat_gift_for_owner"]
+					"component_groups": [
+						"minecraft:cat_gift_for_owner"
+					]
 				}
 			},
 			"minecraft:cat_gifted_owner": {
 				"remove": {
-					"component_groups": ["minecraft:cat_gift_for_owner"]
+					"component_groups": [
+						"minecraft:cat_gift_for_owner"
+					]
 				}
 			},
-			"poke:bella":{
+			"poke:bella": {
 				"remove": {
 					"component_groups": [
 						"minecraft:warped_sporecat_white",

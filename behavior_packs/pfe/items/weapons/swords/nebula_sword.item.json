@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:nebula_sword",
@@ -9,8 +9,11 @@
 			}
 		},
 		"components": {
-			"minecraft:rarity":"epic",
-			"minecraft:custom_components":[
+			"minecraft:display_name": {
+				"value": "%poke_pfe.nebula_sword\n%poke_pfe.tag"
+			},
+			"minecraft:rarity": "epic",
+			"minecraft:custom_components": [
 				"poke:normalMining",
 				"poke:hitEffects"
 			],
@@ -23,8 +26,10 @@
 					"min": 60
 				}
 			},
-			"minecraft:damage": {"value": 100},
-			"minecraft:icon":"poke_nebula_sword",
+			"minecraft:damage": {
+				"value": 100
+			},
+			"minecraft:icon": "poke_nebula_sword",
 			"minecraft:enchantable": {
 				"value": 100,
 				"slot": "sword"
@@ -54,9 +59,18 @@
 			},
 			"minecraft:digger": {
 				"destroy_speeds": [
-					{"block":"minecraft:web","speed": 60},
-					{"block":"minecraft:bamboo_sapling","speed": 60},
-					{"block":"minecraft:bamboo","speed": 60}
+					{
+						"block": "minecraft:web",
+						"speed": 60
+					},
+					{
+						"block": "minecraft:bamboo_sapling",
+						"speed": 60
+					},
+					{
+						"block": "minecraft:bamboo",
+						"speed": 60
+					}
 				]
 			}
 		}

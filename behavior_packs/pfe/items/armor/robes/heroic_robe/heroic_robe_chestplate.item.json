@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:heroic_robe_chestplate",
@@ -8,6 +8,9 @@
 			}
 		},
 		"components": {
+			"minecraft:display_name": {
+				"value": "%poke_pfe.heroic_robe_chestplate\n%poke_pfe.tag"
+			},
 			"minecraft:rarity": "common",
 			"minecraft:max_stack_size": 1,
 			"minecraft:enchantable": {

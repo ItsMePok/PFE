@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:hellish_arrow",
@@ -34,10 +34,10 @@
 						"catch_fire": true
 					},
 					"stick_in_ground": {
-						"shake_time" : 0.35
+						"shake_time": 0.35
 					},
 					"arrow_effect": {
-						"apply_effect_to_blocking_targets":  false
+						"apply_effect_to_blocking_targets": false
 					},
 					"mob_effect": {
 						"effect": "wither",
@@ -54,7 +54,11 @@
 				"uncertainty_multiplier": 0,
 				"anchor": 1,
 				"should_bounce": true,
-				"offset": [ 0, -0.1, 0 ]
+				"offset": [
+					0,
+					-0.1,
+					0
+				]
 			},
 			"minecraft:physics": {},
 			"minecraft:pushable": {

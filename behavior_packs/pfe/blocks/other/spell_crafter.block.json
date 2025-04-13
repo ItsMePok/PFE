@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:spell_crafter",
@@ -8,11 +8,14 @@
 			},
 			"traits": {
 				"minecraft:placement_direction": {
-					"enabled_states": ["minecraft:cardinal_direction"]
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
 				}
 			}
 		},
 		"components": {
+			"minecraft:display_name": "%poke_pfe.spell_crafter\n%poke_pfe.tag",
 			"minecraft:liquid_detection": {
 				"detection_rules": [
 					{
@@ -23,12 +26,28 @@
 				]
 			},
 			"minecraft:selection_box": {
-				"origin": [-6,0,-6],
-				"size": [12,4,12]
+				"origin": [
+					-6,
+					0,
+					-6
+				],
+				"size": [
+					12,
+					4,
+					12
+				]
 			},
 			"minecraft:collision_box": {
-				"origin": [-6,0,-6],
-				"size": [12,4,12]
+				"origin": [
+					-6,
+					0,
+					-6
+				],
+				"size": [
+					12,
+					4,
+					12
+				]
 			},
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 1.4
@@ -46,17 +65,26 @@
 			"tag:pfe": {},
 			"tag:metal": {},
 			"tag:minecraft:metal": {},
-			"tag:stone_pick_diggable":{},
-			"tag:minecraft:is_pickaxe_item_destructible":{},
+			"tag:stone_pick_diggable": {},
+			"tag:minecraft:is_pickaxe_item_destructible": {},
 			"minecraft:map_color": "#697c79",
-			"minecraft:crafting_table": {"crafting_tags": ["poke_spell_crafter"],"table_name": "Spell Crafter"}
+			"minecraft:crafting_table": {
+				"crafting_tags": [
+					"poke_spell_crafter"
+				],
+				"table_name": "Spell Crafter"
+			}
 		},
 		"permutations": [
 			{
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'north' ",
 				"components": {
 					"minecraft:transformation": {
-						"rotation": [0, 180, 0]
+						"rotation": [
+							0,
+							180,
+							0
+						]
 					}
 				}
 			},
@@ -64,7 +92,11 @@
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'south' ",
 				"components": {
 					"minecraft:transformation": {
-						"rotation": [0, 0, 0]
+						"rotation": [
+							0,
+							0,
+							0
+						]
 					}
 				}
 			},
@@ -72,7 +104,11 @@
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'east' ",
 				"components": {
 					"minecraft:transformation": {
-						"rotation": [0, 90, 0]
+						"rotation": [
+							0,
+							90,
+							0
+						]
 					}
 				}
 			},
@@ -80,7 +116,11 @@
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'west' ",
 				"components": {
 					"minecraft:transformation": {
-						"rotation": [0, 270, 0]
+						"rotation": [
+							0,
+							270,
+							0
+						]
 					}
 				}
 			}

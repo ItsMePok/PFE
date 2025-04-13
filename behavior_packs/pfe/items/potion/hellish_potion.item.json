@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:hellish_potion",
@@ -10,7 +10,7 @@
 		"components": {
 			"minecraft:rarity": "common",
 			"minecraft:display_name": {
-				"value": "%item.poke_pfe.hellish_potion\n§7%potion.nightVision (10:00)\n%potion.regeneration (10:00)\n%potion.fireResistance (10:00)\n%poke_pfe.tag"
+				"value": "%poke_pfe.hellish_potion\n§7%potion.nightVision (10:00)\n%potion.regeneration (10:00)\n%potion.fireResistance (10:00)\n%poke_pfe.tag"
 			},
 			"minecraft:custom_components": [
 				"poke:consumeEffects"

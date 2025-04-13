@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:nebula_scythe",
@@ -8,7 +8,10 @@
 			}
 		},
 		"components": {
-			"minecraft:custom_components":[
+			"minecraft:display_name": {
+				"value": "%poke_pfe.nebula_scythe\n%poke_pfe.tag"
+			},
+			"minecraft:custom_components": [
 				"poke:normalMining",
 				"poke:hitEffects"
 			],
@@ -16,12 +19,23 @@
 			"minecraft:durability": {
 				"max_durability": 25100
 			},
-			"minecraft:damage": {"value": 44},
+			"minecraft:damage": {
+				"value": 44
+			},
 			"minecraft:digger": {
 				"destroy_speeds": [
-					{"block":"minecraft:web","speed": 60},
-					{"block":"minecraft:bamboo_sapling","speed": 60},
-					{"block":"minecraft:bamboo","speed": 60}
+					{
+						"block": "minecraft:web",
+						"speed": 60
+					},
+					{
+						"block": "minecraft:bamboo_sapling",
+						"speed": 60
+					},
+					{
+						"block": "minecraft:bamboo",
+						"speed": 60
+					}
 				]
 			},
 			"minecraft:enchantable": {
@@ -29,7 +43,7 @@
 				"slot": "sword"
 			},
 			"minecraft:hand_equipped": true,
-			"minecraft:icon":"poke_nebula_scythe",
+			"minecraft:icon": "poke_nebula_scythe",
 			"minecraft:max_stack_size": 1,
 			"minecraft:repairable": {
 				"repair_items": [
@@ -44,6 +58,12 @@
 							"poke:nebula_ingot"
 						],
 						"repair_amount": "query.max_durability*0.25"
+					},
+					{
+						"items": [
+							"poke:nebula_nugget"
+						],
+						"repair_amount": "query.max_durability*0.028"
 					}
 				]
 			}

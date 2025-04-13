@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:horns",
@@ -8,14 +8,17 @@
 			}
 		},
 		"components": {
-      "minecraft:rarity":"common",
-      "minecraft:tags": {
-        "tags": [
-          "novelty:is_hat"
-        ]
-      },
+			"minecraft:display_name": {
+				"value": "%poke_pfe.horns\n%poke_pfe.tag"
+			},
+			"minecraft:rarity": "common",
+			"minecraft:tags": {
+				"tags": [
+					"novelty:is_hat"
+				]
+			},
 			"minecraft:max_stack_size": 1,
-			"minecraft:icon":"poke_horns",
+			"minecraft:icon": "poke_horns",
 			"minecraft:wearable": {
 				"slot": "slot.weapon.offhand"
 			}

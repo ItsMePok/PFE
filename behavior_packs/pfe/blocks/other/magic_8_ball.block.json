@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:magic_8_ball",
@@ -8,11 +8,14 @@
 			},
 			"traits": {
 				"minecraft:placement_direction": {
-					"enabled_states": ["minecraft:facing_direction"]
+					"enabled_states": [
+						"minecraft:facing_direction"
+					]
 				}
 			}
 		},
 		"components": {
+			"minecraft:display_name": "%poke_pfe.magic_8_ball\n%poke_pfe.tag",
 			"minecraft:liquid_detection": {
 				"detection_rules": [
 					{
@@ -23,12 +26,28 @@
 				]
 			},
 			"minecraft:collision_box": {
-				"origin": [-5, 0, -5],
-				"size": [10, 10, 10]
+				"origin": [
+					-5,
+					0,
+					-5
+				],
+				"size": [
+					10,
+					10,
+					10
+				]
 			},
 			"minecraft:selection_box": {
-				"origin": [-5, 0, -5],
-				"size": [10, 10, 10]
+				"origin": [
+					-5,
+					0,
+					-5
+				],
+				"size": [
+					10,
+					10,
+					10
+				]
 			},
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 0.25
@@ -51,8 +70,8 @@
 			"tag:pfe": {},
 			"tag:stone": {},
 			"tag:minecraft:stone": {},
-			"tag:stone_pick_diggable":{},
-			"tag:minecraft:is_pickaxe_item_destructible":{},
+			"tag:stone_pick_diggable": {},
+			"tag:minecraft:is_pickaxe_item_destructible": {},
 			"minecraft:map_color": "#0c0b0c",
 			"minecraft:custom_components": [
 				"poke:cc_8ball"
@@ -63,7 +82,11 @@
 				"condition": "q.block_state('minecraft:facing_direction') == 'north' ",
 				"components": {
 					"minecraft:transformation": {
-						"rotation": [0, 180, 0]
+						"rotation": [
+							0,
+							180,
+							0
+						]
 					}
 				}
 			},
@@ -71,7 +94,11 @@
 				"condition": "q.block_state('minecraft:facing_direction') == 'south' ",
 				"components": {
 					"minecraft:transformation": {
-						"rotation": [0, 0, 0]
+						"rotation": [
+							0,
+							0,
+							0
+						]
 					}
 				}
 			},
@@ -79,7 +106,11 @@
 				"condition": "q.block_state('minecraft:facing_direction') == 'east' ",
 				"components": {
 					"minecraft:transformation": {
-						"rotation": [0, 90, 0]
+						"rotation": [
+							0,
+							90,
+							0
+						]
 					}
 				}
 			},
@@ -87,7 +118,11 @@
 				"condition": "q.block_state('minecraft:facing_direction') == 'west' ",
 				"components": {
 					"minecraft:transformation": {
-						"rotation": [0, 270, 0]
+						"rotation": [
+							0,
+							270,
+							0
+						]
 					}
 				}
 			},
@@ -95,8 +130,16 @@
 				"condition": "q.block_state('minecraft:facing_direction') == 'up' ",
 				"components": {
 					"minecraft:transformation": {
-						"rotation": [-90, 0, 0],
-						"translation": [0,-0.1875,-0.1875]
+						"rotation": [
+							-90,
+							0,
+							0
+						],
+						"translation": [
+							0,
+							-0.1875,
+							-0.1875
+						]
 					}
 				}
 			},
@@ -104,8 +147,16 @@
 				"condition": "q.block_state('minecraft:facing_direction') == 'down' ",
 				"components": {
 					"minecraft:transformation": {
-						"rotation": [90, 0, 0],
-						"translation": [0,-0.1875,0.1875]
+						"rotation": [
+							90,
+							0,
+							0
+						],
+						"translation": [
+							0,
+							-0.1875,
+							0.1875
+						]
 					}
 				}
 			}

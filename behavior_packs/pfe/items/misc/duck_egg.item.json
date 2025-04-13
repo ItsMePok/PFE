@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:duck_egg",
@@ -8,6 +8,9 @@
 			}
 		},
 		"components": {
+			"minecraft:display_name": {
+				"value": "%poke_pfe.duck_egg\n%poke_pfe.tag"
+			},
 			"minecraft:rarity": "common",
 			"minecraft:tags": {
 				"tags": [

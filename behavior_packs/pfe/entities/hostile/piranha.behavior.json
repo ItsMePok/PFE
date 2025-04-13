@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:piranha",
@@ -13,7 +13,10 @@
 				"on_death": "query.last_hit_by_player ? Math.Random(1,3) : 0"
 			},
 			"minecraft:type_family": {
-				"family": ["cod", "fish"]
+				"family": [
+					"cod",
+					"fish"
+				]
 			},
 			"minecraft:collision_box": {
 				"width": 0.6,
@@ -110,7 +113,7 @@
 				"target_search_height": -1,
 				"target_sneak_visibility_multiplier": 0.8,
 				"within_radius": 5,
-				"entity_types":{
+				"entity_types": {
 					"filters": {
 						"test": "is_family",
 						"subject": "other",

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:volt_arrow",
@@ -8,9 +8,9 @@
 			"is_experimental": false,
 			"runtime_identifier": "arrow"
 		},
-		"component_groups":{
-			"poke:despawn":{
-				"minecraft:instant_despawn":{}
+		"component_groups": {
+			"poke:despawn": {
+				"minecraft:instant_despawn": {}
 			}
 		},
 		"components": {
@@ -37,7 +37,12 @@
 						"min_critical_damage": 7,
 						"power_multiplier": 1
 					},
-					"definition_event":{"affect_target": true,"event_trigger":{"event": "poke:death"}}
+					"definition_event": {
+						"affect_target": true,
+						"event_trigger": {
+							"event": "poke:death"
+						}
+					}
 				},
 				"uncertainty_multiplier": 1.1,
 				"uncertainty_base": 1,
@@ -65,9 +70,11 @@
 			}
 		},
 		"events": {
-			"poke:death":{
+			"poke:death": {
 				"queue_command": {
-					"command":["summon lightning_bolt ~~~"]
+					"command": [
+						"summon lightning_bolt ~~~"
+					]
 				},
 				"add": {
 					"component_groups": [

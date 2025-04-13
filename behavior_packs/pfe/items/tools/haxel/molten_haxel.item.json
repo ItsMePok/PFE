@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:molten_haxel",
@@ -8,19 +8,24 @@
 			}
 		},
 		"components": {
-			"minecraft:tags": {"tags": [
-				"pfe:HaxelMining:{\"radius\":{\"x\":5,\"y\":5,\"z\":5},\"canBreakLiquids\":false,\"canBreakBedrock\":false}:pfeHaxelMiningEnd",
-				"minecraft:is_pickaxe"
-			]},
+			"minecraft:display_name": {
+				"value": "%poke_pfe.molten_haxel\n%poke_pfe.tag"
+			},
+			"minecraft:tags": {
+				"tags": [
+					"pfe:HaxelMining:{\"radius\":{\"x\":5,\"y\":5,\"z\":5},\"canBreakLiquids\":false,\"canBreakBedrock\":false}:pfeHaxelMiningEnd",
+					"minecraft:is_pickaxe"
+				]
+			},
 			"minecraft:custom_components": [
 				"poke:haxelMining",
 				"poke:normalMining"
 			],
 			"minecraft:use_modifiers": {
-			  "use_duration": 0,
-			  "movement_modifier": 1
+				"use_duration": 0,
+				"movement_modifier": 1
 			},
-			"minecraft:cooldown":{
+			"minecraft:cooldown": {
 				"category": "poke:haxel",
 				"duration": 0.3
 			},
@@ -28,13 +33,26 @@
 			"minecraft:hand_equipped": true,
 			"minecraft:durability": {
 				"max_durability": 4750,
-				"damage_chance": {"max": 100,"min": 20}
+				"damage_chance": {
+					"max": 100,
+					"min": 20
+				}
 			},
-			"minecraft:icon":"poke_molten_haxel",
+			"minecraft:icon": "poke_molten_haxel",
 			"minecraft:repairable": {
 				"repair_items": [
-					{"items": ["poke:repair_core"],"repair_amount": "query.max_durability"},
-					{"items": ["poke:molten_slimeball"],"repair_amount":"query.max_durability*0.20"}
+					{
+						"items": [
+							"poke:repair_core"
+						],
+						"repair_amount": "query.max_durability"
+					},
+					{
+						"items": [
+							"poke:molten_slimeball"
+						],
+						"repair_amount": "query.max_durability*0.20"
+					}
 				]
 			},
 			"minecraft:enchantable": {
@@ -42,11 +60,18 @@
 				"value": 30
 			},
 			"minecraft:hover_text_color": "red",
-			"minecraft:damage": {"value": 15},
+			"minecraft:damage": {
+				"value": 15
+			},
 			"minecraft:digger": {
 				"use_efficiency": true,
 				"destroy_speeds": [
-					{"block": {	"tags": "query.any_tag('minecraft:is_hoe_item_destructible','minecraft:is_shovel_item_destructible','minecraft:is_axe_item_destructible','minecraft:is_pickaxe_item_destructible','dirt', 'pfe', 'sand', 'gravel', 'grass', 'snow', 'wood', 'pumpkin', 'plant', 'stone', 'metal', 'rail', 'text_sign', 'diamond_pick_diggable')"},"speed":70}
+					{
+						"block": {
+							"tags": "query.any_tag('minecraft:is_hoe_item_destructible','minecraft:is_shovel_item_destructible','minecraft:is_axe_item_destructible','minecraft:is_pickaxe_item_destructible','dirt', 'pfe', 'sand', 'gravel', 'grass', 'snow', 'wood', 'pumpkin', 'plant', 'stone', 'metal', 'rail', 'text_sign', 'diamond_pick_diggable')"
+						},
+						"speed": 70
+					}
 				]
 			}
 		}

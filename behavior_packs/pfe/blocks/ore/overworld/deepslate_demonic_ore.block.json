@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:demonic_ore", /* Deepslate Demonic Ore */
@@ -8,6 +8,7 @@
 			}
 		},
 		"components": {
+			"minecraft:display_name": "%poke_pfe.deepslate_demonic_ore\n%poke_pfe.tag",
 			"minecraft:map_color": "#2c1919",
 			"tag:pfe": {},
 			"tag:metal": {},

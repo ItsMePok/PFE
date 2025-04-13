@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:snow_shovel",
@@ -9,12 +9,17 @@
 			}
 		},
 		"components": {
+			"minecraft:display_name": {
+				"value": "%poke_pfe.snow_shovel\n%poke_pfe.tag"
+			},
 			"minecraft:custom_components": [
 				"poke:normalMining"
 			],
 			"minecraft:max_stack_size": 1,
-			"minecraft:icon":"poke_snow_shovel",
-			"minecraft:damage": {"value": 4},
+			"minecraft:icon": "poke_snow_shovel",
+			"minecraft:damage": {
+				"value": 4
+			},
 			"minecraft:digger": {
 				"destroy_speeds": [
 					{

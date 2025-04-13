@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:quantum_teleporter",
@@ -8,7 +8,10 @@
 			}
 		},
 		"components": {
-			"minecraft:hover_text_color": "green",
+			"minecraft:display_name": {
+				"value": "%poke_pfe.quantum_teleporter\n§7%poke_pfe.quantum_teleporter.desc\n%poke_pfe.tag"
+			},
+			"minecraft:rarity": "epic",
 			"minecraft:icon": "poke_quantum_teleporter",
 			"minecraft:hand_equipped": {
 				"value": true

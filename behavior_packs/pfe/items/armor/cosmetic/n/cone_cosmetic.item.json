@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:cone_cosmetic",
@@ -8,14 +8,17 @@
 			}
 		},
 		"components": {
-      "minecraft:rarity":"common",
-      "minecraft:tags": {
-        "tags": [
-          "novelty:is_hat"
-        ]
-      },
+			"minecraft:display_name": {
+				"value": "%poke_pfe.cone_cosmetic\n%poke_pfe.tag"
+			},
+			"minecraft:rarity": "common",
+			"minecraft:tags": {
+				"tags": [
+					"novelty:is_hat"
+				]
+			},
 			"minecraft:max_stack_size": 1,
-			"minecraft:icon":{
+			"minecraft:icon": {
 				"textures": {
 					"default": "poke_cone_cosmetic"
 				}

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:charred_poppy_item",
@@ -12,7 +12,7 @@
 			"minecraft:fuel": {
 				"duration": 160
 			},
-			"minecraft:rarity":"uncommon",
+			"minecraft:rarity": "uncommon",
 			"minecraft:display_name": {
 				"value": "Charred Poppy\n§cOLD ITEM\n§9PFE"
 			},

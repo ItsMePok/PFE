@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:cut_shade",
@@ -8,6 +8,7 @@
 			}
 		},
 		"components": {
+			"minecraft:display_name": "%poke_pfe.cut_shade\n%poke_pfe.tag",
 			"minecraft:redstone_conductivity": {
 				"redstone_conductor": true,
 				"allows_wire_to_step_down": true
@@ -23,8 +24,8 @@
 			"tag:pfe": {},
 			"tag:metal": {},
 			"tag:minecraft:metal": {},
-			"tag:stone_pick_diggable":{},
-			"tag:minecraft:is_pickaxe_item_destructible":{},
+			"tag:stone_pick_diggable": {},
+			"tag:minecraft:is_pickaxe_item_destructible": {},
 			"minecraft:map_color": "#044209"
 		}
 	}

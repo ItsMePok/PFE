@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:barometer",
@@ -7,10 +7,15 @@
 				"category": "items"
 			},
 			"states": {
-				"pfe:weather":[0,1,2]
+				"pfe:weather": [
+					0,
+					1,
+					2
+				]
 			}
 		},
 		"components": {
+			"minecraft:display_name": "%poke_pfe.barometer\n%poke_pfe.tag",
 			"minecraft:redstone_conductivity": {
 				"redstone_conductor": true,
 				"allows_wire_to_step_down": true
@@ -24,11 +29,16 @@
 			"tag:pfe": {},
 			"tag:metal": {},
 			"tag:minecraft:metal": {},
-			"tag:stone_pick_diggable":{},
-			"tag:minecraft:is_pickaxe_item_destructible":{},
+			"tag:stone_pick_diggable": {},
+			"tag:minecraft:is_pickaxe_item_destructible": {},
 			"minecraft:map_color": "#7a5a0f",
-			"minecraft:tick": {"interval_range":[60,60]},
-			"minecraft:custom_components":[
+			"minecraft:tick": {
+				"interval_range": [
+					60,
+					60
+				]
+			},
+			"minecraft:custom_components": [
 				"poke:cc_barometer"
 			]
 		}

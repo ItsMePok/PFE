@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:cobalt_sword",
@@ -9,12 +9,17 @@
 			}
 		},
 		"components": {
-			"minecraft:custom_components":[
+			"minecraft:display_name": {
+				"value": "%poke_pfe.cobalt_sword\n%poke_pfe.tag"
+			},
+			"minecraft:custom_components": [
 				"poke:normalMining"
 			],
 			"minecraft:max_stack_size": 1,
-			"minecraft:icon":"poke_cobalt_sword",
-			"minecraft:damage": {"value": 6},
+			"minecraft:icon": "poke_cobalt_sword",
+			"minecraft:damage": {
+				"value": 6
+			},
 			"minecraft:can_destroy_in_creative": false,
 			"minecraft:hand_equipped": true,
 			"minecraft:durability": {
@@ -30,9 +35,18 @@
 			},
 			"minecraft:digger": {
 				"destroy_speeds": [
-					{"block":"minecraft:web","speed": 60},
-					{"block":"minecraft:bamboo_sapling","speed": 60},
-					{"block":"minecraft:bamboo","speed": 60}
+					{
+						"block": "minecraft:web",
+						"speed": 60
+					},
+					{
+						"block": "minecraft:bamboo_sapling",
+						"speed": 60
+					},
+					{
+						"block": "minecraft:bamboo",
+						"speed": 60
+					}
 				]
 			},
 			"minecraft:repairable": {

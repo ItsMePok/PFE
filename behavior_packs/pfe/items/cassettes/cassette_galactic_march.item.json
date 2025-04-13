@@ -1,12 +1,15 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:cassette_galactic_march"
 		},
 		"components": {
-			"minecraft:rarity":"uncommon",
-			"minecraft:icon":"poke_cassette_galactic_march",
+			"minecraft:display_name": {
+				"value": "%poke_pfe.cassette\n%poke_pfe.tag"
+			},
+			"minecraft:rarity": "uncommon",
+			"minecraft:icon": "poke_cassette_galactic_march",
 			"minecraft:custom_components": [
 				"poke:cas"
 			]

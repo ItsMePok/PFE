@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:listener",
@@ -8,7 +8,7 @@
 			"is_experimental": false
 		},
 		"component_groups": {
-			"timer":{
+			"timer": {
 				"minecraft:timer": {
 					"time": 1800,
 					"looping": true,
@@ -18,7 +18,7 @@
 					}
 				}
 			},
-			"despawn":{
+			"despawn": {
 				"minecraft:instant_despawn": {
 					"remove_child_entities": false
 				}
@@ -75,7 +75,9 @@
 				"max_fall_blocks": 20
 			},
 			"minecraft:movement.basic": {},
-			"minecraft:jump.static": {"jump_power": 0.82},
+			"minecraft:jump.static": {
+				"jump_power": 0.82
+			},
 			"minecraft:can_climb": {},
 			"minecraft:collision_box": {
 				"width": 2.9,
@@ -162,10 +164,12 @@
 				"priority": 11
 			},
 			"minecraft:physics": {},
-			"minecraft:follow_range":{"value": 60},
+			"minecraft:follow_range": {
+				"value": 60
+			},
 			"minecraft:fire_immune": {},
 			"minecraft:nameable": {
-				"name_actions":{
+				"name_actions": {
 					"name_filter": "despawn",
 					"on_named": {
 						"event": "poke:despawn",
@@ -215,19 +219,20 @@
 					}
 				]
 			},
-			"poke:renamed":{
+			"poke:renamed": {
 				"remove": {
 					"component_groups": [
 						"timer"
 					]
 				}
 			},
-			"poke:despawn":{
+			"poke:despawn": {
 				"add": {
-					"component_groups": ["despawn"]
+					"component_groups": [
+						"despawn"
+					]
 				}
 			}
-			
 		}
 	}
 }

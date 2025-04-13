@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:pfe-gift_box",
@@ -8,10 +8,15 @@
 			}
 		},
 		"components": {
-			"minecraft:icon":{
+			"minecraft:display_name": {
+				"value": "%poke_pfe.gift_box\n%poke_pfe.tag"
+			},
+			"minecraft:icon": {
 				"textures": {
 					"default": "pfe-gift_box",
-					"dyed":	"pfe-gift_box"
+					"dyed": "pfe-gift_box",
+					"bundle_open_back": "poke_gift_box_open_back",
+					"bundle_open_front": "poke_gift_box_open_front"
 				}
 			},
 			"minecraft:dyeable": {
@@ -20,10 +25,10 @@
 			"minecraft:bundle_interaction": {
 				"num_viewable_slots": 3
 			},
-			"minecraft:storage_weight_limit":{
+			"minecraft:storage_weight_limit": {
 				"max_weight_limit": 64
 			},
-			"minecraft:storage_weight_modifier":{
+			"minecraft:storage_weight_modifier": {
 				"weight_in_storage_item": 1
 			},
 			"minecraft:storage_item": {

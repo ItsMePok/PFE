@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:cassette_trader",
@@ -9,53 +9,97 @@
 		},
 		"components": {
 			"minecraft:persistent": {},
-      "minecraft:is_hidden_when_invisible": {
-      },
-      "minecraft:timer": {
-        "looping": false,
-        "random_time_choices": [
-          {"weight":50,"value":2400},
-          {"weight":50,"value":3600}
-        ],
-        "time_down_event": {
-          "event": "poke:despawn",
-          "target": "self"
-        }
-      },
-      "minecraft:spawn_entity": {
-        "entities": [
-          {
-            "min_wait_time": 0,
-            "max_wait_time": 0,
-            "spawn_entity": "poke:retro_llama",
-            "spawn_event": "minecraft:from_wandering_trader",
-            "single_use": true,
-            "num_to_spawn": 2,
-            "should_leash": true
-          }
-        ]
-      },
+			"minecraft:is_hidden_when_invisible": {},
+			"minecraft:timer": {
+				"looping": false,
+				"random_time_choices": [
+					{
+						"weight": 50,
+						"value": 2400
+					},
+					{
+						"weight": 50,
+						"value": 3600
+					}
+				],
+				"time_down_event": {
+					"event": "poke:despawn",
+					"target": "self"
+				}
+			},
+			"minecraft:spawn_entity": {
+				"entities": [
+					{
+						"min_wait_time": 0,
+						"max_wait_time": 0,
+						"spawn_entity": "poke:retro_llama",
+						"spawn_event": "minecraft:from_wandering_trader",
+						"single_use": true,
+						"num_to_spawn": 2,
+						"should_leash": true
+					}
+				]
+			},
 			"minecraft:behavior.random_stroll": {
 				"interval": 120,
 				"xz_dist": 10,
 				"y_dist": 7,
 				"priority": 7
 			},
-			"minecraft:type_family": {"family": ["poke:traders","wandering_trader","mob"]},
-			"minecraft:health": {"value": 20},
-			"minecraft:collision_box": {"width": 0.6,"height": 1.9},
-			"minecraft:movement":{
-				"min": 0.20,"max": 0.35
+			"minecraft:type_family": {
+				"family": [
+					"poke:traders",
+					"wandering_trader",
+					"mob"
+				]
 			},
-			"minecraft:behavior.float": {"priority": 0},
-			"minecraft:behavior.trade_with_player": {"priority": 1},
-			"minecraft:economy_trade_table": {"display_name": "Cassette Trader","table": "trading/economy_trades/poke/pfe/cassette_trader.trade.json","new_screen": true,"hero_demand_discount": 0,"persist_trades": false,"cured_discount": [0,0],"convert_trades_economy": false,"use_legacy_price_formula": true},
-			"minecraft:behavior.look_at_trading_player": {"priority": 2},
-			"minecraft:behavior.look_at_player": {"priority": 8,"look_distance": 8,"probability": 0.02},
+			"minecraft:health": {
+				"value": 20
+			},
+			"minecraft:collision_box": {
+				"width": 0.6,
+				"height": 1.9
+			},
+			"minecraft:movement": {
+				"min": 0.20,
+				"max": 0.35
+			},
+			"minecraft:behavior.float": {
+				"priority": 0
+			},
+			"minecraft:behavior.trade_with_player": {
+				"priority": 1
+			},
+			"minecraft:economy_trade_table": {
+				"display_name": "Cassette Trader",
+				"table": "trading/economy_trades/poke/pfe/cassette_trader.trade.json",
+				"new_screen": true,
+				"hero_demand_discount": 0,
+				"persist_trades": false,
+				"cured_discount": [
+					0,
+					0
+				],
+				"convert_trades_economy": false,
+				"use_legacy_price_formula": true
+			},
+			"minecraft:behavior.look_at_trading_player": {
+				"priority": 2
+			},
+			"minecraft:behavior.look_at_player": {
+				"priority": 8,
+				"look_distance": 8,
+				"probability": 0.02
+			},
 			"minecraft:physics": {},
-			"minecraft:pushable": {"is_pushable": true,"is_pushable_by_piston": true},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
 			"minecraft:equip_item": {},
-			"minecraft:behavior.equip_item": {"priority": 0},
+			"minecraft:behavior.equip_item": {
+				"priority": 0
+			},
 			"minecraft:equippable": {},
 			"minecraft:conditional_bandwidth_optimization": {},
 			"minecraft:inventory": {
@@ -70,34 +114,90 @@
 				"all_items_surplus_amount": 64,
 				"all_items_want_amount": 64,
 				"items": [
-					{"item":"poke:cosmetic_cosmetic"},
-					{"item":"poke:apollo_the_snake"},
-					{"item":"poke:armadillo_hat"},
-					{"item":"poke:big_dapper_fit"},
-					{"item":"poke:caged_soul"},
-					{"item":"poke:carved_melon_helmet"},
-					{"item":"poke:cone_cosmetic"},
-					{"item":"poke:dapper_fit"},
-					{"item":"poke:festive_helmet"},
-					{"item":"poke:flower_lilly_hat"},
-					{"item":"poke:fungal_hat"},
-					{"item":"poke:goggles"},
-					{"item":"poke:grad_cap"},
-					{"item":"poke:little_dapper_fit"},
-					{"item":"poke:maxwell"},
-					{"item":"poke:mlg_glasses"},
-					{"item":"poke:mr_duck"},
-					{"item":"poke:necromancer_crown"},
-					{"item":"poke:pirate_hat"},
-					{"item":"poke:pok_bot_cosmetic"},
-					{"item":"poke:top_hat"},
-					{"item":"poke:trash_lid"},
-					{"item":"poke:viking_helmet"},
-					{"item":"poke:swift_boots"},
-					{"item":"poke:knightling_helmet"},
-					{"item":"poke:crown_helmet"},
-					{"item":"poke:miner_helmet"},
-					{"item":"poke:night_vision_goggles"}
+					{
+						"item": "poke:cosmetic_cosmetic"
+					},
+					{
+						"item": "poke:apollo_the_snake"
+					},
+					{
+						"item": "poke:armadillo_hat"
+					},
+					{
+						"item": "poke:big_dapper_fit"
+					},
+					{
+						"item": "poke:caged_soul"
+					},
+					{
+						"item": "poke:carved_melon_helmet"
+					},
+					{
+						"item": "poke:cone_cosmetic"
+					},
+					{
+						"item": "poke:dapper_fit"
+					},
+					{
+						"item": "poke:festive_helmet"
+					},
+					{
+						"item": "poke:flower_lilly_hat"
+					},
+					{
+						"item": "poke:fungal_hat"
+					},
+					{
+						"item": "poke:goggles"
+					},
+					{
+						"item": "poke:grad_cap"
+					},
+					{
+						"item": "poke:little_dapper_fit"
+					},
+					{
+						"item": "poke:maxwell"
+					},
+					{
+						"item": "poke:mlg_glasses"
+					},
+					{
+						"item": "poke:mr_duck"
+					},
+					{
+						"item": "poke:necromancer_crown"
+					},
+					{
+						"item": "poke:pirate_hat"
+					},
+					{
+						"item": "poke:pok_bot_cosmetic"
+					},
+					{
+						"item": "poke:top_hat"
+					},
+					{
+						"item": "poke:trash_lid"
+					},
+					{
+						"item": "poke:viking_helmet"
+					},
+					{
+						"item": "poke:swift_boots"
+					},
+					{
+						"item": "poke:knightling_helmet"
+					},
+					{
+						"item": "poke:crown_helmet"
+					},
+					{
+						"item": "poke:miner_helmet"
+					},
+					{
+						"item": "poke:night_vision_goggles"
+					}
 				],
 				"singular_pickup": true
 			},
@@ -133,17 +233,40 @@
 				"can_walk_in_lava": false,
 				"is_amphibious": false
 			},
-			"minecraft:equipment": {"slot_drop_chance": [{"slot": "slot.weapon.mainhand","drop_chance": 100},{"slot":"slot.armor.head","drop_chance": 100},{"slot":"slot.armor.feet","drop_chance": 100},{"slot":"slot.armor.legs","drop_chance": 100},{"slot":"slot.armor.chest","drop_chance": 100}]}
+			"minecraft:equipment": {
+				"slot_drop_chance": [
+					{
+						"slot": "slot.weapon.mainhand",
+						"drop_chance": 100
+					},
+					{
+						"slot": "slot.armor.head",
+						"drop_chance": 100
+					},
+					{
+						"slot": "slot.armor.feet",
+						"drop_chance": 100
+					},
+					{
+						"slot": "slot.armor.legs",
+						"drop_chance": 100
+					},
+					{
+						"slot": "slot.armor.chest",
+						"drop_chance": 100
+					}
+				]
+			}
 		},
 		"component_groups": {
-			"poke:despawn":{
+			"poke:despawn": {
 				"minecraft:instant_despawn": {
 					"remove_child_entities": true
 				}
 			}
 		},
 		"events": {
-			"poke:despawn":{
+			"poke:despawn": {
 				"add": {
 					"component_groups": [
 						"poke:despawn"

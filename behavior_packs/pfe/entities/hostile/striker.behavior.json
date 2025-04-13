@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:striker",
@@ -20,7 +20,6 @@
 									"value": "lightning"
 								}
 							]
-
 						},
 						"deals_damage": "no"
 					}
@@ -102,7 +101,12 @@
 				"height": 1.9
 			},
 			"minecraft:type_family": {
-				"family": ["skeleton", "undead", "monster", "mob"]
+				"family": [
+					"skeleton",
+					"undead",
+					"monster",
+					"mob"
+				]
 			},
 			"minecraft:breathable": {
 				"total_supply": 15,
@@ -489,28 +493,40 @@
 		"events": {
 			"minecraft:entity_spawned": {
 				"add": {
-					"component_groups": ["minecraft:ranged_attack"]
+					"component_groups": [
+						"minecraft:ranged_attack"
+					]
 				}
 			},
 			"minecraft:spring_trap": {
 				"add": {
-					"component_groups": ["minecraft:lightning_immune"]
+					"component_groups": [
+						"minecraft:lightning_immune"
+					]
 				}
 			},
 			"minecraft:melee_mode": {
 				"remove": {
-					"component_groups": ["minecraft:ranged_attack"]
+					"component_groups": [
+						"minecraft:ranged_attack"
+					]
 				},
 				"add": {
-					"component_groups": ["minecraft:melee_attack"]
+					"component_groups": [
+						"minecraft:melee_attack"
+					]
 				}
 			},
 			"minecraft:ranged_mode": {
 				"remove": {
-					"component_groups": ["minecraft:melee_attack"]
+					"component_groups": [
+						"minecraft:melee_attack"
+					]
 				},
 				"add": {
-					"component_groups": ["minecraft:ranged_attack"]
+					"component_groups": [
+						"minecraft:ranged_attack"
+					]
 				}
 			}
 		}

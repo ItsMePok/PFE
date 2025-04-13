@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:mini_demonic_allay",
@@ -8,14 +8,14 @@
 			"is_experimental": false
 		},
 		"component_groups": {
-			"despawn":{
+			"despawn": {
 				"minecraft:instant_despawn": {
 					"remove_child_entities": false
 				}
 			}
 		},
 		"components": {
-			"minecraft:dimension_bound":{},
+			"minecraft:dimension_bound": {},
 			"minecraft:scale": {
 				"value": 0.5
 			},
@@ -161,7 +161,9 @@
 			},
 			"minecraft:despawn": {
 				"despawn_from_inactivity": true,
-				"despawn_from_distance": {"max_distance": 80},
+				"despawn_from_distance": {
+					"max_distance": 80
+				},
 				"min_range_inactivity_timer": 100
 			},
 			"minecraft:conditional_bandwidth_optimization": {},
@@ -179,9 +181,11 @@
 			}
 		},
 		"events": {
-			"poke:despawn":{
+			"poke:despawn": {
 				"add": {
-					"component_groups": ["despawn"]
+					"component_groups": [
+						"despawn"
+					]
 				}
 			}
 		}

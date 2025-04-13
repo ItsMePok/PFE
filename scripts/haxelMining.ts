@@ -64,7 +64,7 @@ class PFEHaxelMining {
     //Blocks that should never be broken by haxels
     let localBlacklist: string[] = []
     localBlacklist = dynamicProperty.blacklist
-    console.warn(JSON.stringify(localBlacklist))
+    //console.warn(JSON.stringify(localBlacklist))
     let BannedBlocks: string[] = [MinecraftBlockTypes.Air, MinecraftBlockTypes.LightBlock0, MinecraftBlockTypes.LightBlock1, MinecraftBlockTypes.LightBlock2, MinecraftBlockTypes.LightBlock3, MinecraftBlockTypes.LightBlock4, MinecraftBlockTypes.LightBlock5, MinecraftBlockTypes.LightBlock6, MinecraftBlockTypes.LightBlock7, MinecraftBlockTypes.LightBlock8, MinecraftBlockTypes.LightBlock9, MinecraftBlockTypes.LightBlock10, MinecraftBlockTypes.LightBlock11, MinecraftBlockTypes.LightBlock12, MinecraftBlockTypes.LightBlock13, MinecraftBlockTypes.LightBlock14, MinecraftBlockTypes.LightBlock15, MinecraftBlockTypes.Barrier, MinecraftBlockTypes.Jigsaw, MinecraftBlockTypes.StructureBlock, MinecraftBlockTypes.CommandBlock, MinecraftBlockTypes.ChainCommandBlock, MinecraftBlockTypes.RepeatingCommandBlock, MinecraftBlockTypes.BorderBlock, MinecraftBlockTypes.Allow, MinecraftBlockTypes.Deny]
     let location: Vector3 = { x: Math.round(data.source.location.x - (ComponentInfo.radius.x / 2)), y: Math.round(data.source.location.y - 0.01), z: Math.round(data.source.location.z - (ComponentInfo.radius.z / 2)) }
     //@ts-ignore
@@ -156,7 +156,7 @@ function PFEHaxelConfigBlackListAdd(data: ItemComponentUseEvent, dynamicProperty
         block = `minecraft:${block}`
       }
       block = block.toLowerCase()/* Identifiers must be lowercase (some devices could auto-capitalize the first letter)*/
-      console.warn(block)
+      //console.warn(block)
       let newProperty: PFEHaxelConfig = {
         "blacklist": dynamicProperty.blacklist.concat([block]),
         "v": dynamicProperty.v

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke_pfe:godly_drain",
@@ -8,7 +8,7 @@
 			}
 		},
 		"components": {
-			"minecraft:display_name": "%tile.poke_pfe.godly_drain\n%poke_pfe.tag",
+			"minecraft:display_name": "%poke_pfe.godly_drain\n%poke_pfe.tag",
 			"minecraft:item_visual": {
 				"geometry": {
 					"identifier": "geometry.poke_pfe.block"

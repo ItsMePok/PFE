@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:hellish_soup",
@@ -9,11 +9,14 @@
 			}
 		},
 		"components": {
+			"minecraft:display_name": {
+				"value": "%poke_pfe.hellish_soup\n%poke_pfe.tag"
+			},
 			"minecraft:custom_components": [
 				"poke:consumeEffects"
 			],
 			"minecraft:max_stack_size": 16,
-			"minecraft:icon":"poke_hellish_soup",
+			"minecraft:icon": "poke_hellish_soup",
 			"minecraft:food": {
 				"nutrition": 8,
 				"saturation_modifier": 2,

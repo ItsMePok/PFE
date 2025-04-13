@@ -1,11 +1,24 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:raw_holy_slab",
-			"menu_category": {"category": "construction"},
-			"traits": {"minecraft:placement_position": {"enabled_states": ["minecraft:vertical_half"]}},
-			"states": {"poke:double": [false, true]}
+			"menu_category": {
+				"category": "construction"
+			},
+			"traits": {
+				"minecraft:placement_position": {
+					"enabled_states": [
+						"minecraft:vertical_half"
+					]
+				}
+			},
+			"states": {
+				"poke:double": [
+					false,
+					true
+				]
+			}
 		},
 		"permutations": [
 			{
@@ -28,7 +41,7 @@
 					"minecraft:geometry": {
 						"identifier": "minecraft:geometry.full_block"
 					},
-					"minecraft:custom_components":[
+					"minecraft:custom_components": [
 						"poke:cc_slab_loot"
 					]
 				}
@@ -43,20 +56,47 @@
 								"can_contain_liquid": true,
 								"liquid_type": "water",
 								"on_liquid_touches": "blocking",
-								"stops_liquid_flowing_from_direction": ["down"]
+								"stops_liquid_flowing_from_direction": [
+									"down"
+								]
 							}
 						]
 					},
-					"minecraft:custom_components":[
+					"minecraft:custom_components": [
 						"poke:slabs",
 						"poke:cc_block_seat"
 					],
-					"minecraft:collision_box": {"origin": [-8, 0, -8],"size": [16, 8, 16]},
+					"minecraft:collision_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							8,
+							16
+						]
+					},
 					"minecraft:geometry": {
 						"identifier": "geometry.poke_pfe_slab",
-						"bone_visibility": {"bottom_slab": "q.block_state('minecraft:vertical_half') == 'bottom'","top_slab": "q.block_state('minecraft:vertical_half') == 'top'"}
+						"bone_visibility": {
+							"bottom_slab": "q.block_state('minecraft:vertical_half') == 'bottom'",
+							"top_slab": "q.block_state('minecraft:vertical_half') == 'top'"
+						}
 					},
-					"minecraft:selection_box": {"origin": [-8, 0, -8],"size": [16, 8, 16]}
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							8,
+							16
+						]
+					}
 				}
 			},
 			// Top Slab
@@ -69,37 +109,71 @@
 								"can_contain_liquid": true,
 								"liquid_type": "water",
 								"on_liquid_touches": "blocking",
-								"stops_liquid_flowing_from_direction": ["up"]
+								"stops_liquid_flowing_from_direction": [
+									"up"
+								]
 							}
 						]
 					},
-					"minecraft:custom_components":[
+					"minecraft:custom_components": [
 						"poke:slabs"
 					],
 					"minecraft:collision_box": {
-						"origin": [-8, 8, -8],
-						"size": [16, 8, 16]
+						"origin": [
+							-8,
+							8,
+							-8
+						],
+						"size": [
+							16,
+							8,
+							16
+						]
 					},
 					"minecraft:geometry": {
 						"identifier": "geometry.poke_pfe_slab",
-						"bone_visibility": {"bottom_slab": "q.block_state('minecraft:vertical_half') == 'bottom'","top_slab": "q.block_state('minecraft:vertical_half') == 'top'"}
+						"bone_visibility": {
+							"bottom_slab": "q.block_state('minecraft:vertical_half') == 'bottom'",
+							"top_slab": "q.block_state('minecraft:vertical_half') == 'top'"
+						}
 					},
-					"minecraft:selection_box": {"origin": [-8, 8, -8],"size": [16, 8, 16]}
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							8,
+							-8
+						],
+						"size": [
+							16,
+							8,
+							16
+						]
+					}
 				}
 			}
 		],
 		"components": {
+			"minecraft:display_name": "%poke_pfe.raw_holy_slab\n%poke_pfe.tag",
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 7.5,
-				"item_specific_speeds": [{"item":{"tags": "q.any_tag('minecraft:is_pickaxe')"},"destroy_speed": 1.15}]
+				"item_specific_speeds": [
+					{
+						"item": {
+							"tags": "q.any_tag('minecraft:is_pickaxe')"
+						},
+						"destroy_speed": 1.15
+					}
+				]
 			},
-			"minecraft:destructible_by_explosion": {"explosion_resistance": 6},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 6
+			},
 			"minecraft:map_color": "#1a37bb",
 			"tag:pfe": {},
 			"tag:metal": {},
 			"tag:minecraft:metal": {},
-			"tag:stone_pick_diggable":{},
-			"tag:minecraft:is_pickaxe_item_destructible":{},
+			"tag:stone_pick_diggable": {},
+			"tag:minecraft:is_pickaxe_item_destructible": {},
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "poke_raw_holy_block"

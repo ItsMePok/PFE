@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:astral_boltbow",
@@ -8,8 +8,11 @@
 			}
 		},
 		"components": {
-			"minecraft:rarity":"common",
-			"minecraft:icon":"poke_astral_boltbow",
+			"minecraft:display_name": {
+				"value": "%poke_pfe.astral_boltbow\n%poke_pfe.tag"
+			},
+			"minecraft:rarity": "common",
+			"minecraft:icon": "poke_astral_boltbow",
 			"minecraft:can_destroy_in_creative": {
 				"value": false
 			},
@@ -21,19 +24,25 @@
 			"minecraft:repairable": {
 				"repair_items": [
 					{
-						"items": ["poke:repair_core"],
+						"items": [
+							"poke:repair_core"
+						],
 						"repair_amount": "query.max_durability"
 					},
 					{
-						"items": ["poke:astral_ingot"],
+						"items": [
+							"poke:astral_ingot"
+						],
 						"repair_amount": "query.max_durability*0.25"
 					},
 					{
-						"items": ["poke:astral_nugget"],
+						"items": [
+							"poke:astral_nugget"
+						],
 						"repair_amount": "query.max_durability*0.028"
 					}
 				]
-			}, 
+			},
 			"minecraft:enchantable": {
 				"value": 75,
 				"slot": "flintsteel"
@@ -45,7 +54,7 @@
 				},
 				"max_durability": 3250
 			},
-			"minecraft:custom_components":[
+			"minecraft:custom_components": [
 				"poke:cc_bowAim",
 				"poke:boltbow"
 			]

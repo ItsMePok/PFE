@@ -1,5 +1,5 @@
 { //this entity model, animations & textures was made by O2God for PFE
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:necromancer",
@@ -8,7 +8,7 @@
 			"is_experimental": false
 		},
 		"component_groups": {
-			"timer":{
+			"timer": {
 				"minecraft:timer": {
 					"time": 1800,
 					"looping": true,
@@ -18,12 +18,12 @@
 					}
 				}
 			},
-			"despawn":{
+			"despawn": {
 				"minecraft:instant_despawn": {
 					"remove_child_entities": false
 				}
 			},
-			"melee_mode":{
+			"melee_mode": {
 				"minecraft:behavior.melee_box_attack": {
 					"melee_fov": 90,
 					"track_target": true,
@@ -35,7 +35,7 @@
 					"can_spread_on_fire": true
 				}
 			},
-			"ranged_mode":{
+			"ranged_mode": {
 				"minecraft:behavior.summon_entity": {
 					"priority": 0,
 					"summon_choices": [
@@ -49,16 +49,16 @@
 							"particle_color": "#385b38",
 							"sequence": [
 								{
-								"shape": "circle",
-								"target": "self",
-								"base_delay": 2.5,
-								"num_entities_spawned": 10,
-								"entity_type": "minecraft:zombie",
-								"summon_cap": 10,
-								"summon_cap_radius": 30.0,
-								"size": 5.0,
-								"entity_lifespan": 90,
-								"sound_event": "prepare.summon"
+									"shape": "circle",
+									"target": "self",
+									"base_delay": 2.5,
+									"num_entities_spawned": 10,
+									"entity_type": "minecraft:zombie",
+									"summon_cap": 10,
+									"summon_cap_radius": 30.0,
+									"size": 5.0,
+									"entity_lifespan": 90,
+									"sound_event": "prepare.summon"
 								}
 							]
 						},
@@ -72,16 +72,16 @@
 							"min_activation_range": 0.5,
 							"sequence": [
 								{
-								"shape": "circle",
-								"target": "self",
-								"base_delay": 2.5,
-								"num_entities_spawned": 10,
-								"entity_type": "minecraft:husk",
-								"summon_cap": 10,
-								"summon_cap_radius": 30.0,
-								"size": 6.0,
-								"entity_lifespan": 90,
-								"sound_event": "prepare.summon"
+									"shape": "circle",
+									"target": "self",
+									"base_delay": 2.5,
+									"num_entities_spawned": 10,
+									"entity_type": "minecraft:husk",
+									"summon_cap": 10,
+									"summon_cap_radius": 30.0,
+									"size": 6.0,
+									"entity_lifespan": 90,
+									"sound_event": "prepare.summon"
 								}
 							]
 						},
@@ -95,16 +95,16 @@
 							"min_activation_range": 0.5,
 							"sequence": [
 								{
-								"shape": "circle",
-								"target": "self",
-								"base_delay": 2.5,
-								"num_entities_spawned": 8,
-								"entity_type": "minecraft:skeleton",
-								"summon_cap": 10,
-								"summon_cap_radius": 30.0,
-								"size": 8.0,
-								"entity_lifespan": 90,
-								"sound_event": "prepare.summon"
+									"shape": "circle",
+									"target": "self",
+									"base_delay": 2.5,
+									"num_entities_spawned": 8,
+									"entity_type": "minecraft:skeleton",
+									"summon_cap": 10,
+									"summon_cap_radius": 30.0,
+									"size": 8.0,
+									"entity_lifespan": 90,
+									"sound_event": "prepare.summon"
 								}
 							]
 						},
@@ -118,16 +118,16 @@
 							"min_activation_range": 0.5,
 							"sequence": [
 								{
-								"shape": "circle",
-								"target": "self",
-								"base_delay": 2.5,
-								"num_entities_spawned": 8,
-								"entity_type": "minecraft:bogged",
-								"summon_cap": 10,
-								"summon_cap_radius": 30.0,
-								"size": 9.0,
-								"entity_lifespan": 90,
-								"sound_event": "prepare.summon"
+									"shape": "circle",
+									"target": "self",
+									"base_delay": 2.5,
+									"num_entities_spawned": 8,
+									"entity_type": "minecraft:bogged",
+									"summon_cap": 10,
+									"summon_cap_radius": 30.0,
+									"size": 9.0,
+									"entity_lifespan": 90,
+									"sound_event": "prepare.summon"
 								}
 							]
 						},
@@ -141,16 +141,16 @@
 							"min_activation_range": 0.5,
 							"sequence": [
 								{
-								"shape": "circle",
-								"target": "self",
-								"base_delay": 2.5,
-								"num_entities_spawned": 8,
-								"entity_type": "minecraft:stray",
-								"summon_cap": 10,
-								"summon_cap_radius": 30.0,
-								"size": 10.0,
-								"entity_lifespan": 90,
-								"sound_event": "prepare.summon"
+									"shape": "circle",
+									"target": "self",
+									"base_delay": 2.5,
+									"num_entities_spawned": 8,
+									"entity_type": "minecraft:stray",
+									"summon_cap": 10,
+									"summon_cap_radius": 30.0,
+									"size": 10.0,
+									"entity_lifespan": 90,
+									"sound_event": "prepare.summon"
 								}
 							]
 						}
@@ -175,7 +175,7 @@
 				]
 			},
 			"minecraft:nameable": {
-				"name_actions":{
+				"name_actions": {
 					"name_filter": "despawn",
 					"on_named": {
 						"event": "poke:despawn",
@@ -241,7 +241,7 @@
 				"value": 0.5
 			},
 			"minecraft:behavior.random_stroll": {
-				"priority":8,
+				"priority": 8,
 				"xz_dist": 10,
 				"y_dist": 7
 			},
@@ -266,29 +266,29 @@
 				"within_radius": 40,
 				"must_see_forget_duration": 17,
 				"entity_types": [
-				{
-					"filters": {
-						"any_of": [
-						{
-							"test": "is_family",
-							"subject": "other",
-							"value": "player"
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "snowgolem"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "irongolem"
+								}
+							]
 						},
-						{
-							"test": "is_family",
-							"subject": "other",
-							"value": "snowgolem"
-						},
-						{
-							"test": "is_family",
-							"subject": "other",
-							"value": "irongolem"
-						}
-						]
-					},
-					"max_dist": 40
-				}
-			]
+						"max_dist": 40
+					}
+				]
 			},
 			"minecraft:persistent": {},
 			"minecraft:physics": {},
@@ -325,7 +325,7 @@
 					]
 				}
 			},
-			"poke:ranged_mode":{
+			"poke:ranged_mode": {
 				"remove": {
 					"component_groups": [
 						"melee_mode"
@@ -337,7 +337,7 @@
 					]
 				}
 			},
-			"poke:melee_mode":{
+			"poke:melee_mode": {
 				"add": {
 					"component_groups": [
 						"melee_mode"
@@ -349,12 +349,14 @@
 					]
 				}
 			},
-			"poke:despawn":{
+			"poke:despawn": {
 				"add": {
-					"component_groups": ["despawn"]
+					"component_groups": [
+						"despawn"
+					]
 				}
 			},
-			"poke:renamed":{
+			"poke:renamed": {
 				"remove": {
 					"component_groups": [
 						"timer"

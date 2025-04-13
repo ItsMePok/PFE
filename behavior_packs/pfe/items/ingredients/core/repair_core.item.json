@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:repair_core",
@@ -8,7 +8,10 @@
 			}
 		},
 		"components": {
-			"minecraft:icon":"poke_repair_core"
+			"minecraft:display_name": {
+				"value": "%poke_pfe.repair_core\n%poke_pfe.tag"
+			},
+			"minecraft:icon": "poke_repair_core"
 		}
 	}
 }

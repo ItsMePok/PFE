@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:zeus_gem",
@@ -8,6 +8,9 @@
 			}
 		},
 		"components": {
+			"minecraft:display_name": {
+				"value": "%poke_pfe.zeus_gem\n%poke_pfe.tag"
+			},
 			"minecraft:icon": "poke_zeus_gem"
 		}
 	}

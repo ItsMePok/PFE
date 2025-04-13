@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:baguette",
@@ -8,6 +8,9 @@
 			}
 		},
 		"components": {
+			"minecraft:display_name": {
+				"value": "%poke_pfe.baguette\n%poke_pfe.tag"
+			},
 			"minecraft:compostable": {
 				"composting_chance": 85
 			},
@@ -20,7 +23,7 @@
 				"slot": "sword",
 				"value": 30
 			},
-			"minecraft:icon":{
+			"minecraft:icon": {
 				"textures": {
 					"default": "poke_baguette"
 				}
@@ -32,7 +35,9 @@
 			"minecraft:hand_equipped": true,
 			"minecraft:use_animation": "eat",
 			"minecraft:tags": {
-				"tags": ["minecraft:is_food"]
+				"tags": [
+					"minecraft:is_food"
+				]
 			}
 		}
 	}

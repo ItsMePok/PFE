@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:demonic_allay",
@@ -8,7 +8,7 @@
 			"is_experimental": false
 		},
 		"components": {
-			"minecraft:dimension_bound":{},
+			"minecraft:dimension_bound": {},
 			"minecraft:scale": {
 				"value": 1
 			},

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:necromancer_staff_orb",
@@ -9,8 +9,10 @@
 			"runtime_identifier": "minecraft:arrow"
 		},
 		"component_groups": {
-			"poke:despawn":{
-				"minecraft:instant_despawn": {"remove_child_entities": false}
+			"poke:despawn": {
+				"minecraft:instant_despawn": {
+					"remove_child_entities": false
+				}
 			}
 		},
 		"components": {
@@ -38,12 +40,14 @@
 				"stop_on_hurt": false,
 				//"particle": "poke:necromancer_orb",
 				"on_hit": {
-					"impact_damage": {"damage": 5},
+					"impact_damage": {
+						"damage": 5
+					},
 					"definition_event": {
 						"affect_projectile": true,
 						"event_trigger": {
-								"event": "poke:spawn",
-								"target": "self"
+							"event": "poke:spawn",
+							"target": "self"
 						}
 					}
 				}
@@ -75,14 +79,14 @@
 			}
 		},
 		"events": {
-			"poke:spawn":{
+			"poke:spawn": {
 				"queue_command": {
-					"command":"say Hello World"
+					"command": "say Hello World"
 				},
 				"randomize": [
 					{
 						"queue_command": {
-							"command":[
+							"command": [
 								"execute as @s run summon zombie ~~~",
 								"execute as @s run summon zombie ~~~"
 							]
@@ -96,7 +100,7 @@
 					},
 					{
 						"queue_command": {
-							"command":[
+							"command": [
 								"execute as @s run summon husk ~~~",
 								"execute as @s run summon husk ~~~"
 							]
@@ -110,7 +114,7 @@
 					},
 					{
 						"queue_command": {
-							"command":[
+							"command": [
 								"execute as @s run summon skeleton ~~~",
 								"execute as @s run summon skeleton ~~~"
 							]
@@ -124,7 +128,7 @@
 					},
 					{
 						"queue_command": {
-							"command":[
+							"command": [
 								"execute as @s run summon stray ~~~",
 								"execute as @s run summon stray ~~~"
 							]

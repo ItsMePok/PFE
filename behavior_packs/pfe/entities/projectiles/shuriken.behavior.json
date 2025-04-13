@@ -1,12 +1,12 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:shuriken_proj",
 			"is_spawnable": false,
 			"is_summonable": true,
 			"is_experimental": false,
-			"runtime_identifier":"minecraft:snowball"
+			"runtime_identifier": "minecraft:snowball"
 		},
 		"components": {
 			"minecraft:collision_box": {
@@ -36,7 +36,7 @@
 						"power_multiplier": 0.97
 					}
 				},
-				"should_bounce":false,
+				"should_bounce": false,
 				"uncertainty_multiplier": 1.1,
 				"uncertainty_base": 1,
 				"anchor": 1,

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:knightling",
@@ -45,7 +45,7 @@
 					"priority": 1
 				}
 			},
-			"timer":{
+			"timer": {
 				"minecraft:timer": {
 					"time": 1800,
 					"looping": true,
@@ -55,7 +55,7 @@
 					}
 				}
 			},
-			"despawn":{
+			"despawn": {
 				"minecraft:instant_despawn": {
 					"remove_child_entities": false
 				}
@@ -63,7 +63,7 @@
 		},
 		"components": {
 			"minecraft:nameable": {
-				"name_actions":{
+				"name_actions": {
 					"name_filter": "despawn",
 					"on_named": {
 						"event": "poke:despawn",
@@ -164,7 +164,7 @@
 					}
 				],
 				"must_see": true
-			}			
+			}
 		},
 		"events": {
 			"minecraft:entity_spawned": {
@@ -188,16 +188,18 @@
 					]
 				}
 			},
-			"poke:renamed":{
+			"poke:renamed": {
 				"remove": {
 					"component_groups": [
 						"timer"
 					]
 				}
 			},
-			"poke:despawn":{
+			"poke:despawn": {
 				"add": {
-					"component_groups": ["despawn"]
+					"component_groups": [
+						"despawn"
+					]
 				}
 			}
 		}

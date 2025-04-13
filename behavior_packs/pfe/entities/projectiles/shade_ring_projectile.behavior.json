@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.60",
+  "format_version": "1.21.70",
   "minecraft:entity": {
     "description": {
       "identifier": "poke:shade_ring_proj",
@@ -9,7 +9,9 @@
       "runtime_identifier": "minecraft:ender_pearl"
     },
     "component_groups": {
-      "poke:despawn":{"minecraft:instant_despawn":{}}
+      "poke:despawn": {
+        "minecraft:instant_despawn": {}
+      }
     },
     "components": {
       "minecraft:collision_box": {
@@ -23,14 +25,14 @@
         },
         "anchor": 1,
         "power": 100,
-        "shoot_sound":"throw",
+        "shoot_sound": "throw",
         "hit_ground_sound": "mob.endermen.portal",
         "gravity": 0.005,
         "angle_offset": 0.0,
         "inertia": 1,
         "liquid_inertia": 1
       },
-	    "minecraft:physics": {},
+      "minecraft:physics": {},
       "minecraft:pushable": {
         "is_pushable": true,
         "is_pushable_by_piston": true
@@ -57,9 +59,11 @@
       }
     },
     "events": {
-      "poke:despawn":{
+      "poke:despawn": {
         "add": {
-          "component_groups": ["poke:despawn"]
+          "component_groups": [
+            "poke:despawn"
+          ]
         }
       }
     }

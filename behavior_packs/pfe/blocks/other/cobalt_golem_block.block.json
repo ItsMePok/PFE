@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.60",
+  "format_version": "1.21.70",
   "minecraft:block": {
     "description": {
       "identifier": "poke:cobalt_golem_block",
@@ -8,10 +8,11 @@
       }
     },
     "components": {
-			"minecraft:redstone_conductivity": {
-				"redstone_conductor": true,
-				"allows_wire_to_step_down": true
-			},
+      "minecraft:display_name": "%poke_pfe.cobalt_golem_block\n%poke_pfe.tag",
+      "minecraft:redstone_conductivity": {
+        "redstone_conductor": true,
+        "allows_wire_to_step_down": true
+      },
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 3
       },
@@ -19,14 +20,14 @@
         "explosion_resistance": 60
       },
       "tag:pfe": {},
-			"tag:metal": {},
-			"tag:minecraft:metal": {},
-			"tag:stone_pick_diggable":{},
-			"tag:minecraft:is_pickaxe_item_destructible":{},
+      "tag:metal": {},
+      "tag:minecraft:metal": {},
+      "tag:stone_pick_diggable": {},
+      "tag:minecraft:is_pickaxe_item_destructible": {},
       "minecraft:map_color": "#f1da09",
-			"minecraft:custom_components": [
-				"poke:cc_block_interact"
-			]
+      "minecraft:custom_components": [
+        "poke:cc_block_interact"
+      ]
     }
   }
 }

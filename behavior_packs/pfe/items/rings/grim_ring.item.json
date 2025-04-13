@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:grim_ring",
@@ -8,15 +8,20 @@
 			}
 		},
 		"components": {
+			"minecraft:display_name": {
+				"value": "%poke_pfe.grim_ring\n%poke_pfe.tag"
+			},
 			"minecraft:repairable": {
 				"repair_items": [
 					{
-						"items": ["poke:repair_core"],
+						"items": [
+							"poke:repair_core"
+						],
 						"repair_amount": "query.max_durability"
 					}
 				]
 			},
-			"minecraft:icon":"poke_grim_ring",
+			"minecraft:icon": "poke_grim_ring",
 			"minecraft:max_stack_size": 1,
 			"minecraft:cooldown": {
 				"category": "poke:grim_ring",
@@ -33,10 +38,12 @@
 				"slot": "flintsteel",
 				"value": 16
 			},
-			"minecraft:tags": {"tags": [
-				"pfe:Command:function poke/pfe/grim_ring:pfeCommandEnd"
-			]},
-			"minecraft:custom_components":[
+			"minecraft:tags": {
+				"tags": [
+					"pfe:Command:function poke/pfe/grim_ring:pfeCommandEnd"
+				]
+			},
+			"minecraft:custom_components": [
 				"poke:cc_on_use",
 				"poke:normalMining"
 			],

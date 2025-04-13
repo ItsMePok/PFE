@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:astral_haxel",
@@ -8,6 +8,9 @@
 			}
 		},
 		"components": {
+			"minecraft:display_name": {
+				"value": "%poke_pfe.astral_haxel\n%poke_pfe.tag"
+			},
 			"minecraft:tags": {
 				"tags": [
 					"pfe:HaxelMining:{\"radius\":{\"x\":5,\"y\":7,\"z\":5},\"canBreakLiquids\":false,\"canBreakBedrock\":false}:pfeHaxelMiningEnd",

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:item_voider",
@@ -8,6 +8,9 @@
 			}
 		},
 		"components": {
+			"minecraft:display_name": {
+				"value": "%poke_pfe.item_voider\n%poke_pfe.tag"
+			},
 			"minecraft:icon": "poke_item_voider",
 			"minecraft:durability": {
 				"max_durability": 450,
@@ -18,7 +21,7 @@
 			},
 			"minecraft:max_stack_size": 1,
 			"minecraft:enchantable": {
-				"slot": "shield",
+				"slot": "flintsteel",
 				"value": 20
 			},
 			"minecraft:repairable": {
@@ -34,6 +37,12 @@
 							"poke:void_ingot"
 						],
 						"repair_amount": "query.max_durability*0.25"
+					},
+					{
+						"items": [
+							"poke:void_nugget"
+						],
+						"repair_amount": "query.max_durability*0.028"
 					}
 				]
 			},

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:robo_golem",
@@ -9,7 +9,7 @@
 			"runtime_identifier": "minecraft:iron_golem"
 		},
 		"component_groups": {
-			"timer":{
+			"timer": {
 				"minecraft:timer": {
 					"time": 1800,
 					"looping": true,
@@ -19,14 +19,13 @@
 					}
 				}
 			},
-			"despawn":{
+			"despawn": {
 				"minecraft:instant_despawn": {
 					"remove_child_entities": true
 				}
 			}
 		},
 		"components": {
-			
 			"minecraft:on_hurt_by_player": {
 				"event": "hurt_sound"
 			},
@@ -49,7 +48,7 @@
 				]
 			},
 			"minecraft:nameable": {
-				"name_actions":{
+				"name_actions": {
 					"name_filter": "despawn",
 					"on_named": {
 						"event": "poke:despawn",
@@ -145,7 +144,7 @@
 			"minecraft:movement": {
 				"value": 0.3
 			},
-			"minecraft:fire_immune":{},
+			"minecraft:fire_immune": {},
 			"minecraft:knockback_resistance": {
 				"value": 0.75
 			},
@@ -229,7 +228,7 @@
 						"cooldown_time": 1,
 						"max_activation_range": 100,
 						"min_activation_range": 1,
-						"start_sound_event":"lt.reaction.fireball",
+						"start_sound_event": "lt.reaction.fireball",
 						"weight": 1
 					}
 				]
@@ -331,16 +330,18 @@
 					}
 				]
 			},
-			"poke:renamed":{
+			"poke:renamed": {
 				"remove": {
 					"component_groups": [
 						"timer"
 					]
 				}
 			},
-			"poke:despawn":{
+			"poke:despawn": {
 				"add": {
-					"component_groups": ["despawn"]
+					"component_groups": [
+						"despawn"
+					]
 				}
 			}
 		}

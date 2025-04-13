@@ -2,7 +2,7 @@ import { ItemComponentUseEvent, world } from "@minecraft/server";
 import { ActionFormData } from "@minecraft/server-ui";
 
 export {
-  PFEDiableConfigOptions,
+  PFEDisableConfigOptions,
   PFEDisableConfigName,
   PFEDisableConfigDefault,
   PFEDisableConfigMainMenu,
@@ -10,7 +10,7 @@ export {
 }
 let PFEDisableConfigName = "poke_pfe:disable_config"
 let PFEDisableConfigVersion = 1
-interface PFEDiableConfigOptions {
+interface PFEDisableConfigOptions {
   "v": number
   "quantumTeleporter": boolean
   "deathArmorRadius": boolean
@@ -22,7 +22,7 @@ interface PFEDiableConfigOptions {
   "kapowRing": boolean
 }
 let PFEDisabledOnUseItems = ["poke:sundial", "poke:quantum_teleporter", "poke:kapow_ring"]
-const PFEDisableConfigDefault: PFEDiableConfigOptions = {
+const PFEDisableConfigDefault: PFEDisableConfigOptions = {
   "v": PFEDisableConfigVersion,
   "bounty": true,
   "cactusArmorRadius": true,
@@ -36,11 +36,11 @@ const PFEDisableConfigDefault: PFEDiableConfigOptions = {
 function PFEDisableConfigMainMenu(data: ItemComponentUseEvent) {
   let player = data.source
   let UI = new ActionFormData()
-  let options: PFEDiableConfigOptions = JSON.parse(world.getDynamicProperty(PFEDisableConfigName)!.toString())
+  let options: PFEDisableConfigOptions = JSON.parse(world.getDynamicProperty(PFEDisableConfigName)!.toString())
   if (options.quantumTeleporter) {
-    UI.button({ rawtext: [{ translate: `item.poke_pfe.quantum_teleporter` }, { text: ":§a\n" }, { translate: `translation.poke_pfe.enabled` }] }, `textures/poke/pfe/quantum_teleporter`)
+    UI.button({ rawtext: [{ translate: `poke_pfe.quantum_teleporter` }, { text: ":§a\n" }, { translate: `translation.poke_pfe.enabled` }] }, `textures/poke/pfe/quantum_teleporter`)
   } else {
-    UI.button({ rawtext: [{ translate: `item.poke_pfe.quantum_teleporter` }, { text: ":§c\n" }, { translate: `translation.poke_pfe.disabled` }] }, `textures/poke/pfe/quantum_teleporter`)
+    UI.button({ rawtext: [{ translate: `poke_pfe.quantum_teleporter` }, { text: ":§c\n" }, { translate: `translation.poke_pfe.disabled` }] }, `textures/poke/pfe/quantum_teleporter`)
   }
   /*if (options.deathArmorRadius){
     UI.button({rawtext:[{translate:`translation.poke_pfe.death_armor_radius`},{text:":§a\n"},{translate:`translation.poke_pfe.enabled`}]},`textures/poke/pfe/death_helmet`)
@@ -53,29 +53,29 @@ function PFEDisableConfigMainMenu(data: ItemComponentUseEvent) {
     UI.button({rawtext:[{translate:`translation.poke_pfe.cactus_armor_radius`},{text:":§c\n"},{translate:`translation.poke_pfe.disabled`}]},`textures/poke/pfe/cactus_helmet`)
   }*/
   if (options.kapowRing) {
-    UI.button({ rawtext: [{ translate: `item.poke_pfe.kapow_ring` }, { text: ":§a\n" }, { translate: `translation.poke_pfe.enabled` }] }, `textures/poke/pfe/kapow_ring`)
+    UI.button({ rawtext: [{ translate: `poke_pfe.kapow_ring` }, { text: ":§a\n" }, { translate: `translation.poke_pfe.enabled` }] }, `textures/poke/pfe/kapow_ring`)
   } else {
-    UI.button({ rawtext: [{ translate: `item.poke_pfe.kapow_ring` }, { text: ":§c\n" }, { translate: `translation.poke_pfe.disabled` }] }, `textures/poke/pfe/kapow_ring`)
+    UI.button({ rawtext: [{ translate: `poke_pfe.kapow_ring` }, { text: ":§c\n" }, { translate: `translation.poke_pfe.disabled` }] }, `textures/poke/pfe/kapow_ring`)
   }
   if (options.nukeRing) {
-    UI.button({ rawtext: [{ translate: `item.poke_pfe.nuke_ring` }, { text: ":§a\n" }, { translate: `translation.poke_pfe.enabled` }] }, `textures/poke/pfe/nuke_ring`)
+    UI.button({ rawtext: [{ translate: `poke_pfe.nuke_ring` }, { text: ":§a\n" }, { translate: `translation.poke_pfe.enabled` }] }, `textures/poke/pfe/nuke_ring`)
   } else {
-    UI.button({ rawtext: [{ translate: `item.poke_pfe.nuke_ring` }, { text: ":§c\n" }, { translate: `translation.poke_pfe.disabled` }] }, `textures/poke/pfe/nuke_ring`)
+    UI.button({ rawtext: [{ translate: `poke_pfe.nuke_ring` }, { text: ":§c\n" }, { translate: `translation.poke_pfe.disabled` }] }, `textures/poke/pfe/nuke_ring`)
   }
   if (options.sundial) {
-    UI.button({ rawtext: [{ translate: `item.poke_pfe.sundial` }, { text: ":§a\n" }, { translate: `translation.poke_pfe.enabled` }] }, `textures/poke/pfe/sundial_1`)
+    UI.button({ rawtext: [{ translate: `poke_pfe.sundial` }, { text: ":§a\n" }, { translate: `translation.poke_pfe.enabled` }] }, `textures/poke/pfe/sundial_1`)
   } else {
-    UI.button({ rawtext: [{ translate: `item.poke_pfe.sundial` }, { text: ":§c\n" }, { translate: `translation.poke_pfe.disabled` }] }, `textures/poke/pfe/sundial_1`)
+    UI.button({ rawtext: [{ translate: `poke_pfe.sundial` }, { text: ":§c\n" }, { translate: `translation.poke_pfe.disabled` }] }, `textures/poke/pfe/sundial_1`)
   }
   if (options.witherSpawner) {
-    UI.button({ rawtext: [{ translate: `item.poke_pfe.wither_spawner` }, { text: ":§a\n" }, { translate: `translation.poke_pfe.enabled` }] }, `textures/poke/pfe/wither_spawner`)
+    UI.button({ rawtext: [{ translate: `poke_pfe.wither_spawner` }, { text: ":§a\n" }, { translate: `translation.poke_pfe.enabled` }] }, `textures/poke/pfe/wither_spawner`)
   } else {
-    UI.button({ rawtext: [{ translate: `item.poke_pfe.wither_spawner` }, { text: ":§c\n" }, { translate: `translation.poke_pfe.disabled` }] }, `textures/poke/pfe/wither_spawner`)
+    UI.button({ rawtext: [{ translate: `poke_pfe.wither_spawner` }, { text: ":§c\n" }, { translate: `translation.poke_pfe.disabled` }] }, `textures/poke/pfe/wither_spawner`)
   }
   if (options.bounty) {
-    UI.button({ rawtext: [{ translate: `item.poke_pfe.bounty` }, { text: ":§a\n" }, { translate: `translation.poke_pfe.enabled` }] }, `textures/poke/pfe/bounty`)
+    UI.button({ rawtext: [{ translate: `poke_pfe.bounty` }, { text: ":§a\n" }, { translate: `translation.poke_pfe.enabled` }] }, `textures/poke/pfe/bounty`)
   } else {
-    UI.button({ rawtext: [{ translate: `item.poke_pfe.bounty` }, { text: ":§c\n" }, { translate: `translation.poke_pfe.disabled` }] }, `textures/poke/pfe/bounty`)
+    UI.button({ rawtext: [{ translate: `poke_pfe.bounty` }, { text: ":§c\n" }, { translate: `translation.poke_pfe.disabled` }] }, `textures/poke/pfe/bounty`)
   }
 
   UI.show(player).then(response => {

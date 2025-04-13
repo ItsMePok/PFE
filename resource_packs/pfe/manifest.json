@@ -1,13 +1,13 @@
 {
 	"header": {
-		"name": "v1.2.81 §uPFE §aRP§r",
+		"name": "v1.2.82 §uPFE §aRP§r",
 		"description": "pack.description",
 		"pack_scope": "any",
-		"uuid": "d18db53c-7beb-4e6e-83e9-5698a43ec016",
+		"uuid": "d1a5138f-0fdb-4632-b917-0fc80e2c76a9",
 		"version": [
 			1,
 			2,
-			81
+			82
 		],
 		"min_engine_version": [
 			1,
@@ -29,11 +29,11 @@
 	],
 	"dependencies": [
 		{ //BP Manifest
-			"uuid": "75d47eea-0580-4628-be2d-30cd7f9f942b",
+			"uuid": "0ddf2872-ef4b-4bd3-a5c6-7038a26d7457",
 			"version": [
 				1,
 				2,
-				81
+				82
 			]
 		}
 	],

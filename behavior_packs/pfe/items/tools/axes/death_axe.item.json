@@ -1,0 +1,87 @@
+{
+	"format_version": "1.21.70",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke:death_axe",
+			"menu_category": {
+				"category": "equipment",
+				"group": "minecraft:itemGroup.name.axe"
+			}
+		},
+		"components": {
+			"minecraft:display_name": {
+				"value": "%poke_pfe.death_axe\n%poke_pfe.tag"
+			},
+			"minecraft:custom_components": [
+				"poke:normalMining"
+			],
+			"minecraft:hand_equipped": true,
+			"minecraft:max_stack_size": 1,
+			"minecraft:durability": {
+				"max_durability": 2570,
+				"damage_chance": {
+					"max": 100,
+					"min": 70
+				}
+			},
+			"minecraft:icon": {
+				"textures": {
+					"default": "poke_death_axe",
+					"dyed": "poke_death_axe"
+				}
+			},
+			"minecraft:dyeable": {
+				"default_color": "#a6ffe7"
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"poke:repair_core"
+						],
+						"repair_amount": "query.max_durability"
+					},
+					{
+						"items": [
+							"poke:death_ingot"
+						],
+						"repair_amount": "q.max_durability*0.25"
+					},
+					{
+						"items": [
+							"poke:death_nugget"
+						],
+						"repair_amount": "q.max_durability*0.028"
+					}
+				]
+			},
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:netherite_tier",
+					"minecraft:is_axe",
+					"minecraft:digger",
+					"minecraft:is_tool",
+					"pfe:axe"
+				]
+			},
+			"minecraft:damage": {
+				"value": 15
+			},
+			"minecraft:enchantable": {
+				"value": 23,
+				"slot": "axe"
+			},
+			"minecraft:digger": {
+				"use_efficiency": true,
+				"destroy_speeds": [
+					{
+						"block": {
+							"tags": "query.any_tag('minecraft:diamond_tier_destructible','minecraft:netherite_tier_destructible','axe','minecraft:wood_tier_destructible','minecraft:stone_tier_destructible','minecraft:gold_tier_destructible','minecraft:iron_tier_destructible','minecraft:is_axe_item_destructible','stone','metal','rail','stone_pick_diggable','wood_pick_diggable','iron_pick_diggable')"
+						},
+						"speed": 24
+					}
+				]
+			}
+		}
+	}
+}

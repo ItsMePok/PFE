@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:seat",
@@ -8,8 +8,8 @@
 			"is_experimental": false,
 			"runtime_identifier": "minecraft:snowball"
 		},
-		"components":{
-			"minecraft:transient":{},
+		"components": {
+			"minecraft:transient": {},
 			"minecraft:collision_box": {
 				"height": 0.01,
 				"width": 0.01
@@ -17,12 +17,14 @@
 			"minecraft:rideable": {
 				"controlling_seat": 0,
 				"crouching_skip_interact": true,
-				"family_types":["player"],
+				"family_types": [
+					"player"
+				],
 				"interact_text": "action.poke.seat.sit",
 				"pull_in_entities": false,
 				"rider_can_interact": false,
 				"seat_count": 1,
-				"seats":{
+				"seats": {
 					"position": [
 						0,
 						-0.125,
@@ -47,7 +49,10 @@
 				"is_pushable_by_piston": true
 			},
 			"minecraft:despawn": {
-				"despawn_from_distance": {"min_distance": 2,"max_distance": 2},
+				"despawn_from_distance": {
+					"min_distance": 2,
+					"max_distance": 2
+				},
 				"filters": {
 					"any_of": [
 						{
@@ -61,21 +66,23 @@
 			}
 		},
 		"events": {
-			"poke:block_check":{
+			"poke:block_check": {
 				"queue_command": {
-					"command":[
+					"command": [
 						"execute as @s at @s if block ~~~ air run kill @s"
 					]
 				}
 			},
-			"poke:despawn":{
+			"poke:despawn": {
 				"add": {
-					"component_groups": ["poke:despawn"]
+					"component_groups": [
+						"poke:despawn"
+					]
 				}
 			}
 		},
 		"component_groups": {
-			"poke:despawn":{
+			"poke:despawn": {
 				"minecraft:instant_despawn": {
 					"remove_child_entities": true
 				}

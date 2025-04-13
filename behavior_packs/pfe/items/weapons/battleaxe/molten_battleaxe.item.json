@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.60",
+  "format_version": "1.21.70",
   "minecraft:item": {
     "description": {
       "identifier": "poke:molten_battleaxe",
@@ -8,13 +8,22 @@
       }
     },
     "components": {
-      "minecraft:icon":"poke_molten_battleaxe",
+      "minecraft:display_name": {
+        "value": "%poke_pfe.molten_battleaxe\n%poke_pfe.tag"
+      },
+      "minecraft:icon": "poke_molten_battleaxe",
       "minecraft:max_stack_size": 1,
       "minecraft:hand_equipped": true,
       "minecraft:durability": {
-        "max_durability": 2650,"damage_chance": {"max": 100,"min": 60}
+        "max_durability": 2650,
+        "damage_chance": {
+          "max": 100,
+          "min": 60
+        }
       },
-      "minecraft:damage": {"value": 21},
+      "minecraft:damage": {
+        "value": 21
+      },
       "minecraft:enchantable": {
         "value": 15,
         "slot": "sword"
@@ -40,13 +49,15 @@
         "category": "poke:axe_use",
         "duration": 2
       },
-			"minecraft:tags": {"tags": [
-				"pfe:Command:function poke/pfe/molten_battleaxe:pfeCommandEnd"
-			]},
-			"minecraft:custom_components":[
-				"poke:cc_on_use",
-				"poke:normalMining"
-			],
+      "minecraft:tags": {
+        "tags": [
+          "pfe:Command:function poke/pfe/molten_battleaxe:pfeCommandEnd"
+        ]
+      },
+      "minecraft:custom_components": [
+        "poke:cc_on_use",
+        "poke:normalMining"
+      ],
       "minecraft:use_modifiers": {
         "use_duration": 0,
         "movement_modifier": 1

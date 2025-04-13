@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:raw_demonic",
@@ -8,7 +8,10 @@
 			}
 		},
 		"components": {
-			"minecraft:icon":"poke_raw_demonic"
+			"minecraft:display_name": {
+				"value": "%poke_pfe.raw_demonic\n%poke_pfe.tag"
+			},
+			"minecraft:icon": "poke_raw_demonic"
 		}
 	}
 }

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:apollo_the_snake",
@@ -8,14 +8,17 @@
 			}
 		},
 		"components": {
-      "minecraft:rarity":"common",
-      "minecraft:tags": {
-        "tags": [
-          "novelty:is_hat"
-        ]
-      },
+			"minecraft:display_name": {
+				"value": "%poke_pfe.apollo_the_snake\n%poke_pfe.tag"
+			},
+			"minecraft:rarity": "common",
+			"minecraft:tags": {
+				"tags": [
+					"novelty:is_hat"
+				]
+			},
 			"minecraft:max_stack_size": 1,
-			"minecraft:icon":{
+			"minecraft:icon": {
 				"textures": {
 					"default": "poke_apollo_the_snake"
 				}

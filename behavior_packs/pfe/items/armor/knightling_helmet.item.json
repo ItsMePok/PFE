@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:knightling_helmet",
@@ -8,7 +8,10 @@
 			}
 		},
 		"components": {
-			"minecraft:rarity":"uncommon",
+			"minecraft:display_name": {
+				"value": "%poke_pfe.knightling_helmet\n%poke_pfe.tag"
+			},
+			"minecraft:rarity": "uncommon",
 			"minecraft:tags": {
 				"tags": [
 					"minecraft:is_armor",
@@ -28,7 +31,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon":"poke_knightling_helmet",
+			"minecraft:icon": "poke_knightling_helmet",
 			"minecraft:wearable": {
 				"slot": "slot.armor.head",
 				"protection": 6

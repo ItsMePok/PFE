@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:pumpkin_spice",
@@ -9,11 +9,14 @@
 			}
 		},
 		"components": {
+			"minecraft:display_name": {
+				"value": "%poke_pfe.pumpkin_spice\n%poke_pfe.tag"
+			},
 			"minecraft:custom_components": [
 				"poke:consumeEffects"
 			],
 			"minecraft:max_stack_size": 64,
-			"minecraft:icon":"poke_pumpkin_spice",
+			"minecraft:icon": "poke_pumpkin_spice",
 			"minecraft:food": {
 				"nutrition": 10,
 				"saturation_modifier": 0.25,

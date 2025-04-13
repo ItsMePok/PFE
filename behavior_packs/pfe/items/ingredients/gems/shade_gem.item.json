@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:shade_gem",
@@ -8,8 +8,10 @@
 			}
 		},
 		"components": {
-			"minecraft:hover_text_color":"green",
-			"minecraft:icon":"poke_shade_gem"
+			"minecraft:display_name": {
+				"value": "%poke_pfe.shade_gem\n%poke_pfe.tag"
+			},
+			"minecraft:icon": "poke_shade_gem"
 		}
 	}
 }

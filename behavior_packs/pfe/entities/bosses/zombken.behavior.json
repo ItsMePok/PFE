@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:zombken",
@@ -8,19 +8,21 @@
 			"is_experimental": false
 		},
 		"component_groups": {
-			"despawn_normal":{
+			"despawn_normal": {
 				"minecraft:despawn": {
 					"despawn_from_inactivity": true,
-					"despawn_from_distance": {"max_distance": 128},
+					"despawn_from_distance": {
+						"max_distance": 128
+					},
 					"min_range_inactivity_timer": 100
 				}
 			},
-			"despawn":{
+			"despawn": {
 				"minecraft:instant_despawn": {
 					"remove_child_entities": false
 				}
 			},
-			"timer":{
+			"timer": {
 				"minecraft:timer": {
 					"time": 1800,
 					"looping": true,
@@ -30,7 +32,7 @@
 					}
 				}
 			},
-			"persistent":{
+			"persistent": {
 				"minecraft:persistent": {}
 			}
 		},
@@ -39,7 +41,7 @@
 				"emit_flap": true
 			},
 			"minecraft:nameable": {
-				"name_actions":{
+				"name_actions": {
 					"name_filter": "despawn",
 					"on_named": {
 						"event": "poke:despawn",
@@ -174,7 +176,11 @@
 					{
 						"width": 0.8,
 						"height": 2.3,
-						"pivot": [0, 0.5, 0.1]
+						"pivot": [
+							0,
+							0.5,
+							0.1
+						]
 					}
 				]
 			}
@@ -188,12 +194,14 @@
 					]
 				}
 			},
-			"poke:despawn":{
+			"poke:despawn": {
 				"add": {
-					"component_groups": ["despawn"]
+					"component_groups": [
+						"despawn"
+					]
 				}
 			},
-			"poke:renamed":{
+			"poke:renamed": {
 				"remove": {
 					"component_groups": [
 						"timer"

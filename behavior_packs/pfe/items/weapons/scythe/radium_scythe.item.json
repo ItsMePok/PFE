@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:radium_scythe",
@@ -8,7 +8,10 @@
 			}
 		},
 		"components": {
-			"minecraft:custom_components":[
+			"minecraft:display_name": {
+				"value": "%poke_pfe.radium_scythe\n%poke_pfe.tag"
+			},
+			"minecraft:custom_components": [
 				"poke:normalMining",
 				"poke:hitEffects"
 			],
@@ -37,8 +40,10 @@
 					"min": 80
 				}
 			},
-			"minecraft:damage": {"value": 12},
-			"minecraft:icon":"poke_radium_scythe",
+			"minecraft:damage": {
+				"value": 12
+			},
+			"minecraft:icon": "poke_radium_scythe",
 			"minecraft:enchantable": {
 				"value": 75,
 				"slot": "sword"
@@ -46,9 +51,18 @@
 			"minecraft:can_destroy_in_creative": false,
 			"minecraft:digger": {
 				"destroy_speeds": [
-					{"block":"minecraft:web","speed": 60},
-					{"block":"minecraft:bamboo_sapling","speed": 60},
-					{"block":"minecraft:bamboo","speed": 60}
+					{
+						"block": "minecraft:web",
+						"speed": 60
+					},
+					{
+						"block": "minecraft:bamboo_sapling",
+						"speed": 60
+					},
+					{
+						"block": "minecraft:bamboo",
+						"speed": 60
+					}
 				]
 			}
 		}

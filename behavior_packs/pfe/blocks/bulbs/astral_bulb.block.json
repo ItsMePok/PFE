@@ -1,13 +1,19 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:astral_bulb",
 			"states": {
-				"pfe:color":{"values": {"min": 0,"max": 15}}//Data Value is used to change the color, works best when only using 1 data value/state 
+				"pfe:color": {
+					"values": {
+						"min": 0,
+						"max": 15
+					}
+				} //Data Value is used to change the color, works best when only using 1 data value/state 
 			}
 		},
 		"components": {
+			"minecraft:display_name": "%poke_pfe.astral_bulb\n%poke_pfe.tag",
 			"minecraft:redstone_conductivity": {
 				"redstone_conductor": true,
 				"allows_wire_to_step_down": true
@@ -16,7 +22,14 @@
 			"minecraft:selection_box": true,
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 5,
-				"item_specific_speeds": [{"item":{"tags": "q.any_tag('minecraft:is_pickaxe')"},"destroy_speed": 0.75}]
+				"item_specific_speeds": [
+					{
+						"item": {
+							"tags": "q.any_tag('minecraft:is_pickaxe')"
+						},
+						"destroy_speed": 0.75
+					}
+				]
 			},
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 12
@@ -24,12 +37,12 @@
 			"tag:pfe": {},
 			"tag:metal": {},
 			"tag:minecraft:metal": {},
-			"tag:stone_pick_diggable":{},
-			"tag:minecraft:is_pickaxe_item_destructible":{},
+			"tag:stone_pick_diggable": {},
+			"tag:minecraft:is_pickaxe_item_destructible": {},
 			"minecraft:light_emission": 15,
 			"minecraft:map_color": "#2c0146",
-			"minecraft:custom_components":[
-				"poke:cc_bulbs"//custom component used to change the data value
+			"minecraft:custom_components": [
+				"poke:cc_bulbs" //custom component used to change the data value
 			]
 		}
 	}

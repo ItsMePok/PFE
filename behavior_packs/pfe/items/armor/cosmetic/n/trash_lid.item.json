@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:trash_lid",
@@ -8,13 +8,16 @@
 			}
 		},
 		"components": {
-      "minecraft:rarity":"common",
-      "minecraft:tags": {
-        "tags": [
-          "novelty:is_hat"
-        ]
-      },
-			"minecraft:icon":{
+			"minecraft:display_name": {
+				"value": "%poke_pfe.trash_lid\n%poke_pfe.tag"
+			},
+			"minecraft:rarity": "common",
+			"minecraft:tags": {
+				"tags": [
+					"novelty:is_hat"
+				]
+			},
+			"minecraft:icon": {
 				"textures": {
 					"default": "poke_trash_lid"
 				}

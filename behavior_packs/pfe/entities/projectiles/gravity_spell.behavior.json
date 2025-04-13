@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:gravity_spell",
@@ -8,15 +8,17 @@
 			"is_experimental": false
 		},
 		"component_groups": {
-			"poke:despawn":{"minecraft:instant_despawn":{}}
+			"poke:despawn": {
+				"minecraft:instant_despawn": {}
+			}
 		},
 		"components": {
-			"minecraft:behavior.knockback_roar":{
-				"duration":0.5,
-				"knockback_range":10,
-				"knockback_vertical_strength":-1,
-				"knockback_horizontal_strength":-4,
-				"knockback_damage":0,
+			"minecraft:behavior.knockback_roar": {
+				"duration": 0.5,
+				"knockback_range": 10,
+				"knockback_vertical_strength": -1,
+				"knockback_horizontal_strength": -4,
+				"knockback_damage": 0,
 				"knockback_filters": {
 					"none_of": [
 						{
@@ -36,14 +38,14 @@
 				"inertia": 0.95,
 				"power": 2,
 				"is_dangerous": true,
-				"should_bounce":true,
+				"should_bounce": true,
 				"uncertainty_multiplier": 1.1,
 				"uncertainty_base": 1,
 				"anchor": 1,
 				"stop_on_hurt": true
 			},
 			"minecraft:physics": {
-				"has_gravity":false
+				"has_gravity": false
 			},
 			"minecraft:pushable": {
 				"is_pushable": false,
@@ -61,15 +63,17 @@
 				"time": 20,
 				"looping": true,
 				"time_down_event": {
-				"event": "poke:despawn",
-				"target": "self"
+					"event": "poke:despawn",
+					"target": "self"
 				}
 			}
 		},
 		"events": {
-			"poke:despawn":{
+			"poke:despawn": {
 				"add": {
-				"component_groups": ["poke:despawn"]
+					"component_groups": [
+						"poke:despawn"
+					]
 				}
 			}
 		}

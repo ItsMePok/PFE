@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.60",
+  "format_version": "1.21.70",
   "minecraft:item": {
     "description": {
       "identifier": "poke:goggles",
@@ -8,7 +8,10 @@
       }
     },
     "components": {
-      "minecraft:rarity":"common",
+      "minecraft:display_name": {
+        "value": "%poke_pfe.goggles\n%poke_pfe.tag"
+      },
+      "minecraft:rarity": "common",
       "minecraft:tags": {
         "tags": [
           "novelty:is_face"
@@ -18,7 +21,7 @@
         "slot": "slot.armor.head"
       },
       "minecraft:max_stack_size": 1,
-      "minecraft:icon":{
+      "minecraft:icon": {
         "textures": {
           "default": "poke_goggles"
         }

@@ -1,13 +1,22 @@
 {
-  "format_version": "1.21.60",
+  "format_version": "1.21.70",
   "minecraft:item": {
     "description": {
       "identifier": "poke:cassette_lefttobloom"
     },
     "components": {
-      "minecraft:icon":"poke_cassette_lefttobloom",
-      "minecraft:custom_components": ["poke:cas"],
-      "minecraft:tags": {"tags": ["minecraft:music_disc"]}
+      "minecraft:display_name": {
+        "value": "%poke_pfe.cassette\n%poke_pfe.tag"
+      },
+      "minecraft:icon": "poke_cassette_lefttobloom",
+      "minecraft:custom_components": [
+        "poke:cas"
+      ],
+      "minecraft:tags": {
+        "tags": [
+          "minecraft:music_disc"
+        ]
+      }
     }
   }
 }

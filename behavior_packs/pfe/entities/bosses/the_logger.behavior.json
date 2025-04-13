@@ -1,15 +1,14 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:the_logger",
 			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false
-			
 		},
 		"component_groups": {
-			"timer":{
+			"timer": {
 				"minecraft:timer": {
 					"time": 1800,
 					"looping": true,
@@ -19,7 +18,7 @@
 					}
 				}
 			},
-			"despawn":{
+			"despawn": {
 				"minecraft:instant_despawn": {
 					"remove_child_entities": true
 				}
@@ -66,7 +65,7 @@
 			"minecraft:knockback_resistance": {
 				"value": 1
 			},
-			"minecraft:loot":{
+			"minecraft:loot": {
 				"table": "loot_tables/poke/pfe/logger.loot.json"
 			},
 			"minecraft:physics": {
@@ -88,7 +87,11 @@
 					{
 						"width": 2.2,
 						"height": 4.5,
-						"pivot": [0, 2.25, 0]
+						"pivot": [
+							0,
+							2.25,
+							0
+						]
 					}
 				]
 			},
@@ -157,7 +160,7 @@
 				"on_death": 5000
 			},
 			"minecraft:nameable": {
-				"name_actions":{
+				"name_actions": {
 					"name_filter": "despawn",
 					"on_named": {
 						"event": "poke:despawn",
@@ -187,7 +190,7 @@
 				"randomize": [
 					{
 						"queue_command": {
-							"command":[
+							"command": [
 								"execute as @a[r=50] run music play record.creator 1 4"
 							]
 						},
@@ -195,7 +198,7 @@
 					},
 					{
 						"queue_command": {
-							"command":[
+							"command": [
 								"execute as @a[r=50] run music play poke.record.eldunknown 1 4"
 							]
 						},
@@ -210,16 +213,18 @@
 					]
 				}
 			},
-			"poke:renamed":{
+			"poke:renamed": {
 				"remove": {
 					"component_groups": [
 						"timer"
 					]
 				}
 			},
-			"poke:despawn":{
+			"poke:despawn": {
 				"add": {
-					"component_groups": ["despawn"]
+					"component_groups": [
+						"despawn"
+					]
 				}
 			}
 		}

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:ban_hammer_head",
@@ -8,8 +8,11 @@
 			}
 		},
 		"components": {
-			"minecraft:rarity":"uncommon",
-			"minecraft:icon":"poke_ban_hammer_head"
+			"minecraft:display_name": {
+				"value": "%poke_pfe.ban_hammer_head\n%poke_pfe.tag"
+			},
+			"minecraft:rarity": "uncommon",
+			"minecraft:icon": "poke_ban_hammer_head"
 		}
 	}
 }

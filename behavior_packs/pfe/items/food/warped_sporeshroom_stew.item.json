@@ -1,19 +1,21 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:warped_sporeshroom_stew",
 			"menu_category": {
-				"category": "equipment",
-				"group": "minecraft:itemGroup.name.miscFood"
+				"category": "equipment"
 			}
 		},
 		"components": {
+			"minecraft:display_name": {
+				"value": "%poke_pfe.warped_sporeshroom_stew\n%poke_pfe.tag"
+			},
 			"minecraft:custom_components": [
 				"poke:consumeEffects"
 			],
 			"minecraft:max_stack_size": 16,
-			"minecraft:icon":"poke_warped_spore_stew",
+			"minecraft:icon": "poke_warped_spore_stew",
 			"minecraft:food": {
 				"nutrition": 6,
 				"saturation_modifier": 1,

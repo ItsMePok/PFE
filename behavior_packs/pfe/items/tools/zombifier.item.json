@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:zombifier",
@@ -8,6 +8,9 @@
 			}
 		},
 		"components": {
+			"minecraft:display_name": {
+				"value": "%poke_pfe.zombifier\n%poke_pfe.tag"
+			},
 			"minecraft:durability": {
 				"max_durability": 1150
 			},
@@ -22,13 +25,23 @@
 				"poke:cc_on_use",
 				"poke:normalMining"
 			],
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"poke:repair_core"
+						],
+						"repair_amount": "query.max_durability"
+					}
+				]
+			},
 			"minecraft:use_modifiers": {
 				"use_duration": 0,
 				"movement_modifier": 1
 			},
 			"minecraft:tags": {
 				"tags": [
-					"pfe:Command:function poke/pfe/zombfier:pfeCommandEnd"
+					"pfe:Command:function poke/pfe/zombifier:pfeCommandEnd"
 				]
 			}
 		}

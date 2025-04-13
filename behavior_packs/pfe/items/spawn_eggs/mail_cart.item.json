@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:mail_cart",
@@ -8,12 +8,29 @@
 			}
 		},
 		"components": {
-			"minecraft:icon":"poke_mail_cart",
+			"minecraft:display_name": {
+				"value": "%poke_pfe.mail_cart\n%poke_pfe.tag"
+			},
+			"minecraft:icon": "poke_mail_cart",
 			"minecraft:entity_placer": {
-				"entity": "poke:mail_cart","dispense_on": ["minecraft:rail","minecraft:activator_rail","minecraft:detector_rail","golden_rail"],"use_on": ["minecraft:rail","minecraft:activator_rail","minecraft:detector_rail","golden_rail"]
+				"entity": "poke:mail_cart",
+				"dispense_on": [
+					"minecraft:rail",
+					"minecraft:activator_rail",
+					"minecraft:detector_rail",
+					"golden_rail"
+				],
+				"use_on": [
+					"minecraft:rail",
+					"minecraft:activator_rail",
+					"minecraft:detector_rail",
+					"golden_rail"
+				]
 			},
 			"minecraft:tags": {
-				"tags": ["minecraft:is_minecart"]
+				"tags": [
+					"minecraft:is_minecart"
+				]
 			}
 		}
 	}

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:rat",
@@ -9,7 +9,7 @@
 			"runtime_identifier": "minecraft:allay"
 		},
 		"component_groups": {
-			"despawn":{
+			"despawn": {
 				"minecraft:instant_despawn": {
 					"remove_child_entities": false
 				}
@@ -164,7 +164,11 @@
 					"can_get_scared": true,
 					"can_tempt_while_ridden": true,
 					"can_tempt_vertically": true,
-					"items": [{"item":"poke:cheese"}],
+					"items": [
+						{
+							"item": "poke:cheese"
+						}
+					],
 					"within_radius": 12,
 					"priority": 6,
 					"speed_multiplier": 0.8
@@ -234,7 +238,12 @@
 				"all_items_surplus_amount": -1,
 				"all_items_want_amount": -1,
 				"items": [
-					{"item":"poke:cheese","priority": 0,"want_amount": 1,"pickup_limit": 1}
+					{
+						"item": "poke:cheese",
+						"priority": 0,
+						"want_amount": 1,
+						"pickup_limit": 1
+					}
 				],
 				"singular_pickup": true
 			},
@@ -250,13 +259,28 @@
 			"minecraft:equipment": {
 				"table": "loot_tables/poke/pfe/rat_gear.loot.json",
 				"slot_drop_chance": [
-					{"slot": "slot.weapon.mainhand","drop_chance": 100},
-					{"slot":"slot.armor.head","drop_chance": 100},
-					{"slot":"slot.armor.feet","drop_chance": 100},
-					{"slot":"slot.armor.legs","drop_chance": 100},
-					{"slot":"slot.armor.chest","drop_chance": 100}
-					]
-				},
+					{
+						"slot": "slot.weapon.mainhand",
+						"drop_chance": 100
+					},
+					{
+						"slot": "slot.armor.head",
+						"drop_chance": 100
+					},
+					{
+						"slot": "slot.armor.feet",
+						"drop_chance": 100
+					},
+					{
+						"slot": "slot.armor.legs",
+						"drop_chance": 100
+					},
+					{
+						"slot": "slot.armor.chest",
+						"drop_chance": 100
+					}
+				]
+			},
 			"minecraft:game_event_movement_tracking": {
 				"emit_move": true
 			},
@@ -269,7 +293,7 @@
 				"delay_before_eating": 14
 			},
 			"minecraft:nameable": {
-				"name_actions":[
+				"name_actions": [
 					{
 						"name_filter": "despawn",
 						"on_named": {
@@ -280,8 +304,8 @@
 					{
 						"name_filter": "Remy",
 						"on_named": {
-						"event": "poke:renamed",
-						"target": "self"
+							"event": "poke:renamed",
+							"target": "self"
 						}
 					}
 				]
@@ -555,7 +579,7 @@
 					}
 				]
 			},
-			"poke:renamed":{
+			"poke:renamed": {
 				"add": {
 					"component_groups": [
 						"poke:rat_remy"

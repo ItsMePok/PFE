@@ -1,10 +1,13 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:mine_quest_1"
 		},
 		"components": {
+			"minecraft:display_name": {
+				"value": "%poke_pfe.mine_quest 1\n§7%poke_pfe.questDesc\n%poke_pfe.tag"
+			},
 			"minecraft:icon": "poke_mine_quest",
 			"minecraft:tags": {
 				"tags": [

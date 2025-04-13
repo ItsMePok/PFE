@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:mushroom_buddy",
@@ -15,7 +15,14 @@
 				},
 				"minecraft:ageable": {
 					"duration": -1,
-					"feed_items": ["beetroot","carrot","potato","poke:turnip","poke:golden_turnip","sweet_berries"],
+					"feed_items": [
+						"beetroot",
+						"carrot",
+						"potato",
+						"poke:turnip",
+						"poke:golden_turnip",
+						"sweet_berries"
+					],
 					"grow_up": {
 						"event": "minecraft:ageable_grow_up",
 						"target": "self"
@@ -43,7 +50,14 @@
 							"target": "baby"
 						}
 					},
-					"breed_items": ["beetroot","carrot","potato","poke:turnip","poke:golden_turnip","sweet_berries"]
+					"breed_items": [
+						"beetroot",
+						"carrot",
+						"potato",
+						"poke:turnip",
+						"poke:golden_turnip",
+						"sweet_berries"
+					]
 				}
 			},
 			"minecraft:mushroom_buddy_wild": {
@@ -53,7 +67,14 @@
 				},
 				"minecraft:tameable": {
 					"probability": 0.33,
-					"tame_items": ["beetroot","carrot","potato","poke:turnip","poke:golden_turnip","sweet_berries"],
+					"tame_items": [
+						"beetroot",
+						"carrot",
+						"potato",
+						"poke:turnip",
+						"poke:golden_turnip",
+						"sweet_berries"
+					],
 					"tame_event": {
 						"event": "minecraft:on_tame",
 						"target": "self"
@@ -69,13 +90,20 @@
 				"minecraft:health": {
 					"value": 30,
 					"max": 30
-				}, 
+				},
 				"minecraft:sittable": {},
 				"minecraft:behavior.tempt": {
 					"priority": 5,
 					"speed_multiplier": 0.5,
 					"within_radius": 16,
-					"items": ["beetroot","carrot","potato","poke:turnip","poke:golden_turnip","sweet_berries"]
+					"items": [
+						"beetroot",
+						"carrot",
+						"potato",
+						"poke:turnip",
+						"poke:golden_turnip",
+						"sweet_berries"
+					]
 				},
 				"minecraft:behavior.follow_owner": {
 					"priority": 4,
@@ -177,12 +205,15 @@
 			},
 			"minecraft:attack_damage": {
 				"value": 4
-			},"minecraft:loot": {
-				"table":"loot_tables/poke/pfe/mushroom_buddy.loot.json"
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/poke/pfe/mushroom_buddy.loot.json"
 			},
 			"minecraft:nameable": {},
 			"minecraft:type_family": {
-				"family": ["mob"]
+				"family": [
+					"mob"
+				]
 			},
 			"minecraft:breathable": {
 				"total_supply": 15,
@@ -191,15 +222,20 @@
 			"minecraft:collision_box": {
 				"width": 0.7,
 				"height": 1
-				},"minecraft:custom_hit_test": {
-					"hitboxes": [
-						{
-							"width": 0.7,
-							"height": 1,
-							"pivot": [0, 0.5, 0]
-						}
-					]
-				},
+			},
+			"minecraft:custom_hit_test": {
+				"hitboxes": [
+					{
+						"width": 0.7,
+						"height": 1,
+						"pivot": [
+							0,
+							0.5,
+							0
+						]
+					}
+				]
+			},
 			"minecraft:healable": {
 				"items": [
 					{
@@ -258,7 +294,6 @@
 					"deals_damage": "no"
 				}
 			},
-			
 			"minecraft:behavior.float": {
 				"priority": 0
 			},
@@ -278,7 +313,6 @@
 				"is_pushable": true,
 				"is_pushable_by_piston": true
 			}
-			
 		},
 		"events": {
 			"minecraft:entity_spawned": {
@@ -289,14 +323,20 @@
 								"weight": 3,
 								"remove": {},
 								"add": {
-									"component_groups": ["minecraft:mushroom_buddy_adult", "minecraft:mushroom_buddy_wild"]
+									"component_groups": [
+										"minecraft:mushroom_buddy_adult",
+										"minecraft:mushroom_buddy_wild"
+									]
 								}
 							},
 							{
 								"weight": 1,
 								"remove": {},
 								"add": {
-									"component_groups": ["minecraft:mushroom_buddy_baby", "minecraft:mushroom_buddy_wild"]
+									"component_groups": [
+										"minecraft:mushroom_buddy_baby",
+										"minecraft:mushroom_buddy_wild"
+									]
 								}
 							}
 						]
@@ -306,85 +346,113 @@
 							{
 								"weight": 15,
 								"add": {
-									"component_groups": ["minecraft:mushroom_buddy_white"]
+									"component_groups": [
+										"minecraft:mushroom_buddy_white"
+									]
 								}
 							},
 							{
 								"weight": 15,
 								"add": {
-									"component_groups": ["minecraft:mushroom_buddy_tuxedo"]
+									"component_groups": [
+										"minecraft:mushroom_buddy_tuxedo"
+									]
 								}
 							},
 							{
 								"weight": 15,
 								"add": {
-									"component_groups": ["minecraft:mushroom_buddy_red"]
+									"component_groups": [
+										"minecraft:mushroom_buddy_red"
+									]
 								}
 							},
 							{
 								"weight": 15,
 								"add": {
-									"component_groups": ["minecraft:mushroom_buddy_siamese"]
+									"component_groups": [
+										"minecraft:mushroom_buddy_siamese"
+									]
 								}
 							},
 							{
 								"weight": 15,
 								"add": {
-									"component_groups": ["minecraft:mushroom_buddy_british"]
+									"component_groups": [
+										"minecraft:mushroom_buddy_british"
+									]
 								}
 							},
 							{
 								"weight": 15,
 								"add": {
-									"component_groups": ["minecraft:mushroom_buddy_calico"]
+									"component_groups": [
+										"minecraft:mushroom_buddy_calico"
+									]
 								}
 							},
 							{
 								"weight": 15,
 								"add": {
-									"component_groups": ["minecraft:mushroom_buddy_persian"]
+									"component_groups": [
+										"minecraft:mushroom_buddy_persian"
+									]
 								}
 							},
 							{
 								"weight": 15,
 								"add": {
-									"component_groups": ["minecraft:mushroom_buddy_ragdoll"]
+									"component_groups": [
+										"minecraft:mushroom_buddy_ragdoll"
+									]
 								}
 							},
 							{
 								"weight": 15,
 								"add": {
-									"component_groups": ["minecraft:mushroom_buddy_tabby"]
+									"component_groups": [
+										"minecraft:mushroom_buddy_tabby"
+									]
 								}
 							},
 							{
 								"weight": 15,
 								"add": {
-									"component_groups": ["minecraft:mushroom_buddy_black"]
+									"component_groups": [
+										"minecraft:mushroom_buddy_black"
+									]
 								}
 							},
 							{
 								"weight": 15,
 								"add": {
-									"component_groups": ["minecraft:mushroom_buddy_jellie"]
+									"component_groups": [
+										"minecraft:mushroom_buddy_jellie"
+									]
 								}
 							},
 							{
 								"weight": 15,
 								"add": {
-									"component_groups": ["minecraft:mushroom_buddy_blackcat"]
+									"component_groups": [
+										"minecraft:mushroom_buddy_blackcat"
+									]
 								}
 							},
 							{
 								"weight": 15,
 								"add": {
-									"component_groups": ["minecraft:mushroom_buddy_redtabby"]
+									"component_groups": [
+										"minecraft:mushroom_buddy_redtabby"
+									]
 								}
 							},
 							{
 								"weight": 15,
 								"add": {
-									"component_groups": ["minecraft:mushroom_buddy_britishshorthair"]
+									"component_groups": [
+										"minecraft:mushroom_buddy_britishshorthair"
+									]
 								}
 							}
 						]
@@ -399,14 +467,20 @@
 								"weight": 3,
 								"remove": {},
 								"add": {
-									"component_groups": ["minecraft:mushroom_buddy_adult", "minecraft:mushroom_buddy_wild"]
+									"component_groups": [
+										"minecraft:mushroom_buddy_adult",
+										"minecraft:mushroom_buddy_wild"
+									]
 								}
 							},
 							{
 								"weight": 1,
 								"remove": {},
 								"add": {
-									"component_groups": ["minecraft:mushroom_buddy_baby", "minecraft:mushroom_buddy_wild"]
+									"component_groups": [
+										"minecraft:mushroom_buddy_baby",
+										"minecraft:mushroom_buddy_wild"
+									]
 								}
 							}
 						]
@@ -416,79 +490,105 @@
 							{
 								"weight": 15,
 								"add": {
-									"component_groups": ["minecraft:mushroom_buddy_tuxedo"]
+									"component_groups": [
+										"minecraft:mushroom_buddy_tuxedo"
+									]
 								}
 							},
 							{
 								"weight": 15,
 								"add": {
-									"component_groups": ["minecraft:mushroom_buddy_red"]
+									"component_groups": [
+										"minecraft:mushroom_buddy_red"
+									]
 								}
 							},
 							{
 								"weight": 15,
 								"add": {
-									"component_groups": ["minecraft:mushroom_buddy_siamese"]
+									"component_groups": [
+										"minecraft:mushroom_buddy_siamese"
+									]
 								}
 							},
 							{
 								"weight": 15,
 								"add": {
-									"component_groups": ["minecraft:mushroom_buddy_white"]
+									"component_groups": [
+										"minecraft:mushroom_buddy_white"
+									]
 								}
 							},
 							{
 								"weight": 15,
 								"add": {
-									"component_groups": ["minecraft:mushroom_buddy_british"]
+									"component_groups": [
+										"minecraft:mushroom_buddy_british"
+									]
 								}
 							},
 							{
 								"weight": 15,
 								"add": {
-									"component_groups": ["minecraft:mushroom_buddy_calico"]
+									"component_groups": [
+										"minecraft:mushroom_buddy_calico"
+									]
 								}
 							},
 							{
 								"weight": 15,
 								"add": {
-									"component_groups": ["minecraft:mushroom_buddy_persian"]
+									"component_groups": [
+										"minecraft:mushroom_buddy_persian"
+									]
 								}
 							},
 							{
 								"weight": 15,
 								"add": {
-									"component_groups": ["minecraft:mushroom_buddy_ragdoll"]
+									"component_groups": [
+										"minecraft:mushroom_buddy_ragdoll"
+									]
 								}
 							},
 							{
 								"weight": 15,
 								"add": {
-									"component_groups": ["minecraft:mushroom_buddy_tabby"]
+									"component_groups": [
+										"minecraft:mushroom_buddy_tabby"
+									]
 								}
 							},
 							{
 								"weight": 15,
 								"add": {
-									"component_groups": ["minecraft:mushroom_buddy_jellie"]
+									"component_groups": [
+										"minecraft:mushroom_buddy_jellie"
+									]
 								}
 							},
 							{
 								"weight": 15,
 								"add": {
-									"component_groups": ["minecraft:mushroom_buddy_blackcat"]
+									"component_groups": [
+										"minecraft:mushroom_buddy_blackcat"
+									]
 								}
 							},
 							{
 								"weight": 15,
 								"add": {
-									"component_groups": ["minecraft:mushroom_buddy_redtabby"]
+									"component_groups": [
+										"minecraft:mushroom_buddy_redtabby"
+									]
 								}
 							},
 							{
 								"weight": 15,
 								"add": {
-									"component_groups": ["minecraft:mushroom_buddy_britishshorthair"]
+									"component_groups": [
+										"minecraft:mushroom_buddy_britishshorthair"
+									]
 								}
 							}
 						]
@@ -499,7 +599,11 @@
 				"sequence": [
 					{
 						"add": {
-							"component_groups": ["minecraft:mushroom_buddy_adult", "minecraft:mushroom_buddy_wild", "minecraft:mushroom_buddy_black"]
+							"component_groups": [
+								"minecraft:mushroom_buddy_adult",
+								"minecraft:mushroom_buddy_wild",
+								"minecraft:mushroom_buddy_black"
+							]
 						}
 					}
 				]
@@ -514,29 +618,40 @@
 						},
 						"remove": {},
 						"add": {
-							"component_groups": ["minecraft:mushroom_buddy_baby", "minecraft:mushroom_buddy_tame"]
+							"component_groups": [
+								"minecraft:mushroom_buddy_baby",
+								"minecraft:mushroom_buddy_tame"
+							]
 						}
 					}
 				]
 			},
 			"minecraft:ageable_grow_up": {
 				"remove": {
-					"component_groups": ["minecraft:mushroom_buddy_baby"]
+					"component_groups": [
+						"minecraft:mushroom_buddy_baby"
+					]
 				},
 				"add": {
-					"component_groups": ["minecraft:mushroom_buddy_adult"]
+					"component_groups": [
+						"minecraft:mushroom_buddy_adult"
+					]
 				}
 			},
 			"minecraft:on_tame": {
 				"sequence": [
 					{
 						"remove": {
-							"component_groups": ["minecraft:mushroom_buddy_wild"]
+							"component_groups": [
+								"minecraft:mushroom_buddy_wild"
+							]
 						}
 					},
 					{
 						"add": {
-							"component_groups": ["minecraft:mushroom_buddy_tame"]
+							"component_groups": [
+								"minecraft:mushroom_buddy_tame"
+							]
 						}
 					}
 				]

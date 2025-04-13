@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:volt_ring",
@@ -8,6 +8,9 @@
 			}
 		},
 		"components": {
+			"minecraft:display_name": {
+				"value": "%poke_pfe.volt_ring\n%poke_pfe.tag"
+			},
 			"minecraft:custom_components": [
 				"poke:shootProjectile"
 			],

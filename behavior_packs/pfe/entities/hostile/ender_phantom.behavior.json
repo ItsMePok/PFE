@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:ender_phantom",
@@ -8,18 +8,44 @@
 			"is_experimental": false
 		},
 		"component_groups": {
-			"xs":{"minecraft:scale": {"value":0.5}},
-			"s":{"minecraft:scale": {"value":0.75}},
-			"m":{"minecraft:scale": {"value":1}},
-			"l":{"minecraft:scale": {"value":1.5}},
-			"xl":{"minecraft:scale": {"value":2.5}}
+			"xs": {
+				"minecraft:scale": {
+					"value": 0.5
+				}
+			},
+			"s": {
+				"minecraft:scale": {
+					"value": 0.75
+				}
+			},
+			"m": {
+				"minecraft:scale": {
+					"value": 1
+				}
+			},
+			"l": {
+				"minecraft:scale": {
+					"value": 1.5
+				}
+			},
+			"xl": {
+				"minecraft:scale": {
+					"value": 2.5
+				}
+			}
 		},
 		"components": {
 			"minecraft:experience_reward": {
 				"on_death": "query.last_hit_by_player ? 5 : 0"
 			},
 			"minecraft:type_family": {
-				"family": ["phantom", "undead", "monster", "mob", "hostile"]
+				"family": [
+					"phantom",
+					"undead",
+					"monster",
+					"mob",
+					"hostile"
+				]
 			},
 			"minecraft:loot": {
 				"table": "loot_tables/entities/phantom.json"
@@ -124,7 +150,10 @@
 				"priority": 2,
 				"damage_reach": 0.2,
 				"speed_multiplier": 1,
-				"delay_range": [10, 20]
+				"delay_range": [
+					10,
+					20
+				]
 			},
 			"minecraft:behavior.circle_around_anchor": {
 				"priority": 3,
@@ -133,9 +162,18 @@
 				"height_adjustment_chance": 0.00286,
 				"goal_radius": 1,
 				"angle_change": 15,
-				"radius_range": [5, 15],
-				"height_offset_range": [-4, 5],
-				"height_above_target_range": [20, 40]
+				"radius_range": [
+					5,
+					15
+				],
+				"height_offset_range": [
+					-4,
+					5
+				],
+				"height_above_target_range": [
+					20,
+					40
+				]
 			}
 		},
 		"events": {

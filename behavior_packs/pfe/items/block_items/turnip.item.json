@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:turnip",
@@ -8,12 +8,15 @@
 			}
 		},
 		"components": {
+			"minecraft:display_name": {
+				"value": "%poke_pfe.turnip\n%poke_pfe.tag"
+			},
 			"minecraft:compostable": {
 				"composting_chance": 65
 			},
-			"minecraft:rarity":"common",
+			"minecraft:rarity": "common",
 			"minecraft:max_stack_size": 64,
-			"minecraft:icon":"poke_turnip",
+			"minecraft:icon": "poke_turnip",
 			"minecraft:food": {
 				"nutrition": 4,
 				"saturation_modifier": 0.9,
@@ -24,9 +27,19 @@
 				"use_duration": 1.6
 			},
 			"minecraft:use_animation": "eat",
-			"minecraft:block_placer": {"use_on":[{"name": "minecraft:farmland"}],"block": "poke:turnip","replace_block_item":true},
+			"minecraft:block_placer": {
+				"use_on": [
+					{
+						"name": "minecraft:farmland"
+					}
+				],
+				"block": "poke:turnip",
+				"replace_block_item": true
+			},
 			"minecraft:tags": {
-				"tags": ["minecraft:is_food"]
+				"tags": [
+					"minecraft:is_food"
+				]
 			}
 		}
 	}

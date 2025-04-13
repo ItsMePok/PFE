@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:cobalt_potion",
@@ -15,7 +15,7 @@
 			"minecraft:max_stack_size": 16,
 			"minecraft:icon": "poke_cobalt_potion",
 			"minecraft:display_name": {
-				"value": "%item.poke_pfe.cobalt_potion\n§7%potion.nightVision (3:00)\n%potion.regeneration (2:00)\n%poke_pfe.tag"
+				"value": "%poke_pfe.cobalt_potion\n§7%potion.nightVision (3:00)\n%potion.regeneration (2:00)\n%poke_pfe.tag"
 			},
 			"minecraft:food": {
 				"nutrition": 0,

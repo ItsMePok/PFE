@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:gilded_allay",
@@ -35,7 +35,10 @@
 		"components": {
 			"minecraft:is_hidden_when_invisible": {},
 			"minecraft:type_family": {
-				"family": ["allay", "mob"]
+				"family": [
+					"allay",
+					"mob"
+				]
 			},
 			"minecraft:collision_box": {
 				"width": 0.35,
@@ -228,29 +231,42 @@
 				"y_dist": 8,
 				"y_offset": -1,
 				"interval": 1,
-				"hover_height": [1, 4]
+				"hover_height": [
+					1,
+					4
+				]
 			}
 		},
 		"events": {
 			"pickup_item_delay": {
 				"remove": {
-					"component_groups": ["pickup_item"]
+					"component_groups": [
+						"pickup_item"
+					]
 				},
 				"add": {
-					"component_groups": ["pickup_item_delay"]
+					"component_groups": [
+						"pickup_item_delay"
+					]
 				}
 			},
 			"pickup_item_delay_complete": {
 				"remove": {
-					"component_groups": ["pickup_item_delay"]
+					"component_groups": [
+						"pickup_item_delay"
+					]
 				},
 				"add": {
-					"component_groups": ["pickup_item"]
+					"component_groups": [
+						"pickup_item"
+					]
 				}
 			},
 			"minecraft:entity_spawned": {
 				"add": {
-					"component_groups": ["pickup_item"]
+					"component_groups": [
+						"pickup_item"
+					]
 				}
 			}
 		}

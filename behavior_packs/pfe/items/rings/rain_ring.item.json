@@ -1,5 +1,5 @@
 { //Rain Ring
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:ring_1",
@@ -8,6 +8,9 @@
 			}
 		},
 		"components": {
+			"minecraft:display_name": {
+				"value": "%poke_pfe.rain_ring\n%poke_pfe.tag"
+			},
 			"minecraft:repairable": {
 				"repair_items": [
 					{

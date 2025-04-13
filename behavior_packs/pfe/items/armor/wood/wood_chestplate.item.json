@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:wood_chestplate",
@@ -8,7 +8,10 @@
 			}
 		},
 		"components": {
-			"minecraft:rarity":"common",
+			"minecraft:display_name": {
+				"value": "%poke_pfe.wood_chestplate\n%poke_pfe.tag"
+			},
+			"minecraft:rarity": "common",
 			"minecraft:max_stack_size": 1,
 			"minecraft:enchantable": {
 				"value": 9,
@@ -21,14 +24,23 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": {"textures":{"default":"poke_wood_chestplate"}},
+			"minecraft:icon": {
+				"textures": {
+					"default": "poke_wood_chestplate"
+				}
+			},
 			"minecraft:wearable": {
 				"slot": "slot.armor.chest",
 				"protection": 2
 			},
 			"minecraft:repairable": {
 				"repair_items": [
-					{"items": ["poke:repair_core"],"repair_amount": "query.max_durability"},
+					{
+						"items": [
+							"poke:repair_core"
+						],
+						"repair_amount": "query.max_durability"
+					},
 					{
 						"items": [
 							"minecraft:log",
@@ -42,7 +54,7 @@
 					}
 				]
 			},
-			"minecraft:tags": { 
+			"minecraft:tags": {
 				"tags": [
 					"pfe:SingleArmor",
 					"novelty:is_back",

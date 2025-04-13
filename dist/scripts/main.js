@@ -548,7 +548,7 @@ var require_lib = __commonJS({
 });
 
 // scripts/main.ts
-import { system as system3, world as world5, EquipmentSlot as EquipmentSlot4, GameMode as GameMode3, EntityComponentTypes as EntityComponentTypes4, ItemComponentTypes as ItemComponentTypes4, ItemStack as ItemStack4, Direction as Direction2 } from "@minecraft/server";
+import { system as system3, world as world5, EquipmentSlot as EquipmentSlot5, GameMode as GameMode3, EntityComponentTypes as EntityComponentTypes5, ItemComponentTypes as ItemComponentTypes4, ItemStack as ItemStack4, Direction as Direction2 } from "@minecraft/server";
 
 // node_modules/@minecraft/vanilla-data/lib/index.js
 var MinecraftBiomeTypes = ((MinecraftBiomeTypes2) => {
@@ -4012,7 +4012,6 @@ var PFEHaxelMining = class {
     }
     let localBlacklist = [];
     localBlacklist = dynamicProperty.blacklist;
-    console.warn(JSON.stringify(localBlacklist));
     let BannedBlocks = [MinecraftBlockTypes.Air, MinecraftBlockTypes.LightBlock0, MinecraftBlockTypes.LightBlock1, MinecraftBlockTypes.LightBlock2, MinecraftBlockTypes.LightBlock3, MinecraftBlockTypes.LightBlock4, MinecraftBlockTypes.LightBlock5, MinecraftBlockTypes.LightBlock6, MinecraftBlockTypes.LightBlock7, MinecraftBlockTypes.LightBlock8, MinecraftBlockTypes.LightBlock9, MinecraftBlockTypes.LightBlock10, MinecraftBlockTypes.LightBlock11, MinecraftBlockTypes.LightBlock12, MinecraftBlockTypes.LightBlock13, MinecraftBlockTypes.LightBlock14, MinecraftBlockTypes.LightBlock15, MinecraftBlockTypes.Barrier, MinecraftBlockTypes.Jigsaw, MinecraftBlockTypes.StructureBlock, MinecraftBlockTypes.CommandBlock, MinecraftBlockTypes.ChainCommandBlock, MinecraftBlockTypes.RepeatingCommandBlock, MinecraftBlockTypes.BorderBlock, MinecraftBlockTypes.Allow, MinecraftBlockTypes.Deny];
     let location = { x: Math.round(data.source.location.x - ComponentInfo.radius.x / 2), y: Math.round(data.source.location.y - 0.01), z: Math.round(data.source.location.z - ComponentInfo.radius.z / 2) };
     system2.runJob(PFEMine(BannedBlocks.concat(localBlacklist), ComponentInfo, location, data.source, data.source.dimension, data.itemStack.getComponent(ItemComponentTypes2.Enchantable).hasEnchantment(MinecraftEnchantmentTypes.SilkTouch), data.itemStack));
@@ -4085,7 +4084,6 @@ function PFEHaxelConfigBlackListAdd(data, dynamicProperty) {
         block = `minecraft:${block}`;
       }
       block = block.toLowerCase();
-      console.warn(block);
       let newProperty = {
         "blacklist": dynamicProperty.blacklist.concat([block]),
         "v": dynamicProperty.v
@@ -5635,34 +5633,34 @@ function PFEDisableConfigMainMenu(data) {
   let UI = new ActionFormData6();
   let options = JSON.parse(world4.getDynamicProperty(PFEDisableConfigName).toString());
   if (options.quantumTeleporter) {
-    UI.button({ rawtext: [{ translate: `item.poke_pfe.quantum_teleporter` }, { text: ":\xA7a\n" }, { translate: `translation.poke_pfe.enabled` }] }, `textures/poke/pfe/quantum_teleporter`);
+    UI.button({ rawtext: [{ translate: `poke_pfe.quantum_teleporter` }, { text: ":\xA7a\n" }, { translate: `translation.poke_pfe.enabled` }] }, `textures/poke/pfe/quantum_teleporter`);
   } else {
-    UI.button({ rawtext: [{ translate: `item.poke_pfe.quantum_teleporter` }, { text: ":\xA7c\n" }, { translate: `translation.poke_pfe.disabled` }] }, `textures/poke/pfe/quantum_teleporter`);
+    UI.button({ rawtext: [{ translate: `poke_pfe.quantum_teleporter` }, { text: ":\xA7c\n" }, { translate: `translation.poke_pfe.disabled` }] }, `textures/poke/pfe/quantum_teleporter`);
   }
   if (options.kapowRing) {
-    UI.button({ rawtext: [{ translate: `item.poke_pfe.kapow_ring` }, { text: ":\xA7a\n" }, { translate: `translation.poke_pfe.enabled` }] }, `textures/poke/pfe/kapow_ring`);
+    UI.button({ rawtext: [{ translate: `poke_pfe.kapow_ring` }, { text: ":\xA7a\n" }, { translate: `translation.poke_pfe.enabled` }] }, `textures/poke/pfe/kapow_ring`);
   } else {
-    UI.button({ rawtext: [{ translate: `item.poke_pfe.kapow_ring` }, { text: ":\xA7c\n" }, { translate: `translation.poke_pfe.disabled` }] }, `textures/poke/pfe/kapow_ring`);
+    UI.button({ rawtext: [{ translate: `poke_pfe.kapow_ring` }, { text: ":\xA7c\n" }, { translate: `translation.poke_pfe.disabled` }] }, `textures/poke/pfe/kapow_ring`);
   }
   if (options.nukeRing) {
-    UI.button({ rawtext: [{ translate: `item.poke_pfe.nuke_ring` }, { text: ":\xA7a\n" }, { translate: `translation.poke_pfe.enabled` }] }, `textures/poke/pfe/nuke_ring`);
+    UI.button({ rawtext: [{ translate: `poke_pfe.nuke_ring` }, { text: ":\xA7a\n" }, { translate: `translation.poke_pfe.enabled` }] }, `textures/poke/pfe/nuke_ring`);
   } else {
-    UI.button({ rawtext: [{ translate: `item.poke_pfe.nuke_ring` }, { text: ":\xA7c\n" }, { translate: `translation.poke_pfe.disabled` }] }, `textures/poke/pfe/nuke_ring`);
+    UI.button({ rawtext: [{ translate: `poke_pfe.nuke_ring` }, { text: ":\xA7c\n" }, { translate: `translation.poke_pfe.disabled` }] }, `textures/poke/pfe/nuke_ring`);
   }
   if (options.sundial) {
-    UI.button({ rawtext: [{ translate: `item.poke_pfe.sundial` }, { text: ":\xA7a\n" }, { translate: `translation.poke_pfe.enabled` }] }, `textures/poke/pfe/sundial_1`);
+    UI.button({ rawtext: [{ translate: `poke_pfe.sundial` }, { text: ":\xA7a\n" }, { translate: `translation.poke_pfe.enabled` }] }, `textures/poke/pfe/sundial_1`);
   } else {
-    UI.button({ rawtext: [{ translate: `item.poke_pfe.sundial` }, { text: ":\xA7c\n" }, { translate: `translation.poke_pfe.disabled` }] }, `textures/poke/pfe/sundial_1`);
+    UI.button({ rawtext: [{ translate: `poke_pfe.sundial` }, { text: ":\xA7c\n" }, { translate: `translation.poke_pfe.disabled` }] }, `textures/poke/pfe/sundial_1`);
   }
   if (options.witherSpawner) {
-    UI.button({ rawtext: [{ translate: `item.poke_pfe.wither_spawner` }, { text: ":\xA7a\n" }, { translate: `translation.poke_pfe.enabled` }] }, `textures/poke/pfe/wither_spawner`);
+    UI.button({ rawtext: [{ translate: `poke_pfe.wither_spawner` }, { text: ":\xA7a\n" }, { translate: `translation.poke_pfe.enabled` }] }, `textures/poke/pfe/wither_spawner`);
   } else {
-    UI.button({ rawtext: [{ translate: `item.poke_pfe.wither_spawner` }, { text: ":\xA7c\n" }, { translate: `translation.poke_pfe.disabled` }] }, `textures/poke/pfe/wither_spawner`);
+    UI.button({ rawtext: [{ translate: `poke_pfe.wither_spawner` }, { text: ":\xA7c\n" }, { translate: `translation.poke_pfe.disabled` }] }, `textures/poke/pfe/wither_spawner`);
   }
   if (options.bounty) {
-    UI.button({ rawtext: [{ translate: `item.poke_pfe.bounty` }, { text: ":\xA7a\n" }, { translate: `translation.poke_pfe.enabled` }] }, `textures/poke/pfe/bounty`);
+    UI.button({ rawtext: [{ translate: `poke_pfe.bounty` }, { text: ":\xA7a\n" }, { translate: `translation.poke_pfe.enabled` }] }, `textures/poke/pfe/bounty`);
   } else {
-    UI.button({ rawtext: [{ translate: `item.poke_pfe.bounty` }, { text: ":\xA7c\n" }, { translate: `translation.poke_pfe.disabled` }] }, `textures/poke/pfe/bounty`);
+    UI.button({ rawtext: [{ translate: `poke_pfe.bounty` }, { text: ":\xA7c\n" }, { translate: `translation.poke_pfe.disabled` }] }, `textures/poke/pfe/bounty`);
   }
   UI.show(player).then((response) => {
     let selection = 0;
@@ -5740,8 +5738,11 @@ function PFEDisableConfigMainMenu(data) {
 }
 
 // scripts/main.ts
-var import_math = __toESM(require_lib());
 import { ActionFormData as ActionFormData7 } from "@minecraft/server-ui";
+
+// scripts/armorEffects.ts
+var import_math = __toESM(require_lib());
+import { EntityComponentTypes as EntityComponentTypes4, EquipmentSlot as EquipmentSlot4 } from "@minecraft/server";
 var ArmorEffectDuration = 500;
 var PFEArmorEffectData = {
   hellish: {
@@ -6263,8 +6264,8 @@ function CheckEffects(player, ArmorData) {
   let totalStrength = 0;
   let totalSpeed = 0;
   let totalResistance = 0;
-  let totalRegen = 0;
-  let totalJumboost = 0;
+  let totalRegeneration = 0;
+  let totalJumpBoost = 0;
   let totalSlowness = 0;
   let totalHealthBoost = 0;
   let totalVillageHero = 0;
@@ -6286,14 +6287,14 @@ function CheckEffects(player, ArmorData) {
     switch (true) {
       case Helmet.hasTag(ArmorData.amethyst.tag): {
         effects = effects.concat(ArmorData.amethyst.effects);
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalHaste += 1;
         break;
       }
       case Helmet.hasTag(ArmorData.shade.tag): {
         effects = effects.concat(ArmorData.shade.effects);
         totalStrength += 1;
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         totalSlowness += 1;
         break;
@@ -6301,14 +6302,14 @@ function CheckEffects(player, ArmorData) {
       case Helmet.hasTag(ArmorData.radium.tag): {
         effects = effects.concat(ArmorData.radium.effects);
         totalStrength += 1;
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         totalSpeed += 1;
         break;
       }
       case Helmet.hasTag(ArmorData.banished.tag): {
         effects = effects.concat(ArmorData.banished.effects);
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         totalSlowness += 1;
         totalHaste += 1;
@@ -6316,26 +6317,26 @@ function CheckEffects(player, ArmorData) {
       }
       case Helmet.hasTag(ArmorData.onyx.tag): {
         effects = effects.concat(ArmorData.onyx.effects);
-        totalRegen += 1;
+        totalRegeneration += 1;
         break;
       }
       case Helmet.hasTag(ArmorData.holy.tag): {
         effects = effects.concat(ArmorData.holy.effects);
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         totalSpeed += 1;
         break;
       }
       case Helmet.hasTag(ArmorData.hellish.tag): {
         effects = effects.concat(ArmorData.hellish.effects);
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         break;
       }
       case Helmet.hasTag(ArmorData.godly.tag): {
         effects = effects.concat(ArmorData.godly.effects);
         totalStrength += 1;
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         totalSpeed += 1;
         break;
@@ -6343,7 +6344,7 @@ function CheckEffects(player, ArmorData) {
       case Helmet.hasTag(ArmorData.demonic.tag): {
         effects = effects.concat(ArmorData.demonic.effects);
         totalStrength += 1;
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         break;
       }
@@ -6357,13 +6358,13 @@ function CheckEffects(player, ArmorData) {
       case Helmet.hasTag(ArmorData.molten.tag): {
         effects = effects.concat(ArmorData.molten.effects);
         totalStrength += 1;
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         break;
       }
       case Helmet.hasTag(ArmorData.galaxy.tag): {
         effects = effects.concat(ArmorData.galaxy.effects);
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         totalSpeed += 1;
         totalHaste += 1;
@@ -6373,12 +6374,12 @@ function CheckEffects(player, ArmorData) {
         effects = effects.concat(ArmorData.void.effects);
         totalSpeed += 1;
         totalResistance += 1;
-        totalRegen += 1;
+        totalRegeneration += 1;
         break;
       }
       case Helmet.hasTag(ArmorData.astral.tag): {
         effects = effects.concat(ArmorData.astral.effects);
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         totalSpeed += 1;
         totalHaste += 1;
@@ -6389,13 +6390,13 @@ function CheckEffects(player, ArmorData) {
         effects = effects.concat(ArmorData.death.effects);
         totalHealthBoost += 1;
         totalResistance += 1;
-        totalRegen += 1;
+        totalRegeneration += 1;
         break;
       }
       case Helmet.hasTag(ArmorData.nebula.tag): {
         effects = effects.concat(ArmorData.nebula.effects);
         totalSpeed += 1;
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         totalHaste += 1;
         totalVillageHero += 1;
@@ -6421,7 +6422,7 @@ function CheckEffects(player, ArmorData) {
       case Helmet.hasTag(ArmorData.springyRobe.tag): {
         effects = effects.concat(ArmorData.springyRobe.effects);
         totalStrength += 1;
-        totalJumboost += 1;
+        totalJumpBoost += 1;
         break;
       }
       case Helmet.hasTag(ArmorData.heroicRobe.tag): {
@@ -6470,14 +6471,14 @@ function CheckEffects(player, ArmorData) {
     switch (true) {
       case Chestplate.hasTag(ArmorData.amethyst.tag): {
         effects = effects.concat(ArmorData.amethyst.effects);
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalHaste += 1;
         break;
       }
       case Chestplate.hasTag(ArmorData.shade.tag): {
         effects = effects.concat(ArmorData.shade.effects);
         totalStrength += 1;
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         totalSlowness += 1;
         break;
@@ -6485,14 +6486,14 @@ function CheckEffects(player, ArmorData) {
       case Chestplate.hasTag(ArmorData.radium.tag): {
         effects = effects.concat(ArmorData.radium.effects);
         totalStrength += 1;
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         totalSpeed += 1;
         break;
       }
       case Chestplate.hasTag(ArmorData.banished.tag): {
         effects = effects.concat(ArmorData.banished.effects);
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         totalSlowness += 1;
         totalHaste += 1;
@@ -6500,26 +6501,26 @@ function CheckEffects(player, ArmorData) {
       }
       case Chestplate.hasTag(ArmorData.onyx.tag): {
         effects = effects.concat(ArmorData.onyx.effects);
-        totalRegen += 1;
+        totalRegeneration += 1;
         break;
       }
       case Chestplate.hasTag(ArmorData.holy.tag): {
         effects = effects.concat(ArmorData.holy.effects);
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         totalSpeed += 1;
         break;
       }
       case Chestplate.hasTag(ArmorData.hellish.tag): {
         effects = effects.concat(ArmorData.hellish.effects);
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         break;
       }
       case Chestplate.hasTag(ArmorData.godly.tag): {
         effects = effects.concat(ArmorData.godly.effects);
         totalStrength += 1;
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         totalSpeed += 1;
         break;
@@ -6527,7 +6528,7 @@ function CheckEffects(player, ArmorData) {
       case Chestplate.hasTag(ArmorData.demonic.tag): {
         effects = effects.concat(ArmorData.demonic.effects);
         totalStrength += 1;
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         break;
       }
@@ -6541,13 +6542,13 @@ function CheckEffects(player, ArmorData) {
       case Chestplate.hasTag(ArmorData.molten.tag): {
         effects = effects.concat(ArmorData.molten.effects);
         totalStrength += 1;
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         break;
       }
       case Chestplate.hasTag(ArmorData.galaxy.tag): {
         effects = effects.concat(ArmorData.galaxy.effects);
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         totalSpeed += 1;
         totalHaste += 1;
@@ -6557,12 +6558,12 @@ function CheckEffects(player, ArmorData) {
         effects = effects.concat(ArmorData.void.effects);
         totalSpeed += 1;
         totalResistance += 1;
-        totalRegen += 1;
+        totalRegeneration += 1;
         break;
       }
       case Chestplate.hasTag(ArmorData.astral.tag): {
         effects = effects.concat(ArmorData.astral.effects);
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         totalSpeed += 1;
         totalHaste += 1;
@@ -6573,13 +6574,13 @@ function CheckEffects(player, ArmorData) {
         effects = effects.concat(ArmorData.death.effects);
         totalHealthBoost += 1;
         totalResistance += 1;
-        totalRegen += 1;
+        totalRegeneration += 1;
         break;
       }
       case Chestplate.hasTag(ArmorData.nebula.tag): {
         effects = effects.concat(ArmorData.nebula.effects);
         totalSpeed += 1;
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         totalHaste += 1;
         totalVillageHero += 1;
@@ -6605,7 +6606,7 @@ function CheckEffects(player, ArmorData) {
       case Chestplate.hasTag(ArmorData.springyRobe.tag): {
         effects = effects.concat(ArmorData.springyRobe.effects);
         totalStrength += 1;
-        totalJumboost += 1;
+        totalJumpBoost += 1;
         break;
       }
       case Chestplate.hasTag(ArmorData.heroicRobe.tag): {
@@ -6650,14 +6651,14 @@ function CheckEffects(player, ArmorData) {
     switch (true) {
       case Leggings.hasTag(ArmorData.amethyst.tag): {
         effects = effects.concat(ArmorData.amethyst.effects);
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalHaste += 1;
         break;
       }
       case Leggings.hasTag(ArmorData.shade.tag): {
         effects = effects.concat(ArmorData.shade.effects);
         totalStrength += 1;
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         totalSlowness += 1;
         break;
@@ -6665,14 +6666,14 @@ function CheckEffects(player, ArmorData) {
       case Leggings.hasTag(ArmorData.radium.tag): {
         effects = effects.concat(ArmorData.radium.effects);
         totalStrength += 1;
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         totalSpeed += 1;
         break;
       }
       case Leggings.hasTag(ArmorData.banished.tag): {
         effects = effects.concat(ArmorData.banished.effects);
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         totalSlowness += 1;
         totalHaste += 1;
@@ -6680,26 +6681,26 @@ function CheckEffects(player, ArmorData) {
       }
       case Leggings.hasTag(ArmorData.onyx.tag): {
         effects = effects.concat(ArmorData.onyx.effects);
-        totalRegen += 1;
+        totalRegeneration += 1;
         break;
       }
       case Leggings.hasTag(ArmorData.holy.tag): {
         effects = effects.concat(ArmorData.holy.effects);
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         totalSpeed += 1;
         break;
       }
       case Leggings.hasTag(ArmorData.hellish.tag): {
         effects = effects.concat(ArmorData.hellish.effects);
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         break;
       }
       case Leggings.hasTag(ArmorData.godly.tag): {
         effects = effects.concat(ArmorData.godly.effects);
         totalStrength += 1;
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         totalSpeed += 1;
         break;
@@ -6707,7 +6708,7 @@ function CheckEffects(player, ArmorData) {
       case Leggings.hasTag(ArmorData.demonic.tag): {
         effects = effects.concat(ArmorData.demonic.effects);
         totalStrength += 1;
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         break;
       }
@@ -6721,13 +6722,13 @@ function CheckEffects(player, ArmorData) {
       case Leggings.hasTag(ArmorData.molten.tag): {
         effects = effects.concat(ArmorData.molten.effects);
         totalStrength += 1;
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         break;
       }
       case Leggings.hasTag(ArmorData.galaxy.tag): {
         effects = effects.concat(ArmorData.galaxy.effects);
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         totalSpeed += 1;
         totalHaste += 1;
@@ -6737,12 +6738,12 @@ function CheckEffects(player, ArmorData) {
         effects = effects.concat(ArmorData.void.effects);
         totalSpeed += 1;
         totalResistance += 1;
-        totalRegen += 1;
+        totalRegeneration += 1;
         break;
       }
       case Leggings.hasTag(ArmorData.astral.tag): {
         effects = effects.concat(ArmorData.astral.effects);
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         totalSpeed += 1;
         totalHaste += 1;
@@ -6753,13 +6754,13 @@ function CheckEffects(player, ArmorData) {
         effects = effects.concat(ArmorData.death.effects);
         totalHealthBoost += 1;
         totalResistance += 1;
-        totalRegen += 1;
+        totalRegeneration += 1;
         break;
       }
       case Leggings.hasTag(ArmorData.nebula.tag): {
         effects = effects.concat(ArmorData.nebula.effects);
         totalSpeed += 1;
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         totalHaste += 1;
         totalVillageHero += 1;
@@ -6780,14 +6781,14 @@ function CheckEffects(player, ArmorData) {
     switch (true) {
       case Boots.hasTag(ArmorData.amethyst.tag): {
         effects = effects.concat(ArmorData.amethyst.effects);
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalHaste += 1;
         break;
       }
       case Boots.hasTag(ArmorData.shade.tag): {
         effects = effects.concat(ArmorData.shade.effects);
         totalStrength += 1;
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         totalSlowness += 1;
         break;
@@ -6795,14 +6796,14 @@ function CheckEffects(player, ArmorData) {
       case Boots.hasTag(ArmorData.radium.tag): {
         effects = effects.concat(ArmorData.radium.effects);
         totalStrength += 1;
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         totalSpeed += 1;
         break;
       }
       case Boots.hasTag(ArmorData.banished.tag): {
         effects = effects.concat(ArmorData.banished.effects);
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         totalSlowness += 1;
         totalHaste += 1;
@@ -6810,26 +6811,26 @@ function CheckEffects(player, ArmorData) {
       }
       case Boots.hasTag(ArmorData.onyx.tag): {
         effects = effects.concat(ArmorData.onyx.effects);
-        totalRegen += 1;
+        totalRegeneration += 1;
         break;
       }
       case Boots.hasTag(ArmorData.holy.tag): {
         effects = effects.concat(ArmorData.holy.effects);
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         totalSpeed += 1;
         break;
       }
       case Boots.hasTag(ArmorData.hellish.tag): {
         effects = effects.concat(ArmorData.hellish.effects);
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         break;
       }
       case Boots.hasTag(ArmorData.godly.tag): {
         effects = effects.concat(ArmorData.godly.effects);
         totalStrength += 1;
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         totalSpeed += 1;
         break;
@@ -6837,7 +6838,7 @@ function CheckEffects(player, ArmorData) {
       case Boots.hasTag(ArmorData.demonic.tag): {
         effects = effects.concat(ArmorData.demonic.effects);
         totalStrength += 1;
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         break;
       }
@@ -6851,13 +6852,13 @@ function CheckEffects(player, ArmorData) {
       case Boots.hasTag(ArmorData.molten.tag): {
         effects = effects.concat(ArmorData.molten.effects);
         totalStrength += 1;
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         break;
       }
       case Boots.hasTag(ArmorData.galaxy.tag): {
         effects = effects.concat(ArmorData.galaxy.effects);
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         totalSpeed += 1;
         totalHaste += 1;
@@ -6867,12 +6868,12 @@ function CheckEffects(player, ArmorData) {
         effects = effects.concat(ArmorData.void.effects);
         totalSpeed += 1;
         totalResistance += 1;
-        totalRegen += 1;
+        totalRegeneration += 1;
         break;
       }
       case Boots.hasTag(ArmorData.astral.tag): {
         effects = effects.concat(ArmorData.astral.effects);
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         totalSpeed += 1;
         totalHaste += 1;
@@ -6883,13 +6884,13 @@ function CheckEffects(player, ArmorData) {
         effects = effects.concat(ArmorData.death.effects);
         totalHealthBoost += 1;
         totalResistance += 1;
-        totalRegen += 1;
+        totalRegeneration += 1;
         break;
       }
       case Boots.hasTag(ArmorData.nebula.tag): {
         effects = effects.concat(ArmorData.nebula.effects);
         totalSpeed += 1;
-        totalRegen += 1;
+        totalRegeneration += 1;
         totalResistance += 1;
         totalHaste += 1;
         totalVillageHero += 1;
@@ -6930,11 +6931,11 @@ function CheckEffects(player, ArmorData) {
           break;
         }
         case effect.effect != MinecraftEffectTypes.Regeneration: {
-          CurrentEffect = totalRegen;
+          CurrentEffect = totalRegeneration;
           break;
         }
         case effect.effect != MinecraftEffectTypes.JumpBoost: {
-          CurrentEffect = totalJumboost;
+          CurrentEffect = totalJumpBoost;
           break;
         }
         case effect.effect != MinecraftEffectTypes.Slowness: {
@@ -6962,6 +6963,8 @@ function CheckEffects(player, ArmorData) {
     }
   }
 }
+
+// scripts/main.ts
 system3.runInterval(() => {
   for (let player of world5.getAllPlayers()) {
     if (!player)
@@ -7136,12 +7139,10 @@ world5.beforeEvents.worldInitialize.subscribe((data) => {
     world5.setDynamicProperty(`poke:birthdays`, `[]`);
   if (typeof world5.getDynamicProperty(`poke:customEvents`) != "string") {
     world5.setDynamicProperty(`poke:customEvents`, "[]");
-    console.warn(`Custom events were invalid; resetting to default (Ignore if this world was just created) || Poke-Calendar`);
   } else {
     try {
       JSON.parse(world5.getDynamicProperty(`poke:customEvents`)?.toString());
     } catch {
-      console.warn(`Custom events were invalid; resetting to default || Poke-Calendar`);
       world5.setDynamicProperty(`poke:customEvents`, "[]");
     }
   }
@@ -7191,7 +7192,7 @@ world5.beforeEvents.worldInitialize.subscribe((data) => {
         ;
         if (data2.source.getGameMode() == GameMode3.creative)
           return;
-        data2.source.getComponent(EntityComponentTypes4.Equippable).setEquipment(EquipmentSlot4.Mainhand, PokeDecrementStack(data2.itemStack));
+        data2.source.getComponent(EntityComponentTypes5.Equippable).setEquipment(EquipmentSlot5.Mainhand, PokeDecrementStack(data2.itemStack));
       }
     }
   );
@@ -7290,7 +7291,7 @@ world5.beforeEvents.worldInitialize.subscribe((data) => {
     "poke:normalMining",
     {
       onMineBlock(data2) {
-        PokeDamageItemUB(data2.itemStack, void 0, data2.source, EquipmentSlot4.Mainhand);
+        PokeDamageItemUB(data2.itemStack, void 0, data2.source, EquipmentSlot5.Mainhand);
         return;
       }
     }
@@ -7314,7 +7315,7 @@ world5.beforeEvents.worldInitialize.subscribe((data) => {
         data2.source.playSound("random.bow");
         projComp.owner = data2.source;
         projComp.shoot(angle);
-        PokeDamageItemUB(data2.itemStack, void 0, data2.source, EquipmentSlot4.Mainhand);
+        PokeDamageItemUB(data2.itemStack, void 0, data2.source, EquipmentSlot5.Mainhand);
         return;
       }
     }
@@ -7647,7 +7648,7 @@ world5.beforeEvents.worldInitialize.subscribe((data) => {
 ` }, { translate: `translation.poke_pfe.insufficientPerms.desc2` }, { text: `
 /tag @s add poke:config` }] });
           UI.button({ translate: `translation.poke:bossEventClose` }, `textures/poke/common/close`);
-          UI.show(data2.source).then((responce) => {
+          UI.show(data2.source).then((response) => {
             return;
           });
           return;
@@ -7666,7 +7667,7 @@ world5.beforeEvents.worldInitialize.subscribe((data) => {
         if (data2.itemStack === void 0)
           return;
         const cooldownComponent = data2.itemStack.getComponent("minecraft:cooldown");
-        const equippableComponent = data2.source.getComponent(EntityComponentTypes4.Equippable);
+        const equippableComponent = data2.source.getComponent(EntityComponentTypes5.Equippable);
         const moveDir = data2.source.getVelocity();
         var amount = data2.itemStack.amount;
         data2.source.spawnParticle("minecraft:wind_explosion_emitter", data2.source.location);
@@ -7676,10 +7677,10 @@ world5.beforeEvents.worldInitialize.subscribe((data) => {
           return;
         cooldownComponent.startCooldown(data2.source);
         if (amount <= 1) {
-          equippableComponent.setEquipment(EquipmentSlot4.Mainhand, new ItemStack4("minecraft:air", 1));
+          equippableComponent.setEquipment(EquipmentSlot5.Mainhand, new ItemStack4("minecraft:air", 1));
           return;
         }
-        equippableComponent.setEquipment(EquipmentSlot4.Mainhand, new ItemStack4(data2.itemStack.typeId, amount - 1));
+        equippableComponent.setEquipment(EquipmentSlot5.Mainhand, new ItemStack4(data2.itemStack.typeId, amount - 1));
         return;
       }
     }
@@ -7726,7 +7727,7 @@ world5.beforeEvents.worldInitialize.subscribe((data) => {
         let faceLocY = --faceLoc.y;
         let faceLocZ = --faceLoc.z;
         var amount = data2.itemStack.amount;
-        const equippableComponent = data2.source.getComponent(EntityComponentTypes4.Equippable);
+        const equippableComponent = data2.source.getComponent(EntityComponentTypes5.Equippable);
         switch (blockFace) {
           case Direction2.North: {
             faceLocZ += 1.5;
@@ -7759,10 +7760,10 @@ world5.beforeEvents.worldInitialize.subscribe((data) => {
         if (player.getGameMode() == "creative")
           return;
         if (amount <= 1) {
-          equippableComponent.setEquipment(EquipmentSlot4.Mainhand, new ItemStack4("minecraft:air", 1));
+          equippableComponent.setEquipment(EquipmentSlot5.Mainhand, new ItemStack4("minecraft:air", 1));
           return;
         }
-        equippableComponent.setEquipment(EquipmentSlot4.Mainhand, new ItemStack4(data2.itemStack.typeId, amount - 1));
+        equippableComponent.setEquipment(EquipmentSlot5.Mainhand, new ItemStack4(data2.itemStack.typeId, amount - 1));
         return;
       }
     }
@@ -7812,7 +7813,7 @@ world5.beforeEvents.worldInitialize.subscribe((data) => {
         if (data2.itemStack.isStackable) {
           return;
         }
-        PokeDamageItemUB(data2.itemStack, void 0, data2.source, EquipmentSlot4.Mainhand);
+        PokeDamageItemUB(data2.itemStack, void 0, data2.source, EquipmentSlot5.Mainhand);
         return;
       }
     }
@@ -7842,7 +7843,7 @@ world5.beforeEvents.worldInitialize.subscribe((data) => {
         }
         data2.source.runCommand("" + id);
         cooldownComp.startCooldown(data2.source);
-        PokeDamageItemUB(data2.itemStack, void 0, data2.source, EquipmentSlot4.Mainhand);
+        PokeDamageItemUB(data2.itemStack, void 0, data2.source, EquipmentSlot5.Mainhand);
         return;
       }
     }
@@ -7853,7 +7854,6 @@ world5.beforeEvents.worldInitialize.subscribe((data) => {
       onUseOn(data2) {
         let tagData = data2.itemStack.getTags().toString();
         let componentInfo = JSON.parse(tagData.substring(tagData.indexOf(`poke-pfe:UpgraderInfo:`), tagData.lastIndexOf(`:poke-pfe:UpgraderInfoEnd`)).substring(22));
-        console.warn(JSON.stringify(componentInfo));
         let multi = 1;
         if (componentInfo.canUpgrade.includes(data2.block.typeId)) {
           const block_location = `${data2.block.x} ${data2.block.y} ${data2.block.z}`;
@@ -7863,7 +7863,7 @@ world5.beforeEvents.worldInitialize.subscribe((data) => {
         } else {
           multi = 0;
         }
-        PokeDamageItemUB(data2.itemStack, multi, data2.source, EquipmentSlot4.Mainhand);
+        PokeDamageItemUB(data2.itemStack, multi, data2.source, EquipmentSlot5.Mainhand);
         return;
       }
     }
@@ -7889,12 +7889,12 @@ world5.beforeEvents.worldInitialize.subscribe((data) => {
     "poke:fortune",
     {
       onPlayerDestroy(data2) {
-        const equippableComponent = data2.player?.getComponent(EntityComponentTypes4.Equippable);
+        const equippableComponent = data2.player?.getComponent(EntityComponentTypes5.Equippable);
         if (equippableComponent === void 0)
           return;
-        if (!equippableComponent.getEquipment(EquipmentSlot4.Mainhand)?.hasComponent(ItemComponentTypes4.Enchantable))
+        if (!equippableComponent.getEquipment(EquipmentSlot5.Mainhand)?.hasComponent(ItemComponentTypes4.Enchantable))
           return;
-        const enchantableComponent = equippableComponent.getEquipment(EquipmentSlot4.Mainhand)?.getComponent(ItemComponentTypes4.Enchantable);
+        const enchantableComponent = equippableComponent.getEquipment(EquipmentSlot5.Mainhand)?.getComponent(ItemComponentTypes4.Enchantable);
         if (!enchantableComponent.hasEnchantment(MinecraftEnchantmentTypes.Fortune))
           return;
         let fortuneLevel = enchantableComponent.getEnchantment(MinecraftEnchantmentTypes.Fortune).level;
@@ -7937,8 +7937,8 @@ world5.beforeEvents.worldInitialize.subscribe((data) => {
           return;
         const blockLocation = `${data2.block.location.x} ${data2.block.location.y} ${data2.block.location.z}`;
         const slabId = data2.block.typeId;
-        const equippableComponent = data2.player.getComponent(EntityComponentTypes4.Equippable);
-        const mainhand = equippableComponent.getEquipment(EquipmentSlot4.Mainhand);
+        const equippableComponent = data2.player.getComponent(EntityComponentTypes5.Equippable);
+        const mainhand = equippableComponent.getEquipment(EquipmentSlot5.Mainhand);
         if (mainhand != void 0) {
           if (mainhand.typeId == slabId && (data2.block.permutation.getState("minecraft:vertical_half") == "bottom" && data2.face == Direction2.Up || data2.block.permutation.getState("minecraft:vertical_half") == "top" && data2.face == Direction2.Down) && data2.block.permutation.getState("poke:double") == false) {
             var itemStackAmount = mainhand.amount - 1;
@@ -7947,10 +7947,10 @@ world5.beforeEvents.worldInitialize.subscribe((data) => {
             if (data2.player?.getGameMode() == "creative")
               return;
             if (itemStackAmount <= 0) {
-              equippableComponent.setEquipment(EquipmentSlot4.Mainhand, new ItemStack4("minecraft:air", 1));
+              equippableComponent.setEquipment(EquipmentSlot5.Mainhand, new ItemStack4("minecraft:air", 1));
               return;
             }
-            equippableComponent.setEquipment(EquipmentSlot4.Mainhand, new ItemStack4(slabId, itemStackAmount));
+            equippableComponent.setEquipment(EquipmentSlot5.Mainhand, new ItemStack4(slabId, itemStackAmount));
             return;
           } else
             return;
@@ -8366,8 +8366,8 @@ world5.beforeEvents.worldInitialize.subscribe((data) => {
         return;
       },
       onPlayerInteract(data2) {
-        const equippableComponent = data2.player?.getComponent(EntityComponentTypes4.Equippable);
-        const mainhandItem = equippableComponent.getEquipment(EquipmentSlot4.Mainhand);
+        const equippableComponent = data2.player?.getComponent(EntityComponentTypes5.Equippable);
+        const mainhandItem = equippableComponent.getEquipment(EquipmentSlot5.Mainhand);
         if (mainhandItem === void 0)
           return;
         const block_location = `${data2.block.x} ${data2.block.y} ${data2.block.z}`;
@@ -8387,7 +8387,7 @@ world5.beforeEvents.worldInitialize.subscribe((data) => {
               data2.player?.runCommand("clear @s bone_meal 0 1");
               return;
             }
-            equippableComponent.setEquipment(EquipmentSlot4.Mainhand, new ItemStack4(mainhandItem.typeId, itemAfterUse1));
+            equippableComponent.setEquipment(EquipmentSlot5.Mainhand, new ItemStack4(mainhandItem.typeId, itemAfterUse1));
             return;
           }
           return;
@@ -8497,7 +8497,7 @@ world5.beforeEvents.worldInitialize.subscribe((data) => {
     {
       onPlayerInteract(data2) {
         const slabId = data2.block.typeId;
-        const mainhand = data2.player.getComponent(EntityComponentTypes4.Equippable).getEquipment("Mainhand");
+        const mainhand = data2.player.getComponent(EntityComponentTypes5.Equippable).getEquipment("Mainhand");
         const options = {
           type: "poke:seat",
           location: data2.block.center(),
@@ -8768,8 +8768,8 @@ world5.beforeEvents.worldInitialize.subscribe((data) => {
           let maxSearch = 64;
           if (player.isJumping) {
             let viewDirection = player.getViewDirection();
-            let cardinalDirecion = PokeClosestCardinal(viewDirection, "upDown");
-            switch (cardinalDirecion.direction) {
+            let cardinalDirection = PokeClosestCardinal(viewDirection, "upDown");
+            switch (cardinalDirection.direction) {
               case Direction2.Up: {
                 for (let i = data2.block.y + 1; i <= Math.min(data2.block.y + maxSearch, data2.dimension.heightRange.max); Math.min(i++, data2.dimension.heightRange.max)) {
                   if (data2.block.above(i - data2.block.y)?.hasTag(`poke_pfe:elevator`) && !Boolean(data2.block.above(i - data2.block.y)?.getRedstonePower())) {
@@ -8809,18 +8809,11 @@ world5.beforeEvents.worldInitialize.subscribe((data) => {
           let maxSearch = 64;
           if (player.isJumping) {
             let viewDirection = player.getViewDirection();
-            console.warn(`X: ${viewDirection.x}, Y: ${viewDirection.y}, Z: ${viewDirection.z}`);
-            let cardinalDirecion = PokeClosestCardinal(viewDirection);
-            switch (cardinalDirecion.direction) {
+            let cardinalDirection = PokeClosestCardinal(viewDirection);
+            switch (cardinalDirection.direction) {
               case Direction2.Up: {
                 for (let i = data2.block.y + 1; i <= Math.min(data2.block.y + maxSearch, data2.dimension.heightRange.max); Math.min(i++, data2.dimension.heightRange.max)) {
-                  console.warn(`Checking Y= ${i} 
-Block ID = ${data2.block.above(i - data2.block.y)?.typeId} 
-Above Amount = ${i - data2.block.y}
-Redstone Power = ${data2.block.above(i - data2.block.y)?.getRedstonePower()}
-Has Tag? = ${data2.block.above(i - data2.block.y)?.hasTag(`poke_pfe:elevator`)}`);
                   if (data2.block.above(i - data2.block.y)?.hasTag(`poke_pfe:elevator`) && !Boolean(data2.block.above(i - data2.block.y)?.getRedstonePower())) {
-                    console.warn(`TELEPORTING`);
                     player.teleport({ x: data2.block.center().x, y: i + 1, z: data2.block.center().z });
                     player.playSound(`mob.endermen.portal`, { location: { x: data2.block.x, y: i + 1, z: data2.block.z } });
                     return;
@@ -8831,13 +8824,7 @@ Has Tag? = ${data2.block.above(i - data2.block.y)?.hasTag(`poke_pfe:elevator`)}`
               }
               case Direction2.Down: {
                 for (let i = data2.block.y - 1; i >= Math.max(data2.block.y - maxSearch, data2.dimension.heightRange.min); Math.min(i--, data2.dimension.heightRange.min)) {
-                  console.warn(`Checking Y= ${i} 
-Block ID = ${data2.block.below(Math.abs(i - data2.block.y))?.typeId} 
-Below Amount = ${Math.abs(i - data2.block.y)}
-Redstone Power = ${data2.block.below(Math.abs(i - data2.block.y))?.getRedstonePower()}
-Has Tag? = ${data2.block.below(Math.abs(i - data2.block.y))?.hasTag(`poke_pfe:elevator`)}`);
                   if (data2.block.below(Math.abs(i - data2.block.y))?.hasTag(`poke_pfe:elevator`) && !Boolean(data2.block.below(Math.abs(i - data2.block.y))?.getRedstonePower())) {
-                    console.warn(`TELEPORTING`);
                     player.teleport({ x: data2.block.center().x, y: i + 1, z: data2.block.center().z });
                     player.playSound(`mob.endermen.portal`, { location: { x: data2.block.x, y: i + 1, z: data2.block.z } });
                     return;
@@ -8848,13 +8835,7 @@ Has Tag? = ${data2.block.below(Math.abs(i - data2.block.y))?.hasTag(`poke_pfe:el
               }
               case Direction2.North: {
                 for (let i = data2.block.z - 1; i >= data2.block.z - maxSearch; i--) {
-                  console.warn(`Checking Z= ${i} 
-Block ID = ${data2.block.north(Math.abs(i - data2.block.z))?.typeId} 
-North Amount = ${Math.abs(i - data2.block.z)}
-Redstone Power = ${data2.block.north(Math.abs(i - data2.block.z))?.getRedstonePower()}
-Has Tag? = ${data2.block.north(Math.abs(i - data2.block.z))?.hasTag(`poke_pfe:elevator`)}`);
                   if (data2.block.north(Math.abs(i - data2.block.z))?.hasTag(`poke_pfe:elevator`) && !Boolean(data2.block.north(Math.abs(i - data2.block.z))?.getRedstonePower())) {
-                    console.warn(`TELEPORTING`);
                     let newBlock = data2.block.north(Math.abs(i - data2.block.z));
                     player.teleport({ x: newBlock.center().x, y: newBlock.y + 1, z: newBlock.center().z });
                     player.playSound(`mob.endermen.portal`, { location: newBlock.center() });
@@ -8866,13 +8847,7 @@ Has Tag? = ${data2.block.north(Math.abs(i - data2.block.z))?.hasTag(`poke_pfe:el
               }
               case Direction2.South: {
                 for (let i = data2.block.z + 1; i <= data2.block.z + maxSearch; i++) {
-                  console.warn(`Checking Z= ${i} 
-Block ID = ${data2.block.south(i - data2.block.z)?.typeId} 
-South Amount = ${i - data2.block.z}
-Redstone Power = ${data2.block.south(i - data2.block.z)?.getRedstonePower()}
-Has Tag? = ${data2.block.south(i - data2.block.z)?.hasTag(`poke_pfe:elevator`)}`);
                   if (data2.block.south(i - data2.block.z)?.hasTag(`poke_pfe:elevator`) && !Boolean(data2.block.south(i - data2.block.z)?.getRedstonePower())) {
-                    console.warn(`TELEPORTING`);
                     let newBlock = data2.block.south(i - data2.block.z);
                     player.teleport({ x: newBlock.center().x, y: newBlock.y + 1, z: newBlock.center().z });
                     player.playSound(`mob.endermen.portal`, { location: newBlock.center() });
@@ -8884,13 +8859,7 @@ Has Tag? = ${data2.block.south(i - data2.block.z)?.hasTag(`poke_pfe:elevator`)}`
               }
               case Direction2.West: {
                 for (let i = data2.block.x - 1; i >= data2.block.x - maxSearch; i--) {
-                  console.warn(`Checking X= ${i} 
-Block ID = ${data2.block.west(Math.abs(i - data2.block.x))?.typeId} 
-West Amount = ${Math.abs(i - data2.block.x)}
-Redstone Power = ${data2.block.west(Math.abs(i - data2.block.x))?.getRedstonePower()}
-Has Tag? = ${data2.block.west(Math.abs(i - data2.block.x))?.hasTag(`poke_pfe:elevator`)}`);
                   if (data2.block.west(Math.abs(i - data2.block.x))?.hasTag(`poke_pfe:elevator`) && !Boolean(data2.block.west(Math.abs(i - data2.block.x))?.getRedstonePower())) {
-                    console.warn(`TELEPORTING`);
                     let newBlock = data2.block.west(Math.abs(i - data2.block.x));
                     player.teleport({ x: newBlock.center().x, y: newBlock.y + 1, z: newBlock.center().z });
                     player.playSound(`mob.endermen.portal`, { location: newBlock.center() });
@@ -8902,13 +8871,7 @@ Has Tag? = ${data2.block.west(Math.abs(i - data2.block.x))?.hasTag(`poke_pfe:ele
               }
               case Direction2.East: {
                 for (let i = data2.block.x + 1; i <= data2.block.x + maxSearch; i++) {
-                  console.warn(`Checking X= ${i} 
-Block ID = ${data2.block.east(i - data2.block.x)?.typeId} 
-East Amount = ${i - data2.block.x}
-Redstone Power = ${data2.block.east(i - data2.block.x)?.getRedstonePower()}
-Has Tag? = ${data2.block.east(i - data2.block.x)?.hasTag(`poke_pfe:elevator`)}`);
                   if (data2.block.east(i - data2.block.x)?.hasTag(`poke_pfe:elevator`) && !Boolean(data2.block.east(i - data2.block.x)?.getRedstonePower())) {
-                    console.warn(`TELEPORTING`);
                     let newBlock = data2.block.east(i - data2.block.x);
                     player.teleport({ x: newBlock.center().x, y: newBlock.y + 1, z: newBlock.center().z });
                     player.playSound(`mob.endermen.portal`, { location: newBlock.center() });

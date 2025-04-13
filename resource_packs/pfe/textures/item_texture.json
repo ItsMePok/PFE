@@ -315,6 +315,54 @@
 		"poke_nebula_logger": {
 			"textures": "textures/poke/pfe/nebula_logger"
 		},
+		"poke_shade_axe": {
+			"textures": "textures/poke/pfe/shade_axe"
+		},
+		"poke_radium_axe": {
+			"textures": "textures/poke/pfe/radium_axe"
+		},
+		"poke_emerald_axe": {
+			"textures": "textures/poke/pfe/emerald_axe"
+		},
+		"poke_amethyst_axe": {
+			"textures": "textures/poke/pfe/amethyst_axe"
+		},
+		"poke_death_axe": {
+			"textures": "textures/poke/pfe/death_axe"
+		},
+		"poke_astral_axe": {
+			"textures": "textures/poke/pfe/astral_axe"
+		},
+		"poke_void_axe": {
+			"textures": "textures/poke/pfe/void_axe"
+		},
+		"poke_galaxy_axe": {
+			"textures": "textures/poke/pfe/galaxy_axe"
+		},
+		"poke_molten_axe": {
+			"textures": "textures/poke/pfe/molten_axe"
+		},
+		"poke_medic_axe": {
+			"textures": "textures/poke/pfe/medic_axe"
+		},
+		"poke_demonic_axe": {
+			"textures": "textures/poke/pfe/demonic_axe"
+		},
+		"poke_godly_axe": {
+			"textures": "textures/poke/pfe/godly_axe"
+		},
+		"poke_hellish_axe": {
+			"textures": "textures/poke/pfe/hellish_axe"
+		},
+		"poke_holy_axe": {
+			"textures": "textures/poke/pfe/holy_axe"
+		},
+		"poke_onyx_axe": {
+			"textures": "textures/poke/pfe/onyx_axe"
+		},
+		"poke_cobalt_axe": {
+			"textures": "textures/poke/pfe/cobalt_axe"
+		},
 		//Hoes
 		"poke_nebula_hoe": {
 			"textures": "textures/poke/pfe/nebula_hoe"
@@ -546,6 +594,12 @@
 		//Bundled Items
 		"pfe-gift_box": {
 			"textures": "textures/items/pfe-gift_box"
+		},
+		"poke_gift_box_open_front": {
+			"textures": "textures/items/pfe-gift_box_open_front"
+		},
+		"poke_gift_box_open_back": {
+			"textures": "textures/items/pfe-gift_box_open_back"
 		},
 		"poke_bundled_feathers": {
 			"textures": "textures/poke/pfe/bundled_feathers"

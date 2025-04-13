@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:dye_unmixer",
@@ -15,6 +15,7 @@
 			}
 		},
 		"components": {
+			"minecraft:display_name": "%poke_pfe.dye_unmixer\n%poke_pfe.tag",
 			"minecraft:item_visual": {
 				"geometry": {
 					"identifier": "geometry.poke_pfe.dye_unmixer",

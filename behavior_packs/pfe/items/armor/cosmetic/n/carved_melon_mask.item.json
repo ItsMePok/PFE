@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:carved_melon_mask",
@@ -8,14 +8,17 @@
 			}
 		},
 		"components": {
-      "minecraft:rarity":"common",
-      "minecraft:tags": {
-        "tags": [
-          "novelty:is_face"
-        ]
-      },
+			"minecraft:display_name": {
+				"value": "%poke_pfe.carved_melon_mask\n%poke_pfe.tag"
+			},
+			"minecraft:rarity": "common",
+			"minecraft:tags": {
+				"tags": [
+					"novelty:is_face"
+				]
+			},
 			"minecraft:max_stack_size": 1,
-			"minecraft:icon":{
+			"minecraft:icon": {
 				"textures": {
 					"default": "poke_carved_melon_mask"
 				}

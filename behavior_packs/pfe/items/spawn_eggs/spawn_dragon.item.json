@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:spawn_dragon",
@@ -9,6 +9,9 @@
 			}
 		},
 		"components": {
+			"minecraft:display_name": {
+				"value": "%poke_pfe.spawn_dragon\n%poke_pfe.tag"
+			},
 			"minecraft:icon": "poke_sparky_spawn_egg",
 			"minecraft:custom_components": [
 				"poke:cc_spawnEgg"

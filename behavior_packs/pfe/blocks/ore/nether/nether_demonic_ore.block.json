@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:nether_demonic_ore",
@@ -8,13 +8,21 @@
 			}
 		},
 		"components": {
+			"minecraft:display_name": "%poke_pfe.nether_demonic_ore\n%poke_pfe.tag",
 			"minecraft:redstone_conductivity": {
 				"redstone_conductor": true,
 				"allows_wire_to_step_down": true
 			},
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 15,
-				"item_specific_speeds": [{"item":{"tags": "q.any_tag('minecraft:is_pickaxe')"},"destroy_speed": 2.25}]
+				"item_specific_speeds": [
+					{
+						"item": {
+							"tags": "q.any_tag('minecraft:is_pickaxe')"
+						},
+						"destroy_speed": 2.25
+					}
+				]
 			},
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 15
@@ -23,10 +31,10 @@
 			"tag:pfe": {},
 			"tag:metal": {},
 			"tag:minecraft:metal": {},
-			"tag:stone_pick_diggable":{},
-			"tag:minecraft:is_pickaxe_item_destructible":{},
+			"tag:stone_pick_diggable": {},
+			"tag:minecraft:is_pickaxe_item_destructible": {},
 			"minecraft:loot": "loot_tables/poke/pfe/demonic_ore.loot.json",
-			"minecraft:custom_components":[
+			"minecraft:custom_components": [
 				"poke:fortune"
 			]
 		}

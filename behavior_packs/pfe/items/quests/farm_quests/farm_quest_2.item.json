@@ -1,10 +1,13 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:farm_quest_2"
 		},
 		"components": {
+			"minecraft:display_name": {
+				"value": "%poke_pfe.farm_quest 2\n§7%poke_pfe.questDesc\n%poke_pfe.tag"
+			},
 			"minecraft:icon": "poke_farm_quest",
 			"minecraft:tags": {
 				"tags": [

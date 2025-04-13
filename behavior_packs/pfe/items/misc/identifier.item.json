@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke-pfe:identifier",
@@ -8,8 +8,11 @@
 			}
 		},
 		"components": {
-			"minecraft:icon":"poke-pfe:identifier",
-			"minecraft:rarity":"common",
+			"minecraft:display_name": {
+				"value": "%poke_pfe.identifier\n%poke_pfe.tag"
+			},
+			"minecraft:icon": "poke-pfe:identifier",
+			"minecraft:rarity": "common",
 			"minecraft:hand_equipped": {
 				"value": true
 			},

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:dodge_spell",
@@ -8,18 +8,21 @@
 			}
 		},
 		"components": {
-			"minecraft:icon":"poke_dodge_spell",
+			"minecraft:display_name": {
+				"value": "%poke_pfe.dodge_spell\n%poke_pfe.tag"
+			},
+			"minecraft:icon": "poke_dodge_spell",
 			"minecraft:durability": {
 				"max_durability": 0
 			},
-			"minecraft:cooldown":{
+			"minecraft:cooldown": {
 				"duration": 1,
-				"category":"poke:dodge_spell"
+				"category": "poke:dodge_spell"
 			},
-			"minecraft:custom_components":[
+			"minecraft:custom_components": [
 				"poke:cc_dodge"
 			],
-			"minecraft:hover_text_color":"material_amethyst"
+			"minecraft:hover_text_color": "material_amethyst"
 		}
 	}
 }

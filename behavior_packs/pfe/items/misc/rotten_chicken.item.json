@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:rotten_chicken",
@@ -8,6 +8,9 @@
 			}
 		},
 		"components": {
+			"minecraft:display_name": {
+				"value": "%poke_pfe.rotten_chicken\n%poke_pfe.tag"
+			},
 			"minecraft:custom_components": [
 				"poke:consumeEffects"
 			],
@@ -20,7 +23,7 @@
 				"movement_modifier": 0.32,
 				"use_duration": 1.6
 			},
-			"minecraft:icon":"poke_rotten_chicken",
+			"minecraft:icon": "poke_rotten_chicken",
 			"minecraft:use_animation": "eat"
 		}
 	}

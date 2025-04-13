@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:honey_crossbow",
@@ -8,9 +8,13 @@
 			}
 		},
 		"components": {
+			"minecraft:display_name": {
+				"value": "%poke_pfe.honey_crossbow\n%poke_pfe.tag"
+			},
 			"minecraft:tags": {
 				"tags": [
-					"pfe:crossbow"
+					"pfe:crossbow",
+					"minecraft:is_crossbow"
 				]
 			},
 			"minecraft:hover_text_color": "material_gold",
@@ -79,11 +83,6 @@
 						],
 						"repair_amount": "query.max_durability*0.25"
 					}
-				]
-			},
-			"minecraft:tags": {
-				"tags": [
-					"minecraft:is_crossbow"
 				]
 			},
 			"minecraft:hand_equipped": true,

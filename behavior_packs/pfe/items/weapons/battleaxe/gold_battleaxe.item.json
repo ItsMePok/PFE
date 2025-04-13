@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.60",
+  "format_version": "1.21.70",
   "minecraft:item": {
     "description": {
       "identifier": "poke:gold_battleaxe",
@@ -8,14 +8,23 @@
       }
     },
     "components": {
-      "minecraft:rarity":"common",
-      "minecraft:icon":"poke_gold_battleaxe",
+      "minecraft:display_name": {
+        "value": "%poke_pfe.gold_battleaxe\n%poke_pfe.tag"
+      },
+      "minecraft:rarity": "common",
+      "minecraft:icon": "poke_gold_battleaxe",
       "minecraft:max_stack_size": 1,
       "minecraft:hand_equipped": true,
       "minecraft:durability": {
-        "max_durability": 650,"damage_chance": {"max": 100,"min": 60}
+        "max_durability": 650,
+        "damage_chance": {
+          "max": 100,
+          "min": 60
+        }
       },
-      "minecraft:damage": {"value": 7},
+      "minecraft:damage": {
+        "value": 7
+      },
       "minecraft:enchantable": {
         "value": 40,
         "slot": "sword"
@@ -47,13 +56,15 @@
         "category": "poke:axe_use",
         "duration": 2
       },
-			"minecraft:tags": {"tags": [
-				"pfe:Command:function poke/pfe/gold_battleaxe:pfeCommandEnd"
-			]},
-			"minecraft:custom_components":[
-				"poke:cc_on_use",
-				"poke:normalMining"
-			],
+      "minecraft:tags": {
+        "tags": [
+          "pfe:Command:function poke/pfe/gold_battleaxe:pfeCommandEnd"
+        ]
+      },
+      "minecraft:custom_components": [
+        "poke:cc_on_use",
+        "poke:normalMining"
+      ],
       "minecraft:use_modifiers": {
         "use_duration": 0,
         "movement_modifier": 1

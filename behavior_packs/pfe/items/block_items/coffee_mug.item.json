@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:coffee_mug",
@@ -8,11 +8,11 @@
 			}
 		},
 		"components": {
-			"minecraft:rarity":"common",
-			"minecraft:max_stack_size": 64,
-			"minecraft:display_name":{
-				"value": "tile.poke:coffee_mug.name"
+			"minecraft:display_name": {
+				"value": "%poke_pfe.coffee_mug\n%poke_pfe.tag"
 			},
+			"minecraft:rarity": "common",
+			"minecraft:max_stack_size": 64,
 			"minecraft:food": {
 				"nutrition": 3,
 				"saturation_modifier": 0.9,
@@ -24,9 +24,14 @@
 				"use_duration": 1.6
 			},
 			"minecraft:use_animation": "drink",
-			"minecraft:block_placer": {"block": "poke:coffee_mug","replace_block_item":true},
+			"minecraft:block_placer": {
+				"block": "poke:coffee_mug",
+				"replace_block_item": true
+			},
 			"minecraft:tags": {
-				"tags": ["minecraft:is_food"]
+				"tags": [
+					"minecraft:is_food"
+				]
 			}
 		}
 	}

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:void_potion",
@@ -10,7 +10,7 @@
 		"components": {
 			"minecraft:rarity": "common",
 			"minecraft:display_name": {
-				"value": "%item.poke_pfe.void_potion\n§7%potion.nightVision (30:00)\n%potion.digSpeed %enchantment.level.3 (10:00)\n%potion.regeneration %enchantment.level.2 (10:00)\n%potion.moveSpeed %enchantment.level.5 (20:00)\n%poke_pfe.tag"
+				"value": "%poke_pfe.void_potion\n§7%potion.nightVision (30:00)\n%potion.digSpeed %enchantment.level.3 (10:00)\n%potion.regeneration %enchantment.level.2 (10:00)\n%potion.moveSpeed %enchantment.level.5 (20:00)\n%poke_pfe.tag"
 			},
 			"minecraft:custom_components": [
 				"poke:consumeEffects"

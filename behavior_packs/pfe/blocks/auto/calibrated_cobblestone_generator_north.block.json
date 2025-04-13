@@ -1,9 +1,14 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:calibrated_cobblestone_generator_north",
-			"states": {"pfe:active":[0,1]}
+			"states": {
+				"pfe:active": [
+					0,
+					1
+				]
+			}
 		},
 		"permutations": [
 			{
@@ -14,21 +19,31 @@
 			}
 		],
 		"components": {
+			"minecraft:display_name": "%poke_pfe.calibrated_cobblestone_generator\n%poke_pfe.tag",
 			"minecraft:redstone_conductivity": {
 				"redstone_conductor": true,
 				"allows_wire_to_step_down": true
 			},
 			"minecraft:loot": "loot_tables/poke/pfe/calibrated_cobble_gen.loot.json",
-			"minecraft:destructible_by_mining": {"seconds_to_destroy": 1},
-			"minecraft:destructible_by_explosion": {"explosion_resistance": 30},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 1
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 30
+			},
 			"minecraft:map_color": "#17273b",
 			"tag:pfe": {},
 			"tag:metal": {},
 			"tag:minecraft:metal": {},
-			"tag:stone_pick_diggable":{},
-			"tag:minecraft:is_pickaxe_item_destructible":{},
-			"minecraft:tick": {"interval_range": [10,10]},
-			"minecraft:custom_components":[
+			"tag:stone_pick_diggable": {},
+			"tag:minecraft:is_pickaxe_item_destructible": {},
+			"minecraft:tick": {
+				"interval_range": [
+					10,
+					10
+				]
+			},
+			"minecraft:custom_components": [
 				"poke:cc_calibrate",
 				"poke:cc_CaliCobbleGen"
 			]

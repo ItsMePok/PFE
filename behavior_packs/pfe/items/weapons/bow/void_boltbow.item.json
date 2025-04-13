@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:void_boltbow",
@@ -8,8 +8,11 @@
 			}
 		},
 		"components": {
-			"minecraft:rarity":"common",
-			"minecraft:icon":"poke_void_boltbow",
+			"minecraft:display_name": {
+				"value": "%poke_pfe.void_boltbow\n%poke_pfe.tag"
+			},
+			"minecraft:rarity": "common",
+			"minecraft:icon": "poke_void_boltbow",
 			"minecraft:can_destroy_in_creative": {
 				"value": false
 			},
@@ -20,19 +23,25 @@
 			"minecraft:repairable": {
 				"repair_items": [
 					{
-						"items": ["poke:repair_core"],
+						"items": [
+							"poke:repair_core"
+						],
 						"repair_amount": "query.max_durability"
 					},
 					{
-						"items": ["poke:void_ingot"],
+						"items": [
+							"poke:void_ingot"
+						],
 						"repair_amount": "query.max_durability*0.25"
 					},
 					{
-						"items": ["poke:void_nugget"],
+						"items": [
+							"poke:void_nugget"
+						],
 						"repair_amount": "query.max_durability*0.028"
 					}
 				]
-			}, 
+			},
 			"minecraft:max_stack_size": 1,
 			"minecraft:enchantable": {
 				"value": 75,
@@ -45,7 +54,7 @@
 				},
 				"max_durability": 2000
 			},
-			"minecraft:custom_components":[
+			"minecraft:custom_components": [
 				"poke:cc_bowAim",
 				"poke:boltbow"
 			]

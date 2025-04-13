@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.60",
+	"format_version": "1.21.70",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:red_present",
@@ -15,6 +15,7 @@
 			}
 		},
 		"components": {
+			"minecraft:display_name": "%poke_pfe.red_present\n%poke_pfe.tag",
 			"minecraft:liquid_detection": {
 				"detection_rules": [
 					{
@@ -56,8 +57,8 @@
 			},
 			"tag:pfe": {},
 			"tag:axe": {},
-			"tag:wood":{},
-			"tag:minecraft:wood":{},
+			"tag:wood": {},
+			"tag:minecraft:wood": {},
 			"minecraft:geometry": "geometry.poke_pfe.red_present",
 			"minecraft:map_color": "#9b2626",
 			"minecraft:material_instances": {
@@ -66,7 +67,8 @@
 					"render_method": "alpha_test",
 					"ambient_occlusion": false
 				}
-			},"minecraft:loot": "loot_tables/poke/pfe/present.loot.json"
+			},
+			"minecraft:loot": "loot_tables/poke/pfe/present.loot.json"
 		},
 		"permutations": [
 			// Facing north

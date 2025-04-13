@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.60",
+  "format_version": "1.21.70",
   "minecraft:item": {
     "description": {
       "identifier": "poke:hostile_mob_magnet",
@@ -8,13 +8,16 @@
       }
     },
     "components": {
-      "minecraft:icon":"poke_hostile_mob_magnet",
+      "minecraft:display_name": {
+        "value": "%poke_pfe.hostile_mob_magnet\n%poke_pfe.tag"
+      },
+      "minecraft:icon": "poke_hostile_mob_magnet",
       "minecraft:max_stack_size": 1,
       "minecraft:durability": {
         "max_durability": 300
       },
       "minecraft:enchantable": {
-        "slot": "shield",
+        "slot": "flintsteel",
         "value": 30
       },
       "minecraft:repairable": {
@@ -34,21 +37,23 @@
         ]
       },
       "minecraft:hand_equipped": true,
-      "minecraft:tags": {"tags": [
-				"pfe:Command:tp @e[r=55,family=monster] @s:pfeCommandEnd"
-			]},
-			"minecraft:custom_components":[
-				"poke:cc_on_use",
-				"poke:normalMining"
-			],
-			"minecraft:use_modifiers": {
-			  "use_duration": 0,
-			  "movement_modifier": 1
-			},
-			"minecraft:cooldown": {
-				"category": "poke:hostile_mob_magnet",
-				"duration": 0.2
-			}
+      "minecraft:tags": {
+        "tags": [
+          "pfe:Command:tp @e[r=55,family=monster] @s:pfeCommandEnd"
+        ]
+      },
+      "minecraft:custom_components": [
+        "poke:cc_on_use",
+        "poke:normalMining"
+      ],
+      "minecraft:use_modifiers": {
+        "use_duration": 0,
+        "movement_modifier": 1
+      },
+      "minecraft:cooldown": {
+        "category": "poke:hostile_mob_magnet",
+        "duration": 0.2
+      }
     }
   }
 }

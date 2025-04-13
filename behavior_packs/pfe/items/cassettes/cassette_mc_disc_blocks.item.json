@@ -1,15 +1,28 @@
 {
-  "format_version": "1.21.60",
+  "format_version": "1.21.70",
   "minecraft:item": {
     "description": {
       "identifier": "poke:cassette_mc_disc_blocks"
     },
     "components": {
-			"minecraft:rarity":"uncommon",
-      "minecraft:icon":"poke_cassette_mc_disc_blocks",
-      "minecraft:tags": {"tags": ["minecraft:music_disc"]},
-      "minecraft:record": {"comparator_signal": 3,"sound_event": "record.blocks","duration": 345},
-      "minecraft:custom_components": ["poke:cas"]
+      "minecraft:display_name": {
+        "value": "%poke_pfe.cassette\n%poke_pfe.tag"
+      },
+      "minecraft:rarity": "uncommon",
+      "minecraft:icon": "poke_cassette_mc_disc_blocks",
+      "minecraft:tags": {
+        "tags": [
+          "minecraft:music_disc"
+        ]
+      },
+      "minecraft:record": {
+        "comparator_signal": 3,
+        "sound_event": "record.blocks",
+        "duration": 345
+      },
+      "minecraft:custom_components": [
+        "poke:cas"
+      ]
     }
   }
 }
