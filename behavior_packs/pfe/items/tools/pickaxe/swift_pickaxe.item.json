@@ -15,7 +15,6 @@
 			"minecraft:custom_components": [
 				"poke:normalMining"
 			],
-			"minecraft:hover_text_color": "aqua",
 			"minecraft:max_stack_size": 1,
 			"minecraft:durability": {
 				"max_durability": 5000,

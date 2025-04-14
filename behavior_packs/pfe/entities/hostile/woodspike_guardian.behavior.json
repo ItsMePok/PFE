@@ -181,6 +181,10 @@
 			"minecraft:behavior.guardian_attack": {
 				"priority": 4
 			},
+			"minecraft:home": {
+				"restriction_radius": 64,
+				"home_block_list": []
+			},
 			"minecraft:behavior.move_towards_home_restriction": {
 				"priority": 5,
 				"speed_multiplier": 1

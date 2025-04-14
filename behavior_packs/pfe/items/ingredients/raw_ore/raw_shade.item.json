@@ -11,8 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.raw_shade\n%poke_pfe.tag"
 			},
-			"minecraft:icon": "poke_raw_shade",
-			"minecraft:hover_text_color": "green"
+			"minecraft:icon": "poke_raw_shade"
 		}
 	}
 }

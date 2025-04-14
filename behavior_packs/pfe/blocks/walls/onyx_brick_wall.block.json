@@ -38,7 +38,7 @@
 			}
 		},
 		"components": {
-			"minecraft:display_name": "%poke_pfe.oynx_brick_wall\n%poke_pfe.tag",
+			"minecraft:display_name": "%poke_pfe.onyx_brick_wall\n%poke_pfe.tag",
 			"minecraft:item_visual": {
 				"geometry": {
 					"identifier": "geometry.poke_pfe.wall.item_visual"

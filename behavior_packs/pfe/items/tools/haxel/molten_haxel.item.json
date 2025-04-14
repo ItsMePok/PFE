@@ -59,7 +59,6 @@
 				"slot": "axe",
 				"value": 30
 			},
-			"minecraft:hover_text_color": "red",
 			"minecraft:damage": {
 				"value": 15
 			},

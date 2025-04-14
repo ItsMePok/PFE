@@ -30,7 +30,6 @@
 				"block": "poke:golden_turnip",
 				"replace_block_item": true
 			},
-			"minecraft:hover_text_color": "minecoin_gold",
 			"minecraft:tags": {
 				"tags": [
 					"minecraft:is_food"

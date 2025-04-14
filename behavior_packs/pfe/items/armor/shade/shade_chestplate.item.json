@@ -29,7 +29,6 @@
 				"slot": "slot.armor.chest",
 				"protection": 15
 			},
-			"minecraft:hover_text_color": "green",
 			"minecraft:repairable": {
 				"repair_items": [
 					{

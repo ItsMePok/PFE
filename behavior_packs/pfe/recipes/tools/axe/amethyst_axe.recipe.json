@@ -1,0 +1,38 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:amethyst_axe"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"CC",
+			"CS",
+			" S"
+		],
+		"unlock": [
+			{
+				"item": "stick"
+			},
+			{
+				"item": "amethyst_block"
+			},
+			{
+				"item": "amethyst_shard"
+			}
+		],
+		"key": {
+			"C": {
+				"item": "amethyst_block"
+			},
+			"S": {
+				"item": "stick"
+			}
+		},
+		"result": {
+			"item": "poke:amethyst_axe"
+		}
+	}
+}

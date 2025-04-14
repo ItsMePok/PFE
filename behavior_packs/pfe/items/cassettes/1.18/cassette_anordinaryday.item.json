@@ -5,9 +5,9 @@
       "identifier": "poke:cassette_anordinaryday"
     },
     "components": {
-			"minecraft:display_name": {
-				"value": "%poke_pfe.cassette\n%poke_pfe.tag"
-			},
+      "minecraft:display_name": {
+        "value": "%poke_pfe.cassette\n§7%poke_pfe.cassette.anordinaryday\n%poke_pfe.tag"
+      },
       "minecraft:icon": "poke_cassette_anordinaryday",
       "minecraft:custom_components": [
         "poke:cas"

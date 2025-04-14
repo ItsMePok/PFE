@@ -23,6 +23,10 @@
 					"none_of": [
 						{
 							"test": "is_family",
+							"value": "inanimate"
+						},
+						{
+							"test": "is_family",
 							"value": "dummy_entity"
 						}
 					]

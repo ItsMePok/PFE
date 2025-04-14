@@ -6,7 +6,7 @@
 		},
 		"components": {
 			"minecraft:display_name": {
-				"value": "%poke_pfe.cassette\n%poke_pfe.tag"
+				"value": "%poke_pfe.cassette\n§7%poke_pfe.cassette.theyListen\n%poke_pfe.tag"
 			},
 			"minecraft:rarity": "epic",
 			"minecraft:icon": "poke_cassette_listener",

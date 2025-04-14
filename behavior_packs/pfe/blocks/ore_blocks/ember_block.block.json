@@ -8,7 +8,7 @@
 			}
 		},
 		"components": {
-			"minecraft:display_name": "%poke_pfe.ember_block_block\n%poke_pfe.tag",
+			"minecraft:display_name": "%poke_pfe.ember_block\n%poke_pfe.tag",
 			"minecraft:redstone_conductivity": {
 				"redstone_conductor": true,
 				"allows_wire_to_step_down": true

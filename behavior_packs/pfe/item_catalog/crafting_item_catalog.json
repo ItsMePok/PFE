@@ -777,6 +777,22 @@
               "name": "minecraft:itemGroup.name.axe"
             },
             "items": [
+              "poke:emerald_axe",
+              "poke:amethyst_axe",
+              "poke:cobalt_axe",
+              "poke:shade_axe",
+              "poke:onyx_axe",
+              "poke:holy_axe",
+              "poke:hellish_axe",
+              "poke:radium_axe",
+              "poke:godly_axe",
+              "poke:demonic_axe",
+              "poke:medic_axe",
+              "poke:galaxy_axe",
+              "poke:molten_axe",
+              "poke:void_axe",
+              "poke:astral_axe",
+              "poke:death_axe",
               "poke:nebula_logger"
             ]
           },

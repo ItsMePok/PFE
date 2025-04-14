@@ -1,0 +1,35 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:medic_axe"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"CC",
+			"CS",
+			" S"
+		],
+		"unlock": [
+			{
+				"item": "poke:godly_stick"
+			},
+			{
+				"item": "poke:medic_ingot"
+			}
+		],
+		"key": {
+			"C": {
+				"item": "poke:medic_ingot"
+			},
+			"S": {
+				"item": "poke:godly_stick"
+			}
+		},
+		"result": {
+			"item": "poke:medic_axe"
+		}
+	}
+}

@@ -9,7 +9,7 @@
 		},
 		"components": {
 			"minecraft:display_name": {
-				"value": "%poke_pfe.miner_hat\n%poke_pfe.tag"
+				"value": "%poke_pfe.miner_helmet\n%poke_pfe.tag"
 			},
 			"minecraft:rarity": "common",
 			"minecraft:tags": {

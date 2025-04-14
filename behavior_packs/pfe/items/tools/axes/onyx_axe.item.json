@@ -10,7 +10,7 @@
 		},
 		"components": {
 			"minecraft:display_name": {
-				"value": "%poke_pfe.oynx_axe\n%poke_pfe.tag"
+				"value": "%poke_pfe.onyx_axe\n%poke_pfe.tag"
 			},
 			"minecraft:custom_components": [
 				"poke:normalMining"

@@ -19,7 +19,6 @@
 			"minecraft:max_stack_size": 1,
 			"minecraft:hand_equipped": true,
 			"minecraft:icon": "poke_circuit_sword",
-			"minecraft:hover_text_color": "green",
 			"minecraft:durability": {
 				"max_durability": 2000,
 				"damage_chance": {

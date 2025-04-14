@@ -1,0 +1,38 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke:onyx_axe"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"CC",
+			"CS",
+			" S"
+		],
+		"unlock": [
+			{
+				"item": "stick"
+			},
+			{
+				"item": "poke:raw_onyx"
+			},
+			{
+				"item": "poke:onyx_ingot"
+			}
+		],
+		"key": {
+			"C": {
+				"item": "poke:onyx_ingot"
+			},
+			"S": {
+				"item": "stick"
+			}
+		},
+		"result": {
+			"item": "poke:onyx_axe"
+		}
+	}
+}

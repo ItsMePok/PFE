@@ -29,7 +29,6 @@
 				"slot": "slot.armor.head",
 				"protection": 8
 			},
-			"minecraft:hover_text_color": "green",
 			"minecraft:repairable": {
 				"repair_items": [
 					{

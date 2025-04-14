@@ -153,6 +153,7 @@
 			}
 		],
 		"components": {
+			"minecraft:display_name": "%poke_pfe.raw_galaxy_slab\n%poke_pfe.tag",
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 7.5,
 				"item_specific_speeds": [

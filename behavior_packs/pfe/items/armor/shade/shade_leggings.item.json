@@ -4,8 +4,7 @@
 		"description": {
 			"identifier": "poke:shade_leggings",
 			"menu_category": {
-				"category": "equipment",
-				"group": "minecraft:itemGroup.name.leggings"
+				"category": "equipment"
 			}
 		},
 		"components": {
@@ -29,7 +28,6 @@
 				"slot": "slot.armor.legs",
 				"protection": 15
 			},
-			"minecraft:hover_text_color": "green",
 			"minecraft:repairable": {
 				"repair_items": [
 					{

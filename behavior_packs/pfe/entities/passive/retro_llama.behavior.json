@@ -282,16 +282,16 @@
 					],
 					"auto_reject_items": [
 						{
-							"item": "horsearmorleather"
+							"item": "leather_horse_armor"
 						},
 						{
-							"item": "horsearmoriron"
+							"item": "iron_horse_armor"
 						},
 						{
-							"item": "horsearmorgold"
+							"item": "golden_horse_armor"
 						},
 						{
-							"item": "horsearmordiamond"
+							"item": "diamond_horse_armor"
 						},
 						{
 							"item": "saddle"

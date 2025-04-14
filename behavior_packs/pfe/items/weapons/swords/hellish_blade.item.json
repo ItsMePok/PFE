@@ -31,7 +31,6 @@
 				"value": 60
 			},
 			"minecraft:icon": "poke_hellish_sword",
-			"minecraft:hover_text_color": "dark_red",
 			"minecraft:can_destroy_in_creative": false,
 			"minecraft:max_stack_size": 1,
 			"minecraft:hand_equipped": true,

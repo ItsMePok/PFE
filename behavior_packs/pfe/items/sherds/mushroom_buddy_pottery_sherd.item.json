@@ -9,7 +9,7 @@
 		},
 		"components": {
 			"minecraft:display_name": {
-				"value": "item.poke:pfe-mushroom_pottery_sherd.name"
+				"value": "item.poke:pfe-mushroom_buddy_pottery_sherd.name"
 			},
 			"minecraft:icon": "poke_mushroom_buddy_pottery_sherd",
 			"minecraft:tags": {

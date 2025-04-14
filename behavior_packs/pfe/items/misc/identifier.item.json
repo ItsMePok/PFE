@@ -9,7 +9,7 @@
 		},
 		"components": {
 			"minecraft:display_name": {
-				"value": "%poke_pfe.identifier\n%poke_pfe.tag"
+				"value": "%poke_pfe.identifier\n%poke_pfe.identifier.desc\n%poke_pfe.tag"
 			},
 			"minecraft:icon": "poke-pfe:identifier",
 			"minecraft:rarity": "common",

@@ -48,7 +48,6 @@
 					}
 				]
 			},
-			"minecraft:hover_text_color": "light_purple",
 			"minecraft:digger": {
 				"destroy_speeds": [
 					{

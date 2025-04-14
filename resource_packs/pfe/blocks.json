@@ -678,12 +678,10 @@
     "sound": "deepslate_bricks"
   },
   "poke:astral_bricks": {
-    "sound": "deepslate_bricks",
-    "textures": "poke_astral_bricks"
+    "sound": "deepslate_bricks"
   },
   "poke:cracked_cobalt_bricks": {
-    "sound": "deepslate_bricks",
-    "textures": "poke_cracked_cobalt_bricks"
+    "sound": "deepslate_bricks"
   },
   "poke:cobalt_bricks_slab": {
     "sound": "deepslate_bricks"
@@ -873,8 +871,7 @@
     "sound": "wood"
   },
   "poke:magnet": {
-    "textures": "poke_magnet_block",
-    "sound": "wood"
+    "sound": "stone"
   },
   "poke:dirter": {
     "sound": "wood",

@@ -8,6 +8,7 @@
 			}
 		},
 		"components": {
+			"minecraft:rarity": "uncommon",
 			"minecraft:display_name": {
 				"value": "%poke_pfe.golden_chicken\n%poke_pfe.tag"
 			},
@@ -29,7 +30,6 @@
 				"use_duration": 1.6
 			},
 			"minecraft:use_animation": "eat",
-			"minecraft:hover_text_color": "minecoin_gold",
 			"minecraft:tags": {
 				"tags": [
 					"minecraft:is_food"

@@ -38,7 +38,6 @@
 				]
 			},
 			"minecraft:icon": "poke_shade_scythe",
-			"minecraft:hover_text_color": "green",
 			"minecraft:max_stack_size": 1,
 			"minecraft:hand_equipped": true,
 			"minecraft:durability": {

@@ -4,8 +4,7 @@
 		"description": {
 			"identifier": "poke:cactus_leggings",
 			"menu_category": {
-				"category": "equipment",
-				"group": "minecraft:itemGroup.name.leggings"
+				"category": "equipment"
 			}
 		},
 		"components": {

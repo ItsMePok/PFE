@@ -62,7 +62,6 @@
 				"slot": "axe",
 				"value": 50
 			},
-			"minecraft:hover_text_color": "material_netherite",
 			"minecraft:damage": {
 				"value": 7
 			},

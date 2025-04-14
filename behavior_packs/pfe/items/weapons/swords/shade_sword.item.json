@@ -21,7 +21,6 @@
 			"minecraft:damage": {
 				"value": 9
 			},
-			"minecraft:hover_text_color": "green",
 			"minecraft:can_destroy_in_creative": false,
 			"minecraft:hand_equipped": true,
 			"minecraft:durability": {

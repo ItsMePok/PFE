@@ -8,7 +8,7 @@
 			}
 		},
 		"components": {
-			"minecraft:display_name": "%poke_pfe:demonic_ore\n%poke_pfe.tag",
+			"minecraft:display_name": "%poke_pfe.demonic_ore\n%poke_pfe.tag",
 			"minecraft:map_color": "#3e2428",
 			"tag:pfe": {},
 			"tag:metal": {},

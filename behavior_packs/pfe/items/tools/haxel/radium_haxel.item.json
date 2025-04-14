@@ -65,7 +65,6 @@
 					}
 				]
 			},
-			"minecraft:hover_text_color": "green",
 			"minecraft:damage": {
 				"value": 7
 			},

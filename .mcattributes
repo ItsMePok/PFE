@@ -1,5 +1,5 @@
 diagnostic.disable.=false
-diagnostic.disable.debugger.internal.exception=false
+diagnostic.disable.debugger.internal.exception=true
 diagnostic.disable.minecraft.language.comment.invalid=false
 diagnostic.disable.behaviorpack.item.component.missing=false
 diagnostic.disable.behaviorpack.block.components.texture_not_found=false

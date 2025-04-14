@@ -17,7 +17,6 @@
 					"minecraft:is_crossbow"
 				]
 			},
-			"minecraft:hover_text_color": "material_gold",
 			"minecraft:icon": "poke_honey_crossbow",
 			"minecraft:use_modifiers": {
 				"movement_modifier": 0.33,

@@ -28,7 +28,6 @@
         "value": 40,
         "slot": "sword"
       },
-      "minecraft:hover_text_color": "green",
       "minecraft:can_destroy_in_creative": false,
       "minecraft:repairable": {
         "repair_items": [

@@ -21,8 +21,7 @@
 			},
 			"minecraft:custom_components": [
 				"poke:cc_dodge"
-			],
-			"minecraft:hover_text_color": "material_amethyst"
+			]
 		}
 	}
 }
