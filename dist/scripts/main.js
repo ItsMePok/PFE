@@ -6274,10 +6274,12 @@ function CheckEffects(player, ArmorData) {
   if (Offhand) {
     totalPieces += 1;
     switch (false) {
-      default:
-        totalPieces -= 1;
       case !Offhand.hasTag(ArmorData.nightVision.tag): {
         effects = effects.concat(ArmorData.nightVision.effects);
+        break;
+      }
+      default: {
+        totalPieces -= 1;
         break;
       }
     }
