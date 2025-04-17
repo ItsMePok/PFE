@@ -10,21 +10,34 @@ hidden: true
 
 ## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining: <a href="#obtaining" id="obtaining"></a>
 
-### <img src="https://minecraft.wiki/images/Clock_JE3_BE3.gif?8eaae" alt="" data-size="line"> **Use Duration**:&#x20;
+### <img src="https://minecraft.wiki/images/Clock_JE3_BE3.gif?8eaae" alt="" data-size="line"> **Use Duration**:  <a href="#use-duration" id="use-duration"></a>
 
-### <img src="https://minecraft.wiki/images/Saturation_JE1.png?dbba6" alt="" data-size="line"> **Saturation**:
+### <img src="https://minecraft.wiki/images/Saturation_JE1.png?dbba6" alt="" data-size="line"> **Saturation**: <a href="#saturation" id="saturation"></a>
 
-### <img src="https://minecraft.wiki/images/Slowness_JE4.png?d415c" alt="" data-size="line"> **Speed Modifier while Consuming**:
+### <img src="https://minecraft.wiki/images/Slowness_JE4.png?d415c" alt="" data-size="line"> **Speed Modifier while Consuming**: <a href="#speed-modifier-while-consuming" id="speed-modifier-while-consuming"></a>
 
-### ![](https://wiki.bedrock.dev/assets/images/concepts/emojis/hud/food.png) **Hunger Replenished**:&#x20;
+### ![](https://wiki.bedrock.dev/assets/images/concepts/emojis/hud/food.png) **Hunger Replenished**:  <a href="#hunger-replenished" id="hunger-replenished"></a>
 
-## <img src="https://minecraft.wiki/images/thumb/Enchanting_Table.gif/150px-Enchanting_Table.gif?904a7" alt="" data-size="line"> Enchanting:
+## <img src="https://minecraft.wiki/images/thumb/Enchanting_Table.gif/150px-Enchanting_Table.gif?904a7" alt="" data-size="line"> Enchanting: <a href="#enchanting" id="enchanting"></a>
 
-### <img src="https://minecraft.wiki/images/Enchanted_Book.gif?b21c4" alt="" data-size="line"> Enchantment Type:
+* <img src="https://minecraft.wiki/images/Enchanted_Book.gif?b21c4" alt="" data-size="line"> Enchantment Type:
+* <img src="https://minecraft.wiki/images/thumb/Bookshelf_JE4_BE2.png/150px-Bookshelf_JE4_BE2.png?9b143" alt="Bookshelf." data-size="line"> Enchantability:
 
-## <img src="https://minecraft.wiki/images/thumb/Composter_(level_8)_BE2.png/150px-Composter_(level_8)_BE2.png?7ecec" alt="Composter" data-size="line"> [Composting Chance](https://minecraft.wiki/w/Composter#Composting):
+### <img src="https://minecraft.wiki/images/thumb/Anvil_(N)_JE3.png/150px-Anvil_(N)_JE3.png?d438e" alt="Anvil." data-size="line"> Repairing: <a href="#enchanting" id="enchanting"></a>
 
-## <img src="https://github.com/user-attachments/assets/53329be8-f7e5-4c01-b7e4-a27b567c7998" alt="" data-size="line"> Effects Granted:
+* Durability:&#x20;
+* Repairs with:
+  * e
+
+### <img src="https://minecraft.wiki/images/Enchanted_Book.gif?b21c4" alt="" data-size="line"> Enchantment Type: <a href="#enchant-type" id="enchant-type"></a>
+
+## <img src="https://minecraft.wiki/images/Shaper_Armor_Trim_Smithing_Template_JE1_BE1.png?0941a" alt="" data-size="line"> Trimmable: <mark style="color:yellow;">**Yes**</mark> <a href="#trimmable" id="trimmable"></a>
+
+## <img src="https://minecraft.wiki/images/thumb/Composter_(level_8)_BE2.png/150px-Composter_(level_8)_BE2.png?7ecec" alt="Composter" data-size="line"> [Composting Chance](https://minecraft.wiki/w/Composter#Composting): <a href="#composting-chance" id="composting-chance"></a>
+
+## <img src="https://github.com/user-attachments/assets/53329be8-f7e5-4c01-b7e4-a27b567c7998" alt="" data-size="line"> Effects Granted: <a href="#effects-granted" id="effects-granted"></a>
+
+## <img src="https://minecraft.wiki/images/Diamond_Chestplate_(item)_JE2_BE2.png?d2f93" alt="" data-size="line"> Armor:  <a href="#armor" id="armor"></a>
 
 ## <img src="https://github.com/user-attachments/assets/2033baae-dc33-4acd-a5a3-52e549146bea" alt="" data-size="line"> Smelting: <a href="#smelting" id="smelting"></a>
 
