@@ -5,7 +5,7 @@ This wiki is still a work in progress, some pages are unfinished
 {% endhint %}
 
 {% hint style="info" %}
-#### This Wiki assumes the PFE Version: [v1.2.80.md](changelog-history/full-releases/v1.2.80.md "mention")
+#### This Wiki assumes the PFE Version: [v1.2.90.md](changelog-history/full-releases/v1.2.90.md "mention")
 {% endhint %}
 
 ***
@@ -14,7 +14,7 @@ This wiki is still a work in progress, some pages are unfinished
 
 ### Experimental Toggles: <mark style="color:yellow;">None</mark>
 
-### Lowest Supported Minecraft Version: <mark style="color:yellow;">1.21.60</mark>
+### Lowest Supported Minecraft Version: <mark style="color:yellow;">1.21.70</mark>
 
 ***
 

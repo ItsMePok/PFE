@@ -38,6 +38,7 @@ The block texture above could not be 100% accurate if you have a texture pack ap
     * <img src="https://minecraft.wiki/images/thumb/Diorite.png/150px-Diorite.png?58334" alt="Diorite." data-size="line"> [Diorite](https://minecraft.wiki/w/Diorite)
     * <img src="https://minecraft.wiki/images/thumb/Granite.png/150px-Granite.png?9cb6d" alt="Granite." data-size="line"> [Granite](https://minecraft.wiki/w/Granite)
     * <img src="https://minecraft.wiki/images/thumb/Andesite.png/150px-Andesite.png?5db9b" alt="" data-size="line"> [Andesite](https://minecraft.wiki/w/Andesite)
+  * This would replace as Demonic Ore instead
 * <img src="https://minecraft.wiki/images/thumb/Deepslate_(UD)_JE3.png/120px-Deepslate_(UD)_JE3.png?7635f" alt="Deepslate." data-size="line"> [Deepslate](https://minecraft.wiki/w/Deepslate)
 {% endtab %}
 {% endtabs %}
