@@ -9,7 +9,7 @@
 		},
 		"components": {
 			"minecraft:display_name": {
-				"value": "%poke_pfe.night_vision_goggles\n%poke_pfe.tag"
+				"value": "%poke_pfe.night_vision_goggles\n§7poke_pfe.night_vision_goggles.desc\n%poke_pfe.offhand_cosmetic\n%poke_pfe.tag"
 			},
 			"minecraft:rarity": "common",
 			"minecraft:tags": {

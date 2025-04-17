@@ -9,7 +9,7 @@
 		},
 		"components": {
 			"minecraft:display_name": {
-				"value": "%poke_pfe.pok_bot_cosmetic\n%poke_pfe.tag"
+				"value": "%poke_pfe.pok_bot_cosmetic\n§7%poke_pfe.chestplate_cosmetic\n%poke_pfe.tag"
 			},
 			"minecraft:rarity": "common",
 			"minecraft:tags": {

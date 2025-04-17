@@ -9,7 +9,7 @@
     },
     "components": {
       "minecraft:display_name": {
-        "value": "%poke_pfe.flower_lilly_hat\n%poke_pfe.tag"
+        "value": "%poke_pfe.flower_lilly_hat\n§7%poke_pfe.cosmetic\n%poke_pfe.tag"
       },
       "minecraft:rarity": "common",
       "minecraft:tags": {

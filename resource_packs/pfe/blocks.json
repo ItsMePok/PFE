@@ -680,6 +680,54 @@
   "poke:astral_bricks": {
     "sound": "deepslate_bricks"
   },
+  "poke:banished_bricks": {
+    "sound": "deepslate_bricks"
+  },
+  "poke:cracked_honey_bricks": {
+    "sound": "coral"
+  },
+  "poke:cracked_holy_bricks": {
+    "sound": "deepslate_bricks"
+  },
+  "poke:cracked_shade_bricks": {
+    "sound": "deepslate_bricks"
+  },
+  "poke:cracked_astral_bricks": {
+    "sound": "deepslate_bricks"
+  },
+  "poke:cracked_demonic_bricks": {
+    "sound": "deepslate_bricks"
+  },
+  "poke:cracked_onyx_bricks": {
+    "sound": "deepslate_bricks"
+  },
+  "poke:cracked_godly_bricks": {
+    "sound": "deepslate_bricks"
+  },
+  "poke:cracked_banished_bricks": {
+    "sound": "deepslate_bricks"
+  },
+  "poke:cracked_nebula_bricks": {
+    "sound": "deepslate_bricks"
+  },
+  "poke:cracked_medic_bricks": {
+    "sound": "deepslate_bricks"
+  },
+  "poke:cracked_radium_bricks": {
+    "sound": "deepslate_bricks"
+  },
+  "poke:cracked_molten_bricks": {
+    "sound": "deepslate_bricks"
+  },
+  "poke:cracked_void_bricks": {
+    "sound": "deepslate_bricks"
+  },
+  "poke:cracked_galaxy_bricks": {
+    "sound": "deepslate_bricks"
+  },
+  "poke:cracked_hellish_bricks": {
+    "sound": "deepslate_bricks"
+  },
   "poke:cracked_cobalt_bricks": {
     "sound": "deepslate_bricks"
   },
