@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
 		"description": {
 			"identifier": "poke:holy_sword"
@@ -13,14 +13,26 @@
 			"XA "
 		],
 		"unlock": [
-			{"item": "poke:onyx_sword"},
-			{"item": "poke:holy_ingot"}
+			{
+				"item": "poke:onyx_sword"
+			},
+			{
+				"item": "poke:holy_ingot"
+			}
 		],
 		"key": {
-			"Y": {"item": "poke:holy_ingot"},
-			"X": {"item": "poke:godly_stick"},
-			"A": {"item": "poke:onyx_sword"},
-			"U": {"item": "poke:diamond_upgrade_core"}
+			"Y": {
+				"item": "poke:holy_ingot"
+			},
+			"X": {
+				"item": "poke:godly_stick"
+			},
+			"A": {
+				"item": "poke:onyx_sword"
+			},
+			"U": {
+				"item": "poke:diamond_upgrade_core"
+			}
 		},
 		"result": {
 			"item": "poke:holy_sword"

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
 		"description": {
 			"identifier": "poke:astral_bricks_craft"
@@ -25,7 +25,8 @@
 			"CC"
 		],
 		"result": {
-			"item": "poke:astral_bricks","count": 4
+			"item": "poke:astral_bricks",
+			"count": 4
 		}
 	}
 }

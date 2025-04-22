@@ -304,7 +304,7 @@ interface PokeClosestCardinalInfo {
 }
 
 /**
- * Gets the cosest cardinal direction based on the view direction
+ * Gets the closest cardinal direction based on the view direction
  * (N,S,W,E,U,P)
  * 
  * Returns PokeClosestCardinalInfo

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
 		"description": {
 			"identifier": "poke:hostile_mob_magnet"
@@ -12,19 +12,39 @@
 			"PMS",
 			"DGH"
 		],
-        "unlock": [
-			{"item": "poke:demonic_ingot"},
-			{"item": "poke:magnet_core"},
-			{"item": "poke:cobalt_ingot"}	
+		"unlock": [
+			{
+				"item": "poke:demonic_ingot"
+			},
+			{
+				"item": "poke:magnet_core"
+			},
+			{
+				"item": "poke:cobalt_ingot"
+			}
 		],
 		"key": {
-			"H":{"item":"poke:hellish_ingot"},
-			"E":{"item":"ender_pearl"},
-			"D":{"item":"poke:demonic_ingot"},
-			"P":{"item":"phantom_membrane"},
-			"M":{"item":"poke:item_magnet"},
-			"G":{"item":"ghast_tear"},
-			"S":{"item":"nautilus_shell"}
+			"H": {
+				"item": "poke:hellish_ingot"
+			},
+			"E": {
+				"item": "ender_pearl"
+			},
+			"D": {
+				"item": "poke:demonic_ingot"
+			},
+			"P": {
+				"item": "phantom_membrane"
+			},
+			"M": {
+				"item": "poke:item_magnet"
+			},
+			"G": {
+				"item": "ghast_tear"
+			},
+			"S": {
+				"item": "nautilus_shell"
+			}
 		},
 		"result": {
 			"item": "poke:hostile_mob_magnet"

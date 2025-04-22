@@ -1,23 +1,41 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
-		"description": {"identifier": "poke:godly_haxel"},
-		"tags": ["crafting_table"],
+		"description": {
+			"identifier": "poke:godly_haxel"
+		},
+		"tags": [
+			"crafting_table"
+		],
 		"pattern": [
 			"###",
 			"#U",
 			" E "
 		],
 		"unlock": [
-			{"item":"poke:godly_ingot"},
-			{"item":"poke:holy_haxel"},
-			{"item":"poke:diamond_upgrade_core"}
+			{
+				"item": "poke:godly_ingot"
+			},
+			{
+				"item": "poke:holy_haxel"
+			},
+			{
+				"item": "poke:diamond_upgrade_core"
+			}
 		],
 		"key": {
-			"#":{"item":"poke:godly_block"},
-			"E":{"item":"poke:holy_haxel"},
-			"U":{"item":"poke:diamond_upgrade_core"}
+			"#": {
+				"item": "poke:godly_block"
+			},
+			"E": {
+				"item": "poke:holy_haxel"
+			},
+			"U": {
+				"item": "poke:diamond_upgrade_core"
+			}
 		},
-		"result":{"item":"poke:godly_haxel"}
+		"result": {
+			"item": "poke:godly_haxel"
+		}
 	}
 }

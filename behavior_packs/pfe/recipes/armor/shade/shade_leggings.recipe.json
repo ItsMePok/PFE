@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
 		"description": {
 			"identifier": "poke:shade_leggings"
@@ -21,8 +21,12 @@
 			"X": {
 				"item": "poke:shade_block"
 			},
-			"O":{"item":"poke:onyx_leggings"},
-			"U":{"item":"poke:upgrade_core"}
+			"O": {
+				"item": "poke:onyx_leggings"
+			},
+			"U": {
+				"item": "poke:upgrade_core"
+			}
 		},
 		"result": {
 			"item": "poke:shade_leggings"

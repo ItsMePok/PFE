@@ -1,16 +1,30 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
-		"description": {"identifier":"poke:raw_galaxy_slab"},
-		"tags": ["crafting_table"],
+		"description": {
+			"identifier": "poke:raw_galaxy_slab"
+		},
+		"tags": [
+			"crafting_table"
+		],
 		"unlock": [
-			{"item":"poke:galaxy_block"},
-			{"item":"poke:galaxy_ingot"},
-			{"item":"poke:raw_galaxy_block"},
-			{"item":"poke:raw_galaxy"}
+			{
+				"item": "poke:galaxy_block"
+			},
+			{
+				"item": "poke:galaxy_ingot"
+			},
+			{
+				"item": "poke:raw_galaxy_block"
+			},
+			{
+				"item": "poke:raw_galaxy"
+			}
 		],
 		"key": {
-			"C": {"item":"poke:raw_galaxy_block"}
+			"C": {
+				"item": "poke:raw_galaxy_block"
+			}
 		},
 		"pattern": [
 			"CCC"

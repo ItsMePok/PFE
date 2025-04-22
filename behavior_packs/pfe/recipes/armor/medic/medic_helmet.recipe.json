@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
 		"description": {
 			"identifier": "poke:medic_helmet"
@@ -28,10 +28,8 @@
 				"item": "poke:diamond_upgrade_core"
 			}
 		},
-		"result": [
-			{
-				"item": "poke:medic_helmet"
-			}
-		]
+		"result": {
+			"item": "poke:medic_helmet"
+		}
 	}
 }

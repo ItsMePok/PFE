@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
 		"description": {
 			"identifier": "poke:godly_scythe"
@@ -12,7 +12,7 @@
 			" # ",
 			"YU "
 		],
-        "unlock": [
+		"unlock": [
 			{
 				"item": "poke:holy_scythe"
 			}
@@ -28,9 +28,11 @@
 				"item": "poke:godly_ingot"
 			},
 			"#": {
-				"item":"poke:holy_scythe" 
+				"item": "poke:holy_scythe"
 			},
-			"U":{"item":"poke:diamond_upgrade_core"}
+			"U": {
+				"item": "poke:diamond_upgrade_core"
+			}
 		},
 		"result": {
 			"item": "poke:godly_scythe"

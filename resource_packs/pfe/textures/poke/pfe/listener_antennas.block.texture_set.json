@@ -1,0 +1,8 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "listener_antennas.block",
+		"metalness_emissive_roughness": "listener_antennas_mer.block",
+		"heightmap": "listener_antennas_height.block"
+	}
+}

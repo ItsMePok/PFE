@@ -9,7 +9,7 @@
 		},
 		"components": {
 			"minecraft:display_name": {
-				"value": "%poke_pfe.astral_leggings\n%poke_pfe.tag"
+				"value": "%poke_pfe.amethyst_leggings\n%poke_pfe.tag"
 			},
 			"minecraft:max_stack_size": 1,
 			"minecraft:enchantable": {
@@ -17,7 +17,7 @@
 				"slot": "armor_legs"
 			},
 			"minecraft:durability": {
-				"max_durability": 3200,
+				"max_durability": 694,
 				"damage_chance": {
 					"min": 60,
 					"max": 100

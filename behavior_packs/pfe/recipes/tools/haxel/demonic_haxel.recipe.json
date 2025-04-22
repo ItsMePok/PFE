@@ -1,23 +1,41 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
-		"description": {"identifier": "poke:demonic_haxel"},
-		"tags": ["crafting_table"],
+		"description": {
+			"identifier": "poke:demonic_haxel"
+		},
+		"tags": [
+			"crafting_table"
+		],
 		"pattern": [
 			"###",
 			"#U ",
 			" E "
 		],
 		"unlock": [
-			{"item":"poke:demonic_ingot"},
-			{"item":"poke:hellish_haxel"},
-			{"item":"poke:diamond_upgrade_core"}
+			{
+				"item": "poke:demonic_ingot"
+			},
+			{
+				"item": "poke:hellish_haxel"
+			},
+			{
+				"item": "poke:diamond_upgrade_core"
+			}
 		],
 		"key": {
-			"#":{"item":"poke:demonic_block"},
-			"E":{"item":"poke:hellish_haxel"},
-			"U":{"item":"poke:diamond_upgrade_core"}
+			"#": {
+				"item": "poke:demonic_block"
+			},
+			"E": {
+				"item": "poke:hellish_haxel"
+			},
+			"U": {
+				"item": "poke:diamond_upgrade_core"
+			}
 		},
-		"result":{"item":"poke:demonic_haxel"}
+		"result": {
+			"item": "poke:demonic_haxel"
+		}
 	}
 }

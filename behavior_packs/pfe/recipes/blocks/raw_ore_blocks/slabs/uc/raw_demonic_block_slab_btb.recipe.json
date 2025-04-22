@@ -1,12 +1,28 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
-		"description": {"identifier": "poke:raw_demonic_slab_back_to_block"},
-		"tags": ["crafting_table"],
-		"unlock": [	{"item":"poke:raw_demonic_slab"}],
-		"key": {"C": {"item":"poke:raw_demonic_slab"}},
-		"pattern": ["CC"],
-		"result": {"item":"poke:raw_demonic_block"},
+		"description": {
+			"identifier": "poke:raw_demonic_slab_back_to_block"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": [
+			{
+				"item": "poke:raw_demonic_slab"
+			}
+		],
+		"key": {
+			"C": {
+				"item": "poke:raw_demonic_slab"
+			}
+		},
+		"pattern": [
+			"CC"
+		],
+		"result": {
+			"item": "poke:raw_demonic_block"
+		},
 		"priority": 2
 	}
 }

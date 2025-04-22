@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
 		"description": {
 			"identifier": "poke:gold_scythe"
@@ -12,7 +12,7 @@
 			" # ",
 			"Y  "
 		],
-        "unlock": [
+		"unlock": [
 			{
 				"item": "gold_ingot"
 			}
@@ -28,7 +28,7 @@
 				"item": "gold_ingot"
 			},
 			"#": {
-				"item":"stick" 
+				"item": "stick"
 			}
 		},
 		"result": {

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
 		"description": {
 			"identifier": "poke:ban_hammer"
@@ -12,7 +12,7 @@
 			" * ",
 			"G  "
 		],
-        "unlock": [
+		"unlock": [
 			{
 				"item": "poke:ban_hammer_grip"
 			},

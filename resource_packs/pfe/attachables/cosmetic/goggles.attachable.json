@@ -5,20 +5,25 @@
 			"identifier": "poke:goggles",
 			"materials": {
 				"default": "armor",
+				"dyed": "entity_alphatest_change_color",
 				"enchanted": "armor_enchanted"
 			},
 			"textures": {
 				"default": "textures/poke/pfe/goggles_armor",
+				"dyed": "textures/poke/pfe/goggles_armor",
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {
 				"default": "geometry.poke_pfe.goggles"
 			},
 			"scripts": {
-				"parent_setup": "variable.helmet_layer_visible = 0.0;"
+				"parent_setup": "variable.helmet_layer_visible = 0.0;",
+				"pre_animation": [
+					"variable.is_dyed = query.armor_color_slot(1, 0) != 0.0 || query.armor_color_slot(1, 1) != 0.0 || query.armor_color_slot(1, 2) != 0.0 || query.armor_color_slot(1, 3) != 0.0;"
+				]
 			},
 			"render_controllers": [
-				"controller.render.armor"
+				"controller.render.poke_pfe.dyed_attachable"
 			]
 		}
 	}

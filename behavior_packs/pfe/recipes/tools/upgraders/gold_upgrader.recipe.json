@@ -1,5 +1,5 @@
 {
-    "format_version": "1.20.10",
+    "format_version": "1.21.70",
     "minecraft:recipe_shaped": {
         "description": {
             "identifier": "poke:gold_upgrader"
@@ -14,13 +14,13 @@
             "ZW "
         ],
         "unlock": [
-			{
-				"item": "raw_gold"
-			},
-			{
-				"item":"poke:diamond_upgrade_core"
-			}	
-		],
+            {
+                "item": "raw_gold"
+            },
+            {
+                "item": "poke:diamond_upgrade_core"
+            }
+        ],
         "key": {
             "X": {
                 "item": "gold_block"
@@ -29,7 +29,7 @@
                 "item": "gold_block"
             },
             "Y": {
-                "item":"poke:diamond_upgrade_core"
+                "item": "poke:diamond_upgrade_core"
             },
             "Z": {
                 "item": "stick"

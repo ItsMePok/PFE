@@ -1,0 +1,32 @@
+{
+	"format_version": "1.21.70",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke_pfe:cobalt_chestplate"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"B B",
+			"BBB",
+			"BBB"
+		],
+		"unlock": [
+			{
+				"item": "poke:cobalt_ingot"
+			},
+			{
+				"item": "poke:raw_cobalt"
+			}
+		],
+		"key": {
+			"B": {
+				"item": "poke:cobalt_ingot"
+			}
+		},
+		"result": {
+			"item": "poke_pfe:cobalt_chestplate"
+		}
+	}
+}

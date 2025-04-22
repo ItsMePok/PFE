@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
 		"description": {
 			"identifier": "poke:astral_boots"
@@ -13,9 +13,15 @@
 			"#BX"
 		],
 		"unlock": [
-			{"item": "poke:galaxy_boots"},
-			{"item":"poke:astral_ingot"},
-			{"item":"poke:platinum_upgrade_core"}
+			{
+				"item": "poke:galaxy_boots"
+			},
+			{
+				"item": "poke:astral_ingot"
+			},
+			{
+				"item": "poke:platinum_upgrade_core"
+			}
 		],
 		"key": {
 			"B": {
@@ -27,7 +33,9 @@
 			"U": {
 				"item": "poke:platinum_upgrade_core"
 			},
-			"X":{"item":"poke:medic_boots"}
+			"X": {
+				"item": "poke:medic_boots"
+			}
 		},
 		"result": {
 			"item": "poke:astral_boots"

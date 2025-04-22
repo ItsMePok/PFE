@@ -1,0 +1,32 @@
+{
+	"format_version": "1.21.70",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke_pfe:listener_antennas",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:display_name": {
+				"value": "%poke_pfe.listener_antennas\n§7%poke_pfe.cosmetic\n%poke_pfe.tag"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:wearable": {
+				"slot": "slot.armor.head",
+				"protection": 0
+			},
+			"minecraft:rarity": "uncommon",
+			"minecraft:tags": {
+				"tags": [
+					"novelty:is_hat",
+					"pfe:cosmetic"
+				]
+			},
+			"minecraft:block_placer": {
+				"block": "poke_pfe:listener_antennas",
+				"replace_block_item": true
+			}
+		}
+	}
+}

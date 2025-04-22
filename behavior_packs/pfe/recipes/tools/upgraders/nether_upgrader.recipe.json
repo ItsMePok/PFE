@@ -1,5 +1,5 @@
 {
-    "format_version": "1.20.10",
+    "format_version": "1.21.70",
     "minecraft:recipe_shaped": {
         "description": {
             "identifier": "poke:nether_upgrader"
@@ -21,7 +21,7 @@
                 "item": "warped_fungus"
             },
             {
-                "item":"poke:diamond_upgrade_core"
+                "item": "poke:diamond_upgrade_core"
             },
             {
                 "item": "crimson_fungus"
@@ -65,7 +65,7 @@
                 "item": "warped_fungus"
             },
             "U": {
-                "item":"poke:diamond_upgrade_core"
+                "item": "poke:diamond_upgrade_core"
             },
             "C": {
                 "item": "crimson_fungus"

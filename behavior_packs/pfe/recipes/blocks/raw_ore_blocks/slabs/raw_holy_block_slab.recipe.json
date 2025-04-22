@@ -1,16 +1,30 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
-		"description": {"identifier":"poke:raw_holy_slab"},
-		"tags": ["crafting_table"],
+		"description": {
+			"identifier": "poke:raw_holy_slab"
+		},
+		"tags": [
+			"crafting_table"
+		],
 		"unlock": [
-			{"item":"poke:holy_block"},
-			{"item":"poke:holy_ingot"},
-			{"item":"poke:raw_holy_block"},
-			{"item":"poke:raw_holy"}
+			{
+				"item": "poke:holy_block"
+			},
+			{
+				"item": "poke:holy_ingot"
+			},
+			{
+				"item": "poke:raw_holy_block"
+			},
+			{
+				"item": "poke:raw_holy"
+			}
 		],
 		"key": {
-			"C": {"item":"poke:raw_holy_block"}
+			"C": {
+				"item": "poke:raw_holy_block"
+			}
 		},
 		"pattern": [
 			"CCC"

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
 		"description": {
 			"identifier": "poke:molten_battleaxe"
@@ -37,6 +37,8 @@
 				"item": "poke:diamond_upgrade_core"
 			}
 		},
-		"result":{"item": "poke:molten_battleaxe"}
+		"result": {
+			"item": "poke:molten_battleaxe"
+		}
 	}
 }

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
 		"description": {
 			"identifier": "poke:onyx_leggings"
@@ -15,6 +15,9 @@
 		"unlock": [
 			{
 				"item": "poke:amethyst_leggings"
+			},
+			{
+				"item": "poke:onyx_ingot"
 			}
 		],
 		"key": {

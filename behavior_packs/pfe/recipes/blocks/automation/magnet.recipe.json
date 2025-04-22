@@ -1,29 +1,49 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
 		"description": {
 			"identifier": "poke:magnet"
 		},
-		"tags": ["crafting_table"],
+		"tags": [
+			"crafting_table"
+		],
 		"pattern": [
 			"CPC",
 			"EME",
 			"CRC"
 		],
 		"unlock": [
-			{"item":"poke:cobalt_ingot"},
-			{"item":"poke:item_magnet"},
-			{"item":"poke:electric_component"}
+			{
+				"item": "poke:cobalt_ingot"
+			},
+			{
+				"item": "poke:item_magnet"
+			},
+			{
+				"item": "poke:electric_component"
+			}
 		],
 		"key": {
-			"C": {"item":"poke:cobalt_ingot"},
-			"P": {"item":"planks"},
-			"E":{"item":"poke:electric_component"},
-			"M":{"item":"poke:item_magnet"},
-			"R":{"item":"poke:receiver"}
+			"C": {
+				"item": "poke:cobalt_ingot"
+			},
+			"P": {
+				"item": "planks"
+			},
+			"E": {
+				"item": "poke:electric_component"
+			},
+			"M": {
+				"item": "poke:item_magnet"
+			},
+			"R": {
+				"item": "poke:receiver"
+			}
 		},
 		"result": [
-			{"item":"poke:magnet"}
+			{
+				"item": "poke:magnet"
+			}
 		]
 	}
 }

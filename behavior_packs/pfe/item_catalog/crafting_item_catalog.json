@@ -630,6 +630,7 @@
             },
             "items": [
               "poke:amethyst_helmet",
+              "poke_pfe:cobalt_helmet",
               "poke:shade_helmet",
               "poke:radium_helmet",
               "poke:banished_helmet",
@@ -667,6 +668,7 @@
             },
             "items": [
               "poke:amethyst_chestplate",
+              "poke_pfe:cobalt_chestplate",
               "poke:shade_chestplate",
               "poke:radium_chestplate",
               "poke:banished_chestplate",
@@ -702,6 +704,7 @@
             },
             "items": [
               "poke:amethyst_leggings",
+              "poke_pfe:cobalt_leggings",
               "poke:shade_leggings",
               "poke:radium_leggings",
               "poke:banished_leggings",
@@ -728,6 +731,7 @@
             },
             "items": [
               "poke:amethyst_boots",
+              "poke_pfe:cobalt_boots",
               "poke:shade_boots",
               "poke:radium_boots",
               "poke:banished_boots",
@@ -1107,7 +1111,8 @@
               "poke:steampunk_hat",
               "poke:sword_hat",
               "poke:night_vision_goggles",
-              "poke:carved_melon_helmet"
+              "poke:carved_melon_helmet",
+              "poke_pfe:listener_antennas"
             ]
           },
           {
@@ -1552,7 +1557,7 @@
               "poke:repair_core",
               "poke:capacity_core",
               //"poke:bursting_core",
-              //"poke:flaming_core",
+              "poke_pfe:flaming_core",
               //"poke:rapid_fire_core",
               "poke:magnet_core",
               "poke:nebula_core"

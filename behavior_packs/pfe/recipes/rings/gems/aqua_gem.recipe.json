@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shapeless": {
 		"description": {
 			"identifier": "poke:aqua_gem"
@@ -7,21 +7,39 @@
 		"tags": [
 			"crafting_table"
 		],
-		"ingredients":[
-			{"item":"poke:raw_sporefish"},
-			{"item":"turtle_scute"},
-			{"item":"pufferfish"},
-			{"item":"tropical_fish"},
-			{"item":"heart_of_the_sea"},
-			{"item":"salmon"},
-			{"item":"cod"},
-			{"item":"prismarine_shard"},
-			{"item":"nautilus_shell"}
+		"ingredients": [
+			{
+				"item": "poke:raw_sporefish"
+			},
+			{
+				"item": "turtle_scute"
+			},
+			{
+				"item": "pufferfish"
+			},
+			{
+				"item": "tropical_fish"
+			},
+			{
+				"item": "heart_of_the_sea"
+			},
+			{
+				"item": "salmon"
+			},
+			{
+				"item": "cod"
+			},
+			{
+				"item": "prismarine_shard"
+			},
+			{
+				"item": "nautilus_shell"
+			}
 		],
 		"unlock": [
 			{
 				"item": "poke:gem_holder"
-			}	
+			}
 		],
 		"result": {
 			"count": 1,

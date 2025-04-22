@@ -1,5 +1,5 @@
 {
-    "format_version": "1.20.10",
+    "format_version": "1.21.70",
     "minecraft:recipe_shaped": {
         "description": {
             "identifier": "poke:emerald_upgrader"
@@ -14,13 +14,13 @@
             "ZW "
         ],
         "unlock": [
-			{
-				"item": "emerald"
-			},
-			{
-				"item":"poke:diamond_upgrade_core"
-			}	
-		],
+            {
+                "item": "emerald"
+            },
+            {
+                "item": "poke:diamond_upgrade_core"
+            }
+        ],
         "key": {
             "X": {
                 "item": "emerald_block"
@@ -29,7 +29,7 @@
                 "item": "emerald_block"
             },
             "Y": {
-                "item":"poke:diamond_upgrade_core"
+                "item": "poke:diamond_upgrade_core"
             },
             "Z": {
                 "item": "stick"

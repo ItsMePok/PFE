@@ -1,0 +1,18 @@
+{
+  "format_version": "1.21.70",
+  "minecraft:recipe_smithing_trim": {
+    "description": {
+      "identifier": "poke:nebula_helmet_trim"
+    },
+    "tags": [
+      "smithing_table"
+    ],
+    "template": {
+      "tag": "minecraft:trim_templates"
+    },
+    "base": "poke:nebula_helmet",
+    "addition": {
+      "tag": "minecraft:trim_materials"
+    }
+  }
+}

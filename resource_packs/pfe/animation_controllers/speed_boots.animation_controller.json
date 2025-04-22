@@ -5,25 +5,20 @@
 			"initial_state": "idle",
 			"states": {
 				"idle": {
-					"animations": [
-						"idle"
-					],
+					"animations": ["idle"],
 					"transitions": [
-						{
-							"move": "query.ground_speed"
-						}
-					]
+						{"move": "query.ground_speed > 0.15"}
+					],
+					"blend_transition": 0.2,
+					"blend_via_shortest_path": true
 				},
 				"move": {
-					"animations": [
-						"move"
-					],
+					"animations": ["move"],
 					"transitions": [
-						{
-							"idle": "!query.ground_speed"
-						}
+						{"idle": "query.ground_speed < 0.15"}
 					],
-					"blend_transition": 1.25
+					"blend_transition": 0.2,
+					"blend_via_shortest_path": true
 				}
 			}
 		}

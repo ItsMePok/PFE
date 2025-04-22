@@ -1,5 +1,5 @@
 {
-    "format_version": "1.20.10",
+    "format_version": "1.21.70",
     "minecraft:recipe_shaped": {
         "description": {
             "identifier": "poke:armor_stand_remover"
@@ -13,18 +13,38 @@
             "PSP"
         ],
         "unlock": [
-        {"item": "poke:pocket_knife"},
-        {"item":"poke:plastic"},
-        {"item":"poke:electric_component"},
-        {"item":"armor_stand"},
-        {"item":"poke:red_button"}
+            {
+                "item": "poke:pocket_knife"
+            },
+            {
+                "item": "poke:plastic"
+            },
+            {
+                "item": "poke:electric_component"
+            },
+            {
+                "item": "armor_stand"
+            },
+            {
+                "item": "poke:red_button"
+            }
         ],
         "key": {
-            "K":{"item": "poke:pocket_knife"},
-            "P":{"item":"poke:plastic"},
-            "E":{"item":"poke:electric_component"},
-            "S":{"item":"armor_stand"},
-            "B":{"item":"poke:red_button"}
+            "K": {
+                "item": "poke:pocket_knife"
+            },
+            "P": {
+                "item": "poke:plastic"
+            },
+            "E": {
+                "item": "poke:electric_component"
+            },
+            "S": {
+                "item": "armor_stand"
+            },
+            "B": {
+                "item": "poke:red_button"
+            }
         },
         "result": {
             "item": "poke:armor_stand_remover"

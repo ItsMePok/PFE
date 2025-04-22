@@ -1,6 +1,5 @@
 {
 	"texture_data": {
-		//Weapons
 		//Swords
 		"poke_pocket_knife": {
 			"textures": "textures/poke/pfe/pocket_knife"
@@ -593,13 +592,13 @@
 		},
 		//Bundled Items
 		"pfe-gift_box": {
-			"textures": "textures/items/pfe-gift_box"
+			"textures": "textures/poke/pfe/pfe-gift_box"
 		},
 		"poke_gift_box_open_front": {
-			"textures": "textures/items/pfe-gift_box_open_front"
+			"textures": "textures/poke/pfe/pfe-gift_box_open_front"
 		},
 		"poke_gift_box_open_back": {
-			"textures": "textures/items/pfe-gift_box_open_back"
+			"textures": "textures/poke/pfe/pfe-gift_box_open_back"
 		},
 		"poke_bundled_feathers": {
 			"textures": "textures/poke/pfe/bundled_feathers"
@@ -958,6 +957,9 @@
 		},
 		"poke_repair_core": {
 			"textures": "textures/poke/pfe/repair_core"
+		},
+		"poke_pfe_flaming_core": {
+			"textures": "textures/poke/pfe/flaming_core"
 		},
 		"poke_upgrade_core": {
 			"textures": "textures/poke/pfe/upgrade_core"
@@ -2118,6 +2120,18 @@
 		},
 		"poke_party_hat": {
 			"textures": "textures/poke/pfe/party_hat"
+		},
+		"poke_pfe_cobalt_helmet": {
+			"textures": "textures/poke/pfe/cobalt_helmet"
+		},
+		"poke_pfe_cobalt_chestplate": {
+			"textures": "textures/poke/pfe/cobalt_chestplate"
+		},
+		"poke_pfe_cobalt_leggings": {
+			"textures": "textures/poke/pfe/cobalt_leggings"
+		},
+		"poke_pfe_cobalt_boots": {
+			"textures": "textures/poke/pfe/cobalt_boots"
 		}
 	},
 	"resource_pack_name": "Poke",

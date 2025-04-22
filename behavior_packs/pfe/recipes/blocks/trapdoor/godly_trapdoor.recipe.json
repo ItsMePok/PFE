@@ -1,16 +1,29 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
-		"description": {"identifier":"poke:godly_trapdoor"},
-		"tags": ["crafting_table"],
+		"description": {
+			"identifier": "poke:godly_trapdoor"
+		},
+		"tags": [
+			"crafting_table"
+		],
 		"unlock": [
-			{"item": "poke:godly_ingot"},
-            {"item":"poke:godly_block"}
+			{
+				"item": "poke:godly_ingot"
+			},
+			{
+				"item": "poke:godly_block"
+			}
 		],
 		"key": {
-			"C":{"item":"poke:godly_ingot"}
+			"C": {
+				"item": "poke:godly_ingot"
+			}
 		},
-		"pattern": ["CCC","CCC"],
+		"pattern": [
+			"CCC",
+			"CCC"
+		],
 		"result": {
 			"item": "poke:godly_trapdoor",
 			"count": 4

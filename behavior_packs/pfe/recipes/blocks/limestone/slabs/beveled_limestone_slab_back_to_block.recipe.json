@@ -1,12 +1,28 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
-		"description": {"identifier": "poke:beveled_limestone_slab_back_to_block"},
-		"tags": ["crafting_table"],
-		"unlock": [{"item":"poke:beveled_limestone_slab"}],
-		"key": {"C":{"item":"poke:beveled_limestone_slab"}},
-		"pattern": ["CC"],
-		"result": {"item":"poke:beveled_limestone"},
+		"description": {
+			"identifier": "poke:beveled_limestone_slab_back_to_block"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": [
+			{
+				"item": "poke:beveled_limestone_slab"
+			}
+		],
+		"key": {
+			"C": {
+				"item": "poke:beveled_limestone_slab"
+			}
+		},
+		"pattern": [
+			"CC"
+		],
+		"result": {
+			"item": "poke:beveled_limestone"
+		},
 		"priority": 2
 	}
 }

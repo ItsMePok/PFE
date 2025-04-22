@@ -2,7 +2,7 @@ import { system, world, EquipmentSlot, GameMode, EntityComponentTypes, ItemCompo
 import { MinecraftBlockTypes, MinecraftEffectTypes, MinecraftEnchantmentTypes, MinecraftEntityTypes, MinecraftItemTypes } from "@minecraft/vanilla-data";
 import { PFEBossEventConfig, PFEBossEventConfigName, PFEBossEventUIMainMenu, PFEDefaultBossEventSettings, PFEStartBossEvent } from "./bossEvents";
 import { PFEHaxelMining } from "./haxelMining";
-import { PokeClosestCardinal, PokeDamageItemUB, PokeDecrementStack, PokeSpawnLootTable } from "./commonFunctions";
+import { PokeClosestCardinal, PokeDamageItemUB, PokeDecrementStack, PokeGetSegmentOfString, PokeSpawnLootTable } from "./commonFunctions";
 import { PokeBirthdays, PokeTimeConfigUIMainMenu, PokeTimeGreeting, PokeTimeZoneOffset } from "./time";
 import { PFEBoltBowsComponent } from "./boltbow";
 import { PFEDisableConfigOptions, PFEDisableConfigDefault, PFEDisableConfigMainMenu, PFEDisableConfigName, PFEDisabledOnUseItems } from "./disableConfig";
@@ -12,7 +12,7 @@ import { CheckEffects, PFEArmorEffectData } from "./armorEffects";
 system.runInterval(() => {
     for (let player of world.getAllPlayers()) {
         if (!player) continue;
-        CheckEffects(player, PFEArmorEffectData)
+        CheckEffects(player, PFEArmorEffectData, JSON.stringify(player.getTags()).includes(`novelty:poke`))
     }
 }, 20)
 

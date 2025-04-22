@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
 		"description": {
 			"identifier": "poke:milk_bottle"
@@ -15,23 +15,23 @@
 				"item": "glass_bottle"
 			}
 		],
-		"pattern":[
+		"pattern": [
 			"MB",
 			"BB"
 		],
 		"key": {
-			"M":{
-				"item": "milk_bucket" 
+			"M": {
+				"item": "milk_bucket"
 			},
-			"B":{
-				"item": "glass_bottle" 
+			"B": {
+				"item": "glass_bottle"
 			}
 		},
 		"result": [
 			{
 				"item": "poke:milk_bottle",
 				"count": 3
-			}, 
+			},
 			{
 				"item": "minecraft:bucket"
 			}

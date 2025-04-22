@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
 		"description": {
 			"identifier": "poke:ember_scythe"
@@ -7,7 +7,7 @@
 		"tags": [
 			"crafting_table"
 		],
-        "unlock": [
+		"unlock": [
 			{
 				"item": "poke:demonic_slasher"
 			}
@@ -25,7 +25,9 @@
 			"D": {
 				"item": "poke:demonic_slasher"
 			},
-			"U":{"item":"poke:diamond_upgrade_core"}
+			"U": {
+				"item": "poke:diamond_upgrade_core"
+			}
 		},
 		"pattern": [
 			"XYY",

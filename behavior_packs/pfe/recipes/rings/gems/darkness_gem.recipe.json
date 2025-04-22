@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
 		"description": {
 			"identifier": "poke:darkness_gem"
@@ -21,7 +21,7 @@
 		"unlock": [
 			{
 				"item": "poke:echo_holder"
-			}	
+			}
 		],
 		"pattern": [
 			"SXS",

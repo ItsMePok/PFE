@@ -1,23 +1,41 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
-		"description": {"identifier": "poke:astral_haxel"},
-		"tags": ["crafting_table"],
+		"description": {
+			"identifier": "poke:astral_haxel"
+		},
+		"tags": [
+			"crafting_table"
+		],
 		"pattern": [
 			"###",
 			"#U ",
 			" E "
 		],
 		"unlock": [
-			{"item":"poke:astral_ingot"},
-			{"item":"poke:godly_haxel"},
-			{"item":"poke:platinum_upgrade_core"}
+			{
+				"item": "poke:astral_ingot"
+			},
+			{
+				"item": "poke:godly_haxel"
+			},
+			{
+				"item": "poke:platinum_upgrade_core"
+			}
 		],
 		"key": {
-			"#":{"item":"poke:astral_block"},
-			"E":{"item":"poke:galaxy_haxel"},
-			"U":{"item":"poke:platinum_upgrade_core"}
+			"#": {
+				"item": "poke:astral_block"
+			},
+			"E": {
+				"item": "poke:galaxy_haxel"
+			},
+			"U": {
+				"item": "poke:platinum_upgrade_core"
+			}
 		},
-		"result":{"item":"poke:astral_haxel"}
+		"result": {
+			"item": "poke:astral_haxel"
+		}
 	}
 }

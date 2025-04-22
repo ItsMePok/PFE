@@ -1,16 +1,30 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
-		"description": {"identifier":"poke:raw_shade_slab"},
-		"tags": ["crafting_table"],
+		"description": {
+			"identifier": "poke:raw_shade_slab"
+		},
+		"tags": [
+			"crafting_table"
+		],
 		"unlock": [
-			{"item":"poke:shade_block"},
-			{"item":"poke:shade_ingot"},
-			{"item":"poke:raw_shade_block"},
-			{"item":"poke:raw_shade"}
+			{
+				"item": "poke:shade_block"
+			},
+			{
+				"item": "poke:shade_ingot"
+			},
+			{
+				"item": "poke:raw_shade_block"
+			},
+			{
+				"item": "poke:raw_shade"
+			}
 		],
 		"key": {
-			"C": {"item":"poke:raw_shade_block"}
+			"C": {
+				"item": "poke:raw_shade_block"
+			}
 		},
 		"pattern": [
 			"CCC"

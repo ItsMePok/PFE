@@ -23,10 +23,10 @@
 			},
 			"minecraft:durability": {
 				"damage_chance": {
-					"min": 10,
+					"min": 60,
 					"max": 100
 				},
-				"max_durability": 3200
+				"max_durability": 601
 			},
 			"minecraft:enchantable": {
 				"value": 50,

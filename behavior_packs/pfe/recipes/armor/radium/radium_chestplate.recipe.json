@@ -1,25 +1,43 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
-		"description": {"identifier": "poke:radium_chestplate"},
-		"tags": ["crafting_table"],
+		"description": {
+			"identifier": "poke:radium_chestplate"
+		},
+		"tags": [
+			"crafting_table"
+		],
 		"pattern": [
 			"BBB",
 			"BUB",
 			"B#B"
 		],
 		"unlock": [
-			{"item": "poke:shade_chestplate"},
-			{"item":"poke:diamond_upgrade_core"},
-			{"item":"poke:radium_ingot"}
+			{
+				"item": "poke:shade_chestplate"
+			},
+			{
+				"item": "poke:diamond_upgrade_core"
+			},
+			{
+				"item": "poke:radium_ingot"
+			}
 		],
 		"key": {
-			"B": {"item": "poke:radium_block"},
-			"#": {"item": "poke:shade_chestplate"},
-			"U": {"item": "poke:diamond_upgrade_core"}
+			"B": {
+				"item": "poke:radium_block"
+			},
+			"#": {
+				"item": "poke:shade_chestplate"
+			},
+			"U": {
+				"item": "poke:diamond_upgrade_core"
+			}
 		},
 		"result": [
-			{"item": "poke:radium_chestplate"}
+			{
+				"item": "poke:radium_chestplate"
+			}
 		]
 	}
 }

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
 		"description": {
 			"identifier": "poke:hellish_boots"
@@ -13,9 +13,15 @@
 			"B#B"
 		],
 		"unlock": [
-			{"item": "poke:onyx_boots"},
-			{"item":"poke:diamond_upgrade_core"},
-			{"item":"poke:hellish_ingot"}
+			{
+				"item": "poke:onyx_boots"
+			},
+			{
+				"item": "poke:diamond_upgrade_core"
+			},
+			{
+				"item": "poke:hellish_ingot"
+			}
 		],
 		"key": {
 			"B": {
@@ -28,10 +34,8 @@
 				"item": "poke:diamond_upgrade_core"
 			}
 		},
-		"result": [
-			{
-				"item": "poke:hellish_boots"
-			}
-		]
+		"result": {
+			"item": "poke:hellish_boots"
+		}
 	}
 }

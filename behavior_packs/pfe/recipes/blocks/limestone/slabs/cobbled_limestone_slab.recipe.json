@@ -1,16 +1,28 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
-		"description": {"identifier": "poke:cobbled_limestone_slab"},
-		"tags": ["crafting_table"],
+		"description": {
+			"identifier": "poke:cobbled_limestone_slab"
+		},
+		"tags": [
+			"crafting_table"
+		],
 		"unlock": [
-			{"item": "poke:limestone"},
-			{"item": "poke:cobbled_limestone"}
+			{
+				"item": "poke:limestone"
+			},
+			{
+				"item": "poke:cobbled_limestone"
+			}
 		],
 		"key": {
-			"X": {"item": "poke:cobbled_limestone"}
+			"X": {
+				"item": "poke:cobbled_limestone"
+			}
 		},
-		"pattern": ["XXX"],
+		"pattern": [
+			"XXX"
+		],
 		"result": {
 			"item": "poke:cobbled_limestone_slab",
 			"count": 6

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
 		"description": {
 			"identifier": "poke:void_boots"
@@ -13,9 +13,15 @@
 			"B#B"
 		],
 		"unlock": [
-			{"item": "poke:demonic_boots"},
-			{"item":"poke:platinum_upgrade_core"},
-			{"item":"poke:void_ingot"}
+			{
+				"item": "poke:demonic_boots"
+			},
+			{
+				"item": "poke:platinum_upgrade_core"
+			},
+			{
+				"item": "poke:void_ingot"
+			}
 		],
 		"key": {
 			"B": {

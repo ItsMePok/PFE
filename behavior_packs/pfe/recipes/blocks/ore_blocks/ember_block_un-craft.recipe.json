@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
 		"description": {
 			"identifier": "poke:ember_block_un-craft"
@@ -14,7 +14,8 @@
 		],
 		"pattern": [
 			"#"
-		],"priority": 1,
+		],
+		"priority": 1,
 		"key": {
 			"#": {
 				"item": "poke:ember_block"

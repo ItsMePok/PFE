@@ -1,5 +1,5 @@
 {
-    "format_version": "1.20.10",
+    "format_version": "1.21.70",
     "minecraft:recipe_shaped": {
         "description": {
             "identifier": "poke:shade_upgrader"
@@ -18,7 +18,7 @@
                 "item": "poke:raw_shade"
             },
             {
-                "item":"poke:diamond_upgrade_core"
+                "item": "poke:diamond_upgrade_core"
             }
         ],
         "key": {
@@ -29,7 +29,7 @@
                 "item": "poke:shade_block"
             },
             "Y": {
-                "item":"poke:diamond_upgrade_core"
+                "item": "poke:diamond_upgrade_core"
             },
             "Z": {
                 "item": "poke:onyx_shaft"

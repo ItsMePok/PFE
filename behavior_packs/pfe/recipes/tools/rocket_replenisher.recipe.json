@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
 		"description": {
 			"identifier": "poke:rocket_replenisher"
@@ -12,11 +12,13 @@
 			"EFE",
 			"CMC"
 		],
-        "unlock": [
+		"unlock": [
 			{
 				"item": "poke:electric_component"
 			},
-			{"item":"poke:radium_ingot"}
+			{
+				"item": "poke:radium_ingot"
+			}
 		],
 		"key": {
 			"F": {

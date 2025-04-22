@@ -1,19 +1,38 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
-		"description": {"identifier": "poke:demonic_boots"},
-		"tags": ["crafting_table"],
+		"description": {
+			"identifier": "poke:demonic_boots"
+		},
+		"tags": [
+			"crafting_table"
+		],
 		"pattern": [
 			"BBB",
 			"BUB",
 			"B#B"
 		],
-		"unlock": [{"item":"poke:hellish_boots"},{"item":"poke:demonic_ingot"}],
+		"unlock": [
+			{
+				"item": "poke:hellish_boots"
+			},
+			{
+				"item": "poke:demonic_ingot"
+			}
+		],
 		"key": {
-			"B": {"item": "poke:demonic_block"},
-			"#": {"item": "poke:hellish_boots"},
-			"U": {"item": "poke:diamond_upgrade_core"}
+			"B": {
+				"item": "poke:demonic_block"
+			},
+			"#": {
+				"item": "poke:hellish_boots"
+			},
+			"U": {
+				"item": "poke:diamond_upgrade_core"
+			}
 		},
-		"result": {"item": "poke:demonic_boots"}
+		"result": {
+			"item": "poke:demonic_boots"
+		}
 	}
 }

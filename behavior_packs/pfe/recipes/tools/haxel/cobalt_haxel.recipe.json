@@ -1,24 +1,44 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
-		"description": {"identifier": "poke:cobalt_haxel"},
-		"tags": ["crafting_table"],
+		"description": {
+			"identifier": "poke:cobalt_haxel"
+		},
+		"tags": [
+			"crafting_table"
+		],
 		"pattern": [
 			"###",
 			"#iU",
 			" E "
 		],
 		"unlock": [
-			{"item":"poke:cobalt_ingot"},
-			{"item":"poke:iron_haxel"},
-			{"item":"poke:upgrade_core"}
+			{
+				"item": "poke:cobalt_ingot"
+			},
+			{
+				"item": "poke:iron_haxel"
+			},
+			{
+				"item": "poke:upgrade_core"
+			}
 		],
 		"key": {
-			"i":{"item":"poke:onyx_shaft"},
-			"#":{"item":"poke:cobalt_block"},
-			"E":{"item":"poke:iron_haxel"},
-			"U":{"item":"poke:upgrade_core"}
+			"i": {
+				"item": "poke:onyx_shaft"
+			},
+			"#": {
+				"item": "poke:cobalt_block"
+			},
+			"E": {
+				"item": "poke:iron_haxel"
+			},
+			"U": {
+				"item": "poke:upgrade_core"
+			}
 		},
-		"result":{"item":"poke:cobalt_haxel"}
+		"result": {
+			"item": "poke:cobalt_haxel"
+		}
 	}
 }

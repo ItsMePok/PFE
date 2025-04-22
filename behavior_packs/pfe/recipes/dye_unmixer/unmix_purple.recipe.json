@@ -1,14 +1,33 @@
 {
-    "format_version": "1.20.10",
+    "format_version": "1.21.70",
     "minecraft:recipe_shaped": {
         "description": {
             "identifier": "poke:unmix_purple"
         },
-        "pattern": ["D"],
-        "unlock":[{"item":"purple_dye"}],
-        "tags": ["poke_dye_unmixer"],
+        "pattern": [
+            "D"
+        ],
+        "unlock": [
+            {
+                "item": "purple_dye"
+            }
+        ],
+        "tags": [
+            "poke_dye_unmixer"
+        ],
         "group": "dye_unmixer",
-        "key":{"D":{"item":"purple_dye"}},
-        "result":[{"item":"blue_dye"},{"item":"red_dye"}]
+        "key": {
+            "D": {
+                "item": "purple_dye"
+            }
+        },
+        "result": [
+            {
+                "item": "blue_dye"
+            },
+            {
+                "item": "red_dye"
+            }
+        ]
     }
 }

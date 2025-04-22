@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
 		"description": {
 			"identifier": "poke:cut_galaxy_slab_to_cut_galaxy"
@@ -8,15 +8,21 @@
 			"crafting_table"
 		],
 		"unlock": [
-			{"item": "poke:cut_galaxy_slab"}
+			{
+				"item": "poke:cut_galaxy_slab"
+			}
 		],
 		"key": {
-			"C": {"item": "poke:cut_galaxy_slab"}
+			"C": {
+				"item": "poke:cut_galaxy_slab"
+			}
 		},
 		"pattern": [
 			"CC"
 		],
-		"result": {"item": "poke:cut_galaxy"},
+		"result": {
+			"item": "poke:cut_galaxy"
+		},
 		"priority": 2
 	}
 }

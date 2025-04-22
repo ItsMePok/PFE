@@ -1,10 +1,30 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shapeless": {
-		"unlock": [{"item":"poke:honey_bricks"},{"item": "honeycomb"},{"item": "honeycomb_block"}],
-		"description": {"identifier": "poke:chiseled_honey_brick_sc"},
-		"tags": ["stonecutter"],
-		"ingredients":[{"item":"honeycomb_block"}],
-		"result": {"item": "poke:chiseled_honey_bricks"}
+		"unlock": [
+			{
+				"item": "poke:honey_bricks"
+			},
+			{
+				"item": "honeycomb"
+			},
+			{
+				"item": "honeycomb_block"
+			}
+		],
+		"description": {
+			"identifier": "poke:chiseled_honey_brick_sc"
+		},
+		"tags": [
+			"stonecutter"
+		],
+		"ingredients": [
+			{
+				"item": "honeycomb_block"
+			}
+		],
+		"result": {
+			"item": "poke:chiseled_honey_bricks"
+		}
 	}
 }

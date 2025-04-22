@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
 		"description": {
 			"identifier": "poke:nebula_bricks_slab_craft"
@@ -8,12 +8,20 @@
 			"crafting_table"
 		],
 		"unlock": [
-			{"item":"poke:nebula_block"},
-			{"item":"poke:nebula_ingot"},
-			{"item":"poke:nebula_bricks"}
+			{
+				"item": "poke:nebula_block"
+			},
+			{
+				"item": "poke:nebula_ingot"
+			},
+			{
+				"item": "poke:nebula_bricks"
+			}
 		],
 		"key": {
-			"C": {"item": "poke:nebula_bricks"}
+			"C": {
+				"item": "poke:nebula_bricks"
+			}
 		},
 		"pattern": [
 			"CCC"

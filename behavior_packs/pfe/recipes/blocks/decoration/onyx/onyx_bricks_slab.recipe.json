@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
 		"description": {
 			"identifier": "poke:onyx_bricks_slab_craft"
@@ -8,12 +8,20 @@
 			"crafting_table"
 		],
 		"unlock": [
-			{"item":"poke:onyx_block"},
-			{"item":"poke:onyx_ingot"},
-			{"item":"poke:onyx_bricks"}
+			{
+				"item": "poke:onyx_block"
+			},
+			{
+				"item": "poke:onyx_ingot"
+			},
+			{
+				"item": "poke:onyx_bricks"
+			}
 		],
 		"key": {
-			"C": {"item": "poke:onyx_bricks"}
+			"C": {
+				"item": "poke:onyx_bricks"
+			}
 		},
 		"pattern": [
 			"CCC"

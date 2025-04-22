@@ -548,7 +548,7 @@ var require_lib = __commonJS({
 });
 
 // scripts/main.ts
-import { system as system3, world as world5, EquipmentSlot as EquipmentSlot5, GameMode as GameMode3, EntityComponentTypes as EntityComponentTypes5, ItemComponentTypes as ItemComponentTypes4, ItemStack as ItemStack4, Direction as Direction2 } from "@minecraft/server";
+import { system as system3, world as world5, EquipmentSlot as EquipmentSlot5, GameMode as GameMode4, EntityComponentTypes as EntityComponentTypes5, ItemComponentTypes as ItemComponentTypes4, ItemStack as ItemStack5, Direction as Direction2 } from "@minecraft/server";
 
 // node_modules/@minecraft/vanilla-data/lib/index.js
 var MinecraftBiomeTypes = ((MinecraftBiomeTypes2) => {
@@ -5281,11 +5281,13 @@ function PokeTimeDeleteEvent(player, event) {
 }
 
 // scripts/boltbow.ts
-import { EntityComponentTypes as EntityComponentTypes3, EquipmentSlot as EquipmentSlot3, ItemComponentTypes as ItemComponentTypes3 } from "@minecraft/server";
+import { EntityComponentTypes as EntityComponentTypes3, EquipmentSlot as EquipmentSlot3, GameMode as GameMode3, ItemComponentTypes as ItemComponentTypes3 } from "@minecraft/server";
 import { ActionFormData as ActionFormData5 } from "@minecraft/server-ui";
 var PFEAmmoProperty = `poke:ammo`;
+var PFEAmmoStorageVersion = 2;
 var PFEAmmoStorageDefault = [
   {
+    v: PFEAmmoStorageVersion,
     max: 32,
     amount: 16,
     entityId: MinecraftEntityTypes.Arrow,
@@ -5295,6 +5297,11 @@ var PFEAmmoStorageDefault = [
         id: "pfe:capacity",
         level: 1,
         maxLevel: void 0
+      },
+      {
+        id: "pfe:flaming",
+        level: 0,
+        maxLevel: 1
       }
     ]
   }
@@ -5338,7 +5345,9 @@ var PFEBoltBowsComponent = class {
 function PokeShoot(player, ammoComponent, item, delay) {
   if (!item)
     return;
-  ammoComponent.amount = ammoComponent.amount - 1;
+  if (player.getGameMode() != GameMode3.creative) {
+    ammoComponent.amount = ammoComponent.amount - 1;
+  }
   item.setDynamicProperty(PFEAmmoProperty, JSON.stringify([ammoComponent]));
   const headLocate = player.getHeadLocation();
   const angle = player.getViewDirection();
@@ -5353,6 +5362,7 @@ function PokeShoot(player, ammoComponent, item, delay) {
   } else if (ammoComponent.amount == 1) {
     player.playSound(`random.bow`, { pitch: 1.25 });
   }
+  projComp.catchFireOnHurt = PokeGetObjectById(ammoComponent.upgrades, `pfe:flaming`)?.value.level > 0;
   projComp.owner = player;
   projComp.shoot(angle, { uncertainty: 1e-3 });
   if (PokeDamageItemUB(item, void 0, player, EquipmentSlot3.Mainhand)?.broke) {
@@ -5361,7 +5371,7 @@ function PokeShoot(player, ammoComponent, item, delay) {
 }
 function PFEAmmoManagementMainMenuUI(item, player) {
   let UI = new ActionFormData5();
-  UI.title({ translate: `translation.poke:ammoUIMainMenuTitle`, with: { rawtext: [{ translate: `item.${item.typeId}`.replace(`\xA79PFE\xA7r`, ``) }] } });
+  UI.title({ translate: `translation.poke:ammoUIMainMenuTitle`, with: { rawtext: [{ translate: `poke_pfe.${item.typeId.substring(5)}` }] } });
   if (typeof item.getDynamicProperty(PFEAmmoProperty) != "string") {
     PokeSaveProperty(PFEAmmoProperty, item, JSON.stringify(PFEAmmoStorageDefault), player);
   }
@@ -5432,6 +5442,7 @@ function PFEAmmoManagementAddAmmoUI(item, player) {
         }
         if (ammoComponent.id != selectedItem.typeId) {
           let newProperty = [{
+            v: PFEAmmoStorageVersion,
             amount: selectedItem.amount,
             max: ammoComponent.max,
             entityId: selectedItem.typeId,
@@ -5439,7 +5450,7 @@ function PFEAmmoManagementAddAmmoUI(item, player) {
             upgrades: ammoComponent.upgrades
           }];
           if (!PokeSaveProperty(PFEAmmoProperty, item, JSON.stringify(newProperty), player)) {
-            PokeErrorScreen(player, void 0, PFEAmmoManagementAddAmmoUI(item, player));
+            PokeErrorScreen(player, { text: `Unable to save new ammo type` }, PFEAmmoManagementAddAmmoUI(item, player));
             return;
           }
           player.runCommand(`give @s ${ammoComponent.id} ${ammoComponent.amount}`);
@@ -5447,6 +5458,7 @@ function PFEAmmoManagementAddAmmoUI(item, player) {
         } else {
           if (!ammoComponent.max) {
             let newProperty2 = [{
+              v: PFEAmmoStorageVersion,
               amount: ammoComponent.amount + selectedItem.amount,
               max: ammoComponent.max,
               entityId: ammoComponent.entityId,
@@ -5454,7 +5466,7 @@ function PFEAmmoManagementAddAmmoUI(item, player) {
               upgrades: ammoComponent.upgrades
             }];
             if (!PokeSaveProperty(PFEAmmoProperty, item, JSON.stringify(newProperty2), player)) {
-              PokeErrorScreen(player, void 0, PFEAmmoManagementAddAmmoUI(item, player));
+              PokeErrorScreen(player, { text: `Unable to save new ammo amount` }, PFEAmmoManagementAddAmmoUI(item, player));
               return;
             }
             player.runCommand(`clear @s ${selectedItem.typeId} -1 ${selectedItem.amount}`);
@@ -5466,6 +5478,7 @@ function PFEAmmoManagementAddAmmoUI(item, player) {
             takeAmount = maxRemaining;
           }
           let newProperty = [{
+            v: PFEAmmoStorageVersion,
             amount: ammoComponent.amount + takeAmount,
             max: ammoComponent.max,
             entityId: ammoComponent.entityId,
@@ -5473,7 +5486,7 @@ function PFEAmmoManagementAddAmmoUI(item, player) {
             upgrades: ammoComponent.upgrades
           }];
           if (!PokeSaveProperty(PFEAmmoProperty, item, JSON.stringify(newProperty), player)) {
-            PokeErrorScreen(player, void 0, PFEAmmoManagementAddAmmoUI(item, player));
+            PokeErrorScreen(player, { text: `Unable to save new ammo amount` }, PFEAmmoManagementAddAmmoUI(item, player));
             return;
           }
           player.runCommand(`clear @s ${selectedItem.typeId} -1 ${takeAmount}`);
@@ -5515,7 +5528,7 @@ function PFEArrowIcon(itemId) {
 function PFEQuickReload(ammoComponent, item, player) {
   let reloadingAmmo = PokeGetItemFromInventory(player, void 0, ammoComponent.id);
   if (!reloadingAmmo) {
-    PokeErrorScreen(player);
+    PokeErrorScreen(player, { text: `Failed to reload ammo` });
     return;
   }
   let totalAmount = 0;
@@ -5526,6 +5539,7 @@ function PFEQuickReload(ammoComponent, item, player) {
   }
   if (!ammoComponent.max) {
     let newProperty2 = [{
+      v: PFEAmmoStorageVersion,
       amount: ammoComponent.amount + totalAmount,
       max: ammoComponent.max,
       entityId: ammoComponent.entityId,
@@ -5545,6 +5559,7 @@ function PFEQuickReload(ammoComponent, item, player) {
     takeAmount = maxRemaining;
   }
   let newProperty = [{
+    v: PFEAmmoStorageVersion,
     amount: ammoComponent.amount + takeAmount,
     max: ammoComponent.max,
     entityId: ammoComponent.entityId,
@@ -5561,25 +5576,52 @@ function PFEQuickReload(ammoComponent, item, player) {
 function PFEAmmoUpgrade(player, item) {
   let UI = new ActionFormData5();
   let ammoComponent = JSON.parse(item.getDynamicProperty(PFEAmmoProperty).toString()).at(0);
-  UI.title({ translate: `translation.poke:ammoUIUpgradeTitle`, with: { rawtext: [{ translate: `item.${item.typeId}` }] } });
+  UI.title({ translate: `translation.poke:ammoUIUpgradeTitle`, with: { rawtext: [{ translate: `poke_pfe.${item.typeId.substring(5)}` }] } });
   let capacityUpgrade = PokeGetObjectById(ammoComponent.upgrades, `pfe:capacity`);
+  let flamingUpgrade = PokeGetObjectById(ammoComponent.upgrades, `pfe:flaming`);
+  console.warn(JSON.stringify(ammoComponent));
   if (!capacityUpgrade) {
-    PokeErrorScreen(player, void 0, PFEAmmoManagementMainMenuUI(item, player));
+    PokeErrorScreen(player, { text: `Cannot find upgrade data for the Capacity Upgrade` }, PFEAmmoManagementMainMenuUI(item, player));
     return;
   }
+  if (!flamingUpgrade) {
+    let newProperty = [{
+      v: PFEAmmoStorageVersion,
+      amount: ammoComponent.amount,
+      max: ammoComponent.max,
+      entityId: ammoComponent.entityId,
+      id: ammoComponent.id,
+      upgrades: ammoComponent.upgrades.concat([PokeGetObjectById(PFEAmmoStorageDefault.at(0).upgrades, `pfe:flaming`)?.value])
+    }];
+    console.warn(JSON.stringify(newProperty));
+    PokeSaveProperty(PFEAmmoProperty, item, JSON.stringify(newProperty), player);
+    ammoComponent = newProperty.at(0);
+    flamingUpgrade = PokeGetObjectById(PFEAmmoStorageDefault.at(0).upgrades, `pfe:flaming`);
+    if (!flamingUpgrade) {
+      PokeErrorScreen(player, { text: `Cannot find upgrade data for the Flaming Upgrade` }, PFEAmmoManagementMainMenuUI(item, player));
+      return;
+    }
+  }
   let canUpgradeCapacity = false;
-  if (PokeGetItemFromInventory(player, void 0, `poke:capacity_core`)) {
-    UI.button({ translate: `translation.poke:ammoUpgradeCapacity`, with: { rawtext: [{ text: `${capacityUpgrade.value.level}` }, { text: `${capacityUpgrade.value.level}` }, { translate: `item.poke:capacity_core` }] } }, `textures/poke/pfe/capacity_core`);
+  if (player.getGameMode() == GameMode3.creative || PokeGetItemFromInventory(player, void 0, `poke:capacity_core`)) {
+    UI.button({ translate: `translation.poke:ammoUpgrade`, with: { rawtext: [{ translate: `translation.poke_pfe.capacity` }, { text: `${capacityUpgrade.value.level}` }, { text: `${capacityUpgrade.value.level}` }, { translate: `item.poke:capacity_core` }] } }, `textures/poke/pfe/capacity_core`);
     canUpgradeCapacity = true;
   } else {
-    UI.button({ translate: `translation.poke:ammoUpgradeCapacity`, with: { rawtext: [{ text: `${capacityUpgrade.value.level}` }, { text: `${capacityUpgrade.value.level}` }, { translate: `item.poke:capacity_core` }] } }, `textures/poke/pfe/capacity_core_gs`);
+    UI.button({ translate: `translation.poke:ammoUpgrade`, with: { rawtext: [{ translate: `translation.poke_pfe.capacity` }, { text: `${capacityUpgrade.value.level}` }, { text: `${capacityUpgrade.value.level}` }, { translate: `item.poke:capacity_core` }] } }, `textures/poke/pfe/capacity_core_gs`);
+  }
+  let canUpgradeFlaming = false;
+  if ((player.getGameMode() == GameMode3.creative || PokeGetItemFromInventory(player, void 0, `poke_pfe:flaming_core`)) && flamingUpgrade.value.level < 1) {
+    UI.button({ translate: `translation.poke:ammoUpgrade`, with: { rawtext: [{ translate: `translation.poke_pfe.flaming` }, { text: `${flamingUpgrade.value.level}` }, { text: `${flamingUpgrade.value.level}` }, { translate: `poke_pfe.flaming_core` }] } }, `textures/poke/pfe/flaming_core`);
+    canUpgradeFlaming = true;
+  } else {
+    UI.button({ translate: `translation.poke:ammoUpgrade`, with: { rawtext: [{ translate: `translation.poke_pfe.flaming` }, { text: `${flamingUpgrade.value.level}` }, { text: `${flamingUpgrade.value.level}` }, { translate: `poke_pfe.flaming_core` }] } }, `textures/poke/pfe/flaming_core_gs`);
   }
   UI.button({ translate: `translation.poke:goBack` }, `textures/poke/common/left_arrow`);
   UI.show(player).then((response) => {
     let selection = 0;
     if (response.selection == selection) {
       if (!canUpgradeCapacity) {
-        PokeErrorScreen(player, void 0, PFEAmmoManagementMainMenuUI(item, player));
+        PokeErrorScreen(player, { text: `Unable to upgrade Capacity` }, PFEAmmoManagementMainMenuUI(item, player));
         return;
       }
       let newCapacity = {
@@ -5588,19 +5630,46 @@ function PFEAmmoUpgrade(player, item) {
         maxLevel: capacityUpgrade.value.maxLevel
       };
       let newProperty = [{
+        v: PFEAmmoStorageVersion,
         amount: ammoComponent.amount,
         max: Number(ammoComponent.max) + 16,
         entityId: ammoComponent.entityId,
         id: ammoComponent.id,
-        upgrades: ammoComponent.upgrades.filter((upgrades) => {
-          upgrades.id != `pfe:capacity`;
-        }).concat(newCapacity)
+        upgrades: ammoComponent.upgrades.filter((upgrade) => upgrade.id != `pfe:capacity`).concat(newCapacity)
       }];
       if (!PokeSaveProperty(PFEAmmoProperty, item, JSON.stringify(newProperty), player)) {
-        PokeErrorScreen(player, void 0, PFEAmmoManagementAddAmmoUI(item, player));
+        PokeErrorScreen(player, { text: `Unable to save capacity upgrade` }, PFEAmmoManagementAddAmmoUI(item, player));
         return;
       }
       player.runCommand(`clear @s poke:capacity_core -1 ${capacityUpgrade.value.level}`);
+      return;
+    } else
+      selection++;
+    if (response.selection == selection) {
+      if (!canUpgradeFlaming) {
+        PokeErrorScreen(player, { text: `Unable to upgrade flaming` }, PFEAmmoManagementMainMenuUI(item, player));
+        return;
+      }
+      let newFlaming = {
+        id: flamingUpgrade.value.id,
+        level: flamingUpgrade.value.level + 1,
+        maxLevel: flamingUpgrade.value.maxLevel
+      };
+      console.warn(JSON.stringify(ammoComponent.upgrades.filter((upgrade) => upgrade.id != `pfe:flaming`)));
+      let newProperty = [{
+        v: PFEAmmoStorageVersion,
+        amount: ammoComponent.amount,
+        max: ammoComponent.max,
+        entityId: ammoComponent.entityId,
+        id: ammoComponent.id,
+        upgrades: ammoComponent.upgrades.filter((upgrade) => upgrade.id != `pfe:flaming`).concat(newFlaming)
+      }];
+      console.warn(JSON.stringify(newProperty));
+      if (!PokeSaveProperty(PFEAmmoProperty, item, JSON.stringify(newProperty), player)) {
+        PokeErrorScreen(player, { text: `Unable to save flaming upgrade` }, PFEAmmoManagementAddAmmoUI(item, player));
+        return;
+      }
+      player.runCommand(`clear @s poke_pfe:flaming_core -1 1`);
       return;
     } else
       selection++;
@@ -5742,7 +5811,7 @@ import { ActionFormData as ActionFormData7 } from "@minecraft/server-ui";
 
 // scripts/armorEffects.ts
 var import_math = __toESM(require_lib());
-import { EntityComponentTypes as EntityComponentTypes4, EquipmentSlot as EquipmentSlot4 } from "@minecraft/server";
+import { EntityComponentTypes as EntityComponentTypes4, EquipmentSlot as EquipmentSlot4, ItemStack as ItemStack4 } from "@minecraft/server";
 var ArmorEffectDuration = 500;
 var PFEArmorEffectData = {
   hellish: {
@@ -6253,7 +6322,7 @@ var PFEArmorEffectData = {
     tag: `poke_pfe:void_armor_effects`
   }
 };
-function CheckEffects(player, ArmorData) {
+function CheckEffects(player, ArmorData, additionalOptions) {
   const Helmet = player.getComponent(EntityComponentTypes4.Equippable)?.getEquipment(EquipmentSlot4.Head) ?? false;
   const Chestplate = player.getComponent(EntityComponentTypes4.Equippable)?.getEquipment(EquipmentSlot4.Chest) ?? false;
   const Leggings = player.getComponent(EntityComponentTypes4.Equippable)?.getEquipment(EquipmentSlot4.Legs) ?? false;
@@ -6271,10 +6340,209 @@ function CheckEffects(player, ArmorData) {
   let totalVillageHero = 0;
   let totalSaturation = 0;
   let totalHaste = 0;
+  let radiusEffects = false;
+  if (additionalOptions) {
+    const NoveltyTags = player.getTags().filter((tag) => tag.includes(`novelty:poke`));
+    for (let i = NoveltyTags.length; i > -1; i--) {
+      const tag = NoveltyTags.at(i);
+      if (!tag)
+        continue;
+      const item = new ItemStack4(tag.substring(8), 1);
+      totalPieces += 1;
+      switch (true) {
+        case item.hasTag(ArmorData.amethyst.tag): {
+          effects = effects.concat(ArmorData.amethyst.effects);
+          totalRegeneration += 1;
+          totalHaste += 1;
+          break;
+        }
+        case item.hasTag(ArmorData.shade.tag): {
+          effects = effects.concat(ArmorData.shade.effects);
+          totalStrength += 1;
+          totalRegeneration += 1;
+          totalResistance += 1;
+          totalSlowness += 1;
+          break;
+        }
+        case item.hasTag(ArmorData.radium.tag): {
+          effects = effects.concat(ArmorData.radium.effects);
+          totalStrength += 1;
+          totalRegeneration += 1;
+          totalResistance += 1;
+          totalSpeed += 1;
+          break;
+        }
+        case item.hasTag(ArmorData.banished.tag): {
+          effects = effects.concat(ArmorData.banished.effects);
+          totalRegeneration += 1;
+          totalResistance += 1;
+          totalSlowness += 1;
+          totalHaste += 1;
+          break;
+        }
+        case item.hasTag(ArmorData.onyx.tag): {
+          effects = effects.concat(ArmorData.onyx.effects);
+          totalRegeneration += 1;
+          break;
+        }
+        case item.hasTag(ArmorData.holy.tag): {
+          effects = effects.concat(ArmorData.holy.effects);
+          totalRegeneration += 1;
+          totalResistance += 1;
+          totalSpeed += 1;
+          break;
+        }
+        case item.hasTag(ArmorData.hellish.tag): {
+          effects = effects.concat(ArmorData.hellish.effects);
+          totalRegeneration += 1;
+          totalResistance += 1;
+          break;
+        }
+        case item.hasTag(ArmorData.godly.tag): {
+          effects = effects.concat(ArmorData.godly.effects);
+          totalStrength += 1;
+          totalRegeneration += 1;
+          totalResistance += 1;
+          totalSpeed += 1;
+          break;
+        }
+        case item.hasTag(ArmorData.demonic.tag): {
+          effects = effects.concat(ArmorData.demonic.effects);
+          totalStrength += 1;
+          totalRegeneration += 1;
+          totalResistance += 1;
+          break;
+        }
+        case item.hasTag(ArmorData.medic.tag): {
+          effects = effects.concat(ArmorData.medic.effects);
+          totalHealthBoost += 1;
+          totalResistance += 1;
+          totalSpeed += 1;
+          break;
+        }
+        case item.hasTag(ArmorData.molten.tag): {
+          effects = effects.concat(ArmorData.molten.effects);
+          totalStrength += 1;
+          totalRegeneration += 1;
+          totalResistance += 1;
+          break;
+        }
+        case item.hasTag(ArmorData.galaxy.tag): {
+          effects = effects.concat(ArmorData.galaxy.effects);
+          totalRegeneration += 1;
+          totalResistance += 1;
+          totalSpeed += 1;
+          totalHaste += 1;
+          break;
+        }
+        case item.hasTag(ArmorData.void.tag): {
+          effects = effects.concat(ArmorData.void.effects);
+          totalSpeed += 1;
+          totalResistance += 1;
+          totalRegeneration += 1;
+          break;
+        }
+        case item.hasTag(ArmorData.astral.tag): {
+          effects = effects.concat(ArmorData.astral.effects);
+          totalRegeneration += 1;
+          totalResistance += 1;
+          totalSpeed += 1;
+          totalHaste += 1;
+          totalHealthBoost += 1;
+          break;
+        }
+        case item.hasTag(ArmorData.death.tag): {
+          effects = effects.concat(ArmorData.death.effects);
+          totalHealthBoost += 1;
+          totalResistance += 1;
+          totalRegeneration += 1;
+          break;
+        }
+        case item.hasTag(ArmorData.nebula.tag): {
+          effects = effects.concat(ArmorData.nebula.effects);
+          totalSpeed += 1;
+          totalRegeneration += 1;
+          totalResistance += 1;
+          totalHaste += 1;
+          totalVillageHero += 1;
+          totalStrength += 1;
+          totalHealthBoost += 1;
+          break;
+        }
+        case item.hasTag(ArmorData.cactus.tag): {
+          effects = effects.concat(ArmorData.cactus.effects);
+          break;
+        }
+        case item.hasTag(ArmorData.emberRobe.tag): {
+          effects = effects.concat(ArmorData.emberRobe.effects);
+          totalStrength += 1;
+          break;
+        }
+        case item.hasTag(ArmorData.hastedRobe.tag): {
+          effects = effects.concat(ArmorData.hastedRobe.effects);
+          totalStrength += 1;
+          totalHaste += 1;
+          break;
+        }
+        case item.hasTag(ArmorData.springyRobe.tag): {
+          effects = effects.concat(ArmorData.springyRobe.effects);
+          totalStrength += 1;
+          totalJumpBoost += 1;
+          break;
+        }
+        case item.hasTag(ArmorData.heroicRobe.tag): {
+          effects = effects.concat(ArmorData.heroicRobe.effects);
+          totalStrength += 1;
+          totalVillageHero += 1;
+          break;
+        }
+        case item.hasTag(ArmorData.cobaltRobe.tag): {
+          effects = effects.concat(ArmorData.cobaltRobe.effects);
+          totalStrength += 1;
+          break;
+        }
+        case item.hasTag(ArmorData.swiftRobe.tag): {
+          effects = effects.concat(ArmorData.swiftRobe.effects);
+          totalStrength += 1;
+          totalSpeed += 1;
+          break;
+        }
+        case item.hasTag(ArmorData.gluttonyRobe.tag): {
+          effects = effects.concat(ArmorData.gluttonyRobe.effects);
+          totalStrength += 1;
+          totalSaturation += 1;
+          break;
+        }
+        case item.hasTag(ArmorData.featherRobe.tag): {
+          effects = effects.concat(ArmorData.featherRobe.effects);
+          totalStrength += 1;
+          break;
+        }
+        case item.hasTag(ArmorData.shadowRobe.tag): {
+          effects = effects.concat(ArmorData.shadowRobe.effects);
+          totalStrength += 1;
+          break;
+        }
+        case item.hasTag(ArmorData.nightVision.tag): {
+          effects = effects.concat(ArmorData.nightVision.effects);
+          break;
+        }
+        case item.hasTag(ArmorData.speedBoots.tag): {
+          effects = effects.concat(ArmorData.speedBoots.effects);
+          totalSpeed += 1;
+          break;
+        }
+        default:
+          totalPieces -= 1;
+      }
+      ;
+      continue;
+    }
+  }
   if (Offhand) {
     totalPieces += 1;
-    switch (false) {
-      case !Offhand.hasTag(ArmorData.nightVision.tag): {
+    switch (true) {
+      case Offhand.hasTag(ArmorData.nightVision.tag): {
         effects = effects.concat(ArmorData.nightVision.effects);
         break;
       }
@@ -6971,7 +7239,7 @@ system3.runInterval(() => {
   for (let player of world5.getAllPlayers()) {
     if (!player)
       continue;
-    CheckEffects(player, PFEArmorEffectData);
+    CheckEffects(player, PFEArmorEffectData, JSON.stringify(player.getTags()).includes(`novelty:poke`));
   }
 }, 20);
 world5.afterEvents.playerJoin.subscribe((data) => {
@@ -7192,7 +7460,7 @@ world5.beforeEvents.worldInitialize.subscribe((data) => {
           return;
         }
         ;
-        if (data2.source.getGameMode() == GameMode3.creative)
+        if (data2.source.getGameMode() == GameMode4.creative)
           return;
         data2.source.getComponent(EntityComponentTypes5.Equippable).setEquipment(EquipmentSlot5.Mainhand, PokeDecrementStack(data2.itemStack));
       }
@@ -7620,7 +7888,7 @@ world5.beforeEvents.worldInitialize.subscribe((data) => {
     "poke_pfe:config",
     {
       onUse(data2) {
-        if (data2.source.getGameMode() == GameMode3.creative || data2.source.hasTag(`poke:config`)) {
+        if (data2.source.getGameMode() == GameMode4.creative || data2.source.hasTag(`poke:config`)) {
           let UI = new ActionFormData7();
           UI.button({ translate: `translation.poke_pfe.bossEventConfig` }, `textures/poke/common/spawn_enabled`);
           UI.button({ translate: `translation.poke_pfe.disableConfig` }, `textures/poke/common/blacklist_add`);
@@ -7675,14 +7943,14 @@ world5.beforeEvents.worldInitialize.subscribe((data) => {
         data2.source.spawnParticle("minecraft:wind_explosion_emitter", data2.source.location);
         data2.source.applyKnockback(moveDir.x, moveDir.z, 5, moveDir.y + 0.5);
         data2.source.playSound("component.jump_to_block");
-        if (data2.source.getGameMode() == GameMode3.creative)
+        if (data2.source.getGameMode() == GameMode4.creative)
           return;
         cooldownComponent.startCooldown(data2.source);
         if (amount <= 1) {
-          equippableComponent.setEquipment(EquipmentSlot5.Mainhand, new ItemStack4("minecraft:air", 1));
+          equippableComponent.setEquipment(EquipmentSlot5.Mainhand, new ItemStack5("minecraft:air", 1));
           return;
         }
-        equippableComponent.setEquipment(EquipmentSlot5.Mainhand, new ItemStack4(data2.itemStack.typeId, amount - 1));
+        equippableComponent.setEquipment(EquipmentSlot5.Mainhand, new ItemStack5(data2.itemStack.typeId, amount - 1));
         return;
       }
     }
@@ -7762,10 +8030,10 @@ world5.beforeEvents.worldInitialize.subscribe((data) => {
         if (player.getGameMode() == "creative")
           return;
         if (amount <= 1) {
-          equippableComponent.setEquipment(EquipmentSlot5.Mainhand, new ItemStack4("minecraft:air", 1));
+          equippableComponent.setEquipment(EquipmentSlot5.Mainhand, new ItemStack5("minecraft:air", 1));
           return;
         }
-        equippableComponent.setEquipment(EquipmentSlot5.Mainhand, new ItemStack4(data2.itemStack.typeId, amount - 1));
+        equippableComponent.setEquipment(EquipmentSlot5.Mainhand, new ItemStack5(data2.itemStack.typeId, amount - 1));
         return;
       }
     }
@@ -7903,7 +8171,7 @@ world5.beforeEvents.worldInitialize.subscribe((data) => {
         let rng = Math.round(Math.random());
         const blockLocation = `${data2.block.x} ${data2.block.y} ${data2.block.z}`;
         const blockId = data2.destroyedBlockPermutation.type.id.substring(5);
-        if (data2.player?.getGameMode() == GameMode3.survival) {
+        if (data2.player?.getGameMode() == GameMode4.survival) {
           if (fortuneLevel == 3) {
             data2.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}.loot"`);
             data2.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}.loot"`);
@@ -7949,10 +8217,10 @@ world5.beforeEvents.worldInitialize.subscribe((data) => {
             if (data2.player?.getGameMode() == "creative")
               return;
             if (itemStackAmount <= 0) {
-              equippableComponent.setEquipment(EquipmentSlot5.Mainhand, new ItemStack4("minecraft:air", 1));
+              equippableComponent.setEquipment(EquipmentSlot5.Mainhand, new ItemStack5("minecraft:air", 1));
               return;
             }
-            equippableComponent.setEquipment(EquipmentSlot5.Mainhand, new ItemStack4(slabId, itemStackAmount));
+            equippableComponent.setEquipment(EquipmentSlot5.Mainhand, new ItemStack5(slabId, itemStackAmount));
             return;
           } else
             return;
@@ -8384,12 +8652,12 @@ world5.beforeEvents.worldInitialize.subscribe((data) => {
           data2.block.setPermutation(data2.block.permutation.withState("poke:growth_stage", growth_stage));
           data2.dimension.runCommand("playsound item.bone_meal.use @a " + block_location);
           data2.dimension.runCommand("particle minecraft:crop_growth_emitter " + block_location);
-          if (data2.player?.getGameMode() != GameMode3.creative) {
+          if (data2.player?.getGameMode() != GameMode4.creative) {
             if (itemAfterUse1 == 0) {
               data2.player?.runCommand("clear @s bone_meal 0 1");
               return;
             }
-            equippableComponent.setEquipment(EquipmentSlot5.Mainhand, new ItemStack4(mainhandItem.typeId, itemAfterUse1));
+            equippableComponent.setEquipment(EquipmentSlot5.Mainhand, new ItemStack5(mainhandItem.typeId, itemAfterUse1));
             return;
           }
           return;
@@ -8529,7 +8797,7 @@ world5.beforeEvents.worldInitialize.subscribe((data) => {
         const blockState = data2.destroyedBlockPermutation.getState("poke:double");
         if (gm == "survival") {
           if (blockState == true) {
-            data2.dimension.spawnItem(new ItemStack4(blockId, 1), block_location);
+            data2.dimension.spawnItem(new ItemStack5(blockId, 1), block_location);
             return;
           }
           return;

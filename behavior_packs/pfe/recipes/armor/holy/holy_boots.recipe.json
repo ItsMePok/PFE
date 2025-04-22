@@ -1,25 +1,43 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
-		"description": {"identifier": "poke:holy_boots"},
-		"tags": ["crafting_table"],
+		"description": {
+			"identifier": "poke:holy_boots"
+		},
+		"tags": [
+			"crafting_table"
+		],
 		"pattern": [
 			"BBB",
 			"BUB",
 			"B#B"
 		],
 		"unlock": [
-			{"item": "poke:onyx_boots"},
-			{"item":"poke:diamond_upgrade_core"},
-			{"item":"poke:holy_ingot"}
+			{
+				"item": "poke:onyx_boots"
+			},
+			{
+				"item": "poke:diamond_upgrade_core"
+			},
+			{
+				"item": "poke:holy_ingot"
+			}
 		],
 		"key": {
-			"B": {"item": "poke:holy_block"},
-			"#": {"item": "poke:onyx_boots"},
-			"U": {"item": "poke:diamond_upgrade_core"}
+			"B": {
+				"item": "poke:holy_block"
+			},
+			"#": {
+				"item": "poke:onyx_boots"
+			},
+			"U": {
+				"item": "poke:diamond_upgrade_core"
+			}
 		},
 		"result": [
-			{"item": "poke:holy_boots"}
+			{
+				"item": "poke:holy_boots"
+			}
 		]
 	}
 }

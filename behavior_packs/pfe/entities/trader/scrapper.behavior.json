@@ -20,6 +20,11 @@
 					"component_groups": [
 						"poke:sheared"
 					]
+				},
+				"remove": {
+					"component_groups": [
+						"poke:default"
+					]
 				}
 			}
 		},
@@ -27,6 +32,33 @@
 			"poke:default": {
 				"minecraft:variant": {
 					"value": 0
+				},
+				"minecraft:interact": {
+					"interactions": [
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "has_equipment",
+											"subject": "other",
+											"domain": "hand",
+											"value": "shears"
+										},
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										}
+									]
+								},
+								"event": "poke:shear"
+							},
+							"use_item": true,
+							"play_sounds": "shear",
+							"interact_text": "action.interact.poke.trader"
+						}
+					]
 				}
 			},
 			"poke:sheared": {
@@ -36,33 +68,6 @@
 			}
 		},
 		"components": {
-			"minecraft:interact": {
-				"interactions": [
-					{
-						"on_interact": {
-							"filters": {
-								"all_of": [
-									{
-										"test": "has_equipment",
-										"subject": "other",
-										"domain": "hand",
-										"value": "shears"
-									},
-									{
-										"test": "is_family",
-										"subject": "other",
-										"value": "player"
-									}
-								]
-							},
-							"event": "poke:shear"
-						},
-						"use_item": true,
-						"play_sounds": "shear",
-						"interact_text": "action.interact.poke.trader"
-					}
-				]
-			},
 			"minecraft:type_family": {
 				"family": [
 					"poke:traders",

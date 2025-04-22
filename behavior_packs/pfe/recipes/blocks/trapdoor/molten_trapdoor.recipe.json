@@ -1,16 +1,29 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
-		"description": {"identifier":"poke:molten_trapdoor"},
-		"tags": ["crafting_table"],
+		"description": {
+			"identifier": "poke:molten_trapdoor"
+		},
+		"tags": [
+			"crafting_table"
+		],
 		"unlock": [
-			{"item": "poke:molten_slimeball"},
-            {"item":"poke:ember_block"}
+			{
+				"item": "poke:molten_slimeball"
+			},
+			{
+				"item": "poke:ember_block"
+			}
 		],
 		"key": {
-			"C":{"item":"poke:molten_slimeball"}
+			"C": {
+				"item": "poke:molten_slimeball"
+			}
 		},
-		"pattern": ["CCC","CCC"],
+		"pattern": [
+			"CCC",
+			"CCC"
+		],
 		"result": {
 			"item": "poke:molten_trapdoor",
 			"count": 4

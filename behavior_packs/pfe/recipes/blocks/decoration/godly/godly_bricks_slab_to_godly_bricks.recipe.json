@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
 		"description": {
 			"identifier": "poke:godly_bricks_slab_to_godly_bricks"
@@ -8,15 +8,21 @@
 			"crafting_table"
 		],
 		"unlock": [
-			{"item": "poke:godly_bricks_slab"}
+			{
+				"item": "poke:godly_bricks_slab"
+			}
 		],
 		"key": {
-			"C": {"item": "poke:godly_bricks_slab"}
+			"C": {
+				"item": "poke:godly_bricks_slab"
+			}
 		},
 		"pattern": [
 			"CC"
 		],
-		"result": {"item": "poke:godly_bricks"},
+		"result": {
+			"item": "poke:godly_bricks"
+		},
 		"priority": 2
 	}
 }

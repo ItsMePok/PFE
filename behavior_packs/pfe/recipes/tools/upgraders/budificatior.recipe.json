@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
 		"description": {
 			"identifier": "poke:budificator"
@@ -17,7 +17,7 @@
 				"item": "amethyst_shard"
 			},
 			{
-				"item":"poke:diamond_upgrade_core"
+				"item": "poke:diamond_upgrade_core"
 			}
 		],
 		"key": {
@@ -28,7 +28,7 @@
 				"item": "amethyst_shard"
 			},
 			"c": {
-				"item":"poke:diamond_upgrade_core"
+				"item": "poke:diamond_upgrade_core"
 			},
 			"T": {
 				"item": "poke:demonic_stick"

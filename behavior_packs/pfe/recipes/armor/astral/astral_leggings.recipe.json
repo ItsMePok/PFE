@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
 		"description": {
 			"identifier": "poke:astral_leggings"
@@ -13,16 +13,32 @@
 			"#BX"
 		],
 		"unlock": [
-			{"item": "poke:galaxy_leggings"},
-			{"item":"poke:astral_ingot"},
-			{"item":"poke:platinum_upgrade_core"}
+			{
+				"item": "poke:galaxy_leggings"
+			},
+			{
+				"item": "poke:astral_ingot"
+			},
+			{
+				"item": "poke:platinum_upgrade_core"
+			}
 		],
 		"key": {
-			"B": {"item": "poke:astral_block"},
-			"#": {"item": "poke:galaxy_leggings"},
-			"U": {"item": "poke:platinum_upgrade_core"},
-			"X":{"item":"poke:medic_leggings"}
+			"B": {
+				"item": "poke:astral_block"
+			},
+			"#": {
+				"item": "poke:galaxy_leggings"
+			},
+			"U": {
+				"item": "poke:platinum_upgrade_core"
+			},
+			"X": {
+				"item": "poke:medic_leggings"
+			}
 		},
-		"result": {"item": "poke:astral_leggings"}
+		"result": {
+			"item": "poke:astral_leggings"
+		}
 	}
 }

@@ -1,27 +1,43 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
 		"description": {
 			"identifier": "poke:galaxy_sword"
 		},
-		"tags": ["crafting_table"],
+		"tags": [
+			"crafting_table"
+		],
 		"pattern": [
 			"  Y",
 			"UY ",
 			"XA "
 		],
 		"unlock": [
-			{"item": "poke:godly_sword"},
-			{"item": "poke:galaxy_ingot"}
+			{
+				"item": "poke:godly_sword"
+			},
+			{
+				"item": "poke:galaxy_ingot"
+			}
 		],
 		"key": {
-			"Y": {"item":"poke:galaxy_block"},
-			"X": {"item":"poke:godly_stick"},
-			"A": {"item":"poke:godly_sword"},
-			"U": {"item":"poke:platinum_upgrade_core"}
+			"Y": {
+				"item": "poke:galaxy_block"
+			},
+			"X": {
+				"item": "poke:godly_stick"
+			},
+			"A": {
+				"item": "poke:godly_sword"
+			},
+			"U": {
+				"item": "poke:platinum_upgrade_core"
+			}
 		},
 		"result": [
-			{"item":"poke:galaxy_sword"}
+			{
+				"item": "poke:galaxy_sword"
+			}
 		]
 	}
 }

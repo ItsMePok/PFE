@@ -1,6 +1,8 @@
-{"format_version": "1.19.0",
+{
+	"format_version": "1.19.0",
 	"tiers": [
-		{"total_exp_required": 0,
+		{
+			"total_exp_required": 0,
 			"groups": [
 				{
 					"trades": [
@@ -10,7 +12,6 @@
 							"wants": [
 								{
 									"item": "poke:copper_token",
-									
 									"quantity": 4
 								}
 							],
@@ -26,7 +27,6 @@
 							"wants": [
 								{
 									"item": "poke:iron_token",
-									
 									"quantity": 4
 								}
 							],
@@ -42,7 +42,6 @@
 							"wants": [
 								{
 									"item": "poke:gold_token",
-									
 									"quantity": 8
 								}
 							],
@@ -58,7 +57,6 @@
 							"wants": [
 								{
 									"item": "poke:diamond_token",
-									
 									"quantity": 16
 								}
 							],
@@ -79,7 +77,6 @@
 							"gives": [
 								{
 									"item": "poke:copper_token",
-									
 									"quantity": 4
 								}
 							]
@@ -95,7 +92,6 @@
 							"gives": [
 								{
 									"item": "poke:iron_token",
-									
 									"quantity": 4
 								}
 							]
@@ -111,7 +107,6 @@
 							"gives": [
 								{
 									"item": "poke:gold_token",
-									
 									"quantity": 8
 								}
 							]
@@ -127,7 +122,6 @@
 							"gives": [
 								{
 									"item": "poke:diamond_token",
-									
 									"quantity": 16
 								}
 							]
@@ -137,7 +131,6 @@
 							"wants": [
 								{
 									"item": "poke:iron_token",
-									
 									"quantity": 1
 								}
 							],
@@ -152,7 +145,6 @@
 							"wants": [
 								{
 									"item": "poke:gold_token",
-									
 									"quantity": 1
 								}
 							],
@@ -167,7 +159,6 @@
 							"wants": [
 								{
 									"item": "poke:diamond_token",
-									
 									"quantity": 1
 								}
 							],
@@ -182,13 +173,26 @@
 							"wants": [
 								{
 									"item": "poke:platinum_token",
-									
 									"quantity": 1
 								}
 							],
 							"gives": [
 								{
 									"item": "poke:platinum_upgrade_core"
+								}
+							]
+						},
+						{
+							"max_uses": 2147483647,
+							"wants": [
+								{
+									"item": "poke:diamond_token",
+									"quantity": 1
+								}
+							],
+							"gives": [
+								{
+									"item": "poke_pfe:flaming_core"
 								}
 							]
 						},
@@ -212,22 +216,6 @@
 							"wants": [
 								{
 									"item": "poke:diamond_token",
-									
-									"quantity": 1
-								}
-							],
-							"gives": [
-								{
-									"item": "poke:cassette_galactic_march"
-								}
-							]
-						},
-						{
-							"max_uses": 2147483647,
-							"wants": [
-								{
-									"item": "poke:diamond_token",
-									
 									"quantity": 5
 								}
 							],
@@ -242,7 +230,6 @@
 							"wants": [
 								{
 									"item": "poke:platinum_token",
-									
 									"quantity": 1
 								}
 							],
@@ -257,7 +244,6 @@
 							"wants": [
 								{
 									"item": "poke:iron_token",
-									
 									"quantity": 1
 								}
 							],
@@ -273,7 +259,6 @@
 							"wants": [
 								{
 									"item": "poke:iron_token",
-									
 									"quantity": 1
 								}
 							],
@@ -289,7 +274,6 @@
 							"wants": [
 								{
 									"item": "poke:diamond_token",
-									
 									"quantity": 2
 								}
 							],
@@ -304,7 +288,6 @@
 							"wants": [
 								{
 									"item": "poke:gold_token",
-									
 									"quantity": 5
 								},
 								{
@@ -322,7 +305,6 @@
 							"wants": [
 								{
 									"item": "poke:diamond_token",
-									
 									"quantity": 1
 								},
 								{
@@ -340,7 +322,6 @@
 							"wants": [
 								{
 									"item": "poke:diamond_token",
-									
 									"quantity": 5
 								},
 								{

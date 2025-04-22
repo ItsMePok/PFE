@@ -1,0 +1,67 @@
+{
+	"format_version": "1.21.70",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke_pfe:cobalt_boots",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:rarity": "common",
+			"minecraft:display_name": {
+				"value": "%poke_pfe.cobalt_boots\n%poke_pfe.tag"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:icon": {
+				"textures": {
+					"default": "poke_pfe_cobalt_boots"
+				}
+			},
+			"minecraft:wearable": {
+				"protection": 2,
+				"slot": "slot.armor.feet"
+			},
+			"minecraft:durability": {
+				"damage_chance": {
+					"min": 60,
+					"max": 100
+				},
+				"max_durability": 176
+			},
+			"minecraft:enchantable": {
+				"value": 9,
+				"slot": "armor_feet"
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"poke:repair_core"
+						],
+						"repair_amount": "query.max_durability"
+					},
+					{
+						"items": [
+							"poke:cobalt_ingot"
+						],
+						"repair_amount": "query.max_durability*0.25"
+					},
+					{
+						"items": [
+							"poke:cobalt_nugget"
+						],
+						"repair_amount": "query.max_durability*0.028"
+					}
+				]
+			},
+			"minecraft:tags": {
+				"tags": [
+					"poke_pfe:cobalt_armor_effects",
+					"minecraft:is_armor",
+					"minecraft:trimmable_armors"
+				]
+			}
+		}
+	}
+}

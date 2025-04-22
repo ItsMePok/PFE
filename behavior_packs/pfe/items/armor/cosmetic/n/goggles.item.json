@@ -11,6 +11,9 @@
       "minecraft:display_name": {
         "value": "%poke_pfe.goggles\n§7%poke_pfe.cosmetic\n%poke_pfe.tag"
       },
+      "minecraft:dyeable": {
+        "default_color": "#14ffff"
+      },
       "minecraft:rarity": "common",
       "minecraft:tags": {
         "tags": [
@@ -23,7 +26,8 @@
       "minecraft:max_stack_size": 1,
       "minecraft:icon": {
         "textures": {
-          "default": "poke_goggles"
+          "default": "poke_goggles",
+          "dyed": "poke_goggles"
         }
       }
     }

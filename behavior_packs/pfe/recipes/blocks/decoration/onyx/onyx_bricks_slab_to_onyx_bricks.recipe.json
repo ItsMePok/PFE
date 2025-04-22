@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
 		"description": {
 			"identifier": "poke:onyx_bricks_slab_to_onyx_bricks"
@@ -8,15 +8,21 @@
 			"crafting_table"
 		],
 		"unlock": [
-			{"item": "poke:onyx_bricks_slab"}
+			{
+				"item": "poke:onyx_bricks_slab"
+			}
 		],
 		"key": {
-			"C": {"item": "poke:onyx_bricks_slab"}
+			"C": {
+				"item": "poke:onyx_bricks_slab"
+			}
 		},
 		"pattern": [
 			"CC"
 		],
-		"result": {"item": "poke:onyx_bricks"},
+		"result": {
+			"item": "poke:onyx_bricks"
+		},
 		"priority": 2
 	}
 }

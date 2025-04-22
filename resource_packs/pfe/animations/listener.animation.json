@@ -777,8 +777,8 @@
 					"position": [0, 0, 0]
 				},
 				"root": {
-					"rotation": [0, 0, 0],
-					"position": [0, -5, 0]
+					"rotation": [0, 0, "math.cos(query.anim_time*20)*1"],
+					"position": [0, "-5 + Math.max(math.cos(query.anim_time*20)*1,-math.cos(query.anim_time*20)*1)", 0]
 				},
 				"leg3": {
 					"position": [0, -3.3, -0.3]
@@ -791,7 +791,7 @@
 					"rotation": [0, 0, -35]
 				},
 				"bone28": {
-					"rotation": [0, 0, 62.5],
+					"rotation": [0, 0, "62.5 + math.cos(query.anim_time*20)*10"],
 					"position": [1.1, 0, 0]
 				},
 				"bone43": {
@@ -809,7 +809,7 @@
 					"rotation": [0, 0, -35]
 				},
 				"bone49": {
-					"rotation": [0, 0, 62.5],
+					"rotation": [0, 0, "62.5 - math.cos(query.anim_time*20)*10"],
 					"position": [1.1, 0, 0]
 				},
 				"bone55": {

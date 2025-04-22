@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
 		"description": {
 			"identifier": "poke:godly_helmet"
@@ -13,9 +13,15 @@
 			"B#B"
 		],
 		"unlock": [
-			{"item": "poke:holy_helmet"},
-			{"item":"poke:diamond_upgrade_core"},
-			{"item":"poke:godly_ingot"}
+			{
+				"item": "poke:holy_helmet"
+			},
+			{
+				"item": "poke:diamond_upgrade_core"
+			},
+			{
+				"item": "poke:godly_ingot"
+			}
 		],
 		"key": {
 			"B": {

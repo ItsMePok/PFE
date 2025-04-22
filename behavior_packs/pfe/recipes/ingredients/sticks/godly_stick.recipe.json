@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
 		"description": {
 			"identifier": "poke:godly_stick"
@@ -13,10 +13,14 @@
 			"#"
 		],
 		"unlock": [
-			{"item": "poke:godly_ingot"}
+			{
+				"item": "poke:godly_ingot"
+			}
 		],
 		"key": {
-			"#": {"item": "poke:godly_ingot"}
+			"#": {
+				"item": "poke:godly_ingot"
+			}
 		},
 		"result": {
 			"item": "poke:godly_stick",

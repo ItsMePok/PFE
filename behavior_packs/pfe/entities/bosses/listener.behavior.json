@@ -25,6 +25,15 @@
 			}
 		},
 		"components": {
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "fall",
+						"deals_damage": "yes",
+						"damage_modifier": -15
+					}
+				]
+			},
 			"minecraft:behavior.hurt_by_target": {
 				"priority": 1
 			},
@@ -71,16 +80,19 @@
 				"avoid_damage_blocks": true,
 				"can_float": true
 			},
+			"minecraft:water_movement": {
+				"drag_factor": 0.8
+			},
 			"minecraft:preferred_path": {
 				"max_fall_blocks": 20
 			},
 			"minecraft:movement.basic": {},
 			"minecraft:jump.static": {
-				"jump_power": 0.82
+				"jump_power": 0.75
 			},
 			"minecraft:can_climb": {},
 			"minecraft:collision_box": {
-				"width": 2.9,
+				"width": 2.5,
 				"height": 2.5
 			},
 			"minecraft:health": {
@@ -158,7 +170,7 @@
 			},
 			"minecraft:behavior.random_stroll": {
 				"priority": 9,
-				"speed_multiplier": 0.5
+				"speed_multiplier": 0.85
 			},
 			"minecraft:behavior.random_look_around": {
 				"priority": 11

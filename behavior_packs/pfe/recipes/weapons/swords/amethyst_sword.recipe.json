@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
 		"description": {
 			"identifier": "poke:amethyst_sword"
@@ -14,8 +14,12 @@
 			"X"
 		],
 		"unlock": [
-			{"item": "netherite_sword"},
-			{"item": "amethyst_shard"}
+			{
+				"item": "netherite_sword"
+			},
+			{
+				"item": "amethyst_shard"
+			}
 		],
 		"key": {
 			"Y": {

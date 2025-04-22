@@ -1,5 +1,5 @@
 {
-    "format_version": "1.20.10",
+    "format_version": "1.21.70",
     "minecraft:recipe_shaped": {
         "description": {
             "identifier": "poke:armor_stand_hider"
@@ -13,20 +13,44 @@
             "CPI"
         ],
         "unlock": [
-            {"item": "poke:cobalt_ingot"},
-            {"item": "armor_stand"},
-            {"item": "poke:shade_ingot"},
-            {"item": "poke:plastic"},
-            {"item": "poke:antenna"}
+            {
+                "item": "poke:cobalt_ingot"
+            },
+            {
+                "item": "armor_stand"
+            },
+            {
+                "item": "poke:shade_ingot"
+            },
+            {
+                "item": "poke:plastic"
+            },
+            {
+                "item": "poke:antenna"
+            }
         ],
         "key": {
-            "I": {"item": "poke:shade_ingot"},
-            "C": {"item": "poke:cobalt_ingot"},
-            "P":{"item":"poke:plastic"},
-            "A":{"item":"poke:antenna"},
-            "S":{"item":"armor_stand"},
-            "G":{"item":"glass"},
-            "B":{"item":"poke:red_button"}
+            "I": {
+                "item": "poke:shade_ingot"
+            },
+            "C": {
+                "item": "poke:cobalt_ingot"
+            },
+            "P": {
+                "item": "poke:plastic"
+            },
+            "A": {
+                "item": "poke:antenna"
+            },
+            "S": {
+                "item": "armor_stand"
+            },
+            "G": {
+                "item": "glass"
+            },
+            "B": {
+                "item": "poke:red_button"
+            }
         },
         "result": {
             "item": "poke:armor_stand_hider"

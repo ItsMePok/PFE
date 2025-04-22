@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
 		"description": {
 			"identifier": "poke:astral_bricks_slab_craft"
@@ -8,12 +8,20 @@
 			"crafting_table"
 		],
 		"unlock": [
-			{"item":"poke:astral_block"},
-			{"item":"poke:astral_ingot"},
-			{"item":"poke:astral_bricks"}
+			{
+				"item": "poke:astral_block"
+			},
+			{
+				"item": "poke:astral_ingot"
+			},
+			{
+				"item": "poke:astral_bricks"
+			}
 		],
 		"key": {
-			"C": {"item": "poke:astral_bricks"}
+			"C": {
+				"item": "poke:astral_bricks"
+			}
 		},
 		"pattern": [
 			"CCC"

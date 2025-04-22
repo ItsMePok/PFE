@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
 		"description": {
 			"identifier": "poke:cobalt_crossbow"
@@ -12,15 +12,27 @@
 			"STS",
 			" V "
 		],
-        "unlock": [
-			{"item":"poke:cobalt_ingot"},
-			{"item":"arrow"}
+		"unlock": [
+			{
+				"item": "poke:cobalt_ingot"
+			},
+			{
+				"item": "arrow"
+			}
 		],
 		"key": {
-			"V": {"item": "poke:cobalt_ingot"},
-			"S": {"item": "minecraft:string"},
-			"T":{"item":"tripwire_hook"},
-			"I":{"item":"iron_ingot"}
+			"V": {
+				"item": "poke:cobalt_ingot"
+			},
+			"S": {
+				"item": "minecraft:string"
+			},
+			"T": {
+				"item": "tripwire_hook"
+			},
+			"I": {
+				"item": "iron_ingot"
+			}
 		},
 		"result": {
 			"item": "poke:cobalt_crossbow"

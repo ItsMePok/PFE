@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
 		"description": {
 			"identifier": "poke:death_scythe"
@@ -12,7 +12,7 @@
 			" # ",
 			"YU "
 		],
-        "unlock": [
+		"unlock": [
 			{
 				"item": "poke:demonic_slasher"
 			}
@@ -30,7 +30,9 @@
 			"#": {
 				"item": "poke:ember_scythe"
 			},
-			"U":{"item":"poke:platinum_upgrade_core"}
+			"U": {
+				"item": "poke:platinum_upgrade_core"
+			}
 		},
 		"result": {
 			"item": "poke:death_scythe"

@@ -79,7 +79,9 @@
 					"tame_items": [
 						"fish",
 						"salmon",
-						"poke:raw_sporefish"
+						"minecraft:tropical_fish",
+						"poke:raw_sporefish",
+						"poke:raw_piranha"
 					],
 					"tame_event": {
 						"event": "minecraft:on_tame",

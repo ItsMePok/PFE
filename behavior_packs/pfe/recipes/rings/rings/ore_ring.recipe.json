@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shapeless": {
 		"description": {
 			"identifier": "poke:ore_ring"
@@ -18,7 +18,7 @@
 		"unlock": [
 			{
 				"item": "poke:ore_gem"
-			}	
+			}
 		],
 		"tags": [
 			"crafting_table"

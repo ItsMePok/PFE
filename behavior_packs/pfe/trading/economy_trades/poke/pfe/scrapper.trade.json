@@ -1,6 +1,8 @@
-{"format_version": "1.19.0",
+{
+	"format_version": "1.21.70",
 	"tiers": [
-		{"total_exp_required": 0,
+		{
+			"total_exp_required": 0,
 			"groups": [
 				{
 					"trades": [
@@ -95,7 +97,7 @@
 							"gives": [
 								{
 									"item": "poke:iron_token",
-									"quantity":2
+									"quantity": 2
 								}
 							]
 						},

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
 		"description": {
 			"identifier": "poke:demonic_allay_conduit"
@@ -13,19 +13,41 @@
 			"CDC"
 		],
 		"unlock": [
-			{"item":"poke:demonic_ingot"},
-			{"item":"poke:antenna"},
-			{"item":"poke:hellish_blade"},
-			{"item":"poke:electric_component"},
-			{"item":"redstone"}
+			{
+				"item": "poke:demonic_ingot"
+			},
+			{
+				"item": "poke:antenna"
+			},
+			{
+				"item": "poke:hellish_blade"
+			},
+			{
+				"item": "poke:electric_component"
+			},
+			{
+				"item": "redstone"
+			}
 		],
 		"key": {
-			"C":{"item":"poke:demonic_ingot"},
-			"W":{"item":"poke:antenna"},
-			"G":{"item":"poke:hellish_blade"},
-			"E":{"item":"poke:electric_component"},
-			"D":{"item":"redstone"}
+			"C": {
+				"item": "poke:demonic_ingot"
+			},
+			"W": {
+				"item": "poke:antenna"
+			},
+			"G": {
+				"item": "poke:hellish_blade"
+			},
+			"E": {
+				"item": "poke:electric_component"
+			},
+			"D": {
+				"item": "redstone"
+			}
 		},
-		"result":{"item": "poke:demonic_allay_conduit"}
+		"result": {
+			"item": "poke:demonic_allay_conduit"
+		}
 	}
 }

@@ -1,5 +1,5 @@
 {
-    "format_version": "1.20.10",
+    "format_version": "1.21.70",
     "minecraft:recipe_shaped": {
         "description": {
             "identifier": "poke:scrappy_block_craft"
@@ -12,11 +12,11 @@
                 "item": "netherite_scrap"
             }
         },
-		"unlock": [
-			{
-				"item": "netherite_scrap"
-			}	
-		],
+        "unlock": [
+            {
+                "item": "netherite_scrap"
+            }
+        ],
         "pattern": [
             "XX",
             "XX"

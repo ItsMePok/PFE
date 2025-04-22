@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_shaped": {
 		"description": {
 			"identifier": "poke:void_bricks_slab_to_void_bricks"
@@ -8,15 +8,21 @@
 			"crafting_table"
 		],
 		"unlock": [
-			{"item": "poke:void_bricks_slab"}
+			{
+				"item": "poke:void_bricks_slab"
+			}
 		],
 		"key": {
-			"C": {"item": "poke:void_bricks_slab"}
+			"C": {
+				"item": "poke:void_bricks_slab"
+			}
 		},
 		"pattern": [
 			"CC"
 		],
-		"result": {"item": "poke:void_bricks"},
+		"result": {
+			"item": "poke:void_bricks"
+		},
 		"priority": 2
 	}
 }

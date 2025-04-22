@@ -4,6 +4,9 @@
 	"padding": 2,
 	"num_mip_levels": 2,
 	"texture_data": {
+		"poke_pfe_listener_antenna_block": {
+			"textures": "textures/poke/pfe/listener_antennas.block.png"
+		},
 		"poke_pfe_fisher_block": {
 			"textures": "textures/poke/pfe/fisher_block"
 		},

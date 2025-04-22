@@ -1,5 +1,5 @@
 {
-    "format_version": "1.20.10",
+    "format_version": "1.21.70",
     "minecraft:recipe_shaped": {
         "description": {
             "identifier": "poke:netherite_upgrader"
@@ -14,13 +14,13 @@
             "ZW "
         ],
         "unlock": [
-			{
-				"item": "netherite_scrap"
-			},
-			{
-				"item":"poke:diamond_upgrade_core"
-			}	
-		],
+            {
+                "item": "netherite_scrap"
+            },
+            {
+                "item": "poke:diamond_upgrade_core"
+            }
+        ],
         "key": {
             "X": {
                 "item": "netherite_block"
@@ -29,7 +29,7 @@
                 "item": "netherite_block"
             },
             "Y": {
-                "item":"poke:diamond_upgrade_core"
+                "item": "poke:diamond_upgrade_core"
             },
             "Z": {
                 "item": "stick"

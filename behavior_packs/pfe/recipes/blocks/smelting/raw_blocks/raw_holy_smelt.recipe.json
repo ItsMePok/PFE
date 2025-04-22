@@ -1,11 +1,11 @@
 {
-	"format_version": "1.20.10",
+	"format_version": "1.21.70",
 	"minecraft:recipe_furnace": {
 		"description": {
 			"identifier": "poke:raw_holy_block_smelt"
 		},
 		"tags": [
-		"blast_furnace"
+			"blast_furnace"
 		],
 		"input": "poke:raw_holy_block",
 		"output": "poke:holy_block"
