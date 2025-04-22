@@ -14,7 +14,7 @@ The block texture above could not be 100% accurate if you have a texture pack ap
 
 * Demonic Ore is an ore that when refined is used in obtaining various things in PFE
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:demonic\_ore** <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke\_pfe:demonic\_ore** <a href="#identifier" id="identifier"></a>
 
 ## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 64
 
@@ -43,7 +43,7 @@ The block texture above could not be 100% accurate if you have a texture pack ap
     * <img src="https://minecraft.wiki/images/thumb/Granite.png/150px-Granite.png?9cb6d" alt="Granite." data-size="line"> [Granite](https://minecraft.wiki/w/Granite)
     * <img src="https://minecraft.wiki/images/thumb/Andesite.png/150px-Andesite.png?5db9b" alt="" data-size="line"> [Andesite](https://minecraft.wiki/w/Andesite)
 * <img src="https://minecraft.wiki/images/thumb/Deepslate_(UD)_JE3.png/120px-Deepslate_(UD)_JE3.png?7635f" alt="Deepslate." data-size="line"> [Deepslate](https://minecraft.wiki/w/Deepslate)
-  * This would replace as Deepslate Demonic Ore instead
+  * This would replace as <img src="https://github.com/user-attachments/assets/3a504ca0-f0e8-4d24-af8b-8d7c65985827" alt="Deepslate Demonic Ore." data-size="line"> [Deepslate Demonic Ore](../deepslate-ores/deepslate-demonic-ore.md) instead
 {% endtab %}
 {% endtabs %}
 

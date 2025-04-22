@@ -12,7 +12,7 @@
 {% tab title="Mining" %}
 <figure><img src="https://github.com/user-attachments/assets/d1e653c0-4330-48e7-afc4-19c7eb52cb95" alt=""><figcaption><p>Obtained by Breaking a Block</p></figcaption></figure>
 
-<table><thead><tr><th>Block</th><th>Drop Amount</th><th data-type="checkbox">Fortune Works?</th></tr></thead><tbody><tr><td><img src="https://github.com/user-attachments/assets/b764cf3c-bec6-4819-9412-f69c94e783e5" alt="Cobalt Ore." data-size="line"> Cobalt Ore</td><td>2 - 9</td><td>true</td></tr><tr><td><img src="https://github.com/user-attachments/assets/8358f27d-dcc5-48c1-b9b8-ed6a006f53d2" alt="Deepslate Cobalt Ore" data-size="line"> Deepslate Cobalt Ore</td><td>2 - 9</td><td>true</td></tr></tbody></table>
+<table><thead><tr><th>Block</th><th>Drop Amount</th><th data-type="checkbox">Fortune Works?</th></tr></thead><tbody><tr><td><img src="https://github.com/user-attachments/assets/b764cf3c-bec6-4819-9412-f69c94e783e5" alt="Cobalt Ore." data-size="line"> <a href="../../blocks/ores/stone-ores/cobalt-ore.md">Cobalt Ore</a></td><td>2 - 9</td><td>true</td></tr><tr><td><img src="https://github.com/user-attachments/assets/8358f27d-dcc5-48c1-b9b8-ed6a006f53d2" alt="Deepslate Cobalt Ore" data-size="line"> <a href="../../blocks/ores/deepslate-ores/deepslate-cobalt-ore.md">Deepslate Cobalt Ore</a></td><td>2 - 9</td><td>true</td></tr></tbody></table>
 {% endtab %}
 
 {% tab title="Recipe" %}

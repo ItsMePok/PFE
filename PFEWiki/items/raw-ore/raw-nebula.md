@@ -12,7 +12,7 @@
 {% tab title="Mining" %}
 <figure><img src="https://github.com/user-attachments/assets/d1e653c0-4330-48e7-afc4-19c7eb52cb95" alt=""><figcaption><p>Obtained by Breaking a Block</p></figcaption></figure>
 
-<table><thead><tr><th>Block</th><th>Drop Amount</th><th data-type="checkbox">Fortune Works?</th></tr></thead><tbody><tr><td><img src="https://github.com/user-attachments/assets/c683db91-e731-4885-8266-ce6e188303f5" alt="Nebula Ore." data-size="line"> <a href="../../blocks/ores/end-ores/nebula-ore.md">Nebula Ore</a></td><td>1</td><td>true</td></tr></tbody></table>
+<table><thead><tr><th>Block</th><th>Drop Amount</th><th data-type="checkbox">Fortune Works?</th></tr></thead><tbody><tr><td><img src="https://github.com/user-attachments/assets/c683db91-e731-4885-8266-ce6e188303f5" alt="Nebula Ore." data-size="line"> <a href="../../blocks/ores/end-ores/nebula-ore.md">End Nebula Ore</a></td><td>1</td><td>true</td></tr></tbody></table>
 {% endtab %}
 
 {% tab title="Recipe" %}

@@ -12,7 +12,7 @@
 {% tab title="Mining" %}
 <figure><img src="https://github.com/user-attachments/assets/d1e653c0-4330-48e7-afc4-19c7eb52cb95" alt=""><figcaption><p>Obtained by Breaking a Block</p></figcaption></figure>
 
-<table><thead><tr><th>Block</th><th>Drop Amount</th><th data-type="checkbox">Fortune Works?</th></tr></thead><tbody><tr><td><img src="https://github.com/user-attachments/assets/d2d358bf-1649-4a69-93d1-860b5c3e533f" alt="Astral Ore." data-size="line"> <a href="../../blocks/ores/end-ores/astral-ore.md">Astral Ore</a></td><td>1</td><td>true</td></tr></tbody></table>
+<table><thead><tr><th>Block</th><th>Drop Amount</th><th data-type="checkbox">Fortune Works?</th></tr></thead><tbody><tr><td><img src="https://github.com/user-attachments/assets/d2d358bf-1649-4a69-93d1-860b5c3e533f" alt="Astral Ore." data-size="line"> <a href="../../blocks/ores/end-ores/astral-ore.md">End Astral Ore</a></td><td>1</td><td>true</td></tr></tbody></table>
 {% endtab %}
 
 {% tab title="Recipe" %}

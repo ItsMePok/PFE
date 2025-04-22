@@ -1,11 +1,15 @@
+---
+description: Changelogs & Download links to PFE & other addons released
+---
+
 # Changelogs & Other Addons
 
 {% hint style="info" %}
 Version Syntax:
 
-`1.Major-Version.Minor-Version.Beta.Hotfix`
+`1.Major-Version.Minor-Version+Beta/Hotfix`
 
-(Ex. 1.2.0.8 is the 8th beta for the 1.2.1 update cycle)
+(Ex. 1.2.82 is the 2nd beta or Hotfix for the 1.2.90 update cycle)
 {% endhint %}
 
 {% content-ref url="full-releases/" %}

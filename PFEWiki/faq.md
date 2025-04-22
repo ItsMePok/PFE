@@ -16,6 +16,8 @@ More info on how the different automation blocks work can be found [Here](blocks
   * [Bosses](mobs/bosses/)
   * &#x20;PFE [Structures](sturctures/)
   * Quests from the [Quest Trader](mobs/traders/quest-trader.md)
+  * [Red Present](blocks/misc/red-present.md)
+  * [Fisher](blocks/automation/fisher.md)
 
 ***
 
@@ -29,7 +31,7 @@ More info on how the different automation blocks work can be found [Here](blocks
 
 ## An Update had changes to a Trader, but those trades are not there?
 
-* If a trade is updated in an update you will need to re-place the trader (PFE traders will drop a spawn egg on death (excluding the cassette trader))
+* If a trade is updated in an update you will need to re-place the trader ([PFE traders](mobs/traders/) will drop a spawn egg on death (excluding the [Cassette Trader](mobs/traders/cassette-trader.md)))
 
 ***
 
