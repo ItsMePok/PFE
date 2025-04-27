@@ -1066,7 +1066,6 @@ poke_pfe.get_kill_quest=Krijg Kill Quest
 poke_pfe.get_mine_quest=Krijg mijn zoektocht
 poke_pfe.get_farm_quest=Krijg Farm Quest
 poke_pfe.get_craft_quest=Krijg Craft Quest
-poke_pfe.getQuestDesc=Interactie om zoektocht te krijgen
 poke_pfe.questDesc=Interactie voor details
 poke_pfe.kill_quest=Kill Quest
 poke_pfe.mine_quest=Mine Quest

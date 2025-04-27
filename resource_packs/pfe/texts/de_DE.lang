@@ -1066,7 +1066,6 @@ poke_pfe.get_kill_quest=Holen Sie sich Kill Quest
 poke_pfe.get_mine_quest=Holen Sie sich meine Quest
 poke_pfe.get_farm_quest=Holen Sie sich Farm Quest
 poke_pfe.get_craft_quest=Holen Sie sich Craft Quest
-poke_pfe.getQuestDesc=Interagieren, um Quest zu bekommen
 poke_pfe.questDesc=Interagieren Sie für Details
 poke_pfe.kill_quest=Kill Quest
 poke_pfe.mine_quest=Meine Quest

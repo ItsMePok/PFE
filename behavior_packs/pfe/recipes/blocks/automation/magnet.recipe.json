@@ -8,13 +8,15 @@
 			"crafting_table"
 		],
 		"pattern": [
-			"CPC",
 			"EME",
-			"CRC"
+			"RSR"
 		],
 		"unlock": [
 			{
-				"item": "poke:cobalt_ingot"
+				"item": "minecraft:redstone"
+			},
+			{
+				"item": "minecraft:smooth_stone_slab"
 			},
 			{
 				"item": "poke:item_magnet"
@@ -24,12 +26,6 @@
 			}
 		],
 		"key": {
-			"C": {
-				"item": "poke:cobalt_ingot"
-			},
-			"P": {
-				"item": "planks"
-			},
 			"E": {
 				"item": "poke:electric_component"
 			},
@@ -37,7 +33,10 @@
 				"item": "poke:item_magnet"
 			},
 			"R": {
-				"item": "poke:receiver"
+				"item": "minecraft:redstone"
+			},
+			"S": {
+				"item": "minecraft:smooth_stone_slab"
 			}
 		},
 		"result": [

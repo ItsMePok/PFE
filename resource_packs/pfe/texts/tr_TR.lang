@@ -1066,7 +1066,6 @@ poke_pfe.get_kill_quest=Öldür Arayışı Al
 poke_pfe.get_mine_quest=Benimkini al
 poke_pfe.get_farm_quest=Çiftlik Görevini Alın
 poke_pfe.get_craft_quest=Zanaat Görevini Alın
-poke_pfe.getQuestDesc=Görev almak için etkileşim
 poke_pfe.questDesc=Ayrıntılar için etkileşim
 poke_pfe.kill_quest=Öldürme Quest
 poke_pfe.mine_quest=Maden Görevi

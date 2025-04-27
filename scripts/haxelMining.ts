@@ -2,6 +2,7 @@ import { Dimension, EntityComponentTypes, EquipmentSlot, ItemComponentTypes, Ite
 import { MinecraftBlockTypes, MinecraftEnchantmentTypes } from "@minecraft/vanilla-data";
 import { ActionFormData, ModalFormData } from "@minecraft/server-ui";
 import { PokeDamageItemUB, PokeSaveProperty } from "./commonFunctions";
+import ComputersCompat from "./addonCompatibility/jigarbov";
 const PFEHaxelVersion: number = 2
 const PFEHaxelInfoProperty = `pfe:haxelInfo`
 interface PFEHaxelConfig {
@@ -89,10 +90,16 @@ function* PFEMine(BannedBlocks: string[], data: PFEHaxelComponentInfo, location:
             DurabilityAmount = DurabilityAmount + 1
             if (silkTouch) {
               let blockItemStack = block.getItemStack(1, false);
+              if (block.typeId.includes(`shulker_box`)) {
+                blockItemStack = block.getItemStack(1, true);
+                // let blockLocation = `${block.location.x} ${block.location.y} ${block.location.z}`;
+                //block.dimension.runCommand(`setblock ${blockLocation} air destroy`)
+              } //else {
               //in case itemStack is missing
               if (!blockItemStack) blockItemStack = new ItemStack(block.typeId);
               block.dimension.spawnItem(blockItemStack, player.location);
               block.setType(MinecraftBlockTypes.Air)
+              // }
             } else {
               let blockLocation = `${block.location.x} ${block.location.y} ${block.location.z}`;
               //cannot be runCommandAsync, can exceed 128
@@ -109,6 +116,7 @@ function* PFEMine(BannedBlocks: string[], data: PFEHaxelComponentInfo, location:
     player.dimension.playSound("dig.stone", player.location);
   }
   PokeDamageItemUB(item, DurabilityAmount, player, EquipmentSlot.Mainhand);
+  ComputersCompat.addStat("haxel_block_breaks", DurabilityAmount)
   if (!silkTouch) {
     //to reduce item lag
     player.runCommand(`tp @e[type=item,r=${Math.max(data.radius.x, data.radius.y) + 1}] @s`)
@@ -121,7 +129,7 @@ function PFEHaxelConfigMenu(data: ItemComponentUseEvent, ComponentInfo: PFEHaxel
   //@ts-ignore
   dynamicProperty = JSON.parse(dynamicProperty)
   let Ui = new ActionFormData()
-    .title({ translate: `translation.poke:haxelConfig.mainMenu.title`, with: { rawtext: [{ translate: `item.${data.itemStack?.typeId}`.replace(`§9PFE§r`, ``) }] } })
+    .title({ translate: `translation.poke:haxelConfig.mainMenu.title`, with: { rawtext: [{ translate: data.itemStack?.nameTag ?? `poke_pfe.${data.itemStack?.typeId}`.replace(`poke:haxel`, `onyx_haxel`).replace(`poke:`, ``) }] } })
     .button({ translate: `translation.poke:haxelConfig.mainMenu.blacklistAdd` }, `textures/poke/common/blacklist_add`)
   if (dynamicProperty.blacklist.length >= 1) {
     Ui.button({ translate: `translation.poke:haxelConfig.mainMenu.blacklistRemove` }, `textures/poke/common/blacklist_remove`)
@@ -143,7 +151,7 @@ function PFEHaxelConfigMenu(data: ItemComponentUseEvent, ComponentInfo: PFEHaxel
 }
 function PFEHaxelConfigBlackListAdd(data: ItemComponentUseEvent, dynamicProperty: PFEHaxelConfig) {
   let Ui = new ModalFormData()
-    .title({ translate: `translation.poke:haxelConfig.mainMenu.title`, with: { rawtext: [{ translate: `item.${data.itemStack?.typeId}`.replace(`§9PFE§r`, ``) }] } })
+    .title({ translate: `translation.poke:haxelConfig.mainMenu.title`, with: { rawtext: [{ translate: data.itemStack?.nameTag ?? `poke_pfe.${data.itemStack?.typeId}`.replace(`poke:haxel`, `onyx_haxel`).replace(`poke:`, ``) }] } })
     .textField({ translate: `translation.poke:haxelConfig.blacklistAdd.textLabel` }, '', '')
     .submitButton({ translate: `translation.poke:haxelConfig.blacklistAdd.submit` })
   //@ts-ignore

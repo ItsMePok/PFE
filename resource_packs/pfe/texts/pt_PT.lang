@@ -1066,7 +1066,6 @@ poke_pfe.get_kill_quest=Get Kill Quest
 poke_pfe.get_mine_quest=Obtenha a mina
 poke_pfe.get_farm_quest=Get Farm Quest
 poke_pfe.get_craft_quest=Get Craft Quest
-poke_pfe.getQuestDesc=Interagir para obter missão
 poke_pfe.questDesc=Interagir para detalhes
 poke_pfe.kill_quest=Mata missão
 poke_pfe.mine_quest=Mina missão

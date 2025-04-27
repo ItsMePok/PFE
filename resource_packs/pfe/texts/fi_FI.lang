@@ -1066,7 +1066,6 @@ poke_pfe.get_kill_quest=Hanki Kill Quest
 poke_pfe.get_mine_quest=Hanki minun tehtäväni
 poke_pfe.get_farm_quest=Hanki maatilan pyrkimys
 poke_pfe.get_craft_quest=Hanki käsityöhön
-poke_pfe.getQuestDesc=Vuorovaikutuksessa saadaksesi etsintää
 poke_pfe.questDesc=Vuorovaikutuksessa saadaksesi lisätietoja
 poke_pfe.kill_quest=Tappaa
 poke_pfe.mine_quest=Kaivoskysely

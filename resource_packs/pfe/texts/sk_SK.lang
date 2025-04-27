@@ -1066,7 +1066,6 @@ poke_pfe.get_kill_quest=Získajte Quest
 poke_pfe.get_mine_quest=Získajte moju úlohu
 poke_pfe.get_farm_quest=Získajte farmárske hľadanie
 poke_pfe.get_craft_quest=Získajte remeselnícke úlohy
-poke_pfe.getQuestDesc=Interagovať, aby získal quest
 poke_pfe.questDesc=Interakcia pre podrobnosti
 poke_pfe.kill_quest=Zachytiť
 poke_pfe.mine_quest=Banská úloha

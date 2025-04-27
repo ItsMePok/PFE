@@ -4,6 +4,158 @@
 	"padding": 2,
 	"num_mip_levels": 2,
 	"texture_data": {
+		/**/
+		"poke_pfe_listener_sticker": {
+			"textures": "textures/poke/comp-sticker/listener_sticker"
+		},
+		"poke_pfe_bone_bear_sticker": {
+			"textures": "textures/poke/comp-sticker/bone_bear_sticker"
+		},
+		"poke_pfe_brown_sporefish_sticker": {
+			"textures": "textures/poke/comp-sticker/brown_sporefish_sticker"
+		},
+		"poke_pfe_cassette_trader_sticker": {
+			"textures": "textures/poke/comp-sticker/cassette_trader_sticker"
+		},
+		"poke_pfe_cobalt_golem_sticker": {
+			"textures": "textures/poke/comp-sticker/cobalt_golem_sticker"
+		},
+		"poke_pfe_cosmetic_trader_sticker": {
+			"textures": "textures/poke/comp-sticker/cosmetic_trader_sticker"
+		},
+		"poke_pfe_crimson_sporeshroom_sticker": {
+			"textures": "textures/poke/comp-sticker/crimson_sporeshroom_sticker"
+		},
+		"poke_pfe_demonic_allay_sticker": {
+			"textures": "textures/poke/comp-sticker/demonic_allay_sticker"
+		},
+		"poke_pfe_duck_sticker": {
+			"textures": "textures/poke/comp-sticker/duck_sticker"
+		},
+		"poke_pfe_ender_phantom_sticker": {
+			"textures": "textures/poke/comp-sticker/ender_phantom_sticker"
+		},
+		"poke_pfe_furnace_golem_sticker": {
+			"textures": "textures/poke/comp-sticker/furnace_golem_sticker"
+		},
+		"poke_pfe_gilded_allay_sticker": {
+			"textures": "textures/poke/comp-sticker/gilded_allay_sticker"
+		},
+		"poke_pfe_grizzly_bear_sticker": {
+			"textures": "textures/poke/comp-sticker/grizzly_bear_sticker"
+		},
+		"poke_pfe_knightling_sticker": {
+			"textures": "textures/poke/comp-sticker/knightling_sticker"
+		},
+		"poke_pfe_logger_sticker": {
+			"textures": "textures/poke/comp-sticker/logger_sticker"
+		},
+		"poke_pfe_mini_demonic_allay_sticker": {
+			"textures": "textures/poke/comp-sticker/mini_demonic_allay_sticker"
+		},
+		"poke_pfe_money_man_sticker": {
+			"textures": "textures/poke/comp-sticker/money_man_sticker"
+		},
+		"poke_pfe_mushroom_buddy_sticker": {
+			"textures": "textures/poke/comp-sticker/mushroom_buddy_sticker"
+		},
+		"poke_pfe_nebula_bug_sticker": {
+			"textures": "textures/poke/comp-sticker/nebula_bug_sticker"
+		},
+		"poke_pfe_necromancer_sticker": {
+			"textures": "textures/poke/comp-sticker/necromancer_sticker"
+		},
+		"poke_pfe_orange_squid_sticker": {
+			"textures": "textures/poke/comp-sticker/orange_squid_sticker"
+		},
+		"poke_pfe_pale_ocelot_sticker": {
+			"textures": "textures/poke/comp-sticker/pale_ocelot_sticker"
+		},
+		"poke_pfe_pink_squid_sticker": {
+			"textures": "textures/poke/comp-sticker/pink_squid_sticker"
+		},
+		"poke_pfe_piranha_sticker": {
+			"textures": "textures/poke/comp-sticker/piranha_sticker"
+		},
+		"poke_pfe_quest_trader_sticker": {
+			"textures": "textures/poke/comp-sticker/quest_trader_sticker"
+		},
+		"poke_pfe_raccoon_sticker": {
+			"textures": "textures/poke/comp-sticker/raccoon_sticker"
+		},
+		"poke_pfe_rat_sticker": {
+			"textures": "textures/poke/comp-sticker/rat_sticker"
+		},
+		"poke_pfe_red_panda_sticker": {
+			"textures": "textures/poke/comp-sticker/red_panda_sticker"
+		},
+		"poke_pfe_red_sporefish_sticker": {
+			"textures": "textures/poke/comp-sticker/red_sporefish_sticker"
+		},
+		"poke_pfe_retro_llama_sticker": {
+			"textures": "textures/poke/comp-sticker/retro_llama_sticker"
+		},
+		"poke_pfe_scrapper_sticker": {
+			"textures": "textures/poke/comp-sticker/scrapper_sticker"
+		},
+		"poke_pfe_sculk_enderman_sticker": {
+			"textures": "textures/poke/comp-sticker/sculk_enderman_sticker"
+		},
+		"poke_pfe_shallow_cod_sticker": {
+			"textures": "textures/poke/comp-sticker/shallow_cod_sticker"
+		},
+		"poke_pfe_shopkeeper_sticker": {
+			"textures": "textures/poke/comp-sticker/shopkeeper_sticker"
+		},
+		"poke_pfe_shroomfin_sticker": {
+			"textures": "textures/poke/comp-sticker/shroomfin_sticker"
+		},
+		"poke_pfe_snowman_sticker": {
+			"textures": "textures/poke/comp-sticker/snowman_sticker"
+		},
+		"poke_pfe_soul_blaze_sticker": {
+			"textures": "textures/poke/comp-sticker/soul_blaze_sticker"
+		},
+		"poke_pfe_sparky_sticker": {
+			"textures": "textures/poke/comp-sticker/sparky_sticker"
+		},
+		"poke_pfe_sporefish_sticker": {
+			"textures": "textures/poke/comp-sticker/sporefish_sticker"
+		},
+		"poke_pfe_striker_sticker": {
+			"textures": "textures/poke/comp-sticker/striker_sticker"
+		},
+		"poke_pfe_super_striker_sticker": {
+			"textures": "textures/poke/comp-sticker/super_striker_sticker"
+		},
+		"poke_pfe_token_trader_sticker": {
+			"textures": "textures/poke/comp-sticker/token_trader_sticker"
+		},
+		"poke_pfe_warped_sporecat_sticker": {
+			"textures": "textures/poke/comp-sticker/warped_sporecat_sticker"
+		},
+		"poke_pfe_warped_sporeshroom_sticker": {
+			"textures": "textures/poke/comp-sticker/warped_sporeshroom_sticker"
+		},
+		"poke_pfe_windswept_bear_sticker": {
+			"textures": "textures/poke/comp-sticker/windswept_bear_sticker"
+		},
+		"poke_pfe_woods_goat_sticker": {
+			"textures": "textures/poke/comp-sticker/woods_goat_sticker"
+		},
+		"poke_pfe_woodspike_guardian_sticker": {
+			"textures": "textures/poke/comp-sticker/woodspike_guardian_sticker"
+		},
+		"poke_pfe_yak_sticker": {
+			"textures": "textures/poke/comp-sticker/yak_sticker"
+		},
+		"poke_pfe_zombken_sticker": {
+			"textures": "textures/poke/comp-sticker/zombken_sticker"
+		},
+		/**/
+		"poke_pfe_knightling_trophy": {
+			"textures": "textures/poke/pfe/knightling_trophy"
+		},
 		"poke_pfe_listener_antenna_block": {
 			"textures": "textures/poke/pfe/listener_antennas.block.png"
 		},

@@ -1066,7 +1066,6 @@ poke_pfe.get_kill_quest=キルクエストを取得します
 poke_pfe.get_mine_quest=マインクエストを取得します
 poke_pfe.get_farm_quest=ファームクエストを取得します
 poke_pfe.get_craft_quest=クラフトクエストを入手してください
-poke_pfe.getQuestDesc=クエストを取得するために対話します
 poke_pfe.questDesc=詳細については対話します
 poke_pfe.kill_quest=キルクエスト
 poke_pfe.mine_quest=鉱山クエスト

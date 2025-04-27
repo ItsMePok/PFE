@@ -11,15 +11,11 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.get_kill_quest\n§7%poke_pfe.getQuestDesc\n%poke_pfe.tag"
 			},
+			"minecraft:max_stack_size": 1,
 			"minecraft:icon": "poke_uo_kill_quest",
 			"minecraft:custom_components": [
-				"poke:cc_spawnEgg"
-			],
-			"minecraft:tags": {
-				"tags": [
-					"poke:kill_quest"
-				]
-			}
+				"poke_pfe:quest"
+			]
 		}
 	}
 }

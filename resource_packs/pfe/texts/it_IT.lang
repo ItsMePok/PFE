@@ -1066,7 +1066,6 @@ poke_pfe.get_kill_quest=Ottieni Kill Quest
 poke_pfe.get_mine_quest=Ottieni la mia ricerca
 poke_pfe.get_farm_quest=Ottieni Farm Quest
 poke_pfe.get_craft_quest=Ottieni una ricerca artigianale
-poke_pfe.getQuestDesc=Interagire per ottenere ricerca
 poke_pfe.questDesc=Interagisci per i dettagli
 poke_pfe.kill_quest=Uccidi la ricerca
 poke_pfe.mine_quest=La mia ricerca

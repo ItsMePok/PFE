@@ -1066,7 +1066,6 @@ poke_pfe.get_kill_quest=Dapatkan Kill Quest
 poke_pfe.get_mine_quest=Dapatkan pencarian saya
 poke_pfe.get_farm_quest=Dapatkan pencarian pertanian
 poke_pfe.get_craft_quest=Dapatkan pencarian kerajinan
-poke_pfe.getQuestDesc=Berinteraksi untuk mendapatkan pencarian
 poke_pfe.questDesc=Berinteraksi untuk detailnya
 poke_pfe.kill_quest=Bunuh pencarian
 poke_pfe.mine_quest=Pencarian saya

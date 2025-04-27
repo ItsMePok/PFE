@@ -1066,7 +1066,6 @@ poke_pfe.get_kill_quest=Få Kill Quest
 poke_pfe.get_mine_quest=Få min uppdrag
 poke_pfe.get_farm_quest=Få Farm Quest
 poke_pfe.get_craft_quest=Få Craft Quest
-poke_pfe.getQuestDesc=Interagera för att få uppdrag
 poke_pfe.questDesc=Interagera för detaljer
 poke_pfe.kill_quest=Kill Quest
 poke_pfe.mine_quest=Gruvsökning

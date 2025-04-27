@@ -1066,7 +1066,6 @@ poke_pfe.get_kill_quest=킬 퀘스트를 얻으십시오
 poke_pfe.get_mine_quest=내 퀘스트를 얻으십시오
 poke_pfe.get_farm_quest=농장 퀘스트를 얻으십시오
 poke_pfe.get_craft_quest=Craft Quest를 얻으십시오
-poke_pfe.getQuestDesc=퀘스트를 얻기 위해 상호 작용하십시오
 poke_pfe.questDesc=자세한 내용은 상호 작용합니다
 poke_pfe.kill_quest=Quest
 poke_pfe.mine_quest=광산 퀘스트

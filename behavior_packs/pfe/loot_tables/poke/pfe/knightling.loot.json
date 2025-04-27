@@ -42,7 +42,12 @@
 			"entries": [
 				{
 					"type": "empty",
-					"weight": 49
+					"weight": 48
+				},
+				{
+					"type": "item",
+					"name": "poke_pfe:knightling_trophy",
+					"weight": 1
 				},
 				{
 					"type": "item",

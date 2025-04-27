@@ -142,7 +142,8 @@
 			"minecraft:tags": {
 				"tags": [
 					"pfe:Command:function poke/pfe/nebula_hoe:pfeCommandEnd",
-					"minecraft:is_hoe"
+					"minecraft:is_hoe",
+					"minecraft:netherite_tier"
 				]
 			},
 			"minecraft:custom_components": [

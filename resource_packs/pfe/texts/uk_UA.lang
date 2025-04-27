@@ -1066,7 +1066,6 @@ poke_pfe.get_kill_quest=Отримати квест Kill
 poke_pfe.get_mine_quest=Отримайте мій квест
 poke_pfe.get_farm_quest=Отримайте фермерські пошуки
 poke_pfe.get_craft_quest=Отримайте квест
-poke_pfe.getQuestDesc=Взаємодіяти, щоб отримати квест
 poke_pfe.questDesc=Взаємодіяти для деталей
 poke_pfe.kill_quest=Убити пошуки
 poke_pfe.mine_quest=Мої пошуки

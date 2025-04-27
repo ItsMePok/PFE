@@ -2,6 +2,7 @@ import { EntityComponentTypes, EntityEquippableComponent, EntityProjectileCompon
 import { ActionFormData } from "@minecraft/server-ui";
 import { PokeDamageItemUB, PokeErrorScreen, PokeGetItemFromInventory, PokeGetObjectById, PokeSaveProperty } from "./commonFunctions";
 import { MinecraftEntityTypes, MinecraftItemTypes } from "@minecraft/vanilla-data";
+import { PFEItemUpgradeInfo } from "./upgrades";
 
 export {
   PFEBoltBowsComponent
@@ -17,11 +18,6 @@ interface PFEAmmoStorageInfo {
   v: typeof PFEAmmoStorageVersion
 }
 
-interface PFEItemUpgradeInfo {
-  id: string // name of the upgrade
-  level: number // current upgrade level
-  maxLevel?: number | undefined // max level of upgrade
-}
 
 // Right now we only allow 1 type of arrow to be stored at a time but to future proof it is in an array
 const PFEAmmoStorageDefault: PFEAmmoStorageInfo[] = [

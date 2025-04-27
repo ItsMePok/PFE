@@ -1066,7 +1066,6 @@ poke_pfe.get_kill_quest=Få Kill Quest
 poke_pfe.get_mine_quest=Få min søken
 poke_pfe.get_farm_quest=Få Farm Quest
 poke_pfe.get_craft_quest=Få håndverksoppdrag
-poke_pfe.getQuestDesc=Samhandle for å få oppdrag
 poke_pfe.questDesc=Samhandle for detaljer
 poke_pfe.kill_quest=Kill Quest
 poke_pfe.mine_quest=Mine Quest

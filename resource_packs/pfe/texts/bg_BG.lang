@@ -1066,7 +1066,6 @@ poke_pfe.get_kill_quest=Вземете Kill Quest
 poke_pfe.get_mine_quest=Вземете моето търсене
 poke_pfe.get_farm_quest=Вземете Quest Farm Quest
 poke_pfe.get_craft_quest=Вземете занаятчийско търсене
-poke_pfe.getQuestDesc=Взаимодействайте, за да получите търсене
 poke_pfe.questDesc=Взаимодействайте за подробности
 poke_pfe.kill_quest=Убийте Quest
 poke_pfe.mine_quest=Моят търсене

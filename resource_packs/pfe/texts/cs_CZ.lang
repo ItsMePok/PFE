@@ -1066,7 +1066,6 @@ poke_pfe.get_kill_quest=Získejte zabití Quest
 poke_pfe.get_mine_quest=Získejte můj úkol
 poke_pfe.get_farm_quest=Získejte farmu
 poke_pfe.get_craft_quest=Získejte craft quest
-poke_pfe.getQuestDesc=Interagovat a získat úkol
 poke_pfe.questDesc=Interakce pro podrobnosti
 poke_pfe.kill_quest=Kill Quest
 poke_pfe.mine_quest=Moje pátrání

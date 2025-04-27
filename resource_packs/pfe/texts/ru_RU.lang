@@ -1066,7 +1066,6 @@ poke_pfe.get_kill_quest=Получите квест убить
 poke_pfe.get_mine_quest=Получить мой квест
 poke_pfe.get_farm_quest=Получить фермерский квест
 poke_pfe.get_craft_quest=Получить ремесленные квеста
-poke_pfe.getQuestDesc=Взаимодействовать, чтобы получить квест
 poke_pfe.questDesc=Взаимодействовать для деталей
 poke_pfe.kill_quest=Убить квест
 poke_pfe.mine_quest=Шахта квеста

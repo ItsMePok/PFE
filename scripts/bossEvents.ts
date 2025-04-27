@@ -1,5 +1,6 @@
 import { ItemComponentUseEvent, Player, system, world } from "@minecraft/server";
 import { ActionFormData, ActionFormResponse, ModalFormData, ModalFormResponse } from "@minecraft/server-ui";
+import ComputersCompat from "./addonCompatibility/jigarbov";
 let PFEBossEventConfigName = `pfe:bossEventConfig`
 let PFEBossEventBosses = [
   `poke:zombken`,
@@ -271,6 +272,7 @@ function PFEStartBossEvent() {
   randomPlayer?.dimension.spawnEntity(selectedBoss!, randomPlayer.location).runCommand(`spreadplayers ~ ~ 30 40 @s ~10`)
   //translation.poke:zombken_boss_event_near
   world.sendMessage({ rawtext: [{ translate: `translation.${selectedBoss}_boss_event_near` }, { text: `: ${randomPlayer?.name}` }] })
+  ComputersCompat.addStat(`boss_events_triggered`, 1)
 }
 // Boss events
 system.runInterval(() => {

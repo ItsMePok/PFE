@@ -42,6 +42,12 @@
 			"minecraft:durability": {
 				"max_durability": 2500
 			},
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:is_shovel",
+					"minecraft:iron_tier"
+				]
+			},
 			"minecraft:repairable": {
 				"repair_items": [
 					{

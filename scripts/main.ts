@@ -2,13 +2,15 @@ import { system, world, EquipmentSlot, GameMode, EntityComponentTypes, ItemCompo
 import { MinecraftBlockTypes, MinecraftEffectTypes, MinecraftEnchantmentTypes, MinecraftEntityTypes, MinecraftItemTypes } from "@minecraft/vanilla-data";
 import { PFEBossEventConfig, PFEBossEventConfigName, PFEBossEventUIMainMenu, PFEDefaultBossEventSettings, PFEStartBossEvent } from "./bossEvents";
 import { PFEHaxelMining } from "./haxelMining";
-import { PokeClosestCardinal, PokeDamageItemUB, PokeDecrementStack, PokeGetSegmentOfString, PokeSpawnLootTable } from "./commonFunctions";
+import { PokeClosestCardinal, PokeDamageItemUB, PokeDecrementStack, PokeGetItemFromInventory, PokeSpawnLootTable } from "./commonFunctions";
 import { PokeBirthdays, PokeTimeConfigUIMainMenu, PokeTimeGreeting, PokeTimeZoneOffset } from "./time";
 import { PFEBoltBowsComponent } from "./boltbow";
 import { PFEDisableConfigOptions, PFEDisableConfigDefault, PFEDisableConfigMainMenu, PFEDisableConfigName, PFEDisabledOnUseItems } from "./disableConfig";
 import { ActionFormData } from "@minecraft/server-ui";
 import { CheckEffects, PFEArmorEffectData } from "./armorEffects";
-
+import { PFECraftQuests, PFEFarmQuests, PFEKillQuests, PFEMineQuests, PFEQuestInfo, PFEQuestPropertyID, PFERollQuest } from "./quests";
+import ComputersCompat, { initExampleStickers, StatIDs } from "./addonCompatibility/jigarbov";
+//world.scoreboard.addObjective(`poke_pfe:`)
 system.runInterval(() => {
     for (let player of world.getAllPlayers()) {
         if (!player) continue;
@@ -169,8 +171,10 @@ function UpdatePost(block: Block, value: boolean, up?: boolean) {
 
 //Custom Component Registry & Initial Setup
 world.beforeEvents.worldInitialize.subscribe(data => {
+    world.setDynamicProperty(`poke_pfe:existed`, true) // This can be used by other addons to check if PFE has been used / is used on this world
     system.runTimeout(() => {
         PFETimeValidation()
+        ComputersCompat.init()
     }, Math.abs(60 - new Date(Date.now()).getSeconds()) * 20)
 
     if (typeof world.getDynamicProperty(PFEDisableConfigName) != "string") {
@@ -238,6 +242,65 @@ world.beforeEvents.worldInitialize.subscribe(data => {
             if (data.source.getGameMode() == GameMode.creative) return;
             //@ts-ignore
             data.source.getComponent(EntityComponentTypes.Equippable).setEquipment(EquipmentSlot.Mainhand, PokeDecrementStack(data.itemStack!))
+        }
+    }
+    )
+    data.itemComponentRegistry.registerCustomComponent(
+        "poke_pfe:quest", {
+        onUse(data) {
+            if (!data.itemStack) return;
+            if (!data.itemStack.getDynamicProperty(PFEQuestPropertyID)) {
+                let questType: PFEQuestInfo[] = []
+                switch (data.itemStack.typeId) {
+                    case `poke:mine_quest`: { questType = PFEMineQuests; break }
+                    case `poke:kill_quest`: { questType = PFEKillQuests; break }
+                    case `poke:farm_quest`: { questType = PFEFarmQuests; break }
+                    case `poke:craft_quest`: { questType = PFECraftQuests; break }
+                    default: { }
+                }
+                PFERollQuest(data.itemStack, data.source, questType)
+            } else {
+                let UI = new ActionFormData()
+                let quest: PFEQuestInfo = JSON.parse(data.itemStack.getDynamicProperty(PFEQuestPropertyID)!.toString()) ?? console.warn(`Quest not found or failed to parse || poke_pfe:quest`)
+                let validRequiredItems = PokeGetItemFromInventory(data.source, undefined, quest.requiredItem.item) ?? false
+                let totalItems = 0
+                let canComplete = false
+                UI.title({ translate: `translation.poke_pfe.quest_info` })
+                UI.body({
+                    rawtext: [
+                        { translate: `%translation.poke_pfe.items_needed:\n- §c${quest.requiredItem.amount}§rx ` },
+                        { translate: quest.requiredItem.translationString },
+                        { translate: `\n%translation.poke_pfe.quest_reward:\n- §c${quest.reward.tokenAmount}§rx %poke_pfe.copper_token (%poke_pfe.tag)` }
+                    ]
+                })
+                if (validRequiredItems) {
+                    for (let item of validRequiredItems) {
+                        if (!item) continue;
+                        totalItems += item.amount
+                        continue;
+                    }
+                }
+                if (validRequiredItems && quest.requiredItem.amount <= totalItems) {
+                    UI.button({ translate: `translation.poke_pfe.completeQuest` }, `textures/poke/common/confirm`)
+                    canComplete = true
+                } else UI.button({ translate: `translation.poke_pfe.missing_items` }, `textures/poke/common/chest_question`)
+
+                UI.button({ translate: `translation.poke:bossEventClose` }, 'textures/poke/common/close')
+                UI.show(data.source).then(response => {
+                    let selection = 0
+                    if ((response.selection == selection) && canComplete) {
+                        data.source.runCommand(`clear @s ${quest.requiredItem.item} 0 ${quest.requiredItem.amount}`)
+                        if (quest.reward.item) {
+                            data.source.dimension.spawnItem(quest.reward.item, data.source.location)
+                        }
+                        data.source.dimension.spawnItem(new ItemStack(`poke:copper_token`, quest.reward.tokenAmount), data.source.location)
+                    } else selection++
+                    if (response.canceled || (response.selection == selection)) {
+                        return;
+                    }
+                })
+            }
+
         }
     }
     )
@@ -767,6 +830,7 @@ world.beforeEvents.worldInitialize.subscribe(data => {
                 data.block.setPermutation(data.block.permutation.withState('pfe:color', 0))
                 //play sound
                 data.block.dimension.runCommandAsync(`playsound block.copper_bulb.turn_on @a  ${block_location} 1 ${sound_pitch}`)
+                ComputersCompat.addStat(`bulb_color_changes`, 1);
                 return;
             }
             //Adds 1 to the current state of pfe:color
@@ -776,6 +840,7 @@ world.beforeEvents.worldInitialize.subscribe(data => {
                     data.block.permutation.withState('pfe:color', light_color + 1))
                 //play sound
                 data.block.dimension.runCommandAsync(`playsound block.copper_bulb.turn_on @a ${block_location} 1 ${sound_pitch}`)
+                ComputersCompat.addStat(`bulb_color_changes`, 1);
                 return;
             }
         }
@@ -1047,6 +1112,7 @@ world.beforeEvents.worldInitialize.subscribe(data => {
             }
             data.block.setType(newBlock)
             data.dimension.playSound('poke.calibrate', data.block.center())
+            ComputersCompat.addStat(`blocks_calibrated`, 1)
             return;
         }
     }
@@ -1218,6 +1284,7 @@ world.beforeEvents.worldInitialize.subscribe(data => {
                 default: return
             }
             data.dimension.runCommand(`execute positioned ${data.block.x} ${data.block.y} ${data.block.z} run function poke/pfe/lava_sponge_to_molten`)
+            ComputersCompat.addStat("lava_sponged", 1)
             return;
         },
         onTick(data: BlockComponentTickEvent) {
@@ -1231,6 +1298,7 @@ world.beforeEvents.worldInitialize.subscribe(data => {
                 default: return;
             }
             data.dimension.runCommand(`execute positioned ${data.block.x} ${data.block.y} ${data.block.z} run function poke/pfe/lava_sponge_to_molten`)
+            ComputersCompat.addStat("lava_sponged", 1)
             return;
         }
     }
@@ -1273,6 +1341,7 @@ world.beforeEvents.worldInitialize.subscribe(data => {
                     else {
                         //@ts-ignore
                         data.dimension.spawnEntity('poke:seat', data.block.center()).getComponent('minecraft:rideable').addRider(data.player)
+                        ComputersCompat.addStat("slabs_sat_on", 1)
                         return;
                     }
                 }
@@ -1427,6 +1496,7 @@ world.beforeEvents.worldInitialize.subscribe(data => {
             if (data.block.isWaterlogged && (data.block.permutation.getState(PFEFisherComponentInfo.baitBlockState) != 0)) {
                 data.block.setPermutation(data.block.permutation.withState(PFEFisherComponentInfo.baitBlockState, Math.max(Number(data.block.permutation.getState(PFEFisherComponentInfo.baitBlockState)) - 1, 0)))
                 data.block.dimension.playSound(`poke_pfe.fisher.catch`, data.block.center())
+                ComputersCompat.addStat("fisher_catches", 1)
             }
         },
         onPlayerInteract(data) {
@@ -1593,5 +1663,10 @@ world.beforeEvents.worldInitialize.subscribe(data => {
         }
     }
     )
+    /*Addon Compatibility:*/
+    initExampleStickers()
+    /**/
     return;
 })
+/*Addon Compatibility x2*/
+/**/

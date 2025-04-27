@@ -1066,7 +1066,6 @@ poke_pfe.get_kill_quest=Πάρτε το Kill Quest
 poke_pfe.get_mine_quest=Αποκτήστε το Mine Quest
 poke_pfe.get_farm_quest=Λάβετε αγρόκτημα
 poke_pfe.get_craft_quest=Αποκτήστε το Craft Quest
-poke_pfe.getQuestDesc=Αλληλεπιδράτε για να πάρετε αναζήτηση
 poke_pfe.questDesc=Αλληλεπιδράτε για λεπτομέρειες
 poke_pfe.kill_quest=Σκότωση Quest
 poke_pfe.mine_quest=Ορυχείο

@@ -1066,7 +1066,6 @@ poke_pfe.get_kill_quest=Get Kill Quest
 poke_pfe.get_mine_quest=Szerezd meg az enyém küldetését
 poke_pfe.get_farm_quest=Get Farm Quest
 poke_pfe.get_craft_quest=Készítsen kézműves küldetést
-poke_pfe.getQuestDesc=Kölcsönhatásba lépni a küldetéshez
 poke_pfe.questDesc=Kölcsönhatásba lépni a részletekért
 poke_pfe.kill_quest=Öld meg a küldetést
 poke_pfe.mine_quest=Aknamentesítés

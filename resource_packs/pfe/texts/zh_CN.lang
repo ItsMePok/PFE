@@ -1066,7 +1066,6 @@ poke_pfe.get_kill_quest=获得杀戮任务
 poke_pfe.get_mine_quest=获取地雷任务
 poke_pfe.get_farm_quest=获取农场任务
 poke_pfe.get_craft_quest=获取工艺任务
-poke_pfe.getQuestDesc=互动以获取任务
 poke_pfe.questDesc=互动以获取详细信息
 poke_pfe.kill_quest=杀死任务
 poke_pfe.mine_quest=地雷任务

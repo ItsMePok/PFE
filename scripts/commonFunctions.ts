@@ -289,7 +289,7 @@ function PokeGetSegmentOfString(string: PokeGetSegmentOfStringInfo[]) {
 }
 
 function PokeSpawnLootTable(lootTable: string, position: Vector3, dimension: Dimension, amount?: number) {
-  console.warn(`loot spawn ${position.x} ${position.y} ${position.z} loot "${lootTable}"`)
+  //console.warn(`loot spawn ${position.x} ${position.y} ${position.z} loot "${lootTable}"`)
   if (amount) {
     for (let i = amount - 1; i > -1; i--) {
       dimension.runCommand(`loot spawn ${position.x} ${position.y} ${position.z} loot "${lootTable}"`)
