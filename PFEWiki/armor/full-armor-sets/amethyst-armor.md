@@ -8,7 +8,7 @@ description: 'Last updated to match: v1.2.91'
 
 ## <img src="https://github.com/user-attachments/assets/53329be8-f7e5-4c01-b7e4-a27b567c7998" alt="" data-size="line"> [Set Effects](#user-content-fn-1)[^1]: <a href="#set-effects" id="set-effects"></a>
 
-* <img src="https://minecraft.wiki/images/Regeneration_JE3_BE2.png?86acf" alt="Regeneration." data-size="line"> [Regenation](https://minecraft.wiki/w/Regeneration) <mark style="color:yellow;">(Max 2)</mark>
+* <img src="https://minecraft.wiki/images/Regeneration_JE3_BE2.png?86acf" alt="Regeneration." data-size="line"> [Regeneration](https://minecraft.wiki/w/Regeneration) <mark style="color:yellow;">(Max 2)</mark>
 * <img src="https://minecraft.wiki/images/Haste_JE3_BE2.png?9b3ec" alt="Haste." data-size="line"> [Haste](https://minecraft.wiki/w/Haste) <mark style="color:yellow;">(Max 2)</mark>
 
 ***

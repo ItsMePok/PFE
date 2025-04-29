@@ -1,3 +1,7 @@
+---
+description: Updated to match v1.2.90
+---
+
 # Mine Quests
 
 <figure><img src="https://github.com/user-attachments/assets/3ceaaa58-43d4-4f70-a35d-aa47cc859159" alt=""><figcaption></figcaption></figure>

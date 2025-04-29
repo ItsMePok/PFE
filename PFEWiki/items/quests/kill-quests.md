@@ -1,3 +1,7 @@
+---
+description: Updated to match v1.2.90
+---
+
 # Kill Quests
 
 <figure><img src="https://github.com/user-attachments/assets/73bf5dab-49dd-404a-9e48-4f2389960cf4" alt=""><figcaption></figcaption></figure>

@@ -1,3 +1,7 @@
+---
+description: Updated to match v1.2.90
+---
+
 # Craft Quests
 
 <figure><img src="https://github.com/user-attachments/assets/1a8910ab-b4c3-4c4b-afec-d6d21ac716a8" alt=""><figcaption></figcaption></figure>

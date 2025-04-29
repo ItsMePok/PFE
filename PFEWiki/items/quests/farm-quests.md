@@ -1,3 +1,7 @@
+---
+description: Updated to match v1.2.90
+---
+
 # Farm Quests
 
 <figure><img src="https://github.com/user-attachments/assets/2df45f44-4451-4497-9ac4-c4dad3c63197" alt=""><figcaption></figcaption></figure>

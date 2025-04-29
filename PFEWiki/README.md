@@ -4,10 +4,6 @@
 This wiki is still a work in progress, some pages are unfinished
 {% endhint %}
 
-{% hint style="info" %}
-#### This Wiki assumes the PFE Version: [v1.2.90.md](changelog-history/full-releases/v1.2.90.md "mention") / [v1.2.91.md](changelog-history/betas/v1.2.91.md "mention")
-{% endhint %}
-
 ***
 
 ## Current Minecraft Requirements:

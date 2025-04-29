@@ -31,6 +31,8 @@ hidden: true
 
 ### <img src="https://minecraft.wiki/images/Enchanted_Book.gif?b21c4" alt="" data-size="line"> Enchantment Type: <a href="#enchant-type" id="enchant-type"></a>
 
+## <img src="https://github.com/user-attachments/assets/dcfb5b71-f821-4bba-9e8e-0e5c924e18ca" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Epic</mark>
+
 ## <img src="https://minecraft.wiki/images/Shaper_Armor_Trim_Smithing_Template_JE1_BE1.png?0941a" alt="" data-size="line"> Trimmable: <mark style="color:yellow;">**Yes**</mark> <a href="#trimmable" id="trimmable"></a>
 
 ## <img src="https://minecraft.wiki/images/thumb/Composter_(level_8)_BE2.png/150px-Composter_(level_8)_BE2.png?7ecec" alt="Composter" data-size="line"> [Composting Chance](https://minecraft.wiki/w/Composter#Composting): <a href="#composting-chance" id="composting-chance"></a>
@@ -206,3 +208,6 @@ e
 {% endtab %}
 {% endtabs %}
 
+* [ ] Test
+* [ ] Test 2
+* [ ] Test 3
