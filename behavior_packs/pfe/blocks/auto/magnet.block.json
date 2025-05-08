@@ -24,11 +24,40 @@
 			{
 				"condition": "q.block_state('minecraft:vertical_half') == 'top'",
 				"components": {
+					"minecraft:liquid_detection": {
+						"detection_rules": [
+							{
+								"liquid_type": "water",
+								"can_contain_liquid": true,
+								"stops_liquid_flowing_from_direction": [
+									"up"
+								],
+								"on_liquid_touches": "blocking"
+							}
+						]
+					},
 					"minecraft:transformation": {
 						"rotation": [
 							0,
 							0,
 							180
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:vertical_half') == 'bottom'",
+				"components": {
+					"minecraft:liquid_detection": {
+						"detection_rules": [
+							{
+								"liquid_type": "water",
+								"can_contain_liquid": true,
+								"stops_liquid_flowing_from_direction": [
+									"down"
+								],
+								"on_liquid_touches": "blocking"
+							}
 						]
 					}
 				}

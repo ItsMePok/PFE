@@ -1,6 +1,59 @@
-import { ItemLockMode, ItemStack, Player } from "@minecraft/server";
-import { MinecraftBlockTypes, MinecraftItemTypes } from "@minecraft/vanilla-data";
-import { PokeSaveProperty } from "./commonFunctions";
+import { EntityComponentTypes, EquipmentSlot, ItemComponentUseEvent, ItemStack, Player, world } from "@minecraft/server";
+import { MinecraftItemTypes } from "@minecraft/vanilla-data";
+import { PokeGetItemFromInventory, PokeSaveProperty } from "./commonFunctions";
+import { ActionFormData } from "@minecraft/server-ui";
+import { clampNumber } from "@minecraft/math";
+
+
+/*
+Add-On Creators: You can add quests into PFE's quest system.
+
+Note: the custom quests get re-initialized each time the world starts. This is to ensure that players will not get quests for Add-Ons that are no longer in the world
+
+Note x2: Quests that have been rolled not be able to be changed
+
+This is example code. This will add a Mine quest for 7x Cut Cobalt for 7x Copper Tokens:
+*/
+/*
+Add-On Creators: You can add quests into PFE's quest system.
+
+Note: the custom quests get re-initialized each time the world starts. This is to ensure that players will not get quests for Add-Ons that are no longer in the world
+
+Note x2: Quests that have been rolled not be able to be changed
+
+This is example code. This will add a Mine quest for 7x Cut Cobalt for 7x Copper Tokens:
+*/
+/*
+import { ItemStack, world } from "@minecraft/server"
+
+interface PFEQuestInfo {
+  requiredItem: {
+    item: string,
+    amount: number
+    translationString: string
+  },
+  reward: {
+    tokenAmount: number,
+    item?: ItemStack
+  }
+}
+interface PFECustomQuests {
+    value: PFEQuestInfo[]
+}
+const PFECustomMineQuestsPropertyID = `poke_pfe:custom_mine_quests`
+const PFECustomFarmQuestsPropertyID = `poke_pfe:custom_farm_quests`
+const PFECustomCraftQuestsPropertyID = `poke_pfe:custom_craft_quests`
+const PFECustomKillQuestsPropertyID = `poke_pfe:custom_kill_quests`
+
+world.afterEvents.worldInitialize.subscribe((data) => {
+  const AddedMineQuests:PFECustomQuests = {
+    value: [
+      { requiredItem: { item: `poke:cut_cobalt`, amount: 7, translationString: `%poke_pfe.cut_cobalt (%poke_pfe.tag)` }, reward: { tokenAmount: 7 } }
+    ]
+  }
+  world.getDimension(`minecraft:overworld`).runCommand(`scriptevent poke_pfe:custom_mine_quests ${JSON.stringify(AddedMineQuests)}`)
+})
+*/
 
 export {
   PFEQuestPropertyID,
@@ -10,10 +63,22 @@ export {
   PFECraftQuests,
   PFEKillQuests,
   PFERollQuest,
-  PFEQuestInfo
+  PFEQuestInfo,
+  PokePFEQuestComponent,
+  PFECustomMineQuestsPropertyID,
+  PFECustomFarmQuestsPropertyID,
+  PFECustomCraftQuestsPropertyID,
+  PFECustomKillQuestsPropertyID
 }
 const PFEQuestVersion = 1
+/* Item Dynamic Property */
 const PFEQuestPropertyID = `poke_pfe:quests`
+/* World Dynamic Properties */
+const PFECustomMineQuestsPropertyID = `poke_pfe:custom_mine_quests`
+const PFECustomFarmQuestsPropertyID = `poke_pfe:custom_farm_quests`
+const PFECustomCraftQuestsPropertyID = `poke_pfe:custom_craft_quests`
+const PFECustomKillQuestsPropertyID = `poke_pfe:custom_kill_quests`
+/**/
 interface PFEQuestInfo {
   requiredItem: {
     item: string,
@@ -30,12 +95,16 @@ const PFEMineQuests: PFEQuestInfo[] = [
   { requiredItem: { item: MinecraftItemTypes.Coal, amount: 4, translationString: `item.coal.name` }, reward: { tokenAmount: 2 } },
   { requiredItem: { item: MinecraftItemTypes.RawIron, amount: 4, translationString: `item.raw_iron.name` }, reward: { tokenAmount: 2 } },
   { requiredItem: { item: MinecraftItemTypes.RawGold, amount: 4, translationString: `item.raw_gold.name` }, reward: { tokenAmount: 3 } },
-  { requiredItem: { item: MinecraftItemTypes.Diamond, amount: 2, translationString: `item.diamond.name` }, reward: { tokenAmount: 4 } },
-  { requiredItem: { item: MinecraftItemTypes.Stone, amount: 8, translationString: `tile.stone.name` }, reward: { tokenAmount: 1 } },
+  { requiredItem: { item: MinecraftItemTypes.Diamond, amount: 2, translationString: `item.diamond.name` }, reward: { tokenAmount: 8 } },
+  { requiredItem: { item: MinecraftItemTypes.Stone, amount: 8, translationString: `tile.stone.stone.name` }, reward: { tokenAmount: 1 } },
   { requiredItem: { item: MinecraftItemTypes.CobbledDeepslate, amount: 16, translationString: `tile.cobbled_deepslate.name` }, reward: { tokenAmount: 1 } },
   { requiredItem: { item: MinecraftItemTypes.Cobblestone, amount: 16, translationString: `tile.cobblestone.name` }, reward: { tokenAmount: 1 } },
-  { requiredItem: { item: `poke:raw_cobalt`, amount: 8, translationString: `poke_pfe.raw_cobalt (%poke_pfe.tag)` }, reward: { tokenAmount: 2 } },
-  { requiredItem: { item: `poke:cobbled_limestone`, amount: 8, translationString: `poke_pfe.cobbled_limestone (%poke_pfe.tag)` }, reward: { tokenAmount: 2 } }
+  { requiredItem: { item: `poke:raw_cobalt`, amount: 8, translationString: `%poke_pfe.raw_cobalt (%poke_pfe.tag)` }, reward: { tokenAmount: 2 } },
+  { requiredItem: { item: `poke:raw_shade`, amount: 8, translationString: `%poke_pfe.raw_shade (%poke_pfe.tag)` }, reward: { tokenAmount: 4 } },
+  { requiredItem: { item: `poke:raw_onyx`, amount: 4, translationString: `%poke_pfe.raw_onyx (%poke_pfe.tag)` }, reward: { tokenAmount: 5 } },
+  { requiredItem: { item: `poke:raw_demonic`, amount: 4, translationString: `%poke_pfe.raw_demonic (%poke_pfe.tag)` }, reward: { tokenAmount: 5 } },
+  { requiredItem: { item: `poke:raw_hellish`, amount: 6, translationString: `%poke_pfe.raw_hellish (%poke_pfe.tag)` }, reward: { tokenAmount: 4 } },
+  { requiredItem: { item: `poke:cobbled_limestone`, amount: 8, translationString: `%poke_pfe.cobbled_limestone (%poke_pfe.tag)` }, reward: { tokenAmount: 2 } }
 ]
 const PFEKillQuests: PFEQuestInfo[] = [
   { requiredItem: { item: MinecraftItemTypes.RottenFlesh, amount: 4, translationString: `item.rotten_flesh.name` }, reward: { tokenAmount: 2 } },
@@ -45,7 +114,8 @@ const PFEKillQuests: PFEQuestInfo[] = [
   { requiredItem: { item: MinecraftItemTypes.Feather, amount: 4, translationString: `item.feather.name` }, reward: { tokenAmount: 2 } },
   { requiredItem: { item: MinecraftItemTypes.RabbitHide, amount: 4, translationString: `item.rabbit_hide.name` }, reward: { tokenAmount: 4 } },
   { requiredItem: { item: MinecraftItemTypes.RabbitFoot, amount: 1, translationString: `item.rabbit_foot.name` }, reward: { tokenAmount: 12 } },
-  { requiredItem: { item: MinecraftItemTypes.BlazeRod, amount: 16, translationString: `item.blaze_rod.name` }, reward: { tokenAmount: 32 } }
+  { requiredItem: { item: MinecraftItemTypes.BlazeRod, amount: 16, translationString: `item.blaze_rod.name` }, reward: { tokenAmount: 32 } },
+  { requiredItem: { item: `poke:rotten_chicken`, amount: 8, translationString: `%poke_pfe.rotten_chicken (%poke_pfe.tag)` }, reward: { tokenAmount: 8 } }
 ]
 const PFECraftQuests: PFEQuestInfo[] = [
   { requiredItem: { item: MinecraftItemTypes.Compass, amount: 1, translationString: `item.compass.name` }, reward: { tokenAmount: 6 } },
@@ -73,4 +143,75 @@ function PFERollQuest(item: ItemStack, player: Player, questType: PFEQuestInfo[]
   let AddingQuest = questType.at(Math.round(Math.random() * questType.length)) ?? questType.at(0) ?? { requiredItem: new ItemStack(MinecraftItemTypes.Dirt, 1), reward: { tokenAmount: 0, item: new ItemStack(MinecraftItemTypes.Dirt, 1) } }
   item.keepOnDeath = true
   PokeSaveProperty(PFEQuestPropertyID, item, JSON.stringify(AddingQuest), player, undefined)
+}
+
+class PokePFEQuestComponent {
+  onUse(data: ItemComponentUseEvent) {
+    if (!data.itemStack) return;
+    if (!data.itemStack.getDynamicProperty(PFEQuestPropertyID)) {
+      let questType: PFEQuestInfo[] = []
+      switch (data.itemStack.typeId) {
+        case `poke:mine_quest`: {
+          questType = (world.getDynamicProperty(PFECustomMineQuestsPropertyID)) ? PFEMineQuests.concat(JSON.parse(world.getDynamicProperty(PFECustomMineQuestsPropertyID)!.toString())) ?? PFEMineQuests : PFEMineQuests;
+          break
+        }
+        case `poke:kill_quest`: {
+          questType = (world.getDynamicProperty(PFECustomKillQuestsPropertyID)) ? PFEKillQuests.concat(JSON.parse(world.getDynamicProperty(PFECustomKillQuestsPropertyID)!.toString())) ?? PFEKillQuests : PFEKillQuests;
+          break
+        }
+        case `poke:farm_quest`: {
+          questType = (world.getDynamicProperty(PFECustomFarmQuestsPropertyID)) ? PFEFarmQuests.concat(JSON.parse(world.getDynamicProperty(PFECustomFarmQuestsPropertyID)!.toString())) ?? PFEFarmQuests : PFEFarmQuests;
+          break
+        }
+        case `poke:craft_quest`: {
+          questType = (world.getDynamicProperty(PFECustomCraftQuestsPropertyID)) ? PFECraftQuests.concat(JSON.parse(world.getDynamicProperty(PFECustomCraftQuestsPropertyID)!.toString())) ?? PFECraftQuests : PFECraftQuests;
+          break
+        }
+        default: { }
+      }
+      PFERollQuest(data.itemStack, data.source, questType)
+    } else {
+      let UI = new ActionFormData()
+      let quest: PFEQuestInfo = JSON.parse(data.itemStack.getDynamicProperty(PFEQuestPropertyID)!.toString()) ?? console.warn(`Quest not found or failed to parse || poke_pfe:quest`)
+      let validRequiredItems = PokeGetItemFromInventory(data.source, undefined, quest.requiredItem.item) ?? false
+      let totalItems = 0
+      let canComplete = false
+      UI.title({ translate: `translation.poke_pfe.quest_info` })
+      UI.body({
+        rawtext: [
+          { translate: `%translation.poke_pfe.items_needed:\n- §c${quest.requiredItem.amount}§rx ` },
+          { translate: quest.requiredItem.translationString },
+          { translate: `\n%translation.poke_pfe.quest_reward:\n- §c${quest.reward.tokenAmount}§rx %poke_pfe.copper_token (%poke_pfe.tag)` }
+        ]
+      })
+      if (validRequiredItems) {
+        for (let item of validRequiredItems) {
+          if (!item) continue;
+          totalItems += item.amount
+          continue;
+        }
+      }
+      if (validRequiredItems && quest.requiredItem.amount <= totalItems) {
+        UI.button({ translate: `translation.poke_pfe.completeQuest` }, `textures/poke/common/confirm`)
+        canComplete = true
+      } else UI.button({ translate: `translation.poke_pfe.missing_items` }, `textures/poke/common/chest_question`)
+
+      UI.button({ translate: `translation.poke:bossEventClose` }, 'textures/poke/common/close')
+      UI.show(data.source).then(response => {
+        let selection = 0
+        if ((response.selection == selection) && canComplete) {
+          if (quest.reward.item) {
+            data.source.dimension.spawnItem(quest.reward.item, data.source.location)
+          }
+          data.source.runCommand(`clear @s ${quest.requiredItem.item} 0 ${quest.requiredItem.amount}`)
+          data.source.getComponent(EntityComponentTypes.Equippable)?.setEquipment(EquipmentSlot.Mainhand, undefined)
+          data.source.dimension.spawnItem(new ItemStack(`poke:copper_token`, quest.reward.tokenAmount), data.source.location)
+          data.source.playSound(`poke_pfe.quest.complete`, { pitch: clampNumber(Math.random() + 0.5, 0.85, 1.15), volume: 0.9 })
+        } else selection++
+        if (response.canceled || (response.selection == selection)) {
+          return;
+        }
+      })
+    }
+  }
 }

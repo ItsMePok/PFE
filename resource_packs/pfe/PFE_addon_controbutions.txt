@@ -24,7 +24,8 @@ Cobalt Robe
 Textures:
 
 Scythe Textures
-Claymore Textures (Claymores are not in yet but will be soon-ish)
+Claymore Textures
+
 -----
 Cosmetics:
 Maxwell
@@ -46,6 +47,11 @@ Ferret
 Crab Pal
 ============================
 Battleaxe textures were made by mosqit4324
+Automation Block re-textures:
+Duster
+Dirter
+Cobblestone Generator
+Block Breaker
 ============================
 Initial version of Demonic Allay made by just_erick
 

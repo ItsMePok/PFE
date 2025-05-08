@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.21.80",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:zombken_trophy",
@@ -65,7 +65,7 @@
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "poke_zombken_trophy",
-					"render_method": "opaque",
+					"render_method": "blend_to_opaque",
 					"ambient_occlusion": false,
 					"face_dimming": true
 				}

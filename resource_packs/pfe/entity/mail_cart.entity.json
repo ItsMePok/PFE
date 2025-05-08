@@ -17,12 +17,14 @@
 				"pre_animation": [
 					"variable.hurt=query.hurt_time-query.frame_alpha;"
 				],
+				"should_update_effects_offscreen": "1.0",
+				"should_update_bones_and_effects_offscreen": "1.0",
 				"animate": [
 					"move"
 				]
 			},
 			"animations": {
-				"move": "animation.mail_cart.move"
+				"move": "animation.poke_pfe.mail_cart.move"
 			},
 			"render_controllers": [
 				"controller.render.minecart" //2

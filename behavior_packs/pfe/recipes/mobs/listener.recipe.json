@@ -14,6 +14,18 @@
 		],
 		"unlock": [
 			{
+				"item": "poke:empty_cassette"
+			},
+			{
+				"item": "poke:nebula_block"
+			},
+			{
+				"item": "poke:banished_star_x4"
+			},
+			{
+				"item": "poke:antenna"
+			},
+			{
 				"item": "poke:nebula_ingot"
 			}
 		],

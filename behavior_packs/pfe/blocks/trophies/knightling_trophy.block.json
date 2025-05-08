@@ -15,6 +15,17 @@
 			}
 		},
 		"components": {
+			"minecraft:item_visual": {
+				"geometry": "geometry.poke_pfe.knightling.trophy",
+				"material_instances": {
+					"*": {
+						"texture": "poke_pfe_knightling_trophy",
+						"render_method": "blend",
+						"ambient_occlusion": false,
+						"face_dimming": true
+					}
+				}
+			},
 			"minecraft:display_name": "%poke_pfe.knightling_trophy\n%poke_pfe.tag",
 			"minecraft:liquid_detection": {
 				"detection_rules": [

@@ -333,6 +333,20 @@
 									"item": "poke:listener_trophy"
 								}
 							]
+						},
+						{
+							"max_uses": 2147483647,
+							"wants": [
+								{
+									"item": "poke:diamond_token",
+									"quantity": 1
+								}
+							],
+							"gives": [
+								{
+									"item": "poke_pfe:waypoint_menu"
+								}
+							]
 						}
 					]
 				}

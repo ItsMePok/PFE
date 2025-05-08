@@ -43,7 +43,7 @@
 				]
 			},
 			"minecraft:damage": {
-				"value": 15
+				"value": 12
 			},
 			"minecraft:can_destroy_in_creative": false,
 			"minecraft:enchantable": {

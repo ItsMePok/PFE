@@ -1,0 +1,22 @@
+{
+	"format_version": "1.21.70",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke_pfe:waypoint_menu",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:display_name": {
+				"value": "%translation.poke_pfe.WaypointUITitle\n%poke_pfe.tag"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:rarity": "common",
+			"minecraft:icon": "poke_boss_event",
+			"minecraft:custom_components": [
+				"poke_pfe:waypoint_menu"
+			]
+		}
+	}
+}

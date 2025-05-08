@@ -27,6 +27,43 @@
 				"redstone_conductor": true,
 				"allows_wire_to_step_down": true
 			},
+			"minecraft:material_instances": {
+				"north": {
+					"render_method": "opaque",
+					"texture": "poke_pfe_block_breaker_face"
+				},
+				"east": {
+					"render_method": "opaque",
+					"texture": "poke_pfe_automation_side"
+				},
+				"south": {
+					"render_method": "opaque",
+					"texture": "poke_pfe_automation_gear"
+				},
+				"west": {
+					"render_method": "opaque",
+					"texture": "poke_pfe_automation_side"
+				},
+				"down": {
+					"render_method": "opaque",
+					"texture": "poke_pfe_automation_bottom"
+				},
+				"up": {
+					"render_method": "opaque",
+					"texture": "poke_pfe_automation_top"
+				}
+			},
+			"minecraft:transformation": {
+				"rotation": [
+					-90,
+					0,
+					0
+				]
+			},
+			"minecraft:geometry": {
+				"identifier": "geometry.poke_pfe.block",
+				"culling": "poke_pfe:block.culling"
+			},
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 1
 			},

@@ -1,6 +1,14 @@
 {
 	"pools": [
 		{
+			"conditions": [
+				{
+					"condition": "match_tool",
+					"minecraft:match_tool_filter_any": [
+						"minecraft:is_pickaxe"
+					]
+				}
+			],
 			"rolls": 1,
 			"entries": [
 				{

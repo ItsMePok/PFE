@@ -21,6 +21,15 @@
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 20
 			},
+			"minecraft:geometry": {
+				"identifier": "minecraft:geometry.full_block"
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "poke_honey_tiles",
+					"render_method": "opaque"
+				}
+			},
 			"tag:pfe": {},
 			"tag:stone_pick_diggable": {},
 			"tag:minecraft:is_pickaxe_item_destructible": {},

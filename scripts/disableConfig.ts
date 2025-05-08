@@ -9,7 +9,7 @@ export {
   PFEDisabledOnUseItems
 }
 let PFEDisableConfigName = "poke_pfe:disable_config"
-let PFEDisableConfigVersion = 1
+let PFEDisableConfigVersion = 2
 interface PFEDisableConfigOptions {
   "v": number
   "quantumTeleporter": boolean
@@ -20,6 +20,7 @@ interface PFEDisableConfigOptions {
   "witherSpawner": boolean
   "nukeRing": boolean
   "kapowRing": boolean
+  "waypoints"?: boolean
 }
 let PFEDisabledOnUseItems = ["poke:sundial", "poke:quantum_teleporter", "poke:kapow_ring"]
 const PFEDisableConfigDefault: PFEDisableConfigOptions = {
@@ -31,7 +32,8 @@ const PFEDisableConfigDefault: PFEDisableConfigOptions = {
   "nukeRing": true,
   "quantumTeleporter": true,
   "sundial": true,
-  "witherSpawner": true
+  "witherSpawner": true,
+  "waypoints": true
 }
 function PFEDisableConfigMainMenu(data: ItemComponentUseEvent) {
   let player = data.source
@@ -76,6 +78,11 @@ function PFEDisableConfigMainMenu(data: ItemComponentUseEvent) {
     UI.button({ rawtext: [{ translate: `poke_pfe.bounty` }, { text: ":§a\n" }, { translate: `translation.poke_pfe.enabled` }] }, `textures/poke/pfe/bounty`)
   } else {
     UI.button({ rawtext: [{ translate: `poke_pfe.bounty` }, { text: ":§c\n" }, { translate: `translation.poke_pfe.disabled` }] }, `textures/poke/pfe/bounty`)
+  }
+  if (options.waypoints) {
+    UI.button({ rawtext: [{ translate: `poke_pfe.waypoint_menu` }, { text: ":§a\n" }, { translate: `translation.poke_pfe.enabled` }] }, `textures/poke/pfe/waypoint_menu`)
+  } else {
+    UI.button({ rawtext: [{ translate: `poke_pfe.waypoint_menu` }, { text: ":§c\n" }, { translate: `translation.poke_pfe.disabled` }] }, `textures/poke/pfe/waypoint_menu`)
   }
 
   UI.show(player).then(response => {
@@ -149,6 +156,17 @@ function PFEDisableConfigMainMenu(data: ItemComponentUseEvent) {
         newProperty.bounty = false
         console.warn(`Disabled Bounty`)
       } else newProperty.bounty = true
+      world.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty))
+      PFEDisableConfigMainMenu(data)
+      return
+    } else selection++
+    if (response.selection == selection) {// Waypoint Menu
+      if (newProperty.waypoints) {
+
+        newProperty.waypoints = false
+        console.warn(`Disabled Waypoint Menu`)
+      } else newProperty.waypoints = true
+      newProperty.v = newProperty.v < 2 ? newProperty.v = 2 : newProperty.v
       world.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty))
       PFEDisableConfigMainMenu(data)
       return

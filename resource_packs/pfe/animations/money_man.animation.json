@@ -13,8 +13,16 @@
 			"loop": true,
 			"bones": {
 				"arms": {
-					"position": [0, -1, -1],
-					"rotation": ["-42.97 - this", 0, 0]
+					"position": [
+						0,
+						-1,
+						-1
+					],
+					"rotation": [
+						"-42.97 - this",
+						0,
+						0
+					]
 				}
 			}
 		},
@@ -22,8 +30,16 @@
 			"loop": true,
 			"bones": {
 				"arms": {
-					"position": [0, "-3.0 - this", "-1.0 - this"],
-					"rotation": ["-42.97 - this", 0, 0]
+					"position": [
+						0,
+						"-3.0 - this",
+						"-1.0 - this"
+					],
+					"rotation": [
+						"-42.97 - this",
+						0,
+						0
+					]
 				}
 			}
 		},
@@ -31,8 +47,16 @@
 			"loop": true,
 			"bones": {
 				"body": {
-					"position": [0, 1, -15],
-					"rotation": [-90, 0, 0]
+					"position": [
+						0,
+						1,
+						-15
+					],
+					"rotation": [
+						-90,
+						0,
+						0
+					]
 				}
 			}
 		},
@@ -41,10 +65,18 @@
 			"anim_time_update": "query.modified_distance_moved",
 			"bones": {
 				"leg1": {
-					"rotation": ["(math.cos(query.anim_time * 38.17 + 180) * 40.0) - this", "-this", 0]
+					"rotation": [
+						"(math.cos(query.anim_time * 38.17 + 180) * 40.0) - this",
+						"-this",
+						0
+					]
 				},
 				"leg0": {
-					"rotation": ["(math.cos(query.anim_time * 38.17) * 40.0) - this", "-this", 0]
+					"rotation": [
+						"(math.cos(query.anim_time * 38.17) * 40.0) - this",
+						"-this",
+						0
+					]
 				}
 			}
 		},
@@ -52,7 +84,11 @@
 			"loop": true,
 			"bones": {
 				"arms": {
-					"rotation": ["variable.raise_arms * -15.0", 0, 0]
+					"rotation": [
+						"variable.raise_arms * -15.0",
+						0,
+						0
+					]
 				}
 			}
 		},
@@ -62,31 +98,71 @@
 			"bones": {
 				"melon_mask": {
 					"rotation": {
-						"0.0": [0, 0, 0],
-						"1.0": [0, 0, 2.5],
-						"2.5": [0, 0, 0]
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							0,
+							0,
+							2.5
+						],
+						"2.5": [
+							0,
+							0,
+							0
+						]
 					},
 					"position": {
-						"0.0": [0, 0, 0],
-						"2.5": [0, 0, 0]
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"2.5": [
+							0,
+							0,
+							0
+						]
 					},
 					"scale": {
-						"0.0": [1, 1, 1],
-						"2.5": [1, 1, 1]
+						"0.0": [
+							1,
+							1,
+							1
+						],
+						"2.5": [
+							1,
+							1,
+							1
+						]
 					}
 				},
 				"arms": {
 					"rotation": {
 						"0.0": {
-							"post": [0, 0, 0],
+							"post": [
+								0,
+								0,
+								0
+							],
 							"lerp_mode": "catmullrom"
 						},
 						"2.5": {
-							"post": [-3, 0, 0],
+							"post": [
+								-3,
+								0,
+								0
+							],
 							"lerp_mode": "catmullrom"
 						},
 						"5.0": {
-							"post": [0, 0, 0],
+							"post": [
+								0,
+								0,
+								0
+							],
 							"lerp_mode": "catmullrom"
 						}
 					}

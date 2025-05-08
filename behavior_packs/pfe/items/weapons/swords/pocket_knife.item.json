@@ -79,7 +79,10 @@
 			],
 			"minecraft:tags": {
 				"tags": [
-					"poke-pfe:UpgraderInfo:{\"canUpgrade\":[\"poke:carved_melon\",\"poke:gilded_carved_melon\",\"minecraft:pumpkin\",\"minecraft:melon_block\",\"poke:gilded_melon\",\"minecraft:brown_mushroom_block\",\"minecraft:red_mushroom_block\"]}:poke-pfe:UpgraderInfoEnd"
+					"poke-pfe:UpgraderInfo:{\"canUpgrade\":[\"poke:carved_melon\",\"poke:gilded_carved_melon\",\"minecraft:pumpkin\",\"minecraft:melon_block\",\"poke:gilded_melon\",\"minecraft:brown_mushroom_block\",\"minecraft:red_mushroom_block\"]}:poke-pfe:UpgraderInfoEnd",
+					"minecraft:is_sword",
+					"minecraft:iron_tier",
+					"pfe:sword"
 				]
 			}
 		}

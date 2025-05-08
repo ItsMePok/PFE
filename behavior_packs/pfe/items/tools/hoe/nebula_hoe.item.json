@@ -12,6 +12,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.nebula_hoe\n%poke_pfe.tag"
 			},
+			"minecraft:rarity": "common",
 			"minecraft:max_stack_size": 1,
 			"minecraft:hand_equipped": true,
 			"minecraft:durability": {
@@ -90,11 +91,31 @@
 						"speed": 50
 					},
 					{
-						"block": "minecraft:leaves",
+						"block": "minecraft:acacia_leaves",
 						"speed": 50
 					},
 					{
-						"block": "minecraft:leaves2",
+						"block": "minecraft:birch_leaves",
+						"speed": 50
+					},
+					{
+						"block": "minecraft:dark_oak_leaves",
+						"speed": 50
+					},
+					{
+						"block": "minecraft:jungle_leaves",
+						"speed": 50
+					},
+					{
+						"block": "minecraft:oak_leaves",
+						"speed": 50
+					},
+					{
+						"block": "minecraft:pale_oak_leaves",
+						"speed": 50
+					},
+					{
+						"block": "minecraft:spruce_leaves",
 						"speed": 50
 					},
 					{
@@ -143,6 +164,7 @@
 				"tags": [
 					"pfe:Command:function poke/pfe/nebula_hoe:pfeCommandEnd",
 					"minecraft:is_hoe",
+					"minecraft:is_tool",
 					"minecraft:netherite_tier"
 				]
 			},
@@ -156,7 +178,7 @@
 			},
 			"minecraft:cooldown": {
 				"category": "poke:nebula_hoe",
-				"duration": 0.2
+				"duration": 0.01
 			}
 		}
 	}

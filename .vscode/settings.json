@@ -12,6 +12,55 @@
     "**/.DS_Store": true,
     "**/node_modules": true
   },
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "*.item.json"
+      ],
+      "schema": {
+        "type": "object",
+        "properties": {
+          "format_version": {
+            "type": "string"
+          },
+          "minecraft:item": {
+            "type": "object",
+            "properties": {
+              "components": {
+                "type": "object",
+                "properties": {
+                  "poke_pfe:waypoint_menu": {
+                    "type": "object",
+                    "description": "Waypoin Menu (PFE)\n\nWhen this item is used: this item will open a waypoint GUI",
+                    "properties": {
+                      "version": {
+                        "type": "number",
+                        "description": "The version of this component. this is used to prevent breaking with outdated versions of this component's info\nCurrent version: 1",
+                        "default": 1,
+                      },
+                      "max_waypoints": {
+                        "type": "number",
+                        "description": "The maximum amount of waypoints this item can store",
+                        "default": 5
+                      },
+                      "debug_mode": {
+                        "type": "boolean",
+                        "description": "Adds the Debug mode button to the GUI",
+                        "default": false
+                      }
+                    },
+                    "required": [
+                      "version"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
   "cSpell.words": [
     "afamiliarroom",
     "anordinaryday",
@@ -68,6 +117,7 @@
     "onemoreday",
     "oxygene",
     "Oxygène",
+    "Papercraft",
     "pfewiki",
     "puzzlebox",
     "Quickaxe",
@@ -76,6 +126,7 @@
     "robey",
     "robo",
     "Rubedo",
+    "scriptevent",
     "Shadowstone",
     "Shuniji",
     "Shuriken",
@@ -90,6 +141,7 @@
     "taswell",
     "teleporter",
     "theend",
+    "torchflower",
     "trimmable",
     "unhider",
     "westside",

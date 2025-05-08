@@ -19,6 +19,14 @@
       "minecraft:destructible_by_explosion": {
         "explosion_resistance": 60
       },
+      "minecraft:geometry": {
+        "identifier": "minecraft:geometry.full_block"
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "poke_cobalt_golem_block"
+        }
+      },
       "tag:pfe": {},
       "tag:metal": {},
       "tag:minecraft:metal": {},

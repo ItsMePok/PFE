@@ -15,6 +15,13 @@
 			"minecraft:custom_components": [
 				"poke:normalMining"
 			],
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:is_sword",
+					"minecraft:netherite_tier",
+					"pfe:sword"
+				]
+			},
 			"minecraft:can_destroy_in_creative": false,
 			"minecraft:durability": {
 				"max_durability": 2870,
@@ -24,7 +31,7 @@
 				}
 			},
 			"minecraft:damage": {
-				"value": 34
+				"value": 20
 			},
 			"minecraft:enchantable": {
 				"value": 20,

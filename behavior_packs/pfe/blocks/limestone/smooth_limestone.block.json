@@ -30,6 +30,16 @@
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 30
 			},
+			"minecraft:geometry": {
+				"identifier": "minecraft:geometry.full_block"
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "poke_smooth_limestone",
+					"isotropic": true,
+					"render_method": "opaque"
+				}
+			},
 			"tag:pfe": {},
 			"tag:stone": {},
 			"tag:minecraft:stone": {},

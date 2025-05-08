@@ -15,10 +15,17 @@
 			"minecraft:custom_components": [
 				"poke:normalMining"
 			],
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:is_sword",
+					"minecraft:iron_tier",
+					"pfe:sword"
+				]
+			},
 			"minecraft:max_stack_size": 1,
 			"minecraft:icon": "poke_cobalt_sword",
 			"minecraft:damage": {
-				"value": 6
+				"value": 4
 			},
 			"minecraft:can_destroy_in_creative": false,
 			"minecraft:hand_equipped": true,

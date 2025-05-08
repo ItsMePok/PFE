@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.10",
+  "format_version": "1.21.40",
   //Fun :3
   "poke_pfe:listener_antennas": {
     "sound": "metal"
@@ -8,8 +8,7 @@
     "sound": "calcite"
   },
   "poke:cobalt_golem_block": {
-    "sound": "copper",
-    "textures": "poke_cobalt_golem_block"
+    "sound": "copper"
   },
   //Tombstone
   "poke:limestone_tombstone": {
@@ -27,14 +26,11 @@
     "sound": "coral"
   },
   "poke:honey_tiles": {
-    "textures": "poke_honey_tiles",
     "sound": "coral"
   },
   //Smooth
   "poke:smooth_limestone": {
-    "sound": "stone",
-    "textures": "poke_smooth_limestone",
-    "isotropic": true
+    "sound": "stone"
   },
   "poke:smooth_limestone_slab": {
     "sound": "stone"
@@ -896,15 +892,7 @@
     "sound": "wood"
   },
   "poke:cobblestone_gen": {
-    "sound": "stone",
-    "textures": {
-      "down": "poke_cobble_gen_bottom",
-      "east": "poke_cobble_gen_flip",
-      "west": "poke_cobble_gen_flip",
-      "south": "poke_cobble_gen",
-      "north": "poke_cobble_gen",
-      "up": "poke_cobble_gen_top"
-    }
+    "sound": "wood"
   },
   "poke:cobble_gen": {
     "sound": "stone",
@@ -925,158 +913,46 @@
     "sound": "stone"
   },
   "poke:dirter": {
-    "sound": "wood",
-    "textures": {
-      "down": "poke_dirter_bottom",
-      "up": "poke_dirter_top",
-      "north": "poke_dirter_side",
-      "east": "poke_dirter_side_alt",
-      "south": "poke_dirter_side",
-      "west": "poke_dirter_side_alt"
-    }
+    "sound": "wood"
   },
   "poke:dirter_north": {
-    "sound": "wood",
-    "textures": {
-      "down": "poke_dirter_side",
-      "up": "poke_dirter_side",
-      "north": "poke_dirter_bottom",
-      "east": "poke_dirter_side_alt",
-      "south": "poke_dirter_top",
-      "west": "poke_dirter_side_alt"
-    }
+    "sound": "wood"
   },
   "poke:dirter_south": {
-    "sound": "wood",
-    "textures": {
-      "down": "poke_dirter_side",
-      "up": "poke_dirter_side",
-      "north": "poke_dirter_top",
-      "east": "poke_dirter_side_alt",
-      "south": "poke_dirter_bottom",
-      "west": "poke_dirter_side_alt"
-    }
+    "sound": "wood"
   },
   "poke:dirter_east": {
-    "sound": "wood",
-    "textures": {
-      "down": "poke_dirter_side",
-      "up": "poke_dirter_side",
-      "north": "poke_dirter_side_alt",
-      "east": "poke_dirter_bottom",
-      "south": "poke_dirter_side_alt",
-      "west": "poke_dirter_top"
-    }
+    "sound": "wood"
   },
   "poke:dirter_west": {
-    "sound": "wood",
-    "textures": {
-      "down": "poke_dirter_side",
-      "up": "poke_dirter_side",
-      "north": "poke_dirter_side_alt",
-      "east": "poke_dirter_top",
-      "south": "poke_dirter_side_alt",
-      "west": "poke_dirter_bottom"
-    }
+    "sound": "wood"
   },
   "poke:dirter_up": {
-    "sound": "wood",
-    "textures": {
-      "down": "poke_dirter_top",
-      "up": "poke_dirter_bottom",
-      "north": "poke_dirter_side",
-      "east": "poke_dirter_side_alt",
-      "south": "poke_dirter_side",
-      "west": "poke_dirter_side_alt"
-    }
+    "sound": "wood"
   },
   "poke:dirter_down": {
-    "sound": "wood",
-    "textures": {
-      "down": "poke_dirter_bottom",
-      "up": "poke_dirter_top",
-      "north": "poke_dirter_side",
-      "east": "poke_dirter_side_alt",
-      "south": "poke_dirter_side",
-      "west": "poke_dirter_side_alt"
-    }
+    "sound": "wood"
   },
   "poke:duster": {
-    "textures": {
-      "down": "poke_dirter_bottom",
-      "up": "poke_dirter_top",
-      "north": "poke_dirter_side",
-      "east": "poke_dirter_side_alt",
-      "south": "poke_duster_side",
-      "west": "poke_duster_side_alt"
-    },
     "sound": "wood"
   },
   "poke:duster_north": {
-    "sound": "wood",
-    "textures": {
-      "down": "poke_duster_side",
-      "up": "poke_dirter_side",
-      "north": "poke_dirter_bottom",
-      "east": "poke_duster_side_alt",
-      "south": "poke_dirter_top",
-      "west": "poke_dirter_side_alt"
-    }
+    "sound": "wood"
   },
   "poke:duster_south": {
-    "sound": "wood",
-    "textures": {
-      "down": "poke_duster_side",
-      "up": "poke_dirter_side",
-      "north": "poke_dirter_top",
-      "east": "poke_dirter_side_alt",
-      "south": "poke_dirter_bottom",
-      "west": "poke_duster_side_alt"
-    }
+    "sound": "wood"
   },
   "poke:duster_east": {
-    "sound": "wood",
-    "textures": {
-      "down": "poke_duster_side",
-      "up": "poke_dirter_side",
-      "north": "poke_dirter_side_alt",
-      "east": "poke_dirter_bottom",
-      "south": "poke_duster_side_alt",
-      "west": "poke_dirter_top"
-    }
+    "sound": "wood"
   },
   "poke:duster_west": {
-    "sound": "wood",
-    "textures": {
-      "down": "poke_duster_side",
-      "up": "poke_dirter_side",
-      "north": "poke_duster_side_alt",
-      "east": "poke_dirter_top",
-      "south": "poke_dirter_side_alt",
-      "west": "poke_dirter_bottom"
-    }
+    "sound": "wood"
   },
   "poke:duster_up": {
-    "sound": "wood",
-    "textures": {
-      "down": "poke_dirter_top",
-      "up": "poke_dirter_bottom",
-      "north": "poke_dirter_side",
-      "east": "poke_dirter_side_alt",
-      "south": "poke_duster_side",
-      "west": "poke_duster_side_alt"
-    }
+    "sound": "wood"
   },
   "poke:duster_down": {
-    "sound": "wood",
-    "textures": {
-      "down": "poke_dirter_bottom",
-      "up": "poke_dirter_top",
-      "north": "poke_dirter_side",
-      "east": "poke_dirter_side_alt",
-      "south": "poke_duster_side",
-      "west": "poke_duster_side_alt"
-    }
+    "sound": "wood"
   },
   "poke:block_breaker_north": {
     "sound": "copper",
@@ -1219,12 +1095,7 @@
     "textures": "poke_demonic_allay_conduit"
   },
   "poke:block_breaker": {
-    "sound": "wood",
-    "textures": {
-      "up": "poke_block_breaker_top",
-      "side": "poke_block_breaker_side",
-      "down": "poke_block_breaker_bottom"
-    }
+    "sound": "wood"
   },
   //Crafting
   "poke:spell_crafter": {

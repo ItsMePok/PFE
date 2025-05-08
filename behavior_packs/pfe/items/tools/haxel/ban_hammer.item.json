@@ -9,13 +9,16 @@
 		},
 		"components": {
 			"minecraft:display_name": {
-				"value": "%poke_pfe.ban_hammer\n%poke_pfe.tag"
+				"value": "%poke_pfe.ban_hammer\n§7%poke_pfe.crouchInteract\n%poke_pfe.tag"
 			},
 			"minecraft:rarity": "rare",
 			"minecraft:tags": {
 				"tags": [
 					"pfe:HaxelMining:{\"radius\":{\"x\":5,\"y\":7,\"z\":5},\"canBreakLiquids\":true,\"canBreakBedrock\":true}:pfeHaxelMiningEnd",
-					"minecraft:is_pickaxe"
+					"minecraft:is_pickaxe",
+					"minecraft:netherite_tier",
+					"minecraft:is_tool",
+					"pfe:is_haxel"
 				]
 			},
 			"minecraft:custom_components": [

@@ -836,34 +836,13 @@
 				}
 			]
 		},
-		"poke.quest.comp": {
+		"poke_pfe.quest.complete": {
 			"category": "ui",
 			"max_distance": 64,
 			"sounds": [
 				{
-					"pitch": 0.95,
-					"name": "sounds/poke/pfe/quest_comp",
-					"volume": 0.8
-				},
-				{
-					"pitch": 0.975,
-					"name": "sounds/poke/pfe/quest_comp",
-					"volume": 0.8
-				},
-				{
 					"pitch": 1,
-					"name": "sounds/poke/pfe/quest_comp",
-					"volume": 0.8
-				},
-				{
-					"pitch": 1.025,
-					"name": "sounds/poke/pfe/quest_comp",
-					"volume": 0.8
-				},
-				{
-					"pitch": 1.05,
-					"name": "sounds/poke/pfe/quest_comp",
-					"volume": 0.8
+					"name": "sounds/poke/pfe/quest_comp"
 				}
 			]
 		},

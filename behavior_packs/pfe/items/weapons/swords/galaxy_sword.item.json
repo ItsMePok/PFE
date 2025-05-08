@@ -15,10 +15,17 @@
 			"minecraft:custom_components": [
 				"poke:normalMining"
 			],
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:is_sword",
+					"minecraft:netherite_tier",
+					"pfe:sword"
+				]
+			},
 			"minecraft:max_stack_size": 1,
 			"minecraft:icon": "poke_galaxy_sword",
 			"minecraft:damage": {
-				"value": 21
+				"value": 17
 			},
 			"minecraft:can_destroy_in_creative": false,
 			"minecraft:hand_equipped": true,

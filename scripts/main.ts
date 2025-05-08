@@ -1,15 +1,16 @@
-import { system, world, EquipmentSlot, GameMode, EntityComponentTypes, ItemComponentTypes, ItemStack, ItemEnchantableComponent, Player, EntityProjectileComponent, BlockComponentPlayerInteractEvent, BlockComponentPlayerDestroyEvent, BlockComponentTickEvent, EntityEquippableComponent, BlockComponentRandomTickEvent, ItemComponentUseEvent, ItemCooldownComponent, ItemComponentUseOnEvent, BlockComponentOnPlaceEvent, Direction, RawMessage, EntityQueryOptions, MinecraftDimensionTypes, Block, EffectType, WorldInitializeBeforeEventSignal, HudElement, Dimension, Vector3, Entity } from "@minecraft/server";
+import { system, world, EquipmentSlot, GameMode, EntityComponentTypes, ItemComponentTypes, ItemStack, ItemEnchantableComponent, Player, EntityProjectileComponent, BlockComponentPlayerInteractEvent, BlockComponentPlayerDestroyEvent, BlockComponentTickEvent, EntityEquippableComponent, BlockComponentRandomTickEvent, ItemComponentUseEvent, ItemCooldownComponent, ItemComponentUseOnEvent, BlockComponentOnPlaceEvent, Direction, RawMessage, EntityQueryOptions, MinecraftDimensionTypes, Block } from "@minecraft/server";
 import { MinecraftBlockTypes, MinecraftEffectTypes, MinecraftEnchantmentTypes, MinecraftEntityTypes, MinecraftItemTypes } from "@minecraft/vanilla-data";
 import { PFEBossEventConfig, PFEBossEventConfigName, PFEBossEventUIMainMenu, PFEDefaultBossEventSettings, PFEStartBossEvent } from "./bossEvents";
 import { PFEHaxelMining } from "./haxelMining";
-import { PokeClosestCardinal, PokeDamageItemUB, PokeDecrementStack, PokeGetItemFromInventory, PokeSpawnLootTable } from "./commonFunctions";
+import { PokeClosestCardinal, PokeDamageItemUB, PokeDecrementStack, PokeSpawnLootTable } from "./commonFunctions";
 import { PokeBirthdays, PokeTimeConfigUIMainMenu, PokeTimeGreeting, PokeTimeZoneOffset } from "./time";
 import { PFEBoltBowsComponent } from "./boltbow";
 import { PFEDisableConfigOptions, PFEDisableConfigDefault, PFEDisableConfigMainMenu, PFEDisableConfigName, PFEDisabledOnUseItems } from "./disableConfig";
 import { ActionFormData } from "@minecraft/server-ui";
 import { CheckEffects, PFEArmorEffectData } from "./armorEffects";
-import { PFECraftQuests, PFEFarmQuests, PFEKillQuests, PFEMineQuests, PFEQuestInfo, PFEQuestPropertyID, PFERollQuest } from "./quests";
-import ComputersCompat, { initExampleStickers, StatIDs } from "./addonCompatibility/jigarbov";
+import { PFECustomCraftQuestsPropertyID, PFECustomFarmQuestsPropertyID, PFECustomKillQuestsPropertyID, PFECustomMineQuestsPropertyID, PFEQuestInfo, PokePFEQuestComponent } from "./quests";
+import ComputersCompat, { initExampleStickers } from "./addonCompatibility/jigarbov";
+import { PokePFEWaypointComponent } from "./waypoints";
 //world.scoreboard.addObjective(`poke_pfe:`)
 system.runInterval(() => {
     for (let player of world.getAllPlayers()) {
@@ -171,9 +172,13 @@ function UpdatePost(block: Block, value: boolean, up?: boolean) {
 
 //Custom Component Registry & Initial Setup
 world.beforeEvents.worldInitialize.subscribe(data => {
-    world.setDynamicProperty(`poke_pfe:existed`, true) // This can be used by other addons to check if PFE has been used / is used on this world
+    world.setDynamicProperty(PFECustomMineQuestsPropertyID, JSON.stringify([]))
+    world.setDynamicProperty(PFECustomFarmQuestsPropertyID, JSON.stringify([]))
+    world.setDynamicProperty(PFECustomCraftQuestsPropertyID, JSON.stringify([]))
+    world.setDynamicProperty(PFECustomKillQuestsPropertyID, JSON.stringify([]))
     system.runTimeout(() => {
         PFETimeValidation()
+        /* Outgoing Addon Compatibility*/
         ComputersCompat.init()
     }, Math.abs(60 - new Date(Date.now()).getSeconds()) * 20)
 
@@ -246,63 +251,7 @@ world.beforeEvents.worldInitialize.subscribe(data => {
     }
     )
     data.itemComponentRegistry.registerCustomComponent(
-        "poke_pfe:quest", {
-        onUse(data) {
-            if (!data.itemStack) return;
-            if (!data.itemStack.getDynamicProperty(PFEQuestPropertyID)) {
-                let questType: PFEQuestInfo[] = []
-                switch (data.itemStack.typeId) {
-                    case `poke:mine_quest`: { questType = PFEMineQuests; break }
-                    case `poke:kill_quest`: { questType = PFEKillQuests; break }
-                    case `poke:farm_quest`: { questType = PFEFarmQuests; break }
-                    case `poke:craft_quest`: { questType = PFECraftQuests; break }
-                    default: { }
-                }
-                PFERollQuest(data.itemStack, data.source, questType)
-            } else {
-                let UI = new ActionFormData()
-                let quest: PFEQuestInfo = JSON.parse(data.itemStack.getDynamicProperty(PFEQuestPropertyID)!.toString()) ?? console.warn(`Quest not found or failed to parse || poke_pfe:quest`)
-                let validRequiredItems = PokeGetItemFromInventory(data.source, undefined, quest.requiredItem.item) ?? false
-                let totalItems = 0
-                let canComplete = false
-                UI.title({ translate: `translation.poke_pfe.quest_info` })
-                UI.body({
-                    rawtext: [
-                        { translate: `%translation.poke_pfe.items_needed:\n- §c${quest.requiredItem.amount}§rx ` },
-                        { translate: quest.requiredItem.translationString },
-                        { translate: `\n%translation.poke_pfe.quest_reward:\n- §c${quest.reward.tokenAmount}§rx %poke_pfe.copper_token (%poke_pfe.tag)` }
-                    ]
-                })
-                if (validRequiredItems) {
-                    for (let item of validRequiredItems) {
-                        if (!item) continue;
-                        totalItems += item.amount
-                        continue;
-                    }
-                }
-                if (validRequiredItems && quest.requiredItem.amount <= totalItems) {
-                    UI.button({ translate: `translation.poke_pfe.completeQuest` }, `textures/poke/common/confirm`)
-                    canComplete = true
-                } else UI.button({ translate: `translation.poke_pfe.missing_items` }, `textures/poke/common/chest_question`)
-
-                UI.button({ translate: `translation.poke:bossEventClose` }, 'textures/poke/common/close')
-                UI.show(data.source).then(response => {
-                    let selection = 0
-                    if ((response.selection == selection) && canComplete) {
-                        data.source.runCommand(`clear @s ${quest.requiredItem.item} 0 ${quest.requiredItem.amount}`)
-                        if (quest.reward.item) {
-                            data.source.dimension.spawnItem(quest.reward.item, data.source.location)
-                        }
-                        data.source.dimension.spawnItem(new ItemStack(`poke:copper_token`, quest.reward.tokenAmount), data.source.location)
-                    } else selection++
-                    if (response.canceled || (response.selection == selection)) {
-                        return;
-                    }
-                })
-            }
-
-        }
-    }
+        "poke_pfe:quest", new PokePFEQuestComponent()
     )
     data.itemComponentRegistry.registerCustomComponent(
         'poke:veinMiner', {
@@ -765,7 +714,7 @@ world.beforeEvents.worldInitialize.subscribe(data => {
             const blockLocation = `${data.block.x} ${data.block.y} ${data.block.z}`
             const blockId = data.destroyedBlockPermutation.type.id.substring(5)
             if (data.player?.getGameMode() == GameMode.survival) {
-                if (fortuneLevel == 3) {
+                if (fortuneLevel >= 3) {
                     data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}.loot"`)
                     data.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}.loot"`)
                     if (rng == 0) return;
@@ -1663,10 +1612,54 @@ world.beforeEvents.worldInitialize.subscribe(data => {
         }
     }
     )
-    /*Addon Compatibility:*/
+    data.itemComponentRegistry.registerCustomComponent(
+        "poke_pfe:waypoint_menu", new PokePFEWaypointComponent()
+    )
+    /* Outgoing Addon Compatibility:*/
     initExampleStickers()
-    /**/
     return;
 })
-/*Addon Compatibility x2*/
-/**/
+
+/*Incoming Addon Compatibility/Integrations*/
+system.afterEvents.scriptEventReceive.subscribe((data) => {
+    switch (data.id) {
+        /**
+         This will send true (as a string) to the scriptevent defined in the message part 
+
+        example command: `scriptevent poke_pfe:enabled poke_pfe:receive_test`
+
+        - in this case it will send true to poke_pfe:receive_test
+         */
+        case `poke_pfe:enabled`: {
+            world.getDimension(MinecraftDimensionTypes.overworld).runCommand(`scriptevent ${data.message} true`)
+            break;
+        }
+        /*
+        Theses can be used to add quests into PFE's quest system
+        see `scripts\quests.ts` for more info 
+        */
+        case PFECustomMineQuestsPropertyID: {
+            const currentQuests: PFEQuestInfo[] = JSON.parse(world.getDynamicProperty(PFECustomMineQuestsPropertyID)!.toString()) ?? []
+            let newQuests = currentQuests.concat(JSON.parse(data.message).value) ?? currentQuests
+            world.setDynamicProperty(PFECustomMineQuestsPropertyID, JSON.stringify(newQuests))
+            break;
+        }
+        case PFECustomKillQuestsPropertyID: {
+            const currentQuests: PFEQuestInfo[] = JSON.parse(world.getDynamicProperty(PFECustomKillQuestsPropertyID)!.toString()) ?? []
+            let newQuests = currentQuests.concat(JSON.parse(data.message).value) ?? currentQuests
+            world.setDynamicProperty(PFECustomKillQuestsPropertyID, JSON.stringify(newQuests))
+            break;
+        }
+        case PFECustomFarmQuestsPropertyID: {
+            const currentQuests: PFEQuestInfo[] = JSON.parse(world.getDynamicProperty(PFECustomFarmQuestsPropertyID)!.toString()) ?? []
+            let newQuests = currentQuests.concat(JSON.parse(data.message).value) ?? currentQuests
+            world.setDynamicProperty(PFECustomFarmQuestsPropertyID, JSON.stringify(newQuests))
+        }
+        case PFECustomCraftQuestsPropertyID: {
+            const currentQuests: PFEQuestInfo[] = JSON.parse(world.getDynamicProperty(PFECustomCraftQuestsPropertyID)!.toString()) ?? []
+            let newQuests = currentQuests.concat(JSON.parse(data.message).value) ?? currentQuests
+            world.setDynamicProperty(PFECustomCraftQuestsPropertyID, JSON.stringify(newQuests))
+        }
+        default: break;
+    }
+})

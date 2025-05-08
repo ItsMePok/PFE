@@ -9,7 +9,7 @@
 		},
 		"components": {
 			"minecraft:display_name": {
-				"value": "%poke_pfe.godly_boltbow\n%poke_pfe.tag"
+				"value": "%poke_pfe.godly_boltbow\n§7%poke_pfe.crouchInteract\n%poke_pfe.tag"
 			},
 			"minecraft:rarity": "common",
 			"minecraft:icon": "poke_godly_boltbow",

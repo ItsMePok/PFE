@@ -9,12 +9,15 @@
 		},
 		"components": {
 			"minecraft:display_name": {
-				"value": "%poke_pfe.galaxy_haxel\n%poke_pfe.tag"
+				"value": "%poke_pfe.galaxy_haxel\n§7%poke_pfe.crouchInteract\n%poke_pfe.tag"
 			},
 			"minecraft:tags": {
 				"tags": [
 					"pfe:HaxelMining:{\"radius\":{\"x\":5,\"y\":7,\"z\":5},\"canBreakLiquids\":false,\"canBreakBedrock\":false}:pfeHaxelMiningEnd",
-					"minecraft:is_pickaxe"
+					"minecraft:is_pickaxe",
+					"minecraft:netherite_tier",
+					"minecraft:is_tool",
+					"pfe:is_haxel"
 				]
 			},
 			"minecraft:custom_components": [

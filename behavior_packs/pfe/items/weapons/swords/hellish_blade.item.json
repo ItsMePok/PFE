@@ -16,8 +16,15 @@
 				"poke:normalMining",
 				"poke:hitEffects"
 			],
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:is_sword",
+					"minecraft:netherite_tier",
+					"pfe:sword"
+				]
+			},
 			"minecraft:damage": {
-				"value": 15
+				"value": 12
 			},
 			"minecraft:durability": {
 				"max_durability": 1800,

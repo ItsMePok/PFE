@@ -12,6 +12,14 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.amethyst_sword\n%poke_pfe.tag"
 			},
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:is_sword",
+					"minecraft:netherite_tier",
+					"pfe:sword"
+				]
+			},
+			"minecraft:can_destroy_in_creative": false,
 			"minecraft:custom_components": [
 				"poke:normalMining"
 			],
