@@ -10,7 +10,7 @@ This wiki is still a work in progress, some pages are unfinished
 
 ### Experimental Toggles: <mark style="color:yellow;">None</mark>
 
-### Lowest Supported Minecraft Version: <mark style="color:yellow;">1.21.70</mark>
+### Lowest Supported Minecraft Version: <mark style="color:yellow;">1.21.70 / 1.21.80</mark>
 
 ***
 

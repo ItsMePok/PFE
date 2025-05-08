@@ -28,12 +28,71 @@ Even if this Add-On is not installed these stats will be saved in scoreboard
 ### What can be integrated into from PFE
 
 * Giving an amor piece a tag from the PFE armors (ex: `poke_pfe:astral_armor_effects` will grant Astral's set effects when equipped
-* The world dynamic property `poke_pfe:existed`  could be used to see if PFE has existed on a world
-  *   This is a Boolean that will always be set to true
+* scriptevent `poke_pfe:enabled`&#x20;
+  * This will send true (as a string) to the scriptevent id provided in the message
 
+{% hint style="info" %}
+Example command: `/scriptevent poke_pfe:enabled poke_pfe:receive_test`
 
+This would send true (as a string) to the script event id of `poke_pfe:receive_test`
+{% endhint %}
 
+* Quests:
 
+```typescript
+/*
+Add-On Creators: You can add quests into PFE's quest system.
+
+Note: the custom quests get re-initialized each time the world starts. 
+This is to ensure that players will not get quests for Add-Ons that 
+are no longer in the world. (Quests can be added at any time after the world loads)
+
+Note x2: Quests that have been rolled not be able to be changed
+
+This is example code. This will add a Mine quest for 7x Cut Cobalt for 7x Copper Tokens:
+*/
+import { ItemStack, world } from "@minecraft/server"
+interface PFECustomQuests {
+  value: [{
+    requiredItem: {
+      item: string,
+      amount: number
+      translationString: string
+    },
+    reward: {
+      tokenAmount: number,
+      item?: ItemStack tead (MAY NOT WORK IN CUSTOM QUESTS)
+    }
+  }]
+}
+interface PFEQuestInfo {
+  requiredItem: {
+    item: string, // the identifier of the required item
+    amount: number // amount of the item the player needs in order to complete this quest
+    translationString: string // this follows the same syntax as the minecraft:display_name component
+  },
+  reward: {
+    tokenAmount: number, // number of Copper Tokens the player receives
+    item?: ItemStack // optional: an itemStack that the player would receive ins
+  }
+}
+interface PFECustomQuests {
+    value: PFEQuestInfo[]
+}
+const PFECustomMineQuestsPropertyID = `poke_pfe:custom_mine_quests`
+const PFECustomFarmQuestsPropertyID = `poke_pfe:custom_farm_quests`
+const PFECustomCraftQuestsPropertyID = `poke_pfe:custom_craft_quests`
+const PFECustomKillQuestsPropertyID = `poke_pfe:custom_kill_quests`
+
+world.afterEvents.worldInitialize.subscribe((data) => {
+  const AddedMineQuests:PFECustomQuests = {
+    value: [
+      { requiredItem: { item: `poke:cut_cobalt`, amount: 7, translationString: `%poke_pfe.cut_cobalt (%poke_pfe.tag)` }, reward: { tokenAmount: 7 } }
+    ]
+  }
+  world.getDimension(`minecraft:overworld`).runCommand(`scriptevent poke_pfe:custom_mine_quests ${JSON.stringify(AddedMineQuests)}`)
+})
+```
 
 ### How can you make your addon compatible with PFE?
 
