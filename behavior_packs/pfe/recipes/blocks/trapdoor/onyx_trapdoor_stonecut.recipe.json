@@ -1,9 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:recipe_shapeless": {
-        "tags":["stonecutter"],
-        "description": {"identifier": "poke:onyx_trapdoor_sc"},
-        "ingredients":[{"item":"poke:onyx_block"}],
-        "result":{"item": "poke:onyx_trapdoor","count": 6}
-    }
-}

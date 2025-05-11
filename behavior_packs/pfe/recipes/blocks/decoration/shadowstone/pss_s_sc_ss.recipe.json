@@ -1,9 +1,0 @@
-{
-	"format_version":"1.16.100",
-	"minecraft:recipe_shapeless":{
-		"description":{"identifier":"poke:pss_s_sc_ss"},
-		"tags":["stonecutter"],
-		"ingredients":[{"item":"poke:shadowstone"}],
-		"result":{"item":"poke:polished_shadowstone_slab","count":2}
-	}
-}

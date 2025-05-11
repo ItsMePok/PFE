@@ -1,9 +1,0 @@
-{
-	"format_version":"1.16.100",
-	"minecraft:recipe_shapeless":{
-		"description":{"identifier":"poke:void_b_w_sc_b"},
-		"tags":["stonecutter"],
-		"ingredients":[{"item":"poke:void_bricks"}],
-		"result":{"item":"poke:void_brick_wall"}
-	}
-}

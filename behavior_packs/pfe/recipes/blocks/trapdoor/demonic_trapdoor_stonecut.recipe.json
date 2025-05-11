@@ -1,9 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:recipe_shapeless": {
-        "tags":["stonecutter"],
-        "description": {"identifier": "poke:demonic_trapdoor_sc"},
-        "ingredients":[{"item":"poke:demonic_block"}],
-        "result":{"item": "poke:demonic_trapdoor","count": 6}
-    }
-}

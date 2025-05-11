@@ -1,1 +1,0 @@
-fill ~~~ ~~~ poke:scrappy_block replace ancient_debris
