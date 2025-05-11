@@ -15,7 +15,7 @@ hidden: true
 {% embed url="https://www.curseforge.com/minecraft-bedrock/addons/pfe/files/all" %}
 
 {% hint style="info" %}
-This was made for Minecraft Version: <mark style="color:yellow;">1.21.70</mark>
+This was made for Minecraft Version: <mark style="color:yellow;">1.21.80</mark>
 
 No experimental toggles are required
 {% endhint %}
