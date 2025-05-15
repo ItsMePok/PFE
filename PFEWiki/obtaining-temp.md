@@ -18,6 +18,8 @@ hidden: true
 
 ### ![](https://wiki.bedrock.dev/assets/images/concepts/emojis/hud/food.png) **Hunger Replenished**:  <a href="#hunger-replenished" id="hunger-replenished"></a>
 
+## <img src="https://minecraft.wiki/images/Strength_JE3_BE2.png?0494e" alt="Strength Effect." data-size="line"> Attack Damage: <mark style="color:yellow;">3</mark> <a href="#attack-damage" id="attack-damage"></a>
+
 ## <img src="https://minecraft.wiki/images/thumb/Enchanting_Table.gif/150px-Enchanting_Table.gif?904a7" alt="" data-size="line"> Enchanting: <a href="#enchanting" id="enchanting"></a>
 
 * <img src="https://minecraft.wiki/images/Enchanted_Book.gif?b21c4" alt="" data-size="line"> Enchantment Type:
@@ -31,7 +33,7 @@ hidden: true
 
 ### <img src="https://minecraft.wiki/images/Enchanted_Book.gif?b21c4" alt="" data-size="line"> Enchantment Type: <a href="#enchant-type" id="enchant-type"></a>
 
-## <img src="https://github.com/user-attachments/assets/dcfb5b71-f821-4bba-9e8e-0e5c924e18ca" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Epic</mark>
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark> <a href="#rarity" id="rarity"></a>
 
 ## <img src="https://minecraft.wiki/images/Shaper_Armor_Trim_Smithing_Template_JE1_BE1.png?0941a" alt="" data-size="line"> Trimmable: <mark style="color:yellow;">**Yes**</mark> <a href="#trimmable" id="trimmable"></a>
 
@@ -47,7 +49,7 @@ hidden: true
 
 ## <img src="https://minecraft.wiki/images/Emerald_JE3_BE3.png?4c5f3" alt="Emerald." data-size="line"> Trades:
 
-## <img src="https://github.com/user-attachments/assets/4ab38071-56d5-4e2e-b183-6258e6c7b4df" alt="Interact Ability." data-size="line"> Interact Ability: <a href="#interact-ability" id="interact-ability"></a>
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/InteractAbility.png?raw=true" alt="Interact Ability." data-size="line"> Interact Ability: <a href="#interact-ability" id="interact-ability"></a>
 
 ### **Interacting**:  <a href="#interacting" id="interacting"></a>
 
@@ -187,6 +189,14 @@ e
 {% hint style="info" %}
 The Demonic Allay needs to spawn holding this item for it to drop
 {% endhint %}
+{% endtab %}
+
+{% tab title="Untitled" %}
+
+
+| Item | Amount | Chance of Dropping |
+| ---- | ------ | ------------------ |
+|      | 1      | 100%               |
 {% endtab %}
 {% endtabs %}
 

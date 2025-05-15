@@ -1,12 +1,18 @@
+---
+description: 'Last updated to match: v1.2.94'
+---
+
 # Magnet (Block)
 
-<figure><img src="https://github.com/user-attachments/assets/7629a661-b301-4ef9-873e-e74353bce301" alt=""><figcaption></figcaption></figure>
+
+
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/Automation/MagnetBlock.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:magnet** <a href="#identifier" id="identifier"></a>
 
 ## <img src="https://minecraft.wiki/images/Book_and_Quill_JE2_BE2.png?2128f" alt="Book and Quill." data-size="line"> Description: <a href="#description" id="description"></a>
 
-* The <img src="https://github.com/user-attachments/assets/7629a661-b301-4ef9-873e-e74353bce301" alt="Magnet Block." data-size="line"> Magnet Block is a block that can be used to pull items either above or below it when powered with <img src="https://minecraft.wiki/images/thumb/Redstone_Dust_JE2_BE2.png/150px-Redstone_Dust_JE2_BE2.png?8cf17" alt="" data-size="line">Redstone
+* The <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/Automation/MagnetBlock.png?raw=true" alt="Magnet Block." data-size="line"> Magnet Block is a block that can be used to pull items either above or below it when powered with <img src="https://minecraft.wiki/images/thumb/Redstone_Dust_JE2_BE2.png/150px-Redstone_Dust_JE2_BE2.png?8cf17" alt="" data-size="line">Redstone
 
 ## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 64 <a href="#stack-size" id="stack-size"></a>
 
@@ -22,19 +28,17 @@
 {% tab title="First Tab" %}
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-|                                                                                                         |                                                                                                  |                                                                                                         |
-| :-----------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------: |
-|    ![Cobalt Ingot.](https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694)    |     ![Planks.](https://minecraft.wiki/images/thumb/Oak_Planks.png/150px-Oak_Planks.png?d9efa)    |    ![Cobalt Ingot.](https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694)    |
-| ![Electric Component.](https://github.com/user-attachments/assets/f95abb06-0436-484f-bc44-1a34ac7134a2) | ![Item Magnet.](https://github.com/user-attachments/assets/8c27245b-303a-4b41-9889-df0c1f36e02b) | ![Electric Component.](https://github.com/user-attachments/assets/f95abb06-0436-484f-bc44-1a34ac7134a2) |
-|    ![Cobalt Ingot.](https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694)    |   ![Receiver.](https://github.com/user-attachments/assets/d5e4412f-b092-413f-99d9-a9e09033cd29)  |    ![Cobalt Ingot.](https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694)    |
+|                                                                                                                  |                                                                                                    |                                                                                                                  |
+| :--------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------: |
+| ![Electric Component.](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/electric_component.png?raw=true) | ![Item Magnet.](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/item_magnet.png?raw=true) | ![Electric Component.](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/electric_component.png?raw=true) |
+|                 ![Redstone Dust.](https://minecraft.wiki/images/Redstone_Dust_JE2_BE2.png?8cf17)                 |      ![Smooth Stone Slab.](https://minecraft.wiki/images/Smooth_Stone_Slab_JE2_BE2.png?0a025)      |                 ![Redstone Dust.](https://minecraft.wiki/images/Redstone_Dust_JE2_BE2.png?8cf17)                 |
 
 Items:
 
-* <img src="https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694" alt="Cobalt Ingot." data-size="line"> [Cobalt Ingot](../../items/ingots/cobalt-ingot.md)
-* <img src="https://minecraft.wiki/images/thumb/Oak_Planks.png/150px-Oak_Planks.png?d9efa" alt="Planks." data-size="line"> [Planks](https://minecraft.wiki/w/Planks)
-* <img src="https://github.com/user-attachments/assets/f95abb06-0436-484f-bc44-1a34ac7134a2" alt="Electric Component." data-size="line"> [Electric Component](../../items/crafting-components/electric-component.md)
-* <img src="https://github.com/user-attachments/assets/8c27245b-303a-4b41-9889-df0c1f36e02b" alt="Item Magnet." data-size="line"> [Item Magnet](../../tools/magnets/item-magnet.md)
-* <img src="https://github.com/user-attachments/assets/d5e4412f-b092-413f-99d9-a9e09033cd29" alt="Receiver." data-size="line"> [Receiver](../../items/crafting-components/receiver.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/electric_component.png?raw=true" alt="Electric Component." data-size="line"> [Electric Component](../../items/crafting-components/electric-component.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/item_magnet.png?raw=true" alt="Item Magnet." data-size="line"> [Item Magnet](../../tools/magnets/item-magnet.md)
+* <img src="https://minecraft.wiki/images/Redstone_Dust_JE2_BE2.png?8cf17" alt="Redstone Dust." data-size="line"> [Redstone Dust](https://minecraft.wiki/w/Redstone_Dust)
+* <img src="https://minecraft.wiki/images/Smooth_Stone_Slab_JE2_BE2.png?0a025" alt="Smooth Stone Slab." data-size="line"> [Smooth Stone Slab](https://minecraft.wiki/w/Smooth_Stone_Slab)
 
 Outputs:
 
