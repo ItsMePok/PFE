@@ -38,7 +38,7 @@
       * [Oxygéne](items/cassettes/minecraft-music-cassettes/oxygene.md)
       * [Mice on Venus](items/cassettes/minecraft-music-cassettes/mice-on-venus.md)
       * [Dry Hands](items/cassettes/minecraft-music-cassettes/dry-hands.md)
-      * [Cassette: Wet Hands](items/cassettes/minecraft-music-cassettes/cassette-wet-hands.md)
+      * [Cassette: Wet Hands](items/cassettes/minecraft-music-cassettes/wet-hands.md)
       * [Clark](items/cassettes/minecraft-music-cassettes/clark.md)
       * [Sweden](items/cassettes/minecraft-music-cassettes/sweden.md)
       * [Danny](items/cassettes/minecraft-music-cassettes/danny.md)
