@@ -91,9 +91,11 @@ even if the default changes & you had not changed the settings; you will need to
 {% step %}
 ### Configure disabled features
 
-<table><thead><tr><th>Feature</th><th>Default State<select><option value="gwaK5qxnWKzC" label="Enabled" color="blue"></option><option value="kAvPOxtpwdzV" label="Disabled" color="blue"></option></select></th></tr></thead><tbody><tr><td>Quantum Teleporter <mark style="color:orange;">[?]</mark></td><td><span data-option="gwaK5qxnWKzC">Enabled</span></td></tr><tr><td>Kapow Ring <mark style="color:orange;">[?]</mark></td><td><span data-option="gwaK5qxnWKzC">Enabled</span></td></tr><tr><td>Nuke Ring <mark style="color:orange;">[?]</mark></td><td><span data-option="gwaK5qxnWKzC">Enabled</span></td></tr><tr><td><picture><source srcset="https://github.com/user-attachments/assets/d0155449-ca3c-42a0-97b9-3750cdd5e7a5" media="(prefers-color-scheme: dark)"><img src="https://github.com/user-attachments/assets/c239d81f-8290-4661-a140-45ada10d53de" alt="Sundial." data-size="line"></picture> <a href="../tools/misc/sundial.md">Sundial</a> <a data-footnote-ref href="#user-content-fn-1"><mark style="color:orange;">[?]</mark></a></td><td><span data-option="gwaK5qxnWKzC">Enabled</span></td></tr><tr><td><img src="https://github.com/user-attachments/assets/94e903b2-7c38-477c-a5aa-ac6df0f9a455" alt="Wither Spawner." data-size="line"> <a href="../mobs/bosses/wither-spawner.md">Wither Spawner</a> <a data-footnote-ref href="#user-content-fn-2"><mark style="color:orange;">[?]</mark></a></td><td><span data-option="gwaK5qxnWKzC">Enabled</span></td></tr><tr><td><img src="https://github.com/user-attachments/assets/d8bf2c01-5a2e-48d1-bee2-c0e3bda56380" alt="Bounty." data-size="line"> <a href="../items/misc/boss-event-bounty.md">Bounty</a> <a data-footnote-ref href="#user-content-fn-3"><mark style="color:orange;">[?]</mark></a></td><td><span data-option="gwaK5qxnWKzC">Enabled</span></td></tr></tbody></table>
+<table><thead><tr><th>Feature</th><th>Default State<select><option value="gwaK5qxnWKzC" label="Enabled" color="blue"></option><option value="kAvPOxtpwdzV" label="Disabled" color="blue"></option></select></th></tr></thead><tbody><tr><td>Quantum Teleporter <mark style="color:orange;">[?]</mark></td><td><span data-option="gwaK5qxnWKzC">Enabled</span></td></tr><tr><td><a href="../tools/rings/kapow-ring.md">Kapow Ring</a> <mark style="color:orange;">[?]</mark></td><td><span data-option="gwaK5qxnWKzC">Enabled</span></td></tr><tr><td>Nuke Ring <mark style="color:orange;">[?]</mark></td><td><span data-option="gwaK5qxnWKzC">Enabled</span></td></tr><tr><td><picture><source srcset="https://github.com/user-attachments/assets/d0155449-ca3c-42a0-97b9-3750cdd5e7a5" media="(prefers-color-scheme: dark)"><img src="https://github.com/user-attachments/assets/c239d81f-8290-4661-a140-45ada10d53de" alt="Sundial." data-size="line"></picture> <a href="../tools/misc/sundial.md">Sundial</a> <a data-footnote-ref href="#user-content-fn-1"><mark style="color:orange;">[?]</mark></a></td><td><span data-option="gwaK5qxnWKzC">Enabled</span></td></tr><tr><td><img src="https://github.com/user-attachments/assets/94e903b2-7c38-477c-a5aa-ac6df0f9a455" alt="Wither Spawner." data-size="line"> <a href="../mobs/bosses/wither-spawner.md">Wither Spawner</a> <a data-footnote-ref href="#user-content-fn-2"><mark style="color:orange;">[?]</mark></a></td><td><span data-option="gwaK5qxnWKzC">Enabled</span></td></tr><tr><td><img src="https://github.com/user-attachments/assets/d8bf2c01-5a2e-48d1-bee2-c0e3bda56380" alt="Bounty." data-size="line"> <a href="../items/misc/boss-event-bounty.md">Bounty</a> <a data-footnote-ref href="#user-content-fn-3"><mark style="color:orange;">[?]</mark></a></td><td><span data-option="gwaK5qxnWKzC">Enabled</span></td></tr><tr><td>Waypoint Menu</td><td><span data-option="gwaK5qxnWKzC">Enabled</span></td></tr><tr><td>Set effects <a data-footnote-ref href="#user-content-fn-4"><mark style="color:orange;">[?]</mark></a></td><td><span data-option="gwaK5qxnWKzC">Enabled</span></td></tr></tbody></table>
 {% endstep %}
 {% endstepper %}
+
+
 
 [^1]: Disabling this will prevent the sundial from changing the time
 
@@ -116,3 +118,9 @@ even if the default changes & you had not changed the settings; you will need to
 
 
     The Bounty will still be obtainable but will not function
+
+[^4]: Disabled this will prevent equipment from triggering its set effects
+
+
+
+    This only applies to things from PFE & other Add-Ons that use the system from PFE

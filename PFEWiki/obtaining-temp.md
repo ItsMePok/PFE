@@ -27,9 +27,12 @@ hidden: true
 
 ### <img src="https://minecraft.wiki/images/thumb/Anvil_(N)_JE3.png/150px-Anvil_(N)_JE3.png?d438e" alt="Anvil." data-size="line"> Repairing: <a href="#enchanting" id="enchanting"></a>
 
-* Durability:&#x20;
+* Durability: <mark style="color:yellow;">251</mark>
+* Damage Chance:
+  * Min: <mark style="color:yellow;">60%</mark>
+  * Max <mark style="color:yellow;">100%</mark>
 * Repairs with:
-  * e
+  * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/repair_core.png?raw=true" alt="Repair Core." data-size="line"> [Repair Core](items/cores/repair-core.md) <mark style="color:yellow;">(100%)</mark>
 
 ### <img src="https://minecraft.wiki/images/Enchanted_Book.gif?b21c4" alt="" data-size="line"> Enchantment Type: <a href="#enchant-type" id="enchant-type"></a>
 
