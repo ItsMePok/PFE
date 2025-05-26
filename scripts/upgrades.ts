@@ -1,10 +1,13 @@
 import { ActionFormData } from "@minecraft/server-ui"
-import { PokeGetItemFromInventory, PokeSaveProperty } from "./commonFunctions"
-import { EquipmentSlot, ItemComponentMineBlockEvent, ItemComponentUseEvent, ItemStack, Player, RawMessage } from "@minecraft/server"
+import { PokeGetItemFromInventory, PokeGetObjectById, PokeSaveProperty } from "./commonFunctions"
+import { EntityComponentTypes, EquipmentSlot, GameMode, ItemComponentMineBlockEvent, ItemComponentUseEvent, ItemStack, Player, RawMessage } from "@minecraft/server"
 export {
   PFEItemUpgradeInfo,
   PokeUpgradeUIConfig,
-  PokeUpgradeUI
+  PokeUpgradeUI,
+  PFEPersistenceCoreDefault,
+  PFEFlamingCoreDefault,
+  PFECapacityCoreDefault
 }
 interface PFEItemUpgradeInfo {
   id: string // name of the upgrade
@@ -17,7 +20,7 @@ interface PFEItemUpgradeInfo {
     default: string
     cantUpgrade: string
   }
-  upgradeName?: RawMessage
+  upgradeName?: string
 }
 interface PokeUpgradeUIConfig {
   v: number,
@@ -28,17 +31,31 @@ interface PokeUpgradeUIConfig {
 function PokeUpgradeUI(player: Player, item: ItemStack, config: PokeUpgradeUIConfig, backTo?: any) {
   let UI = new ActionFormData()
   for (let upgrade of config.upgrades) {
-    const upgradeCost = (upgrade.maxLevel) ? (upgrade.maxLevel > upgrade.level) ? undefined : (upgrade.upgradeAdditive) ? upgrade.level++ : 1 : (upgrade.upgradeAdditive) ? upgrade.level++ : 1
-    UI.button({ rawtext: [{ translate: `translation.poke.Upgrade` }, upgrade.upgradeName ?? { text: upgrade.upgradeItem }, { text: `[` }, { translate: `translation.poke.level` }, { text: `:${upgrade.level}]\n` }, { translate: `translation.poke.cost` }, { text: `: ${upgradeCost}` }, { translate: `${upgrade.upgradeItemName ?? item.typeId}` }] }, (upgradeCost && PokeGetItemFromInventory(player, undefined, upgrade.upgradeItem)) ? upgrade.icon?.default : upgrade.icon?.cantUpgrade ?? upgrade.icon?.default ?? `textures/poke/common/upgrade`)
+    const upgradeCost = (
+      (upgrade.maxLevel) ? (upgrade.maxLevel <= upgrade.level) ? Infinity
+        : (upgrade.upgradeAdditive) ? (upgrade.level) + 1
+          : 1
+        : (upgrade.upgradeAdditive) ? (upgrade.level) + 1
+          : 1
+    )
+    UI.button(
+      { translate: `%translation.poke.Upgrade ${upgrade.upgradeName ?? upgrade.upgradeItem} [%translation.poke.level:${upgrade.level}]\n%translation.poke.cost: ${upgradeCost} ${upgrade.upgradeItemName ?? item.typeId}` },
+      (upgradeCost && PokeGetItemFromInventory(player, undefined, upgrade.upgradeItem)) ? upgrade.icon?.default : upgrade.icon?.cantUpgrade ?? upgrade.icon?.default ?? `textures/poke/common/upgrade`
+    )
   }
-  UI.title({ translate: `translation.poke:ammoUIUpgradeTitle`, with: [item.nameTag ?? `poke_pfe.${item.typeId.replace(`poke:`, ``).replace(`poke_pfe:`, ``)}`] })
+  UI.title({ translate: `translation.poke:ammoUIUpgradeTitle`, with: [item.nameTag ?? `%poke_pfe.${item.typeId.replace(`poke:`, ``).replace(`poke_pfe:`, ``)}`] })
 
   UI.show(player).then(response => {
     let selection = 0
     for (let upgrade of config.upgrades) {
       if (response.selection == selection) {
-        const HasItem = PokeGetItemFromInventory(player, undefined, upgrade.upgradeItem)
-        if (HasItem) {
+        const HasItem = player.getGameMode() == GameMode.creative ? true : (Number(PokeGetItemFromInventory(player, undefined, upgrade.upgradeItem)?.length) + 0)
+        const upgradeCost = (
+          (upgrade.maxLevel) ? (upgrade.maxLevel <= upgrade.level) ? Infinity : (upgrade.upgradeAdditive) ? (upgrade.level) + 1 : 1 : (upgrade.upgradeAdditive) ? (upgrade.level) + 1 : 1
+        )
+        console.warn(upgradeCost)
+        if (HasItem && upgradeCost != Infinity) {
+          if (upgrade.id == PFEPersistenceCoreDefault.id) item.keepOnDeath = true;
           let newProperty: PFEItemUpgradeInfo = {
             id: upgrade.id,
             icon: upgrade.icon,
@@ -49,7 +66,11 @@ function PokeUpgradeUI(player: Player, item: ItemStack, config: PokeUpgradeUICon
             upgradeItemName: upgrade.upgradeItemName,
             upgradeAdditive: upgrade.upgradeAdditive
           }
-          PokeSaveProperty(config.dynamicProperty, item, JSON.stringify(config.upgrades.filter((oldUpgrade) => oldUpgrade.id != upgrade.id).concat(newProperty)), player, EquipmentSlot.Mainhand)
+          config.upgrades = config.upgrades.filter((oldUpgrade) => oldUpgrade.id != upgrade.id).concat(newProperty)
+          if (player.getGameMode() != GameMode.creative && upgradeCost != Infinity) {
+            player.runCommand(`clear @s ${upgrade.upgradeItem} 0 ${upgradeCost}`)
+          }
+          PokeSaveProperty(config.dynamicProperty, item, JSON.stringify(config), player, EquipmentSlot.Mainhand)
           return;
         }
       } else selection++; continue
@@ -94,8 +115,8 @@ class PFEVeinMining {
           maxLevel: 5,
           upgradeAdditive: false,
           upgradeItem: `poke:upgrade_core`,
-          upgradeItemName: `UpgradeCore`,
-          upgradeName: { translate: `poke_pfe.upgrade_core` },
+          upgradeItemName: `%poke_pfe.upgrade_core`,
+          upgradeName: `%poke_pfe.upgrade_core`,
           icon: {
             default: `textures/poke/pfe/upgrade_core`,
             cantUpgrade: `textures/poke/pfe/close`
@@ -195,4 +216,43 @@ class PFEVeinMining {
       }
     }
   }
+}
+
+function PersistenceUpgrade(item: ItemStack, player: Player, upgradeConfig: PokeUpgradeUIConfig) {
+  item.keepOnDeath = true
+  let persistenceUpgrade = PokeGetObjectById(upgradeConfig.upgrades, `poke_pfe:persistence`)
+  upgradeConfig.upgrades.at(persistenceUpgrade!.position)!.level += 1
+  item.setDynamicProperty(upgradeConfig.dynamicProperty, JSON.stringify(upgradeConfig))
+  player.getComponent(EntityComponentTypes.Equippable)?.setEquipment(EquipmentSlot.Mainhand, item)
+}
+
+const PFEPersistenceCoreDefault: PFEItemUpgradeInfo = {
+  id: "pfe:persistence",
+  upgradeItem: `poke_pfe:persistence_core`,
+  icon: { default: `textures/poke/pfe/persistence_core`, cantUpgrade: `textures/poke/pfe/persistence_core_gs` },
+  upgradeName: `%translation.poke_pfe.persistence`,
+  upgradeItemName: `%poke_pfe.persistence_core`,
+  upgradeAdditive: false,
+  level: 0,
+  maxLevel: 1
+}
+const PFEFlamingCoreDefault: PFEItemUpgradeInfo = {
+  id: "pfe:flaming",
+  upgradeItem: `poke_pfe:flaming_core`,
+  icon: { default: `textures/poke/pfe/flaming_core`, cantUpgrade: `textures/poke/pfe/flaming_core_gs` },
+  upgradeName: `%translation.poke_pfe.flaming`,
+  upgradeItemName: `%poke_pfe.flaming_core`,
+  upgradeAdditive: false,
+  level: 0,
+  maxLevel: 1
+}
+const PFECapacityCoreDefault: PFEItemUpgradeInfo = {
+  id: "pfe:capacity",
+  upgradeItem: `poke:capacity_core`,
+  icon: { default: `textures/poke/pfe/capacity_core`, cantUpgrade: `textures/poke/pfe/capacity_core_gs` },
+  upgradeName: `%translation.poke_pfe.capacity`,
+  upgradeItemName: `%poke_pfe.capacity_core`,
+  upgradeAdditive: true,
+  level: 1,
+  maxLevel: undefined
 }

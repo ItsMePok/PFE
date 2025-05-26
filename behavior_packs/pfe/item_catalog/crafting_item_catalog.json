@@ -946,12 +946,61 @@
           },
           {
             "group_identifier": {
+              "name": "poke:itemGroup.name.cosmetic",
+              "icon": "poke:goggles"
+            },
+            "items": [
+              "poke:goggles",
+              "poke:crown_helmet",
+              "poke:top_hat",
+              "poke:trash_lid",
+              "poke:cone_cosmetic",
+              "poke:cosmetic_cosmetic",
+              "poke:grad_cap",
+              "poke:fungal_hat",
+              "poke:flower_lilly_hat",
+              "poke:festive_helmet",
+              "poke:armadillo_hat",
+              "poke:carved_melon_mask",
+              "poke:pirate_hat",
+              "poke:party_hat",
+              "poke:viking_helmet",
+              "poke:pok_bot_cosmetic",
+              "poke:apollo_the_snake",
+              "poke:little_dapper_fit",
+              "poke:dapper_fit",
+              "poke:big_dapper_fit",
+              "poke:caged_soul",
+              "poke:crab_pal",
+              "poke:end_crystal_hat",
+              "poke:ferret",
+              "poke:fishbowl",
+              "poke:ghost",
+              "poke:halo",
+              "poke:horns",
+              "poke:maxwell",
+              "poke:mlg_glasses",
+              "poke:mr_duck",
+              "poke:necromancer_crown",
+              "poke:pickaxe_hat",
+              "poke:poppy_hat",
+              "poke:steampunk_hat",
+              "poke:sword_hat",
+              "poke:night_vision_goggles",
+              "poke:carved_melon_helmet",
+              "poke_pfe:listener_antennas"
+            ]
+          },
+          {
+            "group_identifier": {
               "name": "poke:itemGroup.name.battleaxe",
               "icon": "poke:wood_battleaxe"
             },
             "items": [
               "poke:wood_battleaxe",
               "poke:stone_battleaxe",
+              "poke_pfe:copper_battleaxe",
+              "poke_pfe:redstone_battleaxe",
               "poke:iron_battleaxe",
               "poke:gold_battleaxe",
               "poke:emerald_battleaxe",
@@ -972,7 +1021,8 @@
               "poke:void_battleaxe",
               "poke:astral_battleaxe",
               "poke:death_battleaxe",
-              "poke:nebula_battleaxe"
+              "poke:nebula_battleaxe",
+              "poke_pfe:banished_battleaxe"
             ]
           },
           {
@@ -981,6 +1031,10 @@
               "icon": "poke:iron_scythe"
             },
             "items": [
+              // "poke_pfe:wooden_scythe",
+              // "poke_pfe:stone_scythe",
+              // "poke_pfe:copper_scythe",
+              // "poke_pfe:redstone_scythe",
               "poke:iron_scythe",
               "poke:gold_scythe",
               "poke:emerald_scythe",
@@ -1002,6 +1056,41 @@
               "poke:astral_scythe",
               "poke:death_scythe",
               "poke:nebula_scythe"
+              //, "poke_pfe:banished_scythe"
+            ]
+          },
+          {
+            "group_identifier": {
+              "name": "poke:itemGroup.name.claymore",
+              "icon": "poke_pfe:wood_claymore"
+            },
+            "items": [
+              "poke_pfe:wood_claymore",
+              "poke_pfe:stone_claymore",
+              "poke_pfe:copper_claymore",
+              "poke_pfe:redstone_claymore",
+              "poke_pfe:iron_claymore",
+              "poke_pfe:gold_claymore",
+              "poke_pfe:emerald_claymore",
+              "poke_pfe:diamond_claymore",
+              "poke_pfe:netherite_claymore",
+              "poke_pfe:amethyst_claymore",
+              "poke_pfe:onyx_claymore",
+              "poke_pfe:holy_claymore",
+              "poke_pfe:hellish_claymore",
+              "poke_pfe:godly_claymore",
+              "poke_pfe:demonic_claymore",
+              "poke_pfe:medic_claymore",
+              "poke_pfe:molten_claymore",
+              "poke_pfe:galaxy_claymore",
+              "poke_pfe:void_claymore",
+              "poke_pfe:astral_claymore",
+              "poke_pfe:death_claymore",
+              "poke_pfe:nebula_claymore",
+              "poke_pfe:cobalt_claymore",
+              "poke_pfe:shade_claymore",
+              "poke_pfe:radium_claymore",
+              "poke_pfe:banished_claymore"
             ]
           },
           {
@@ -1012,6 +1101,8 @@
             "items": [
               "poke:wooden_haxel",
               "poke:stone_haxel",
+              //"poke_pfe:copper_haxel",
+              //"poke_pfe:redstone_haxel",
               "poke:iron_haxel",
               "poke:gold_haxel",
               "poke:emerald_haxel",
@@ -1067,53 +1158,6 @@
               "poke:void_upgrader",
               "poke:astral_upgrader",
               "poke:nebula_upgrader"
-            ]
-          },
-          {
-            "group_identifier": {
-              "name": "poke:itemGroup.name.cosmetic",
-              "icon": "poke:goggles"
-            },
-            "items": [
-              "poke:goggles",
-              "poke:crown_helmet",
-              "poke:top_hat",
-              "poke:trash_lid",
-              "poke:cone_cosmetic",
-              "poke:cosmetic_cosmetic",
-              "poke:grad_cap",
-              "poke:fungal_hat",
-              "poke:flower_lilly_hat",
-              "poke:festive_helmet",
-              "poke:armadillo_hat",
-              "poke:carved_melon_mask",
-              "poke:pirate_hat",
-              "poke:party_hat",
-              "poke:viking_helmet",
-              "poke:pok_bot_cosmetic",
-              "poke:apollo_the_snake",
-              "poke:little_dapper_fit",
-              "poke:dapper_fit",
-              "poke:big_dapper_fit",
-              "poke:caged_soul",
-              "poke:crab_pal",
-              "poke:end_crystal_hat",
-              "poke:ferret",
-              "poke:fishbowl",
-              "poke:ghost",
-              "poke:halo",
-              "poke:horns",
-              "poke:maxwell",
-              "poke:mlg_glasses",
-              "poke:mr_duck",
-              "poke:necromancer_crown",
-              "poke:pickaxe_hat",
-              "poke:poppy_hat",
-              "poke:steampunk_hat",
-              "poke:sword_hat",
-              "poke:night_vision_goggles",
-              "poke:carved_melon_helmet",
-              "poke_pfe:listener_antennas"
             ]
           },
           {
@@ -1270,8 +1314,8 @@
             },
             "items": [
               "poke:spell_crafter",
-              "poke:dye_unmixer",
-              "poke:pfe_crafting_table"
+              "poke:dye_unmixer"
+              //,"poke:pfe_crafting_table"
             ]
           },
           {
@@ -1553,12 +1597,13 @@
             },
             "items": [
               "poke:upgrade_core",
-              "poke:diamond_upgrade_core",
-              "poke:platinum_upgrade_core",
               "poke:repair_core",
               "poke:capacity_core",
-              //"poke:bursting_core",
+              "poke:diamond_upgrade_core",
               "poke_pfe:flaming_core",
+              "poke:platinum_upgrade_core",
+              "poke_pfe:persistence_core",
+              //"poke:bursting_core",
               //"poke:rapid_fire_core",
               "poke:magnet_core",
               "poke:nebula_core"

@@ -1,0 +1,54 @@
+{
+	"format_version": "1.21.70",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke_pfe:godly_claymore"
+		},
+		"group": "claymore",
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" B ",
+			"IBI",
+			"USC"
+		],
+		"unlock": [
+			{
+				"item": "poke:godly_ingot"
+			},
+			{
+				"item": "poke:godly_block"
+			},
+			{
+				"item": "poke:godly_stick"
+			},
+			{
+				"item": "poke:diamond_upgrade_core"
+			},
+			{
+				"item": "poke_pfe:holy_claymore"
+			}
+		],
+		"key": {
+			"I": {
+				"item": "poke:godly_ingot"
+			},
+			"B": {
+				"item": "poke:godly_block"
+			},
+			"S": {
+				"item": "poke:godly_stick"
+			},
+			"U": {
+				"item": "poke:diamond_upgrade_core"
+			},
+			"C": {
+				"item": "poke_pfe:holy_claymore"
+			}
+		},
+		"result": {
+			"item": "poke_pfe:godly_claymore"
+		}
+	}
+}

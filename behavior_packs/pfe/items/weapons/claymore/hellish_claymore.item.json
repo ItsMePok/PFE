@@ -1,0 +1,83 @@
+{
+	"format_version": "1.21.70",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke_pfe:hellish_claymore",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:display_name": {
+				"value": "%poke_pfe.hellish_claymore\n%poke_pfe.tag"
+			},
+			"minecraft:rarity": "common",
+			"minecraft:custom_components": [
+				"poke:normalMining"
+			],
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:is_sword",
+					"minecraft:netherite_tier",
+					"pfe:is_claymore",
+					"pfe:hellish_tier"
+				]
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:icon": "poke_pfe_hellish_claymore",
+			"minecraft:damage": {
+				"value": 18
+			},
+			"minecraft:can_destroy_in_creative": false,
+			"minecraft:hand_equipped": true,
+			"minecraft:durability": {
+				"max_durability": 2025,
+				"damage_chance": {
+					"max": 100,
+					"min": 60
+				}
+			},
+			"minecraft:digger": {
+				"destroy_speeds": [
+					{
+						"block": {
+							"tags": "query.any_tag( 'minecraft:is_sword_item_destructible','pfe:is_claymore_item_destructible' )"
+						},
+						"speed": 18
+					},
+					{
+						"block": "minecraft:bamboo_sapling",
+						"speed": 18
+					},
+					{
+						"block": "minecraft:bamboo",
+						"speed": 18
+					}
+				]
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"poke:repair_core",
+							"poke:hellish_block"
+						],
+						"repair_amount": "query.max_durability"
+					},
+					{
+						"items": [
+							"poke:hellish_ingot"
+						],
+						"repair_amount": "query.max_durability*0.25"
+					},
+					{
+						"items": [
+							"poke:hellish_nugget"
+						],
+						"repair_amount": "query.max_durability*0.028"
+					}
+				]
+			}
+		}
+	}
+}

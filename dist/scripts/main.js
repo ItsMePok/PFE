@@ -548,7 +548,7 @@ var require_lib = __commonJS({
 });
 
 // scripts/main.ts
-import { system as system4, world as world8, EquipmentSlot as EquipmentSlot7, GameMode as GameMode4, EntityComponentTypes as EntityComponentTypes7, ItemComponentTypes as ItemComponentTypes5, ItemStack as ItemStack7, Direction as Direction2, MinecraftDimensionTypes as MinecraftDimensionTypes2 } from "@minecraft/server";
+import { system as system4, world as world9, EquipmentSlot as EquipmentSlot8, GameMode as GameMode5, EntityComponentTypes as EntityComponentTypes8, ItemComponentTypes as ItemComponentTypes5, ItemStack as ItemStack8, Direction as Direction2, MinecraftDimensionTypes as MinecraftDimensionTypes2 } from "@minecraft/server";
 
 // node_modules/@minecraft/vanilla-data/lib/index.js
 var MinecraftBiomeTypes = ((MinecraftBiomeTypes2) => {
@@ -5405,42 +5405,144 @@ function PokeTimeDeleteEvent(player, event) {
 }
 
 // scripts/boltbow.ts
-import { EntityComponentTypes as EntityComponentTypes3, EquipmentSlot as EquipmentSlot3, GameMode as GameMode3, ItemComponentTypes as ItemComponentTypes3 } from "@minecraft/server";
+import { EntityComponentTypes as EntityComponentTypes4, EquipmentSlot as EquipmentSlot4, GameMode as GameMode4, ItemComponentTypes as ItemComponentTypes3 } from "@minecraft/server";
+import { ActionFormData as ActionFormData6 } from "@minecraft/server-ui";
+
+// scripts/upgrades.ts
 import { ActionFormData as ActionFormData5 } from "@minecraft/server-ui";
-var PFEAmmoProperty = `poke:ammo`;
-var PFEAmmoStorageVersion = 2;
-var PFEAmmoStorageDefault = [
-  {
-    v: PFEAmmoStorageVersion,
+import { EntityComponentTypes as EntityComponentTypes3, EquipmentSlot as EquipmentSlot3, GameMode as GameMode3 } from "@minecraft/server";
+function PokeUpgradeUI(player, item, config, backTo) {
+  let UI = new ActionFormData5();
+  for (let upgrade of config.upgrades) {
+    const upgradeCost = upgrade.maxLevel ? upgrade.maxLevel <= upgrade.level ? Infinity : upgrade.upgradeAdditive ? upgrade.level + 1 : 1 : upgrade.upgradeAdditive ? upgrade.level + 1 : 1;
+    UI.button(
+      { translate: `%translation.poke.Upgrade ${upgrade.upgradeName ?? upgrade.upgradeItem} [%translation.poke.level:${upgrade.level}]
+%translation.poke.cost: ${upgradeCost} ${upgrade.upgradeItemName ?? item.typeId}` },
+      upgradeCost && PokeGetItemFromInventory(player, void 0, upgrade.upgradeItem) ? upgrade.icon?.default : upgrade.icon?.cantUpgrade ?? upgrade.icon?.default ?? `textures/poke/common/upgrade`
+    );
+  }
+  UI.title({ translate: `translation.poke:ammoUIUpgradeTitle`, with: [item.nameTag ?? `%poke_pfe.${item.typeId.replace(`poke:`, ``).replace(`poke_pfe:`, ``)}`] });
+  UI.show(player).then((response) => {
+    let selection = 0;
+    for (let upgrade of config.upgrades) {
+      if (response.selection == selection) {
+        const HasItem = player.getGameMode() == GameMode3.creative ? true : Number(PokeGetItemFromInventory(player, void 0, upgrade.upgradeItem)?.length) + 0;
+        const upgradeCost = upgrade.maxLevel ? upgrade.maxLevel <= upgrade.level ? Infinity : upgrade.upgradeAdditive ? upgrade.level + 1 : 1 : upgrade.upgradeAdditive ? upgrade.level + 1 : 1;
+        console.warn(upgradeCost);
+        if (HasItem && upgradeCost != Infinity) {
+          if (upgrade.id == PFEPersistenceCoreDefault.id)
+            item.keepOnDeath = true;
+          let newProperty = {
+            id: upgrade.id,
+            icon: upgrade.icon,
+            level: upgrade.level + 1,
+            upgradeName: upgrade.upgradeName,
+            maxLevel: upgrade.maxLevel,
+            upgradeItem: upgrade.upgradeItem,
+            upgradeItemName: upgrade.upgradeItemName,
+            upgradeAdditive: upgrade.upgradeAdditive
+          };
+          config.upgrades = config.upgrades.filter((oldUpgrade) => oldUpgrade.id != upgrade.id).concat(newProperty);
+          if (player.getGameMode() != GameMode3.creative && upgradeCost != Infinity) {
+            player.runCommand(`clear @s ${upgrade.upgradeItem} 0 ${upgradeCost}`);
+          }
+          PokeSaveProperty(config.dynamicProperty, item, JSON.stringify(config), player, EquipmentSlot3.Mainhand);
+          return;
+        }
+      } else
+        selection++;
+      continue;
+    }
+    if (response.canceled || response.selection == selection) {
+      backTo;
+      return;
+    }
+  });
+}
+var PFEPersistenceCoreDefault = {
+  id: "pfe:persistence",
+  upgradeItem: `poke_pfe:persistence_core`,
+  icon: { default: `textures/poke/pfe/persistence_core`, cantUpgrade: `textures/poke/pfe/persistence_core_gs` },
+  upgradeName: `%translation.poke_pfe.persistence`,
+  upgradeItemName: `%poke_pfe.persistence_core`,
+  upgradeAdditive: false,
+  level: 0,
+  maxLevel: 1
+};
+var PFEFlamingCoreDefault = {
+  id: "pfe:flaming",
+  upgradeItem: `poke_pfe:flaming_core`,
+  icon: { default: `textures/poke/pfe/flaming_core`, cantUpgrade: `textures/poke/pfe/flaming_core_gs` },
+  upgradeName: `%translation.poke_pfe.flaming`,
+  upgradeItemName: `%poke_pfe.flaming_core`,
+  upgradeAdditive: false,
+  level: 0,
+  maxLevel: 1
+};
+var PFECapacityCoreDefault = {
+  id: "pfe:capacity",
+  upgradeItem: `poke:capacity_core`,
+  icon: { default: `textures/poke/pfe/capacity_core`, cantUpgrade: `textures/poke/pfe/capacity_core_gs` },
+  upgradeName: `%translation.poke_pfe.capacity`,
+  upgradeItemName: `%poke_pfe.capacity_core`,
+  upgradeAdditive: true,
+  level: 1,
+  maxLevel: void 0
+};
+
+// scripts/boltbow.ts
+var PFEBoltBowDynamicPropertyID = `poke_pfe:boltbow`;
+var PFEBoltBowVersion = 3;
+var PFEBoltBowDefault = {
+  v: PFEBoltBowVersion,
+  id: "poke_pfe:boltbow",
+  dynamicProperty: PFEBoltBowDynamicPropertyID,
+  projectile: {
     max: 32,
     amount: 16,
     entityId: MinecraftEntityTypes.Arrow,
-    id: MinecraftItemTypes.Arrow,
-    upgrades: [
-      {
-        id: "pfe:capacity",
-        level: 1,
-        maxLevel: void 0
-      },
-      {
-        id: "pfe:flaming",
-        level: 0,
-        maxLevel: 1
-      }
-    ]
-  }
-];
+    id: MinecraftItemTypes.Arrow
+  },
+  upgrades: [
+    PFECapacityCoreDefault,
+    PFEFlamingCoreDefault,
+    PFEPersistenceCoreDefault
+  ]
+};
 var PFEBoltBowsComponent = class {
   onUse(data) {
-    if (data.itemStack == void 0)
+    if (!data.itemStack)
       return;
     if (data.source.isSneaking) {
       PFEAmmoManagementMainMenuUI(data.itemStack, data.source);
       return;
-    } else if (typeof data.itemStack.getDynamicProperty(PFEAmmoProperty) != "string") {
-      PokeSaveProperty(PFEAmmoProperty, data.itemStack, JSON.stringify(PFEAmmoStorageDefault), data.source);
     }
-    let ammoComponent = JSON.parse(data.itemStack.getDynamicProperty(PFEAmmoProperty).toString()).at(0);
+    console.warn(`Dyn: ${data.itemStack.getDynamicProperty(PFEBoltBowDynamicPropertyID)}`);
+    let ammoComponent = PFEBoltBowDefault;
+    if (typeof data.itemStack.getDynamicProperty(PFEBoltBowDynamicPropertyID) != "string") {
+      PokeSaveProperty(PFEBoltBowDynamicPropertyID, data.itemStack, JSON.stringify(PFEBoltBowDefault), data.source);
+    } else
+      ammoComponent = JSON.parse(data.itemStack.getDynamicProperty(PFEBoltBowDynamicPropertyID).toString());
+    if (!ammoComponent.v || ammoComponent.v <= 2) {
+      let newProperty = [];
+      for (let upgrade of ammoComponent.upgrades) {
+        let upgradeDefault = upgrade.id == PFEFlamingCoreDefault.id ? PFEFlamingCoreDefault : upgrade.id == PFECapacityCoreDefault.id ? PFECapacityCoreDefault : upgrade.id == PFEPersistenceCoreDefault.id ? PFEPersistenceCoreDefault : void 0;
+        newProperty.concat([{
+          id: upgrade.id,
+          level: upgrade.level + 1,
+          maxLevel: upgrade.maxLevel,
+          icon: upgrade.icon ?? upgradeDefault?.icon,
+          upgradeAdditive: upgrade.upgradeAdditive ?? upgradeDefault?.upgradeAdditive,
+          upgradeItem: upgrade.upgradeItem ?? upgradeDefault?.upgradeItem,
+          upgradeItemName: upgrade.upgradeItemName ?? upgradeDefault?.upgradeItemName,
+          upgradeName: upgrade.upgradeName ?? upgradeDefault?.upgradeName
+        }]);
+      }
+      if (!(ammoComponent.upgrades.filter((upgrade) => upgrade.id == PFEPersistenceCoreDefault.id).length == 1))
+        newProperty.concat([PFEPersistenceCoreDefault]);
+      ammoComponent.upgrades = newProperty;
+      PokeSaveProperty(PFEBoltBowDynamicPropertyID, data.itemStack, JSON.stringify(ammoComponent), data.source);
+    }
     const cPlayers = data.source.dimension.getPlayers({ excludeNames: ["" + data.source.name] });
     for (var i = cPlayers.length; i > 0; i--) {
       data.source.playAnimation("animation.poke_pfe.humanoid.boltbow_hold_3p", { blendOutTime: 0.5, stopExpression: `!q.is_item_name_any('slot.weapon.mainhand','${data.itemStack.typeId}')`, players: [cPlayers[i - 1].name] });
@@ -5452,10 +5554,12 @@ var PFEBoltBowsComponent = class {
         return;
     }
     let delay = 1;
-    if (ammoComponent.amount >= 1) {
+    if (ammoComponent.projectile.amount >= 1) {
       data.source.playAnimation(`animation.poke_pfe.boltbow.use`);
-      let equippableComponent = data.source.getComponent(EntityComponentTypes3.Equippable);
-      if (equippableComponent.getEquipmentSlot(EquipmentSlot3.Mainhand).getItem()?.typeId != data.itemStack?.typeId || equippableComponent.getEquipmentSlot(EquipmentSlot3.Mainhand).getDynamicProperty(PFEAmmoProperty) != JSON.stringify([ammoComponent]))
+      let equippableComponent = data.source.getComponent(EntityComponentTypes4.Equippable);
+      if (!equippableComponent)
+        return;
+      if (equippableComponent.getEquipmentSlot(EquipmentSlot4.Mainhand).getItem()?.typeId != data.itemStack?.typeId || equippableComponent.getEquipmentSlot(EquipmentSlot4.Mainhand).getDynamicProperty(PFEBoltBowDynamicPropertyID) != JSON.stringify(ammoComponent))
         return;
       PokeShoot(data.source, ammoComponent, data.itemStack, delay);
       data.source.setDynamicProperty(`poke:isUsingItem`, true);
@@ -5463,51 +5567,42 @@ var PFEBoltBowsComponent = class {
       data.source.dimension.playSound(`poke.boltbow.noAmmo`, data.source.location);
     }
     return;
-    return;
   }
 };
 function PokeShoot(player, ammoComponent, item, delay) {
-  if (!item)
-    return;
-  if (player.getGameMode() != GameMode3.creative) {
-    ammoComponent.amount = ammoComponent.amount - 1;
+  if (player.getGameMode() != GameMode4.creative) {
+    ammoComponent.projectile.amount = ammoComponent.projectile.amount - 1;
   }
-  item.setDynamicProperty(PFEAmmoProperty, JSON.stringify([ammoComponent]));
+  item.setDynamicProperty(PFEBoltBowDynamicPropertyID, JSON.stringify(ammoComponent));
   const headLocate = player.getHeadLocation();
   const angle = player.getViewDirection();
-  const projEntity = player.dimension.spawnEntity(ammoComponent.entityId, { x: headLocate.x + angle.x * 2, y: headLocate.y - 0.25 + angle.y * 2, z: headLocate.z + angle.z * 2 });
-  const projComp = projEntity.getComponent(EntityComponentTypes3.Projectile);
-  if (ammoComponent.amount > 3) {
-    player.playSound(`random.bow`);
-  } else if (ammoComponent.amount == 3) {
-    player.playSound(`random.bow`, { pitch: 1.05 });
-  } else if (ammoComponent.amount == 2) {
-    player.playSound(`random.bow`, { pitch: 1.15 });
-  } else if (ammoComponent.amount == 1) {
-    player.playSound(`random.bow`, { pitch: 1.25 });
-  }
+  const projEntity = player.dimension.spawnEntity(ammoComponent.projectile.entityId, { x: headLocate.x + angle.x * 2, y: headLocate.y - 0.25 + angle.y * 2, z: headLocate.z + angle.z * 2 });
+  const projComp = projEntity.getComponent(EntityComponentTypes4.Projectile);
+  if (!projComp)
+    return;
+  player.playSound(`random.bow`, { pitch: ammoComponent.projectile.amount > 3 ? void 0 : ammoComponent.projectile.amount == 3 ? 1.05 : ammoComponent.projectile.amount == 2 ? 1.15 : ammoComponent.projectile.amount == 1 ? 1.25 : void 0 });
   projComp.catchFireOnHurt = PokeGetObjectById(ammoComponent.upgrades, `pfe:flaming`)?.value.level > 0;
   projComp.owner = player;
   projComp.shoot(angle, { uncertainty: 1e-3 });
-  if (PokeDamageItemUB(item, void 0, player, EquipmentSlot3.Mainhand)?.broke) {
-    player.runCommand(`give @s ${ammoComponent.id} ${ammoComponent.amount} 0`);
+  if (PokeDamageItemUB(item, void 0, player, EquipmentSlot4.Mainhand)?.broke) {
+    player.runCommand(`give @s ${ammoComponent.projectile.id} ${ammoComponent.projectile.amount} 0`);
   }
 }
 function PFEAmmoManagementMainMenuUI(item, player) {
-  let UI = new ActionFormData5();
+  let UI = new ActionFormData6();
   UI.title({ translate: `translation.poke:ammoUIMainMenuTitle`, with: { rawtext: [{ translate: `poke_pfe.${item.typeId.substring(5)}` }] } });
-  if (typeof item.getDynamicProperty(PFEAmmoProperty) != "string") {
-    PokeSaveProperty(PFEAmmoProperty, item, JSON.stringify(PFEAmmoStorageDefault), player);
+  if (typeof item.getDynamicProperty(PFEBoltBowDynamicPropertyID) != "string") {
+    PokeSaveProperty(PFEBoltBowDynamicPropertyID, item, JSON.stringify(PFEBoltBowDefault), player);
   }
-  let ammoComponent = JSON.parse(item.getDynamicProperty(PFEAmmoProperty).toString()).at(0);
-  UI.button({ translate: `translation.poke:ammoUIQuickReload`, with: { rawtext: [{ text: `${ammoComponent.amount}` }, { text: `${ammoComponent.max}` }] } }, `textures/poke/common/ammoQuickReload`);
+  let boltBowComponent = JSON.parse(item.getDynamicProperty(PFEBoltBowDynamicPropertyID).toString());
+  UI.button({ translate: `translation.poke:ammoUIQuickReload`, with: { rawtext: [{ text: `${boltBowComponent.projectile.amount}` }, { text: `${(boltBowComponent.upgrades.filter((upgrade) => upgrade.id == PFECapacityCoreDefault.id).at(0)?.level ?? 1) * 16}` }] } }, `textures/poke/common/ammoQuickReload`);
   UI.button({ translate: `translation.poke:ammoUIAddAmmo` }, `textures/poke/common/ammoReload`);
   UI.button({ translate: `translation.poke:ammoUIUpgrade` }, `textures/poke/common/upgrade`);
   UI.button({ translate: `translation.poke:bossEventClose` }, `textures/poke/common/close`);
   UI.show(player).then((response) => {
     let selection = 0;
     if (response.selection == selection) {
-      PFEQuickReload(ammoComponent, item, player);
+      PFEQuickReload(boltBowComponent, item, player);
       return;
     } else
       selection++;
@@ -5517,7 +5612,7 @@ function PFEAmmoManagementMainMenuUI(item, player) {
     } else
       selection++;
     if (response.selection == selection) {
-      PFEAmmoUpgrade(player, item);
+      PokeUpgradeUI(player, item, boltBowComponent, PFEAmmoManagementMainMenuUI(item, player));
       return;
     } else
       selection++;
@@ -5527,10 +5622,10 @@ function PFEAmmoManagementMainMenuUI(item, player) {
   });
 }
 function PFEAmmoManagementAddAmmoUI(item, player) {
-  let UI = new ActionFormData5();
+  let UI = new ActionFormData6();
   let allowedAmmo = [`minecraft:arrow`, `poke:galaxy_arrow`, `poke:holy_arrow`, `poke:hellish_arrow`, `poke:void_arrow`, `poke:volt_arrow`];
   UI.title({ translate: `translation.poke:ammoUIMainMenuTitle` });
-  let ammoComponent = JSON.parse(item.getDynamicProperty(PFEAmmoProperty).toString()).at(0);
+  let ammoComponent = JSON.parse(item.getDynamicProperty(PFEBoltBowDynamicPropertyID).toString());
   let buttonTotal = 0;
   let allItems = [];
   for (let i = allowedAmmo.length - 1; i > -1; i--) {
@@ -5564,52 +5659,64 @@ function PFEAmmoManagementAddAmmoUI(item, player) {
           PokeErrorScreen(player, void 0, PFEAmmoManagementAddAmmoUI(item, player));
           return;
         }
-        if (ammoComponent.id != selectedItem.typeId) {
-          let newProperty = [{
-            v: PFEAmmoStorageVersion,
-            amount: selectedItem.amount,
-            max: ammoComponent.max,
-            entityId: selectedItem.typeId,
-            id: selectedItem.typeId,
+        if (ammoComponent.projectile.id != selectedItem.typeId) {
+          let newProperty = {
+            v: PFEBoltBowVersion,
+            dynamicProperty: ammoComponent.dynamicProperty,
+            projectile: {
+              amount: selectedItem.amount,
+              max: ammoComponent.projectile.max,
+              id: selectedItem.typeId,
+              entityId: selectedItem.typeId
+            },
+            id: ammoComponent.id,
             upgrades: ammoComponent.upgrades
-          }];
-          if (!PokeSaveProperty(PFEAmmoProperty, item, JSON.stringify(newProperty), player)) {
+          };
+          if (!PokeSaveProperty(PFEBoltBowDynamicPropertyID, item, JSON.stringify(newProperty), player)) {
             PokeErrorScreen(player, { text: `Unable to save new ammo type` }, PFEAmmoManagementAddAmmoUI(item, player));
             return;
           }
-          player.runCommand(`give @s ${ammoComponent.id} ${ammoComponent.amount}`);
+          player.runCommand(`give @s ${ammoComponent.projectile.id} ${ammoComponent.projectile.amount}`);
           player.runCommand(`clear @s ${selectedItem.typeId} -1 ${selectedItem.amount}`);
         } else {
-          if (!ammoComponent.max) {
-            let newProperty2 = [{
-              v: PFEAmmoStorageVersion,
-              amount: ammoComponent.amount + selectedItem.amount,
-              max: ammoComponent.max,
-              entityId: ammoComponent.entityId,
+          if (!ammoComponent.projectile.max) {
+            let newProperty2 = {
+              v: PFEBoltBowVersion,
+              dynamicProperty: ammoComponent.dynamicProperty,
+              projectile: {
+                amount: ammoComponent.projectile.amount + selectedItem.amount,
+                max: ammoComponent.projectile.max,
+                id: ammoComponent.projectile.id,
+                entityId: ammoComponent.projectile.entityId
+              },
               id: ammoComponent.id,
               upgrades: ammoComponent.upgrades
-            }];
-            if (!PokeSaveProperty(PFEAmmoProperty, item, JSON.stringify(newProperty2), player)) {
+            };
+            if (!PokeSaveProperty(PFEBoltBowDynamicPropertyID, item, JSON.stringify(newProperty2), player)) {
               PokeErrorScreen(player, { text: `Unable to save new ammo amount` }, PFEAmmoManagementAddAmmoUI(item, player));
               return;
             }
             player.runCommand(`clear @s ${selectedItem.typeId} -1 ${selectedItem.amount}`);
             return;
           }
-          let maxRemaining = ammoComponent.max - ammoComponent.amount;
+          let maxRemaining = ammoComponent.projectile.max - ammoComponent.projectile.amount;
           let takeAmount = selectedItem.amount;
           if (maxRemaining < selectedItem.amount) {
             takeAmount = maxRemaining;
           }
-          let newProperty = [{
-            v: PFEAmmoStorageVersion,
-            amount: ammoComponent.amount + takeAmount,
-            max: ammoComponent.max,
-            entityId: ammoComponent.entityId,
+          let newProperty = {
+            v: PFEBoltBowVersion,
+            dynamicProperty: ammoComponent.dynamicProperty,
+            projectile: {
+              amount: ammoComponent.projectile.amount + takeAmount,
+              max: ammoComponent.projectile.max,
+              id: ammoComponent.projectile.id,
+              entityId: ammoComponent.projectile.entityId
+            },
             id: ammoComponent.id,
             upgrades: ammoComponent.upgrades
-          }];
-          if (!PokeSaveProperty(PFEAmmoProperty, item, JSON.stringify(newProperty), player)) {
+          };
+          if (!PokeSaveProperty(PFEBoltBowDynamicPropertyID, item, JSON.stringify(newProperty), player)) {
             PokeErrorScreen(player, { text: `Unable to save new ammo amount` }, PFEAmmoManagementAddAmmoUI(item, player));
             return;
           }
@@ -5650,7 +5757,7 @@ function PFEArrowIcon(itemId) {
   }
 }
 function PFEQuickReload(ammoComponent, item, player) {
-  let reloadingAmmo = PokeGetItemFromInventory(player, void 0, ammoComponent.id);
+  let reloadingAmmo = PokeGetItemFromInventory(player, void 0, ammoComponent.projectile.id);
   if (!reloadingAmmo) {
     PokeErrorScreen(player, { text: `Failed to reload ammo` });
     return;
@@ -5661,152 +5768,54 @@ function PFEQuickReload(ammoComponent, item, player) {
       continue;
     totalAmount = totalAmount + reloadingAmmo.at(i).amount;
   }
-  if (!ammoComponent.max) {
-    let newProperty2 = [{
-      v: PFEAmmoStorageVersion,
-      amount: ammoComponent.amount + totalAmount,
-      max: ammoComponent.max,
-      entityId: ammoComponent.entityId,
+  if (!ammoComponent.projectile.max) {
+    let newProperty2 = {
+      v: PFEBoltBowVersion,
+      dynamicProperty: ammoComponent.dynamicProperty,
+      projectile: {
+        amount: ammoComponent.projectile.amount + totalAmount,
+        max: ammoComponent.projectile.max,
+        id: ammoComponent.projectile.id,
+        entityId: ammoComponent.projectile.entityId
+      },
       id: ammoComponent.id,
       upgrades: ammoComponent.upgrades
-    }];
-    if (!PokeSaveProperty(PFEAmmoProperty, item, JSON.stringify(newProperty2), player)) {
+    };
+    if (!PokeSaveProperty(PFEBoltBowDynamicPropertyID, item, JSON.stringify(newProperty2), player)) {
       PokeErrorScreen(player, void 0, PFEAmmoManagementMainMenuUI(item, player));
       return;
     }
-    player.runCommand(`clear @s ${ammoComponent.id} -1 ${totalAmount}`);
+    player.runCommand(`clear @s ${ammoComponent.projectile.id} -1 ${totalAmount}`);
     return;
   }
-  let maxRemaining = ammoComponent.max - ammoComponent.amount;
+  let maxRemaining = ammoComponent.projectile.max ?? Infinity - ammoComponent.projectile.amount;
   let takeAmount = totalAmount;
   if (maxRemaining < takeAmount) {
     takeAmount = maxRemaining;
   }
-  let newProperty = [{
-    v: PFEAmmoStorageVersion,
-    amount: ammoComponent.amount + takeAmount,
-    max: ammoComponent.max,
-    entityId: ammoComponent.entityId,
+  let newProperty = {
+    v: PFEBoltBowVersion,
+    dynamicProperty: ammoComponent.dynamicProperty,
+    projectile: {
+      amount: ammoComponent.projectile.amount + takeAmount,
+      max: ammoComponent.projectile.max,
+      id: ammoComponent.projectile.id,
+      entityId: ammoComponent.projectile.entityId
+    },
     id: ammoComponent.id,
     upgrades: ammoComponent.upgrades
-  }];
-  if (!PokeSaveProperty(PFEAmmoProperty, item, JSON.stringify(newProperty), player)) {
+  };
+  if (!PokeSaveProperty(PFEBoltBowDynamicPropertyID, item, JSON.stringify(newProperty), player)) {
     PokeErrorScreen(player, void 0, PFEAmmoManagementMainMenuUI(item, player));
     return;
   }
-  player.runCommand(`clear @s ${ammoComponent.id} -1 ${takeAmount}`);
+  player.runCommand(`clear @s ${ammoComponent.projectile.id} -1 ${takeAmount}`);
   return;
-}
-function PFEAmmoUpgrade(player, item) {
-  let UI = new ActionFormData5();
-  let ammoComponent = JSON.parse(item.getDynamicProperty(PFEAmmoProperty).toString()).at(0);
-  UI.title({ translate: `translation.poke:ammoUIUpgradeTitle`, with: { rawtext: [{ translate: `poke_pfe.${item.typeId.substring(5)}` }] } });
-  let capacityUpgrade = PokeGetObjectById(ammoComponent.upgrades, `pfe:capacity`);
-  let flamingUpgrade = PokeGetObjectById(ammoComponent.upgrades, `pfe:flaming`);
-  console.warn(JSON.stringify(ammoComponent));
-  if (!capacityUpgrade) {
-    PokeErrorScreen(player, { text: `Cannot find upgrade data for the Capacity Upgrade` }, PFEAmmoManagementMainMenuUI(item, player));
-    return;
-  }
-  if (!flamingUpgrade) {
-    let newProperty = [{
-      v: PFEAmmoStorageVersion,
-      amount: ammoComponent.amount,
-      max: ammoComponent.max,
-      entityId: ammoComponent.entityId,
-      id: ammoComponent.id,
-      upgrades: ammoComponent.upgrades.concat([PokeGetObjectById(PFEAmmoStorageDefault.at(0).upgrades, `pfe:flaming`)?.value])
-    }];
-    console.warn(JSON.stringify(newProperty));
-    PokeSaveProperty(PFEAmmoProperty, item, JSON.stringify(newProperty), player);
-    ammoComponent = newProperty.at(0);
-    flamingUpgrade = PokeGetObjectById(PFEAmmoStorageDefault.at(0).upgrades, `pfe:flaming`);
-    if (!flamingUpgrade) {
-      PokeErrorScreen(player, { text: `Cannot find upgrade data for the Flaming Upgrade` }, PFEAmmoManagementMainMenuUI(item, player));
-      return;
-    }
-  }
-  let canUpgradeCapacity = false;
-  if (player.getGameMode() == GameMode3.creative || PokeGetItemFromInventory(player, void 0, `poke:capacity_core`)) {
-    UI.button({ translate: `translation.poke:ammoUpgrade`, with: { rawtext: [{ translate: `translation.poke_pfe.capacity` }, { text: `${capacityUpgrade.value.level}` }, { text: `${capacityUpgrade.value.level}` }, { translate: `item.poke:capacity_core` }] } }, `textures/poke/pfe/capacity_core`);
-    canUpgradeCapacity = true;
-  } else {
-    UI.button({ translate: `translation.poke:ammoUpgrade`, with: { rawtext: [{ translate: `translation.poke_pfe.capacity` }, { text: `${capacityUpgrade.value.level}` }, { text: `${capacityUpgrade.value.level}` }, { translate: `item.poke:capacity_core` }] } }, `textures/poke/pfe/capacity_core_gs`);
-  }
-  let canUpgradeFlaming = false;
-  if ((player.getGameMode() == GameMode3.creative || PokeGetItemFromInventory(player, void 0, `poke_pfe:flaming_core`)) && flamingUpgrade.value.level < 1) {
-    UI.button({ translate: `translation.poke:ammoUpgrade`, with: { rawtext: [{ translate: `translation.poke_pfe.flaming` }, { text: `${flamingUpgrade.value.level}` }, { text: `${flamingUpgrade.value.level}` }, { translate: `poke_pfe.flaming_core` }] } }, `textures/poke/pfe/flaming_core`);
-    canUpgradeFlaming = true;
-  } else {
-    UI.button({ translate: `translation.poke:ammoUpgrade`, with: { rawtext: [{ translate: `translation.poke_pfe.flaming` }, { text: `${flamingUpgrade.value.level}` }, { text: `${flamingUpgrade.value.level}` }, { translate: `poke_pfe.flaming_core` }] } }, `textures/poke/pfe/flaming_core_gs`);
-  }
-  UI.button({ translate: `translation.poke:goBack` }, `textures/poke/common/left_arrow`);
-  UI.show(player).then((response) => {
-    let selection = 0;
-    if (response.selection == selection) {
-      if (!canUpgradeCapacity) {
-        PokeErrorScreen(player, { text: `Unable to upgrade Capacity` }, PFEAmmoManagementMainMenuUI(item, player));
-        return;
-      }
-      let newCapacity = {
-        id: capacityUpgrade.value.id,
-        level: capacityUpgrade.value.level + 1,
-        maxLevel: capacityUpgrade.value.maxLevel
-      };
-      let newProperty = [{
-        v: PFEAmmoStorageVersion,
-        amount: ammoComponent.amount,
-        max: Number(ammoComponent.max) + 16,
-        entityId: ammoComponent.entityId,
-        id: ammoComponent.id,
-        upgrades: ammoComponent.upgrades.filter((upgrade) => upgrade.id != `pfe:capacity`).concat(newCapacity)
-      }];
-      if (!PokeSaveProperty(PFEAmmoProperty, item, JSON.stringify(newProperty), player)) {
-        PokeErrorScreen(player, { text: `Unable to save capacity upgrade` }, PFEAmmoManagementAddAmmoUI(item, player));
-        return;
-      }
-      player.runCommand(`clear @s poke:capacity_core -1 ${capacityUpgrade.value.level}`);
-      return;
-    } else
-      selection++;
-    if (response.selection == selection) {
-      if (!canUpgradeFlaming) {
-        PokeErrorScreen(player, { text: `Unable to upgrade flaming` }, PFEAmmoManagementMainMenuUI(item, player));
-        return;
-      }
-      let newFlaming = {
-        id: flamingUpgrade.value.id,
-        level: flamingUpgrade.value.level + 1,
-        maxLevel: flamingUpgrade.value.maxLevel
-      };
-      console.warn(JSON.stringify(ammoComponent.upgrades.filter((upgrade) => upgrade.id != `pfe:flaming`)));
-      let newProperty = [{
-        v: PFEAmmoStorageVersion,
-        amount: ammoComponent.amount,
-        max: ammoComponent.max,
-        entityId: ammoComponent.entityId,
-        id: ammoComponent.id,
-        upgrades: ammoComponent.upgrades.filter((upgrade) => upgrade.id != `pfe:flaming`).concat(newFlaming)
-      }];
-      console.warn(JSON.stringify(newProperty));
-      if (!PokeSaveProperty(PFEAmmoProperty, item, JSON.stringify(newProperty), player)) {
-        PokeErrorScreen(player, { text: `Unable to save flaming upgrade` }, PFEAmmoManagementAddAmmoUI(item, player));
-        return;
-      }
-      player.runCommand(`clear @s poke_pfe:flaming_core -1 1`);
-      return;
-    } else
-      selection++;
-    if (response.canceled || response.selection == selection) {
-      PFEAmmoManagementMainMenuUI(item, player);
-      return;
-    }
-  });
 }
 
 // scripts/disableConfig.ts
 import { world as world5 } from "@minecraft/server";
-import { ActionFormData as ActionFormData6 } from "@minecraft/server-ui";
+import { ActionFormData as ActionFormData7 } from "@minecraft/server-ui";
 var PFEDisableConfigName = "poke_pfe:disable_config";
 var PFEDisableConfigVersion = 2;
 var PFEDisabledOnUseItems = ["poke:sundial", "poke:quantum_teleporter", "poke:kapow_ring"];
@@ -5824,7 +5833,7 @@ var PFEDisableConfigDefault = {
 };
 function PFEDisableConfigMainMenu(data) {
   let player = data.source;
-  let UI = new ActionFormData6();
+  let UI = new ActionFormData7();
   let options = JSON.parse(world5.getDynamicProperty(PFEDisableConfigName).toString());
   if (options.quantumTeleporter) {
     UI.button({ rawtext: [{ translate: `poke_pfe.quantum_teleporter` }, { text: ":\xA7a\n" }, { translate: `translation.poke_pfe.enabled` }] }, `textures/poke/pfe/quantum_teleporter`);
@@ -5861,13 +5870,16 @@ function PFEDisableConfigMainMenu(data) {
   } else {
     UI.button({ rawtext: [{ translate: `poke_pfe.waypoint_menu` }, { text: ":\xA7c\n" }, { translate: `translation.poke_pfe.disabled` }] }, `textures/poke/pfe/waypoint_menu`);
   }
+  UI.button({ translate: `%poke_pfe.armor_effects:${world5.getDynamicProperty(`poke_pfe:disable_armor_effects`) == true ? `\xA7c
+%translation.poke_pfe.disabled` : `\xA7a
+%translation.poke_pfe.enabled`}` }, `textures/poke/common/question`);
   UI.show(player).then((response) => {
     let selection = 0;
     let newProperty = options;
     if (response.selection == selection) {
       if (newProperty.quantumTeleporter) {
         newProperty.quantumTeleporter = false;
-        console.warn(`Disabled Qunantum Teleporter`);
+        console.warn(`Disabled Quantum Teleporter`);
       } else
         newProperty.quantumTeleporter = true;
       world5.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
@@ -5942,6 +5954,12 @@ function PFEDisableConfigMainMenu(data) {
       return;
     } else
       selection++;
+    if (response.selection == selection) {
+      world5.getDynamicProperty(`poke_pfe:disable_armor_effects`) == false ? world5.setDynamicProperty(`poke_pfe:disable_armor_effects`, true) : world5.setDynamicProperty(`poke_pfe:disable_armor_effects`, false);
+      PFEDisableConfigMainMenu(data);
+      return;
+    } else
+      selection++;
     if (response.canceled || response.selection == selection) {
       return;
     }
@@ -5949,12 +5967,13 @@ function PFEDisableConfigMainMenu(data) {
 }
 
 // scripts/main.ts
-import { ActionFormData as ActionFormData9 } from "@minecraft/server-ui";
+import { ActionFormData as ActionFormData10 } from "@minecraft/server-ui";
 
 // scripts/armorEffects.ts
 var import_math = __toESM(require_lib());
-import { EntityComponentTypes as EntityComponentTypes4, EquipmentSlot as EquipmentSlot4, ItemStack as ItemStack4 } from "@minecraft/server";
+import { EntityComponentTypes as EntityComponentTypes5, EquipmentSlot as EquipmentSlot5, ItemStack as ItemStack5, world as world6 } from "@minecraft/server";
 var ArmorEffectDuration = 500;
+var PFECustomArmorEffectDynamicProperty = `poke_pfe:custom_effects`;
 var PFEArmorEffectData = {
   hellish: {
     effects: [
@@ -6464,12 +6483,12 @@ var PFEArmorEffectData = {
     tag: `poke_pfe:void_armor_effects`
   }
 };
-function CheckEffects(player, ArmorData, additionalOptions) {
-  const Helmet = player.getComponent(EntityComponentTypes4.Equippable)?.getEquipment(EquipmentSlot4.Head) ?? false;
-  const Chestplate = player.getComponent(EntityComponentTypes4.Equippable)?.getEquipment(EquipmentSlot4.Chest) ?? false;
-  const Leggings = player.getComponent(EntityComponentTypes4.Equippable)?.getEquipment(EquipmentSlot4.Legs) ?? false;
-  const Boots = player.getComponent(EntityComponentTypes4.Equippable)?.getEquipment(EquipmentSlot4.Feet) ?? false;
-  const Offhand = player.getComponent(EntityComponentTypes4.Equippable)?.getEquipment(EquipmentSlot4.Offhand) ?? false;
+function CheckEffects(player, ArmorData, additionalOptions, customParse) {
+  const Helmet = player.getComponent(EntityComponentTypes5.Equippable)?.getEquipment(EquipmentSlot5.Head) ?? false;
+  const Chestplate = player.getComponent(EntityComponentTypes5.Equippable)?.getEquipment(EquipmentSlot5.Chest) ?? false;
+  const Leggings = player.getComponent(EntityComponentTypes5.Equippable)?.getEquipment(EquipmentSlot5.Legs) ?? false;
+  const Boots = player.getComponent(EntityComponentTypes5.Equippable)?.getEquipment(EquipmentSlot5.Feet) ?? false;
+  const Offhand = player.getComponent(EntityComponentTypes5.Equippable)?.getEquipment(EquipmentSlot5.Offhand) ?? false;
   let totalPieces = -1;
   let effects = [];
   let totalStrength = 0;
@@ -6482,14 +6501,42 @@ function CheckEffects(player, ArmorData, additionalOptions) {
   let totalVillageHero = 0;
   let totalSaturation = 0;
   let totalHaste = 0;
+  let totalAbsorption = 0;
+  let totalBadOmen = 0;
+  let totalBlindness = 0;
+  let totalConduitPower = 0;
+  let totalDarkness = 0;
+  let totalFatalPoison = 0;
+  let totalFireResistance = 0;
+  let HealthBoost = 0;
+  let totalHunger = 0;
+  let totalInfested = 0;
+  let totalInstantDamage = 0;
+  let totalInstantHealth = 0;
+  let totalInvisibility = 0;
+  let totalLevitation = 0;
+  let totalMiningFatigue = 0;
+  let totalNausea = 0;
+  let totalNightVision = 0;
+  let totalOozing = 0;
+  let totalPoison = 0;
+  let totalRaidOmen = 0;
+  let totalSlowFalling = 0;
+  let totalTrialOmen = 0;
+  let totalWaterBreathing = 0;
+  let totalWeakness = 0;
+  let totalWeaving = 0;
+  let totalWindCharged = 0;
+  let totalWither = 0;
   let radiusEffects = false;
+  let customEffects = JSON.parse(world6.getDynamicProperty(PFECustomArmorEffectDynamicProperty).toString());
   if (additionalOptions) {
     const NoveltyTags = player.getTags().filter((tag) => tag.includes(`novelty:poke`));
     for (let i = NoveltyTags.length; i > -1; i--) {
       const tag = NoveltyTags.at(i);
       if (!tag)
         continue;
-      const item = new ItemStack4(tag.substring(8), 1);
+      const item = new ItemStack5(tag.substring(8), 1);
       totalPieces += 1;
       switch (true) {
         case item.hasTag(ArmorData.amethyst.tag): {
@@ -6675,9 +6722,176 @@ function CheckEffects(player, ArmorData, additionalOptions) {
           break;
         }
         default:
-          totalPieces -= 1;
+          {
+            let passed = false;
+            if (customEffects.length > 0) {
+              for (let customEffect of customEffects) {
+                if (!customEffect.mode || customEffect.mode != "tag") {
+                  totalPieces -= 1;
+                  continue;
+                }
+                ;
+                if (item.hasTag(customEffect.tag)) {
+                  effects = effects.concat(customEffect.effects);
+                  passed = true;
+                  for (let effect of customEffect.effects) {
+                    switch (effect.effect) {
+                      case MinecraftEffectTypes.Absorption: {
+                        totalAbsorption += 1;
+                        break;
+                      }
+                      case MinecraftEffectTypes.BadOmen: {
+                        totalBadOmen += 1;
+                        break;
+                      }
+                      case MinecraftEffectTypes.Blindness: {
+                        totalBlindness += 1;
+                        break;
+                      }
+                      case MinecraftEffectTypes.ConduitPower: {
+                        totalConduitPower += 1;
+                        break;
+                      }
+                      case MinecraftEffectTypes.Darkness: {
+                        totalDarkness += 1;
+                        break;
+                      }
+                      case MinecraftEffectTypes.FatalPoison: {
+                        totalFatalPoison += 1;
+                        break;
+                      }
+                      case MinecraftEffectTypes.FireResistance: {
+                        totalFireResistance += 1;
+                        break;
+                      }
+                      case MinecraftEffectTypes.Haste: {
+                        totalHaste += 1;
+                        break;
+                      }
+                      case MinecraftEffectTypes.HealthBoost: {
+                        HealthBoost += 1;
+                        break;
+                      }
+                      case MinecraftEffectTypes.Hunger: {
+                        totalHunger += 1;
+                        break;
+                      }
+                      case MinecraftEffectTypes.Infested: {
+                        totalInfested += 1;
+                        break;
+                      }
+                      case MinecraftEffectTypes.InstantDamage: {
+                        totalInstantDamage += 1;
+                        break;
+                      }
+                      case MinecraftEffectTypes.InstantHealth: {
+                        totalInstantHealth += 1;
+                        break;
+                      }
+                      case MinecraftEffectTypes.Invisibility: {
+                        totalInvisibility += 1;
+                        break;
+                      }
+                      case MinecraftEffectTypes.JumpBoost: {
+                        totalJumpBoost += 1;
+                        break;
+                      }
+                      case MinecraftEffectTypes.Levitation: {
+                        totalLevitation += 1;
+                        break;
+                      }
+                      case MinecraftEffectTypes.MiningFatigue: {
+                        totalMiningFatigue += 1;
+                        break;
+                      }
+                      case MinecraftEffectTypes.Nausea: {
+                        totalNausea += 1;
+                        break;
+                      }
+                      case MinecraftEffectTypes.NightVision: {
+                        totalNightVision += 1;
+                        break;
+                      }
+                      case MinecraftEffectTypes.Oozing: {
+                        totalOozing += 1;
+                        break;
+                      }
+                      case MinecraftEffectTypes.Poison: {
+                        totalPoison += 1;
+                        break;
+                      }
+                      case MinecraftEffectTypes.RaidOmen: {
+                        totalRaidOmen += 1;
+                        break;
+                      }
+                      case MinecraftEffectTypes.Regeneration: {
+                        totalRegeneration += 1;
+                        break;
+                      }
+                      case MinecraftEffectTypes.Resistance: {
+                        totalResistance += 1;
+                        break;
+                      }
+                      case MinecraftEffectTypes.Saturation: {
+                        totalSaturation += 1;
+                        break;
+                      }
+                      case MinecraftEffectTypes.SlowFalling: {
+                        totalSlowFalling += 1;
+                        break;
+                      }
+                      case MinecraftEffectTypes.Slowness: {
+                        totalSlowness += 1;
+                        break;
+                      }
+                      case MinecraftEffectTypes.Speed: {
+                        totalSpeed += 1;
+                        break;
+                      }
+                      case MinecraftEffectTypes.Strength: {
+                        totalStrength += 1;
+                        break;
+                      }
+                      case MinecraftEffectTypes.TrialOmen: {
+                        totalTrialOmen += 1;
+                        break;
+                      }
+                      case MinecraftEffectTypes.VillageHero: {
+                        totalVillageHero += 1;
+                        break;
+                      }
+                      case MinecraftEffectTypes.WaterBreathing: {
+                        totalWaterBreathing += 1;
+                        break;
+                      }
+                      case MinecraftEffectTypes.Weakness: {
+                        totalWeakness += 1;
+                        break;
+                      }
+                      case MinecraftEffectTypes.Weaving: {
+                        totalWeaving += 1;
+                        break;
+                      }
+                      case MinecraftEffectTypes.WindCharged: {
+                        totalWindCharged += 1;
+                        break;
+                      }
+                      case MinecraftEffectTypes.Wither: {
+                        totalWither += 1;
+                        break;
+                      }
+                      default:
+                        break;
+                    }
+                  }
+                }
+              }
+            }
+            passed ? totalPieces : totalPieces -= 1;
+            break;
+          }
+          ;
       }
-      ;
       continue;
     }
   }
@@ -6689,7 +6903,166 @@ function CheckEffects(player, ArmorData, additionalOptions) {
         break;
       }
       default: {
-        totalPieces -= 1;
+        let passed = false;
+        if (customEffects.length > 0) {
+          for (let customEffect of customEffects) {
+            if (customEffect.mode == "lore" && JSON.stringify(Offhand.getLore()).includes(customEffect.tag) || (!customEffect.mode || customEffect.mode == "tag") && Offhand.hasTag(customEffect.tag)) {
+              effects = effects.concat(customEffect.effects);
+              passed = true;
+              for (let effect of customEffect.effects) {
+                switch (effect.effect) {
+                  case MinecraftEffectTypes.Absorption: {
+                    totalAbsorption += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.BadOmen: {
+                    totalBadOmen += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Blindness: {
+                    totalBlindness += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.ConduitPower: {
+                    totalConduitPower += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Darkness: {
+                    totalDarkness += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.FatalPoison: {
+                    totalFatalPoison += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.FireResistance: {
+                    totalFireResistance += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Haste: {
+                    totalHaste += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.HealthBoost: {
+                    HealthBoost += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Hunger: {
+                    totalHunger += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Infested: {
+                    totalInfested += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.InstantDamage: {
+                    totalInstantDamage += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.InstantHealth: {
+                    totalInstantHealth += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Invisibility: {
+                    totalInvisibility += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.JumpBoost: {
+                    totalJumpBoost += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Levitation: {
+                    totalLevitation += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.MiningFatigue: {
+                    totalMiningFatigue += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Nausea: {
+                    totalNausea += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.NightVision: {
+                    totalNightVision += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Oozing: {
+                    totalOozing += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Poison: {
+                    totalPoison += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.RaidOmen: {
+                    totalRaidOmen += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Regeneration: {
+                    totalRegeneration += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Resistance: {
+                    totalResistance += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Saturation: {
+                    totalSaturation += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.SlowFalling: {
+                    totalSlowFalling += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Slowness: {
+                    totalSlowness += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Speed: {
+                    totalSpeed += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Strength: {
+                    totalStrength += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.TrialOmen: {
+                    totalTrialOmen += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.VillageHero: {
+                    totalVillageHero += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.WaterBreathing: {
+                    totalWaterBreathing += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Weakness: {
+                    totalWeakness += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Weaving: {
+                    totalWeaving += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.WindCharged: {
+                    totalWindCharged += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Wither: {
+                    totalWither += 1;
+                    break;
+                  }
+                  default:
+                    break;
+                }
+              }
+            }
+          }
+        }
+        passed ? totalPieces : totalPieces -= 1;
         break;
       }
     }
@@ -6874,8 +7247,169 @@ function CheckEffects(player, ArmorData, additionalOptions) {
         effects = effects.concat(ArmorData.nightVision.effects);
         break;
       }
-      default:
-        totalPieces -= 1;
+      default: {
+        let passed = false;
+        if (customEffects.length > 0) {
+          for (let customEffect of customEffects) {
+            if (customEffect.mode == "lore" && JSON.stringify(Helmet.getLore()).includes(customEffect.tag) || (!customEffect.mode || customEffect.mode == "tag") && Helmet.hasTag(customEffect.tag)) {
+              effects = effects.concat(customEffect.effects);
+              passed = true;
+              for (let effect of customEffect.effects) {
+                switch (effect.effect) {
+                  case MinecraftEffectTypes.Absorption: {
+                    totalAbsorption += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.BadOmen: {
+                    totalBadOmen += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Blindness: {
+                    totalBlindness += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.ConduitPower: {
+                    totalConduitPower += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Darkness: {
+                    totalDarkness += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.FatalPoison: {
+                    totalFatalPoison += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.FireResistance: {
+                    totalFireResistance += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Haste: {
+                    totalHaste += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.HealthBoost: {
+                    HealthBoost += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Hunger: {
+                    totalHunger += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Infested: {
+                    totalInfested += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.InstantDamage: {
+                    totalInstantDamage += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.InstantHealth: {
+                    totalInstantHealth += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Invisibility: {
+                    totalInvisibility += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.JumpBoost: {
+                    totalJumpBoost += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Levitation: {
+                    totalLevitation += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.MiningFatigue: {
+                    totalMiningFatigue += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Nausea: {
+                    totalNausea += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.NightVision: {
+                    totalNightVision += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Oozing: {
+                    totalOozing += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Poison: {
+                    totalPoison += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.RaidOmen: {
+                    totalRaidOmen += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Regeneration: {
+                    totalRegeneration += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Resistance: {
+                    totalResistance += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Saturation: {
+                    totalSaturation += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.SlowFalling: {
+                    totalSlowFalling += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Slowness: {
+                    totalSlowness += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Speed: {
+                    totalSpeed += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Strength: {
+                    totalStrength += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.TrialOmen: {
+                    totalTrialOmen += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.VillageHero: {
+                    totalVillageHero += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.WaterBreathing: {
+                    totalWaterBreathing += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Weakness: {
+                    totalWeakness += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Weaving: {
+                    totalWeaving += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.WindCharged: {
+                    totalWindCharged += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Wither: {
+                    totalWither += 1;
+                    break;
+                  }
+                  default:
+                    break;
+                }
+              }
+            }
+          }
+        }
+        passed ? totalPieces : totalPieces -= 1;
+        break;
+      }
     }
   }
   if (Chestplate) {
@@ -7054,8 +7588,169 @@ function CheckEffects(player, ArmorData, additionalOptions) {
         totalStrength += 1;
         break;
       }
-      default:
-        totalPieces -= 1;
+      default: {
+        let passed = false;
+        if (customEffects.length > 0) {
+          for (let customEffect of customEffects) {
+            if (customEffect.mode == "lore" && JSON.stringify(Chestplate.getLore()).includes(customEffect.tag) || (!customEffect.mode || customEffect.mode == "tag") && Chestplate.hasTag(customEffect.tag)) {
+              effects = effects.concat(customEffect.effects);
+              passed = true;
+              for (let effect of customEffect.effects) {
+                switch (effect.effect) {
+                  case MinecraftEffectTypes.Absorption: {
+                    totalAbsorption += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.BadOmen: {
+                    totalBadOmen += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Blindness: {
+                    totalBlindness += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.ConduitPower: {
+                    totalConduitPower += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Darkness: {
+                    totalDarkness += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.FatalPoison: {
+                    totalFatalPoison += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.FireResistance: {
+                    totalFireResistance += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Haste: {
+                    totalHaste += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.HealthBoost: {
+                    HealthBoost += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Hunger: {
+                    totalHunger += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Infested: {
+                    totalInfested += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.InstantDamage: {
+                    totalInstantDamage += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.InstantHealth: {
+                    totalInstantHealth += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Invisibility: {
+                    totalInvisibility += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.JumpBoost: {
+                    totalJumpBoost += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Levitation: {
+                    totalLevitation += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.MiningFatigue: {
+                    totalMiningFatigue += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Nausea: {
+                    totalNausea += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.NightVision: {
+                    totalNightVision += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Oozing: {
+                    totalOozing += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Poison: {
+                    totalPoison += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.RaidOmen: {
+                    totalRaidOmen += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Regeneration: {
+                    totalRegeneration += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Resistance: {
+                    totalResistance += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Saturation: {
+                    totalSaturation += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.SlowFalling: {
+                    totalSlowFalling += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Slowness: {
+                    totalSlowness += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Speed: {
+                    totalSpeed += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Strength: {
+                    totalStrength += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.TrialOmen: {
+                    totalTrialOmen += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.VillageHero: {
+                    totalVillageHero += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.WaterBreathing: {
+                    totalWaterBreathing += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Weakness: {
+                    totalWeakness += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Weaving: {
+                    totalWeaving += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.WindCharged: {
+                    totalWindCharged += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Wither: {
+                    totalWither += 1;
+                    break;
+                  }
+                  default:
+                    break;
+                }
+              }
+            }
+          }
+        }
+        passed ? totalPieces : totalPieces -= 1;
+        break;
+      }
     }
   }
   if (Leggings) {
@@ -7184,8 +7879,169 @@ function CheckEffects(player, ArmorData, additionalOptions) {
         effects = effects.concat(ArmorData.cactus.effects);
         break;
       }
-      default:
-        totalPieces -= 1;
+      default: {
+        let passed = false;
+        if (customEffects.length > 0) {
+          for (let customEffect of customEffects) {
+            if (customEffect.mode == "lore" && JSON.stringify(Leggings.getLore()).includes(customEffect.tag) || (!customEffect.mode || customEffect.mode == "tag") && Leggings.hasTag(customEffect.tag)) {
+              effects = effects.concat(customEffect.effects);
+              passed = true;
+              for (let effect of customEffect.effects) {
+                switch (effect.effect) {
+                  case MinecraftEffectTypes.Absorption: {
+                    totalAbsorption += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.BadOmen: {
+                    totalBadOmen += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Blindness: {
+                    totalBlindness += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.ConduitPower: {
+                    totalConduitPower += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Darkness: {
+                    totalDarkness += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.FatalPoison: {
+                    totalFatalPoison += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.FireResistance: {
+                    totalFireResistance += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Haste: {
+                    totalHaste += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.HealthBoost: {
+                    HealthBoost += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Hunger: {
+                    totalHunger += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Infested: {
+                    totalInfested += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.InstantDamage: {
+                    totalInstantDamage += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.InstantHealth: {
+                    totalInstantHealth += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Invisibility: {
+                    totalInvisibility += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.JumpBoost: {
+                    totalJumpBoost += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Levitation: {
+                    totalLevitation += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.MiningFatigue: {
+                    totalMiningFatigue += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Nausea: {
+                    totalNausea += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.NightVision: {
+                    totalNightVision += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Oozing: {
+                    totalOozing += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Poison: {
+                    totalPoison += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.RaidOmen: {
+                    totalRaidOmen += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Regeneration: {
+                    totalRegeneration += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Resistance: {
+                    totalResistance += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Saturation: {
+                    totalSaturation += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.SlowFalling: {
+                    totalSlowFalling += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Slowness: {
+                    totalSlowness += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Speed: {
+                    totalSpeed += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Strength: {
+                    totalStrength += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.TrialOmen: {
+                    totalTrialOmen += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.VillageHero: {
+                    totalVillageHero += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.WaterBreathing: {
+                    totalWaterBreathing += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Weakness: {
+                    totalWeakness += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Weaving: {
+                    totalWeaving += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.WindCharged: {
+                    totalWindCharged += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Wither: {
+                    totalWither += 1;
+                    break;
+                  }
+                  default:
+                    break;
+                }
+              }
+            }
+          }
+        }
+        passed ? totalPieces : totalPieces -= 1;
+        break;
+      }
     }
   }
   if (Boots) {
@@ -7319,8 +8175,169 @@ function CheckEffects(player, ArmorData, additionalOptions) {
         totalSpeed += 1;
         break;
       }
-      default:
-        totalPieces -= 1;
+      default: {
+        let passed = false;
+        if (customEffects.length > 0) {
+          for (let customEffect of customEffects) {
+            if (customEffect.mode == "lore" && JSON.stringify(Boots.getLore()).includes(customEffect.tag) || (!customEffect.mode || customEffect.mode == "tag") && Boots.hasTag(customEffect.tag)) {
+              effects = effects.concat(customEffect.effects);
+              passed = true;
+              for (let effect of customEffect.effects) {
+                switch (effect.effect) {
+                  case MinecraftEffectTypes.Absorption: {
+                    totalAbsorption += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.BadOmen: {
+                    totalBadOmen += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Blindness: {
+                    totalBlindness += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.ConduitPower: {
+                    totalConduitPower += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Darkness: {
+                    totalDarkness += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.FatalPoison: {
+                    totalFatalPoison += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.FireResistance: {
+                    totalFireResistance += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Haste: {
+                    totalHaste += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.HealthBoost: {
+                    HealthBoost += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Hunger: {
+                    totalHunger += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Infested: {
+                    totalInfested += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.InstantDamage: {
+                    totalInstantDamage += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.InstantHealth: {
+                    totalInstantHealth += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Invisibility: {
+                    totalInvisibility += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.JumpBoost: {
+                    totalJumpBoost += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Levitation: {
+                    totalLevitation += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.MiningFatigue: {
+                    totalMiningFatigue += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Nausea: {
+                    totalNausea += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.NightVision: {
+                    totalNightVision += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Oozing: {
+                    totalOozing += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Poison: {
+                    totalPoison += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.RaidOmen: {
+                    totalRaidOmen += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Regeneration: {
+                    totalRegeneration += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Resistance: {
+                    totalResistance += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Saturation: {
+                    totalSaturation += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.SlowFalling: {
+                    totalSlowFalling += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Slowness: {
+                    totalSlowness += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Speed: {
+                    totalSpeed += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Strength: {
+                    totalStrength += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.TrialOmen: {
+                    totalTrialOmen += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.VillageHero: {
+                    totalVillageHero += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.WaterBreathing: {
+                    totalWaterBreathing += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Weakness: {
+                    totalWeakness += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Weaving: {
+                    totalWeaving += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.WindCharged: {
+                    totalWindCharged += 1;
+                    break;
+                  }
+                  case MinecraftEffectTypes.Wither: {
+                    totalWither += 1;
+                    break;
+                  }
+                  default:
+                    break;
+                }
+              }
+            }
+          }
+        }
+        passed ? totalPieces : totalPieces -= 1;
+        break;
+      }
     }
   }
   for (let effect of effects) {
@@ -7377,9 +8394,9 @@ function CheckEffects(player, ArmorData, additionalOptions) {
 }
 
 // scripts/quests.ts
-import { EntityComponentTypes as EntityComponentTypes5, EquipmentSlot as EquipmentSlot5, ItemStack as ItemStack5, world as world6 } from "@minecraft/server";
+import { EntityComponentTypes as EntityComponentTypes6, EquipmentSlot as EquipmentSlot6, ItemStack as ItemStack6, world as world7 } from "@minecraft/server";
 var import_math2 = __toESM(require_lib());
-import { ActionFormData as ActionFormData7 } from "@minecraft/server-ui";
+import { ActionFormData as ActionFormData8 } from "@minecraft/server-ui";
 var PFEQuestPropertyID = `poke_pfe:quests`;
 var PFECustomMineQuestsPropertyID = `poke_pfe:custom_mine_quests`;
 var PFECustomFarmQuestsPropertyID = `poke_pfe:custom_farm_quests`;
@@ -7433,7 +8450,7 @@ var PFEFarmQuests = [
   { requiredItem: { item: MinecraftItemTypes.PitcherPlant, amount: 1, translationString: `tile.pitcher_plant.name` }, reward: { tokenAmount: 6 } }
 ];
 function PFERollQuest(item, player, questType) {
-  let AddingQuest = questType.at(Math.round(Math.random() * questType.length)) ?? questType.at(0) ?? { requiredItem: new ItemStack5(MinecraftItemTypes.Dirt, 1), reward: { tokenAmount: 0, item: new ItemStack5(MinecraftItemTypes.Dirt, 1) } };
+  let AddingQuest = questType.at(Math.round(Math.random() * questType.length)) ?? questType.at(0) ?? { requiredItem: new ItemStack6(MinecraftItemTypes.Dirt, 1), reward: { tokenAmount: 0, item: new ItemStack6(MinecraftItemTypes.Dirt, 1) } };
   item.keepOnDeath = true;
   PokeSaveProperty(PFEQuestPropertyID, item, JSON.stringify(AddingQuest), player, void 0);
 }
@@ -7445,19 +8462,19 @@ var PokePFEQuestComponent = class {
       let questType = [];
       switch (data.itemStack.typeId) {
         case `poke:mine_quest`: {
-          questType = world6.getDynamicProperty(PFECustomMineQuestsPropertyID) ? PFEMineQuests.concat(JSON.parse(world6.getDynamicProperty(PFECustomMineQuestsPropertyID).toString())) ?? PFEMineQuests : PFEMineQuests;
+          questType = world7.getDynamicProperty(PFECustomMineQuestsPropertyID) ? PFEMineQuests.concat(JSON.parse(world7.getDynamicProperty(PFECustomMineQuestsPropertyID).toString())) ?? PFEMineQuests : PFEMineQuests;
           break;
         }
         case `poke:kill_quest`: {
-          questType = world6.getDynamicProperty(PFECustomKillQuestsPropertyID) ? PFEKillQuests.concat(JSON.parse(world6.getDynamicProperty(PFECustomKillQuestsPropertyID).toString())) ?? PFEKillQuests : PFEKillQuests;
+          questType = world7.getDynamicProperty(PFECustomKillQuestsPropertyID) ? PFEKillQuests.concat(JSON.parse(world7.getDynamicProperty(PFECustomKillQuestsPropertyID).toString())) ?? PFEKillQuests : PFEKillQuests;
           break;
         }
         case `poke:farm_quest`: {
-          questType = world6.getDynamicProperty(PFECustomFarmQuestsPropertyID) ? PFEFarmQuests.concat(JSON.parse(world6.getDynamicProperty(PFECustomFarmQuestsPropertyID).toString())) ?? PFEFarmQuests : PFEFarmQuests;
+          questType = world7.getDynamicProperty(PFECustomFarmQuestsPropertyID) ? PFEFarmQuests.concat(JSON.parse(world7.getDynamicProperty(PFECustomFarmQuestsPropertyID).toString())) ?? PFEFarmQuests : PFEFarmQuests;
           break;
         }
         case `poke:craft_quest`: {
-          questType = world6.getDynamicProperty(PFECustomCraftQuestsPropertyID) ? PFECraftQuests.concat(JSON.parse(world6.getDynamicProperty(PFECustomCraftQuestsPropertyID).toString())) ?? PFECraftQuests : PFECraftQuests;
+          questType = world7.getDynamicProperty(PFECustomCraftQuestsPropertyID) ? PFECraftQuests.concat(JSON.parse(world7.getDynamicProperty(PFECustomCraftQuestsPropertyID).toString())) ?? PFECraftQuests : PFECraftQuests;
           break;
         }
         default: {
@@ -7465,7 +8482,7 @@ var PokePFEQuestComponent = class {
       }
       PFERollQuest(data.itemStack, data.source, questType);
     } else {
-      let UI = new ActionFormData7();
+      let UI = new ActionFormData8();
       let quest = JSON.parse(data.itemStack.getDynamicProperty(PFEQuestPropertyID).toString()) ?? console.warn(`Quest not found or failed to parse || poke_pfe:quest`);
       let validRequiredItems = PokeGetItemFromInventory(data.source, void 0, quest.requiredItem.item) ?? false;
       let totalItems = 0;
@@ -7502,8 +8519,8 @@ var PokePFEQuestComponent = class {
             data.source.dimension.spawnItem(quest.reward.item, data.source.location);
           }
           data.source.runCommand(`clear @s ${quest.requiredItem.item} 0 ${quest.requiredItem.amount}`);
-          data.source.getComponent(EntityComponentTypes5.Equippable)?.setEquipment(EquipmentSlot5.Mainhand, void 0);
-          data.source.dimension.spawnItem(new ItemStack5(`poke:copper_token`, quest.reward.tokenAmount), data.source.location);
+          data.source.getComponent(EntityComponentTypes6.Equippable)?.setEquipment(EquipmentSlot6.Mainhand, void 0);
+          data.source.dimension.spawnItem(new ItemStack6(`poke:copper_token`, quest.reward.tokenAmount), data.source.location);
           data.source.playSound(`poke_pfe.quest.complete`, { pitch: (0, import_math2.clampNumber)(Math.random() + 0.5, 0.85, 1.15), volume: 0.9 });
         } else
           selection++;
@@ -7516,14 +8533,14 @@ var PokePFEQuestComponent = class {
 };
 
 // scripts/waypoints.ts
-import { EntityComponentTypes as EntityComponentTypes6, EquipmentSlot as EquipmentSlot6, world as world7 } from "@minecraft/server";
-import { ActionFormData as ActionFormData8, ModalFormData as ModalFormData4 } from "@minecraft/server-ui";
+import { EntityComponentTypes as EntityComponentTypes7, EquipmentSlot as EquipmentSlot7, world as world8 } from "@minecraft/server";
+import { ActionFormData as ActionFormData9, ModalFormData as ModalFormData4 } from "@minecraft/server-ui";
 var PFEWaypointVersion = 1;
 var PokePFEWaypointComponent = class {
   onUse(data) {
     if (!data.itemStack)
       return;
-    let options = JSON.parse(world7.getDynamicProperty(PFEDisableConfigName).toString());
+    let options = JSON.parse(world8.getDynamicProperty(PFEDisableConfigName).toString());
     if (options.waypoints === false) {
       data.source.sendMessage({ translate: `\xA7c%translation.poke_pfe.feature_disabled` });
       return;
@@ -7531,7 +8548,7 @@ var PokePFEWaypointComponent = class {
     const WaypointConfig = data.itemStack.getDynamicProperty(WaypointDynamicPropertyID) ? JSON.parse(data.itemStack.getDynamicProperty(WaypointDynamicPropertyID).toString()) : PFEWaypointDefaultConfig;
     data.itemStack.setDynamicProperty(WaypointDynamicPropertyID, JSON.stringify(WaypointConfig));
     data.itemStack.keepOnDeath = true;
-    data.source.getComponent(EntityComponentTypes6.Equippable)?.setEquipment(EquipmentSlot6.Mainhand, data.itemStack);
+    data.source.getComponent(EntityComponentTypes7.Equippable)?.setEquipment(EquipmentSlot7.Mainhand, data.itemStack);
     WaypointUIMainMenu(data.source, data.itemStack);
   }
 };
@@ -7543,7 +8560,7 @@ var PFEWaypointDefaultConfig = {
   waypoints: []
 };
 function WaypointUIMainMenu(player, item) {
-  let UI = new ActionFormData8();
+  let UI = new ActionFormData9();
   let waypointConfig = JSON.parse(item.getDynamicProperty(WaypointDynamicPropertyID).toString()) ?? PFEWaypointDefaultConfig;
   UI.title({ translate: `translation.poke_pfe.WaypointUITitle` });
   UI.button({ translate: `*%WAYPOINTS [${waypointConfig.waypoints.length ?? 0}/${WaypointTotal}]` }, `textures/poke/common/waypointRed`);
@@ -7572,7 +8589,7 @@ function WaypointUIMainMenu(player, item) {
   });
 }
 function WaypointUIViewWaypoints(player, item) {
-  let UI = new ActionFormData8();
+  let UI = new ActionFormData9();
   let waypointConfig = JSON.parse(item.getDynamicProperty(WaypointDynamicPropertyID).toString()) ?? PFEWaypointDefaultConfig;
   UI.title({ translate: `translation.poke_pfe.WaypointUITitle` });
   for (let waypoint of waypointConfig.waypoints) {
@@ -7605,10 +8622,10 @@ function WaypointUIViewWaypoints(player, item) {
   });
 }
 function WaypointUIManageWaypoint(player, item, waypoint) {
-  let UI = new ActionFormData8();
+  let UI = new ActionFormData9();
   let waypointConfig = JSON.parse(item.getDynamicProperty(WaypointDynamicPropertyID).toString()) ?? PFEWaypointDefaultConfig;
   UI.title({ translate: `translation.poke_pfe.WaypointUITitle` });
-  UI.button({ translate: `*TELEPORT` }, `textures/poke/common/question`);
+  UI.button({ translate: `*TELEPORT` }, `textures/poke/common/teleport`);
   UI.button({ translate: `*UPDATE LOCATION` }, `textures/poke/common/question`);
   UI.button({ translate: `*RENAME` }, `textures/poke/common/edit`);
   UI.button({ translate: `*CHANGE ICON` }, `textures/poke/common/painting`);
@@ -7670,12 +8687,12 @@ function WaypointUIRenameWaypoint(player, item, waypoint) {
       v: PFEWaypointVersion,
       waypoints: waypointConfig.waypoints.filter((i) => i.id != waypoint.id).concat(newWaypoint)
     };
-    PokeSaveProperty(WaypointDynamicPropertyID, item, JSON.stringify(newProperty), player, EquipmentSlot6.Mainhand);
+    PokeSaveProperty(WaypointDynamicPropertyID, item, JSON.stringify(newProperty), player, EquipmentSlot7.Mainhand);
     WaypointUIViewWaypoints(player, item);
   });
 }
 function WaypointUIDeleteWaypoint(player, item, waypoint) {
-  let UI = new ActionFormData8();
+  let UI = new ActionFormData9();
   let waypointConfig = JSON.parse(item.getDynamicProperty(WaypointDynamicPropertyID).toString()) ?? PFEWaypointDefaultConfig;
   UI.title({ translate: `translation.poke_pfe.WaypointUITitle` });
   UI.button({ translate: `*CONFIRM` }, `textures/poke/common/confirm`);
@@ -7688,7 +8705,7 @@ function WaypointUIDeleteWaypoint(player, item, waypoint) {
         v: PFEWaypointVersion,
         waypoints: waypointConfig.waypoints.filter((i) => i.id != waypoint.id)
       };
-      PokeSaveProperty(WaypointDynamicPropertyID, item, JSON.stringify(newProperty), player, EquipmentSlot6.Mainhand);
+      PokeSaveProperty(WaypointDynamicPropertyID, item, JSON.stringify(newProperty), player, EquipmentSlot7.Mainhand);
       return;
     } else
       selection++;
@@ -7725,7 +8742,7 @@ function WaypointUICreateWaypoint(player, item) {
       waypoints: waypointConfig.waypoints.concat(newWaypoint)
     };
     console.warn(JSON.stringify(newProperty));
-    PokeSaveProperty(WaypointDynamicPropertyID, item, JSON.stringify(newProperty), player, EquipmentSlot6.Mainhand);
+    PokeSaveProperty(WaypointDynamicPropertyID, item, JSON.stringify(newProperty), player, EquipmentSlot7.Mainhand);
     WaypointUIViewWaypoints(player, item);
     return;
   });
@@ -7817,7 +8834,7 @@ var WaypointIconPresets = [
   }
 ];
 function WaypointUIChangeWaypointIcon(player, item, waypoint) {
-  let UI = new ActionFormData8();
+  let UI = new ActionFormData9();
   let waypointConfig = JSON.parse(item.getDynamicProperty(WaypointDynamicPropertyID).toString()) ?? PFEWaypointDefaultConfig;
   UI.title({ translate: `translation.poke_pfe.WaypointUITitle` });
   UI.button({ translate: `*PRESET` }, `textures/poke/common/upcoming_events`);
@@ -7842,7 +8859,7 @@ function WaypointUIChangeWaypointIcon(player, item, waypoint) {
   });
 }
 function WaypointUISetIconPreset(player, item, waypoint) {
-  let UI = new ActionFormData8();
+  let UI = new ActionFormData9();
   let waypointConfig = JSON.parse(item.getDynamicProperty(WaypointDynamicPropertyID).toString()) ?? PFEWaypointDefaultConfig;
   UI.title({ translate: `translation.poke_pfe.WaypointUITitle` });
   for (let icon of WaypointIconPresets) {
@@ -7866,7 +8883,7 @@ function WaypointUISetIconPreset(player, item, waypoint) {
           v: PFEWaypointVersion,
           waypoints: waypointConfig.waypoints.filter((i) => i.id != waypoint.id).concat(newWaypoint)
         };
-        PokeSaveProperty(WaypointDynamicPropertyID, item, JSON.stringify(newProperty), player, EquipmentSlot6.Mainhand);
+        PokeSaveProperty(WaypointDynamicPropertyID, item, JSON.stringify(newProperty), player, EquipmentSlot7.Mainhand);
         WaypointUIViewWaypoints(player, item);
         return;
       } else
@@ -7901,23 +8918,26 @@ function WaypointUISetIconCustom(player, item, waypoint) {
       v: PFEWaypointVersion,
       waypoints: waypointConfig.waypoints.filter((i) => i.id != waypoint.id).concat(newWaypoint)
     };
-    PokeSaveProperty(WaypointDynamicPropertyID, item, JSON.stringify(newProperty), player, EquipmentSlot6.Mainhand);
+    PokeSaveProperty(WaypointDynamicPropertyID, item, JSON.stringify(newProperty), player, EquipmentSlot7.Mainhand);
     WaypointUIViewWaypoints(player, item);
   });
 }
 
 // scripts/main.ts
 system4.runInterval(() => {
-  for (let player of world8.getAllPlayers()) {
+  if (world9.getDynamicProperty(`poke_pfe:disable_armor_effects`))
+    return;
+  const customParse = world9.getDynamicProperty(`poke_pfe:custom_effect_parser`) == true ? true : false;
+  for (let player of world9.getAllPlayers()) {
     if (!player)
       continue;
-    CheckEffects(player, PFEArmorEffectData, JSON.stringify(player.getTags()).includes(`novelty:poke`));
+    CheckEffects(player, PFEArmorEffectData, JSON.stringify(player.getTags()).includes(`novelty:poke`), customParse);
   }
 }, 20);
-world8.afterEvents.playerJoin.subscribe((data) => {
-  let birthdays = JSON.parse(world8.getDynamicProperty(`poke:birthdays`).toString());
+world9.afterEvents.playerJoin.subscribe((data) => {
+  let birthdays = JSON.parse(world9.getDynamicProperty(`poke:birthdays`).toString());
   system4.runTimeout(() => {
-    world8.getAllPlayers().forEach((player) => {
+    world9.getAllPlayers().forEach((player) => {
       if (player.id == data.playerId) {
         let currentTime = new Date(Date.now() + PokeTimeZoneOffset(player));
         birthdays.forEach((birthday) => {
@@ -7942,7 +8962,7 @@ world8.afterEvents.playerJoin.subscribe((data) => {
 });
 function PFEHourTimeDownEvents() {
   let currentTime = new Date(Date.now());
-  let allPlayers = world8.getAllPlayers();
+  let allPlayers = world9.getAllPlayers();
   let randomPlayer = allPlayers.at(Math.abs(Math.round(Math.random() * (allPlayers.length - 1))));
   randomPlayer?.dimension.spawnEntity("poke:cassette_trader", randomPlayer.location).runCommand(`spreadplayers ~ ~ 30 40 @s ~10`);
 }
@@ -8069,28 +9089,29 @@ function UpdatePost(block, value, up) {
   }
   block.setPermutation(block.permutation.withState("poke:post_bit", value));
 }
-world8.beforeEvents.worldInitialize.subscribe((data) => {
-  world8.setDynamicProperty(PFECustomMineQuestsPropertyID, JSON.stringify([]));
-  world8.setDynamicProperty(PFECustomFarmQuestsPropertyID, JSON.stringify([]));
-  world8.setDynamicProperty(PFECustomCraftQuestsPropertyID, JSON.stringify([]));
-  world8.setDynamicProperty(PFECustomKillQuestsPropertyID, JSON.stringify([]));
+world9.beforeEvents.worldInitialize.subscribe((data) => {
+  world9.setDynamicProperty(PFECustomMineQuestsPropertyID, JSON.stringify([]));
+  world9.setDynamicProperty(PFECustomFarmQuestsPropertyID, JSON.stringify([]));
+  world9.setDynamicProperty(PFECustomCraftQuestsPropertyID, JSON.stringify([]));
+  world9.setDynamicProperty(PFECustomKillQuestsPropertyID, JSON.stringify([]));
+  world9.setDynamicProperty(PFECustomArmorEffectDynamicProperty, JSON.stringify([]));
   system4.runTimeout(() => {
     PFETimeValidation();
     ComputersCompat.init();
   }, Math.abs(60 - new Date(Date.now()).getSeconds()) * 20);
-  if (typeof world8.getDynamicProperty(PFEDisableConfigName) != "string") {
-    world8.setDynamicProperty(PFEDisableConfigName, JSON.stringify(PFEDisableConfigDefault));
+  if (typeof world9.getDynamicProperty(PFEDisableConfigName) != "string") {
+    world9.setDynamicProperty(PFEDisableConfigName, JSON.stringify(PFEDisableConfigDefault));
   }
-  let birthdayProperty = world8.getDynamicProperty(`poke:birthdays`);
+  let birthdayProperty = world9.getDynamicProperty(`poke:birthdays`);
   if (typeof birthdayProperty != "string")
-    world8.setDynamicProperty(`poke:birthdays`, `[]`);
-  if (typeof world8.getDynamicProperty(`poke:customEvents`) != "string") {
-    world8.setDynamicProperty(`poke:customEvents`, "[]");
+    world9.setDynamicProperty(`poke:birthdays`, `[]`);
+  if (typeof world9.getDynamicProperty(`poke:customEvents`) != "string") {
+    world9.setDynamicProperty(`poke:customEvents`, "[]");
   } else {
     try {
-      JSON.parse(world8.getDynamicProperty(`poke:customEvents`)?.toString());
+      JSON.parse(world9.getDynamicProperty(`poke:customEvents`)?.toString());
     } catch {
-      world8.setDynamicProperty(`poke:customEvents`, "[]");
+      world9.setDynamicProperty(`poke:customEvents`, "[]");
     }
   }
   data.itemComponentRegistry.registerCustomComponent(
@@ -8101,14 +9122,14 @@ world8.beforeEvents.worldInitialize.subscribe((data) => {
       }
     }
   );
-  if (typeof world8.getDynamicProperty(PFEBossEventConfigName) == "string") {
-    let settings = JSON.parse(world8.getDynamicProperty(PFEBossEventConfigName));
+  if (typeof world9.getDynamicProperty(PFEBossEventConfigName) == "string") {
+    let settings = JSON.parse(world9.getDynamicProperty(PFEBossEventConfigName));
     if (typeof settings.ticks != "number" || typeof settings.furnaceGolem != "object" || typeof settings.knightling != "object" || typeof settings.listener != "object" || typeof settings.zombken != "object" || typeof settings.miniDemonicAllay != "object" || typeof settings.necromancer != "object" || typeof settings.snowman != "object" || typeof settings.sparky != "object" || typeof settings.superStriker != "object" || typeof settings.theLogger != "object") {
-      world8.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(PFEDefaultBossEventSettings));
+      world9.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(PFEDefaultBossEventSettings));
     }
     ;
   } else {
-    world8.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(PFEDefaultBossEventSettings));
+    world9.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(PFEDefaultBossEventSettings));
   }
   data.itemComponentRegistry.registerCustomComponent(
     `poke-pfe:identifier`,
@@ -8128,7 +9149,7 @@ world8.beforeEvents.worldInitialize.subscribe((data) => {
     "poke:boss_event",
     {
       onUse(data2) {
-        let options = JSON.parse(world8.getDynamicProperty(PFEDisableConfigName).toString());
+        let options = JSON.parse(world9.getDynamicProperty(PFEDisableConfigName).toString());
         if (!options.bounty)
           return;
         if (PFEStartBossEvent() == 0) {
@@ -8137,9 +9158,9 @@ world8.beforeEvents.worldInitialize.subscribe((data) => {
           return;
         }
         ;
-        if (data2.source.getGameMode() == GameMode4.creative)
+        if (data2.source.getGameMode() == GameMode5.creative)
           return;
-        data2.source.getComponent(EntityComponentTypes7.Equippable).setEquipment(EquipmentSlot7.Mainhand, PokeDecrementStack(data2.itemStack));
+        data2.source.getComponent(EntityComponentTypes8.Equippable).setEquipment(EquipmentSlot8.Mainhand, PokeDecrementStack(data2.itemStack));
       }
     }
   );
@@ -8242,7 +9263,7 @@ world8.beforeEvents.worldInitialize.subscribe((data) => {
     "poke:normalMining",
     {
       onMineBlock(data2) {
-        PokeDamageItemUB(data2.itemStack, void 0, data2.source, EquipmentSlot7.Mainhand);
+        PokeDamageItemUB(data2.itemStack, void 0, data2.source, EquipmentSlot8.Mainhand);
         return;
       }
     }
@@ -8254,7 +9275,7 @@ world8.beforeEvents.worldInitialize.subscribe((data) => {
         if (data2.itemStack == void 0)
           return;
         if (data2.itemStack.typeId == "poke:nuke_ring") {
-          let options = JSON.parse(world8.getDynamicProperty(PFEDisableConfigName).toString());
+          let options = JSON.parse(world9.getDynamicProperty(PFEDisableConfigName).toString());
           if (!options.nukeRing)
             return;
         }
@@ -8266,7 +9287,7 @@ world8.beforeEvents.worldInitialize.subscribe((data) => {
         data2.source.playSound("random.bow");
         projComp.owner = data2.source;
         projComp.shoot(angle);
-        PokeDamageItemUB(data2.itemStack, void 0, data2.source, EquipmentSlot7.Mainhand);
+        PokeDamageItemUB(data2.itemStack, void 0, data2.source, EquipmentSlot8.Mainhand);
         return;
       }
     }
@@ -8569,15 +9590,15 @@ world8.beforeEvents.worldInitialize.subscribe((data) => {
     "poke_pfe:config",
     {
       onUse(data2) {
-        if (data2.source.getGameMode() == GameMode4.creative || data2.source.hasTag(`poke:config`)) {
-          let UI = new ActionFormData9();
+        if (data2.source.getGameMode() == GameMode5.creative || data2.source.hasTag(`poke:config`)) {
+          let UI = new ActionFormData10();
           UI.button({ translate: `translation.poke_pfe.bossEventConfig` }, `textures/poke/common/spawn_enabled`);
           UI.button({ translate: `translation.poke_pfe.disableConfig` }, `textures/poke/common/blacklist_add`);
           UI.show(data2.source).then((response) => {
             let selection = 0;
             if (response.selection == selection) {
-              if (world8.getDynamicProperty(PFEBossEventConfigName) == void 0) {
-                world8.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(PFEDefaultBossEventSettings));
+              if (world9.getDynamicProperty(PFEBossEventConfigName) == void 0) {
+                world9.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(PFEDefaultBossEventSettings));
               }
               PFEBossEventUIMainMenu(data2.source);
               return;
@@ -8592,7 +9613,7 @@ world8.beforeEvents.worldInitialize.subscribe((data) => {
             }
           });
         } else {
-          let UI = new ActionFormData9();
+          let UI = new ActionFormData10();
           UI.title({ translate: `translation.poke_pfe.insufficientPerms` });
           UI.body({ rawtext: [{ translate: `translation.poke_pfe.insufficientPerms.desc` }, { text: `poke:config
 
@@ -8618,20 +9639,20 @@ world8.beforeEvents.worldInitialize.subscribe((data) => {
         if (data2.itemStack === void 0)
           return;
         const cooldownComponent = data2.itemStack.getComponent("minecraft:cooldown");
-        const equippableComponent = data2.source.getComponent(EntityComponentTypes7.Equippable);
+        const equippableComponent = data2.source.getComponent(EntityComponentTypes8.Equippable);
         const moveDir = data2.source.getVelocity();
         var amount = data2.itemStack.amount;
         data2.source.spawnParticle("minecraft:wind_explosion_emitter", data2.source.location);
         data2.source.applyKnockback(moveDir.x, moveDir.z, 5, moveDir.y + 0.5);
         data2.source.playSound("component.jump_to_block");
-        if (data2.source.getGameMode() == GameMode4.creative)
+        if (data2.source.getGameMode() == GameMode5.creative)
           return;
         cooldownComponent.startCooldown(data2.source);
         if (amount <= 1) {
-          equippableComponent.setEquipment(EquipmentSlot7.Mainhand, new ItemStack7("minecraft:air", 1));
+          equippableComponent.setEquipment(EquipmentSlot8.Mainhand, new ItemStack8("minecraft:air", 1));
           return;
         }
-        equippableComponent.setEquipment(EquipmentSlot7.Mainhand, new ItemStack7(data2.itemStack.typeId, amount - 1));
+        equippableComponent.setEquipment(EquipmentSlot8.Mainhand, new ItemStack8(data2.itemStack.typeId, amount - 1));
         return;
       }
     }
@@ -8667,7 +9688,7 @@ world8.beforeEvents.worldInitialize.subscribe((data) => {
     {
       onUseOn(data2) {
         if (data2.itemStack.typeId == "poke:wither_spawner") {
-          let options = JSON.parse(world8.getDynamicProperty(PFEDisableConfigName).toString());
+          let options = JSON.parse(world9.getDynamicProperty(PFEDisableConfigName).toString());
           if (!options.witherSpawner)
             return;
         }
@@ -8678,7 +9699,7 @@ world8.beforeEvents.worldInitialize.subscribe((data) => {
         let faceLocY = --faceLoc.y;
         let faceLocZ = --faceLoc.z;
         var amount = data2.itemStack.amount;
-        const equippableComponent = data2.source.getComponent(EntityComponentTypes7.Equippable);
+        const equippableComponent = data2.source.getComponent(EntityComponentTypes8.Equippable);
         switch (blockFace) {
           case Direction2.North: {
             faceLocZ += 1.5;
@@ -8711,10 +9732,10 @@ world8.beforeEvents.worldInitialize.subscribe((data) => {
         if (player.getGameMode() == "creative")
           return;
         if (amount <= 1) {
-          equippableComponent.setEquipment(EquipmentSlot7.Mainhand, new ItemStack7("minecraft:air", 1));
+          equippableComponent.setEquipment(EquipmentSlot8.Mainhand, new ItemStack8("minecraft:air", 1));
           return;
         }
-        equippableComponent.setEquipment(EquipmentSlot7.Mainhand, new ItemStack7(data2.itemStack.typeId, amount - 1));
+        equippableComponent.setEquipment(EquipmentSlot8.Mainhand, new ItemStack8(data2.itemStack.typeId, amount - 1));
         return;
       }
     }
@@ -8745,7 +9766,7 @@ world8.beforeEvents.worldInitialize.subscribe((data) => {
         if (data2.itemStack === void 0)
           return;
         if (PFEDisabledOnUseItems.includes(data2.itemStack.typeId)) {
-          let options = JSON.parse(world8.getDynamicProperty(PFEDisableConfigName).toString());
+          let options = JSON.parse(world9.getDynamicProperty(PFEDisableConfigName).toString());
           switch (true) {
             case (data2.itemStack.typeId == "poke:quantum_teleporter" && !options.quantumTeleporter):
               return;
@@ -8764,7 +9785,7 @@ world8.beforeEvents.worldInitialize.subscribe((data) => {
         if (data2.itemStack.isStackable) {
           return;
         }
-        PokeDamageItemUB(data2.itemStack, void 0, data2.source, EquipmentSlot7.Mainhand);
+        PokeDamageItemUB(data2.itemStack, void 0, data2.source, EquipmentSlot8.Mainhand);
         return;
       }
     }
@@ -8794,7 +9815,7 @@ world8.beforeEvents.worldInitialize.subscribe((data) => {
         }
         data2.source.runCommand("" + id);
         cooldownComp.startCooldown(data2.source);
-        PokeDamageItemUB(data2.itemStack, void 0, data2.source, EquipmentSlot7.Mainhand);
+        PokeDamageItemUB(data2.itemStack, void 0, data2.source, EquipmentSlot8.Mainhand);
         return;
       }
     }
@@ -8814,7 +9835,7 @@ world8.beforeEvents.worldInitialize.subscribe((data) => {
         } else {
           multi = 0;
         }
-        PokeDamageItemUB(data2.itemStack, multi, data2.source, EquipmentSlot7.Mainhand);
+        PokeDamageItemUB(data2.itemStack, multi, data2.source, EquipmentSlot8.Mainhand);
         return;
       }
     }
@@ -8840,19 +9861,19 @@ world8.beforeEvents.worldInitialize.subscribe((data) => {
     "poke:fortune",
     {
       onPlayerDestroy(data2) {
-        const equippableComponent = data2.player?.getComponent(EntityComponentTypes7.Equippable);
+        const equippableComponent = data2.player?.getComponent(EntityComponentTypes8.Equippable);
         if (equippableComponent === void 0)
           return;
-        if (!equippableComponent.getEquipment(EquipmentSlot7.Mainhand)?.hasComponent(ItemComponentTypes5.Enchantable))
+        if (!equippableComponent.getEquipment(EquipmentSlot8.Mainhand)?.hasComponent(ItemComponentTypes5.Enchantable))
           return;
-        const enchantableComponent = equippableComponent.getEquipment(EquipmentSlot7.Mainhand)?.getComponent(ItemComponentTypes5.Enchantable);
+        const enchantableComponent = equippableComponent.getEquipment(EquipmentSlot8.Mainhand)?.getComponent(ItemComponentTypes5.Enchantable);
         if (!enchantableComponent.hasEnchantment(MinecraftEnchantmentTypes.Fortune))
           return;
         let fortuneLevel = enchantableComponent.getEnchantment(MinecraftEnchantmentTypes.Fortune).level;
         let rng = Math.round(Math.random());
         const blockLocation = `${data2.block.x} ${data2.block.y} ${data2.block.z}`;
         const blockId = data2.destroyedBlockPermutation.type.id.substring(5);
-        if (data2.player?.getGameMode() == GameMode4.survival) {
+        if (data2.player?.getGameMode() == GameMode5.survival) {
           if (fortuneLevel >= 3) {
             data2.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}.loot"`);
             data2.block.dimension.runCommandAsync(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}.loot"`);
@@ -8888,8 +9909,8 @@ world8.beforeEvents.worldInitialize.subscribe((data) => {
           return;
         const blockLocation = `${data2.block.location.x} ${data2.block.location.y} ${data2.block.location.z}`;
         const slabId = data2.block.typeId;
-        const equippableComponent = data2.player.getComponent(EntityComponentTypes7.Equippable);
-        const mainhand = equippableComponent.getEquipment(EquipmentSlot7.Mainhand);
+        const equippableComponent = data2.player.getComponent(EntityComponentTypes8.Equippable);
+        const mainhand = equippableComponent.getEquipment(EquipmentSlot8.Mainhand);
         if (mainhand != void 0) {
           if (mainhand.typeId == slabId && (data2.block.permutation.getState("minecraft:vertical_half") == "bottom" && data2.face == Direction2.Up || data2.block.permutation.getState("minecraft:vertical_half") == "top" && data2.face == Direction2.Down) && data2.block.permutation.getState("poke:double") == false) {
             var itemStackAmount = mainhand.amount - 1;
@@ -8898,10 +9919,10 @@ world8.beforeEvents.worldInitialize.subscribe((data) => {
             if (data2.player?.getGameMode() == "creative")
               return;
             if (itemStackAmount <= 0) {
-              equippableComponent.setEquipment(EquipmentSlot7.Mainhand, new ItemStack7("minecraft:air", 1));
+              equippableComponent.setEquipment(EquipmentSlot8.Mainhand, new ItemStack8("minecraft:air", 1));
               return;
             }
-            equippableComponent.setEquipment(EquipmentSlot7.Mainhand, new ItemStack7(slabId, itemStackAmount));
+            equippableComponent.setEquipment(EquipmentSlot8.Mainhand, new ItemStack8(slabId, itemStackAmount));
             return;
           } else
             return;
@@ -9320,8 +10341,8 @@ world8.beforeEvents.worldInitialize.subscribe((data) => {
         return;
       },
       onPlayerInteract(data2) {
-        const equippableComponent = data2.player?.getComponent(EntityComponentTypes7.Equippable);
-        const mainhandItem = equippableComponent.getEquipment(EquipmentSlot7.Mainhand);
+        const equippableComponent = data2.player?.getComponent(EntityComponentTypes8.Equippable);
+        const mainhandItem = equippableComponent.getEquipment(EquipmentSlot8.Mainhand);
         if (mainhandItem === void 0)
           return;
         const block_location = `${data2.block.x} ${data2.block.y} ${data2.block.z}`;
@@ -9336,12 +10357,12 @@ world8.beforeEvents.worldInitialize.subscribe((data) => {
           data2.block.setPermutation(data2.block.permutation.withState("poke:growth_stage", growth_stage));
           data2.dimension.runCommand("playsound item.bone_meal.use @a " + block_location);
           data2.dimension.runCommand("particle minecraft:crop_growth_emitter " + block_location);
-          if (data2.player?.getGameMode() != GameMode4.creative) {
+          if (data2.player?.getGameMode() != GameMode5.creative) {
             if (itemAfterUse1 == 0) {
               data2.player?.runCommand("clear @s bone_meal 0 1");
               return;
             }
-            equippableComponent.setEquipment(EquipmentSlot7.Mainhand, new ItemStack7(mainhandItem.typeId, itemAfterUse1));
+            equippableComponent.setEquipment(EquipmentSlot8.Mainhand, new ItemStack8(mainhandItem.typeId, itemAfterUse1));
             return;
           }
           return;
@@ -9453,7 +10474,7 @@ world8.beforeEvents.worldInitialize.subscribe((data) => {
     {
       onPlayerInteract(data2) {
         const slabId = data2.block.typeId;
-        const mainhand = data2.player.getComponent(EntityComponentTypes7.Equippable).getEquipment("Mainhand");
+        const mainhand = data2.player.getComponent(EntityComponentTypes8.Equippable).getEquipment("Mainhand");
         const options = {
           type: "poke:seat",
           location: data2.block.center(),
@@ -9484,7 +10505,7 @@ world8.beforeEvents.worldInitialize.subscribe((data) => {
         const blockState = data2.destroyedBlockPermutation.getState("poke:double");
         if (gm == "survival") {
           if (blockState == true) {
-            data2.dimension.spawnItem(new ItemStack7(blockId, 1), block_location);
+            data2.dimension.spawnItem(new ItemStack8(blockId, 1), block_location);
             return;
           }
           return;
@@ -9855,30 +10876,36 @@ world8.beforeEvents.worldInitialize.subscribe((data) => {
 system4.afterEvents.scriptEventReceive.subscribe((data) => {
   switch (data.id) {
     case `poke_pfe:enabled`: {
-      world8.getDimension(MinecraftDimensionTypes2.overworld).runCommand(`scriptevent ${data.message} true`);
+      world9.getDimension(MinecraftDimensionTypes2.overworld).runCommand(`scriptevent ${data.message} true`);
+      break;
+    }
+    case `poke_pfe:add_set_effect_preset`: {
+      const currentPresets = JSON.parse(world9.getDynamicProperty(PFECustomArmorEffectDynamicProperty).toString()) ?? [];
+      let newPresets = currentPresets.concat(JSON.parse(data.message).value) ?? currentPresets;
+      world9.setDynamicProperty(PFECustomArmorEffectDynamicProperty, JSON.stringify(newPresets));
       break;
     }
     case PFECustomMineQuestsPropertyID: {
-      const currentQuests = JSON.parse(world8.getDynamicProperty(PFECustomMineQuestsPropertyID).toString()) ?? [];
+      const currentQuests = JSON.parse(world9.getDynamicProperty(PFECustomMineQuestsPropertyID).toString()) ?? [];
       let newQuests = currentQuests.concat(JSON.parse(data.message).value) ?? currentQuests;
-      world8.setDynamicProperty(PFECustomMineQuestsPropertyID, JSON.stringify(newQuests));
+      world9.setDynamicProperty(PFECustomMineQuestsPropertyID, JSON.stringify(newQuests));
       break;
     }
     case PFECustomKillQuestsPropertyID: {
-      const currentQuests = JSON.parse(world8.getDynamicProperty(PFECustomKillQuestsPropertyID).toString()) ?? [];
+      const currentQuests = JSON.parse(world9.getDynamicProperty(PFECustomKillQuestsPropertyID).toString()) ?? [];
       let newQuests = currentQuests.concat(JSON.parse(data.message).value) ?? currentQuests;
-      world8.setDynamicProperty(PFECustomKillQuestsPropertyID, JSON.stringify(newQuests));
+      world9.setDynamicProperty(PFECustomKillQuestsPropertyID, JSON.stringify(newQuests));
       break;
     }
     case PFECustomFarmQuestsPropertyID: {
-      const currentQuests = JSON.parse(world8.getDynamicProperty(PFECustomFarmQuestsPropertyID).toString()) ?? [];
+      const currentQuests = JSON.parse(world9.getDynamicProperty(PFECustomFarmQuestsPropertyID).toString()) ?? [];
       let newQuests = currentQuests.concat(JSON.parse(data.message).value) ?? currentQuests;
-      world8.setDynamicProperty(PFECustomFarmQuestsPropertyID, JSON.stringify(newQuests));
+      world9.setDynamicProperty(PFECustomFarmQuestsPropertyID, JSON.stringify(newQuests));
     }
     case PFECustomCraftQuestsPropertyID: {
-      const currentQuests = JSON.parse(world8.getDynamicProperty(PFECustomCraftQuestsPropertyID).toString()) ?? [];
+      const currentQuests = JSON.parse(world9.getDynamicProperty(PFECustomCraftQuestsPropertyID).toString()) ?? [];
       let newQuests = currentQuests.concat(JSON.parse(data.message).value) ?? currentQuests;
-      world8.setDynamicProperty(PFECustomCraftQuestsPropertyID, JSON.stringify(newQuests));
+      world9.setDynamicProperty(PFECustomCraftQuestsPropertyID, JSON.stringify(newQuests));
     }
     default:
       break;

@@ -1,0 +1,54 @@
+{
+	"format_version": "1.21.70",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke_pfe:void_claymore"
+		},
+		"group": "claymore",
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" B ",
+			"IBI",
+			"USC"
+		],
+		"unlock": [
+			{
+				"item": "poke:void_ingot"
+			},
+			{
+				"item": "poke:void_block"
+			},
+			{
+				"item": "poke:demonic_stick"
+			},
+			{
+				"item": "poke:platinum_upgrade_core"
+			},
+			{
+				"item": "poke_pfe:demonic_claymore"
+			}
+		],
+		"key": {
+			"I": {
+				"item": "poke:void_ingot"
+			},
+			"B": {
+				"item": "poke:void_block"
+			},
+			"S": {
+				"item": "poke:demonic_stick"
+			},
+			"U": {
+				"item": "poke:platinum_upgrade_core"
+			},
+			"C": {
+				"item": "poke_pfe:demonic_claymore"
+			}
+		},
+		"result": {
+			"item": "poke_pfe:void_claymore"
+		}
+	}
+}

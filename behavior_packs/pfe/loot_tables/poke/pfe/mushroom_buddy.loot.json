@@ -2,7 +2,7 @@
 	"pools": [
 		{
 			"rolls": 3,
-			"entries": [
+			"entries": [ /*Total Weight: 262*/
 				{
 					"type": "item",
 					"name": "poke:fungal_hat",
@@ -12,25 +12,52 @@
 					"type": "item",
 					"name": "minecraft:red_mushroom",
 					"weight": 100,
-                    "functions": [{"function": "looting_enchant","count": {"max": 1,"min": 0}}]
+					"functions": [
+						{
+							"function": "looting_enchant",
+							"count": {
+								"max": 1,
+								"min": 0
+							}
+						}
+					]
 				},
 				{
 					"type": "item",
 					"name": "poke:turnip",
 					"weight": 10,
-                    "functions": [{"function": "looting_enchant","count": {"max": 1,"min": 0}}]
+					"functions": [
+						{
+							"function": "looting_enchant",
+							"count": {
+								"max": 1,
+								"min": 0
+							}
+						}
+					]
 				},
 				{
 					"type": "item",
 					"name": "minecraft:brown_mushroom",
 					"weight": 100,
-                    "functions": [{"function": "looting_enchant","count": {"max": 1,"min": 0}}]
+					"functions": [
+						{
+							"function": "looting_enchant",
+							"count": {
+								"max": 1,
+								"min": 0
+							}
+						}
+					]
 				},
-				{"type": "empty","weight": 50},
 				{
-						"type": "item",
-						"name": "poke:pfe-mushroom_buddy_pottery_sherd",
-						"weight": 1
+					"type": "empty",
+					"weight": 50
+				},
+				{
+					"type": "item",
+					"name": "poke:pfe-mushroom_buddy_pottery_sherd",
+					"weight": 1
 				}
 			]
 		}

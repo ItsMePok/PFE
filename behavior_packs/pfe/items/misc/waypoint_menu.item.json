@@ -13,7 +13,7 @@
 			},
 			"minecraft:max_stack_size": 1,
 			"minecraft:rarity": "common",
-			"minecraft:icon": "poke_boss_event",
+			"minecraft:icon": "poke_pfe_waypoint_menu",
 			"minecraft:custom_components": [
 				"poke_pfe:waypoint_menu"
 			]

@@ -1,0 +1,54 @@
+{
+	"format_version": "1.21.70",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke_pfe:radium_claymore"
+		},
+		"group": "claymore",
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" B ",
+			"IBI",
+			"USC"
+		],
+		"unlock": [
+			{
+				"item": "poke:radium_ingot"
+			},
+			{
+				"item": "poke:radium_block"
+			},
+			{
+				"item": "poke:onyx_shaft"
+			},
+			{
+				"item": "poke:diamond_upgrade_core"
+			},
+			{
+				"item": "poke_pfe:shade_claymore"
+			}
+		],
+		"key": {
+			"I": {
+				"item": "poke:radium_ingot"
+			},
+			"B": {
+				"item": "poke:radium_block"
+			},
+			"S": {
+				"item": "poke:onyx_shaft"
+			},
+			"U": {
+				"item": "poke:diamond_upgrade_core"
+			},
+			"C": {
+				"item": "poke_pfe:shade_claymore"
+			}
+		},
+		"result": {
+			"item": "poke_pfe:radium_claymore"
+		}
+	}
+}

@@ -15,15 +15,6 @@ Note x2: Quests that have been rolled not be able to be changed
 This is example code. This will add a Mine quest for 7x Cut Cobalt for 7x Copper Tokens:
 */
 /*
-Add-On Creators: You can add quests into PFE's quest system.
-
-Note: the custom quests get re-initialized each time the world starts. This is to ensure that players will not get quests for Add-Ons that are no longer in the world
-
-Note x2: Quests that have been rolled not be able to be changed
-
-This is example code. This will add a Mine quest for 7x Cut Cobalt for 7x Copper Tokens:
-*/
-/*
 import { ItemStack, world } from "@minecraft/server"
 
 interface PFEQuestInfo {

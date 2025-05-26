@@ -8,9 +8,9 @@
 			"crafting_table"
 		],
 		"pattern": [
-			"###",
-			"#*#",
-			"###"
+			"#6#",
+			"6*6",
+			"#6#"
 		],
 		"unlock": [
 			{
@@ -21,8 +21,11 @@
 			"#": {
 				"item": "poke:banished_star_x5"
 			},
-			"*": {
+			"6": {
 				"item": "poke:banished_star_x6"
+			},
+			"*": {
+				"item": "poke:banished_star_x7"
 			}
 		},
 		"result": {

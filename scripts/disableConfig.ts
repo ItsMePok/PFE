@@ -84,6 +84,7 @@ function PFEDisableConfigMainMenu(data: ItemComponentUseEvent) {
   } else {
     UI.button({ rawtext: [{ translate: `poke_pfe.waypoint_menu` }, { text: ":§c\n" }, { translate: `translation.poke_pfe.disabled` }] }, `textures/poke/pfe/waypoint_menu`)
   }
+  UI.button({ translate: `%poke_pfe.armor_effects:${world.getDynamicProperty(`poke_pfe:disable_armor_effects`) == true ? `§c\n%translation.poke_pfe.disabled` : `§a\n%translation.poke_pfe.enabled`}` }, `textures/poke/common/question`)
 
   UI.show(player).then(response => {
     let selection = 0
@@ -91,7 +92,7 @@ function PFEDisableConfigMainMenu(data: ItemComponentUseEvent) {
     if (response.selection == selection) {// Quantum Teleporter
       if (newProperty.quantumTeleporter) {
         newProperty.quantumTeleporter = false
-        console.warn(`Disabled Qunantum Teleporter`)
+        console.warn(`Disabled Quantum Teleporter`)
       } else newProperty.quantumTeleporter = true
       world.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty))
       PFEDisableConfigMainMenu(data)
@@ -168,6 +169,11 @@ function PFEDisableConfigMainMenu(data: ItemComponentUseEvent) {
       } else newProperty.waypoints = true
       newProperty.v = newProperty.v < 2 ? newProperty.v = 2 : newProperty.v
       world.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty))
+      PFEDisableConfigMainMenu(data)
+      return
+    } else selection++
+    if (response.selection == selection) {// Armor effects
+      world.getDynamicProperty(`poke_pfe:disable_armor_effects`) == false ? world.setDynamicProperty(`poke_pfe:disable_armor_effects`, true) : world.setDynamicProperty(`poke_pfe:disable_armor_effects`, false)
       PFEDisableConfigMainMenu(data)
       return
     } else selection++

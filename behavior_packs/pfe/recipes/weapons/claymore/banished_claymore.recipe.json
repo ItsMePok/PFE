@@ -1,0 +1,39 @@
+{
+	"format_version": "1.21.70",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke_pfe:banished_claymore"
+		},
+		"group": "claymore",
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" 6 ",
+			"565",
+			" S "
+		],
+		"unlock": [
+			{
+				"tag": "poke:banished_star"
+			},
+			{
+				"item": "poke:ban_hammer_shaft"
+			}
+		],
+		"key": {
+			"5": {
+				"item": "poke:banished_star_x5"
+			},
+			"6": {
+				"item": "poke:banished_star_x6"
+			},
+			"S": {
+				"item": "poke:ban_hammer_shaft"
+			}
+		},
+		"result": {
+			"item": "poke_pfe:banished_claymore"
+		}
+	}
+}

@@ -8,23 +8,17 @@
 			"crafting_table"
 		],
 		"pattern": [
-			"***",
-			"NON",
-			"***"
+			"4",
+			"4",
+			"4"
 		],
 		"unlock": [
 			{
-				"item": "poke:banished_star"
+				"tag": "poke:banished_star"
 			}
 		],
 		"key": {
-			"N": {
-				"item": "poke:banished_star_x5"
-			},
-			"O": {
-				"item": "poke:banished_star_x6"
-			},
-			"*": {
+			"4": {
 				"item": "poke:banished_star_x4"
 			}
 		},

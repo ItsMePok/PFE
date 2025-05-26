@@ -11,6 +11,24 @@
       "minecraft:display_name": {
         "value": "%poke_pfe.radium_battleaxe\n%poke_pfe.tag"
       },
+      "minecraft:digger": {
+        "destroy_speeds": [
+          {
+            "block": {
+              "tags": "query.any_tag( 'minecraft:is_sword_item_destructible','pfe:is_battleaxe_item_destructible' )"
+            },
+            "speed": 20
+          },
+          {
+            "block": "minecraft:bamboo_sapling",
+            "speed": 20
+          },
+          {
+            "block": "minecraft:bamboo",
+            "speed": 20
+          }
+        ]
+      },
       "minecraft:icon": "poke_radium_battleaxe",
       "minecraft:max_stack_size": 1,
       "minecraft:hand_equipped": true,
@@ -22,7 +40,7 @@
         }
       },
       "minecraft:damage": {
-        "value": 20
+        "value": 8
       },
       "minecraft:enchantable": {
         "value": 40,
@@ -33,7 +51,8 @@
         "repair_items": [
           {
             "items": [
-              "poke:repair_core"
+              "poke:repair_core",
+              "poke:radium_block"
             ],
             "repair_amount": "query.max_durability"
           },
@@ -57,7 +76,10 @@
       },
       "minecraft:tags": {
         "tags": [
-          "pfe:Command:function poke/pfe/radium_battleaxe:pfeCommandEnd"
+          "pfe:Command:function poke/pfe/radium_battleaxe:pfeCommandEnd",
+          "minecraft:diamond_tier",
+          "minecraft:is_sword",
+          "pfe:is_battleaxe"
         ]
       },
       "minecraft:custom_components": [

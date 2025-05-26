@@ -1,0 +1,54 @@
+{
+	"format_version": "1.21.70",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke_pfe:demonic_claymore"
+		},
+		"group": "claymore",
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" B ",
+			"IBI",
+			"USC"
+		],
+		"unlock": [
+			{
+				"item": "poke:demonic_ingot"
+			},
+			{
+				"item": "poke:demonic_block"
+			},
+			{
+				"item": "poke:demonic_stick"
+			},
+			{
+				"item": "poke:diamond_upgrade_core"
+			},
+			{
+				"item": "poke_pfe:hellish_claymore"
+			}
+		],
+		"key": {
+			"I": {
+				"item": "poke:demonic_ingot"
+			},
+			"B": {
+				"item": "poke:demonic_block"
+			},
+			"S": {
+				"item": "poke:demonic_stick"
+			},
+			"U": {
+				"item": "poke:diamond_upgrade_core"
+			},
+			"C": {
+				"item": "poke_pfe:hellish_claymore"
+			}
+		},
+		"result": {
+			"item": "poke_pfe:demonic_claymore"
+		}
+	}
+}

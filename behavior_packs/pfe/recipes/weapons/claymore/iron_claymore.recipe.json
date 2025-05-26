@@ -1,0 +1,42 @@
+{
+	"format_version": "1.21.70",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke_pfe:iron_claymore"
+		},
+		"group": "claymore",
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" B ",
+			"IBI",
+			" S "
+		],
+		"unlock": [
+			{
+				"item": "minecraft:iron_ingot"
+			},
+			{
+				"item": "minecraft:iron_block"
+			},
+			{
+				"item": "minecraft:stick"
+			}
+		],
+		"key": {
+			"I": {
+				"item": "minecraft:iron_ingot"
+			},
+			"B": {
+				"item": "minecraft:iron_block"
+			},
+			"S": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": {
+			"item": "poke_pfe:iron_claymore"
+		}
+	}
+}

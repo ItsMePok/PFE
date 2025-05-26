@@ -1,0 +1,42 @@
+{
+	"format_version": "1.21.70",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke_pfe:banished_battleaxe"
+		},
+		"group": "battleaxe",
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"454",
+			"3S3",
+			" 4 "
+		],
+		"unlock": [
+			{
+				"tag": "poke:banished_star"
+			},
+			{
+				"item": "poke:ban_hammer_shaft"
+			}
+		],
+		"key": {
+			"4": {
+				"item": "poke:banished_star_x4"
+			},
+			"5": {
+				"item": "poke:banished_star_x5"
+			},
+			"3": {
+				"item": "poke:banished_star_x3"
+			},
+			"S": {
+				"item": "poke:ban_hammer_shaft"
+			}
+		},
+		"result": {
+			"item": "poke_pfe:banished_battleaxe"
+		}
+	}
+}

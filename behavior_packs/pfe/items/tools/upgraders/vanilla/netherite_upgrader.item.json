@@ -9,7 +9,7 @@
 		},
 		"components": {
 			"minecraft:display_name": {
-				"value": "%poke_pfe.netherite_battleaxe\n%poke_pfe.tag"
+				"value": "%poke_pfe.netherite_upgrader\n%poke_pfe.tag"
 			},
 			"minecraft:icon": "poke_netherite_upgrader",
 			"minecraft:hand_equipped": true,

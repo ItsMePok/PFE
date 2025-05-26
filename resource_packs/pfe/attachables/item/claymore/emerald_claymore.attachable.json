@@ -1,0 +1,36 @@
+{
+	"format_version": "1.21.80",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "poke_pfe:emerald_claymore",
+			"render_controllers": [
+				"controller.render.item_default"
+			],
+			"materials": {
+				"default": "item_in_hand_entity_alphatest",
+				"enchanted": "entity_alphatest_glint_item"
+			},
+			"textures": {
+				"default": "textures/poke/pfe/emerald_claymore",
+				"enchanted": "textures/misc/enchanted_item_glint"
+			},
+			"geometry": {
+				"default": "geometry.poke_pfe.claymore"
+			},
+			"animations": {
+				"first_person_hold": "animation.poke_pfe.32.item.fp",
+				"third_person_hold": "animation.poke_pfe.32.item.3p"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"first_person_hold": "c.is_first_person"
+					},
+					{
+						"third_person_hold": "!c.is_first_person"
+					}
+				]
+			}
+		}
+	}
+}

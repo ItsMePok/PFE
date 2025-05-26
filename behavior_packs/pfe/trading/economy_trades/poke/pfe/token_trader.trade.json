@@ -200,6 +200,20 @@
 							"max_uses": 2147483647,
 							"wants": [
 								{
+									"item": "poke:platinum_token",
+									"quantity": 1
+								}
+							],
+							"gives": [
+								{
+									"item": "poke_pfe:persistence_core"
+								}
+							]
+						},
+						{
+							"max_uses": 2147483647,
+							"wants": [
+								{
 									"item": "poke:gold_token",
 									"quantity": 1
 								}

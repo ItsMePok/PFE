@@ -1,7 +1,0 @@
-execute if entity @s[hasitem=[{location=slot.armor.head,item=poke:shadow_robe_helmet},{location=slot.armor.chest,item=poke:shadow_robe_chestplate}]] run function poke/pfe/shadow_robe_effects
-execute if entity @s[hasitem=[{location=slot.armor.head,item=poke:swift_robe_helmet},{location=slot.armor.chest,item=poke:swift_robe_chestplate}]] run function poke/pfe/swift_robe_effects
-execute if entity @s[hasitem=[{location=slot.armor.head,item=poke:cobalt_robe_helmet},{location=slot.armor.chest,item=poke:cobalt_robe_chestplate}]] run function poke/pfe/cobalt_robe_effects
-execute if entity @s[hasitem=[{location=slot.armor.feet,item=poke:astral_boots},{location=slot.armor.legs,item=poke:astral_leggings}]] run function poke/pfe/astral_effects
-execute if entity @s[hasitem=[{location=slot.armor.legs,item=poke:medic_leggings},{location=slot.armor.feet,item=poke:medic_boots}]] run function poke/pfe/medic_radius_effects 
-execute if entity @s[hasitem=[{location=slot.armor.legs,item=poke:cactus_leggings},{location=slot.armor.feet,item=poke:cactus_boots}]] run function poke/pfe/cactus_radius_effects
-execute if entity @s[hasitem=[{location=slot.armor.feet,item=poke:death_boots},{location=slot.armor.legs,item=poke:death_leggings}]] run function poke/pfe/death_radius_effects

@@ -151,7 +151,7 @@ function WaypointUIManageWaypoint(player: Player, item: ItemStack, waypoint: Pok
   let waypointConfig: PokePFEWaypointItemConfig = JSON.parse(item.getDynamicProperty(WaypointDynamicPropertyID)!.toString()) ?? PFEWaypointDefaultConfig
   UI.title({ translate: `translation.poke_pfe.WaypointUITitle` })
 
-  UI.button({ translate: `*TELEPORT` }, `textures/poke/common/question`)
+  UI.button({ translate: `*TELEPORT` }, `textures/poke/common/teleport`)
   UI.button({ translate: `*UPDATE LOCATION` }, `textures/poke/common/question`)
   UI.button({ translate: `*RENAME` }, `textures/poke/common/edit`)
   UI.button({ translate: `*CHANGE ICON` }, `textures/poke/common/painting`)

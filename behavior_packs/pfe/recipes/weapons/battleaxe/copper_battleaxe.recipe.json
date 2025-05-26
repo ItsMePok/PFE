@@ -1,0 +1,35 @@
+{
+	"format_version": "1.21.70",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke_pfe:copper_battleaxe"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"DDD",
+			"DSD",
+			" D "
+		],
+		"unlock": [
+			{
+				"item": "minecraft:copper_ingot"
+			},
+			{
+				"item": "minecraft:copper_block"
+			}
+		],
+		"key": {
+			"D": {
+				"item": "minecraft:copper_ingot"
+			},
+			"S": {
+				"item": "stick"
+			}
+		},
+		"result": {
+			"item": "poke_pfe:copper_battleaxe"
+		}
+	}
+}

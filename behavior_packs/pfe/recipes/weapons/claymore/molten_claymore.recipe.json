@@ -1,0 +1,54 @@
+{
+	"format_version": "1.21.70",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke_pfe:molten_claymore"
+		},
+		"group": "claymore",
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" B ",
+			"IBI",
+			"USC"
+		],
+		"unlock": [
+			{
+				"item": "poke:molten_slimeball"
+			},
+			{
+				"item": "poke:ember_block"
+			},
+			{
+				"item": "poke:demonic_stick"
+			},
+			{
+				"item": "poke:platinum_upgrade_core"
+			},
+			{
+				"item": "poke_pfe:demonic_claymore"
+			}
+		],
+		"key": {
+			"I": {
+				"item": "poke:molten_slimeball"
+			},
+			"B": {
+				"item": "poke:ember_block"
+			},
+			"S": {
+				"item": "poke:demonic_stick"
+			},
+			"U": {
+				"item": "poke:platinum_upgrade_core"
+			},
+			"C": {
+				"item": "poke_pfe:demonic_claymore"
+			}
+		},
+		"result": {
+			"item": "poke_pfe:molten_claymore"
+		}
+	}
+}

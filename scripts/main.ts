@@ -7,15 +7,17 @@ import { PokeBirthdays, PokeTimeConfigUIMainMenu, PokeTimeGreeting, PokeTimeZone
 import { PFEBoltBowsComponent } from "./boltbow";
 import { PFEDisableConfigOptions, PFEDisableConfigDefault, PFEDisableConfigMainMenu, PFEDisableConfigName, PFEDisabledOnUseItems } from "./disableConfig";
 import { ActionFormData } from "@minecraft/server-ui";
-import { CheckEffects, PFEArmorEffectData } from "./armorEffects";
+import { CheckEffects, PFEArmorEffectData, PFECustomArmorEffectDynamicProperty, PFECustomEffectInfo, PFEUnparsedCustomEffectInfo } from "./armorEffects";
 import { PFECustomCraftQuestsPropertyID, PFECustomFarmQuestsPropertyID, PFECustomKillQuestsPropertyID, PFECustomMineQuestsPropertyID, PFEQuestInfo, PokePFEQuestComponent } from "./quests";
 import ComputersCompat, { initExampleStickers } from "./addonCompatibility/jigarbov";
 import { PokePFEWaypointComponent } from "./waypoints";
 //world.scoreboard.addObjective(`poke_pfe:`)
 system.runInterval(() => {
+    if (world.getDynamicProperty(`poke_pfe:disable_armor_effects`)) return;
+    const customParse = world.getDynamicProperty(`poke_pfe:custom_effect_parser`) == true ? true : false
     for (let player of world.getAllPlayers()) {
         if (!player) continue;
-        CheckEffects(player, PFEArmorEffectData, JSON.stringify(player.getTags()).includes(`novelty:poke`))
+        CheckEffects(player, PFEArmorEffectData, JSON.stringify(player.getTags()).includes(`novelty:poke`), customParse)
     }
 }, 20)
 
@@ -176,6 +178,7 @@ world.beforeEvents.worldInitialize.subscribe(data => {
     world.setDynamicProperty(PFECustomFarmQuestsPropertyID, JSON.stringify([]))
     world.setDynamicProperty(PFECustomCraftQuestsPropertyID, JSON.stringify([]))
     world.setDynamicProperty(PFECustomKillQuestsPropertyID, JSON.stringify([]))
+    world.setDynamicProperty(PFECustomArmorEffectDynamicProperty, JSON.stringify([]))
     system.runTimeout(() => {
         PFETimeValidation()
         /* Outgoing Addon Compatibility*/
@@ -1623,6 +1626,12 @@ world.beforeEvents.worldInitialize.subscribe(data => {
 /*Incoming Addon Compatibility/Integrations*/
 system.afterEvents.scriptEventReceive.subscribe((data) => {
     switch (data.id) {
+        /* case `poke:test`: {
+             const item = data.sourceEntity?.getComponent(EntityComponentTypes.Equippable)?.getEquipment(EquipmentSlot.Mainhand) ?? new ItemStack(`minecraft:dirt`)
+             item.setLore(["poke_pfe:night_vision", "poke_pfe:custom_preset", "Hi this is a test"])
+             data.sourceEntity?.getComponent(EntityComponentTypes.Equippable)?.setEquipment(EquipmentSlot.Mainhand, item)
+             console.warn(`Attempting to add lore item: ${JSON.stringify(item)}, Player valid?:${data.sourceEntity?.isValid()}`)
+         }*/
         /**
          This will send true (as a string) to the scriptevent defined in the message part 
 
@@ -1632,6 +1641,15 @@ system.afterEvents.scriptEventReceive.subscribe((data) => {
          */
         case `poke_pfe:enabled`: {
             world.getDimension(MinecraftDimensionTypes.overworld).runCommand(`scriptevent ${data.message} true`)
+            break;
+        }
+        /*
+        This can be used to add additional presets to the set effects
+        */
+        case `poke_pfe:add_set_effect_preset`: {
+            const currentPresets: PFECustomEffectInfo[] = JSON.parse(world.getDynamicProperty(PFECustomArmorEffectDynamicProperty)!.toString()) ?? []
+            let newPresets = currentPresets.concat(JSON.parse(data.message).value) ?? currentPresets
+            world.setDynamicProperty(PFECustomArmorEffectDynamicProperty, JSON.stringify(newPresets))
             break;
         }
         /*

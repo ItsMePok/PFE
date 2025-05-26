@@ -1,0 +1,60 @@
+{
+	"format_version": "1.21.70",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke_pfe:death_claymore"
+		},
+		"group": "claymore",
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"UB ",
+			"IBI",
+			"XSC"
+		],
+		"unlock": [
+			{
+				"item": "poke:death_ingot"
+			},
+			{
+				"item": "poke:death_block"
+			},
+			{
+				"item": "poke:demonic_stick"
+			},
+			{
+				"item": "poke:platinum_upgrade_core"
+			},
+			{
+				"item": "poke_pfe:void_claymore"
+			},
+			{
+				"item": "poke_pfe:molten_claymore"
+			}
+		],
+		"key": {
+			"I": {
+				"item": "poke:death_ingot"
+			},
+			"B": {
+				"item": "poke:death_block"
+			},
+			"S": {
+				"item": "poke:demonic_stick"
+			},
+			"U": {
+				"item": "poke:platinum_upgrade_core"
+			},
+			"C": {
+				"item": "poke_pfe:void_claymore"
+			},
+			"X": {
+				"item": "poke_pfe:molten_claymore"
+			}
+		},
+		"result": {
+			"item": "poke_pfe:death_claymore"
+		}
+	}
+}

@@ -1,0 +1,42 @@
+{
+	"format_version": "1.21.70",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke_pfe:emerald_claymore"
+		},
+		"group": "claymore",
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" B ",
+			"IBI",
+			" S "
+		],
+		"unlock": [
+			{
+				"item": "minecraft:emerald"
+			},
+			{
+				"item": "minecraft:emerald_block"
+			},
+			{
+				"item": "minecraft:stick"
+			}
+		],
+		"key": {
+			"I": {
+				"item": "minecraft:emerald"
+			},
+			"B": {
+				"item": "minecraft:emerald_block"
+			},
+			"S": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": {
+			"item": "poke_pfe:emerald_claymore"
+		}
+	}
+}

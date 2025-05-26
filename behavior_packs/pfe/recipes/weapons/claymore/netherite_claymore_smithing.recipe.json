@@ -1,0 +1,15 @@
+{
+	"format_version": "1.21.70",
+	"minecraft:recipe_smithing_transform": {
+		"description": {
+			"identifier": "poke_pfe:smithing_netherite_claymore"
+		},
+		"tags": [
+			"smithing_table"
+		],
+		"template": "minecraft:netherite_upgrade_smithing_template",
+		"base": "poke_pfe:diamond_claymore",
+		"addition": "minecraft:netherite_ingot",
+		"result": "poke_pfe:netherite_claymore"
+	}
+}

@@ -11,12 +11,17 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.nebula_scythe\n%poke_pfe.tag"
 			},
+			"minecraft:rarity": "common",
 			"minecraft:custom_components": [
 				"poke:normalMining",
 				"poke:hitEffects"
 			],
 			"minecraft:can_destroy_in_creative": false,
 			"minecraft:durability": {
+				"damage_chance": {
+					"max": 100,
+					"min": 60
+				},
 				"max_durability": 25100
 			},
 			"minecraft:damage": {
@@ -24,6 +29,12 @@
 			},
 			"minecraft:digger": {
 				"destroy_speeds": [
+					{
+						"block": {
+							"tags": "query.any_tag( 'minecraft:is_sword_item_destructible','pfe:is_scythe_item_destructible' )"
+						},
+						"speed": 60
+					},
 					{
 						"block": "minecraft:web",
 						"speed": 60
@@ -49,7 +60,8 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core"
+							"poke:repair_core",
+							"poke:nebula_block"
 						],
 						"repair_amount": "query.max_durability"
 					},

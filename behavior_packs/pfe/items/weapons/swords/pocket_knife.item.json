@@ -37,7 +37,9 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core"
+							"poke:repair_core",
+							"poke:cobalt_block",
+							"minecraft:iron_block"
 						],
 						"repair_amount": "q.max_durability"
 					},

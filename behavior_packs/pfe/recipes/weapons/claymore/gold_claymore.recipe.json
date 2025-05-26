@@ -1,0 +1,42 @@
+{
+	"format_version": "1.21.70",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke_pfe:gold_claymore"
+		},
+		"group": "claymore",
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" B ",
+			"IBI",
+			" S "
+		],
+		"unlock": [
+			{
+				"item": "minecraft:gold_ingot"
+			},
+			{
+				"item": "minecraft:gold_block"
+			},
+			{
+				"item": "minecraft:stick"
+			}
+		],
+		"key": {
+			"I": {
+				"item": "minecraft:gold_ingot"
+			},
+			"B": {
+				"item": "minecraft:gold_block"
+			},
+			"S": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": {
+			"item": "poke_pfe:gold_claymore"
+		}
+	}
+}

@@ -1,6 +1,83 @@
 {
 	"texture_data": {
-		//Swords
+		"poke_pfe_amethyst_claymore": {
+			"textures": "textures/poke/pfe/amethyst_claymore"
+		},
+		"poke_pfe_astral_claymore": {
+			"textures": "textures/poke/pfe/astral_claymore"
+		},
+		"poke_pfe_banished_claymore": {
+			"textures": "textures/poke/pfe/banished_claymore"
+		},
+		"poke_pfe_cobalt_claymore": {
+			"textures": "textures/poke/pfe/cobalt_claymore"
+		},
+		"poke_pfe_copper_claymore": {
+			"textures": "textures/poke/pfe/copper_claymore"
+		},
+		"poke_pfe_death_claymore": {
+			"textures": "textures/poke/pfe/death_claymore"
+		},
+		"poke_pfe_demonic_claymore": {
+			"textures": "textures/poke/pfe/demonic_claymore"
+		},
+		"poke_pfe_diamond_claymore": {
+			"textures": "textures/poke/pfe/diamond_claymore"
+		},
+		"poke_pfe_emerald_claymore": {
+			"textures": "textures/poke/pfe/emerald_claymore"
+		},
+		"poke_pfe_galaxy_claymore": {
+			"textures": "textures/poke/pfe/galaxy_claymore"
+		},
+		"poke_pfe_godly_claymore": {
+			"textures": "textures/poke/pfe/godly_claymore"
+		},
+		"poke_pfe_gold_claymore": {
+			"textures": "textures/poke/pfe/gold_claymore"
+		},
+		"poke_pfe_hellish_claymore": {
+			"textures": "textures/poke/pfe/hellish_claymore"
+		},
+		"poke_pfe_holy_claymore": {
+			"textures": "textures/poke/pfe/holy_claymore"
+		},
+		"poke_pfe_iron_claymore": {
+			"textures": "textures/poke/pfe/iron_claymore"
+		},
+		"poke_pfe_medic_claymore": {
+			"textures": "textures/poke/pfe/medic_claymore"
+		},
+		"poke_pfe_molten_claymore": {
+			"textures": "textures/poke/pfe/molten_claymore"
+		},
+		"poke_pfe_nebula_claymore": {
+			"textures": "textures/poke/pfe/nebula_claymore"
+		},
+		"poke_pfe_netherite_claymore": {
+			"textures": "textures/poke/pfe/netherite_claymore"
+		},
+		"poke_pfe_onyx_claymore": {
+			"textures": "textures/poke/pfe/onyx_claymore"
+		},
+		"poke_pfe_radium_claymore": {
+			"textures": "textures/poke/pfe/radium_claymore"
+		},
+		"poke_pfe_redstone_claymore": {
+			"textures": "textures/poke/pfe/redstone_claymore"
+		},
+		"poke_pfe_shade_claymore": {
+			"textures": "textures/poke/pfe/shade_claymore"
+		},
+		"poke_pfe_stone_claymore": {
+			"textures": "textures/poke/pfe/stone_claymore"
+		},
+		"poke_pfe_void_claymore": {
+			"textures": "textures/poke/pfe/void_claymore"
+		},
+		"poke_pfe_wood_claymore": {
+			"textures": "textures/poke/pfe/wood_claymore"
+		},
 		"poke_pocket_knife": {
 			"textures": "textures/poke/pfe/pocket_knife"
 		},
@@ -49,7 +126,15 @@
 		"poke_death_sword": {
 			"textures": "textures/poke/pfe/death_sword"
 		},
-		//Battleaxes
+		"poke_pfe_banished_battleaxe": {
+			"textures": "textures/poke/pfe/banished_battleaxe"
+		},
+		"poke_pfe_copper_battleaxe": {
+			"textures": "textures/poke/pfe/copper_battleaxe"
+		},
+		"poke_pfe_redstone_battleaxe": {
+			"textures": "textures/poke/pfe/redstone_battleaxe"
+		},
 		"poke_medic_battleaxe": {
 			"textures": "textures/poke/pfe/medic_battleaxe"
 		},
@@ -119,7 +204,6 @@
 		"poke_shade_battleaxe": {
 			"textures": "textures/poke/pfe/shade_battleaxe"
 		},
-		//Scythes
 		"poke_medic_scythe": {
 			"textures": "textures/poke/pfe/medic_scythe"
 		},
@@ -182,15 +266,13 @@
 		},
 		"poke_demonic_slasher": {
 			"textures": "textures/poke/pfe/demonic_slasher"
-		}, //Demonic Scythe
-		//Bow
+		},
 		"poke_holy_bow": {
 			"textures": "textures/poke/pfe/holy_bow_standby"
 		},
 		"poke_galaxy_bow": {
 			"textures": "textures/poke/pfe/galaxy_bow"
 		},
-		//Crossbow
 		"poke_honey_crossbow": {
 			"textures": "textures/poke/pfe/honey_crossbow"
 		},
@@ -209,7 +291,6 @@
 		"poke_hellish_crossbow": {
 			"textures": "textures/poke/pfe/hellish_crossbow"
 		},
-		//BoltBow
 		"poke_astral_boltbow": {
 			"textures": "textures/poke/pfe/astral_boltbow_item"
 		},
@@ -231,7 +312,6 @@
 		"poke_cobalt_boltbow": {
 			"textures": "textures/poke/pfe/cobalt_boltbow_item"
 		},
-		//Arrow
 		"poke_volt_arrow": {
 			"textures": "textures/poke/pfe/volt_arrow_item"
 		},
@@ -247,12 +327,9 @@
 		"poke_galaxy_arrow": {
 			"textures": "textures/poke/pfe/galaxy_arrow_item"
 		},
-		//Tools
-		//Shovels
 		"poke_snow_shovel": {
 			"textures": "textures/poke/pfe/snow_shovel"
 		},
-		//Pickaxes
 		"poke_shade_pickaxe": {
 			"textures": "textures/poke/pfe/shade_pickaxe"
 		},
@@ -310,7 +387,6 @@
 		"poke_swift_pickaxe": {
 			"textures": "textures/poke/pfe/swift_pickaxe"
 		},
-		//Axes
 		"poke_nebula_logger": {
 			"textures": "textures/poke/pfe/nebula_logger"
 		},
@@ -362,11 +438,9 @@
 		"poke_cobalt_axe": {
 			"textures": "textures/poke/pfe/cobalt_axe"
 		},
-		//Hoes
 		"poke_nebula_hoe": {
 			"textures": "textures/poke/pfe/nebula_hoe"
 		},
-		//Haxels
 		"poke_wooden_haxel": {
 			"textures": "textures/poke/pfe/wooden_haxel"
 		},
@@ -436,7 +510,6 @@
 		"poke_molten_haxel": {
 			"textures": "textures/poke/pfe/molten_haxel"
 		},
-		//Ban Hammer
 		"poke_ban_hammer": {
 			"textures": "textures/poke/pfe/ban_hammer"
 		},
@@ -449,10 +522,9 @@
 		"poke_ban_hammer_grip": {
 			"textures": "textures/poke/pfe/ban_hammer_grip"
 		},
-		//Upgraders
-		"poke_budificator": {
+		"poke_amethyst_upgrader": {
 			"textures": "textures/poke/pfe/amethyst_upgrader"
-		}, //Amethyst upgrader
+		},
 		"poke_obsidian_depressor": {
 			"textures": "textures/poke/pfe/obsidian_depressor"
 		},
@@ -525,7 +597,6 @@
 		"poke_astral_upgrader": {
 			"textures": "textures/poke/pfe/astral_upgrader"
 		},
-		//Magnets
 		"poke_xp_magnet": {
 			"textures": "textures/poke/pfe/xp_magnet"
 		},
@@ -547,33 +618,30 @@
 		"poke_magnet_core": {
 			"textures": "textures/poke/pfe/magnet_core"
 		},
-		//Keys/Misc
 		"poke_ruin_key": {
 			"textures": "textures/poke/pfe/ruin_key"
 		},
 		"poke-pfe:identifier": {
 			"textures": "textures/poke/pfe/identifier"
 		},
-		//Bounties
+		"poke_pfe_waypoint_menu": {
+			"textures": "textures/poke/pfe/waypoint_menu"
+		},
 		"poke_boss_event": {
 			"textures": "textures/poke/pfe/bounty"
 		},
-		//Configs
 		"poke_boss_event_config": {
 			"textures": "textures/poke/pfe/boss_event_config"
 		},
 		"poke_calendar": {
 			"textures": "textures/poke/common/calendar"
 		},
-		//Voiding
 		"poke_item_voider": {
 			"textures": "textures/poke/pfe/item_voider"
 		},
-		//Minecarts
 		"poke_mail_cart": {
 			"textures": "textures/poke/pfe/mail_cart"
 		},
-		//Staffs
 		"poke_zombifier": {
 			"textures": "textures/poke/pfe/zombifier"
 		},
@@ -583,14 +651,12 @@
 		"poke_necromancer_staff": {
 			"textures": "textures/poke/pfe/necromancer_staff"
 		},
-		//-zookas
 		"poke_blazooka": {
 			"textures": "textures/poke/pfe/blazooka"
 		},
 		"poke_windzooka": {
 			"textures": "textures/poke/pfe/windzooka"
 		},
-		//Bundled Items
 		"pfe-gift_box": {
 			"textures": "textures/poke/pfe/pfe-gift_box"
 		},
@@ -606,7 +672,6 @@
 		"poke_bundled_sugarcane": {
 			"textures": "textures/poke/pfe/bundled_sugarcane"
 		},
-		//Armor Stand
 		"poke_armor_stand_remover": {
 			"textures": "textures/poke/pfe/armor_stand_remover"
 		},
@@ -619,7 +684,6 @@
 		"poke_armor_stand_hider": {
 			"textures": "textures/poke/pfe/armor_stand_hider"
 		},
-		//Electrical Tools
 		"poke_panic_button": {
 			"textures": "textures/poke/pfe/panic_button"
 		},
@@ -659,7 +723,6 @@
 				]
 			}
 		},
-		//Electrical Crafting Components
 		"poke_wire": {
 			"textures": "textures/poke/pfe/wire"
 		},
@@ -684,7 +747,6 @@
 		"poke_gps_module": {
 			"textures": "textures/poke/pfe/gps_module"
 		},
-		//Boss Drops
 		"poke_charred_poppy": {
 			"textures": "textures/poke/pfe/charred_poppy"
 		},
@@ -694,7 +756,6 @@
 		"poke_floppy_disk": {
 			"textures": "textures/poke/pfe/floppy_disk"
 		},
-		//Sticks
 		"poke_godly_stick": {
 			"textures": "textures/poke/pfe/godly_stick"
 		},
@@ -707,7 +768,6 @@
 		"poke_nebula_stick": {
 			"textures": "textures/poke/pfe/nebula_stick"
 		},
-		//Banished Stars
 		"poke_banished_star": {
 			"textures": "textures/poke/pfe/banished_star"
 		},
@@ -738,7 +798,6 @@
 		"poke_banished_star_x10": {
 			"textures": "textures/poke/pfe/banished_star_x10"
 		},
-		//Food
 		"poke_pumpkin_spice": {
 			"textures": "textures/poke/pfe/pumpkin_spice"
 		},
@@ -817,7 +876,6 @@
 		"poke_golden_turnip": {
 			"textures": "textures/poke/pfe/golden_turnip"
 		},
-		//Potions
 		"poke_nebula_potion": {
 			"textures": "textures/poke/pfe/nebula_potion"
 		},
@@ -845,7 +903,6 @@
 		"poke_xp_vial": {
 			"textures": "textures/poke/pfe/xp_vial"
 		},
-		//Cosmetics
 		"poke_top_hat": {
 			"textures": "textures/poke/pfe/top_hat"
 		},
@@ -951,7 +1008,9 @@
 		"poke_crab_pal": {
 			"textures": "textures/poke/pfe/crab_pal"
 		},
-		//Cores
+		"poke_pfe_persistence_core": {
+			"textures": "textures/poke/pfe/persistence_core"
+		},
 		"poke_nebula_core": {
 			"textures": "textures/poke/pfe/nebula_core"
 		},
@@ -979,7 +1038,6 @@
 		"poke_blank_core": {
 			"textures": "textures/poke/pfe/blank_core"
 		},
-		//Ingots
 		"poke_cobalt_ingot": {
 			"textures": "textures/poke/pfe/cobalt_ingot"
 		},
@@ -1013,7 +1071,6 @@
 		"poke_onyx_ingot": {
 			"textures": "textures/poke/pfe/onyx_ingot"
 		},
-		//Alloys
 		"poke_medic_ingot": {
 			"textures": "textures/poke/pfe/medic_ingot"
 		},
@@ -1026,7 +1083,6 @@
 		"poke_molten_slimeball": {
 			"textures": "textures/poke/pfe/molten_slimeball"
 		},
-		//Nuggets
 		"poke_radium_nugget": {
 			"textures": "textures/poke/pfe/radium_nugget"
 		},
@@ -1069,7 +1125,6 @@
 		"poke_astral_nugget": {
 			"textures": "textures/poke/pfe/astral_nugget"
 		},
-		//Raw Ore
 		"poke_raw_galaxy": {
 			"textures": "textures/poke/pfe/raw_galaxy"
 		},
@@ -1103,7 +1158,6 @@
 		"poke_raw_astral": {
 			"textures": "textures/poke/pfe/raw_astral"
 		},
-		//Gem Holder
 		"poke_echo_holder": {
 			"textures": "textures/poke/pfe/echo_holder"
 		},
@@ -1122,7 +1176,6 @@
 		"poke_diamond_gem_holder": {
 			"textures": "textures/poke/pfe/diamond_holder"
 		},
-		//Gem
 		"poke_resist_gem": {
 			"textures": "textures/poke/pfe/resist_gem"
 		},
@@ -1183,7 +1236,6 @@
 		"poke_aqua_gem": {
 			"textures": "textures/poke/pfe/aqua_gem"
 		},
-		//Ring
 		"poke_resist_ring": {
 			"textures": "textures/poke/pfe/resist_ring"
 		},
@@ -1247,7 +1299,6 @@
 		"poke_gravity_ring": {
 			"textures": "textures/poke/pfe/gravity_ring"
 		},
-		//Bills
 		"poke_pma_bill_1": {
 			"textures": "textures/poke/pfe/pma_bill_1"
 		},
@@ -1278,7 +1329,6 @@
 		"poke_dollar_bill_1": {
 			"textures": "textures/poke/pfe/dollar_bill_1"
 		},
-		//Spawn Eggs
 		"poke_bone_bear_spawn_egg": {
 			"textures": "textures/poke/pfe/bone_bear_spawn_egg"
 		},
@@ -1432,7 +1482,6 @@
 		"poke_wither_spawner": {
 			"textures": "textures/poke/pfe/wither_spawner"
 		},
-		//Tokens
 		"poke_copper_token": {
 			"textures": "textures/poke/pfe/copper_token"
 		},
@@ -1448,7 +1497,6 @@
 		"poke_platinum_token": {
 			"textures": "textures/poke/pfe/platinum_token"
 		},
-		//Spells
 		"poke_dodge_spell": {
 			"textures": "textures/poke/pfe/dodge_spell"
 		},
@@ -1458,7 +1506,6 @@
 		"poke_fireball_spell": {
 			"textures": "textures/poke/pfe/fireball_spell"
 		},
-		//Quests
 		"poke_uo_kill_quest": {
 			"textures": "textures/poke/pfe/uo_kill_quest"
 		},
@@ -1483,7 +1530,6 @@
 		"poke_craft_quest": {
 			"textures": "textures/poke/pfe/craft_quest"
 		},
-		//Sherds
 		"poke_snowflake_pottery_sherd": {
 			"textures": "textures/poke/pfe/snowflake_pottery_sherd"
 		},
@@ -1559,7 +1605,6 @@
 		"poke_bee_pottery_sherd": {
 			"textures": "textures/poke/pfe/bee_pottery_sherd"
 		},
-		//Cassettes
 		"poke_cassette_danny": {
 			"textures": "textures/poke/pfe/cassette_danny"
 		},
@@ -1806,7 +1851,6 @@
 		"poke_empty_cassette": {
 			"textures": "textures/poke/pfe/empty_cassette"
 		},
-		//Single Piece Armor
 		"poke_nv_goggles": {
 			"textures": "textures/poke/pfe/nv_goggles"
 		},
@@ -1816,7 +1860,6 @@
 		"poke_miner_helmet": {
 			"textures": "textures/poke/pfe/miner_helmet"
 		},
-		//Armors
 		"poke_ember_robe_chestplate": {
 			"textures": "textures/poke/pfe/ember_robe_chestplate"
 		},

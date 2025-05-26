@@ -21,6 +21,36 @@
 				}
 			}
 		},
+		"animation.poke_pfe.32.item.fp": {
+			"loop": true,
+			"bones": {
+				"rightitem": {
+					"rotation": [-45.75, -1, 197.09],
+					"position": [-6, -15, 2],
+					"scale": [0.96, 1.46, 0.96]
+				},
+				"bone": {
+					"rotation": [62.5, 10, 40],
+					"position": [-12, 23, -7],
+					"scale": 0.5
+				}
+			}
+		},
+		"animation.poke_pfe.32.item.3p": {
+			"loop": true,
+			"bones": {
+				"rightitem": {
+					"rotation": [25, 10, 200],
+					"position": [0.5, -2.45, -7.58],
+					"scale": [0.29, 0.59, 0.29]
+				},
+				"bone": {
+					"rotation": [0, 45, 90],
+					"position": [-8, 23, -21],
+					"scale": 1
+				}
+			}
+		},
 		"animation.poke_pfe.scythe.first_person_hold": {
 			"loop": "hold_on_last_frame",
 			"bones": {

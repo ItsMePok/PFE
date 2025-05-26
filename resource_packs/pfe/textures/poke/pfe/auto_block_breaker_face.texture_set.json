@@ -3,6 +3,6 @@
 	"minecraft:texture_set": {
 		"color": "auto_block_breaker_face",
 		"metalness_emissive_roughness": "auto_block_breaker_face_mer",
-		"normal": "auto_block_breaker_face_height"
+		"heightmap": "auto_block_breaker_face_height"
 	}
 }

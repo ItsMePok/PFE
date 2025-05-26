@@ -1,0 +1,54 @@
+{
+	"format_version": "1.21.70",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke_pfe:onyx_claymore"
+		},
+		"group": "claymore",
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" B ",
+			"IBI",
+			"USC"
+		],
+		"unlock": [
+			{
+				"item": "poke:onyx_ingot"
+			},
+			{
+				"item": "poke:onyx_block"
+			},
+			{
+				"item": "poke:onyx_shaft"
+			},
+			{
+				"item": "poke:diamond_upgrade_core"
+			},
+			{
+				"item": "poke_pfe:amethyst_claymore"
+			}
+		],
+		"key": {
+			"I": {
+				"item": "poke:onyx_ingot"
+			},
+			"B": {
+				"item": "poke:onyx_block"
+			},
+			"S": {
+				"item": "poke:onyx_shaft"
+			},
+			"U": {
+				"item": "poke:diamond_upgrade_core"
+			},
+			"C": {
+				"item": "poke_pfe:amethyst_claymore"
+			}
+		},
+		"result": {
+			"item": "poke_pfe:onyx_claymore"
+		}
+	}
+}

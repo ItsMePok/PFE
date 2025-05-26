@@ -1,0 +1,83 @@
+{
+	"format_version": "1.21.70",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke_pfe:onyx_claymore",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:display_name": {
+				"value": "%poke_pfe.onyx_claymore\n%poke_pfe.tag"
+			},
+			"minecraft:rarity": "common",
+			"minecraft:custom_components": [
+				"poke:normalMining"
+			],
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:is_sword",
+					"minecraft:netherite_tier",
+					"pfe:is_claymore",
+					"pfe:onyx_tier"
+				]
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:icon": "poke_pfe_onyx_claymore",
+			"minecraft:damage": {
+				"value": 15
+			},
+			"minecraft:can_destroy_in_creative": false,
+			"minecraft:hand_equipped": true,
+			"minecraft:durability": {
+				"max_durability": 1687,
+				"damage_chance": {
+					"max": 100,
+					"min": 60
+				}
+			},
+			"minecraft:digger": {
+				"destroy_speeds": [
+					{
+						"block": {
+							"tags": "query.any_tag( 'minecraft:is_sword_item_destructible','pfe:is_claymore_item_destructible' )"
+						},
+						"speed": 15
+					},
+					{
+						"block": "minecraft:bamboo_sapling",
+						"speed": 15
+					},
+					{
+						"block": "minecraft:bamboo",
+						"speed": 15
+					}
+				]
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"poke:repair_core",
+							"poke:onyx_block"
+						],
+						"repair_amount": "query.max_durability"
+					},
+					{
+						"items": [
+							"poke:onyx_ingot"
+						],
+						"repair_amount": "query.max_durability*0.25"
+					},
+					{
+						"items": [
+							"poke:onyx_nugget"
+						],
+						"repair_amount": "query.max_durability*0.028"
+					}
+				]
+			}
+		}
+	}
+}

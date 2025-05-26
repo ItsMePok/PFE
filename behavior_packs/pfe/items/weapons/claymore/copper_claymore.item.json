@@ -1,0 +1,77 @@
+{
+	"format_version": "1.21.70",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke_pfe:copper_claymore",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:display_name": {
+				"value": "%poke_pfe.copper_claymore\n%poke_pfe.tag"
+			},
+			"minecraft:rarity": "common",
+			"minecraft:custom_components": [
+				"poke:normalMining"
+			],
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:is_sword",
+					"minecraft:iron_tier",
+					"pfe:is_claymore",
+					"pfe:copper_tier"
+				]
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:icon": "poke_pfe_copper_claymore",
+			"minecraft:damage": {
+				"value": 7
+			},
+			"minecraft:can_destroy_in_creative": false,
+			"minecraft:hand_equipped": true,
+			"minecraft:durability": {
+				"max_durability": 787,
+				"damage_chance": {
+					"max": 100,
+					"min": 60
+				}
+			},
+			"minecraft:digger": {
+				"destroy_speeds": [
+					{
+						"block": {
+							"tags": "query.any_tag( 'minecraft:is_sword_item_destructible','pfe:is_claymore_item_destructible' )"
+						},
+						"speed": 7
+					},
+					{
+						"block": "minecraft:bamboo_sapling",
+						"speed": 7
+					},
+					{
+						"block": "minecraft:bamboo",
+						"speed": 7
+					}
+				]
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"poke:repair_core",
+							"minecraft:copper_block"
+						],
+						"repair_amount": "query.max_durability"
+					},
+					{
+						"items": [
+							"minecraft:copper_ingot"
+						],
+						"repair_amount": "query.max_durability*0.25"
+					}
+				]
+			}
+		}
+	}
+}
