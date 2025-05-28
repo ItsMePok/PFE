@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.21.90",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke_pfe:resist_ring",
@@ -45,10 +45,8 @@
 					"pfe:is_ring"
 				]
 			},
-			"minecraft:custom_components": [
-				"poke:cc_on_use",
-				"poke:normalMining"
-			],
+			"poke:cc_on_use": {},
+			"poke:normalMining": {},
 			"minecraft:use_modifiers": {
 				"use_duration": 0,
 				"movement_modifier": 1

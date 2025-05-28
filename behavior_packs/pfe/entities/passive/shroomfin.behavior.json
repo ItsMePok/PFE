@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.21.90",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:shroomfin",
@@ -350,9 +350,13 @@
 				"is_pushable_by_piston": true
 			},
 			"minecraft:leashable": {
-				"soft_distance": 4,
-				"hard_distance": 6,
-				"max_distance": 10
+				"presets": [
+					{
+						"soft_distance": 4,
+						"hard_distance": 6,
+						"max_distance": 10
+					}
+				]
 			},
 			"minecraft:conditional_bandwidth_optimization": {}
 		},

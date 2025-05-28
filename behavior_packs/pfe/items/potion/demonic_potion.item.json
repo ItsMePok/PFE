@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.21.90",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:demonic_potion",
@@ -12,9 +12,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.demonic_potion\n§7%potion.nightVision (10:00)\n%potion.regeneration %enchantment.level.2 (10:00)\n%potion.damageBoost %enchantment.level.3 (5:00)\n%potion.fireResistance (10:00)\n%poke_pfe.tag"
 			},
-			"minecraft:custom_components": [
-				"poke:consumeEffects"
-			],
+			"poke:consumeEffects": {},
 			"minecraft:max_stack_size": 16,
 			"minecraft:icon": "poke_demonic_potion",
 			"minecraft:food": {

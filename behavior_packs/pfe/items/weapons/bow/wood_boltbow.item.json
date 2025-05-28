@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.21.90",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:wood_boltbow",
@@ -110,10 +110,8 @@
 				},
 				"max_durability": 464
 			},
-			"minecraft:custom_components": [
-				"poke:cc_bowAim",
-				"poke:boltbow"
-			]
+			"poke:cc_bowAim": {},
+			"poke:boltbow": {}
 		}
 	}
 }

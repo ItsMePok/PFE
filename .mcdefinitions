@@ -1,3 +1,5 @@
 
 family=pfe_exclude
 family=dummy_entity
+entity=minecraft:leash_knot
+entity=npc

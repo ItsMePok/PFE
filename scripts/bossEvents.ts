@@ -114,7 +114,7 @@ function PFEBossEventUISettings(player: Player) {
     .button({ translate: `translation.poke:bossEventManual` }, 'textures/poke/pfe/bounty')
     .button({ translate: `translation.poke:bossEventTiming` }, 'textures/poke/common/spawn_time')
     .button({ translate: `translation.poke:bossEventSettingsReset` }, 'textures/ui/refresh_light')
-    .button({ translate: `translation.poke:bossEventGoBack` }, 'textures/poke/common/left_arrow')
+    .button({ translate: `translation.poke_pfe.GoBack` }, 'textures/poke/common/left_arrow')
     .show(player).then((ui: ActionFormResponse) => {
       if (ui.canceled || ui.selection == 3) {
         PFEBossEventUIMainMenu(player)
@@ -137,16 +137,16 @@ function PFEBossEventUIEnabledBosses(player: Player) {
   let settings: PFEBossEventConfig = JSON.parse(world.getDynamicProperty(PFEBossEventConfigName)!.toString())
   new ModalFormData()
     .title({ translate: `translation.poke:bossEventMainMenuTitle` })
-    .toggle({ translate: `entity.poke:zombken.name` }, settings.zombken.e)
-    .toggle({ translate: `entity.poke:super_striker.name` }, settings.superStriker.e)
-    .toggle({ translate: `entity.poke:knightling.name` }, settings.knightling.e)
-    .toggle({ translate: `entity.poke:mini_demonic_allay.name` }, settings.miniDemonicAllay.e)
-    .toggle({ translate: `entity.poke:necromancer.name` }, settings.necromancer.e)
-    .toggle({ translate: `entity.poke:snowman.name` }, settings.snowman.e)
-    .toggle({ translate: `entity.poke:robo_golem.name` }, settings.furnaceGolem.e)
-    .toggle({ translate: `entity.poke:dragon.name` }, settings.sparky.e)
-    .toggle({ translate: `entity.poke:the_logger.name` }, settings.theLogger.e)
-    .toggle({ translate: `entity.poke:listener.name` }, settings.listener.e)
+    .toggle({ translate: `entity.poke:zombken.name` }, { defaultValue: settings.zombken.e })
+    .toggle({ translate: `entity.poke:super_striker.name` }, { defaultValue: settings.superStriker.e })
+    .toggle({ translate: `entity.poke:knightling.name` }, { defaultValue: settings.knightling.e })
+    .toggle({ translate: `entity.poke:mini_demonic_allay.name` }, { defaultValue: settings.miniDemonicAllay.e })
+    .toggle({ translate: `entity.poke:necromancer.name` }, { defaultValue: settings.necromancer.e })
+    .toggle({ translate: `entity.poke:snowman.name` }, { defaultValue: settings.snowman.e })
+    .toggle({ translate: `entity.poke:robo_golem.name` }, { defaultValue: settings.furnaceGolem.e })
+    .toggle({ translate: `entity.poke:dragon.name` }, { defaultValue: settings.sparky.e })
+    .toggle({ translate: `entity.poke:the_logger.name` }, { defaultValue: settings.theLogger.e })
+    .toggle({ translate: `entity.poke:listener.name` }, { defaultValue: settings.listener.e })
     .submitButton(`translation.poke:BossEventUISubmit`)
     //@ts-ignore
     .show(player).then((ui: ModalFormResponse) => {
@@ -171,7 +171,7 @@ function PFEBossEventTiming(player: Player) {
   let settings: PFEBossEventConfig = JSON.parse(world.getDynamicProperty(PFEBossEventConfigName)!.toString())
   new ModalFormData()
     .title({ translate: `translation.poke:bossEventMainMenuTitle` })
-    .textField({ translate: `translation.poke:BossEventTimeDesc` }, { translate: `translation.poke:BossEventTimePlaceholder` }, `${settings.ticks}`)
+    .textField({ translate: `translation.poke:BossEventTimeDesc` }, { translate: `translation.poke:BossEventTimePlaceholder` }, { defaultValue: `${settings.ticks}` })
     .submitButton(`translation.poke:BossEventUISubmit`)
     //@ts-ignore
     .show(player).then((ui: ModalFormResponse) => {
@@ -195,16 +195,16 @@ function PFEBossEventUIBossChances(player: Player) {
   let settings: PFEBossEventConfig = JSON.parse(world.getDynamicProperty(PFEBossEventConfigName)!.toString())
   new ModalFormData()
     .title({ translate: `translation.poke:bossEventMainMenuTitle` })
-    .slider({ translate: `entity.poke:zombken.name` }, 0, 100, 1, settings.zombken["%"])
-    .slider({ translate: `entity.poke:super_striker.name` }, 0, 100, 1, settings.superStriker["%"])
-    .slider({ translate: `entity.poke:knightling.name` }, 0, 100, 1, settings.knightling["%"])
-    .slider({ translate: `entity.poke:mini_demonic_allay.name` }, 0, 100, 1, settings.miniDemonicAllay["%"])
-    .slider({ translate: `entity.poke:necromancer.name` }, 0, 100, 1, settings.necromancer["%"])
-    .slider({ translate: `entity.poke:snowman.name` }, 0, 100, 1, settings.snowman["%"])
-    .slider({ translate: `entity.poke:robo_golem.name` }, 0, 100, 1, settings.furnaceGolem["%"])
-    .slider({ translate: `entity.poke:dragon.name` }, 0, 100, 1, settings.sparky["%"])
-    .slider({ translate: `entity.poke:the_logger.name` }, 0, 100, 1, settings.theLogger["%"])
-    .slider({ translate: `entity.poke:listener.name` }, 0, 100, 1, settings.listener["%"])
+    .slider({ translate: `entity.poke:zombken.name` }, 0, 100, { valueStep: 1, defaultValue: settings.zombken["%"] })
+    .slider({ translate: `entity.poke:super_striker.name` }, 0, 100, { valueStep: 1, defaultValue: settings.superStriker["%"] })
+    .slider({ translate: `entity.poke:knightling.name` }, 0, 100, { valueStep: 1, defaultValue: settings.knightling["%"] })
+    .slider({ translate: `entity.poke:mini_demonic_allay.name` }, 0, 100, { valueStep: 1, defaultValue: settings.miniDemonicAllay["%"] })
+    .slider({ translate: `entity.poke:necromancer.name` }, 0, 100, { valueStep: 1, defaultValue: settings.necromancer["%"] })
+    .slider({ translate: `entity.poke:snowman.name` }, 0, 100, { valueStep: 1, defaultValue: settings.snowman["%"] })
+    .slider({ translate: `entity.poke:robo_golem.name` }, 0, 100, { valueStep: 1, defaultValue: settings.furnaceGolem["%"] })
+    .slider({ translate: `entity.poke:dragon.name` }, 0, 100, { valueStep: 1, defaultValue: settings.sparky["%"] })
+    .slider({ translate: `entity.poke:the_logger.name` }, 0, 100, { valueStep: 1, defaultValue: settings.theLogger["%"] })
+    .slider({ translate: `entity.poke:listener.name` }, 0, 100, { valueStep: 1, defaultValue: settings.listener["%"] })
     .submitButton(`translation.poke:BossEventUISubmit`)
     //@ts-ignore
     .show(player).then((ui: ModalFormResponse) => {
@@ -274,10 +274,7 @@ function PFEStartBossEvent() {
   world.sendMessage({ rawtext: [{ translate: `translation.${selectedBoss}_boss_event_near` }, { text: `: ${randomPlayer?.name}` }] })
   ComputersCompat.addStat(`boss_events_triggered`, 1)
 }
-// Boss events
-system.runInterval(() => {
-  PFEStartBossEvent()
-}, PFEBossEventTicks());
+
 
 class PFEBossEventUI {
   onUse(data: ItemComponentUseEvent) {
@@ -295,5 +292,6 @@ export {
   PFEBossEventConfigName,
   PFEStartBossEvent,
   PFEBossEventConfig,
-  PFEBossEventUIMainMenu
+  PFEBossEventUIMainMenu,
+  PFEBossEventTicks
 }

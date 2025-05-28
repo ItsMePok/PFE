@@ -49,7 +49,7 @@ function PokeUpgradeUI(player: Player, item: ItemStack, config: PokeUpgradeUICon
     let selection = 0
     for (let upgrade of config.upgrades) {
       if (response.selection == selection) {
-        const HasItem = player.getGameMode() == GameMode.creative ? true : (Number(PokeGetItemFromInventory(player, undefined, upgrade.upgradeItem)?.length) + 0)
+        const HasItem = player.getGameMode() == GameMode.Creative ? true : (Number(PokeGetItemFromInventory(player, undefined, upgrade.upgradeItem)?.length) + 0)
         const upgradeCost = (
           (upgrade.maxLevel) ? (upgrade.maxLevel <= upgrade.level) ? Infinity : (upgrade.upgradeAdditive) ? (upgrade.level) + 1 : 1 : (upgrade.upgradeAdditive) ? (upgrade.level) + 1 : 1
         )
@@ -67,7 +67,7 @@ function PokeUpgradeUI(player: Player, item: ItemStack, config: PokeUpgradeUICon
             upgradeAdditive: upgrade.upgradeAdditive
           }
           config.upgrades = config.upgrades.filter((oldUpgrade) => oldUpgrade.id != upgrade.id).concat(newProperty)
-          if (player.getGameMode() != GameMode.creative && upgradeCost != Infinity) {
+          if (player.getGameMode() != GameMode.Creative && upgradeCost != Infinity) {
             player.runCommand(`clear @s ${upgrade.upgradeItem} 0 ${upgradeCost}`)
           }
           PokeSaveProperty(config.dynamicProperty, item, JSON.stringify(config), player, EquipmentSlot.Mainhand)

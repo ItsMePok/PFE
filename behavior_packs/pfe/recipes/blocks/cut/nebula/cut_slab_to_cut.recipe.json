@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.21.90",
 	"minecraft:recipe_shaped": {
 		"description": {
 			"identifier": "poke:cut_nebula_slab_to_cut_nebula"

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.21.90",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:block_breaker_north",
@@ -43,10 +43,8 @@
 					10
 				]
 			},
-			"minecraft:custom_components": [
-				"poke:cc_calibrate",
-				"poke:cc_CaliBlockBreaker"
-			]
+			"poke:cc_calibrate": {},
+			"poke:cc_CaliBlockBreaker": {}
 		}
 	}
 }

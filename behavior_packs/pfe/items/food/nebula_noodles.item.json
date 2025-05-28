@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.21.90",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:nebula_noodles",
@@ -12,9 +12,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.nebula_noodles\n%poke_pfe.tag"
 			},
-			"minecraft:custom_components": [
-				"poke:consumeEffects"
-			],
+			"poke:consumeEffects": {},
 			"minecraft:max_stack_size": 16,
 			"minecraft:icon": "poke_nebula_noodles",
 			"minecraft:food": {

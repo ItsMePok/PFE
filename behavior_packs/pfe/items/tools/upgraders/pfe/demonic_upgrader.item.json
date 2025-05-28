@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.21.90",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:demonic_upgrader",
@@ -21,9 +21,7 @@
 					"min": 60
 				}
 			},
-			"minecraft:custom_components": [
-				"poke-pfe:upgrader"
-			],
+			"poke-pfe:upgrader": {},
 			"minecraft:tags": {
 				"tags": [
 					"poke-pfe:UpgraderInfo:{\"canUpgrade\":[\"poke:demonic_ore\",\"poke:nether_demonic_ore\"]}:poke-pfe:UpgraderInfoEnd"

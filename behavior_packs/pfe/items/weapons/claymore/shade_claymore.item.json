@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.21.90",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke_pfe:shade_claymore",
@@ -12,9 +12,7 @@
 				"value": "%poke_pfe.shade_claymore\n%poke_pfe.tag"
 			},
 			"minecraft:rarity": "common",
-			"minecraft:custom_components": [
-				"poke:normalMining"
-			],
+			"poke:normalMining": {},
 			"minecraft:tags": {
 				"tags": [
 					"minecraft:is_sword",

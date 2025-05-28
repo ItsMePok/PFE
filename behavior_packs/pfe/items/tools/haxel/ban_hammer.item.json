@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.21.90",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:ban_hammer",
@@ -21,10 +21,8 @@
 					"pfe:is_haxel"
 				]
 			},
-			"minecraft:custom_components": [
-				"poke:haxelMining",
-				"poke:hitEffects"
-			],
+			"poke:haxelMining": {},
+			"poke:hitEffects": {},
 			"minecraft:use_modifiers": {
 				"use_duration": 0.1,
 				"movement_modifier": 1

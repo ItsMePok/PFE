@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.21.90",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:onyx_bricks_slab",
@@ -38,12 +38,15 @@
 						"redstone_conductor": true,
 						"allows_wire_to_step_down": true
 					},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "poke_onyx_bricks"
+						}
+					},
 					"minecraft:geometry": {
 						"identifier": "minecraft:geometry.full_block"
 					},
-					"minecraft:custom_components": [
-						"poke:cc_slab_loot"
-					]
+					"poke_pfe:slab_loot": {}
 				}
 			},
 			// Bottom Slab
@@ -62,10 +65,8 @@
 							}
 						]
 					},
-					"minecraft:custom_components": [
-						"poke:slabs",
-						"poke:cc_block_seat"
-					],
+					"poke_pfe:can_double_slab": {},
+					"poke:cc_block_seat": {},
 					"minecraft:collision_box": {
 						"origin": [
 							-8,
@@ -77,6 +78,11 @@
 							8,
 							16
 						]
+					},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "poke_onyx_bricks"
+						}
 					},
 					"minecraft:geometry": {
 						"identifier": "geometry.poke_pfe_slab",
@@ -115,9 +121,7 @@
 							}
 						]
 					},
-					"minecraft:custom_components": [
-						"poke:slabs"
-					],
+					"poke_pfe:can_double_slab": {},
 					"minecraft:collision_box": {
 						"origin": [
 							-8,
@@ -129,6 +133,11 @@
 							8,
 							16
 						]
+					},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "poke_onyx_bricks"
+						}
 					},
 					"minecraft:geometry": {
 						"identifier": "geometry.poke_pfe_slab",
@@ -173,12 +182,7 @@
 			"tag:metal": {},
 			"tag:minecraft:metal": {},
 			"tag:stone_pick_diggable": {},
-			"tag:minecraft:is_pickaxe_item_destructible": {},
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "poke_onyx_bricks"
-				}
-			}
+			"tag:minecraft:is_pickaxe_item_destructible": {}
 		}
 	}
 }

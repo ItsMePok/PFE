@@ -1,5 +1,5 @@
 { //Dragon Ring
-	"format_version": "1.21.70",
+	"format_version": "1.21.90",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:ring_4",
@@ -11,9 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.dragon_ring\n%poke_pfe.tag"
 			},
-			"minecraft:custom_components": [
-				"poke:shootProjectile"
-			],
+			"poke:shootProjectile": {},
 			"minecraft:repairable": {
 				"repair_items": [
 					{

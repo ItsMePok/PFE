@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.21.90",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:nebula_magnet",
@@ -49,9 +49,7 @@
 					"pfe:Command:tp @e[type=item] @a[r=0.1]:pfeCommandEnd"
 				]
 			},
-			"minecraft:custom_components": [
-				"poke:cc_on_use"
-			],
+			"poke:cc_on_use":{},
 			"minecraft:use_modifiers": {
 				"use_duration": 0,
 				"movement_modifier": 1

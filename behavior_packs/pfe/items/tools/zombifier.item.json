@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.21.90",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:zombifier",
@@ -21,10 +21,8 @@
 				"duration": 1.5
 			},
 			"minecraft:max_stack_size": 1,
-			"minecraft:custom_components": [
-				"poke:cc_on_use",
-				"poke:normalMining"
-			],
+			"poke:cc_on_use": {},
+			"poke:normalMining": {},
 			"minecraft:repairable": {
 				"repair_items": [
 					{

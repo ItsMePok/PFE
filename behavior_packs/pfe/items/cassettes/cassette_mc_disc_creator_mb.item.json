@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.70",
+  "format_version": "1.21.90",
   "minecraft:item": {
     "description": {
       "identifier": "poke:cassette_creatormusicbox"
@@ -9,9 +9,7 @@
         "value": "%poke_pfe.cassette\n%poke_pfe.tag"
       },
       "minecraft:rarity": "uncommon",
-      "minecraft:custom_components": [
-        "poke:cas"
-      ],
+      "poke:cas": {},
       "minecraft:icon": "poke_cassette_creator_mb",
       "minecraft:tags": {
         "tags": [

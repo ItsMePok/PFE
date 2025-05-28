@@ -152,7 +152,7 @@ function PFEHaxelConfigMenu(data: ItemComponentUseEvent, ComponentInfo: PFEHaxel
 function PFEHaxelConfigBlackListAdd(data: ItemComponentUseEvent, dynamicProperty: PFEHaxelConfig) {
   let Ui = new ModalFormData()
     .title({ translate: `translation.poke:haxelConfig.mainMenu.title`, with: { rawtext: [{ translate: data.itemStack?.nameTag ?? `poke_pfe.${data.itemStack?.typeId}`.replace(`poke:haxel`, `onyx_haxel`).replace(`poke:`, ``) }] } })
-    .textField({ translate: `translation.poke:haxelConfig.blacklistAdd.textLabel` }, '', '')
+    .textField({ translate: `translation.poke:haxelConfig.blacklistAdd.textLabel` }, '', { defaultValue: `` })
     .submitButton({ translate: `translation.poke:haxelConfig.blacklistAdd.submit` })
   //@ts-ignore
   Ui.show(data.source).then((response => {

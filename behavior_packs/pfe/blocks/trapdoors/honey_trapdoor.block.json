@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.21.90",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:honey_trapdoor",
@@ -68,9 +68,7 @@
 			"tag:pfe": {},
 			"tag:stone_pick_diggable": {},
 			"tag:minecraft:is_pickaxe_item_destructible": {},
-			"minecraft:custom_components": [
-				"poke:trapdoor_event"
-			]
+			"poke:trapdoor_event": {}
 		},
 		"permutations": [
 			{

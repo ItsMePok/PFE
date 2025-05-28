@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.21.90",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:nebula_logger",
@@ -13,10 +13,8 @@
 				"value": "%poke_pfe.nebula_logger\n%poke_pfe.tag"
 			},
 			"minecraft:rarity": "epic",
-			"minecraft:custom_components": [
-				"poke:veinMiner",
-				"poke:normalMining"
-			],
+			"poke:veinMiner": {},
+			"poke:normalMining": {},
 			"minecraft:max_stack_size": 1,
 			"minecraft:icon": "poke_nebula_logger",
 			"minecraft:hand_equipped": {

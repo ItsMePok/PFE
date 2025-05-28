@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.21.90",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:turnip",
@@ -34,17 +34,16 @@
 						]
 					},
 					"minecraft:loot": "loot_tables/poke/pfe/turnip_crop_ungrown.loot.json",
+					"minecraft:geometry": "geometry.poke_pfe.charred_poppy",
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "poke_turnip_1",
-							"render_method": "alpha_test",
+							"render_method": "alpha_test_to_opaque",
 							"ambient_occlusion": false,
 							"face_dimming": false
 						}
 					},
-					"minecraft:custom_components": [
-						"poke:crops"
-					]
+					"poke:crops": {}
 				}
 			},
 			{
@@ -63,17 +62,16 @@
 						]
 					},
 					"minecraft:loot": "loot_tables/poke/pfe/turnip_crop_ungrown.loot.json",
+					"minecraft:geometry": "geometry.poke_pfe.charred_poppy",
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "poke_turnip_1",
-							"render_method": "alpha_test",
+							"render_method": "alpha_test_to_opaque",
 							"ambient_occlusion": false,
 							"face_dimming": false
 						}
 					},
-					"minecraft:custom_components": [
-						"poke:crops"
-					]
+					"poke:crops": {}
 				}
 			},
 			{
@@ -92,17 +90,16 @@
 						]
 					},
 					"minecraft:loot": "loot_tables/poke/pfe/turnip_crop_ungrown.loot.json",
+					"minecraft:geometry": "geometry.poke_pfe.charred_poppy",
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "poke_turnip_2",
-							"render_method": "alpha_test",
+							"render_method": "alpha_test_to_opaque",
 							"ambient_occlusion": false,
 							"face_dimming": false
 						}
 					},
-					"minecraft:custom_components": [
-						"poke:crops"
-					]
+					"poke:crops": {}
 				}
 			},
 			{
@@ -121,17 +118,16 @@
 						]
 					},
 					"minecraft:loot": "loot_tables/poke/pfe/turnip_crop_ungrown.loot.json",
+					"minecraft:geometry": "geometry.poke_pfe.charred_poppy",
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "poke_turnip_2",
-							"render_method": "alpha_test",
+							"render_method": "alpha_test_to_opaque",
 							"ambient_occlusion": false,
 							"face_dimming": false
 						}
 					},
-					"minecraft:custom_components": [
-						"poke:crops"
-					]
+					"poke:crops": {}
 				}
 			},
 			{
@@ -150,17 +146,16 @@
 						]
 					},
 					"minecraft:loot": "loot_tables/poke/pfe/turnip_crop_ungrown.loot.json",
+					"minecraft:geometry": "geometry.poke_pfe.charred_poppy",
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "poke_turnip_2",
-							"render_method": "alpha_test",
+							"render_method": "alpha_test_to_opaque",
 							"ambient_occlusion": false,
 							"face_dimming": false
 						}
 					},
-					"minecraft:custom_components": [
-						"poke:crops"
-					]
+					"poke:crops": {}
 				}
 			},
 			{
@@ -179,10 +174,11 @@
 						]
 					},
 					"minecraft:loot": "loot_tables/poke/pfe/turnip_crop.loot.json",
+					"minecraft:geometry": "geometry.poke_pfe.charred_poppy",
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "poke_turnip_3",
-							"render_method": "alpha_test",
+							"render_method": "alpha_test_to_opaque",
 							"ambient_occlusion": false,
 							"face_dimming": false
 						}
@@ -207,7 +203,6 @@
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 0
 			},
-			"minecraft:geometry": "geometry.poke_pfe.charred_poppy",
 			"minecraft:placement_filter": {
 				"conditions": [
 					{

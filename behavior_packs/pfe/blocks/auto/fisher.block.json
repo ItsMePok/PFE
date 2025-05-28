@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.70",
+  "format_version": "1.21.90",
   "minecraft:block": {
     "description": {
       "identifier": "poke_pfe:fisher",
@@ -27,6 +27,12 @@
       {
         "condition": "q.block_state('poke_pfe:bait') == 0",
         "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "render_method": "opaque",
+              "texture": "poke_pfe_fisher_block"
+            }
+          },
           "minecraft:geometry": {
             "bone_visibility": {
               "bait": false,
@@ -42,6 +48,12 @@
       {
         "condition": "q.block_state('poke_pfe:bait') == 1",
         "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "render_method": "opaque",
+              "texture": "poke_pfe_fisher_block"
+            }
+          },
           "minecraft:geometry": {
             "bone_visibility": {
               "bait_1": false,
@@ -56,6 +68,12 @@
       {
         "condition": "q.block_state('poke_pfe:bait') == 2",
         "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "render_method": "opaque",
+              "texture": "poke_pfe_fisher_block"
+            }
+          },
           "minecraft:geometry": {
             "bone_visibility": {
               "bait_2": false,
@@ -69,6 +87,12 @@
       {
         "condition": "q.block_state('poke_pfe:bait') == 3",
         "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "render_method": "opaque",
+              "texture": "poke_pfe_fisher_block"
+            }
+          },
           "minecraft:geometry": {
             "bone_visibility": {
               "bait_3": false
@@ -81,6 +105,12 @@
       {
         "condition": "q.block_state('poke_pfe:bait') == 4",
         "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "render_method": "opaque",
+              "texture": "poke_pfe_fisher_block"
+            }
+          },
           "minecraft:geometry": {
             "culling": "poke_pfe:geometry.poke_pfe.fisher",
             "identifier": "geometry.poke_pfe.fisher"
@@ -193,15 +223,7 @@
       },
       "minecraft:map_color": "#c09059",
       "tag:minecraft:is_axe_item_destructible": {},
-      "minecraft:material_instances": {
-        "*": {
-          "render_method": "opaque",
-          "texture": "poke_pfe_fisher_block"
-        }
-      },
-      "minecraft:custom_components": [
-        "poke_pfe:fisher"
-      ]
+      "poke_pfe:fisher": {}
     }
   }
 }

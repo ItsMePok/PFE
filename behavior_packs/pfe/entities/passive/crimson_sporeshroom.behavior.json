@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.21.90",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:crimson_sporeshroom",
@@ -768,9 +768,13 @@
 			"minecraft:jump.static": {},
 			"minecraft:can_climb": {},
 			"minecraft:leashable": {
-				"soft_distance": 4,
-				"hard_distance": 6,
-				"max_distance": 10
+				"presets": [
+					{
+						"soft_distance": 4,
+						"hard_distance": 6,
+						"max_distance": 10
+					}
+				]
 			},
 			"minecraft:balloonable": {},
 			"minecraft:rideable": {

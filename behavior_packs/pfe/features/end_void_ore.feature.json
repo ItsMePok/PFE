@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.70",
+  "format_version": "1.21.90",
   "minecraft:ore_feature": {
     "description": {
       "identifier": "poke:end_void_ore.feature"

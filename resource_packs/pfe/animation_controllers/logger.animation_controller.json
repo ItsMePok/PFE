@@ -2,10 +2,13 @@
 	"format_version": "1.10.0",
 	"animation_controllers": {
 		"controller.animation.poke_pfe.logger.movement": {
+			"initial_state": "default",
 			"states": {
 				"default": {
 					"animations": [
-						{"walk": "q.modified_move_speed"},
+						{
+							"walk": "q.modified_move_speed"
+						},
 						"chainsaw_setup"
 					],
 					"particle_effects": [
@@ -25,7 +28,9 @@
 			"states": {
 				"default": {
 					"transitions": [
-						{"active": "variable.attack_time > 0.0"}
+						{
+							"active": "variable.attack_time > 0.0"
+						}
 					],
 					"particle_effects": [
 						{
@@ -41,9 +46,13 @@
 					]
 				},
 				"active": {
-					"animations": ["melee_attack"],
+					"animations": [
+						"melee_attack"
+					],
 					"transitions": [
-						{"default": "variable.attack_time <= 0.0"}
+						{
+							"default": "variable.attack_time <= 0.0"
+						}
 					],
 					"particle_effects": [
 						{

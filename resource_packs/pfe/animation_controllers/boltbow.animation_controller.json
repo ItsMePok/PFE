@@ -17,6 +17,11 @@
 					"animations": [
 						"boltbow_hold_3p",
 						"third_person_hold"
+					],
+					"transitions": [
+						{
+							"active": "q.all_animations_finished"
+						}
 					]
 				}
 			}

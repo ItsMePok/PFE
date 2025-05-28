@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.21.90",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:calibrated_cobblestone_generator_south",
@@ -45,10 +45,8 @@
 					10
 				]
 			},
-			"minecraft:custom_components": [
-				"poke:cc_calibrate",
-				"poke:cc_CaliCobbleGen"
-			]
+			"poke:cc_calibrate": {},
+			"poke:cc_CaliCobbleGen": {}
 		}
 	}
 }

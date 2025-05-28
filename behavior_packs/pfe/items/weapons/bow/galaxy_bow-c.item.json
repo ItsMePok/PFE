@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70", //Format version is the version it was built for. its 1.21.10 because that is the minimum version that Beta Api was not needed for what PFE uses (as of PFE v1.2.2)
+	"format_version": "1.21.90", //Format version is the version it was built for. its 1.21.10 because that is the minimum version that Beta Api was not needed for what PFE uses (as of PFE v1.2.2)
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:galaxy_bow", //Item Identifier Actaul item name is Galaxy BurstBow (changed the name after it was initally added but preserving backwards compatibily is important imo)
@@ -94,9 +94,7 @@
 				}, //The chance that the item has to not take durability with unbreaking
 				"max_durability": 2000 //Total Durability that the item has
 			},
-			"minecraft:custom_components": [
-				"poke:cc_bowAim"
-			]
+			"poke:cc_bowAim": {}
 		}
 	}
 }

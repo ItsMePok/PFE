@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.21.90",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:astral_bricks_slab",
@@ -38,12 +38,15 @@
 						"redstone_conductor": true,
 						"allows_wire_to_step_down": true
 					},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "poke_astral_bricks"
+						}
+					},
 					"minecraft:geometry": {
 						"identifier": "minecraft:geometry.full_block"
 					},
-					"minecraft:custom_components": [
-						"poke:cc_slab_loot"
-					]
+					"poke_pfe:slab_loot": {}
 				}
 			},
 			// Bottom Slab
@@ -62,10 +65,8 @@
 							}
 						]
 					},
-					"minecraft:custom_components": [
-						"poke:slabs",
-						"poke:cc_block_seat"
-					],
+					"poke_pfe:can_double_slab": {},
+					"poke:cc_block_seat": {},
 					"minecraft:collision_box": {
 						"origin": [
 							-8,
@@ -77,6 +78,11 @@
 							8,
 							16
 						]
+					},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "poke_astral_bricks"
+						}
 					},
 					"minecraft:geometry": {
 						"identifier": "geometry.poke_pfe_slab",
@@ -96,11 +102,6 @@
 							8,
 							16
 						]
-					},
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "poke_astral_bricks"
-						}
 					}
 				}
 			},
@@ -120,9 +121,7 @@
 							}
 						]
 					},
-					"minecraft:custom_components": [
-						"poke:slabs"
-					],
+					"poke_pfe:can_double_slab": {},
 					"minecraft:collision_box": {
 						"origin": [
 							-8,
@@ -134,6 +133,11 @@
 							8,
 							16
 						]
+					},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "poke_astral_bricks"
+						}
 					},
 					"minecraft:geometry": {
 						"identifier": "geometry.poke_pfe_slab",
@@ -159,11 +163,6 @@
 		],
 		"components": {
 			"minecraft:display_name": "%poke_pfe.astral_brick_slab\n%poke_pfe.tag",
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "poke_astral_bricks"
-				}
-			},
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 7.5,
 				"item_specific_speeds": [

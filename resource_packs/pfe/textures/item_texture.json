@@ -1,5 +1,8 @@
 {
 	"texture_data": {
+		"poke_pfe_missing": {
+			"textures": "textures/poke/common/question"
+		},
 		"poke_pfe_amethyst_claymore": {
 			"textures": "textures/poke/pfe/amethyst_claymore"
 		},

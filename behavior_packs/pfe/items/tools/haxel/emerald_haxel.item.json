@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.21.90",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:emerald_haxel",
@@ -20,10 +20,8 @@
 					"pfe:is_haxel"
 				]
 			},
-			"minecraft:custom_components": [
-				"poke:haxelMining",
-				"poke:normalMining"
-			],
+			"poke:haxelMining": {},
+			"poke:normalMining": {},
 			"minecraft:use_modifiers": {
 				"use_duration": 0,
 				"movement_modifier": 1

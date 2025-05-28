@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.21.90",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:limestone_brick_slab",
@@ -41,9 +41,7 @@
 					"minecraft:geometry": {
 						"identifier": "minecraft:geometry.full_block"
 					},
-					"minecraft:custom_components": [
-						"poke:cc_slab_loot"
-					]
+					"poke_pfe:slab_loot": {}
 				}
 			},
 			// Bottom Slab
@@ -62,10 +60,8 @@
 							}
 						]
 					},
-					"minecraft:custom_components": [
-						"poke:slabs",
-						"poke:cc_block_seat"
-					],
+					"poke_pfe:can_double_slab": {},
+					"poke:cc_block_seat": {},
 					"minecraft:collision_box": {
 						"origin": [
 							-8,
@@ -115,9 +111,7 @@
 							}
 						]
 					},
-					"minecraft:custom_components": [
-						"poke:slabs"
-					],
+					"poke_pfe:can_double_slab": {},
 					"minecraft:collision_box": {
 						"origin": [
 							-8,
@@ -173,12 +167,7 @@
 			"tag:stone": {},
 			"tag:minecraft:stone": {},
 			"tag:stone_pick_diggable": {},
-			"tag:minecraft:is_pickaxe_item_destructible": {},
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "poke_limestone_bricks"
-				}
-			}
+			"tag:minecraft:is_pickaxe_item_destructible": {}
 		}
 	}
 }

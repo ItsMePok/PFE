@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.70",
+  "format_version": "1.21.90",
   "minecraft:block": {
     "description": {
       "identifier": "poke:cobalt_golem_block",
@@ -33,9 +33,7 @@
       "tag:stone_pick_diggable": {},
       "tag:minecraft:is_pickaxe_item_destructible": {},
       "minecraft:map_color": "#f1da09",
-      "minecraft:custom_components": [
-        "poke:cc_block_interact"
-      ]
+      "poke:cc_block_interact": {}
     }
   }
 }

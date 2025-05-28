@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.21.90",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:furnace_golem_trophy"
@@ -71,9 +71,7 @@
 			"tag:stone_pick_diggable": {},
 			"tag:minecraft:is_pickaxe_item_destructible": {},
 			"minecraft:map_color": "#e9e4a1",
-			"minecraft:custom_components": [
-				"poke:cc_block_interact"
-			]
+			"poke:cc_block_interact": {}
 		}
 	}
 }

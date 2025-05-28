@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.21.90",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:kill_quest",
@@ -13,9 +13,7 @@
 			},
 			"minecraft:max_stack_size": 1,
 			"minecraft:icon": "poke_uo_kill_quest",
-			"minecraft:custom_components": [
-				"poke_pfe:quest"
-			]
+			"poke_pfe:quest": {}
 		}
 	}
 }

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.21.90",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:pocket_knife",
@@ -75,10 +75,8 @@
 					}
 				]
 			},
-			"minecraft:custom_components": [
-				"poke-pfe:upgrader",
-				"poke:normalMining"
-			],
+			"poke-pfe:upgrader": {},
+			"poke:normalMining": {},
 			"minecraft:tags": {
 				"tags": [
 					"poke-pfe:UpgraderInfo:{\"canUpgrade\":[\"poke:carved_melon\",\"poke:gilded_carved_melon\",\"minecraft:pumpkin\",\"minecraft:melon_block\",\"poke:gilded_melon\",\"minecraft:brown_mushroom_block\",\"minecraft:red_mushroom_block\"]}:poke-pfe:UpgraderInfoEnd",

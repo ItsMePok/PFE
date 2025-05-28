@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.21.90",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:charred_poppy_item",
@@ -8,6 +8,11 @@
 			}
 		},
 		"components": {
+			"minecraft:icon": {
+				"textures": {
+					"default": "poke_pfe_missing"
+				}
+			},
 			"minecraft:max_stack_size": 64,
 			"minecraft:fuel": {
 				"duration": 160
@@ -15,9 +20,6 @@
 			"minecraft:rarity": "uncommon",
 			"minecraft:display_name": {
 				"value": "Charred Poppy\n§cOLD ITEM\n§9PFE"
-			},
-			"minecraft:block_placer": {
-				"block": "poke:charred_poppy"
 			}
 		}
 	}

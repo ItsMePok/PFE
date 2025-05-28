@@ -73,7 +73,7 @@ class PFEBoltBowsComponent {
     }
     const cPlayers = data.source.dimension.getPlayers({ excludeNames: ['' + data.source.name] })
     for (var i = cPlayers.length; i > 0; i--) {
-      data.source.playAnimation('animation.poke_pfe.humanoid.boltbow_hold_3p', { blendOutTime: 0.5, stopExpression: `!q.is_item_name_any('slot.weapon.mainhand','${data.itemStack.typeId}')`, players: [cPlayers[i - 1].name] })
+      data.source.playAnimation('animation.poke_pfe.humanoid.boltbow_hold_3p', { blendOutTime: 0.5, stopExpression: `!q.is_item_name_any('slot.weapon.mainhand','${data.itemStack.typeId}')`, players: [cPlayers[i - 1]] })
     }
     const cooldownComponent: ItemCooldownComponent | undefined = data.itemStack.getComponent(ItemComponentTypes.Cooldown)
     if (cooldownComponent) {
@@ -100,7 +100,7 @@ class PFEBoltBowsComponent {
 }
 
 function PokeShoot(player: Player, ammoComponent: PFEBoltBowInfo, item: ItemStack, delay: number) {
-  if (player.getGameMode() != GameMode.creative) {
+  if (player.getGameMode() != GameMode.Creative) {
     ammoComponent.projectile.amount = ammoComponent.projectile.amount - 1
   }
   item.setDynamicProperty(PFEBoltBowDynamicPropertyID, JSON.stringify(ammoComponent))

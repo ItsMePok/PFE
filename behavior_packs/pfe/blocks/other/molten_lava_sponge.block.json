@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.21.90",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:molten_lava_sponge",
@@ -9,9 +9,7 @@
 		},
 		"components": {
 			"minecraft:display_name": "%poke_pfe.molten_lava_sponge\n%poke_pfe.tag",
-			"minecraft:custom_components": [
-				"poke_pfe:molten_lava_sponge"
-			],
+			"poke_pfe:molten_lava_sponge": {},
 			"minecraft:redstone_conductivity": {
 				"redstone_conductor": true,
 				"allows_wire_to_step_down": true

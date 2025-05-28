@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.21.90",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:astral_trapdoor",
@@ -80,9 +80,7 @@
 			"tag:stone_pick_diggable": {},
 			"tag:minecraft:is_pickaxe_item_destructible": {},
 			"tag:one_way_collidable": {},
-			"minecraft:custom_components": [
-				"poke:trapdoor_event"
-			]
+			"poke:trapdoor_event": {}
 		},
 		"permutations": [
 			{

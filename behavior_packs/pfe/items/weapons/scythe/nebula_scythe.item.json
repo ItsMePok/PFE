@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.21.90",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:nebula_scythe",
@@ -12,10 +12,8 @@
 				"value": "%poke_pfe.nebula_scythe\n%poke_pfe.tag"
 			},
 			"minecraft:rarity": "common",
-			"minecraft:custom_components": [
-				"poke:normalMining",
-				"poke:hitEffects"
-			],
+			"poke:normalMining": {},
+			"poke:hitEffects": {},
 			"minecraft:can_destroy_in_creative": false,
 			"minecraft:durability": {
 				"damage_chance": {

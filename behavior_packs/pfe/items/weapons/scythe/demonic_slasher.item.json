@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.21.90",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:demonic_slasher",
@@ -11,10 +11,8 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.demonic_slasher\n%poke_pfe.tag"
 			},
-			"minecraft:custom_components": [
-				"poke:normalMining",
-				"poke:hitEffects"
-			],
+			"poke:normalMining": {},
+			"poke:hitEffects": {},
 			"minecraft:max_stack_size": 1,
 			"minecraft:hand_equipped": true,
 			"minecraft:durability": {

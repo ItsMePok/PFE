@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.21.90",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:lava_sponge",
@@ -25,9 +25,7 @@
 			"tag:stone_pick_diggable": {},
 			"tag:minecraft:is_pickaxe_item_destructible": {},
 			"minecraft:map_color": "#e25f22",
-			"minecraft:custom_components": [
-				"poke:cc_lava_sponge"
-			]
+			"poke:cc_lava_sponge": {}
 		}
 	}
 }

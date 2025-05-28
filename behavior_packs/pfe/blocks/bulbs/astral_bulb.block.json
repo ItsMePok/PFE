@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.21.90",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:astral_bulb",
@@ -41,9 +41,7 @@
 			"tag:minecraft:is_pickaxe_item_destructible": {},
 			"minecraft:light_emission": 15,
 			"minecraft:map_color": "#2c0146",
-			"minecraft:custom_components": [
-				"poke:cc_bulbs" //custom component used to change the data value
-			]
+			"poke_pfe:cycle_color": {}
 		}
 	}
 }

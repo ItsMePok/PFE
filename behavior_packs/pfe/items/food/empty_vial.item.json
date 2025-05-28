@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.21.90",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:empty_vial",
@@ -18,9 +18,7 @@
 					"pfe:Command:function poke/pfe/xp_vial:pfeCommandEnd"
 				]
 			},
-			"minecraft:custom_components": [
-				"poke:cc_on_use"
-			],
+			"poke:cc_on_use": {},
 			"minecraft:cooldown": {
 				"duration": 0.25,
 				"category": "poke:empty_vial"

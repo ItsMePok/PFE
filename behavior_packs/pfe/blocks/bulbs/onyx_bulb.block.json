@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.21.90",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:onyx_bulb",
@@ -41,9 +41,7 @@
 			"tag:minecraft:is_pickaxe_item_destructible": {},
 			"minecraft:light_emission": 15,
 			"minecraft:map_color": "#1815c5",
-			"minecraft:custom_components": [
-				"poke:cc_bulbs"
-			]
+			"poke_pfe:cycle_color": {}
 		}
 	}
 }

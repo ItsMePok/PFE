@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.70",
+  "format_version": "1.21.80",
   "minecraft:block_culling_rules": {
     "description": {
       "identifier": "poke_pfe:geometry.poke_pfe.fisher"

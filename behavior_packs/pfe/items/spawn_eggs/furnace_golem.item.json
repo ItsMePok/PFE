@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.21.90",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:furnace_golem",
@@ -12,9 +12,7 @@
 				"value": "%poke_pfe.furnace_golem\n%poke_pfe.tag"
 			},
 			"minecraft:icon": "poke_furnace_golem_spawn_egg",
-			"minecraft:custom_components": [
-				"poke:cc_spawnEgg"
-			],
+			"poke:cc_spawnEgg": {},
 			"minecraft:tags": {
 				"tags": [
 					"poke:robo_golem"

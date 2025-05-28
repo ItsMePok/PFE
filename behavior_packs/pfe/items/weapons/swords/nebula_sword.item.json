@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.21.90",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:nebula_sword",
@@ -13,10 +13,8 @@
 				"value": "%poke_pfe.nebula_sword\n%poke_pfe.tag"
 			},
 			"minecraft:rarity": "epic",
-			"minecraft:custom_components": [
-				"poke:normalMining",
-				"poke:hitEffects"
-			],
+			"poke:normalMining": {},
+			"poke:hitEffects": {},
 			"minecraft:tags": {
 				"tags": [
 					"minecraft:is_sword",

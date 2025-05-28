@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.21.90",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:mushroom_buddy",
@@ -199,9 +199,13 @@
 		},
 		"components": {
 			"minecraft:leashable": {
-				"soft_distance": 4,
-				"hard_distance": 6,
-				"max_distance": 16
+				"presets": [
+					{
+						"soft_distance": 4,
+						"hard_distance": 6,
+						"max_distance": 16
+					}
+				]
 			},
 			"minecraft:attack_damage": {
 				"value": 4

@@ -614,9 +614,13 @@
 				"max": 40
 			},
 			"minecraft:leashable": {
-				"soft_distance": 4,
-				"hard_distance": 6,
-				"max_distance": 10,
+				"presets": [
+					{
+						"soft_distance": 4,
+						"hard_distance": 6,
+						"max_distance": 10
+					}
+				],
 				"can_be_stolen": true
 			},
 			"minecraft:balloonable": {},

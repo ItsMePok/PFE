@@ -134,7 +134,7 @@ export const initExampleStickers = () => {
       () =>
         void world
           .getDimension("overworld")
-          .runCommandAsync(`scriptevent mineapi:jig_pcs ${JSON.stringify(m)}`),
+          .runCommand(`scriptevent mineapi:jig_pcs ${JSON.stringify(m)}`),
       delay
     );
 

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.21.90",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:deepslate_godly_ore",
@@ -42,9 +42,7 @@
 				}
 			},
 			"minecraft:loot": "loot_tables/poke/pfe/godly_ore.loot.json",
-			"minecraft:custom_components": [
-				"poke:fortune"
-			]
+			"poke:fortune": {}
 		}
 	}
 }

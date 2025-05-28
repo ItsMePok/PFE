@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70", //Format version is the version it was built for
+	"format_version": "1.21.90", //Format version is the version it was built for
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:nebula_pickaxe", //Item Identifier. everything is prefixed with poke: or pfe:
@@ -13,9 +13,7 @@
 				"value": "%poke_pfe.nebula_pickaxe\n%poke_pfe.tag" // Name of the item
 			},
 			"minecraft:rarity": "epic", //Rarity of the item (epic = magenta, common = white, uncommon = yellow, rare = blue)
-			"minecraft:custom_components": [
-				"poke:normalMining" //Controls durability when breaking blocks
-			],
+			"poke:normalMining": {}, //Controls durability when breaking blocks
 			"minecraft:hand_equipped": true, //Make it held like a Tool
 			"minecraft:max_stack_size": 1, //Stack size is 1.. basically makes it unstackable
 			"minecraft:durability": { //Item durability

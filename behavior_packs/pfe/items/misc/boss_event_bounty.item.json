@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.21.90",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:boss_event_bounty",
@@ -12,9 +12,7 @@
 				"value": "%poke_pfe.boss_event_bounty\n%poke_pfe.tag"
 			},
 			"minecraft:icon": "poke_boss_event",
-			"minecraft:custom_components": [
-				"poke:boss_event"
-			]
+			"poke:boss_event": {}
 		}
 	}
 }

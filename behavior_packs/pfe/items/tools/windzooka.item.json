@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.21.90",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:windzooka",
@@ -51,10 +51,8 @@
 					"function poke/pfe/windzooka"
 				]
 			},
-			"minecraft:custom_components": [
-				"poke:cc_zooka",
-				"poke:normalMining"
-			],
+			"poke:cc_zooka": {},
+			"poke:normalMining": {},
 			"minecraft:rarity": "uncommon"
 		}
 	}

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.21.90",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:dodge_spell",
@@ -19,9 +19,7 @@
 				"duration": 1,
 				"category": "poke:dodge_spell"
 			},
-			"minecraft:custom_components": [
-				"poke:cc_dodge"
-			]
+			"poke:cc_dodge": {}
 		}
 	}
 }

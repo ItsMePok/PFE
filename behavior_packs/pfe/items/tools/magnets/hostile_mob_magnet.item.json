@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.70",
+  "format_version": "1.21.90",
   "minecraft:item": {
     "description": {
       "identifier": "poke:hostile_mob_magnet",
@@ -42,10 +42,8 @@
           "pfe:Command:tp @e[r=55,family=monster] @s:pfeCommandEnd"
         ]
       },
-      "minecraft:custom_components": [
-        "poke:cc_on_use",
-        "poke:normalMining"
-      ],
+      "poke:cc_on_use": {},
+      "poke:normalMining": {},
       "minecraft:use_modifiers": {
         "use_duration": 0,
         "movement_modifier": 1

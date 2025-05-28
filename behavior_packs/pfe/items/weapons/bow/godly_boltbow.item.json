@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.70",
+	"format_version": "1.21.90",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:godly_boltbow",
@@ -54,10 +54,8 @@
 				},
 				"max_durability": 2000
 			},
-			"minecraft:custom_components": [
-				"poke:cc_bowAim",
-				"poke:boltbow"
-			]
+			"poke:cc_bowAim": {},
+			"poke:boltbow": {}
 		}
 	}
 }

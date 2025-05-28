@@ -1,5 +1,5 @@
 {
-"format_version": "1.20.60",
+    "format_version": "1.21.80",
     "minecraft:block_culling_rules": {
         "description": {
             "identifier": "poke:geometry.poke_pfe.wall"
