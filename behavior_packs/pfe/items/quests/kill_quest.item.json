@@ -13,7 +13,66 @@
 			},
 			"minecraft:max_stack_size": 1,
 			"minecraft:icon": "poke_uo_kill_quest",
-			"poke_pfe:quest": {}
+			"poke_pfe:custom_quests_info": {
+				"version": 1,
+				"custom_quest_dynamic_property": "poke_pfe:custom_kill_quests"
+			},
+			"poke_pfe:quests": [
+				{
+					"item": "minecraft:rotten_flesh",
+					"amount": 4,
+					"translationString": "%item.rotten_flesh.name",
+					"tokenAmount": 2
+				},
+				{
+					"item": "minecraft:bone",
+					"amount": 4,
+					"translationString": "%item.bone.name",
+					"tokenAmount": 2
+				},
+				{
+					"item": "minecraft:string",
+					"amount": 4,
+					"translationString": "%item.string.name",
+					"tokenAmount": 2
+				},
+				{
+					"item": "minecraft:leather",
+					"amount": 4,
+					"translationString": "%item.leather.name",
+					"tokenAmount": 2
+				},
+				{
+					"item": "minecraft:feather",
+					"amount": 4,
+					"translationString": "%item.feather.name",
+					"tokenAmount": 2
+				},
+				{
+					"item": "minecraft:rabbit_hide",
+					"amount": 4,
+					"translationString": "%item.rabbit_hide.name",
+					"tokenAmount": 4
+				},
+				{
+					"item": "minecraft:rabbit_foot",
+					"amount": 1,
+					"translationString": "%item.rabbit_foot.name",
+					"tokenAmount": 12
+				},
+				{
+					"item": "minecraft:blaze_rod",
+					"amount": 16,
+					"translationString": "%item.blaze_rod.name",
+					"tokenAmount": 32
+				},
+				{
+					"item": "poke:rotten_chicken",
+					"amount": 8,
+					"translationString": "%poke_pfe.rotten_chicken (%poke_pfe.tag)",
+					"tokenAmount": 8
+				}
+			]
 		}
 	}
 }

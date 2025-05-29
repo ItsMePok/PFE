@@ -13,12 +13,15 @@
 			},
 			"minecraft:max_stack_size": 64,
 			"minecraft:icon": "poke_empty_vial",
-			"minecraft:tags": {
-				"tags": [
-					"pfe:Command:function poke/pfe/xp_vial:pfeCommandEnd"
-				]
+			"minecraft:rarity": "common",
+			"poke_pfe:run_command": {
+				"version": 1,
+				"command": "function poke/pfe/xp_vial",
+				"take_durability": true,
+				"trigger_cooldown": true,
+				"ignore_cooldown": false,
+				"can_be_disabled": false
 			},
-			"poke:cc_on_use": {},
 			"minecraft:cooldown": {
 				"duration": 0.25,
 				"category": "poke:empty_vial"

@@ -25,15 +25,11 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core"
+							"poke:repair_core",
+							"poke:nebula_core",
+							"poke:nebula_block"
 						],
 						"repair_amount": "query.max_durability"
-					},
-					{
-						"items": [
-							"poke:nebula_core"
-						],
-						"repair_amount": "query.max_durability*0.80"
 					},
 					{
 						"items": [
@@ -46,10 +42,17 @@
 			"minecraft:hand_equipped": true,
 			"minecraft:tags": {
 				"tags": [
-					"pfe:Command:tp @e[type=item] @a[r=0.1]:pfeCommandEnd"
+					"pfe:is_magnet"
 				]
 			},
-			"poke:cc_on_use":{},
+			"poke_pfe:run_command": {
+				"version": 1,
+				"command": "tp @e[type=item] @a[r=0.1]",
+				"take_durability": true,
+				"trigger_cooldown": true,
+				"ignore_cooldown": false,
+				"can_be_disabled": false
+			},
 			"minecraft:use_modifiers": {
 				"use_duration": 0,
 				"movement_modifier": 1

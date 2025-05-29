@@ -38,6 +38,11 @@
 						"redstone_conductor": true,
 						"allows_wire_to_step_down": true
 					},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "poke_raw_godly_block"
+						}
+					},
 					"minecraft:geometry": {
 						"identifier": "minecraft:geometry.full_block"
 					},
@@ -73,6 +78,11 @@
 							8,
 							16
 						]
+					},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "poke_raw_godly_block"
+						}
 					},
 					"minecraft:geometry": {
 						"identifier": "geometry.poke_pfe_slab",
@@ -123,6 +133,11 @@
 							8,
 							16
 						]
+					},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "poke_raw_godly_block"
+						}
 					},
 					"minecraft:geometry": {
 						"identifier": "geometry.poke_pfe_slab",

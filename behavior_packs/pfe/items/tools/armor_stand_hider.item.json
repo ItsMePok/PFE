@@ -15,10 +15,17 @@
 			"minecraft:icon": "poke_armor_stand_hider",
 			"minecraft:tags": {
 				"tags": [
-					"pfe:Command:execute as @e[type=minecraft:armor_stand,c=1,r=2] run effect @s invisibility 9999999 0 true:pfeCommandEnd"
+					"pfe:is_armor_stand_tool"
 				]
 			},
-			"poke:cc_on_use": {},
+			"poke_pfe:run_command": {
+				"version": 1,
+				"command": "execute as @e[type=minecraft:armor_stand,c=1,r=2] run effect @s invisibility 9999999 0 true",
+				"take_durability": false,
+				"trigger_cooldown": true,
+				"ignore_cooldown": false,
+				"can_be_disabled": false
+			},
 			"poke:normalMining": {},
 			"minecraft:use_modifiers": {
 				"use_duration": 0,

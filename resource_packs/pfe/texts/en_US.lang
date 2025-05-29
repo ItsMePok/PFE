@@ -1363,7 +1363,24 @@ translation.poke_pfe.persistence=Persistence
 
 poke:itemGroup.name.claymore=Claymores~LINEBREAK~§7Cannot be enchanted
 
+poke_pfe.set_effects=Set Effects
 poke_pfe.boss_tier_warning=Recommended armor tier:
 poke_pfe.astral_tier=Astral tier
 poke_pfe.death_tier=Death tier
 poke_pfe._tier= tier
+
+poke_pfe.waypoints=Waypoints
+poke_pfe.options=Options
+poke_pfe.debug=Debug
+poke_pfe.create_waypoint=Create Waypoint
+poke_pfe.teleport=Teleport
+poke_pfe.update_location=Update Location
+poke_pfe.rename=Rename
+poke_pfe.change_icon=Change Icon
+poke_pfe.delete_waypoint=Delete Waypoint
+poke_pfe.new_name=New Name
+poke_pfe.confirm=Confirm
+poke_pfe.name=Name
+poke_pfe.custom=Custom
+poke_pfe.preset=Preset
+poke_pfe.texture_path=Texture Path

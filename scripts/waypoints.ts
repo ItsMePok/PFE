@@ -1,9 +1,10 @@
-import { EntityComponentTypes, EquipmentSlot, ItemComponentTypes, ItemComponentUseEvent, ItemStack, Player, RawMessage, Vector2, Vector3, world } from "@minecraft/server";
-import { ActionFormData, FormCancelationReason, ModalFormData } from "@minecraft/server-ui";
+import { CustomComponentParameters, EntityComponentTypes, EquipmentSlot, ItemComponentUseEvent, ItemStack, Player, RawMessage, Vector2, Vector3, world } from "@minecraft/server";
+import { ActionFormData, ModalFormData } from "@minecraft/server-ui";
 import { PokeErrorScreen, PokeSaveProperty } from "./commonFunctions";
 import { PFEDisableConfigName, PFEDisableConfigOptions } from "./disableConfig";
 
 export {
+  PFEWaypointComponent,
   waypointComponentOptions,
   PokePFEWaypointConfig,
   WaypointDynamicPropertyID,
@@ -16,6 +17,22 @@ interface waypointComponentOptions {
   version: number,
   max_waypoints: number,
   debug_mode: false
+}
+class PFEWaypointComponent {
+  onUse(data: ItemComponentUseEvent, component: CustomComponentParameters) {
+    const componentInfo = <waypointComponentOptions>component.params
+    if (!data.itemStack) return;
+    let options: PFEDisableConfigOptions = JSON.parse(world.getDynamicProperty(PFEDisableConfigName)!.toString())
+    if (options.waypoints === false) {
+      data.source.sendMessage({ translate: `§c%translation.poke_pfe.feature_disabled` })
+      return
+    }
+    const WaypointConfig: PokePFEWaypointConfig = (data.itemStack.getDynamicProperty(WaypointDynamicPropertyID)) ? JSON.parse(data.itemStack.getDynamicProperty(WaypointDynamicPropertyID)!.toString()) : PFEWaypointDefaultConfig
+    data.itemStack.setDynamicProperty(WaypointDynamicPropertyID, JSON.stringify(WaypointConfig))
+    data.itemStack.keepOnDeath = true
+    data.source.getComponent(EntityComponentTypes.Equippable)?.setEquipment(EquipmentSlot.Mainhand, data.itemStack)
+    WaypointUIMainMenu(data.source, data.itemStack, componentInfo)
+  }
 }
 interface PokePFEWaypointConfig {
   v: 1,
@@ -83,10 +100,10 @@ function WaypointUIMainMenu(player: Player, item: ItemStack, component: waypoint
   let UI = new ActionFormData()
   let waypointConfig: PokePFEWaypointItemConfig = JSON.parse(item.getDynamicProperty(WaypointDynamicPropertyID)!.toString()) ?? PFEWaypointDefaultConfig
   UI.title({ translate: `translation.poke_pfe.WaypointUITitle` })
-  UI.button({ translate: `*%WAYPOINTS [${waypointConfig.waypoints.length ?? 0}/${component.max_waypoints ?? WaypointTotal}]` }, `textures/poke/common/waypointRed`)
-  UI.button({ translate: `*OPTIONS` }, `textures/poke/common/gear`)
-  UI.button({ translate: `*DEBUG` }, `textures/poke/common/debug`)
-  UI.button({ translate: `*CLOSE` }, `textures/poke/common/close`)
+  UI.button({ translate: `%poke_pfe.waypoints [${waypointConfig.waypoints.length ?? 0}/${component.max_waypoints ?? WaypointTotal}]` }, `textures/poke/common/waypointRed`)
+  UI.button({ translate: `%poke_pfe.options` }, `textures/poke/common/gear`)
+  component.debug_mode ? UI.button({ translate: `%poke_pfe.debug` }, `textures/poke/common/debug`) : undefined
+  UI.button({ translate: `%translation.poke:bossEventClose` }, `textures/poke/common/close`)
   UI.show(player).then(response => {
     let selection = 0
     if (response.selection == selection) {
@@ -98,11 +115,13 @@ function WaypointUIMainMenu(player: Player, item: ItemStack, component: waypoint
       PokeErrorScreen(player, { text: `This is not ready yet` }, WaypointUIMainMenu(player, item, component))
       return;
     } else selection++
-    if (response.selection == selection) {
-      // DEBUG MENU (MAYBE NEEDED)
-      PokeErrorScreen(player, { text: `This is not ready yet` }, WaypointUIMainMenu(player, item, component))
-      return;
-    } else selection++
+    if (component.debug_mode) {
+      if (response.selection == selection) {
+        // DEBUG MENU (MAYBE NEEDED)
+        PokeErrorScreen(player, { text: `This is not ready yet` }, WaypointUIMainMenu(player, item, component))
+        return;
+      } else selection++
+    }
     if (response.canceled || response.selection == selection) return;
   })
 }
@@ -111,12 +130,12 @@ function WaypointUIMainMenu(player: Player, item: ItemStack, component: waypoint
 function WaypointUIViewWaypoints(player: Player, item: ItemStack, component: waypointComponentOptions) {
   let UI = new ActionFormData()
   let waypointConfig: PokePFEWaypointItemConfig = JSON.parse(item.getDynamicProperty(WaypointDynamicPropertyID)!.toString()) ?? PFEWaypointDefaultConfig
-  UI.title({ translate: `translation.poke_pfe.WaypointUITitle` })
+  UI.title({ translate: `%translation.poke_pfe.WaypointUITitle` })
   for (let waypoint of waypointConfig.waypoints) {
     UI.button(waypoint.name, waypoint.icon)
   }
   if (waypointConfig.waypoints.length < (component.max_waypoints ?? WaypointTotal)) {
-    UI.button({ translate: `*CREATE WAYPOINT` }, `textures/poke/common/add`)
+    UI.button({ translate: `%poke_pfe.create_waypoint` }, `textures/poke/common/add`)
   }
   UI.button({ translate: `%translation.poke_pfe.GoBack` }, `textures/poke/common/left_arrow`)
   UI.show(player).then(response => {
@@ -146,11 +165,11 @@ function WaypointUIManageWaypoint(player: Player, item: ItemStack, waypoint: Pok
   let waypointConfig: PokePFEWaypointItemConfig = JSON.parse(item.getDynamicProperty(WaypointDynamicPropertyID)!.toString()) ?? PFEWaypointDefaultConfig
   UI.title({ translate: `translation.poke_pfe.WaypointUITitle` })
 
-  UI.button({ translate: `*TELEPORT` }, `textures/poke/common/teleport`)
-  UI.button({ translate: `*UPDATE LOCATION` }, `textures/poke/common/question`)
-  UI.button({ translate: `*RENAME` }, `textures/poke/common/edit`)
-  UI.button({ translate: `*CHANGE ICON` }, `textures/poke/common/painting`)
-  UI.button({ translate: `*DELETE WAYPOINT` }, `textures/poke/common/trash`)
+  UI.button({ translate: `%poke_pfe.teleport` }, `textures/poke/common/teleport`)
+  UI.button({ translate: `poke_pfe.update_location` }, `textures/poke/common/question`)
+  UI.button({ translate: `%poke_pfe.rename` }, `textures/poke/common/edit`)
+  UI.button({ translate: `%poke_pfe.change_icon` }, `textures/poke/common/painting`)
+  UI.button({ translate: `%poke_pfe.delete_waypoint` }, `textures/poke/common/trash`)
   UI.button({ translate: `%translation.poke_pfe.GoBack` }, `textures/poke/common/left_arrow`)
   UI.show(player).then(response => {
     let selection = 0
@@ -191,7 +210,7 @@ function WaypointUIRenameWaypoint(player: Player, item: ItemStack, waypoint: Pok
   let UI = new ModalFormData()
   let waypointConfig: PokePFEWaypointItemConfig = JSON.parse(item.getDynamicProperty(WaypointDynamicPropertyID)!.toString()) ?? PFEWaypointDefaultConfig
   UI.title({ translate: `translation.poke_pfe.WaypointUITitle` })
-  UI.textField({ translate: `*NEW NAME` }, waypoint.name, { defaultValue: `` })
+  UI.textField({ translate: `%poke_pfe.new_name` }, waypoint.name, { defaultValue: `` })
   UI.show(player).then(response => {
     if (response.canceled) {
       // GO BACK
@@ -222,7 +241,7 @@ function WaypointUIDeleteWaypoint(player: Player, item: ItemStack, waypoint: Pok
   let UI = new ActionFormData()
   let waypointConfig: PokePFEWaypointItemConfig = JSON.parse(item.getDynamicProperty(WaypointDynamicPropertyID)!.toString()) ?? PFEWaypointDefaultConfig
   UI.title({ translate: `translation.poke_pfe.WaypointUITitle` })
-  UI.button({ translate: `*CONFIRM` }, `textures/poke/common/confirm`)
+  UI.button({ translate: `%poke_pfe.confirm` }, `textures/poke/common/confirm`)
   UI.button({ translate: `%translation.poke_pfe.GoBack` }, `textures/poke/common/left_arrow`)
   UI.show(player).then(response => {
     let selection = 0
@@ -248,8 +267,8 @@ function WaypointUIDeleteWaypoint(player: Player, item: ItemStack, waypoint: Pok
 function WaypointUICreateWaypoint(player: Player, item: ItemStack, component: waypointComponentOptions) {
   let UI = new ModalFormData()
   let waypointConfig: PokePFEWaypointItemConfig = JSON.parse(item.getDynamicProperty(WaypointDynamicPropertyID)!.toString()) ?? PFEWaypointDefaultConfig
-  UI.title({ translate: `translation.poke_pfe.WaypointUITitle` })
-  UI.textField({ translate: `*NAME` }, '', { defaultValue: `` })
+  UI.title({ translate: `%translation.poke_pfe.WaypointUITitle` })
+  UI.textField({ translate: `%poke_pfe.name` }, '', { defaultValue: `` })
   UI.show(player).then(response => {
     if (response.canceled) {
       // GO BACK
@@ -266,13 +285,13 @@ function WaypointUICreateWaypoint(player: Player, item: ItemStack, component: wa
       location: player.location,
       rotation: player.getRotation()
     }
-    console.warn(`SAVING: ${JSON.stringify(newWaypoint)}`)
+    //console.warn(`SAVING: ${JSON.stringify(newWaypoint)}`)
     let newProperty: PokePFEWaypointItemConfig = {
       localSettings: waypointConfig.localSettings,
       v: PFEWaypointVersion,
       waypoints: waypointConfig.waypoints.concat(newWaypoint)
     }
-    console.warn(JSON.stringify(newProperty))
+    //console.warn(JSON.stringify(newProperty))
     PokeSaveProperty(WaypointDynamicPropertyID, item, JSON.stringify(newProperty), player, EquipmentSlot.Mainhand)
     WaypointUIViewWaypoints(player, item, component)
     return;
@@ -376,8 +395,8 @@ function WaypointUIChangeWaypointIcon(player: Player, item: ItemStack, waypoint:
   let UI = new ActionFormData()
   let waypointConfig: PokePFEWaypointItemConfig = JSON.parse(item.getDynamicProperty(WaypointDynamicPropertyID)!.toString()) ?? PFEWaypointDefaultConfig
   UI.title({ translate: `translation.poke_pfe.WaypointUITitle` })
-  UI.button({ translate: `*PRESET` }, `textures/poke/common/upcoming_events`)
-  UI.button({ translate: `*CUSTOM` }, `textures/poke/common/upgrade`)
+  UI.button({ translate: `%poke_pfe.preset` }, `textures/poke/common/upcoming_events`)
+  UI.button({ translate: `%poke_pfe.custom` }, `textures/poke/common/upgrade`)
   UI.button({ translate: `%translation.poke_pfe.GoBack` }, `textures/poke/common/left_arrow`)
   UI.show(player).then(response => {
     let selection = 0
@@ -403,7 +422,7 @@ function WaypointUIChangeWaypointIcon(player: Player, item: ItemStack, waypoint:
 function WaypointUISetIconPreset(player: Player, item: ItemStack, waypoint: PokePFEWaypointConfig, component: waypointComponentOptions) {
   let UI = new ActionFormData()
   let waypointConfig: PokePFEWaypointItemConfig = JSON.parse(item.getDynamicProperty(WaypointDynamicPropertyID)!.toString()) ?? PFEWaypointDefaultConfig
-  UI.title({ translate: `translation.poke_pfe.WaypointUITitle` })
+  UI.title({ translate: `%translation.poke_pfe.WaypointUITitle` })
   for (let icon of WaypointIconPresets) {
     UI.button(icon.name, icon.path)
   }
@@ -442,7 +461,7 @@ function WaypointUISetIconCustom(player: Player, item: ItemStack, waypoint: Poke
   let UI = new ModalFormData()
   let waypointConfig: PokePFEWaypointItemConfig = JSON.parse(item.getDynamicProperty(WaypointDynamicPropertyID)!.toString()) ?? PFEWaypointDefaultConfig
   UI.title({ translate: `translation.poke_pfe.WaypointUITitle` })
-  UI.textField({ translate: `*TEXTURE PATH` }, `textures/...`, { defaultValue: `` })
+  UI.textField({ translate: `%poke_pfe.texture_path` }, `textures/...`, { defaultValue: `` })
   UI.show(player).then(response => {
     if (response.canceled) {
       // GO BACK

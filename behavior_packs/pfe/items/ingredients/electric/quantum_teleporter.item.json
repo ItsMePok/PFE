@@ -16,12 +16,14 @@
 			"minecraft:hand_equipped": {
 				"value": true
 			},
-			"minecraft:tags": {
-				"tags": [
-					"pfe:Command:tp @e[family=!pfe_exclude,type=!player] @s:pfeCommandEnd"
-				]
+			"poke_pfe:run_command": {
+				"version": 1,
+				"command": "tp @e[family=!pfe_exclude,type=!player] @s",
+				"take_durability": true,
+				"trigger_cooldown": true,
+				"ignore_cooldown": false,
+				"can_be_disabled": true
 			},
-			"poke:cc_on_use": {},
 			"poke:normalMining": {},
 			"minecraft:use_modifiers": {
 				"use_duration": 0,

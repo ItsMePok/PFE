@@ -32,7 +32,6 @@
       },
       "minecraft:tags": {
         "tags": [
-          "pfe:Command:function poke/pfe/onyx_battleaxe:pfeCommandEnd",
           "minecraft:netherite_tier",
           "minecraft:is_sword",
           "pfe:is_battleaxe"
@@ -56,7 +55,14 @@
           }
         ]
       },
-      "poke:cc_on_use": {},
+      "poke_pfe:run_command": {
+        "version": 1,
+        "command": "function poke/pfe/onyx_battleaxe",
+        "take_durability": false,
+        "trigger_cooldown": true,
+        "ignore_cooldown": false,
+        "can_be_disabled": false
+      },
       "poke:normalMining": {},
       "minecraft:use_modifiers": {
         "use_duration": 0,

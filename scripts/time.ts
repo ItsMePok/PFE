@@ -21,7 +21,7 @@ interface PokeEventConfig {
   "repeat"?: boolean// Will this event repeat each year?
   "fixedTime"?: boolean // Will this ignore timezones? (UTC only)
   "gift"?: string // Minecraft command
-  "greeting": RawMessage | undefined | "generic",
+  "greeting": RawMessage | undefined | "generic" | string,
   "nonModifiable"?: boolean,
   "v": number
 }
@@ -266,13 +266,10 @@ function PokeTimeDebug(player: Player) {
         { id: `custom:10`, dates: [{ month: 0, days: [1, 2, 3, 4, 5] }, { month: 1, days: [6, 7, 8, 9, 10] }], greeting: "generic", name: { text: `Custom Event 10` }, icon: `textures/poke/common/event_default`, repeat: true, gift: undefined, fixedTime: false, v: PokeCalendarVersion }
       ]
       let customEvents = world.getDynamicProperty(PokeCustomEventId)
-      if (!customEvents) {
+      if (typeof customEvents != "string") {
         world.setDynamicProperty(PokeCustomEventId, JSON.stringify(newEvents))
         return
       }
-
-
-      //@ts-ignore
       customEvents = JSON.parse(customEvents).concat(newEvents)
       world.setDynamicProperty(PokeCustomEventId, JSON.stringify(customEvents))
       return
@@ -296,11 +293,10 @@ function PokeTimeDebug(player: Player) {
         { id: `10`, day: time.getDate() - 1, announce: true, month: time.getMonth(), style: "dev", name: `Custom 10` },
       ]
       let birthdays = world.getDynamicProperty(PokeCustomEventId)
-      if (!birthdays) {
+      if (typeof birthdays != "string") {
         world.setDynamicProperty(PokeCustomEventId, JSON.stringify(newBirthdays))
         return
       }
-      //@ts-ignore
       birthdays = JSON.parse(birthdays).concat(newBirthdays)
       world.setDynamicProperty(`poke:birthdays`, JSON.stringify(birthdays))
       return
@@ -321,7 +317,17 @@ function PokeTimeDebug(player: Player) {
  */
 function PokeTimeConfigUIMainMenu(player: Player) {
   let currentTime = new Date(Date.now() + PokeTimeZoneOffset(player))
-  let UI = new ActionFormData().body({ translate: `translation.poke:timeUiMainMenuBody`, with: { rawtext: [PokeTimeGreeting(currentTime, player), { text: player.name }, { text: `${currentTime.toDateString()}, ${currentTime.toLocaleTimeString()}` }] } })
+  let UI = new ActionFormData()
+  UI.body(
+    {
+      translate: `translation.poke:timeUiMainMenuBody`, with: {
+        rawtext: [
+          PokeTimeGreeting(currentTime, player),
+          { text: player.name },
+          { text: `${currentTime.toDateString()}, ${currentTime.toLocaleTimeString()}` }
+        ]
+      }
+    })
   if (player.hasTag(`debug`)) {
     UI.button(`Debug Menu`)
   }
@@ -401,7 +407,6 @@ function PokeSetBirthday(player: Player) {
   UI.dropdown({ translate: `translation.poke:setBirthdayDay` }, [`1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`, `10`, `11`, `12`, `13`, `14`, `15`, `16`, `17`, `18`, `19`, `20`, `21`, `22`, `23`, `24`, `25`, `26`, `27`, `28`, `29`, `30`, `31`], { defaultValueIndex: currentBirthday.day - 1 })
   UI.dropdown({ translate: `translation.poke:setBirthdayMonth` }, [{ translate: `translation.poke:setBirthdayJan` }, { translate: `translation.poke:setBirthdayFeb` }, { translate: `translation.poke:setBirthdayMar` }, { translate: `translation.poke:setBirthdayApr` }, { translate: `translation.poke:setBirthdayMay` }, { translate: `translation.poke:setBirthdayJun` }, { translate: `translation.poke:setBirthdayJul` }, { translate: `translation.poke:setBirthdayAug` }, { translate: `translation.poke:setBirthdaySep` }, { translate: `translation.poke:setBirthdayOct` }, { translate: `translation.poke:setBirthdayNov` }, { translate: `translation.poke:setBirthdayDec` }], { defaultValueIndex: currentBirthday.month })
   UI.toggle({ translate: `translation.poke:setBirthdayGlobalMessage` }, { defaultValue: currentBirthday.announce })
-  //@ts-ignore
   UI.show(player).then((response => {
     if (response.canceled) {
       if (player.getDynamicProperty(`poke:birthday`)) {
@@ -719,7 +724,7 @@ function PokeSetTimeZone(player: Player) {
   Timezones.forEach(timezone => {
     Ui.button(timezone.name, PokeTimeIcon(new Date(Date.now() + (timezone.offset))))
   });
-  //@ts-ignore
+
   Ui.show(player).then((response => {
     if (response.canceled) {
       return
@@ -731,7 +736,7 @@ function PokeSetTimeZone(player: Player) {
 function PokeTimeGreeting(date: Date, player: Player, event?: PokeEventConfig, generic?: boolean) {
   if (!generic) {
     if (event) {
-      if ((!event.greeting) || (event.greeting == "generic")) { }
+      if ((!event.greeting) || (typeof event.greeting == "string")) { }
       else return event.greeting
     } else {
       //console.warn(`Checking for active event's with a greeting`)
@@ -742,9 +747,9 @@ function PokeTimeGreeting(date: Date, player: Player, event?: PokeEventConfig, g
         if (!event) continue;
         //console.warn(`Checking: ${event.id}`)
         if (PokeTimeCheck(event, player, false)) {
-          if ((event.greeting) && (event.greeting != "generic")) {
+          if (typeof event.greeting != "string") {
             //console.warn(`Adding: ${event.id}, Greeting: ${event.greeting}`)
-            activeEventGreetings = activeEventGreetings.concat(event.greeting)
+            activeEventGreetings = activeEventGreetings.concat(event.greeting ?? [])
           }
         }
       }
@@ -1004,13 +1009,11 @@ function PokeTimeCreateEvent(player: Player, event?: PokeEventConfig) {
         if (response.formValues?.at(0)?.toString().startsWith(`%`)) {
           name = { translate: response.formValues.at(1)?.toString().substring(1) }
         }
-        //@ts-ignore
-        let newEventList: undefined | string | PokeEventConfig[] = world.getDynamicProperty(PokeCustomEventId)
+        let newEventList = <undefined | string | PokeEventConfig[]>world.getDynamicProperty(PokeCustomEventId)
         let replaceEvent = undefined
         if (typeof newEventList == "string") {
           //console.warn(`a event already exists:: ${newEventList}`)
-          newEventList = JSON.parse(newEventList)
-          //@ts-ignore
+          newEventList = <PokeEventConfig[]>JSON.parse(newEventList) ?? []
           replaceEvent = PokeGetObjectById(newEventList, `custom:${id}`)
         } else {
           newEventList = [{ id: `placeholder`, dates: [{ month: 0, days: [0] }], greeting: "generic", name: { text: `placeholder` }, icon: undefined, v: PokeCalendarVersion }]
@@ -1213,7 +1216,7 @@ function PokeTimeEditGreeting(player: Player, event: PokeEventConfig) {
       gift: event.gift,
       icon: event.icon,
       repeat: event.repeat,
-      //@ts-ignore // String will only be "generic" otherwise its RawMessage
+      // String will only be "generic" otherwise its RawMessage
       greeting: newGreeting,
       nonModifiable: event.nonModifiable,
       v: PokeCalendarVersion
@@ -1242,8 +1245,7 @@ function PokeTimeDeleteEvent(player: Player, event: PokeEventConfig) {
       }
       //console.warn(`Deleting: ${event.id}`)
       //console.warn(`${world.getDynamicProperty(PokeCustomEventId)}`)
-      //@ts-ignore
-      let customEvents: PokeEventConfig[] = JSON.parse(world.getDynamicProperty(PokeCustomEventId))
+      let customEvents: PokeEventConfig[] = JSON.parse(world.getDynamicProperty(PokeCustomEventId)!.toString() ?? "[]")
       let replacedEvent = PokeGetObjectById(customEvents, event.id)
       if (!replacedEvent) {
         //console.warn(`Invalid Event ID`)

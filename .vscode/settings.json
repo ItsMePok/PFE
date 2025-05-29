@@ -29,6 +29,88 @@
               "components": {
                 "type": "object",
                 "properties": {
+                  "poke_pfe:run_command": {
+                    "type": "object",
+                    "title": "Run Command (PFE)",
+                    "description": "Allows the item to run a command when it is used",
+                    "properties": {
+                      "version": {
+                        "type": "number",
+                        "description": "The version of this component. this is used to prevent breaking with outdated versions of this component's info\nCurrent version: 1",
+                        "default": 1,
+                      },
+                      "command": {
+                        "type": "string"
+                      },
+                      "can_be_disabled": {
+                        "type": "boolean",
+                        "default": false
+                      },
+                      "trigger_cooldown": {
+                        "type": "boolean",
+                        "default": false
+                      },
+                      "ignore_cooldown": {
+                        "type": "boolean",
+                        "default": false
+                      },
+                      "take_durability": {
+                        "type": "boolean",
+                        "default": true
+                      }
+                    },
+                    "required": [
+                      "version",
+                      "command"
+                    ]
+                  },
+                  "poke_pfe:custom_quests_info": {
+                    "type": "object",
+                    "description": "Quest (PFE)\n\nAdditional options for having custom quests on this item",
+                    "properties": {
+                      "version": {
+                        "type": "number",
+                        "description": "The version of this component. this is used to prevent breaking with outdated versions of this component's info\nCurrent version: 1",
+                        "default": 1,
+                      },
+                      "custom_quest_dynamic_property": {
+                        "type": "string",
+                        "description": "The dynamic property custom quests would get saved to",
+                        "enum": [
+                          "poke_pfe:custom_mine_quests",
+                          "poke_pfe:custom_farm_quests",
+                          "poke_pfe:custom_craft_quests",
+                          "poke_pfe:custom_kill_quests"
+                        ]
+                      },
+                    },
+                    "required": [
+                      "custom_quest_dynamic_property",
+                      "version"
+                    ]
+                  },
+                  "poke_pfe:quests": {
+                    "type": "array",
+                    "description": "Quest (PFE)\n\nWhen this item is used: this item will generate a quest that the player can complete for a reward",
+                    "items": {
+                      "properties": {
+                        "item": {
+                          "type": "string"
+                        },
+                        "amount": {
+                          "type": "number",
+                          "default": 1
+                        },
+                        "translationString": {
+                          "description": "the display name of the required item",
+                          "type": "string"
+                        },
+                        "tokenAmount": {
+                          "type": "number"
+                        }
+                      }
+                    }
+                  },
                   "poke_pfe:waypoint_menu": {
                     "type": "object",
                     "description": "Waypoin Menu (PFE)\n\nWhen this item is used: this item will open a waypoint GUI",
@@ -286,33 +368,6 @@
                             "block": {
                               "description": "Block to be dug.",
                               "oneOf": [
-                                {
-                                  "type": "object",
-                                  "properties": {
-                                    "name": {
-                                      "type": "string"
-                                    },
-                                    "states": {
-                                      "type": "object",
-                                      "additionalProperties": {
-                                        "oneOf": [
-                                          {
-                                            "type": "integer"
-                                          },
-                                          {
-                                            "type": "string"
-                                          },
-                                          {
-                                            "type": "boolean"
-                                          }
-                                        ]
-                                      }
-                                    },
-                                    "tags": {
-                                      "type": "string"
-                                    }
-                                  }
-                                },
                                 {
                                   "type": "string",
                                   "minLength": 1
@@ -1365,8 +1420,22 @@
                           "textures": {
                             "description": "This map contains the different textures that can be used for the item's icon. Default will contain the actual icon texture. Armor trim textures and palettes and bundle open textures can be specified here too. The icon textures are the keys from the resource_pack/textures/item_texture.json 'texture_data' object associated with the texture file.",
                             "type": "object",
+                            "properties": {
+                              "default": {
+                                "type": "string"
+                              },
+                              "dyed": {
+                                "type": "string"
+                              },
+                              "bundle_open_back": {
+                                "type": "string"
+                              },
+                              "bundle_open_front": {
+                                "type": "string"
+                              }
+                            },
                             "additionalProperties": {
-                              "oneOf": [
+                              "anyOf": [
                                 {
                                   "type": "string"
                                 },
@@ -1374,7 +1443,10 @@
                                   "type": "string"
                                 }
                               ]
-                            }
+                            },
+                            "required": [
+                              "default"
+                            ]
                           }
                         }
                       }
@@ -2050,7 +2122,17 @@
                                   "items": {
                                     "oneOf": [
                                       {
-                                        "type": "string"
+                                        "anyOf": [
+                                          {
+                                            "type": "string"
+                                          },
+                                          {
+                                            "type": "string",
+                                            "enum": [
+                                              "poke:repair_core"
+                                            ]
+                                          }
+                                        ],
                                       },
                                       {
                                         "type": "object",
@@ -2069,7 +2151,21 @@
                                       "title": "Molang string",
                                       "oneOf": [
                                         {
-                                          "type": "string"
+                                          "anyOf": [
+                                            {
+                                              "type": "string"
+                                            },
+                                            {
+                                              "type": "string",
+                                              "enum": [
+                                                "query.max_durability",
+                                                "query.max_durability * 0.5",
+                                                "query.max_durability * 0.25",
+                                                "query.max_durability * 0.1",
+                                                "query.max_durability * 0.028",
+                                              ]
+                                            },
+                                          ],
                                         },
                                         {
                                           "type": "object",
@@ -2279,7 +2375,36 @@
                         "description": "An array that can contain multiple item tags.",
                         "type": "array",
                         "items": {
-                          "type": "string"
+                          "anyOf": [
+                            {
+                              "type": "string",
+                              "enum": [
+                                "pfe:is_ring",
+                                "pfe:is_battleaxe",
+                                "pfe:is_haxel",
+                                "pfe:is_scythe",
+                                "pfe:is_claymore",
+                                "pfe:is_burstbow",
+                                "pfe:is_boltbow",
+                                "pfe:is_spell",
+                                "pfe:is_cosmetic",
+                                "pfe:is_cassette",
+                                "pfe:is_upgrade",
+                                "pfe:is_deprecated",
+                                "pfe:banished_star",
+                                "pfe:is_crossbow",
+                                "pfe:is_staff",
+                                "pfe:is_magnet",
+                                "pfe:is_upgrader",
+                                "pfe:is_robe",
+                                "pfe:is_survival_spawn_egg",
+                                "pfe:is_armor_stand_tool"
+                              ]
+                            },
+                            {
+                              "type": "string"
+                            }
+                          ],
                         }
                       }
                     }
@@ -2507,6 +2632,7 @@
     "taswell",
     "teleporter",
     "theend",
+    "toggledownfall",
     "torchflower",
     "trimmable",
     "unhider",

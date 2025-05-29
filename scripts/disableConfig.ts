@@ -36,57 +36,22 @@ const PFEDisableConfigDefault: PFEDisableConfigOptions = {
   "waypoints": true
 }
 function PFEDisableConfigMainMenu(data: ItemComponentUseEvent) {
-  let player = data.source
   let UI = new ActionFormData()
   let options: PFEDisableConfigOptions = JSON.parse(world.getDynamicProperty(PFEDisableConfigName)!.toString())
-  if (options.quantumTeleporter) {
-    UI.button({ rawtext: [{ translate: `poke_pfe.quantum_teleporter` }, { text: ":§a\n" }, { translate: `translation.poke_pfe.enabled` }] }, `textures/poke/pfe/quantum_teleporter`)
-  } else {
-    UI.button({ rawtext: [{ translate: `poke_pfe.quantum_teleporter` }, { text: ":§c\n" }, { translate: `translation.poke_pfe.disabled` }] }, `textures/poke/pfe/quantum_teleporter`)
-  }
-  /*if (options.deathArmorRadius){
-    UI.button({rawtext:[{translate:`translation.poke_pfe.death_armor_radius`},{text:":§a\n"},{translate:`translation.poke_pfe.enabled`}]},`textures/poke/pfe/death_helmet`)
-  }else{
-    UI.button({rawtext:[{translate:`translation.poke_pfe.death_armor_radius`},{text:":§c\n"},{translate:`translation.poke_pfe.disabled`}]},`textures/poke/pfe/death_helmet`)
-  }
-  if (options.cactusArmorRadius){
-    UI.button({rawtext:[{translate:`translation.poke_pfe.cactus_armor_radius`},{text:":§a\n"},{translate:`translation.poke_pfe.enabled`}]},`textures/poke/pfe/cactus_helmet`)
-  }else{
-    UI.button({rawtext:[{translate:`translation.poke_pfe.cactus_armor_radius`},{text:":§c\n"},{translate:`translation.poke_pfe.disabled`}]},`textures/poke/pfe/cactus_helmet`)
-  }*/
-  if (options.kapowRing) {
-    UI.button({ rawtext: [{ translate: `poke_pfe.kapow_ring` }, { text: ":§a\n" }, { translate: `translation.poke_pfe.enabled` }] }, `textures/poke/pfe/kapow_ring`)
-  } else {
-    UI.button({ rawtext: [{ translate: `poke_pfe.kapow_ring` }, { text: ":§c\n" }, { translate: `translation.poke_pfe.disabled` }] }, `textures/poke/pfe/kapow_ring`)
-  }
-  if (options.nukeRing) {
-    UI.button({ rawtext: [{ translate: `poke_pfe.nuke_ring` }, { text: ":§a\n" }, { translate: `translation.poke_pfe.enabled` }] }, `textures/poke/pfe/nuke_ring`)
-  } else {
-    UI.button({ rawtext: [{ translate: `poke_pfe.nuke_ring` }, { text: ":§c\n" }, { translate: `translation.poke_pfe.disabled` }] }, `textures/poke/pfe/nuke_ring`)
-  }
-  if (options.sundial) {
-    UI.button({ rawtext: [{ translate: `poke_pfe.sundial` }, { text: ":§a\n" }, { translate: `translation.poke_pfe.enabled` }] }, `textures/poke/pfe/sundial_1`)
-  } else {
-    UI.button({ rawtext: [{ translate: `poke_pfe.sundial` }, { text: ":§c\n" }, { translate: `translation.poke_pfe.disabled` }] }, `textures/poke/pfe/sundial_1`)
-  }
-  if (options.witherSpawner) {
-    UI.button({ rawtext: [{ translate: `poke_pfe.wither_spawner` }, { text: ":§a\n" }, { translate: `translation.poke_pfe.enabled` }] }, `textures/poke/pfe/wither_spawner`)
-  } else {
-    UI.button({ rawtext: [{ translate: `poke_pfe.wither_spawner` }, { text: ":§c\n" }, { translate: `translation.poke_pfe.disabled` }] }, `textures/poke/pfe/wither_spawner`)
-  }
-  if (options.bounty) {
-    UI.button({ rawtext: [{ translate: `poke_pfe.bounty` }, { text: ":§a\n" }, { translate: `translation.poke_pfe.enabled` }] }, `textures/poke/pfe/bounty`)
-  } else {
-    UI.button({ rawtext: [{ translate: `poke_pfe.bounty` }, { text: ":§c\n" }, { translate: `translation.poke_pfe.disabled` }] }, `textures/poke/pfe/bounty`)
-  }
-  if (options.waypoints) {
-    UI.button({ rawtext: [{ translate: `poke_pfe.waypoint_menu` }, { text: ":§a\n" }, { translate: `translation.poke_pfe.enabled` }] }, `textures/poke/pfe/waypoint_menu`)
-  } else {
-    UI.button({ rawtext: [{ translate: `poke_pfe.waypoint_menu` }, { text: ":§c\n" }, { translate: `translation.poke_pfe.disabled` }] }, `textures/poke/pfe/waypoint_menu`)
-  }
-  UI.button({ translate: `%poke_pfe.armor_effects:${world.getDynamicProperty(`poke_pfe:disable_armor_effects`) == true ? `§c\n%translation.poke_pfe.disabled` : `§a\n%translation.poke_pfe.enabled`}` }, `textures/poke/common/question`)
+  const enabled = `§a\n%translation.poke_pfe.enabled`
+  const disabled = `§c\n%translation.poke_pfe.disabled`
+  UI.button({ translate: `%poke_pfe.quantum_teleporter:${options.quantumTeleporter ? enabled : disabled}` }, `textures/poke/pfe/quantum_teleporter`)
+  //UI.button({ translate: `%translation.poke_pfe.death_armor_radius:${options.deathArmorRadius ? enabled : disabled}` }, `textures/poke/pfe/death_helmet`)
+  //UI.button({ translate: `%translation.poke_pfe.cactus_armor_radius:${options.cactusArmorRadius ? enabled : disabled}` }, `textures/poke/pfe/cactus_helmet`)
+  UI.button({ translate: `%poke_pfe.kapow_ring:${options.kapowRing ? enabled : disabled}` }, `textures/poke/pfe/kapow_ring`)
+  UI.button({ translate: `%poke_pfe.nuke_ring:${options.nukeRing ? enabled : disabled}` }, `textures/poke/pfe/nuke_ring`)
+  UI.button({ translate: `%poke_pfe.sundial:${options.sundial ? enabled : disabled}` }, `textures/poke/pfe/sundial_1`)
+  UI.button({ translate: `%poke_pfe.wither_spawner:${options.witherSpawner ? enabled : disabled}` }, `textures/poke/pfe/wither_spawner`)
+  UI.button({ translate: `%poke_pfe.bounty:${options.bounty ? enabled : disabled}` }, `textures/poke/pfe/bounty`)
+  UI.button({ translate: `%translation.poke_pfe.WaypointUITitle:${options.waypoints ? enabled : disabled}` }, `textures/poke/pfe/waypoint_menu`)
+  UI.button({ translate: `%poke_pfe.set_effects:${world.getDynamicProperty(`poke_pfe:disable_armor_effects`) == true ? disabled : enabled}` }, `textures/poke/common/effect_particles`)
 
-  UI.show(player).then(response => {
+  UI.show(data.source).then(response => {
     let selection = 0
     let newProperty = options
     if (response.selection == selection) {// Quantum Teleporter

@@ -9,12 +9,6 @@
 				"value": "%poke_pfe.mine_quest 1\n§7%poke_pfe.questDesc\n%poke_pfe.tag"
 			},
 			"minecraft:icon": "poke_mine_quest",
-			"minecraft:tags": {
-				"tags": [
-					"pfe:Command:function poke/pfe/q_info_mine_1:pfeCommandEnd"
-				]
-			},
-			"poke:cc_on_use": {},
 			"poke:normalMining": {},
 			"minecraft:use_modifiers": {
 				"use_duration": 0,

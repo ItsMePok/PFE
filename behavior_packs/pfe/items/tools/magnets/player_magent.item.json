@@ -39,10 +39,17 @@
 			"minecraft:hand_equipped": true,
 			"minecraft:tags": {
 				"tags": [
-					"pfe:Command:tp @a @s:pfeCommandEnd"
+					"pfe:is_magnet"
 				]
 			},
-			"poke:cc_on_use": {},
+			"poke_pfe:run_command": {
+				"version": 1,
+				"command": "tp @a @s",
+				"take_durability": true,
+				"trigger_cooldown": true,
+				"ignore_cooldown": false,
+				"can_be_disabled": true
+			},
 			"minecraft:use_modifiers": {
 				"use_duration": 0,
 				"movement_modifier": 1

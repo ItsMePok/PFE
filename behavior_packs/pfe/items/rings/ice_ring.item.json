@@ -25,7 +25,7 @@
 			"minecraft:max_stack_size": 1,
 			"minecraft:tags": {
 				"tags": [
-					"pfe:Command:function poke/pfe/ice_ring:pfeCommandEnd"
+					"pfe:is_ring"
 				]
 			},
 			"minecraft:durability": {
@@ -43,7 +43,14 @@
 				"category": "poke:ice_ring",
 				"duration": 0.33
 			},
-			"poke:cc_on_use": {},
+			"poke_pfe:run_command": {
+				"version": 1,
+				"command": "function poke/pfe/ice_ring",
+				"take_durability": true,
+				"trigger_cooldown": true,
+				"ignore_cooldown": false,
+				"can_be_disabled": false
+			},
 			"poke:normalMining": {},
 			"minecraft:use_modifiers": {
 				"use_duration": 0,

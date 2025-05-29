@@ -74,6 +74,7 @@ function PokeDamageItemUB(item: ItemStack, multiplier: undefined | number, entit
   if (entity.typeId == MinecraftEntityTypes.Player) {
     //@ts-ignore 
     if (entity.getGameMode() == GameMode.creative) {
+      if (item.isStackable) return { tookDurability: false, failed: false, broke: false, gmc: true }
       PokeSaveProperty(`poke:holdFix`, item, Math.round(Math.random() * 100), entity, slot)
       return { tookDurability: false, failed: false, broke: false, gmc: true }
     }
@@ -102,6 +103,7 @@ function PokeDamageItemUB(item: ItemStack, multiplier: undefined | number, entit
     }
     return
   }
+  if (item.isStackable) return { tookDurability: true, failed: false, broke: false, gmc: false }
   PokeSaveProperty(`poke:holdFix`, item, Math.round(Math.random() * 100), entity, slot)
   return
 }

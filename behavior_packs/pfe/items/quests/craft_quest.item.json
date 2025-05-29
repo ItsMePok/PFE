@@ -13,7 +13,54 @@
 			},
 			"minecraft:max_stack_size": 1,
 			"minecraft:icon": "poke_uo_craft_quest",
-			"poke_pfe:quest": {}
+			"poke_pfe:custom_quests_info": {
+				"version": 1,
+				"custom_quest_dynamic_property": "poke_pfe:custom_craft_quests"
+			},
+			"poke_pfe:quests": [
+				{
+					"item": "minecraft:compass",
+					"amount": 1,
+					"translationString": "%item.compass.name",
+					"tokenAmount": 6
+				},
+				{
+					"item": "minecraft:clock",
+					"amount": 1,
+					"translationString": "%item.clock.name",
+					"tokenAmount": 6
+				},
+				{
+					"item": "minecraft:turtle_helmet",
+					"amount": 1,
+					"translationString": "%item.turtle_helmet.name",
+					"tokenAmount": 64
+				},
+				{
+					"item": "minecraft:wolf_armor",
+					"amount": 1,
+					"translationString": "%item.wolf_armor.name",
+					"tokenAmount": 12
+				},
+				{
+					"item": "minecraft:spyglass",
+					"amount": 1,
+					"translationString": "%item.spyglass.name",
+					"tokenAmount": 4
+				},
+				{
+					"item": "minecraft:daylight_detector",
+					"amount": 1,
+					"translationString": "%tile.daylight_detector.name",
+					"tokenAmount": 6
+				},
+				{
+					"item": "minecraft:ender_eye",
+					"amount": 2,
+					"translationString": "%item.ender_eye.name",
+					"tokenAmount": 8
+				}
+			]
 		}
 	}
 }
