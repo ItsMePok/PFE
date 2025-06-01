@@ -14,14 +14,26 @@
 			"minecraft:rarity": "rare",
 			"minecraft:tags": {
 				"tags": [
-					"pfe:HaxelMining:{\"radius\":{\"x\":5,\"y\":7,\"z\":5},\"canBreakLiquids\":true,\"canBreakBedrock\":true}:pfeHaxelMiningEnd",
 					"minecraft:is_pickaxe",
 					"minecraft:netherite_tier",
 					"minecraft:is_tool",
 					"pfe:is_haxel"
 				]
 			},
-			"poke:haxelMining": {},
+			"poke_pfe:box_mining": {
+				"box_size": [
+					5,
+					7,
+					5
+				],
+				"offset": [
+					0,
+					0,
+					0
+				],
+				"can_break_indestructible": true,
+				"can_break_liquids": true
+			},
 			"poke:hitEffects": {},
 			"minecraft:use_modifiers": {
 				"use_duration": 0.1,

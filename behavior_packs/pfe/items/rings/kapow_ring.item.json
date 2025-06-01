@@ -49,7 +49,6 @@
 				"command": "function poke/pfe/kapow_ring",
 				"take_durability": true,
 				"trigger_cooldown": true,
-				"ignore_cooldown": false,
 				"can_be_disabled": true
 			},
 			"poke:normalMining": {},

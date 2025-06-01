@@ -6,13 +6,15 @@
     },
     "components": {
       "minecraft:display_name": {
-        "value": "%poke_pfe.cassette\n§7%poke_pfe.cassette.concretehalls\n%poke_pfe.tag"
+        "value": "%poke_pfe.cassette\n§7C418 - %poke_pfe.concretehalls\n%poke_pfe.tag"
       },
       "minecraft:icon": "poke_cassette_concretehalls",
-      "poke:cas": {},
+      "poke_pfe:play_music": {
+        "music": "poke_pfe.music.concretehalls"
+      },
       "minecraft:tags": {
         "tags": [
-          "minecraft:music_disc"
+          "pfe:is_cassette"
         ]
       }
     }

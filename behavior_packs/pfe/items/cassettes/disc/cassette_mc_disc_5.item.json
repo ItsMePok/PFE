@@ -2,25 +2,29 @@
   "format_version": "1.21.90",
   "minecraft:item": {
     "description": {
-      "identifier": "poke:cassette_mc_disc_mall"
+      "identifier": "poke:cassette_mc_disc_5"
     },
     "components": {
       "minecraft:display_name": {
         "value": "%poke_pfe.cassette\n%poke_pfe.tag"
       },
       "minecraft:rarity": "uncommon",
-      "minecraft:icon": "poke_cassette_mc_disc_mall",
+      "minecraft:icon": "poke_cassette_mc_disc_5",
+      "poke_pfe:play_music": {
+        "music": "poke_pfe.disc.5",
+        "music_volume": 0.5
+      },
       "minecraft:tags": {
         "tags": [
+          "pfe:is_cassette",
           "minecraft:music_disc"
         ]
       },
       "minecraft:record": {
-        "comparator_signal": 6,
-        "sound_event": "record.mall",
-        "duration": 197
-      },
-      "poke:cas": {}
+        "comparator_signal": 15,
+        "sound_event": "record.5",
+        "duration": 178
+      }
     }
   }
 }

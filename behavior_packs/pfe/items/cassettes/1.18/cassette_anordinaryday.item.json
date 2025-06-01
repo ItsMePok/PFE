@@ -6,13 +6,15 @@
     },
     "components": {
       "minecraft:display_name": {
-        "value": "%poke_pfe.cassette\n§7%poke_pfe.cassette.anordinaryday\n%poke_pfe.tag"
+        "value": "%poke_pfe.cassette\n§7Kumi Tanioka - %poke_pfe.anordinaryday\n%poke_pfe.tag"
       },
       "minecraft:icon": "poke_cassette_anordinaryday",
-      "poke:cas": {},
+      "poke_pfe:play_music": {
+        "music": "poke_pfe.music.anordinaryday"
+      },
       "minecraft:tags": {
         "tags": [
-          "minecraft:music_disc"
+          "pfe:is_cassette"
         ]
       }
     }

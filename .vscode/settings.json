@@ -29,6 +29,105 @@
               "components": {
                 "type": "object",
                 "properties": {
+                  "poke_pfe:box_mining": {
+                    "title": "Box Mining (PFE)",
+                    "type": "object",
+                    "properties": {
+                      "box_size": {
+                        "type": "array",
+                        "description": "Length: number, Width: number, Height number",
+                        "items": {
+                          "type": "number"
+                        },
+                        "maxItems": 3
+                      },
+                      "offset": {
+                        "type": "array",
+                        "description": "X: number , Y: number , Z: number",
+                        "items": {
+                          "type": "number"
+                        },
+                        "maxItems": 3
+                      },
+                      "can_break_liquids": {
+                        "type": "boolean",
+                        "default": false
+                      },
+                      "can_break_indestructible": {
+                        "type": "boolean",
+                        "default": false
+                      },
+                      "allow_silk_touch": {
+                        "type": "boolean",
+                        "default": true
+                      },
+                      "whitelist": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "blacklist": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "break_sound": {
+                        "type": "string",
+                        "default": "dig.stone"
+                      }
+                    },
+                    "required": [
+                      "box_size",
+                      "offset"
+                    ]
+                  },
+                  "poke_pfe:play_music": {
+                    "type": "object",
+                    "title": "Play Music (PFE)",
+                    "description": "Allows the item to play music when it is used",
+                    "properties": {
+                      "music": {
+                        "type": "string"
+                      },
+                      "music_volume": {
+                        "type": "number",
+                        "default": 1
+                      },
+                      "loop_music": {
+                        "type": "boolean",
+                        "default": false
+                      },
+                      "music_fade_amount": {
+                        "description": "The amount of seconds the previous track will fade out by",
+                        "type": "number",
+                        "default": 2.5
+                      },
+                      "trigger_sound": {
+                        "type": "string",
+                        "enum": [
+                          "poke_pfe.cassette_activate"
+                        ]
+                      },
+                      "can_queue": {
+                        "type": "boolean",
+                        "default": true
+                      },
+                      "display_queue_message": {
+                        "type": "boolean",
+                        "default": true
+                      },
+                      "queue_message": {
+                        "type": "string",
+                        "description": "The translation string that will be displayed as a message in the chat when the player queues this track",
+                        "default": "poke_pfe.track_queued"
+                      }
+                    },
+                    "required": [
+                      "music"
+                    ]
+                  },
                   "poke_pfe:run_command": {
                     "type": "object",
                     "title": "Run Command (PFE)",
@@ -47,10 +146,6 @@
                         "default": false
                       },
                       "trigger_cooldown": {
-                        "type": "boolean",
-                        "default": false
-                      },
-                      "ignore_cooldown": {
                         "type": "boolean",
                         "default": false
                       },
@@ -2581,12 +2676,14 @@
     "hauntmuskie",
     "Haxels",
     "hellite",
+    "huantmuskie",
     "infiniteamethyst",
     "jigarbov",
     "komorebi",
     "Kumi",
     "lefttobloom",
     "lerp",
+    "lilypad",
     "livingmice",
     "mcaddon",
     "mcpedl",
@@ -2612,9 +2709,11 @@
     "Remy",
     "robey",
     "robo",
+    "Roddy",
     "Rubedo",
     "scriptevent",
     "Shadowstone",
+    "shimmerblock",
     "shulker",
     "Shuniji",
     "Shuriken",

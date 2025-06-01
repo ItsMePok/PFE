@@ -15,19 +15,20 @@ export {
   PokeGetSegmentOfString,
   PokeSpawnLootTable,
   PokeClosestCardinal,
-  PokeClosestCardinalInfo
+  PokeClosestCardinalInfo,
+  getComponentInfoFromDataStorageItems,
+  CompiledComponentInfo
 }
 
 // Tool Durability initially from https://wiki.bedrock.dev/items/tool-durability.html
 function PokeDamageItem(item: ItemStack) {
   // Get durability
   if (!item.hasComponent(ItemComponentTypes.Durability)) return item;
-  //@ts-ignore
-  const durabilityComponent: ItemDurabilityComponent = item.getComponent(ItemComponentTypes.Durability)
+  const durabilityComponent = item.getComponent(ItemComponentTypes.Durability)
+  if (!durabilityComponent) return item
   let unbreaking: number = 0
   // Apply damage
-  if (durabilityComponent.damage == durabilityComponent.maxDurability) {
-  }
+  if (durabilityComponent.damage >= durabilityComponent.maxDurability) return undefined;
   durabilityComponent.damage += Number(Math.round(Math.random() * 100) <= durabilityComponent.getDamageChance(unbreaking))
   return item
 }
@@ -50,49 +51,28 @@ function PokeDamageItem(item: ItemStack) {
  * if ```entity``` is player & in creative it will never take durability
  */
 function PokeDamageItemUB(item: ItemStack, multiplier: undefined | number, entity: Entity | Player, slot?: EquipmentSlot) {
-  // check if the item does not have a durability component to avoid deleting itself
-  if (!item.hasComponent(ItemComponentTypes.Durability)) {
-    PokeSaveProperty(`poke:holdFix`, item, Math.round(Math.random() * 100), entity, slot)
+  let durabilityComponent = item.getComponent(ItemComponentTypes.Durability)
+  const equippableComponent = entity.getComponent(EntityComponentTypes.Equippable)
+  // Check if the item does not have a durability component to avoid deleting itself
+  if (!durabilityComponent) {
+    // We set a dynamic property to ensure that holding will continue to trigger regardless if unbreaking takes effect
+    item.isStackable ? undefined : PokeSaveProperty(`poke:holdFix`, item, Math.round(Math.random() * 100), entity, slot)
     return { tookDurability: false, failed: true, broke: false }
   }
-  if (!entity.hasComponent(EntityComponentTypes.Equippable)) {
-    return { tookDurability: false, failed: true, broke: false }
-  }
-  // we set a dynamic property to ensure that holding will continue to trigger regardless if unbreaking takes effect
-  //@ts-ignore
-  let equippableComponent: EntityEquippableComponent = entity.getComponent(EntityComponentTypes.Equippable)
-
-  // Get durability
-  //@ts-ignore
-  const durabilityComponent: ItemDurabilityComponent = item.getComponent(ItemComponentTypes.Durability)
-
-  var unbreakingL = 0
-
+  if (!equippableComponent) return { tookDurability: false, failed: true, broke: false }
+  const enchantableComponent = item.getComponent(ItemComponentTypes.Enchantable)
+  var unbreakingL = enchantableComponent?.getEnchantment(MinecraftEnchantmentTypes.Unbreaking)?.level ?? 0
   if (!slot) {
     slot = EquipmentSlot.Mainhand
   }
   if (entity.typeId == MinecraftEntityTypes.Player) {
-    //@ts-ignore 
-    if (entity.getGameMode() == GameMode.creative) {
-      if (item.isStackable) return { tookDurability: false, failed: false, broke: false, gmc: true }
-      PokeSaveProperty(`poke:holdFix`, item, Math.round(Math.random() * 100), entity, slot)
+    const player = <Player>entity
+    if (player.getGameMode() == GameMode.Creative) {
+      item.isStackable ? undefined : PokeSaveProperty(`poke:holdFix`, item, Math.round(Math.random() * 100), entity, slot)
       return { tookDurability: false, failed: false, broke: false, gmc: true }
     }
   }
-  // Get unbreaking level
-  if (item.hasComponent(ItemComponentTypes.Enchantable)) {
-    //@ts-ignore
-    if (item.getComponent(ItemComponentTypes.Enchantable)!.hasEnchantment(MinecraftEnchantmentTypes.Unbreaking)) {
-      //@ts-ignore
-      unbreakingL = item.getComponent(ItemComponentTypes.Enchantable)!.getEnchantment(MinecraftEnchantmentTypes.Unbreaking).level
-    }
-  }
-
-  let damage = Number(Math.round(Math.random() * 100) <= durabilityComponent.getDamageChance(unbreakingL))
-
-  if (typeof multiplier == "number") {
-    damage *= multiplier
-  }
+  let damage = Number(Math.round(Math.random() * 100) <= durabilityComponent.getDamageChance(unbreakingL)) * (multiplier ?? 1)
   if (durabilityComponent.damage + damage >= durabilityComponent.maxDurability) durabilityComponent.damage = durabilityComponent.maxDurability;
   else durabilityComponent.damage += damage;
   // Apply damage
@@ -100,12 +80,10 @@ function PokeDamageItemUB(item: ItemStack, multiplier: undefined | number, entit
     if (equippableComponent.getEquipment(slot)?.typeId == item.typeId) {
       equippableComponent.setEquipment(slot, undefined)
       entity.dimension.playSound(`random.break`, entity.location, { pitch: Math.max(Math.max((Math.random() * 1.05), 0.95)) })
+      return
     }
-    return
   }
-  if (item.isStackable) return { tookDurability: true, failed: false, broke: false, gmc: false }
-  PokeSaveProperty(`poke:holdFix`, item, Math.round(Math.random() * 100), entity, slot)
-  return
+  item.isStackable ? undefined : PokeSaveProperty(`poke:holdFix`, item, Math.round(Math.random() * 100), entity, slot)
 }
 
 /**
@@ -161,8 +139,7 @@ function PokeErrorScreen(player: Player, error?: RawMessage, backTo?: any) {
  * You can define a slot number to target only that slot
  */
 function PokeGetItemFromInventory(entity: Entity, slot?: number, itemId?: string) {
-  //@ts-ignore
-  let inventoryComponent: EntityInventoryComponent = entity.getComponent(EntityComponentTypes.Inventory)
+  let inventoryComponent = entity.getComponent(EntityComponentTypes.Inventory)
   if (inventoryComponent) {
     let returningItems: ItemStack[] = []
     if (slot) {
@@ -242,9 +219,8 @@ function PokeSaveProperty(propertyId: string, item: ItemStack, save: string | bo
   //console.warn(`saved as ${save}`)
   item.setDynamicProperty(propertyId, save)
   if (!slot) slot = EquipmentSlot.Mainhand
-  //@ts-ignore
-  let equippableComponent: EntityEquippableComponent = entity.getComponent(EntityComponentTypes.Equippable)
-  if (equippableComponent.getEquipmentSlot(slot).typeId == item.typeId) {
+  let equippableComponent = entity.getComponent(EntityComponentTypes.Equippable)
+  if (equippableComponent?.getEquipmentSlot(slot).typeId == item.typeId) {
     equippableComponent.setEquipment(slot, item);
     return true
   } else {
@@ -367,4 +343,18 @@ function PokeClosestCardinal(vector: Vector3, directions?: "all" | "upDown") {
       }
     }
   return returnProperty
+}
+type CompiledComponentInfo = { item_identifier: string, componentInfo: any }
+function getComponentInfoFromDataStorageItems(dynamicPropertyId: string, componentIdentifier: string) {
+  const dynamicPropertyInfo = world.getDynamicProperty(dynamicPropertyId)
+  const itemIds = JSON.parse(typeof dynamicPropertyInfo == "string" ? dynamicPropertyInfo : "[]") ?? []
+
+  let compiledComponents: CompiledComponentInfo[] = []
+  for (let itemId of itemIds) {
+    let item = new ItemStack(itemId);
+    item.getComponent(componentIdentifier) ?
+      compiledComponents.concat([{ item_identifier: itemId, componentInfo: item.getComponent(componentIdentifier) }])
+      : undefined
+  }
+  return compiledComponents
 }

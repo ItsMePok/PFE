@@ -23,7 +23,6 @@
 				"command": "execute as @e[type=minecraft:armor_stand,c=1,r=2] run effect @s clear",
 				"take_durability": false,
 				"trigger_cooldown": true,
-				"ignore_cooldown": false,
 				"can_be_disabled": false
 			},
 			"poke:normalMining": {},

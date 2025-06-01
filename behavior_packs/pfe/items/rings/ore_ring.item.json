@@ -48,7 +48,6 @@
 				"command": "loot give @s loot \"poke/pfe/ore_ring.loot\"",
 				"take_durability": true,
 				"trigger_cooldown": true,
-				"ignore_cooldown": false,
 				"can_be_disabled": false
 			},
 			"poke:normalMining": {},

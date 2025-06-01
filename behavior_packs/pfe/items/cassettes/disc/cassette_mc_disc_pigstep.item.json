@@ -2,28 +2,28 @@
   "format_version": "1.21.90",
   "minecraft:item": {
     "description": {
-      "identifier": "poke:cassette_mc_disc_otherside"
+      "identifier": "poke:cassette_mc_disc_pigstep"
     },
     "components": {
       "minecraft:display_name": {
         "value": "%poke_pfe.cassette\n%poke_pfe.tag"
       },
       "minecraft:rarity": "rare",
-      "poke:cas": {},
-      "minecraft:icon": {
-        "textures": {
-          "default": "poke_cassette_mc_disc_otherside"
-        }
+      "minecraft:icon": "poke_cassette_mc_disc_pigstep",
+      "poke_pfe:play_music": {
+        "music": "poke_pfe.disc.pigstep",
+        "music_volume": 0.5
       },
       "minecraft:tags": {
         "tags": [
+          "pfe:is_cassette",
           "minecraft:music_disc"
         ]
       },
       "minecraft:record": {
         "comparator_signal": 13,
-        "sound_event": "record.otherside",
-        "duration": 195
+        "sound_event": "record.pigstep",
+        "duration": 158
       }
     }
   }

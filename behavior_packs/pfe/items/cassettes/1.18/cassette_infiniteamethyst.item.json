@@ -6,13 +6,15 @@
     },
     "components": {
       "minecraft:display_name": {
-        "value": "%poke_pfe.cassette\n§7%poke_pfe.cassette.infiniteamethyst\n%poke_pfe.tag"
+        "value": "%poke_pfe.cassette\n§7Lena Raine - %poke_pfe.infiniteamethyst\n%poke_pfe.tag"
       },
       "minecraft:icon": "poke_cassette_infiniteamethyst",
-      "poke:cas": {},
+      "poke_pfe:play_music": {
+        "music": "poke_pfe.music.infiniteamethyst"
+      },
       "minecraft:tags": {
         "tags": [
-          "minecraft:music_disc"
+          "pfe:is_cassette"
         ]
       }
     }

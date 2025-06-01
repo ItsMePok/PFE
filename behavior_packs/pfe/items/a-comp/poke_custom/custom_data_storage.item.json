@@ -1,0 +1,26 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:item": {
+    "description": {
+      "identifier": "poke_pfe:custom_data_storage",
+      "menu_category": {
+        "category": "items",
+        "is_hidden_in_commands": false
+      }
+    },
+    "components": {
+      "minecraft:icon": {
+        "textures": {
+          "default": "poke_pfe_missing"
+        }
+      },
+      "minecraft:max_stack_size": 1,
+      "poke_pfe:incompatible_addons": [
+        {
+          "identifier_prefix": "poke_cassette:",
+          "reason": "Already in PFE"
+        }
+      ]
+    }
+  }
+}

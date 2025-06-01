@@ -24,7 +24,7 @@
 				]
 			},
 			"sound_effects": {
-				"poke.knightling.bonk": "poke.knightling.bonk"
+				"poke_pfe.knightling.bonk": "poke_pfe.knightling.bonk"
 			},
 			"render_controllers": [
 				"controller.render.poke_pfe.default"

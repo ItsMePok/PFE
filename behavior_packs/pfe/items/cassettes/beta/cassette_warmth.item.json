@@ -6,13 +6,15 @@
     },
     "components": {
       "minecraft:display_name": {
-        "value": "%poke_pfe.cassette\n§7%poke_pfe.cassette.warmth\n%poke_pfe.tag"
+        "value": "%poke_pfe.cassette\n§7C418 - %poke_pfe.warmth\n%poke_pfe.tag"
       },
       "minecraft:icon": "poke_cassette_warmth",
-      "poke:cas": {},
+      "poke_pfe:play_music": {
+        "music": "poke_pfe.music.warmth"
+      },
       "minecraft:tags": {
         "tags": [
-          "minecraft:music_disc"
+          "pfe:is_cassette"
         ]
       }
     }

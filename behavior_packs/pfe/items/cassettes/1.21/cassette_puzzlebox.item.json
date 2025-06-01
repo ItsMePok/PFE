@@ -6,13 +6,15 @@
     },
     "components": {
       "minecraft:display_name": {
-        "value": "%poke_pfe.cassette\n§7%poke_pfe.cassette.puzzlebox\n%poke_pfe.tag"
+        "value": "%poke_pfe.cassette\n§7Aaron Cherof - %poke_pfe.puzzlebox\n%poke_pfe.tag"
       },
       "minecraft:icon": "poke_cassette_puzzlebox",
-      "poke:cas": {},
+      "poke_pfe:play_music": {
+        "music": "poke_pfe.music.puzzlebox"
+      },
       "minecraft:tags": {
         "tags": [
-          "minecraft:music_disc"
+          "pfe:is_cassette"
         ]
       }
     }

@@ -1422,6 +1422,12 @@
               "poke:cassette_disc_creator",
               "poke:cassette_creatormusicbox",
               "poke:cassette_disc_precipice",
+              "poke_pfe:cassette_below_and_above",
+              "poke_pfe:cassette_broken_clocks",
+              "poke_pfe:cassette_fireflies",
+              "poke_pfe:cassette_lilypad",
+              "poke_pfe:cassette_os_piano",
+              "poke_pfe:cassette_tears",
               "poke:cassette_galactic_march",
               "poke:cassette_they_listen"
             ]

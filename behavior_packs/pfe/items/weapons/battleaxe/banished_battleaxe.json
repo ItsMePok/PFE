@@ -60,7 +60,6 @@
         "command": "function poke/pfe/onyx_battleaxe",
         "take_durability": false,
         "trigger_cooldown": true,
-        "ignore_cooldown": false,
         "can_be_disabled": false
       },
       "poke:normalMining": {},

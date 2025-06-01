@@ -47,7 +47,6 @@
 				"command": "tp @a @s",
 				"take_durability": true,
 				"trigger_cooldown": true,
-				"ignore_cooldown": false,
 				"can_be_disabled": true
 			},
 			"minecraft:use_modifiers": {

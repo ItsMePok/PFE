@@ -9,14 +9,18 @@
         "value": "%poke_pfe.cassette\n%poke_pfe.tag"
       },
       "minecraft:rarity": "rare",
-      "poke:cas": {},
       "minecraft:icon": {
         "textures": {
           "default": "poke_cassette_creator"
         }
       },
+      "poke_pfe:play_music": {
+        "music": "poke_pfe.disc.creator",
+        "music_volume": 0.5
+      },
       "minecraft:tags": {
         "tags": [
+          "pfe:is_cassette",
           "minecraft:music_disc"
         ]
       },

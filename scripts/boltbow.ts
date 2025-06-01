@@ -92,7 +92,7 @@ class PFEBoltBowsComponent {
         
       },delay)*/
     } else {
-      data.source.dimension.playSound(`poke.boltbow.noAmmo`, data.source.location)
+      data.source.dimension.playSound(`poke_pfe.boltbow.noAmmo`, data.source.location)
     }
     return;
 

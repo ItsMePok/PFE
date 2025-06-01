@@ -1,6 +1,56 @@
 {
 	"format_version": "1.21.90",
 	"sound_definitions": {
+		"poke_pfe.music.below_and_above": {
+			"category": "ui",
+			"max_distance": 64,
+			"sounds": [
+				{
+					"name": "sounds/music/game/below_and_above",
+					"stream": true
+				}
+			]
+		},
+		"poke_pfe.music.os_piano": {
+			"category": "ui",
+			"max_distance": 64,
+			"sounds": [
+				{
+					"name": "sounds/music/game/os_piano",
+					"stream": true
+				}
+			]
+		},
+		"poke_pfe.music.broken_clocks": {
+			"category": "ui",
+			"max_distance": 64,
+			"sounds": [
+				{
+					"name": "sounds/music/game/broken_clocks",
+					"stream": true
+				}
+			]
+		},
+		"poke_pfe.music.lilypad": {
+			"category": "ui",
+			"max_distance": 64,
+			"sounds": [
+				{
+					"name": "sounds/music/game/lilypad",
+					"stream": true
+				}
+			]
+		},
+		"poke_pfe.music.fireflies": {
+			"category": "ui",
+			"max_distance": 64,
+			"sounds": [
+				{
+					"name": "sounds/music/game/fireflies",
+					"stream": true
+				}
+			]
+		},
 		"poke_pfe.fisher.catch": {
 			"category": "block",
 			"max_distance": 10,
@@ -53,7 +103,7 @@
 				}
 			]
 		},
-		"poke.boltbow.noAmmo": {
+		"poke_pfe.boltbow.noAmmo": {
 			"category": "player",
 			"max_distance": 10,
 			"sounds": [
@@ -79,7 +129,7 @@
 				}
 			]
 		},
-		"poke.record.key": {
+		"poke_pfe.music.key": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -90,7 +140,7 @@
 				}
 			]
 		},
-		"poke.record.oxygene": {
+		"poke_pfe.music.oxygene": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -101,7 +151,7 @@
 				}
 			]
 		},
-		"poke.record.miceonvenus": {
+		"poke_pfe.music.miceonvenus": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -111,7 +161,7 @@
 				}
 			]
 		},
-		"poke.record.dryhands": {
+		"poke_pfe.music.dryhands": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -121,7 +171,7 @@
 				}
 			]
 		},
-		"poke.record.wethands": {
+		"poke_pfe.music.wethands": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -131,7 +181,7 @@
 				}
 			]
 		},
-		"poke.record.minecraft": {
+		"poke_pfe.music.minecraft": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -141,7 +191,7 @@
 				}
 			]
 		},
-		"poke.record.clark": {
+		"poke_pfe.music.clark": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -151,7 +201,7 @@
 				}
 			]
 		},
-		"poke.record.sweden": {
+		"poke_pfe.music.sweden": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -161,7 +211,7 @@
 				}
 			]
 		},
-		"poke.record.subwooferlullaby": {
+		"poke_pfe.music.subwooferlullaby": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -171,7 +221,7 @@
 				}
 			]
 		},
-		"poke.record.livingmice": {
+		"poke_pfe.music.livingmice": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -181,7 +231,7 @@
 				}
 			]
 		},
-		"poke.record.haggstrom": {
+		"poke_pfe.music.haggstrom": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -191,7 +241,7 @@
 				}
 			]
 		},
-		"poke.record.danny": {
+		"poke_pfe.music.danny": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -201,7 +251,7 @@
 				}
 			]
 		},
-		"poke.record.mutation": {
+		"poke_pfe.music.mutation": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -211,7 +261,7 @@
 				}
 			]
 		},
-		"poke.record.moogcity2": {
+		"poke_pfe.music.moogcity2": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -221,7 +271,7 @@
 				}
 			]
 		},
-		"poke.record.beginning2": {
+		"poke_pfe.music.beginning2": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -231,7 +281,7 @@
 				}
 			]
 		},
-		"poke.record.floatingtrees": {
+		"poke_pfe.music.floatingtrees": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -241,7 +291,7 @@
 				}
 			]
 		},
-		"poke.record.concretehalls": {
+		"poke_pfe.music.concretehalls": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -251,7 +301,7 @@
 				}
 			]
 		},
-		"poke.record.deadvoxel": {
+		"poke_pfe.music.deadvoxel": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -261,7 +311,7 @@
 				}
 			]
 		},
-		"poke.record.warmth": {
+		"poke_pfe.music.warmth": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -271,7 +321,7 @@
 				}
 			]
 		},
-		"poke.record.balladofthecats": {
+		"poke_pfe.music.balladofthecats": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -281,7 +331,7 @@
 				}
 			]
 		},
-		"poke.record.blindspots": {
+		"poke_pfe.music.blindspots": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -291,7 +341,7 @@
 				}
 			]
 		},
-		"poke.record.biomefest": {
+		"poke_pfe.music.biomefest": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -301,7 +351,7 @@
 				}
 			]
 		},
-		"poke.record.huantmuskie": {
+		"poke_pfe.music.huantmuskie": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -311,7 +361,7 @@
 				}
 			]
 		},
-		"poke.record.ariamath": {
+		"poke_pfe.music.ariamath": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -321,7 +371,7 @@
 				}
 			]
 		},
-		"poke.record.taswell": {
+		"poke_pfe.music.taswell": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -331,7 +381,7 @@
 				}
 			]
 		},
-		"poke.record.dreiton": {
+		"poke_pfe.music.dreiton": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -341,7 +391,7 @@
 				}
 			]
 		},
-		"poke.record.floatingdream": {
+		"poke_pfe.music.floatingdream": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -351,7 +401,7 @@
 				}
 			]
 		},
-		"poke.record.lefttobloom": {
+		"poke_pfe.music.lefttobloom": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -361,7 +411,7 @@
 				}
 			]
 		},
-		"poke.record.infiniteamethyst": {
+		"poke_pfe.music.infiniteamethyst": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -371,7 +421,7 @@
 				}
 			]
 		},
-		"poke.record.wending": {
+		"poke_pfe.music.wending": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -381,7 +431,7 @@
 				}
 			]
 		},
-		"poke.record.onemoreday": {
+		"poke_pfe.music.onemoreday": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -391,7 +441,7 @@
 				}
 			]
 		},
-		"poke.record.standtall": {
+		"poke_pfe.music.standtall": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -401,7 +451,7 @@
 				}
 			]
 		},
-		"poke.record.comfortingmemories": {
+		"poke_pfe.music.comfortingmemories": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -411,7 +461,7 @@
 				}
 			]
 		},
-		"poke.record.anordinaryday": {
+		"poke_pfe.music.anordinaryday": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -421,7 +471,7 @@
 				}
 			]
 		},
-		"poke.record.ancestry": {
+		"poke_pfe.music.ancestry": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -431,7 +481,7 @@
 				}
 			]
 		},
-		"poke.record.chrysopoeia": {
+		"poke_pfe.music.chrysopoeia": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -441,7 +491,7 @@
 				}
 			]
 		},
-		"poke.record.rubedo": {
+		"poke_pfe.music.rubedo": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -451,7 +501,7 @@
 				}
 			]
 		},
-		"poke.record.sobelow": {
+		"poke_pfe.music.sobelow": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -461,7 +511,7 @@
 				}
 			]
 		},
-		"poke.record.theend": {
+		"poke_pfe.music.theend": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -471,7 +521,7 @@
 				}
 			]
 		},
-		"poke.record.alpha": {
+		"poke_pfe.music.alpha": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -481,7 +531,7 @@
 				}
 			]
 		},
-		"poke.record.boss": {
+		"poke_pfe.music.boss": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -492,7 +542,7 @@
 				}
 			]
 		},
-		"poke.record.axolotl": {
+		"poke_pfe.music.axolotl": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -502,7 +552,7 @@
 				}
 			]
 		},
-		"poke.record.dragonfish": {
+		"poke_pfe.music.dragonfish": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -512,7 +562,7 @@
 				}
 			]
 		},
-		"poke.record.shuniji": {
+		"poke_pfe.music.shuniji": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -522,7 +572,7 @@
 				}
 			]
 		},
-		"poke.record.crescentdunes": {
+		"poke_pfe.music.crescentdunes": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -532,7 +582,7 @@
 				}
 			]
 		},
-		"poke.record.bromeliad": {
+		"poke_pfe.music.bromeliad": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -542,7 +592,7 @@
 				}
 			]
 		},
-		"poke.record.afamiliarroom": {
+		"poke_pfe.music.afamiliarroom": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -552,7 +602,7 @@
 				}
 			]
 		},
-		"poke.record.echointhewind": {
+		"poke_pfe.music.echointhewind": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -562,7 +612,7 @@
 				}
 			]
 		},
-		"poke.record.labyrinthine": {
+		"poke_pfe.music.labyrinthine": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -572,7 +622,7 @@
 				}
 			]
 		},
-		"poke.record.aerie": {
+		"poke_pfe.music.aerie": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -582,7 +632,7 @@
 				}
 			]
 		},
-		"poke.record.featherfall": {
+		"poke_pfe.music.featherfall": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -592,7 +642,7 @@
 				}
 			]
 		},
-		"poke.record.watcher": {
+		"poke_pfe.music.watcher": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -602,7 +652,7 @@
 				}
 			]
 		},
-		"poke.record.puzzlebox": {
+		"poke_pfe.music.puzzlebox": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -612,7 +662,7 @@
 				}
 			]
 		},
-		"poke.record.pokopoko": {
+		"poke_pfe.music.pokopoko": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -622,7 +672,7 @@
 				}
 			]
 		},
-		"poke.record.komorebi": {
+		"poke_pfe.music.komorebi": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -632,7 +682,7 @@
 				}
 			]
 		},
-		"poke.record.yakusoku": {
+		"poke_pfe.music.yakusoku": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -642,7 +692,7 @@
 				}
 			]
 		},
-		"poke.record.deeper": {
+		"poke_pfe.music.deeper": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -652,7 +702,7 @@
 				}
 			]
 		},
-		"poke.record.eldunknown": {
+		"poke_pfe.music.eldunknown": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -662,7 +712,7 @@
 				}
 			]
 		},
-		"poke.record.endless": {
+		"poke_pfe.music.endless": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -672,7 +722,7 @@
 				}
 			]
 		},
-		"poke.record.firebugs": {
+		"poke_pfe.music.firebugs": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
@@ -682,7 +732,7 @@
 				}
 			]
 		},
-		"poke.duck.ambient": {
+		"poke_pfe.duck.ambient": {
 			"category": "neutral",
 			"max_distance": 12,
 			"sounds": [
@@ -691,14 +741,14 @@
 				}
 			]
 		},
-		"poke.aqua_ring_use": {
+		"poke_pfe.aqua_ring_use": {
 			"category": "player",
 			"max_distance": 8,
 			"sounds": [
 				"sounds/poke/pfe/aqua_ring_use"
 			]
 		},
-		"poke.calibrate": {
+		"poke_pfe.calibrate": {
 			"category": "block",
 			"max_distance": 8,
 			"sounds": [
@@ -724,21 +774,21 @@
 				}
 			]
 		},
-		"poke.ice_ring_use": {
+		"poke_pfe.ice_ring_use": {
 			"category": "player",
 			"max_distance": 16,
 			"sounds": [
 				"sounds/poke/pfe/ice_ring_use"
 			]
 		},
-		"poke.rocket_replenisher_use": {
+		"poke_pfe.rocket_replenisher.use": {
 			"category": "player",
 			"max_distance": 8,
 			"sounds": [
 				"sounds/poke/pfe/rocket_replenisher"
 			]
 		},
-		"poke.knightling.bonk": {
+		"poke_pfe.knightling.bonk": {
 			"category": "hostile",
 			"max_distance": 8,
 			"sounds": [
@@ -748,7 +798,7 @@
 				}
 			]
 		},
-		"poke.cassette_activate": {
+		"poke_pfe.cassette_activate": {
 			"category": "player",
 			"max_distance": 10,
 			"sounds": [
@@ -774,7 +824,7 @@
 				}
 			]
 		},
-		"poke.battleaxe": {
+		"poke_pfe.battleaxe.use": {
 			"category": "player",
 			"max_distance": 10,
 			"sounds": [
@@ -800,7 +850,7 @@
 				}
 			]
 		},
-		"poke.med_ring_use": {
+		"poke_pfe.med_ring.use": {
 			"category": "player",
 			"max_distance": 10,
 			"sounds": [
@@ -823,16 +873,6 @@
 				{
 					"pitch": 1.05,
 					"name": "sounds/poke/pfe/med_ring_use"
-				}
-			]
-		},
-		"record.listen": {
-			"category": "ui",
-			"max_distance": 64,
-			"sounds": [
-				{
-					"name": "sounds/poke/pfe/listener_boss",
-					"stream": true
 				}
 			]
 		},
@@ -846,7 +886,7 @@
 				}
 			]
 		},
-		"poke.quest.info": {
+		"poke_pfe.quest.info": {
 			"category": "ui",
 			"max_distance": 64,
 			"sounds": [
@@ -877,17 +917,17 @@
 				}
 			]
 		},
-		"poke.record.listen": {
+		"poke_pfe.they_listen": {
 			"category": "ui",
 			"max_distance": 64.0,
 			"sounds": [
 				{
-					"name": "sounds/poke/pfe/listener_boss",
+					"name": "sounds/poke/pfe/they_listen",
 					"stream": true
 				}
 			]
 		},
-		"play.listenerboss.hurt": {
+		"poke_pfe.listener.hurt": {
 			"category": "ui",
 			"sounds": [
 				{
@@ -896,14 +936,14 @@
 				}
 			]
 		},
-		"poke.boss.victory": {
+		"poke_pfe.boss.victory": {
 			"category": "player",
 			"max_distance": 32,
 			"sounds": [
 				"sounds/poke/pfe/listener_victory"
 			]
 		},
-		"play.galactic_march": {
+		"poke_pfe.galactic_march": {
 			"category": "ui",
 			"max_distance": 64,
 			"sounds": [
@@ -913,23 +953,13 @@
 				}
 			]
 		},
-		"poke.record.march": {
-			"category": "ui",
-			"max_distance": 64,
-			"sounds": [
-				{
-					"stream": true,
-					"name": "sounds/poke/pfe/galactic_march"
-				}
-			]
-		},
-		"mob.token_trader.death": {
+		"poke_pfe.trader.death": {
 			"category": "neutral",
 			"sounds": [
 				"sounds/mob/villager/death"
 			]
 		},
-		"mob.token_trader.haggle": {
+		"poke_pfe.trader.haggle": {
 			"category": "neutral",
 			"sounds": [
 				"sounds/mob/villager/haggle1",
@@ -937,7 +967,7 @@
 				"sounds/mob/villager/haggle3"
 			]
 		},
-		"mob.token_trader.hit": {
+		"poke_pfe.trader.hit": {
 			"category": "neutral",
 			"sounds": [
 				"sounds/mob/villager/hit1",
@@ -946,7 +976,7 @@
 				"sounds/mob/villager/hit4"
 			]
 		},
-		"mob.token_trader.idle": {
+		"poke_pfe.trader.idle": {
 			"category": "neutral",
 			"sounds": [
 				"sounds/mob/villager/idle1",
@@ -954,7 +984,7 @@
 				"sounds/mob/villager/idle3"
 			]
 		},
-		"mob.token_trader.no": {
+		"poke_pfe.trader.no": {
 			"category": "neutral",
 			"sounds": [
 				"sounds/mob/villager/no1",
@@ -962,7 +992,7 @@
 				"sounds/mob/villager/no3"
 			]
 		},
-		"mob.token_trader.yes": {
+		"poke_pfe.trader.yes": {
 			"category": "neutral",
 			"sounds": [
 				"sounds/mob/villager/yes1",
@@ -970,256 +1000,203 @@
 				"sounds/mob/villager/yes3"
 			]
 		},
-		"poke.record.creator": {
+		"poke_pfe.disc.creator": {
 			"category": "ui",
 			"max_distance": 64.0,
 			"sounds": [
 				{
 					"name": "sounds/music/game/records/creator",
-					"stream": true,
-					"volume": 0.5
+					"stream": true
 				}
 			]
 		},
-		"poke.record.creatormusicbox": {
+		"poke_pfe.disc.tears": {
+			"category": "ui",
+			"max_distance": 64.0,
+			"sounds": [
+				{
+					"name": "sounds/music/game/records/tears",
+					"stream": true
+				}
+			]
+		},
+		"poke_pfe.disc.creatormusicbox": {
 			"category": "ui",
 			"max_distance": 64.0,
 			"sounds": [
 				{
 					"name": "sounds/music/game/records/creator_music_box",
-					"stream": true,
-					"volume": 0.5
+					"stream": true
 				}
 			]
 		},
-		"poke.record.precipice": {
+		"poke_pfe.disc.precipice": {
 			"category": "ui",
 			"max_distance": 64.0,
 			"sounds": [
 				{
 					"name": "sounds/music/game/records/precipice",
-					"stream": true,
-					"volume": 0.5
+					"stream": true
 				}
 			]
 		},
-		"poke.record.11": {
+		"poke_pfe.disc.11": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
 				{
 					"name": "sounds/music/game/records/11",
-					"stream": true,
-					"volume": 0.50
+					"stream": true
 				}
 			]
 		},
-		"poke.record.13": {
+		"poke_pfe.disc.13": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
 				{
 					"name": "sounds/music/game/records/13",
-					"stream": true,
-					"volume": 0.50
+					"stream": true
 				}
 			]
 		},
-		"poke.record.blocks": {
+		"poke_pfe.disc.blocks": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
 				{
 					"name": "sounds/music/game/records/blocks",
-					"stream": true,
-					"volume": 0.50
+					"stream": true
 				}
 			]
 		},
-		"poke.record.cat": {
+		"poke_pfe.disc.cat": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
 				{
 					"name": "sounds/music/game/records/cat",
-					"stream": true,
-					"volume": 0.50
+					"stream": true
 				}
 			]
 		},
-		"poke.record.chirp": {
+		"poke_pfe.disc.chirp": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
 				{
 					"name": "sounds/music/game/records/chirp",
-					"stream": true,
-					"volume": 0.50
+					"stream": true
 				}
 			]
 		},
-		"poke.record.far": {
+		"poke_pfe.disc.far": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
 				{
 					"name": "sounds/music/game/records/far",
-					"stream": true,
-					"volume": 0.50
+					"stream": true
 				}
 			]
 		},
-		"poke.record.mall": {
+		"poke_pfe.disc.mall": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
 				{
 					"name": "sounds/music/game/records/mall",
-					"stream": true,
-					"volume": 0.50
+					"stream": true
 				}
 			]
 		},
-		"poke.record.mellohi": {
+		"poke_pfe.disc.mellohi": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
 				{
 					"name": "sounds/music/game/records/mellohi",
-					"stream": true,
-					"volume": 0.50
+					"stream": true
 				}
 			]
 		},
-		"poke.record.stal": {
+		"poke_pfe.disc.stal": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
 				{
 					"name": "sounds/music/game/records/stal",
-					"stream": true,
-					"volume": 0.50
+					"stream": true
 				}
 			]
 		},
-		"poke.record.strad": {
+		"poke_pfe.disc.strad": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
 				{
 					"name": "sounds/music/game/records/strad",
-					"stream": true,
-					"volume": 0.50
+					"stream": true
 				}
 			]
 		},
-		"poke.record.wait": {
+		"poke_pfe.disc.wait": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
 				{
 					"name": "sounds/music/game/records/wait",
-					"stream": true,
-					"volume": 0.50
+					"stream": true
 				}
 			]
 		},
-		"poke.record.pigstep": {
+		"poke_pfe.disc.pigstep": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
 				{
 					"name": "sounds/music/game/records/pigstep_master",
-					"stream": true,
-					"volume": 0.50
+					"stream": true
 				}
 			]
 		},
-		"poke.record.relic": {
+		"poke_pfe.disc.relic": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
 				{
 					"name": "sounds/music/game/records/relic",
-					"stream": true,
-					"volume": 0.50
+					"stream": true
 				}
 			]
 		},
-		"poke.record.otherside": {
+		"poke_pfe.disc.otherside": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
 				{
 					"name": "sounds/music/game/records/otherside",
-					"stream": true,
-					"volume": 0.50
+					"stream": true
 				}
 			]
 		},
-		"poke.record.5": {
+		"poke_pfe.disc.5": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
 				{
 					"name": "sounds/music/game/records/5",
-					"stream": true,
-					"volume": 0.50
+					"stream": true
 				}
 			]
 		},
-		"poke.record.ward": {
+		"poke_pfe.disc.ward": {
 			"category": "ui",
 			"max_distance": 256,
 			"sounds": [
 				{
 					"name": "sounds/music/game/records/ward",
-					"stream": true,
-					"volume": 0.50
-				}
-			]
-		},
-		"poke.block.false_permissions": {
-			"category": "ui",
-			"max_distance": null,
-			"sounds": [
-				"sounds/block/permissions/shimmer/shimmerblock"
-			]
-		},
-		"poke.conduit.deactivate": {
-			"category": "ui",
-			"max_distance": null,
-			"sounds": [
-				"sounds/block/conduit/deactivate"
-			]
-		},
-		"poke.block.bell.hit": {
-			"category": "ui",
-			"max_distance": 256,
-			"sounds": [
-				{
-					"name": "sounds/block/bell/bell_use01",
-					"pitch": 0.950
-				},
-				{
-					"name": "sounds/block/bell/bell_use02",
-					"pitch": 0.950
-				},
-				{
-					"name": "sounds/block/bell/bell_use01",
-					"pitch": 0.930
-				},
-				{
-					"name": "sounds/block/bell/bell_use02",
-					"pitch": 0.930
-				},
-				{
-					"name": "sounds/block/bell/bell_use01",
-					"pitch": 0.970
-				},
-				{
-					"name": "sounds/block/bell/bell_use02",
-					"pitch": 0.970
+					"stream": true
 				}
 			]
 		}

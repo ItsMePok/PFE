@@ -53,7 +53,7 @@ export {
   PFERollQuest,
   PFEv1QuestInfo,
   PFEv2QuestInfo,
-  PokePFEQuestComponent,
+  PFEQuestComponent,
   PFECustomMineQuestsPropertyID,
   PFECustomFarmQuestsPropertyID,
   PFECustomCraftQuestsPropertyID,
@@ -98,13 +98,14 @@ interface PFEQuestAdditionalComponentInfo {
   custom_quest_dynamic_property?: string
 }
 
-class PokePFEQuestComponent {
+class PFEQuestComponent {
   onUse(data: ItemComponentUseEvent, component: CustomComponentParameters) {
     if (!data.itemStack) return
-    console.warn(JSON.stringify(component))
+    // console.warn(JSON.stringify(component))
     const componentInfo = <PFEv2QuestInfo[]>component.params
-    console.warn(JSON.stringify(componentInfo))
+    //console.warn(JSON.stringify(componentInfo))
     const additionalComponentInfo = <PFEQuestAdditionalComponentInfo | undefined>data.itemStack.getComponent("poke_pfe:custom_quests_info")
+    //console.warn(JSON.stringify(additionalComponentInfo))
     if (!data.itemStack.getDynamicProperty(PFEQuestPropertyID)) {
       let quests: PFEv2QuestInfo[] = []
       componentInfo ? quests = quests.concat(componentInfo) : undefined

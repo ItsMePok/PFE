@@ -6,13 +6,15 @@
     },
     "components": {
       "minecraft:display_name": {
-        "value": "%poke_pfe.cassette\n§7%poke_pfe.cassette.watcher\n%poke_pfe.tag"
+        "value": "%poke_pfe.cassette\n§7Aaron Cherof - %poke_pfe.watcher\n%poke_pfe.tag"
       },
       "minecraft:icon": "poke_cassette_watcher",
-      "poke:cas": {},
+      "poke_pfe:play_music": {
+        "music": "poke_pfe.music.watcher"
+      },
       "minecraft:tags": {
         "tags": [
-          "minecraft:music_disc"
+          "pfe:is_cassette"
         ]
       }
     }

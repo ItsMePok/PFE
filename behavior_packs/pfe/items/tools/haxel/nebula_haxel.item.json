@@ -14,14 +14,24 @@
 			"minecraft:rarity": "epic",
 			"minecraft:tags": {
 				"tags": [
-					"pfe:HaxelMining:{\"radius\":{\"x\":7,\"y\":7,\"z\":7},\"canBreakLiquids\":false,\"canBreakBedrock\":false}:pfeHaxelMiningEnd",
 					"minecraft:is_pickaxe",
 					"minecraft:netherite_tier",
 					"minecraft:is_tool",
 					"pfe:is_haxel"
 				]
 			},
-			"poke:haxelMining": {},
+			"poke_pfe:box_mining": {
+				"box_size": [
+					7,
+					7,
+					7
+				],
+				"offset": [
+					0,
+					0,
+					0
+				]
+			},
 			"poke:normalMining": {},
 			"minecraft:use_modifiers": {
 				"use_duration": 0,

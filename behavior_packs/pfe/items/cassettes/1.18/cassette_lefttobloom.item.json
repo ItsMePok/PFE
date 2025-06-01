@@ -6,13 +6,15 @@
     },
     "components": {
       "minecraft:display_name": {
-        "value": "%poke_pfe.cassette\n§7%poke_pfe.cassette.lefttobloom\n%poke_pfe.tag"
+        "value": "%poke_pfe.cassette\n§7Lena Raine - %poke_pfe.lefttobloom\n%poke_pfe.tag"
       },
       "minecraft:icon": "poke_cassette_lefttobloom",
-      "poke:cas": {},
+      "poke_pfe:play_music": {
+        "music": "poke_pfe.music.lefttobloom"
+      },
       "minecraft:tags": {
         "tags": [
-          "minecraft:music_disc"
+          "pfe:is_cassette"
         ]
       }
     }

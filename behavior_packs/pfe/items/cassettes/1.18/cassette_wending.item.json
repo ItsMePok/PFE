@@ -6,13 +6,15 @@
     },
     "components": {
       "minecraft:display_name": {
-        "value": "%poke_pfe.cassette\n§7%poke_pfe.cassette.wending\n%poke_pfe.tag"
+        "value": "%poke_pfe.cassette\n§7Lena Raine - %poke_pfe.wending\n%poke_pfe.tag"
       },
       "minecraft:icon": "poke_cassette_wending",
-      "poke:cas": {},
+      "poke_pfe:play_music": {
+        "music": "poke_pfe.music.wending"
+      },
       "minecraft:tags": {
         "tags": [
-          "minecraft:music_disc"
+          "pfe:is_cassette"
         ]
       }
     }

@@ -1,0 +1,27 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:item": {
+    "description": {
+      "identifier": "poke_pfe:cassette_broken_clocks"
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "%poke_pfe.cassette\n§7Amos Roddy - %poke_pfe.broken_clocks\n%poke_pfe.tag"
+      },
+      "minecraft:rarity": "common",
+      "minecraft:icon": {
+        "textures": {
+          "default": "poke_pfe_cassette_broken_clocks"
+        }
+      },
+      "poke_pfe:play_music": {
+        "music": "poke_pfe.music.broken_clocks"
+      },
+      "minecraft:tags": {
+        "tags": [
+          "pfe:is_cassette"
+        ]
+      }
+    }
+  }
+}

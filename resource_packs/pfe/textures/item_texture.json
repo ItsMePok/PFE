@@ -3,6 +3,24 @@
 		"poke_pfe_missing": {
 			"textures": "textures/poke/common/question"
 		},
+		"poke_pfe_cassette_below_and_above": {
+			"textures": "textures/poke/pfe/cassette_below_and_above"
+		},
+		"poke_pfe_cassette_broken_clocks": {
+			"textures": "textures/poke/pfe/cassette_broken_clocks"
+		},
+		"poke_pfe_cassette_fireflies": {
+			"textures": "textures/poke/pfe/cassette_fireflies"
+		},
+		"poke_pfe_cassette_lilypad": {
+			"textures": "textures/poke/pfe/cassette_lilypad"
+		},
+		"poke_pfe_cassette_os_piano": {
+			"textures": "textures/poke/pfe/cassette_os_piano"
+		},
+		"poke_pfe_cassette_tears": {
+			"textures": "textures/poke/pfe/cassette_tears"
+		},
 		"poke_pfe_amethyst_claymore": {
 			"textures": "textures/poke/pfe/amethyst_claymore"
 		},

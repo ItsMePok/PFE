@@ -13,14 +13,24 @@
 			},
 			"minecraft:tags": {
 				"tags": [
-					"pfe:HaxelMining:{\"radius\":{\"x\":3,\"y\":3,\"z\":3}}:pfeHaxelMiningEnd",
 					"minecraft:is_pickaxe",
 					"minecraft:netherite_tier",
 					"minecraft:is_tool",
 					"pfe:is_haxel"
 				]
 			},
-			"poke:haxelMining": {},
+			"poke_pfe:box_mining": {
+				"box_size": [
+					3,
+					3,
+					3
+				],
+				"offset": [
+					0,
+					0,
+					0
+				]
+			},
 			"poke:normalMining": {},
 			"minecraft:use_modifiers": {
 				"use_duration": 0,

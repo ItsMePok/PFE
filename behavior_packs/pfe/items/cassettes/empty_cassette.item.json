@@ -10,7 +10,15 @@
       },
       "minecraft:rarity": "common",
       "minecraft:icon": "poke_empty_cassette",
-      "poke:cas": {}
+      "poke_pfe:play_music": {
+        "music": "",
+        "music_volume": 0.5
+      },
+      "minecraft:tags": {
+        "tags": [
+          "pfe:is_cassette"
+        ]
+      }
     }
   }
 }

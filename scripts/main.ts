@@ -1,14 +1,14 @@
-import { system, world, EquipmentSlot, GameMode, EntityComponentTypes, ItemComponentTypes, ItemStack, Player, Direction, RawMessage, EntityQueryOptions, Block } from "@minecraft/server";
+import { system, world, EquipmentSlot, GameMode, EntityComponentTypes, ItemComponentTypes, ItemStack, Player, Direction, RawMessage, EntityQueryOptions, Block, ItemType } from "@minecraft/server";
 import { BlockStateSuperset, MinecraftBlockTypes, MinecraftDimensionTypes, MinecraftEffectTypes, MinecraftEnchantmentTypes, MinecraftEntityTypes, MinecraftItemTypes } from "@minecraft/vanilla-data";
 import { PFEBossEventConfig, PFEBossEventConfigName, PFEBossEventTicks, PFEBossEventUIMainMenu, PFEDefaultBossEventSettings, PFEStartBossEvent } from "./bossEvents";
-import { PFEHaxelMining } from "./haxelMining";
+import { PFEBoxMiningComponent } from "./boxMining";
 import { PokeClosestCardinal, PokeDamageItemUB, PokeDecrementStack, PokeSpawnLootTable } from "./commonFunctions";
 import { PokeBirthdays, PokeTimeConfigUIMainMenu, PokeTimeGreeting, PokeTimeZoneOffset } from "./time";
 import { PFEBoltBowsComponent } from "./boltbow";
 import { PFEDisableConfigOptions, PFEDisableConfigDefault, PFEDisableConfigMainMenu, PFEDisableConfigName, PFEDisabledOnUseItems } from "./disableConfig";
 import { ActionFormData } from "@minecraft/server-ui";
 import { CheckEffects, PFEArmorEffectData, PFECustomArmorEffectDynamicProperty, PFECustomEffectInfo } from "./armorEffects";
-import { PFECustomCraftQuestsPropertyID, PFECustomFarmQuestsPropertyID, PFECustomKillQuestsPropertyID, PFECustomMineQuestsPropertyID, PokePFEQuestComponent } from "./quests";
+import { PFECustomCraftQuestsPropertyID, PFECustomFarmQuestsPropertyID, PFECustomKillQuestsPropertyID, PFECustomMineQuestsPropertyID, PFEQuestComponent } from "./quests";
 import ComputersCompat, { initExampleStickers } from "./addonCompatibility/jigarbov";
 import { PFEWaypointComponent, PFEWaypointDefaultConfig, PokePFEWaypointConfig, waypointComponentOptions, WaypointDynamicPropertyID, WaypointUIMainMenu } from "./waypoints";
 
@@ -498,9 +498,6 @@ system.beforeEvents.startup.subscribe(data => {
     }
     )
     data.itemComponentRegistry.registerCustomComponent(
-        "poke:haxelMining", new PFEHaxelMining()
-    );
-    data.itemComponentRegistry.registerCustomComponent(
         "poke:cc_dodge", {
         onUse(data, componentInfo) {
             if (data.itemStack === undefined) return;
@@ -596,53 +593,8 @@ system.beforeEvents.startup.subscribe(data => {
         }
     }
     );
-    data.itemComponentRegistry.registerCustomComponent(
-        "poke:cas", {
-        onUse(data, component) {
-            const id = data.itemStack!.typeId
-            const trackId = id.substring(id.lastIndexOf("_")).substring(1)
-            if (data.source.isSneaking) {
-                data.source.queueMusic(`poke.record.${trackId}`)
-                data.source.playSound('poke.cassette_activate')
-                data.source.sendMessage({ translate: `translation.poke:trackQueued` })
-                return;
-            } else {
-                data.source.playMusic(`poke.record.${trackId}`, { fade: 2.5 })
-                data.source.playSound('poke.cassette_activate')
-            }
-            return;
-        }
-    }
-    );
-    data.itemComponentRegistry.registerCustomComponent(
-        "poke_pfe:run_command", {
-        onUse(data, component) {
-            type runCommandComponentInfo = {
-                version?: number,
-                can_be_disabled?: boolean,
-                command?: string,
-                trigger_cooldown?: boolean,
-                ignore_cooldown?: boolean,
-                take_durability?: boolean
-            }
-            if (!data.itemStack) return;
-            const componentInfo = <runCommandComponentInfo>component.params
-            if (componentInfo.can_be_disabled) {
-                let options: PFEDisableConfigOptions = JSON.parse(world.getDynamicProperty(PFEDisableConfigName)!.toString()) ?? PFEDisableConfigDefault
-                switch (true) {
-                    case data.itemStack.typeId == "poke:quantum_teleporter" && options.quantumTeleporter === false: return;
-                    case data.itemStack.typeId == "poke:sundial" && options.quantumTeleporter === false: return;
-                    case data.itemStack.typeId == "poke:kapow_ring" && options.quantumTeleporter === false: return;
-                    default: break;
-                }
-            }
-            componentInfo.command ? data.source.runCommand(componentInfo.command) : undefined
-            if (componentInfo.trigger_cooldown) data.itemStack.getComponent(ItemComponentTypes.Cooldown)?.startCooldown(data.source);
-            if (componentInfo.take_durability !== false) PokeDamageItemUB(data.itemStack, undefined, data.source, EquipmentSlot.Mainhand);
-            return;
-        }
-    }
-    );
+
+
     data.itemComponentRegistry.registerCustomComponent(
         "poke:cc_zooka", {
         onUse(data, component) {
@@ -1056,7 +1008,7 @@ system.beforeEvents.startup.subscribe(data => {
                 return;
             }
             data.block.setType(newBlock)
-            data.dimension.playSound('poke.calibrate', data.block.center())
+            data.dimension.playSound('poke_pfe.calibrate', data.block.center())
             ComputersCompat.addStat(`blocks_calibrated`, 1)
             return;
         }
@@ -1278,7 +1230,7 @@ system.beforeEvents.startup.subscribe(data => {
         "poke:cc_block_interact", {
         onPlayerInteract(data, component) {
             switch (data.block.typeId) {
-                case 'poke:listener_trophy': { data.player?.playMusic('record.listen', { fade: 5 }); return; }
+                case 'poke:listener_trophy': { data.player?.playMusic('poke_pfe.they_listen', { fade: 5 }); return; }
                 case 'poke:furnace_golem_trophy': { data.player?.playMusic('poke.record.pigstep', { fade: 5 }); return; }
                 case 'poke:cobalt_golem_block': { data.dimension.spawnEntity('poke:cobalt_golem', data.block.location); data.block.setType(MinecraftBlockTypes.Air); return; }
                     return;
@@ -1587,16 +1539,70 @@ system.beforeEvents.startup.subscribe(data => {
     }
     )
 
-
+    // Updated Components
     data.itemComponentRegistry.registerCustomComponent(
-        "poke_pfe:quests", new PokePFEQuestComponent()
-    )
+        "poke_pfe:run_command", {
+        onUse(data, component) {
+            if (!data.itemStack) return;
+            type runCommandComponentInfo = {
+                version?: number,
+                can_be_disabled?: boolean,
+                command?: string,
+                trigger_cooldown?: boolean,
+                take_durability?: boolean
+            }
+            const componentInfo = <runCommandComponentInfo>component.params
+            if (componentInfo.can_be_disabled) {
+                let options: PFEDisableConfigOptions = JSON.parse(world.getDynamicProperty(PFEDisableConfigName)!.toString()) ?? PFEDisableConfigDefault
+                switch (true) {
+                    case data.itemStack.typeId == "poke:quantum_teleporter" && options.quantumTeleporter === false: return;
+                    case data.itemStack.typeId == "poke:sundial" && options.quantumTeleporter === false: return;
+                    case data.itemStack.typeId == "poke:kapow_ring" && options.quantumTeleporter === false: return;
+                    default: break;
+                }
+            }
+            componentInfo.command ? data.source.runCommand(componentInfo.command) : undefined
+            if (componentInfo.trigger_cooldown) data.itemStack.getComponent(ItemComponentTypes.Cooldown)?.startCooldown(data.source);
+            if (componentInfo.take_durability !== false) PokeDamageItemUB(data.itemStack, undefined, data.source, EquipmentSlot.Mainhand);
+            return;
+        }
+    }
+    );
     data.itemComponentRegistry.registerCustomComponent(
-        "poke_pfe:waypoint_menu", new PFEWaypointComponent()
-    )
+        "poke_pfe:play_music", {
+        onUse(data, component) {
+            type ComponentInfo = {
+                music: string,
+                music_volume: number | undefined,
+                loop_music: boolean | undefined
+                music_fade_amount: number | 2.5,
+                trigger_sound: string | "poke_pfe.cassette_activate",
+                can_queue: boolean | true,
+                display_queue_message: boolean | true,
+                queue_message: string | "%poke_pfe.track_queued"
+            }
+            const componentInfo = <ComponentInfo>component.params
+            data.source.playSound(componentInfo.trigger_sound ?? "poke_pfe.cassette_activate")
+            if (componentInfo.can_queue != false && data.source.isSneaking) {
+                data.source.queueMusic(componentInfo.music, { volume: componentInfo.music_volume ?? undefined, loop: componentInfo.loop_music ?? undefined })
+                if (componentInfo.display_queue_message != false) {
+                    data.source.sendMessage({ translate: componentInfo.queue_message ?? "%poke_pfe.track_queued" })
+                }
+                return;
+            }
+            data.source.playMusic(componentInfo.music, { fade: componentInfo.music_fade_amount ?? 2.5, volume: componentInfo.music_volume ?? undefined, loop: componentInfo.loop_music ?? undefined })
+        }
+    });
+    data.itemComponentRegistry.registerCustomComponent("poke_pfe:box_mining", new PFEBoxMiningComponent());
+    data.itemComponentRegistry.registerCustomComponent("poke_pfe:quests", new PFEQuestComponent());
+    data.itemComponentRegistry.registerCustomComponent("poke_pfe:waypoint_menu", new PFEWaypointComponent());
+    // These component exist only to use as data storage and do not provide any function
+    data.itemComponentRegistry.registerCustomComponent("poke_pfe:custom_quests_info", {});
+    data.itemComponentRegistry.registerCustomComponent("poke_pfe:incompatible_addons", {});
     return;
 })
 world.afterEvents.worldLoad.subscribe((data) => {
+    world.setDynamicProperty(PFECustomMineQuestsPropertyID, JSON.stringify([]))
     world.setDynamicProperty(PFECustomMineQuestsPropertyID, JSON.stringify([]))
     world.setDynamicProperty(PFECustomFarmQuestsPropertyID, JSON.stringify([]))
     world.setDynamicProperty(PFECustomCraftQuestsPropertyID, JSON.stringify([]))
@@ -1609,20 +1615,13 @@ world.afterEvents.worldLoad.subscribe((data) => {
     if (typeof world.getDynamicProperty(PFEDisableConfigName) != "string") {
         world.setDynamicProperty(PFEDisableConfigName, JSON.stringify(PFEDisableConfigDefault))
     }
-    let birthdayProperty = world.getDynamicProperty(`poke:birthdays`)
-    if (typeof birthdayProperty != "string") world.setDynamicProperty(`poke:birthdays`, `[]`)
-    if (typeof world.getDynamicProperty(`poke:customEvents`) != "string") {
-        world.setDynamicProperty(`poke:customEvents`, '[]')
-        //console.warn(`Custom events were invalid; resetting to default (Ignore if this world was just created) || Poke-Calendar`)
-    } else {
-        try {
-            JSON.parse(world.getDynamicProperty(`poke:customEvents`)?.toString()!)
-        }
-        catch {
-            //console.warn(`Custom events were invalid; resetting to default || Poke-Calendar`)
-            world.setDynamicProperty(`poke:customEvents`, '[]')
-        }
-    }
+    const birthdayProperty = world.getDynamicProperty(`poke:birthdays`)
+    if (typeof birthdayProperty != "string") world.setDynamicProperty(`poke:birthdays`, `[]`);
+    const CustomEventsDynamicProp = world.getDynamicProperty(`poke:customEvents`)
+    typeof CustomEventsDynamicProp == "string" ?
+        JSON.parse(CustomEventsDynamicProp) ?? world.setDynamicProperty(`poke:customEvents`, `[]`)
+        : world.setDynamicProperty(`poke:customEvents`, `[]`)
+    //console.warn(`Custom events were invalid; resetting to default (Ignore if this world was just created) || Poke-Calendar`)
     if (typeof world.getDynamicProperty(PFEBossEventConfigName) == "string") {
         let settings: PFEBossEventConfig = JSON.parse(world.getDynamicProperty(PFEBossEventConfigName)!.toString())
         //To prevent errors it will reset the settings to default if a setting was missing/invalid
@@ -1649,7 +1648,9 @@ world.afterEvents.worldLoad.subscribe((data) => {
             CheckEffects(player, PFEArmorEffectData, JSON.stringify(player.getTags()).includes(`novelty:poke`), customParse)
         }
     }, 20)
+    console.warn(`Within PFE: ${JSON.stringify(new ItemStack("poke_pfe:custom_data_storage", 1).getComponent(`poke_pfe:incompatible_addons`))}`)
 })
+const DataStorageDynamicPropertyId = "registered_data_storage_items"
 /*Incoming Addon Compatibility/Integrations*/
 system.afterEvents.scriptEventReceive.subscribe((data) => {
     switch (data.id) {
@@ -1662,6 +1663,17 @@ system.afterEvents.scriptEventReceive.subscribe((data) => {
          */
         case `poke_pfe:enabled`: {
             world.getDimension(MinecraftDimensionTypes.Overworld).runCommand(`scriptevent ${data.message} true`)
+            break;
+        }
+        /*
+        This will be used to have PFE use the item provided as a form of data storage
+
+        What this means is you can use that item's components to import data that would normally be sent via /scriptevent
+        */
+        case `poke_custom:register_data_storage`: {
+            const dynamicProperty = world.getDynamicProperty(DataStorageDynamicPropertyId)
+            const registeredItems: string[] = JSON.parse(typeof dynamicProperty == "string" ? dynamicProperty : "[]") ?? []
+            world.setDynamicProperty(DataStorageDynamicPropertyId, JSON.stringify(registeredItems.concat(data.message)))
             break;
         }
         /*

@@ -1,6 +1,6 @@
 import { ActionFormData } from "@minecraft/server-ui"
 import { PokeGetItemFromInventory, PokeGetObjectById, PokeSaveProperty } from "./commonFunctions"
-import { EntityComponentTypes, EquipmentSlot, GameMode, ItemComponentMineBlockEvent, ItemComponentUseEvent, ItemStack, Player, RawMessage } from "@minecraft/server"
+import { CustomComponentParameters, EntityComponentTypes, EquipmentSlot, GameMode, ItemComponentMineBlockEvent, ItemComponentUseEvent, ItemStack, Player, RawMessage } from "@minecraft/server"
 export {
   PFEItemUpgradeInfo,
   PokeUpgradeUIConfig,
@@ -255,4 +255,10 @@ const PFECapacityCoreDefault: PFEItemUpgradeInfo = {
   upgradeAdditive: true,
   level: 1,
   maxLevel: undefined
+}
+
+class PFEUpgradableComponent {
+  onUse(data: ItemComponentUseEvent, component: CustomComponentParameters) {
+    const componentInfo = component.params
+  }
 }

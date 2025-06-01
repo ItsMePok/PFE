@@ -2,25 +2,29 @@
   "format_version": "1.21.90",
   "minecraft:item": {
     "description": {
-      "identifier": "poke:cassette_mc_disc_chirp"
+      "identifier": "poke:cassette_mc_disc_wait"
     },
     "components": {
       "minecraft:display_name": {
         "value": "%poke_pfe.cassette\n%poke_pfe.tag"
       },
       "minecraft:rarity": "uncommon",
-      "minecraft:icon": "poke_cassette_mc_disc_chirp",
+      "minecraft:icon": "poke_cassette_mc_disc_wait",
+      "poke_pfe:play_music": {
+        "music": "poke_pfe.disc.wait",
+        "music_volume": 0.5
+      },
       "minecraft:tags": {
         "tags": [
+          "pfe:is_cassette",
           "minecraft:music_disc"
         ]
       },
       "minecraft:record": {
-        "comparator_signal": 4,
-        "sound_event": "record.chirp",
-        "duration": 185
-      },
-      "poke:cas": {}
+        "comparator_signal": 12,
+        "sound_event": "record.wait",
+        "duration": 238
+      }
     }
   }
 }

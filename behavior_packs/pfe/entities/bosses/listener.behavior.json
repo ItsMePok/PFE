@@ -205,7 +205,7 @@
 					"command": [
 						"weather clear",
 						"execute as @a[r=55] run music stop 3",
-						"execute as @a[r=50] run music play record.listen 1 8"
+						"execute as @a[r=50] run music play poke_pfe.they_listen 1 8"
 					]
 				}
 			},

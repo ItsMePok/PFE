@@ -2,25 +2,29 @@
   "format_version": "1.21.90",
   "minecraft:item": {
     "description": {
-      "identifier": "poke:cassette_mc_disc_far"
+      "identifier": "poke:cassette_mc_disc_cat"
     },
     "components": {
       "minecraft:display_name": {
         "value": "%poke_pfe.cassette\n%poke_pfe.tag"
       },
       "minecraft:rarity": "uncommon",
-      "minecraft:icon": "poke_cassette_mc_disc_far",
+      "minecraft:icon": "poke_cassette_mc_disc_cat",
+      "poke_pfe:play_music": {
+        "music": "poke_pfe.disc.cat",
+        "music_volume": 0.5
+      },
       "minecraft:tags": {
         "tags": [
+          "pfe:is_cassette",
           "minecraft:music_disc"
         ]
       },
       "minecraft:record": {
-        "comparator_signal": 5,
-        "sound_event": "record.far",
+        "comparator_signal": 2,
+        "sound_event": "record.cat",
         "duration": 185
-      },
-      "poke:cas": {}
+      }
     }
   }
 }
