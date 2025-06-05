@@ -9,6 +9,33 @@ export {
   PFEFlamingCoreDefault,
   PFECapacityCoreDefault
 }
+type PFEUpgradeableComponentInfo = {
+  upgrade_ids: string[] | ["pfe:persistence"] | "custom",
+  dynamic_property: string | "pfe:upgrades"
+}
+class PFEUpgradeableComponent {
+  onUse(data: ItemComponentUseEvent, componentInfo: CustomComponentParameters) {
+
+    const component = <PFEUpgradeableComponentInfo>componentInfo.params
+    if (!data.itemStack) return
+    let upgrades: PFEItemUpgradeInfo[] = []
+    const customUpgrades = <PFEItemUpgradeInfo[] | undefined>data.itemStack.getComponent('poke_pfe:custom_upgrades')
+    const defaultUpgrades = [PFECapacityCoreDefault, PFEFlamingCoreDefault, PFEPersistenceCoreDefault]
+    let allUpgrades = customUpgrades ? defaultUpgrades.concat(customUpgrades) : defaultUpgrades
+    for (let upgrade_id of component.upgrade_ids) {
+      const validUpgrade: PFEItemUpgradeInfo | undefined = PokeGetObjectById(allUpgrades, upgrade_id)?.value
+      if (validUpgrade) upgrades.push(validUpgrade)
+    }
+    if (upgrades.length < 1) upgrades.push(PFEPersistenceCoreDefault)
+    let parsedUpgradeInfo: PokeUpgradeUIConfig = {
+      dynamicProperty: component.dynamic_property ?? "pfe:upgrades",
+      id: "poke_pfe:upgradable_component",
+      v: 1,
+      upgrades: upgrades
+    }
+    PokeUpgradeUI(data.source, data.itemStack, parsedUpgradeInfo, undefined, true)
+  }
+}
 interface PFEItemUpgradeInfo {
   id: string // name of the upgrade
   level: number // current upgrade level
@@ -28,7 +55,7 @@ interface PokeUpgradeUIConfig {
   id: string,
   dynamicProperty: string
 }
-function PokeUpgradeUI(player: Player, item: ItemStack, config: PokeUpgradeUIConfig, backTo?: any) {
+function PokeUpgradeUI(player: Player, item: ItemStack, config: PokeUpgradeUIConfig, backTo?: any, compressedSave?: boolean, component?: PFEUpgradeableComponentInfo) {
   let UI = new ActionFormData()
   for (let upgrade of config.upgrades) {
     const upgradeCost = (
@@ -49,13 +76,32 @@ function PokeUpgradeUI(player: Player, item: ItemStack, config: PokeUpgradeUICon
     let selection = 0
     for (let upgrade of config.upgrades) {
       if (response.selection == selection) {
+        type compressedPFEUpgradeInfo = {
+          id: string,
+          level: number
+        }
+        type compressedPFEItemUpgradeInfo = {
+          upgrades: compressedPFEUpgradeInfo[]
+        }
         const HasItem = player.getGameMode() == GameMode.Creative ? true : (Number(PokeGetItemFromInventory(player, undefined, upgrade.upgradeItem)?.length) + 0)
+        const dynamicProperty = item.getDynamicProperty(config.dynamicProperty)
+        const currentCompressed = compressedSave ? typeof dynamicProperty == "string" ? <compressedPFEItemUpgradeInfo>JSON.parse(dynamicProperty) : undefined : undefined
         const upgradeCost = (
           (upgrade.maxLevel) ? (upgrade.maxLevel <= upgrade.level) ? Infinity : (upgrade.upgradeAdditive) ? (upgrade.level) + 1 : 1 : (upgrade.upgradeAdditive) ? (upgrade.level) + 1 : 1
         )
         console.warn(upgradeCost)
         if (HasItem && upgradeCost != Infinity) {
           if (upgrade.id == PFEPersistenceCoreDefault.id) item.keepOnDeath = true;
+          const thisCompressedUpgrade: { id: string, level: number } | undefined = currentCompressed ? PokeGetObjectById(currentCompressed?.upgrades, upgrade.id)?.value : undefined
+
+          let compressedNewProperty: compressedPFEItemUpgradeInfo = {
+            upgrades: currentCompressed ? currentCompressed.upgrades.filter(compressedUpgrade => compressedUpgrade.id != upgrade.id).concat([
+              {
+                id: upgrade.id,
+                level: (thisCompressedUpgrade?.level ?? upgrade.level) + 1
+              }]
+            ) : []
+          }
           let newProperty: PFEItemUpgradeInfo = {
             id: upgrade.id,
             icon: upgrade.icon,
@@ -70,7 +116,7 @@ function PokeUpgradeUI(player: Player, item: ItemStack, config: PokeUpgradeUICon
           if (player.getGameMode() != GameMode.Creative && upgradeCost != Infinity) {
             player.runCommand(`clear @s ${upgrade.upgradeItem} 0 ${upgradeCost}`)
           }
-          PokeSaveProperty(config.dynamicProperty, item, JSON.stringify(config), player, EquipmentSlot.Mainhand)
+          PokeSaveProperty(component?.dynamic_property ?? config.dynamicProperty, item, JSON.stringify(compressedSave ? compressedNewProperty : config), player, EquipmentSlot.Mainhand)
           return;
         }
       } else selection++; continue
