@@ -1,6 +1,6 @@
 # Addon Compatibility
 
-### What Addons are have [PFE integration](#user-content-fn-1)[^1]
+## What Addons are have [PFE integration](#user-content-fn-1)[^1]
 
 #### Papercraft Mob Stickers
 
@@ -25,7 +25,15 @@ Even if this Add-On is not installed these stats will be saved in scoreboard
 
 
 
-### What can be integrated into from PFE
+## What can be integrated into from PFE
+
+{% hint style="danger" %}
+As of PFE v1.2.95:
+
+integrations via scriptevent must be sent after `world.afterEvents.worldLoad` would trigger
+
+This is due to a change made in script v2.0.0
+{% endhint %}
 
 * Giving an amor piece a tag from the PFE armors (ex: `poke_pfe:astral_armor_effects` will grant Astral's set effects when equipped
 * scriptevent `poke_pfe:enabled`&#x20;
@@ -37,15 +45,70 @@ Example command: `/scriptevent poke_pfe:enabled poke_pfe:receive_test`
 This would send true (as a string) to the script event id of `poke_pfe:receive_test`
 {% endhint %}
 
-* Quests:
+### Armor Effects
+
+```typescript
+/*
+Add-On Creators: You can add set effect presets into PFE's set effect system.
+
+Note: the custom preset get re-initialized after the world loads. 
+This is to ensure that players will not get set effects form Add-Ons that 
+are no longer to the world. 
+
+The soonest presets should be sent/added is a few seconds after the world loads
+(This is to ensure it will not get caught in the re-initialization)
+
+Presets can be added at anytime after the soonest possible & will still take effect
+
+
+This is example code for adding 2 custom presets: 1 will check for item tags
+while the other looks for a value within the item's lore
+*/
+import { world } from "@minecraft/server"
+/*
+Interface for effect options
+effect: the effect identifer
+maxAmp: this will decide what the highest effect amplifier/level this item can give (the highest max of equipped items will be used) 
+*/
+interface PFEEffectOptions {
+  effect: MinecraftEffectTypes | string,
+  maxAmp: number
+}
+/*
+Interface for adding custom set effect presets, 
+Mode: (defaults to tag) lore will make `tag` check the lore of an item to see if it contains a certain value (it can be anywhere in it, just need to exist)
+*/
+interface PFECustomEffectInfo {
+  mode?: "tag" | "lore"
+  effects: PFEEffectArray[],
+  tag: string,
+}
+/*
+This is what you would send via script event
+*/
+interface PFEUnparsedCustomEffectInfo {
+  value: PFECustomEffectInfo[]
+}
+world.afterEvents.worldInitialize.subscribe((data) => {
+  const Presets: PFEUnparsedCustomEffectInfo = {
+    value: [
+      { mode: "tag", effects: [{ effect: "minecraft:night_vision", maxAmp: 1 }], tag: "poke_pfe:night_vision" },
+      { mode: "lore", effects: [{ effect: "minecraft:regeneration", maxAmp: 3 }, { effect: "minecraft:fatal_poison", maxAmp: 4 }], tag: "poke_pfe:custom_preset" }
+    ]
+  }
+  world.getDimension(`minecraft:overworld`).runCommand(`scriptevent poke_pfe:add_set_effect_preset ${JSON.stringify(Presets)}`)
+})
+```
+
+## Quests:
 
 ```typescript
 /*
 Add-On Creators: You can add quests into PFE's quest system.
 
-Note: the custom quests get re-initialized each time the world starts. 
+Note: the custom quests get re-initialized after the world loads. 
 This is to ensure that players will not get quests for Add-Ons that 
-are no longer in the world. (Quests can be added at any time after the world loads)
+are no longer in the world. (Quests should be added a few seconds after the world loads)
 
 Note x2: Quests that have been rolled not be able to be changed
 
@@ -94,7 +157,7 @@ world.afterEvents.worldInitialize.subscribe((data) => {
 })
 ```
 
-### How can you make your addon compatible with PFE?
+## How can you make your addon compatible with PFE?
 
 * The biggest thing is avoiding modifying vanilla files/features
   * some examples:
