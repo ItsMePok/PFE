@@ -4,6 +4,11 @@
 		"description": {
 			"identifier": "poke:cobbled_shadowstone"
 		},
+		"unlock": [
+			{
+				"item": "poke:cobbled_shadowstone"
+			}
+		],
 		"tags": [
 			"furnace",
 			"blast_furnace"

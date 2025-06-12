@@ -13,10 +13,13 @@
 				"value": "%poke_pfe.money_man\n%poke_pfe.tag"
 			},
 			"minecraft:icon": "poke_money_man_spawn_egg",
-			"poke:cc_spawnEgg": {},
+			"poke_pfe:spawn_entity": {
+				"entity": "poke:money_man"
+			},
 			"minecraft:tags": {
 				"tags": [
-					"poke:money_man"
+					"minecraft:spawn_egg",
+					"pfe:is_survival_spawn_egg"
 				]
 			}
 		}

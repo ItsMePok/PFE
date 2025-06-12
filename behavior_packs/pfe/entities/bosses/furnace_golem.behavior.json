@@ -5,8 +5,7 @@
 			"identifier": "poke:robo_golem",
 			"is_spawnable": true,
 			"is_summonable": true,
-			"is_experimental": false,
-			"runtime_identifier": "minecraft:iron_golem"
+			"is_experimental": false
 		},
 		"component_groups": {
 			"timer": {

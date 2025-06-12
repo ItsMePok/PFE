@@ -11,6 +11,7 @@ import { CheckEffects, PFEArmorEffectData, PFECustomArmorEffectDynamicProperty, 
 import { PFECustomCraftQuestsPropertyID, PFECustomFarmQuestsPropertyID, PFECustomKillQuestsPropertyID, PFECustomMineQuestsPropertyID, PFEQuestComponent } from "./quests";
 import ComputersCompat, { initExampleStickers } from "./addonCompatibility/jigarbov";
 import { PFEWaypointComponent, PFEWaypointDefaultConfig, PokePFEWaypointConfig, waypointComponentOptions, WaypointDynamicPropertyID, WaypointUIMainMenu } from "./waypoints";
+import { PFEUpgradeableComponent } from "./upgrades";
 
 
 
@@ -550,8 +551,12 @@ system.beforeEvents.startup.subscribe(data => {
     }
     );
     data.itemComponentRegistry.registerCustomComponent(
-        "poke:cc_spawnEgg", {
-        onUseOn(data, component) {
+        "poke_pfe:spawn_entity", {
+        onUseOn(data, componentInfo) {
+            type spawnEntityComponentInfo = {
+                entity: string,
+            }
+            const component = <spawnEntityComponentInfo>componentInfo.params
             if (data.itemStack.typeId == "poke:wither_spawner") {
                 let options: PFEDisableConfigOptions = JSON.parse(world.getDynamicProperty(PFEDisableConfigName)!.toString())
                 if (!options.witherSpawner) return;
@@ -559,33 +564,30 @@ system.beforeEvents.startup.subscribe(data => {
 
             const player = <Player>data.source
             if (player.typeId != MinecraftEntityTypes.Player) return;
-            const faceLoc = data.faceLocation
+            console.warn(`Face Location: ${JSON.stringify(data.faceLocation)}`)
             const blockFace = data.blockFace
-            let faceLocX = --faceLoc.x
-            let faceLocY = --faceLoc.y
-            let faceLocZ = --faceLoc.z
+            let faceLocX = data.faceLocation.x
+            let faceLocY = data.faceLocation.y
+            let faceLocZ = data.faceLocation.z
             var amount = data.itemStack.amount
 
             const equippableComponent = data.source.getComponent(EntityComponentTypes.Equippable)
-            switch (blockFace) {
-                case Direction.North: { faceLocZ += 1.5; break }
-                case Direction.South: { faceLocZ += -1.5; break }
-                case Direction.East: { faceLocX += -1.5; break }
-                case Direction.West: { faceLocX += 1.5; break }
-                case Direction.Up: { faceLocY += -1.5; break }
-                case Direction.Down: { faceLocY += 2; break }
-            }
-            /**↓This exists because a bug is causing it to be inverted,
-             *  so it inverts the position (this also causes it to not be exactly where you interacted
-             *  (but slightly offset is better than halfway across the world lol))
-             */
-            const vec3 = { x: -faceLocX, y: -faceLocY, z: -faceLocZ };
-
-            const mobId = data.itemStack.getTags()//Mob identifier should be the only tag on the item
-            player.dimension.spawnEntity('' + mobId, vec3)
+            const vec3 = {
+                x:
+                    data.block.x +
+                    (data.block.x == Math.abs(data.block.x) ? -faceLocX : faceLocX),
+                y:
+                    (blockFace == Direction.Up ? 1 : 0) +
+                    data.block.y +
+                    (data.block.y == Math.abs(data.block.y) ? -faceLocY : faceLocY),
+                z:
+                    data.block.z +
+                    (data.block.z == Math.abs(data.block.z) ? -faceLocZ : faceLocZ)
+            };
+            player.dimension.spawnEntity(component.entity, vec3)
             if (player.getGameMode() == GameMode.Creative) return;
             if (amount <= 1) {
-                equippableComponent?.setEquipment(EquipmentSlot.Mainhand, new ItemStack(MinecraftBlockTypes.Air, 1))
+                equippableComponent?.setEquipment(EquipmentSlot.Mainhand, undefined)
                 return;
             }
             equippableComponent?.setEquipment(EquipmentSlot.Mainhand, new ItemStack(data.itemStack.typeId, amount - 1))
@@ -1593,6 +1595,7 @@ system.beforeEvents.startup.subscribe(data => {
             data.source.playMusic(componentInfo.music, { fade: componentInfo.music_fade_amount ?? 2.5, volume: componentInfo.music_volume ?? undefined, loop: componentInfo.loop_music ?? undefined })
         }
     });
+    data.itemComponentRegistry.registerCustomComponent("poke_pfe:upgradeable", new PFEUpgradeableComponent());
     data.itemComponentRegistry.registerCustomComponent("poke_pfe:box_mining", new PFEBoxMiningComponent());
     data.itemComponentRegistry.registerCustomComponent("poke_pfe:quests", new PFEQuestComponent());
     data.itemComponentRegistry.registerCustomComponent("poke_pfe:waypoint_menu", new PFEWaypointComponent());
@@ -1710,6 +1713,11 @@ system.afterEvents.scriptEventReceive.subscribe((data) => {
             const currentQuests: any[] = JSON.parse(world.getDynamicProperty(PFECustomCraftQuestsPropertyID)!.toString()) ?? []
             let newQuests = currentQuests.concat(JSON.parse(data.message).value) ?? currentQuests
             world.setDynamicProperty(PFECustomCraftQuestsPropertyID, JSON.stringify(newQuests))
+        }
+        case (`poke:test`): {
+            let item = data.sourceEntity?.getComponent(EntityComponentTypes.Equippable)?.getEquipment(EquipmentSlot.Mainhand)
+            item?.setDynamicProperty(`poke:ammo`, JSON.stringify({ v: 2, max: 32, amount: 12, entityId: "poke:galaxy_arrow", id: "poke:galaxy_arrow", upgrades: [{ id: "pfe:capacity", level: 1, maxLevel: undefined }, { id: "pfe:flaming", level: 0, maxLevel: 1 }] }))
+            data.sourceEntity?.getComponent(EntityComponentTypes.Equippable)?.setEquipment(EquipmentSlot.Mainhand, item)
         }
         default: break;
     }

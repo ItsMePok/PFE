@@ -6,7 +6,7 @@
 		},
 		"components": {
 			"minecraft:display_name": {
-				"value": "%poke_pfe.cassette\n§7ItsMePok - %poke_pfe.galacticMarch\n%poke_pfe.tag"
+				"value": "%poke_pfe.cassette\n§7ItsMePok -§5 %poke_pfe.galacticMarch\n%poke_pfe.tag"
 			},
 			"minecraft:rarity": "uncommon",
 			"minecraft:icon": "poke_cassette_galactic_march",

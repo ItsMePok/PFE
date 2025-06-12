@@ -12,10 +12,13 @@
 				"value": "%poke_pfe.furnace_golem\n%poke_pfe.tag"
 			},
 			"minecraft:icon": "poke_furnace_golem_spawn_egg",
-			"poke:cc_spawnEgg": {},
+			"poke_pfe:spawn_entity": {
+				"entity": "poke:robo_golem"
+			},
 			"minecraft:tags": {
 				"tags": [
-					"poke:robo_golem"
+					"minecraft:spawn_egg",
+					"pfe:is_survival_spawn_egg"
 				]
 			}
 		}

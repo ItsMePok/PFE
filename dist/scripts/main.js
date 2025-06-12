@@ -3337,19 +3337,22 @@ function PFEStartBossEvent() {
   ComputersCompat.addStat(`boss_events_triggered`, 1);
 }
 
-// scripts/haxelMining.ts
-import { BlockVolume, EntityComponentTypes as EntityComponentTypes2, EquipmentSlot as EquipmentSlot2, ItemComponentTypes as ItemComponentTypes2, ItemStack as ItemStack2, system as system3 } from "@minecraft/server";
-import { ActionFormData as ActionFormData3, ModalFormData as ModalFormData2 } from "@minecraft/server-ui";
+// scripts/boxMining.ts
+import { BlockVolume, EntityComponentTypes as EntityComponentTypes3, EquipmentSlot as EquipmentSlot3, ItemComponentTypes as ItemComponentTypes2, ItemStack as ItemStack3, system as system3 } from "@minecraft/server";
+import { ActionFormData as ActionFormData4, ModalFormData as ModalFormData2 } from "@minecraft/server-ui";
 
 // scripts/commonFunctions.ts
 import { Direction, EntityComponentTypes, EquipmentSlot, GameMode, ItemComponentTypes, ItemStack, world as world3 } from "@minecraft/server";
 import { ActionFormData as ActionFormData2 } from "@minecraft/server-ui";
-function PokeDamageItemUB(item, multiplier, entity, slot) {
+function PokeDamageItemUB(item, multiplier, entity, slot, preventBreaking) {
   let durabilityComponent = item.getComponent(ItemComponentTypes.Durability);
   const equippableComponent = entity.getComponent(EntityComponentTypes.Equippable);
   if (!durabilityComponent) {
     item.isStackable ? void 0 : PokeSaveProperty(`poke:holdFix`, item, Math.round(Math.random() * 100), entity, slot);
     return { tookDurability: false, failed: true, broke: false };
+  }
+  if (preventBreaking && durabilityComponent?.maxDurability == durabilityComponent.damage + 1) {
+    return { tookDurability: false, failed: true, broke: false, prevented: true };
   }
   if (!equippableComponent)
     return { tookDurability: false, failed: true, broke: false };
@@ -3462,7 +3465,7 @@ function PokeSaveProperty(propertyId, item, save, entity, slot) {
   if (!slot)
     slot = EquipmentSlot.Mainhand;
   let equippableComponent = entity.getComponent(EntityComponentTypes.Equippable);
-  if (equippableComponent.getEquipmentSlot(slot).typeId == item.typeId) {
+  if (equippableComponent?.getEquipmentSlot(slot).typeId == item.typeId) {
     equippableComponent.setEquipment(slot, item);
     return true;
   } else {
@@ -3520,7 +3523,145 @@ function PokeClosestCardinal(vector, directions) {
   return returnProperty;
 }
 
-// scripts/haxelMining.ts
+// scripts/upgrades.ts
+import { ActionFormData as ActionFormData3 } from "@minecraft/server-ui";
+import { EntityComponentTypes as EntityComponentTypes2, EquipmentSlot as EquipmentSlot2, GameMode as GameMode2 } from "@minecraft/server";
+var PFEUpgradeableComponent = class {
+  onUse(data, componentInfo) {
+    const component = componentInfo.params;
+    if (!data.itemStack)
+      return;
+    if (component.sneak_interact_opens_ui) {
+      const parsedUpgradeInfo = ParsePFEUpgradeComponent(data.itemStack, data.source, component);
+      PokeUpgradeUI(data.source, data.itemStack, parsedUpgradeInfo, void 0, true);
+    }
+  }
+};
+function ParsePFEUpgradeComponent(item, player, component) {
+  let upgrades = [];
+  const customUpgrades = item.getComponent("poke_pfe:custom_upgrades");
+  const defaultUpgrades = [PFECapacityCoreDefault, PFEFlamingCoreDefault, PFEPersistenceCoreDefault];
+  let allUpgrades = customUpgrades ? defaultUpgrades.concat(customUpgrades) : defaultUpgrades;
+  const compressedUpgrades = JSON.parse(item.getDynamicProperty(component.dynamic_property ?? "pfe:upgrades")?.toString() ?? JSON.stringify([]));
+  console.warn(JSON.stringify(compressedUpgrades));
+  if (component.upgrade_ids) {
+    for (let upgrade_id of component?.upgrade_ids) {
+      const validUpgrade = PokeGetObjectById(allUpgrades, upgrade_id)?.value;
+      const compressedUpgrade = compressedUpgrades.upgrades.filter((compressedUpgrade2) => compressedUpgrade2.id == validUpgrade?.id).at(0);
+      if (validUpgrade) {
+        if (compressedUpgrade)
+          validUpgrade.level += compressedUpgrade.level;
+        upgrades.push(validUpgrade);
+      }
+    }
+  }
+  if (upgrades.length < 1) {
+    let persistenceUpgrade = PFEPersistenceCoreDefault;
+    persistenceUpgrade.level += compressedUpgrades.upgrades.filter((compressedUpgrade) => compressedUpgrade?.id == PFEPersistenceCoreDefault.id).at(0)?.level ?? 0;
+    upgrades.push(persistenceUpgrade);
+  }
+  let parsedUpgradeInfo = {
+    dynamicProperty: component.dynamic_property ?? "pfe:upgrades",
+    id: "poke_pfe:upgradable_component",
+    v: 1,
+    upgrades,
+    compressedUpgrades: JSON.parse(item.getDynamicProperty(component.dynamic_property ?? "pfe:upgrades")?.toString() ?? "[]") ?? void 0
+  };
+  return parsedUpgradeInfo;
+}
+function PokeUpgradeUI(player, item, config, backTo, compressedSave, component) {
+  let UI = new ActionFormData3();
+  for (let upgrade of config.upgrades) {
+    const upgradeCost = upgrade.maxLevel ? upgrade.maxLevel <= upgrade.level ? Infinity : upgrade.upgradeAdditive ? upgrade.level + 1 : 1 : upgrade.upgradeAdditive ? upgrade.level + 1 : 1;
+    UI.button(
+      { translate: `%translation.poke.Upgrade ${upgrade.upgradeName ?? upgrade.upgradeItem} [%translation.poke.level:${upgrade.level}]
+%translation.poke.cost: ${upgradeCost} ${upgrade.upgradeItemName ?? item.typeId}` },
+      player.getGameMode() == GameMode2.Creative || upgradeCost && PokeGetItemFromInventory(player, void 0, upgrade.upgradeItem) ? upgrade.icon?.default : upgrade.icon?.cantUpgrade ?? upgrade.icon?.default ?? `textures/poke/common/upgrade`
+    );
+  }
+  UI.title({ translate: `translation.poke:ammoUIUpgradeTitle`, with: [item.nameTag ?? `%poke_pfe.${item.typeId.replace(`poke:`, ``).replace(`poke_pfe:`, ``)}`] });
+  UI.show(player).then((response) => {
+    let selection = 0;
+    for (let upgrade of config.upgrades) {
+      if (response.selection == selection) {
+        const HasItem = player.getGameMode() == GameMode2.Creative ? true : Number(PokeGetItemFromInventory(player, void 0, upgrade.upgradeItem)?.length) + 0;
+        const dynamicProperty = item.getDynamicProperty(config.dynamicProperty);
+        const currentCompressed = compressedSave ? typeof dynamicProperty == "string" ? JSON.parse(dynamicProperty) : void 0 : void 0;
+        const upgradeCost = upgrade.maxLevel ? upgrade.maxLevel <= upgrade.level ? Infinity : upgrade.upgradeAdditive ? upgrade.level + 1 : 1 : upgrade.upgradeAdditive ? upgrade.level + 1 : 1;
+        console.warn(upgradeCost);
+        if (HasItem && upgradeCost != Infinity) {
+          if (upgrade.id == PFEPersistenceCoreDefault.id)
+            item.keepOnDeath = true;
+          const thisCompressedUpgrade = currentCompressed ? PokeGetObjectById(currentCompressed?.upgrades, upgrade.id)?.value : void 0;
+          let compressedNewProperty = {
+            upgrades: currentCompressed ? currentCompressed.upgrades.filter((compressedUpgrade) => compressedUpgrade.id != upgrade.id).concat(
+              [
+                {
+                  id: upgrade.id,
+                  level: (thisCompressedUpgrade?.level ?? upgrade.level) + 1
+                }
+              ]
+            ) : []
+          };
+          let newProperty = {
+            id: upgrade.id,
+            icon: upgrade.icon,
+            level: upgrade.level + 1,
+            upgradeName: upgrade.upgradeName,
+            maxLevel: upgrade.maxLevel,
+            upgradeItem: upgrade.upgradeItem,
+            upgradeItemName: upgrade.upgradeItemName,
+            upgradeAdditive: upgrade.upgradeAdditive
+          };
+          config.upgrades = config.upgrades.filter((oldUpgrade) => oldUpgrade.id != upgrade.id).concat(newProperty);
+          if (player.getGameMode() != GameMode2.Creative && upgradeCost != Infinity) {
+            player.runCommand(`clear @s ${upgrade.upgradeItem} 0 ${upgradeCost}`);
+          }
+          PokeSaveProperty(component?.dynamic_property ?? config.dynamicProperty, item, JSON.stringify(compressedSave ? compressedNewProperty : config), player, EquipmentSlot2.Mainhand);
+          return;
+        }
+      } else
+        selection++;
+      continue;
+    }
+    if (response.canceled || response.selection == selection) {
+      backTo;
+      return;
+    }
+  });
+}
+var PFEPersistenceCoreDefault = {
+  id: "pfe:persistence",
+  upgradeItem: `poke_pfe:persistence_core`,
+  icon: { default: `textures/poke/pfe/persistence_core`, cantUpgrade: `textures/poke/pfe/persistence_core_gs` },
+  upgradeName: `%translation.poke_pfe.persistence`,
+  upgradeItemName: `%poke_pfe.persistence_core`,
+  upgradeAdditive: false,
+  level: 0,
+  maxLevel: 1
+};
+var PFEFlamingCoreDefault = {
+  id: "pfe:flaming",
+  upgradeItem: `poke_pfe:flaming_core`,
+  icon: { default: `textures/poke/pfe/flaming_core`, cantUpgrade: `textures/poke/pfe/flaming_core_gs` },
+  upgradeName: `%translation.poke_pfe.flaming`,
+  upgradeItemName: `%poke_pfe.flaming_core`,
+  upgradeAdditive: false,
+  level: 0,
+  maxLevel: 1
+};
+var PFECapacityCoreDefault = {
+  id: "pfe:capacity",
+  upgradeItem: `poke:capacity_core`,
+  icon: { default: `textures/poke/pfe/capacity_core`, cantUpgrade: `textures/poke/pfe/capacity_core_gs` },
+  upgradeName: `%translation.poke_pfe.capacity`,
+  upgradeItemName: `%poke_pfe.capacity_core`,
+  upgradeAdditive: true,
+  level: 1,
+  maxLevel: void 0
+};
+
+// scripts/boxMining.ts
 var PFEHaxelVersion = 3;
 var PFEHaxelInfoProperty = `pfe:haxelInfo`;
 var PFEHaxelConfigDefault = {
@@ -3543,7 +3684,7 @@ var PFEBoxMiningComponent = class {
     const component = componentInfo.params;
     if (!dynamicProperty) {
       data.itemStack.setDynamicProperty(PFEHaxelInfoProperty, JSON.stringify(PFEHaxelConfigDefault));
-      data.source.getComponent(EntityComponentTypes2.Equippable).setEquipment(EquipmentSlot2.Mainhand, data.itemStack);
+      data.source.getComponent(EntityComponentTypes3.Equippable).setEquipment(EquipmentSlot3.Mainhand, data.itemStack);
       dynamicProperty = PFEHaxelConfigDefault;
     } else
       dynamicProperty = JSON.parse(dynamicProperty.toString());
@@ -3583,7 +3724,7 @@ function* PFEMine(BannedBlocks, component, location, player, dimension, silkTouc
     if (!block)
       continue;
     if (silkTouch) {
-      let blockItemStack = (block.typeId.includes(`shulker_box`) ? block.getItemStack(1, true) : block.getItemStack(1, false)) ?? new ItemStack2(block.typeId);
+      let blockItemStack = (block.typeId.includes(`shulker_box`) ? block.getItemStack(1, true) : block.getItemStack(1, false)) ?? new ItemStack3(block.typeId);
       dimension.spawnItem(blockItemStack, player.location);
     } else
       player.runCommand(`loot spawn ${player.location.x} ${player.location.y} ${player.location.z} mine ${block.x} ${block.y} ${block.z} ${item.typeId}`);
@@ -3593,25 +3734,43 @@ function* PFEMine(BannedBlocks, component, location, player, dimension, silkTouc
   if (blocksBroken < 0) {
     dimension.playSound(component.break_sound ?? "dig.stone", player.location);
   }
-  PokeDamageItemUB(item, blocksBroken, player, EquipmentSlot2.Mainhand);
+  PokeDamageItemUB(item, blocksBroken, player, EquipmentSlot3.Mainhand);
   ComputersCompat.addStat("haxel_block_breaks", blocksBroken);
 }
 function PFEHaxelConfigMenu(data, component, dynamicProperty) {
-  let Ui = new ActionFormData3().title({ translate: `translation.poke:haxelConfig.mainMenu.title`, with: { rawtext: [{ translate: data.itemStack?.nameTag ?? `poke_pfe.${data.itemStack?.typeId}`.replace(`poke:haxel`, `onyx_haxel`).replace(`poke:`, ``) }] } }).button({ translate: `translation.poke:haxelConfig.mainMenu.blacklistAdd` }, `textures/poke/common/blacklist_add`);
+  if (!data.itemStack)
+    return;
+  let Ui = new ActionFormData4().title({ translate: `translation.poke:haxelConfig.mainMenu.title`, with: { rawtext: [{ translate: data.itemStack?.nameTag ?? `poke_pfe.${data.itemStack?.typeId}`.replace(`poke:haxel`, `onyx_haxel`).replace(`poke:`, ``) }] } }).button({ translate: `translation.poke:haxelConfig.mainMenu.blacklistAdd` }, `textures/poke/common/blacklist_add`);
   if (dynamicProperty.blacklist.length >= 1) {
     Ui.button({ translate: `translation.poke:haxelConfig.mainMenu.blacklistRemove` }, `textures/poke/common/blacklist_remove`);
   }
+  const UpgradeableComponent = data.itemStack.getComponent("poke_pfe:upgradeable")?.customComponentParameters.params;
+  if (UpgradeableComponent?.version) {
+    Ui.button({ translate: `translation.poke:ammoUIUpgrade` }, `textures/poke/common/upgrade`);
+  }
   Ui.show(data.source).then((response) => {
-    if (response.canceled)
-      return;
-    if (response.selection == 0) {
+    let selection = 0;
+    if (response.selection == selection) {
       PFEHaxelConfigBlackListAdd(data, component, dynamicProperty);
       return;
-    }
-    if (response.selection == 1) {
+    } else
+      selection++;
+    if (response.selection == selection) {
       PFEHaxelConfigBlackListRemove(data, component, dynamicProperty);
       return;
+    } else
+      selection++;
+    if (UpgradeableComponent?.version) {
+      if (response.selection == selection) {
+        if (!data.itemStack)
+          return;
+        PokeUpgradeUI(data.source, data.itemStack, ParsePFEUpgradeComponent(data.itemStack, data.source, UpgradeableComponent), PFEHaxelConfigMenu(data, component, dynamicProperty), true, UpgradeableComponent);
+        return;
+      } else
+        selection++;
     }
+    if (response.canceled || selection == response.selection)
+      return;
   });
 }
 function PFEHaxelConfigBlackListAdd(data, component, dynamicProperty) {
@@ -3637,12 +3796,12 @@ function PFEHaxelConfigBlackListAdd(data, component, dynamicProperty) {
       };
       if (data.itemStack == void 0)
         return;
-      PokeSaveProperty(PFEHaxelInfoProperty, data.itemStack, JSON.stringify(newProperty), data.source, EquipmentSlot2.Mainhand);
+      PokeSaveProperty(PFEHaxelInfoProperty, data.itemStack, JSON.stringify(newProperty), data.source, EquipmentSlot3.Mainhand);
     }
   });
 }
 function PFEHaxelConfigBlackListRemove(data, component, dynamicProperty) {
-  let Ui = new ActionFormData3().title({ translate: `translation.poke:haxelConfig.mainMenu.blacklistRemove` });
+  let Ui = new ActionFormData4().title({ translate: `translation.poke:haxelConfig.mainMenu.blacklistRemove` });
   dynamicProperty.blacklist.forEach((block) => {
     Ui.button({ translate: `tile.${block.replace(`minecraft:`, ``)}.name` });
   });
@@ -3657,7 +3816,7 @@ function PFEHaxelConfigBlackListRemove(data, component, dynamicProperty) {
         dynamicProperty.blacklist.splice(i, 1);
         if (data.itemStack == void 0)
           return;
-        PokeSaveProperty(PFEHaxelInfoProperty, data.itemStack, JSON.stringify(dynamicProperty), data.source, EquipmentSlot2.Mainhand);
+        PokeSaveProperty(PFEHaxelInfoProperty, data.itemStack, JSON.stringify(dynamicProperty), data.source, EquipmentSlot3.Mainhand);
       }
     }
   });
@@ -3672,13 +3831,13 @@ function UpdateHaxelFromV1toV2(item, player, dynamicProperty) {
     "blacklist": newBlacklist,
     "v": PFEHaxelVersion
   };
-  PokeSaveProperty(PFEHaxelInfoProperty, item, JSON.stringify(newProperty), player, EquipmentSlot2.Mainhand);
+  PokeSaveProperty(PFEHaxelInfoProperty, item, JSON.stringify(newProperty), player, EquipmentSlot3.Mainhand);
   return newProperty;
 }
 
 // scripts/time.ts
-import { GameMode as GameMode2, world as world5 } from "@minecraft/server";
-import { ActionFormData as ActionFormData4, ModalFormData as ModalFormData3 } from "@minecraft/server-ui";
+import { GameMode as GameMode3, world as world5 } from "@minecraft/server";
+import { ActionFormData as ActionFormData5, ModalFormData as ModalFormData3 } from "@minecraft/server-ui";
 var PokeCalendarVersion = 1;
 var PokeCustomEventId = `poke:customEvents`;
 var PFEDefaultHolidays = [
@@ -3881,7 +4040,7 @@ function PokeTimeCheck(event, player, claimCheck) {
   return false;
 }
 function PokeTimeDebug(player) {
-  let UI = new ActionFormData4();
+  let UI = new ActionFormData5();
   UI.button(`Delete Custom Events`);
   UI.button(`Create 10 Events`);
   UI.button(`Reset Birthday`);
@@ -3953,7 +4112,7 @@ function PokeTimeDebug(player) {
 }
 function PokeTimeConfigUIMainMenu(player) {
   let currentTime = new Date(Date.now() + PokeTimeZoneOffset(player));
-  let UI = new ActionFormData4();
+  let UI = new ActionFormData5();
   UI.body(
     {
       translate: `translation.poke:timeUiMainMenuBody`,
@@ -4202,7 +4361,7 @@ function PokeTimeZoneOffset(player) {
   return 0;
 }
 function PokeSetTimeZone(player) {
-  let Ui = new ActionFormData4();
+  let Ui = new ActionFormData5();
   let Timezones = [
     {
       "name": "\xA7uUTC \xA7a+\xA7u14:00\xA7r:\nLINT",
@@ -4423,7 +4582,7 @@ function PokeTimeGreeting(date, player, event, generic) {
 }
 function PokeTimeEventInfoMenu(event, player) {
   let timeLeft = ``;
-  let UI = new ActionFormData4();
+  let UI = new ActionFormData5();
   let giftString = { translate: `translation.poke:timeEventGift` };
   if (!event.gift) {
     giftString = { text: `` };
@@ -4434,13 +4593,13 @@ function PokeTimeEventInfoMenu(event, player) {
 ` }, { translate: `translation.poke:timeEventDates` }].concat(PokeTimeDateString(event).concat([{ text: `
 ` }, giftString])) }
   );
-  if (!event.nonModifiable && (player.getGameMode() == GameMode2.Creative || player.hasTag(`poke-event_manager`))) {
+  if (!event.nonModifiable && (player.getGameMode() == GameMode3.Creative || player.hasTag(`poke-event_manager`))) {
     UI.button({ translate: `translation.poke:timeEditEvent` }, `textures/poke/common/edit`);
   }
   UI.button({ translate: `translation.poke:goBack` }, `textures/poke/common/left_arrow`);
   UI.show(player).then((response) => {
     let selection = 0;
-    if (!event.nonModifiable && (player.getGameMode() == GameMode2.Creative || player.hasTag(`poke-event_manager`))) {
+    if (!event.nonModifiable && (player.getGameMode() == GameMode3.Creative || player.hasTag(`poke-event_manager`))) {
       if (response.selection == selection) {
         PokeEventOptions(player, event);
         return;
@@ -4454,7 +4613,7 @@ function PokeTimeEventInfoMenu(event, player) {
   });
 }
 function PokeTimeUpcomingEventList(player, page) {
-  let UI = new ActionFormData4();
+  let UI = new ActionFormData5();
   let events = PokeTimeGetAllEvents();
   let maxPerPage = 10;
   let startPage = page * maxPerPage;
@@ -4516,14 +4675,14 @@ function PokeTimeUpcomingEventList(player, page) {
 }
 function PokeTimeAdditionalOptions(player) {
   let currentTime = new Date(Date.now() + PokeTimeZoneOffset(player));
-  let UI = new ActionFormData4();
+  let UI = new ActionFormData5();
   if (player.getDynamicProperty(`poke:timezone`)) {
     UI.button({ translate: `translation.poke:timeChangeTimezone` }, PokeTimeIcon(currentTime));
   }
   if (player.getDynamicProperty(`poke:birthday`)) {
     UI.button({ translate: `translation.poke:timeChangeBirthday` }, `textures/poke/common/birthday_cake`);
   }
-  if (player.getGameMode() == GameMode2.Creative || player.hasTag(`poke-event_manager`)) {
+  if (player.getGameMode() == GameMode3.Creative || player.hasTag(`poke-event_manager`)) {
     UI.button({ translate: `translation.poke:timeCreateEvent` }, `textures/poke/common/create_event`);
   }
   UI.button({ translate: "translation.poke:goBack" }, `textures/poke/common/left_arrow`);
@@ -4543,7 +4702,7 @@ function PokeTimeAdditionalOptions(player) {
       } else
         selection++;
     }
-    if (player.getGameMode() == GameMode2.Creative || player.hasTag(`poke-event_manager`)) {
+    if (player.getGameMode() == GameMode3.Creative || player.hasTag(`poke-event_manager`)) {
       if (response.selection == selection) {
         PokeTimeCreateEvent(player);
         return;
@@ -4705,7 +4864,7 @@ function PokeTimeCreateEvent(player, event) {
   });
 }
 function PokeEventOptions(player, event) {
-  let UI = new ActionFormData4();
+  let UI = new ActionFormData5();
   UI.title({ translate: `translation.poke:timeEventOptionsTitle` });
   if (event.gift) {
     UI.button({ translate: `translation.poke:timeEditEventGift` }, "textures/poke/common/edit_gift");
@@ -4858,90 +5017,6 @@ function PokeTimeDeleteEvent(player, event) {
 // scripts/boltbow.ts
 import { EntityComponentTypes as EntityComponentTypes4, EquipmentSlot as EquipmentSlot4, GameMode as GameMode4, ItemComponentTypes as ItemComponentTypes3 } from "@minecraft/server";
 import { ActionFormData as ActionFormData6 } from "@minecraft/server-ui";
-
-// scripts/upgrades.ts
-import { ActionFormData as ActionFormData5 } from "@minecraft/server-ui";
-import { EntityComponentTypes as EntityComponentTypes3, EquipmentSlot as EquipmentSlot3, GameMode as GameMode3 } from "@minecraft/server";
-function PokeUpgradeUI(player, item, config, backTo) {
-  let UI = new ActionFormData5();
-  for (let upgrade of config.upgrades) {
-    const upgradeCost = upgrade.maxLevel ? upgrade.maxLevel <= upgrade.level ? Infinity : upgrade.upgradeAdditive ? upgrade.level + 1 : 1 : upgrade.upgradeAdditive ? upgrade.level + 1 : 1;
-    UI.button(
-      { translate: `%translation.poke.Upgrade ${upgrade.upgradeName ?? upgrade.upgradeItem} [%translation.poke.level:${upgrade.level}]
-%translation.poke.cost: ${upgradeCost} ${upgrade.upgradeItemName ?? item.typeId}` },
-      upgradeCost && PokeGetItemFromInventory(player, void 0, upgrade.upgradeItem) ? upgrade.icon?.default : upgrade.icon?.cantUpgrade ?? upgrade.icon?.default ?? `textures/poke/common/upgrade`
-    );
-  }
-  UI.title({ translate: `translation.poke:ammoUIUpgradeTitle`, with: [item.nameTag ?? `%poke_pfe.${item.typeId.replace(`poke:`, ``).replace(`poke_pfe:`, ``)}`] });
-  UI.show(player).then((response) => {
-    let selection = 0;
-    for (let upgrade of config.upgrades) {
-      if (response.selection == selection) {
-        const HasItem = player.getGameMode() == GameMode3.Creative ? true : Number(PokeGetItemFromInventory(player, void 0, upgrade.upgradeItem)?.length) + 0;
-        const upgradeCost = upgrade.maxLevel ? upgrade.maxLevel <= upgrade.level ? Infinity : upgrade.upgradeAdditive ? upgrade.level + 1 : 1 : upgrade.upgradeAdditive ? upgrade.level + 1 : 1;
-        console.warn(upgradeCost);
-        if (HasItem && upgradeCost != Infinity) {
-          if (upgrade.id == PFEPersistenceCoreDefault.id)
-            item.keepOnDeath = true;
-          let newProperty = {
-            id: upgrade.id,
-            icon: upgrade.icon,
-            level: upgrade.level + 1,
-            upgradeName: upgrade.upgradeName,
-            maxLevel: upgrade.maxLevel,
-            upgradeItem: upgrade.upgradeItem,
-            upgradeItemName: upgrade.upgradeItemName,
-            upgradeAdditive: upgrade.upgradeAdditive
-          };
-          config.upgrades = config.upgrades.filter((oldUpgrade) => oldUpgrade.id != upgrade.id).concat(newProperty);
-          if (player.getGameMode() != GameMode3.Creative && upgradeCost != Infinity) {
-            player.runCommand(`clear @s ${upgrade.upgradeItem} 0 ${upgradeCost}`);
-          }
-          PokeSaveProperty(config.dynamicProperty, item, JSON.stringify(config), player, EquipmentSlot3.Mainhand);
-          return;
-        }
-      } else
-        selection++;
-      continue;
-    }
-    if (response.canceled || response.selection == selection) {
-      backTo;
-      return;
-    }
-  });
-}
-var PFEPersistenceCoreDefault = {
-  id: "pfe:persistence",
-  upgradeItem: `poke_pfe:persistence_core`,
-  icon: { default: `textures/poke/pfe/persistence_core`, cantUpgrade: `textures/poke/pfe/persistence_core_gs` },
-  upgradeName: `%translation.poke_pfe.persistence`,
-  upgradeItemName: `%poke_pfe.persistence_core`,
-  upgradeAdditive: false,
-  level: 0,
-  maxLevel: 1
-};
-var PFEFlamingCoreDefault = {
-  id: "pfe:flaming",
-  upgradeItem: `poke_pfe:flaming_core`,
-  icon: { default: `textures/poke/pfe/flaming_core`, cantUpgrade: `textures/poke/pfe/flaming_core_gs` },
-  upgradeName: `%translation.poke_pfe.flaming`,
-  upgradeItemName: `%poke_pfe.flaming_core`,
-  upgradeAdditive: false,
-  level: 0,
-  maxLevel: 1
-};
-var PFECapacityCoreDefault = {
-  id: "pfe:capacity",
-  upgradeItem: `poke:capacity_core`,
-  icon: { default: `textures/poke/pfe/capacity_core`, cantUpgrade: `textures/poke/pfe/capacity_core_gs` },
-  upgradeName: `%translation.poke_pfe.capacity`,
-  upgradeItemName: `%poke_pfe.capacity_core`,
-  upgradeAdditive: true,
-  level: 1,
-  maxLevel: void 0
-};
-
-// scripts/boltbow.ts
 var PFEBoltBowDynamicPropertyID = `poke_pfe:boltbow`;
 var PFEBoltBowVersion = 3;
 var PFEBoltBowDefault = {
@@ -4974,6 +5049,9 @@ var PFEBoltBowsComponent = class {
       PokeSaveProperty(PFEBoltBowDynamicPropertyID, data.itemStack, JSON.stringify(PFEBoltBowDefault), data.source);
     } else
       ammoComponent = JSON.parse(data.itemStack.getDynamicProperty(PFEBoltBowDynamicPropertyID).toString());
+    if (typeof data.itemStack.getDynamicProperty(`poke:ammo`) == "string") {
+      UpdateBoltbowV2toV3(data.source, data.itemStack);
+    }
     if (!ammoComponent.v || ammoComponent.v <= 2) {
       let newProperty = [];
       for (let upgrade of ammoComponent.upgrades) {
@@ -5013,7 +5091,6 @@ var PFEBoltBowsComponent = class {
       if (equippableComponent.getEquipmentSlot(EquipmentSlot4.Mainhand).getItem()?.typeId != data.itemStack?.typeId || equippableComponent.getEquipmentSlot(EquipmentSlot4.Mainhand).getDynamicProperty(PFEBoltBowDynamicPropertyID) != JSON.stringify(ammoComponent))
         return;
       PokeShoot(data.source, ammoComponent, data.itemStack, delay);
-      data.source.setDynamicProperty(`poke:isUsingItem`, true);
     } else {
       data.source.dimension.playSound(`poke_pfe.boltbow.noAmmo`, data.source.location);
     }
@@ -5262,6 +5339,47 @@ function PFEQuickReload(ammoComponent, item, player) {
   }
   player.runCommand(`clear @s ${ammoComponent.projectile.id} -1 ${takeAmount}`);
   return;
+}
+function UpdateBoltbowV2toV3(player, item) {
+  const unparsedOldInfo = item.getDynamicProperty(`poke:ammo`);
+  const oldInfo = unparsedOldInfo ? JSON.parse(unparsedOldInfo) ?? void 0 : void 0;
+  const unparsedNewInfo = item.getDynamicProperty(PFEBoltBowDynamicPropertyID);
+  let newInfo = unparsedNewInfo ? JSON.parse(unparsedNewInfo) ?? PFEBoltBowDefault : PFEBoltBowDefault;
+  let updatedUpgrades = [];
+  if (oldInfo) {
+    PokeGetObjectById(newInfo.upgrades, PFECapacityCoreDefault.id);
+    const CapacityLevel = PokeGetObjectById(oldInfo.upgrades, "pfe:capacity")?.value.level;
+    const FlamingLevel = PokeGetObjectById(oldInfo.upgrades, "pfe:flaming")?.value.level;
+    for (let upgrade of newInfo.upgrades) {
+      if (upgrade.id == PFECapacityCoreDefault.id) {
+        upgrade.level = CapacityLevel;
+        continue;
+      }
+      if (upgrade.id == PFEFlamingCoreDefault.id)
+        upgrade.level = FlamingLevel;
+      updatedUpgrades.push(upgrade);
+    }
+  }
+  let savingInfo = {
+    v: 3,
+    dynamicProperty: newInfo.dynamicProperty,
+    id: "poke_pfe:boltbow",
+    projectile: {
+      id: oldInfo?.id ?? newInfo.projectile.id,
+      amount: oldInfo?.amount ?? newInfo.projectile.amount,
+      entityId: oldInfo?.entityId ?? newInfo.projectile.entityId,
+      max: oldInfo?.max
+    },
+    upgrades: updatedUpgrades
+  };
+  const validUpgradeIds = [
+    PFECapacityCoreDefault.id,
+    PFEFlamingCoreDefault.id,
+    PFEPersistenceCoreDefault.id
+  ];
+  savingInfo.upgrades = newInfo.upgrades;
+  PokeSaveProperty(PFEBoltBowDynamicPropertyID, item, JSON.stringify(savingInfo), player);
+  item.setDynamicProperty("poke:ammo", void 0);
 }
 
 // scripts/disableConfig.ts
@@ -9075,9 +9193,10 @@ system4.beforeEvents.startup.subscribe((data) => {
     }
   );
   data.itemComponentRegistry.registerCustomComponent(
-    "poke:cc_spawnEgg",
+    "poke_pfe:spawn_entity",
     {
-      onUseOn(data2, component) {
+      onUseOn(data2, componentInfo) {
+        const component = componentInfo.params;
         if (data2.itemStack.typeId == "poke:wither_spawner") {
           let options = JSON.parse(world10.getDynamicProperty(PFEDisableConfigName).toString());
           if (!options.witherSpawner)
@@ -9086,46 +9205,23 @@ system4.beforeEvents.startup.subscribe((data) => {
         const player = data2.source;
         if (player.typeId != MinecraftEntityTypes.Player)
           return;
-        const faceLoc = data2.faceLocation;
+        console.warn(`Face Location: ${JSON.stringify(data2.faceLocation)}`);
         const blockFace = data2.blockFace;
-        let faceLocX = --faceLoc.x;
-        let faceLocY = --faceLoc.y;
-        let faceLocZ = --faceLoc.z;
+        let faceLocX = data2.faceLocation.x;
+        let faceLocY = data2.faceLocation.y;
+        let faceLocZ = data2.faceLocation.z;
         var amount = data2.itemStack.amount;
         const equippableComponent = data2.source.getComponent(EntityComponentTypes8.Equippable);
-        switch (blockFace) {
-          case Direction2.North: {
-            faceLocZ += 1.5;
-            break;
-          }
-          case Direction2.South: {
-            faceLocZ += -1.5;
-            break;
-          }
-          case Direction2.East: {
-            faceLocX += -1.5;
-            break;
-          }
-          case Direction2.West: {
-            faceLocX += 1.5;
-            break;
-          }
-          case Direction2.Up: {
-            faceLocY += -1.5;
-            break;
-          }
-          case Direction2.Down: {
-            faceLocY += 2;
-            break;
-          }
-        }
-        const vec3 = { x: -faceLocX, y: -faceLocY, z: -faceLocZ };
-        const mobId = data2.itemStack.getTags();
-        player.dimension.spawnEntity("" + mobId, vec3);
+        const vec3 = {
+          x: data2.block.x + (data2.block.x == Math.abs(data2.block.x) ? -faceLocX : faceLocX),
+          y: (blockFace == Direction2.Up ? 1 : 0) + data2.block.y + (data2.block.y == Math.abs(data2.block.y) ? -faceLocY : faceLocY),
+          z: data2.block.z + (data2.block.z == Math.abs(data2.block.z) ? -faceLocZ : faceLocZ)
+        };
+        player.dimension.spawnEntity(component.entity, vec3);
         if (player.getGameMode() == GameMode5.Creative)
           return;
         if (amount <= 1) {
-          equippableComponent?.setEquipment(EquipmentSlot8.Mainhand, new ItemStack8(MinecraftBlockTypes.Air, 1));
+          equippableComponent?.setEquipment(EquipmentSlot8.Mainhand, void 0);
           return;
         }
         equippableComponent?.setEquipment(EquipmentSlot8.Mainhand, new ItemStack8(data2.itemStack.typeId, amount - 1));
@@ -10226,6 +10322,7 @@ system4.beforeEvents.startup.subscribe((data) => {
       }
     }
   );
+  data.itemComponentRegistry.registerCustomComponent("poke_pfe:upgradeable", new PFEUpgradeableComponent());
   data.itemComponentRegistry.registerCustomComponent("poke_pfe:box_mining", new PFEBoxMiningComponent());
   data.itemComponentRegistry.registerCustomComponent("poke_pfe:quests", new PFEQuestComponent());
   data.itemComponentRegistry.registerCustomComponent("poke_pfe:waypoint_menu", new PFEWaypointComponent());
@@ -10317,6 +10414,11 @@ system4.afterEvents.scriptEventReceive.subscribe((data) => {
       const currentQuests = JSON.parse(world10.getDynamicProperty(PFECustomCraftQuestsPropertyID).toString()) ?? [];
       let newQuests = currentQuests.concat(JSON.parse(data.message).value) ?? currentQuests;
       world10.setDynamicProperty(PFECustomCraftQuestsPropertyID, JSON.stringify(newQuests));
+    }
+    case `poke:test`: {
+      let item = data.sourceEntity?.getComponent(EntityComponentTypes8.Equippable)?.getEquipment(EquipmentSlot8.Mainhand);
+      item?.setDynamicProperty(`poke:ammo`, JSON.stringify({ v: 2, max: 32, amount: 12, entityId: "poke:galaxy_arrow", id: "poke:galaxy_arrow", upgrades: [{ id: "pfe:capacity", level: 1, maxLevel: void 0 }, { id: "pfe:flaming", level: 0, maxLevel: 1 }] }));
+      data.sourceEntity?.getComponent(EntityComponentTypes8.Equippable)?.setEquipment(EquipmentSlot8.Mainhand, item);
     }
     default:
       break;

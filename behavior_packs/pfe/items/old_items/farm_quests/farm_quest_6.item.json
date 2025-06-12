@@ -9,15 +9,11 @@
 				"value": "%poke_pfe.farm_quest 6\n§7%poke_pfe.questDesc\n%poke_pfe.tag"
 			},
 			"minecraft:icon": "poke_farm_quest",
-			 
-			"poke:normalMining": {},
-			"minecraft:use_modifiers": {
-				"use_duration": 0,
-				"movement_modifier": 1
-			},
-			"minecraft:cooldown": {
-				"category": "poke:quest",
-				"duration": 0.75
+			"minecraft:tags": {
+				"tags": [
+					"pfe:is_deprecated",
+					"pfe:old_farm_quest"
+				]
 			}
 		}
 	}

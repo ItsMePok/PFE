@@ -13,10 +13,13 @@
 				"value": "%poke_pfe.spawn_the_logger\n%poke_pfe.tag"
 			},
 			"minecraft:icon": "poke_logger_spawn_egg",
-			"poke:cc_spawnEgg": {},
+			"poke_pfe:spawn_entity": {
+				"entity": "poke:the_logger"
+			},
 			"minecraft:tags": {
 				"tags": [
-					"poke:the_logger"
+					"minecraft:spawn_egg",
+					"pfe:is_survival_spawn_egg"
 				]
 			}
 		}

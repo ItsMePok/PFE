@@ -12,10 +12,13 @@
 				"value": "%poke_pfe.wither_spawner\n%poke_pfe.tag"
 			},
 			"minecraft:icon": "poke_wither_spawner",
-			"poke:cc_spawnEgg": {},
+			"poke_pfe:spawn_entity": {
+				"entity": "minecraft:wither"
+			},
 			"minecraft:tags": {
 				"tags": [
-					"minecraft:wither"
+					"minecraft:spawn_egg",
+					"pfe:is_survival_spawn_egg"
 				]
 			},
 			"minecraft:durability": {

@@ -19,7 +19,7 @@
 			"minecraft:allow_off_hand": true,
 			"minecraft:cooldown": {
 				"category": "poke:windzooka",
-				"duration": 0.5
+				"duration": 1.25
 			},
 			"minecraft:use_modifiers": {
 				"use_duration": 0,

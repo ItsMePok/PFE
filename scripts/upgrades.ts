@@ -7,34 +7,57 @@ export {
   PokeUpgradeUI,
   PFEPersistenceCoreDefault,
   PFEFlamingCoreDefault,
-  PFECapacityCoreDefault
+  PFECapacityCoreDefault,
+  PFEUpgradeableComponentInfo,
+  PFEUpgradeableComponent,
+  ParsePFEUpgradeComponent
 }
 type PFEUpgradeableComponentInfo = {
-  upgrade_ids: string[] | ["pfe:persistence"] | "custom",
-  dynamic_property: string | "pfe:upgrades"
+  version: number | 1
+  upgrade_ids?: string[] | ["pfe:persistence"] | "custom",
+  dynamic_property?: string | "pfe:upgrades",
+  sneak_interact_opens_ui?: boolean | false
 }
 class PFEUpgradeableComponent {
   onUse(data: ItemComponentUseEvent, componentInfo: CustomComponentParameters) {
-
     const component = <PFEUpgradeableComponentInfo>componentInfo.params
     if (!data.itemStack) return
-    let upgrades: PFEItemUpgradeInfo[] = []
-    const customUpgrades = <PFEItemUpgradeInfo[] | undefined>data.itemStack.getComponent('poke_pfe:custom_upgrades')
-    const defaultUpgrades = [PFECapacityCoreDefault, PFEFlamingCoreDefault, PFEPersistenceCoreDefault]
-    let allUpgrades = customUpgrades ? defaultUpgrades.concat(customUpgrades) : defaultUpgrades
-    for (let upgrade_id of component.upgrade_ids) {
-      const validUpgrade: PFEItemUpgradeInfo | undefined = PokeGetObjectById(allUpgrades, upgrade_id)?.value
-      if (validUpgrade) upgrades.push(validUpgrade)
+    if (component.sneak_interact_opens_ui) {
+      const parsedUpgradeInfo = ParsePFEUpgradeComponent(data.itemStack, data.source, component)
+      PokeUpgradeUI(data.source, data.itemStack, parsedUpgradeInfo, undefined, true)
     }
-    if (upgrades.length < 1) upgrades.push(PFEPersistenceCoreDefault)
-    let parsedUpgradeInfo: PokeUpgradeUIConfig = {
-      dynamicProperty: component.dynamic_property ?? "pfe:upgrades",
-      id: "poke_pfe:upgradable_component",
-      v: 1,
-      upgrades: upgrades
-    }
-    PokeUpgradeUI(data.source, data.itemStack, parsedUpgradeInfo, undefined, true)
   }
+}
+function ParsePFEUpgradeComponent(item: ItemStack, player: Player, component: PFEUpgradeableComponentInfo) {
+  let upgrades: PFEItemUpgradeInfo[] = []
+  const customUpgrades = <PFEItemUpgradeInfo[] | undefined>item.getComponent('poke_pfe:custom_upgrades')
+  const defaultUpgrades = [PFECapacityCoreDefault, PFEFlamingCoreDefault, PFEPersistenceCoreDefault]
+  let allUpgrades = customUpgrades ? defaultUpgrades.concat(customUpgrades) : defaultUpgrades
+  const compressedUpgrades = <PokeUpgradeUIConfig>JSON.parse(item.getDynamicProperty(component.dynamic_property ?? "pfe:upgrades")?.toString() ?? JSON.stringify([]))
+  console.warn(JSON.stringify(compressedUpgrades))
+  if (component.upgrade_ids) {
+    for (let upgrade_id of component?.upgrade_ids) {
+      const validUpgrade: PFEItemUpgradeInfo | undefined = PokeGetObjectById(allUpgrades, upgrade_id)?.value
+      const compressedUpgrade = compressedUpgrades.upgrades.filter(compressedUpgrade => compressedUpgrade.id == validUpgrade?.id).at(0)
+      if (validUpgrade) {
+        if (compressedUpgrade) validUpgrade.level += compressedUpgrade.level
+        upgrades.push(validUpgrade)
+      }
+    }
+  }
+  if (upgrades.length < 1) {
+    let persistenceUpgrade = PFEPersistenceCoreDefault
+    persistenceUpgrade.level += compressedUpgrades.upgrades.filter(compressedUpgrade => compressedUpgrade?.id == PFEPersistenceCoreDefault.id).at(0)?.level ?? 0
+    upgrades.push(persistenceUpgrade)
+  }
+  let parsedUpgradeInfo: PokeUpgradeUIConfig = {
+    dynamicProperty: component.dynamic_property ?? "pfe:upgrades",
+    id: "poke_pfe:upgradable_component",
+    v: 1,
+    upgrades: upgrades,
+    compressedUpgrades: JSON.parse(item.getDynamicProperty(component.dynamic_property ?? "pfe:upgrades")?.toString() ?? "[]") ?? undefined
+  }
+  return parsedUpgradeInfo
 }
 interface PFEItemUpgradeInfo {
   id: string // name of the upgrade
@@ -53,10 +76,19 @@ interface PokeUpgradeUIConfig {
   v: number,
   upgrades: PFEItemUpgradeInfo[],
   id: string,
-  dynamicProperty: string
+  dynamicProperty: string,
+  compressedUpgrades?: compressedPFEUpgradeInfo[]
+}
+type compressedPFEUpgradeInfo = {
+  id: string,
+  level: number
+}
+type compressedPFEItemUpgradeInfo = {
+  upgrades: compressedPFEUpgradeInfo[]
 }
 function PokeUpgradeUI(player: Player, item: ItemStack, config: PokeUpgradeUIConfig, backTo?: any, compressedSave?: boolean, component?: PFEUpgradeableComponentInfo) {
   let UI = new ActionFormData()
+
   for (let upgrade of config.upgrades) {
     const upgradeCost = (
       (upgrade.maxLevel) ? (upgrade.maxLevel <= upgrade.level) ? Infinity
@@ -67,7 +99,7 @@ function PokeUpgradeUI(player: Player, item: ItemStack, config: PokeUpgradeUICon
     )
     UI.button(
       { translate: `%translation.poke.Upgrade ${upgrade.upgradeName ?? upgrade.upgradeItem} [%translation.poke.level:${upgrade.level}]\n%translation.poke.cost: ${upgradeCost} ${upgrade.upgradeItemName ?? item.typeId}` },
-      (upgradeCost && PokeGetItemFromInventory(player, undefined, upgrade.upgradeItem)) ? upgrade.icon?.default : upgrade.icon?.cantUpgrade ?? upgrade.icon?.default ?? `textures/poke/common/upgrade`
+      player.getGameMode() == GameMode.Creative || (upgradeCost && PokeGetItemFromInventory(player, undefined, upgrade.upgradeItem)) ? upgrade.icon?.default : upgrade.icon?.cantUpgrade ?? upgrade.icon?.default ?? `textures/poke/common/upgrade`
     )
   }
   UI.title({ translate: `translation.poke:ammoUIUpgradeTitle`, with: [item.nameTag ?? `%poke_pfe.${item.typeId.replace(`poke:`, ``).replace(`poke_pfe:`, ``)}`] })
@@ -76,13 +108,7 @@ function PokeUpgradeUI(player: Player, item: ItemStack, config: PokeUpgradeUICon
     let selection = 0
     for (let upgrade of config.upgrades) {
       if (response.selection == selection) {
-        type compressedPFEUpgradeInfo = {
-          id: string,
-          level: number
-        }
-        type compressedPFEItemUpgradeInfo = {
-          upgrades: compressedPFEUpgradeInfo[]
-        }
+
         const HasItem = player.getGameMode() == GameMode.Creative ? true : (Number(PokeGetItemFromInventory(player, undefined, upgrade.upgradeItem)?.length) + 0)
         const dynamicProperty = item.getDynamicProperty(config.dynamicProperty)
         const currentCompressed = compressedSave ? typeof dynamicProperty == "string" ? <compressedPFEItemUpgradeInfo>JSON.parse(dynamicProperty) : undefined : undefined
@@ -301,10 +327,4 @@ const PFECapacityCoreDefault: PFEItemUpgradeInfo = {
   upgradeAdditive: true,
   level: 1,
   maxLevel: undefined
-}
-
-class PFEUpgradableComponent {
-  onUse(data: ItemComponentUseEvent, component: CustomComponentParameters) {
-    const componentInfo = component.params
-  }
 }

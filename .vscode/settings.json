@@ -29,6 +29,45 @@
               "components": {
                 "type": "object",
                 "properties": {
+                  "poke_pfe:upgradeable": {
+                    "type": "object",
+                    "properties": {
+                      "version": {
+                        "type": "number",
+                        "default": 1
+                      },
+                      "upgrade_ids": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "pfe:persistence",
+                            "pfe:capacity",
+                            "pfe:flaming"
+                          ]
+                        }
+                      },
+                      "dynamic_property": {
+                        "type": "string",
+                        "default": "pfe:upgrades",
+                      },
+                      "sneak_interact_opens_ui": {
+                        "type": "boolean",
+                        "default": false
+                      }
+                    }
+                  },
+                  "poke_pfe:spawn_entity": {
+                    "type": "object",
+                    "properties": {
+                      "entity": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "entity"
+                    ]
+                  },
                   "poke_pfe:box_mining": {
                     "title": "Box Mining (PFE)",
                     "type": "object",

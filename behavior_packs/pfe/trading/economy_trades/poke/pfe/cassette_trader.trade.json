@@ -11,14 +11,29 @@
                 {
                   "item": "poke:gold_token",
                   "quantity": {
-                    "max": 5,
-                    "min": 2
+                    "min": 2,
+                    "max": 5
                   }
                 }
               ],
               "gives": [
                 {
                   "choice": [
+                    {
+                      "item": "poke_pfe:cassette_below_and_above"
+                    },
+                    {
+                      "item": "poke_pfe:cassette_broken_clocks"
+                    },
+                    {
+                      "item": "poke_pfe:cassette_fireflies"
+                    },
+                    {
+                      "item": "poke_pfe:cassette_lilypad"
+                    },
+                    {
+                      "item": "poke_pfe:cassette_os_piano"
+                    },
                     {
                       "item": "poke:empty_cassette"
                     },
@@ -219,14 +234,29 @@
                 {
                   "item": "poke:gold_token",
                   "quantity": {
-                    "max": 5,
-                    "min": 2
+                    "min": 2,
+                    "max": 5
                   }
                 }
               ],
               "gives": [
                 {
                   "choice": [
+                    {
+                      "item": "poke_pfe:cassette_below_and_above"
+                    },
+                    {
+                      "item": "poke_pfe:cassette_broken_clocks"
+                    },
+                    {
+                      "item": "poke_pfe:cassette_fireflies"
+                    },
+                    {
+                      "item": "poke_pfe:cassette_lilypad"
+                    },
+                    {
+                      "item": "poke_pfe:cassette_os_piano"
+                    },
                     {
                       "item": "poke:empty_cassette"
                     },
@@ -427,14 +457,29 @@
                 {
                   "item": "poke:gold_token",
                   "quantity": {
-                    "max": 5,
-                    "min": 2
+                    "min": 2,
+                    "max": 5
                   }
                 }
               ],
               "gives": [
                 {
                   "choice": [
+                    {
+                      "item": "poke_pfe:cassette_below_and_above"
+                    },
+                    {
+                      "item": "poke_pfe:cassette_broken_clocks"
+                    },
+                    {
+                      "item": "poke_pfe:cassette_fireflies"
+                    },
+                    {
+                      "item": "poke_pfe:cassette_lilypad"
+                    },
+                    {
+                      "item": "poke_pfe:cassette_os_piano"
+                    },
                     {
                       "item": "poke:empty_cassette"
                     },
@@ -635,14 +680,29 @@
                 {
                   "item": "poke:gold_token",
                   "quantity": {
-                    "max": 5,
-                    "min": 2
+                    "min": 2,
+                    "max": 5
                   }
                 }
               ],
               "gives": [
                 {
                   "choice": [
+                    {
+                      "item": "poke_pfe:cassette_below_and_above"
+                    },
+                    {
+                      "item": "poke_pfe:cassette_broken_clocks"
+                    },
+                    {
+                      "item": "poke_pfe:cassette_fireflies"
+                    },
+                    {
+                      "item": "poke_pfe:cassette_lilypad"
+                    },
+                    {
+                      "item": "poke_pfe:cassette_os_piano"
+                    },
                     {
                       "item": "poke:empty_cassette"
                     },
@@ -843,14 +903,29 @@
                 {
                   "item": "poke:gold_token",
                   "quantity": {
-                    "max": 5,
-                    "min": 2
+                    "min": 2,
+                    "max": 5
                   }
                 }
               ],
               "gives": [
                 {
                   "choice": [
+                    {
+                      "item": "poke_pfe:cassette_below_and_above"
+                    },
+                    {
+                      "item": "poke_pfe:cassette_broken_clocks"
+                    },
+                    {
+                      "item": "poke_pfe:cassette_fireflies"
+                    },
+                    {
+                      "item": "poke_pfe:cassette_lilypad"
+                    },
+                    {
+                      "item": "poke_pfe:cassette_os_piano"
+                    },
                     {
                       "item": "poke:empty_cassette"
                     },

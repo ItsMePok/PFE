@@ -13,10 +13,13 @@
 				"value": "%poke_pfe.spawn_dragon\n%poke_pfe.tag"
 			},
 			"minecraft:icon": "poke_sparky_spawn_egg",
-			"poke:cc_spawnEgg": {},
+			"poke_pfe:spawn_entity": {
+				"entity": "poke:dragon"
+			},
 			"minecraft:tags": {
 				"tags": [
-					"poke:dragon"
+					"minecraft:spawn_egg",
+					"pfe:is_survival_spawn_egg"
 				]
 			}
 		}

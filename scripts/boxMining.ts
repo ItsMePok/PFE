@@ -4,6 +4,7 @@ import { ActionFormData, ModalFormData } from "@minecraft/server-ui";
 import { PokeDamageItemUB, PokeSaveProperty } from "./commonFunctions";
 import ComputersCompat from "./addonCompatibility/jigarbov";
 import { clampNumber } from "@minecraft/math";
+import { ParsePFEUpgradeComponent, PFEUpgradeableComponentInfo, PokeUpgradeUI } from "./upgrades";
 const PFEHaxelVersion: number = 3
 const PFEHaxelInfoProperty = `pfe:haxelInfo`
 interface PFEHaxelConfig {
@@ -98,27 +99,39 @@ function* PFEMine(BannedBlocks: string[], component: BoxMiningComponentInfo, loc
 }
 
 function PFEHaxelConfigMenu(data: ItemComponentUseEvent, component: BoxMiningComponentInfo, dynamicProperty: PFEHaxelConfig) {
-
-
+  if (!data.itemStack) return;
   let Ui = new ActionFormData()
     .title({ translate: `translation.poke:haxelConfig.mainMenu.title`, with: { rawtext: [{ translate: data.itemStack?.nameTag ?? `poke_pfe.${data.itemStack?.typeId}`.replace(`poke:haxel`, `onyx_haxel`).replace(`poke:`, ``) }] } })
     .button({ translate: `translation.poke:haxelConfig.mainMenu.blacklistAdd` }, `textures/poke/common/blacklist_add`)
   if (dynamicProperty.blacklist.length >= 1) {
     Ui.button({ translate: `translation.poke:haxelConfig.mainMenu.blacklistRemove` }, `textures/poke/common/blacklist_remove`)
   }
+  const UpgradeableComponent = <PFEUpgradeableComponentInfo | undefined>data.itemStack.getComponent("poke_pfe:upgradeable")?.customComponentParameters.params
+  if (UpgradeableComponent?.version) {
+    Ui.button({ translate: `translation.poke:ammoUIUpgrade` }, `textures/poke/common/upgrade`)
+  }
 
   Ui.show(data.source).then((response => {
-    if (response.canceled) return;
+    let selection = 0
     //Add Block to Blacklist
-    if (response.selection == 0) {
+    if (response.selection == selection) {
       PFEHaxelConfigBlackListAdd(data, component, dynamicProperty)
       return
-    }
+    } else selection++
     //Remove Block from Blacklist
-    if (response.selection == 1) {
+    if (response.selection == selection) {
       PFEHaxelConfigBlackListRemove(data, component, dynamicProperty)
       return
+    } else selection++
+    //Upgrade Item
+    if (UpgradeableComponent?.version) {
+      if (response.selection == selection) {
+        if (!data.itemStack) return;
+        PokeUpgradeUI(data.source, data.itemStack, ParsePFEUpgradeComponent(data.itemStack, data.source, UpgradeableComponent), PFEHaxelConfigMenu(data, component, dynamicProperty), true, UpgradeableComponent)
+        return
+      } else selection++
     }
+    if (response.canceled || selection == response.selection) return;
   }))
 }
 function PFEHaxelConfigBlackListAdd(data: ItemComponentUseEvent, component: BoxMiningComponentInfo, dynamicProperty: PFEHaxelConfig) {

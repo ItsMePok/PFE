@@ -1,0 +1,27 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:item": {
+    "description": {
+      "identifier": "poke_pfe:cassette_os_piano"
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "%poke_pfe.cassette\n§7Amos Roddy - %poke_pfe.os_piano\n%poke_pfe.tag"
+      },
+      "minecraft:rarity": "common",
+      "minecraft:icon": {
+        "textures": {
+          "default": "poke_pfe_cassette_os_piano"
+        }
+      },
+      "poke_pfe:play_music": {
+        "music": "poke_pfe.music.os_piano"
+      },
+      "minecraft:tags": {
+        "tags": [
+          "pfe:is_cassette"
+        ]
+      }
+    }
+  }
+}

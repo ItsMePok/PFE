@@ -5,13 +5,6 @@
 			"identifier": "poke:barometer",
 			"menu_category": {
 				"category": "items"
-			},
-			"states": {
-				"pfe:weather": [
-					0,
-					1,
-					2
-				]
 			}
 		},
 		"components": {

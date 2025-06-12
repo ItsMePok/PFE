@@ -50,7 +50,7 @@ function PokeDamageItem(item: ItemStack) {
  * 
  * if ```entity``` is player & in creative it will never take durability
  */
-function PokeDamageItemUB(item: ItemStack, multiplier: undefined | number, entity: Entity | Player, slot?: EquipmentSlot) {
+function PokeDamageItemUB(item: ItemStack, multiplier: undefined | number, entity: Entity | Player, slot?: EquipmentSlot, preventBreaking?: boolean) {
   let durabilityComponent = item.getComponent(ItemComponentTypes.Durability)
   const equippableComponent = entity.getComponent(EntityComponentTypes.Equippable)
   // Check if the item does not have a durability component to avoid deleting itself
@@ -58,6 +58,9 @@ function PokeDamageItemUB(item: ItemStack, multiplier: undefined | number, entit
     // We set a dynamic property to ensure that holding will continue to trigger regardless if unbreaking takes effect
     item.isStackable ? undefined : PokeSaveProperty(`poke:holdFix`, item, Math.round(Math.random() * 100), entity, slot)
     return { tookDurability: false, failed: true, broke: false }
+  }
+  if (preventBreaking && durabilityComponent?.maxDurability == (durabilityComponent.damage + 1)) {
+    return { tookDurability: false, failed: true, broke: false, prevented: true }
   }
   if (!equippableComponent) return { tookDurability: false, failed: true, broke: false }
   const enchantableComponent = item.getComponent(ItemComponentTypes.Enchantable)

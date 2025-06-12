@@ -1,4 +1,4 @@
-import { EntityComponentTypes, EntityEquippableComponent, EntityProjectileComponent, EquipmentSlot, GameMode, ItemComponentTypes, ItemComponentUseEvent, ItemCooldownComponent, ItemStack, Player } from "@minecraft/server";
+import { EntityComponentTypes, EntityEquippableComponent, EntityProjectileComponent, EquipmentSlot, GameMode, ItemComponentTypes, ItemComponentUseEvent, ItemCooldownComponent, ItemStack, PlatformType, Player } from "@minecraft/server";
 import { ActionFormData } from "@minecraft/server-ui";
 import { PokeDamageItemUB, PokeErrorScreen, PokeGetItemFromInventory, PokeGetObjectById, PokeSaveProperty } from "./commonFunctions";
 import { MinecraftEntityTypes, MinecraftItemTypes } from "@minecraft/vanilla-data";
@@ -7,6 +7,7 @@ import { PFECapacityCoreDefault, PFEFlamingCoreDefault, PFEItemUpgradeInfo, PFEP
 export {
   PFEBoltBowsComponent
 }
+
 const PFEBoltBowDynamicPropertyID = `poke_pfe:boltbow`
 const PFEBoltBowVersion = 3
 interface PFEBoltBowInfo {
@@ -52,6 +53,9 @@ class PFEBoltBowsComponent {
     if (typeof data.itemStack.getDynamicProperty(PFEBoltBowDynamicPropertyID) != "string") {
       PokeSaveProperty(PFEBoltBowDynamicPropertyID, data.itemStack, JSON.stringify(PFEBoltBowDefault), data.source)
     } else ammoComponent = JSON.parse(data.itemStack.getDynamicProperty(PFEBoltBowDynamicPropertyID)!.toString())
+    if (typeof data.itemStack.getDynamicProperty(`poke:ammo`) == "string") {
+      UpdateBoltbowV2toV3(data.source, data.itemStack)
+    }
     if (!ammoComponent.v || ammoComponent.v <= 2) {
       let newProperty: PFEItemUpgradeInfo[] = []
       for (let upgrade of ammoComponent.upgrades) {
@@ -70,6 +74,7 @@ class PFEBoltBowsComponent {
       if (!(ammoComponent.upgrades.filter(upgrade => upgrade.id == PFEPersistenceCoreDefault.id).length == 1)) newProperty.concat([PFEPersistenceCoreDefault])
       ammoComponent.upgrades = newProperty
       PokeSaveProperty(PFEBoltBowDynamicPropertyID, data.itemStack, JSON.stringify(ammoComponent), data.source)
+
     }
     const cPlayers = data.source.dimension.getPlayers({ excludeNames: ['' + data.source.name] })
     for (var i = cPlayers.length; i > 0; i--) {
@@ -87,10 +92,6 @@ class PFEBoltBowsComponent {
       if (!equippableComponent) return;
       if ((equippableComponent.getEquipmentSlot(EquipmentSlot.Mainhand).getItem()?.typeId != data.itemStack?.typeId) || (equippableComponent.getEquipmentSlot(EquipmentSlot.Mainhand).getDynamicProperty(PFEBoltBowDynamicPropertyID) != JSON.stringify(ammoComponent))) return
       PokeShoot(data.source, ammoComponent, data.itemStack, delay)
-      data.source.setDynamicProperty(`poke:isUsingItem`, true)
-      /*system.runTimeout(()=>{
-        
-      },delay)*/
     } else {
       data.source.dimension.playSound(`poke_pfe.boltbow.noAmmo`, data.source.location)
     }
@@ -350,118 +351,49 @@ function PFEQuickReload(ammoComponent: PFEBoltBowInfo, item: ItemStack, player: 
   player.runCommand(`clear @s ${ammoComponent.projectile.id} -1 ${takeAmount}`)
   return
 }
-/*
-function PFEAmmoUpgrade(player: Player, item: ItemStack) {
-  let UI = new ActionFormData()
-  let ammoComponent: PFEBoltBowInfo = JSON.parse(item.getDynamicProperty(PFEBoltBowDynamicPropertyID)!.toString()).at(0)
-  UI.title({ translate: `translation.poke:ammoUIUpgradeTitle`, with: { rawtext: [{ translate: `poke_pfe.${item.typeId.substring(5)}` }] } })
-  let capacityUpgrade = PokeGetObjectById(ammoComponent.upgrades, `pfe:capacity`)
-  let flamingUpgrade = PokeGetObjectById(ammoComponent.upgrades, `pfe:flaming`)
-  console.warn(JSON.stringify(ammoComponent))
-  if (!capacityUpgrade) {
-    PokeErrorScreen(player, { text: `Cannot find upgrade data for the Capacity Upgrade` }, PFEAmmoManagementMainMenuUI(item, player))
-    return
+
+function UpdateBoltbowV2toV3(player: Player, item: ItemStack) {
+  type OldBoltBowInfo = {
+    id: string
+    entityId: string
+    amount: number
+    max: number | undefined
+    upgrades: PFEItemUpgradeInfo[]
+    v: 2 | 1 | undefined
   }
-  if (!flamingUpgrade) {
-    let newProperty: PFEBoltBowInfo = [{
-      v: PFEBoltBowVersion,
-      amount: ammoComponent.amount,
-      max: ammoComponent.max,
-      entityId: ammoComponent.entityId,
-      id: ammoComponent.id,
-      upgrades: ammoComponent.upgrades.concat([PokeGetObjectById(PFEBoltBowDefault.at(0)!.upgrades, `pfe:flaming`)?.value])
-    }]
-    console.warn(JSON.stringify(newProperty))
-    PokeSaveProperty(PFEBoltBowDynamicPropertyID, item, JSON.stringify(newProperty), player)
-    ammoComponent = newProperty.at(0)!
-    flamingUpgrade = PokeGetObjectById(PFEBoltBowDefault.at(0)!.upgrades, `pfe:flaming`)
-    if (!flamingUpgrade) {
-      PokeErrorScreen(player, { text: `Cannot find upgrade data for the Flaming Upgrade` }, PFEAmmoManagementMainMenuUI(item, player))
-      return
+  const unparsedOldInfo = <string | undefined>item.getDynamicProperty(`poke:ammo`)
+  const oldInfo: OldBoltBowInfo | undefined = unparsedOldInfo ? JSON.parse(unparsedOldInfo) ?? undefined : undefined
+  const unparsedNewInfo = <string | undefined>item.getDynamicProperty(PFEBoltBowDynamicPropertyID)
+  let newInfo: PFEBoltBowInfo = unparsedNewInfo ? JSON.parse(unparsedNewInfo) ?? PFEBoltBowDefault : PFEBoltBowDefault
+  let updatedUpgrades = []
+  if (oldInfo) {
+    PokeGetObjectById(newInfo.upgrades, PFECapacityCoreDefault.id)
+    const CapacityLevel = PokeGetObjectById(oldInfo.upgrades, "pfe:capacity")?.value.level
+    const FlamingLevel = PokeGetObjectById(oldInfo.upgrades, "pfe:flaming")?.value.level
+    for (let upgrade of newInfo.upgrades) {
+      if (upgrade.id == PFECapacityCoreDefault.id) { upgrade.level = CapacityLevel; continue }
+      if (upgrade.id == PFEFlamingCoreDefault.id) upgrade.level = FlamingLevel
+      updatedUpgrades.push(upgrade)
     }
   }
-  let canUpgradeCapacity = false
-  if (player.getGameMode() == GameMode.creative || PokeGetItemFromInventory(player, undefined, `poke:capacity_core`)) {
-    UI.button({ translate: `translation.poke:ammoUpgrade`, with: { rawtext: [{ translate: `translation.poke_pfe.capacity` }, { text: `${capacityUpgrade.value.level}` }, { text: `${capacityUpgrade.value.level}` }, { translate: `item.poke:capacity_core` }] } }, `textures/poke/pfe/capacity_core`)
-    canUpgradeCapacity = true
-  } else {
-    UI.button({ translate: `translation.poke:ammoUpgrade`, with: { rawtext: [{ translate: `translation.poke_pfe.capacity` }, { text: `${capacityUpgrade.value.level}` }, { text: `${capacityUpgrade.value.level}` }, { translate: `item.poke:capacity_core` }] } }, `textures/poke/pfe/capacity_core_gs`)
+  let savingInfo: PFEBoltBowInfo = {
+    v: 3,
+    dynamicProperty: newInfo.dynamicProperty,
+    id: 'poke_pfe:boltbow',
+    projectile: {
+      id: oldInfo?.id ?? newInfo.projectile.id,
+      amount: oldInfo?.amount ?? newInfo.projectile.amount,
+      entityId: oldInfo?.entityId ?? newInfo.projectile.entityId,
+      max: oldInfo?.max
+    },
+    upgrades: updatedUpgrades
   }
-  let canUpgradeFlaming = false
-  if ((player.getGameMode() == GameMode.creative || (PokeGetItemFromInventory(player, undefined, `poke_pfe:flaming_core`))) && (flamingUpgrade.value.level < 1)) {
-    UI.button({ translate: `translation.poke:ammoUpgrade`, with: { rawtext: [{ translate: `translation.poke_pfe.flaming` }, { text: `${flamingUpgrade.value.level}` }, { text: `${flamingUpgrade.value.level}` }, { translate: `poke_pfe.flaming_core` }] } }, `textures/poke/pfe/flaming_core`)
-    canUpgradeFlaming = true
-  } else {
-    UI.button({ translate: `translation.poke:ammoUpgrade`, with: { rawtext: [{ translate: `translation.poke_pfe.flaming` }, { text: `${flamingUpgrade.value.level}` }, { text: `${flamingUpgrade.value.level}` }, { translate: `poke_pfe.flaming_core` }] } }, `textures/poke/pfe/flaming_core_gs`)
-  }
-  UI.button({ translate: `translation.poke:goBack` }, `textures/poke/common/left_arrow`)
-  UI.show(player).then(response => {
-    let selection = 0
-    if (response.selection == selection) {//Capacity
-      if (!canUpgradeCapacity) {
-        PokeErrorScreen(player, { text: `Unable to upgrade Capacity` }, PFEAmmoManagementMainMenuUI(item, player))
-        return
-      }
-      let newCapacity: PFEItemUpgradeInfo = {
-        id: capacityUpgrade.value.id,
-        level: capacityUpgrade.value.level + 1,
-        maxLevel: capacityUpgrade.value.maxLevel,
-        icon: capacityUpgrade.value.icon,
-        upgradeAdditive: capacityUpgrade.value.upgradeAdditive,
-        upgradeItem: capacityUpgrade.value.upgradeItem,
-        upgradeItemName: capacityUpgrade.value.upgradeItemName,
-        upgradeName: capacityUpgrade.value.upgradeName
-      }
-      let newProperty: PFEBoltBowInfo = [{
-        v: PFEBoltBowVersion,
-        amount: ammoComponent.amount,
-        max: Number(ammoComponent.max) + 16,
-        entityId: ammoComponent.entityId,
-        id: ammoComponent.id,
-        upgrades: ammoComponent.upgrades.filter((upgrade) => upgrade.id != `pfe:capacity`).concat(newCapacity)
-      }]
-      if (!PokeSaveProperty(PFEBoltBowDynamicPropertyID, item, JSON.stringify(newProperty), player)) {
-        PokeErrorScreen(player, { text: `Unable to save capacity upgrade` }, PFEAmmoManagementAddAmmoUI(item, player))
-        return
-      }
-      player.runCommand(`clear @s poke:capacity_core -1 ${capacityUpgrade.value.level}`)
-      return
-    } else selection++;
-    if (response.selection == selection) {//Flaming
-      if (!canUpgradeFlaming) {
-        PokeErrorScreen(player, { text: `Unable to upgrade flaming` }, PFEAmmoManagementMainMenuUI(item, player))
-        return
-      }
-      let newFlaming: PFEItemUpgradeInfo = {
-        id: flamingUpgrade.value.id,
-        level: flamingUpgrade.value.level + 1,
-        maxLevel: flamingUpgrade.value.maxLevel,
-        icon: flamingUpgrade.value.icon,
-        upgradeAdditive: flamingUpgrade.value.upgradeAdditive,
-        upgradeItem: flamingUpgrade.value.upgradeItem,
-        upgradeItemName: flamingUpgrade.value.upgradeItemName,
-        upgradeName: flamingUpgrade.value.upgradeName
-      }
-      console.warn(JSON.stringify(ammoComponent.upgrades.filter((upgrade) => upgrade.id != `pfe:flaming`)))
-      let newProperty: PFEBoltBowInfo = [{
-        v: PFEBoltBowVersion,
-        amount: ammoComponent.amount,
-        max: ammoComponent.max,
-        entityId: ammoComponent.entityId,
-        id: ammoComponent.id,
-        upgrades: ammoComponent.upgrades.filter((upgrade) => upgrade.id != `pfe:flaming`).concat(newFlaming)
-      }]
-      console.warn(JSON.stringify(newProperty))
-      if (!PokeSaveProperty(PFEBoltBowDynamicPropertyID, item, JSON.stringify(newProperty), player)) {
-        PokeErrorScreen(player, { text: `Unable to save flaming upgrade` }, PFEAmmoManagementAddAmmoUI(item, player))
-        return
-      }
-      player.runCommand(`clear @s poke_pfe:flaming_core -1 1`)
-      return
-    } else selection++;
-    if (response.canceled || response.selection == selection) {
-      PFEAmmoManagementMainMenuUI(item, player)
-      return
-    }
-  })
-}*/
+  const validUpgradeIds = [
+    PFECapacityCoreDefault.id,
+    PFEFlamingCoreDefault.id,
+    PFEPersistenceCoreDefault.id
+  ]
+  savingInfo.upgrades = newInfo.upgrades
+  PokeSaveProperty(PFEBoltBowDynamicPropertyID, item, JSON.stringify(savingInfo), player)
+  item.setDynamicProperty("poke:ammo", undefined)
+}

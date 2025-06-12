@@ -1,0 +1,26 @@
+{
+	"format_version": "1.21.90",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "poke:upgrade_craft_quest"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"group": "old_item",
+		"priority": 9,
+		"unlock": [
+			{
+				"tag": "pfe:old_craft_quest"
+			}
+		],
+		"ingredients": [
+			{
+				"tag": "pfe:old_craft_quest"
+			}
+		],
+		"result": {
+			"item": "poke:craft_quest"
+		}
+	}
+}

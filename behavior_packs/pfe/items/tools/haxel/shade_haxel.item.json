@@ -50,6 +50,9 @@
 				"category": "poke:haxel",
 				"duration": 0.3
 			},
+			"poke_pfe:upgradeable": {
+				"version": 1
+			},
 			"minecraft:repairable": {
 				"repair_items": [
 					{
@@ -84,9 +87,9 @@
 				"destroy_speeds": [
 					{
 						"block": {
-							"tags": "query.any_tag('minecraft:is_hoe_item_destructible','minecraft:is_shovel_item_destructible','minecraft:is_axe_item_destructible','minecraft:is_pickaxe_item_destructible','dirt', 'pfe', 'sand', 'gravel', 'grass', 'snow', 'wood', 'pumpkin', 'plant', 'stone', 'metal', 'rail', 'text_sign', 'diamond_pick_diggable')"
+							"tags": "q.any_tag('minecraft:is_shovel_item_destructible','minecraft:is_axe_item_destructible','minecraft:is_hoe_item_destructible','minecraft:is_pickaxe_item_destructible') &&  !query.any_tag('minecraft:netherite_tier_destructible')"
 						},
-						"speed": 20
+						"speed": 12
 					}
 				]
 			}

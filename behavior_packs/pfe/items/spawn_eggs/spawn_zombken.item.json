@@ -14,10 +14,13 @@
 			},
 			"minecraft:max_stack_size": 64,
 			"minecraft:icon": "poke_zombken_spawn_egg",
-			"poke:cc_spawnEgg": {},
+			"poke_pfe:spawn_entity": {
+				"entity": "poke:zombken"
+			},
 			"minecraft:tags": {
 				"tags": [
-					"poke:zombken"
+					"minecraft:spawn_egg",
+					"pfe:is_survival_spawn_egg"
 				]
 			}
 		}

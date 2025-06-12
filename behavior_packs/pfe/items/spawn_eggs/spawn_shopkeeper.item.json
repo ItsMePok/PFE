@@ -13,10 +13,13 @@
 				"value": "%poke_pfe.spawn_shopkeeper\n%poke_pfe.tag"
 			},
 			"minecraft:icon": "poke_shopkeeper_spawn_egg",
-			"poke:cc_spawnEgg": {},
+			"poke_pfe:spawn_entity": {
+				"entity": "poke:shopkeeper"
+			},
 			"minecraft:tags": {
 				"tags": [
-					"poke:shopkeeper"
+					"minecraft:spawn_egg",
+					"pfe:is_survival_spawn_egg"
 				]
 			}
 		}

@@ -14,10 +14,13 @@
 			},
 			"minecraft:max_stack_size": 64,
 			"minecraft:icon": "poke_knightling_spawn_egg",
-			"poke:cc_spawnEgg": {},
+			"poke_pfe:spawn_entity": {
+				"entity": "poke:knightling"
+			},
 			"minecraft:tags": {
 				"tags": [
-					"poke:knightling"
+					"pfe:is_survival_spawn_egg",
+					"minecraft:spawn_egg"
 				]
 			}
 		}
