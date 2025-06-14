@@ -2,7 +2,7 @@
 
 ## What Addons are have [PFE integration](#user-content-fn-1)[^1]
 
-#### Papercraft Mob Stickers
+### Papercraft Mob Stickers
 
 * When this Add-On is on a world with PFE you can obtain stickers of every mob in PFE
 
@@ -10,7 +10,7 @@
 Even if this Add-On is not installed you can still get them in creative&#x20;
 {% endhint %}
 
-#### Computers Add-On
+### Computers Add-On
 
 * When this Add-On is on a world with PFE you can see stats on various things from PFE
 
@@ -18,12 +18,16 @@ Even if this Add-On is not installed you can still get them in creative&#x20;
 Even if this Add-On is not installed these stats will be saved in scoreboard
 {% endhint %}
 
-#### Novelty API
+### Novelty API
 
 * When this Add-On is on a world with PFE you can put various items in the Accessories Menu's slots
 * Items with equip / set effects in these slots will also provide their effect contributions
 
+### Just Cosmetics
 
+* When this Add-On is on a world with PFE:
+  * The Listener will drop the PFE Listener Hoodie
+  * You can craft&#x20;
 
 ## What can be integrated into from PFE
 
