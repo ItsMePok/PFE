@@ -2,23 +2,23 @@
 	"format_version": "1.21.90",
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "poke:nebula_nugget"
+			"identifier": "poke:radium_nugget"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:nebula_ingot"
+				"item": "poke:radium_ingot"
 			}
 		],
 		"ingredients": [
 			{
-				"item": "poke:nebula_ingot"
+				"item": "poke:radium_ingot"
 			}
 		],
 		"result": {
-			"item": "poke:nebula_nugget",
+			"item": "poke:radium_nugget",
 			"count": 9
 		},
 		"group": "nuggets"

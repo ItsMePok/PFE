@@ -41,8 +41,6 @@ function PFEDisableConfigMainMenu(data: ItemComponentUseEvent) {
   const enabled = `§a\n%translation.poke_pfe.enabled`
   const disabled = `§c\n%translation.poke_pfe.disabled`
   UI.button({ translate: `%poke_pfe.quantum_teleporter:${options.quantumTeleporter ? enabled : disabled}` }, `textures/poke/pfe/quantum_teleporter`)
-  //UI.button({ translate: `%translation.poke_pfe.death_armor_radius:${options.deathArmorRadius ? enabled : disabled}` }, `textures/poke/pfe/death_helmet`)
-  //UI.button({ translate: `%translation.poke_pfe.cactus_armor_radius:${options.cactusArmorRadius ? enabled : disabled}` }, `textures/poke/pfe/cactus_helmet`)
   UI.button({ translate: `%poke_pfe.kapow_ring:${options.kapowRing ? enabled : disabled}` }, `textures/poke/pfe/kapow_ring`)
   UI.button({ translate: `%poke_pfe.nuke_ring:${options.nukeRing ? enabled : disabled}` }, `textures/poke/pfe/nuke_ring`)
   UI.button({ translate: `%poke_pfe.sundial:${options.sundial ? enabled : disabled}` }, `textures/poke/pfe/sundial_1`)
@@ -50,7 +48,9 @@ function PFEDisableConfigMainMenu(data: ItemComponentUseEvent) {
   UI.button({ translate: `%poke_pfe.bounty:${options.bounty ? enabled : disabled}` }, `textures/poke/pfe/bounty`)
   UI.button({ translate: `%translation.poke_pfe.WaypointUITitle:${options.waypoints ? enabled : disabled}` }, `textures/poke/pfe/waypoint_menu`)
   UI.button({ translate: `%poke_pfe.set_effects:${world.getDynamicProperty(`poke_pfe:disable_armor_effects`) == true ? disabled : enabled}` }, `textures/poke/common/effect_particles`)
-
+  UI.button({ translate: `%translation.poke_pfe.death_armor_radius:${options.deathArmorRadius ? enabled : disabled}` }, `textures/poke/pfe/death_helmet`)
+  UI.button({ translate: `%translation.poke_pfe.cactus_armor_radius:${options.cactusArmorRadius ? enabled : disabled}` }, `textures/poke/pfe/cactus_helmet`)
+  UI.button({ translate: `translation.poke:goBack` }, `textures/poke/common/left_arrow`)
   UI.show(data.source).then(response => {
     let selection = 0
     let newProperty = options
@@ -63,28 +63,10 @@ function PFEDisableConfigMainMenu(data: ItemComponentUseEvent) {
       PFEDisableConfigMainMenu(data)
       return
     } else selection++
-    /* if (response.selection == selection){// Death Armor's Radius Effects
-       if (newProperty.deathArmorRadius){
-         newProperty.deathArmorRadius = false
-         console.warn(`Disabled Death Armor's Radius Effects`)
-       }else newProperty.deathArmorRadius = true
-       world.setDynamicProperty(PFEDisableConfigName,JSON.stringify(newProperty))
-       PFEDisableConfigMainMenu(data)
-       return
-     }else selection++
-     if (response.selection == selection){// Cactus Armor's Radius Effects
-       if (newProperty.cactusArmorRadius){
-         newProperty.cactusArmorRadius = false
-         console.warn(`Disabled Cactus Armor's Radius Effects`)
-       }else newProperty.cactusArmorRadius = true
-       world.setDynamicProperty(PFEDisableConfigName,JSON.stringify(newProperty))
-       PFEDisableConfigMainMenu(data)
-       return
-     }else selection++*/
     if (response.selection == selection) {// Kapow Ring
       if (newProperty.kapowRing) {
         newProperty.kapowRing = false
-        console.warn(`Disabled Kapow Ring`)
+        console.info(`Disabled Kapow Ring`)
       } else newProperty.kapowRing = true
       world.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty))
       PFEDisableConfigMainMenu(data)
@@ -93,7 +75,7 @@ function PFEDisableConfigMainMenu(data: ItemComponentUseEvent) {
     if (response.selection == selection) {// Nuke Ring
       if (newProperty.nukeRing) {
         newProperty.nukeRing = false
-        console.warn(`Disabled Nuke Ring`)
+        console.info(`Disabled Nuke Ring`)
       } else newProperty.nukeRing = true
       world.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty))
       PFEDisableConfigMainMenu(data)
@@ -102,7 +84,7 @@ function PFEDisableConfigMainMenu(data: ItemComponentUseEvent) {
     if (response.selection == selection) {// Sundial
       if (newProperty.sundial) {
         newProperty.sundial = false
-        console.warn(`Disabled Sundial`)
+        console.info(`Disabled Sundial`)
       } else newProperty.sundial = true
       world.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty))
       PFEDisableConfigMainMenu(data)
@@ -128,7 +110,6 @@ function PFEDisableConfigMainMenu(data: ItemComponentUseEvent) {
     } else selection++
     if (response.selection == selection) {// Waypoint Menu
       if (newProperty.waypoints) {
-
         newProperty.waypoints = false
         console.warn(`Disabled Waypoint Menu`)
       } else newProperty.waypoints = true
@@ -139,6 +120,24 @@ function PFEDisableConfigMainMenu(data: ItemComponentUseEvent) {
     } else selection++
     if (response.selection == selection) {// Armor effects
       world.getDynamicProperty(`poke_pfe:disable_armor_effects`) == false ? world.setDynamicProperty(`poke_pfe:disable_armor_effects`, true) : world.setDynamicProperty(`poke_pfe:disable_armor_effects`, false)
+      PFEDisableConfigMainMenu(data)
+      return
+    } else selection++
+    if (response.selection == selection) {// Death Armor's Radius Effects
+      if (newProperty.deathArmorRadius) {
+        newProperty.deathArmorRadius = false
+        console.info(`Disabled Death Armor's Radius Effects`)
+      } else newProperty.deathArmorRadius = true
+      world.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty))
+      PFEDisableConfigMainMenu(data)
+      return
+    } else selection++
+    if (response.selection == selection) {// Cactus Armor's Radius Effects
+      if (newProperty.cactusArmorRadius) {
+        newProperty.cactusArmorRadius = false
+        console.info(`Disabled Cactus Armor's Radius Effects`)
+      } else newProperty.cactusArmorRadius = true
+      world.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty))
       PFEDisableConfigMainMenu(data)
       return
     } else selection++

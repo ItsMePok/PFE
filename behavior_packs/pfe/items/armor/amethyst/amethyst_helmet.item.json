@@ -37,21 +37,31 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core"
+							"poke:repair_core",
+							"minecraft:amethyst_block"
 						],
 						"repair_amount": "query.max_durability"
 					},
 					{
 						"items": [
-							"amethyst_shard"
+							"minecraft:amethyst_shard"
 						],
 						"repair_amount": "query.max_durability*0.25"
 					}
 				]
 			},
+			"poke_pfe:set_effects": [
+				{
+					"effect": "minecraft:regeneration",
+					"max_amp": 1
+				},
+				{
+					"effect": "minecraft:haste",
+					"max_amp": 1
+				}
+			],
 			"minecraft:tags": {
 				"tags": [
-					"poke_pfe:amethyst_armor_effects",
 					"novelty:is_hat",
 					"minecraft:trimmable_armors",
 					"minecraft:is_armor"

@@ -1,5 +1,5 @@
 // scripts/main.ts
-import { system as system4, world as world10, EquipmentSlot as EquipmentSlot8, GameMode as GameMode5, EntityComponentTypes as EntityComponentTypes8, ItemComponentTypes as ItemComponentTypes4, ItemStack as ItemStack8, Direction as Direction2 } from "@minecraft/server";
+import { system as system5, world as world10, EquipmentSlot as EquipmentSlot8, GameMode as GameMode5, EntityComponentTypes as EntityComponentTypes8, ItemComponentTypes as ItemComponentTypes4, ItemStack as ItemStack8, Direction as Direction2 } from "@minecraft/server";
 
 // node_modules/@minecraft/vanilla-data/lib/index.js
 var MinecraftBiomeTypes = ((MinecraftBiomeTypes2) => {
@@ -3526,6 +3526,14 @@ function PokeClosestCardinal(vector, directions) {
 // scripts/upgrades.ts
 import { ActionFormData as ActionFormData3 } from "@minecraft/server-ui";
 import { EntityComponentTypes as EntityComponentTypes2, EquipmentSlot as EquipmentSlot2, GameMode as GameMode2 } from "@minecraft/server";
+var PFEUpgradeableId = "poke_pfe:upgradeable";
+var PFEUpgrades = class {
+  constructor() {
+    this.persistence = PFEPersistenceCoreDefault;
+    this.flaming = PFEFlamingCoreDefault;
+    this.capacity = PFECapacityCoreDefault;
+  }
+};
 var PFEUpgradeableComponent = class {
   onUse(data, componentInfo) {
     const component = componentInfo.params;
@@ -3540,14 +3548,15 @@ var PFEUpgradeableComponent = class {
 function ParsePFEUpgradeComponent(item, player, component) {
   let upgrades = [];
   const customUpgrades = item.getComponent("poke_pfe:custom_upgrades");
-  const defaultUpgrades = [PFECapacityCoreDefault, PFEFlamingCoreDefault, PFEPersistenceCoreDefault];
+  const PFEUpgrade = new PFEUpgrades();
+  const defaultUpgrades = [PFEUpgrade.persistence, PFEUpgrade.capacity, PFEUpgrade.flaming];
   let allUpgrades = customUpgrades ? defaultUpgrades.concat(customUpgrades) : defaultUpgrades;
   const compressedUpgrades = JSON.parse(item.getDynamicProperty(component.dynamic_property ?? "pfe:upgrades")?.toString() ?? JSON.stringify([]));
   console.warn(JSON.stringify(compressedUpgrades));
   if (component.upgrade_ids) {
     for (let upgrade_id of component?.upgrade_ids) {
       const validUpgrade = PokeGetObjectById(allUpgrades, upgrade_id)?.value;
-      const compressedUpgrade = compressedUpgrades.upgrades.filter((compressedUpgrade2) => compressedUpgrade2.id == validUpgrade?.id).at(0);
+      const compressedUpgrade = compressedUpgrades?.upgrades ? compressedUpgrades?.upgrades.filter((compressedUpgrade2) => compressedUpgrade2.id == validUpgrade?.id)?.at(0) ?? void 0 : void 0;
       if (validUpgrade) {
         if (compressedUpgrade)
           validUpgrade.level += compressedUpgrade.level;
@@ -3557,7 +3566,7 @@ function ParsePFEUpgradeComponent(item, player, component) {
   }
   if (upgrades.length < 1) {
     let persistenceUpgrade = PFEPersistenceCoreDefault;
-    persistenceUpgrade.level += compressedUpgrades.upgrades.filter((compressedUpgrade) => compressedUpgrade?.id == PFEPersistenceCoreDefault.id).at(0)?.level ?? 0;
+    persistenceUpgrade.level += compressedUpgrades?.upgrades ? compressedUpgrades.upgrades.filter((compressedUpgrade) => compressedUpgrade?.id == PFEPersistenceCoreDefault.id).at(0)?.level ?? 0 : 0;
     upgrades.push(persistenceUpgrade);
   }
   let parsedUpgradeInfo = {
@@ -3571,8 +3580,10 @@ function ParsePFEUpgradeComponent(item, player, component) {
 }
 function PokeUpgradeUI(player, item, config, backTo, compressedSave, component) {
   let UI = new ActionFormData3();
+  console.warn(JSON.stringify(config));
+  UI.button({ translate: `translation.poke:goBack` }, `textures/poke/common/left_arrow`);
   for (let upgrade of config.upgrades) {
-    const upgradeCost = upgrade.maxLevel ? upgrade.maxLevel <= upgrade.level ? Infinity : upgrade.upgradeAdditive ? upgrade.level + 1 : 1 : upgrade.upgradeAdditive ? upgrade.level + 1 : 1;
+    const upgradeCost = upgrade.maxLevel ? upgrade.maxLevel <= upgrade.level ? Infinity : upgrade.upgradeAdditive ? Number(upgrade.level) + 1 : 1 : upgrade.upgradeAdditive ? Number(upgrade.level) + 1 : 1;
     UI.button(
       { translate: `%translation.poke.Upgrade ${upgrade.upgradeName ?? upgrade.upgradeItem} [%translation.poke.level:${upgrade.level}]
 %translation.poke.cost: ${upgradeCost} ${upgrade.upgradeItemName ?? item.typeId}` },
@@ -3582,12 +3593,17 @@ function PokeUpgradeUI(player, item, config, backTo, compressedSave, component) 
   UI.title({ translate: `translation.poke:ammoUIUpgradeTitle`, with: [item.nameTag ?? `%poke_pfe.${item.typeId.replace(`poke:`, ``).replace(`poke_pfe:`, ``)}`] });
   UI.show(player).then((response) => {
     let selection = 0;
+    if (response.canceled || response.selection == selection) {
+      backTo;
+      return;
+    } else
+      selection++;
     for (let upgrade of config.upgrades) {
       if (response.selection == selection) {
-        const HasItem = player.getGameMode() == GameMode2.Creative ? true : Number(PokeGetItemFromInventory(player, void 0, upgrade.upgradeItem)?.length) + 0;
+        const HasItem = player.getGameMode() == GameMode2.Creative ? true : PokeGetItemFromInventory(player, void 0, upgrade.upgradeItem)?.length ?? 0;
         const dynamicProperty = item.getDynamicProperty(config.dynamicProperty);
         const currentCompressed = compressedSave ? typeof dynamicProperty == "string" ? JSON.parse(dynamicProperty) : void 0 : void 0;
-        const upgradeCost = upgrade.maxLevel ? upgrade.maxLevel <= upgrade.level ? Infinity : upgrade.upgradeAdditive ? upgrade.level + 1 : 1 : upgrade.upgradeAdditive ? upgrade.level + 1 : 1;
+        const upgradeCost = upgrade.maxLevel ? upgrade.maxLevel <= upgrade.level ? Infinity : upgrade.upgradeAdditive ? Number(upgrade.level) + 1 : 1 : upgrade.upgradeAdditive ? Number(upgrade.level) + 1 : 1;
         console.warn(upgradeCost);
         if (HasItem && upgradeCost != Infinity) {
           if (upgrade.id == PFEPersistenceCoreDefault.id)
@@ -3598,7 +3614,7 @@ function PokeUpgradeUI(player, item, config, backTo, compressedSave, component) 
               [
                 {
                   id: upgrade.id,
-                  level: (thisCompressedUpgrade?.level ?? upgrade.level) + 1
+                  level: (thisCompressedUpgrade?.level ?? upgrade.level) + upgradeCost === Infinity ? 0 : 1
                 }
               ]
             ) : []
@@ -3623,10 +3639,6 @@ function PokeUpgradeUI(player, item, config, backTo, compressedSave, component) 
       } else
         selection++;
       continue;
-    }
-    if (response.canceled || response.selection == selection) {
-      backTo;
-      return;
     }
   });
 }
@@ -5017,6 +5029,9 @@ function PokeTimeDeleteEvent(player, event) {
 // scripts/boltbow.ts
 import { EntityComponentTypes as EntityComponentTypes4, EquipmentSlot as EquipmentSlot4, GameMode as GameMode4, ItemComponentTypes as ItemComponentTypes3 } from "@minecraft/server";
 import { ActionFormData as ActionFormData6 } from "@minecraft/server-ui";
+var CapacityUpgradeDefault = new PFEUpgrades().capacity;
+var FlamingUpgradeDefault = new PFEUpgrades().flaming;
+var PersistenceUpgradeDefault = new PFEUpgrades().persistence;
 var PFEBoltBowDynamicPropertyID = `poke_pfe:boltbow`;
 var PFEBoltBowVersion = 3;
 var PFEBoltBowDefault = {
@@ -5030,9 +5045,9 @@ var PFEBoltBowDefault = {
     id: MinecraftItemTypes.Arrow
   },
   upgrades: [
-    PFECapacityCoreDefault,
-    PFEFlamingCoreDefault,
-    PFEPersistenceCoreDefault
+    CapacityUpgradeDefault,
+    FlamingUpgradeDefault,
+    PersistenceUpgradeDefault
   ]
 };
 var PFEBoltBowsComponent = class {
@@ -5055,7 +5070,7 @@ var PFEBoltBowsComponent = class {
     if (!ammoComponent.v || ammoComponent.v <= 2) {
       let newProperty = [];
       for (let upgrade of ammoComponent.upgrades) {
-        let upgradeDefault = upgrade.id == PFEFlamingCoreDefault.id ? PFEFlamingCoreDefault : upgrade.id == PFECapacityCoreDefault.id ? PFECapacityCoreDefault : upgrade.id == PFEPersistenceCoreDefault.id ? PFEPersistenceCoreDefault : void 0;
+        let upgradeDefault = upgrade.id == FlamingUpgradeDefault.id ? FlamingUpgradeDefault : upgrade.id == CapacityUpgradeDefault.id ? CapacityUpgradeDefault : upgrade.id == PersistenceUpgradeDefault.id ? PersistenceUpgradeDefault : void 0;
         newProperty.concat([{
           id: upgrade.id,
           level: upgrade.level + 1,
@@ -5067,8 +5082,8 @@ var PFEBoltBowsComponent = class {
           upgradeName: upgrade.upgradeName ?? upgradeDefault?.upgradeName
         }]);
       }
-      if (!(ammoComponent.upgrades.filter((upgrade) => upgrade.id == PFEPersistenceCoreDefault.id).length == 1))
-        newProperty.concat([PFEPersistenceCoreDefault]);
+      if (!(ammoComponent.upgrades.filter((upgrade) => upgrade.id == PersistenceUpgradeDefault.id).length == 1))
+        newProperty.concat([PersistenceUpgradeDefault]);
       ammoComponent.upgrades = newProperty;
       PokeSaveProperty(PFEBoltBowDynamicPropertyID, data.itemStack, JSON.stringify(ammoComponent), data.source);
     }
@@ -5123,7 +5138,7 @@ function PFEAmmoManagementMainMenuUI(item, player) {
     PokeSaveProperty(PFEBoltBowDynamicPropertyID, item, JSON.stringify(PFEBoltBowDefault), player);
   }
   let boltBowComponent = JSON.parse(item.getDynamicProperty(PFEBoltBowDynamicPropertyID).toString());
-  UI.button({ translate: `translation.poke:ammoUIQuickReload`, with: { rawtext: [{ text: `${boltBowComponent.projectile.amount}` }, { text: `${(boltBowComponent.upgrades.filter((upgrade) => upgrade.id == PFECapacityCoreDefault.id).at(0)?.level ?? 1) * 16}` }] } }, `textures/poke/common/ammoQuickReload`);
+  UI.button({ translate: `translation.poke:ammoUIQuickReload`, with: { rawtext: [{ text: `${boltBowComponent.projectile.amount}` }, { text: `${(boltBowComponent.upgrades.filter((upgrade) => upgrade.id == CapacityUpgradeDefault.id).at(0)?.level ?? 1) * 16}` }] } }, `textures/poke/common/ammoQuickReload`);
   UI.button({ translate: `translation.poke:ammoUIAddAmmo` }, `textures/poke/common/ammoReload`);
   UI.button({ translate: `translation.poke:ammoUIUpgrade` }, `textures/poke/common/upgrade`);
   UI.button({ translate: `translation.poke:bossEventClose` }, `textures/poke/common/close`);
@@ -5140,7 +5155,7 @@ function PFEAmmoManagementMainMenuUI(item, player) {
     } else
       selection++;
     if (response.selection == selection) {
-      PokeUpgradeUI(player, item, boltBowComponent, PFEAmmoManagementMainMenuUI(item, player));
+      PokeUpgradeUI(player, item, boltBowComponent, PFEAmmoManagementMainMenuUI(item, player), false, item.getComponent(PFEUpgradeableId)?.customComponentParameters.params ?? void 0);
       return;
     } else
       selection++;
@@ -5347,15 +5362,15 @@ function UpdateBoltbowV2toV3(player, item) {
   let newInfo = unparsedNewInfo ? JSON.parse(unparsedNewInfo) ?? PFEBoltBowDefault : PFEBoltBowDefault;
   let updatedUpgrades = [];
   if (oldInfo) {
-    PokeGetObjectById(newInfo.upgrades, PFECapacityCoreDefault.id);
+    PokeGetObjectById(newInfo.upgrades, CapacityUpgradeDefault.id);
     const CapacityLevel = PokeGetObjectById(oldInfo.upgrades, "pfe:capacity")?.value.level;
     const FlamingLevel = PokeGetObjectById(oldInfo.upgrades, "pfe:flaming")?.value.level;
     for (let upgrade of newInfo.upgrades) {
-      if (upgrade.id == PFECapacityCoreDefault.id) {
+      if (upgrade.id == CapacityUpgradeDefault.id) {
         upgrade.level = CapacityLevel;
         continue;
       }
-      if (upgrade.id == PFEFlamingCoreDefault.id)
+      if (upgrade.id == FlamingUpgradeDefault.id)
         upgrade.level = FlamingLevel;
       updatedUpgrades.push(upgrade);
     }
@@ -5373,9 +5388,9 @@ function UpdateBoltbowV2toV3(player, item) {
     upgrades: updatedUpgrades
   };
   const validUpgradeIds = [
-    PFECapacityCoreDefault.id,
-    PFEFlamingCoreDefault.id,
-    PFEPersistenceCoreDefault.id
+    CapacityUpgradeDefault.id,
+    FlamingUpgradeDefault.id,
+    PersistenceUpgradeDefault.id
   ];
   savingInfo.upgrades = newInfo.upgrades;
   PokeSaveProperty(PFEBoltBowDynamicPropertyID, item, JSON.stringify(savingInfo), player);
@@ -5407,6 +5422,8 @@ function PFEDisableConfigMainMenu(data) {
   const disabled = `\xA7c
 %translation.poke_pfe.disabled`;
   UI.button({ translate: `%poke_pfe.quantum_teleporter:${options.quantumTeleporter ? enabled : disabled}` }, `textures/poke/pfe/quantum_teleporter`);
+  UI.button({ translate: `%translation.poke_pfe.death_armor_radius:${options.deathArmorRadius ? enabled : disabled}` }, `textures/poke/pfe/death_helmet`);
+  UI.button({ translate: `%translation.poke_pfe.cactus_armor_radius:${options.cactusArmorRadius ? enabled : disabled}` }, `textures/poke/pfe/cactus_helmet`);
   UI.button({ translate: `%poke_pfe.kapow_ring:${options.kapowRing ? enabled : disabled}` }, `textures/poke/pfe/kapow_ring`);
   UI.button({ translate: `%poke_pfe.nuke_ring:${options.nukeRing ? enabled : disabled}` }, `textures/poke/pfe/nuke_ring`);
   UI.button({ translate: `%poke_pfe.sundial:${options.sundial ? enabled : disabled}` }, `textures/poke/pfe/sundial_1`);
@@ -5414,6 +5431,7 @@ function PFEDisableConfigMainMenu(data) {
   UI.button({ translate: `%poke_pfe.bounty:${options.bounty ? enabled : disabled}` }, `textures/poke/pfe/bounty`);
   UI.button({ translate: `%translation.poke_pfe.WaypointUITitle:${options.waypoints ? enabled : disabled}` }, `textures/poke/pfe/waypoint_menu`);
   UI.button({ translate: `%poke_pfe.set_effects:${world6.getDynamicProperty(`poke_pfe:disable_armor_effects`) == true ? disabled : enabled}` }, `textures/poke/common/effect_particles`);
+  UI.button({ translate: `translation.poke:goBack` }, `textures/poke/common/left_arrow`);
   UI.show(data.source).then((response) => {
     let selection = 0;
     let newProperty = options;
@@ -5429,9 +5447,31 @@ function PFEDisableConfigMainMenu(data) {
     } else
       selection++;
     if (response.selection == selection) {
+      if (newProperty.deathArmorRadius) {
+        newProperty.deathArmorRadius = false;
+        console.info(`Disabled Death Armor's Radius Effects`);
+      } else
+        newProperty.deathArmorRadius = true;
+      world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
+      PFEDisableConfigMainMenu(data);
+      return;
+    } else
+      selection++;
+    if (response.selection == selection) {
+      if (newProperty.cactusArmorRadius) {
+        newProperty.cactusArmorRadius = false;
+        console.info(`Disabled Cactus Armor's Radius Effects`);
+      } else
+        newProperty.cactusArmorRadius = true;
+      world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
+      PFEDisableConfigMainMenu(data);
+      return;
+    } else
+      selection++;
+    if (response.selection == selection) {
       if (newProperty.kapowRing) {
         newProperty.kapowRing = false;
-        console.warn(`Disabled Kapow Ring`);
+        console.info(`Disabled Kapow Ring`);
       } else
         newProperty.kapowRing = true;
       world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
@@ -5442,7 +5482,7 @@ function PFEDisableConfigMainMenu(data) {
     if (response.selection == selection) {
       if (newProperty.nukeRing) {
         newProperty.nukeRing = false;
-        console.warn(`Disabled Nuke Ring`);
+        console.info(`Disabled Nuke Ring`);
       } else
         newProperty.nukeRing = true;
       world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
@@ -5453,7 +5493,7 @@ function PFEDisableConfigMainMenu(data) {
     if (response.selection == selection) {
       if (newProperty.sundial) {
         newProperty.sundial = false;
-        console.warn(`Disabled Sundial`);
+        console.info(`Disabled Sundial`);
       } else
         newProperty.sundial = true;
       world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
@@ -5508,7 +5548,7 @@ function PFEDisableConfigMainMenu(data) {
 }
 
 // scripts/main.ts
-import { ActionFormData as ActionFormData10 } from "@minecraft/server-ui";
+import { ActionFormData as ActionFormData10, ModalFormData as ModalFormData5 } from "@minecraft/server-ui";
 
 // node_modules/@minecraft/math/lib/general/clamp.js
 function clampNumber(val, min, max) {
@@ -5516,533 +5556,56 @@ function clampNumber(val, min, max) {
 }
 
 // scripts/armorEffects.ts
-import { EntityComponentTypes as EntityComponentTypes5, EquipmentSlot as EquipmentSlot5, ItemStack as ItemStack5, world as world7 } from "@minecraft/server";
-var ArmorEffectDuration = 500;
+import { EntityComponentTypes as EntityComponentTypes5, EquipmentSlot as EquipmentSlot5, ItemStack as ItemStack5, system as system4, world as world7 } from "@minecraft/server";
+var ArmorEffectDuration = 300;
+var SensitiveArmorEffectDuration = 500;
 var PFECustomArmorEffectDynamicProperty = `poke_pfe:custom_effects`;
-var PFEArmorEffectData = {
-  hellish: {
-    effects: [
-      {
-        effect: MinecraftEffectTypes.FireResistance,
-        maxAmp: 0
-      },
-      {
-        effect: MinecraftEffectTypes.Regeneration,
-        maxAmp: 2
-      },
-      {
-        effect: MinecraftEffectTypes.Resistance,
-        maxAmp: 1
-      }
-    ],
-    tag: `poke_pfe:hellish_armor_effects`
-  },
-  amethyst: {
-    effects: [
-      {
-        effect: MinecraftEffectTypes.Regeneration,
-        maxAmp: 1
-      },
-      {
-        effect: MinecraftEffectTypes.Haste,
-        maxAmp: 1
-      }
-    ],
-    tag: `poke_pfe:amethyst_armor_effects`
-  },
-  astral: {
-    effects: [
-      {
-        effect: MinecraftEffectTypes.Regeneration,
-        maxAmp: 3
-      },
-      {
-        effect: MinecraftEffectTypes.Resistance,
-        maxAmp: 3
-      },
-      {
-        effect: MinecraftEffectTypes.Speed,
-        maxAmp: 3
-      },
-      {
-        effect: MinecraftEffectTypes.WaterBreathing,
-        maxAmp: 0
-      },
-      {
-        effect: MinecraftEffectTypes.Haste,
-        maxAmp: 3
-      },
-      {
-        effect: MinecraftEffectTypes.HealthBoost,
-        maxAmp: 2
-      }
-    ],
-    tag: `poke_pfe:astral_armor_effects`
-  },
-  banished: {
-    effects: [
-      {
-        effect: MinecraftEffectTypes.Regeneration,
-        maxAmp: 2
-      },
-      {
-        effect: MinecraftEffectTypes.Resistance,
-        maxAmp: 3
-      },
-      {
-        effect: MinecraftEffectTypes.Slowness,
-        maxAmp: 1
-      },
-      {
-        effect: MinecraftEffectTypes.Haste,
-        maxAmp: 3
-      }
-    ],
-    tag: `poke_pfe:banished_armor_effects`
-  },
-  cactus: {
-    effects: [],
-    radiusEffect: {
-      type: "damage",
-      amountStep: 1,
-      maxAmount: 4,
-      maxRadius: 4,
-      radiusStep: 1
-    },
-    tag: `poke_pfe:cactus_armor_effects`
-  },
-  cobaltRobe: {
-    effects: [
-      {
-        effect: MinecraftEffectTypes.Strength,
-        maxAmp: 1
-      },
-      {
-        effect: MinecraftEffectTypes.ConduitPower,
-        maxAmp: 0
-      }
-    ],
-    tag: `poke_pfe:cobalt_robe_effects`
-  },
-  death: {
-    effects: [
-      {
-        effect: MinecraftEffectTypes.HealthBoost,
-        maxAmp: 3
-      },
-      {
-        effect: MinecraftEffectTypes.Resistance,
-        maxAmp: 2
-      },
-      {
-        effect: MinecraftEffectTypes.Regeneration,
-        maxAmp: 2
-      },
-      {
-        effect: MinecraftEffectTypes.FireResistance,
-        maxAmp: 0
-      }
-    ],
-    radiusEffect: {
-      type: "damage",
-      maxRadius: 10,
-      maxAmount: 15,
-      amountStep: 4,
-      radiusStep: 3
-    },
-    tag: `poke_pfe:death_armor_effects`
-  },
-  demonic: {
-    effects: [
-      {
-        effect: MinecraftEffectTypes.Strength,
-        maxAmp: 1
-      },
-      {
-        effect: MinecraftEffectTypes.Regeneration,
-        maxAmp: 2
-      },
-      {
-        effect: MinecraftEffectTypes.Resistance,
-        maxAmp: 1
-      },
-      {
-        effect: MinecraftEffectTypes.FireResistance,
-        maxAmp: 0
-      }
-    ],
-    tag: `poke_pfe:demonic_armor_effects`
-  },
-  emberRobe: {
-    effects: [
-      {
-        effect: MinecraftEffectTypes.Strength,
-        maxAmp: 1
-      },
-      {
-        effect: MinecraftEffectTypes.FireResistance,
-        maxAmp: 0
-      }
-    ],
-    tag: `poke_pfe:ember_robe_effects`
-  },
-  featherRobe: {
-    effects: [
-      {
-        effect: MinecraftEffectTypes.Strength,
-        maxAmp: 1
-      },
-      {
-        effect: MinecraftEffectTypes.SlowFalling,
-        maxAmp: 0
-      }
-    ],
-    tag: `poke_pfe:feather_robe_effects`
-  },
-  galaxy: {
-    effects: [
-      {
-        effect: MinecraftEffectTypes.Regeneration,
-        maxAmp: 3
-      },
-      {
-        effect: MinecraftEffectTypes.Resistance,
-        maxAmp: 2
-      },
-      {
-        effect: MinecraftEffectTypes.Speed,
-        maxAmp: 2
-      },
-      {
-        effect: MinecraftEffectTypes.Haste,
-        maxAmp: 2
-      },
-      {
-        effect: MinecraftEffectTypes.HealthBoost,
-        maxAmp: 0
-      }
-    ],
-    tag: `poke_pfe:galaxy_armor_effects`
-  },
-  gluttonyRobe: {
-    effects: [
-      {
-        effect: MinecraftEffectTypes.Strength,
-        maxAmp: 1
-      },
-      {
-        effect: MinecraftEffectTypes.Saturation,
-        maxAmp: 1
-      }
-    ],
-    tag: `poke_pfe:gluttony_robe_effects`
-  },
-  godly: {
-    effects: [
-      {
-        effect: MinecraftEffectTypes.Strength,
-        maxAmp: 1
-      },
-      {
-        effect: MinecraftEffectTypes.Regeneration,
-        maxAmp: 2
-      },
-      {
-        effect: MinecraftEffectTypes.Resistance,
-        maxAmp: 1
-      },
-      {
-        effect: MinecraftEffectTypes.Speed,
-        maxAmp: 1
-      },
-      {
-        effect: MinecraftEffectTypes.SlowFalling,
-        maxAmp: 0
-      }
-    ],
-    tag: `poke_pfe:godly_armor_effects`
-  },
-  hastedRobe: {
-    effects: [
-      {
-        effect: MinecraftEffectTypes.Strength,
-        maxAmp: 1
-      },
-      {
-        effect: MinecraftEffectTypes.Haste,
-        maxAmp: 1
-      }
-    ],
-    tag: `poke_pfe:hasted_robe_effects`
-  },
-  heroicRobe: {
-    effects: [
-      {
-        effect: MinecraftEffectTypes.Strength,
-        maxAmp: 1
-      },
-      {
-        effect: MinecraftEffectTypes.VillageHero,
-        maxAmp: 1
-      }
-    ],
-    tag: `poke_pfe:heroic_robe_effects`
-  },
-  holy: {
-    effects: [
-      {
-        effect: MinecraftEffectTypes.Regeneration,
-        maxAmp: 2
-      },
-      {
-        effect: MinecraftEffectTypes.Resistance,
-        maxAmp: 1
-      },
-      {
-        effect: MinecraftEffectTypes.Speed,
-        maxAmp: 1
-      }
-    ],
-    tag: `poke_pfe:holy_armor_effects`
-  },
-  medic: {
-    effects: [
-      {
-        effect: MinecraftEffectTypes.HealthBoost,
-        maxAmp: 3
-      },
-      {
-        effect: MinecraftEffectTypes.Resistance,
-        maxAmp: 1
-      },
-      {
-        effect: MinecraftEffectTypes.Speed,
-        maxAmp: 1
-      }
-    ],
-    radiusEffect: {
-      type: "heal",
-      maxAmount: 5,
-      maxRadius: 10,
-      amountStep: 2,
-      radiusStep: 3
-    },
-    tag: `poke_pfe:medic_armor_effects`
-  },
-  molten: {
-    effects: [
-      {
-        effect: MinecraftEffectTypes.Strength,
-        maxAmp: 1
-      },
-      {
-        effect: MinecraftEffectTypes.Regeneration,
-        maxAmp: 2
-      },
-      {
-        effect: MinecraftEffectTypes.Resistance,
-        maxAmp: 2
-      },
-      {
-        effect: MinecraftEffectTypes.FireResistance,
-        maxAmp: 0
-      }
-    ],
-    tag: `poke_pfe:molten_armor_effects`
-  },
-  nebula: {
-    effects: [
-      {
-        effect: MinecraftEffectTypes.Speed,
-        maxAmp: 3
-      },
-      {
-        effect: MinecraftEffectTypes.Regeneration,
-        maxAmp: 3
-      },
-      {
-        effect: MinecraftEffectTypes.Resistance,
-        maxAmp: 3
-      },
-      {
-        effect: MinecraftEffectTypes.Haste,
-        maxAmp: 3
-      },
-      {
-        effect: MinecraftEffectTypes.VillageHero,
-        maxAmp: 2
-      },
-      {
-        effect: MinecraftEffectTypes.FireResistance,
-        maxAmp: 0
-      },
-      {
-        effect: MinecraftEffectTypes.Strength,
-        maxAmp: 1
-      },
-      {
-        effect: MinecraftEffectTypes.WaterBreathing,
-        maxAmp: 0
-      },
-      {
-        effect: MinecraftEffectTypes.HealthBoost,
-        maxAmp: 3
-      }
-    ],
-    tag: `poke_pfe:nebula_armor_effects`
-  },
-  nightVision: {
-    effects: [
-      {
-        effect: MinecraftEffectTypes.NightVision,
-        maxAmp: 0
-      }
-    ],
-    tag: `poke_pfe:night_vision_effects`
-  },
-  onyx: {
-    effects: [
-      {
-        effect: MinecraftEffectTypes.Resistance,
-        maxAmp: 0
-      },
-      {
-        effect: MinecraftEffectTypes.Regeneration,
-        maxAmp: 1
-      }
-    ],
-    tag: `poke_pfe:onyx_armor_effects`
-  },
-  radium: {
-    effects: [
-      {
-        effect: MinecraftEffectTypes.Strength,
-        maxAmp: 2
-      },
-      {
-        effect: MinecraftEffectTypes.Regeneration,
-        maxAmp: 3
-      },
-      {
-        effect: MinecraftEffectTypes.Resistance,
-        maxAmp: 2
-      },
-      {
-        effect: MinecraftEffectTypes.Speed,
-        maxAmp: 2
-      }
-    ],
-    tag: `poke_pfe:radium_armor_effects`
-  },
-  shade: {
-    effects: [
-      {
-        effect: MinecraftEffectTypes.Strength,
-        maxAmp: 2
-      },
-      {
-        effect: MinecraftEffectTypes.Regeneration,
-        maxAmp: 2
-      },
-      {
-        effect: MinecraftEffectTypes.Resistance,
-        maxAmp: 2
-      },
-      {
-        effect: MinecraftEffectTypes.Slowness,
-        maxAmp: 2
-      }
-    ],
-    tag: `poke_pfe:shade_armor_effects`
-  },
-  shadowRobe: {
-    effects: [
-      {
-        effect: MinecraftEffectTypes.Strength,
-        maxAmp: 2
-        // Could get here with help from other sets
-      },
-      {
-        effect: MinecraftEffectTypes.NightVision,
-        maxAmp: 0
-      }
-    ],
-    tag: `poke_pfe:shadow_robe_effects`
-  },
-  speedBoots: {
-    effects: [
-      {
-        effect: MinecraftEffectTypes.Speed,
-        maxAmp: 3
-        // Could get here with help from other sets
-      }
-    ],
-    tag: `poke_pfe:speed_boots_effects`
-  },
-  springyRobe: {
-    effects: [
-      {
-        effect: MinecraftEffectTypes.Strength,
-        maxAmp: 1
-      },
-      {
-        effect: MinecraftEffectTypes.JumpBoost,
-        maxAmp: 1
-      }
-    ],
-    tag: `poke_pfe:springy_robe_effects`
-  },
-  swiftRobe: {
-    effects: [
-      {
-        effect: MinecraftEffectTypes.Strength,
-        maxAmp: 1
-      },
-      {
-        effect: MinecraftEffectTypes.Speed,
-        maxAmp: 3
-        // Could get here with help from other sets
-      }
-    ],
-    tag: `poke_pfe:swift_robe_effects`
-  },
-  void: {
-    effects: [
-      {
-        effect: MinecraftEffectTypes.Speed,
-        maxAmp: 1
-      },
-      {
-        effect: MinecraftEffectTypes.Resistance,
-        maxAmp: 1
-      },
-      {
-        effect: MinecraftEffectTypes.Regeneration,
-        maxAmp: 1
-      },
-      {
-        effect: MinecraftEffectTypes.FireResistance,
-        maxAmp: 0
-      }
-    ],
-    tag: `poke_pfe:void_armor_effects`
-  }
-};
-function CheckEffects(player, ArmorData, additionalOptions, customParse) {
-  const Helmet = player.getComponent(EntityComponentTypes5.Equippable)?.getEquipment(EquipmentSlot5.Head) ?? false;
-  const Chestplate = player.getComponent(EntityComponentTypes5.Equippable)?.getEquipment(EquipmentSlot5.Chest) ?? false;
-  const Leggings = player.getComponent(EntityComponentTypes5.Equippable)?.getEquipment(EquipmentSlot5.Legs) ?? false;
-  const Boots = player.getComponent(EntityComponentTypes5.Equippable)?.getEquipment(EquipmentSlot5.Feet) ?? false;
-  const Offhand = player.getComponent(EntityComponentTypes5.Equippable)?.getEquipment(EquipmentSlot5.Offhand) ?? false;
-  let totalPieces = -1;
+var PFESetEffectId = "poke_pfe:set_effects";
+function CheckEffects(player, additionalOptions, customParse) {
+  const Helmet = player.getComponent(EntityComponentTypes5.Equippable)?.getEquipment(EquipmentSlot5.Head) ?? void 0;
+  const Chestplate = player.getComponent(EntityComponentTypes5.Equippable)?.getEquipment(EquipmentSlot5.Chest) ?? void 0;
+  const Leggings = player.getComponent(EntityComponentTypes5.Equippable)?.getEquipment(EquipmentSlot5.Legs) ?? void 0;
+  const Boots = player.getComponent(EntityComponentTypes5.Equippable)?.getEquipment(EquipmentSlot5.Feet) ?? void 0;
+  const Offhand = player.getComponent(EntityComponentTypes5.Equippable)?.getEquipment(EquipmentSlot5.Offhand) ?? void 0;
+  const Mainhand = player.getComponent(EntityComponentTypes5.Equippable)?.getEquipment(EquipmentSlot5.Mainhand) ?? void 0;
+  const Equipment = [Helmet, Chestplate, Leggings, Boots, Offhand, Mainhand];
   let effects = [];
+  let radius_effects = [];
+  let commands = [];
+  const HelmetComponent = Helmet?.getComponent(PFESetEffectId)?.customComponentParameters.params;
+  const ChestplateComponent = Chestplate?.getComponent(PFESetEffectId)?.customComponentParameters.params;
+  const LeggingsComponent = Leggings?.getComponent(PFESetEffectId)?.customComponentParameters.params;
+  const BootsComponent = Boots?.getComponent(PFESetEffectId)?.customComponentParameters.params;
+  const OffhandComponent = Offhand?.getComponent(PFESetEffectId)?.customComponentParameters.params;
+  const MainhandComponent = Mainhand?.getComponent(PFESetEffectId)?.customComponentParameters.params;
+  const EquipmentComponents = [HelmetComponent, ChestplateComponent, LeggingsComponent, BootsComponent, OffhandComponent, MainhandComponent];
+  for (let component of EquipmentComponents) {
+    if (!component)
+      continue;
+    for (let effect of component) {
+      switch (effect.mode) {
+        case "radius_effect": {
+          radius_effects.push(effect);
+          break;
+        }
+        case "command": {
+          commands.push(effect);
+          break;
+        }
+        default: {
+          effects.push(effect);
+          break;
+        }
+      }
+    }
+  }
+  let totalPieces = -1;
   let totalStrength = 0;
   let totalSpeed = 0;
   let totalResistance = 0;
   let totalRegeneration = 0;
   let totalJumpBoost = 0;
   let totalSlowness = 0;
-  let totalHealthBoost = 0;
   let totalVillageHero = 0;
   let totalSaturation = 0;
   let totalHaste = 0;
@@ -6053,7 +5616,7 @@ function CheckEffects(player, ArmorData, additionalOptions, customParse) {
   let totalDarkness = 0;
   let totalFatalPoison = 0;
   let totalFireResistance = 0;
-  let HealthBoost = 0;
+  let totalHealthBoost = 0;
   let totalHunger = 0;
   let totalInfested = 0;
   let totalInstantDamage = 0;
@@ -6073,7 +5636,6 @@ function CheckEffects(player, ArmorData, additionalOptions, customParse) {
   let totalWeaving = 0;
   let totalWindCharged = 0;
   let totalWither = 0;
-  let radiusEffects = false;
   let customEffects = JSON.parse(world7.getDynamicProperty(PFECustomArmorEffectDynamicProperty).toString());
   if (additionalOptions) {
     const NoveltyTags = player.getTags().filter((tag) => tag.includes(`novelty:poke`));
@@ -6084,188 +5646,6 @@ function CheckEffects(player, ArmorData, additionalOptions, customParse) {
       const item = new ItemStack5(tag.substring(8), 1);
       totalPieces += 1;
       switch (true) {
-        case item.hasTag(ArmorData.amethyst.tag): {
-          effects = effects.concat(ArmorData.amethyst.effects);
-          totalRegeneration += 1;
-          totalHaste += 1;
-          break;
-        }
-        case item.hasTag(ArmorData.shade.tag): {
-          effects = effects.concat(ArmorData.shade.effects);
-          totalStrength += 1;
-          totalRegeneration += 1;
-          totalResistance += 1;
-          totalSlowness += 1;
-          break;
-        }
-        case item.hasTag(ArmorData.radium.tag): {
-          effects = effects.concat(ArmorData.radium.effects);
-          totalStrength += 1;
-          totalRegeneration += 1;
-          totalResistance += 1;
-          totalSpeed += 1;
-          break;
-        }
-        case item.hasTag(ArmorData.banished.tag): {
-          effects = effects.concat(ArmorData.banished.effects);
-          totalRegeneration += 1;
-          totalResistance += 1;
-          totalSlowness += 1;
-          totalHaste += 1;
-          break;
-        }
-        case item.hasTag(ArmorData.onyx.tag): {
-          effects = effects.concat(ArmorData.onyx.effects);
-          totalRegeneration += 1;
-          break;
-        }
-        case item.hasTag(ArmorData.holy.tag): {
-          effects = effects.concat(ArmorData.holy.effects);
-          totalRegeneration += 1;
-          totalResistance += 1;
-          totalSpeed += 1;
-          break;
-        }
-        case item.hasTag(ArmorData.hellish.tag): {
-          effects = effects.concat(ArmorData.hellish.effects);
-          totalRegeneration += 1;
-          totalResistance += 1;
-          break;
-        }
-        case item.hasTag(ArmorData.godly.tag): {
-          effects = effects.concat(ArmorData.godly.effects);
-          totalStrength += 1;
-          totalRegeneration += 1;
-          totalResistance += 1;
-          totalSpeed += 1;
-          break;
-        }
-        case item.hasTag(ArmorData.demonic.tag): {
-          effects = effects.concat(ArmorData.demonic.effects);
-          totalStrength += 1;
-          totalRegeneration += 1;
-          totalResistance += 1;
-          break;
-        }
-        case item.hasTag(ArmorData.medic.tag): {
-          effects = effects.concat(ArmorData.medic.effects);
-          totalHealthBoost += 1;
-          totalResistance += 1;
-          totalSpeed += 1;
-          break;
-        }
-        case item.hasTag(ArmorData.molten.tag): {
-          effects = effects.concat(ArmorData.molten.effects);
-          totalStrength += 1;
-          totalRegeneration += 1;
-          totalResistance += 1;
-          break;
-        }
-        case item.hasTag(ArmorData.galaxy.tag): {
-          effects = effects.concat(ArmorData.galaxy.effects);
-          totalRegeneration += 1;
-          totalResistance += 1;
-          totalSpeed += 1;
-          totalHaste += 1;
-          break;
-        }
-        case item.hasTag(ArmorData.void.tag): {
-          effects = effects.concat(ArmorData.void.effects);
-          totalSpeed += 1;
-          totalResistance += 1;
-          totalRegeneration += 1;
-          break;
-        }
-        case item.hasTag(ArmorData.astral.tag): {
-          effects = effects.concat(ArmorData.astral.effects);
-          totalRegeneration += 1;
-          totalResistance += 1;
-          totalSpeed += 1;
-          totalHaste += 1;
-          totalHealthBoost += 1;
-          break;
-        }
-        case item.hasTag(ArmorData.death.tag): {
-          effects = effects.concat(ArmorData.death.effects);
-          totalHealthBoost += 1;
-          totalResistance += 1;
-          totalRegeneration += 1;
-          break;
-        }
-        case item.hasTag(ArmorData.nebula.tag): {
-          effects = effects.concat(ArmorData.nebula.effects);
-          totalSpeed += 1;
-          totalRegeneration += 1;
-          totalResistance += 1;
-          totalHaste += 1;
-          totalVillageHero += 1;
-          totalStrength += 1;
-          totalHealthBoost += 1;
-          break;
-        }
-        case item.hasTag(ArmorData.cactus.tag): {
-          effects = effects.concat(ArmorData.cactus.effects);
-          break;
-        }
-        case item.hasTag(ArmorData.emberRobe.tag): {
-          effects = effects.concat(ArmorData.emberRobe.effects);
-          totalStrength += 1;
-          break;
-        }
-        case item.hasTag(ArmorData.hastedRobe.tag): {
-          effects = effects.concat(ArmorData.hastedRobe.effects);
-          totalStrength += 1;
-          totalHaste += 1;
-          break;
-        }
-        case item.hasTag(ArmorData.springyRobe.tag): {
-          effects = effects.concat(ArmorData.springyRobe.effects);
-          totalStrength += 1;
-          totalJumpBoost += 1;
-          break;
-        }
-        case item.hasTag(ArmorData.heroicRobe.tag): {
-          effects = effects.concat(ArmorData.heroicRobe.effects);
-          totalStrength += 1;
-          totalVillageHero += 1;
-          break;
-        }
-        case item.hasTag(ArmorData.cobaltRobe.tag): {
-          effects = effects.concat(ArmorData.cobaltRobe.effects);
-          totalStrength += 1;
-          break;
-        }
-        case item.hasTag(ArmorData.swiftRobe.tag): {
-          effects = effects.concat(ArmorData.swiftRobe.effects);
-          totalStrength += 1;
-          totalSpeed += 1;
-          break;
-        }
-        case item.hasTag(ArmorData.gluttonyRobe.tag): {
-          effects = effects.concat(ArmorData.gluttonyRobe.effects);
-          totalStrength += 1;
-          totalSaturation += 1;
-          break;
-        }
-        case item.hasTag(ArmorData.featherRobe.tag): {
-          effects = effects.concat(ArmorData.featherRobe.effects);
-          totalStrength += 1;
-          break;
-        }
-        case item.hasTag(ArmorData.shadowRobe.tag): {
-          effects = effects.concat(ArmorData.shadowRobe.effects);
-          totalStrength += 1;
-          break;
-        }
-        case item.hasTag(ArmorData.nightVision.tag): {
-          effects = effects.concat(ArmorData.nightVision.effects);
-          break;
-        }
-        case item.hasTag(ArmorData.speedBoots.tag): {
-          effects = effects.concat(ArmorData.speedBoots.effects);
-          totalSpeed += 1;
-          break;
-        }
         default:
           {
             let passed = false;
@@ -6279,160 +5659,10 @@ function CheckEffects(player, ArmorData, additionalOptions, customParse) {
                 if (item.hasTag(customEffect.tag)) {
                   effects = effects.concat(customEffect.effects);
                   passed = true;
-                  for (let effect of customEffect.effects) {
-                    switch (effect.effect) {
-                      case MinecraftEffectTypes.Absorption: {
-                        totalAbsorption += 1;
-                        break;
-                      }
-                      case MinecraftEffectTypes.BadOmen: {
-                        totalBadOmen += 1;
-                        break;
-                      }
-                      case MinecraftEffectTypes.Blindness: {
-                        totalBlindness += 1;
-                        break;
-                      }
-                      case MinecraftEffectTypes.ConduitPower: {
-                        totalConduitPower += 1;
-                        break;
-                      }
-                      case MinecraftEffectTypes.Darkness: {
-                        totalDarkness += 1;
-                        break;
-                      }
-                      case MinecraftEffectTypes.FatalPoison: {
-                        totalFatalPoison += 1;
-                        break;
-                      }
-                      case MinecraftEffectTypes.FireResistance: {
-                        totalFireResistance += 1;
-                        break;
-                      }
-                      case MinecraftEffectTypes.Haste: {
-                        totalHaste += 1;
-                        break;
-                      }
-                      case MinecraftEffectTypes.HealthBoost: {
-                        HealthBoost += 1;
-                        break;
-                      }
-                      case MinecraftEffectTypes.Hunger: {
-                        totalHunger += 1;
-                        break;
-                      }
-                      case MinecraftEffectTypes.Infested: {
-                        totalInfested += 1;
-                        break;
-                      }
-                      case MinecraftEffectTypes.InstantDamage: {
-                        totalInstantDamage += 1;
-                        break;
-                      }
-                      case MinecraftEffectTypes.InstantHealth: {
-                        totalInstantHealth += 1;
-                        break;
-                      }
-                      case MinecraftEffectTypes.Invisibility: {
-                        totalInvisibility += 1;
-                        break;
-                      }
-                      case MinecraftEffectTypes.JumpBoost: {
-                        totalJumpBoost += 1;
-                        break;
-                      }
-                      case MinecraftEffectTypes.Levitation: {
-                        totalLevitation += 1;
-                        break;
-                      }
-                      case MinecraftEffectTypes.MiningFatigue: {
-                        totalMiningFatigue += 1;
-                        break;
-                      }
-                      case MinecraftEffectTypes.Nausea: {
-                        totalNausea += 1;
-                        break;
-                      }
-                      case MinecraftEffectTypes.NightVision: {
-                        totalNightVision += 1;
-                        break;
-                      }
-                      case MinecraftEffectTypes.Oozing: {
-                        totalOozing += 1;
-                        break;
-                      }
-                      case MinecraftEffectTypes.Poison: {
-                        totalPoison += 1;
-                        break;
-                      }
-                      case MinecraftEffectTypes.RaidOmen: {
-                        totalRaidOmen += 1;
-                        break;
-                      }
-                      case MinecraftEffectTypes.Regeneration: {
-                        totalRegeneration += 1;
-                        break;
-                      }
-                      case MinecraftEffectTypes.Resistance: {
-                        totalResistance += 1;
-                        break;
-                      }
-                      case MinecraftEffectTypes.Saturation: {
-                        totalSaturation += 1;
-                        break;
-                      }
-                      case MinecraftEffectTypes.SlowFalling: {
-                        totalSlowFalling += 1;
-                        break;
-                      }
-                      case MinecraftEffectTypes.Slowness: {
-                        totalSlowness += 1;
-                        break;
-                      }
-                      case MinecraftEffectTypes.Speed: {
-                        totalSpeed += 1;
-                        break;
-                      }
-                      case MinecraftEffectTypes.Strength: {
-                        totalStrength += 1;
-                        break;
-                      }
-                      case MinecraftEffectTypes.TrialOmen: {
-                        totalTrialOmen += 1;
-                        break;
-                      }
-                      case MinecraftEffectTypes.VillageHero: {
-                        totalVillageHero += 1;
-                        break;
-                      }
-                      case MinecraftEffectTypes.WaterBreathing: {
-                        totalWaterBreathing += 1;
-                        break;
-                      }
-                      case MinecraftEffectTypes.Weakness: {
-                        totalWeakness += 1;
-                        break;
-                      }
-                      case MinecraftEffectTypes.Weaving: {
-                        totalWeaving += 1;
-                        break;
-                      }
-                      case MinecraftEffectTypes.WindCharged: {
-                        totalWindCharged += 1;
-                        break;
-                      }
-                      case MinecraftEffectTypes.Wither: {
-                        totalWither += 1;
-                        break;
-                      }
-                      default:
-                        break;
-                    }
-                  }
                 }
               }
             }
-            passed ? totalPieces : totalPieces -= 1;
+            totalPieces -= passed ? 0 : 1;
             break;
           }
           ;
@@ -6440,1502 +5670,392 @@ function CheckEffects(player, ArmorData, additionalOptions, customParse) {
       continue;
     }
   }
-  if (Offhand) {
-    totalPieces += 1;
-    switch (true) {
-      case Offhand.hasTag(ArmorData.nightVision.tag): {
-        effects = effects.concat(ArmorData.nightVision.effects);
-        break;
+  let position = 0;
+  if (customEffects.length > 0) {
+    for (let item of Equipment) {
+      if (!item) {
+        position += 1;
+        continue;
       }
-      default: {
-        let passed = false;
-        if (customEffects.length > 0) {
-          for (let customEffect of customEffects) {
-            if (customEffect.mode == "lore" && JSON.stringify(Offhand.getLore()).includes(customEffect.tag) || (!customEffect.mode || customEffect.mode == "tag") && Offhand.hasTag(customEffect.tag)) {
-              effects = effects.concat(customEffect.effects);
-              passed = true;
-              for (let effect of customEffect.effects) {
-                switch (effect.effect) {
-                  case MinecraftEffectTypes.Absorption: {
-                    totalAbsorption += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.BadOmen: {
-                    totalBadOmen += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Blindness: {
-                    totalBlindness += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.ConduitPower: {
-                    totalConduitPower += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Darkness: {
-                    totalDarkness += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.FatalPoison: {
-                    totalFatalPoison += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.FireResistance: {
-                    totalFireResistance += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Haste: {
-                    totalHaste += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.HealthBoost: {
-                    HealthBoost += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Hunger: {
-                    totalHunger += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Infested: {
-                    totalInfested += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.InstantDamage: {
-                    totalInstantDamage += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.InstantHealth: {
-                    totalInstantHealth += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Invisibility: {
-                    totalInvisibility += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.JumpBoost: {
-                    totalJumpBoost += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Levitation: {
-                    totalLevitation += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.MiningFatigue: {
-                    totalMiningFatigue += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Nausea: {
-                    totalNausea += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.NightVision: {
-                    totalNightVision += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Oozing: {
-                    totalOozing += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Poison: {
-                    totalPoison += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.RaidOmen: {
-                    totalRaidOmen += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Regeneration: {
-                    totalRegeneration += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Resistance: {
-                    totalResistance += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Saturation: {
-                    totalSaturation += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.SlowFalling: {
-                    totalSlowFalling += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Slowness: {
-                    totalSlowness += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Speed: {
-                    totalSpeed += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Strength: {
-                    totalStrength += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.TrialOmen: {
-                    totalTrialOmen += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.VillageHero: {
-                    totalVillageHero += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.WaterBreathing: {
-                    totalWaterBreathing += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Weakness: {
-                    totalWeakness += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Weaving: {
-                    totalWeaving += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.WindCharged: {
-                    totalWindCharged += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Wither: {
-                    totalWither += 1;
-                    break;
-                  }
-                  default:
-                    break;
-                }
-              }
-            }
-          }
+      totalPieces += 1;
+      let passed = false;
+      for (let customEffect of customEffects) {
+        if (customEffect.mode == "lore" && JSON.stringify(item.getLore()).includes(customEffect.tag) || (!customEffect.mode || customEffect.mode == "tag") && item.hasTag(customEffect.tag)) {
+          effects = effects.concat(customEffect.effects);
+          passed = true;
         }
-        passed ? totalPieces : totalPieces -= 1;
-        break;
       }
-    }
-  }
-  if (Helmet) {
-    totalPieces += 1;
-    switch (true) {
-      case Helmet.hasTag(ArmorData.amethyst.tag): {
-        effects = effects.concat(ArmorData.amethyst.effects);
-        totalRegeneration += 1;
-        totalHaste += 1;
-        break;
-      }
-      case Helmet.hasTag(ArmorData.shade.tag): {
-        effects = effects.concat(ArmorData.shade.effects);
-        totalStrength += 1;
-        totalRegeneration += 1;
-        totalResistance += 1;
-        totalSlowness += 1;
-        break;
-      }
-      case Helmet.hasTag(ArmorData.radium.tag): {
-        effects = effects.concat(ArmorData.radium.effects);
-        totalStrength += 1;
-        totalRegeneration += 1;
-        totalResistance += 1;
-        totalSpeed += 1;
-        break;
-      }
-      case Helmet.hasTag(ArmorData.banished.tag): {
-        effects = effects.concat(ArmorData.banished.effects);
-        totalRegeneration += 1;
-        totalResistance += 1;
-        totalSlowness += 1;
-        totalHaste += 1;
-        break;
-      }
-      case Helmet.hasTag(ArmorData.onyx.tag): {
-        effects = effects.concat(ArmorData.onyx.effects);
-        totalRegeneration += 1;
-        break;
-      }
-      case Helmet.hasTag(ArmorData.holy.tag): {
-        effects = effects.concat(ArmorData.holy.effects);
-        totalRegeneration += 1;
-        totalResistance += 1;
-        totalSpeed += 1;
-        break;
-      }
-      case Helmet.hasTag(ArmorData.hellish.tag): {
-        effects = effects.concat(ArmorData.hellish.effects);
-        totalRegeneration += 1;
-        totalResistance += 1;
-        break;
-      }
-      case Helmet.hasTag(ArmorData.godly.tag): {
-        effects = effects.concat(ArmorData.godly.effects);
-        totalStrength += 1;
-        totalRegeneration += 1;
-        totalResistance += 1;
-        totalSpeed += 1;
-        break;
-      }
-      case Helmet.hasTag(ArmorData.demonic.tag): {
-        effects = effects.concat(ArmorData.demonic.effects);
-        totalStrength += 1;
-        totalRegeneration += 1;
-        totalResistance += 1;
-        break;
-      }
-      case Helmet.hasTag(ArmorData.medic.tag): {
-        effects = effects.concat(ArmorData.medic.effects);
-        totalHealthBoost += 1;
-        totalResistance += 1;
-        totalSpeed += 1;
-        break;
-      }
-      case Helmet.hasTag(ArmorData.molten.tag): {
-        effects = effects.concat(ArmorData.molten.effects);
-        totalStrength += 1;
-        totalRegeneration += 1;
-        totalResistance += 1;
-        break;
-      }
-      case Helmet.hasTag(ArmorData.galaxy.tag): {
-        effects = effects.concat(ArmorData.galaxy.effects);
-        totalRegeneration += 1;
-        totalResistance += 1;
-        totalSpeed += 1;
-        totalHaste += 1;
-        break;
-      }
-      case Helmet.hasTag(ArmorData.void.tag): {
-        effects = effects.concat(ArmorData.void.effects);
-        totalSpeed += 1;
-        totalResistance += 1;
-        totalRegeneration += 1;
-        break;
-      }
-      case Helmet.hasTag(ArmorData.astral.tag): {
-        effects = effects.concat(ArmorData.astral.effects);
-        totalRegeneration += 1;
-        totalResistance += 1;
-        totalSpeed += 1;
-        totalHaste += 1;
-        totalHealthBoost += 1;
-        break;
-      }
-      case Helmet.hasTag(ArmorData.death.tag): {
-        effects = effects.concat(ArmorData.death.effects);
-        totalHealthBoost += 1;
-        totalResistance += 1;
-        totalRegeneration += 1;
-        break;
-      }
-      case Helmet.hasTag(ArmorData.nebula.tag): {
-        effects = effects.concat(ArmorData.nebula.effects);
-        totalSpeed += 1;
-        totalRegeneration += 1;
-        totalResistance += 1;
-        totalHaste += 1;
-        totalVillageHero += 1;
-        totalStrength += 1;
-        totalHealthBoost += 1;
-        break;
-      }
-      case Helmet.hasTag(ArmorData.cactus.tag): {
-        effects = effects.concat(ArmorData.cactus.effects);
-        break;
-      }
-      case Helmet.hasTag(ArmorData.emberRobe.tag): {
-        effects = effects.concat(ArmorData.emberRobe.effects);
-        totalStrength += 1;
-        break;
-      }
-      case Helmet.hasTag(ArmorData.hastedRobe.tag): {
-        effects = effects.concat(ArmorData.hastedRobe.effects);
-        totalStrength += 1;
-        totalHaste += 1;
-        break;
-      }
-      case Helmet.hasTag(ArmorData.springyRobe.tag): {
-        effects = effects.concat(ArmorData.springyRobe.effects);
-        totalStrength += 1;
-        totalJumpBoost += 1;
-        break;
-      }
-      case Helmet.hasTag(ArmorData.heroicRobe.tag): {
-        effects = effects.concat(ArmorData.heroicRobe.effects);
-        totalStrength += 1;
-        totalVillageHero += 1;
-        break;
-      }
-      case Helmet.hasTag(ArmorData.cobaltRobe.tag): {
-        effects = effects.concat(ArmorData.cobaltRobe.effects);
-        totalStrength += 1;
-        break;
-      }
-      case Helmet.hasTag(ArmorData.swiftRobe.tag): {
-        effects = effects.concat(ArmorData.swiftRobe.effects);
-        totalStrength += 1;
-        totalSpeed += 1;
-        break;
-      }
-      case Helmet.hasTag(ArmorData.gluttonyRobe.tag): {
-        effects = effects.concat(ArmorData.gluttonyRobe.effects);
-        totalStrength += 1;
-        totalSaturation += 1;
-        break;
-      }
-      case Helmet.hasTag(ArmorData.featherRobe.tag): {
-        effects = effects.concat(ArmorData.featherRobe.effects);
-        totalStrength += 1;
-        break;
-      }
-      case Helmet.hasTag(ArmorData.shadowRobe.tag): {
-        effects = effects.concat(ArmorData.shadowRobe.effects);
-        totalStrength += 1;
-        break;
-      }
-      case Helmet.hasTag(ArmorData.nightVision.tag): {
-        effects = effects.concat(ArmorData.nightVision.effects);
-        break;
-      }
-      default: {
-        let passed = false;
-        if (customEffects.length > 0) {
-          for (let customEffect of customEffects) {
-            if (customEffect.mode == "lore" && JSON.stringify(Helmet.getLore()).includes(customEffect.tag) || (!customEffect.mode || customEffect.mode == "tag") && Helmet.hasTag(customEffect.tag)) {
-              effects = effects.concat(customEffect.effects);
-              passed = true;
-              for (let effect of customEffect.effects) {
-                switch (effect.effect) {
-                  case MinecraftEffectTypes.Absorption: {
-                    totalAbsorption += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.BadOmen: {
-                    totalBadOmen += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Blindness: {
-                    totalBlindness += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.ConduitPower: {
-                    totalConduitPower += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Darkness: {
-                    totalDarkness += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.FatalPoison: {
-                    totalFatalPoison += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.FireResistance: {
-                    totalFireResistance += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Haste: {
-                    totalHaste += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.HealthBoost: {
-                    HealthBoost += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Hunger: {
-                    totalHunger += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Infested: {
-                    totalInfested += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.InstantDamage: {
-                    totalInstantDamage += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.InstantHealth: {
-                    totalInstantHealth += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Invisibility: {
-                    totalInvisibility += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.JumpBoost: {
-                    totalJumpBoost += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Levitation: {
-                    totalLevitation += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.MiningFatigue: {
-                    totalMiningFatigue += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Nausea: {
-                    totalNausea += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.NightVision: {
-                    totalNightVision += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Oozing: {
-                    totalOozing += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Poison: {
-                    totalPoison += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.RaidOmen: {
-                    totalRaidOmen += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Regeneration: {
-                    totalRegeneration += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Resistance: {
-                    totalResistance += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Saturation: {
-                    totalSaturation += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.SlowFalling: {
-                    totalSlowFalling += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Slowness: {
-                    totalSlowness += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Speed: {
-                    totalSpeed += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Strength: {
-                    totalStrength += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.TrialOmen: {
-                    totalTrialOmen += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.VillageHero: {
-                    totalVillageHero += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.WaterBreathing: {
-                    totalWaterBreathing += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Weakness: {
-                    totalWeakness += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Weaving: {
-                    totalWeaving += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.WindCharged: {
-                    totalWindCharged += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Wither: {
-                    totalWither += 1;
-                    break;
-                  }
-                  default:
-                    break;
-                }
-              }
-            }
-          }
-        }
-        passed ? totalPieces : totalPieces -= 1;
-        break;
-      }
-    }
-  }
-  if (Chestplate) {
-    totalPieces += 1;
-    switch (true) {
-      case Chestplate.hasTag(ArmorData.amethyst.tag): {
-        effects = effects.concat(ArmorData.amethyst.effects);
-        totalRegeneration += 1;
-        totalHaste += 1;
-        break;
-      }
-      case Chestplate.hasTag(ArmorData.shade.tag): {
-        effects = effects.concat(ArmorData.shade.effects);
-        totalStrength += 1;
-        totalRegeneration += 1;
-        totalResistance += 1;
-        totalSlowness += 1;
-        break;
-      }
-      case Chestplate.hasTag(ArmorData.radium.tag): {
-        effects = effects.concat(ArmorData.radium.effects);
-        totalStrength += 1;
-        totalRegeneration += 1;
-        totalResistance += 1;
-        totalSpeed += 1;
-        break;
-      }
-      case Chestplate.hasTag(ArmorData.banished.tag): {
-        effects = effects.concat(ArmorData.banished.effects);
-        totalRegeneration += 1;
-        totalResistance += 1;
-        totalSlowness += 1;
-        totalHaste += 1;
-        break;
-      }
-      case Chestplate.hasTag(ArmorData.onyx.tag): {
-        effects = effects.concat(ArmorData.onyx.effects);
-        totalRegeneration += 1;
-        break;
-      }
-      case Chestplate.hasTag(ArmorData.holy.tag): {
-        effects = effects.concat(ArmorData.holy.effects);
-        totalRegeneration += 1;
-        totalResistance += 1;
-        totalSpeed += 1;
-        break;
-      }
-      case Chestplate.hasTag(ArmorData.hellish.tag): {
-        effects = effects.concat(ArmorData.hellish.effects);
-        totalRegeneration += 1;
-        totalResistance += 1;
-        break;
-      }
-      case Chestplate.hasTag(ArmorData.godly.tag): {
-        effects = effects.concat(ArmorData.godly.effects);
-        totalStrength += 1;
-        totalRegeneration += 1;
-        totalResistance += 1;
-        totalSpeed += 1;
-        break;
-      }
-      case Chestplate.hasTag(ArmorData.demonic.tag): {
-        effects = effects.concat(ArmorData.demonic.effects);
-        totalStrength += 1;
-        totalRegeneration += 1;
-        totalResistance += 1;
-        break;
-      }
-      case Chestplate.hasTag(ArmorData.medic.tag): {
-        effects = effects.concat(ArmorData.medic.effects);
-        totalHealthBoost += 1;
-        totalResistance += 1;
-        totalSpeed += 1;
-        break;
-      }
-      case Chestplate.hasTag(ArmorData.molten.tag): {
-        effects = effects.concat(ArmorData.molten.effects);
-        totalStrength += 1;
-        totalRegeneration += 1;
-        totalResistance += 1;
-        break;
-      }
-      case Chestplate.hasTag(ArmorData.galaxy.tag): {
-        effects = effects.concat(ArmorData.galaxy.effects);
-        totalRegeneration += 1;
-        totalResistance += 1;
-        totalSpeed += 1;
-        totalHaste += 1;
-        break;
-      }
-      case Chestplate.hasTag(ArmorData.void.tag): {
-        effects = effects.concat(ArmorData.void.effects);
-        totalSpeed += 1;
-        totalResistance += 1;
-        totalRegeneration += 1;
-        break;
-      }
-      case Chestplate.hasTag(ArmorData.astral.tag): {
-        effects = effects.concat(ArmorData.astral.effects);
-        totalRegeneration += 1;
-        totalResistance += 1;
-        totalSpeed += 1;
-        totalHaste += 1;
-        totalHealthBoost += 1;
-        break;
-      }
-      case Chestplate.hasTag(ArmorData.death.tag): {
-        effects = effects.concat(ArmorData.death.effects);
-        totalHealthBoost += 1;
-        totalResistance += 1;
-        totalRegeneration += 1;
-        break;
-      }
-      case Chestplate.hasTag(ArmorData.nebula.tag): {
-        effects = effects.concat(ArmorData.nebula.effects);
-        totalSpeed += 1;
-        totalRegeneration += 1;
-        totalResistance += 1;
-        totalHaste += 1;
-        totalVillageHero += 1;
-        totalStrength += 1;
-        totalHealthBoost += 1;
-        break;
-      }
-      case Chestplate.hasTag(ArmorData.cactus.tag): {
-        effects = effects.concat(ArmorData.cactus.effects);
-        break;
-      }
-      case Chestplate.hasTag(ArmorData.emberRobe.tag): {
-        effects = effects.concat(ArmorData.emberRobe.effects);
-        totalStrength += 1;
-        break;
-      }
-      case Chestplate.hasTag(ArmorData.hastedRobe.tag): {
-        effects = effects.concat(ArmorData.hastedRobe.effects);
-        totalStrength += 1;
-        totalHaste += 1;
-        break;
-      }
-      case Chestplate.hasTag(ArmorData.springyRobe.tag): {
-        effects = effects.concat(ArmorData.springyRobe.effects);
-        totalStrength += 1;
-        totalJumpBoost += 1;
-        break;
-      }
-      case Chestplate.hasTag(ArmorData.heroicRobe.tag): {
-        effects = effects.concat(ArmorData.heroicRobe.effects);
-        totalStrength += 1;
-        totalVillageHero += 1;
-        break;
-      }
-      case Chestplate.hasTag(ArmorData.cobaltRobe.tag): {
-        effects = effects.concat(ArmorData.cobaltRobe.effects);
-        totalStrength += 1;
-        break;
-      }
-      case Chestplate.hasTag(ArmorData.swiftRobe.tag): {
-        effects = effects.concat(ArmorData.swiftRobe.effects);
-        totalStrength += 1;
-        totalSpeed += 1;
-        break;
-      }
-      case Chestplate.hasTag(ArmorData.gluttonyRobe.tag): {
-        effects = effects.concat(ArmorData.gluttonyRobe.effects);
-        totalStrength += 1;
-        totalSaturation += 1;
-        break;
-      }
-      case Chestplate.hasTag(ArmorData.featherRobe.tag): {
-        effects = effects.concat(ArmorData.featherRobe.effects);
-        totalStrength += 1;
-        break;
-      }
-      case Chestplate.hasTag(ArmorData.shadowRobe.tag): {
-        effects = effects.concat(ArmorData.shadowRobe.effects);
-        totalStrength += 1;
-        break;
-      }
-      default: {
-        let passed = false;
-        if (customEffects.length > 0) {
-          for (let customEffect of customEffects) {
-            if (customEffect.mode == "lore" && JSON.stringify(Chestplate.getLore()).includes(customEffect.tag) || (!customEffect.mode || customEffect.mode == "tag") && Chestplate.hasTag(customEffect.tag)) {
-              effects = effects.concat(customEffect.effects);
-              passed = true;
-              for (let effect of customEffect.effects) {
-                switch (effect.effect) {
-                  case MinecraftEffectTypes.Absorption: {
-                    totalAbsorption += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.BadOmen: {
-                    totalBadOmen += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Blindness: {
-                    totalBlindness += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.ConduitPower: {
-                    totalConduitPower += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Darkness: {
-                    totalDarkness += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.FatalPoison: {
-                    totalFatalPoison += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.FireResistance: {
-                    totalFireResistance += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Haste: {
-                    totalHaste += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.HealthBoost: {
-                    HealthBoost += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Hunger: {
-                    totalHunger += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Infested: {
-                    totalInfested += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.InstantDamage: {
-                    totalInstantDamage += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.InstantHealth: {
-                    totalInstantHealth += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Invisibility: {
-                    totalInvisibility += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.JumpBoost: {
-                    totalJumpBoost += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Levitation: {
-                    totalLevitation += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.MiningFatigue: {
-                    totalMiningFatigue += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Nausea: {
-                    totalNausea += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.NightVision: {
-                    totalNightVision += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Oozing: {
-                    totalOozing += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Poison: {
-                    totalPoison += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.RaidOmen: {
-                    totalRaidOmen += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Regeneration: {
-                    totalRegeneration += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Resistance: {
-                    totalResistance += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Saturation: {
-                    totalSaturation += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.SlowFalling: {
-                    totalSlowFalling += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Slowness: {
-                    totalSlowness += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Speed: {
-                    totalSpeed += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Strength: {
-                    totalStrength += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.TrialOmen: {
-                    totalTrialOmen += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.VillageHero: {
-                    totalVillageHero += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.WaterBreathing: {
-                    totalWaterBreathing += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Weakness: {
-                    totalWeakness += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Weaving: {
-                    totalWeaving += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.WindCharged: {
-                    totalWindCharged += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Wither: {
-                    totalWither += 1;
-                    break;
-                  }
-                  default:
-                    break;
-                }
-              }
-            }
-          }
-        }
-        passed ? totalPieces : totalPieces -= 1;
-        break;
-      }
-    }
-  }
-  if (Leggings) {
-    totalPieces += 1;
-    switch (true) {
-      case Leggings.hasTag(ArmorData.amethyst.tag): {
-        effects = effects.concat(ArmorData.amethyst.effects);
-        totalRegeneration += 1;
-        totalHaste += 1;
-        break;
-      }
-      case Leggings.hasTag(ArmorData.shade.tag): {
-        effects = effects.concat(ArmorData.shade.effects);
-        totalStrength += 1;
-        totalRegeneration += 1;
-        totalResistance += 1;
-        totalSlowness += 1;
-        break;
-      }
-      case Leggings.hasTag(ArmorData.radium.tag): {
-        effects = effects.concat(ArmorData.radium.effects);
-        totalStrength += 1;
-        totalRegeneration += 1;
-        totalResistance += 1;
-        totalSpeed += 1;
-        break;
-      }
-      case Leggings.hasTag(ArmorData.banished.tag): {
-        effects = effects.concat(ArmorData.banished.effects);
-        totalRegeneration += 1;
-        totalResistance += 1;
-        totalSlowness += 1;
-        totalHaste += 1;
-        break;
-      }
-      case Leggings.hasTag(ArmorData.onyx.tag): {
-        effects = effects.concat(ArmorData.onyx.effects);
-        totalRegeneration += 1;
-        break;
-      }
-      case Leggings.hasTag(ArmorData.holy.tag): {
-        effects = effects.concat(ArmorData.holy.effects);
-        totalRegeneration += 1;
-        totalResistance += 1;
-        totalSpeed += 1;
-        break;
-      }
-      case Leggings.hasTag(ArmorData.hellish.tag): {
-        effects = effects.concat(ArmorData.hellish.effects);
-        totalRegeneration += 1;
-        totalResistance += 1;
-        break;
-      }
-      case Leggings.hasTag(ArmorData.godly.tag): {
-        effects = effects.concat(ArmorData.godly.effects);
-        totalStrength += 1;
-        totalRegeneration += 1;
-        totalResistance += 1;
-        totalSpeed += 1;
-        break;
-      }
-      case Leggings.hasTag(ArmorData.demonic.tag): {
-        effects = effects.concat(ArmorData.demonic.effects);
-        totalStrength += 1;
-        totalRegeneration += 1;
-        totalResistance += 1;
-        break;
-      }
-      case Leggings.hasTag(ArmorData.medic.tag): {
-        effects = effects.concat(ArmorData.medic.effects);
-        totalHealthBoost += 1;
-        totalResistance += 1;
-        totalSpeed += 1;
-        break;
-      }
-      case Leggings.hasTag(ArmorData.molten.tag): {
-        effects = effects.concat(ArmorData.molten.effects);
-        totalStrength += 1;
-        totalRegeneration += 1;
-        totalResistance += 1;
-        break;
-      }
-      case Leggings.hasTag(ArmorData.galaxy.tag): {
-        effects = effects.concat(ArmorData.galaxy.effects);
-        totalRegeneration += 1;
-        totalResistance += 1;
-        totalSpeed += 1;
-        totalHaste += 1;
-        break;
-      }
-      case Leggings.hasTag(ArmorData.void.tag): {
-        effects = effects.concat(ArmorData.void.effects);
-        totalSpeed += 1;
-        totalResistance += 1;
-        totalRegeneration += 1;
-        break;
-      }
-      case Leggings.hasTag(ArmorData.astral.tag): {
-        effects = effects.concat(ArmorData.astral.effects);
-        totalRegeneration += 1;
-        totalResistance += 1;
-        totalSpeed += 1;
-        totalHaste += 1;
-        totalHealthBoost += 1;
-        break;
-      }
-      case Leggings.hasTag(ArmorData.death.tag): {
-        effects = effects.concat(ArmorData.death.effects);
-        totalHealthBoost += 1;
-        totalResistance += 1;
-        totalRegeneration += 1;
-        break;
-      }
-      case Leggings.hasTag(ArmorData.nebula.tag): {
-        effects = effects.concat(ArmorData.nebula.effects);
-        totalSpeed += 1;
-        totalRegeneration += 1;
-        totalResistance += 1;
-        totalHaste += 1;
-        totalVillageHero += 1;
-        totalStrength += 1;
-        totalHealthBoost += 1;
-        break;
-      }
-      case Leggings.hasTag(ArmorData.cactus.tag): {
-        effects = effects.concat(ArmorData.cactus.effects);
-        break;
-      }
-      default: {
-        let passed = false;
-        if (customEffects.length > 0) {
-          for (let customEffect of customEffects) {
-            if (customEffect.mode == "lore" && JSON.stringify(Leggings.getLore()).includes(customEffect.tag) || (!customEffect.mode || customEffect.mode == "tag") && Leggings.hasTag(customEffect.tag)) {
-              effects = effects.concat(customEffect.effects);
-              passed = true;
-              for (let effect of customEffect.effects) {
-                switch (effect.effect) {
-                  case MinecraftEffectTypes.Absorption: {
-                    totalAbsorption += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.BadOmen: {
-                    totalBadOmen += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Blindness: {
-                    totalBlindness += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.ConduitPower: {
-                    totalConduitPower += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Darkness: {
-                    totalDarkness += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.FatalPoison: {
-                    totalFatalPoison += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.FireResistance: {
-                    totalFireResistance += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Haste: {
-                    totalHaste += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.HealthBoost: {
-                    HealthBoost += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Hunger: {
-                    totalHunger += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Infested: {
-                    totalInfested += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.InstantDamage: {
-                    totalInstantDamage += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.InstantHealth: {
-                    totalInstantHealth += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Invisibility: {
-                    totalInvisibility += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.JumpBoost: {
-                    totalJumpBoost += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Levitation: {
-                    totalLevitation += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.MiningFatigue: {
-                    totalMiningFatigue += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Nausea: {
-                    totalNausea += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.NightVision: {
-                    totalNightVision += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Oozing: {
-                    totalOozing += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Poison: {
-                    totalPoison += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.RaidOmen: {
-                    totalRaidOmen += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Regeneration: {
-                    totalRegeneration += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Resistance: {
-                    totalResistance += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Saturation: {
-                    totalSaturation += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.SlowFalling: {
-                    totalSlowFalling += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Slowness: {
-                    totalSlowness += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Speed: {
-                    totalSpeed += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Strength: {
-                    totalStrength += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.TrialOmen: {
-                    totalTrialOmen += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.VillageHero: {
-                    totalVillageHero += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.WaterBreathing: {
-                    totalWaterBreathing += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Weakness: {
-                    totalWeakness += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Weaving: {
-                    totalWeaving += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.WindCharged: {
-                    totalWindCharged += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Wither: {
-                    totalWither += 1;
-                    break;
-                  }
-                  default:
-                    break;
-                }
-              }
-            }
-          }
-        }
-        passed ? totalPieces : totalPieces -= 1;
-        break;
-      }
-    }
-  }
-  if (Boots) {
-    totalPieces += 1;
-    switch (true) {
-      case Boots.hasTag(ArmorData.amethyst.tag): {
-        effects = effects.concat(ArmorData.amethyst.effects);
-        totalRegeneration += 1;
-        totalHaste += 1;
-        break;
-      }
-      case Boots.hasTag(ArmorData.shade.tag): {
-        effects = effects.concat(ArmorData.shade.effects);
-        totalStrength += 1;
-        totalRegeneration += 1;
-        totalResistance += 1;
-        totalSlowness += 1;
-        break;
-      }
-      case Boots.hasTag(ArmorData.radium.tag): {
-        effects = effects.concat(ArmorData.radium.effects);
-        totalStrength += 1;
-        totalRegeneration += 1;
-        totalResistance += 1;
-        totalSpeed += 1;
-        break;
-      }
-      case Boots.hasTag(ArmorData.banished.tag): {
-        effects = effects.concat(ArmorData.banished.effects);
-        totalRegeneration += 1;
-        totalResistance += 1;
-        totalSlowness += 1;
-        totalHaste += 1;
-        break;
-      }
-      case Boots.hasTag(ArmorData.onyx.tag): {
-        effects = effects.concat(ArmorData.onyx.effects);
-        totalRegeneration += 1;
-        break;
-      }
-      case Boots.hasTag(ArmorData.holy.tag): {
-        effects = effects.concat(ArmorData.holy.effects);
-        totalRegeneration += 1;
-        totalResistance += 1;
-        totalSpeed += 1;
-        break;
-      }
-      case Boots.hasTag(ArmorData.hellish.tag): {
-        effects = effects.concat(ArmorData.hellish.effects);
-        totalRegeneration += 1;
-        totalResistance += 1;
-        break;
-      }
-      case Boots.hasTag(ArmorData.godly.tag): {
-        effects = effects.concat(ArmorData.godly.effects);
-        totalStrength += 1;
-        totalRegeneration += 1;
-        totalResistance += 1;
-        totalSpeed += 1;
-        break;
-      }
-      case Boots.hasTag(ArmorData.demonic.tag): {
-        effects = effects.concat(ArmorData.demonic.effects);
-        totalStrength += 1;
-        totalRegeneration += 1;
-        totalResistance += 1;
-        break;
-      }
-      case Boots.hasTag(ArmorData.medic.tag): {
-        effects = effects.concat(ArmorData.medic.effects);
-        totalHealthBoost += 1;
-        totalResistance += 1;
-        totalSpeed += 1;
-        break;
-      }
-      case Boots.hasTag(ArmorData.molten.tag): {
-        effects = effects.concat(ArmorData.molten.effects);
-        totalStrength += 1;
-        totalRegeneration += 1;
-        totalResistance += 1;
-        break;
-      }
-      case Boots.hasTag(ArmorData.galaxy.tag): {
-        effects = effects.concat(ArmorData.galaxy.effects);
-        totalRegeneration += 1;
-        totalResistance += 1;
-        totalSpeed += 1;
-        totalHaste += 1;
-        break;
-      }
-      case Boots.hasTag(ArmorData.void.tag): {
-        effects = effects.concat(ArmorData.void.effects);
-        totalSpeed += 1;
-        totalResistance += 1;
-        totalRegeneration += 1;
-        break;
-      }
-      case Boots.hasTag(ArmorData.astral.tag): {
-        effects = effects.concat(ArmorData.astral.effects);
-        totalRegeneration += 1;
-        totalResistance += 1;
-        totalSpeed += 1;
-        totalHaste += 1;
-        totalHealthBoost += 1;
-        break;
-      }
-      case Boots.hasTag(ArmorData.death.tag): {
-        effects = effects.concat(ArmorData.death.effects);
-        totalHealthBoost += 1;
-        totalResistance += 1;
-        totalRegeneration += 1;
-        break;
-      }
-      case Boots.hasTag(ArmorData.nebula.tag): {
-        effects = effects.concat(ArmorData.nebula.effects);
-        totalSpeed += 1;
-        totalRegeneration += 1;
-        totalResistance += 1;
-        totalHaste += 1;
-        totalVillageHero += 1;
-        totalStrength += 1;
-        totalHealthBoost += 1;
-        break;
-      }
-      case Boots.hasTag(ArmorData.cactus.tag): {
-        effects = effects.concat(ArmorData.cactus.effects);
-        break;
-      }
-      case Boots.hasTag(ArmorData.speedBoots.tag): {
-        effects = effects.concat(ArmorData.speedBoots.effects);
-        totalSpeed += 1;
-        break;
-      }
-      default: {
-        let passed = false;
-        if (customEffects.length > 0) {
-          for (let customEffect of customEffects) {
-            if (customEffect.mode == "lore" && JSON.stringify(Boots.getLore()).includes(customEffect.tag) || (!customEffect.mode || customEffect.mode == "tag") && Boots.hasTag(customEffect.tag)) {
-              effects = effects.concat(customEffect.effects);
-              passed = true;
-              for (let effect of customEffect.effects) {
-                switch (effect.effect) {
-                  case MinecraftEffectTypes.Absorption: {
-                    totalAbsorption += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.BadOmen: {
-                    totalBadOmen += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Blindness: {
-                    totalBlindness += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.ConduitPower: {
-                    totalConduitPower += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Darkness: {
-                    totalDarkness += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.FatalPoison: {
-                    totalFatalPoison += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.FireResistance: {
-                    totalFireResistance += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Haste: {
-                    totalHaste += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.HealthBoost: {
-                    HealthBoost += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Hunger: {
-                    totalHunger += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Infested: {
-                    totalInfested += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.InstantDamage: {
-                    totalInstantDamage += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.InstantHealth: {
-                    totalInstantHealth += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Invisibility: {
-                    totalInvisibility += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.JumpBoost: {
-                    totalJumpBoost += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Levitation: {
-                    totalLevitation += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.MiningFatigue: {
-                    totalMiningFatigue += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Nausea: {
-                    totalNausea += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.NightVision: {
-                    totalNightVision += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Oozing: {
-                    totalOozing += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Poison: {
-                    totalPoison += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.RaidOmen: {
-                    totalRaidOmen += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Regeneration: {
-                    totalRegeneration += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Resistance: {
-                    totalResistance += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Saturation: {
-                    totalSaturation += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.SlowFalling: {
-                    totalSlowFalling += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Slowness: {
-                    totalSlowness += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Speed: {
-                    totalSpeed += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Strength: {
-                    totalStrength += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.TrialOmen: {
-                    totalTrialOmen += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.VillageHero: {
-                    totalVillageHero += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.WaterBreathing: {
-                    totalWaterBreathing += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Weakness: {
-                    totalWeakness += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Weaving: {
-                    totalWeaving += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.WindCharged: {
-                    totalWindCharged += 1;
-                    break;
-                  }
-                  case MinecraftEffectTypes.Wither: {
-                    totalWither += 1;
-                    break;
-                  }
-                  default:
-                    break;
-                }
-              }
-            }
-          }
-        }
-        passed ? totalPieces : totalPieces -= 1;
-        break;
-      }
+      passed || EquipmentComponents.at(position) ? totalPieces : totalPieces -= 1;
+      position += 1;
     }
   }
   for (let effect of effects) {
+    switch (effect.effect) {
+      case MinecraftEffectTypes.Absorption: {
+        totalAbsorption += 1;
+        break;
+      }
+      case MinecraftEffectTypes.BadOmen: {
+        totalBadOmen += 1;
+        break;
+      }
+      case MinecraftEffectTypes.Blindness: {
+        totalBlindness += 1;
+        break;
+      }
+      case MinecraftEffectTypes.ConduitPower: {
+        totalConduitPower += 1;
+        break;
+      }
+      case MinecraftEffectTypes.Darkness: {
+        totalDarkness += 1;
+        break;
+      }
+      case MinecraftEffectTypes.FatalPoison: {
+        totalFatalPoison += 1;
+        break;
+      }
+      case MinecraftEffectTypes.FireResistance: {
+        totalFireResistance += 1;
+        break;
+      }
+      case MinecraftEffectTypes.Haste: {
+        totalHaste += 1;
+        break;
+      }
+      case MinecraftEffectTypes.HealthBoost: {
+        totalHealthBoost += 1;
+        break;
+      }
+      case MinecraftEffectTypes.Hunger: {
+        totalHunger += 1;
+        break;
+      }
+      case MinecraftEffectTypes.Infested: {
+        totalInfested += 1;
+        break;
+      }
+      case MinecraftEffectTypes.InstantDamage: {
+        totalInstantDamage += 1;
+        break;
+      }
+      case MinecraftEffectTypes.InstantHealth: {
+        totalInstantHealth += 1;
+        break;
+      }
+      case MinecraftEffectTypes.Invisibility: {
+        totalInvisibility += 1;
+        break;
+      }
+      case MinecraftEffectTypes.JumpBoost: {
+        totalJumpBoost += 1;
+        break;
+      }
+      case MinecraftEffectTypes.Levitation: {
+        totalLevitation += 1;
+        break;
+      }
+      case MinecraftEffectTypes.MiningFatigue: {
+        totalMiningFatigue += 1;
+        break;
+      }
+      case MinecraftEffectTypes.Nausea: {
+        totalNausea += 1;
+        break;
+      }
+      case MinecraftEffectTypes.NightVision: {
+        totalNightVision += 1;
+        break;
+      }
+      case MinecraftEffectTypes.Oozing: {
+        totalOozing += 1;
+        break;
+      }
+      case MinecraftEffectTypes.Poison: {
+        totalPoison += 1;
+        break;
+      }
+      case MinecraftEffectTypes.RaidOmen: {
+        totalRaidOmen += 1;
+        break;
+      }
+      case MinecraftEffectTypes.Regeneration: {
+        totalRegeneration += 1;
+        break;
+      }
+      case MinecraftEffectTypes.Resistance: {
+        totalResistance += 1;
+        break;
+      }
+      case MinecraftEffectTypes.Saturation: {
+        totalSaturation += 1;
+        break;
+      }
+      case MinecraftEffectTypes.SlowFalling: {
+        totalSlowFalling += 1;
+        break;
+      }
+      case MinecraftEffectTypes.Slowness: {
+        totalSlowness += 1;
+        break;
+      }
+      case MinecraftEffectTypes.Speed: {
+        totalSpeed += 1;
+        break;
+      }
+      case MinecraftEffectTypes.Strength: {
+        totalStrength += 1;
+        break;
+      }
+      case MinecraftEffectTypes.TrialOmen: {
+        totalTrialOmen += 1;
+        break;
+      }
+      case MinecraftEffectTypes.VillageHero: {
+        totalVillageHero += 1;
+        break;
+      }
+      case MinecraftEffectTypes.WaterBreathing: {
+        totalWaterBreathing += 1;
+        break;
+      }
+      case MinecraftEffectTypes.Weakness: {
+        totalWeakness += 1;
+        break;
+      }
+      case MinecraftEffectTypes.Weaving: {
+        totalWeaving += 1;
+        break;
+      }
+      case MinecraftEffectTypes.WindCharged: {
+        totalWindCharged += 1;
+        break;
+      }
+      case MinecraftEffectTypes.Wither: {
+        totalWither += 1;
+        break;
+      }
+      default:
+        break;
+    }
+  }
+  for (let effect of effects) {
+    let effectDuration = Number(world7.getDynamicProperty("poke_pfe:setEffectDuration") ?? ArmorEffectDuration);
     let ActiveEffects = player.getEffect(effect.effect) ?? false;
     if (!ActiveEffects) {
-      player.addEffect(effect.effect, ArmorEffectDuration, { showParticles: false, amplifier: 0 });
+      player.addEffect(effect.effect, effectDuration, { showParticles: false, amplifier: 0 });
     } else {
       let CurrentEffect = 0;
-      switch (false) {
-        case effect.effect != MinecraftEffectTypes.Strength: {
-          CurrentEffect = totalStrength;
+      switch (effect.effect) {
+        case MinecraftEffectTypes.Absorption: {
+          CurrentEffect = totalAbsorption;
           break;
         }
-        case effect.effect != MinecraftEffectTypes.Speed: {
-          CurrentEffect = totalSpeed;
+        case MinecraftEffectTypes.BadOmen: {
+          CurrentEffect = totalBadOmen;
           break;
         }
-        case effect.effect != MinecraftEffectTypes.Resistance: {
-          CurrentEffect = totalResistance;
+        case MinecraftEffectTypes.Blindness: {
+          CurrentEffect = totalBlindness;
           break;
         }
-        case effect.effect != MinecraftEffectTypes.Regeneration: {
-          CurrentEffect = totalRegeneration;
+        case MinecraftEffectTypes.ConduitPower: {
+          CurrentEffect = totalConduitPower;
+          effectDuration = SensitiveArmorEffectDuration;
           break;
         }
-        case effect.effect != MinecraftEffectTypes.JumpBoost: {
-          CurrentEffect = totalJumpBoost;
+        case MinecraftEffectTypes.Darkness: {
+          CurrentEffect = totalDarkness;
           break;
         }
-        case effect.effect != MinecraftEffectTypes.Slowness: {
-          CurrentEffect = totalSlowness;
+        case MinecraftEffectTypes.FatalPoison: {
+          CurrentEffect = totalFatalPoison;
           break;
         }
-        case effect.effect != MinecraftEffectTypes.HealthBoost: {
-          CurrentEffect = totalHealthBoost;
+        case MinecraftEffectTypes.FireResistance: {
+          CurrentEffect = totalFireResistance;
           break;
         }
-        case effect.effect != MinecraftEffectTypes.VillageHero: {
-          CurrentEffect = totalVillageHero;
-          break;
-        }
-        case effect.effect != MinecraftEffectTypes.Saturation: {
-          CurrentEffect = totalSaturation;
-          break;
-        }
-        case effect.effect != MinecraftEffectTypes.Haste: {
+        case MinecraftEffectTypes.Haste: {
           CurrentEffect = totalHaste;
           break;
         }
+        case MinecraftEffectTypes.HealthBoost: {
+          CurrentEffect = totalHealthBoost;
+          break;
+        }
+        case MinecraftEffectTypes.Hunger: {
+          CurrentEffect = totalHunger;
+          break;
+        }
+        case MinecraftEffectTypes.Infested: {
+          CurrentEffect = totalInfested;
+          break;
+        }
+        case MinecraftEffectTypes.InstantDamage: {
+          CurrentEffect = totalInstantDamage;
+          break;
+        }
+        case MinecraftEffectTypes.InstantHealth: {
+          CurrentEffect = totalInstantHealth;
+          break;
+        }
+        case MinecraftEffectTypes.Invisibility: {
+          CurrentEffect = totalInvisibility;
+          break;
+        }
+        case MinecraftEffectTypes.JumpBoost: {
+          CurrentEffect = totalJumpBoost;
+          break;
+        }
+        case MinecraftEffectTypes.Levitation: {
+          CurrentEffect = totalLevitation;
+          break;
+        }
+        case MinecraftEffectTypes.MiningFatigue: {
+          CurrentEffect = totalMiningFatigue;
+          break;
+        }
+        case MinecraftEffectTypes.Nausea: {
+          CurrentEffect = totalNausea;
+          break;
+        }
+        case MinecraftEffectTypes.NightVision: {
+          CurrentEffect = totalNightVision;
+          effectDuration = SensitiveArmorEffectDuration;
+          break;
+        }
+        case MinecraftEffectTypes.Oozing: {
+          CurrentEffect = totalOozing;
+          break;
+        }
+        case MinecraftEffectTypes.Poison: {
+          CurrentEffect = totalPoison;
+          break;
+        }
+        case MinecraftEffectTypes.RaidOmen: {
+          CurrentEffect = totalRaidOmen;
+          break;
+        }
+        case MinecraftEffectTypes.Regeneration: {
+          CurrentEffect = totalRegeneration;
+          break;
+        }
+        case MinecraftEffectTypes.Resistance: {
+          CurrentEffect = totalResistance;
+          break;
+        }
+        case MinecraftEffectTypes.Saturation: {
+          CurrentEffect = totalSaturation;
+          break;
+        }
+        case MinecraftEffectTypes.SlowFalling: {
+          CurrentEffect = totalSlowFalling;
+          break;
+        }
+        case MinecraftEffectTypes.Slowness: {
+          CurrentEffect = totalSlowness;
+          break;
+        }
+        case MinecraftEffectTypes.Speed: {
+          CurrentEffect = totalSpeed;
+          break;
+        }
+        case MinecraftEffectTypes.Strength: {
+          CurrentEffect = totalStrength;
+          break;
+        }
+        case MinecraftEffectTypes.TrialOmen: {
+          CurrentEffect = totalTrialOmen;
+          break;
+        }
+        case MinecraftEffectTypes.VillageHero: {
+          CurrentEffect = totalVillageHero;
+          break;
+        }
+        case MinecraftEffectTypes.WaterBreathing: {
+          CurrentEffect = totalWaterBreathing;
+          break;
+        }
+        case MinecraftEffectTypes.Weakness: {
+          CurrentEffect = totalWeakness;
+          break;
+        }
+        case MinecraftEffectTypes.Weaving: {
+          CurrentEffect = totalWeaving;
+          break;
+        }
+        case MinecraftEffectTypes.WindCharged: {
+          CurrentEffect = totalWindCharged;
+          break;
+        }
+        case MinecraftEffectTypes.Wither: {
+          CurrentEffect = totalWither;
+          break;
+        }
+        default:
+          break;
       }
-      player.addEffect(effect.effect, ArmorEffectDuration, { showParticles: false, amplifier: Math.min(ActiveEffects.amplifier + 1, totalPieces, effect.maxAmp, clampNumber(CurrentEffect - 1, 0, 255)) });
+      player.addEffect(
+        effect.effect,
+        effectDuration,
+        {
+          showParticles: false,
+          amplifier: clampNumber(Math.min(ActiveEffects.amplifier + 1, totalPieces, effect.max_amp, clampNumber(CurrentEffect - 1, 0, 255)), 0, 255)
+        }
+      );
     }
   }
+  for (let command of commands) {
+    if (command.disable_check) {
+      const disabledOptions = JSON.parse(world7.getDynamicProperty(PFEDisableConfigName).toString()) ?? PFEDisableConfigDefault;
+      switch (command.disable_check) {
+        case "cactus_radius": {
+          if (disabledOptions.cactusArmorRadius === false)
+            continue;
+          break;
+        }
+        case "death_radius": {
+          if (disabledOptions.deathArmorRadius === false)
+            continue;
+          break;
+        }
+      }
+    }
+    let bind_to = player;
+    switch (command.bind_to) {
+      case "player":
+        break;
+      case "dimension":
+        {
+          bind_to = player.dimension;
+          break;
+        }
+        ;
+    }
+    bind_to.runCommand(command.command);
+  }
+  let compiledRadiusEffects = [];
+  for (let radiusEffect of radius_effects) {
+    const effectDuration = Number(world7.getDynamicProperty("poke_pfe:setEffectDuration") ?? ArmorEffectDuration);
+    const targets = player.dimension.getPlayers({ location: player.location, maxDistance: radiusEffect.max_radius, excludeNames: radiusEffect.effect_self ? [player.name] : void 0 });
+    for (let target of targets) {
+      target.addEffect(radiusEffect.effect, radiusEffect?.duration ?? effectDuration, { showParticles: false, amplifier: radiusEffect.amp });
+    }
+  }
+}
+function startSetEffects() {
+  return system4.runInterval(() => {
+    console.warn(`TRIGGERED`);
+    if (world7.getDynamicProperty(`poke_pfe:disable_armor_effects`))
+      return;
+    const customParse = world7.getDynamicProperty(`poke_pfe:custom_effect_parser`) == true ? true : false;
+    for (let player of world7.getAllPlayers()) {
+      if (!player)
+        continue;
+      CheckEffects(player, JSON.stringify(player.getTags()).includes(`novelty:poke`), customParse);
+    }
+  }, Number(world7.getDynamicProperty("poke_pfe:setEffectInterval") ?? 20));
 }
 
 // scripts/quests.ts
@@ -8423,9 +6543,10 @@ function WaypointUISetIconCustom(player, item, waypoint, component) {
 }
 
 // scripts/main.ts
+var currentVersion = 102950;
 world10.afterEvents.playerJoin.subscribe((data) => {
   let birthdays = JSON.parse(world10.getDynamicProperty(`poke:birthdays`).toString());
-  system4.runTimeout(() => {
+  system5.runTimeout(() => {
     world10.getAllPlayers().forEach((player) => {
       if (player.id == data.playerId) {
         let currentTime = new Date(Date.now() + PokeTimeZoneOffset(player));
@@ -8460,7 +6581,7 @@ function PFETimeValidation() {
   if (currentTime.getMinutes() == 0) {
     PFEHourTimeDownEvents();
   } else {
-    system4.runTimeout(() => {
+    system5.runTimeout(() => {
       PFETimeValidation();
     }, Math.abs(60 - new Date(Date.now()).getSeconds()) * 20);
   }
@@ -8592,7 +6713,7 @@ function UpdatePost(block, value, up) {
   }
   block.setPermutation(block.permutation.withState(PostState, value));
 }
-system4.beforeEvents.startup.subscribe((data) => {
+system5.beforeEvents.startup.subscribe((data) => {
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:cycle_color",
     {
@@ -9107,6 +7228,7 @@ system4.beforeEvents.startup.subscribe((data) => {
           let UI = new ActionFormData10();
           UI.button({ translate: `translation.poke_pfe.bossEventConfig` }, `textures/poke/common/spawn_enabled`);
           UI.button({ translate: `translation.poke_pfe.disableConfig` }, `textures/poke/common/blacklist_add`);
+          UI.button({ translate: `%poke_pfe.miscOptions` }, `textures/poke/common/more_options`);
           UI.show(data2.source).then((response) => {
             let selection = 0;
             if (response.selection == selection) {
@@ -9119,6 +7241,29 @@ system4.beforeEvents.startup.subscribe((data) => {
               selection++;
             if (response.selection == selection) {
               PFEDisableConfigMainMenu(data2);
+            } else
+              selection++;
+            if (response.selection == selection) {
+              let UI2 = new ModalFormData5();
+              UI2.title({ translate: `%poke_pfe.miscOptions` });
+              UI2.label({ translate: `%poke_pfe.setEffects` });
+              UI2.divider();
+              UI2.slider({ translate: `%poke_pfe.effectDuration` }, 1, 30, { valueStep: 1, tooltip: { translate: `%poke_pfe.effectDuration.tooltip` }, defaultValue: Number(world10.getDynamicProperty("poke_pfe:setEffectDuration") ?? ArmorEffectDuration) / 20 });
+              UI2.slider({ translate: `%poke_pfe.applyInterval` }, 1, 10, { valueStep: 1, tooltip: { translate: `%poke_pfe.applyInterval.tooltip` }, defaultValue: Number(world10.getDynamicProperty("poke_pfe:setEffectInterval") ?? 1) / 20 });
+              UI2.show(data2.source).then((response2) => {
+                if (response2.canceled)
+                  return;
+                console.warn(JSON.stringify(response2.formValues));
+                world10.setDynamicProperty("poke_pfe:setEffectDuration", Number(response2.formValues?.at(2) ?? ArmorEffectDuration / 20) * 20);
+                world10.setDynamicProperty("poke_pfe:setEffectInterval", Number(response2.formValues?.at(3) ?? 1) * 20);
+                const intervalId = world10.getDynamicProperty("poke_pfe:setEffectIntervalId");
+                console.warn(intervalId);
+                if (intervalId) {
+                  system5.runInterval;
+                  system5.clearRun(intervalId);
+                  world10.setDynamicProperty("poke_pfe:setEffectIntervalId", startSetEffects());
+                }
+              });
             } else
               selection++;
             if (response.selection == selection || response.canceled) {
@@ -10326,6 +8471,8 @@ system4.beforeEvents.startup.subscribe((data) => {
   data.itemComponentRegistry.registerCustomComponent("poke_pfe:box_mining", new PFEBoxMiningComponent());
   data.itemComponentRegistry.registerCustomComponent("poke_pfe:quests", new PFEQuestComponent());
   data.itemComponentRegistry.registerCustomComponent("poke_pfe:waypoint_menu", new PFEWaypointComponent());
+  data.itemComponentRegistry.registerCustomComponent("poke_pfe:set_effects", {});
+  data.itemComponentRegistry.registerCustomComponent("poke_pfe:custom_upgrades", {});
   data.itemComponentRegistry.registerCustomComponent("poke_pfe:custom_quests_info", {});
   data.itemComponentRegistry.registerCustomComponent("poke_pfe:incompatible_addons", {});
   return;
@@ -10337,7 +8484,7 @@ world10.afterEvents.worldLoad.subscribe((data) => {
   world10.setDynamicProperty(PFECustomCraftQuestsPropertyID, JSON.stringify([]));
   world10.setDynamicProperty(PFECustomKillQuestsPropertyID, JSON.stringify([]));
   world10.setDynamicProperty(PFECustomArmorEffectDynamicProperty, JSON.stringify([]));
-  system4.runTimeout(() => {
+  system5.runTimeout(() => {
     PFETimeValidation();
   }, Math.abs(60 - new Date(Date.now()).getSeconds()) * 20);
   if (typeof world10.getDynamicProperty(PFEDisableConfigName) != "string") {
@@ -10359,23 +8506,15 @@ world10.afterEvents.worldLoad.subscribe((data) => {
   }
   initExampleStickers();
   ComputersCompat.init();
-  system4.runInterval(() => {
+  system5.runInterval(() => {
     PFEStartBossEvent();
   }, PFEBossEventTicks());
-  system4.runInterval(() => {
-    if (world10.getDynamicProperty(`poke_pfe:disable_armor_effects`))
-      return;
-    const customParse = world10.getDynamicProperty(`poke_pfe:custom_effect_parser`) == true ? true : false;
-    for (let player of world10.getAllPlayers()) {
-      if (!player)
-        continue;
-      CheckEffects(player, PFEArmorEffectData, JSON.stringify(player.getTags()).includes(`novelty:poke`), customParse);
-    }
-  }, 20);
+  world10.setDynamicProperty("poke_pfe:setEffectIntervalId", startSetEffects());
+  system5.sendScriptEvent("poke_pfe:dupe_check", `${currentVersion}`);
   console.warn(`Within PFE: ${JSON.stringify(new ItemStack8("poke_pfe:custom_data_storage", 1).getComponent(`poke_pfe:incompatible_addons`))}`);
 });
 var DataStorageDynamicPropertyId = "registered_data_storage_items";
-system4.afterEvents.scriptEventReceive.subscribe((data) => {
+system5.afterEvents.scriptEventReceive.subscribe((data) => {
   switch (data.id) {
     case `poke_pfe:enabled`: {
       world10.getDimension(MinecraftDimensionTypes.Overworld).runCommand(`scriptevent ${data.message} true`);
@@ -10419,6 +8558,15 @@ system4.afterEvents.scriptEventReceive.subscribe((data) => {
       let item = data.sourceEntity?.getComponent(EntityComponentTypes8.Equippable)?.getEquipment(EquipmentSlot8.Mainhand);
       item?.setDynamicProperty(`poke:ammo`, JSON.stringify({ v: 2, max: 32, amount: 12, entityId: "poke:galaxy_arrow", id: "poke:galaxy_arrow", upgrades: [{ id: "pfe:capacity", level: 1, maxLevel: void 0 }, { id: "pfe:flaming", level: 0, maxLevel: 1 }] }));
       data.sourceEntity?.getComponent(EntityComponentTypes8.Equippable)?.setEquipment(EquipmentSlot8.Mainhand, item);
+    }
+    case "poke_pfe:dupe_check": {
+      const Version = Number(data.message);
+      if (Version < currentVersion) {
+        world10.sendMessage(`\xA7f[\xA7eWARNING\xA7f] Multiple versions PFE are applied to this world, to avoid any issue: please remove any old versions || \xA7eOld version: \xA7fv${data.message.substring(0, 1)}.${Number(data.message.substring(1, 3))}.${Number(`${data.message}`.substring(3, 5))}${Number(`${data.message}`.substring(5)) != 0 ? `${data.message}`.substring(5) : ""}`);
+        console.warn(`Multiple versions PFE found:
+- Old version: ${Version} (v${data.message.substring(0, 1)}.${Number(data.message.substring(1, 3))}.${Number(`${data.message}`.substring(3, 5))}${Number(`${data.message}`.substring(5)) != 0 ? `${data.message}`.substring(5) : ""})
+- Current version: ${currentVersion} (v${`${currentVersion}`.substring(0, 1)}.${Number(`${currentVersion}`.substring(1, 3))}.${Number(`${currentVersion}`.substring(3, 5))}${Number(`${currentVersion}`.substring(5)) != 0 ? `${currentVersion}`.substring(5) : ""})`);
+      }
     }
     default:
       break;

@@ -29,6 +29,186 @@
               "components": {
                 "type": "object",
                 "properties": {
+                  "poke_pfe:set_effects": {
+                    "type": "array",
+                    "items": {
+                      "oneOf": [
+                        {
+                          "properties": {
+                            "version": {
+                              "type": "number",
+                              "default": 1
+                            },
+                            "mode": {
+                              "type": "string",
+                              "enum": [
+                                "effect"
+                              ]
+                            },
+                            "effect": {
+                              "enum": [
+                                "minecraft:absorption",
+                                "minecraft:bad_omen",
+                                "minecraft:blindness",
+                                "minecraft:conduit_power",
+                                "minecraft:darkness",
+                                "minecraft:fatal_poison",
+                                "minecraft:fire_resistance",
+                                "minecraft:haste",
+                                "minecraft:health_boost",
+                                "minecraft:hunger",
+                                "minecraft:infested",
+                                "minecraft:instant_damage",
+                                "minecraft:instant_health",
+                                "minecraft:invisibility",
+                                "minecraft:jump_boost",
+                                "minecraft:levitation",
+                                "minecraft:mining_fatigue",
+                                "minecraft:nausea",
+                                "minecraft:night_vision",
+                                "minecraft:oozing",
+                                "minecraft:poison",
+                                "minecraft:raid_omen",
+                                "minecraft:regeneration",
+                                "minecraft:resistance",
+                                "minecraft:saturation",
+                                "minecraft:slow_falling",
+                                "minecraft:slowness",
+                                "minecraft:speed",
+                                "minecraft:strength",
+                                "minecraft:trial_omen",
+                                "minecraft:village_hero",
+                                "minecraft:water_breathing",
+                                "minecraft:weakness",
+                                "minecraft:weaving",
+                                "minecraft:wind_charged",
+                                "minecraft:wither"
+                              ]
+                            },
+                            "max_amp": {
+                              "type": "number",
+                              "default": 5
+                            }
+                          },
+                          "required": [
+                            "effect",
+                            "max_amp"
+                          ]
+                        },
+                        {
+                          "properties": {
+                            "version": {
+                              "type": "number",
+                              "default": 1
+                            },
+                            "mode": {
+                              "type": "string",
+                              "enum": [
+                                "radius_effect"
+                              ]
+                            },
+                            "amp": {
+                              "type": "number",
+                              "default": 0
+                            },
+                            "max_radius": {
+                              "type": "number",
+                              "default": 5
+                            },
+                            "selector": {
+                              "type": "string",
+                              "enum": [
+                                "player"
+                              ],
+                              "default": "player"
+                            },
+                            "duration": {
+                              "type": "number",
+                              "default": 300
+                            },
+                            "effect_self": {
+                              "type": "boolean",
+                              "default": false
+                            },
+                            "effect": {
+                              "enum": [
+                                "minecraft:absorption",
+                                "minecraft:bad_omen",
+                                "minecraft:blindness",
+                                "minecraft:conduit_power",
+                                "minecraft:darkness",
+                                "minecraft:fatal_poison",
+                                "minecraft:fire_resistance",
+                                "minecraft:haste",
+                                "minecraft:health_boost",
+                                "minecraft:hunger",
+                                "minecraft:infested",
+                                "minecraft:instant_damage",
+                                "minecraft:instant_health",
+                                "minecraft:invisibility",
+                                "minecraft:jump_boost",
+                                "minecraft:levitation",
+                                "minecraft:mining_fatigue",
+                                "minecraft:nausea",
+                                "minecraft:night_vision",
+                                "minecraft:oozing",
+                                "minecraft:poison",
+                                "minecraft:raid_omen",
+                                "minecraft:regeneration",
+                                "minecraft:resistance",
+                                "minecraft:saturation",
+                                "minecraft:slow_falling",
+                                "minecraft:slowness",
+                                "minecraft:speed",
+                                "minecraft:strength",
+                                "minecraft:trial_omen",
+                                "minecraft:village_hero",
+                                "minecraft:water_breathing",
+                                "minecraft:weakness",
+                                "minecraft:weaving",
+                                "minecraft:wind_charged",
+                                "minecraft:wither"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "mode",
+                            "effect",
+                            "amp"
+                          ]
+                        },
+                        {
+                          "properties": {
+                            "version": {
+                              "type": "number",
+                              "default": 1
+                            },
+                            "mode": {
+                              "type": "string",
+                              "enum": [
+                                "command"
+                              ]
+                            },
+                            "command": {
+                              "type": "string"
+                            },
+                            "bind_to": {
+                              "type": "string",
+                              "enum": [
+                                "player",
+                                "dimension"
+                              ],
+                              "default": "player"
+                            }
+                          },
+                          "required": [
+                            "mode",
+                            "command"
+                          ]
+                        },
+                      ],
+                    }
+                  },
                   "poke_pfe:upgradeable": {
                     "type": "object",
                     "properties": {
@@ -38,6 +218,7 @@
                       },
                       "upgrade_ids": {
                         "type": "array",
+                        "uniqueItems": true,
                         "items": {
                           "type": "string",
                           "enum": [
@@ -2263,7 +2444,51 @@
                                           {
                                             "type": "string",
                                             "enum": [
-                                              "poke:repair_core"
+                                              "poke:repair_core",
+                                              "poke:radium_ingot",
+                                              "poke:radium_block",
+                                              "poke:radium_nugget",
+                                              "poke:cobalt_ingot",
+                                              "poke:cobalt_block",
+                                              "poke:cobalt_nugget",
+                                              "poke:shade_ingot",
+                                              "poke:shade_block",
+                                              "poke:shade_nugget",
+                                              "poke:onyx_ingot",
+                                              "poke:onyx_block",
+                                              "poke:onyx_nugget",
+                                              "poke:holy_ingot",
+                                              "poke:holy_block",
+                                              "poke:holy_nugget",
+                                              "poke:hellish_ingot",
+                                              "poke:hellish_block",
+                                              "poke:hellish_nugget",
+                                              "poke:godly_ingot",
+                                              "poke:godly_block",
+                                              "poke:godly_nugget",
+                                              "poke:demonic_ingot",
+                                              "poke:demonic_block",
+                                              "poke:demonic_nugget",
+                                              "poke:galaxy_ingot",
+                                              "poke:galaxy_block",
+                                              "poke:galaxy_nugget",
+                                              "poke:void_ingot",
+                                              "poke:void_block",
+                                              "poke:void_nugget",
+                                              "poke:astral_ingot",
+                                              "poke:astral_block",
+                                              "poke:astral_nugget",
+                                              "poke:nebula_ingot",
+                                              "poke:nebula_block",
+                                              "poke:nebula_nugget",
+                                              "poke:medic_ingot",
+                                              "poke:medic_block",
+                                              "poke:medic_nugget",
+                                              "poke:death_ingot",
+                                              "poke:death_block",
+                                              "poke:death_nugget",
+                                              "poke:molten_slimeball",
+                                              "poke:ember_block"
                                             ]
                                           }
                                         ],

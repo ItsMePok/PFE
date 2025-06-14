@@ -37,7 +37,8 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core"
+							"poke:repair_core",
+							"poke:cobalt_block"
 						],
 						"repair_amount": "query.max_durability"
 					},
@@ -57,8 +58,8 @@
 			},
 			"minecraft:tags": {
 				"tags": [
-					"poke_pfe:cobalt_armor_effects",
 					"minecraft:is_armor",
+					"novelty:is_foot",
 					"minecraft:trimmable_armors"
 				]
 			}

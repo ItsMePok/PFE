@@ -32,7 +32,8 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core"
+							"poke:repair_core",
+							"poke:medic_block"
 						],
 						"repair_amount": "query.max_durability"
 					},
@@ -50,6 +51,28 @@
 					}
 				]
 			},
+			"poke_pfe:set_effects": [
+				{
+					"effect": "minecraft:health_boost",
+					"max_amp": 3
+				},
+				{
+					"effect": "minecraft:resistance",
+					"max_amp": 1
+				},
+				{
+					"version": 1,
+					"mode": "effect",
+					"effect": "minecraft:speed",
+					"max_amp": 1
+				},
+				{
+					"version": 1,
+					"mode": "command",
+					"command": "execute at @s as @a[r=10] run effect @s instant_health 0 0 true",
+					"bind_to": "player"
+				}
+			],
 			"minecraft:tags": {
 				"tags": [
 					"minecraft:is_armor",

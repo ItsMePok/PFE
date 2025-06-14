@@ -16,6 +16,9 @@
 			"minecraft:hand_equipped": {
 				"value": true
 			},
+			"poke_pfe:upgradeable": {
+				"version": 1
+			},
 			"minecraft:cooldown": {
 				"category": "poke:jackhammer",
 				"duration": 0.25

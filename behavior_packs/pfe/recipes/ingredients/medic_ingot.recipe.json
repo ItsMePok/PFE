@@ -55,12 +55,10 @@
                 "item": "poke:cobalt_ingot"
             }
         },
-        "result": [
-            {
-                "item": "poke:medic_ingot",
-                "count": 4
-            }
-        ],
+        "result": {
+            "item": "poke:medic_ingot",
+            "count": 4
+        },
         "priority": 0
     }
 }

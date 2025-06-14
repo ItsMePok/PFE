@@ -36,7 +36,8 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core"
+							"poke:repair_core",
+							"poke:holy_block"
 						],
 						"repair_amount": "query.max_durability"
 					},
@@ -45,15 +46,34 @@
 							"poke:holy_ingot"
 						],
 						"repair_amount": "query.max_durability*0.25"
+					},
+					{
+						"items": [
+							"poke:holy_nugget"
+						],
+						"repair_amount": "query.max_durability * 0.028"
 					}
 				]
 			},
+			"poke_pfe:set_effects": [
+				{
+					"effect": "minecraft:regeneration",
+					"max_amp": 2
+				},
+				{
+					"effect": "minecraft:resistance",
+					"max_amp": 1
+				},
+				{
+					"effect": "minecraft:speed",
+					"max_amp": 1
+				}
+			],
 			"minecraft:tags": {
 				"tags": [
 					"pfe:SingleArmor",
 					"minecraft:is_armor",
-					"minecraft:trimmable_armors",
-					"poke_pfe:holy_armor_effects"
+					"minecraft:trimmable_armors"
 				]
 			}
 		}

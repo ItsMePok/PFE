@@ -143,7 +143,7 @@
 				"destroy_speeds": [
 					{
 						"block": {
-							"tags": "q.any_tag('minecraft:is_shovel_item_destructible','minecraft:is_axe_item_destructible','minecraft:is_hoe_item_destructible','minecraft:is_pickaxe_item_destructible') &&  !query.any_tag('minecraft:stone_tier_destructible', 'minecraft:gold_tier_destructible', 'minecraft:iron_tier_destructible', 'minecraft:diamond_tier_destructible', 'minecraft:netherite_tier_destructible')"
+							"tags": "q.any_tag('minecraft:is_shears_item_destructible','minecraft:is_shovel_item_destructible','minecraft:is_axe_item_destructible','minecraft:is_hoe_item_destructible','minecraft:is_pickaxe_item_destructible') &&  !query.any_tag('minecraft:stone_tier_destructible', 'minecraft:gold_tier_destructible', 'minecraft:iron_tier_destructible', 'minecraft:diamond_tier_destructible', 'minecraft:netherite_tier_destructible')"
 						},
 						"speed": 6
 					}

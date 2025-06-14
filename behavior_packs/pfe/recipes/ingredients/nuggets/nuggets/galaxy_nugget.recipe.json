@@ -20,6 +20,7 @@
 		"result": {
 			"item": "poke:galaxy_nugget",
 			"count": 9
-		}
+		},
+		"group": "nuggets"
 	}
 }

@@ -32,7 +32,8 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core"
+							"poke:repair_core",
+							"poke:death_block"
 						],
 						"repair_amount": "query.max_durability"
 					},
@@ -50,12 +51,39 @@
 					}
 				]
 			},
+			"poke_pfe:set_effects": [
+				{
+					"effect": "minecraft:health_boost",
+					"max_amp": 3
+				},
+				{
+					"effect": "minecraft:resistance",
+					"max_amp": 2
+				},
+				{
+					"effect": "minecraft:regeneration",
+					"max_amp": 2
+				},
+				{
+					"effect": "minecraft:fire_resistance",
+					"max_amp": 0
+				},
+				{
+					"mode": "command",
+					"command": "execute at @s as @a[rm=0.1,r=10] run damage @s 3 wither",
+					"bind_to": "player"
+				},
+				{
+					"mode": "command",
+					"command": "particle poke:death_r10 ~ ~-1 ~",
+					"bind_to": "player"
+				}
+			],
 			"minecraft:tags": {
 				"tags": [
 					"minecraft:is_armor",
 					"minecraft:trimmable_armors",
-					"novelty:is_foot",
-					"poke_pfe:death_armor_effects"
+					"novelty:is_foot"
 				]
 			}
 		}

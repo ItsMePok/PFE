@@ -11,7 +11,7 @@
       "tag": "minecraft:trim_templates"
     },
     "base": {
-      "tag": "pfe:robe"
+      "tag": "pfe:is_robe"
     },
     "addition": {
       "tag": "minecraft:trim_materials"

@@ -36,7 +36,8 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core"
+							"poke:repair_core",
+							"poke:astral_block"
 						],
 						"repair_amount": "query.max_durability"
 					},
@@ -54,9 +55,34 @@
 					}
 				]
 			},
+			"poke_pfe:set_effects": [
+				{
+					"effect": "minecraft:regeneration",
+					"max_amp": 3
+				},
+				{
+					"effect": "minecraft:resistance",
+					"max_amp": 3
+				},
+				{
+					"effect": "minecraft:speed",
+					"max_amp": 3
+				},
+				{
+					"effect": "minecraft:water_breathing",
+					"max_amp": 0
+				},
+				{
+					"effect": "minecraft:haste",
+					"max_amp": 3
+				},
+				{
+					"effect": "minecraft:health_boost",
+					"max_amp": 2
+				}
+			],
 			"minecraft:tags": {
 				"tags": [
-					"poke_pfe:astral_armor_effects",
 					"minecraft:is_armor",
 					"minecraft:trimmable_armors"
 				]

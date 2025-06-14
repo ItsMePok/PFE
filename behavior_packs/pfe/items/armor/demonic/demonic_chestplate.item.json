@@ -37,7 +37,8 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core"
+							"poke:repair_core",
+							"poke:demonic_block"
 						],
 						"repair_amount": "query.max_durability"
 					},
@@ -46,12 +47,35 @@
 							"poke:demonic_ingot"
 						],
 						"repair_amount": "query.max_durability*0.25"
+					},
+					{
+						"items": [
+							"poke:demonic_nugget"
+						],
+						"repair_amount": "query.max_durability*0.028"
 					}
 				]
 			},
+			"poke_pfe:set_effects": [
+				{
+					"effect": "minecraft:strength",
+					"max_amp": 1
+				},
+				{
+					"effect": "minecraft:regeneration",
+					"max_amp": 2
+				},
+				{
+					"effect": "minecraft:resistance",
+					"max_amp": 1
+				},
+				{
+					"effect": "minecraft:fire_resistance",
+					"max_amp": 0
+				}
+			],
 			"minecraft:tags": {
 				"tags": [
-					"poke_pfe:demonic_armor_effects",
 					"novelty:is_back",
 					"minecraft:is_armor",
 					"minecraft:trimmable_armors"

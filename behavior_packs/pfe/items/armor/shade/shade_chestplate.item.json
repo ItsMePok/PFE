@@ -33,7 +33,8 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core"
+							"poke:repair_core",
+							"poke:shade_block"
 						],
 						"repair_amount": "query.max_durability"
 					},
@@ -42,12 +43,35 @@
 							"poke:shade_ingot"
 						],
 						"repair_amount": "query.max_durability*0.25"
+					},
+					{
+						"items": [
+							"poke:shade_nugget"
+						],
+						"repair_amount": "query.max_durability*0.028"
 					}
 				]
 			},
+			"poke_pfe:set_effects": [
+				{
+					"effect": "minecraft:strength",
+					"max_amp": 2
+				},
+				{
+					"effect": "minecraft:regeneration",
+					"max_amp": 2
+				},
+				{
+					"effect": "minecraft:resistance",
+					"max_amp": 2
+				},
+				{
+					"effect": "minecraft:slowness",
+					"max_amp": 2
+				}
+			],
 			"minecraft:tags": {
 				"tags": [
-					"poke_pfe:shade_armor_effects",
 					"novelty:is_back",
 					"minecraft:is_armor",
 					"minecraft:trimmable_armors"

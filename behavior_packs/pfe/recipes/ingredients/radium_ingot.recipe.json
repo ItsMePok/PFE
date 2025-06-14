@@ -37,12 +37,10 @@
                 "item": "poke:astral_ingot"
             }
         },
-        "result": [
-            {
-                "item": "poke:radium_ingot",
-                "count": 4
-            }
-        ],
+        "result": {
+            "item": "poke:radium_ingot",
+            "count": 4
+        },
         "priority": 0
     }
 }

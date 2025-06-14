@@ -45,12 +45,17 @@
 					}
 				]
 			},
+			"poke_pfe:set_effects": [
+				{
+					"effect": "minecraft:speed",
+					"max_amp": 3
+				}
+			],
 			"minecraft:tags": {
 				"tags": [
 					"minecraft:is_armor",
 					"novelty:is_foot",
-					"minecraft:trimmable_armors",
-					"poke_pfe:speed_boots_effects"
+					"minecraft:trimmable_armors"
 				]
 			}
 		}

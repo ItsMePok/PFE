@@ -32,7 +32,8 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core"
+							"poke:repair_core",
+							"poke:godly_block"
 						],
 						"repair_amount": "query.max_durability"
 					},
@@ -50,11 +51,32 @@
 					}
 				]
 			},
+			"poke_pfe:set_effects": [
+				{
+					"effect": "minecraft:strength",
+					"max_amp": 1
+				},
+				{
+					"effect": "minecraft:regeneration",
+					"max_amp": 2
+				},
+				{
+					"effect": "minecraft:resistance",
+					"max_amp": 1
+				},
+				{
+					"effect": "minecraft:speed",
+					"max_amp": 1
+				},
+				{
+					"effect": "minecraft:slow_falling",
+					"max_amp": 0
+				}
+			],
 			"minecraft:tags": {
 				"tags": [
 					"minecraft:is_armor",
-					"minecraft:trimmable_armors",
-					"poke_pfe:godly_armor_effects"
+					"minecraft:trimmable_armors"
 				]
 			}
 		}

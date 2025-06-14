@@ -20,6 +20,7 @@
 		"result": {
 			"item": "poke:onyx_nugget",
 			"count": 9
-		}
+		},
+		"group": "nuggets"
 	}
 }

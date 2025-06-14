@@ -21,11 +21,28 @@
 				"slot": "slot.armor.legs",
 				"protection": 25
 			},
+			"poke_pfe:set_effects": [
+				{
+					"effect": "minecraft:regeneration",
+					"max_amp": 2
+				},
+				{
+					"effect": "minecraft:resistance",
+					"max_amp": 3
+				},
+				{
+					"effect": "minecraft:slowness",
+					"max_amp": 1
+				},
+				{
+					"effect": "minecraft:haste",
+					"max_amp": 3
+				}
+			],
 			"minecraft:tags": {
 				"tags": [
 					"minecraft:is_armor",
-					"minecraft:trimmable_armors",
-					"poke_pfe:banished_armor_effects"
+					"minecraft:trimmable_armors"
 				]
 			}
 		}

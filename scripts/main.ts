@@ -5,14 +5,14 @@ import { PFEBoxMiningComponent } from "./boxMining";
 import { PokeClosestCardinal, PokeDamageItemUB, PokeDecrementStack, PokeSpawnLootTable } from "./commonFunctions";
 import { PokeBirthdays, PokeTimeConfigUIMainMenu, PokeTimeGreeting, PokeTimeZoneOffset } from "./time";
 import { PFEBoltBowsComponent } from "./boltbow";
-import { PFEDisableConfigOptions, PFEDisableConfigDefault, PFEDisableConfigMainMenu, PFEDisableConfigName, PFEDisabledOnUseItems } from "./disableConfig";
-import { ActionFormData } from "@minecraft/server-ui";
-import { CheckEffects, PFEArmorEffectData, PFECustomArmorEffectDynamicProperty, PFECustomEffectInfo } from "./armorEffects";
+import { PFEDisableConfigOptions, PFEDisableConfigDefault, PFEDisableConfigMainMenu, PFEDisableConfigName } from "./disableConfig";
+import { ActionFormData, ModalFormData } from "@minecraft/server-ui";
+import { ArmorEffectDuration, PFECustomArmorEffectDynamicProperty, PFECustomEffectInfo, startSetEffects } from "./armorEffects";
 import { PFECustomCraftQuestsPropertyID, PFECustomFarmQuestsPropertyID, PFECustomKillQuestsPropertyID, PFECustomMineQuestsPropertyID, PFEQuestComponent } from "./quests";
 import ComputersCompat, { initExampleStickers } from "./addonCompatibility/jigarbov";
-import { PFEWaypointComponent, PFEWaypointDefaultConfig, PokePFEWaypointConfig, waypointComponentOptions, WaypointDynamicPropertyID, WaypointUIMainMenu } from "./waypoints";
+import { PFEWaypointComponent } from "./waypoints";
 import { PFEUpgradeableComponent } from "./upgrades";
-
+const currentVersion = 102950 // PFE Version (ex: 102950 = v1.2.95)
 
 
 world.afterEvents.playerJoin.subscribe((data => {
@@ -468,6 +468,7 @@ system.beforeEvents.startup.subscribe(data => {
                 let UI = new ActionFormData()
                 UI.button({ translate: `translation.poke_pfe.bossEventConfig` }, `textures/poke/common/spawn_enabled`)
                 UI.button({ translate: `translation.poke_pfe.disableConfig` }, `textures/poke/common/blacklist_add`)
+                UI.button({ translate: `%poke_pfe.miscOptions` }, `textures/poke/common/more_options`)
                 UI.show(data.source).then(response => {
                     let selection = 0
                     if (response.selection == selection) {
@@ -480,6 +481,28 @@ system.beforeEvents.startup.subscribe(data => {
                     } else selection++
                     if (response.selection == selection) {
                         PFEDisableConfigMainMenu(data)
+                    } else selection++
+                    if (response.selection == selection) {
+                        let UI = new ModalFormData()
+                        UI.title({ translate: `%poke_pfe.miscOptions` })
+                        UI.label({ translate: `%poke_pfe.setEffects` })
+                        UI.divider()
+                        UI.slider({ translate: `%poke_pfe.effectDuration` }, 1, 30, { valueStep: 1, tooltip: { translate: `%poke_pfe.effectDuration.tooltip` }, defaultValue: Number(world.getDynamicProperty("poke_pfe:setEffectDuration") ?? ArmorEffectDuration) / 20 })
+                        UI.slider({ translate: `%poke_pfe.applyInterval` }, 1, 10, { valueStep: 1, tooltip: { translate: `%poke_pfe.applyInterval.tooltip` }, defaultValue: Number(world.getDynamicProperty("poke_pfe:setEffectInterval") ?? 1) / 20 })
+                        UI.show(data.source).then(response => {
+                            if (response.canceled) return;
+                            console.warn(JSON.stringify(response.formValues))
+                            world.setDynamicProperty("poke_pfe:setEffectDuration", Number(response.formValues?.at(2) ?? ArmorEffectDuration / 20) * 20)
+                            world.setDynamicProperty("poke_pfe:setEffectInterval", (Number(response.formValues?.at(3) ?? 1)) * 20)
+                            const intervalId = <number | undefined>world.getDynamicProperty("poke_pfe:setEffectIntervalId")
+                            console.warn(intervalId)
+                            if (intervalId) {
+                                system.runInterval
+                                system.clearRun(intervalId)
+                                world.setDynamicProperty("poke_pfe:setEffectIntervalId", startSetEffects())
+                            }
+
+                        })
                     } else selection++
                     if ((response.selection == selection) || response.canceled) {
                         return
@@ -1599,7 +1622,9 @@ system.beforeEvents.startup.subscribe(data => {
     data.itemComponentRegistry.registerCustomComponent("poke_pfe:box_mining", new PFEBoxMiningComponent());
     data.itemComponentRegistry.registerCustomComponent("poke_pfe:quests", new PFEQuestComponent());
     data.itemComponentRegistry.registerCustomComponent("poke_pfe:waypoint_menu", new PFEWaypointComponent());
-    // These component exist only to use as data storage and do not provide any function
+    // These components exist to allow item.getComponent() to access data from applicable items/blocks
+    data.itemComponentRegistry.registerCustomComponent("poke_pfe:set_effects", {});
+    data.itemComponentRegistry.registerCustomComponent("poke_pfe:custom_upgrades", {});
     data.itemComponentRegistry.registerCustomComponent("poke_pfe:custom_quests_info", {});
     data.itemComponentRegistry.registerCustomComponent("poke_pfe:incompatible_addons", {});
     return;
@@ -1643,14 +1668,8 @@ world.afterEvents.worldLoad.subscribe((data) => {
     system.runInterval(() => {
         PFEStartBossEvent()
     }, PFEBossEventTicks());
-    system.runInterval(() => {
-        if (world.getDynamicProperty(`poke_pfe:disable_armor_effects`)) return;
-        const customParse = world.getDynamicProperty(`poke_pfe:custom_effect_parser`) == true ? true : false
-        for (let player of world.getAllPlayers()) {
-            if (!player) continue;
-            CheckEffects(player, PFEArmorEffectData, JSON.stringify(player.getTags()).includes(`novelty:poke`), customParse)
-        }
-    }, 20)
+    world.setDynamicProperty("poke_pfe:setEffectIntervalId", startSetEffects())
+    system.sendScriptEvent("poke_pfe:dupe_check", `${currentVersion}`)
     console.warn(`Within PFE: ${JSON.stringify(new ItemStack("poke_pfe:custom_data_storage", 1).getComponent(`poke_pfe:incompatible_addons`))}`)
 })
 const DataStorageDynamicPropertyId = "registered_data_storage_items"
@@ -1718,6 +1737,14 @@ system.afterEvents.scriptEventReceive.subscribe((data) => {
             let item = data.sourceEntity?.getComponent(EntityComponentTypes.Equippable)?.getEquipment(EquipmentSlot.Mainhand)
             item?.setDynamicProperty(`poke:ammo`, JSON.stringify({ v: 2, max: 32, amount: 12, entityId: "poke:galaxy_arrow", id: "poke:galaxy_arrow", upgrades: [{ id: "pfe:capacity", level: 1, maxLevel: undefined }, { id: "pfe:flaming", level: 0, maxLevel: 1 }] }))
             data.sourceEntity?.getComponent(EntityComponentTypes.Equippable)?.setEquipment(EquipmentSlot.Mainhand, item)
+        }
+        // This is to check if there are multiple versions of PFE applied to a world at a time
+        case ("poke_pfe:dupe_check"): {
+            const Version = Number(data.message)
+            if (Version < currentVersion) {
+                world.sendMessage(`§f[§eWARNING§f] Multiple versions PFE are applied to this world, to avoid any issue: please remove any old versions || §eOld version: §fv${data.message.substring(0, 1)}.${Number(data.message.substring(1, 3))}.${Number(`${data.message}`.substring(3, 5))}${Number(`${data.message}`.substring(5)) != 0 ? `${data.message}`.substring(5) : ""}`)
+                console.warn(`Multiple versions PFE found:\n- Old version: ${Version} (v${data.message.substring(0, 1)}.${Number(data.message.substring(1, 3))}.${Number(`${data.message}`.substring(3, 5))}${Number(`${data.message}`.substring(5)) != 0 ? `${data.message}`.substring(5) : ""})\n- Current version: ${currentVersion} (v${`${currentVersion}`.substring(0, 1)}.${Number(`${currentVersion}`.substring(1, 3))}.${Number(`${currentVersion}`.substring(3, 5))}${Number(`${currentVersion}`.substring(5)) != 0 ? `${currentVersion}`.substring(5) : ""})`)
+            }
         }
         default: break;
     }

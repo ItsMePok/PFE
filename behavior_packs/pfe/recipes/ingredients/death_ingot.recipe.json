@@ -46,12 +46,10 @@
                 "item": "poke:onyx_ingot"
             }
         },
-        "result": [
-            {
-                "item": "poke:death_ingot",
-                "count": 4
-            }
-        ],
+        "result": {
+            "item": "poke:death_ingot",
+            "count": 4
+        },
         "priority": 0
     }
 }

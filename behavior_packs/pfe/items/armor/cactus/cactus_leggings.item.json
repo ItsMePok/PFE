@@ -48,9 +48,15 @@
 					}
 				]
 			},
+			"poke_pfe:set_effects": [
+				{
+					"mode": "command",
+					"command": "execute at @s as @a[rm=0.1,r=10] run damage @s 1 wither",
+					"bind_to": "player"
+				}
+			],
 			"minecraft:tags": {
 				"tags": [
-					"poke_pfe:cactus_armor_effects",
 					"minecraft:is_armor",
 					"minecraft:trimmable_armors"
 				]

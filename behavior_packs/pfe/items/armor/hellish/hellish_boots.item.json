@@ -36,7 +36,8 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core"
+							"poke:repair_core",
+							"poke:hellish_block"
 						],
 						"repair_amount": "query.max_durability"
 					},
@@ -45,15 +46,34 @@
 							"poke:hellish_ingot"
 						],
 						"repair_amount": "query.max_durability*0.25"
+					},
+					{
+						"items": [
+							"poke:hellish_nugget"
+						],
+						"repair_amount": "query.max_durability * 0.028"
 					}
 				]
 			},
+			"poke_pfe:set_effects": [
+				{
+					"effect": "minecraft:regeneration",
+					"max_amp": 2
+				},
+				{
+					"effect": "minecraft:resistance",
+					"max_amp": 1
+				},
+				{
+					"effect": "minecraft:fire_resistance",
+					"max_amp": 0
+				}
+			],
 			"minecraft:tags": {
 				"tags": [
 					"minecraft:is_armor",
 					"minecraft:trimmable_armors",
-					"novelty:is_foot",
-					"poke_pfe:hellish_armor_effects"
+					"novelty:is_foot"
 				]
 			}
 		}
