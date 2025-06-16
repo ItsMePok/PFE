@@ -46,12 +46,32 @@
 					}
 				]
 			},
-			"minecraft:tags": {
-				"tags": [
-					"function poke/pfe/windzooka"
-				]
+			"poke_pfe:upgradeable": {
+				"sneak_interact_opens_ui": true,
+				"upgrade_ids": [
+					"pfe:persistence"
+				],
+				"version": 1
 			},
-			"poke:cc_zooka": {},
+			"poke_pfe:launch_user": {
+				"sneaking_stops_this": true,
+				"grant_effect": {
+					"effect": "minecraft:slow_falling",
+					"duration": 60,
+					"amp": 0,
+					"particles": false
+				},
+				"vertical_strength": -4,
+				"horizontal_strength": -7,
+				"spawn_particles": [
+					"minecraft:wind_explosion_emitter"
+				],
+				"play_sound": {
+					"identifier": "wind_charge.burst",
+					"pitch": 1
+				},
+				"take_durability": true
+			},
 			"poke:normalMining": {},
 			"minecraft:rarity": "uncommon"
 		}

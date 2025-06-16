@@ -1,0 +1,8 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "beveled_limestone",
+		"metalness_emissive_roughness": "beveled_limestone_mer",
+		"heightmap": "beveled_limestone_height"
+	}
+}

@@ -27,7 +27,7 @@ class PFEUpgradeableComponent {
   onUse(data: ItemComponentUseEvent, componentInfo: CustomComponentParameters) {
     const component = <PFEUpgradeableComponentInfo>componentInfo.params
     if (!data.itemStack) return
-    if (component.sneak_interact_opens_ui) {
+    if (component.sneak_interact_opens_ui && data.source.isSneaking) {
       const parsedUpgradeInfo = ParsePFEUpgradeComponent(data.itemStack, data.source, component)
       PokeUpgradeUI(data.source, data.itemStack, parsedUpgradeInfo, undefined, true)
     }

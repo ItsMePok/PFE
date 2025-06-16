@@ -52,8 +52,10 @@
 			"poke_pfe:set_effects": [
 				{
 					"mode": "command",
-					"command": "execute at @s as @a[rm=0.1,r=10] run damage @s 1 wither",
-					"bind_to": "player"
+					"command": "execute at @s as @a[rm=0.1,r=10] run damage @s 2 wither",
+					"bind_to": "player",
+					"disable_check": "cactus_radius",
+					"no_repeat_id": "poke_pfe:cactus_damage"
 				}
 			],
 			"minecraft:tags": {

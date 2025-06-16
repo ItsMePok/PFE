@@ -29,6 +29,131 @@
               "components": {
                 "type": "object",
                 "properties": {
+                  "poke_pfe:launch_user": {
+                    "type": "object",
+                    "description": "Launch user (PFE)",
+                    "properties": {
+                      "sneaking_stops_this": {
+                        "type": "boolean",
+                        "description": "Will this componet not activate if the player is sneaking",
+                        "default": false
+                      },
+                      "grant_effect": {
+                        "type": "object",
+                        "description": "An effect to grant the user when this component activates",
+                        "properties": {
+                          "effect": {
+                            "type": "string",
+                            "description": "The identifier of the effect to apply to the user",
+                            "enum": [
+                              "minecraft:absorption",
+                              "minecraft:bad_omen",
+                              "minecraft:blindness",
+                              "minecraft:conduit_power",
+                              "minecraft:darkness",
+                              "minecraft:fatal_poison",
+                              "minecraft:fire_resistance",
+                              "minecraft:haste",
+                              "minecraft:health_boost",
+                              "minecraft:hunger",
+                              "minecraft:infested",
+                              "minecraft:instant_damage",
+                              "minecraft:instant_health",
+                              "minecraft:invisibility",
+                              "minecraft:jump_boost",
+                              "minecraft:levitation",
+                              "minecraft:mining_fatigue",
+                              "minecraft:nausea",
+                              "minecraft:night_vision",
+                              "minecraft:oozing",
+                              "minecraft:poison",
+                              "minecraft:raid_omen",
+                              "minecraft:regeneration",
+                              "minecraft:resistance",
+                              "minecraft:saturation",
+                              "minecraft:slow_falling",
+                              "minecraft:slowness",
+                              "minecraft:speed",
+                              "minecraft:strength",
+                              "minecraft:trial_omen",
+                              "minecraft:village_hero",
+                              "minecraft:water_breathing",
+                              "minecraft:weakness",
+                              "minecraft:weaving",
+                              "minecraft:wind_charged",
+                              "minecraft:wither"
+                            ]
+                          },
+                          "amp": {
+                            "type": "number",
+                            "description": "The amplifier of this effect",
+                            "default": 0
+                          },
+                          "duration": {
+                            "type": "number",
+                            "description": "The amount of time (in ticks) this effect will last for",
+                            "default": 60
+                          },
+                          "particles": {
+                            "type": "boolean",
+                            "description": "Will the effect's particles be emmited",
+                            "default": false
+                          }
+                        },
+                        "required": [
+                          "effect"
+                        ]
+                      },
+                      "vertical_strength": {
+                        "type": "number",
+                        "description": "The amount of vertical (Y) force to apply to the user",
+                        "default": 1
+                      },
+                      "horizontal_strength": {
+                        "type": "number",
+                        "description": "The amount of horizontal (X/Z) force to apply to the user",
+                        "default": 1
+                      },
+                      "take_durability": {
+                        "type": "boolean",
+                        "description": "Will this item take durability when this triggers",
+                        "default": true
+                      },
+                      "trigger_cooldown": {
+                        "type": "boolean",
+                        "description": "Will this component triggering cause this item to go on cooldown",
+                        "default": true
+                      },
+                      "play_sound": {
+                        "type": "object",
+                        "description": "Will this item play a sound when this component triggers",
+                        "properties": {
+                          "identifier": {
+                            "type": "string",
+                            "description": "The sound identifer",
+                            "enum": [
+                              "wind_charge.burst"
+                            ]
+                          },
+                          "pitch": {
+                            "type": "number",
+                            "description": "The pitch of this sound"
+                          }
+                        },
+                        "required": [
+                          "identifier"
+                        ]
+                      },
+                      "spawn_particles": {
+                        "type": "array",
+                        "description": "An array of particle identifiers that willl be spawned when this component triggers",
+                        "items": {
+                          "type": "string"
+                        },
+                        "minItems": 1
+                      }
+                    }
+                  },
                   "poke_pfe:set_effects": {
                     "type": "array",
                     "items": {
@@ -102,7 +227,6 @@
                               "default": 1
                             },
                             "mode": {
-                              "type": "string",
                               "enum": [
                                 "radius_effect"
                               ]
@@ -116,7 +240,6 @@
                               "default": 5
                             },
                             "selector": {
-                              "type": "string",
                               "enum": [
                                 "player"
                               ],
@@ -169,6 +292,21 @@
                                 "minecraft:wind_charged",
                                 "minecraft:wither"
                               ]
+                            },
+                            "no_repeat_id": {
+                              "type": "string",
+                              "enum": [
+                                "poke_pfe:medic_radius"
+                              ],
+                              "description": "This will stop this from re-applying items with the same id\nThis will not stop `radius_per_piece` from taking be applied"
+                            },
+                            "radius_per_piece": {
+                              "type": "number",
+                              "description": "The amout the radius increases per piece of same id is equipped"
+                            },
+                            "max_amp": {
+                              "type": "number",
+                              "description": "The maximum amp this piece can allow"
                             }
                           },
                           "required": [
@@ -185,20 +323,39 @@
                             },
                             "mode": {
                               "type": "string",
+                              "description": "What mode is this effect\nCommand mode: run a command when set effects trigger",
                               "enum": [
                                 "command"
                               ]
                             },
                             "command": {
-                              "type": "string"
+                              "type": "string",
+                              "description": "The command (Omit \"/\" from the beginning)"
                             },
                             "bind_to": {
                               "type": "string",
+                              "description": "In what context does this command execute",
                               "enum": [
                                 "player",
                                 "dimension"
                               ],
                               "default": "player"
+                            },
+                            "disable_check": {
+                              "description": "If this effect can be disabled from the config & if so what option disables it",
+                              "enum": [
+                                "death_radius",
+                                "cactus_radius"
+                              ]
+                            },
+                            "no_repeat_id": {
+                              "type": "string",
+                              "description": "This id will be used to prevent an effect with the same id from triggering",
+                              "enum": [
+                                "poke_pfe:death_damage",
+                                "poke_pfe:death_particle",
+                                "poke_pfe:cactus_damage",
+                              ]
                             }
                           },
                           "required": [

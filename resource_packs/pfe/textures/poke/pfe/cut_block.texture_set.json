@@ -1,0 +1,8 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "cut_block",
+		"metalness_emissive_roughness": "cut_block_mer",
+		"heightmap": "cut_block_height"
+	}
+}

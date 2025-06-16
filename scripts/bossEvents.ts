@@ -56,7 +56,10 @@ interface PFEBossEventConfig {
     "e": boolean;
     "%": number
   };
-  "ticks": number
+  "ticks": number,
+  "seconds": number,
+  "minutes": number,
+  "hours": number
 }
 let PFEDefaultBossEventSettings: PFEBossEventConfig = {
   "zombken": { "e": true, "%": 75 },
@@ -69,7 +72,10 @@ let PFEDefaultBossEventSettings: PFEBossEventConfig = {
   "sparky": { "e": false, "%": 0 },
   "theLogger": { "e": false, "%": 0 },
   "listener": { "e": false, "%": 0 },
-  "ticks": 108000
+  "ticks": 108000,
+  "seconds": 0,
+  "minutes": 90,
+  "hours": 0
 }
 function PFEBossEventUIMainMenu(player: Player) {
   let settings: PFEBossEventConfig = JSON.parse(world.getDynamicProperty(PFEBossEventConfigName)!.toString())
@@ -89,7 +95,7 @@ function PFEBossEventUIMainMenu(player: Player) {
     .button({ translate: `translation.poke:bossEventMainMenuBossChances` }, 'textures/poke/common/spawn_weight')
     .button({ translate: `translation.poke:bossEventSettings` }, 'textures/poke/common/more_options')
     .button({ translate: `translation.poke:bossEventClose` }, 'textures/poke/common/close')
-    //@ts-ignore
+
     .show(player).then((ui: ActionFormResponse) => {
       if (ui.canceled || ui.selection == 3) {
         return;
@@ -148,7 +154,7 @@ function PFEBossEventUIEnabledBosses(player: Player) {
     .toggle({ translate: `entity.poke:the_logger.name` }, { defaultValue: settings.theLogger.e })
     .toggle({ translate: `entity.poke:listener.name` }, { defaultValue: settings.listener.e })
     .submitButton(`translation.poke:BossEventUISubmit`)
-    //@ts-ignore
+
     .show(player).then((ui: ModalFormResponse) => {
       if (!ui.canceled) {
         settings.zombken.e = Boolean(ui.formValues!.at(0))
@@ -171,20 +177,21 @@ function PFEBossEventTiming(player: Player) {
   let settings: PFEBossEventConfig = JSON.parse(world.getDynamicProperty(PFEBossEventConfigName)!.toString())
   new ModalFormData()
     .title({ translate: `translation.poke:bossEventMainMenuTitle` })
-    .textField({ translate: `translation.poke:BossEventTimeDesc` }, { translate: `translation.poke:BossEventTimePlaceholder` }, { defaultValue: `${settings.ticks}` })
+    .dropdown({ translate: `%poke_pfe:mode:` }, [{ translate: `%poke_pfe:gameTicks` }, { translate: `%poke_pfe:realTime` }], { tooltip: { translate: `%poke_pfe.timeMode.tooltip` } })
+    .slider({ translate: `%poke_pfe:minutes` }, 0, 720, { defaultValue: settings.ticks / 1200, valueStep: 5, tooltip: { translate: `%poke_pfe.BossEventTime.tooltip` } })
     .submitButton(`translation.poke:BossEventUISubmit`)
-    //@ts-ignore
     .show(player).then((ui: ModalFormResponse) => {
+      console.info(JSON.stringify(ui.formValues))
       if (!ui.canceled) {
-        let newTicks = Number(ui.formValues!.at(0))
+        let newTicks = Number(ui.formValues!.at(1))
         if (Number(isNaN(newTicks))) {
-          //console.info(`player tried to set a NaN`)
           return;
         } else {
-          settings.ticks = Number(ui.formValues!.at(0))
-          world.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(settings))
+          settings.ticks = newTicks * 1200
+          world.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(settings));
+          typeof world.getDynamicProperty("poke_pfe:bossEventIntervalId") != "number" ? undefined : system.clearRun(<number>world.getDynamicProperty("poke_pfe:bossEventIntervalId"))
+          world.setDynamicProperty("poke_pfe:bossEventIntervalId", startBossEvents())
         }
-
       }
       PFEBossEventUIMainMenu(player)
       return;
@@ -206,7 +213,6 @@ function PFEBossEventUIBossChances(player: Player) {
     .slider({ translate: `entity.poke:the_logger.name` }, 0, 100, { valueStep: 1, defaultValue: settings.theLogger["%"] })
     .slider({ translate: `entity.poke:listener.name` }, 0, 100, { valueStep: 1, defaultValue: settings.listener["%"] })
     .submitButton(`translation.poke:BossEventUISubmit`)
-    //@ts-ignore
     .show(player).then((ui: ModalFormResponse) => {
       if (!ui.canceled) {
         settings.zombken["%"] = Number(ui.formValues!.at(0))
@@ -226,12 +232,15 @@ function PFEBossEventUIBossChances(player: Player) {
     })
 }
 function PFEBossEventTicks() {
-  let settings: PFEBossEventConfig = PFEDefaultBossEventSettings
-  if (typeof world.getDynamicProperty(PFEBossEventConfigName) != "string") {
-    return PFEDefaultBossEventSettings.ticks
-  } else settings = JSON.parse(world.getDynamicProperty(PFEBossEventConfigName)!.toString());
+  const settings: PFEBossEventConfig = JSON.parse(<string | undefined>world.getDynamicProperty(PFEBossEventConfigName) ?? JSON.stringify(PFEDefaultBossEventSettings));
   return settings.ticks
 }
+function startBossEvents() {
+  return system.runInterval(() => {
+    PFEStartBossEvent()
+  }, PFEBossEventTicks());
+}
+
 function PFEStartBossEvent() {
   let settings: PFEBossEventConfig = JSON.parse(world.getDynamicProperty(PFEBossEventConfigName)!.toString())
   let allPlayers = world.getAllPlayers()
@@ -293,5 +302,6 @@ export {
   PFEStartBossEvent,
   PFEBossEventConfig,
   PFEBossEventUIMainMenu,
-  PFEBossEventTicks
+  PFEBossEventTicks,
+  startBossEvents
 }

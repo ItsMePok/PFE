@@ -1,6 +1,6 @@
-import { system, world, EquipmentSlot, GameMode, EntityComponentTypes, ItemComponentTypes, ItemStack, Player, Direction, RawMessage, EntityQueryOptions, Block, ItemType } from "@minecraft/server";
+import { system, world, EquipmentSlot, GameMode, EntityComponentTypes, ItemComponentTypes, ItemStack, Player, Direction, RawMessage, EntityQueryOptions, Block, ItemType, InputButton, ButtonState } from "@minecraft/server";
 import { BlockStateSuperset, MinecraftBlockTypes, MinecraftDimensionTypes, MinecraftEffectTypes, MinecraftEnchantmentTypes, MinecraftEntityTypes, MinecraftItemTypes } from "@minecraft/vanilla-data";
-import { PFEBossEventConfig, PFEBossEventConfigName, PFEBossEventTicks, PFEBossEventUIMainMenu, PFEDefaultBossEventSettings, PFEStartBossEvent } from "./bossEvents";
+import { PFEBossEventConfig, PFEBossEventConfigName, PFEBossEventTicks, PFEBossEventUIMainMenu, PFEDefaultBossEventSettings, PFEStartBossEvent, startBossEvents } from "./bossEvents";
 import { PFEBoxMiningComponent } from "./boxMining";
 import { PokeClosestCardinal, PokeDamageItemUB, PokeDecrementStack, PokeSpawnLootTable } from "./commonFunctions";
 import { PokeBirthdays, PokeTimeConfigUIMainMenu, PokeTimeGreeting, PokeTimeZoneOffset } from "./time";
@@ -481,6 +481,7 @@ system.beforeEvents.startup.subscribe(data => {
                     } else selection++
                     if (response.selection == selection) {
                         PFEDisableConfigMainMenu(data)
+                        return;
                     } else selection++
                     if (response.selection == selection) {
                         let UI = new ModalFormData()
@@ -503,6 +504,7 @@ system.beforeEvents.startup.subscribe(data => {
                             }
 
                         })
+                        return;
                     } else selection++
                     if ((response.selection == selection) || response.canceled) {
                         return
@@ -620,32 +622,7 @@ system.beforeEvents.startup.subscribe(data => {
     );
 
 
-    data.itemComponentRegistry.registerCustomComponent(
-        "poke:cc_zooka", {
-        onUse(data, component) {
-            if (data.itemStack === undefined) return;
-            const vierDirection = data.source.getViewDirection();
-            const location = data.source.getHeadLocation();
-            const id = data.itemStack.getTags()
 
-            const cooldownComp = data.itemStack.getComponent(ItemComponentTypes.Cooldown)
-            if (data.itemStack.typeId == "poke:windzooka") {
-                data.source.applyKnockback({ x: vierDirection.x * -7, z: vierDirection.z * -7 }, -vierDirection.y * 4);
-                data.source.playSound('wind_charge.burst');
-                data.source.spawnParticle('minecraft:wind_explosion_emitter', location)
-            } else {
-                data.source.applyKnockback({ x: vierDirection.x * 7, z: vierDirection.z * 7 }, -vierDirection.y * -4)
-                data.source.playSound('wind_charge.burst');
-                data.source.spawnParticle('minecraft:wind_explosion_emitter', location);
-                data.source.spawnParticle('poke:blazooka_flame', location)
-            }
-            data.source.runCommand('' + id)
-            cooldownComp?.startCooldown(data.source)
-            PokeDamageItemUB(data.itemStack, undefined, data.source, EquipmentSlot.Mainhand)
-            return;
-        }
-    }
-    );
     data.itemComponentRegistry.registerCustomComponent(
         "poke-pfe:upgrader", {
         onUseOn(data, component) {
@@ -1566,6 +1543,56 @@ system.beforeEvents.startup.subscribe(data => {
 
     // Updated Components
     data.itemComponentRegistry.registerCustomComponent(
+        "poke_pfe:launch_user", {
+        onUse(data, componentInfo) {
+            if (data.itemStack === undefined) return;
+            type LaunchUserComponent = {
+                sneaking_stops_this?: boolean,
+                grant_effect?: {
+                    effect: string,
+                    duration?: number
+                    amp?: number,
+                    particles?: true
+                },
+                vertical_strength?: number
+                horizontal_strength?: number,
+                take_durability?: boolean
+                trigger_cooldown?: boolean
+                spawn_particles?: string[]
+                play_sound?: {
+                    identifier: string,
+                    pitch?: number
+                }
+            }
+            const component = <LaunchUserComponent>componentInfo.params
+            if (component.sneaking_stops_this && data.source.isSneaking) return;
+            const vierDirection = data.source.getViewDirection();
+            const location = data.source.getHeadLocation();
+            const cooldownComp = data.itemStack.getComponent(ItemComponentTypes.Cooldown)
+            if (component.grant_effect) {
+                data.source.addEffect(component.grant_effect?.effect, component.grant_effect?.duration ?? 60, { amplifier: component.grant_effect?.amp ?? 0, showParticles: component.grant_effect.particles ?? false })
+            }
+            data.source.applyKnockback({ x: vierDirection.x * (component.horizontal_strength ?? 1), z: vierDirection.z * (component.horizontal_strength ?? 1) }, vierDirection.y * (component.vertical_strength ?? 1));
+            if (component.spawn_particles) {
+                for (let particle of component.spawn_particles) {
+                    if (!particle) continue
+                    data.source.spawnParticle(particle, location);
+                }
+            }
+            if (component.play_sound) {
+                data.source.playSound(component.play_sound.identifier, { pitch: component.play_sound.pitch });
+            }
+            if (component.trigger_cooldown) {
+                cooldownComp?.startCooldown(data.source)
+            }
+            if (component.take_durability) {
+                PokeDamageItemUB(data.itemStack, undefined, data.source, EquipmentSlot.Mainhand)
+            }
+            return;
+        }
+    }
+    );
+    data.itemComponentRegistry.registerCustomComponent(
         "poke_pfe:run_command", {
         onUse(data, component) {
             if (!data.itemStack) return;
@@ -1664,10 +1691,7 @@ world.afterEvents.worldLoad.subscribe((data) => {
     /* Outgoing Addon Compatibility:*/
     initExampleStickers()
     ComputersCompat.init()
-    // Boss events
-    system.runInterval(() => {
-        PFEStartBossEvent()
-    }, PFEBossEventTicks());
+    world.setDynamicProperty("poke_pfe:bossEventIntervalId", startBossEvents())
     world.setDynamicProperty("poke_pfe:setEffectIntervalId", startSetEffects())
     system.sendScriptEvent("poke_pfe:dupe_check", `${currentVersion}`)
     console.warn(`Within PFE: ${JSON.stringify(new ItemStack("poke_pfe:custom_data_storage", 1).getComponent(`poke_pfe:incompatible_addons`))}`)

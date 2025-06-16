@@ -68,9 +68,15 @@
 				},
 				{
 					"version": 1,
-					"mode": "command",
-					"command": "execute at @s as @a[r=10] run effect @s instant_health 0 0 true",
-					"bind_to": "player"
+					"mode": "radius_effect",
+					"effect_self": true,
+					"amp": 1,
+					"max_amp": 5,
+					"no_repeat_id": "poke_pfe:medic_radius",
+					"radius_per_piece": 3,
+					"max_radius": 10,
+					"selector": "player",
+					"effect": "minecraft:absorption"
 				}
 			],
 			"minecraft:tags": {

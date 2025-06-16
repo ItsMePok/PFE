@@ -1,1 +1,0 @@
-execute at @s as @e[type=!item,rm=0.1,r=5] run damage @s 2

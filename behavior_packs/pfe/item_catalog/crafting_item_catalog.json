@@ -1271,6 +1271,7 @@
           },
           {
             "items": [
+              "poke_pfe:waypoint_menu",
               "poke:windzooka",
               "poke:blazooka",
               "poke:panic_button",

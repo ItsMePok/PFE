@@ -14,39 +14,6 @@ export {
 const ArmorEffectDuration = 300
 const SensitiveArmorEffectDuration = 500
 const PFECustomArmorEffectDynamicProperty = `poke_pfe:custom_effects`
-/*const PFEArmorEffectData = {
-  cactus: {
-    radiusEffect: {
-      type: "damage",
-      amountStep: 1,
-      maxAmount: 4,
-      maxRadius: 4,
-      radiusStep: 1
-    },
-    tag: `poke_pfe:cactus_armor_effects`
-  },
-  death: {
-    radiusEffect: {
-      type: "damage",
-      maxRadius: 10,
-      maxAmount: 15,
-      amountStep: 4,
-      radiusStep: 3
-    },
-    tag: `poke_pfe:death_armor_effects`
-  },
-  medic: {
-    radiusEffect: {
-      type: "heal",
-      maxAmount: 5,
-      maxRadius: 10,
-      amountStep: 2,
-      radiusStep: 3
-    },
-    tag: `poke_pfe:medic_armor_effects`
-  }
-}
-*/
 interface PFEDamageInfo {
   type: "heal" | "damage"
   amountStep: number,
@@ -105,7 +72,13 @@ type SetEffectComponent = {
   radius_per_amp?: 3 // radius_effect only
   selector?: "player" // radius_effect only
   effect_self?: boolean // radius_effect only
-  command?: string // command only
+  command?: string // command only 
+  amp?: number, // radius_effect only
+  radius_per_piece?: number, // radius_effect only
+  duration?: number, // radius_effect only
+  no_repeat_id?: string // radius_effect & command only
+  bind_to: "player" | "dimension", // command only
+  disable_check?: "death_radius" | "cactus_radius" // command only
 }[]
 
 const PFESetEffectId = "poke_pfe:set_effects"
@@ -128,19 +101,23 @@ function CheckEffects(player: Player, additionalOptions?: boolean, customParse?:
     version?: 1
     mode: "radius_effect"
     effect: MinecraftEffectTypes | string,
-    amp: number,
+    amp?: number,
+    max_amp: number
     max_radius: number
-    selector: "player"
-    effect_self: boolean,
-    duration?: number
+    radius_per_piece?: number
+    selector?: "player"
+    effect_self?: boolean,
+    duration?: number,
+    no_repeat_id?: string
   }
   let radius_effects: RadiusEffectOptions[] = []
   type CommandOptions = {
     version?: 1
     mode: "command",
     command: string,
-    bind_to: "player" | "world" | "dimension",
-    disable_check: "death_radius" | "cactus_radius"
+    bind_to: "player" | "dimension",
+    disable_check?: "death_radius" | "cactus_radius",
+    no_repeat_id?: string
   }
   let commands: CommandOptions[] = []
   const HelmetComponent = <SetEffectComponent | undefined>Helmet?.getComponent(PFESetEffectId)?.customComponentParameters.params
@@ -286,7 +263,6 @@ function CheckEffects(player: Player, additionalOptions?: boolean, customParse?:
   }
   for (let effect of effects) {
     let effectDuration = Number(world.getDynamicProperty("poke_pfe:setEffectDuration") ?? ArmorEffectDuration)
-
     let ActiveEffects = player.getEffect(effect.effect) ?? false
     if (!ActiveEffects) {
       player.addEffect(effect.effect, effectDuration, { showParticles: false, amplifier: 0 })
@@ -340,7 +316,12 @@ function CheckEffects(player: Player, additionalOptions?: boolean, customParse?:
         })
     }
   }
+  let noCommandRepeats: string[] = []
   for (let command of commands) {
+    if (command.no_repeat_id) {
+      if (noCommandRepeats.includes(command.no_repeat_id)) continue;
+      noCommandRepeats.push(command.no_repeat_id)
+    }
     if (command.disable_check) {
       const disabledOptions: PFEDisableConfigOptions = JSON.parse(world.getDynamicProperty(PFEDisableConfigName)!.toString()) ?? PFEDisableConfigDefault
       switch (command.disable_check) {
@@ -361,19 +342,55 @@ function CheckEffects(player: Player, additionalOptions?: boolean, customParse?:
     }
     bind_to.runCommand(command.command)
   }
-  let compiledRadiusEffects = []
+  interface compiledRadiusEffectsInfo extends RadiusEffectOptions {
+    totalRadius?: number,
+    totalAmp?: number
+  }
+  let compiledRadiusEffects: compiledRadiusEffectsInfo[] = []
+  let noRadiusEffectRepeats: string[] = []
   for (let radiusEffect of radius_effects) {
-    const effectDuration = Number(world.getDynamicProperty("poke_pfe:setEffectDuration") ?? ArmorEffectDuration)
-    const targets = player.dimension.getPlayers({ location: player.location, maxDistance: radiusEffect.max_radius, excludeNames: radiusEffect.effect_self ? [player.name] : undefined })
+    if (radiusEffect.no_repeat_id) {
+      if (noRadiusEffectRepeats.includes(radiusEffect.no_repeat_id)) continue;
+      noRadiusEffectRepeats.push(radiusEffect.no_repeat_id)
+      const SameNoRepeat = radius_effects.filter(effect => effect.no_repeat_id == radiusEffect.no_repeat_id)
+      let compiledEffect: compiledRadiusEffectsInfo = {
+        effect: radiusEffect.effect,
+        max_radius: radiusEffect.max_radius,
+        mode: radiusEffect.mode,
+        totalAmp: 0,
+        totalRadius: 0,
+        amp: radiusEffect.amp,
+        duration: radiusEffect.duration,
+        effect_self: radiusEffect.effect_self,
+        no_repeat_id: radiusEffect.no_repeat_id,
+        radius_per_piece: radiusEffect.radius_per_piece,
+        selector: radiusEffect.selector,
+        version: radiusEffect.version,
+        max_amp: radiusEffect.max_amp
+      }
+      for (let effect of SameNoRepeat) {
+        let updatedEffect = compiledEffect
+        updatedEffect.totalAmp = (updatedEffect.totalAmp ?? 0) + (effect.amp ?? 0)
+        updatedEffect.totalRadius = (updatedEffect.totalRadius ?? 0) + (effect.radius_per_piece ?? 0)
+        updatedEffect.max_radius = Math.max(effect.max_radius, radiusEffect.max_radius)
+        updatedEffect.duration = Math.max(effect.duration ?? 0, radiusEffect.duration ?? 0)
+        compiledEffect = updatedEffect
+        compiledRadiusEffects.push(compiledEffect)
+      }
+      continue
+    }
+    compiledRadiusEffects.push(radiusEffect)
+  }
+  for (let radiusEffect of compiledRadiusEffects) {
+    let effectDuration = Boolean(radiusEffect.duration) ? Number(radiusEffect.duration) : Number(world.getDynamicProperty("poke_pfe:setEffectDuration") ?? ArmorEffectDuration)
+    const targets = player.dimension.getPlayers({ location: player.location, maxDistance: clampNumber(radiusEffect.totalRadius ?? radiusEffect.radius_per_piece ?? radiusEffect.max_radius, 0, radiusEffect.max_radius), excludeNames: radiusEffect.effect_self ? undefined : [player.name] })
     for (let target of targets) {
-      target.addEffect(radiusEffect.effect, radiusEffect?.duration ?? effectDuration, { showParticles: false, amplifier: radiusEffect.amp })
+      target.addEffect(radiusEffect.effect, effectDuration, { showParticles: false, amplifier: clampNumber(radiusEffect.totalAmp ?? radiusEffect.amp ?? 0, 0, radiusEffect.max_amp) })
     }
   }
 }
 function startSetEffects() {
-
   return system.runInterval(() => {
-    console.warn(`TRIGGERED`)
     if (world.getDynamicProperty(`poke_pfe:disable_armor_effects`)) return;
     const customParse = world.getDynamicProperty(`poke_pfe:custom_effect_parser`) == true ? true : false
     for (let player of world.getAllPlayers()) {

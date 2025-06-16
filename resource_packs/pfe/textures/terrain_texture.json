@@ -560,46 +560,85 @@
 			"textures": "textures/poke/pfe/turnip_stage_3"
 		},
 		"poke_cut_astral": {
-			"textures": "textures/poke/pfe/cut_astral_block"
+			"textures": {
+				"path": "textures/poke/pfe/cut_block",
+				"overlay_color": "#311e46"
+			}
 		},
 		"poke_cut_death": {
-			"textures": "textures/poke/pfe/cut_death_block"
+			"textures": {
+				"path": "textures/poke/pfe/cut_block",
+				"overlay_color": "#101218"
+			}
 		},
 		"poke_cut_demonic": {
-			"textures": "textures/poke/pfe/cut_demonic_block"
+			"textures": {
+				"path": "textures/poke/pfe/cut_block",
+				"overlay_color": "#2f181d"
+			}
 		},
 		"poke_cut_galaxy": {
-			"textures": "textures/poke/pfe/cut_galaxy_block"
+			"textures": {
+				"path": "textures/poke/pfe/cut_block",
+				"overlay_color": "#502662"
+			}
 		},
 		"poke_cut_hellish": {
-			"textures": "textures/poke/pfe/cut_hellish_block"
+			"textures": {
+				"path": "textures/poke/pfe/cut_block",
+				"overlay_color": "#882329"
+			}
 		},
 		"poke_cut_godly": {
-			"textures": "textures/poke/pfe/cut_godly_block"
+			"textures": {
+				"path": "textures/poke/pfe/cut_block",
+				"overlay_color": "#584b42"
+			}
 		},
 		"poke_cut_holy": {
-			"textures": "textures/poke/pfe/cut_holy_block"
+			"textures": {
+				"path": "textures/poke/pfe/cut_block",
+				"overlay_color": "#7c7c7c"
+			}
 		},
 		"poke_cut_molten": {
-			"textures": "textures/poke/pfe/cut_molten_block"
+			"textures": {
+				"path": "textures/poke/pfe/cut_block",
+				"overlay_color": "#924200"
+			}
 		},
 		"poke_cut_medic": {
-			"textures": "textures/poke/pfe/cut_medic_block"
+			"textures": {
+				"path": "textures/poke/pfe/cut_block",
+				"overlay_color": "#9F3371"
+			}
 		},
 		"poke_cut_nebula": {
 			"textures": "textures/poke/pfe/cut_nebula_block"
 		},
 		"poke_cut_onyx": {
-			"textures": "textures/poke/pfe/cut_onyx_block"
+			"textures": {
+				"path": "textures/poke/pfe/cut_block",
+				"overlay_color": "#181233"
+			}
 		},
 		"poke_cut_radium": {
-			"textures": "textures/poke/pfe/cut_radium_block"
+			"textures": {
+				"path": "textures/poke/pfe/cut_block",
+				"overlay_color": "#258d2c"
+			}
 		},
 		"poke_cut_shade": {
-			"textures": "textures/poke/pfe/cut_shade_block"
+			"textures": {
+				"path": "textures/poke/pfe/cut_block",
+				"overlay_color": "#1a3c1c"
+			}
 		},
 		"poke_cut_void": {
-			"textures": "textures/poke/pfe/cut_void_block"
+			"textures": {
+				"path": "textures/poke/pfe/cut_block",
+				"overlay_color": "#181818"
+			}
 		},
 		"poke_beeulb": {
 			"textures": [
@@ -2169,7 +2208,10 @@
 			"textures": "textures/poke/pfe/cobalt_glass"
 		},
 		"poke_cut_cobalt": {
-			"textures": "textures/poke/pfe/cut_cobalt_block"
+			"textures": {
+				"path": "textures/poke/pfe/cut_block",
+				"overlay_color": "#2a3162"
+			}
 		},
 		"poke_furnace_golem_trophy": {
 			"textures": "textures/poke/pfe/furnace_golem_trophy"

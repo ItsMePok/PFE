@@ -29,10 +29,12 @@
 				"slot": "flintsteel",
 				"value": 30
 			},
-			"minecraft:tags": {
-				"tags": [
-					"function poke/pfe/windzooka"
-				]
+			"poke_pfe:upgradeable": {
+				"sneak_interact_opens_ui": true,
+				"upgrade_ids": [
+					"pfe:persistence"
+				],
+				"version": 1
 			},
 			"minecraft:repairable": {
 				"repair_items": [
@@ -44,8 +46,24 @@
 					}
 				]
 			},
-			"poke:cc_zooka": {},
-			"poke:normalMining":{},
+			"poke_pfe:launch_user": {
+				"sneaking_stops_this": true,
+				"grant_effect": {
+					"effect": "minecraft:slow_falling",
+					"duration": 60,
+					"particles": false
+				},
+				"vertical_strength": 4,
+				"horizontal_strength": 7,
+				"spawn_particles": [
+					"minecraft:wind_explosion_emitter",
+					"poke:blazooka_flame"
+				],
+				"play_sound": {
+					"identifier": "wind_charge.burst"
+				}
+			},
+			"poke:normalMining": {},
 			"minecraft:use_modifiers": {
 				"use_duration": 0,
 				"movement_modifier": 1
