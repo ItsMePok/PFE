@@ -50,7 +50,7 @@ class PFEBoltBowsComponent {
       PFEAmmoManagementMainMenuUI(data.itemStack, data.source)
       return;
     }
-    console.warn(`Dyn: ${data.itemStack.getDynamicProperty(PFEBoltBowDynamicPropertyID)}`)
+    //console.warn(`Dyn: ${data.itemStack.getDynamicProperty(PFEBoltBowDynamicPropertyID)}`)
     let ammoComponent: PFEBoltBowInfo = PFEBoltBowDefault
     if (typeof data.itemStack.getDynamicProperty(PFEBoltBowDynamicPropertyID) != "string") {
       PokeSaveProperty(PFEBoltBowDynamicPropertyID, data.itemStack, JSON.stringify(PFEBoltBowDefault), data.source)

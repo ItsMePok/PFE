@@ -384,9 +384,9 @@ function PokeTimeConfigUIMainMenu(player: Player) {
       if (response.selection == selection) {
         let claimingGift = gifts.reverse().at(i)?.gift
         if (!claimingGift) {
-          console.warn(`No gift found`)
+          //console.warn(`No gift found`)
         }
-        console.warn(`Claiming: ${claimingGift}`)
+        //console.warn(`Claiming: ${claimingGift}`)
         player.runCommand(`${claimingGift}`)
         player.addTag(`poke:${currentTime.getFullYear()}E-${gifts.at(i)?.id}`)
         return
@@ -1160,7 +1160,7 @@ function PokeTimeEditGift(player: Player, event: PokeEventConfig) {
     }
     if (newGift?.startsWith(`/`)) {
       newGift = newGift.substring(1)
-      console.warn(newGift)
+      //console.warn(newGift)
     }
     let newEvent: PokeEventConfig = {
       id: event.id,

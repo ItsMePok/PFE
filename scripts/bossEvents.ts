@@ -177,11 +177,11 @@ function PFEBossEventTiming(player: Player) {
   let settings: PFEBossEventConfig = JSON.parse(world.getDynamicProperty(PFEBossEventConfigName)!.toString())
   new ModalFormData()
     .title({ translate: `translation.poke:bossEventMainMenuTitle` })
-    .dropdown({ translate: `%poke_pfe:mode:` }, [{ translate: `%poke_pfe:gameTicks` }, { translate: `%poke_pfe:realTime` }], { tooltip: { translate: `%poke_pfe.timeMode.tooltip` } })
-    .slider({ translate: `%poke_pfe:minutes` }, 0, 720, { defaultValue: settings.ticks / 1200, valueStep: 5, tooltip: { translate: `%poke_pfe.BossEventTime.tooltip` } })
+    .dropdown({ translate: `%poke_pfe.mode:` }, [{ translate: `%poke_pfe.gameTicks` }/*, { translate: `%poke_pfe.realTime` }*/], { tooltip: { translate: `%poke_pfe.timeMode.tooltip` } })
+    .slider({ translate: `%poke_pfe.minutes` }, 0, 720, { defaultValue: settings.ticks / 1200, valueStep: 5, tooltip: { translate: `%poke_pfe.BossEventTime.tooltip` } })
     .submitButton(`translation.poke:BossEventUISubmit`)
     .show(player).then((ui: ModalFormResponse) => {
-      console.info(JSON.stringify(ui.formValues))
+      //console.info(JSON.stringify(ui.formValues))
       if (!ui.canceled) {
         let newTicks = Number(ui.formValues!.at(1))
         if (Number(isNaN(newTicks))) {

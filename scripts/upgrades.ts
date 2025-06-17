@@ -40,7 +40,7 @@ function ParsePFEUpgradeComponent(item: ItemStack, player: Player, component: PF
   const defaultUpgrades = [PFEUpgrade.persistence, PFEUpgrade.capacity, PFEUpgrade.flaming]
   let allUpgrades = customUpgrades ? defaultUpgrades.concat(customUpgrades) : defaultUpgrades
   const compressedUpgrades = <PokeUpgradeUIConfig | undefined>JSON.parse(item.getDynamicProperty(component.dynamic_property ?? "pfe:upgrades")?.toString() ?? JSON.stringify([]))
-  console.warn(JSON.stringify(compressedUpgrades))
+  //console.warn(JSON.stringify(compressedUpgrades))
   if (component.upgrade_ids) {
     for (let upgrade_id of component?.upgrade_ids) {
       const validUpgrade: PFEItemUpgradeInfo | undefined = PokeGetObjectById(allUpgrades, upgrade_id)?.value
@@ -94,7 +94,7 @@ type compressedPFEItemUpgradeInfo = {
 }
 function PokeUpgradeUI(player: Player, item: ItemStack, config: PokeUpgradeUIConfig, backTo?: any, compressedSave?: boolean, component?: PFEUpgradeableComponentInfo) {
   let UI = new ActionFormData()
-  console.warn(JSON.stringify(config))
+  //console.warn(JSON.stringify(config))
   UI.button({ translate: `translation.poke:goBack` }, `textures/poke/common/left_arrow`)
 
   for (let upgrade of config.upgrades) {
@@ -138,7 +138,7 @@ function PokeUpgradeUI(player: Player, item: ItemStack, config: PokeUpgradeUICon
               Number(upgrade.level) + 1
               : 1
         )
-        console.warn(upgradeCost)
+        // console.warn(upgradeCost)
         if (HasItem && upgradeCost != Infinity) {
           if (upgrade.id == PFEPersistenceCoreDefault.id) item.keepOnDeath = true;
           const thisCompressedUpgrade: { id: string, level: number } | undefined = currentCompressed ? PokeGetObjectById(currentCompressed?.upgrades, upgrade.id)?.value : undefined

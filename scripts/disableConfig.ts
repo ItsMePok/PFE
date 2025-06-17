@@ -57,7 +57,7 @@ function PFEDisableConfigMainMenu(data: ItemComponentUseEvent) {
     if (response.selection == selection) {// Quantum Teleporter
       if (newProperty.quantumTeleporter) {
         newProperty.quantumTeleporter = false
-        console.warn(`Disabled Quantum Teleporter`)
+        //console.warn(`Disabled Quantum Teleporter`)
       } else newProperty.quantumTeleporter = true
       world.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty))
       PFEDisableConfigMainMenu(data)
@@ -66,7 +66,7 @@ function PFEDisableConfigMainMenu(data: ItemComponentUseEvent) {
     if (response.selection == selection) {// Kapow Ring
       if (newProperty.kapowRing) {
         newProperty.kapowRing = false
-        console.info(`Disabled Kapow Ring`)
+        //console.info(`Disabled Kapow Ring`)
       } else newProperty.kapowRing = true
       world.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty))
       PFEDisableConfigMainMenu(data)
@@ -75,7 +75,7 @@ function PFEDisableConfigMainMenu(data: ItemComponentUseEvent) {
     if (response.selection == selection) {// Nuke Ring
       if (newProperty.nukeRing) {
         newProperty.nukeRing = false
-        console.info(`Disabled Nuke Ring`)
+        //console.info(`Disabled Nuke Ring`)
       } else newProperty.nukeRing = true
       world.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty))
       PFEDisableConfigMainMenu(data)
@@ -84,7 +84,7 @@ function PFEDisableConfigMainMenu(data: ItemComponentUseEvent) {
     if (response.selection == selection) {// Sundial
       if (newProperty.sundial) {
         newProperty.sundial = false
-        console.info(`Disabled Sundial`)
+        //console.info(`Disabled Sundial`)
       } else newProperty.sundial = true
       world.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty))
       PFEDisableConfigMainMenu(data)
@@ -93,7 +93,7 @@ function PFEDisableConfigMainMenu(data: ItemComponentUseEvent) {
     if (response.selection == selection) {// Wither Spawner
       if (newProperty.witherSpawner) {
         newProperty.witherSpawner = false
-        console.warn(`Disabled Wither Spawner`)
+        //console.warn(`Disabled Wither Spawner`)
       } else newProperty.witherSpawner = true
       world.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty))
       PFEDisableConfigMainMenu(data)
@@ -102,7 +102,7 @@ function PFEDisableConfigMainMenu(data: ItemComponentUseEvent) {
     if (response.selection == selection) {// Bounty
       if (newProperty.bounty) {
         newProperty.bounty = false
-        console.warn(`Disabled Bounty`)
+        //console.warn(`Disabled Bounty`)
       } else newProperty.bounty = true
       world.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty))
       PFEDisableConfigMainMenu(data)
@@ -111,7 +111,7 @@ function PFEDisableConfigMainMenu(data: ItemComponentUseEvent) {
     if (response.selection == selection) {// Waypoint Menu
       if (newProperty.waypoints) {
         newProperty.waypoints = false
-        console.warn(`Disabled Waypoint Menu`)
+        //console.warn(`Disabled Waypoint Menu`)
       } else newProperty.waypoints = true
       newProperty.v = newProperty.v < 2 ? newProperty.v = 2 : newProperty.v
       world.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty))
@@ -126,7 +126,7 @@ function PFEDisableConfigMainMenu(data: ItemComponentUseEvent) {
     if (response.selection == selection) {// Death Armor's Radius Effects
       if (newProperty.deathArmorRadius) {
         newProperty.deathArmorRadius = false
-        console.info(`Disabled Death Armor's Radius Effects`)
+        //console.info(`Disabled Death Armor's Radius Effects`)
       } else newProperty.deathArmorRadius = true
       world.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty))
       PFEDisableConfigMainMenu(data)
@@ -135,7 +135,7 @@ function PFEDisableConfigMainMenu(data: ItemComponentUseEvent) {
     if (response.selection == selection) {// Cactus Armor's Radius Effects
       if (newProperty.cactusArmorRadius) {
         newProperty.cactusArmorRadius = false
-        console.info(`Disabled Cactus Armor's Radius Effects`)
+        //console.info(`Disabled Cactus Armor's Radius Effects`)
       } else newProperty.cactusArmorRadius = true
       world.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty))
       PFEDisableConfigMainMenu(data)

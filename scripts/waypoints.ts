@@ -12,7 +12,7 @@ export {
   WaypointUIMainMenu,
   PFEWaypointVersion
 }
-const PFEWaypointVersion = 1
+const PFEWaypointVersion = 2
 interface waypointComponentOptions {
   version: number,
   max_waypoints: number,
@@ -35,7 +35,7 @@ class PFEWaypointComponent {
   }
 }
 interface PokePFEWaypointConfig {
-  v: 1,
+  v: typeof PFEWaypointVersion,
   id: number
   location?: Vector3,
   rotation?: Vector2,
@@ -44,10 +44,14 @@ interface PokePFEWaypointConfig {
 
 }
 interface PokePFEWaypointItemConfig {
-  v: 1,
+  v: typeof PFEWaypointVersion,
   waypoints: PokePFEWaypointConfig[],
   localSettings: {
-
+    locked?: boolean,
+    locker?: {
+      id?: string,
+      name?: string
+    }
   }
 }
 /**
@@ -112,7 +116,7 @@ function WaypointUIMainMenu(player: Player, item: ItemStack, component: waypoint
     } else selection++
     if (response.selection == selection) {
       // LOCAL OPTIONS & (ADMIN) GLOBAL OPTIONS
-      PokeErrorScreen(player, { text: `This is not ready yet` }, WaypointUIMainMenu(player, item, component))
+      WaypointUIOptions(player, item, component, waypointConfig)
       return;
     } else selection++
     if (component.debug_mode) {
@@ -126,6 +130,33 @@ function WaypointUIMainMenu(player: Player, item: ItemStack, component: waypoint
   })
 }
 
+function WaypointUIOptions(player: Player, item: ItemStack, component: waypointComponentOptions, waypointConfig: PokePFEWaypointItemConfig) {
+  let UI = new ActionFormData()
+  UI.title({ translate: `%translation.poke_pfe.WaypointUITitle` })
+  waypointConfig.localSettings.locked ? UI.button({ translate: `%poke_pfe.unlockWaypoints\n%poke_pfe.lockedBy: ${waypointConfig.localSettings.locker?.name}` }, "textures/poke/common/locked") : UI.button({ translate: `%poke_pfe.lockWaypoints` }, "textures/poke/common/unlocked")
+  UI.button({ translate: `%translation.poke_pfe.GoBack` }, `textures/poke/common/left_arrow`)
+  UI.show(player).then(response => {
+    let selection = 0
+    if (response.selection == selection) {
+      let newOptions: typeof waypointConfig = {
+        v: PFEWaypointVersion,
+        localSettings: {
+          locked: waypointConfig.localSettings.locked ? false : true,
+          locker: {
+            id: waypointConfig.localSettings.locked ? undefined : player.id,
+            name: waypointConfig.localSettings.locked ? undefined : player.name
+          }
+        },
+        waypoints: waypointConfig.waypoints
+      }
+      PokeSaveProperty(WaypointDynamicPropertyID, item, JSON.stringify(newOptions), player, EquipmentSlot.Mainhand)
+    }
+    if (response.canceled || response.selection == selection) {
+      WaypointUIMainMenu(player, item, component)
+      return
+    }
+  })
+}
 
 function WaypointUIViewWaypoints(player: Player, item: ItemStack, component: waypointComponentOptions) {
   let UI = new ActionFormData()
@@ -175,6 +206,10 @@ function WaypointUIManageWaypoint(player: Player, item: ItemStack, waypoint: Pok
     let selection = 0
     if (response.selection == selection) {
       // TELEPORT TO WAYPOINT
+      if (waypointConfig.localSettings.locked && waypointConfig.localSettings.locker?.id != player.id) {
+        PokeErrorScreen(player, { text: `This waypoint was locked by ${waypointConfig.localSettings.locker?.name ?? "someone"}, this need to be unlocked by the locker in options to teleport to this waypoint again` }, WaypointUIManageWaypoint(player, item, waypoint, component))
+        return;
+      }
       waypoint.location ? player.teleport(waypoint.location, { rotation: waypoint.rotation }) : PokeErrorScreen(player, { text: `This waypoint does not have a location set.` }, WaypointUIManageWaypoint(player, item, waypoint, component))
       return;
     } else selection++

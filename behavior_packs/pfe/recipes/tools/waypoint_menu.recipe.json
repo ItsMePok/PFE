@@ -1,0 +1,60 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:waypoint_menu"
+    },
+    "group": "waypoint",
+    "tags": [
+      "crafting_table"
+    ],
+    "unlock": [
+      {
+        "item": "poke:antenna"
+      },
+      {
+        "item": "minecraft:echo_shard"
+      },
+      {
+        "item": "poke:plastic"
+      },
+      {
+        "item": "poke:gps_module"
+      },
+      {
+        "item": "poke:electric_component"
+      },
+      {
+        "item": "minecraft:ender_pearl"
+      }
+    ],
+    "pattern": [
+      "AEA",
+      "PGP",
+      "CTC"
+    ],
+    "key": {
+      "A": {
+        "item": "poke:antenna"
+      },
+      "E": {
+        "item": "minecraft:echo_shard"
+      },
+      "P": {
+        "item": "poke:plastic"
+      },
+      "G": {
+        "item": "poke:gps_module"
+      },
+      "C": {
+        "item": "poke:electric_component"
+      },
+      "T": {
+        "item": "minecraft:ender_pearl"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:waypoint_menu"
+    }
+  }
+}

@@ -86,7 +86,7 @@ interface PFEv2QuestInfo {
 }
 
 function PFERollQuest(item: ItemStack, player: Player, questType: PFEv2QuestInfo[]) {
-  console.warn(JSON.stringify(questType))
+  //console.warn(JSON.stringify(questType))
   let AddingQuest = questType.at(Math.round(Math.random() * questType.length)) ?? questType.at(0) ?? { requiredItem: {}, reward: { tokenAmount: 0, item: new ItemStack(MinecraftItemTypes.Dirt, 1) } }
   item.keepOnDeath = true
   PokeSaveProperty(PFEQuestPropertyID, item, JSON.stringify(AddingQuest), player, undefined)

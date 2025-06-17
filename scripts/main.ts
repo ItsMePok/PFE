@@ -492,11 +492,11 @@ system.beforeEvents.startup.subscribe(data => {
                         UI.slider({ translate: `%poke_pfe.applyInterval` }, 1, 10, { valueStep: 1, tooltip: { translate: `%poke_pfe.applyInterval.tooltip` }, defaultValue: Number(world.getDynamicProperty("poke_pfe:setEffectInterval") ?? 1) / 20 })
                         UI.show(data.source).then(response => {
                             if (response.canceled) return;
-                            console.warn(JSON.stringify(response.formValues))
+                            //console.warn(JSON.stringify(response.formValues))
                             world.setDynamicProperty("poke_pfe:setEffectDuration", Number(response.formValues?.at(2) ?? ArmorEffectDuration / 20) * 20)
                             world.setDynamicProperty("poke_pfe:setEffectInterval", (Number(response.formValues?.at(3) ?? 1)) * 20)
                             const intervalId = <number | undefined>world.getDynamicProperty("poke_pfe:setEffectIntervalId")
-                            console.warn(intervalId)
+                            //console.warn(intervalId)
                             if (intervalId) {
                                 system.runInterval
                                 system.clearRun(intervalId)
@@ -589,26 +589,23 @@ system.beforeEvents.startup.subscribe(data => {
 
             const player = <Player>data.source
             if (player.typeId != MinecraftEntityTypes.Player) return;
-            console.warn(`Face Location: ${JSON.stringify(data.faceLocation)}`)
+            //console.warn(`Face Location: ${JSON.stringify(data.faceLocation)}`)
             const blockFace = data.blockFace
-            let faceLocX = data.faceLocation.x
-            let faceLocY = data.faceLocation.y
-            let faceLocZ = data.faceLocation.z
+            let faceLocX = data.faceLocation.x + data.block.x
+            let faceLocY = data.faceLocation.y + data.block.y + 1
+            let faceLocZ = data.faceLocation.z + data.block.z
             var amount = data.itemStack.amount
-
+            /*switch (blockFace) {
+                case Direction.North: { faceLocZ += 1.5; break }
+                case Direction.South: { faceLocZ += -1.5; break }
+                case Direction.East: { faceLocX += -1.5; break }
+                case Direction.West: { faceLocX += 1.5; break }
+                case Direction.Up: { faceLocY += -1.5; break }
+                case Direction.Down: { faceLocY += 2; break }
+            }*/
+            const vec3 = { x: faceLocX, y: faceLocY, z: faceLocZ };
             const equippableComponent = data.source.getComponent(EntityComponentTypes.Equippable)
-            const vec3 = {
-                x:
-                    data.block.x +
-                    (data.block.x == Math.abs(data.block.x) ? -faceLocX : faceLocX),
-                y:
-                    (blockFace == Direction.Up ? 1 : 0) +
-                    data.block.y +
-                    (data.block.y == Math.abs(data.block.y) ? -faceLocY : faceLocY),
-                z:
-                    data.block.z +
-                    (data.block.z == Math.abs(data.block.z) ? -faceLocZ : faceLocZ)
-            };
+
             player.dimension.spawnEntity(component.entity, vec3)
             if (player.getGameMode() == GameMode.Creative) return;
             if (amount <= 1) {
@@ -1694,7 +1691,7 @@ world.afterEvents.worldLoad.subscribe((data) => {
     world.setDynamicProperty("poke_pfe:bossEventIntervalId", startBossEvents())
     world.setDynamicProperty("poke_pfe:setEffectIntervalId", startSetEffects())
     system.sendScriptEvent("poke_pfe:dupe_check", `${currentVersion}`)
-    console.warn(`Within PFE: ${JSON.stringify(new ItemStack("poke_pfe:custom_data_storage", 1).getComponent(`poke_pfe:incompatible_addons`))}`)
+    //console.warn(`Within PFE: ${JSON.stringify(new ItemStack("poke_pfe:custom_data_storage", 1).getComponent(`poke_pfe:incompatible_addons`))}`)
 })
 const DataStorageDynamicPropertyId = "registered_data_storage_items"
 /*Incoming Addon Compatibility/Integrations*/

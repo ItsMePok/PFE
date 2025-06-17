@@ -3250,8 +3250,10 @@ function PFEBossEventUIEnabledBosses(player) {
 }
 function PFEBossEventTiming(player) {
   let settings = JSON.parse(world2.getDynamicProperty(PFEBossEventConfigName).toString());
-  new ModalFormData().title({ translate: `translation.poke:bossEventMainMenuTitle` }).dropdown({ translate: `%poke_pfe:mode:` }, [{ translate: `%poke_pfe:gameTicks` }, { translate: `%poke_pfe:realTime` }], { tooltip: { translate: `%poke_pfe.timeMode.tooltip` } }).slider({ translate: `%poke_pfe:minutes` }, 0, 720, { defaultValue: settings.ticks / 1200, valueStep: 5, tooltip: { translate: `%poke_pfe.BossEventTime.tooltip` } }).submitButton(`translation.poke:BossEventUISubmit`).show(player).then((ui) => {
-    console.info(JSON.stringify(ui.formValues));
+  new ModalFormData().title({ translate: `translation.poke:bossEventMainMenuTitle` }).dropdown({ translate: `%poke_pfe.mode:` }, [
+    { translate: `%poke_pfe.gameTicks` }
+    /*, { translate: `%poke_pfe.realTime` }*/
+  ], { tooltip: { translate: `%poke_pfe.timeMode.tooltip` } }).slider({ translate: `%poke_pfe.minutes` }, 0, 720, { defaultValue: settings.ticks / 1200, valueStep: 5, tooltip: { translate: `%poke_pfe.BossEventTime.tooltip` } }).submitButton(`translation.poke:BossEventUISubmit`).show(player).then((ui) => {
     if (!ui.canceled) {
       let newTicks = Number(ui.formValues.at(1));
       if (Number(isNaN(newTicks))) {
@@ -3559,7 +3561,6 @@ function ParsePFEUpgradeComponent(item, player, component) {
   const defaultUpgrades = [PFEUpgrade.persistence, PFEUpgrade.capacity, PFEUpgrade.flaming];
   let allUpgrades = customUpgrades ? defaultUpgrades.concat(customUpgrades) : defaultUpgrades;
   const compressedUpgrades = JSON.parse(item.getDynamicProperty(component.dynamic_property ?? "pfe:upgrades")?.toString() ?? JSON.stringify([]));
-  console.warn(JSON.stringify(compressedUpgrades));
   if (component.upgrade_ids) {
     for (let upgrade_id of component?.upgrade_ids) {
       const validUpgrade = PokeGetObjectById(allUpgrades, upgrade_id)?.value;
@@ -3587,7 +3588,6 @@ function ParsePFEUpgradeComponent(item, player, component) {
 }
 function PokeUpgradeUI(player, item, config, backTo, compressedSave, component) {
   let UI = new ActionFormData3();
-  console.warn(JSON.stringify(config));
   UI.button({ translate: `translation.poke:goBack` }, `textures/poke/common/left_arrow`);
   for (let upgrade of config.upgrades) {
     const upgradeCost = upgrade.maxLevel ? upgrade.maxLevel <= upgrade.level ? Infinity : upgrade.upgradeAdditive ? Number(upgrade.level) + 1 : 1 : upgrade.upgradeAdditive ? Number(upgrade.level) + 1 : 1;
@@ -3611,7 +3611,6 @@ function PokeUpgradeUI(player, item, config, backTo, compressedSave, component) 
         const dynamicProperty = item.getDynamicProperty(config.dynamicProperty);
         const currentCompressed = compressedSave ? typeof dynamicProperty == "string" ? JSON.parse(dynamicProperty) : void 0 : void 0;
         const upgradeCost = upgrade.maxLevel ? upgrade.maxLevel <= upgrade.level ? Infinity : upgrade.upgradeAdditive ? Number(upgrade.level) + 1 : 1 : upgrade.upgradeAdditive ? Number(upgrade.level) + 1 : 1;
-        console.warn(upgradeCost);
         if (HasItem && upgradeCost != Infinity) {
           if (upgrade.id == PFEPersistenceCoreDefault.id)
             item.keepOnDeath = true;
@@ -4206,9 +4205,7 @@ function PokeTimeConfigUIMainMenu(player) {
       if (response.selection == selection) {
         let claimingGift = gifts.reverse().at(i)?.gift;
         if (!claimingGift) {
-          console.warn(`No gift found`);
         }
-        console.warn(`Claiming: ${claimingGift}`);
         player.runCommand(`${claimingGift}`);
         player.addTag(`poke:${currentTime.getFullYear()}E-${gifts.at(i)?.id}`);
         return;
@@ -4945,7 +4942,6 @@ function PokeTimeEditGift(player, event) {
     }
     if (newGift?.startsWith(`/`)) {
       newGift = newGift.substring(1);
-      console.warn(newGift);
     }
     let newEvent = {
       id: event.id,
@@ -5065,7 +5061,6 @@ var PFEBoltBowsComponent = class {
       PFEAmmoManagementMainMenuUI(data.itemStack, data.source);
       return;
     }
-    console.warn(`Dyn: ${data.itemStack.getDynamicProperty(PFEBoltBowDynamicPropertyID)}`);
     let ammoComponent = PFEBoltBowDefault;
     if (typeof data.itemStack.getDynamicProperty(PFEBoltBowDynamicPropertyID) != "string") {
       PokeSaveProperty(PFEBoltBowDynamicPropertyID, data.itemStack, JSON.stringify(PFEBoltBowDefault), data.source);
@@ -5445,7 +5440,6 @@ function PFEDisableConfigMainMenu(data) {
     if (response.selection == selection) {
       if (newProperty.quantumTeleporter) {
         newProperty.quantumTeleporter = false;
-        console.warn(`Disabled Quantum Teleporter`);
       } else
         newProperty.quantumTeleporter = true;
       world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
@@ -5456,7 +5450,6 @@ function PFEDisableConfigMainMenu(data) {
     if (response.selection == selection) {
       if (newProperty.kapowRing) {
         newProperty.kapowRing = false;
-        console.info(`Disabled Kapow Ring`);
       } else
         newProperty.kapowRing = true;
       world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
@@ -5467,7 +5460,6 @@ function PFEDisableConfigMainMenu(data) {
     if (response.selection == selection) {
       if (newProperty.nukeRing) {
         newProperty.nukeRing = false;
-        console.info(`Disabled Nuke Ring`);
       } else
         newProperty.nukeRing = true;
       world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
@@ -5478,7 +5470,6 @@ function PFEDisableConfigMainMenu(data) {
     if (response.selection == selection) {
       if (newProperty.sundial) {
         newProperty.sundial = false;
-        console.info(`Disabled Sundial`);
       } else
         newProperty.sundial = true;
       world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
@@ -5489,7 +5480,6 @@ function PFEDisableConfigMainMenu(data) {
     if (response.selection == selection) {
       if (newProperty.witherSpawner) {
         newProperty.witherSpawner = false;
-        console.warn(`Disabled Wither Spawner`);
       } else
         newProperty.witherSpawner = true;
       world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
@@ -5500,7 +5490,6 @@ function PFEDisableConfigMainMenu(data) {
     if (response.selection == selection) {
       if (newProperty.bounty) {
         newProperty.bounty = false;
-        console.warn(`Disabled Bounty`);
       } else
         newProperty.bounty = true;
       world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
@@ -5511,7 +5500,6 @@ function PFEDisableConfigMainMenu(data) {
     if (response.selection == selection) {
       if (newProperty.waypoints) {
         newProperty.waypoints = false;
-        console.warn(`Disabled Waypoint Menu`);
       } else
         newProperty.waypoints = true;
       newProperty.v = newProperty.v < 2 ? newProperty.v = 2 : newProperty.v;
@@ -5529,7 +5517,6 @@ function PFEDisableConfigMainMenu(data) {
     if (response.selection == selection) {
       if (newProperty.deathArmorRadius) {
         newProperty.deathArmorRadius = false;
-        console.info(`Disabled Death Armor's Radius Effects`);
       } else
         newProperty.deathArmorRadius = true;
       world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
@@ -5540,7 +5527,6 @@ function PFEDisableConfigMainMenu(data) {
     if (response.selection == selection) {
       if (newProperty.cactusArmorRadius) {
         newProperty.cactusArmorRadius = false;
-        console.info(`Disabled Cactus Armor's Radius Effects`);
       } else
         newProperty.cactusArmorRadius = true;
       world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
@@ -6114,7 +6100,6 @@ var PFECustomFarmQuestsPropertyID = `poke_pfe:custom_farm_quests`;
 var PFECustomCraftQuestsPropertyID = `poke_pfe:custom_craft_quests`;
 var PFECustomKillQuestsPropertyID = `poke_pfe:custom_kill_quests`;
 function PFERollQuest(item, player, questType) {
-  console.warn(JSON.stringify(questType));
   let AddingQuest = questType.at(Math.round(Math.random() * questType.length)) ?? questType.at(0) ?? { requiredItem: {}, reward: { tokenAmount: 0, item: new ItemStack6(MinecraftItemTypes.Dirt, 1) } };
   item.keepOnDeath = true;
   PokeSaveProperty(PFEQuestPropertyID, item, JSON.stringify(AddingQuest), player, void 0);
@@ -6200,7 +6185,7 @@ function ConvertQuestV1toV2(quests) {
 // scripts/waypoints.ts
 import { EntityComponentTypes as EntityComponentTypes7, EquipmentSlot as EquipmentSlot7, world as world9 } from "@minecraft/server";
 import { ActionFormData as ActionFormData9, ModalFormData as ModalFormData4 } from "@minecraft/server-ui";
-var PFEWaypointVersion = 1;
+var PFEWaypointVersion = 2;
 var PFEWaypointComponent = class {
   onUse(data, component) {
     const componentInfo = component.params;
@@ -6241,7 +6226,7 @@ function WaypointUIMainMenu(player, item, component) {
     } else
       selection++;
     if (response.selection == selection) {
-      PokeErrorScreen(player, { text: `This is not ready yet` }, WaypointUIMainMenu(player, item, component));
+      WaypointUIOptions(player, item, component, waypointConfig);
       return;
     } else
       selection++;
@@ -6254,6 +6239,34 @@ function WaypointUIMainMenu(player, item, component) {
     }
     if (response.canceled || response.selection == selection)
       return;
+  });
+}
+function WaypointUIOptions(player, item, component, waypointConfig) {
+  let UI = new ActionFormData9();
+  UI.title({ translate: `%translation.poke_pfe.WaypointUITitle` });
+  waypointConfig.localSettings.locked ? UI.button({ translate: `%poke_pfe.unlockWaypoints
+%poke_pfe.lockedBy: ${waypointConfig.localSettings.locker?.name}` }, "textures/poke/common/locked") : UI.button({ translate: `%poke_pfe.lockWaypoints` }, "textures/poke/common/unlocked");
+  UI.button({ translate: `%translation.poke_pfe.GoBack` }, `textures/poke/common/left_arrow`);
+  UI.show(player).then((response) => {
+    let selection = 0;
+    if (response.selection == selection) {
+      let newOptions = {
+        v: PFEWaypointVersion,
+        localSettings: {
+          locked: waypointConfig.localSettings.locked ? false : true,
+          locker: {
+            id: waypointConfig.localSettings.locked ? void 0 : player.id,
+            name: waypointConfig.localSettings.locked ? void 0 : player.name
+          }
+        },
+        waypoints: waypointConfig.waypoints
+      };
+      PokeSaveProperty(WaypointDynamicPropertyID, item, JSON.stringify(newOptions), player, EquipmentSlot7.Mainhand);
+    }
+    if (response.canceled || response.selection == selection) {
+      WaypointUIMainMenu(player, item, component);
+      return;
+    }
   });
 }
 function WaypointUIViewWaypoints(player, item, component) {
@@ -6302,6 +6315,10 @@ function WaypointUIManageWaypoint(player, item, waypoint, component) {
   UI.show(player).then((response) => {
     let selection = 0;
     if (response.selection == selection) {
+      if (waypointConfig.localSettings.locked && waypointConfig.localSettings.locker?.id != player.id) {
+        PokeErrorScreen(player, { text: `This waypoint was locked by ${waypointConfig.localSettings.locker?.name ?? "someone"}, this need to be unlocked by the locker in options to teleport to this waypoint again` }, WaypointUIManageWaypoint(player, item, waypoint, component));
+        return;
+      }
       waypoint.location ? player.teleport(waypoint.location, { rotation: waypoint.rotation }) : PokeErrorScreen(player, { text: `This waypoint does not have a location set.` }, WaypointUIManageWaypoint(player, item, waypoint, component));
       return;
     } else
@@ -7301,11 +7318,9 @@ system6.beforeEvents.startup.subscribe((data) => {
               UI2.show(data2.source).then((response2) => {
                 if (response2.canceled)
                   return;
-                console.warn(JSON.stringify(response2.formValues));
                 world10.setDynamicProperty("poke_pfe:setEffectDuration", Number(response2.formValues?.at(2) ?? ArmorEffectDuration / 20) * 20);
                 world10.setDynamicProperty("poke_pfe:setEffectInterval", Number(response2.formValues?.at(3) ?? 1) * 20);
                 const intervalId = world10.getDynamicProperty("poke_pfe:setEffectIntervalId");
-                console.warn(intervalId);
                 if (intervalId) {
                   system6.runInterval;
                   system6.clearRun(intervalId);
@@ -7399,18 +7414,13 @@ system6.beforeEvents.startup.subscribe((data) => {
         const player = data2.source;
         if (player.typeId != MinecraftEntityTypes.Player)
           return;
-        console.warn(`Face Location: ${JSON.stringify(data2.faceLocation)}`);
         const blockFace = data2.blockFace;
-        let faceLocX = data2.faceLocation.x;
-        let faceLocY = data2.faceLocation.y;
-        let faceLocZ = data2.faceLocation.z;
+        let faceLocX = data2.faceLocation.x + data2.block.x;
+        let faceLocY = data2.faceLocation.y + data2.block.y + 1;
+        let faceLocZ = data2.faceLocation.z + data2.block.z;
         var amount = data2.itemStack.amount;
+        const vec3 = { x: faceLocX, y: faceLocY, z: faceLocZ };
         const equippableComponent = data2.source.getComponent(EntityComponentTypes8.Equippable);
-        const vec3 = {
-          x: data2.block.x + (data2.block.x == Math.abs(data2.block.x) ? -faceLocX : faceLocX),
-          y: (blockFace == Direction2.Up ? 1 : 0) + data2.block.y + (data2.block.y == Math.abs(data2.block.y) ? -faceLocY : faceLocY),
-          z: data2.block.z + (data2.block.z == Math.abs(data2.block.z) ? -faceLocZ : faceLocZ)
-        };
         player.dimension.spawnEntity(component.entity, vec3);
         if (player.getGameMode() == GameMode5.Creative)
           return;
@@ -8567,7 +8577,6 @@ world10.afterEvents.worldLoad.subscribe((data) => {
   world10.setDynamicProperty("poke_pfe:bossEventIntervalId", startBossEvents());
   world10.setDynamicProperty("poke_pfe:setEffectIntervalId", startSetEffects());
   system6.sendScriptEvent("poke_pfe:dupe_check", `${currentVersion}`);
-  console.warn(`Within PFE: ${JSON.stringify(new ItemStack8("poke_pfe:custom_data_storage", 1).getComponent(`poke_pfe:incompatible_addons`))}`);
 });
 var DataStorageDynamicPropertyId = "registered_data_storage_items";
 system6.afterEvents.scriptEventReceive.subscribe((data) => {
