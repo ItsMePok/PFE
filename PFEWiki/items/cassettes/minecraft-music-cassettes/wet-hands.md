@@ -1,9 +1,5 @@
 # Cassette: Wet Hands
 
-{% hint style="danger" %}
-This Page is not complete yet. Check back later
-{% endhint %}
-
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cassette_wethands.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Book_and_Quill_JE2_BE2.png?2128f" alt="Book and Quill." data-size="line"> Description: <a href="#description" id="description"></a>
@@ -14,9 +10,9 @@ This Page is not complete yet. Check back later
 
 ## <img src="https://github.com/user-attachments/assets/4ab38071-56d5-4e2e-b183-6258e6c7b4df" alt="Interact Ability." data-size="line"> Interact Ability: <a href="#interact-ability" id="interact-ability"></a>
 
-### **Interacting**: Fades out any Music currently playing, and starts playing [Wet Hands by C418](https://minecraft.wiki/w/Wet_Hands) <a href="#interacting" id="interacting"></a>
+### <mark style="color:blue;">**Interacting**</mark>: Fades out any Music currently playing, and starts playing [Wet Hands by C418](https://minecraft.wiki/w/Wet_Hands) <a href="#interacting" id="interacting"></a>
 
-### **Crouching + Interacting**: Queues [Wet Hands by C418](https://minecraft.wiki/w/Wet_Hands) to play at the end of the current queued music <a href="#crouch-interacting" id="crouch-interacting"></a>
+### <mark style="color:blue;">**Crouching**</mark>**&#x20;+&#x20;**<mark style="color:blue;">**Interacting**</mark>: Queues [Wet Hands by C418](https://minecraft.wiki/w/Wet_Hands) to play at the end of the current queued music <a href="#crouch-interacting" id="crouch-interacting"></a>
 
 ## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">64</mark> <a href="#stack-size" id="stack-size"></a>
 
