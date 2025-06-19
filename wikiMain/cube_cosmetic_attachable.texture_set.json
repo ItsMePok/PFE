@@ -1,8 +1,0 @@
-{
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "cube_cosmetic_attachable",
-		"metalness_emissive_roughness": "cube_cosmetic_attachable_mer",
-		"heightmap": "cube_cosmetic_attachable_height"
-	}
-}
