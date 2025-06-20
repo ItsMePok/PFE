@@ -37,11 +37,11 @@ More info on how the different automation blocks work can be found [Here](blocks
 
 ## How do I use the item Abilities?
 
-* Some Items (ex. Haxels) have an interact ability, more info on how to use them can be found here: [interact-abilities.md](misc-other-info/interact-abilities.md "mention")
+* Some Items (ex. [Haxels](tools/haxel/)) have an interact ability, more info on how to use them can be found here: [interact-abilities.md](misc-other-info/interact-abilities.md "mention")
 
 ***
 
-## What do the upgraders do?
+## What do the [upgraders](tools/upgraders/) do?
 
 * All the Ore upgraders
   * they will upgrade its corresponding ore to raw ore block (or ore block if raw ore block does not exist)
@@ -50,7 +50,7 @@ More info on how the different automation blocks work can be found [Here](blocks
   * Cobbled limestone -> Limestone -> Limestone Bricks
 * End Upgrader
   * Endstone -> End Bricks
-  * Chorus Plant -> PurPur (20 x 20 x 10 around the block that was interacted)
+  * Chorus Plant -> Purpur (20 x 20 x 10 around the block that was interacted)
 * Nether Upgrader
   * Nether brick -> Red Nether Brick
   * Nether Wart -> Nether Wart Block
@@ -68,31 +68,31 @@ More info on how the different automation blocks work can be found [Here](blocks
 
 ### **Overworld:**
 
-* Cobalt \[Y = Any]
-* Void
-* Shade
-* Onyx
-* Holy
-* Hellish
-* Godly
-* Galaxy
-* Demonic
-* Limestone (not an ore but why not :3)
+* [Cobalt Ore](blocks/ores/stone-ores/cobalt-ore.md) \[Y = Any]
+* [Deepslate Void Ore](blocks/ores/deepslate-ores/deepslate-void-ore.md)
+* [Shade Ore](blocks/ores/stone-ores/shade-ore.md)
+* [Deepslate Onyx Ore](blocks/ores/deepslate-ores/deepslate-onyx-ore.md)
+* [Holy Ore](blocks/ores/stone-ores/holy-ore.md)
+* [Hellish Ore](blocks/ores/stone-ores/hellish-ore.md)
+* [Godly Ore](blocks/ores/stone-ores/godly-ore.md)
+* [Galaxy Ore](blocks/ores/stone-ores/galaxy-ore.md)
+* [Demonic Ore](blocks/ores/stone-ores/demonic-ore.md)
+* [Limestone](blocks/misc/limestone.md) (not an ore but why not :3)
 
 ### **Nether:**
 
-* Shade
-* Onyx
-* Hellish
-* Demonic
+* [Nether Shade Ore](blocks/ores/nether-ores/nether-shade-ore.md)
+* [Nether Onyx Ore](blocks/ores/nether-ores/nether-onyx-ore.md)
+* [Nether Hellish Ore](blocks/ores/nether-ores/nether-hellish-ore.md)
+* [Nether Demonic Ore](blocks/ores/nether-ores/nether-demonic-ore.md)
 
 ### **End:**
 
-* Nebula
-* Void
-* Godly
-* Galaxy
-* Astral
+* [Nebula Ore](blocks/ores/end-ores/nebula-ore.md)
+* [End Void Ore](blocks/ores/end-ores/end-void-ore.md)
+* [End Godly Ore](blocks/ores/end-ores/end-godly-ore.md)
+* [End Galaxy Ore](blocks/ores/end-ores/end-galaxy-ore.md)
+* [Astral Ore](blocks/ores/end-ores/astral-ore.md)
 
 ## But at what Y-level do ores generate?
 

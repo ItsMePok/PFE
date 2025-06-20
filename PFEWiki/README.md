@@ -79,3 +79,13 @@ _you can also dm me on discord: itsmepok_
 ### Bluesky
 
 {% embed url="https://bsky.app/profile/itsmepok.bsky.social" %}
+
+
+
+***
+
+## Disclaimer to follow [Minecraft Usage Guidelines](https://www.minecraft.net/en-us/usage-guidelines)&#x20;
+
+(since this wiki has used some assets from the game)
+
+**NOT AN OFFICIAL MINECRAFT \[PRODUCT/SERVICE/EVENT/etc.]. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT**

@@ -14,11 +14,7 @@ layout:
 
 # Dirter
 
-<div align="center" data-full-width="true">
-
-<figure><img src="../../.gitbook/assets/dirter.png" alt="Dirter"><figcaption></figcaption></figure>
-
-</div>
+<div align="center" data-full-width="true"><figure><img src="broken-reference" alt="Dirter"><figcaption></figcaption></figure></div>
 
 <details>
 
@@ -52,7 +48,7 @@ layout:
 
 |                                                                                                  |                                                                                                                                   |                                                                                                  |
 | :----------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: |
-| ![Cobalt Ingot](https://github.com/user-attachments/assets/f2b33b06-67a6-4a44-9c12-0259f8eb17a4) |                     ![Planks](https://minecraft.wiki/images/thumb/Oak\_Planks.png/150px-Oak\_Planks.png?d9efa)                    | ![Cobalt Ingot](https://github.com/user-attachments/assets/f2b33b06-67a6-4a44-9c12-0259f8eb17a4) |
+| ![Cobalt Ingot](https://github.com/user-attachments/assets/f2b33b06-67a6-4a44-9c12-0259f8eb17a4) |                      ![Planks](https://minecraft.wiki/images/thumb/Oak_Planks.png/150px-Oak_Planks.png?d9efa)                     | ![Cobalt Ingot](https://github.com/user-attachments/assets/f2b33b06-67a6-4a44-9c12-0259f8eb17a4) |
 |       ![](https://minecraft.wiki/images/thumb/Cobblestone.png/150px-Cobblestone.png?45867)       | <img src="https://github.com/user-attachments/assets/e86a7ee9-4449-47a6-9164-6b435c473780" alt="GPS Module" data-size="original"> |              ![](https://minecraft.wiki/images/thumb/Dirt.png/150px-Dirt.png?89d72)              |
 | ![Cobalt Ingot](https://github.com/user-attachments/assets/f2b33b06-67a6-4a44-9c12-0259f8eb17a4) |    <img src="https://minecraft.wiki/images/thumb/Oak_Planks.png/150px-Oak_Planks.png?d9efa" alt="Planks" data-size="original">    | ![Cobalt Ingot](https://github.com/user-attachments/assets/f2b33b06-67a6-4a44-9c12-0259f8eb17a4) |
 {% endtab %}

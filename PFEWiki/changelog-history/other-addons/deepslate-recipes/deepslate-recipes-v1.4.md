@@ -2,7 +2,7 @@
 
 ## Keyart:
 
-<figure><img src="../../../.gitbook/assets/deepslate_recipes.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
 ## Download Links:
 

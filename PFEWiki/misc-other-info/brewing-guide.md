@@ -7,11 +7,11 @@
 * Cobalt Potion
   * <img src="https://minecraft.wiki/images/Water_Bottle_JE2_BE2.png?acae5" alt="" data-size="line"> [Awkward Potion](https://minecraft.wiki/w/Potion#Base_potions) + <img src="https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694" alt="" data-size="line">[Cobalt Ingot](../items/ingots/cobalt-ingot.md)
 * Hellish Potion
-  * <img src="https://minecraft.wiki/images/Water_Bottle_JE2_BE2.png?acae5" alt="" data-size="line"> [Awkward Potion ](https://minecraft.wiki/w/Potion#Base_potions)+ Hellish Ingot
+  * <img src="https://minecraft.wiki/images/Water_Bottle_JE2_BE2.png?acae5" alt="" data-size="line"> [Awkward Potion ](https://minecraft.wiki/w/Potion#Base_potions)+ [Hellish Ingot](../items/ingots/hellish-ingot.md)
 * Demonic Potion
-  * <img src="https://minecraft.wiki/images/Water_Bottle_JE2_BE2.png?acae5" alt="" data-size="line"> [Awkward Potion ](https://minecraft.wiki/w/Potion#Base_potions)+ Demonic Ingot
+  * <img src="https://minecraft.wiki/images/Water_Bottle_JE2_BE2.png?acae5" alt="" data-size="line"> [Awkward Potion ](https://minecraft.wiki/w/Potion#Base_potions)+ [Demonic Ingot](../items/ingots/demonic-ingot.md)
 * Void Potion
-  * <img src="https://minecraft.wiki/images/Water_Bottle_JE2_BE2.png?acae5" alt="" data-size="line"> [Awkward Potion ](https://minecraft.wiki/w/Potion#Base_potions)+ Void Ingot
+  * <img src="https://minecraft.wiki/images/Water_Bottle_JE2_BE2.png?acae5" alt="" data-size="line"> [Awkward Potion ](https://minecraft.wiki/w/Potion#Base_potions)+ [Void Ingot](../items/ingots/void-ingot.md)
 * Death Potion
   * <img src="https://minecraft.wiki/images/Water_Bottle_JE2_BE2.png?acae5" alt="" data-size="line"> [Awkward Potion ](https://minecraft.wiki/w/Potion#Base_potions)+ <img src="https://github.com/user-attachments/assets/f4818c7c-f8c9-4218-b546-70a6a439e4cb" alt="" data-size="line">[Death Ingot](../items/ingots/death-ingot.md)
 * Nebula Potion
@@ -19,11 +19,11 @@
 
 ## Food
 
-* Root Beer
+* [Root Beer](../items/foods/root-beer.md)
   * <img src="https://github.com/user-attachments/assets/81d985f3-0c44-468e-ba2e-65c26664b823" alt="" data-size="line">[Sugar Water](../items/foods/sugar-water.md) + <img src="https://minecraft.wiki/images/Beetroot_JE2_BE2.png?649dc" alt="" data-size="line"> [Beetroot](https://minecraft.wiki/w/Beetroot)
-* Eggnog
+* [Eggnog](../items/foods/eggnog.md)
   * <img src="https://github.com/user-attachments/assets/ab064ff8-ecab-4101-b7e7-a7ec210c4788" alt="" data-size="line">[Milk Bottle](../items/foods/milk-bottle.md) + <img src="https://minecraft.wiki/images/thumb/Egg_JE2_BE2.png/150px-Egg_JE2_BE2.png?495d9" alt="" data-size="line"> [Egg](https://minecraft.wiki/w/Egg)
-* Hot Coco
+* [Hot Coco](../items/foods/hot-coco.md)
   * <img src="https://github.com/user-attachments/assets/ab064ff8-ecab-4101-b7e7-a7ec210c4788" alt="" data-size="line">[Milk Bottle](../items/foods/milk-bottle.md) + <img src="https://minecraft.wiki/images/thumb/Cocoa_Beans_JE4_BE3.png/150px-Cocoa_Beans_JE4_BE3.png?48f20" alt="" data-size="line"> [Coco Beans](https://minecraft.wiki/w/Cocoa_Beans)
 * <img src="https://github.com/user-attachments/assets/81d985f3-0c44-468e-ba2e-65c26664b823" alt="" data-size="line">[Sugar Water](../items/foods/sugar-water.md)
   * <img src="https://minecraft.wiki/images/Water_Bottle_JE2_BE2.png?acae5" alt="" data-size="line"> [Water Bottle](https://minecraft.wiki/w/Potion#Base_potions) + <img src="https://minecraft.wiki/images/Sugar_JE2_BE2.png?9185b" alt="" data-size="line"> [Sugar](https://minecraft.wiki/w/Sugar)

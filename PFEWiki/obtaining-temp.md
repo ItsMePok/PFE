@@ -72,15 +72,13 @@ hidden: true
 {% tab title="Shopkeeper Trade" %}
 
 
-<figure><img src="https://github.com/user-attachments/assets/adc1c7b5-4611-4b54-b1a4-1fcaafe6c896" alt=""><figcaption><p>Sold by the <a href="mobs/traders/shopkeeper.md">Shopkeeper</a></p></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/entity_icon/Shopkeeper.png?raw=true" alt=""><figcaption><p>Sold by the <a href="mobs/traders/shopkeeper.md">Shopkeeper</a></p></figcaption></figure>
 
 <table data-full-width="false"><thead><tr><th align="center">Wants</th><th width="88" align="center">Amount</th><th align="center">Gives</th><th width="85" align="center">Amount</th></tr></thead><tbody><tr><td align="center"></td><td align="center"></td><td align="center"></td><td align="center"></td></tr><tr><td align="center"></td><td align="center"></td><td align="center"></td><td align="center"></td></tr></tbody></table>
 {% endtab %}
 
 {% tab title="Token Trader " %}
-
-
-<figure><img src="https://github.com/user-attachments/assets/30c5b799-c00c-4ecd-b540-59b99cce7cbe" alt=""><figcaption><p>Sold by the <a href="mobs/traders/token-trader.md">Token Trader</a></p></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/entity_icon/TokenTrader.png?raw=true" alt=""><figcaption><p>Sold by the <a href="mobs/traders/token-trader.md">Token Trader</a></p></figcaption></figure>
 
 <table data-full-width="false"><thead><tr><th align="center">Wants</th><th width="88" align="center">Amount</th><th align="center">Gives</th><th width="85" align="center">Amount</th></tr></thead><tbody><tr><td align="center"></td><td align="center"></td><td align="center"></td><td align="center"></td></tr><tr><td align="center"></td><td align="center"></td><td align="center"></td><td align="center"></td></tr></tbody></table>
 {% endtab %}
@@ -124,7 +122,7 @@ More info about brewing can be found in the: [brewing-guide.md](misc-other-info/
 {% tab title="Recipe 3x3" %}
 
 
-<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
+<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the<br><a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
 |     |     |     |
 | :-: | :-: | :-: |
@@ -139,6 +137,10 @@ Items:
 Outputs:
 
 * 1x
+
+Recipe can be unlocked with:
+
+*
 {% endtab %}
 
 {% tab title="Rexipe 2x2" %}

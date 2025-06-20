@@ -2,7 +2,7 @@
 
 ## What Addons are have [PFE integration](#user-content-fn-1)[^1]
 
-### Papercraft Mob Stickers
+### [Papercraft Mob Stickers](https://www.minecraft.net/en-us/marketplace/pdp/jigarbov-productions/papercraft-mob-stickers-add--on/2c1b0abb-c954-459c-831c-8ad3d8e4f7e0)
 
 * When this Add-On is on a world with PFE you can obtain stickers of every mob in PFE
 
@@ -10,7 +10,7 @@
 Even if this Add-On is not installed you can still get them in creative&#x20;
 {% endhint %}
 
-### Computers Add-On
+### [Computers Add-On](https://www.minecraft.net/en-us/marketplace/pdp/jigarbov-productions/computers-add--on/fd6e3c20-5a7e-4f95-ad16-cd2486d13ae5)
 
 * When this Add-On is on a world with PFE you can see stats on various things from PFE
 
@@ -18,16 +18,16 @@ Even if this Add-On is not installed you can still get them in creative&#x20;
 Even if this Add-On is not installed these stats will be saved in scoreboard
 {% endhint %}
 
-### Novelty API
+### [Novelty API](https://www.curseforge.com/minecraft-bedrock/addons/novelty)
 
 * When this Add-On is on a world with PFE you can put various items in the Accessories Menu's slots
 * Items with equip / set effects in these slots will also provide their effect contributions
 
-### Just Cosmetics
+### [Just Cosmetics](https://www.curseforge.com/minecraft-bedrock/addons/just-cosmetics)
 
 * When this Add-On is on a world with PFE:
-  * The Listener will drop the PFE Listener Hoodie
-  * You can craft&#x20;
+  * [The Listener](../mobs/bosses/the-listener.md) will drop the PFE Listener Hoodie
+  * You can craft the Poke's Fantasy Expansion Merch
 
 ## What can be integrated into from PFE
 
@@ -39,7 +39,6 @@ integrations via scriptevent must be sent after `world.afterEvents.worldLoad` wo
 This is due to a change made in script v2.0.0
 {% endhint %}
 
-* Giving an amor piece a tag from the PFE armors (ex: `poke_pfe:astral_armor_effects` will grant Astral's set effects when equipped
 * scriptevent `poke_pfe:enabled`&#x20;
   * This will send true (as a string) to the scriptevent id provided in the message
 
@@ -76,7 +75,7 @@ maxAmp: this will decide what the highest effect amplifier/level this item can g
 */
 interface PFEEffectOptions {
   effect: MinecraftEffectTypes | string,
-  maxAmp: number
+  max_amp: number
 }
 /*
 Interface for adding custom set effect presets, 
@@ -96,8 +95,8 @@ interface PFEUnparsedCustomEffectInfo {
 world.afterEvents.worldInitialize.subscribe((data) => {
   const Presets: PFEUnparsedCustomEffectInfo = {
     value: [
-      { mode: "tag", effects: [{ effect: "minecraft:night_vision", maxAmp: 1 }], tag: "poke_pfe:night_vision" },
-      { mode: "lore", effects: [{ effect: "minecraft:regeneration", maxAmp: 3 }, { effect: "minecraft:fatal_poison", maxAmp: 4 }], tag: "poke_pfe:custom_preset" }
+      { mode: "tag", effects: [{ effect: "minecraft:night_vision", max_amp: 1 }], tag: "poke_pfe:night_vision" },
+      { mode: "lore", effects: [{ effect: "minecraft:regeneration", max_amp: 3 }, { effect: "minecraft:fatal_poison", max_amp: 4 }], tag: "poke_pfe:custom_preset" }
     ]
   }
   world.getDimension(`minecraft:overworld`).runCommand(`scriptevent poke_pfe:add_set_effect_preset ${JSON.stringify(Presets)}`)
@@ -165,7 +164,7 @@ world.afterEvents.worldInitialize.subscribe((data) => {
 
 * The biggest thing is avoiding modifying vanilla files/features
   * some examples:
-    * modifying the crafting table's UI (usually done to make custom crafting tables) can completely break the `minecraft:crafting_table` block component resulting in the [crafters](../blocks/crafters/ "mention") (Spell crafter & Dye Un-mixer)
+    * modifying the crafting table's UI (usually done to make custom crafting table UIs) can completely break the `minecraft:crafting_table` block component resulting in the [crafters](../blocks/crafters/ "mention") ([Spell crafter](../blocks/crafters/spell-crafter.md) & [Dye Un-mixer](../blocks/crafters/dye-unmixer.md))
   * See [vanilla-files-modified.md](vanilla-files-modified.md "mention") and make sure you are not modifying any of the same files&#x20;
 
 [^1]: This means that PFE would have additional features when using these Add-ons

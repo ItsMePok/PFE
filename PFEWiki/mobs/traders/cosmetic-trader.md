@@ -1,6 +1,6 @@
 # Cosmetic Trader
 
-<figure><img src="../../.gitbook/assets/cosmetic_trader.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:cosmetic\_trader** <a href="#identifier" id="identifier"></a>
 
@@ -55,7 +55,7 @@ This spawn egg cannot be used in <img src="https://minecraft.wiki/images/thumb/S
 {% tab title="Mob Loot" %}
 
 
-<figure><img src="../../.gitbook/assets/cosmetic_trader.png" alt=""><figcaption><p>Dropped by the Cosmetic Trader</p></figcaption></figure>
+<figure><img src="broken-reference" alt=""><figcaption><p>Dropped by the Cosmetic Trader</p></figcaption></figure>
 
 | Item                                                                                                                                                                     | Amount | Chance of Drop |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ | -------------- |

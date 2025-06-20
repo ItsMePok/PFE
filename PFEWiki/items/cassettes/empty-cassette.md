@@ -8,7 +8,7 @@
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:empty\_cassette** <a href="#identifier" id="identifier"></a>
 
-## <img src="../../.gitbook/assets/InteractAbility.png" alt="Interact Ability." data-size="line"> Interact Ability: <a href="#interact-ability" id="interact-ability"></a>
+## <img src="broken-reference" alt="Interact Ability." data-size="line"> Interact Ability: <a href="#interact-ability" id="interact-ability"></a>
 
 ### **Interacting**: Fades out any Music currently playing <a href="#interacting" id="interacting"></a>
 
