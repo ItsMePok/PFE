@@ -11,7 +11,8 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.hellish_ingot\n%poke_pfe.tag"
 			},
-			"minecraft:icon": "poke_hellish_ingot"
+			"minecraft:icon": "poke_hellish_ingot",
+			"poke_pfe:icon_path": "textures/poke/pfe/hellish_ingot"
 		}
 	}
 }

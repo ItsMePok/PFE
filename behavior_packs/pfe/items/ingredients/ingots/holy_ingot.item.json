@@ -11,7 +11,8 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.holy_ingot\n%poke_pfe.tag"
 			},
-			"minecraft:icon": "poke_holy_ingot"
+			"minecraft:icon": "poke_holy_ingot",
+			"poke_pfe:icon_path": "textures/poke/pfe/holy_ingot"
 		}
 	}
 }

@@ -29,6 +29,11 @@
               "components": {
                 "type": "object",
                 "properties": {
+                  "poke_pfe:icon_path": {
+                    "title": "Icon Path (PFE)",
+                    "type": "string",
+                    "description": "This will control what the texture path of this item is. This will be used in scripting where the icon would not be known otherwise"
+                  },
                   "poke_pfe:launch_user": {
                     "type": "object",
                     "description": "Launch user (PFE)",
@@ -3053,7 +3058,78 @@
               }
             }
           }
-        }
+        },
+        "required": [
+          "minecraft:item",
+          "format_version"
+        ]
+      }
+    },
+    {
+      "fileMatch": [
+        "*.block.json"
+      ],
+      "schema": {
+        "type": "object",
+        "properties": {
+          "format_version": {
+            "type": "string"
+          },
+          "minecraft:block": {
+            "type": "object",
+            "properties": {
+              "components": {
+                "type": "object",
+                "properties": {
+                  "poke_pfe:recipe_block": {
+                    "description": "Recipe Block (PFE)",
+                    "oneOf": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "description": "This is used to determine what the dynamic proeprty gets read/saved as (IDs of the same value will share the same info for that player)",
+                            "anyOf": [
+                              {
+                                "enum": [
+                                  "poke_pfe:alloy_forge",
+                                ]
+                              },
+                              {
+                                "type": "string",
+                              }
+                            ],
+                          },
+                          "can_store_items": {
+                            "type": "boolean",
+                            "description": "Can this block store items that can later be used in recipes? (Stored items are bound to that player not the block)",
+                            "default": false
+                          },
+                          "storage_capacity_limit": {
+                            "type": "number",
+                            "description": "The max amount of items this can store"
+                          },
+                          "block_name": {
+                            "type": "string",
+                            "description": "The name of the block (This will be used in things like the UI titles)",
+                            "default": "%poke_pfe.recipe_block"
+                          }
+                        },
+                        "required": [
+                          "id"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "required": [
+          "format_version",
+          "minecraft:block"
+        ]
       }
     }
   ],

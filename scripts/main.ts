@@ -12,7 +12,8 @@ import { PFECustomCraftQuestsPropertyID, PFECustomFarmQuestsPropertyID, PFECusto
 import ComputersCompat, { initExampleStickers } from "./addonCompatibility/jigarbov";
 import { PFEWaypointComponent } from "./waypoints";
 import { PFEUpgradeableComponent } from "./upgrades";
-const currentVersion = 102950 // PFE Version (ex: 102950 = v1.2.95)
+import { RecipeBlockComponent } from "./recipeBlock";
+const currentVersion = 102960 // PFE Version (ex: 102950 = v1.2.95)
 
 
 world.afterEvents.playerJoin.subscribe((data => {
@@ -1642,11 +1643,13 @@ system.beforeEvents.startup.subscribe(data => {
             data.source.playMusic(componentInfo.music, { fade: componentInfo.music_fade_amount ?? 2.5, volume: componentInfo.music_volume ?? undefined, loop: componentInfo.loop_music ?? undefined })
         }
     });
+    data.blockComponentRegistry.registerCustomComponent("poke_pfe:recipe_block", new RecipeBlockComponent())
     data.itemComponentRegistry.registerCustomComponent("poke_pfe:upgradeable", new PFEUpgradeableComponent());
     data.itemComponentRegistry.registerCustomComponent("poke_pfe:box_mining", new PFEBoxMiningComponent());
     data.itemComponentRegistry.registerCustomComponent("poke_pfe:quests", new PFEQuestComponent());
     data.itemComponentRegistry.registerCustomComponent("poke_pfe:waypoint_menu", new PFEWaypointComponent());
     // These components exist to allow item.getComponent() to access data from applicable items/blocks
+    data.itemComponentRegistry.registerCustomComponent("poke_pfe:icon_path", {});
     data.itemComponentRegistry.registerCustomComponent("poke_pfe:set_effects", {});
     data.itemComponentRegistry.registerCustomComponent("poke_pfe:custom_upgrades", {});
     data.itemComponentRegistry.registerCustomComponent("poke_pfe:custom_quests_info", {});

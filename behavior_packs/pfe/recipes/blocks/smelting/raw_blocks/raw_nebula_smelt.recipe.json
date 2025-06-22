@@ -7,6 +7,11 @@
 		"tags": [
 			"blast_furnace"
 		],
+		"unlock": [
+			{
+				"item": "poke:raw_nebula_block"
+			}
+		],
 		"input": "poke:raw_nebula_block",
 		"output": "poke:nebula_block"
 	}

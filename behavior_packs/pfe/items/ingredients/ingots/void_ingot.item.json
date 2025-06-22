@@ -11,7 +11,8 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.void_ingot\n%poke_pfe.tag"
 			},
-			"minecraft:icon": "poke_void_ingot"
+			"minecraft:icon": "poke_void_ingot",
+			"poke_pfe:icon_path": "textures/poke/pfe/void_ingot"
 		}
 	}
 }

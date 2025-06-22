@@ -1,5 +1,5 @@
 // scripts/main.ts
-import { system as system6, world as world10, EquipmentSlot as EquipmentSlot8, GameMode as GameMode5, EntityComponentTypes as EntityComponentTypes8, ItemComponentTypes as ItemComponentTypes4, ItemStack as ItemStack8, Direction as Direction2 } from "@minecraft/server";
+import { system as system6, world as world11, EquipmentSlot as EquipmentSlot8, GameMode as GameMode5, EntityComponentTypes as EntityComponentTypes8, ItemComponentTypes as ItemComponentTypes5, ItemStack as ItemStack9, Direction as Direction2 } from "@minecraft/server";
 
 // node_modules/@minecraft/vanilla-data/lib/index.js
 var MinecraftBiomeTypes = ((MinecraftBiomeTypes2) => {
@@ -449,6 +449,7 @@ var MinecraftBlockTypes = ((MinecraftBlockTypes2) => {
   MinecraftBlockTypes2["DoubleCutCopperSlab"] = "minecraft:double_cut_copper_slab";
   MinecraftBlockTypes2["DragonEgg"] = "minecraft:dragon_egg";
   MinecraftBlockTypes2["DragonHead"] = "minecraft:dragon_head";
+  MinecraftBlockTypes2["DriedGhast"] = "minecraft:dried_ghast";
   MinecraftBlockTypes2["DriedKelpBlock"] = "minecraft:dried_kelp_block";
   MinecraftBlockTypes2["DripstoneBlock"] = "minecraft:dripstone_block";
   MinecraftBlockTypes2["Dropper"] = "minecraft:dropper";
@@ -1342,6 +1343,7 @@ var MinecraftBlockTypes = ((MinecraftBlockTypes2) => {
   return MinecraftBlockTypes2;
 })(MinecraftBlockTypes || {});
 var MinecraftCameraPresetsTypes = ((MinecraftCameraPresetsTypes2) => {
+  MinecraftCameraPresetsTypes2["ControlSchemeCamera"] = "minecraft:control_scheme_camera";
   MinecraftCameraPresetsTypes2["FirstPerson"] = "minecraft:first_person";
   MinecraftCameraPresetsTypes2["FixedBoom"] = "minecraft:fixed_boom";
   MinecraftCameraPresetsTypes2["FollowOrbit"] = "minecraft:follow_orbit";
@@ -1495,6 +1497,7 @@ var MinecraftEntityTypes = ((MinecraftEntityTypes2) => {
   MinecraftEntityTypes2["GlowSquid"] = "minecraft:glow_squid";
   MinecraftEntityTypes2["Goat"] = "minecraft:goat";
   MinecraftEntityTypes2["Guardian"] = "minecraft:guardian";
+  MinecraftEntityTypes2["HappyGhast"] = "minecraft:happy_ghast";
   MinecraftEntityTypes2["Hoglin"] = "minecraft:hoglin";
   MinecraftEntityTypes2["HopperMinecart"] = "minecraft:hopper_minecart";
   MinecraftEntityTypes2["Horse"] = "minecraft:horse";
@@ -1696,6 +1699,7 @@ var MinecraftItemTypes = ((MinecraftItemTypes2) => {
   MinecraftItemTypes2["BlackConcretePowder"] = "minecraft:black_concrete_powder";
   MinecraftItemTypes2["BlackDye"] = "minecraft:black_dye";
   MinecraftItemTypes2["BlackGlazedTerracotta"] = "minecraft:black_glazed_terracotta";
+  MinecraftItemTypes2["BlackHarness"] = "minecraft:black_harness";
   MinecraftItemTypes2["BlackShulkerBox"] = "minecraft:black_shulker_box";
   MinecraftItemTypes2["BlackStainedGlass"] = "minecraft:black_stained_glass";
   MinecraftItemTypes2["BlackStainedGlassPane"] = "minecraft:black_stained_glass_pane";
@@ -1718,6 +1722,7 @@ var MinecraftItemTypes = ((MinecraftItemTypes2) => {
   MinecraftItemTypes2["BlueDye"] = "minecraft:blue_dye";
   MinecraftItemTypes2["BlueEgg"] = "minecraft:blue_egg";
   MinecraftItemTypes2["BlueGlazedTerracotta"] = "minecraft:blue_glazed_terracotta";
+  MinecraftItemTypes2["BlueHarness"] = "minecraft:blue_harness";
   MinecraftItemTypes2["BlueIce"] = "minecraft:blue_ice";
   MinecraftItemTypes2["BlueOrchid"] = "minecraft:blue_orchid";
   MinecraftItemTypes2["BlueShulkerBox"] = "minecraft:blue_shulker_box";
@@ -1757,6 +1762,7 @@ var MinecraftItemTypes = ((MinecraftItemTypes2) => {
   MinecraftItemTypes2["BrownDye"] = "minecraft:brown_dye";
   MinecraftItemTypes2["BrownEgg"] = "minecraft:brown_egg";
   MinecraftItemTypes2["BrownGlazedTerracotta"] = "minecraft:brown_glazed_terracotta";
+  MinecraftItemTypes2["BrownHarness"] = "minecraft:brown_harness";
   MinecraftItemTypes2["BrownMushroom"] = "minecraft:brown_mushroom";
   MinecraftItemTypes2["BrownMushroomBlock"] = "minecraft:brown_mushroom_block";
   MinecraftItemTypes2["BrownShulkerBox"] = "minecraft:brown_shulker_box";
@@ -1919,6 +1925,7 @@ var MinecraftItemTypes = ((MinecraftItemTypes2) => {
   MinecraftItemTypes2["CyanConcretePowder"] = "minecraft:cyan_concrete_powder";
   MinecraftItemTypes2["CyanDye"] = "minecraft:cyan_dye";
   MinecraftItemTypes2["CyanGlazedTerracotta"] = "minecraft:cyan_glazed_terracotta";
+  MinecraftItemTypes2["CyanHarness"] = "minecraft:cyan_harness";
   MinecraftItemTypes2["CyanShulkerBox"] = "minecraft:cyan_shulker_box";
   MinecraftItemTypes2["CyanStainedGlass"] = "minecraft:cyan_stained_glass";
   MinecraftItemTypes2["CyanStainedGlassPane"] = "minecraft:cyan_stained_glass_pane";
@@ -2010,6 +2017,7 @@ var MinecraftItemTypes = ((MinecraftItemTypes2) => {
   MinecraftItemTypes2["DragonBreath"] = "minecraft:dragon_breath";
   MinecraftItemTypes2["DragonEgg"] = "minecraft:dragon_egg";
   MinecraftItemTypes2["DragonHead"] = "minecraft:dragon_head";
+  MinecraftItemTypes2["DriedGhast"] = "minecraft:dried_ghast";
   MinecraftItemTypes2["DriedKelp"] = "minecraft:dried_kelp";
   MinecraftItemTypes2["DriedKelpBlock"] = "minecraft:dried_kelp_block";
   MinecraftItemTypes2["DripstoneBlock"] = "minecraft:dripstone_block";
@@ -2133,6 +2141,7 @@ var MinecraftItemTypes = ((MinecraftItemTypes2) => {
   MinecraftItemTypes2["GrayConcretePowder"] = "minecraft:gray_concrete_powder";
   MinecraftItemTypes2["GrayDye"] = "minecraft:gray_dye";
   MinecraftItemTypes2["GrayGlazedTerracotta"] = "minecraft:gray_glazed_terracotta";
+  MinecraftItemTypes2["GrayHarness"] = "minecraft:gray_harness";
   MinecraftItemTypes2["GrayShulkerBox"] = "minecraft:gray_shulker_box";
   MinecraftItemTypes2["GrayStainedGlass"] = "minecraft:gray_stained_glass";
   MinecraftItemTypes2["GrayStainedGlassPane"] = "minecraft:gray_stained_glass_pane";
@@ -2145,6 +2154,7 @@ var MinecraftItemTypes = ((MinecraftItemTypes2) => {
   MinecraftItemTypes2["GreenConcretePowder"] = "minecraft:green_concrete_powder";
   MinecraftItemTypes2["GreenDye"] = "minecraft:green_dye";
   MinecraftItemTypes2["GreenGlazedTerracotta"] = "minecraft:green_glazed_terracotta";
+  MinecraftItemTypes2["GreenHarness"] = "minecraft:green_harness";
   MinecraftItemTypes2["GreenShulkerBox"] = "minecraft:green_shulker_box";
   MinecraftItemTypes2["GreenStainedGlass"] = "minecraft:green_stained_glass";
   MinecraftItemTypes2["GreenStainedGlassPane"] = "minecraft:green_stained_glass_pane";
@@ -2156,6 +2166,7 @@ var MinecraftItemTypes = ((MinecraftItemTypes2) => {
   MinecraftItemTypes2["GusterBannerPattern"] = "minecraft:guster_banner_pattern";
   MinecraftItemTypes2["GusterPotterySherd"] = "minecraft:guster_pottery_sherd";
   MinecraftItemTypes2["HangingRoots"] = "minecraft:hanging_roots";
+  MinecraftItemTypes2["HappyGhastSpawnEgg"] = "minecraft:happy_ghast_spawn_egg";
   MinecraftItemTypes2["HardenedClay"] = "minecraft:hardened_clay";
   MinecraftItemTypes2["HayBlock"] = "minecraft:hay_block";
   MinecraftItemTypes2["HeartOfTheSea"] = "minecraft:heart_of_the_sea";
@@ -2265,6 +2276,7 @@ var MinecraftItemTypes = ((MinecraftItemTypes2) => {
   MinecraftItemTypes2["LightBlueConcretePowder"] = "minecraft:light_blue_concrete_powder";
   MinecraftItemTypes2["LightBlueDye"] = "minecraft:light_blue_dye";
   MinecraftItemTypes2["LightBlueGlazedTerracotta"] = "minecraft:light_blue_glazed_terracotta";
+  MinecraftItemTypes2["LightBlueHarness"] = "minecraft:light_blue_harness";
   MinecraftItemTypes2["LightBlueShulkerBox"] = "minecraft:light_blue_shulker_box";
   MinecraftItemTypes2["LightBlueStainedGlass"] = "minecraft:light_blue_stained_glass";
   MinecraftItemTypes2["LightBlueStainedGlassPane"] = "minecraft:light_blue_stained_glass_pane";
@@ -2276,6 +2288,7 @@ var MinecraftItemTypes = ((MinecraftItemTypes2) => {
   MinecraftItemTypes2["LightGrayConcrete"] = "minecraft:light_gray_concrete";
   MinecraftItemTypes2["LightGrayConcretePowder"] = "minecraft:light_gray_concrete_powder";
   MinecraftItemTypes2["LightGrayDye"] = "minecraft:light_gray_dye";
+  MinecraftItemTypes2["LightGrayHarness"] = "minecraft:light_gray_harness";
   MinecraftItemTypes2["LightGrayShulkerBox"] = "minecraft:light_gray_shulker_box";
   MinecraftItemTypes2["LightGrayStainedGlass"] = "minecraft:light_gray_stained_glass";
   MinecraftItemTypes2["LightGrayStainedGlassPane"] = "minecraft:light_gray_stained_glass_pane";
@@ -2292,6 +2305,7 @@ var MinecraftItemTypes = ((MinecraftItemTypes2) => {
   MinecraftItemTypes2["LimeConcretePowder"] = "minecraft:lime_concrete_powder";
   MinecraftItemTypes2["LimeDye"] = "minecraft:lime_dye";
   MinecraftItemTypes2["LimeGlazedTerracotta"] = "minecraft:lime_glazed_terracotta";
+  MinecraftItemTypes2["LimeHarness"] = "minecraft:lime_harness";
   MinecraftItemTypes2["LimeShulkerBox"] = "minecraft:lime_shulker_box";
   MinecraftItemTypes2["LimeStainedGlass"] = "minecraft:lime_stained_glass";
   MinecraftItemTypes2["LimeStainedGlassPane"] = "minecraft:lime_stained_glass_pane";
@@ -2311,6 +2325,7 @@ var MinecraftItemTypes = ((MinecraftItemTypes2) => {
   MinecraftItemTypes2["MagentaConcretePowder"] = "minecraft:magenta_concrete_powder";
   MinecraftItemTypes2["MagentaDye"] = "minecraft:magenta_dye";
   MinecraftItemTypes2["MagentaGlazedTerracotta"] = "minecraft:magenta_glazed_terracotta";
+  MinecraftItemTypes2["MagentaHarness"] = "minecraft:magenta_harness";
   MinecraftItemTypes2["MagentaShulkerBox"] = "minecraft:magenta_shulker_box";
   MinecraftItemTypes2["MagentaStainedGlass"] = "minecraft:magenta_stained_glass";
   MinecraftItemTypes2["MagentaStainedGlassPane"] = "minecraft:magenta_stained_glass_pane";
@@ -2384,6 +2399,7 @@ var MinecraftItemTypes = ((MinecraftItemTypes2) => {
   MinecraftItemTypes2["MusicDiscRelic"] = "minecraft:music_disc_relic";
   MinecraftItemTypes2["MusicDiscStal"] = "minecraft:music_disc_stal";
   MinecraftItemTypes2["MusicDiscStrad"] = "minecraft:music_disc_strad";
+  MinecraftItemTypes2["MusicDiscTears"] = "minecraft:music_disc_tears";
   MinecraftItemTypes2["MusicDiscWait"] = "minecraft:music_disc_wait";
   MinecraftItemTypes2["MusicDiscWard"] = "minecraft:music_disc_ward";
   MinecraftItemTypes2["Mutton"] = "minecraft:mutton";
@@ -2444,6 +2460,7 @@ var MinecraftItemTypes = ((MinecraftItemTypes2) => {
   MinecraftItemTypes2["OrangeConcretePowder"] = "minecraft:orange_concrete_powder";
   MinecraftItemTypes2["OrangeDye"] = "minecraft:orange_dye";
   MinecraftItemTypes2["OrangeGlazedTerracotta"] = "minecraft:orange_glazed_terracotta";
+  MinecraftItemTypes2["OrangeHarness"] = "minecraft:orange_harness";
   MinecraftItemTypes2["OrangeShulkerBox"] = "minecraft:orange_shulker_box";
   MinecraftItemTypes2["OrangeStainedGlass"] = "minecraft:orange_stained_glass";
   MinecraftItemTypes2["OrangeStainedGlassPane"] = "minecraft:orange_stained_glass_pane";
@@ -2504,6 +2521,7 @@ var MinecraftItemTypes = ((MinecraftItemTypes2) => {
   MinecraftItemTypes2["PinkConcretePowder"] = "minecraft:pink_concrete_powder";
   MinecraftItemTypes2["PinkDye"] = "minecraft:pink_dye";
   MinecraftItemTypes2["PinkGlazedTerracotta"] = "minecraft:pink_glazed_terracotta";
+  MinecraftItemTypes2["PinkHarness"] = "minecraft:pink_harness";
   MinecraftItemTypes2["PinkPetals"] = "minecraft:pink_petals";
   MinecraftItemTypes2["PinkShulkerBox"] = "minecraft:pink_shulker_box";
   MinecraftItemTypes2["PinkStainedGlass"] = "minecraft:pink_stained_glass";
@@ -2577,6 +2595,7 @@ var MinecraftItemTypes = ((MinecraftItemTypes2) => {
   MinecraftItemTypes2["PurpleConcretePowder"] = "minecraft:purple_concrete_powder";
   MinecraftItemTypes2["PurpleDye"] = "minecraft:purple_dye";
   MinecraftItemTypes2["PurpleGlazedTerracotta"] = "minecraft:purple_glazed_terracotta";
+  MinecraftItemTypes2["PurpleHarness"] = "minecraft:purple_harness";
   MinecraftItemTypes2["PurpleShulkerBox"] = "minecraft:purple_shulker_box";
   MinecraftItemTypes2["PurpleStainedGlass"] = "minecraft:purple_stained_glass";
   MinecraftItemTypes2["PurpleStainedGlassPane"] = "minecraft:purple_stained_glass_pane";
@@ -2615,6 +2634,7 @@ var MinecraftItemTypes = ((MinecraftItemTypes2) => {
   MinecraftItemTypes2["RedConcretePowder"] = "minecraft:red_concrete_powder";
   MinecraftItemTypes2["RedDye"] = "minecraft:red_dye";
   MinecraftItemTypes2["RedGlazedTerracotta"] = "minecraft:red_glazed_terracotta";
+  MinecraftItemTypes2["RedHarness"] = "minecraft:red_harness";
   MinecraftItemTypes2["RedMushroom"] = "minecraft:red_mushroom";
   MinecraftItemTypes2["RedMushroomBlock"] = "minecraft:red_mushroom_block";
   MinecraftItemTypes2["RedNetherBrick"] = "minecraft:red_nether_brick";
@@ -2926,6 +2946,7 @@ var MinecraftItemTypes = ((MinecraftItemTypes2) => {
   MinecraftItemTypes2["WhiteConcretePowder"] = "minecraft:white_concrete_powder";
   MinecraftItemTypes2["WhiteDye"] = "minecraft:white_dye";
   MinecraftItemTypes2["WhiteGlazedTerracotta"] = "minecraft:white_glazed_terracotta";
+  MinecraftItemTypes2["WhiteHarness"] = "minecraft:white_harness";
   MinecraftItemTypes2["WhiteShulkerBox"] = "minecraft:white_shulker_box";
   MinecraftItemTypes2["WhiteStainedGlass"] = "minecraft:white_stained_glass";
   MinecraftItemTypes2["WhiteStainedGlassPane"] = "minecraft:white_stained_glass_pane";
@@ -2958,6 +2979,7 @@ var MinecraftItemTypes = ((MinecraftItemTypes2) => {
   MinecraftItemTypes2["YellowConcretePowder"] = "minecraft:yellow_concrete_powder";
   MinecraftItemTypes2["YellowDye"] = "minecraft:yellow_dye";
   MinecraftItemTypes2["YellowGlazedTerracotta"] = "minecraft:yellow_glazed_terracotta";
+  MinecraftItemTypes2["YellowHarness"] = "minecraft:yellow_harness";
   MinecraftItemTypes2["YellowShulkerBox"] = "minecraft:yellow_shulker_box";
   MinecraftItemTypes2["YellowStainedGlass"] = "minecraft:yellow_stained_glass";
   MinecraftItemTypes2["YellowStainedGlassPane"] = "minecraft:yellow_stained_glass_pane";
@@ -5541,7 +5563,7 @@ function PFEDisableConfigMainMenu(data) {
 }
 
 // scripts/main.ts
-import { ActionFormData as ActionFormData10, ModalFormData as ModalFormData5 } from "@minecraft/server-ui";
+import { ActionFormData as ActionFormData11, ModalFormData as ModalFormData6 } from "@minecraft/server-ui";
 
 // node_modules/@minecraft/math/lib/general/clamp.js
 function clampNumber(val, min, max) {
@@ -6606,12 +6628,238 @@ function WaypointUISetIconCustom(player, item, waypoint, component) {
   });
 }
 
+// scripts/recipeBlock.ts
+import { ItemStack as ItemStack8 } from "@minecraft/server";
+import { ActionFormData as ActionFormData10, ModalFormData as ModalFormData5 } from "@minecraft/server-ui";
+var RecipeBlockComponent = class {
+  onPlayerInteract(data, componentInfo) {
+    const component = componentInfo.params;
+    if (!component.id) {
+      console.warn(`${data.block.typeId} Does not have an ID defined but needs to || poke_pfe:recipe_block Component`);
+      return;
+    }
+    if (!data.player)
+      return;
+    PFERecipeBlockMainMenu(component, data.player);
+  }
+};
+function PFERecipeBlockMainMenu(component, player) {
+  const UI = new ActionFormData10();
+  const StoredItemsDynamicPropID = `${component.id}:storedItems`;
+  const storedItemsProp = player.getDynamicProperty(StoredItemsDynamicPropID);
+  const storedItems = JSON.parse(storedItemsProp ?? "[]") ?? [];
+  UI.title({ translate: component.block_name });
+  if (component.can_store_items) {
+    UI.button({ translate: `%poke_pfe.storedItems
+[${storedItems.length}/${component.storage_capacity_limit}]` }, `textures/poke/common/chest_open`);
+  }
+  UI.button({ translate: `translation.poke:bossEventClose` }, `textures/poke/common/close`);
+  UI.show(player).then((response) => {
+    let selection = 0;
+    if (component.can_store_items) {
+      if (response.selection == selection) {
+        ViewStoredItems(component, player, storedItems);
+        return;
+      } else
+        selection++;
+    }
+    if (response.canceled || response.selection == selection)
+      return;
+  });
+}
+function ViewStoredItems(component, player, storedItems) {
+  const UI = new ActionFormData10();
+  UI.title({ translate: component.block_name });
+  if (storedItems.length < 64) {
+    UI.button({ translate: `%poke_pfe.depositItem` }, `textures/poke/common/deposit`);
+  }
+  for (const item of storedItems) {
+    const itemStack = new ItemStack8(item.i);
+    const translationString = (
+      /*itemStack?.localizationKey ??*/
+      `${item.a}x${item.i.replace(`poke:`, "(\xA79PFE\xA7r)\n%poke_pfe.").replace("\n%poke_pfe:", "(\xA79PFE\xA7r)\n%poke_pfe.").replace("minecraft:", "\n%item.")}`
+    );
+    UI.button({ translate: `${translationString}` }, getTexturePathByIdentifier(item.i));
+  }
+  UI.button({ translate: `translation.poke_pfe.GoBack` }, "textures/poke/common/left_arrow");
+  UI.show(player).then((response) => {
+    let selection = 0;
+    if (storedItems.length < 64) {
+      if (response.selection == selection) {
+        AddItem(component, player, storedItems);
+        return;
+      } else
+        selection++;
+    }
+    for (const item of storedItems) {
+      if (response.selection == selection) {
+        ViewItem(component, player, item, storedItems);
+        return;
+      } else
+        selection++;
+    }
+    if (response.selection == selection) {
+      PFERecipeBlockMainMenu(component, player);
+      return;
+    }
+  });
+}
+function AddItem(component, player, storedItems) {
+  const UI = new ActionFormData10();
+  const allItems = PokeGetItemFromInventory(player) ?? [];
+  for (const item of allItems) {
+    const translationString = (
+      /*itemStack?.localizationKey ??*/
+      item.typeId.includes("poke:") ? `%poke_pfe.${item.typeId.replace(`poke:`, "")}` : item.typeId.includes("poke_pfe:") ? `%poke_pfe.${item.typeId.replace(`poke_pfe:`, "")}` : item.typeId
+    );
+    UI.button({ translate: translationString }, getTexturePathByIdentifier(item.typeId));
+  }
+  UI.button({ translate: `translation.poke_pfe.GoBack` }, "textures/poke/common/left_arrow");
+  UI.show(player).then((response) => {
+    let selection = 0;
+    for (const item of allItems) {
+      if (response.selection == selection) {
+        player.runCommand(`clear @s ${item.typeId} 0 ${item.amount}`);
+        const storedItemsDynamicPropID = `${component.id}:storedItems`;
+        const storedItemsProp = player.getDynamicProperty(storedItemsDynamicPropID);
+        const storedItems2 = JSON.parse(storedItemsProp ?? "[]") ?? [];
+        const existingItem = storedItems2.filter((info) => info.i == item.typeId);
+        let oldItems = storedItems2.filter((info) => info.i != item.typeId);
+        let newItem = existingItem.length > 0 ? {
+          i: item.typeId,
+          a: item.amount + (existingItem.at(0)?.a ?? 0)
+        } : {
+          i: item.typeId,
+          a: item.amount
+        };
+        player.setDynamicProperty(storedItemsDynamicPropID, JSON.stringify(oldItems.concat(newItem)));
+        ViewStoredItems(component, player, oldItems.concat(newItem));
+        return;
+      } else
+        selection++;
+    }
+    if (response.selection == selection) {
+      ViewStoredItems(component, player, storedItems);
+      return;
+    }
+  });
+}
+function ViewItem(component, player, item, storedItems) {
+  const UI = new ActionFormData10();
+  UI.title({ translate: component.block_name });
+  const ItemsInInventory = PokeGetItemFromInventory(player, void 0, item.i);
+  let CanDepositAmount = 0;
+  if (ItemsInInventory) {
+    for (const itemStack of ItemsInInventory) {
+      CanDepositAmount += itemStack.amount;
+    }
+    UI.button({ translate: `%poke_pfe.deposit` }, "textures/poke/common/deposit");
+  }
+  UI.button({ translate: `%poke_pfe.withdraw` }, "textures/poke/common/withdraw");
+  UI.button({ translate: `translation.poke_pfe.GoBack` }, "textures/poke/common/left_arrow");
+  UI.show(player).then((response) => {
+    let selection = 0;
+    if (ItemsInInventory) {
+      if (response.selection == selection) {
+        DepositItem(component, player, item, CanDepositAmount, storedItems);
+        return;
+      } else
+        selection++;
+    }
+    if (response.selection == selection) {
+      WithdrawItem(component, player, item, storedItems);
+      return;
+    } else
+      selection++;
+    if (response.canceled || response.selection == selection) {
+      ViewStoredItems(component, player, storedItems);
+      return;
+    }
+  });
+}
+function DepositItem(component, player, item, maxAmount, storedItems) {
+  const UI = new ModalFormData5();
+  UI.title({ translate: component.block_name });
+  UI.slider({ translate: `%poke_pfe.amount` }, 0, maxAmount, { defaultValue: 0 });
+  UI.show(player).then((response) => {
+    const slider = response.formValues?.at(0);
+    if (typeof slider == "number" && slider > 0) {
+      player.runCommand(`clear @s ${item.i} 0 ${slider}`);
+      const storedItemsDynamicPropID = `${component.id}:storedItems`;
+      const storedItemsProp = player.getDynamicProperty(storedItemsDynamicPropID);
+      const storedItems2 = JSON.parse(storedItemsProp ?? "[]") ?? [];
+      const newItem = {
+        i: item.i,
+        a: item.a + slider
+      };
+      let oldItems = storedItems2.filter((info) => info.i != item.i);
+      player.setDynamicProperty(storedItemsDynamicPropID, JSON.stringify(oldItems.concat(newItem)));
+      ViewStoredItems(component, player, oldItems.concat(newItem));
+      return;
+    }
+    if (response.canceled) {
+      ViewItem(component, player, item, storedItems);
+      return;
+    }
+  });
+}
+function WithdrawItem(component, player, item, storedItems) {
+  const UI = new ModalFormData5();
+  UI.title({ translate: component.block_name });
+  UI.slider({ translate: `%poke_pfe.amount` }, 0, item.a, { defaultValue: 0, tooltip: { translate: `%poke_pfe.withdraw.tooltip` } });
+  UI.show(player).then((response) => {
+    const slider = response.formValues?.at(0);
+    if (typeof slider == "number" && slider > 0) {
+      const storedItemsDynamicPropID = `${component.id}:storedItems`;
+      const storedItemsProp = player.getDynamicProperty(storedItemsDynamicPropID);
+      const storedItems2 = JSON.parse(storedItemsProp ?? "[]") ?? [];
+      const newItem = {
+        i: item.i,
+        a: item.a - slider
+      };
+      let oldItems = storedItems2.filter((info) => info.i != item.i);
+      const itemStack = new ItemStack8(item.i);
+      const max = itemStack.maxAmount;
+      if (slider == 1) {
+        player.dimension.spawnItem(new ItemStack8(item.i), player.location);
+      } else
+        for (let i = slider; i > -1; i = i - max) {
+          if (i <= 0) {
+            console.warn(`attempted to exceeded withdraw amount || PFE - recipeBlock.ts - WithdrawItem`);
+            break;
+          }
+          const amount = Math.min(Math.max(i, 0), max);
+          console.warn(`i = ${i} Amount = ${amount}`);
+          player.dimension.spawnItem(new ItemStack8(item.i, amount), player.location);
+        }
+      player.setDynamicProperty(storedItemsDynamicPropID, JSON.stringify(newItem.a <= 0 ? oldItems : oldItems.concat(newItem)));
+      ViewStoredItems(component, player, newItem.a <= 0 ? oldItems : oldItems.concat(newItem));
+      return;
+    }
+    if (response.canceled) {
+      ViewItem(component, player, item, storedItems);
+      return;
+    }
+  });
+}
+function getTexturePathByIdentifier(identifier) {
+  const IconPathComponent = new ItemStack8(identifier).getComponent("poke_pfe:icon_path")?.customComponentParameters.params;
+  if (IconPathComponent)
+    return IconPathComponent;
+  switch (identifier) {
+    default: {
+      return "textures/poke/common/question";
+      break;
+    }
+  }
+}
+
 // scripts/main.ts
 var currentVersion = 102950;
-world10.afterEvents.playerJoin.subscribe((data) => {
-  let birthdays = JSON.parse(world10.getDynamicProperty(`poke:birthdays`).toString());
+world11.afterEvents.playerJoin.subscribe((data) => {
+  let birthdays = JSON.parse(world11.getDynamicProperty(`poke:birthdays`).toString());
   system6.runTimeout(() => {
-    world10.getAllPlayers().forEach((player) => {
+    world11.getAllPlayers().forEach((player) => {
       if (player.id == data.playerId) {
         let currentTime = new Date(Date.now() + PokeTimeZoneOffset(player));
         birthdays.forEach((birthday) => {
@@ -6636,7 +6884,7 @@ world10.afterEvents.playerJoin.subscribe((data) => {
 });
 function PFEHourTimeDownEvents() {
   let currentTime = new Date(Date.now());
-  let allPlayers = world10.getAllPlayers();
+  let allPlayers = world11.getAllPlayers();
   let randomPlayer = allPlayers.at(Math.abs(Math.round(Math.random() * (allPlayers.length - 1))));
   randomPlayer?.dimension.spawnEntity("poke:cassette_trader", randomPlayer.location).runCommand(`spreadplayers ~ ~ 30 40 @s ~10`);
 }
@@ -6813,7 +7061,7 @@ system6.beforeEvents.startup.subscribe((data) => {
         const blockState = data2.brokenBlockPermutation.getState(DoubleState);
         if (gm == GameMode5.Survival) {
           if (blockState == true) {
-            data2.dimension.spawnItem(new ItemStack8(blockId, 1), block_location);
+            data2.dimension.spawnItem(new ItemStack9(blockId, 1), block_location);
             return;
           }
           return;
@@ -6849,7 +7097,7 @@ system6.beforeEvents.startup.subscribe((data) => {
     "poke:boss_event",
     {
       onUse(data2, componentInfo) {
-        let options = JSON.parse(world10.getDynamicProperty(PFEDisableConfigName).toString());
+        let options = JSON.parse(world11.getDynamicProperty(PFEDisableConfigName).toString());
         if (!options.bounty)
           return;
         if (PFEStartBossEvent() == 0) {
@@ -6971,7 +7219,7 @@ system6.beforeEvents.startup.subscribe((data) => {
         if (data2.itemStack == void 0)
           return;
         if (data2.itemStack.typeId == "poke:nuke_ring") {
-          let options = JSON.parse(world10.getDynamicProperty(PFEDisableConfigName).toString());
+          let options = JSON.parse(world11.getDynamicProperty(PFEDisableConfigName).toString());
           if (!options.nukeRing)
             return;
         }
@@ -7289,15 +7537,15 @@ system6.beforeEvents.startup.subscribe((data) => {
     {
       onUse(data2, componentInfo) {
         if (data2.source.getGameMode() == GameMode5.Creative || data2.source.hasTag(`poke:config`)) {
-          let UI = new ActionFormData10();
+          let UI = new ActionFormData11();
           UI.button({ translate: `translation.poke_pfe.bossEventConfig` }, `textures/poke/common/spawn_enabled`);
           UI.button({ translate: `translation.poke_pfe.disableConfig` }, `textures/poke/common/blacklist_add`);
           UI.button({ translate: `%poke_pfe.miscOptions` }, `textures/poke/common/more_options`);
           UI.show(data2.source).then((response) => {
             let selection = 0;
             if (response.selection == selection) {
-              if (world10.getDynamicProperty(PFEBossEventConfigName) == void 0) {
-                world10.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(PFEDefaultBossEventSettings));
+              if (world11.getDynamicProperty(PFEBossEventConfigName) == void 0) {
+                world11.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(PFEDefaultBossEventSettings));
               }
               PFEBossEventUIMainMenu(data2.source);
               return;
@@ -7309,22 +7557,22 @@ system6.beforeEvents.startup.subscribe((data) => {
             } else
               selection++;
             if (response.selection == selection) {
-              let UI2 = new ModalFormData5();
+              let UI2 = new ModalFormData6();
               UI2.title({ translate: `%poke_pfe.miscOptions` });
               UI2.label({ translate: `%poke_pfe.setEffects` });
               UI2.divider();
-              UI2.slider({ translate: `%poke_pfe.effectDuration` }, 1, 30, { valueStep: 1, tooltip: { translate: `%poke_pfe.effectDuration.tooltip` }, defaultValue: Number(world10.getDynamicProperty("poke_pfe:setEffectDuration") ?? ArmorEffectDuration) / 20 });
-              UI2.slider({ translate: `%poke_pfe.applyInterval` }, 1, 10, { valueStep: 1, tooltip: { translate: `%poke_pfe.applyInterval.tooltip` }, defaultValue: Number(world10.getDynamicProperty("poke_pfe:setEffectInterval") ?? 1) / 20 });
+              UI2.slider({ translate: `%poke_pfe.effectDuration` }, 1, 30, { valueStep: 1, tooltip: { translate: `%poke_pfe.effectDuration.tooltip` }, defaultValue: Number(world11.getDynamicProperty("poke_pfe:setEffectDuration") ?? ArmorEffectDuration) / 20 });
+              UI2.slider({ translate: `%poke_pfe.applyInterval` }, 1, 10, { valueStep: 1, tooltip: { translate: `%poke_pfe.applyInterval.tooltip` }, defaultValue: Number(world11.getDynamicProperty("poke_pfe:setEffectInterval") ?? 1) / 20 });
               UI2.show(data2.source).then((response2) => {
                 if (response2.canceled)
                   return;
-                world10.setDynamicProperty("poke_pfe:setEffectDuration", Number(response2.formValues?.at(2) ?? ArmorEffectDuration / 20) * 20);
-                world10.setDynamicProperty("poke_pfe:setEffectInterval", Number(response2.formValues?.at(3) ?? 1) * 20);
-                const intervalId = world10.getDynamicProperty("poke_pfe:setEffectIntervalId");
+                world11.setDynamicProperty("poke_pfe:setEffectDuration", Number(response2.formValues?.at(2) ?? ArmorEffectDuration / 20) * 20);
+                world11.setDynamicProperty("poke_pfe:setEffectInterval", Number(response2.formValues?.at(3) ?? 1) * 20);
+                const intervalId = world11.getDynamicProperty("poke_pfe:setEffectIntervalId");
                 if (intervalId) {
                   system6.runInterval;
                   system6.clearRun(intervalId);
-                  world10.setDynamicProperty("poke_pfe:setEffectIntervalId", startSetEffects());
+                  world11.setDynamicProperty("poke_pfe:setEffectIntervalId", startSetEffects());
                 }
               });
               return;
@@ -7335,7 +7583,7 @@ system6.beforeEvents.startup.subscribe((data) => {
             }
           });
         } else {
-          let UI = new ActionFormData10();
+          let UI = new ActionFormData11();
           UI.title({ translate: `translation.poke_pfe.insufficientPerms` });
           UI.body({ rawtext: [{ translate: `translation.poke_pfe.insufficientPerms.desc` }, { text: `poke:config
 
@@ -7356,7 +7604,7 @@ system6.beforeEvents.startup.subscribe((data) => {
       onUse(data2, componentInfo) {
         if (data2.itemStack === void 0)
           return;
-        const cooldownComponent = data2.itemStack.getComponent(ItemComponentTypes4.Cooldown);
+        const cooldownComponent = data2.itemStack.getComponent(ItemComponentTypes5.Cooldown);
         const equippableComponent = data2.source.getComponent(EntityComponentTypes8.Equippable);
         const moveDir = data2.source.getVelocity();
         var amount = data2.itemStack.amount;
@@ -7370,7 +7618,7 @@ system6.beforeEvents.startup.subscribe((data) => {
           equippableComponent?.setEquipment(EquipmentSlot8.Mainhand, void 0);
           return;
         }
-        equippableComponent?.setEquipment(EquipmentSlot8.Mainhand, new ItemStack8(data2.itemStack.typeId, amount - 1));
+        equippableComponent?.setEquipment(EquipmentSlot8.Mainhand, new ItemStack9(data2.itemStack.typeId, amount - 1));
         return;
       }
     }
@@ -7407,7 +7655,7 @@ system6.beforeEvents.startup.subscribe((data) => {
       onUseOn(data2, componentInfo) {
         const component = componentInfo.params;
         if (data2.itemStack.typeId == "poke:wither_spawner") {
-          let options = JSON.parse(world10.getDynamicProperty(PFEDisableConfigName).toString());
+          let options = JSON.parse(world11.getDynamicProperty(PFEDisableConfigName).toString());
           if (!options.witherSpawner)
             return;
         }
@@ -7428,7 +7676,7 @@ system6.beforeEvents.startup.subscribe((data) => {
           equippableComponent?.setEquipment(EquipmentSlot8.Mainhand, void 0);
           return;
         }
-        equippableComponent?.setEquipment(EquipmentSlot8.Mainhand, new ItemStack8(data2.itemStack.typeId, amount - 1));
+        equippableComponent?.setEquipment(EquipmentSlot8.Mainhand, new ItemStack9(data2.itemStack.typeId, amount - 1));
         return;
       }
     }
@@ -7478,9 +7726,9 @@ system6.beforeEvents.startup.subscribe((data) => {
         const equippableComponent = data2.player?.getComponent(EntityComponentTypes8.Equippable);
         if (equippableComponent === void 0)
           return;
-        if (!equippableComponent.getEquipment(EquipmentSlot8.Mainhand)?.hasComponent(ItemComponentTypes4.Enchantable))
+        if (!equippableComponent.getEquipment(EquipmentSlot8.Mainhand)?.hasComponent(ItemComponentTypes5.Enchantable))
           return;
-        const enchantableComponent = equippableComponent.getEquipment(EquipmentSlot8.Mainhand)?.getComponent(ItemComponentTypes4.Enchantable);
+        const enchantableComponent = equippableComponent.getEquipment(EquipmentSlot8.Mainhand)?.getComponent(ItemComponentTypes5.Enchantable);
         if (!enchantableComponent?.hasEnchantment(MinecraftEnchantmentTypes.Fortune))
           return;
         let fortuneLevel = enchantableComponent.getEnchantment(MinecraftEnchantmentTypes.Fortune).level;
@@ -7539,7 +7787,7 @@ system6.beforeEvents.startup.subscribe((data) => {
               equippableComponent?.setEquipment(EquipmentSlot8.Mainhand, void 0);
               return;
             }
-            equippableComponent?.setEquipment(EquipmentSlot8.Mainhand, new ItemStack8(slabId, itemStackAmount));
+            equippableComponent?.setEquipment(EquipmentSlot8.Mainhand, new ItemStack9(slabId, itemStackAmount));
             return;
           } else
             return;
@@ -7968,7 +8216,7 @@ system6.beforeEvents.startup.subscribe((data) => {
               data2.player?.runCommand("clear @s bone_meal 0 1");
               return;
             }
-            equippableComponent?.setEquipment(EquipmentSlot8.Mainhand, new ItemStack8(mainhandItem.typeId, itemAfterUse1));
+            equippableComponent?.setEquipment(EquipmentSlot8.Mainhand, new ItemStack9(mainhandItem.typeId, itemAfterUse1));
             return;
           }
           return;
@@ -8464,7 +8712,7 @@ system6.beforeEvents.startup.subscribe((data) => {
           return;
         const vierDirection = data2.source.getViewDirection();
         const location = data2.source.getHeadLocation();
-        const cooldownComp = data2.itemStack.getComponent(ItemComponentTypes4.Cooldown);
+        const cooldownComp = data2.itemStack.getComponent(ItemComponentTypes5.Cooldown);
         if (component.grant_effect) {
           data2.source.addEffect(component.grant_effect?.effect, component.grant_effect?.duration ?? 60, { amplifier: component.grant_effect?.amp ?? 0, showParticles: component.grant_effect.particles ?? false });
         }
@@ -8497,7 +8745,7 @@ system6.beforeEvents.startup.subscribe((data) => {
           return;
         const componentInfo = component.params;
         if (componentInfo.can_be_disabled) {
-          let options = JSON.parse(world10.getDynamicProperty(PFEDisableConfigName).toString()) ?? PFEDisableConfigDefault;
+          let options = JSON.parse(world11.getDynamicProperty(PFEDisableConfigName).toString()) ?? PFEDisableConfigDefault;
           switch (true) {
             case (data2.itemStack.typeId == "poke:quantum_teleporter" && options.quantumTeleporter === false):
               return;
@@ -8511,7 +8759,7 @@ system6.beforeEvents.startup.subscribe((data) => {
         }
         componentInfo.command ? data2.source.runCommand(componentInfo.command) : void 0;
         if (componentInfo.trigger_cooldown)
-          data2.itemStack.getComponent(ItemComponentTypes4.Cooldown)?.startCooldown(data2.source);
+          data2.itemStack.getComponent(ItemComponentTypes5.Cooldown)?.startCooldown(data2.source);
         if (componentInfo.take_durability !== false)
           PokeDamageItemUB(data2.itemStack, void 0, data2.source, EquipmentSlot8.Mainhand);
         return;
@@ -8535,89 +8783,91 @@ system6.beforeEvents.startup.subscribe((data) => {
       }
     }
   );
+  data.blockComponentRegistry.registerCustomComponent("poke_pfe:recipe_block", new RecipeBlockComponent());
   data.itemComponentRegistry.registerCustomComponent("poke_pfe:upgradeable", new PFEUpgradeableComponent());
   data.itemComponentRegistry.registerCustomComponent("poke_pfe:box_mining", new PFEBoxMiningComponent());
   data.itemComponentRegistry.registerCustomComponent("poke_pfe:quests", new PFEQuestComponent());
   data.itemComponentRegistry.registerCustomComponent("poke_pfe:waypoint_menu", new PFEWaypointComponent());
+  data.itemComponentRegistry.registerCustomComponent("poke_pfe:icon_path", {});
   data.itemComponentRegistry.registerCustomComponent("poke_pfe:set_effects", {});
   data.itemComponentRegistry.registerCustomComponent("poke_pfe:custom_upgrades", {});
   data.itemComponentRegistry.registerCustomComponent("poke_pfe:custom_quests_info", {});
   data.itemComponentRegistry.registerCustomComponent("poke_pfe:incompatible_addons", {});
   return;
 });
-world10.afterEvents.worldLoad.subscribe((data) => {
-  world10.setDynamicProperty(PFECustomMineQuestsPropertyID, JSON.stringify([]));
-  world10.setDynamicProperty(PFECustomMineQuestsPropertyID, JSON.stringify([]));
-  world10.setDynamicProperty(PFECustomFarmQuestsPropertyID, JSON.stringify([]));
-  world10.setDynamicProperty(PFECustomCraftQuestsPropertyID, JSON.stringify([]));
-  world10.setDynamicProperty(PFECustomKillQuestsPropertyID, JSON.stringify([]));
-  world10.setDynamicProperty(PFECustomArmorEffectDynamicProperty, JSON.stringify([]));
+world11.afterEvents.worldLoad.subscribe((data) => {
+  world11.setDynamicProperty(PFECustomMineQuestsPropertyID, JSON.stringify([]));
+  world11.setDynamicProperty(PFECustomMineQuestsPropertyID, JSON.stringify([]));
+  world11.setDynamicProperty(PFECustomFarmQuestsPropertyID, JSON.stringify([]));
+  world11.setDynamicProperty(PFECustomCraftQuestsPropertyID, JSON.stringify([]));
+  world11.setDynamicProperty(PFECustomKillQuestsPropertyID, JSON.stringify([]));
+  world11.setDynamicProperty(PFECustomArmorEffectDynamicProperty, JSON.stringify([]));
   system6.runTimeout(() => {
     PFETimeValidation();
   }, Math.abs(60 - new Date(Date.now()).getSeconds()) * 20);
-  if (typeof world10.getDynamicProperty(PFEDisableConfigName) != "string") {
-    world10.setDynamicProperty(PFEDisableConfigName, JSON.stringify(PFEDisableConfigDefault));
+  if (typeof world11.getDynamicProperty(PFEDisableConfigName) != "string") {
+    world11.setDynamicProperty(PFEDisableConfigName, JSON.stringify(PFEDisableConfigDefault));
   }
-  const birthdayProperty = world10.getDynamicProperty(`poke:birthdays`);
+  const birthdayProperty = world11.getDynamicProperty(`poke:birthdays`);
   if (typeof birthdayProperty != "string")
-    world10.setDynamicProperty(`poke:birthdays`, `[]`);
-  const CustomEventsDynamicProp = world10.getDynamicProperty(`poke:customEvents`);
-  typeof CustomEventsDynamicProp == "string" ? JSON.parse(CustomEventsDynamicProp) ?? world10.setDynamicProperty(`poke:customEvents`, `[]`) : world10.setDynamicProperty(`poke:customEvents`, `[]`);
-  if (typeof world10.getDynamicProperty(PFEBossEventConfigName) == "string") {
-    let settings = JSON.parse(world10.getDynamicProperty(PFEBossEventConfigName).toString());
+    world11.setDynamicProperty(`poke:birthdays`, `[]`);
+  const CustomEventsDynamicProp = world11.getDynamicProperty(`poke:customEvents`);
+  typeof CustomEventsDynamicProp == "string" ? JSON.parse(CustomEventsDynamicProp) ?? world11.setDynamicProperty(`poke:customEvents`, `[]`) : world11.setDynamicProperty(`poke:customEvents`, `[]`);
+  if (typeof world11.getDynamicProperty(PFEBossEventConfigName) == "string") {
+    let settings = JSON.parse(world11.getDynamicProperty(PFEBossEventConfigName).toString());
     if (typeof settings.ticks != "number" || typeof settings.furnaceGolem != "object" || typeof settings.knightling != "object" || typeof settings.listener != "object" || typeof settings.zombken != "object" || typeof settings.miniDemonicAllay != "object" || typeof settings.necromancer != "object" || typeof settings.snowman != "object" || typeof settings.sparky != "object" || typeof settings.superStriker != "object" || typeof settings.theLogger != "object") {
-      world10.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(PFEDefaultBossEventSettings));
+      world11.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(PFEDefaultBossEventSettings));
     }
     ;
   } else {
-    world10.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(PFEDefaultBossEventSettings));
+    world11.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(PFEDefaultBossEventSettings));
   }
   initExampleStickers();
   ComputersCompat.init();
-  world10.setDynamicProperty("poke_pfe:bossEventIntervalId", startBossEvents());
-  world10.setDynamicProperty("poke_pfe:setEffectIntervalId", startSetEffects());
+  world11.setDynamicProperty("poke_pfe:bossEventIntervalId", startBossEvents());
+  world11.setDynamicProperty("poke_pfe:setEffectIntervalId", startSetEffects());
   system6.sendScriptEvent("poke_pfe:dupe_check", `${currentVersion}`);
 });
 var DataStorageDynamicPropertyId = "registered_data_storage_items";
 system6.afterEvents.scriptEventReceive.subscribe((data) => {
   switch (data.id) {
     case `poke_pfe:enabled`: {
-      world10.getDimension(MinecraftDimensionTypes.Overworld).runCommand(`scriptevent ${data.message} true`);
+      world11.getDimension(MinecraftDimensionTypes.Overworld).runCommand(`scriptevent ${data.message} true`);
       break;
     }
     case `poke_custom:register_data_storage`: {
-      const dynamicProperty = world10.getDynamicProperty(DataStorageDynamicPropertyId);
+      const dynamicProperty = world11.getDynamicProperty(DataStorageDynamicPropertyId);
       const registeredItems = JSON.parse(typeof dynamicProperty == "string" ? dynamicProperty : "[]") ?? [];
-      world10.setDynamicProperty(DataStorageDynamicPropertyId, JSON.stringify(registeredItems.concat(data.message)));
+      world11.setDynamicProperty(DataStorageDynamicPropertyId, JSON.stringify(registeredItems.concat(data.message)));
       break;
     }
     case `poke_pfe:add_set_effect_preset`: {
-      const currentPresets = JSON.parse(world10.getDynamicProperty(PFECustomArmorEffectDynamicProperty).toString()) ?? [];
+      const currentPresets = JSON.parse(world11.getDynamicProperty(PFECustomArmorEffectDynamicProperty).toString()) ?? [];
       let newPresets = currentPresets.concat(JSON.parse(data.message).value) ?? currentPresets;
-      world10.setDynamicProperty(PFECustomArmorEffectDynamicProperty, JSON.stringify(newPresets));
+      world11.setDynamicProperty(PFECustomArmorEffectDynamicProperty, JSON.stringify(newPresets));
       break;
     }
     case PFECustomMineQuestsPropertyID: {
-      const currentQuests = JSON.parse(world10.getDynamicProperty(PFECustomMineQuestsPropertyID).toString()) ?? [];
+      const currentQuests = JSON.parse(world11.getDynamicProperty(PFECustomMineQuestsPropertyID).toString()) ?? [];
       let newQuests = currentQuests.concat(JSON.parse(data.message).value) ?? currentQuests;
-      world10.setDynamicProperty(PFECustomMineQuestsPropertyID, JSON.stringify(newQuests));
+      world11.setDynamicProperty(PFECustomMineQuestsPropertyID, JSON.stringify(newQuests));
       break;
     }
     case PFECustomKillQuestsPropertyID: {
-      const currentQuests = JSON.parse(world10.getDynamicProperty(PFECustomKillQuestsPropertyID).toString()) ?? [];
+      const currentQuests = JSON.parse(world11.getDynamicProperty(PFECustomKillQuestsPropertyID).toString()) ?? [];
       let newQuests = currentQuests.concat(JSON.parse(data.message).value) ?? currentQuests;
-      world10.setDynamicProperty(PFECustomKillQuestsPropertyID, JSON.stringify(newQuests));
+      world11.setDynamicProperty(PFECustomKillQuestsPropertyID, JSON.stringify(newQuests));
       break;
     }
     case PFECustomFarmQuestsPropertyID: {
-      const currentQuests = JSON.parse(world10.getDynamicProperty(PFECustomFarmQuestsPropertyID).toString()) ?? [];
+      const currentQuests = JSON.parse(world11.getDynamicProperty(PFECustomFarmQuestsPropertyID).toString()) ?? [];
       let newQuests = currentQuests.concat(JSON.parse(data.message).value) ?? currentQuests;
-      world10.setDynamicProperty(PFECustomFarmQuestsPropertyID, JSON.stringify(newQuests));
+      world11.setDynamicProperty(PFECustomFarmQuestsPropertyID, JSON.stringify(newQuests));
     }
     case PFECustomCraftQuestsPropertyID: {
-      const currentQuests = JSON.parse(world10.getDynamicProperty(PFECustomCraftQuestsPropertyID).toString()) ?? [];
+      const currentQuests = JSON.parse(world11.getDynamicProperty(PFECustomCraftQuestsPropertyID).toString()) ?? [];
       let newQuests = currentQuests.concat(JSON.parse(data.message).value) ?? currentQuests;
-      world10.setDynamicProperty(PFECustomCraftQuestsPropertyID, JSON.stringify(newQuests));
+      world11.setDynamicProperty(PFECustomCraftQuestsPropertyID, JSON.stringify(newQuests));
     }
     case `poke:test`: {
       let item = data.sourceEntity?.getComponent(EntityComponentTypes8.Equippable)?.getEquipment(EquipmentSlot8.Mainhand);
@@ -8627,7 +8877,7 @@ system6.afterEvents.scriptEventReceive.subscribe((data) => {
     case "poke_pfe:dupe_check": {
       const Version = Number(data.message);
       if (Version < currentVersion) {
-        world10.sendMessage(`\xA7f[\xA7eWARNING\xA7f] Multiple versions PFE are applied to this world, to avoid any issue: please remove any old versions || \xA7eOld version: \xA7fv${data.message.substring(0, 1)}.${Number(data.message.substring(1, 3))}.${Number(`${data.message}`.substring(3, 5))}${Number(`${data.message}`.substring(5)) != 0 ? `${data.message}`.substring(5) : ""}`);
+        world11.sendMessage(`\xA7f[\xA7eWARNING\xA7f] Multiple versions PFE are applied to this world, to avoid any issue: please remove any old versions || \xA7eOld version: \xA7fv${data.message.substring(0, 1)}.${Number(data.message.substring(1, 3))}.${Number(`${data.message}`.substring(3, 5))}${Number(`${data.message}`.substring(5)) != 0 ? `${data.message}`.substring(5) : ""}`);
         console.warn(`Multiple versions PFE found:
 - Old version: ${Version} (v${data.message.substring(0, 1)}.${Number(data.message.substring(1, 3))}.${Number(`${data.message}`.substring(3, 5))}${Number(`${data.message}`.substring(5)) != 0 ? `${data.message}`.substring(5) : ""})
 - Current version: ${currentVersion} (v${`${currentVersion}`.substring(0, 1)}.${Number(`${currentVersion}`.substring(1, 3))}.${Number(`${currentVersion}`.substring(3, 5))}${Number(`${currentVersion}`.substring(5)) != 0 ? `${currentVersion}`.substring(5) : ""})`);

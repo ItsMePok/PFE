@@ -1,0 +1,150 @@
+{
+	"format_version": "1.21.90",
+	"minecraft:block": {
+		"description": {
+			"identifier": "poke_pfe:alloy_forge",
+			"menu_category": {
+				"category": "items"
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
+				}
+			}
+		},
+		"components": {
+			"minecraft:display_name": "%poke_pfe.alloy_forge\n%poke_pfe.tag",
+			"poke_pfe:recipe_block": {
+				"id": "poke_pfe:alloy_forge",
+				"can_store_items": true,
+				"storage_capacity_limit": 64,
+				"block_name": "%poke_pfe.alloy_forge"
+			},
+			"minecraft:item_visual": {
+				"geometry": {
+					"identifier": "minecraft:geometry.full_block"
+				},
+				"material_instances": {
+					"*": {
+						"texture": "poke_pfe_alloy_forge_side",
+						"render_method": "opaque"
+					},
+					"up": {
+						"texture": "poke_pfe_alloy_forge_top",
+						"render_method": "opaque"
+					},
+					"south": {
+						"texture": "poke_pfe_alloy_forge_face",
+						"render_method": "opaque"
+					},
+					"down": {
+						"texture": "poke_polished_limestone",
+						"render_method": "opaque"
+					}
+				}
+			},
+			"minecraft:liquid_detection": {
+				"detection_rules": [
+					{
+						"can_contain_liquid": false,
+						"liquid_type": "water",
+						"on_liquid_touches": "blocking"
+					}
+				]
+			},
+			"minecraft:collision_box": true,
+			"minecraft:selection_box": true,
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 7,
+				"item_specific_speeds": [
+					{
+						"item": {
+							"tags": "q.any_tag('minecraft:is_pickaxe')"
+						},
+						"destroy_speed": 1.5
+					}
+				]
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 42
+			},
+			"minecraft:geometry": {
+				"identifier": "minecraft:geometry.full_block"
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "poke_pfe_alloy_forge_side",
+					"render_method": "opaque"
+				},
+				"up": {
+					"texture": "poke_pfe_alloy_forge_top",
+					"render_method": "opaque"
+				},
+				"south": {
+					"texture": "poke_pfe_alloy_forge_face",
+					"render_method": "opaque"
+				},
+				"down": {
+					"texture": "poke_polished_limestone",
+					"render_method": "opaque"
+				}
+			},
+			"tag:pfe": {},
+			"tag:minecraft:is_pickaxe_item_destructible": {},
+			"tag:minecraft:stone_tier_destructible": {},
+			"minecraft:map_color": "#ee6d18"
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'north' ",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'south' ",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'east' ",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'west' ",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						]
+					}
+				}
+			}
+		]
+	}
+}

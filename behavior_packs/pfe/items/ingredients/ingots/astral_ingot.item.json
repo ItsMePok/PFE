@@ -15,7 +15,8 @@
 				"textures": {
 					"default": "poke_astral_ingot"
 				}
-			}
+			},
+			"poke_pfe:icon_path": "textures/poke/pfe/astral_ingot"
 		}
 	}
 }
