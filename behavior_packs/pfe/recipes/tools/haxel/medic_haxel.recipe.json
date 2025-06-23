@@ -4,6 +4,7 @@
 		"description": {
 			"identifier": "poke:medic_haxel"
 		},
+		"group": "haxel",
 		"tags": [
 			"crafting_table"
 		],

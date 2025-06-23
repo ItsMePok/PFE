@@ -2,38 +2,38 @@
 	"format_version": "1.21.90",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:diamond_haxel"
+			"identifier": "poke_pfe:redstone_haxel"
 		},
 		"group": "haxel",
 		"tags": [
 			"crafting_table"
 		],
 		"pattern": [
-			"N#N",
-			"#i#",
-			"N#N"
+			"NNN",
+			"Ni ",
+			" # "
 		],
 		"unlock": [
 			{
-				"item": "diamond"
+				"item": "minecraft:redstone"
 			},
 			{
-				"item": "poke:emerald_haxel"
+				"item": "minecraft:redstone_block"
 			}
 		],
 		"key": {
 			"i": {
-				"item": "poke:emerald_haxel"
+				"item": "minecraft:stick"
 			},
 			"#": {
-				"item": "diamond"
+				"item": "minecraft:redstone"
 			},
 			"N": {
-				"item": "diamond_block"
+				"item": "minecraft:redstone_block"
 			}
 		},
 		"result": {
-			"item": "poke:diamond_haxel"
+			"item": "poke_pfe:redstone_haxel"
 		}
 	}
 }

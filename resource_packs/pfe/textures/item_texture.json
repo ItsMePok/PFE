@@ -3,6 +3,12 @@
 		"poke_pfe_missing": {
 			"textures": "textures/poke/common/question"
 		},
+		"poke_pfe_copper_haxel": {
+			"textures": "textures/poke/pfe/copper_haxel"
+		},
+		"poke_pfe_redstone_haxel": {
+			"textures": "textures/poke/pfe/redstone_haxel"
+		},
 		"poke_pfe_cassette_below_and_above": {
 			"textures": "textures/poke/pfe/cassette_below_and_above"
 		},

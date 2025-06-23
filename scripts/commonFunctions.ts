@@ -1,4 +1,4 @@
-import { Dimension, Direction, Entity, EntityComponentTypes, EntityEquippableComponent, EntityInventoryComponent, EquipmentSlot, GameMode, ItemComponentTypes, ItemDurabilityComponent, ItemStack, Player, RawMessage, Vector3, world } from "@minecraft/server";
+import { Dimension, Direction, Entity, EntityComponentTypes, EntityEquippableComponent, EntityInventoryComponent, EquipmentSlot, GameMode, ItemComponentTypes, ItemDurabilityComponent, ItemLockMode, ItemStack, Player, RawMessage, Vector3, world } from "@minecraft/server";
 import { ActionFormData } from "@minecraft/server-ui";
 import { MinecraftEnchantmentTypes, MinecraftEntityTypes } from "@minecraft/vanilla-data";
 
@@ -17,7 +17,8 @@ export {
   PokeClosestCardinal,
   PokeClosestCardinalInfo,
   getComponentInfoFromDataStorageItems,
-  CompiledComponentInfo
+  CompiledComponentInfo,
+  pokeAddItemsToPlayerOrDrop
 }
 
 // Tool Durability initially from https://wiki.bedrock.dev/items/tool-durability.html
@@ -147,7 +148,7 @@ function PokeGetItemFromInventory(entity: Entity, slot?: number, itemId?: string
     let returningItems: ItemStack[] = []
     if (slot) {
       let slottedItem = inventoryComponent.container?.getItem(slot)
-      if (!slottedItem) return slottedItem
+      if (!slottedItem || slottedItem.lockMode != ItemLockMode.none) return undefined
       if (itemId) {
         if (slottedItem.typeId == itemId) return [slottedItem];
         else return undefined
@@ -156,15 +157,10 @@ function PokeGetItemFromInventory(entity: Entity, slot?: number, itemId?: string
     }
     for (let i = inventoryComponent.inventorySize - 1; i > -1; i--) {
       let slottedItem = inventoryComponent.container?.getItem(i)
-      if (!slottedItem) continue
-      if (!itemId) {
+      if (!slottedItem || slottedItem.lockMode != ItemLockMode.none) continue
+      if (!itemId || slottedItem.typeId == itemId) {
         returningItems = returningItems.concat([slottedItem])
         continue
-      } else {
-        if (slottedItem.typeId == itemId) {
-          returningItems = returningItems.concat([slottedItem])
-          continue
-        }
       }
     }
     if (returningItems.length == 0) {
@@ -180,7 +176,7 @@ function PokeGetItemFromInventory(entity: Entity, slot?: number, itemId?: string
  * if the item is named it will return that instead
  */
 function PokeItemTranslateString(item: ItemStack) {
-  let name = `item.${item.typeId}`
+  let name = `item.${item.typeId}.name`
   if (item.nameTag) {
     name = item.nameTag
   }
@@ -360,4 +356,14 @@ function getComponentInfoFromDataStorageItems(dynamicPropertyId: string, compone
       : undefined
   }
   return compiledComponents
+}
+
+function pokeAddItemsToPlayerOrDrop(player: Player, item: ItemStack) {
+  const Inventory = player.getComponent(EntityComponentTypes.Inventory)
+  if (Inventory && Inventory.container.emptySlotsCount != 0) {
+    Inventory.container.addItem(item)
+  }
+  else {
+    player.dimension.spawnItem(item, player.location)
+  }
 }

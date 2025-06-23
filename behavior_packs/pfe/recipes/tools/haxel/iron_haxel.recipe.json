@@ -4,6 +4,7 @@
 		"description": {
 			"identifier": "poke:iron_haxel"
 		},
+		"group": "haxel",
 		"tags": [
 			"crafting_table"
 		],

@@ -16,11 +16,47 @@
 		},
 		"components": {
 			"minecraft:display_name": "%poke_pfe.alloy_forge\n%poke_pfe.tag",
+			"poke_pfe:custom_recipes": [
+				{
+					"items": [
+						"4:poke:shade_ingot",
+						"4:poke:astral_ingot",
+						"1:poke:molten_slimeball"
+					],
+					"result": [
+						"8:poke:radium_ingot"
+					],
+					"recipe_type": "shapeless"
+				},
+				{
+					"items": [
+						"4:poke:godly_ingot",
+						"4:poke:cobalt_ingot",
+						"1:poke:molten_slimeball"
+					],
+					"result": [
+						"8:poke:medic_ingot"
+					],
+					"recipe_type": "shapeless"
+				},
+				{
+					"items": [
+						"4:poke:onyx_ingot",
+						"4:poke:void_ingot",
+						"1:poke:molten_slimeball"
+					],
+					"result": [
+						"8:poke:death_ingot"
+					],
+					"recipe_type": "shapeless"
+				}
+			],
 			"poke_pfe:recipe_block": {
 				"id": "poke_pfe:alloy_forge",
 				"can_store_items": true,
-				"storage_capacity_limit": 64,
-				"block_name": "%poke_pfe.alloy_forge"
+				"storage_capacity_limit": 10,
+				"block_name": "%poke_pfe.alloy_forge",
+				"debug_mode": true
 			},
 			"minecraft:item_visual": {
 				"geometry": {
@@ -82,7 +118,7 @@
 					"texture": "poke_pfe_alloy_forge_top",
 					"render_method": "opaque"
 				},
-				"south": {
+				"north": {
 					"texture": "poke_pfe_alloy_forge_face",
 					"render_method": "opaque"
 				},

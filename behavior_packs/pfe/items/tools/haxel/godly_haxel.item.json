@@ -11,6 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.godly_haxel\n§7%poke_pfe.crouchInteract\n%poke_pfe.tag"
 			},
+			"poke_pfe:icon_path": "textures/poke/pfe/godly_haxel",
 			"minecraft:tags": {
 				"tags": [
 					"minecraft:is_pickaxe",

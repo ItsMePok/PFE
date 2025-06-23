@@ -3081,6 +3081,42 @@
               "components": {
                 "type": "object",
                 "properties": {
+                  "poke_pfe:custom_recipes": {
+                    "title": "Custom Recipes (PFE)",
+                    "description": "These are recipes that are used in the Recipe Block (PFE) Component",
+                    "type": "array",
+                    "items": {
+                      "description": "Recipe",
+                      "type": "object",
+                      "properties": {
+                        "items": {
+                          "type": "array",
+                          "description": "The items used in this recipe\n(Amount):(Identifier)",
+                          "items": {
+                            "type": "string",
+                            "pattern": "^([0-9])[:](.*)[:](.*)"
+                          },
+                          "minItems": 1
+                        },
+                        "result": {
+                          "description": "The item(s) granted from this recipe\n(Amount):(Identifier)",
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "pattern": "^([0-9])[:](.*)[:](.*)"
+                          },
+                          "minItems": 1
+                        },
+                        "recipe_type": {
+                          "description": "The type of recipe this is",
+                          "enum": [
+                            "shapeless"
+                          ]
+                        }
+                      }
+                    },
+                    "minItems": 1
+                  },
                   "poke_pfe:recipe_block": {
                     "description": "Recipe Block (PFE)",
                     "oneOf": [
@@ -3107,12 +3143,17 @@
                           },
                           "storage_capacity_limit": {
                             "type": "number",
-                            "description": "The max amount of items this can store"
+                            "description": "The max amount of unique items this can store"
                           },
                           "block_name": {
                             "type": "string",
                             "description": "The name of the block (This will be used in things like the UI titles)",
                             "default": "%poke_pfe.recipe_block"
+                          },
+                          "debug_mode": {
+                            "type": "boolean",
+                            "description": "Enables debug options for this block",
+                            "default": false
                           }
                         },
                         "required": [

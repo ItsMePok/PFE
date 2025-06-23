@@ -4,6 +4,7 @@
 		"description": {
 			"identifier": "poke:holy_haxel"
 		},
+		"group": "haxel",
 		"tags": [
 			"crafting_table"
 		],

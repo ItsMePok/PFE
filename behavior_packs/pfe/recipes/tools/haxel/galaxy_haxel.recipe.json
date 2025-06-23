@@ -4,6 +4,7 @@
 		"description": {
 			"identifier": "poke:galaxy_haxel"
 		},
+		"group": "haxel",
 		"tags": [
 			"crafting_table"
 		],

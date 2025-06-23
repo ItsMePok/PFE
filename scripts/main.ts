@@ -1649,6 +1649,7 @@ system.beforeEvents.startup.subscribe(data => {
     data.itemComponentRegistry.registerCustomComponent("poke_pfe:quests", new PFEQuestComponent());
     data.itemComponentRegistry.registerCustomComponent("poke_pfe:waypoint_menu", new PFEWaypointComponent());
     // These components exist to allow item.getComponent() to access data from applicable items/blocks
+    data.blockComponentRegistry.registerCustomComponent("poke_pfe:custom_recipes", {});
     data.itemComponentRegistry.registerCustomComponent("poke_pfe:icon_path", {});
     data.itemComponentRegistry.registerCustomComponent("poke_pfe:set_effects", {});
     data.itemComponentRegistry.registerCustomComponent("poke_pfe:custom_upgrades", {});
@@ -1708,7 +1709,7 @@ system.afterEvents.scriptEventReceive.subscribe((data) => {
         - in this case it will send true to poke_pfe:receive_test
          */
         case `poke_pfe:enabled`: {
-            world.getDimension(MinecraftDimensionTypes.Overworld).runCommand(`scriptevent ${data.message} true`)
+            system.sendScriptEvent(data.message, "true")
             break;
         }
         /*
