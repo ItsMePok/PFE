@@ -35,7 +35,8 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core"
+							"poke:repair_core",
+							"poke:cobalt_block"
 						],
 						"repair_amount": "query.max_durability"
 					},
@@ -74,9 +75,9 @@
 				"destroy_speeds": [
 					{
 						"block": {
-							"tags": "query.any_tag('pickaxe','minecraft:wood_tier_destructible','minecraft:stone_tier_destructible','minecraft:gold_tier_destructible','minecraft:iron_tier_destructible','minecraft:is_pickaxe_item_destructible','stone','metal','rail','stone_pick_diggable','wood_pick_diggable','iron_pick_diggable')"
+							"tags": "q.any_tag('minecraft:is_pickaxe_item_destructible') && !query.any_tag('minecraft:netherite_tier_destructible','minecraft:diamond_tier_destructible')"
 						},
-						"speed": 5
+						"speed": 6
 					}
 				]
 			}

@@ -108,7 +108,7 @@ function PFEHaxelConfigMenu(data: ItemComponentUseEvent, component: BoxMiningCom
   }
   const UpgradeableComponent = <PFEUpgradeableComponentInfo | undefined>data.itemStack.getComponent("poke_pfe:upgradeable")?.customComponentParameters.params
   if (UpgradeableComponent?.version) {
-    Ui.button({ translate: `translation.poke:ammoUIUpgrade` }, `textures/poke/common/upgrade`)
+    Ui.button({ translate: `poke_pfe.upgrade` }, `textures/poke/common/upgrade`)
   }
 
   Ui.show(data.source).then((response => {

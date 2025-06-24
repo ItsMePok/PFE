@@ -43,7 +43,7 @@ function ParsePFEUpgradeComponent(item: ItemStack, player: Player, component: PF
   //console.warn(JSON.stringify(compressedUpgrades))
   if (component.upgrade_ids) {
     for (let upgrade_id of component?.upgrade_ids) {
-      const validUpgrade: PFEItemUpgradeInfo | undefined = PokeGetObjectById(allUpgrades, upgrade_id)?.value
+      const validUpgrade: PFEItemUpgradeInfo | undefined = allUpgrades.filter(upgrade => upgrade.id == upgrade_id).at(0)
       const compressedUpgrade = compressedUpgrades?.upgrades ? compressedUpgrades?.upgrades.filter(compressedUpgrade => compressedUpgrade.id == validUpgrade?.id)?.at(0) ?? undefined : undefined
       if (validUpgrade) {
         if (compressedUpgrade) validUpgrade.level += compressedUpgrade.level
@@ -110,11 +110,11 @@ function PokeUpgradeUI(player: Player, item: ItemStack, config: PokeUpgradeUICon
           : 1
     )
     UI.button(
-      { translate: `%translation.poke.Upgrade ${upgrade.upgradeName ?? upgrade.upgradeItem} [%translation.poke.level:${upgrade.level}]\n%translation.poke.cost: ${upgradeCost} ${upgrade.upgradeItemName ?? item.typeId}` },
-      player.getGameMode() == GameMode.Creative || (upgradeCost && PokeGetItemFromInventory(player, undefined, upgrade.upgradeItem)) ? upgrade.icon?.default : upgrade.icon?.cantUpgrade ?? upgrade.icon?.default ?? `textures/poke/common/upgrade`
+      { translate: `${upgrade.level == upgrade.maxLevel ? "" : "%translation.poke.Upgrade "}${upgrade.upgradeName ?? upgrade.upgradeItem} [%translation.poke.level: ${upgrade.level == upgrade.maxLevel ? "%poke_pfe.max" : upgrade.level}]\n${upgradeCost == Infinity ? "%poke_pfe.max_level" : `%translation.poke.cost: ${upgradeCost} ${upgrade.upgradeItemName ?? item.typeId}`}` },
+      upgrade.level != upgrade.maxLevel && (player.getGameMode() == GameMode.Creative || (upgradeCost && PokeGetItemFromInventory(player, undefined, upgrade.upgradeItem))) ? upgrade.icon?.default : upgrade.icon?.cantUpgrade ?? upgrade.icon?.default ?? `textures/poke/common/upgrade`
     )
   }
-  UI.title({ translate: `translation.poke:ammoUIUpgradeTitle`, with: [item.nameTag ?? `%poke_pfe.${item.typeId.replace(`poke:`, ``).replace(`poke_pfe:`, ``)}`] })
+  UI.title({ translate: `poke_pfe.upgradeTitle`, with: [item.nameTag ?? `%poke_pfe.${item.typeId.replace(`poke:`, ``).replace(`poke_pfe:`, ``)}`] })
 
   UI.show(player).then(response => {
     let selection = 0
@@ -122,6 +122,7 @@ function PokeUpgradeUI(player: Player, item: ItemStack, config: PokeUpgradeUICon
       backTo;
       return
     } else selection++
+    //console.warn("Passed")
     for (let upgrade of config.upgrades) {
       if (response.selection == selection) {
         const HasItem = player.getGameMode() == GameMode.Creative ? true : PokeGetItemFromInventory(player, undefined, upgrade.upgradeItem)?.length ?? 0
@@ -139,14 +140,14 @@ function PokeUpgradeUI(player: Player, item: ItemStack, config: PokeUpgradeUICon
               : 1
         )
         // console.warn(upgradeCost)
-        if (HasItem && upgradeCost != Infinity) {
+        if (upgradeCost !== Infinity && HasItem) {
           if (upgrade.id == PFEPersistenceCoreDefault.id) item.keepOnDeath = true;
-          const thisCompressedUpgrade: { id: string, level: number } | undefined = currentCompressed ? PokeGetObjectById(currentCompressed?.upgrades, upgrade.id)?.value : undefined
+          const compressedUpgradeLevel = currentCompressed?.upgrades.filter(compressedUpgrade => compressedUpgrade.id == upgrade.id).at(0)?.level ?? upgrade.level
           let compressedNewProperty: compressedPFEItemUpgradeInfo = {
             upgrades: currentCompressed ? currentCompressed.upgrades.filter(compressedUpgrade => compressedUpgrade.id != upgrade.id).concat([
               {
                 id: upgrade.id,
-                level: (thisCompressedUpgrade?.level ?? upgrade.level) + upgradeCost === Infinity ? 0 : 1
+                level: compressedUpgradeLevel + 1
               }]
             ) : []
           }
@@ -162,8 +163,9 @@ function PokeUpgradeUI(player: Player, item: ItemStack, config: PokeUpgradeUICon
           }
           config.upgrades = config.upgrades.filter((oldUpgrade) => oldUpgrade.id != upgrade.id).concat(newProperty)
           if (player.getGameMode() != GameMode.Creative && upgradeCost != Infinity) {
-            player.runCommand(`clear @s ${upgrade.upgradeItem} 0 ${upgradeCost}`)
+            player.runCommand(`clear @s ${upgrade.upgradeItem} -1 ${upgradeCost}`)
           }
+          //console.warn(JSON.stringify(compressedNewProperty))
           PokeSaveProperty(component?.dynamic_property ?? config.dynamicProperty, item, JSON.stringify(compressedSave ? compressedNewProperty : config), player, EquipmentSlot.Mainhand)
           return;
         }

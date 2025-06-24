@@ -1101,8 +1101,8 @@
             "items": [
               "poke:wooden_haxel",
               "poke:stone_haxel",
-              //"poke_pfe:copper_haxel",
-              //"poke_pfe:redstone_haxel",
+              "poke_pfe:copper_haxel",
+              "poke_pfe:redstone_haxel",
               "poke:iron_haxel",
               "poke:gold_haxel",
               "poke:emerald_haxel",

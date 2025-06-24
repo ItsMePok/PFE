@@ -4,8 +4,8 @@
 		{
 			"description": {
 				"identifier": "geometry.poke_pfe.dye_unmixer",
-				"texture_width": 64,
-				"texture_height": 64,
+				"texture_width": 60,
+				"texture_height": 46,
 				"visible_bounds_width": 2,
 				"visible_bounds_height": 2.5,
 				"visible_bounds_offset": [0, 0.75, 0]

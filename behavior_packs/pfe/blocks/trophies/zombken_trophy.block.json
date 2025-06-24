@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.80",
+	"format_version": "1.21.90",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:zombken_trophy",
@@ -73,8 +73,6 @@
 			"minecraft:light_emission": 2,
 			"minecraft:map_color": "#e9e4a1",
 			"tag:pfe": {},
-			"tag:stone": {},
-			"tag:minecraft:stone": {},
 			"tag:stone_pick_diggable": {},
 			"tag:minecraft:is_pickaxe_item_destructible": {}
 		},

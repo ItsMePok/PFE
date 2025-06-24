@@ -21,7 +21,14 @@
 					"min": 60
 				}
 			},
-		"poke-pfe:upgrader":{},
+			"poke_pfe:upgradeable": {
+				"version": 1,
+				"sneak_interact_opens_ui": true,
+				"upgrade_ids": [
+					"pfe:persistence"
+				]
+			},
+			"poke-pfe:upgrader": {},
 			"minecraft:tags": {
 				"tags": [
 					"poke-pfe:UpgraderInfo:{\"canUpgrade\":[\"minecraft:amethyst_block\"]}:poke-pfe:UpgraderInfoEnd"

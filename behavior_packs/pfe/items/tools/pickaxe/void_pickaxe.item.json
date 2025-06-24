@@ -74,7 +74,7 @@
 				"destroy_speeds": [
 					{
 						"block": {
-							"tags": "query.any_tag('minecraft:diamond_tier_destructible','minecraft:netherite_tier_destructible','pickaxe','minecraft:wood_tier_destructible','minecraft:stone_tier_destructible','minecraft:gold_tier_destructible','minecraft:iron_tier_destructible','minecraft:is_pickaxe_item_destructible','stone','metal','rail','stone_pick_diggable','wood_pick_diggable','iron_pick_diggable')"
+							"tags": "q.any_tag('minecraft:is_pickaxe_item_destructible')"
 						},
 						"speed": 17
 					}

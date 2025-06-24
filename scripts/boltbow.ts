@@ -133,7 +133,7 @@ function PFEAmmoManagementMainMenuUI(item: ItemStack, player: Player) {
   let boltBowComponent: PFEBoltBowInfo = JSON.parse(item.getDynamicProperty(PFEBoltBowDynamicPropertyID)!.toString())
   UI.button({ translate: `translation.poke:ammoUIQuickReload`, with: { rawtext: [{ text: `${boltBowComponent.projectile.amount}` }, { text: `${(boltBowComponent.upgrades.filter(upgrade => upgrade.id == CapacityUpgradeDefault.id).at(0)?.level ?? 1) * 16}` }] } }, `textures/poke/common/ammoQuickReload`)
   UI.button({ translate: `translation.poke:ammoUIAddAmmo` }, `textures/poke/common/ammoReload`)
-  UI.button({ translate: `translation.poke:ammoUIUpgrade` }, `textures/poke/common/upgrade`)
+  UI.button({ translate: `poke_pfe.upgrade` }, `textures/poke/common/upgrade`)
   UI.button({ translate: `translation.poke:bossEventClose` }, `textures/poke/common/close`)
 
   UI.show(player).then((response => {

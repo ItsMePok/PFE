@@ -2,6 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:texture_set": {
 		"color": "alloy_forge_side",
-		"metalness_emissive_roughness": "alloy_forge_side_mer"
+		"metalness_emissive_roughness": "alloy_forge_side_mer",
+		"heightmap": "alloy_forge_side_height"
 	}
 }

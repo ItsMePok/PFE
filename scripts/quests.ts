@@ -141,7 +141,7 @@ function QuestInfoUI(item: ItemStack, player: Player) {
   UI.show(player).then(response => {
     let selection = 0
     if ((response.selection == selection) && canComplete) {
-      player.runCommand(`clear @s ${quest.item} 0 ${quest.amount}`)
+      player.runCommand(`clear @s ${quest.item} -1 ${quest.amount}`)
       player.getComponent(EntityComponentTypes.Equippable)?.setEquipment(EquipmentSlot.Mainhand, undefined)
       player.dimension.spawnItem(new ItemStack(`poke:copper_token`, quest.tokenAmount), player.location)
       player.playSound(`poke_pfe.quest.complete`, { pitch: clampNumber(Math.random() + 0.5, 0.85, 1.15), volume: 0.9 })

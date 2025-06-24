@@ -181,7 +181,7 @@ function ViewRecipeInfo(component: RecipeBlockComponentInfo, player: Player, rec
         let currentStoredItems = storedItems
         for (const amount of amountInfo) {
           if (amount.fromInventory) {
-            player.runCommand(`clear @s ${amount.id} 0 ${amount.fromInventory}`)
+            player.runCommand(`clear @s ${amount.id} -1 ${amount.fromInventory}`)
           }
           if (amount.fromStored) {
             let newStored: StoredItemsInfo[] = []
@@ -190,10 +190,10 @@ function ViewRecipeInfo(component: RecipeBlockComponentInfo, player: Player, rec
                 { i: storedItem.i, a: storedItem.a - amount.fromStored } :
                 storedItem
               )
-              console.warn(JSON.stringify((storedItem.i == amount.id ?
+              /*console.warn(JSON.stringify((storedItem.i == amount.id ?
                 { i: storedItem.i, a: storedItem.a - amount.fromStored } :
                 storedItem
-              )))
+              )))*/
             }
             //console.warn(JSON.stringify(newStored))
             player.setDynamicProperty(`${component.id}:storedItems`, JSON.stringify(newStored))
@@ -256,6 +256,8 @@ function ViewStoredItems(component: RecipeBlockComponentInfo, player: Player, st
 
 function AddItem(component: RecipeBlockComponentInfo, player: Player, storedItems: StoredItemsInfo[], block: Block) {
   const UI = new ActionFormData()
+  UI.title({ translate: component.block_name })
+  UI.label({ translate: `%poke_pfe.deposit.warning` })
   const allItems = PokeGetItemFromInventory(player) ?? []
   for (const item of allItems) {
     const translationString = /*itemStack?.localizationKey ??*/ item.typeId.includes("poke:") ? `%poke_pfe.${item.typeId.replace(`poke:`, "")}` : item.typeId.includes("poke_pfe:") ? `%poke_pfe.${item.typeId.replace(`poke_pfe:`, "")}` : item.typeId
@@ -266,7 +268,7 @@ function AddItem(component: RecipeBlockComponentInfo, player: Player, storedItem
     let selection = 0
     for (const item of allItems) {
       if (response.selection == selection) {
-        player.runCommand(`clear @s ${item.typeId} 0 ${item.amount}`)
+        player.runCommand(`clear @s ${item.typeId} -1 ${item.amount}`)
         const storedItemsDynamicPropID = `${component.id}:storedItems`
         const storedItemsProp = <string | undefined>player.getDynamicProperty(storedItemsDynamicPropID)
         const storedItems: StoredItemsInfo[] = JSON.parse(storedItemsProp ?? "[]") ?? []
@@ -331,7 +333,7 @@ function DepositItem(component: RecipeBlockComponentInfo, player: Player, item: 
   UI.show(player).then(response => {
     const slider = response.formValues?.at(0)
     if (typeof slider == "number" && slider > 0) {
-      player.runCommand(`clear @s ${item.i} 0 ${slider}`)
+      player.runCommand(`clear @s ${item.i} -1 ${slider}`)
       const storedItemsDynamicPropID = `${component.id}:storedItems`
       const storedItemsProp = <string | undefined>player.getDynamicProperty(storedItemsDynamicPropID)
       const storedItems: StoredItemsInfo[] = JSON.parse(storedItemsProp ?? "[]") ?? []
@@ -372,7 +374,7 @@ function WithdrawItem(component: RecipeBlockComponentInfo, player: Player, item:
         player.dimension.spawnItem(new ItemStack(item.i), player.location)
       } else for (let i = slider; i > -1; i = i - max) {
         if (i <= 0) {
-          console.warn(`attempted to exceeded withdraw amount || PFE - recipeBlock.ts - WithdrawItem`)
+          //console.warn(`attempted to exceeded withdraw amount || PFE - recipeBlock.ts - WithdrawItem`)
           break;
         }
         pokeAddItemsToPlayerOrDrop(player, new ItemStack(item.i, clampNumber(i, 0, max)))

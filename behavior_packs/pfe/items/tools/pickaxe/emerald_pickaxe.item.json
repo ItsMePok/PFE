@@ -35,13 +35,14 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core"
+							"poke:repair_core",
+							"minecraft:emerald_block"
 						],
 						"repair_amount": "query.max_durability"
 					},
 					{
 						"items": [
-							"emerald"
+							"minecraft:emerald"
 						],
 						"repair_amount": "q.max_durability*0.25"
 					}
@@ -68,7 +69,7 @@
 				"destroy_speeds": [
 					{
 						"block": {
-							"tags": "query.any_tag('pickaxe','minecraft:wood_tier_destructible','minecraft:stone_tier_destructible','minecraft:gold_tier_destructible','minecraft:iron_tier_destructible','minecraft:is_pickaxe_item_destructible','stone','metal','rail','stone_pick_diggable','wood_pick_diggable','iron_pick_diggable')"
+							"tags": "q.any_tag('minecraft:is_pickaxe_item_destructible') && !query.any_tag('minecraft:netherite_tier_destructible')"
 						},
 						"speed": 5
 					}

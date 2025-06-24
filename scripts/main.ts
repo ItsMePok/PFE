@@ -576,48 +576,7 @@ system.beforeEvents.startup.subscribe(data => {
         }
     }
     );
-    data.itemComponentRegistry.registerCustomComponent(
-        "poke_pfe:spawn_entity", {
-        onUseOn(data, componentInfo) {
-            type spawnEntityComponentInfo = {
-                entity: string,
-            }
-            const component = <spawnEntityComponentInfo>componentInfo.params
-            if (data.itemStack.typeId == "poke:wither_spawner") {
-                let options: PFEDisableConfigOptions = JSON.parse(world.getDynamicProperty(PFEDisableConfigName)!.toString())
-                if (!options.witherSpawner) return;
-            }
 
-            const player = <Player>data.source
-            if (player.typeId != MinecraftEntityTypes.Player) return;
-            //console.warn(`Face Location: ${JSON.stringify(data.faceLocation)}`)
-            const blockFace = data.blockFace
-            let faceLocX = data.faceLocation.x + data.block.x
-            let faceLocY = data.faceLocation.y + data.block.y + 1
-            let faceLocZ = data.faceLocation.z + data.block.z
-            var amount = data.itemStack.amount
-            /*switch (blockFace) {
-                case Direction.North: { faceLocZ += 1.5; break }
-                case Direction.South: { faceLocZ += -1.5; break }
-                case Direction.East: { faceLocX += -1.5; break }
-                case Direction.West: { faceLocX += 1.5; break }
-                case Direction.Up: { faceLocY += -1.5; break }
-                case Direction.Down: { faceLocY += 2; break }
-            }*/
-            const vec3 = { x: faceLocX, y: faceLocY, z: faceLocZ };
-            const equippableComponent = data.source.getComponent(EntityComponentTypes.Equippable)
-
-            player.dimension.spawnEntity(component.entity, vec3)
-            if (player.getGameMode() == GameMode.Creative) return;
-            if (amount <= 1) {
-                equippableComponent?.setEquipment(EquipmentSlot.Mainhand, undefined)
-                return;
-            }
-            equippableComponent?.setEquipment(EquipmentSlot.Mainhand, new ItemStack(data.itemStack.typeId, amount - 1))
-            return
-        }
-    }
-    );
 
 
 
@@ -1133,7 +1092,7 @@ system.beforeEvents.startup.subscribe(data => {
                 data.dimension.runCommand("particle minecraft:crop_growth_emitter " + block_location)
                 if (data.player?.getGameMode() != GameMode.Creative) {
                     if (itemAfterUse1 == 0) {
-                        data.player?.runCommand('clear @s bone_meal 0 1')
+                        data.player?.runCommand('clear @s bone_meal -1 1')
                         return;
                     }
                     equippableComponent?.setEquipment(EquipmentSlot.Mainhand, new ItemStack(mainhandItem.typeId, itemAfterUse1))
@@ -1541,6 +1500,37 @@ system.beforeEvents.startup.subscribe(data => {
 
     // Updated Components
     data.itemComponentRegistry.registerCustomComponent(
+        "poke_pfe:spawn_entity", {
+        onUseOn(data, componentInfo) {
+            type spawnEntityComponentInfo = {
+                entity: string
+            }
+            const component = <spawnEntityComponentInfo>componentInfo.params
+            if (data.itemStack.typeId == "poke:wither_spawner") {
+                let options: PFEDisableConfigOptions = JSON.parse(world.getDynamicProperty(PFEDisableConfigName)!.toString())
+                if (!options.witherSpawner) return;
+            }
+            const player = <Player>data.source
+            if (player.typeId != MinecraftEntityTypes.Player) return;
+            let spawnLocation = data.block.center()
+            switch (data.blockFace) {
+                case Direction.North: { spawnLocation = data.block.north()?.center() ?? { x: spawnLocation.x, y: spawnLocation.y, z: spawnLocation.z - 1 }; break }
+                case Direction.South: { spawnLocation = data.block.south()?.center() ?? { x: spawnLocation.x, y: spawnLocation.y, z: spawnLocation.z + 1 }; break }
+                case Direction.East: { spawnLocation = data.block.east()?.center() ?? { x: spawnLocation.x + 1, y: spawnLocation.y, z: spawnLocation.z }; break }
+                case Direction.West: { spawnLocation = data.block.west()?.center() ?? { x: spawnLocation.x - 1, y: spawnLocation.y, z: spawnLocation.z }; break }
+                case Direction.Up: { spawnLocation = data.block.above()?.center() ?? { x: spawnLocation.x, y: spawnLocation.y + 1, z: spawnLocation.z }; break }
+                case Direction.Down: { spawnLocation = data.block.below()?.center() ?? { x: spawnLocation.x, y: spawnLocation.y - 1, z: spawnLocation.z }; break }
+            }
+            const equippableComponent = data.source.getComponent(EntityComponentTypes.Equippable)
+            player.dimension.spawnEntity(component.entity, spawnLocation)
+            if (player.getGameMode() == GameMode.Creative) return;
+            if (data.itemStack.amount <= 1) { equippableComponent?.setEquipment(EquipmentSlot.Mainhand, undefined); return; }
+            equippableComponent?.setEquipment(EquipmentSlot.Mainhand, new ItemStack(data.itemStack.typeId, data.itemStack.amount - 1))
+            return
+        }
+    }
+    );
+    data.itemComponentRegistry.registerCustomComponent(
         "poke_pfe:launch_user", {
         onUse(data, componentInfo) {
             if (data.itemStack === undefined) return;
@@ -1644,6 +1634,7 @@ system.beforeEvents.startup.subscribe(data => {
         }
     });
     data.blockComponentRegistry.registerCustomComponent("poke_pfe:recipe_block", new RecipeBlockComponent())
+    data.itemComponentRegistry.registerCustomComponent("poke_pfe:recipe_block", {})
     data.itemComponentRegistry.registerCustomComponent("poke_pfe:upgradeable", new PFEUpgradeableComponent());
     data.itemComponentRegistry.registerCustomComponent("poke_pfe:box_mining", new PFEBoxMiningComponent());
     data.itemComponentRegistry.registerCustomComponent("poke_pfe:quests", new PFEQuestComponent());
