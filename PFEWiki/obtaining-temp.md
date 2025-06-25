@@ -4,9 +4,9 @@ hidden: true
 
 # Obtaining Temp
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:** <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke:**</mark> <a href="#identifier" id="identifier"></a>
 
-## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 64 <a href="#stack-size" id="stack-size"></a>
+## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">64</mark> <a href="#stack-size" id="stack-size"></a>
 
 ## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining: <a href="#obtaining" id="obtaining"></a>
 
@@ -37,6 +37,12 @@ hidden: true
 ### <img src="https://minecraft.wiki/images/Enchanted_Book.gif?b21c4" alt="" data-size="line"> Enchantment Type: <a href="#enchant-type" id="enchant-type"></a>
 
 ## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark> <a href="#rarity" id="rarity"></a>
+
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/chest_open.png?raw=true" alt="" data-size="line"> Storage:
+
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/upgrade.png?raw=true" alt="" data-size="line"> Upgrades:
+
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/upgrade.png?raw=true" alt="" data-size="line"> Recipes:
 
 ## <img src="https://minecraft.wiki/images/Shaper_Armor_Trim_Smithing_Template_JE1_BE1.png?0941a" alt="" data-size="line"> Trimmable: <mark style="color:yellow;">**Yes**</mark> <a href="#trimmable" id="trimmable"></a>
 
