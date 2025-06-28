@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.90",
+	"format_version": "1.16.100",
 	"minecraft:recipe_brewing_mix": {
 		"description": {
 			"identifier": "poke:splash_death_potion"
@@ -7,9 +7,7 @@
 		"tags": [
 			"brewing_stand"
 		],
-		"input": {
-			"item": "poke:death_potion"
-		},
+		"input": "poke:death_potion",
 		"reagent": "gunpowder",
 		"output": "poke:splash_death_potion"
 	}

@@ -16,6 +16,76 @@
 		},
 		"components": {
 			"minecraft:display_name": "%poke_pfe.spell_crafter\n%poke_pfe.tag",
+			"poke_pfe:custom_recipes": [
+				{
+					"recipe_type": "shapeless",
+					"items": [
+						"1:minecraft:paper",
+						"3:minecraft:feather",
+						"1:poke:sugar_water"
+					],
+					"result": [
+						"4:poke:dodge_spell"
+					]
+				},
+				{
+					"recipe_type": "shapeless",
+					"items": [
+						"1:minecraft:paper",
+						"1:minecraft:fire_charge"
+					],
+					"result": [
+						"4:poke:fireball_spell"
+					]
+				},
+				{
+					"recipe_type": "shapeless",
+					"items": [
+						"1:minecraft:paper",
+						"1:minecraft:ender_pearl",
+						"3:poke:astral_ingot"
+					],
+					"result": [
+						"4:poke:gravity_spell"
+					]
+				},
+				{
+					"recipe_type": "shapeless",
+					"items": [
+						"1:minecraft:planks",
+						"2:minecraft:glass"
+					],
+					"result": [
+						"4:poke:empty_vial"
+					]
+				},
+				{
+					"recipe_type": "shapeless",
+					"items": [
+						"4:minecraft:paper",
+						"1:minecraft:brick"
+					],
+					"result": [
+						"1:poke:pfe-spell_pottery_sherd"
+					]
+				},
+				{
+					"recipe_type": "shapeless",
+					"items": [
+						"8:poke:void_ingot",
+						"1:poke:smooth_limestone"
+					],
+					"result": [
+						"1:poke:magic_8_ball"
+					]
+				}
+			],
+			"poke_pfe:recipe_block": {
+				"name": "%poke_pfe.spell_crafter",
+				"can_store_items": false,
+				"debug_mode": false,
+				"id": "poke_pfe:spell_crafter"
+			},
 			"minecraft:liquid_detection": {
 				"detection_rules": [
 					{
@@ -67,13 +137,7 @@
 			"tag:minecraft:metal": {},
 			"tag:stone_pick_diggable": {},
 			"tag:minecraft:is_pickaxe_item_destructible": {},
-			"minecraft:map_color": "#697c79",
-			"minecraft:crafting_table": {
-				"crafting_tags": [
-					"poke_spell_crafter"
-				],
-				"table_name": "Spell Crafter"
-			}
+			"minecraft:map_color": "#9553ae"
 		},
 		"permutations": [
 			{

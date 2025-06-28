@@ -5055,8 +5055,202 @@ function PokeTimeDeleteEvent(player, event) {
 }
 
 // scripts/boltbow.ts
-import { EntityComponentTypes as EntityComponentTypes4, EquipmentSlot as EquipmentSlot4, GameMode as GameMode4, ItemComponentTypes as ItemComponentTypes3 } from "@minecraft/server";
+import { EntityComponentTypes as EntityComponentTypes4, EquipmentSlot as EquipmentSlot4, GameMode as GameMode4, ItemComponentTypes as ItemComponentTypes3, ItemStack as ItemStack4 } from "@minecraft/server";
 import { ActionFormData as ActionFormData6 } from "@minecraft/server-ui";
+
+// node_modules/@minecraft/math/lib/general/clamp.js
+function clampNumber(val, min, max) {
+  return Math.min(Math.max(val, min), max);
+}
+
+// node_modules/@minecraft/math/lib/vector3/coreHelpers.js
+var Vector3Utils = class _Vector3Utils {
+  /**
+   * equals
+   *
+   * Check the equality of two vectors
+   */
+  static equals(v1, v2) {
+    return v1.x === v2.x && v1.y === v2.y && v1.z === v2.z;
+  }
+  /**
+   * add
+   *
+   * Add two vectors to produce a new vector
+   */
+  static add(v1, v2) {
+    return { x: v1.x + (v2.x ?? 0), y: v1.y + (v2.y ?? 0), z: v1.z + (v2.z ?? 0) };
+  }
+  /**
+   * subtract
+   *
+   * Subtract two vectors to produce a new vector (v1-v2)
+   */
+  static subtract(v1, v2) {
+    return { x: v1.x - (v2.x ?? 0), y: v1.y - (v2.y ?? 0), z: v1.z - (v2.z ?? 0) };
+  }
+  /** scale
+   *
+   * Multiple all entries in a vector by a single scalar value producing a new vector
+   */
+  static scale(v1, scale) {
+    return { x: v1.x * scale, y: v1.y * scale, z: v1.z * scale };
+  }
+  /**
+   * dot
+   *
+   * Calculate the dot product of two vectors
+   */
+  static dot(a, b) {
+    return a.x * b.x + a.y * b.y + a.z * b.z;
+  }
+  /**
+   * cross
+   *
+   * Calculate the cross product of two vectors. Returns a new vector.
+   */
+  static cross(a, b) {
+    return { x: a.y * b.z - a.z * b.y, y: a.z * b.x - a.x * b.z, z: a.x * b.y - a.y * b.x };
+  }
+  /**
+   * magnitude
+   *
+   * The magnitude of a vector
+   */
+  static magnitude(v) {
+    return Math.sqrt(v.x ** 2 + v.y ** 2 + v.z ** 2);
+  }
+  /**
+   * distance
+   *
+   * Calculate the distance between two vectors
+   */
+  static distance(a, b) {
+    return _Vector3Utils.magnitude(_Vector3Utils.subtract(a, b));
+  }
+  /**
+   * normalize
+   *
+   * Takes a vector 3 and normalizes it to a unit vector
+   */
+  static normalize(v) {
+    const mag = _Vector3Utils.magnitude(v);
+    return { x: v.x / mag, y: v.y / mag, z: v.z / mag };
+  }
+  /**
+   * floor
+   *
+   * Floor the components of a vector to produce a new vector
+   */
+  static floor(v) {
+    return { x: Math.floor(v.x), y: Math.floor(v.y), z: Math.floor(v.z) };
+  }
+  /**
+   * toString
+   *
+   * Create a string representation of a vector3
+   */
+  static toString(v, options) {
+    const decimals = options?.decimals ?? 2;
+    const str = [v.x.toFixed(decimals), v.y.toFixed(decimals), v.z.toFixed(decimals)];
+    return str.join(options?.delimiter ?? ", ");
+  }
+  /**
+   * fromString
+   *
+   * Gets a Vector3 from the string representation produced by {@link Vector3Utils.toString}. If any numeric value is not a number
+   * or the format is invalid, undefined is returned.
+   * @param str - The string to parse
+   * @param delimiter - The delimiter used to separate the components. Defaults to the same as the default for {@link Vector3Utils.toString}
+   */
+  static fromString(str, delimiter = ",") {
+    const parts = str.split(delimiter);
+    if (parts.length !== 3) {
+      return void 0;
+    }
+    const output = parts.map((part) => parseFloat(part));
+    if (output.some((part) => isNaN(part))) {
+      return void 0;
+    }
+    return { x: output[0], y: output[1], z: output[2] };
+  }
+  /**
+   * clamp
+   *
+   * Clamps the components of a vector to limits to produce a new vector
+   */
+  static clamp(v, limits) {
+    return {
+      x: clampNumber(v.x, limits?.min?.x ?? Number.MIN_SAFE_INTEGER, limits?.max?.x ?? Number.MAX_SAFE_INTEGER),
+      y: clampNumber(v.y, limits?.min?.y ?? Number.MIN_SAFE_INTEGER, limits?.max?.y ?? Number.MAX_SAFE_INTEGER),
+      z: clampNumber(v.z, limits?.min?.z ?? Number.MIN_SAFE_INTEGER, limits?.max?.z ?? Number.MAX_SAFE_INTEGER)
+    };
+  }
+  /**
+   * lerp
+   *
+   * Constructs a new vector using linear interpolation on each component from two vectors.
+   */
+  static lerp(a, b, t) {
+    return { x: a.x + (b.x - a.x) * t, y: a.y + (b.y - a.y) * t, z: a.z + (b.z - a.z) * t };
+  }
+  /**
+   * slerp
+   *
+   * Constructs a new vector using spherical linear interpolation on each component from two vectors.
+   */
+  static slerp(a, b, t) {
+    const theta = Math.acos(_Vector3Utils.dot(a, b));
+    const sinTheta = Math.sin(theta);
+    const ta = Math.sin((1 - t) * theta) / sinTheta;
+    const tb = Math.sin(t * theta) / sinTheta;
+    return _Vector3Utils.add(_Vector3Utils.scale(a, ta), _Vector3Utils.scale(b, tb));
+  }
+  /**
+   * multiply
+   *
+   * Element-wise multiplication of two vectors together.
+   * Not to be confused with {@link Vector3Utils.dot} product or {@link Vector3Utils.cross} product
+   */
+  static multiply(a, b) {
+    return { x: a.x * b.x, y: a.y * b.y, z: a.z * b.z };
+  }
+  /**
+   * rotateX
+   *
+   * Rotates the vector around the x axis counterclockwise (left hand rule)
+   * @param a - Angle in radians
+   */
+  static rotateX(v, a) {
+    let cos = Math.cos(a);
+    let sin = Math.sin(a);
+    return { x: v.x, y: v.y * cos - v.z * sin, z: v.z * cos + v.y * sin };
+  }
+  /**
+   * rotateY
+   *
+   * Rotates the vector around the y axis counterclockwise (left hand rule)
+   * @param a - Angle in radians
+   */
+  static rotateY(v, a) {
+    let cos = Math.cos(a);
+    let sin = Math.sin(a);
+    return { x: v.x * cos + v.z * sin, y: v.y, z: v.z * cos - v.x * sin };
+  }
+  /**
+   * rotateZ
+   *
+   * Rotates the vector around the z axis counterclockwise (left hand rule)
+   * @param a - Angle in radians
+   */
+  static rotateZ(v, a) {
+    let cos = Math.cos(a);
+    let sin = Math.sin(a);
+    return { x: v.x * cos - v.y * sin, y: v.y * cos + v.x * sin, z: v.z };
+  }
+};
+
+// scripts/boltbow.ts
 var CapacityUpgradeDefault = new PFEUpgrades().capacity;
 var FlamingUpgradeDefault = new PFEUpgrades().flaming;
 var PersistenceUpgradeDefault = new PFEUpgrades().persistence;
@@ -5153,9 +5347,9 @@ function PokeShoot(player, ammoComponent, item, delay) {
   player.playSound(`random.bow`, { pitch: ammoComponent.projectile.amount > 3 ? void 0 : ammoComponent.projectile.amount == 3 ? 1.05 : ammoComponent.projectile.amount == 2 ? 1.15 : ammoComponent.projectile.amount == 1 ? 1.25 : void 0 });
   projComp.catchFireOnHurt = PokeGetObjectById(ammoComponent.upgrades, `pfe:flaming`)?.value.level > 0;
   projComp.owner = player;
-  projComp.shoot(angle, { uncertainty: 1e-3 });
+  projComp.shoot(Vector3Utils.scale(angle, 5.2), { uncertainty: void 0 });
   if (PokeDamageItemUB(item, void 0, player, EquipmentSlot4.Mainhand)?.broke) {
-    player.runCommand(`give @s ${ammoComponent.projectile.id} ${ammoComponent.projectile.amount} 0`);
+    pokeAddItemsToPlayerOrDrop(player, new ItemStack4(ammoComponent.projectile.id, ammoComponent.projectile.amount));
   }
 }
 function PFEAmmoManagementMainMenuUI(item, player) {
@@ -5165,7 +5359,7 @@ function PFEAmmoManagementMainMenuUI(item, player) {
     PokeSaveProperty(PFEBoltBowDynamicPropertyID, item, JSON.stringify(PFEBoltBowDefault), player);
   }
   let boltBowComponent = JSON.parse(item.getDynamicProperty(PFEBoltBowDynamicPropertyID).toString());
-  UI.button({ translate: `translation.poke:ammoUIQuickReload`, with: { rawtext: [{ text: `${boltBowComponent.projectile.amount}` }, { text: `${(boltBowComponent.upgrades.filter((upgrade) => upgrade.id == CapacityUpgradeDefault.id).at(0)?.level ?? 1) * 16}` }] } }, `textures/poke/common/ammoQuickReload`);
+  UI.button({ translate: `%poke_pfe.quick_reload [${boltBowComponent.projectile.amount}/${16 + (boltBowComponent.upgrades.filter((upgrade) => upgrade.id == CapacityUpgradeDefault.id).at(0)?.level ?? 1) * 16}]` }, `textures/poke/common/ammoQuickReload`);
   UI.button({ translate: `translation.poke:ammoUIAddAmmo` }, `textures/poke/common/ammoReload`);
   UI.button({ translate: `poke_pfe.upgrade` }, `textures/poke/common/upgrade`);
   UI.button({ translate: `translation.poke:bossEventClose` }, `textures/poke/common/close`);
@@ -5234,7 +5428,7 @@ function PFEAmmoManagementAddAmmoUI(item, player) {
             v: PFEBoltBowVersion,
             dynamicProperty: ammoComponent.dynamicProperty,
             projectile: {
-              amount: selectedItem.amount,
+              amount: clampNumber(selectedItem.amount, 0, ammoComponent.projectile?.max ?? 16),
               max: ammoComponent.projectile.max,
               id: selectedItem.typeId,
               entityId: selectedItem.typeId
@@ -5246,8 +5440,8 @@ function PFEAmmoManagementAddAmmoUI(item, player) {
             PokeErrorScreen(player, { text: `Unable to save new ammo type` }, PFEAmmoManagementAddAmmoUI(item, player));
             return;
           }
-          player.runCommand(`give @s ${ammoComponent.projectile.id} ${ammoComponent.projectile.amount}`);
-          player.runCommand(`clear @s ${selectedItem.typeId} -1 ${selectedItem.amount}`);
+          pokeAddItemsToPlayerOrDrop(player, new ItemStack4(ammoComponent.projectile.id, ammoComponent.projectile.amount));
+          player.runCommand(`clear @s ${selectedItem.typeId} -1 ${clampNumber(selectedItem.amount, 0, ammoComponent.projectile?.max ?? 16)}`);
         } else {
           if (!ammoComponent.projectile.max) {
             let newProperty2 = {
@@ -5270,6 +5464,7 @@ function PFEAmmoManagementAddAmmoUI(item, player) {
             return;
           }
           let maxRemaining = ammoComponent.projectile.max - ammoComponent.projectile.amount;
+          console.warn(maxRemaining);
           let takeAmount = selectedItem.amount;
           if (maxRemaining < selectedItem.amount) {
             takeAmount = maxRemaining;
@@ -5299,6 +5494,11 @@ function PFEAmmoManagementAddAmmoUI(item, player) {
   });
 }
 function PFEArrowIcon(itemId) {
+  const item = new ItemStack4(itemId, 1);
+  const iconPathComponent = item.getComponent("poke_pfe:icon_path")?.customComponentParameters.params;
+  if (iconPathComponent) {
+    return iconPathComponent;
+  }
   switch (itemId) {
     case MinecraftItemTypes.Arrow: {
       return `textures/items/arrow`;
@@ -5324,6 +5524,8 @@ function PFEArrowIcon(itemId) {
       return `textures/poke/pfe/volt_arrow_item`;
       break;
     }
+    default:
+      return `textures/poke/common/question`;
   }
 }
 function PFEQuickReload(ammoComponent, item, player) {
@@ -5439,7 +5641,8 @@ var PFEDisableConfigDefault = {
   "quantumTeleporter": true,
   "sundial": true,
   "witherSpawner": true,
-  "waypoints": true
+  "waypoints": true,
+  "playerMagnet": true
 };
 function PFEDisableConfigMainMenu(data) {
   let UI = new ActionFormData7();
@@ -5449,6 +5652,7 @@ function PFEDisableConfigMainMenu(data) {
   const disabled = `\xA7c
 %translation.poke_pfe.disabled`;
   UI.button({ translate: `%poke_pfe.quantum_teleporter:${options.quantumTeleporter ? enabled : disabled}` }, `textures/poke/pfe/quantum_teleporter`);
+  UI.button({ translate: `%poke_pfe.player_magnet:${options.playerMagnet ? enabled : disabled}` }, `textures/poke/pfe/player_magnet`);
   UI.button({ translate: `%poke_pfe.kapow_ring:${options.kapowRing ? enabled : disabled}` }, `textures/poke/pfe/kapow_ring`);
   UI.button({ translate: `%poke_pfe.nuke_ring:${options.nukeRing ? enabled : disabled}` }, `textures/poke/pfe/nuke_ring`);
   UI.button({ translate: `%poke_pfe.sundial:${options.sundial ? enabled : disabled}` }, `textures/poke/pfe/sundial_1`);
@@ -5467,6 +5671,16 @@ function PFEDisableConfigMainMenu(data) {
         newProperty.quantumTeleporter = false;
       } else
         newProperty.quantumTeleporter = true;
+      world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
+      PFEDisableConfigMainMenu(data);
+      return;
+    } else
+      selection++;
+    if (response.selection == selection) {
+      if (newProperty.playerMagnet) {
+        newProperty.playerMagnet = false;
+      } else
+        newProperty.playerMagnet = true;
       world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
       PFEDisableConfigMainMenu(data);
       return;
@@ -5567,11 +5781,6 @@ function PFEDisableConfigMainMenu(data) {
 
 // scripts/main.ts
 import { ActionFormData as ActionFormData11, ModalFormData as ModalFormData6 } from "@minecraft/server-ui";
-
-// node_modules/@minecraft/math/lib/general/clamp.js
-function clampNumber(val, min, max) {
-  return Math.min(Math.max(val, min), max);
-}
 
 // scripts/armorEffects.ts
 import { EntityComponentTypes as EntityComponentTypes5, EquipmentSlot as EquipmentSlot5, ItemStack as ItemStack5, system as system4, world as world7 } from "@minecraft/server";
@@ -6631,7 +6840,7 @@ function WaypointUISetIconCustom(player, item, waypoint, component) {
   });
 }
 
-// scripts/recipeBlock.ts
+// scripts/recipeSystems.ts
 import { BlockTypes, ItemStack as ItemStack8 } from "@minecraft/server";
 import { ActionFormData as ActionFormData10, ModalFormData as ModalFormData5 } from "@minecraft/server-ui";
 var RecipeBlockComponent = class {
@@ -6646,13 +6855,30 @@ var RecipeBlockComponent = class {
     PFERecipeBlockMainMenu(component, data.player, data.block);
   }
 };
+var RecipeItemComponent = class {
+  onUse(data, componentInfo) {
+    const component = componentInfo.params;
+    if (!data.source)
+      return;
+    if (!data.itemStack)
+      return;
+    const player = data.source;
+    if (player.typeId != MinecraftEntityTypes.Player)
+      return;
+    if (!component.id) {
+      console.warn(`${data.itemStack.typeId} Does not have an ID defined but needs to || poke_pfe:recipe_block Component`);
+      return;
+    }
+    PFERecipeBlockMainMenu(component, player, data.itemStack);
+  }
+};
 function PFERecipeBlockMainMenu(component, player, block) {
   const UI = new ActionFormData10();
   const StoredItemsDynamicPropID = `${component.id}:storedItems`;
   const storedItemsProp = player.getDynamicProperty(StoredItemsDynamicPropID);
   const storedItems = JSON.parse(storedItemsProp ?? "[]") ?? [];
   const customRecipeComponent = block.getComponent("poke_pfe:custom_recipes")?.customComponentParameters.params;
-  UI.title({ translate: component.block_name });
+  UI.title({ translate: component.name });
   if (component.can_store_items) {
     UI.button({ translate: `%poke_pfe.storedItems
 [${storedItems.length}/${component.storage_capacity_limit}]` }, `textures/poke/common/chest_open`);
@@ -6694,7 +6920,7 @@ function PFERecipeBlockMainMenu(component, player, block) {
 }
 function Debug(component, player, block, storedItems) {
   const UI = new ActionFormData10();
-  UI.title({ translate: component.block_name });
+  UI.title({ translate: component.name });
   UI.button("Reset Stored Items", "textures/poke/common/redo");
   UI.button({ translate: `translation.poke_pfe.GoBack` }, "textures/poke/common/left_arrow");
   UI.show(player).then((response) => {
@@ -6713,7 +6939,7 @@ function Debug(component, player, block, storedItems) {
 }
 function ViewAllRecipes(component, player, recipes, block, storedItems) {
   const UI = new ActionFormData10();
-  UI.title({ translate: component.block_name });
+  UI.title({ translate: component.name });
   for (const recipe of recipes) {
     const Result = ParseRecipeItems(recipe.result);
     UI.button({ translate: `${MakeLocalizationKey(Result.at(0)?.item ?? "undefined")}` }, getTexturePathByIdentifier(Result.at(0)?.item ?? "undefined"));
@@ -6736,7 +6962,7 @@ function ViewAllRecipes(component, player, recipes, block, storedItems) {
 }
 function ViewRecipeInfo(component, player, recipes, block, recipe, storedItems) {
   const UI = new ActionFormData10();
-  UI.title({ translate: component.block_name });
+  UI.title({ translate: component.name });
   UI.label({ translate: `\xA77%poke_pfe.crafting:` });
   for (const result of ParseRecipeItems(recipe.result)) {
     UI.label({ translate: `\xA77- ${result.amount}x %${MakeLocalizationKey(result.item)} (\xA79${MakeAddonID(result.item)}\xA7r)` });
@@ -6822,7 +7048,7 @@ function ViewRecipeInfo(component, player, recipes, block, recipe, storedItems) 
 }
 function ViewStoredItems(component, player, storedItems, block) {
   const UI = new ActionFormData10();
-  UI.title({ translate: component.block_name });
+  UI.title({ translate: component.name });
   if (storedItems.length < 64) {
     UI.button({ translate: `%poke_pfe.depositItem` }, `textures/poke/common/deposit`);
   }
@@ -6860,15 +7086,11 @@ function ViewStoredItems(component, player, storedItems, block) {
 }
 function AddItem(component, player, storedItems, block) {
   const UI = new ActionFormData10();
-  UI.title({ translate: component.block_name });
+  UI.title({ translate: component.name });
   UI.label({ translate: `%poke_pfe.deposit.warning` });
   const allItems = PokeGetItemFromInventory(player) ?? [];
   for (const item of allItems) {
-    const translationString = (
-      /*itemStack?.localizationKey ??*/
-      item.typeId.includes("poke:") ? `%poke_pfe.${item.typeId.replace(`poke:`, "")}` : item.typeId.includes("poke_pfe:") ? `%poke_pfe.${item.typeId.replace(`poke_pfe:`, "")}` : item.typeId
-    );
-    UI.button({ translate: translationString }, getTexturePathByIdentifier(item.typeId));
+    UI.button({ translate: MakeLocalizationKey(item.typeId) }, getTexturePathByIdentifier(item.typeId));
   }
   UI.button({ translate: `translation.poke_pfe.GoBack` }, "textures/poke/common/left_arrow");
   UI.show(player).then((response) => {
@@ -6902,7 +7124,7 @@ function AddItem(component, player, storedItems, block) {
 }
 function ViewItem(component, player, item, storedItems, block) {
   const UI = new ActionFormData10();
-  UI.title({ translate: component.block_name });
+  UI.title({ translate: component.name });
   const ItemsInInventory = PokeGetItemFromInventory(player, void 0, item.i);
   let CanDepositAmount = 0;
   if (ItemsInInventory) {
@@ -6935,7 +7157,7 @@ function ViewItem(component, player, item, storedItems, block) {
 }
 function DepositItem(component, player, item, maxAmount, storedItems, block) {
   const UI = new ModalFormData5();
-  UI.title({ translate: component.block_name });
+  UI.title({ translate: component.name });
   UI.label({ translate: `%poke_pfe.deposit.warning` });
   UI.slider({ translate: `%poke_pfe.amount` }, 0, maxAmount, { defaultValue: 0 });
   UI.show(player).then((response) => {
@@ -6962,7 +7184,7 @@ function DepositItem(component, player, item, maxAmount, storedItems, block) {
 }
 function WithdrawItem(component, player, item, storedItems, block) {
   const UI = new ModalFormData5();
-  UI.title({ translate: component.block_name });
+  UI.title({ translate: component.name });
   UI.slider({ translate: `%poke_pfe.amount` }, 0, item.a, { defaultValue: 0, tooltip: { translate: `%poke_pfe.withdraw.tooltip` } });
   UI.show(player).then((response) => {
     const slider = response.formValues?.at(0);
@@ -7019,9 +7241,9 @@ function ParseRecipeItems(strings) {
   return returnValue;
 }
 function MakeLocalizationKey(string) {
-  const prefix = string.includes("poke:") || string.includes("poke_pfe:") ? "poke_pfe." : string.includes("_spawn_egg") ? "item.spawn_egg.entity:" : BlockTypes.get(string) ? "tile." : "item.";
+  const prefix = string.includes("poke:pfe-") ? "item.poke:" : string.includes("poke:") || string.includes("poke_pfe:") ? "poke_pfe." : string.includes("_spawn_egg") ? "item.spawn_egg.entity:" : BlockTypes.get(string) ? "tile." : "item.";
   const identifier = string.includes("poke:") || string.includes("poke_pfe:") || string.includes("minecraft:") ? string.replace("poke:", "").replace("poke_pfe:", "").replace("minecraft:", "") : string.includes("_spawn_egg") ? string.replace("_spawn_egg", "") : string;
-  const suffix = string.includes("minecraft:") ? ".name" : "";
+  const suffix = string.includes("minecraft:") || string.includes("poke:pfe-") ? ".name" : "";
   return `${prefix}${identifier}${suffix}`;
 }
 function MakeAddonID(string) {
@@ -8944,14 +9166,10 @@ system6.beforeEvents.startup.subscribe((data) => {
         if (componentInfo.can_be_disabled) {
           let options = JSON.parse(world10.getDynamicProperty(PFEDisableConfigName).toString()) ?? PFEDisableConfigDefault;
           switch (true) {
-            case (data2.itemStack.typeId == "poke:quantum_teleporter" && options.quantumTeleporter === false):
+            case (data2.itemStack.typeId == "poke:player_magnet" && options.playerMagnet === false || data2.itemStack.typeId == "poke:quantum_teleporter" && options.quantumTeleporter === false || data2.itemStack.typeId == "poke:sundial" && options.quantumTeleporter === false || data2.itemStack.typeId == "poke:kapow_ring" && options.quantumTeleporter === false): {
+              data2.source.sendMessage({ translate: `\xA7f[\xA7e!\xA7f] \xA7c%translation.poke_pfe.feature_disabled\xA7r` });
               return;
-            case (data2.itemStack.typeId == "poke:sundial" && options.quantumTeleporter === false):
-              return;
-            case (data2.itemStack.typeId == "poke:kapow_ring" && options.quantumTeleporter === false):
-              return;
-            default:
-              break;
+            }
           }
         }
         componentInfo.command ? data2.source.runCommand(componentInfo.command) : void 0;
@@ -8981,7 +9199,7 @@ system6.beforeEvents.startup.subscribe((data) => {
     }
   );
   data.blockComponentRegistry.registerCustomComponent("poke_pfe:recipe_block", new RecipeBlockComponent());
-  data.itemComponentRegistry.registerCustomComponent("poke_pfe:recipe_block", {});
+  data.itemComponentRegistry.registerCustomComponent("poke_pfe:recipe_item", new RecipeItemComponent());
   data.itemComponentRegistry.registerCustomComponent("poke_pfe:upgradeable", new PFEUpgradeableComponent());
   data.itemComponentRegistry.registerCustomComponent("poke_pfe:box_mining", new PFEBoxMiningComponent());
   data.itemComponentRegistry.registerCustomComponent("poke_pfe:quests", new PFEQuestComponent());

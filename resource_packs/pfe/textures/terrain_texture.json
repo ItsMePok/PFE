@@ -216,7 +216,7 @@
 			"textures": "textures/poke/pfe/knightling_trophy"
 		},
 		"poke_pfe_listener_antenna_block": {
-			"textures": "textures/poke/pfe/listener_antennas.block.png"
+			"textures": "textures/poke/pfe/listener_antennas"
 		},
 		"poke_pfe_fisher_block": {
 			"textures": "textures/poke/pfe/fisher_block"

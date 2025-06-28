@@ -16,6 +16,10 @@
 		},
 		"components": {
 			"minecraft:display_name": "%poke_pfe.alloy_forge\n%poke_pfe.tag",
+			"poke_pfe:icon_path": "texture/poke/pfe/alloy_forge_face",
+			"minecraft:destruction_particles": {
+				"texture": "poke_molten_bricks"
+			},
 			"poke_pfe:custom_recipes": [
 				{
 					"items": [
@@ -55,8 +59,8 @@
 				"id": "poke_pfe:alloy_forge",
 				"can_store_items": true,
 				"storage_capacity_limit": 10,
-				"block_name": "%poke_pfe.alloy_forge",
-				"debug_mode": true
+				"name": "%poke_pfe.alloy_forge",
+				"debug_mode": false
 			},
 			"minecraft:item_visual": {
 				"geometry": {
@@ -130,7 +134,7 @@
 			"tag:pfe": {},
 			"tag:minecraft:is_pickaxe_item_destructible": {},
 			"tag:minecraft:stone_tier_destructible": {},
-			"minecraft:map_color": "#ee6d18"
+			"minecraft:map_color": "#552911"
 		},
 		"permutations": [
 			{

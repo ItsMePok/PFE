@@ -600,35 +600,27 @@
 				]
 			},
 			"minecraft:spawn_midnight_mushroom_buddy": {
-				"sequence": [
-					{
-						"add": {
-							"component_groups": [
-								"minecraft:mushroom_buddy_adult",
-								"minecraft:mushroom_buddy_wild",
-								"minecraft:mushroom_buddy_black"
-							]
-						}
-					}
-				]
+				"add": {
+					"component_groups": [
+						"minecraft:mushroom_buddy_adult",
+						"minecraft:mushroom_buddy_wild",
+						"minecraft:mushroom_buddy_black"
+					]
+				}
 			},
 			"minecraft:entity_born": {
-				"sequence": [
-					{
-						"filters": {
-							"test": "has_component",
-							"operator": "!=",
-							"value": "minecraft:is_baby"
-						},
-						"remove": {},
-						"add": {
-							"component_groups": [
-								"minecraft:mushroom_buddy_baby",
-								"minecraft:mushroom_buddy_tame"
-							]
-						}
-					}
-				]
+				"filters": {
+					"test": "has_component",
+					"operator": "!=",
+					"value": "minecraft:is_baby"
+				},
+				"remove": {},
+				"add": {
+					"component_groups": [
+						"minecraft:mushroom_buddy_baby",
+						"minecraft:mushroom_buddy_tame"
+					]
+				}
 			},
 			"minecraft:ageable_grow_up": {
 				"remove": {

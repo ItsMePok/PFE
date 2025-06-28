@@ -1,11 +1,16 @@
 {
-	"format_version": "1.21.90",
+	"format_version": "1.20.60",
 	"minecraft:recipe_smithing_transform": {
 		"description": {
 			"identifier": "poke:smithing_netherite_battleaxe"
 		},
 		"tags": [
 			"smithing_table"
+		],
+		"unlock": [
+			{
+				"item": "minecraft:netherite_upgrade_smithing_template"
+			}
 		],
 		"template": "minecraft:netherite_upgrade_smithing_template",
 		"base": "poke:diamond_battleaxe",

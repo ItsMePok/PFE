@@ -12,7 +12,7 @@ import { PFECustomCraftQuestsPropertyID, PFECustomFarmQuestsPropertyID, PFECusto
 import ComputersCompat, { initExampleStickers } from "./addonCompatibility/jigarbov";
 import { PFEWaypointComponent } from "./waypoints";
 import { PFEUpgradeableComponent } from "./upgrades";
-import { RecipeBlockComponent } from "./recipeBlock";
+import { RecipeBlockComponent, RecipeItemComponent } from "./recipeSystems";
 const currentVersion = 102960 // PFE Version (ex: 102950 = v1.2.95)
 
 
@@ -1595,10 +1595,15 @@ system.beforeEvents.startup.subscribe(data => {
             if (componentInfo.can_be_disabled) {
                 let options: PFEDisableConfigOptions = JSON.parse(world.getDynamicProperty(PFEDisableConfigName)!.toString()) ?? PFEDisableConfigDefault
                 switch (true) {
-                    case data.itemStack.typeId == "poke:quantum_teleporter" && options.quantumTeleporter === false: return;
-                    case data.itemStack.typeId == "poke:sundial" && options.quantumTeleporter === false: return;
-                    case data.itemStack.typeId == "poke:kapow_ring" && options.quantumTeleporter === false: return;
-                    default: break;
+                    case
+                        (data.itemStack.typeId == "poke:player_magnet" && options.playerMagnet === false)
+                        || (data.itemStack.typeId == "poke:quantum_teleporter" && options.quantumTeleporter === false)
+                        || (data.itemStack.typeId == "poke:sundial" && options.quantumTeleporter === false)
+                        || (data.itemStack.typeId == "poke:kapow_ring" && options.quantumTeleporter === false)
+                        : {
+                            data.source.sendMessage({ translate: `§f[§e!§f] §c%translation.poke_pfe.feature_disabled§r` })
+                            return;
+                        }
                 }
             }
             componentInfo.command ? data.source.runCommand(componentInfo.command) : undefined
@@ -1634,13 +1639,14 @@ system.beforeEvents.startup.subscribe(data => {
         }
     });
     data.blockComponentRegistry.registerCustomComponent("poke_pfe:recipe_block", new RecipeBlockComponent())
-    data.itemComponentRegistry.registerCustomComponent("poke_pfe:recipe_block", {})
+    data.itemComponentRegistry.registerCustomComponent("poke_pfe:recipe_item", new RecipeItemComponent())
     data.itemComponentRegistry.registerCustomComponent("poke_pfe:upgradeable", new PFEUpgradeableComponent());
     data.itemComponentRegistry.registerCustomComponent("poke_pfe:box_mining", new PFEBoxMiningComponent());
     data.itemComponentRegistry.registerCustomComponent("poke_pfe:quests", new PFEQuestComponent());
     data.itemComponentRegistry.registerCustomComponent("poke_pfe:waypoint_menu", new PFEWaypointComponent());
     // These components exist to allow item.getComponent() to access data from applicable items/blocks
     data.blockComponentRegistry.registerCustomComponent("poke_pfe:custom_recipes", {});
+    data.blockComponentRegistry.registerCustomComponent("poke_pfe:icon_path", {});
     data.itemComponentRegistry.registerCustomComponent("poke_pfe:icon_path", {});
     data.itemComponentRegistry.registerCustomComponent("poke_pfe:set_effects", {});
     data.itemComponentRegistry.registerCustomComponent("poke_pfe:custom_upgrades", {});

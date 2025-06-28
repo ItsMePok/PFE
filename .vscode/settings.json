@@ -29,6 +29,51 @@
               "components": {
                 "type": "object",
                 "properties": {
+                  "poke_pfe:recipe_item": {
+                    "description": "Recipe Block (PFE)",
+                    "oneOf": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "description": "This is used to determine what the dynamic proeprty gets read/saved as (IDs of the same value will share the same info for that player)",
+                            "anyOf": [
+                              {
+                                "enum": [
+                                  "poke_pfe:alloy_forge",
+                                ]
+                              },
+                              {
+                                "type": "string",
+                              }
+                            ],
+                          },
+                          "can_store_items": {
+                            "type": "boolean",
+                            "description": "Can this item store items that can later be used in recipes? (Currently stored items are bound to that player and not the item)",
+                            "default": false
+                          },
+                          "storage_capacity_limit": {
+                            "type": "number",
+                            "description": "The max amount of unique items this can store"
+                          },
+                          "name": {
+                            "type": "string",
+                            "description": "The name of the item (This will be used in things like the UI titles)",
+                            "default": "%poke_pfe.recipe_block"
+                          },
+                          "debug_mode": {
+                            "type": "boolean",
+                            "description": "Enables debug options for this item",
+                            "default": false
+                          }
+                        },
+                        "required": [
+                          "id"
+                        ]
+                      }
+                    ]
+                  },
                   "poke_pfe:icon_path": {
                     "title": "Icon Path (PFE)",
                     "type": "string",
@@ -3081,6 +3126,11 @@
               "components": {
                 "type": "object",
                 "properties": {
+                  "poke_pfe:icon_path": {
+                    "title": "Icon Path (PFE)",
+                    "type": "string",
+                    "description": "This will control what the texture path of this block is. This will be used in scripting where the icon would not be known otherwise"
+                  },
                   "poke_pfe:custom_recipes": {
                     "title": "Custom Recipes (PFE)",
                     "description": "These are recipes that are used in the Recipe Block (PFE) Component",
@@ -3145,7 +3195,7 @@
                             "type": "number",
                             "description": "The max amount of unique items this can store"
                           },
-                          "block_name": {
+                          "name": {
                             "type": "string",
                             "description": "The name of the block (This will be used in things like the UI titles)",
                             "default": "%poke_pfe.recipe_block"
@@ -3176,6 +3226,7 @@
   ],
   "cSpell.words": [
     "afamiliarroom",
+    "alphablend",
     "anordinaryday",
     "balladofthecats",
     "behaviorpack",

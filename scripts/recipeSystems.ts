@@ -7,18 +7,20 @@
 [] Import Custom Recipes
  */
 
-import { Block, BlockComponentPlayerInteractEvent, BlockTypes, CustomComponentParameters, ItemStack, Player } from "@minecraft/server";
+import { Block, BlockComponentPlayerInteractEvent, BlockTypes, CustomComponentParameters, ItemComponent, ItemComponentUseEvent, ItemStack, Player } from "@minecraft/server";
 import { ActionFormData, ModalFormData } from "@minecraft/server-ui";
 import { pokeAddItemsToPlayerOrDrop, PokeGetItemFromInventory } from "./commonFunctions";
 import { clampNumber } from "@minecraft/math";
+import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
 export {
-  RecipeBlockComponent
+  RecipeBlockComponent,
+  RecipeItemComponent
 }
 interface RecipeBlockComponentInfo {
   id: string
   can_store_items: boolean | false
   storage_capacity_limit: number | 64
-  block_name: string // Translation string
+  name: string // Translation string
   debug_mode: boolean | false
 }
 interface CustomRecipes {// "poke_pfe:custom_recipes"
@@ -37,17 +39,31 @@ class RecipeBlockComponent {
     PFERecipeBlockMainMenu(component, data.player, data.block)
   }
 }
+class RecipeItemComponent {
+  onUse(data: ItemComponentUseEvent, componentInfo: CustomComponentParameters) {
+    const component = <RecipeBlockComponentInfo>componentInfo.params
+    if (!data.source) return;
+    if (!data.itemStack) return;
+    const player = <Player>data.source
+    if (player.typeId != MinecraftEntityTypes.Player) return;
+    if (!component.id) {
+      console.warn(`${data.itemStack.typeId} Does not have an ID defined but needs to || poke_pfe:recipe_block Component`)
+      return
+    }
+    PFERecipeBlockMainMenu(component, player, data.itemStack)
+  }
+}
 interface StoredItemsInfo {
   i: string,
   a: number
 }
-function PFERecipeBlockMainMenu(component: RecipeBlockComponentInfo, player: Player, block: Block) {
+function PFERecipeBlockMainMenu(component: RecipeBlockComponentInfo, player: Player, block: Block | ItemStack) {
   const UI = new ActionFormData()
   const StoredItemsDynamicPropID = `${component.id}:storedItems`
   const storedItemsProp = <string | undefined>player.getDynamicProperty(StoredItemsDynamicPropID)
   const storedItems: StoredItemsInfo[] = JSON.parse(storedItemsProp ?? "[]") ?? []
   const customRecipeComponent = <CustomRecipes[] | undefined>block.getComponent("poke_pfe:custom_recipes")?.customComponentParameters.params
-  UI.title({ translate: component.block_name })
+  UI.title({ translate: component.name })
   if (component.can_store_items) {
     UI.button({ translate: `%poke_pfe.storedItems\n[${storedItems.length}/${component.storage_capacity_limit}]` }, `textures/poke/common/chest_open`)
   }
@@ -81,9 +97,9 @@ function PFERecipeBlockMainMenu(component: RecipeBlockComponentInfo, player: Pla
     if (response.canceled || response.selection == selection) return;
   })
 }
-function Debug(component: RecipeBlockComponentInfo, player: Player, block: Block, storedItems: StoredItemsInfo[]) {
+function Debug(component: RecipeBlockComponentInfo, player: Player, block: Block | ItemStack, storedItems: StoredItemsInfo[]) {
   const UI = new ActionFormData()
-  UI.title({ translate: component.block_name })
+  UI.title({ translate: component.name })
   UI.button("Reset Stored Items", "textures/poke/common/redo")
   UI.button({ translate: `translation.poke_pfe.GoBack` }, 'textures/poke/common/left_arrow')
   UI.show(player).then(response => {
@@ -100,9 +116,9 @@ function Debug(component: RecipeBlockComponentInfo, player: Player, block: Block
   })
 
 }
-function ViewAllRecipes(component: RecipeBlockComponentInfo, player: Player, recipes: CustomRecipes[], block: Block, storedItems: StoredItemsInfo[]) {
+function ViewAllRecipes(component: RecipeBlockComponentInfo, player: Player, recipes: CustomRecipes[], block: Block | ItemStack, storedItems: StoredItemsInfo[]) {
   const UI = new ActionFormData()
-  UI.title({ translate: component.block_name })
+  UI.title({ translate: component.name })
   for (const recipe of recipes) {
     const Result = ParseRecipeItems(recipe.result)
     UI.button({ translate: `${MakeLocalizationKey(Result.at(0)?.item ?? "undefined")}` }, getTexturePathByIdentifier(Result.at(0)?.item ?? "undefined"))
@@ -123,9 +139,9 @@ function ViewAllRecipes(component: RecipeBlockComponentInfo, player: Player, rec
   })
 }
 
-function ViewRecipeInfo(component: RecipeBlockComponentInfo, player: Player, recipes: CustomRecipes[], block: Block, recipe: CustomRecipes, storedItems: StoredItemsInfo[]) {
+function ViewRecipeInfo(component: RecipeBlockComponentInfo, player: Player, recipes: CustomRecipes[], block: Block | ItemStack, recipe: CustomRecipes, storedItems: StoredItemsInfo[]) {
   const UI = new ActionFormData()
-  UI.title({ translate: component.block_name })
+  UI.title({ translate: component.name })
   UI.label({ translate: `§7%poke_pfe.crafting:` })
   for (const result of ParseRecipeItems(recipe.result)) {
     UI.label({ translate: `§7- ${result.amount}x %${MakeLocalizationKey(result.item)} (§9${MakeAddonID(result.item)}§r)` })
@@ -221,9 +237,9 @@ function ViewRecipeInfo(component: RecipeBlockComponentInfo, player: Player, rec
 
 }
 
-function ViewStoredItems(component: RecipeBlockComponentInfo, player: Player, storedItems: StoredItemsInfo[], block: Block) {
+function ViewStoredItems(component: RecipeBlockComponentInfo, player: Player, storedItems: StoredItemsInfo[], block: Block | ItemStack) {
   const UI = new ActionFormData()
-  UI.title({ translate: component.block_name })
+  UI.title({ translate: component.name })
   if (storedItems.length < 64) {
     UI.button({ translate: `%poke_pfe.depositItem` }, `textures/poke/common/deposit`)
   }
@@ -254,14 +270,13 @@ function ViewStoredItems(component: RecipeBlockComponentInfo, player: Player, st
   })
 }
 
-function AddItem(component: RecipeBlockComponentInfo, player: Player, storedItems: StoredItemsInfo[], block: Block) {
+function AddItem(component: RecipeBlockComponentInfo, player: Player, storedItems: StoredItemsInfo[], block: Block | ItemStack) {
   const UI = new ActionFormData()
-  UI.title({ translate: component.block_name })
+  UI.title({ translate: component.name })
   UI.label({ translate: `%poke_pfe.deposit.warning` })
   const allItems = PokeGetItemFromInventory(player) ?? []
   for (const item of allItems) {
-    const translationString = /*itemStack?.localizationKey ??*/ item.typeId.includes("poke:") ? `%poke_pfe.${item.typeId.replace(`poke:`, "")}` : item.typeId.includes("poke_pfe:") ? `%poke_pfe.${item.typeId.replace(`poke_pfe:`, "")}` : item.typeId
-    UI.button({ translate: translationString }, getTexturePathByIdentifier(item.typeId))
+    UI.button({ translate: MakeLocalizationKey(item.typeId) }, getTexturePathByIdentifier(item))
   }
   UI.button({ translate: `translation.poke_pfe.GoBack` }, 'textures/poke/common/left_arrow')
   UI.show(player).then(response => {
@@ -293,9 +308,9 @@ function AddItem(component: RecipeBlockComponentInfo, player: Player, storedItem
   })
 }
 
-function ViewItem(component: RecipeBlockComponentInfo, player: Player, item: StoredItemsInfo, storedItems: StoredItemsInfo[], block: Block) {
+function ViewItem(component: RecipeBlockComponentInfo, player: Player, item: StoredItemsInfo, storedItems: StoredItemsInfo[], block: Block | ItemStack) {
   const UI = new ActionFormData()
-  UI.title({ translate: component.block_name })
+  UI.title({ translate: component.name })
   const ItemsInInventory = PokeGetItemFromInventory(player, undefined, item.i)
   let CanDepositAmount: number | undefined = 0
   if (ItemsInInventory) {
@@ -325,9 +340,9 @@ function ViewItem(component: RecipeBlockComponentInfo, player: Player, item: Sto
   })
 }
 
-function DepositItem(component: RecipeBlockComponentInfo, player: Player, item: StoredItemsInfo, maxAmount: number, storedItems: StoredItemsInfo[], block: Block) {
+function DepositItem(component: RecipeBlockComponentInfo, player: Player, item: StoredItemsInfo, maxAmount: number, storedItems: StoredItemsInfo[], block: Block | ItemStack) {
   const UI = new ModalFormData()
-  UI.title({ translate: component.block_name })
+  UI.title({ translate: component.name })
   UI.label({ translate: `%poke_pfe.deposit.warning` })
   UI.slider({ translate: `%poke_pfe.amount` }, 0, maxAmount, { defaultValue: 0 })
   UI.show(player).then(response => {
@@ -353,9 +368,9 @@ function DepositItem(component: RecipeBlockComponentInfo, player: Player, item: 
   })
 }
 
-function WithdrawItem(component: RecipeBlockComponentInfo, player: Player, item: StoredItemsInfo, storedItems: StoredItemsInfo[], block: Block) {
+function WithdrawItem(component: RecipeBlockComponentInfo, player: Player, item: StoredItemsInfo, storedItems: StoredItemsInfo[], block: Block | ItemStack) {
   const UI = new ModalFormData()
-  UI.title({ translate: component.block_name })
+  UI.title({ translate: component.name })
   UI.slider({ translate: `%poke_pfe.amount` }, 0, item.a, { defaultValue: 0, tooltip: { translate: `%poke_pfe.withdraw.tooltip` } })
   UI.show(player).then(response => {
     const slider = response.formValues?.at(0)
@@ -395,12 +410,13 @@ This will return a texture path based on the identifier
 
 If an icon path is not found it will return "textures/poke/common/question"
 */
-function getTexturePathByIdentifier(identifier: string) {
-  const IconPathComponent = <string | undefined>new ItemStack(identifier).getComponent("poke_pfe:icon_path")?.customComponentParameters.params
-  if (IconPathComponent) return IconPathComponent
-  switch (identifier) {
-    default: { return "textures/poke/common/question"; break }
+function getTexturePathByIdentifier(item: ItemStack | Block | string) {
+  if (typeof item == "string") {
+    item = new ItemStack(item, 1)
   }
+  const IconPathComponent = <string | undefined>item.getComponent("poke_pfe:icon_path")?.customComponentParameters.params
+  if (IconPathComponent) return IconPathComponent
+  return "textures/poke/common/question"
 }
 interface ParsedRecipeItem {
   item: string,
@@ -420,9 +436,9 @@ function ParseRecipeItems(strings: string[]) {
 
 // Mostly works 
 function MakeLocalizationKey(string: string) {
-  const prefix = string.includes("poke:") || string.includes("poke_pfe:") ? "poke_pfe." : string.includes("_spawn_egg") ? "item.spawn_egg.entity:" : (BlockTypes.get(string)) ? "tile." : "item."
+  const prefix = string.includes("poke:pfe-") ? "item.poke:" : string.includes("poke:") || string.includes("poke_pfe:") ? "poke_pfe." : string.includes("_spawn_egg") ? "item.spawn_egg.entity:" : (BlockTypes.get(string)) ? "tile." : "item."
   const identifier = string.includes("poke:") || string.includes("poke_pfe:") || string.includes("minecraft:") ? string.replace("poke:", "").replace("poke_pfe:", "").replace("minecraft:", "") : string.includes("_spawn_egg") ? string.replace("_spawn_egg", "") : string
-  const suffix = string.includes("minecraft:") ? ".name" : ""
+  const suffix = string.includes("minecraft:") || string.includes("poke:pfe-") ? ".name" : ""
   return `${prefix}${identifier}${suffix}`
 }
 

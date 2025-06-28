@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.grizzly_bear.baby_transform": {
+		"animation.poke_pfe.bear.baby_transform": {
 			"loop": true,
 			"bones": {
 				"head": {
@@ -14,17 +14,17 @@
 				}
 			}
 		},
-		"animation.grizzly_bear.move": {
+		"animation.poke_pfe.bear.move": {
 			"loop": true,
 			"bones": {
 				"body": {
 					"position": [
 						0,
-						"-9-2*query.standing_scale-this",
+						"-9 - 2 * query.standing_scale - this",
 						0
 					],
 					"rotation": [
-						"(-(query.standing_scale)*63)-this",
+						"(-(query.standing_scale) * 63) - this",
 						0,
 						0
 					]
@@ -32,11 +32,11 @@
 				"leg0": {
 					"position": [
 						0,
-						"-1*query.standing_scale",
-						"6*query.standing_scale"
+						"-1 * query.standing_scale",
+						"6 * query.standing_scale"
 					],
 					"rotation": [
-						"query.standing_scale*63",
+						"query.standing_scale * 63",
 						0,
 						0
 					]
@@ -44,59 +44,59 @@
 				"leg1": {
 					"position": [
 						0,
-						"-1*query.standing_scale",
-						"6*query.standing_scale"
+						"-1 * query.standing_scale",
+						"6 * query.standing_scale"
 					],
 					"rotation": [
-						"query.standing_scale*63",
+						"query.standing_scale * 63",
 						0,
 						0
 					]
 				},
 				"leg2": {
 					"rotation": [
-						"(query.standing_scale>1)?(query.standing_scale*81)-this:0",
+						"(query.standing_scale > 1) ? (query.standing_scale * 81) - this : 0",
 						0,
 						0
 					]
 				},
 				"leg3": {
 					"rotation": [
-						"(query.standing_scale>1)?(query.standing_scale*81)-this:0",
+						"(query.standing_scale > 1) ? (query.standing_scale * 81) - this : 0",
 						0,
 						0
 					]
 				}
 			}
 		},
-		"animation.grizzly_bear.walk": {
+		"animation.poke_pfe.bear.walk": {
 			"anim_time_update": "query.modified_distance_moved",
 			"loop": true,
 			"bones": {
 				"leg0": {
 					"rotation": [
-						"math.cos(query.anim_time*38.17)*80",
+						"math.cos(query.anim_time * 38.17) *  80.0",
 						0,
 						0
 					]
 				},
 				"leg1": {
 					"rotation": [
-						"math.cos(query.anim_time*38.17)*-80",
+						"math.cos(query.anim_time * 38.17) * -80.0",
 						0,
 						0
 					]
 				},
 				"leg2": {
 					"rotation": [
-						"math.cos(query.anim_time*38.17)*-80",
+						"math.cos(query.anim_time * 38.17) * -80.0",
 						0,
 						0
 					]
 				},
 				"leg3": {
 					"rotation": [
-						"math.cos(query.anim_time*38.17)*80",
+						"math.cos(query.anim_time * 38.17) *  80.0",
 						0,
 						0
 					]
