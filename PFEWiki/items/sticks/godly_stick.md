@@ -1,6 +1,6 @@
 # Godly Stick
 
-<figure><img src="https://github.com/user-attachments/assets/ee155826-bf49-494d-8d64-b2c330db0604" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_stick.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:godly\_stick** <a href="#identifier" id="identifier"></a>
 
@@ -16,12 +16,12 @@
 
 |                                                                                                 |
 | :---------------------------------------------------------------------------------------------: |
-| ![Godly Ingot](https://github.com/user-attachments/assets/0e423f55-1bf7-4893-a9c2-10b7ba3aab4b) |
-| ![Godly Ingot](https://github.com/user-attachments/assets/0e423f55-1bf7-4893-a9c2-10b7ba3aab4b) |
-| ![Godly Ingot](https://github.com/user-attachments/assets/0e423f55-1bf7-4893-a9c2-10b7ba3aab4b) |
+| ![Godly Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_ingot.png?raw=true) |
+| ![Godly Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_ingot.png?raw=true) |
+| ![Godly Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_ingot.png?raw=true) |
 
 Items:
 
-* <img src="https://github.com/user-attachments/assets/0e423f55-1bf7-4893-a9c2-10b7ba3aab4b" alt="Godly Ingot" data-size="line"> [Godly Ingot](../ingots/godly-ingot.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_ingot.png?raw=true" alt="Godly Ingot" data-size="line"> [Godly Ingot](../ingots/godly-ingot.md)
 {% endtab %}
 {% endtabs %}

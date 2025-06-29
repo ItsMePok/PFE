@@ -14,7 +14,7 @@
 
 <div><figure><img src="https://minecraft.wiki/images/Lit_Furnace_(S).gif?40e71" alt=""><figcaption><p>      Smelted in a <a href="https://minecraft.wiki/w/Furnace">Furnace</a>     </p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/thumb/Blast_Furnace_(S)_JE1.png/150px-Blast_Furnace_(S)_JE1.png?f1920" alt=""><figcaption><p>Smelted in a <a href="https://minecraft.wiki/w/Blast_Furnace">Blast Furnace</a></p></figcaption></figure></div>
 
-<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="https://github.com/user-attachments/assets/27d0d1a6-0c75-453b-bd55-0daf466dd02e" alt="Raw Nebula." data-size="line"> <a href="../raw-ore/raw-nebula.md">Raw Nebula</a></td><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_ingot.png?raw=true" alt="Nebula Ingot." data-size="line"> Nebula Ingot</td><td>1</td></tr></tbody></table>
+<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_nebula.png?raw=true" alt="Raw Nebula." data-size="line"> <a href="../raw-ore/raw-nebula.md">Raw Nebula</a></td><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_ingot.png?raw=true" alt="Nebula Ingot." data-size="line"> Nebula Ingot</td><td>1</td></tr></tbody></table>
 {% endtab %}
 
 {% tab title="Recipe" %}
@@ -23,12 +23,12 @@
 |     |                                                                                      |     |
 | :-: | :----------------------------------------------------------------------------------: | :-: |
 |     |                                                                                      |     |
-|     | ![](https://github.com/user-attachments/assets/d7998150-2531-4071-91d8-5210c8bc5795) |     |
+|     | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/NebulaBlock.png?raw=true) |     |
 |     |                                                                                      |     |
 
 Items:
 
-* <img src="https://github.com/user-attachments/assets/d7998150-2531-4071-91d8-5210c8bc5795" alt="" data-size="line"> [Nebula Block](../../blocks/ore-blocks/block-of-nebula.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/NebulaBlock.png?raw=true" alt="" data-size="line"> [Nebula Block](../../blocks/ore-blocks/block-of-nebula.md)
 {% endtab %}
 
 {% tab title="Recipe 2" %}
@@ -38,12 +38,12 @@ Items:
 
 |                                                                                                   |                                                                                                   |                                                                                                   |
 | :-----------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: |
-| ![Nebula Nugget](https://github.com/user-attachments/assets/8a9b549c-7be4-40a6-b91a-e52d4bc316e6) | ![Nebula Nugget](https://github.com/user-attachments/assets/8a9b549c-7be4-40a6-b91a-e52d4bc316e6) | ![Nebula Nugget](https://github.com/user-attachments/assets/8a9b549c-7be4-40a6-b91a-e52d4bc316e6) |
-| ![Nebula Nugget](https://github.com/user-attachments/assets/8a9b549c-7be4-40a6-b91a-e52d4bc316e6) | ![Nebula Nugget](https://github.com/user-attachments/assets/8a9b549c-7be4-40a6-b91a-e52d4bc316e6) | ![Nebula Nugget](https://github.com/user-attachments/assets/8a9b549c-7be4-40a6-b91a-e52d4bc316e6) |
-| ![Nebula Nugget](https://github.com/user-attachments/assets/8a9b549c-7be4-40a6-b91a-e52d4bc316e6) | ![Nebula Nugget](https://github.com/user-attachments/assets/8a9b549c-7be4-40a6-b91a-e52d4bc316e6) | ![Nebula Nugget](https://github.com/user-attachments/assets/8a9b549c-7be4-40a6-b91a-e52d4bc316e6) |
+| ![Nebula Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_nugget.png?raw=true) | ![Nebula Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_nugget.png?raw=true) | ![Nebula Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_nugget.png?raw=true) |
+| ![Nebula Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_nugget.png?raw=true) | ![Nebula Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_nugget.png?raw=true) | ![Nebula Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_nugget.png?raw=true) |
+| ![Nebula Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_nugget.png?raw=true) | ![Nebula Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_nugget.png?raw=true) | ![Nebula Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_nugget.png?raw=true) |
 
 Items:
 
-* <img src="https://github.com/user-attachments/assets/8a9b549c-7be4-40a6-b91a-e52d4bc316e6" alt="Nebula Nugget" data-size="line">[Nebula Nugget](../nuggets/nebula-nugget.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_nugget.png?raw=true" alt="Nebula Nugget" data-size="line">[Nebula Nugget](../nuggets/nebula-nugget.md)
 {% endtab %}
 {% endtabs %}

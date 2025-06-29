@@ -15,7 +15,7 @@
 * Barometer
 * Charged Cobalt Block
 * Miner Helmet
-* [<img src="https://github.com/user-attachments/assets/34cb4b48-f320-41d3-a8aa-68b6f2bb7bb2" alt="" data-size="line">Cobblestone Generator](../../blocks/automation/cobblestone-generator.md)
+* [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/Automation/cobblestone_generator.png?raw=true" alt="" data-size="line">Cobblestone Generator](../../blocks/automation/cobblestone-generator.md)
 * Item Manipulator
 * Jackhammer
 * Night Vison Goggles
@@ -36,9 +36,9 @@
 
 |                                                                                             |                                                                               |                                                                                             |
 | :-----------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
-| ![Plastic](https://github.com/user-attachments/assets/ef6c978f-76ec-48e4-aa89-29c2d98f4624) | ![Copper Ingot](https://minecraft.wiki/images/Copper_Ingot_JE2_BE1.png?0d410) | ![Plastic](https://github.com/user-attachments/assets/ef6c978f-76ec-48e4-aa89-29c2d98f4624) |
-| ![Plastic](https://github.com/user-attachments/assets/ef6c978f-76ec-48e4-aa89-29c2d98f4624) | ![Copper Ingot](https://minecraft.wiki/images/Copper_Ingot_JE2_BE1.png?0d410) | ![Plastic](https://github.com/user-attachments/assets/ef6c978f-76ec-48e4-aa89-29c2d98f4624) |
-| ![Plastic](https://github.com/user-attachments/assets/ef6c978f-76ec-48e4-aa89-29c2d98f4624) | ![Copper Ingot](https://minecraft.wiki/images/Copper_Ingot_JE2_BE1.png?0d410) | ![Plastic](https://github.com/user-attachments/assets/ef6c978f-76ec-48e4-aa89-29c2d98f4624) |
+| ![Plastic](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) | ![Copper Ingot](https://minecraft.wiki/images/Copper_Ingot_JE2_BE1.png?0d410) | ![Plastic](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) |
+| ![Plastic](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) | ![Copper Ingot](https://minecraft.wiki/images/Copper_Ingot_JE2_BE1.png?0d410) | ![Plastic](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) |
+| ![Plastic](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) | ![Copper Ingot](https://minecraft.wiki/images/Copper_Ingot_JE2_BE1.png?0d410) | ![Plastic](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) |
 {% endtab %}
 
 {% tab title="Structures" %}

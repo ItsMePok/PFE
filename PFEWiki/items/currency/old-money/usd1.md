@@ -1,10 +1,10 @@
 # $1
 
-<figure><img src="https://github.com/user-attachments/assets/d0c4eacc-8fbf-4824-a728-db446c4d6f60" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/dollar_bill_1.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Book_and_Quill_JE2_BE2.png?2128f" alt="Book and Quill." data-size="line"> Description: <a href="#description" id="description"></a>
 
-* The <img src="https://github.com/user-attachments/assets/d0c4eacc-8fbf-4824-a728-db446c4d6f60" alt="$1." data-size="line"> $1 is a currency in PFE that can be used for a replenishable economy system
+* The <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/dollar_bill_1.png?raw=true" alt="$1." data-size="line"> $1 is a currency in PFE that can be used for a replenishable economy system
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:**&#x64;ollor\_bill\_1 <a href="#identifier" id="identifier"></a>
 
@@ -14,9 +14,9 @@
 
 {% tabs %}
 {% tab title="Trade" %}
-<figure><img src="https://github.com/user-attachments/assets/b8730220-4755-4ead-a51c-da527ff5f245" alt=""><figcaption><p>Sold by the <a href="../../../mobs/traders/money-man.md">Money Man</a></p></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/entity_icon/money_man.png?raw=true" alt=""><figcaption><p>Sold by the <a href="../../../mobs/traders/money-man.md">Money Man</a></p></figcaption></figure>
 
-<table data-full-width="false"><thead><tr><th align="center">Wants</th><th width="88" align="center">Amount</th><th align="center">Gives</th><th width="85" align="center">Amount</th></tr></thead><tbody><tr><td align="center"><img src="https://github.com/user-attachments/assets/1afd1931-8f31-44bf-9a95-2dce5e9e520d" alt="$5." data-size="line"> <a href="usd5.md">$5</a></td><td align="center">1</td><td align="center"><img src="https://github.com/user-attachments/assets/d0c4eacc-8fbf-4824-a728-db446c4d6f60" alt="$1." data-size="line"> $1</td><td align="center">5</td></tr><tr><td align="center"><img src="https://minecraft.wiki/images/Diamond_JE3_BE3.png?99d00" alt="Diamond." data-size="line"> <a href="https://minecraft.wiki/w/Diamond">Diamond</a></td><td align="center">1</td><td align="center"><img src="https://github.com/user-attachments/assets/d0c4eacc-8fbf-4824-a728-db446c4d6f60" alt="$1." data-size="line"> $1</td><td align="center">1</td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th align="center">Wants</th><th width="88" align="center">Amount</th><th align="center">Gives</th><th width="85" align="center">Amount</th></tr></thead><tbody><tr><td align="center"><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/dollar_bill_5.png?raw=true" alt="$5." data-size="line"> <a href="usd5.md">$5</a></td><td align="center">1</td><td align="center"><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/dollar_bill_1.png?raw=true" alt="$1." data-size="line"> $1</td><td align="center">5</td></tr><tr><td align="center"><img src="https://minecraft.wiki/images/Diamond_JE3_BE3.png?99d00" alt="Diamond." data-size="line"> <a href="https://minecraft.wiki/w/Diamond">Diamond</a></td><td align="center">1</td><td align="center"><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/dollar_bill_1.png?raw=true" alt="$1." data-size="line"> $1</td><td align="center">1</td></tr></tbody></table>
 {% endtab %}
 {% endtabs %}
 

@@ -1,6 +1,6 @@
 # Godly Haxel
 
-![](https://github.com/ItsMePok/PFE/assets/136857747/fa0e4c28-6194-43ac-9777-8900b07cfbc8)
+![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_haxel.png?raw=true)
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:godly\_haxel**
 

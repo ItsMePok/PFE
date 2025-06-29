@@ -7,7 +7,7 @@ Set Effects:
 
 ## Helmet
 
-![poke\_cobalt\_robe\_hat](https://github.com/ItsMePok/PFE/assets/136857747/7d00ba24-2d23-468e-88a0-7ed8b8dd793b)
+![poke\_cobalt\_robe\_hat](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_robe_hat.png?raw=true)
 
 Identifier: **poke:cobalt\_robe\_helmet**
 
@@ -25,7 +25,7 @@ Trimmable: **Yes**
 
 ## Chestplate
 
-![poke\_cobalt\_robe\_chestplate](https://github.com/ItsMePok/PFE/assets/136857747/c23de341-9a07-458f-9ef3-9a1a4e46a40f)
+![poke\_cobalt\_robe\_chestplate](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_robe_chestplate.png?raw=true)
 
 Identifier: **poke:cobalt\_robe\_chestplate**
 

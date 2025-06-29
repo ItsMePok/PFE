@@ -1,6 +1,6 @@
 # GPS Module
 
-<figure><img src="https://github.com/user-attachments/assets/e86a7ee9-4449-47a6-9164-6b435c473780" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/gps_module.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## Identifier: poke:gps\_module
 
@@ -10,13 +10,13 @@
 
 <summary>Used in Recipes for:</summary>
 
-* [<img src="https://github.com/user-attachments/assets/8ee539e5-315e-4aa7-8a8d-ada4f3b1fa31" alt="" data-size="line"> Duster](../../blocks/automation/duster.md)
+* [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/Automation/duster.png?raw=true" alt="" data-size="line"> Duster](../../blocks/automation/duster.md)
 * [<img src="broken-reference" alt="" data-size="line"> Dirter](../../blocks/automation/dirter.md)
-* [<img src="https://github.com/user-attachments/assets/706de320-8301-454e-b64d-871aadf2d8fd" alt="" data-size="line">Cobbler](../../blocks/automation/cobbler.md)
+* [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/Automation/cobbler.png?raw=true" alt="" data-size="line">Cobbler](../../blocks/automation/cobbler.md)
 * Calibrated Block Breaker
 * Calibrated Cobblestone Generator
-* [<img src="https://github.com/user-attachments/assets/d5e4412f-b092-413f-99d9-a9e09033cd29" alt="" data-size="line">Receiver](receiver.md)
-* [<img src="https://github.com/ItsMePok/PFE/assets/136857747/0d304ca1-2400-4a15-a78e-0a11e717ac09" alt="" data-size="line">Gravity Gem](../gems/gravity-gem.md)
+* [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/receiver.png?raw=true" alt="" data-size="line">Receiver](receiver.md)
+* [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/gravity_gem.png?raw=true" alt="" data-size="line">Gravity Gem](../gems/gravity-gem.md)
 
 </details>
 
@@ -32,9 +32,9 @@
 
 |                                                                                                        |                                                                                                                       |                                                                                                        |
 | :----------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------: |
-|    ![Cobalt Ingot](https://github.com/user-attachments/assets/f2b33b06-67a6-4a44-9c12-0259f8eb17a4)    | ![Redstone Dust](https://minecraft.wiki/images/thumb/Redstone_Dust_JE2_BE2.png/150px-Redstone_Dust_JE2_BE2.png?8cf17) |    ![Cobalt Ingot](https://github.com/user-attachments/assets/f2b33b06-67a6-4a44-9c12-0259f8eb17a4)    |
-| ![Electric Component](https://github.com/user-attachments/assets/74fc7c8a-64ec-44e5-b227-588b7485a088) |                              ![](https://minecraft.wiki/images/Compass_JE3_BE3.gif?0043f)                             | ![Electric Component](https://github.com/user-attachments/assets/74fc7c8a-64ec-44e5-b227-588b7485a088) |
-|    ![Cobalt Ingot](https://github.com/user-attachments/assets/f2b33b06-67a6-4a44-9c12-0259f8eb17a4)    | ![Redstone Dust](https://minecraft.wiki/images/thumb/Redstone_Dust_JE2_BE2.png/150px-Redstone_Dust_JE2_BE2.png?8cf17) |    ![Cobalt Ingot](https://github.com/user-attachments/assets/f2b33b06-67a6-4a44-9c12-0259f8eb17a4)    |
+|    ![Cobalt Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true)    | ![Redstone Dust](https://minecraft.wiki/images/thumb/Redstone_Dust_JE2_BE2.png/150px-Redstone_Dust_JE2_BE2.png?8cf17) |    ![Cobalt Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true)    |
+| ![Electric Component](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/electric_component.png?raw=true) |                              ![](https://minecraft.wiki/images/Compass_JE3_BE3.gif?0043f)                             | ![Electric Component](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/electric_component.png?raw=true) |
+|    ![Cobalt Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true)    | ![Redstone Dust](https://minecraft.wiki/images/thumb/Redstone_Dust_JE2_BE2.png/150px-Redstone_Dust_JE2_BE2.png?8cf17) |    ![Cobalt Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true)    |
 {% endtab %}
 
 {% tab title="Structures" %}
@@ -46,6 +46,6 @@ Found in the [Abandoned Ship](https://pfewiki.gitbook.io/home/sturctures/abandon
 
 | Item                                                                                                                           | Amount | Weight |
 | ------------------------------------------------------------------------------------------------------------------------------ | ------ | :----: |
-| <img src="https://github.com/user-attachments/assets/e86a7ee9-4449-47a6-9164-6b435c473780" alt="" data-size="line"> GPS Module | 1      |    3   |
+| <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/gps_module.png?raw=true" alt="" data-size="line"> GPS Module | 1      |    3   |
 {% endtab %}
 {% endtabs %}

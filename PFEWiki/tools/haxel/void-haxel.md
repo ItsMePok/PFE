@@ -1,6 +1,6 @@
 # Void Haxel
 
-![](https://github.com/ItsMePok/PFE/assets/136857747/553774ac-9107-48dd-9a7b-21c0447c2e20)
+![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_haxel.png?raw=true)
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:void\_haxel**
 

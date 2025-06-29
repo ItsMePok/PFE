@@ -1,6 +1,6 @@
 # Astral Pickaxe
 
-<figure><img src="https://github.com/user-attachments/assets/e5f27edf-429f-4fe7-a11e-34e498e0bb8b" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/opaqueAlts/astral_pickaxe.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:astral\_pickaxe** <a href="#identifier" id="identifier"></a>
 
@@ -22,7 +22,7 @@
 
 ### Repair Items: <a href="#repair" id="repair"></a>
 
-* [<img src="https://github.com/ItsMePok/PFE/assets/136857747/f15d8501-f297-4a77-b6de-3681297cdb09" alt="" data-size="line">Repair Core](../../items/cores/repair-core.md) (100% Durability)
+* [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/repair_core.png?raw=true" alt="" data-size="line">Repair Core](../../items/cores/repair-core.md) (100% Durability)
 * Astral Ingot (25% Durability)
 * Astral Nugget (2.8% Durability)
 
@@ -38,14 +38,14 @@
 
 |                                                                                                  |                                                                                                  |                                                                                                  |
 | :----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: |
-| ![Astral Ingot](https://github.com/user-attachments/assets/41cf9ac1-c89c-4eea-9249-76036a858251) | ![Astral Ingot](https://github.com/user-attachments/assets/41cf9ac1-c89c-4eea-9249-76036a858251) | ![Astral Ingot](https://github.com/user-attachments/assets/41cf9ac1-c89c-4eea-9249-76036a858251) |
-|                                                                                                  | ![Nebula Stick](https://github.com/user-attachments/assets/35eabd0d-edb3-4a69-9890-d02d3674dd6d) |                                                                                                  |
-|                                                                                                  | ![Nebula Stick](https://github.com/user-attachments/assets/35eabd0d-edb3-4a69-9890-d02d3674dd6d) |                                                                                                  |
+| ![Astral Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/astral_ingot.png?raw=true) | ![Astral Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/astral_ingot.png?raw=true) | ![Astral Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/astral_ingot.png?raw=true) |
+|                                                                                                  | ![Nebula Stick](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_stick.png?raw=true) |                                                                                                  |
+|                                                                                                  | ![Nebula Stick](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_stick.png?raw=true) |                                                                                                  |
 
 Items:
 
-* <img src="https://github.com/user-attachments/assets/41cf9ac1-c89c-4eea-9249-76036a858251" alt="Astral Ingot" data-size="line">Astral Ingot
-* <img src="https://github.com/user-attachments/assets/35eabd0d-edb3-4a69-9890-d02d3674dd6d" alt="Nebula Stick" data-size="line">Nebula Stick
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/astral_ingot.png?raw=true" alt="Astral Ingot" data-size="line">Astral Ingot
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_stick.png?raw=true" alt="Nebula Stick" data-size="line">Nebula Stick
 {% endtab %}
 {% endtabs %}
 

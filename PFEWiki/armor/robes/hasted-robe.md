@@ -7,7 +7,7 @@ Set Effects:
 
 ## Helmet
 
-![poke\_hasted\_robe\_hat](https://github.com/ItsMePok/PFE/assets/136857747/c750f43c-339b-4088-b9c0-c572f736c928)
+![poke\_hasted\_robe\_hat](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/hasted_robe_hat.png?raw=true)
 
 Identifier: **poke:hasted\_robe\_helmet**
 
@@ -25,7 +25,7 @@ Trimmable: **Yes**
 
 ## Chestplate
 
-![poke\_hasted\_robe\_chestplate](https://github.com/ItsMePok/PFE/assets/136857747/6b8ff6b4-fa36-4a06-b9ad-d5aac1fe7e14)
+![poke\_hasted\_robe\_chestplate](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/hasted_robe_chestplate.png?raw=true)
 
 Identifier: **poke:hasted\_robe\_chestplate**
 

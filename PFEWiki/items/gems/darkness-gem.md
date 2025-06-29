@@ -1,6 +1,6 @@
 # Darkness Gem
 
-![poke\_darkness\_gem](https://github.com/ItsMePok/PFE/assets/136857747/86b4c7cd-5243-42e2-acac-e2e0898526b5)
+![poke\_darkness\_gem](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/darkness_gem.png?raw=true)
 
 Item Identifier: **poke:darkness\_gem**
 

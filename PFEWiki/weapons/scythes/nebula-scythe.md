@@ -14,7 +14,7 @@ description: 'Last updated to match: v1.2.94'
 
 ## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">1</mark> <a href="#stack-size" id="stack-size"></a>
 
-## <img src="https://github.com/user-attachments/assets/dcfb5b71-f821-4bba-9e8e-0e5c924e18ca" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark>
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark>
 
 ## <img src="https://minecraft.wiki/images/thumb/Enchanting_Table.gif/150px-Enchanting_Table.gif?904a7" alt="" data-size="line"> Enchanting: <a href="#enchanting" id="enchanting"></a>
 
@@ -33,7 +33,7 @@ description: 'Last updated to match: v1.2.94'
   * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_ingot.png?raw=true" alt="Nebula Ingot." data-size="line"> [Nebula Ingot](../../items/ingots/nebula-ingot.md) <mark style="color:yellow;">(25%)</mark>
   * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_nugget.png?raw=true" alt="Nebula Nugget." data-size="line"> [Nebula Nugget](../../items/nuggets/nebula-nugget.md) <mark style="color:yellow;">(2.8%)</mark>
 
-## <img src="https://github.com/user-attachments/assets/53329be8-f7e5-4c01-b7e4-a27b567c7998" alt="" data-size="line"> Hit Effects: <a href="#effects-granted" id="effects-granted"></a>
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/effect_particles.png?raw=true" alt="" data-size="line"> Hit Effects: <a href="#effects-granted" id="effects-granted"></a>
 
 * [To attacker](#user-content-fn-1)[^1]:
   * <img src="https://minecraft.wiki/images/Speed_JE3_BE2.png?bbd24" alt="Speed." data-size="line"> [Speed](https://minecraft.wiki/w/Speed) <mark style="color:yellow;">10</mark> for <mark style="color:yellow;">5 seconds</mark>

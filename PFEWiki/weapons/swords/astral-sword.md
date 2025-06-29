@@ -1,6 +1,6 @@
 # Astral Sword
 
-![](https://github.com/ItsMePok/PFE/assets/136857747/eb199004-38a2-491b-8fd1-fd028a85a645)
+![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/astral_sword.png?raw=true)
 
 ## Identifier: **poke:astral\_sword** <a href="#identifier" id="identifier"></a>
 
@@ -14,7 +14,7 @@
 
 ## Repairable with:
 
-* <img src="https://github.com/ItsMePok/PFE/assets/136857747/f15d8501-f297-4a77-b6de-3681297cdb09" alt="" data-size="line">[**Repair Core**](../../items/cores/repair-core.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/repair_core.png?raw=true" alt="" data-size="line">[**Repair Core**](../../items/cores/repair-core.md)
 * [**Astral Ingot**](https://pfewiki.gitbook.io/home/items/ingots/astral-ingot)
 * [**Astral Nugget**](https://pfewiki.gitbook.io/home/items/nuggets/astral-nugget)
 
@@ -32,14 +32,14 @@
 
 |                                                                                                                 |                                                                                                  |                                                                                                  |
 | :-------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: |
-|                                                                                                                 |                                                                                                  | ![Astral Ingot](https://github.com/user-attachments/assets/41cf9ac1-c89c-4eea-9249-76036a858251) |
-| ![Platinum Upgrade Core](https://github.com/ItsMePok/PFE/assets/136857747/31a3075a-f2ec-4825-8333-e93509fcc6ca) | ![Astral Ingot](https://github.com/user-attachments/assets/41cf9ac1-c89c-4eea-9249-76036a858251) |                                                                                                  |
-|         ![Godly Stick](https://github.com/user-attachments/assets/ee155826-bf49-494d-8d64-b2c330db0604)         |                                                                                                  |                                                                                                  |
+|                                                                                                                 |                                                                                                  | ![Astral Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/astral_ingot.png?raw=true) |
+| ![Platinum Upgrade Core](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/platinum_upgrade_core.png?raw=true) | ![Astral Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/astral_ingot.png?raw=true) |                                                                                                  |
+|         ![Godly Stick](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_stick.png?raw=true)         |                                                                                                  |                                                                                                  |
 
 Items:
 
-* <img src="https://github.com/ItsMePok/PFE/assets/136857747/31a3075a-f2ec-4825-8333-e93509fcc6ca" alt="Platinum Upgrade Core" data-size="line"> [Platinum Upgrade Core](../../items/cores/platinum-upgrade-core.md)
-* <img src="https://github.com/user-attachments/assets/41cf9ac1-c89c-4eea-9249-76036a858251" alt="Astral Ingot" data-size="line"> Astral Ingot
-* <img src="https://github.com/user-attachments/assets/ee155826-bf49-494d-8d64-b2c330db0604" alt="Godly Stick" data-size="line"> Godly Stick
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/platinum_upgrade_core.png?raw=true" alt="Platinum Upgrade Core" data-size="line"> [Platinum Upgrade Core](../../items/cores/platinum-upgrade-core.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/astral_ingot.png?raw=true" alt="Astral Ingot" data-size="line"> Astral Ingot
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_stick.png?raw=true" alt="Godly Stick" data-size="line"> Godly Stick
 {% endtab %}
 {% endtabs %}

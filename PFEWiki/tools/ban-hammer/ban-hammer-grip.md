@@ -1,6 +1,6 @@
 # Ban Hammer Grip
 
-![](https://github.com/ItsMePok/PFE/assets/136857747/85f6248c-a470-4cb1-88c9-ff685cee1854)
+![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/ban_hammer_grip.png?raw=true)
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:ban\_hammer\_grip**
 
@@ -8,7 +8,7 @@
 
 ## Usage:
 
-* Used in Crafting the <img src="https://github.com/user-attachments/assets/9d9cce25-0d83-4086-9e74-0f97c52190d4" alt="" data-size="line"> [Ban Hammer](./)
+* Used in Crafting the <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/ban_hammer.png?raw=true" alt="" data-size="line"> [Ban Hammer](./)
 
 ## Obtaining:
 
@@ -18,13 +18,13 @@
 
 |                                                                                                            |                                                                                                            |                                                                                                            |
 | :--------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------: |
-|                                                                                                            | ![Banished Star x3](https://github.com/ItsMePok/PFE/assets/136857747/1174ceba-b39a-420f-bc70-6d78bcbe5951) |                                                                                                            |
-| ![Banished Star x3](https://github.com/ItsMePok/PFE/assets/136857747/1174ceba-b39a-420f-bc70-6d78bcbe5951) | ![Banished Star x4](https://github.com/ItsMePok/PFE/assets/136857747/fe59da80-6212-4204-9d12-39e0bdbc55ff) | ![Banished Star x3](https://github.com/ItsMePok/PFE/assets/136857747/1174ceba-b39a-420f-bc70-6d78bcbe5951) |
-|                                                                                                            | ![Banished Star x3](https://github.com/ItsMePok/PFE/assets/136857747/1174ceba-b39a-420f-bc70-6d78bcbe5951) |                                                                                                            |
+|                                                                                                            | ![Banished Star x3](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x3.png?raw=true) |                                                                                                            |
+| ![Banished Star x3](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x3.png?raw=true) | ![Banished Star x4](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x4.png?raw=true) | ![Banished Star x3](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x3.png?raw=true) |
+|                                                                                                            | ![Banished Star x3](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x3.png?raw=true) |                                                                                                            |
 
 Items:
 
-* <img src="https://github.com/ItsMePok/PFE/assets/136857747/1174ceba-b39a-420f-bc70-6d78bcbe5951" alt="Banished Star x3" data-size="line"> [Banished Star x3](../../items/banished-stars/banished-star-x3.md)
-* <img src="https://github.com/ItsMePok/PFE/assets/136857747/fe59da80-6212-4204-9d12-39e0bdbc55ff" alt="Banished Star x4" data-size="line"> [Banished Star x4](../../items/banished-stars/banished-star-x4.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x3.png?raw=true" alt="Banished Star x3" data-size="line"> [Banished Star x3](../../items/banished-stars/banished-star-x3.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x4.png?raw=true" alt="Banished Star x4" data-size="line"> [Banished Star x4](../../items/banished-stars/banished-star-x4.md)
 {% endtab %}
 {% endtabs %}

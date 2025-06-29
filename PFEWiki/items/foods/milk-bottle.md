@@ -1,6 +1,6 @@
 # Milk Bottle
 
-<figure><img src="https://github.com/user-attachments/assets/ab064ff8-ecab-4101-b7e7-a7ec210c4788" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/milk_bottle.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:milk\_bottle** <a href="#identifier" id="identifier"></a>
 
@@ -18,7 +18,7 @@ This item can always be consumed, even if you are not hungry
 
 ### &#x20;    <img src="https://minecraft.wiki/images/Slowness_JE4.png?d415c" alt="" data-size="line"> **Speed Modifier while Consuming**: 0.32
 
-### &#x20;     <img src="https://github.com/user-attachments/assets/53329be8-f7e5-4c01-b7e4-a27b567c7998" alt="" data-size="line"> Effects Granted:
+### &#x20;     <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/effect_particles.png?raw=true" alt="" data-size="line"> Effects Granted:
 
 * Removes all effects applied to you
 
@@ -46,11 +46,11 @@ This item can always be consumed, even if you are not hungry
 
 ### Returns:
 
-* <img src="https://github.com/user-attachments/assets/ab064ff8-ecab-4101-b7e7-a7ec210c4788" alt="" data-size="line">[Milk Bottle](milk-bottle.md) (x3)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/milk_bottle.png?raw=true" alt="" data-size="line">[Milk Bottle](milk-bottle.md) (x3)
 * <img src="https://minecraft.wiki/images/Bucket_JE2_BE2.png?cf507" alt="" data-size="line">[Bucket](https://minecraft.wiki/w/Bucket)
 {% endtab %}
 
 {% tab title="Milking" %}
-Warped Sporeshroom & Crimson Sporeshroom can be interacted with a<img src="https://minecraft.wiki/images/Glass_Bottle_JE2_BE2.png?4b45e" alt="" data-size="line">[Glass Bottle](https://minecraft.wiki/w/Glass\_Bottle) to get a <img src="https://github.com/user-attachments/assets/ab064ff8-ecab-4101-b7e7-a7ec210c4788" alt="" data-size="line">[Milk Bottle](milk-bottle.md)
+Warped Sporeshroom & Crimson Sporeshroom can be interacted with a<img src="https://minecraft.wiki/images/Glass_Bottle_JE2_BE2.png?4b45e" alt="" data-size="line">[Glass Bottle](https://minecraft.wiki/w/Glass\_Bottle) to get a <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/milk_bottle.png?raw=true" alt="" data-size="line">[Milk Bottle](milk-bottle.md)
 {% endtab %}
 {% endtabs %}

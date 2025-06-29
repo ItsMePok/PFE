@@ -1,6 +1,6 @@
 # Deepslate Shade Ore
 
-<figure><img src="https://github.com/user-attachments/assets/26c8ac65-df89-4f33-9170-0e0f1dec2bef" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/ore/DeepslateShadeOre.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 The block texture above could not be 100% accurate if you have a texture pack applied that changes the Deepslate texture&#x20;
@@ -8,7 +8,7 @@ The block texture above could not be 100% accurate if you have a texture pack ap
 
 ## <img src="https://minecraft.wiki/images/Book_and_Quill_JE2_BE2.png?2128f" alt="Book and Quill." data-size="line"> Description: <a href="#identifier" id="identifier"></a>
 
-* <img src="https://github.com/user-attachments/assets/26c8ac65-df89-4f33-9170-0e0f1dec2bef" alt="Deepslate Cobalt Ore." data-size="line"> Deepslate Shade Ore is an ore that when refined is used in obtaining various things in PFE
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/ore/DeepslateShadeOre.png?raw=true" alt="Deepslate Cobalt Ore." data-size="line"> Deepslate Shade Ore is an ore that when refined is used in obtaining various things in PFE
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:deepslate\_shade\_ore** <a href="#identifier" id="identifier"></a>
 
@@ -34,7 +34,7 @@ The block texture above could not be 100% accurate if you have a texture pack ap
 ### Replaces:
 
 * <img src="https://minecraft.wiki/images/thumb/Stone_JE8.png/150px-Stone_JE8.png?b5028" alt="Stone." data-size="line"> [Stone](https://minecraft.wiki/w/Stone)
-  * This would replace as <img src="https://github.com/user-attachments/assets/56b2db0d-ae78-472a-8a90-568af9762b1a" alt="Shade Ore." data-size="line"> [Shade Ore](../stone-ores/shade-ore.md) instead
+  * This would replace as <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/ore/ShadeOre.png?raw=true" alt="Shade Ore." data-size="line"> [Shade Ore](../stone-ores/shade-ore.md) instead
   * This also includes
     * <img src="https://minecraft.wiki/images/thumb/Diorite.png/150px-Diorite.png?58334" alt="Diorite." data-size="line"> [Diorite](https://minecraft.wiki/w/Diorite)
     * <img src="https://minecraft.wiki/images/thumb/Granite.png/150px-Granite.png?9cb6d" alt="Granite." data-size="line"> [Granite](https://minecraft.wiki/w/Granite)

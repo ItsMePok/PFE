@@ -1,6 +1,6 @@
 # Iron Haxel
 
-![](https://github.com/ItsMePok/PFE/assets/136857747/a77121b0-b01f-4fee-8022-bdde925d3c38)
+![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/iron_haxel.png?raw=true)
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:iron\_haxel**
 

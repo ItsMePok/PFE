@@ -1,6 +1,6 @@
 # Pumpkin Spice
 
-<figure><img src="https://github.com/user-attachments/assets/a96961e2-9018-4f25-bcc5-811abff55a78" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/pumpkin_spice.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line">Identifier: **poke:pumpkin\_spice** <a href="#identifier" id="identifier"></a>
 
@@ -18,7 +18,7 @@ This item can always be consumed, even if you are not hungry
 
 ### &#x20;    <img src="https://minecraft.wiki/images/Slowness_JE4.png?d415c" alt="" data-size="line"> **Speed Modifier while Consuming**: 0.32
 
-### &#x20;    <img src="https://github.com/user-attachments/assets/53329be8-f7e5-4c01-b7e4-a27b567c7998" alt="" data-size="line"> Effects Granted:
+### &#x20;    <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/effect_particles.png?raw=true" alt="" data-size="line"> Effects Granted:
 
 * <img src="https://minecraft.wiki/images/Speed_JE3_BE2.png?bbd24" alt="" data-size="line">[Speed ](https://minecraft.wiki/w/Speed)5 for 30 seconds
 * <img src="https://minecraft.wiki/images/Invisibility_JE2_BE2.png?99abc" alt="" data-size="line">[Invisibility ](https://minecraft.wiki/w/Invisibility)for 30 seconds
@@ -35,7 +35,7 @@ This item can always be consumed, even if you are not hungry
 
 | Input                                                                                                                                            | Reagent                                                                                                                                                                                               | Result                                                                                                                           |
 | ------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| <img src="https://github.com/user-attachments/assets/ab064ff8-ecab-4101-b7e7-a7ec210c4788" alt="" data-size="line">[Milk Bottle](milk-bottle.md) | <img src="https://minecraft.wiki/images/thumb/Carved_Pumpkin_(N)_JE5.png/150px-Carved_Pumpkin_(N)_JE5.png?32a4a" alt="Uncarved Pumpkin" data-size="line"> [Pumpkin](https://minecraft.wiki/w/Pumpkin) | <img src="https://github.com/user-attachments/assets/a96961e2-9018-4f25-bcc5-811abff55a78" alt="" data-size="line">Pumpkin Spice |
-| <img src="https://github.com/user-attachments/assets/ab064ff8-ecab-4101-b7e7-a7ec210c4788" alt="" data-size="line">[Milk Bottle](milk-bottle.md) | <img src="https://minecraft.wiki/images/thumb/Carved_Pumpkin_(S)_JE5.png/150px-Carved_Pumpkin_(S)_JE5.png?38be7" alt="" data-size="line"> [Carved Pumpkin](https://minecraft.wiki/w/Carved\_Pumpkin)  | <img src="https://github.com/user-attachments/assets/a96961e2-9018-4f25-bcc5-811abff55a78" alt="" data-size="line">Pumpkin Spice |
+| <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/milk_bottle.png?raw=true" alt="" data-size="line">[Milk Bottle](milk-bottle.md) | <img src="https://minecraft.wiki/images/thumb/Carved_Pumpkin_(N)_JE5.png/150px-Carved_Pumpkin_(N)_JE5.png?32a4a" alt="Uncarved Pumpkin" data-size="line"> [Pumpkin](https://minecraft.wiki/w/Pumpkin) | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/pumpkin_spice.png?raw=true" alt="" data-size="line">Pumpkin Spice |
+| <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/milk_bottle.png?raw=true" alt="" data-size="line">[Milk Bottle](milk-bottle.md) | <img src="https://minecraft.wiki/images/thumb/Carved_Pumpkin_(S)_JE5.png/150px-Carved_Pumpkin_(S)_JE5.png?38be7" alt="" data-size="line"> [Carved Pumpkin](https://minecraft.wiki/w/Carved\_Pumpkin)  | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/pumpkin_spice.png?raw=true" alt="" data-size="line">Pumpkin Spice |
 {% endtab %}
 {% endtabs %}

@@ -7,7 +7,7 @@ Set Effects:
 
 ## Helmet
 
-![poke\_gluttony\_robe\_hat](https://github.com/ItsMePok/PFE/assets/136857747/0aaa121a-b107-43d5-977a-e20686883f66)
+![poke\_gluttony\_robe\_hat](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/gluttony_robe_hat.png?raw=true)
 
 Identifier: **poke:gluttony\_robe\_helmet**
 
@@ -25,7 +25,7 @@ Trimmable: **Yes**
 
 ## Chestplate
 
-![poke\_gluttony\_robe\_chestplate](https://github.com/ItsMePok/PFE/assets/136857747/f1b84b32-eda9-4cbb-a80e-60b4abff7e86)
+![poke\_gluttony\_robe\_chestplate](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/gluttony_robe_chestplate.png?raw=true)
 
 Identifier: **poke:gluttony\_robe\_chestplate**
 

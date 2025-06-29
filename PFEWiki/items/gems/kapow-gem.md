@@ -1,6 +1,6 @@
 # Kapow Gem
 
-![poke\_kapow\_gem](https://github.com/ItsMePok/PFE/assets/136857747/bba85ec9-ded6-4417-b9a4-ca5c35814cb6)
+![poke\_kapow\_gem](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/kapow_gem.png?raw=true)
 
 Item Identifier: **poke:kapow\_gem**
 

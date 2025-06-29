@@ -7,7 +7,7 @@ Set Effects:
 
 ## Helmet
 
-![poke\_feather\_robe\_hat](https://github.com/ItsMePok/PFE/assets/136857747/bb86439d-d4e6-4410-b3b5-055f10d343d3)
+![poke\_feather\_robe\_hat](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/feather_robe_hat.png?raw=true)
 
 Identifier: **poke:feather\_robe\_helmet**
 
@@ -25,7 +25,7 @@ Trimmable: **Yes**
 
 ## Chestplate
 
-![poke\_feather\_robe\_chestplate](https://github.com/ItsMePok/PFE/assets/136857747/a08731e8-28b9-4149-86b0-6eee4d8acd1b)
+![poke\_feather\_robe\_chestplate](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/feather_robe_chestplate.png?raw=true)
 
 Identifier: **poke:feather\_robe\_chestplate**
 

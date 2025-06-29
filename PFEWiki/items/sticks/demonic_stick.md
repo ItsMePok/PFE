@@ -1,6 +1,6 @@
 # Demonic Stick
 
-<figure><img src="https://github.com/user-attachments/assets/5588ec3a-5ad1-4b31-b10b-21bc955034b3" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_stick.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:demonic\_stick** <a href="#identifier" id="identifier"></a>
 
@@ -16,12 +16,12 @@
 
 |                                                                                                   |
 | :-----------------------------------------------------------------------------------------------: |
-| ![Demonic Ingot](https://github.com/user-attachments/assets/2332c89f-38d6-4a08-944a-9421758259aa) |
-| ![Demonic Ingot](https://github.com/user-attachments/assets/2332c89f-38d6-4a08-944a-9421758259aa) |
-| ![Demonic Ingot](https://github.com/user-attachments/assets/2332c89f-38d6-4a08-944a-9421758259aa) |
+| ![Demonic Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true) |
+| ![Demonic Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true) |
+| ![Demonic Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true) |
 
 Items:
 
-* <img src="https://github.com/user-attachments/assets/2332c89f-38d6-4a08-944a-9421758259aa" alt="Demonic Ingot" data-size="line"> [Demonic Ingot](../ingots/demonic-ingot.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true" alt="Demonic Ingot" data-size="line"> [Demonic Ingot](../ingots/demonic-ingot.md)
 {% endtab %}
 {% endtabs %}

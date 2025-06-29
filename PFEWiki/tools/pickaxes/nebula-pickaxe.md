@@ -1,6 +1,6 @@
 # Nebula Pickaxe
 
-<figure><img src="https://github.com/user-attachments/assets/7a4a98d9-c2a4-4218-b37d-3351dee2b6c2" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/opaqueAlts/nebula_pickaxe.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:nebula\_pickaxe** <a href="#identifier" id="identifier"></a>
 
@@ -22,7 +22,7 @@
 
 ### Repair Items: <a href="#repair" id="repair"></a>
 
-* [<img src="https://github.com/ItsMePok/PFE/assets/136857747/f15d8501-f297-4a77-b6de-3681297cdb09" alt="" data-size="line">Repair Core](../../items/cores/repair-core.md) (100% Durability)
+* [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/repair_core.png?raw=true" alt="" data-size="line">Repair Core](../../items/cores/repair-core.md) (100% Durability)
 * Nebula Ingot (25% Durability)
 * Nebula Nugget (2.8% Durability)
 
@@ -38,15 +38,15 @@
 
 |                                                                                                  |                                                                                                  |                                                                                                  |
 | :----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: |
-| ![Nebula Ingot](https://github.com/user-attachments/assets/21b0e1ab-de86-4f43-8618-453683820f4b) |  ![Nebula Core](https://github.com/user-attachments/assets/057890f5-7558-4ffa-bba9-40c022d46622) | ![Nebula Ingot](https://github.com/user-attachments/assets/21b0e1ab-de86-4f43-8618-453683820f4b) |
-|                                                                                                  | ![Nebula Stick](https://github.com/user-attachments/assets/35eabd0d-edb3-4a69-9890-d02d3674dd6d) |                                                                                                  |
-|                                                                                                  | ![Nebula Stick](https://github.com/user-attachments/assets/35eabd0d-edb3-4a69-9890-d02d3674dd6d) |                                                                                                  |
+| ![Nebula Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_ingot.png?raw=true) |  ![Nebula Core](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_core.png?raw=true) | ![Nebula Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_ingot.png?raw=true) |
+|                                                                                                  | ![Nebula Stick](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_stick.png?raw=true) |                                                                                                  |
+|                                                                                                  | ![Nebula Stick](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_stick.png?raw=true) |                                                                                                  |
 
 Items:
 
-* <img src="https://github.com/user-attachments/assets/21b0e1ab-de86-4f43-8618-453683820f4b" alt="Nebula Ingot" data-size="line">[Nebula Ingot](../../items/ingots/nebula-ingot.md)
-* <img src="https://github.com/user-attachments/assets/057890f5-7558-4ffa-bba9-40c022d46622" alt="Nebula Core" data-size="line">[Nebula Core](../../items/cores/nebula-core.md)
-* <img src="https://github.com/user-attachments/assets/35eabd0d-edb3-4a69-9890-d02d3674dd6d" alt="Nebula Stick" data-size="line">[Nebula Stick](../../items/sticks/nebula_stick.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_ingot.png?raw=true" alt="Nebula Ingot" data-size="line">[Nebula Ingot](../../items/ingots/nebula-ingot.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_core.png?raw=true" alt="Nebula Core" data-size="line">[Nebula Core](../../items/cores/nebula-core.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_stick.png?raw=true" alt="Nebula Stick" data-size="line">[Nebula Stick](../../items/sticks/nebula_stick.md)
 {% endtab %}
 {% endtabs %}
 

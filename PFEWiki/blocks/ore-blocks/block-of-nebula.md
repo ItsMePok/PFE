@@ -1,6 +1,6 @@
 # Nebula Block
 
-<figure><img src="https://github.com/user-attachments/assets/d7998150-2531-4071-91d8-5210c8bc5795" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/NebulaBlock.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## Identifier: poke:nebula\_block <a href="#identifier" id="identifier"></a>
 
@@ -20,12 +20,12 @@
 
 |                                                                                      |                                                                                      |                                                                                      |
 | :----------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------: |
-| ![](https://github.com/user-attachments/assets/21b0e1ab-de86-4f43-8618-453683820f4b) | ![](https://github.com/user-attachments/assets/21b0e1ab-de86-4f43-8618-453683820f4b) | ![](https://github.com/user-attachments/assets/21b0e1ab-de86-4f43-8618-453683820f4b) |
-| ![](https://github.com/user-attachments/assets/21b0e1ab-de86-4f43-8618-453683820f4b) | ![](https://github.com/user-attachments/assets/21b0e1ab-de86-4f43-8618-453683820f4b) | ![](https://github.com/user-attachments/assets/21b0e1ab-de86-4f43-8618-453683820f4b) |
-| ![](https://github.com/user-attachments/assets/21b0e1ab-de86-4f43-8618-453683820f4b) | ![](https://github.com/user-attachments/assets/21b0e1ab-de86-4f43-8618-453683820f4b) | ![](https://github.com/user-attachments/assets/21b0e1ab-de86-4f43-8618-453683820f4b) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_ingot.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_ingot.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_ingot.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_ingot.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_ingot.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_ingot.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_ingot.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_ingot.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_ingot.png?raw=true) |
 
 Items:
 
-* <img src="https://github.com/user-attachments/assets/21b0e1ab-de86-4f43-8618-453683820f4b" alt="" data-size="line"> [Nebula Ingot](../../items/ingots/nebula-ingot.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_ingot.png?raw=true" alt="" data-size="line"> [Nebula Ingot](../../items/ingots/nebula-ingot.md)
 {% endtab %}
 {% endtabs %}

@@ -1,6 +1,6 @@
 # Warp Gem
 
-![poke\_warp\_gem](https://github.com/ItsMePok/PFE/assets/136857747/6f6dafb8-3c9a-41ec-b244-6e0235bb4f0b)
+![poke\_warp\_gem](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/warp_gem.png?raw=true)
 
 Item Identifier: **poke:warp\_gem**
 

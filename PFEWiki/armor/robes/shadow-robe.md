@@ -7,7 +7,7 @@ Set Effects:
 
 ## Helmet
 
-![poke\_shadow\_robe\_hat](https://github.com/ItsMePok/PFE/assets/136857747/2e12af05-3f57-4323-8f63-04e211cd635a)
+![poke\_shadow\_robe\_hat](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shadow_robe_hat.png?raw=true)
 
 Identifier: **poke:shadow\_robe\_helmet**
 
@@ -25,7 +25,7 @@ Trimmable: **Yes**
 
 ## Chestplate
 
-![poke\_shadow\_robe\_chestplate](https://github.com/ItsMePok/PFE/assets/136857747/be091d70-4c23-4b53-9f27-1cc7c1253204)
+![poke\_shadow\_robe\_chestplate](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shadow_robe_chestplate.png?raw=true)
 
 Identifier: **poke:shadow\_robe\_chestplate**
 

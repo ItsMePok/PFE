@@ -1,6 +1,6 @@
 # Godly Pickaxe
 
-<figure><img src="https://github.com/user-attachments/assets/10deb511-7690-4f33-85cb-08dbaa6850b3" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/opaqueAlts/godly_pickaxe.png?raw=true/10deb511-7690-4f33-85cb-08dbaa6850b3" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:godly\_pickaxe** <a href="#identifier" id="identifier"></a>
 
@@ -22,8 +22,8 @@
 
 ### Repair Items: <a href="#repair" id="repair"></a>
 
-* [<img src="https://github.com/ItsMePok/PFE/assets/136857747/f15d8501-f297-4a77-b6de-3681297cdb09" alt="" data-size="line">Repair Core](../../items/cores/repair-core.md) (100% Durability)
-* <img src="https://github.com/user-attachments/assets/0e423f55-1bf7-4893-a9c2-10b7ba3aab4b" alt="Godly Ingot" data-size="line">Godly Ingot (25% Durability)
+* [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/repair_core.png?raw=true" alt="" data-size="line">Repair Core](../../items/cores/repair-core.md) (100% Durability)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_ingot.png?raw=true" alt="Godly Ingot" data-size="line">Godly Ingot (25% Durability)
 * Godly Nugget (2.8% Durability)
 
 ### Usage:
@@ -38,14 +38,14 @@
 
 |                                                                                                 |                                                                                                 |                                                                                                 |
 | :---------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: |
-| ![Godly Ingot](https://github.com/user-attachments/assets/0e423f55-1bf7-4893-a9c2-10b7ba3aab4b) | ![Godly Ingot](https://github.com/user-attachments/assets/0e423f55-1bf7-4893-a9c2-10b7ba3aab4b) | ![Godly Ingot](https://github.com/user-attachments/assets/0e423f55-1bf7-4893-a9c2-10b7ba3aab4b) |
-|                                                                                                 |  ![Onyx Shaft](https://github.com/user-attachments/assets/a3414dac-2ab0-4f48-9401-e1724dc29e06) |                                                                                                 |
-|                                                                                                 |  ![Onyx Shaft](https://github.com/user-attachments/assets/a3414dac-2ab0-4f48-9401-e1724dc29e06) |                                                                                                 |
+| ![Godly Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_ingot.png?raw=true) | ![Godly Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_ingot.png?raw=true) | ![Godly Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_ingot.png?raw=true) |
+|                                                                                                 |  ![Onyx Shaft](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_shaft.png?raw=true) |                                                                                                 |
+|                                                                                                 |  ![Onyx Shaft](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_shaft.png?raw=true) |                                                                                                 |
 
 Items:
 
-* <img src="https://github.com/user-attachments/assets/0e423f55-1bf7-4893-a9c2-10b7ba3aab4b" alt="Godly Ingot" data-size="line"> [Godly Ingot](../../items/ingots/godly-ingot.md)
-* [<img src="https://github.com/user-attachments/assets/a3414dac-2ab0-4f48-9401-e1724dc29e06" alt="Onyx Shaft" data-size="line"> Onyx Shaft](../../items/sticks/onyx-shaft.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_ingot.png?raw=true" alt="Godly Ingot" data-size="line"> [Godly Ingot](../../items/ingots/godly-ingot.md)
+* [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_shaft.png?raw=true" alt="Onyx Shaft" data-size="line"> Onyx Shaft](../../items/sticks/onyx-shaft.md)
 {% endtab %}
 {% endtabs %}
 

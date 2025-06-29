@@ -1,6 +1,6 @@
 # CurseForge Pottery Sherd
 
-<figure><img src="https://github.com/user-attachments/assets/10f33fcb-305e-4824-a2b3-8f5e22630b5c" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/curseforge_pottery_sherd.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 This is based off of CurseForge (one of the websites PFE is released on)

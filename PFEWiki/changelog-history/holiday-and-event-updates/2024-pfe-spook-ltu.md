@@ -12,9 +12,9 @@ This was made for Minecraft Version: 1.21.40+
 
 ## ![:battleaxe:](https://cdn.discordapp.com/emojis/1256321695808098417.webp?size=44\&quality=lossless) **Items & Armor**![:helmet:](https://cdn.discordapp.com/emojis/1256357335530471548.webp?size=44\&quality=lossless)
 
-### Added <img src="https://github.com/user-attachments/assets/a96961e2-9018-4f25-bcc5-811abff55a78" alt="" data-size="line">[Pumpkin Spice](../../items/foods/pumpkin-spice.md)
+### Added <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/pumpkin_spice.png?raw=true" alt="" data-size="line">[Pumpkin Spice](../../items/foods/pumpkin-spice.md)
 
-### Added <img src="https://github.com/user-attachments/assets/5ecfb098-a454-42ea-804f-03537ecbe44f" alt="" data-size="line"> [Spook Pottery Sherd](../../blocks/pottery-sherds/spook-pottery-sherd.md)
+### Added <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/spook_pottery_sherd.png?raw=true" alt="" data-size="line"> [Spook Pottery Sherd](../../blocks/pottery-sherds/spook-pottery-sherd.md)
 
 ### All [PFE Armor's](../../armor/) trim material color is now orange regardless of what it was before
 
@@ -22,13 +22,13 @@ This was made for Minecraft Version: 1.21.40+
 
 ## ![:crimspore:](https://cdn.discordapp.com/emojis/1256322040273698837.webp?size=44\&quality=lossless)**Mobs & Trades**![:token:](https://cdn.discordapp.com/emojis/1256444347256275015.webp?size=44\&quality=lossless)
 
-### Added <img src="https://github.com/user-attachments/assets/2169f5c1-d358-4969-9c97-bc1e52d0169b" alt="" data-size="line"> [Soul Blaze](../../mobs/hostile-mobs/soul-blaze.md)
+### Added <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/Entity/soul_blaze.gif?raw=true" alt="" data-size="line"> [Soul Blaze](../../mobs/hostile-mobs/soul-blaze.md)
 
-### Furnace Golem will now spawn <img src="https://github.com/user-attachments/assets/006c02eb-0cef-4288-a074-ad3a1771f1d7" alt="" data-size="line"> [Soul Blazes](../../mobs/hostile-mobs/soul-blaze.md)
+### Furnace Golem will now spawn <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/entity_icon/soul_blaze_icon.png?raw=true" alt="" data-size="line"> [Soul Blazes](../../mobs/hostile-mobs/soul-blaze.md)
 
-### Token Trader now the <img src="https://github.com/user-attachments/assets/5ecfb098-a454-42ea-804f-03537ecbe44f" alt="" data-size="line"> [Spook Pottery Sherd](../../blocks/pottery-sherds/spook-pottery-sherd.md) for 1 [<img src="https://github.com/ItsMePok/PFE/assets/136857747/aa3d5a31-9866-4bd1-bc09-ba7fa6775f7e" alt="" data-size="line">Iron Token](../../items/currency/tokens/iron-token.md)
+### Token Trader now the <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/spook_pottery_sherd.png?raw=true" alt="" data-size="line"> [Spook Pottery Sherd](../../blocks/pottery-sherds/spook-pottery-sherd.md) for 1 [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/iron_token.png?raw=true" alt="" data-size="line">Iron Token](../../items/currency/tokens/iron-token.md)
 
-### Some items from the <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FoRbYFakTMIUgDeJx6IfE%2Fuploads%2Fkmj7g6oG8ekeTfkO9jTM%2Fcosmetic_trader.png?alt=media&#x26;token=d208e7f4-1a04-4c9a-995d-c19838e3d82c" alt="" data-size="line">[Cosmetic Trader](../../mobs/traders/cosmetic-trader.md) has been reduced to 1 [<img src="https://github.com/ItsMePok/PFE/assets/136857747/1c78ba2a-4a5b-4b7b-83ff-ed21aa75ebd8" alt="" data-size="line">Copper Token](../../items/currency/tokens/copper-token.md)
+### Some items from the <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FoRbYFakTMIUgDeJx6IfE%2Fuploads%2Fkmj7g6oG8ekeTfkO9jTM%2Fcosmetic_trader.png?alt=media&#x26;token=d208e7f4-1a04-4c9a-995d-c19838e3d82c" alt="" data-size="line">[Cosmetic Trader](../../mobs/traders/cosmetic-trader.md) has been reduced to 1 [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/copper_token.png?raw=true" alt="" data-size="line">Copper Token](../../items/currency/tokens/copper-token.md)
 
 ### Demonic allays can no longer leave the dimension that they are spawned
 
@@ -40,7 +40,7 @@ This was made for Minecraft Version: 1.21.40+
 
 ## ![:recipe:](https://cdn.discordapp.com/emojis/1256322223396880527.webp?size=44\&quality=lossless) **Recipes**![:recipe:](https://cdn.discordapp.com/emojis/1256322223396880527.webp?size=44\&quality=lossless) ﻿﻿
 
-### Changed the <img src="https://github.com/user-attachments/assets/faa23787-87a1-4aee-8d45-01ec89b1e3d2" alt="" data-size="line"> [Baguette's](../../items/foods/baguette.md) recipe
+### Changed the <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/baguette.png?raw=true" alt="" data-size="line"> [Baguette's](../../items/foods/baguette.md) recipe
 
 ## ![:upgrade:](https://cdn.discordapp.com/emojis/1256321190071504987.webp?size=44\&quality=lossless)**Balancing**![:repair:](https://cdn.discordapp.com/emojis/1256321195138220123.webp?size=44\&quality=lossless)
 
@@ -82,7 +82,7 @@ they will also spawn even less frequently on lower difficulties
 
 ### Renamed
 
-* <img src="https://github.com/ItsMePok/PFE/assets/136857747/e9d33ff5-9520-4b5d-99f6-33a9906ee64b" alt="" data-size="line">[Floppy Disk](../../items/boss-drops/floppy-disk.md) -> Save Icon
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/floppy_disk.png?raw=true" alt="" data-size="line">[Floppy Disk](../../items/boss-drops/floppy-disk.md) -> Save Icon
 
 ## ![:bug\~1:](https://cdn.discordapp.com/emojis/1256350899933151273.webp?size=44\&quality=lossless) **Bug Fixes**![:bug\~1:](https://cdn.discordapp.com/emojis/1256350899933151273.webp?size=44\&quality=lossless)
 
@@ -170,9 +170,9 @@ This allows the Nebula Logger to strip logs
 
 ### ![:crimspore:](https://cdn.discordapp.com/emojis/1256322040273698837.webp?size=44\&quality=lossless)**Mobs & Trades**![:token:](https://cdn.discordapp.com/emojis/1256444347256275015.webp?size=44\&quality=lossless)
 
-* Furnace Golem will now spawn <img src="https://github.com/user-attachments/assets/006c02eb-0cef-4288-a074-ad3a1771f1d7" alt="" data-size="line"> [Soul Blazes](../../mobs/hostile-mobs/soul-blaze.md)
+* Furnace Golem will now spawn <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/entity_icon/soul_blaze_icon.png?raw=true" alt="" data-size="line"> [Soul Blazes](../../mobs/hostile-mobs/soul-blaze.md)
 
-- Token Trader now the <img src="https://github.com/user-attachments/assets/5ecfb098-a454-42ea-804f-03537ecbe44f" alt="" data-size="line"> [Spook Pottery Sherd](../../blocks/pottery-sherds/spook-pottery-sherd.md) for 1 [<img src="https://github.com/ItsMePok/PFE/assets/136857747/aa3d5a31-9866-4bd1-bc09-ba7fa6775f7e" alt="" data-size="line">Iron Token](../../items/currency/tokens/iron-token.md)
+- Token Trader now the <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/spook_pottery_sherd.png?raw=true" alt="" data-size="line"> [Spook Pottery Sherd](../../blocks/pottery-sherds/spook-pottery-sherd.md) for 1 [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/iron_token.png?raw=true" alt="" data-size="line">Iron Token](../../items/currency/tokens/iron-token.md)
 
 * Some items sold by the cosmetic trader have been reduced to 1 copper token
 

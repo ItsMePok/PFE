@@ -43,7 +43,7 @@ The block texture above could not be 100% accurate if you have a texture pack ap
     * <img src="https://minecraft.wiki/images/thumb/Granite.png/150px-Granite.png?9cb6d" alt="Granite." data-size="line"> [Granite](https://minecraft.wiki/w/Granite)
     * <img src="https://minecraft.wiki/images/thumb/Andesite.png/150px-Andesite.png?5db9b" alt="" data-size="line"> [Andesite](https://minecraft.wiki/w/Andesite)
 * <img src="https://minecraft.wiki/images/thumb/Deepslate_(UD)_JE3.png/120px-Deepslate_(UD)_JE3.png?7635f" alt="Deepslate." data-size="line"> [Deepslate](https://minecraft.wiki/w/Deepslate)
-  * This would replace as <img src="https://github.com/user-attachments/assets/3a504ca0-f0e8-4d24-af8b-8d7c65985827" alt="Deepslate Demonic Ore." data-size="line"> [Deepslate Demonic Ore](../deepslate-ores/deepslate-demonic-ore.md) instead
+  * This would replace as <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/ore/DeepslateDemonicOre.png?raw=true" alt="Deepslate Demonic Ore." data-size="line"> [Deepslate Demonic Ore](../deepslate-ores/deepslate-demonic-ore.md) instead
 {% endtab %}
 {% endtabs %}
 

@@ -1,6 +1,6 @@
 # Cobalt Pickaxe
 
-<figure><img src="https://github.com/user-attachments/assets/e58f477e-f83e-462f-86f8-48883f72b861" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/opaqueAlts/cobalt_pickaxe.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:cobalt\_pickaxe** <a href="#identifier" id="identifier"></a>
 
@@ -22,8 +22,8 @@
 
 ### Repair Items: <a href="#repair" id="repair"></a>
 
-* [<img src="https://github.com/ItsMePok/PFE/assets/136857747/f15d8501-f297-4a77-b6de-3681297cdb09" alt="" data-size="line">Repair Core](../../items/cores/repair-core.md) (100% Durability)
-* [<img src="https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694" alt="Cobalt Ingot" data-size="line">Cobalt Ingot](../../items/ingots/cobalt-ingot.md) (25% Durability)
+* [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/repair_core.png?raw=true" alt="" data-size="line">Repair Core](../../items/cores/repair-core.md) (100% Durability)
+* [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="Cobalt Ingot" data-size="line">Cobalt Ingot](../../items/ingots/cobalt-ingot.md) (25% Durability)
 * Cobalt Nugget (2.8% Durability)
 
 ### Usage:
@@ -38,13 +38,13 @@
 
 |                                                                                                  |                                                                                                  |                                                                                                  |
 | :----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: |
-| ![Cobalt Ingot](https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694) | ![Cobalt Ingot](https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694) | ![Cobalt Ingot](https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694) |
+| ![Cobalt Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) | ![Cobalt Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) | ![Cobalt Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) |
 |                                                                                                  |                  ![Stick](https://minecraft.wiki/images/Stick_JE1_BE1.png?1fc15)                 |                                                                                                  |
 |                                                                                                  |                  ![Stick](https://minecraft.wiki/images/Stick_JE1_BE1.png?1fc15)                 |                                                                                                  |
 
 Items:
 
-* [<img src="https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694" alt="Cobalt Ingot" data-size="line"> Cobalt Ingot](../../items/ingots/cobalt-ingot.md)
+* [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="Cobalt Ingot" data-size="line"> Cobalt Ingot](../../items/ingots/cobalt-ingot.md)
 * [<img src="https://minecraft.wiki/images/Stick_JE1_BE1.png?1fc15" alt="Stick" data-size="line">Stick](https://minecraft.wiki/w/Stick)
 {% endtab %}
 {% endtabs %}

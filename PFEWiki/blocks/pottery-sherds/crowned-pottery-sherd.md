@@ -1,6 +1,6 @@
 # Crowned Pottery Sherd
 
-<figure><img src="https://github.com/user-attachments/assets/403e5439-0251-4f71-a74e-21c63652133c" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/crowned_pottery_sherd.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 
 

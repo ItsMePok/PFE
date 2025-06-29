@@ -1,6 +1,6 @@
 # Demonic Allay Dungeon
 
-![](https://github.com/ItsMePok/PFE/assets/136857747/4439e000-6fb5-4bc2-ba3b-3f053c50b9f3)
+![](https://github.com/ItsMePok/PFE/blob/wikiAssets/Structures/demonic_allay_dungeon.png?raw=true)
 
 > \[!NOTE] The 3D Render above was not wanting to show some of the custom blocks refer to the [In-Game Screenshots](https://github.com/ItsMePok/PFE/wiki/Demonic-Allay-Dungeon#in-game-screenshots) for a better image
 
@@ -46,17 +46,17 @@ Demonic Allay's that spawn from an Ominous Trial Spawner will always be holding 
 
 | Item                                                                                                                                                                              | Amount | Weight |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------ |
-| [<img src="https://github.com/ItsMePok/PFE/assets/136857747/aa3d5a31-9866-4bd1-bc09-ba7fa6775f7e" alt="" data-size="line">Iron Token](../items/currency/tokens/iron-token.md)     | 1-2    | 1      |
-| [<img src="https://github.com/ItsMePok/PFE/assets/136857747/1c78ba2a-4a5b-4b7b-83ff-ed21aa75ebd8" alt="" data-size="line">Copper Token](../items/currency/tokens/copper-token.md) | 3-6    | 1      |
+| [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/iron_token.png?raw=true" alt="" data-size="line">Iron Token](../items/currency/tokens/iron-token.md)     | 1-2    | 1      |
+| [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/copper_token.png?raw=true" alt="" data-size="line">Copper Token](../items/currency/tokens/copper-token.md) | 3-6    | 1      |
 
 (1 of these if ominous ↓)
 
 | Item                                                                                                                                                                          | Amount | Weight |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------ |
-| [<img src="https://github.com/ItsMePok/PFE/assets/136857747/aa3d5a31-9866-4bd1-bc09-ba7fa6775f7e" alt="" data-size="line">Iron Token](../items/currency/tokens/iron-token.md) | 2-7    | 1      |
+| [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/iron_token.png?raw=true" alt="" data-size="line">Iron Token](../items/currency/tokens/iron-token.md) | 2-7    | 1      |
 
 ## In-game Screenshots:
 
-![Demonic Allay Dungeon's Inside](https://github.com/ItsMePok/PFE/assets/136857747/604da467-34ca-4904-a8e1-20a383077224)
+![Demonic Allay Dungeon's Inside](https://github.com/ItsMePok/PFE/blob/wikiAssets/Structures/DemonicAllayDungeonInGame.png?raw=true)
 
-![Demonic Allay Dungeon that better shows custom blocks](https://github.com/ItsMePok/PFE/assets/136857747/efcc1a95-9708-4bb3-aaa8-6009d8956aa4)
+![Demonic Allay Dungeon that better shows custom blocks](https://github.com/ItsMePok/PFE/blob/wikiAssets/Structures/DemonicAllayDungeonInGameVoid.png?raw=true)

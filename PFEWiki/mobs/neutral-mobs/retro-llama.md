@@ -1,6 +1,6 @@
 # Retro Llama
 
-<div data-full-width="true"><figure><img src="https://github.com/user-attachments/assets/ec40b650-009e-4400-b208-35a2107a284f" alt=""><figcaption></figcaption></figure></div>
+<div data-full-width="true"><figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/Entity/retro_llama.png?raw=true" alt=""><figcaption></figcaption></figure></div>
 
 {% hint style="warning" %}
 Due to an issue: the Retro llama will be unable to render other carpet colors
@@ -10,13 +10,13 @@ Due to an issue: the Retro llama will be unable to render other carpet colors
 
 ## Description:
 
-The Retro Llama is a variant of the <img src="https://minecraft.wiki/images/thumb/Brown_Llama.png/150px-Brown_Llama.png?3b960" alt="" data-size="line"> [Llama](https://minecraft.wiki/w/Llama) that spawns with the <img src="https://github.com/user-attachments/assets/de1365f6-2eac-498b-98d7-e391fb69cc00" alt="" data-size="line"> [Cassette Trader](../traders/cassette-trader.md)
+The Retro Llama is a variant of the <img src="https://minecraft.wiki/images/thumb/Brown_Llama.png/150px-Brown_Llama.png?3b960" alt="" data-size="line"> [Llama](https://minecraft.wiki/w/Llama) that spawns with the <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/entity_icon/cassette_trader.png?raw=true" alt="" data-size="line"> [Cassette Trader](../traders/cassette-trader.md)
 
 ## Health: 15 - 30
 
 ## Damage:
 
-### <img src="https://minecraft.wiki/images/Bow_(Pull_1)_JE1_BE1.png?d1173" alt="" data-size="line">Ranged: 1 <img src="https://github.com/user-attachments/assets/d2f17419-6ecf-4657-8385-4b661e187c3d" alt="" data-size="line">
+### <img src="https://minecraft.wiki/images/Bow_(Pull_1)_JE1_BE1.png?d1173" alt="" data-size="line">Ranged: 1 <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/heart_half.png?raw=true" alt="" data-size="line">
 
 * <img src="https://minecraft.wiki/images/thumb/Arrow_of_Splashing_JE2.png/150px-Arrow_of_Splashing_JE2.png?a5e3d" alt="" data-size="line">Ranged Projectile: <img src="https://minecraft.wiki/images/thumb/Llama_Spit.png/120px-Llama_Spit.png?280f9" alt="" data-size="line">[Llama Spit](https://minecraft.wiki/w/Llama_Spit)
 

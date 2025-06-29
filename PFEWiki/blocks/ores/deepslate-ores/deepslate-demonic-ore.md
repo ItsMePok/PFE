@@ -1,6 +1,6 @@
 # Deepslate Demonic Ore
 
-<figure><img src="https://github.com/user-attachments/assets/3a504ca0-f0e8-4d24-af8b-8d7c65985827" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/ore/DeepslateDemonicOre.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 The block texture above could not be 100% accurate if you have a texture pack applied that changes the Deepslate texture&#x20;
@@ -8,7 +8,7 @@ The block texture above could not be 100% accurate if you have a texture pack ap
 
 ## <img src="https://minecraft.wiki/images/Book_and_Quill_JE2_BE2.png?2128f" alt="Book and Quill." data-size="line"> Description: <a href="#identifier" id="identifier"></a>
 
-* <img src="https://github.com/user-attachments/assets/3a504ca0-f0e8-4d24-af8b-8d7c65985827" alt="Deepslate Demonic Ore." data-size="line"> Deepslate Demonic Ore is an ore that when refined is used in obtaining various things in PFE
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/ore/DeepslateDemonicOre.png?raw=true" alt="Deepslate Demonic Ore." data-size="line"> Deepslate Demonic Ore is an ore that when refined is used in obtaining various things in PFE
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:demonic\_ore** <a href="#identifier" id="identifier"></a>
 

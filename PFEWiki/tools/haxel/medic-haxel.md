@@ -1,6 +1,6 @@
 # Medic Haxel
 
-![](https://github.com/ItsMePok/PFE/assets/136857747/42a5f36e-372c-46b8-b949-df7430ba5462)
+![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/medic_haxel.png?raw=true)
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:medic\_haxel**
 

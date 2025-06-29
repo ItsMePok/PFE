@@ -54,15 +54,15 @@ Outputs:
 
 | Item                                                                                                                                          | Amount | Chance        |
 | --------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------------- |
-| <img src="https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694" alt="Cobalt Ingot." data-size="line"> Cobalt Ingot | 1      | 3/88 (\~3.4%) |
+| <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="Cobalt Ingot." data-size="line"> Cobalt Ingot | 1      | 3/88 (\~3.4%) |
 {% endtab %}
 
 {% tab title="Ore Ring" %}
-<figure><img src="https://github.com/user-attachments/assets/03ca69b9-0b12-4b37-ace1-cf83bda706ca" alt=""><figcaption><p>Obtained by using the <a href="../../tools/rings/ore-ring.md">Ore Ring</a></p></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/ore_ring.png?raw=true" alt=""><figcaption><p>Obtained by using the <a href="../../tools/rings/ore-ring.md">Ore Ring</a></p></figcaption></figure>
 
 | Item                                                                                                                                          | Amount | Chance |
 | --------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------ |
-| <img src="https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694" alt="Cobalt Ingot." data-size="line"> Cobalt Ingot | 1      | 1/35   |
+| <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="Cobalt Ingot." data-size="line"> Cobalt Ingot | 1      | 1/35   |
 {% endtab %}
 
 {% tab title="Present" %}
@@ -74,11 +74,11 @@ Outputs:
 {% endtab %}
 
 {% tab title="Mob Loot" %}
-<figure><img src="https://github.com/user-attachments/assets/a9c0bd82-46ac-4cca-8164-5fd90f9602b8" alt=""><figcaption><p>Dropped by the <a href="../../mobs/neutral-mobs/rat.md">Rat</a></p></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/entity_icon/rat.png?raw=true" alt=""><figcaption><p>Dropped by the <a href="../../mobs/neutral-mobs/rat.md">Rat</a></p></figcaption></figure>
 
 | Item                                                                                                                                          | Amount | Chance of Holding |
 | --------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ----------------- |
-| <img src="https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694" alt="Cobalt Ingot." data-size="line"> Cobalt Ingot | 1      | 1/10 (10%)        |
+| <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="Cobalt Ingot." data-size="line"> Cobalt Ingot | 1      | 1/10 (10%)        |
 
 {% hint style="info" %}
 The Rat needs to spawn holding this item to be able to drop it

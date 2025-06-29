@@ -1,6 +1,6 @@
 # Grove Rock
 
-![](https://github.com/ItsMePok/PFE/assets/136857747/3fa2dbf2-115a-417e-9c32-0c3e889c8269)
+![](https://github.com/ItsMePok/PFE/blob/wikiAssets/Structures/grove_rock.png)
 
 ## **Structure identifier:** poke:grove\_rock <a href="#identifier" id="identifier"></a>
 
@@ -55,10 +55,10 @@ A higher weight makes it more likely to be selected from that pool
 
 | Item                                                                                                                                                                              | Amount | Weight |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------ |
-| [<img src="https://github.com/ItsMePok/PFE/assets/136857747/aa3d5a31-9866-4bd1-bc09-ba7fa6775f7e" alt="" data-size="line">Iron Token](../items/currency/tokens/iron-token.md)     | 1      | 15     |
-| [<img src="https://github.com/ItsMePok/PFE/assets/136857747/1c78ba2a-4a5b-4b7b-83ff-ed21aa75ebd8" alt="" data-size="line">Copper Token](../items/currency/tokens/copper-token.md) | 1      | 20     |
+| [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/iron_token.png?raw=true" alt="" data-size="line">Iron Token](../items/currency/tokens/iron-token.md)     | 1      | 15     |
+| [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/copper_token.png?raw=true" alt="" data-size="line">Copper Token](../items/currency/tokens/copper-token.md) | 1      | 20     |
 | Empty                                                                                                                                                                             | -      | 50     |
 
 ## In-game Screenshots:
 
-![Grove Rock Generation in the Cherry Grove](https://github.com/ItsMePok/PFE/assets/136857747/55d0b4de-d0ca-4458-ad5a-8c454f295d49)
+![Grove Rock Generation in the Cherry Grove](https://github.com/ItsMePok/PFE/blob/wikiAssets/Structures/GroveRockInGame.png)

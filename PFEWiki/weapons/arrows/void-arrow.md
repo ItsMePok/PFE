@@ -1,6 +1,6 @@
 # Void Arrow
 
-![](https://github.com/ItsMePok/PFE/assets/136857747/375e3d1c-2367-4a97-b9ff-22b79fcd7f56)
+![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_arrow_item.png?raw=true)
 
 Item Identifier: **poke:void\_arrow**
 

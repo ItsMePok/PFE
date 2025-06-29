@@ -4,7 +4,7 @@
 
 * Listener
 * Cassette - They Listen
-* [<img src="https://github.com/user-attachments/assets/654b5911-e9c4-4ad7-b7e8-d4fcd87d0151" alt="" data-size="line">Listener Trophy](../../../blocks/trophies/listener-trophy.md)
+* [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/ListenerTrophy.png?raw=true" alt="" data-size="line">Listener Trophy](../../../blocks/trophies/listener-trophy.md)
 
 ## Credits
 

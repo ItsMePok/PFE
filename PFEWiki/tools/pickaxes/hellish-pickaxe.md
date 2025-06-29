@@ -1,6 +1,6 @@
 # Hellish Pickaxe
 
-<figure><img src="https://github.com/user-attachments/assets/f97b86e7-a909-4350-a4a5-ab6296aea67c" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/opaqueAlts/hellish_pickaxe.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:hellish\_pickaxe** <a href="#identifier" id="identifier"></a>
 
@@ -22,7 +22,7 @@
 
 ### Repair Items: <a href="#repair" id="repair"></a>
 
-* [<img src="https://github.com/ItsMePok/PFE/assets/136857747/f15d8501-f297-4a77-b6de-3681297cdb09" alt="" data-size="line">Repair Core](../../items/cores/repair-core.md) (100% Durability)
+* [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/repair_core.png?raw=true" alt="" data-size="line">Repair Core](../../items/cores/repair-core.md) (100% Durability)
 * Hellish Ingot (25% Durability)
 * Hellish Nugget (2.8% Durability)
 
@@ -38,14 +38,14 @@
 
 |                                                                                                   |                                                                                                   |                                                                                                   |
 | :-----------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: |
-| ![Hellish Ingot](https://github.com/user-attachments/assets/e6e26a7c-8964-439e-879d-144557e277d7) | ![Hellish Ingot](https://github.com/user-attachments/assets/e6e26a7c-8964-439e-879d-144557e277d7) | ![Hellish Ingot](https://github.com/user-attachments/assets/e6e26a7c-8964-439e-879d-144557e277d7) |
-|                                                                                                   |   ![Onyx Shaft](https://github.com/user-attachments/assets/a3414dac-2ab0-4f48-9401-e1724dc29e06)  |                                                                                                   |
-|                                                                                                   |   ![Onyx Shaft](https://github.com/user-attachments/assets/a3414dac-2ab0-4f48-9401-e1724dc29e06)  |                                                                                                   |
+| ![Hellish Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/hellish_ingot.png?raw=true) | ![Hellish Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/hellish_ingot.png?raw=true) | ![Hellish Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/hellish_ingot.png?raw=true) |
+|                                                                                                   |   ![Onyx Shaft](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_shaft.png?raw=true)  |                                                                                                   |
+|                                                                                                   |   ![Onyx Shaft](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_shaft.png?raw=true)  |                                                                                                   |
 
 Items:
 
-* <img src="https://github.com/user-attachments/assets/e6e26a7c-8964-439e-879d-144557e277d7" alt="Hellish Ingot" data-size="line">Hellish Ingot
-* [<img src="https://github.com/user-attachments/assets/a3414dac-2ab0-4f48-9401-e1724dc29e06" alt="Onyx Shaft" data-size="line">Onyx Shaft](../../items/sticks/onyx-shaft.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/hellish_ingot.png?raw=true" alt="Hellish Ingot" data-size="line">Hellish Ingot
+* [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_shaft.png?raw=true" alt="Onyx Shaft" data-size="line">Onyx Shaft](../../items/sticks/onyx-shaft.md)
 {% endtab %}
 {% endtabs %}
 

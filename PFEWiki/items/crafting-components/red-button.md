@@ -2,7 +2,7 @@
 
 
 
-<figure><img src="https://github.com/user-attachments/assets/fc83789b-3243-493e-8d39-eef443cd0653" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/red_button.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## Identifier: **poke:red\_button** <a href="#identifier" id="identifier"></a>
 
@@ -34,9 +34,9 @@
 
 |                                                                                             |                                                                                                        |                                                                                             |
 | :-----------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
-| ![Plastic](https://github.com/user-attachments/assets/ef6c978f-76ec-48e4-aa89-29c2d98f4624) |       ![Plastic](https://github.com/user-attachments/assets/ef6c978f-76ec-48e4-aa89-29c2d98f4624)      | ![Plastic](https://github.com/user-attachments/assets/ef6c978f-76ec-48e4-aa89-29c2d98f4624) |
-| ![Plastic](https://github.com/user-attachments/assets/ef6c978f-76ec-48e4-aa89-29c2d98f4624) | ![Electric Component](https://github.com/user-attachments/assets/74fc7c8a-64ec-44e5-b227-588b7485a088) | ![Plastic](https://github.com/user-attachments/assets/ef6c978f-76ec-48e4-aa89-29c2d98f4624) |
-| ![Plastic](https://github.com/user-attachments/assets/ef6c978f-76ec-48e4-aa89-29c2d98f4624) |       ![Plastic](https://github.com/user-attachments/assets/ef6c978f-76ec-48e4-aa89-29c2d98f4624)      | ![Plastic](https://github.com/user-attachments/assets/ef6c978f-76ec-48e4-aa89-29c2d98f4624) |
+| ![Plastic](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) |       ![Plastic](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true)      | ![Plastic](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) |
+| ![Plastic](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) | ![Electric Component](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/electric_component.png?raw=true) | ![Plastic](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) |
+| ![Plastic](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) |       ![Plastic](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true)      | ![Plastic](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) |
 {% endtab %}
 
 {% tab title="Structures" %}
@@ -48,6 +48,6 @@ Found in the [Abandoned Ship](../../sturctures/abandoned-ship.md)
 
 | Item                                                                                                                                           | Amount | Weight |
 | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------ |
-| [<img src="https://github.com/user-attachments/assets/fc83789b-3243-493e-8d39-eef443cd0653" alt="" data-size="line">Red Button](red-button.md) | 1      | 2      |
+| [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/red_button.png?raw=true" alt="" data-size="line">Red Button](red-button.md) | 1      | 2      |
 {% endtab %}
 {% endtabs %}

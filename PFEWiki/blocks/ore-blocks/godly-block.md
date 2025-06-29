@@ -1,6 +1,6 @@
 # Godly Block
 
-![](https://github.com/user-attachments/assets/0385265a-6aca-412c-b8d4-b1619357bfee)
+![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/GodlyBlock.png?raw=true)
 
 ## Identifier: poke:godly\_block <a href="#identifier" id="identifier"></a>
 
@@ -20,12 +20,12 @@
 
 |                                                                                                 |                                                                                                  |                                                                                                 |
 | :---------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: |
-| ![Godly Ingot](https://github.com/user-attachments/assets/0e423f55-1bf7-4893-a9c2-10b7ba3aab4b) |  ![Godly Ingot](https://github.com/user-attachments/assets/0e423f55-1bf7-4893-a9c2-10b7ba3aab4b) | ![Godly Ingot](https://github.com/user-attachments/assets/0e423f55-1bf7-4893-a9c2-10b7ba3aab4b) |
-| ![Godly Ingot](https://github.com/user-attachments/assets/0e423f55-1bf7-4893-a9c2-10b7ba3aab4b) |  ![Godly Ingot](https://github.com/user-attachments/assets/0e423f55-1bf7-4893-a9c2-10b7ba3aab4b) | ![Godly Ingot](https://github.com/user-attachments/assets/0e423f55-1bf7-4893-a9c2-10b7ba3aab4b) |
-| ![Godly Ingot](https://github.com/user-attachments/assets/0e423f55-1bf7-4893-a9c2-10b7ba3aab4b) |  ![Godly Ingot](https://github.com/user-attachments/assets/0e423f55-1bf7-4893-a9c2-10b7ba3aab4b) | ![Godly Ingot](https://github.com/user-attachments/assets/0e423f55-1bf7-4893-a9c2-10b7ba3aab4b) |
+| ![Godly Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_ingot.png?raw=true) |  ![Godly Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_ingot.png?raw=true) | ![Godly Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_ingot.png?raw=true) |
+| ![Godly Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_ingot.png?raw=true) |  ![Godly Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_ingot.png?raw=true) | ![Godly Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_ingot.png?raw=true) |
+| ![Godly Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_ingot.png?raw=true) |  ![Godly Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_ingot.png?raw=true) | ![Godly Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_ingot.png?raw=true) |
 
 Items:
 
-* <img src="https://github.com/user-attachments/assets/0e423f55-1bf7-4893-a9c2-10b7ba3aab4b" alt="Godly Ingot" data-size="line"> [Godly Ingot](../../items/ingots/godly-ingot.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_ingot.png?raw=true" alt="Godly Ingot" data-size="line"> [Godly Ingot](../../items/ingots/godly-ingot.md)
 {% endtab %}
 {% endtabs %}

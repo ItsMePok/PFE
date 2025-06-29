@@ -1,6 +1,6 @@
 # Ore Gem
 
-![poke\_ore\_gem](https://github.com/ItsMePok/PFE/assets/136857747/b29fdfad-9e55-461c-acaa-276128fec53b)
+![poke\_ore\_gem](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/ore_gem.png?raw=true)
 
 Item Identifier: **poke:ore\_gem**
 

@@ -1,6 +1,6 @@
 # Zeus Gem
 
-![poke\_zeus\_gem](https://github.com/ItsMePok/PFE/assets/136857747/ad5ce376-5f91-4753-824d-0db8164f93de)
+![poke\_zeus\_gem](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/zeus_gem.png?raw=true)
 
 Item Identifier: **poke:zeus\_gem**
 

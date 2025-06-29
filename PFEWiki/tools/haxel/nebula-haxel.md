@@ -1,6 +1,6 @@
 # Nebula Haxel
 
-![](https://github.com/ItsMePok/PFE/assets/136857747/be63351a-bf90-45fc-b274-72e63aecf711)
+![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_haxel.png?raw=true)
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:nebula\_haxel**
 

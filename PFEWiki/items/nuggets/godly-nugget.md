@@ -1,6 +1,6 @@
 # Godly Nugget
 
-<figure><img src="https://github.com/user-attachments/assets/7af8515a-ad1b-4b05-b0c2-57b220938e75" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_nugget.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## Identifier: poke:godly\_nugget <a href="#identifier" id="identifier"></a>
 
@@ -15,11 +15,11 @@
 |     |                                                                                      |     |
 | :-: | :----------------------------------------------------------------------------------: | :-: |
 |     |                                                                                      |     |
-|     | ![](https://github.com/user-attachments/assets/0e423f55-1bf7-4893-a9c2-10b7ba3aab4b) |     |
+|     | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_ingot.png?raw=true) |     |
 |     |                                                                                      |     |
 
 Items:
 
-* <img src="https://github.com/user-attachments/assets/0e423f55-1bf7-4893-a9c2-10b7ba3aab4b" alt="" data-size="line"> [Godly Ingot](../ingots/godly-ingot.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_ingot.png?raw=true" alt="" data-size="line"> [Godly Ingot](../ingots/godly-ingot.md)
 {% endtab %}
 {% endtabs %}

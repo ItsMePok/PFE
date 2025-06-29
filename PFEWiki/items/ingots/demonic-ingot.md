@@ -1,6 +1,6 @@
 # Demonic Ingot
 
-<figure><img src="https://github.com/user-attachments/assets/2332c89f-38d6-4a08-944a-9421758259aa" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 {% hint style="danger" %}
 This Page is not complete yet. Check back later
@@ -44,12 +44,12 @@ Items:
 
 |                                                                                                    |                                                                                                    |                                                                                                    |
 | :------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------: |
-| ![Demonic Nugget](https://github.com/user-attachments/assets/a3d02a19-dcad-4c20-acac-39ae7761c855) | ![Demonic Nugget](https://github.com/user-attachments/assets/a3d02a19-dcad-4c20-acac-39ae7761c855) | ![Demonic Nugget](https://github.com/user-attachments/assets/a3d02a19-dcad-4c20-acac-39ae7761c855) |
-| ![Demonic Nugget](https://github.com/user-attachments/assets/a3d02a19-dcad-4c20-acac-39ae7761c855) | ![Demonic Nugget](https://github.com/user-attachments/assets/a3d02a19-dcad-4c20-acac-39ae7761c855) | ![Demonic Nugget](https://github.com/user-attachments/assets/a3d02a19-dcad-4c20-acac-39ae7761c855) |
-| ![Demonic Nugget](https://github.com/user-attachments/assets/a3d02a19-dcad-4c20-acac-39ae7761c855) | ![Demonic Nugget](https://github.com/user-attachments/assets/a3d02a19-dcad-4c20-acac-39ae7761c855) | ![Demonic Nugget](https://github.com/user-attachments/assets/a3d02a19-dcad-4c20-acac-39ae7761c855) |
+| ![Demonic Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_nugget.png?raw=true) | ![Demonic Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_nugget.png?raw=true) | ![Demonic Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_nugget.png?raw=true) |
+| ![Demonic Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_nugget.png?raw=true) | ![Demonic Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_nugget.png?raw=true) | ![Demonic Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_nugget.png?raw=true) |
+| ![Demonic Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_nugget.png?raw=true) | ![Demonic Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_nugget.png?raw=true) | ![Demonic Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_nugget.png?raw=true) |
 
 Items:
 
-* <img src="https://github.com/user-attachments/assets/a3d02a19-dcad-4c20-acac-39ae7761c855" alt="Demonic Nugget" data-size="line"> Demonic Nugget
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_nugget.png?raw=true" alt="Demonic Nugget" data-size="line"> Demonic Nugget
 {% endtab %}
 {% endtabs %}

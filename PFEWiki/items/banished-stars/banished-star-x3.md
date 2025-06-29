@@ -1,6 +1,6 @@
 # Banished Star x3
 
-![](https://github.com/ItsMePok/PFE/assets/136857747/1174ceba-b39a-420f-bc70-6d78bcbe5951)
+![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x3.png?raw=true)
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:banished\_star\_x3** <a href="#identifier" id="identifier"></a>
 
@@ -15,11 +15,11 @@
 
 {% tab title="Trading" %}
 * [Shopkeeper](https://github.com/ItsMePok/PFE/wiki/Shopkeeper) Trade:
-  * [<img src="https://github.com/ItsMePok/PFE/assets/136857747/1174ceba-b39a-420f-bc70-6d78bcbe5951" alt="" data-size="line">Banished Star x3](banished-star-x3.md)-> [Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)
-  * &#x20;[<img src="https://github.com/ItsMePok/PFE/assets/136857747/1174ceba-b39a-420f-bc70-6d78bcbe5951" alt="" data-size="line">Banished Star x3](banished-star-x3.md)-> [Raw Shade](https://github.com/ItsMePok/PFE/wiki/Raw-Shade)
-  * [<img src="https://github.com/ItsMePok/PFE/assets/136857747/1174ceba-b39a-420f-bc70-6d78bcbe5951" alt="" data-size="line">Banished Star x3](banished-star-x3.md) -> [Raw Onyx](https://github.com/ItsMePok/PFE/wiki/Raw-Onyx)
-  * [<img src="https://github.com/ItsMePok/PFE/assets/136857747/1174ceba-b39a-420f-bc70-6d78bcbe5951" alt="" data-size="line">Banished Star x3](banished-star-x3.md)-> [Raw Holy](https://github.com/ItsMePok/PFE/wiki/Raw-Holy)
-  * [<img src="https://github.com/ItsMePok/PFE/assets/136857747/1174ceba-b39a-420f-bc70-6d78bcbe5951" alt="" data-size="line">Banished Star x3](banished-star-x3.md)-> [Raw Hellish](https://github.com/ItsMePok/PFE/wiki/Raw-Hellish)
+  * [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x3.png?raw=true" alt="" data-size="line">Banished Star x3](banished-star-x3.md)-> [Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)
+  * &#x20;[<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x3.png?raw=true" alt="" data-size="line">Banished Star x3](banished-star-x3.md)-> [Raw Shade](https://github.com/ItsMePok/PFE/wiki/Raw-Shade)
+  * [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x3.png?raw=true" alt="" data-size="line">Banished Star x3](banished-star-x3.md) -> [Raw Onyx](https://github.com/ItsMePok/PFE/wiki/Raw-Onyx)
+  * [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x3.png?raw=true" alt="" data-size="line">Banished Star x3](banished-star-x3.md)-> [Raw Holy](https://github.com/ItsMePok/PFE/wiki/Raw-Holy)
+  * [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x3.png?raw=true" alt="" data-size="line">Banished Star x3](banished-star-x3.md)-> [Raw Hellish](https://github.com/ItsMePok/PFE/wiki/Raw-Hellish)
 {% endtab %}
 {% endtabs %}
 

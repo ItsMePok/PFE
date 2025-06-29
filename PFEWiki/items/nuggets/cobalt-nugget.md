@@ -1,6 +1,6 @@
 # Cobalt Nugget
 
-<figure><img src="https://github.com/user-attachments/assets/8cdeb228-b758-4b2c-873a-208cf8bcdc77" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_nugget.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## Identifier: poke:cobalt\_nugget
 
@@ -15,11 +15,11 @@
 |     |                                                                                      |     |
 | :-: | :----------------------------------------------------------------------------------: | :-: |
 |     |                                                                                      |     |
-|     | ![](https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694) |     |
+|     | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) |     |
 |     |                                                                                      |     |
 
 Items:
 
-* <img src="https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694" alt="" data-size="line"> [Cobalt Ingot](../ingots/cobalt-ingot.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="" data-size="line"> [Cobalt Ingot](../ingots/cobalt-ingot.md)
 {% endtab %}
 {% endtabs %}

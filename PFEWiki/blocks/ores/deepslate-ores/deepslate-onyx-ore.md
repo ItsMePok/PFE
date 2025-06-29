@@ -1,6 +1,6 @@
 # Deepslate Onyx Ore
 
-<figure><img src="https://github.com/user-attachments/assets/46fdf310-c125-47d5-856e-80f7a949b139" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/ore/DeepslateOnyxOre.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 The block texture above could not be 100% accurate if you have a texture pack applied that changes the Deepslate texture&#x20;
@@ -8,7 +8,7 @@ The block texture above could not be 100% accurate if you have a texture pack ap
 
 ## <img src="https://minecraft.wiki/images/Book_and_Quill_JE2_BE2.png?2128f" alt="Book and Quill." data-size="line"> Description: <a href="#identifier" id="identifier"></a>
 
-* <img src="https://github.com/user-attachments/assets/46fdf310-c125-47d5-856e-80f7a949b139" alt="Deepslate Onyx Ore." data-size="line"> Deepslate Onyx Ore is an ore that when refined is used in obtaining various things in PFE
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/ore/DeepslateOnyxOre.png?raw=true" alt="Deepslate Onyx Ore." data-size="line"> Deepslate Onyx Ore is an ore that when refined is used in obtaining various things in PFE
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:onyx** <a href="#identifier" id="identifier"></a>
 

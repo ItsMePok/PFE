@@ -1,6 +1,6 @@
 # Craft Pottery Sherd
 
-<figure><img src="https://github.com/user-attachments/assets/da820c5d-de4b-4737-9ff6-fd216a26728b" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/craft_pottery_sherd.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 
 

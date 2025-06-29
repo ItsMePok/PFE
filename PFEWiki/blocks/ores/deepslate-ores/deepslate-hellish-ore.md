@@ -1,6 +1,6 @@
 # Deepslate Hellish Ore
 
-<figure><img src="https://github.com/user-attachments/assets/6cc28f0e-7286-44e4-b39d-41d9c5fb2697" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/ore/DeepslateHellishOre.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 The block texture above could not be 100% accurate if you have a texture pack applied that changes the Deepslate texture&#x20;
@@ -8,7 +8,7 @@ The block texture above could not be 100% accurate if you have a texture pack ap
 
 ## <img src="https://minecraft.wiki/images/Book_and_Quill_JE2_BE2.png?2128f" alt="Book and Quill." data-size="line"> Description: <a href="#identifier" id="identifier"></a>
 
-* <img src="https://github.com/user-attachments/assets/6cc28f0e-7286-44e4-b39d-41d9c5fb2697" alt="Deepslate Hellish Ore." data-size="line"> Deepslate Hellish Ore is an ore that when refined is used in obtaining various things in PFE
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/ore/DeepslateHellishOre.png?raw=true" alt="Deepslate Hellish Ore." data-size="line"> Deepslate Hellish Ore is an ore that when refined is used in obtaining various things in PFE
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:hellite\_ore** <a href="#identifier" id="identifier"></a>
 
@@ -34,7 +34,7 @@ The block texture above could not be 100% accurate if you have a texture pack ap
 ### Replaces:
 
 * <img src="https://minecraft.wiki/images/thumb/Stone_JE8.png/150px-Stone_JE8.png?b5028" alt="Stone." data-size="line"> [Stone](https://minecraft.wiki/w/Stone)
-  * This would replace <img src="https://github.com/user-attachments/assets/f4a2afe9-f3e4-49b7-a502-86d4ec3fbde6" alt="Hellish Ore." data-size="line"> [Hellish Ore](../stone-ores/hellish-ore.md) instead
+  * This would replace <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/ore/HellishOre.png?raw=true" alt="Hellish Ore." data-size="line"> [Hellish Ore](../stone-ores/hellish-ore.md) instead
   * This also includes
     * <img src="https://minecraft.wiki/images/thumb/Diorite.png/150px-Diorite.png?58334" alt="Diorite." data-size="line"> [Diorite](https://minecraft.wiki/w/Diorite)
     * <img src="https://minecraft.wiki/images/thumb/Granite.png/150px-Granite.png?9cb6d" alt="Granite." data-size="line"> [Granite](https://minecraft.wiki/w/Granite)

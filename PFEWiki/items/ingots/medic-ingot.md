@@ -1,6 +1,6 @@
 # Medic Ingot
 
-<figure><img src="https://github.com/user-attachments/assets/43621ea1-5a1c-4853-93fd-1206f44ea315" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/medic_ingot.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -18,9 +18,9 @@
 
 |                                                                                                  |                                                                                                  |                                                                                                  |
 | :----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: |
-|  ![Godly Ingot](https://github.com/user-attachments/assets/0e423f55-1bf7-4893-a9c2-10b7ba3aab4b) |  ![Godly Ingot](https://github.com/user-attachments/assets/0e423f55-1bf7-4893-a9c2-10b7ba3aab4b) |  ![Godly Ingot](https://github.com/user-attachments/assets/0e423f55-1bf7-4893-a9c2-10b7ba3aab4b) |
-|  ![Godly Ingot](https://github.com/user-attachments/assets/0e423f55-1bf7-4893-a9c2-10b7ba3aab4b) |       ![](https://github.com/user-attachments/assets/e13f83a8-b0d5-47ed-bd3d-9623c9a5fab5)       | ![Cobalt Ingot](https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694) |
-| ![Cobalt Ingot](https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694) | ![Cobalt Ingot](https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694) | ![Cobalt Ingot](https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694) |
+|  ![Godly Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_ingot.png?raw=true) |  ![Godly Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_ingot.png?raw=true) |  ![Godly Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_ingot.png?raw=true) |
+|  ![Godly Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_ingot.png?raw=true) |       ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/molten_slimeball.png?raw=true)       | ![Cobalt Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) |
+| ![Cobalt Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) | ![Cobalt Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) | ![Cobalt Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) |
 
 Items:
 
@@ -36,7 +36,7 @@ Items:
 
 |                                                                                                 |
 | :---------------------------------------------------------------------------------------------: |
-| ![Medic Ingot](https://github.com/user-attachments/assets/28cf0752-7ccd-4aa4-91bf-4987fb9da51c) |
+| ![Medic Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/MedicBlock.png?raw=true) |
 
 Items:
 

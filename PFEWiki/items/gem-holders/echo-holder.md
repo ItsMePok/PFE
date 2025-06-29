@@ -1,6 +1,6 @@
 # Echo Holder
 
-<figure><img src="https://github.com/user-attachments/assets/1a73ccd0-fc5d-457f-a5bc-f3206dec7afd" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/echo_holder.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: poke:echo\_holder <a href="#identifier" id="identifier"></a>
 

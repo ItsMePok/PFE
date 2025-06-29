@@ -1,6 +1,6 @@
 # Ruined Tower
 
-<figure><img src="https://github.com/ItsMePok/PFE/assets/136857747/e279d8b6-9df9-40ca-a3b2-313b76087e69" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/Structures/ruined_tower.png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -45,8 +45,8 @@ A higher weight makes it more likely to be selected from that pool
 
 | Item                                                                                                                                                                              | Amount | Weight |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------ |
-| [<img src="https://github.com/ItsMePok/PFE/assets/136857747/1c78ba2a-4a5b-4b7b-83ff-ed21aa75ebd8" alt="" data-size="line">Copper Token](../items/currency/tokens/copper-token.md) | 1-6    | 15     |
-| [<img src="https://github.com/ItsMePok/PFE/assets/136857747/aa3d5a31-9866-4bd1-bc09-ba7fa6775f7e" alt="" data-size="line">Iron Token](../items/currency/tokens/iron-token.md)     | 1-3    | 5      |
+| [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/copper_token.png?raw=true" alt="" data-size="line">Copper Token](../items/currency/tokens/copper-token.md) | 1-6    | 15     |
+| [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/iron_token.png?raw=true" alt="" data-size="line">Iron Token](../items/currency/tokens/iron-token.md)     | 1-3    | 5      |
 | Sculk Sensor                                                                                                                                                                      | 1-3    | 25     |
 | Cobweb                                                                                                                                                                            | 3-7    | 25     |
 | Bone                                                                                                                                                                              | 4-6    | 25     |
@@ -80,15 +80,15 @@ A higher weight makes it more likely to be selected from that pool
 
 ### **Vault:**
 
-* The Vault can be opened with a <img src="https://github.com/user-attachments/assets/f1bc0edd-5af4-4ad8-b33c-d2f2ac52882b" alt="Ruined Key." data-size="line"> [Ruin Key](../items/misc/ruin-key.md)
+* The Vault can be opened with a <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/ruin_key.png?raw=true" alt="Ruined Key." data-size="line"> [Ruin Key](../items/misc/ruin-key.md)
 
 (2-5 of these ↓)
 
 | Item                                                                                                                                                                                                        | Amount | Weight |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------ |
 | Cassette - 5                                                                                                                                                                                                | 1      | 1      |
-| [<img src="https://github.com/ItsMePok/PFE/assets/136857747/1c78ba2a-4a5b-4b7b-83ff-ed21aa75ebd8" alt="" data-size="line">Copper Token](../items/currency/tokens/copper-token.md)                           | 2-6    | 8      |
-| [<img src="https://github.com/ItsMePok/PFE/assets/136857747/aa3d5a31-9866-4bd1-bc09-ba7fa6775f7e" alt="" data-size="line">Iron Token](../items/currency/tokens/iron-token.md)                               | 2-6    | 8      |
+| [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/copper_token.png?raw=true" alt="" data-size="line">Copper Token](../items/currency/tokens/copper-token.md)                           | 2-6    | 8      |
+| [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/iron_token.png?raw=true" alt="" data-size="line">Iron Token](../items/currency/tokens/iron-token.md)                               | 2-6    | 8      |
 | Gold Token                                                                                                                                                                                                  | 2-5    | 5      |
 | Diamond Token                                                                                                                                                                                               | 2-3    | 4      |
 | <img src="https://minecraft.wiki/images/Emerald_JE3_BE3.png?4c5f3" alt="Emerald." data-size="line"> [Emerald](https://minecraft.wiki/w/Emerald)                                                             | 2-6    | 8      |
@@ -100,8 +100,8 @@ A higher weight makes it more likely to be selected from that pool
 
 | Item                                                                                                                                                                                                        | Amount | Weight |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------ |
-| [<img src="https://github.com/ItsMePok/PFE/assets/136857747/1c78ba2a-4a5b-4b7b-83ff-ed21aa75ebd8" alt="" data-size="line">Copper Token](../items/currency/tokens/copper-token.md)                           | 2-6    | 8      |
-| [<img src="https://github.com/ItsMePok/PFE/assets/136857747/aa3d5a31-9866-4bd1-bc09-ba7fa6775f7e" alt="" data-size="line">Iron Token](../items/currency/tokens/iron-token.md)                               | 2-6    | 4      |
+| [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/copper_token.png?raw=true" alt="" data-size="line">Copper Token](../items/currency/tokens/copper-token.md)                           | 2-6    | 8      |
+| [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/iron_token.png?raw=true" alt="" data-size="line">Iron Token](../items/currency/tokens/iron-token.md)                               | 2-6    | 4      |
 | Diamond Token                                                                                                                                                                                               | 2-6    | 8      |
 | <img src="https://minecraft.wiki/images/Emerald_JE3_BE3.png?4c5f3" alt="Emerald." data-size="line"> [Emerald](https://minecraft.wiki/w/Emerald)                                                             | 2-6    | 8      |
 | <img src="https://minecraft.wiki/images/Enchanted_Iron_Boots_(item).gif?f8739" alt="Enchanted Iron Boots." data-size="line"> [Enchanted Iron Boots](https://minecraft.wiki/w/Iron_Boots)                    | 1      | 6      |
@@ -140,16 +140,16 @@ The Trial Spawner has an ominous variant, it can be triggered with the [Trial Om
 
 | Item                                                                                                                                                                              | Amount | Weight |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------ |
-| <img src="https://github.com/user-attachments/assets/f1bc0edd-5af4-4ad8-b33c-d2f2ac52882b" alt="Ruined Key." data-size="line"> [Ruin Key](../items/misc/ruin-key.md)              | 1      | 1      |
-| [<img src="https://github.com/ItsMePok/PFE/assets/136857747/1c78ba2a-4a5b-4b7b-83ff-ed21aa75ebd8" alt="" data-size="line">Copper Token](../items/currency/tokens/copper-token.md) | 3-6    | 1      |
+| <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/ruin_key.png?raw=true" alt="Ruined Key." data-size="line"> [Ruin Key](../items/misc/ruin-key.md)              | 1      | 1      |
+| [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/copper_token.png?raw=true" alt="" data-size="line">Copper Token](../items/currency/tokens/copper-token.md) | 3-6    | 1      |
 
 (1 of these if ominous ↓)
 
 | Item                                                                                                                                                                          | Amount | Weight |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------ |
-| <img src="https://github.com/user-attachments/assets/f1bc0edd-5af4-4ad8-b33c-d2f2ac52882b" alt="Ruined Key." data-size="line"> [Ruin Key](../items/misc/ruin-key.md)          | 1      | 1      |
-| [<img src="https://github.com/ItsMePok/PFE/assets/136857747/aa3d5a31-9866-4bd1-bc09-ba7fa6775f7e" alt="" data-size="line">Iron Token](../items/currency/tokens/iron-token.md) | 2-7    | 1      |
+| <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/ruin_key.png?raw=true" alt="Ruined Key." data-size="line"> [Ruin Key](../items/misc/ruin-key.md)          | 1      | 1      |
+| [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/iron_token.png?raw=true" alt="" data-size="line">Iron Token](../items/currency/tokens/iron-token.md) | 2-7    | 1      |
 
 ## In-game Screenshots:
 
-![Ruined Tower Generating in Plains Near a Mountain](https://github.com/ItsMePok/PFE/assets/136857747/d0f48371-9306-4b02-a1d9-5b0ff0d6c434)
+![Ruined Tower Generating in Plains Near a Mountain](https://github.com/ItsMePok/PFE/blob/wikiAssets/Structures/RuinedTowerInGame.png)

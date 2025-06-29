@@ -1,10 +1,10 @@
 # Speed Boots
 
-![](https://github.com/ItsMePok/PFE/assets/136857747/131bce4c-1f58-45d7-94eb-c7965e300f17)
+![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/swift_boots.png?raw=true)
 
 ### <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:swift\_boots**
 
-### <img src="https://github.com/user-attachments/assets/53329be8-f7e5-4c01-b7e4-a27b567c7998" alt="" data-size="line"> Set Effects:
+### <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/effect_particles.png?raw=true" alt="" data-size="line"> Set Effects:
 
 * <img src="https://minecraft.wiki/images/Speed_JE3_BE2.png?bbd24" alt="" data-size="line"> [Speed ](https://minecraft.wiki/w/Speed)6
 
@@ -22,7 +22,7 @@
 
 ## <img src="https://minecraft.wiki/images/thumb/Anvil_(N)_BE3.png/150px-Anvil_(N)_BE3.png?30415" alt="" data-size="line"> Repairable with:
 
-* <img src="https://github.com/ItsMePok/PFE/assets/136857747/f15d8501-f297-4a77-b6de-3681297cdb09" alt="" data-size="line"> [Repair Core](../items/cores/repair-core.md) (100%)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/repair_core.png?raw=true" alt="" data-size="line"> [Repair Core](../items/cores/repair-core.md) (100%)
 * <img src="https://minecraft.wiki/images/Diamond_JE3_BE3.png?99d00" alt="" data-size="line"> [**Diamond**](https://minecraft.wiki/w/Diamond) (25%)
 
 ## <img src="https://minecraft.wiki/images/thumb/Flow_Armor_Trim_Smithing_Template_JE1_BE1.png/120px-Flow_Armor_Trim_Smithing_Template_JE1_BE1.png?e7467" alt="" data-size="line"> Trimmable: **Yes**

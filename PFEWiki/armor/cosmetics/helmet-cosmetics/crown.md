@@ -1,6 +1,6 @@
 # Crown
 
-![](https://github.com/ItsMePok/PFE/assets/136857747/a1fafa0c-dbd2-44b1-a966-b38b931d25d3)
+![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/crown_helmet.png?raw=true)
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:crown\_helmet**
 
@@ -18,7 +18,7 @@
 
 ## Repairable with:
 
-* <img src="https://github.com/ItsMePok/PFE/assets/136857747/f15d8501-f297-4a77-b6de-3681297cdb09" alt="" data-size="line"> [Repair Core](../../../items/cores/repair-core.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/repair_core.png?raw=true" alt="" data-size="line"> [Repair Core](../../../items/cores/repair-core.md)
 
 ## Trimmable: **No**
 
@@ -28,8 +28,8 @@
 {% tab title="Trading" %}
 
 
-<figure><img src="https://github.com/ItsMePok/PFE/assets/136857747/e617b7b6-e886-44d4-9124-01af48928695" alt="" width="188"><figcaption><p>Sold By the <a href="../../../mobs/traders/token-trader.md">Token Trader</a></p></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/Entity/token_trader.png?raw=true" alt="" width="188"><figcaption><p>Sold By the <a href="../../../mobs/traders/token-trader.md">Token Trader</a></p></figcaption></figure>
 
-<table><thead><tr><th>Wants</th><th data-type="number">Amount</th><th>Gives</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="https://github.com/ItsMePok/PFE/assets/136857747/f68ea41f-65d4-45b0-8cee-a31677ddb317" alt="" data-size="line"> <a href="../../../items/currency/tokens/diamond-token.md">Diamond Token</a></td><td>5</td><td><img src="https://github.com/ItsMePok/PFE/assets/136857747/a1fafa0c-dbd2-44b1-a966-b38b931d25d3" alt="" data-size="line"> Crown</td><td>1</td></tr></tbody></table>
+<table><thead><tr><th>Wants</th><th data-type="number">Amount</th><th>Gives</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/diamond_token.png?raw=true" alt="" data-size="line"> <a href="../../../items/currency/tokens/diamond-token.md">Diamond Token</a></td><td>5</td><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/crown_helmet.png?raw=true" alt="" data-size="line"> Crown</td><td>1</td></tr></tbody></table>
 {% endtab %}
 {% endtabs %}

@@ -1,6 +1,6 @@
 # Cobalt Ore
 
-<figure><img src="https://github.com/user-attachments/assets/b764cf3c-bec6-4819-9412-f69c94e783e5" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/ore/cobaltOre.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 The block texture above could not be 100% accurate if you have a texture pack applied that changes the stone texture&#x20;
@@ -8,7 +8,7 @@ The block texture above could not be 100% accurate if you have a texture pack ap
 
 ## <img src="https://minecraft.wiki/images/Book_and_Quill_JE2_BE2.png?2128f" alt="Book and Quill." data-size="line"> Description: <a href="#identifier" id="identifier"></a>
 
-* <img src="https://github.com/user-attachments/assets/b764cf3c-bec6-4819-9412-f69c94e783e5" alt="Cobalt Ore." data-size="line"> Cobalt Ore is an ore that when refined is used in obtaining various things in PFE
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/ore/cobaltOre.png?raw=true" alt="Cobalt Ore." data-size="line"> Cobalt Ore is an ore that when refined is used in obtaining various things in PFE
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:cobalt\_ore** <a href="#identifier" id="identifier"></a>
 
@@ -39,7 +39,7 @@ The block texture above could not be 100% accurate if you have a texture pack ap
     * <img src="https://minecraft.wiki/images/thumb/Granite.png/150px-Granite.png?9cb6d" alt="Granite." data-size="line"> [Granite](https://minecraft.wiki/w/Granite)
     * <img src="https://minecraft.wiki/images/thumb/Andesite.png/150px-Andesite.png?5db9b" alt="" data-size="line"> [Andesite](https://minecraft.wiki/w/Andesite)
 * <img src="https://minecraft.wiki/images/thumb/Deepslate_(UD)_JE3.png/120px-Deepslate_(UD)_JE3.png?7635f" alt="Deepslate." data-size="line"> [Deepslate](https://minecraft.wiki/w/Deepslate)
-  * This would replace as <img src="https://github.com/user-attachments/assets/8358f27d-dcc5-48c1-b9b8-ed6a006f53d2" alt="Deepslate Cobalt Ore." data-size="line"> [Deepslate Cobalt Ore](../deepslate-ores/deepslate-cobalt-ore.md) instead
+  * This would replace as <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/ore/DeepslateCobaltOre.png?raw=true" alt="Deepslate Cobalt Ore." data-size="line"> [Deepslate Cobalt Ore](../deepslate-ores/deepslate-cobalt-ore.md) instead
 {% endtab %}
 {% endtabs %}
 

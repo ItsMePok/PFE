@@ -1,6 +1,6 @@
 # Shade Haxel
 
-![](https://github.com/ItsMePok/PFE/assets/136857747/b09458ed-42e9-4649-af15-41bae47db3d7)
+![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_haxel.png?raw=true)
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:shade\_haxel**
 

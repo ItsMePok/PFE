@@ -1,6 +1,6 @@
 # Diamond Gem Holder
 
-<figure><img src="https://github.com/user-attachments/assets/67ae712c-5fb3-44a4-99a4-f388681ec13d" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/diamond_holder.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: poke:diamond\_gem\_holder <a href="#identifier" id="identifier"></a>
 

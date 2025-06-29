@@ -1,6 +1,6 @@
 # Rain Gem
 
-![poke\_rain\_gem](https://github.com/ItsMePok/PFE/assets/136857747/7af9cfd5-f31e-49b3-ac4e-b1edbf00a0dc)
+![poke\_rain\_gem](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/rain_gem.png?raw=true)
 
 Item Identifier: **poke:rain\_gem**
 

@@ -2,7 +2,7 @@
 
 
 
-<figure><img src="https://github.com/user-attachments/assets/53a75b18-e659-4b0e-801a-209b9bdb039b" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/radium_ingot.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -16,17 +16,17 @@
 {% tab title="Recipe" %}
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-|                                                                                                  |                                                                                                      |                                                                                                  |
-| :----------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: |
-|  ![Shade Ingot](https://github.com/user-attachments/assets/98da9682-eaf5-4bb5-932c-1c12295decc7) |    ![Shade Ingot](https://github.com/user-attachments/assets/98da9682-eaf5-4bb5-932c-1c12295decc7)   |  ![Shade Ingot](https://github.com/user-attachments/assets/98da9682-eaf5-4bb5-932c-1c12295decc7) |
-|  ![Shade Ingot](https://github.com/user-attachments/assets/98da9682-eaf5-4bb5-932c-1c12295decc7) | ![Molten Slimeball](https://github.com/user-attachments/assets/e13f83a8-b0d5-47ed-bd3d-9623c9a5fab5) | ![Astral Ingot](https://github.com/user-attachments/assets/41cf9ac1-c89c-4eea-9249-76036a858251) |
-| ![Astral Ingot](https://github.com/user-attachments/assets/41cf9ac1-c89c-4eea-9249-76036a858251) |   ![Astral Ingot](https://github.com/user-attachments/assets/41cf9ac1-c89c-4eea-9249-76036a858251)   | ![Astral Ingot](https://github.com/user-attachments/assets/41cf9ac1-c89c-4eea-9249-76036a858251) |
+|                                                                                                   |                                                                                                             |                                                                                                   |
+| :-----------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: |
+| ![Shade Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_ingot.png?raw=true) |      ![Shade Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_ingot.png?raw=true)      | ![Shade Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_ingot.png?raw=true) |
+| ![Shade Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_ingot.png?raw=true) | ![Molten Slimeball](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/molten_slimeball.png?raw=true) | ![Astral Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/astral_ingot.png?raw=true)  |
+| ![Astral Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/astral_ingot.png?raw=true)  |      ![Astral Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/astral_ingot.png?raw=true)       | ![Astral Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/astral_ingot.png?raw=true)  |
 
 Items:
 
-* <img src="https://github.com/user-attachments/assets/98da9682-eaf5-4bb5-932c-1c12295decc7" alt="Shade Ingot" data-size="line"> [Shade Ingot](shade-ingot.md)
-* <img src="https://github.com/user-attachments/assets/e13f83a8-b0d5-47ed-bd3d-9623c9a5fab5" alt="Molten Slimeball" data-size="line"> [Molten Slimeball](molten-slimeball.md)
-* <img src="https://github.com/user-attachments/assets/41cf9ac1-c89c-4eea-9249-76036a858251" alt="Astral Ingot" data-size="line"> [Astral Ingot](astral-ingot.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_ingot.png?raw=true" alt="Shade Ingot" data-size="line"> [Shade Ingot](shade-ingot.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/molten_slimeball.png?raw=true" alt="Molten Slimeball" data-size="line"> [Molten Slimeball](molten-slimeball.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/astral_ingot.png?raw=true" alt="Astral Ingot" data-size="line"> [Astral Ingot](astral-ingot.md)
 {% endtab %}
 
 {% tab title="Recipe 2" %}
@@ -34,12 +34,12 @@ Items:
 
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a>.</p></figcaption></figure>
 
-|                                                                                                  |
-| :----------------------------------------------------------------------------------------------: |
-| ![Radium Block](https://github.com/user-attachments/assets/fe0ea111-53b9-4b17-afed-e5873cf4a3a7) |
+|                                                                                                        |
+| :----------------------------------------------------------------------------------------------------: |
+| ![Radium Block](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/radium%20block.png?raw=true) |
 
 Items:
 
-* <img src="https://github.com/user-attachments/assets/fe0ea111-53b9-4b17-afed-e5873cf4a3a7" alt="Radium Block" data-size="line"> [Block of Radium](../../blocks/ore-blocks/block-of-radium.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/radium%20block.png?raw=true" alt="Radium Block" data-size="line"> [Block of Radium](../../blocks/ore-blocks/block-of-radium.md)
 {% endtab %}
 {% endtabs %}

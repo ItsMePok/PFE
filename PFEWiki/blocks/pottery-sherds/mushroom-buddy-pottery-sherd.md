@@ -1,6 +1,6 @@
 # Mushroom Buddy Pottery Sherd
 
-<figure><img src="https://github.com/user-attachments/assets/990bd85b-4b5c-4a42-8a62-57a60c0cb0fa" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/mushroom_buddy_pottery_sherd.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 
 

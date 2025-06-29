@@ -1,6 +1,6 @@
 # Demonic Block
 
-![](https://github.com/user-attachments/assets/e550ae03-d155-4182-bea5-16e7cbbce30f)
+![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/DemonicBlock.png?raw=true)
 
 
 
@@ -24,12 +24,12 @@
 
 |                                                                                                   |                                                                                                    |                                                                                                   |
 | :-----------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: |
-| ![Demonic Ingot](https://github.com/user-attachments/assets/2332c89f-38d6-4a08-944a-9421758259aa) |  ![Demonic Ingot](https://github.com/user-attachments/assets/2332c89f-38d6-4a08-944a-9421758259aa) | ![Demonic Ingot](https://github.com/user-attachments/assets/2332c89f-38d6-4a08-944a-9421758259aa) |
-| ![Demonic Ingot](https://github.com/user-attachments/assets/2332c89f-38d6-4a08-944a-9421758259aa) |  ![Demonic Ingot](https://github.com/user-attachments/assets/2332c89f-38d6-4a08-944a-9421758259aa) | ![Demonic Ingot](https://github.com/user-attachments/assets/2332c89f-38d6-4a08-944a-9421758259aa) |
-| ![Demonic Ingot](https://github.com/user-attachments/assets/2332c89f-38d6-4a08-944a-9421758259aa) |  ![Demonic Ingot](https://github.com/user-attachments/assets/2332c89f-38d6-4a08-944a-9421758259aa) | ![Demonic Ingot](https://github.com/user-attachments/assets/2332c89f-38d6-4a08-944a-9421758259aa) |
+| ![Demonic Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true) |  ![Demonic Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true) | ![Demonic Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true) |
+| ![Demonic Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true) |  ![Demonic Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true) | ![Demonic Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true) |
+| ![Demonic Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true) |  ![Demonic Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true) | ![Demonic Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true) |
 
 Items:
 
-* <img src="https://github.com/user-attachments/assets/2332c89f-38d6-4a08-944a-9421758259aa" alt="Demonic Ingot" data-size="line"> Demonic Ingot
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true" alt="Demonic Ingot" data-size="line"> Demonic Ingot
 {% endtab %}
 {% endtabs %}

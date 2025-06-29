@@ -2,7 +2,7 @@
 
 
 
-<figure><img src="https://github.com/user-attachments/assets/706de320-8301-454e-b64d-871aadf2d8fd" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/Automation/cobbler.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 Identifier: **poke:cobble\_gen**
 
@@ -21,8 +21,8 @@ Identifier: **poke:cobble\_gen**
 
 |                                                                                                  |                                                                                                            |                                                                                                                |
 | :----------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------: |
-| ![Cobalt Block](https://github.com/user-attachments/assets/4a13c762-0f6f-40af-84e8-d50db1294a5d) |      ![Block Breaker](https://github.com/user-attachments/assets/59e91e4a-dab2-4e5f-806e-1af64adc4099)     |        ![Cobalt Block](https://github.com/user-attachments/assets/4a13c762-0f6f-40af-84e8-d50db1294a5d)        |
-|           <img src="broken-reference" alt="Cobblestone Generator" data-size="original">          | ![Banished Star x4](https://github.com/ItsMePok/PFE/assets/136857747/fe59da80-6212-4204-9d12-39e0bdbc55ff) | ![Diamond Upgrade Core](https://github.com/ItsMePok/PFE/assets/136857747/cd2e69eb-3e99-470c-89c4-ddf91c05de21) |
-| ![Cobalt Block](https://github.com/user-attachments/assets/4a13c762-0f6f-40af-84e8-d50db1294a5d) |       ![GPS Module](https://github.com/user-attachments/assets/e86a7ee9-4449-47a6-9164-6b435c473780)       |        ![Cobalt Block](https://github.com/user-attachments/assets/4a13c762-0f6f-40af-84e8-d50db1294a5d)        |
+| ![Cobalt Block](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/cobalt_block.png?raw=true) |      ![Block Breaker](https://github.com/ItsMePok/PFE/blob/wikiAssets/Automation/block_breaker.png?raw=true)     |        ![Cobalt Block](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/cobalt_block.png?raw=true)        |
+|           <img src="broken-reference" alt="Cobblestone Generator" data-size="original">          | ![Banished Star x4](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x4.png?raw=true) | ![Diamond Upgrade Core](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/diamond_upgrade_core.png?raw=true) |
+| ![Cobalt Block](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/cobalt_block.png?raw=true) |       ![GPS Module](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/gps_module.png?raw=true)       |        ![Cobalt Block](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/cobalt_block.png?raw=true)        |
 {% endtab %}
 {% endtabs %}

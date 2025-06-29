@@ -13,11 +13,11 @@
 |     |                                                                                                   |     |
 | :-: | :-----------------------------------------------------------------------------------------------: | :-: |
 |     |                                                                                                   |     |
-|     | ![Demonic Ingot](https://github.com/user-attachments/assets/2332c89f-38d6-4a08-944a-9421758259aa) |     |
+|     | ![Demonic Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true) |     |
 |     |                                                                                                   |     |
 
 Items:
 
-* <img src="https://github.com/user-attachments/assets/2332c89f-38d6-4a08-944a-9421758259aa" alt="Demonic Ingot" data-size="line"> [Demonic Ingot](../ingots/demonic-ingot.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true" alt="Demonic Ingot" data-size="line"> [Demonic Ingot](../ingots/demonic-ingot.md)
 {% endtab %}
 {% endtabs %}

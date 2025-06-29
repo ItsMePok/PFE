@@ -1,6 +1,6 @@
 # Death Armor
 
-### <img src="https://github.com/user-attachments/assets/53329be8-f7e5-4c01-b7e4-a27b567c7998" alt="" data-size="line"> Set Effects:
+### <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/effect_particles.png?raw=true" alt="" data-size="line"> Set Effects:
 
 * Health Boost 5 (+10 Hearts)
 * Resistance 3
@@ -10,7 +10,7 @@
 
 ## Death Helmet
 
-![poke\_death\_helmet](https://github.com/ItsMePok/PFE/assets/136857747/65c12250-1a6f-41ae-be03-50bdab377488)
+![poke\_death\_helmet](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/death_helmet.png?raw=true)
 
 Identifier: **poke:death\_helmet**
 
@@ -32,7 +32,7 @@ Trimmable: **Yes**
 
 ## Death Chestplate
 
-![poke\_death\_chestplate](https://github.com/ItsMePok/PFE/assets/136857747/b36ab366-a87d-4e88-b30b-5e502f56d6ee)
+![poke\_death\_chestplate](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/death_chestplate.png?raw=true)
 
 Identifier: **poke:death\_chestplate**
 
@@ -54,7 +54,7 @@ Trimmable: **Yes**
 
 ## Death Leggings
 
-![poke\_death\_leggings](https://github.com/ItsMePok/PFE/assets/136857747/fcacec48-c507-4aa6-8b92-ce78b5562dbc)
+![poke\_death\_leggings](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/death_leggings.png?raw=true)
 
 Identifier: **poke:death\_leggings**
 
@@ -76,7 +76,7 @@ Trimmable: **Yes**
 
 ## Death Boots
 
-![poke\_death\_boots](https://github.com/ItsMePok/PFE/assets/136857747/5b73ab3d-4299-4aed-a232-dfa8d0475400)
+![poke\_death\_boots](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/death_boots.png?raw=true)
 
 Identifier: **poke:death\_boots**
 

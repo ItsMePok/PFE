@@ -1,6 +1,6 @@
 # Cobalt Haxel
 
-![](https://github.com/ItsMePok/PFE/assets/136857747/0f015069-aef0-434f-bfae-32d95569e99c)
+![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_haxel.png?raw=true)
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:cobalt\_haxel**
 

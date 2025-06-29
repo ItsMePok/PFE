@@ -8,7 +8,7 @@
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke:**</mark><mark style="color:yellow;">cassette\_wethands</mark> <a href="#identifier" id="identifier"></a>
 
-## <img src="https://github.com/user-attachments/assets/4ab38071-56d5-4e2e-b183-6258e6c7b4df" alt="Interact Ability." data-size="line"> Interact Ability: <a href="#interact-ability" id="interact-ability"></a>
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/InteractAbility.png?raw=true" alt="Interact Ability." data-size="line"> Interact Ability: <a href="#interact-ability" id="interact-ability"></a>
 
 ### <mark style="color:blue;">**Interacting**</mark>: Fades out any Music currently playing, and starts playing [Wet Hands by C418](https://minecraft.wiki/w/Wet_Hands) <a href="#interacting" id="interacting"></a>
 

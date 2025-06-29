@@ -1,6 +1,6 @@
 # GitHub Pottery Sherd
 
-<figure><img src="https://github.com/user-attachments/assets/424cafb4-d1e3-42a4-b8fd-e79d93ad03ed" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/github_pottery_sherd.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 This is based off of GitHub (one of the websites PFE is released on)

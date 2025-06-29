@@ -1,6 +1,6 @@
 # MCPEDL Pottery Sherd
 
-<figure><img src="https://github.com/user-attachments/assets/6930e1a8-4086-4747-acd3-792c14fe47c1" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/mcpedl_pottery_sherd.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 This is based off of MCPEDL (one of the websites PFE is released on)

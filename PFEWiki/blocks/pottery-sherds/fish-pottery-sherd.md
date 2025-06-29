@@ -1,6 +1,6 @@
 # Fish Pottery Sherd
 
-<figure><img src="https://github.com/user-attachments/assets/4cad8dfd-b4d7-4db4-ad0b-6be633700dcd" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/fish_pottery_sherd.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 
 

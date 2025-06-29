@@ -42,7 +42,7 @@ Items:
 
 Outputs:
 
-* 1x <img src="https://github.com/user-attachments/assets/7629a661-b301-4ef9-873e-e74353bce301" alt="Magnet Block." data-size="line"> Magnet Block&#x20;
+* 1x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/Automation/MagnetBlock.png?raw=true" alt="Magnet Block." data-size="line"> Magnet Block&#x20;
 {% endtab %}
 {% endtabs %}
 

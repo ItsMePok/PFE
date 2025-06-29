@@ -7,7 +7,7 @@ Set Effects:
 
 ## Helmet
 
-![poke\_ember\_hat](https://github.com/ItsMePok/PFE/assets/136857747/442d4fd5-cb13-46fa-915a-e44853be4b75)
+![poke\_ember\_hat](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/ember_hat.png?raw=true)
 
 Identifier: **poke:ember\_robe\_helmet**
 
@@ -25,7 +25,7 @@ Trimmable: **Yes**
 
 ## Chestplate
 
-![poke\_ember\_robe\_chestplate](https://github.com/ItsMePok/PFE/assets/136857747/06843cbb-baa2-4aad-ab10-60072984052f)
+![poke\_ember\_robe\_chestplate](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/ember_robe_chestplate.png?raw=true)
 
 Identifier: **poke:ember\_robe\_chestplate**
 

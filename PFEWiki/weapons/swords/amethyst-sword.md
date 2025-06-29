@@ -2,7 +2,7 @@
 
 <div align="center" data-full-width="false">
 
-<img src="https://github.com/ItsMePok/PFE/assets/136857747/42582fd4-22b8-4331-af44-6d87f83a0b6d" alt="">
+<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/amethyst_sword.png?raw=true" alt="">
 
 </div>
 
@@ -18,7 +18,7 @@
 
 ## Repairable with:
 
-* <img src="https://github.com/ItsMePok/PFE/assets/136857747/f15d8501-f297-4a77-b6de-3681297cdb09" alt="" data-size="line">[**Repair Core**](../../items/cores/repair-core.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/repair_core.png?raw=true" alt="" data-size="line">[**Repair Core**](../../items/cores/repair-core.md)
 * <img src="https://minecraft.wiki/images/Amethyst_Shard_JE2_BE1.png?56555" alt="" data-size="line">[**Amethyst Shard**](https://minecraft.wiki/w/Amethyst\_Shard)
 
 

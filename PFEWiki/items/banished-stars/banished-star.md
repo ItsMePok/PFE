@@ -1,6 +1,6 @@
 # Banished Star
 
-![](https://github.com/ItsMePok/PFE/assets/136857747/99a7c0b7-2014-4f8a-9095-0d46adb54b56)
+![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star.png?raw=true)
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:banished\_star**
 
@@ -102,15 +102,15 @@
 
 |                                                                                            |
 | :----------------------------------------------------------------------------------------: |
-| ![](https://github.com/ItsMePok/PFE/assets/136857747/e418b9e5-fabf-44cd-9775-f353e3b512ac) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x2.png?raw=true) |
 
 ### Items:
 
-* <img src="https://github.com/ItsMePok/PFE/assets/136857747/e418b9e5-fabf-44cd-9775-f353e3b512ac" alt="" data-size="line">[ Banished Star x2](banished-star-x2.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x2.png?raw=true" alt="" data-size="line">[ Banished Star x2](banished-star-x2.md)
 
 ### Outputs:
 
-* <img src="https://github.com/ItsMePok/PFE/assets/136857747/99a7c0b7-2014-4f8a-9095-0d46adb54b56" alt="" data-size="line">[Banished Star](banished-star.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star.png?raw=true" alt="" data-size="line">[Banished Star](banished-star.md)
   * Amount: 9
 {% endtab %}
 
@@ -123,7 +123,7 @@ Found in the [Abandoned Ship](../../sturctures/abandoned-ship.md)
 
 | Item                                                                                                                                                       | Amount | Weight |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------ |
-| [<img src="https://github.com/ItsMePok/PFE/assets/136857747/99a7c0b7-2014-4f8a-9095-0d46adb54b56" alt="" data-size="line">](banished-star.md)Banished Star | 1      | 6      |
+| [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star.png?raw=true" alt="" data-size="line">](banished-star.md)Banished Star | 1      | 6      |
 {% endtab %}
 {% endtabs %}
 
@@ -139,13 +139,13 @@ This Recipe requires the items to be in the same slot as it shows
 
 |                                                                                                 |                                                                                                                               |                                                                                                 |
 | :---------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------: | ----------------------------------------------------------------------------------------------- |
-| ![empty](https://github.com/ItsMePok/PFE/assets/136857747/539f7ffa-6950-4eb0-9333-9a4bff3b15de) | <img src="https://github.com/ItsMePok/PFE/assets/136857747/99a7c0b7-2014-4f8a-9095-0d46adb54b56" alt="" data-size="original"> | ![empty](https://github.com/ItsMePok/PFE/assets/136857747/539f7ffa-6950-4eb0-9333-9a4bff3b15de) |
-| ![empty](https://github.com/ItsMePok/PFE/assets/136857747/539f7ffa-6950-4eb0-9333-9a4bff3b15de) |                ![empty](https://github.com/ItsMePok/PFE/assets/136857747/539f7ffa-6950-4eb0-9333-9a4bff3b15de)                | ![empty](https://github.com/ItsMePok/PFE/assets/136857747/539f7ffa-6950-4eb0-9333-9a4bff3b15de) |
-| ![empty](https://github.com/ItsMePok/PFE/assets/136857747/539f7ffa-6950-4eb0-9333-9a4bff3b15de) |                ![empty](https://github.com/ItsMePok/PFE/assets/136857747/539f7ffa-6950-4eb0-9333-9a4bff3b15de)                | ![empty](https://github.com/ItsMePok/PFE/assets/136857747/539f7ffa-6950-4eb0-9333-9a4bff3b15de) |
+| ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star.png?raw=true" alt="" data-size="original"> | ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) |
+| ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) |                ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png)                | ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) |
+| ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) |                ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png)                | ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) |
 
 ### Items:
 
-* <img src="https://github.com/ItsMePok/PFE/assets/136857747/99a7c0b7-2014-4f8a-9095-0d46adb54b56" alt="" data-size="line">[Banished Star](banished-star.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star.png?raw=true" alt="" data-size="line">[Banished Star](banished-star.md)
 
 ### Outputs:
 
@@ -164,13 +164,13 @@ This Recipe requires the items shown to be in the same slot shown
 
 |                                                                                                                               |                                                                                                 |                                                                                                 |
 | :---------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: | ----------------------------------------------------------------------------------------------- |
-|                ![empty](https://github.com/ItsMePok/PFE/assets/136857747/539f7ffa-6950-4eb0-9333-9a4bff3b15de)                | ![empty](https://github.com/ItsMePok/PFE/assets/136857747/539f7ffa-6950-4eb0-9333-9a4bff3b15de) | ![empty](https://github.com/ItsMePok/PFE/assets/136857747/539f7ffa-6950-4eb0-9333-9a4bff3b15de) |
-|                ![empty](https://github.com/ItsMePok/PFE/assets/136857747/539f7ffa-6950-4eb0-9333-9a4bff3b15de)                | ![empty](https://github.com/ItsMePok/PFE/assets/136857747/539f7ffa-6950-4eb0-9333-9a4bff3b15de) | ![empty](https://github.com/ItsMePok/PFE/assets/136857747/539f7ffa-6950-4eb0-9333-9a4bff3b15de) |
-| <img src="https://github.com/ItsMePok/PFE/assets/136857747/99a7c0b7-2014-4f8a-9095-0d46adb54b56" alt="" data-size="original"> | ![empty](https://github.com/ItsMePok/PFE/assets/136857747/539f7ffa-6950-4eb0-9333-9a4bff3b15de) | ![empty](https://github.com/ItsMePok/PFE/assets/136857747/539f7ffa-6950-4eb0-9333-9a4bff3b15de) |
+|                ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png)                | ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) | ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) |
+|                ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png)                | ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) | ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) |
+| <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star.png?raw=true" alt="" data-size="original"> | ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) | ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) |
 
 ### Items:
 
-* <img src="https://github.com/ItsMePok/PFE/assets/136857747/99a7c0b7-2014-4f8a-9095-0d46adb54b56" alt="" data-size="line">[Banished Star](banished-star.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star.png?raw=true" alt="" data-size="line">[Banished Star](banished-star.md)
 
 ### Outputs:
 
@@ -191,13 +191,13 @@ This Recipe requires the items shown to be in the same slot shown
 
 |                                                                                                                               |                                                                                                 |                                                                                                 |
 | :---------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: | ----------------------------------------------------------------------------------------------- |
-|                ![empty](https://github.com/ItsMePok/PFE/assets/136857747/539f7ffa-6950-4eb0-9333-9a4bff3b15de)                | ![empty](https://github.com/ItsMePok/PFE/assets/136857747/539f7ffa-6950-4eb0-9333-9a4bff3b15de) | ![empty](https://github.com/ItsMePok/PFE/assets/136857747/539f7ffa-6950-4eb0-9333-9a4bff3b15de) |
-| <img src="https://github.com/ItsMePok/PFE/assets/136857747/99a7c0b7-2014-4f8a-9095-0d46adb54b56" alt="" data-size="original"> | ![empty](https://github.com/ItsMePok/PFE/assets/136857747/539f7ffa-6950-4eb0-9333-9a4bff3b15de) | ![empty](https://github.com/ItsMePok/PFE/assets/136857747/539f7ffa-6950-4eb0-9333-9a4bff3b15de) |
-|                ![empty](https://github.com/ItsMePok/PFE/assets/136857747/539f7ffa-6950-4eb0-9333-9a4bff3b15de)                | ![empty](https://github.com/ItsMePok/PFE/assets/136857747/539f7ffa-6950-4eb0-9333-9a4bff3b15de) | ![empty](https://github.com/ItsMePok/PFE/assets/136857747/539f7ffa-6950-4eb0-9333-9a4bff3b15de) |
+|                ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png)                | ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) | ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) |
+| <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star.png?raw=true" alt="" data-size="original"> | ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) | ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) |
+|                ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png)                | ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) | ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) |
 
 ### Items:
 
-* <img src="https://github.com/ItsMePok/PFE/assets/136857747/99a7c0b7-2014-4f8a-9095-0d46adb54b56" alt="" data-size="line">[Banished Star](banished-star.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star.png?raw=true" alt="" data-size="line">[Banished Star](banished-star.md)
 
 ### Outputs:
 
@@ -218,13 +218,13 @@ This Recipe requires the items shown to be in the same slot shown
 
 |                                                                                                 |                                                                                                                               |                                                                                                 |
 | :---------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------: | ----------------------------------------------------------------------------------------------- |
-| ![empty](https://github.com/ItsMePok/PFE/assets/136857747/539f7ffa-6950-4eb0-9333-9a4bff3b15de) |                ![empty](https://github.com/ItsMePok/PFE/assets/136857747/539f7ffa-6950-4eb0-9333-9a4bff3b15de)                | ![empty](https://github.com/ItsMePok/PFE/assets/136857747/539f7ffa-6950-4eb0-9333-9a4bff3b15de) |
-| ![empty](https://github.com/ItsMePok/PFE/assets/136857747/539f7ffa-6950-4eb0-9333-9a4bff3b15de) | <img src="https://github.com/ItsMePok/PFE/assets/136857747/99a7c0b7-2014-4f8a-9095-0d46adb54b56" alt="" data-size="original"> | ![empty](https://github.com/ItsMePok/PFE/assets/136857747/539f7ffa-6950-4eb0-9333-9a4bff3b15de) |
-| ![empty](https://github.com/ItsMePok/PFE/assets/136857747/539f7ffa-6950-4eb0-9333-9a4bff3b15de) |                ![empty](https://github.com/ItsMePok/PFE/assets/136857747/539f7ffa-6950-4eb0-9333-9a4bff3b15de)                | ![empty](https://github.com/ItsMePok/PFE/assets/136857747/539f7ffa-6950-4eb0-9333-9a4bff3b15de) |
+| ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) |                ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png)                | ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) |
+| ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star.png?raw=true" alt="" data-size="original"> | ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) |
+| ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) |                ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png)                | ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) |
 
 ### Items:
 
-* <img src="https://github.com/ItsMePok/PFE/assets/136857747/99a7c0b7-2014-4f8a-9095-0d46adb54b56" alt="" data-size="line">[Banished Star](banished-star.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star.png?raw=true" alt="" data-size="line">[Banished Star](banished-star.md)
 
 ### Outputs:
 
@@ -245,13 +245,13 @@ This Recipe requires the items shown to be in the same slot shown
 
 |                                                                                                 |                                                                                                                               |                                                                                                 |
 | :---------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------: | ----------------------------------------------------------------------------------------------- |
-| ![empty](https://github.com/ItsMePok/PFE/assets/136857747/539f7ffa-6950-4eb0-9333-9a4bff3b15de) |                ![empty](https://github.com/ItsMePok/PFE/assets/136857747/539f7ffa-6950-4eb0-9333-9a4bff3b15de)                | ![empty](https://github.com/ItsMePok/PFE/assets/136857747/539f7ffa-6950-4eb0-9333-9a4bff3b15de) |
-| ![empty](https://github.com/ItsMePok/PFE/assets/136857747/539f7ffa-6950-4eb0-9333-9a4bff3b15de) |                ![empty](https://github.com/ItsMePok/PFE/assets/136857747/539f7ffa-6950-4eb0-9333-9a4bff3b15de)                | ![empty](https://github.com/ItsMePok/PFE/assets/136857747/539f7ffa-6950-4eb0-9333-9a4bff3b15de) |
-| ![empty](https://github.com/ItsMePok/PFE/assets/136857747/539f7ffa-6950-4eb0-9333-9a4bff3b15de) | <img src="https://github.com/ItsMePok/PFE/assets/136857747/99a7c0b7-2014-4f8a-9095-0d46adb54b56" alt="" data-size="original"> | ![empty](https://github.com/ItsMePok/PFE/assets/136857747/539f7ffa-6950-4eb0-9333-9a4bff3b15de) |
+| ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) |                ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png)                | ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) |
+| ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) |                ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png)                | ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) |
+| ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star.png?raw=true" alt="" data-size="original"> | ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) |
 
 ### Items:
 
-* <img src="https://github.com/ItsMePok/PFE/assets/136857747/99a7c0b7-2014-4f8a-9095-0d46adb54b56" alt="" data-size="line">[Banished Star](banished-star.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star.png?raw=true" alt="" data-size="line">[Banished Star](banished-star.md)
 
 ### Outputs:
 

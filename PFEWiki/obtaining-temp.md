@@ -48,11 +48,11 @@ hidden: true
 
 ## <img src="https://minecraft.wiki/images/thumb/Composter_(level_8)_BE2.png/150px-Composter_(level_8)_BE2.png?7ecec" alt="Composter" data-size="line"> [Composting Chance](https://minecraft.wiki/w/Composter#Composting): <a href="#composting-chance" id="composting-chance"></a>
 
-## <img src="https://github.com/user-attachments/assets/53329be8-f7e5-4c01-b7e4-a27b567c7998" alt="" data-size="line"> Effects Granted: <a href="#effects-granted" id="effects-granted"></a>
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/effect_particles.png?raw=true" alt="" data-size="line"> Effects Granted: <a href="#effects-granted" id="effects-granted"></a>
 
 ## <img src="https://minecraft.wiki/images/Diamond_Chestplate_(item)_JE2_BE2.png?d2f93" alt="" data-size="line"> Armor:  <a href="#armor" id="armor"></a>
 
-## <img src="https://github.com/user-attachments/assets/2033baae-dc33-4acd-a5a3-52e549146bea" alt="" data-size="line"> Smelting: <a href="#smelting" id="smelting"></a>
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Smelt.png" alt="" data-size="line"> Smelting: <a href="#smelting" id="smelting"></a>
 
 ## <img src="https://minecraft.wiki/images/Book_and_Quill_JE2_BE2.png?2128f" alt="Book and Quill." data-size="line"> Description: <a href="#description" id="description"></a>
 
@@ -68,7 +68,7 @@ hidden: true
 {% tab title="Block Drop" %}
 
 
-<figure><img src="https://github.com/user-attachments/assets/d1e653c0-4330-48e7-afc4-19c7eb52cb95" alt=""><figcaption><p>Obtained by Breaking a Block</p></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/BlockBreak.png?raw=true" alt=""><figcaption><p>Obtained by Breaking a Block</p></figcaption></figure>
 
 <table><thead><tr><th>Block</th><th>Drop Amount</th><th data-type="checkbox">Fortune Works?</th></tr></thead><tbody><tr><td></td><td></td><td>false</td></tr><tr><td></td><td></td><td>false</td></tr></tbody></table>
 {% endtab %}
@@ -120,7 +120,7 @@ More info about brewing can be found in the: [brewing-guide.md](misc-other-info/
 
 <div><figure><img src="https://minecraft.wiki/images/Lit_Furnace_(S).gif?40e71" alt=""><figcaption><p>Smelted in a <a href="https://minecraft.wiki/w/Furnace">Furnace</a></p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/thumb/Lit_Smoker_(S)_JE2_BE2.gif/150px-Lit_Smoker_(S)_JE2_BE2.gif?0ee63" alt=""><figcaption><p>Smoked in a <a href="https://minecraft.wiki/w/Smoker">Smoker</a></p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/thumb/Campfire_JE2_BE2.gif/150px-Campfire_JE2_BE2.gif?742be" alt=""><figcaption><p>Cooked in a <a href="https://minecraft.wiki/w/Campfire">Campfire</a></p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/thumb/Soul_Campfire_JE1_BE1.gif/150px-Soul_Campfire_JE1_BE1.gif?bf4a7" alt=""><figcaption><p>Cooked in a <a href="https://minecraft.wiki/w/Soul_Campfire">Soul Campfire</a></p></figcaption></figure></div>
 
-<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="https://github.com/user-attachments/assets/faa23787-87a1-4aee-8d45-01ec89b1e3d2" alt="" data-size="line"> <a href="items/foods/baguette.md">Baguette</a></td><td><img src="https://github.com/user-attachments/assets/32798c35-58b5-420e-920e-2d6ee12c84aa" alt="" data-size="line"><a href="items/foods/toast.md">Toast</a></td><td>8</td></tr></tbody></table>
+<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/baguette.png?raw=true" alt="" data-size="line"> <a href="items/foods/baguette.md">Baguette</a></td><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/toast.png?raw=true" alt="" data-size="line"><a href="items/foods/toast.md">Toast</a></td><td>8</td></tr></tbody></table>
 {% endtab %}
 
 {% tab title="StoneCut" %}
@@ -181,7 +181,7 @@ Outputs:
 
 |                                                                                                  |
 | :----------------------------------------------------------------------------------------------: |
-| ![Cobalt Block](https://github.com/user-attachments/assets/4a13c762-0f6f-40af-84e8-d50db1294a5d) |
+| ![Cobalt Block](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/cobalt_block.png?raw=true) |
 
 Items:
 
@@ -201,7 +201,7 @@ e
 {% tab title="Demonic Allay Drop" %}
 
 
-<figure><img src="https://github.com/user-attachments/assets/20dc2cb0-8d87-4157-8db3-bae28ef15b64" alt=""><figcaption><p>Dropped by the <a href="mobs/hostile-mobs/demonic-allay.md">Demonic Allay</a></p></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/entity_icon/demonic_allay.png" alt=""><figcaption><p>Dropped by the <a href="mobs/hostile-mobs/demonic-allay.md">Demonic Allay</a></p></figcaption></figure>
 
 | Item | Amount | Chance of Holding |
 | ---- | ------ | ----------------- |
@@ -227,11 +227,11 @@ e
 {% tab title="End Guard Tower" %}
 
 
-<figure><img src="https://github.com/user-attachments/assets/5343169a-ca09-4e79-b623-7efddc0a2fac" alt=""><figcaption><p>Found in the <a href="sturctures/end-guard-tower.md">End Guard Tower</a></p></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/structures-pixel/EndGuardTowerPixel.png?raw=true" alt=""><figcaption><p>Found in the <a href="sturctures/end-guard-tower.md">End Guard Tower</a></p></figcaption></figure>
 
 | Item                                                                                                                           | Amount | Chance |
 | ------------------------------------------------------------------------------------------------------------------------------ | ------ | ------ |
-| <img src="https://github.com/user-attachments/assets/27891a4d-5b2c-4aef-9b1f-0626acd7e443" alt="" data-size="line"> Raw Astral | 1 - 8  | 1/5    |
+| <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_astral.png?raw=true" alt="" data-size="line"> Raw Astral | 1 - 8  | 1/5    |
 {% endtab %}
 
 {% tab title="Second Tab" %}

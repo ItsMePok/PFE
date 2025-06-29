@@ -1,6 +1,6 @@
 # Block of Medic
 
-![](https://github.com/user-attachments/assets/28cf0752-7ccd-4aa4-91bf-4987fb9da51c)
+![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/MedicBlock.png?raw=true)
 
 {% hint style="danger" %}
 This Page is not complete yet. Check back later

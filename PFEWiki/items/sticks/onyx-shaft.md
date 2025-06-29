@@ -1,6 +1,6 @@
 # Onyx Shaft
 
-<figure><img src="https://github.com/user-attachments/assets/a3414dac-2ab0-4f48-9401-e1724dc29e06" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_shaft.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:onyx\_shaft** <a href="#identifier" id="identifier"></a>
 
@@ -62,13 +62,13 @@
 
 |                                                                                                                             |
 | :-------------------------------------------------------------------------------------------------------------------------: |
-|                ![Onyx Ingot](https://github.com/user-attachments/assets/436247aa-b55d-4e05-aefc-8cfa2fee648a)               |
+|                ![Onyx Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_ingot.png?raw=true)               |
 | ![Crying Obsidian](https://minecraft.wiki/images/thumb/Crying_Obsidian_JE1_BE1.png/150px-Crying_Obsidian_JE1_BE1.png?f1f04) |
-|                ![Onyx Ingot](https://github.com/user-attachments/assets/436247aa-b55d-4e05-aefc-8cfa2fee648a)               |
+|                ![Onyx Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_ingot.png?raw=true)               |
 
 Items:
 
-* <img src="https://github.com/user-attachments/assets/436247aa-b55d-4e05-aefc-8cfa2fee648a" alt="Onyx Ingot" data-size="line"> [Onyx Ingot](../ingots/onyx-ingot.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_ingot.png?raw=true" alt="Onyx Ingot" data-size="line"> [Onyx Ingot](../ingots/onyx-ingot.md)
 * [<img src="https://minecraft.wiki/images/thumb/Crying_Obsidian_JE1_BE1.png/150px-Crying_Obsidian_JE1_BE1.png?f1f04" alt="Crying Obsidian" data-size="line"> Crying Obsidian](https://minecraft.wiki/w/Crying_Obsidian)
 {% endtab %}
 

@@ -1,6 +1,6 @@
 # Sugar Water
 
-<figure><img src="https://github.com/user-attachments/assets/81d985f3-0c44-468e-ba2e-65c26664b823" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/sugar_water.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:sugar\_water** <a href="#identifier" id="identifier"></a>
 
@@ -10,7 +10,7 @@ This item can always be consumed, even if you are not hungry
 
 ## Consuming:
 
-### &#x20;    ![](https://wiki.bedrock.dev/assets/images/concepts/emojis/hud/food.png) **Hunger Replenished**: 1 (<img src="https://github.com/user-attachments/assets/f6b2ec5f-ab15-45ef-88ca-d5a9bde69ea3" alt="" data-size="line">)
+### &#x20;    ![](https://wiki.bedrock.dev/assets/images/concepts/emojis/hud/food.png) **Hunger Replenished**: 1 (<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/hunger_half.png?raw=true" alt="" data-size="line">)
 
 ### &#x20;    <img src="https://minecraft.wiki/images/Saturation_JE1.png?dbba6" alt="" data-size="line"> **Saturation**: 1
 
@@ -32,7 +32,7 @@ This item can always be consumed, even if you are not hungry
 
 | Input                                                                                                                                                          | Reagent                                                                                                                           | Result                                                                                                                                            |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <img src="https://minecraft.wiki/images/Water_Bottle_JE2_BE2.png?acae5" alt="" data-size="line"> [Water Bottle](https://minecraft.wiki/w/Potion#Base_potions)  | <img src="https://minecraft.wiki/images/Sugar_JE2_BE2.png?9185b" alt="" data-size="line"> [Sugar](https://minecraft.wiki/w/Sugar) | <img src="https://github.com/user-attachments/assets/81d985f3-0c44-468e-ba2e-65c26664b823" alt="" data-size="line"> [Sugar Water](sugar-water.md) |
+| <img src="https://minecraft.wiki/images/Water_Bottle_JE2_BE2.png?acae5" alt="" data-size="line"> [Water Bottle](https://minecraft.wiki/w/Potion#Base_potions)  | <img src="https://minecraft.wiki/images/Sugar_JE2_BE2.png?9185b" alt="" data-size="line"> [Sugar](https://minecraft.wiki/w/Sugar) | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/sugar_water.png?raw=true" alt="" data-size="line"> [Sugar Water](sugar-water.md) |
 
 {% hint style="warning" %}
 **↓ Ignore this if you did not modify PFE prior to importing ↓**
@@ -44,12 +44,12 @@ This recipe assumes that you did not remove the **minecraft:brew\_water\_sugar**
 {% tab title="Trading" %}
 
 
-<figure><img src="https://github.com/ItsMePok/PFE/assets/136857747/fe224e70-cbe3-4056-ad9f-48367bd2edd4" alt=""><figcaption><p>Sold by the <a href="../../mobs/traders/shopkeeper.md">Shopkeeper</a></p></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/Entity/shopkeeper.png?raw=true" alt=""><figcaption><p>Sold by the <a href="../../mobs/traders/shopkeeper.md">Shopkeeper</a></p></figcaption></figure>
 
 
 
 | Wants                                                                                                                                                                                                                                                                                                                    | Gives                                                                                                                                             |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [<img src="https://pfewiki.gitbook.io/~gitbook/image?url=https%3A%2F%2Fgithub.com%2FItsMePok%2FPFE%2Fassets%2F136857747%2Fe418b9e5-fabf-44cd-9775-f353e3b512ac&#x26;width=768&#x26;dpr=1&#x26;quality=100&#x26;sign=ffcb5343&#x26;sv=1" alt="" data-size="line">Banished Star x2](../banished-stars/banished-star-x2.md) | <img src="https://github.com/user-attachments/assets/81d985f3-0c44-468e-ba2e-65c26664b823" alt="" data-size="line"> [Sugar Water](sugar-water.md) |
+| [<img src="https://pfewiki.gitbook.io/~gitbook/image?url=https%3A%2F%2Fgithub.com%2FItsMePok%2FPFE%2Fassets%2F136857747%2Fe418b9e5-fabf-44cd-9775-f353e3b512ac&#x26;width=768&#x26;dpr=1&#x26;quality=100&#x26;sign=ffcb5343&#x26;sv=1" alt="" data-size="line">Banished Star x2](../banished-stars/banished-star-x2.md) | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/sugar_water.png?raw=true" alt="" data-size="line"> [Sugar Water](sugar-water.md) |
 {% endtab %}
 {% endtabs %}

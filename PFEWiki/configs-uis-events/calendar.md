@@ -16,12 +16,12 @@ This recipe is shapeless
 
 |     |                                                                                                                                      |
 | :-: | :----------------------------------------------------------------------------------------------------------------------------------: |
-|     | <img src="https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694" alt="Cobalt Ingot." data-size="original"> |
+|     | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="Cobalt Ingot." data-size="original"> |
 |     |                                   ![Paper.](https://minecraft.wiki/images/Paper_JE2_BE2.png?9c3be)                                   |
 
 Items:
 
-* <img src="https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694" alt="Cobalt Ingot." data-size="line"> [Cobalt Ingot](../items/ingots/cobalt-ingot.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="Cobalt Ingot." data-size="line"> [Cobalt Ingot](../items/ingots/cobalt-ingot.md)
 * <img src="https://minecraft.wiki/images/Paper_JE2_BE2.png?9c3be" alt="Paper." data-size="line"> [Paper](https://minecraft.wiki/w/Paper)
 {% endtab %}
 {% endtabs %}

@@ -1,6 +1,6 @@
 # Amethyst Haxel
 
-![](https://github.com/ItsMePok/PFE/assets/136857747/41b308d8-3549-4fac-87eb-ed857050f458)
+![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/amethyst_haxel.png?raw=true)
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:amethyst\_haxel**
 

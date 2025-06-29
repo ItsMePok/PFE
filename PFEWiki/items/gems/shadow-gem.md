@@ -1,6 +1,6 @@
 # Shadow Gem
 
-![poke\_shadow\_gem](https://github.com/ItsMePok/PFE/assets/136857747/bab8466b-d1b5-4d7c-874a-8c18e9415e3c)
+![poke\_shadow\_gem](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shadow_gem.png?raw=true)
 
 Item Identifier: **poke:shadow\_gem**
 

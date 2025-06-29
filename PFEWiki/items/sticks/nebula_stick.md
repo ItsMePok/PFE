@@ -1,6 +1,6 @@
 # Nebula Stick
 
-<figure><img src="https://github.com/user-attachments/assets/35eabd0d-edb3-4a69-9890-d02d3674dd6d" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_stick.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:nebula\_stick** <a href="#identifier" id="identifier"></a>
 
@@ -16,12 +16,12 @@
 
 |                                                                                                  |
 | :----------------------------------------------------------------------------------------------: |
-| ![Nebula Ingot](https://github.com/user-attachments/assets/21b0e1ab-de86-4f43-8618-453683820f4b) |
-| ![Nebula Ingot](https://github.com/user-attachments/assets/21b0e1ab-de86-4f43-8618-453683820f4b) |
-| ![Nebula Ingot](https://github.com/user-attachments/assets/21b0e1ab-de86-4f43-8618-453683820f4b) |
+| ![Nebula Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_ingot.png?raw=true) |
+| ![Nebula Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_ingot.png?raw=true) |
+| ![Nebula Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_ingot.png?raw=true) |
 
 Items:
 
-* <img src="https://github.com/user-attachments/assets/21b0e1ab-de86-4f43-8618-453683820f4b" alt="Nebula Ingot" data-size="line"> [Nebula Ingot](../ingots/nebula-ingot.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_ingot.png?raw=true" alt="Nebula Ingot" data-size="line"> [Nebula Ingot](../ingots/nebula-ingot.md)
 {% endtab %}
 {% endtabs %}

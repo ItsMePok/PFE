@@ -1,6 +1,6 @@
 # Empty Pottery Sherd
 
-<figure><img src="https://github.com/user-attachments/assets/3cf2195d-be7c-4c99-8d40-6e3291ae974e" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/empty_pottery_sherd.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 
 

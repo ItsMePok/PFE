@@ -1,6 +1,6 @@
 # Holy Haxel
 
-![](https://github.com/ItsMePok/PFE/assets/136857747/f94c8a21-7abe-4e4b-bc19-e67eb957f71c)
+![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/holy_haxel.png?raw=true)
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:holy\_haxel**
 

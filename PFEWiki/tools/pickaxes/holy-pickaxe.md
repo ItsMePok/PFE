@@ -1,6 +1,6 @@
 # Holy Pickaxe
 
-<figure><img src="https://github.com/user-attachments/assets/af3c03d9-d11b-4fe4-9284-d4fb1451ed2c" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/opaqueAlts/holy_pickaxe.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:holy\_pickaxe** <a href="#identifier" id="identifier"></a>
 
@@ -22,7 +22,7 @@
 
 ### Repair Items: <a href="#repair" id="repair"></a>
 
-* [<img src="https://github.com/ItsMePok/PFE/assets/136857747/f15d8501-f297-4a77-b6de-3681297cdb09" alt="" data-size="line">Repair Core](../../items/cores/repair-core.md) (100% Durability)
+* [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/repair_core.png?raw=true" alt="" data-size="line">Repair Core](../../items/cores/repair-core.md) (100% Durability)
 * Holy Ingot (25% Durability)
 * Holy Nugget (2.8% Durability)
 
@@ -38,14 +38,14 @@
 
 |                                                                                                |                                                                                                |                                                                                                |
 | :--------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------: |
-| ![Holy Ingot](https://github.com/user-attachments/assets/3e6cd2a4-3434-4f70-8255-9cd357bfb920) | ![Holy Ingot](https://github.com/user-attachments/assets/3e6cd2a4-3434-4f70-8255-9cd357bfb920) | ![Holy Ingot](https://github.com/user-attachments/assets/3e6cd2a4-3434-4f70-8255-9cd357bfb920) |
-|                                                                                                | ![Onyx Shaft](https://github.com/user-attachments/assets/a3414dac-2ab0-4f48-9401-e1724dc29e06) |                                                                                                |
-|                                                                                                | ![Onyx Shaft](https://github.com/user-attachments/assets/a3414dac-2ab0-4f48-9401-e1724dc29e06) |                                                                                                |
+| ![Holy Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/holy_ingot.png?raw=true) | ![Holy Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/holy_ingot.png?raw=true) | ![Holy Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/holy_ingot.png?raw=true) |
+|                                                                                                | ![Onyx Shaft](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_shaft.png?raw=true) |                                                                                                |
+|                                                                                                | ![Onyx Shaft](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_shaft.png?raw=true) |                                                                                                |
 
 Items:
 
-* <img src="https://github.com/user-attachments/assets/3e6cd2a4-3434-4f70-8255-9cd357bfb920" alt="Holy Ingot" data-size="line">Holy Ingot
-* [<img src="https://github.com/user-attachments/assets/a3414dac-2ab0-4f48-9401-e1724dc29e06" alt="Onyx Shaft" data-size="line">Onyx Shaft](../../items/sticks/onyx-shaft.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/holy_ingot.png?raw=true" alt="Holy Ingot" data-size="line">Holy Ingot
+* [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_shaft.png?raw=true" alt="Onyx Shaft" data-size="line">Onyx Shaft](../../items/sticks/onyx-shaft.md)
 {% endtab %}
 {% endtabs %}
 

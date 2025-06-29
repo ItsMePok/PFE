@@ -1,6 +1,6 @@
 # Galaxy Arrow
 
-![](https://github.com/ItsMePok/PFE/assets/136857747/df8e95d2-c1e2-44fe-a1bb-6b1dd5ff2304)
+![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/galaxy_arrow_item.png?raw=true)
 
 Item Identifier: **poke:galaxy\_arrow**
 

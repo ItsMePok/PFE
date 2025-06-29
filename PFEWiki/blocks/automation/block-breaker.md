@@ -21,9 +21,9 @@
 
 |                                                                                                  |                                                                                            |                                                                                                  |
 | :----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: |
-| ![Cobalt Ingot](https://github.com/user-attachments/assets/f2b33b06-67a6-4a44-9c12-0259f8eb17a4) |  ![Planks](https://minecraft.wiki/images/thumb/Oak_Planks.png/150px-Oak_Planks.png?d9efa)  | ![Cobalt Ingot](https://github.com/user-attachments/assets/f2b33b06-67a6-4a44-9c12-0259f8eb17a4) |
-|     ![Planks](https://minecraft.wiki/images/thumb/Oak_Planks.png/150px-Oak_Planks.png?d9efa)     | ![](https://github.com/ItsMePok/PFE/assets/136857747/a77121b0-b01f-4fee-8022-bdde925d3c38) |     ![Planks](https://minecraft.wiki/images/thumb/Oak_Planks.png/150px-Oak_Planks.png?d9efa)     |
-| ![Cobalt Ingot](https://github.com/user-attachments/assets/f2b33b06-67a6-4a44-9c12-0259f8eb17a4) |  ![Planks](https://minecraft.wiki/images/thumb/Oak_Planks.png/150px-Oak_Planks.png?d9efa)  | ![Cobalt Ingot](https://github.com/user-attachments/assets/f2b33b06-67a6-4a44-9c12-0259f8eb17a4) |
+| ![Cobalt Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) |  ![Planks](https://minecraft.wiki/images/thumb/Oak_Planks.png/150px-Oak_Planks.png?d9efa)  | ![Cobalt Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) |
+|     ![Planks](https://minecraft.wiki/images/thumb/Oak_Planks.png/150px-Oak_Planks.png?d9efa)     | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/iron_haxel.png?raw=true) |     ![Planks](https://minecraft.wiki/images/thumb/Oak_Planks.png/150px-Oak_Planks.png?d9efa)     |
+| ![Cobalt Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) |  ![Planks](https://minecraft.wiki/images/thumb/Oak_Planks.png/150px-Oak_Planks.png?d9efa)  | ![Cobalt Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) |
 
 <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/Automation/block_breaker.png?raw=true" alt="Block Breaker." data-size="line">
 {% endtab %}
@@ -37,6 +37,6 @@ Found in the [Abandoned Ship](https://pfewiki.gitbook.io/home/sturctures/abandon
 
 | Item                                                                                                                             | Amount | Weight |
 | -------------------------------------------------------------------------------------------------------------------------------- | ------ | :----: |
-| <img src="https://github.com/user-attachments/assets/59e91e4a-dab2-4e5f-806e-1af64adc4099" alt="" data-size="line">Block Breaker | 1      |    2   |
+| <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/Automation/block_breaker.png?raw=true" alt="" data-size="line">Block Breaker | 1      |    2   |
 {% endtab %}
 {% endtabs %}

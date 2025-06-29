@@ -21,6 +21,6 @@ Any vanilla files here do not have a significant impact on gameplay & can be rem
 
 **minecraft:brew\_water\_sugar**
 
-* Used to brew <img src="https://github.com/user-attachments/assets/81d985f3-0c44-468e-ba2e-65c26664b823" alt="" data-size="line"> [Sugar Water](../items/foods/sugar-water.md) (there is alternative ways to get this item other than brewing)
+* Used to brew <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/sugar_water.png?raw=true" alt="" data-size="line"> [Sugar Water](../items/foods/sugar-water.md) (there is alternative ways to get this item other than brewing)
 * Location: BP/recipes/food/sugar\_water.json
 * Used in vanilla as a way to craft the [Mundane Potion](https://minecraft.wiki/w/Potion#Base_potions) (there is other ways to get this in vanilla other than this recipe)

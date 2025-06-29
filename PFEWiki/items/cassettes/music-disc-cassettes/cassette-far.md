@@ -56,7 +56,7 @@ Outputs:
 `Chance` is getting at least the lowest `Amount` of that item
 {% endhint %}
 
-<figure><img src="https://github.com/user-attachments/assets/ecb51b78-8302-4409-b89a-e3cc08226e4b" alt=""><figcaption><p>Found in the <a href="../../../sturctures/abandoned-ship.md">Abandoned Ship</a></p></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/structures-pixel/AbandonedShip.png?raw=true" alt=""><figcaption><p>Found in the <a href="../../../sturctures/abandoned-ship.md">Abandoned Ship</a></p></figcaption></figure>
 
 | Item                                                                                                                                                       | Amount | Chance |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------ |

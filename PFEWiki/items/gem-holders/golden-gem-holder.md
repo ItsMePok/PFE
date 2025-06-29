@@ -1,6 +1,6 @@
 # Golden Gem Holder
 
-<figure><img src="https://github.com/user-attachments/assets/f55ef824-6a4d-471b-9af7-4fd67f2299e0" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/golden_holder.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: poke:gem\_holder <a href="#identifier" id="identifier"></a>
 

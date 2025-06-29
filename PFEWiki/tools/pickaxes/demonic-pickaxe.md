@@ -1,6 +1,6 @@
 # Demonic Pickaxe
 
-<figure><img src="https://github.com/user-attachments/assets/4a58e30f-0f3b-4a71-9ffa-97d8257b4038" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/opaqueAlts/demonic_pickaxe.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:demonic\_pickaxe** <a href="#identifier" id="identifier"></a>
 
@@ -22,8 +22,8 @@
 
 ### Repair Items: <a href="#repair" id="repair"></a>
 
-* [<img src="https://github.com/ItsMePok/PFE/assets/136857747/f15d8501-f297-4a77-b6de-3681297cdb09" alt="" data-size="line">Repair Core](../../items/cores/repair-core.md) (100% Durability)
-* <img src="https://github.com/user-attachments/assets/2332c89f-38d6-4a08-944a-9421758259aa" alt="Demonic Ingot" data-size="line">Demonic Ingot (25% Durability)
+* [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/repair_core.png?raw=true" alt="" data-size="line">Repair Core](../../items/cores/repair-core.md) (100% Durability)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true" alt="Demonic Ingot" data-size="line">Demonic Ingot (25% Durability)
 * Demonic Nugget (2.8% Durability)
 
 ### Usage:
@@ -38,14 +38,14 @@
 
 |                                                                                                   |                                                                                                   |                                                                                                   |
 | :-----------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: |
-| ![Demonic Ingot](https://github.com/user-attachments/assets/2332c89f-38d6-4a08-944a-9421758259aa) | ![Demonic Ingot](https://github.com/user-attachments/assets/2332c89f-38d6-4a08-944a-9421758259aa) | ![Demonic Ingot](https://github.com/user-attachments/assets/2332c89f-38d6-4a08-944a-9421758259aa) |
-|                                                                                                   |   ![Onyx Shaft](https://github.com/user-attachments/assets/a3414dac-2ab0-4f48-9401-e1724dc29e06)  |                                                                                                   |
-|                                                                                                   |   ![Onyx Shaft](https://github.com/user-attachments/assets/a3414dac-2ab0-4f48-9401-e1724dc29e06)  |                                                                                                   |
+| ![Demonic Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true) | ![Demonic Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true) | ![Demonic Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true) |
+|                                                                                                   |   ![Onyx Shaft](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_shaft.png?raw=true)  |                                                                                                   |
+|                                                                                                   |   ![Onyx Shaft](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_shaft.png?raw=true)  |                                                                                                   |
 
 Items:
 
-* <img src="https://github.com/user-attachments/assets/2332c89f-38d6-4a08-944a-9421758259aa" alt="Demonic Ingot" data-size="line">Demonic Ingot
-* [<img src="https://github.com/user-attachments/assets/a3414dac-2ab0-4f48-9401-e1724dc29e06" alt="Onyx Shaft" data-size="line">Onyx Shaft](../../items/sticks/onyx-shaft.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true" alt="Demonic Ingot" data-size="line">Demonic Ingot
+* [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_shaft.png?raw=true" alt="Onyx Shaft" data-size="line">Onyx Shaft](../../items/sticks/onyx-shaft.md)
 {% endtab %}
 {% endtabs %}
 

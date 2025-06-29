@@ -1,6 +1,6 @@
 # Volt Arrow
 
-![](https://github.com/ItsMePok/PFE/assets/136857747/7b81571a-8e6b-4f10-b2b9-2e365962ec0e)
+![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/volt_arrow_item.png?raw=true)
 
 Item Identifier: **poke:volt\_arrow**
 

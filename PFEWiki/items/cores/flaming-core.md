@@ -22,7 +22,7 @@ description: 'Last updated to match: v1.2.94'
 
 {% tabs %}
 {% tab title="First Tab" %}
-<figure><img src="https://github.com/user-attachments/assets/30c5b799-c00c-4ecd-b540-59b99cce7cbe" alt=""><figcaption><p>Sold by the <a href="../../mobs/traders/token-trader.md">Token Trader</a></p></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/entity_icon/TokenTrader.png?raw=true" alt=""><figcaption><p>Sold by the <a href="../../mobs/traders/token-trader.md">Token Trader</a></p></figcaption></figure>
 
 <table data-full-width="false"><thead><tr><th align="center">Wants</th><th width="88" align="center">Amount</th><th align="center">Gives</th><th width="85" align="center">Amount</th></tr></thead><tbody><tr><td align="center"><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/diamond_token.png?raw=true" alt="Diamond Token." data-size="line"> <a href="../currency/tokens/diamond-token.md">Diamond Token</a></td><td align="center">1</td><td align="center"><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/flaming_core.png?raw=true" alt="Flaming Core." data-size="line"> Flaming Core</td><td align="center">1</td></tr></tbody></table>
 {% endtab %}

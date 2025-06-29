@@ -1,6 +1,6 @@
 # Ender Holder
 
-<figure><img src="https://github.com/user-attachments/assets/a6ee6653-c855-4657-9a5c-e10bb7b81ade" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/ender_holder.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: poke:ender\_holder <a href="#identifier" id="identifier"></a>
 
@@ -14,13 +14,13 @@
 
 |                                                                                                 |                                                                                                 |                                                                                                 |
 | :---------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: | ----------------------------------------------------------------------------------------------- |
-|                                                                                                 | ![Shade Ingot](https://github.com/user-attachments/assets/98da9682-eaf5-4bb5-932c-1c12295decc7) |                                                                                                 |
-| ![Shade Ingot](https://github.com/user-attachments/assets/98da9682-eaf5-4bb5-932c-1c12295decc7) |          ![Eye of Ender.](https://minecraft.wiki/images/Eye_of_Ender_JE2_BE2.png?3e29b)         | ![Shade Ingot](https://github.com/user-attachments/assets/98da9682-eaf5-4bb5-932c-1c12295decc7) |
-|                                                                                                 | ![Shade Ingot](https://github.com/user-attachments/assets/98da9682-eaf5-4bb5-932c-1c12295decc7) |                                                                                                 |
+|                                                                                                 | ![Shade Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_ingot.png?raw=true) |                                                                                                 |
+| ![Shade Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_ingot.png?raw=true) |          ![Eye of Ender.](https://minecraft.wiki/images/Eye_of_Ender_JE2_BE2.png?3e29b)         | ![Shade Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_ingot.png?raw=true) |
+|                                                                                                 | ![Shade Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_ingot.png?raw=true) |                                                                                                 |
 
 ### Items:
 
-* <img src="https://github.com/user-attachments/assets/98da9682-eaf5-4bb5-932c-1c12295decc7" alt="Shade Ingot" data-size="line"> [Shade Ingot](../ingots/shade-ingot.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_ingot.png?raw=true" alt="Shade Ingot" data-size="line"> [Shade Ingot](../ingots/shade-ingot.md)
 * <img src="https://minecraft.wiki/images/Eye_of_Ender_JE2_BE2.png?3e29b" alt="Eye of Ender." data-size="line"> [Eye of Ender](https://minecraft.wiki/w/Eye_of_Ender)
 {% endtab %}
 {% endtabs %}

@@ -1,6 +1,6 @@
 # Knightling Helmet
 
-![](https://github.com/ItsMePok/PFE/assets/136857747/e0957c68-25ab-47ac-b92d-d8f3d6ef0a85)
+![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/knightling_helmet.png?raw=true)
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:knightling\_helmet**
 

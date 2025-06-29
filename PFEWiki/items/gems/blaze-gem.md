@@ -1,6 +1,6 @@
 # Blaze Gem
 
-![poke\_blaze\_gem](https://github.com/ItsMePok/PFE/assets/136857747/ee393571-169f-41f2-b163-5eb8740d1c08)
+![poke\_blaze\_gem](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/blaze_gem.png?raw=true)
 
 Item Identifier: **poke:blaze\_gem**
 

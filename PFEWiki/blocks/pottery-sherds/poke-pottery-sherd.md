@@ -1,6 +1,6 @@
 # Poke Pottery Sherd
 
-<figure><img src="https://github.com/user-attachments/assets/1cc7dd0a-9b4e-4fa9-a368-0e726cc01cb8" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/poke_pottery_sherd.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 
 

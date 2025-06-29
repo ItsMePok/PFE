@@ -1,6 +1,6 @@
 # Shade Gem
 
-![](https://github.com/ItsMePok/PFE/assets/136857747/b74e8ef3-ce5f-4d47-8316-4c304a0bd605)
+![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_gem.png?raw=true)
 
 Item Identifier: **poke:shade\_gem**
 

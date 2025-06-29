@@ -1,6 +1,6 @@
 # Holy Arrow
 
-![](https://github.com/ItsMePok/PFE/assets/136857747/26e6bfb8-056e-4cf1-81bb-9d3a32cd4a58)
+![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/holy_arrow_item.png?raw=true)
 
 Item Identifier: **poke:holy\_arrow**
 

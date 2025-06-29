@@ -1,6 +1,6 @@
 # Broken Conduit
 
-![](https://github.com/ItsMePok/PFE/assets/136857747/57094c78-7e94-4e53-9838-e60912818095)
+![](https://github.com/ItsMePok/PFE/blob/wikiAssets/Structures/broken_conduit_cold.png?raw=true)
 
 **Structure identifiers:**
 
@@ -47,15 +47,15 @@ A higher weight makes it more likely to be selected from that pool
 | Cassette - Axolotl                                                                                                                                                                | 1      | 1      |
 | Cassette - Relic                                                                                                                                                                  | 1      | 1      |
 | Crab Pal                                                                                                                                                                          | 1      | 1      |
-| [<img src="https://github.com/ItsMePok/PFE/assets/136857747/96e32df1-7683-45df-b3c1-b3f9626231ed" alt="" data-size="line">Boss Event Bounty](../items/misc/boss-event-bounty.md)  | 1      | 1      |
-| [<img src="https://github.com/ItsMePok/PFE/assets/136857747/1c78ba2a-4a5b-4b7b-83ff-ed21aa75ebd8" alt="" data-size="line">Copper Token](../items/currency/tokens/copper-token.md) | 1      | 1      |
-| [<img src="https://github.com/user-attachments/assets/ef6c978f-76ec-48e4-aa89-29c2d98f4624" alt="" data-size="line">Plastic](../items/crafting-components/plastic.md)             | 1      | 1      |
+| [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/bounty.png?raw=true" alt="" data-size="line">Boss Event Bounty](../items/misc/boss-event-bounty.md)  | 1      | 1      |
+| [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/copper_token.png?raw=true" alt="" data-size="line">Copper Token](../items/currency/tokens/copper-token.md) | 1      | 1      |
+| [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true" alt="" data-size="line">Plastic](../items/crafting-components/plastic.md)             | 1      | 1      |
 | [<img src="https://minecraft.wiki/images/Nautilus_Shell_JE1_BE2.png?d43a1" alt="" data-size="line">Nautilus Shell](https://minecraft.wiki/w/Nautilus_Shell)                       | 1      | 1      |
-| [<img src="https://github.com/ItsMePok/PFE/assets/136857747/aa3d5a31-9866-4bd1-bc09-ba7fa6775f7e" alt="" data-size="line">Iron Token](../items/currency/tokens/iron-token.md)     | 1      | 2      |
+| [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/iron_token.png?raw=true" alt="" data-size="line">Iron Token](../items/currency/tokens/iron-token.md)     | 1      | 2      |
 | [<img src="https://minecraft.wiki/images/Nether_Quartz_JE2_BE2.png?d0049" alt="" data-size="line">Nether Quartz](https://minecraft.wiki/w/Nether_Quartz)                          | 1      | 2      |
 | [<img src="https://minecraft.wiki/images/Prismarine_Shard_JE2_BE2.png?ef03b" alt="" data-size="line">Prismarine Shard](https://minecraft.wiki/w/Prismarine_Shard)                 | 1      | 2      |
 | [<img src="https://minecraft.wiki/images/Prismarine_Crystals_JE2_BE2.png?8d8af" alt="" data-size="line">Prismarine Crystals](https://minecraft.wiki/w/Prismarine_Crystals)        | 1      | 2      |
 
 ### In-game Screenshots:
 
-![Broken Conduit in a Coral Reef](https://github.com/ItsMePok/PFE/assets/136857747/bf33272c-1493-4941-bb4b-f54f029e8dbf) ![Broken Conduit in a Warm Ocean](https://github.com/ItsMePok/PFE/assets/136857747/d6e475d6-1e94-4ee6-8566-c08d83927195) ![Broken Conduit in a Cold Ocean near a cave entrance](https://github.com/ItsMePok/PFE/assets/136857747/cbe2be3e-ec38-41ae-9f79-d2e1b8376bb0) ![Broken Conduit in a Cold Ocean](https://github.com/ItsMePok/PFE/assets/136857747/1f2de30b-5766-4cc6-9a47-335fa3b32a4f)
+![Broken Conduit in a Coral Reef](https://github.com/ItsMePok/PFE/blob/wikiAssets/Structures/BrokenConduitInGameCoralReef.png?raw=true) ![Broken Conduit in a Warm Ocean](https://github.com/ItsMePok/PFE/blob/wikiAssets/Structures/BrokenConduitInGameWarmOcean.png?raw=true) ![Broken Conduit in a Cold Ocean near a cave entrance](https://github.com/ItsMePok/PFE/blob/wikiAssets/Structures/BrokenConduitInGameColdCave.png?raw=true) ![Broken Conduit in a Cold Ocean](https://github.com/ItsMePok/PFE/blob/wikiAssets/Structures/BrokenConduitInGameColdOcean.png?raw=true)

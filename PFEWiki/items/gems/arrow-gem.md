@@ -1,6 +1,6 @@
 # Arrow Gem
 
-![poke\_arrow\_gem](https://github.com/ItsMePok/PFE/assets/136857747/452458db-3f6e-4ed9-8967-5c60951f16ca)
+![poke\_arrow\_gem](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/arrow_gem.png?raw=true)
 
 Item Identifier: **poke:arrow\_gem**
 

@@ -1,6 +1,6 @@
 # Diamond Haxel
 
-![](https://github.com/ItsMePok/PFE/assets/136857747/f68c6358-2870-4c8f-9143-746545071a10)
+![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/diamond_haxel.png?raw=true)
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:diamond\_haxel**
 

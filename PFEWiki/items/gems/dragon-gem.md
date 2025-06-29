@@ -1,6 +1,6 @@
 # Dragon Gem
 
-![poke\_dragon\_gem](https://github.com/ItsMePok/PFE/assets/136857747/a2b7204b-1d17-4b68-9cc2-087bc88f8485)
+![poke\_dragon\_gem](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/dragon_gem.png?raw=true)
 
 Item Identifier: **poke:dragon\_gem**
 

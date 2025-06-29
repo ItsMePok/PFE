@@ -1,6 +1,6 @@
 # Banished Hammer
 
-<figure><img src="https://github.com/user-attachments/assets/9d9cce25-0d83-4086-9e74-0f97c52190d4" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/ban_hammer.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: poke:ban\_hammer <a href="#identifier" id="identifier"></a>
 
@@ -29,15 +29,15 @@ This item will not take durability
 
 |                                                                                                           |                                                                                                                                               |                                                                                                           |
 | :-------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------: |
-|                                                                                                           |                                                                                                                                               | ![Ban Hammer Head](https://github.com/ItsMePok/PFE/assets/136857747/ed85781c-47db-4eea-8592-f3065578032e) |
-|                                                                                                           | <img src="https://github.com/ItsMePok/PFE/assets/136857747/11c70f17-8411-4e05-bec6-497ff08acd81" alt="Ban Hammer Shaft" data-size="original"> |                                                                                                           |
-| ![Ban Hammer Grip](https://github.com/ItsMePok/PFE/assets/136857747/85f6248c-a470-4cb1-88c9-ff685cee1854) |                                                                                                                                               |                                                                                                           |
+|                                                                                                           |                                                                                                                                               | ![Ban Hammer Head](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/ban_hammer_head.png?raw=true) |
+|                                                                                                           | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/ban_hammer_shaft.png?raw=true" alt="Ban Hammer Shaft" data-size="original"> |                                                                                                           |
+| ![Ban Hammer Grip](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/ban_hammer_grip.png?raw=true) |                                                                                                                                               |                                                                                                           |
 
 Items:
 
-* <img src="https://github.com/ItsMePok/PFE/assets/136857747/85f6248c-a470-4cb1-88c9-ff685cee1854" alt="Ban Hammer Grip" data-size="line"> [Ban Hammer Grip](ban-hammer-grip.md)
-* <img src="https://github.com/ItsMePok/PFE/assets/136857747/ed85781c-47db-4eea-8592-f3065578032e" alt="Ban Hammer Head" data-size="line"> [Ban Hammer Head](ban-hammer-head.md)
-* <img src="https://github.com/ItsMePok/PFE/assets/136857747/11c70f17-8411-4e05-bec6-497ff08acd81" alt="Ban Hammer Shaft" data-size="line"> [Ban Hammer Shaft](../../items/sticks/ban-hammer-shaft.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/ban_hammer_grip.png?raw=true" alt="Ban Hammer Grip" data-size="line"> [Ban Hammer Grip](ban-hammer-grip.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/ban_hammer_head.png?raw=true" alt="Ban Hammer Head" data-size="line"> [Ban Hammer Head](ban-hammer-head.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/ban_hammer_shaft.png?raw=true" alt="Ban Hammer Shaft" data-size="line"> [Ban Hammer Shaft](../../items/sticks/ban-hammer-shaft.md)
 {% endtab %}
 {% endtabs %}
 

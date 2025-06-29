@@ -1,6 +1,6 @@
 # Deepslate Cobalt Ore
 
-<figure><img src="https://github.com/user-attachments/assets/8358f27d-dcc5-48c1-b9b8-ed6a006f53d2" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/ore/DeepslateCobaltOre.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 The block texture above could not be 100% accurate if you have a texture pack applied that changes the Deepslate texture&#x20;
@@ -8,7 +8,7 @@ The block texture above could not be 100% accurate if you have a texture pack ap
 
 ## <img src="https://minecraft.wiki/images/Book_and_Quill_JE2_BE2.png?2128f" alt="Book and Quill." data-size="line"> Description: <a href="#identifier" id="identifier"></a>
 
-* <img src="https://github.com/user-attachments/assets/8358f27d-dcc5-48c1-b9b8-ed6a006f53d2" alt="Deepslate Cobalt Ore." data-size="line"> Deepslate Cobalt Ore is an ore that when refined is used in obtaining various things in PFE
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/ore/DeepslateCobaltOre.png?raw=true" alt="Deepslate Cobalt Ore." data-size="line"> Deepslate Cobalt Ore is an ore that when refined is used in obtaining various things in PFE
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:deepslate\_cobalt\_ore** <a href="#identifier" id="identifier"></a>
 
@@ -34,7 +34,7 @@ The block texture above could not be 100% accurate if you have a texture pack ap
 ### Replaces:
 
 * <img src="https://minecraft.wiki/images/thumb/Stone_JE8.png/150px-Stone_JE8.png?b5028" alt="Stone." data-size="line"> [Stone](https://minecraft.wiki/w/Stone)
-  * This would replace as <img src="https://github.com/user-attachments/assets/b764cf3c-bec6-4819-9412-f69c94e783e5" alt="Cobalt Ore." data-size="line"> [Cobalt Ore](../stone-ores/cobalt-ore.md) instead
+  * This would replace as <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/ore/cobaltOre.png?raw=true" alt="Cobalt Ore." data-size="line"> [Cobalt Ore](../stone-ores/cobalt-ore.md) instead
   * This also includes
     * <img src="https://minecraft.wiki/images/thumb/Diorite.png/150px-Diorite.png?58334" alt="Diorite." data-size="line"> [Diorite](https://minecraft.wiki/w/Diorite)
     * <img src="https://minecraft.wiki/images/thumb/Granite.png/150px-Granite.png?9cb6d" alt="Granite." data-size="line"> [Granite](https://minecraft.wiki/w/Granite)

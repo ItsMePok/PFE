@@ -1,6 +1,6 @@
 # Snake Pottery Sherd
 
-<figure><img src="https://github.com/user-attachments/assets/9e3df67d-5067-4fc2-a2da-498b7595a331" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/snake_pottery_sherd.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## Usage: Can be crafted into a <img src="https://minecraft.wiki/images/thumb/Decorated_Pot_(N)_JE2_BE2.png/150px-Decorated_Pot_(N)_JE2_BE2.png?1209f" alt="" data-size="line"> [Decorated Pot](https://minecraft.wiki/w/Decorated\_Pot)
 

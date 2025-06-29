@@ -1,6 +1,6 @@
 # Block of Void
 
-![](https://github.com/user-attachments/assets/98e8e0e5-c086-4e51-b3a8-220d76d43a96)
+![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/VoidBlock.png?raw=true)
 
 {% hint style="danger" %}
 This Page is not complete yet. Check back later

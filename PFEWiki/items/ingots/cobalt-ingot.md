@@ -2,7 +2,7 @@
 
 
 
-<figure><img src="https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: poke:cobalt\_ingot <a href="#identifier" id="identifier"></a>
 
@@ -19,7 +19,7 @@
 ## Potions
 
 * Cobalt Potion
-  * <img src="https://minecraft.wiki/images/Water_Bottle_JE2_BE2.png?acae5" alt="" data-size="line"> [Awkward Potion](https://minecraft.wiki/w/Potion#Base_potions) + <img src="https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694" alt="Cobalt Ingot." data-size="line"> Cobalt Ingot
+  * <img src="https://minecraft.wiki/images/Water_Bottle_JE2_BE2.png?acae5" alt="" data-size="line"> [Awkward Potion](https://minecraft.wiki/w/Potion#Base_potions) + <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="Cobalt Ingot." data-size="line"> Cobalt Ingot
 
 {% hint style="info" %}
 More info about brewing can be found in the: [brewing-guide.md](../../misc-other-info/brewing-guide.md "mention")
@@ -27,12 +27,12 @@ More info about brewing can be found in the: [brewing-guide.md](../../misc-other
 {% endtab %}
 
 {% tab title="Used in Recips for" %}
-* <img src="https://github.com/user-attachments/assets/8cdeb228-b758-4b2c-873a-208cf8bcdc77" alt="Cobalt Nugget" data-size="line">Cobalt Nugget
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_nugget.png?raw=true" alt="Cobalt Nugget" data-size="line">Cobalt Nugget
 * Heart of the Sea
 * Cobalt Trapdoor
 * Cobalt Glass
 * Magnet Block
-* [<img src="https://github.com/user-attachments/assets/4a13c762-0f6f-40af-84e8-d50db1294a5d" alt="Cobalt Block" data-size="line">Cobalt Block](../../blocks/ore-blocks/cobalt-block.md)
+* [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/cobalt_block.png?raw=true" alt="Cobalt Block" data-size="line">Cobalt Block](../../blocks/ore-blocks/cobalt-block.md)
 * Duster
 * Dirter
 * Calibrated Cobblestone Generator
@@ -64,7 +64,7 @@ More info about brewing can be found in the: [brewing-guide.md](../../misc-other
 {% tab title="Smelting" %}
 <div><figure><img src="https://minecraft.wiki/images/Lit_Furnace_(S).gif?40e71" alt=""><figcaption><p>      Smelted in a <a href="https://minecraft.wiki/w/Furnace">Furnace</a>     </p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/thumb/Lit_Blast_Furnace_JE1.gif/150px-Lit_Blast_Furnace_JE1.gif?dc6a7" alt="Blast Furnace."><figcaption><p>Smelted in a <a href="https://minecraft.wiki/w/Blast_Furnace">Blast Furnace</a></p></figcaption></figure></div>
 
-<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="https://github.com/user-attachments/assets/7148a15d-59ed-4a2b-81aa-f031d3d5ef55" alt="Raw Cobalt." data-size="line"> Raw Cobalt</td><td><img src="https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694" alt="Cobalt Ingot." data-size="line"> Cobalt Ingot</td><td>1</td></tr></tbody></table>
+<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_cobalt.png?raw=true" alt="Raw Cobalt." data-size="line"> Raw Cobalt</td><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="Cobalt Ingot." data-size="line"> Cobalt Ingot</td><td>1</td></tr></tbody></table>
 {% endtab %}
 
 {% tab title="Recipe" %}
@@ -72,13 +72,13 @@ More info about brewing can be found in the: [brewing-guide.md](../../misc-other
 
 |                                                                                                   |                                                                                                   |                                                                                                   |
 | :-----------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: |
-| ![Cobalt Nugget](https://github.com/user-attachments/assets/8cdeb228-b758-4b2c-873a-208cf8bcdc77) | ![Cobalt Nugget](https://github.com/user-attachments/assets/8cdeb228-b758-4b2c-873a-208cf8bcdc77) | ![Cobalt Nugget](https://github.com/user-attachments/assets/8cdeb228-b758-4b2c-873a-208cf8bcdc77) |
-| ![Cobalt Nugget](https://github.com/user-attachments/assets/8cdeb228-b758-4b2c-873a-208cf8bcdc77) | ![Cobalt Nugget](https://github.com/user-attachments/assets/8cdeb228-b758-4b2c-873a-208cf8bcdc77) | ![Cobalt Nugget](https://github.com/user-attachments/assets/8cdeb228-b758-4b2c-873a-208cf8bcdc77) |
-| ![Cobalt Nugget](https://github.com/user-attachments/assets/8cdeb228-b758-4b2c-873a-208cf8bcdc77) | ![Cobalt Nugget](https://github.com/user-attachments/assets/8cdeb228-b758-4b2c-873a-208cf8bcdc77) | ![Cobalt Nugget](https://github.com/user-attachments/assets/8cdeb228-b758-4b2c-873a-208cf8bcdc77) |
+| ![Cobalt Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_nugget.png?raw=true) | ![Cobalt Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_nugget.png?raw=true) | ![Cobalt Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_nugget.png?raw=true) |
+| ![Cobalt Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_nugget.png?raw=true) | ![Cobalt Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_nugget.png?raw=true) | ![Cobalt Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_nugget.png?raw=true) |
+| ![Cobalt Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_nugget.png?raw=true) | ![Cobalt Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_nugget.png?raw=true) | ![Cobalt Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_nugget.png?raw=true) |
 
 Items:
 
-* <img src="https://github.com/user-attachments/assets/8cdeb228-b758-4b2c-873a-208cf8bcdc77" alt="Cobalt Nugget" data-size="line">[Cobalt Nugget](../nuggets/cobalt-nugget.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_nugget.png?raw=true" alt="Cobalt Nugget" data-size="line">[Cobalt Nugget](../nuggets/cobalt-nugget.md)
 {% endtab %}
 
 {% tab title="Recipe 2" %}
@@ -88,15 +88,15 @@ Items:
 
 |                                                                                                  |
 | :----------------------------------------------------------------------------------------------: |
-| ![Cobalt Block](https://github.com/user-attachments/assets/4a13c762-0f6f-40af-84e8-d50db1294a5d) |
+| ![Cobalt Block](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/cobalt_block.png?raw=true) |
 
 Items:
 
-* <img src="https://github.com/user-attachments/assets/4a13c762-0f6f-40af-84e8-d50db1294a5d" alt="Cobalt Block" data-size="line">[Cobalt Block](../../blocks/ore-blocks/cobalt-block.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/cobalt_block.png?raw=true" alt="Cobalt Block" data-size="line">[Cobalt Block](../../blocks/ore-blocks/cobalt-block.md)
 
 Outputs:
 
-* 9x <img src="https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694" alt="Cobalt Ingot." data-size="line"> Cobalt Ingots
+* 9x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="Cobalt Ingot." data-size="line"> Cobalt Ingots
 {% endtab %}
 
 {% tab title="Structure Loot" %}
@@ -104,15 +104,15 @@ Outputs:
 
 | Item                                                                                                                                          | Amount | Chance        |
 | --------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------------- |
-| <img src="https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694" alt="Cobalt Ingot." data-size="line"> Cobalt Ingot | 1      | 3/88 (\~3.4%) |
+| <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="Cobalt Ingot." data-size="line"> Cobalt Ingot | 1      | 3/88 (\~3.4%) |
 {% endtab %}
 
 {% tab title="Ore Ring" %}
-<figure><img src="https://github.com/user-attachments/assets/03ca69b9-0b12-4b37-ace1-cf83bda706ca" alt=""><figcaption><p>Obtained by using the <a href="../../tools/rings/ore-ring.md">Ore Ring</a></p></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/ore_ring.png?raw=true" alt=""><figcaption><p>Obtained by using the <a href="../../tools/rings/ore-ring.md">Ore Ring</a></p></figcaption></figure>
 
 | Item                                                                                                                                          | Amount | Chance |
 | --------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------ |
-| <img src="https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694" alt="Cobalt Ingot." data-size="line"> Cobalt Ingot | 1      | 1/35   |
+| <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="Cobalt Ingot." data-size="line"> Cobalt Ingot | 1      | 1/35   |
 {% endtab %}
 
 {% tab title="Present" %}
@@ -124,11 +124,11 @@ Outputs:
 {% endtab %}
 
 {% tab title="Mob Loot" %}
-<figure><img src="https://github.com/user-attachments/assets/a9c0bd82-46ac-4cca-8164-5fd90f9602b8" alt=""><figcaption><p>Dropped by the <a href="../../mobs/neutral-mobs/rat.md">Rat</a></p></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/entity_icon/rat.png?raw=true" alt=""><figcaption><p>Dropped by the <a href="../../mobs/neutral-mobs/rat.md">Rat</a></p></figcaption></figure>
 
 | Item                                                                                                                                          | Amount | Chance of Holding |
 | --------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ----------------- |
-| <img src="https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694" alt="Cobalt Ingot." data-size="line"> Cobalt Ingot | 1      | 1/10 (10%)        |
+| <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="Cobalt Ingot." data-size="line"> Cobalt Ingot | 1      | 1/10 (10%)        |
 
 {% hint style="info" %}
 The Rat needs to spawn holding this item to be able to drop it

@@ -1,6 +1,6 @@
 # Netherite Haxel
 
-![](https://github.com/ItsMePok/PFE/assets/136857747/9730d9d1-bbdf-4495-aaf3-79d7c931af3e)
+![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/netherite_haxel.png?raw=true)
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:netherite\_haxel**
 

@@ -1,6 +1,6 @@
 # Demonic Haxel
 
-![](https://github.com/ItsMePok/PFE/assets/136857747/202c6ac5-336c-4dd0-9d0a-b86ae926be2d)
+![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_haxel.png?raw=true)
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:demonic\_haxel**
 

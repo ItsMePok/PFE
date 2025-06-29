@@ -2,7 +2,7 @@
 
 
 
-<figure><img src="https://github.com/user-attachments/assets/9fbada47-b090-4b56-a50c-9e83343b2c3e" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/opaqueAlts/onyx_pickaxe.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:onyx\_pickaxe** <a href="#identifier" id="identifier"></a>
 
@@ -24,7 +24,7 @@
 
 ### Repair Items: <a href="#repair" id="repair"></a>
 
-* [<img src="https://github.com/ItsMePok/PFE/assets/136857747/f15d8501-f297-4a77-b6de-3681297cdb09" alt="" data-size="line">Repair Core](../../items/cores/repair-core.md) (100% Durability)
+* [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/repair_core.png?raw=true" alt="" data-size="line">Repair Core](../../items/cores/repair-core.md) (100% Durability)
 * Onyx Ingot (25% Durability)
 * Onyx Nugget (2.8% Durability)
 
@@ -40,13 +40,13 @@
 
 |                                                                                                |                                                                                                |                                                                                                |
 | :--------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------: |
-| ![Onyx Ingot](https://github.com/user-attachments/assets/637c75db-659f-4e80-b8a0-1454c23727b6) | ![Onyx Ingot](https://github.com/user-attachments/assets/637c75db-659f-4e80-b8a0-1454c23727b6) | ![Onyx Ingot](https://github.com/user-attachments/assets/637c75db-659f-4e80-b8a0-1454c23727b6) |
+| ![Onyx Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_ingot.png?raw=true) | ![Onyx Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_ingot.png?raw=true) | ![Onyx Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_ingot.png?raw=true) |
 |                                                                                                |                 ![Stick](https://minecraft.wiki/images/Stick_JE1_BE1.png?1fc15)                |                                                                                                |
 |                                                                                                |                 ![Stick](https://minecraft.wiki/images/Stick_JE1_BE1.png?1fc15)                |                                                                                                |
 
 Items:
 
-* <img src="https://github.com/user-attachments/assets/637c75db-659f-4e80-b8a0-1454c23727b6" alt="Onyx Ingot" data-size="line">Onyx Ingot
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_ingot.png?raw=true" alt="Onyx Ingot" data-size="line">Onyx Ingot
 * [<img src="https://minecraft.wiki/images/Stick_JE1_BE1.png?1fc15" alt="Stick" data-size="line">Stick](https://minecraft.wiki/w/Stick)
 {% endtab %}
 {% endtabs %}

@@ -2,7 +2,7 @@
 
 
 
-<figure><img src="https://github.com/user-attachments/assets/ef6c978f-76ec-48e4-aa89-29c2d98f4624" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -52,7 +52,7 @@
 
 | Item                                                                                                                       | Amount | Weight |
 | -------------------------------------------------------------------------------------------------------------------------- | ------ | ------ |
-| <img src="https://github.com/user-attachments/assets/ef6c978f-76ec-48e4-aa89-29c2d98f4624" alt="" data-size="line">Plastic | 1      | 6      |
+| <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true" alt="" data-size="line">Plastic | 1      | 6      |
 {% endtab %}
 
 {% tab title="Brushing" %}
@@ -62,6 +62,6 @@
 
 | Item                                                                                                                       | Amount | Weight |
 | -------------------------------------------------------------------------------------------------------------------------- | ------ | ------ |
-| <img src="https://github.com/user-attachments/assets/ef6c978f-76ec-48e4-aa89-29c2d98f4624" alt="" data-size="line">Plastic | 1      | 1      |
+| <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true" alt="" data-size="line">Plastic | 1      | 1      |
 {% endtab %}
 {% endtabs %}

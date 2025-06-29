@@ -1,6 +1,6 @@
 # Galaxy Pickaxe
 
-<figure><img src="https://github.com/user-attachments/assets/91e05169-43be-4ea2-874b-4648548dcf5f" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/opaqueAlts/galaxy_pickaxe.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:galaxy\_pickaxe** <a href="#identifier" id="identifier"></a>
 
@@ -22,8 +22,8 @@
 
 ### Repair Items: <a href="#repair" id="repair"></a>
 
-* [<img src="https://github.com/ItsMePok/PFE/assets/136857747/f15d8501-f297-4a77-b6de-3681297cdb09" alt="" data-size="line">Repair Core](../../items/cores/repair-core.md) (100% Durability)
-* <img src="https://github.com/user-attachments/assets/894ed238-08fb-4fc7-8827-9313e596bf4f" alt="Galaxy Ingot" data-size="line">Galaxy Ingot (25% Durability)
+* [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/repair_core.png?raw=true" alt="" data-size="line">Repair Core](../../items/cores/repair-core.md) (100% Durability)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/galaxy_ingot.png?raw=true" alt="Galaxy Ingot" data-size="line">Galaxy Ingot (25% Durability)
 * Galaxy Nugget (2.8% Durability)
 
 ### Usage:
@@ -38,14 +38,14 @@
 
 |                                                                                                                                     |                                                                                                                                     |                                                                                                                                     |
 | :---------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------: |
-| <img src="https://github.com/user-attachments/assets/894ed238-08fb-4fc7-8827-9313e596bf4f" alt="Galaxy Ingot" data-size="original"> | <img src="https://github.com/user-attachments/assets/894ed238-08fb-4fc7-8827-9313e596bf4f" alt="Galaxy Ingot" data-size="original"> | <img src="https://github.com/user-attachments/assets/894ed238-08fb-4fc7-8827-9313e596bf4f" alt="Galaxy Ingot" data-size="original"> |
-|                                                                                                                                     |                   ![Godly Stick](https://github.com/user-attachments/assets/ee155826-bf49-494d-8d64-b2c330db0604)                   |                                                                                                                                     |
-|                                                                                                                                     |                   ![Godly Stick](https://github.com/user-attachments/assets/ee155826-bf49-494d-8d64-b2c330db0604)                   |                                                                                                                                     |
+| <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/galaxy_ingot.png?raw=true" alt="Galaxy Ingot" data-size="original"> | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/galaxy_ingot.png?raw=true" alt="Galaxy Ingot" data-size="original"> | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/galaxy_ingot.png?raw=true" alt="Galaxy Ingot" data-size="original"> |
+|                                                                                                                                     |                   ![Godly Stick](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_stick.png?raw=true)                   |                                                                                                                                     |
+|                                                                                                                                     |                   ![Godly Stick](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_stick.png?raw=true)                   |                                                                                                                                     |
 
 Items:
 
-* <img src="https://github.com/user-attachments/assets/894ed238-08fb-4fc7-8827-9313e596bf4f" alt="Galaxy Ingot" data-size="line">Galaxy Ingot
-* <img src="https://github.com/user-attachments/assets/ee155826-bf49-494d-8d64-b2c330db0604" alt="Godly Stick" data-size="line">Godly Stick
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/galaxy_ingot.png?raw=true" alt="Galaxy Ingot" data-size="line">Galaxy Ingot
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_stick.png?raw=true" alt="Godly Stick" data-size="line">Godly Stick
 {% endtab %}
 {% endtabs %}
 

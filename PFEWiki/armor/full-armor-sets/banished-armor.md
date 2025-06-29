@@ -1,6 +1,6 @@
 # Banished Armor
 
-### <img src="https://github.com/user-attachments/assets/53329be8-f7e5-4c01-b7e4-a27b567c7998" alt="" data-size="line"> Set Effects:
+### <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/effect_particles.png?raw=true" alt="" data-size="line"> Set Effects:
 
 * Regeneration 3
 * Resistance 4
@@ -9,7 +9,7 @@
 
 ## Banished Helmet
 
-![](https://github.com/ItsMePok/PFE/assets/136857747/c52c4658-fef7-42e1-9fef-1e0c7ca7c4c3)
+![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_helmet.png?raw=true)
 
 Identifier: **poke:banished\_helmet**
 
@@ -27,7 +27,7 @@ Repairable with:
 
 ## Banished Chestplate
 
-![](https://github.com/ItsMePok/PFE/assets/136857747/3e9992f9-6fde-409b-ba47-5dc392cbee05)
+![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_chestplate.png?raw=true)
 
 Identifier: **poke:banished\_chestplate**
 
@@ -45,7 +45,7 @@ Repairable with:
 
 ## Banished Leggings
 
-![](https://github.com/ItsMePok/PFE/assets/136857747/b7ff4465-e0c3-4aa5-9e8f-10005a987fb6)
+![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_leggings.png?raw=true)
 
 Identifier: **poke:banished\_leggings**
 
@@ -63,7 +63,7 @@ Repairable with:
 
 ## Banished Boots
 
-![](https://github.com/ItsMePok/PFE/assets/136857747/209242fd-92db-4ba4-8d05-0a856cef2fb6)
+![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_boots.png?raw=true)
 
 Identifier: **poke:banished\_boots**
 

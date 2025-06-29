@@ -1,6 +1,6 @@
 # Grim Gem
 
-![poke\_grim\_gem](https://github.com/ItsMePok/PFE/assets/136857747/e6ab2077-9e8b-47ce-87f2-69a0ae561ace)
+![poke\_grim\_gem](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/grim_gem.png?raw=true)
 
 Item Identifier: **poke:grim\_gem**
 

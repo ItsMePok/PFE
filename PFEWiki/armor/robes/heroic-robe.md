@@ -7,7 +7,7 @@ Set Effects:
 
 ## Helmet
 
-![poke\_heroic\_robe\_hat](https://github.com/ItsMePok/PFE/assets/136857747/2bcf5fbf-0a6e-4f9a-b187-f4e59822dcc2)
+![poke\_heroic\_robe\_hat](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/heroic_robe_hat.png?raw=true)
 
 Identifier: **poke:cobalt\_robe\_helmet**
 
@@ -25,7 +25,7 @@ Trimmable: **Yes**
 
 ## Chestplate
 
-![poke\_heroic\_robe\_chestplate](https://github.com/ItsMePok/PFE/assets/136857747/cc193029-a1ab-4a0d-8055-dd55dd79f20b)
+![poke\_heroic\_robe\_chestplate](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/heroic_robe_chestplate.png?raw=true)
 
 Identifier: **poke:heroic\_robe\_chestplate**
 

@@ -1,6 +1,6 @@
 # Ice Gem
 
-![poke\_ice\_gem](https://github.com/ItsMePok/PFE/assets/136857747/fc98eee0-dd3c-4d36-b7ec-bc8aa3422f35)
+![poke\_ice\_gem](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/ice_gem.png?raw=true)
 
 Item Identifier: **poke:ice\_gem**
 

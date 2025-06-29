@@ -2,7 +2,7 @@
 
 
 
-<figure><img src="https://github.com/user-attachments/assets/f4818c7c-f8c9-4218-b546-70a6a439e4cb" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/death_ingot.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: poke:death\_ingot <a href="#identifier" id="identifier"></a>
 
@@ -16,9 +16,9 @@
 
 |                                                                                                |                                                                                                      |                                                                                                |
 | :--------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------: |
-| ![Void Ingot](https://github.com/user-attachments/assets/790448a7-113f-413d-a389-128319f007a7) |    ![Void Ingot](https://github.com/user-attachments/assets/790448a7-113f-413d-a389-128319f007a7)    | ![Void Ingot](https://github.com/user-attachments/assets/790448a7-113f-413d-a389-128319f007a7) |
-| ![Void Ingot](https://github.com/user-attachments/assets/790448a7-113f-413d-a389-128319f007a7) | ![Molten Slimeball](https://github.com/user-attachments/assets/e13f83a8-b0d5-47ed-bd3d-9623c9a5fab5) | ![Onyx Ingot](https://github.com/user-attachments/assets/637c75db-659f-4e80-b8a0-1454c23727b6) |
-| ![Onyx Ingot](https://github.com/user-attachments/assets/637c75db-659f-4e80-b8a0-1454c23727b6) |    ![Onyx Ingot](https://github.com/user-attachments/assets/637c75db-659f-4e80-b8a0-1454c23727b6)    | ![Onyx Ingot](https://github.com/user-attachments/assets/637c75db-659f-4e80-b8a0-1454c23727b6) |
+| ![Void Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_ingot.png?raw=true) |    ![Void Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_ingot.png?raw=true)    | ![Void Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_ingot.png?raw=true) |
+| ![Void Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_ingot.png?raw=true) | ![Molten Slimeball](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/molten_slimeball.png?raw=true) | ![Onyx Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_ingot.png?raw=true) |
+| ![Onyx Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_ingot.png?raw=true) |    ![Onyx Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_ingot.png?raw=true)    | ![Onyx Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_ingot.png?raw=true) |
 
 Items:
 
@@ -34,7 +34,7 @@ Items:
 
 |                                                                                                 |
 | :---------------------------------------------------------------------------------------------: |
-| ![Death Block](https://github.com/user-attachments/assets/af642063-35e7-4d6f-946b-81bc19c7dd98) |
+| ![Death Block](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/DeathBlock.png?raw=true) |
 
 Items:
 

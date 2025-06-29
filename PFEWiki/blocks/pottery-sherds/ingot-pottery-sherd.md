@@ -1,6 +1,6 @@
 # Ingot Pottery Sherd
 
-<figure><img src="https://github.com/user-attachments/assets/6f9556af-6538-4bf0-8e43-7233b7d5d46a" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/ingot_pottery_sherd.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 
 

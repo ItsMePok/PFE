@@ -1,6 +1,6 @@
 # Godly Ore
 
-<figure><img src="https://github.com/user-attachments/assets/fd5d887d-09cb-4ba4-a89a-2b7e34de271b" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/ore/GodlyOre.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 The block texture above could not be 100% accurate if you have a texture pack applied that changes the stone texture&#x20;
@@ -8,7 +8,7 @@ The block texture above could not be 100% accurate if you have a texture pack ap
 
 ## <img src="https://minecraft.wiki/images/Book_and_Quill_JE2_BE2.png?2128f" alt="Book and Quill." data-size="line"> Description: <a href="#identifier" id="identifier"></a>
 
-* <img src="https://github.com/user-attachments/assets/fd5d887d-09cb-4ba4-a89a-2b7e34de271b" alt="Godly Ore." data-size="line"> Godly Ore is an ore that when refined is used in obtaining various things in PFE
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/ore/GodlyOre.png?raw=true" alt="Godly Ore." data-size="line"> Godly Ore is an ore that when refined is used in obtaining various things in PFE
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:godly\_ore** <a href="#identifier" id="identifier"></a>
 
@@ -39,7 +39,7 @@ The block texture above could not be 100% accurate if you have a texture pack ap
     * <img src="https://minecraft.wiki/images/thumb/Granite.png/150px-Granite.png?9cb6d" alt="Granite." data-size="line"> [Granite](https://minecraft.wiki/w/Granite)
     * <img src="https://minecraft.wiki/images/thumb/Andesite.png/150px-Andesite.png?5db9b" alt="" data-size="line"> [Andesite](https://minecraft.wiki/w/Andesite)
 * <img src="https://minecraft.wiki/images/thumb/Deepslate_(UD)_JE3.png/120px-Deepslate_(UD)_JE3.png?7635f" alt="Deepslate." data-size="line"> [Deepslate](https://minecraft.wiki/w/Deepslate)
-  * This would replace as <img src="https://github.com/user-attachments/assets/cff3ee32-aff0-4504-b148-58e5728a0e54" alt="Deepslate Godly Ore." data-size="line"> [Deepslate Godly Ore](../deepslate-ores/deepslate-godly-ore.md) instead
+  * This would replace as <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/ore/DeepslateGodlyOre.png?raw=true" alt="Deepslate Godly Ore." data-size="line"> [Deepslate Godly Ore](../deepslate-ores/deepslate-godly-ore.md) instead
 {% endtab %}
 {% endtabs %}
 

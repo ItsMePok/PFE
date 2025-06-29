@@ -1,6 +1,6 @@
 # Wooden Haxel
 
-![](https://github.com/ItsMePok/PFE/assets/136857747/187ff92e-f048-471a-872e-ebb7498b8ebf)
+![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/wooden_haxel.png?raw=true)
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:wooden\_haxel**
 

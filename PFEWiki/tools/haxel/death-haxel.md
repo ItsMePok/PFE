@@ -1,6 +1,6 @@
 # Death Haxel
 
-![](https://github.com/ItsMePok/PFE/assets/136857747/a99316e2-741f-4578-8618-d863cb63f21e)
+![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/death_haxel.png?raw=true)
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:death\_haxel**
 

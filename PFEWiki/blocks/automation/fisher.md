@@ -14,7 +14,7 @@ This Page is not complete yet. Check back later
 
 
 
-## <img src="https://github.com/user-attachments/assets/4ab38071-56d5-4e2e-b183-6258e6c7b4df" alt="Interact Ability." data-size="line"> Interact Ability: <a href="#interact-ability" id="interact-ability"></a>
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/InteractAbility.png?raw=true" alt="Interact Ability." data-size="line"> Interact Ability: <a href="#interact-ability" id="interact-ability"></a>
 
 ### **Interacting**: If it has caught anything it will drop it above itself <a href="#interacting" id="interacting"></a>
 

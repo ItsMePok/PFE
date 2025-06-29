@@ -1,6 +1,6 @@
 # Onyx Haxel
 
-![](https://github.com/ItsMePok/PFE/assets/136857747/7455cbaa-9d81-40de-a9aa-d0d5f3a8f9dd)
+![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_haxel.png?raw=true)
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:haxel**
 

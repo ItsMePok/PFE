@@ -2,11 +2,11 @@
 
 <div>
 
-<figure><img src="https://github.com/user-attachments/assets/ecf8890d-bcd7-40fe-a234-bae304578bc9" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/knightling_pottery_sherd.png?raw=true" alt=""><figcaption></figcaption></figure>
 
  
 
-<figure><img src="https://github.com/user-attachments/assets/074cd50d-8eb1-47ea-bb64-4331a4cadeb0" alt=""><figcaption><p>*PFE Spook LTU Variant</p></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/knightling_pottery_sherd_spook.png?raw=true" alt=""><figcaption><p>*PFE Spook LTU Variant</p></figcaption></figure>
 
 </div>
 

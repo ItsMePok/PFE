@@ -1,6 +1,6 @@
 # Strength Gem
 
-![poke\_strength\_gem](https://github.com/ItsMePok/PFE/assets/136857747/7116d470-d9d7-4c0f-9ea0-afbb1825b136)
+![poke\_strength\_gem](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/strength_gem.png?raw=true)
 
 Item Identifier: **poke:strength\_gem**
 

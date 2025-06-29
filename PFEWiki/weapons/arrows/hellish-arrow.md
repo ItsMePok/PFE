@@ -1,6 +1,6 @@
 # Hellish Arrow
 
-![](https://github.com/ItsMePok/PFE/assets/136857747/a6c09bd7-f296-4844-ba2b-f226de5eb8a3)
+![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/hellish_arrow_item.png?raw=true)
 
 Item Identifier: **poke:hellish\_arrow**
 

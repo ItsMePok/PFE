@@ -40,7 +40,7 @@ The Currency is not obtainable in survival & is really only useful for economy s
 
 ### <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 64
 
-### Usage: **Spawns the** <img src="https://github.com/user-attachments/assets/b8730220-4755-4ead-a51c-da527ff5f245" alt="" data-size="line"> [Money Man](money-man.md)
+### Usage: **Spawns the** <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/entity_icon/money_man.png?raw=true" alt="" data-size="line"> [Money Man](money-man.md)
 
 ### Obtaining:
 

@@ -7,7 +7,7 @@ Set Effects:
 
 ## Helmet
 
-![poke\_swift\_robe\_hat](https://github.com/ItsMePok/PFE/assets/136857747/8cbfeaa8-aebd-4cf1-97f1-a12ce53b5646)
+![poke\_swift\_robe\_hat](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/swift_robe_hat.png?raw=true)
 
 Identifier: **poke:swift\_robe\_helmet**
 
@@ -25,7 +25,7 @@ Trimmable: **Yes**
 
 ## Chestplate
 
-![poke\_swift\_robe\_chestplate](https://github.com/ItsMePok/PFE/assets/136857747/60f2f46f-cf56-4f7a-a1cc-a80d33ad8059)
+![poke\_swift\_robe\_chestplate](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/swift_robe_chestplate.png?raw=true)
 
 Identifier: **poke:swift\_robe\_chestplate**
 

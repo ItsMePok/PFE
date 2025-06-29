@@ -48,8 +48,8 @@
 ### Items:
 
 * <img src="https://minecraft.wiki/images/thumb/Egg_JE2_BE2.png/150px-Egg_JE2_BE2.png?495d9" alt="Egg" data-size="line"> [Egg](https://minecraft.wiki/w/Egg)
-* <img src="https://github.com/user-attachments/assets/a5a960ad-9791-4325-9ff0-dd820bece694" alt="Cobalt Ingot." data-size="line"> Cobalt Ingot
-* <img src="https://github.com/user-attachments/assets/637c75db-659f-4e80-b8a0-1454c23727b6" alt="Onyx Ingot." data-size="line"> Onyx Ingot
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="Cobalt Ingot." data-size="line"> Cobalt Ingot
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_ingot.png?raw=true" alt="Onyx Ingot." data-size="line"> Onyx Ingot
 {% endtab %}
 {% endtabs %}
 

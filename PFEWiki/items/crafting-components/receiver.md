@@ -2,7 +2,7 @@
 
 
 
-<figure><img src="https://github.com/user-attachments/assets/d5e4412f-b092-413f-99d9-a9e09033cd29" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/receiver.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## Identifier: **poke:receiver** <a href="#identifier" id="identifier"></a>
 
@@ -30,9 +30,9 @@
 
 |                                                                                                                             |                                                                                                        |                                                                                                                             |
 | :-------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------: |
-| ![Redstone Dust](https://minecraft.wiki/images/thumb/Redstone\_Dust\_JE2\_BE2.png/150px-Redstone\_Dust\_JE2\_BE2.png?8cf17) | ![Electric Component](https://github.com/user-attachments/assets/74fc7c8a-64ec-44e5-b227-588b7485a088) | ![Redstone Dust](https://minecraft.wiki/images/thumb/Redstone\_Dust\_JE2\_BE2.png/150px-Redstone\_Dust\_JE2\_BE2.png?8cf17) |
-|            ![Electric Component](https://github.com/user-attachments/assets/74fc7c8a-64ec-44e5-b227-588b7485a088)           |          ![](https://github.com/user-attachments/assets/e86a7ee9-4449-47a6-9164-6b435c473780)          |            ![Electric Component](https://github.com/user-attachments/assets/74fc7c8a-64ec-44e5-b227-588b7485a088)           |
-| ![Redstone Dust](https://minecraft.wiki/images/thumb/Redstone\_Dust\_JE2\_BE2.png/150px-Redstone\_Dust\_JE2\_BE2.png?8cf17) | ![Electric Component](https://github.com/user-attachments/assets/74fc7c8a-64ec-44e5-b227-588b7485a088) | ![Redstone Dust](https://minecraft.wiki/images/thumb/Redstone\_Dust\_JE2\_BE2.png/150px-Redstone\_Dust\_JE2\_BE2.png?8cf17) |
+| ![Redstone Dust](https://minecraft.wiki/images/thumb/Redstone\_Dust\_JE2\_BE2.png/150px-Redstone\_Dust\_JE2\_BE2.png?8cf17) | ![Electric Component](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/electric_component.png?raw=true) | ![Redstone Dust](https://minecraft.wiki/images/thumb/Redstone\_Dust\_JE2\_BE2.png/150px-Redstone\_Dust\_JE2\_BE2.png?8cf17) |
+|            ![Electric Component](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/electric_component.png?raw=true)           |          ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/gps_module.png?raw=true)          |            ![Electric Component](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/electric_component.png?raw=true)           |
+| ![Redstone Dust](https://minecraft.wiki/images/thumb/Redstone\_Dust\_JE2\_BE2.png/150px-Redstone\_Dust\_JE2\_BE2.png?8cf17) | ![Electric Component](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/electric_component.png?raw=true) | ![Redstone Dust](https://minecraft.wiki/images/thumb/Redstone\_Dust\_JE2\_BE2.png/150px-Redstone\_Dust\_JE2\_BE2.png?8cf17) |
 {% endtab %}
 
 {% tab title="Structures" %}
@@ -44,6 +44,6 @@ Found in the [Abandoned Ship](../../sturctures/abandoned-ship.md)
 
 | Item                                                                                                                        | Amount | Weight |
 | --------------------------------------------------------------------------------------------------------------------------- | ------ | ------ |
-| <img src="https://github.com/user-attachments/assets/d5e4412f-b092-413f-99d9-a9e09033cd29" alt="" data-size="line">Receiver | 1      | 2      |
+| <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/receiver.png?raw=true" alt="" data-size="line">Receiver | 1      | 2      |
 {% endtab %}
 {% endtabs %}

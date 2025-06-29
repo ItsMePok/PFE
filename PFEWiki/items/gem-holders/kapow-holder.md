@@ -1,6 +1,6 @@
 # Kapow Holder
 
-<figure><img src="https://github.com/user-attachments/assets/e083a07c-ca9f-4e88-94df-c13cf43f2ddc" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/kapow_holder.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: poke:kapow\_holder <a href="#identifier" id="identifier"></a>
 

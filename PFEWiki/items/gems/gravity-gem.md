@@ -1,6 +1,6 @@
 # Gravity Gem
 
-![poke\_gravity\_gem](https://github.com/ItsMePok/PFE/assets/136857747/0d304ca1-2400-4a15-a78e-0a11e717ac09)
+![poke\_gravity\_gem](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/gravity_gem.png?raw=true)
 
 Item Identifier: **poke:gravity\_gem**
 

@@ -14,7 +14,7 @@ description: 'Last updated to match: v1.2.94'
 
 ## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">1</mark> <a href="#stack-size" id="stack-size"></a>
 
-## <img src="https://github.com/user-attachments/assets/dcfb5b71-f821-4bba-9e8e-0e5c924e18ca" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark>
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark>
 
 ## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining: <a href="#obtaining" id="obtaining"></a>
 

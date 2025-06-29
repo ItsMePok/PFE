@@ -1,6 +1,6 @@
 # Molten Haxel
 
-![](https://github.com/ItsMePok/PFE/assets/136857747/17a1b8b9-1141-41a3-b537-a3e89edbcfca)
+![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/molten_haxel.png?raw=true)
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:molten\_haxel**
 
@@ -22,7 +22,7 @@
 
 ## Repairable with:
 
-* [<img src="https://github.com/ItsMePok/PFE/assets/136857747/f15d8501-f297-4a77-b6de-3681297cdb09" alt="" data-size="line">Repair Core](../../items/cores/repair-core.md)
+* [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/repair_core.png?raw=true" alt="" data-size="line">Repair Core](../../items/cores/repair-core.md)
 * Molten Slimeball
 
 ## Obtaining:

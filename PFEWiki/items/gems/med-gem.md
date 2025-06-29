@@ -1,6 +1,6 @@
 # Med Gem
 
-![poke\_med\_gem](https://github.com/ItsMePok/PFE/assets/136857747/6cdf9cc1-d7a7-47a8-b4a6-c75f4985f4a9)
+![poke\_med\_gem](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/med_gem.png?raw=true)
 
 Item Identifier: **poke:med\_gem**
 
