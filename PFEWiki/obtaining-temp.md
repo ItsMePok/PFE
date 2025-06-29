@@ -122,6 +122,14 @@ More info about brewing can be found in the: [brewing-guide.md](misc-other-info/
 
 <table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="https://github.com/user-attachments/assets/faa23787-87a1-4aee-8d45-01ec89b1e3d2" alt="" data-size="line"> <a href="items/foods/baguette.md">Baguette</a></td><td><img src="https://github.com/user-attachments/assets/32798c35-58b5-420e-920e-2d6ee12c84aa" alt="" data-size="line"><a href="items/foods/toast.md">Toast</a></td><td>8</td></tr></tbody></table>
 {% endtab %}
+
+{% tab title="StoneCut" %}
+<figure><img src="https://minecraft.wiki/images/Stonecutter_JE2_BE1.gif?bb269" alt=""><figcaption><p>Cut with the<br><a href="https://minecraft.wiki/w/Stonecutter">Stonecutter</a></p></figcaption></figure>
+
+<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td></td><td></td><td>1</td></tr></tbody></table>
+
+
+{% endtab %}
 {% endtabs %}
 
 {% tabs %}
@@ -184,6 +192,8 @@ Outputs:
 * 1x
 {% endtab %}
 {% endtabs %}
+
+
 
 e
 
