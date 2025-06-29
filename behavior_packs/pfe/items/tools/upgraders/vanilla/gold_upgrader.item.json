@@ -28,10 +28,16 @@
 					"pfe:persistence"
 				]
 			},
-			"poke-pfe:upgrader": {},
+			"poke_pfe:transform_blocks": {
+				"transforms": [
+					"minecraft:gold_ore::minecraft:raw_gold_block",
+					"minecraft:deepslate_gold_ore::minecraft:raw_gold_block",
+					"minecraft:nether_gold_ore::minecraft:gold_block"
+				]
+			},
 			"minecraft:tags": {
 				"tags": [
-					"poke-pfe:UpgraderInfo:{\"canUpgrade\":[\"minecraft:gold_ore\",\"minecraft:deepslate_gold_ore\",\"minecraft:nether_gold_ore\"]}:poke-pfe:UpgraderInfoEnd"
+					"pfe:is_upgrader"
 				]
 			}
 		}

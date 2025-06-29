@@ -28,10 +28,15 @@
 					"pfe:persistence"
 				]
 			},
-			"poke-pfe:upgrader": {},
+			"poke_pfe:transform_blocks": {
+				"transforms": [
+					"minecraft:diamond_ore::minecraft:diamond_block",
+					"minecraft:deepslate_diamond_ore::minecraft:diamond_block"
+				]
+			},
 			"minecraft:tags": {
 				"tags": [
-					"poke-pfe:UpgraderInfo:{\"canUpgrade\":[\"minecraft:diamond_ore\",\"minecraft:deepslate_diamond_ore\"]}:poke-pfe:UpgraderInfoEnd"
+					"pfe:is_upgrader"
 				]
 			}
 		}

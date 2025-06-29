@@ -7,12 +7,25 @@
 		"count": 3,
 		"replace_rules": [
 			{
-				"places_block": {
-					"name": "poke:nether_shade_ore"
-				},
+				"places_block": "poke:shade_ore",
 				"may_replace": [
-					"netherrack"
+					"minecraft:stone",
+					"minecraft:andesite",
+					"minecraft:granite",
+					"minecraft:diorite"
 				]
+			},
+			{
+				"may_replace": [
+					"deepslate"
+				],
+				"places_block": "poke:deepslate_shade_ore"
+			},
+			{
+				"may_replace": [
+					"minecraft:netherrack"
+				],
+				"places_block": "poke:nether_shade_ore"
 			}
 		]
 	}

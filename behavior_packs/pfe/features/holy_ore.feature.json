@@ -43,6 +43,17 @@
 					"deepslate"
 				],
 				"places_block": "poke:deepslate_holy_ore"
+			},
+			{
+				"places_block": {
+					"name": "poke:end_holy_ore",
+					"states": {}
+				},
+				"may_replace": [
+					{
+						"name": "minecraft:end_stone"
+					}
+				]
 			}
 		]
 	}

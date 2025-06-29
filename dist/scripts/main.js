@@ -1,5 +1,5 @@
 // scripts/main.ts
-import { system as system6, world as world10, EquipmentSlot as EquipmentSlot8, GameMode as GameMode5, EntityComponentTypes as EntityComponentTypes8, ItemComponentTypes as ItemComponentTypes4, ItemStack as ItemStack9, Direction as Direction2 } from "@minecraft/server";
+import { system as system6, world as world10, EquipmentSlot as EquipmentSlot8, GameMode as GameMode5, EntityComponentTypes as EntityComponentTypes8, ItemComponentTypes as ItemComponentTypes4, ItemStack as ItemStack9, Direction as Direction2, BlockVolume as BlockVolume2, BlockPermutation } from "@minecraft/server";
 
 // node_modules/@minecraft/vanilla-data/lib/index.js
 var MinecraftBiomeTypes = ((MinecraftBiomeTypes2) => {
@@ -7090,7 +7090,7 @@ function AddItem(component, player, storedItems, block) {
   UI.label({ translate: `%poke_pfe.deposit.warning` });
   const allItems = PokeGetItemFromInventory(player) ?? [];
   for (const item of allItems) {
-    UI.button({ translate: MakeLocalizationKey(item.typeId) }, getTexturePathByIdentifier(item.typeId));
+    UI.button({ translate: MakeLocalizationKey(item.typeId) }, getTexturePathByIdentifier(item));
   }
   UI.button({ translate: `translation.poke_pfe.GoBack` }, "textures/poke/common/left_arrow");
   UI.show(player).then((response) => {
@@ -7218,16 +7218,14 @@ function WithdrawItem(component, player, item, storedItems, block) {
     }
   });
 }
-function getTexturePathByIdentifier(identifier) {
-  const IconPathComponent = new ItemStack8(identifier).getComponent("poke_pfe:icon_path")?.customComponentParameters.params;
+function getTexturePathByIdentifier(item) {
+  if (typeof item == "string") {
+    item = new ItemStack8(item, 1);
+  }
+  const IconPathComponent = item.getComponent("poke_pfe:icon_path")?.customComponentParameters.params;
   if (IconPathComponent)
     return IconPathComponent;
-  switch (identifier) {
-    default: {
-      return "textures/poke/common/question";
-      break;
-    }
-  }
+  return "textures/poke/common/question";
 }
 function ParseRecipeItems(strings) {
   let returnValue = [];
@@ -8047,26 +8045,6 @@ system6.beforeEvents.startup.subscribe((data) => {
       }
     }
   );
-  data.itemComponentRegistry.registerCustomComponent(
-    "poke-pfe:upgrader",
-    {
-      onUseOn(data2, component) {
-        let tagData = data2.itemStack.getTags().toString();
-        let componentInfo = JSON.parse(tagData.substring(tagData.indexOf(`poke-pfe:UpgraderInfo:`), tagData.lastIndexOf(`:poke-pfe:UpgraderInfoEnd`)).substring(22));
-        let multi = 1;
-        if (componentInfo.canUpgrade.includes(data2.block.typeId)) {
-          const block_location = `${data2.block.x} ${data2.block.y} ${data2.block.z}`;
-          const itemIds = data2.itemStack.typeId;
-          const itemId = itemIds.substring(5);
-          data2.source.runCommand(`execute positioned ${block_location} run function poke/pfe/${itemId}`);
-        } else {
-          multi = 0;
-        }
-        PokeDamageItemUB(data2.itemStack, multi, data2.source, EquipmentSlot8.Mainhand);
-        return;
-      }
-    }
-  );
   data.blockComponentRegistry.registerCustomComponent(
     "poke:trapdoor_event",
     {
@@ -8592,53 +8570,6 @@ system6.beforeEvents.startup.subscribe((data) => {
     }
   );
   data.blockComponentRegistry.registerCustomComponent(
-    "poke:cc_lava_sponge",
-    {
-      onPlace(data2, component) {
-        switch (MinecraftBlockTypes.Lava || MinecraftBlockTypes.FlowingLava) {
-          case data2.block.north()?.typeId:
-            break;
-          case data2.block.south()?.typeId:
-            break;
-          case data2.block.east()?.typeId:
-            break;
-          case data2.block.west()?.typeId:
-            break;
-          case data2.block.below()?.typeId:
-            break;
-          case data2.block.above()?.typeId:
-            break;
-          default:
-            return;
-        }
-        data2.dimension.runCommand(`execute positioned ${data2.block.x} ${data2.block.y} ${data2.block.z} run function poke/pfe/lava_sponge_to_molten`);
-        ComputersCompat.addStat("lava_sponged", 1);
-        return;
-      },
-      onTick(data2, component) {
-        switch (MinecraftBlockTypes.Lava || MinecraftBlockTypes.FlowingLava) {
-          case data2.block.north()?.typeId:
-            break;
-          case data2.block.south()?.typeId:
-            break;
-          case data2.block.east()?.typeId:
-            break;
-          case data2.block.west()?.typeId:
-            break;
-          case data2.block.below()?.typeId:
-            break;
-          case data2.block.above()?.typeId:
-            break;
-          default:
-            return;
-        }
-        data2.dimension.runCommand(`execute positioned ${data2.block.x} ${data2.block.y} ${data2.block.z} run function poke/pfe/lava_sponge_to_molten`);
-        ComputersCompat.addStat("lava_sponged", 1);
-        return;
-      }
-    }
-  );
-  data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:molten_lava_sponge",
     {
       onRandomTick(data2, component) {
@@ -9068,6 +8999,132 @@ system6.beforeEvents.startup.subscribe((data) => {
     }
   );
   data.itemComponentRegistry.registerCustomComponent(
+    "poke_pfe:transform_blocks",
+    {
+      onUseOn(data2, componentInfo) {
+        const component = componentInfo.params;
+        for (const blocks of component.transforms) {
+          let toBlock = blocks.substring(blocks.indexOf("::") + 2);
+          const fromBlock = blocks.substring(0, blocks.indexOf("::"));
+          console.warn(`From: ${fromBlock}, To: ${toBlock}, Block: ${data2.block.typeId}`);
+          if (data2.block.typeId != fromBlock)
+            continue;
+          if (toBlock.includes("{")) {
+            const permutationString = toBlock.substring(toBlock.indexOf("{"));
+            toBlock = toBlock.substring(0, toBlock.indexOf("{"));
+            console.warn(`To: ${toBlock}, Permutations: ${permutationString}, Block: ${data2.block.typeId}`);
+            const permutations = JSON.parse(permutationString);
+            data2.block.setPermutation(BlockPermutation.resolve(toBlock, permutations));
+          } else
+            data2.block.setType(toBlock);
+          PokeDamageItemUB(data2.itemStack, 1, data2.source, EquipmentSlot8.Mainhand);
+          break;
+        }
+        return;
+      }
+    }
+  );
+  data.blockComponentRegistry.registerCustomComponent(
+    "poke_pfe:sponge_block",
+    {
+      onPlace(data2, componentInfo) {
+        const component = componentInfo.params;
+        if (!component.mode.includes("place"))
+          return;
+        for (const blockId of component.check_for_blocks) {
+          switch (blockId) {
+            case data2.block.north()?.typeId:
+              break;
+            case data2.block.south()?.typeId:
+              break;
+            case data2.block.east()?.typeId:
+              break;
+            case data2.block.west()?.typeId:
+              break;
+            case data2.block.below()?.typeId:
+              break;
+            case data2.block.above()?.typeId:
+              break;
+            case "all":
+              break;
+            default:
+              continue;
+          }
+          data2.block.setType(component.turns_into);
+          if (component.adds_to_stat) {
+            ComputersCompat.addStat(component.adds_to_stat, 1);
+          }
+          if (component.sound) {
+            data2.dimension.playSound(component.sound.identifier, data2.block.location, { pitch: component.sound.pitch, volume: component.sound.volume });
+          }
+          const X = component.sponge_size[0];
+          const Y = component.sponge_size[1];
+          const Z = component.sponge_size[2];
+          const startLocation = {
+            x: Math.round(data2.block.location.x - X / 2) + component.offset[0],
+            y: Math.round(data2.block.location.y - Y / 2 + component.offset[1]),
+            z: Math.round(data2.block.location.z - Z / 2) + component.offset[2]
+          };
+          const endLocation = {
+            x: startLocation.x + (X > 0 ? X - 1 : X == 0 ? 0 : X + 1),
+            y: startLocation.y + (Y > 0 ? Y - 1 : Y == 0 ? 0 : Y + 1),
+            z: startLocation.z + (Z > 0 ? Z - 1 : Z == 0 ? 0 : Z + 1)
+          };
+          data2.dimension.fillBlocks(new BlockVolume2(startLocation, endLocation), MinecraftBlockTypes.Air, { blockFilter: { includeTypes: component.check_for_blocks == "all" ? void 0 : component.check_for_blocks }, ignoreChunkBoundErrors: true });
+          break;
+        }
+        return;
+      },
+      onTick(data2, componentInfo) {
+        const component = componentInfo.params;
+        if (!component.mode.includes("tick"))
+          return;
+        for (const blockId of component.check_for_blocks) {
+          switch (blockId) {
+            case data2.block.north()?.typeId:
+              break;
+            case data2.block.south()?.typeId:
+              break;
+            case data2.block.east()?.typeId:
+              break;
+            case data2.block.west()?.typeId:
+              break;
+            case data2.block.below()?.typeId:
+              break;
+            case data2.block.above()?.typeId:
+              break;
+            case "all":
+              break;
+            default:
+              continue;
+          }
+          data2.block.setType(component.turns_into);
+          if (component.adds_to_stat) {
+            ComputersCompat.addStat(component.adds_to_stat, 1);
+          }
+          if (component.sound) {
+            data2.dimension.playSound(component.sound.identifier, data2.block.location, { pitch: component.sound.pitch, volume: component.sound.volume });
+          }
+          const X = component.sponge_size[0];
+          const Y = component.sponge_size[1];
+          const Z = component.sponge_size[2];
+          const startLocation = {
+            x: Math.round(data2.block.location.x - X / 2) + component.offset[0],
+            y: Math.round(data2.block.location.y - Y / 2 + component.offset[1]),
+            z: Math.round(data2.block.location.z - Z / 2) + component.offset[2]
+          };
+          const endLocation = {
+            x: startLocation.x + (X > 0 ? X - 1 : X == 0 ? 0 : X + 1),
+            y: startLocation.y + (Y > 0 ? Y - 1 : Y == 0 ? 0 : Y + 1),
+            z: startLocation.z + (Z > 0 ? Z - 1 : Z == 0 ? 0 : Z + 1)
+          };
+          data2.dimension.fillBlocks(new BlockVolume2(startLocation, endLocation), MinecraftBlockTypes.Air, { blockFilter: { includeTypes: component.check_for_blocks == "all" ? void 0 : component.check_for_blocks }, ignoreChunkBoundErrors: true });
+          break;
+        }
+      }
+    }
+  );
+  data.itemComponentRegistry.registerCustomComponent(
     "poke_pfe:spawn_entity",
     {
       onUseOn(data2, componentInfo) {
@@ -9172,7 +9229,12 @@ system6.beforeEvents.startup.subscribe((data) => {
             }
           }
         }
-        componentInfo.command ? data2.source.runCommand(componentInfo.command) : void 0;
+        if (typeof componentInfo.command == "string")
+          data2.source.runCommand(componentInfo.command);
+        else if (componentInfo.command)
+          for (const command of componentInfo.command) {
+            data2.source.runCommand(command);
+          }
         if (componentInfo.trigger_cooldown)
           data2.itemStack.getComponent(ItemComponentTypes4.Cooldown)?.startCooldown(data2.source);
         if (componentInfo.take_durability !== false)
@@ -9205,6 +9267,7 @@ system6.beforeEvents.startup.subscribe((data) => {
   data.itemComponentRegistry.registerCustomComponent("poke_pfe:quests", new PFEQuestComponent());
   data.itemComponentRegistry.registerCustomComponent("poke_pfe:waypoint_menu", new PFEWaypointComponent());
   data.blockComponentRegistry.registerCustomComponent("poke_pfe:custom_recipes", {});
+  data.blockComponentRegistry.registerCustomComponent("poke_pfe:icon_path", {});
   data.itemComponentRegistry.registerCustomComponent("poke_pfe:icon_path", {});
   data.itemComponentRegistry.registerCustomComponent("poke_pfe:set_effects", {});
   data.itemComponentRegistry.registerCustomComponent("poke_pfe:custom_upgrades", {});

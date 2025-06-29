@@ -38,7 +38,7 @@
 				"uncertainty_multiplier": 0,
 				"uncertainty_base": 0,
 				"stop_on_hurt": false,
-				//"particle": "poke:necromancer_orb",
+				//"particle": "poke_pfe:necromancer_orb",
 				"on_hit": {
 					"impact_damage": {
 						"damage": 5

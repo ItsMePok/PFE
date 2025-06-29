@@ -30,10 +30,10 @@
 				]
 			},
 			"particle_emitters": {
-				"necromancer_orb": "poke:necromancer_orb"
+				"necromancer_orb": "poke_pfe:necromancer_orb"
 			},
 			"particle_effects": {
-				"necromancer_orb": "poke:necromancer_orb"
+				"necromancer_orb": "poke_pfe:necromancer_orb"
 			}
 		}
 	}

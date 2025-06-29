@@ -8,6 +8,44 @@
     "replace_rules": [
       {
         "places_block": {
+          "name": "poke:godly_ore",
+          "states": {}
+        },
+        "may_replace": [
+          {
+            "name": "minecraft:stone",
+            "states": {
+              "stone_type": "stone"
+            }
+          },
+          {
+            "name": "minecraft:stone",
+            "states": {
+              "stone_type": "andesite"
+            }
+          },
+          {
+            "name": "minecraft:stone",
+            "states": {
+              "stone_type": "granite"
+            }
+          },
+          {
+            "name": "minecraft:stone",
+            "states": {
+              "stone_type": "diorite"
+            }
+          }
+        ]
+      },
+      {
+        "places_block": "poke:deepslate_godly_ore",
+        "may_replace": [
+          "deepslate"
+        ]
+      },
+      {
+        "places_block": {
           "name": "poke:end_godly_ore",
           "states": {}
         },

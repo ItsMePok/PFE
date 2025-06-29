@@ -20,7 +20,10 @@
 			},
 			"poke_pfe:run_command": {
 				"version": 1,
-				"command": "function poke/pfe/armor_stand_remover",
+				"command": [
+					"execute at @e[type=minecraft:armor_stand,c=1,r=2] as @s run structure load \"poke:armor_stand_item\" ~~~",
+					"execute as @e[type=minecraft:armor_stand,c=1,r=2] run kill @s"
+				],
 				"take_durability": false,
 				"trigger_cooldown": true,
 				"can_be_disabled": false

@@ -46,7 +46,12 @@
 			},
 			"poke_pfe:run_command": {
 				"version": 1,
-				"command": "function poke/pfe/kapow_ring",
+				"command": [
+					"summon tnt ~~~",
+					"summon tnt ~~~",
+					"summon tnt ~~~",
+					"summon tnt ~~~"
+				],
 				"take_durability": true,
 				"trigger_cooldown": true,
 				"can_be_disabled": true

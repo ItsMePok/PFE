@@ -29,6 +29,25 @@
               "components": {
                 "type": "object",
                 "properties": {
+                  "poke_pfe:transform_blocks": {
+                    "title": "Transform Blocks (PFE)",
+                    "type": "object",
+                    "properties": {
+                      "transforms": {
+                        "type": "array",
+                        "description": "The blocks this can convert and what they convert to",
+                        "items": {
+                          "type": "string",
+                          "pattern": "([\\w-]*):([\\w-]*)::([\\w-]*):([\\w-]*)",
+                        },
+                        "uniqueItems": true,
+                        "minItems": 1
+                      }
+                    },
+                    "required": [
+                      "transforms"
+                    ]
+                  },
                   "poke_pfe:recipe_item": {
                     "description": "Recipe Block (PFE)",
                     "oneOf": [
@@ -565,8 +584,30 @@
                         "description": "The version of this component. this is used to prevent breaking with outdated versions of this component's info\nCurrent version: 1",
                         "default": 1,
                       },
+                      "mode": {
+                        "type": "array",
+                        "items": {
+                          "enum": [
+                            "on_use",
+                            "on_use_on"
+                          ]
+                        },
+                        "minItems": 1
+                      },
                       "command": {
-                        "type": "string"
+                        "description": "The command(s) to run",
+                        "oneOf": [
+                          {
+                            "type": "string"
+                          },
+                          {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            },
+                            "minItems": 1
+                          }
+                        ]
                       },
                       "can_be_disabled": {
                         "type": "boolean",
@@ -3126,6 +3167,109 @@
               "components": {
                 "type": "object",
                 "properties": {
+                  "poke_pfe:sponge_block": {
+                    "title": "Sponge Block (PFE)",
+                    "type": "object",
+                    "description": "Allows this block to \"absorb\" adjacent blocks",
+                    "properties": {
+                      "mode": {
+                        "type": "array",
+                        "description": "The way this gets triggered",
+                        "items": [
+                          {
+                            "enum": [
+                              "place",
+                              "tick"
+                            ]
+                          }
+                        ],
+                        "minItems": 1,
+                        "uniqueItems": true,
+                        "contains": true
+                      },
+                      "turns_into": {
+                        "type": "string",
+                        "description": "The block this turns into",
+                        "enum": [
+                          "poke:molten_lava_sponge"
+                        ]
+                      },
+                      "check_for_blocks": {
+                        "description": "The blocks it will check for & The blocks that this will replace",
+                        "oneOf": [
+                          {
+                            "enum": [
+                              "all"
+                            ]
+                          },
+                          {
+                            "type": "array",
+                            "items": {
+                              "type": "string",
+                              "enum": [
+                                "minecraft:lava",
+                                "minecraft:flowing_lava",
+                                "minecraft:water",
+                                "minecraft:flowing_water"
+                              ]
+                            },
+                            "minItems": 1,
+                          }
+                        ]
+                      },
+                      "adds_to_stat": {
+                        "type": "string",
+                        "description": "(For Computer Craft Add-On Integration) What stat this adds to",
+                        "enum": [
+                          "lava_sponged"
+                        ]
+                      },
+                      "sound": {
+                        "type": "object",
+                        "description": "The sounds this plays when it sucessfully triggers",
+                        "properties": {
+                          "identifier": {
+                            "type": "string",
+                            "description": "The sound's identifier",
+                            "enum": [
+                              "sponge.absorb"
+                            ]
+                          },
+                          "pitch": {
+                            "type": "number",
+                            "description": "The pitch of the sound",
+                            "default": 1
+                          },
+                          "volume": {
+                            "type": "number",
+                            "description": "The volume of the sound",
+                            "default": 1
+                          }
+                        },
+                        "required": [
+                          "identifier"
+                        ]
+                      },
+                      "sponge_size": {
+                        "type": "array",
+                        "description": "The area centered around the block to be affected by this [X,Y,Z]",
+                        "items": {
+                          "type": "number"
+                        },
+                        "maxItems": 3,
+                        "minItems": 3
+                      },
+                      "offset": {
+                        "type": "array",
+                        "description": "The offset that is applied to ``sponge_size``",
+                        "items": {
+                          "type": "number"
+                        },
+                        "maxItems": 3,
+                        "minItems": 3
+                      }
+                    }
+                  },
                   "poke_pfe:icon_path": {
                     "title": "Icon Path (PFE)",
                     "type": "string",
@@ -3303,6 +3447,7 @@
     "scriptevent",
     "Shadowstone",
     "shimmerblock",
+    "shroomlight",
     "shulker",
     "Shuniji",
     "Shuriken",

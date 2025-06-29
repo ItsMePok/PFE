@@ -45,7 +45,10 @@
 			},
 			"poke_pfe:run_command": {
 				"version": 1,
-				"command": "function poke/pfe/zeus_ring",
+				"command": [
+					"execute as @e[rm=0.1,r=10,type=!arrow,type=!armor_stand,type=!minecart,type=!boat,type=!chest_boat,type=!hopper_minecart,type=!chest_minecart,type=!command_block_minecart,type=!minecraft:leash_knot,type=!npc,type=!xp_orb] at @s run summon lightning_bolt",
+					"weather thunder"
+				],
 				"take_durability": true,
 				"trigger_cooldown": true,
 				"can_be_disabled": false

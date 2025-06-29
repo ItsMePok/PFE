@@ -170,7 +170,14 @@
 			},
 			"poke_pfe:run_command": {
 				"version": 1,
-				"command": "function poke/pfe/nebula_hoe",
+				"mode": [
+					"on_use_on"
+				],
+				"command": [
+					"fill ~3 ~1 ~3 ~-3 ~-2 ~-3 minecraft:farmland[\"moisturized_amount\"=7] replace minecraft:dirt",
+					"fill ~3 ~1 ~3 ~-3 ~-2 ~-3 minecraft:farmland[\"moisturized_amount\"=7] replace minecraft:grass_block",
+					"fill ~3 ~1 ~3 ~-3 ~-2 ~-3 minecraft:farmland[\"moisturized_amount\"=7] replace minecraft:grass_path"
+				],
 				"take_durability": true,
 				"trigger_cooldown": true,
 				"can_be_disabled": false

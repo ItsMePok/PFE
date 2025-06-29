@@ -28,10 +28,15 @@
           "pfe:persistence"
         ]
       },
-      "poke-pfe:upgrader": {},
+      "poke_pfe:transform_blocks": {
+        "transforms": [
+          "minecraft:coal_ore::minecraft:coal_block",
+          "minecraft:deepslate_coal_ore::minecraft:coal_block"
+        ]
+      },
       "minecraft:tags": {
         "tags": [
-          "poke-pfe:UpgraderInfo:{\"canUpgrade\":[\"minecraft:coal_ore\",\"minecraft:deepslate_coal_ore\"]}:poke-pfe:UpgraderInfoEnd"
+          "pfe:is_upgrader"
         ]
       }
     }

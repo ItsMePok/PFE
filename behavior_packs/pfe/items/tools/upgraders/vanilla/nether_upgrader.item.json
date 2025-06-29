@@ -28,10 +28,20 @@
 					"pfe:persistence"
 				]
 			},
-			"poke-pfe:upgrader": {},
+			"poke_pfe:transform_blocks": {
+				"transforms": [
+					"minecraft:quartz_ore::minecraft:quartz_block",
+					"minecraft:netherrack::minecraft:nether_brick",
+					"minecraft:magma::minecraft:flowing_lava",
+					"minecraft:basalt::minecraft:smooth_basalt",
+					"minecraft:glowstone::minecraft:shroomlight",
+					"minecraft:nether_wart::minecraft:nether_wart_block",
+					"minecraft:nether_brick::minecraft:red_nether_brick"
+				]
+			},
 			"minecraft:tags": {
 				"tags": [
-					"poke-pfe:UpgraderInfo:{\"canUpgrade\":[\"minecraft:quartz_ore\",\"minecraft:nether_brick\",\"minecraft:netherrack\",\"minecraft:magma\",\"minecraft:basalt\",\"minecraft:glowstone\",\"minecraft:nether_wart\"]}:poke-pfe:UpgraderInfoEnd"
+					"pfe:is_upgrader"
 				]
 			}
 		}

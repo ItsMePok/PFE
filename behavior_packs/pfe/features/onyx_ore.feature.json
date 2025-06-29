@@ -7,11 +7,17 @@
 		"count": 9,
 		"replace_rules": [
 			{
-				"places_block": "poke:onyx",//Onyx Ore
+				"places_block": "poke:onyx", //Onyx Ore
 				"may_replace": [
 					"minecraft:deepslate",
 					"minecraft:tuff"
 				]
+			},
+			{
+				"may_replace": [
+					"minecraft:netherrack"
+				],
+				"places_block": "poke:nether_onyx_ore"
 			}
 		]
 	}

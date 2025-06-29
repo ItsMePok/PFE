@@ -43,6 +43,17 @@
 				"may_replace": [
 					"deepslate"
 				]
+			},
+			{
+				"places_block": {
+					"name": "poke:end_godly_ore",
+					"states": {}
+				},
+				"may_replace": [
+					{
+						"name": "minecraft:end_stone"
+					}
+				]
 			}
 		]
 	}

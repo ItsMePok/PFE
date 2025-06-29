@@ -28,10 +28,16 @@
 					"pfe:persistence"
 				]
 			},
-			"poke-pfe:upgrader": {},
+			"poke_pfe:transform_blocks": {
+				"transforms": [
+					"poke:hellite_ore::poke:raw_hellish_block",
+					"poke:hellish_ore::poke:raw_hellish_block",
+					"poke:nether_hellish_ore::poke:raw_hellish_block"
+				]
+			},
 			"minecraft:tags": {
 				"tags": [
-					"poke-pfe:UpgraderInfo:{\"canUpgrade\":[\"poke:hellite_ore\",\"poke:hellish_ore\",\"poke:nether_hellish_ore\"]}:poke-pfe:UpgraderInfoEnd"
+					"pfe:is_upgrader"
 				]
 			}
 		}

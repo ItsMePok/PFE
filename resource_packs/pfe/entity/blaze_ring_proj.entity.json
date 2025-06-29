@@ -23,10 +23,7 @@
       },
       "render_controllers": [
         "controller.render.fireball" //2
-      ],
-      "particle_effects": {
-        "blaze_ring_proj": "poke:necromancer_orb"
-      }
+      ]
     }
   }
 }

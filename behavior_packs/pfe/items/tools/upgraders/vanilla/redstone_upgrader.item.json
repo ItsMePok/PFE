@@ -28,10 +28,17 @@
           "pfe:persistence"
         ]
       },
-      "poke-pfe:upgrader": {},
+      "poke_pfe:transform_blocks": {
+        "transforms": [
+          "minecraft:lit_redstone_ore::minecraft:redstone_block",
+          "minecraft:lit_deepslate_redstone_ore::minecraft:redstone_block",
+          "minecraft:redstone_ore::minecraft:redstone_block",
+          "minecraft:deepslate_redstone_ore::minecraft:redstone_block"
+        ]
+      },
       "minecraft:tags": {
         "tags": [
-          "poke-pfe:UpgraderInfo:{\"canUpgrade\":[\"minecraft:redstone_ore\",\"minecraft:deepslate_redstone_ore\",\"minecraft:lit_redstone_ore\",\"minecraft:lit_deepslate_redstone_ore\"]}:poke-pfe:UpgraderInfoEnd"
+          "pfe:is_upgrader"
         ]
       }
     }

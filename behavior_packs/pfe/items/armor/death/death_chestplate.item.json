@@ -78,7 +78,7 @@
 				},
 				{
 					"mode": "command",
-					"command": "particle poke:death_r10 ~ ~-1 ~",
+					"command": "particle poke_pfe:death_r10 ~ ~-1 ~",
 					"bind_to": "player",
 					"disable_check": "death_radius",
 					"no_repeat_id": "poke_pfe:death_particle"

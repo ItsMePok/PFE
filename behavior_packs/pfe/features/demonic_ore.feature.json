@@ -44,6 +44,14 @@
 					"minecraft:deepslate",
 					"minecraft:tuff"
 				]
+			},
+			{
+				"places_block": {
+					"name": "poke:nether_demonic_ore"
+				},
+				"may_replace": [
+					"netherrack"
+				]
 			}
 		]
 	}

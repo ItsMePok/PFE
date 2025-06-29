@@ -1,5 +1,5 @@
-import { system, world, EquipmentSlot, GameMode, EntityComponentTypes, ItemComponentTypes, ItemStack, Player, Direction, RawMessage, EntityQueryOptions, Block, ItemType, InputButton, ButtonState } from "@minecraft/server";
-import { BlockStateSuperset, MinecraftBlockTypes, MinecraftDimensionTypes, MinecraftEffectTypes, MinecraftEnchantmentTypes, MinecraftEntityTypes, MinecraftItemTypes } from "@minecraft/vanilla-data";
+import { system, world, EquipmentSlot, GameMode, EntityComponentTypes, ItemComponentTypes, ItemStack, Player, Direction, RawMessage, EntityQueryOptions, Block, ItemType, InputButton, ButtonState, BlockVolumeBase, BlockVolume, Vector3, BlockPermutation, BlockStateType, BlockStateArg } from "@minecraft/server";
+import { BlockStateSuperset, MinecraftBlockTypes, MinecraftDimensionTypes, MinecraftEffectTypes, MinecraftEnchantmentTypes, MinecraftEntityTypes, MinecraftItemTypes, RedMushroomBlockStates } from "@minecraft/vanilla-data";
 import { PFEBossEventConfig, PFEBossEventConfigName, PFEBossEventTicks, PFEBossEventUIMainMenu, PFEDefaultBossEventSettings, PFEStartBossEvent, startBossEvents } from "./bossEvents";
 import { PFEBoxMiningComponent } from "./boxMining";
 import { PokeClosestCardinal, PokeDamageItemUB, PokeDecrementStack, PokeSpawnLootTable } from "./commonFunctions";
@@ -580,34 +580,7 @@ system.beforeEvents.startup.subscribe(data => {
 
 
 
-    data.itemComponentRegistry.registerCustomComponent(
-        "poke-pfe:upgrader", {
-        onUseOn(data, component) {
-            interface PFEUpgraderComponentInfo {
-                canUpgrade: string[]
-            }
-            /*
-            \"\",
 
-            poke-pfe:UpgraderInfo:{\"canUpgrade\":[\"poke:carved_melon\",\"poke:gilded_carved_melon\",\"minecraft:pumpkin\",\"minecraft:melon_block\",\"poke:gilded_melon\",\"minecraft:brown_mushroom_block",\"minecraft:red_mushroom_block\"]}:poke-pfe:UpgraderInfoEnd
-            */
-            let tagData = data.itemStack.getTags().toString()
-            let componentInfo: PFEUpgraderComponentInfo = JSON.parse(tagData.substring(tagData.indexOf(`poke-pfe:UpgraderInfo:`), tagData.lastIndexOf(`:poke-pfe:UpgraderInfoEnd`)).substring(22))
-            //console.warn(JSON.stringify(componentInfo))
-            let multi = 1
-            if (componentInfo.canUpgrade.includes(data.block.typeId)) {
-                const block_location = `${data.block.x} ${data.block.y} ${data.block.z}`
-                const itemIds = data.itemStack.typeId
-                const itemId = itemIds.substring(5)
-                data.source.runCommand(`execute positioned ${block_location} run function poke/pfe/${itemId}`)
-            } else {
-                multi = 0
-            }
-            PokeDamageItemUB(data.itemStack, multi, data.source, EquipmentSlot.Mainhand)
-            return;
-        }
-    }
-    );
     data.blockComponentRegistry.registerCustomComponent(
         "poke:trapdoor_event", {
         onPlayerInteract(data, component) {
@@ -1106,38 +1079,6 @@ system.beforeEvents.startup.subscribe(data => {
     );
 
     data.blockComponentRegistry.registerCustomComponent(
-        "poke:cc_lava_sponge", {
-        onPlace(data, component) {
-            switch (MinecraftBlockTypes.Lava || MinecraftBlockTypes.FlowingLava) {
-                case data.block.north()?.typeId: break;
-                case data.block.south()?.typeId: break;
-                case data.block.east()?.typeId: break;
-                case data.block.west()?.typeId: break;
-                case data.block.below()?.typeId: break;
-                case data.block.above()?.typeId: break;
-                default: return
-            }
-            data.dimension.runCommand(`execute positioned ${data.block.x} ${data.block.y} ${data.block.z} run function poke/pfe/lava_sponge_to_molten`)
-            ComputersCompat.addStat("lava_sponged", 1)
-            return;
-        },
-        onTick(data, component) {
-            switch (MinecraftBlockTypes.Lava || MinecraftBlockTypes.FlowingLava) {
-                case data.block.north()?.typeId: break;
-                case data.block.south()?.typeId: break;
-                case data.block.east()?.typeId: break;
-                case data.block.west()?.typeId: break;
-                case data.block.below()?.typeId: break;
-                case data.block.above()?.typeId: break;
-                default: return;
-            }
-            data.dimension.runCommand(`execute positioned ${data.block.x} ${data.block.y} ${data.block.z} run function poke/pfe/lava_sponge_to_molten`)
-            ComputersCompat.addStat("lava_sponged", 1)
-            return;
-        }
-    }
-    );
-    data.blockComponentRegistry.registerCustomComponent(
         "poke_pfe:molten_lava_sponge", {
         onRandomTick(data, component) {
             switch (MinecraftBlockTypes.Water || MinecraftBlockTypes.FlowingWater) {
@@ -1499,6 +1440,126 @@ system.beforeEvents.startup.subscribe(data => {
     )
 
     // Updated Components
+    type TransformBlocksComponent = {
+        transforms: string[] // InteractOn::TurnsInto
+    }
+    data.itemComponentRegistry.registerCustomComponent(
+        "poke_pfe:transform_blocks", {
+        onUseOn(data, componentInfo) {
+            const component = <TransformBlocksComponent>componentInfo.params
+            for (const blocks of component.transforms) {
+                let toBlock = blocks.substring(blocks.indexOf("::") + 2)
+                const fromBlock = blocks.substring(0, blocks.indexOf("::"))
+                //console.warn(`From: ${fromBlock}, To: ${toBlock}, Block: ${data.block.typeId}`)
+                if (data.block.typeId != fromBlock) continue;
+                if (toBlock.includes("{")) {
+                    const permutationString = toBlock.substring(toBlock.indexOf("{"))
+                    toBlock = toBlock.substring(0, toBlock.indexOf("{"))
+                    //console.warn(`To: ${toBlock}, Permutations: ${permutationString}, Block: ${data.block.typeId}`)
+                    const permutations = <BlockStateArg<BlockStateSuperset>>JSON.parse(permutationString)
+                    data.block.setPermutation(BlockPermutation.resolve(toBlock, permutations))
+                } else data.block.setType(toBlock);
+                PokeDamageItemUB(data.itemStack, 1, data.source, EquipmentSlot.Mainhand)
+                break
+            }
+            return;
+        }
+    }
+    );
+    type SpongeBlockComponent = {
+        mode: ("place" | "tick")[]
+        turns_into: string
+        check_for_blocks: string[] | "all"
+        adds_to_stat?: "lava_sponged"
+        sound?: {
+            identifier: string
+            pitch?: number
+            volume?: number
+        },
+        sponge_size: [number, number, number] //[X,Y,Z]
+        offset: [number, number, number] //[X,Y,Z]
+    }
+    data.blockComponentRegistry.registerCustomComponent(
+        "poke_pfe:sponge_block", {
+        onPlace(data, componentInfo) {
+            const component = <SpongeBlockComponent>componentInfo.params
+            if (!component.mode.includes("place")) return;
+            for (const blockId of component.check_for_blocks) {
+                switch (blockId) {
+                    case data.block.north()?.typeId: break;
+                    case data.block.south()?.typeId: break;
+                    case data.block.east()?.typeId: break;
+                    case data.block.west()?.typeId: break;
+                    case data.block.below()?.typeId: break;
+                    case data.block.above()?.typeId: break;
+                    case "all": break;
+                    default: continue
+                }
+                data.block.setType(component.turns_into)
+                if (component.adds_to_stat) {
+                    ComputersCompat.addStat(component.adds_to_stat, 1)
+                }
+                if (component.sound) {
+                    data.dimension.playSound(component.sound.identifier, data.block.location, { pitch: component.sound.pitch, volume: component.sound.volume })
+                }
+                const X = component.sponge_size[0]
+                const Y = component.sponge_size[1]
+                const Z = component.sponge_size[2]
+                const startLocation: Vector3 = {
+                    x: Math.round(data.block.location.x - (X / 2)) + component.offset[0],
+                    y: Math.round(data.block.location.y - (Y / 2) + component.offset[1]),
+                    z: Math.round(data.block.location.z - (Z / 2)) + component.offset[2]
+                }
+                const endLocation: Vector3 = {
+                    x: startLocation.x + ((X > 0 ? X - 1 : X == 0 ? 0 : X + 1)),
+                    y: startLocation.y + ((Y > 0 ? Y - 1 : Y == 0 ? 0 : Y + 1)),
+                    z: startLocation.z + ((Z > 0 ? Z - 1 : Z == 0 ? 0 : Z + 1))
+                }
+                data.dimension.fillBlocks(new BlockVolume(startLocation, endLocation), MinecraftBlockTypes.Air, { blockFilter: { includeTypes: component.check_for_blocks == "all" ? undefined : component.check_for_blocks }, ignoreChunkBoundErrors: true })
+                break
+            }
+            return;
+        },
+        onTick(data, componentInfo) {
+            const component = <SpongeBlockComponent>componentInfo.params
+            if (!component.mode.includes("tick")) return;
+            for (const blockId of component.check_for_blocks) {
+                switch (blockId) {
+                    case data.block.north()?.typeId: break;
+                    case data.block.south()?.typeId: break;
+                    case data.block.east()?.typeId: break;
+                    case data.block.west()?.typeId: break;
+                    case data.block.below()?.typeId: break;
+                    case data.block.above()?.typeId: break;
+                    case "all": break;
+                    default: continue
+                }
+                data.block.setType(component.turns_into)
+                if (component.adds_to_stat) {
+                    ComputersCompat.addStat(component.adds_to_stat, 1)
+                }
+                if (component.sound) {
+                    data.dimension.playSound(component.sound.identifier, data.block.location, { pitch: component.sound.pitch, volume: component.sound.volume })
+                }
+                const X = component.sponge_size[0]
+                const Y = component.sponge_size[1]
+                const Z = component.sponge_size[2]
+                const startLocation: Vector3 = {
+                    x: Math.round(data.block.location.x - (X / 2)) + component.offset[0],
+                    y: Math.round(data.block.location.y - (Y / 2) + component.offset[1]),
+                    z: Math.round(data.block.location.z - (Z / 2)) + component.offset[2]
+                }
+                const endLocation: Vector3 = {
+                    x: startLocation.x + ((X > 0 ? X - 1 : X == 0 ? 0 : X + 1)),
+                    y: startLocation.y + ((Y > 0 ? Y - 1 : Y == 0 ? 0 : Y + 1)),
+                    z: startLocation.z + ((Z > 0 ? Z - 1 : Z == 0 ? 0 : Z + 1))
+                }
+                data.dimension.fillBlocks(new BlockVolume(startLocation, endLocation), MinecraftBlockTypes.Air, { blockFilter: { includeTypes: component.check_for_blocks == "all" ? undefined : component.check_for_blocks }, ignoreChunkBoundErrors: true })
+                break
+            }
+        }
+    }
+    );
     data.itemComponentRegistry.registerCustomComponent(
         "poke_pfe:spawn_entity", {
         onUseOn(data, componentInfo) {
@@ -1580,18 +1641,20 @@ system.beforeEvents.startup.subscribe(data => {
         }
     }
     );
+    type runCommandComponentInfo = {
+        version?: number,
+        mode?: ("on_use_on" | "on_use")[]
+        can_be_disabled?: boolean,
+        command?: string | string[],
+        trigger_cooldown?: boolean,
+        take_durability?: boolean
+    }
     data.itemComponentRegistry.registerCustomComponent(
         "poke_pfe:run_command", {
         onUse(data, component) {
             if (!data.itemStack) return;
-            type runCommandComponentInfo = {
-                version?: number,
-                can_be_disabled?: boolean,
-                command?: string,
-                trigger_cooldown?: boolean,
-                take_durability?: boolean
-            }
             const componentInfo = <runCommandComponentInfo>component.params
+            if (!(componentInfo.mode == undefined || componentInfo.mode.includes("on_use"))) return;
             if (componentInfo.can_be_disabled) {
                 let options: PFEDisableConfigOptions = JSON.parse(world.getDynamicProperty(PFEDisableConfigName)!.toString()) ?? PFEDisableConfigDefault
                 switch (true) {
@@ -1606,9 +1669,30 @@ system.beforeEvents.startup.subscribe(data => {
                         }
                 }
             }
-            componentInfo.command ? data.source.runCommand(componentInfo.command) : undefined
+            if (typeof componentInfo.command == "string") data.source.runCommand(componentInfo.command);
+            else if (componentInfo.command)
+                for (const command of componentInfo.command) {
+                    data.source.runCommand(command)
+                }
+
             if (componentInfo.trigger_cooldown) data.itemStack.getComponent(ItemComponentTypes.Cooldown)?.startCooldown(data.source);
             if (componentInfo.take_durability !== false) PokeDamageItemUB(data.itemStack, undefined, data.source, EquipmentSlot.Mainhand);
+            return;
+        },
+        onUseOn(data, component) {
+            if (!data.itemStack) return;
+            const componentInfo = <runCommandComponentInfo>component.params
+            if (!componentInfo.mode?.includes("on_use_on")) return;
+            const player = <Player>data.source
+            if (player.typeId != MinecraftEntityTypes.Player) return;
+            if (typeof componentInfo.command == "string") data.block.dimension.runCommand(`execute at ${data.block.x} ${data.block.y} ${data.block.z} run ${componentInfo.command}`);
+            else if (componentInfo.command)
+                for (const command of componentInfo.command) {
+                    data.block.dimension.runCommand(`execute at ${data.block.x} ${data.block.y} ${data.block.z} run ${command}`)
+                }
+
+            if (componentInfo.trigger_cooldown) data.itemStack.getComponent(ItemComponentTypes.Cooldown)?.startCooldown(player);
+            if (componentInfo.take_durability !== false) PokeDamageItemUB(data.itemStack, undefined, player, EquipmentSlot.Mainhand);
             return;
         }
     }

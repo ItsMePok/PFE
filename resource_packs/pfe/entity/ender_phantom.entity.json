@@ -30,7 +30,7 @@
 				"move": "animation.ender_phantom.move"
 			},
 			"particle_effects": {
-				"wing_dust": "poke:end_phantom_trail_particle"
+				"wing_dust": "poke_pfe:end_phantom_trail_particle"
 			},
 			"sound_effects": {
 				"flap": "mob.phantom.flap"
