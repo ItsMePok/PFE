@@ -6855,23 +6855,6 @@ var RecipeBlockComponent = class {
     PFERecipeBlockMainMenu(component, data.player, data.block);
   }
 };
-var RecipeItemComponent = class {
-  onUse(data, componentInfo) {
-    const component = componentInfo.params;
-    if (!data.source)
-      return;
-    if (!data.itemStack)
-      return;
-    const player = data.source;
-    if (player.typeId != MinecraftEntityTypes.Player)
-      return;
-    if (!component.id) {
-      console.warn(`${data.itemStack.typeId} Does not have an ID defined but needs to || poke_pfe:recipe_block Component`);
-      return;
-    }
-    PFERecipeBlockMainMenu(component, player, data.itemStack);
-  }
-};
 function PFERecipeBlockMainMenu(component, player, block) {
   const UI = new ActionFormData10();
   const StoredItemsDynamicPropID = `${component.id}:storedItems`;
@@ -8220,25 +8203,6 @@ system6.beforeEvents.startup.subscribe((data) => {
     }
   );
   data.blockComponentRegistry.registerCustomComponent(
-    "poke:cc_block_breaker",
-    {
-      onTick(data2, component) {
-        const ActiveState = "pfe:active";
-        const block_location = `${data2.block.x} ${data2.block.y} ${data2.block.z}`;
-        if (data2.block.getRedstonePower() != 0 && data2.block.getRedstonePower() !== void 0) {
-          data2.block.setPermutation(data2.block.permutation.withState(ActiveState, 1));
-          data2.dimension.runCommand(`execute positioned ${block_location} unless block ~ ~-1 ~ bedrock run setblock ~ ~-1 ~ air destroy`);
-          return;
-        }
-        if (data2.block.getRedstonePower() == 0 && data2.block.getRedstonePower() !== void 0) {
-          data2.block.setPermutation(data2.block.permutation.withState(ActiveState, 0));
-          return;
-        }
-        return;
-      }
-    }
-  );
-  data.blockComponentRegistry.registerCustomComponent(
     "poke:cc_dirter",
     {
       onTick(data2, component) {
@@ -8998,6 +8962,91 @@ system6.beforeEvents.startup.subscribe((data) => {
       }
     }
   );
+  data.blockComponentRegistry.registerCustomComponent(
+    "poke_pfe:break_blocks",
+    {
+      onTick(data2, componentInfo) {
+        const component = componentInfo.params;
+        const ActiveState = "pfe:active";
+        if (data2.block.getRedstonePower() != 0 && data2.block.getRedstonePower() !== void 0) {
+          for (const target of component.targets) {
+            let GetBlock2 = function() {
+              switch (target) {
+                case Direction2.Up:
+                  return data2.block.above();
+                case Direction2.Down:
+                  return data2.block.below();
+                case Direction2.North:
+                  return data2.block.north();
+                case Direction2.South:
+                  return data2.block.south();
+                case Direction2.East:
+                  return data2.block.east();
+                case Direction2.West:
+                  return data2.block.west();
+                default:
+                  return data2.block;
+              }
+            };
+            var GetBlock = GetBlock2;
+            const block = GetBlock2();
+            if (!block)
+              continue;
+            let BannedBlocks = [
+              MinecraftBlockTypes.Air,
+              MinecraftBlockTypes.LightBlock0,
+              MinecraftBlockTypes.LightBlock1,
+              MinecraftBlockTypes.LightBlock2,
+              MinecraftBlockTypes.LightBlock3,
+              MinecraftBlockTypes.LightBlock4,
+              MinecraftBlockTypes.LightBlock5,
+              MinecraftBlockTypes.LightBlock6,
+              MinecraftBlockTypes.LightBlock7,
+              MinecraftBlockTypes.LightBlock8,
+              MinecraftBlockTypes.LightBlock9,
+              MinecraftBlockTypes.LightBlock10,
+              MinecraftBlockTypes.LightBlock11,
+              MinecraftBlockTypes.LightBlock12,
+              MinecraftBlockTypes.LightBlock13,
+              MinecraftBlockTypes.LightBlock14,
+              MinecraftBlockTypes.LightBlock15,
+              MinecraftBlockTypes.Barrier,
+              MinecraftBlockTypes.Jigsaw,
+              MinecraftBlockTypes.StructureBlock,
+              MinecraftBlockTypes.CommandBlock,
+              MinecraftBlockTypes.ChainCommandBlock,
+              MinecraftBlockTypes.RepeatingCommandBlock,
+              MinecraftBlockTypes.BorderBlock,
+              MinecraftBlockTypes.Allow,
+              MinecraftBlockTypes.Deny
+            ];
+            if (BannedBlocks.includes(block.typeId))
+              continue;
+            const block_location = `${block.x} ${block.y} ${block.z}`;
+            data2.dimension.runCommand(`execute positioned ${block_location} run setblock ~~~ air destroy`);
+          }
+          data2.block.setPermutation(data2.block.permutation.withState(ActiveState, 1));
+          return;
+        }
+        if (data2.block.getRedstonePower() == 0 && data2.block.getRedstonePower() !== void 0) {
+          data2.block.setPermutation(data2.block.permutation.withState(ActiveState, 0));
+          return;
+        }
+        return;
+      }
+    }
+  );
+  data.blockComponentRegistry.registerCustomComponent(
+    "poke_pfe:change_state",
+    {
+      onPlayerInteract(data2, componentInfo) {
+        const component = componentInfo.params;
+        if (typeof component.face != "string" && !component.face.includes(data2.face) || data2.block.permutation.getState("minecraft:block_face") == data2.face.toLowerCase())
+          return;
+        data2.block.setPermutation(data2.block.permutation.withState("minecraft:block_face", data2.face.toLowerCase()));
+      }
+    }
+  );
   data.itemComponentRegistry.registerCustomComponent(
     "poke_pfe:transform_blocks",
     {
@@ -9006,13 +9055,11 @@ system6.beforeEvents.startup.subscribe((data) => {
         for (const blocks of component.transforms) {
           let toBlock = blocks.substring(blocks.indexOf("::") + 2);
           const fromBlock = blocks.substring(0, blocks.indexOf("::"));
-          console.warn(`From: ${fromBlock}, To: ${toBlock}, Block: ${data2.block.typeId}`);
           if (data2.block.typeId != fromBlock)
             continue;
           if (toBlock.includes("{")) {
             const permutationString = toBlock.substring(toBlock.indexOf("{"));
             toBlock = toBlock.substring(0, toBlock.indexOf("{"));
-            console.warn(`To: ${toBlock}, Permutations: ${permutationString}, Block: ${data2.block.typeId}`);
             const permutations = JSON.parse(permutationString);
             data2.block.setPermutation(BlockPermutation.resolve(toBlock, permutations));
           } else
@@ -9220,6 +9267,8 @@ system6.beforeEvents.startup.subscribe((data) => {
         if (!data2.itemStack)
           return;
         const componentInfo = component.params;
+        if (!(componentInfo.mode == void 0 || componentInfo.mode.includes("on_use")))
+          return;
         if (componentInfo.can_be_disabled) {
           let options = JSON.parse(world10.getDynamicProperty(PFEDisableConfigName).toString()) ?? PFEDisableConfigDefault;
           switch (true) {
@@ -9239,6 +9288,27 @@ system6.beforeEvents.startup.subscribe((data) => {
           data2.itemStack.getComponent(ItemComponentTypes4.Cooldown)?.startCooldown(data2.source);
         if (componentInfo.take_durability !== false)
           PokeDamageItemUB(data2.itemStack, void 0, data2.source, EquipmentSlot8.Mainhand);
+        return;
+      },
+      onUseOn(data2, component) {
+        if (!data2.itemStack)
+          return;
+        const componentInfo = component.params;
+        if (!componentInfo.mode?.includes("on_use_on"))
+          return;
+        const player = data2.source;
+        if (player.typeId != MinecraftEntityTypes.Player)
+          return;
+        if (typeof componentInfo.command == "string")
+          data2.block.dimension.runCommand(`execute at ${data2.block.x} ${data2.block.y} ${data2.block.z} run ${componentInfo.command}`);
+        else if (componentInfo.command)
+          for (const command of componentInfo.command) {
+            data2.block.dimension.runCommand(`execute at ${data2.block.x} ${data2.block.y} ${data2.block.z} run ${command}`);
+          }
+        if (componentInfo.trigger_cooldown)
+          data2.itemStack.getComponent(ItemComponentTypes4.Cooldown)?.startCooldown(player);
+        if (componentInfo.take_durability !== false)
+          PokeDamageItemUB(data2.itemStack, void 0, player, EquipmentSlot8.Mainhand);
         return;
       }
     }
@@ -9261,7 +9331,6 @@ system6.beforeEvents.startup.subscribe((data) => {
     }
   );
   data.blockComponentRegistry.registerCustomComponent("poke_pfe:recipe_block", new RecipeBlockComponent());
-  data.itemComponentRegistry.registerCustomComponent("poke_pfe:recipe_item", new RecipeItemComponent());
   data.itemComponentRegistry.registerCustomComponent("poke_pfe:upgradeable", new PFEUpgradeableComponent());
   data.itemComponentRegistry.registerCustomComponent("poke_pfe:box_mining", new PFEBoxMiningComponent());
   data.itemComponentRegistry.registerCustomComponent("poke_pfe:quests", new PFEQuestComponent());

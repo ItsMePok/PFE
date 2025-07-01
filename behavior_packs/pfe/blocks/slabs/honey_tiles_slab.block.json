@@ -169,6 +169,9 @@
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 20
 			},
+			"minecraft:destruction_particles": {
+				"texture": "poke_honey_tiles"
+			},
 			"minecraft:map_color": "#d87800",
 			"tag:pfe": {},
 			"tag:stone_pick_diggable": {},

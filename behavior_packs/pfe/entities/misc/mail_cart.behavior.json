@@ -6,14 +6,6 @@
 			"is_spawnable": false,
 			"is_summonable": true,
 			"is_experimental": false,
-			"animations": {
-				"death": "controller.animation.poke_pfe.mail_cart.death"
-			},
-			"scripts": {
-				"animate": [
-					"death"
-				]
-			},
 			"runtime_identifier": "minecraft:chest_minecart"
 		},
 		"component_groups": {

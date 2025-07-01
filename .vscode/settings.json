@@ -3167,6 +3167,52 @@
               "components": {
                 "type": "object",
                 "properties": {
+                  "poke_pfe:change_state": {
+                    "properties": {
+                      "mode": {
+                        "type": "array",
+                        "items": {
+                          "enum": [
+                            "on_player_interact"
+                          ]
+                        },
+                        "minItems": 1
+                      },
+                      "face": {
+                        "oneOf": [
+                          {
+                            "type": "array",
+                            "items": {
+                              "enum": [
+                                "Up",
+                                "Down",
+                                "North",
+                                "South",
+                                "East",
+                                "West"
+                              ],
+                              "minItems": 1
+                            }
+                          },
+                          {
+                            "enum": [
+                              "all"
+                            ]
+                          }
+                        ]
+                      },
+                      "change_state": {
+                        "enum": [
+                          "minecraft:block_face"
+                        ]
+                      },
+                      "change_based_on": {
+                        "enum": [
+                          "interacted_face"
+                        ]
+                      }
+                    }
+                  },
                   "poke_pfe:sponge_block": {
                     "title": "Sponge Block (PFE)",
                     "type": "object",
@@ -3366,6 +3412,51 @@
           "minecraft:block"
         ]
       }
+    },
+    {
+      "fileMatch": [
+        "textures/flipbook_textures.json"
+      ],
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "flipbook_texture": {
+              "description": "Path to the graphic file for one or more faces of a block",
+              "type": "string"
+            },
+            "atlas_index": {
+              "description": "Index of the first frame to display when beginning the animation. If a problem occurs, then only this frame will be displayed.",
+              "type": "number"
+            },
+            "atlas_tile": {
+              "description": "Name of the graphic that will be shown on the block if there is a problem with the animation.",
+              "type": "string"
+            },
+            "atlas_tile_variant": {
+              "description": "An alternate graphic to display as the atlas tile.",
+              "type": "number"
+            },
+            "ticks_per_frame": {
+              "description": "How many ticks (1/20th of one second) of game time should pass before the next frame is displayed.",
+              "type": "number"
+            },
+            "frames": {
+              "description": "An array of frame numbers, used to show what order to display the frames.",
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 1
+            },
+            "blend_frames": {
+              "type": "boolean",
+              "description": "Makes the frames more smoothly transition into the next"
+            }
+          }
+        }
+      }
     }
   ],
   "cSpell.words": [
@@ -3399,6 +3490,7 @@
     "echointhewind",
     "eldunknown",
     "featherfall",
+    "flipbook",
     "floatingdream",
     "floatingtrees",
     "gametest",
@@ -3475,5 +3567,6 @@
     "zombifier"
   ],
   "editor.tabSize": 2,
-  "mc-dp-icons.enableSubfolderIcons": false
+  "mc-dp-icons.enableSubfolderIcons": false,
+  "git.autorefresh": false
 }

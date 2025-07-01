@@ -4,6 +4,9 @@
 	"num_mip_levels": 0,
 	"padding": 2,
 	"texture_data": {
+		"poke_pfe_animated_block_breaker_face": {
+			"textures": "textures/poke/pfe/auto_animated_block_breaker_face"
+		},
 		"poke_pfe_alloy_forge_side": {
 			"textures": "textures/poke/pfe/alloy_forge_side"
 		},

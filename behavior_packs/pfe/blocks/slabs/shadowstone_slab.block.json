@@ -169,6 +169,9 @@
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 15
 			},
+			"minecraft:destruction_particles": {
+				"texture": "poke_shadowstone"
+			},
 			"minecraft:map_color": "#2a1d2c",
 			"minecraft:friction": 0.42,
 			"tag:pfe": {},
