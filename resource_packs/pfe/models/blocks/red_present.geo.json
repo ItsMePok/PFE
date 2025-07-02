@@ -15,10 +15,10 @@
 					"name": "block",
 					"pivot": [0, 0, 0],
 					"cubes": [
-						{"origin": [-4, 0, -4], "size": [8, 9, 8], "uv": [0, 0]},
+						{"origin": [-4, 0.01, -4], "size": [8, 9, 8], "uv": [0, 0]},
 						{"origin": [-6, -0.1, 0], "size": [10, 10, 2], "pivot": [0, 0, 1], "rotation": [0, -90, 0], "uv": [0, 17]},
-						{"origin": [-5, -0.3, -1], "size": [10, 10, 2], "inflate": -0.1, "uv": [0, 17]},
-						{"origin": [-4, -0.1, 0], "size": [10, 10, 2], "pivot": [0, 0, 1], "rotation": [0, 90, 0], "uv": [0, 17], "mirror": true}
+						{"origin": [-5, 0, -1], "size": [10, 10, 2], "inflate": -0.1, "uv": [0, 17]},
+						{"origin": [-4, 0, 0], "size": [10, 10, 2], "pivot": [0, 0, 1], "rotation": [0, 90, 0], "uv": [0, 17], "mirror": true}
 					]
 				},
 				{

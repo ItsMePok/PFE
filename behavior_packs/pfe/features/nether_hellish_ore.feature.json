@@ -7,6 +7,18 @@
 		"count": 9,
 		"replace_rules": [
 			{
+				"places_block": "poke:hellite_ore", //Deepslate Hellish Ore
+				"may_replace": [
+					"minecraft:deepslate"
+				]
+			},
+			{
+				"places_block": "poke:hellish_ore",
+				"may_replace": [
+					"stone"
+				]
+			},
+			{
 				"places_block": {
 					"name": "poke:nether_hellish_ore"
 				},

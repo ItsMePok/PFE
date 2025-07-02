@@ -1,1 +1,0 @@
-fill ~~~ ~~ ~ budding_amethyst replace amethyst_block

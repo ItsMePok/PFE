@@ -509,22 +509,17 @@
 				]
 			},
 			"minecraft:entity_born": {
-				"sequence": [
-					{
-						"filters": {
-							"test": "has_component",
-							"operator": "!=",
-							"value": "minecraft:is_baby"
-						},
-						"remove": {},
-						"add": {
-							"component_groups": [
-								"minecraft:warped_sporecat_baby",
-								"minecraft:warped_sporecat_tame"
-							]
-						}
-					}
-				]
+				"filters": {
+					"test": "has_component",
+					"operator": "!=",
+					"value": "minecraft:is_baby"
+				},
+				"add": {
+					"component_groups": [
+						"minecraft:warped_sporecat_baby",
+						"minecraft:warped_sporecat_tame"
+					]
+				}
 			},
 			"minecraft:ageable_grow_up": {
 				"remove": {

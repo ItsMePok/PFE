@@ -1,5 +1,5 @@
 {
-	"format_version": "1.8.0",
+	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
 			"identifier": "poke:grizzly_bear",
@@ -13,22 +13,21 @@
 				"default": "geometry.poke_pfe.bear"
 			},
 			"animations": {
-				"walk": "animation.grizzly_bear.walk",
-				"move": "animation.grizzly_bear.move",
+				"walk": "animation.poke_pfe.bear.walk",
+				"move": "animation.poke_pfe.bear.move",
 				"look_at_target": "animation.common.look_at_target",
-				"baby_transform": "animation.grizzly_bear.baby_transform"
+				"baby_transform": "animation.poke_pfe.bear.baby_transform",
+				"move_controller": "controller.animation.poke_pfe.bear.move"
 			},
 			"scripts": {
-				"scale": "1.2"
+				"scale": "1.2",
+				"animate": [
+					"move_controller",
+					{
+						"baby_transform": "q.is_baby"
+					}
+				]
 			},
-			"animation_controllers": [
-				{
-					"move": "controller.animation.polarbear.move" //2
-				},
-				{
-					"baby": "controller.animation.polarbear.baby" //2
-				}
-			],
 			"render_controllers": [
 				"controller.render.polarbear" //2
 			],

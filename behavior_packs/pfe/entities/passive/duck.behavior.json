@@ -322,90 +322,86 @@
 				}
 			},
 			"minecraft:entity_spawned": {
-				"sequence": [
+				"randomize": [
 					{
-						"randomize": [
-							{
-								"weight": 18,
-								"remove": {},
-								"add": {
-									"component_groups": [
-										"poke:duck_adult",
-										"poke:duck_green"
-									]
-								}
-							},
-							{
-								"weight": 2,
-								"remove": {},
-								"add": {
-									"component_groups": [
-										"poke:duck_baby",
-										"poke:duck_green"
-									]
-								}
-							},
-							{
-								"weight": 18,
-								"remove": {},
-								"add": {
-									"component_groups": [
-										"poke:duck_adult",
-										"poke:duck_tan"
-									]
-								}
-							},
-							{
-								"weight": 2,
-								"remove": {},
-								"add": {
-									"component_groups": [
-										"poke:duck_baby",
-										"poke:duck_tan"
-									]
-								}
-							},
-							{
-								"weight": 9,
-								"remove": {},
-								"add": {
-									"component_groups": [
-										"poke:duck_adult",
-										"poke:duck_white"
-									]
-								}
-							},
-							{
-								"weight": 1,
-								"remove": {},
-								"add": {
-									"component_groups": [
-										"poke:duck_baby",
-										"poke:duck_white"
-									]
-								}
-							},
-							{
-								"weight": 9,
-								"remove": {},
-								"add": {
-									"component_groups": [
-										"poke:duck_adult",
-										"poke:duck_black"
-									]
-								}
-							},
-							{
-								"weight": 1,
-								"remove": {},
-								"add": {
-									"component_groups": [
-										"poke:duck_baby",
-										"poke:duck_black"
-									]
-								}
-							}
-						]
+						"weight": 18,
+						"remove": {},
+						"add": {
+							"component_groups": [
+								"poke:duck_adult",
+								"poke:duck_green"
+							]
+						}
+					},
+					{
+						"weight": 2,
+						"remove": {},
+						"add": {
+							"component_groups": [
+								"poke:duck_baby",
+								"poke:duck_green"
+							]
+						}
+					},
+					{
+						"weight": 18,
+						"remove": {},
+						"add": {
+							"component_groups": [
+								"poke:duck_adult",
+								"poke:duck_tan"
+							]
+						}
+					},
+					{
+						"weight": 2,
+						"remove": {},
+						"add": {
+							"component_groups": [
+								"poke:duck_baby",
+								"poke:duck_tan"
+							]
+						}
+					},
+					{
+						"weight": 9,
+						"remove": {},
+						"add": {
+							"component_groups": [
+								"poke:duck_adult",
+								"poke:duck_white"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"remove": {},
+						"add": {
+							"component_groups": [
+								"poke:duck_baby",
+								"poke:duck_white"
+							]
+						}
+					},
+					{
+						"weight": 9,
+						"remove": {},
+						"add": {
+							"component_groups": [
+								"poke:duck_adult",
+								"poke:duck_black"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"remove": {},
+						"add": {
+							"component_groups": [
+								"poke:duck_baby",
+								"poke:duck_black"
+							]
+						}
 					}
 				]
 			},

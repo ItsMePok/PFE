@@ -11,6 +11,7 @@
 			"minecraft:display_name": {
 				"value": "item.poke:pfe-mushroom_buddy_pottery_sherd.name"
 			},
+			"poke_pfe:icon_path": "textures/poke/pfe/mushroom_buddy_pottery_sherd",
 			"minecraft:icon": "poke_mushroom_buddy_pottery_sherd",
 			"minecraft:tags": {
 				"tags": [

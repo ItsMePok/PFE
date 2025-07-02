@@ -3,3 +3,7 @@ family=pfe_exclude
 family=dummy_entity
 entity=minecraft:leash_knot
 entity=minecraft:npc
+item=just:pfe_listener_hoodie
+item=minecraft:potion_type:water
+item=minecraft:music_disc_tears
+entity=minecraft:decorated_pot 

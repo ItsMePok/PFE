@@ -29,6 +29,70 @@
               "components": {
                 "type": "object",
                 "properties": {
+                  "poke_pfe:transform_blocks": {
+                    "title": "Transform Blocks (PFE)",
+                    "type": "object",
+                    "properties": {
+                      "transforms": {
+                        "type": "array",
+                        "description": "The blocks this can convert and what they convert to",
+                        "items": {
+                          "type": "string",
+                          "pattern": "([\\w-]*):([\\w-]*)::([\\w-]*):([\\w-]*)",
+                        },
+                        "uniqueItems": true,
+                        "minItems": 1
+                      }
+                    },
+                    "required": [
+                      "transforms"
+                    ]
+                  },
+                  "poke_pfe:recipe_item": {
+                    "description": "Recipe Block (PFE)",
+                    "oneOf": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "description": "This is used to determine what the dynamic proeprty gets read/saved as (IDs of the same value will share the same info for that player)",
+                            "anyOf": [
+                              {
+                                "enum": [
+                                  "poke_pfe:alloy_forge",
+                                ]
+                              },
+                              {
+                                "type": "string",
+                              }
+                            ],
+                          },
+                          "can_store_items": {
+                            "type": "boolean",
+                            "description": "Can this item store items that can later be used in recipes? (Currently stored items are bound to that player and not the item)",
+                            "default": false
+                          },
+                          "storage_capacity_limit": {
+                            "type": "number",
+                            "description": "The max amount of unique items this can store"
+                          },
+                          "name": {
+                            "type": "string",
+                            "description": "The name of the item (This will be used in things like the UI titles)",
+                            "default": "%poke_pfe.recipe_block"
+                          },
+                          "debug_mode": {
+                            "type": "boolean",
+                            "description": "Enables debug options for this item",
+                            "default": false
+                          }
+                        },
+                        "required": [
+                          "id"
+                        ]
+                      }
+                    ]
+                  },
                   "poke_pfe:icon_path": {
                     "title": "Icon Path (PFE)",
                     "type": "string",
@@ -520,8 +584,30 @@
                         "description": "The version of this component. this is used to prevent breaking with outdated versions of this component's info\nCurrent version: 1",
                         "default": 1,
                       },
+                      "mode": {
+                        "type": "array",
+                        "items": {
+                          "enum": [
+                            "on_use",
+                            "on_use_on"
+                          ]
+                        },
+                        "minItems": 1
+                      },
                       "command": {
-                        "type": "string"
+                        "description": "The command(s) to run",
+                        "oneOf": [
+                          {
+                            "type": "string"
+                          },
+                          {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            },
+                            "minItems": 1
+                          }
+                        ]
                       },
                       "can_be_disabled": {
                         "type": "boolean",
@@ -3081,6 +3167,160 @@
               "components": {
                 "type": "object",
                 "properties": {
+                  "poke_pfe:change_state": {
+                    "properties": {
+                      "mode": {
+                        "type": "array",
+                        "items": {
+                          "enum": [
+                            "on_player_interact"
+                          ]
+                        },
+                        "minItems": 1
+                      },
+                      "face": {
+                        "oneOf": [
+                          {
+                            "type": "array",
+                            "items": {
+                              "enum": [
+                                "Up",
+                                "Down",
+                                "North",
+                                "South",
+                                "East",
+                                "West"
+                              ],
+                              "minItems": 1
+                            }
+                          },
+                          {
+                            "enum": [
+                              "all"
+                            ]
+                          }
+                        ]
+                      },
+                      "change_state": {
+                        "enum": [
+                          "minecraft:block_face"
+                        ]
+                      },
+                      "change_based_on": {
+                        "enum": [
+                          "interacted_face"
+                        ]
+                      }
+                    }
+                  },
+                  "poke_pfe:sponge_block": {
+                    "title": "Sponge Block (PFE)",
+                    "type": "object",
+                    "description": "Allows this block to \"absorb\" adjacent blocks",
+                    "properties": {
+                      "mode": {
+                        "type": "array",
+                        "description": "The way this gets triggered",
+                        "items": [
+                          {
+                            "enum": [
+                              "place",
+                              "tick"
+                            ]
+                          }
+                        ],
+                        "minItems": 1,
+                        "uniqueItems": true,
+                        "contains": true
+                      },
+                      "turns_into": {
+                        "type": "string",
+                        "description": "The block this turns into",
+                        "enum": [
+                          "poke:molten_lava_sponge"
+                        ]
+                      },
+                      "check_for_blocks": {
+                        "description": "The blocks it will check for & The blocks that this will replace",
+                        "oneOf": [
+                          {
+                            "enum": [
+                              "all"
+                            ]
+                          },
+                          {
+                            "type": "array",
+                            "items": {
+                              "type": "string",
+                              "enum": [
+                                "minecraft:lava",
+                                "minecraft:flowing_lava",
+                                "minecraft:water",
+                                "minecraft:flowing_water"
+                              ]
+                            },
+                            "minItems": 1,
+                          }
+                        ]
+                      },
+                      "adds_to_stat": {
+                        "type": "string",
+                        "description": "(For Computer Craft Add-On Integration) What stat this adds to",
+                        "enum": [
+                          "lava_sponged"
+                        ]
+                      },
+                      "sound": {
+                        "type": "object",
+                        "description": "The sounds this plays when it sucessfully triggers",
+                        "properties": {
+                          "identifier": {
+                            "type": "string",
+                            "description": "The sound's identifier",
+                            "enum": [
+                              "sponge.absorb"
+                            ]
+                          },
+                          "pitch": {
+                            "type": "number",
+                            "description": "The pitch of the sound",
+                            "default": 1
+                          },
+                          "volume": {
+                            "type": "number",
+                            "description": "The volume of the sound",
+                            "default": 1
+                          }
+                        },
+                        "required": [
+                          "identifier"
+                        ]
+                      },
+                      "sponge_size": {
+                        "type": "array",
+                        "description": "The area centered around the block to be affected by this [X,Y,Z]",
+                        "items": {
+                          "type": "number"
+                        },
+                        "maxItems": 3,
+                        "minItems": 3
+                      },
+                      "offset": {
+                        "type": "array",
+                        "description": "The offset that is applied to ``sponge_size``",
+                        "items": {
+                          "type": "number"
+                        },
+                        "maxItems": 3,
+                        "minItems": 3
+                      }
+                    }
+                  },
+                  "poke_pfe:icon_path": {
+                    "title": "Icon Path (PFE)",
+                    "type": "string",
+                    "description": "This will control what the texture path of this block is. This will be used in scripting where the icon would not be known otherwise"
+                  },
                   "poke_pfe:custom_recipes": {
                     "title": "Custom Recipes (PFE)",
                     "description": "These are recipes that are used in the Recipe Block (PFE) Component",
@@ -3145,7 +3385,7 @@
                             "type": "number",
                             "description": "The max amount of unique items this can store"
                           },
-                          "block_name": {
+                          "name": {
                             "type": "string",
                             "description": "The name of the block (This will be used in things like the UI titles)",
                             "default": "%poke_pfe.recipe_block"
@@ -3172,10 +3412,56 @@
           "minecraft:block"
         ]
       }
+    },
+    {
+      "fileMatch": [
+        "textures/flipbook_textures.json"
+      ],
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "flipbook_texture": {
+              "description": "Path to the graphic file for one or more faces of a block",
+              "type": "string"
+            },
+            "atlas_index": {
+              "description": "Index of the first frame to display when beginning the animation. If a problem occurs, then only this frame will be displayed.",
+              "type": "number"
+            },
+            "atlas_tile": {
+              "description": "Name of the graphic that will be shown on the block if there is a problem with the animation.",
+              "type": "string"
+            },
+            "atlas_tile_variant": {
+              "description": "An alternate graphic to display as the atlas tile.",
+              "type": "number"
+            },
+            "ticks_per_frame": {
+              "description": "How many ticks (1/20th of one second) of game time should pass before the next frame is displayed.",
+              "type": "number"
+            },
+            "frames": {
+              "description": "An array of frame numbers, used to show what order to display the frames.",
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 1
+            },
+            "blend_frames": {
+              "type": "boolean",
+              "description": "Makes the frames more smoothly transition into the next"
+            }
+          }
+        }
+      }
     }
   ],
   "cSpell.words": [
     "afamiliarroom",
+    "alphablend",
     "anordinaryday",
     "balladofthecats",
     "behaviorpack",
@@ -3204,6 +3490,7 @@
     "echointhewind",
     "eldunknown",
     "featherfall",
+    "flipbook",
     "floatingdream",
     "floatingtrees",
     "gametest",
@@ -3252,6 +3539,7 @@
     "scriptevent",
     "Shadowstone",
     "shimmerblock",
+    "shroomlight",
     "shulker",
     "Shuniji",
     "Shuriken",
@@ -3279,5 +3567,6 @@
     "zombifier"
   ],
   "editor.tabSize": 2,
-  "mc-dp-icons.enableSubfolderIcons": false
+  "mc-dp-icons.enableSubfolderIcons": false,
+  "git.autorefresh": false
 }

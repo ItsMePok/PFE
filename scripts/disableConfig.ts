@@ -20,7 +20,8 @@ interface PFEDisableConfigOptions {
   "witherSpawner": boolean
   "nukeRing": boolean
   "kapowRing": boolean
-  "waypoints"?: boolean
+  "waypoints"?: boolean,
+  "playerMagnet"?: boolean
 }
 let PFEDisabledOnUseItems = ["poke:sundial", "poke:quantum_teleporter", "poke:kapow_ring"]
 const PFEDisableConfigDefault: PFEDisableConfigOptions = {
@@ -33,7 +34,8 @@ const PFEDisableConfigDefault: PFEDisableConfigOptions = {
   "quantumTeleporter": true,
   "sundial": true,
   "witherSpawner": true,
-  "waypoints": true
+  "waypoints": true,
+  "playerMagnet": true
 }
 function PFEDisableConfigMainMenu(data: ItemComponentUseEvent) {
   let UI = new ActionFormData()
@@ -41,6 +43,7 @@ function PFEDisableConfigMainMenu(data: ItemComponentUseEvent) {
   const enabled = `§a\n%translation.poke_pfe.enabled`
   const disabled = `§c\n%translation.poke_pfe.disabled`
   UI.button({ translate: `%poke_pfe.quantum_teleporter:${options.quantumTeleporter ? enabled : disabled}` }, `textures/poke/pfe/quantum_teleporter`)
+  UI.button({ translate: `%poke_pfe.player_magnet:${options.playerMagnet ? enabled : disabled}` }, `textures/poke/pfe/player_magnet`)
   UI.button({ translate: `%poke_pfe.kapow_ring:${options.kapowRing ? enabled : disabled}` }, `textures/poke/pfe/kapow_ring`)
   UI.button({ translate: `%poke_pfe.nuke_ring:${options.nukeRing ? enabled : disabled}` }, `textures/poke/pfe/nuke_ring`)
   UI.button({ translate: `%poke_pfe.sundial:${options.sundial ? enabled : disabled}` }, `textures/poke/pfe/sundial_1`)
@@ -59,6 +62,15 @@ function PFEDisableConfigMainMenu(data: ItemComponentUseEvent) {
         newProperty.quantumTeleporter = false
         //console.warn(`Disabled Quantum Teleporter`)
       } else newProperty.quantumTeleporter = true
+      world.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty))
+      PFEDisableConfigMainMenu(data)
+      return
+    } else selection++
+    if (response.selection == selection) {// Quantum Teleporter
+      if (newProperty.playerMagnet) {
+        newProperty.playerMagnet = false
+        //console.warn(`Disabled Quantum Teleporter`)
+      } else newProperty.playerMagnet = true
       world.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty))
       PFEDisableConfigMainMenu(data)
       return

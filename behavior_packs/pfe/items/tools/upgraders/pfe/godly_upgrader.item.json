@@ -28,10 +28,16 @@
 					"pfe:persistence"
 				]
 			},
-			"poke-pfe:upgrader": {},
+			"poke_pfe:transform_blocks": {
+				"transforms": [
+					"poke:godly_ore::poke:raw_godly_block",
+					"poke:deepslate_godly_ore::poke:raw_godly_block",
+					"poke:end_godly_ore::poke:raw_godly_block"
+				]
+			},
 			"minecraft:tags": {
 				"tags": [
-					"poke-pfe:UpgraderInfo:{\"canUpgrade\":[\"poke:godly_ore\",\"poke:deepslate_godly_ore\",\"poke:end_godly_ore\"]}:poke-pfe:UpgraderInfoEnd"
+					"pfe:is_upgrader"
 				]
 			}
 		}

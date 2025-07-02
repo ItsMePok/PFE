@@ -17,6 +17,14 @@
 				"may_replace": [
 					"stone"
 				]
+			},
+			{
+				"places_block": {
+					"name": "poke:nether_hellish_ore"
+				},
+				"may_replace": [
+					"netherrack"
+				]
 			}
 		]
 	}

@@ -57,7 +57,7 @@
 				"horizontal_strength": 7,
 				"spawn_particles": [
 					"minecraft:wind_explosion_emitter",
-					"poke:blazooka_flame"
+					"poke_pfe:blazooka_flame"
 				],
 				"play_sound": {
 					"identifier": "wind_charge.burst"

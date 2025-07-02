@@ -1,8 +1,9 @@
 import { EntityComponentTypes, EntityEquippableComponent, EntityProjectileComponent, EquipmentSlot, GameMode, ItemComponentTypes, ItemComponentUseEvent, ItemCooldownComponent, ItemStack, Player } from "@minecraft/server";
 import { ActionFormData } from "@minecraft/server-ui";
-import { PokeDamageItemUB, PokeErrorScreen, PokeGetItemFromInventory, PokeGetObjectById, PokeSaveProperty } from "./commonFunctions";
+import { pokeAddItemsToPlayerOrDrop, PokeDamageItemUB, PokeErrorScreen, PokeGetItemFromInventory, PokeGetObjectById, PokeSaveProperty } from "./commonFunctions";
 import { MinecraftEntityTypes, MinecraftItemTypes } from "@minecraft/vanilla-data";
 import { PFEItemUpgradeInfo, PFEUpgradeableComponentInfo, PFEUpgradeableId, PFEUpgrades, PokeUpgradeUI } from "./upgrades";
+import { clampNumber, Vector3Utils } from "@minecraft/math";
 
 export {
   PFEBoltBowsComponent
@@ -115,9 +116,9 @@ function PokeShoot(player: Player, ammoComponent: PFEBoltBowInfo, item: ItemStac
   player.playSound(`random.bow`, { pitch: (ammoComponent.projectile.amount > 3 ? undefined : (ammoComponent.projectile.amount == 3) ? 1.05 : (ammoComponent.projectile.amount == 2) ? 1.15 : (ammoComponent.projectile.amount == 1) ? 1.25 : undefined) })
   projComp.catchFireOnHurt = (PokeGetObjectById(ammoComponent.upgrades, `pfe:flaming`)?.value.level > 0)
   projComp.owner = player;
-  projComp.shoot(angle, { uncertainty: 0.001, });
+  projComp.shoot(Vector3Utils.scale(angle, 5.2), { uncertainty: undefined });
   if (PokeDamageItemUB(item, undefined, player, EquipmentSlot.Mainhand)?.broke) {
-    player.runCommand(`give @s ${ammoComponent.projectile.id} ${ammoComponent.projectile.amount} 0`)
+    pokeAddItemsToPlayerOrDrop(player, new ItemStack(ammoComponent.projectile.id, ammoComponent.projectile.amount))
   }
 
 };
@@ -131,7 +132,7 @@ function PFEAmmoManagementMainMenuUI(item: ItemStack, player: Player) {
     PokeSaveProperty(PFEBoltBowDynamicPropertyID, item, JSON.stringify(PFEBoltBowDefault), player)
   }
   let boltBowComponent: PFEBoltBowInfo = JSON.parse(item.getDynamicProperty(PFEBoltBowDynamicPropertyID)!.toString())
-  UI.button({ translate: `translation.poke:ammoUIQuickReload`, with: { rawtext: [{ text: `${boltBowComponent.projectile.amount}` }, { text: `${(boltBowComponent.upgrades.filter(upgrade => upgrade.id == CapacityUpgradeDefault.id).at(0)?.level ?? 1) * 16}` }] } }, `textures/poke/common/ammoQuickReload`)
+  UI.button({ translate: `%poke_pfe.quick_reload [${boltBowComponent.projectile.amount}/${16 + ((boltBowComponent.upgrades.filter(upgrade => upgrade.id == CapacityUpgradeDefault.id).at(0)?.level ?? 1) * 16)}]` }, `textures/poke/common/ammoQuickReload`)
   UI.button({ translate: `translation.poke:ammoUIAddAmmo` }, `textures/poke/common/ammoReload`)
   UI.button({ translate: `poke_pfe.upgrade` }, `textures/poke/common/upgrade`)
   UI.button({ translate: `translation.poke:bossEventClose` }, `textures/poke/common/close`)
@@ -201,7 +202,7 @@ function PFEAmmoManagementAddAmmoUI(item: ItemStack, player: Player) {
             v: PFEBoltBowVersion,
             dynamicProperty: ammoComponent.dynamicProperty,
             projectile: {
-              amount: selectedItem.amount,
+              amount: clampNumber(selectedItem.amount, 0, ammoComponent.projectile?.max ?? 16),
               max: ammoComponent.projectile.max,
               id: selectedItem.typeId,
               entityId: selectedItem.typeId,
@@ -213,8 +214,8 @@ function PFEAmmoManagementAddAmmoUI(item: ItemStack, player: Player) {
             PokeErrorScreen(player, { text: `Unable to save new ammo type` }, PFEAmmoManagementAddAmmoUI(item, player))
             return
           }
-          player.runCommand(`give @s ${ammoComponent.projectile.id} ${ammoComponent.projectile.amount}`)
-          player.runCommand(`clear @s ${selectedItem.typeId} -1 ${selectedItem.amount}`)
+          pokeAddItemsToPlayerOrDrop(player, new ItemStack(ammoComponent.projectile.id, ammoComponent.projectile.amount))
+          player.runCommand(`clear @s ${selectedItem.typeId} -1 ${clampNumber(selectedItem.amount, 0, ammoComponent.projectile?.max ?? 16)}`)
         } else {
           if (!ammoComponent.projectile.max) {
             let newProperty: PFEBoltBowInfo = {
@@ -237,6 +238,7 @@ function PFEAmmoManagementAddAmmoUI(item: ItemStack, player: Player) {
             return;
           }
           let maxRemaining = ammoComponent.projectile.max - ammoComponent.projectile.amount
+          console.warn(maxRemaining)
           let takeAmount = selectedItem.amount
           if (maxRemaining < selectedItem.amount) {
             takeAmount = maxRemaining
@@ -267,6 +269,11 @@ function PFEAmmoManagementAddAmmoUI(item: ItemStack, player: Player) {
 }
 
 function PFEArrowIcon(itemId: string) {
+  const item = new ItemStack(itemId, 1)
+  const iconPathComponent = <undefined | string>item.getComponent("poke_pfe:icon_path")?.customComponentParameters.params
+  if (iconPathComponent) {
+    return iconPathComponent
+  }
   switch (itemId) {
     case MinecraftItemTypes.Arrow: {
       return `textures/items/arrow`
@@ -292,6 +299,7 @@ function PFEArrowIcon(itemId: string) {
       return `textures/poke/pfe/volt_arrow_item`
       break
     }
+    default: return `textures/poke/common/question`
   }
 }
 

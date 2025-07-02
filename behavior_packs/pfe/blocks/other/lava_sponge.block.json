@@ -9,6 +9,32 @@
 		},
 		"components": {
 			"minecraft:display_name": "%poke_pfe.lava_sponge\n%poke_pfe.tag",
+			"poke_pfe:icon_path": "textures/poke/pfe/lava_sponge",
+			"poke_pfe:sponge_block": {
+				"adds_to_stat": "lava_sponged",
+				"check_for_blocks": [
+					"minecraft:flowing_lava",
+					"minecraft:lava"
+				],
+				"mode": [
+					"place",
+					"tick"
+				],
+				"offset": [
+					0,
+					0,
+					0
+				],
+				"sound": {
+					"identifier": "sponge.absorb"
+				},
+				"sponge_size": [
+					20,
+					20,
+					20
+				],
+				"turns_into": "poke:molten_lava_sponge"
+			},
 			"minecraft:redstone_conductivity": {
 				"redstone_conductor": true,
 				"allows_wire_to_step_down": true
@@ -24,8 +50,7 @@
 			"tag:hoe": {},
 			"tag:stone_pick_diggable": {},
 			"tag:minecraft:is_pickaxe_item_destructible": {},
-			"minecraft:map_color": "#e25f22",
-			"poke:cc_lava_sponge": {}
+			"minecraft:map_color": "#e25f22"
 		}
 	}
 }

@@ -11,78 +11,238 @@
 					0,
 					1
 				]
-			}
-		},
-		"permutations": [
-			{
-				"condition": "q.block_state('pfe:active') == 1",
-				"components": {
-					"minecraft:light_emission": 5
+			},
+			"traits": {
+				"minecraft:placement_position": {
+					"enabled_states": [
+						"minecraft:block_face"
+					]
 				}
 			}
-		],
+		},
 		"components": {
 			"minecraft:display_name": "%poke_pfe.block_breaker\n%poke_pfe.tag",
 			"minecraft:redstone_conductivity": {
 				"redstone_conductor": true,
 				"allows_wire_to_step_down": true
 			},
-			"minecraft:material_instances": {
-				"north": {
-					"render_method": "opaque",
-					"texture": "poke_pfe_block_breaker_face"
-				},
-				"east": {
-					"render_method": "opaque",
-					"texture": "poke_pfe_automation_side"
-				},
-				"south": {
-					"render_method": "opaque",
-					"texture": "poke_pfe_automation_gear"
-				},
-				"west": {
-					"render_method": "opaque",
-					"texture": "poke_pfe_automation_side"
-				},
-				"down": {
-					"render_method": "opaque",
-					"texture": "poke_pfe_automation_bottom"
-				},
-				"up": {
-					"render_method": "opaque",
-					"texture": "poke_pfe_automation_top"
-				}
-			},
-			"minecraft:transformation": {
-				"rotation": [
-					-90,
-					0,
-					0
-				]
-			},
-			"minecraft:geometry": {
-				"identifier": "geometry.poke_pfe.block",
-				"culling": "poke_pfe:block.culling"
-			},
 			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 1
+				"seconds_to_destroy": 2.5,
+				"item_specific_speeds": [
+					{
+						"destroy_speed": 1.5,
+						"item": {
+							"tags": "q.any_tag('minecraft:is_pickaxe','minecraft:is_axe')"
+						}
+					}
+				]
 			},
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 30
 			},
 			"tag:pfe": {},
-			"tag:metal": {},
-			"tag:minecraft:metal": {},
-			"tag:stone_pick_diggable": {},
 			"tag:minecraft:is_pickaxe_item_destructible": {},
+			"tag:minecraft:is_axe_item_destructible": {},
 			"minecraft:map_color": "#17273b",
 			"minecraft:tick": {
 				"interval_range": [
-					60,
-					60
+					40,
+					40
 				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('pfe:active')==0",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.poke_pfe.block",
+						"culling": "poke_pfe:block.culling"
+					},
+					"minecraft:material_instances": {
+						"north": {
+							"render_method": "opaque",
+							"texture": "poke_pfe_block_breaker_face"
+						},
+						"east": {
+							"render_method": "opaque",
+							"texture": "poke_pfe_automation_side"
+						},
+						"south": {
+							"render_method": "opaque",
+							"texture": "poke_pfe_automation_gear"
+						},
+						"west": {
+							"render_method": "opaque",
+							"texture": "poke_pfe_automation_side"
+						},
+						"down": {
+							"render_method": "opaque",
+							"texture": "poke_pfe_automation_bottom"
+						},
+						"up": {
+							"render_method": "opaque",
+							"texture": "poke_pfe_automation_top"
+						}
+					}
+				}
 			},
-			"poke:cc_block_breaker": {}
-		}
+			{
+				"condition": "q.block_state('pfe:active') == 1",
+				"components": {
+					"minecraft:light_emission": 5,
+					"minecraft:geometry": {
+						"identifier": "geometry.poke_pfe.block",
+						"culling": "poke_pfe:block.culling"
+					},
+					"minecraft:material_instances": {
+						"north": {
+							"render_method": "opaque",
+							"texture": "poke_pfe_animated_block_breaker_face"
+						},
+						"east": {
+							"render_method": "opaque",
+							"texture": "poke_pfe_automation_side"
+						},
+						"south": {
+							"render_method": "opaque",
+							"texture": "poke_pfe_automation_gear"
+						},
+						"west": {
+							"render_method": "opaque",
+							"texture": "poke_pfe_automation_side"
+						},
+						"down": {
+							"render_method": "opaque",
+							"texture": "poke_pfe_automation_bottom"
+						},
+						"up": {
+							"render_method": "opaque",
+							"texture": "poke_pfe_automation_top"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:block_face') == 'up'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							90,
+							0,
+							0
+						]
+					}, /* (minecraft bug?) change_state breaks (maybe never registers?) if not with other custom components in the permutation */
+					"poke_pfe:change_state": {
+						"face": "all"
+					},
+					"poke_pfe:break_blocks": {
+						"targets": [
+							"Up"
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:block_face') == 'down'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							-90,
+							0,
+							0
+						]
+					},
+					"poke_pfe:change_state": {
+						"face": "all"
+					},
+					"poke_pfe:break_blocks": {
+						"targets": [
+							"Down"
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:block_face') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					},
+					"poke_pfe:change_state": {
+						"face": "all"
+					},
+					"poke_pfe:break_blocks": {
+						"targets": [
+							"North"
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:block_face') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-90,
+							0
+						]
+					},
+					"poke_pfe:change_state": {
+						"face": "all"
+					},
+					"poke_pfe:break_blocks": {
+						"targets": [
+							"East"
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:block_face') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-180,
+							0
+						]
+					},
+					"poke_pfe:change_state": {
+						"face": "all"
+					},
+					"poke_pfe:break_blocks": {
+						"targets": [
+							"South"
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:block_face') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					},
+					"poke_pfe:change_state": {
+						"face": "all"
+					},
+					"poke_pfe:break_blocks": {
+						"targets": [
+							"West"
+						]
+					}
+				}
+			}
+		]
 	}
 }

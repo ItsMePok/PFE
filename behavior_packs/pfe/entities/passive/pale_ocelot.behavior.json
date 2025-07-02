@@ -3,7 +3,6 @@
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:pale_ocelot",
-			"runtime_identifier": "minecraft:ocelot",
 			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false
@@ -285,45 +284,36 @@
 		},
 		"events": {
 			"minecraft:entity_spawned": {
-				"sequence": [
+				"randomize": [
 					{
-						"randomize": [
-							{
-								"weight": 3,
-								"remove": {},
-								"add": {
-									"component_groups": [
-										"minecraft:ocelot_adult",
-										"minecraft:ocelot_wild"
-									]
-								}
-							},
-							{
-								"weight": 1,
-								"remove": {},
-								"add": {
-									"component_groups": [
-										"minecraft:ocelot_baby",
-										"minecraft:ocelot_wild"
-									]
-								}
-							}
-						]
-					}
-				]
-			},
-			"minecraft:entity_born": {
-				"sequence": [
+						"weight": 3,
+						"remove": {},
+						"add": {
+							"component_groups": [
+								"minecraft:ocelot_adult",
+								"minecraft:ocelot_wild"
+							]
+						}
+					},
 					{
+						"weight": 1,
 						"remove": {},
 						"add": {
 							"component_groups": [
 								"minecraft:ocelot_baby",
-								"minecraft:ocelot_trusting"
+								"minecraft:ocelot_wild"
 							]
 						}
 					}
 				]
+			},
+			"minecraft:entity_born": {
+				"add": {
+					"component_groups": [
+						"minecraft:ocelot_baby",
+						"minecraft:ocelot_trusting"
+					]
+				}
 			},
 			"minecraft:entity_born_wild": {
 				"remove": {

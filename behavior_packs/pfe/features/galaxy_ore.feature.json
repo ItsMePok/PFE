@@ -37,6 +37,17 @@
 						}
 					}
 				]
+			},
+			{
+				"places_block": {
+					"name": "poke:end_galaxy_ore",
+					"states": {}
+				},
+				"may_replace": [
+					{
+						"name": "minecraft:end_stone"
+					}
+				]
 			}
 		]
 	}

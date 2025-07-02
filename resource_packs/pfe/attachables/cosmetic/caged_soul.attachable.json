@@ -22,7 +22,7 @@
 				"third_person_hold": "animation.caged_soul.third_person_hold"
 			},
 			"particle_effects": {
-				"cagedsoulwisp": "poke:caged_soul"
+				"cagedsoulwisp": "poke_pfe:caged_soul"
 			},
 			"scripts": {
 				"animate": [

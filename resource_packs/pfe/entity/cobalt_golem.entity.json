@@ -7,13 +7,13 @@
 				"default": "entity_alphatest"
 			},
 			"textures": {
-				"default": "textures/poke/pfe/cobalt_golem_entity" //2
+				"default": "textures/poke/pfe/cobalt_golem_entity"
 			},
 			"geometry": {
 				"default": "geometry.poke_pfe.cobalt_golem"
 			},
 			"animations": {
-				"walking2": "animation.cobalt_golem.walking2",
+				"walk": "animation.cobalt_golem.walking",
 				"idle": "animation.cobalt_golem.look_around",
 				"walk_control": "controller.animation.cobalt_golem.walk",
 				"pfe_entity_spawned": "animation.poke_pfe.cobalt_golem.spawn"

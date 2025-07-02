@@ -1,0 +1,19 @@
+[
+    {
+        "flipbook_texture": "textures/poke/pfe/auto_animated_block_breaker_face",
+        "atlas_tile": "poke_pfe_animated_block_breaker_face",
+        "atlas_index": 0,
+        "ticks_per_frame": 5,
+        "frames": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+        ],
+        "blend_frames": true
+    }
+]

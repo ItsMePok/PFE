@@ -45,7 +45,10 @@
 			},
 			"poke_pfe:run_command": {
 				"version": 1,
-				"command": "function poke/pfe/gravity_ring",
+				"command": [
+					"effect @s levitation 2 2 true",
+					"effect @s slow_falling 10 0 true"
+				],
 				"take_durability": true,
 				"trigger_cooldown": true,
 				"can_be_disabled": false

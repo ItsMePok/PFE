@@ -28,10 +28,14 @@
 					"pfe:persistence"
 				]
 			},
-			"poke-pfe:upgrader": {},
+			"poke_pfe:transform_blocks": {
+				"transforms": [
+					"minecraft:ancient_debris::poke:scrappy_block"
+				]
+			},
 			"minecraft:tags": {
 				"tags": [
-					"poke-pfe:UpgraderInfo:{\"canUpgrade\":[\"minecraft:ancient_debris\"]}:poke-pfe:UpgraderInfoEnd"
+					"pfe:is_upgrader"
 				]
 			}
 		}

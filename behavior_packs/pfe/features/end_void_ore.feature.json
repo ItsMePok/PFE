@@ -7,15 +7,16 @@
     "count": 7,
     "replace_rules": [
       {
-        "places_block": {
-          "name": "poke:end_void_ore",
-          "states": {}
-        },
+        "places_block": "poke:void_ore",
         "may_replace": [
-          {
-            "name": "minecraft:end_stone"
-          }
+          "minecraft:deepslate"
         ]
+      },
+      {
+        "may_replace": [
+          "minecraft:end_stone"
+        ],
+        "places_block": "poke:end_void_ore"
       }
     ]
   }

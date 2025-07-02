@@ -37,7 +37,7 @@
 					"general",
 					"holding",
 					"dancing",
-					"look_at_target_default"
+					"look_at_target"
 				]
 			},
 			"render_controllers": [

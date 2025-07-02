@@ -177,6 +177,9 @@
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 6
 			},
+			"minecraft:destruction_particles": {
+				"texture": "poke_death_bricks"
+			},
 			"minecraft:map_color": "#333641",
 			"tag:pfe": {},
 			"tag:metal": {},

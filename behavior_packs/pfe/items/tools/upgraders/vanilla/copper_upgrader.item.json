@@ -28,10 +28,15 @@
           "pfe:persistence"
         ]
       },
-      "poke-pfe:upgrader": {},
+      "poke_pfe:transform_blocks": {
+        "transforms": [
+          "minecraft:copper_ore::minecraft:copper_block",
+          "minecraft:deepslate_copper_ore::minecraft:copper_block"
+        ]
+      },
       "minecraft:tags": {
         "tags": [
-          "poke-pfe:UpgraderInfo:{\"canUpgrade\":[\"minecraft:copper_ore\",\"minecraft:deepslate_copper_ore\"]}:poke-pfe:UpgraderInfoEnd"
+          "pfe:is_upgrader"
         ]
       }
     }

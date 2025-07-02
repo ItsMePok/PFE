@@ -45,7 +45,10 @@
 			},
 			"poke_pfe:run_command": {
 				"version": 1,
-				"command": "function poke/pfe/springy_ring_event",
+				"command": [
+					"effect @s jump_boost 15 10 true",
+					"effect @s slow_falling 20 1 true"
+				],
 				"take_durability": true,
 				"trigger_cooldown": true,
 				"can_be_disabled": false

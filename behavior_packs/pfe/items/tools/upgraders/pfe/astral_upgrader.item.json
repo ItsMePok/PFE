@@ -28,10 +28,14 @@
           "pfe:persistence"
         ]
       },
-      "poke-pfe:upgrader": {},
+      "poke_pfe:transform_blocks": {
+        "transforms": [
+          "poke:astral_ore::poke:raw_astral_block"
+        ]
+      },
       "minecraft:tags": {
         "tags": [
-          "poke-pfe:UpgraderInfo:{\"canUpgrade\":[\"poke:astral_ore\"]}:poke-pfe:UpgraderInfoEnd"
+          "pfe:is_upgrader"
         ]
       }
     }

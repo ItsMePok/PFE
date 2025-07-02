@@ -28,10 +28,15 @@
 					"pfe:persistence"
 				]
 			},
-			"poke-pfe:upgrader": {},
+			"poke_pfe:transform_blocks": {
+				"transforms": [
+					"poke:galaxy_ore::poke:raw_galaxy_block",
+					"poke:end_galaxy_ore::poke:raw_galaxy_block"
+				]
+			},
 			"minecraft:tags": {
 				"tags": [
-					"poke-pfe:UpgraderInfo:{\"canUpgrade\":[\"poke:galaxy_ore\",\"poke:end_galaxy_ore\"]}:poke-pfe:UpgraderInfoEnd"
+					"pfe:is_upgrader"
 				]
 			}
 		}

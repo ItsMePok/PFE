@@ -84,7 +84,11 @@
       },
       "poke_pfe:run_command": {
         "version": 1,
-        "command": "function poke/pfe/cobalt_battleaxe",
+        "command": [
+          "damage @e[type=!item,rm=0.5,r=5] 5 entity_attack entity @s",
+          "particle poke_pfe:battleaxe_r5p ~~~",
+          "playsound poke_pfe.battleaxe.use @a ~~~ 0.5"
+        ],
         "take_durability": true,
         "trigger_cooldown": true,
         "can_be_disabled": false

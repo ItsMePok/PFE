@@ -11,6 +11,12 @@
 				"may_replace": [
 					"minecraft:deepslate"
 				]
+			},
+			{
+				"may_replace": [
+					"minecraft:end_stone"
+				],
+				"places_block": "poke:end_void_ore"
 			}
 		]
 	}

@@ -28,10 +28,15 @@
 					"pfe:persistence"
 				]
 			},
-			"poke-pfe:upgrader": {},
+			"poke_pfe:transform_blocks": {
+				"transforms": [
+					"minecraft:iron_ore::minecraft:raw_iron_block",
+					"minecraft:deepslate_iron_ore::minecraft:raw_iron_block"
+				]
+			},
 			"minecraft:tags": {
 				"tags": [
-					"poke-pfe:UpgraderInfo:{\"canUpgrade\":[\"minecraft:iron_ore\",\"minecraft:deepslate_iron_ore\"]}:poke-pfe:UpgraderInfoEnd"
+					"pfe:is_upgrader"
 				]
 			}
 		}

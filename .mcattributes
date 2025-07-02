@@ -1,5 +1,9 @@
 diagnostic.disable.=false
+diagnostic.disable.behaviorpack.item.component.missing=true
+diagnostic.disable.resourcepack.sound.missing=true
+diagnostic.disable.behaviorpack.recipes.furnace_tags=true
 diagnostic.disable.debugger.internal.exception=true
 diagnostic.disable.minecraft.language.comment.invalid=false
 diagnostic.disable.behaviorpack.item.component.missing=false
 diagnostic.disable.behaviorpack.block.components.texture_not_found=false
+diagnostic.disable.resourcepack.particle.component.particle_motion_collision.radius=true

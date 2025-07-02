@@ -28,10 +28,19 @@
 					"pfe:persistence"
 				]
 			},
-			"poke-pfe:upgrader": {},
+			"poke_pfe:transform_blocks": {
+				"transforms": [
+					"minecraft:stone::minecraft:smooth_stone",
+					"minecraft:cobblestone::minecraft:stone",
+					"poke:cobbled_limestone::poke:limestone",
+					"poke:limestone::poke:polished_limestone",
+					"poke:cobbled_shadowstone::poke:shadowstone",
+					"poke:shadowstone::poke:polished_shadowstone"
+				]
+			},
 			"minecraft:tags": {
 				"tags": [
-					"poke-pfe:UpgraderInfo:{\"canUpgrade\":[\"minecraft:stone\",\"minecraft:cobblestone\",\"poke:cobbled_limestone\",\"poke:limestone\"]}:poke-pfe:UpgraderInfoEnd"
+					"pfe:is_upgrader"
 				]
 			}
 		}

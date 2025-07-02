@@ -7,7 +7,7 @@
 				"default": "arrow"
 			},
 			"textures": {
-				"default": "textures/poke/pfe/shuriken"
+				"default": "textures/poke/common/question"
 			},
 			"geometry": {
 				"default": "geometry.poke_pfe.shuriken"

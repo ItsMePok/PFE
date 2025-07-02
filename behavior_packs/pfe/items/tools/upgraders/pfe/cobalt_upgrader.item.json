@@ -28,10 +28,15 @@
 					"pfe:persistence"
 				]
 			},
-			"poke-pfe:upgrader": {},
+			"poke_pfe:transform_blocks": {
+				"transforms": [
+					"poke:cobalt_ore::poke:raw_cobalt_block",
+					"poke:deepslate_cobalt_ore::poke:raw_cobalt_block"
+				]
+			},
 			"minecraft:tags": {
 				"tags": [
-					"poke-pfe:UpgraderInfo:{\"canUpgrade\":[\"poke:cobalt_ore\",\"poke:deepslate_cobalt_ore\"]}:poke-pfe:UpgraderInfoEnd"
+					"pfe:is_upgrader"
 				]
 			}
 		}

@@ -20,6 +20,12 @@
 					"deepslate"
 				],
 				"places_block": "poke:deepslate_shade_ore"
+			},
+			{
+				"may_replace": [
+					"minecraft:netherrack"
+				],
+				"places_block": "poke:nether_shade_ore"
 			}
 		]
 	}

@@ -34,7 +34,7 @@
 				] // Animations that get animated
 			},
 			"particle_effects": {
-				"logger_smokestack": "poke:logger_smokestack"
+				"logger_smokestack": "poke_pfe:logger_smokestack"
 			}
 		}
 	}
