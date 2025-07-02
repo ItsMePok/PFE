@@ -15,7 +15,6 @@
 					}
 				]
 			},
-			"minecraft:loot": "loot_tables/poke/pfe/furnace_golem_trophy.loot.json",
 			"minecraft:selection_box": {
 				"origin": [
 					-4,

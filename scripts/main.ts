@@ -448,10 +448,10 @@ system.beforeEvents.startup.subscribe(data => {
                 case 'poke:hellish_soup': { data.source.addEffect(MinecraftEffectTypes.FireResistance, 1200); return };
                 case 'poke:nebula_noodles': { data.source.addEffect(MinecraftEffectTypes.Strength, 600, { amplifier: 7, }); return };
                 case 'poke:milk_bottle': { data.source.runCommand("effect @s clear"); return };
-                case 'poke:demonic_potion': { data.source.runCommand("function poke/pfe/demonic_potion"); return };
-                case 'poke:hellish_potion': { data.source.runCommand("function poke/pfe/hellish_potion"); return };
-                case 'poke:nebula_potion': { data.source.runCommand("function poke/pfe/nebula_potion"); return };
-                case 'poke:void_potion': { data.source.runCommand("function poke/pfe/void_potion"); return };
+                case 'poke:demonic_potion': { data.source.addEffect(MinecraftEffectTypes.NightVision, 12000); data.source.addEffect(MinecraftEffectTypes.Strength, 6000, { amplifier: 2 }); data.source.addEffect(MinecraftEffectTypes.Regeneration, 12000, { amplifier: 1 }); data.source.addEffect(MinecraftEffectTypes.FireResistance, 12000); return };
+                case 'poke:hellish_potion': { data.source.addEffect(MinecraftEffectTypes.NightVision, 12000); data.source.addEffect(MinecraftEffectTypes.Regeneration, 12000); data.source.addEffect(MinecraftEffectTypes.FireResistance, 12000); return };
+                case 'poke:nebula_potion': { data.source.addEffect(MinecraftEffectTypes.NightVision, 36000); data.source.addEffect(MinecraftEffectTypes.Haste, 24000, { amplifier: 4 }); data.source.addEffect(MinecraftEffectTypes.Regeneration, 24000, { amplifier: 2 }); data.source.addEffect(MinecraftEffectTypes.Speed, 24000, { amplifier: 4 }); data.source.addEffect(MinecraftEffectTypes.VillageHero, 24000, { amplifier: 2 }); return };
+                case 'poke:void_potion': { data.source.addEffect(MinecraftEffectTypes.NightVision, 36000); data.source.addEffect(MinecraftEffectTypes.Haste, 12000, { amplifier: 2 }); data.source.addEffect(MinecraftEffectTypes.Regeneration, 12000, { amplifier: 1 }); data.source.addEffect(MinecraftEffectTypes.Speed, 24000, { amplifier: 4 }); return };
                 case 'poke:death_potion': { data.source.kill(); return };
                 case 'poke:rotten_chicken': { data.source.addEffect(MinecraftEffectTypes.Nausea, 400); return };
                 case 'poke:golden_chicken': { data.source.addEffect(MinecraftEffectTypes.VillageHero, 400, { amplifier: 1, }); return };
@@ -650,6 +650,7 @@ system.beforeEvents.startup.subscribe(data => {
             if (mainhand != undefined) {
                 if (mainhand.typeId == slabId && ((data.block.permutation.getState('minecraft:vertical_half') == "bottom" && data.face == Direction.Up) || (data.block.permutation.getState('minecraft:vertical_half') == "top" && data.face == Direction.Down)) && data.block.permutation.getState(DoubleState) == false) {
                     var itemStackAmount = mainhand.amount - 1
+                    data.block.setWaterlogged(false)
                     data.block.setPermutation(data.block.permutation.withState(DoubleState, true))
                     data.block.dimension.playSound(`use.stone`, data.block.center())
                     if (data.player?.getGameMode() == GameMode.Creative) return;
@@ -695,25 +696,6 @@ system.beforeEvents.startup.subscribe(data => {
             if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
                 data.block.setPermutation(data.block.permutation.withState(ActiveState, 1))
                 data.dimension.runCommand('execute positioned ' + block_location + ' as @e[r=50,family=pfe:demonic_allay] run damage @s 20')
-                return;
-            }
-            if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== undefined) {
-                data.block.setPermutation(data.block.permutation.withState(ActiveState, 0))
-                return;
-            }
-            return;
-        }
-    }
-    );
-    data.blockComponentRegistry.registerCustomComponent(
-        "poke:cc_cobble_gen", {
-        onTick(data, component) {
-            const ActiveState = <keyof BlockStateSuperset>'pfe:active'
-            if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
-                data.block.setPermutation(data.block.permutation.withState(ActiveState, 1))
-                if (data.block.above()?.typeId != MinecraftBlockTypes.Air) return;
-                data.block.above()?.setType('minecraft:cobblestone')
-                //data.dimension.runCommand('execute positioned '+block_location_x+' '+block_location_y+' '+block_location_z+' if block ~ ~1 ~ air run setblock ~ ~1 ~ cobblestone')
                 return;
             }
             if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== undefined) {
@@ -928,93 +910,8 @@ system.beforeEvents.startup.subscribe(data => {
         }
     }
     );
-    data.blockComponentRegistry.registerCustomComponent(
-        "poke:cc_CaliBlockBreaker", {
-        onTick(data, component) {
-            const block_location = `${data.block.x} ${data.block.y} ${data.block.z}`
-            const ActiveState = <keyof BlockStateSuperset>'pfe:active'
-            if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
-                data.block.setPermutation(data.block.permutation.withState(ActiveState, 1))
-                if (data.block.typeId == 'poke:block_breaker_east') {
-                    data.dimension.runCommand('execute positioned ' + block_location + ' unless block ~1 ~ ~ bedrock run setblock ~1 ~ ~ air destroy')
-                    return;
-                }
-                if (data.block.typeId == 'poke:block_breaker_west') {
-                    data.dimension.runCommand('execute positioned ' + block_location + ' unless block ~-1 ~ ~ bedrock run setblock ~-1 ~ ~ air destroy')
-                    return;
-                }
-                if (data.block.typeId == 'poke:block_breaker_south') {
-                    data.dimension.runCommand('execute positioned ' + block_location + ' unless block ~ ~ ~1 bedrock run setblock ~ ~ ~1 air destroy')
-                    return;
-                }
-                if (data.block.typeId == 'poke:block_breaker_north') {
-                    data.dimension.runCommand('execute positioned ' + block_location + ' unless block ~ ~ ~-1 bedrock run setblock ~ ~ ~-1 air destroy')
-                    return;
-                }
-                if (data.block.typeId == 'poke:block_breaker_up') {
-                    data.dimension.runCommand('execute positioned ' + block_location + ' unless block ~ ~1 ~ bedrock run setblock ~ ~1 ~ air destroy')
-                    return;
-                }
-                if (data.block.typeId == 'poke:block_breaker_down') {
-                    data.dimension.runCommand('execute positioned ' + block_location + ' unless block ~ ~-1 ~ bedrock run setblock ~ ~-1 ~ air destroy')
-                    return;
-                }
-                return;
-            };
-            if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== undefined) {
-                data.block.setPermutation(data.block.permutation.withState(ActiveState, 0))
-                return;
-            }
-            return;
-        }
-    }
-    );
-    data.blockComponentRegistry.registerCustomComponent(
-        "poke:cc_CaliCobbleGen", {
-        onTick(data, component) {
-            const ActiveState = <keyof BlockStateSuperset>'pfe:active'
-            if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
-                data.block.setPermutation(data.block.permutation.withState(ActiveState, 1))
-                if (data.block.typeId == 'poke:calibrated_cobblestone_generator_east') {
-                    if (data.block.east()?.typeId != MinecraftBlockTypes.Air) return;
-                    data.block.east()?.setType('minecraft:cobblestone')
-                    return;
-                }
-                if (data.block.typeId == 'poke:calibrated_cobblestone_generator_west') {
-                    if (data.block.west()?.typeId != MinecraftBlockTypes.Air) return;
-                    data.block.west()?.setType('minecraft:cobblestone')
-                    return;
-                }
-                if (data.block.typeId == 'poke:calibrated_cobblestone_generator_south') {
-                    if (data.block.south()?.typeId != MinecraftBlockTypes.Air) return;
-                    data.block.south()?.setType('minecraft:cobblestone')
-                    return;
-                }
-                if (data.block.typeId == 'poke:calibrated_cobblestone_generator_north') {
-                    if (data.block.north()?.typeId != MinecraftBlockTypes.Air) return;
-                    data.block.north()?.setType('minecraft:cobblestone')
-                    return;
-                }
-                if (data.block.typeId == 'poke:calibrated_cobblestone_generator_up') {
-                    if (data.block.above()?.typeId != MinecraftBlockTypes.Air) return;
-                    data.block.above()?.setType('minecraft:cobblestone')
-                    return;
-                }
-                if (data.block.typeId == 'poke:calibrated_cobblestone_generator_down') {
-                    if (data.block.below()?.typeId != MinecraftBlockTypes.Air) return;
-                    data.block.below()?.setType('minecraft:cobblestone')
-                    return;
-                }
-                return;
-            }
-            if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== undefined) {
-                data.block.setPermutation(data.block.permutation.withState(ActiveState, 0))
-                return;
-            }
-            return;
-        }
-    }
-    );
+
+
     data.blockComponentRegistry.registerCustomComponent(
         "poke:crops", {
         onRandomTick(data, component) {
@@ -1423,6 +1320,66 @@ system.beforeEvents.startup.subscribe(data => {
 
     // Updated Components
     data.blockComponentRegistry.registerCustomComponent(
+        "poke_pfe:transform_block", {
+        onTick(data, componentInfo) {
+            type TransformBlockComponent = {
+                turns_into: string
+            }
+            const component = <TransformBlockComponent>componentInfo.params
+            let block = component.turns_into
+            if (block.includes("{")) {
+                const permutationString = block.substring(block.indexOf("{"))
+                block = block.substring(0, block.indexOf("{"))
+                const permutations = <BlockStateArg<BlockStateSuperset>>JSON.parse(permutationString)
+                data.block.setPermutation(BlockPermutation.resolve(block, permutations))
+            } else data.block.setType(block);
+        }
+    }
+    )
+    data.blockComponentRegistry.registerCustomComponent(
+        "poke_pfe:place_blocks", {
+        onTick(data, componentInfo) {
+            type PlaceBlocksComponent = {
+                places: string
+                targets: Direction[]
+            }
+            const component = <PlaceBlocksComponent>componentInfo.params
+            const ActiveState = <keyof BlockStateSuperset>'pfe:active'
+            if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
+                for (const target of component.targets) {
+                    function GetBlock() {
+                        switch (target) {
+                            case Direction.Up: return data.block.above();
+                            case Direction.Down: return data.block.below();
+                            case Direction.North: return data.block.north();
+                            case Direction.South: return data.block.south();
+                            case Direction.East: return data.block.east();
+                            case Direction.West: return data.block.west();
+                            default: return data.block
+                        }
+                    }
+                    const block = GetBlock()
+                    if (!block || !block.isAir) continue;
+                    if (component.places.includes("{")) {
+                        let places_block = component.places
+                        const permutationString = places_block.substring(places_block.indexOf("{"))
+                        places_block = places_block.substring(0, places_block.indexOf("{"))
+                        const permutations = <BlockStateArg<BlockStateSuperset>>JSON.parse(permutationString)
+                        block.setPermutation(BlockPermutation.resolve(places_block, permutations))
+                    } else block.setType(component.places);
+                }
+                data.block.setPermutation(data.block.permutation.withState(ActiveState, 1))
+                return;
+            }
+            if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== undefined) {
+                data.block.setPermutation(data.block.permutation.withState(ActiveState, 0))
+                return;
+            }
+            return;
+        }
+    }
+    );
+    data.blockComponentRegistry.registerCustomComponent(
         "poke_pfe:break_blocks", {
         onTick(data, componentInfo) {
             type BreakBlockComponent = {
@@ -1454,11 +1411,12 @@ system.beforeEvents.startup.subscribe(data => {
                         MinecraftBlockTypes.LightBlock14, MinecraftBlockTypes.LightBlock15, MinecraftBlockTypes.Barrier,
                         MinecraftBlockTypes.Jigsaw, MinecraftBlockTypes.StructureBlock, MinecraftBlockTypes.CommandBlock,
                         MinecraftBlockTypes.ChainCommandBlock, MinecraftBlockTypes.RepeatingCommandBlock, MinecraftBlockTypes.BorderBlock,
-                        MinecraftBlockTypes.Allow, MinecraftBlockTypes.Deny
+                        MinecraftBlockTypes.Allow, MinecraftBlockTypes.Deny, MinecraftBlockTypes.Bedrock, MinecraftBlockTypes.ReinforcedDeepslate
                     ]
-                    if (BannedBlocks.includes(block.typeId)) continue;
+                    if (BannedBlocks.includes(block.typeId) || block.isLiquid || block.isAir) continue;
                     const block_location = `${block.x} ${block.y} ${block.z}`
-                    data.dimension.runCommand(`execute positioned ${block_location} run setblock ~~~ air destroy`)
+                    const replacedAs = block.isWaterlogged ? MinecraftBlockTypes.FlowingWater : MinecraftBlockTypes.Air
+                    data.dimension.runCommand(`execute positioned ${block_location} run setblock ~~~ ${replacedAs} destroy`)
                 }
                 data.block.setPermutation(data.block.permutation.withState(ActiveState, 1))
                 return;
@@ -1472,10 +1430,15 @@ system.beforeEvents.startup.subscribe(data => {
     }
     );
     type ChangeStateComponent = {
-        mode: ("on_player_interact")[],
+        mode?: ("on_player_interact")[],
         face: Direction[] | "all",
-        change_state: "minecraft:block_face",
-        change_based_on: "interacted_face"
+        change_state?: "minecraft:block_face",
+        change_based_on?: "interacted_face",
+        sound?: {
+            identifier: string
+            pitch?: number
+            volume?: number
+        }
     }
     data.blockComponentRegistry.registerCustomComponent(
         "poke_pfe:change_state", {
@@ -1483,6 +1446,9 @@ system.beforeEvents.startup.subscribe(data => {
             const component = <ChangeStateComponent>componentInfo.params
             if ((typeof component.face != "string" && !component.face.includes(data.face)) || (data.block.permutation.getState("minecraft:block_face") == data.face.toLowerCase())) return;
             data.block.setPermutation(data.block.permutation.withState("minecraft:block_face", data.face.toLowerCase()))
+            if (component.sound) {
+                data.dimension.playSound(component.sound.identifier, data.block.location, { pitch: component.sound.pitch, volume: component.sound.volume })
+            }
         }
     }
     )

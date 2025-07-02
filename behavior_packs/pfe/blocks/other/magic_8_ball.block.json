@@ -16,6 +16,7 @@
 		},
 		"components": {
 			"minecraft:display_name": "%poke_pfe.magic_8_ball\n%poke_pfe.tag",
+			"poke_pfe:icon_path": "textures/poke/pfe/8_ball_icon",
 			"minecraft:liquid_detection": {
 				"detection_rules": [
 					{

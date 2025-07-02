@@ -718,8 +718,6 @@ poke_pfe.demonic_allay_conduit.desc=Kills Demonic Allay in a 50 block radius
 poke_pfe.duster=Duster
 poke_pfe.dirter=Dirter
 poke_pfe.block_breaker=Block Breaker
-poke_pfe.calibrated_block_breaker=Calibrated Block Breaker
-poke_pfe.calibrated_cobblestone_generator=Calibrated Cobblestone Generator
 poke_pfe.chiseled_honey_bricks=Chiseled Honey Bricks
 poke_pfe.honey_trapdoor=Honey Trapdoor
 poke_pfe.cobalt_trapdoor=Cobalt Trapdoor
@@ -1234,8 +1232,6 @@ translation.poke:timeEventEditTimeTitle=Editing Date & Time
 translation.poke:timeEditGiftTextFieldLabel=The gift the players can claim during the event window~LINEBREAK~~LINEBREAK~This works using a Minecraft command (ex. /give)
 poke_pfe.armor_stand_shielder=Armor Stand Shielder~LINEBREAK~§cWIP
 poke_pfe.passive_mob_magnet=Passive Mob Magnet~LINEBREAK~§cWIP
-poke_pfe.duster.name=Duster~LINEBREAK~§cOLD
-poke_pfe.dirter.name=Dirter~LINEBREAK~§cOLD
 
 poke_pfe.flaming_core=Flaming Core
 translation.poke:ammoUpgrade=Upgrade %1 [LVL:%2]~LINEBREAK~Cost: %3 %4

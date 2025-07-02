@@ -4,6 +4,9 @@
 	"num_mip_levels": 0,
 	"padding": 2,
 	"texture_data": {
+		"poke_pfe_animated_automation_gear": {
+			"textures": "textures/poke/pfe/auto_animated_gear"
+		},
 		"poke_pfe_animated_block_breaker_face": {
 			"textures": "textures/poke/pfe/auto_animated_block_breaker_face"
 		},
@@ -425,71 +428,11 @@
 				}
 			]
 		},
-		"poke_block_breaker_side180": {
-			"textures": [
-				{
-					"path": "textures/poke/pfe/calibrated_block_breaker_side180",
-					"overlay_color": "#610310"
-				},
-				{
-					"path": "textures/poke/pfe/calibrated_block_breaker_side180",
-					"overlay_color": "#ce0c0c"
-				}
-			]
-		},
-		"poke_block_breaker_side-90": {
-			"textures": [
-				{
-					"path": "textures/poke/pfe/calibrated_block_breaker_side-90",
-					"overlay_color": "#610310"
-				},
-				{
-					"path": "textures/poke/pfe/calibrated_block_breaker_side-90",
-					"overlay_color": "#ce0c0c"
-				}
-			]
-		},
-		"poke_block_breaker_side90": {
-			"textures": [
-				{
-					"path": "textures/poke/pfe/calibrated_block_breaker_side90",
-					"overlay_color": "#610310"
-				},
-				{
-					"path": "textures/poke/pfe/calibrated_block_breaker_side90",
-					"overlay_color": "#ce0c0c"
-				}
-			]
-		},
-		"poke_cali_block_breaker_side": {
-			"textures": [
-				{
-					"path": "textures/poke/pfe/calibrated_block_breaker_side",
-					"overlay_color": "#610310"
-				},
-				{
-					"path": "textures/poke/pfe/calibrated_block_breaker_side",
-					"overlay_color": "#ce0c0c"
-				}
-			]
-		},
 		"poke_cali_block_breaker_bottom": {
 			"textures": "textures/poke/pfe/calibrated_block_breaker_bottom"
 		},
 		"poke_cali_block_breaker_top": {
 			"textures": "textures/poke/pfe/calibrated_block_breaker_top"
-		},
-		"poke_block_breaker_front": {
-			"textures": [
-				{
-					"path": "textures/poke/pfe/calibrated_block_breaker_front",
-					"overlay_color": "#610310"
-				},
-				{
-					"path": "textures/poke/pfe/calibrated_block_breaker_front",
-					"overlay_color": "#ce0c0c"
-				}
-			]
 		},
 		"poke_demonic_allay_conduit": {
 			"textures": [
