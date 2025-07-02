@@ -15,12 +15,12 @@
 							}
 						}
 					],
-                    "weight": 999
+					"weight": 999
 				},
-                {
+				{
 					"type": "item",
 					"name": "poke:golden_turnip",
-                    "weight": 1
+					"weight": 1
 				}
 			]
 		}

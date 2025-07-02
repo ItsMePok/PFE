@@ -1,5 +1,5 @@
 {
-	"format_version": "1.12.0",
+	"format_version": "1.21.20",
 	"minecraft:geometry": [
 		{
 			"description": {
@@ -20,16 +20,26 @@
 							"size": [16, 16, 16],
 							"uv": {
 								"north": {"uv": [16, 0], "uv_size": [-16, 16]},
-								"east": {"uv": [0, 0], "uv_size": [16, 16]},
-								"south": {"uv": [0, 0], "uv_size": [16, 16]},
-								"west": {"uv": [0, 0], "uv_size": [16, 16]},
-								"up": {"uv": [16, 0], "uv_size": [-16, 16]},
-								"down": {"uv": [16, 16], "uv_size": [-16, -16]}
+								"east": {"uv": [0, 0], "uv_size": [16, 16], "uv_rotation": 90},
+								"south": {"uv": [0, 0], "uv_size": [16, 16], "uv_rotation": 270},
+								"west": {"uv": [0, 0], "uv_size": [16, 16], "uv_rotation": 270},
+								"up": {"uv": [16, 0], "uv_size": [-16, 16], "uv_rotation": 180},
+								"down": {"uv": [16, 16], "uv_size": [-16, -16], "uv_rotation": 180}
 							}
 						}
 					]
 				}
-			]
+			],
+			"item_display_transforms": {
+				"gui": {
+					"rotation": [-152.5, -45, 180],
+					"translation": [0, 0, 0],
+					"scale": [1, 1, 1],
+					"rotation_pivot": [0, 0, 0],
+					"scale_pivot": [0, 0, 0],
+					"fit_to_frame": true
+				}
+			}
 		}
 	]
 }

@@ -1315,7 +1315,8 @@
             },
             "items": [
               "poke:spell_crafter",
-              "poke:dye_unmixer"
+              "poke:dye_unmixer",
+              "poke_pfe:alloy_forge"
               //,"poke:pfe_crafting_table"
             ]
           },
@@ -1623,10 +1624,10 @@
             },
             "items": [
               "poke:cobblestone_gen",
-              "poke:calibrated_cobblestone_generator_south",
+              //"poke:calibrated_cobblestone_generator_south",
               "poke:cobble_gen",
               "poke:block_breaker",
-              "poke:block_breaker_south",
+              //"poke:block_breaker_south",
               "poke:dirter_up",
               "poke:duster_up",
               "poke_pfe:fisher",

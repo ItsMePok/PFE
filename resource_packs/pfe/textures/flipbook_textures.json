@@ -15,5 +15,16 @@
             1
         ],
         "blend_frames": true
+    },
+    {
+        "flipbook_texture": "textures/poke/pfe/auto_animated_gear",
+        "atlas_tile": "poke_pfe_animated_automation_gear",
+        "atlas_index": 0,
+        "ticks_per_frame": 5,
+        "frames": [
+            0,
+            1
+        ],
+        "blend_frames": true
     }
 ]

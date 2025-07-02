@@ -16,7 +16,9 @@
 						}
 					]
 				},
-				{"type": "empty"}
+				{
+					"type": "empty"
+				}
 			]
 		},
 		{
@@ -54,7 +56,15 @@
 						}
 					]
 				},
-				{"type": "empty","weight": 18}
+				{
+					"type": "item",
+					"name": "poke:furnace_golem_trophy",
+					"weight": 1
+				},
+				{
+					"type": "empty",
+					"weight": 17
+				}
 			]
 		},
 		{

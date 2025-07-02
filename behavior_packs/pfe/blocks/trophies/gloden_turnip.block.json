@@ -21,7 +21,6 @@
 					}
 				]
 			},
-			"minecraft:loot": "loot_tables/poke/pfe/golden_turnip.loot.json",
 			"minecraft:selection_box": {
 				"origin": [
 					-7.25,

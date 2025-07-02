@@ -46,7 +46,6 @@
 					8
 				]
 			},
-			"minecraft:loot": "loot_tables/poke/pfe/zombken_trophy.loot.json",
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 7.5,
 				"item_specific_speeds": [

@@ -7854,25 +7854,37 @@ system6.beforeEvents.startup.subscribe((data) => {
             ;
           case "poke:demonic_potion":
             {
-              data2.source.runCommand("function poke/pfe/demonic_potion");
+              data2.source.addEffect(MinecraftEffectTypes.NightVision, 12e3);
+              data2.source.addEffect(MinecraftEffectTypes.Strength, 6e3, { amplifier: 2 });
+              data2.source.addEffect(MinecraftEffectTypes.Regeneration, 12e3, { amplifier: 1 });
+              data2.source.addEffect(MinecraftEffectTypes.FireResistance, 12e3);
               return;
             }
             ;
           case "poke:hellish_potion":
             {
-              data2.source.runCommand("function poke/pfe/hellish_potion");
+              data2.source.addEffect(MinecraftEffectTypes.NightVision, 12e3);
+              data2.source.addEffect(MinecraftEffectTypes.Regeneration, 12e3);
+              data2.source.addEffect(MinecraftEffectTypes.FireResistance, 12e3);
               return;
             }
             ;
           case "poke:nebula_potion":
             {
-              data2.source.runCommand("function poke/pfe/nebula_potion");
+              data2.source.addEffect(MinecraftEffectTypes.NightVision, 36e3);
+              data2.source.addEffect(MinecraftEffectTypes.Haste, 24e3, { amplifier: 4 });
+              data2.source.addEffect(MinecraftEffectTypes.Regeneration, 24e3, { amplifier: 2 });
+              data2.source.addEffect(MinecraftEffectTypes.Speed, 24e3, { amplifier: 4 });
+              data2.source.addEffect(MinecraftEffectTypes.VillageHero, 24e3, { amplifier: 2 });
               return;
             }
             ;
           case "poke:void_potion":
             {
-              data2.source.runCommand("function poke/pfe/void_potion");
+              data2.source.addEffect(MinecraftEffectTypes.NightVision, 36e3);
+              data2.source.addEffect(MinecraftEffectTypes.Haste, 12e3, { amplifier: 2 });
+              data2.source.addEffect(MinecraftEffectTypes.Regeneration, 12e3, { amplifier: 1 });
+              data2.source.addEffect(MinecraftEffectTypes.Speed, 24e3, { amplifier: 4 });
               return;
             }
             ;
@@ -8106,6 +8118,7 @@ system6.beforeEvents.startup.subscribe((data) => {
         if (mainhand != void 0) {
           if (mainhand.typeId == slabId && (data2.block.permutation.getState("minecraft:vertical_half") == "bottom" && data2.face == Direction2.Up || data2.block.permutation.getState("minecraft:vertical_half") == "top" && data2.face == Direction2.Down) && data2.block.permutation.getState(DoubleState) == false) {
             var itemStackAmount = mainhand.amount - 1;
+            data2.block.setWaterlogged(false);
             data2.block.setPermutation(data2.block.permutation.withState(DoubleState, true));
             data2.block.dimension.playSound(`use.stone`, data2.block.center());
             if (data2.player?.getGameMode() == GameMode5.Creative)
@@ -8153,26 +8166,6 @@ system6.beforeEvents.startup.subscribe((data) => {
         if (data2.block.getRedstonePower() != 0 && data2.block.getRedstonePower() !== void 0) {
           data2.block.setPermutation(data2.block.permutation.withState(ActiveState, 1));
           data2.dimension.runCommand("execute positioned " + block_location + " as @e[r=50,family=pfe:demonic_allay] run damage @s 20");
-          return;
-        }
-        if (data2.block.getRedstonePower() == 0 && data2.block.getRedstonePower() !== void 0) {
-          data2.block.setPermutation(data2.block.permutation.withState(ActiveState, 0));
-          return;
-        }
-        return;
-      }
-    }
-  );
-  data.blockComponentRegistry.registerCustomComponent(
-    "poke:cc_cobble_gen",
-    {
-      onTick(data2, component) {
-        const ActiveState = "pfe:active";
-        if (data2.block.getRedstonePower() != 0 && data2.block.getRedstonePower() !== void 0) {
-          data2.block.setPermutation(data2.block.permutation.withState(ActiveState, 1));
-          if (data2.block.above()?.typeId != MinecraftBlockTypes.Air)
-            return;
-          data2.block.above()?.setType("minecraft:cobblestone");
           return;
         }
         if (data2.block.getRedstonePower() == 0 && data2.block.getRedstonePower() !== void 0) {
@@ -8388,102 +8381,6 @@ system6.beforeEvents.startup.subscribe((data) => {
         data2.block.setType(newBlock);
         data2.dimension.playSound("poke_pfe.calibrate", data2.block.center());
         ComputersCompat.addStat(`blocks_calibrated`, 1);
-        return;
-      }
-    }
-  );
-  data.blockComponentRegistry.registerCustomComponent(
-    "poke:cc_CaliBlockBreaker",
-    {
-      onTick(data2, component) {
-        const block_location = `${data2.block.x} ${data2.block.y} ${data2.block.z}`;
-        const ActiveState = "pfe:active";
-        if (data2.block.getRedstonePower() != 0 && data2.block.getRedstonePower() !== void 0) {
-          data2.block.setPermutation(data2.block.permutation.withState(ActiveState, 1));
-          if (data2.block.typeId == "poke:block_breaker_east") {
-            data2.dimension.runCommand("execute positioned " + block_location + " unless block ~1 ~ ~ bedrock run setblock ~1 ~ ~ air destroy");
-            return;
-          }
-          if (data2.block.typeId == "poke:block_breaker_west") {
-            data2.dimension.runCommand("execute positioned " + block_location + " unless block ~-1 ~ ~ bedrock run setblock ~-1 ~ ~ air destroy");
-            return;
-          }
-          if (data2.block.typeId == "poke:block_breaker_south") {
-            data2.dimension.runCommand("execute positioned " + block_location + " unless block ~ ~ ~1 bedrock run setblock ~ ~ ~1 air destroy");
-            return;
-          }
-          if (data2.block.typeId == "poke:block_breaker_north") {
-            data2.dimension.runCommand("execute positioned " + block_location + " unless block ~ ~ ~-1 bedrock run setblock ~ ~ ~-1 air destroy");
-            return;
-          }
-          if (data2.block.typeId == "poke:block_breaker_up") {
-            data2.dimension.runCommand("execute positioned " + block_location + " unless block ~ ~1 ~ bedrock run setblock ~ ~1 ~ air destroy");
-            return;
-          }
-          if (data2.block.typeId == "poke:block_breaker_down") {
-            data2.dimension.runCommand("execute positioned " + block_location + " unless block ~ ~-1 ~ bedrock run setblock ~ ~-1 ~ air destroy");
-            return;
-          }
-          return;
-        }
-        ;
-        if (data2.block.getRedstonePower() == 0 && data2.block.getRedstonePower() !== void 0) {
-          data2.block.setPermutation(data2.block.permutation.withState(ActiveState, 0));
-          return;
-        }
-        return;
-      }
-    }
-  );
-  data.blockComponentRegistry.registerCustomComponent(
-    "poke:cc_CaliCobbleGen",
-    {
-      onTick(data2, component) {
-        const ActiveState = "pfe:active";
-        if (data2.block.getRedstonePower() != 0 && data2.block.getRedstonePower() !== void 0) {
-          data2.block.setPermutation(data2.block.permutation.withState(ActiveState, 1));
-          if (data2.block.typeId == "poke:calibrated_cobblestone_generator_east") {
-            if (data2.block.east()?.typeId != MinecraftBlockTypes.Air)
-              return;
-            data2.block.east()?.setType("minecraft:cobblestone");
-            return;
-          }
-          if (data2.block.typeId == "poke:calibrated_cobblestone_generator_west") {
-            if (data2.block.west()?.typeId != MinecraftBlockTypes.Air)
-              return;
-            data2.block.west()?.setType("minecraft:cobblestone");
-            return;
-          }
-          if (data2.block.typeId == "poke:calibrated_cobblestone_generator_south") {
-            if (data2.block.south()?.typeId != MinecraftBlockTypes.Air)
-              return;
-            data2.block.south()?.setType("minecraft:cobblestone");
-            return;
-          }
-          if (data2.block.typeId == "poke:calibrated_cobblestone_generator_north") {
-            if (data2.block.north()?.typeId != MinecraftBlockTypes.Air)
-              return;
-            data2.block.north()?.setType("minecraft:cobblestone");
-            return;
-          }
-          if (data2.block.typeId == "poke:calibrated_cobblestone_generator_up") {
-            if (data2.block.above()?.typeId != MinecraftBlockTypes.Air)
-              return;
-            data2.block.above()?.setType("minecraft:cobblestone");
-            return;
-          }
-          if (data2.block.typeId == "poke:calibrated_cobblestone_generator_down") {
-            if (data2.block.below()?.typeId != MinecraftBlockTypes.Air)
-              return;
-            data2.block.below()?.setType("minecraft:cobblestone");
-            return;
-          }
-          return;
-        }
-        if (data2.block.getRedstonePower() == 0 && data2.block.getRedstonePower() !== void 0) {
-          data2.block.setPermutation(data2.block.permutation.withState(ActiveState, 0));
-          return;
-        }
         return;
       }
     }
@@ -8963,6 +8860,72 @@ system6.beforeEvents.startup.subscribe((data) => {
     }
   );
   data.blockComponentRegistry.registerCustomComponent(
+    "poke_pfe:transform_block",
+    {
+      onTick(data2, componentInfo) {
+        const component = componentInfo.params;
+        let block = component.turns_into;
+        if (block.includes("{")) {
+          const permutationString = block.substring(block.indexOf("{"));
+          block = block.substring(0, block.indexOf("{"));
+          const permutations = JSON.parse(permutationString);
+          data2.block.setPermutation(BlockPermutation.resolve(block, permutations));
+        } else
+          data2.block.setType(block);
+      }
+    }
+  );
+  data.blockComponentRegistry.registerCustomComponent(
+    "poke_pfe:place_blocks",
+    {
+      onTick(data2, componentInfo) {
+        const component = componentInfo.params;
+        const ActiveState = "pfe:active";
+        if (data2.block.getRedstonePower() != 0 && data2.block.getRedstonePower() !== void 0) {
+          for (const target of component.targets) {
+            let GetBlock2 = function() {
+              switch (target) {
+                case Direction2.Up:
+                  return data2.block.above();
+                case Direction2.Down:
+                  return data2.block.below();
+                case Direction2.North:
+                  return data2.block.north();
+                case Direction2.South:
+                  return data2.block.south();
+                case Direction2.East:
+                  return data2.block.east();
+                case Direction2.West:
+                  return data2.block.west();
+                default:
+                  return data2.block;
+              }
+            };
+            var GetBlock = GetBlock2;
+            const block = GetBlock2();
+            if (!block || !block.isAir)
+              continue;
+            if (component.places.includes("{")) {
+              let places_block = component.places;
+              const permutationString = places_block.substring(places_block.indexOf("{"));
+              places_block = places_block.substring(0, places_block.indexOf("{"));
+              const permutations = JSON.parse(permutationString);
+              block.setPermutation(BlockPermutation.resolve(places_block, permutations));
+            } else
+              block.setType(component.places);
+          }
+          data2.block.setPermutation(data2.block.permutation.withState(ActiveState, 1));
+          return;
+        }
+        if (data2.block.getRedstonePower() == 0 && data2.block.getRedstonePower() !== void 0) {
+          data2.block.setPermutation(data2.block.permutation.withState(ActiveState, 0));
+          return;
+        }
+        return;
+      }
+    }
+  );
+  data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:break_blocks",
     {
       onTick(data2, componentInfo) {
@@ -9018,12 +8981,15 @@ system6.beforeEvents.startup.subscribe((data) => {
               MinecraftBlockTypes.RepeatingCommandBlock,
               MinecraftBlockTypes.BorderBlock,
               MinecraftBlockTypes.Allow,
-              MinecraftBlockTypes.Deny
+              MinecraftBlockTypes.Deny,
+              MinecraftBlockTypes.Bedrock,
+              MinecraftBlockTypes.ReinforcedDeepslate
             ];
-            if (BannedBlocks.includes(block.typeId))
+            if (BannedBlocks.includes(block.typeId) || block.isLiquid || block.isAir)
               continue;
             const block_location = `${block.x} ${block.y} ${block.z}`;
-            data2.dimension.runCommand(`execute positioned ${block_location} run setblock ~~~ air destroy`);
+            const replacedAs = block.isWaterlogged ? MinecraftBlockTypes.FlowingWater : MinecraftBlockTypes.Air;
+            data2.dimension.runCommand(`execute positioned ${block_location} run setblock ~~~ ${replacedAs} destroy`);
           }
           data2.block.setPermutation(data2.block.permutation.withState(ActiveState, 1));
           return;
@@ -9044,6 +9010,9 @@ system6.beforeEvents.startup.subscribe((data) => {
         if (typeof component.face != "string" && !component.face.includes(data2.face) || data2.block.permutation.getState("minecraft:block_face") == data2.face.toLowerCase())
           return;
         data2.block.setPermutation(data2.block.permutation.withState("minecraft:block_face", data2.face.toLowerCase()));
+        if (component.sound) {
+          data2.dimension.playSound(component.sound.identifier, data2.block.location, { pitch: component.sound.pitch, volume: component.sound.volume });
+        }
       }
     }
   );
