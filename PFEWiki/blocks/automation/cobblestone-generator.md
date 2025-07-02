@@ -1,6 +1,6 @@
 # Cobblestone Generator
 
-<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/Automation/cobblestone_generator.png?raw=true" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobblestoneGenerator.png" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:cobblestone\_gen** <a href="#identifier" id="identifier"></a>
 
@@ -37,7 +37,7 @@ Items:
 
 Outputs:
 
-* 1x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/Automation/cobblestone_generator.png?raw=true" alt="Cobblestone Generator." data-size="line"> Cobblestone Generator
+* 1x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobblestoneGenerator.png" alt="Cobblestone Generator." data-size="line"> Cobblestone Generator
 {% endtab %}
 
 {% tab title="Structures" %}
