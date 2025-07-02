@@ -46,13 +46,13 @@ I highly recommend avoiding those sites as they can contain malicious things
 
 ***
 
-### **GitHub - (PFE) Main Repo**
+### **GitHub - (PFE) Main Repo for PFE & this wiki**
 
 {% embed url="https://github.com/ItsMePok/PFE/releases" %}
 
 ***
 
-### GitHub - (Addon Archive) Old PFE Versions & PFE Split
+### GitHub - (Addon Archive) Old versions of PFE and other Add-Ons
 
 {% embed url="https://github.com/ItsMePok/Addon-Archive/tree/main/PFE" %}
 
