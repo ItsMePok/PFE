@@ -1,6 +1,6 @@
 # Block Breaker
 
-<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockBreaker.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockBreaker.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:block\_breaker** <a href="#identifier" id="identifier"></a>
 
@@ -25,7 +25,7 @@
 |     ![Planks](https://minecraft.wiki/images/thumb/Oak_Planks.png/150px-Oak_Planks.png?d9efa)     | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/iron_haxel.png?raw=true) |     ![Planks](https://minecraft.wiki/images/thumb/Oak_Planks.png/150px-Oak_Planks.png?d9efa)     |
 | ![Cobalt Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) |  ![Planks](https://minecraft.wiki/images/thumb/Oak_Planks.png/150px-Oak_Planks.png?d9efa)  | ![Cobalt Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) |
 
-<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockBreaker.png" alt="Block Breaker." data-size="line">
+<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockBreaker.png?raw=true" alt="Block Breaker." data-size="line">
 {% endtab %}
 
 {% tab title="Structures" %}
@@ -37,6 +37,6 @@ Found in the [Abandoned Ship](https://pfewiki.gitbook.io/home/sturctures/abandon
 
 | Item                                                                                                                             | Amount | Weight |
 | -------------------------------------------------------------------------------------------------------------------------------- | ------ | :----: |
-| <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockBreaker.png" alt="" data-size="line">Block Breaker | 1      |    2   |
+| <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockBreaker.png?raw=true" alt="" data-size="line">Block Breaker | 1      |    2   |
 {% endtab %}
 {% endtabs %}

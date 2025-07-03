@@ -15,7 +15,7 @@
 * Barometer
 * Charged Cobalt Block
 * Miner Helmet
-* [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobblestoneGenerator.png" alt="" data-size="line">Cobblestone Generator](../../blocks/automation/cobblestone-generator.md)
+* [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobblestoneGenerator.png?raw=true" alt="" data-size="line">Cobblestone Generator](../../blocks/automation/cobblestone-generator.md)
 * Item Manipulator
 * Jackhammer
 * Night Vison Goggles

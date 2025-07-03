@@ -69,7 +69,7 @@ Outputs:
 
 Recipe can be unlocked with:
 
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobblestoneGenerator.png" alt="" data-size="line"> [Cobblestone Generator](cobblestone-generator.md)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobblestoneGenerator.png?raw=true" alt="" data-size="line"> [Cobblestone Generator](cobblestone-generator.md)
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="" data-size="line"> [Cobalt Ingot](../../items/ingots/cobalt-ingot.md)
 * <img src="https://minecraft.wiki/images/Oak_Planks.png?d9efa" alt="" data-size="line"> [Any of the Planks](https://minecraft.wiki/w/Planks)
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/gps_module.png?raw=true" alt="" data-size="line"> [GPS Module](../../items/crafting-components/gps-module.md)

@@ -1,16 +1,16 @@
 # Cobblestone Generator
 
-<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobblestoneGenerator.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobblestoneGenerator.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:cobblestone\_gen** <a href="#identifier" id="identifier"></a>
 
 ## When powered with <img src="https://minecraft.wiki/images/thumb/Redstone_Dust_JE2_BE2.png/150px-Redstone_Dust_JE2_BE2.png?8cf17" alt="" data-size="line">Redstone:
 
-* Generates <img src="https://minecraft.wiki/images/thumb/Cobblestone.png/150px-Cobblestone.png?45867" alt="" data-size="line"> Cobblestone to the block above it
+* Generates <img src="https://minecraft.wiki/images/Cobblestone_JE5_BE3.png?29624" alt="" data-size="line"> Cobblestone to the block above it
   * Will continue to trigger every 40 ticks (2 seconds) if still powered with <img src="https://minecraft.wiki/images/thumb/Redstone_Dust_JE2_BE2.png/150px-Redstone_Dust_JE2_BE2.png?8cf17" alt="" data-size="line">Redstone
 
 {% hint style="info" %}
-There must not be a block above this block for it to generate <img src="https://minecraft.wiki/images/thumb/Cobblestone.png/150px-Cobblestone.png?45867" alt="" data-size="line"> Cobblestone
+There must not be a block above this block for it to generate <img src="https://minecraft.wiki/images/Cobblestone_JE5_BE3.png?29624" alt="" data-size="line"> Cobblestone
 {% endhint %}
 
 ## Obtaining:
@@ -21,14 +21,14 @@ There must not be a block above this block for it to generate <img src="https://
 
 |                                                                                                 |                                                                                                                         |                                                                                                 |
 | :---------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: |
-| ![Cobblestone](https://minecraft.wiki/images/thumb/Cobblestone.png/150px-Cobblestone.png?45867) | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/wire.png?raw=true" alt="Wire." data-size="original"> | ![Cobblestone](https://minecraft.wiki/images/thumb/Cobblestone.png/150px-Cobblestone.png?45867) |
+| ![Cobblestone](https://minecraft.wiki/images/Cobblestone_JE5_BE3.png?29624) | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/wire.png?raw=true" alt="Wire." data-size="original"> | ![Cobblestone](https://minecraft.wiki/images/Cobblestone_JE5_BE3.png?29624) |
 |                ![](https://minecraft.wiki/images/Water_Bucket_JE2_BE2.png?2fa01)                |         ![](https://minecraft.wiki/images/thumb/Redstone_Dust_JE2_BE2.png/150px-Redstone_Dust_JE2_BE2.png?8cf17)        |                 ![](https://minecraft.wiki/images/Lava_Bucket_JE2_BE2.png?5a4ff)                |
-| ![Cobblestone](https://minecraft.wiki/images/thumb/Cobblestone.png/150px-Cobblestone.png?45867) |           ![](https://minecraft.wiki/images/thumb/Dispenser_\(S\)_JE4.png/150px-Dispenser_\(S\)_JE4.png?a8e35)          | ![Cobblestone](https://minecraft.wiki/images/thumb/Cobblestone.png/150px-Cobblestone.png?45867) |
+| ![Cobblestone](https://minecraft.wiki/images/Cobblestone_JE5_BE3.png?29624) |           ![](https://minecraft.wiki/images/thumb/Dispenser_\(S\)_JE4.png/150px-Dispenser_\(S\)_JE4.png?a8e35)          | ![Cobblestone](https://minecraft.wiki/images/Cobblestone_JE5_BE3.png?29624) |
 |                                                                                                 |                                                                                                                         |                                                                                                 |
 
 Items:
 
-* <img src="https://minecraft.wiki/images/thumb/Cobblestone.png/150px-Cobblestone.png?45867" alt="Cobblestone" data-size="line"> Cobblestone
+* <img src="https://minecraft.wiki/images/Cobblestone_JE5_BE3.png?29624" alt="Cobblestone" data-size="line"> Cobblestone
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/wire.png?raw=true" alt="Wire." data-size="line"> [Wire](../../items/crafting-components/wire.md)
 * <img src="https://minecraft.wiki/images/Water_Bucket_JE2_BE2.png?2fa01" alt="" data-size="line"> Water Bucket
 * <img src="https://minecraft.wiki/images/thumb/Redstone_Dust_JE2_BE2.png/150px-Redstone_Dust_JE2_BE2.png?8cf17" alt="" data-size="line"> Redstone Dust
@@ -37,7 +37,7 @@ Items:
 
 Outputs:
 
-* 1x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobblestoneGenerator.png" alt="Cobblestone Generator." data-size="line"> Cobblestone Generator
+* 1x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobblestoneGenerator.png?raw=true" alt="Cobblestone Generator." data-size="line"> Cobblestone Generator
 {% endtab %}
 
 {% tab title="Structures" %}

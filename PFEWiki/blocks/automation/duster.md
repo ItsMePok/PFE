@@ -25,7 +25,7 @@ description: 'Last updated to match: v1.2.94'
 ## When powered with <img src="https://minecraft.wiki/images/thumb/Redstone_Dust_JE2_BE2.png/150px-Redstone_Dust_JE2_BE2.png?8cf17" alt="" data-size="line">Redstone:
 
 * Converts:
-  * <img src="https://minecraft.wiki/images/thumb/Cobblestone.png/150px-Cobblestone.png?45867" alt="" data-size="line"> Cobblestone -> <img src="https://minecraft.wiki/images/thumb/Gravel_JE5_BE4.png/150px-Gravel_JE5_BE4.png?bb814" alt="" data-size="line"> Gravel
+  * <img src="https://minecraft.wiki/images/Cobblestone_JE5_BE3.png?29624" alt="" data-size="line"> Cobblestone -> <img src="https://minecraft.wiki/images/thumb/Gravel_JE5_BE4.png/150px-Gravel_JE5_BE4.png?bb814" alt="" data-size="line"> Gravel
   * <img src="https://minecraft.wiki/images/Dirt.png?89d72" alt="" data-size="line"> Dirt -> <img src="https://minecraft.wiki/images/thumb/Sand_JE5_BE3.png/150px-Sand_JE5_BE3.png?ae2df" alt="" data-size="line"> Sand
 
 ### Notes:

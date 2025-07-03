@@ -8,7 +8,7 @@ Identifier: **poke:cobble\_gen**
 
 ## When powered with <img src="https://minecraft.wiki/images/thumb/Redstone_Dust_JE2_BE2.png/150px-Redstone_Dust_JE2_BE2.png?8cf17" alt="" data-size="line">Redstone:
 
-* Drops <img src="https://minecraft.wiki/images/thumb/Cobblestone.png/150px-Cobblestone.png?45867" alt="" data-size="line">Cobblestone below it
+* Drops <img src="https://minecraft.wiki/images/Cobblestone_JE5_BE3.png?29624" alt="" data-size="line">Cobblestone below it
   * Will continue to trigger every 20 ticks (1 second) if still powered with <img src="https://minecraft.wiki/images/thumb/Redstone_Dust_JE2_BE2.png/150px-Redstone_Dust_JE2_BE2.png?8cf17" alt="" data-size="line">Redstone
 
 
@@ -21,7 +21,7 @@ Identifier: **poke:cobble\_gen**
 
 |                                                                                                  |                                                                                                            |                                                                                                                |
 | :----------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------: |
-| ![Cobalt Block](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/cobalt_block.png?raw=true) |      ![Block Breaker](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockBreaker.png)     |        ![Cobalt Block](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/cobalt_block.png?raw=true)        |
+| ![Cobalt Block](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/cobalt_block.png?raw=true) |      ![Block Breaker](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockBreaker.png?raw=true)     |        ![Cobalt Block](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/cobalt_block.png?raw=true)        |
 |           <img src="broken-reference" alt="Cobblestone Generator" data-size="original">          | ![Banished Star x4](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x4.png?raw=true) | ![Diamond Upgrade Core](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/diamond_upgrade_core.png?raw=true) |
 | ![Cobalt Block](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/cobalt_block.png?raw=true) |       ![GPS Module](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/gps_module.png?raw=true)       |        ![Cobalt Block](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/cobalt_block.png?raw=true)        |
 {% endtab %}
