@@ -44,7 +44,7 @@ hidden: true
 
 ## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/upgrade.png?raw=true" alt="" data-size="line"> Recipes:
 
-## ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Waterlog.png?raw=true) Waterlogable: <mark style="color:yellow;">Yes</mark> <a href="#waterlog" id="waterlog"></a>
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Waterlog.png?raw=true" alt="" data-size="line"> Can Waterlog: <mark style="color:yellow;">Yes</mark> <a href="#waterlog" id="waterlog"></a>
 
 ## <img src="https://minecraft.wiki/images/Shaper_Armor_Trim_Smithing_Template_JE1_BE1.png?0941a" alt="" data-size="line"> Trimmable: <mark style="color:yellow;">**Yes**</mark> <a href="#trimmable" id="trimmable"></a>
 

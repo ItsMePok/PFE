@@ -16,7 +16,7 @@ description: 'Last updated to match: v1.2.97'
 
 ## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">64</mark> <a href="#stack-size" id="stack-size"></a>
 
-## ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Waterlog.png?raw=true) Waterlogable: <mark style="color:yellow;">Yes</mark> <a href="#waterlog" id="waterlog"></a>
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Waterlog.png?raw=true" alt="" data-size="line"> Can Waterlog: <mark style="color:yellow;">Yes</mark> <a href="#waterlog" id="waterlog"></a>
 
 ## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/upgrade.png?raw=true" alt="" data-size="line"> Recipes:
 
