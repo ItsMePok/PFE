@@ -12,6 +12,8 @@ description: 'Last updated to match: v1.2.96'
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:alloy\_forge**</mark> <a href="#identifier" id="identifier"></a>
 
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark> <a href="#rarity" id="rarity"></a>
+
 ## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">64</mark> <a href="#stack-size" id="stack-size"></a>
 
 ## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/chest_open.png?raw=true" alt="" data-size="line"> Storage:

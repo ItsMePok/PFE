@@ -2,6 +2,22 @@
 
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/Automation/calibrated_cobblestone_generator.png?raw=true" alt="Calibrated Cobbled Generator"><figcaption></figcaption></figure>
 
+{% hint style="danger" %}
+## IMPORTANT (DEPRECATED)
+
+This block is no longer obtainable as of v1.2.97
+
+
+
+If this block already placed in this world will be converted into a  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobblestoneGenerator.png?raw=true" alt="Cobblestone Generator." data-size="line"> [Cobblestone Generator](cobblestone-generator.md)
+
+If it is item form place it down and it will automatically convert
+
+
+
+This page will remain up but may be moved to a dedicated archive section
+{% endhint %}
+
 ## Identifier: **poke:calibrated\_cobblestone\_generator\_south** <a href="#identifier" id="identifier"></a>
 
 <details>
@@ -39,16 +55,16 @@ The <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/Automation/calibra
 {% tab title="Recipe" %}
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-|                                                                                                     |                                                                                                           |                                                                                                     |
-| :-------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: |
-|   ![Cobalt Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true)  |    ![Amethyst Shard](https://minecraft.wiki/images/Amethyst\_Shard\_JE2\_BE1.png?56555&20201111173100)    |   ![Cobalt Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true)  |
-| ![Amethyst Shard](https://minecraft.wiki/images/Amethyst\_Shard\_JE2\_BE1.png?56555&20201111173100) | ![Cobblestone Generator](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobblestoneGenerator.png?raw=true) | ![Amethyst Shard](https://minecraft.wiki/images/Amethyst\_Shard\_JE2\_BE1.png?56555&20201111173100) |
-|   ![Cobalt Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true)  |       ![GPS Module](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/gps_module.png?raw=true)      |   ![Cobalt Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true)  |
+|                                                                                                     |                                                                                                                          |                                                                                                     |
+| :-------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: |
+| ![Cobalt Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) |             ![Amethyst Shard](https://minecraft.wiki/images/Amethyst_Shard_JE2_BE1.png?56555&20201111173100)             | ![Cobalt Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) |
+|   ![Amethyst Shard](https://minecraft.wiki/images/Amethyst_Shard_JE2_BE1.png?56555&20201111173100)  | ![Cobblestone Generator](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobblestoneGenerator.png?raw=true) |   ![Amethyst Shard](https://minecraft.wiki/images/Amethyst_Shard_JE2_BE1.png?56555&20201111173100)  |
+| ![Cobalt Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) |              ![GPS Module](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/gps_module.png?raw=true)             | ![Cobalt Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) |
 
 Items:
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobblestoneGenerator.png?raw=true" alt="Cobblestone Generator" data-size="line">[Cobblestone Generator](cobblestone-generator.md)
-* <img src="https://minecraft.wiki/images/Amethyst_Shard_JE2_BE1.png?56555&#x26;20201111173100" alt="Amethyst Shard" data-size="line">[Amethyst Shard](https://minecraft.wiki/w/Amethyst\_Shard)
+* <img src="https://minecraft.wiki/images/Amethyst_Shard_JE2_BE1.png?56555&#x26;20201111173100" alt="Amethyst Shard" data-size="line">[Amethyst Shard](https://minecraft.wiki/w/Amethyst_Shard)
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="Cobalt Ingot" data-size="line">[Cobalt Ingot](../../items/ingots/cobalt-ingot.md)
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/gps_module.png?raw=true" alt="GPS Module" data-size="line">[GPS Module](../../items/crafting-components/gps-module.md)
 {% endtab %}
@@ -60,9 +76,8 @@ Found in the[ Abandoned Ship](../../sturctures/abandoned-ship.md#barrel)
 [abandoned-ship.md](../../sturctures/abandoned-ship.md)
 {% endcontent-ref %}
 
-| Item                                                                                                                                                 | Amount | Weight |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | :----: |
-| <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/Automation/calibrated_cobblestone_generator.png?raw=true" alt="" data-size="line">Calibrated Cobblestone Generator  | 1      |    2   |
+| Item                                                                                                                                                                         | Amount | Weight |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | :----: |
+| <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/Automation/calibrated_cobblestone_generator.png?raw=true" alt="" data-size="line">Calibrated Cobblestone Generator | 1      |    2   |
 {% endtab %}
 {% endtabs %}
-

@@ -12,7 +12,7 @@
 
 ## Repairable with:
 
-* [**Repair Core**](https://pfewiki.gitbook.io/home/items/cores/repair-core)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/repair_core.png?raw=true" alt="Repair Core." data-size="line"> [Repair Core](../items/cores/repair-core.md) <mark style="color:yellow;">(100%)</mark>
 
 ## Trimmable: Yes
 

@@ -10,13 +10,13 @@ hidden: true
 
 ## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining: <a href="#obtaining" id="obtaining"></a>
 
-### <img src="https://minecraft.wiki/images/Clock_JE3_BE3.gif?8eaae" alt="" data-size="line"> **Use Duration**:  <a href="#use-duration" id="use-duration"></a>
+### <img src="https://minecraft.wiki/images/Clock_JE3_BE3.gif?8eaae" alt="" data-size="line"> **Use Duration**: <a href="#use-duration" id="use-duration"></a>
 
 ### <img src="https://minecraft.wiki/images/Saturation_JE1.png?dbba6" alt="" data-size="line"> **Saturation**: <a href="#saturation" id="saturation"></a>
 
 ### <img src="https://minecraft.wiki/images/Slowness_JE4.png?d415c" alt="" data-size="line"> **Speed Modifier while Consuming**: <a href="#speed-modifier-while-consuming" id="speed-modifier-while-consuming"></a>
 
-### ![](https://wiki.bedrock.dev/assets/images/concepts/emojis/hud/food.png) **Hunger Replenished**:  <a href="#hunger-replenished" id="hunger-replenished"></a>
+### ![](https://wiki.bedrock.dev/assets/images/concepts/emojis/hud/food.png) **Hunger Replenished**: <a href="#hunger-replenished" id="hunger-replenished"></a>
 
 ## <img src="https://minecraft.wiki/images/Strength_JE3_BE2.png?0494e" alt="Strength Effect." data-size="line"> Attack Damage: <mark style="color:yellow;">3</mark> <a href="#attack-damage" id="attack-damage"></a>
 
@@ -44,13 +44,15 @@ hidden: true
 
 ## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/upgrade.png?raw=true" alt="" data-size="line"> Recipes:
 
+## ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Waterlog.png?raw=true) Waterlogable: <mark style="color:yellow;">Yes</mark> <a href="#waterlog" id="waterlog"></a>
+
 ## <img src="https://minecraft.wiki/images/Shaper_Armor_Trim_Smithing_Template_JE1_BE1.png?0941a" alt="" data-size="line"> Trimmable: <mark style="color:yellow;">**Yes**</mark> <a href="#trimmable" id="trimmable"></a>
 
 ## <img src="https://minecraft.wiki/images/thumb/Composter_(level_8)_BE2.png/150px-Composter_(level_8)_BE2.png?7ecec" alt="Composter" data-size="line"> [Composting Chance](https://minecraft.wiki/w/Composter#Composting): <a href="#composting-chance" id="composting-chance"></a>
 
 ## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/effect_particles.png?raw=true" alt="" data-size="line"> Effects Granted: <a href="#effects-granted" id="effects-granted"></a>
 
-## <img src="https://minecraft.wiki/images/Diamond_Chestplate_(item)_JE2_BE2.png?d2f93" alt="" data-size="line"> Armor:  <a href="#armor" id="armor"></a>
+## <img src="https://minecraft.wiki/images/Diamond_Chestplate_(item)_JE2_BE2.png?d2f93" alt="" data-size="line"> Armor: <a href="#armor" id="armor"></a>
 
 ## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Smelt.png" alt="" data-size="line"> Smelting: <a href="#smelting" id="smelting"></a>
 
@@ -60,14 +62,12 @@ hidden: true
 
 ## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/InteractAbility.png?raw=true" alt="Interact Ability." data-size="line"> Interact Ability: <a href="#interact-ability" id="interact-ability"></a>
 
-### **Interacting**:  <a href="#interacting" id="interacting"></a>
+### **Interacting**: <a href="#interacting" id="interacting"></a>
 
-### **Crouching + Interacting**:  <a href="#crouch-interacting" id="crouch-interacting"></a>
+### **Crouching + Interacting**: <a href="#crouch-interacting" id="crouch-interacting"></a>
 
 {% tabs %}
 {% tab title="Block Drop" %}
-
-
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/BlockBreak.png?raw=true" alt=""><figcaption><p>Obtained by Breaking a Block</p></figcaption></figure>
 
 <table><thead><tr><th>Block</th><th>Drop Amount</th><th data-type="checkbox">Fortune Works?</th></tr></thead><tbody><tr><td></td><td></td><td>false</td></tr><tr><td></td><td></td><td>false</td></tr></tbody></table>
@@ -76,9 +76,7 @@ hidden: true
 
 {% tabs %}
 {% tab title="Shopkeeper Trade" %}
-
-
-<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/entity_icon/Shopkeeper.png?raw=true" alt=""><figcaption><p>Sold by the <a href="mobs/traders/shopkeeper.md">Shopkeeper</a></p></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/entity_icon/Shopkeeper.png?raw=true" alt=""><figcaption><p>Sold by the<br><a href="mobs/traders/shopkeeper.md">Shopkeeper</a></p></figcaption></figure>
 
 <table data-full-width="false"><thead><tr><th align="center">Wants</th><th width="88" align="center">Amount</th><th align="center">Gives</th><th width="85" align="center">Amount</th></tr></thead><tbody><tr><td align="center"></td><td align="center"></td><td align="center"></td><td align="center"></td></tr><tr><td align="center"></td><td align="center"></td><td align="center"></td><td align="center"></td></tr></tbody></table>
 {% endtab %}
@@ -92,9 +90,7 @@ hidden: true
 
 {% tabs %}
 {% tab title="Brewing" %}
-
-
-<figure><img src="https://minecraft.wiki/images/thumb/Brewing_Stand_(empty)_JE10.png/150px-Brewing_Stand_(empty)_JE10.png?58d74" alt=""><figcaption><p>Brewed using the <a href="https://minecraft.wiki/w/Brewing_Stand">Brewing Stand</a></p></figcaption></figure>
+<figure><img src="https://minecraft.wiki/images/thumb/Brewing_Stand_(empty)_JE10.png/150px-Brewing_Stand_(empty)_JE10.png?58d74" alt=""><figcaption><p>Brewed using the<br><a href="https://minecraft.wiki/w/Brewing_Stand">Brewing Stand</a></p></figcaption></figure>
 
 | Input Ingredient | Input Bottle(s) | Output |
 | ---------------- | --------------- | ------ |
@@ -108,16 +104,12 @@ More info about brewing can be found in the: [brewing-guide.md](misc-other-info/
 
 {% tabs %}
 {% tab title="Smelting" %}
-
-
-<div><figure><img src="https://minecraft.wiki/images/Lit_Furnace_(S).gif?40e71" alt=""><figcaption><p>      Smelted in a <a href="https://minecraft.wiki/w/Furnace">Furnace</a>     </p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/thumb/Lit_Blast_Furnace_JE1.gif/150px-Lit_Blast_Furnace_JE1.gif?dc6a7" alt="Blast Furnace."><figcaption><p>Smelted in a <a href="https://minecraft.wiki/w/Blast_Furnace">Blast Furnace</a></p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/thumb/Lit_Smoker_(S)_JE2_BE2.gif/150px-Lit_Smoker_(S)_JE2_BE2.gif?0ee63" alt=""><figcaption><p>Smoked in a <a href="https://minecraft.wiki/w/Smoker">Smoker</a></p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/thumb/Campfire_JE2_BE2.gif/150px-Campfire_JE2_BE2.gif?742be" alt=""><figcaption><p>Cooked in a <a href="https://minecraft.wiki/w/Campfire">Campfire</a></p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/thumb/Soul_Campfire_JE1_BE1.gif/150px-Soul_Campfire_JE1_BE1.gif?bf4a7" alt=""><figcaption><p>Cooked in a <a href="https://minecraft.wiki/w/Soul_Campfire">Soul Campfire</a></p></figcaption></figure></div>
+<div><figure><img src="https://minecraft.wiki/images/Lit_Furnace_(S).gif?40e71" alt=""><figcaption><p>Smelted in a <a href="https://minecraft.wiki/w/Furnace">Furnace</a></p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/thumb/Lit_Blast_Furnace_JE1.gif/150px-Lit_Blast_Furnace_JE1.gif?dc6a7" alt="Blast Furnace."><figcaption><p>Smelted in a <a href="https://minecraft.wiki/w/Blast_Furnace">Blast Furnace</a></p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/thumb/Lit_Smoker_(S)_JE2_BE2.gif/150px-Lit_Smoker_(S)_JE2_BE2.gif?0ee63" alt=""><figcaption><p>Smoked in a <a href="https://minecraft.wiki/w/Smoker">Smoker</a></p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/thumb/Campfire_JE2_BE2.gif/150px-Campfire_JE2_BE2.gif?742be" alt=""><figcaption><p>Cooked in a <a href="https://minecraft.wiki/w/Campfire">Campfire</a></p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/thumb/Soul_Campfire_JE1_BE1.gif/150px-Soul_Campfire_JE1_BE1.gif?bf4a7" alt=""><figcaption><p>Cooked in a <a href="https://minecraft.wiki/w/Soul_Campfire">Soul Campfire</a></p></figcaption></figure></div>
 
 <table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td></td><td></td><td>1</td></tr></tbody></table>
 {% endtab %}
 
 {% tab title="Untitled" %}
-
-
 <div><figure><img src="https://minecraft.wiki/images/Lit_Furnace_(S).gif?40e71" alt=""><figcaption><p>Smelted in a <a href="https://minecraft.wiki/w/Furnace">Furnace</a></p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/thumb/Lit_Smoker_(S)_JE2_BE2.gif/150px-Lit_Smoker_(S)_JE2_BE2.gif?0ee63" alt=""><figcaption><p>Smoked in a <a href="https://minecraft.wiki/w/Smoker">Smoker</a></p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/thumb/Campfire_JE2_BE2.gif/150px-Campfire_JE2_BE2.gif?742be" alt=""><figcaption><p>Cooked in a <a href="https://minecraft.wiki/w/Campfire">Campfire</a></p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/thumb/Soul_Campfire_JE1_BE1.gif/150px-Soul_Campfire_JE1_BE1.gif?bf4a7" alt=""><figcaption><p>Cooked in a <a href="https://minecraft.wiki/w/Soul_Campfire">Soul Campfire</a></p></figcaption></figure></div>
 
 <table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/baguette.png?raw=true" alt="" data-size="line"> <a href="items/foods/baguette.md">Baguette</a></td><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/toast.png?raw=true" alt="" data-size="line"><a href="items/foods/toast.md">Toast</a></td><td>8</td></tr></tbody></table>
@@ -127,15 +119,11 @@ More info about brewing can be found in the: [brewing-guide.md](misc-other-info/
 <figure><img src="https://minecraft.wiki/images/Stonecutter_JE2_BE1.gif?bb269" alt=""><figcaption><p>Cut with the<br><a href="https://minecraft.wiki/w/Stonecutter">Stonecutter</a></p></figcaption></figure>
 
 <table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td></td><td></td><td>1</td></tr></tbody></table>
-
-
 {% endtab %}
 {% endtabs %}
 
 {% tabs %}
 {% tab title="Recipe 3x3" %}
-
-
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the<br><a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
 |     |     |     |
@@ -154,12 +142,10 @@ Outputs:
 
 Recipe can be unlocked with:
 
-*
+* e
 {% endtab %}
 
 {% tab title="Rexipe 2x2" %}
-
-
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
 |     |     |
@@ -179,8 +165,8 @@ Outputs:
 {% tab title="Recipe 1x1" %}
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a>.</p></figcaption></figure>
 
-|                                                                                                  |
-| :----------------------------------------------------------------------------------------------: |
+|                                                                                                      |
+| :--------------------------------------------------------------------------------------------------: |
 | ![Cobalt Block](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/cobalt_block.png?raw=true) |
 
 Items:
@@ -193,14 +179,10 @@ Outputs:
 {% endtab %}
 {% endtabs %}
 
-
-
 e
 
 {% tabs %}
 {% tab title="Demonic Allay Drop" %}
-
-
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/entity_icon/demonic_allay.png" alt=""><figcaption><p>Dropped by the <a href="mobs/hostile-mobs/demonic-allay.md">Demonic Allay</a></p></figcaption></figure>
 
 | Item | Amount | Chance of Holding |
@@ -213,8 +195,6 @@ The Demonic Allay needs to spawn holding this item for it to drop
 {% endtab %}
 
 {% tab title="Untitled" %}
-
-
 | Item | Amount | Chance of Dropping |
 | ---- | ------ | ------------------ |
 |      | 1      | 100%               |
@@ -225,12 +205,10 @@ e
 
 {% tabs %}
 {% tab title="End Guard Tower" %}
-
-
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/structures-pixel/EndGuardTowerPixel.png?raw=true" alt=""><figcaption><p>Found in the <a href="sturctures/end-guard-tower.md">End Guard Tower</a></p></figcaption></figure>
 
-| Item                                                                                                                           | Amount | Chance |
-| ------------------------------------------------------------------------------------------------------------------------------ | ------ | ------ |
+| Item                                                                                                                            | Amount | Chance |
+| ------------------------------------------------------------------------------------------------------------------------------- | ------ | ------ |
 | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_astral.png?raw=true" alt="" data-size="line"> Raw Astral | 1 - 8  | 1/5    |
 {% endtab %}
 
