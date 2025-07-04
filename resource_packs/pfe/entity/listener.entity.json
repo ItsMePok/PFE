@@ -16,7 +16,7 @@
 				"controller.render.poke_pfe.default"
 			],
 			"spawn_egg": {
-				"texture": "poke_listener_spawn_egg"
+				"texture": "poke_pfe_listener_spawn_egg"
 			},
 			"animations": {
 				"controller": "controller.animation.poke_pfe.listener",

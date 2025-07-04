@@ -25,7 +25,7 @@
 			},
 			"minecraft:icon": {
 				"textures": {
-					"default": "poke_demonic_leggings"
+					"default": "poke_pfe_demonic_leggings"
 				}
 			},
 			"minecraft:wearable": {

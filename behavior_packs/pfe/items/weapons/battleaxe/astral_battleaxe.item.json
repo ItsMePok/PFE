@@ -29,7 +29,7 @@
           }
         ]
       },
-      "minecraft:icon": "poke_astral_battleaxe",
+      "minecraft:icon": "poke_pfe_astral_battleaxe",
       "minecraft:max_stack_size": 1,
       "minecraft:hand_equipped": true,
       "minecraft:durability": {

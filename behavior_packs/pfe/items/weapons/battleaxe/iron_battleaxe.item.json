@@ -35,7 +35,7 @@
 			"minecraft:damage": {
 				"value": 5
 			},
-			"minecraft:icon": "poke_iron_battleaxe",
+			"minecraft:icon": "poke_pfe_iron_battleaxe",
 			"minecraft:enchantable": {
 				"value": 14,
 				"slot": "sword"

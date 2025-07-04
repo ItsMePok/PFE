@@ -26,7 +26,7 @@
 			},
 			"minecraft:icon": {
 				"textures": {
-					"default": "poke_cactus_chestplate"
+					"default": "poke_pfe_cactus_chestplate"
 				}
 			},
 			"minecraft:wearable": {

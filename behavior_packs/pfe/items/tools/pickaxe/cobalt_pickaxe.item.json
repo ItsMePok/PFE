@@ -24,8 +24,8 @@
 			},
 			"minecraft:icon": {
 				"textures": {
-					"default": "poke_cobalt_pickaxe",
-					"dyed": "poke_cobalt_pickaxe"
+					"default": "poke_pfe_cobalt_pickaxe",
+					"dyed": "poke_pfe_cobalt_pickaxe"
 				}
 			},
 			"minecraft:dyeable": {

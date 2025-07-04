@@ -33,7 +33,7 @@
 			"minecraft:damage": {
 				"value": 9
 			},
-			"minecraft:icon": "poke_amethyst_sword",
+			"minecraft:icon": "poke_pfe_amethyst_sword",
 			"minecraft:enchantable": {
 				"value": 27,
 				"slot": "sword"

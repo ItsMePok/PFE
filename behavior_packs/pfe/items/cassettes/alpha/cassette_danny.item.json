@@ -8,7 +8,7 @@
       "minecraft:display_name": {
         "value": "%poke_pfe.cassette\n§7C418 - %poke_pfe.danny\n%poke_pfe.tag"
       },
-      "minecraft:icon": "poke_cassette_danny",
+      "minecraft:icon": "poke_pfe_cassette_danny",
       "poke_pfe:play_music": {
         "music": "poke_pfe.music.danny"
       },

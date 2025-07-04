@@ -35,7 +35,7 @@
 			},
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "poke_glow_berry_crate",
+					"texture": "poke_pfe_glow_berry_crate",
 					"render_method": "opaque"
 				}
 			},

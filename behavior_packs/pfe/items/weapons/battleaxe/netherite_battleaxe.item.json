@@ -42,7 +42,7 @@
 			"minecraft:damage": {
 				"value": 6
 			},
-			"minecraft:icon": "poke_netherite_battleaxe",
+			"minecraft:icon": "poke_pfe_netherite_battleaxe",
 			"minecraft:enchantable": {
 				"value": 27,
 				"slot": "sword"

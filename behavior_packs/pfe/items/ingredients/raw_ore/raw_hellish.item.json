@@ -11,7 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.raw_hellish\n%poke_pfe.tag"
 			},
-			"minecraft:icon": "poke_raw_hellish"
+			"minecraft:icon": "poke_pfe_raw_hellish"
 		}
 	}
 }

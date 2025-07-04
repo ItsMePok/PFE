@@ -32,7 +32,7 @@
 				"flap": "mob.enderdragon.flap"
 			},
 			"spawn_egg": {
-				"texture": "poke_sparky_spawn_egg"
+				"texture": "poke_pfe_sparky_spawn_egg"
 			}
 		}
 	}

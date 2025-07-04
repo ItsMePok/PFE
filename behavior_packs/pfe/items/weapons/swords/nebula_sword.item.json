@@ -34,7 +34,7 @@
 			"minecraft:damage": {
 				"value": 85
 			},
-			"minecraft:icon": "poke_nebula_sword",
+			"minecraft:icon": "poke_pfe_nebula_sword",
 			"minecraft:enchantable": {
 				"value": 100,
 				"slot": "sword"

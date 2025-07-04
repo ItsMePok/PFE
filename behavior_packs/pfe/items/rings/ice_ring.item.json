@@ -21,7 +21,7 @@
 					}
 				]
 			},
-			"minecraft:icon": "poke_ice_ring",
+			"minecraft:icon": "poke_pfe_ice_ring",
 			"minecraft:max_stack_size": 1,
 			"minecraft:tags": {
 				"tags": [

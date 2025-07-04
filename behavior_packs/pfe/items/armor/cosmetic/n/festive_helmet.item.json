@@ -24,7 +24,7 @@
 			},
 			"minecraft:icon": {
 				"textures": {
-					"default": "poke_festive_helmet"
+					"default": "poke_pfe_festive_helmet"
 				}
 			},
 			"minecraft:wearable": {

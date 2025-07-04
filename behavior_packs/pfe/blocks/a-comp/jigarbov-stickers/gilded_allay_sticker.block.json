@@ -40,14 +40,14 @@
       },
       "minecraft:selection_box": {
         "origin": [
-          -5,
+          -7,
           0,
-          -7.5
+          -4
         ],
         "size": [
-          10,
+          14,
           1,
-          15
+          8
         ]
       },
       "minecraft:collision_box": false,

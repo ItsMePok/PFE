@@ -14,7 +14,7 @@
 			},
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "poke_cracked_hellish_bricks",
+					"texture": "poke_pfe_cracked_hellish_bricks",
 					"render_method": "opaque"
 				}
 			},

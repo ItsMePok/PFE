@@ -42,7 +42,7 @@
 			"minecraft:damage": {
 				"value": 6
 			},
-			"minecraft:icon": "poke_emerald_battleaxe",
+			"minecraft:icon": "poke_pfe_emerald_battleaxe",
 			"minecraft:enchantable": {
 				"value": 35,
 				"slot": "sword"

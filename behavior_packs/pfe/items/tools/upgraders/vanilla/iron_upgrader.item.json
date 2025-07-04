@@ -11,7 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.iron_upgrader\n%poke_pfe.tag"
 			},
-			"minecraft:icon": "poke_iron_upgrader",
+			"minecraft:icon": "poke_pfe_iron_upgrader",
 			"minecraft:hand_equipped": true,
 			"minecraft:max_stack_size": 1,
 			"minecraft:durability": {

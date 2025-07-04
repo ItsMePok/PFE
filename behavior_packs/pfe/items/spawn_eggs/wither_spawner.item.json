@@ -11,7 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.wither_spawner\n%poke_pfe.tag"
 			},
-			"minecraft:icon": "poke_wither_spawner",
+			"minecraft:icon": "poke_pfe_wither_spawner",
 			"poke_pfe:spawn_entity": {
 				"entity": "minecraft:wither"
 			},

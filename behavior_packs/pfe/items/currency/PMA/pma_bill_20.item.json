@@ -11,7 +11,7 @@
       "minecraft:display_name": {
         "value": "%poke_pfe.pma_bill_20\n%poke_pfe.tag"
       },
-      "minecraft:icon": "poke_pma_bill_20"
+      "minecraft:icon": "poke_pfe_pma_bill_20"
     }
   }
 }

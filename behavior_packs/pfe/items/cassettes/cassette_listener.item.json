@@ -9,7 +9,7 @@
 				"value": "%poke_pfe.cassette\n§7ItsMePok -§3  %poke_pfe.theyListen\n%poke_pfe.tag"
 			},
 			"minecraft:rarity": "epic",
-			"minecraft:icon": "poke_cassette_listener",
+			"minecraft:icon": "poke_pfe_cassette_listener",
 			"poke_pfe:play_music": {
 				"music": "poke_pfe.they_listen"
 			},

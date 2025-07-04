@@ -25,7 +25,7 @@
 			},
 			"minecraft:icon": {
 				"textures": {
-					"default": "poke_astral_boots"
+					"default": "poke_pfe_astral_boots"
 				}
 			},
 			"minecraft:wearable": {

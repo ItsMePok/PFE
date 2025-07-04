@@ -21,7 +21,7 @@
 				"movement_modifier": 0.32,
 				"use_duration": 1.6
 			},
-			"minecraft:icon": "poke_rotten_chicken",
+			"minecraft:icon": "poke_pfe_rotten_chicken",
 			"minecraft:use_animation": "eat"
 		}
 	}

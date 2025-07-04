@@ -35,7 +35,7 @@
 			},
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "poke_smooth_limestone",
+					"texture": "poke_pfe_smooth_limestone",
 					"isotropic": true,
 					"render_method": "opaque"
 				}

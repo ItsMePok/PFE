@@ -23,7 +23,7 @@
 					}
 				]
 			},
-			"minecraft:icon": "poke_nuke_ring",
+			"minecraft:icon": "poke_pfe_nuke_ring",
 			"minecraft:cooldown": {
 				"category": "poke:nuke_ring",
 				"duration": 2

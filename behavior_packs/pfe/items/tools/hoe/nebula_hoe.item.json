@@ -136,7 +136,7 @@
 					}
 				]
 			},
-			"minecraft:icon": "poke_nebula_hoe",
+			"minecraft:icon": "poke_pfe_nebula_hoe",
 			"minecraft:repairable": {
 				"repair_items": [
 					{

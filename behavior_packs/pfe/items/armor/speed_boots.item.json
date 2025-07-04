@@ -24,7 +24,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": "poke_swift_boots",
+			"minecraft:icon": "poke_pfe_swift_boots",
 			"minecraft:wearable": {
 				"slot": "slot.armor.feet",
 				"protection": 6

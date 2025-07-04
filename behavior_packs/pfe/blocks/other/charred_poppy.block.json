@@ -36,7 +36,7 @@
 			"minecraft:geometry": "geometry.poke_pfe.charred_poppy",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "poke_charred_poppy",
+					"texture": "poke_pfe_charred_poppy",
 					"render_method": "alpha_test",
 					"face_dimming": false,
 					"ambient_occlusion": false

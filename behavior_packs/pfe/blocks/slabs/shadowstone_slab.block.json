@@ -40,7 +40,7 @@
 					},
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "poke_shadowstone"
+							"texture": "poke_pfe_shadowstone"
 						}
 					},
 					"minecraft:geometry": {
@@ -81,7 +81,7 @@
 					},
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "poke_shadowstone"
+							"texture": "poke_pfe_shadowstone"
 						}
 					},
 					"minecraft:geometry": {
@@ -136,7 +136,7 @@
 					},
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "poke_shadowstone"
+							"texture": "poke_pfe_shadowstone"
 						}
 					},
 					"minecraft:geometry": {
@@ -170,7 +170,7 @@
 				"explosion_resistance": 15
 			},
 			"minecraft:destruction_particles": {
-				"texture": "poke_shadowstone"
+				"texture": "poke_pfe_shadowstone"
 			},
 			"minecraft:map_color": "#2a1d2c",
 			"minecraft:friction": 0.42,

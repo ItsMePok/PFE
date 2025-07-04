@@ -24,7 +24,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": "poke_void_helmet",
+			"minecraft:icon": "poke_pfe_void_helmet",
 			"minecraft:wearable": {
 				"slot": "slot.armor.head",
 				"protection": 12

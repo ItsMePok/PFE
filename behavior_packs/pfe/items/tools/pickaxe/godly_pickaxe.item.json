@@ -24,8 +24,8 @@
 			},
 			"minecraft:icon": {
 				"textures": {
-					"default": "poke_godly_pickaxe",
-					"dyed": "poke_godly_pickaxe"
+					"default": "poke_pfe_godly_pickaxe",
+					"dyed": "poke_pfe_godly_pickaxe"
 				}
 			},
 			"minecraft:dyeable": {

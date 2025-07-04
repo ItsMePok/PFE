@@ -30,7 +30,7 @@
         ]
       },
       "minecraft:rarity": "common",
-      "minecraft:icon": "poke_amethyst_battleaxe",
+      "minecraft:icon": "poke_pfe_amethyst_battleaxe",
       "minecraft:max_stack_size": 1,
       "minecraft:hand_equipped": true,
       "minecraft:durability": {

@@ -16,7 +16,7 @@
 				"controller.render.poke_pfe.default"
 			],
 			"spawn_egg": {
-				"texture": "poke_snowman_spawn_egg"
+				"texture": "poke_pfe_snowman_spawn_egg"
 			}
 		}
 	}

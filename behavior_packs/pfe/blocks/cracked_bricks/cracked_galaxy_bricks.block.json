@@ -14,7 +14,7 @@
 			},
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "poke_cracked_galaxy_bricks",
+					"texture": "poke_pfe_cracked_galaxy_bricks",
 					"render_method": "opaque"
 				}
 			},

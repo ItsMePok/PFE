@@ -23,6 +23,28 @@
 		],
 		"components": {
 			"minecraft:display_name": "%poke_pfe.cobble_gen\n%poke_pfe.tag",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "poke_cobbler",
+					"render_method": "opaque"
+				},
+				"up": {
+					"texture": "poke_cobbler_top",
+					"render_method": "opaque"
+				},
+				"down": {
+					"texture": "poke_cobbler_bottom",
+					"render_method": "opaque"
+				},
+				"east": {
+					"texture": "poke_cobbler_flip",
+					"render_method": "opaque"
+				},
+				"west": "east"
+			},
+			"minecraft:geometry": {
+				"identifier": "minecraft:geometry.full_block"
+			},
 			"minecraft:redstone_conductivity": {
 				"redstone_conductor": true,
 				"allows_wire_to_step_down": true

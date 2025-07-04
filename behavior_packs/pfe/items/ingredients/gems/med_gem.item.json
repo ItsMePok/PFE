@@ -11,7 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.med_gem\n%poke_pfe.tag"
 			},
-			"minecraft:icon": "poke_med_gem"
+			"minecraft:icon": "poke_pfe_med_gem"
 		}
 	}
 }

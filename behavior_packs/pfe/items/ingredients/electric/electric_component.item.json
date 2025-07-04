@@ -11,7 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.electric_component\n%poke_pfe.tag"
 			},
-			"minecraft:icon": "poke_electric_component"
+			"minecraft:icon": "poke_pfe_electric_component"
 		}
 	}
 }

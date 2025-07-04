@@ -15,7 +15,7 @@
 				"max_durability": 1150
 			},
 			"minecraft:hand_equipped": true,
-			"minecraft:icon": "poke_purifier",
+			"minecraft:icon": "poke_pfe_purifier",
 			"minecraft:cooldown": {
 				"category": "poke:purifier",
 				"duration": 1.5

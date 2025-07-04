@@ -11,7 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.warp_gem\n%poke_pfe.tag"
 			},
-			"minecraft:icon": "poke_warp_gem"
+			"minecraft:icon": "poke_pfe_warp_gem"
 		}
 	}
 }

@@ -12,7 +12,7 @@
 				"value": "%poke_pfe.void_boltbow\n§7%poke_pfe.crouchInteract\n%poke_pfe.tag"
 			},
 			"minecraft:rarity": "common",
-			"minecraft:icon": "poke_void_boltbow",
+			"minecraft:icon": "poke_pfe_void_boltbow",
 			"minecraft:can_destroy_in_creative": {
 				"value": false
 			},

@@ -14,7 +14,7 @@
 			},
 			"poke:consumeEffects": {},
 			"minecraft:max_stack_size": 16,
-			"minecraft:icon": "poke_death_potion",
+			"minecraft:icon": "poke_pfe_death_potion",
 			"minecraft:food": {
 				"nutrition": 0,
 				"saturation_modifier": 0,

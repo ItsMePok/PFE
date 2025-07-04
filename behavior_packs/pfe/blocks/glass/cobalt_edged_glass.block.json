@@ -21,7 +21,7 @@
 			},
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "poke_cobalt_edged_glass",
+					"texture": "poke_pfe_cobalt_edged_glass",
 					"render_method": "blend"
 				}
 			},

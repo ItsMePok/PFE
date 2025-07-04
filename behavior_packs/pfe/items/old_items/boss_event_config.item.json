@@ -9,7 +9,7 @@
 		},
 		"components": {
 			"minecraft:rarity": "common",
-			"minecraft:icon": "poke_boss_event_config",
+			"minecraft:icon": "poke_pfe_boss_event_config",
 			"poke_pfe:config": {}
 		}
 	}

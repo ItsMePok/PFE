@@ -40,7 +40,7 @@
 					},
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "poke_honey_bricks"
+							"texture": "poke_pfe_honey_bricks"
 						}
 					},
 					"minecraft:geometry": {
@@ -81,7 +81,7 @@
 					},
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "poke_honey_bricks"
+							"texture": "poke_pfe_honey_bricks"
 						}
 					},
 					"minecraft:geometry": {
@@ -136,7 +136,7 @@
 					},
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "poke_honey_bricks"
+							"texture": "poke_pfe_honey_bricks"
 						}
 					},
 					"minecraft:geometry": {
@@ -170,7 +170,7 @@
 				"explosion_resistance": 20
 			},
 			"minecraft:destruction_particles": {
-				"texture": "poke_honey_bricks"
+				"texture": "poke_pfe_honey_bricks"
 			},
 			"minecraft:map_color": "#d87800",
 			"tag:pfe": {},

@@ -37,7 +37,7 @@
 				"use_duration": 0,
 				"movement_modifier": 1
 			},
-			"minecraft:icon": "poke_diamond_haxel",
+			"minecraft:icon": "poke_pfe_diamond_haxel",
 			"minecraft:cooldown": {
 				"category": "poke:haxel",
 				"duration": 0.3

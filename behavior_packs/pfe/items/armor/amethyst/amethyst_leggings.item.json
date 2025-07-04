@@ -25,7 +25,7 @@
 			},
 			"minecraft:icon": {
 				"textures": {
-					"default": "poke_amethyst_leggings"
+					"default": "poke_pfe_amethyst_leggings"
 				}
 			},
 			"minecraft:wearable": {

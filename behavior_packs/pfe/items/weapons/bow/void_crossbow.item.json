@@ -16,7 +16,7 @@
 					"pfe:crossbow"
 				]
 			},
-			"minecraft:icon": "poke_void_crossbow",
+			"minecraft:icon": "poke_pfe_void_crossbow",
 			"minecraft:use_modifiers": {
 				"movement_modifier": 0.33,
 				"use_duration": 1.25

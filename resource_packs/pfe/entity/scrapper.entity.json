@@ -29,7 +29,7 @@
 				"controller.render.poke_pfe.default"
 			],
 			"spawn_egg": {
-				"texture": "poke_scrapper_spawn_egg"
+				"texture": "poke_pfe_scrapper_spawn_egg"
 			},
 			"enable_attachables": true,
 			"hide_armor": false

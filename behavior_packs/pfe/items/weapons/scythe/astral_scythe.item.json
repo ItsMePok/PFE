@@ -21,7 +21,7 @@
 			"minecraft:damage": {
 				"value": 27
 			},
-			"minecraft:icon": "poke_astral_scythe",
+			"minecraft:icon": "poke_pfe_astral_scythe",
 			"minecraft:enchantable": {
 				"value": 140,
 				"slot": "sword"

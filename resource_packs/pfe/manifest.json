@@ -1,13 +1,13 @@
 {
 	"header": {
-		"name": "v1.2.97 PFE §aRP§r",
+		"name": "v1.2.98 PFE §aRP§r",
 		"description": "Wiki: https:pfewiki.gitbook.io/home",
 		"pack_scope": "any",
-		"uuid": "ff743240-76d9-4dc4-bae8-2cdf75e0b515",
+		"uuid": "988b8912-1ce5-43bd-93ea-13cc3baccaf7",
 		"version": [
 			1,
 			2,
-			97
+			98
 		],
 		"min_engine_version": [
 			1,
@@ -29,11 +29,11 @@
 	],
 	"dependencies": [
 		{ //BP Manifest
-			"uuid": "9c17d235-0e5e-4548-847e-11daddfbd044",
+			"uuid": "636320ee-b214-45de-91f2-ba5af14c512a",
 			"version": [
 				1,
 				2,
-				97
+				98
 			]
 		}
 	],

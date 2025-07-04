@@ -11,7 +11,7 @@
       "minecraft:rarity": "rare",
       "minecraft:icon": {
         "textures": {
-          "default": "poke_cassette_creator"
+          "default": "poke_pfe_cassette_creator"
         }
       },
       "poke_pfe:play_music": {

@@ -22,7 +22,7 @@
 					}
 				]
 			},
-			"minecraft:icon": "poke_darkness_ring",
+			"minecraft:icon": "poke_pfe_darkness_ring",
 			"minecraft:cooldown": {
 				"duration": 5,
 				"category": "poke:darkness_ring_1"

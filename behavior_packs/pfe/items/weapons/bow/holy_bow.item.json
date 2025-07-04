@@ -35,7 +35,7 @@
 			},
 			"minecraft:icon": {
 				"textures": {
-					"default": "poke_holy_bow"
+					"default": "poke_pfe_holy_bow"
 				}
 			},
 			"minecraft:use_modifiers": {

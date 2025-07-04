@@ -25,7 +25,7 @@
 				},
 				"material_instances": {
 					"*": {
-						"texture": "poke_dye_unmixer",
+						"texture": "poke_pfe_dye_unmixer",
 						"render_method": "alpha_test"
 					}
 				}
@@ -50,7 +50,7 @@
 			"minecraft:geometry": "geometry.poke_pfe.dye_unmixer",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "poke_dye_unmixer",
+					"texture": "poke_pfe_dye_unmixer",
 					"render_method": "alpha_test"
 				}
 			},

@@ -46,7 +46,7 @@
 					"min": 20
 				}
 			},
-			"minecraft:icon": "poke_holy_haxel",
+			"minecraft:icon": "poke_pfe_holy_haxel",
 			"minecraft:repairable": {
 				"repair_items": [
 					{

@@ -35,7 +35,7 @@
 			},
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "poke_potato_crate",
+					"texture": "poke_pfe_potato_crate",
 					"render_method": "opaque"
 				}
 			},

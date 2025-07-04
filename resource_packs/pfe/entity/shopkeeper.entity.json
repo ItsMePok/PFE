@@ -29,7 +29,7 @@
 				"controller.render.poke_pfe.default"
 			],
 			"spawn_egg": {
-				"texture": "poke_shopkeeper_spawn_egg"
+				"texture": "poke_pfe_shopkeeper_spawn_egg"
 			},
 			"enable_attachables": true,
 			"hide_armor": false

@@ -26,7 +26,7 @@
 			},
 			"minecraft:icon": {
 				"textures": {
-					"default": "poke_springy_robey_helmet"
+					"default": "poke_pfe_springy_robey_helmet"
 				}
 			},
 			"minecraft:wearable": {

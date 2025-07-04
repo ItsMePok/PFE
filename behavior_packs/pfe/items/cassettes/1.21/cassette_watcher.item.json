@@ -8,7 +8,7 @@
       "minecraft:display_name": {
         "value": "%poke_pfe.cassette\n§7Aaron Cherof - %poke_pfe.watcher\n%poke_pfe.tag"
       },
-      "minecraft:icon": "poke_cassette_watcher",
+      "minecraft:icon": "poke_pfe_cassette_watcher",
       "poke_pfe:play_music": {
         "music": "poke_pfe.music.watcher"
       },

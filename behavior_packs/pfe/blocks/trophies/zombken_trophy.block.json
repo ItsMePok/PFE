@@ -63,7 +63,7 @@
 			"minecraft:geometry": "geometry.zombken_trophy",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "poke_zombken_trophy",
+					"texture": "poke_pfe_zombken_trophy",
 					"render_method": "blend_to_opaque",
 					"ambient_occlusion": false,
 					"face_dimming": true

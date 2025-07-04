@@ -24,8 +24,8 @@
 			},
 			"minecraft:icon": {
 				"textures": {
-					"default": "poke_holy_axe",
-					"dyed": "poke_holy_axe"
+					"default": "poke_pfe_holy_axe",
+					"dyed": "poke_pfe_holy_axe"
 				}
 			},
 			"minecraft:dyeable": {

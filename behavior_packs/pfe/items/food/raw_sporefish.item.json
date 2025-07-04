@@ -12,7 +12,7 @@
 				"value": "%poke_pfe.raw_sporefish\n%poke_pfe.tag"
 			},
 			"minecraft:max_stack_size": 64,
-			"minecraft:icon": "poke_raw_sporefish",
+			"minecraft:icon": "poke_pfe_raw_sporefish",
 			"minecraft:food": {
 				"nutrition": 3,
 				"saturation_modifier": 0.6

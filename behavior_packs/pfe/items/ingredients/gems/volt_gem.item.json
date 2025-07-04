@@ -12,7 +12,7 @@
 				"value": "%poke_pfe.volt_gem\n%poke_pfe.tag"
 			},
 			"minecraft:rarity": "uncommon",
-			"minecraft:icon": "poke_volt_gem"
+			"minecraft:icon": "poke_pfe_volt_gem"
 		}
 	}
 }

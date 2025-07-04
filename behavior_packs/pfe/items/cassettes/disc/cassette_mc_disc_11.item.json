@@ -9,7 +9,7 @@
         "value": "%poke_pfe.cassette\n%poke_pfe.tag"
       },
       "minecraft:rarity": "uncommon",
-      "minecraft:icon": "poke_cassette_mc_disc_11",
+      "minecraft:icon": "poke_pfe_cassette_mc_disc_11",
       "poke_pfe:play_music": {
         "music": "poke_pfe.disc.11",
         "music_volume": 0.5

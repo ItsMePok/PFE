@@ -12,7 +12,7 @@
 				"value": "%poke_pfe.ban_hammer_shaft\n%poke_pfe.tag"
 			},
 			"minecraft:rarity": "uncommon",
-			"minecraft:icon": "poke_ban_hammer_shaft"
+			"minecraft:icon": "poke_pfe_ban_hammer_shaft"
 		}
 	}
 }

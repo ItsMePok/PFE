@@ -23,7 +23,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": "poke_molten_boots",
+			"minecraft:icon": "poke_pfe_molten_boots",
 			"minecraft:wearable": {
 				"slot": "slot.armor.feet",
 				"protection": 10

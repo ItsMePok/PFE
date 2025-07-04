@@ -63,7 +63,7 @@
 			"minecraft:geometry": "geometry.poke_pfe.magic_8_ball",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "poke_magic_8_ball",
+					"texture": "poke_pfe_magic_8_ball",
 					"render_method": "opaque",
 					"ambient_occlusion": false
 				}

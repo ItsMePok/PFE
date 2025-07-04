@@ -24,8 +24,8 @@
 			},
 			"minecraft:icon": {
 				"textures": {
-					"default": "poke_medic_axe",
-					"dyed": "poke_medic_axe"
+					"default": "poke_pfe_medic_axe",
+					"dyed": "poke_pfe_medic_axe"
 				}
 			},
 			"minecraft:dyeable": {

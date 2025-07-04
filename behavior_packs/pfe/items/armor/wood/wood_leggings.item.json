@@ -25,7 +25,7 @@
 			},
 			"minecraft:icon": {
 				"textures": {
-					"default": "poke_wood_leggings"
+					"default": "poke_pfe_wood_leggings"
 				}
 			},
 			"minecraft:wearable": {

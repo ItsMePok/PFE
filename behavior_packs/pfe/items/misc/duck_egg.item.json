@@ -17,7 +17,7 @@
 					"minecraft:egg"
 				]
 			},
-			"minecraft:icon": "poke_duck_egg",
+			"minecraft:icon": "poke_pfe_duck_egg",
 			"minecraft:use_modifiers": {
 				"movement_modifier": 1,
 				"use_duration": 0.01

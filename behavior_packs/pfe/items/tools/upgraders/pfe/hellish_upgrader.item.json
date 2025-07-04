@@ -11,7 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.hellish_upgrader\n%poke_pfe.tag"
 			},
-			"minecraft:icon": "poke_hellish_upgrader",
+			"minecraft:icon": "poke_pfe_hellish_upgrader",
 			"minecraft:hand_equipped": true,
 			"minecraft:max_stack_size": 1,
 			"minecraft:durability": {

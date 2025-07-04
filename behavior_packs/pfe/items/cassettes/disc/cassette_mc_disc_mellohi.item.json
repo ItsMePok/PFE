@@ -9,7 +9,7 @@
         "value": "%poke_pfe.cassette\n%poke_pfe.tag"
       },
       "minecraft:rarity": "uncommon",
-      "minecraft:icon": "poke_cassette_mc_disc_mellohi",
+      "minecraft:icon": "poke_pfe_cassette_mc_disc_mellohi",
       "poke_pfe:play_music": {
         "music": "poke_pfe.disc.mellohi",
         "music_volume": 0.5
@@ -24,7 +24,7 @@
         "comparator_signal": 7,
         "sound_event": "record.mellohi",
         "duration": 96
-      } 
+      }
     }
   }
 }

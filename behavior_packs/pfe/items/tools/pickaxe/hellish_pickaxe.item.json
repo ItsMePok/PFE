@@ -24,8 +24,8 @@
 			},
 			"minecraft:icon": {
 				"textures": {
-					"default": "poke_hellish_pickaxe",
-					"dyed": "poke_hellish_pickaxe"
+					"default": "poke_pfe_hellish_pickaxe",
+					"dyed": "poke_pfe_hellish_pickaxe"
 				}
 			},
 			"minecraft:dyeable": {

@@ -11,7 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.death_ingot\n%poke_pfe.tag"
 			},
-			"minecraft:icon": "poke_death_ingot",
+			"minecraft:icon": "poke_pfe_death_ingot",
 			"poke_pfe:icon_path": "textures/poke/pfe/death_ingot"
 		}
 	}

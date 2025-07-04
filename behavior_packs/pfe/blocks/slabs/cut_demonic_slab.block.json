@@ -40,7 +40,7 @@
 					},
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "poke_cut_demonic"
+							"texture": "poke_pfe_cut_demonic"
 						}
 					},
 					"minecraft:geometry": {
@@ -81,7 +81,7 @@
 					},
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "poke_cut_demonic"
+							"texture": "poke_pfe_cut_demonic"
 						}
 					},
 					"minecraft:geometry": {
@@ -136,7 +136,7 @@
 					},
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "poke_cut_demonic"
+							"texture": "poke_pfe_cut_demonic"
 						}
 					},
 					"minecraft:geometry": {
@@ -178,7 +178,7 @@
 				"explosion_resistance": 6
 			},
 			"minecraft:destruction_particles": {
-				"texture": "poke_cut_demonic"
+				"texture": "poke_pfe_cut_demonic"
 			},
 			"minecraft:map_color": "#1a37bb",
 			"tag:pfe": {},

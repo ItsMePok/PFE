@@ -15,8 +15,8 @@
 				"textures": {
 					"default": "pfe-gift_box",
 					"dyed": "pfe-gift_box",
-					"bundle_open_back": "poke_gift_box_open_back",
-					"bundle_open_front": "poke_gift_box_open_front"
+					"bundle_open_back": "poke_pfe_gift_box_open_back",
+					"bundle_open_front": "poke_pfe_gift_box_open_front"
 				}
 			},
 			"minecraft:dyeable": {

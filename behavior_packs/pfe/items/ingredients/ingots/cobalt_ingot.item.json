@@ -11,7 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.cobalt_ingot\n%poke_pfe.tag"
 			},
-			"minecraft:icon": "poke_cobalt_ingot",
+			"minecraft:icon": "poke_pfe_cobalt_ingot",
 			"poke_pfe:icon_path": "textures/poke/pfe/cobalt_ingot"
 		}
 	}

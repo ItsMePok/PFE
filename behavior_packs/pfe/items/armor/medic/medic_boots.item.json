@@ -23,7 +23,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": "poke_medic_boots",
+			"minecraft:icon": "poke_pfe_medic_boots",
 			"minecraft:wearable": {
 				"slot": "slot.armor.feet",
 				"protection": 10

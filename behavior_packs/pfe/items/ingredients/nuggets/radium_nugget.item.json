@@ -11,7 +11,7 @@
       "minecraft:display_name": {
         "value": "%poke_pfe.radium_nugget\n%poke_pfe.tag"
       },
-      "minecraft:icon": "poke_radium_nugget"
+      "minecraft:icon": "poke_pfe_radium_nugget"
     }
   }
 }

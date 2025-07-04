@@ -11,7 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.emerald_scythe\n%poke_pfe.tag"
 			},
-			"minecraft:icon": "poke_emerald_scythe",
+			"minecraft:icon": "poke_pfe_emerald_scythe",
 			"minecraft:max_stack_size": 1,
 			"minecraft:hand_equipped": true,
 			"minecraft:durability": {

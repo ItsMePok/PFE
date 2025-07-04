@@ -34,7 +34,7 @@
 			},
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "poke_cracked_void_bricks",
+					"texture": "poke_pfe_cracked_void_bricks",
 					"render_method": "opaque"
 				}
 			},

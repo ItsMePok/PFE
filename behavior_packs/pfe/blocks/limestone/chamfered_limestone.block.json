@@ -45,7 +45,7 @@
 			"minecraft:geometry": "geometry.poke_pfe.chamfered_limestone",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "poke_chamfered_limestone",
+					"texture": "poke_pfe_chamfered_limestone",
 					"render_method": "opaque"
 				}
 			},

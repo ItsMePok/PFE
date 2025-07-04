@@ -37,7 +37,7 @@
 					"minecraft:geometry": "geometry.poke_pfe.charred_poppy",
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "poke_turnip_1",
+							"texture": "poke_pfe_turnip_1",
 							"render_method": "alpha_test_to_opaque",
 							"ambient_occlusion": false,
 							"face_dimming": false
@@ -65,7 +65,7 @@
 					"minecraft:geometry": "geometry.poke_pfe.charred_poppy",
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "poke_turnip_1",
+							"texture": "poke_pfe_turnip_1",
 							"render_method": "alpha_test_to_opaque",
 							"ambient_occlusion": false,
 							"face_dimming": false
@@ -93,7 +93,7 @@
 					"minecraft:geometry": "geometry.poke_pfe.charred_poppy",
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "poke_turnip_2",
+							"texture": "poke_pfe_turnip_2",
 							"render_method": "alpha_test_to_opaque",
 							"ambient_occlusion": false,
 							"face_dimming": false
@@ -121,7 +121,7 @@
 					"minecraft:geometry": "geometry.poke_pfe.charred_poppy",
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "poke_turnip_2",
+							"texture": "poke_pfe_turnip_2",
 							"render_method": "alpha_test_to_opaque",
 							"ambient_occlusion": false,
 							"face_dimming": false
@@ -149,7 +149,7 @@
 					"minecraft:geometry": "geometry.poke_pfe.charred_poppy",
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "poke_turnip_2",
+							"texture": "poke_pfe_turnip_2",
 							"render_method": "alpha_test_to_opaque",
 							"ambient_occlusion": false,
 							"face_dimming": false
@@ -177,7 +177,7 @@
 					"minecraft:geometry": "geometry.poke_pfe.charred_poppy",
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "poke_turnip_3",
+							"texture": "poke_pfe_turnip_3",
 							"render_method": "alpha_test_to_opaque",
 							"ambient_occlusion": false,
 							"face_dimming": false

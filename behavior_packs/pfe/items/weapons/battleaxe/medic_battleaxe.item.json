@@ -29,7 +29,7 @@
           }
         ]
       },
-      "minecraft:icon": "poke_medic_battleaxe",
+      "minecraft:icon": "poke_pfe_medic_battleaxe",
       "minecraft:max_stack_size": 1,
       "minecraft:hand_equipped": true,
       "minecraft:durability": {

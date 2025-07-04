@@ -11,7 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.nebula_ingot\n%poke_pfe.tag"
 			},
-			"minecraft:icon": "poke_nebula_ingot",
+			"minecraft:icon": "poke_pfe_nebula_ingot",
 			"poke_pfe:icon_path": "textures/poke/pfe/nebula_ingot"
 		}
 	}

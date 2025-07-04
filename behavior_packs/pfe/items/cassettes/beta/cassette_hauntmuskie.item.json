@@ -8,7 +8,7 @@
       "minecraft:display_name": {
         "value": "%poke_pfe.cassette\n§7C418 - %poke_pfe.hauntmuskie\n%poke_pfe.tag"
       },
-      "minecraft:icon": "poke_cassette_hauntmuskie",
+      "minecraft:icon": "poke_pfe_cassette_hauntmuskie",
       "poke_pfe:play_music": {
         "music": "poke_pfe.music.hauntmuskie"
       },

@@ -56,7 +56,7 @@
 			"minecraft:geometry": "geometry.poke_pfe.furnace_golem_trophy",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "poke_furnace_golem_trophy",
+					"texture": "poke_pfe_furnace_golem_trophy",
 					"render_method": "opaque",
 					"ambient_occlusion": false,
 					"face_dimming": true

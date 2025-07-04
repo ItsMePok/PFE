@@ -22,7 +22,7 @@
 				]
 			},
 			"minecraft:max_stack_size": 1,
-			"minecraft:icon": "poke_godly_sword",
+			"minecraft:icon": "poke_pfe_godly_sword",
 			"minecraft:damage": {
 				"value": 14
 			},

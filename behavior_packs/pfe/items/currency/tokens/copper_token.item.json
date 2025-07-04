@@ -11,7 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.copper_token\n%poke_pfe.tag"
 			},
-			"minecraft:icon": "poke_copper_token"
+			"minecraft:icon": "poke_pfe_copper_token"
 		}
 	}
 }

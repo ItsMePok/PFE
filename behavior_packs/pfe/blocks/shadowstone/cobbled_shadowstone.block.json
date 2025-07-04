@@ -9,6 +9,15 @@
 		},
 		"components": {
 			"minecraft:display_name": "%poke_pfe.cobbled_shadowstone\n%poke_pfe.tag",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "poke_pfe_cobbled_shadowstone",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:geometry": {
+				"identifier": "minecraft:geometry.full_block"
+			},
 			"minecraft:redstone_conductivity": {
 				"redstone_conductor": true,
 				"allows_wire_to_step_down": true

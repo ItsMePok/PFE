@@ -45,7 +45,7 @@
 				},
 				"material_instances": {
 					"*": {
-						"texture": "poke_death_bricks",
+						"texture": "poke_pfe_death_bricks",
 						"render_method": "opaque",
 						"ambient_occlusion": false,
 						"face_dimming": false
@@ -54,7 +54,7 @@
 			},
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "poke_death_bricks",
+					"texture": "poke_pfe_death_bricks",
 					"render_method": "opaque",
 					"ambient_occlusion": false,
 					"face_dimming": false

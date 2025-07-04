@@ -24,7 +24,7 @@
 			},
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "poke_onyx"
+					"texture": "poke_pfe_onyx"
 				}
 			},
 			"minecraft:destructible_by_mining": {

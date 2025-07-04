@@ -33,7 +33,7 @@
 					} //Nugget is 2.8%of max
 				]
 			},
-			"minecraft:icon": "poke_galaxy_bow", //Item Texture in the hotbar (held texture is defined in the attachable due to it having animations)
+			"minecraft:icon": "poke_pfe_galaxy_bow", //Item Texture in the hotbar (held texture is defined in the attachable due to it having animations)
 			"minecraft:use_modifiers": { //Use modifiers controls some of the thing that happen while the player uses this item
 				"movement_modifier": 0.3, //Slows the player down while using the item
 				"use_duration": 90 //Use Duration. basically how long until the item is done being used

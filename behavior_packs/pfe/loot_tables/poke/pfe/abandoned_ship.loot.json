@@ -5,7 +5,7 @@
 			"entries": [ // Total Weight: 22
 				{
 					"type": "empty",
-					"weight": 4
+					"weight": 8
 				},
 				{
 					"type": "item",
@@ -45,16 +45,6 @@
 				{
 					"type": "item",
 					"name": "poke:upgrade_core",
-					"weight": 2
-				},
-				{
-					"type": "item",
-					"name": "poke:block_breaker_south",
-					"weight": 2
-				},
-				{
-					"type": "item",
-					"name": "poke:calibrated_cobblestone_generator_south",
 					"weight": 2
 				},
 				{

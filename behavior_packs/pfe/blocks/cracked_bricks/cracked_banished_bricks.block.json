@@ -14,7 +14,7 @@
 			},
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "poke_cracked_banished_bricks",
+					"texture": "poke_pfe_cracked_banished_bricks",
 					"render_method": "opaque"
 				}
 			},

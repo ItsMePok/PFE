@@ -13,7 +13,7 @@
 			},
 			"poke:consumeEffects": {},
 			"minecraft:max_stack_size": 16,
-			"minecraft:icon": "poke_cobalt_soup",
+			"minecraft:icon": "poke_pfe_cobalt_soup",
 			"minecraft:food": {
 				"nutrition": 5,
 				"saturation_modifier": 1,

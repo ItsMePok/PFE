@@ -23,7 +23,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": "poke_void_boots",
+			"minecraft:icon": "poke_pfe_void_boots",
 			"minecraft:wearable": {
 				"slot": "slot.armor.feet",
 				"protection": 11

@@ -11,7 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.grim_gem\n%poke_pfe.tag"
 			},
-			"minecraft:icon": "poke_grim_gem"
+			"minecraft:icon": "poke_pfe_grim_gem"
 		}
 	}
 }

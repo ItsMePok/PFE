@@ -21,7 +21,7 @@
 					}
 				]
 			},
-			"minecraft:icon": "poke_rain_ring",
+			"minecraft:icon": "poke_pfe_rain_ring",
 			"minecraft:cooldown": {
 				"duration": 10,
 				"category": "poke:ring_1"

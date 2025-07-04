@@ -38,7 +38,7 @@
 				"controller.render.poke_pfe.zombken"
 			],
 			"spawn_egg": {
-				"texture": "poke_zombken_spawn_egg"
+				"texture": "poke_pfe_zombken_spawn_egg"
 			}
 		}
 	}

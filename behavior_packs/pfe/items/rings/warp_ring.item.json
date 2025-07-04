@@ -22,7 +22,7 @@
 					}
 				]
 			},
-			"minecraft:icon": "poke_warp_ring",
+			"minecraft:icon": "poke_pfe_warp_ring",
 			"minecraft:cooldown": {
 				"duration": 10,
 				"category": "poke:ring_3"

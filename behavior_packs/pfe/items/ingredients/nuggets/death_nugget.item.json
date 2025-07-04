@@ -13,7 +13,7 @@
 			},
 			"minecraft:icon": {
 				"textures": {
-					"default": "poke_death_nugget"
+					"default": "poke_pfe_death_nugget"
 				}
 			}
 		}

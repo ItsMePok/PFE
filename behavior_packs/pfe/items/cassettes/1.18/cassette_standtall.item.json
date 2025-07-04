@@ -8,7 +8,7 @@
       "minecraft:display_name": {
         "value": "%poke_pfe.cassette\n§7Lena Raine - %poke_pfe.standtall\n%poke_pfe.tag"
       },
-      "minecraft:icon": "poke_cassette_standtall",
+      "minecraft:icon": "poke_pfe_cassette_standtall",
       "poke_pfe:play_music": {
         "music": "poke_pfe.music.standtall"
       },

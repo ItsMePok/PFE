@@ -24,8 +24,8 @@
 			},
 			"minecraft:icon": {
 				"textures": {
-					"default": "poke_demonic_pickaxe",
-					"dyed": "poke_demonic_pickaxe"
+					"default": "poke_pfe_demonic_pickaxe",
+					"dyed": "poke_pfe_demonic_pickaxe"
 				}
 			},
 			"minecraft:dyeable": {

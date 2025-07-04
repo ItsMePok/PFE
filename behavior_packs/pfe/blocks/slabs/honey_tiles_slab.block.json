@@ -40,7 +40,7 @@
 					},
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "poke_honey_tiles"
+							"texture": "poke_pfe_honey_tiles"
 						}
 					},
 					"minecraft:geometry": {
@@ -81,7 +81,7 @@
 					},
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "poke_honey_tiles"
+							"texture": "poke_pfe_honey_tiles"
 						}
 					},
 					"minecraft:geometry": {
@@ -136,7 +136,7 @@
 					},
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "poke_honey_tiles"
+							"texture": "poke_pfe_honey_tiles"
 						}
 					},
 					"minecraft:geometry": {
@@ -170,7 +170,7 @@
 				"explosion_resistance": 20
 			},
 			"minecraft:destruction_particles": {
-				"texture": "poke_honey_tiles"
+				"texture": "poke_pfe_honey_tiles"
 			},
 			"minecraft:map_color": "#d87800",
 			"tag:pfe": {},

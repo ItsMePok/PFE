@@ -8,7 +8,7 @@
       "minecraft:display_name": {
         "value": "%poke_pfe.cassette\n§7Kumi Tanioka - %poke_pfe.comfortingmemories\n%poke_pfe.tag"
       },
-      "minecraft:icon": "poke_cassette_comfortingmemories",
+      "minecraft:icon": "poke_pfe_cassette_comfortingmemories",
       "poke_pfe:play_music": {
         "music": "poke_pfe.music.comfortingmemories"
       },

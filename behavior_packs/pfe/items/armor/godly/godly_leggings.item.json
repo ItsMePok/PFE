@@ -23,7 +23,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": "poke_godly_leggings",
+			"minecraft:icon": "poke_pfe_godly_leggings",
 			"minecraft:wearable": {
 				"slot": "slot.armor.legs",
 				"protection": 11

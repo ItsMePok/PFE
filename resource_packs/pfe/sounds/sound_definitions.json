@@ -1,6 +1,16 @@
 {
 	"format_version": "1.21.90",
 	"sound_definitions": {
+		"poke_pfe.disc.lava_chicken": {
+			"category": "ui",
+			"max_distance": 256,
+			"sounds": [
+				{
+					"name": "sounds/music/game/records/lava_chicken",
+					"stream": true
+				}
+			]
+		},
 		"poke_pfe.music.below_and_above": {
 			"category": "ui",
 			"max_distance": 64,

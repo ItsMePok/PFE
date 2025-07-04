@@ -12,7 +12,7 @@
 				"value": "%poke_pfe.galaxy_arrow\n%poke_pfe.tag"
 			},
 			"minecraft:max_stack_size": 64,
-			"minecraft:icon": "poke_galaxy_arrow",
+			"minecraft:icon": "poke_pfe_galaxy_arrow",
 			"minecraft:projectile": {
 				"projectile_entity": "poke:galaxy_arrow",
 				"minimum_critical_power": 0.5

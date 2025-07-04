@@ -23,7 +23,7 @@
 				]
 			},
 			"minecraft:max_stack_size": 1,
-			"minecraft:icon": "poke_resist_ring",
+			"minecraft:icon": "poke_pfe_resist_ring",
 			"minecraft:cooldown": {
 				"category": "poke.resist_ring",
 				"duration": 5

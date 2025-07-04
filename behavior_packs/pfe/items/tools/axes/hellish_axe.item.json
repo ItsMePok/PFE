@@ -24,8 +24,8 @@
 			},
 			"minecraft:icon": {
 				"textures": {
-					"default": "poke_hellish_axe",
-					"dyed": "poke_hellish_axe"
+					"default": "poke_pfe_hellish_axe",
+					"dyed": "poke_pfe_hellish_axe"
 				}
 			},
 			"minecraft:dyeable": {

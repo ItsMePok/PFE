@@ -40,14 +40,14 @@
 			"minecraft:geometry": "geometry.poke_pfe.carved_melon",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "poke_charred_melon_side"
+					"texture": "poke_pfe_charred_melon_side"
 				},
 				"up": {
-					"texture": "poke_charred_melon_top"
+					"texture": "poke_pfe_charred_melon_top"
 				},
 				"down": "up",
 				"north": {
-					"texture": "poke_charred_melon_face"
+					"texture": "poke_pfe_charred_melon_face"
 				}
 			}
 		},

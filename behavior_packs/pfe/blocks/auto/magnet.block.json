@@ -76,7 +76,7 @@
 			},
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "poke_magnet_block",
+					"texture": "poke_pfe_magnet_block",
 					"render_method": "opaque"
 				}
 			},

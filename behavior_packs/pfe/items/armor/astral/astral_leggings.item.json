@@ -25,7 +25,7 @@
 			},
 			"minecraft:icon": {
 				"textures": {
-					"default": "poke_astral_leggings"
+					"default": "poke_pfe_astral_leggings"
 				}
 			},
 			"minecraft:wearable": {

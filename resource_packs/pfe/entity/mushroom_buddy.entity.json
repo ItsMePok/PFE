@@ -44,7 +44,7 @@
 				"controller.render.poke_pfe.mushroom.buddy"
 			],
 			"spawn_egg": {
-				"texture": "poke_mushroom_buddy_spawn_egg"
+				"texture": "poke_pfe_mushroom_buddy_spawn_egg"
 			}
 		}
 	}

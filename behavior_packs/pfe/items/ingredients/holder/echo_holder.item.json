@@ -12,7 +12,7 @@
 				"value": "%poke_pfe.echo_holder\n%poke_pfe.tag"
 			},
 			"minecraft:rarity": "uncommon",
-			"minecraft:icon": "poke_echo_holder"
+			"minecraft:icon": "poke_pfe_echo_holder"
 		}
 	}
 }

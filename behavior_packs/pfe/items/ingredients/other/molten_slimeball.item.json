@@ -11,7 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.molten_slimeball\n%poke_pfe.tag"
 			},
-			"minecraft:icon": "poke_molten_slimeball",
+			"minecraft:icon": "poke_pfe_molten_slimeball",
 			"minecraft:fuel": {
 				"duration": 4000
 			}

@@ -35,7 +35,7 @@
 			},
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "poke_red_mushroom_crate",
+					"texture": "poke_pfe_red_mushroom_crate",
 					"render_method": "opaque"
 				}
 			},

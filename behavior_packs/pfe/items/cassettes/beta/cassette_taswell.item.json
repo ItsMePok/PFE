@@ -8,7 +8,7 @@
       "minecraft:display_name": {
         "value": "%poke_pfe.cassette\n§7C418 - %poke_pfe.taswell\n%poke_pfe.tag"
       },
-      "minecraft:icon": "poke_cassette_taswell",
+      "minecraft:icon": "poke_pfe_cassette_taswell",
       "poke_pfe:play_music": {
         "music": "poke_pfe.music.taswell"
       },
