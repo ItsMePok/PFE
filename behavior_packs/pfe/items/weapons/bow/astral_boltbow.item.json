@@ -11,6 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.astral_boltbow\n§7%poke_pfe.crouchInteract\n%poke_pfe.tag"
 			},
+			"poke_pfe:icon_path": "textures/poke/pfe/astral_boltbow_item",
 			"minecraft:rarity": "common",
 			"minecraft:icon": "poke_pfe_astral_boltbow",
 			"minecraft:can_destroy_in_creative": {

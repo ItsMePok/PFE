@@ -11,6 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.gift_box\n%poke_pfe.tag"
 			},
+			"poke_pfe:icon_path": "textures/poke/pfe/gift_box",
 			"minecraft:icon": {
 				"textures": {
 					"default": "pfe-gift_box",

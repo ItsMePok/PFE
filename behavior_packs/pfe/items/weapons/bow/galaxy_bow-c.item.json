@@ -11,6 +11,15 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.galaxy_bow\n%poke_pfe.tag" // Name of the item || translation strings cannot have certain characters in them
 			},
+			"poke_pfe:upgradeable": {
+				"dynamic_property": "pfe:upgrades",
+				"sneak_interact_opens_ui": false,
+				"upgrade_ids": [
+					"pfe:persistence"
+				],
+				"version": 1
+			},
+			"poke_pfe:icon_path": "textures/poke/pfe/galaxy_bow", // Icon path that is used in some script UI menus
 			"minecraft:repairable": { //Makes the item repairable in the anvil
 				"repair_items": [ //Items that can repair the Galaxy BurstBow
 					{

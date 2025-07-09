@@ -11,6 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.boss_event_bounty\n%poke_pfe.tag"
 			},
+			"poke_pfe:icon_path": "textures/poke/pfe/bounty",
 			"minecraft:icon": "poke_pfe_boss_event",
 			"poke:boss_event": {}
 		}

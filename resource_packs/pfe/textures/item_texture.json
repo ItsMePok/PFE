@@ -298,7 +298,7 @@
 			"textures": "textures/poke/pfe/demonic_slasher"
 		},
 		"poke_pfe_holy_bow": {
-			"textures": "textures/poke/pfe/holy_bow_standby"
+			"textures": "textures/poke/pfe/holy_bow"
 		},
 		"poke_pfe_galaxy_bow": {
 			"textures": "textures/poke/pfe/galaxy_bow"

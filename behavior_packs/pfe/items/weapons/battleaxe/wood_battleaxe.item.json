@@ -11,6 +11,15 @@
       "minecraft:display_name": {
         "value": "%poke_pfe.wood_battleaxe\n%poke_pfe.tag"
       },
+      "poke_pfe:upgradeable": {
+        "dynamic_property": "pfe:upgrades",
+        "sneak_interact_opens_ui": false,
+        "upgrade_ids": [
+          "pfe:persistence"
+        ],
+        "version": 1
+      },
+      "poke_pfe:icon_path": "textures/poke/pfe/wood_battleaxe",
       "minecraft:digger": {
         "destroy_speeds": [
           {

@@ -11,6 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.rotten_chicken\n%poke_pfe.tag"
 			},
+			"poke_pfe:icon_path": "textures/poke/pfe/rotten_chicken",
 			"poke:consumeEffects": {},
 			"minecraft:food": {
 				"nutrition": 1,

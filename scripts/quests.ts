@@ -120,7 +120,7 @@ function QuestInfoUI(item: ItemStack, player: Player) {
   if (!item) return
   let UI = new ActionFormData()
   let quest: PFEv2QuestInfo = JSON.parse(item.getDynamicProperty(PFEQuestPropertyID)!.toString()) ?? console.warn(`Quest not found or failed to parse || poke_pfe:quest`)
-  let validRequiredItems = PokeGetItemFromInventory(player, undefined, quest.item) ?? false
+  let validRequiredItems = <ItemStack[] | undefined>PokeGetItemFromInventory(player, undefined, quest.item) ?? false
   let totalItems = 0
   let canComplete = false
   UI.title({ translate: `translation.poke_pfe.quest_info` })

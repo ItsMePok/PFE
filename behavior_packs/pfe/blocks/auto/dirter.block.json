@@ -2,25 +2,24 @@
 	"format_version": "1.21.90",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:dirter",
+			"identifier": "poke_pfe:dirter",
 			"menu_category": {
-				"category": "none"
+				"category": "items"
 			},
 			"states": {
 				"pfe:active": [
 					0,
 					1
 				]
-			}
-		},
-		"permutations": [
-			{
-				"condition": "q.block_state('pfe:active') == 1",
-				"components": {
-					"minecraft:light_emission": 5
+			},
+			"traits": {
+				"minecraft:placement_position": {
+					"enabled_states": [
+						"minecraft:block_face"
+					]
 				}
 			}
-		],
+		},
 		"components": {
 			"minecraft:display_name": "%poke_pfe.dirter\n%poke_pfe.tag",
 			"minecraft:redstone_conductivity": {
@@ -41,55 +40,269 @@
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 30
 			},
-			"minecraft:material_instances": {
-				"north": {
-					"render_method": "opaque",
-					"texture": "poke_pfe_automation_gear"
-				},
-				"east": {
-					"render_method": "opaque",
-					"texture": "poke_pfe_automation_dirt"
-				},
-				"south": {
-					"render_method": "opaque",
-					"texture": "poke_pfe_automation_face"
-				},
-				"west": {
-					"render_method": "opaque",
-					"texture": "poke_pfe_automation_dirt"
-				},
-				"down": {
-					"render_method": "opaque",
-					"texture": "poke_pfe_automation_bottom"
-				},
-				"up": {
-					"render_method": "opaque",
-					"texture": "poke_pfe_automation_arrow"
-				}
-			},
-			"minecraft:transformation": {
-				"rotation": [
-					0,
-					0,
-					0
-				]
-			},
-			"minecraft:geometry": {
-				"identifier": "geometry.poke_pfe.block",
-				"culling": "poke_pfe:block.culling"
-			},
 			"tag:pfe": {},
 			"tag:minecraft:is_axe_item_destructible": {},
 			"tag:minecraft:is_pickaxe_item_destructible": {},
-			"minecraft:map_color": "#2e2f31",
+			"minecraft:map_color": "#22222f",
 			"minecraft:tick": {
 				"interval_range": [
-					10,
-					10
+					40,
+					40
 				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('pfe:active') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"north": {
+							"render_method": "opaque",
+							"texture": "poke_pfe_automation_face"
+						},
+						"east": {
+							"render_method": "opaque",
+							"texture": "poke_pfe_automation_dirt"
+						},
+						"south": {
+							"render_method": "opaque",
+							"texture": "poke_pfe_automation_bottom"
+						},
+						"west": "east",
+						"up": {
+							"render_method": "opaque",
+							"texture": "poke_pfe_animated_automation_gear"
+						},
+						"down": {
+							"render_method": "opaque",
+							"texture": "poke_pfe_automation_gear"
+						}
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.poke_pfe.block_breaker",
+						"culling": "poke_pfe:block.culling"
+					},
+					"minecraft:light_emission": 5
+				}
 			},
-			"poke:cc_dirter": {},
-			"poke:cc_calibrate": {}
-		}
+			{
+				"condition": "q.block_state('pfe:active') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"north": {
+							"render_method": "opaque",
+							"texture": "poke_pfe_automation_face"
+						},
+						"east": {
+							"render_method": "opaque",
+							"texture": "poke_pfe_automation_dirt"
+						},
+						"south": {
+							"render_method": "opaque",
+							"texture": "poke_pfe_automation_bottom"
+						},
+						"west": "east",
+						"up": {
+							"render_method": "opaque",
+							"texture": "poke_pfe_automation_gear"
+						},
+						"down": {
+							"render_method": "opaque",
+							"texture": "poke_pfe_automation_gear"
+						}
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.poke_pfe.block_breaker",
+						"culling": "poke_pfe:block.culling"
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:block_face') == 'up'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							90,
+							0,
+							0
+						]
+					},
+					"poke_pfe:change_state": {
+						"face": "all",
+						"sound": {
+							"identifier": "poke_pfe.calibrate"
+						}
+					},
+					"poke_pfe:place_blocks": {
+						"places": "minecraft:dirt",
+						"targets": [
+							"Up"
+						],
+						"can_replace": [
+							"minecraft:cobblestone",
+							"poke:cobbled_limestone",
+							"poke:cobbled_shadowstone",
+							"minecraft:blackstone",
+							"minecraft:cobbled_deepslate"
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:block_face') == 'down'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							-90,
+							0,
+							0
+						]
+					},
+					"poke_pfe:change_state": {
+						"face": "all",
+						"sound": {
+							"identifier": "poke_pfe.calibrate"
+						}
+					},
+					"poke_pfe:place_blocks": {
+						"places": "minecraft:dirt",
+						"targets": [
+							"Down"
+						],
+						"can_replace": [
+							"minecraft:cobblestone",
+							"poke:cobbled_limestone",
+							"poke:cobbled_shadowstone",
+							"minecraft:blackstone",
+							"minecraft:cobbled_deepslate"
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:block_face') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					},
+					"poke_pfe:change_state": {
+						"face": "all",
+						"sound": {
+							"identifier": "poke_pfe.calibrate"
+						}
+					},
+					"poke_pfe:place_blocks": {
+						"places": "minecraft:dirt",
+						"targets": [
+							"North"
+						],
+						"can_replace": [
+							"minecraft:cobblestone",
+							"poke:cobbled_limestone",
+							"poke:cobbled_shadowstone",
+							"minecraft:blackstone",
+							"minecraft:cobbled_deepslate"
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:block_face') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-90,
+							0
+						]
+					},
+					"poke_pfe:change_state": {
+						"face": "all",
+						"sound": {
+							"identifier": "poke_pfe.calibrate"
+						}
+					},
+					"poke_pfe:place_blocks": {
+						"places": "minecraft:dirt",
+						"targets": [
+							"East"
+						],
+						"can_replace": [
+							"minecraft:cobblestone",
+							"poke:cobbled_limestone",
+							"poke:cobbled_shadowstone",
+							"minecraft:blackstone",
+							"minecraft:cobbled_deepslate"
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:block_face') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-180,
+							0
+						]
+					},
+					"poke_pfe:change_state": {
+						"face": "all",
+						"sound": {
+							"identifier": "poke_pfe.calibrate"
+						}
+					},
+					"poke_pfe:place_blocks": {
+						"places": "minecraft:dirt",
+						"targets": [
+							"South"
+						],
+						"can_replace": [
+							"minecraft:cobblestone",
+							"poke:cobbled_limestone",
+							"poke:cobbled_shadowstone",
+							"minecraft:blackstone",
+							"minecraft:cobbled_deepslate"
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:block_face') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					},
+					"poke_pfe:change_state": {
+						"face": "all",
+						"sound": {
+							"identifier": "poke_pfe.calibrate"
+						}
+					},
+					"poke_pfe:place_blocks": {
+						"places": "minecraft:dirt",
+						"targets": [
+							"West"
+						],
+						"can_replace": [
+							"minecraft:cobblestone",
+							"poke:cobbled_limestone",
+							"poke:cobbled_shadowstone",
+							"minecraft:blackstone",
+							"minecraft:cobbled_deepslate"
+						]
+					}
+				}
+			}
+		]
 	}
 }

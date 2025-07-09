@@ -8,7 +8,7 @@
         "enchanted": "entity_alphatest_glint"
       },
       "textures": {
-        "default": "textures/poke/pfe/holy_bow_standby",
+        "default": "textures/poke/pfe/holy_bow",
         "bow_pulling_0": "textures/poke/pfe/holy_bow0",
         "bow_pulling_1": "textures/poke/pfe/holy_bow1",
         "bow_pulling_2": "textures/poke/pfe/holy_bow2",

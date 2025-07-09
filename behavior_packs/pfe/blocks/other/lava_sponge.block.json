@@ -9,7 +9,6 @@
 		},
 		"components": {
 			"minecraft:display_name": "%poke_pfe.lava_sponge\n%poke_pfe.tag",
-			"poke_pfe:icon_path": "textures/poke/pfe/lava_sponge",
 			"poke_pfe:sponge_block": {
 				"adds_to_stat": "lava_sponged",
 				"check_for_blocks": [

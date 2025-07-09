@@ -18,11 +18,11 @@
 			"minecraft:display_name": "%poke_pfe.gilded_melon\n%poke_pfe.tag",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "poke_gilded_melon_side",
+					"texture": "poke_pfe_gilded_melon_side",
 					"render_method": "opaque"
 				},
 				"up": {
-					"texture": "poke_gilded_melon_top",
+					"texture": "poke_pfe_gilded_melon_top",
 					"render_method": "opaque"
 				},
 				"down": "up"

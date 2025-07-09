@@ -11,6 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.hellish_arrow\n%poke_pfe.tag"
 			},
+			"poke_pfe:icon_path": "textures/poke/pfe/hellish_arrow_item",
 			"minecraft:max_stack_size": 64,
 			"minecraft:icon": "poke_pfe_hellish_arrow",
 			"minecraft:projectile": {

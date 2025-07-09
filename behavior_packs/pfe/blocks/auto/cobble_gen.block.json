@@ -25,19 +25,19 @@
 			"minecraft:display_name": "%poke_pfe.cobble_gen\n%poke_pfe.tag",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "poke_cobbler",
+					"texture": "poke_pfe_cobbler",
 					"render_method": "opaque"
 				},
 				"up": {
-					"texture": "poke_cobbler_top",
+					"texture": "poke_pfe_cobbler_top",
 					"render_method": "opaque"
 				},
 				"down": {
-					"texture": "poke_cobbler_bottom",
+					"texture": "poke_pfe_cobbler_bottom",
 					"render_method": "opaque"
 				},
 				"east": {
-					"texture": "poke_cobbler_flip",
+					"texture": "poke_pfe_cobbler_flip",
 					"render_method": "opaque"
 				},
 				"west": "east"
@@ -60,7 +60,7 @@
 			"tag:minecraft:metal": {},
 			"tag:stone_pick_diggable": {},
 			"tag:minecraft:is_pickaxe_item_destructible": {},
-			"minecraft:map_color": "#353536",
+			"minecraft:map_color": "#22222f",
 			"minecraft:tick": {
 				"interval_range": [
 					20,

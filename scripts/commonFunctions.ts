@@ -142,24 +142,24 @@ function PokeErrorScreen(player: Player, error?: RawMessage, backTo?: any) {
  * 
  * You can define a slot number to target only that slot
  */
-function PokeGetItemFromInventory(entity: Entity, slot?: number, itemId?: string) {
+function PokeGetItemFromInventory(entity: Entity, slot?: number, itemId?: string, returnSlots?: boolean) {
   let inventoryComponent = entity.getComponent(EntityComponentTypes.Inventory)
   if (inventoryComponent) {
-    let returningItems: ItemStack[] = []
+    let returningItems: ({ item: ItemStack, number: number } | ItemStack)[] = []
     if (slot) {
       let slottedItem = inventoryComponent.container?.getItem(slot)
       if (!slottedItem || slottedItem.lockMode != ItemLockMode.none) return undefined
       if (itemId) {
-        if (slottedItem.typeId == itemId) return [slottedItem];
+        if (slottedItem.typeId == itemId) return returnSlots ? [{ item: slottedItem, number: slot }] : [<ItemStack>slottedItem];
         else return undefined
       }
-      else return [slottedItem]
+      else return returnSlots ? [{ item: slottedItem, number: slot }] : [slottedItem]
     }
     for (let i = inventoryComponent.inventorySize - 1; i > -1; i--) {
       let slottedItem = inventoryComponent.container?.getItem(i)
-      if (!slottedItem || slottedItem.lockMode != ItemLockMode.none) continue
+      if (!slottedItem || slottedItem.lockMode != ItemLockMode.none) continue;
       if (!itemId || slottedItem.typeId == itemId) {
-        returningItems = returningItems.concat([slottedItem])
+        returningItems = returningItems.concat(returnSlots ? [{ item: slottedItem, number: i }] : [slottedItem])
         continue
       }
     }
@@ -214,17 +214,23 @@ function PokeGetObjectById(array: any[], id: string | number) {
  * 
  * returns false if it fails to save the property
  */
-function PokeSaveProperty(propertyId: string, item: ItemStack, save: string | boolean | number | Vector3, entity: Entity, slot?: EquipmentSlot) {
+function PokeSaveProperty(propertyId: string, item: ItemStack, save: string | boolean | number | Vector3, entity: Entity, slot?: EquipmentSlot | number) {
   //console.warn(`saved as ${save}`)
   item.setDynamicProperty(propertyId, save)
-  if (!slot) slot = EquipmentSlot.Mainhand
   let equippableComponent = entity.getComponent(EntityComponentTypes.Equippable)
-  if (equippableComponent?.getEquipmentSlot(slot).typeId == item.typeId) {
-    equippableComponent.setEquipment(slot, item);
-    return true
+  if (typeof slot == "number") {
+    const slottedItem = entity.getComponent(EntityComponentTypes.Inventory)?.container.getSlot(slot)
+    slottedItem?.setItem(item)
   } else {
-    return false
+    if (!slot) slot = EquipmentSlot.Mainhand
+    if (equippableComponent?.getEquipmentSlot(slot).typeId == item.typeId) {
+      equippableComponent.setEquipment(slot, item);
+      return true
+    } else {
+      return false
+    }
   }
+
 }
 
 /**

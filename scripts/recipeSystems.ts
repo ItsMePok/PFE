@@ -7,11 +7,12 @@
 [] Import Custom Recipes
  */
 
-import { Block, BlockComponentPlayerInteractEvent, BlockTypes, CustomComponentParameters, ItemComponent, ItemComponentUseEvent, ItemStack, Player } from "@minecraft/server";
+import { Block, BlockComponentPlayerInteractEvent, BlockPermutation, BlockType, BlockTypes, CustomComponentParameters, Entity, EntityComponentTypes, ItemComponent, ItemComponentUseEvent, ItemStack, Player } from "@minecraft/server";
 import { ActionFormData, ModalFormData } from "@minecraft/server-ui";
 import { pokeAddItemsToPlayerOrDrop, PokeGetItemFromInventory } from "./commonFunctions";
 import { clampNumber } from "@minecraft/math";
 import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
+import { ParsePFEUpgradeComponent, PFEUpgradeableComponentInfo, PFEUpgradeableId, PokeUpgradeUI } from "./upgrades";
 export {
   RecipeBlockComponent,
   RecipeItemComponent
@@ -19,6 +20,7 @@ export {
 interface RecipeBlockComponentInfo {
   id: string
   can_store_items: boolean | false
+  can_show_item_upgrades: boolean | false
   storage_capacity_limit: number | 64
   name: string // Translation string
   debug_mode: boolean | false
@@ -26,7 +28,7 @@ interface RecipeBlockComponentInfo {
 interface CustomRecipes {// "poke_pfe:custom_recipes"
   items: string[] // ex: 2:poke:radium_ingot (amount:identifier) 
   result: string[] // ex: 2:poke:radium_ingot (amount:identifier) 
-  recipe_type: "shapeless"
+  recipe_type: "shapeless" | "upgrade"
 }
 class RecipeBlockComponent {
   onPlayerInteract(data: BlockComponentPlayerInteractEvent, componentInfo: CustomComponentParameters) {
@@ -67,6 +69,9 @@ function PFERecipeBlockMainMenu(component: RecipeBlockComponentInfo, player: Pla
   if (component.can_store_items) {
     UI.button({ translate: `%poke_pfe.storedItems\n[${storedItems.length}/${component.storage_capacity_limit}]` }, `textures/poke/common/chest_open`)
   }
+  if (component.can_show_item_upgrades) {
+    UI.button({ translate: `%poke_pfe.upgrade` }, `textures/poke/common/upgrade`)
+  }
   if (customRecipeComponent) {
     UI.button({ translate: `%poke_pfe.recipes\n[${customRecipeComponent.length}]` }, `textures/poke/common/upgrade`)
   }
@@ -79,6 +84,12 @@ function PFERecipeBlockMainMenu(component: RecipeBlockComponentInfo, player: Pla
     if (component.can_store_items) {
       if (response.selection == selection) {
         ViewStoredItems(component, player, storedItems, block)
+        return
+      } else selection++
+    }
+    if (component.can_show_item_upgrades) {
+      if (response.selection == selection) {
+        ViewUpgradeableItems(component, player, block);
         return
       } else selection++
     }
@@ -95,6 +106,38 @@ function PFERecipeBlockMainMenu(component: RecipeBlockComponentInfo, player: Pla
       } else selection++
     }
     if (response.canceled || response.selection == selection) return;
+  })
+}
+function ViewUpgradeableItems(component: RecipeBlockComponentInfo, player: Player, block: Block | ItemStack) {
+  const UI = new ActionFormData()
+  UI.title({ translate: component.name })
+  let validItems = <{ item: ItemStack, number: number }[]>[]
+  for (const item of <{ item: ItemStack, number: number }[] | undefined>PokeGetItemFromInventory(player, undefined, undefined, true) ?? []) {
+    const upgradeableComponent = <PFEUpgradeableComponentInfo | undefined>item.item.getComponent(PFEUpgradeableId)?.customComponentParameters.params
+    if (!upgradeableComponent) continue;
+    UI.button({ translate: MakeLocalizationKey(item.item.typeId) }, getTexturePathByIdentifier(item.item.typeId ?? "undefined"))
+    validItems.push(item)
+  }
+  if (validItems.length == 0) {
+    UI.label({ translate: "%poke_pfe.noUpgradeableItems" })
+  }
+  UI.button({ translate: `translation.poke_pfe.GoBack` }, 'textures/poke/common/left_arrow')
+  UI.show(player).then(response => {
+    let selection = 0
+    for (const item of validItems) {
+      if (response.selection == selection) {
+        const ItemStack = item.item
+        if (!ItemStack) { PFERecipeBlockMainMenu(component, player, block); return };
+        const upgradeableComponent = <PFEUpgradeableComponentInfo>ItemStack.getComponent(PFEUpgradeableId)?.customComponentParameters.params
+
+        PokeUpgradeUI(player, ItemStack, ParsePFEUpgradeComponent(ItemStack, player, upgradeableComponent), true, upgradeableComponent, item.number)
+        return;
+      } else selection++
+    }
+    if (response.canceled || response.selection == selection) {
+      PFERecipeBlockMainMenu(component, player, block)
+      return
+    }
   })
 }
 function Debug(component: RecipeBlockComponentInfo, player: Player, block: Block | ItemStack, storedItems: StoredItemsInfo[]) {
@@ -171,7 +214,7 @@ function ViewRecipeInfo(component: RecipeBlockComponentInfo, player: Player, rec
       }
     }
     if (item.amount > itemTotal) {
-      const inventoryItems = PokeGetItemFromInventory(player, undefined, item.item)
+      const inventoryItems = <ItemStack[] | undefined>PokeGetItemFromInventory(player, undefined, item.item)
       if (inventoryItems) {
         for (const inventoryItem of inventoryItems) {
           itemTotal += inventoryItem.amount
@@ -274,7 +317,7 @@ function AddItem(component: RecipeBlockComponentInfo, player: Player, storedItem
   const UI = new ActionFormData()
   UI.title({ translate: component.name })
   UI.label({ translate: `%poke_pfe.deposit.warning` })
-  const allItems = PokeGetItemFromInventory(player) ?? []
+  const allItems = <ItemStack[] | undefined>PokeGetItemFromInventory(player) ?? []
   for (const item of allItems) {
     UI.button({ translate: MakeLocalizationKey(item.typeId) }, getTexturePathByIdentifier(item))
   }
@@ -311,7 +354,7 @@ function AddItem(component: RecipeBlockComponentInfo, player: Player, storedItem
 function ViewItem(component: RecipeBlockComponentInfo, player: Player, item: StoredItemsInfo, storedItems: StoredItemsInfo[], block: Block | ItemStack) {
   const UI = new ActionFormData()
   UI.title({ translate: component.name })
-  const ItemsInInventory = PokeGetItemFromInventory(player, undefined, item.i)
+  const ItemsInInventory = <ItemStack[] | undefined>PokeGetItemFromInventory(player, undefined, item.i)
   let CanDepositAmount: number | undefined = 0
   if (ItemsInInventory) {
     for (const itemStack of ItemsInInventory) {
@@ -410,7 +453,7 @@ This will return a texture path based on the identifier
 
 If an icon path is not found it will return "textures/poke/common/question"
 */
-function getTexturePathByIdentifier(item: ItemStack | Block | string) {
+function getTexturePathByIdentifier(item: ItemStack | string) {
   if (typeof item == "string") {
     item = new ItemStack(item, 1)
   }

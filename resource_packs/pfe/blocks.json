@@ -821,7 +821,7 @@
   "poke:barometer": {
     "sound": "wood"
   },
-  "poke:dirter": {
+  "poke_pfe:dirter": {
     "sound": "wood"
   },
   "poke:dirter_north": {
@@ -842,7 +842,7 @@
   "poke:dirter_down": {
     "sound": "wood"
   },
-  "poke:duster": {
+  "poke_pfe:duster": {
     "sound": "wood"
   },
   "poke:duster_north": {

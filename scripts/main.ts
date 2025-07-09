@@ -1,4 +1,4 @@
-import { system, world, EquipmentSlot, GameMode, EntityComponentTypes, ItemComponentTypes, ItemStack, Player, Direction, RawMessage, EntityQueryOptions, Block, ItemType, InputButton, ButtonState, BlockVolumeBase, BlockVolume, Vector3, BlockPermutation, BlockStateType, BlockStateArg } from "@minecraft/server";
+import { system, world, EquipmentSlot, GameMode, EntityComponentTypes, ItemComponentTypes, ItemStack, Player, Direction, RawMessage, EntityQueryOptions, Block, ItemType, InputButton, ButtonState, BlockVolumeBase, BlockVolume, Vector3, BlockPermutation, BlockStateType, BlockStateArg, LiquidType } from "@minecraft/server";
 import { BlockStateSuperset, MinecraftBlockTypes, MinecraftDimensionTypes, MinecraftEffectTypes, MinecraftEnchantmentTypes, MinecraftEntityTypes, MinecraftItemTypes, RedMushroomBlockStates } from "@minecraft/vanilla-data";
 import { PFEBossEventConfig, PFEBossEventConfigName, PFEBossEventTicks, PFEBossEventUIMainMenu, PFEDefaultBossEventSettings, PFEStartBossEvent, startBossEvents } from "./bossEvents";
 import { PFEBoxMiningComponent } from "./boxMining";
@@ -725,154 +725,6 @@ system.beforeEvents.startup.subscribe(data => {
     }
     );
     data.blockComponentRegistry.registerCustomComponent(
-        "poke:cc_dirter", {
-        onTick(data, component) {
-            const ActiveState = <keyof BlockStateSuperset>'pfe:active'
-            if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
-                data.block.setPermutation(data.block.permutation.withState(ActiveState, 1))
-                switch (data.block.typeId) {
-                    case 'poke:dirter_east': {
-                        if (data.block.east()?.typeId == 'minecraft:cobblestone') {
-                            data.block.east()?.setType('minecraft:dirt')
-                            break;
-                        }
-                    }
-                    case 'poke:dirter_west': {
-                        if (data.block.west()?.typeId == 'minecraft:cobblestone') {
-                            data.block.west()?.setType('minecraft:dirt')
-                            break;
-                        }
-                    }
-                    case 'poke:dirter_south': {
-                        if (data.block.south()?.typeId == 'minecraft:cobblestone') {
-                            data.block.south()?.setType('minecraft:dirt')
-                            break;
-                        }
-                    }
-                    case 'poke:dirter_north': {
-                        if (data.block.north()?.typeId == 'minecraft:cobblestone') {
-                            data.block.north()?.setType('minecraft:dirt')
-                            break;
-                        }
-                    }
-                    case 'poke:dirter_up': {
-                        if (data.block.above()?.typeId == 'minecraft:cobblestone') {
-                            data.block.above()?.setType('minecraft:dirt')
-                            break;
-                        }
-                    }
-                    case 'poke:dirter_down': {
-                        if (data.block.below()?.typeId == 'minecraft:cobblestone') {
-                            data.block.below()?.setType('minecraft:dirt')
-                            break;
-                        }
-                    }
-                    case 'poke:dirter': {
-                        if (data.block.below()?.typeId == 'minecraft:cobblestone') {
-                            data.block.below()?.setType('minecraft:dirt')
-                            return;
-                        }
-                    }
-                }
-                return;
-            }
-            if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== undefined) {
-                data.block.setPermutation(data.block.permutation.withState(ActiveState, 0))
-                return;
-            }
-            return;
-        }
-    }
-    );
-    data.blockComponentRegistry.registerCustomComponent(
-        "poke:cc_duster", {
-        onTick(data, component) {
-            const ActiveState = <keyof BlockStateSuperset>'pfe:active'
-            if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
-                data.block.setPermutation(data.block.permutation.withState(ActiveState, 1))
-                switch (data.block.typeId) {
-                    case 'poke:duster_east': {
-                        if (data.block.east()?.typeId == 'minecraft:dirt') {
-                            data.block.east()?.setType('minecraft:sand')
-                            break;
-                        }
-                        if (data.block.east()?.typeId == 'minecraft:cobblestone') {
-                            data.block.east()?.setType('minecraft:gravel')
-                            break;
-                        }
-                    }
-                    case 'poke:duster_west': {
-                        if (data.block.west()?.typeId == 'minecraft:dirt') {
-                            data.block.west()?.setType('minecraft:sand')
-                            break;
-                        }
-                        if (data.block.west()?.typeId == 'minecraft:cobblestone') {
-                            data.block.west()?.setType('minecraft:gravel')
-                            break;
-                        }
-                    }
-                    case 'poke:duster_south': {
-                        if (data.block.south()?.typeId == 'minecraft:dirt') {
-                            data.block.south()?.setType('minecraft:sand')
-                            break;
-                        }
-                        if (data.block.south()?.typeId == 'minecraft:cobblestone') {
-                            data.block.south()?.setType('minecraft:gravel')
-                            break;
-                        }
-                    }
-                    case 'poke:duster_north': {
-                        if (data.block.north()?.typeId == 'minecraft:dirt') {
-                            data.block.north()?.setType('minecraft:sand')
-                            break;
-                        }
-                        if (data.block.north()?.typeId == 'minecraft:cobblestone') {
-                            data.block.north()?.setType('minecraft:gravel')
-                            break;
-                        }
-                    }
-                    case 'poke:duster_up': {
-                        if (data.block.above()?.typeId == 'minecraft:dirt') {
-                            data.block.above()?.setType('minecraft:sand')
-                            break;
-                        }
-                        if (data.block.above()?.typeId == 'minecraft:cobblestone') {
-                            data.block.above()?.setType('minecraft:gravel')
-                            break;
-                        }
-                    }
-                    case 'poke:duster_down': {
-                        if (data.block.below()?.typeId == 'minecraft:dirt') {
-                            data.block.below()?.setType('minecraft:sand')
-                            break;
-                        }
-                        if (data.block.below()?.typeId == 'minecraft:cobblestone') {
-                            data.block.below()?.setType('minecraft:gravel')
-                            break;
-                        }
-                    }
-                    case 'poke:duster': {
-                        if (data.block.below()?.typeId == 'minecraft:dirt') {
-                            data.block.below()?.setType('minecraft:sand')
-                            break;
-                        }
-                        if (data.block.below()?.typeId == 'minecraft:cobblestone') {
-                            data.block.below()?.setType('minecraft:gravel')
-                            break;
-                        }
-                    }
-                }
-                return;
-            }
-            if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== undefined) {
-                data.block.setPermutation(data.block.permutation.withState(ActiveState, 0))
-                return;
-            }
-            return;
-        }
-    }
-    );
-    data.blockComponentRegistry.registerCustomComponent(
         "poke_pfe:magnet_block", {
         onTick(data, component) {
             const ActiveState = <keyof BlockStateSuperset>'pfe:active'
@@ -887,25 +739,6 @@ system.beforeEvents.startup.subscribe(data => {
                 data.block.setPermutation(data.block.permutation.withState(ActiveState, 0))
                 return;
             }
-            return;
-        }
-    }
-    );
-    data.blockComponentRegistry.registerCustomComponent(
-        "poke:cc_calibrate", {
-        onPlayerInteract(data, component) {
-            const OldId = ['poke:duster', 'poke:dirter']
-            const bId = data.block.typeId
-            const newBlock = `${bId.substring(0, bId.lastIndexOf("_"))}_${data.face.toLowerCase()}`
-            if (newBlock == bId) return;
-            if (OldId.includes(bId)) {
-                //Converts old Dirter / Duster into the Calibrated ones
-                data.block.setType(bId + '_up')
-                return;
-            }
-            data.block.setType(newBlock)
-            data.dimension.playSound('poke_pfe.calibrate', data.block.center())
-            ComputersCompat.addStat(`blocks_calibrated`, 1)
             return;
         }
     }
@@ -1043,21 +876,21 @@ system.beforeEvents.startup.subscribe(data => {
             const AboveState = <keyof BlockStateSuperset>'poke:connected_above'
             const BelowState = <keyof BlockStateSuperset>'poke:connected_below'
             if (!NorthBlock || !SouthBlock || !EastBlock || !WestBlock) return;
-            if (!NorthBlock.isAir && !NorthBlock.isLiquid) {
+            if (!NorthBlock.isAir && !NorthBlock.isLiquid && !NorthBlock.canBeDestroyedByLiquidSpread(LiquidType.Water)) {
                 data.block.setPermutation(data.block.permutation.withState(NorthState, true));
                 if (NorthBlock.permutation.getState(SouthState) != undefined) {
                     NorthBlock.setPermutation(NorthBlock.permutation.withState(SouthState, true))
                     Post(NorthBlock, true, true)
                 }
             } else { data.block.setPermutation(data.block.permutation.withState(NorthState, false)) };
-            if (!SouthBlock.isAir && !SouthBlock.isLiquid) {
+            if (!SouthBlock.isAir && !SouthBlock.isLiquid && !SouthBlock.canBeDestroyedByLiquidSpread(LiquidType.Water)) {
                 data.block.setPermutation(data.block.permutation.withState(SouthState, true));
                 if (SouthBlock.permutation.getState(NorthState) != undefined) {
                     SouthBlock.setPermutation(SouthBlock.permutation.withState(NorthState, true))
                     Post(SouthBlock, true, true)
                 }
             } else { data.block.setPermutation(data.block.permutation.withState(SouthState, false)) };
-            if (!EastBlock.isAir && !EastBlock.isLiquid) {
+            if (!EastBlock.isAir && !EastBlock.isLiquid && !EastBlock.canBeDestroyedByLiquidSpread(LiquidType.Water)) {
                 data.block.setPermutation(data.block.permutation.withState(EastState, true));
                 if (EastBlock.permutation.getState(WestState) != undefined) {
                     EastBlock.setPermutation(EastBlock.permutation.withState(WestState, true))
@@ -1065,7 +898,7 @@ system.beforeEvents.startup.subscribe(data => {
                 }
             } else { data.block.setPermutation(data.block.permutation.withState(EastState, false)) };
 
-            if (!WestBlock.isAir && !WestBlock.isLiquid) {
+            if (!WestBlock.isAir && !WestBlock.isLiquid && !WestBlock.canBeDestroyedByLiquidSpread(LiquidType.Water)) {
                 data.block.setPermutation(data.block.permutation.withState(WestState, true));
                 if (WestBlock.permutation.getState(EastState) != undefined) {
                     WestBlock.setPermutation(WestBlock.permutation.withState(EastState, true))
@@ -1073,7 +906,7 @@ system.beforeEvents.startup.subscribe(data => {
                 }
             } else { data.block.setPermutation(data.block.permutation.withState(WestState, false)) };
             if (BelowBlock) {
-                if (!BelowBlock.isAir && !BelowBlock.isLiquid) {
+                if (!BelowBlock.isAir && !BelowBlock.isLiquid && !BelowBlock.canBeDestroyedByLiquidSpread(LiquidType.Water)) {
                     data.block.setPermutation(data.block.permutation.withState(BelowState, true));
                     if (BelowBlock.permutation.getState(AboveState) != undefined) {
                         BelowBlock.setPermutation(BelowBlock.permutation.withState(AboveState, true))
@@ -1081,7 +914,7 @@ system.beforeEvents.startup.subscribe(data => {
                 } else { data.block.setPermutation(data.block.permutation.withState(BelowState, false)) };
             }
             if (AboveBlock) {
-                if (AboveBlock && !AboveBlock.isAir && !AboveBlock.isLiquid) {
+                if (AboveBlock && !AboveBlock.isAir && !AboveBlock.isLiquid && !AboveBlock.canBeDestroyedByLiquidSpread(LiquidType.Water)) {
                     data.block.setPermutation(data.block.permutation.withState(AboveState, true));
                     if (AboveBlock.permutation.getState(BelowState) != undefined) {
                         AboveBlock.setPermutation(AboveBlock.permutation.withState(BelowState, true))
@@ -1340,8 +1173,9 @@ system.beforeEvents.startup.subscribe(data => {
         "poke_pfe:place_blocks", {
         onTick(data, componentInfo) {
             type PlaceBlocksComponent = {
-                places: string
-                targets: Direction[]
+                places: string | string[] // array ex: ["minecraft:cobblestone::minecraft:gravel"] places cannot be string[] if using can_replace
+                targets: Direction[],
+                can_replace: string[]
             }
             const component = <PlaceBlocksComponent>componentInfo.params
             const ActiveState = <keyof BlockStateSuperset>'pfe:active'
@@ -1359,14 +1193,39 @@ system.beforeEvents.startup.subscribe(data => {
                         }
                     }
                     const block = GetBlock()
-                    if (!block || !block.isAir) continue;
-                    if (component.places.includes("{")) {
-                        let places_block = component.places
-                        const permutationString = places_block.substring(places_block.indexOf("{"))
-                        places_block = places_block.substring(0, places_block.indexOf("{"))
-                        const permutations = <BlockStateArg<BlockStateSuperset>>JSON.parse(permutationString)
-                        block.setPermutation(BlockPermutation.resolve(places_block, permutations))
-                    } else block.setType(component.places);
+                    if (typeof component.places == "string") {
+                        if (!block || ((!component.can_replace) && (!block || !block.isAir)) || !component.can_replace.includes(block.typeId)) continue;
+                        if (component.places.includes("{")) {
+                            let places_block = component.places
+                            const permutationString = places_block.substring(places_block.indexOf("{"))
+                            places_block = places_block.substring(0, places_block.indexOf("{"))
+                            const permutations = <BlockStateArg<BlockStateSuperset>>JSON.parse(permutationString)
+                            block.setPermutation(BlockPermutation.resolve(places_block, permutations))
+                        } else block.setType(component.places);
+                    } else {
+                        let parsedBlocks: { places: string, replaces?: string }[] = []
+                        for (const unparsedBlock of component.places) {
+                            if (unparsedBlock.includes("::")) {
+                                const replaces = unparsedBlock.substring(unparsedBlock.indexOf("::") + 2)
+                                const places = unparsedBlock.substring(0, unparsedBlock.indexOf("::"))
+                                parsedBlocks.push({ places: places, replaces: replaces })
+                                continue
+                            }
+                            parsedBlocks.push({ places: unparsedBlock })
+                        }
+                        for (const parsedBlock of parsedBlocks) {
+                            if (block && (parsedBlock.replaces ? parsedBlock.replaces == block.typeId : ((!component.can_replace && block.isAir) || component.can_replace.includes(block.typeId)))) {
+                                if (parsedBlock.places.includes("{")) {
+                                    let places_block = parsedBlock.places
+                                    const permutationString = places_block.substring(places_block.indexOf("{"))
+                                    places_block = places_block.substring(0, places_block.indexOf("{"))
+                                    const permutations = <BlockStateArg<BlockStateSuperset>>JSON.parse(permutationString)
+                                    block.setPermutation(BlockPermutation.resolve(places_block, permutations))
+                                } else block.setType(parsedBlock.places);
+                            }
+                        }
+                    }
+
                 }
                 data.block.setPermutation(data.block.permutation.withState(ActiveState, 1))
                 return;
@@ -1742,7 +1601,6 @@ system.beforeEvents.startup.subscribe(data => {
     data.itemComponentRegistry.registerCustomComponent("poke_pfe:waypoint_menu", new PFEWaypointComponent());
     // These components exist to allow item.getComponent() to access data from applicable items/blocks
     data.blockComponentRegistry.registerCustomComponent("poke_pfe:custom_recipes", {});
-    data.blockComponentRegistry.registerCustomComponent("poke_pfe:icon_path", {});
     data.itemComponentRegistry.registerCustomComponent("poke_pfe:icon_path", {});
     data.itemComponentRegistry.registerCustomComponent("poke_pfe:set_effects", {});
     data.itemComponentRegistry.registerCustomComponent("poke_pfe:custom_upgrades", {});
