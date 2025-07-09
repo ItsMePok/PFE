@@ -10,12 +10,12 @@
     "entityTypeResourceCount": 0,
     "behaviorPackAnimationCount": 0,
     "behaviorPackAnimationControllerCount": 0,
-    "overallSize": 156587078,
-    "fileCounts": 25746,
-    "folderCounts": 2789,
-    "contentSize": 6166736,
-    "contentFileCounts": 4658,
-    "contentFolderCounts": 355,
+    "overallSize": 156624686,
+    "fileCounts": 25754,
+    "folderCounts": 2652,
+    "contentSize": 6201044,
+    "contentFileCounts": 4666,
+    "contentFolderCounts": 354,
     "subpackCount": 0,
     "subpackTier1Count": 0,
     "subpackTier2Count": 0,
@@ -63,9 +63,6 @@
     "subchunkLessChunkCount": 0,
     "worldLoadErrors": 0,
     "featureSets": {
-      "Textures Block Resource Count": {
-        "Count": 100
-      },
       "Textures Attachable Resource Count": {
         "Count": 233
       },
@@ -88,16 +85,16 @@
         "Count": 721
       },
       "Textures Terrain Texture Resource Count": {
-        "Count": 302
+        "Count": 303
       },
       "Textures File Count": {
-        "Count": 1375
+        "Count": 1378
       },
       "Textures Unique Texture Handles (estimated)": {
         "Count": 357
       },
       "Textures Unique Texture Paths": {
-        "Count": 460
+        "Count": 356
       },
       "Textures Unique Particle Texture References": {
         "Count": 25
@@ -118,10 +115,10 @@
         "Count": 241
       },
       "Textures Unique Terrain Texture References": {
-        "Count": 302
+        "Count": 303
       },
       "Textures Unique Terrain Texture Paths": {
-        "Count": 182
+        "Count": 183
       },
       "Textures Unique Item Texture Paths": {
         "Count": 720
@@ -131,12 +128,6 @@
       },
       "Textures Unique Flipbook Texture Paths": {
         "Count": 2
-      },
-      "Textures Unique Block Texture References": {
-        "Count": 100
-      },
-      "Textures Unique Block Texture Paths": {
-        "Count": 104
       },
       "Command tag": {
         "Count": 1
@@ -160,7 +151,7 @@
         "Count": 1
       }
     },
-    "errorCount": 153,
+    "errorCount": 152,
     "internalProcessingErrorCount": 0,
     "warningCount": 0,
     "testSuccessCount": 4,
@@ -169,7 +160,7 @@
     "errorSummary": "ERROR: [CADDONREQ210] (/resource_packs/pfe/textures/poke/pfe/8_ball.texture_set.json) Found a Vibrant Visuals related file, which is not supported in cooperative add-ons (for now).\r\nERROR: [CADDONREQ210] (/resource_packs/pfe/textures/poke/pfe/alloy_forge_face.texture_set.json) Found a Vibrant Visuals related file, which is not supported in cooperative add-ons (for now).\r\nERROR: [CADDONREQ210] (/resource_packs/pfe/textures/poke/pfe/alloy_forge_side.texture_set.json) Found a Vibrant Visuals related file, which is not supported in cooperative add-ons (for now).\r\nERROR: [CADDONREQ210] (/resource_packs/pfe/textures/poke/pfe/alloy_forge_top.texture_set.json) Found a Vibrant Visuals related file, which is not supported in cooperative add-ons (for now).\r\nERROR: [CADDONREQ210] (/resource_packs/pfe/textures/poke/pfe/astral_bulb.texture_set.json) Found a Vibrant Visuals related file, which is not supported in cooperative add-ons (for now).\r\nERROR: [CADDONREQ210] (/resource_packs/pfe/textures/poke/pfe/auto_animated_block_breaker_face.texture_set.json) Found a Vibrant Visuals related file, which is not supported in cooperative add-ons (for now).\r\nERROR: [CADDONREQ210] (/resource_packs/pfe/textures/poke/pfe/auto_animated_cobble_generator_face.texture_set.json) Found a Vibrant Visuals related file, which is not supported in cooperative add-ons (for now).\r\nERROR: [CADDONREQ210] (/resource_packs/pfe/textures/poke/pfe/auto_animated_gear.texture_set.json) Found a Vibrant Visuals related file, which is not supported in cooperative add-ons (for now).\r\nERROR: [CADDONREQ210] (/resource_packs/pfe/textures/poke/pfe/auto_arrow.texture_set.json) Found a Vibrant Visuals related file, which is not supported in cooperative add-ons (for now).\r\nERROR: [CADDONREQ210] (/resource_packs/pfe/textures/poke/pfe/auto_block_breaker_face.texture_set.json) Found a Vibrant Visuals related file, which is not supported in cooperative add-ons (for now).\r\nERROR: [CADDONREQ210] (/resource_packs/pfe/textures/poke/pfe/auto_bottom.texture_set.json) Found a Vibrant Visuals related file, which is not supported in cooperative add-ons (for now).\r\nERROR: [CADDONREQ210] (/resource_packs/pfe/textures/poke/pfe/auto_cobble_generator_face.texture_set.json) Found a Vibrant Visuals related file, which is not supported in cooperative add-ons (for now).\r\nERROR: [CADDONREQ210] (/resource_packs/pfe/textures/poke/pfe/auto_cobble_generator_side.texture_set.json) Found a Vibrant Visuals related file, which is not supported in cooperative add-ons (for now).\r\nERROR: [CADDONREQ210] (/resource_packs/pfe/textures/poke/pfe/auto_dirter_side.texture_set.json) Found a Vibrant Visuals related file, which is not supported in cooperative add-ons (for now).\r\nERROR: [CADDONREQ210] (/resource_packs/pfe/textures/poke/pfe/auto_face.texture_set.json) Found a Vibrant Visuals related file, which is not supported in cooperative add-ons (for now).",
     "internalProcessingErrorSummary": "",
     "warningSummary": "",
-    "testFailSummary": "TESTFAIL: [CADDONREQ000] Found 70 errors for Cooperative Add-On Requirements (CADDONREQ).\r\nTESTFAIL: [STRICT000] Found 25 errors for Strict Platform Info Generator (STRICT).\r\nTESTFAIL: [CADDONIREQ000] Found 58 errors for Cooperative Add-On Item Requirements Generator (CADDONIREQ).",
+    "testFailSummary": "TESTFAIL: [CADDONREQ000] Found 70 errors for Cooperative Add-On Requirements (CADDONREQ).\r\nTESTFAIL: [STRICT000] Found 25 errors for Strict Platform Info Generator (STRICT).\r\nTESTFAIL: [CADDONIREQ000] Found 57 errors for Cooperative Add-On Item Requirements Generator (CADDONIREQ).",
     "summary": {
       "PACKSIZE": {
         "1": {
@@ -204,11 +195,6 @@
           "defaultMessage": "Found a loose file in the font folder. Should only see files in the folder font\\creatorshortname\\gamename\\",
           "errors": 1
         },
-        "108": {
-          "title": "More Than One Folder In Creator Folder Besides Maybe Common",
-          "defaultMessage": "Secondary folder 'poke' in textures has more than one subfolder (besides 'common'), which is not supported. There should only be one folder (plus optionally 'common') in pack\\textures\\poke\\<mygamename>",
-          "errors": 1
-        },
         "200": {
           "title": "Found Behavior Pack",
           "defaultMessage": "Behavior pack manifest found."
@@ -216,7 +202,7 @@
         "210": {
           "title": "No Vibrant Visuals For Now",
           "defaultMessage": "Found a Vibrant Visuals related file, which is not supported in cooperative add-ons (for now).",
-          "errors": 68
+          "errors": 69
         }
       },
       "STRICT": {
@@ -255,12 +241,12 @@
       },
       "CADDONIREQ": {
         "0": {
-          "defaultMessage": "Found 58 errors for Cooperative Add-On Item Requirements Generator (CADDONIREQ).",
+          "defaultMessage": "Found 57 errors for Cooperative Add-On Item Requirements Generator (CADDONIREQ).",
           "testCompleteFails": 1
         },
         "112": {
           "defaultMessage": "JSON namespaced identifier is not in the expected form of creatorshortname_projectshortname:myitem",
-          "errors": 58
+          "errors": 57
         }
       },
       "WORLDDATA": {
@@ -291,37 +277,37 @@
       "iTp": 7,
       "gId": "PACKSIZE",
       "gIx": 1,
-      "d": 156587078
+      "d": 156624686
     },
     {
       "iTp": 7,
       "gId": "PACKSIZE",
       "gIx": 2,
-      "d": 25746
+      "d": 25754
     },
     {
       "iTp": 7,
       "gId": "PACKSIZE",
       "gIx": 3,
-      "d": 2789
+      "d": 2652
     },
     {
       "iTp": 7,
       "gId": "PACKSIZE",
       "gIx": 4,
-      "d": 6166736
+      "d": 6201044
     },
     {
       "iTp": 7,
       "gId": "PACKSIZE",
       "gIx": 5,
-      "d": 4658
+      "d": 4666
     },
     {
       "iTp": 7,
       "gId": "PACKSIZE",
       "gIx": 6,
-      "d": 355
+      "d": 354
     },
     {
       "iTp": 2,
@@ -735,6 +721,12 @@
       "iTp": 3,
       "gId": "CADDONREQ",
       "gIx": 210,
+      "p": "/resource_packs/pfe/textures/poke/pfe/upgrader.texture_set.json"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONREQ",
+      "gIx": 210,
       "p": "/resource_packs/pfe/textures/poke/pfe/void_bulb.texture_set.json"
     },
     {
@@ -742,12 +734,6 @@
       "gId": "CADDONREQ",
       "gIx": 101,
       "d": "glyph_F0.png"
-    },
-    {
-      "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 108,
-      "d": "poke"
     },
     {
       "iTp": 3,
@@ -929,9 +915,6 @@
       "gId": "TEXTURE",
       "gIx": 1,
       "fs": {
-        "Block Resource Count": {
-          "Count": 100
-        },
         "Attachable Resource Count": {
           "Count": 233
         },
@@ -954,16 +937,16 @@
           "Count": 721
         },
         "Terrain Texture Resource Count": {
-          "Count": 302
+          "Count": 303
         },
         "File Count": {
-          "Count": 1375
+          "Count": 1378
         },
         "Unique Texture Handles (estimated)": {
           "Count": 357
         },
         "Unique Texture Paths": {
-          "Count": 460
+          "Count": 356
         },
         "Unique Particle Texture References": {
           "Count": 25
@@ -984,10 +967,10 @@
           "Count": 241
         },
         "Unique Terrain Texture References": {
-          "Count": 302
+          "Count": 303
         },
         "Unique Terrain Texture Paths": {
-          "Count": 182
+          "Count": 183
         },
         "Unique Item Texture Paths": {
           "Count": 720
@@ -997,12 +980,6 @@
         },
         "Unique Flipbook Texture Paths": {
           "Count": 2
-        },
-        "Unique Block Texture References": {
-          "Count": 100
-        },
-        "Unique Block Texture Paths": {
-          "Count": 104
         }
       }
     },
@@ -1034,20 +1011,6 @@
       "gIx": 112,
       "p": "/behavior_packs/pfe/blocks/auto/barometer.block.json",
       "d": "poke:barometer"
-    },
-    {
-      "iTp": 3,
-      "gId": "CADDONIREQ",
-      "gIx": 112,
-      "p": "/behavior_packs/pfe/blocks/auto/dirter.block.json",
-      "d": "poke:dirter"
-    },
-    {
-      "iTp": 3,
-      "gId": "CADDONIREQ",
-      "gIx": 112,
-      "p": "/behavior_packs/pfe/blocks/auto/duster.block.json",
-      "d": "poke:duster"
     },
     {
       "iTp": 3,
@@ -1530,6 +1493,13 @@
       "gIx": 112,
       "p": "/behavior_packs/pfe/items/armor/cosmetic/o/maxwell.item.json",
       "d": "poke:maxwell"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/behavior_packs/pfe/items/block_items/magic_8_ball.item.json",
+      "d": "poke:magic_8_ball"
     },
     {
       "iTp": 3,

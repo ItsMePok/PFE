@@ -56,7 +56,6 @@
 			],
 			"poke_pfe:recipe_block": {
 				"id": "poke_pfe:alloy_forge",
-				"can_show_item_upgrades": true,
 				"can_store_items": true,
 				"storage_capacity_limit": 10,
 				"name": "%poke_pfe.alloy_forge",
