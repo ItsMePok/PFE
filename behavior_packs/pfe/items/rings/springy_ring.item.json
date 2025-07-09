@@ -21,7 +21,7 @@
 					}
 				]
 			},
-			"minecraft:icon": "poke_springy_ring",
+			"minecraft:icon": "poke_pfe_springy_ring",
 			"minecraft:max_stack_size": 1,
 			"minecraft:cooldown": {
 				"category": "poke:springy_ring",

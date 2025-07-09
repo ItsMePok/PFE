@@ -46,7 +46,7 @@
 			"minecraft:geometry": "geometry.poke_pfe.trapdoor",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "poke_radium_trapdoor",
+					"texture": "poke_pfe_radium_trapdoor",
 					"render_method": "blend"
 				}
 			},

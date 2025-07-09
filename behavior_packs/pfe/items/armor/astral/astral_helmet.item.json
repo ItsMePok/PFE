@@ -26,7 +26,7 @@
 			},
 			"minecraft:icon": {
 				"textures": {
-					"default": "poke_astral_helmet"
+					"default": "poke_pfe_astral_helmet"
 				}
 			},
 			"minecraft:wearable": {

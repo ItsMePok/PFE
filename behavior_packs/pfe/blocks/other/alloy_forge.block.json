@@ -16,9 +16,8 @@
 		},
 		"components": {
 			"minecraft:display_name": "%poke_pfe.alloy_forge\n%poke_pfe.tag",
-			"poke_pfe:icon_path": "texture/poke/pfe/alloy_forge_face",
 			"minecraft:destruction_particles": {
-				"texture": "poke_molten_bricks"
+				"texture": "poke_pfe_molten_bricks"
 			},
 			"poke_pfe:custom_recipes": [
 				{
@@ -80,7 +79,7 @@
 						"render_method": "opaque"
 					},
 					"down": {
-						"texture": "poke_polished_limestone",
+						"texture": "poke_pfe_polished_limestone",
 						"render_method": "opaque"
 					}
 				}
@@ -94,6 +93,7 @@
 					}
 				]
 			},
+			"minecraft:light_emission": 11,
 			"minecraft:collision_box": true,
 			"minecraft:selection_box": true,
 			"minecraft:destructible_by_mining": {
@@ -127,7 +127,7 @@
 					"render_method": "opaque"
 				},
 				"down": {
-					"texture": "poke_polished_limestone",
+					"texture": "poke_pfe_polished_limestone",
 					"render_method": "opaque"
 				}
 			},

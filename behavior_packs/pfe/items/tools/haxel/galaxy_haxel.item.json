@@ -46,7 +46,7 @@
 					"min": 20
 				}
 			},
-			"minecraft:icon": "poke_galaxy_haxel",
+			"minecraft:icon": "poke_pfe_galaxy_haxel",
 			"minecraft:cooldown": {
 				"category": "poke:haxel",
 				"duration": 0.3

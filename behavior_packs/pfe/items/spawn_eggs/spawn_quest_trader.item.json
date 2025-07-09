@@ -13,7 +13,7 @@
 				"value": "%poke_pfe.spawn_quest_trader\n%poke_pfe.tag"
 			},
 			"minecraft:max_stack_size": 64,
-			"minecraft:icon": "poke_quest_trader_spawn_egg",
+			"minecraft:icon": "poke_pfe_quest_trader_spawn_egg",
 			"poke_pfe:spawn_entity": {
 				"entity": "poke:quest_trader"
 			},

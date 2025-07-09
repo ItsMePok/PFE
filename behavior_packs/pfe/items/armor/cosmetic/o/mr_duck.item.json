@@ -20,7 +20,7 @@
 			"minecraft:max_stack_size": 1,
 			"minecraft:icon": {
 				"textures": {
-					"default": "poke_mr_duck"
+					"default": "poke_pfe_mr_duck"
 				}
 			},
 			"minecraft:wearable": {

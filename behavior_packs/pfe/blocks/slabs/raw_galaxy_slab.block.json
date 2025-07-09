@@ -40,7 +40,7 @@
 					},
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "poke_raw_galaxy_block"
+							"texture": "poke_pfe_raw_galaxy_block"
 						}
 					},
 					"minecraft:geometry": {
@@ -81,7 +81,7 @@
 					},
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "poke_raw_galaxy_block"
+							"texture": "poke_pfe_raw_galaxy_block"
 						}
 					},
 					"minecraft:geometry": {
@@ -136,7 +136,7 @@
 					},
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "poke_raw_galaxy_block"
+							"texture": "poke_pfe_raw_galaxy_block"
 						}
 					},
 					"minecraft:geometry": {
@@ -178,7 +178,7 @@
 				"explosion_resistance": 6
 			},
 			"minecraft:destruction_particles": {
-				"texture": "poke_raw_galaxy_block"
+				"texture": "poke_pfe_raw_galaxy_block"
 			},
 			"minecraft:map_color": "#1a37bb",
 			"tag:pfe": {},

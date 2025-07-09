@@ -13,7 +13,7 @@
 				"default": "geometry.poke_pfe.goat"
 			},
 			"spawn_egg": {
-				"texture": "poke_woods_goat_spawn_egg"
+				"texture": "poke_pfe_woods_goat_spawn_egg"
 			},
 			"scripts": {
 				"pre_animation": [

@@ -11,7 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.holy_nugget\n%poke_pfe.tag"
 			},
-			"minecraft:icon": "poke_holy_nugget"
+			"minecraft:icon": "poke_pfe_holy_nugget"
 		}
 	}
 }

@@ -22,7 +22,7 @@
 				]
 			},
 			"minecraft:max_stack_size": 1,
-			"minecraft:icon": "poke_holy_sword",
+			"minecraft:icon": "poke_pfe_holy_sword",
 			"minecraft:damage": {
 				"value": 12
 			},

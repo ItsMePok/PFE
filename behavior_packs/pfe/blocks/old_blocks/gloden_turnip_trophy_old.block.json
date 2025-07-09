@@ -39,7 +39,7 @@
 			"minecraft:geometry": "geometry.poke_pfe.golden_turnip_trophy",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "poke_golden_turnip_trophy",
+					"texture": "poke_pfe_golden_turnip_trophy",
 					"render_method": "opaque",
 					"ambient_occlusion": false,
 					"face_dimming": true

@@ -35,7 +35,7 @@
 			},
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "poke_flint_crate",
+					"texture": "poke_pfe_flint_crate",
 					"render_method": "opaque"
 				}
 			},

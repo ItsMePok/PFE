@@ -12,7 +12,7 @@
 				"value": "item.poke:pfe-spook_pottery_sherd.name"
 			},
 			"poke_pfe:icon_path": "textures/poke/pfe/spook_pottery_sherd",
-			"minecraft:icon": "poke_spook_pottery_sherd",
+			"minecraft:icon": "poke_pfe_spook_pottery_sherd",
 			"minecraft:tags": {
 				"tags": [
 					"minecraft:decorated_pot_sherds"

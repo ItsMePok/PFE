@@ -21,7 +21,7 @@
 					}
 				]
 			},
-			"minecraft:icon": "poke_med_ring",
+			"minecraft:icon": "poke_pfe_med_ring",
 			"minecraft:cooldown": {
 				"category": "poke:med_ring",
 				"duration": 2

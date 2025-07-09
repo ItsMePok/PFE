@@ -31,7 +31,7 @@
 				"controller.render.poke_pfe.default"
 			],
 			"spawn_egg": {
-				"texture": "poke_money_man_spawn_egg"
+				"texture": "poke_pfe_money_man_spawn_egg"
 			},
 			"enable_attachables": true,
 			"hide_armor": false

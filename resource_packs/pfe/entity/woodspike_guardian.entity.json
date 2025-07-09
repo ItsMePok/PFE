@@ -45,7 +45,7 @@
 				"controller.render.guardian"
 			],
 			"spawn_egg": {
-				"texture": "poke_woodspike_guardian_spawn_egg"
+				"texture": "poke_pfe_woodspike_guardian_spawn_egg"
 			}
 		}
 	}

@@ -22,7 +22,7 @@
 					}
 				]
 			},
-			"minecraft:icon": "poke_volt_ring",
+			"minecraft:icon": "poke_pfe_volt_ring",
 			"minecraft:cooldown": {
 				"duration": 0.1,
 				"category": "poke:volt_ring"

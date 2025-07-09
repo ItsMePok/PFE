@@ -15,7 +15,7 @@
 				"max_durability": 1150
 			},
 			"minecraft:hand_equipped": true,
-			"minecraft:icon": "poke_zombifier",
+			"minecraft:icon": "poke_pfe_zombifier",
 			"minecraft:cooldown": {
 				"category": "poke:zombifier",
 				"duration": 1.5

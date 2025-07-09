@@ -26,7 +26,7 @@
 			},
 			"minecraft:icon": {
 				"textures": {
-					"default": "poke_holy_helmet"
+					"default": "poke_pfe_holy_helmet"
 				}
 			},
 			"minecraft:wearable": {

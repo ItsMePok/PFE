@@ -46,7 +46,7 @@
 			"minecraft:geometry": "geometry.poke_pfe.trapdoor",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "poke_death_trapdoor",
+					"texture": "poke_pfe_death_trapdoor",
 					"render_method": "blend"
 				}
 			},

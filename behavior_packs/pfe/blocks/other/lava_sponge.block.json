@@ -9,7 +9,6 @@
 		},
 		"components": {
 			"minecraft:display_name": "%poke_pfe.lava_sponge\n%poke_pfe.tag",
-			"poke_pfe:icon_path": "textures/poke/pfe/lava_sponge",
 			"poke_pfe:sponge_block": {
 				"adds_to_stat": "lava_sponged",
 				"check_for_blocks": [
@@ -34,6 +33,15 @@
 					20
 				],
 				"turns_into": "poke:molten_lava_sponge"
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "poke_pfe_lava_sponge",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:geometry": {
+				"identifier": "minecraft:geometry.full_block"
 			},
 			"minecraft:redstone_conductivity": {
 				"redstone_conductor": true,

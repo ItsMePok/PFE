@@ -12,7 +12,7 @@
 				"value": "%poke_pfe.dodge_spell\n%poke_pfe.tag"
 			},
 			"poke_pfe:icon_path": "textures/poke/pfe/dodge_spell",
-			"minecraft:icon": "poke_dodge_spell",
+			"minecraft:icon": "poke_pfe_dodge_spell",
 			"minecraft:durability": {
 				"max_durability": 0
 			},

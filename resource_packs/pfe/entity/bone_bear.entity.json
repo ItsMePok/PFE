@@ -32,7 +32,7 @@
 				"controller.render.polarbear" //2
 			],
 			"spawn_egg": {
-				"texture": "poke_bone_bear_spawn_egg"
+				"texture": "poke_pfe_bone_bear_spawn_egg"
 			}
 		}
 	}

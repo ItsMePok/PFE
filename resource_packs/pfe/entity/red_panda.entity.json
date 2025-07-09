@@ -39,7 +39,7 @@
 				"controller.render.fox"
 			],
 			"spawn_egg": {
-				"texture": "poke_red_panda_spawn_egg"
+				"texture": "poke_pfe_red_panda_spawn_egg"
 			}
 		}
 	}

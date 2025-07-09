@@ -13,7 +13,7 @@
 				"default": "geometry.poke_pfe.demonic_allay"
 			},
 			"spawn_egg": {
-				"texture": "poke_mini_demonic_allay_spawn_egg"
+				"texture": "poke_pfe_mini_demonic_allay_spawn_egg"
 			},
 			"animations": {
 				"idle": "animation.poke_pfe.demonic_allay.idle",

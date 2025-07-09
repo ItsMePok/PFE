@@ -14,7 +14,7 @@
 			},
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "poke_cracked_shade_bricks",
+					"texture": "poke_pfe_cracked_shade_bricks",
 					"render_method": "opaque"
 				}
 			},

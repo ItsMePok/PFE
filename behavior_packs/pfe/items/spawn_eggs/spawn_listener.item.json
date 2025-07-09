@@ -13,7 +13,7 @@
 				"value": "%poke_pfe.spawn_listener\n%poke_pfe.tag"
 			},
 			"minecraft:max_stack_size": 64,
-			"minecraft:icon": "poke_listener_spawn_egg",
+			"minecraft:icon": "poke_pfe_listener_spawn_egg",
 			"poke_pfe:spawn_entity": {
 				"entity": "poke:listener"
 			},

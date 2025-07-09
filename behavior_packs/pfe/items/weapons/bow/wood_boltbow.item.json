@@ -11,8 +11,9 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.wood_boltbow\n§7%poke_pfe.crouchInteract\n%poke_pfe.tag"
 			},
+			"poke_pfe:icon_path": "textures/poke/pfe/wood_boltbow_item",
 			"minecraft:rarity": "common",
-			"minecraft:icon": "poke_wood_boltbow",
+			"minecraft:icon": "poke_pfe_wood_boltbow",
 			"minecraft:can_destroy_in_creative": {
 				"value": false
 			},

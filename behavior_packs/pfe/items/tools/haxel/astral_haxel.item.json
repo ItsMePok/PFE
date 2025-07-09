@@ -46,7 +46,7 @@
 					"min": 20
 				}
 			},
-			"minecraft:icon": "poke_astral_haxel",
+			"minecraft:icon": "poke_pfe_astral_haxel",
 			"minecraft:cooldown": {
 				"category": "poke:haxel",
 				"duration": 0.3

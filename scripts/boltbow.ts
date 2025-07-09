@@ -148,7 +148,7 @@ function PFEAmmoManagementMainMenuUI(item: ItemStack, player: Player) {
       return
     } else selection++
     if (response.selection == selection) {// Upgrade
-      PokeUpgradeUI(player, item, boltBowComponent, PFEAmmoManagementMainMenuUI(item, player), false, <PFEUpgradeableComponentInfo | undefined>item.getComponent(PFEUpgradeableId)?.customComponentParameters.params ?? undefined)
+      PokeUpgradeUI(player, item, boltBowComponent, false, <PFEUpgradeableComponentInfo | undefined>item.getComponent(PFEUpgradeableId)?.customComponentParameters.params ?? undefined)
       return
     } else selection++
     if (response.canceled || selection) { // Close
@@ -165,7 +165,7 @@ function PFEAmmoManagementAddAmmoUI(item: ItemStack, player: Player) {
   let buttonTotal = 0
   let allItems: ItemStack[] = []
   for (let i = allowedAmmo.length - 1; i > -1; i--) {
-    let items = PokeGetItemFromInventory(player, undefined, allowedAmmo.at(i))
+    let items = <ItemStack[] | undefined>PokeGetItemFromInventory(player, undefined, allowedAmmo.at(i))
     if (!items) {
       continue
     }
@@ -306,7 +306,7 @@ function PFEArrowIcon(itemId: string) {
 
 
 function PFEQuickReload(ammoComponent: PFEBoltBowInfo, item: ItemStack, player: Player) {
-  let reloadingAmmo = PokeGetItemFromInventory(player, undefined, ammoComponent.projectile.id)
+  let reloadingAmmo = <ItemStack[] | undefined>PokeGetItemFromInventory(player, undefined, ammoComponent.projectile.id)
   if (!reloadingAmmo) {
     PokeErrorScreen(player, { text: `Failed to reload ammo` })
     return

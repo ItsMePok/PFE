@@ -14,7 +14,7 @@
 			},
 			"poke:consumeEffects": {},
 			"minecraft:max_stack_size": 64,
-			"minecraft:icon": "poke_pumpkin_spice",
+			"minecraft:icon": "poke_pfe_pumpkin_spice",
 			"minecraft:food": {
 				"nutrition": 10,
 				"saturation_modifier": 0.25,

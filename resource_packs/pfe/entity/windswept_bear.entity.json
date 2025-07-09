@@ -32,7 +32,7 @@
 				"controller.render.polarbear"
 			],
 			"spawn_egg": {
-				"texture": "poke_windswept_bear_spawn_egg"
+				"texture": "poke_pfe_windswept_bear_spawn_egg"
 			}
 		}
 	}

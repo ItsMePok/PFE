@@ -33,7 +33,7 @@
 				"controller.render.blaze"
 			],
 			"spawn_egg": {
-				"texture": "poke_soul_blaze_spawn_egg"
+				"texture": "poke_pfe_soul_blaze_spawn_egg"
 			}
 		}
 	}

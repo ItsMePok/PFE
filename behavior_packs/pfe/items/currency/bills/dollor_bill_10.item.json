@@ -12,7 +12,7 @@
 				"value": "%poke_pfe.dollor_bill_10\n%poke_pfe.tag"
 			},
 			"minecraft:rarity": "common",
-			"minecraft:icon": "poke_dollar_bill_10"
+			"minecraft:icon": "poke_pfe_dollar_bill_10"
 		}
 	}
 }

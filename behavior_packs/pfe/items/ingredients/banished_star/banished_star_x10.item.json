@@ -20,7 +20,7 @@
 			"poke:consumeEffects": {},
 			"minecraft:icon": {
 				"textures": {
-					"default": "poke_banished_star_x10"
+					"default": "poke_pfe_banished_star_x10"
 				}
 			},
 			"minecraft:food": {

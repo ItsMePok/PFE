@@ -53,7 +53,7 @@
 			"poke_pfe:upgradeable": {
 				"version": 1
 			},
-			"minecraft:icon": "poke_godly_haxel",
+			"minecraft:icon": "poke_pfe_godly_haxel",
 			"minecraft:repairable": {
 				"repair_items": [
 					{

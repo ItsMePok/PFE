@@ -11,6 +11,15 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.iron_battleaxe\n%poke_pfe.tag"
 			},
+			"poke_pfe:upgradeable": {
+				"dynamic_property": "pfe:upgrades",
+				"sneak_interact_opens_ui": false,
+				"upgrade_ids": [
+					"pfe:persistence"
+				],
+				"version": 1
+			},
+			"poke_pfe:icon_path": "textures/poke/pfe/iron_battleaxe",
 			"minecraft:digger": {
 				"destroy_speeds": [
 					{
@@ -35,7 +44,7 @@
 			"minecraft:damage": {
 				"value": 5
 			},
-			"minecraft:icon": "poke_iron_battleaxe",
+			"minecraft:icon": "poke_pfe_iron_battleaxe",
 			"minecraft:enchantable": {
 				"value": 14,
 				"slot": "sword"

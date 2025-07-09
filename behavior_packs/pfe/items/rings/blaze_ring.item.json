@@ -22,7 +22,7 @@
 					}
 				]
 			},
-			"minecraft:icon": "poke_blaze_ring",
+			"minecraft:icon": "poke_pfe_blaze_ring",
 			"minecraft:cooldown": {
 				"category": "poke:ring_2",
 				"duration": 15

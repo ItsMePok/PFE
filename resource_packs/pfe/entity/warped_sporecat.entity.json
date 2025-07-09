@@ -47,7 +47,7 @@
 				"controller.render.poke_pfe.sporecat"
 			],
 			"spawn_egg": {
-				"texture": "poke_sporecat_spawn_egg"
+				"texture": "poke_pfe_sporecat_spawn_egg"
 			}
 		}
 	}

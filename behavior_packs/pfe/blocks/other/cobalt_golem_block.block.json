@@ -24,7 +24,7 @@
       },
       "minecraft:material_instances": {
         "*": {
-          "texture": "poke_cobalt_golem_block"
+          "texture": "poke_pfe_cobalt_golem_block"
         }
       },
       "tag:pfe": {},

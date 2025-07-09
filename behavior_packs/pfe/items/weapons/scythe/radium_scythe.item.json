@@ -41,7 +41,7 @@
 			"minecraft:damage": {
 				"value": 12
 			},
-			"minecraft:icon": "poke_radium_scythe",
+			"minecraft:icon": "poke_pfe_radium_scythe",
 			"minecraft:enchantable": {
 				"value": 75,
 				"slot": "sword"

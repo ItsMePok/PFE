@@ -73,6 +73,11 @@
                             "description": "Can this item store items that can later be used in recipes? (Currently stored items are bound to that player and not the item)",
                             "default": false
                           },
+                          "can_show_item_upgrades": {
+                            "type": "boolean",
+                            "description": "Can this show availble upgrade to items",
+                            "default": false
+                          },
                           "storage_capacity_limit": {
                             "type": "number",
                             "description": "The max amount of unique items this can store"
@@ -3182,7 +3187,26 @@
                           "description": "[On Tick]",
                           "properties": {
                             "places": {
-                              "type": "string"
+                              "oneOf": [
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "array",
+                                  "items": {
+                                    "anyOf": [
+                                      {
+                                        "type": "string",
+                                        "pattern": "(.*):(.*)"
+                                      },
+                                      {
+                                        "type": "string",
+                                        "pattern": "(.*):(.*)::(.*):(.*)"
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
                             },
                             "targets": {
                               "description": "The direction that this block can place a block directly adjacent to itself",
@@ -3196,6 +3220,15 @@
                                   "East",
                                   "West"
                                 ]
+                              },
+                              "uniqueItems": true
+                            },
+                            "can_replace": {
+                              "description": "What blocks can be replaced by this (defaults to only Air when ommited)",
+                              "type": "array",
+                              "items": {
+                                "type": "string",
+                                "pattern": "(.*)[:](.*)"
                               },
                               "uniqueItems": true
                             }
@@ -3475,6 +3508,11 @@
                                   "description": "Can this block store items that can later be used in recipes? (Stored items are bound to that player not the block)",
                                   "default": false
                                 },
+                                "can_show_item_upgrades": {
+                                  "type": "boolean",
+                                  "description": "Can this show availble upgrade to items",
+                                  "default": false
+                                },
                                 "storage_capacity_limit": {
                                   "type": "number",
                                   "description": "The max amount of unique items this can store"
@@ -3513,7 +3551,26 @@
                     "description": "[On Tick]",
                     "properties": {
                       "places": {
-                        "type": "string"
+                        "oneOf": [
+                          {
+                            "type": "string"
+                          },
+                          {
+                            "type": "array",
+                            "items": {
+                              "anyOf": [
+                                {
+                                  "type": "string",
+                                  "pattern": "(.*):(.*)"
+                                },
+                                {
+                                  "type": "string",
+                                  "pattern": "(.*):(.*)::(.*):(.*)"
+                                }
+                              ]
+                            }
+                          }
+                        ]
                       },
                       "targets": {
                         "description": "The direction that this block can place a block directly adjacent to itself",
@@ -3527,6 +3584,15 @@
                             "East",
                             "West"
                           ]
+                        },
+                        "uniqueItems": true
+                      },
+                      "can_replace": {
+                        "description": "What blocks can be replaced by this (defaults to only Air when ommited)",
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "pattern": "(.*)[:](.*)"
                         },
                         "uniqueItems": true
                       }
@@ -3806,6 +3872,11 @@
                             "description": "Can this block store items that can later be used in recipes? (Stored items are bound to that player not the block)",
                             "default": false
                           },
+                          "can_show_item_upgrades": {
+                            "type": "boolean",
+                            "description": "Can this show availble upgrade to items",
+                            "default": false
+                          },
                           "storage_capacity_limit": {
                             "type": "number",
                             "description": "The max amount of unique items this can store"
@@ -3928,6 +3999,7 @@
     "hellite",
     "huantmuskie",
     "infiniteamethyst",
+    "itemframe",
     "jigarbov",
     "komorebi",
     "Kumi",

@@ -1,0 +1,49 @@
+{
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "assume_symmetry": true,
+    "description": {
+      "identifier": "poke_pfe:upgrader"
+    },
+    "group": "crafting",
+    "tags": [
+      "crafting_table"
+    ],
+    "unlock": [
+      {
+        "item": "poke:cobalt_ingot"
+      },
+      {
+        "item": "minecraft:copper_ingot"
+      },
+      {
+        "item": "minecraft:anvil"
+      },
+      {
+        "item": "poke:upgrade_core"
+      }
+    ],
+    "pattern": [
+      "XCX",
+      "CAC",
+      "XUX"
+    ],
+    "key": {
+      "C": {
+        "item": "poke:cobalt_ingot"
+      },
+      "X": {
+        "item": "minecraft:copper_ingot"
+      },
+      "A": {
+        "item": "minecraft:anvil"
+      },
+      "U": {
+        "item": "poke:upgrade_core"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:upgrader"
+    }
+  }
+}

@@ -14,7 +14,7 @@
 			},
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "poke_cracked_honey_bricks",
+					"texture": "poke_pfe_cracked_honey_bricks",
 					"render_method": "opaque"
 				}
 			},

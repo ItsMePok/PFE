@@ -35,7 +35,7 @@
 				"controller.render.poke_pfe.default"
 			],
 			"spawn_egg": {
-				"texture": "poke_token_trader_spawn_egg"
+				"texture": "poke_pfe_token_trader_spawn_egg"
 			},
 			"enable_attachables": true,
 			"hide_armor": false

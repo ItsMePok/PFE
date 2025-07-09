@@ -32,7 +32,7 @@
 				"controller.render.poke_pfe.default"
 			],
 			"spawn_egg": {
-				"texture": "poke_cosmetic_trader_spawn_egg"
+				"texture": "poke_pfe_cosmetic_trader_spawn_egg"
 			},
 			"enable_attachables": true,
 			"hide_armor": false

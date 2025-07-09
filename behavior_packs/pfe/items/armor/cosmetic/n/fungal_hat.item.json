@@ -19,7 +19,7 @@
 			},
 			"minecraft:icon": {
 				"textures": {
-					"default": "poke_fungal_hat"
+					"default": "poke_pfe_fungal_hat"
 				}
 			},
 			"minecraft:max_stack_size": 1,

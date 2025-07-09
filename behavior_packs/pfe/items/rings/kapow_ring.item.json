@@ -22,7 +22,7 @@
 					}
 				]
 			},
-			"minecraft:icon": "poke_kapow_ring",
+			"minecraft:icon": "poke_pfe_kapow_ring",
 			"minecraft:cooldown": {
 				"category": "poke:kapow_ring",
 				"duration": 100

@@ -25,7 +25,7 @@
 			},
 			"minecraft:icon": {
 				"textures": {
-					"default": "poke_cactus_boots"
+					"default": "poke_pfe_cactus_boots"
 				}
 			},
 			"minecraft:wearable": {

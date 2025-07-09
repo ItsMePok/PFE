@@ -12,7 +12,8 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.config\n§7%poke_pfe.config.desc\n%poke_pfe.tag"
 			},
-			"minecraft:icon": "poke_boss_event_config",
+			"poke_pfe:icon_path": "textures/poke/pfe/boss_event_config",
+			"minecraft:icon": "poke_pfe_boss_event_config",
 			"poke_pfe:config": {}
 		}
 	}

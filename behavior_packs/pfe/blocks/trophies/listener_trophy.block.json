@@ -63,7 +63,7 @@
 			"minecraft:geometry": "geometry.poke_pfe.listener_trophy",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "poke_listener_trophy",
+					"texture": "poke_pfe_listener_trophy",
 					"render_method": "opaque",
 					"ambient_occlusion": false,
 					"face_dimming": true

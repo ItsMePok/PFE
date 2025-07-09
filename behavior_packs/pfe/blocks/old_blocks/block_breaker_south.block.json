@@ -5,13 +5,6 @@
 			"identifier": "poke:block_breaker_south"
 		},
 		"components": {
-			"minecraft:display_name": "%poke_pfe.calibrated_block_breaker\n%poke_pfe.tag",
-			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 1
-			},
-			"minecraft:destructible_by_explosion": {
-				"explosion_resistance": 30
-			},
 			"tag:pfe": {},
 			"tag:minecraft:is_pickaxe_item_destructible": {},
 			"minecraft:tick": {

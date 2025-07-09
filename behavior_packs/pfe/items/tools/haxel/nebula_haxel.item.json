@@ -54,7 +54,7 @@
 					"min": 20
 				}
 			},
-			"minecraft:icon": "poke_nebula_haxel",
+			"minecraft:icon": "poke_pfe_nebula_haxel",
 			"minecraft:repairable": {
 				"repair_items": [
 					{

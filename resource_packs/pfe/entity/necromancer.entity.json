@@ -34,7 +34,7 @@
 				"controller.render.poke_pfe.default"
 			],
 			"spawn_egg": {
-				"texture": "poke_necromancer_spawn_egg"
+				"texture": "poke_pfe_necromancer_spawn_egg"
 			}
 		}
 	}

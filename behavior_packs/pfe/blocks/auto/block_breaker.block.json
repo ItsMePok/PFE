@@ -43,7 +43,7 @@
 			"tag:pfe": {},
 			"tag:minecraft:is_pickaxe_item_destructible": {},
 			"tag:minecraft:is_axe_item_destructible": {},
-			"minecraft:map_color": "#17273b",
+			"minecraft:map_color": "#22222f",
 			"minecraft:tick": {
 				"interval_range": [
 					40,

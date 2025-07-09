@@ -11,7 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.ender_holder\n%poke_pfe.tag"
 			},
-			"minecraft:icon": "poke_ender_holder"
+			"minecraft:icon": "poke_pfe_ender_holder"
 		}
 	}
 }

@@ -26,8 +26,8 @@
       "minecraft:max_stack_size": 1,
       "minecraft:icon": {
         "textures": {
-          "default": "poke_goggles",
-          "dyed": "poke_goggles"
+          "default": "poke_pfe_goggles",
+          "dyed": "poke_pfe_goggles"
         }
       }
     }

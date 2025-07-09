@@ -24,7 +24,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": "poke_radium_chestplate",
+			"minecraft:icon": "poke_pfe_radium_chestplate",
 			"minecraft:wearable": {
 				"slot": "slot.armor.chest",
 				"protection": 28

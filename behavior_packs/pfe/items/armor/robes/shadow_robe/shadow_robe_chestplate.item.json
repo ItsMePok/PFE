@@ -26,7 +26,7 @@
 			},
 			"minecraft:icon": {
 				"textures": {
-					"default": "poke_shadow_robe_chestplate"
+					"default": "poke_pfe_shadow_robe_chestplate"
 				}
 			},
 			"minecraft:wearable": {

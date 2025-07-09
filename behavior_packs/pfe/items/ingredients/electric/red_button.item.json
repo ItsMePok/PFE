@@ -11,7 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.red_button\n%poke_pfe.tag"
 			},
-			"minecraft:icon": "poke_red_button",
+			"minecraft:icon": "poke_pfe_red_button",
 			"poke_pfe:run_command": {
 				"version": 1,
 				"command": "stopsound @s",

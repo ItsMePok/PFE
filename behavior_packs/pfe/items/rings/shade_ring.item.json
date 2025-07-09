@@ -22,7 +22,7 @@
 					}
 				]
 			},
-			"minecraft:icon": "poke_shade_ring",
+			"minecraft:icon": "poke_pfe_shade_ring",
 			"minecraft:cooldown": {
 				"duration": 5,
 				"category": "poke:shade_ring"

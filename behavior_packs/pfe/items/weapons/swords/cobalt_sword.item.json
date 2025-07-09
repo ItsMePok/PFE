@@ -21,7 +21,7 @@
 				]
 			},
 			"minecraft:max_stack_size": 1,
-			"minecraft:icon": "poke_cobalt_sword",
+			"minecraft:icon": "poke_pfe_cobalt_sword",
 			"minecraft:damage": {
 				"value": 4
 			},

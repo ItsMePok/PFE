@@ -11,7 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.nebula_upgrader\n%poke_pfe.tag"
 			},
-			"minecraft:icon": "poke_nebula_upgrader",
+			"minecraft:icon": "poke_pfe_nebula_upgrader",
 			"minecraft:hand_equipped": true,
 			"minecraft:max_stack_size": 1,
 			"minecraft:durability": {

@@ -23,8 +23,8 @@
 			},
 			"minecraft:icon": {
 				"textures": {
-					"default": "poke_swift_pickaxe",
-					"dyed": "poke_swift_pickaxe"
+					"default": "poke_pfe_swift_pickaxe",
+					"dyed": "poke_pfe_swift_pickaxe"
 				}
 			},
 			"minecraft:dyeable": {

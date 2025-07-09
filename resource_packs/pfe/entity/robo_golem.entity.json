@@ -36,7 +36,7 @@
 				"controller.render.poke_pfe.default"
 			],
 			"spawn_egg": {
-				"texture": "poke_furnace_golem_spawn_egg"
+				"texture": "poke_pfe_furnace_golem_spawn_egg"
 			}
 		}
 	}

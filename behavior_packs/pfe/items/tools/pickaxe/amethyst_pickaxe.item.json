@@ -24,8 +24,8 @@
 			},
 			"minecraft:icon": {
 				"textures": {
-					"default": "poke_amethyst_pickaxe",
-					"dyed": "poke_amethyst_pickaxe"
+					"default": "poke_pfe_amethyst_pickaxe",
+					"dyed": "poke_pfe_amethyst_pickaxe"
 				}
 			},
 			"minecraft:dyeable": {

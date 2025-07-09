@@ -38,7 +38,7 @@
 			},
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "poke_hellish_ore",
+					"texture": "poke_pfe_hellish_ore",
 					"ambient_occlusion": true,
 					"face_dimming": true,
 					"render_method": "opaque"

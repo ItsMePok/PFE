@@ -9,6 +9,15 @@
 		},
 		"components": {
 			"minecraft:display_name": "%poke_pfe.galaxy_block\n%poke_pfe.tag",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "poke_pfe_galaxy_block",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:geometry": {
+				"identifier": "minecraft:geometry.full_block"
+			},
 			"minecraft:redstone_conductivity": {
 				"redstone_conductor": true,
 				"allows_wire_to_step_down": true

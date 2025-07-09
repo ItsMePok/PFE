@@ -17,7 +17,7 @@
 					"poke:upgrade_core"
 				]
 			},
-			"minecraft:icon": "poke_capacity_core"
+			"minecraft:icon": "poke_pfe_capacity_core"
 		}
 	}
 }

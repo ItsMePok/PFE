@@ -13,7 +13,7 @@
       },
       "minecraft:icon": {
         "textures": {
-          "default": "poke_astral_nugget"
+          "default": "poke_pfe_astral_nugget"
         }
       }
     }

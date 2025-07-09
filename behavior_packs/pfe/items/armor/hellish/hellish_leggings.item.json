@@ -25,7 +25,7 @@
 			},
 			"minecraft:icon": {
 				"textures": {
-					"default": "poke_hellish_leggings"
+					"default": "poke_pfe_hellish_leggings"
 				}
 			},
 			"minecraft:wearable": {

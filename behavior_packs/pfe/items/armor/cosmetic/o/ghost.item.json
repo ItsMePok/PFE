@@ -18,7 +18,7 @@
 				]
 			},
 			"minecraft:max_stack_size": 1,
-			"minecraft:icon": "poke_ghost",
+			"minecraft:icon": "poke_pfe_ghost",
 			"minecraft:wearable": {
 				"slot": "slot.weapon.offhand"
 			}

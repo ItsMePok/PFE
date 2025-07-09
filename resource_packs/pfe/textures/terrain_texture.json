@@ -2,8 +2,11 @@
 	"resource_pack_name": "poke",
 	"texture_name": "atlas.terrain",
 	"num_mip_levels": 0,
-	"padding": 2,
+	"padding": 1,
 	"texture_data": {
+		"poke_pfe_upgrader_block": {
+			"textures": "textures/poke/pfe/upgrader"
+		},
 		"poke_pfe_animated_automation_gear": {
 			"textures": "textures/poke/pfe/auto_animated_gear"
 		},
@@ -44,16 +47,7 @@
 			"textures": "textures/poke/pfe/auto_gear"
 		},
 		"poke_pfe_cobblestone_generator_side": {
-			"textures": [
-				{
-					"path": "textures/poke/pfe/auto_cobble_generator_side"
-					//,"overlay_color": "#610310"
-				} /*,
-				{
-					"path": "textures/poke/pfe/auto_cobble_generator_side",
-					"overlay_color": "#ce0c0c"
-				}*/
-			]
+			"textures": "textures/poke/pfe/auto_cobble_generator_side"
 		},
 		"poke_pfe_cobblestone_generator_face": {
 			"textures": "textures/poke/pfe/auto_cobble_generator_face"
@@ -71,151 +65,151 @@
 			"textures": "textures/poke/pfe/auto_top"
 		},
 		"poke_pfe_listener_sticker": {
-			"textures": "textures/poke/comp-sticker/listener_sticker"
+			"textures": "textures/poke/pfe/listener_sticker"
 		},
 		"poke_pfe_bone_bear_sticker": {
-			"textures": "textures/poke/comp-sticker/bone_bear_sticker"
+			"textures": "textures/poke/pfe/bone_bear_sticker"
 		},
 		"poke_pfe_brown_sporefish_sticker": {
-			"textures": "textures/poke/comp-sticker/brown_sporefish_sticker"
+			"textures": "textures/poke/pfe/brown_sporefish_sticker"
 		},
 		"poke_pfe_cassette_trader_sticker": {
-			"textures": "textures/poke/comp-sticker/cassette_trader_sticker"
+			"textures": "textures/poke/pfe/cassette_trader_sticker"
 		},
 		"poke_pfe_cobalt_golem_sticker": {
-			"textures": "textures/poke/comp-sticker/cobalt_golem_sticker"
+			"textures": "textures/poke/pfe/cobalt_golem_sticker"
 		},
 		"poke_pfe_cosmetic_trader_sticker": {
-			"textures": "textures/poke/comp-sticker/cosmetic_trader_sticker"
+			"textures": "textures/poke/pfe/cosmetic_trader_sticker"
 		},
 		"poke_pfe_crimson_sporeshroom_sticker": {
-			"textures": "textures/poke/comp-sticker/crimson_sporeshroom_sticker"
+			"textures": "textures/poke/pfe/crimson_sporeshroom_sticker"
 		},
 		"poke_pfe_demonic_allay_sticker": {
-			"textures": "textures/poke/comp-sticker/demonic_allay_sticker"
+			"textures": "textures/poke/pfe/demonic_allay_sticker"
 		},
 		"poke_pfe_duck_sticker": {
-			"textures": "textures/poke/comp-sticker/duck_sticker"
+			"textures": "textures/poke/pfe/duck_sticker"
 		},
 		"poke_pfe_ender_phantom_sticker": {
-			"textures": "textures/poke/comp-sticker/ender_phantom_sticker"
+			"textures": "textures/poke/pfe/ender_phantom_sticker"
 		},
 		"poke_pfe_furnace_golem_sticker": {
-			"textures": "textures/poke/comp-sticker/furnace_golem_sticker"
+			"textures": "textures/poke/pfe/furnace_golem_sticker"
 		},
 		"poke_pfe_gilded_allay_sticker": {
-			"textures": "textures/poke/comp-sticker/gilded_allay_sticker"
+			"textures": "textures/poke/pfe/gilded_allay_sticker"
 		},
 		"poke_pfe_grizzly_bear_sticker": {
-			"textures": "textures/poke/comp-sticker/grizzly_bear_sticker"
+			"textures": "textures/poke/pfe/grizzly_bear_sticker"
 		},
 		"poke_pfe_knightling_sticker": {
-			"textures": "textures/poke/comp-sticker/knightling_sticker"
+			"textures": "textures/poke/pfe/knightling_sticker"
 		},
 		"poke_pfe_logger_sticker": {
-			"textures": "textures/poke/comp-sticker/logger_sticker"
+			"textures": "textures/poke/pfe/logger_sticker"
 		},
 		"poke_pfe_mini_demonic_allay_sticker": {
-			"textures": "textures/poke/comp-sticker/mini_demonic_allay_sticker"
+			"textures": "textures/poke/pfe/mini_demonic_allay_sticker"
 		},
 		"poke_pfe_money_man_sticker": {
-			"textures": "textures/poke/comp-sticker/money_man_sticker"
+			"textures": "textures/poke/pfe/money_man_sticker"
 		},
 		"poke_pfe_mushroom_buddy_sticker": {
-			"textures": "textures/poke/comp-sticker/mushroom_buddy_sticker"
+			"textures": "textures/poke/pfe/mushroom_buddy_sticker"
 		},
 		"poke_pfe_nebula_bug_sticker": {
-			"textures": "textures/poke/comp-sticker/nebula_bug_sticker"
+			"textures": "textures/poke/pfe/nebula_bug_sticker"
 		},
 		"poke_pfe_necromancer_sticker": {
-			"textures": "textures/poke/comp-sticker/necromancer_sticker"
+			"textures": "textures/poke/pfe/necromancer_sticker"
 		},
 		"poke_pfe_orange_squid_sticker": {
-			"textures": "textures/poke/comp-sticker/orange_squid_sticker"
+			"textures": "textures/poke/pfe/orange_squid_sticker"
 		},
 		"poke_pfe_pale_ocelot_sticker": {
-			"textures": "textures/poke/comp-sticker/pale_ocelot_sticker"
+			"textures": "textures/poke/pfe/pale_ocelot_sticker"
 		},
 		"poke_pfe_pink_squid_sticker": {
-			"textures": "textures/poke/comp-sticker/pink_squid_sticker"
+			"textures": "textures/poke/pfe/pink_squid_sticker"
 		},
 		"poke_pfe_piranha_sticker": {
-			"textures": "textures/poke/comp-sticker/piranha_sticker"
+			"textures": "textures/poke/pfe/piranha_sticker"
 		},
 		"poke_pfe_quest_trader_sticker": {
-			"textures": "textures/poke/comp-sticker/quest_trader_sticker"
+			"textures": "textures/poke/pfe/quest_trader_sticker"
 		},
 		"poke_pfe_raccoon_sticker": {
-			"textures": "textures/poke/comp-sticker/raccoon_sticker"
+			"textures": "textures/poke/pfe/raccoon_sticker"
 		},
 		"poke_pfe_rat_sticker": {
-			"textures": "textures/poke/comp-sticker/rat_sticker"
+			"textures": "textures/poke/pfe/rat_sticker"
 		},
 		"poke_pfe_red_panda_sticker": {
-			"textures": "textures/poke/comp-sticker/red_panda_sticker"
+			"textures": "textures/poke/pfe/red_panda_sticker"
 		},
 		"poke_pfe_red_sporefish_sticker": {
-			"textures": "textures/poke/comp-sticker/red_sporefish_sticker"
+			"textures": "textures/poke/pfe/red_sporefish_sticker"
 		},
 		"poke_pfe_retro_llama_sticker": {
-			"textures": "textures/poke/comp-sticker/retro_llama_sticker"
+			"textures": "textures/poke/pfe/retro_llama_sticker"
 		},
 		"poke_pfe_scrapper_sticker": {
-			"textures": "textures/poke/comp-sticker/scrapper_sticker"
+			"textures": "textures/poke/pfe/scrapper_sticker"
 		},
 		"poke_pfe_sculk_enderman_sticker": {
-			"textures": "textures/poke/comp-sticker/sculk_enderman_sticker"
+			"textures": "textures/poke/pfe/sculk_enderman_sticker"
 		},
 		"poke_pfe_shallow_cod_sticker": {
-			"textures": "textures/poke/comp-sticker/shallow_cod_sticker"
+			"textures": "textures/poke/pfe/shallow_cod_sticker"
 		},
 		"poke_pfe_shopkeeper_sticker": {
-			"textures": "textures/poke/comp-sticker/shopkeeper_sticker"
+			"textures": "textures/poke/pfe/shopkeeper_sticker"
 		},
 		"poke_pfe_shroomfin_sticker": {
-			"textures": "textures/poke/comp-sticker/shroomfin_sticker"
+			"textures": "textures/poke/pfe/shroomfin_sticker"
 		},
 		"poke_pfe_snowman_sticker": {
-			"textures": "textures/poke/comp-sticker/snowman_sticker"
+			"textures": "textures/poke/pfe/snowman_sticker"
 		},
 		"poke_pfe_soul_blaze_sticker": {
-			"textures": "textures/poke/comp-sticker/soul_blaze_sticker"
+			"textures": "textures/poke/pfe/soul_blaze_sticker"
 		},
 		"poke_pfe_sparky_sticker": {
-			"textures": "textures/poke/comp-sticker/sparky_sticker"
+			"textures": "textures/poke/pfe/sparky_sticker"
 		},
 		"poke_pfe_sporefish_sticker": {
-			"textures": "textures/poke/comp-sticker/sporefish_sticker"
+			"textures": "textures/poke/pfe/sporefish_sticker"
 		},
 		"poke_pfe_striker_sticker": {
-			"textures": "textures/poke/comp-sticker/striker_sticker"
+			"textures": "textures/poke/pfe/striker_sticker"
 		},
 		"poke_pfe_super_striker_sticker": {
-			"textures": "textures/poke/comp-sticker/super_striker_sticker"
+			"textures": "textures/poke/pfe/super_striker_sticker"
 		},
 		"poke_pfe_token_trader_sticker": {
-			"textures": "textures/poke/comp-sticker/token_trader_sticker"
+			"textures": "textures/poke/pfe/token_trader_sticker"
 		},
 		"poke_pfe_warped_sporecat_sticker": {
-			"textures": "textures/poke/comp-sticker/warped_sporecat_sticker"
+			"textures": "textures/poke/pfe/warped_sporecat_sticker"
 		},
 		"poke_pfe_warped_sporeshroom_sticker": {
-			"textures": "textures/poke/comp-sticker/warped_sporeshroom_sticker"
+			"textures": "textures/poke/pfe/warped_sporeshroom_sticker"
 		},
 		"poke_pfe_windswept_bear_sticker": {
-			"textures": "textures/poke/comp-sticker/windswept_bear_sticker"
+			"textures": "textures/poke/pfe/windswept_bear_sticker"
 		},
 		"poke_pfe_woods_goat_sticker": {
-			"textures": "textures/poke/comp-sticker/woods_goat_sticker"
+			"textures": "textures/poke/pfe/woods_goat_sticker"
 		},
 		"poke_pfe_woodspike_guardian_sticker": {
-			"textures": "textures/poke/comp-sticker/woodspike_guardian_sticker"
+			"textures": "textures/poke/pfe/woodspike_guardian_sticker"
 		},
 		"poke_pfe_yak_sticker": {
-			"textures": "textures/poke/comp-sticker/yak_sticker"
+			"textures": "textures/poke/pfe/yak_sticker"
 		},
 		"poke_pfe_zombken_sticker": {
-			"textures": "textures/poke/comp-sticker/zombken_sticker"
+			"textures": "textures/poke/pfe/zombken_sticker"
 		},
 		/**/
 		"poke_pfe_knightling_trophy": {
@@ -236,82 +230,22 @@
 		"poke_pfe_crafter_side": {
 			"textures": "textures/poke/pfe/pfe_crafting_table_side"
 		},
-		"poke_polished_shadowstone": {
+		"poke_pfe_polished_shadowstone": {
 			"textures": "textures/poke/pfe/polished_shadowstone"
 		},
-		"poke_shadowstone": {
+		"poke_pfe_shadowstone": {
 			"textures": "textures/poke/pfe/shadowstone"
 		},
-		"poke_cobbled_shadowstone": {
+		"poke_pfe_cobbled_shadowstone": {
 			"textures": "textures/poke/pfe/cobbled_shadowstone"
 		},
-		"poke_magic_8_ball": {
+		"poke_pfe_magic_8_ball": {
 			"textures": "textures/poke/pfe/8_ball"
 		},
-		"poke_spell_crafter": {
+		"poke_pfe_spell_crafter": {
 			"textures": "textures/poke/pfe/spell_crafter"
 		},
-		"poke_block_breaker_top": {
-			"textures": [
-				{
-					"path": "textures/poke/pfe/block_breaker_top",
-					"overlay_color": "#610310"
-				},
-				{
-					"path": "textures/poke/pfe/block_breaker_top",
-					"overlay_color": "#ce0c0c"
-				}
-			]
-		},
-		"poke_cobble_gen_top": {
-			"textures": [
-				{
-					"path": "textures/poke/pfe/cobble_gen_top",
-					"overlay_color": "#610310"
-				},
-				{
-					"path": "textures/poke/pfe/cobble_gen_top",
-					"overlay_color": "#ce0c0c"
-				}
-			]
-		},
-		"poke_cobble_gen_bottom": {
-			"textures": [
-				{
-					"path": "textures/poke/pfe/calibrated_block_breaker_bottom",
-					"overlay_color": "#FFFFFF"
-				},
-				{
-					"path": "textures/poke/pfe/calibrated_block_breaker_bottom",
-					"overlay_color": "#FFFFFF"
-				}
-			]
-		},
-		"poke_cobble_gen_flip": {
-			"textures": [
-				{
-					"path": "textures/poke/pfe/cobble_gen_flip",
-					"overlay_color": "#610310"
-				},
-				{
-					"path": "textures/poke/pfe/cobble_gen_flip",
-					"overlay_color": "#ce0c0c"
-				}
-			]
-		},
-		"poke_cobble_gen": {
-			"textures": [
-				{
-					"path": "textures/poke/pfe/cobble_gen",
-					"overlay_color": "#610310"
-				},
-				{
-					"path": "textures/poke/pfe/cobble_gen",
-					"overlay_color": "#ce0c0c"
-				}
-			]
-		},
-		"poke_cobbler_top": {
+		"poke_pfe_cobbler_top": {
 			"textures": [
 				{
 					"path": "textures/poke/pfe/calibrated_block_breaker_bottom",
@@ -323,7 +257,7 @@
 				}
 			]
 		},
-		"poke_cobbler_flip": {
+		"poke_pfe_cobbler_flip": {
 			"textures": [
 				{
 					"path": "textures/poke/pfe/cobbler_flip",
@@ -335,7 +269,7 @@
 				}
 			]
 		},
-		"poke_cobbler": {
+		"poke_pfe_cobbler": {
 			"textures": [
 				{
 					"path": "textures/poke/pfe/cobbler",
@@ -347,7 +281,7 @@
 				}
 			]
 		},
-		"poke_cobbler_bottom": {
+		"poke_pfe_cobbler_bottom": {
 			"textures": [
 				{
 					"path": "textures/poke/pfe/cobbler_bottom",
@@ -359,82 +293,16 @@
 				}
 			]
 		},
-		"poke_honey_trapdoor": {
+		"poke_pfe_honey_trapdoor": {
 			"textures": "textures/poke/pfe/honey_trapdoor"
 		},
-		"poke_honey_tiles": {
+		"poke_pfe_honey_tiles": {
 			"textures": "textures/poke/pfe/honey_tiles"
 		},
-		"poke_chiseled_honey_bricks": {
+		"poke_pfe_chiseled_honey_bricks": {
 			"textures": "textures/poke/pfe/chiseled_honey_bricks"
 		},
-		"poke_cobble_gen_side180": {
-			"textures": [
-				{
-					"path": "textures/poke/pfe/calibrated_cobble_gen_side180",
-					"overlay_color": "#610310"
-				},
-				{
-					"path": "textures/poke/pfe/calibrated_cobble_gen_side180",
-					"overlay_color": "#ce0c0c"
-				}
-			]
-		},
-		"poke_cobble_gen_side-90": {
-			"textures": [
-				{
-					"path": "textures/poke/pfe/calibrated_cobble_gen_side-90",
-					"overlay_color": "#610310"
-				},
-				{
-					"path": "textures/poke/pfe/calibrated_cobble_gen_side-90",
-					"overlay_color": "#ce0c0c"
-				}
-			]
-		},
-		"poke_cobble_gen_side90": {
-			"textures": [
-				{
-					"path": "textures/poke/pfe/calibrated_cobble_gen_side90",
-					"overlay_color": "#610310"
-				},
-				{
-					"path": "textures/poke/pfe/calibrated_cobble_gen_side90",
-					"overlay_color": "#ce0c0c"
-				}
-			]
-		},
-		"poke_cobble_gen_side": {
-			"textures": [
-				{
-					"path": "textures/poke/pfe/calibrated_cobble_gen_side",
-					"overlay_color": "#610310"
-				},
-				{
-					"path": "textures/poke/pfe/calibrated_cobble_gen_side",
-					"overlay_color": "#ce0c0c"
-				}
-			]
-		},
-		"poke_cobble_gen_front": {
-			"textures": [
-				{
-					"path": "textures/poke/pfe/calibrated_cobble_gen_front",
-					"overlay_color": "#610310"
-				},
-				{
-					"path": "textures/poke/pfe/calibrated_cobble_gen_front",
-					"overlay_color": "#ce0c0c"
-				}
-			]
-		},
-		"poke_cali_block_breaker_bottom": {
-			"textures": "textures/poke/pfe/calibrated_block_breaker_bottom"
-		},
-		"poke_cali_block_breaker_top": {
-			"textures": "textures/poke/pfe/calibrated_block_breaker_top"
-		},
-		"poke_demonic_allay_conduit": {
+		"poke_pfe_demonic_allay_conduit": {
 			"textures": [
 				{
 					"path": "textures/poke/pfe/demonic_allay_conduit",
@@ -446,7 +314,7 @@
 				}
 			]
 		},
-		"poke_barometer": {
+		"poke_pfe_barometer": {
 			"textures": [
 				{
 					"path": "textures/poke/pfe/barometer_clear"
@@ -459,143 +327,143 @@
 				}
 			]
 		},
-		"poke_dye_unmixer": {
+		"poke_pfe_dye_unmixer": {
 			"textures": "textures/poke/pfe/dye_unmixer"
 		},
-		"poke_beetroot_crate": {
+		"poke_pfe_beetroot_crate": {
 			"textures": "textures/poke/pfe/beetroot_crate"
 		},
-		"poke_potato_crate": {
+		"poke_pfe_potato_crate": {
 			"textures": "textures/poke/pfe/potato_crate"
 		},
-		"poke_carrot_crate": {
+		"poke_pfe_carrot_crate": {
 			"textures": "textures/poke/pfe/carrot_crate"
 		},
-		"poke_red_mushroom_crate": {
+		"poke_pfe_red_mushroom_crate": {
 			"textures": "textures/poke/pfe/red_mushroom_crate"
 		},
-		"poke_brown_mushroom_crate": {
+		"poke_pfe_brown_mushroom_crate": {
 			"textures": "textures/poke/pfe/brown_mushroom_crate"
 		},
-		"poke_chorus_fruit_crate": {
+		"poke_pfe_chorus_fruit_crate": {
 			"textures": "textures/poke/pfe/chorus_fruit_crate"
 		},
-		"poke_nether_wart_crate": {
+		"poke_pfe_nether_wart_crate": {
 			"textures": "textures/poke/pfe/netherwart_crate"
 		},
-		"poke_sweet_berry_crate": {
+		"poke_pfe_sweet_berry_crate": {
 			"textures": "textures/poke/pfe/sweet_berry_crate"
 		},
-		"poke_glow_berry_crate": {
+		"poke_pfe_glow_berry_crate": {
 			"textures": "textures/poke/pfe/glow_berry_crate"
 		},
-		"poke_melon_crate": {
+		"poke_pfe_melon_crate": {
 			"textures": "textures/poke/pfe/melon_crate"
 		},
-		"poke_pumpkin_crate": {
+		"poke_pfe_pumpkin_crate": {
 			"textures": "textures/poke/pfe/pumpkin_crate"
 		},
-		"poke_deepslate_godly_ore": {
+		"poke_pfe_deepslate_godly_ore": {
 			"textures": [
 				"textures/poke/pfe/godly_ore_pattern",
 				"textures/blocks/deepslate/deepslate"
 			],
 			"additive": true
 		},
-		"poke_golden_turnip_trophy": {
+		"poke_pfe_golden_turnip_trophy": {
 			"textures": "textures/poke/pfe/golden_turnip_block"
 		},
-		"poke_turnip_1": {
+		"poke_pfe_turnip_1": {
 			"textures": "textures/poke/pfe/turnip_stage_1"
 		},
-		"poke_turnip_2": {
+		"poke_pfe_turnip_2": {
 			"textures": "textures/poke/pfe/turnip_stage_2"
 		},
-		"poke_turnip_3": {
+		"poke_pfe_turnip_3": {
 			"textures": "textures/poke/pfe/turnip_stage_3"
 		},
-		"poke_cut_astral": {
+		"poke_pfe_cut_astral": {
 			"textures": {
 				"path": "textures/poke/pfe/cut_block",
 				"overlay_color": "#311e46"
 			}
 		},
-		"poke_cut_death": {
+		"poke_pfe_cut_death": {
 			"textures": {
 				"path": "textures/poke/pfe/cut_block",
 				"overlay_color": "#101218"
 			}
 		},
-		"poke_cut_demonic": {
+		"poke_pfe_cut_demonic": {
 			"textures": {
 				"path": "textures/poke/pfe/cut_block",
 				"overlay_color": "#2f181d"
 			}
 		},
-		"poke_cut_galaxy": {
+		"poke_pfe_cut_galaxy": {
 			"textures": {
 				"path": "textures/poke/pfe/cut_block",
 				"overlay_color": "#502662"
 			}
 		},
-		"poke_cut_hellish": {
+		"poke_pfe_cut_hellish": {
 			"textures": {
 				"path": "textures/poke/pfe/cut_block",
 				"overlay_color": "#882329"
 			}
 		},
-		"poke_cut_godly": {
+		"poke_pfe_cut_godly": {
 			"textures": {
 				"path": "textures/poke/pfe/cut_block",
 				"overlay_color": "#584b42"
 			}
 		},
-		"poke_cut_holy": {
+		"poke_pfe_cut_holy": {
 			"textures": {
 				"path": "textures/poke/pfe/cut_block",
 				"overlay_color": "#7c7c7c"
 			}
 		},
-		"poke_cut_molten": {
+		"poke_pfe_cut_molten": {
 			"textures": {
 				"path": "textures/poke/pfe/cut_block",
 				"overlay_color": "#924200"
 			}
 		},
-		"poke_cut_medic": {
+		"poke_pfe_cut_medic": {
 			"textures": {
 				"path": "textures/poke/pfe/cut_block",
 				"overlay_color": "#9F3371"
 			}
 		},
-		"poke_cut_nebula": {
+		"poke_pfe_cut_nebula": {
 			"textures": "textures/poke/pfe/cut_nebula_block"
 		},
-		"poke_cut_onyx": {
+		"poke_pfe_cut_onyx": {
 			"textures": {
 				"path": "textures/poke/pfe/cut_block",
 				"overlay_color": "#181233"
 			}
 		},
-		"poke_cut_radium": {
+		"poke_pfe_cut_radium": {
 			"textures": {
 				"path": "textures/poke/pfe/cut_block",
 				"overlay_color": "#258d2c"
 			}
 		},
-		"poke_cut_shade": {
+		"poke_pfe_cut_shade": {
 			"textures": {
 				"path": "textures/poke/pfe/cut_block",
 				"overlay_color": "#1a3c1c"
 			}
 		},
-		"poke_cut_void": {
+		"poke_pfe_cut_void": {
 			"textures": {
 				"path": "textures/poke/pfe/cut_block",
 				"overlay_color": "#181818"
 			}
 		},
-		"poke_beeulb": {
+		"poke_pfe_beeulb": {
 			"textures": [
 				{
 					"path": "textures/poke/pfe/beeulb",
@@ -663,7 +531,7 @@
 				}
 			]
 		},
-		"poke_astral_bulb": {
+		"poke_pfe_astral_bulb": {
 			"textures": [
 				{
 					"path": "textures/poke/pfe/astral_bulb",
@@ -731,7 +599,7 @@
 				}
 			]
 		},
-		"poke_death_bulb": {
+		"poke_pfe_death_bulb": {
 			"textures": [
 				{
 					"path": "textures/poke/pfe/death_bulb",
@@ -799,7 +667,7 @@
 				}
 			]
 		},
-		"poke_demonic_bulb": {
+		"poke_pfe_demonic_bulb": {
 			"textures": [
 				{
 					"path": "textures/poke/pfe/demonic_bulb",
@@ -867,7 +735,7 @@
 				}
 			]
 		},
-		"poke_galaxy_bulb": {
+		"poke_pfe_galaxy_bulb": {
 			"textures": [
 				{
 					"path": "textures/poke/pfe/galaxy_bulb",
@@ -935,7 +803,7 @@
 				}
 			]
 		},
-		"poke_hellish_bulb": {
+		"poke_pfe_hellish_bulb": {
 			"textures": [
 				{
 					"path": "textures/poke/pfe/hellish_bulb",
@@ -1003,7 +871,7 @@
 				}
 			]
 		},
-		"poke_godly_bulb": {
+		"poke_pfe_godly_bulb": {
 			"textures": [
 				{
 					"path": "textures/poke/pfe/godly_bulb",
@@ -1071,7 +939,7 @@
 				}
 			]
 		},
-		"poke_holy_bulb": {
+		"poke_pfe_holy_bulb": {
 			"textures": [
 				{
 					"path": "textures/poke/pfe/holy_bulb",
@@ -1139,7 +1007,7 @@
 				}
 			]
 		},
-		"poke_molten_bulb": {
+		"poke_pfe_molten_bulb": {
 			"textures": [
 				{
 					"path": "textures/poke/pfe/molten_bulb",
@@ -1207,7 +1075,7 @@
 				}
 			]
 		},
-		"poke_medic_bulb": {
+		"poke_pfe_medic_bulb": {
 			"textures": [
 				{
 					"path": "textures/poke/pfe/medic_bulb",
@@ -1275,7 +1143,7 @@
 				}
 			]
 		},
-		"poke_nebula_bulb": {
+		"poke_pfe_nebula_bulb": {
 			"textures": [
 				{
 					"path": "textures/poke/pfe/nebula_bulb",
@@ -1343,7 +1211,7 @@
 				}
 			]
 		},
-		"poke_onyx_bulb": {
+		"poke_pfe_onyx_bulb": {
 			"textures": [
 				{
 					"path": "textures/poke/pfe/onyx_bulb",
@@ -1411,7 +1279,7 @@
 				}
 			]
 		},
-		"poke_radium_bulb": {
+		"poke_pfe_radium_bulb": {
 			"textures": [
 				{
 					"path": "textures/poke/pfe/radium_bulb",
@@ -1479,7 +1347,7 @@
 				}
 			]
 		},
-		"poke_shade_bulb": {
+		"poke_pfe_shade_bulb": {
 			"textures": [
 				{
 					"path": "textures/poke/pfe/shade_bulb",
@@ -1547,7 +1415,7 @@
 				}
 			]
 		},
-		"poke_void_bulb": {
+		"poke_pfe_void_bulb": {
 			"textures": [
 				{
 					"path": "textures/poke/pfe/void_bulb",
@@ -1615,7 +1483,7 @@
 				}
 			]
 		},
-		"poke_cobalt_bulb": {
+		"poke_pfe_cobalt_bulb": {
 			"textures": [
 				{
 					"path": "textures/poke/pfe/cobalt_bulb",
@@ -1683,7 +1551,7 @@
 				}
 			]
 		},
-		"poke_limestone_bulb": {
+		"poke_pfe_limestone_bulb": {
 			"textures": [
 				{
 					"path": "textures/poke/pfe/limestone_bulb",
@@ -1751,371 +1619,371 @@
 				}
 			]
 		},
-		"poke_deepslate_cobalt_ore": {
+		"poke_pfe_deepslate_cobalt_ore": {
 			"textures": [
 				"textures/poke/pfe/cobalt_ore_pattern",
 				"textures/blocks/deepslate/deepslate"
 			],
 			"additive": true
 		},
-		"poke_deepslate_shade_ore": {
+		"poke_pfe_deepslate_shade_ore": {
 			"textures": [
 				"textures/poke/pfe/shade_ore_pattern",
 				"textures/blocks/deepslate/deepslate"
 			],
 			"additive": true
 		},
-		"poke_flint_crate": {
+		"poke_pfe_flint_crate": {
 			"textures": "textures/poke/pfe/flint_crate"
 		},
-		"poke_rotten_flesh_crate": {
+		"poke_pfe_rotten_flesh_crate": {
 			"textures": "textures/poke/pfe/rotten_flesh_crate"
 		},
-		"poke_deepslate_holy_ore": {
+		"poke_pfe_deepslate_holy_ore": {
 			"textures": [
 				"textures/poke/pfe/holy_ore_pattern",
 				"textures/blocks/deepslate/deepslate"
 			],
 			"additive": true
 		},
-		"poke_cobalt_trapdoor": {
+		"poke_pfe_cobalt_trapdoor": {
 			"textures": "textures/poke/pfe/cobalt_trapdoor"
 		},
-		"poke_molten_trapdoor": {
+		"poke_pfe_molten_trapdoor": {
 			"textures": "textures/poke/pfe/molten_trapdoor"
 		},
-		"poke_astral_trapdoor": {
+		"poke_pfe_astral_trapdoor": {
 			"textures": "textures/poke/pfe/astral_trapdoor"
 		},
-		"poke_demonic_trapdoor": {
+		"poke_pfe_demonic_trapdoor": {
 			"textures": "textures/poke/pfe/demonic_trapdoor"
 		},
-		"poke_galaxy_trapdoor": {
+		"poke_pfe_galaxy_trapdoor": {
 			"textures": "textures/poke/pfe/galaxy_trapdoor"
 		},
-		"poke_godly_trapdoor": {
+		"poke_pfe_godly_trapdoor": {
 			"textures": "textures/poke/pfe/godly_trapdoor"
 		},
-		"poke_hellish_trapdoor": {
+		"poke_pfe_hellish_trapdoor": {
 			"textures": "textures/poke/pfe/hellish_trapdoor"
 		},
-		"poke_holy_trapdoor": {
+		"poke_pfe_holy_trapdoor": {
 			"textures": "textures/poke/pfe/holy_trapdoor"
 		},
-		"poke_radium_trapdoor": {
+		"poke_pfe_radium_trapdoor": {
 			"textures": "textures/poke/pfe/radium_trapdoor"
 		},
-		"poke_shade_trapdoor": {
+		"poke_pfe_shade_trapdoor": {
 			"textures": "textures/poke/pfe/shade_trapdoor"
 		},
-		"poke_nebula_trapdoor": {
+		"poke_pfe_nebula_trapdoor": {
 			"textures": "textures/poke/pfe/nebula_trapdoor"
 		},
-		"poke_void_trapdoor": {
+		"poke_pfe_void_trapdoor": {
 			"textures": "textures/poke/pfe/void_trapdoor"
 		},
-		"poke_onyx_trapdoor": {
+		"poke_pfe_onyx_trapdoor": {
 			"textures": "textures/poke/pfe/onyx_trapdoor"
 		},
-		"poke_death_trapdoor": {
+		"poke_pfe_death_trapdoor": {
 			"textures": "textures/poke/pfe/death_trapdoor"
 		},
-		"poke_medic_trapdoor": {
+		"poke_pfe_medic_trapdoor": {
 			"textures": "textures/poke/pfe/medic_trapdoor"
 		},
-		"poke_magnet_block": {
+		"poke_pfe_magnet_block": {
 			"textures": "textures/poke/pfe/magnet_block"
 		},
-		"poke_radium_block": {
+		"poke_pfe_radium_block": {
 			"textures": "textures/poke/pfe/radium_block"
 		},
-		"poke_cracked_cobalt_bricks": {
+		"poke_pfe_cracked_cobalt_bricks": {
 			"textures": {
 				"path": "textures/poke/pfe/cracked_bricks",
 				"overlay_color": "#2c2eb1"
 			}
 		},
-		"poke_cracked_void_bricks": {
+		"poke_pfe_cracked_void_bricks": {
 			"textures": {
 				"path": "textures/poke/pfe/cracked_bricks",
 				"overlay_color": "#0b0b0b"
 			}
 		},
-		"poke_cracked_radium_bricks": {
+		"poke_pfe_cracked_radium_bricks": {
 			"textures": {
 				"path": "textures/poke/pfe/cracked_bricks",
 				"overlay_color": "#37ee0f"
 			}
 		},
-		"poke_cracked_onyx_bricks": {
+		"poke_pfe_cracked_onyx_bricks": {
 			"textures": {
 				"path": "textures/poke/pfe/cracked_bricks",
 				"overlay_color": "#1f1740"
 			}
 		},
-		"poke_cracked_death_bricks": {
+		"poke_pfe_cracked_death_bricks": {
 			"textures": {
 				"path": "textures/poke/pfe/cracked_bricks",
 				"overlay_color": "#17141d"
 			}
 		},
-		"poke_cracked_galaxy_bricks": {
+		"poke_pfe_cracked_galaxy_bricks": {
 			"textures": {
 				"path": "textures/poke/pfe/cracked_bricks",
 				"overlay_color": "#7435a4"
 			}
 		},
-		"poke_cracked_godly_bricks": {
+		"poke_pfe_cracked_godly_bricks": {
 			"textures": {
 				"path": "textures/poke/pfe/cracked_bricks",
 				"overlay_color": "#a09874"
 			}
 		},
-		"poke_cracked_hellish_bricks": {
+		"poke_pfe_cracked_hellish_bricks": {
 			"textures": {
 				"path": "textures/poke/pfe/cracked_bricks",
 				"overlay_color": "#c2222a"
 			}
 		},
-		"poke_cracked_demonic_bricks": {
+		"poke_pfe_cracked_demonic_bricks": {
 			"textures": {
 				"path": "textures/poke/pfe/cracked_bricks",
 				"overlay_color": "#2b0a0e"
 			}
 		},
-		"poke_cracked_molten_bricks": {
+		"poke_pfe_cracked_molten_bricks": {
 			"textures": {
 				"path": "textures/poke/pfe/cracked_bricks",
 				"overlay_color": "#d06429"
 			}
 		},
-		"poke_cracked_medic_bricks": {
+		"poke_pfe_cracked_medic_bricks": {
 			"textures": {
 				"path": "textures/poke/pfe/cracked_bricks",
 				"overlay_color": "#e132a7"
 			}
 		},
-		"poke_cracked_astral_bricks": {
+		"poke_pfe_cracked_astral_bricks": {
 			"textures": {
 				"path": "textures/poke/pfe/cracked_bricks",
 				"overlay_color": "#1c0738"
 			}
 		},
-		"poke_cracked_shade_bricks": {
+		"poke_pfe_cracked_shade_bricks": {
 			"textures": {
 				"path": "textures/poke/pfe/cracked_bricks",
 				"overlay_color": "#1c6f26"
 			}
 		},
-		"poke_cracked_holy_bricks": {
+		"poke_pfe_cracked_holy_bricks": {
 			"textures": {
 				"path": "textures/poke/pfe/cracked_bricks",
 				"overlay_color": "#686862"
 			}
 		},
-		"poke_cracked_shadowstone_bricks": {
+		"poke_pfe_cracked_shadowstone_bricks": {
 			"textures": {
 				"path": "textures/poke/pfe/cracked_bricks",
 				"overlay_color": "#52315c"
 			}
 		},
-		"poke_cracked_banished_bricks": {
+		"poke_pfe_cracked_banished_bricks": {
 			"textures": {
 				"path": "textures/poke/pfe/cracked_bricks",
 				"tint_color": "#323232"
 			}
 		},
-		"poke_cracked_limestone_bricks": {
+		"poke_pfe_cracked_limestone_bricks": {
 			"textures": "textures/poke/pfe/cracked_limestone_bricks"
 		},
-		"poke_cracked_honey_bricks": {
+		"poke_pfe_cracked_honey_bricks": {
 			"textures": "textures/poke/pfe/cracked_honey_bricks"
 		},
-		"poke_cracked_nebula_bricks": {
+		"poke_pfe_cracked_nebula_bricks": {
 			"textures": "textures/poke/pfe/cracked_nebula_bricks"
 		},
-		"poke_void_bricks": {
+		"poke_pfe_void_bricks": {
 			"textures": {
 				"path": "textures/poke/pfe/bricks",
 				"overlay_color": "#0b0b0b"
 			}
 		},
-		"poke_radium_bricks": {
+		"poke_pfe_radium_bricks": {
 			"textures": {
 				"path": "textures/poke/pfe/bricks",
 				"overlay_color": "#37ee0f"
 			}
 		},
-		"poke_onyx_bricks": {
+		"poke_pfe_onyx_bricks": {
 			"textures": {
 				"path": "textures/poke/pfe/bricks",
 				"overlay_color": "#1f1740"
 			}
 		},
-		"poke_cobalt_bricks": {
+		"poke_pfe_cobalt_bricks": {
 			"textures": {
 				"path": "textures/poke/pfe/bricks",
 				"overlay_color": "#2c2eb1"
 			}
 		},
-		"poke_death_bricks": {
+		"poke_pfe_death_bricks": {
 			"textures": {
 				"path": "textures/poke/pfe/bricks",
 				"overlay_color": "#17141d"
 			}
 		},
-		"poke_galaxy_bricks": {
+		"poke_pfe_galaxy_bricks": {
 			"textures": {
 				"path": "textures/poke/pfe/bricks",
 				"overlay_color": "#7435a4"
 			}
 		},
-		"poke_godly_bricks": {
+		"poke_pfe_godly_bricks": {
 			"textures": {
 				"path": "textures/poke/pfe/bricks",
 				"overlay_color": "#a09874"
 			}
 		},
-		"poke_hellish_bricks": {
+		"poke_pfe_hellish_bricks": {
 			"textures": {
 				"path": "textures/poke/pfe/bricks",
 				"overlay_color": "#c2222a"
 			}
 		},
-		"poke_demonic_bricks": {
+		"poke_pfe_demonic_bricks": {
 			"textures": {
 				"path": "textures/poke/pfe/bricks",
 				"overlay_color": "#2b0a0e"
 			}
 		},
-		"poke_molten_bricks": {
+		"poke_pfe_molten_bricks": {
 			"textures": {
 				"path": "textures/poke/pfe/bricks",
 				"overlay_color": "#d06429"
 			}
 		},
-		"poke_medic_bricks": {
+		"poke_pfe_medic_bricks": {
 			"textures": {
 				"path": "textures/poke/pfe/bricks",
 				"overlay_color": "#e132a7"
 			}
 		},
-		"poke_astral_bricks": {
+		"poke_pfe_astral_bricks": {
 			"textures": {
 				"path": "textures/poke/pfe/bricks",
 				"overlay_color": "#1c0738"
 			}
 		},
-		"poke_shade_bricks": {
+		"poke_pfe_shade_bricks": {
 			"textures": {
 				"path": "textures/poke/pfe/bricks",
 				"overlay_color": "#1c6f26"
 			}
 		},
-		"poke_holy_bricks": {
+		"poke_pfe_holy_bricks": {
 			"textures": {
 				"path": "textures/poke/pfe/bricks",
 				"overlay_color": "#686862"
 			}
 		},
-		"poke_shadowstone_bricks": {
+		"poke_pfe_shadowstone_bricks": {
 			"textures": {
 				"path": "textures/poke/pfe/bricks",
 				"overlay_color": "#52315c"
 			}
 		},
-		"poke_banished_bricks": {
+		"poke_pfe_banished_bricks": {
 			"textures": {
 				"path": "textures/poke/pfe/bricks",
 				"tint_color": "#323232"
 			}
 		},
-		"poke_nebula_bricks": {
+		"poke_pfe_nebula_bricks": {
 			"textures": "textures/poke/pfe/nebula_bricks"
 		},
-		"poke_limestone_bricks": {
+		"poke_pfe_limestone_bricks": {
 			"textures": "textures/poke/pfe/limestone_bricks"
 		},
-		"poke_honey_bricks": {
+		"poke_pfe_honey_bricks": {
 			"textures": "textures/poke/pfe/honey_bricks"
 		},
-		"poke_end_holy_ore": {
+		"poke_pfe_end_holy_ore": {
 			"textures": [
 				"textures/poke/pfe/holy_ore_pattern",
 				"textures/blocks/end_stone"
 			],
 			"additive": true
 		},
-		"poke_red_present": {
+		"poke_pfe_red_present": {
 			"textures": "textures/poke/pfe/red_present"
 		},
-		"poke_apple_crate": {
+		"poke_pfe_apple_crate": {
 			"textures": "textures/poke/pfe/apple_crate"
 		},
-		"poke_medic_block": {
+		"poke_pfe_medic_block": {
 			"textures": "textures/poke/pfe/medic_block"
 		},
-		"poke_death_block": {
+		"poke_pfe_death_block": {
 			"textures": "textures/poke/pfe/death_block"
 		},
-		"poke_limestone_tombstone": {
+		"poke_pfe_limestone_tombstone": {
 			"textures": "textures/poke/pfe/limestone_tombstone"
 		},
-		"poke_sugarcane_crate": {
+		"poke_pfe_sugarcane_crate": {
 			"textures": "textures/poke/pfe/sugarcane_crate"
 		},
-		"poke_empty_crate": {
+		"poke_pfe_empty_crate": {
 			"textures": "textures/poke/pfe/empty_crate"
 		},
-		"poke_charred_poppy": {
+		"poke_pfe_charred_poppy": {
 			"textures": "textures/poke/pfe/charred_poppy"
 		},
-		"poke_empty_mug": {
+		"poke_pfe_empty_mug": {
 			"textures": "textures/poke/pfe/empty_mug"
 		},
-		"poke_coffee_mug": {
+		"poke_pfe_coffee_mug": {
 			"textures": "textures/poke/pfe/coffee_mug"
 		},
-		"poke_chiseled_cobalt": {
+		"poke_pfe_chiseled_cobalt": {
 			"textures": "textures/poke/pfe/chiseled_cobalt"
 		},
-		"poke_beveled_limestone": {
+		"poke_pfe_beveled_limestone": {
 			"textures": "textures/poke/pfe/beveled_limestone"
 		},
-		"poke_cornered_chamfered_limestone": {
+		"poke_pfe_cornered_chamfered_limestone": {
 			"textures": "textures/poke/pfe/cornerd_chamfered_limestone"
 		},
-		"poke_smooth_limestone": {
+		"poke_pfe_smooth_limestone": {
 			"textures": "textures/poke/pfe/smooth_limestone"
 		},
-		"poke_polished_limestone": {
+		"poke_pfe_polished_limestone": {
 			"textures": "textures/poke/pfe/polished_limestone"
 		},
-		"poke_chamfered_limestone": {
+		"poke_pfe_chamfered_limestone": {
 			"textures": "textures/poke/pfe/chamfered_limestone"
 		},
-		"poke_chiseled_limestone": {
+		"poke_pfe_chiseled_limestone": {
 			"textures": "textures/poke/pfe/chiseled_limestone"
 		},
-		"poke_gilded_melon_side": {
+		"poke_pfe_gilded_melon_side": {
 			"textures": "textures/poke/pfe/gilded_melon_side"
 		},
-		"poke_gilded_melon_top": {
+		"poke_pfe_gilded_melon_top": {
 			"textures": "textures/poke/pfe/gilded_melon_top"
 		},
-		"poke_charred_melon_side": {
+		"poke_pfe_charred_melon_side": {
 			"textures": "textures/poke/pfe/charred_melon_side"
 		},
-		"poke_charred_melon_top": {
+		"poke_pfe_charred_melon_top": {
 			"textures": "textures/poke/pfe/charred_melon_top"
 		},
-		"poke_carved_carved_melon_side": {
+		"poke_pfe_carved_carved_melon_side": {
 			"textures": "textures/poke/pfe/carved_carved_melon_side"
 		},
-		"poke_carved_carved_melon_top": {
+		"poke_pfe_carved_carved_melon_top": {
 			"textures": "textures/poke/pfe/carved_carved_melon_top"
 		},
-		"poke_gilded_melon_face": {
+		"poke_pfe_gilded_melon_face": {
 			"textures": [
 				{
 					"path": "textures/poke/pfe/gilded_melon_side"
@@ -2126,7 +1994,7 @@
 			],
 			"additive": true
 		},
-		"poke_charred_melon_face": {
+		"poke_pfe_charred_melon_face": {
 			"textures": [
 				{
 					"path": "textures/poke/pfe/charred_melon_side"
@@ -2137,7 +2005,7 @@
 			],
 			"additive": true
 		},
-		"poke_carved_carved_melon_face": {
+		"poke_pfe_carved_carved_melon_face": {
 			"textures": [
 				{
 					"path": "textures/poke/pfe/carved_carved_melon_side"
@@ -2148,7 +2016,7 @@
 			],
 			"additive": true
 		},
-		"poke_carved_melon_face": {
+		"poke_pfe_carved_melon_face": {
 			"textures": [
 				{
 					"path": "textures/poke/pfe/zcarved_melon_pattern"
@@ -2159,198 +2027,198 @@
 			],
 			"additive": true
 		},
-		"poke_cobalt_edged_glass": {
+		"poke_pfe_cobalt_edged_glass": {
 			"textures": "textures/poke/pfe/cobalt_glass"
 		},
-		"poke_cut_cobalt": {
+		"poke_pfe_cut_cobalt": {
 			"textures": {
 				"path": "textures/poke/pfe/cut_block",
 				"overlay_color": "#2a3162"
 			}
 		},
-		"poke_furnace_golem_trophy": {
+		"poke_pfe_furnace_golem_trophy": {
 			"textures": "textures/poke/pfe/furnace_golem_trophy"
 		},
-		"poke_shade_ore": {
+		"poke_pfe_shade_ore": {
 			"textures": [
 				"textures/poke/pfe/shade_ore_pattern",
 				"textures/blocks/stone"
 			],
 			"additive": true
 		},
-		"poke_hellish_ore": {
+		"poke_pfe_hellish_ore": {
 			"textures": [
 				"textures/poke/pfe/hellish_ore_pattern",
 				"textures/blocks/stone"
 			],
 			"additive": true
 		},
-		"poke_deepslate_hellish_ore": {
+		"poke_pfe_deepslate_hellish_ore": {
 			"textures": [
 				"textures/poke/pfe/hellish_ore_pattern",
 				"textures/blocks/deepslate/deepslate"
 			],
 			"additive": true
 		},
-		"poke_hellish_block": {
+		"poke_pfe_hellish_block": {
 			"textures": "textures/poke/pfe/hellish_block"
 		},
-		"poke_onyx": {
+		"poke_pfe_onyx": {
 			"textures": [
 				"textures/poke/pfe/onyx_ore_pattern",
 				"textures/blocks/deepslate/deepslate"
 			],
 			"additive": true
 		},
-		"poke_onyx_block": {
+		"poke_pfe_onyx_block": {
 			"textures": "textures/poke/pfe/onyx_block"
 		},
-		"poke_cobbled_limestone": {
+		"poke_pfe_cobbled_limestone": {
 			"textures": "textures/poke/pfe/cobbled_limestone"
 		},
-		"poke_limestone": {
+		"poke_pfe_limestone": {
 			"textures": "textures/poke/pfe/limestone"
 		},
-		"poke_holy_ore": {
+		"poke_pfe_holy_ore": {
 			"textures": [
 				"textures/poke/pfe/holy_ore_pattern",
 				"textures/blocks/stone"
 			],
 			"additive": true
 		},
-		"poke_holy_block": {
+		"poke_pfe_holy_block": {
 			"textures": "textures/poke/pfe/holy_block"
 		},
-		"poke_nebula_ore": {
+		"poke_pfe_nebula_ore": {
 			"textures": [
 				"textures/poke/pfe/nebula_ore_pattern",
 				"textures/blocks/end_stone"
 			],
 			"additive": true
 		},
-		"poke_nebula_block": {
+		"poke_pfe_nebula_block": {
 			"textures": "textures/poke/pfe/nebula_block"
 		},
-		"poke_godly_ore": {
+		"poke_pfe_godly_ore": {
 			"textures": [
 				"textures/poke/pfe/godly_ore_pattern",
 				"textures/blocks/stone"
 			],
 			"additive": true
 		},
-		"poke_demonic_ore": {
+		"poke_pfe_demonic_ore": {
 			"textures": [
 				"textures/poke/pfe/demonic_ore_pattern",
 				"textures/blocks/stone"
 			],
 			"additive": true
 		},
-		"poke_deepslate_demonic_ore": {
+		"poke_pfe_deepslate_demonic_ore": {
 			"textures": [
 				"textures/poke/pfe/demonic_ore_pattern",
 				"textures/blocks/deepslate/deepslate"
 			],
 			"additive": true
 		},
-		"poke_galaxy_ore": {
+		"poke_pfe_galaxy_ore": {
 			"textures": [
 				"textures/poke/pfe/galaxy_ore_pattern",
 				"textures/blocks/stone"
 			],
 			"additive": true
 		},
-		"poke_void_ore": {
+		"poke_pfe_void_ore": {
 			"textures": [
 				"textures/poke/pfe/void_ore_pattern",
 				"textures/blocks/deepslate/deepslate"
 			],
 			"additive": true
 		},
-		"poke_void_block": {
+		"poke_pfe_void_block": {
 			"textures": "textures/poke/pfe/void_block"
 		},
-		"poke_shade_block": {
+		"poke_pfe_shade_block": {
 			"textures": "textures/poke/pfe/shade_block"
 		},
-		"poke_godly_block": {
+		"poke_pfe_godly_block": {
 			"textures": "textures/poke/pfe/godly_block"
 		},
-		"poke_galaxy_block": {
+		"poke_pfe_galaxy_block": {
 			"textures": "textures/poke/pfe/galaxy_block"
 		},
-		"poke_demonic_block": {
+		"poke_pfe_demonic_block": {
 			"textures": "textures/poke/pfe/demonic_block"
 		},
-		"poke_cobalt_ore": {
+		"poke_pfe_cobalt_ore": {
 			"textures": [
 				"textures/poke/pfe/cobalt_ore_pattern",
 				"textures/blocks/stone"
 			],
 			"additive": true
 		},
-		"poke_cobalt_block": {
+		"poke_pfe_cobalt_block": {
 			"textures": "textures/poke/pfe/cobalt_block"
 		},
-		"poke_nether_hellish_ore": {
+		"poke_pfe_nether_hellish_ore": {
 			"textures": [
 				"textures/poke/pfe/hellish_ore_pattern",
 				"textures/blocks/netherrack"
 			],
 			"additive": true
 		},
-		"poke_nether_demonic_ore": {
+		"poke_pfe_nether_demonic_ore": {
 			"textures": [
 				"textures/poke/pfe/demonic_ore_pattern",
 				"textures/blocks/netherrack"
 			],
 			"additive": true
 		},
-		"poke_limestone_brick_wall": {
+		"poke_pfe_limestone_brick_wall": {
 			"textures": "textures/poke/pfe/limestone_brick_wall"
 		},
-		"poke_zombken_trophy": {
+		"poke_pfe_zombken_trophy": {
 			"textures": "textures/poke/pfe/zombken_trophy"
 		},
-		"poke_listener_trophy": {
+		"poke_pfe_listener_trophy": {
 			"textures": "textures/poke/pfe/listener_trophy"
 		},
-		"poke_ember_block": {
+		"poke_pfe_ember_block": {
 			"textures": "textures/poke/pfe/ember_block"
 		},
-		"poke_scrappy_block": {
+		"poke_pfe_scrappy_block": {
 			"textures": "textures/poke/pfe/scrappy_block"
 		},
-		"poke_nether_shade_ore": {
+		"poke_pfe_nether_shade_ore": {
 			"textures": [
 				"textures/poke/pfe/shade_ore_pattern",
 				"textures/blocks/netherrack"
 			],
 			"additive": true
 		},
-		"poke_nether_onyx_ore": {
+		"poke_pfe_nether_onyx_ore": {
 			"textures": [
 				"textures/poke/pfe/onyx_ore_pattern",
 				"textures/blocks/netherrack"
 			],
 			"additive": true
 		},
-		"poke_astral_ore": {
+		"poke_pfe_astral_ore": {
 			"textures": [
 				"textures/poke/pfe/astral_ore_pattern",
 				"textures/blocks/end_stone"
 			],
 			"additive": true
 		},
-		"poke_astral_block": {
+		"poke_pfe_astral_block": {
 			"textures": "textures/poke/pfe/astral_block"
 		},
-		"poke_lava_sponge": {
+		"poke_pfe_lava_sponge": {
 			"textures": "textures/poke/pfe/lava_sponge"
 		},
-		"poke_molten_lava_sponge": {
+		"poke_pfe_molten_lava_sponge": {
 			"textures": "textures/poke/pfe/molten_lava_sponge"
 		},
-		"poke_phantomed_conduit": {
+		"poke_pfe_phantomed_conduit": {
 			"textures": [
 				{
 					"path": "textures/poke/pfe/phantomed_conduit",
@@ -2362,57 +2230,57 @@
 				}
 			]
 		},
-		"poke_raw_astral_block": {
+		"poke_pfe_raw_astral_block": {
 			"textures": "textures/poke/pfe/raw_astral_block"
 		},
-		"poke_raw_cobalt_block": {
+		"poke_pfe_raw_cobalt_block": {
 			"textures": "textures/poke/pfe/raw_cobalt_block"
 		},
-		"poke_raw_demonic_block": {
+		"poke_pfe_raw_demonic_block": {
 			"textures": "textures/poke/pfe/raw_demonic_block"
 		},
-		"poke_cobalt_golem_block": {
+		"poke_pfe_cobalt_golem_block": {
 			"textures": "textures/poke/pfe/cobalt_golem_block"
 		},
-		"poke_raw_galaxy_block": {
+		"poke_pfe_raw_galaxy_block": {
 			"textures": "textures/poke/pfe/raw_galaxy_block"
 		},
-		"poke_raw_godly_block": {
+		"poke_pfe_raw_godly_block": {
 			"textures": "textures/poke/pfe/raw_godly_block"
 		},
-		"poke_raw_hellish_block": {
+		"poke_pfe_raw_hellish_block": {
 			"textures": "textures/poke/pfe/raw_hellish_block"
 		},
-		"poke_raw_holy_block": {
+		"poke_pfe_raw_holy_block": {
 			"textures": "textures/poke/pfe/raw_holy_block"
 		},
-		"poke_raw_onyx_block": {
+		"poke_pfe_raw_onyx_block": {
 			"textures": "textures/poke/pfe/raw_onyx_block"
 		},
-		"poke_raw_nebula_block": {
+		"poke_pfe_raw_nebula_block": {
 			"textures": "textures/poke/pfe/raw_nebula_block"
 		},
-		"poke_raw_shade_block": {
+		"poke_pfe_raw_shade_block": {
 			"textures": "textures/poke/pfe/raw_shade_block"
 		},
-		"poke_raw_void_block": {
+		"poke_pfe_raw_void_block": {
 			"textures": "textures/poke/pfe/raw_void_block"
 		},
-		"poke_end_galaxy_ore": {
+		"poke_pfe_end_galaxy_ore": {
 			"textures": [
 				"textures/poke/pfe/galaxy_ore_pattern",
 				"textures/blocks/end_stone"
 			],
 			"additive": true
 		},
-		"poke_end_godly_ore": {
+		"poke_pfe_end_godly_ore": {
 			"textures": [
 				"textures/poke/pfe/godly_ore_pattern",
 				"textures/blocks/end_stone"
 			],
 			"additive": true
 		},
-		"poke_end_void_ore": {
+		"poke_pfe_end_void_ore": {
 			"textures": [
 				"textures/poke/pfe/void_ore_pattern",
 				"textures/blocks/end_stone"

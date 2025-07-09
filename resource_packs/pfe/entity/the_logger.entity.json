@@ -16,7 +16,7 @@
 				"controller.render.poke_pfe.default"
 			],
 			"spawn_egg": {
-				"texture": "poke_logger_spawn_egg"
+				"texture": "poke_pfe_logger_spawn_egg"
 			},
 			"animations": {
 				"walk": "animation.poke_pfe.logger.walk",

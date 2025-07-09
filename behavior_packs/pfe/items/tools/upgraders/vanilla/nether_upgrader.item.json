@@ -11,7 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.nether_upgrader\n%poke_pfe.tag"
 			},
-			"minecraft:icon": "poke_nether_upgrader",
+			"minecraft:icon": "poke_pfe_nether_upgrader",
 			"minecraft:hand_equipped": true,
 			"minecraft:max_stack_size": 1,
 			"minecraft:durability": {

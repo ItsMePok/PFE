@@ -24,7 +24,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": "poke_galaxy_helmet",
+			"minecraft:icon": "poke_pfe_galaxy_helmet",
 			"minecraft:wearable": {
 				"slot": "slot.armor.head",
 				"protection": 12

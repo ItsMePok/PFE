@@ -12,7 +12,7 @@
 				"value": "%poke_pfe.jackhammer\n%poke_pfe.tag"
 			},
 			"minecraft:max_stack_size": 1,
-			"minecraft:icon": "poke_jackhammer",
+			"minecraft:icon": "poke_pfe_jackhammer",
 			"minecraft:hand_equipped": {
 				"value": true
 			},

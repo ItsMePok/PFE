@@ -11,6 +11,15 @@
       "minecraft:display_name": {
         "value": "%poke_pfe.hellish_battleaxe\n%poke_pfe.tag"
       },
+      "poke_pfe:upgradeable": {
+        "dynamic_property": "pfe:upgrades",
+        "sneak_interact_opens_ui": false,
+        "upgrade_ids": [
+          "pfe:persistence"
+        ],
+        "version": 1
+      },
+      "poke_pfe:icon_path": "textures/poke/pfe/hellish_battleaxe",
       "minecraft:digger": {
         "destroy_speeds": [
           {
@@ -29,7 +38,7 @@
           }
         ]
       },
-      "minecraft:icon": "poke_hellish_battleaxe",
+      "minecraft:icon": "poke_pfe_hellish_battleaxe",
       "minecraft:max_stack_size": 1,
       "minecraft:hand_equipped": true,
       "minecraft:durability": {

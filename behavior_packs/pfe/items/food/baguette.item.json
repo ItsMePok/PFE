@@ -25,7 +25,7 @@
 			},
 			"minecraft:icon": {
 				"textures": {
-					"default": "poke_baguette"
+					"default": "poke_pfe_baguette"
 				}
 			},
 			"minecraft:use_modifiers": {

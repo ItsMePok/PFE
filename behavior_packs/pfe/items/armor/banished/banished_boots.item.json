@@ -16,7 +16,7 @@
 				"value": 90,
 				"slot": "armor_feet"
 			},
-			"minecraft:icon": "poke_banished_boots",
+			"minecraft:icon": "poke_pfe_banished_boots",
 			"minecraft:wearable": {
 				"slot": "slot.armor.feet",
 				"protection": 20

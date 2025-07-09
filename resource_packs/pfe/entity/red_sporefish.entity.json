@@ -31,7 +31,7 @@
 				"controller.render.poke_pfe.default"
 			],
 			"spawn_egg": {
-				"texture": "poke_red_sporefish_spawn_egg"
+				"texture": "poke_pfe_red_sporefish_spawn_egg"
 			}
 		}
 	}

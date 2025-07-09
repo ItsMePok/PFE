@@ -24,8 +24,8 @@
 			},
 			"minecraft:icon": {
 				"textures": {
-					"default": "poke_shade_axe",
-					"dyed": "poke_shade_axe"
+					"default": "poke_pfe_shade_axe",
+					"dyed": "poke_pfe_shade_axe"
 				}
 			},
 			"minecraft:dyeable": {

@@ -38,7 +38,7 @@
 			},
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "poke_radium_block",
+					"texture": "poke_pfe_radium_block",
 					"render_method": "opaque"
 				}
 			}

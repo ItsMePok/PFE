@@ -9,7 +9,7 @@
         "value": "%poke_pfe.cassette\n%poke_pfe.tag"
       },
       "minecraft:rarity": "rare",
-      "minecraft:icon": "poke_cassette_mc_disc_pigstep",
+      "minecraft:icon": "poke_pfe_cassette_mc_disc_pigstep",
       "poke_pfe:play_music": {
         "music": "poke_pfe.disc.pigstep",
         "music_volume": 0.5

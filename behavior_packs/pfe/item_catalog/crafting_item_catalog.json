@@ -1430,6 +1430,7 @@
               "poke_pfe:cassette_lilypad",
               "poke_pfe:cassette_os_piano",
               "poke_pfe:cassette_tears",
+              "poke_pfe:cassette_lava_chicken",
               "poke:cassette_galactic_march",
               "poke:cassette_they_listen"
             ]
@@ -1624,12 +1625,12 @@
             },
             "items": [
               "poke:cobblestone_gen",
-              //"poke:calibrated_cobblestone_generator_south",
               "poke:cobble_gen",
               "poke:block_breaker",
-              //"poke:block_breaker_south",
-              "poke:dirter_up",
-              "poke:duster_up",
+              "poke_pfe:dirter",
+              "poke_pfe:duster",
+              //"poke:dirter_up",
+              //"poke:duster_up",
               "poke_pfe:fisher",
               "poke_pfe:elevator",
               "poke_pfe:omnivator",

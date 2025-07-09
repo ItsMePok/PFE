@@ -24,7 +24,7 @@
 				"controller.render.poke_pfe.default"
 			],
 			"spawn_egg": {
-				"texture": "poke_shroomfin_spawn_egg"
+				"texture": "poke_pfe_shroomfin_spawn_egg"
 			}
 		}
 	}

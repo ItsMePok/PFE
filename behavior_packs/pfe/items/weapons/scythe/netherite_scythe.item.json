@@ -34,7 +34,7 @@
 					}
 				]
 			},
-			"minecraft:icon": "poke_netherite_scythe",
+			"minecraft:icon": "poke_pfe_netherite_scythe",
 			"minecraft:max_stack_size": 1,
 			"minecraft:hand_equipped": true,
 			"minecraft:durability": {

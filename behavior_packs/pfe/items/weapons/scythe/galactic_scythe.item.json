@@ -21,7 +21,7 @@
 			"minecraft:damage": {
 				"value": 23
 			},
-			"minecraft:icon": "poke_galactic_scythe",
+			"minecraft:icon": "poke_pfe_galactic_scythe",
 			"minecraft:enchantable": {
 				"value": 140,
 				"slot": "sword"

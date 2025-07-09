@@ -11,7 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.player_magnet\n%poke_pfe.tag"
 			},
-			"minecraft:icon": "poke_player_magnet",
+			"minecraft:icon": "poke_pfe_player_magnet",
 			"minecraft:max_stack_size": 1,
 			"minecraft:durability": {
 				"max_durability": 300

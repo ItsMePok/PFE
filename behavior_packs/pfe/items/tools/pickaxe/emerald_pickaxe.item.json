@@ -24,8 +24,8 @@
 			},
 			"minecraft:icon": {
 				"textures": {
-					"default": "poke_emerald_pickaxe",
-					"dyed": "poke_emerald_pickaxe"
+					"default": "poke_pfe_emerald_pickaxe",
+					"dyed": "poke_pfe_emerald_pickaxe"
 				}
 			},
 			"minecraft:dyeable": {

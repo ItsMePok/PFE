@@ -128,14 +128,11 @@
 			"minecraft:geometry": "geometry.poke_pfe.spell_crafter",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "poke_spell_crafter",
+					"texture": "poke_pfe_spell_crafter",
 					"render_method": "alpha_test"
 				}
 			},
 			"tag:pfe": {},
-			"tag:metal": {},
-			"tag:minecraft:metal": {},
-			"tag:stone_pick_diggable": {},
 			"tag:minecraft:is_pickaxe_item_destructible": {},
 			"minecraft:map_color": "#9553ae"
 		},

@@ -11,7 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.item_voider\n%poke_pfe.tag"
 			},
-			"minecraft:icon": "poke_item_voider",
+			"minecraft:icon": "poke_pfe_item_voider",
 			"minecraft:durability": {
 				"max_durability": 450,
 				"damage_chance": {

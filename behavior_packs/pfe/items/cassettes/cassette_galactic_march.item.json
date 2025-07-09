@@ -9,7 +9,7 @@
 				"value": "%poke_pfe.cassette\n§7ItsMePok -§5 %poke_pfe.galacticMarch\n%poke_pfe.tag"
 			},
 			"minecraft:rarity": "uncommon",
-			"minecraft:icon": "poke_cassette_galactic_march",
+			"minecraft:icon": "poke_pfe_cassette_galactic_march",
 			"poke_pfe:play_music": {
 				"music": "poke_pfe.galactic_march"
 			},

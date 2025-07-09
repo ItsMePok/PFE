@@ -18,7 +18,7 @@
 				]
 			},
 			"minecraft:max_stack_size": 1,
-			"minecraft:icon": "poke_pickaxe_hat",
+			"minecraft:icon": "poke_pfe_pickaxe_hat",
 			"minecraft:wearable": {
 				"slot": "slot.weapon.offhand"
 			}

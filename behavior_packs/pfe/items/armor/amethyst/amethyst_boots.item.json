@@ -14,7 +14,7 @@
 			"minecraft:max_stack_size": 1,
 			"minecraft:icon": {
 				"textures": {
-					"default": "poke_amethyst_boots"
+					"default": "poke_pfe_amethyst_boots"
 				}
 			},
 			"minecraft:wearable": {

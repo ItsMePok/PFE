@@ -24,7 +24,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": "poke_ember_robe_helmet",
+			"minecraft:icon": "poke_pfe_ember_robe_helmet",
 			"minecraft:wearable": {
 				"slot": "slot.armor.head",
 				"protection": 6

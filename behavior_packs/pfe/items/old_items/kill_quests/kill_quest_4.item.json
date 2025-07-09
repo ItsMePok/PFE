@@ -8,7 +8,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.kill_quest 4\n§7%poke_pfe.questDesc\n%poke_pfe.tag"
 			},
-			"minecraft:icon": "poke_kill_quest",
+			"minecraft:icon": "poke_pfe_kill_quest",
 			"minecraft:tags": {
 				"tags": [
 					"pfe:is_deprecated",

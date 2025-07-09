@@ -46,7 +46,7 @@
 					"min": 20
 				}
 			},
-			"minecraft:icon": "poke_medic_haxel",
+			"minecraft:icon": "poke_pfe_medic_haxel",
 			"minecraft:cooldown": {
 				"category": "poke:haxel",
 				"duration": 0.3

@@ -11,12 +11,21 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.void_crossbow\n%poke_pfe.tag"
 			},
+			"poke_pfe:upgradeable": {
+				"dynamic_property": "pfe:upgrades",
+				"sneak_interact_opens_ui": false,
+				"upgrade_ids": [
+					"pfe:persistence"
+				],
+				"version": 1
+			},
+			"poke_pfe:icon_path": "textures/poke/pfe/void_crossbow",
 			"minecraft:tags": {
 				"tags": [
 					"pfe:crossbow"
 				]
 			},
-			"minecraft:icon": "poke_void_crossbow",
+			"minecraft:icon": "poke_pfe_void_crossbow",
 			"minecraft:use_modifiers": {
 				"movement_modifier": 0.33,
 				"use_duration": 1.25

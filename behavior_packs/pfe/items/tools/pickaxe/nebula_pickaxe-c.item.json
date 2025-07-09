@@ -26,8 +26,8 @@
 			},
 			"minecraft:icon": {
 				"textures": { //Item icon defined in "item_texture.json" in the RP/textures folder
-					"default": "poke_nebula_pickaxe", //default texture
-					"dyed": "poke_nebula_pickaxe" //Texture for when its dyed (is the same texture but its needs to be defined)
+					"default": "poke_pfe_nebula_pickaxe", //default texture
+					"dyed": "poke_pfe_nebula_pickaxe" //Texture for when its dyed (is the same texture but its needs to be defined)
 				}
 			},
 			"minecraft:dyeable": { //Allows the item to be dyed

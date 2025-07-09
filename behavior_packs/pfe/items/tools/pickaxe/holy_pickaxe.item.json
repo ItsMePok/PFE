@@ -24,8 +24,8 @@
 			},
 			"minecraft:icon": {
 				"textures": {
-					"default": "poke_holy_pickaxe",
-					"dyed": "poke_holy_pickaxe"
+					"default": "poke_pfe_holy_pickaxe",
+					"dyed": "poke_pfe_holy_pickaxe"
 				}
 			},
 			"minecraft:dyeable": {

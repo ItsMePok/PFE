@@ -53,7 +53,7 @@
 					"min": 20
 				}
 			},
-			"minecraft:icon": "poke_death_haxel",
+			"minecraft:icon": "poke_pfe_death_haxel",
 			"minecraft:repairable": {
 				"repair_items": [
 					{

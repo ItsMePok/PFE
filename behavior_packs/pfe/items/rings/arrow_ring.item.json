@@ -22,7 +22,7 @@
 					}
 				]
 			},
-			"minecraft:icon": "poke_arrow_ring",
+			"minecraft:icon": "poke_pfe_arrow_ring",
 			"minecraft:cooldown": {
 				"duration": 0.1,
 				"category": "poke:arrow_ring"

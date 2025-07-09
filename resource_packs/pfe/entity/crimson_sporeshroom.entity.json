@@ -30,7 +30,7 @@
 				"controller.render.poke_pfe.default"
 			],
 			"spawn_egg": {
-				"texture": "poke_crimson_sporeshroom_spawn_egg"
+				"texture": "poke_pfe_crimson_sporeshroom_spawn_egg"
 			}
 		}
 	}

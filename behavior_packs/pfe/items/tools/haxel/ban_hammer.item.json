@@ -52,7 +52,7 @@
 			"minecraft:damage": {
 				"value": 74
 			},
-			"minecraft:icon": "poke_ban_hammer",
+			"minecraft:icon": "poke_pfe_ban_hammer",
 			"minecraft:enchantable": {
 				"value": 140,
 				"slot": "axe"

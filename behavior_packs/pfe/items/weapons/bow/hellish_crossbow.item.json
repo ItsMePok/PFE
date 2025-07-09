@@ -11,13 +11,22 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.hellish_crossbow\n%poke_pfe.tag"
 			},
+			"poke_pfe:upgradeable": {
+				"dynamic_property": "pfe:upgrades",
+				"sneak_interact_opens_ui": false,
+				"upgrade_ids": [
+					"pfe:persistence"
+				],
+				"version": 1
+			},
+			"poke_pfe:icon_path": "textures/poke/pfe/hellish_crossbow",
 			"minecraft:tags": {
 				"tags": [
 					"pfe:crossbow",
 					"minecraft:is_crossbow"
 				]
 			},
-			"minecraft:icon": "poke_hellish_crossbow",
+			"minecraft:icon": "poke_pfe_hellish_crossbow",
 			"minecraft:use_modifiers": {
 				"movement_modifier": 0.33,
 				"use_duration": 1.25

@@ -17,7 +17,7 @@
 				"overlay": "geometry.poke_pfe.striker.armor"
 			},
 			"spawn_egg": {
-				"texture": "poke_striker_spawn_egg"
+				"texture": "poke_pfe_striker_spawn_egg"
 			},
 			"scripts": {
 				"pre_animation": [

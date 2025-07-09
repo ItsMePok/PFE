@@ -38,7 +38,7 @@
 			},
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "poke_deepslate_holy_ore"
+					"texture": "poke_pfe_deepslate_holy_ore"
 				}
 			},
 			"minecraft:loot": "loot_tables/poke/pfe/holy_ore.loot.json",

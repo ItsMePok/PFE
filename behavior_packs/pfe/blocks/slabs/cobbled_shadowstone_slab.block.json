@@ -40,7 +40,7 @@
 					},
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "poke_cobbled_shadowstone"
+							"texture": "poke_pfe_cobbled_shadowstone"
 						}
 					},
 					"minecraft:geometry": {
@@ -81,7 +81,7 @@
 					},
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "poke_cobbled_shadowstone"
+							"texture": "poke_pfe_cobbled_shadowstone"
 						}
 					},
 					"minecraft:geometry": {
@@ -136,7 +136,7 @@
 					},
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "poke_cobbled_shadowstone"
+							"texture": "poke_pfe_cobbled_shadowstone"
 						}
 					},
 					"minecraft:geometry": {
@@ -170,7 +170,7 @@
 				"explosion_resistance": 15
 			},
 			"minecraft:destruction_particles": {
-				"texture": "poke_cobbled_shadowstone"
+				"texture": "poke_pfe_cobbled_shadowstone"
 			},
 			"minecraft:map_color": "#2a1d2c",
 			"tag:pfe": {},

@@ -24,8 +24,8 @@
 			},
 			"minecraft:icon": {
 				"textures": {
-					"default": "poke_emerald_axe",
-					"dyed": "poke_emerald_axe"
+					"default": "poke_pfe_emerald_axe",
+					"dyed": "poke_pfe_emerald_axe"
 				}
 			},
 			"minecraft:dyeable": {

@@ -49,7 +49,7 @@
 			},
 			"minecraft:icon": {
 				"textures": {
-					"default": "poke_onyx_chestplate"
+					"default": "poke_pfe_onyx_chestplate"
 				}
 			},
 			"minecraft:wearable": {

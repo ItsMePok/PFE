@@ -127,7 +127,7 @@ function PFEHaxelConfigMenu(data: ItemComponentUseEvent, component: BoxMiningCom
     if (UpgradeableComponent?.version) {
       if (response.selection == selection) {
         if (!data.itemStack) return;
-        PokeUpgradeUI(data.source, data.itemStack, ParsePFEUpgradeComponent(data.itemStack, data.source, UpgradeableComponent), PFEHaxelConfigMenu(data, component, dynamicProperty), true, UpgradeableComponent)
+        PokeUpgradeUI(data.source, data.itemStack, ParsePFEUpgradeComponent(data.itemStack, data.source, UpgradeableComponent), true, UpgradeableComponent)
         return
       } else selection++
     }

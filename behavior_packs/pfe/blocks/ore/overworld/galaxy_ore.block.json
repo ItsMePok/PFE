@@ -24,7 +24,7 @@
 			},
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "poke_galaxy_ore"
+					"texture": "poke_pfe_galaxy_ore"
 				}
 			},
 			"minecraft:loot": "loot_tables/poke/pfe/galaxy_ore.loot.json",

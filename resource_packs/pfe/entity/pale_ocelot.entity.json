@@ -36,7 +36,7 @@
 				"controller.render.poke_pfe.default"
 			],
 			"spawn_egg": {
-				"texture": "poke_pale_ocelot_spawn_egg"
+				"texture": "poke_pfe_pale_ocelot_spawn_egg"
 			}
 		}
 	}

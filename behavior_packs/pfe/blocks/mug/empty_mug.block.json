@@ -62,7 +62,7 @@
 			"minecraft:geometry": "geometry.poke_pfe.coffee_mug",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "poke_empty_mug",
+					"texture": "poke_pfe_empty_mug",
 					"render_method": "alpha_test",
 					"ambient_occlusion": false
 				}

@@ -45,7 +45,7 @@
 			"minecraft:geometry": "geometry.poke_pfe.chiseled_limestone",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "poke_chiseled_limestone",
+					"texture": "poke_pfe_chiseled_limestone",
 					"render_method": "opaque"
 				}
 			},

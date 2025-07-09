@@ -75,7 +75,7 @@
 			"minecraft:geometry": "geometry.poke_pfe.limestone_tombstone",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "poke_limestone_tombstone",
+					"texture": "poke_pfe_limestone_tombstone",
 					"render_method": "opaque",
 					"ambient_occlusion": false,
 					"face_dimming": true

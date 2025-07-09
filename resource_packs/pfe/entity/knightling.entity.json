@@ -30,7 +30,7 @@
 				"controller.render.poke_pfe.default"
 			],
 			"spawn_egg": {
-				"texture": "poke_knightling_spawn_egg"
+				"texture": "poke_pfe_knightling_spawn_egg"
 			}
 		}
 	}

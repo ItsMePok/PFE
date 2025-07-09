@@ -30,7 +30,7 @@
 				"controller.render.minecart" //2
 			],
 			"spawn_egg": {
-				"texture": "poke_mail_cart"
+				"texture": "poke_pfe_mail_cart"
 			}
 		}
 	}

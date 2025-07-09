@@ -9,7 +9,7 @@
 		},
 		"components": {
 			"minecraft:max_stack_size": 1,
-			"minecraft:icon": "poke_armor_stand_shielder"
+			"minecraft:icon": "poke_pfe_armor_stand_shielder"
 		}
 	}
 }

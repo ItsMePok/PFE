@@ -36,7 +36,7 @@
 					"mode": "effect"
 				}
 			],
-			"minecraft:icon": "poke_miner_helmet",
+			"minecraft:icon": "poke_pfe_miner_helmet",
 			"minecraft:wearable": {
 				"slot": "slot.armor.head",
 				"protection": 2

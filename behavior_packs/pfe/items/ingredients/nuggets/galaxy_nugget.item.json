@@ -11,7 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.galaxy_nugget\n%poke_pfe.tag"
 			},
-			"minecraft:icon": "poke_galaxy_nugget"
+			"minecraft:icon": "poke_pfe_galaxy_nugget"
 		}
 	}
 }

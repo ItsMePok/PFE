@@ -46,7 +46,7 @@
 					"min": 20
 				}
 			},
-			"minecraft:icon": "poke_hellish_haxel",
+			"minecraft:icon": "poke_pfe_hellish_haxel",
 			"minecraft:cooldown": {
 				"category": "poke:haxel",
 				"duration": 0.3

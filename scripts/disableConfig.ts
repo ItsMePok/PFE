@@ -49,7 +49,7 @@ function PFEDisableConfigMainMenu(data: ItemComponentUseEvent) {
   UI.button({ translate: `%poke_pfe.sundial:${options.sundial ? enabled : disabled}` }, `textures/poke/pfe/sundial_1`)
   UI.button({ translate: `%poke_pfe.wither_spawner:${options.witherSpawner ? enabled : disabled}` }, `textures/poke/pfe/wither_spawner`)
   UI.button({ translate: `%poke_pfe.bounty:${options.bounty ? enabled : disabled}` }, `textures/poke/pfe/bounty`)
-  UI.button({ translate: `%translation.poke_pfe.WaypointUITitle:${options.waypoints ? enabled : disabled}` }, `textures/poke/pfe/waypoint_menu`)
+  UI.button({ translate: `%poke_pfe.waypoint_menu:${options.waypoints ? enabled : disabled}` }, `textures/poke/pfe/waypoint_menu`)
   UI.button({ translate: `%poke_pfe.set_effects:${world.getDynamicProperty(`poke_pfe:disable_armor_effects`) == true ? disabled : enabled}` }, `textures/poke/common/effect_particles`)
   UI.button({ translate: `%translation.poke_pfe.death_armor_radius:${options.deathArmorRadius ? enabled : disabled}` }, `textures/poke/pfe/death_helmet`)
   UI.button({ translate: `%translation.poke_pfe.cactus_armor_radius:${options.cactusArmorRadius ? enabled : disabled}` }, `textures/poke/pfe/cactus_helmet`)

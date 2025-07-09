@@ -12,7 +12,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.money_man\n%poke_pfe.tag"
 			},
-			"minecraft:icon": "poke_money_man_spawn_egg",
+			"minecraft:icon": "poke_pfe_money_man_spawn_egg",
 			"poke_pfe:spawn_entity": {
 				"entity": "poke:money_man"
 			},

@@ -1244,18 +1244,16 @@ poke_pfe.cobalt_leggings=Cobalt Leggings
 poke_pfe.cobalt_boots=Cobalt Boots
 action.interact.poke.trader=Remove Cosmetics
 poke_pfe.crouchInteract=Crouch and interact to configure
-translation.poke_pfe.WaypointUITitle=Waypoint Menu
+poke_pfe.waypoint_menu=Waypoint Menu
 translation.poke_pfe.feature_disabled=This feature has been disabled
-
 translation.poke.Upgrade=Upgrade
-translation.poke.level=LVL
+poke_pfe.level=LVL
 translation.poke.cost=Cost
 translation.poke_pfe.quest_info=Quest Info
 translation.poke_pfe.quest_reward=Quest reward
 translation.poke_pfe.completeQuest=Complete Quest
 translation.poke_pfe.missing_items=Missing required items
 translation.poke_pfe.items_needed=Items needed
-
 poke_pfe:fisher_catches=Fisher Catches
 poke_pfe:lava_sponged=Lava Sponged
 poke_pfe:credits.for.computers=§r
@@ -1267,7 +1265,6 @@ poke_pfe:boss_events_triggered=Boss Events Triggered
 poke_pfe:bulb_color_changes=Bulb Color Changes
 poke_pfe:itemGroup.name.sticker=PFE Stickers ~LINEBREAK~§7 Only obtainable if you have Papercraft Mob Stickers Add-On
 poke_pfe.knightling_trophy=Knightling Trophy
-
 poke_pfe.warped_sporeshroom_sticker=Warped Sporeshroom Sticker
 poke_pfe.crimson_sporeshroom_sticker=Crimson Sporefish Sticker
 poke_pfe.bone_bear_sticker=Bone Bear Sticker
@@ -1325,7 +1322,6 @@ poke_pfe.getQuestDesc=Interact to get Quest Info
 poke_pfe.copper_battleaxe=Copper Battleaxe
 poke_pfe.redstone_battleaxe=Redstone Battleaxe
 poke_pfe.banished_battleaxe=Banished Battleaxe
-
 poke_pfe.amethyst_claymore=Amethyst Claymore
 poke_pfe.astral_claymore=Astral Claymore
 poke_pfe.banished_claymore=Banished Claymore
@@ -1352,13 +1348,10 @@ poke_pfe.shade_claymore=Shade Claymore
 poke_pfe.stone_claymore=Stone Claymore
 poke_pfe.void_claymore=Void Claymore
 poke_pfe.wood_claymore=Wooden Claymore
-
 poke_pfe.persistence_core=Persistence Core
 poke_pfe.persistence_core.desc=Allows an item to not be lost on death
 translation.poke_pfe.persistence=Persistence
-
-poke:itemGroup.name.claymore=Claymores~LINEBREAK~§7Cannot be enchanted
-
+poke:itemGroup.name.claymore=Claymores~LINEBREAK~§7High damage but cannot be enchanted
 poke_pfe.set_effects=Set Effects
 poke_pfe.boss_tier_warning=Recommended armor tier:
 poke_pfe.astral=Astral
@@ -1377,7 +1370,6 @@ poke_pfe.medic=Medic
 poke_pfe.molten=Molten
 poke_pfe.galaxy=Galaxy
 poke_pfe.void=Void
-
 poke_pfe.waypoints=Waypoints
 poke_pfe.options=Options
 poke_pfe.debug=Debug
@@ -1393,7 +1385,6 @@ poke_pfe.name=Name
 poke_pfe.custom=Custom
 poke_pfe.preset=Preset
 poke_pfe.texture_path=Texture Path
-
 poke_pfe.broken_clocks=Broken Clocks
 poke_pfe.below_and_above=Below and Above
 poke_pfe.fireflies=Fireflies
@@ -1454,3 +1445,5 @@ poke_pfe.redstone_haxel=Redstone Haxel
 poke_pfe.copper_haxel=Copper Haxel
 poke_pfe.max_level=Max Level
 poke_pfe.max=Max
+poke_pfe.upgrader=Upgrader
+poke_pfe.noUpgradeableItems=You don't have any items that can be upgraded here

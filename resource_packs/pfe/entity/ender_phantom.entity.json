@@ -39,7 +39,7 @@
 				"controller.render.phantom"
 			], //2
 			"spawn_egg": {
-				"texture": "poke_ender_phantom_spawn_egg"
+				"texture": "poke_pfe_ender_phantom_spawn_egg"
 			}
 		}
 	}

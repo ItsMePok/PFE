@@ -22,7 +22,7 @@
 					}
 				]
 			},
-			"minecraft:icon": "poke_dragon_ring",
+			"minecraft:icon": "poke_pfe_dragon_ring",
 			"minecraft:cooldown": {
 				"category": "poke:ring_4",
 				"duration": 25

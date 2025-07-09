@@ -3,7 +3,6 @@
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke:windswept_bear",
-			"runtime_identifier": "minecraft:polar_bear",
 			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false

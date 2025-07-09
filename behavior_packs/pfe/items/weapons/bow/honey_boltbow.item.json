@@ -11,8 +11,9 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.honey_boltbow\n§7%poke_pfe.crouchInteract\n%poke_pfe.tag"
 			},
+			"poke_pfe:icon_path": "textures/poke/pfe/honey_boltbow_item",
 			"minecraft:rarity": "common",
-			"minecraft:icon": "poke_honey_boltbow",
+			"minecraft:icon": "poke_pfe_honey_boltbow",
 			"minecraft:can_destroy_in_creative": {
 				"value": false
 			},

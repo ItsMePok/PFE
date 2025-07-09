@@ -21,7 +21,7 @@
 					}
 				]
 			},
-			"minecraft:icon": "poke_zeus_ring",
+			"minecraft:icon": "poke_pfe_zeus_ring",
 			"minecraft:cooldown": {
 				"category": "poke:zeus_ring",
 				"duration": 30

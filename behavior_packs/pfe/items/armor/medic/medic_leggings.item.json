@@ -23,7 +23,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": "poke_medic_leggings",
+			"minecraft:icon": "poke_pfe_medic_leggings",
 			"minecraft:wearable": {
 				"slot": "slot.armor.legs",
 				"protection": 13

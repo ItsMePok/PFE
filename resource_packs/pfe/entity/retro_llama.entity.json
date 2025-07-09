@@ -52,7 +52,7 @@
 				"controller.render.poke_pfe.llama"
 			],
 			"spawn_egg": {
-				"texture": "poke_retro_llama_spawn_egg"
+				"texture": "poke_pfe_retro_llama_spawn_egg"
 			}
 		}
 	}

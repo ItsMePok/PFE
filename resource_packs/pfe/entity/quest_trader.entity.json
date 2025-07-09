@@ -31,7 +31,7 @@
 				]
 			},
 			"spawn_egg": {
-				"texture": "poke_quest_trader_spawn_egg"
+				"texture": "poke_pfe_quest_trader_spawn_egg"
 			},
 			"enable_attachables": true,
 			"hide_armor": false

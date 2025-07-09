@@ -23,7 +23,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": "poke_nebula_boots",
+			"minecraft:icon": "poke_pfe_nebula_boots",
 			"minecraft:wearable": {
 				"slot": "slot.armor.feet",
 				"protection": 35

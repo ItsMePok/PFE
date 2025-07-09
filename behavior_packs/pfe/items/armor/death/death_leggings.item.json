@@ -23,7 +23,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": "poke_death_leggings",
+			"minecraft:icon": "poke_pfe_death_leggings",
 			"minecraft:wearable": {
 				"slot": "slot.armor.legs",
 				"protection": 21

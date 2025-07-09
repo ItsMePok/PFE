@@ -11,8 +11,9 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.hellish_boltbow\n§7%poke_pfe.crouchInteract\n%poke_pfe.tag"
 			},
+			"poke_pfe:icon_path": "textures/poke/pfe/hellish_boltbow_item",
 			"minecraft:rarity": "common",
-			"minecraft:icon": "poke_hellish_boltbow",
+			"minecraft:icon": "poke_pfe_hellish_boltbow",
 			"minecraft:can_destroy_in_creative": {
 				"value": false
 			},

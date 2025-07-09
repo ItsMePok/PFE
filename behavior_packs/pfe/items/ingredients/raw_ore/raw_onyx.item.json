@@ -11,7 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.raw_onyx\n%poke_pfe.tag"
 			},
-			"minecraft:icon": "poke_raw_onyx"
+			"minecraft:icon": "poke_pfe_raw_onyx"
 		}
 	}
 }

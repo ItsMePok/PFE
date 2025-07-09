@@ -35,7 +35,7 @@
 			},
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "poke_chorus_fruit_crate",
+					"texture": "poke_pfe_chorus_fruit_crate",
 					"render_method": "opaque"
 				}
 			},

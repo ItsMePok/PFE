@@ -21,7 +21,7 @@
 					}
 				]
 			},
-			"minecraft:icon": "poke_ore_ring",
+			"minecraft:icon": "poke_pfe_ore_ring",
 			"minecraft:cooldown": {
 				"category": "poke:ore_ring",
 				"duration": 90
