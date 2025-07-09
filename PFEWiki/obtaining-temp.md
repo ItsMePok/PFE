@@ -62,9 +62,9 @@ hidden: true
 
 ## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/InteractAbility.png?raw=true" alt="Interact Ability." data-size="line"> Interact Ability: <a href="#interact-ability" id="interact-ability"></a>
 
-### **Interacting**: <a href="#interacting" id="interacting"></a>
+### <mark style="color:blue;">**Interacting**</mark>: <a href="#interacting" id="interacting"></a>
 
-### **Crouching + Interacting**: <a href="#crouch-interacting" id="crouch-interacting"></a>
+### <mark style="color:blue;">**Crouching**</mark>**&#x20;+&#x20;**<mark style="color:blue;">**Interacting**</mark>: <a href="#crouch-interacting" id="crouch-interacting"></a>
 
 {% tabs %}
 {% tab title="Block Drop" %}

@@ -32,9 +32,7 @@ description: 'Last updated to match: v1.2.95'
 This recipe is shapeless[^2]
 {% endhint %}
 
-
-
-<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
+<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the<br><a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
 |                                                                                                          |                                                                                    |
 | :------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------: |
