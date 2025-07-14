@@ -109,9 +109,7 @@ This will likely be changed again to be further improved when 1.21.50 is release
 ### Added a typescript (`.ts`) version of the script in the [PFE repo](https://github.com/ItsMePok/PFE)
 
 {% hint style="info" %}
-With this a lot of the components & various other things have been tweaked within the scripts&#x20;
-
-
+With this a lot of the components & various other things have been tweaked within the scripts
 
 This does not change how things should work in-game
 {% endhint %}
@@ -162,13 +160,11 @@ This allows the Nebula Logger to strip logs
 
 <summary>LTU Exclusive Changes:</summary>
 
-
-
-### ![:battleaxe:](https://cdn.discordapp.com/emojis/1256321695808098417.webp?size=44\&quality=lossless) **Items & Armor**![:helmet:](https://cdn.discordapp.com/emojis/1256357335530471548.webp?size=44\&quality=lossless)
+#### ![:battleaxe:](https://cdn.discordapp.com/emojis/1256321695808098417.webp?size=44\&quality=lossless) **Items & Armor**![:helmet:](https://cdn.discordapp.com/emojis/1256357335530471548.webp?size=44\&quality=lossless)
 
 * all PFE Armor's trim material color is now orange regardless of what it was before
 
-### ![:crimspore:](https://cdn.discordapp.com/emojis/1256322040273698837.webp?size=44\&quality=lossless)**Mobs & Trades**![:token:](https://cdn.discordapp.com/emojis/1256444347256275015.webp?size=44\&quality=lossless)
+#### ![:crimspore:](https://cdn.discordapp.com/emojis/1256322040273698837.webp?size=44\&quality=lossless)**Mobs & Trades**![:token:](https://cdn.discordapp.com/emojis/1256444347256275015.webp?size=44\&quality=lossless)
 
 * Furnace Golem will now spawn <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/entity_icon/soul_blaze_icon.png?raw=true" alt="" data-size="line"> [Soul Blazes](../../mobs/hostile-mobs/soul-blaze.md)
 
@@ -176,11 +172,11 @@ This allows the Nebula Logger to strip logs
 
 * Some items sold by the cosmetic trader have been reduced to 1 copper token
 
-### ![:upgrade:](https://cdn.discordapp.com/emojis/1256321190071504987.webp?size=44\&quality=lossless)**Balancing**![:repair:](https://cdn.discordapp.com/emojis/1256321195138220123.webp?size=44\&quality=lossless)
+#### ![:upgrade:](https://cdn.discordapp.com/emojis/1256321190071504987.webp?size=44\&quality=lossless)**Balancing**![:repair:](https://cdn.discordapp.com/emojis/1256321195138220123.webp?size=44\&quality=lossless)
 
 * Demonic Allay no longer requires the world to be of certain age for them to spawn in the overworld
 
-### ![:quest:](https://cdn.discordapp.com/emojis/1256321092641886300.webp?size=44\&quality=lossless) **Textures & Sounds**﻿﻿![:cassette:](https://cdn.discordapp.com/emojis/1256320846692093982.webp?size=44\&quality=lossless)
+#### ![:quest:](https://cdn.discordapp.com/emojis/1256321092641886300.webp?size=44\&quality=lossless) **Textures & Sounds**﻿﻿![:cassette:](https://cdn.discordapp.com/emojis/1256320846692093982.webp?size=44\&quality=lossless)
 
 * Retextured
   * All Traders

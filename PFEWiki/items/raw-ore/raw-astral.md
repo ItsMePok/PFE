@@ -18,15 +18,15 @@
 {% tab title="Recipe" %}
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-|                                                                                                       |
-| :---------------------------------------------------------------------------------------------------: |
+|                                                                                                                |
+| :------------------------------------------------------------------------------------------------------------: |
 | ![Raw Astral Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RawAstralBlock.png?raw=true) |
 
-### Items:
+#### Items:
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RawAstralBlock.png?raw=true" alt="Raw Astral Block." data-size="line"> [Raw Astral Block](../../blocks/raw-ore-blocks/block-of-raw-astral.md)
 
-### Outputs:
+#### Outputs:
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_astral.png?raw=true" alt="" data-size="line"> Raw Astral
   * Amount: 9
@@ -35,12 +35,12 @@
 {% tab title="Structure Loot" %}
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/structures-pixel/EndGuardTowerPixel.png?raw=true" alt=""><figcaption><p>Found in the <a href="../../sturctures/end-guard-tower.md">End Guard Tower</a></p></figcaption></figure>
 
-| Item                                                                                                                           | Amount | Chance |
-| ------------------------------------------------------------------------------------------------------------------------------ | ------ | ------ |
+| Item                                                                                                                            | Amount | Chance |
+| ------------------------------------------------------------------------------------------------------------------------------- | ------ | ------ |
 | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_astral.png?raw=true" alt="" data-size="line"> Raw Astral | 1 - 8  | 1/5    |
 
-| Item                                                                                                                           | Amount | Chance |
-| ------------------------------------------------------------------------------------------------------------------------------ | ------ | ------ |
+| Item                                                                                                                            | Amount | Chance |
+| ------------------------------------------------------------------------------------------------------------------------------- | ------ | ------ |
 | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_astral.png?raw=true" alt="" data-size="line"> Raw Astral | 2      | 1/1    |
 {% endtab %}
 {% endtabs %}

@@ -18,15 +18,15 @@
 {% tab title="Recipe" %}
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-|                                                                                                      |
-| :--------------------------------------------------------------------------------------------------: |
+|                                                                                                              |
+| :----------------------------------------------------------------------------------------------------------: |
 | ![Raw Shade Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RawShadeBlock.png?raw=true) |
 
-### Items:
+#### Items:
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RawShadeBlock.png?raw=true" alt="Raw Shade Block." data-size="line"> [Raw Shade Block](../../blocks/raw-ore-blocks/block-of-raw-shade.md)
 
-### Outputs:
+#### Outputs:
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_shade.png?raw=true" alt="Raw Shade." data-size="line"> Raw Shade
   * Amount: 9
@@ -35,8 +35,8 @@
 {% tab title="Trade" %}
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/entity_icon/Shopkeeper.png?raw=true" alt=""><figcaption><p>Sold by the <a href="../../mobs/traders/shopkeeper.md">Shopkeeper</a></p></figcaption></figure>
 
-| Wants                                                                                                                                                                              | Gives                                                                                                                                   |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Wants                                                                                                                                                                               | Gives                                                                                                                                   |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x3.png?raw=true" alt="" data-size="line">Banished Star x3](../banished-stars/banished-star-x3.md) | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_shade.png?raw=true" alt="Raw Shade." data-size="line"> Raw Shade |
 {% endtab %}
 

@@ -6,19 +6,19 @@
 
 ## Consuming:
 
-### &#x20;    ![](https://wiki.bedrock.dev/assets/images/concepts/emojis/hud/food.png) **Hunger Replenished**: 16 (![](https://wiki.bedrock.dev/assets/images/concepts/emojis/hud/food.png)![](https://wiki.bedrock.dev/assets/images/concepts/emojis/hud/food.png)![](https://wiki.bedrock.dev/assets/images/concepts/emojis/hud/food.png)![](https://wiki.bedrock.dev/assets/images/concepts/emojis/hud/food.png)![](https://wiki.bedrock.dev/assets/images/concepts/emojis/hud/food.png)![](https://wiki.bedrock.dev/assets/images/concepts/emojis/hud/food.png)![](https://wiki.bedrock.dev/assets/images/concepts/emojis/hud/food.png)![](https://wiki.bedrock.dev/assets/images/concepts/emojis/hud/food.png))
+### ![](https://wiki.bedrock.dev/assets/images/concepts/emojis/hud/food.png) **Hunger Replenished**: 16 (![](https://wiki.bedrock.dev/assets/images/concepts/emojis/hud/food.png)![](https://wiki.bedrock.dev/assets/images/concepts/emojis/hud/food.png)![](https://wiki.bedrock.dev/assets/images/concepts/emojis/hud/food.png)![](https://wiki.bedrock.dev/assets/images/concepts/emojis/hud/food.png)![](https://wiki.bedrock.dev/assets/images/concepts/emojis/hud/food.png)![](https://wiki.bedrock.dev/assets/images/concepts/emojis/hud/food.png)![](https://wiki.bedrock.dev/assets/images/concepts/emojis/hud/food.png)![](https://wiki.bedrock.dev/assets/images/concepts/emojis/hud/food.png))
 
-### &#x20;    <img src="https://minecraft.wiki/images/Saturation_JE1.png?dbba6" alt="" data-size="line"> **Saturation**: 19.2
+### <img src="https://minecraft.wiki/images/Saturation_JE1.png?dbba6" alt="" data-size="line"> **Saturation**: 19.2
 
-### &#x20;    <img src="https://minecraft.wiki/images/Clock_JE3_BE3.gif?8eaae" alt="" data-size="line"> **Use Duration**: 1.6s
+### <img src="https://minecraft.wiki/images/Clock_JE3_BE3.gif?8eaae" alt="" data-size="line"> **Use Duration**: 1.6s
 
-### &#x20;    <img src="https://minecraft.wiki/images/Slowness_JE4.png?d415c" alt="" data-size="line"> **Speed Modifier while Consuming**: 0.32
+### <img src="https://minecraft.wiki/images/Slowness_JE4.png?d415c" alt="" data-size="line"> **Speed Modifier while Consuming**: 0.32
 
 ## <img src="https://minecraft.wiki/images/thumb/Enchanting_Table.gif/150px-Enchanting_Table.gif?904a7" alt="" data-size="line"> Enchanting:
 
-### &#x20;    <img src="https://minecraft.wiki/images/Enchanted_Book.gif?b21c4" alt="" data-size="line"> Enchantment Type: <img src="https://minecraft.wiki/images/Iron_Sword_JE2_BE2.png?62770" alt="" data-size="line"> [Sword](https://minecraft.wiki/w/Sword#Enchantments)
+### <img src="https://minecraft.wiki/images/Enchanted_Book.gif?b21c4" alt="" data-size="line"> Enchantment Type: <img src="https://minecraft.wiki/images/Iron_Sword_JE2_BE2.png?62770" alt="" data-size="line"> [Sword](https://minecraft.wiki/w/Sword#Enchantments)
 
-### &#x20;    [Enchantability](https://minecraft.wiki/w/Enchanting_mechanics#Enchantability): 30
+### [Enchantability](https://minecraft.wiki/w/Enchanting_mechanics#Enchantability): 30
 
 ### <img src="https://minecraft.wiki/images/thumb/Composter_(level_8)_BE2.png/150px-Composter_(level_8)_BE2.png?7ecec" alt="Composter" data-size="line"> [Composting Chance](https://minecraft.wiki/w/Composter#Composting): 85%
 
@@ -46,7 +46,7 @@
 |                                                            | ![](https://minecraft.wiki/images/Bread_JE3_BE3.png?e1046) |                                                            |
 | ![](https://minecraft.wiki/images/Wheat_JE2_BE2.png?b8cd3) |                                                            |                                                            |
 
-### Items:
+#### Items:
 
 * <img src="https://minecraft.wiki/images/Wheat_JE2_BE2.png?b8cd3" alt="" data-size="line"> [Wheat](https://minecraft.wiki/w/Wheat)
 * <img src="https://minecraft.wiki/images/Bread_JE3_BE3.png?e1046" alt="" data-size="line"> [Bread](https://minecraft.wiki/w/Bread)
@@ -55,8 +55,8 @@
 {% tab title="Mob Drop" %}
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/entity_icon/demonic_allay.png" alt=""><figcaption><p>Dropped by the <a href="../../mobs/hostile-mobs/demonic-allay.md">Demonic Allay</a></p></figcaption></figure>
 
-| Item                                                                                                                                  | Amount | Chance of Holding |
-| ------------------------------------------------------------------------------------------------------------------------------------- | ------ | ----------------- |
+| Item                                                                                                                                 | Amount | Chance of Holding |
+| ------------------------------------------------------------------------------------------------------------------------------------ | ------ | ----------------- |
 | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/baguette.png?raw=true" alt="Baguette." data-size="line"> Baguette | 1      | 1/235             |
 
 {% hint style="info" %}

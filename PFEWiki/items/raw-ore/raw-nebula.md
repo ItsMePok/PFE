@@ -18,15 +18,15 @@
 {% tab title="Recipe" %}
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-|                                                                                                       |
-| :---------------------------------------------------------------------------------------------------: |
+|                                                                                                                |
+| :------------------------------------------------------------------------------------------------------------: |
 | ![Raw Nebula Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RawNebulaBlock.png?raw=true) |
 
-### Items:
+#### Items:
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RawNebulaBlock.png?raw=true" alt="Raw Nebula Block." data-size="line"> [Raw Nebula Block](../../blocks/raw-ore-blocks/block-of-raw-nebula.md)
 
-### Outputs:
+#### Outputs:
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_nebula.png?raw=true" alt="Raw Nebula." data-size="line"> Raw Nebula
   * Amount: 9
@@ -41,8 +41,8 @@
 {% tab title="Structure Loot" %}
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/structures-pixel/EndGuardTowerPixel.png?raw=true" alt=""><figcaption><p>Found in the <a href="../../sturctures/end-guard-tower.md">End Guard Tower</a></p></figcaption></figure>
 
-| Item                                                                                                                                      | Amount | Weight |
-| ----------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------ |
+| Item                                                                                                                                       | Amount | Weight |
+| ------------------------------------------------------------------------------------------------------------------------------------------ | ------ | ------ |
 | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_nebula.png?raw=true" alt="Raw Nebula." data-size="line"> Raw Nebula | 1      | 15     |
 {% endtab %}
 {% endtabs %}

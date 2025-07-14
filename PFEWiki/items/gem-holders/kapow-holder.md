@@ -18,7 +18,7 @@
 | ![Block of Redstone.](https://minecraft.wiki/images/thumb/Block_of_Redstone_JE2_BE2.png/150px-Block_of_Redstone_JE2_BE2.png?bb6e3) |                      ![TNT.](https://minecraft.wiki/images/thumb/TNT_JE3_BE2.png/150px-TNT_JE3_BE2.png?62989)                      | ![Block of Redstone.](https://minecraft.wiki/images/thumb/Block_of_Redstone_JE2_BE2.png/150px-Block_of_Redstone_JE2_BE2.png?bb6e3) |
 |                                                                                                                                    | ![Block of Redstone.](https://minecraft.wiki/images/thumb/Block_of_Redstone_JE2_BE2.png/150px-Block_of_Redstone_JE2_BE2.png?bb6e3) |                                                                                                                                    |
 
-### Items:
+#### Items:
 
 * <img src="https://minecraft.wiki/images/thumb/Block_of_Redstone_JE2_BE2.png/150px-Block_of_Redstone_JE2_BE2.png?bb6e3" alt="Block of Redstone." data-size="line"> [Block of Redstone](https://minecraft.wiki/w/Block_of_Redstone)
 * <img src="https://minecraft.wiki/images/thumb/TNT_JE3_BE2.png/150px-TNT_JE3_BE2.png?62989" alt="TNT." data-size="line"> [TNT](https://minecraft.wiki/w/TNT)

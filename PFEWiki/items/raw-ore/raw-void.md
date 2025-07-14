@@ -18,28 +18,25 @@
 {% tab title="Recipe" %}
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-|                                                                                                     |
-| :-------------------------------------------------------------------------------------------------: |
+|                                                                                                            |
+| :--------------------------------------------------------------------------------------------------------: |
 | ![Raw Void Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RawVoidBlock.png?raw=true) |
 
-### Items:
+#### Items:
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RawVoidBlock.png?raw=true" alt="Raw Void Block." data-size="line"> [Raw Void Block](../../blocks/raw-ore-blocks/block-of-raw-void.md)
 
-### Outputs:
+#### Outputs:
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_void.png?raw=true" alt="Raw Void." data-size="line"> Raw Void
   * Amount: 9
 {% endtab %}
 
 {% tab title="Structure Loot" %}
-
-
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/structures-pixel/EndGuardTowerPixel.png?raw=true" alt=""><figcaption><p>Found in the <a href="../../sturctures/end-guard-tower.md">End Guard Tower</a></p></figcaption></figure>
 
-| Item                                                                                                                                  | Amount | Chance            |
-| ------------------------------------------------------------------------------------------------------------------------------------- | ------ | ----------------- |
+| Item                                                                                                                                 | Amount | Chance            |
+| ------------------------------------------------------------------------------------------------------------------------------------ | ------ | ----------------- |
 | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_void.png?raw=true" alt="Raw Void." data-size="line"> Raw Void | 3 - 7  | 25/196 (\~12.75%) |
 {% endtab %}
 {% endtabs %}
-

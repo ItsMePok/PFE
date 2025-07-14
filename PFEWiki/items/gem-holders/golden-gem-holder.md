@@ -18,7 +18,7 @@
 | ![Block of Gold.](https://minecraft.wiki/images/thumb/Block_of_Gold_JE6_BE3.png/150px-Block_of_Gold_JE6_BE3.png?09478) |                                                                                                                        | ![Block of Gold.](https://minecraft.wiki/images/thumb/Block_of_Gold_JE6_BE3.png/150px-Block_of_Gold_JE6_BE3.png?09478) |
 |                                                                                                                        | ![Block of Gold.](https://minecraft.wiki/images/thumb/Block_of_Gold_JE6_BE3.png/150px-Block_of_Gold_JE6_BE3.png?09478) |                                                                                                                        |
 
-### Items:
+#### Items:
 
 * <img src="https://minecraft.wiki/images/thumb/Block_of_Gold_JE6_BE3.png/150px-Block_of_Gold_JE6_BE3.png?09478" alt="Block of Gold." data-size="line"> [Block of Gold](https://minecraft.wiki/w/Block_of_Gold)
 {% endtab %}

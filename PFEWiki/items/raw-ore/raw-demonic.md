@@ -18,15 +18,15 @@
 {% tab title="Recipe" %}
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-|                                                                                                        |
-| :----------------------------------------------------------------------------------------------------: |
+|                                                                                                                  |
+| :--------------------------------------------------------------------------------------------------------------: |
 | ![Raw Demonic Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RawDemonicBlock.png?raw=true) |
 
-### Items:
+#### Items:
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RawDemonicBlock.png?raw=true" alt="Raw Demonic Block." data-size="line"> [Raw Demonic Block](../../blocks/raw-ore-blocks/block-of-raw-demonic.md)
 
-### Outputs:
+#### Outputs:
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_demonic.png?raw=true" alt="Raw Demonic." data-size="line"> Raw Demonic
   * Amount: 9
@@ -35,8 +35,8 @@
 {% tab title="Mob Loot" %}
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/entity_icon/demonic_allay.png" alt=""><figcaption><p>Dropped by the <a href="../../mobs/hostile-mobs/demonic-allay.md">Demonic Allay</a></p></figcaption></figure>
 
-| Item                                                                                                                                        | Amount | Chance of Holding |
-| ------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ----------------- |
+| Item                                                                                                                                          | Amount | Chance of Holding |
+| --------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ----------------- |
 | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_demonic.png?raw=true" alt="Raw Demonic." data-size="line"> Raw Demonic | 1      | 1/47              |
 
 {% hint style="info" %}

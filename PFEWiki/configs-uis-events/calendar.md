@@ -1,7 +1,5 @@
 # Calendar
 
-
-
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:calendar** <a href="#identifier" id="identifier"></a>
 
 ## Obtaining:
@@ -14,10 +12,10 @@ This recipe is shapeless
 
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-|     |                                                                                                                                      |
-| :-: | :----------------------------------------------------------------------------------------------------------------------------------: |
+|     |                                                                                                                                         |
+| :-: | :-------------------------------------------------------------------------------------------------------------------------------------: |
 |     | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="Cobalt Ingot." data-size="original"> |
-|     |                                   ![Paper.](https://minecraft.wiki/images/Paper_JE2_BE2.png?9c3be)                                   |
+|     |                                     ![Paper.](https://minecraft.wiki/images/Paper_JE2_BE2.png?9c3be)                                    |
 
 Items:
 
@@ -26,23 +24,17 @@ Items:
 {% endtab %}
 {% endtabs %}
 
-
-
 ## Menu Options:
-
-
 
 ### Main Menu:
 
 {% stepper %}
 {% step %}
-### Change Timezone
+#### Change Timezone
 
 {% hint style="info" %}
 this will only appear if you are yet to set it
 {% endhint %}
-
-
 
 Time is based on your system's time
 
@@ -50,13 +42,13 @@ By default, the timezone is set to UTC
 {% endstep %}
 
 {% step %}
-### Change Birthday (if not set yet)
+#### Change Birthday (if not set yet)
 
 {% hint style="info" %}
 his will only appear if you are yet to set it
 {% endhint %}
 
-### Options:
+#### Options:
 
 * Dropdown: Day
 * Dropdown: Month
@@ -72,15 +64,15 @@ Good Morning (PLAYERNAME) it's (BIRTHDAY PLAYERNAME)'s Birthday!
 {% endstep %}
 
 {% step %}
-### [Upcoming Events](calendar.md#upcoming-events-1)
+#### [Upcoming Events](calendar.md#upcoming-events-1)
 {% endstep %}
 
 {% step %}
-### [Additional Options](calendar.md#additional-options-1)
+#### [Additional Options](calendar.md#additional-options-1)
 {% endstep %}
 
 {% step %}
-### Claim Gift
+#### Claim Gift
 
 {% hint style="info" %}
 This will only appear if you have a gift available to claim
@@ -94,15 +86,11 @@ This will only appear if you have a gift available to claim
 
 {% stepper %}
 {% step %}
-###
-
-
+####
 {% endstep %}
 
 {% step %}
-###
-
-
+####
 {% endstep %}
 {% endstepper %}
 
@@ -112,15 +100,10 @@ This will only appear if you have a gift available to claim
 
 {% stepper %}
 {% step %}
-###
-
-
+####
 {% endstep %}
 
 {% step %}
-###
-
-
+####
 {% endstep %}
 {% endstepper %}
-

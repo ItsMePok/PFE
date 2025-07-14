@@ -18,15 +18,15 @@
 {% tab title="Recipe" %}
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-|                                                                                                     |
-| :-------------------------------------------------------------------------------------------------: |
+|                                                                                                            |
+| :--------------------------------------------------------------------------------------------------------: |
 | ![Raw Holy Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RawHolyBlock.png?raw=true) |
 
-### Items:
+#### Items:
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RawHolyBlock.png?raw=true" alt="Raw Holy Block." data-size="line"> [Raw Holy Block](../../blocks/raw-ore-blocks/block-of-raw-holy.md)
 
-### Outputs:
+#### Outputs:
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_holy.png?raw=true" alt="Raw Holy." data-size="line"> Raw Holy
   * Amount: 9
@@ -35,16 +35,16 @@
 {% tab title="Trade" %}
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/entity_icon/Shopkeeper.png?raw=true" alt=""><figcaption><p>Sold by the <a href="../../mobs/traders/shopkeeper.md">Shopkeeper</a></p></figcaption></figure>
 
-| Wants                                                                                                                                                                              | Gives                                                                                                                                 |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| Wants                                                                                                                                                                               | Gives                                                                                                                                |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x3.png?raw=true" alt="" data-size="line">Banished Star x3](../banished-stars/banished-star-x3.md) | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_holy.png?raw=true" alt="Raw Holy." data-size="line"> Raw Holy |
 {% endtab %}
 
 {% tab title="Ore Ring" %}
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/ore_ring.png?raw=true" alt=""><figcaption><p>Obtained by using the <a href="../../tools/rings/ore-ring.md">Ore Ring</a></p></figcaption></figure>
 
-| Item                                                                                                                                  | Amount | Chance |
-| ------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------ |
+| Item                                                                                                                                 | Amount | Chance |
+| ------------------------------------------------------------------------------------------------------------------------------------ | ------ | ------ |
 | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_holy.png?raw=true" alt="Raw Holy." data-size="line"> Raw Holy | 1      | 1/35   |
 {% endtab %}
 {% endtabs %}

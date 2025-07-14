@@ -1,10 +1,6 @@
 # Plastic
 
-
-
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true" alt=""><figcaption></figcaption></figure>
-
-
 
 ## Identifier: **poke:plastic** <a href="#identifier" id="identifier"></a>
 
@@ -34,34 +30,32 @@
 
 {% tabs %}
 {% tab title="Recipe" %}
-
-
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-|                                                                                                |                                                                                                |                                                                                                |
-| :--------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------: |
-| ![Sand](https://minecraft.wiki/images/thumb/Sand\_JE5\_BE3.png/150px-Sand\_JE5\_BE3.png?ae2df) | ![Sand](https://minecraft.wiki/images/thumb/Sand\_JE5\_BE3.png/150px-Sand\_JE5\_BE3.png?ae2df) | ![Sand](https://minecraft.wiki/images/thumb/Sand\_JE5\_BE3.png/150px-Sand\_JE5\_BE3.png?ae2df) |
-| ![Sand](https://minecraft.wiki/images/thumb/Sand\_JE5\_BE3.png/150px-Sand\_JE5\_BE3.png?ae2df) |              ![](https://minecraft.wiki/images/Nether\_Quartz\_JE2\_BE2.png?d0049)             | ![Sand](https://minecraft.wiki/images/thumb/Sand\_JE5\_BE3.png/150px-Sand\_JE5\_BE3.png?ae2df) |
-| ![Sand](https://minecraft.wiki/images/thumb/Sand\_JE5\_BE3.png/150px-Sand\_JE5\_BE3.png?ae2df) | ![Sand](https://minecraft.wiki/images/thumb/Sand\_JE5\_BE3.png/150px-Sand\_JE5\_BE3.png?ae2df) | ![Sand](https://minecraft.wiki/images/thumb/Sand\_JE5\_BE3.png/150px-Sand\_JE5\_BE3.png?ae2df) |
+|                                                                                            |                                                                                            |                                                                                            |
+| :----------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------: |
+| ![Sand](https://minecraft.wiki/images/thumb/Sand_JE5_BE3.png/150px-Sand_JE5_BE3.png?ae2df) | ![Sand](https://minecraft.wiki/images/thumb/Sand_JE5_BE3.png/150px-Sand_JE5_BE3.png?ae2df) | ![Sand](https://minecraft.wiki/images/thumb/Sand_JE5_BE3.png/150px-Sand_JE5_BE3.png?ae2df) |
+| ![Sand](https://minecraft.wiki/images/thumb/Sand_JE5_BE3.png/150px-Sand_JE5_BE3.png?ae2df) |             ![](https://minecraft.wiki/images/Nether_Quartz_JE2_BE2.png?d0049)             | ![Sand](https://minecraft.wiki/images/thumb/Sand_JE5_BE3.png/150px-Sand_JE5_BE3.png?ae2df) |
+| ![Sand](https://minecraft.wiki/images/thumb/Sand_JE5_BE3.png/150px-Sand_JE5_BE3.png?ae2df) | ![Sand](https://minecraft.wiki/images/thumb/Sand_JE5_BE3.png/150px-Sand_JE5_BE3.png?ae2df) | ![Sand](https://minecraft.wiki/images/thumb/Sand_JE5_BE3.png/150px-Sand_JE5_BE3.png?ae2df) |
 {% endtab %}
 
 {% tab title="Chest Loot" %}
-## [Abandoned Ship](../../sturctures/abandoned-ship.md):
+### [Abandoned Ship](../../sturctures/abandoned-ship.md):
 
-### Barrel:
+#### Barrel:
 
-| Item                                                                                                                       | Amount | Weight |
-| -------------------------------------------------------------------------------------------------------------------------- | ------ | ------ |
+| Item                                                                                                                     | Amount | Weight |
+| ------------------------------------------------------------------------------------------------------------------------ | ------ | ------ |
 | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true" alt="" data-size="line">Plastic | 1      | 6      |
 {% endtab %}
 
 {% tab title="Brushing" %}
-## [Broken Conduit](../../sturctures/broken-conduit.md#suspicious-sand-gravel):
+### [Broken Conduit](../../sturctures/broken-conduit.md#suspicious-sand-gravel):
 
-#### **Suspicious** <img src="https://minecraft.wiki/images/Suspicious_Sand_(dusted_0)_JE1_BE1.png?651c6" alt="" data-size="line">[**Sand**](https://minecraft.wiki/w/Suspicious\_Sand)**/**<img src="https://minecraft.wiki/images/thumb/Suspicious_Gravel_BE1_(dusted_0).png/150px-Suspicious_Gravel_BE1_(dusted_0).png?ff854" alt="" data-size="line">[**Gravel**](https://minecraft.wiki/w/Suspicious\_Gravel)**:**
+**Suspicious** <img src="https://minecraft.wiki/images/Suspicious_Sand_(dusted_0)_JE1_BE1.png?651c6" alt="" data-size="line">[**Sand**](https://minecraft.wiki/w/Suspicious_Sand)**/**<img src="https://minecraft.wiki/images/thumb/Suspicious_Gravel_BE1_(dusted_0).png/150px-Suspicious_Gravel_BE1_(dusted_0).png?ff854" alt="" data-size="line">[**Gravel**](https://minecraft.wiki/w/Suspicious_Gravel)**:**
 
-| Item                                                                                                                       | Amount | Weight |
-| -------------------------------------------------------------------------------------------------------------------------- | ------ | ------ |
+| Item                                                                                                                     | Amount | Weight |
+| ------------------------------------------------------------------------------------------------------------------------ | ------ | ------ |
 | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true" alt="" data-size="line">Plastic | 1      | 1      |
 {% endtab %}
 {% endtabs %}

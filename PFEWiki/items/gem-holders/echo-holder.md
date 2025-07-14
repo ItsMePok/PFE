@@ -18,7 +18,7 @@
 | ![Echo Shard.](https://minecraft.wiki/images/Echo_Shard_JE1_BE1.png?726c3) |  ![Sculk Sensor](https://minecraft.wiki/images/Sculk_Sensor_BE2.gif?075c0) | ![Echo Shard.](https://minecraft.wiki/images/Echo_Shard_JE1_BE1.png?726c3) |
 |                                                                            | ![Echo Shard.](https://minecraft.wiki/images/Echo_Shard_JE1_BE1.png?726c3) |                                                                            |
 
-### Items:
+#### Items:
 
 * <img src="https://minecraft.wiki/images/Echo_Shard_JE1_BE1.png?726c3" alt="Echo Shard." data-size="line"> [Echo Shard](https://minecraft.wiki/w/Echo_Shard)
 * <img src="https://minecraft.wiki/images/Sculk_Sensor_BE2.gif?075c0" alt="Sculk Sensor" data-size="line"> [Sculk Sensor](https://minecraft.wiki/w/Sculk_Sensor)

@@ -18,23 +18,13 @@ You need the tag `poke:config` to use this item
 
 {% stepper %}
 {% step %}
-## Configure boss events
+### Configure boss events
 
-## Options:
+### Options:
 
-### Enabled Bosses \[x/x]
+#### Enabled Bosses \[x/x]
 
-#### Toggles for each Boss
-
-{% hint style="info" %}
-Settings will not save unless you click the "Save Settings" Button
-{% endhint %}
-
-***
-
-### Boss Spawn Chances
-
-#### Weights (higher number will make it more likely to spawn)
+**Toggles for each Boss**
 
 {% hint style="info" %}
 Settings will not save unless you click the "Save Settings" Button
@@ -42,7 +32,17 @@ Settings will not save unless you click the "Save Settings" Button
 
 ***
 
-### Additional Options
+#### Boss Spawn Chances
+
+**Weights (higher number will make it more likely to spawn)**
+
+{% hint style="info" %}
+Settings will not save unless you click the "Save Settings" Button
+{% endhint %}
+
+***
+
+#### Additional Options
 
 * Boss Event Timing
   * Controls how often a boss event will trigger
@@ -50,22 +50,16 @@ Settings will not save unless you click the "Save Settings" Button
 {% hint style="info" %}
 Settings will not save unless you click the "Save Settings" Button
 
-
-
 This setting will only apply after script has been re-initialized
-
-
 
 For Worlds:
 
 * leave & rejoin the world
 * use the `/reload` command
 
-
-
 For Realms:
 
-* close & reopen the realm&#x20;
+* close & reopen the realm
 * have everyone leave for a few minutes (this usually is a lot easier said than done though lol)
 {% endhint %}
 
@@ -81,7 +75,7 @@ even if the default changes & you had not changed the settings; you will need to
 
 ***
 
-### Close
+#### Close
 
 * Closes the UI
 
@@ -89,38 +83,26 @@ even if the default changes & you had not changed the settings; you will need to
 {% endstep %}
 
 {% step %}
-### Configure disabled features
+#### Configure disabled features
 
-<table><thead><tr><th>Feature</th><th>Default State<select><option value="gwaK5qxnWKzC" label="Enabled" color="blue"></option><option value="kAvPOxtpwdzV" label="Disabled" color="blue"></option></select></th></tr></thead><tbody><tr><td>Quantum Teleporter <mark style="color:orange;">[?]</mark></td><td><span data-option="gwaK5qxnWKzC">Enabled</span></td></tr><tr><td><a href="../tools/rings/kapow-ring.md">Kapow Ring</a> <mark style="color:orange;">[?]</mark></td><td><span data-option="gwaK5qxnWKzC">Enabled</span></td></tr><tr><td>Nuke Ring <mark style="color:orange;">[?]</mark></td><td><span data-option="gwaK5qxnWKzC">Enabled</span></td></tr><tr><td><picture><source srcset="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/sundial_5.png?raw=true" media="(prefers-color-scheme: dark)"><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/sundial_1.png?raw=true" alt="Sundial." data-size="line"></picture> <a href="../tools/misc/sundial.md">Sundial</a> <a data-footnote-ref href="#user-content-fn-1"><mark style="color:orange;">[?]</mark></a></td><td><span data-option="gwaK5qxnWKzC">Enabled</span></td></tr><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/wither_spawner.png?raw=true" alt="Wither Spawner." data-size="line"> <a href="../mobs/bosses/wither-spawner.md">Wither Spawner</a> <a data-footnote-ref href="#user-content-fn-2"><mark style="color:orange;">[?]</mark></a></td><td><span data-option="gwaK5qxnWKzC">Enabled</span></td></tr><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/bounty.png?raw=true" alt="Bounty." data-size="line"> <a href="../items/misc/boss-event-bounty.md">Bounty</a> <a data-footnote-ref href="#user-content-fn-3"><mark style="color:orange;">[?]</mark></a></td><td><span data-option="gwaK5qxnWKzC">Enabled</span></td></tr><tr><td>Waypoint Menu</td><td><span data-option="gwaK5qxnWKzC">Enabled</span></td></tr><tr><td>Set effects <a data-footnote-ref href="#user-content-fn-4"><mark style="color:orange;">[?]</mark></a></td><td><span data-option="gwaK5qxnWKzC">Enabled</span></td></tr></tbody></table>
+<table><thead><tr><th>Feature</th><th>Default State<select><option value="gwaK5qxnWKzC" label="Enabled" color="blue"></option><option value="kAvPOxtpwdzV" label="Disabled" color="blue"></option></select></th></tr></thead><tbody><tr><td>Quantum Teleporter <mark style="color:orange;">[?]</mark></td><td><span data-option="gwaK5qxnWKzC">Enabled</span></td></tr><tr><td><a href="../tools/rings/kapow-ring.md">Kapow Ring</a> <mark style="color:orange;">[?]</mark></td><td><span data-option="gwaK5qxnWKzC">Enabled</span></td></tr><tr><td>Nuke Ring <mark style="color:orange;">[?]</mark></td><td><span data-option="gwaK5qxnWKzC">Enabled</span></td></tr><tr><td><p><picture><source srcset="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/sundial_5.png?raw=true" media="(prefers-color-scheme: dark)"><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/sundial_1.png?raw=true" alt="Sundial." data-size="line"></picture></p><p> <a href="../tools/misc/sundial.md">Sundial</a> <a data-footnote-ref href="#user-content-fn-1"><mark style="color:orange;">[?]</mark></a></p></td><td><span data-option="gwaK5qxnWKzC">Enabled</span></td></tr><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/wither_spawner.png?raw=true" alt="Wither Spawner." data-size="line"> <a href="../mobs/bosses/wither-spawner.md">Wither Spawner</a> <a data-footnote-ref href="#user-content-fn-2"><mark style="color:orange;">[?]</mark></a></td><td><span data-option="gwaK5qxnWKzC">Enabled</span></td></tr><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/bounty.png?raw=true" alt="Bounty." data-size="line"> <a href="../items/misc/boss-event-bounty.md">Bounty</a> <a data-footnote-ref href="#user-content-fn-3"><mark style="color:orange;">[?]</mark></a></td><td><span data-option="gwaK5qxnWKzC">Enabled</span></td></tr><tr><td>Waypoint Menu</td><td><span data-option="gwaK5qxnWKzC">Enabled</span></td></tr><tr><td>Set effects <a data-footnote-ref href="#user-content-fn-4"><mark style="color:orange;">[?]</mark></a></td><td><span data-option="gwaK5qxnWKzC">Enabled</span></td></tr></tbody></table>
 {% endstep %}
 {% endstepper %}
 
-
-
 [^1]: Disabling this will prevent the sundial from changing the time
-
-
 
     **The Sundial can still be obtained but will not functional**
 
 [^2]: Disabling this will prevent the player from using this to spawn a [Wither](https://minecraft.wiki/w/Wither)
 
-
-
     **The Wither Spawner will still be obtainable but will not be functional**
 
 [^3]: Disabling this will prevent players from manually starting a boss event using a Bounty
 
-
-
-    Boss events can still occur if enabled within the other settings this just disables the bounty from being used&#x20;
-
-
+    Boss events can still occur if enabled within the other settings this just disables the bounty from being used
 
     The Bounty will still be obtainable but will not function
 
 [^4]: Disabled this will prevent equipment from triggering its set effects
-
-
 
     This only applies to things from PFE & other Add-Ons that use the system from PFE

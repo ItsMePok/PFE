@@ -1,7 +1,5 @@
 # Scrapper
 
-
-
 ## Identifier: poke:scrapper
 
 ## <img src="https://minecraft.wiki/images/Emerald_JE3_BE3.png?4c5f3" alt="Emerald." data-size="line"> Trades:
@@ -35,8 +33,6 @@
 
 {% tabs %}
 {% tab title="Recipe" %}
-
-
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
 |     |                                                                                         |   |
@@ -45,11 +41,10 @@
 |     | ![Egg](https://minecraft.wiki/images/thumb/Egg_JE2_BE2.png/150px-Egg_JE2_BE2.png?495d9) |   |
 |     |                                                                                         |   |
 
-### Items:
+#### Items:
 
 * <img src="https://minecraft.wiki/images/thumb/Egg_JE2_BE2.png/150px-Egg_JE2_BE2.png?495d9" alt="Egg" data-size="line"> [Egg](https://minecraft.wiki/w/Egg)
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="Cobalt Ingot." data-size="line"> Cobalt Ingot
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_ingot.png?raw=true" alt="Onyx Ingot." data-size="line"> Onyx Ingot
 {% endtab %}
 {% endtabs %}
-

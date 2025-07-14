@@ -18,7 +18,7 @@
 | ![Block of Diamond.](https://minecraft.wiki/images/thumb/Block_of_Diamond_JE5_BE3.png/150px-Block_of_Diamond_JE5_BE3.png?542ee) |                                                                                                                                 | ![Block of Diamond.](https://minecraft.wiki/images/thumb/Block_of_Diamond_JE5_BE3.png/150px-Block_of_Diamond_JE5_BE3.png?542ee) |
 |                                                                                                                                 | ![Block of Diamond.](https://minecraft.wiki/images/thumb/Block_of_Diamond_JE5_BE3.png/150px-Block_of_Diamond_JE5_BE3.png?542ee) |                                                                                                                                 |
 
-### Items:
+#### Items:
 
 * <img src="https://minecraft.wiki/images/thumb/Block_of_Diamond_JE5_BE3.png/150px-Block_of_Diamond_JE5_BE3.png?542ee" alt="Block of Diamond." data-size="line"> [Block of Diamond](https://minecraft.wiki/w/Block_of_Diamond)
 {% endtab %}

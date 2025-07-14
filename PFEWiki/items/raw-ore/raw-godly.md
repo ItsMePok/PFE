@@ -18,15 +18,15 @@
 {% tab title="Recipe" %}
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-|                                                                                                      |
-| :--------------------------------------------------------------------------------------------------: |
+|                                                                                                              |
+| :----------------------------------------------------------------------------------------------------------: |
 | ![Raw Godly Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RawGodlyBlock.png?raw=true) |
 
-### Items:
+#### Items:
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RawGodlyBlock.png?raw=true" alt="Raw Godly Block." data-size="line"> [Raw Godly Block](../../blocks/raw-ore-blocks/block-of-raw-godly.md)
 
-### Outputs:
+#### Outputs:
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_godly.png?raw=true" alt="Raw Godly." data-size="line"> Raw Godly
   * Amount: 9

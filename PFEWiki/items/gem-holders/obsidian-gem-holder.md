@@ -18,7 +18,7 @@
 | ![Obsidian](https://minecraft.wiki/images/thumb/Obsidian_JE3_BE2.png/150px-Obsidian_JE3_BE2.png?0a8ae) |                                                                                                        | ![Obsidian](https://minecraft.wiki/images/thumb/Obsidian_JE3_BE2.png/150px-Obsidian_JE3_BE2.png?0a8ae) |
 |                                                                                                        | ![Obsidian](https://minecraft.wiki/images/thumb/Obsidian_JE3_BE2.png/150px-Obsidian_JE3_BE2.png?0a8ae) |                                                                                                        |
 
-### Items:
+#### Items:
 
 * <img src="https://minecraft.wiki/images/thumb/Obsidian_JE3_BE2.png/150px-Obsidian_JE3_BE2.png?0a8ae" alt="Obsidian" data-size="line"> [Obsidian](https://minecraft.wiki/w/Obsidian)
 {% endtab %}

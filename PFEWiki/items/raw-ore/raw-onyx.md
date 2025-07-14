@@ -18,15 +18,15 @@
 {% tab title="Recipe" %}
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-|                                                                                                     |
-| :-------------------------------------------------------------------------------------------------: |
+|                                                                                                            |
+| :--------------------------------------------------------------------------------------------------------: |
 | ![Raw Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RawOnyxBlock.png?raw=true) |
 
-### Items:
+#### Items:
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RawOnyxBlock.png?raw=true" alt="Raw Onyx Block." data-size="line"> [Raw Onyx Block](../../blocks/raw-ore-blocks/block-of-raw-onyx.md)
 
-### Outputs:
+#### Outputs:
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_onyx.png?raw=true" alt="Raw Onyx" data-size="line"> Raw Onyx
   * Amount: 9
@@ -35,16 +35,16 @@
 {% tab title="Trade" %}
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/entity_icon/Shopkeeper.png?raw=true" alt=""><figcaption><p>Sold by the <a href="../../mobs/traders/shopkeeper.md">Shopkeeper</a></p></figcaption></figure>
 
-| Wants                                                                                                                                                                              | Gives                                                                                                                                |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| Wants                                                                                                                                                                               | Gives                                                                                                                               |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x3.png?raw=true" alt="" data-size="line">Banished Star x3](../banished-stars/banished-star-x3.md) | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_onyx.png?raw=true" alt="Raw Onyx" data-size="line"> Raw Onyx |
 {% endtab %}
 
 {% tab title="Mob Loot" %}
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/entity_icon/demonic_allay.png" alt=""><figcaption><p>Dropped by the <a href="../../mobs/hostile-mobs/demonic-allay.md">Demonic Allay</a></p></figcaption></figure>
 
-| Item                                                                                                                                 | Amount | Chance of Holding |
-| ------------------------------------------------------------------------------------------------------------------------------------ | ------ | ----------------- |
+| Item                                                                                                                                | Amount | Chance of Holding |
+| ----------------------------------------------------------------------------------------------------------------------------------- | ------ | ----------------- |
 | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_onyx.png?raw=true" alt="Raw Onyx" data-size="line"> Raw Onyx | 1      | 1/47              |
 
 {% hint style="info" %}
@@ -55,8 +55,8 @@ The Demonic Allay needs to be holding this item for it to drop
 {% tab title="Ore RIng" %}
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/ore_ring.png?raw=true" alt=""><figcaption><p>Obtained by using the <a href="../../tools/rings/ore-ring.md">Ore Ring</a></p></figcaption></figure>
 
-| Item                                                                                                                                 | Amount | Chance |
-| ------------------------------------------------------------------------------------------------------------------------------------ | ------ | ------ |
+| Item                                                                                                                                | Amount | Chance |
+| ----------------------------------------------------------------------------------------------------------------------------------- | ------ | ------ |
 | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_onyx.png?raw=true" alt="Raw Onyx" data-size="line"> Raw Onyx | 1      | 1/35   |
 {% endtab %}
 {% endtabs %}

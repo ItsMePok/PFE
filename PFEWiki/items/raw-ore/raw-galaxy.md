@@ -18,15 +18,15 @@
 {% tab title="Recipe" %}
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-|                                                                                                       |
-| :---------------------------------------------------------------------------------------------------: |
+|                                                                                                                |
+| :------------------------------------------------------------------------------------------------------------: |
 | ![Raw Galaxy Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RawGalaxyBlock.png?raw=true) |
 
-### Items:
+#### Items:
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RawGalaxyBlock.png?raw=true" alt="Raw Galaxy Block." data-size="line"> [Raw Galaxy Block](../../blocks/raw-ore-blocks/block-of-raw-galaxy.md)
 
-### Outputs:
+#### Outputs:
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_galaxy.png?raw=true" alt="Raw Galaxy." data-size="line"> Raw Galaxy
   * Amount: 9

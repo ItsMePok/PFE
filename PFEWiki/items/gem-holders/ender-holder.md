@@ -12,13 +12,13 @@
 {% tab title="Recipe" %}
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-|                                                                                                 |                                                                                                 |                                                                                                 |
-| :---------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: | ----------------------------------------------------------------------------------------------- |
-|                                                                                                 | ![Shade Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_ingot.png?raw=true) |                                                                                                 |
-| ![Shade Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_ingot.png?raw=true) |          ![Eye of Ender.](https://minecraft.wiki/images/Eye_of_Ender_JE2_BE2.png?3e29b)         | ![Shade Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_ingot.png?raw=true) |
-|                                                                                                 | ![Shade Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_ingot.png?raw=true) |                                                                                                 |
+|                                                                                                   |                                                                                                   |                                                                                                   |
+| :-----------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: | ------------------------------------------------------------------------------------------------- |
+|                                                                                                   | ![Shade Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_ingot.png?raw=true) |                                                                                                   |
+| ![Shade Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_ingot.png?raw=true) |           ![Eye of Ender.](https://minecraft.wiki/images/Eye_of_Ender_JE2_BE2.png?3e29b)          | ![Shade Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_ingot.png?raw=true) |
+|                                                                                                   | ![Shade Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_ingot.png?raw=true) |                                                                                                   |
 
-### Items:
+#### Items:
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_ingot.png?raw=true" alt="Shade Ingot" data-size="line"> [Shade Ingot](../ingots/shade-ingot.md)
 * <img src="https://minecraft.wiki/images/Eye_of_Ender_JE2_BE2.png?3e29b" alt="Eye of Ender." data-size="line"> [Eye of Ender](https://minecraft.wiki/w/Eye_of_Ender)

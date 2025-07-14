@@ -29,8 +29,6 @@ This Item currently cannot be obtained in survival
 {% hint style="warning" %}
 This Menu can be accessed with the Boss Event Config Menu Item even without operator
 
-
-
 It is planned for this will require operator if/when that functionality is no longer experimental
 {% endhint %}
 
@@ -38,19 +36,9 @@ It is planned for this will require operator if/when that functionality is no lo
 
 {% stepper %}
 {% step %}
-### Enabled Bosses \[x/x]
+#### Enabled Bosses \[x/x]
 
-#### Toggles for each Boss
-
-{% hint style="info" %}
-Settings will not save unless you click the "Save Settings" Button
-{% endhint %}
-{% endstep %}
-
-{% step %}
-### Boss Spawn Chances
-
-#### Weights (higher number will make it more likely to spawn)
+**Toggles for each Boss**
 
 {% hint style="info" %}
 Settings will not save unless you click the "Save Settings" Button
@@ -58,7 +46,17 @@ Settings will not save unless you click the "Save Settings" Button
 {% endstep %}
 
 {% step %}
-### Additional Options
+#### Boss Spawn Chances
+
+**Weights (higher number will make it more likely to spawn)**
+
+{% hint style="info" %}
+Settings will not save unless you click the "Save Settings" Button
+{% endhint %}
+{% endstep %}
+
+{% step %}
+#### Additional Options
 
 * Boss Event Timing
   * Controls how often a boss event will trigger
@@ -66,22 +64,16 @@ Settings will not save unless you click the "Save Settings" Button
 {% hint style="info" %}
 Settings will not save unless you click the "Save Settings" Button
 
-
-
 This setting will only apply after script has been re-initialized
-
-
 
 For Worlds:
 
 * leave & rejoin the world
 * use the `/reload` command
 
-
-
 For Realms:
 
-* close & reopen the realm&#x20;
+* close & reopen the realm
 * have everyone leave for a few minutes (this usually is a lot easier said than done though lol)
 {% endhint %}
 
@@ -97,7 +89,7 @@ even if the default changes & you had not changed the settings; you will need to
 {% endstep %}
 
 {% step %}
-### Close
+#### Close
 
 Closes the UI
 {% endstep %}
