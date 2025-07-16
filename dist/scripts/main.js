@@ -7338,7 +7338,7 @@ function MakeAddonID(string) {
 }
 
 // scripts/main.ts
-var currentVersion = 102960;
+var currentVersion = 102990;
 world10.afterEvents.playerJoin.subscribe((data) => {
   let birthdays = JSON.parse(world10.getDynamicProperty(`poke:birthdays`).toString());
   system6.runTimeout(() => {
@@ -8793,6 +8793,43 @@ system6.beforeEvents.startup.subscribe((data) => {
       }
     }
   );
+  data.itemComponentRegistry.registerCustomComponent(
+    "poke_pfe:teleport",
+    {
+      onUse(data2, componentInfo) {
+        if (!data2.itemStack)
+          return;
+        const component = componentInfo.params;
+        const location = component.location == "location_when_used" ? data2.source.location : void 0;
+        const dimension = component.dimension ? world10.getDimension(component.dimension) : data2.source.dimension;
+        component.dimension;
+        if (component.delay) {
+          system6.runTimeout(() => {
+            data2.source.teleport(location ?? data2.source.location, { dimension });
+            if (component.sound) {
+              dimension.playSound(component.sound.identifier, data2.source.location, { pitch: component.sound.pitch, volume: component.sound.volume });
+            }
+          }, component.delay);
+          const cooldownComponent = data2.itemStack.getComponent(ItemComponentTypes4.Cooldown);
+          if (cooldownComponent?.cooldownCategory) {
+            data2.source.startItemCooldown(cooldownComponent.cooldownCategory, component.delay + 5);
+          }
+        } else {
+          data2.source.teleport(location ?? data2.source.location, { dimension });
+        }
+        if (data2.source.getGameMode() != GameMode5.Creative) {
+          if (component.decrement_stack) {
+            data2.source.getComponent(EntityComponentTypes9.Equippable)?.setEquipment(EquipmentSlot8.Mainhand, PokeDecrementStack(data2.itemStack));
+            return;
+          }
+          if (component.take_durability) {
+            PokeDamageItemUB(data2.itemStack, 1, data2.source, EquipmentSlot8.Mainhand, false);
+            return;
+          }
+        }
+      }
+    }
+  );
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:transform_block",
     {
@@ -8838,8 +8875,10 @@ system6.beforeEvents.startup.subscribe((data) => {
             var GetBlock = GetBlock2;
             const block = GetBlock2();
             if (typeof component.places == "string") {
-              if (!block || !component.can_replace && (!block || !block.isAir) || !component.can_replace.includes(block.typeId))
+              if (!block || (component.can_replace ? !component.can_replace.includes(block.typeId) : !block.isAir)) {
                 continue;
+              }
+              ;
               if (component.places.includes("{")) {
                 let places_block = component.places;
                 const permutationString = places_block.substring(places_block.indexOf("{"));
@@ -8860,7 +8899,7 @@ system6.beforeEvents.startup.subscribe((data) => {
                 parsedBlocks.push({ places: unparsedBlock });
               }
               for (const parsedBlock of parsedBlocks) {
-                if (block && (parsedBlock.replaces ? parsedBlock.replaces == block.typeId : !component.can_replace && block.isAir || component.can_replace.includes(block.typeId))) {
+                if (block && (parsedBlock.replaces ? parsedBlock.replaces == block.typeId : component.can_replace ? component.can_replace?.includes(block.typeId) : block.isAir)) {
                   if (parsedBlock.places.includes("{")) {
                     let places_block = parsedBlock.places;
                     const permutationString = places_block.substring(places_block.indexOf("{"));
@@ -9200,7 +9239,7 @@ system6.beforeEvents.startup.subscribe((data) => {
         if (componentInfo.can_be_disabled) {
           let options = JSON.parse(world10.getDynamicProperty(PFEDisableConfigName).toString()) ?? PFEDisableConfigDefault;
           switch (true) {
-            case (data2.itemStack.typeId == "poke:player_magnet" && options.playerMagnet === false || data2.itemStack.typeId == "poke:quantum_teleporter" && options.quantumTeleporter === false || data2.itemStack.typeId == "poke:sundial" && options.quantumTeleporter === false || data2.itemStack.typeId == "poke:kapow_ring" && options.quantumTeleporter === false): {
+            case (data2.itemStack.typeId == "poke:player_magnet" && options.playerMagnet === false || data2.itemStack.typeId == "poke:quantum_teleporter" && options.quantumTeleporter === false || data2.itemStack.typeId == "poke:sundial" && options.sundial === false || data2.itemStack.typeId == "poke:kapow_ring" && options.kapowRing === false): {
               data2.source.sendMessage({ translate: `\xA7f[\xA7e!\xA7f] \xA7c%translation.poke_pfe.feature_disabled\xA7r` });
               return;
             }

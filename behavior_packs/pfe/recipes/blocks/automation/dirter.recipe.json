@@ -2,7 +2,7 @@
 	"format_version": "1.20.10",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:dirter"
+			"identifier": "poke_pfe:dirter"
 		},
 		"tags": [
 			"crafting_table"
@@ -50,7 +50,7 @@
 			}
 		},
 		"result": {
-			"item": "poke:dirter_up"
+			"item": "poke_pfe:dirter"
 		}
 	}
 }

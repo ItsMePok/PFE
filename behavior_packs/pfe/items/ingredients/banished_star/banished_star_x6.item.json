@@ -11,6 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.banished_star6\n%poke_pfe.tag"
 			},
+			"poke_pfe:icon_path": "textures/poke/pfe/banished_star_x6",
 			"minecraft:tags": {
 				"tags": [
 					"poke:banished_star"

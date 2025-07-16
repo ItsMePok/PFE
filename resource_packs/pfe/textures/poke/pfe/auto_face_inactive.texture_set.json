@@ -1,0 +1,8 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "auto_face",
+		"metalness_emissive_roughness": "auto_face_inactive_mer",
+		"heightmap": "auto_face_height"
+	}
+}

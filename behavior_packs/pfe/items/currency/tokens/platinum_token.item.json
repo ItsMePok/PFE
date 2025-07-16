@@ -11,6 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.platinum_token\n%poke_pfe.tag"
 			},
+			"poke_pfe:icon_path": "textures/poke/pfe/platinum_token",
 			"minecraft:icon": "poke_pfe_platinum_token"
 		}
 	}

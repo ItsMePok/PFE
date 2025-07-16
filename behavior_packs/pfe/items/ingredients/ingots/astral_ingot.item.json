@@ -11,11 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.astral_ingot\n%poke_pfe.tag"
 			},
-			"minecraft:icon": {
-				"textures": {
-					"default": "poke_pfe_astral_ingot"
-				}
-			},
+			"minecraft:icon": "poke_pfe_astral_ingot",
 			"poke_pfe:icon_path": "textures/poke/pfe/astral_ingot"
 		}
 	}

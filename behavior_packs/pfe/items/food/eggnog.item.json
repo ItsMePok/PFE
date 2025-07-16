@@ -11,7 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.eggnog\n%poke_pfe.tag"
 			},
-			"minecraft:max_stack_size": 64,
+			"poke_pfe:icon_path": "textures/poke/pfe/eggnog",
 			"minecraft:icon": "poke_pfe_eggnog",
 			"minecraft:food": {
 				"nutrition": 3,

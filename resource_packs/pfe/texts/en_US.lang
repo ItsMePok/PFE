@@ -1447,3 +1447,5 @@ poke_pfe.max_level=Max Level
 poke_pfe.max=Max
 poke_pfe.upgrader=Upgrader
 poke_pfe.noUpgradeableItems=You don't have any items that can be upgraded here
+poke_pfe.time_anchor_spell=Time Anchor Spell
+poke_pfe.time_anchor_spell.desc=10 minutes after use: Teleports you back to where you were when using

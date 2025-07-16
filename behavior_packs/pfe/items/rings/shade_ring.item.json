@@ -11,6 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.shade_ring\n%poke_pfe.tag"
 			},
+			"poke_pfe:icon_path": "textures/poke/pfe/shade_ring",
 			"poke:shootProjectile": {},
 			"minecraft:repairable": {
 				"repair_items": [

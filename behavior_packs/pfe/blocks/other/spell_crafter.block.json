@@ -32,6 +32,16 @@
 					"recipe_type": "shapeless",
 					"items": [
 						"1:minecraft:paper",
+						"1:minecraft:clock"
+					],
+					"result": [
+						"4:poke_pfe:time_anchor_spell"
+					]
+				},
+				{
+					"recipe_type": "shapeless",
+					"items": [
+						"1:minecraft:paper",
 						"1:minecraft:fire_charge"
 					],
 					"result": [

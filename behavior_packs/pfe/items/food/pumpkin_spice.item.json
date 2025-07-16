@@ -12,8 +12,8 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.pumpkin_spice\n%poke_pfe.tag"
 			},
+			"poke_pfe:icon_path": "textures/poke/pfe/pumpkin_spice",
 			"poke:consumeEffects": {},
-			"minecraft:max_stack_size": 64,
 			"minecraft:icon": "poke_pfe_pumpkin_spice",
 			"minecraft:food": {
 				"nutrition": 10,

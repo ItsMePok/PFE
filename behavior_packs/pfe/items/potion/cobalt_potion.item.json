@@ -15,6 +15,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.cobalt_potion\n§7%potion.nightVision (3:00)\n%potion.regeneration (2:00)\n%poke_pfe.tag"
 			},
+			"poke_pfe:icon_path": "textures/poke/pfe/cobalt_potion",
 			"minecraft:food": {
 				"nutrition": 0,
 				"saturation_modifier": 0,

@@ -12,6 +12,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.kapow_ring\n%poke_pfe.tag"
 			},
+			"poke_pfe:icon_path": "textures/poke/pfe/kapow_ring",
 			"minecraft:repairable": {
 				"repair_items": [
 					{

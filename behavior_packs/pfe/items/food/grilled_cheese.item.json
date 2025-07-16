@@ -12,7 +12,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.grilled_cheese\n%poke_pfe.tag"
 			},
-			"minecraft:max_stack_size": 64,
+			"poke_pfe:icon_path": "textures/poke/pfe/grilled_cheese",
 			"minecraft:icon": "poke_pfe_grilled_cheese",
 			"minecraft:food": {
 				"nutrition": 6,

@@ -12,6 +12,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.nuke_ring\n%poke_pfe.tag"
 			},
+			"poke_pfe:icon_path": "textures/poke/pfe/nuke_ring",
 			"poke:shootProjectile": {},
 			"minecraft:repairable": {
 				"repair_items": [

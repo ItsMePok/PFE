@@ -11,6 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.red_button\n%poke_pfe.tag"
 			},
+			"poke_pfe:icon_path": "textures/poke/pfe/red_button",
 			"minecraft:icon": "poke_pfe_red_button",
 			"poke_pfe:run_command": {
 				"version": 1,

@@ -2,7 +2,7 @@ import { system, world, EquipmentSlot, GameMode, EntityComponentTypes, ItemCompo
 import { BlockStateSuperset, MinecraftBlockTypes, MinecraftDimensionTypes, MinecraftEffectTypes, MinecraftEnchantmentTypes, MinecraftEntityTypes, MinecraftItemTypes, RedMushroomBlockStates } from "@minecraft/vanilla-data";
 import { PFEBossEventConfig, PFEBossEventConfigName, PFEBossEventTicks, PFEBossEventUIMainMenu, PFEDefaultBossEventSettings, PFEStartBossEvent, startBossEvents } from "./bossEvents";
 import { PFEBoxMiningComponent } from "./boxMining";
-import { PokeClosestCardinal, PokeDamageItemUB, PokeDecrementStack, PokeSpawnLootTable } from "./commonFunctions";
+import { PokeClosestCardinal, PokeDamageItemUB, PokeDecrementStack, PokeGetItemFromInventory, PokeSpawnLootTable } from "./commonFunctions";
 import { PokeBirthdays, PokeTimeConfigUIMainMenu, PokeTimeGreeting, PokeTimeZoneOffset } from "./time";
 import { PFEBoltBowsComponent } from "./boltbow";
 import { PFEDisableConfigOptions, PFEDisableConfigDefault, PFEDisableConfigMainMenu, PFEDisableConfigName } from "./disableConfig";
@@ -13,7 +13,7 @@ import ComputersCompat, { initExampleStickers } from "./addonCompatibility/jigar
 import { PFEWaypointComponent } from "./waypoints";
 import { PFEUpgradeableComponent } from "./upgrades";
 import { RecipeBlockComponent, RecipeItemComponent } from "./recipeSystems";
-const currentVersion = 102960 // PFE Version (ex: 102950 = v1.2.95)
+const currentVersion = 102990 // PFE Version (ex: 102950 = v1.2.95)
 
 
 world.afterEvents.playerJoin.subscribe((data => {
@@ -1152,6 +1152,54 @@ system.beforeEvents.startup.subscribe(data => {
     )
 
     // Updated Components
+    data.itemComponentRegistry.registerCustomComponent(
+        "poke_pfe:teleport", {
+        onUse(data, componentInfo) {
+            if (!data.itemStack) return;
+            type TeleportComponentInfo = {
+                delay: number,
+                location: "location_when_used" | Vector3,
+                dimension?: MinecraftDimensionTypes,
+                // \/ Only use of of these at a time \/
+                take_durability?: boolean,
+                decrement_stack?: boolean,
+                sound?: {
+                    identifier: string
+                    pitch?: number
+                    volume?: number
+                }
+            }
+            const component = <TeleportComponentInfo>componentInfo.params
+            const location = component.location == "location_when_used" ? data.source.location : undefined
+            const dimension = component.dimension ? world.getDimension(component.dimension) : data.source.dimension
+            component.dimension
+            if (component.delay) {
+                system.runTimeout(() => {
+                    data.source.teleport(location ?? data.source.location, { dimension: dimension })
+                    if (component.sound) {
+                        dimension.playSound(component.sound.identifier, data.source.location, { pitch: component.sound.pitch, volume: component.sound.volume })
+                    }
+                }, component.delay)
+                const cooldownComponent = data.itemStack.getComponent(ItemComponentTypes.Cooldown)
+                if (cooldownComponent?.cooldownCategory) {
+                    data.source.startItemCooldown(cooldownComponent.cooldownCategory, component.delay + 5)
+                }
+            } else {
+                data.source.teleport(location ?? data.source.location, { dimension: dimension })
+            }
+            if (data.source.getGameMode() != GameMode.Creative) {
+                if (component.decrement_stack) {
+                    data.source.getComponent(EntityComponentTypes.Equippable)?.setEquipment(EquipmentSlot.Mainhand, PokeDecrementStack(data.itemStack))
+                    return
+                }
+                if (component.take_durability) {
+                    PokeDamageItemUB(data.itemStack, 1, data.source, EquipmentSlot.Mainhand, false);
+                    return
+                }
+            }
+        }
+    }
+    )
     data.blockComponentRegistry.registerCustomComponent(
         "poke_pfe:transform_block", {
         onTick(data, componentInfo) {
@@ -1175,7 +1223,7 @@ system.beforeEvents.startup.subscribe(data => {
             type PlaceBlocksComponent = {
                 places: string | string[] // array ex: ["minecraft:cobblestone::minecraft:gravel"] places cannot be string[] if using can_replace
                 targets: Direction[],
-                can_replace: string[]
+                can_replace?: string[]
             }
             const component = <PlaceBlocksComponent>componentInfo.params
             const ActiveState = <keyof BlockStateSuperset>'pfe:active'
@@ -1194,7 +1242,10 @@ system.beforeEvents.startup.subscribe(data => {
                     }
                     const block = GetBlock()
                     if (typeof component.places == "string") {
-                        if (!block || ((!component.can_replace) && (!block || !block.isAir)) || !component.can_replace.includes(block.typeId)) continue;
+                        if (!block || (component.can_replace ? !(component.can_replace.includes(block.typeId)) : !(block.isAir))) {
+                            //console.warn("did not meet conditions to place")
+                            continue
+                        };
                         if (component.places.includes("{")) {
                             let places_block = component.places
                             const permutationString = places_block.substring(places_block.indexOf("{"))
@@ -1214,7 +1265,7 @@ system.beforeEvents.startup.subscribe(data => {
                             parsedBlocks.push({ places: unparsedBlock })
                         }
                         for (const parsedBlock of parsedBlocks) {
-                            if (block && (parsedBlock.replaces ? parsedBlock.replaces == block.typeId : ((!component.can_replace && block.isAir) || component.can_replace.includes(block.typeId)))) {
+                            if (block && (parsedBlock.replaces ? parsedBlock.replaces == block.typeId : (component.can_replace ? (component.can_replace?.includes(block.typeId)) : block.isAir))) {
                                 if (parsedBlock.places.includes("{")) {
                                     let places_block = parsedBlock.places
                                     const permutationString = places_block.substring(places_block.indexOf("{"))
@@ -1532,8 +1583,8 @@ system.beforeEvents.startup.subscribe(data => {
                     case
                         (data.itemStack.typeId == "poke:player_magnet" && options.playerMagnet === false)
                         || (data.itemStack.typeId == "poke:quantum_teleporter" && options.quantumTeleporter === false)
-                        || (data.itemStack.typeId == "poke:sundial" && options.quantumTeleporter === false)
-                        || (data.itemStack.typeId == "poke:kapow_ring" && options.quantumTeleporter === false)
+                        || (data.itemStack.typeId == "poke:sundial" && options.sundial === false)
+                        || (data.itemStack.typeId == "poke:kapow_ring" && options.kapowRing === false)
                         : {
                             data.source.sendMessage({ translate: `§f[§e!§f] §c%translation.poke_pfe.feature_disabled§r` })
                             return;

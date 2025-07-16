@@ -75,7 +75,7 @@
 						},
 						"down": {
 							"render_method": "opaque",
-							"texture": "poke_pfe_automation_gear"
+							"texture": "poke_pfe_animated_automation_gear"
 						}
 					},
 					"minecraft:geometry": {
@@ -91,7 +91,7 @@
 					"minecraft:material_instances": {
 						"north": {
 							"render_method": "opaque",
-							"texture": "poke_pfe_automation_face"
+							"texture": "poke_pfe_auto_face_inactive"
 						},
 						"east": {
 							"render_method": "opaque",

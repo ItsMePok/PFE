@@ -11,7 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.sugar_water\n%poke_pfe.tag"
 			},
-			"minecraft:max_stack_size": 64,
+			"poke_pfe:icon_path": "textures/poke/pfe/sugar_water",
 			"minecraft:icon": "poke_pfe_sugar_water",
 			"minecraft:food": {
 				"nutrition": 1,

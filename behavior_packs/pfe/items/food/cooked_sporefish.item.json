@@ -11,7 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.cooked_sporefish\n%poke_pfe.tag"
 			},
-			"minecraft:max_stack_size": 64,
+			"poke_pfe:icon_path": "textures/poke/pfe/cooked_sporefish",
 			"minecraft:icon": "poke_pfe_cooked_sporefish",
 			"minecraft:food": {
 				"nutrition": 9,

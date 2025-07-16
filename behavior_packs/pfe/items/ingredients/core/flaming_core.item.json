@@ -11,6 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.flaming_core\n%poke_pfe.tag"
 			},
+			"poke_pfe:icon_path": "textures/poke/pfe/magnet_core",
 			"minecraft:rarity": "common",
 			"minecraft:tags": {
 				"tags": [
