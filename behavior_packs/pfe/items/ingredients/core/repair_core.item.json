@@ -11,6 +11,12 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.repair_core\n%poke_pfe.tag"
 			},
+			"poke_pfe:icon_path": "textures/poke/pfe/repair_core",
+			"minecraft:tags": {
+				"tags": [
+					"poke:upgrade_core"
+				]
+			},
 			"minecraft:icon": "poke_pfe_repair_core"
 		}
 	}

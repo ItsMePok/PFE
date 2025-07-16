@@ -12,6 +12,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.spawn_dragon\n%poke_pfe.tag"
 			},
+			"poke_pfe:icon_path": "textures/poke/pfe/sparky_spawn_egg",
 			"minecraft:icon": "poke_pfe_sparky_spawn_egg",
 			"poke_pfe:spawn_entity": {
 				"entity": "poke:dragon"

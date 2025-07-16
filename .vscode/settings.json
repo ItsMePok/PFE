@@ -30,6 +30,87 @@
               "components": {
                 "type": "object",
                 "properties": {
+                  "poke_pfe:teleport": {
+                    "title": "Teleport (PFE)",
+                    "type": "object",
+                    "properties": {
+                      "delay": {
+                        "description": "Amount of time (in ticks) until the teleport will be triggered",
+                        "type": "number"
+                      },
+                      "location": {
+                        "description": "where this will teleport the player",
+                        "oneOf": [
+                          {
+                            "enum": [
+                              "location_when_used"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "x": {
+                                "type": "number"
+                              },
+                              "y": {
+                                "type": "number"
+                              },
+                              "z": {
+                                "type": "number"
+                              },
+                            },
+                            "required": [
+                              "x",
+                              "y",
+                              "z"
+                            ]
+                          }
+                        ]
+                      },
+                      "dimension": {
+                        "type": "string",
+                        "examples": [
+                          "minecraft:nether",
+                          "minecraft:overworld",
+                          "minecraft:the_end",
+                        ]
+                      },
+                      "take_durability": {
+                        "type": "boolean"
+                      },
+                      "decrement_stack": {
+                        "type": "boolean"
+                      },
+                      "sound": {
+                        "type": "object",
+                        "description": "The sounds this plays when it sucessfully triggers",
+                        "properties": {
+                          "identifier": {
+                            "type": "string",
+                            "description": "The sound's identifier",
+                            "examples": [
+                              "sponge.absorb",
+                              "poke_pfe.calibrate",
+                              "mob.endermen.portal"
+                            ]
+                          },
+                          "pitch": {
+                            "type": "number",
+                            "description": "The pitch of the sound",
+                            "default": 1
+                          },
+                          "volume": {
+                            "type": "number",
+                            "description": "The volume of the sound",
+                            "default": 1
+                          }
+                        },
+                        "required": [
+                          "identifier"
+                        ]
+                      }
+                    }
+                  },
                   "poke_pfe:transform_blocks": {
                     "title": "Transform Blocks (PFE)",
                     "type": "object",
@@ -3682,7 +3763,8 @@
                             "description": "The sound's identifier",
                             "examples": [
                               "sponge.absorb",
-                              "poke_pfe.calibrate"
+                              "poke_pfe.calibrate",
+                              "mob.endermen.portal"
                             ]
                           },
                           "pitch": {
@@ -3768,7 +3850,8 @@
                             "description": "The sound's identifier",
                             "examples": [
                               "sponge.absorb",
-                              "poke_pfe.calibrate"
+                              "poke_pfe.calibrate",
+                              "mob.endermen.portal"
                             ]
                           },
                           "pitch": {

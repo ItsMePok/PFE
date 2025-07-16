@@ -11,6 +11,13 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.item_magnet\n%poke_pfe.tag"
 			},
+			"poke_pfe:icon_path": "textures/poke/pfe/item_magnet",
+			"poke_pfe:upgradeable": {
+				"version": 1,
+				"upgrade_ids": [
+					"pfe:persistence"
+				]
+			},
 			"minecraft:icon": "poke_pfe_item_magnet",
 			"minecraft:max_stack_size": 1,
 			"minecraft:durability": {

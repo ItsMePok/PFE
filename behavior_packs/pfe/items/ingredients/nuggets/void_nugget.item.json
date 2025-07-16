@@ -11,6 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.void_nugget\n%poke_pfe.tag"
 			},
+			"poke_pfe:icon_path": "textures/poke/pfe/void_nugget",
 			"minecraft:icon": "poke_pfe_void_nugget"
 		}
 	}

@@ -11,6 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.cobalt_soup\n%poke_pfe.tag"
 			},
+			"poke_pfe:icon_path": "textures/poke/pfe/cobalt_soup",
 			"poke:consumeEffects": {},
 			"minecraft:max_stack_size": 16,
 			"minecraft:icon": "poke_pfe_cobalt_soup",

@@ -58,7 +58,7 @@
 						},
 						"north": {
 							"render_method": "opaque",
-							"texture": "poke_pfe_cobblestone_generator_face"
+							"texture": "poke_pfe_animated_cobblestone_generator_face"
 						},
 						"east": {
 							"render_method": "opaque",

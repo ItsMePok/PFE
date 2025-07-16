@@ -11,6 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.raw_cobalt\n%poke_pfe.tag"
 			},
+			"poke_pfe:icon_path": "textures/poke/pfe/raw_cobalt",
 			"minecraft:icon": "poke_pfe_raw_cobalt"
 		}
 	}

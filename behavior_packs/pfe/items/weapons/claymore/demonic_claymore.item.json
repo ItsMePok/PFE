@@ -11,6 +11,13 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.demonic_claymore\n%poke_pfe.tag"
 			},
+			"poke_pfe:icon_path": "textures/poke/pfe/demonic_claymore",
+			"poke_pfe:upgradeable": {
+				"version": 1,
+				"upgrade_ids": [
+					"pfe:persistence"
+				]
+			},
 			"minecraft:rarity": "common",
 			"poke:normalMining": {},
 			"minecraft:tags": {

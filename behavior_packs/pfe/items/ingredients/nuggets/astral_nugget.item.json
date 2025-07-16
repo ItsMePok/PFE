@@ -11,11 +11,8 @@
       "minecraft:display_name": {
         "value": "%poke_pfe.astral_nugget\n%poke_pfe.tag"
       },
-      "minecraft:icon": {
-        "textures": {
-          "default": "poke_pfe_astral_nugget"
-        }
-      }
+      "poke_pfe:icon_path": "textures/poke/pfe/astral_nugget",
+      "minecraft:icon": "poke_pfe_astral_nugget"
     }
   }
 }

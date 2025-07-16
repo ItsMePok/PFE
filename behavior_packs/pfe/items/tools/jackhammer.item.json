@@ -11,6 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.jackhammer\n%poke_pfe.tag"
 			},
+			"poke_pfe:icon_path": "textures/poke/pfe/jackhammer",
 			"minecraft:max_stack_size": 1,
 			"minecraft:icon": "poke_pfe_jackhammer",
 			"minecraft:hand_equipped": {

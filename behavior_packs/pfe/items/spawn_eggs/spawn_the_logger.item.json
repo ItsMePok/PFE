@@ -12,6 +12,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.spawn_the_logger\n%poke_pfe.tag"
 			},
+			"poke_pfe:icon_path": "textures/poke/pfe/logger_spawn_egg",
 			"minecraft:icon": "poke_pfe_logger_spawn_egg",
 			"poke_pfe:spawn_entity": {
 				"entity": "poke:the_logger"

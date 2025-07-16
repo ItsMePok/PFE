@@ -12,6 +12,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.hellish_soup\n%poke_pfe.tag"
 			},
+			"poke_pfe:icon_path": "textures/poke/pfe/hellish_soup",
 			"poke:consumeEffects": {},
 			"minecraft:max_stack_size": 16,
 			"minecraft:icon": "poke_pfe_hellish_soup",

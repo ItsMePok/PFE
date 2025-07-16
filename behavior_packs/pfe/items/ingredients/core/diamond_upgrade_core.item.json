@@ -11,6 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.diamond_upgrade_core\n%poke_pfe.tag"
 			},
+			"poke_pfe:icon_path": "textures/poke/pfe/diamond_upgrade_core",
 			"minecraft:rarity": "common",
 			"minecraft:tags": {
 				"tags": [

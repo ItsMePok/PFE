@@ -11,6 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.warp_ring\n%poke_pfe.tag"
 			},
+			"poke_pfe:icon_path": "textures/poke/pfe/warp_ring",
 			"poke:shootProjectile": {},
 			"minecraft:repairable": {
 				"repair_items": [

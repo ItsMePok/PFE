@@ -17,6 +17,11 @@
           "default": "poke_pfe_persistence_core"
         }
       },
+      "minecraft:tags": {
+        "tags": [
+          "poke:upgrade_core"
+        ]
+      },
       "minecraft:rarity": "common"
     }
   }

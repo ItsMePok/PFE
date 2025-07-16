@@ -11,6 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.bundled_feathers\n%poke_pfe.tag"
 			},
+			"poke_pfe:icon_path": "textures/poke/pfe/bundled_feathers",
 			"minecraft:icon": "poke_pfe_bundled_feathers"
 		}
 	}

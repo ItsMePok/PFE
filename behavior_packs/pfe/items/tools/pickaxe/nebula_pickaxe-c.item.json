@@ -12,6 +12,13 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.nebula_pickaxe\n%poke_pfe.tag" // Name of the item
 			},
+			"poke_pfe:icon_path": "textures/poke/pfe/nebula_pickaxe", // Used in scripts where the item's texture is needed
+			"poke_pfe:upgradeable": { // Allows this item to be upgraded with PFE's upgrade system
+				"version": 1,
+				"upgrade_ids": [
+					"pfe:persistence" // Persistence Upgrade (Keep item on death)
+				]
+			},
 			"minecraft:rarity": "epic", //Rarity of the item (epic = magenta, common = white, uncommon = yellow, rare = blue)
 			"poke:normalMining": {}, //Controls durability when breaking blocks
 			"minecraft:hand_equipped": true, //Make it held like a Tool

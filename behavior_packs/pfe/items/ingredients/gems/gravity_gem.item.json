@@ -11,6 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.gravity_gem\n%poke_pfe.tag"
 			},
+			"poke_pfe:icon_path": "textures/poke/pfe/gravity_gem",
 			"minecraft:icon": "poke_pfe_gravity_gem"
 		}
 	}

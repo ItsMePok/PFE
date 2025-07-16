@@ -1,11 +1,15 @@
 {
 	"resource_pack_name": "poke",
 	"texture_name": "atlas.terrain",
-	"num_mip_levels": 0,
-	"padding": 1,
 	"texture_data": {
 		"poke_pfe_upgrader_block": {
 			"textures": "textures/poke/pfe/upgrader"
+		},
+		"poke_pfe_animated_cobblestone_generator_face": {
+			"textures": "textures/poke/pfe/auto_animated_cobble_generator_face"
+		},
+		"poke_pfe_auto_face_inactive": {
+			"textures": "textures/poke/pfe/auto_face_inactive"
 		},
 		"poke_pfe_animated_automation_gear": {
 			"textures": "textures/poke/pfe/auto_animated_gear"

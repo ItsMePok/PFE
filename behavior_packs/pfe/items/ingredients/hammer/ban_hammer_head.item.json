@@ -11,6 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.ban_hammer_head\n%poke_pfe.tag"
 			},
+			"poke_pfe:icon_path": "textures/poke/pfe/ban_hammer_head",
 			"minecraft:rarity": "uncommon",
 			"minecraft:icon": "poke_pfe_ban_hammer_head"
 		}

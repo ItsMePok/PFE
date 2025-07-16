@@ -1233,6 +1233,7 @@
             },
             "items": [
               "poke:dodge_spell",
+              "poke_pfe:time_anchor_spell",
               "poke:gravity_spell",
               "poke:fireball_spell"
             ]
@@ -1316,7 +1317,8 @@
             "items": [
               "poke:spell_crafter",
               "poke:dye_unmixer",
-              "poke_pfe:alloy_forge"
+              "poke_pfe:alloy_forge",
+              "poke_pfe:upgrader"
               //,"poke:pfe_crafting_table"
             ]
           },

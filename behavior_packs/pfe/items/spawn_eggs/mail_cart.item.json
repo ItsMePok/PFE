@@ -11,6 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.mail_cart\n%poke_pfe.tag"
 			},
+			"poke_pfe:icon_path": "textures/poke/pfe/mail_cart",
 			"minecraft:icon": "poke_pfe_mail_cart",
 			"minecraft:entity_placer": {
 				"entity": "poke:mail_cart",

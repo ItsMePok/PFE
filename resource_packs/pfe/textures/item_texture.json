@@ -3,6 +3,9 @@
 		"poke_pfe_missing": {
 			"textures": "textures/poke/common/question"
 		},
+		"poke_pfe_time_anchor_spell": {
+			"textures": "textures/poke/pfe/time_anchor_spell"
+		},
 		"poke_pfe_cassette_lava_chicken": {
 			"textures": "textures/poke/pfe/cassette_lava_chicken"
 		},

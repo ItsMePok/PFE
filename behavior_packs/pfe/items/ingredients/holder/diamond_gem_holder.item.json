@@ -11,6 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.diamond_gem_holder\n%poke_pfe.tag"
 			},
+			"poke_pfe:icon_path": "textures/poke/pfe/diamond_holder",
 			"minecraft:icon": "poke_pfe_diamond_gem_holder"
 		}
 	}

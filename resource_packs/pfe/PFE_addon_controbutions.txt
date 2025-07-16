@@ -1,11 +1,12 @@
 Anyone is allowed to view/learn from the code of PFE
-if you have any questions about addons you can ask me on discord (username: itsmepok) im basically always open to helping
-things marked with "-c" at then end of the file name have a bunch of comments in them to help understand what some things do
-(Im trying to make the code more readable so sorry if there is still some areas that are not very organized(most things should be good though))
+
+This project uses the MIT License this is included in the root of the resource pack (and the project root if you are viewing on GitHub)
+
+If you have any questions about addons you can ask me on discord (username: itsmepok) im always open to helping
 
 Contributions from other people:
 ============================
-Things made by raccoon_02god:
+Contributions from raccoon_02god:
 -----
 Mobs:
 
@@ -25,9 +26,14 @@ Textures:
 
 Scythe Textures
 Claymore Textures
+Upgrader Textures
+Demonic Sword
+Molten Armor
+Death Armor
 
 -----
 Cosmetics:
+
 Maxwell
 Mr. Duck
 Dapper Fit
@@ -46,12 +52,18 @@ Fishbowl
 Ferret
 Crab Pal
 ============================
-Battleaxe textures were made by mosqit4324
-Automation Block re-textures:
+Contributions from mosqit4324
+
+Textures:
 Duster
 Dirter
 Cobblestone Generator
 Block Breaker
+Wires
+GPS Module
+Electric Component
+Red Button
+Antenna
 ============================
 Initial version of Demonic Allay made by just_erick
 

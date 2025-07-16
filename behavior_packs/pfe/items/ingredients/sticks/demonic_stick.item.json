@@ -11,6 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.demonic_stick\n%poke_pfe.tag"
 			},
+			"poke_pfe:icon_path": "textures/poke/pfe/demonic_stick",
 			"minecraft:icon": "poke_pfe_demonic_stick",
 			"minecraft:hand_equipped": true
 		}
