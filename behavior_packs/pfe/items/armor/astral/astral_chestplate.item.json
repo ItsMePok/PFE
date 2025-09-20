@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.90",
+	"format_version": "1.21.100",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:astral_chestplate",
@@ -11,6 +11,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.astral_chestplate\n%poke_pfe.tag"
 			},
+			"poke_pfe:icon_path": "textures/poke/pfe/astral_chestplate",
 			"minecraft:rarity": "common",
 			"minecraft:max_stack_size": 1,
 			"minecraft:enchantable": {

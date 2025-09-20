@@ -115,7 +115,7 @@ function ViewUpgradeableItems(component: RecipeBlockComponentInfo, player: Playe
   for (const item of <{ item: ItemStack, number: number }[] | undefined>PokeGetItemFromInventory(player, undefined, undefined, true) ?? []) {
     const upgradeableComponent = <PFEUpgradeableComponentInfo | undefined>item.item.getComponent(PFEUpgradeableId)?.customComponentParameters.params
     if (!upgradeableComponent) continue;
-    UI.button({ translate: MakeLocalizationKey(item.item.typeId) }, getTexturePathByIdentifier(item.item.typeId ?? "undefined"))
+    UI.button({ translate: item.item.localizationKey }, getTexturePathByIdentifier(item.item.typeId ?? "undefined"))
     validItems.push(item)
   }
   if (validItems.length == 0) {
@@ -318,8 +318,8 @@ function AddItem(component: RecipeBlockComponentInfo, player: Player, storedItem
   UI.title({ translate: component.name })
   UI.label({ translate: `%poke_pfe.deposit.warning` })
   const allItems = <ItemStack[] | undefined>PokeGetItemFromInventory(player) ?? []
-  for (const item of allItems) {
-    UI.button({ translate: MakeLocalizationKey(item.typeId) }, getTexturePathByIdentifier(item))
+  for (const item of allItems) {//@ts-ignore
+    UI.button({ translate: item.localizationKey }, getTexturePathByIdentifier(item))
   }
   UI.button({ translate: `translation.poke_pfe.GoBack` }, 'textures/poke/common/left_arrow')
   UI.show(player).then(response => {
@@ -489,4 +489,10 @@ function MakeAddonID(string: string) {
   const char = string.at(0) ?? ""
   const id = string.includes("poke:") ? "PFE" : string.includes("poke_pfe:") ? "PFE" : string.substring(0, string.indexOf(":")).replace(char, char.toUpperCase())
   return id
+}
+
+function GetAsBlock(item: ItemStack) {
+  const blockType = BlockTypes.get(item.typeId)
+  if (!blockType) return undefined
+  const block = BlockPermutation.resolve(blockType?.id)
 }

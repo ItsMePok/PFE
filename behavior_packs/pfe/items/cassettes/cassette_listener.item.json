@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.90",
+	"format_version": "1.21.100",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:cassette_they_listen"
@@ -8,6 +8,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.cassette\n§7ItsMePok -§3  %poke_pfe.theyListen\n%poke_pfe.tag"
 			},
+			"poke_pfe:icon_path": "textures/poke/pfe/cassette_they_listen",
 			"minecraft:rarity": "epic",
 			"minecraft:icon": "poke_pfe_cassette_listener",
 			"poke_pfe:play_music": {

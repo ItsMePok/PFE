@@ -1,5 +1,5 @@
 // scripts/main.ts
-import { system as system6, world as world10, EquipmentSlot as EquipmentSlot8, GameMode as GameMode5, EntityComponentTypes as EntityComponentTypes9, ItemComponentTypes as ItemComponentTypes4, ItemStack as ItemStack9, Direction as Direction2, BlockVolume as BlockVolume2, BlockPermutation as BlockPermutation2, LiquidType } from "@minecraft/server";
+import { system as system6, world as world10, EquipmentSlot as EquipmentSlot8, GameMode as GameMode5, EntityComponentTypes as EntityComponentTypes9, ItemComponentTypes as ItemComponentTypes4, ItemStack as ItemStack9, Direction as Direction2, BlockVolume as BlockVolume2, BlockPermutation as BlockPermutation2, LiquidType, PlayerPermissionLevel as PlayerPermissionLevel2, CommandPermissionLevel, CustomCommandParamType, CustomCommandStatus, ItemLockMode as ItemLockMode2 } from "@minecraft/server";
 
 // node_modules/@minecraft/vanilla-data/lib/index.js
 var MinecraftBiomeTypes = ((MinecraftBiomeTypes2) => {
@@ -3036,17 +3036,12 @@ import { ActionFormData, ModalFormData } from "@minecraft/server-ui";
 // scripts/addonCompatibility/jigarbov.ts
 import { world, system } from "@minecraft/server";
 var ComputersCompat = class {
-  static {
-    //set your namespace
-    this.addonNameSpace = "poke_pfe";
-  }
-  static {
-    //leave the rest!
-    this.computersScoreboardID = "jig_computer.addon_stats";
-  }
-  static {
-    this.addonStatScoreboardID = `${this.addonNameSpace}:${this.computersScoreboardID}`;
-  }
+  //set your namespace
+  static addonNameSpace = "poke_pfe";
+  //leave the rest!
+  static computersScoreboardID = "jig_computer.addon_stats";
+  static addonStatScoreboardID = `${this.addonNameSpace}:${this.computersScoreboardID}`;
+  static addonStatObjective;
   /**
    * Initializes the scoreboard's required for Jigs Computers Add-On to have stats for this add-on
    * @static
@@ -3730,8 +3725,8 @@ var Vector3Utils = class _Vector3Utils {
    * @param a - Angle in radians
    */
   static rotateX(v, a) {
-    let cos = Math.cos(a);
-    let sin = Math.sin(a);
+    const cos = Math.cos(a);
+    const sin = Math.sin(a);
     return { x: v.x, y: v.y * cos - v.z * sin, z: v.z * cos + v.y * sin };
   }
   /**
@@ -3741,8 +3736,8 @@ var Vector3Utils = class _Vector3Utils {
    * @param a - Angle in radians
    */
   static rotateY(v, a) {
-    let cos = Math.cos(a);
-    let sin = Math.sin(a);
+    const cos = Math.cos(a);
+    const sin = Math.sin(a);
     return { x: v.x * cos + v.z * sin, y: v.y, z: v.z * cos - v.x * sin };
   }
   /**
@@ -3752,8 +3747,8 @@ var Vector3Utils = class _Vector3Utils {
    * @param a - Angle in radians
    */
   static rotateZ(v, a) {
-    let cos = Math.cos(a);
-    let sin = Math.sin(a);
+    const cos = Math.cos(a);
+    const sin = Math.sin(a);
     return { x: v.x * cos - v.y * sin, y: v.y * cos + v.x * sin, z: v.z };
   }
 };
@@ -3762,11 +3757,9 @@ var Vector3Utils = class _Vector3Utils {
 var debug = true;
 var PFEUpgradeableId = "poke_pfe:upgradeable";
 var PFEUpgrades = class {
-  constructor() {
-    this.persistence = PFEPersistenceCoreDefault;
-    this.flaming = PFEFlamingCoreDefault;
-    this.capacity = PFECapacityCoreDefault;
-  }
+  persistence = PFEPersistenceCoreDefault;
+  flaming = PFEFlamingCoreDefault;
+  capacity = PFECapacityCoreDefault;
 };
 var PFEUpgradeableComponent = class {
   onUse(data, componentInfo) {
@@ -4116,7 +4109,7 @@ function UpdateHaxelFromV1toV2(item, player, dynamicProperty) {
 }
 
 // scripts/time.ts
-import { GameMode as GameMode3, world as world5 } from "@minecraft/server";
+import { PlayerPermissionLevel, world as world5 } from "@minecraft/server";
 import { ActionFormData as ActionFormData5, ModalFormData as ModalFormData4 } from "@minecraft/server-ui";
 var PokeCalendarVersion = 1;
 var PokeCustomEventId = `poke:customEvents`;
@@ -4871,13 +4864,13 @@ function PokeTimeEventInfoMenu(event, player) {
 ` }, { translate: `translation.poke:timeEventDates` }].concat(PokeTimeDateString(event).concat([{ text: `
 ` }, giftString])) }
   );
-  if (!event.nonModifiable && (player.getGameMode() == GameMode3.Creative || player.hasTag(`poke-event_manager`))) {
+  if (!event.nonModifiable && (player.playerPermissionLevel == PlayerPermissionLevel.Operator || player.hasTag(`poke-event_manager`))) {
     UI.button({ translate: `translation.poke:timeEditEvent` }, `textures/poke/common/edit`);
   }
   UI.button({ translate: `translation.poke:goBack` }, `textures/poke/common/left_arrow`);
   UI.show(player).then((response) => {
     let selection = 0;
-    if (!event.nonModifiable && (player.getGameMode() == GameMode3.Creative || player.hasTag(`poke-event_manager`))) {
+    if (!event.nonModifiable && (player.playerPermissionLevel == PlayerPermissionLevel.Operator || player.hasTag(`poke-event_manager`))) {
       if (response.selection == selection) {
         PokeEventOptions(player, event);
         return;
@@ -4960,7 +4953,7 @@ function PokeTimeAdditionalOptions(player) {
   if (player.getDynamicProperty(`poke:birthday`)) {
     UI.button({ translate: `translation.poke:timeChangeBirthday` }, `textures/poke/common/birthday_cake`);
   }
-  if (player.getGameMode() == GameMode3.Creative || player.hasTag(`poke-event_manager`)) {
+  if (player.playerPermissionLevel == PlayerPermissionLevel.Operator || player.hasTag(`poke-event_manager`)) {
     UI.button({ translate: `translation.poke:timeCreateEvent` }, `textures/poke/common/create_event`);
   }
   UI.button({ translate: "translation.poke:goBack" }, `textures/poke/common/left_arrow`);
@@ -4980,7 +4973,7 @@ function PokeTimeAdditionalOptions(player) {
       } else
         selection++;
     }
-    if (player.getGameMode() == GameMode3.Creative || player.hasTag(`poke-event_manager`)) {
+    if (player.playerPermissionLevel == PlayerPermissionLevel.Operator || player.hasTag(`poke-event_manager`)) {
       if (response.selection == selection) {
         PokeTimeCreateEvent(player);
         return;
@@ -5687,7 +5680,7 @@ var PFEDisableConfigDefault = {
   "waypoints": true,
   "playerMagnet": true
 };
-function PFEDisableConfigMainMenu(data) {
+function PFEDisableConfigMainMenu(player) {
   let UI = new ActionFormData7();
   let options = JSON.parse(world6.getDynamicProperty(PFEDisableConfigName).toString());
   const enabled = `\xA7a
@@ -5706,7 +5699,7 @@ function PFEDisableConfigMainMenu(data) {
   UI.button({ translate: `%translation.poke_pfe.death_armor_radius:${options.deathArmorRadius ? enabled : disabled}` }, `textures/poke/pfe/death_helmet`);
   UI.button({ translate: `%translation.poke_pfe.cactus_armor_radius:${options.cactusArmorRadius ? enabled : disabled}` }, `textures/poke/pfe/cactus_helmet`);
   UI.button({ translate: `translation.poke:goBack` }, `textures/poke/common/left_arrow`);
-  UI.show(data.source).then((response) => {
+  UI.show(player).then((response) => {
     let selection = 0;
     let newProperty = options;
     if (response.selection == selection) {
@@ -5715,7 +5708,7 @@ function PFEDisableConfigMainMenu(data) {
       } else
         newProperty.quantumTeleporter = true;
       world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
-      PFEDisableConfigMainMenu(data);
+      PFEDisableConfigMainMenu(player);
       return;
     } else
       selection++;
@@ -5725,7 +5718,7 @@ function PFEDisableConfigMainMenu(data) {
       } else
         newProperty.playerMagnet = true;
       world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
-      PFEDisableConfigMainMenu(data);
+      PFEDisableConfigMainMenu(player);
       return;
     } else
       selection++;
@@ -5735,7 +5728,7 @@ function PFEDisableConfigMainMenu(data) {
       } else
         newProperty.kapowRing = true;
       world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
-      PFEDisableConfigMainMenu(data);
+      PFEDisableConfigMainMenu(player);
       return;
     } else
       selection++;
@@ -5745,7 +5738,7 @@ function PFEDisableConfigMainMenu(data) {
       } else
         newProperty.nukeRing = true;
       world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
-      PFEDisableConfigMainMenu(data);
+      PFEDisableConfigMainMenu(player);
       return;
     } else
       selection++;
@@ -5755,7 +5748,7 @@ function PFEDisableConfigMainMenu(data) {
       } else
         newProperty.sundial = true;
       world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
-      PFEDisableConfigMainMenu(data);
+      PFEDisableConfigMainMenu(player);
       return;
     } else
       selection++;
@@ -5765,7 +5758,7 @@ function PFEDisableConfigMainMenu(data) {
       } else
         newProperty.witherSpawner = true;
       world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
-      PFEDisableConfigMainMenu(data);
+      PFEDisableConfigMainMenu(player);
       return;
     } else
       selection++;
@@ -5775,7 +5768,7 @@ function PFEDisableConfigMainMenu(data) {
       } else
         newProperty.bounty = true;
       world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
-      PFEDisableConfigMainMenu(data);
+      PFEDisableConfigMainMenu(player);
       return;
     } else
       selection++;
@@ -5786,13 +5779,13 @@ function PFEDisableConfigMainMenu(data) {
         newProperty.waypoints = true;
       newProperty.v = newProperty.v < 2 ? newProperty.v = 2 : newProperty.v;
       world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
-      PFEDisableConfigMainMenu(data);
+      PFEDisableConfigMainMenu(player);
       return;
     } else
       selection++;
     if (response.selection == selection) {
       world6.getDynamicProperty(`poke_pfe:disable_armor_effects`) == false ? world6.setDynamicProperty(`poke_pfe:disable_armor_effects`, true) : world6.setDynamicProperty(`poke_pfe:disable_armor_effects`, false);
-      PFEDisableConfigMainMenu(data);
+      PFEDisableConfigMainMenu(player);
       return;
     } else
       selection++;
@@ -5802,7 +5795,7 @@ function PFEDisableConfigMainMenu(data) {
       } else
         newProperty.deathArmorRadius = true;
       world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
-      PFEDisableConfigMainMenu(data);
+      PFEDisableConfigMainMenu(player);
       return;
     } else
       selection++;
@@ -5812,7 +5805,7 @@ function PFEDisableConfigMainMenu(data) {
       } else
         newProperty.cactusArmorRadius = true;
       world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
-      PFEDisableConfigMainMenu(data);
+      PFEDisableConfigMainMenu(player);
       return;
     } else
       selection++;
@@ -6898,7 +6891,7 @@ function WaypointUISetIconCustom(player, item, waypoint, component) {
 }
 
 // scripts/recipeSystems.ts
-import { BlockTypes, ItemStack as ItemStack8 } from "@minecraft/server";
+import { BlockPermutation, BlockTypes, ItemStack as ItemStack8 } from "@minecraft/server";
 import { ActionFormData as ActionFormData10, ModalFormData as ModalFormData6 } from "@minecraft/server-ui";
 var RecipeBlockComponent = class {
   onPlayerInteract(data, componentInfo) {
@@ -6976,7 +6969,7 @@ function ViewUpgradeableItems(component, player, block) {
     const upgradeableComponent = item.item.getComponent(PFEUpgradeableId)?.customComponentParameters.params;
     if (!upgradeableComponent)
       continue;
-    UI.button({ translate: MakeLocalizationKey(item.item.typeId) }, getTexturePathByIdentifier(item.item.typeId ?? "undefined"));
+    UI.button({ translate: item.item.localizationKey }, getTexturePathByIdentifier(item.item.typeId ?? "undefined"));
     validItems.push(item);
   }
   if (validItems.length == 0) {
@@ -7177,7 +7170,7 @@ function AddItem(component, player, storedItems, block) {
   UI.label({ translate: `%poke_pfe.deposit.warning` });
   const allItems = PokeGetItemFromInventory(player) ?? [];
   for (const item of allItems) {
-    UI.button({ translate: MakeLocalizationKey(item.typeId) }, getTexturePathByIdentifier(item));
+    UI.button({ translate: item.localizationKey }, getTexturePathByIdentifier(item));
   }
   UI.button({ translate: `translation.poke_pfe.GoBack` }, "textures/poke/common/left_arrow");
   UI.show(player).then((response) => {
@@ -7338,7 +7331,7 @@ function MakeAddonID(string) {
 }
 
 // scripts/main.ts
-var currentVersion = 102990;
+var currentVersion = 103e3;
 world10.afterEvents.playerJoin.subscribe((data) => {
   let birthdays = JSON.parse(world10.getDynamicProperty(`poke:birthdays`).toString());
   system6.runTimeout(() => {
@@ -8031,65 +8024,7 @@ system6.beforeEvents.startup.subscribe((data) => {
     "poke_pfe:config",
     {
       onUse(data2, componentInfo) {
-        if (data2.source.getGameMode() == GameMode5.Creative || data2.source.hasTag(`poke:config`)) {
-          let UI = new ActionFormData11();
-          UI.button({ translate: `translation.poke_pfe.bossEventConfig` }, `textures/poke/common/spawn_enabled`);
-          UI.button({ translate: `translation.poke_pfe.disableConfig` }, `textures/poke/common/blacklist_add`);
-          UI.button({ translate: `%poke_pfe.miscOptions` }, `textures/poke/common/more_options`);
-          UI.show(data2.source).then((response) => {
-            let selection = 0;
-            if (response.selection == selection) {
-              if (world10.getDynamicProperty(PFEBossEventConfigName) == void 0) {
-                world10.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(PFEDefaultBossEventSettings));
-              }
-              PFEBossEventUIMainMenu(data2.source);
-              return;
-            } else
-              selection++;
-            if (response.selection == selection) {
-              PFEDisableConfigMainMenu(data2);
-              return;
-            } else
-              selection++;
-            if (response.selection == selection) {
-              let UI2 = new ModalFormData7();
-              UI2.title({ translate: `%poke_pfe.miscOptions` });
-              UI2.label({ translate: `%poke_pfe.setEffects` });
-              UI2.divider();
-              UI2.slider({ translate: `%poke_pfe.effectDuration` }, 1, 30, { valueStep: 1, tooltip: { translate: `%poke_pfe.effectDuration.tooltip` }, defaultValue: Number(world10.getDynamicProperty("poke_pfe:setEffectDuration") ?? ArmorEffectDuration) / 20 });
-              UI2.slider({ translate: `%poke_pfe.applyInterval` }, 1, 10, { valueStep: 1, tooltip: { translate: `%poke_pfe.applyInterval.tooltip` }, defaultValue: Number(world10.getDynamicProperty("poke_pfe:setEffectInterval") ?? 1) / 20 });
-              UI2.show(data2.source).then((response2) => {
-                if (response2.canceled)
-                  return;
-                world10.setDynamicProperty("poke_pfe:setEffectDuration", Number(response2.formValues?.at(2) ?? ArmorEffectDuration / 20) * 20);
-                world10.setDynamicProperty("poke_pfe:setEffectInterval", Number(response2.formValues?.at(3) ?? 1) * 20);
-                const intervalId = world10.getDynamicProperty("poke_pfe:setEffectIntervalId");
-                if (intervalId) {
-                  system6.runInterval;
-                  system6.clearRun(intervalId);
-                  world10.setDynamicProperty("poke_pfe:setEffectIntervalId", startSetEffects());
-                }
-              });
-              return;
-            } else
-              selection++;
-            if (response.selection == selection || response.canceled) {
-              return;
-            }
-          });
-        } else {
-          let UI = new ActionFormData11();
-          UI.title({ translate: `translation.poke_pfe.insufficientPerms` });
-          UI.body({ rawtext: [{ translate: `translation.poke_pfe.insufficientPerms.desc` }, { text: `poke:config
-
-` }, { translate: `translation.poke_pfe.insufficientPerms.desc2` }, { text: `
-/tag @s add poke:config` }] });
-          UI.button({ translate: `translation.poke:bossEventClose` }, `textures/poke/common/close`);
-          UI.show(data2.source).then((response) => {
-            return;
-          });
-          return;
-        }
+        OpenPFEConfig(data2.source);
       }
     }
   );
@@ -9308,6 +9243,24 @@ system6.beforeEvents.startup.subscribe((data) => {
   data.itemComponentRegistry.registerCustomComponent("poke_pfe:custom_upgrades", {});
   data.itemComponentRegistry.registerCustomComponent("poke_pfe:custom_quests_info", {});
   data.itemComponentRegistry.registerCustomComponent("poke_pfe:incompatible_addons", {});
+  data.customCommandRegistry.registerCommand(
+    {
+      name: "poke_pfe:config",
+      description: "Opens PFE's config menu",
+      permissionLevel: CommandPermissionLevel.Admin,
+      optionalParameters: [{ type: CustomCommandParamType.PlayerSelector, name: "openAs" }]
+    },
+    ConfigCustomCommand
+  );
+  data.customCommandRegistry.registerCommand(
+    {
+      name: "poke_pfe:swap_hat",
+      description: "Swaps your helmet for whatever you are holding. some items can lose data if being swapped to the Helmet slot that are not valid helmet items",
+      permissionLevel: CommandPermissionLevel.Admin,
+      optionalParameters: [{ type: CustomCommandParamType.PlayerSelector, name: "swapAs" }]
+    },
+    SwapHatCommand
+  );
   return;
 });
 world10.afterEvents.worldLoad.subscribe((data) => {
@@ -9384,23 +9337,160 @@ system6.afterEvents.scriptEventReceive.subscribe((data) => {
       let newQuests = currentQuests.concat(JSON.parse(data.message).value) ?? currentQuests;
       world10.setDynamicProperty(PFECustomCraftQuestsPropertyID, JSON.stringify(newQuests));
     }
-    case `poke:test`: {
-      let item = data.sourceEntity?.getComponent(EntityComponentTypes9.Equippable)?.getEquipment(EquipmentSlot8.Mainhand);
-      item?.setDynamicProperty(`poke:ammo`, JSON.stringify({ v: 2, max: 32, amount: 12, entityId: "poke:galaxy_arrow", id: "poke:galaxy_arrow", upgrades: [{ id: "pfe:capacity", level: 1, maxLevel: void 0 }, { id: "pfe:flaming", level: 0, maxLevel: 1 }] }));
-      data.sourceEntity?.getComponent(EntityComponentTypes9.Equippable)?.setEquipment(EquipmentSlot8.Mainhand, item);
-    }
     case "poke_pfe:dupe_check": {
       const Version = Number(data.message);
       if (Version < currentVersion) {
         world10.sendMessage(`\xA7f[\xA7eWARNING\xA7f] Multiple versions PFE are applied to this world, to avoid any issue: please remove any old versions || \xA7eOld version: \xA7fv${data.message.substring(0, 1)}.${Number(data.message.substring(1, 3))}.${Number(`${data.message}`.substring(3, 5))}${Number(`${data.message}`.substring(5)) != 0 ? `${data.message}`.substring(5) : ""}`);
-        console.warn(`Multiple versions PFE found:
-- Old version: ${Version} (v${data.message.substring(0, 1)}.${Number(data.message.substring(1, 3))}.${Number(`${data.message}`.substring(3, 5))}${Number(`${data.message}`.substring(5)) != 0 ? `${data.message}`.substring(5) : ""})
-- Current version: ${currentVersion} (v${`${currentVersion}`.substring(0, 1)}.${Number(`${currentVersion}`.substring(1, 3))}.${Number(`${currentVersion}`.substring(3, 5))}${Number(`${currentVersion}`.substring(5)) != 0 ? `${currentVersion}`.substring(5) : ""})`);
       }
+      break;
+    }
+    case `poke_pfe:get_version`: {
+      system6.sendScriptEvent(data.message, currentVersion.toString());
+      break;
     }
     default:
       break;
   }
 });
+function OpenPFEConfig(player) {
+  if (player.playerPermissionLevel == PlayerPermissionLevel2.Operator || player.hasTag(`poke:config`)) {
+    let UI = new ActionFormData11();
+    UI.button({ translate: `translation.poke_pfe.bossEventConfig` }, `textures/poke/common/spawn_enabled`);
+    UI.button({ translate: `translation.poke_pfe.disableConfig` }, `textures/poke/common/blacklist_add`);
+    UI.button({ translate: `%poke_pfe.miscOptions` }, `textures/poke/common/more_options`);
+    UI.show(player).then((response) => {
+      let selection = 0;
+      if (response.selection == selection) {
+        if (world10.getDynamicProperty(PFEBossEventConfigName) == void 0) {
+          world10.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(PFEDefaultBossEventSettings));
+        }
+        PFEBossEventUIMainMenu(player);
+        return;
+      } else
+        selection++;
+      if (response.selection == selection) {
+        PFEDisableConfigMainMenu(player);
+        return;
+      } else
+        selection++;
+      if (response.selection == selection) {
+        let UI2 = new ModalFormData7();
+        UI2.title({ translate: `%poke_pfe.miscOptions` });
+        UI2.label({ translate: `%poke_pfe.setEffects` });
+        UI2.divider();
+        UI2.slider({ translate: `%poke_pfe.effectDuration` }, 1, 30, { valueStep: 1, tooltip: { translate: `%poke_pfe.effectDuration.tooltip` }, defaultValue: Number(world10.getDynamicProperty("poke_pfe:setEffectDuration") ?? ArmorEffectDuration) / 20 });
+        UI2.slider({ translate: `%poke_pfe.applyInterval` }, 1, 10, { valueStep: 1, tooltip: { translate: `%poke_pfe.applyInterval.tooltip` }, defaultValue: Number(world10.getDynamicProperty("poke_pfe:setEffectInterval") ?? 1) / 20 });
+        UI2.show(player).then((response2) => {
+          if (response2.canceled)
+            return;
+          world10.setDynamicProperty("poke_pfe:setEffectDuration", Number(response2.formValues?.at(2) ?? ArmorEffectDuration / 20) * 20);
+          world10.setDynamicProperty("poke_pfe:setEffectInterval", Number(response2.formValues?.at(3) ?? 1) * 20);
+          const intervalId = world10.getDynamicProperty("poke_pfe:setEffectIntervalId");
+          if (intervalId) {
+            system6.runInterval;
+            system6.clearRun(intervalId);
+            world10.setDynamicProperty("poke_pfe:setEffectIntervalId", startSetEffects());
+          }
+        });
+        return;
+      } else
+        selection++;
+      if (response.selection == selection || response.canceled) {
+        return;
+      }
+    });
+  } else {
+    let UI = new ActionFormData11();
+    UI.title({ translate: `translation.poke_pfe.insufficientPerms` });
+    UI.body({ translate: `%translation.poke_pfe.insufficientPerms.desc:\xA7e poke:config\xA7r
+
+%translation.poke_pfe.insufficientPerms.desc2
+\xA7e/tag @s add poke:config\xA7r` });
+    UI.button({ translate: `translation.poke:bossEventClose` }, `textures/poke/common/close`);
+    UI.show(player).then((response) => {
+      return;
+    });
+    return;
+  }
+}
+function ConfigCustomCommand(origin, openAs) {
+  system6.run(() => {
+    const players = openAs ? openAs : [origin.sourceEntity];
+    for (const player of players) {
+      OpenPFEConfig(player);
+    }
+  });
+  return {
+    status: CustomCommandStatus.Success,
+    message: "Opened PFE's config menu for the player's provided"
+  };
+}
+function SwapHatCommand(origin, swapAs) {
+  let status = {
+    status: CustomCommandStatus.Success,
+    message: ""
+  };
+  system6.run(() => {
+    const players = swapAs ? swapAs : [origin.sourceEntity];
+    for (const player of players) {
+      const equippableComponent = player.getComponent(EntityComponentTypes9.Equippable);
+      if (!equippableComponent) {
+        status = {
+          status: CustomCommandStatus.Failure,
+          message: "Player cannot equip items"
+        };
+        console.warn("Player cannot equip items");
+        return;
+      }
+      const mainHand = equippableComponent?.getEquipment(EquipmentSlot8.Mainhand);
+      if (mainHand?.lockMode == ItemLockMode2.slot) {
+        status = {
+          status: CustomCommandStatus.Failure,
+          message: "Held Item cannot be locked"
+        };
+        console.warn("Held Item cannot be locked");
+        return;
+      }
+      const helmet = equippableComponent?.getEquipment(EquipmentSlot8.Head);
+      if (helmet?.lockMode == ItemLockMode2.slot) {
+        status = {
+          status: CustomCommandStatus.Failure,
+          message: "Helmet cannot be locked"
+        };
+        console.warn("Helmet cannot be locked");
+        return;
+      }
+      if (helmet) {
+        const helmetEnchantments = helmet.getComponent(ItemComponentTypes4.Enchantable);
+        if (helmetEnchantments?.hasEnchantment(MinecraftEnchantmentTypes.Binding)) {
+          status = {
+            status: CustomCommandStatus.Failure,
+            message: "Helmet cannot have %enchantment.curse.binding"
+          };
+          console.warn("Helmet cannot have %enchantment.curse.binding");
+          return;
+        }
+      }
+      let oldHelmetItem = helmet?.clone();
+      let oldMainHandItem = mainHand?.clone();
+      console.warn(helmet?.typeId);
+      console.warn(mainHand?.typeId);
+      equippableComponent.setEquipment(EquipmentSlot8.Head, oldMainHandItem);
+      if (oldMainHandItem) {
+        if (!equippableComponent?.getEquipment(EquipmentSlot8.Head)?.matches(oldMainHandItem.typeId)) {
+          player.runCommand(`replaceitem entity @s slot.armor.head 0 ${oldMainHandItem.typeId} ${oldMainHandItem.amount}`);
+        }
+      }
+      equippableComponent.setEquipment(EquipmentSlot8.Mainhand, oldHelmetItem);
+      status = {
+        status: CustomCommandStatus.Success,
+        message: "Swapped Helmet with Held Item"
+      };
+      console.warn("Swapped Helmet with Held Item");
+      return;
+    }
+  });
+  return status;
+}
 
 //# sourceMappingURL=../debug/main.js.map

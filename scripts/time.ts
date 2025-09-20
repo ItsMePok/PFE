@@ -1,4 +1,4 @@
-import { GameMode, Player, RawMessage, world } from "@minecraft/server"
+import { GameMode, Player, PlayerPermissionLevel, RawMessage, world } from "@minecraft/server"
 import { ActionFormData, ModalFormData } from "@minecraft/server-ui"
 import { PokeErrorScreen, PokeGetObjectById } from "./commonFunctions"
 const PokeCalendarVersion = 1
@@ -786,13 +786,13 @@ function PokeTimeEventInfoMenu(event: PokeEventConfig, player: Player) {
   UI.body(
     { rawtext: [{ translate: `translation.poke:timeEventName` }, event.name, { text: `\n\n` }, { translate: `translation.poke:timeEventDates` }].concat(PokeTimeDateString(event).concat([{ text: `\n` }, giftString])) }
   )
-  if ((!event.nonModifiable) && ((player.getGameMode() == GameMode.Creative) || (player.hasTag(`poke-event_manager`)))) {
+  if ((!event.nonModifiable) && ((player.playerPermissionLevel == PlayerPermissionLevel.Operator) || (player.hasTag(`poke-event_manager`)))) {
     UI.button({ translate: `translation.poke:timeEditEvent` }, `textures/poke/common/edit`)
   }
   UI.button({ translate: `translation.poke:goBack` }, `textures/poke/common/left_arrow`)
   UI.show(player).then((response => {
     let selection = 0
-    if ((!event.nonModifiable) && ((player.getGameMode() == GameMode.Creative) || (player.hasTag(`poke-event_manager`)))) {
+    if ((!event.nonModifiable) && ((player.playerPermissionLevel == PlayerPermissionLevel.Operator) || (player.hasTag(`poke-event_manager`)))) {
       if (response.selection == selection) {
         PokeEventOptions(player, event)
         return
@@ -883,7 +883,7 @@ function PokeTimeAdditionalOptions(player: Player) {
   if (player.getDynamicProperty(`poke:birthday`)) {
     UI.button({ translate: `translation.poke:timeChangeBirthday` }, `textures/poke/common/birthday_cake`)
   }
-  if ((player.getGameMode() == GameMode.Creative) || (player.hasTag(`poke-event_manager`))) {
+  if ((player.playerPermissionLevel == PlayerPermissionLevel.Operator) || (player.hasTag(`poke-event_manager`))) {
     UI.button({ translate: `translation.poke:timeCreateEvent` }, `textures/poke/common/create_event`)
   }
   UI.button({ translate: 'translation.poke:goBack' }, `textures/poke/common/left_arrow`)
@@ -902,7 +902,7 @@ function PokeTimeAdditionalOptions(player: Player) {
         return
       } else selection++
     }
-    if ((player.getGameMode() == GameMode.Creative) || (player.hasTag(`poke-event_manager`))) {
+    if ((player.playerPermissionLevel == PlayerPermissionLevel.Operator) || (player.hasTag(`poke-event_manager`))) {
       if (response.selection == selection) {
         PokeTimeCreateEvent(player)
         return

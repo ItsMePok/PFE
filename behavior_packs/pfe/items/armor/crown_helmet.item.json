@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.90",
+	"format_version": "1.21.100",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:crown_helmet"
@@ -8,6 +8,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.crown_helmet\n§7%poke_pfe.cosmetic\n%poke_pfe.tag"
 			},
+			"poke_pfe:icon_path": "textures/poke/pfe/crown_helmet",
 			"minecraft:rarity": "common",
 			"minecraft:tags": {
 				"tags": [

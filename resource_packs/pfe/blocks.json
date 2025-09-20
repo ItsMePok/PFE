@@ -411,54 +411,74 @@
   "poke:raw_astral_block": {
     "sound": "ancient_debris"
   },
-  //Bulbs
+  //Bulbs (color change breaks if textures is moved into BP)
+  "poke:limestone_bulb": {
+    "sound": "stone",
+    "textures": "poke_pfe_limestone_bulb"
+  },
   "poke:void_bulb": {
-    "sound": "copper"
+    "sound": "copper",
+    "textures": "poke_pfe_void_bulb"
   },
   "poke:death_bulb": {
-    "sound": "copper"
+    "sound": "copper",
+    "textures": "poke_pfe_death_bulb"
   },
   "poke:demonic_bulb": {
-    "sound": "copper"
+    "sound": "copper",
+    "textures": "poke_pfe_demonic_bulb"
   },
   "poke:galaxy_bulb": {
-    "sound": "copper"
+    "sound": "copper",
+    "textures": "poke_pfe_galaxy_bulb"
   },
   "poke:godly_bulb": {
-    "sound": "copper"
+    "sound": "copper",
+    "textures": "poke_pfe_godly_bulb"
   },
   "poke:hellish_bulb": {
-    "sound": "copper"
+    "sound": "copper",
+    "textures": "poke_pfe_hellish_bulb"
   },
   "poke:holy_bulb": {
-    "sound": "copper"
+    "sound": "copper",
+    "textures": "poke_pfe_holy_bulb"
   },
   "poke:medic_bulb": {
-    "sound": "copper"
+    "sound": "copper",
+    "textures": "poke_pfe_medic_bulb"
   },
   "poke:molten_bulb": {
-    "sound": "copper"
+    "sound": "copper",
+    "textures": "poke_pfe_molten_bulb"
   },
   "poke:nebula_bulb": {
-    "sound": "copper"
+    "sound": "copper",
+    "textures": "poke_pfe_nebula_bulb"
   },
   "poke:onyx_bulb": {
-    "sound": "copper"
+    "sound": "copper",
+    "textures": "poke_pfe_onyx_bulb"
   },
   "poke:radium_bulb": {
-    "sound": "copper"
+    "sound": "copper",
+    "textures": "poke_pfe_radium_bulb"
   },
   "poke:shade_bulb": {
-    "sound": "copper"
+    "sound": "copper",
+    "textures": "poke_pfe_shade_bulb"
   },
   "poke:astral_bulb": {
-    "sound": "copper"
+    "sound": "copper",
+    "textures": "poke_pfe_astral_bulb"
   },
   "poke:cobalt_bulb": {
-    "sound": "copper"
+    "sound": "copper",
+    "textures": "poke_pfe_cobalt_bulb"
   },
   "poke:beeulb": {
-    "sound": "coral"
+    "sound": "coral",
+    "textures": "poke_pfe_beeulb"
   },
   "poke:cobalt_edged_glass": {
     "sound": "glass"
