@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.90",
+  "format_version": "1.21.100",
   "minecraft:item": {
     "description": {
       "identifier": "poke_pfe:cassette_fireflies"
@@ -8,6 +8,7 @@
       "minecraft:display_name": {
         "value": "%poke_pfe.cassette\n§7Amos Roddy - %poke_pfe.fireflies\n%poke_pfe.tag"
       },
+      "poke_pfe:icon_path": "textures/poke/pfe/cassette_fireflies",
       "minecraft:rarity": "common",
       "minecraft:icon": {
         "textures": {

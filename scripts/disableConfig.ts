@@ -1,4 +1,4 @@
-import { ItemComponentUseEvent, world } from "@minecraft/server";
+import { ItemComponentUseEvent, Player, world } from "@minecraft/server";
 import { ActionFormData } from "@minecraft/server-ui";
 
 export {
@@ -37,7 +37,7 @@ const PFEDisableConfigDefault: PFEDisableConfigOptions = {
   "waypoints": true,
   "playerMagnet": true
 }
-function PFEDisableConfigMainMenu(data: ItemComponentUseEvent) {
+function PFEDisableConfigMainMenu(player: Player) {
   let UI = new ActionFormData()
   let options: PFEDisableConfigOptions = JSON.parse(world.getDynamicProperty(PFEDisableConfigName)!.toString())
   const enabled = `§a\n%translation.poke_pfe.enabled`
@@ -54,7 +54,7 @@ function PFEDisableConfigMainMenu(data: ItemComponentUseEvent) {
   UI.button({ translate: `%translation.poke_pfe.death_armor_radius:${options.deathArmorRadius ? enabled : disabled}` }, `textures/poke/pfe/death_helmet`)
   UI.button({ translate: `%translation.poke_pfe.cactus_armor_radius:${options.cactusArmorRadius ? enabled : disabled}` }, `textures/poke/pfe/cactus_helmet`)
   UI.button({ translate: `translation.poke:goBack` }, `textures/poke/common/left_arrow`)
-  UI.show(data.source).then(response => {
+  UI.show(player).then(response => {
     let selection = 0
     let newProperty = options
     if (response.selection == selection) {// Quantum Teleporter
@@ -63,7 +63,7 @@ function PFEDisableConfigMainMenu(data: ItemComponentUseEvent) {
         //console.warn(`Disabled Quantum Teleporter`)
       } else newProperty.quantumTeleporter = true
       world.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty))
-      PFEDisableConfigMainMenu(data)
+      PFEDisableConfigMainMenu(player)
       return
     } else selection++
     if (response.selection == selection) {// Quantum Teleporter
@@ -72,7 +72,7 @@ function PFEDisableConfigMainMenu(data: ItemComponentUseEvent) {
         //console.warn(`Disabled Quantum Teleporter`)
       } else newProperty.playerMagnet = true
       world.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty))
-      PFEDisableConfigMainMenu(data)
+      PFEDisableConfigMainMenu(player)
       return
     } else selection++
     if (response.selection == selection) {// Kapow Ring
@@ -81,7 +81,7 @@ function PFEDisableConfigMainMenu(data: ItemComponentUseEvent) {
         //console.info(`Disabled Kapow Ring`)
       } else newProperty.kapowRing = true
       world.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty))
-      PFEDisableConfigMainMenu(data)
+      PFEDisableConfigMainMenu(player)
       return
     } else selection++
     if (response.selection == selection) {// Nuke Ring
@@ -90,7 +90,7 @@ function PFEDisableConfigMainMenu(data: ItemComponentUseEvent) {
         //console.info(`Disabled Nuke Ring`)
       } else newProperty.nukeRing = true
       world.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty))
-      PFEDisableConfigMainMenu(data)
+      PFEDisableConfigMainMenu(player)
       return
     } else selection++
     if (response.selection == selection) {// Sundial
@@ -99,7 +99,7 @@ function PFEDisableConfigMainMenu(data: ItemComponentUseEvent) {
         //console.info(`Disabled Sundial`)
       } else newProperty.sundial = true
       world.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty))
-      PFEDisableConfigMainMenu(data)
+      PFEDisableConfigMainMenu(player)
       return
     } else selection++
     if (response.selection == selection) {// Wither Spawner
@@ -108,7 +108,7 @@ function PFEDisableConfigMainMenu(data: ItemComponentUseEvent) {
         //console.warn(`Disabled Wither Spawner`)
       } else newProperty.witherSpawner = true
       world.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty))
-      PFEDisableConfigMainMenu(data)
+      PFEDisableConfigMainMenu(player)
       return
     } else selection++
     if (response.selection == selection) {// Bounty
@@ -117,7 +117,7 @@ function PFEDisableConfigMainMenu(data: ItemComponentUseEvent) {
         //console.warn(`Disabled Bounty`)
       } else newProperty.bounty = true
       world.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty))
-      PFEDisableConfigMainMenu(data)
+      PFEDisableConfigMainMenu(player)
       return
     } else selection++
     if (response.selection == selection) {// Waypoint Menu
@@ -127,12 +127,12 @@ function PFEDisableConfigMainMenu(data: ItemComponentUseEvent) {
       } else newProperty.waypoints = true
       newProperty.v = newProperty.v < 2 ? newProperty.v = 2 : newProperty.v
       world.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty))
-      PFEDisableConfigMainMenu(data)
+      PFEDisableConfigMainMenu(player)
       return
     } else selection++
     if (response.selection == selection) {// Armor effects
       world.getDynamicProperty(`poke_pfe:disable_armor_effects`) == false ? world.setDynamicProperty(`poke_pfe:disable_armor_effects`, true) : world.setDynamicProperty(`poke_pfe:disable_armor_effects`, false)
-      PFEDisableConfigMainMenu(data)
+      PFEDisableConfigMainMenu(player)
       return
     } else selection++
     if (response.selection == selection) {// Death Armor's Radius Effects
@@ -141,7 +141,7 @@ function PFEDisableConfigMainMenu(data: ItemComponentUseEvent) {
         //console.info(`Disabled Death Armor's Radius Effects`)
       } else newProperty.deathArmorRadius = true
       world.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty))
-      PFEDisableConfigMainMenu(data)
+      PFEDisableConfigMainMenu(player)
       return
     } else selection++
     if (response.selection == selection) {// Cactus Armor's Radius Effects
@@ -150,7 +150,7 @@ function PFEDisableConfigMainMenu(data: ItemComponentUseEvent) {
         //console.info(`Disabled Cactus Armor's Radius Effects`)
       } else newProperty.cactusArmorRadius = true
       world.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty))
-      PFEDisableConfigMainMenu(data)
+      PFEDisableConfigMainMenu(player)
       return
     } else selection++
     if (response.canceled || (response.selection == selection)) { return }

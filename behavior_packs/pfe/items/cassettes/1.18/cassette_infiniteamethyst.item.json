@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.90",
+  "format_version": "1.21.100",
   "minecraft:item": {
     "description": {
       "identifier": "poke:cassette_infiniteamethyst"
@@ -8,6 +8,7 @@
       "minecraft:display_name": {
         "value": "%poke_pfe.cassette\n§7Lena Raine - %poke_pfe.infiniteamethyst\n%poke_pfe.tag"
       },
+      "poke_pfe:icon_path": "textures/poke/pfe/cassette_infiniteamethyst",
       "minecraft:icon": "poke_pfe_cassette_infiniteamethyst",
       "poke_pfe:play_music": {
         "music": "poke_pfe.music.infiniteamethyst"

@@ -24,7 +24,7 @@
         }
       ],
       "textures": [
-        "temp.life_time = query.life_time * 2.0; return array.item_frames[temp.life_time];",
+        "temp.life_time = query.time_of_day * 8.0; return array.item_frames[temp.life_time];",
         "texture.enchanted"
       ]
     }

@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.90",
+  "format_version": "1.21.100",
   "minecraft:item": {
     "description": {
       "identifier": "poke:cassette_mc_disc_mall"
@@ -8,6 +8,7 @@
       "minecraft:display_name": {
         "value": "%poke_pfe.cassette\n%poke_pfe.tag"
       },
+      "poke_pfe:icon_path": "textures/poke/pfe/cassette_mall",
       "minecraft:rarity": "uncommon",
       "minecraft:icon": "poke_pfe_cassette_mc_disc_mall",
       "poke_pfe:play_music": {

@@ -25,14 +25,9 @@
 			"loop": true,
 			"bones": {
 				"rightitem": {
-					"rotation": [-45.75, -1, 197.09],
-					"position": [-6, -15, 2],
-					"scale": [0.96, 1.46, 0.96]
-				},
-				"bone": {
-					"rotation": [62.5, 10, 40],
-					"position": [-12, 23, -7],
-					"scale": 0.5
+					"rotation": [65.563, 12.57686, 58.53509],
+					"position": [-15, 21, -9],
+					"scale": [0.4, 0.3, 0.4]
 				}
 			}
 		},
@@ -40,11 +35,6 @@
 			"loop": true,
 			"bones": {
 				"rightitem": {
-					"rotation": [25, 10, 200],
-					"position": [0.5, -2.45, -7.58],
-					"scale": [0.29, 0.59, 0.29]
-				},
-				"bone": {
 					"rotation": [0, 45, 90],
 					"position": [-8, 23, -21],
 					"scale": 1

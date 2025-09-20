@@ -1,0 +1,7 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "beeulb",
+		"metalness_emissive_roughness": "bulb_mer"
+	}
+}

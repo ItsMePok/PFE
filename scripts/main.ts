@@ -1,4 +1,4 @@
-import { system, world, EquipmentSlot, GameMode, EntityComponentTypes, ItemComponentTypes, ItemStack, Player, Direction, RawMessage, EntityQueryOptions, Block, ItemType, InputButton, ButtonState, BlockVolumeBase, BlockVolume, Vector3, BlockPermutation, BlockStateType, BlockStateArg, LiquidType } from "@minecraft/server";
+import { system, world, EquipmentSlot, GameMode, EntityComponentTypes, ItemComponentTypes, ItemStack, Player, Direction, RawMessage, EntityQueryOptions, Block, ItemType, InputButton, ButtonState, BlockVolumeBase, BlockVolume, Vector3, BlockPermutation, BlockStateType, BlockStateArg, LiquidType, StartupEvent, CustomCommand, PlayerPermissionLevel, CommandPermissionLevel, CustomCommandParamType, CommandResult, CustomCommandStatus, CustomCommandOrigin, CustomCommandResult, Entity, ItemLockMode } from "@minecraft/server";
 import { BlockStateSuperset, MinecraftBlockTypes, MinecraftDimensionTypes, MinecraftEffectTypes, MinecraftEnchantmentTypes, MinecraftEntityTypes, MinecraftItemTypes, RedMushroomBlockStates } from "@minecraft/vanilla-data";
 import { PFEBossEventConfig, PFEBossEventConfigName, PFEBossEventTicks, PFEBossEventUIMainMenu, PFEDefaultBossEventSettings, PFEStartBossEvent, startBossEvents } from "./bossEvents";
 import { PFEBoxMiningComponent } from "./boxMining";
@@ -13,7 +13,7 @@ import ComputersCompat, { initExampleStickers } from "./addonCompatibility/jigar
 import { PFEWaypointComponent } from "./waypoints";
 import { PFEUpgradeableComponent } from "./upgrades";
 import { RecipeBlockComponent, RecipeItemComponent } from "./recipeSystems";
-const currentVersion = 102990 // PFE Version (ex: 102950 = v1.2.95)
+const currentVersion = 103000 // PFE Version (ex: 102950 = v1.2.95)
 
 
 world.afterEvents.playerJoin.subscribe((data => {
@@ -465,62 +465,7 @@ system.beforeEvents.startup.subscribe(data => {
     data.itemComponentRegistry.registerCustomComponent(
         "poke_pfe:config", {
         onUse(data, componentInfo) {
-            if ((data.source.getGameMode() == GameMode.Creative) || data.source.hasTag(`poke:config`)) {
-                let UI = new ActionFormData()
-                UI.button({ translate: `translation.poke_pfe.bossEventConfig` }, `textures/poke/common/spawn_enabled`)
-                UI.button({ translate: `translation.poke_pfe.disableConfig` }, `textures/poke/common/blacklist_add`)
-                UI.button({ translate: `%poke_pfe.miscOptions` }, `textures/poke/common/more_options`)
-                UI.show(data.source).then(response => {
-                    let selection = 0
-                    if (response.selection == selection) {
-                        if (world.getDynamicProperty(PFEBossEventConfigName) == undefined) {
-                            //console.warn(`Some Boss Event Settings were invalid; Resetting settings to default || PFE`)
-                            world.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(PFEDefaultBossEventSettings))
-                        }
-                        PFEBossEventUIMainMenu(data.source)
-                        return
-                    } else selection++
-                    if (response.selection == selection) {
-                        PFEDisableConfigMainMenu(data)
-                        return;
-                    } else selection++
-                    if (response.selection == selection) {
-                        let UI = new ModalFormData()
-                        UI.title({ translate: `%poke_pfe.miscOptions` })
-                        UI.label({ translate: `%poke_pfe.setEffects` })
-                        UI.divider()
-                        UI.slider({ translate: `%poke_pfe.effectDuration` }, 1, 30, { valueStep: 1, tooltip: { translate: `%poke_pfe.effectDuration.tooltip` }, defaultValue: Number(world.getDynamicProperty("poke_pfe:setEffectDuration") ?? ArmorEffectDuration) / 20 })
-                        UI.slider({ translate: `%poke_pfe.applyInterval` }, 1, 10, { valueStep: 1, tooltip: { translate: `%poke_pfe.applyInterval.tooltip` }, defaultValue: Number(world.getDynamicProperty("poke_pfe:setEffectInterval") ?? 1) / 20 })
-                        UI.show(data.source).then(response => {
-                            if (response.canceled) return;
-                            //console.warn(JSON.stringify(response.formValues))
-                            world.setDynamicProperty("poke_pfe:setEffectDuration", Number(response.formValues?.at(2) ?? ArmorEffectDuration / 20) * 20)
-                            world.setDynamicProperty("poke_pfe:setEffectInterval", (Number(response.formValues?.at(3) ?? 1)) * 20)
-                            const intervalId = <number | undefined>world.getDynamicProperty("poke_pfe:setEffectIntervalId")
-                            //console.warn(intervalId)
-                            if (intervalId) {
-                                system.runInterval
-                                system.clearRun(intervalId)
-                                world.setDynamicProperty("poke_pfe:setEffectIntervalId", startSetEffects())
-                            }
-
-                        })
-                        return;
-                    } else selection++
-                    if ((response.selection == selection) || response.canceled) {
-                        return
-                    }
-                })
-            } else {
-                let UI = new ActionFormData()
-                UI.title({ translate: `translation.poke_pfe.insufficientPerms` })
-                UI.body({ rawtext: [{ translate: `translation.poke_pfe.insufficientPerms.desc` }, { text: `poke:config\n\n` }, { translate: `translation.poke_pfe.insufficientPerms.desc2` }, { text: `\n/tag @s add poke:config` }] })
-                UI.button({ translate: `translation.poke:bossEventClose` }, `textures/poke/common/close`)
-                UI.show(data.source).then(response => {
-                    return
-                })
-                return
-            }
+            OpenPFEConfig(data.source)
         }
     }
     )
@@ -1657,6 +1602,22 @@ system.beforeEvents.startup.subscribe(data => {
     data.itemComponentRegistry.registerCustomComponent("poke_pfe:custom_upgrades", {});
     data.itemComponentRegistry.registerCustomComponent("poke_pfe:custom_quests_info", {});
     data.itemComponentRegistry.registerCustomComponent("poke_pfe:incompatible_addons", {});
+    // Custom Commands
+
+    data.customCommandRegistry.registerCommand(
+        {
+            name: "poke_pfe:config",
+            description: "Opens PFE's config menu",
+            permissionLevel: CommandPermissionLevel.Admin,
+            optionalParameters: [{ type: CustomCommandParamType.PlayerSelector, name: "openAs" }],
+        }, ConfigCustomCommand)
+    data.customCommandRegistry.registerCommand(
+        {
+            name: "poke_pfe:swap_hat",
+            description: "Swaps your helmet for whatever you are holding. some items can lose data if being swapped to the Helmet slot that are not valid helmet items",
+            permissionLevel: CommandPermissionLevel.Admin,
+            optionalParameters: [{ type: CustomCommandParamType.PlayerSelector, name: "swapAs" }],
+        }, SwapHatCommand)
     return;
 })
 world.afterEvents.worldLoad.subscribe((data) => {
@@ -1760,19 +1721,167 @@ system.afterEvents.scriptEventReceive.subscribe((data) => {
             let newQuests = currentQuests.concat(JSON.parse(data.message).value) ?? currentQuests
             world.setDynamicProperty(PFECustomCraftQuestsPropertyID, JSON.stringify(newQuests))
         }
-        case (`poke:test`): {
+        /*case (`poke:test`): {
             let item = data.sourceEntity?.getComponent(EntityComponentTypes.Equippable)?.getEquipment(EquipmentSlot.Mainhand)
             item?.setDynamicProperty(`poke:ammo`, JSON.stringify({ v: 2, max: 32, amount: 12, entityId: "poke:galaxy_arrow", id: "poke:galaxy_arrow", upgrades: [{ id: "pfe:capacity", level: 1, maxLevel: undefined }, { id: "pfe:flaming", level: 0, maxLevel: 1 }] }))
             data.sourceEntity?.getComponent(EntityComponentTypes.Equippable)?.setEquipment(EquipmentSlot.Mainhand, item)
-        }
+        }*/
         // This is to check if there are multiple versions of PFE applied to a world at a time
-        case ("poke_pfe:dupe_check"): {
+        case "poke_pfe:dupe_check": {
             const Version = Number(data.message)
             if (Version < currentVersion) {
                 world.sendMessage(`§f[§eWARNING§f] Multiple versions PFE are applied to this world, to avoid any issue: please remove any old versions || §eOld version: §fv${data.message.substring(0, 1)}.${Number(data.message.substring(1, 3))}.${Number(`${data.message}`.substring(3, 5))}${Number(`${data.message}`.substring(5)) != 0 ? `${data.message}`.substring(5) : ""}`)
-                console.warn(`Multiple versions PFE found:\n- Old version: ${Version} (v${data.message.substring(0, 1)}.${Number(data.message.substring(1, 3))}.${Number(`${data.message}`.substring(3, 5))}${Number(`${data.message}`.substring(5)) != 0 ? `${data.message}`.substring(5) : ""})\n- Current version: ${currentVersion} (v${`${currentVersion}`.substring(0, 1)}.${Number(`${currentVersion}`.substring(1, 3))}.${Number(`${currentVersion}`.substring(3, 5))}${Number(`${currentVersion}`.substring(5)) != 0 ? `${currentVersion}`.substring(5) : ""})`)
+                // console.warn(`Multiple versions PFE found:\n- Old version: ${Version.toString()} (v${data.message.substring(0, 1)}.${Number(data.message.substring(1, 3))}.${Number(`${data.message}`.substring(3, 5))}${Number(data.message.substring(5)) != 0 ? data.message.substring(5) : ""})\n- Current version: ${currentVersion.toString()} (v ${currentVersion.toString().substring(0, 1)}.${Number(`${currentVersion}`.substring(1, 3))}.${Number(`${currentVersion}`.substring(3, 5))}${Number(`${currentVersion}`.substring(5)) != 0 ? `${currentVersion}`.substring(5) : ""})`)
             }
+            break;
+        }
+        // Sends the version number of PFE to the script event id provided in the message
+        // PFE Version (ex: 102950 = v1.2.95 || ex2: 112359 = v1.12.359)
+        case `poke_pfe:get_version`: {
+            system.sendScriptEvent(data.message, currentVersion.toString())
+            break;
         }
         default: break;
     }
 })
+function OpenPFEConfig(player: Player) {
+    if ((player.playerPermissionLevel == PlayerPermissionLevel.Operator) || player.hasTag(`poke:config`)) {
+        let UI = new ActionFormData()
+        UI.button({ translate: `translation.poke_pfe.bossEventConfig` }, `textures/poke/common/spawn_enabled`)
+        UI.button({ translate: `translation.poke_pfe.disableConfig` }, `textures/poke/common/blacklist_add`)
+        UI.button({ translate: `%poke_pfe.miscOptions` }, `textures/poke/common/more_options`)
+        UI.show(player).then(response => {
+            let selection = 0
+            if (response.selection == selection) {
+                if (world.getDynamicProperty(PFEBossEventConfigName) == undefined) {
+                    //console.warn(`Some Boss Event Settings were invalid; Resetting settings to default || PFE`)
+                    world.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(PFEDefaultBossEventSettings))
+                }
+                PFEBossEventUIMainMenu(player)
+                return
+            } else selection++
+            if (response.selection == selection) {
+                PFEDisableConfigMainMenu(player)
+                return;
+            } else selection++
+            if (response.selection == selection) {
+                let UI = new ModalFormData()
+                UI.title({ translate: `%poke_pfe.miscOptions` })
+                UI.label({ translate: `%poke_pfe.setEffects` })
+                UI.divider()
+                UI.slider({ translate: `%poke_pfe.effectDuration` }, 1, 30, { valueStep: 1, tooltip: { translate: `%poke_pfe.effectDuration.tooltip` }, defaultValue: Number(world.getDynamicProperty("poke_pfe:setEffectDuration") ?? ArmorEffectDuration) / 20 })
+                UI.slider({ translate: `%poke_pfe.applyInterval` }, 1, 10, { valueStep: 1, tooltip: { translate: `%poke_pfe.applyInterval.tooltip` }, defaultValue: Number(world.getDynamicProperty("poke_pfe:setEffectInterval") ?? 1) / 20 })
+                UI.show(player).then(response => {
+                    if (response.canceled) return;
+                    //console.warn(JSON.stringify(response.formValues))
+                    world.setDynamicProperty("poke_pfe:setEffectDuration", Number(response.formValues?.at(2) ?? ArmorEffectDuration / 20) * 20)
+                    world.setDynamicProperty("poke_pfe:setEffectInterval", (Number(response.formValues?.at(3) ?? 1)) * 20)
+                    const intervalId = <number | undefined>world.getDynamicProperty("poke_pfe:setEffectIntervalId")
+                    //console.warn(intervalId)
+                    if (intervalId) {
+                        system.runInterval
+                        system.clearRun(intervalId)
+                        world.setDynamicProperty("poke_pfe:setEffectIntervalId", startSetEffects())
+                    }
+
+                })
+                return;
+            } else selection++
+            if ((response.selection == selection) || response.canceled) {
+                return
+            }
+        })
+    } else {
+        let UI = new ActionFormData()
+        UI.title({ translate: `translation.poke_pfe.insufficientPerms` })
+        UI.body({ translate: `%translation.poke_pfe.insufficientPerms.desc:§e poke:config§r\n\n%translation.poke_pfe.insufficientPerms.desc2\n§e/tag @s add poke:config§r` })
+        UI.button({ translate: `translation.poke:bossEventClose` }, `textures/poke/common/close`)
+        UI.show(player).then(response => {
+            return
+        })
+        return
+    }
+}
+function ConfigCustomCommand(origin: CustomCommandOrigin, openAs?: Player[]): CustomCommandResult {
+    system.run(() => {
+        const players = openAs ? openAs : <Player[]>[origin.sourceEntity]
+        for (const player of players) {
+            OpenPFEConfig(player)
+        }
+    })
+    return {
+        status: CustomCommandStatus.Success,
+        message: "Opened PFE's config menu for the player's provided"
+    };
+}
+function SwapHatCommand(origin: CustomCommandOrigin, swapAs: Player[]): CustomCommandResult {
+    let status = {
+        status: CustomCommandStatus.Success,
+        message: ""
+    };
+    system.run(() => {
+        const players = swapAs ? swapAs : <Player[]>[origin.sourceEntity]
+        for (const player of players) {
+            const equippableComponent = player.getComponent(EntityComponentTypes.Equippable)
+            if (!equippableComponent) {
+                status = {
+                    status: CustomCommandStatus.Failure,
+                    message: "Player cannot equip items"
+                };
+                console.warn("Player cannot equip items")
+                return
+            }
+            const mainHand = equippableComponent?.getEquipment(EquipmentSlot.Mainhand)
+            if (mainHand?.lockMode == ItemLockMode.slot) {
+                status = {
+                    status: CustomCommandStatus.Failure,
+                    message: "Held Item cannot be locked"
+                };
+                console.warn("Held Item cannot be locked")
+                return
+            }
+            const helmet = equippableComponent?.getEquipment(EquipmentSlot.Head)
+            if (helmet?.lockMode == ItemLockMode.slot) {
+                status = {
+                    status: CustomCommandStatus.Failure,
+                    message: "Helmet cannot be locked"
+                };
+                console.warn("Helmet cannot be locked")
+                return
+            }
+            if (helmet) {
+                const helmetEnchantments = helmet.getComponent(ItemComponentTypes.Enchantable)
+                if (helmetEnchantments?.hasEnchantment(MinecraftEnchantmentTypes.Binding)) {
+                    status = {
+                        status: CustomCommandStatus.Failure,
+                        message: "Helmet cannot have %enchantment.curse.binding"
+                    };
+                    console.warn("Helmet cannot have %enchantment.curse.binding")
+                    return
+                }
+            }
+            let oldHelmetItem = helmet?.clone()
+            let oldMainHandItem = mainHand?.clone()
+            console.warn(helmet?.typeId)
+            console.warn(mainHand?.typeId)
+            equippableComponent.setEquipment(EquipmentSlot.Head, oldMainHandItem)
+            // This is a fail-safe since due to limitations; an item that cannot be equipped as a helmet will instead be treated as undefined and the helmet would be set to nothing.
+            // As a result of this there seems to be no other way outside of commands to have the item set in that slot
+            // ^ Because it is restricted to a command I cannot keep any item data (like durability or dynamic properties) 
+            if (oldMainHandItem) {
+                if (!equippableComponent?.getEquipment(EquipmentSlot.Head)?.matches(oldMainHandItem.typeId)) {
+                    player.runCommand(`replaceitem entity @s slot.armor.head 0 ${oldMainHandItem.typeId} ${oldMainHandItem.amount}`)
+                }
+            }
+            equippableComponent.setEquipment(EquipmentSlot.Mainhand, oldHelmetItem)
+            status = {
+                status: CustomCommandStatus.Success,
+                message: "Swapped Helmet with Held Item"
+            };
+            console.warn("Swapped Helmet with Held Item")
+            return
+        }
+
+    })
+    return status
+}

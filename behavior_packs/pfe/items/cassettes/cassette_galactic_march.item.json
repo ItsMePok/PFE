@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.90",
+	"format_version": "1.21.100",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:cassette_galactic_march"
@@ -8,6 +8,7 @@
 			"minecraft:display_name": {
 				"value": "%poke_pfe.cassette\n§7ItsMePok -§5 %poke_pfe.galacticMarch\n%poke_pfe.tag"
 			},
+			"poke_pfe:icon_path": "textures/poke/pfe/cassette_galactic_march",
 			"minecraft:rarity": "uncommon",
 			"minecraft:icon": "poke_pfe_cassette_galactic_march",
 			"poke_pfe:play_music": {

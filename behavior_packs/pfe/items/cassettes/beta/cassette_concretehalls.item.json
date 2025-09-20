@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.90",
+  "format_version": "1.21.100",
   "minecraft:item": {
     "description": {
       "identifier": "poke:cassette_concretehalls"
@@ -8,6 +8,7 @@
       "minecraft:display_name": {
         "value": "%poke_pfe.cassette\n§7C418 - %poke_pfe.concretehalls\n%poke_pfe.tag"
       },
+      "poke_pfe:icon_path": "textures/poke/pfe/cassette_concretehalls",
       "minecraft:icon": "poke_pfe_cassette_concretehalls",
       "poke_pfe:play_music": {
         "music": "poke_pfe.music.concretehalls"
