@@ -1,7 +1,11 @@
+---
+description: 'Last updated to match: v1.3.0'
+---
+
 # Home
 
 {% hint style="warning" %}
-This wiki is still a work in progress, some pages are unfinished
+This wiki is still a work in progress; some pages are unfinished.
 {% endhint %}
 
 ***
@@ -10,7 +14,7 @@ This wiki is still a work in progress, some pages are unfinished
 
 ### Experimental Toggles: <mark style="color:yellow;">None</mark>
 
-### Lowest Supported Minecraft Version: <mark style="color:yellow;">1.21.93</mark>
+### Lowest Supported Minecraft Version: <mark style="color:yellow;">1.21.100</mark>
 
 ***
 

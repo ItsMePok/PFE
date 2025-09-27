@@ -1,3 +1,7 @@
+---
+description: 'Last updated to match: v1.3.0'
+---
+
 # Hellish Ore
 
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/ore/HellishOre.png?raw=true" alt=""><figcaption></figcaption></figure>
@@ -10,9 +14,9 @@ The block texture above could not be 100% accurate if you have a texture pack ap
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/ore/HellishOre.png?raw=true" alt="Hellish Ore." data-size="line"> Hellish Ore is an ore that when refined is used in obtaining various things in PFE
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:hellish\_ore** <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke:hellish\_ore**</mark> <a href="#identifier" id="identifier"></a>
 
-## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 64
+## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">64</mark>
 
 ## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining:
 
@@ -22,14 +26,14 @@ The block texture above could not be 100% accurate if you have a texture pack ap
 
 #### [Y Range](#user-content-fn-1)[^1]:
 
-* Highest: Y = 16
-* Lowest: Y = -32
+* Highest: Y = <mark style="color:yellow;">16</mark>
+* Lowest: Y = <mark style="color:yellow;">-32</mark>
 
-#### Distribution type: Triangle[^2]
+#### Distribution type: [<mark style="color:yellow;">Triangle</mark>](#user-content-fn-2)[^2]
 
-#### Iterations[^3]: 2
+#### Iterations[^3]: <mark style="color:yellow;">2</mark>
 
-#### Maximum number of ores per vein: 5
+#### Maximum number of ores per vein: <mark style="color:yellow;">5</mark>
 
 #### Replaces:
 
@@ -40,6 +44,8 @@ The block texture above could not be 100% accurate if you have a texture pack ap
     * <img src="https://minecraft.wiki/images/thumb/Andesite.png/150px-Andesite.png?5db9b" alt="" data-size="line"> [Andesite](https://minecraft.wiki/w/Andesite)
 * <img src="https://minecraft.wiki/images/thumb/Deepslate_(UD)_JE3.png/120px-Deepslate_(UD)_JE3.png?7635f" alt="Deepslate." data-size="line"> [Deepslate](https://minecraft.wiki/w/Deepslate)
   * This would replace as <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/ore/DeepslateHellishOre.png?raw=true" alt="Deepslate Hellish Ore." data-size="line"> [Deepslate Hellish Ore](../deepslate-ores/deepslate-hellish-ore.md) instead
+* <img src="https://minecraft.wiki/images/Netherrack_JE4_BE2.png?8a940" alt="" data-size="line"> [Netherrack](https://minecraft.wiki/w/Netherrack)
+  * This would replace as <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/ore/NetherHellishOre.png?raw=true" alt="" data-size="line"> [Nether Hellish Ore](../nether-ores/nether-hellish-ore.md) instead
 {% endtab %}
 {% endtabs %}
 

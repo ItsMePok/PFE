@@ -1,3 +1,7 @@
+---
+description: 'Last updated to match: v1.3.0'
+---
+
 # Cobalt Ore
 
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/ore/cobaltOre.png?raw=true" alt=""><figcaption></figcaption></figure>
@@ -10,9 +14,9 @@ The block texture above could not be 100% accurate if you have a texture pack ap
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/ore/cobaltOre.png?raw=true" alt="Cobalt Ore." data-size="line"> Cobalt Ore is an ore that when refined is used in obtaining various things in PFE
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:cobalt\_ore** <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke:cobalt\_ore**</mark> <a href="#identifier" id="identifier"></a>
 
-## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 64
+## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">64</mark>
 
 ## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining:
 
@@ -22,14 +26,14 @@ The block texture above could not be 100% accurate if you have a texture pack ap
 
 #### [Y Range](#user-content-fn-1)[^1]:
 
-* Highest: Y = 256
-* Lowest: Y = -64
+* Highest: Y = <mark style="color:yellow;">256</mark>
+* Lowest: Y = <mark style="color:yellow;">-64</mark>
 
-#### Distribution type: Triangle[^2]
+#### Distribution type: [<mark style="color:yellow;">Triangle</mark>](#user-content-fn-2)[^2]
 
-#### Iterations[^3]: 5
+#### Iterations[^3]: <mark style="color:yellow;">5</mark>
 
-#### Maximum number of ores per vein: 16
+#### Maximum number of ores per vein: <mark style="color:yellow;">16</mark>
 
 #### Replaces:
 

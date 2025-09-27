@@ -28,7 +28,7 @@ description: 'Last updated to match: v1.2.99'
 
 <table data-view="cards"><thead><tr><th>Item</th><th>Amount</th></tr></thead><tbody><tr><td><img src="https://minecraft.wiki/images/Paper_JE2_BE2.png?9c3be" alt="" data-size="line"> <a href="https://minecraft.wiki/w/Paper">Paper</a></td><td>1</td></tr><tr><td><img src="https://minecraft.wiki/images/Feather_JE3_BE2.png?b869b" alt="" data-size="line"> <a href="https://minecraft.wiki/w/Feather">Feather</a></td><td>3</td></tr><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/sugar_water.png?raw=true" alt="" data-size="line"> <a href="../../items/foods/sugar-water.md">Sugar Water</a></td><td>1</td></tr></tbody></table>
 
-<h2 align="center">4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/time_anchor_spell.png?raw=true" alt=""> <a href="../../tools/spells/time-anchor-spell.md">Time Anchor Spell</a></h2>
+<h2 align="center">4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/time_anchor_spell.png?raw=true" alt="" data-size="line"> <a href="../../tools/spells/time-anchor-spell.md">Time Anchor Spell</a></h2>
 
 <table data-view="cards"><thead><tr><th>Item</th><th>Amount</th></tr></thead><tbody><tr><td><img src="https://minecraft.wiki/images/Paper_JE2_BE2.png?9c3be" alt="" data-size="line"> <a href="https://minecraft.wiki/w/Paper">Paper</a></td><td>1</td></tr><tr><td><img src="https://minecraft.wiki/images/Clock_JE3_BE3.gif?8eaae" alt="" data-size="line"> <a href="https://minecraft.wiki/w/Clock">Clock</a></td><td>1</td></tr></tbody></table>
 

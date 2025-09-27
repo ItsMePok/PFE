@@ -476,6 +476,8 @@
     * [Nebula Scythe](weapons/scythes/nebula-scythe.md)
   * [Claymores](weapons/claymores/README.md)
     * [Nebula Claymore](weapons/claymores/nebula-claymore.md)
+    * [Death Claymore](weapons/claymores/death-claymore.md)
+    * [Astral Claymore](weapons/claymores/astral-claymore.md)
   * [Burstbows](weapons/burstbows/README.md)
     * [Holy Burstbow](weapons/burstbows/holy-burstbow.md)
     * [Galaxy Burstbow](weapons/burstbows/galaxy-burstbow.md)
