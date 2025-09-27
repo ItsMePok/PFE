@@ -5,7 +5,7 @@
   "description": "TypeScript Starter",
   "private": true,
   "devDependencies": {
-    "@minecraft/core-build-tasks": "^3.0.1",
+    "@minecraft/core-build-tasks": "^5.4.0",
     "eslint-plugin-minecraft-linting": "^1.2.2",
     "source-map": "^0.7.4",
     "ts-node": "^10.9.1",
@@ -21,9 +21,9 @@
     "enablemcpreviewloopback": "CheckNetIsolation.exe LoopbackExempt -a -p=S-1-15-2-424268864-5579737-879501358-346833251-474568803-887069379-4040235476"
   },
   "dependencies": {
-    "@minecraft/creator-tools": "^0.12.1",
-    "@minecraft/math": "2.2.8",
-    "@minecraft/server": "^2.1.0-rc.1.21.110-preview.22",
+    "@minecraft/creator-tools": "^0.14.1",
+    "@minecraft/math": "^2.2.10",
+    "@minecraft/server": "^2.1.0",
     "@minecraft/server-ui": "2.0.0",
     "@minecraft/vanilla-data": "1.21.90"
   }

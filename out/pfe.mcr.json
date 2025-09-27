@@ -1,5 +1,12 @@
 {
   "info": {
+    "capabilities": [
+      "behaviorPack",
+      "functions",
+      "resourcePack",
+      "scripting",
+      "vvfiles"
+    ],
     "behaviorPackManifestCount": 0,
     "unknownJsonCount": 0,
     "entityTypeManifestCount": 0,
@@ -10,91 +17,147 @@
     "entityTypeResourceCount": 0,
     "behaviorPackAnimationCount": 0,
     "behaviorPackAnimationControllerCount": 0,
-    "overallSize": 156661328,
-    "fileCounts": 25758,
-    "folderCounts": 2722,
-    "contentSize": 6227650,
-    "contentFileCounts": 4670,
-    "contentFolderCounts": 354,
+    "overallSize": 29074953,
+    "fileCounts": 18749,
+    "folderCounts": 1432,
+    "contentSize": 26810706,
+    "contentFileCounts": 18682,
+    "contentFolderCounts": 1418,
+    "minBehaviorPackMinEngineVersion": 0,
+    "minResourcePackMinEngineVersion": 0,
     "subpackCount": 0,
-    "subpackTier1Count": 0,
-    "subpackTier2Count": 0,
-    "subpackTier3Count": 0,
-    "subpackTier4Count": 0,
-    "subpackTier5Count": 0,
-    "subpackTier6Count": 0,
-    "subpackTier7Count": 0,
-    "subpackTier8Count": 0,
-    "subpackTier9Count": 0,
-    "subpackTier10Count": 0,
-    "subpackTier11Count": 0,
-    "subpackTier12Count": 0,
-    "subpackTier13Count": 0,
-    "subpackTier14Count": 0,
-    "subpackTier15Count": 0,
-    "subpackTier16Count": 0,
-    "subpackTier17Count": 0,
-    "subpackTier18Count": 0,
-    "subpackTier19Count": 0,
-    "subpackTier20Count": 0,
-    "subpackTier21Count": 0,
-    "subpackTier22Count": 0,
-    "subpackTier23Count": 0,
-    "subpackTier24Count": 0,
-    "subpackTier25Count": 0,
-    "subpackTier26Count": 0,
-    "subpackTier27Count": 0,
-    "subpackTier28Count": 0,
-    "subpackTier29Count": 0,
-    "subpackTier30Count": 0,
-    "subpackTier31Count": 0,
-    "subpackTier32Count": 0,
-    "subpackTier33Count": 0,
-    "subpackTier34Count": 0,
-    "subpackTier35Count": 0,
-    "subpackTier36Count": 0,
-    "subpackTier37Count": 0,
-    "subpackTier38Count": 0,
-    "subpackTier39Count": 0,
-    "subpackTier40Count": 0,
+    "entityTypeComponents": [],
+    "blockTypeComponents": [],
+    "itemTypeComponents": [],
+    "apisUsed": [],
+    "mctoolsVersion": 10014001,
+    "itemTypes": [
+      "Animation",
+      "Animation controller",
+      "Attachable",
+      "Audio",
+      "Behavior pack",
+      "Behavior pack manifest",
+      "Block culling",
+      "Block resource catalog",
+      "Block type",
+      "Crafting Item catalog",
+      "ESLint config",
+      "Entity type",
+      "Entity type visuals/audio",
+      "Environment File",
+      "Feature",
+      "Flipbook texture set",
+      "Function",
+      "Icon",
+      "Image",
+      "Item texture",
+      "Item type",
+      "JavaScript",
+      "Just config",
+      "Language catalog",
+      "Language translations",
+      "Loot table",
+      "Minecraft addon",
+      "Minecraft pack",
+      "Minecraft zip",
+      "Model",
+      "NPM package definition",
+      "Particle",
+      "Prettier JavaScript/JSON style config",
+      "Recipe",
+      "Render controller",
+      "Resource pack",
+      "Resource pack manifest",
+      "Sound catalog",
+      "Spawn rule",
+      "Structure",
+      "Terrain texture",
+      "Texture",
+      "Texture list",
+      "Texture set",
+      "Trading",
+      "TypeScript",
+      "TypeScript config",
+      "VS Code extensions",
+      "VS Code launch file",
+      "VS Code settings",
+      "VS Code tasks",
+      "World feature rule"
+    ],
+    "completeVanillaCopy": 0,
+    "partialVanillaCopy": 0,
     "animationCount": 0,
     "textureCount": 0,
+    "textureTexelSize": 0,
+    "vanillaGameTextureCoverage": 0,
+    "vanillaGameTextureCount": 0,
+    "minimumSupportablePerformanceTier": 0,
+    "invalidCommandSyntaxCount": 0,
+    "linesWithSlashCount": 0,
+    "multipleSoundsManifests": 0,
+    "soundsDefinitionManifestFormatIsValid": 0,
+    "soundsDefinitionManifestIsNotValidJson": 0,
+    "flagIsOrWasTrue": 0,
+    "levelDatNotFound": 0,
+    "worldNotFound": 0,
+    "deprecatedBlockOverride": 0,
+    "deprecatedTerrainTexture": 0,
+    "deprecatedTexture": 0,
+    "restrictedPolyMeshFound": 0,
+    "jsonParseError": 0,
+    "invalidManifestJson": 0,
+    "missingResourcePackDependencies": 0,
+    "internalProcessingErrors": 0,
+    "minBaseGameVersion": 0,
     "chunkCount": 0,
     "subchunkLessChunkCount": 0,
     "worldLoadErrors": 0,
+    "commands": [
+      "clear",
+      "effect",
+      "execute",
+      "give",
+      "summon",
+      "tag",
+      "xp"
+    ],
     "featureSets": {
       "Textures Attachable Resource Count": {
-        "Count": 233
+        "Count": 932
       },
       "Textures Texture References": {
-        "Count": 989
+        "Count": 3956
       },
       "Textures Attachable References": {
-        "Count": 839
+        "Count": 3356
       },
       "Textures Entity Resource Count": {
-        "Count": 67
+        "Count": 268
       },
       "Textures Entity References": {
-        "Count": 150
+        "Count": 600
       },
       "Textures Flipbook Texture Resource Count": {
-        "Count": 3
+        "Count": 12
       },
       "Textures Item Texture Resource Count": {
-        "Count": 722
+        "Count": 2888
       },
       "Textures Terrain Texture Resource Count": {
-        "Count": 305
+        "Count": 1220
       },
       "Textures File Count": {
-        "Count": 1380
+        "Count": 5527
+      },
+      "Textures Block Resource Count": {
+        "Count": 17
       },
       "Textures Unique Texture Handles (estimated)": {
         "Count": 358
       },
       "Textures Unique Texture Paths": {
-        "Count": 356
+        "Count": 374
       },
       "Textures Unique Particle Texture References": {
         "Count": 25
@@ -129,65 +192,59 @@
       "Textures Unique Flipbook Texture Paths": {
         "Count": 3
       },
-      "Command tag": {
-        "Count": 1
+      "Textures Unique Block Texture References": {
+        "Count": 17
       },
-      "Command execute": {
+      "Textures Unique Block Texture Paths": {
+        "Count": 17
+      },
+      "Command tag": {
         "Count": 4
       },
+      "Command execute": {
+        "Count": 16
+      },
       "Command effect": {
-        "Count": 10
+        "Count": 40
       },
       "Execute Sub Command summon": {
-        "Count": 1
+        "Count": 4
       },
       "Execute Sub Command clear": {
-        "Count": 1
+        "Count": 4
       },
       "Execute Sub Command give": {
-        "Count": 1
+        "Count": 4
       },
       "Execute Sub Command xp": {
-        "Count": 1
+        "Count": 4
       }
     },
-    "errorCount": 153,
+    "errorCount": 336,
     "internalProcessingErrorCount": 0,
     "warningCount": 0,
-    "testSuccessCount": 4,
-    "testFailCount": 3,
+    "testSuccessCount": 3,
+    "testFailCount": 4,
     "testNotApplicableCount": 0,
-    "errorSummary": "ERROR: [CADDONREQ210] (/resource_packs/pfe/textures/poke/pfe/8_ball.texture_set.json) Found a Vibrant Visuals related file, which is not supported in cooperative add-ons (for now).\r\nERROR: [CADDONREQ210] (/resource_packs/pfe/textures/poke/pfe/alloy_forge_face.texture_set.json) Found a Vibrant Visuals related file, which is not supported in cooperative add-ons (for now).\r\nERROR: [CADDONREQ210] (/resource_packs/pfe/textures/poke/pfe/alloy_forge_side.texture_set.json) Found a Vibrant Visuals related file, which is not supported in cooperative add-ons (for now).\r\nERROR: [CADDONREQ210] (/resource_packs/pfe/textures/poke/pfe/alloy_forge_top.texture_set.json) Found a Vibrant Visuals related file, which is not supported in cooperative add-ons (for now).\r\nERROR: [CADDONREQ210] (/resource_packs/pfe/textures/poke/pfe/astral_bulb.texture_set.json) Found a Vibrant Visuals related file, which is not supported in cooperative add-ons (for now).\r\nERROR: [CADDONREQ210] (/resource_packs/pfe/textures/poke/pfe/auto_animated_block_breaker_face.texture_set.json) Found a Vibrant Visuals related file, which is not supported in cooperative add-ons (for now).\r\nERROR: [CADDONREQ210] (/resource_packs/pfe/textures/poke/pfe/auto_animated_cobble_generator_face.texture_set.json) Found a Vibrant Visuals related file, which is not supported in cooperative add-ons (for now).\r\nERROR: [CADDONREQ210] (/resource_packs/pfe/textures/poke/pfe/auto_animated_gear.texture_set.json) Found a Vibrant Visuals related file, which is not supported in cooperative add-ons (for now).\r\nERROR: [CADDONREQ210] (/resource_packs/pfe/textures/poke/pfe/auto_arrow.texture_set.json) Found a Vibrant Visuals related file, which is not supported in cooperative add-ons (for now).\r\nERROR: [CADDONREQ210] (/resource_packs/pfe/textures/poke/pfe/auto_block_breaker_face.texture_set.json) Found a Vibrant Visuals related file, which is not supported in cooperative add-ons (for now).\r\nERROR: [CADDONREQ210] (/resource_packs/pfe/textures/poke/pfe/auto_bottom.texture_set.json) Found a Vibrant Visuals related file, which is not supported in cooperative add-ons (for now).\r\nERROR: [CADDONREQ210] (/resource_packs/pfe/textures/poke/pfe/auto_cobble_generator_face.texture_set.json) Found a Vibrant Visuals related file, which is not supported in cooperative add-ons (for now).\r\nERROR: [CADDONREQ210] (/resource_packs/pfe/textures/poke/pfe/auto_cobble_generator_side.texture_set.json) Found a Vibrant Visuals related file, which is not supported in cooperative add-ons (for now).\r\nERROR: [CADDONREQ210] (/resource_packs/pfe/textures/poke/pfe/auto_dirter_side.texture_set.json) Found a Vibrant Visuals related file, which is not supported in cooperative add-ons (for now).\r\nERROR: [CADDONREQ210] (/resource_packs/pfe/textures/poke/pfe/auto_face.texture_set.json) Found a Vibrant Visuals related file, which is not supported in cooperative add-ons (for now).",
+    "errorSummary": "ERROR: [CADDONIREQ112] (/Minpfe.zip#/pfe_bp.mcpack#/blocks/auto/barometer.block.json) JSON namespaced identifier is not in the expected form of creatorshortname_projectshortname:myitem: poke:barometer\nERROR: [CADDONIREQ112] (/Minpfe.zip#/pfe_bp.mcpack#/blocks/auto/magnet.block.json) JSON namespaced identifier is not in the expected form of creatorshortname_projectshortname:myitem: poke:magnet\nERROR: [CADDONIREQ112] (/Minpfe.zip#/pfe_bp.mcpack#/blocks/bulbs/beeulb.block.json) JSON namespaced identifier is not in the expected form of creatorshortname_projectshortname:myitem: poke:beeulb\nERROR: [CADDONIREQ112] (/Minpfe.zip#/pfe_bp.mcpack#/blocks/limestone/limestone.block.json) JSON namespaced identifier is not in the expected form of creatorshortname_projectshortname:myitem: poke:limestone\nERROR: [CADDONIREQ112] (/Minpfe.zip#/pfe_bp.mcpack#/blocks/ore/overworld/deepslate_onyx_ore.block.json) JSON namespaced identifier is not in the expected form of creatorshortname_projectshortname:myitem: poke:onyx\nERROR: [CADDONIREQ112] (/Minpfe.zip#/pfe_bp.mcpack#/blocks/other/magic_8_ball.block.json) JSON namespaced identifier is not in the expected form of creatorshortname_projectshortname:myitem: poke:magic_8_ball\nERROR: [CADDONIREQ112] (/Minpfe.zip#/pfe_bp.mcpack#/blocks/other/turnip.block.json) JSON namespaced identifier is not in the expected form of creatorshortname_projectshortname:myitem: poke:turnip\nERROR: [CADDONIREQ112] (/Minpfe.zip#/pfe_bp.mcpack#/blocks/shadowstone/shadowstone.block.json) JSON namespaced identifier is not in the expected form of creatorshortname_projectshortname:myitem: poke:shadowstone\nERROR: [CADDONIREQ112] (/Minpfe.zip#/pfe_bp.mcpack#/entities/bosses/dragon.behavior.json) JSON namespaced identifier is not in the expected form of creatorshortname_projectshortname:myitem: poke:dragon\nERROR: [CADDONIREQ112] (/Minpfe.zip#/pfe_bp.mcpack#/entities/bosses/knightling.behavior.json) JSON namespaced identifier is not in the expected form of creatorshortname_projectshortname:myitem: poke:knightling\nERROR: [CADDONIREQ112] (/Minpfe.zip#/pfe_bp.mcpack#/entities/bosses/listener.behavior.json) JSON namespaced identifier is not in the expected form of creatorshortname_projectshortname:myitem: poke:listener\nERROR: [CADDONIREQ112] (/Minpfe.zip#/pfe_bp.mcpack#/entities/bosses/necromancer.behavior.json) JSON namespaced identifier is not in the expected form of creatorshortname_projectshortname:myitem: poke:necromancer\nERROR: [CADDONIREQ112] (/Minpfe.zip#/pfe_bp.mcpack#/entities/bosses/snowman.behavior.json) JSON namespaced identifier is not in the expected form of creatorshortname_projectshortname:myitem: poke:snowman\nERROR: [CADDONIREQ112] (/Minpfe.zip#/pfe_bp.mcpack#/entities/bosses/zombken.behavior.json) JSON namespaced identifier is not in the expected form of creatorshortname_projectshortname:myitem: poke:zombken\nERROR: [CADDONIREQ112] (/Minpfe.zip#/pfe_bp.mcpack#/entities/hostile/piranha.behavior.json) JSON namespaced identifier is not in the expected form of creatorshortname_projectshortname:myitem: poke:piranha",
     "internalProcessingErrorSummary": "",
     "warningSummary": "",
-    "testFailSummary": "TESTFAIL: [CADDONREQ000] Found 71 errors for Cooperative Add-On Requirements (CADDONREQ).\r\nTESTFAIL: [STRICT000] Found 25 errors for Strict Platform Info Generator (STRICT).\r\nTESTFAIL: [CADDONIREQ000] Found 57 errors for Cooperative Add-On Item Requirements Generator (CADDONIREQ).",
+    "testFailSummary": "TESTFAIL: [CADDONIREQ000] Found 228 errors for Cooperative Add-On Item Requirements Generator (CADDONIREQ).\nTESTFAIL: [CADDONREQ000] Found 7 errors for Cooperative Add-On Requirements (CADDONREQ).\nTESTFAIL: [PACKSIZE000] Found 1 errors for Pack Size Information (PACKSIZE).\nTESTFAIL: [STRICT000] Found 100 errors for Strict Platform Info Generator (STRICT).",
     "summary": {
-      "PACKSIZE": {
-        "1": {
-          "title": "Overall Size",
-          "defaultMessage": "Pack Size Information (PACKSIZE) completed successfully",
-          "testCompleteSuccesses": 1
+      "CADDONIREQ": {
+        "0": {
+          "defaultMessage": "Found 228 errors for Cooperative Add-On Item Requirements Generator (CADDONIREQ).",
+          "testCompleteFails": 1
         },
-        "2": {
-          "title": "File Count"
-        },
-        "3": {
-          "title": "Folder Count"
-        },
-        "4": {
-          "title": "Content Size"
-        },
-        "5": {
-          "title": "Content File Count"
-        },
-        "6": {
-          "title": "Content Folder Count"
+        "112": {
+          "defaultMessage": "JSON namespaced identifier is not in the expected form of creatorshortname_projectshortname:myitem",
+          "errors": 228
         }
       },
       "CADDONREQ": {
         "0": {
           "title": "Test Failure",
-          "defaultMessage": "Found 71 errors for Cooperative Add-On Requirements (CADDONREQ).",
+          "defaultMessage": "Found 7 errors for Cooperative Add-On Requirements (CADDONREQ).",
           "testCompleteFails": 1
         },
         "101": {
@@ -195,33 +252,19 @@
           "defaultMessage": "Found a loose file in the font folder. Should only see files in the folder font\\creatorshortname\\gamename\\",
           "errors": 1
         },
+        "160": {
+          "title": "Not One Behavior Pack Manifest",
+          "defaultMessage": "Found more than one behavior pack manifest in a cooperative add-on, which is not a best practice",
+          "errors": 3
+        },
+        "161": {
+          "title": "Not One Resource Pack Manifest",
+          "defaultMessage": "Found more than one resource pack manifest in a cooperative add-on, which is not a best practice",
+          "errors": 3
+        },
         "200": {
           "title": "Found Behavior Pack",
           "defaultMessage": "Behavior pack manifest found."
-        },
-        "210": {
-          "title": "No Vibrant Visuals For Now",
-          "defaultMessage": "Found a Vibrant Visuals related file, which is not supported in cooperative add-ons (for now).",
-          "errors": 70
-        }
-      },
-      "STRICT": {
-        "0": {
-          "title": "Test Failure",
-          "defaultMessage": "Found 25 errors for Strict Platform Info Generator (STRICT).",
-          "testCompleteFails": 1
-        },
-        "101": {
-          "title": "Entity Type Uses A Minecraft Runtime Identifier",
-          "defaultMessage": "Uses a runtime_identifier override",
-          "errors": 25
-        }
-      },
-      "TEXTURE": {
-        "1": {
-          "title": "Textures",
-          "defaultMessage": "Texture Validation (TEXTURE) completed successfully",
-          "testCompleteSuccesses": 1
         }
       },
       "MINENGINEVER": {
@@ -239,34 +282,78 @@
           "defaultMessage": "Resource pack manifest format_version"
         }
       },
-      "CADDONIREQ": {
+      "PACKSIZE": {
         "0": {
-          "defaultMessage": "Found 57 errors for Cooperative Add-On Item Requirements Generator (CADDONIREQ).",
+          "title": "Test Failure",
+          "defaultMessage": "Found 1 errors for Pack Size Information (PACKSIZE).",
           "testCompleteFails": 1
         },
-        "112": {
-          "defaultMessage": "JSON namespaced identifier is not in the expected form of creatorshortname_projectshortname:myitem",
-          "errors": 57
+        "101": {
+          "title": "Overall Size"
+        },
+        "102": {
+          "title": "File Count"
+        },
+        "103": {
+          "title": "Folder Count"
+        },
+        "104": {
+          "title": "Content Size"
+        },
+        "105": {
+          "title": "Content File Count"
+        },
+        "106": {
+          "title": "Content Folder Count"
+        },
+        "401": {
+          "title": "Exceeds Recommended Addon Size",
+          "errors": 1
+        }
+      },
+      "STRICT": {
+        "0": {
+          "title": "Test Failure",
+          "defaultMessage": "Found 100 errors for Strict Platform Info Generator (STRICT).",
+          "testCompleteFails": 1
+        },
+        "101": {
+          "title": "Entity Type UsesAMinecraft Runtime Identifier",
+          "defaultMessage": "Uses a runtime_identifier override",
+          "errors": 100
+        }
+      },
+      "TEXTURE": {
+        "1": {
+          "title": "Test Success",
+          "defaultMessage": "Texture Validation (TEXTURE) completed successfully",
+          "testCompleteSuccesses": 1
+        },
+        "101": {
+          "title": "Textures"
         }
       },
       "WORLDDATA": {
         "1": {
-          "defaultMessage": "Blocks",
+          "defaultMessage": "World Data Validation (WORLDDATA) completed successfully",
           "testCompleteSuccesses": 1
         },
-        "2": {
+        "121": {
+          "defaultMessage": "Blocks"
+        },
+        "122": {
           "defaultMessage": "Block Data"
         },
-        "3": {
+        "123": {
           "defaultMessage": "Command"
         },
-        "4": {
+        "124": {
           "defaultMessage": "Execute Sub Command"
         },
-        "5": {
+        "125": {
           "defaultMessage": "Level Dat"
         },
-        "6": {
+        "126": {
           "defaultMessage": "Level Dat Experiments"
         }
       }
@@ -274,742 +361,807 @@
   },
   "items": [
     {
-      "iTp": 7,
-      "gId": "PACKSIZE",
-      "gIx": 1,
-      "d": 156661328
+      "iTp": 0,
+      "gId": "CADDONIREQ",
+      "gIx": 0
     },
     {
-      "iTp": 7,
-      "gId": "PACKSIZE",
-      "gIx": 2,
-      "d": 25758
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/blocks/auto/barometer.block.json",
+      "d": "poke:barometer"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/blocks/auto/magnet.block.json",
+      "d": "poke:magnet"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/blocks/bulbs/beeulb.block.json",
+      "d": "poke:beeulb"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/blocks/limestone/limestone.block.json",
+      "d": "poke:limestone"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/blocks/ore/overworld/deepslate_onyx_ore.block.json",
+      "d": "poke:onyx"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/blocks/other/magic_8_ball.block.json",
+      "d": "poke:magic_8_ball"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/blocks/other/turnip.block.json",
+      "d": "poke:turnip"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/blocks/shadowstone/shadowstone.block.json",
+      "d": "poke:shadowstone"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/entities/bosses/dragon.behavior.json",
+      "d": "poke:dragon"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/entities/bosses/knightling.behavior.json",
+      "d": "poke:knightling"
     },
     {
-      "iTp": 7,
-      "gId": "PACKSIZE",
-      "gIx": 3,
-      "d": 2722
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/entities/bosses/listener.behavior.json",
+      "d": "poke:listener"
     },
     {
-      "iTp": 7,
-      "gId": "PACKSIZE",
-      "gIx": 4,
-      "d": 6227650
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/entities/bosses/necromancer.behavior.json",
+      "d": "poke:necromancer"
     },
     {
-      "iTp": 7,
-      "gId": "PACKSIZE",
-      "gIx": 5,
-      "d": 4670
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/entities/bosses/snowman.behavior.json",
+      "d": "poke:snowman"
     },
     {
-      "iTp": 7,
-      "gId": "PACKSIZE",
-      "gIx": 6,
-      "d": 354
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/entities/bosses/zombken.behavior.json",
+      "d": "poke:zombken"
     },
     {
-      "iTp": 2,
-      "gId": "CADDONREQ",
-      "gIx": 200,
-      "p": "/behavior_packs/pfe/manifest.json"
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/entities/hostile/piranha.behavior.json",
+      "d": "poke:piranha"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/8_ball.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/entities/hostile/striker.behavior.json",
+      "d": "poke:striker"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/alloy_forge_face.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/entities/misc/seat.behavior.json",
+      "d": "poke:seat"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/alloy_forge_side.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/entities/passive/duck.behavior.json",
+      "d": "poke:duck"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/alloy_forge_top.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/entities/passive/raccoon.behavior.json",
+      "d": "poke:raccoon"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/astral_bulb.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/entities/passive/rat.behavior.json",
+      "d": "poke:rat"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/auto_animated_block_breaker_face.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/entities/passive/shroomfin.behavior.json",
+      "d": "poke:shroomfin"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/auto_animated_cobble_generator_face.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/entities/passive/sporefish.behavior.json",
+      "d": "poke:sporefish"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/auto_animated_gear.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/entities/passive/yak.behavior.json",
+      "d": "poke:yak"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/auto_arrow.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/entities/trader/scrapper.behavior.json",
+      "d": "poke:scrapper"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/auto_block_breaker_face.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/entities/trader/shopkeeper.behavior.json",
+      "d": "poke:shopkeeper"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/auto_bottom.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/items/armor/cosmetic/n/goggles.item.json",
+      "d": "poke:goggles"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/auto_cobble_generator_face.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/items/armor/cosmetic/o/ferret.item.json",
+      "d": "poke:ferret"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/auto_cobble_generator_side.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/items/armor/cosmetic/o/fishbowl.item.json",
+      "d": "poke:fishbowl"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/auto_dirter_side.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/items/armor/cosmetic/o/ghost.item.json",
+      "d": "poke:ghost"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/auto_face.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/items/armor/cosmetic/o/halo.item.json",
+      "d": "poke:halo"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/auto_face_inactive.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/items/armor/cosmetic/o/horns.item.json",
+      "d": "poke:horns"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/auto_gear.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/items/armor/cosmetic/o/maxwell.item.json",
+      "d": "poke:maxwell"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/auto_grills.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/items/block_items/magic_8_ball.item.json",
+      "d": "poke:magic_8_ball"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/auto_lava_tank.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/items/block_items/turnip.item.json",
+      "d": "poke:turnip"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/auto_sand.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/items/food/baguette.item.json",
+      "d": "poke:baguette"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/auto_side.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/items/food/cheese.item.json",
+      "d": "poke:cheese"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/auto_top.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/items/food/eggnog.item.json",
+      "d": "poke:eggnog"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/auto_water_tank.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/items/food/toast.item.json",
+      "d": "poke:toast"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/beveled_limestone.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/items/ingredients/electric/antenna.item.json",
+      "d": "poke:antenna"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/bricks.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/items/ingredients/electric/plastic.item.json",
+      "d": "poke:plastic"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/cobalt_bulb.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/items/ingredients/electric/receiver.item.json",
+      "d": "poke:receiver"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/cobalt_golem_block.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/items/ingredients/electric/wire.item.json",
+      "d": "poke:wire"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/cobbled_limestone.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/items/misc/calender.item.json",
+      "d": "poke:calendar"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/cobbled_shadowstone.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/items/misc/identifier.item.json",
+      "d": "poke-pfe:identifier"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/cracked_bricks.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/items/old_items/shuriken.item.json",
+      "d": "poke:shuriken"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/cracked_honey_bricks.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/items/rings/blaze_ring.item.json",
+      "d": "poke:ring_2"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/cracked_limestone_bricks.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/items/rings/dragon_ring.item.json",
+      "d": "poke:ring_4"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/cube_cosmetic_attachable.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/items/rings/rain_ring.item.json",
+      "d": "poke:ring_1"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/cut_block.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/items/rings/warp_ring.item.json",
+      "d": "poke:ring_3"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/cut_nebula_block.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/items/tools/blazooka.item.json",
+      "d": "poke:blazooka"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/death_bulb.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/items/tools/electric/sundial.item.json",
+      "d": "poke:sundial"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/demonic_bulb.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/items/tools/haxel/onyx_haxel.item.json",
+      "d": "poke:haxel"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/furnace_golem_trophy.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/items/tools/jackhammer.item.json",
+      "d": "poke:jackhammer"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/galaxy_bulb.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/items/tools/purifier.item.json",
+      "d": "poke:purifier"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/godly_bulb.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/items/tools/upgraders/vanilla/budificator.item.json",
+      "d": "poke:budificator"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/golden_turnip_block.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/items/tools/windzooka.item.json",
+      "d": "poke:windzooka"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/hellish_bulb.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/items/tools/zombifier.item.json",
+      "d": "poke:zombifier"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/holy_bulb.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/blocks/auto/barometer.block.json",
+      "d": "poke:barometer"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/honey_bricks.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/blocks/auto/magnet.block.json",
+      "d": "poke:magnet"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/honey_tiles.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/blocks/bulbs/beeulb.block.json",
+      "d": "poke:beeulb"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/knightling_trophy.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/blocks/limestone/limestone.block.json",
+      "d": "poke:limestone"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/limestone_bulb.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/blocks/ore/overworld/deepslate_onyx_ore.block.json",
+      "d": "poke:onyx"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/limestone_tombstone.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/blocks/other/magic_8_ball.block.json",
+      "d": "poke:magic_8_ball"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/listener_antennas.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/blocks/other/turnip.block.json",
+      "d": "poke:turnip"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/magnet_block.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/blocks/shadowstone/shadowstone.block.json",
+      "d": "poke:shadowstone"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/medic_bulb.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/entities/bosses/dragon.behavior.json",
+      "d": "poke:dragon"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/molten_1_armor.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/entities/bosses/knightling.behavior.json",
+      "d": "poke:knightling"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/molten_2_armor.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/entities/bosses/listener.behavior.json",
+      "d": "poke:listener"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/molten_bulb.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/entities/bosses/necromancer.behavior.json",
+      "d": "poke:necromancer"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/nebula_bulb.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/entities/bosses/snowman.behavior.json",
+      "d": "poke:snowman"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/onyx_bulb.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/entities/bosses/zombken.behavior.json",
+      "d": "poke:zombken"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/polished_limestone.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/entities/hostile/piranha.behavior.json",
+      "d": "poke:piranha"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/radium_bulb.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/entities/hostile/striker.behavior.json",
+      "d": "poke:striker"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/shade_bulb.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/entities/misc/seat.behavior.json",
+      "d": "poke:seat"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/spell_crafter.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/entities/passive/duck.behavior.json",
+      "d": "poke:duck"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/sundial_1.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/entities/passive/raccoon.behavior.json",
+      "d": "poke:raccoon"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/sundial_2.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/entities/passive/rat.behavior.json",
+      "d": "poke:rat"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/sundial_3.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/entities/passive/shroomfin.behavior.json",
+      "d": "poke:shroomfin"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/sundial_4.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/entities/passive/sporefish.behavior.json",
+      "d": "poke:sporefish"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/sundial_5.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/entities/passive/yak.behavior.json",
+      "d": "poke:yak"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/sundial_6.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/entities/trader/scrapper.behavior.json",
+      "d": "poke:scrapper"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/sundial_7.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/entities/trader/shopkeeper.behavior.json",
+      "d": "poke:shopkeeper"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/sundial_8.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/items/armor/cosmetic/n/goggles.item.json",
+      "d": "poke:goggles"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/upgrader.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/items/armor/cosmetic/o/ferret.item.json",
+      "d": "poke:ferret"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 210,
-      "p": "/resource_packs/pfe/textures/poke/pfe/void_bulb.texture_set.json"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/items/armor/cosmetic/o/fishbowl.item.json",
+      "d": "poke:fishbowl"
     },
     {
       "iTp": 3,
-      "gId": "CADDONREQ",
-      "gIx": 101,
-      "d": "glyph_F0.png"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/items/armor/cosmetic/o/ghost.item.json",
+      "d": "poke:ghost"
     },
     {
       "iTp": 3,
-      "gId": "STRICT",
-      "gIx": 101,
-      "p": "/behavior_packs/pfe/entities/hostile/piranha.behavior.json",
-      "d": "minecraft:cod"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/items/armor/cosmetic/o/halo.item.json",
+      "d": "poke:halo"
     },
     {
       "iTp": 3,
-      "gId": "STRICT",
-      "gIx": 101,
-      "p": "/behavior_packs/pfe/entities/hostile/sculk_enderman.behavior.json",
-      "d": "minecraft:enderman"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/items/armor/cosmetic/o/horns.item.json",
+      "d": "poke:horns"
     },
     {
       "iTp": 3,
-      "gId": "STRICT",
-      "gIx": 101,
-      "p": "/behavior_packs/pfe/entities/hostile/woodspike_guardian.behavior.json",
-      "d": "minecraft:guardian"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/items/armor/cosmetic/o/maxwell.item.json",
+      "d": "poke:maxwell"
     },
     {
       "iTp": 3,
-      "gId": "STRICT",
-      "gIx": 101,
-      "p": "/behavior_packs/pfe/entities/misc/dummy_block.behavior.json",
-      "d": "minecraft:snowball"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/items/block_items/magic_8_ball.item.json",
+      "d": "poke:magic_8_ball"
     },
     {
       "iTp": 3,
-      "gId": "STRICT",
-      "gIx": 101,
-      "p": "/behavior_packs/pfe/entities/misc/mail_cart.behavior.json",
-      "d": "minecraft:chest_minecart"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/items/block_items/turnip.item.json",
+      "d": "poke:turnip"
     },
     {
       "iTp": 3,
-      "gId": "STRICT",
-      "gIx": 101,
-      "p": "/behavior_packs/pfe/entities/misc/seat.behavior.json",
-      "d": "minecraft:snowball"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/items/food/baguette.item.json",
+      "d": "poke:baguette"
     },
     {
       "iTp": 3,
-      "gId": "STRICT",
-      "gIx": 101,
-      "p": "/behavior_packs/pfe/entities/passive/brown_sporefish.behavior.json",
-      "d": "minecraft:cod"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/items/food/cheese.item.json",
+      "d": "poke:cheese"
     },
     {
       "iTp": 3,
-      "gId": "STRICT",
-      "gIx": 101,
-      "p": "/behavior_packs/pfe/entities/passive/duck.behavior.json",
-      "d": "minecraft:chicken"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/items/food/eggnog.item.json",
+      "d": "poke:eggnog"
     },
     {
       "iTp": 3,
-      "gId": "STRICT",
-      "gIx": 101,
-      "p": "/behavior_packs/pfe/entities/passive/gilded_allay.behavior.json",
-      "d": "minecraft:allay"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/items/food/toast.item.json",
+      "d": "poke:toast"
     },
     {
       "iTp": 3,
-      "gId": "STRICT",
-      "gIx": 101,
-      "p": "/behavior_packs/pfe/entities/passive/orange_squid.behavior.json",
-      "d": "minecraft:squid"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/items/ingredients/electric/antenna.item.json",
+      "d": "poke:antenna"
     },
     {
       "iTp": 3,
-      "gId": "STRICT",
-      "gIx": 101,
-      "p": "/behavior_packs/pfe/entities/passive/pink_squid.behavior.json",
-      "d": "minecraft:squid"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/items/ingredients/electric/plastic.item.json",
+      "d": "poke:plastic"
     },
     {
       "iTp": 3,
-      "gId": "STRICT",
-      "gIx": 101,
-      "p": "/behavior_packs/pfe/entities/passive/rat.behavior.json",
-      "d": "minecraft:allay"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/items/ingredients/electric/receiver.item.json",
+      "d": "poke:receiver"
     },
     {
       "iTp": 3,
-      "gId": "STRICT",
-      "gIx": 101,
-      "p": "/behavior_packs/pfe/entities/passive/red_sporefish.behavior.json",
-      "d": "minecraft:cod"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/items/ingredients/electric/wire.item.json",
+      "d": "poke:wire"
     },
     {
       "iTp": 3,
-      "gId": "STRICT",
-      "gIx": 101,
-      "p": "/behavior_packs/pfe/entities/passive/shallow_cod.behavior.json",
-      "d": "minecraft:cod"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/items/misc/calender.item.json",
+      "d": "poke:calendar"
     },
     {
       "iTp": 3,
-      "gId": "STRICT",
-      "gIx": 101,
-      "p": "/behavior_packs/pfe/entities/passive/shroomfin.behavior.json",
-      "d": "minecraft:dolphin"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/items/misc/identifier.item.json",
+      "d": "poke-pfe:identifier"
     },
     {
       "iTp": 3,
-      "gId": "STRICT",
-      "gIx": 101,
-      "p": "/behavior_packs/pfe/entities/passive/sporefish.behavior.json",
-      "d": "minecraft:cod"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/items/old_items/shuriken.item.json",
+      "d": "poke:shuriken"
     },
     {
       "iTp": 3,
-      "gId": "STRICT",
-      "gIx": 101,
-      "p": "/behavior_packs/pfe/entities/passive/warped_sporecat.behavior.json",
-      "d": "minecraft:cat"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/items/rings/blaze_ring.item.json",
+      "d": "poke:ring_2"
     },
     {
       "iTp": 3,
-      "gId": "STRICT",
-      "gIx": 101,
-      "p": "/behavior_packs/pfe/entities/passive/woods_goat.behavior.json",
-      "d": "minecraft:goat"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/items/rings/dragon_ring.item.json",
+      "d": "poke:ring_4"
     },
     {
       "iTp": 3,
-      "gId": "STRICT",
-      "gIx": 101,
-      "p": "/behavior_packs/pfe/entities/projectiles/blaze_ring_proj.behavior.json",
-      "d": "minecraft:fireball"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/items/rings/rain_ring.item.json",
+      "d": "poke:ring_1"
     },
     {
       "iTp": 3,
-      "gId": "STRICT",
-      "gIx": 101,
-      "p": "/behavior_packs/pfe/entities/projectiles/dragon_rign_proj.behavior.json",
-      "d": "minecraft:dragon_fireball"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/items/rings/warp_ring.item.json",
+      "d": "poke:ring_3"
     },
     {
       "iTp": 3,
-      "gId": "STRICT",
-      "gIx": 101,
-      "p": "/behavior_packs/pfe/entities/projectiles/duck_egg.behavior.json",
-      "d": "minecraft:egg"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/items/tools/blazooka.item.json",
+      "d": "poke:blazooka"
     },
     {
       "iTp": 3,
-      "gId": "STRICT",
-      "gIx": 101,
-      "p": "/behavior_packs/pfe/entities/projectiles/necromancer_staff_orb.behavior.json",
-      "d": "minecraft:arrow"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/items/tools/electric/sundial.item.json",
+      "d": "poke:sundial"
     },
     {
       "iTp": 3,
-      "gId": "STRICT",
-      "gIx": 101,
-      "p": "/behavior_packs/pfe/entities/projectiles/shade_ring_projectile.behavior.json",
-      "d": "minecraft:ender_pearl"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/items/tools/haxel/onyx_haxel.item.json",
+      "d": "poke:haxel"
     },
     {
       "iTp": 3,
-      "gId": "STRICT",
-      "gIx": 101,
-      "p": "/behavior_packs/pfe/entities/projectiles/shuriken.behavior.json",
-      "d": "minecraft:snowball"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/items/tools/jackhammer.item.json",
+      "d": "poke:jackhammer"
     },
     {
       "iTp": 3,
-      "gId": "STRICT",
-      "gIx": 101,
-      "p": "/behavior_packs/pfe/entities/projectiles/warp_ring_projectile.behavior.json",
-      "d": "minecraft:ender_pearl"
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/items/tools/purifier.item.json",
+      "d": "poke:purifier"
     },
     {
-      "iTp": 7,
-      "gId": "TEXTURE",
-      "gIx": 1,
-      "fs": {
-        "Attachable Resource Count": {
-          "Count": 233
-        },
-        "Texture References": {
-          "Count": 989
-        },
-        "Attachable References": {
-          "Count": 839
-        },
-        "Entity Resource Count": {
-          "Count": 67
-        },
-        "Entity References": {
-          "Count": 150
-        },
-        "Flipbook Texture Resource Count": {
-          "Count": 3
-        },
-        "Item Texture Resource Count": {
-          "Count": 722
-        },
-        "Terrain Texture Resource Count": {
-          "Count": 305
-        },
-        "File Count": {
-          "Count": 1380
-        },
-        "Unique Texture Handles (estimated)": {
-          "Count": 358
-        },
-        "Unique Texture Paths": {
-          "Count": 356
-        },
-        "Unique Particle Texture References": {
-          "Count": 25
-        },
-        "Unique Particle Texture Paths": {
-          "Count": 2
-        },
-        "Unique Particle Texture Vanilla Paths": {
-          "Count": 2
-        },
-        "Unique Entity Texture Paths": {
-          "Count": 114
-        },
-        "Unique Entity Texture Vanilla Paths": {
-          "Count": 28
-        },
-        "Unique Attachable Texture References": {
-          "Count": 241
-        },
-        "Unique Terrain Texture References": {
-          "Count": 305
-        },
-        "Unique Terrain Texture Paths": {
-          "Count": 185
-        },
-        "Unique Item Texture Paths": {
-          "Count": 721
-        },
-        "Unique Flipbook Texture References": {
-          "Count": 3
-        },
-        "Unique Flipbook Texture Paths": {
-          "Count": 3
-        }
-      }
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/items/tools/upgraders/vanilla/budificator.item.json",
+      "d": "poke:budificator"
     },
     {
-      "iTp": 2,
-      "gId": "MINENGINEVER",
-      "gIx": 605,
-      "p": "/behavior_packs/pfe/manifest.json",
-      "d": [
-        1,
-        21,
-        90
-      ]
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/items/tools/windzooka.item.json",
+      "d": "poke:windzooka"
     },
     {
-      "iTp": 2,
-      "gId": "MINENGINEVER",
-      "gIx": 614,
-      "p": "/resource_packs/pfe/manifest.json",
-      "d": [
-        1,
-        21,
-        90
-      ]
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/items/tools/zombifier.item.json",
+      "d": "poke:zombifier"
     },
     {
       "iTp": 3,
@@ -1185,271 +1337,6 @@
       "gIx": 112,
       "p": "/behavior_packs/pfe/entities/trader/shopkeeper.behavior.json",
       "d": "poke:shopkeeper"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 1,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/become_event_manager.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 2,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/become_event_manager.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 3,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/become_event_manager.mcfunction",
-      "fs": {
-        "tag": {
-          "Count": 1
-        }
-      }
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 4,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/become_event_manager.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 5,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/become_event_manager.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 6,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/become_event_manager.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 1,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/circuit_sword.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 2,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/circuit_sword.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 3,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/circuit_sword.mcfunction",
-      "fs": {
-        "execute": {
-          "Count": 1
-        },
-        "effect": {
-          "Count": 1
-        }
-      }
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 4,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/circuit_sword.mcfunction",
-      "fs": {
-        "summon": {
-          "Count": 1
-        }
-      }
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 5,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/circuit_sword.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 6,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/circuit_sword.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 1,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/death_scythe.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 2,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/death_scythe.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 3,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/death_scythe.mcfunction",
-      "fs": {
-        "effect": {
-          "Count": 3
-        }
-      }
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 4,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/death_scythe.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 5,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/death_scythe.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 6,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/death_scythe.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 1,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/nebula_scythe.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 2,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/nebula_scythe.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 3,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/nebula_scythe.mcfunction",
-      "fs": {
-        "effect": {
-          "Count": 3
-        }
-      }
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 4,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/nebula_scythe.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 5,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/nebula_scythe.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 6,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/nebula_scythe.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 1,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/void_scythe.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 2,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/void_scythe.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 3,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/void_scythe.mcfunction",
-      "fs": {
-        "effect": {
-          "Count": 3
-        }
-      }
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 4,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/void_scythe.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 5,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/void_scythe.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 6,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/void_scythe.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 1,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/xp_vial.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 2,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/xp_vial.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 3,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/xp_vial.mcfunction",
-      "fs": {
-        "execute": {
-          "Count": 3
-        }
-      }
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 4,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/xp_vial.mcfunction",
-      "fs": {
-        "clear": {
-          "Count": 1
-        },
-        "give": {
-          "Count": 1
-        },
-        "xp": {
-          "Count": 1
-        }
-      }
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 5,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/xp_vial.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 6,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/xp_vial.mcfunction"
     },
     {
       "iTp": 3,
@@ -1630,6 +1517,20 @@
       "iTp": 3,
       "gId": "CADDONIREQ",
       "gIx": 112,
+      "p": "/behavior_packs/pfe/items/tools/electric/sundial.item.json",
+      "d": "poke:sundial"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/behavior_packs/pfe/items/tools/haxel/onyx_haxel.item.json",
+      "d": "poke:haxel"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
       "p": "/behavior_packs/pfe/items/tools/jackhammer.item.json",
       "d": "poke:jackhammer"
     },
@@ -1639,6 +1540,13 @@
       "gIx": 112,
       "p": "/behavior_packs/pfe/items/tools/purifier.item.json",
       "d": "poke:purifier"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/behavior_packs/pfe/items/tools/upgraders/vanilla/budificator.item.json",
+      "d": "poke:budificator"
     },
     {
       "iTp": 3,
@@ -1658,61 +1566,2453 @@
       "iTp": 3,
       "gId": "CADDONIREQ",
       "gIx": 112,
-      "p": "/behavior_packs/pfe/items/tools/electric/sundial.item.json",
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/blocks/auto/barometer.block.json",
+      "d": "poke:barometer"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/blocks/auto/magnet.block.json",
+      "d": "poke:magnet"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/blocks/bulbs/beeulb.block.json",
+      "d": "poke:beeulb"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/blocks/limestone/limestone.block.json",
+      "d": "poke:limestone"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/blocks/ore/overworld/deepslate_onyx_ore.block.json",
+      "d": "poke:onyx"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/blocks/other/magic_8_ball.block.json",
+      "d": "poke:magic_8_ball"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/blocks/other/turnip.block.json",
+      "d": "poke:turnip"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/blocks/shadowstone/shadowstone.block.json",
+      "d": "poke:shadowstone"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/entities/bosses/dragon.behavior.json",
+      "d": "poke:dragon"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/entities/bosses/knightling.behavior.json",
+      "d": "poke:knightling"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/entities/bosses/listener.behavior.json",
+      "d": "poke:listener"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/entities/bosses/necromancer.behavior.json",
+      "d": "poke:necromancer"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/entities/bosses/snowman.behavior.json",
+      "d": "poke:snowman"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/entities/bosses/zombken.behavior.json",
+      "d": "poke:zombken"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/entities/hostile/piranha.behavior.json",
+      "d": "poke:piranha"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/entities/hostile/striker.behavior.json",
+      "d": "poke:striker"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/entities/misc/seat.behavior.json",
+      "d": "poke:seat"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/entities/passive/duck.behavior.json",
+      "d": "poke:duck"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/entities/passive/raccoon.behavior.json",
+      "d": "poke:raccoon"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/entities/passive/rat.behavior.json",
+      "d": "poke:rat"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/entities/passive/shroomfin.behavior.json",
+      "d": "poke:shroomfin"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/entities/passive/sporefish.behavior.json",
+      "d": "poke:sporefish"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/entities/passive/yak.behavior.json",
+      "d": "poke:yak"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/entities/trader/scrapper.behavior.json",
+      "d": "poke:scrapper"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/entities/trader/shopkeeper.behavior.json",
+      "d": "poke:shopkeeper"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/items/armor/cosmetic/n/goggles.item.json",
+      "d": "poke:goggles"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/items/armor/cosmetic/o/ferret.item.json",
+      "d": "poke:ferret"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/items/armor/cosmetic/o/fishbowl.item.json",
+      "d": "poke:fishbowl"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/items/armor/cosmetic/o/ghost.item.json",
+      "d": "poke:ghost"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/items/armor/cosmetic/o/halo.item.json",
+      "d": "poke:halo"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/items/armor/cosmetic/o/horns.item.json",
+      "d": "poke:horns"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/items/armor/cosmetic/o/maxwell.item.json",
+      "d": "poke:maxwell"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/items/block_items/magic_8_ball.item.json",
+      "d": "poke:magic_8_ball"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/items/block_items/turnip.item.json",
+      "d": "poke:turnip"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/items/food/baguette.item.json",
+      "d": "poke:baguette"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/items/food/cheese.item.json",
+      "d": "poke:cheese"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/items/food/eggnog.item.json",
+      "d": "poke:eggnog"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/items/food/toast.item.json",
+      "d": "poke:toast"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/items/ingredients/electric/antenna.item.json",
+      "d": "poke:antenna"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/items/ingredients/electric/plastic.item.json",
+      "d": "poke:plastic"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/items/ingredients/electric/receiver.item.json",
+      "d": "poke:receiver"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/items/ingredients/electric/wire.item.json",
+      "d": "poke:wire"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/items/misc/calender.item.json",
+      "d": "poke:calendar"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/items/misc/identifier.item.json",
+      "d": "poke-pfe:identifier"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/items/old_items/shuriken.item.json",
+      "d": "poke:shuriken"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/items/rings/blaze_ring.item.json",
+      "d": "poke:ring_2"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/items/rings/dragon_ring.item.json",
+      "d": "poke:ring_4"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/items/rings/rain_ring.item.json",
+      "d": "poke:ring_1"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/items/rings/warp_ring.item.json",
+      "d": "poke:ring_3"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/items/tools/blazooka.item.json",
+      "d": "poke:blazooka"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/items/tools/electric/sundial.item.json",
       "d": "poke:sundial"
     },
     {
       "iTp": 3,
       "gId": "CADDONIREQ",
       "gIx": 112,
-      "p": "/behavior_packs/pfe/items/tools/haxel/onyx_haxel.item.json",
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/items/tools/haxel/onyx_haxel.item.json",
       "d": "poke:haxel"
     },
     {
       "iTp": 3,
       "gId": "CADDONIREQ",
       "gIx": 112,
-      "p": "/behavior_packs/pfe/items/tools/upgraders/vanilla/budificator.item.json",
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/items/tools/jackhammer.item.json",
+      "d": "poke:jackhammer"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/items/tools/purifier.item.json",
+      "d": "poke:purifier"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/items/tools/upgraders/vanilla/budificator.item.json",
       "d": "poke:budificator"
     },
     {
-      "iTp": 0,
-      "gId": "PACKSIZE",
-      "gIx": 1
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/items/tools/windzooka.item.json",
+      "d": "poke:windzooka"
     },
     {
-      "iTp": 1,
+      "iTp": 3,
+      "gId": "CADDONIREQ",
+      "gIx": 112,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/items/tools/zombifier.item.json",
+      "d": "poke:zombifier"
+    },
+    {
+      "iTp": 0,
       "gId": "CADDONREQ",
       "gIx": 0
     },
     {
+      "iTp": 3,
+      "gId": "CADDONREQ",
+      "gIx": 101,
+      "d": "glyph_F0.png"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONREQ",
+      "gIx": 160,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/manifest.json"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONREQ",
+      "gIx": 160,
+      "p": "/behavior_packs/pfe/manifest.json"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONREQ",
+      "gIx": 160,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/manifest.json"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONREQ",
+      "gIx": 161,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_rp.mcpack#/manifest.json"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONREQ",
+      "gIx": 161,
+      "p": "/pfe.mcaddon#/pfe_rp.mcpack#/manifest.json"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONREQ",
+      "gIx": 161,
+      "p": "/resource_packs/pfe/manifest.json"
+    },
+    {
+      "iTp": 2,
+      "gId": "CADDONREQ",
+      "gIx": 200,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/manifest.json"
+    },
+    {
       "iTp": 1,
-      "gId": "STRICT",
-      "gIx": 0
-    },
-    {
-      "iTp": 0,
-      "gId": "TEXTURE",
-      "gIx": 1
-    },
-    {
-      "iTp": 0,
       "gId": "MINENGINEVER",
       "gIx": 1
     },
     {
+      "iTp": 2,
+      "gId": "MINENGINEVER",
+      "gIx": 605,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/manifest.json",
+      "d": [
+        1,
+        21,
+        100
+      ]
+    },
+    {
+      "iTp": 2,
+      "gId": "MINENGINEVER",
+      "gIx": 605,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/manifest.json",
+      "d": [
+        1,
+        21,
+        90
+      ]
+    },
+    {
+      "iTp": 2,
+      "gId": "MINENGINEVER",
+      "gIx": 605,
+      "p": "/behavior_packs/pfe/manifest.json",
+      "d": [
+        1,
+        21,
+        100
+      ]
+    },
+    {
+      "iTp": 2,
+      "gId": "MINENGINEVER",
+      "gIx": 605,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/manifest.json",
+      "d": [
+        1,
+        21,
+        100
+      ]
+    },
+    {
+      "iTp": 2,
+      "gId": "MINENGINEVER",
+      "gIx": 614,
+      "p": "/Minpfe.zip#/pfe_rp.mcpack#/manifest.json",
+      "d": [
+        1,
+        21,
+        90
+      ]
+    },
+    {
+      "iTp": 2,
+      "gId": "MINENGINEVER",
+      "gIx": 614,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_rp.mcpack#/manifest.json",
+      "d": [
+        1,
+        21,
+        90
+      ]
+    },
+    {
+      "iTp": 2,
+      "gId": "MINENGINEVER",
+      "gIx": 614,
+      "p": "/pfe.mcaddon#/pfe_rp.mcpack#/manifest.json",
+      "d": [
+        1,
+        21,
+        90
+      ]
+    },
+    {
+      "iTp": 2,
+      "gId": "MINENGINEVER",
+      "gIx": 614,
+      "p": "/resource_packs/pfe/manifest.json",
+      "d": [
+        1,
+        21,
+        100
+      ]
+    },
+    {
       "iTp": 0,
-      "gId": "WORLDDATA",
-      "gIx": 1,
-      "m": "World Data Validation (WORLDDATA) completed successfully"
+      "gId": "PACKSIZE",
+      "gIx": 0
+    },
+    {
+      "iTp": 7,
+      "gId": "PACKSIZE",
+      "gIx": 101,
+      "d": 29074953
+    },
+    {
+      "iTp": 7,
+      "gId": "PACKSIZE",
+      "gIx": 102,
+      "d": 18749
+    },
+    {
+      "iTp": 7,
+      "gId": "PACKSIZE",
+      "gIx": 103,
+      "d": 1432
+    },
+    {
+      "iTp": 7,
+      "gId": "PACKSIZE",
+      "gIx": 104,
+      "d": 26810706
+    },
+    {
+      "iTp": 7,
+      "gId": "PACKSIZE",
+      "gIx": 105,
+      "d": 18682
+    },
+    {
+      "iTp": 7,
+      "gId": "PACKSIZE",
+      "gIx": 106,
+      "d": 1418
+    },
+    {
+      "iTp": 3,
+      "gId": "PACKSIZE",
+      "gIx": 401,
+      "d": 26810706
+    },
+    {
+      "iTp": 0,
+      "gId": "STRICT",
+      "gIx": 0
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/entities/hostile/piranha.behavior.json",
+      "d": "minecraft:cod"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/entities/hostile/sculk_enderman.behavior.json",
+      "d": "minecraft:enderman"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/entities/hostile/woodspike_guardian.behavior.json",
+      "d": "minecraft:guardian"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/entities/misc/dummy_block.behavior.json",
+      "d": "minecraft:snowball"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/entities/misc/mail_cart.behavior.json",
+      "d": "minecraft:chest_minecart"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/entities/misc/seat.behavior.json",
+      "d": "minecraft:snowball"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/entities/passive/brown_sporefish.behavior.json",
+      "d": "minecraft:cod"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/entities/passive/duck.behavior.json",
+      "d": "minecraft:chicken"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/entities/passive/gilded_allay.behavior.json",
+      "d": "minecraft:allay"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/entities/passive/orange_squid.behavior.json",
+      "d": "minecraft:squid"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/entities/passive/pink_squid.behavior.json",
+      "d": "minecraft:squid"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/entities/passive/rat.behavior.json",
+      "d": "minecraft:allay"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/entities/passive/red_sporefish.behavior.json",
+      "d": "minecraft:cod"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/entities/passive/shallow_cod.behavior.json",
+      "d": "minecraft:cod"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/entities/passive/shroomfin.behavior.json",
+      "d": "minecraft:dolphin"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/entities/passive/sporefish.behavior.json",
+      "d": "minecraft:cod"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/entities/passive/warped_sporecat.behavior.json",
+      "d": "minecraft:cat"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/entities/passive/woods_goat.behavior.json",
+      "d": "minecraft:goat"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/entities/projectiles/blaze_ring_proj.behavior.json",
+      "d": "minecraft:fireball"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/entities/projectiles/dragon_rign_proj.behavior.json",
+      "d": "minecraft:dragon_fireball"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/entities/projectiles/duck_egg.behavior.json",
+      "d": "minecraft:egg"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/entities/projectiles/necromancer_staff_orb.behavior.json",
+      "d": "minecraft:arrow"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/entities/projectiles/shade_ring_projectile.behavior.json",
+      "d": "minecraft:ender_pearl"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/entities/projectiles/shuriken.behavior.json",
+      "d": "minecraft:snowball"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/entities/projectiles/warp_ring_projectile.behavior.json",
+      "d": "minecraft:ender_pearl"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/entities/hostile/piranha.behavior.json",
+      "d": "minecraft:cod"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/entities/hostile/sculk_enderman.behavior.json",
+      "d": "minecraft:enderman"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/entities/hostile/woodspike_guardian.behavior.json",
+      "d": "minecraft:guardian"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/entities/misc/dummy_block.behavior.json",
+      "d": "minecraft:snowball"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/entities/misc/mail_cart.behavior.json",
+      "d": "minecraft:chest_minecart"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/entities/misc/seat.behavior.json",
+      "d": "minecraft:snowball"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/entities/passive/brown_sporefish.behavior.json",
+      "d": "minecraft:cod"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/entities/passive/duck.behavior.json",
+      "d": "minecraft:chicken"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/entities/passive/gilded_allay.behavior.json",
+      "d": "minecraft:allay"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/entities/passive/orange_squid.behavior.json",
+      "d": "minecraft:squid"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/entities/passive/pink_squid.behavior.json",
+      "d": "minecraft:squid"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/entities/passive/rat.behavior.json",
+      "d": "minecraft:allay"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/entities/passive/red_sporefish.behavior.json",
+      "d": "minecraft:cod"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/entities/passive/shallow_cod.behavior.json",
+      "d": "minecraft:cod"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/entities/passive/shroomfin.behavior.json",
+      "d": "minecraft:dolphin"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/entities/passive/sporefish.behavior.json",
+      "d": "minecraft:cod"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/entities/passive/warped_sporecat.behavior.json",
+      "d": "minecraft:cat"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/entities/passive/woods_goat.behavior.json",
+      "d": "minecraft:goat"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/entities/projectiles/blaze_ring_proj.behavior.json",
+      "d": "minecraft:fireball"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/entities/projectiles/dragon_rign_proj.behavior.json",
+      "d": "minecraft:dragon_fireball"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/entities/projectiles/duck_egg.behavior.json",
+      "d": "minecraft:egg"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/entities/projectiles/necromancer_staff_orb.behavior.json",
+      "d": "minecraft:arrow"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/entities/projectiles/shade_ring_projectile.behavior.json",
+      "d": "minecraft:ender_pearl"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/entities/projectiles/shuriken.behavior.json",
+      "d": "minecraft:snowball"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/entities/projectiles/warp_ring_projectile.behavior.json",
+      "d": "minecraft:ender_pearl"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/behavior_packs/pfe/entities/hostile/piranha.behavior.json",
+      "d": "minecraft:cod"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/behavior_packs/pfe/entities/hostile/sculk_enderman.behavior.json",
+      "d": "minecraft:enderman"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/behavior_packs/pfe/entities/hostile/woodspike_guardian.behavior.json",
+      "d": "minecraft:guardian"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/behavior_packs/pfe/entities/misc/dummy_block.behavior.json",
+      "d": "minecraft:snowball"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/behavior_packs/pfe/entities/misc/mail_cart.behavior.json",
+      "d": "minecraft:chest_minecart"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/behavior_packs/pfe/entities/misc/seat.behavior.json",
+      "d": "minecraft:snowball"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/behavior_packs/pfe/entities/passive/brown_sporefish.behavior.json",
+      "d": "minecraft:cod"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/behavior_packs/pfe/entities/passive/duck.behavior.json",
+      "d": "minecraft:chicken"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/behavior_packs/pfe/entities/passive/gilded_allay.behavior.json",
+      "d": "minecraft:allay"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/behavior_packs/pfe/entities/passive/orange_squid.behavior.json",
+      "d": "minecraft:squid"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/behavior_packs/pfe/entities/passive/pink_squid.behavior.json",
+      "d": "minecraft:squid"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/behavior_packs/pfe/entities/passive/rat.behavior.json",
+      "d": "minecraft:allay"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/behavior_packs/pfe/entities/passive/red_sporefish.behavior.json",
+      "d": "minecraft:cod"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/behavior_packs/pfe/entities/passive/shallow_cod.behavior.json",
+      "d": "minecraft:cod"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/behavior_packs/pfe/entities/passive/shroomfin.behavior.json",
+      "d": "minecraft:dolphin"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/behavior_packs/pfe/entities/passive/sporefish.behavior.json",
+      "d": "minecraft:cod"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/behavior_packs/pfe/entities/passive/warped_sporecat.behavior.json",
+      "d": "minecraft:cat"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/behavior_packs/pfe/entities/passive/woods_goat.behavior.json",
+      "d": "minecraft:goat"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/behavior_packs/pfe/entities/projectiles/blaze_ring_proj.behavior.json",
+      "d": "minecraft:fireball"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/behavior_packs/pfe/entities/projectiles/dragon_rign_proj.behavior.json",
+      "d": "minecraft:dragon_fireball"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/behavior_packs/pfe/entities/projectiles/duck_egg.behavior.json",
+      "d": "minecraft:egg"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/behavior_packs/pfe/entities/projectiles/necromancer_staff_orb.behavior.json",
+      "d": "minecraft:arrow"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/behavior_packs/pfe/entities/projectiles/shade_ring_projectile.behavior.json",
+      "d": "minecraft:ender_pearl"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/behavior_packs/pfe/entities/projectiles/shuriken.behavior.json",
+      "d": "minecraft:snowball"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/behavior_packs/pfe/entities/projectiles/warp_ring_projectile.behavior.json",
+      "d": "minecraft:ender_pearl"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/entities/hostile/piranha.behavior.json",
+      "d": "minecraft:cod"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/entities/hostile/sculk_enderman.behavior.json",
+      "d": "minecraft:enderman"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/entities/hostile/woodspike_guardian.behavior.json",
+      "d": "minecraft:guardian"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/entities/misc/dummy_block.behavior.json",
+      "d": "minecraft:snowball"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/entities/misc/mail_cart.behavior.json",
+      "d": "minecraft:chest_minecart"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/entities/misc/seat.behavior.json",
+      "d": "minecraft:snowball"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/entities/passive/brown_sporefish.behavior.json",
+      "d": "minecraft:cod"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/entities/passive/duck.behavior.json",
+      "d": "minecraft:chicken"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/entities/passive/gilded_allay.behavior.json",
+      "d": "minecraft:allay"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/entities/passive/orange_squid.behavior.json",
+      "d": "minecraft:squid"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/entities/passive/pink_squid.behavior.json",
+      "d": "minecraft:squid"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/entities/passive/rat.behavior.json",
+      "d": "minecraft:allay"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/entities/passive/red_sporefish.behavior.json",
+      "d": "minecraft:cod"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/entities/passive/shallow_cod.behavior.json",
+      "d": "minecraft:cod"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/entities/passive/shroomfin.behavior.json",
+      "d": "minecraft:dolphin"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/entities/passive/sporefish.behavior.json",
+      "d": "minecraft:cod"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/entities/passive/warped_sporecat.behavior.json",
+      "d": "minecraft:cat"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/entities/passive/woods_goat.behavior.json",
+      "d": "minecraft:goat"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/entities/projectiles/blaze_ring_proj.behavior.json",
+      "d": "minecraft:fireball"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/entities/projectiles/dragon_rign_proj.behavior.json",
+      "d": "minecraft:dragon_fireball"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/entities/projectiles/duck_egg.behavior.json",
+      "d": "minecraft:egg"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/entities/projectiles/necromancer_staff_orb.behavior.json",
+      "d": "minecraft:arrow"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/entities/projectiles/shade_ring_projectile.behavior.json",
+      "d": "minecraft:ender_pearl"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/entities/projectiles/shuriken.behavior.json",
+      "d": "minecraft:snowball"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/entities/projectiles/warp_ring_projectile.behavior.json",
+      "d": "minecraft:ender_pearl"
     },
     {
       "iTp": 1,
-      "gId": "CADDONIREQ",
-      "gIx": 0
+      "gId": "TEXTURE",
+      "gIx": 1
+    },
+    {
+      "iTp": 7,
+      "gId": "TEXTURE",
+      "gIx": 101,
+      "fs": {
+        "Attachable Resource Count": {
+          "Count": 932
+        },
+        "Texture References": {
+          "Count": 3956
+        },
+        "Attachable References": {
+          "Count": 3356
+        },
+        "Entity Resource Count": {
+          "Count": 268
+        },
+        "Entity References": {
+          "Count": 600
+        },
+        "Flipbook Texture Resource Count": {
+          "Count": 12
+        },
+        "Item Texture Resource Count": {
+          "Count": 2888
+        },
+        "Terrain Texture Resource Count": {
+          "Count": 1220
+        },
+        "File Count": {
+          "Count": 5527
+        },
+        "Block Resource Count": {
+          "Count": 17
+        },
+        "Unique Texture Handles (estimated)": {
+          "Count": 358
+        },
+        "Unique Texture Paths": {
+          "Count": 374
+        },
+        "Unique Particle Texture References": {
+          "Count": 25
+        },
+        "Unique Particle Texture Paths": {
+          "Count": 2
+        },
+        "Unique Particle Texture Vanilla Paths": {
+          "Count": 2
+        },
+        "Unique Entity Texture Paths": {
+          "Count": 114
+        },
+        "Unique Entity Texture Vanilla Paths": {
+          "Count": 28
+        },
+        "Unique Attachable Texture References": {
+          "Count": 241
+        },
+        "Unique Terrain Texture References": {
+          "Count": 305
+        },
+        "Unique Terrain Texture Paths": {
+          "Count": 185
+        },
+        "Unique Item Texture Paths": {
+          "Count": 721
+        },
+        "Unique Flipbook Texture References": {
+          "Count": 3
+        },
+        "Unique Flipbook Texture Paths": {
+          "Count": 3
+        },
+        "Unique Block Texture References": {
+          "Count": 17
+        },
+        "Unique Block Texture Paths": {
+          "Count": 17
+        }
+      }
+    },
+    {
+      "iTp": 1,
+      "gId": "WORLDDATA",
+      "gIx": 1
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 121,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/functions/poke/pfe/become_event_manager.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 121,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/functions/poke/pfe/circuit_sword.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 121,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/functions/poke/pfe/death_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 121,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/functions/poke/pfe/nebula_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 121,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/functions/poke/pfe/void_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 121,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/functions/poke/pfe/xp_vial.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 121,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/become_event_manager.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 121,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/circuit_sword.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 121,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/death_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 121,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/nebula_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 121,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/void_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 121,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/xp_vial.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 121,
+      "p": "/behavior_packs/pfe/functions/poke/pfe/become_event_manager.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 121,
+      "p": "/behavior_packs/pfe/functions/poke/pfe/circuit_sword.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 121,
+      "p": "/behavior_packs/pfe/functions/poke/pfe/death_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 121,
+      "p": "/behavior_packs/pfe/functions/poke/pfe/nebula_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 121,
+      "p": "/behavior_packs/pfe/functions/poke/pfe/void_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 121,
+      "p": "/behavior_packs/pfe/functions/poke/pfe/xp_vial.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 121,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/become_event_manager.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 121,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/circuit_sword.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 121,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/death_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 121,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/nebula_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 121,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/void_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 121,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/xp_vial.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 122,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/functions/poke/pfe/become_event_manager.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 122,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/functions/poke/pfe/circuit_sword.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 122,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/functions/poke/pfe/death_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 122,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/functions/poke/pfe/nebula_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 122,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/functions/poke/pfe/void_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 122,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/functions/poke/pfe/xp_vial.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 122,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/become_event_manager.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 122,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/circuit_sword.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 122,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/death_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 122,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/nebula_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 122,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/void_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 122,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/xp_vial.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 122,
+      "p": "/behavior_packs/pfe/functions/poke/pfe/become_event_manager.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 122,
+      "p": "/behavior_packs/pfe/functions/poke/pfe/circuit_sword.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 122,
+      "p": "/behavior_packs/pfe/functions/poke/pfe/death_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 122,
+      "p": "/behavior_packs/pfe/functions/poke/pfe/nebula_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 122,
+      "p": "/behavior_packs/pfe/functions/poke/pfe/void_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 122,
+      "p": "/behavior_packs/pfe/functions/poke/pfe/xp_vial.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 122,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/become_event_manager.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 122,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/circuit_sword.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 122,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/death_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 122,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/nebula_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 122,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/void_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 122,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/xp_vial.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 123,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/functions/poke/pfe/become_event_manager.mcfunction",
+      "fs": {
+        "tag": {
+          "Count": 1
+        }
+      }
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 123,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/functions/poke/pfe/circuit_sword.mcfunction",
+      "fs": {
+        "execute": {
+          "Count": 1
+        },
+        "effect": {
+          "Count": 1
+        }
+      }
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 123,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/functions/poke/pfe/death_scythe.mcfunction",
+      "fs": {
+        "effect": {
+          "Count": 3
+        }
+      }
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 123,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/functions/poke/pfe/nebula_scythe.mcfunction",
+      "fs": {
+        "effect": {
+          "Count": 3
+        }
+      }
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 123,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/functions/poke/pfe/void_scythe.mcfunction",
+      "fs": {
+        "effect": {
+          "Count": 3
+        }
+      }
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 123,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/functions/poke/pfe/xp_vial.mcfunction",
+      "fs": {
+        "execute": {
+          "Count": 3
+        }
+      }
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 123,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/become_event_manager.mcfunction",
+      "fs": {
+        "tag": {
+          "Count": 1
+        }
+      }
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 123,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/circuit_sword.mcfunction",
+      "fs": {
+        "execute": {
+          "Count": 1
+        },
+        "effect": {
+          "Count": 1
+        }
+      }
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 123,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/death_scythe.mcfunction",
+      "fs": {
+        "effect": {
+          "Count": 3
+        }
+      }
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 123,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/nebula_scythe.mcfunction",
+      "fs": {
+        "effect": {
+          "Count": 3
+        }
+      }
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 123,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/void_scythe.mcfunction",
+      "fs": {
+        "effect": {
+          "Count": 3
+        }
+      }
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 123,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/xp_vial.mcfunction",
+      "fs": {
+        "execute": {
+          "Count": 3
+        }
+      }
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 123,
+      "p": "/behavior_packs/pfe/functions/poke/pfe/become_event_manager.mcfunction",
+      "fs": {
+        "tag": {
+          "Count": 1
+        }
+      }
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 123,
+      "p": "/behavior_packs/pfe/functions/poke/pfe/circuit_sword.mcfunction",
+      "fs": {
+        "execute": {
+          "Count": 1
+        },
+        "effect": {
+          "Count": 1
+        }
+      }
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 123,
+      "p": "/behavior_packs/pfe/functions/poke/pfe/death_scythe.mcfunction",
+      "fs": {
+        "effect": {
+          "Count": 3
+        }
+      }
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 123,
+      "p": "/behavior_packs/pfe/functions/poke/pfe/nebula_scythe.mcfunction",
+      "fs": {
+        "effect": {
+          "Count": 3
+        }
+      }
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 123,
+      "p": "/behavior_packs/pfe/functions/poke/pfe/void_scythe.mcfunction",
+      "fs": {
+        "effect": {
+          "Count": 3
+        }
+      }
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 123,
+      "p": "/behavior_packs/pfe/functions/poke/pfe/xp_vial.mcfunction",
+      "fs": {
+        "execute": {
+          "Count": 3
+        }
+      }
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 123,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/become_event_manager.mcfunction",
+      "fs": {
+        "tag": {
+          "Count": 1
+        }
+      }
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 123,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/circuit_sword.mcfunction",
+      "fs": {
+        "execute": {
+          "Count": 1
+        },
+        "effect": {
+          "Count": 1
+        }
+      }
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 123,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/death_scythe.mcfunction",
+      "fs": {
+        "effect": {
+          "Count": 3
+        }
+      }
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 123,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/nebula_scythe.mcfunction",
+      "fs": {
+        "effect": {
+          "Count": 3
+        }
+      }
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 123,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/void_scythe.mcfunction",
+      "fs": {
+        "effect": {
+          "Count": 3
+        }
+      }
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 123,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/xp_vial.mcfunction",
+      "fs": {
+        "execute": {
+          "Count": 3
+        }
+      }
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 124,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/functions/poke/pfe/become_event_manager.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 124,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/functions/poke/pfe/circuit_sword.mcfunction",
+      "fs": {
+        "summon": {
+          "Count": 1
+        }
+      }
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 124,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/functions/poke/pfe/death_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 124,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/functions/poke/pfe/nebula_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 124,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/functions/poke/pfe/void_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 124,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/functions/poke/pfe/xp_vial.mcfunction",
+      "fs": {
+        "clear": {
+          "Count": 1
+        },
+        "give": {
+          "Count": 1
+        },
+        "xp": {
+          "Count": 1
+        }
+      }
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 124,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/become_event_manager.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 124,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/circuit_sword.mcfunction",
+      "fs": {
+        "summon": {
+          "Count": 1
+        }
+      }
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 124,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/death_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 124,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/nebula_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 124,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/void_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 124,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/xp_vial.mcfunction",
+      "fs": {
+        "clear": {
+          "Count": 1
+        },
+        "give": {
+          "Count": 1
+        },
+        "xp": {
+          "Count": 1
+        }
+      }
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 124,
+      "p": "/behavior_packs/pfe/functions/poke/pfe/become_event_manager.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 124,
+      "p": "/behavior_packs/pfe/functions/poke/pfe/circuit_sword.mcfunction",
+      "fs": {
+        "summon": {
+          "Count": 1
+        }
+      }
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 124,
+      "p": "/behavior_packs/pfe/functions/poke/pfe/death_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 124,
+      "p": "/behavior_packs/pfe/functions/poke/pfe/nebula_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 124,
+      "p": "/behavior_packs/pfe/functions/poke/pfe/void_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 124,
+      "p": "/behavior_packs/pfe/functions/poke/pfe/xp_vial.mcfunction",
+      "fs": {
+        "clear": {
+          "Count": 1
+        },
+        "give": {
+          "Count": 1
+        },
+        "xp": {
+          "Count": 1
+        }
+      }
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 124,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/become_event_manager.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 124,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/circuit_sword.mcfunction",
+      "fs": {
+        "summon": {
+          "Count": 1
+        }
+      }
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 124,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/death_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 124,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/nebula_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 124,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/void_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 124,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/xp_vial.mcfunction",
+      "fs": {
+        "clear": {
+          "Count": 1
+        },
+        "give": {
+          "Count": 1
+        },
+        "xp": {
+          "Count": 1
+        }
+      }
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 125,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/functions/poke/pfe/become_event_manager.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 125,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/functions/poke/pfe/circuit_sword.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 125,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/functions/poke/pfe/death_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 125,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/functions/poke/pfe/nebula_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 125,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/functions/poke/pfe/void_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 125,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/functions/poke/pfe/xp_vial.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 125,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/become_event_manager.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 125,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/circuit_sword.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 125,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/death_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 125,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/nebula_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 125,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/void_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 125,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/xp_vial.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 125,
+      "p": "/behavior_packs/pfe/functions/poke/pfe/become_event_manager.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 125,
+      "p": "/behavior_packs/pfe/functions/poke/pfe/circuit_sword.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 125,
+      "p": "/behavior_packs/pfe/functions/poke/pfe/death_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 125,
+      "p": "/behavior_packs/pfe/functions/poke/pfe/nebula_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 125,
+      "p": "/behavior_packs/pfe/functions/poke/pfe/void_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 125,
+      "p": "/behavior_packs/pfe/functions/poke/pfe/xp_vial.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 125,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/become_event_manager.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 125,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/circuit_sword.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 125,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/death_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 125,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/nebula_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 125,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/void_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 125,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/xp_vial.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 126,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/functions/poke/pfe/become_event_manager.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 126,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/functions/poke/pfe/circuit_sword.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 126,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/functions/poke/pfe/death_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 126,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/functions/poke/pfe/nebula_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 126,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/functions/poke/pfe/void_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 126,
+      "p": "/Minpfe.zip#/pfe_bp.mcpack#/functions/poke/pfe/xp_vial.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 126,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/become_event_manager.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 126,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/circuit_sword.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 126,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/death_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 126,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/nebula_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 126,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/void_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 126,
+      "p": "/PFEv1_2_99.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/xp_vial.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 126,
+      "p": "/behavior_packs/pfe/functions/poke/pfe/become_event_manager.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 126,
+      "p": "/behavior_packs/pfe/functions/poke/pfe/circuit_sword.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 126,
+      "p": "/behavior_packs/pfe/functions/poke/pfe/death_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 126,
+      "p": "/behavior_packs/pfe/functions/poke/pfe/nebula_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 126,
+      "p": "/behavior_packs/pfe/functions/poke/pfe/void_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 126,
+      "p": "/behavior_packs/pfe/functions/poke/pfe/xp_vial.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 126,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/become_event_manager.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 126,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/circuit_sword.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 126,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/death_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 126,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/nebula_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 126,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/void_scythe.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 126,
+      "p": "/pfe.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/xp_vial.mcfunction"
     }
   ],
   "generatorName": "Minecraft Creator Tools",
   "suite": 2,
-  "generatorVersion": "0.11.0"
+  "generatorVersion": "0.14.1"
 }

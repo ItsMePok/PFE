@@ -3180,26 +3180,16 @@ var PFEDefaultBossEventSettings = {
 function PFEBossEventUIMainMenu(player) {
   let settings = JSON.parse(world2.getDynamicProperty(PFEBossEventConfigName).toString());
   let EnabledBosses = 0;
-  if (settings.zombken.e)
-    EnabledBosses++;
-  if (settings.superStriker.e)
-    EnabledBosses++;
-  if (settings.knightling.e)
-    EnabledBosses++;
-  if (settings.miniDemonicAllay.e)
-    EnabledBosses++;
-  if (settings.necromancer.e)
-    EnabledBosses++;
-  if (settings.snowman.e)
-    EnabledBosses++;
-  if (settings.furnaceGolem.e)
-    EnabledBosses++;
-  if (settings.sparky.e)
-    EnabledBosses++;
-  if (settings.theLogger.e)
-    EnabledBosses++;
-  if (settings.listener.e)
-    EnabledBosses++;
+  if (settings.zombken.e) EnabledBosses++;
+  if (settings.superStriker.e) EnabledBosses++;
+  if (settings.knightling.e) EnabledBosses++;
+  if (settings.miniDemonicAllay.e) EnabledBosses++;
+  if (settings.necromancer.e) EnabledBosses++;
+  if (settings.snowman.e) EnabledBosses++;
+  if (settings.furnaceGolem.e) EnabledBosses++;
+  if (settings.sparky.e) EnabledBosses++;
+  if (settings.theLogger.e) EnabledBosses++;
+  if (settings.listener.e) EnabledBosses++;
   new ActionFormData().title({ translate: `translation.poke:bossEventMainMenuTitle` }).button({ translate: `translation.poke:bossEventMainMenuEnableBosses`, with: [`${EnabledBosses}`, `${TotalBosses}`] }, "textures/poke/common/spawn_enabled").button({ translate: `translation.poke:bossEventMainMenuBossChances` }, "textures/poke/common/spawn_weight").button({ translate: `translation.poke:bossEventSettings` }, "textures/poke/common/more_options").button({ translate: `translation.poke:bossEventClose` }, "textures/poke/common/close").show(player).then((ui) => {
     if (ui.canceled || ui.selection == 3) {
       return;
@@ -3319,26 +3309,16 @@ function PFEStartBossEvent() {
   let settings = JSON.parse(world2.getDynamicProperty(PFEBossEventConfigName).toString());
   let allPlayers = world2.getAllPlayers();
   let randomPlayer = allPlayers.at(Math.abs(Math.round(Math.random() * (allPlayers.length - 1))));
-  if (!settings.zombken.e)
-    settings.zombken["%"] = 0;
-  if (!settings.superStriker.e)
-    settings.superStriker["%"] = 0;
-  if (!settings.knightling.e)
-    settings.knightling["%"] = 0;
-  if (!settings.miniDemonicAllay.e)
-    settings.miniDemonicAllay["%"] = 0;
-  if (!settings.necromancer.e)
-    settings.necromancer["%"] = 0;
-  if (!settings.snowman.e)
-    settings.snowman["%"] = 0;
-  if (!settings.furnaceGolem.e)
-    settings.furnaceGolem["%"] = 0;
-  if (!settings.sparky.e)
-    settings.sparky["%"] = 0;
-  if (!settings.theLogger.e)
-    settings.theLogger["%"] = 0;
-  if (!settings.listener.e)
-    settings.listener["%"] = 0;
+  if (!settings.zombken.e) settings.zombken["%"] = 0;
+  if (!settings.superStriker.e) settings.superStriker["%"] = 0;
+  if (!settings.knightling.e) settings.knightling["%"] = 0;
+  if (!settings.miniDemonicAllay.e) settings.miniDemonicAllay["%"] = 0;
+  if (!settings.necromancer.e) settings.necromancer["%"] = 0;
+  if (!settings.snowman.e) settings.snowman["%"] = 0;
+  if (!settings.furnaceGolem.e) settings.furnaceGolem["%"] = 0;
+  if (!settings.sparky.e) settings.sparky["%"] = 0;
+  if (!settings.theLogger.e) settings.theLogger["%"] = 0;
+  if (!settings.listener.e) settings.listener["%"] = 0;
   let zombkenWeight = settings.zombken["%"];
   let superStrikerWeight = settings.superStriker["%"];
   let knightlingWeight = settings.knightling["%"];
@@ -3350,8 +3330,7 @@ function PFEStartBossEvent() {
   let theLoggerWeight = settings.theLogger["%"];
   let listenerWeight = settings.listener["%"];
   let weights = [zombkenWeight, superStrikerWeight, knightlingWeight, miniDemonicAllayWeight, necromancerWeight, snowmanWeight, furnaceGolemWeight, sparkyWeight, theLoggerWeight, listenerWeight];
-  if (zombkenWeight + superStrikerWeight + knightlingWeight + miniDemonicAllayWeight + necromancerWeight + snowmanWeight + furnaceGolemWeight + sparkyWeight + theLoggerWeight + listenerWeight == 0)
-    return 0;
+  if (zombkenWeight + superStrikerWeight + knightlingWeight + miniDemonicAllayWeight + necromancerWeight + snowmanWeight + furnaceGolemWeight + sparkyWeight + theLoggerWeight + listenerWeight == 0) return 0;
   const weightedRandom = (array, weights2) => {
     const totalWeight = weights2.reduce((a, b) => a + b, 0);
     let random = Math.random() * totalWeight;
@@ -3380,8 +3359,7 @@ function PokeDamageItemUB(item, multiplier, entity, slot, preventBreaking) {
   if (preventBreaking && durabilityComponent?.maxDurability == durabilityComponent.damage + 1) {
     return { tookDurability: false, failed: true, broke: false, prevented: true };
   }
-  if (!equippableComponent)
-    return { tookDurability: false, failed: true, broke: false };
+  if (!equippableComponent) return { tookDurability: false, failed: true, broke: false };
   const enchantableComponent = item.getComponent(ItemComponentTypes.Enchantable);
   var unbreakingL = enchantableComponent?.getEnchantment(MinecraftEnchantmentTypes.Unbreaking)?.level ?? 0;
   if (!slot) {
@@ -3395,10 +3373,8 @@ function PokeDamageItemUB(item, multiplier, entity, slot, preventBreaking) {
     }
   }
   let damage = Number(Math.round(Math.random() * 100) <= durabilityComponent.getDamageChance(unbreakingL)) * (multiplier ?? 1);
-  if (durabilityComponent.damage + damage >= durabilityComponent.maxDurability)
-    durabilityComponent.damage = durabilityComponent.maxDurability;
-  else
-    durabilityComponent.damage += damage;
+  if (durabilityComponent.damage + damage >= durabilityComponent.maxDurability) durabilityComponent.damage = durabilityComponent.maxDurability;
+  else durabilityComponent.damage += damage;
   if (durabilityComponent.damage >= durabilityComponent.maxDurability) {
     if (equippableComponent.getEquipment(slot)?.typeId == item.typeId) {
       equippableComponent.setEquipment(slot, void 0);
@@ -3409,15 +3385,12 @@ function PokeDamageItemUB(item, multiplier, entity, slot, preventBreaking) {
   item.isStackable ? void 0 : PokeSaveProperty(`poke:holdFix`, item, Math.round(Math.random() * 100), entity, slot);
 }
 function PokeDecrementStack(item, amount) {
-  if (item.amount <= 1)
-    return void 0;
+  if (item.amount <= 1) return void 0;
   else {
     if (amount) {
       item.amount += amount;
-      if (item.amount > item.maxAmount)
-        item.amount = item.maxAmount;
-    } else
-      item.amount += -1;
+      if (item.amount > item.maxAmount) item.amount = item.maxAmount;
+    } else item.amount += -1;
     return item;
   }
 }
@@ -3430,7 +3403,7 @@ function PokeErrorScreen(player, error, backTo) {
   UI.body(error);
   UI.button({ translate: `translation.poke:goBack` }, `textures/poke/common/left_arrow`);
   UI.button({ translate: `translation.poke:bossEventClose` }, `textures/poke/common/close`);
-  UI.show(player).then((response) => {
+  UI.show(player).then(((response) => {
     if (response.canceled || response.selection == 1) {
       backTo;
       return;
@@ -3438,7 +3411,7 @@ function PokeErrorScreen(player, error, backTo) {
     if (response.selection == 2) {
       return;
     }
-  });
+  }));
 }
 function PokeGetItemFromInventory(entity, slot, itemId, returnSlots) {
   let inventoryComponent = entity.getComponent(EntityComponentTypes.Inventory);
@@ -3446,20 +3419,15 @@ function PokeGetItemFromInventory(entity, slot, itemId, returnSlots) {
     let returningItems = [];
     if (slot) {
       let slottedItem = inventoryComponent.container?.getItem(slot);
-      if (!slottedItem || slottedItem.lockMode != ItemLockMode.none)
-        return void 0;
+      if (!slottedItem || slottedItem.lockMode != ItemLockMode.none) return void 0;
       if (itemId) {
-        if (slottedItem.typeId == itemId)
-          return returnSlots ? [{ item: slottedItem, number: slot }] : [slottedItem];
-        else
-          return void 0;
-      } else
-        return returnSlots ? [{ item: slottedItem, number: slot }] : [slottedItem];
+        if (slottedItem.typeId == itemId) return returnSlots ? [{ item: slottedItem, number: slot }] : [slottedItem];
+        else return void 0;
+      } else return returnSlots ? [{ item: slottedItem, number: slot }] : [slottedItem];
     }
     for (let i = inventoryComponent.inventorySize - 1; i > -1; i--) {
       let slottedItem = inventoryComponent.container?.getItem(i);
-      if (!slottedItem || slottedItem.lockMode != ItemLockMode.none)
-        continue;
+      if (!slottedItem || slottedItem.lockMode != ItemLockMode.none) continue;
       if (!itemId || slottedItem.typeId == itemId) {
         returningItems = returningItems.concat(returnSlots ? [{ item: slottedItem, number: i }] : [slottedItem]);
         continue;
@@ -3473,11 +3441,10 @@ function PokeGetItemFromInventory(entity, slot, itemId, returnSlots) {
 }
 function PokeGetObjectById(array, id) {
   for (let i = array.length - 1; i > -1; i--) {
-    if (array.at(i).id == id)
-      return {
-        value: array.at(i),
-        position: i
-      };
+    if (array.at(i).id == id) return {
+      value: array.at(i),
+      position: i
+    };
   }
   return void 0;
 }
@@ -3488,8 +3455,7 @@ function PokeSaveProperty(propertyId, item, save, entity, slot) {
     const slottedItem = entity.getComponent(EntityComponentTypes.Inventory)?.container.getSlot(slot);
     slottedItem?.setItem(item);
   } else {
-    if (!slot)
-      slot = EquipmentSlot.Mainhand;
+    if (!slot) slot = EquipmentSlot.Mainhand;
     if (equippableComponent?.getEquipmentSlot(slot).typeId == item.typeId) {
       equippableComponent.setEquipment(slot, item);
       return true;
@@ -3504,8 +3470,7 @@ function PokeSpawnLootTable(lootTable, position, dimension, amount) {
       dimension.runCommand(`loot spawn ${position.x} ${position.y} ${position.z} loot "${lootTable}"`);
     }
     return;
-  } else
-    dimension.runCommand(`loot spawn ${position.x} ${position.y} ${position.z} loot "${lootTable}"`);
+  } else dimension.runCommand(`loot spawn ${position.x} ${position.y} ${position.z} loot "${lootTable}"`);
 }
 function PokeClosestCardinal(vector, directions) {
   let returnProperty = {
@@ -3764,8 +3729,7 @@ var PFEUpgrades = class {
 var PFEUpgradeableComponent = class {
   onUse(data, componentInfo) {
     const component = componentInfo.params;
-    if (!data.itemStack)
-      return;
+    if (!data.itemStack) return;
     if (component.sneak_interact_opens_ui && data.source.isSneaking) {
       const parsedUpgradeInfo = ParsePFEUpgradeComponent(data.itemStack, data.source, component);
       PokeUpgradeUI(data.source, data.itemStack, parsedUpgradeInfo, true);
@@ -3784,8 +3748,7 @@ function ParsePFEUpgradeComponent(item, player, component) {
       const validUpgrade = allUpgrades.filter((upgrade) => upgrade.id == upgrade_id).at(0);
       const compressedUpgrade = compressedUpgrades?.upgrades ? compressedUpgrades?.upgrades.filter((compressedUpgrade2) => compressedUpgrade2.id == validUpgrade?.id)?.at(0) ?? void 0 : void 0;
       if (validUpgrade) {
-        if (compressedUpgrade)
-          validUpgrade.level += compressedUpgrade.level;
+        if (compressedUpgrade) validUpgrade.level += compressedUpgrade.level;
         upgrades.push(validUpgrade);
       }
     }
@@ -3830,8 +3793,7 @@ ${upgradeCost == Infinity ? "%poke_pfe.max_level" : `%translation.poke.cost: ${u
         const currentCompressed = compressedSave ? typeof dynamicProperty == "string" ? JSON.parse(dynamicProperty) : void 0 : void 0;
         const upgradeCost = upgrade.maxLevel ? upgrade.maxLevel <= upgrade.level ? Infinity : upgrade.upgradeAdditive ? Number(upgrade.level) + 1 : 1 : upgrade.upgradeAdditive ? Number(upgrade.level) + 1 : 1;
         if (upgradeCost !== Infinity && HasItem && upgrade.level != upgrade.maxLevel) {
-          if (upgrade.id == PFEPersistenceCoreDefault.id)
-            item.keepOnDeath = true;
+          if (upgrade.id == PFEPersistenceCoreDefault.id) item.keepOnDeath = true;
           const compressedUpgradeLevel = Number(currentCompressed?.upgrades.filter((compressedUpgrade) => compressedUpgrade.id == upgrade.id).at(0)?.level) ?? Number(upgrade.level);
           let compressedNewProperty = {
             upgrades: currentCompressed ? currentCompressed.upgrades.filter((compressedUpgrade) => compressedUpgrade.id != upgrade.id).concat(
@@ -3863,8 +3825,7 @@ ${upgradeCost == Infinity ? "%poke_pfe.max_level" : `%translation.poke.cost: ${u
           console.warn(`Failed to upgrade`);
           return;
         }
-      } else
-        selection++;
+      } else selection++;
       continue;
     }
     if (debug) {
@@ -3894,13 +3855,11 @@ ${JSON.stringify(PFEFlamingCoreDefault, void 0, "\n") ?? "undefined"}`);
 ${JSON.stringify(PFEPersistenceCoreDefault, void 0, "\n") ?? "undefined"}`);
         UI2.show(player);
         return;
-      } else
-        selection++;
+      } else selection++;
     }
     if (response.canceled || response.selection == selection) {
       return;
-    } else
-      selection++;
+    } else selection++;
   });
 }
 var PFEPersistenceCoreDefault = {
@@ -3951,16 +3910,14 @@ var PFEHaxelConfigDefault = {
 };
 var PFEBoxMiningComponent = class {
   onUse(data, componentInfo) {
-    if (!data.itemStack)
-      return;
+    if (!data.itemStack) return;
     let dynamicProperty = data.itemStack.getDynamicProperty(PFEHaxelInfoProperty);
     const component = componentInfo.params;
     if (!dynamicProperty) {
       data.itemStack.setDynamicProperty(PFEHaxelInfoProperty, JSON.stringify(PFEHaxelConfigDefault));
       data.source.getComponent(EntityComponentTypes3.Equippable).setEquipment(EquipmentSlot3.Mainhand, data.itemStack);
       dynamicProperty = PFEHaxelConfigDefault;
-    } else
-      dynamicProperty = JSON.parse(dynamicProperty.toString());
+    } else dynamicProperty = JSON.parse(dynamicProperty.toString());
     if (!dynamicProperty.v) {
       dynamicProperty = UpdateHaxelFromV1toV2(data.itemStack, data.source, dynamicProperty);
     }
@@ -3994,13 +3951,11 @@ function* PFEMine(BannedBlocks, component, location, player, dimension, silkTouc
   let validBlocks = dimension.getBlocks(new BlockVolume(location, endLocation), { excludeTypes: BannedBlocks, includeTypes: whitelist }, true);
   for (let blockLocation of validBlocks.getBlockLocationIterator()) {
     const block = dimension.getBlock(blockLocation);
-    if (!block)
-      continue;
+    if (!block) continue;
     if (silkTouch) {
       let blockItemStack = (block.typeId.includes(`shulker_box`) ? block.getItemStack(1, true) : block.getItemStack(1, false)) ?? new ItemStack3(block.typeId);
       dimension.spawnItem(blockItemStack, player.location);
-    } else
-      player.runCommand(`loot spawn ${player.location.x} ${player.location.y} ${player.location.z} mine ${block.x} ${block.y} ${block.z} ${item.typeId}`);
+    } else player.runCommand(`loot spawn ${player.location.x} ${player.location.y} ${player.location.z} mine ${block.x} ${block.y} ${block.z} ${item.typeId}`);
     blocksBroken += 1;
   }
   dimension.fillBlocks(validBlocks, MinecraftBlockTypes.Air, { ignoreChunkBoundErrors: true });
@@ -4011,8 +3966,7 @@ function* PFEMine(BannedBlocks, component, location, player, dimension, silkTouc
   ComputersCompat.addStat("haxel_block_breaks", blocksBroken);
 }
 function PFEHaxelConfigMenu(data, component, dynamicProperty) {
-  if (!data.itemStack)
-    return;
+  if (!data.itemStack) return;
   let Ui = new ActionFormData4().title({ translate: `translation.poke:haxelConfig.mainMenu.title`, with: { rawtext: [{ translate: data.itemStack?.nameTag ?? `poke_pfe.${data.itemStack?.typeId}`.replace(`poke:haxel`, `onyx_haxel`).replace(`poke:`, ``) }] } }).button({ translate: `translation.poke:haxelConfig.mainMenu.blacklistAdd` }, `textures/poke/common/blacklist_add`);
   if (dynamicProperty.blacklist.length >= 1) {
     Ui.button({ translate: `translation.poke:haxelConfig.mainMenu.blacklistRemove` }, `textures/poke/common/blacklist_remove`);
@@ -4021,34 +3975,29 @@ function PFEHaxelConfigMenu(data, component, dynamicProperty) {
   if (UpgradeableComponent?.version) {
     Ui.button({ translate: `poke_pfe.upgrade` }, `textures/poke/common/upgrade`);
   }
-  Ui.show(data.source).then((response) => {
+  Ui.show(data.source).then(((response) => {
     let selection = 0;
     if (response.selection == selection) {
       PFEHaxelConfigBlackListAdd(data, component, dynamicProperty);
       return;
-    } else
-      selection++;
+    } else selection++;
     if (response.selection == selection) {
       PFEHaxelConfigBlackListRemove(data, component, dynamicProperty);
       return;
-    } else
-      selection++;
+    } else selection++;
     if (UpgradeableComponent?.version) {
       if (response.selection == selection) {
-        if (!data.itemStack)
-          return;
+        if (!data.itemStack) return;
         PokeUpgradeUI(data.source, data.itemStack, ParsePFEUpgradeComponent(data.itemStack, data.source, UpgradeableComponent), true, UpgradeableComponent);
         return;
-      } else
-        selection++;
+      } else selection++;
     }
-    if (response.canceled || selection == response.selection)
-      return;
-  });
+    if (response.canceled || selection == response.selection) return;
+  }));
 }
 function PFEHaxelConfigBlackListAdd(data, component, dynamicProperty) {
   let Ui = new ModalFormData3().title({ translate: `translation.poke:haxelConfig.mainMenu.title`, with: { rawtext: [{ translate: data.itemStack?.nameTag ?? `poke_pfe.${data.itemStack?.typeId}`.replace(`poke:haxel`, `onyx_haxel`).replace(`poke:`, ``) }] } }).textField({ translate: `translation.poke:haxelConfig.blacklistAdd.textLabel` }, "", { defaultValue: `` }).submitButton({ translate: `translation.poke:haxelConfig.blacklistAdd.submit` });
-  Ui.show(data.source).then((response) => {
+  Ui.show(data.source).then(((response) => {
     if (response.canceled) {
       PFEHaxelConfigMenu(data, component, dynamicProperty);
       return;
@@ -4056,8 +4005,7 @@ function PFEHaxelConfigBlackListAdd(data, component, dynamicProperty) {
     ;
     ;
     let block = response.formValues?.at(0);
-    if (block == "")
-      return;
+    if (block == "") return;
     if (typeof block == "string") {
       if (!block.includes(":")) {
         block = `minecraft:${block}`;
@@ -4067,18 +4015,17 @@ function PFEHaxelConfigBlackListAdd(data, component, dynamicProperty) {
         "blacklist": dynamicProperty.blacklist.concat([block]),
         "v": dynamicProperty.v
       };
-      if (data.itemStack == void 0)
-        return;
+      if (data.itemStack == void 0) return;
       PokeSaveProperty(PFEHaxelInfoProperty, data.itemStack, JSON.stringify(newProperty), data.source, EquipmentSlot3.Mainhand);
     }
-  });
+  }));
 }
 function PFEHaxelConfigBlackListRemove(data, component, dynamicProperty) {
   let Ui = new ActionFormData4().title({ translate: `translation.poke:haxelConfig.mainMenu.blacklistRemove` });
   dynamicProperty.blacklist.forEach((block) => {
     Ui.button({ translate: `tile.${block.replace(`minecraft:`, ``)}.name` });
   });
-  Ui.show(data.source).then((response) => {
+  Ui.show(data.source).then(((response) => {
     if (response.canceled) {
       PFEHaxelConfigMenu(data, component, dynamicProperty);
       return;
@@ -4087,12 +4034,11 @@ function PFEHaxelConfigBlackListRemove(data, component, dynamicProperty) {
     for (let i = dynamicProperty.blacklist.length; i >= -1; i--) {
       if (response.selection == i) {
         dynamicProperty.blacklist.splice(i, 1);
-        if (data.itemStack == void 0)
-          return;
+        if (data.itemStack == void 0) return;
         PokeSaveProperty(PFEHaxelInfoProperty, data.itemStack, JSON.stringify(dynamicProperty), data.source, EquipmentSlot3.Mainhand);
       }
     }
-  });
+  }));
 }
 function UpdateHaxelFromV1toV2(item, player, dynamicProperty) {
   let newBlacklist = [];
@@ -4278,35 +4224,25 @@ function PokeTimeCheck(event, player, claimCheck) {
     return;
   }
   let currentTime = new Date(Date.now() + PokeTimeZoneOffset(player));
-  if (event.fixedTime === true)
-    currentTime = new Date(Date.now());
+  if (event.fixedTime === true) currentTime = new Date(Date.now());
   for (let i = event.dates.length; i > -1; i--) {
     let date = event.dates.at(i);
-    if (!date)
-      continue;
-    if (!date.days?.includes(currentTime.getUTCDate()))
-      continue;
-    if (!(date.month == currentTime.getUTCMonth()))
-      continue;
+    if (!date) continue;
+    if (!date.days?.includes(currentTime.getUTCDate())) continue;
+    if (!(date.month == currentTime.getUTCMonth())) continue;
     if (date.weekday) {
-      if (date.weekday == currentTime.getDay())
-        continue;
+      if (date.weekday == currentTime.getDay()) continue;
     }
     if (date.timeStart) {
-      if (!(date.timeStart.hour <= currentTime.getUTCHours() && (date.timeStart.minute == void 0 || date.timeStart.minute <= currentTime.getUTCMinutes())))
-        continue;
+      if (!(date.timeStart.hour <= currentTime.getUTCHours() && (date.timeStart.minute == void 0 || date.timeStart.minute <= currentTime.getUTCMinutes()))) continue;
     }
     if (date.timeEnd) {
-      if (!(date.timeEnd.hour >= currentTime.getUTCHours() && (date.timeEnd.minute == void 0 || date.timeEnd.minute >= currentTime.getUTCMinutes())))
-        continue;
+      if (!(date.timeEnd.hour >= currentTime.getUTCHours() && (date.timeEnd.minute == void 0 || date.timeEnd.minute >= currentTime.getUTCMinutes()))) continue;
     }
-    if (event.repeat === false && !date.years?.includes(currentTime.getUTCFullYear()))
-      continue;
+    if (event.repeat === false && !date.years?.includes(currentTime.getUTCFullYear())) continue;
     if (claimCheck) {
-      if (!event.gift)
-        continue;
-      if (player.hasTag(`poke:${currentTime.getFullYear()}E-${event.id}`))
-        continue;
+      if (!event.gift) continue;
+      if (player.hasTag(`poke:${currentTime.getFullYear()}E-${event.id}`)) continue;
     }
     return true;
   }
@@ -4318,7 +4254,7 @@ function PokeTimeDebug(player) {
   UI.button(`Create 10 Events`);
   UI.button(`Reset Birthday`);
   UI.button(`Add 10 Fake Birthdays`);
-  UI.show(player).then((response) => {
+  UI.show(player).then(((response) => {
     if (response.canceled) {
       PokeTimeConfigUIMainMenu(player);
       return;
@@ -4327,8 +4263,7 @@ function PokeTimeDebug(player) {
     if (response.selection == selection) {
       world5.setDynamicProperty(PokeCustomEventId, JSON.stringify([]));
       return;
-    } else
-      selection++;
+    } else selection++;
     if (response.selection == selection) {
       let newEvents = [
         { id: `custom:1`, dates: [{ month: 0, days: [1, 2, 3, 4, 5] }, { month: 1, days: [6, 7, 8, 9, 10] }], greeting: "generic", name: { text: `Custom Event 1` }, icon: `textures/poke/common/event_default`, repeat: true, gift: void 0, fixedTime: false, v: PokeCalendarVersion },
@@ -4350,13 +4285,11 @@ function PokeTimeDebug(player) {
       customEvents = JSON.parse(customEvents).concat(newEvents);
       world5.setDynamicProperty(PokeCustomEventId, JSON.stringify(customEvents));
       return;
-    } else
-      selection++;
+    } else selection++;
     if (response.selection == selection) {
       player.setDynamicProperty(`poke:birthday`, JSON.stringify({ day: 1, month: 0, id: player.id, announce: false, name: player.name, style: "normal", year: void 0 }));
       return;
-    } else
-      selection++;
+    } else selection++;
     if (response.selection == selection) {
       let time = new Date(Date.now());
       let newBirthdays = [
@@ -4379,9 +4312,8 @@ function PokeTimeDebug(player) {
       birthdays = JSON.parse(birthdays).concat(newBirthdays);
       world5.setDynamicProperty(`poke:birthdays`, JSON.stringify(birthdays));
       return;
-    } else
-      selection++;
-  });
+    } else selection++;
+  }));
 }
 function PokeTimeConfigUIMainMenu(player) {
   let currentTime = new Date(Date.now() + PokeTimeZoneOffset(player));
@@ -4413,14 +4345,13 @@ function PokeTimeConfigUIMainMenu(player) {
   let gifts = [];
   for (let i = events.length - 1; i > -1; i--) {
     let event = events.at(i);
-    if (!event)
-      continue;
+    if (!event) continue;
     if (PokeTimeCheck(event, player, true)) {
       UI.button({ translate: `translation.poke:claimGift`, with: { rawtext: [event.name] } }, `textures/poke/common/gift`);
       gifts = gifts.concat(event);
     }
   }
-  UI.show(player).then((response) => {
+  UI.show(player).then(((response) => {
     if (response.canceled) {
       return;
     }
@@ -4429,33 +4360,28 @@ function PokeTimeConfigUIMainMenu(player) {
       if (response.selection == selection) {
         PokeTimeDebug(player);
         return;
-      } else
-        selection++;
+      } else selection++;
     }
     if (!player.getDynamicProperty(`poke:timezone`)) {
       if (response.selection == selection) {
         PokeSetTimeZone(player);
         return;
-      } else
-        selection++;
+      } else selection++;
     }
     if (!player.getDynamicProperty(`poke:birthday`)) {
       if (response.selection == selection) {
         PokeSetBirthday(player);
         return;
-      } else
-        selection++;
+      } else selection++;
     }
     if (response.selection == selection) {
       PokeTimeUpcomingEventList(player, 0);
       return;
-    } else
-      selection++;
+    } else selection++;
     if (response.selection == selection) {
       PokeTimeAdditionalOptions(player);
       return;
-    } else
-      selection++;
+    } else selection++;
     for (let i = gifts.length - 1; i > -1; i--) {
       if (response.selection == selection) {
         let claimingGift = gifts.reverse().at(i)?.gift;
@@ -4464,10 +4390,9 @@ function PokeTimeConfigUIMainMenu(player) {
         player.runCommand(`${claimingGift}`);
         player.addTag(`poke:${currentTime.getFullYear()}E-${gifts.at(i)?.id}`);
         return;
-      } else
-        selection++;
+      } else selection++;
     }
-  });
+  }));
 }
 function PokeSetBirthday(player) {
   let UI = new ModalFormData4();
@@ -4481,7 +4406,7 @@ function PokeSetBirthday(player) {
   UI.dropdown({ translate: `translation.poke:setBirthdayDay` }, [`1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`, `10`, `11`, `12`, `13`, `14`, `15`, `16`, `17`, `18`, `19`, `20`, `21`, `22`, `23`, `24`, `25`, `26`, `27`, `28`, `29`, `30`, `31`], { defaultValueIndex: currentBirthday.day - 1 });
   UI.dropdown({ translate: `translation.poke:setBirthdayMonth` }, [{ translate: `translation.poke:setBirthdayJan` }, { translate: `translation.poke:setBirthdayFeb` }, { translate: `translation.poke:setBirthdayMar` }, { translate: `translation.poke:setBirthdayApr` }, { translate: `translation.poke:setBirthdayMay` }, { translate: `translation.poke:setBirthdayJun` }, { translate: `translation.poke:setBirthdayJul` }, { translate: `translation.poke:setBirthdayAug` }, { translate: `translation.poke:setBirthdaySep` }, { translate: `translation.poke:setBirthdayOct` }, { translate: `translation.poke:setBirthdayNov` }, { translate: `translation.poke:setBirthdayDec` }], { defaultValueIndex: currentBirthday.month });
   UI.toggle({ translate: `translation.poke:setBirthdayGlobalMessage` }, { defaultValue: currentBirthday.announce });
-  UI.show(player).then((response) => {
+  UI.show(player).then(((response) => {
     if (response.canceled) {
       if (player.getDynamicProperty(`poke:birthday`)) {
         PokeTimeAdditionalOptions(player);
@@ -4521,7 +4446,7 @@ function PokeSetBirthday(player) {
       }
       player.setDynamicProperty(`poke:birthday`, JSON.stringify(newBirthday));
     }
-  });
+  }));
 }
 function PokeTimeIcon(currentTime) {
   switch (currentTime.getHours()) {
@@ -4798,26 +4723,24 @@ function PokeSetTimeZone(player) {
   Timezones.forEach((timezone) => {
     Ui.button(timezone.name, PokeTimeIcon(new Date(Date.now() + timezone.offset)));
   });
-  Ui.show(player).then((response) => {
+  Ui.show(player).then(((response) => {
     if (response.canceled) {
       return;
     }
     player.setDynamicProperty(`poke:timezone`, Timezones.at(Number(response.selection)).offset);
-  });
+  }));
 }
 function PokeTimeGreeting(date, player, event, generic) {
   if (!generic) {
     if (event) {
       if (!event.greeting || typeof event.greeting == "string") {
-      } else
-        return event.greeting;
+      } else return event.greeting;
     } else {
       let activeEventGreetings = [];
       let allEvents = PokeTimeGetAllEvents();
       for (let i = allEvents.length - 1; i > -1; i--) {
         let event2 = allEvents.at(i);
-        if (!event2)
-          continue;
+        if (!event2) continue;
         if (PokeTimeCheck(event2, player, false)) {
           if (typeof event2.greeting != "string") {
             activeEventGreetings = activeEventGreetings.concat(event2.greeting ?? []);
@@ -4826,8 +4749,7 @@ function PokeTimeGreeting(date, player, event, generic) {
       }
       if (activeEventGreetings.length > 0) {
         let returnGreeting = activeEventGreetings.at(Math.max(Math.round(Math.random() * activeEventGreetings.length) - 1, 0));
-        if (returnGreeting)
-          return returnGreeting;
+        if (returnGreeting) return returnGreeting;
       }
     }
   }
@@ -4868,20 +4790,19 @@ function PokeTimeEventInfoMenu(event, player) {
     UI.button({ translate: `translation.poke:timeEditEvent` }, `textures/poke/common/edit`);
   }
   UI.button({ translate: `translation.poke:goBack` }, `textures/poke/common/left_arrow`);
-  UI.show(player).then((response) => {
+  UI.show(player).then(((response) => {
     let selection = 0;
     if (!event.nonModifiable && (player.playerPermissionLevel == PlayerPermissionLevel.Operator || player.hasTag(`poke-event_manager`))) {
       if (response.selection == selection) {
         PokeEventOptions(player, event);
         return;
-      } else
-        selection++;
+      } else selection++;
     }
     if (response.canceled || response.selection == selection) {
       PokeTimeUpcomingEventList(player, 0);
       return;
     }
-  });
+  }));
 }
 function PokeTimeUpcomingEventList(player, page) {
   let UI = new ActionFormData5();
@@ -4911,38 +4832,34 @@ function PokeTimeUpcomingEventList(player, page) {
   if (page > 0) {
     UI.button({ translate: `translation.poke:timePrevPage` }, `textures/poke/common/left_arrow`);
     prevPage = true;
-  } else
-    UI.button({ translate: "translation.poke:goBack" }, `textures/poke/common/left_arrow`);
-  UI.show(player).then((response) => {
+  } else UI.button({ translate: "translation.poke:goBack" }, `textures/poke/common/left_arrow`);
+  UI.show(player).then(((response) => {
     let selection = 0;
     for (let i = buttonCount - 1; i > -1; i--) {
       if (events.at(i)) {
         if (response.selection == selection) {
           PokeTimeEventInfoMenu(events.at(i + startPage), player);
           return;
-        } else
-          selection++;
+        } else selection++;
       }
     }
     if (nextPage) {
       if (response.selection == selection) {
         PokeTimeUpcomingEventList(player, page + 1);
         return;
-      } else
-        selection++;
+      } else selection++;
     }
     if (prevPage) {
       if (response.selection == selection) {
         PokeTimeUpcomingEventList(player, page - 1);
         return;
-      } else
-        selection++;
+      } else selection++;
     }
     if (response.canceled || response.selection == selection) {
       PokeTimeConfigUIMainMenu(player);
       return;
     }
-  });
+  }));
 }
 function PokeTimeAdditionalOptions(player) {
   let currentTime = new Date(Date.now() + PokeTimeZoneOffset(player));
@@ -4957,34 +4874,31 @@ function PokeTimeAdditionalOptions(player) {
     UI.button({ translate: `translation.poke:timeCreateEvent` }, `textures/poke/common/create_event`);
   }
   UI.button({ translate: "translation.poke:goBack" }, `textures/poke/common/left_arrow`);
-  UI.show(player).then((response) => {
+  UI.show(player).then(((response) => {
     let selection = 0;
     if (player.getDynamicProperty(`poke:timezone`)) {
       if (response.selection == selection) {
         PokeSetTimeZone(player);
         return;
-      } else
-        selection++;
+      } else selection++;
     }
     if (player.getDynamicProperty(`poke:birthday`)) {
       if (response.selection == selection) {
         PokeSetBirthday(player);
         return;
-      } else
-        selection++;
+      } else selection++;
     }
     if (player.playerPermissionLevel == PlayerPermissionLevel.Operator || player.hasTag(`poke-event_manager`)) {
       if (response.selection == selection) {
         PokeTimeCreateEvent(player);
         return;
-      } else
-        selection++;
+      } else selection++;
     }
     if (response.canceled || response.selection == selection) {
       PokeTimeConfigUIMainMenu(player);
       return;
     }
-  });
+  }));
 }
 function PokeTimeGetAllEvents() {
   return PFEDefaultHolidays.concat(JSON.parse(world5.getDynamicProperty(PokeCustomEventId).toString()));
@@ -5043,7 +4957,7 @@ function PokeTimeCreateEvent(player, event) {
   UI.dropdown({ translate: `translation.poke:setBirthdayDay` }, [`1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`, `10`, `11`, `12`, `13`, `14`, `15`, `16`, `17`, `18`, `19`, `20`, `21`, `22`, `23`, `24`, `25`, `26`, `27`, `28`, `29`, `30`, `31`], { defaultValueIndex: Number(event.dates.at(0)?.days?.at(0)) - 1 });
   UI.dropdown({ translate: `translation.poke:setBirthdayMonth` }, [{ translate: `translation.poke:setBirthdayJan` }, { translate: `translation.poke:setBirthdayFeb` }, { translate: `translation.poke:setBirthdayMar` }, { translate: `translation.poke:setBirthdayApr` }, { translate: `translation.poke:setBirthdayMay` }, { translate: `translation.poke:setBirthdayJun` }, { translate: `translation.poke:setBirthdayJul` }, { translate: `translation.poke:setBirthdayAug` }, { translate: `translation.poke:setBirthdaySep` }, { translate: `translation.poke:setBirthdayOct` }, { translate: `translation.poke:setBirthdayNov` }, { translate: `translation.poke:setBirthdayDec` }], { defaultValueIndex: event.dates.at(0)?.month });
   UI.toggle({ translate: `translation.poke:timeLoopEvent` }, { defaultValue: event.repeat });
-  UI.show(player).then((response) => {
+  UI.show(player).then(((response) => {
     if (response.canceled && event.id == ``) {
       PokeTimeAdditionalOptions(player);
       return;
@@ -5132,7 +5046,7 @@ function PokeTimeCreateEvent(player, event) {
       PokeEventOptions(player, event);
       return;
     }
-  });
+  }));
 }
 function PokeEventOptions(player, event) {
   let UI = new ActionFormData5();
@@ -5150,42 +5064,37 @@ function PokeEventOptions(player, event) {
   UI.button({ translate: `translation.poke:timeEventOptionsEditTime` }, `textures/poke/common/edit`);
   UI.button({ translate: `translation.poke:timeDeleteEvent` }, `textures/poke/common/trash`);
   UI.button({ translate: `translation.poke:goBack` }, `textures/poke/common/left_arrow`);
-  UI.show(player).then((response) => {
+  UI.show(player).then(((response) => {
     let selection = 0;
     if (response.selection == selection) {
       PokeTimeEditGift(player, event);
       return;
-    } else
-      selection++;
+    } else selection++;
     if (response.selection == selection) {
       PokeTimeEditGreeting(player, event);
       return;
-    } else
-      selection++;
+    } else selection++;
     if (response.selection == selection) {
       PokeTimeCreateEvent(player, event);
       return;
-    } else
-      selection++;
+    } else selection++;
     if (response.selection == selection) {
       PokeTimeDeleteEvent(player, event);
       return;
-    } else
-      selection++;
+    } else selection++;
     if (response.canceled || response.selection == selection) {
       PokeTimeUpcomingEventList(player, 0);
       return;
     }
-  });
+  }));
 }
 function PokeTimeEditGift(player, event) {
   let UI = new ModalFormData4();
   UI.title({ translate: `translation.poke:timeEditGiftTitle` });
   let currentGift = event.gift;
-  if (!currentGift)
-    currentGift = ``;
+  if (!currentGift) currentGift = ``;
   UI.textField({ translate: `translation.poke:timeEditGiftTextFieldLabel` }, ``, { defaultValue: currentGift });
-  UI.show(player).then((response) => {
+  UI.show(player).then(((response) => {
     if (response.canceled) {
       PokeEventOptions(player, event);
       return;
@@ -5213,7 +5122,7 @@ function PokeTimeEditGift(player, event) {
     let customEvents = world5.getDynamicProperty(PokeCustomEventId)?.toString().replace(JSON.stringify(event), JSON.stringify(newEvent));
     world5.setDynamicProperty(PokeCustomEventId, customEvents);
     PokeEventOptions(player, newEvent);
-  });
+  }));
 }
 function PokeTimeEditGreeting(player, event) {
   let UI = new ModalFormData4();
@@ -5227,7 +5136,7 @@ function PokeTimeEditGreeting(player, event) {
     }
   }
   UI.textField({ translate: `translation.poke:timeEditGreetingTextFieldLabel` }, ``, { defaultValue: greeting });
-  UI.show(player).then((response) => {
+  UI.show(player).then(((response) => {
     if (response.canceled) {
       PokeEventOptions(player, event);
       return;
@@ -5257,13 +5166,13 @@ function PokeTimeEditGreeting(player, event) {
     world5.setDynamicProperty(PokeCustomEventId, customEvents);
     PokeEventOptions(player, newEvent);
     return;
-  });
+  }));
 }
 function PokeTimeDeleteEvent(player, event) {
   let UI = new ModalFormData4();
   UI.title({ translate: `translation.poke:timeDeleteEventTitle`, with: [event.id] });
   UI.textField({ translate: `translation.poke:timeDeleteEventConfirmField` }, ``);
-  UI.show(player).then((response) => {
+  UI.show(player).then(((response) => {
     if (response.canceled) {
       PokeEventOptions(player, event);
       return;
@@ -5281,7 +5190,7 @@ function PokeTimeDeleteEvent(player, event) {
       newEvents = newEvents.replace(JSON.stringify(replacedEvent.value), ``).replace(`,,`, `,`).replace(`,]`, `]`).replace(`[,`, `[`);
       world5.setDynamicProperty(PokeCustomEventId, newEvents);
     }
-  });
+  }));
 }
 
 // scripts/boltbow.ts
@@ -5310,8 +5219,7 @@ var PFEBoltBowDefault = {
 };
 var PFEBoltBowsComponent = class {
   onUse(data) {
-    if (!data.itemStack)
-      return;
+    if (!data.itemStack) return;
     if (data.source.isSneaking) {
       PFEAmmoManagementMainMenuUI(data.itemStack, data.source);
       return;
@@ -5319,8 +5227,7 @@ var PFEBoltBowsComponent = class {
     let ammoComponent = PFEBoltBowDefault;
     if (typeof data.itemStack.getDynamicProperty(PFEBoltBowDynamicPropertyID) != "string") {
       PokeSaveProperty(PFEBoltBowDynamicPropertyID, data.itemStack, JSON.stringify(PFEBoltBowDefault), data.source);
-    } else
-      ammoComponent = JSON.parse(data.itemStack.getDynamicProperty(PFEBoltBowDynamicPropertyID).toString());
+    } else ammoComponent = JSON.parse(data.itemStack.getDynamicProperty(PFEBoltBowDynamicPropertyID).toString());
     if (typeof data.itemStack.getDynamicProperty(`poke:ammo`) == "string") {
       UpdateBoltbowV2toV3(data.source, data.itemStack);
     }
@@ -5339,8 +5246,7 @@ var PFEBoltBowsComponent = class {
           upgradeName: upgrade.upgradeName ?? upgradeDefault?.upgradeName
         }]);
       }
-      if (!(ammoComponent.upgrades.filter((upgrade) => upgrade.id == PersistenceUpgradeDefault.id).length == 1))
-        newProperty.concat([PersistenceUpgradeDefault]);
+      if (!(ammoComponent.upgrades.filter((upgrade) => upgrade.id == PersistenceUpgradeDefault.id).length == 1)) newProperty.concat([PersistenceUpgradeDefault]);
       ammoComponent.upgrades = newProperty;
       PokeSaveProperty(PFEBoltBowDynamicPropertyID, data.itemStack, JSON.stringify(ammoComponent), data.source);
     }
@@ -5351,17 +5257,14 @@ var PFEBoltBowsComponent = class {
     const cooldownComponent = data.itemStack.getComponent(ItemComponentTypes3.Cooldown);
     if (cooldownComponent) {
       const ticks = cooldownComponent.cooldownTicks;
-      if (cooldownComponent.getCooldownTicksRemaining(data.source) != ticks - 1)
-        return;
+      if (cooldownComponent.getCooldownTicksRemaining(data.source) != ticks - 1) return;
     }
     let delay = 1;
     if (ammoComponent.projectile.amount >= 1) {
       data.source.playAnimation(`animation.poke_pfe.boltbow.use`);
       let equippableComponent = data.source.getComponent(EntityComponentTypes4.Equippable);
-      if (!equippableComponent)
-        return;
-      if (equippableComponent.getEquipmentSlot(EquipmentSlot4.Mainhand).getItem()?.typeId != data.itemStack?.typeId || equippableComponent.getEquipmentSlot(EquipmentSlot4.Mainhand).getDynamicProperty(PFEBoltBowDynamicPropertyID) != JSON.stringify(ammoComponent))
-        return;
+      if (!equippableComponent) return;
+      if (equippableComponent.getEquipmentSlot(EquipmentSlot4.Mainhand).getItem()?.typeId != data.itemStack?.typeId || equippableComponent.getEquipmentSlot(EquipmentSlot4.Mainhand).getDynamicProperty(PFEBoltBowDynamicPropertyID) != JSON.stringify(ammoComponent)) return;
       PokeShoot(data.source, ammoComponent, data.itemStack, delay);
     } else {
       data.source.dimension.playSound(`poke_pfe.boltbow.noAmmo`, data.source.location);
@@ -5378,8 +5281,7 @@ function PokeShoot(player, ammoComponent, item, delay) {
   const angle = player.getViewDirection();
   const projEntity = player.dimension.spawnEntity(ammoComponent.projectile.entityId, { x: headLocate.x + angle.x * 2, y: headLocate.y - 0.25 + angle.y * 2, z: headLocate.z + angle.z * 2 });
   const projComp = projEntity.getComponent(EntityComponentTypes4.Projectile);
-  if (!projComp)
-    return;
+  if (!projComp) return;
   player.playSound(`random.bow`, { pitch: ammoComponent.projectile.amount > 3 ? void 0 : ammoComponent.projectile.amount == 3 ? 1.05 : ammoComponent.projectile.amount == 2 ? 1.15 : ammoComponent.projectile.amount == 1 ? 1.25 : void 0 });
   projComp.catchFireOnHurt = PokeGetObjectById(ammoComponent.upgrades, `pfe:flaming`)?.value.level > 0;
   projComp.owner = player;
@@ -5399,27 +5301,24 @@ function PFEAmmoManagementMainMenuUI(item, player) {
   UI.button({ translate: `translation.poke:ammoUIAddAmmo` }, `textures/poke/common/ammoReload`);
   UI.button({ translate: `poke_pfe.upgrade` }, `textures/poke/common/upgrade`);
   UI.button({ translate: `translation.poke:bossEventClose` }, `textures/poke/common/close`);
-  UI.show(player).then((response) => {
+  UI.show(player).then(((response) => {
     let selection = 0;
     if (response.selection == selection) {
       PFEQuickReload(boltBowComponent, item, player);
       return;
-    } else
-      selection++;
+    } else selection++;
     if (response.selection == selection) {
       PFEAmmoManagementAddAmmoUI(item, player);
       return;
-    } else
-      selection++;
+    } else selection++;
     if (response.selection == selection) {
       PokeUpgradeUI(player, item, boltBowComponent, false, item.getComponent(PFEUpgradeableId)?.customComponentParameters.params ?? void 0);
       return;
-    } else
-      selection++;
+    } else selection++;
     if (response.canceled || selection) {
       return;
     }
-  });
+  }));
 }
 function PFEAmmoManagementAddAmmoUI(item, player) {
   let UI = new ActionFormData6();
@@ -5436,8 +5335,7 @@ function PFEAmmoManagementAddAmmoUI(item, player) {
     allItems = allItems.concat(items);
     for (let i2 = items.length; i2 > -1; i2--) {
       let foundItem = items.at(i2);
-      if (!foundItem)
-        continue;
+      if (!foundItem) continue;
       if (foundItem.typeId == MinecraftItemTypes.Arrow) {
         UI.button({ rawtext: [{ translate: `item.arrow.name` }, { text: ` x${foundItem.amount}` }] }, PFEArrowIcon(foundItem.typeId));
       } else {
@@ -5447,7 +5345,7 @@ function PFEAmmoManagementAddAmmoUI(item, player) {
     }
   }
   UI.button({ translate: `translation.poke:bossEventClose` }, `textures/poke/common/close`);
-  UI.show(player).then((response) => {
+  UI.show(player).then(((response) => {
     let selection = 0;
     if (response.canceled || response.selection == selection + buttonTotal) {
       return;
@@ -5524,10 +5422,9 @@ function PFEAmmoManagementAddAmmoUI(item, player) {
           player.runCommand(`clear @s ${selectedItem.typeId} -1 ${takeAmount}`);
         }
         return;
-      } else
-        selection++;
+      } else selection++;
     }
-  });
+  }));
 }
 function PFEArrowIcon(itemId) {
   const item = new ItemStack4(itemId, 1);
@@ -5572,8 +5469,7 @@ function PFEQuickReload(ammoComponent, item, player) {
   }
   let totalAmount = 0;
   for (let i = reloadingAmmo.length - 1; i > -1; i--) {
-    if (!reloadingAmmo.at(i))
-      continue;
+    if (!reloadingAmmo.at(i)) continue;
     totalAmount = totalAmount + reloadingAmmo.at(i).amount;
   }
   if (!ammoComponent.projectile.max) {
@@ -5635,8 +5531,7 @@ function UpdateBoltbowV2toV3(player, item) {
         upgrade.level = CapacityLevel;
         continue;
       }
-      if (upgrade.id == FlamingUpgradeDefault.id)
-        upgrade.level = FlamingLevel;
+      if (upgrade.id == FlamingUpgradeDefault.id) upgrade.level = FlamingLevel;
       updatedUpgrades.push(upgrade);
     }
   }
@@ -5705,110 +5600,89 @@ function PFEDisableConfigMainMenu(player) {
     if (response.selection == selection) {
       if (newProperty.quantumTeleporter) {
         newProperty.quantumTeleporter = false;
-      } else
-        newProperty.quantumTeleporter = true;
+      } else newProperty.quantumTeleporter = true;
       world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
       PFEDisableConfigMainMenu(player);
       return;
-    } else
-      selection++;
+    } else selection++;
     if (response.selection == selection) {
       if (newProperty.playerMagnet) {
         newProperty.playerMagnet = false;
-      } else
-        newProperty.playerMagnet = true;
+      } else newProperty.playerMagnet = true;
       world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
       PFEDisableConfigMainMenu(player);
       return;
-    } else
-      selection++;
+    } else selection++;
     if (response.selection == selection) {
       if (newProperty.kapowRing) {
         newProperty.kapowRing = false;
-      } else
-        newProperty.kapowRing = true;
+      } else newProperty.kapowRing = true;
       world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
       PFEDisableConfigMainMenu(player);
       return;
-    } else
-      selection++;
+    } else selection++;
     if (response.selection == selection) {
       if (newProperty.nukeRing) {
         newProperty.nukeRing = false;
-      } else
-        newProperty.nukeRing = true;
+      } else newProperty.nukeRing = true;
       world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
       PFEDisableConfigMainMenu(player);
       return;
-    } else
-      selection++;
+    } else selection++;
     if (response.selection == selection) {
       if (newProperty.sundial) {
         newProperty.sundial = false;
-      } else
-        newProperty.sundial = true;
+      } else newProperty.sundial = true;
       world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
       PFEDisableConfigMainMenu(player);
       return;
-    } else
-      selection++;
+    } else selection++;
     if (response.selection == selection) {
       if (newProperty.witherSpawner) {
         newProperty.witherSpawner = false;
-      } else
-        newProperty.witherSpawner = true;
+      } else newProperty.witherSpawner = true;
       world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
       PFEDisableConfigMainMenu(player);
       return;
-    } else
-      selection++;
+    } else selection++;
     if (response.selection == selection) {
       if (newProperty.bounty) {
         newProperty.bounty = false;
-      } else
-        newProperty.bounty = true;
+      } else newProperty.bounty = true;
       world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
       PFEDisableConfigMainMenu(player);
       return;
-    } else
-      selection++;
+    } else selection++;
     if (response.selection == selection) {
       if (newProperty.waypoints) {
         newProperty.waypoints = false;
-      } else
-        newProperty.waypoints = true;
+      } else newProperty.waypoints = true;
       newProperty.v = newProperty.v < 2 ? newProperty.v = 2 : newProperty.v;
       world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
       PFEDisableConfigMainMenu(player);
       return;
-    } else
-      selection++;
+    } else selection++;
     if (response.selection == selection) {
       world6.getDynamicProperty(`poke_pfe:disable_armor_effects`) == false ? world6.setDynamicProperty(`poke_pfe:disable_armor_effects`, true) : world6.setDynamicProperty(`poke_pfe:disable_armor_effects`, false);
       PFEDisableConfigMainMenu(player);
       return;
-    } else
-      selection++;
+    } else selection++;
     if (response.selection == selection) {
       if (newProperty.deathArmorRadius) {
         newProperty.deathArmorRadius = false;
-      } else
-        newProperty.deathArmorRadius = true;
+      } else newProperty.deathArmorRadius = true;
       world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
       PFEDisableConfigMainMenu(player);
       return;
-    } else
-      selection++;
+    } else selection++;
     if (response.selection == selection) {
       if (newProperty.cactusArmorRadius) {
         newProperty.cactusArmorRadius = false;
-      } else
-        newProperty.cactusArmorRadius = true;
+      } else newProperty.cactusArmorRadius = true;
       world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
       PFEDisableConfigMainMenu(player);
       return;
-    } else
-      selection++;
+    } else selection++;
     if (response.canceled || response.selection == selection) {
       return;
     }
@@ -5843,8 +5717,7 @@ function CheckEffects(player, additionalOptions, customParse) {
   const MainhandComponent = Mainhand?.getComponent(PFESetEffectId)?.customComponentParameters.params;
   const EquipmentComponents = [HelmetComponent, ChestplateComponent, LeggingsComponent, BootsComponent, OffhandComponent, MainhandComponent];
   for (let component of EquipmentComponents) {
-    if (!component)
-      continue;
+    if (!component) continue;
     for (let effect of component) {
       switch (effect.mode) {
         case "radius_effect": {
@@ -5904,8 +5777,7 @@ function CheckEffects(player, additionalOptions, customParse) {
     const NoveltyTags = player.getTags().filter((tag) => tag.includes(`novelty:poke`));
     for (let i = NoveltyTags.length; i > -1; i--) {
       const tag = NoveltyTags.at(i);
-      if (!tag)
-        continue;
+      if (!tag) continue;
       const item = new ItemStack5(tag.substring(8), 1);
       totalPieces += 1;
       switch (true) {
@@ -6272,21 +6144,18 @@ function CheckEffects(player, additionalOptions, customParse) {
   let noCommandRepeats = [];
   for (let command of commands) {
     if (command.no_repeat_id) {
-      if (noCommandRepeats.includes(command.no_repeat_id))
-        continue;
+      if (noCommandRepeats.includes(command.no_repeat_id)) continue;
       noCommandRepeats.push(command.no_repeat_id);
     }
     if (command.disable_check) {
       const disabledOptions = JSON.parse(world7.getDynamicProperty(PFEDisableConfigName).toString()) ?? PFEDisableConfigDefault;
       switch (command.disable_check) {
         case "cactus_radius": {
-          if (disabledOptions.cactusArmorRadius === false)
-            continue;
+          if (disabledOptions.cactusArmorRadius === false) continue;
           break;
         }
         case "death_radius": {
-          if (disabledOptions.deathArmorRadius === false)
-            continue;
+          if (disabledOptions.deathArmorRadius === false) continue;
           break;
         }
       }
@@ -6308,8 +6177,7 @@ function CheckEffects(player, additionalOptions, customParse) {
   let noRadiusEffectRepeats = [];
   for (let radiusEffect of radius_effects) {
     if (radiusEffect.no_repeat_id) {
-      if (noRadiusEffectRepeats.includes(radiusEffect.no_repeat_id))
-        continue;
+      if (noRadiusEffectRepeats.includes(radiusEffect.no_repeat_id)) continue;
       noRadiusEffectRepeats.push(radiusEffect.no_repeat_id);
       const SameNoRepeat = radius_effects.filter((effect) => effect.no_repeat_id == radiusEffect.no_repeat_id);
       let compiledEffect = {
@@ -6350,12 +6218,10 @@ function CheckEffects(player, additionalOptions, customParse) {
 }
 function startSetEffects() {
   return system4.runInterval(() => {
-    if (world7.getDynamicProperty(`poke_pfe:disable_armor_effects`))
-      return;
+    if (world7.getDynamicProperty(`poke_pfe:disable_armor_effects`)) return;
     const customParse = world7.getDynamicProperty(`poke_pfe:custom_effect_parser`) == true ? true : false;
     for (let player of world7.getAllPlayers()) {
-      if (!player)
-        continue;
+      if (!player) continue;
       CheckEffects(player, JSON.stringify(player.getTags()).includes(`novelty:poke`), customParse);
     }
   }, Number(world7.getDynamicProperty("poke_pfe:setEffectInterval") ?? 20));
@@ -6377,8 +6243,7 @@ function PFERollQuest(item, player, questType) {
 }
 var PFEQuestComponent = class {
   onUse(data, component) {
-    if (!data.itemStack)
-      return;
+    if (!data.itemStack) return;
     const componentInfo = component.params;
     const additionalComponentInfo = data.itemStack.getComponent("poke_pfe:custom_quests_info");
     if (!data.itemStack.getDynamicProperty(PFEQuestPropertyID)) {
@@ -6393,8 +6258,7 @@ var PFEQuestComponent = class {
   }
 };
 function QuestInfoUI(item, player) {
-  if (!item)
-    return;
+  if (!item) return;
   let UI = new ActionFormData8();
   let quest = JSON.parse(item.getDynamicProperty(PFEQuestPropertyID).toString()) ?? console.warn(`Quest not found or failed to parse || poke_pfe:quest`);
   let validRequiredItems = PokeGetItemFromInventory(player, void 0, quest.item) ?? false;
@@ -6407,8 +6271,7 @@ function QuestInfoUI(item, player) {
 - \xA7c${quest.tokenAmount}\xA7rx %poke_pfe.copper_token (%poke_pfe.tag)` });
   if (validRequiredItems) {
     for (let item2 of validRequiredItems) {
-      if (!item2)
-        continue;
+      if (!item2) continue;
       totalItems += item2.amount;
       continue;
     }
@@ -6416,8 +6279,7 @@ function QuestInfoUI(item, player) {
   if (validRequiredItems && quest.amount <= totalItems) {
     UI.button({ translate: `translation.poke_pfe.completeQuest` }, `textures/poke/common/confirm`);
     canComplete = true;
-  } else
-    UI.button({ translate: `translation.poke_pfe.missing_items` }, `textures/poke/common/chest_question`);
+  } else UI.button({ translate: `translation.poke_pfe.missing_items` }, `textures/poke/common/chest_question`);
   UI.button({ translate: `translation.poke:bossEventClose` }, "textures/poke/common/close");
   UI.show(player).then((response) => {
     let selection = 0;
@@ -6426,8 +6288,7 @@ function QuestInfoUI(item, player) {
       player.getComponent(EntityComponentTypes6.Equippable)?.setEquipment(EquipmentSlot6.Mainhand, void 0);
       player.dimension.spawnItem(new ItemStack6(`poke:copper_token`, quest.tokenAmount), player.location);
       player.playSound(`poke_pfe.quest.complete`, { pitch: clampNumber(Math.random() + 0.5, 0.85, 1.15), volume: 0.9 });
-    } else
-      selection++;
+    } else selection++;
     if (response.canceled || response.selection == selection) {
       return;
     }
@@ -6459,8 +6320,7 @@ var PFEWaypointVersion = 2;
 var PFEWaypointComponent = class {
   onUse(data, component) {
     const componentInfo = component.params;
-    if (!data.itemStack)
-      return;
+    if (!data.itemStack) return;
     let options = JSON.parse(world9.getDynamicProperty(PFEDisableConfigName).toString());
     if (options.waypoints === false) {
       data.source.sendMessage({ translate: `\xA7c%translation.poke_pfe.feature_disabled` });
@@ -6500,29 +6360,24 @@ function WaypointUIMainMenu(player, itemStack, component, reParseItem) {
     if (response.selection == selection) {
       WaypointUIViewWaypoints(player, item, component);
       return;
-    } else
-      selection++;
+    } else selection++;
     if (response.selection == selection) {
       WaypointUIOptions(player, item, component, waypointConfig);
       return;
-    } else
-      selection++;
+    } else selection++;
     if (UpgradeableComponent?.version) {
       if (response.selection == selection) {
         PokeUpgradeUI(player, item, ParsePFEUpgradeComponent(item, player, UpgradeableComponent), true, UpgradeableComponent);
         return;
-      } else
-        selection++;
+      } else selection++;
     }
     if (component.debug_mode) {
       if (response.selection == selection) {
         PokeErrorScreen(player, { text: `This is not ready yet` }, WaypointUIMainMenu(player, item, component));
         return;
-      } else
-        selection++;
+      } else selection++;
     }
-    if (response.canceled || response.selection == selection)
-      return;
+    if (response.canceled || response.selection == selection) return;
   });
 }
 function WaypointUIOptions(player, item, component, waypointConfig) {
@@ -6570,15 +6425,13 @@ function WaypointUIViewWaypoints(player, item, component) {
       if (response.selection == selection) {
         WaypointUIManageWaypoint(player, item, waypoint, component);
         return;
-      } else
-        selection++;
+      } else selection++;
     }
     if (waypointConfig.waypoints.length < (component.max_waypoints ?? WaypointTotal)) {
       if (response.selection == selection) {
         WaypointUICreateWaypoint(player, item, component);
         return;
-      } else
-        selection++;
+      } else selection++;
     }
     if (response.canceled || response.selection == selection) {
       WaypointUIMainMenu(player, item, component);
@@ -6605,28 +6458,23 @@ function WaypointUIManageWaypoint(player, item, waypoint, component) {
       }
       waypoint.location ? player.teleport(waypoint.location, { rotation: waypoint.rotation }) : PokeErrorScreen(player, { text: `This waypoint does not have a location set.` }, WaypointUIManageWaypoint(player, item, waypoint, component));
       return;
-    } else
-      selection++;
+    } else selection++;
     if (response.selection == selection) {
       PokeErrorScreen(player, { text: `This is not ready yet` }, WaypointUIManageWaypoint(player, item, waypoint, component));
       return;
-    } else
-      selection++;
+    } else selection++;
     if (response.selection == selection) {
       WaypointUIRenameWaypoint(player, item, waypoint, component);
       return;
-    } else
-      selection++;
+    } else selection++;
     if (response.selection == selection) {
       WaypointUIChangeWaypointIcon(player, item, waypoint, component);
       return;
-    } else
-      selection++;
+    } else selection++;
     if (response.selection == selection) {
       WaypointUIDeleteWaypoint(player, item, waypoint, component);
       return;
-    } else
-      selection++;
+    } else selection++;
     if (response.canceled || response.selection == selection) {
       WaypointUIViewWaypoints(player, item, component);
       return;
@@ -6676,8 +6524,7 @@ function WaypointUIDeleteWaypoint(player, item, waypoint, component) {
       };
       PokeSaveProperty(WaypointDynamicPropertyID, item, JSON.stringify(newProperty), player, EquipmentSlot7.Mainhand);
       return;
-    } else
-      selection++;
+    } else selection++;
     if (response.canceled || response.selection == selection) {
       WaypointUIManageWaypoint(player, item, waypoint, component);
       return;
@@ -6812,13 +6659,11 @@ function WaypointUIChangeWaypointIcon(player, item, waypoint, component) {
     if (response.selection == selection) {
       WaypointUISetIconPreset(player, item, waypoint, component);
       return;
-    } else
-      selection++;
+    } else selection++;
     if (response.selection == selection) {
       WaypointUISetIconCustom(player, item, waypoint, component);
       return;
-    } else
-      selection++;
+    } else selection++;
     if (response.canceled || response.selection == selection) {
       WaypointUIManageWaypoint(player, item, waypoint, component);
       return;
@@ -6853,8 +6698,7 @@ function WaypointUISetIconPreset(player, item, waypoint, component) {
         PokeSaveProperty(WaypointDynamicPropertyID, item, JSON.stringify(newProperty), player, EquipmentSlot7.Mainhand);
         WaypointUIViewWaypoints(player, item, component);
         return;
-      } else
-        selection++;
+      } else selection++;
     }
     if (response.canceled || response.selection == selection) {
       WaypointUIManageWaypoint(player, item, waypoint, component);
@@ -6900,8 +6744,7 @@ var RecipeBlockComponent = class {
       console.warn(`${data.block.typeId} Does not have an ID defined but needs to || poke_pfe:recipe_block Component`);
       return;
     }
-    if (!data.player)
-      return;
+    if (!data.player) return;
     PFERecipeBlockMainMenu(component, data.player, data.block);
   }
 };
@@ -6933,32 +6776,27 @@ function PFERecipeBlockMainMenu(component, player, block) {
       if (response.selection == selection) {
         ViewStoredItems(component, player, storedItems, block);
         return;
-      } else
-        selection++;
+      } else selection++;
     }
     if (component.can_show_item_upgrades) {
       if (response.selection == selection) {
         ViewUpgradeableItems(component, player, block);
         return;
-      } else
-        selection++;
+      } else selection++;
     }
     if (customRecipeComponent) {
       if (response.selection == selection) {
         ViewAllRecipes(component, player, customRecipeComponent, block, storedItems);
         return;
-      } else
-        selection++;
+      } else selection++;
     }
     if (component.debug_mode) {
       if (response.selection == selection) {
         Debug(component, player, block, storedItems);
         return;
-      } else
-        selection++;
+      } else selection++;
     }
-    if (response.canceled || response.selection == selection)
-      return;
+    if (response.canceled || response.selection == selection) return;
   });
 }
 function ViewUpgradeableItems(component, player, block) {
@@ -6967,8 +6805,7 @@ function ViewUpgradeableItems(component, player, block) {
   let validItems = [];
   for (const item of PokeGetItemFromInventory(player, void 0, void 0, true) ?? []) {
     const upgradeableComponent = item.item.getComponent(PFEUpgradeableId)?.customComponentParameters.params;
-    if (!upgradeableComponent)
-      continue;
+    if (!upgradeableComponent) continue;
     UI.button({ translate: item.item.localizationKey }, getTexturePathByIdentifier(item.item.typeId ?? "undefined"));
     validItems.push(item);
   }
@@ -6989,8 +6826,7 @@ function ViewUpgradeableItems(component, player, block) {
         const upgradeableComponent = ItemStack10.getComponent(PFEUpgradeableId)?.customComponentParameters.params;
         PokeUpgradeUI(player, ItemStack10, ParsePFEUpgradeComponent(ItemStack10, player, upgradeableComponent), true, upgradeableComponent, item.number);
         return;
-      } else
-        selection++;
+      } else selection++;
     }
     if (response.canceled || response.selection == selection) {
       PFERecipeBlockMainMenu(component, player, block);
@@ -7009,8 +6845,7 @@ function Debug(component, player, block, storedItems) {
       player.setDynamicProperty(`${component.id}:storedItems`, void 0);
       PFERecipeBlockMainMenu(component, player, block);
       return;
-    } else
-      selection++;
+    } else selection++;
     if (response.canceled || response.selection == selection) {
       PFERecipeBlockMainMenu(component, player, block);
       return;
@@ -7031,8 +6866,7 @@ function ViewAllRecipes(component, player, recipes, block, storedItems) {
       if (response.selection == selection) {
         ViewRecipeInfo(component, player, recipes, block, recipe, storedItems);
         return;
-      } else
-        selection++;
+      } else selection++;
     }
     if (response.canceled || response.selection == selection) {
       PFERecipeBlockMainMenu(component, player, block);
@@ -7075,8 +6909,7 @@ function ViewRecipeInfo(component, player, recipes, block, recipe, storedItems) 
         }
       }
     }
-    if (item.amount <= itemTotal)
-      canCraft++;
+    if (item.amount <= itemTotal) canCraft++;
     const color = item.amount <= itemTotal ? "a" : "c";
     UI.label({ translate: `- [\xA7${color}${itemTotal}\xA7r/\xA7${color}${item.amount}\xA7r] (\xA79${MakeAddonID(item.item)}\xA7r) %${MakeLocalizationKey(item.item)}` });
     amountInfo.push(thisAmountInfo);
@@ -7117,8 +6950,7 @@ function ViewRecipeInfo(component, player, recipes, block, recipe, storedItems) 
         }
         ViewRecipeInfo(component, player, recipes, block, recipe, currentStoredItems);
         return;
-      } else
-        selection++;
+      } else selection++;
     }
     if (response.canceled || response.selection == selection) {
       ViewAllRecipes(component, player, recipes, block, storedItems);
@@ -7148,15 +6980,13 @@ function ViewStoredItems(component, player, storedItems, block) {
       if (response.selection == selection) {
         AddItem(component, player, storedItems, block);
         return;
-      } else
-        selection++;
+      } else selection++;
     }
     for (const item of storedItems) {
       if (response.selection == selection) {
         ViewItem(component, player, item, storedItems, block);
         return;
-      } else
-        selection++;
+      } else selection++;
     }
     if (response.selection == selection) {
       PFERecipeBlockMainMenu(component, player, block);
@@ -7193,8 +7023,7 @@ function AddItem(component, player, storedItems, block) {
         player.setDynamicProperty(storedItemsDynamicPropID, JSON.stringify(oldItems.concat(newItem)));
         ViewStoredItems(component, player, oldItems.concat(newItem), block);
         return;
-      } else
-        selection++;
+      } else selection++;
     }
     if (response.selection == selection) {
       ViewStoredItems(component, player, storedItems, block);
@@ -7221,14 +7050,12 @@ function ViewItem(component, player, item, storedItems, block) {
       if (response.selection == selection) {
         DepositItem(component, player, item, CanDepositAmount, storedItems, block);
         return;
-      } else
-        selection++;
+      } else selection++;
     }
     if (response.selection == selection) {
       WithdrawItem(component, player, item, storedItems, block);
       return;
-    } else
-      selection++;
+    } else selection++;
     if (response.canceled || response.selection == selection) {
       ViewStoredItems(component, player, storedItems, block);
       return;
@@ -7281,13 +7108,12 @@ function WithdrawItem(component, player, item, storedItems, block) {
       const max = itemStack.maxAmount;
       if (slider == 1) {
         player.dimension.spawnItem(new ItemStack8(item.i), player.location);
-      } else
-        for (let i = slider; i > -1; i = i - max) {
-          if (i <= 0) {
-            break;
-          }
-          pokeAddItemsToPlayerOrDrop(player, new ItemStack8(item.i, clampNumber(i, 0, max)));
+      } else for (let i = slider; i > -1; i = i - max) {
+        if (i <= 0) {
+          break;
         }
+        pokeAddItemsToPlayerOrDrop(player, new ItemStack8(item.i, clampNumber(i, 0, max)));
+      }
       player.setDynamicProperty(storedItemsDynamicPropID, JSON.stringify(newItem.a <= 0 ? oldItems : oldItems.concat(newItem)));
       ViewStoredItems(component, player, newItem.a <= 0 ? oldItems : oldItems.concat(newItem), block);
       return;
@@ -7303,8 +7129,7 @@ function getTexturePathByIdentifier(item) {
     item = new ItemStack8(item, 1);
   }
   const IconPathComponent = item.getComponent("poke_pfe:icon_path")?.customComponentParameters.params;
-  if (IconPathComponent)
-    return IconPathComponent;
+  if (IconPathComponent) return IconPathComponent;
   return "textures/poke/common/question";
 }
 function ParseRecipeItems(strings) {
@@ -7332,13 +7157,13 @@ function MakeAddonID(string) {
 
 // scripts/main.ts
 var currentVersion = 103e3;
-world10.afterEvents.playerJoin.subscribe((data) => {
+world10.afterEvents.playerJoin.subscribe(((data) => {
   let birthdays = JSON.parse(world10.getDynamicProperty(`poke:birthdays`).toString());
   system6.runTimeout(() => {
-    world10.getAllPlayers().forEach((player) => {
+    world10.getAllPlayers().forEach(((player) => {
       if (player.id == data.playerId) {
         let currentTime = new Date(Date.now() + PokeTimeZoneOffset(player));
-        birthdays.forEach((birthday) => {
+        birthdays.forEach(((birthday) => {
           if (birthday.day == currentTime.getDate() && birthday.month == currentTime.getMonth()) {
             let name = { text: birthday.name };
             if (birthday.style == "dev") {
@@ -7353,11 +7178,11 @@ world10.afterEvents.playerJoin.subscribe((data) => {
             }
             player.sendMessage({ translate: `translation.poke:birthdayAnnounce`, with: { rawtext: [PokeTimeGreeting(currentTime, player, void 0, true), { text: player.name }, name] } });
           }
-        });
+        }));
       }
-    });
+    }));
   }, 600);
-});
+}));
 function PFEHourTimeDownEvents() {
   let currentTime = new Date(Date.now());
   let allPlayers = world10.getAllPlayers();
@@ -7388,8 +7213,7 @@ function Post(data, up, down) {
   const WestState = "pfe:wall_w";
   const AboveState = "poke:connected_above";
   const BelowState = "poke:connected_below";
-  if (data.permutation.getState(PostState) == void 0)
-    return;
+  if (data.permutation.getState(PostState) == void 0) return;
   if (Permutation.getState(NorthState) == true) {
     PostCheckNorth = true;
   }
@@ -7402,25 +7226,17 @@ function Post(data, up, down) {
   if (Permutation.getState(WestState) == true) {
     PostCheckWest = true;
   }
-  if (PostCheckNorth == false && PostCheckSouth == false && PostCheckEast == false && PostCheckWest == false)
-    Post2 = true;
-  if (PostCheckNorth == true && PostCheckSouth == false && PostCheckEast == false && PostCheckWest == false)
-    Post2 = true;
-  if (PostCheckNorth == false && PostCheckSouth == true && PostCheckEast == false && PostCheckWest == false)
-    Post2 = true;
-  if (PostCheckNorth == false && PostCheckSouth == false && PostCheckEast == true && PostCheckWest == false)
-    Post2 = true;
-  if (PostCheckNorth == false && PostCheckSouth == false && PostCheckEast == false && PostCheckWest == true)
-    Post2 = true;
-  if (PostCheckNorth && PostCheckEast || PostCheckNorth && PostCheckWest || PostCheckSouth && PostCheckEast || PostCheckSouth && PostCheckWest)
-    Post2 = true;
+  if (PostCheckNorth == false && PostCheckSouth == false && PostCheckEast == false && PostCheckWest == false) Post2 = true;
+  if (PostCheckNorth == true && PostCheckSouth == false && PostCheckEast == false && PostCheckWest == false) Post2 = true;
+  if (PostCheckNorth == false && PostCheckSouth == true && PostCheckEast == false && PostCheckWest == false) Post2 = true;
+  if (PostCheckNorth == false && PostCheckSouth == false && PostCheckEast == true && PostCheckWest == false) Post2 = true;
+  if (PostCheckNorth == false && PostCheckSouth == false && PostCheckEast == false && PostCheckWest == true) Post2 = true;
+  if (PostCheckNorth && PostCheckEast || PostCheckNorth && PostCheckWest || PostCheckSouth && PostCheckEast || PostCheckSouth && PostCheckWest) Post2 = true;
   if (Post2) {
-    if (Permutation.getState(PostState) === void 0)
-      return;
+    if (Permutation.getState(PostState) === void 0) return;
     UpdatePost(data, true);
   } else {
-    if (Permutation.getState(PostState) === void 0)
-      return;
+    if (Permutation.getState(PostState) === void 0) return;
     UpdatePost(data, false);
   }
 }
@@ -7450,18 +7266,12 @@ function UpdatePost(block, value, up) {
     if (block.permutation.getState(WestState) == true) {
       PostCheckWest = true;
     }
-    if (!PostCheckNorth && !PostCheckSouth && !PostCheckEast && !PostCheckWest)
-      Post2 = true;
-    if (PostCheckNorth && !PostCheckSouth && PostCheckEast == false && !PostCheckWest)
-      Post2 = true;
-    if (!PostCheckNorth && PostCheckSouth && PostCheckEast == false && !PostCheckWest)
-      Post2 = true;
-    if (!PostCheckNorth && !PostCheckSouth && PostCheckEast && !PostCheckWest)
-      Post2 = true;
-    if (!PostCheckNorth && !PostCheckSouth && !PostCheckEast && PostCheckWest)
-      Post2 = true;
-    if (PostCheckNorth && PostCheckEast || PostCheckNorth && PostCheckWest || PostCheckSouth && PostCheckEast || PostCheckSouth && PostCheckWest)
-      Post2 = true;
+    if (!PostCheckNorth && !PostCheckSouth && !PostCheckEast && !PostCheckWest) Post2 = true;
+    if (PostCheckNorth && !PostCheckSouth && PostCheckEast == false && !PostCheckWest) Post2 = true;
+    if (!PostCheckNorth && PostCheckSouth && PostCheckEast == false && !PostCheckWest) Post2 = true;
+    if (!PostCheckNorth && !PostCheckSouth && PostCheckEast && !PostCheckWest) Post2 = true;
+    if (!PostCheckNorth && !PostCheckSouth && !PostCheckEast && PostCheckWest) Post2 = true;
+    if (PostCheckNorth && PostCheckEast || PostCheckNorth && PostCheckWest || PostCheckSouth && PostCheckEast || PostCheckSouth && PostCheckWest) Post2 = true;
     if (Post2) {
       if (up) {
         if (block.above()?.hasTag(`pfe_wall`)) {
@@ -7574,16 +7384,14 @@ system6.beforeEvents.startup.subscribe((data) => {
     {
       onUse(data2, componentInfo) {
         let options = JSON.parse(world10.getDynamicProperty(PFEDisableConfigName).toString());
-        if (!options.bounty)
-          return;
+        if (!options.bounty) return;
         if (PFEStartBossEvent() == 0) {
           data2.source.sendMessage({ translate: `translation.poke:bossEventNoSpawnError` });
           data2.source.playSound(`note.didgeridoo`, { pitch: 0.825 });
           return;
         }
         ;
-        if (data2.source.getGameMode() == GameMode5.Creative)
-          return;
+        if (data2.source.getGameMode() == GameMode5.Creative) return;
         data2.source.getComponent(EntityComponentTypes9.Equippable)?.setEquipment(EquipmentSlot8.Mainhand, PokeDecrementStack(data2.itemStack));
       }
     }
@@ -7592,8 +7400,7 @@ system6.beforeEvents.startup.subscribe((data) => {
     "poke:veinMiner",
     {
       onMineBlock(data2, component) {
-        if (!data2.minedBlockPermutation.hasTag("minecraft:is_axe_item_destructible"))
-          return;
+        if (!data2.minedBlockPermutation.hasTag("minecraft:is_axe_item_destructible")) return;
         let dimension = data2.block.dimension;
         let location = data2.block.location;
         let toBreak = [
@@ -7692,20 +7499,17 @@ system6.beforeEvents.startup.subscribe((data) => {
     "poke:shootProjectile",
     {
       onUse(data2, component) {
-        if (data2.itemStack == void 0)
-          return;
+        if (data2.itemStack == void 0) return;
         if (data2.itemStack.typeId == "poke:nuke_ring") {
           let options = JSON.parse(world10.getDynamicProperty(PFEDisableConfigName).toString());
-          if (!options.nukeRing)
-            return;
+          if (!options.nukeRing) return;
         }
         const headLocate = data2.source.getHeadLocation();
         const pTag = data2.itemStack.getTags();
         const angle = data2.source.getViewDirection();
         const projEntity = data2.source.dimension.spawnEntity("" + pTag, headLocate);
         const projComp = projEntity.getComponent(EntityComponentTypes9.Projectile);
-        if (!projComp)
-          return;
+        if (!projComp) return;
         data2.source.playSound("random.bow");
         projComp.owner = data2.source;
         projComp.shoot(angle);
@@ -8032,8 +7836,7 @@ system6.beforeEvents.startup.subscribe((data) => {
     "poke:cc_dodge",
     {
       onUse(data2, componentInfo) {
-        if (data2.itemStack === void 0)
-          return;
+        if (data2.itemStack === void 0) return;
         const cooldownComponent = data2.itemStack.getComponent(ItemComponentTypes4.Cooldown);
         const equippableComponent = data2.source.getComponent(EntityComponentTypes9.Equippable);
         const moveDir = data2.source.getVelocity();
@@ -8041,8 +7844,7 @@ system6.beforeEvents.startup.subscribe((data) => {
         data2.source.spawnParticle("minecraft:wind_explosion_emitter", data2.source.location);
         data2.source.applyKnockback({ x: moveDir.x * 5, z: moveDir.z * 5 }, moveDir.y + 0.5);
         data2.source.playSound("component.jump_to_block");
-        if (data2.source.getGameMode() == GameMode5.Creative)
-          return;
+        if (data2.source.getGameMode() == GameMode5.Creative) return;
         cooldownComponent?.startCooldown(data2.source);
         if (amount <= 1) {
           equippableComponent?.setEquipment(EquipmentSlot8.Mainhand, void 0);
@@ -8102,13 +7904,10 @@ system6.beforeEvents.startup.subscribe((data) => {
     {
       onPlayerBreak(data2, component) {
         const equippableComponent = data2.player?.getComponent(EntityComponentTypes9.Equippable);
-        if (equippableComponent === void 0)
-          return;
-        if (!equippableComponent.getEquipment(EquipmentSlot8.Mainhand)?.hasComponent(ItemComponentTypes4.Enchantable))
-          return;
+        if (equippableComponent === void 0) return;
+        if (!equippableComponent.getEquipment(EquipmentSlot8.Mainhand)?.hasComponent(ItemComponentTypes4.Enchantable)) return;
         const enchantableComponent = equippableComponent.getEquipment(EquipmentSlot8.Mainhand)?.getComponent(ItemComponentTypes4.Enchantable);
-        if (!enchantableComponent?.hasEnchantment(MinecraftEnchantmentTypes.Fortune))
-          return;
+        if (!enchantableComponent?.hasEnchantment(MinecraftEnchantmentTypes.Fortune)) return;
         let fortuneLevel = enchantableComponent.getEnchantment(MinecraftEnchantmentTypes.Fortune).level;
         let rng = Math.round(Math.random());
         const blockLocation = `${data2.block.x} ${data2.block.y} ${data2.block.z}`;
@@ -8117,21 +7916,18 @@ system6.beforeEvents.startup.subscribe((data) => {
           if (fortuneLevel >= 3) {
             data2.block.dimension.runCommand(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}.loot"`);
             data2.block.dimension.runCommand(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}.loot"`);
-            if (rng == 0)
-              return;
+            if (rng == 0) return;
             data2.block.dimension.runCommand(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}.loot"`);
             return;
           }
           if (fortuneLevel == 2) {
             data2.block.dimension.runCommand(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}.loot"`);
-            if (rng == 0)
-              return;
+            if (rng == 0) return;
             data2.block.dimension.runCommand(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}.loot"`);
             return;
           }
           if (fortuneLevel == 1) {
-            if (rng == 0)
-              return;
+            if (rng == 0) return;
             data2.block.dimension.runCommand(`execute positioned ${blockLocation} run loot spawn ~~~ loot "poke/pfe/${blockId}.loot"`);
             return;
           }
@@ -8145,11 +7941,9 @@ system6.beforeEvents.startup.subscribe((data) => {
     "poke_pfe:can_double_slab",
     {
       onPlayerInteract(data2, component) {
-        if (!data2.player)
-          return;
+        if (!data2.player) return;
         const DoubleState = "poke:double";
-        if (data2.block.permutation.getState(DoubleState) == true)
-          return;
+        if (data2.block.permutation.getState(DoubleState) == true) return;
         const blockLocation = `${data2.block.location.x} ${data2.block.location.y} ${data2.block.location.z}`;
         const slabId = data2.block.typeId;
         const equippableComponent = data2.player.getComponent(EntityComponentTypes9.Equippable);
@@ -8160,16 +7954,14 @@ system6.beforeEvents.startup.subscribe((data) => {
             data2.block.setWaterlogged(false);
             data2.block.setPermutation(data2.block.permutation.withState(DoubleState, true));
             data2.block.dimension.playSound(`use.stone`, data2.block.center());
-            if (data2.player?.getGameMode() == GameMode5.Creative)
-              return;
+            if (data2.player?.getGameMode() == GameMode5.Creative) return;
             if (itemStackAmount <= 0) {
               equippableComponent?.setEquipment(EquipmentSlot8.Mainhand, void 0);
               return;
             }
             equippableComponent?.setEquipment(EquipmentSlot8.Mainhand, new ItemStack9(slabId, itemStackAmount));
             return;
-          } else
-            return;
+          } else return;
         }
         return;
       }
@@ -8271,8 +8063,7 @@ system6.beforeEvents.startup.subscribe((data) => {
         const equippableComponent = data2.player?.getComponent(EntityComponentTypes9.Equippable);
         const mainhandItem = equippableComponent?.getEquipment(EquipmentSlot8.Mainhand);
         const GrowthStageState = "poke:growth_stage";
-        if (mainhandItem === void 0)
-          return;
+        if (mainhandItem === void 0) return;
         const block_location = `${data2.block.x} ${data2.block.y} ${data2.block.z}`;
         let growth_state = data2.block.permutation.getState(GrowthStageState);
         let growth_stage = growth_state + Math.round(Math.random() * 3);
@@ -8331,8 +8122,7 @@ system6.beforeEvents.startup.subscribe((data) => {
     "poke:cc_block_seat",
     {
       onPlayerInteract(data2, component) {
-        if (!data2.player)
-          return;
+        if (!data2.player) return;
         const slabId = data2.block.typeId;
         const mainhand = data2.player.getComponent(EntityComponentTypes9.Equippable)?.getEquipment(EquipmentSlot8.Mainhand);
         const DoubleState = "poke:double";
@@ -8406,8 +8196,7 @@ system6.beforeEvents.startup.subscribe((data) => {
         const WestState = "pfe:wall_w";
         const AboveState = "poke:connected_above";
         const BelowState = "poke:connected_below";
-        if (!NorthBlock || !SouthBlock || !EastBlock || !WestBlock)
-          return;
+        if (!NorthBlock || !SouthBlock || !EastBlock || !WestBlock) return;
         if (!NorthBlock.isAir && !NorthBlock.isLiquid && !NorthBlock.canBeDestroyedByLiquidSpread(LiquidType.Water)) {
           data2.block.setPermutation(data2.block.permutation.withState(NorthState, true));
           if (NorthBlock.permutation.getState(SouthState) != void 0) {
@@ -8486,8 +8275,7 @@ system6.beforeEvents.startup.subscribe((data) => {
         const WestState = "pfe:wall_w";
         const AboveState = "poke:connected_above";
         const BelowState = "poke:connected_below";
-        if (!NorthBlock || !SouthBlock || !EastBlock || !WestBlock || !AboveBlock || !BelowBlock)
-          return;
+        if (!NorthBlock || !SouthBlock || !EastBlock || !WestBlock || !AboveBlock || !BelowBlock) return;
         if (NorthBlock.permutation.getState(SouthState) != void 0) {
           NorthBlock.setPermutation(NorthBlock.permutation.withState(SouthState, false));
           Post(NorthBlock, true, true);
@@ -8602,8 +8390,7 @@ system6.beforeEvents.startup.subscribe((data) => {
     "poke_pfe:elevator",
     {
       onStepOff(data2, component) {
-        if (!data2.entity)
-          return;
+        if (!data2.entity) return;
         let player = data2.entity;
         if (player.typeId == MinecraftEntityTypes.Player) {
           let maxSearch = 64;
@@ -8643,8 +8430,7 @@ system6.beforeEvents.startup.subscribe((data) => {
     "poke_pfe:omnivator",
     {
       onStepOff(data2, component) {
-        if (!data2.entity)
-          return;
+        if (!data2.entity) return;
         let player = data2.entity;
         if (player.typeId == MinecraftEntityTypes.Player) {
           let maxSearch = 64;
@@ -8732,8 +8518,7 @@ system6.beforeEvents.startup.subscribe((data) => {
     "poke_pfe:teleport",
     {
       onUse(data2, componentInfo) {
-        if (!data2.itemStack)
-          return;
+        if (!data2.itemStack) return;
         const component = componentInfo.params;
         const location = component.location == "location_when_used" ? data2.source.location : void 0;
         const dimension = component.dimension ? world10.getDimension(component.dimension) : data2.source.dimension;
@@ -8776,8 +8561,7 @@ system6.beforeEvents.startup.subscribe((data) => {
           block = block.substring(0, block.indexOf("{"));
           const permutations = JSON.parse(permutationString);
           data2.block.setPermutation(BlockPermutation2.resolve(block, permutations));
-        } else
-          data2.block.setType(block);
+        } else data2.block.setType(block);
       }
     }
   );
@@ -8820,8 +8604,7 @@ system6.beforeEvents.startup.subscribe((data) => {
                 places_block = places_block.substring(0, places_block.indexOf("{"));
                 const permutations = JSON.parse(permutationString);
                 block.setPermutation(BlockPermutation2.resolve(places_block, permutations));
-              } else
-                block.setType(component.places);
+              } else block.setType(component.places);
             } else {
               let parsedBlocks = [];
               for (const unparsedBlock of component.places) {
@@ -8841,8 +8624,7 @@ system6.beforeEvents.startup.subscribe((data) => {
                     places_block = places_block.substring(0, places_block.indexOf("{"));
                     const permutations = JSON.parse(permutationString);
                     block.setPermutation(BlockPermutation2.resolve(places_block, permutations));
-                  } else
-                    block.setType(parsedBlock.places);
+                  } else block.setType(parsedBlock.places);
                 }
               }
             }
@@ -8886,8 +8668,7 @@ system6.beforeEvents.startup.subscribe((data) => {
             };
             var GetBlock = GetBlock2;
             const block = GetBlock2();
-            if (!block)
-              continue;
+            if (!block) continue;
             let BannedBlocks = [
               MinecraftBlockTypes.Air,
               MinecraftBlockTypes.LightBlock0,
@@ -8918,8 +8699,7 @@ system6.beforeEvents.startup.subscribe((data) => {
               MinecraftBlockTypes.Bedrock,
               MinecraftBlockTypes.ReinforcedDeepslate
             ];
-            if (BannedBlocks.includes(block.typeId) || block.isLiquid || block.isAir)
-              continue;
+            if (BannedBlocks.includes(block.typeId) || block.isLiquid || block.isAir) continue;
             const block_location = `${block.x} ${block.y} ${block.z}`;
             const replacedAs = block.isWaterlogged ? MinecraftBlockTypes.FlowingWater : MinecraftBlockTypes.Air;
             data2.dimension.runCommand(`execute positioned ${block_location} run setblock ~~~ ${replacedAs} destroy`);
@@ -8940,8 +8720,7 @@ system6.beforeEvents.startup.subscribe((data) => {
     {
       onPlayerInteract(data2, componentInfo) {
         const component = componentInfo.params;
-        if (typeof component.face != "string" && !component.face.includes(data2.face) || data2.block.permutation.getState("minecraft:block_face") == data2.face.toLowerCase())
-          return;
+        if (typeof component.face != "string" && !component.face.includes(data2.face) || data2.block.permutation.getState("minecraft:block_face") == data2.face.toLowerCase()) return;
         data2.block.setPermutation(data2.block.permutation.withState("minecraft:block_face", data2.face.toLowerCase()));
         if (component.sound) {
           data2.dimension.playSound(component.sound.identifier, data2.block.location, { pitch: component.sound.pitch, volume: component.sound.volume });
@@ -8957,15 +8736,13 @@ system6.beforeEvents.startup.subscribe((data) => {
         for (const blocks of component.transforms) {
           let toBlock = blocks.substring(blocks.indexOf("::") + 2);
           const fromBlock = blocks.substring(0, blocks.indexOf("::"));
-          if (data2.block.typeId != fromBlock)
-            continue;
+          if (data2.block.typeId != fromBlock) continue;
           if (toBlock.includes("{")) {
             const permutationString = toBlock.substring(toBlock.indexOf("{"));
             toBlock = toBlock.substring(0, toBlock.indexOf("{"));
             const permutations = JSON.parse(permutationString);
             data2.block.setPermutation(BlockPermutation2.resolve(toBlock, permutations));
-          } else
-            data2.block.setType(toBlock);
+          } else data2.block.setType(toBlock);
           PokeDamageItemUB(data2.itemStack, 1, data2.source, EquipmentSlot8.Mainhand);
           break;
         }
@@ -8978,8 +8755,7 @@ system6.beforeEvents.startup.subscribe((data) => {
     {
       onPlace(data2, componentInfo) {
         const component = componentInfo.params;
-        if (!component.mode.includes("place"))
-          return;
+        if (!component.mode.includes("place")) return;
         for (const blockId of component.check_for_blocks) {
           switch (blockId) {
             case data2.block.north()?.typeId:
@@ -9026,8 +8802,7 @@ system6.beforeEvents.startup.subscribe((data) => {
       },
       onTick(data2, componentInfo) {
         const component = componentInfo.params;
-        if (!component.mode.includes("tick"))
-          return;
+        if (!component.mode.includes("tick")) return;
         for (const blockId of component.check_for_blocks) {
           switch (blockId) {
             case data2.block.north()?.typeId:
@@ -9080,12 +8855,10 @@ system6.beforeEvents.startup.subscribe((data) => {
         const component = componentInfo.params;
         if (data2.itemStack.typeId == "poke:wither_spawner") {
           let options = JSON.parse(world10.getDynamicProperty(PFEDisableConfigName).toString());
-          if (!options.witherSpawner)
-            return;
+          if (!options.witherSpawner) return;
         }
         const player = data2.source;
-        if (player.typeId != MinecraftEntityTypes.Player)
-          return;
+        if (player.typeId != MinecraftEntityTypes.Player) return;
         let spawnLocation = data2.block.center();
         switch (data2.blockFace) {
           case Direction2.North: {
@@ -9115,8 +8888,7 @@ system6.beforeEvents.startup.subscribe((data) => {
         }
         const equippableComponent = data2.source.getComponent(EntityComponentTypes9.Equippable);
         player.dimension.spawnEntity(component.entity, spawnLocation);
-        if (player.getGameMode() == GameMode5.Creative)
-          return;
+        if (player.getGameMode() == GameMode5.Creative) return;
         if (data2.itemStack.amount <= 1) {
           equippableComponent?.setEquipment(EquipmentSlot8.Mainhand, void 0);
           return;
@@ -9130,11 +8902,9 @@ system6.beforeEvents.startup.subscribe((data) => {
     "poke_pfe:launch_user",
     {
       onUse(data2, componentInfo) {
-        if (data2.itemStack === void 0)
-          return;
+        if (data2.itemStack === void 0) return;
         const component = componentInfo.params;
-        if (component.sneaking_stops_this && data2.source.isSneaking)
-          return;
+        if (component.sneaking_stops_this && data2.source.isSneaking) return;
         const vierDirection = data2.source.getViewDirection();
         const location = data2.source.getHeadLocation();
         const cooldownComp = data2.itemStack.getComponent(ItemComponentTypes4.Cooldown);
@@ -9144,8 +8914,7 @@ system6.beforeEvents.startup.subscribe((data) => {
         data2.source.applyKnockback({ x: vierDirection.x * (component.horizontal_strength ?? 1), z: vierDirection.z * (component.horizontal_strength ?? 1) }, vierDirection.y * (component.vertical_strength ?? 1));
         if (component.spawn_particles) {
           for (let particle of component.spawn_particles) {
-            if (!particle)
-              continue;
+            if (!particle) continue;
             data2.source.spawnParticle(particle, location);
           }
         }
@@ -9166,11 +8935,9 @@ system6.beforeEvents.startup.subscribe((data) => {
     "poke_pfe:run_command",
     {
       onUse(data2, component) {
-        if (!data2.itemStack)
-          return;
+        if (!data2.itemStack) return;
         const componentInfo = component.params;
-        if (!(componentInfo.mode == void 0 || componentInfo.mode.includes("on_use")))
-          return;
+        if (!(componentInfo.mode == void 0 || componentInfo.mode.includes("on_use"))) return;
         if (componentInfo.can_be_disabled) {
           let options = JSON.parse(world10.getDynamicProperty(PFEDisableConfigName).toString()) ?? PFEDisableConfigDefault;
           switch (true) {
@@ -9180,37 +8947,28 @@ system6.beforeEvents.startup.subscribe((data) => {
             }
           }
         }
-        if (typeof componentInfo.command == "string")
-          data2.source.runCommand(componentInfo.command);
+        if (typeof componentInfo.command == "string") data2.source.runCommand(componentInfo.command);
         else if (componentInfo.command)
           for (const command of componentInfo.command) {
             data2.source.runCommand(command);
           }
-        if (componentInfo.trigger_cooldown)
-          data2.itemStack.getComponent(ItemComponentTypes4.Cooldown)?.startCooldown(data2.source);
-        if (componentInfo.take_durability !== false)
-          PokeDamageItemUB(data2.itemStack, void 0, data2.source, EquipmentSlot8.Mainhand);
+        if (componentInfo.trigger_cooldown) data2.itemStack.getComponent(ItemComponentTypes4.Cooldown)?.startCooldown(data2.source);
+        if (componentInfo.take_durability !== false) PokeDamageItemUB(data2.itemStack, void 0, data2.source, EquipmentSlot8.Mainhand);
         return;
       },
       onUseOn(data2, component) {
-        if (!data2.itemStack)
-          return;
+        if (!data2.itemStack) return;
         const componentInfo = component.params;
-        if (!componentInfo.mode?.includes("on_use_on"))
-          return;
+        if (!componentInfo.mode?.includes("on_use_on")) return;
         const player = data2.source;
-        if (player.typeId != MinecraftEntityTypes.Player)
-          return;
-        if (typeof componentInfo.command == "string")
-          data2.block.dimension.runCommand(`execute at ${data2.block.x} ${data2.block.y} ${data2.block.z} run ${componentInfo.command}`);
+        if (player.typeId != MinecraftEntityTypes.Player) return;
+        if (typeof componentInfo.command == "string") data2.block.dimension.runCommand(`execute at ${data2.block.x} ${data2.block.y} ${data2.block.z} run ${componentInfo.command}`);
         else if (componentInfo.command)
           for (const command of componentInfo.command) {
             data2.block.dimension.runCommand(`execute at ${data2.block.x} ${data2.block.y} ${data2.block.z} run ${command}`);
           }
-        if (componentInfo.trigger_cooldown)
-          data2.itemStack.getComponent(ItemComponentTypes4.Cooldown)?.startCooldown(player);
-        if (componentInfo.take_durability !== false)
-          PokeDamageItemUB(data2.itemStack, void 0, player, EquipmentSlot8.Mainhand);
+        if (componentInfo.trigger_cooldown) data2.itemStack.getComponent(ItemComponentTypes4.Cooldown)?.startCooldown(player);
+        if (componentInfo.take_durability !== false) PokeDamageItemUB(data2.itemStack, void 0, player, EquipmentSlot8.Mainhand);
         return;
       }
     }
@@ -9277,8 +9035,7 @@ world10.afterEvents.worldLoad.subscribe((data) => {
     world10.setDynamicProperty(PFEDisableConfigName, JSON.stringify(PFEDisableConfigDefault));
   }
   const birthdayProperty = world10.getDynamicProperty(`poke:birthdays`);
-  if (typeof birthdayProperty != "string")
-    world10.setDynamicProperty(`poke:birthdays`, `[]`);
+  if (typeof birthdayProperty != "string") world10.setDynamicProperty(`poke:birthdays`, `[]`);
   const CustomEventsDynamicProp = world10.getDynamicProperty(`poke:customEvents`);
   typeof CustomEventsDynamicProp == "string" ? JSON.parse(CustomEventsDynamicProp) ?? world10.setDynamicProperty(`poke:customEvents`, `[]`) : world10.setDynamicProperty(`poke:customEvents`, `[]`);
   if (typeof world10.getDynamicProperty(PFEBossEventConfigName) == "string") {
@@ -9299,22 +9056,41 @@ world10.afterEvents.worldLoad.subscribe((data) => {
 var DataStorageDynamicPropertyId = "registered_data_storage_items";
 system6.afterEvents.scriptEventReceive.subscribe((data) => {
   switch (data.id) {
+    /**
+             This will send true (as a string) to the scriptevent defined in the message part 
+    
+            example command: `scriptevent poke_pfe:enabled poke_pfe:receive_test`
+    
+            - in this case it will send true to poke_pfe:receive_test
+             */
     case `poke_pfe:enabled`: {
       system6.sendScriptEvent(data.message, "true");
       break;
     }
+    /*
+            This will be used to have PFE use the item provided as a form of data storage
+    
+            What this means is you can use that item's components to import data that would normally be sent via /scriptevent
+            */
     case `poke_custom:register_data_storage`: {
       const dynamicProperty = world10.getDynamicProperty(DataStorageDynamicPropertyId);
       const registeredItems = JSON.parse(typeof dynamicProperty == "string" ? dynamicProperty : "[]") ?? [];
       world10.setDynamicProperty(DataStorageDynamicPropertyId, JSON.stringify(registeredItems.concat(data.message)));
       break;
     }
+    /*
+    This can be used to add additional presets to the set effects
+    */
     case `poke_pfe:add_set_effect_preset`: {
       const currentPresets = JSON.parse(world10.getDynamicProperty(PFECustomArmorEffectDynamicProperty).toString()) ?? [];
       let newPresets = currentPresets.concat(JSON.parse(data.message).value) ?? currentPresets;
       world10.setDynamicProperty(PFECustomArmorEffectDynamicProperty, JSON.stringify(newPresets));
       break;
     }
+    /*
+    Theses can be used to add quests into PFE's quest system
+    see `scripts\quests.ts` for more info 
+    */
     case PFECustomMineQuestsPropertyID: {
       const currentQuests = JSON.parse(world10.getDynamicProperty(PFECustomMineQuestsPropertyID).toString()) ?? [];
       let newQuests = currentQuests.concat(JSON.parse(data.message).value) ?? currentQuests;
@@ -9337,6 +9113,12 @@ system6.afterEvents.scriptEventReceive.subscribe((data) => {
       let newQuests = currentQuests.concat(JSON.parse(data.message).value) ?? currentQuests;
       world10.setDynamicProperty(PFECustomCraftQuestsPropertyID, JSON.stringify(newQuests));
     }
+    /*case (`poke:test`): {
+        let item = data.sourceEntity?.getComponent(EntityComponentTypes.Equippable)?.getEquipment(EquipmentSlot.Mainhand)
+        item?.setDynamicProperty(`poke:ammo`, JSON.stringify({ v: 2, max: 32, amount: 12, entityId: "poke:galaxy_arrow", id: "poke:galaxy_arrow", upgrades: [{ id: "pfe:capacity", level: 1, maxLevel: undefined }, { id: "pfe:flaming", level: 0, maxLevel: 1 }] }))
+        data.sourceEntity?.getComponent(EntityComponentTypes.Equippable)?.setEquipment(EquipmentSlot.Mainhand, item)
+    }*/
+    // This is to check if there are multiple versions of PFE applied to a world at a time
     case "poke_pfe:dupe_check": {
       const Version = Number(data.message);
       if (Version < currentVersion) {
@@ -9344,6 +9126,8 @@ system6.afterEvents.scriptEventReceive.subscribe((data) => {
       }
       break;
     }
+    // Sends the version number of PFE to the script event id provided in the message
+    // PFE Version (ex: 102950 = v1.2.95 || ex2: 112359 = v1.12.359)
     case `poke_pfe:get_version`: {
       system6.sendScriptEvent(data.message, currentVersion.toString());
       break;
@@ -9366,13 +9150,11 @@ function OpenPFEConfig(player) {
         }
         PFEBossEventUIMainMenu(player);
         return;
-      } else
-        selection++;
+      } else selection++;
       if (response.selection == selection) {
         PFEDisableConfigMainMenu(player);
         return;
-      } else
-        selection++;
+      } else selection++;
       if (response.selection == selection) {
         let UI2 = new ModalFormData7();
         UI2.title({ translate: `%poke_pfe.miscOptions` });
@@ -9381,8 +9163,7 @@ function OpenPFEConfig(player) {
         UI2.slider({ translate: `%poke_pfe.effectDuration` }, 1, 30, { valueStep: 1, tooltip: { translate: `%poke_pfe.effectDuration.tooltip` }, defaultValue: Number(world10.getDynamicProperty("poke_pfe:setEffectDuration") ?? ArmorEffectDuration) / 20 });
         UI2.slider({ translate: `%poke_pfe.applyInterval` }, 1, 10, { valueStep: 1, tooltip: { translate: `%poke_pfe.applyInterval.tooltip` }, defaultValue: Number(world10.getDynamicProperty("poke_pfe:setEffectInterval") ?? 1) / 20 });
         UI2.show(player).then((response2) => {
-          if (response2.canceled)
-            return;
+          if (response2.canceled) return;
           world10.setDynamicProperty("poke_pfe:setEffectDuration", Number(response2.formValues?.at(2) ?? ArmorEffectDuration / 20) * 20);
           world10.setDynamicProperty("poke_pfe:setEffectInterval", Number(response2.formValues?.at(3) ?? 1) * 20);
           const intervalId = world10.getDynamicProperty("poke_pfe:setEffectIntervalId");
@@ -9393,8 +9174,7 @@ function OpenPFEConfig(player) {
           }
         });
         return;
-      } else
-        selection++;
+      } else selection++;
       if (response.selection == selection || response.canceled) {
         return;
       }
