@@ -1,5 +1,5 @@
 { // OLD BLOCK. poke:turnip is new version
-	"format_version": "1.21.100",
+	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:turnip_crop",

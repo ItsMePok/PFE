@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.100", //Format version is the version it was built for. its 1.21.10 because that is the minimum version that Beta Api was not needed for what PFE uses (as of PFE v1.2.2)
+	"format_version": "1.21.110", //Format version is the version it was built for. its 1.21.10 because that is the minimum version that Beta Api was not needed for what PFE uses (as of PFE v1.2.2)
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:galaxy_bow", //Item Identifier Actaul item name is Galaxy BurstBow (changed the name after it was initally added but preserving backwards compatibily is important imo)

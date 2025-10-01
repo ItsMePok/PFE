@@ -23,7 +23,7 @@
   "dependencies": {
     "@minecraft/creator-tools": "^0.14.1",
     "@minecraft/math": "^2.2.10",
-    "@minecraft/server": "^2.1.0",
+    "@minecraft/server": "^2.2.0",
     "@minecraft/server-ui": "2.0.0",
     "@minecraft/vanilla-data": "1.21.90"
   }

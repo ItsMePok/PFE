@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.100", //Format version is the version it was built for
+	"format_version": "1.21.110", //Format version is the version it was built for
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke:nebula_pickaxe", //Item Identifier. everything is prefixed with poke: or pfe:

@@ -1,5 +1,5 @@
 { // Block: Deepslate Hellish Ore
-	"format_version": "1.21.100",
+	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke:hellite_ore",
