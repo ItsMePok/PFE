@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke_pfe:hellish_blade",
+			"identifier": "poke_pfe:hellish_sword",
 			"menu_category": {
 				"category": "equipment",
 				"group": "minecraft:itemGroup.name.sword"
@@ -10,9 +10,9 @@
 		},
 		"components": {
 			"minecraft:display_name": {
-				"value": "%poke_pfe.hellish_blade\n%poke_pfe.tag"
+				"value": "%poke_pfe.hellish_sword\n%poke_pfe.tag"
 			},
-			"poke_pfe:icon_path": "textures/poke/pfe/hellish_blade",
+			"poke_pfe:icon_path": "textures/poke/pfe/hellish_sword",
 			"poke_pfe:upgradeable": {
 				"version": 1,
 				"upgrade_ids": [

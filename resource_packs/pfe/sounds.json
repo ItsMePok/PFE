@@ -887,7 +887,7 @@
 				],
 				"volume": 1
 			},
-			"poke_pfe:dragon": {
+			"poke_pfe:sparky": {
 				"events": {
 					"ambient": {
 						"pitch": 0.85,

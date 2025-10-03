@@ -154,13 +154,10 @@
   "poke_pfe:magic_8_ball": {
     "sound": "calcite"
   },
-  "poke_pfe:cobalt_golem_block": {
+  "poke_pfe:charged_cobalt_block": {
     "sound": "copper"
   },
   //Plants
-  "poke_pfe:turnip_crop": {
-    "sound": "grass"
-  },
   "poke_pfe:charred_poppy": {
     "sound": "nether_sprouts"
   },
@@ -170,7 +167,7 @@
   "poke_pfe:honey_tiles": {
     "sound": "coral"
   },
-  "poke_pfe:red_present": {
+  "poke_pfe:present": {
     "sound": "itemframe"
   },
   "poke_pfe:empty_mug": {
@@ -183,9 +180,6 @@
     "sound": "metal"
   },
   "poke_pfe:furnace_golem_trophy": {
-    "sound": "metal"
-  },
-  "poke_pfe:golden_turnip_trophy": {
     "sound": "metal"
   },
   "poke_pfe:lava_sponge": {
@@ -259,7 +253,7 @@
     "sound": "wood"
   },
   //Ore
-  "poke_pfe:onyx": {
+  "poke_pfe:deepslate_onyx_ore": {
     "sound": "deepslate"
   }, //Deepslate Onyx ore
   "poke_pfe:deepslate_godly_ore": {
@@ -283,13 +277,13 @@
   "poke_pfe:nether_onyx_ore": {
     "sound": "netherrack"
   },
-  "poke_pfe:hellite_ore": {
+  "poke_pfe:deepslate_hellish_ore": {
     "sound": "deepslate"
   }, //Deepslate Hellish Ore
   "poke_pfe:demonic_ore": {
     "sound": "deepslate"
   },
-  "poke_pfe:void_ore": {
+  "poke_pfe:deepslate_void_ore": {
     "sound": "deepslate"
   },
   "poke_pfe:deepslate_cobalt_ore": {
@@ -335,7 +329,7 @@
   "poke_pfe:demonic_block": {
     "sound": "metal"
   },
-  "poke_pfe:ember_block": {
+  "poke_pfe:molten_block": {
     "sound": "metal"
   },
   "poke_pfe:scrappy_block": {
@@ -480,7 +474,7 @@
     "sound": "coral",
     "textures": "poke_pfe_beeulb"
   },
-  "poke_pfe:cobalt_edged_glass": {
+  "poke_pfe:cobalt_glass": {
     "sound": "glass"
   },
   "poke_pfe:chiseled_cobalt": {
@@ -844,43 +838,7 @@
   "poke_pfe:dirter": {
     "sound": "wood"
   },
-  "poke_pfe:dirter_north": {
-    "sound": "wood"
-  },
-  "poke_pfe:dirter_south": {
-    "sound": "wood"
-  },
-  "poke_pfe:dirter_east": {
-    "sound": "wood"
-  },
-  "poke_pfe:dirter_west": {
-    "sound": "wood"
-  },
-  "poke_pfe:dirter_up": {
-    "sound": "wood"
-  },
-  "poke_pfe:dirter_down": {
-    "sound": "wood"
-  },
   "poke_pfe:duster": {
-    "sound": "wood"
-  },
-  "poke_pfe:duster_north": {
-    "sound": "wood"
-  },
-  "poke_pfe:duster_south": {
-    "sound": "wood"
-  },
-  "poke_pfe:duster_east": {
-    "sound": "wood"
-  },
-  "poke_pfe:duster_west": {
-    "sound": "wood"
-  },
-  "poke_pfe:duster_up": {
-    "sound": "wood"
-  },
-  "poke_pfe:duster_down": {
     "sound": "wood"
   },
   "poke_pfe:block_breaker": {

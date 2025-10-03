@@ -18,7 +18,7 @@
 				"item": "poke_pfe:holy_ingot"
 			},
 			{
-				"item": "poke_pfe:haxel"
+				"item": "poke_pfe:onyx_haxel"
 			},
 			{
 				"item": "poke_pfe:diamond_upgrade_core"
@@ -32,7 +32,7 @@
 				"item": "poke_pfe:holy_block"
 			},
 			"E": {
-				"item": "poke_pfe:haxel"
+				"item": "poke_pfe:onyx_haxel"
 			},
 			"U": {
 				"item": "poke_pfe:diamond_upgrade_core"

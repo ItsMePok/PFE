@@ -101,10 +101,10 @@ function* PFEMine(BannedBlocks: string[], component: BoxMiningComponentInfo, loc
 function PFEHaxelConfigMenu(data: ItemComponentUseEvent, component: BoxMiningComponentInfo, dynamicProperty: PFEHaxelConfig) {
   if (!data.itemStack) return;
   let Ui = new ActionFormData()
-    .title({ translate: `translation.poke_pfe:haxelConfig.mainMenu.title`, with: { rawtext: [{ translate: data.itemStack?.nameTag ?? `poke_pfe.${data.itemStack?.typeId}`.replace(`poke_pfe:haxel`, `onyx_haxel`).replace(`poke_pfe:`, ``) }] } })
-    .button({ translate: `translation.poke_pfe:haxelConfig.mainMenu.blacklistAdd` }, `textures/poke/common/blacklist_add`)
+    .title({ translate: `translation.poke_pfe:onyx_haxelConfig.mainMenu.title`, with: { rawtext: [{ translate: data.itemStack?.nameTag ?? `poke_pfe.${data.itemStack?.typeId}`.replace(`poke_pfe:onyx_haxel`, `onyx_haxel`).replace(`poke_pfe:`, ``) }] } })
+    .button({ translate: `translation.poke_pfe:onyx_haxelConfig.mainMenu.blacklistAdd` }, `textures/poke/common/blacklist_add`)
   if (dynamicProperty.blacklist.length >= 1) {
-    Ui.button({ translate: `translation.poke_pfe:haxelConfig.mainMenu.blacklistRemove` }, `textures/poke/common/blacklist_remove`)
+    Ui.button({ translate: `translation.poke_pfe:onyx_haxelConfig.mainMenu.blacklistRemove` }, `textures/poke/common/blacklist_remove`)
   }
   const UpgradeableComponent = <PFEUpgradeableComponentInfo | undefined>data.itemStack.getComponent("poke_pfe:upgradeable")?.customComponentParameters.params
   if (UpgradeableComponent?.version) {
@@ -136,9 +136,9 @@ function PFEHaxelConfigMenu(data: ItemComponentUseEvent, component: BoxMiningCom
 }
 function PFEHaxelConfigBlackListAdd(data: ItemComponentUseEvent, component: BoxMiningComponentInfo, dynamicProperty: PFEHaxelConfig) {
   let Ui = new ModalFormData()
-    .title({ translate: `translation.poke_pfe:haxelConfig.mainMenu.title`, with: { rawtext: [{ translate: data.itemStack?.nameTag ?? `poke_pfe.${data.itemStack?.typeId}`.replace(`poke_pfe:haxel`, `onyx_haxel`).replace(`poke_pfe:`, ``) }] } })
-    .textField({ translate: `translation.poke_pfe:haxelConfig.blacklistAdd.textLabel` }, '', { defaultValue: `` })
-    .submitButton({ translate: `translation.poke_pfe:haxelConfig.blacklistAdd.submit` })
+    .title({ translate: `translation.poke_pfe:onyx_haxelConfig.mainMenu.title`, with: { rawtext: [{ translate: data.itemStack?.nameTag ?? `poke_pfe.${data.itemStack?.typeId}`.replace(`poke_pfe:onyx_haxel`, `onyx_haxel`).replace(`poke_pfe:`, ``) }] } })
+    .textField({ translate: `translation.poke_pfe:onyx_haxelConfig.blacklistAdd.textLabel` }, '', { defaultValue: `` })
+    .submitButton({ translate: `translation.poke_pfe:onyx_haxelConfig.blacklistAdd.submit` })
 
   Ui.show(data.source).then((response => {
     if (response.canceled) {
@@ -164,7 +164,7 @@ function PFEHaxelConfigBlackListAdd(data: ItemComponentUseEvent, component: BoxM
 }
 function PFEHaxelConfigBlackListRemove(data: ItemComponentUseEvent, component: BoxMiningComponentInfo, dynamicProperty: PFEHaxelConfig) {
   let Ui = new ActionFormData()
-    .title({ translate: `translation.poke_pfe:haxelConfig.mainMenu.blacklistRemove` })
+    .title({ translate: `translation.poke_pfe:onyx_haxelConfig.mainMenu.blacklistRemove` })
   dynamicProperty.blacklist.forEach(block => {
     Ui.button({ translate: `tile.${block.replace(`minecraft:`, ``)}.name` })
   });

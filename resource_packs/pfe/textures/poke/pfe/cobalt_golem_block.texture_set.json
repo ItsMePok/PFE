@@ -1,8 +1,8 @@
 {
 	"format_version": "1.16.100",
 	"minecraft:texture_set": {
-		"color": "cobalt_golem_block",
-		"metalness_emissive_roughness": "cobalt_golem_block_mer",
-		"heightmap": "cobalt_golem_block_height"
+		"color": "charged_cobalt_block",
+		"metalness_emissive_roughness": "charged_cobalt_block_mer",
+		"heightmap": "charged_cobalt_block_height"
 	}
 }

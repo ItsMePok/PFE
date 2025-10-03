@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "poke_pfe:ring_2", // Blaze Ring
+			"identifier": "poke_pfe:blaze_ring", // Blaze Ring
 			"render_controllers": [
 				"controller.render.item_default"
 			],

@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke_pfe:hellish_blade"
+			"identifier": "poke_pfe:hellish_sword"
 		},
 		"tags": [
 			"crafting_table"
@@ -35,7 +35,7 @@
 			}
 		},
 		"result": {
-			"item": "poke_pfe:hellish_blade"
+			"item": "poke_pfe:hellish_sword"
 		}
 	}
 }

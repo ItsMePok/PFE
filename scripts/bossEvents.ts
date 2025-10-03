@@ -10,7 +10,7 @@ let PFEBossEventBosses = [
   `poke_pfe:necromancer`,
   `poke_pfe:snowman`,
   `poke_pfe:robo_golem`,
-  `poke_pfe:dragon`,
+  `poke_pfe:sparky`,
   `poke_pfe:the_logger`,
   `poke_pfe:listener`
 ]

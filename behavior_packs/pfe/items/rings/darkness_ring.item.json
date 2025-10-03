@@ -26,7 +26,7 @@
 			"minecraft:icon": "poke_pfe_darkness_ring",
 			"minecraft:cooldown": {
 				"duration": 5,
-				"category": "poke_pfe:darkness_ring_1"
+				"category": "poke_pfe:darkness_rain_ring"
 			},
 			"minecraft:durability": {
 				"max_durability": 1700,

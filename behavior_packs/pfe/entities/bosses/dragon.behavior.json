@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "poke_pfe:dragon",
+			"identifier": "poke_pfe:sparky",
 			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false

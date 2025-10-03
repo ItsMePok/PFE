@@ -35,7 +35,7 @@
 					{
 						"items": [
 							"poke_pfe:repair_core",
-							"poke_pfe:ember_block"
+							"poke_pfe:molten_block"
 						],
 						"repair_amount": "query.max_durability"
 					},

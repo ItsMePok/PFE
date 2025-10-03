@@ -9,7 +9,7 @@
 		],
 		"key": {
 			"D": {
-				"item": "poke_pfe:ring_3"
+				"item": "poke_pfe:warp_ring"
 			},
 			"R": {
 				"item": "poke_pfe:radium_ingot"
@@ -23,7 +23,7 @@
 				"item": "poke_pfe:ender_holder"
 			},
 			{
-				"item": "poke_pfe:ring_3"
+				"item": "poke_pfe:warp_ring"
 			},
 			{
 				"item": "poke_pfe:radium_ingot"

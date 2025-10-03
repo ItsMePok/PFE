@@ -17,7 +17,7 @@
 				"item": "poke_pfe:molten_slimeball"
 			},
 			{
-				"item": "poke_pfe:ember_block"
+				"item": "poke_pfe:molten_block"
 			},
 			{
 				"item": "poke_pfe:demonic_battleaxe"
@@ -28,7 +28,7 @@
 				"item": "poke_pfe:demonic_battleaxe"
 			},
 			"D": {
-				"item": "poke_pfe:ember_block"
+				"item": "poke_pfe:molten_block"
 			},
 			"S": {
 				"item": "poke_pfe:onyx_shaft"

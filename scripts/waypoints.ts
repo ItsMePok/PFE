@@ -1,7 +1,7 @@
 import { CustomComponentParameters, EntityComponentTypes, EquipmentSlot, ItemComponentUseEvent, ItemStack, Player, RawMessage, Vector2, Vector3, world } from "@minecraft/server";
 import { ActionFormData, ModalFormData } from "@minecraft/server-ui";
 import { PokeErrorScreen, PokeSaveProperty } from "./commonFunctions";
-import { PFEDisableConfigName, PFEDisableConfigOptions } from "./disableConfig";
+import { PFEDisableConfigName, PFEDisableConfigOptions } from "./config";
 import { ParsePFEUpgradeComponent, PFEUpgradeableComponentInfo, PokeUpgradeUI } from "./upgrades";
 
 export {

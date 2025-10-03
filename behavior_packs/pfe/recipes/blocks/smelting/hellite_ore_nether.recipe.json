@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_furnace": {
 		"description": {
-			"identifier": "poke_pfe:hellite_ore_nether"
+			"identifier": "poke_pfe:deepslate_hellish_ore_nether"
 		},
 		"tags": [
 			"furnace",

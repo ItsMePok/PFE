@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke_pfe:onyx", //Deepslate Onyx Ore
+			"identifier": "poke_pfe:deepslate_onyx_ore", //Deepslate Onyx Ore
 			"menu_category": {
 				"category": "nature"
 			}

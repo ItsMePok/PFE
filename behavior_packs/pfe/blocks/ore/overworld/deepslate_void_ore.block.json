@@ -2,13 +2,13 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke_pfe:void_ore",
+			"identifier": "poke_pfe:deepslate_void_ore",
 			"menu_category": {
 				"category": "nature"
 			}
 		},
 		"components": {
-			"minecraft:display_name": "%poke_pfe.void_ore\n%poke_pfe.tag",
+			"minecraft:display_name": "%poke_pfe.deepslate_void_ore\n%poke_pfe.tag",
 			"minecraft:redstone_conductivity": {
 				"redstone_conductor": true,
 				"allows_wire_to_step_down": true

@@ -2,14 +2,14 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke_pfe:budificator",
+			"identifier": "poke_pfe:amethyst_upgrader",
 			"menu_category": {
 				"category": "equipment"
 			}
 		},
 		"components": {
 			"minecraft:display_name": {
-				"value": "%poke_pfe.budificator\n%poke_pfe.tag"
+				"value": "%poke_pfe.amethyst_upgrader\n%poke_pfe.tag"
 			},
 			"poke_pfe:icon_path": "textures/poke/pfe/amethyst_upgrader",
 			"minecraft:hand_equipped": true,

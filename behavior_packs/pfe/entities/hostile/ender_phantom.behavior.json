@@ -150,10 +150,10 @@
 				"priority": 2,
 				"damage_reach": 0.2,
 				"speed_multiplier": 1,
-				"delay_range": [
-					10,
-					20
-				]
+				"delay_range": {
+					"min": 10,
+					"max": 20
+				}
 			},
 			"minecraft:behavior.circle_around_anchor": {
 				"priority": 3,

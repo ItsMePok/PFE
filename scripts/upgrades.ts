@@ -113,7 +113,7 @@ function PokeUpgradeUI(player: Player, item: ItemStack, config: PokeUpgradeUICon
     const HasItem = player.getGameMode() == GameMode.Creative ? true : Boolean(PokeGetItemFromInventory(player, undefined, upgrade.upgradeItem)?.length)
     UI.label({ translate: `${upgrade.upgradeName} %poke_pfe.level: ${upgrade.maxLevel == upgrade.maxLevel ? "§c" : "§b"}${clampNumber(upgrade.level, 0, upgrade.maxLevel ?? Infinity)}§r/§c${upgrade.maxLevel}` })
     UI.button(
-      { translate: `${upgrade.level == upgrade.maxLevel ? "" : "%translation.poke.Upgrade "}${upgrade.upgradeName ?? upgrade.upgradeItem}\n${upgradeCost == Infinity ? "%poke_pfe.max_level" : `%translation.poke.cost: ${upgradeCost} ${upgrade.upgradeItemName ?? item.typeId}`}` },
+      { translate: `${upgrade.level == upgrade.maxLevel ? "" : "%translation.poke_pfeUpgrade "}${upgrade.upgradeName ?? upgrade.upgradeItem}\n${upgradeCost == Infinity ? "%poke_pfe.max_level" : `%translation.poke_pfecost: ${upgradeCost} ${upgrade.upgradeItemName ?? item.typeId}`}` },
       upgrade.level != upgrade.maxLevel && HasItem ? upgrade.icon?.default : upgrade.icon?.cantUpgrade ?? upgrade.icon?.default ?? `textures/poke/common/upgrade`
     )
   }

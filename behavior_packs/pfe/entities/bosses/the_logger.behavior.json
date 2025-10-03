@@ -199,7 +199,7 @@
 					{
 						"queue_command": {
 							"command": [
-								"execute as @a[r=50] run music play poke.record.eldunknown 1 4"
+								"execute as @a[r=50] run music play poke_pferecord.eldunknown 1 4"
 							]
 						},
 						"weight": 1

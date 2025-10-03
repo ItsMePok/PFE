@@ -26,8 +26,8 @@ https://discord.gg/PbkBYcExmN
 * Im trying to make the code more readable so sorry if there is still some areas that are not very organized (most things should be good though)
 * Files marked with "-c" (not many rn, list below) at then end of the file name have a bunch of comments in them to help understand what some things do
   * Commented Files:
-    * Nebula Pickaxe (BP/items/tools/c_pickaxe/nebula_pickaxe-c.json)
-    * Galaxy BurstBow (BP/items/b_weapons/d_bow/a_bow/galaxy_bow-c.json)
+    * Nebula Pickaxe (./behavior_packs/pfe/items/tools/pickaxe/nebula_pickaxe-c.json)
+    * Galaxy BurstBow (./behavior_packs/pfe/items/weapons/bow/galaxy_burstbow-c.json)
 
 
 ## Addon Compatibility

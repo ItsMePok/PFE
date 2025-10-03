@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke_pfe:demonic_slasher"
+			"identifier": "poke_pfe:demonic_scythe"
 		},
 		"tags": [
 			"crafting_table"
@@ -19,7 +19,7 @@
 		],
 		"key": {
 			"Y": {
-				"item": "poke_pfe:hellish_blade"
+				"item": "poke_pfe:hellish_sword"
 			},
 			"X": {
 				"item": "poke_pfe:hellish_scythe"
@@ -35,7 +35,7 @@
 			}
 		},
 		"result": {
-			"item": "poke_pfe:demonic_slasher"
+			"item": "poke_pfe:demonic_scythe"
 		}
 	}
 }

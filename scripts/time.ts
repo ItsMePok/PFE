@@ -1,4 +1,4 @@
-import { GameMode, Player, PlayerPermissionLevel, RawMessage, world } from "@minecraft/server"
+import { Player, PlayerPermissionLevel, RawMessage, system, world } from "@minecraft/server"
 import { ActionFormData, ModalFormData } from "@minecraft/server-ui"
 import { PokeErrorScreen, PokeGetObjectById } from "./commonFunctions"
 const PokeCalendarVersion = 1
@@ -39,6 +39,29 @@ interface PokeDateConfig {
   },
   "weekday"?: number //Sunday = 0
 }
+export {
+  PFEHourTimeDownEvents,
+  PFETimeValidation
+}
+function PFEHourTimeDownEvents() {
+  let currentTime = new Date(Date.now())
+  //Cassette Trader spawning
+  //console.warn(`Attempting to spawn cassette trader`)
+  let allPlayers = world.getAllPlayers()
+  let randomPlayer = allPlayers.at(Math.abs(Math.round(Math.random() * (allPlayers.length - 1))))
+  randomPlayer?.dimension.spawnEntity('poke_pfe:cassette_trader', randomPlayer.location).runCommand(`spreadplayers ~ ~ 30 40 @s ~10`)
+}
+function PFETimeValidation() {
+  let currentTime = new Date(Date.now())
+  if (currentTime.getMinutes() == 0) {
+    PFEHourTimeDownEvents()
+  } else {
+    system.runTimeout(() => {
+      PFETimeValidation()
+    }, Math.abs(60 - new Date(Date.now()).getSeconds()) * 20)
+  }
+}
+
 /**
  * For now we only have major US holidays
  * 
@@ -50,7 +73,7 @@ const PFEDefaultHolidays: PokeEventConfig[] = [
     id: "poke_pfe:NewYear",
     dates: [{ month: 0, days: [1] }],
     repeat: true,
-    gift: `give @s poke_pfe:red_present 8`,
+    gift: `give @s poke_pfe:present 8`,
     icon: "textures/poke/common/new_year",
     greeting: { translate: `translation.poke_pfe:timeNewYearGreet` },
     fixedTime: false,
@@ -74,7 +97,7 @@ const PFEDefaultHolidays: PokeEventConfig[] = [
     id: "poke_pfe:ValentinesDay",
     dates: [{ month: 1, days: [14] }],
     repeat: true,
-    gift: `give @s poke_pfe:red_present 8`,
+    gift: `give @s poke_pfe:present 8`,
     icon: "textures/poke/common/valentine",
     greeting: "generic",
     fixedTime: false,
@@ -86,7 +109,7 @@ const PFEDefaultHolidays: PokeEventConfig[] = [
     id: "poke_pfe:StPatrickDay",
     dates: [{ month: 2, days: [17] }],
     repeat: true,
-    gift: `give @s poke_pfe:red_present 8`,
+    gift: `give @s poke_pfe:present 8`,
     icon: "textures/poke/common/st_patrick",
     greeting: "generic",
     fixedTime: false,
@@ -182,7 +205,7 @@ const PFEDefaultHolidays: PokeEventConfig[] = [
     id: "poke_pfe:thanksgiving",
     dates: [{ month: 10, days: [23, 24, 25, 26, 27, 28], weekday: 4 }],//This will only trigger on Thursday even though other days are listed
     repeat: true,
-    gift: `give @s poke_pfe:red_present 8`,
+    gift: `give @s poke_pfe:present 8`,
     icon: "textures/poke/common/thanksgiving",
     greeting: "generic",
     fixedTime: false,
@@ -194,7 +217,7 @@ const PFEDefaultHolidays: PokeEventConfig[] = [
     id: "just:Easter",
     dates: [{ month: 11, days: [24, 25] }],
     repeat: true,
-    gift: `give @s poke_pfe:red_present 16`,
+    gift: `give @s poke_pfe:present 16`,
     icon: "textures/poke/common/xmas",
     greeting: { translate: `translation.poke_pfe:timeHolidayGreet` },
     fixedTime: false,

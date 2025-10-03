@@ -31,6 +31,7 @@
 			"poke_pfe:transform_blocks": {
 				"transforms": [
 					"poke_pfe:demonic_ore::poke_pfe:raw_demonic_block",
+					"poke_pfe:deepslate_demonic_ore::poke_pfe:raw_demonic_block",
 					"poke_pfe:nether_demonic_ore::poke_pfe:raw_demonic_block"
 				]
 			},

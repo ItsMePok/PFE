@@ -196,7 +196,7 @@
 							],
 							"gives": [
 								{
-									"item": "poke_pfe:red_present",
+									"item": "poke_pfe:present",
 									"quantity": 1
 								}
 							]

@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke_pfe:ring_2",
+			"identifier": "poke_pfe:blaze_ring",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -25,7 +25,7 @@
 			},
 			"minecraft:icon": "poke_pfe_blaze_ring",
 			"minecraft:cooldown": {
-				"category": "poke_pfe:ring_2",
+				"category": "poke_pfe:blaze_ring",
 				"duration": 15
 			},
 			"minecraft:durability": {

@@ -20,7 +20,7 @@
 				"family_types": [
 					"player"
 				],
-				"interact_text": "action.poke.seat.sit",
+				"interact_text": "action.poke_pfeseat.sit",
 				"pull_in_entities": false,
 				"rider_can_interact": false,
 				"seat_count": 1,

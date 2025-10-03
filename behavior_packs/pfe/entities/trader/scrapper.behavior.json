@@ -56,7 +56,7 @@
 							},
 							"use_item": true,
 							"play_sounds": "shear",
-							"interact_text": "action.interact.poke.trader"
+							"interact_text": "action.interact.poke_pfetrader"
 						}
 					]
 				}

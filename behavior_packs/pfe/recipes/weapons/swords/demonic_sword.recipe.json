@@ -14,7 +14,7 @@
 		],
 		"unlock": [
 			{
-				"item": "poke_pfe:hellish_blade"
+				"item": "poke_pfe:hellish_sword"
 			},
 			{
 				"item": "poke_pfe:demonic_ingot"
@@ -28,7 +28,7 @@
 				"item": "poke_pfe:demonic_stick"
 			},
 			"A": {
-				"item": "poke_pfe:hellish_blade"
+				"item": "poke_pfe:hellish_sword"
 			},
 			"U": {
 				"item": "poke_pfe:diamond_upgrade_core"

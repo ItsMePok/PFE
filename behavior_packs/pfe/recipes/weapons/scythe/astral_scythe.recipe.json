@@ -14,7 +14,7 @@
 		],
 		"unlock": [
 			{
-				"item": "poke_pfe:galactic_scythe"
+				"item": "poke_pfe:galaxy_scythe"
 			},
 			{
 				"item": "poke_pfe:astral_block"
@@ -28,7 +28,7 @@
 		],
 		"key": {
 			"Y": {
-				"item": "poke_pfe:galactic_scythe"
+				"item": "poke_pfe:galaxy_scythe"
 			},
 			"X": {
 				"item": "poke_pfe:astral_block"

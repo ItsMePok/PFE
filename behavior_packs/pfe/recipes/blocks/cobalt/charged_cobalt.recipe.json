@@ -2,7 +2,7 @@
     "format_version": "1.20.60",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "poke_pfe:cobalt_golem_block"
+            "identifier": "poke_pfe:charged_cobalt_block"
         },
         "tags": [
             "crafting_table"
@@ -56,7 +56,7 @@
             "ECE"
         ],
         "result": {
-            "item": "poke_pfe:cobalt_golem_block",
+            "item": "poke_pfe:charged_cobalt_block",
             "count": 1
         }
     }

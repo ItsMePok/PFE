@@ -1,7 +1,7 @@
 import { clampNumber } from "@minecraft/math"
 import { Dimension, EntityComponentTypes, EquipmentSlot, ItemStack, Player, system, World, world } from "@minecraft/server"
 import { MinecraftEffectTypes } from "@minecraft/vanilla-data"
-import { PFEDisableConfigDefault, PFEDisableConfigName, PFEDisableConfigOptions } from "./disableConfig"
+import { PFEDisableConfigDefault, PFEDisableConfigName, PFEDisableConfigOptions } from "./config"
 export {
   CheckEffects,
   PFECustomArmorEffectDynamicProperty,

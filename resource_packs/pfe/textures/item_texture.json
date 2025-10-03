@@ -288,8 +288,8 @@
 		"poke_pfe_radium_scythe": {
 			"textures": "textures/poke/pfe/radium_scythe"
 		},
-		"poke_pfe_galactic_scythe": {
-			"textures": "textures/poke/pfe/galactic_scythe"
+		"poke_pfe_galaxy_scythe": {
+			"textures": "textures/poke/pfe/galaxy_scythe"
 		},
 		"poke_pfe_cobalt_scythe": {
 			"textures": "textures/poke/pfe/cobalt_scythe"
@@ -297,14 +297,14 @@
 		"poke_pfe_death_scythe": {
 			"textures": "textures/poke/pfe/death_scythe"
 		},
-		"poke_pfe_demonic_slasher": {
-			"textures": "textures/poke/pfe/demonic_slasher"
+		"poke_pfe_demonic_scythe": {
+			"textures": "textures/poke/pfe/demonic_scythe"
 		},
-		"poke_pfe_holy_bow": {
-			"textures": "textures/poke/pfe/holy_bow"
+		"poke_pfe_holy_burstbow": {
+			"textures": "textures/poke/pfe/holy_burstbow"
 		},
-		"poke_pfe_galaxy_bow": {
-			"textures": "textures/poke/pfe/galaxy_bow"
+		"poke_pfe_galaxy_burstbow": {
+			"textures": "textures/poke/pfe/galaxy_burstbow"
 		},
 		"poke_pfe_honey_crossbow": {
 			"textures": "textures/poke/pfe/honey_crossbow"
@@ -420,8 +420,8 @@
 		"poke_pfe_swift_pickaxe": {
 			"textures": "textures/poke/pfe/swift_pickaxe"
 		},
-		"poke_pfe_nebula_logger": {
-			"textures": "textures/poke/pfe/nebula_logger"
+		"poke_pfe_nebula_axe": {
+			"textures": "textures/poke/pfe/nebula_axe"
 		},
 		"poke_pfe_shade_axe": {
 			"textures": "textures/poke/pfe/shade_axe"

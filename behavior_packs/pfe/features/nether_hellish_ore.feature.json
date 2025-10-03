@@ -7,7 +7,7 @@
 		"count": 9,
 		"replace_rules": [
 			{
-				"places_block": "poke_pfe:hellite_ore", //Deepslate Hellish Ore
+				"places_block": "poke_pfe:deepslate_hellish_ore", //Deepslate Hellish Ore
 				"may_replace": [
 					"minecraft:deepslate"
 				]

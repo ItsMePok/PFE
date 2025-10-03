@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke_pfe:budificator"
+			"identifier": "poke_pfe:amethyst_upgrader"
 		},
 		"tags": [
 			"crafting_table"
@@ -36,7 +36,7 @@
 		},
 		"result": [
 			{
-				"item": "poke_pfe:budificator"
+				"item": "poke_pfe:amethyst_upgrader"
 			}
 		]
 	}

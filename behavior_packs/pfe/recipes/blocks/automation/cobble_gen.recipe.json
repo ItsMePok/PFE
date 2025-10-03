@@ -2,7 +2,7 @@
 	"format_version": "1.20.10",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke_pfe:cobble_gen"
+			"identifier": "poke_pfe:cobbler"
 		},
 		"tags": [
 			"crafting_table"
@@ -57,7 +57,7 @@
 		},
 		"result": [
 			{
-				"item": "poke_pfe:cobble_gen"
+				"item": "poke_pfe:cobbler"
 			}
 		]
 	}

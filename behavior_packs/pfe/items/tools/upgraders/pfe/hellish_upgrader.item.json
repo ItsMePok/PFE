@@ -30,7 +30,7 @@
 			},
 			"poke_pfe:transform_blocks": {
 				"transforms": [
-					"poke_pfe:hellite_ore::poke_pfe:raw_hellish_block",
+					"poke_pfe:deepslate_hellish_ore::poke_pfe:raw_hellish_block",
 					"poke_pfe:hellish_ore::poke_pfe:raw_hellish_block",
 					"poke_pfe:nether_hellish_ore::poke_pfe:raw_hellish_block"
 				]

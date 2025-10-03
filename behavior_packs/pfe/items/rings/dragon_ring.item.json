@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke_pfe:ring_4",
+			"identifier": "poke_pfe:dragon_ring",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -25,7 +25,7 @@
 			},
 			"minecraft:icon": "poke_pfe_dragon_ring",
 			"minecraft:cooldown": {
-				"category": "poke_pfe:ring_4",
+				"category": "poke_pfe:dragon_ring",
 				"duration": 25
 			},
 			"minecraft:durability": {

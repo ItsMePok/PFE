@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke_pfe:ember_block_craft"
+			"identifier": "poke_pfe:molten_block_craft"
 		},
 		"tags": [
 			"crafting_table"
@@ -23,7 +23,7 @@
 			}
 		},
 		"result": {
-			"item": "poke_pfe:ember_block",
+			"item": "poke_pfe:molten_block",
 			"count": 1
 		}
 	}

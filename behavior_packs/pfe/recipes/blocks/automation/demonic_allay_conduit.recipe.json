@@ -20,7 +20,7 @@
 				"item": "poke_pfe:antenna"
 			},
 			{
-				"item": "poke_pfe:hellish_blade"
+				"item": "poke_pfe:hellish_sword"
 			},
 			{
 				"item": "poke_pfe:electric_component"
@@ -37,7 +37,7 @@
 				"item": "poke_pfe:antenna"
 			},
 			"G": {
-				"item": "poke_pfe:hellish_blade"
+				"item": "poke_pfe:hellish_sword"
 			},
 			"E": {
 				"item": "poke_pfe:electric_component"

@@ -2,13 +2,13 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_furnace": {
 		"description": {
-			"identifier": "poke_pfe:void_ore"
+			"identifier": "poke_pfe:deepslate_void_ore"
 		},
 		"tags": [
 			"furnace",
 			"blast_furnace"
 		],
-		"input": "poke_pfe:void_ore",
+		"input": "poke_pfe:deepslate_void_ore",
 		"output": "poke_pfe:void_ingot"
 	}
 }

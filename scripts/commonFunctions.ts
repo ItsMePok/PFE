@@ -1,4 +1,4 @@
-import { Dimension, Direction, Entity, EntityComponentTypes, EntityEquippableComponent, EntityInventoryComponent, EquipmentSlot, GameMode, ItemComponentTypes, ItemDurabilityComponent, ItemLockMode, ItemStack, Player, RawMessage, Vector3, world } from "@minecraft/server";
+import { Container, Dimension, Direction, Entity, EntityComponentTypes, EquipmentSlot, GameMode, ItemComponentTypes, ItemLockMode, ItemStack, Player, RawMessage, Vector3, world } from "@minecraft/server";
 import { ActionFormData } from "@minecraft/server-ui";
 import { MinecraftEnchantmentTypes, MinecraftEntityTypes } from "@minecraft/vanilla-data";
 
@@ -18,7 +18,8 @@ export {
   PokeClosestCardinalInfo,
   getComponentInfoFromDataStorageItems,
   CompiledComponentInfo,
-  pokeAddItemsToPlayerOrDrop
+  pokeAddItemsToPlayerOrDrop,
+  pokeAddItemsToContainerOrDrop
 }
 
 // Tool Durability initially from https://wiki.bedrock.dev/items/tool-durability.html
@@ -372,4 +373,26 @@ function pokeAddItemsToPlayerOrDrop(player: Player, item: ItemStack) {
   else {
     player.dimension.spawnItem(item, player.location)
   }
+}
+function pokeAddItemsToContainerOrDrop(Container: Container | undefined, item: ItemStack, dimension: Dimension, location: Vector3) {
+  if (Container) {
+    const EmptySlot = Container.firstEmptySlot()
+    if (typeof EmptySlot == "number") {
+      Container.addItem(item)
+      return;
+    }
+    const ExistingItemSlot = Container.findLast(item)
+    if (typeof ExistingItemSlot == "number") {
+      const ExistingItem = Container.getSlot(ExistingItemSlot)
+      if (ExistingItem) {
+        if (ExistingItem?.amount == ExistingItem?.maxAmount) {
+          return
+        } else {
+          Container.addItem(item)
+          return;
+        }
+      }
+    }
+  }
+  dimension.spawnItem(item, location)
 }

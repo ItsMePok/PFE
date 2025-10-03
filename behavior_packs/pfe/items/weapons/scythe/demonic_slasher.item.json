@@ -2,16 +2,16 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke_pfe:demonic_slasher",
+			"identifier": "poke_pfe:demonic_scythe",
 			"menu_category": {
 				"category": "equipment"
 			}
 		},
 		"components": {
 			"minecraft:display_name": {
-				"value": "%poke_pfe.demonic_slasher\n%poke_pfe.tag"
+				"value": "%poke_pfe.demonic_scythe\n%poke_pfe.tag"
 			},
-			"poke_pfe:icon_path": "textures/poke/pfe/demonic_slasher",
+			"poke_pfe:icon_path": "textures/poke/pfe/demonic_scythe",
 			"poke_pfe:upgradeable": {
 				"version": 1,
 				"upgrade_ids": [
@@ -32,7 +32,7 @@
 			"minecraft:damage": {
 				"value": 19
 			},
-			"minecraft:icon": "poke_pfe_demonic_slasher",
+			"minecraft:icon": "poke_pfe_demonic_scythe",
 			"minecraft:enchantable": {
 				"value": 75,
 				"slot": "sword"

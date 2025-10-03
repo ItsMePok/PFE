@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke_pfe:haxel",
+			"identifier": "poke_pfe:onyx_haxel",
 			"menu_category": {
 				"category": "equipment"
 			}

@@ -29,7 +29,7 @@
 				"tag": "minecraft:egg"
 			},
 			{
-				"item": "poke_pfe:cobalt_golem_block"
+				"item": "poke_pfe:charged_cobalt_block"
 			}
 		],
 		"key": {
@@ -49,7 +49,7 @@
 				"tag": "minecraft:egg"
 			},
 			"G": {
-				"item": "poke_pfe:cobalt_golem_block"
+				"item": "poke_pfe:charged_cobalt_block"
 			}
 		},
 		"result": {

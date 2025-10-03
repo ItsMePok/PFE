@@ -72,7 +72,7 @@
 							],
 							"gives": [
 								{
-									"item": "poke_pfe:boss_event_bounty"
+									"item": "poke_pfe:bounty"
 								}
 							]
 						}

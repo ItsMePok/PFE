@@ -7,7 +7,7 @@
     "count": 7,
     "replace_rules": [
       {
-        "places_block": "poke_pfe:void_ore",
+        "places_block": "poke_pfe:deepslate_void_ore",
         "may_replace": [
           "minecraft:deepslate"
         ]

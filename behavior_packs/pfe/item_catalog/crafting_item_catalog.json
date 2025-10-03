@@ -110,7 +110,7 @@
             "items": [
               "poke_pfe:hellish_block",
               "poke_pfe:demonic_block",
-              "poke_pfe:ember_block",
+              "poke_pfe:molten_block",
               "poke_pfe:godly_block",
               "poke_pfe:scrappy_block",
               "poke_pfe:radium_block",
@@ -204,7 +204,6 @@
               "poke_pfe:knightling_trophy",
               "poke_pfe:furnace_golem_trophy",
               "poke_pfe:listener_trophy"
-              //,"poke_pfe:golden_turnip_trophy"
             ]
           },
           {
@@ -292,7 +291,7 @@
               "name": "minecraft:itemGroup.name.glass"
             },
             "items": [
-              "poke_pfe:cobalt_edged_glass"
+              "poke_pfe:cobalt_glass"
             ]
           },
           {
@@ -448,12 +447,12 @@
               "poke_pfe:galaxy_ore",
               "poke_pfe:deepslate_cobalt_ore",
               "poke_pfe:deepslate_shade_ore",
-              "poke_pfe:onyx",
-              "poke_pfe:hellite_ore",
+              "poke_pfe:deepslate_onyx_ore",
+              "poke_pfe:deepslate_hellish_ore",
               "poke_pfe:deepslate_holy_ore",
-              "poke_pfe:demonic_ore",
+              "poke_pfe:deepslate_demonic_ore",
               "poke_pfe:deepslate_godly_ore",
-              "poke_pfe:void_ore",
+              "poke_pfe:deepslate_void_ore",
               "poke_pfe:nether_shade_ore",
               "poke_pfe:nether_onyx_ore",
               "poke_pfe:nether_hellish_ore",
@@ -581,11 +580,11 @@
               "poke_pfe:spawn_knightling",
               "poke_pfe:spawn_necromancer",
               "poke_pfe:furnace_golem",
-              "poke_pfe:spawn_dragon",
+              "poke_pfe:spawn_sparky",
               "poke_pfe:spawn_the_logger",
               "poke_pfe:spawn_listener",
               "poke_pfe:wither_spawner",
-              "poke_pfe:cobalt_golem_block"
+              "poke_pfe:charged_cobalt_block"
             ]
           },
           {
@@ -765,7 +764,7 @@
               "poke_pfe:radium_sword",
               "poke_pfe:onyx_sword",
               "poke_pfe:holy_sword",
-              "poke_pfe:hellish_blade",
+              "poke_pfe:hellish_sword",
               "poke_pfe:godly_sword",
               "poke_pfe:demonic_sword",
               "poke_pfe:galaxy_sword",
@@ -798,7 +797,7 @@
               "poke_pfe:void_axe",
               "poke_pfe:astral_axe",
               "poke_pfe:death_axe",
-              "poke_pfe:nebula_logger"
+              "poke_pfe:nebula_axe"
             ]
           },
           {
@@ -1048,10 +1047,10 @@
               "poke_pfe:holy_scythe",
               "poke_pfe:hellish_scythe",
               "poke_pfe:godly_scythe",
-              "poke_pfe:demonic_slasher",
+              "poke_pfe:demonic_scythe",
               "poke_pfe:medic_scythe",
               "poke_pfe:ember_scythe",
-              "poke_pfe:galactic_scythe",
+              "poke_pfe:galaxy_scythe",
               "poke_pfe:void_scythe",
               "poke_pfe:astral_scythe",
               "poke_pfe:death_scythe",
@@ -1109,7 +1108,7 @@
               "poke_pfe:diamond_haxel",
               "poke_pfe:netherite_haxel",
               "poke_pfe:amethyst_haxel",
-              "poke_pfe:haxel",
+              "poke_pfe:onyx_haxel",
               "poke_pfe:holy_haxel",
               "poke_pfe:hellish_haxel",
               "poke_pfe:godly_haxel",
@@ -1146,7 +1145,7 @@
               "poke_pfe:emerald_upgrader",
               "poke_pfe:diamond_upgrader",
               "poke_pfe:netherite_upgrader",
-              "poke_pfe:budificator",
+              "poke_pfe:amethyst_upgrader",
               "poke_pfe:cobalt_upgrader",
               "poke_pfe:shade_upgrader",
               "poke_pfe:onyx_upgrader",
@@ -1163,11 +1162,11 @@
           {
             "group_identifier": {
               "name": "poke_pfe:itemGroup.name.bows",
-              "icon": "poke_pfe:holy_bow"
+              "icon": "poke_pfe:holy_burstbow"
             },
             "items": [
-              "poke_pfe:holy_bow",
-              "poke_pfe:galaxy_bow",
+              "poke_pfe:holy_burstbow",
+              "poke_pfe:galaxy_burstbow",
               "poke_pfe:cobalt_crossbow",
               "poke_pfe:hellish_crossbow",
               "poke_pfe:godly_crossbow",
@@ -1191,11 +1190,11 @@
             "items": [
               "poke_pfe:arrow_ring",
               "poke_pfe:volt_ring",
-              "poke_pfe:ring_2",
-              "poke_pfe:ring_4",
-              "poke_pfe:ring_3",
+              "poke_pfe:blaze_ring",
+              "poke_pfe:dragon_ring",
+              "poke_pfe:warp_ring",
               "poke_pfe:shade_ring",
-              "poke_pfe:ring_1",
+              "poke_pfe:rain_ring",
               "poke_pfe:zeus_ring",
               "poke_pfe:darkness_ring",
               "poke_pfe:resist_ring",
@@ -1283,7 +1282,7 @@
               "poke_pfe:item_voider",
               "poke_pfe:empty_vial",
               "poke_pfe:xp_vial",
-              "poke_pfe:boss_event_bounty"
+              "poke_pfe:bounty"
             ]
           }
         ]
@@ -1627,7 +1626,7 @@
             },
             "items": [
               "poke_pfe:cobblestone_gen",
-              "poke_pfe:cobble_gen",
+              "poke_pfe:cobbler",
               "poke_pfe:block_breaker",
               "poke_pfe:dirter",
               "poke_pfe:duster",
@@ -1638,7 +1637,7 @@
               "poke_pfe:omnivator",
               "poke_pfe:magnet",
               "poke_pfe:barometer",
-              "poke_pfe:phantomed_conduit",
+              "poke_pfe:phantomic_conduit",
               "poke_pfe:demonic_allay_conduit"
             ]
           },
@@ -1674,30 +1673,7 @@
               "poke_pfe:mine_quest",
               "poke_pfe:kill_quest",
               "poke_pfe:farm_quest",
-              "poke_pfe:craft_quest",
-              "poke_pfe:mine_quest_1",
-              "poke_pfe:mine_quest_2",
-              "poke_pfe:mine_quest_3",
-              "poke_pfe:kill_quest_1",
-              "poke_pfe:kill_quest_2",
-              "poke_pfe:kill_quest_3",
-              "poke_pfe:kill_quest_4",
-              "poke_pfe:kill_quest_5",
-              "poke_pfe:kill_quest_6",
-              "poke_pfe:kill_quest_7",
-              "poke_pfe:farm_quest_1",
-              "poke_pfe:farm_quest_2",
-              "poke_pfe:farm_quest_3",
-              "poke_pfe:farm_quest_4",
-              "poke_pfe:farm_quest_5",
-              "poke_pfe:farm_quest_6",
-              "poke_pfe:craft_quest_1",
-              "poke_pfe:craft_quest_2",
-              "poke_pfe:craft_quest_3",
-              "poke_pfe:craft_quest_4",
-              "poke_pfe:craft_quest_5",
-              "poke_pfe:craft_quest_6",
-              "poke_pfe:craft_quest_7" //*/
+              "poke_pfe:craft_quest"
             ]
           },
           {
@@ -1840,7 +1816,7 @@
               "poke_pfe:nebula_stick",
               "poke_pfe:empty_mug",
               "poke_pfe:magic_8_ball",
-              "poke_pfe:red_present",
+              "poke_pfe:present",
               "poke_pfe:ban_hammer_head",
               "poke_pfe:ban_hammer_shaft",
               "poke_pfe:ban_hammer_grip",

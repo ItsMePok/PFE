@@ -9,7 +9,7 @@
 		],
 		"unlock": [
 			{
-				"item": "poke_pfe:demonic_slasher"
+				"item": "poke_pfe:demonic_scythe"
 			}
 		],
 		"key": {
@@ -23,7 +23,7 @@
 				"item": "poke_pfe:molten_slimeball"
 			},
 			"D": {
-				"item": "poke_pfe:demonic_slasher"
+				"item": "poke_pfe:demonic_scythe"
 			},
 			"U": {
 				"item": "poke_pfe:diamond_upgrade_core"

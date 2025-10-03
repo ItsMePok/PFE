@@ -18,7 +18,7 @@
 				"item": "poke_pfe:molten_slimeball"
 			},
 			{
-				"item": "poke_pfe:ember_block"
+				"item": "poke_pfe:molten_block"
 			},
 			{
 				"item": "poke_pfe:demonic_stick"
@@ -35,7 +35,7 @@
 				"item": "poke_pfe:molten_slimeball"
 			},
 			"B": {
-				"item": "poke_pfe:ember_block"
+				"item": "poke_pfe:molten_block"
 			},
 			"S": {
 				"item": "poke_pfe:demonic_stick"

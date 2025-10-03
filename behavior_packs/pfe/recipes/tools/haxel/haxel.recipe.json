@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke_pfe:haxel"
+			"identifier": "poke_pfe:onyx_haxel"
 		},
 		"group": "haxel",
 		"tags": [
@@ -36,7 +36,7 @@
 			}
 		},
 		"result": {
-			"item": "poke_pfe:haxel"
+			"item": "poke_pfe:onyx_haxel"
 		}
 	}
 }

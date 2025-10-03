@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke_pfe:red_present",
+			"identifier": "poke_pfe:present",
 			"menu_category": {
 				"category": "items"
 			},
@@ -15,7 +15,7 @@
 			}
 		},
 		"components": {
-			"minecraft:display_name": "%poke_pfe.red_present\n%poke_pfe.tag",
+			"minecraft:display_name": "%poke_pfe.present\n%poke_pfe.tag",
 			"minecraft:liquid_detection": {
 				"detection_rules": [
 					{
@@ -59,11 +59,11 @@
 			"tag:axe": {},
 			"tag:wood": {},
 			"tag:minecraft:wood": {},
-			"minecraft:geometry": "geometry.poke_pfe.red_present",
+			"minecraft:geometry": "geometry.poke_pfe.present",
 			"minecraft:map_color": "#9b2626",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "poke_pfe_red_present",
+					"texture": "poke_pfe_present",
 					"render_method": "alpha_test",
 					"ambient_occlusion": false
 				}

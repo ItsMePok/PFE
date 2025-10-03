@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke_pfe:phantomed_conduit",
+			"identifier": "poke_pfe:phantomic_conduit",
 			"menu_category": {
 				"category": "items"
 			},
@@ -15,17 +15,17 @@
 		},
 		"permutations": [
 			{
-				"condition": "q.block_state('pfe:active') == 1",
+				"condition": "q.block_state('poke_pfe:active') == 1",
 				"components": {
 					"minecraft:light_emission": 5
 				}
 			}
 		],
 		"components": {
-			"minecraft:display_name": "%poke_pfe.phantomed_conduit\n%poke_pfe.tag",
+			"minecraft:display_name": "%poke_pfe.phantomic_conduit\n%poke_pfe.tag",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "poke_pfe_phantomed_conduit",
+					"texture": "poke_pfe_phantomic_conduit",
 					"render_method": "opaque"
 				}
 			},

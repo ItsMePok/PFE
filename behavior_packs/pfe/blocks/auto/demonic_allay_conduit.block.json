@@ -15,7 +15,7 @@
 		},
 		"permutations": [
 			{
-				"condition": "q.block_state('pfe:active') == 1",
+				"condition": "q.block_state('poke_pfe:active') == 1",
 				"components": {
 					"minecraft:light_emission": 5
 				}

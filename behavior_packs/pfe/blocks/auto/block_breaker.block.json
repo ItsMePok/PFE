@@ -53,7 +53,7 @@
 		},
 		"permutations": [
 			{
-				"condition": "q.block_state('pfe:active')==0",
+				"condition": "q.block_state('poke_pfe:active')==0",
 				"components": {
 					"minecraft:geometry": {
 						"identifier": "geometry.poke_pfe.block_breaker",
@@ -88,7 +88,7 @@
 				}
 			},
 			{
-				"condition": "q.block_state('pfe:active') == 1",
+				"condition": "q.block_state('poke_pfe:active') == 1",
 				"components": {
 					"minecraft:light_emission": 5,
 					"minecraft:geometry": {

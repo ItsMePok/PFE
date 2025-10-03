@@ -37,7 +37,7 @@
 			},
 			{
 				"places_block": {
-					"name": "poke_pfe:demonic_ore",
+					"name": "poke_pfe:deepslate_demonic_ore",
 					"states": {}
 				},
 				"may_replace": [

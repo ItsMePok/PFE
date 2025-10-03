@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_furnace": {
 		"description": {
-			"identifier": "poke_pfe:void_ore_end"
+			"identifier": "poke_pfe:deepslate_void_ore_end"
 		},
 		"tags": [
 			"furnace",
