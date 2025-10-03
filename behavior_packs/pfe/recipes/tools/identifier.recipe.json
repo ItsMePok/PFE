@@ -2,7 +2,7 @@
   "format_version": "1.20.60",
   "minecraft:recipe_shaped": {
     "description": {
-      "identifier": "poke-pfe:identifier"
+      "identifier": "poke_pfe:identifier"
     },
     "assume_symmetry": true,
     "tags": [
@@ -21,12 +21,12 @@
         "item": "minecraft:glass"
       },
       {
-        "item": "poke:cobalt_ingot"
+        "item": "poke_pfe:cobalt_ingot"
       }
     ],
     "key": {
       "C": {
-        "item": "poke:cobalt_ingot"
+        "item": "poke_pfe:cobalt_ingot"
       },
       "G": {
         "item": "minecraft:glass"
@@ -36,7 +36,7 @@
       }
     },
     "result": {
-      "item": "poke-pfe:identifier"
+      "item": "poke_pfe:identifier"
     }
   }
 }

@@ -2,14 +2,14 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "poke:honey_boltbow"
+			"identifier": "poke_pfe:honey_boltbow"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:honey_crossbow"
+				"item": "poke_pfe:honey_crossbow"
 			},
 			{
 				"item": "arrow"
@@ -17,14 +17,14 @@
 		],
 		"ingredients": [
 			{
-				"item": "poke:honey_crossbow"
+				"item": "poke_pfe:honey_crossbow"
 			},
 			{
-				"item": "poke:upgrade_core"
+				"item": "poke_pfe:upgrade_core"
 			}
 		],
 		"result": {
-			"item": "poke:honey_boltbow"
+			"item": "poke_pfe:honey_boltbow"
 		}
 	}
 }

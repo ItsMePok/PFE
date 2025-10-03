@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:cut_nebula",
+			"identifier": "poke_pfe:cut_nebula",
 			"menu_category": {
 				"category": "construction"
 			}

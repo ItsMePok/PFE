@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:carved_melon_mask",
+			"identifier": "poke_pfe:carved_melon_mask",
 			"menu_category": {
 				"category": "equipment"
 			}

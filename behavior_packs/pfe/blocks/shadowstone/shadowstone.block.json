@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:shadowstone",
+			"identifier": "poke_pfe:shadowstone",
 			"menu_category": {
 				"category": "nature"
 			}

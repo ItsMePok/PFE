@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "poke:aqua_ring",
+			"identifier": "poke_pfe:aqua_ring",
 			"render_controllers": [
 				"controller.render.item_default"
 			],

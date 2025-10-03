@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:demonic_ore", /* Deepslate Demonic Ore */
+			"identifier": "poke_pfe:demonic_ore", /* Deepslate Demonic Ore */
 			"menu_category": {
 				"category": "nature"
 			}
@@ -42,7 +42,7 @@
 				}
 			},
 			"minecraft:loot": "loot_tables/poke/pfe/demonic_ore.loot.json",
-			"poke:fortune": {}
+			"poke_pfe:fortune": {}
 		}
 	}
 }

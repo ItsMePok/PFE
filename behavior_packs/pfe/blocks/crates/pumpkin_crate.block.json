@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:pumpkin_crate"
+			"identifier": "poke_pfe:pumpkin_crate"
 		},
 		"components": {
 			"minecraft:display_name": "%poke_pfe.pumpkin_crate\n%poke_pfe.tag",

@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "poke:rocket_replenisher",
+			"identifier": "poke_pfe:rocket_replenisher",
 			"render_controllers": [
 				"controller.render.item_default"
 			],

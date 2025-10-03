@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:darkness_gem",
+			"identifier": "poke_pfe:darkness_gem",
 			"menu_category": {
 				"category": "items"
 			}

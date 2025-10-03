@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:dye_unmixer",
+			"identifier": "poke_pfe:dye_unmixer",
 			"menu_category": {
 				"category": "items"
 			},

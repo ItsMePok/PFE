@@ -15,16 +15,16 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:molten_slimeball"
+				"item": "poke_pfe:molten_slimeball"
 			},
 			{
-				"item": "poke:ember_block"
+				"item": "poke_pfe:ember_block"
 			},
 			{
-				"item": "poke:demonic_stick"
+				"item": "poke_pfe:demonic_stick"
 			},
 			{
-				"item": "poke:platinum_upgrade_core"
+				"item": "poke_pfe:platinum_upgrade_core"
 			},
 			{
 				"item": "poke_pfe:demonic_claymore"
@@ -32,16 +32,16 @@
 		],
 		"key": {
 			"I": {
-				"item": "poke:molten_slimeball"
+				"item": "poke_pfe:molten_slimeball"
 			},
 			"B": {
-				"item": "poke:ember_block"
+				"item": "poke_pfe:ember_block"
 			},
 			"S": {
-				"item": "poke:demonic_stick"
+				"item": "poke_pfe:demonic_stick"
 			},
 			"U": {
-				"item": "poke:platinum_upgrade_core"
+				"item": "poke_pfe:platinum_upgrade_core"
 			},
 			"C": {
 				"item": "poke_pfe:demonic_claymore"

@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:blazooka",
+			"identifier": "poke_pfe:blazooka",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -16,7 +16,7 @@
 			"minecraft:icon": "poke_pfe_blazooka",
 			"minecraft:allow_off_hand": true,
 			"minecraft:cooldown": {
-				"category": "poke:blazooka",
+				"category": "poke_pfe:blazooka",
 				"duration": 1.25
 			},
 			"minecraft:durability": {
@@ -32,7 +32,7 @@
 			},
 			"poke_pfe:upgradeable": {
 				"upgrade_ids": [
-					"pfe:persistence"
+					"poke_pfe:persistence"
 				],
 				"version": 1
 			},
@@ -40,7 +40,7 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core"
+							"poke_pfe:repair_core"
 						],
 						"repair_amount": "query.max_durability"
 					}
@@ -63,7 +63,7 @@
 					"identifier": "wind_charge.burst"
 				}
 			},
-			"poke:normalMining": {},
+			"poke_pfe:normalMining": {},
 			"minecraft:use_modifiers": {
 				"use_duration": 0,
 				"movement_modifier": 1

@@ -2,14 +2,14 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:poke_reinforced_deepslate"
+			"identifier": "poke_pfe:poke_reinforced_deepslate"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:void_ingot"
+				"item": "poke_pfe:void_ingot"
 			},
 			{
 				"item": "bedrock"
@@ -18,7 +18,7 @@
 				"item": "deepslate"
 			},
 			{
-				"item": "poke:ban_hammer"
+				"item": "poke_pfe:ban_hammer"
 			}
 		],
 		"pattern": [
@@ -31,7 +31,7 @@
 				"item": "deepslate"
 			},
 			"B": {
-				"item": "poke:void_ingot"
+				"item": "poke_pfe:void_ingot"
 			},
 			"G": {
 				"item": "bedrock"

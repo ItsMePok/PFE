@@ -2,7 +2,7 @@
   "format_version": "1.21.110",
   "minecraft:entity": {
     "description": {
-      "identifier": "poke:duck_egg_proj",
+      "identifier": "poke_pfe:duck_egg_proj",
       "is_spawnable": false,
       "is_summonable": true,
       "is_experimental": false,
@@ -25,7 +25,7 @@
             "second_spawn_chance": 32,
             "first_spawn_count": 1,
             "second_spawn_count": 4,
-            "spawn_definition": "poke:duck",
+            "spawn_definition": "poke_pfe:duck",
             "spawn_baby": true
           },
           "remove_on_hit": {},

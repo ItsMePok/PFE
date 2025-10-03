@@ -7,7 +7,7 @@
         "groups": [
           {
             "group_identifier": {
-              "name": "poke:itemGroup.name.drain",
+              "name": "poke_pfe:itemGroup.name.drain",
               "icon": "poke_pfe:astral_drain"
             },
             "items": [
@@ -34,177 +34,177 @@
           },
           {
             "group_identifier": {
-              "name": "poke:itemGroup.name.cutBlocks",
-              "icon": "poke:cut_hellish"
+              "name": "poke_pfe:itemGroup.name.cutBlocks",
+              "icon": "poke_pfe:cut_hellish"
             },
             "items": [
-              "poke:cut_hellish",
-              "poke:cut_molten",
-              "poke:cut_radium",
-              "poke:cut_shade",
-              "poke:cut_cobalt",
-              "poke:cut_onyx",
-              "poke:cut_nebula",
-              "poke:cut_galaxy",
-              "poke:cut_astral",
-              "poke:cut_medic",
-              "poke:cut_godly",
-              "poke:cut_holy",
-              "poke:cut_demonic",
-              "poke:cut_death",
-              "poke:cut_void"
+              "poke_pfe:cut_hellish",
+              "poke_pfe:cut_molten",
+              "poke_pfe:cut_radium",
+              "poke_pfe:cut_shade",
+              "poke_pfe:cut_cobalt",
+              "poke_pfe:cut_onyx",
+              "poke_pfe:cut_nebula",
+              "poke_pfe:cut_galaxy",
+              "poke_pfe:cut_astral",
+              "poke_pfe:cut_medic",
+              "poke_pfe:cut_godly",
+              "poke_pfe:cut_holy",
+              "poke_pfe:cut_demonic",
+              "poke_pfe:cut_death",
+              "poke_pfe:cut_void"
             ]
           },
           {
             "group_identifier": {
-              "name": "poke:itemGroup.name.bricks",
-              "icon": "poke:hellish_bricks"
+              "name": "poke_pfe:itemGroup.name.bricks",
+              "icon": "poke_pfe:hellish_bricks"
             },
             "items": [
-              "poke:hellish_bricks",
-              "poke:cracked_hellish_bricks",
-              "poke:molten_bricks",
-              "poke:cracked_molten_bricks",
-              "poke:honey_bricks",
-              "poke:cracked_honey_bricks",
-              "poke:chiseled_honey_bricks",
-              "poke:radium_bricks",
-              "poke:cracked_radium_bricks",
-              "poke:shade_bricks",
-              "poke:cracked_shade_bricks",
-              "poke:cobalt_bricks",
-              "poke:cracked_cobalt_bricks",
-              "poke:onyx_bricks",
-              "poke:cracked_onyx_bricks",
-              "poke:nebula_bricks",
-              "poke:cracked_nebula_bricks",
-              "poke:galaxy_bricks",
-              "poke:cracked_galaxy_bricks",
-              "poke:shadowstone_bricks",
-              "poke:cracked_shadowstone_bricks",
-              "poke:astral_bricks",
-              "poke:cracked_astral_bricks",
-              "poke:medic_bricks",
-              "poke:cracked_medic_bricks",
-              "poke:godly_bricks",
-              "poke:cracked_godly_bricks",
-              "poke:limestone_bricks",
-              "poke:cracked_limestone_bricks",
-              "poke:holy_bricks",
-              "poke:cracked_holy_bricks",
-              "poke:demonic_bricks",
-              "poke:cracked_demonic_bricks",
-              "poke:banished_bricks",
-              "poke:cracked_banished_bricks",
-              "poke:death_bricks",
-              "poke:cracked_death_bricks",
-              "poke:void_bricks",
-              "poke:cracked_void_bricks"
+              "poke_pfe:hellish_bricks",
+              "poke_pfe:cracked_hellish_bricks",
+              "poke_pfe:molten_bricks",
+              "poke_pfe:cracked_molten_bricks",
+              "poke_pfe:honey_bricks",
+              "poke_pfe:cracked_honey_bricks",
+              "poke_pfe:chiseled_honey_bricks",
+              "poke_pfe:radium_bricks",
+              "poke_pfe:cracked_radium_bricks",
+              "poke_pfe:shade_bricks",
+              "poke_pfe:cracked_shade_bricks",
+              "poke_pfe:cobalt_bricks",
+              "poke_pfe:cracked_cobalt_bricks",
+              "poke_pfe:onyx_bricks",
+              "poke_pfe:cracked_onyx_bricks",
+              "poke_pfe:nebula_bricks",
+              "poke_pfe:cracked_nebula_bricks",
+              "poke_pfe:galaxy_bricks",
+              "poke_pfe:cracked_galaxy_bricks",
+              "poke_pfe:shadowstone_bricks",
+              "poke_pfe:cracked_shadowstone_bricks",
+              "poke_pfe:astral_bricks",
+              "poke_pfe:cracked_astral_bricks",
+              "poke_pfe:medic_bricks",
+              "poke_pfe:cracked_medic_bricks",
+              "poke_pfe:godly_bricks",
+              "poke_pfe:cracked_godly_bricks",
+              "poke_pfe:limestone_bricks",
+              "poke_pfe:cracked_limestone_bricks",
+              "poke_pfe:holy_bricks",
+              "poke_pfe:cracked_holy_bricks",
+              "poke_pfe:demonic_bricks",
+              "poke_pfe:cracked_demonic_bricks",
+              "poke_pfe:banished_bricks",
+              "poke_pfe:cracked_banished_bricks",
+              "poke_pfe:death_bricks",
+              "poke_pfe:cracked_death_bricks",
+              "poke_pfe:void_bricks",
+              "poke_pfe:cracked_void_bricks"
             ]
           },
           {
             "group_identifier": {
-              "name": "poke:itemGroup.name.oreBlock",
-              "icon": "poke:cobalt_block"
+              "name": "poke_pfe:itemGroup.name.oreBlock",
+              "icon": "poke_pfe:cobalt_block"
             },
             "items": [
-              "poke:hellish_block",
-              "poke:demonic_block",
-              "poke:ember_block",
-              "poke:godly_block",
-              "poke:scrappy_block",
-              "poke:radium_block",
-              "poke:shade_block",
-              "poke:onyx_block",
-              "poke:cobalt_block",
-              "poke:nebula_block",
-              "poke:galaxy_block",
-              "poke:medic_block",
-              "poke:astral_block",
-              "poke:death_block",
-              "poke:void_block",
-              "poke:holy_block"
+              "poke_pfe:hellish_block",
+              "poke_pfe:demonic_block",
+              "poke_pfe:ember_block",
+              "poke_pfe:godly_block",
+              "poke_pfe:scrappy_block",
+              "poke_pfe:radium_block",
+              "poke_pfe:shade_block",
+              "poke_pfe:onyx_block",
+              "poke_pfe:cobalt_block",
+              "poke_pfe:nebula_block",
+              "poke_pfe:galaxy_block",
+              "poke_pfe:medic_block",
+              "poke_pfe:astral_block",
+              "poke_pfe:death_block",
+              "poke_pfe:void_block",
+              "poke_pfe:holy_block"
             ]
           },
           {
             "group_identifier": {
-              "icon": "poke:empty_crate",
-              "name": "poke:itemGroup.name.crate"
+              "icon": "poke_pfe:empty_crate",
+              "name": "poke_pfe:itemGroup.name.crate"
             },
             "items": [
-              "poke:empty_crate",
-              "poke:apple_crate",
-              "poke:carrot_crate",
-              "poke:potato_crate",
-              "poke:beetroot_crate",
-              "poke:sweet_berry_crate",
-              "poke:glow_berry_crate",
-              "poke:melon_crate",
-              "poke:pumpkin_crate",
-              "poke:sugarcane_crate",
-              "poke:red_mushroom_crate",
-              "poke:brown_mushroom_crate",
-              "poke:nether_wart_crate",
-              "poke:chorus_fruit_crate",
-              "poke:rotten_flesh_crate",
-              "poke:flint_crate"
+              "poke_pfe:empty_crate",
+              "poke_pfe:apple_crate",
+              "poke_pfe:carrot_crate",
+              "poke_pfe:potato_crate",
+              "poke_pfe:beetroot_crate",
+              "poke_pfe:sweet_berry_crate",
+              "poke_pfe:glow_berry_crate",
+              "poke_pfe:melon_crate",
+              "poke_pfe:pumpkin_crate",
+              "poke_pfe:sugarcane_crate",
+              "poke_pfe:red_mushroom_crate",
+              "poke_pfe:brown_mushroom_crate",
+              "poke_pfe:nether_wart_crate",
+              "poke_pfe:chorus_fruit_crate",
+              "poke_pfe:rotten_flesh_crate",
+              "poke_pfe:flint_crate"
             ]
           },
           {
             "group_identifier": {
-              "name": "poke:itemGroup.name.bulbs",
-              "icon": "poke:hellish_bulb"
+              "name": "poke_pfe:itemGroup.name.bulbs",
+              "icon": "poke_pfe:hellish_bulb"
             },
             "items": [
-              "poke:hellish_bulb",
-              "poke:demonic_bulb",
-              "poke:molten_bulb",
-              "poke:beeulb",
-              "poke:godly_bulb",
-              "poke:radium_bulb",
-              "poke:shade_bulb",
-              "poke:onyx_bulb",
-              "poke:cobalt_bulb",
-              "poke:nebula_bulb",
-              "poke:galaxy_bulb",
-              "poke:astral_bulb",
-              "poke:medic_bulb",
-              "poke:death_bulb",
-              "poke:void_bulb",
-              "poke:holy_bulb",
-              "poke:limestone_bulb"
+              "poke_pfe:hellish_bulb",
+              "poke_pfe:demonic_bulb",
+              "poke_pfe:molten_bulb",
+              "poke_pfe:beeulb",
+              "poke_pfe:godly_bulb",
+              "poke_pfe:radium_bulb",
+              "poke_pfe:shade_bulb",
+              "poke_pfe:onyx_bulb",
+              "poke_pfe:cobalt_bulb",
+              "poke_pfe:nebula_bulb",
+              "poke_pfe:galaxy_bulb",
+              "poke_pfe:astral_bulb",
+              "poke_pfe:medic_bulb",
+              "poke_pfe:death_bulb",
+              "poke_pfe:void_bulb",
+              "poke_pfe:holy_bulb",
+              "poke_pfe:limestone_bulb"
             ]
           },
           {
             "group_identifier": {
-              "name": "poke:itemGroup.name.rawBlocks",
-              "icon": "poke:raw_hellish_block"
+              "name": "poke_pfe:itemGroup.name.rawBlocks",
+              "icon": "poke_pfe:raw_hellish_block"
             },
             "items": [
-              "poke:raw_hellish_block",
-              "poke:raw_demonic_block",
-              "poke:raw_godly_block",
-              "poke:raw_shade_block",
-              "poke:raw_onyx_block",
-              "poke:raw_cobalt_block",
-              "poke:raw_nebula_block",
-              "poke:raw_galaxy_block",
-              "poke:raw_astral_block",
-              "poke:raw_void_block",
-              "poke:raw_holy_block"
+              "poke_pfe:raw_hellish_block",
+              "poke_pfe:raw_demonic_block",
+              "poke_pfe:raw_godly_block",
+              "poke_pfe:raw_shade_block",
+              "poke_pfe:raw_onyx_block",
+              "poke_pfe:raw_cobalt_block",
+              "poke_pfe:raw_nebula_block",
+              "poke_pfe:raw_galaxy_block",
+              "poke_pfe:raw_astral_block",
+              "poke_pfe:raw_void_block",
+              "poke_pfe:raw_holy_block"
             ]
           },
           {
             "group_identifier": {
-              "name": "poke:itemGroup.name.trophy",
-              "icon": "poke:zombken_trophy"
+              "name": "poke_pfe:itemGroup.name.trophy",
+              "icon": "poke_pfe:zombken_trophy"
             },
             "items": [
-              "poke:zombken_trophy",
+              "poke_pfe:zombken_trophy",
               "poke_pfe:knightling_trophy",
-              "poke:furnace_golem_trophy",
-              "poke:listener_trophy"
-              //,"poke:golden_turnip_trophy"
+              "poke_pfe:furnace_golem_trophy",
+              "poke_pfe:listener_trophy"
+              //,"poke_pfe:golden_turnip_trophy"
             ]
           },
           {
@@ -218,26 +218,26 @@
               "name": "minecraft:itemGroup.name.walls"
             },
             "items": [
-              "poke:hellish_brick_wall",
-              "poke:molten_brick_wall",
-              "poke:honey_tile_wall",
-              "poke:honey_brick_wall",
-              "poke:radium_brick_wall",
-              "poke:shade_brick_wall",
-              "poke:cobalt_brick_wall",
-              "poke:nebula_brick_wall",
-              "poke:galaxy_brick_wall",
-              "poke:cobbled_shadowstone_wall",
-              "poke:shadowstone_wall",
-              "poke:medic_brick_wall",
-              "poke:godly_brick_wall",
-              "poke:holy_brick_wall",
-              "poke:limestone_brick_wall",
-              "poke:demonic_brick_wall",
-              "poke:onyx_brick_wall",
-              "poke:astral_brick_wall",
-              "poke:death_brick_wall",
-              "poke:void_brick_wall"
+              "poke_pfe:hellish_brick_wall",
+              "poke_pfe:molten_brick_wall",
+              "poke_pfe:honey_tile_wall",
+              "poke_pfe:honey_brick_wall",
+              "poke_pfe:radium_brick_wall",
+              "poke_pfe:shade_brick_wall",
+              "poke_pfe:cobalt_brick_wall",
+              "poke_pfe:nebula_brick_wall",
+              "poke_pfe:galaxy_brick_wall",
+              "poke_pfe:cobbled_shadowstone_wall",
+              "poke_pfe:shadowstone_wall",
+              "poke_pfe:medic_brick_wall",
+              "poke_pfe:godly_brick_wall",
+              "poke_pfe:holy_brick_wall",
+              "poke_pfe:limestone_brick_wall",
+              "poke_pfe:demonic_brick_wall",
+              "poke_pfe:onyx_brick_wall",
+              "poke_pfe:astral_brick_wall",
+              "poke_pfe:death_brick_wall",
+              "poke_pfe:void_brick_wall"
             ]
           },
           {
@@ -269,22 +269,22 @@
               "name": "minecraft:itemGroup.name.trapdoor"
             },
             "items": [
-              "poke:hellish_trapdoor",
-              "poke:molten_trapdoor",
-              "poke:honey_trapdoor",
-              "poke:radium_trapdoor",
-              "poke:shade_trapdoor",
-              "poke:cobalt_trapdoor",
-              "poke:nebula_trapdoor",
-              "poke:galaxy_trapdoor",
-              "poke:medic_trapdoor",
-              "poke:godly_trapdoor",
-              "poke:holy_trapdoor",
-              "poke:demonic_trapdoor",
-              "poke:astral_trapdoor",
-              "poke:onyx_trapdoor",
-              "poke:death_trapdoor",
-              "poke:void_trapdoor"
+              "poke_pfe:hellish_trapdoor",
+              "poke_pfe:molten_trapdoor",
+              "poke_pfe:honey_trapdoor",
+              "poke_pfe:radium_trapdoor",
+              "poke_pfe:shade_trapdoor",
+              "poke_pfe:cobalt_trapdoor",
+              "poke_pfe:nebula_trapdoor",
+              "poke_pfe:galaxy_trapdoor",
+              "poke_pfe:medic_trapdoor",
+              "poke_pfe:godly_trapdoor",
+              "poke_pfe:holy_trapdoor",
+              "poke_pfe:demonic_trapdoor",
+              "poke_pfe:astral_trapdoor",
+              "poke_pfe:onyx_trapdoor",
+              "poke_pfe:death_trapdoor",
+              "poke_pfe:void_trapdoor"
             ]
           },
           {
@@ -292,7 +292,7 @@
               "name": "minecraft:itemGroup.name.glass"
             },
             "items": [
-              "poke:cobalt_edged_glass"
+              "poke_pfe:cobalt_edged_glass"
             ]
           },
           {
@@ -306,59 +306,59 @@
               "name": "minecraft:itemGroup.name.slab"
             },
             "items": [
-              "poke:hellish_bricks_slab",
-              "poke:molten_bricks_slab",
-              "poke:honey_bricks_slab",
-              "poke:radium_bricks_slab",
-              "poke:shade_bricks_slab",
-              "poke:cobalt_bricks_slab",
-              "poke:nebula_bricks_slab",
-              "poke:galaxy_bricks_slab",
-              "poke:medic_bricks_slab",
-              "poke:godly_bricks_slab",
-              "poke:holy_bricks_slab",
-              "poke:limestone_brick_slab",
-              "poke:demonic_bricks_slab",
-              "poke:onyx_bricks_slab",
-              "poke:astral_bricks_slab",
-              "poke:death_bricks_slab",
-              "poke:void_bricks_slab",
-              "poke:cut_hellish_slab",
-              "poke:cut_molten_slab",
-              "poke:cut_radium_slab",
-              "poke:cut_shade_slab",
-              "poke:cut_cobalt_slab",
-              "poke:cut_nebula_slab",
-              "poke:cut_galaxy_slab",
-              "poke:cut_astral_slab",
-              "poke:cut_medic_slab",
-              "poke:cut_godly_slab",
-              "poke:cut_holy_slab",
-              "poke:cut_demonic_slab",
-              "poke:cut_onyx_slab",
-              "poke:cut_death_slab",
-              "poke:cut_void_slab",
-              "poke:raw_hellish_slab",
-              "poke:raw_demonic_slab",
-              "poke:raw_godly_slab",
-              "poke:raw_shade_slab",
-              "poke:raw_cobalt_slab",
-              "poke:raw_onyx_slab",
-              "poke:raw_nebula_slab",
-              "poke:raw_galaxy_slab",
-              "poke:raw_astral_slab",
-              "poke:raw_holy_slab",
-              "poke:raw_void_slab",
-              "poke:honey_tiles_slab",
-              "poke:chiseled_cobalt_slab",
-              "poke:cracked_cobalt_bricks_slab",
-              "poke:cobbled_shadowstone_slab",
-              "poke:shadowstone_slab",
-              "poke:polished_shadowstone_slab",
-              "poke:cobbled_limestone_slab",
-              "poke:limestone_slab",
-              "poke:smooth_limestone_slab",
-              "poke:beveled_limestone_slab"
+              "poke_pfe:hellish_bricks_slab",
+              "poke_pfe:molten_bricks_slab",
+              "poke_pfe:honey_bricks_slab",
+              "poke_pfe:radium_bricks_slab",
+              "poke_pfe:shade_bricks_slab",
+              "poke_pfe:cobalt_bricks_slab",
+              "poke_pfe:nebula_bricks_slab",
+              "poke_pfe:galaxy_bricks_slab",
+              "poke_pfe:medic_bricks_slab",
+              "poke_pfe:godly_bricks_slab",
+              "poke_pfe:holy_bricks_slab",
+              "poke_pfe:limestone_brick_slab",
+              "poke_pfe:demonic_bricks_slab",
+              "poke_pfe:onyx_bricks_slab",
+              "poke_pfe:astral_bricks_slab",
+              "poke_pfe:death_bricks_slab",
+              "poke_pfe:void_bricks_slab",
+              "poke_pfe:cut_hellish_slab",
+              "poke_pfe:cut_molten_slab",
+              "poke_pfe:cut_radium_slab",
+              "poke_pfe:cut_shade_slab",
+              "poke_pfe:cut_cobalt_slab",
+              "poke_pfe:cut_nebula_slab",
+              "poke_pfe:cut_galaxy_slab",
+              "poke_pfe:cut_astral_slab",
+              "poke_pfe:cut_medic_slab",
+              "poke_pfe:cut_godly_slab",
+              "poke_pfe:cut_holy_slab",
+              "poke_pfe:cut_demonic_slab",
+              "poke_pfe:cut_onyx_slab",
+              "poke_pfe:cut_death_slab",
+              "poke_pfe:cut_void_slab",
+              "poke_pfe:raw_hellish_slab",
+              "poke_pfe:raw_demonic_slab",
+              "poke_pfe:raw_godly_slab",
+              "poke_pfe:raw_shade_slab",
+              "poke_pfe:raw_cobalt_slab",
+              "poke_pfe:raw_onyx_slab",
+              "poke_pfe:raw_nebula_slab",
+              "poke_pfe:raw_galaxy_slab",
+              "poke_pfe:raw_astral_slab",
+              "poke_pfe:raw_holy_slab",
+              "poke_pfe:raw_void_slab",
+              "poke_pfe:honey_tiles_slab",
+              "poke_pfe:chiseled_cobalt_slab",
+              "poke_pfe:cracked_cobalt_bricks_slab",
+              "poke_pfe:cobbled_shadowstone_slab",
+              "poke_pfe:shadowstone_slab",
+              "poke_pfe:polished_shadowstone_slab",
+              "poke_pfe:cobbled_limestone_slab",
+              "poke_pfe:limestone_slab",
+              "poke_pfe:smooth_limestone_slab",
+              "poke_pfe:beveled_limestone_slab"
             ]
           },
           {
@@ -417,16 +417,16 @@
           },
           {
             "items": [
-              "poke:honey_tiles",
-              "poke:polished_shadowstone",
-              "poke:polished_limestone",
-              "poke:chamfered_limestone",
-              "poke:cornered_chamfered_limestone",
-              "poke:chiseled_limestone",
-              "poke:smooth_limestone",
-              "poke:beveled_limestone",
-              "poke:limestone_tombstone",
-              "poke:chiseled_cobalt"
+              "poke_pfe:honey_tiles",
+              "poke_pfe:polished_shadowstone",
+              "poke_pfe:polished_limestone",
+              "poke_pfe:chamfered_limestone",
+              "poke_pfe:cornered_chamfered_limestone",
+              "poke_pfe:chiseled_limestone",
+              "poke_pfe:smooth_limestone",
+              "poke_pfe:beveled_limestone",
+              "poke_pfe:limestone_tombstone",
+              "poke_pfe:chiseled_cobalt"
             ]
           }
         ]
@@ -439,31 +439,31 @@
               "name": "minecraft:itemGroup.name.ore"
             },
             "items": [
-              "poke:cobalt_ore",
-              "poke:shade_ore",
-              "poke:hellish_ore",
-              "poke:holy_ore",
-              "poke:godly_ore",
+              "poke_pfe:cobalt_ore",
+              "poke_pfe:shade_ore",
+              "poke_pfe:hellish_ore",
+              "poke_pfe:holy_ore",
+              "poke_pfe:godly_ore",
               "poke_pfe:demonic_ore",
-              "poke:galaxy_ore",
-              "poke:deepslate_cobalt_ore",
-              "poke:deepslate_shade_ore",
-              "poke:onyx",
-              "poke:hellite_ore",
-              "poke:deepslate_holy_ore",
-              "poke:demonic_ore",
-              "poke:deepslate_godly_ore",
-              "poke:void_ore",
-              "poke:nether_shade_ore",
-              "poke:nether_onyx_ore",
-              "poke:nether_hellish_ore",
-              "poke:nether_demonic_ore",
-              "poke:end_holy_ore",
-              "poke:end_godly_ore",
-              "poke:end_void_ore",
-              "poke:end_galaxy_ore",
-              "poke:astral_ore",
-              "poke:nebula_ore"
+              "poke_pfe:galaxy_ore",
+              "poke_pfe:deepslate_cobalt_ore",
+              "poke_pfe:deepslate_shade_ore",
+              "poke_pfe:onyx",
+              "poke_pfe:hellite_ore",
+              "poke_pfe:deepslate_holy_ore",
+              "poke_pfe:demonic_ore",
+              "poke_pfe:deepslate_godly_ore",
+              "poke_pfe:void_ore",
+              "poke_pfe:nether_shade_ore",
+              "poke_pfe:nether_onyx_ore",
+              "poke_pfe:nether_hellish_ore",
+              "poke_pfe:nether_demonic_ore",
+              "poke_pfe:end_holy_ore",
+              "poke_pfe:end_godly_ore",
+              "poke_pfe:end_void_ore",
+              "poke_pfe:end_galaxy_ore",
+              "poke_pfe:astral_ore",
+              "poke_pfe:nebula_ore"
             ]
           },
           {
@@ -471,10 +471,10 @@
               "name": "minecraft:itemGroup.name.stone"
             },
             "items": [
-              "poke:limestone",
-              "poke:cobbled_limestone",
-              "poke:shadowstone",
-              "poke:cobbled_shadowstone"
+              "poke_pfe:limestone",
+              "poke_pfe:cobbled_limestone",
+              "poke_pfe:shadowstone",
+              "poke_pfe:cobbled_shadowstone"
             ]
           },
           {
@@ -512,9 +512,9 @@
               "name": "minecraft:itemGroup.name.crop"
             },
             "items": [
-              "poke:turnip",
-              "poke:golden_turnip"
-              //,"poke:turnip_crop" //Old Block
+              "poke_pfe:turnip",
+              "poke_pfe:golden_turnip"
+              //,"poke_pfe:turnip_crop" //Old Block
             ]
           },
           {
@@ -534,8 +534,8 @@
               "name": "minecraft:itemGroup.name.flower"
             },
             "items": [
-              "poke:charred_poppy"
-              //,"poke:charred_poppy_item" // Old Item
+              "poke_pfe:charred_poppy"
+              //,"poke_pfe:charred_poppy_item" // Old Item
             ]
           },
           {
@@ -549,9 +549,9 @@
               "name": "minecraft:itemGroup.name.rawFood"
             },
             "items": [
-              "poke:raw_sporefish",
-              "poke:raw_piranha",
-              "poke:raw_duck"
+              "poke_pfe:raw_sporefish",
+              "poke_pfe:raw_piranha",
+              "poke_pfe:raw_duck"
             ]
           },
           {
@@ -571,21 +571,21 @@
               "name": "minecraft:itemGroup.name.mobEgg"
             },
             "items": [
-              "poke:spawn_token_trader",
-              "poke:spawn_shopkeeper",
-              "poke:spawn_quest_trader",
-              "poke:spawn_scrapper",
-              "poke:spawn_cosmetic_trader",
-              "poke:money_man",
-              "poke:spawn_zombken",
-              "poke:spawn_knightling",
-              "poke:spawn_necromancer",
-              "poke:furnace_golem",
-              "poke:spawn_dragon",
-              "poke:spawn_the_logger",
-              "poke:spawn_listener",
-              "poke:wither_spawner",
-              "poke:cobalt_golem_block"
+              "poke_pfe:spawn_token_trader",
+              "poke_pfe:spawn_shopkeeper",
+              "poke_pfe:spawn_quest_trader",
+              "poke_pfe:spawn_scrapper",
+              "poke_pfe:spawn_cosmetic_trader",
+              "poke_pfe:money_man",
+              "poke_pfe:spawn_zombken",
+              "poke_pfe:spawn_knightling",
+              "poke_pfe:spawn_necromancer",
+              "poke_pfe:furnace_golem",
+              "poke_pfe:spawn_dragon",
+              "poke_pfe:spawn_the_logger",
+              "poke_pfe:spawn_listener",
+              "poke_pfe:wither_spawner",
+              "poke_pfe:cobalt_golem_block"
             ]
           },
           {
@@ -602,22 +602,22 @@
           },
           {
             "group_identifier": {
-              "name": "poke:itemGroup.name.melons",
-              "icon": "poke:carved_melon"
+              "name": "poke_pfe:itemGroup.name.melons",
+              "icon": "poke_pfe:carved_melon"
             },
             "items": [
-              "poke:carved_melon",
-              "poke:gilded_melon",
-              "poke:gilded_carved_melon",
-              "poke:charred_melon",
-              "poke:carved_carved_melon"
+              "poke_pfe:carved_melon",
+              "poke_pfe:gilded_melon",
+              "poke_pfe:gilded_carved_melon",
+              "poke_pfe:charred_melon",
+              "poke_pfe:carved_carved_melon"
             ]
           },
           {
             "items": [
-              "poke:lava_sponge",
-              "poke:molten_lava_sponge",
-              "poke:duck_egg"
+              "poke_pfe:lava_sponge",
+              "poke_pfe:molten_lava_sponge",
+              "poke_pfe:duck_egg"
             ]
           }
         ]
@@ -630,37 +630,37 @@
               "name": "minecraft:itemGroup.name.helmet"
             },
             "items": [
-              "poke:amethyst_helmet",
+              "poke_pfe:amethyst_helmet",
               "poke_pfe:cobalt_helmet",
-              "poke:shade_helmet",
-              "poke:radium_helmet",
-              "poke:banished_helmet",
-              "poke:onyx_helmet",
-              "poke:holy_helmet",
-              "poke:hellish_helmet",
-              "poke:godly_helmet",
-              "poke:demonic_helmet",
-              "poke:medic_helmet",
-              "poke:molten_helmet",
-              "poke:galaxy_helmet",
-              "poke:void_helmet",
-              "poke:astral_helmet",
-              "poke:death_helmet",
-              "poke:nebula_helmet",
-              "poke:wood_helmet",
-              "poke:stone_helmet",
-              "poke:cactus_helmet",
-              "poke:ember_robe_helmet",
-              "poke:hasted_robe_helmet",
-              "poke:springy_robey_helmet",
-              "poke:heroic_robe_helmet",
-              "poke:cobalt_robe_helmet",
-              "poke:swift_robe_helmet",
-              "poke:gluttony_robe_helmet",
-              "poke:feather_robe_helmet",
-              "poke:shadow_robe_helmet",
-              "poke:miner_helmet",
-              "poke:knightling_helmet"
+              "poke_pfe:shade_helmet",
+              "poke_pfe:radium_helmet",
+              "poke_pfe:banished_helmet",
+              "poke_pfe:onyx_helmet",
+              "poke_pfe:holy_helmet",
+              "poke_pfe:hellish_helmet",
+              "poke_pfe:godly_helmet",
+              "poke_pfe:demonic_helmet",
+              "poke_pfe:medic_helmet",
+              "poke_pfe:molten_helmet",
+              "poke_pfe:galaxy_helmet",
+              "poke_pfe:void_helmet",
+              "poke_pfe:astral_helmet",
+              "poke_pfe:death_helmet",
+              "poke_pfe:nebula_helmet",
+              "poke_pfe:wood_helmet",
+              "poke_pfe:stone_helmet",
+              "poke_pfe:cactus_helmet",
+              "poke_pfe:ember_robe_helmet",
+              "poke_pfe:hasted_robe_helmet",
+              "poke_pfe:springy_robey_helmet",
+              "poke_pfe:heroic_robe_helmet",
+              "poke_pfe:cobalt_robe_helmet",
+              "poke_pfe:swift_robe_helmet",
+              "poke_pfe:gluttony_robe_helmet",
+              "poke_pfe:feather_robe_helmet",
+              "poke_pfe:shadow_robe_helmet",
+              "poke_pfe:miner_helmet",
+              "poke_pfe:knightling_helmet"
             ]
           },
           {
@@ -668,35 +668,35 @@
               "name": "minecraft:itemGroup.name.chestplate"
             },
             "items": [
-              "poke:amethyst_chestplate",
+              "poke_pfe:amethyst_chestplate",
               "poke_pfe:cobalt_chestplate",
-              "poke:shade_chestplate",
-              "poke:radium_chestplate",
-              "poke:banished_chestplate",
-              "poke:onyx_chestplate",
-              "poke:holy_chestplate",
-              "poke:hellish_chestplate",
-              "poke:godly_chestplate",
-              "poke:demonic_chestplate",
-              "poke:medic_chestplate",
-              "poke:molten_chestplate",
-              "poke:galaxy_chestplate",
-              "poke:void_chestplate",
-              "poke:astral_chestplate",
-              "poke:death_chestplate",
-              "poke:nebula_chestplate",
-              "poke:wood_chestplate",
-              "poke:stone_chestplate",
-              "poke:cactus_chestplate",
-              "poke:ember_robe_chestplate",
-              "poke:hasted_robe_chestplate",
-              "poke:springy_robey_chestplate",
-              "poke:heroic_robe_chestplate",
-              "poke:cobalt_robe_chestplate",
-              "poke:swift_robe_chestplate",
-              "poke:gluttony_robe_chestplate",
-              "poke:feather_robe_chestplate",
-              "poke:shadow_robe_chestplate"
+              "poke_pfe:shade_chestplate",
+              "poke_pfe:radium_chestplate",
+              "poke_pfe:banished_chestplate",
+              "poke_pfe:onyx_chestplate",
+              "poke_pfe:holy_chestplate",
+              "poke_pfe:hellish_chestplate",
+              "poke_pfe:godly_chestplate",
+              "poke_pfe:demonic_chestplate",
+              "poke_pfe:medic_chestplate",
+              "poke_pfe:molten_chestplate",
+              "poke_pfe:galaxy_chestplate",
+              "poke_pfe:void_chestplate",
+              "poke_pfe:astral_chestplate",
+              "poke_pfe:death_chestplate",
+              "poke_pfe:nebula_chestplate",
+              "poke_pfe:wood_chestplate",
+              "poke_pfe:stone_chestplate",
+              "poke_pfe:cactus_chestplate",
+              "poke_pfe:ember_robe_chestplate",
+              "poke_pfe:hasted_robe_chestplate",
+              "poke_pfe:springy_robey_chestplate",
+              "poke_pfe:heroic_robe_chestplate",
+              "poke_pfe:cobalt_robe_chestplate",
+              "poke_pfe:swift_robe_chestplate",
+              "poke_pfe:gluttony_robe_chestplate",
+              "poke_pfe:feather_robe_chestplate",
+              "poke_pfe:shadow_robe_chestplate"
             ]
           },
           {
@@ -704,26 +704,26 @@
               "name": "minecraft:itemGroup.name.leggings"
             },
             "items": [
-              "poke:amethyst_leggings",
+              "poke_pfe:amethyst_leggings",
               "poke_pfe:cobalt_leggings",
-              "poke:shade_leggings",
-              "poke:radium_leggings",
-              "poke:banished_leggings",
-              "poke:onyx_leggings",
-              "poke:holy_leggings",
-              "poke:hellish_leggings",
-              "poke:godly_leggings",
-              "poke:demonic_leggings",
-              "poke:medic_leggings",
-              "poke:molten_leggings",
-              "poke:galaxy_leggings",
-              "poke:void_leggings",
-              "poke:astral_leggings",
-              "poke:death_leggings",
-              "poke:nebula_leggings",
-              "poke:wood_leggings",
-              "poke:stone_leggings",
-              "poke:cactus_leggings"
+              "poke_pfe:shade_leggings",
+              "poke_pfe:radium_leggings",
+              "poke_pfe:banished_leggings",
+              "poke_pfe:onyx_leggings",
+              "poke_pfe:holy_leggings",
+              "poke_pfe:hellish_leggings",
+              "poke_pfe:godly_leggings",
+              "poke_pfe:demonic_leggings",
+              "poke_pfe:medic_leggings",
+              "poke_pfe:molten_leggings",
+              "poke_pfe:galaxy_leggings",
+              "poke_pfe:void_leggings",
+              "poke_pfe:astral_leggings",
+              "poke_pfe:death_leggings",
+              "poke_pfe:nebula_leggings",
+              "poke_pfe:wood_leggings",
+              "poke_pfe:stone_leggings",
+              "poke_pfe:cactus_leggings"
             ]
           },
           {
@@ -731,27 +731,27 @@
               "name": "minecraft:itemGroup.name.boots"
             },
             "items": [
-              "poke:amethyst_boots",
+              "poke_pfe:amethyst_boots",
               "poke_pfe:cobalt_boots",
-              "poke:shade_boots",
-              "poke:radium_boots",
-              "poke:banished_boots",
-              "poke:onyx_boots",
-              "poke:holy_boots",
-              "poke:hellish_boots",
-              "poke:godly_boots",
-              "poke:demonic_boots",
-              "poke:medic_boots",
-              "poke:molten_boots",
-              "poke:galaxy_boots",
-              "poke:void_boots",
-              "poke:astral_boots",
-              "poke:death_boots",
-              "poke:nebula_boots",
-              "poke:wood_boots",
-              "poke:stone_boots",
-              "poke:cactus_boots",
-              "poke:swift_boots"
+              "poke_pfe:shade_boots",
+              "poke_pfe:radium_boots",
+              "poke_pfe:banished_boots",
+              "poke_pfe:onyx_boots",
+              "poke_pfe:holy_boots",
+              "poke_pfe:hellish_boots",
+              "poke_pfe:godly_boots",
+              "poke_pfe:demonic_boots",
+              "poke_pfe:medic_boots",
+              "poke_pfe:molten_boots",
+              "poke_pfe:galaxy_boots",
+              "poke_pfe:void_boots",
+              "poke_pfe:astral_boots",
+              "poke_pfe:death_boots",
+              "poke_pfe:nebula_boots",
+              "poke_pfe:wood_boots",
+              "poke_pfe:stone_boots",
+              "poke_pfe:cactus_boots",
+              "poke_pfe:swift_boots"
             ]
           },
           {
@@ -759,22 +759,22 @@
               "name": "minecraft:itemGroup.name.sword"
             },
             "items": [
-              "poke:amethyst_sword",
-              "poke:cobalt_sword",
-              "poke:shade_sword",
-              "poke:radium_sword",
-              "poke:onyx_sword",
-              "poke:holy_sword",
-              "poke:hellish_blade",
-              "poke:godly_sword",
-              "poke:demonic_sword",
-              "poke:galaxy_sword",
-              "poke:void_sword",
-              "poke:astral_sword",
-              "poke:death_sword",
-              "poke:nebula_sword",
-              "poke:circuit_sword",
-              "poke:pocket_knife"
+              "poke_pfe:amethyst_sword",
+              "poke_pfe:cobalt_sword",
+              "poke_pfe:shade_sword",
+              "poke_pfe:radium_sword",
+              "poke_pfe:onyx_sword",
+              "poke_pfe:holy_sword",
+              "poke_pfe:hellish_blade",
+              "poke_pfe:godly_sword",
+              "poke_pfe:demonic_sword",
+              "poke_pfe:galaxy_sword",
+              "poke_pfe:void_sword",
+              "poke_pfe:astral_sword",
+              "poke_pfe:death_sword",
+              "poke_pfe:nebula_sword",
+              "poke_pfe:circuit_sword",
+              "poke_pfe:pocket_knife"
             ]
           },
           {
@@ -782,23 +782,23 @@
               "name": "minecraft:itemGroup.name.axe"
             },
             "items": [
-              "poke:emerald_axe",
-              "poke:amethyst_axe",
-              "poke:cobalt_axe",
-              "poke:shade_axe",
-              "poke:onyx_axe",
-              "poke:holy_axe",
-              "poke:hellish_axe",
-              "poke:radium_axe",
-              "poke:godly_axe",
-              "poke:demonic_axe",
-              "poke:medic_axe",
-              "poke:galaxy_axe",
-              "poke:molten_axe",
-              "poke:void_axe",
-              "poke:astral_axe",
-              "poke:death_axe",
-              "poke:nebula_logger"
+              "poke_pfe:emerald_axe",
+              "poke_pfe:amethyst_axe",
+              "poke_pfe:cobalt_axe",
+              "poke_pfe:shade_axe",
+              "poke_pfe:onyx_axe",
+              "poke_pfe:holy_axe",
+              "poke_pfe:hellish_axe",
+              "poke_pfe:radium_axe",
+              "poke_pfe:godly_axe",
+              "poke_pfe:demonic_axe",
+              "poke_pfe:medic_axe",
+              "poke_pfe:galaxy_axe",
+              "poke_pfe:molten_axe",
+              "poke_pfe:void_axe",
+              "poke_pfe:astral_axe",
+              "poke_pfe:death_axe",
+              "poke_pfe:nebula_logger"
             ]
           },
           {
@@ -806,24 +806,24 @@
               "name": "minecraft:itemGroup.name.pickaxe"
             },
             "items": [
-              "poke:emerald_pickaxe",
-              "poke:amethyst_pickaxe",
-              "poke:cobalt_pickaxe",
-              "poke:shade_pickaxe",
-              "poke:onyx_pickaxe",
-              "poke:holy_pickaxe",
-              "poke:hellish_pickaxe",
-              "poke:radium_pickaxe",
-              "poke:godly_pickaxe",
-              "poke:demonic_pickaxe",
-              "poke:medic_pickaxe",
-              "poke:galaxy_pickaxe",
-              "poke:molten_pickaxe",
-              "poke:void_pickaxe",
-              "poke:astral_pickaxe",
-              "poke:death_pickaxe",
-              "poke:nebula_pickaxe",
-              "poke:swift_pickaxe"
+              "poke_pfe:emerald_pickaxe",
+              "poke_pfe:amethyst_pickaxe",
+              "poke_pfe:cobalt_pickaxe",
+              "poke_pfe:shade_pickaxe",
+              "poke_pfe:onyx_pickaxe",
+              "poke_pfe:holy_pickaxe",
+              "poke_pfe:hellish_pickaxe",
+              "poke_pfe:radium_pickaxe",
+              "poke_pfe:godly_pickaxe",
+              "poke_pfe:demonic_pickaxe",
+              "poke_pfe:medic_pickaxe",
+              "poke_pfe:galaxy_pickaxe",
+              "poke_pfe:molten_pickaxe",
+              "poke_pfe:void_pickaxe",
+              "poke_pfe:astral_pickaxe",
+              "poke_pfe:death_pickaxe",
+              "poke_pfe:nebula_pickaxe",
+              "poke_pfe:swift_pickaxe"
             ]
           },
           {
@@ -831,7 +831,7 @@
               "name": "minecraft:itemGroup.name.shovel"
             },
             "items": [
-              "poke:snow_shovel"
+              "poke_pfe:snow_shovel"
             ]
           },
           {
@@ -839,7 +839,7 @@
               "name": "minecraft:itemGroup.name.hoe"
             },
             "items": [
-              "poke:nebula_hoe"
+              "poke_pfe:nebula_hoe"
             ]
           },
           {
@@ -847,11 +847,11 @@
               "name": "minecraft:itemGroup.name.arrow"
             },
             "items": [
-              "poke:holy_arrow",
-              "poke:hellish_arrow",
-              "poke:galaxy_arrow",
-              "poke:void_arrow",
-              "poke:volt_arrow"
+              "poke_pfe:holy_arrow",
+              "poke_pfe:hellish_arrow",
+              "poke_pfe:galaxy_arrow",
+              "poke_pfe:void_arrow",
+              "poke_pfe:volt_arrow"
             ]
           },
           {
@@ -859,12 +859,12 @@
               "name": "minecraft:itemGroup.name.cookedFood"
             },
             "items": [
-              "poke:cooked_sporefish",
-              "poke:cooked_piranha",
-              "poke:cooked_duck",
-              "poke:grilled_cheese",
-              "poke:toast",
-              "poke:smoked_beetroot"
+              "poke_pfe:cooked_sporefish",
+              "poke_pfe:cooked_piranha",
+              "poke_pfe:cooked_duck",
+              "poke_pfe:grilled_cheese",
+              "poke_pfe:toast",
+              "poke_pfe:smoked_beetroot"
             ]
           },
           {
@@ -872,23 +872,23 @@
               "name": "minecraft:itemGroup.name.miscFood"
             },
             "items": [
-              "poke:cobalt_soup",
-              "poke:hellish_soup",
-              "poke:nebula_noodles",
-              "poke:warped_sporeshroom_stew",
-              "poke:crimson_sporeshroom_stew",
-              "poke:baguette",
-              "poke:hot_coco",
-              "poke:eggnog",
-              "poke:root_beer",
-              "poke:apple_juice",
-              "poke:pumpkin_spice",
-              "poke:milk_bottle",
-              "poke:sugar_water",
-              "poke:coffee_mug",
-              "poke:cheese",
-              "poke:rotten_chicken",
-              "poke:golden_chicken"
+              "poke_pfe:cobalt_soup",
+              "poke_pfe:hellish_soup",
+              "poke_pfe:nebula_noodles",
+              "poke_pfe:warped_sporeshroom_stew",
+              "poke_pfe:crimson_sporeshroom_stew",
+              "poke_pfe:baguette",
+              "poke_pfe:hot_coco",
+              "poke_pfe:eggnog",
+              "poke_pfe:root_beer",
+              "poke_pfe:apple_juice",
+              "poke_pfe:pumpkin_spice",
+              "poke_pfe:milk_bottle",
+              "poke_pfe:sugar_water",
+              "poke_pfe:coffee_mug",
+              "poke_pfe:cheese",
+              "poke_pfe:rotten_chicken",
+              "poke_pfe:golden_chicken"
             ]
           },
           {
@@ -902,7 +902,7 @@
               "name": "minecraft:itemGroup.name.bundles"
             },
             "items": [
-              "poke:pfe-gift_box"
+              "poke_pfe:pfe-gift_box"
             ]
           },
           {
@@ -916,12 +916,12 @@
               "name": "minecraft:itemGroup.name.potion"
             },
             "items": [
-              "poke:cobalt_potion",
-              "poke:hellish_potion",
-              "poke:demonic_potion",
-              "poke:void_potion",
-              "poke:death_potion",
-              "poke:nebula_potion"
+              "poke_pfe:cobalt_potion",
+              "poke_pfe:hellish_potion",
+              "poke_pfe:demonic_potion",
+              "poke_pfe:void_potion",
+              "poke_pfe:death_potion",
+              "poke_pfe:nebula_potion"
             ]
           },
           {
@@ -929,7 +929,7 @@
               "name": "minecraft:itemGroup.name.splashPotion"
             },
             "items": [
-              "poke:splash_death_potion"
+              "poke_pfe:splash_death_potion"
             ]
           },
           {
@@ -946,122 +946,122 @@
           },
           {
             "group_identifier": {
-              "name": "poke:itemGroup.name.cosmetic",
-              "icon": "poke:goggles"
+              "name": "poke_pfe:itemGroup.name.cosmetic",
+              "icon": "poke_pfe:goggles"
             },
             "items": [
-              "poke:goggles",
-              "poke:crown_helmet",
-              "poke:top_hat",
-              "poke:trash_lid",
-              "poke:cone_cosmetic",
-              "poke:cosmetic_cosmetic",
-              "poke:grad_cap",
-              "poke:fungal_hat",
-              "poke:flower_lilly_hat",
-              "poke:festive_helmet",
-              "poke:armadillo_hat",
-              "poke:carved_melon_mask",
-              "poke:pirate_hat",
-              "poke:party_hat",
-              "poke:viking_helmet",
-              "poke:pok_bot_cosmetic",
-              "poke:apollo_the_snake",
-              "poke:little_dapper_fit",
-              "poke:dapper_fit",
-              "poke:big_dapper_fit",
-              "poke:caged_soul",
-              "poke:crab_pal",
-              "poke:end_crystal_hat",
-              "poke:ferret",
-              "poke:fishbowl",
-              "poke:ghost",
-              "poke:halo",
-              "poke:horns",
-              "poke:maxwell",
-              "poke:mlg_glasses",
-              "poke:mr_duck",
-              "poke:necromancer_crown",
-              "poke:pickaxe_hat",
-              "poke:poppy_hat",
-              "poke:steampunk_hat",
-              "poke:sword_hat",
-              "poke:night_vision_goggles",
-              "poke:carved_melon_helmet",
+              "poke_pfe:goggles",
+              "poke_pfe:crown_helmet",
+              "poke_pfe:top_hat",
+              "poke_pfe:trash_lid",
+              "poke_pfe:cone_cosmetic",
+              "poke_pfe:cosmetic_cosmetic",
+              "poke_pfe:grad_cap",
+              "poke_pfe:fungal_hat",
+              "poke_pfe:flower_lilly_hat",
+              "poke_pfe:festive_helmet",
+              "poke_pfe:armadillo_hat",
+              "poke_pfe:carved_melon_mask",
+              "poke_pfe:pirate_hat",
+              "poke_pfe:party_hat",
+              "poke_pfe:viking_helmet",
+              "poke_pfe:pok_bot_cosmetic",
+              "poke_pfe:apollo_the_snake",
+              "poke_pfe:little_dapper_fit",
+              "poke_pfe:dapper_fit",
+              "poke_pfe:big_dapper_fit",
+              "poke_pfe:caged_soul",
+              "poke_pfe:crab_pal",
+              "poke_pfe:end_crystal_hat",
+              "poke_pfe:ferret",
+              "poke_pfe:fishbowl",
+              "poke_pfe:ghost",
+              "poke_pfe:halo",
+              "poke_pfe:horns",
+              "poke_pfe:maxwell",
+              "poke_pfe:mlg_glasses",
+              "poke_pfe:mr_duck",
+              "poke_pfe:necromancer_crown",
+              "poke_pfe:pickaxe_hat",
+              "poke_pfe:poppy_hat",
+              "poke_pfe:steampunk_hat",
+              "poke_pfe:sword_hat",
+              "poke_pfe:night_vision_goggles",
+              "poke_pfe:carved_melon_helmet",
               "poke_pfe:listener_antennas"
             ]
           },
           {
             "group_identifier": {
-              "name": "poke:itemGroup.name.battleaxe",
-              "icon": "poke:wood_battleaxe"
+              "name": "poke_pfe:itemGroup.name.battleaxe",
+              "icon": "poke_pfe:wood_battleaxe"
             },
             "items": [
-              "poke:wood_battleaxe",
-              "poke:stone_battleaxe",
+              "poke_pfe:wood_battleaxe",
+              "poke_pfe:stone_battleaxe",
               "poke_pfe:copper_battleaxe",
               "poke_pfe:redstone_battleaxe",
-              "poke:iron_battleaxe",
-              "poke:gold_battleaxe",
-              "poke:emerald_battleaxe",
-              "poke:diamond_battleaxe",
-              "poke:netherite_battleaxe",
-              "poke:amethyst_battleaxe",
-              "poke:cobalt_battleaxe",
-              "poke:shade_battleaxe",
-              "poke:radium_battleaxe",
-              "poke:onyx_battleaxe",
-              "poke:holy_battleaxe",
-              "poke:hellish_battleaxe",
-              "poke:godly_battleaxe",
-              "poke:demonic_battleaxe",
-              "poke:medic_battleaxe",
-              "poke:molten_battleaxe",
-              "poke:galaxy_battleaxe",
-              "poke:void_battleaxe",
-              "poke:astral_battleaxe",
-              "poke:death_battleaxe",
-              "poke:nebula_battleaxe",
+              "poke_pfe:iron_battleaxe",
+              "poke_pfe:gold_battleaxe",
+              "poke_pfe:emerald_battleaxe",
+              "poke_pfe:diamond_battleaxe",
+              "poke_pfe:netherite_battleaxe",
+              "poke_pfe:amethyst_battleaxe",
+              "poke_pfe:cobalt_battleaxe",
+              "poke_pfe:shade_battleaxe",
+              "poke_pfe:radium_battleaxe",
+              "poke_pfe:onyx_battleaxe",
+              "poke_pfe:holy_battleaxe",
+              "poke_pfe:hellish_battleaxe",
+              "poke_pfe:godly_battleaxe",
+              "poke_pfe:demonic_battleaxe",
+              "poke_pfe:medic_battleaxe",
+              "poke_pfe:molten_battleaxe",
+              "poke_pfe:galaxy_battleaxe",
+              "poke_pfe:void_battleaxe",
+              "poke_pfe:astral_battleaxe",
+              "poke_pfe:death_battleaxe",
+              "poke_pfe:nebula_battleaxe",
               "poke_pfe:banished_battleaxe"
             ]
           },
           {
             "group_identifier": {
-              "name": "poke:itemGroup.name.scythe",
-              "icon": "poke:iron_scythe"
+              "name": "poke_pfe:itemGroup.name.scythe",
+              "icon": "poke_pfe:iron_scythe"
             },
             "items": [
               // "poke_pfe:wooden_scythe",
               // "poke_pfe:stone_scythe",
               // "poke_pfe:copper_scythe",
               // "poke_pfe:redstone_scythe",
-              "poke:iron_scythe",
-              "poke:gold_scythe",
-              "poke:emerald_scythe",
-              "poke:diamond_scythe",
-              "poke:netherite_scythe",
-              "poke:amethyst_scythe",
-              "poke:cobalt_scythe",
-              "poke:shade_scythe",
-              "poke:radium_scythe",
-              "poke:onyx_scythe",
-              "poke:holy_scythe",
-              "poke:hellish_scythe",
-              "poke:godly_scythe",
-              "poke:demonic_slasher",
-              "poke:medic_scythe",
-              "poke:ember_scythe",
-              "poke:galactic_scythe",
-              "poke:void_scythe",
-              "poke:astral_scythe",
-              "poke:death_scythe",
-              "poke:nebula_scythe"
+              "poke_pfe:iron_scythe",
+              "poke_pfe:gold_scythe",
+              "poke_pfe:emerald_scythe",
+              "poke_pfe:diamond_scythe",
+              "poke_pfe:netherite_scythe",
+              "poke_pfe:amethyst_scythe",
+              "poke_pfe:cobalt_scythe",
+              "poke_pfe:shade_scythe",
+              "poke_pfe:radium_scythe",
+              "poke_pfe:onyx_scythe",
+              "poke_pfe:holy_scythe",
+              "poke_pfe:hellish_scythe",
+              "poke_pfe:godly_scythe",
+              "poke_pfe:demonic_slasher",
+              "poke_pfe:medic_scythe",
+              "poke_pfe:ember_scythe",
+              "poke_pfe:galactic_scythe",
+              "poke_pfe:void_scythe",
+              "poke_pfe:astral_scythe",
+              "poke_pfe:death_scythe",
+              "poke_pfe:nebula_scythe"
               //, "poke_pfe:banished_scythe"
             ]
           },
           {
             "group_identifier": {
-              "name": "poke:itemGroup.name.claymore",
+              "name": "poke_pfe:itemGroup.name.claymore",
               "icon": "poke_pfe:wood_claymore"
             },
             "items": [
@@ -1095,195 +1095,195 @@
           },
           {
             "group_identifier": {
-              "name": "poke:itemGroup.name.haxel",
-              "icon": "poke:wooden_haxel"
+              "name": "poke_pfe:itemGroup.name.haxel",
+              "icon": "poke_pfe:wooden_haxel"
             },
             "items": [
-              "poke:wooden_haxel",
-              "poke:stone_haxel",
+              "poke_pfe:wooden_haxel",
+              "poke_pfe:stone_haxel",
               "poke_pfe:copper_haxel",
               "poke_pfe:redstone_haxel",
-              "poke:iron_haxel",
-              "poke:gold_haxel",
-              "poke:emerald_haxel",
-              "poke:diamond_haxel",
-              "poke:netherite_haxel",
-              "poke:amethyst_haxel",
-              "poke:haxel",
-              "poke:holy_haxel",
-              "poke:hellish_haxel",
-              "poke:godly_haxel",
-              "poke:demonic_haxel",
-              "poke:medic_haxel",
-              "poke:molten_haxel",
-              "poke:galaxy_haxel",
-              "poke:void_haxel",
-              "poke:astral_haxel",
-              "poke:death_haxel",
-              "poke:nebula_haxel",
-              "poke:cobalt_haxel",
-              "poke:shade_haxel",
-              "poke:radium_haxel",
-              "poke:ban_hammer"
+              "poke_pfe:iron_haxel",
+              "poke_pfe:gold_haxel",
+              "poke_pfe:emerald_haxel",
+              "poke_pfe:diamond_haxel",
+              "poke_pfe:netherite_haxel",
+              "poke_pfe:amethyst_haxel",
+              "poke_pfe:haxel",
+              "poke_pfe:holy_haxel",
+              "poke_pfe:hellish_haxel",
+              "poke_pfe:godly_haxel",
+              "poke_pfe:demonic_haxel",
+              "poke_pfe:medic_haxel",
+              "poke_pfe:molten_haxel",
+              "poke_pfe:galaxy_haxel",
+              "poke_pfe:void_haxel",
+              "poke_pfe:astral_haxel",
+              "poke_pfe:death_haxel",
+              "poke_pfe:nebula_haxel",
+              "poke_pfe:cobalt_haxel",
+              "poke_pfe:shade_haxel",
+              "poke_pfe:radium_haxel",
+              "poke_pfe:ban_hammer"
             ]
           },
           {
             "group_identifier": {
-              "name": "poke:itemGroup.name.upgraders",
-              "icon": "poke:nether_upgrader"
+              "name": "poke_pfe:itemGroup.name.upgraders",
+              "icon": "poke_pfe:nether_upgrader"
             },
             "items": [
-              "poke:nether_upgrader",
-              "poke:end_upgrader",
-              "poke:obsidian_depressor",
-              "poke:stone_upgrader",
-              "poke:coal_upgrader",
-              "poke:copper_upgrader",
-              "poke:iron_upgrader",
-              "poke:gold_upgrader",
-              "poke:redstone_upgrader",
-              "poke:lapis_upgrader",
-              "poke:emerald_upgrader",
-              "poke:diamond_upgrader",
-              "poke:netherite_upgrader",
-              "poke:budificator",
-              "poke:cobalt_upgrader",
-              "poke:shade_upgrader",
-              "poke:onyx_upgrader",
-              "poke:holy_upgrader",
-              "poke:hellish_upgrader",
-              "poke:godly_upgrader",
-              "poke:demonic_upgrader",
-              "poke:galaxy_upgrader",
-              "poke:void_upgrader",
-              "poke:astral_upgrader",
-              "poke:nebula_upgrader"
+              "poke_pfe:nether_upgrader",
+              "poke_pfe:end_upgrader",
+              "poke_pfe:obsidian_depressor",
+              "poke_pfe:stone_upgrader",
+              "poke_pfe:coal_upgrader",
+              "poke_pfe:copper_upgrader",
+              "poke_pfe:iron_upgrader",
+              "poke_pfe:gold_upgrader",
+              "poke_pfe:redstone_upgrader",
+              "poke_pfe:lapis_upgrader",
+              "poke_pfe:emerald_upgrader",
+              "poke_pfe:diamond_upgrader",
+              "poke_pfe:netherite_upgrader",
+              "poke_pfe:budificator",
+              "poke_pfe:cobalt_upgrader",
+              "poke_pfe:shade_upgrader",
+              "poke_pfe:onyx_upgrader",
+              "poke_pfe:holy_upgrader",
+              "poke_pfe:hellish_upgrader",
+              "poke_pfe:godly_upgrader",
+              "poke_pfe:demonic_upgrader",
+              "poke_pfe:galaxy_upgrader",
+              "poke_pfe:void_upgrader",
+              "poke_pfe:astral_upgrader",
+              "poke_pfe:nebula_upgrader"
             ]
           },
           {
             "group_identifier": {
-              "name": "poke:itemGroup.name.bows",
-              "icon": "poke:holy_bow"
+              "name": "poke_pfe:itemGroup.name.bows",
+              "icon": "poke_pfe:holy_bow"
             },
             "items": [
-              "poke:holy_bow",
-              "poke:galaxy_bow",
-              "poke:cobalt_crossbow",
-              "poke:hellish_crossbow",
-              "poke:godly_crossbow",
-              "poke:void_crossbow",
-              "poke:astral_crossbow",
-              "poke:honey_crossbow",
-              "poke:wood_boltbow",
-              "poke:cobalt_boltbow",
-              "poke:hellish_boltbow",
-              "poke:godly_boltbow",
-              "poke:void_boltbow",
-              "poke:astral_boltbow",
-              "poke:honey_boltbow"
+              "poke_pfe:holy_bow",
+              "poke_pfe:galaxy_bow",
+              "poke_pfe:cobalt_crossbow",
+              "poke_pfe:hellish_crossbow",
+              "poke_pfe:godly_crossbow",
+              "poke_pfe:void_crossbow",
+              "poke_pfe:astral_crossbow",
+              "poke_pfe:honey_crossbow",
+              "poke_pfe:wood_boltbow",
+              "poke_pfe:cobalt_boltbow",
+              "poke_pfe:hellish_boltbow",
+              "poke_pfe:godly_boltbow",
+              "poke_pfe:void_boltbow",
+              "poke_pfe:astral_boltbow",
+              "poke_pfe:honey_boltbow"
             ]
           },
           {
             "group_identifier": {
-              "name": "poke:itemGroup.name.rings",
-              "icon": "poke:arrow_ring"
+              "name": "poke_pfe:itemGroup.name.rings",
+              "icon": "poke_pfe:arrow_ring"
             },
             "items": [
-              "poke:arrow_ring",
-              "poke:volt_ring",
-              "poke:ring_2",
-              "poke:ring_4",
-              "poke:ring_3",
-              "poke:shade_ring",
-              "poke:ring_1",
-              "poke:zeus_ring",
-              "poke:darkness_ring",
+              "poke_pfe:arrow_ring",
+              "poke_pfe:volt_ring",
+              "poke_pfe:ring_2",
+              "poke_pfe:ring_4",
+              "poke_pfe:ring_3",
+              "poke_pfe:shade_ring",
+              "poke_pfe:ring_1",
+              "poke_pfe:zeus_ring",
+              "poke_pfe:darkness_ring",
               "poke_pfe:resist_ring",
-              "poke:ice_ring",
-              "poke:grim_ring",
-              "poke:med_ring",
-              "poke:aqua_ring",
-              "poke:shadow_ring",
-              "poke:springy_ring",
-              "poke:strength_ring",
-              "poke:gravity_ring",
-              "poke:kapow_ring",
-              "poke:nuke_ring",
-              "poke:ore_ring"
+              "poke_pfe:ice_ring",
+              "poke_pfe:grim_ring",
+              "poke_pfe:med_ring",
+              "poke_pfe:aqua_ring",
+              "poke_pfe:shadow_ring",
+              "poke_pfe:springy_ring",
+              "poke_pfe:strength_ring",
+              "poke_pfe:gravity_ring",
+              "poke_pfe:kapow_ring",
+              "poke_pfe:nuke_ring",
+              "poke_pfe:ore_ring"
             ]
           },
           {
             "group_identifier": {
-              "name": "poke:itemGroup.name.magnets",
-              "icon": "poke:item_magnet"
+              "name": "poke_pfe:itemGroup.name.magnets",
+              "icon": "poke_pfe:item_magnet"
             },
             "items": [
-              "poke:item_magnet",
-              "poke:xp_magnet",
-              "poke:hostile_mob_magnet",
-              "poke:nebula_magnet",
-              "poke:player_magnet",
-              "poke:quantum_teleporter"
+              "poke_pfe:item_magnet",
+              "poke_pfe:xp_magnet",
+              "poke_pfe:hostile_mob_magnet",
+              "poke_pfe:nebula_magnet",
+              "poke_pfe:player_magnet",
+              "poke_pfe:quantum_teleporter"
             ]
           },
           {
             "group_identifier": {
-              "name": "poke:itemGroup.name.spells",
-              "icon": "poke:dodge_spell"
+              "name": "poke_pfe:itemGroup.name.spells",
+              "icon": "poke_pfe:dodge_spell"
             },
             "items": [
-              "poke:dodge_spell",
+              "poke_pfe:dodge_spell",
               "poke_pfe:time_anchor_spell",
-              "poke:gravity_spell",
-              "poke:fireball_spell"
+              "poke_pfe:gravity_spell",
+              "poke_pfe:fireball_spell"
             ]
           },
           {
             "group_identifier": {
-              "name": "poke:itemGroup.name.configs",
+              "name": "poke_pfe:itemGroup.name.configs",
               "icon": "poke_pfe:config"
             },
             "items": [
               "poke_pfe:config",
-              "poke:calendar"
+              "poke_pfe:calendar"
             ]
           },
           {
             "group_identifier": {
-              "name": "poke:itemGroup.name.staffs",
-              "icon": "poke:necromancer_staff"
+              "name": "poke_pfe:itemGroup.name.staffs",
+              "icon": "poke_pfe:necromancer_staff"
             },
             "items": [
-              "poke:necromancer_staff",
-              "poke:zombifier",
-              "poke:purifier"
+              "poke_pfe:necromancer_staff",
+              "poke_pfe:zombifier",
+              "poke_pfe:purifier"
             ]
           },
           {
             "group_identifier": {
-              "name": "poke:itemGroup.name.armorStandTools",
-              "icon": "poke:armor_stand_hider"
+              "name": "poke_pfe:itemGroup.name.armorStandTools",
+              "icon": "poke_pfe:armor_stand_hider"
             },
             "items": [
-              "poke:armor_stand_hider",
-              "poke:armor_stand_unhider",
-              "poke:armor_stand_remover"
+              "poke_pfe:armor_stand_hider",
+              "poke_pfe:armor_stand_unhider",
+              "poke_pfe:armor_stand_remover"
             ]
           },
           {
             "items": [
               "poke_pfe:waypoint_menu",
-              "poke:windzooka",
-              "poke:blazooka",
-              "poke:panic_button",
-              "poke:sundial",
-              "poke:jackhammer",
-              "poke:rocket_replenisher",
-              "poke-pfe:identifier",
-              "poke:item_voider",
-              "poke:empty_vial",
-              "poke:xp_vial",
-              "poke:boss_event_bounty"
+              "poke_pfe:windzooka",
+              "poke_pfe:blazooka",
+              "poke_pfe:panic_button",
+              "poke_pfe:sundial",
+              "poke_pfe:jackhammer",
+              "poke_pfe:rocket_replenisher",
+              "poke_pfe:identifier",
+              "poke_pfe:item_voider",
+              "poke_pfe:empty_vial",
+              "poke_pfe:xp_vial",
+              "poke_pfe:boss_event_bounty"
             ]
           }
         ]
@@ -1311,15 +1311,15 @@
           },
           {
             "group_identifier": {
-              "name": "poke:itemGroup.name.crafting",
-              "icon": "poke:spell_crafter"
+              "name": "poke_pfe:itemGroup.name.crafting",
+              "icon": "poke_pfe:spell_crafter"
             },
             "items": [
-              "poke:spell_crafter",
-              "poke:dye_unmixer",
+              "poke_pfe:spell_crafter",
+              "poke_pfe:dye_unmixer",
               "poke_pfe:alloy_forge",
               "poke_pfe:upgrader"
-              //,"poke:pfe_crafting_table"
+              //,"poke_pfe:pfe_crafting_table"
             ]
           },
           {
@@ -1342,90 +1342,90 @@
           },
           {
             "group_identifier": {
-              "name": "poke:itemGroup.name.cassette",
-              "icon": "poke:empty_cassette"
+              "name": "poke_pfe:itemGroup.name.cassette",
+              "icon": "poke_pfe:empty_cassette"
             },
             "items": [
-              "poke:empty_cassette",
-              "poke:cassette_key",
-              "poke:cassette_subwooferlullaby",
-              "poke:cassette_livingmice",
-              "poke:cassette_haggstrom",
-              "poke:cassette_minecraft",
-              "poke:cassette_oxygene",
-              "poke:cassette_miceonvenus",
-              "poke:cassette_dryhands",
-              "poke:cassette_wethands",
-              "poke:cassette_clark",
-              "poke:cassette_mc_disc_13",
-              "poke:cassette_sweden",
-              "poke:cassette_mc_disc_cat",
-              "poke:cassette_danny",
-              "poke:cassette_alpha",
-              "poke:cassette_deadvoxel",
-              "poke:cassette_blindspots",
-              "poke:cassette_moogcity2",
-              "poke:cassette_concretehalls",
-              "poke:cassette_biomefest",
-              "poke:cassette_mutation",
-              "poke:cassette_hauntmuskie",
-              "poke:cassette_warmth",
-              "poke:cassette_floatingtrees",
-              "poke:cassette_ariamath",
-              "poke:cassette_balladofthecats",
-              "poke:cassette_taswell",
-              "poke:cassette_beginning2",
-              "poke:cassette_dreiton",
-              "poke:cassette_theend",
-              "poke:cassette_mc_disc_chirp",
-              "poke:cassette_mc_disc_wait",
-              "poke:cassette_mc_disc_mellohi",
-              "poke:cassette_mc_disc_stal",
-              "poke:cassette_mc_disc_strad",
-              "poke:cassette_mc_disc_11",
-              "poke:cassette_mc_disc_ward",
-              "poke:cassette_mc_disc_mall",
-              "poke:cassette_mc_disc_blocks",
-              "poke:cassette_mc_disc_far",
-              "poke:cassette_boss",
-              "poke:cassette_axolotl",
-              "poke:cassette_dragonfish",
-              "poke:cassette_shuniji",
-              "poke:cassette_chrysopoeia",
-              "poke:cassette_rubedo",
-              "poke:cassette_sobelow",
-              "poke:cassette_mc_disc_pigstep",
-              "poke:cassette_standtall",
-              "poke:cassette_lefttobloom",
-              "poke:cassette_ancestry",
-              "poke:cassette_wending",
-              "poke:cassette_infiniteamethyst",
-              "poke:cassette_onemoreday",
-              "poke:cassette_mc_disc_otherside",
-              "poke:cassette_floatingdream",
-              "poke:cassette_comfortingmemories",
-              "poke:cassette_anordinaryday",
-              "poke:cassette_firebugs",
-              "poke:cassette_aerie",
-              "poke:cassette_labyrinthine",
-              "poke:cassette_mc_disc_5",
-              "poke:cassette_echointhewind",
-              "poke:cassette_afamiliarroom",
-              "poke:cassette_bromeliad",
-              "poke:cassette_crescentdunes",
-              "poke:cassette_mc_disc_relic",
-              "poke:cassette_featherfall",
-              "poke:cassette_watcher",
-              "poke:cassette_puzzlebox",
-              "poke:cassette_komorebi",
-              "poke:cassette_pokopoko",
-              "poke:cassette_yakusoku",
-              "poke:cassette_deeper",
-              "poke:cassette_eldunknown",
-              "poke:cassette_endless",
-              "poke:cassette_disc_creator",
-              "poke:cassette_creatormusicbox",
-              "poke:cassette_disc_precipice",
+              "poke_pfe:empty_cassette",
+              "poke_pfe:cassette_key",
+              "poke_pfe:cassette_subwooferlullaby",
+              "poke_pfe:cassette_livingmice",
+              "poke_pfe:cassette_haggstrom",
+              "poke_pfe:cassette_minecraft",
+              "poke_pfe:cassette_oxygene",
+              "poke_pfe:cassette_miceonvenus",
+              "poke_pfe:cassette_dryhands",
+              "poke_pfe:cassette_wethands",
+              "poke_pfe:cassette_clark",
+              "poke_pfe:cassette_mc_disc_13",
+              "poke_pfe:cassette_sweden",
+              "poke_pfe:cassette_mc_disc_cat",
+              "poke_pfe:cassette_danny",
+              "poke_pfe:cassette_alpha",
+              "poke_pfe:cassette_deadvoxel",
+              "poke_pfe:cassette_blindspots",
+              "poke_pfe:cassette_moogcity2",
+              "poke_pfe:cassette_concretehalls",
+              "poke_pfe:cassette_biomefest",
+              "poke_pfe:cassette_mutation",
+              "poke_pfe:cassette_hauntmuskie",
+              "poke_pfe:cassette_warmth",
+              "poke_pfe:cassette_floatingtrees",
+              "poke_pfe:cassette_ariamath",
+              "poke_pfe:cassette_balladofthecats",
+              "poke_pfe:cassette_taswell",
+              "poke_pfe:cassette_beginning2",
+              "poke_pfe:cassette_dreiton",
+              "poke_pfe:cassette_theend",
+              "poke_pfe:cassette_mc_disc_chirp",
+              "poke_pfe:cassette_mc_disc_wait",
+              "poke_pfe:cassette_mc_disc_mellohi",
+              "poke_pfe:cassette_mc_disc_stal",
+              "poke_pfe:cassette_mc_disc_strad",
+              "poke_pfe:cassette_mc_disc_11",
+              "poke_pfe:cassette_mc_disc_ward",
+              "poke_pfe:cassette_mc_disc_mall",
+              "poke_pfe:cassette_mc_disc_blocks",
+              "poke_pfe:cassette_mc_disc_far",
+              "poke_pfe:cassette_boss",
+              "poke_pfe:cassette_axolotl",
+              "poke_pfe:cassette_dragonfish",
+              "poke_pfe:cassette_shuniji",
+              "poke_pfe:cassette_chrysopoeia",
+              "poke_pfe:cassette_rubedo",
+              "poke_pfe:cassette_sobelow",
+              "poke_pfe:cassette_mc_disc_pigstep",
+              "poke_pfe:cassette_standtall",
+              "poke_pfe:cassette_lefttobloom",
+              "poke_pfe:cassette_ancestry",
+              "poke_pfe:cassette_wending",
+              "poke_pfe:cassette_infiniteamethyst",
+              "poke_pfe:cassette_onemoreday",
+              "poke_pfe:cassette_mc_disc_otherside",
+              "poke_pfe:cassette_floatingdream",
+              "poke_pfe:cassette_comfortingmemories",
+              "poke_pfe:cassette_anordinaryday",
+              "poke_pfe:cassette_firebugs",
+              "poke_pfe:cassette_aerie",
+              "poke_pfe:cassette_labyrinthine",
+              "poke_pfe:cassette_mc_disc_5",
+              "poke_pfe:cassette_echointhewind",
+              "poke_pfe:cassette_afamiliarroom",
+              "poke_pfe:cassette_bromeliad",
+              "poke_pfe:cassette_crescentdunes",
+              "poke_pfe:cassette_mc_disc_relic",
+              "poke_pfe:cassette_featherfall",
+              "poke_pfe:cassette_watcher",
+              "poke_pfe:cassette_puzzlebox",
+              "poke_pfe:cassette_komorebi",
+              "poke_pfe:cassette_pokopoko",
+              "poke_pfe:cassette_yakusoku",
+              "poke_pfe:cassette_deeper",
+              "poke_pfe:cassette_eldunknown",
+              "poke_pfe:cassette_endless",
+              "poke_pfe:cassette_disc_creator",
+              "poke_pfe:cassette_creatormusicbox",
+              "poke_pfe:cassette_disc_precipice",
               "poke_pfe:cassette_below_and_above",
               "poke_pfe:cassette_broken_clocks",
               "poke_pfe:cassette_fireflies",
@@ -1433,8 +1433,8 @@
               "poke_pfe:cassette_os_piano",
               "poke_pfe:cassette_tears",
               "poke_pfe:cassette_lava_chicken",
-              "poke:cassette_galactic_march",
-              "poke:cassette_they_listen"
+              "poke_pfe:cassette_galactic_march",
+              "poke_pfe:cassette_they_listen"
             ]
           },
           {
@@ -1478,7 +1478,7 @@
               "name": "minecraft:itemGroup.name.minecart"
             },
             "items": [
-              "poke:mail_cart"
+              "poke_pfe:mail_cart"
             ]
           },
           {
@@ -1501,66 +1501,66 @@
           },
           {
             "group_identifier": {
-              "name": "poke:itemGroup.name.ingots",
-              "icon": "poke:cobalt_ingot"
+              "name": "poke_pfe:itemGroup.name.ingots",
+              "icon": "poke_pfe:cobalt_ingot"
             },
             "items": [
-              "poke:cobalt_ingot",
-              "poke:shade_ingot",
-              "poke:onyx_ingot",
-              "poke:holy_ingot",
-              "poke:hellish_ingot",
-              "poke:godly_ingot",
-              "poke:demonic_ingot",
-              "poke:galaxy_ingot",
-              "poke:void_ingot",
-              "poke:astral_ingot",
-              "poke:nebula_ingot",
-              "poke:radium_ingot",
-              "poke:medic_ingot",
-              "poke:death_ingot",
-              "poke:molten_slimeball"
+              "poke_pfe:cobalt_ingot",
+              "poke_pfe:shade_ingot",
+              "poke_pfe:onyx_ingot",
+              "poke_pfe:holy_ingot",
+              "poke_pfe:hellish_ingot",
+              "poke_pfe:godly_ingot",
+              "poke_pfe:demonic_ingot",
+              "poke_pfe:galaxy_ingot",
+              "poke_pfe:void_ingot",
+              "poke_pfe:astral_ingot",
+              "poke_pfe:nebula_ingot",
+              "poke_pfe:radium_ingot",
+              "poke_pfe:medic_ingot",
+              "poke_pfe:death_ingot",
+              "poke_pfe:molten_slimeball"
             ]
           },
           {
             "group_identifier": {
-              "name": "poke:itemGroup.name.nuggets",
-              "icon": "poke:cobalt_nugget"
+              "name": "poke_pfe:itemGroup.name.nuggets",
+              "icon": "poke_pfe:cobalt_nugget"
             },
             "items": [
-              "poke:cobalt_nugget",
-              "poke:shade_nugget",
-              "poke:onyx_nugget",
-              "poke:holy_nugget",
-              "poke:hellish_nugget",
-              "poke:godly_nugget",
-              "poke:demonic_nugget",
-              "poke:galaxy_nugget",
-              "poke:void_nugget",
-              "poke:astral_nugget",
-              "poke:nebula_nugget",
-              "poke:radium_nugget",
-              "poke:medic_nugget",
-              "poke:death_nugget"
+              "poke_pfe:cobalt_nugget",
+              "poke_pfe:shade_nugget",
+              "poke_pfe:onyx_nugget",
+              "poke_pfe:holy_nugget",
+              "poke_pfe:hellish_nugget",
+              "poke_pfe:godly_nugget",
+              "poke_pfe:demonic_nugget",
+              "poke_pfe:galaxy_nugget",
+              "poke_pfe:void_nugget",
+              "poke_pfe:astral_nugget",
+              "poke_pfe:nebula_nugget",
+              "poke_pfe:radium_nugget",
+              "poke_pfe:medic_nugget",
+              "poke_pfe:death_nugget"
             ]
           },
           {
             "group_identifier": {
-              "name": "poke:itemGroup.name.rawOre",
-              "icon": "poke:raw_cobalt"
+              "name": "poke_pfe:itemGroup.name.rawOre",
+              "icon": "poke_pfe:raw_cobalt"
             },
             "items": [
-              "poke:raw_cobalt",
-              "poke:raw_shade",
-              "poke:raw_onyx",
-              "poke:raw_holy",
-              "poke:raw_hellish",
-              "poke:raw_godly",
-              "poke:raw_demonic",
-              "poke:raw_galaxy",
-              "poke:raw_void",
-              "poke:raw_astral",
-              "poke:raw_nebula"
+              "poke_pfe:raw_cobalt",
+              "poke_pfe:raw_shade",
+              "poke_pfe:raw_onyx",
+              "poke_pfe:raw_holy",
+              "poke_pfe:raw_hellish",
+              "poke_pfe:raw_godly",
+              "poke_pfe:raw_demonic",
+              "poke_pfe:raw_galaxy",
+              "poke_pfe:raw_void",
+              "poke_pfe:raw_astral",
+              "poke_pfe:raw_nebula"
             ]
           },
           {
@@ -1568,31 +1568,31 @@
               "name": "minecraft:itemGroup.name.potterySherds"
             },
             "items": [
-              "poke:pfe-empty_pottery_sherd",
-              "poke:pfe-bee_pottery_sherd",
-              "poke:pfe-fish_pottery_sherd",
-              "poke:pfe-snake_pottery_sherd",
-              "poke:pfe-knightling_pottery_sherd",
-              "poke:pfe-listener_pottery_sherd",
-              "poke:pfe-enderman_pottery_sherd",
-              "poke:pfe-crowned_pottery_sherd",
-              "poke:pfe-cassette_pottery_sherd",
-              "poke:pfe-craft_pottery_sherd",
-              "poke:pfe-ingot_pottery_sherd",
-              "poke:pfe-star_pottery_sherd",
-              "poke:pfe-spell_pottery_sherd",
-              "poke:pfe-curseforge_pottery_sherd",
-              "poke:pfe-github_pottery_sherd",
-              "poke:pfe-mcpedl_pottery_sherd",
-              "poke:pfe-modbay_pottery_sherd",
-              "poke:pfe-mushroom_buddy_pottery_sherd",
-              "poke:pfe-poke_pottery_sherd",
-              "poke:pfe-present_pottery_sherd",
-              "poke:pfe-spook_pottery_sherd",
-              "poke:pfe-storm_pottery_sherd",
-              "poke:pfe-tree_pottery_sherd",
-              "poke:pfe-snowflake_pottery_sherd",
-              "poke:pfe-wizard_pottery_sherd"
+              "poke_pfe:pfe-empty_pottery_sherd",
+              "poke_pfe:pfe-bee_pottery_sherd",
+              "poke_pfe:pfe-fish_pottery_sherd",
+              "poke_pfe:pfe-snake_pottery_sherd",
+              "poke_pfe:pfe-knightling_pottery_sherd",
+              "poke_pfe:pfe-listener_pottery_sherd",
+              "poke_pfe:pfe-enderman_pottery_sherd",
+              "poke_pfe:pfe-crowned_pottery_sherd",
+              "poke_pfe:pfe-cassette_pottery_sherd",
+              "poke_pfe:pfe-craft_pottery_sherd",
+              "poke_pfe:pfe-ingot_pottery_sherd",
+              "poke_pfe:pfe-star_pottery_sherd",
+              "poke_pfe:pfe-spell_pottery_sherd",
+              "poke_pfe:pfe-curseforge_pottery_sherd",
+              "poke_pfe:pfe-github_pottery_sherd",
+              "poke_pfe:pfe-mcpedl_pottery_sherd",
+              "poke_pfe:pfe-modbay_pottery_sherd",
+              "poke_pfe:pfe-mushroom_buddy_pottery_sherd",
+              "poke_pfe:pfe-poke_pottery_sherd",
+              "poke_pfe:pfe-present_pottery_sherd",
+              "poke_pfe:pfe-spook_pottery_sherd",
+              "poke_pfe:pfe-storm_pottery_sherd",
+              "poke_pfe:pfe-tree_pottery_sherd",
+              "poke_pfe:pfe-snowflake_pottery_sherd",
+              "poke_pfe:pfe-wizard_pottery_sherd"
             ]
           },
           {
@@ -1603,176 +1603,176 @@
           },
           {
             "group_identifier": {
-              "name": "poke:itemGroup.name.cores",
-              "icon": "poke:upgrade_core"
+              "name": "poke_pfe:itemGroup.name.cores",
+              "icon": "poke_pfe:upgrade_core"
             },
             "items": [
-              "poke:upgrade_core",
-              "poke:repair_core",
-              "poke:capacity_core",
-              "poke:diamond_upgrade_core",
+              "poke_pfe:upgrade_core",
+              "poke_pfe:repair_core",
+              "poke_pfe:capacity_core",
+              "poke_pfe:diamond_upgrade_core",
               "poke_pfe:flaming_core",
-              "poke:platinum_upgrade_core",
+              "poke_pfe:platinum_upgrade_core",
               "poke_pfe:persistence_core",
-              //"poke:bursting_core",
-              //"poke:rapid_fire_core",
-              "poke:magnet_core",
-              "poke:nebula_core"
+              //"poke_pfe:bursting_core",
+              //"poke_pfe:rapid_fire_core",
+              "poke_pfe:magnet_core",
+              "poke_pfe:nebula_core"
             ]
           },
           {
             "group_identifier": {
-              "name": "poke:itemGroup.name.automation",
-              "icon": "poke:cobblestone_gen"
+              "name": "poke_pfe:itemGroup.name.automation",
+              "icon": "poke_pfe:cobblestone_gen"
             },
             "items": [
-              "poke:cobblestone_gen",
-              "poke:cobble_gen",
-              "poke:block_breaker",
+              "poke_pfe:cobblestone_gen",
+              "poke_pfe:cobble_gen",
+              "poke_pfe:block_breaker",
               "poke_pfe:dirter",
               "poke_pfe:duster",
-              //"poke:dirter_up",
-              //"poke:duster_up",
+              //"poke_pfe:dirter_up",
+              //"poke_pfe:duster_up",
               "poke_pfe:fisher",
               "poke_pfe:elevator",
               "poke_pfe:omnivator",
-              "poke:magnet",
-              "poke:barometer",
-              "poke:phantomed_conduit",
-              "poke:demonic_allay_conduit"
+              "poke_pfe:magnet",
+              "poke_pfe:barometer",
+              "poke_pfe:phantomed_conduit",
+              "poke_pfe:demonic_allay_conduit"
             ]
           },
           {
             "group_identifier": {
-              "name": "poke:itemGroup.name.currency",
-              "icon": "poke:copper_token"
+              "name": "poke_pfe:itemGroup.name.currency",
+              "icon": "poke_pfe:copper_token"
             },
             "items": [
-              "poke:copper_token",
-              "poke:iron_token",
-              "poke:gold_token",
-              "poke:diamond_token",
-              "poke:platinum_token",
-              "poke:pma_bill_1",
-              "poke:pma_bill_5",
-              "poke:pma_bill_10",
-              "poke:pma_bill_20",
-              "poke:pma_bill_50",
-              "poke:pma_bill_100",
-              "poke:pma_bill_500",
-              "poke:dollor_bill_1",
-              "poke:dollor_bill_5",
-              "poke:dollor_bill_10"
+              "poke_pfe:copper_token",
+              "poke_pfe:iron_token",
+              "poke_pfe:gold_token",
+              "poke_pfe:diamond_token",
+              "poke_pfe:platinum_token",
+              "poke_pfe:pma_bill_1",
+              "poke_pfe:pma_bill_5",
+              "poke_pfe:pma_bill_10",
+              "poke_pfe:pma_bill_20",
+              "poke_pfe:pma_bill_50",
+              "poke_pfe:pma_bill_100",
+              "poke_pfe:pma_bill_500",
+              "poke_pfe:dollor_bill_1",
+              "poke_pfe:dollor_bill_5",
+              "poke_pfe:dollor_bill_10"
             ]
           },
           {
             "group_identifier": {
-              "name": "poke:itemGroup.name.quests",
-              "icon": "poke:mine_quest"
+              "name": "poke_pfe:itemGroup.name.quests",
+              "icon": "poke_pfe:mine_quest"
             },
             "items": [
-              "poke:mine_quest",
-              "poke:kill_quest",
-              "poke:farm_quest",
-              "poke:craft_quest",
-              "poke:mine_quest_1",
-              "poke:mine_quest_2",
-              "poke:mine_quest_3",
-              "poke:kill_quest_1",
-              "poke:kill_quest_2",
-              "poke:kill_quest_3",
-              "poke:kill_quest_4",
-              "poke:kill_quest_5",
-              "poke:kill_quest_6",
-              "poke:kill_quest_7",
-              "poke:farm_quest_1",
-              "poke:farm_quest_2",
-              "poke:farm_quest_3",
-              "poke:farm_quest_4",
-              "poke:farm_quest_5",
-              "poke:farm_quest_6",
-              "poke:craft_quest_1",
-              "poke:craft_quest_2",
-              "poke:craft_quest_3",
-              "poke:craft_quest_4",
-              "poke:craft_quest_5",
-              "poke:craft_quest_6",
-              "poke:craft_quest_7" //*/
+              "poke_pfe:mine_quest",
+              "poke_pfe:kill_quest",
+              "poke_pfe:farm_quest",
+              "poke_pfe:craft_quest",
+              "poke_pfe:mine_quest_1",
+              "poke_pfe:mine_quest_2",
+              "poke_pfe:mine_quest_3",
+              "poke_pfe:kill_quest_1",
+              "poke_pfe:kill_quest_2",
+              "poke_pfe:kill_quest_3",
+              "poke_pfe:kill_quest_4",
+              "poke_pfe:kill_quest_5",
+              "poke_pfe:kill_quest_6",
+              "poke_pfe:kill_quest_7",
+              "poke_pfe:farm_quest_1",
+              "poke_pfe:farm_quest_2",
+              "poke_pfe:farm_quest_3",
+              "poke_pfe:farm_quest_4",
+              "poke_pfe:farm_quest_5",
+              "poke_pfe:farm_quest_6",
+              "poke_pfe:craft_quest_1",
+              "poke_pfe:craft_quest_2",
+              "poke_pfe:craft_quest_3",
+              "poke_pfe:craft_quest_4",
+              "poke_pfe:craft_quest_5",
+              "poke_pfe:craft_quest_6",
+              "poke_pfe:craft_quest_7" //*/
             ]
           },
           {
             "group_identifier": {
-              "name": "poke:itemGroup.name.banished_stars",
-              "icon": "poke:banished_star"
+              "name": "poke_pfe:itemGroup.name.banished_stars",
+              "icon": "poke_pfe:banished_star"
             },
             "items": [
-              "poke:banished_star",
-              "poke:banished_star_x2",
-              "poke:banished_star_x3",
-              "poke:banished_star_x4",
-              "poke:banished_star_x5",
-              "poke:banished_star_x6",
-              "poke:banished_star_x7",
-              "poke:banished_star_x8",
-              "poke:banished_star_x9",
-              "poke:banished_star_x10"
+              "poke_pfe:banished_star",
+              "poke_pfe:banished_star_x2",
+              "poke_pfe:banished_star_x3",
+              "poke_pfe:banished_star_x4",
+              "poke_pfe:banished_star_x5",
+              "poke_pfe:banished_star_x6",
+              "poke_pfe:banished_star_x7",
+              "poke_pfe:banished_star_x8",
+              "poke_pfe:banished_star_x9",
+              "poke_pfe:banished_star_x10"
             ]
           },
           {
             "group_identifier": {
-              "name": "poke:itemGroup.name.gems",
-              "icon": "poke:aqua_gem"
+              "name": "poke_pfe:itemGroup.name.gems",
+              "icon": "poke_pfe:aqua_gem"
             },
             "items": [
-              "poke:arrow_gem",
-              "poke:volt_gem",
-              "poke:blaze_gem",
-              "poke:dragon_gem",
-              "poke:warp_gem",
-              "poke:shade_gem",
-              "poke:rain_gem",
-              "poke:zeus_gem",
-              "poke:darkness_gem",
+              "poke_pfe:arrow_gem",
+              "poke_pfe:volt_gem",
+              "poke_pfe:blaze_gem",
+              "poke_pfe:dragon_gem",
+              "poke_pfe:warp_gem",
+              "poke_pfe:shade_gem",
+              "poke_pfe:rain_gem",
+              "poke_pfe:zeus_gem",
+              "poke_pfe:darkness_gem",
               "poke_pfe:resist_gem",
-              "poke:ice_gem",
-              "poke:grim_gem",
-              "poke:med_gem",
-              "poke:aqua_gem",
-              "poke:shadow_gem",
-              "poke:springy_gem",
-              "poke:strength_gem",
-              "poke:gravity_gem",
-              "poke:kapow_gem",
-              "poke:ore_gem"
+              "poke_pfe:ice_gem",
+              "poke_pfe:grim_gem",
+              "poke_pfe:med_gem",
+              "poke_pfe:aqua_gem",
+              "poke_pfe:shadow_gem",
+              "poke_pfe:springy_gem",
+              "poke_pfe:strength_gem",
+              "poke_pfe:gravity_gem",
+              "poke_pfe:kapow_gem",
+              "poke_pfe:ore_gem"
             ]
           },
           {
             "group_identifier": {
-              "name": "poke:itemGroup.name.gemHolder",
-              "icon": "poke:gem_holder"
+              "name": "poke_pfe:itemGroup.name.gemHolder",
+              "icon": "poke_pfe:gem_holder"
             },
             "items": [
-              "poke:gem_holder",
-              "poke:diamond_gem_holder",
-              "poke:obsidian_gem_holder",
-              "poke:ender_holder",
-              "poke:echo_holder",
-              "poke:kapow_holder"
+              "poke_pfe:gem_holder",
+              "poke_pfe:diamond_gem_holder",
+              "poke_pfe:obsidian_gem_holder",
+              "poke_pfe:ender_holder",
+              "poke_pfe:echo_holder",
+              "poke_pfe:kapow_holder"
             ]
           },
           {
             "group_identifier": {
-              "name": "poke:itemGroup.name.electricalComponents"
+              "name": "poke_pfe:itemGroup.name.electricalComponents"
             },
             "items": [
-              "poke:plastic",
-              "poke:wire",
-              "poke:electric_component",
-              "poke:red_button",
-              "poke:gps_module",
-              "poke:receiver",
-              "poke:antenna",
-              "poke:item_manipulator"
+              "poke_pfe:plastic",
+              "poke_pfe:wire",
+              "poke_pfe:electric_component",
+              "poke_pfe:red_button",
+              "poke_pfe:gps_module",
+              "poke_pfe:receiver",
+              "poke_pfe:antenna",
+              "poke_pfe:item_manipulator"
             ]
           },
           {
@@ -1834,20 +1834,20 @@
           },
           {
             "items": [
-              "poke:onyx_shaft",
-              "poke:demonic_stick",
-              "poke:godly_stick",
-              "poke:nebula_stick",
-              "poke:empty_mug",
-              "poke:magic_8_ball",
-              "poke:red_present",
-              "poke:ban_hammer_head",
-              "poke:ban_hammer_shaft",
-              "poke:ban_hammer_grip",
-              "poke:bundled_sugarcane",
-              "poke:bundled_feathers",
-              "poke:ruin_key",
-              "poke:floppy_disk"
+              "poke_pfe:onyx_shaft",
+              "poke_pfe:demonic_stick",
+              "poke_pfe:godly_stick",
+              "poke_pfe:nebula_stick",
+              "poke_pfe:empty_mug",
+              "poke_pfe:magic_8_ball",
+              "poke_pfe:red_present",
+              "poke_pfe:ban_hammer_head",
+              "poke_pfe:ban_hammer_shaft",
+              "poke_pfe:ban_hammer_grip",
+              "poke_pfe:bundled_sugarcane",
+              "poke_pfe:bundled_feathers",
+              "poke_pfe:ruin_key",
+              "poke_pfe:floppy_disk"
             ]
           }
         ]

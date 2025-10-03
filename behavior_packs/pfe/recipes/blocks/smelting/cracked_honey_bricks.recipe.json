@@ -2,13 +2,13 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_furnace": {
 		"description": {
-			"identifier": "poke:cracked_honey_bricks"
+			"identifier": "poke_pfe:cracked_honey_bricks"
 		},
 		"tags": [
 			"furnace",
 			"blast_furnace"
 		],
-		"input": "poke:honey_bricks",
-		"output": "poke:cracked_honey_bricks"
+		"input": "poke_pfe:honey_bricks",
+		"output": "poke_pfe:cracked_honey_bricks"
 	}
 }

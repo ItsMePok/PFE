@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:rocket_replenisher",
+			"identifier": "poke_pfe:rocket_replenisher",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -15,7 +15,7 @@
 			"poke_pfe:upgradeable": {
 				"version": 1,
 				"upgrade_ids": [
-					"pfe:persistence"
+					"poke_pfe:persistence"
 				]
 			},
 			"minecraft:icon": "poke_pfe_rocket_replenisher",
@@ -38,13 +38,13 @@
 				"trigger_cooldown": true,
 				"can_be_disabled": false
 			},
-			"poke:normalMining": {},
+			"poke_pfe:normalMining": {},
 			"minecraft:use_modifiers": {
 				"use_duration": 0,
 				"movement_modifier": 1
 			},
 			"minecraft:cooldown": {
-				"category": "poke:sundial",
+				"category": "poke_pfe:sundial",
 				"duration": 0.2
 			}
 		}

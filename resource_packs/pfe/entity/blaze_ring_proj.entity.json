@@ -2,7 +2,7 @@
   "format_version": "1.10.0",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "poke:blaze_ring_proj",
+      "identifier": "poke_pfe:blaze_ring_proj",
       "materials": {
         "default": "fireball" //2
       },

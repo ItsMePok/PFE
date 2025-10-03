@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "poke:upgrade_farm_quest"
+			"identifier": "poke_pfe:upgrade_farm_quest"
 		},
 		"tags": [
 			"crafting_table"
@@ -11,16 +11,16 @@
 		"priority": 9,
 		"unlock": [
 			{
-				"tag": "pfe:old_farm_quest"
+				"tag": "poke_pfe:old_farm_quest"
 			}
 		],
 		"ingredients": [
 			{
-				"tag": "pfe:old_farm_quest"
+				"tag": "poke_pfe:old_farm_quest"
 			}
 		],
 		"result": {
-			"item": "poke:farm_quest"
+			"item": "poke_pfe:farm_quest"
 		}
 	}
 }

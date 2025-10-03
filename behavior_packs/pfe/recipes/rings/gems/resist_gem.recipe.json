@@ -12,7 +12,7 @@
 				"item": "minecraft:copper_ingot"
 			},
 			"M": {
-				"item": "poke:molten_slimeball"
+				"item": "poke_pfe:molten_slimeball"
 			},
 			"S": {
 				"item": "minecraft:shield"
@@ -20,13 +20,13 @@
 		},
 		"unlock": [
 			{
-				"item": "poke:molten_slimeball"
+				"item": "poke_pfe:molten_slimeball"
 			},
 			{
 				"item": "minecraft:copper_ingot"
 			},
 			{
-				"item": "poke:echo_holder"
+				"item": "poke_pfe:echo_holder"
 			},
 			{
 				"item": "minecraft:shield"

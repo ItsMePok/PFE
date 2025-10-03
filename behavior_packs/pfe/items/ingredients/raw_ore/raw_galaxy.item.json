@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:raw_galaxy",
+			"identifier": "poke_pfe:raw_galaxy",
 			"menu_category": {
 				"category": "items"
 			}

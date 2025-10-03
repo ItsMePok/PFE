@@ -13,11 +13,11 @@ import ComputersCompat, { initExampleStickers } from "./addonCompatibility/jigar
 import { PFEWaypointComponent } from "./waypoints";
 import { PFEUpgradeableComponent } from "./upgrades";
 import { RecipeBlockComponent, RecipeItemComponent } from "./recipeSystems";
-const currentVersion = 103000 // PFE Version (ex: 102950 = v1.2.95)
+const currentVersion = 103010 // PFE Version (ex: 102950 = v1.2.95)
 
 
 world.afterEvents.playerJoin.subscribe((data => {
-    let birthdays: PokeBirthdays[] = JSON.parse(world.getDynamicProperty(`poke:birthdays`)!.toString())
+    let birthdays: PokeBirthdays[] = JSON.parse(world.getDynamicProperty(`poke_pfe:birthdays`)!.toString())
     //console.warn(JSON.stringify(birthdays))
     system.runTimeout(() => {
         world.getAllPlayers().forEach((player => {
@@ -29,10 +29,10 @@ world.afterEvents.playerJoin.subscribe((data => {
                     if (birthday.day == currentTime.getDate() && birthday.month == currentTime.getMonth()) {
                         let name: RawMessage = { text: birthday.name }
                         if (birthday.style == "dev") {
-                            name.translate = `translation.poke:birthdayDev`
+                            name.translate = `translation.poke_pfe:birthdayDev`
                         }
                         if (birthday.name == player.name) {
-                            name.translate = `translation.poke:birthdayOwn`
+                            name.translate = `translation.poke_pfe:birthdayOwn`
                         }
                         else if (birthday.name?.endsWith(`s`)) {
                             name.text = `${birthday.name}'`
@@ -40,7 +40,7 @@ world.afterEvents.playerJoin.subscribe((data => {
                         else {
                             name.text = `${birthday.name}'s`
                         }
-                        player.sendMessage({ translate: `translation.poke:birthdayAnnounce`, with: { rawtext: [PokeTimeGreeting(currentTime, player, undefined, true), { text: player.name }, name] } })
+                        player.sendMessage({ translate: `translation.poke_pfe:birthdayAnnounce`, with: { rawtext: [PokeTimeGreeting(currentTime, player, undefined, true), { text: player.name }, name] } })
                     }
                 }))
             }
@@ -53,7 +53,7 @@ function PFEHourTimeDownEvents() {
     //console.warn(`Attempting to spawn cassette trader`)
     let allPlayers = world.getAllPlayers()
     let randomPlayer = allPlayers.at(Math.abs(Math.round(Math.random() * (allPlayers.length - 1))))
-    randomPlayer?.dimension.spawnEntity('poke:cassette_trader', randomPlayer.location).runCommand(`spreadplayers ~ ~ 30 40 @s ~10`)
+    randomPlayer?.dimension.spawnEntity('poke_pfe:cassette_trader', randomPlayer.location).runCommand(`spreadplayers ~ ~ 30 40 @s ~10`)
 }
 function PFETimeValidation() {
     let currentTime = new Date(Date.now())
@@ -73,13 +73,13 @@ function Post(data: Block, up?: boolean, down?: boolean) {
     let PostCheckSouth = false
     let PostCheckEast = false
     let PostCheckWest = false
-    const PostState = <keyof BlockStateSuperset>'poke:post_bit'
+    const PostState = <keyof BlockStateSuperset>'poke_pfe:post_bit'
     const NorthState = <keyof BlockStateSuperset>'pfe:wall_n'
     const SouthState = <keyof BlockStateSuperset>'pfe:wall_s'
     const EastState = <keyof BlockStateSuperset>'pfe:wall_e'
     const WestState = <keyof BlockStateSuperset>'pfe:wall_w'
-    const AboveState = <keyof BlockStateSuperset>'poke:connected_above'
-    const BelowState = <keyof BlockStateSuperset>'poke:connected_below'
+    const AboveState = <keyof BlockStateSuperset>'poke_pfe:connected_above'
+    const BelowState = <keyof BlockStateSuperset>'poke_pfe:connected_below'
     if (data.permutation.getState(PostState) == undefined) return;
 
     if (Permutation.getState(NorthState) == true) {
@@ -110,13 +110,13 @@ function Post(data: Block, up?: boolean, down?: boolean) {
     }
 }
 function UpdatePost(block: Block, value: boolean, up?: boolean) {
-    const PostState = <keyof BlockStateSuperset>'poke:post_bit'
+    const PostState = <keyof BlockStateSuperset>'poke_pfe:post_bit'
     const NorthState = <keyof BlockStateSuperset>'pfe:wall_n'
     const SouthState = <keyof BlockStateSuperset>'pfe:wall_s'
     const EastState = <keyof BlockStateSuperset>'pfe:wall_e'
     const WestState = <keyof BlockStateSuperset>'pfe:wall_w'
-    const AboveState = <keyof BlockStateSuperset>'poke:connected_above'
-    const BelowState = <keyof BlockStateSuperset>'poke:connected_below'
+    const AboveState = <keyof BlockStateSuperset>'poke_pfe:connected_above'
+    const BelowState = <keyof BlockStateSuperset>'poke_pfe:connected_below'
     if (!value) {
         let Post = false
         let PostCheckNorth = false
@@ -218,7 +218,7 @@ system.beforeEvents.startup.subscribe(data => {
             const block_location = data.block.location
             const gm = data.player?.getGameMode()
             const blockId = data.brokenBlockPermutation.type.id
-            const DoubleState = <keyof BlockStateSuperset>'poke:double'
+            const DoubleState = <keyof BlockStateSuperset>'poke_pfe:double'
             const blockState = data.brokenBlockPermutation.getState(DoubleState)
             if (gm == GameMode.Survival) {
                 if (blockState == true) {
@@ -233,7 +233,7 @@ system.beforeEvents.startup.subscribe(data => {
     }
     );
     data.itemComponentRegistry.registerCustomComponent(
-        "poke:timeConfig", {
+        "poke_pfe:timeConfig", {
         onUse(data, componentInfo) {
             PokeTimeConfigUIMainMenu(data.source)
         }
@@ -241,25 +241,25 @@ system.beforeEvents.startup.subscribe(data => {
     )
 
     data.itemComponentRegistry.registerCustomComponent(
-        `poke-pfe:identifier`, {
+        `poke_pfe:identifier`, {
         onUseOn(data, componentInfo) {
             if (data.source.typeId == MinecraftEntityTypes.Player) {
                 const player = <Player>data.source
-                player.sendMessage({ translate: `translation.poke-pfe:identifierMessage`, with: [data.block.typeId] })
+                player.sendMessage({ translate: `translation.poke_pfe:identifierMessage`, with: [data.block.typeId] })
             }
         }
     }
     )
     data.itemComponentRegistry.registerCustomComponent(
-        `poke:boltbow`, new PFEBoltBowsComponent()
+        `poke_pfe:boltbow`, new PFEBoltBowsComponent()
     )
     data.itemComponentRegistry.registerCustomComponent(
-        "poke:boss_event", {
+        "poke_pfe:boss_event", {
         onUse(data, componentInfo) {
             let options: PFEDisableConfigOptions = JSON.parse(world.getDynamicProperty(PFEDisableConfigName)!.toString())
             if (!options.bounty) return;
             if (PFEStartBossEvent() == 0) {
-                data.source.sendMessage({ translate: `translation.poke:bossEventNoSpawnError` })
+                data.source.sendMessage({ translate: `translation.poke_pfe:bossEventNoSpawnError` })
                 data.source.playSound(`note.didgeridoo`, { pitch: 0.825 })
                 return
             };
@@ -271,7 +271,7 @@ system.beforeEvents.startup.subscribe(data => {
     )
 
     data.itemComponentRegistry.registerCustomComponent(
-        'poke:veinMiner', {
+        'poke_pfe:veinMiner', {
         onMineBlock(data, component) {
             if (!data.minedBlockPermutation.hasTag('minecraft:is_axe_item_destructible')) return;
             let dimension = data.block.dimension;
@@ -364,7 +364,7 @@ system.beforeEvents.startup.subscribe(data => {
     }
     )
     data.itemComponentRegistry.registerCustomComponent(
-        "poke:normalMining", {
+        "poke_pfe:normalMining", {
         onMineBlock(data, component) {
             PokeDamageItemUB(data.itemStack!, undefined, data.source, EquipmentSlot.Mainhand)
             return;
@@ -372,10 +372,10 @@ system.beforeEvents.startup.subscribe(data => {
     }
     )
     data.itemComponentRegistry.registerCustomComponent(
-        "poke:shootProjectile", {
+        "poke_pfe:shootProjectile", {
         onUse(data, component) {
             if (data.itemStack == undefined) return;
-            if (data.itemStack.typeId == "poke:nuke_ring") {
+            if (data.itemStack.typeId == "poke_pfe:nuke_ring") {
                 let options: PFEDisableConfigOptions = JSON.parse(world.getDynamicProperty(PFEDisableConfigName)!.toString())
                 if (!options.nukeRing) return;
             }
@@ -395,68 +395,68 @@ system.beforeEvents.startup.subscribe(data => {
     }
     )
     data.itemComponentRegistry.registerCustomComponent(
-        "poke:hitEffects", {
+        "poke_pfe:hitEffects", {
         onHitEntity(data, component) {
             switch (data.itemStack?.typeId) {
-                case 'poke:demonic_sword': { data.hitEntity.addEffect('slowness', 100, { amplifier: 3 }); return; }
-                case 'poke:hellish_blade': { data.hitEntity.addEffect('slowness', 40, { amplifier: 3 }); return; }
-                case 'poke:godly_sword': { data.attackingEntity.addEffect('strength', 100, { amplifier: 2 }); return; }
-                case 'poke:holy_sword': { data.attackingEntity.addEffect('strength', 40, { amplifier: 1 }); return; }
-                case 'poke:astral_sword': { data.attackingEntity.addEffect('strength', 100, { amplifier: 2 }); return; }
-                case 'poke:shade_sword': { data.hitEntity.addEffect('slowness', 40, { amplifier: 2 }); data.hitEntity.addEffect('wither', 60, { amplifier: 1 }); return; }
-                case 'poke:radium_sword': { data.hitEntity.addEffect('slowness', 220, { amplifier: 3 }); data.hitEntity.addEffect('wither', 240, { amplifier: 4 }); return; }
-                case 'poke:amethyst_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 4 }); data.hitEntity.addEffect('blindness', 20); return; }
-                case 'poke:demonic_slasher': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 7 }); data.hitEntity.addEffect('wither', 80, { amplifier: 1 }); return; }
-                case 'poke:gold_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 2 }); data.attackingEntity.addEffect('haste', 600, { amplifier: 2 }); return; }
-                case 'poke:emerald_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 2 }); data.attackingEntity.addEffect('village_hero', 2400, { amplifier: 1 }); return; }
-                case 'poke:iron_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 2 }); return; }
-                case 'poke:onyx_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 200, { amplifier: 5 }); data.attackingEntity.addEffect('jump_boost', 100, { amplifier: 2 }); data.hitEntity.addEffect('weakness', 120, { amplifier: 2 }); return; }
-                case 'poke:godly_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 200, { amplifier: 6 }); data.attackingEntity.addEffect('slow_falling', 2400); data.attackingEntity.addEffect('jump_boost', 1200, { amplifier: 3 }); return; }
-                case 'poke:hellish_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 7 }); data.attackingEntity.addEffect(MinecraftEffectTypes.FireResistance, 2400); data.hitEntity.addEffect('mining_fatigue', 400, { amplifier: 1 }); return; }
-                case 'poke:holy_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 200, { amplifier: 6 }); data.attackingEntity.addEffect('slow_falling', 2400, { amplifier: 1 }); data.hitEntity.addEffect('darkness', 400); return; }
-                case 'poke:shade_scythe': { data.attackingEntity.addEffect('absorption', 600, { amplifier: 1 }); data.attackingEntity.addEffect('strength', 100, { amplifier: 1 }); data.hitEntity.addEffect('slowness', 160, { amplifier: 2 }); return; }
-                case 'poke:diamond_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 160, { amplifier: 3 }); data.hitEntity.addEffect('weakness', 100, { amplifier: 1 }); data.hitEntity.addEffect('blindness', 80); return; }
-                case 'poke:netherite_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 160, { amplifier: 3 }); data.hitEntity.addEffect('hunger', 120, { amplifier: 1 }); data.hitEntity.addEffect('slowness', 80, { amplifier: 2 }); return; }
-                case 'poke:radium_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 5 }); data.hitEntity.addEffect('nausea', 80, { amplifier: 1 }); data.hitEntity.addEffect('fatal_poison', 160, { amplifier: 2 }); return; }
-                case 'poke:medic_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 6 }); data.attackingEntity.addEffect('health_boost', 2400, { amplifier: 2 }); return; }
-                case 'poke:galactic_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 9 }); data.attackingEntity.addEffect(MinecraftEffectTypes.FireResistance, 300); data.hitEntity.addEffect('wither', 80, { amplifier: 2 }); data.hitEntity.addEffect('weakness', 80, { amplifier: 2 }); return; }
-                case 'poke:astral_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 120, { amplifier: 9 }); data.attackingEntity.addEffect(MinecraftEffectTypes.FireResistance, 300); data.hitEntity.addEffect('wither', 120, { amplifier: 2 }); data.hitEntity.addEffect('weakness', 120, { amplifier: 3 }); return; }
-                case 'poke:ember_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 6 }); data.hitEntity.addEffect('nausea', 80, { amplifier: 1 }); data.hitEntity.addEffect('blindness', 80); return; }
-                case 'poke:void_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 200, { amplifier: 6 }); data.hitEntity.runCommand('function poke/pfe/void_scythe'); return; }
-                case 'poke:death_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 200, { amplifier: 6 }); data.hitEntity.runCommand('function poke/pfe/death_scythe'); return; }
-                case 'poke:nebula_scythe': { data.attackingEntity.runCommand('function poke/pfe/nebula_scythe'); data.hitEntity.addEffect('wither', 80, { amplifier: 3 }); return; }
-                case 'poke:cobalt_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 6 }); data.hitEntity.addEffect('wither', 40, { amplifier: 1 }); return; }
-                case 'poke:nebula_sword': { data.attackingEntity.addEffect('strength', 40, { amplifier: 4 }); data.hitEntity.addEffect('weakness', 20, { amplifier: 2 }); return; }
-                case 'poke:ban_hammer': { data.attackingEntity.addEffect('strength', 40, { amplifier: 1 }); return; }
-                case 'poke:circuit_sword': { data.attackingEntity.runCommand('function poke/pfe/circuit_sword'); data.hitEntity.addEffect('blindness', 100); return; }
+                case 'poke_pfe:demonic_sword': { data.hitEntity.addEffect('slowness', 100, { amplifier: 3 }); return; }
+                case 'poke_pfe:hellish_blade': { data.hitEntity.addEffect('slowness', 40, { amplifier: 3 }); return; }
+                case 'poke_pfe:godly_sword': { data.attackingEntity.addEffect('strength', 100, { amplifier: 2 }); return; }
+                case 'poke_pfe:holy_sword': { data.attackingEntity.addEffect('strength', 40, { amplifier: 1 }); return; }
+                case 'poke_pfe:astral_sword': { data.attackingEntity.addEffect('strength', 100, { amplifier: 2 }); return; }
+                case 'poke_pfe:shade_sword': { data.hitEntity.addEffect('slowness', 40, { amplifier: 2 }); data.hitEntity.addEffect('wither', 60, { amplifier: 1 }); return; }
+                case 'poke_pfe:radium_sword': { data.hitEntity.addEffect('slowness', 220, { amplifier: 3 }); data.hitEntity.addEffect('wither', 240, { amplifier: 4 }); return; }
+                case 'poke_pfe:amethyst_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 4 }); data.hitEntity.addEffect('blindness', 20); return; }
+                case 'poke_pfe:demonic_slasher': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 7 }); data.hitEntity.addEffect('wither', 80, { amplifier: 1 }); return; }
+                case 'poke_pfe:gold_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 2 }); data.attackingEntity.addEffect('haste', 600, { amplifier: 2 }); return; }
+                case 'poke_pfe:emerald_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 2 }); data.attackingEntity.addEffect('village_hero', 2400, { amplifier: 1 }); return; }
+                case 'poke_pfe:iron_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 2 }); return; }
+                case 'poke_pfe:onyx_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 200, { amplifier: 5 }); data.attackingEntity.addEffect('jump_boost', 100, { amplifier: 2 }); data.hitEntity.addEffect('weakness', 120, { amplifier: 2 }); return; }
+                case 'poke_pfe:godly_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 200, { amplifier: 6 }); data.attackingEntity.addEffect('slow_falling', 2400); data.attackingEntity.addEffect('jump_boost', 1200, { amplifier: 3 }); return; }
+                case 'poke_pfe:hellish_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 7 }); data.attackingEntity.addEffect(MinecraftEffectTypes.FireResistance, 2400); data.hitEntity.addEffect('mining_fatigue', 400, { amplifier: 1 }); return; }
+                case 'poke_pfe:holy_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 200, { amplifier: 6 }); data.attackingEntity.addEffect('slow_falling', 2400, { amplifier: 1 }); data.hitEntity.addEffect('darkness', 400); return; }
+                case 'poke_pfe:shade_scythe': { data.attackingEntity.addEffect('absorption', 600, { amplifier: 1 }); data.attackingEntity.addEffect('strength', 100, { amplifier: 1 }); data.hitEntity.addEffect('slowness', 160, { amplifier: 2 }); return; }
+                case 'poke_pfe:diamond_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 160, { amplifier: 3 }); data.hitEntity.addEffect('weakness', 100, { amplifier: 1 }); data.hitEntity.addEffect('blindness', 80); return; }
+                case 'poke_pfe:netherite_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 160, { amplifier: 3 }); data.hitEntity.addEffect('hunger', 120, { amplifier: 1 }); data.hitEntity.addEffect('slowness', 80, { amplifier: 2 }); return; }
+                case 'poke_pfe:radium_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 5 }); data.hitEntity.addEffect('nausea', 80, { amplifier: 1 }); data.hitEntity.addEffect('fatal_poison', 160, { amplifier: 2 }); return; }
+                case 'poke_pfe:medic_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 6 }); data.attackingEntity.addEffect('health_boost', 2400, { amplifier: 2 }); return; }
+                case 'poke_pfe:galactic_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 9 }); data.attackingEntity.addEffect(MinecraftEffectTypes.FireResistance, 300); data.hitEntity.addEffect('wither', 80, { amplifier: 2 }); data.hitEntity.addEffect('weakness', 80, { amplifier: 2 }); return; }
+                case 'poke_pfe:astral_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 120, { amplifier: 9 }); data.attackingEntity.addEffect(MinecraftEffectTypes.FireResistance, 300); data.hitEntity.addEffect('wither', 120, { amplifier: 2 }); data.hitEntity.addEffect('weakness', 120, { amplifier: 3 }); return; }
+                case 'poke_pfe:ember_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 6 }); data.hitEntity.addEffect('nausea', 80, { amplifier: 1 }); data.hitEntity.addEffect('blindness', 80); return; }
+                case 'poke_pfe:void_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 200, { amplifier: 6 }); data.hitEntity.runCommand('function poke/pfe/void_scythe'); return; }
+                case 'poke_pfe:death_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 200, { amplifier: 6 }); data.hitEntity.runCommand('function poke/pfe/death_scythe'); return; }
+                case 'poke_pfe:nebula_scythe': { data.attackingEntity.runCommand('function poke/pfe/nebula_scythe'); data.hitEntity.addEffect('wither', 80, { amplifier: 3 }); return; }
+                case 'poke_pfe:cobalt_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 6 }); data.hitEntity.addEffect('wither', 40, { amplifier: 1 }); return; }
+                case 'poke_pfe:nebula_sword': { data.attackingEntity.addEffect('strength', 40, { amplifier: 4 }); data.hitEntity.addEffect('weakness', 20, { amplifier: 2 }); return; }
+                case 'poke_pfe:ban_hammer': { data.attackingEntity.addEffect('strength', 40, { amplifier: 1 }); return; }
+                case 'poke_pfe:circuit_sword': { data.attackingEntity.runCommand('function poke/pfe/circuit_sword'); data.hitEntity.addEffect('blindness', 100); return; }
             }
             return;
         }
     }
     )
     data.itemComponentRegistry.registerCustomComponent(
-        "poke:consumeEffects", {
+        "poke_pfe:consumeEffects", {
         onConsume(data, component) {
             switch (data.itemStack.typeId) {
-                case 'poke:xp_vial': { data.source.runCommand("xp 160 @s"); return };
-                case 'poke:cobalt_potion': { data.source.addEffect(MinecraftEffectTypes.NightVision, 3600); data.source.addEffect(MinecraftEffectTypes.Regeneration, 2400) }
-                case 'poke:cobalt_soup': { data.source.addEffect(MinecraftEffectTypes.NightVision, 2400, { showParticles: false }); return };
-                case 'poke:root_beer': { data.source.addEffect(MinecraftEffectTypes.Speed, 600, { amplifier: 4, }); return };
-                case 'poke:pumpkin_spice': { data.source.addEffect(MinecraftEffectTypes.Invisibility, 600); data.source.addEffect(MinecraftEffectTypes.Speed, 600, { amplifier: 4, }); return };
-                case 'poke:crimson_sporeshroom_stew': { data.source.addEffect(MinecraftEffectTypes.FireResistance, 1200); return };
-                case 'poke:warped_sporeshroom_stew': { data.source.addEffect(MinecraftEffectTypes.FireResistance, 1200); return };
-                case 'poke:hellish_soup': { data.source.addEffect(MinecraftEffectTypes.FireResistance, 1200); return };
-                case 'poke:nebula_noodles': { data.source.addEffect(MinecraftEffectTypes.Strength, 600, { amplifier: 7, }); return };
-                case 'poke:milk_bottle': { data.source.runCommand("effect @s clear"); return };
-                case 'poke:demonic_potion': { data.source.addEffect(MinecraftEffectTypes.NightVision, 12000); data.source.addEffect(MinecraftEffectTypes.Strength, 6000, { amplifier: 2 }); data.source.addEffect(MinecraftEffectTypes.Regeneration, 12000, { amplifier: 1 }); data.source.addEffect(MinecraftEffectTypes.FireResistance, 12000); return };
-                case 'poke:hellish_potion': { data.source.addEffect(MinecraftEffectTypes.NightVision, 12000); data.source.addEffect(MinecraftEffectTypes.Regeneration, 12000); data.source.addEffect(MinecraftEffectTypes.FireResistance, 12000); return };
-                case 'poke:nebula_potion': { data.source.addEffect(MinecraftEffectTypes.NightVision, 36000); data.source.addEffect(MinecraftEffectTypes.Haste, 24000, { amplifier: 4 }); data.source.addEffect(MinecraftEffectTypes.Regeneration, 24000, { amplifier: 2 }); data.source.addEffect(MinecraftEffectTypes.Speed, 24000, { amplifier: 4 }); data.source.addEffect(MinecraftEffectTypes.VillageHero, 24000, { amplifier: 2 }); return };
-                case 'poke:void_potion': { data.source.addEffect(MinecraftEffectTypes.NightVision, 36000); data.source.addEffect(MinecraftEffectTypes.Haste, 12000, { amplifier: 2 }); data.source.addEffect(MinecraftEffectTypes.Regeneration, 12000, { amplifier: 1 }); data.source.addEffect(MinecraftEffectTypes.Speed, 24000, { amplifier: 4 }); return };
-                case 'poke:death_potion': { data.source.kill(); return };
-                case 'poke:rotten_chicken': { data.source.addEffect(MinecraftEffectTypes.Nausea, 400); return };
-                case 'poke:golden_chicken': { data.source.addEffect(MinecraftEffectTypes.VillageHero, 400, { amplifier: 1, }); return };
-                case 'poke:banished_star_x10': { data.source.runCommand("damage @a[r=100] 32767000 entity_attack entity @s"); return };
-                case 'poke:banished_star_x9': { data.source.runCommand("damage @s 32767000 entity_attack"); return };
+                case 'poke_pfe:xp_vial': { data.source.runCommand("xp 160 @s"); return };
+                case 'poke_pfe:cobalt_potion': { data.source.addEffect(MinecraftEffectTypes.NightVision, 3600); data.source.addEffect(MinecraftEffectTypes.Regeneration, 2400) }
+                case 'poke_pfe:cobalt_soup': { data.source.addEffect(MinecraftEffectTypes.NightVision, 2400, { showParticles: false }); return };
+                case 'poke_pfe:root_beer': { data.source.addEffect(MinecraftEffectTypes.Speed, 600, { amplifier: 4, }); return };
+                case 'poke_pfe:pumpkin_spice': { data.source.addEffect(MinecraftEffectTypes.Invisibility, 600); data.source.addEffect(MinecraftEffectTypes.Speed, 600, { amplifier: 4, }); return };
+                case 'poke_pfe:crimson_sporeshroom_stew': { data.source.addEffect(MinecraftEffectTypes.FireResistance, 1200); return };
+                case 'poke_pfe:warped_sporeshroom_stew': { data.source.addEffect(MinecraftEffectTypes.FireResistance, 1200); return };
+                case 'poke_pfe:hellish_soup': { data.source.addEffect(MinecraftEffectTypes.FireResistance, 1200); return };
+                case 'poke_pfe:nebula_noodles': { data.source.addEffect(MinecraftEffectTypes.Strength, 600, { amplifier: 7, }); return };
+                case 'poke_pfe:milk_bottle': { data.source.runCommand("effect @s clear"); return };
+                case 'poke_pfe:demonic_potion': { data.source.addEffect(MinecraftEffectTypes.NightVision, 12000); data.source.addEffect(MinecraftEffectTypes.Strength, 6000, { amplifier: 2 }); data.source.addEffect(MinecraftEffectTypes.Regeneration, 12000, { amplifier: 1 }); data.source.addEffect(MinecraftEffectTypes.FireResistance, 12000); return };
+                case 'poke_pfe:hellish_potion': { data.source.addEffect(MinecraftEffectTypes.NightVision, 12000); data.source.addEffect(MinecraftEffectTypes.Regeneration, 12000); data.source.addEffect(MinecraftEffectTypes.FireResistance, 12000); return };
+                case 'poke_pfe:nebula_potion': { data.source.addEffect(MinecraftEffectTypes.NightVision, 36000); data.source.addEffect(MinecraftEffectTypes.Haste, 24000, { amplifier: 4 }); data.source.addEffect(MinecraftEffectTypes.Regeneration, 24000, { amplifier: 2 }); data.source.addEffect(MinecraftEffectTypes.Speed, 24000, { amplifier: 4 }); data.source.addEffect(MinecraftEffectTypes.VillageHero, 24000, { amplifier: 2 }); return };
+                case 'poke_pfe:void_potion': { data.source.addEffect(MinecraftEffectTypes.NightVision, 36000); data.source.addEffect(MinecraftEffectTypes.Haste, 12000, { amplifier: 2 }); data.source.addEffect(MinecraftEffectTypes.Regeneration, 12000, { amplifier: 1 }); data.source.addEffect(MinecraftEffectTypes.Speed, 24000, { amplifier: 4 }); return };
+                case 'poke_pfe:death_potion': { data.source.kill(); return };
+                case 'poke_pfe:rotten_chicken': { data.source.addEffect(MinecraftEffectTypes.Nausea, 400); return };
+                case 'poke_pfe:golden_chicken': { data.source.addEffect(MinecraftEffectTypes.VillageHero, 400, { amplifier: 1, }); return };
+                case 'poke_pfe:banished_star_x10': { data.source.runCommand("damage @a[r=100] 32767000 entity_attack entity @s"); return };
+                case 'poke_pfe:banished_star_x9': { data.source.runCommand("damage @s 32767000 entity_attack"); return };
             }
             return;
         }
@@ -470,7 +470,7 @@ system.beforeEvents.startup.subscribe(data => {
     }
     )
     data.itemComponentRegistry.registerCustomComponent(
-        "poke:cc_dodge", {
+        "poke_pfe:cc_dodge", {
         onUse(data, componentInfo) {
             if (data.itemStack === undefined) return;
             const cooldownComponent = data.itemStack.getComponent(ItemComponentTypes.Cooldown)
@@ -494,7 +494,7 @@ system.beforeEvents.startup.subscribe(data => {
     }
     );
     data.itemComponentRegistry.registerCustomComponent(
-        "poke:cc_bowAim", {
+        "poke_pfe:cc_bowAim", {
         onUse(data, component) {
 
             const cPlayers = data.source.dimension.getPlayers({ excludeNames: ['' + data.source.name] })
@@ -507,7 +507,7 @@ system.beforeEvents.startup.subscribe(data => {
     }
     );
     data.itemComponentRegistry.registerCustomComponent(
-        "poke:cc_crossbowAim", {
+        "poke_pfe:cc_crossbowAim", {
         onUse(data, component) {
             const cPlayers = data.source.dimension.getPlayers({ excludeNames: ['' + data.source.name] })
             var cPlayersLength = cPlayers.length;
@@ -527,10 +527,10 @@ system.beforeEvents.startup.subscribe(data => {
 
 
     data.blockComponentRegistry.registerCustomComponent(
-        "poke:trapdoor_event", {
+        "poke_pfe:trapdoor_event", {
         onPlayerInteract(data, component) {
             const blockLocation = `${data.block.location.x} ${data.block.location.y} ${data.block.location.z}`
-            const OpenState = <keyof BlockStateSuperset>'poke:trapdoor_open'
+            const OpenState = <keyof BlockStateSuperset>'poke_pfe:trapdoor_open'
             if (data.block.permutation.hasTag('pfe_trapdoor_open') == true) {
                 data.block.setPermutation(data.block.permutation.withState(OpenState, 'no'))
                 data.block.dimension.playSound(`open.iron_trapdoor`, data.block.center())
@@ -545,7 +545,7 @@ system.beforeEvents.startup.subscribe(data => {
     }
     );
     data.blockComponentRegistry.registerCustomComponent(
-        "poke:fortune", {
+        "poke_pfe:fortune", {
         onPlayerBreak(data, component) {
             const equippableComponent = data.player?.getComponent(EntityComponentTypes.Equippable)
             if (equippableComponent === undefined) return;
@@ -586,7 +586,7 @@ system.beforeEvents.startup.subscribe(data => {
         "poke_pfe:can_double_slab", {
         onPlayerInteract(data, component) {
             if (!data.player) return;
-            const DoubleState = <keyof BlockStateSuperset>'poke:double'
+            const DoubleState = <keyof BlockStateSuperset>'poke_pfe:double'
             if (data.block.permutation.getState(DoubleState) == true) return;
             const blockLocation = `${data.block.location.x} ${data.block.location.y} ${data.block.location.z}`
             const slabId = data.block.typeId
@@ -614,7 +614,7 @@ system.beforeEvents.startup.subscribe(data => {
     );
 
     data.blockComponentRegistry.registerCustomComponent(
-        "poke:cc_phantomic_conduit", {
+        "poke_pfe:cc_phantomic_conduit", {
         onTick(data, component) {
             const ActiveState = <keyof BlockStateSuperset>'pfe:active'
             var block_location_x = data.block.x
@@ -634,7 +634,7 @@ system.beforeEvents.startup.subscribe(data => {
     }
     );
     data.blockComponentRegistry.registerCustomComponent(
-        "poke:cc_da_conduit", {
+        "poke_pfe:cc_da_conduit", {
         onTick(data, component) {
             const ActiveState = <keyof BlockStateSuperset>'pfe:active'
             const block_location = `${data.block.x} ${data.block.y} ${data.block.z}`
@@ -652,13 +652,13 @@ system.beforeEvents.startup.subscribe(data => {
     }
     );
     data.blockComponentRegistry.registerCustomComponent(
-        "poke:cc_cobbler", {
+        "poke_pfe:cc_cobbler", {
         onTick(data, component) {
             const ActiveState = <keyof BlockStateSuperset>'pfe:active'
             const block_location = `${data.block.x} ${data.block.y} ${data.block.z}`
             if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
                 data.block.setPermutation(data.block.permutation.withState(ActiveState, 1))
-                data.dimension.runCommand(`execute positioned ${block_location} run structure load poke:cobblestone_item ~ ~-1 ~`)
+                data.dimension.runCommand(`execute positioned ${block_location} run structure load poke_pfe:cobblestone_item ~ ~-1 ~`)
                 return;
             }
             if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== undefined) {
@@ -691,9 +691,9 @@ system.beforeEvents.startup.subscribe(data => {
 
 
     data.blockComponentRegistry.registerCustomComponent(
-        "poke:crops", {
+        "poke_pfe:crops", {
         onRandomTick(data, component) {
-            const GrowthStageState = <keyof BlockStateSuperset>'poke:growth_stage'
+            const GrowthStageState = <keyof BlockStateSuperset>'poke_pfe:growth_stage'
             var growth_state = <number>data.block.permutation.getState(GrowthStageState)
             var growth_stage = growth_state + 1
             if (growth_state != undefined || 6) {
@@ -706,7 +706,7 @@ system.beforeEvents.startup.subscribe(data => {
 
             const equippableComponent = data.player?.getComponent(EntityComponentTypes.Equippable)
             const mainhandItem = equippableComponent?.getEquipment(EquipmentSlot.Mainhand)
-            const GrowthStageState = <keyof BlockStateSuperset>'poke:growth_stage'
+            const GrowthStageState = <keyof BlockStateSuperset>'poke_pfe:growth_stage'
             if (mainhandItem === undefined) return;
             const block_location = `${data.block.x} ${data.block.y} ${data.block.z}`
             let growth_state = <number>data.block.permutation.getState(GrowthStageState)
@@ -747,7 +747,7 @@ system.beforeEvents.startup.subscribe(data => {
                 case data.block.above()?.typeId: break;
                 default: return
             };
-            data.block.setType(`poke:lava_sponge`);
+            data.block.setType(`poke_pfe:lava_sponge`);
             data.dimension.playSound(`random.fizz`, data.block.center());
             data.dimension.spawnParticle(`minecraft:cauldron_explosion_emitter`, data.block.center());
             return
@@ -755,14 +755,14 @@ system.beforeEvents.startup.subscribe(data => {
     }
     )
     data.blockComponentRegistry.registerCustomComponent(
-        "poke:cc_block_seat", {
+        "poke_pfe:cc_block_seat", {
         onPlayerInteract(data, component) {
             if (!data.player) return
             const slabId = data.block.typeId
             const mainhand = data.player.getComponent(EntityComponentTypes.Equippable)?.getEquipment(EquipmentSlot.Mainhand)
-            const DoubleState = <keyof BlockStateSuperset>'poke:double'
+            const DoubleState = <keyof BlockStateSuperset>'poke_pfe:double'
             const options: EntityQueryOptions = {
-                type: 'poke:seat',
+                type: 'poke_pfe:seat',
                 location: data.block.center(),
                 maxDistance: 0.24
             };
@@ -772,7 +772,7 @@ system.beforeEvents.startup.subscribe(data => {
                         return;
                     }
                     else {
-                        data.dimension.spawnEntity('poke:seat', data.block.center()).getComponent('minecraft:rideable')?.addRider(data.player)
+                        data.dimension.spawnEntity('poke_pfe:seat', data.block.center()).getComponent('minecraft:rideable')?.addRider(data.player)
                         ComputersCompat.addStat("slabs_sat_on", 1)
                         return;
                     }
@@ -784,29 +784,29 @@ system.beforeEvents.startup.subscribe(data => {
     );
 
     data.blockComponentRegistry.registerCustomComponent(
-        "poke:cc_block_interact", {
+        "poke_pfe:cc_block_interact", {
         onPlayerInteract(data, component) {
             switch (data.block.typeId) {
-                case 'poke:listener_trophy': { data.player?.playMusic('poke_pfe.they_listen', { fade: 5 }); return; }
-                case 'poke:furnace_golem_trophy': { data.player?.playMusic('poke.record.pigstep', { fade: 5 }); return; }
-                case 'poke:cobalt_golem_block': { data.dimension.spawnEntity('poke:cobalt_golem', data.block.location); data.block.setType(MinecraftBlockTypes.Air); return; }
+                case 'poke_pfe:listener_trophy': { data.player?.playMusic('poke_pfe.they_listen', { fade: 5 }); return; }
+                case 'poke_pfe:furnace_golem_trophy': { data.player?.playMusic('poke.record.pigstep', { fade: 5 }); return; }
+                case 'poke_pfe:cobalt_golem_block': { data.dimension.spawnEntity('poke_pfe:cobalt_golem', data.block.location); data.block.setType(MinecraftBlockTypes.Air); return; }
                     return;
             }
         }
     }
     );
     data.blockComponentRegistry.registerCustomComponent(
-        "poke:cc_8ball", {
+        "poke_pfe:cc_8ball", {
         onPlayerInteract(data, component) {
             var RNG = Math.floor(Math.random() * 19)
             //console.warn(RNG)
-            data.player?.sendMessage({ rawtext: [{ translate: `translation.poke:8ball${RNG}` }] })
+            data.player?.sendMessage({ rawtext: [{ translate: `translation.poke_pfe:8ball${RNG}` }] })
             return;
         }
     }
     );
     data.blockComponentRegistry.registerCustomComponent(
-        "poke:cc_wall", {
+        "poke_pfe:cc_wall", {
         onPlace(data, component) {
             const NorthBlock = data.block.north()
             const SouthBlock = data.block.south()
@@ -818,8 +818,8 @@ system.beforeEvents.startup.subscribe(data => {
             const SouthState = <keyof BlockStateSuperset>'pfe:wall_s'
             const EastState = <keyof BlockStateSuperset>'pfe:wall_e'
             const WestState = <keyof BlockStateSuperset>'pfe:wall_w'
-            const AboveState = <keyof BlockStateSuperset>'poke:connected_above'
-            const BelowState = <keyof BlockStateSuperset>'poke:connected_below'
+            const AboveState = <keyof BlockStateSuperset>'poke_pfe:connected_above'
+            const BelowState = <keyof BlockStateSuperset>'poke_pfe:connected_below'
             if (!NorthBlock || !SouthBlock || !EastBlock || !WestBlock) return;
             if (!NorthBlock.isAir && !NorthBlock.isLiquid && !NorthBlock.canBeDestroyedByLiquidSpread(LiquidType.Water)) {
                 data.block.setPermutation(data.block.permutation.withState(NorthState, true));
@@ -880,8 +880,8 @@ system.beforeEvents.startup.subscribe(data => {
             const SouthState = <keyof BlockStateSuperset>'pfe:wall_s'
             const EastState = <keyof BlockStateSuperset>'pfe:wall_e'
             const WestState = <keyof BlockStateSuperset>'pfe:wall_w'
-            const AboveState = <keyof BlockStateSuperset>'poke:connected_above'
-            const BelowState = <keyof BlockStateSuperset>'poke:connected_below'
+            const AboveState = <keyof BlockStateSuperset>'poke_pfe:connected_above'
+            const BelowState = <keyof BlockStateSuperset>'poke_pfe:connected_below'
             if (!NorthBlock || !SouthBlock || !EastBlock || !WestBlock || !AboveBlock || !BelowBlock) return;
             if (NorthBlock.permutation.getState(SouthState) != undefined) {
                 NorthBlock.setPermutation(NorthBlock.permutation.withState(SouthState, false))
@@ -1434,7 +1434,7 @@ system.beforeEvents.startup.subscribe(data => {
                 entity: string
             }
             const component = <spawnEntityComponentInfo>componentInfo.params
-            if (data.itemStack.typeId == "poke:wither_spawner") {
+            if (data.itemStack.typeId == "poke_pfe:wither_spawner") {
                 let options: PFEDisableConfigOptions = JSON.parse(world.getDynamicProperty(PFEDisableConfigName)!.toString())
                 if (!options.witherSpawner) return;
             }
@@ -1526,10 +1526,10 @@ system.beforeEvents.startup.subscribe(data => {
                 let options: PFEDisableConfigOptions = JSON.parse(world.getDynamicProperty(PFEDisableConfigName)!.toString()) ?? PFEDisableConfigDefault
                 switch (true) {
                     case
-                        (data.itemStack.typeId == "poke:player_magnet" && options.playerMagnet === false)
-                        || (data.itemStack.typeId == "poke:quantum_teleporter" && options.quantumTeleporter === false)
-                        || (data.itemStack.typeId == "poke:sundial" && options.sundial === false)
-                        || (data.itemStack.typeId == "poke:kapow_ring" && options.kapowRing === false)
+                        (data.itemStack.typeId == "poke_pfe:player_magnet" && options.playerMagnet === false)
+                        || (data.itemStack.typeId == "poke_pfe:quantum_teleporter" && options.quantumTeleporter === false)
+                        || (data.itemStack.typeId == "poke_pfe:sundial" && options.sundial === false)
+                        || (data.itemStack.typeId == "poke_pfe:kapow_ring" && options.kapowRing === false)
                         : {
                             data.source.sendMessage({ translate: `§f[§e!§f] §c%translation.poke_pfe.feature_disabled§r` })
                             return;
@@ -1634,12 +1634,12 @@ world.afterEvents.worldLoad.subscribe((data) => {
     if (typeof world.getDynamicProperty(PFEDisableConfigName) != "string") {
         world.setDynamicProperty(PFEDisableConfigName, JSON.stringify(PFEDisableConfigDefault))
     }
-    const birthdayProperty = world.getDynamicProperty(`poke:birthdays`)
-    if (typeof birthdayProperty != "string") world.setDynamicProperty(`poke:birthdays`, `[]`);
-    const CustomEventsDynamicProp = world.getDynamicProperty(`poke:customEvents`)
+    const birthdayProperty = world.getDynamicProperty(`poke_pfe:birthdays`)
+    if (typeof birthdayProperty != "string") world.setDynamicProperty(`poke_pfe:birthdays`, `[]`);
+    const CustomEventsDynamicProp = world.getDynamicProperty(`poke_pfe:customEvents`)
     typeof CustomEventsDynamicProp == "string" ?
-        JSON.parse(CustomEventsDynamicProp) ?? world.setDynamicProperty(`poke:customEvents`, `[]`)
-        : world.setDynamicProperty(`poke:customEvents`, `[]`)
+        JSON.parse(CustomEventsDynamicProp) ?? world.setDynamicProperty(`poke_pfe:customEvents`, `[]`)
+        : world.setDynamicProperty(`poke_pfe:customEvents`, `[]`)
     //console.warn(`Custom events were invalid; resetting to default (Ignore if this world was just created) || Poke-Calendar`)
     if (typeof world.getDynamicProperty(PFEBossEventConfigName) == "string") {
         let settings: PFEBossEventConfig = JSON.parse(world.getDynamicProperty(PFEBossEventConfigName)!.toString())
@@ -1721,9 +1721,9 @@ system.afterEvents.scriptEventReceive.subscribe((data) => {
             let newQuests = currentQuests.concat(JSON.parse(data.message).value) ?? currentQuests
             world.setDynamicProperty(PFECustomCraftQuestsPropertyID, JSON.stringify(newQuests))
         }
-        /*case (`poke:test`): {
+        /*case (`poke_pfe:test`): {
             let item = data.sourceEntity?.getComponent(EntityComponentTypes.Equippable)?.getEquipment(EquipmentSlot.Mainhand)
-            item?.setDynamicProperty(`poke:ammo`, JSON.stringify({ v: 2, max: 32, amount: 12, entityId: "poke:galaxy_arrow", id: "poke:galaxy_arrow", upgrades: [{ id: "pfe:capacity", level: 1, maxLevel: undefined }, { id: "pfe:flaming", level: 0, maxLevel: 1 }] }))
+            item?.setDynamicProperty(`poke_pfe:ammo`, JSON.stringify({ v: 2, max: 32, amount: 12, entityId: "poke_pfe:galaxy_arrow", id: "poke_pfe:galaxy_arrow", upgrades: [{ id: "poke_pfe:capacity", level: 1, maxLevel: undefined }, { id: "poke_pfe:flaming", level: 0, maxLevel: 1 }] }))
             data.sourceEntity?.getComponent(EntityComponentTypes.Equippable)?.setEquipment(EquipmentSlot.Mainhand, item)
         }*/
         // This is to check if there are multiple versions of PFE applied to a world at a time
@@ -1745,7 +1745,7 @@ system.afterEvents.scriptEventReceive.subscribe((data) => {
     }
 })
 function OpenPFEConfig(player: Player) {
-    if ((player.playerPermissionLevel == PlayerPermissionLevel.Operator) || player.hasTag(`poke:config`)) {
+    if ((player.playerPermissionLevel == PlayerPermissionLevel.Operator) || player.hasTag(`poke_pfe:config`)) {
         let UI = new ActionFormData()
         UI.button({ translate: `translation.poke_pfe.bossEventConfig` }, `textures/poke/common/spawn_enabled`)
         UI.button({ translate: `translation.poke_pfe.disableConfig` }, `textures/poke/common/blacklist_add`)
@@ -1794,8 +1794,8 @@ function OpenPFEConfig(player: Player) {
     } else {
         let UI = new ActionFormData()
         UI.title({ translate: `translation.poke_pfe.insufficientPerms` })
-        UI.body({ translate: `%translation.poke_pfe.insufficientPerms.desc:§e poke:config§r\n\n%translation.poke_pfe.insufficientPerms.desc2\n§e/tag @s add poke:config§r` })
-        UI.button({ translate: `translation.poke:bossEventClose` }, `textures/poke/common/close`)
+        UI.body({ translate: `%translation.poke_pfe.insufficientPerms.desc:§e poke_pfe:config§r\n\n%translation.poke_pfe.insufficientPerms.desc2\n§e/tag @s add poke_pfe:config§r` })
+        UI.button({ translate: `translation.poke_pfe:bossEventClose` }, `textures/poke/common/close`)
         UI.show(player).then(response => {
             return
         })

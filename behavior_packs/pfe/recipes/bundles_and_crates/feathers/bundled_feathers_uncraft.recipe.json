@@ -5,16 +5,16 @@
             "crafting_table"
         ],
         "description": {
-            "identifier": "poke:bundled_feathers_uncraft"
+            "identifier": "poke_pfe:bundled_feathers_uncraft"
         },
         "unlock": [
             {
-                "item": "poke:bundled_feathers"
+                "item": "poke_pfe:bundled_feathers"
             }
         ],
         "ingredients": [
             {
-                "item": "poke:bundled_feathers"
+                "item": "poke_pfe:bundled_feathers"
             }
         ],
         "result": {

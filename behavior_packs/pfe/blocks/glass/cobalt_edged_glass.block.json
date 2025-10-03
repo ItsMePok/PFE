@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:cobalt_edged_glass",
+			"identifier": "poke_pfe:cobalt_edged_glass",
 			"menu_category": {
 				"category": "construction"
 			}

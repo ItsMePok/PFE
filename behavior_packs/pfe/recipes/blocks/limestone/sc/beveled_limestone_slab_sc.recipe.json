@@ -1,14 +1,20 @@
 {
 	"format_version": "1.16.100",
 	"minecraft:recipe_shapeless": {
-		"description": {"identifier": "poke:beveled_limestone_slab_stonecut"},
-		"tags": ["stonecutter"],
+		"description": {
+			"identifier": "poke_pfe:beveled_limestone_slab_stonecut"
+		},
+		"tags": [
+			"stonecutter"
+		],
 		"ingredients": [
-			{"item": "poke:limestone"}
+			{
+				"item": "poke_pfe:limestone"
+			}
 		],
 		"result": {
-			"item": "poke:beveled_limestone_slab",
-			"count":2
+			"item": "poke_pfe:beveled_limestone_slab",
+			"count": 2
 		}
 	}
 }

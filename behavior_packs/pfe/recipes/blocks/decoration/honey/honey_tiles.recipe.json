@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:honey_tiles"
+			"identifier": "poke_pfe:honey_tiles"
 		},
 		"tags": [
 			"crafting_table"
@@ -15,12 +15,12 @@
 				"item": "honeycomb_block"
 			},
 			{
-				"item": "poke:honey_bricks"
+				"item": "poke_pfe:honey_bricks"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:honey_bricks"
+				"item": "poke_pfe:honey_bricks"
 			}
 		},
 		"pattern": [
@@ -28,7 +28,7 @@
 			"CC"
 		],
 		"result": {
-			"item": "poke:honey_tiles",
+			"item": "poke_pfe:honey_tiles",
 			"count": 4
 		}
 	}

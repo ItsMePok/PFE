@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:floppy_disk",
+			"identifier": "poke_pfe:floppy_disk",
 			"menu_category": {
 				"category": "items"
 			}

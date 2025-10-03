@@ -2,22 +2,22 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:shade_bricks_craft"
+			"identifier": "poke_pfe:shade_bricks_craft"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:shade_block"
+				"item": "poke_pfe:shade_block"
 			},
 			{
-				"item": "poke:shade_ingot"
+				"item": "poke_pfe:shade_ingot"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:cut_shade"
+				"item": "poke_pfe:cut_shade"
 			}
 		},
 		"pattern": [
@@ -25,7 +25,7 @@
 			"CC"
 		],
 		"result": {
-			"item": "poke:shade_bricks",
+			"item": "poke_pfe:shade_bricks",
 			"count": 4
 		}
 	}

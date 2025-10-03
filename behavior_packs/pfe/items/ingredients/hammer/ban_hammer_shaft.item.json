@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:ban_hammer_shaft",
+			"identifier": "poke_pfe:ban_hammer_shaft",
 			"menu_category": {
 				"category": "items"
 			}

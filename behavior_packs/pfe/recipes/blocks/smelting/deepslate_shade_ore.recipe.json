@@ -2,13 +2,13 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_furnace": {
 		"description": {
-			"identifier": "poke:deepslate_shade_ore"
+			"identifier": "poke_pfe:deepslate_shade_ore"
 		},
 		"tags": [
 			"furnace",
 			"blast_furnace"
 		],
-		"input": "poke:deepslate_shade_ore",
-		"output": "poke:shade_ingot"
+		"input": "poke_pfe:deepslate_shade_ore",
+		"output": "poke_pfe:shade_ingot"
 	}
 }

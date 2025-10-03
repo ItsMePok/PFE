@@ -2,9 +2,9 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:death_bulb",
+			"identifier": "poke_pfe:death_bulb",
 			"states": {
-				"pfe:color": {
+				"poke_pfe:color": {
 					"values": {
 						"min": 0,
 						"max": 15

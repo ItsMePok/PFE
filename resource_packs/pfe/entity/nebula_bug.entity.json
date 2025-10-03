@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "poke:nebula_bug",
+			"identifier": "poke_pfe:nebula_bug",
 			"materials": {
 				"default": "silverfish", //2
 				"body_layer": "silverfish_layers" //2

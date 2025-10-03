@@ -2,7 +2,7 @@
 	"format_version": "1.8.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "poke:warped_sporeshroom",
+			"identifier": "poke_pfe:warped_sporeshroom",
 			"min_engine_version": "1.8.0",
 			"materials": {
 				"default": "entity_alphatest"

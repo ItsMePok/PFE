@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:medic_boots"
+			"identifier": "poke_pfe:medic_boots"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,22 +14,22 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:godly_boots"
+				"item": "poke_pfe:godly_boots"
 			}
 		],
 		"key": {
 			"B": {
-				"item": "poke:medic_block"
+				"item": "poke_pfe:medic_block"
 			},
 			"#": {
-				"item": "poke:godly_boots"
+				"item": "poke_pfe:godly_boots"
 			},
 			"U": {
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			}
 		},
 		"result": {
-			"item": "poke:medic_boots"
+			"item": "poke_pfe:medic_boots"
 		}
 	}
 }

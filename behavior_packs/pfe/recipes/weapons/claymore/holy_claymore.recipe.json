@@ -15,16 +15,16 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:holy_ingot"
+				"item": "poke_pfe:holy_ingot"
 			},
 			{
-				"item": "poke:holy_block"
+				"item": "poke_pfe:holy_block"
 			},
 			{
-				"item": "poke:godly_stick"
+				"item": "poke_pfe:godly_stick"
 			},
 			{
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			},
 			{
 				"item": "poke_pfe:onyx_claymore"
@@ -32,16 +32,16 @@
 		],
 		"key": {
 			"I": {
-				"item": "poke:holy_ingot"
+				"item": "poke_pfe:holy_ingot"
 			},
 			"B": {
-				"item": "poke:holy_block"
+				"item": "poke_pfe:holy_block"
 			},
 			"S": {
-				"item": "poke:godly_stick"
+				"item": "poke_pfe:godly_stick"
 			},
 			"U": {
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			},
 			"C": {
 				"item": "poke_pfe:onyx_claymore"

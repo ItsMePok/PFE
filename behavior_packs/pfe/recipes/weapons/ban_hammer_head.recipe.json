@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:ban_hammer_head"
+			"identifier": "poke_pfe:ban_hammer_head"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,22 +14,22 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:banished_star"
+				"item": "poke_pfe:banished_star"
 			}
 		],
 		"key": {
 			"#": {
-				"item": "poke:banished_star_x5"
+				"item": "poke_pfe:banished_star_x5"
 			},
 			"6": {
-				"item": "poke:banished_star_x6"
+				"item": "poke_pfe:banished_star_x6"
 			},
 			"*": {
-				"item": "poke:banished_star_x7"
+				"item": "poke_pfe:banished_star_x7"
 			}
 		},
 		"result": {
-			"item": "poke:ban_hammer_head",
+			"item": "poke_pfe:ban_hammer_head",
 			"count": 1
 		}
 	}

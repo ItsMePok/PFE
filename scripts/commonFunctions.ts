@@ -57,7 +57,7 @@ function PokeDamageItemUB(item: ItemStack, multiplier: undefined | number, entit
   // Check if the item does not have a durability component to avoid deleting itself
   if (!durabilityComponent) {
     // We set a dynamic property to ensure that holding will continue to trigger regardless if unbreaking takes effect
-    item.isStackable ? undefined : PokeSaveProperty(`poke:holdFix`, item, Math.round(Math.random() * 100), entity, slot)
+    item.isStackable ? undefined : PokeSaveProperty(`poke_pfe:holdFix`, item, Math.round(Math.random() * 100), entity, slot)
     return { tookDurability: false, failed: true, broke: false }
   }
   if (preventBreaking && durabilityComponent?.maxDurability == (durabilityComponent.damage + 1)) {
@@ -72,7 +72,7 @@ function PokeDamageItemUB(item: ItemStack, multiplier: undefined | number, entit
   if (entity.typeId == MinecraftEntityTypes.Player) {
     const player = <Player>entity
     if (player.getGameMode() == GameMode.Creative) {
-      item.isStackable ? undefined : PokeSaveProperty(`poke:holdFix`, item, Math.round(Math.random() * 100), entity, slot)
+      item.isStackable ? undefined : PokeSaveProperty(`poke_pfe:holdFix`, item, Math.round(Math.random() * 100), entity, slot)
       return { tookDurability: false, failed: false, broke: false, gmc: true }
     }
   }
@@ -87,7 +87,7 @@ function PokeDamageItemUB(item: ItemStack, multiplier: undefined | number, entit
       return
     }
   }
-  item.isStackable ? undefined : PokeSaveProperty(`poke:holdFix`, item, Math.round(Math.random() * 100), entity, slot)
+  item.isStackable ? undefined : PokeSaveProperty(`poke_pfe:holdFix`, item, Math.round(Math.random() * 100), entity, slot)
 }
 
 /**
@@ -118,12 +118,12 @@ function PokeDecrementStack(item: ItemStack, amount?: number) {
 function PokeErrorScreen(player: Player, error?: RawMessage, backTo?: any) {
   let UI = new ActionFormData()
   if (!error) {
-    error = { translate: `translation.poke:errorGeneric` }
+    error = { translate: `translation.poke_pfe:errorGeneric` }
   }
-  UI.title({ translate: `translation.poke:errorGeneric` })
+  UI.title({ translate: `translation.poke_pfe:errorGeneric` })
   UI.body(error)
-  UI.button({ translate: `translation.poke:goBack` }, `textures/poke/common/left_arrow`)
-  UI.button({ translate: `translation.poke:bossEventClose` }, `textures/poke/common/close`)
+  UI.button({ translate: `translation.poke_pfe:goBack` }, `textures/poke/common/left_arrow`)
+  UI.button({ translate: `translation.poke_pfe:bossEventClose` }, `textures/poke/common/close`)
   UI.show(player).then((response => {
     if (response.canceled || response.selection == 1) {
       backTo

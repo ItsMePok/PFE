@@ -22,9 +22,9 @@
 			},
 			"poke_pfe:upgradeable": {
 				"sneak_interact_opens_ui": false,
-				"dynamic_property": "pfe:upgrades",
+				"dynamic_property": "poke_pfe:upgrades",
 				"upgrade_ids": [
-					"pfe:persistence"
+					"poke_pfe:persistence"
 				],
 				"version": 1
 			}

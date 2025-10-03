@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:cobalt_haxel"
+			"identifier": "poke_pfe:cobalt_haxel"
 		},
 		"group": "haxel",
 		"tags": [
@@ -15,31 +15,31 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:cobalt_ingot"
+				"item": "poke_pfe:cobalt_ingot"
 			},
 			{
-				"item": "poke:iron_haxel"
+				"item": "poke_pfe:iron_haxel"
 			},
 			{
-				"item": "poke:upgrade_core"
+				"item": "poke_pfe:upgrade_core"
 			}
 		],
 		"key": {
 			"i": {
-				"item": "poke:onyx_shaft"
+				"item": "poke_pfe:onyx_shaft"
 			},
 			"#": {
-				"item": "poke:cobalt_block"
+				"item": "poke_pfe:cobalt_block"
 			},
 			"E": {
-				"item": "poke:iron_haxel"
+				"item": "poke_pfe:iron_haxel"
 			},
 			"U": {
-				"item": "poke:upgrade_core"
+				"item": "poke_pfe:upgrade_core"
 			}
 		},
 		"result": {
-			"item": "poke:cobalt_haxel"
+			"item": "poke_pfe:cobalt_haxel"
 		}
 	}
 }

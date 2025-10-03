@@ -4,7 +4,7 @@
     "description": {
       "identifier": "poke_pfe:omnivator"
     },
-    "group": "poke:automation",
+    "group": "poke_pfe:automation",
     "tags": [
       "crafting_table"
     ],
@@ -13,7 +13,7 @@
         "item": "poke_pfe:elevator"
       },
       {
-        "tag": "poke:upgrade_core"
+        "tag": "poke_pfe:upgrade_core"
       }
     ],
     "ingredients": [
@@ -21,7 +21,7 @@
         "item": "poke_pfe:elevator"
       },
       {
-        "item": "poke:upgrade_core"
+        "item": "poke_pfe:upgrade_core"
       }
     ],
     "result": {

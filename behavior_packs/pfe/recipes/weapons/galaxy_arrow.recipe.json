@@ -1,24 +1,36 @@
 {
-	"format_version":"1.20.10",
-	"minecraft:recipe_shapeless":{
-		"description":{"identifier":"poke:galaxy_arrow"},
-		"tags":["crafting_table"],
-		"unlock":[
-			{"item":"arrow"},
-			{"item":"poke:galaxy_nugget"},
-			{"item":"poke:galaxy_ingot"}
+	"format_version": "1.20.10",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "poke_pfe:galaxy_arrow"
+		},
+		"tags": [
+			"crafting_table"
 		],
-		"ingredients":[
+		"unlock": [
 			{
-				"item":"minecraft:arrow",
-				"data":0,
-				"count":8
+				"item": "arrow"
 			},
-			{"item":"poke:galaxy_nugget"}
+			{
+				"item": "poke_pfe:galaxy_nugget"
+			},
+			{
+				"item": "poke_pfe:galaxy_ingot"
+			}
 		],
-		"result":{
-			"item":"poke:galaxy_arrow",
-			"count":8
+		"ingredients": [
+			{
+				"item": "minecraft:arrow",
+				"data": 0,
+				"count": 8
+			},
+			{
+				"item": "poke_pfe:galaxy_nugget"
+			}
+		],
+		"result": {
+			"item": "poke_pfe:galaxy_arrow",
+			"count": 8
 		}
 	}
 }

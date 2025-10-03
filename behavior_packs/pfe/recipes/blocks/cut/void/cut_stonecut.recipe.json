@@ -2,18 +2,18 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "poke:cut_void_stonecut"
+			"identifier": "poke_pfe:cut_void_stonecut"
 		},
 		"tags": [
 			"stonecutter"
 		],
 		"ingredients": [
 			{
-				"item": "poke:void_block"
+				"item": "poke_pfe:void_block"
 			}
 		],
 		"result": {
-			"item": "poke:cut_void",
+			"item": "poke_pfe:cut_void",
 			"count": 4
 		}
 	}

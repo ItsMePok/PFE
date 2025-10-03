@@ -2,26 +2,26 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:cut_medic_slab_to_cut_medic"
+			"identifier": "poke_pfe:cut_medic_slab_to_cut_medic"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:cut_medic_slab"
+				"item": "poke_pfe:cut_medic_slab"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:cut_medic_slab"
+				"item": "poke_pfe:cut_medic_slab"
 			}
 		},
 		"pattern": [
 			"CC"
 		],
 		"result": {
-			"item": "poke:cut_medic"
+			"item": "poke_pfe:cut_medic"
 		},
 		"priority": 2
 	}

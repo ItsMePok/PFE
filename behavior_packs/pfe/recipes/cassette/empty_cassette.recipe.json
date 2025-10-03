@@ -2,25 +2,25 @@
 	"format_version": "1.12",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:empty_cassette"
+			"identifier": "poke_pfe:empty_cassette"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"key": {
 			"P": {
-				"item": "poke:plastic"
+				"item": "poke_pfe:plastic"
 			},
 			"T": {
-				"item": "poke:electric_component"
+				"item": "poke_pfe:electric_component"
 			}
 		},
 		"unlock": [
 			{
-				"item": "poke:plastic"
+				"item": "poke_pfe:plastic"
 			},
 			{
-				"item": "poke:electric_component"
+				"item": "poke_pfe:electric_component"
 			},
 			{
 				"item": "music_disc_ward"
@@ -80,7 +80,7 @@
 			"PPP"
 		],
 		"result": {
-			"item": "poke:empty_cassette"
+			"item": "poke_pfe:empty_cassette"
 		}
 	}
 }

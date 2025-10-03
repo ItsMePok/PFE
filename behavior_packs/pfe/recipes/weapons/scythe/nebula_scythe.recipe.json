@@ -1,32 +1,50 @@
 {
-	"format_version":"1.20.10",
-	"minecraft:recipe_shaped":{
-		"description":{
-			"identifier":"poke:nebula_scythe"
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke_pfe:nebula_scythe"
 		},
-		"tags":[
+		"tags": [
 			"crafting_table"
 		],
-		"pattern":[
+		"pattern": [
 			"ZXX",
 			"V# ",
 			"YU "
 		],
-		"unlock":[
-			{"item":"poke:astral_scythe"},
-			{"item":"poke:nebula_ingot"},
-			{"item":"poke:death_scythe"}
+		"unlock": [
+			{
+				"item": "poke_pfe:astral_scythe"
+			},
+			{
+				"item": "poke_pfe:nebula_ingot"
+			},
+			{
+				"item": "poke_pfe:death_scythe"
+			}
 		],
-		"key":{
-			"Y":{"item":"poke:astral_scythe"},
-			"X":{"item":"poke:nebula_block"},
-			"Z":{"item":"poke:nebula_ingot"},
-			"#":{"item":"poke:nebula_hoe"},
-			"U":{"item":"poke:platinum_upgrade_core"},
-			"V":{"item":"poke:death_scythe"}
+		"key": {
+			"Y": {
+				"item": "poke_pfe:astral_scythe"
+			},
+			"X": {
+				"item": "poke_pfe:nebula_block"
+			},
+			"Z": {
+				"item": "poke_pfe:nebula_ingot"
+			},
+			"#": {
+				"item": "poke_pfe:nebula_hoe"
+			},
+			"U": {
+				"item": "poke_pfe:platinum_upgrade_core"
+			},
+			"V": {
+				"item": "poke_pfe:death_scythe"
+			}
 		},
-		"result":{
-			"item":"poke:nebula_scythe"
+		"result": {
+			"item": "poke_pfe:nebula_scythe"
 		}
 	}
 }

@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "poke:shuriken_proj",
+			"identifier": "poke_pfe:shuriken_proj",
 			"is_spawnable": false,
 			"is_summonable": true,
 			"is_experimental": false,

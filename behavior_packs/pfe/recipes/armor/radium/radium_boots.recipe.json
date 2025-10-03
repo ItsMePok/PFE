@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:radium_boots"
+			"identifier": "poke_pfe:radium_boots"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,29 +14,29 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:shade_boots"
+				"item": "poke_pfe:shade_boots"
 			},
 			{
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			},
 			{
-				"item": "poke:radium_ingot"
+				"item": "poke_pfe:radium_ingot"
 			}
 		],
 		"key": {
 			"B": {
-				"item": "poke:radium_block"
+				"item": "poke_pfe:radium_block"
 			},
 			"#": {
-				"item": "poke:shade_boots"
+				"item": "poke_pfe:shade_boots"
 			},
 			"U": {
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			}
 		},
 		"result": [
 			{
-				"item": "poke:radium_boots"
+				"item": "poke_pfe:radium_boots"
 			}
 		]
 	}

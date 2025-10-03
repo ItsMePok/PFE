@@ -1,5 +1,5 @@
 {
-        "pools": [
+    "pools": [
         {
             "rolls": 1,
             "entries": [
@@ -11,8 +11,8 @@
                         {
                             "function": "set_count",
                             "count": {
-                            "min": 0,
-                            "max": 2
+                                "min": 0,
+                                "max": 2
                             }
                         }
                     ]
@@ -20,15 +20,15 @@
             ]
         },
         {
-            "rolls":1,
-            "entries":[
+            "rolls": 1,
+            "entries": [
                 {
-                    "type":"empty",
+                    "type": "empty",
                     "weight": 749
                 },
                 {
                     "type": "item",
-                    "name": "poke:pfe-github_pottery_sherd",
+                    "name": "poke_pfe:pfe-github_pottery_sherd",
                     "weight": 1
                 }
             ]

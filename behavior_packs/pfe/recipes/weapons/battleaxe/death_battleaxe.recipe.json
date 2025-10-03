@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:death_battleaxe"
+			"identifier": "poke_pfe:death_battleaxe"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,32 +14,32 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:death_ingot"
+				"item": "poke_pfe:death_ingot"
 			},
 			{
-				"item": "poke:death_block"
+				"item": "poke_pfe:death_block"
 			},
 			{
-				"item": "poke:void_battleaxe"
+				"item": "poke_pfe:void_battleaxe"
 			}
 		],
 		"key": {
 			"B": {
-				"item": "poke:void_battleaxe"
+				"item": "poke_pfe:void_battleaxe"
 			},
 			"D": {
-				"item": "poke:death_block"
+				"item": "poke_pfe:death_block"
 			},
 			"S": {
-				"item": "poke:onyx_shaft"
+				"item": "poke_pfe:onyx_shaft"
 			},
 			"U": {
-				"item": "poke:platinum_upgrade_core"
+				"item": "poke_pfe:platinum_upgrade_core"
 			}
 		},
 		"result": [
 			{
-				"item": "poke:death_battleaxe"
+				"item": "poke_pfe:death_battleaxe"
 			}
 		]
 	}

@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:holy_scythe"
+			"identifier": "poke_pfe:holy_scythe"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,28 +14,28 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:onyx_scythe"
+				"item": "poke_pfe:onyx_scythe"
 			}
 		],
 		"key": {
 			"Y": {
-				"item": "poke:holy_block"
+				"item": "poke_pfe:holy_block"
 			},
 			"X": {
-				"item": "poke:holy_block"
+				"item": "poke_pfe:holy_block"
 			},
 			"Z": {
-				"item": "poke:holy_ingot"
+				"item": "poke_pfe:holy_ingot"
 			},
 			"#": {
-				"item": "poke:onyx_scythe"
+				"item": "poke_pfe:onyx_scythe"
 			},
 			"U": {
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			}
 		},
 		"result": {
-			"item": "poke:holy_scythe"
+			"item": "poke_pfe:holy_scythe"
 		}
 	}
 }

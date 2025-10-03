@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:raw_astral",
+			"identifier": "poke_pfe:raw_astral",
 			"menu_category": {
 				"category": "items"
 			}

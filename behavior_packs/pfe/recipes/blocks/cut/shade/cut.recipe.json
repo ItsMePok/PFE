@@ -2,19 +2,19 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:cut_shade_crafting_table"
+			"identifier": "poke_pfe:cut_shade_crafting_table"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:shade_ingot"
+				"item": "poke_pfe:shade_ingot"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:shade_block"
+				"item": "poke_pfe:shade_block"
 			}
 		},
 		"pattern": [
@@ -22,7 +22,7 @@
 			"CC"
 		],
 		"result": {
-			"item": "poke:cut_shade",
+			"item": "poke_pfe:cut_shade",
 			"count": 12
 		},
 		"priority": 0

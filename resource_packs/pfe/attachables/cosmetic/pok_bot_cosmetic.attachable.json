@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "poke:pok_bot_cosmetic",
+			"identifier": "poke_pfe:pok_bot_cosmetic",
 			"render_controllers": [
 				"controller.render.default"
 			],

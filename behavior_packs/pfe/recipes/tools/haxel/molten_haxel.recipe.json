@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:molten_haxel"
+			"identifier": "poke_pfe:molten_haxel"
 		},
 		"group": "haxel",
 		"tags": [
@@ -15,28 +15,28 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:molten_slimeball"
+				"item": "poke_pfe:molten_slimeball"
 			},
 			{
-				"item": "poke:hellish_haxel"
+				"item": "poke_pfe:hellish_haxel"
 			},
 			{
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			}
 		],
 		"key": {
 			"#": {
-				"item": "poke:ember_block"
+				"item": "poke_pfe:ember_block"
 			},
 			"E": {
-				"item": "poke:demonic_haxel"
+				"item": "poke_pfe:demonic_haxel"
 			},
 			"U": {
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			}
 		},
 		"result": {
-			"item": "poke:molten_haxel"
+			"item": "poke_pfe:molten_haxel"
 		}
 	}
 }

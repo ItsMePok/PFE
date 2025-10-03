@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:radium_block_craft"
+			"identifier": "poke_pfe:radium_block_craft"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,16 +14,16 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:radium_ingot"
+				"item": "poke_pfe:radium_ingot"
 			}
 		],
 		"key": {
 			"#": {
-				"item": "poke:radium_ingot"
+				"item": "poke_pfe:radium_ingot"
 			}
 		},
 		"result": {
-			"item": "poke:radium_block"
+			"item": "poke_pfe:radium_block"
 		}
 	}
 }

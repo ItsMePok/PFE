@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:radium_scythe"
+			"identifier": "poke_pfe:radium_scythe"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,28 +14,28 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:radium_ingot"
+				"item": "poke_pfe:radium_ingot"
 			}
 		],
 		"key": {
 			"Y": {
-				"item": "poke:radium_ingot"
+				"item": "poke_pfe:radium_ingot"
 			},
 			"X": {
-				"item": "poke:radium_block"
+				"item": "poke_pfe:radium_block"
 			},
 			"Z": {
-				"item": "poke:radium_ingot"
+				"item": "poke_pfe:radium_ingot"
 			},
 			"#": {
-				"item": "poke:shade_scythe"
+				"item": "poke_pfe:shade_scythe"
 			},
 			"U": {
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			}
 		},
 		"result": {
-			"item": "poke:radium_scythe"
+			"item": "poke_pfe:radium_scythe"
 		}
 	}
 }

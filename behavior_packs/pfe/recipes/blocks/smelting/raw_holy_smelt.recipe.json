@@ -2,13 +2,13 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_furnace": {
 		"description": {
-			"identifier": "poke:raw_holy_smelt"
+			"identifier": "poke_pfe:raw_holy_smelt"
 		},
 		"tags": [
 			"furnace",
 			"blast_furnace"
 		],
-		"input": "poke:raw_holy",
-		"output": "poke:holy_ingot"
+		"input": "poke_pfe:raw_holy",
+		"output": "poke_pfe:holy_ingot"
 	}
 }

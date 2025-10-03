@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:copper_token",
+			"identifier": "poke_pfe:copper_token",
 			"menu_category": {
 				"category": "items"
 			}

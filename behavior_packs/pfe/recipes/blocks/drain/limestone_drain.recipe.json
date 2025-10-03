@@ -6,12 +6,12 @@
     },
     "unlock": [
       {
-        "item": "poke:cobbled_limestone"
+        "item": "poke_pfe:cobbled_limestone"
       }
     ],
     "key": {
       "X": {
-        "item": "poke:cobbled_limestone"
+        "item": "poke_pfe:cobbled_limestone"
       }
     },
     "result": {
@@ -23,7 +23,7 @@
       " X ",
       "X X"
     ],
-    "group": "poke:drain",
+    "group": "poke_pfe:drain",
     "tags": [
       "crafting_table"
     ]

@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:cobalt_nugget",
+			"identifier": "poke_pfe:cobalt_nugget",
 			"menu_category": {
 				"category": "items"
 			}

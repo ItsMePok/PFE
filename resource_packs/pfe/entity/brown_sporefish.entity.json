@@ -2,7 +2,7 @@
 	"format_version": "1.8.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "poke:brown_sporefish",
+			"identifier": "poke_pfe:brown_sporefish",
 			"materials": {
 				"default": "entity_alphatest"
 			},

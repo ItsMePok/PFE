@@ -2,7 +2,7 @@
     "format_version": "1.20.60",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "poke:redstone_upgrader"
+            "identifier": "poke_pfe:redstone_upgrader"
         },
         "tags": [
             "crafting_table"
@@ -18,7 +18,7 @@
                 "item": "redstone"
             },
             {
-                "item": "poke:diamond_upgrade_core"
+                "item": "poke_pfe:diamond_upgrade_core"
             }
         ],
         "key": {
@@ -26,14 +26,14 @@
                 "item": "redstone_block"
             },
             "Y": {
-                "item": "poke:diamond_upgrade_core"
+                "item": "poke_pfe:diamond_upgrade_core"
             },
             "Z": {
                 "item": "stick"
             }
         },
         "result": {
-            "item": "poke:redstone_upgrader"
+            "item": "poke_pfe:redstone_upgrader"
         }
     }
 }

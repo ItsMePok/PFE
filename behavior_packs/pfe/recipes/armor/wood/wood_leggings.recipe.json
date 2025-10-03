@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:wood_leggings"
+			"identifier": "poke_pfe:wood_leggings"
 		},
 		"tags": [
 			"crafting_table"
@@ -23,7 +23,7 @@
 			}
 		},
 		"result": {
-			"item": "poke:wood_leggings"
+			"item": "poke_pfe:wood_leggings"
 		}
 	}
 }

@@ -2,7 +2,7 @@
   "format_version": "1.21.110",
   "minecraft:item": {
     "description": {
-      "identifier": "poke:flower_lilly_hat",
+      "identifier": "poke_pfe:flower_lilly_hat",
       "menu_category": {
         "category": "equipment"
       }

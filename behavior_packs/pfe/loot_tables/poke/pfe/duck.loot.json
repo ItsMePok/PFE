@@ -5,8 +5,19 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "poke:raw_duck",
-                    "functions": [{"function": "furnace_smelt"},{"function": "looting_enchant","count": {"min":0,"max": 1}}]
+                    "name": "poke_pfe:raw_duck",
+                    "functions": [
+                        {
+                            "function": "furnace_smelt"
+                        },
+                        {
+                            "function": "looting_enchant",
+                            "count": {
+                                "min": 0,
+                                "max": 1
+                            }
+                        }
+                    ]
                 }
             ],
             "bonus_rolls": 2

@@ -2,13 +2,13 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_furnace": {
 		"description": {
-			"identifier": "poke:raw_cobalt_smelt"
+			"identifier": "poke_pfe:raw_cobalt_smelt"
 		},
 		"tags": [
 			"furnace",
 			"blast_furnace"
 		],
-		"input": "poke:raw_cobalt",
-		"output": "poke:cobalt_ingot"
+		"input": "poke_pfe:raw_cobalt",
+		"output": "poke_pfe:cobalt_ingot"
 	}
 }

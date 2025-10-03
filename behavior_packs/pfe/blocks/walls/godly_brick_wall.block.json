@@ -2,36 +2,36 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:godly_brick_wall",
+			"identifier": "poke_pfe:godly_brick_wall",
 			"menu_category": {
 				"category": "construction"
 			},
 			"states": {
-				"poke:post_bit": [
+				"poke_pfe:post_bit": [
 					true,
 					false
 				],
-				"pfe:wall_n": [
+				"poke_pfe:wall_n": [
 					false,
 					true
 				],
-				"pfe:wall_s": [
+				"poke_pfe:wall_s": [
 					false,
 					true
 				],
-				"pfe:wall_e": [
+				"poke_pfe:wall_e": [
 					false,
 					true
 				],
-				"pfe:wall_w": [
+				"poke_pfe:wall_w": [
 					false,
 					true
 				],
-				"poke:connected_above": [
+				"poke_pfe:connected_above": [
 					false,
 					true
 				],
-				"poke:connected_below": [
+				"poke_pfe:connected_below": [
 					false,
 					true
 				]
@@ -64,19 +64,19 @@
 			"minecraft:geometry": {
 				"identifier": "geometry.poke_pfe.wall",
 				"bone_visibility": {
-					"post": "q.block_state('poke:post_bit') ==true",
-					"north": "q.block_state('pfe:wall_n') ==true&& q.block_state('poke:connected_above') ==false",
-					"south": "q.block_state('pfe:wall_s') ==true&& q.block_state('poke:connected_above') ==false",
-					"east": "q.block_state('pfe:wall_e') ==true&& q.block_state('poke:connected_above') ==false",
-					"west": "q.block_state('pfe:wall_w') ==true && q.block_state('poke:connected_above') ==false",
-					"full_n": "q.block_state('pfe:wall_n') ==true && q.block_state('poke:connected_above') ==true",
-					"full_s": "q.block_state('pfe:wall_s') ==true && q.block_state('poke:connected_above') ==true",
-					"full_e": "q.block_state('pfe:wall_e') ==true && q.block_state('poke:connected_above') ==true",
-					"full_w": "q.block_state('pfe:wall_w') ==true && q.block_state('poke:connected_above') ==true",
-					"middle_ns": "q.block_state('pfe:wall_n') ==true && q.block_state('pfe:wall_s') ==true && q.block_state('poke:connected_above') ==false",
-					"middle_ew": "q.block_state('pfe:wall_e') ==true && q.block_state('pfe:wall_w') ==true && q.block_state('poke:connected_above') ==false",
-					"middle_full_ns": "q.block_state('pfe:wall_n') ==true && q.block_state('pfe:wall_s') ==true && q.block_state('poke:connected_above') ==true",
-					"middle_full_ew": "q.block_state('pfe:wall_e') ==true && q.block_state('pfe:wall_w') ==true && q.block_state('poke:connected_above') ==true"
+					"post": "q.block_state('poke_pfe:post_bit') ==true",
+					"north": "q.block_state('pfe:wall_n') ==true&& q.block_state('poke_pfe:connected_above') ==false",
+					"south": "q.block_state('pfe:wall_s') ==true&& q.block_state('poke_pfe:connected_above') ==false",
+					"east": "q.block_state('pfe:wall_e') ==true&& q.block_state('poke_pfe:connected_above') ==false",
+					"west": "q.block_state('pfe:wall_w') ==true && q.block_state('poke_pfe:connected_above') ==false",
+					"full_n": "q.block_state('pfe:wall_n') ==true && q.block_state('poke_pfe:connected_above') ==true",
+					"full_s": "q.block_state('pfe:wall_s') ==true && q.block_state('poke_pfe:connected_above') ==true",
+					"full_e": "q.block_state('pfe:wall_e') ==true && q.block_state('poke_pfe:connected_above') ==true",
+					"full_w": "q.block_state('pfe:wall_w') ==true && q.block_state('poke_pfe:connected_above') ==true",
+					"middle_ns": "q.block_state('pfe:wall_n') ==true && q.block_state('pfe:wall_s') ==true && q.block_state('poke_pfe:connected_above') ==false",
+					"middle_ew": "q.block_state('pfe:wall_e') ==true && q.block_state('pfe:wall_w') ==true && q.block_state('poke_pfe:connected_above') ==false",
+					"middle_full_ns": "q.block_state('pfe:wall_n') ==true && q.block_state('pfe:wall_s') ==true && q.block_state('poke_pfe:connected_above') ==true",
+					"middle_full_ew": "q.block_state('pfe:wall_e') ==true && q.block_state('pfe:wall_w') ==true && q.block_state('poke_pfe:connected_above') ==true"
 				}
 			},
 			"minecraft:redstone_conductivity": {
@@ -113,7 +113,7 @@
 			"tag:minecraft:is_pickaxe_item_destructible": {},
 			"tag:pfe_wall": {},
 			"minecraft:light_dampening": 0,
-			"poke:cc_wall": {}
+			"poke_pfe:cc_wall": {}
 		},
 		"permutations": [
 			{ //None
@@ -378,7 +378,7 @@
 				}
 			},
 			{ //North & South w/o Above 
-				"condition": "q.block_state('pfe:wall_n')== true && q.block_state('pfe:wall_s')== true && q.block_state('pfe:wall_e')== false && q.block_state('pfe:wall_w')== false && q.block_state('poke:connected_above')== false",
+				"condition": "q.block_state('pfe:wall_n')== true && q.block_state('pfe:wall_s')== true && q.block_state('pfe:wall_e')== false && q.block_state('pfe:wall_w')== false && q.block_state('poke_pfe:connected_above')== false",
 				"components": {
 					"minecraft:selection_box": {
 						"origin": [
@@ -407,7 +407,7 @@
 				}
 			},
 			{ //East & West w/o Above
-				"condition": "q.block_state('pfe:wall_n')== false && q.block_state('pfe:wall_s')== false && q.block_state('pfe:wall_e')== true && q.block_state('pfe:wall_w')== true && q.block_state('poke:connected_above')== false",
+				"condition": "q.block_state('pfe:wall_n')== false && q.block_state('pfe:wall_s')== false && q.block_state('pfe:wall_e')== true && q.block_state('pfe:wall_w')== true && q.block_state('poke_pfe:connected_above')== false",
 				"components": {
 					"minecraft:selection_box": {
 						"origin": [
@@ -436,7 +436,7 @@
 				}
 			},
 			{ //North & South w/ Above 
-				"condition": "q.block_state('pfe:wall_n')== true && q.block_state('pfe:wall_s')== true && q.block_state('pfe:wall_e')== false && q.block_state('pfe:wall_w')== false && q.block_state('poke:connected_above')== true",
+				"condition": "q.block_state('pfe:wall_n')== true && q.block_state('pfe:wall_s')== true && q.block_state('pfe:wall_e')== false && q.block_state('pfe:wall_w')== false && q.block_state('poke_pfe:connected_above')== true",
 				"components": {
 					"minecraft:selection_box": {
 						"origin": [
@@ -465,7 +465,7 @@
 				}
 			},
 			{ //East & West w/ Above
-				"condition": "q.block_state('pfe:wall_n')== false && q.block_state('pfe:wall_s')== false && q.block_state('pfe:wall_e')== true && q.block_state('pfe:wall_w')== true && q.block_state('poke:connected_above')== true",
+				"condition": "q.block_state('pfe:wall_n')== false && q.block_state('pfe:wall_s')== false && q.block_state('pfe:wall_e')== true && q.block_state('pfe:wall_w')== true && q.block_state('poke_pfe:connected_above')== true",
 				"components": {
 					"minecraft:selection_box": {
 						"origin": [

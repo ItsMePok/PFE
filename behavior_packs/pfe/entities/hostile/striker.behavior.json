@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "poke:striker",
+			"identifier": "poke_pfe:striker",
 			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false,
@@ -32,7 +32,7 @@
 					"attack_radius": 15.0
 				},
 				"minecraft:shooter": {
-					"def": "poke:volt_arrow"
+					"def": "poke_pfe:volt_arrow"
 				},
 				"minecraft:environment_sensor": {
 					"triggers": [
@@ -151,7 +151,7 @@
 				"table": "loot_tables/entities/skeleton_gear.json"
 			},
 			"minecraft:shooter": {
-				"def": "poke:volt_arrow"
+				"def": "poke_pfe:volt_arrow"
 			},
 			"minecraft:environment_sensor": {
 				"triggers": [

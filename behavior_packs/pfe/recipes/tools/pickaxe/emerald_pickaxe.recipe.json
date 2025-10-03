@@ -1,17 +1,35 @@
 {
-	"format_version":"1.20.10",
-	"minecraft:recipe_shaped":{
-		"description":{"identifier":"poke:emerald_pickaxe"},
-		"tags":["crafting_table"],
-		"pattern":["CCC"," S "," S "],
-		"unlock":[
-			{"item":"stick"},
-			{"item":"emerald"}
-		],
-		"key":{
-			"C":{"item":"emerald"},
-			"S":{"item":"stick"}
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke_pfe:emerald_pickaxe"
 		},
-		"result":{"item":"poke:emerald_pickaxe"}
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"CCC",
+			" S ",
+			" S "
+		],
+		"unlock": [
+			{
+				"item": "stick"
+			},
+			{
+				"item": "emerald"
+			}
+		],
+		"key": {
+			"C": {
+				"item": "emerald"
+			},
+			"S": {
+				"item": "stick"
+			}
+		},
+		"result": {
+			"item": "poke_pfe:emerald_pickaxe"
+		}
 	}
 }

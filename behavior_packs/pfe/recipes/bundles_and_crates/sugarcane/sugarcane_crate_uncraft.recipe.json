@@ -5,14 +5,14 @@
             "crafting_table"
         ],
         "description": {
-            "identifier": "poke:sugarcane_crate_uncraft"
+            "identifier": "poke_pfe:sugarcane_crate_uncraft"
         },
         "unlock": [
             {
-                "item": "poke:empty_crate"
+                "item": "poke_pfe:empty_crate"
             },
             {
-                "item": "poke:sugarcane_crate"
+                "item": "poke_pfe:sugarcane_crate"
             }
         ],
         "pattern": [
@@ -20,16 +20,16 @@
         ],
         "key": {
             "#": {
-                "item": "poke:sugarcane_crate"
+                "item": "poke_pfe:sugarcane_crate"
             }
         },
         "result": [
             {
-                "item": "poke:bundled_sugarcane",
+                "item": "poke_pfe:bundled_sugarcane",
                 "count": 8
             },
             {
-                "item": "poke:empty_crate"
+                "item": "poke_pfe:empty_crate"
             }
         ]
     }

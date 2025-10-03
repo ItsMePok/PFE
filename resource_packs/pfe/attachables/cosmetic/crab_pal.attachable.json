@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "poke:crab_pal",
+			"identifier": "poke_pfe:crab_pal",
 			"render_controllers": [
 				"controller.render.armor"
 			],

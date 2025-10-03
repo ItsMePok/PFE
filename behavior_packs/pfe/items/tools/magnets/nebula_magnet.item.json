@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:nebula_magnet",
+			"identifier": "poke_pfe:nebula_magnet",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -15,7 +15,7 @@
 			"poke_pfe:upgradeable": {
 				"version": 1,
 				"upgrade_ids": [
-					"pfe:persistence"
+					"poke_pfe:persistence"
 				]
 			},
 			"minecraft:rarity": "epic",
@@ -32,15 +32,15 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core",
-							"poke:nebula_core",
-							"poke:nebula_block"
+							"poke_pfe:repair_core",
+							"poke_pfe:nebula_core",
+							"poke_pfe:nebula_block"
 						],
 						"repair_amount": "query.max_durability"
 					},
 					{
 						"items": [
-							"poke:nebula_ingot"
+							"poke_pfe:nebula_ingot"
 						],
 						"repair_amount": "query.max_durability*0.25"
 					}
@@ -49,7 +49,7 @@
 			"minecraft:hand_equipped": true,
 			"minecraft:tags": {
 				"tags": [
-					"pfe:is_magnet"
+					"poke_pfe:is_magnet"
 				]
 			},
 			"poke_pfe:run_command": {
@@ -64,7 +64,7 @@
 				"movement_modifier": 1
 			},
 			"minecraft:cooldown": {
-				"category": "poke:nebula_magnet",
+				"category": "poke_pfe:nebula_magnet",
 				"duration": 0.2
 			}
 		}

@@ -78,7 +78,7 @@
 			"tag:pfe": {},
 			"tag:minecraft:stone_tier_destructible": {},
 			"tag:minecraft:is_pickaxe_item_destructible": {},
-			"poke:cc_block_interact": {}
+			"poke_pfe:cc_block_interact": {}
 		},
 		"permutations": [
 			// Facing south

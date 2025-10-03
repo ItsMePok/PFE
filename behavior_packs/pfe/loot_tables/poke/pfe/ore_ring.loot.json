@@ -45,37 +45,37 @@
 				},
 				{
 					"type": "item",
-					"name": "poke:hellish_ingot",
+					"name": "poke_pfe:hellish_ingot",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:holy_ingot",
+					"name": "poke_pfe:holy_ingot",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:raw_onyx",
+					"name": "poke_pfe:raw_onyx",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:raw_holy",
+					"name": "poke_pfe:raw_holy",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:raw_shade",
+					"name": "poke_pfe:raw_shade",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:raw_hellish",
+					"name": "poke_pfe:raw_hellish",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:onyx_ingot",
+					"name": "poke_pfe:onyx_ingot",
 					"weight": 1
 				},
 				{
@@ -175,12 +175,12 @@
 				},
 				{
 					"type": "item",
-					"name": "poke:raw_cobalt",
+					"name": "poke_pfe:raw_cobalt",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:cobalt_ingot",
+					"name": "poke_pfe:cobalt_ingot",
 					"weight": 1
 				},
 				{
@@ -190,7 +190,7 @@
 				},
 				{
 					"type": "item",
-					"name": "poke:shade_ingot",
+					"name": "poke_pfe:shade_ingot",
 					"weight": 1
 				}
 			]

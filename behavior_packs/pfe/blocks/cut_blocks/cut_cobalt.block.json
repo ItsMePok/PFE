@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:cut_cobalt",
+			"identifier": "poke_pfe:cut_cobalt",
 			"menu_category": {
 				"category": "construction"
 			}

@@ -1,7 +1,7 @@
 {
     "pools": [
         {
-            "rolls":1,
+            "rolls": 1,
             "entries": [
                 {
                     "type": "empty",
@@ -9,9 +9,17 @@
                 },
                 {
                     "type": "item",
-                    "name": "poke:cheese",
+                    "name": "poke_pfe:cheese",
                     "weight": 1,
-                    "functions": [{"function": "looting_enchant","count": {"max": 1,"min": 0}}]
+                    "functions": [
+                        {
+                            "function": "looting_enchant",
+                            "count": {
+                                "max": 1,
+                                "min": 0
+                            }
+                        }
+                    ]
                 }
             ]
         }

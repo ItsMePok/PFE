@@ -2,9 +2,9 @@
 	"format_version": "1.21.110",
 	"minecraft:structure_template_feature": {
 		"description": {
-			"identifier": "poke:demonic_allay_dungeon.feature"
+			"identifier": "poke_pfe:demonic_allay_dungeon.feature"
 		},
-		"structure_name": "poke:demonic_allay_dungeon",
+		"structure_name": "poke_pfe:demonic_allay_dungeon",
 		"adjustment_radius": 16,
 		"facing_direction": "random",
 		"constraints": {

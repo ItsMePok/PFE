@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "poke:void_arrow",
+			"identifier": "poke_pfe:void_arrow",
 			"is_spawnable": false,
 			"is_summonable": true,
 			"is_experimental": false,

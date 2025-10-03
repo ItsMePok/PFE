@@ -2,7 +2,7 @@
 	"format_version": "1.8.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "poke:retro_llama",
+			"identifier": "poke_pfe:retro_llama",
 			"min_engine_version": "1.8.0",
 			"materials": {
 				"default": "llama"

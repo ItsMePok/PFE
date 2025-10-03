@@ -8,68 +8,68 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "poke:spawn_zombken",
+					"name": "poke_pfe:spawn_zombken",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:electric_component",
+					"name": "poke_pfe:electric_component",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:volt_arrow",
+					"name": "poke_pfe:volt_arrow",
 					"weight": 2
 				},
 				{
 					"type": "item",
-					"name": "poke:cassette_key",
+					"name": "poke_pfe:cassette_key",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:cassette_danny",
+					"name": "poke_pfe:cassette_danny",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:copper_token",
+					"name": "poke_pfe:copper_token",
 					"weight": 2
 				},
 				{
 					"type": "item",
-					"name": "poke:iron_token",
+					"name": "poke_pfe:iron_token",
 					"weight": 2
 				},
 				{
 					"type": "item",
-					"name": "poke:turnip",
+					"name": "poke_pfe:turnip",
 					"weight": 2
 				},
 				{
 					"type": "item",
-					"name": "poke:apple_juice",
+					"name": "poke_pfe:apple_juice",
 					"weight": 2
 				},
 				{
 					"type": "item",
-					"name": "poke:bundled_feathers",
+					"name": "poke_pfe:bundled_feathers",
 					"weight": 2
 				},
 				{
 					"type": "item",
-					"name": "poke:carved_melon_mask",
+					"name": "poke_pfe:carved_melon_mask",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:boss_event_bounty",
+					"name": "poke_pfe:boss_event_bounty",
 					"weight": 1
 				},
 				{
-						"type": "item",
-						"name": "poke:pfe-snake_pottery_sherd",
-						"weight": 1
+					"type": "item",
+					"name": "poke_pfe:pfe-snake_pottery_sherd",
+					"weight": 1
 				}
 			]
 		}

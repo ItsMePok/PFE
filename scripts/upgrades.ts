@@ -21,8 +21,8 @@ class PFEUpgrades {
 }
 type PFEUpgradeableComponentInfo = {
   version: number | 1
-  upgrade_ids?: string[] | ["pfe:persistence"] | "custom",
-  dynamic_property?: string | "pfe:upgrades",
+  upgrade_ids?: string[] | ["poke_pfe:persistence"] | "custom",
+  dynamic_property?: string | "poke_pfe:upgrades",
   sneak_interact_opens_ui?: boolean | false
 }
 class PFEUpgradeableComponent {
@@ -41,7 +41,7 @@ function ParsePFEUpgradeComponent(item: ItemStack, player: Player, component: PF
   const PFEUpgrade = new PFEUpgrades()
   const defaultUpgrades = [JSON.parse(JSON.stringify(PFEUpgrade.persistence)), PFEUpgrade.capacity, PFEUpgrade.flaming]
   let allUpgrades = customUpgrades ? defaultUpgrades.concat(customUpgrades) : defaultUpgrades
-  const compressedUpgrades = <PokeUpgradeUIConfig | undefined>JSON.parse(item.getDynamicProperty(component.dynamic_property ?? "pfe:upgrades")?.toString() ?? JSON.stringify([]))
+  const compressedUpgrades = <PokeUpgradeUIConfig | undefined>JSON.parse(item.getDynamicProperty(component.dynamic_property ?? "poke_pfe:upgrades")?.toString() ?? JSON.stringify([]))
   //console.warn(JSON.stringify(compressedUpgrades))
   if (component.upgrade_ids) {
     for (let upgrade_id of component?.upgrade_ids) {
@@ -59,11 +59,11 @@ function ParsePFEUpgradeComponent(item: ItemStack, player: Player, component: PF
     upgrades.push(persistenceUpgrade)
   }
   let parsedUpgradeInfo: PokeUpgradeUIConfig = {
-    dynamicProperty: component.dynamic_property ?? "pfe:upgrades",
+    dynamicProperty: component.dynamic_property ?? "poke_pfe:upgrades",
     id: "poke_pfe:upgradable_component",
     v: 1,
     upgrades: upgrades,
-    compressedUpgrades: JSON.parse(item.getDynamicProperty(component.dynamic_property ?? "pfe:upgrades")?.toString() ?? "[]") ?? undefined
+    compressedUpgrades: JSON.parse(item.getDynamicProperty(component.dynamic_property ?? "poke_pfe:upgrades")?.toString() ?? "[]") ?? undefined
   }
   return parsedUpgradeInfo
 }
@@ -120,8 +120,8 @@ function PokeUpgradeUI(player: Player, item: ItemStack, config: PokeUpgradeUICon
   if (debug) {
     UI.button({ translate: `Debug` }, `textures/poke/common/debug`)
   }
-  UI.button({ translate: `translation.poke:goBack` }, `textures/poke/common/left_arrow`)
-  UI.title({ translate: `poke_pfe.upgradeTitle`, with: [item.nameTag ?? `%poke_pfe.${item.typeId.replace(`poke:`, ``).replace(`poke_pfe:`, ``)}`] })
+  UI.button({ translate: `translation.poke_pfe:goBack` }, `textures/poke/common/left_arrow`)
+  UI.title({ translate: `poke_pfe.upgradeTitle`, with: [item.nameTag ?? `%poke_pfe.${item.typeId.replace(`poke_pfe:`, ``).replace(`poke_pfe:`, ``)}`] })
 
   UI.show(player).then(response => {
     let selection = 0
@@ -231,7 +231,7 @@ class PFEVeinMining {
           level: 0,
           maxLevel: 5,
           upgradeAdditive: false,
-          upgradeItem: `poke:upgrade_core`,
+          upgradeItem: `poke_pfe:upgrade_core`,
           upgradeItemName: `%poke_pfe.upgrade_core`,
           upgradeName: `%poke_pfe.upgrade_core`,
           icon: {
@@ -343,7 +343,7 @@ function PersistenceUpgrade(item: ItemStack, player: Player, upgradeConfig: Poke
   player.getComponent(EntityComponentTypes.Equippable)?.setEquipment(EquipmentSlot.Mainhand, item)
 }
 const PFEPersistenceCoreDefault: PFEItemUpgradeInfo = {
-  id: "pfe:persistence",
+  id: "poke_pfe:persistence",
   upgradeItem: `poke_pfe:persistence_core`,
   icon: { default: `textures/poke/pfe/persistence_core`, cantUpgrade: `textures/poke/pfe/persistence_core_gs` },
   upgradeName: `%translation.poke_pfe.persistence`,
@@ -353,7 +353,7 @@ const PFEPersistenceCoreDefault: PFEItemUpgradeInfo = {
   maxLevel: 1
 }
 const PFEFlamingCoreDefault: PFEItemUpgradeInfo = {
-  id: "pfe:flaming",
+  id: "poke_pfe:flaming",
   upgradeItem: `poke_pfe:flaming_core`,
   icon: { default: `textures/poke/pfe/flaming_core`, cantUpgrade: `textures/poke/pfe/flaming_core_gs` },
   upgradeName: `%translation.poke_pfe.flaming`,
@@ -363,8 +363,8 @@ const PFEFlamingCoreDefault: PFEItemUpgradeInfo = {
   maxLevel: 1
 }
 const PFECapacityCoreDefault: PFEItemUpgradeInfo = {
-  id: "pfe:capacity",
-  upgradeItem: `poke:capacity_core`,
+  id: "poke_pfe:capacity",
+  upgradeItem: `poke_pfe:capacity_core`,
   icon: { default: `textures/poke/pfe/capacity_core`, cantUpgrade: `textures/poke/pfe/capacity_core_gs` },
   upgradeName: `%translation.poke_pfe.capacity`,
   upgradeItemName: `%poke_pfe.capacity_core`,

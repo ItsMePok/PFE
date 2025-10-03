@@ -2,12 +2,12 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_furnace": {
 		"description": {
-			"identifier": "poke:raw_onyx_block_smelt"
+			"identifier": "poke_pfe:raw_onyx_block_smelt"
 		},
 		"tags": [
 			"blast_furnace"
 		],
-		"input": "poke:raw_onyx_block",
-		"output": "poke:onyx_block"
+		"input": "poke_pfe:raw_onyx_block",
+		"output": "poke_pfe:onyx_block"
 	}
 }

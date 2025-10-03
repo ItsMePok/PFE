@@ -2,23 +2,23 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "poke:medic_nugget"
+			"identifier": "poke_pfe:medic_nugget"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:medic_ingot"
+				"item": "poke_pfe:medic_ingot"
 			}
 		],
 		"ingredients": [
 			{
-				"item": "poke:medic_ingot"
+				"item": "poke_pfe:medic_ingot"
 			}
 		],
 		"result": {
-			"item": "poke:medic_nugget",
+			"item": "poke_pfe:medic_nugget",
 			"count": 9
 		},
 		"group": "nuggets"

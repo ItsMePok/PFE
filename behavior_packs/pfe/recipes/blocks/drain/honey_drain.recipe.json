@@ -6,12 +6,12 @@
     },
     "unlock": [
       {
-        "item": "poke:honey_bricks"
+        "item": "poke_pfe:honey_bricks"
       }
     ],
     "key": {
       "X": {
-        "item": "poke:honey_bricks"
+        "item": "poke_pfe:honey_bricks"
       }
     },
     "result": {
@@ -23,7 +23,7 @@
       " X ",
       "X X"
     ],
-    "group": "poke:drain",
+    "group": "poke_pfe:drain",
     "tags": [
       "crafting_table"
     ]

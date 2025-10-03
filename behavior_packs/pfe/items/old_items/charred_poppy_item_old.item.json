@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:charred_poppy_item",
+			"identifier": "poke_pfe:charred_poppy_item",
 			"menu_category": {
 				"category": "none"
 			}

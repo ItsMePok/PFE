@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:dodge_spell",
+			"identifier": "poke_pfe:dodge_spell",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -18,9 +18,9 @@
 			},
 			"minecraft:cooldown": {
 				"duration": 1,
-				"category": "poke:dodge_spell"
+				"category": "poke_pfe:dodge_spell"
 			},
-			"poke:cc_dodge": {}
+			"poke_pfe:cc_dodge": {}
 		}
 	}
 }

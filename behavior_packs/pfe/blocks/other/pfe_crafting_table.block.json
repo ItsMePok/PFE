@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:pfe_crafting_table",
+			"identifier": "poke_pfe:pfe_crafting_table",
 			"menu_category": {
 				"category": "none"
 			}

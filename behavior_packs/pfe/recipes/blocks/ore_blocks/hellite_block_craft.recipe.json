@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:hellish_block_craft"
+			"identifier": "poke_pfe:hellish_block_craft"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,16 +14,16 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:hellish_ingot"
+				"item": "poke_pfe:hellish_ingot"
 			}
 		],
 		"key": {
 			"#": {
-				"item": "poke:hellish_ingot"
+				"item": "poke_pfe:hellish_ingot"
 			}
 		},
 		"result": {
-			"item": "poke:hellish_block"
+			"item": "poke_pfe:hellish_block"
 		}
 	}
 }

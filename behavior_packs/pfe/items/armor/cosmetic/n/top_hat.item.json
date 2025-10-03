@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:top_hat",
+			"identifier": "poke_pfe:top_hat",
 			"menu_category": {
 				"category": "equipment"
 			}

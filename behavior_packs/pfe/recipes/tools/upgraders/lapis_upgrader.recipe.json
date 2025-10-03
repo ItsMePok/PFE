@@ -2,7 +2,7 @@
     "format_version": "1.20.60",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "poke:lapis_upgrader"
+            "identifier": "poke_pfe:lapis_upgrader"
         },
         "tags": [
             "crafting_table"
@@ -18,7 +18,7 @@
                 "item": "lapis_lazuli"
             },
             {
-                "item": "poke:diamond_upgrade_core"
+                "item": "poke_pfe:diamond_upgrade_core"
             }
         ],
         "key": {
@@ -26,14 +26,14 @@
                 "item": "lapis_block"
             },
             "Y": {
-                "item": "poke:diamond_upgrade_core"
+                "item": "poke_pfe:diamond_upgrade_core"
             },
             "Z": {
                 "item": "stick"
             }
         },
         "result": {
-            "item": "poke:lapis_upgrader"
+            "item": "poke_pfe:lapis_upgrader"
         }
     }
 }

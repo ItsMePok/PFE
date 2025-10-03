@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:molten_helmet",
+			"identifier": "poke_pfe:molten_helmet",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -34,14 +34,14 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core",
-							"poke:ember_block"
+							"poke_pfe:repair_core",
+							"poke_pfe:ember_block"
 						],
 						"repair_amount": "query.max_durability"
 					},
 					{
 						"items": [
-							"poke:molten_slimeball"
+							"poke_pfe:molten_slimeball"
 						],
 						"repair_amount": "query.max_durability*0.25"
 					}

@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:kill_quest_6"
+			"identifier": "poke_pfe:kill_quest_6"
 		},
 		"components": {
 			"minecraft:display_name": {
@@ -11,8 +11,8 @@
 			"minecraft:icon": "poke_pfe_kill_quest",
 			"minecraft:tags": {
 				"tags": [
-					"pfe:is_deprecated",
-					"pfe:old_kill_quest"
+					"poke_pfe:is_deprecated",
+					"poke_pfe:old_kill_quest"
 				]
 			}
 		}

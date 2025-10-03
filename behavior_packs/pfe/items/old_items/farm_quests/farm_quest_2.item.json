@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:farm_quest_2"
+			"identifier": "poke_pfe:farm_quest_2"
 		},
 		"components": {
 			"minecraft:display_name": {
@@ -11,8 +11,8 @@
 			"minecraft:icon": "poke_pfe_farm_quest",
 			"minecraft:tags": {
 				"tags": [
-					"pfe:is_deprecated",
-					"pfe:old_farm_quest"
+					"poke_pfe:is_deprecated",
+					"poke_pfe:old_farm_quest"
 				]
 			}
 		}

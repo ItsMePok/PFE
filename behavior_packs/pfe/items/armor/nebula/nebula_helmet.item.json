@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:nebula_helmet",
+			"identifier": "poke_pfe:nebula_helmet",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -33,20 +33,20 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core",
-							"poke:nebula_block"
+							"poke_pfe:repair_core",
+							"poke_pfe:nebula_block"
 						],
 						"repair_amount": "query.max_durability"
 					},
 					{
 						"items": [
-							"poke:nebula_ingot"
+							"poke_pfe:nebula_ingot"
 						],
 						"repair_amount": "query.max_durability*0.25"
 					},
 					{
 						"items": [
-							"poke:nebula_nugget"
+							"poke_pfe:nebula_nugget"
 						],
 						"repair_amount": "query.max_durability*0.028"
 					}

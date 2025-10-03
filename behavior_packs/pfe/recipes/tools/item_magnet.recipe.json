@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:item_magnet"
+			"identifier": "poke_pfe:item_magnet"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,13 +14,13 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:demonic_ingot"
+				"item": "poke_pfe:demonic_ingot"
 			},
 			{
-				"item": "poke:magnet_core"
+				"item": "poke_pfe:magnet_core"
 			},
 			{
-				"item": "poke:cobalt_ingot"
+				"item": "poke_pfe:cobalt_ingot"
 			}
 		],
 		"key": {
@@ -28,17 +28,17 @@
 				"item": "iron_ingot"
 			},
 			"C": {
-				"item": "poke:magnet_core"
+				"item": "poke_pfe:magnet_core"
 			},
 			"D": {
-				"item": "poke:demonic_ingot"
+				"item": "poke_pfe:demonic_ingot"
 			},
 			"H": {
-				"item": "poke:cobalt_ingot"
+				"item": "poke_pfe:cobalt_ingot"
 			}
 		},
 		"result": {
-			"item": "poke:item_magnet"
+			"item": "poke_pfe:item_magnet"
 		}
 	}
 }

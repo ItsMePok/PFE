@@ -2,26 +2,26 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:cut_hellish_slab_to_cut_hellish"
+			"identifier": "poke_pfe:cut_hellish_slab_to_cut_hellish"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:cut_hellish_slab"
+				"item": "poke_pfe:cut_hellish_slab"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:cut_hellish_slab"
+				"item": "poke_pfe:cut_hellish_slab"
 			}
 		},
 		"pattern": [
 			"CC"
 		],
 		"result": {
-			"item": "poke:cut_hellish"
+			"item": "poke_pfe:cut_hellish"
 		},
 		"priority": 2
 	}

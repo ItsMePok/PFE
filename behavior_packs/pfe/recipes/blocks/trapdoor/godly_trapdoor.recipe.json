@@ -2,22 +2,22 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:godly_trapdoor"
+			"identifier": "poke_pfe:godly_trapdoor"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:godly_ingot"
+				"item": "poke_pfe:godly_ingot"
 			},
 			{
-				"item": "poke:godly_block"
+				"item": "poke_pfe:godly_block"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:godly_ingot"
+				"item": "poke_pfe:godly_ingot"
 			}
 		},
 		"pattern": [
@@ -25,7 +25,7 @@
 			"CCC"
 		],
 		"result": {
-			"item": "poke:godly_trapdoor",
+			"item": "poke_pfe:godly_trapdoor",
 			"count": 4
 		}
 	}

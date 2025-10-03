@@ -2,13 +2,13 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_furnace": {
 		"description": {
-			"identifier": "poke:cracked_death_bricks"
+			"identifier": "poke_pfe:cracked_death_bricks"
 		},
 		"tags": [
 			"furnace",
 			"blast_furnace"
 		],
-		"input": "poke:death_bricks",
-		"output": "poke:cracked_death_bricks"
+		"input": "poke_pfe:death_bricks",
+		"output": "poke_pfe:cracked_death_bricks"
 	}
 }

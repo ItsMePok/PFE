@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "poke:listener",
+			"identifier": "poke_pfe:listener",
 			"textures": {
 				"default": "textures/poke/pfe/listener_entity" //2
 			},

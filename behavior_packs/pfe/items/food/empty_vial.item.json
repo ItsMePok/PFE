@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:empty_vial",
+			"identifier": "poke_pfe:empty_vial",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -23,7 +23,7 @@
 			},
 			"minecraft:cooldown": {
 				"duration": 0.25,
-				"category": "poke:empty_vial"
+				"category": "poke_pfe:empty_vial"
 			}
 		}
 	}

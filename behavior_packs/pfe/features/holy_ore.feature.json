@@ -2,13 +2,13 @@
 	"format_version": "1.21.110",
 	"minecraft:ore_feature": {
 		"description": {
-			"identifier": "poke:holy_ore.feature"
+			"identifier": "poke_pfe:holy_ore.feature"
 		},
 		"count": 5,
 		"replace_rules": [
 			{
 				"places_block": {
-					"name": "poke:holy_ore",
+					"name": "poke_pfe:holy_ore",
 					"states": {}
 				},
 				"may_replace": [
@@ -42,11 +42,11 @@
 				"may_replace": [
 					"deepslate"
 				],
-				"places_block": "poke:deepslate_holy_ore"
+				"places_block": "poke_pfe:deepslate_holy_ore"
 			},
 			{
 				"places_block": {
-					"name": "poke:end_holy_ore",
+					"name": "poke_pfe:end_holy_ore",
 					"states": {}
 				},
 				"may_replace": [

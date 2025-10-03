@@ -8,7 +8,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "poke:copper_token"
+					"name": "poke_pfe:copper_token"
 				}
 			]
 		},
@@ -18,12 +18,28 @@
 				{
 					"type": "item",
 					"name": "carrot",
-                    "functions": [{"function": "looting_enchant","count": {"max": 3,"min": 1}}]
+					"functions": [
+						{
+							"function": "looting_enchant",
+							"count": {
+								"max": 3,
+								"min": 1
+							}
+						}
+					]
 				},
 				{
 					"type": "item",
 					"name": "coal",
-                    "functions": [{"function": "looting_enchant","count": {"max": 3,"min": 1}}]
+					"functions": [
+						{
+							"function": "looting_enchant",
+							"count": {
+								"max": 3,
+								"min": 1
+							}
+						}
+					]
 				}
 			]
 		},
@@ -33,12 +49,28 @@
 				{
 					"type": "item",
 					"name": "snow",
-                    "functions": [{"function": "looting_enchant","count": {"max": 3,"min": 1}}]
+					"functions": [
+						{
+							"function": "looting_enchant",
+							"count": {
+								"max": 3,
+								"min": 1
+							}
+						}
+					]
 				},
 				{
 					"type": "item",
 					"name": "snow_layer",
-                    "functions": [{"function": "looting_enchant","count": {"max": 3,"min": 1}}]
+					"functions": [
+						{
+							"function": "looting_enchant",
+							"count": {
+								"max": 3,
+								"min": 1
+							}
+						}
+					]
 				}
 			]
 		},
@@ -47,9 +79,14 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "poke:top_hat","weight": 1
+					"name": "poke_pfe:top_hat",
+					"weight": 1
 				},
-				{"type":"item","name":"poke:copper_token","weight": 49}
+				{
+					"type": "item",
+					"name": "poke_pfe:copper_token",
+					"weight": 49
+				}
 			]
 		}
 	]

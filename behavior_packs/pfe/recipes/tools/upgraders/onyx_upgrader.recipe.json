@@ -2,7 +2,7 @@
     "format_version": "1.20.60",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "poke:onyx_upgrader"
+            "identifier": "poke_pfe:onyx_upgrader"
         },
         "tags": [
             "crafting_table"
@@ -15,28 +15,28 @@
         ],
         "unlock": [
             {
-                "item": "poke:raw_onyx"
+                "item": "poke_pfe:raw_onyx"
             },
             {
-                "item": "poke:diamond_upgrade_core"
+                "item": "poke_pfe:diamond_upgrade_core"
             }
         ],
         "key": {
             "X": {
-                "item": "poke:onyx_block"
+                "item": "poke_pfe:onyx_block"
             },
             "W": {
-                "item": "poke:onyx_block"
+                "item": "poke_pfe:onyx_block"
             },
             "Y": {
-                "item": "poke:diamond_upgrade_core"
+                "item": "poke_pfe:diamond_upgrade_core"
             },
             "Z": {
-                "item": "poke:onyx_shaft"
+                "item": "poke_pfe:onyx_shaft"
             }
         },
         "result": {
-            "item": "poke:onyx_upgrader"
+            "item": "poke_pfe:onyx_upgrader"
         }
     }
 }

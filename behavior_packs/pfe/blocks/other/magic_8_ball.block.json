@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:magic_8_ball",
+			"identifier": "poke_pfe:magic_8_ball",
 			"menu_category": {
 				"category": "items"
 			},
@@ -72,7 +72,7 @@
 			"tag:stone_pick_diggable": {},
 			"tag:minecraft:is_pickaxe_item_destructible": {},
 			"minecraft:map_color": "#0c0b0c",
-			"poke:cc_8ball": {}
+			"poke_pfe:cc_8ball": {}
 		},
 		"permutations": [
 			{

@@ -4,7 +4,7 @@
 		"description": {
 			"identifier": "poke_pfe:elevator_block"
 		},
-		"group": "poke:automation",
+		"group": "poke_pfe:automation",
 		"tags": [
 			"crafting_table"
 		],
@@ -13,10 +13,10 @@
 				"tag": "minecraft:stone_crafting_materials"
 			},
 			"A": {
-				"item": "poke:antenna"
+				"item": "poke_pfe:antenna"
 			},
 			"V": {
-				"item": "poke:void_ingot"
+				"item": "poke_pfe:void_ingot"
 			},
 			"E": {
 				"item": "minecraft:ender_pearl"
@@ -30,10 +30,10 @@
 				"tag": "minecraft:stone_crafting_materials"
 			},
 			{
-				"item": "poke:antenna"
+				"item": "poke_pfe:antenna"
 			},
 			{
-				"item": "poke:void_ingot"
+				"item": "poke_pfe:void_ingot"
 			},
 			{
 				"item": "minecraft:ender_pearl"

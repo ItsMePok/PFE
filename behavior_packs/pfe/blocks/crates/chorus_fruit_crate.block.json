@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:chorus_fruit_crate"
+			"identifier": "poke_pfe:chorus_fruit_crate"
 		},
 		"components": {
 			"minecraft:display_name": "%poke_pfe.chorus_fruit_crate\n%poke_pfe.tag",

@@ -2,13 +2,13 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_furnace": {
 		"description": {
-			"identifier": "poke:raw_galaxy_smelt"
+			"identifier": "poke_pfe:raw_galaxy_smelt"
 		},
 		"tags": [
 			"furnace",
 			"blast_furnace"
 		],
-		"input": "poke:raw_galaxy",
-		"output": "poke:galaxy_ingot"
+		"input": "poke_pfe:raw_galaxy",
+		"output": "poke_pfe:galaxy_ingot"
 	}
 }

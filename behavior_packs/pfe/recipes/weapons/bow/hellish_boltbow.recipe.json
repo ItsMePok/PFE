@@ -2,14 +2,14 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "poke:hellish_boltbow"
+			"identifier": "poke_pfe:hellish_boltbow"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:hellish_crossbow"
+				"item": "poke_pfe:hellish_crossbow"
 			},
 			{
 				"item": "arrow"
@@ -17,14 +17,14 @@
 		],
 		"ingredients": [
 			{
-				"item": "poke:hellish_crossbow"
+				"item": "poke_pfe:hellish_crossbow"
 			},
 			{
-				"item": "poke:upgrade_core"
+				"item": "poke_pfe:upgrade_core"
 			}
 		],
 		"result": {
-			"item": "poke:hellish_boltbow"
+			"item": "poke_pfe:hellish_boltbow"
 		}
 	}
 }

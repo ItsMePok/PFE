@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:night_vision_goggles",
+			"identifier": "poke_pfe:night_vision_goggles",
 			"menu_category": {
 				"category": "equipment"
 			}

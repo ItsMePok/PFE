@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:diamond_token",
+			"identifier": "poke_pfe:diamond_token",
 			"menu_category": {
 				"category": "items"
 			}

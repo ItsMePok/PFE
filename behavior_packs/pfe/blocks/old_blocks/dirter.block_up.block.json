@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:dirter_up"
+			"identifier": "poke_pfe:dirter_up"
 		},
 		"components": {
 			"poke_pfe:transform_block": {

@@ -1,9 +1,19 @@
 {
-	"format_version":"1.16.100",
-	"minecraft:recipe_shapeless":{
-		"description":{"identifier":"poke:onyx_b_w_sc_b"},
-		"tags":["stonecutter"],
-		"ingredients":[{"item":"poke:onyx_bricks"}],
-		"result":{"item":"poke:onyx_brick_wall"}
+	"format_version": "1.16.100",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "poke_pfe:onyx_b_w_sc_b"
+		},
+		"tags": [
+			"stonecutter"
+		],
+		"ingredients": [
+			{
+				"item": "poke_pfe:onyx_bricks"
+			}
+		],
+		"result": {
+			"item": "poke_pfe:onyx_brick_wall"
+		}
 	}
 }

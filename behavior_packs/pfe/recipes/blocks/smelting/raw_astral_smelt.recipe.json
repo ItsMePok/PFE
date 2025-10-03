@@ -2,13 +2,13 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_furnace": {
 		"description": {
-			"identifier": "poke:raw_astral_smelt"
+			"identifier": "poke_pfe:raw_astral_smelt"
 		},
 		"tags": [
 			"furnace",
 			"blast_furnace"
 		],
-		"input": "poke:raw_astral",
-		"output": "poke:astral_ingot"
+		"input": "poke_pfe:raw_astral",
+		"output": "poke_pfe:astral_ingot"
 	}
 }

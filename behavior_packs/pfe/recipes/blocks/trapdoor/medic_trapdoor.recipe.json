@@ -2,22 +2,22 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:medic_trapdoor"
+			"identifier": "poke_pfe:medic_trapdoor"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:medic_ingot"
+				"item": "poke_pfe:medic_ingot"
 			},
 			{
-				"item": "poke:medic_block"
+				"item": "poke_pfe:medic_block"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:medic_ingot"
+				"item": "poke_pfe:medic_ingot"
 			}
 		},
 		"pattern": [
@@ -25,7 +25,7 @@
 			"CCC"
 		],
 		"result": {
-			"item": "poke:medic_trapdoor",
+			"item": "poke_pfe:medic_trapdoor",
 			"count": 4
 		}
 	}

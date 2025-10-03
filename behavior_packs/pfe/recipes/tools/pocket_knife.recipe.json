@@ -2,7 +2,7 @@
     "format_version": "1.20.60",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "poke:pocket_knife"
+            "identifier": "poke_pfe:pocket_knife"
         },
         "tags": [
             "crafting_table"
@@ -14,13 +14,13 @@
         ],
         "unlock": [
             {
-                "item": "poke:cobalt_ingot"
+                "item": "poke_pfe:cobalt_ingot"
             },
             {
                 "item": "iron_ingot"
             },
             {
-                "item": "poke:carved_melon"
+                "item": "poke_pfe:carved_melon"
             },
             {
                 "item": "melon_slice"
@@ -34,11 +34,11 @@
                 "item": "iron_ingot"
             },
             "C": {
-                "item": "poke:cobalt_ingot"
+                "item": "poke_pfe:cobalt_ingot"
             }
         },
         "result": {
-            "item": "poke:pocket_knife"
+            "item": "poke_pfe:pocket_knife"
         }
     }
 }

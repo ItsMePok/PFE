@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "poke:duck",
+			"identifier": "poke_pfe:duck",
 			"materials": {
 				"default": "entity_alphatest",
 				"legs": "entity_alphatest" //2

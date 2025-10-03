@@ -2,7 +2,7 @@
     "format_version": "1.20.60",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "poke:dye_unmixer"
+            "identifier": "poke_pfe:dye_unmixer"
         },
         "tags": [
             "crafting_table"
@@ -14,43 +14,43 @@
         ],
         "unlock": [
             {
-                "item": "poke:pocket_knife"
+                "item": "poke_pfe:pocket_knife"
             },
             {
-                "item": "poke:plastic"
+                "item": "poke_pfe:plastic"
             },
             {
-                "item": "poke:electric_component"
+                "item": "poke_pfe:electric_component"
             },
             {
                 "item": "armor_stand"
             },
             {
-                "item": "poke:red_button"
+                "item": "poke_pfe:red_button"
             }
         ],
         "key": {
             "P": {
-                "item": "poke:plastic"
+                "item": "poke_pfe:plastic"
             },
             "B": {
-                "item": "poke:banished_star_x2"
+                "item": "poke_pfe:banished_star_x2"
             },
             "H": {
-                "item": "poke:holy_ingot"
+                "item": "poke_pfe:holy_ingot"
             },
             "C": {
                 "item": "cauldron"
             },
             "O": {
-                "item": "poke:onyx_ingot"
+                "item": "poke_pfe:onyx_ingot"
             },
             "E": {
-                "item": "poke:electric_component"
+                "item": "poke_pfe:electric_component"
             }
         },
         "result": {
-            "item": "poke:dye_unmixer"
+            "item": "poke_pfe:dye_unmixer"
         }
     }
 }

@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:astral_boots",
+			"identifier": "poke_pfe:astral_boots",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -37,20 +37,20 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core",
-							"poke:astral_block"
+							"poke_pfe:repair_core",
+							"poke_pfe:astral_block"
 						],
 						"repair_amount": "query.max_durability"
 					},
 					{
 						"items": [
-							"poke:astral_ingot"
+							"poke_pfe:astral_ingot"
 						],
 						"repair_amount": "query.max_durability*0.25"
 					},
 					{
 						"items": [
-							"poke:astral_nugget"
+							"poke_pfe:astral_nugget"
 						],
 						"repair_amount": "query.max_durability*0.028"
 					}

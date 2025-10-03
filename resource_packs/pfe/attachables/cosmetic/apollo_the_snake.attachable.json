@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "poke:apollo_the_snake",
+			"identifier": "poke_pfe:apollo_the_snake",
 			"render_controllers": [
 				"controller.render.armor"
 			],

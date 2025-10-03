@@ -2,12 +2,12 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:cobble_gen", //Cobbler
+			"identifier": "poke_pfe:cobble_gen", //Cobbler
 			"menu_category": {
 				"category": "items"
 			},
 			"states": {
-				"pfe:active": [
+				"poke_pfe:active": [
 					0,
 					1
 				]
@@ -67,7 +67,7 @@
 					20
 				]
 			},
-			"poke:cc_cobbler": {}
+			"poke_pfe:cc_cobbler": {}
 		}
 	}
 }

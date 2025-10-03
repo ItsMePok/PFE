@@ -2,13 +2,13 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_furnace": {
 		"description": {
-			"identifier": "poke:galaxy_ore"
+			"identifier": "poke_pfe:galaxy_ore"
 		},
 		"tags": [
 			"furnace",
 			"blast_furnace"
 		],
-		"input": "poke:galaxy_ore",
-		"output": "poke:galaxy_ingot"
+		"input": "poke_pfe:galaxy_ore",
+		"output": "poke_pfe:galaxy_ingot"
 	}
 }

@@ -2,19 +2,19 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:cut_onyx_crafting_table"
+			"identifier": "poke_pfe:cut_onyx_crafting_table"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:onyx_ingot"
+				"item": "poke_pfe:onyx_ingot"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:onyx_block"
+				"item": "poke_pfe:onyx_block"
 			}
 		},
 		"pattern": [
@@ -22,7 +22,7 @@
 			"CC"
 		],
 		"result": {
-			"item": "poke:cut_onyx",
+			"item": "poke_pfe:cut_onyx",
 			"count": 12
 		},
 		"priority": 0

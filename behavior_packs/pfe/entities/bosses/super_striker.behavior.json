@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "poke:super_striker",
+			"identifier": "poke_pfe:super_striker",
 			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false,
@@ -36,7 +36,7 @@
 					"burst_shots": 3
 				},
 				"minecraft:shooter": {
-					"def": "poke:volt_arrow"
+					"def": "poke_pfe:volt_arrow"
 				},
 				"minecraft:environment_sensor": {
 					"triggers": [
@@ -54,7 +54,7 @@
 								"test": "has_equipment",
 								"subject": "self",
 								"operator": "!=",
-								"value": "poke:void_crossbow"
+								"value": "poke_pfe:void_crossbow"
 							},
 							"event": "minecraft:melee_mode"
 						}
@@ -104,7 +104,7 @@
 					"time": 1800,
 					"looping": true,
 					"time_down_event": {
-						"event": "poke:despawn",
+						"event": "poke_pfe:despawn",
 						"target": "self"
 					}
 				}
@@ -116,7 +116,7 @@
 		"components": {
 			"minecraft:boss": {
 				"hud_range": 55,
-				"name": "entity.poke:super_striker.name",
+				"name": "entity.poke_pfe:super_striker.name",
 				"should_darken_sky": false
 			},
 			"minecraft:scale": {
@@ -125,7 +125,7 @@
 			"minecraft:behavior.charge_held_item": {
 				"priority": 3,
 				"items": [
-					"poke:volt_arrow",
+					"poke_pfe:volt_arrow",
 					"minecraft:arrow"
 				]
 			},
@@ -165,7 +165,7 @@
 					"undead",
 					"monster",
 					"mob",
-					"pfe:boss"
+					"poke_pfe:boss"
 				]
 			},
 			"minecraft:breathable": {
@@ -209,20 +209,20 @@
 				"name_actions": {
 					"name_filter": "despawn",
 					"on_named": {
-						"event": "poke:despawn",
+						"event": "poke_pfe:despawn",
 						"target": "self"
 					}
 				},
 				"default_trigger": {
 					"target": "self",
-					"event": "poke:renamed"
+					"event": "poke_pfe:renamed"
 				}
 			},
 			"minecraft:equipment": {
 				"table": "loot_tables/poke/pfe/super_striker_equipment.loot.json"
 			},
 			"minecraft:shooter": {
-				"def": "poke:volt_arrow"
+				"def": "poke_pfe:volt_arrow"
 			},
 			"minecraft:environment_sensor": {
 				"triggers": [
@@ -582,14 +582,14 @@
 					]
 				}
 			},
-			"poke:despawn": {
+			"poke_pfe:despawn": {
 				"add": {
 					"component_groups": [
 						"despawn"
 					]
 				}
 			},
-			"poke:renamed": {
+			"poke_pfe:renamed": {
 				"remove": {
 					"component_groups": [
 						"timer"

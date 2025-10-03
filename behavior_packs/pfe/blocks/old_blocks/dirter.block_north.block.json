@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:dirter_north"
+			"identifier": "poke_pfe:dirter_north"
 		},
 		"components": {
 			"poke_pfe:transform_block": {

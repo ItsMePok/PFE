@@ -2,7 +2,7 @@
     "format_version": "1.20.60",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "poke:netherite_upgrader"
+            "identifier": "poke_pfe:netherite_upgrader"
         },
         "tags": [
             "crafting_table"
@@ -18,7 +18,7 @@
                 "item": "netherite_scrap"
             },
             {
-                "item": "poke:diamond_upgrade_core"
+                "item": "poke_pfe:diamond_upgrade_core"
             }
         ],
         "key": {
@@ -29,14 +29,14 @@
                 "item": "netherite_block"
             },
             "Y": {
-                "item": "poke:diamond_upgrade_core"
+                "item": "poke_pfe:diamond_upgrade_core"
             },
             "Z": {
                 "item": "stick"
             }
         },
         "result": {
-            "item": "poke:netherite_upgrader"
+            "item": "poke_pfe:netherite_upgrader"
         }
     }
 }

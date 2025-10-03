@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:shade_ring",
+			"identifier": "poke_pfe:shade_ring",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -12,12 +12,12 @@
 				"value": "%poke_pfe.shade_ring\n%poke_pfe.tag"
 			},
 			"poke_pfe:icon_path": "textures/poke/pfe/shade_ring",
-			"poke:shootProjectile": {},
+			"poke_pfe:shootProjectile": {},
 			"minecraft:repairable": {
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core"
+							"poke_pfe:repair_core"
 						],
 						"repair_amount": "query.max_durability"
 					}
@@ -26,7 +26,7 @@
 			"minecraft:icon": "poke_pfe_shade_ring",
 			"minecraft:cooldown": {
 				"duration": 5,
-				"category": "poke:shade_ring"
+				"category": "poke_pfe:shade_ring"
 			},
 			"minecraft:durability": {
 				"max_durability": 2500,
@@ -42,7 +42,7 @@
 			"minecraft:max_stack_size": 1,
 			"minecraft:tags": {
 				"tags": [
-					"poke:shade_ring_proj" //Projectile id for script
+					"poke_pfe:shade_ring_proj" //Projectile id for script
 				]
 			},
 			"minecraft:use_modifiers": {

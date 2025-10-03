@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "poke:grizzly_bear",
+			"identifier": "poke_pfe:grizzly_bear",
 			"materials": {
 				"default": "polar_bear" //2
 			},

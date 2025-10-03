@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:boss_event_config",
+			"identifier": "poke_pfe:boss_event_config",
 			"menu_category": {
 				"category": "none"
 			}

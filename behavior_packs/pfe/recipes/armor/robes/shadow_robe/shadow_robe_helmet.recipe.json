@@ -2,7 +2,7 @@
     "format_version": "1.20.60",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "poke:shadow_robe_helmet"
+            "identifier": "poke_pfe:shadow_robe_helmet"
         },
         "tags": [
             "crafting_table"
@@ -14,25 +14,25 @@
         ],
         "unlock": [
             {
-                "item": "poke:amethyst_helmet"
+                "item": "poke_pfe:amethyst_helmet"
             }
         ],
         "key": {
             "W": {
-                "item": "poke:void_block"
+                "item": "poke_pfe:void_block"
             },
             "A": {
-                "item": "poke:amethyst_helmet"
+                "item": "poke_pfe:amethyst_helmet"
             },
             "G": {
                 "item": "gold_block"
             },
             "U": {
-                "item": "poke:upgrade_core"
+                "item": "poke_pfe:upgrade_core"
             }
         },
         "result": {
-            "item": "poke:shadow_robe_helmet"
+            "item": "poke_pfe:shadow_robe_helmet"
         }
     }
 }

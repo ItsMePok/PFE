@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "poke:netherite_battleaxe"
+			"identifier": "poke_pfe:netherite_battleaxe"
 		},
 		"unlock": [
 			{
@@ -11,7 +11,7 @@
 		],
 		"ingredients": [
 			{
-				"item": "poke:diamond_battleaxe"
+				"item": "poke_pfe:diamond_battleaxe"
 			},
 			{
 				"item": "netherite_ingot"
@@ -24,7 +24,7 @@
 			"crafting_table"
 		],
 		"result": {
-			"item": "poke:netherite_battleaxe"
+			"item": "poke_pfe:netherite_battleaxe"
 		}
 	}
 }

@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:bundled_sugarcane",
+			"identifier": "poke_pfe:bundled_sugarcane",
 			"menu_category": {
 				"category": "items"
 			}

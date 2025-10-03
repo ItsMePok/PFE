@@ -1,25 +1,47 @@
 {
-	"format_version":"1.20.10",
-	"minecraft:recipe_shaped":{
-		"description":{"identifier":"poke:astral_scythe"},
-		"tags":["crafting_table"],
-		"pattern":[
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke_pfe:astral_scythe"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
 			"ZZX",
 			" Y ",
 			"XU "
 		],
-        "unlock":[
-			{"item":"poke:galactic_scythe"},
-			{"item":"poke:astral_block"},
-			{"item":"poke:astral_ingot"},
-			{"item":"poke:platinum_upgrade_core"}
+		"unlock": [
+			{
+				"item": "poke_pfe:galactic_scythe"
+			},
+			{
+				"item": "poke_pfe:astral_block"
+			},
+			{
+				"item": "poke_pfe:astral_ingot"
+			},
+			{
+				"item": "poke_pfe:platinum_upgrade_core"
+			}
 		],
-		"key":{
-			"Y":{"item":"poke:galactic_scythe"},
-			"X":{"item":"poke:astral_block"},
-			"Z":{"item":"poke:astral_ingot"},
-			"U":{"item":"poke:platinum_upgrade_core"}
+		"key": {
+			"Y": {
+				"item": "poke_pfe:galactic_scythe"
+			},
+			"X": {
+				"item": "poke_pfe:astral_block"
+			},
+			"Z": {
+				"item": "poke_pfe:astral_ingot"
+			},
+			"U": {
+				"item": "poke_pfe:platinum_upgrade_core"
+			}
 		},
-		"result":{"item":"poke:astral_scythe"}
+		"result": {
+			"item": "poke_pfe:astral_scythe"
+		}
 	}
 }

@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:shade_scythe"
+			"identifier": "poke_pfe:shade_scythe"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,28 +14,28 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:shade_ingot"
+				"item": "poke_pfe:shade_ingot"
 			}
 		],
 		"key": {
 			"Y": {
-				"item": "poke:shade_ingot"
+				"item": "poke_pfe:shade_ingot"
 			},
 			"X": {
-				"item": "poke:shade_block"
+				"item": "poke_pfe:shade_block"
 			},
 			"Z": {
-				"item": "poke:shade_ingot"
+				"item": "poke_pfe:shade_ingot"
 			},
 			"#": {
-				"item": "poke:cobalt_scythe"
+				"item": "poke_pfe:cobalt_scythe"
 			},
 			"U": {
-				"item": "poke:upgrade_core"
+				"item": "poke_pfe:upgrade_core"
 			}
 		},
 		"result": {
-			"item": "poke:shade_scythe"
+			"item": "poke_pfe:shade_scythe"
 		}
 	}
 }

@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:demonic_stick"
+			"identifier": "poke_pfe:demonic_stick"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,16 +14,16 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:demonic_ingot"
+				"item": "poke_pfe:demonic_ingot"
 			}
 		],
 		"key": {
 			"#": {
-				"item": "poke:demonic_ingot"
+				"item": "poke_pfe:demonic_ingot"
 			}
 		},
 		"result": {
-			"item": "poke:demonic_stick",
+			"item": "poke_pfe:demonic_stick",
 			"count": 1
 		}
 	}

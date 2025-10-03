@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:grad_cap",
+			"identifier": "poke_pfe:grad_cap",
 			"menu_category": {
 				"category": "equipment"
 			}

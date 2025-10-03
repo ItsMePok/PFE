@@ -2,18 +2,18 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "poke:galaxy_bricks_stonecut"
+			"identifier": "poke_pfe:galaxy_bricks_stonecut"
 		},
 		"tags": [
 			"stonecutter"
 		],
 		"ingredients": [
 			{
-				"item": "poke:galaxy_block"
+				"item": "poke_pfe:galaxy_block"
 			}
 		],
 		"result": {
-			"item": "poke:galaxy_bricks",
+			"item": "poke_pfe:galaxy_bricks",
 			"count": 4
 		}
 	}

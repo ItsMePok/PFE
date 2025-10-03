@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:baguette"
+			"identifier": "poke_pfe:baguette"
 		},
 		"tags": [
 			"crafting_table"
@@ -29,7 +29,7 @@
 			"Y  "
 		],
 		"result": {
-			"item": "poke:baguette"
+			"item": "poke_pfe:baguette"
 		}
 	}
 }

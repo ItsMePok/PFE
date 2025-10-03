@@ -4,7 +4,7 @@
 		"description": {
 			"identifier": "poke_pfe:resist_ring"
 		},
-		"group": "pfe:rings",
+		"group": "poke_pfe:rings",
 		"tags": [
 			"crafting_table"
 		],
@@ -14,7 +14,7 @@
 				"count": 1
 			},
 			{
-				"item": "poke:echo_holder",
+				"item": "poke_pfe:echo_holder",
 				"count": 1
 			}
 		],
@@ -23,7 +23,7 @@
 				"item": "poke_pfe:resist_gem"
 			},
 			{
-				"item": "poke:echo_holder"
+				"item": "poke_pfe:echo_holder"
 			}
 		],
 		"result": {

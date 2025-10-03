@@ -2,7 +2,7 @@
     "format_version": "1.20.60",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "poke:diamond_upgrader"
+            "identifier": "poke_pfe:diamond_upgrader"
         },
         "tags": [
             "crafting_table"
@@ -18,7 +18,7 @@
                 "item": "diamond"
             },
             {
-                "item": "poke:diamond_upgrade_core"
+                "item": "poke_pfe:diamond_upgrade_core"
             }
         ],
         "key": {
@@ -29,14 +29,14 @@
                 "item": "diamond_block"
             },
             "Y": {
-                "item": "poke:diamond_upgrade_core"
+                "item": "poke_pfe:diamond_upgrade_core"
             },
             "Z": {
                 "item": "stick"
             }
         },
         "result": {
-            "item": "poke:diamond_upgrader"
+            "item": "poke_pfe:diamond_upgrader"
         }
     }
 }

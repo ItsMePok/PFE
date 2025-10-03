@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:lava_sponge",
+			"identifier": "poke_pfe:lava_sponge",
 			"menu_category": {
 				"category": "nature"
 			}
@@ -32,7 +32,7 @@
 					20,
 					20
 				],
-				"turns_into": "poke:molten_lava_sponge"
+				"turns_into": "poke_pfe:molten_lava_sponge"
 			},
 			"minecraft:material_instances": {
 				"*": {

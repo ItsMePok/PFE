@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:banished_helmet"
+			"identifier": "poke_pfe:banished_helmet"
 		},
 		"tags": [
 			"crafting_table"
@@ -13,16 +13,16 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:banished_star"
+				"item": "poke_pfe:banished_star"
 			}
 		],
 		"key": {
 			"X": {
-				"item": "poke:banished_star_x4"
+				"item": "poke_pfe:banished_star_x4"
 			}
 		},
 		"result": {
-			"item": "poke:banished_helmet"
+			"item": "poke_pfe:banished_helmet"
 		}
 	}
 }

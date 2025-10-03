@@ -6,12 +6,12 @@
     },
     "unlock": [
       {
-        "item": "poke:cobbled_shadowstone"
+        "item": "poke_pfe:cobbled_shadowstone"
       }
     ],
     "key": {
       "X": {
-        "item": "poke:cobbled_shadowstone"
+        "item": "poke_pfe:cobbled_shadowstone"
       }
     },
     "result": {
@@ -23,7 +23,7 @@
       " X ",
       "X X"
     ],
-    "group": "poke:drain",
+    "group": "poke_pfe:drain",
     "tags": [
       "crafting_table"
     ]

@@ -2,14 +2,14 @@
     "format_version": "1.20.30",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "poke:limestone_slab_to_limestone"
+            "identifier": "poke_pfe:limestone_slab_to_limestone"
         },
         "tags": [
             "crafting_table"
         ],
         "unlock": [
             {
-                "item": "poke:limestone_slab"
+                "item": "poke_pfe:limestone_slab"
             }
         ],
         "pattern": [
@@ -17,11 +17,11 @@
         ],
         "key": {
             "#": {
-                "item": "poke:limestone_slab"
+                "item": "poke_pfe:limestone_slab"
             }
         },
         "result": {
-            "item": "poke:limestone",
+            "item": "poke_pfe:limestone",
             "count": 1
         }
     }

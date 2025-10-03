@@ -12,10 +12,10 @@
         "value": "%poke_pfe.banished_battleaxe\n%poke_pfe.tag"
       },
       "poke_pfe:upgradeable": {
-        "dynamic_property": "pfe:upgrades",
+        "dynamic_property": "poke_pfe:upgrades",
         "sneak_interact_opens_ui": false,
         "upgrade_ids": [
-          "pfe:persistence"
+          "poke_pfe:persistence"
         ],
         "version": 1
       },
@@ -36,14 +36,14 @@
       },
       "minecraft:can_destroy_in_creative": false,
       "minecraft:cooldown": {
-        "category": "poke:axe_use",
+        "category": "poke_pfe:axe_use",
         "duration": 2.5
       },
       "minecraft:tags": {
         "tags": [
           "minecraft:netherite_tier",
           "minecraft:is_sword",
-          "pfe:is_battleaxe"
+          "poke_pfe:is_battleaxe"
         ]
       },
       "minecraft:digger": {
@@ -75,7 +75,7 @@
         "trigger_cooldown": true,
         "can_be_disabled": false
       },
-      "poke:normalMining": {},
+      "poke_pfe:normalMining": {},
       "minecraft:use_modifiers": {
         "use_duration": 0,
         "movement_modifier": 1

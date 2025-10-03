@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "poke:mini_demonic_allay",
+			"identifier": "poke_pfe:mini_demonic_allay",
 			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false
@@ -21,7 +21,7 @@
 			},
 			"minecraft:boss": {
 				"hud_range": 55,
-				"name": "entity.poke:mini_demonic_allay.name",
+				"name": "entity.poke_pfe:mini_demonic_allay.name",
 				"should_darken_sky": false
 			},
 			"minecraft:is_hidden_when_invisible": {},
@@ -34,8 +34,8 @@
 					"vex",
 					"monster",
 					"mob",
-					"pfe:demonic_allay",
-					"pfe:boss"
+					"poke_pfe:demonic_allay",
+					"poke_pfe:boss"
 				]
 			},
 			"minecraft:equipment": {
@@ -175,13 +175,13 @@
 				"time": 1800,
 				"looping": true,
 				"time_down_event": {
-					"event": "poke:despawn",
+					"event": "poke_pfe:despawn",
 					"target": "self"
 				}
 			}
 		},
 		"events": {
-			"poke:despawn": {
+			"poke_pfe:despawn": {
 				"add": {
 					"component_groups": [
 						"despawn"

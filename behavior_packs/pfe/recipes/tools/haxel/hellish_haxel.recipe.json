@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:hellish_haxel"
+			"identifier": "poke_pfe:hellish_haxel"
 		},
 		"group": "haxel",
 		"tags": [
@@ -15,31 +15,31 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:hellish_ingot"
+				"item": "poke_pfe:hellish_ingot"
 			},
 			{
-				"item": "poke:haxel"
+				"item": "poke_pfe:haxel"
 			},
 			{
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			}
 		],
 		"key": {
 			"i": {
-				"item": "poke:demonic_stick"
+				"item": "poke_pfe:demonic_stick"
 			},
 			"#": {
-				"item": "poke:hellish_block"
+				"item": "poke_pfe:hellish_block"
 			},
 			"E": {
-				"item": "poke:haxel"
+				"item": "poke_pfe:haxel"
 			},
 			"U": {
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			}
 		},
 		"result": {
-			"item": "poke:hellish_haxel"
+			"item": "poke_pfe:hellish_haxel"
 		}
 	}
 }

@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:hellish_bricks",
+			"identifier": "poke_pfe:hellish_bricks",
 			"menu_category": {
 				"category": "construction"
 			}

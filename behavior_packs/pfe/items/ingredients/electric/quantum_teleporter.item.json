@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:quantum_teleporter",
+			"identifier": "poke_pfe:quantum_teleporter",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -24,13 +24,13 @@
 				"trigger_cooldown": true,
 				"can_be_disabled": true
 			},
-			"poke:normalMining": {},
+			"poke_pfe:normalMining": {},
 			"minecraft:use_modifiers": {
 				"use_duration": 0,
 				"movement_modifier": 1
 			},
 			"minecraft:cooldown": {
-				"category": "poke:quantum_teleporter",
+				"category": "poke_pfe:quantum_teleporter",
 				"duration": 0.2
 			}
 		}

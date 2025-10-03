@@ -2,13 +2,13 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_furnace": {
 		"description": {
-			"identifier": "poke:raw_nebula_smelt"
+			"identifier": "poke_pfe:raw_nebula_smelt"
 		},
 		"tags": [
 			"furnace",
 			"blast_furnace"
 		],
-		"input": "poke:raw_nebula",
-		"output": "poke:nebula_ingot"
+		"input": "poke_pfe:raw_nebula",
+		"output": "poke_pfe:nebula_ingot"
 	}
 }

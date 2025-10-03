@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:kill_quest",
+			"identifier": "poke_pfe:kill_quest",
 			"menu_category": {
 				"category": "items"
 			}
@@ -68,7 +68,7 @@
 					"tokenAmount": 32
 				},
 				{
-					"item": "poke:rotten_chicken",
+					"item": "poke_pfe:rotten_chicken",
 					"amount": 8,
 					"translationString": "%poke_pfe.rotten_chicken (%poke_pfe.tag)",
 					"tokenAmount": 8

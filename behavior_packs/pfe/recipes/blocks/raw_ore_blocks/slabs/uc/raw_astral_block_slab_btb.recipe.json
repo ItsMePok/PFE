@@ -2,26 +2,26 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:raw_astral_slab_back_to_block"
+			"identifier": "poke_pfe:raw_astral_slab_back_to_block"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:raw_astral_slab"
+				"item": "poke_pfe:raw_astral_slab"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:raw_astral_slab"
+				"item": "poke_pfe:raw_astral_slab"
 			}
 		},
 		"pattern": [
 			"CC"
 		],
 		"result": {
-			"item": "poke:raw_astral_block"
+			"item": "poke_pfe:raw_astral_block"
 		},
 		"priority": 2
 	}

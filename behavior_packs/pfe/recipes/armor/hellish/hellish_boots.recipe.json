@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:hellish_boots"
+			"identifier": "poke_pfe:hellish_boots"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,28 +14,28 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:onyx_boots"
+				"item": "poke_pfe:onyx_boots"
 			},
 			{
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			},
 			{
-				"item": "poke:hellish_ingot"
+				"item": "poke_pfe:hellish_ingot"
 			}
 		],
 		"key": {
 			"B": {
-				"item": "poke:hellish_block"
+				"item": "poke_pfe:hellish_block"
 			},
 			"#": {
-				"item": "poke:onyx_boots"
+				"item": "poke_pfe:onyx_boots"
 			},
 			"U": {
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			}
 		},
 		"result": {
-			"item": "poke:hellish_boots"
+			"item": "poke_pfe:hellish_boots"
 		}
 	}
 }

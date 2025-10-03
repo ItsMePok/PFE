@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:antenna",
+			"identifier": "poke_pfe:antenna",
 			"menu_category": {
 				"category": "items"
 			}

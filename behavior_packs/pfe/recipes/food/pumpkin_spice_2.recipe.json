@@ -2,13 +2,13 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_brewing_mix": {
 		"description": {
-			"identifier": "poke:pumpkin_spice_2"
+			"identifier": "poke_pfe:pumpkin_spice_2"
 		},
 		"tags": [
 			"brewing_stand"
 		],
-		"input": "poke:milk_bottle",
+		"input": "poke_pfe:milk_bottle",
 		"reagent": "carved_pumpkin",
-		"output": "poke:pumpkin_spice"
+		"output": "poke_pfe:pumpkin_spice"
 	}
 }

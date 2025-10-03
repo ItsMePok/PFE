@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:money_man",
+			"identifier": "poke_pfe:money_man",
 			"menu_category": {
 				"category": "nature",
 				"group": "minecraft:itemGroup.name.mobEgg"
@@ -15,12 +15,12 @@
 			"poke_pfe:icon_path": "textures/poke/pfe/money_man_spawn_egg",
 			"minecraft:icon": "poke_pfe_money_man_spawn_egg",
 			"poke_pfe:spawn_entity": {
-				"entity": "poke:money_man"
+				"entity": "poke_pfe:money_man"
 			},
 			"minecraft:tags": {
 				"tags": [
 					"minecraft:spawn_egg",
-					"pfe:is_survival_spawn_egg"
+					"poke_pfe:is_survival_spawn_egg"
 				]
 			}
 		}

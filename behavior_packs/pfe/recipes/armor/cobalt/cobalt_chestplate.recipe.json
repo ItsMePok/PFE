@@ -14,15 +14,15 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:cobalt_ingot"
+				"item": "poke_pfe:cobalt_ingot"
 			},
 			{
-				"item": "poke:raw_cobalt"
+				"item": "poke_pfe:raw_cobalt"
 			}
 		],
 		"key": {
 			"B": {
-				"item": "poke:cobalt_ingot"
+				"item": "poke_pfe:cobalt_ingot"
 			}
 		},
 		"result": {

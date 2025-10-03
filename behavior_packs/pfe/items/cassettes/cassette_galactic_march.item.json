@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:cassette_galactic_march"
+			"identifier": "poke_pfe:cassette_galactic_march"
 		},
 		"components": {
 			"minecraft:display_name": {
@@ -16,7 +16,7 @@
 			},
 			"minecraft:tags": {
 				"tags": [
-					"pfe:is_cassette"
+					"poke_pfe:is_cassette"
 				]
 			}
 		}

@@ -2,14 +2,14 @@
 	"format_version": "1.21.110",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "poke:volt_ring_proj",
+			"identifier": "poke_pfe:volt_ring_proj",
 			"is_spawnable": false,
 			"is_summonable": true,
 			"is_experimental": false,
 			"runtime_identifier": "arrow"
 		},
 		"component_groups": {
-			"poke:despawn": {
+			"poke_pfe:despawn": {
 				"minecraft:instant_despawn": {}
 			}
 		},
@@ -41,7 +41,7 @@
 					"definition_event": {
 						"affect_target": true,
 						"event_trigger": {
-							"event": "poke:death"
+							"event": "poke_pfe:death"
 						}
 					}
 				},
@@ -65,13 +65,13 @@
 				"time": 30,
 				"looping": true,
 				"time_down_event": {
-					"event": "poke:death",
+					"event": "poke_pfe:death",
 					"target": "self"
 				}
 			}
 		},
 		"events": {
-			"poke:death": {
+			"poke_pfe:death": {
 				"queue_command": {
 					"command": [
 						"execute at @s run summon lightning_bolt ~~~"
@@ -79,7 +79,7 @@
 				},
 				"add": {
 					"component_groups": [
-						"poke:despawn"
+						"poke_pfe:despawn"
 					]
 				}
 			}

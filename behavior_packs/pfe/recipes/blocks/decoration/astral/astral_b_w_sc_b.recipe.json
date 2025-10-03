@@ -1,9 +1,19 @@
 {
-	"format_version":"1.16.100",
-	"minecraft:recipe_shapeless":{
-		"description":{"identifier":"poke:astral_b_w_sc_b"},
-		"tags":["stonecutter"],
-		"ingredients":[{"item":"poke:astral_bricks"}],
-		"result":{"item":"poke:astral_brick_wall"}
+	"format_version": "1.16.100",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "poke_pfe:astral_b_w_sc_b"
+		},
+		"tags": [
+			"stonecutter"
+		],
+		"ingredients": [
+			{
+				"item": "poke_pfe:astral_bricks"
+			}
+		],
+		"result": {
+			"item": "poke_pfe:astral_brick_wall"
+		}
 	}
 }

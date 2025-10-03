@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:molten_haxel",
+			"identifier": "poke_pfe:molten_haxel",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -17,7 +17,7 @@
 					"minecraft:is_pickaxe",
 					"minecraft:netherite_tier",
 					"minecraft:is_tool",
-					"pfe:is_haxel"
+					"poke_pfe:is_haxel"
 				]
 			},
 			"poke_pfe:box_mining": {
@@ -32,13 +32,13 @@
 					0
 				]
 			},
-			"poke:normalMining": {},
+			"poke_pfe:normalMining": {},
 			"minecraft:use_modifiers": {
 				"use_duration": 0,
 				"movement_modifier": 1
 			},
 			"minecraft:cooldown": {
-				"category": "poke:haxel",
+				"category": "poke_pfe:haxel",
 				"duration": 0.3
 			},
 			"poke_pfe:upgradeable": {
@@ -58,14 +58,14 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core",
-							"poke:ember_block"
+							"poke_pfe:repair_core",
+							"poke_pfe:ember_block"
 						],
 						"repair_amount": "query.max_durability"
 					},
 					{
 						"items": [
-							"poke:molten_slimeball"
+							"poke_pfe:molten_slimeball"
 						],
 						"repair_amount": "query.max_durability*0.20"
 					}

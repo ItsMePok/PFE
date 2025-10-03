@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:raw_duck",
+			"identifier": "poke_pfe:raw_duck",
 			"menu_category": {
 				"category": "nature"
 			}

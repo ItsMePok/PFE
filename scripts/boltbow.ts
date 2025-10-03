@@ -56,7 +56,7 @@ class PFEBoltBowsComponent {
     if (typeof data.itemStack.getDynamicProperty(PFEBoltBowDynamicPropertyID) != "string") {
       PokeSaveProperty(PFEBoltBowDynamicPropertyID, data.itemStack, JSON.stringify(PFEBoltBowDefault), data.source)
     } else ammoComponent = JSON.parse(data.itemStack.getDynamicProperty(PFEBoltBowDynamicPropertyID)!.toString())
-    if (typeof data.itemStack.getDynamicProperty(`poke:ammo`) == "string") {
+    if (typeof data.itemStack.getDynamicProperty(`poke_pfe:ammo`) == "string") {
       UpdateBoltbowV2toV3(data.source, data.itemStack)
     }
     if (!ammoComponent.v || ammoComponent.v <= 2) {
@@ -127,15 +127,15 @@ function PokeShoot(player: Player, ammoComponent: PFEBoltBowInfo, item: ItemStac
  */
 function PFEAmmoManagementMainMenuUI(item: ItemStack, player: Player) {
   let UI = new ActionFormData()
-  UI.title({ translate: `translation.poke:ammoUIMainMenuTitle`, with: { rawtext: [{ translate: `poke_pfe.${item.typeId.substring(5)}` }] } })
+  UI.title({ translate: `translation.poke_pfe:ammoUIMainMenuTitle`, with: { rawtext: [{ translate: `poke_pfe.${item.typeId.substring(5)}` }] } })
   if (typeof item.getDynamicProperty(PFEBoltBowDynamicPropertyID) != "string") {
     PokeSaveProperty(PFEBoltBowDynamicPropertyID, item, JSON.stringify(PFEBoltBowDefault), player)
   }
   let boltBowComponent: PFEBoltBowInfo = JSON.parse(item.getDynamicProperty(PFEBoltBowDynamicPropertyID)!.toString())
   UI.button({ translate: `%poke_pfe.quick_reload [${boltBowComponent.projectile.amount}/${16 + ((boltBowComponent.upgrades.filter(upgrade => upgrade.id == CapacityUpgradeDefault.id).at(0)?.level ?? 1) * 16)}]` }, `textures/poke/common/ammoQuickReload`)
-  UI.button({ translate: `translation.poke:ammoUIAddAmmo` }, `textures/poke/common/ammoReload`)
+  UI.button({ translate: `translation.poke_pfe:ammoUIAddAmmo` }, `textures/poke/common/ammoReload`)
   UI.button({ translate: `poke_pfe.upgrade` }, `textures/poke/common/upgrade`)
-  UI.button({ translate: `translation.poke:bossEventClose` }, `textures/poke/common/close`)
+  UI.button({ translate: `translation.poke_pfe:bossEventClose` }, `textures/poke/common/close`)
 
   UI.show(player).then((response => {
     let selection = 0
@@ -159,8 +159,8 @@ function PFEAmmoManagementMainMenuUI(item: ItemStack, player: Player) {
 
 function PFEAmmoManagementAddAmmoUI(item: ItemStack, player: Player) {
   let UI = new ActionFormData()
-  let allowedAmmo = [`minecraft:arrow`, `poke:galaxy_arrow`, `poke:holy_arrow`, `poke:hellish_arrow`, `poke:void_arrow`, `poke:volt_arrow`]
-  UI.title({ translate: `translation.poke:ammoUIMainMenuTitle` })
+  let allowedAmmo = [`minecraft:arrow`, `poke_pfe:galaxy_arrow`, `poke_pfe:holy_arrow`, `poke_pfe:hellish_arrow`, `poke_pfe:void_arrow`, `poke_pfe:volt_arrow`]
+  UI.title({ translate: `translation.poke_pfe:ammoUIMainMenuTitle` })
   let ammoComponent: PFEBoltBowInfo = JSON.parse(item.getDynamicProperty(PFEBoltBowDynamicPropertyID)!.toString())
   let buttonTotal = 0
   let allItems: ItemStack[] = []
@@ -182,7 +182,7 @@ function PFEAmmoManagementAddAmmoUI(item: ItemStack, player: Player) {
       buttonTotal = buttonTotal + 1
     }
   }
-  UI.button({ translate: `translation.poke:bossEventClose` }, `textures/poke/common/close`)
+  UI.button({ translate: `translation.poke_pfe:bossEventClose` }, `textures/poke/common/close`)
 
   UI.show(player).then((response => {
     let selection = 0
@@ -279,23 +279,23 @@ function PFEArrowIcon(itemId: string) {
       return `textures/items/arrow`
       break
     }
-    case `poke:galaxy_arrow`: {
+    case `poke_pfe:galaxy_arrow`: {
       return `textures/poke/pfe/galaxy_arrow_item`
       break
     }
-    case `poke:void_arrow`: {
+    case `poke_pfe:void_arrow`: {
       return `textures/poke/pfe/void_arrow_item`
       break
     }
-    case `poke:hellish_arrow`: {
+    case `poke_pfe:hellish_arrow`: {
       return `textures/poke/pfe/hellish_arrow_item`
       break
     }
-    case `poke:holy_arrow`: {
+    case `poke_pfe:holy_arrow`: {
       return `textures/poke/pfe/holy_arrow_item`
       break
     }
-    case `poke:volt_arrow`: {
+    case `poke_pfe:volt_arrow`: {
       return `textures/poke/pfe/volt_arrow_item`
       break
     }
@@ -370,15 +370,15 @@ function UpdateBoltbowV2toV3(player: Player, item: ItemStack) {
     upgrades: PFEItemUpgradeInfo[]
     v: 2 | 1 | undefined
   }
-  const unparsedOldInfo = <string | undefined>item.getDynamicProperty(`poke:ammo`)
+  const unparsedOldInfo = <string | undefined>item.getDynamicProperty(`poke_pfe:ammo`)
   const oldInfo: OldBoltBowInfo | undefined = unparsedOldInfo ? JSON.parse(unparsedOldInfo) ?? undefined : undefined
   const unparsedNewInfo = <string | undefined>item.getDynamicProperty(PFEBoltBowDynamicPropertyID)
   let newInfo: PFEBoltBowInfo = unparsedNewInfo ? JSON.parse(unparsedNewInfo) ?? PFEBoltBowDefault : PFEBoltBowDefault
   let updatedUpgrades = []
   if (oldInfo) {
     PokeGetObjectById(newInfo.upgrades, CapacityUpgradeDefault.id)
-    const CapacityLevel = PokeGetObjectById(oldInfo.upgrades, "pfe:capacity")?.value.level
-    const FlamingLevel = PokeGetObjectById(oldInfo.upgrades, "pfe:flaming")?.value.level
+    const CapacityLevel = PokeGetObjectById(oldInfo.upgrades, "poke_pfe:capacity")?.value.level
+    const FlamingLevel = PokeGetObjectById(oldInfo.upgrades, "poke_pfe:flaming")?.value.level
     for (let upgrade of newInfo.upgrades) {
       if (upgrade.id == CapacityUpgradeDefault.id) { upgrade.level = CapacityLevel; continue }
       if (upgrade.id == FlamingUpgradeDefault.id) upgrade.level = FlamingLevel
@@ -404,5 +404,5 @@ function UpdateBoltbowV2toV3(player: Player, item: ItemStack) {
   ]
   savingInfo.upgrades = newInfo.upgrades
   PokeSaveProperty(PFEBoltBowDynamicPropertyID, item, JSON.stringify(savingInfo), player)
-  item.setDynamicProperty("poke:ammo", undefined)
+  item.setDynamicProperty("poke_pfe:ammo", undefined)
 }

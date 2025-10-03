@@ -1,26 +1,26 @@
 {
-  "format_version":"1.10.0",
-  "minecraft:client_entity":{
-    "description":{
-      "identifier":"poke:warp_ring_proj",
-      "materials":{
-        "default":"ender_pearl"
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "poke_pfe:warp_ring_proj",
+      "materials": {
+        "default": "ender_pearl"
       },
-      "textures":{
-        "default":"textures/items/ender_pearl"
+      "textures": {
+        "default": "textures/items/ender_pearl"
       },
-      "geometry":{
-        "default":"geometry.item_sprite"
+      "geometry": {
+        "default": "geometry.item_sprite"
       },
-      "render_controllers":[
+      "render_controllers": [
         "controller.render.item_sprite"
       ],
-      "animations":{
-        "flying":"animation.actor.billboard"
+      "animations": {
+        "flying": "animation.actor.billboard"
       },
-      "scripts":{
-        "animate":[
-        "flying"
+      "scripts": {
+        "animate": [
+          "flying"
         ]
       }
     }

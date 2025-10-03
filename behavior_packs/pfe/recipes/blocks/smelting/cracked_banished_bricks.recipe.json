@@ -2,13 +2,13 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_furnace": {
 		"description": {
-			"identifier": "poke:cracked_banished_bricks"
+			"identifier": "poke_pfe:cracked_banished_bricks"
 		},
 		"tags": [
 			"furnace",
 			"blast_furnace"
 		],
-		"input": "poke:banished_bricks",
-		"output": "poke:cracked_banished_bricks"
+		"input": "poke_pfe:banished_bricks",
+		"output": "poke_pfe:cracked_banished_bricks"
 	}
 }

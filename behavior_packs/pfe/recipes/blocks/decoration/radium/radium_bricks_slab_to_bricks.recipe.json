@@ -2,26 +2,26 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:radium_bricks_slab_to_radium_bricks"
+			"identifier": "poke_pfe:radium_bricks_slab_to_radium_bricks"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:radium_bricks_slab"
+				"item": "poke_pfe:radium_bricks_slab"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:radium_bricks_slab"
+				"item": "poke_pfe:radium_bricks_slab"
 			}
 		},
 		"pattern": [
 			"CC"
 		],
 		"result": {
-			"item": "poke:radium_bricks"
+			"item": "poke_pfe:radium_bricks"
 		},
 		"priority": 2
 	}

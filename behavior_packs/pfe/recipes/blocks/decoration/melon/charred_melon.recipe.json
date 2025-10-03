@@ -2,7 +2,7 @@
     "format_version": "1.20.60",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "poke:charred_melon"
+            "identifier": "poke_pfe:charred_melon"
         },
         "tags": [
             "crafting_table"
@@ -12,7 +12,7 @@
         ],
         "unlock": [
             {
-                "item": "poke:carved_melon"
+                "item": "poke_pfe:carved_melon"
             },
             {
                 "item": "flint_and_steel"
@@ -20,7 +20,7 @@
         ],
         "key": {
             "M": {
-                "item": "poke:carved_melon"
+                "item": "poke_pfe:carved_melon"
             },
             "F": {
                 "item": "flint_and_steel"
@@ -28,7 +28,7 @@
         },
         "result": [
             {
-                "item": "poke:charred_melon"
+                "item": "poke_pfe:charred_melon"
             },
             {
                 "item": "flint_and_steel"

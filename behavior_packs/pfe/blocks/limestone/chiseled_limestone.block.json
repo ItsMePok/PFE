@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:chiseled_limestone",
+			"identifier": "poke_pfe:chiseled_limestone",
 			"menu_category": {
 				"category": "construction",
 				"group": "minecraft:itemGroup.name.stoneBrick"

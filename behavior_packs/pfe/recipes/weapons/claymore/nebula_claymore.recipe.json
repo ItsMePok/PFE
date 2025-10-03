@@ -15,16 +15,16 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:nebula_ingot"
+				"item": "poke_pfe:nebula_ingot"
 			},
 			{
-				"item": "poke:nebula_block"
+				"item": "poke_pfe:nebula_block"
 			},
 			{
-				"item": "poke:nebula_stick"
+				"item": "poke_pfe:nebula_stick"
 			},
 			{
-				"item": "poke:platinum_upgrade_core"
+				"item": "poke_pfe:platinum_upgrade_core"
 			},
 			{
 				"item": "poke_pfe:astral_claymore"
@@ -33,21 +33,21 @@
 				"item": "poke_pfe:death_claymore"
 			},
 			{
-				"item": "poke:nebula_core"
+				"item": "poke_pfe:nebula_core"
 			}
 		],
 		"key": {
 			"I": {
-				"item": "poke:nebula_ingot"
+				"item": "poke_pfe:nebula_ingot"
 			},
 			"B": {
-				"item": "poke:nebula_block"
+				"item": "poke_pfe:nebula_block"
 			},
 			"S": {
-				"item": "poke:nebula_stick"
+				"item": "poke_pfe:nebula_stick"
 			},
 			"U": {
-				"item": "poke:platinum_upgrade_core"
+				"item": "poke_pfe:platinum_upgrade_core"
 			},
 			"C": {
 				"item": "poke_pfe:astral_claymore"
@@ -56,7 +56,7 @@
 				"item": "poke_pfe:death_claymore"
 			},
 			"N": {
-				"item": "poke:nebula_core"
+				"item": "poke_pfe:nebula_core"
 			}
 		},
 		"result": {

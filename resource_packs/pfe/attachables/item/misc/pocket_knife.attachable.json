@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "poke:pocket_knife",
+			"identifier": "poke_pfe:pocket_knife",
 			"render_controllers": [
 				"controller.render.item_default"
 			],

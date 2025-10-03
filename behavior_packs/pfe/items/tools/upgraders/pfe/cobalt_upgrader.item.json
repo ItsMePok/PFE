@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:cobalt_upgrader",
+			"identifier": "poke_pfe:cobalt_upgrader",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -25,18 +25,18 @@
 			"poke_pfe:upgradeable": {
 				"version": 1,
 				"upgrade_ids": [
-					"pfe:persistence"
+					"poke_pfe:persistence"
 				]
 			},
 			"poke_pfe:transform_blocks": {
 				"transforms": [
-					"poke:cobalt_ore::poke:raw_cobalt_block",
-					"poke:deepslate_cobalt_ore::poke:raw_cobalt_block"
+					"poke_pfe:cobalt_ore::poke_pfe:raw_cobalt_block",
+					"poke_pfe:deepslate_cobalt_ore::poke_pfe:raw_cobalt_block"
 				]
 			},
 			"minecraft:tags": {
 				"tags": [
-					"pfe:is_upgrader"
+					"poke_pfe:is_upgrader"
 				]
 			}
 		}

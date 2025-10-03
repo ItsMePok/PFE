@@ -15,7 +15,7 @@
 			"minecraft:rarity": "common",
 			"minecraft:tags": {
 				"tags": [
-					"poke:upgrade_core"
+					"poke_pfe:upgrade_core"
 				]
 			},
 			"minecraft:icon": "poke_pfe_flaming_core"

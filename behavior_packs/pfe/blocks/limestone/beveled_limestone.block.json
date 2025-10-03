@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:beveled_limestone",
+			"identifier": "poke_pfe:beveled_limestone",
 			"menu_category": {
 				"category": "construction",
 				"group": "minecraft:itemGroup.name.stoneBrick"

@@ -6,7 +6,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "poke:hellish_blade",
+					"name": "poke_pfe:hellish_blade",
 					"functions": [
 						{
 							"function": "enchant_randomly",
@@ -17,27 +17,27 @@
 				},
 				{
 					"type": "item",
-					"name": "poke:hellish_blade",
+					"name": "poke_pfe:hellish_blade",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:demonic_ingot",
+					"name": "poke_pfe:demonic_ingot",
 					"weight": 20
 				},
 				{
 					"type": "item",
-					"name": "poke:demonic_nugget",
+					"name": "poke_pfe:demonic_nugget",
 					"weight": 20
 				},
 				{
 					"type": "item",
-					"name": "poke:hellish_ingot",
+					"name": "poke_pfe:hellish_ingot",
 					"weight": 20
 				},
 				{
 					"type": "item",
-					"name": "poke:hellish_nugget",
+					"name": "poke_pfe:hellish_nugget",
 					"weight": 20
 				},
 				{
@@ -87,22 +87,22 @@
 				},
 				{
 					"type": "item",
-					"name": "poke:raw_onyx",
+					"name": "poke_pfe:raw_onyx",
 					"weight": 5
 				},
 				{
 					"type": "item",
-					"name": "poke:raw_shade",
+					"name": "poke_pfe:raw_shade",
 					"weight": 5
 				},
 				{
 					"type": "item",
-					"name": "poke:raw_hellish",
+					"name": "poke_pfe:raw_hellish",
 					"weight": 5
 				},
 				{
 					"type": "item",
-					"name": "poke:raw_demonic",
+					"name": "poke_pfe:raw_demonic",
 					"weight": 5
 				},
 				{
@@ -132,17 +132,17 @@
 				},
 				{
 					"type": "item",
-					"name": "poke:baguette",
+					"name": "poke_pfe:baguette",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:warped_sporeshroom_stew",
+					"name": "poke_pfe:warped_sporeshroom_stew",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:crimson_sporeshroom_stew",
+					"name": "poke_pfe:crimson_sporeshroom_stew",
 					"weight": 1
 				},
 				{
@@ -150,7 +150,10 @@
 					"name": "minecraft:bowl",
 					"weight": 1
 				},
-				{"type": "empty","weight": 50}
+				{
+					"type": "empty",
+					"weight": 50
+				}
 			]
 		}
 	]

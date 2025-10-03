@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:hellish_boltbow",
+			"identifier": "poke_pfe:hellish_boltbow",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -26,19 +26,19 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core"
+							"poke_pfe:repair_core"
 						],
 						"repair_amount": "query.max_durability"
 					},
 					{
 						"items": [
-							"poke:hellish_ingot"
+							"poke_pfe:hellish_ingot"
 						],
 						"repair_amount": "query.max_durability*0.25"
 					},
 					{
 						"items": [
-							"poke:hellish_nugget"
+							"poke_pfe:hellish_nugget"
 						],
 						"repair_amount": "query.max_durability*0.028"
 					}
@@ -55,8 +55,8 @@
 				},
 				"max_durability": 1250
 			},
-			"poke:cc_bowAim": {},
-			"poke:boltbow": {}
+			"poke_pfe:cc_bowAim": {},
+			"poke_pfe:boltbow": {}
 		}
 	}
 }

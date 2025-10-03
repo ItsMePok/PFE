@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:obsidian_gem_holder"
+			"identifier": "poke_pfe:obsidian_gem_holder"
 		},
 		"tags": [
 			"crafting_table"
@@ -23,7 +23,7 @@
 			}
 		},
 		"result": {
-			"item": "poke:obsidian_gem_holder"
+			"item": "poke_pfe:obsidian_gem_holder"
 		}
 	}
 }

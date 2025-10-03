@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "poke:cassette_trader",
+			"identifier": "poke_pfe:cassette_trader",
 			"materials": {
 				"default": "villager_v2", //2
 				"masked": "villager_v2_masked" //2

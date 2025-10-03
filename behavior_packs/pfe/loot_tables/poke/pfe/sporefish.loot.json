@@ -5,13 +5,24 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "poke:raw_sporefish",
-                    "functions": [{"function": "furnace_smelt"},{"function": "looting_enchant","count": {"min":0,"max": 1}}]
+                    "name": "poke_pfe:raw_sporefish",
+                    "functions": [
+                        {
+                            "function": "furnace_smelt"
+                        },
+                        {
+                            "function": "looting_enchant",
+                            "count": {
+                                "min": 0,
+                                "max": 1
+                            }
+                        }
+                    ]
                 }
             ]
         },
         {
-            "rolls":1,
+            "rolls": 1,
             "entries": [
                 {
                     "type": "empty",
@@ -21,12 +32,20 @@
                     "type": "item",
                     "name": "bone",
                     "weight": 1,
-                    "functions": [{"function": "looting_enchant","count": {"max": 1,"min": 0}}]
+                    "functions": [
+                        {
+                            "function": "looting_enchant",
+                            "count": {
+                                "max": 1,
+                                "min": 0
+                            }
+                        }
+                    ]
                 }
             ]
         },
         {
-            "rolls":1,
+            "rolls": 1,
             "entries": [
                 {
                     "type": "empty",
@@ -34,7 +53,7 @@
                 },
                 {
                     "type": "item",
-                    "name": "poke:fishbowl",
+                    "name": "poke_pfe:fishbowl",
                     "weight": 1
                 }
             ]

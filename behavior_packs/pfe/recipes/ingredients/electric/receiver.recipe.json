@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:receiver"
+			"identifier": "poke_pfe:receiver"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,22 +14,22 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:electric_component"
+				"item": "poke_pfe:electric_component"
 			}
 		],
 		"key": {
 			"E": {
-				"item": "poke:electric_component"
+				"item": "poke_pfe:electric_component"
 			},
 			"C": {
-				"item": "poke:gps_module"
+				"item": "poke_pfe:gps_module"
 			},
 			"R": {
 				"item": "redstone"
 			}
 		},
 		"result": {
-			"item": "poke:receiver",
+			"item": "poke_pfe:receiver",
 			"count": 1
 		}
 	}

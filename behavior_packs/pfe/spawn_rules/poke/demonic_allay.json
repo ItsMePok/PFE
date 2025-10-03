@@ -2,7 +2,7 @@
 	"format_version": "1.8.0",
 	"minecraft:spawn_rules": {
 		"description": {
-			"identifier": "poke:demonic_allay",
+			"identifier": "poke_pfe:demonic_allay",
 			"population_control": "monster"
 		},
 		"conditions": [
@@ -12,7 +12,7 @@
 					"max": "easy",
 					"min": "easy"
 				},
-				"minecraft:spawns_on_block_filter":[
+				"minecraft:spawns_on_block_filter": [
 					"minecraft:netherrack",
 					"minecraft:crimson_nylium",
 					"minecraft:basalt",
@@ -42,7 +42,7 @@
 					"max": "normal",
 					"min": "normal"
 				},
-				"minecraft:spawns_on_block_filter":[
+				"minecraft:spawns_on_block_filter": [
 					"minecraft:netherrack",
 					"minecraft:crimson_nylium",
 					"minecraft:basalt",
@@ -72,7 +72,7 @@
 					"max": "hard",
 					"min": "hard"
 				},
-				"minecraft:spawns_on_block_filter":[
+				"minecraft:spawns_on_block_filter": [
 					"minecraft:netherrack",
 					"minecraft:crimson_nylium",
 					"minecraft:basalt",
@@ -102,9 +102,13 @@
 					"underground": 1,
 					"surface": 1
 				},
-				"minecraft:world_age_filter": {"min": 10368000},
-				"minecraft:spawns_on_block_filter":["minecraft:air"],
-				"minecraft:herd":{
+				"minecraft:world_age_filter": {
+					"min": 10368000
+				},
+				"minecraft:spawns_on_block_filter": [
+					"minecraft:air"
+				],
+				"minecraft:herd": {
 					"min_size": 1,
 					"max_size": 3
 				},

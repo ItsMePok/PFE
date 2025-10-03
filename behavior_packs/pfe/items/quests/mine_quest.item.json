@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:mine_quest",
+			"identifier": "poke_pfe:mine_quest",
 			"menu_category": {
 				"category": "items"
 			}
@@ -68,37 +68,37 @@
 					"tokenAmount": 1
 				},
 				{
-					"item": "poke:raw_cobalt",
+					"item": "poke_pfe:raw_cobalt",
 					"amount": 8,
 					"translationString": "%poke_pfe.raw_cobalt (%poke_pfe.tag)",
 					"tokenAmount": 2
 				},
 				{
-					"item": "poke:raw_shade",
+					"item": "poke_pfe:raw_shade",
 					"amount": 8,
 					"translationString": "%poke_pfe.raw_shade (%poke_pfe.tag)",
 					"tokenAmount": 4
 				},
 				{
-					"item": "poke:raw_onyx",
+					"item": "poke_pfe:raw_onyx",
 					"amount": 4,
 					"translationString": "%poke_pfe.raw_onyx (%poke_pfe.tag)",
 					"tokenAmount": 5
 				},
 				{
-					"item": "poke:raw_demonic",
+					"item": "poke_pfe:raw_demonic",
 					"amount": 4,
 					"translationString": "%poke_pfe.raw_demonic (%poke_pfe.tag)",
 					"tokenAmount": 5
 				},
 				{
-					"item": "poke:raw_hellish",
+					"item": "poke_pfe:raw_hellish",
 					"amount": 6,
 					"translationString": "%poke_pfe.raw_hellish (%poke_pfe.tag)",
 					"tokenAmount": 4
 				},
 				{
-					"item": "poke:cobbled_limestone",
+					"item": "poke_pfe:cobbled_limestone",
 					"amount": 8,
 					"translationString": "%poke_pfe.cobbled_limestone (%poke_pfe.tag)",
 					"tokenAmount": 2

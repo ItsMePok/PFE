@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "poke:dragon",
+			"identifier": "poke_pfe:dragon",
 			"materials": {
 				"default": "entity_alphatest"
 			},

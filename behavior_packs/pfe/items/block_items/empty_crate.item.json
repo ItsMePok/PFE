@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:empty_crate"
+			"identifier": "poke_pfe:empty_crate"
 		},
 		"components": {
 			"minecraft:display_name": {
@@ -14,7 +14,7 @@
 			},
 			"minecraft:rarity": "common",
 			"minecraft:block_placer": {
-				"block": "poke:empty_crate",
+				"block": "poke_pfe:empty_crate",
 				"replace_block_item": true
 			}
 		}

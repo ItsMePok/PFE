@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_furnace": {
 		"description": {
-			"identifier": "poke:cheese"
+			"identifier": "poke_pfe:cheese"
 		},
 		"tags": [
 			"furnace",
@@ -10,7 +10,7 @@
 			"campfire",
 			"soul_campfire"
 		],
-		"input": "poke:milk_bottle",
-		"output": "poke:cheese"
+		"input": "poke_pfe:milk_bottle",
+		"output": "poke_pfe:cheese"
 	}
 }

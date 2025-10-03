@@ -2,9 +2,9 @@
 	"format_version": "1.21.110",
 	"minecraft:structure_template_feature": {
 		"description": {
-			"identifier": "poke:broken_conduit_cold.feature"
+			"identifier": "poke_pfe:broken_conduit_cold.feature"
 		},
-		"structure_name": "poke:broken_conduit_cold",
+		"structure_name": "poke_pfe:broken_conduit_cold",
 		"adjustment_radius": 16,
 		"facing_direction": "random",
 		"constraints": {

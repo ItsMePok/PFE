@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:trash_lid",
+			"identifier": "poke_pfe:trash_lid",
 			"menu_category": {
 				"category": "equipment"
 			}

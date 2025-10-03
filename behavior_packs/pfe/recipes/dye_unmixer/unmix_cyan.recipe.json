@@ -2,7 +2,7 @@
     "format_version": "1.20.60",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "poke:unmix_cyan"
+            "identifier": "poke_pfe:unmix_cyan"
         },
         "pattern": [
             "D"

@@ -2,93 +2,93 @@
 	"format_version": "1.21.110",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "poke:retro_llama",
+			"identifier": "poke_pfe:retro_llama",
 			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false
 		},
 		"component_groups": {
-			"poke:decor_white": {
+			"poke_pfe:decor_white": {
 				"minecraft:mark_variant": {
 					"value": 1
 				}
 			},
-			"poke:decor_orange": {
+			"poke_pfe:decor_orange": {
 				"minecraft:mark_variant": {
 					"value": 2
 				}
 			},
-			"poke:decor_magenta": {
+			"poke_pfe:decor_magenta": {
 				"minecraft:mark_variant": {
 					"value": 3
 				}
 			},
-			"poke:decor_light_blue": {
+			"poke_pfe:decor_light_blue": {
 				"minecraft:mark_variant": {
 					"value": 4
 				}
 			},
-			"poke:decor_yellow": {
+			"poke_pfe:decor_yellow": {
 				"minecraft:mark_variant": {
 					"value": 5
 				}
 			},
-			"poke:decor_lime": {
+			"poke_pfe:decor_lime": {
 				"minecraft:mark_variant": {
 					"value": 6
 				}
 			},
-			"poke:decor_pink": {
+			"poke_pfe:decor_pink": {
 				"minecraft:mark_variant": {
 					"value": 7
 				}
 			},
-			"poke:decor_gray": {
+			"poke_pfe:decor_gray": {
 				"minecraft:mark_variant": {
 					"value": 8
 				}
 			},
-			"poke:decor_silver": {
+			"poke_pfe:decor_silver": {
 				"minecraft:mark_variant": {
 					"value": 9
 				}
 			},
-			"poke:decor_cyan": {
+			"poke_pfe:decor_cyan": {
 				"minecraft:mark_variant": {
 					"value": 10
 				}
 			},
-			"poke:decor_purple": {
+			"poke_pfe:decor_purple": {
 				"minecraft:mark_variant": {
 					"value": 11
 				}
 			},
-			"poke:decor_blue": {
+			"poke_pfe:decor_blue": {
 				"minecraft:mark_variant": {
 					"value": 12
 				}
 			},
-			"poke:decor_brown": {
+			"poke_pfe:decor_brown": {
 				"minecraft:mark_variant": {
 					"value": 13
 				}
 			},
-			"poke:decor_green": {
+			"poke_pfe:decor_green": {
 				"minecraft:mark_variant": {
 					"value": 14
 				}
 			},
-			"poke:decor_red": {
+			"poke_pfe:decor_red": {
 				"minecraft:mark_variant": {
 					"value": 15
 				}
 			},
-			"poke:decor_black": {
+			"poke_pfe:decor_black": {
 				"minecraft:mark_variant": {
 					"value": 16
 				}
 			},
-			"poke:decor_default": {
+			"poke_pfe:decor_default": {
 				"minecraft:mark_variant": {
 					"value": 17
 				}
@@ -157,7 +157,7 @@
 							}
 						},
 						{
-							"mate_type": "poke:retro_llama",
+							"mate_type": "poke_pfe:retro_llama",
 							"baby_type": "minecraft:llama",
 							"breed_event": {
 								"event": "minecraft:entity_born",
@@ -425,7 +425,7 @@
 						"slot": 1,
 						"item": "carpet",
 						"on_equip": {
-							//"event": "poke:carpet_check",
+							//"event": "poke_pfe:carpet_check",
 							"filters": {
 								"any_of": [
 									{
@@ -433,7 +433,7 @@
 										"value": "white_carpet",
 										"subject": "self",
 										"domain": "inventory",
-										"event": "poke:decor_white",
+										"event": "poke_pfe:decor_white",
 										"target": "self"
 									},
 									{
@@ -441,7 +441,7 @@
 										"value": "orange_carpet",
 										"subject": "self",
 										"domain": "inventory",
-										"event": "poke:decor_orange",
+										"event": "poke_pfe:decor_orange",
 										"target": "self"
 									},
 									{
@@ -449,7 +449,7 @@
 										"value": "magenta_carpet",
 										"subject": "self",
 										"domain": "inventory",
-										"event": "poke:decor_magenta",
+										"event": "poke_pfe:decor_magenta",
 										"target": "self"
 									},
 									{
@@ -457,7 +457,7 @@
 										"value": "light_blue_carpet",
 										"subject": "self",
 										"domain": "inventory",
-										"event": "poke:decor_light_blue",
+										"event": "poke_pfe:decor_light_blue",
 										"target": "self"
 									},
 									{
@@ -465,7 +465,7 @@
 										"value": "yellow_carpet",
 										"subject": "self",
 										"domain": "inventory",
-										"event": "poke:decor_yellow",
+										"event": "poke_pfe:decor_yellow",
 										"target": "self"
 									},
 									{
@@ -473,7 +473,7 @@
 										"value": "lime_carpet",
 										"subject": "self",
 										"domain": "inventory",
-										"event": "poke:decor_lime",
+										"event": "poke_pfe:decor_lime",
 										"target": "self"
 									},
 									{
@@ -481,7 +481,7 @@
 										"value": "pink_carpet",
 										"subject": "self",
 										"domain": "inventory",
-										"event": "poke:decor_pink",
+										"event": "poke_pfe:decor_pink",
 										"target": "self"
 									},
 									{
@@ -489,7 +489,7 @@
 										"value": "gray_carpet",
 										"subject": "self",
 										"domain": "inventory",
-										"event": "poke:decor_gray",
+										"event": "poke_pfe:decor_gray",
 										"target": "self"
 									},
 									{
@@ -497,7 +497,7 @@
 										"value": "light_gray_carpet",
 										"subject": "self",
 										"domain": "inventory",
-										"event": "poke:decor_silver",
+										"event": "poke_pfe:decor_silver",
 										"target": "self"
 									},
 									{
@@ -505,7 +505,7 @@
 										"value": "cyan_carpet",
 										"subject": "self",
 										"domain": "inventory",
-										"event": "poke:decor_cyan",
+										"event": "poke_pfe:decor_cyan",
 										"target": "self"
 									},
 									{
@@ -513,7 +513,7 @@
 										"value": "purple_carpet",
 										"subject": "self",
 										"domain": "inventory",
-										"event": "poke:decor_purple",
+										"event": "poke_pfe:decor_purple",
 										"target": "self"
 									},
 									{
@@ -521,7 +521,7 @@
 										"value": "blue_carpet",
 										"subject": "self",
 										"domain": "inventory",
-										"event": "poke:decor_blue",
+										"event": "poke_pfe:decor_blue",
 										"target": "self"
 									},
 									{
@@ -529,7 +529,7 @@
 										"value": "brown_carpet",
 										"subject": "self",
 										"domain": "inventory",
-										"event": "poke:decor_brown",
+										"event": "poke_pfe:decor_brown",
 										"target": "self"
 									},
 									{
@@ -537,7 +537,7 @@
 										"value": "green_carpet",
 										"subject": "self",
 										"domain": "inventory",
-										"event": "poke:decor_green",
+										"event": "poke_pfe:decor_green",
 										"target": "self"
 									},
 									{
@@ -545,7 +545,7 @@
 										"value": "red_carpet",
 										"subject": "self",
 										"domain": "inventory",
-										"event": "poke:decor_red",
+										"event": "poke_pfe:decor_red",
 										"target": "self"
 									},
 									{
@@ -553,14 +553,14 @@
 										"value": "black_carpet",
 										"subject": "self",
 										"domain": "armor",
-										"event": "poke:decor_black",
+										"event": "poke_pfe:decor_black",
 										"target": "self"
 									}
 								]
 							}
 						},
 						"on_unequip": {
-							"event": "poke:unequip_carpet",
+							"event": "poke_pfe:unequip_carpet",
 							"target": "self"
 						},
 						"accepted_items": [
@@ -772,222 +772,222 @@
 			}
 		},
 		"events": {
-			"poke:decor_white": {
+			"poke_pfe:decor_white": {
 				"add": {
 					"component_groups": [
-						"poke:decor_white"
+						"poke_pfe:decor_white"
 					]
 				},
 				"remove": {
 					"component_groups": [
-						"poke:decor_default"
+						"poke_pfe:decor_default"
 					]
 				}
 			},
-			"poke:decor_orange": {
+			"poke_pfe:decor_orange": {
 				"add": {
 					"component_groups": [
-						"poke:decor_orange"
+						"poke_pfe:decor_orange"
 					]
 				},
 				"remove": {
 					"component_groups": [
-						"poke:decor_default"
+						"poke_pfe:decor_default"
 					]
 				}
 			},
-			"poke:decor_magenta": {
+			"poke_pfe:decor_magenta": {
 				"add": {
 					"component_groups": [
-						"poke:decor_magenta"
+						"poke_pfe:decor_magenta"
 					]
 				},
 				"remove": {
 					"component_groups": [
-						"poke:decor_default"
+						"poke_pfe:decor_default"
 					]
 				}
 			},
-			"poke:decor_light_blue": {
+			"poke_pfe:decor_light_blue": {
 				"add": {
 					"component_groups": [
-						"poke:decor_light_blue"
+						"poke_pfe:decor_light_blue"
 					]
 				},
 				"remove": {
 					"component_groups": [
-						"poke:decor_default"
+						"poke_pfe:decor_default"
 					]
 				}
 			},
-			"poke:decor_yellow": {
+			"poke_pfe:decor_yellow": {
 				"add": {
 					"component_groups": [
-						"poke:decor_yellow"
+						"poke_pfe:decor_yellow"
 					]
 				},
 				"remove": {
 					"component_groups": [
-						"poke:decor_default"
+						"poke_pfe:decor_default"
 					]
 				}
 			},
-			"poke:decor_lime": {
+			"poke_pfe:decor_lime": {
 				"add": {
 					"component_groups": [
-						"poke:decor_lime"
+						"poke_pfe:decor_lime"
 					]
 				},
 				"remove": {
 					"component_groups": [
-						"poke:decor_default"
+						"poke_pfe:decor_default"
 					]
 				}
 			},
-			"poke:decor_pink": {
+			"poke_pfe:decor_pink": {
 				"add": {
 					"component_groups": [
-						"poke:decor_pink"
+						"poke_pfe:decor_pink"
 					]
 				},
 				"remove": {
 					"component_groups": [
-						"poke:decor_default"
+						"poke_pfe:decor_default"
 					]
 				}
 			},
-			"poke:decor_gray": {
+			"poke_pfe:decor_gray": {
 				"add": {
 					"component_groups": [
-						"poke:decor_gray"
+						"poke_pfe:decor_gray"
 					]
 				},
 				"remove": {
 					"component_groups": [
-						"poke:decor_default"
+						"poke_pfe:decor_default"
 					]
 				}
 			},
-			"poke:decor_silver": {
+			"poke_pfe:decor_silver": {
 				"add": {
 					"component_groups": [
-						"poke:decor_silver"
+						"poke_pfe:decor_silver"
 					]
 				},
 				"remove": {
 					"component_groups": [
-						"poke:decor_default"
+						"poke_pfe:decor_default"
 					]
 				}
 			},
-			"poke:decor_cyan": {
+			"poke_pfe:decor_cyan": {
 				"add": {
 					"component_groups": [
-						"poke:decor_cyan"
+						"poke_pfe:decor_cyan"
 					]
 				},
 				"remove": {
 					"component_groups": [
-						"poke:decor_default"
+						"poke_pfe:decor_default"
 					]
 				}
 			},
-			"poke:decor_purple": {
+			"poke_pfe:decor_purple": {
 				"add": {
 					"component_groups": [
-						"poke:decor_purple"
+						"poke_pfe:decor_purple"
 					]
 				},
 				"remove": {
 					"component_groups": [
-						"poke:decor_default"
+						"poke_pfe:decor_default"
 					]
 				}
 			},
-			"poke:decor_blue": {
+			"poke_pfe:decor_blue": {
 				"add": {
 					"component_groups": [
-						"poke:decor_blue"
+						"poke_pfe:decor_blue"
 					]
 				},
 				"remove": {
 					"component_groups": [
-						"poke:decor_default"
+						"poke_pfe:decor_default"
 					]
 				}
 			},
-			"poke:decor_brown": {
+			"poke_pfe:decor_brown": {
 				"add": {
 					"component_groups": [
-						"poke:decor_brown"
+						"poke_pfe:decor_brown"
 					]
 				},
 				"remove": {
 					"component_groups": [
-						"poke:decor_default"
+						"poke_pfe:decor_default"
 					]
 				}
 			},
-			"poke:decor_green": {
+			"poke_pfe:decor_green": {
 				"add": {
 					"component_groups": [
-						"poke:decor_green"
+						"poke_pfe:decor_green"
 					]
 				},
 				"remove": {
 					"component_groups": [
-						"poke:decor_default"
+						"poke_pfe:decor_default"
 					]
 				}
 			},
-			"poke:decor_red": {
+			"poke_pfe:decor_red": {
 				"add": {
 					"component_groups": [
-						"poke:decor_red"
+						"poke_pfe:decor_red"
 					]
 				},
 				"remove": {
 					"component_groups": [
-						"poke:decor_default"
+						"poke_pfe:decor_default"
 					]
 				}
 			},
-			"poke:decor_black": {
+			"poke_pfe:decor_black": {
 				"add": {
 					"component_groups": [
-						"poke:decor_black"
+						"poke_pfe:decor_black"
 					]
 				},
 				"remove": {
 					"component_groups": [
-						"poke:decor_default"
+						"poke_pfe:decor_default"
 					]
 				}
 			},
-			"poke:unequip_carpet": {
+			"poke_pfe:unequip_carpet": {
 				"add": {
 					"component_groups": [
-						"poke:decor_default"
+						"poke_pfe:decor_default"
 					]
 				},
 				"remove": {
 					"component_groups": [
-						"poke:decor_white",
-						"poke:decor_orange",
-						"poke:decor_magenta",
-						"poke:decor_light_blue",
-						"poke:decor_yellow",
-						"poke:decor_lime",
-						"poke:decor_pink",
-						"poke:decor_gray",
-						"poke:decor_silver",
-						"poke:decor_cyan",
-						"poke:decor_purple",
-						"poke:decor_blue",
-						"poke:decor_brown",
-						"poke:decor_green",
-						"poke:decor_red",
-						"poke:decor_black"
+						"poke_pfe:decor_white",
+						"poke_pfe:decor_orange",
+						"poke_pfe:decor_magenta",
+						"poke_pfe:decor_light_blue",
+						"poke_pfe:decor_yellow",
+						"poke_pfe:decor_lime",
+						"poke_pfe:decor_pink",
+						"poke_pfe:decor_gray",
+						"poke_pfe:decor_silver",
+						"poke_pfe:decor_cyan",
+						"poke_pfe:decor_purple",
+						"poke_pfe:decor_blue",
+						"poke_pfe:decor_brown",
+						"poke_pfe:decor_green",
+						"poke_pfe:decor_red",
+						"poke_pfe:decor_black"
 					]
 				}
 			},
@@ -1017,7 +1017,7 @@
 							"component_groups": [
 								"minecraft:llama_adult",
 								"minecraft:llama_wandering_trader",
-								"poke:decor_default"
+								"poke_pfe:decor_default"
 							]
 						}
 					},
@@ -1196,7 +1196,7 @@
 				"add": {
 					"component_groups": [
 						"minecraft:llama_baby",
-						"poke:decor_default"
+						"poke_pfe:decor_default"
 					]
 				},
 				"trigger": "minecraft:add_attributes"
@@ -1206,7 +1206,7 @@
 					"component_groups": [
 						"minecraft:llama_adult",
 						"minecraft:llama_wild",
-						"poke:decor_default"
+						"poke_pfe:decor_default"
 					]
 				},
 				"trigger": "minecraft:add_attributes"

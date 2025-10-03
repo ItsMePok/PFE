@@ -2,26 +2,26 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:cut_galaxy_slab_to_cut_galaxy"
+			"identifier": "poke_pfe:cut_galaxy_slab_to_cut_galaxy"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:cut_galaxy_slab"
+				"item": "poke_pfe:cut_galaxy_slab"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:cut_galaxy_slab"
+				"item": "poke_pfe:cut_galaxy_slab"
 			}
 		},
 		"pattern": [
 			"CC"
 		],
 		"result": {
-			"item": "poke:cut_galaxy"
+			"item": "poke_pfe:cut_galaxy"
 		},
 		"priority": 2
 	}

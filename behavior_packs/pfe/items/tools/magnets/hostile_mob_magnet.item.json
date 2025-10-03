@@ -2,7 +2,7 @@
   "format_version": "1.21.110",
   "minecraft:item": {
     "description": {
-      "identifier": "poke:hostile_mob_magnet",
+      "identifier": "poke_pfe:hostile_mob_magnet",
       "menu_category": {
         "category": "equipment"
       }
@@ -15,7 +15,7 @@
       "poke_pfe:upgradeable": {
         "version": 1,
         "upgrade_ids": [
-          "pfe:persistence"
+          "poke_pfe:persistence"
         ]
       },
       "minecraft:icon": "poke_pfe_hostile_mob_magnet",
@@ -31,13 +31,13 @@
         "repair_items": [
           {
             "items": [
-              "poke:repair_core"
+              "poke_pfe:repair_core"
             ],
             "repair_amount": "query.max_durability"
           },
           {
             "items": [
-              "poke:magnet_core"
+              "poke_pfe:magnet_core"
             ],
             "repair_amount": "query.max_durability*0.25"
           }
@@ -46,7 +46,7 @@
       "minecraft:hand_equipped": true,
       "minecraft:tags": {
         "tags": [
-          "pfe:is_magnet"
+          "poke_pfe:is_magnet"
         ]
       },
       "poke_pfe:run_command": {
@@ -56,13 +56,13 @@
         "trigger_cooldown": true,
         "can_be_disabled": false
       },
-      "poke:normalMining": {},
+      "poke_pfe:normalMining": {},
       "minecraft:use_modifiers": {
         "use_duration": 0,
         "movement_modifier": 1
       },
       "minecraft:cooldown": {
-        "category": "poke:hostile_mob_magnet",
+        "category": "poke_pfe:hostile_mob_magnet",
         "duration": 0.2
       }
     }

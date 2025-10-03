@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:panic_button"
+			"identifier": "poke_pfe:panic_button"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,28 +14,28 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:electric_component"
+				"item": "poke_pfe:electric_component"
 			}
 		],
 		"key": {
 			"A": {
-				"item": "poke:antenna"
+				"item": "poke_pfe:antenna"
 			},
 			"B": {
-				"item": "poke:red_button"
+				"item": "poke_pfe:red_button"
 			},
 			"E": {
-				"item": "poke:electric_component"
+				"item": "poke_pfe:electric_component"
 			},
 			"W": {
-				"item": "poke:wire"
+				"item": "poke_pfe:wire"
 			},
 			"P": {
-				"item": "poke:plastic"
+				"item": "poke_pfe:plastic"
 			}
 		},
 		"result": {
-			"item": "poke:panic_button"
+			"item": "poke_pfe:panic_button"
 		}
 	}
 }

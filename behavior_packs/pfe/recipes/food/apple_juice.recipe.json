@@ -2,13 +2,13 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_brewing_mix": {
 		"description": {
-			"identifier": "poke:apple_juice"
+			"identifier": "poke_pfe:apple_juice"
 		},
 		"tags": [
 			"brewing_stand"
 		],
-		"input": "poke:sugar_water",
+		"input": "poke_pfe:sugar_water",
 		"reagent": "apple",
-		"output": "poke:apple_juice"
+		"output": "poke_pfe:apple_juice"
 	}
 }

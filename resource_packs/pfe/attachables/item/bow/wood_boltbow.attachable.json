@@ -2,7 +2,7 @@
   "format_version": "1.10.0",
   "minecraft:attachable": {
     "description": {
-      "identifier": "poke:wood_boltbow",
+      "identifier": "poke_pfe:wood_boltbow",
       "materials": {
         "default": "entity_alphatest",
         "enchanted": "entity_alphatest_glint"
@@ -23,15 +23,17 @@
       "scripts": {
         "animate": [
           {
-						"first_person_hold": "c.is_first_person"
-					},
-					{
-						"third_person_hold": "!c.is_first_person"
-					},
+            "first_person_hold": "c.is_first_person"
+          },
+          {
+            "third_person_hold": "!c.is_first_person"
+          },
           "controller"
         ]
       },
-      "render_controllers": ["controller.render.default"]
+      "render_controllers": [
+        "controller.render.default"
+      ]
     }
   }
 }

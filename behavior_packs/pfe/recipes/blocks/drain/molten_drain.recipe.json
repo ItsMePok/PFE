@@ -6,12 +6,12 @@
     },
     "unlock": [
       {
-        "item": "poke:molten_slimeball"
+        "item": "poke_pfe:molten_slimeball"
       }
     ],
     "key": {
       "X": {
-        "item": "poke:molten_slimeball"
+        "item": "poke_pfe:molten_slimeball"
       }
     },
     "result": {
@@ -23,7 +23,7 @@
       " X ",
       "X X"
     ],
-    "group": "poke:drain",
+    "group": "poke_pfe:drain",
     "tags": [
       "crafting_table"
     ]

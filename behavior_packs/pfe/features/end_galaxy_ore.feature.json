@@ -2,13 +2,13 @@
   "format_version": "1.21.110",
   "minecraft:ore_feature": {
     "description": {
-      "identifier": "poke:end_galaxy_ore.feature"
+      "identifier": "poke_pfe:end_galaxy_ore.feature"
     },
     "count": 9,
     "replace_rules": [
       {
         "places_block": {
-          "name": "poke:galaxy_ore",
+          "name": "poke_pfe:galaxy_ore",
           "states": {}
         },
         "may_replace": [
@@ -40,7 +40,7 @@
       },
       {
         "places_block": {
-          "name": "poke:end_galaxy_ore",
+          "name": "poke_pfe:end_galaxy_ore",
           "states": {}
         },
         "may_replace": [

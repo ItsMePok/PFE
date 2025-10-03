@@ -5,7 +5,7 @@
             "crafting_table"
         ],
         "description": {
-            "identifier": "poke:bundled_feathers"
+            "identifier": "poke_pfe:bundled_feathers"
         },
         "unlock": [
             {
@@ -19,7 +19,7 @@
             }
         ],
         "result": {
-            "item": "poke:bundled_feathers"
+            "item": "poke_pfe:bundled_feathers"
         }
     }
 }

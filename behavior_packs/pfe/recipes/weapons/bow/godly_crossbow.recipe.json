@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:godly_crossbow"
+			"identifier": "poke_pfe:godly_crossbow"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,7 +14,7 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:godly_ingot"
+				"item": "poke_pfe:godly_ingot"
 			},
 			{
 				"item": "arrow"
@@ -22,7 +22,7 @@
 		],
 		"key": {
 			"V": {
-				"item": "poke:godly_ingot"
+				"item": "poke_pfe:godly_ingot"
 			},
 			"S": {
 				"item": "minecraft:string"
@@ -35,7 +35,7 @@
 			}
 		},
 		"result": {
-			"item": "poke:godly_crossbow"
+			"item": "poke_pfe:godly_crossbow"
 		}
 	}
 }

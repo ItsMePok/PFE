@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:budificator"
+			"identifier": "poke_pfe:budificator"
 		},
 		"tags": [
 			"crafting_table"
@@ -17,7 +17,7 @@
 				"item": "amethyst_shard"
 			},
 			{
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			}
 		],
 		"key": {
@@ -28,15 +28,15 @@
 				"item": "amethyst_shard"
 			},
 			"c": {
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			},
 			"T": {
-				"item": "poke:demonic_stick"
+				"item": "poke_pfe:demonic_stick"
 			}
 		},
 		"result": [
 			{
-				"item": "poke:budificator"
+				"item": "poke_pfe:budificator"
 			}
 		]
 	}

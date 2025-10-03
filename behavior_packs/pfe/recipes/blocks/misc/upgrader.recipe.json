@@ -11,7 +11,7 @@
     ],
     "unlock": [
       {
-        "item": "poke:cobalt_ingot"
+        "item": "poke_pfe:cobalt_ingot"
       },
       {
         "item": "minecraft:copper_ingot"
@@ -20,7 +20,7 @@
         "item": "minecraft:anvil"
       },
       {
-        "item": "poke:upgrade_core"
+        "item": "poke_pfe:upgrade_core"
       }
     ],
     "pattern": [
@@ -30,7 +30,7 @@
     ],
     "key": {
       "C": {
-        "item": "poke:cobalt_ingot"
+        "item": "poke_pfe:cobalt_ingot"
       },
       "X": {
         "item": "minecraft:copper_ingot"
@@ -39,7 +39,7 @@
         "item": "minecraft:anvil"
       },
       "U": {
-        "item": "poke:upgrade_core"
+        "item": "poke_pfe:upgrade_core"
       }
     },
     "result": {

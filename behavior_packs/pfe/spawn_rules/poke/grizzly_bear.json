@@ -2,7 +2,7 @@
 	"format_version": "1.8.0",
 	"minecraft:spawn_rules": {
 		"description": {
-			"identifier": "poke:grizzly_bear",
+			"identifier": "poke_pfe:grizzly_bear",
 			"population_control": "monster"
 		},
 		"conditions": [
@@ -22,7 +22,9 @@
 						}
 					]
 				},
-				"minecraft:weight": {"default": 25}
+				"minecraft:weight": {
+					"default": 25
+				}
 			}
 		]
 	}

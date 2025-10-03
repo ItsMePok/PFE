@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:viking_helmet",
+			"identifier": "poke_pfe:viking_helmet",
 			"menu_category": {
 				"category": "equipment"
 			}

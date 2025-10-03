@@ -19,7 +19,7 @@
       },
       "minecraft:tags": {
         "tags": [
-          "poke:upgrade_core"
+          "poke_pfe:upgrade_core"
         ]
       },
       "minecraft:rarity": "common"

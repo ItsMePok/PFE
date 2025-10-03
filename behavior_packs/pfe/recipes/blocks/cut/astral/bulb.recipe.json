@@ -2,22 +2,22 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:astral_bulb"
+			"identifier": "poke_pfe:astral_bulb"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:astral_ingot"
+				"item": "poke_pfe:astral_ingot"
 			},
 			{
-				"item": "poke:cut_astral"
+				"item": "poke_pfe:cut_astral"
 			}
 		],
 		"key": {
 			"G": {
-				"item": "poke:cut_astral"
+				"item": "poke_pfe:cut_astral"
 			},
 			"C": {
 				"item": "glowstone"
@@ -29,7 +29,7 @@
 			"GGG"
 		],
 		"result": {
-			"item": "poke:astral_bulb",
+			"item": "poke_pfe:astral_bulb",
 			"count": 6
 		}
 	}

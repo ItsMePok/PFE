@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:ruin_key",
+			"identifier": "poke_pfe:ruin_key",
 			"menu_category": {
 				"category": "items"
 			}

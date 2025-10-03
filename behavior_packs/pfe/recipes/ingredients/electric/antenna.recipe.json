@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:antenna"
+			"identifier": "poke_pfe:antenna"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,7 +14,7 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:electric_component"
+				"item": "poke_pfe:electric_component"
 			}
 		],
 		"key": {
@@ -22,14 +22,14 @@
 				"item": "iron_bars"
 			},
 			"E": {
-				"item": "poke:electric_component"
+				"item": "poke_pfe:electric_component"
 			},
 			"X": {
-				"item": "poke:receiver"
+				"item": "poke_pfe:receiver"
 			}
 		},
 		"result": {
-			"item": "poke:antenna",
+			"item": "poke_pfe:antenna",
 			"count": 1
 		}
 	}

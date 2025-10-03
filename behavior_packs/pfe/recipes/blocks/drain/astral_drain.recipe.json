@@ -6,12 +6,12 @@
     },
     "unlock": [
       {
-        "item": "poke:astral_ingot"
+        "item": "poke_pfe:astral_ingot"
       }
     ],
     "key": {
       "X": {
-        "item": "poke:astral_ingot"
+        "item": "poke_pfe:astral_ingot"
       }
     },
     "result": {
@@ -23,7 +23,7 @@
       " X ",
       "X X"
     ],
-    "group": "poke:drain",
+    "group": "poke_pfe:drain",
     "tags": [
       "crafting_table"
     ]

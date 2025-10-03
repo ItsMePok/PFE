@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_furnace": {
 		"description": {
-			"identifier": "poke:cooked_duck"
+			"identifier": "poke_pfe:cooked_duck"
 		},
 		"tags": [
 			"smoker",
@@ -12,10 +12,10 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:raw_duck"
+				"item": "poke_pfe:raw_duck"
 			}
 		],
-		"input": "poke:raw_duck",
-		"output": "poke:cooked_duck"
+		"input": "poke_pfe:raw_duck",
+		"output": "poke_pfe:cooked_duck"
 	}
 }

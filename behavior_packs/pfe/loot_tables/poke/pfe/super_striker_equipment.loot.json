@@ -5,7 +5,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "poke:void_crossbow",
+          "name": "poke_pfe:void_crossbow",
           "functions": [
             {
               "function": "enchant_randomly",
@@ -16,7 +16,7 @@
         },
         {
           "type": "item",
-          "name": "poke:void_crossbow",
+          "name": "poke_pfe:void_crossbow",
           "functions": [
             {
               "function": "enchant_randomly",
@@ -27,7 +27,7 @@
         },
         {
           "type": "item",
-          "name": "poke:void_crossbow",
+          "name": "poke_pfe:void_crossbow",
           "weight": 1
         }
       ]

@@ -2,14 +2,14 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "poke:cassette_mc_disc_mall"
+			"identifier": "poke_pfe:cassette_mc_disc_mall"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:empty_cassette"
+				"item": "poke_pfe:empty_cassette"
 			},
 			{
 				"item": "music_disc_mall"
@@ -17,14 +17,14 @@
 		],
 		"ingredients": [
 			{
-				"item": "poke:empty_cassette"
+				"item": "poke_pfe:empty_cassette"
 			},
 			{
 				"item": "music_disc_mall"
 			}
 		],
 		"result": {
-			"item": "poke:cassette_mc_disc_mall"
+			"item": "poke_pfe:cassette_mc_disc_mall"
 		}
 	}
 }

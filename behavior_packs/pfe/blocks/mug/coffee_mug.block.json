@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:coffee_mug",
+			"identifier": "poke_pfe:coffee_mug",
 			"traits": {
 				"minecraft:placement_direction": {
 					"enabled_states": [

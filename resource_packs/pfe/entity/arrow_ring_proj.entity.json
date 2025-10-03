@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "poke:arrow_ring_proj",
+			"identifier": "poke_pfe:arrow_ring_proj",
 			"materials": {
 				"default": "arrow" //2
 			},

@@ -2,7 +2,7 @@
 	"format_version": "1.20.10",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:block_breaker"
+			"identifier": "poke_pfe:block_breaker"
 		},
 		"tags": [
 			"crafting_table"
@@ -17,25 +17,25 @@
 				"tag": "minecraft:planks"
 			},
 			{
-				"item": "poke:cobalt_ingot"
+				"item": "poke_pfe:cobalt_ingot"
 			},
 			{
-				"item": "poke:iron_haxel"
+				"item": "poke_pfe:iron_haxel"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:cobalt_ingot"
+				"item": "poke_pfe:cobalt_ingot"
 			},
 			"P": {
 				"tag": "minecraft:planks"
 			},
 			"I": {
-				"item": "poke:iron_haxel"
+				"item": "poke_pfe:iron_haxel"
 			}
 		},
 		"result": {
-			"item": "poke:block_breaker"
+			"item": "poke_pfe:block_breaker"
 		}
 	}
 }

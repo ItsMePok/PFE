@@ -2,29 +2,29 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "poke:ice_ring"
+			"identifier": "poke_pfe:ice_ring"
 		},
-		"group": "pfe:rings",
+		"group": "poke_pfe:rings",
 		"ingredients": [
 			{
-				"item": "poke:gem_holder",
+				"item": "poke_pfe:gem_holder",
 				"count": 1
 			},
 			{
-				"item": "poke:ice_gem",
+				"item": "poke_pfe:ice_gem",
 				"count": 1
 			}
 		],
 		"unlock": [
 			{
-				"item": "poke:ice_gem"
+				"item": "poke_pfe:ice_gem"
 			}
 		],
 		"tags": [
 			"crafting_table"
 		],
 		"result": {
-			"item": "poke:ice_ring",
+			"item": "poke_pfe:ice_ring",
 			"count": 1
 		}
 	}

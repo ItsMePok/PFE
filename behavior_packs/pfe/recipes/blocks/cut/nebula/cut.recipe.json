@@ -2,19 +2,19 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:cut_nebula_crafting_table"
+			"identifier": "poke_pfe:cut_nebula_crafting_table"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:nebula_ingot"
+				"item": "poke_pfe:nebula_ingot"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:nebula_block"
+				"item": "poke_pfe:nebula_block"
 			}
 		},
 		"pattern": [
@@ -22,7 +22,7 @@
 			"CC"
 		],
 		"result": {
-			"item": "poke:cut_nebula",
+			"item": "poke_pfe:cut_nebula",
 			"count": 12
 		},
 		"priority": 0

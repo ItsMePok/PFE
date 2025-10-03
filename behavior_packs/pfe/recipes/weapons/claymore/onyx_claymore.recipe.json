@@ -15,16 +15,16 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:onyx_ingot"
+				"item": "poke_pfe:onyx_ingot"
 			},
 			{
-				"item": "poke:onyx_block"
+				"item": "poke_pfe:onyx_block"
 			},
 			{
-				"item": "poke:onyx_shaft"
+				"item": "poke_pfe:onyx_shaft"
 			},
 			{
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			},
 			{
 				"item": "poke_pfe:amethyst_claymore"
@@ -32,16 +32,16 @@
 		],
 		"key": {
 			"I": {
-				"item": "poke:onyx_ingot"
+				"item": "poke_pfe:onyx_ingot"
 			},
 			"B": {
-				"item": "poke:onyx_block"
+				"item": "poke_pfe:onyx_block"
 			},
 			"S": {
-				"item": "poke:onyx_shaft"
+				"item": "poke_pfe:onyx_shaft"
 			},
 			"U": {
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			},
 			"C": {
 				"item": "poke_pfe:amethyst_claymore"

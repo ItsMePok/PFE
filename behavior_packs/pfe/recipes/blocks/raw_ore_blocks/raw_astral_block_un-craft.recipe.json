@@ -2,14 +2,14 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:raw_astral_block_un-craft"
+			"identifier": "poke_pfe:raw_astral_block_un-craft"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:raw_astral_block"
+				"item": "poke_pfe:raw_astral_block"
 			}
 		],
 		"pattern": [
@@ -17,11 +17,11 @@
 		],
 		"key": {
 			"#": {
-				"item": "poke:raw_astral_block"
+				"item": "poke_pfe:raw_astral_block"
 			}
 		},
 		"result": {
-			"item": "poke:raw_astral",
+			"item": "poke_pfe:raw_astral",
 			"count": 9
 		}
 	}

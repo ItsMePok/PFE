@@ -2,7 +2,7 @@
     "format_version": "1.20.60",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "poke:empty_mug"
+            "identifier": "poke_pfe:empty_mug"
         },
         "tags": [
             "crafting_table"
@@ -14,25 +14,25 @@
         ],
         "unlock": [
             {
-                "item": "poke:limestone"
+                "item": "poke_pfe:limestone"
             },
             {
-                "item": "poke:cobbled_limestone"
+                "item": "poke_pfe:cobbled_limestone"
             },
             {
-                "item": "poke:limestone_bricks"
+                "item": "poke_pfe:limestone_bricks"
             },
             {
-                "item": "poke:smooth_limestone"
+                "item": "poke_pfe:smooth_limestone"
             }
         ],
         "key": {
             "N": {
-                "item": "poke:smooth_limestone"
+                "item": "poke_pfe:smooth_limestone"
             }
         },
         "result": {
-            "item": "poke:empty_mug"
+            "item": "poke_pfe:empty_mug"
         }
     }
 }

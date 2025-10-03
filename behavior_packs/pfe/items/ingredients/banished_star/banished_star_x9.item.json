@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:banished_star_x9",
+			"identifier": "poke_pfe:banished_star_x9",
 			"menu_category": {
 				"category": "items"
 			}
@@ -14,11 +14,11 @@
 			"poke_pfe:icon_path": "textures/poke/pfe/banished_star_x9",
 			"minecraft:tags": {
 				"tags": [
-					"poke:banished_star"
+					"poke_pfe:banished_star"
 				]
 			},
 			"minecraft:rarity": "common",
-			"poke:consumeEffects": {},
+			"poke_pfe:consumeEffects": {},
 			"minecraft:icon": {
 				"textures": {
 					"default": "poke_pfe_banished_star_x9"

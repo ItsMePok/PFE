@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:hot_coco",
+			"identifier": "poke_pfe:hot_coco",
 			"menu_category": {
 				"category": "equipment",
 				"group": "minecraft:itemGroup.name.miscFood"

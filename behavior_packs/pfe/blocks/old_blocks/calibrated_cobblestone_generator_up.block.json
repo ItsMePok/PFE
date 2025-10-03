@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:calibrated_cobblestone_generator_up"
+			"identifier": "poke_pfe:calibrated_cobblestone_generator_up"
 		},
 		"components": {
 			"tag:pfe": {},
@@ -14,7 +14,7 @@
 				]
 			},
 			"poke_pfe:transform_block": {
-				"turns_into": "poke:cobblestone_gen{\"minecraft:block_face\":\"up\"}"
+				"turns_into": "poke_pfe:cobblestone_gen{\"minecraft:block_face\":\"up\"}"
 			}
 		}
 	}

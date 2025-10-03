@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "poke:gold_scythe",
+			"identifier": "poke_pfe:gold_scythe",
 			"render_controllers": [
 				"controller.render.item_default"
 			],

@@ -2,7 +2,7 @@
     "format_version": "1.21.110",
     "minecraft:block": {
       "description": {
-        "identifier": "poke:raw_onyx_block"
+        "identifier": "poke_pfe:raw_onyx_block"
       },
       "components": {
         "minecraft:display_name": "%poke_pfe.raw_onyx_block\n%poke_pfe.tag",

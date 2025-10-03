@@ -2,9 +2,9 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:void_bulb",
+			"identifier": "poke_pfe:void_bulb",
 			"states": {
-				"pfe:color": {
+				"poke_pfe:color": {
 					"values": {
 						"min": 0,
 						"max": 15

@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:platinum_token",
+			"identifier": "poke_pfe:platinum_token",
 			"menu_category": {
 				"category": "items"
 			}

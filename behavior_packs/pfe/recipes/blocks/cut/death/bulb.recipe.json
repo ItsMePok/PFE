@@ -2,22 +2,22 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:death_bulb"
+			"identifier": "poke_pfe:death_bulb"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:death_ingot"
+				"item": "poke_pfe:death_ingot"
 			},
 			{
-				"item": "poke:cut_death"
+				"item": "poke_pfe:cut_death"
 			}
 		],
 		"key": {
 			"G": {
-				"item": "poke:cut_death"
+				"item": "poke_pfe:cut_death"
 			},
 			"C": {
 				"item": "glowstone"
@@ -29,7 +29,7 @@
 			"GGG"
 		],
 		"result": {
-			"item": "poke:death_bulb",
+			"item": "poke_pfe:death_bulb",
 			"count": 6
 		}
 	}

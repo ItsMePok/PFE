@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:craft_quest_5"
+			"identifier": "poke_pfe:craft_quest_5"
 		},
 		"components": {
 			"minecraft:display_name": {
@@ -11,8 +11,8 @@
 			"minecraft:icon": "poke_pfe_craft_quest",
 			"minecraft:tags": {
 				"tags": [
-					"pfe:is_deprecated",
-					"pfe:old_craft_quest"
+					"poke_pfe:is_deprecated",
+					"poke_pfe:old_craft_quest"
 				]
 			}
 		}

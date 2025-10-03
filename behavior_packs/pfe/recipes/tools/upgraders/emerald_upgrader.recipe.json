@@ -2,7 +2,7 @@
     "format_version": "1.20.60",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "poke:emerald_upgrader"
+            "identifier": "poke_pfe:emerald_upgrader"
         },
         "tags": [
             "crafting_table"
@@ -18,7 +18,7 @@
                 "item": "emerald"
             },
             {
-                "item": "poke:diamond_upgrade_core"
+                "item": "poke_pfe:diamond_upgrade_core"
             }
         ],
         "key": {
@@ -29,14 +29,14 @@
                 "item": "emerald_block"
             },
             "Y": {
-                "item": "poke:diamond_upgrade_core"
+                "item": "poke_pfe:diamond_upgrade_core"
             },
             "Z": {
                 "item": "stick"
             }
         },
         "result": {
-            "item": "poke:emerald_upgrader"
+            "item": "poke_pfe:emerald_upgrader"
         }
     }
 }

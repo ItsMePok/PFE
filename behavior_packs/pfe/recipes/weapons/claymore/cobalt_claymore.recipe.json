@@ -15,10 +15,10 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:cobalt_ingot"
+				"item": "poke_pfe:cobalt_ingot"
 			},
 			{
-				"item": "poke:cobalt_block"
+				"item": "poke_pfe:cobalt_block"
 			},
 			{
 				"item": "minecraft:stick"
@@ -26,10 +26,10 @@
 		],
 		"key": {
 			"I": {
-				"item": "poke:cobalt_ingot"
+				"item": "poke_pfe:cobalt_ingot"
 			},
 			"B": {
-				"item": "poke:cobalt_block"
+				"item": "poke_pfe:cobalt_block"
 			},
 			"S": {
 				"item": "minecraft:stick"

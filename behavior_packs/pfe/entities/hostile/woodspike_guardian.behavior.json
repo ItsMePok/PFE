@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "poke:woodspike_guardian",
+			"identifier": "poke_pfe:woodspike_guardian",
 			"runtime_identifier": "minecraft:guardian",
 			"is_spawnable": true,
 			"is_summonable": true,
@@ -88,7 +88,7 @@
 				"name_actions": {
 					"name_filter": "despawn",
 					"on_named": {
-						"event": "poke:despawn",
+						"event": "poke_pfe:despawn",
 						"target": "self"
 					}
 				}

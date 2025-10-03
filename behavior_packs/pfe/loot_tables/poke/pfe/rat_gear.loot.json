@@ -1,7 +1,7 @@
 {
     "pools": [
-        {// Total Weight: 10
-            "rolls":1,
+        { // Total Weight: 10
+            "rolls": 1,
             "entries": [
                 {
                     "type": "empty",
@@ -9,22 +9,22 @@
                 },
                 {
                     "type": "item",
-                    "name": "poke:cheese",
+                    "name": "poke_pfe:cheese",
                     "weight": 1
                 },
                 {
                     "type": "item",
-                    "name": "poke:raw_sporefish",
+                    "name": "poke_pfe:raw_sporefish",
                     "weight": 1
                 },
                 {
                     "type": "item",
-                    "name": "poke:cobalt_ingot",
+                    "name": "poke_pfe:cobalt_ingot",
                     "weight": 1
                 },
                 {
                     "type": "item",
-                    "name": "poke:pocket_knife",
+                    "name": "poke_pfe:pocket_knife",
                     "weight": 1
                 },
                 {
@@ -39,7 +39,7 @@
                 },
                 {
                     "type": "item",
-                    "name": "poke:turnip",
+                    "name": "poke_pfe:turnip",
                     "weight": 1
                 }
             ]

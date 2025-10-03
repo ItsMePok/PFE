@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:empty_mug",
+			"identifier": "poke_pfe:empty_mug",
 			"menu_category": {
 				"category": "items"
 			},

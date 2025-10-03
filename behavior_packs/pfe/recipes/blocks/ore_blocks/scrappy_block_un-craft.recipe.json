@@ -2,19 +2,19 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "poke:scrappy_block"
+			"identifier": "poke_pfe:scrappy_block"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"ingredients": [
 			{
-				"item": "poke:scrappy_block"
+				"item": "poke_pfe:scrappy_block"
 			}
 		],
 		"unlock": [
 			{
-				"item": "poke:scrappy_block"
+				"item": "poke_pfe:scrappy_block"
 			}
 		],
 		"result": {

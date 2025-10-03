@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:grilled_cheese",
+			"identifier": "poke_pfe:grilled_cheese",
 			"menu_category": {
 				"category": "equipment",
 				"group": "minecraft:itemGroup.name.cookedFood"

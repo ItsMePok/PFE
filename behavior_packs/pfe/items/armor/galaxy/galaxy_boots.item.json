@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:galaxy_boots",
+			"identifier": "poke_pfe:galaxy_boots",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -33,20 +33,20 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core",
-							"poke:galaxy_block"
+							"poke_pfe:repair_core",
+							"poke_pfe:galaxy_block"
 						],
 						"repair_amount": "query.max_durability"
 					},
 					{
 						"items": [
-							"poke:galaxy_ingot"
+							"poke_pfe:galaxy_ingot"
 						],
 						"repair_amount": "query.max_durability*0.25"
 					},
 					{
 						"items": [
-							"poke:galaxy_nugget"
+							"poke_pfe:galaxy_nugget"
 						],
 						"repair_amount": "query.max_durability*0.028"
 					}

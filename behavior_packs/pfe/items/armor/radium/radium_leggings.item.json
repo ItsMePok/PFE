@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:radium_leggings",
+			"identifier": "poke_pfe:radium_leggings",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -33,14 +33,14 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:radium_ingot"
+							"poke_pfe:radium_ingot"
 						],
 						"repair_amount": "query.max_durability * 0.25"
 					},
 					{
 						"items": [
-							"poke:repair_core",
-							"poke:radium_block"
+							"poke_pfe:repair_core",
+							"poke_pfe:radium_block"
 						],
 						"repair_amount": "query.max_durability"
 					}

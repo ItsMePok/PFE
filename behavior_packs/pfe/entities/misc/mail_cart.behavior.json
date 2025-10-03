@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "poke:mail_cart",
+			"identifier": "poke_pfe:mail_cart",
 			"is_spawnable": false,
 			"is_summonable": true,
 			"is_experimental": false,
@@ -16,7 +16,7 @@
 			}
 		},
 		"events": {
-			"poke:death": {
+			"poke_pfe:death": {
 				"add": {
 					"component_groups": [
 						"despawn"
@@ -24,7 +24,7 @@
 				},
 				"queue_command": {
 					"command": [
-						"structure load \"poke:mail_cart\" ~~~"
+						"structure load \"poke_pfe:mail_cart\" ~~~"
 					]
 				}
 			}
@@ -55,7 +55,7 @@
 			},
 			"minecraft:on_hurt": {
 				"target": "self",
-				"event": "poke:death"
+				"event": "poke_pfe:death"
 			},
 			"minecraft:inventory": {
 				"container_type": "minecart_chest",

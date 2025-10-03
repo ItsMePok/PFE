@@ -2,23 +2,23 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "poke:astral_nugget"
+			"identifier": "poke_pfe:astral_nugget"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:astral_ingot"
+				"item": "poke_pfe:astral_ingot"
 			}
 		],
 		"ingredients": [
 			{
-				"item": "poke:astral_ingot"
+				"item": "poke_pfe:astral_ingot"
 			}
 		],
 		"result": {
-			"item": "poke:astral_nugget",
+			"item": "poke_pfe:astral_nugget",
 			"count": 9
 		},
 		"group": "nuggets"

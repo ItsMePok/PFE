@@ -2,18 +2,18 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "poke:radium_bricks_stonecut"
+			"identifier": "poke_pfe:radium_bricks_stonecut"
 		},
 		"tags": [
 			"stonecutter"
 		],
 		"ingredients": [
 			{
-				"item": "poke:radium_block"
+				"item": "poke_pfe:radium_block"
 			}
 		],
 		"result": {
-			"item": "poke:radium_bricks",
+			"item": "poke_pfe:radium_bricks",
 			"count": 4
 		}
 	}

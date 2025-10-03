@@ -2,7 +2,7 @@
     "format_version": "1.20.60",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "poke:obsidian_depressor"
+            "identifier": "poke_pfe:obsidian_depressor"
         },
         "tags": [
             "crafting_table"
@@ -18,7 +18,7 @@
                 "item": "obsidian"
             },
             {
-                "item": "poke:diamond_upgrade_core"
+                "item": "poke_pfe:diamond_upgrade_core"
             }
         ],
         "key": {
@@ -29,7 +29,7 @@
                 "item": "obsidian"
             },
             "Y": {
-                "item": "poke:diamond_upgrade_core"
+                "item": "poke_pfe:diamond_upgrade_core"
             },
             "Z": {
                 "item": "stick"
@@ -39,7 +39,7 @@
             }
         },
         "result": {
-            "item": "poke:obsidian_depressor"
+            "item": "poke_pfe:obsidian_depressor"
         }
     }
 }

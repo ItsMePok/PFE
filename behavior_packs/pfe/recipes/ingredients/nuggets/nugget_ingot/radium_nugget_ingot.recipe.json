@@ -2,24 +2,24 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "poke:radium_nugget_ingot"
+			"identifier": "poke_pfe:radium_nugget_ingot"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:radium_nugget"
+				"item": "poke_pfe:radium_nugget"
 			}
 		],
 		"ingredients": [
 			{
-				"item": "poke:radium_nugget",
+				"item": "poke_pfe:radium_nugget",
 				"count": 9
 			}
 		],
 		"result": {
-			"item": "poke:radium_ingot"
+			"item": "poke_pfe:radium_ingot"
 		}
 	}
 }

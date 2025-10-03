@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:crab_pal",
+			"identifier": "poke_pfe:crab_pal",
 			"menu_category": {
 				"category": "equipment"
 			}

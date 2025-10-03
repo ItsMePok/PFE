@@ -2,23 +2,23 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "poke:holy_nugget"
+			"identifier": "poke_pfe:holy_nugget"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:holy_ingot"
+				"item": "poke_pfe:holy_ingot"
 			}
 		],
 		"ingredients": [
 			{
-				"item": "poke:holy_ingot"
+				"item": "poke_pfe:holy_ingot"
 			}
 		],
 		"result": {
-			"item": "poke:holy_nugget",
+			"item": "poke_pfe:holy_nugget",
 			"count": 9
 		},
 		"group": "nuggets"

@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:chiseled_cobalt",
+			"identifier": "poke_pfe:chiseled_cobalt",
 			"menu_category": {
 				"category": "construction"
 			}

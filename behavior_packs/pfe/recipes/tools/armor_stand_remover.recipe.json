@@ -2,7 +2,7 @@
     "format_version": "1.20.60",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "poke:armor_stand_remover"
+            "identifier": "poke_pfe:armor_stand_remover"
         },
         "tags": [
             "crafting_table"
@@ -14,40 +14,40 @@
         ],
         "unlock": [
             {
-                "item": "poke:pocket_knife"
+                "item": "poke_pfe:pocket_knife"
             },
             {
-                "item": "poke:plastic"
+                "item": "poke_pfe:plastic"
             },
             {
-                "item": "poke:electric_component"
+                "item": "poke_pfe:electric_component"
             },
             {
                 "item": "armor_stand"
             },
             {
-                "item": "poke:red_button"
+                "item": "poke_pfe:red_button"
             }
         ],
         "key": {
             "K": {
-                "item": "poke:pocket_knife"
+                "item": "poke_pfe:pocket_knife"
             },
             "P": {
-                "item": "poke:plastic"
+                "item": "poke_pfe:plastic"
             },
             "E": {
-                "item": "poke:electric_component"
+                "item": "poke_pfe:electric_component"
             },
             "S": {
                 "item": "armor_stand"
             },
             "B": {
-                "item": "poke:red_button"
+                "item": "poke_pfe:red_button"
             }
         },
         "result": {
-            "item": "poke:armor_stand_remover"
+            "item": "poke_pfe:armor_stand_remover"
         }
     }
 }

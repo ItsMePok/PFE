@@ -2,22 +2,22 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:demonic_bricks_craft"
+			"identifier": "poke_pfe:demonic_bricks_craft"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:demonic_block"
+				"item": "poke_pfe:demonic_block"
 			},
 			{
-				"item": "poke:demonic_ingot"
+				"item": "poke_pfe:demonic_ingot"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:cut_demonic"
+				"item": "poke_pfe:cut_demonic"
 			}
 		},
 		"pattern": [
@@ -25,7 +25,7 @@
 			"CC"
 		],
 		"result": {
-			"item": "poke:demonic_bricks",
+			"item": "poke_pfe:demonic_bricks",
 			"count": 4
 		}
 	}

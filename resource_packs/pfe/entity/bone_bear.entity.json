@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "poke:bone_bear",
+			"identifier": "poke_pfe:bone_bear",
 			"materials": {
 				"default": "entity_alphablend"
 			},

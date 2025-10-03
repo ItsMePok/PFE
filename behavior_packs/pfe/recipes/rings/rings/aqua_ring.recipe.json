@@ -2,29 +2,29 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "poke:aqua_ring"
+			"identifier": "poke_pfe:aqua_ring"
 		},
-		"group": "pfe:rings",
+		"group": "poke_pfe:rings",
 		"ingredients": [
 			{
-				"item": "poke:gem_holder",
+				"item": "poke_pfe:gem_holder",
 				"count": 1
 			},
 			{
-				"item": "poke:aqua_gem",
+				"item": "poke_pfe:aqua_gem",
 				"count": 1
 			}
 		],
 		"unlock": [
 			{
-				"item": "poke:aqua_gem"
+				"item": "poke_pfe:aqua_gem"
 			}
 		],
 		"tags": [
 			"crafting_table"
 		],
 		"result": {
-			"item": "poke:aqua_ring",
+			"item": "poke_pfe:aqua_ring",
 			"count": 1
 		}
 	}

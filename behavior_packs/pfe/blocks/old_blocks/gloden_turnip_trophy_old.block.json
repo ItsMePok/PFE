@@ -1,8 +1,8 @@
-{ // OLD ITEM poke:golden_turnip is the new version
+{ // OLD ITEM poke_pfe:golden_turnip is the new version
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:golden_turnip_trophy"
+			"identifier": "poke_pfe:golden_turnip_trophy"
 		},
 		"components": {
 			"minecraft:loot": "loot_tables/poke/pfe/golden_turnip.loot.json",

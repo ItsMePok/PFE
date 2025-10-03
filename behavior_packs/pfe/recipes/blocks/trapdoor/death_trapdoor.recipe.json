@@ -2,22 +2,22 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:death_trapdoor"
+			"identifier": "poke_pfe:death_trapdoor"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:death_ingot"
+				"item": "poke_pfe:death_ingot"
 			},
 			{
-				"item": "poke:death_block"
+				"item": "poke_pfe:death_block"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:death_ingot"
+				"item": "poke_pfe:death_ingot"
 			}
 		},
 		"pattern": [
@@ -25,7 +25,7 @@
 			"CCC"
 		],
 		"result": {
-			"item": "poke:death_trapdoor",
+			"item": "poke_pfe:death_trapdoor",
 			"count": 4
 		}
 	}

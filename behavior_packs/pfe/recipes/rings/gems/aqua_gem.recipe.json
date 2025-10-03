@@ -2,14 +2,14 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "poke:aqua_gem"
+			"identifier": "poke_pfe:aqua_gem"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"ingredients": [
 			{
-				"item": "poke:raw_sporefish"
+				"item": "poke_pfe:raw_sporefish"
 			},
 			{
 				"item": "turtle_scute"
@@ -38,12 +38,12 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:gem_holder"
+				"item": "poke_pfe:gem_holder"
 			}
 		],
 		"result": {
 			"count": 1,
-			"item": "poke:aqua_gem"
+			"item": "poke_pfe:aqua_gem"
 		}
 	}
 }

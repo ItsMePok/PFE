@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:sparky_egg"
+			"identifier": "poke_pfe:sparky_egg"
 		},
 		"tags": [
 			"crafting_table"
@@ -17,10 +17,10 @@
 				"tag": "minecraft:egg"
 			},
 			{
-				"item": "poke:astral_ingot"
+				"item": "poke_pfe:astral_ingot"
 			},
 			{
-				"item": "poke:banished_star"
+				"item": "poke_pfe:banished_star"
 			}
 		],
 		"key": {
@@ -34,20 +34,20 @@
 				"item": "wind_charge"
 			},
 			"B": {
-				"item": "poke:banished_star_x5"
+				"item": "poke_pfe:banished_star_x5"
 			},
 			"F": {
 				"item": "fire_charge"
 			},
 			"A": {
-				"item": "poke:astral_ingot"
+				"item": "poke_pfe:astral_ingot"
 			},
 			"D": {
 				"item": "dragon_breath"
 			}
 		},
 		"result": {
-			"item": "poke:spawn_dragon"
+			"item": "poke_pfe:spawn_dragon"
 		}
 	}
 }

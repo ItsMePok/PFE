@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "poke:windswept_bear",
+			"identifier": "poke_pfe:windswept_bear",
 			"materials": {
 				"default": "polar_bear"
 			},

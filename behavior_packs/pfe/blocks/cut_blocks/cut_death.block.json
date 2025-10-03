@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:cut_death",
+			"identifier": "poke_pfe:cut_death",
 			"menu_category": {
 				"category": "construction"
 			}

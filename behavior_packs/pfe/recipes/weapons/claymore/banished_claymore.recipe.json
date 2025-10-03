@@ -15,21 +15,21 @@
 		],
 		"unlock": [
 			{
-				"tag": "poke:banished_star"
+				"tag": "poke_pfe:banished_star"
 			},
 			{
-				"item": "poke:ban_hammer_shaft"
+				"item": "poke_pfe:ban_hammer_shaft"
 			}
 		],
 		"key": {
 			"5": {
-				"item": "poke:banished_star_x5"
+				"item": "poke_pfe:banished_star_x5"
 			},
 			"6": {
-				"item": "poke:banished_star_x6"
+				"item": "poke_pfe:banished_star_x6"
 			},
 			"S": {
-				"item": "poke:ban_hammer_shaft"
+				"item": "poke_pfe:ban_hammer_shaft"
 			}
 		},
 		"result": {

@@ -2,7 +2,7 @@
   "format_version": "1.8.0",
   "minecraft:spawn_rules": {
     "description": {
-      "identifier": "poke:ender_phantom",
+      "identifier": "poke_pfe:ender_phantom",
       "population_control": "monster"
     },
     "conditions": [
@@ -22,9 +22,13 @@
           "min_size": 1,
           "max_size": 2
         },
-        "minecraft:spawns_on_block_filter":["end_stone"],
+        "minecraft:spawns_on_block_filter": [
+          "end_stone"
+        ],
         "minecraft:biome_filter": {
-          "test": "has_biome_tag", "operator": "==", "value": "the_end"
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "the_end"
         }
       }
     ]

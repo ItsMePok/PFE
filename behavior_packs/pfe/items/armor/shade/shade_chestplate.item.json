@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:shade_chestplate",
+			"identifier": "poke_pfe:shade_chestplate",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -34,20 +34,20 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core",
-							"poke:shade_block"
+							"poke_pfe:repair_core",
+							"poke_pfe:shade_block"
 						],
 						"repair_amount": "query.max_durability"
 					},
 					{
 						"items": [
-							"poke:shade_ingot"
+							"poke_pfe:shade_ingot"
 						],
 						"repair_amount": "query.max_durability*0.25"
 					},
 					{
 						"items": [
-							"poke:shade_nugget"
+							"poke_pfe:shade_nugget"
 						],
 						"repair_amount": "query.max_durability*0.028"
 					}

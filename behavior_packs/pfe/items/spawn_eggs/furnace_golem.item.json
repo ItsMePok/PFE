@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:furnace_golem",
+			"identifier": "poke_pfe:furnace_golem",
 			"menu_category": {
 				"category": "nature"
 			}
@@ -14,12 +14,12 @@
 			"poke_pfe:icon_path": "textures/poke/pfe/furnace_golem_spawn_egg",
 			"minecraft:icon": "poke_pfe_furnace_golem_spawn_egg",
 			"poke_pfe:spawn_entity": {
-				"entity": "poke:robo_golem"
+				"entity": "poke_pfe:robo_golem"
 			},
 			"minecraft:tags": {
 				"tags": [
 					"minecraft:spawn_egg",
-					"pfe:is_survival_spawn_egg"
+					"poke_pfe:is_survival_spawn_egg"
 				]
 			}
 		}

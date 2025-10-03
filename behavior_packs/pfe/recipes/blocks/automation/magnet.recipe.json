@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:magnet"
+			"identifier": "poke_pfe:magnet"
 		},
 		"tags": [
 			"crafting_table"
@@ -19,18 +19,18 @@
 				"item": "minecraft:smooth_stone_slab"
 			},
 			{
-				"item": "poke:item_magnet"
+				"item": "poke_pfe:item_magnet"
 			},
 			{
-				"item": "poke:electric_component"
+				"item": "poke_pfe:electric_component"
 			}
 		],
 		"key": {
 			"E": {
-				"item": "poke:electric_component"
+				"item": "poke_pfe:electric_component"
 			},
 			"M": {
-				"item": "poke:item_magnet"
+				"item": "poke_pfe:item_magnet"
 			},
 			"R": {
 				"item": "minecraft:redstone"
@@ -41,7 +41,7 @@
 		},
 		"result": [
 			{
-				"item": "poke:magnet"
+				"item": "poke_pfe:magnet"
 			}
 		]
 	}

@@ -2,7 +2,7 @@
     "format_version": "1.20.60",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "poke:end_upgrader"
+            "identifier": "poke_pfe:end_upgrader"
         },
         "tags": [
             "crafting_table"
@@ -21,7 +21,7 @@
                 "item": "end_stone"
             },
             {
-                "item": "poke:diamond_upgrade_core"
+                "item": "poke_pfe:diamond_upgrade_core"
             },
             {
                 "item": "purpur_block"
@@ -50,7 +50,7 @@
                 "item": "end_stone"
             },
             "U": {
-                "item": "poke:diamond_upgrade_core"
+                "item": "poke_pfe:diamond_upgrade_core"
             },
             "C": {
                 "item": "chorus_fruit"
@@ -60,7 +60,7 @@
             }
         },
         "result": {
-            "item": "poke:end_upgrader"
+            "item": "poke_pfe:end_upgrader"
         }
     }
 }

@@ -2,18 +2,18 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "poke:demonic_bricks_stonecut"
+			"identifier": "poke_pfe:demonic_bricks_stonecut"
 		},
 		"tags": [
 			"stonecutter"
 		],
 		"ingredients": [
 			{
-				"item": "poke:demonic_block"
+				"item": "poke_pfe:demonic_block"
 			}
 		],
 		"result": {
-			"item": "poke:demonic_bricks",
+			"item": "poke_pfe:demonic_bricks",
 			"count": 4
 		}
 	}

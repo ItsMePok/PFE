@@ -2,26 +2,26 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:holy_bricks_slab_to_holy_bricks"
+			"identifier": "poke_pfe:holy_bricks_slab_to_holy_bricks"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:holy_bricks_slab"
+				"item": "poke_pfe:holy_bricks_slab"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:holy_bricks_slab"
+				"item": "poke_pfe:holy_bricks_slab"
 			}
 		},
 		"pattern": [
 			"CC"
 		],
 		"result": {
-			"item": "poke:holy_bricks"
+			"item": "poke_pfe:holy_bricks"
 		},
 		"priority": 2
 	}

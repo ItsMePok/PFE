@@ -1,16 +1,32 @@
 {
-	"format_version":"1.20.10",
-	"minecraft:recipe_shaped":{
-		"description":{"identifier":"poke:nebula_b_w_c_b"},
-		"tags":["crafting_table"],
-		"unlock":[
-			{"item":"poke:nebula_block"},
-			{"item":"poke:nebula_bricks"}
-		],
-		"key":{
-			"C":{"item":"poke:nebula_bricks"}
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke_pfe:nebula_b_w_c_b"
 		},
-		"pattern":["CCC","CCC"],
-		"result":{"item":"poke:nebula_brick_wall","count":6}
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": [
+			{
+				"item": "poke_pfe:nebula_block"
+			},
+			{
+				"item": "poke_pfe:nebula_bricks"
+			}
+		],
+		"key": {
+			"C": {
+				"item": "poke_pfe:nebula_bricks"
+			}
+		},
+		"pattern": [
+			"CCC",
+			"CCC"
+		],
+		"result": {
+			"item": "poke_pfe:nebula_brick_wall",
+			"count": 6
+		}
 	}
 }

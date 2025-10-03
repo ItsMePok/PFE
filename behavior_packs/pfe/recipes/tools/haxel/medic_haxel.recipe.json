@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:medic_haxel"
+			"identifier": "poke_pfe:medic_haxel"
 		},
 		"group": "haxel",
 		"tags": [
@@ -15,28 +15,28 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:medic_ingot"
+				"item": "poke_pfe:medic_ingot"
 			},
 			{
-				"item": "poke:godly_haxel"
+				"item": "poke_pfe:godly_haxel"
 			},
 			{
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			}
 		],
 		"key": {
 			"#": {
-				"item": "poke:medic_block"
+				"item": "poke_pfe:medic_block"
 			},
 			"E": {
-				"item": "poke:godly_haxel"
+				"item": "poke_pfe:godly_haxel"
 			},
 			"U": {
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			}
 		},
 		"result": {
-			"item": "poke:medic_haxel"
+			"item": "poke_pfe:medic_haxel"
 		}
 	}
 }

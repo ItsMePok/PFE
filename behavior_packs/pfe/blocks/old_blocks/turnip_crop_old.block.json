@@ -1,8 +1,8 @@
-{ // OLD BLOCK. poke:turnip is new version
+{ // OLD BLOCK. poke_pfe:turnip is new version
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:turnip_crop",
+			"identifier": "poke_pfe:turnip_crop",
 			"menu_category": {
 				"category": "none"
 			}

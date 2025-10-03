@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:coffee_mug",
+			"identifier": "poke_pfe:coffee_mug",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -17,7 +17,7 @@
 				"nutrition": 3,
 				"saturation_modifier": 0.9,
 				"can_always_eat": true,
-				"using_converts_to": "poke:empty_mug"
+				"using_converts_to": "poke_pfe:empty_mug"
 			},
 			"minecraft:use_modifiers": {
 				"movement_modifier": 0.45,
@@ -25,7 +25,7 @@
 			},
 			"minecraft:use_animation": "drink",
 			"minecraft:block_placer": {
-				"block": "poke:coffee_mug",
+				"block": "poke_pfe:coffee_mug",
 				"replace_block_item": true
 			},
 			"minecraft:tags": {

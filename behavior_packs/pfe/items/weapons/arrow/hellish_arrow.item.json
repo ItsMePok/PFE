@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:hellish_arrow",
+			"identifier": "poke_pfe:hellish_arrow",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -15,7 +15,7 @@
 			"minecraft:max_stack_size": 64,
 			"minecraft:icon": "poke_pfe_hellish_arrow",
 			"minecraft:projectile": {
-				"projectile_entity": "poke:hellish_arrow",
+				"projectile_entity": "poke_pfe:hellish_arrow",
 				"minimum_critical_power": 0.5
 			},
 			"minecraft:allow_off_hand": {

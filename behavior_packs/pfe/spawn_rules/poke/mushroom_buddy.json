@@ -2,7 +2,7 @@
 	"format_version": "1.8.0",
 	"minecraft:spawn_rules": {
 		"description": {
-			"identifier": "poke:mushroom_buddy",
+			"identifier": "poke_pfe:mushroom_buddy",
 			"population_control": "animal"
 		},
 		"conditions": [
@@ -21,7 +21,10 @@
 							"value": "mooshroom_island"
 						}
 					]
-				},"minecraft:weight": {"default": 10}
+				},
+				"minecraft:weight": {
+					"default": 10
+				}
 			}
 		]
 	}

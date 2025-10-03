@@ -3,7 +3,7 @@
 	"format_version": "1.21.110",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "poke:snowman",
+			"identifier": "poke_pfe:snowman",
 			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false
@@ -19,7 +19,7 @@
 					"time": 1800,
 					"looping": true,
 					"time_down_event": {
-						"event": "poke:despawn",
+						"event": "poke_pfe:despawn",
 						"target": "self"
 					}
 				}
@@ -72,14 +72,14 @@
 			"minecraft:is_hidden_when_invisible": {},
 			"minecraft:boss": {
 				"hud_range": 55,
-				"name": "entity.poke:snowman.name",
+				"name": "entity.poke_pfe:snowman.name",
 				"should_darken_sky": false
 			},
 			"minecraft:type_family": {
 				"family": [
 					"mob",
 					"monster",
-					"pfe:boss"
+					"poke_pfe:boss"
 				]
 			},
 			"minecraft:breathable": {
@@ -90,13 +90,13 @@
 				"name_actions": {
 					"name_filter": "despawn",
 					"on_named": {
-						"event": "poke:despawn",
+						"event": "poke_pfe:despawn",
 						"target": "self"
 					}
 				},
 				"default_trigger": {
 					"target": "self",
-					"event": "poke:renamed"
+					"event": "poke_pfe:renamed"
 				}
 			},
 			"minecraft:collision_box": {
@@ -201,14 +201,14 @@
 					]
 				}
 			},
-			"poke:despawn": {
+			"poke_pfe:despawn": {
 				"add": {
 					"component_groups": [
 						"despawn"
 					]
 				}
 			},
-			"poke:renamed": {
+			"poke_pfe:renamed": {
 				"remove": {
 					"component_groups": [
 						"timer"

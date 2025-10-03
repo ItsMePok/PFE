@@ -2,7 +2,7 @@
   "format_version": "1.20.60",
   "minecraft:recipe_shaped": {
     "description": {
-      "identifier": "poke:shadowstone_bricks"
+      "identifier": "poke_pfe:shadowstone_bricks"
     },
     "tags": [
       "crafting_table"
@@ -13,20 +13,20 @@
     ],
     "key": {
       "X": {
-        "item": "poke:cobbled_shadowstone"
+        "item": "poke_pfe:cobbled_shadowstone"
       }
     },
     "group": "bricks",
     "unlock": [
       {
-        "item": "poke:shadowstone"
+        "item": "poke_pfe:shadowstone"
       },
       {
-        "item": "poke:cobbled_shadowstone"
+        "item": "poke_pfe:cobbled_shadowstone"
       }
     ],
     "result": {
-      "item": "poke:shadowstone_bricks",
+      "item": "poke_pfe:shadowstone_bricks",
       "count": 4
     }
   }

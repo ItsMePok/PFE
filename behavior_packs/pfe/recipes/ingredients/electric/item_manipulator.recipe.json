@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:item_manipulator"
+			"identifier": "poke_pfe:item_manipulator"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,22 +14,22 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:electric_component"
+				"item": "poke_pfe:electric_component"
 			}
 		],
 		"key": {
 			"D": {
-				"item": "poke:cobalt_ingot"
+				"item": "poke_pfe:cobalt_ingot"
 			},
 			"E": {
-				"item": "poke:electric_component"
+				"item": "poke_pfe:electric_component"
 			},
 			"S": {
-				"item": "poke:wire"
+				"item": "poke_pfe:wire"
 			}
 		},
 		"result": {
-			"item": "poke:item_manipulator"
+			"item": "poke_pfe:item_manipulator"
 		}
 	}
 }

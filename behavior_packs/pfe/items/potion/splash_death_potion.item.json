@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:splash_death_potion",
+			"identifier": "poke_pfe:splash_death_potion",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -22,21 +22,21 @@
 			"poke_pfe:run_command": {
 				"version": 1,
 				"command": [
-					"clear @s poke:splash_death_potion -1 1",
+					"clear @s poke_pfe:splash_death_potion -1 1",
 					"kill @s ",
-					"tellraw @s {\"rawtext\": [{\"translate\": \"translation.poke-pfe:splashDeathPotion\"}]}"
+					"tellraw @s {\"rawtext\": [{\"translate\": \"translation.poke_pfe:splashDeathPotion\"}]}"
 				],
 				"take_durability": true,
 				"trigger_cooldown": true,
 				"can_be_disabled": false
 			},
-			"poke:normalMining": {},
+			"poke_pfe:normalMining": {},
 			"minecraft:use_modifiers": {
 				"use_duration": 0,
 				"movement_modifier": 1
 			},
 			"minecraft:cooldown": {
-				"category": "poke:splash_death_potion",
+				"category": "poke_pfe:splash_death_potion",
 				"duration": 0.75
 			}
 		}

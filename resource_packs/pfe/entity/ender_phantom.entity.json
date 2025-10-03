@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "poke:ender_phantom",
+			"identifier": "poke_pfe:ender_phantom",
 			"materials": {
 				"default": "phantom", //2
 				"invisible": "phantom_invisible" //2

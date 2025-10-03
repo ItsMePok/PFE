@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:cobblestone_chestplate"
+			"identifier": "poke_pfe:cobblestone_chestplate"
 		},
 		"tags": [
 			"crafting_table"
@@ -23,7 +23,7 @@
 			}
 		},
 		"result": {
-			"item": "poke:stone_chestplate"
+			"item": "poke_pfe:stone_chestplate"
 		}
 	}
 }

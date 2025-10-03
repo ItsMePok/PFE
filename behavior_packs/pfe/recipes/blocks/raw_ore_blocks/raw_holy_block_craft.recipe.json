@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:raw_holy_block_craft"
+			"identifier": "poke_pfe:raw_holy_block_craft"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,16 +14,16 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:raw_holy"
+				"item": "poke_pfe:raw_holy"
 			}
 		],
 		"key": {
 			"#": {
-				"item": "poke:raw_holy"
+				"item": "poke_pfe:raw_holy"
 			}
 		},
 		"result": {
-			"item": "poke:raw_holy_block"
+			"item": "poke_pfe:raw_holy_block"
 		}
 	}
 }

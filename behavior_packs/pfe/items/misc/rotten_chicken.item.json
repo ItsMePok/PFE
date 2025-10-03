@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:rotten_chicken",
+			"identifier": "poke_pfe:rotten_chicken",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -12,7 +12,7 @@
 				"value": "%poke_pfe.rotten_chicken\n%poke_pfe.tag"
 			},
 			"poke_pfe:icon_path": "textures/poke/pfe/rotten_chicken",
-			"poke:consumeEffects": {},
+			"poke_pfe:consumeEffects": {},
 			"minecraft:food": {
 				"nutrition": 1,
 				"saturation_modifier": 0.2,

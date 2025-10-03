@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:gravity_ring",
+			"identifier": "poke_pfe:gravity_ring",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -16,7 +16,7 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core"
+							"poke_pfe:repair_core"
 						],
 						"repair_amount": "query.max_durability"
 					}
@@ -41,7 +41,7 @@
 			},
 			"minecraft:tags": {
 				"tags": [
-					"pfe:is_ring"
+					"poke_pfe:is_ring"
 				]
 			},
 			"poke_pfe:run_command": {
@@ -54,7 +54,7 @@
 				"trigger_cooldown": true,
 				"can_be_disabled": false
 			},
-			"poke:normalMining": {},
+			"poke_pfe:normalMining": {},
 			"minecraft:use_modifiers": {
 				"use_duration": 0,
 				"movement_modifier": 1

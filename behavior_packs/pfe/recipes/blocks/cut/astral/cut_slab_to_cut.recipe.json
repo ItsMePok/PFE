@@ -2,26 +2,26 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:cut_astral_slab_to_cut_astral"
+			"identifier": "poke_pfe:cut_astral_slab_to_cut_astral"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:cut_astral_slab"
+				"item": "poke_pfe:cut_astral_slab"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:cut_astral_slab"
+				"item": "poke_pfe:cut_astral_slab"
 			}
 		},
 		"pattern": [
 			"CC"
 		],
 		"result": {
-			"item": "poke:cut_astral"
+			"item": "poke_pfe:cut_astral"
 		},
 		"priority": 2
 	}

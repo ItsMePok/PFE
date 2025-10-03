@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "poke:cosmetic_trader",
+			"identifier": "poke_pfe:cosmetic_trader",
 			"materials": {
 				"default": "villager_v2", //2
 				"masked": "villager_v2_masked" //2

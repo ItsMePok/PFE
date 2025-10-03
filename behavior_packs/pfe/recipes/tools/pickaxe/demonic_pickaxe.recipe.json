@@ -1,18 +1,38 @@
 {
-	"format_version":"1.20.10",
-	"minecraft:recipe_shaped":{
-		"description":{"identifier":"poke:demonic_pickaxe"},
-		"tags":["crafting_table"],
-		"pattern":["CCC"," S "," S "],
-		"unlock":[
-			{"item":"stick"},
-			{"item":"poke:raw_demonic"},
-			{"item":"poke:demonic_ingot"}
-		],
-		"key":{
-			"C":{"item":"poke:demonic_ingot"},
-			"S":{"item":"poke:onyx_shaft"}
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke_pfe:demonic_pickaxe"
 		},
-		"result":{"item":"poke:demonic_pickaxe"}
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"CCC",
+			" S ",
+			" S "
+		],
+		"unlock": [
+			{
+				"item": "stick"
+			},
+			{
+				"item": "poke_pfe:raw_demonic"
+			},
+			{
+				"item": "poke_pfe:demonic_ingot"
+			}
+		],
+		"key": {
+			"C": {
+				"item": "poke_pfe:demonic_ingot"
+			},
+			"S": {
+				"item": "poke_pfe:onyx_shaft"
+			}
+		},
+		"result": {
+			"item": "poke_pfe:demonic_pickaxe"
+		}
 	}
 }

@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:nether_wart_crate"
+			"identifier": "poke_pfe:nether_wart_crate"
 		},
 		"components": {
 			"minecraft:display_name": "%poke_pfe.nether_wart_crate\n%poke_pfe.tag",

@@ -2,8 +2,8 @@
 	"format_version": "1.21.110",
 	"minecraft:feature_rules": {
 		"description": {
-			"identifier": "poke:godly_ore.feature_rule",
-			"places_feature": "poke:godly_ore.feature"
+			"identifier": "poke_pfe:godly_ore.feature_rule",
+			"places_feature": "poke_pfe:godly_ore.feature"
 		},
 		"conditions": {
 			"placement_pass": "underground_pass",

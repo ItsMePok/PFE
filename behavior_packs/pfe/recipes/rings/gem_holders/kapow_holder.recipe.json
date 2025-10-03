@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:kapow_holder"
+			"identifier": "poke_pfe:kapow_holder"
 		},
 		"tags": [
 			"crafting_table"
@@ -30,7 +30,7 @@
 		],
 		"result": {
 			"count": 1,
-			"item": "poke:kapow_holder"
+			"item": "poke_pfe:kapow_holder"
 		}
 	}
 }

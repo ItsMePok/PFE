@@ -2,7 +2,7 @@
     "format_version": "1.20.60",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "poke:armor_stand_hider"
+            "identifier": "poke_pfe:armor_stand_hider"
         },
         "tags": [
             "crafting_table"
@@ -14,33 +14,33 @@
         ],
         "unlock": [
             {
-                "item": "poke:cobalt_ingot"
+                "item": "poke_pfe:cobalt_ingot"
             },
             {
                 "item": "armor_stand"
             },
             {
-                "item": "poke:shade_ingot"
+                "item": "poke_pfe:shade_ingot"
             },
             {
-                "item": "poke:plastic"
+                "item": "poke_pfe:plastic"
             },
             {
-                "item": "poke:antenna"
+                "item": "poke_pfe:antenna"
             }
         ],
         "key": {
             "I": {
-                "item": "poke:shade_ingot"
+                "item": "poke_pfe:shade_ingot"
             },
             "C": {
-                "item": "poke:cobalt_ingot"
+                "item": "poke_pfe:cobalt_ingot"
             },
             "P": {
-                "item": "poke:plastic"
+                "item": "poke_pfe:plastic"
             },
             "A": {
-                "item": "poke:antenna"
+                "item": "poke_pfe:antenna"
             },
             "S": {
                 "item": "armor_stand"
@@ -49,11 +49,11 @@
                 "item": "glass"
             },
             "B": {
-                "item": "poke:red_button"
+                "item": "poke_pfe:red_button"
             }
         },
         "result": {
-            "item": "poke:armor_stand_hider"
+            "item": "poke_pfe:armor_stand_hider"
         }
     }
 }

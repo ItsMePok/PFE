@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_furnace": {
 		"description": {
-			"identifier": "poke:toast"
+			"identifier": "poke_pfe:toast"
 		},
 		"tags": [
 			"furnace",
@@ -10,9 +10,9 @@
 			"campfire",
 			"soul_campfire"
 		],
-		"input": "poke:baguette",
+		"input": "poke_pfe:baguette",
 		"output": {
-			"item": "poke:toast",
+			"item": "poke_pfe:toast",
 			"count": 8
 		}
 	}

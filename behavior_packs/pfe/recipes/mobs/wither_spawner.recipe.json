@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:wither_spawner"
+			"identifier": "poke_pfe:wither_spawner"
 		},
 		"tags": [
 			"crafting_table"
@@ -27,7 +27,7 @@
 			}
 		},
 		"result": {
-			"item": "poke:wither_spawner",
+			"item": "poke_pfe:wither_spawner",
 			"count": 1
 		}
 	}

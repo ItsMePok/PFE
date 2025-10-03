@@ -2,9 +2,9 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:beeulb",
+			"identifier": "poke_pfe:beeulb",
 			"states": {
-				"pfe:color": {
+				"poke_pfe:color": {
 					"values": {
 						"min": 0,
 						"max": 15

@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:caged_soul",
+			"identifier": "poke_pfe:caged_soul",
 			"menu_category": {
 				"category": "equipment"
 			}

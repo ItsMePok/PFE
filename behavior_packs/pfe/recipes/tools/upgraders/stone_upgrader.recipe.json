@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:stone_upgrader"
+			"identifier": "poke_pfe:stone_upgrader"
 		},
 		"tags": [
 			"crafting_table"
@@ -17,7 +17,7 @@
 				"item": "cobblestone"
 			},
 			{
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			}
 		],
 		"key": {
@@ -28,7 +28,7 @@
 				"item": "stone"
 			},
 			"c": {
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			},
 			"T": {
 				"item": "stick"
@@ -36,7 +36,7 @@
 		},
 		"result": [
 			{
-				"item": "poke:stone_upgrader"
+				"item": "poke_pfe:stone_upgrader"
 			}
 		]
 	}

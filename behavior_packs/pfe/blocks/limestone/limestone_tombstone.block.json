@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:limestone_tombstone",
+			"identifier": "poke_pfe:limestone_tombstone",
 			"menu_category": {
 				"category": "construction"
 			},

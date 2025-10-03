@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:knightling"
+			"identifier": "poke_pfe:knightling"
 		},
 		"tags": [
 			"crafting_table"
@@ -32,16 +32,16 @@
 				"item": "diamond_axe"
 			},
 			{
-				"item": "poke:godly_ingot"
+				"item": "poke_pfe:godly_ingot"
 			},
 			{
-				"item": "poke:demonic_ingot"
+				"item": "poke_pfe:demonic_ingot"
 			},
 			{
-				"item": "poke:holy_helmet"
+				"item": "poke_pfe:holy_helmet"
 			},
 			{
-				"item": "poke:demonic_helmet"
+				"item": "poke_pfe:demonic_helmet"
 			},
 			{
 				"item": "diamond_sword"
@@ -55,11 +55,11 @@
 				"item": "iron_chestplate"
 			},
 			"Y": {
-				"item": "poke:cobalt_ingot"
+				"item": "poke_pfe:cobalt_ingot"
 			}
 		},
 		"result": {
-			"item": "poke:spawn_knightling"
+			"item": "poke_pfe:spawn_knightling"
 		}
 	}
 }

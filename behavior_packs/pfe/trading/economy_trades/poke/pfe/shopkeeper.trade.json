@@ -10,13 +10,13 @@
 							"max_uses": 2147483647,
 							"wants": [
 								{
-									"item": "poke:banished_star_x3",
+									"item": "poke_pfe:banished_star_x3",
 									"quantity": 1
 								}
 							],
 							"gives": [
 								{
-									"item": "poke:repair_core",
+									"item": "poke_pfe:repair_core",
 									"quantity": 1
 								}
 							]
@@ -25,13 +25,13 @@
 							"max_uses": 2147483647,
 							"wants": [
 								{
-									"item": "poke:banished_star_x4",
+									"item": "poke_pfe:banished_star_x4",
 									"quantity": 1
 								}
 							],
 							"gives": [
 								{
-									"item": "poke:upgrade_core",
+									"item": "poke_pfe:upgrade_core",
 									"quantity": 1
 								}
 							]
@@ -40,13 +40,13 @@
 							"max_uses": 2147483647,
 							"wants": [
 								{
-									"item": "poke:banished_star_x7",
+									"item": "poke_pfe:banished_star_x7",
 									"quantity": 1
 								}
 							],
 							"gives": [
 								{
-									"item": "poke:diamond_upgrade_core",
+									"item": "poke_pfe:diamond_upgrade_core",
 									"quantity": 1
 								}
 							]
@@ -55,13 +55,13 @@
 							"max_uses": 2147483647,
 							"wants": [
 								{
-									"item": "poke:banished_star_x8",
+									"item": "poke_pfe:banished_star_x8",
 									"quantity": 1
 								}
 							],
 							"gives": [
 								{
-									"item": "poke:platinum_upgrade_core",
+									"item": "poke_pfe:platinum_upgrade_core",
 									"quantity": 1
 								}
 							]
@@ -70,13 +70,13 @@
 							"max_uses": 2147483647,
 							"wants": [
 								{
-									"item": "poke:banished_star_x2",
+									"item": "poke_pfe:banished_star_x2",
 									"quantity": 1
 								}
 							],
 							"gives": [
 								{
-									"item": "poke:raw_cobalt",
+									"item": "poke_pfe:raw_cobalt",
 									"quantity": 1
 								}
 							]
@@ -85,13 +85,13 @@
 							"max_uses": 2147483647,
 							"wants": [
 								{
-									"item": "poke:banished_star_x3",
+									"item": "poke_pfe:banished_star_x3",
 									"quantity": 1
 								}
 							],
 							"gives": [
 								{
-									"item": "poke:raw_shade",
+									"item": "poke_pfe:raw_shade",
 									"quantity": 1
 								}
 							]
@@ -100,13 +100,13 @@
 							"max_uses": 2147483647,
 							"wants": [
 								{
-									"item": "poke:banished_star_x3",
+									"item": "poke_pfe:banished_star_x3",
 									"quantity": 1
 								}
 							],
 							"gives": [
 								{
-									"item": "poke:raw_onyx",
+									"item": "poke_pfe:raw_onyx",
 									"quantity": 1
 								}
 							]
@@ -115,13 +115,13 @@
 							"max_uses": 2147483647,
 							"wants": [
 								{
-									"item": "poke:banished_star_x3",
+									"item": "poke_pfe:banished_star_x3",
 									"quantity": 1
 								}
 							],
 							"gives": [
 								{
-									"item": "poke:raw_holy",
+									"item": "poke_pfe:raw_holy",
 									"quantity": 1
 								}
 							]
@@ -130,13 +130,13 @@
 							"max_uses": 2147483647,
 							"wants": [
 								{
-									"item": "poke:banished_star_x3",
+									"item": "poke_pfe:banished_star_x3",
 									"quantity": 1
 								}
 							],
 							"gives": [
 								{
-									"item": "poke:raw_hellish",
+									"item": "poke_pfe:raw_hellish",
 									"quantity": 1
 								}
 							]
@@ -145,13 +145,13 @@
 							"max_uses": 2147483647,
 							"wants": [
 								{
-									"item": "poke:banished_star_x4",
+									"item": "poke_pfe:banished_star_x4",
 									"quantity": 1
 								}
 							],
 							"gives": [
 								{
-									"item": "poke:molten_slimeball",
+									"item": "poke_pfe:molten_slimeball",
 									"quantity": 1
 								}
 							]
@@ -160,13 +160,13 @@
 							"max_uses": 2147483647,
 							"wants": [
 								{
-									"item": "poke:banished_star_x2",
+									"item": "poke_pfe:banished_star_x2",
 									"quantity": 1
 								}
 							],
 							"gives": [
 								{
-									"item": "poke:sugar_water",
+									"item": "poke_pfe:sugar_water",
 									"quantity": 1
 								}
 							]
@@ -175,13 +175,13 @@
 							"max_uses": 2147483647,
 							"wants": [
 								{
-									"item": "poke:banished_star_x2",
+									"item": "poke_pfe:banished_star_x2",
 									"quantity": 1
 								}
 							],
 							"gives": [
 								{
-									"item": "poke:turnip",
+									"item": "poke_pfe:turnip",
 									"quantity": 1
 								}
 							]
@@ -190,13 +190,13 @@
 							"max_uses": 2147483647,
 							"wants": [
 								{
-									"item": "poke:banished_star_x5",
+									"item": "poke_pfe:banished_star_x5",
 									"quantity": 1
 								}
 							],
 							"gives": [
 								{
-									"item": "poke:red_present",
+									"item": "poke_pfe:red_present",
 									"quantity": 1
 								}
 							]
@@ -205,13 +205,13 @@
 							"max_uses": 2147483647,
 							"wants": [
 								{
-									"item": "poke:banished_star_x6",
+									"item": "poke_pfe:banished_star_x6",
 									"quantity": 1
 								}
 							],
 							"gives": [
 								{
-									"item": "poke:cassette_ariamath",
+									"item": "poke_pfe:cassette_ariamath",
 									"quantity": 1
 								}
 							]
@@ -220,13 +220,13 @@
 							"max_uses": 2147483647,
 							"wants": [
 								{
-									"item": "poke:banished_star_x6",
+									"item": "poke_pfe:banished_star_x6",
 									"quantity": 1
 								}
 							],
 							"gives": [
 								{
-									"item": "poke:pfe-star_pottery_sherd",
+									"item": "poke_pfe:pfe-star_pottery_sherd",
 									"quantity": 1
 								}
 							]

@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:holy_sword"
+			"identifier": "poke_pfe:holy_sword"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,28 +14,28 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:onyx_sword"
+				"item": "poke_pfe:onyx_sword"
 			},
 			{
-				"item": "poke:holy_ingot"
+				"item": "poke_pfe:holy_ingot"
 			}
 		],
 		"key": {
 			"Y": {
-				"item": "poke:holy_ingot"
+				"item": "poke_pfe:holy_ingot"
 			},
 			"X": {
-				"item": "poke:godly_stick"
+				"item": "poke_pfe:godly_stick"
 			},
 			"A": {
-				"item": "poke:onyx_sword"
+				"item": "poke_pfe:onyx_sword"
 			},
 			"U": {
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			}
 		},
 		"result": {
-			"item": "poke:holy_sword"
+			"item": "poke_pfe:holy_sword"
 		}
 	}
 }

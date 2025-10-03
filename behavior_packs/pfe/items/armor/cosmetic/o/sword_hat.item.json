@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:sword_hat",
+			"identifier": "poke_pfe:sword_hat",
 			"menu_category": {
 				"category": "equipment"
 			}

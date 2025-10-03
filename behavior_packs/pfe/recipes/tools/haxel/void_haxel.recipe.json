@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:void_haxel"
+			"identifier": "poke_pfe:void_haxel"
 		},
 		"group": "haxel",
 		"tags": [
@@ -15,28 +15,28 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:void_ingot"
+				"item": "poke_pfe:void_ingot"
 			},
 			{
-				"item": "poke:molten_haxel"
+				"item": "poke_pfe:molten_haxel"
 			},
 			{
-				"item": "poke:platinum_upgrade_core"
+				"item": "poke_pfe:platinum_upgrade_core"
 			}
 		],
 		"key": {
 			"#": {
-				"item": "poke:void_block"
+				"item": "poke_pfe:void_block"
 			},
 			"E": {
-				"item": "poke:molten_haxel"
+				"item": "poke_pfe:molten_haxel"
 			},
 			"U": {
-				"item": "poke:platinum_upgrade_core"
+				"item": "poke_pfe:platinum_upgrade_core"
 			}
 		},
 		"result": {
-			"item": "poke:void_haxel"
+			"item": "poke_pfe:void_haxel"
 		}
 	}
 }

@@ -6,12 +6,12 @@
     },
     "unlock": [
       {
-        "item": "poke:godly_ingot"
+        "item": "poke_pfe:godly_ingot"
       }
     ],
     "key": {
       "X": {
-        "item": "poke:godly_ingot"
+        "item": "poke_pfe:godly_ingot"
       }
     },
     "result": {
@@ -23,7 +23,7 @@
       " X ",
       "X X"
     ],
-    "group": "poke:drain",
+    "group": "poke_pfe:drain",
     "tags": [
       "crafting_table"
     ]

@@ -2,13 +2,13 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_furnace": {
 		"description": {
-			"identifier": "poke:shade_ore_nether"
+			"identifier": "poke_pfe:shade_ore_nether"
 		},
 		"tags": [
 			"furnace",
 			"blast_furnace"
 		],
-		"input": "poke:nether_shade_ore",
-		"output": "poke:shade_ingot"
+		"input": "poke_pfe:nether_shade_ore",
+		"output": "poke_pfe:shade_ingot"
 	}
 }

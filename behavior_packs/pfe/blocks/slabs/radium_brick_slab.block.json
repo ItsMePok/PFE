@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:radium_bricks_slab",
+			"identifier": "poke_pfe:radium_bricks_slab",
 			"menu_category": {
 				"category": "construction"
 			},
@@ -14,7 +14,7 @@
 				}
 			},
 			"states": {
-				"poke:double": [
+				"poke_pfe:double": [
 					false,
 					true
 				]
@@ -22,7 +22,7 @@
 		},
 		"permutations": [
 			{
-				"condition": "q.block_state('poke:double')",
+				"condition": "q.block_state('poke_pfe:double')",
 				"components": {
 					"minecraft:liquid_detection": {
 						"detection_rules": [
@@ -51,7 +51,7 @@
 			},
 			// Bottom Slab
 			{
-				"condition": "q.block_state('minecraft:vertical_half') == 'bottom' && !q.block_state('poke:double')",
+				"condition": "q.block_state('minecraft:vertical_half') == 'bottom' && !q.block_state('poke_pfe:double')",
 				"components": {
 					"minecraft:liquid_detection": {
 						"detection_rules": [
@@ -66,7 +66,7 @@
 						]
 					},
 					"poke_pfe:can_double_slab": {},
-					"poke:cc_block_seat": {},
+					"poke_pfe:cc_block_seat": {},
 					"minecraft:collision_box": {
 						"origin": [
 							-8,
@@ -107,7 +107,7 @@
 			},
 			// Top Slab
 			{
-				"condition": "q.block_state('minecraft:vertical_half') == 'top' && !q.block_state('poke:double')",
+				"condition": "q.block_state('minecraft:vertical_half') == 'top' && !q.block_state('poke_pfe:double')",
 				"components": {
 					"minecraft:liquid_detection": {
 						"detection_rules": [

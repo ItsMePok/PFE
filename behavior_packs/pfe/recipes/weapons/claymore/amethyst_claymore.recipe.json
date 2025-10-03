@@ -24,7 +24,7 @@
 				"item": "minecraft:stick"
 			},
 			{
-				"item": "poke:upgrade_core"
+				"item": "poke_pfe:upgrade_core"
 			},
 			{
 				"item": "poke_pfe:netherite_claymore"
@@ -41,7 +41,7 @@
 				"item": "minecraft:stick"
 			},
 			"U": {
-				"item": "poke:upgrade_core"
+				"item": "poke_pfe:upgrade_core"
 			},
 			"C": {
 				"item": "poke_pfe:netherite_claymore"

@@ -2,9 +2,9 @@
 	"format_version": "1.21.110",
 	"minecraft:structure_template_feature": {
 		"description": {
-			"identifier": "poke:ruined_tower.feature"
+			"identifier": "poke_pfe:ruined_tower.feature"
 		},
-		"structure_name": "poke:ruined_tower",
+		"structure_name": "poke_pfe:ruined_tower",
 		"adjustment_radius": 16,
 		"facing_direction": "random",
 		"constraints": {

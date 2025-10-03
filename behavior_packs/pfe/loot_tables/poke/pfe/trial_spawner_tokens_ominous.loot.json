@@ -1,11 +1,14 @@
 {
 	"pools": [
-		{	
-			"rolls": {"min": 2,"max": 7},
+		{
+			"rolls": {
+				"min": 2,
+				"max": 7
+			},
 			"entries": [
 				{
 					"type": "item",
-					"name": "poke:iron_token"
+					"name": "poke_pfe:iron_token"
 				}
 			]
 		}

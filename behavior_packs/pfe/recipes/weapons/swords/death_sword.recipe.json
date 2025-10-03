@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:death_sword"
+			"identifier": "poke_pfe:death_sword"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,28 +14,28 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:death_ingot"
+				"item": "poke_pfe:death_ingot"
 			}
 		],
 		"key": {
 			"i": {
-				"item": "poke:void_sword"
+				"item": "poke_pfe:void_sword"
 			},
 			"A": {
-				"item": "poke:death_ingot"
+				"item": "poke_pfe:death_ingot"
 			},
 			"S": {
-				"item": "poke:demonic_stick"
+				"item": "poke_pfe:demonic_stick"
 			},
 			"U": {
-				"item": "poke:platinum_upgrade_core"
+				"item": "poke_pfe:platinum_upgrade_core"
 			},
 			"N": {
-				"item": "poke:death_block"
+				"item": "poke_pfe:death_block"
 			}
 		},
 		"result": {
-			"item": "poke:death_sword"
+			"item": "poke_pfe:death_sword"
 		}
 	}
 }

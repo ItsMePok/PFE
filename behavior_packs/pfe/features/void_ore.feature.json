@@ -2,12 +2,12 @@
 	"format_version": "1.21.110",
 	"minecraft:ore_feature": {
 		"description": {
-			"identifier": "poke:void_ore.feature"
+			"identifier": "poke_pfe:void_ore.feature"
 		},
 		"count": 4,
 		"replace_rules": [
 			{
-				"places_block": "poke:void_ore",
+				"places_block": "poke_pfe:void_ore",
 				"may_replace": [
 					"minecraft:deepslate"
 				]
@@ -16,7 +16,7 @@
 				"may_replace": [
 					"minecraft:end_stone"
 				],
-				"places_block": "poke:end_void_ore"
+				"places_block": "poke_pfe:end_void_ore"
 			}
 		]
 	}

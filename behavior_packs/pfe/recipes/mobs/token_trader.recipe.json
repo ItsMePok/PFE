@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:token_trader"
+			"identifier": "poke_pfe:token_trader"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,19 +14,19 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:copper_token"
+				"item": "poke_pfe:copper_token"
 			},
 			{
-				"item": "poke:iron_token"
+				"item": "poke_pfe:iron_token"
 			},
 			{
-				"item": "poke:gold_token"
+				"item": "poke_pfe:gold_token"
 			},
 			{
-				"item": "poke:diamond_token"
+				"item": "poke_pfe:diamond_token"
 			},
 			{
-				"item": "poke:platinum_token"
+				"item": "poke_pfe:platinum_token"
 			},
 			{
 				"item": "copper_ingot"
@@ -47,7 +47,7 @@
 			}
 		},
 		"result": {
-			"item": "poke:spawn_token_trader"
+			"item": "poke_pfe:spawn_token_trader"
 		}
 	}
 }

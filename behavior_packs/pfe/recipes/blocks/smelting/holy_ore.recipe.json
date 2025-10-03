@@ -2,13 +2,13 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_furnace": {
 		"description": {
-			"identifier": "poke:holy_ore"
+			"identifier": "poke_pfe:holy_ore"
 		},
 		"tags": [
 			"furnace",
 			"blast_furnace"
 		],
-		"input": "poke:holy_ore",
-		"output": "poke:holy_ingot"
+		"input": "poke_pfe:holy_ore",
+		"output": "poke_pfe:holy_ingot"
 	}
 }

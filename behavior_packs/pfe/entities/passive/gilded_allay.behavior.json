@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "poke:gilded_allay",
+			"identifier": "poke_pfe:gilded_allay",
 			"runtime_identifier": "minecraft:allay",
 			"is_spawnable": true,
 			"is_summonable": true,

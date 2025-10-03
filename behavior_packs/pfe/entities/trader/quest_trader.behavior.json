@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "poke:quest_trader",
+			"identifier": "poke_pfe:quest_trader",
 			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false
@@ -10,7 +10,7 @@
 		"components": {
 			"minecraft:type_family": {
 				"family": [
-					"poke:traders",
+					"poke_pfe:traders",
 					"mob"
 				]
 			},
@@ -78,88 +78,88 @@
 				"all_items_want_amount": 64,
 				"items": [
 					{
-						"item": "poke:cosmetic_cosmetic"
+						"item": "poke_pfe:cosmetic_cosmetic"
 					},
 					{
-						"item": "poke:apollo_the_snake"
+						"item": "poke_pfe:apollo_the_snake"
 					},
 					{
-						"item": "poke:armadillo_hat"
+						"item": "poke_pfe:armadillo_hat"
 					},
 					{
-						"item": "poke:big_dapper_fit"
+						"item": "poke_pfe:big_dapper_fit"
 					},
 					{
-						"item": "poke:caged_soul"
+						"item": "poke_pfe:caged_soul"
 					},
 					{
-						"item": "poke:carved_melon_helmet"
+						"item": "poke_pfe:carved_melon_helmet"
 					},
 					{
-						"item": "poke:cone_cosmetic"
+						"item": "poke_pfe:cone_cosmetic"
 					},
 					{
-						"item": "poke:dapper_fit"
+						"item": "poke_pfe:dapper_fit"
 					},
 					{
-						"item": "poke:festive_helmet"
+						"item": "poke_pfe:festive_helmet"
 					},
 					{
-						"item": "poke:flower_lilly_hat"
+						"item": "poke_pfe:flower_lilly_hat"
 					},
 					{
-						"item": "poke:fungal_hat"
+						"item": "poke_pfe:fungal_hat"
 					},
 					{
-						"item": "poke:goggles"
+						"item": "poke_pfe:goggles"
 					},
 					{
-						"item": "poke:grad_cap"
+						"item": "poke_pfe:grad_cap"
 					},
 					{
-						"item": "poke:little_dapper_fit"
+						"item": "poke_pfe:little_dapper_fit"
 					},
 					{
-						"item": "poke:maxwell"
+						"item": "poke_pfe:maxwell"
 					},
 					{
-						"item": "poke:mlg_glasses"
+						"item": "poke_pfe:mlg_glasses"
 					},
 					{
-						"item": "poke:mr_duck"
+						"item": "poke_pfe:mr_duck"
 					},
 					{
-						"item": "poke:necromancer_crown"
+						"item": "poke_pfe:necromancer_crown"
 					},
 					{
-						"item": "poke:pirate_hat"
+						"item": "poke_pfe:pirate_hat"
 					},
 					{
-						"item": "poke:pok_bot_cosmetic"
+						"item": "poke_pfe:pok_bot_cosmetic"
 					},
 					{
-						"item": "poke:top_hat"
+						"item": "poke_pfe:top_hat"
 					},
 					{
-						"item": "poke:trash_lid"
+						"item": "poke_pfe:trash_lid"
 					},
 					{
-						"item": "poke:viking_helmet"
+						"item": "poke_pfe:viking_helmet"
 					},
 					{
-						"item": "poke:swift_boots"
+						"item": "poke_pfe:swift_boots"
 					},
 					{
-						"item": "poke:knightling_helmet"
+						"item": "poke_pfe:knightling_helmet"
 					},
 					{
-						"item": "poke:crown_helmet"
+						"item": "poke_pfe:crown_helmet"
 					},
 					{
-						"item": "poke:miner_helmet"
+						"item": "poke_pfe:miner_helmet"
 					},
 					{
-						"item": "poke:night_vision_goggles"
+						"item": "poke_pfe:night_vision_goggles"
 					}
 				],
 				"singular_pickup": true

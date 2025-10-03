@@ -2,23 +2,23 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "poke:demonic_nugget"
+			"identifier": "poke_pfe:demonic_nugget"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:demonic_ingot"
+				"item": "poke_pfe:demonic_ingot"
 			}
 		],
 		"ingredients": [
 			{
-				"item": "poke:demonic_ingot"
+				"item": "poke_pfe:demonic_ingot"
 			}
 		],
 		"result": {
-			"item": "poke:demonic_nugget",
+			"item": "poke_pfe:demonic_nugget",
 			"count": 9
 		},
 		"group": "nuggets"

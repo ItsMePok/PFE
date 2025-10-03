@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:pumpkin_spice",
+			"identifier": "poke_pfe:pumpkin_spice",
 			"menu_category": {
 				"category": "equipment",
 				"group": "minecraft:itemGroup.name.miscFood"
@@ -13,7 +13,7 @@
 				"value": "%poke_pfe.pumpkin_spice\n%poke_pfe.tag"
 			},
 			"poke_pfe:icon_path": "textures/poke/pfe/pumpkin_spice",
-			"poke:consumeEffects": {},
+			"poke_pfe:consumeEffects": {},
 			"minecraft:icon": "poke_pfe_pumpkin_spice",
 			"minecraft:food": {
 				"nutrition": 10,

@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:carved_melon_helmet",
+			"identifier": "poke_pfe:carved_melon_helmet",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -22,7 +22,7 @@
 				"slot": "slot.armor.head"
 			},
 			"minecraft:block_placer": {
-				"block": "poke:carved_melon"
+				"block": "poke_pfe:carved_melon"
 			}
 		}
 	}

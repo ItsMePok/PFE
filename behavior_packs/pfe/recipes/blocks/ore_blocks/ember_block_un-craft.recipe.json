@@ -2,14 +2,14 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:ember_block_un-craft"
+			"identifier": "poke_pfe:ember_block_un-craft"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:ember_block"
+				"item": "poke_pfe:ember_block"
 			}
 		],
 		"pattern": [
@@ -18,11 +18,11 @@
 		"priority": 1,
 		"key": {
 			"#": {
-				"item": "poke:ember_block"
+				"item": "poke_pfe:ember_block"
 			}
 		},
 		"result": {
-			"item": "poke:molten_slimeball",
+			"item": "poke_pfe:molten_slimeball",
 			"count": 9
 		}
 	}

@@ -2,18 +2,18 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "poke:smooth_limestone_stonecut"
+			"identifier": "poke_pfe:smooth_limestone_stonecut"
 		},
 		"tags": [
 			"stonecutter"
 		],
 		"ingredients": [
 			{
-				"item": "poke:limestone"
+				"item": "poke_pfe:limestone"
 			}
 		],
 		"result": {
-			"item": "poke:smooth_limestone"
+			"item": "poke_pfe:smooth_limestone"
 		}
 	}
 }

@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:necromancer_crown",
+			"identifier": "poke_pfe:necromancer_crown",
 			"menu_category": {
 				"category": "equipment"
 			}

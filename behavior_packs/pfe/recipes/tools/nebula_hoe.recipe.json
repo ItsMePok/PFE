@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:nebula_hoe"
+			"identifier": "poke_pfe:nebula_hoe"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,19 +14,19 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:nebula_ingot"
+				"item": "poke_pfe:nebula_ingot"
 			}
 		],
 		"key": {
 			"i": {
-				"item": "poke:nebula_ingot"
+				"item": "poke_pfe:nebula_ingot"
 			},
 			"N": {
-				"item": "poke:nebula_block"
+				"item": "poke_pfe:nebula_block"
 			}
 		},
 		"result": {
-			"item": "poke:nebula_hoe"
+			"item": "poke_pfe:nebula_hoe"
 		}
 	}
 }

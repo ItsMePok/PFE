@@ -6,12 +6,12 @@
     },
     "unlock": [
       {
-        "item": "poke:radium_ingot"
+        "item": "poke_pfe:radium_ingot"
       }
     ],
     "key": {
       "X": {
-        "item": "poke:radium_ingot"
+        "item": "poke_pfe:radium_ingot"
       }
     },
     "result": {
@@ -23,7 +23,7 @@
       " X ",
       "X X"
     ],
-    "group": "poke:drain",
+    "group": "poke_pfe:drain",
     "tags": [
       "crafting_table"
     ]

@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "poke:warped_sporecat",
+			"identifier": "poke_pfe:warped_sporecat",
 			"runtime_identifier": "minecraft:cat",
 			"is_spawnable": true,
 			"is_summonable": true,
@@ -24,7 +24,7 @@
 					"feed_items": [
 						"fish",
 						"salmon",
-						"poke:raw_sporefish"
+						"poke_pfe:raw_sporefish"
 					],
 					"grow_up": {
 						"event": "minecraft:ageable_grow_up",
@@ -52,8 +52,8 @@
 					"require_full_health": true,
 					"allow_sitting": true,
 					"breeds_with": {
-						"mate_type": "poke:warped_sporecat",
-						"baby_type": "poke:warped_sporecat",
+						"mate_type": "poke_pfe:warped_sporecat",
+						"baby_type": "poke_pfe:warped_sporecat",
 						"breed_event": {
 							"event": "minecraft:entity_born",
 							"target": "baby"
@@ -62,7 +62,7 @@
 					"breed_items": [
 						"fish",
 						"salmon",
-						"poke:raw_sporefish"
+						"poke_pfe:raw_sporefish"
 					]
 				}
 			},
@@ -80,8 +80,8 @@
 						"fish",
 						"salmon",
 						"minecraft:tropical_fish",
-						"poke:raw_sporefish",
-						"poke:raw_piranha"
+						"poke_pfe:raw_sporefish",
+						"poke_pfe:raw_piranha"
 					],
 					"tame_event": {
 						"event": "minecraft:on_tame",
@@ -142,7 +142,7 @@
 					"items": [
 						"fish",
 						"salmon",
-						"poke:raw_sporefish"
+						"poke_pfe:raw_sporefish"
 					]
 				},
 				"minecraft:behavior.avoid_mob_type": {
@@ -182,7 +182,7 @@
 					"items": [
 						"fish",
 						"salmon",
-						"poke:raw_sporefish"
+						"poke_pfe:raw_sporefish"
 					]
 				},
 				"minecraft:is_dyeable": {
@@ -292,7 +292,7 @@
 					"value": 4
 				}
 			},
-			"poke:bella": {
+			"poke_pfe:bella": {
 				"minecraft:variant": {
 					"value": 5
 				}
@@ -308,14 +308,14 @@
 					{
 						"name_filter": "despawn",
 						"on_named": {
-							"event": "poke:despawn",
+							"event": "poke_pfe:despawn",
 							"target": "self"
 						}
 					},
 					{
 						"name_filter": "Bella",
 						"on_named": {
-							"event": "poke:bella",
+							"event": "poke_pfe:bella",
 							"target": "self"
 						}
 					}
@@ -342,7 +342,7 @@
 						"heal_amount": 2
 					},
 					{
-						"item": "poke:raw_sporefish",
+						"item": "poke_pfe:raw_sporefish",
 						"heal_amount": 2
 					},
 					{
@@ -565,7 +565,7 @@
 					]
 				}
 			},
-			"poke:bella": {
+			"poke_pfe:bella": {
 				"remove": {
 					"component_groups": [
 						"minecraft:warped_sporecat_white",
@@ -577,7 +577,7 @@
 				},
 				"add": {
 					"component_groups": [
-						"poke:bella"
+						"poke_pfe:bella"
 					]
 				}
 			}

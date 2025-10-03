@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "poke:holy_arrow",
+			"identifier": "poke_pfe:holy_arrow",
 			"is_spawnable": false,
 			"is_summonable": true,
 			"is_experimental": false,

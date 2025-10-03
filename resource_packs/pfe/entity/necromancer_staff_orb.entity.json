@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "poke:necromancer_staff_orb",
+			"identifier": "poke_pfe:necromancer_staff_orb",
 			"materials": {
 				"default": "entity_emissive"
 			},

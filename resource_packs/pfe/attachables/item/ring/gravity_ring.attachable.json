@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "poke:gravity_ring",
+			"identifier": "poke_pfe:gravity_ring",
 			"render_controllers": [
 				"controller.render.item_default"
 			],

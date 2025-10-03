@@ -2,7 +2,7 @@
 	"format_version": "1.19.60",
 	"minecraft:ore_feature": {
 		"description": {
-			"identifier": "poke:nether_demonic_ore.feature"
+			"identifier": "poke_pfe:nether_demonic_ore.feature"
 		},
 		"count": 3,
 		"replace_rules": [
@@ -37,7 +37,7 @@
 			},
 			{
 				"places_block": {
-					"name": "poke:demonic_ore",
+					"name": "poke_pfe:demonic_ore",
 					"states": {}
 				},
 				"may_replace": [
@@ -47,7 +47,7 @@
 			},
 			{
 				"places_block": {
-					"name": "poke:nether_demonic_ore"
+					"name": "poke_pfe:nether_demonic_ore"
 				},
 				"may_replace": [
 					"netherrack"

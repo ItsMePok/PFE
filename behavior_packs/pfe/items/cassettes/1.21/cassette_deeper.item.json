@@ -2,7 +2,7 @@
   "format_version": "1.21.110",
   "minecraft:item": {
     "description": {
-      "identifier": "poke:cassette_deeper"
+      "identifier": "poke_pfe:cassette_deeper"
     },
     "components": {
       "minecraft:display_name": {
@@ -15,7 +15,7 @@
       },
       "minecraft:tags": {
         "tags": [
-          "pfe:is_cassette"
+          "poke_pfe:is_cassette"
         ]
       }
     }

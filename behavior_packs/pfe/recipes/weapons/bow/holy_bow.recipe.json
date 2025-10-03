@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:holy_bow"
+			"identifier": "poke_pfe:holy_bow"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,10 +14,10 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:holy_ingot"
+				"item": "poke_pfe:holy_ingot"
 			},
 			{
-				"item": "poke:holy_arrow"
+				"item": "poke_pfe:holy_arrow"
 			},
 			{
 				"item": "bow"
@@ -31,14 +31,14 @@
 		],
 		"key": {
 			"H": {
-				"item": "poke:holy_ingot"
+				"item": "poke_pfe:holy_ingot"
 			},
 			"S": {
 				"item": "minecraft:string"
 			}
 		},
 		"result": {
-			"item": "poke:holy_bow"
+			"item": "poke_pfe:holy_bow"
 		}
 	}
 }

@@ -2,7 +2,7 @@
 	"format_version": "1.8.0",
 	"minecraft:spawn_rules": {
 		"description": {
-			"identifier": "poke:raccoon",
+			"identifier": "poke_pfe:raccoon",
 			"population_control": "animal"
 		},
 		"conditions": [
@@ -17,7 +17,9 @@
 						}
 					]
 				},
-				"minecraft:weight": {"default": 40}
+				"minecraft:weight": {
+					"default": 40
+				}
 			}
 		]
 	}

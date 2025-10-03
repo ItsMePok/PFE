@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "poke:horns",
+			"identifier": "poke_pfe:horns",
 			"render_controllers": [
 				"controller.render.armor"
 			],

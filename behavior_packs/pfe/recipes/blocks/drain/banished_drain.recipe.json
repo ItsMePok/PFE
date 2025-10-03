@@ -6,12 +6,12 @@
     },
     "unlock": [
       {
-        "item": "poke:banished_star"
+        "item": "poke_pfe:banished_star"
       }
     ],
     "key": {
       "X": {
-        "item": "poke:banished_star"
+        "item": "poke_pfe:banished_star"
       }
     },
     "result": {
@@ -23,7 +23,7 @@
       " X ",
       "X X"
     ],
-    "group": "poke:drain",
+    "group": "poke_pfe:drain",
     "tags": [
       "crafting_table"
     ]

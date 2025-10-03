@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:zombken"
+			"identifier": "poke_pfe:zombken"
 		},
 		"tags": [
 			"crafting_table"
@@ -35,7 +35,7 @@
 			}
 		},
 		"result": {
-			"item": "poke:spawn_zombken"
+			"item": "poke_pfe:spawn_zombken"
 		}
 	}
 }

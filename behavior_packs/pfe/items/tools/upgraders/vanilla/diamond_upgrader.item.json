@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:diamond_upgrader",
+			"identifier": "poke_pfe:diamond_upgrader",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -25,7 +25,7 @@
 			"poke_pfe:upgradeable": {
 				"version": 1,
 				"upgrade_ids": [
-					"pfe:persistence"
+					"poke_pfe:persistence"
 				]
 			},
 			"poke_pfe:transform_blocks": {
@@ -36,7 +36,7 @@
 			},
 			"minecraft:tags": {
 				"tags": [
-					"pfe:is_upgrader"
+					"poke_pfe:is_upgrader"
 				]
 			}
 		}

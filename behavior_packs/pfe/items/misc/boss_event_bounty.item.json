@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:boss_event_bounty",
+			"identifier": "poke_pfe:boss_event_bounty",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -13,7 +13,7 @@
 			},
 			"poke_pfe:icon_path": "textures/poke/pfe/bounty",
 			"minecraft:icon": "poke_pfe_boss_event",
-			"poke:boss_event": {}
+			"poke_pfe:boss_event": {}
 		}
 	}
 }

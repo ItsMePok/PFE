@@ -11,10 +11,10 @@
     ],
     "unlock": [
       {
-        "item": "poke:molten_bricks"
+        "item": "poke_pfe:molten_bricks"
       },
       {
-        "item": "poke:polished_limestone"
+        "item": "poke_pfe:polished_limestone"
       },
       {
         "item": "minecraft:blast_furnace"
@@ -27,10 +27,10 @@
     ],
     "key": {
       "M": {
-        "item": "poke:molten_bricks"
+        "item": "poke_pfe:molten_bricks"
       },
       "P": {
-        "item": "poke:polished_limestone"
+        "item": "poke_pfe:polished_limestone"
       },
       "B": {
         "item": "minecraft:blast_furnace"

@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "poke:necromancer",
+			"identifier": "poke_pfe:necromancer",
 			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false
@@ -13,7 +13,7 @@
 					"time": 1800,
 					"looping": true,
 					"time_down_event": {
-						"event": "poke:despawn",
+						"event": "poke_pfe:despawn",
 						"target": "self"
 					}
 				}
@@ -171,20 +171,20 @@
 					"undead",
 					"monster",
 					"skeleton",
-					"pfe:boss"
+					"poke_pfe:boss"
 				]
 			},
 			"minecraft:nameable": {
 				"name_actions": {
 					"name_filter": "despawn",
 					"on_named": {
-						"event": "poke:despawn",
+						"event": "poke_pfe:despawn",
 						"target": "self"
 					}
 				},
 				"default_trigger": {
 					"target": "self",
-					"event": "poke:renamed"
+					"event": "poke_pfe:renamed"
 				}
 			},
 			"minecraft:collision_box": {
@@ -204,7 +204,7 @@
 			"minecraft:boss": {
 				"should_darken_sky": true,
 				"hud_range": 55,
-				"name": "entity.poke:necromancer.name"
+				"name": "entity.poke_pfe:necromancer.name"
 			},
 			"minecraft:navigation.walk": {
 				"can_path_over_water": true,
@@ -253,11 +253,11 @@
 				"inside_range": 5,
 				"outside_range": 6,
 				"on_inside_range": {
-					"event": "poke:melee_mode",
+					"event": "poke_pfe:melee_mode",
 					"target": "self"
 				},
 				"on_outside_range": {
-					"event": "poke:ranged_mode",
+					"event": "poke_pfe:ranged_mode",
 					"target": "self"
 				}
 			},
@@ -325,7 +325,7 @@
 					]
 				}
 			},
-			"poke:ranged_mode": {
+			"poke_pfe:ranged_mode": {
 				"remove": {
 					"component_groups": [
 						"melee_mode"
@@ -337,7 +337,7 @@
 					]
 				}
 			},
-			"poke:melee_mode": {
+			"poke_pfe:melee_mode": {
 				"add": {
 					"component_groups": [
 						"melee_mode"
@@ -349,14 +349,14 @@
 					]
 				}
 			},
-			"poke:despawn": {
+			"poke_pfe:despawn": {
 				"add": {
 					"component_groups": [
 						"despawn"
 					]
 				}
 			},
-			"poke:renamed": {
+			"poke_pfe:renamed": {
 				"remove": {
 					"component_groups": [
 						"timer"

@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "poke:caged_soul",
+			"identifier": "poke_pfe:caged_soul",
 			"render_controllers": [
 				"controller.render.armor"
 			],

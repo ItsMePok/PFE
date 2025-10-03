@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:root_beer",
+			"identifier": "poke_pfe:root_beer",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -12,7 +12,7 @@
 				"value": "%poke_pfe.root_beer\n%poke_pfe.tag"
 			},
 			"poke_pfe:icon_path": "textures/poke/pfe/root_beer",
-			"poke:consumeEffects": {},
+			"poke_pfe:consumeEffects": {},
 			"minecraft:icon": "poke_pfe_root_beer",
 			"minecraft:food": {
 				"nutrition": 4,

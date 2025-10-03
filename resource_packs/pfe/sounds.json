@@ -37,7 +37,7 @@
 	},
 	"entity_sounds": {
 		"entities": {
-			"poke:retro_llama": {
+			"poke_pfe:retro_llama": {
 				"events": {
 					"add.chest": {
 						"pitch": [
@@ -80,7 +80,7 @@
 				],
 				"volume": 0.8
 			},
-			"poke:soul_blaze": {
+			"poke_pfe:soul_blaze": {
 				"events": {
 					"ambient": "mob.blaze.breathe",
 					"death": "mob.blaze.death",
@@ -93,7 +93,7 @@
 				],
 				"volume": 1
 			},
-			"poke:super_striker": {
+			"poke_pfe:super_striker": {
 				"events": {
 					"ambient": "mob.skeleton.say",
 					"death": {
@@ -116,7 +116,7 @@
 				],
 				"volume": 1
 			},
-			"poke:mini_demonic_allay": {
+			"poke_pfe:mini_demonic_allay": {
 				"events": {
 					"ambient": "mob.allay.idle",
 					"ambient.tame": "mob.allay.idle_holding",
@@ -132,7 +132,7 @@
 				],
 				"volume": 1
 			},
-			"poke:demonic_allay": {
+			"poke_pfe:demonic_allay": {
 				"events": {
 					"ambient": "mob.allay.idle",
 					"ambient.tame": "mob.allay.idle_holding",
@@ -145,7 +145,7 @@
 				],
 				"volume": 1
 			},
-			"poke:rat": {
+			"poke_pfe:rat": {
 				"events": {
 					"ambient": "mob.fox.aggro",
 					"death": "mob.fox.death",
@@ -173,7 +173,7 @@
 				],
 				"volume": 0.4
 			},
-			"poke:striker": {
+			"poke_pfe:striker": {
 				"events": {
 					"ambient": "mob.skeleton.say",
 					"death": "mob.skeleton.death",
@@ -193,7 +193,7 @@
 				],
 				"volume": 1
 			},
-			"poke:ender_phantom": {
+			"poke_pfe:ender_phantom": {
 				"events": {
 					"ambient": "mob.phantom.idle",
 					"attack": "mob.phantom.bite",
@@ -214,7 +214,7 @@
 				],
 				"volume": 10
 			},
-			"poke:gilded_allay": {
+			"poke_pfe:gilded_allay": {
 				"events": {
 					"ambient": "mob.allay.idle",
 					"ambient.tame": "mob.allay.idle_holding",
@@ -227,7 +227,7 @@
 				],
 				"volume": 1
 			},
-			"poke:piranha": {
+			"poke_pfe:piranha": {
 				"events": {
 					"flop": {
 						"pitch": 1,
@@ -249,7 +249,7 @@
 				],
 				"volume": 1
 			},
-			"poke:yak": {
+			"poke_pfe:yak": {
 				"events": {
 					"ambient": "mob.cow.say",
 					"death": "mob.cow.hurt",
@@ -269,7 +269,7 @@
 				],
 				"volume": 1
 			},
-			"poke:duck": {
+			"poke_pfe:duck": {
 				"events": {
 					"ambient": "poke_pfe.duck.ambient",
 					"death": "mob.dolphin.attack",
@@ -298,7 +298,7 @@
 				],
 				"volume": 1
 			},
-			"poke:woodspike_guardian": {
+			"poke_pfe:woodspike_guardian": {
 				"events": {
 					"ambient": "mob.guardian.land_idle",
 					"ambient.in.water": "mob.guardian.ambient",
@@ -313,7 +313,7 @@
 				],
 				"volume": 1
 			},
-			"poke:windswept_bear": {
+			"poke_pfe:windswept_bear": {
 				"events": {
 					"ambient": "mob.polarbear.idle",
 					"ambient.baby": "mob.polarbear_baby.idle",
@@ -339,7 +339,7 @@
 				],
 				"volume": 1
 			},
-			"poke:warped_sporecat": {
+			"poke_pfe:warped_sporecat": {
 				"events": {
 					"ambient": "mob.cat.straymeow",
 					"ambient.tame": "mob.cat.meow",
@@ -362,7 +362,7 @@
 				],
 				"volume": 1
 			},
-			"poke:shroomfin": {
+			"poke_pfe:shroomfin": {
 				"events": {
 					"ambient": "mob.dolphin.idle",
 					"ambient.in.water": "mob.dolphin.idle_water",
@@ -391,7 +391,7 @@
 				],
 				"volume": 1
 			},
-			"poke:sculk_enderman": {
+			"poke_pfe:sculk_enderman": {
 				"events": {
 					"ambient": "mob.endermen.idle",
 					"death": "mob.endermen.death",
@@ -409,7 +409,7 @@
 				],
 				"volume": 1
 			},
-			"poke:woods_goat": {
+			"poke_pfe:woods_goat": {
 				"events": {
 					"ambient": "mob.goat.ambient",
 					"ambient.screamer": "mob.goat.ambient.screamer",
@@ -426,7 +426,7 @@
 				],
 				"volume": 1
 			},
-			"poke:shallow_cod": {
+			"poke_pfe:shallow_cod": {
 				"events": {
 					"flop": {
 						"pitch": 1,
@@ -447,7 +447,7 @@
 				],
 				"volume": 1
 			},
-			"poke:pale_ocelot": {
+			"poke_pfe:pale_ocelot": {
 				"events": {
 					"ambient": "mob.ocelot.idle",
 					"death": "mob.ocelot.death",
@@ -463,7 +463,7 @@
 				],
 				"volume": 1
 			},
-			"poke:grizzly_bear": {
+			"poke_pfe:grizzly_bear": {
 				"events": {
 					"ambient": "mob.polarbear.idle",
 					"ambient.baby": "mob.polarbear_baby.idle",
@@ -489,7 +489,7 @@
 				],
 				"volume": 1
 			},
-			"poke:bone_bear": {
+			"poke_pfe:bone_bear": {
 				"events": {
 					"ambient": "mob.polarbear.idle",
 					"ambient.baby": "mob.polarbear_baby.idle",
@@ -515,7 +515,7 @@
 				],
 				"volume": 1
 			},
-			"poke:pink_squid": {
+			"poke_pfe:pink_squid": {
 				"events": {
 					"ambient": "mob.squid.ambient",
 					"death": "mob.squid.death",
@@ -527,7 +527,7 @@
 				],
 				"volume": 0.4
 			},
-			"poke:orange_squid": {
+			"poke_pfe:orange_squid": {
 				"events": {
 					"ambient": "mob.squid.ambient",
 					"death": "mob.squid.death",
@@ -539,7 +539,7 @@
 				],
 				"volume": 0.4
 			},
-			"poke:brown_sporefish": {
+			"poke_pfe:brown_sporefish": {
 				"events": {
 					"flop": {
 						"pitch": 1,
@@ -560,7 +560,7 @@
 				],
 				"volume": 1
 			},
-			"poke:red_sporefish": {
+			"poke_pfe:red_sporefish": {
 				"events": {
 					"flop": {
 						"pitch": 1,
@@ -581,7 +581,7 @@
 				],
 				"volume": 1
 			},
-			"poke:sporefish": {
+			"poke_pfe:sporefish": {
 				"events": {
 					"flop": {
 						"pitch": 1,
@@ -602,7 +602,7 @@
 				],
 				"volume": 1
 			},
-			"poke:crimson_sporeshroom": {
+			"poke_pfe:crimson_sporeshroom": {
 				"events": {
 					"ambient": "mob.cow.say",
 					"death": "mob.cow.hurt",
@@ -623,7 +623,7 @@
 				],
 				"volume": 1
 			},
-			"poke:warped_sporeshroom": {
+			"poke_pfe:warped_sporeshroom": {
 				"events": {
 					"ambient": "mob.cow.say",
 					"death": "mob.cow.hurt",
@@ -644,7 +644,7 @@
 				],
 				"volume": 1
 			},
-			"poke:cosmetic_trader": {
+			"poke_pfe:cosmetic_trader": {
 				"events": {
 					"ambient": "mob.villager.idle",
 					"death": "mob.villager.death",
@@ -660,7 +660,7 @@
 				],
 				"volume": 1
 			},
-			"poke:cassette_trader": {
+			"poke_pfe:cassette_trader": {
 				"events": {
 					"ambient": "mob.villager.idle",
 					"death": "mob.villager.death",
@@ -676,7 +676,7 @@
 				],
 				"volume": 1
 			},
-			"poke:raccoon": {
+			"poke_pfe:raccoon": {
 				"events": {
 					"ambient": "mob.fox.aggro",
 					"death": "mob.fox.death",
@@ -704,7 +704,7 @@
 				],
 				"volume": 1
 			},
-			"poke:token_trader": {
+			"poke_pfe:token_trader": {
 				"volume": 1,
 				"pitch": [
 					0.8,
@@ -720,7 +720,7 @@
 					"haggle.no": "poke_pfe.trader.no"
 				}
 			},
-			"poke:shopkeeper": {
+			"poke_pfe:shopkeeper": {
 				"volume": 1,
 				"pitch": [
 					0.8,
@@ -736,7 +736,7 @@
 					"haggle.no": "poke_pfe.trader.no"
 				}
 			},
-			"poke:scrapper": {
+			"poke_pfe:scrapper": {
 				"volume": 1,
 				"pitch": [
 					0.6,
@@ -752,7 +752,7 @@
 					"haggle.no": "poke_pfe.trader.no"
 				}
 			},
-			"poke:quest_trader": {
+			"poke_pfe:quest_trader": {
 				"volume": 0.95,
 				"pitch": [
 					0.6,
@@ -768,7 +768,7 @@
 					"haggle.no": "poke_pfe.trader.no"
 				}
 			},
-			"poke:money_man": {
+			"poke_pfe:money_man": {
 				"volume": 1,
 				"pitch": [
 					0.7,
@@ -784,7 +784,7 @@
 					"haggle.no": "poke_pfe.trader.no"
 				}
 			},
-			"poke:robo_golem": {
+			"poke_pfe:robo_golem": {
 				"events": {
 					"ambient": "mob.irongolem.say",
 					"death": {
@@ -815,7 +815,7 @@
 				],
 				"volume": 1
 			},
-			"poke:knightling": {
+			"poke_pfe:knightling": {
 				"events": {
 					"ambient": "mob.irongolem.say",
 					"death": {
@@ -843,7 +843,7 @@
 				],
 				"volume": 1
 			},
-			"poke:necromancer": {
+			"poke_pfe:necromancer": {
 				"events": {
 					"ambient": "mob.skeleton.say",
 					"cast.spell": "mob.evocation_illager.cast_spell",
@@ -861,7 +861,7 @@
 				],
 				"volume": 1
 			},
-			"poke:zombken": {
+			"poke_pfe:zombken": {
 				"events": {
 					"ambient": {
 						"pitch": 0.8,
@@ -887,7 +887,7 @@
 				],
 				"volume": 1
 			},
-			"poke:dragon": {
+			"poke_pfe:dragon": {
 				"events": {
 					"ambient": {
 						"pitch": 0.85,
@@ -913,7 +913,7 @@
 				],
 				"volume": 1
 			},
-			"poke:listener": {
+			"poke_pfe:listener": {
 				"events": {
 					"ambient": {
 						"pitch": 0.008,
@@ -939,7 +939,7 @@
 				],
 				"volume": 1
 			},
-			"poke:snowman": {
+			"poke_pfe:snowman": {
 				"events": {
 					"death": {
 						"pitch": 1,

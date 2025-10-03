@@ -15,16 +15,16 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:medic_ingot"
+				"item": "poke_pfe:medic_ingot"
 			},
 			{
-				"item": "poke:medic_block"
+				"item": "poke_pfe:medic_block"
 			},
 			{
-				"item": "poke:godly_stick"
+				"item": "poke_pfe:godly_stick"
 			},
 			{
-				"item": "poke:platinum_upgrade_core"
+				"item": "poke_pfe:platinum_upgrade_core"
 			},
 			{
 				"item": "poke_pfe:godly_claymore"
@@ -32,16 +32,16 @@
 		],
 		"key": {
 			"I": {
-				"item": "poke:medic_ingot"
+				"item": "poke_pfe:medic_ingot"
 			},
 			"B": {
-				"item": "poke:medic_block"
+				"item": "poke_pfe:medic_block"
 			},
 			"S": {
-				"item": "poke:godly_stick"
+				"item": "poke_pfe:godly_stick"
 			},
 			"U": {
-				"item": "poke:platinum_upgrade_core"
+				"item": "poke_pfe:platinum_upgrade_core"
 			},
 			"C": {
 				"item": "poke_pfe:godly_claymore"

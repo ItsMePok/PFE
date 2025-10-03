@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "poke:money_man",
+			"identifier": "poke_pfe:money_man",
 			"materials": {
 				"default": "villager" //2
 			},

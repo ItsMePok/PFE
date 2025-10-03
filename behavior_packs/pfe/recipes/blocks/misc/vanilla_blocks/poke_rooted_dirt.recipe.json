@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:poke_rooted_dirt"
+			"identifier": "poke_pfe:poke_rooted_dirt"
 		},
 		"tags": [
 			"crafting_table"
@@ -12,7 +12,7 @@
 				"item": "hanging_roots"
 			},
 			{
-				"item": "poke:bundled_sugarcane"
+				"item": "poke_pfe:bundled_sugarcane"
 			},
 			{
 				"item": "mangrove_roots"
@@ -28,7 +28,7 @@
 		],
 		"key": {
 			"#": {
-				"item": "poke:bundled_sugarcane"
+				"item": "poke_pfe:bundled_sugarcane"
 			},
 			"B": {
 				"item": "dirt"

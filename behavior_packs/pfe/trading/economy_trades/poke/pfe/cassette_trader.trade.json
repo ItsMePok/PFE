@@ -9,7 +9,7 @@
             {
               "wants": [
                 {
-                  "item": "poke:gold_token",
+                  "item": "poke_pfe:gold_token",
                   "quantity": {
                     "min": 2,
                     "max": 5
@@ -35,187 +35,187 @@
                       "item": "poke_pfe:cassette_os_piano"
                     },
                     {
-                      "item": "poke:empty_cassette"
+                      "item": "poke_pfe:empty_cassette"
                     },
                     {
-                      "item": "poke:cassette_chrysopoeia"
+                      "item": "poke_pfe:cassette_chrysopoeia"
                     },
                     {
-                      "item": "poke:cassette_rubedo"
+                      "item": "poke_pfe:cassette_rubedo"
                     },
                     {
-                      "item": "poke:cassette_sobelow"
+                      "item": "poke_pfe:cassette_sobelow"
                     },
                     {
-                      "item": "poke:cassette_axolotl"
+                      "item": "poke_pfe:cassette_axolotl"
                     },
                     {
-                      "item": "poke:cassette_dragonfish"
+                      "item": "poke_pfe:cassette_dragonfish"
                     },
                     {
-                      "item": "poke:cassette_shuniji"
+                      "item": "poke_pfe:cassette_shuniji"
                     },
                     {
-                      "item": "poke:cassette_ancestry"
+                      "item": "poke_pfe:cassette_ancestry"
                     },
                     {
-                      "item": "poke:cassette_anordinaryday"
+                      "item": "poke_pfe:cassette_anordinaryday"
                     },
                     {
-                      "item": "poke:cassette_comfortingmemories"
+                      "item": "poke_pfe:cassette_comfortingmemories"
                     },
                     {
-                      "item": "poke:cassette_floatingdream"
+                      "item": "poke_pfe:cassette_floatingdream"
                     },
                     {
-                      "item": "poke:cassette_infiniteamethyst"
+                      "item": "poke_pfe:cassette_infiniteamethyst"
                     },
                     {
-                      "item": "poke:cassette_lefttobloom"
+                      "item": "poke_pfe:cassette_lefttobloom"
                     },
                     {
-                      "item": "poke:cassette_onemoreday"
+                      "item": "poke_pfe:cassette_onemoreday"
                     },
                     {
-                      "item": "poke:cassette_standtall"
+                      "item": "poke_pfe:cassette_standtall"
                     },
                     {
-                      "item": "poke:cassette_wending"
+                      "item": "poke_pfe:cassette_wending"
                     },
                     {
-                      "item": "poke:cassette_aerie"
+                      "item": "poke_pfe:cassette_aerie"
                     },
                     {
-                      "item": "poke:cassette_firebugs"
+                      "item": "poke_pfe:cassette_firebugs"
                     },
                     {
-                      "item": "poke:cassette_labyrinthine"
+                      "item": "poke_pfe:cassette_labyrinthine"
                     },
                     {
-                      "item": "poke:cassette_afamiliarroom"
+                      "item": "poke_pfe:cassette_afamiliarroom"
                     },
                     {
-                      "item": "poke:cassette_bromeliad"
+                      "item": "poke_pfe:cassette_bromeliad"
                     },
                     {
-                      "item": "poke:cassette_crescentdunes"
+                      "item": "poke_pfe:cassette_crescentdunes"
                     },
                     {
-                      "item": "poke:cassette_echointhewind"
+                      "item": "poke_pfe:cassette_echointhewind"
                     },
                     {
-                      "item": "poke:cassette_deeper"
+                      "item": "poke_pfe:cassette_deeper"
                     },
                     {
-                      "item": "poke:cassette_eldunknown"
+                      "item": "poke_pfe:cassette_eldunknown"
                     },
                     {
-                      "item": "poke:cassette_endless"
+                      "item": "poke_pfe:cassette_endless"
                     },
                     {
-                      "item": "poke:cassette_featherfall"
+                      "item": "poke_pfe:cassette_featherfall"
                     },
                     {
-                      "item": "poke:cassette_komorebi"
+                      "item": "poke_pfe:cassette_komorebi"
                     },
                     {
-                      "item": "poke:cassette_pokopoko"
+                      "item": "poke_pfe:cassette_pokopoko"
                     },
                     {
-                      "item": "poke:cassette_puzzlebox"
+                      "item": "poke_pfe:cassette_puzzlebox"
                     },
                     {
-                      "item": "poke:cassette_watcher"
+                      "item": "poke_pfe:cassette_watcher"
                     },
                     {
-                      "item": "poke:cassette_yakusoku"
+                      "item": "poke_pfe:cassette_yakusoku"
                     },
                     {
-                      "item": "poke:cassette_clark"
+                      "item": "poke_pfe:cassette_clark"
                     },
                     {
-                      "item": "poke:cassette_danny"
+                      "item": "poke_pfe:cassette_danny"
                     },
                     {
-                      "item": "poke:cassette_dryhands"
+                      "item": "poke_pfe:cassette_dryhands"
                     },
                     {
-                      "item": "poke:cassette_haggstrom"
+                      "item": "poke_pfe:cassette_haggstrom"
                     },
                     {
-                      "item": "poke:cassette_key"
+                      "item": "poke_pfe:cassette_key"
                     },
                     {
-                      "item": "poke:cassette_livingmice"
+                      "item": "poke_pfe:cassette_livingmice"
                     },
                     {
-                      "item": "poke:cassette_miceonvenus"
+                      "item": "poke_pfe:cassette_miceonvenus"
                     },
                     {
-                      "item": "poke:cassette_minecraft"
+                      "item": "poke_pfe:cassette_minecraft"
                     },
                     {
-                      "item": "poke:cassette_oxygene"
+                      "item": "poke_pfe:cassette_oxygene"
                     },
                     {
-                      "item": "poke:cassette_subwooferlullaby"
+                      "item": "poke_pfe:cassette_subwooferlullaby"
                     },
                     {
-                      "item": "poke:cassette_sweden"
+                      "item": "poke_pfe:cassette_sweden"
                     },
                     {
-                      "item": "poke:cassette_wethands"
+                      "item": "poke_pfe:cassette_wethands"
                     },
                     {
-                      "item": "poke:cassette_alpha"
+                      "item": "poke_pfe:cassette_alpha"
                     },
                     {
-                      "item": "poke:cassette_balladofthecats"
+                      "item": "poke_pfe:cassette_balladofthecats"
                     },
                     {
-                      "item": "poke:cassette_beginning2"
+                      "item": "poke_pfe:cassette_beginning2"
                     },
                     {
-                      "item": "poke:cassette_ariamath"
+                      "item": "poke_pfe:cassette_ariamath"
                     },
                     {
-                      "item": "poke:cassette_biomefest"
+                      "item": "poke_pfe:cassette_biomefest"
                     },
                     {
-                      "item": "poke:cassette_blindspots"
+                      "item": "poke_pfe:cassette_blindspots"
                     },
                     {
-                      "item": "poke:cassette_boss"
+                      "item": "poke_pfe:cassette_boss"
                     },
                     {
-                      "item": "poke:cassette_concretehalls"
+                      "item": "poke_pfe:cassette_concretehalls"
                     },
                     {
-                      "item": "poke:cassette_deadvoxel"
+                      "item": "poke_pfe:cassette_deadvoxel"
                     },
                     {
-                      "item": "poke:cassette_dreiton"
+                      "item": "poke_pfe:cassette_dreiton"
                     },
                     {
-                      "item": "poke:cassette_floatingtrees"
+                      "item": "poke_pfe:cassette_floatingtrees"
                     },
                     {
-                      "item": "poke:cassette_hauntmuskie"
+                      "item": "poke_pfe:cassette_hauntmuskie"
                     },
                     {
-                      "item": "poke:cassette_moogcity2"
+                      "item": "poke_pfe:cassette_moogcity2"
                     },
                     {
-                      "item": "poke:cassette_mutation"
+                      "item": "poke_pfe:cassette_mutation"
                     },
                     {
-                      "item": "poke:cassette_taswell"
+                      "item": "poke_pfe:cassette_taswell"
                     },
                     {
-                      "item": "poke:cassette_theend"
+                      "item": "poke_pfe:cassette_theend"
                     },
                     {
-                      "item": "poke:cassette_warmth"
+                      "item": "poke_pfe:cassette_warmth"
                     }
                   ]
                 }
@@ -232,7 +232,7 @@
             {
               "wants": [
                 {
-                  "item": "poke:gold_token",
+                  "item": "poke_pfe:gold_token",
                   "quantity": {
                     "min": 2,
                     "max": 5
@@ -258,187 +258,187 @@
                       "item": "poke_pfe:cassette_os_piano"
                     },
                     {
-                      "item": "poke:empty_cassette"
+                      "item": "poke_pfe:empty_cassette"
                     },
                     {
-                      "item": "poke:cassette_chrysopoeia"
+                      "item": "poke_pfe:cassette_chrysopoeia"
                     },
                     {
-                      "item": "poke:cassette_rubedo"
+                      "item": "poke_pfe:cassette_rubedo"
                     },
                     {
-                      "item": "poke:cassette_sobelow"
+                      "item": "poke_pfe:cassette_sobelow"
                     },
                     {
-                      "item": "poke:cassette_axolotl"
+                      "item": "poke_pfe:cassette_axolotl"
                     },
                     {
-                      "item": "poke:cassette_dragonfish"
+                      "item": "poke_pfe:cassette_dragonfish"
                     },
                     {
-                      "item": "poke:cassette_shuniji"
+                      "item": "poke_pfe:cassette_shuniji"
                     },
                     {
-                      "item": "poke:cassette_ancestry"
+                      "item": "poke_pfe:cassette_ancestry"
                     },
                     {
-                      "item": "poke:cassette_anordinaryday"
+                      "item": "poke_pfe:cassette_anordinaryday"
                     },
                     {
-                      "item": "poke:cassette_comfortingmemories"
+                      "item": "poke_pfe:cassette_comfortingmemories"
                     },
                     {
-                      "item": "poke:cassette_floatingdream"
+                      "item": "poke_pfe:cassette_floatingdream"
                     },
                     {
-                      "item": "poke:cassette_infiniteamethyst"
+                      "item": "poke_pfe:cassette_infiniteamethyst"
                     },
                     {
-                      "item": "poke:cassette_lefttobloom"
+                      "item": "poke_pfe:cassette_lefttobloom"
                     },
                     {
-                      "item": "poke:cassette_onemoreday"
+                      "item": "poke_pfe:cassette_onemoreday"
                     },
                     {
-                      "item": "poke:cassette_standtall"
+                      "item": "poke_pfe:cassette_standtall"
                     },
                     {
-                      "item": "poke:cassette_wending"
+                      "item": "poke_pfe:cassette_wending"
                     },
                     {
-                      "item": "poke:cassette_aerie"
+                      "item": "poke_pfe:cassette_aerie"
                     },
                     {
-                      "item": "poke:cassette_firebugs"
+                      "item": "poke_pfe:cassette_firebugs"
                     },
                     {
-                      "item": "poke:cassette_labyrinthine"
+                      "item": "poke_pfe:cassette_labyrinthine"
                     },
                     {
-                      "item": "poke:cassette_afamiliarroom"
+                      "item": "poke_pfe:cassette_afamiliarroom"
                     },
                     {
-                      "item": "poke:cassette_bromeliad"
+                      "item": "poke_pfe:cassette_bromeliad"
                     },
                     {
-                      "item": "poke:cassette_crescentdunes"
+                      "item": "poke_pfe:cassette_crescentdunes"
                     },
                     {
-                      "item": "poke:cassette_echointhewind"
+                      "item": "poke_pfe:cassette_echointhewind"
                     },
                     {
-                      "item": "poke:cassette_deeper"
+                      "item": "poke_pfe:cassette_deeper"
                     },
                     {
-                      "item": "poke:cassette_eldunknown"
+                      "item": "poke_pfe:cassette_eldunknown"
                     },
                     {
-                      "item": "poke:cassette_endless"
+                      "item": "poke_pfe:cassette_endless"
                     },
                     {
-                      "item": "poke:cassette_featherfall"
+                      "item": "poke_pfe:cassette_featherfall"
                     },
                     {
-                      "item": "poke:cassette_komorebi"
+                      "item": "poke_pfe:cassette_komorebi"
                     },
                     {
-                      "item": "poke:cassette_pokopoko"
+                      "item": "poke_pfe:cassette_pokopoko"
                     },
                     {
-                      "item": "poke:cassette_puzzlebox"
+                      "item": "poke_pfe:cassette_puzzlebox"
                     },
                     {
-                      "item": "poke:cassette_watcher"
+                      "item": "poke_pfe:cassette_watcher"
                     },
                     {
-                      "item": "poke:cassette_yakusoku"
+                      "item": "poke_pfe:cassette_yakusoku"
                     },
                     {
-                      "item": "poke:cassette_clark"
+                      "item": "poke_pfe:cassette_clark"
                     },
                     {
-                      "item": "poke:cassette_danny"
+                      "item": "poke_pfe:cassette_danny"
                     },
                     {
-                      "item": "poke:cassette_dryhands"
+                      "item": "poke_pfe:cassette_dryhands"
                     },
                     {
-                      "item": "poke:cassette_haggstrom"
+                      "item": "poke_pfe:cassette_haggstrom"
                     },
                     {
-                      "item": "poke:cassette_key"
+                      "item": "poke_pfe:cassette_key"
                     },
                     {
-                      "item": "poke:cassette_livingmice"
+                      "item": "poke_pfe:cassette_livingmice"
                     },
                     {
-                      "item": "poke:cassette_miceonvenus"
+                      "item": "poke_pfe:cassette_miceonvenus"
                     },
                     {
-                      "item": "poke:cassette_minecraft"
+                      "item": "poke_pfe:cassette_minecraft"
                     },
                     {
-                      "item": "poke:cassette_oxygene"
+                      "item": "poke_pfe:cassette_oxygene"
                     },
                     {
-                      "item": "poke:cassette_subwooferlullaby"
+                      "item": "poke_pfe:cassette_subwooferlullaby"
                     },
                     {
-                      "item": "poke:cassette_sweden"
+                      "item": "poke_pfe:cassette_sweden"
                     },
                     {
-                      "item": "poke:cassette_wethands"
+                      "item": "poke_pfe:cassette_wethands"
                     },
                     {
-                      "item": "poke:cassette_alpha"
+                      "item": "poke_pfe:cassette_alpha"
                     },
                     {
-                      "item": "poke:cassette_balladofthecats"
+                      "item": "poke_pfe:cassette_balladofthecats"
                     },
                     {
-                      "item": "poke:cassette_beginning2"
+                      "item": "poke_pfe:cassette_beginning2"
                     },
                     {
-                      "item": "poke:cassette_ariamath"
+                      "item": "poke_pfe:cassette_ariamath"
                     },
                     {
-                      "item": "poke:cassette_biomefest"
+                      "item": "poke_pfe:cassette_biomefest"
                     },
                     {
-                      "item": "poke:cassette_blindspots"
+                      "item": "poke_pfe:cassette_blindspots"
                     },
                     {
-                      "item": "poke:cassette_boss"
+                      "item": "poke_pfe:cassette_boss"
                     },
                     {
-                      "item": "poke:cassette_concretehalls"
+                      "item": "poke_pfe:cassette_concretehalls"
                     },
                     {
-                      "item": "poke:cassette_deadvoxel"
+                      "item": "poke_pfe:cassette_deadvoxel"
                     },
                     {
-                      "item": "poke:cassette_dreiton"
+                      "item": "poke_pfe:cassette_dreiton"
                     },
                     {
-                      "item": "poke:cassette_floatingtrees"
+                      "item": "poke_pfe:cassette_floatingtrees"
                     },
                     {
-                      "item": "poke:cassette_hauntmuskie"
+                      "item": "poke_pfe:cassette_hauntmuskie"
                     },
                     {
-                      "item": "poke:cassette_moogcity2"
+                      "item": "poke_pfe:cassette_moogcity2"
                     },
                     {
-                      "item": "poke:cassette_mutation"
+                      "item": "poke_pfe:cassette_mutation"
                     },
                     {
-                      "item": "poke:cassette_taswell"
+                      "item": "poke_pfe:cassette_taswell"
                     },
                     {
-                      "item": "poke:cassette_theend"
+                      "item": "poke_pfe:cassette_theend"
                     },
                     {
-                      "item": "poke:cassette_warmth"
+                      "item": "poke_pfe:cassette_warmth"
                     }
                   ]
                 }
@@ -455,7 +455,7 @@
             {
               "wants": [
                 {
-                  "item": "poke:gold_token",
+                  "item": "poke_pfe:gold_token",
                   "quantity": {
                     "min": 2,
                     "max": 5
@@ -481,187 +481,187 @@
                       "item": "poke_pfe:cassette_os_piano"
                     },
                     {
-                      "item": "poke:empty_cassette"
+                      "item": "poke_pfe:empty_cassette"
                     },
                     {
-                      "item": "poke:cassette_chrysopoeia"
+                      "item": "poke_pfe:cassette_chrysopoeia"
                     },
                     {
-                      "item": "poke:cassette_rubedo"
+                      "item": "poke_pfe:cassette_rubedo"
                     },
                     {
-                      "item": "poke:cassette_sobelow"
+                      "item": "poke_pfe:cassette_sobelow"
                     },
                     {
-                      "item": "poke:cassette_axolotl"
+                      "item": "poke_pfe:cassette_axolotl"
                     },
                     {
-                      "item": "poke:cassette_dragonfish"
+                      "item": "poke_pfe:cassette_dragonfish"
                     },
                     {
-                      "item": "poke:cassette_shuniji"
+                      "item": "poke_pfe:cassette_shuniji"
                     },
                     {
-                      "item": "poke:cassette_ancestry"
+                      "item": "poke_pfe:cassette_ancestry"
                     },
                     {
-                      "item": "poke:cassette_anordinaryday"
+                      "item": "poke_pfe:cassette_anordinaryday"
                     },
                     {
-                      "item": "poke:cassette_comfortingmemories"
+                      "item": "poke_pfe:cassette_comfortingmemories"
                     },
                     {
-                      "item": "poke:cassette_floatingdream"
+                      "item": "poke_pfe:cassette_floatingdream"
                     },
                     {
-                      "item": "poke:cassette_infiniteamethyst"
+                      "item": "poke_pfe:cassette_infiniteamethyst"
                     },
                     {
-                      "item": "poke:cassette_lefttobloom"
+                      "item": "poke_pfe:cassette_lefttobloom"
                     },
                     {
-                      "item": "poke:cassette_onemoreday"
+                      "item": "poke_pfe:cassette_onemoreday"
                     },
                     {
-                      "item": "poke:cassette_standtall"
+                      "item": "poke_pfe:cassette_standtall"
                     },
                     {
-                      "item": "poke:cassette_wending"
+                      "item": "poke_pfe:cassette_wending"
                     },
                     {
-                      "item": "poke:cassette_aerie"
+                      "item": "poke_pfe:cassette_aerie"
                     },
                     {
-                      "item": "poke:cassette_firebugs"
+                      "item": "poke_pfe:cassette_firebugs"
                     },
                     {
-                      "item": "poke:cassette_labyrinthine"
+                      "item": "poke_pfe:cassette_labyrinthine"
                     },
                     {
-                      "item": "poke:cassette_afamiliarroom"
+                      "item": "poke_pfe:cassette_afamiliarroom"
                     },
                     {
-                      "item": "poke:cassette_bromeliad"
+                      "item": "poke_pfe:cassette_bromeliad"
                     },
                     {
-                      "item": "poke:cassette_crescentdunes"
+                      "item": "poke_pfe:cassette_crescentdunes"
                     },
                     {
-                      "item": "poke:cassette_echointhewind"
+                      "item": "poke_pfe:cassette_echointhewind"
                     },
                     {
-                      "item": "poke:cassette_deeper"
+                      "item": "poke_pfe:cassette_deeper"
                     },
                     {
-                      "item": "poke:cassette_eldunknown"
+                      "item": "poke_pfe:cassette_eldunknown"
                     },
                     {
-                      "item": "poke:cassette_endless"
+                      "item": "poke_pfe:cassette_endless"
                     },
                     {
-                      "item": "poke:cassette_featherfall"
+                      "item": "poke_pfe:cassette_featherfall"
                     },
                     {
-                      "item": "poke:cassette_komorebi"
+                      "item": "poke_pfe:cassette_komorebi"
                     },
                     {
-                      "item": "poke:cassette_pokopoko"
+                      "item": "poke_pfe:cassette_pokopoko"
                     },
                     {
-                      "item": "poke:cassette_puzzlebox"
+                      "item": "poke_pfe:cassette_puzzlebox"
                     },
                     {
-                      "item": "poke:cassette_watcher"
+                      "item": "poke_pfe:cassette_watcher"
                     },
                     {
-                      "item": "poke:cassette_yakusoku"
+                      "item": "poke_pfe:cassette_yakusoku"
                     },
                     {
-                      "item": "poke:cassette_clark"
+                      "item": "poke_pfe:cassette_clark"
                     },
                     {
-                      "item": "poke:cassette_danny"
+                      "item": "poke_pfe:cassette_danny"
                     },
                     {
-                      "item": "poke:cassette_dryhands"
+                      "item": "poke_pfe:cassette_dryhands"
                     },
                     {
-                      "item": "poke:cassette_haggstrom"
+                      "item": "poke_pfe:cassette_haggstrom"
                     },
                     {
-                      "item": "poke:cassette_key"
+                      "item": "poke_pfe:cassette_key"
                     },
                     {
-                      "item": "poke:cassette_livingmice"
+                      "item": "poke_pfe:cassette_livingmice"
                     },
                     {
-                      "item": "poke:cassette_miceonvenus"
+                      "item": "poke_pfe:cassette_miceonvenus"
                     },
                     {
-                      "item": "poke:cassette_minecraft"
+                      "item": "poke_pfe:cassette_minecraft"
                     },
                     {
-                      "item": "poke:cassette_oxygene"
+                      "item": "poke_pfe:cassette_oxygene"
                     },
                     {
-                      "item": "poke:cassette_subwooferlullaby"
+                      "item": "poke_pfe:cassette_subwooferlullaby"
                     },
                     {
-                      "item": "poke:cassette_sweden"
+                      "item": "poke_pfe:cassette_sweden"
                     },
                     {
-                      "item": "poke:cassette_wethands"
+                      "item": "poke_pfe:cassette_wethands"
                     },
                     {
-                      "item": "poke:cassette_alpha"
+                      "item": "poke_pfe:cassette_alpha"
                     },
                     {
-                      "item": "poke:cassette_balladofthecats"
+                      "item": "poke_pfe:cassette_balladofthecats"
                     },
                     {
-                      "item": "poke:cassette_beginning2"
+                      "item": "poke_pfe:cassette_beginning2"
                     },
                     {
-                      "item": "poke:cassette_ariamath"
+                      "item": "poke_pfe:cassette_ariamath"
                     },
                     {
-                      "item": "poke:cassette_biomefest"
+                      "item": "poke_pfe:cassette_biomefest"
                     },
                     {
-                      "item": "poke:cassette_blindspots"
+                      "item": "poke_pfe:cassette_blindspots"
                     },
                     {
-                      "item": "poke:cassette_boss"
+                      "item": "poke_pfe:cassette_boss"
                     },
                     {
-                      "item": "poke:cassette_concretehalls"
+                      "item": "poke_pfe:cassette_concretehalls"
                     },
                     {
-                      "item": "poke:cassette_deadvoxel"
+                      "item": "poke_pfe:cassette_deadvoxel"
                     },
                     {
-                      "item": "poke:cassette_dreiton"
+                      "item": "poke_pfe:cassette_dreiton"
                     },
                     {
-                      "item": "poke:cassette_floatingtrees"
+                      "item": "poke_pfe:cassette_floatingtrees"
                     },
                     {
-                      "item": "poke:cassette_hauntmuskie"
+                      "item": "poke_pfe:cassette_hauntmuskie"
                     },
                     {
-                      "item": "poke:cassette_moogcity2"
+                      "item": "poke_pfe:cassette_moogcity2"
                     },
                     {
-                      "item": "poke:cassette_mutation"
+                      "item": "poke_pfe:cassette_mutation"
                     },
                     {
-                      "item": "poke:cassette_taswell"
+                      "item": "poke_pfe:cassette_taswell"
                     },
                     {
-                      "item": "poke:cassette_theend"
+                      "item": "poke_pfe:cassette_theend"
                     },
                     {
-                      "item": "poke:cassette_warmth"
+                      "item": "poke_pfe:cassette_warmth"
                     }
                   ]
                 }
@@ -678,7 +678,7 @@
             {
               "wants": [
                 {
-                  "item": "poke:gold_token",
+                  "item": "poke_pfe:gold_token",
                   "quantity": {
                     "min": 2,
                     "max": 5
@@ -704,187 +704,187 @@
                       "item": "poke_pfe:cassette_os_piano"
                     },
                     {
-                      "item": "poke:empty_cassette"
+                      "item": "poke_pfe:empty_cassette"
                     },
                     {
-                      "item": "poke:cassette_chrysopoeia"
+                      "item": "poke_pfe:cassette_chrysopoeia"
                     },
                     {
-                      "item": "poke:cassette_rubedo"
+                      "item": "poke_pfe:cassette_rubedo"
                     },
                     {
-                      "item": "poke:cassette_sobelow"
+                      "item": "poke_pfe:cassette_sobelow"
                     },
                     {
-                      "item": "poke:cassette_axolotl"
+                      "item": "poke_pfe:cassette_axolotl"
                     },
                     {
-                      "item": "poke:cassette_dragonfish"
+                      "item": "poke_pfe:cassette_dragonfish"
                     },
                     {
-                      "item": "poke:cassette_shuniji"
+                      "item": "poke_pfe:cassette_shuniji"
                     },
                     {
-                      "item": "poke:cassette_ancestry"
+                      "item": "poke_pfe:cassette_ancestry"
                     },
                     {
-                      "item": "poke:cassette_anordinaryday"
+                      "item": "poke_pfe:cassette_anordinaryday"
                     },
                     {
-                      "item": "poke:cassette_comfortingmemories"
+                      "item": "poke_pfe:cassette_comfortingmemories"
                     },
                     {
-                      "item": "poke:cassette_floatingdream"
+                      "item": "poke_pfe:cassette_floatingdream"
                     },
                     {
-                      "item": "poke:cassette_infiniteamethyst"
+                      "item": "poke_pfe:cassette_infiniteamethyst"
                     },
                     {
-                      "item": "poke:cassette_lefttobloom"
+                      "item": "poke_pfe:cassette_lefttobloom"
                     },
                     {
-                      "item": "poke:cassette_onemoreday"
+                      "item": "poke_pfe:cassette_onemoreday"
                     },
                     {
-                      "item": "poke:cassette_standtall"
+                      "item": "poke_pfe:cassette_standtall"
                     },
                     {
-                      "item": "poke:cassette_wending"
+                      "item": "poke_pfe:cassette_wending"
                     },
                     {
-                      "item": "poke:cassette_aerie"
+                      "item": "poke_pfe:cassette_aerie"
                     },
                     {
-                      "item": "poke:cassette_firebugs"
+                      "item": "poke_pfe:cassette_firebugs"
                     },
                     {
-                      "item": "poke:cassette_labyrinthine"
+                      "item": "poke_pfe:cassette_labyrinthine"
                     },
                     {
-                      "item": "poke:cassette_afamiliarroom"
+                      "item": "poke_pfe:cassette_afamiliarroom"
                     },
                     {
-                      "item": "poke:cassette_bromeliad"
+                      "item": "poke_pfe:cassette_bromeliad"
                     },
                     {
-                      "item": "poke:cassette_crescentdunes"
+                      "item": "poke_pfe:cassette_crescentdunes"
                     },
                     {
-                      "item": "poke:cassette_echointhewind"
+                      "item": "poke_pfe:cassette_echointhewind"
                     },
                     {
-                      "item": "poke:cassette_deeper"
+                      "item": "poke_pfe:cassette_deeper"
                     },
                     {
-                      "item": "poke:cassette_eldunknown"
+                      "item": "poke_pfe:cassette_eldunknown"
                     },
                     {
-                      "item": "poke:cassette_endless"
+                      "item": "poke_pfe:cassette_endless"
                     },
                     {
-                      "item": "poke:cassette_featherfall"
+                      "item": "poke_pfe:cassette_featherfall"
                     },
                     {
-                      "item": "poke:cassette_komorebi"
+                      "item": "poke_pfe:cassette_komorebi"
                     },
                     {
-                      "item": "poke:cassette_pokopoko"
+                      "item": "poke_pfe:cassette_pokopoko"
                     },
                     {
-                      "item": "poke:cassette_puzzlebox"
+                      "item": "poke_pfe:cassette_puzzlebox"
                     },
                     {
-                      "item": "poke:cassette_watcher"
+                      "item": "poke_pfe:cassette_watcher"
                     },
                     {
-                      "item": "poke:cassette_yakusoku"
+                      "item": "poke_pfe:cassette_yakusoku"
                     },
                     {
-                      "item": "poke:cassette_clark"
+                      "item": "poke_pfe:cassette_clark"
                     },
                     {
-                      "item": "poke:cassette_danny"
+                      "item": "poke_pfe:cassette_danny"
                     },
                     {
-                      "item": "poke:cassette_dryhands"
+                      "item": "poke_pfe:cassette_dryhands"
                     },
                     {
-                      "item": "poke:cassette_haggstrom"
+                      "item": "poke_pfe:cassette_haggstrom"
                     },
                     {
-                      "item": "poke:cassette_key"
+                      "item": "poke_pfe:cassette_key"
                     },
                     {
-                      "item": "poke:cassette_livingmice"
+                      "item": "poke_pfe:cassette_livingmice"
                     },
                     {
-                      "item": "poke:cassette_miceonvenus"
+                      "item": "poke_pfe:cassette_miceonvenus"
                     },
                     {
-                      "item": "poke:cassette_minecraft"
+                      "item": "poke_pfe:cassette_minecraft"
                     },
                     {
-                      "item": "poke:cassette_oxygene"
+                      "item": "poke_pfe:cassette_oxygene"
                     },
                     {
-                      "item": "poke:cassette_subwooferlullaby"
+                      "item": "poke_pfe:cassette_subwooferlullaby"
                     },
                     {
-                      "item": "poke:cassette_sweden"
+                      "item": "poke_pfe:cassette_sweden"
                     },
                     {
-                      "item": "poke:cassette_wethands"
+                      "item": "poke_pfe:cassette_wethands"
                     },
                     {
-                      "item": "poke:cassette_alpha"
+                      "item": "poke_pfe:cassette_alpha"
                     },
                     {
-                      "item": "poke:cassette_balladofthecats"
+                      "item": "poke_pfe:cassette_balladofthecats"
                     },
                     {
-                      "item": "poke:cassette_beginning2"
+                      "item": "poke_pfe:cassette_beginning2"
                     },
                     {
-                      "item": "poke:cassette_ariamath"
+                      "item": "poke_pfe:cassette_ariamath"
                     },
                     {
-                      "item": "poke:cassette_biomefest"
+                      "item": "poke_pfe:cassette_biomefest"
                     },
                     {
-                      "item": "poke:cassette_blindspots"
+                      "item": "poke_pfe:cassette_blindspots"
                     },
                     {
-                      "item": "poke:cassette_boss"
+                      "item": "poke_pfe:cassette_boss"
                     },
                     {
-                      "item": "poke:cassette_concretehalls"
+                      "item": "poke_pfe:cassette_concretehalls"
                     },
                     {
-                      "item": "poke:cassette_deadvoxel"
+                      "item": "poke_pfe:cassette_deadvoxel"
                     },
                     {
-                      "item": "poke:cassette_dreiton"
+                      "item": "poke_pfe:cassette_dreiton"
                     },
                     {
-                      "item": "poke:cassette_floatingtrees"
+                      "item": "poke_pfe:cassette_floatingtrees"
                     },
                     {
-                      "item": "poke:cassette_hauntmuskie"
+                      "item": "poke_pfe:cassette_hauntmuskie"
                     },
                     {
-                      "item": "poke:cassette_moogcity2"
+                      "item": "poke_pfe:cassette_moogcity2"
                     },
                     {
-                      "item": "poke:cassette_mutation"
+                      "item": "poke_pfe:cassette_mutation"
                     },
                     {
-                      "item": "poke:cassette_taswell"
+                      "item": "poke_pfe:cassette_taswell"
                     },
                     {
-                      "item": "poke:cassette_theend"
+                      "item": "poke_pfe:cassette_theend"
                     },
                     {
-                      "item": "poke:cassette_warmth"
+                      "item": "poke_pfe:cassette_warmth"
                     }
                   ]
                 }
@@ -901,7 +901,7 @@
             {
               "wants": [
                 {
-                  "item": "poke:gold_token",
+                  "item": "poke_pfe:gold_token",
                   "quantity": {
                     "min": 2,
                     "max": 5
@@ -927,187 +927,187 @@
                       "item": "poke_pfe:cassette_os_piano"
                     },
                     {
-                      "item": "poke:empty_cassette"
+                      "item": "poke_pfe:empty_cassette"
                     },
                     {
-                      "item": "poke:cassette_chrysopoeia"
+                      "item": "poke_pfe:cassette_chrysopoeia"
                     },
                     {
-                      "item": "poke:cassette_rubedo"
+                      "item": "poke_pfe:cassette_rubedo"
                     },
                     {
-                      "item": "poke:cassette_sobelow"
+                      "item": "poke_pfe:cassette_sobelow"
                     },
                     {
-                      "item": "poke:cassette_axolotl"
+                      "item": "poke_pfe:cassette_axolotl"
                     },
                     {
-                      "item": "poke:cassette_dragonfish"
+                      "item": "poke_pfe:cassette_dragonfish"
                     },
                     {
-                      "item": "poke:cassette_shuniji"
+                      "item": "poke_pfe:cassette_shuniji"
                     },
                     {
-                      "item": "poke:cassette_ancestry"
+                      "item": "poke_pfe:cassette_ancestry"
                     },
                     {
-                      "item": "poke:cassette_anordinaryday"
+                      "item": "poke_pfe:cassette_anordinaryday"
                     },
                     {
-                      "item": "poke:cassette_comfortingmemories"
+                      "item": "poke_pfe:cassette_comfortingmemories"
                     },
                     {
-                      "item": "poke:cassette_floatingdream"
+                      "item": "poke_pfe:cassette_floatingdream"
                     },
                     {
-                      "item": "poke:cassette_infiniteamethyst"
+                      "item": "poke_pfe:cassette_infiniteamethyst"
                     },
                     {
-                      "item": "poke:cassette_lefttobloom"
+                      "item": "poke_pfe:cassette_lefttobloom"
                     },
                     {
-                      "item": "poke:cassette_onemoreday"
+                      "item": "poke_pfe:cassette_onemoreday"
                     },
                     {
-                      "item": "poke:cassette_standtall"
+                      "item": "poke_pfe:cassette_standtall"
                     },
                     {
-                      "item": "poke:cassette_wending"
+                      "item": "poke_pfe:cassette_wending"
                     },
                     {
-                      "item": "poke:cassette_aerie"
+                      "item": "poke_pfe:cassette_aerie"
                     },
                     {
-                      "item": "poke:cassette_firebugs"
+                      "item": "poke_pfe:cassette_firebugs"
                     },
                     {
-                      "item": "poke:cassette_labyrinthine"
+                      "item": "poke_pfe:cassette_labyrinthine"
                     },
                     {
-                      "item": "poke:cassette_afamiliarroom"
+                      "item": "poke_pfe:cassette_afamiliarroom"
                     },
                     {
-                      "item": "poke:cassette_bromeliad"
+                      "item": "poke_pfe:cassette_bromeliad"
                     },
                     {
-                      "item": "poke:cassette_crescentdunes"
+                      "item": "poke_pfe:cassette_crescentdunes"
                     },
                     {
-                      "item": "poke:cassette_echointhewind"
+                      "item": "poke_pfe:cassette_echointhewind"
                     },
                     {
-                      "item": "poke:cassette_deeper"
+                      "item": "poke_pfe:cassette_deeper"
                     },
                     {
-                      "item": "poke:cassette_eldunknown"
+                      "item": "poke_pfe:cassette_eldunknown"
                     },
                     {
-                      "item": "poke:cassette_endless"
+                      "item": "poke_pfe:cassette_endless"
                     },
                     {
-                      "item": "poke:cassette_featherfall"
+                      "item": "poke_pfe:cassette_featherfall"
                     },
                     {
-                      "item": "poke:cassette_komorebi"
+                      "item": "poke_pfe:cassette_komorebi"
                     },
                     {
-                      "item": "poke:cassette_pokopoko"
+                      "item": "poke_pfe:cassette_pokopoko"
                     },
                     {
-                      "item": "poke:cassette_puzzlebox"
+                      "item": "poke_pfe:cassette_puzzlebox"
                     },
                     {
-                      "item": "poke:cassette_watcher"
+                      "item": "poke_pfe:cassette_watcher"
                     },
                     {
-                      "item": "poke:cassette_yakusoku"
+                      "item": "poke_pfe:cassette_yakusoku"
                     },
                     {
-                      "item": "poke:cassette_clark"
+                      "item": "poke_pfe:cassette_clark"
                     },
                     {
-                      "item": "poke:cassette_danny"
+                      "item": "poke_pfe:cassette_danny"
                     },
                     {
-                      "item": "poke:cassette_dryhands"
+                      "item": "poke_pfe:cassette_dryhands"
                     },
                     {
-                      "item": "poke:cassette_haggstrom"
+                      "item": "poke_pfe:cassette_haggstrom"
                     },
                     {
-                      "item": "poke:cassette_key"
+                      "item": "poke_pfe:cassette_key"
                     },
                     {
-                      "item": "poke:cassette_livingmice"
+                      "item": "poke_pfe:cassette_livingmice"
                     },
                     {
-                      "item": "poke:cassette_miceonvenus"
+                      "item": "poke_pfe:cassette_miceonvenus"
                     },
                     {
-                      "item": "poke:cassette_minecraft"
+                      "item": "poke_pfe:cassette_minecraft"
                     },
                     {
-                      "item": "poke:cassette_oxygene"
+                      "item": "poke_pfe:cassette_oxygene"
                     },
                     {
-                      "item": "poke:cassette_subwooferlullaby"
+                      "item": "poke_pfe:cassette_subwooferlullaby"
                     },
                     {
-                      "item": "poke:cassette_sweden"
+                      "item": "poke_pfe:cassette_sweden"
                     },
                     {
-                      "item": "poke:cassette_wethands"
+                      "item": "poke_pfe:cassette_wethands"
                     },
                     {
-                      "item": "poke:cassette_alpha"
+                      "item": "poke_pfe:cassette_alpha"
                     },
                     {
-                      "item": "poke:cassette_balladofthecats"
+                      "item": "poke_pfe:cassette_balladofthecats"
                     },
                     {
-                      "item": "poke:cassette_beginning2"
+                      "item": "poke_pfe:cassette_beginning2"
                     },
                     {
-                      "item": "poke:cassette_ariamath"
+                      "item": "poke_pfe:cassette_ariamath"
                     },
                     {
-                      "item": "poke:cassette_biomefest"
+                      "item": "poke_pfe:cassette_biomefest"
                     },
                     {
-                      "item": "poke:cassette_blindspots"
+                      "item": "poke_pfe:cassette_blindspots"
                     },
                     {
-                      "item": "poke:cassette_boss"
+                      "item": "poke_pfe:cassette_boss"
                     },
                     {
-                      "item": "poke:cassette_concretehalls"
+                      "item": "poke_pfe:cassette_concretehalls"
                     },
                     {
-                      "item": "poke:cassette_deadvoxel"
+                      "item": "poke_pfe:cassette_deadvoxel"
                     },
                     {
-                      "item": "poke:cassette_dreiton"
+                      "item": "poke_pfe:cassette_dreiton"
                     },
                     {
-                      "item": "poke:cassette_floatingtrees"
+                      "item": "poke_pfe:cassette_floatingtrees"
                     },
                     {
-                      "item": "poke:cassette_hauntmuskie"
+                      "item": "poke_pfe:cassette_hauntmuskie"
                     },
                     {
-                      "item": "poke:cassette_moogcity2"
+                      "item": "poke_pfe:cassette_moogcity2"
                     },
                     {
-                      "item": "poke:cassette_mutation"
+                      "item": "poke_pfe:cassette_mutation"
                     },
                     {
-                      "item": "poke:cassette_taswell"
+                      "item": "poke_pfe:cassette_taswell"
                     },
                     {
-                      "item": "poke:cassette_theend"
+                      "item": "poke_pfe:cassette_theend"
                     },
                     {
-                      "item": "poke:cassette_warmth"
+                      "item": "poke_pfe:cassette_warmth"
                     }
                   ]
                 }

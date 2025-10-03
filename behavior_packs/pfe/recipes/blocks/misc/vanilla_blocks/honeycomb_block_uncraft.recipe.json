@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "poke:honeycomb_block_uncraft"
+			"identifier": "poke_pfe:honeycomb_block_uncraft"
 		},
 		"tags": [
 			"crafting_table"

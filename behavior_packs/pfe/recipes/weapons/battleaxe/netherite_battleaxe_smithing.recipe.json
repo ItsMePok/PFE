@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_smithing_transform": {
 		"description": {
-			"identifier": "poke:smithing_netherite_battleaxe"
+			"identifier": "poke_pfe:smithing_netherite_battleaxe"
 		},
 		"tags": [
 			"smithing_table"
@@ -13,8 +13,8 @@
 			}
 		],
 		"template": "minecraft:netherite_upgrade_smithing_template",
-		"base": "poke:diamond_battleaxe",
+		"base": "poke_pfe:diamond_battleaxe",
 		"addition": "minecraft:netherite_ingot",
-		"result": "poke:netherite_battleaxe"
+		"result": "poke_pfe:netherite_battleaxe"
 	}
 }

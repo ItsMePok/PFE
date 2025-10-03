@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "poke:amethyst_chestplate",
+			"identifier": "poke_pfe:amethyst_chestplate",
 			"render_controllers": [
 				"controller.render.armor"
 			],

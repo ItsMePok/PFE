@@ -4,7 +4,7 @@
     "description": {
       "identifier": "poke_pfe:config"
     },
-    "group": "poke:config",
+    "group": "poke_pfe:config",
     "tags": [
       "crafting_table"
     ],
@@ -13,7 +13,7 @@
         "item": "minecraft:paper"
       },
       {
-        "item": "poke:shade_ingot"
+        "item": "poke_pfe:shade_ingot"
       }
     ],
     "ingredients": [
@@ -21,7 +21,7 @@
         "item": "minecraft:paper"
       },
       {
-        "item": "poke:shade_ingot"
+        "item": "poke_pfe:shade_ingot"
       }
     ],
     "result": {

@@ -2,13 +2,13 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_furnace": {
 		"description": {
-			"identifier": "poke:cracked_astral_bricks"
+			"identifier": "poke_pfe:cracked_astral_bricks"
 		},
 		"tags": [
 			"furnace",
 			"blast_furnace"
 		],
-		"input": "poke:astral_bricks",
-		"output": "poke:cracked_astral_bricks"
+		"input": "poke_pfe:astral_bricks",
+		"output": "poke_pfe:cracked_astral_bricks"
 	}
 }

@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:onyx_block",
+			"identifier": "poke_pfe:onyx_block",
 			"menu_category": {
 				"category": "construction"
 			}

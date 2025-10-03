@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "poke:ban_hammer",
+			"identifier": "poke_pfe:ban_hammer",
 			"materials": {
 				"default": "entity_alphatest"
 			},

@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:holy_helmet",
+			"identifier": "poke_pfe:holy_helmet",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -38,20 +38,20 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core",
-							"poke:holy_block"
+							"poke_pfe:repair_core",
+							"poke_pfe:holy_block"
 						],
 						"repair_amount": "query.max_durability"
 					},
 					{
 						"items": [
-							"poke:holy_ingot"
+							"poke_pfe:holy_ingot"
 						],
 						"repair_amount": "query.max_durability*0.25"
 					},
 					{
 						"items": [
-							"poke:holy_nugget"
+							"poke_pfe:holy_nugget"
 						],
 						"repair_amount": "query.max_durability * 0.028"
 					}

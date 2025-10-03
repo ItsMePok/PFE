@@ -2,13 +2,13 @@
 	"format_version": "1.12.0",
 	"minecraft:recipe_furnace": {
 		"description": {
-			"identifier": "poke:deepslate_cobalt_ore"
+			"identifier": "poke_pfe:deepslate_cobalt_ore"
 		},
 		"tags": [
 			"furnace",
 			"blast_furnace"
 		],
-		"input": "poke:deepslate_cobalt_ore",
-		"output": "poke:cobalt_ingot"
+		"input": "poke_pfe:deepslate_cobalt_ore",
+		"output": "poke_pfe:cobalt_ingot"
 	}
 }

@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:void_leggings"
+			"identifier": "poke_pfe:void_leggings"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,28 +14,28 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:demonic_leggings"
+				"item": "poke_pfe:demonic_leggings"
 			},
 			{
-				"item": "poke:platinum_upgrade_core"
+				"item": "poke_pfe:platinum_upgrade_core"
 			},
 			{
-				"item": "poke:void_ingot"
+				"item": "poke_pfe:void_ingot"
 			}
 		],
 		"key": {
 			"B": {
-				"item": "poke:void_block"
+				"item": "poke_pfe:void_block"
 			},
 			"#": {
-				"item": "poke:demonic_leggings"
+				"item": "poke_pfe:demonic_leggings"
 			},
 			"U": {
-				"item": "poke:platinum_upgrade_core"
+				"item": "poke_pfe:platinum_upgrade_core"
 			}
 		},
 		"result": {
-			"item": "poke:void_leggings"
+			"item": "poke_pfe:void_leggings"
 		}
 	}
 }

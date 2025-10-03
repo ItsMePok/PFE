@@ -2,18 +2,18 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "poke:shade_bricks_stonecut"
+			"identifier": "poke_pfe:shade_bricks_stonecut"
 		},
 		"tags": [
 			"stonecutter"
 		],
 		"ingredients": [
 			{
-				"item": "poke:shade_block"
+				"item": "poke_pfe:shade_block"
 			}
 		],
 		"result": {
-			"item": "poke:shade_bricks",
+			"item": "poke_pfe:shade_bricks",
 			"count": 4
 		}
 	}

@@ -2,7 +2,7 @@
 	"format_version": "1.21.110", //Format version is the version it was built for. its 1.21.10 because that is the minimum version that Beta Api was not needed for what PFE uses (as of PFE v1.2.2)
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:galaxy_bow", //Item Identifier Actaul item name is Galaxy BurstBow (changed the name after it was initally added but preserving backwards compatibily is important imo)
+			"identifier": "poke_pfe:galaxy_bow", //Item Identifier Actaul item name is Galaxy BurstBow (changed the name after it was initally added but preserving backwards compatibily is important imo)
 			"menu_category": {
 				"category": "equipment"
 			} //Equipment Category, not in a tab because there is not a bows specific one to add it to (they should add the ability to make groups because having all the stray items is starting to become a problem in PFE lol)
@@ -12,10 +12,10 @@
 				"value": "%poke_pfe.galaxy_bow\n%poke_pfe.tag" // Name of the item || translation strings cannot have certain characters in them
 			},
 			"poke_pfe:upgradeable": {
-				"dynamic_property": "pfe:upgrades",
+				"dynamic_property": "poke_pfe:upgrades",
 				"sneak_interact_opens_ui": false,
 				"upgrade_ids": [
-					"pfe:persistence"
+					"poke_pfe:persistence"
 				],
 				"version": 1
 			},
@@ -24,19 +24,19 @@
 				"repair_items": [ //Items that can repair the Galaxy BurstBow
 					{
 						"items": [
-							"poke:repair_core"
+							"poke_pfe:repair_core"
 						],
 						"repair_amount": "query.max_durability"
 					}, //Repair Core is always 100% of max
 					{
 						"items": [
-							"poke:galaxy_ingot"
+							"poke_pfe:galaxy_ingot"
 						],
 						"repair_amount": "q.max_durability*0.25"
 					}, //Ingot is 25% of max
 					{
 						"items": [
-							"poke:galaxy_nugget"
+							"poke_pfe:galaxy_nugget"
 						],
 						"repair_amount": "q.max_durability*0.028"
 					} //Nugget is 2.8%of max
@@ -51,31 +51,31 @@
 			"minecraft:shooter": {
 				"ammunition": [ //Projectiles that the bow can shoot
 					{
-						"item": "poke:galaxy_arrow", //Item of the projectile
+						"item": "poke_pfe:galaxy_arrow", //Item of the projectile
 						"search_inventory": true, //Searches the inventory to see if this projectile is there
 						"use_in_creative": true, //If it can be used in creative without having the arrow needed to fire
 						"use_offhand": true //Allows offhand to take priority if its there
 					},
 					{
-						"item": "poke:void_arrow",
+						"item": "poke_pfe:void_arrow",
 						"search_inventory": true,
 						"use_in_creative": true,
 						"use_offhand": true
 					},
 					{
-						"item": "poke:holy_arrow",
+						"item": "poke_pfe:holy_arrow",
 						"search_inventory": true,
 						"use_in_creative": true,
 						"use_offhand": true
 					},
 					{
-						"item": "poke:hellish_arrow",
+						"item": "poke_pfe:hellish_arrow",
 						"search_inventory": true,
 						"use_in_creative": true,
 						"use_offhand": true
 					},
 					{
-						"item": "poke:volt_arrow",
+						"item": "poke_pfe:volt_arrow",
 						"search_inventory": true,
 						"use_in_creative": true,
 						"use_offhand": true
@@ -103,14 +103,14 @@
 				}, //The chance that the item has to not take durability with unbreaking
 				"max_durability": 2000 //Total Durability that the item has
 			},
-			"poke:cc_bowAim": {}
+			"poke_pfe:cc_bowAim": {}
 		}
 	}
 }
 /*
 Other things:
 - Charging Animations were done from:
-  - Script After Event (PFEMain.js), Cutsom component: "poke:cc_bow_aim" (shows where you are aiming to others)
+  - Script After Event (PFEMain.js), Cutsom component: "poke_pfe:cc_bow_aim" (shows where you are aiming to others)
   - The attachable file (RP/attachables/item/bow/galaxy_bow.json)
   - Animations (RP/animations/attachables/poke.16.item.animation(animation.poke_pfe.bow.frames))
   - Animation Controller (RP/animation_controllers/poke.bow.animation_controllers.json(controller.animation.poke_pfe.bow))

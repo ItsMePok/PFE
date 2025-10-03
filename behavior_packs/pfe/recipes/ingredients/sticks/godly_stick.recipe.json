@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:godly_stick"
+			"identifier": "poke_pfe:godly_stick"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,16 +14,16 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:godly_ingot"
+				"item": "poke_pfe:godly_ingot"
 			}
 		],
 		"key": {
 			"#": {
-				"item": "poke:godly_ingot"
+				"item": "poke_pfe:godly_ingot"
 			}
 		},
 		"result": {
-			"item": "poke:godly_stick",
+			"item": "poke_pfe:godly_stick",
 			"count": 1
 		}
 	}

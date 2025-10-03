@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "poke:cobalt_golem",
+			"identifier": "poke_pfe:cobalt_golem",
 			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false
@@ -18,15 +18,15 @@
 					"duration": 1200,
 					"feed_items": [
 						{
-							"item": "poke:cobalt_nugget",
+							"item": "poke_pfe:cobalt_nugget",
 							"growth": 0.009
 						},
 						{
-							"item": "poke:cobalt_ingot",
+							"item": "poke_pfe:cobalt_ingot",
 							"growth": 0.09
 						},
 						{
-							"item": "poke:cobalt_block",
+							"item": "poke_pfe:cobalt_block",
 							"growth": 0.9
 						}
 					],
@@ -77,15 +77,15 @@
 					"ride_text": "action.interact.mount",
 					"feed_items": [
 						{
-							"item": "poke:cobalt_nugget",
+							"item": "poke_pfe:cobalt_nugget",
 							"temper_mod": 1
 						},
 						{
-							"item": "poke:cobalt_ingot",
+							"item": "poke_pfe:cobalt_ingot",
 							"temper_mod": 9
 						},
 						{
-							"item": "poke:cobalt_block",
+							"item": "poke_pfe:cobalt_block",
 							"temper_mod": 90
 						}
 					],
@@ -155,9 +155,9 @@
 					"priority": 5,
 					"speed_multiplier": 1.2,
 					"items": [
-						"poke:cobalt_ingot",
-						"poke:cobalt_nugget",
-						"poke:cobalt_block"
+						"poke_pfe:cobalt_ingot",
+						"poke_pfe:cobalt_nugget",
+						"poke_pfe:cobalt_block"
 					]
 				}
 			},
@@ -263,7 +263,7 @@
 			"minecraft:healable": {
 				"items": [
 					{
-						"item": "poke:cobalt_ingot",
+						"item": "poke_pfe:cobalt_ingot",
 						"heal_amount": 10
 					}
 				]

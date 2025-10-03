@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:duster_east"
+			"identifier": "poke_pfe:duster_east"
 		},
 		"components": {
 			"poke_pfe:transform_block": {

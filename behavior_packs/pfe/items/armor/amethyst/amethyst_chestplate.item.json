@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:amethyst_chestplate",
+			"identifier": "poke_pfe:amethyst_chestplate",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -38,7 +38,7 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core",
+							"poke_pfe:repair_core",
 							"minecraft:amethyst_block"
 						],
 						"repair_amount": "query.max_durability"

@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:cobbled_shadowstone",
+			"identifier": "poke_pfe:cobbled_shadowstone",
 			"menu_category": {
 				"category": "nature"
 			}
@@ -20,7 +20,7 @@
 				]
 			},
 			"minecraft:block_placer": {
-				"block": "poke:cobbled_shadowstone",
+				"block": "poke_pfe:cobbled_shadowstone",
 				"replace_block_item": true
 			}
 		}

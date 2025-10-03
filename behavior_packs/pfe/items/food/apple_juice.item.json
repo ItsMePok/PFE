@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:apple_juice",
+			"identifier": "poke_pfe:apple_juice",
 			"menu_category": {
 				"category": "equipment"
 			}

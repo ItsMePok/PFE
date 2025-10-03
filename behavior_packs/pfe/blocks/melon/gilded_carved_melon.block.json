@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:gilded_carved_melon",
+			"identifier": "poke_pfe:gilded_carved_melon",
 			"menu_category": {
 				"category": "nature"
 			},

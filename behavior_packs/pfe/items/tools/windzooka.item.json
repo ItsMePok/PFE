@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:windzooka",
+			"identifier": "poke_pfe:windzooka",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -19,7 +19,7 @@
 			},
 			"minecraft:allow_off_hand": true,
 			"minecraft:cooldown": {
-				"category": "poke:windzooka",
+				"category": "poke_pfe:windzooka",
 				"duration": 1.25
 			},
 			"minecraft:use_modifiers": {
@@ -41,7 +41,7 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core"
+							"poke_pfe:repair_core"
 						],
 						"repair_amount": "query.max_durability"
 					}
@@ -49,7 +49,7 @@
 			},
 			"poke_pfe:upgradeable": {
 				"upgrade_ids": [
-					"pfe:persistence"
+					"poke_pfe:persistence"
 				],
 				"version": 1
 			},
@@ -72,7 +72,7 @@
 				},
 				"take_durability": true
 			},
-			"poke:normalMining": {},
+			"poke_pfe:normalMining": {},
 			"minecraft:rarity": "uncommon"
 		}
 	}

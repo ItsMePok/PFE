@@ -2,7 +2,7 @@
   "format_version": "1.21.110",
   "minecraft:item": {
     "description": {
-      "identifier": "poke:astral_nugget",
+      "identifier": "poke_pfe:astral_nugget",
       "menu_category": {
         "category": "items"
       }

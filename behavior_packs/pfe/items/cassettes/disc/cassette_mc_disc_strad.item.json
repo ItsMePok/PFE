@@ -2,7 +2,7 @@
   "format_version": "1.21.110",
   "minecraft:item": {
     "description": {
-      "identifier": "poke:cassette_mc_disc_strad"
+      "identifier": "poke_pfe:cassette_mc_disc_strad"
     },
     "components": {
       "minecraft:display_name": {
@@ -17,7 +17,7 @@
       },
       "minecraft:tags": {
         "tags": [
-          "pfe:is_cassette",
+          "poke_pfe:is_cassette",
           "minecraft:music_disc"
         ]
       },

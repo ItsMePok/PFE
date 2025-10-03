@@ -2,7 +2,7 @@
     "format_version": "1.20.60",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "poke:mine_helmet"
+            "identifier": "poke_pfe:mine_helmet"
         },
         "tags": [
             "crafting_table"
@@ -14,34 +14,34 @@
         ],
         "unlock": [
             {
-                "item": "poke:cobalt_ingot"
+                "item": "poke_pfe:cobalt_ingot"
             },
             {
                 "item": "redstone"
             },
             {
-                "item": "poke:wire"
+                "item": "poke_pfe:wire"
             },
             {
-                "item": "poke:plastic"
+                "item": "poke_pfe:plastic"
             }
         ],
         "key": {
             "C": {
-                "item": "poke:cobalt_ingot"
+                "item": "poke_pfe:cobalt_ingot"
             },
             "P": {
-                "item": "poke:plastic"
+                "item": "poke_pfe:plastic"
             },
             "R": {
                 "item": "redstone"
             },
             "W": {
-                "item": "poke:wire"
+                "item": "poke_pfe:wire"
             }
         },
         "result": {
-            "item": "poke:miner_helmet"
+            "item": "poke_pfe:miner_helmet"
         }
     }
 }

@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:cassette_they_listen"
+			"identifier": "poke_pfe:cassette_they_listen"
 		},
 		"components": {
 			"minecraft:display_name": {
@@ -16,7 +16,7 @@
 			},
 			"minecraft:tags": {
 				"tags": [
-					"pfe:is_cassette"
+					"poke_pfe:is_cassette"
 				]
 			}
 		}

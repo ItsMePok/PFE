@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_brewing_mix": {
 		"description": {
-			"identifier": "poke:death_potion"
+			"identifier": "poke_pfe:death_potion"
 		},
 		"tags": [
 			"brewing_stand"
@@ -11,7 +11,7 @@
 			"item": "potion",
 			"data": 4
 		},
-		"reagent": "poke:death_ingot",
-		"output": "poke:death_potion"
+		"reagent": "poke_pfe:death_ingot",
+		"output": "poke_pfe:death_potion"
 	}
 }

@@ -2,13 +2,13 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_furnace": {
 		"description": {
-			"identifier": "poke:cracked_onyx_bricks"
+			"identifier": "poke_pfe:cracked_onyx_bricks"
 		},
 		"tags": [
 			"furnace",
 			"blast_furnace"
 		],
-		"input": "poke:onyx_bricks",
-		"output": "poke:cracked_onyx_bricks"
+		"input": "poke_pfe:onyx_bricks",
+		"output": "poke_pfe:cracked_onyx_bricks"
 	}
 }

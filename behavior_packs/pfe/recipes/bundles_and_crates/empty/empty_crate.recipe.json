@@ -5,13 +5,21 @@
             "crafting_table"
         ],
         "description": {
-            "identifier": "poke:empty_crate"
+            "identifier": "poke_pfe:empty_crate"
         },
         "unlock": [
-            {"item": "planks"},
-            {"item": "stick"},
-            {"item": "poke:cobalt_nugget"},
-            {"item": "poke:sugarcane_crate"}
+            {
+                "item": "planks"
+            },
+            {
+                "item": "stick"
+            },
+            {
+                "item": "poke_pfe:cobalt_nugget"
+            },
+            {
+                "item": "poke_pfe:sugarcane_crate"
+            }
         ],
         "pattern": [
             "C C",
@@ -19,12 +27,16 @@
             "C#C"
         ],
         "key": {
-            "#": {"item": "stick"},
-            "C": {"item": "poke:cobalt_nugget"}
+            "#": {
+                "item": "stick"
+            },
+            "C": {
+                "item": "poke_pfe:cobalt_nugget"
+            }
         },
         "result": [
             {
-                "item": "poke:empty_crate"
+                "item": "poke_pfe:empty_crate"
             }
         ]
     }

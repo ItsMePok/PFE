@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:raw_sporefish",
+			"identifier": "poke_pfe:raw_sporefish",
 			"menu_category": {
 				"category": "nature"
 			}

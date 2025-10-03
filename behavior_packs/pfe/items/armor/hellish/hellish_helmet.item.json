@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:hellish_helmet",
+			"identifier": "poke_pfe:hellish_helmet",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -37,20 +37,20 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core",
-							"poke:hellish_block"
+							"poke_pfe:repair_core",
+							"poke_pfe:hellish_block"
 						],
 						"repair_amount": "query.max_durability"
 					},
 					{
 						"items": [
-							"poke:hellish_ingot"
+							"poke_pfe:hellish_ingot"
 						],
 						"repair_amount": "query.max_durability*0.25"
 					},
 					{
 						"items": [
-							"poke:hellish_nugget"
+							"poke_pfe:hellish_nugget"
 						],
 						"repair_amount": "query.max_durability * 0.028"
 					}

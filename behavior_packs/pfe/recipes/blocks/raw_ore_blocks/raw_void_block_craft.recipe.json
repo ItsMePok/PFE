@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:raw_void_block_craft"
+			"identifier": "poke_pfe:raw_void_block_craft"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,16 +14,16 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:raw_void"
+				"item": "poke_pfe:raw_void"
 			}
 		],
 		"key": {
 			"#": {
-				"item": "poke:raw_void"
+				"item": "poke_pfe:raw_void"
 			}
 		},
 		"result": {
-			"item": "poke:raw_void_block"
+			"item": "poke_pfe:raw_void_block"
 		}
 	}
 }

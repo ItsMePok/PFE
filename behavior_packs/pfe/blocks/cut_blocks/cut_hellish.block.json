@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:cut_hellish",
+			"identifier": "poke_pfe:cut_hellish",
 			"menu_category": {
 				"category": "construction"
 			}

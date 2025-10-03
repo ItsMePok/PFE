@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:poppy_hat",
+			"identifier": "poke_pfe:poppy_hat",
 			"menu_category": {
 				"category": "equipment"
 			}

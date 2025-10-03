@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:charred_poppy"
+			"identifier": "poke_pfe:charred_poppy"
 		},
 		"components": {
 			"minecraft:random_offset": {

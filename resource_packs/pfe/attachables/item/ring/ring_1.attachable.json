@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "poke:ring_1", // Rain Ring
+			"identifier": "poke_pfe:ring_1", // Rain Ring
 			"render_controllers": [
 				"controller.render.item_default"
 			],

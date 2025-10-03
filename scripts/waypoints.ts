@@ -115,7 +115,7 @@ function WaypointUIMainMenu(player: Player, itemStack: ItemStack, component: way
     UI.button({ translate: `poke_pfe.upgrade` }, `textures/poke/common/upgrade`)
   }
   component.debug_mode ? UI.button({ translate: `%poke_pfe.debug` }, `textures/poke/common/debug`) : undefined
-  UI.button({ translate: `%translation.poke:bossEventClose` }, `textures/poke/common/close`)
+  UI.button({ translate: `%translation.poke_pfe:bossEventClose` }, `textures/poke/common/close`)
   UI.show(player).then(response => {
     let selection = 0
     if (response.selection == selection) {

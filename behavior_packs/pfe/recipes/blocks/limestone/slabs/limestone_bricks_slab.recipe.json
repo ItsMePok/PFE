@@ -2,29 +2,29 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:limestone_bricks_slab"
+			"identifier": "poke_pfe:limestone_bricks_slab"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:limestone"
+				"item": "poke_pfe:limestone"
 			},
 			{
-				"item": "poke:cobbled_limestone"
+				"item": "poke_pfe:cobbled_limestone"
 			}
 		],
 		"key": {
 			"X": {
-				"item": "poke:limestone_bricks"
+				"item": "poke_pfe:limestone_bricks"
 			}
 		},
 		"pattern": [
 			"XXX"
 		],
 		"result": {
-			"item": "poke:limestone_brick_slab",
+			"item": "poke_pfe:limestone_brick_slab",
 			"count": 6
 		}
 	}

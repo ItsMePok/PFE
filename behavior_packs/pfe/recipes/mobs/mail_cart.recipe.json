@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "poke:mail_cart"
+			"identifier": "poke_pfe:mail_cart"
 		},
 		"tags": [
 			"crafting_table"
@@ -24,7 +24,7 @@
 			}
 		],
 		"result": {
-			"item": "poke:mail_cart"
+			"item": "poke_pfe:mail_cart"
 		}
 	}
 }

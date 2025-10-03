@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "poke:orange_squid",
+			"identifier": "poke_pfe:orange_squid",
 			"materials": {
 				"default": "entity_alphatest"
 			},

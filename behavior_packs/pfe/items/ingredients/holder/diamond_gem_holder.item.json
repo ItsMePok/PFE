@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:diamond_gem_holder",
+			"identifier": "poke_pfe:diamond_gem_holder",
 			"menu_category": {
 				"category": "items"
 			}

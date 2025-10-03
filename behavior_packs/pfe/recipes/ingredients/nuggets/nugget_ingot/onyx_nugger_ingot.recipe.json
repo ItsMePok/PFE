@@ -2,24 +2,24 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "poke:onyx_nugget_ingot"
+			"identifier": "poke_pfe:onyx_nugget_ingot"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:onyx_nugget"
+				"item": "poke_pfe:onyx_nugget"
 			}
 		],
 		"ingredients": [
 			{
-				"item": "poke:onyx_nugget",
+				"item": "poke_pfe:onyx_nugget",
 				"count": 9
 			}
 		],
 		"result": {
-			"item": "poke:onyx_ingot"
+			"item": "poke_pfe:onyx_ingot"
 		}
 	}
 }

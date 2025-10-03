@@ -2,7 +2,7 @@
 	"format_version": "1.21.110",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:cooked_piranha",
+			"identifier": "poke_pfe:cooked_piranha",
 			"menu_category": {
 				"category": "equipment"
 			}
