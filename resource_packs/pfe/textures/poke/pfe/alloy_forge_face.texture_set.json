@@ -1,8 +1,0 @@
-{
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "alloy_forge_face",
-		"metalness_emissive_roughness": "alloy_forge_face_mer",
-		"heightmap": "alloy_forge_face_height"
-	}
-}

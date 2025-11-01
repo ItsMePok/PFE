@@ -1,8 +1,0 @@
-{
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "crown_armor",
-		"metalness_emissive_roughness": "crown_armor_mer",
-		"heightmap": "crown_armor_height"
-	}
-}

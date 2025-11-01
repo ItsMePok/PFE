@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "got_raw_cobalt": {
+      "conditions": {
+        "items": [
+          {
+            "items": "poke_pfe:raw_cobalt"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": "Smelt this into an Ingot!",
+    "icon": {
+      "count": 1,
+      "id": "poke_pfe:raw_cobalt"
+    },
+    "title": "You have acquired Raw Cobalt for the first time"
+  },
+  "requirements": [
+    [
+      "got_raw_cobalt"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,8 +1,0 @@
-{
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "auto_lava_tank",
-		"metalness_emissive_roughness": "auto_lava_tank_mer",
-		"heightmap": "auto_lava_tank_height"
-	}
-}

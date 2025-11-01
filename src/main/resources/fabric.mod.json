@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "poke_pfe",
+	"version": "${version}",
+	"name": "PFE",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"ItsMePok"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/pfe/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"poke.pfe.PFE"
+		],
+		"client": [
+			"poke.pfe.PFEClient"
+		],
+		"fabric-datagen": [
+			"poke.pfe.PFEDataGenerator"
+		]
+	},
+	"mixins": [
+		"pfe.mixins.json",
+		{
+			"config": "pfe.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.10",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

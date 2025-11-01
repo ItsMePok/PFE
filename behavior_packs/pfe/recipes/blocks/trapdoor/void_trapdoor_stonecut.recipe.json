@@ -1,9 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:recipe_shapeless": {
-        "tags":["stonecutter"],
-        "description": {"identifier": "poke:void_trapdoor_sc"},
-        "ingredients":[{"item":"poke:void_block"}],
-        "result":{"item": "poke:void_trapdoor","count": 6}
-    }
-}

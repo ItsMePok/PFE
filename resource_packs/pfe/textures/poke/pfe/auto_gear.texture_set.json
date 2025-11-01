@@ -1,8 +1,0 @@
-{
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "auto_gear",
-		"metalness_emissive_roughness": "auto_gear_mer",
-		"heightmap": "auto_gear_height"
-	}
-}

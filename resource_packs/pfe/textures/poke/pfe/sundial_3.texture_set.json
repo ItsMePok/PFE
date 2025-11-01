@@ -1,7 +1,0 @@
-{
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "sundial_3",
-		"metalness_emissive_roughness": "sundial_3_mer"
-	}
-}

@@ -1,8 +1,0 @@
-{
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "auto_animated_cobble_generator_face",
-		"metalness_emissive_roughness": "auto_animated_cobble_generator_face_mer",
-		"heightmap": "auto_animated_cobble_generator_face_height"
-	}
-}

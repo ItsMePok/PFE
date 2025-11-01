@@ -1,8 +1,0 @@
-{
-	"format_version": "1.16.100",
-	"minecraft:texture_set": {
-		"color": "spell_crafter",
-		"metalness_emissive_roughness": "spell_crafter_mer",
-		"heightmap": "spell_crafter_height"
-	}
-}
