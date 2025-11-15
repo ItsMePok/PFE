@@ -16,12 +16,12 @@
     "entityTypeResourceCount": 0,
     "behaviorPackAnimationCount": 0,
     "behaviorPackAnimationControllerCount": 0,
-    "overallSize": 8766206,
-    "fileCounts": 4673,
-    "folderCounts": 363,
-    "contentSize": 6539611,
-    "contentFileCounts": 4616,
-    "contentFolderCounts": 349,
+    "overallSize": 8842726,
+    "fileCounts": 4675,
+    "folderCounts": 375,
+    "contentSize": 6549099,
+    "contentFileCounts": 4612,
+    "contentFolderCounts": 359,
     "minBehaviorPackMinEngineVersion": 0,
     "minResourcePackMinEngineVersion": 0,
     "subpackCount": 0,
@@ -29,7 +29,7 @@
     "blockTypeComponents": [],
     "itemTypeComponents": [],
     "apisUsed": [],
-    "mctoolsVersion": 10014001,
+    "mctoolsVersion": 10014004,
     "itemTypes": [
       "Animation",
       "Animation controller",
@@ -48,10 +48,13 @@
       "Feature",
       "Flipbook texture set",
       "Function",
+      "General json file",
       "Icon",
       "Image",
       "Item texture",
       "Item type",
+      "Jigsaw Processor List",
+      "Jigsaw Template Pool",
       "Just config",
       "Language catalog",
       "Language translations",
@@ -104,18 +107,18 @@
     "invalidManifestJson": 0,
     "missingResourcePackDependencies": 0,
     "internalProcessingErrors": 0,
+    "invalidWorldPackReferencesJson": 0,
+    "missingWorldPackReferencesFile": 0,
+    "invalidPackIds": 0,
+    "missingManifestVersion": 0,
+    "invalidManifestVersion": 0,
+    "packReferencesNotFound": 0,
     "minBaseGameVersion": 0,
     "chunkCount": 0,
     "subchunkLessChunkCount": 0,
     "worldLoadErrors": 0,
     "commands": [
-      "clear",
-      "effect",
-      "execute",
-      "give",
-      "summon",
-      "tag",
-      "xp"
+      "tag"
     ],
     "featureSets": {
       "Textures Block Resource Count": {
@@ -140,13 +143,13 @@
         "Count": 3
       },
       "Textures Item Texture Resource Count": {
-        "Count": 722
+        "Count": 1
       },
       "Textures Terrain Texture Resource Count": {
-        "Count": 305
+        "Count": 302
       },
       "Textures File Count": {
-        "Count": 1385
+        "Count": 1382
       },
       "Textures Unique Texture Handles (estimated)": {
         "Count": 358
@@ -173,10 +176,10 @@
         "Count": 241
       },
       "Textures Unique Terrain Texture References": {
-        "Count": 305
+        "Count": 302
       },
       "Textures Unique Terrain Texture Paths": {
-        "Count": 185
+        "Count": 186
       },
       "Textures Unique Item Texture Paths": {
         "Count": 721
@@ -195,36 +198,20 @@
       },
       "Command tag": {
         "Count": 1
-      },
-      "Command execute": {
-        "Count": 4
-      },
-      "Command effect": {
-        "Count": 10
-      },
-      "Execute Sub Command summon": {
-        "Count": 1
-      },
-      "Execute Sub Command clear": {
-        "Count": 1
-      },
-      "Execute Sub Command give": {
-        "Count": 1
-      },
-      "Execute Sub Command xp": {
-        "Count": 1
       }
     },
-    "errorCount": 25,
+    "errorCount": 27,
     "internalProcessingErrorCount": 0,
     "warningCount": 0,
     "testSuccessCount": 5,
     "testFailCount": 2,
     "testNotApplicableCount": 0,
-    "errorSummary": "ERROR: [CADDONREQ101] Found a loose file in the font folder. Should only see files in the folder font\\creatorshortname\\gamename\\: glyph_F0.png\nERROR: [STRICT101] (/behavior_packs/pfe/entities/hostile/piranha.behavior.json) Uses a runtime_identifier override: minecraft:cod\nERROR: [STRICT101] (/behavior_packs/pfe/entities/hostile/sculk_enderman.behavior.json) Uses a runtime_identifier override: minecraft:enderman\nERROR: [STRICT101] (/behavior_packs/pfe/entities/hostile/woodspike_guardian.behavior.json) Uses a runtime_identifier override: minecraft:guardian\nERROR: [STRICT101] (/behavior_packs/pfe/entities/misc/dummy_block.behavior.json) Uses a runtime_identifier override: minecraft:snowball\nERROR: [STRICT101] (/behavior_packs/pfe/entities/misc/mail_cart.behavior.json) Uses a runtime_identifier override: minecraft:chest_minecart\nERROR: [STRICT101] (/behavior_packs/pfe/entities/misc/seat.behavior.json) Uses a runtime_identifier override: minecraft:snowball\nERROR: [STRICT101] (/behavior_packs/pfe/entities/passive/brown_sporefish.behavior.json) Uses a runtime_identifier override: minecraft:cod\nERROR: [STRICT101] (/behavior_packs/pfe/entities/passive/duck.behavior.json) Uses a runtime_identifier override: minecraft:chicken\nERROR: [STRICT101] (/behavior_packs/pfe/entities/passive/gilded_allay.behavior.json) Uses a runtime_identifier override: minecraft:allay\nERROR: [STRICT101] (/behavior_packs/pfe/entities/passive/orange_squid.behavior.json) Uses a runtime_identifier override: minecraft:squid\nERROR: [STRICT101] (/behavior_packs/pfe/entities/passive/pink_squid.behavior.json) Uses a runtime_identifier override: minecraft:squid\nERROR: [STRICT101] (/behavior_packs/pfe/entities/passive/rat.behavior.json) Uses a runtime_identifier override: minecraft:allay\nERROR: [STRICT101] (/behavior_packs/pfe/entities/passive/red_sporefish.behavior.json) Uses a runtime_identifier override: minecraft:cod\nERROR: [STRICT101] (/behavior_packs/pfe/entities/passive/shallow_cod.behavior.json) Uses a runtime_identifier override: minecraft:cod",
+    "errorSummary": "ERROR: [CADDONREQ101] Found a loose file in the font folder. Should only see files in the folder font\\creatorshortname\\gamename\\: glyph_F0.png\nERROR: [CADDONREQ102] Found an cooperative add-on common name folder 'structures' in a parent folder pack\\worldgen. Should be named 'creatorshortname' and not a common term: structures\nERROR: [STRICT101] (/behavior_packs/pfe/entities/hostile/piranha.behavior.json) Uses a runtime_identifier override: minecraft:cod\nERROR: [STRICT101] (/behavior_packs/pfe/entities/hostile/sculk_enderman.behavior.json) Uses a runtime_identifier override: minecraft:enderman\nERROR: [STRICT101] (/behavior_packs/pfe/entities/hostile/woodspike_guardian.behavior.json) Uses a runtime_identifier override: minecraft:guardian\nERROR: [STRICT101] (/behavior_packs/pfe/entities/misc/dummy_block.behavior.json) Uses a runtime_identifier override: minecraft:snowball\nERROR: [STRICT101] (/behavior_packs/pfe/entities/misc/mail_cart.behavior.json) Uses a runtime_identifier override: minecraft:chest_minecart\nERROR: [STRICT101] (/behavior_packs/pfe/entities/misc/seat.behavior.json) Uses a runtime_identifier override: minecraft:snowball\nERROR: [STRICT101] (/behavior_packs/pfe/entities/passive/brown_sporefish.behavior.json) Uses a runtime_identifier override: minecraft:cod\nERROR: [STRICT101] (/behavior_packs/pfe/entities/passive/duck.behavior.json) Uses a runtime_identifier override: minecraft:chicken\nERROR: [STRICT101] (/behavior_packs/pfe/entities/passive/gilded_allay.behavior.json) Uses a runtime_identifier override: minecraft:allay\nERROR: [STRICT101] (/behavior_packs/pfe/entities/passive/orange_squid.behavior.json) Uses a runtime_identifier override: minecraft:squid\nERROR: [STRICT101] (/behavior_packs/pfe/entities/passive/pink_squid.behavior.json) Uses a runtime_identifier override: minecraft:squid\nERROR: [STRICT101] (/behavior_packs/pfe/entities/passive/rat.behavior.json) Uses a runtime_identifier override: minecraft:allay\nERROR: [STRICT101] (/behavior_packs/pfe/entities/passive/red_sporefish.behavior.json) Uses a runtime_identifier override: minecraft:cod",
     "internalProcessingErrorSummary": "",
     "warningSummary": "",
-    "testFailSummary": "TESTFAIL: [CADDONREQ000] Found 1 errors for Cooperative Add-On Requirements (CADDONREQ).\nTESTFAIL: [STRICT000] Found 24 errors for Strict Platform Info Generator (STRICT).",
+    "testFailSummary": "TESTFAIL: [CADDONREQ000] Found 2 errors for Cooperative Add-On Requirements (CADDONREQ).\nTESTFAIL: [STRICT000] Found 25 errors for Strict Platform Info Generator (STRICT).",
+    "infoGenerationTime": 5497,
+    "endToEndGenerationTime": 13401,
     "summary": {
       "CADDONIREQ": {
         "1": {
@@ -235,12 +222,17 @@
       "CADDONREQ": {
         "0": {
           "title": "Test Failure",
-          "defaultMessage": "Found 1 errors for Cooperative Add-On Requirements (CADDONREQ).",
+          "defaultMessage": "Found 2 errors for Cooperative Add-On Requirements (CADDONREQ).",
           "testCompleteFails": 1
         },
         "101": {
           "title": "No Loose File In Type Folder",
           "defaultMessage": "Found a loose file in the font folder. Should only see files in the folder font\\creatorshortname\\gamename\\",
+          "errors": 1
+        },
+        "102": {
+          "title": "No Common Names In Creator Folder Name",
+          "defaultMessage": "Found an cooperative add-on common name folder 'structures' in a parent folder pack\\worldgen. Should be named 'creatorshortname' and not a common term",
           "errors": 1
         },
         "200": {
@@ -291,13 +283,13 @@
       "STRICT": {
         "0": {
           "title": "Test Failure",
-          "defaultMessage": "Found 24 errors for Strict Platform Info Generator (STRICT).",
+          "defaultMessage": "Found 25 errors for Strict Platform Info Generator (STRICT).",
           "testCompleteFails": 1
         },
         "101": {
           "title": "Entity Type UsesAMinecraft Runtime Identifier",
           "defaultMessage": "Uses a runtime_identifier override",
-          "errors": 24
+          "errors": 25
         }
       },
       "TEXTURE": {
@@ -354,6 +346,12 @@
       "d": "glyph_F0.png"
     },
     {
+      "iTp": 3,
+      "gId": "CADDONREQ",
+      "gIx": 102,
+      "d": "structures"
+    },
+    {
       "iTp": 2,
       "gId": "CADDONREQ",
       "gIx": 200,
@@ -395,37 +393,37 @@
       "iTp": 7,
       "gId": "PACKSIZE",
       "gIx": 101,
-      "d": 8766206
+      "d": 8842726
     },
     {
       "iTp": 7,
       "gId": "PACKSIZE",
       "gIx": 102,
-      "d": 4673
+      "d": 4675
     },
     {
       "iTp": 7,
       "gId": "PACKSIZE",
       "gIx": 103,
-      "d": 363
+      "d": 375
     },
     {
       "iTp": 7,
       "gId": "PACKSIZE",
       "gIx": 104,
-      "d": 6539611
+      "d": 6549099
     },
     {
       "iTp": 7,
       "gId": "PACKSIZE",
       "gIx": 105,
-      "d": 4616
+      "d": 4612
     },
     {
       "iTp": 7,
       "gId": "PACKSIZE",
       "gIx": 106,
-      "d": 349
+      "d": 359
     },
     {
       "iTp": 0,
@@ -569,6 +567,13 @@
       "iTp": 3,
       "gId": "STRICT",
       "gIx": 101,
+      "p": "/behavior_packs/pfe/entities/projectiles/dragon_ring_proj.behavior.json",
+      "d": "minecraft:dragon_fireball"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
       "p": "/behavior_packs/pfe/entities/projectiles/duck_egg.behavior.json",
       "d": "minecraft:egg"
     },
@@ -632,13 +637,13 @@
           "Count": 3
         },
         "Item Texture Resource Count": {
-          "Count": 722
+          "Count": 1
         },
         "Terrain Texture Resource Count": {
-          "Count": 305
+          "Count": 302
         },
         "File Count": {
-          "Count": 1385
+          "Count": 1382
         },
         "Unique Texture Handles (estimated)": {
           "Count": 358
@@ -665,10 +670,10 @@
           "Count": 241
         },
         "Unique Terrain Texture References": {
-          "Count": 305
+          "Count": 302
         },
         "Unique Terrain Texture Paths": {
-          "Count": 185
+          "Count": 186
         },
         "Unique Item Texture Paths": {
           "Count": 721
@@ -701,68 +706,8 @@
     {
       "iTp": 7,
       "gId": "WORLDDATA",
-      "gIx": 121,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/circuit_sword.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 121,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/death_scythe.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 121,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/nebula_scythe.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 121,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/void_scythe.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 121,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/xp_vial.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
       "gIx": 122,
       "p": "/behavior_packs/pfe/functions/poke/pfe/become_event_manager.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 122,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/circuit_sword.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 122,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/death_scythe.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 122,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/nebula_scythe.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 122,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/void_scythe.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 122,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/xp_vial.mcfunction"
     },
     {
       "iTp": 7,
@@ -778,112 +723,8 @@
     {
       "iTp": 7,
       "gId": "WORLDDATA",
-      "gIx": 123,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/circuit_sword.mcfunction",
-      "fs": {
-        "execute": {
-          "Count": 1
-        },
-        "effect": {
-          "Count": 1
-        }
-      }
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 123,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/death_scythe.mcfunction",
-      "fs": {
-        "effect": {
-          "Count": 3
-        }
-      }
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 123,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/nebula_scythe.mcfunction",
-      "fs": {
-        "effect": {
-          "Count": 3
-        }
-      }
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 123,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/void_scythe.mcfunction",
-      "fs": {
-        "effect": {
-          "Count": 3
-        }
-      }
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 123,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/xp_vial.mcfunction",
-      "fs": {
-        "execute": {
-          "Count": 3
-        }
-      }
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
       "gIx": 124,
       "p": "/behavior_packs/pfe/functions/poke/pfe/become_event_manager.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 124,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/circuit_sword.mcfunction",
-      "fs": {
-        "summon": {
-          "Count": 1
-        }
-      }
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 124,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/death_scythe.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 124,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/nebula_scythe.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 124,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/void_scythe.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 124,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/xp_vial.mcfunction",
-      "fs": {
-        "clear": {
-          "Count": 1
-        },
-        "give": {
-          "Count": 1
-        },
-        "xp": {
-          "Count": 1
-        }
-      }
     },
     {
       "iTp": 7,
@@ -894,71 +735,11 @@
     {
       "iTp": 7,
       "gId": "WORLDDATA",
-      "gIx": 125,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/circuit_sword.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 125,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/death_scythe.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 125,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/nebula_scythe.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 125,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/void_scythe.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 125,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/xp_vial.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
       "gIx": 126,
       "p": "/behavior_packs/pfe/functions/poke/pfe/become_event_manager.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 126,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/circuit_sword.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 126,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/death_scythe.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 126,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/nebula_scythe.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 126,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/void_scythe.mcfunction"
-    },
-    {
-      "iTp": 7,
-      "gId": "WORLDDATA",
-      "gIx": 126,
-      "p": "/behavior_packs/pfe/functions/poke/pfe/xp_vial.mcfunction"
     }
   ],
   "generatorName": "Minecraft Creator Tools",
   "suite": 2,
-  "generatorVersion": "0.14.1"
+  "generatorVersion": "0.14.4"
 }

@@ -832,6 +832,9 @@
   "poke_pfe:cobblestone_gen": {
     "sound": "wood"
   },
+  "poke_pfe:cobbler": {
+    "sound": "wood"
+  },
   "poke_pfe:barometer": {
     "sound": "wood"
   },

@@ -2,7 +2,10 @@
   "format_version": "1.20.60",
   "minecraft:recipe_shaped": {
     "description": {
-      "identifier": "poke_pfe:shadowstone_bricks"
+      "identifier": "poke_pfe:shadowstone_bricks",
+      "menu_category": {
+        "category": "construction"
+      }
     },
     "tags": [
       "crafting_table"

@@ -518,7 +518,6 @@ function RegisterItemComponents(data: StartupEvent) {
         for (const command of componentInfo.command) {
           data.block.dimension.runCommand(`execute at ${data.block.x} ${data.block.y} ${data.block.z} run ${command}`)
         }
-
       if (componentInfo.trigger_cooldown) data.itemStack.getComponent(ItemComponentTypes.Cooldown)?.startCooldown(player);
       if (componentInfo.take_durability !== false) PokeDamageItemUB(data.itemStack, undefined, player, EquipmentSlot.Mainhand);
       return;

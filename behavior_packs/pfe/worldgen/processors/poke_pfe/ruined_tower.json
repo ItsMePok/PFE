@@ -1,0 +1,16 @@
+{
+  "format_version": "1.21.20",
+  "minecraft:processor_list": {
+    "description": {
+      "identifier": "poke_pfe:ruined_tower"
+    },
+    "processors": [
+      {
+        "processor_type": "minecraft:block_ignore",
+        "blocks": [
+          "minecraft:sculk_vein"
+        ]
+      }
+    ]
+  }
+}

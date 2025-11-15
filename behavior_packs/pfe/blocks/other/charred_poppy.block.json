@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.110",
+	"format_version": "1.21.120",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke_pfe:charred_poppy"
@@ -57,6 +57,20 @@
 			},
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 0
+			},
+			"minecraft:flower_pottable": {},
+			"minecraft:embedded_visual": {
+				"geometry": {
+					"identifier": "geometry.poke_pfe.charred_poppy"
+				},
+				"material_instances": {
+					"*": {
+						"texture": "poke_pfe_charred_poppy",
+						"render_method": "alpha_test",
+						"face_dimming": false,
+						"ambient_occlusion": false
+					}
+				}
 			},
 			"minecraft:geometry": "geometry.poke_pfe.charred_poppy",
 			"minecraft:material_instances": {

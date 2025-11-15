@@ -2,7 +2,10 @@
   "format_version": "1.20.60",
   "minecraft:recipe_shapeless": {
     "description": {
-      "identifier": "poke_pfe:omnivator"
+      "identifier": "poke_pfe:omnivator",
+      "menu_category": {
+        "category": "construction"
+      }
     },
     "group": "poke_pfe:automation",
     "tags": [

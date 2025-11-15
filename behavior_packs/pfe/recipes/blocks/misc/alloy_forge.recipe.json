@@ -3,7 +3,10 @@
   "minecraft:recipe_shaped": {
     "assume_symmetry": true,
     "description": {
-      "identifier": "poke_pfe:alloy_forge"
+      "identifier": "poke_pfe:alloy_forge",
+      "menu_category": {
+        "category": "construction"
+      }
     },
     "group": "crafting",
     "tags": [

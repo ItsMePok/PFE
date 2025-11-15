@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.110",
+	"format_version": "1.21.120",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke_pfe:mail_cart",
@@ -45,7 +45,7 @@
 					"inanimate"
 				]
 			},
-			"minecraft:is_stackable": true,
+			"minecraft:is_stackable": {},
 			"minecraft:collision_box": {
 				"width": 0.98,
 				"height": 0.7

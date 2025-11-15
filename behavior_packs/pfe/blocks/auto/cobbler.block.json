@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.110",
+	"format_version": "1.21.120",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke_pfe:cobbler",
@@ -26,25 +26,26 @@
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "poke_pfe_cobbler",
+							"texture": "poke_pfe_animated_automation_gear",
 							"render_method": "opaque"
 						},
 						"south": {
-							"texture": "poke_pfe_cobbler_top",
+							"texture": "poke_pfe_automation_bottom",
 							"render_method": "opaque"
 						},
 						"north": {
-							"texture": "poke_pfe_cobbler_bottom",
+							"texture": "poke_pfe_automation_cobbler_face",
 							"render_method": "opaque"
 						},
 						"east": {
-							"texture": "poke_pfe_cobbler_flip",
+							"texture": "poke_pfe_automation_grills",
 							"render_method": "opaque"
 						},
 						"west": "east"
 					},
 					"minecraft:geometry": {
-						"identifier": "minecraft:geometry.full_block"
+						"identifier": "geometry.poke_pfe.block_breaker",
+						"culling": "poke_pfe:block.culling"
 					},
 					"minecraft:light_emission": 5
 				}
@@ -54,25 +55,26 @@
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "poke_pfe_cobbler",
+							"texture": "poke_pfe_automation_gear",
 							"render_method": "opaque"
 						},
 						"south": {
-							"texture": "poke_pfe_cobbler_top",
+							"texture": "poke_pfe_automation_bottom",
 							"render_method": "opaque"
 						},
 						"north": {
-							"texture": "poke_pfe_cobbler_bottom",
+							"texture": "poke_pfe_automation_cobbler_face",
 							"render_method": "opaque"
 						},
 						"east": {
-							"texture": "poke_pfe_cobbler_flip",
+							"texture": "poke_pfe_automation_grills",
 							"render_method": "opaque"
 						},
 						"west": "east"
 					},
 					"minecraft:geometry": {
-						"identifier": "minecraft:geometry.full_block"
+						"identifier": "geometry.poke_pfe.block_breaker",
+						"culling": "poke_pfe:block.culling"
 					}
 				}
 			},

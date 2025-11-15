@@ -1,0 +1,18 @@
+{
+  "format_version": "1.21.20",
+  "minecraft:template_pool": {
+    "description": {
+      "identifier": "poke_pfe:ruined_tower"
+    },
+    "elements": [
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "processors": "poke_pfe:ruined_tower",
+          "location": "poke_pfe/ruined_tower"
+        },
+        "weight": 1
+      }
+    ]
+  }
+}

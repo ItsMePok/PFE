@@ -2,6 +2,9 @@
 	"resource_pack_name": "poke",
 	"texture_name": "atlas.terrain",
 	"texture_data": {
+		"poke_pfe_automation_cobbler_face": {
+			"textures": "textures/poke/pfe/auto_cobbler_face"
+		},
 		"poke_pfe_upgrader_block": {
 			"textures": "textures/poke/pfe/upgrader"
 		},
@@ -248,54 +251,6 @@
 		},
 		"poke_pfe_spell_crafter": {
 			"textures": "textures/poke/pfe/spell_crafter"
-		},
-		"poke_pfe_cobbler_top": {
-			"textures": [
-				{
-					"path": "textures/poke/pfe/calibrated_block_breaker_bottom",
-					"overlay_color": "#757575"
-				},
-				{
-					"path": "textures/poke/pfe/calibrated_block_breaker_bottom",
-					"overlay_color": "#757575"
-				}
-			]
-		},
-		"poke_pfe_cobbler_flip": {
-			"textures": [
-				{
-					"path": "textures/poke/pfe/cobbler_flip",
-					"overlay_color": "#610310"
-				},
-				{
-					"path": "textures/poke/pfe/cobbler_flip",
-					"overlay_color": "#ce0c0c"
-				}
-			]
-		},
-		"poke_pfe_cobbler": {
-			"textures": [
-				{
-					"path": "textures/poke/pfe/cobbler",
-					"overlay_color": "#610310"
-				},
-				{
-					"path": "textures/poke/pfe/cobbler",
-					"overlay_color": "#ce0c0c"
-				}
-			]
-		},
-		"poke_pfe_cobbler_bottom": {
-			"textures": [
-				{
-					"path": "textures/poke/pfe/cobbler_bottom",
-					"overlay_color": "#610310"
-				},
-				{
-					"path": "textures/poke/pfe/cobbler_bottom",
-					"overlay_color": "#ce0c0c"
-				}
-			]
 		},
 		"poke_pfe_honey_trapdoor": {
 			"textures": "textures/poke/pfe/honey_trapdoor"

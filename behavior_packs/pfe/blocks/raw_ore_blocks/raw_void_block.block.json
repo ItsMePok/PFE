@@ -1,8 +1,11 @@
 {
-  "format_version": "1.21.110",
+  "format_version": "1.21.120",
   "minecraft:block": {
     "description": {
-      "identifier": "poke_pfe:raw_void_block"
+      "identifier": "poke_pfe:raw_void_block",
+      "menu_category": {
+        "category": "construction"
+      }
     },
     "components": {
       "minecraft:display_name": "%poke_pfe.raw_void_block\n%poke_pfe.tag",

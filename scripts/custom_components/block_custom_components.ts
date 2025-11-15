@@ -345,7 +345,7 @@ function RegisterBlockComponents(data: StartupEvent) {
     onPlayerInteract(data, component) {
       switch (data.block.typeId) {
         case 'poke_pfe:listener_trophy': { data.player?.playMusic('poke_pfe.they_listen', { fade: 5 }); return; }
-        case 'poke_pfe:furnace_golem_trophy': { data.player?.playMusic('poke_pferecord.pigstep', { fade: 5 }); return; }
+        case 'poke_pfe:furnace_golem_trophy': { data.player?.playMusic('poke_pfe.record.pigstep', { fade: 5 }); return; }
         case 'poke_pfe:charged_cobalt_block': { data.dimension.spawnEntity('poke_pfe:cobalt_golem', data.block.location); data.block.setType(MinecraftBlockTypes.Air); return; }
           return;
       }

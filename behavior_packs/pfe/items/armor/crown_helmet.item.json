@@ -1,8 +1,11 @@
 {
-	"format_version": "1.21.110",
+	"format_version": "1.21.120",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke_pfe:crown_helmet"
+			"identifier": "poke_pfe:crown_helmet",
+			"menu_category": {
+				"category": "equipment"
+			}
 		},
 		"components": {
 			"minecraft:display_name": {

@@ -1,4 +1,4 @@
-import { system, world, EquipmentSlot, EntityComponentTypes, ItemComponentTypes, Player, RawMessage, CommandPermissionLevel, CustomCommandParamType, CustomCommandStatus, CustomCommandOrigin, CustomCommandResult, ItemLockMode } from "@minecraft/server";
+import { system, world, EquipmentSlot, EntityComponentTypes, ItemComponentTypes, Player, RawMessage, CommandPermissionLevel, CustomCommandParamType, CustomCommandStatus, CustomCommandOrigin, CustomCommandResult, ItemLockMode, ItemStack } from "@minecraft/server";
 import { MinecraftEnchantmentTypes } from "@minecraft/vanilla-data";
 import { PFEBossEventConfig, PFEBossEventConfigName, PFEDefaultBossEventSettings, startBossEvents } from "./bossEvents";
 import { PFETimeValidation, PokeBirthdays, PokeTimeGreeting, PokeTimeZoneOffset } from "./time";
@@ -8,7 +8,7 @@ import { PFECustomCraftQuestsPropertyID, PFECustomFarmQuestsPropertyID, PFECusto
 import ComputersCompat, { initExampleStickers } from "./addonCompatibility/jigarbov";
 import { RegisterItemComponents } from "./custom_components/item_custom_components";
 import { RegisterBlockComponents } from "./custom_components/block_custom_components";
-const currentVersion = 103010 // PFE Version (ex: 102950 = v1.2.95)
+const currentVersion = 103001 // PFE Version (ex: 103062 = v1.3.62)
 
 world.afterEvents.playerJoin.subscribe((data => {
     let birthdays: PokeBirthdays[] = JSON.parse(world.getDynamicProperty(`poke_pfe:birthdays`)!.toString())

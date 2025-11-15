@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.110",
+	"format_version": "1.21.120",
 	"minecraft:ore_feature": {
 		"description": {
 			"identifier": "poke_pfe:limestone.feature"
