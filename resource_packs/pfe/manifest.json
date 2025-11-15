@@ -37,6 +37,9 @@
 			]
 		}
 	],
+	"capabilities": [
+		"pbr"
+	],
 	"format_version": 2,
 	"metadata": {
 		"url": "https://github.com/ItsMePok/PFE",

@@ -15,6 +15,9 @@
 			110
 		]
 	},
+	"capabilities": [
+		"pbr"
+	],
 	"modules": [
 		{
 			"uuid": "0932aed9-1cfd-42e7-91f5-afe0525a2914",
