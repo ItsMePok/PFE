@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke_pfe:onyx_shaft"
+			"identifier": "poke_pfe:onyx_stick"
 		},
 		"tags": [
 			"crafting_table"
@@ -26,7 +26,7 @@
 			}
 		},
 		"result": {
-			"item": "poke_pfe:onyx_shaft",
+			"item": "poke_pfe:onyx_stick",
 			"count": 1
 		}
 	}

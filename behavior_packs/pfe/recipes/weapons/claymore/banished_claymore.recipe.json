@@ -18,7 +18,7 @@
 				"tag": "poke_pfe:banished_star"
 			},
 			{
-				"item": "poke_pfe:ban_hammer_shaft"
+				"item": "poke_pfe:banished_stick"
 			}
 		],
 		"key": {
@@ -29,7 +29,7 @@
 				"item": "poke_pfe:banished_star_x6"
 			},
 			"S": {
-				"item": "poke_pfe:ban_hammer_shaft"
+				"item": "poke_pfe:banished_stick"
 			}
 		},
 		"result": {

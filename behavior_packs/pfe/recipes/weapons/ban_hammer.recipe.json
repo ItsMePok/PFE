@@ -17,7 +17,7 @@
 				"item": "poke_pfe:ban_hammer_grip"
 			},
 			{
-				"item": "poke_pfe:ban_hammer_shaft"
+				"item": "poke_pfe:banished_stick"
 			},
 			{
 				"item": "poke_pfe:ban_hammer_head"
@@ -28,7 +28,7 @@
 				"item": "poke_pfe:ban_hammer_head"
 			},
 			"*": {
-				"item": "poke_pfe:ban_hammer_shaft"
+				"item": "poke_pfe:banished_stick"
 			},
 			"G": {
 				"item": "poke_pfe:ban_hammer_grip"

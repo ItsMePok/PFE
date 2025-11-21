@@ -13,10 +13,10 @@
     "start_height": {
       "type": "uniform",
       "min": {
-        "absolute": 5
+        "absolute": 0
       },
       "max": {
-        "absolute": -5
+        "absolute": -2
       }
     },
     "step": "surface_structures",
