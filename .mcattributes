@@ -7,3 +7,5 @@ diagnostic.disable.minecraft.language.comment.invalid=false
 diagnostic.disable.behaviorpack.item.component.missing=false
 diagnostic.disable.behaviorpack.block.components.texture_not_found=false
 diagnostic.disable.resourcepack.particle.component.particle_motion_collision.radius=true
+diagnostic.disable.molang.minecraft:geometry.full_block=true
+diagnostic.disable.521=true

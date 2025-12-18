@@ -223,15 +223,7 @@
 							"hard_distance": 6,
 							"max_distance": 10
 						}
-					],
-					"on_leash": {
-						"event": "minecraft:on_leash",
-						"target": "self"
-					},
-					"on_unleash": {
-						"event": "minecraft:on_unleash",
-						"target": "self"
-					}
+					]
 				}
 			}
 		},
