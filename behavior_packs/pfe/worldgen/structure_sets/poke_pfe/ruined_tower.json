@@ -1,14 +1,14 @@
 {
-  "format_version": "1.21.20",
+  "format_version": "1.21.130",
   "minecraft:structure_set": {
     "description": {
       "identifier": "poke_pfe:ruined_tower"
     },
     "placement": {
       "type": "minecraft:random_spread",
-      "salt": 124678,
-      "separation": 3,
-      "spacing": 10,
+      "salt": 2112160001,
+      "separation": 2,
+      "spacing": 34,
       "spread_type": "linear"
     },
     "structures": [
