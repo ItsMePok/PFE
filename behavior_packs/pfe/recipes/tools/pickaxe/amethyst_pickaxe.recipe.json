@@ -2,7 +2,7 @@
 	"format_version": "1.20.10",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke_pfe:amethyst_pickaxe"
+			"identifier": "poke_pfe:creedite_pickaxe"
 		},
 		"tags": [
 			"crafting_table"
@@ -32,7 +32,7 @@
 			}
 		},
 		"result": {
-			"item": "poke_pfe:amethyst_pickaxe"
+			"item": "poke_pfe:creedite_pickaxe"
 		}
 	}
 }

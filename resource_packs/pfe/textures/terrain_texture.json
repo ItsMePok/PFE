@@ -218,7 +218,6 @@
 		"poke_pfe_zombken_sticker": {
 			"textures": "textures/poke/pfe/zombken_sticker"
 		},
-		/**/
 		"poke_pfe_knightling_trophy": {
 			"textures": "textures/poke/pfe/knightling_trophy"
 		},
@@ -2143,6 +2142,9 @@
 		},
 		"poke_pfe_molten_block": {
 			"textures": "textures/poke/pfe/molten_block"
+		},
+		"poke_pfe_creedite_block": {
+			"textures": "textures/poke/pfe/creedite_block"
 		},
 		"poke_pfe_scrappy_block": {
 			"textures": "textures/poke/pfe/scrappy_block"

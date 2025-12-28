@@ -1,0 +1,35 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke_pfe:medic_hoe"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"CC",
+			"S",
+			"S"
+		],
+		"unlock": [
+			{
+				"item": "poke_pfe:godly_stick"
+			},
+			{
+				"item": "poke_pfe:medic_ingot"
+			}
+		],
+		"key": {
+			"C": {
+				"item": "poke_pfe:medic_ingot"
+			},
+			"S": {
+				"item": "poke_pfe:godly_stick"
+			}
+		},
+		"result": {
+			"item": "poke_pfe:medic_hoe"
+		}
+	}
+}

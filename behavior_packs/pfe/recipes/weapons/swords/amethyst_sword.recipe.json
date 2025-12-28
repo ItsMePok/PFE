@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke_pfe:amethyst_sword"
+			"identifier": "poke_pfe:creedite_sword"
 		},
 		"assume_symmetry": true,
 		"tags": [
@@ -33,7 +33,7 @@
 			}
 		},
 		"result": {
-			"item": "poke_pfe:amethyst_sword"
+			"item": "poke_pfe:creedite_sword"
 		}
 	}
 }

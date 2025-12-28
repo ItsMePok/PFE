@@ -7218,7 +7218,7 @@ function RegisterItemComponents(data) {
             data2.hitEntity.addEffect("wither", 240, { amplifier: 4 });
             return;
           }
-          case "poke_pfe:amethyst_scythe": {
+          case "creedite_scythe": {
             data2.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 4 });
             data2.hitEntity.addEffect("blindness", 20);
             return;
@@ -7228,7 +7228,7 @@ function RegisterItemComponents(data) {
             data2.hitEntity.addEffect("wither", 80, { amplifier: 1 });
             return;
           }
-          case "poke_pfe:gold_scythe": {
+          case "poke_pfe:golden_scythe": {
             data2.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 2 });
             data2.attackingEntity.addEffect("haste", 600, { amplifier: 2 });
             return;

@@ -18,7 +18,7 @@
 				"item": "poke_pfe:onyx_ingot"
 			},
 			{
-				"item": "poke_pfe:amethyst_haxel"
+				"item": "poke_pfe:creedite_haxel"
 			}
 		],
 		"key": {
@@ -29,7 +29,7 @@
 				"item": "poke_pfe:onyx_block"
 			},
 			"E": {
-				"item": "poke_pfe:amethyst_haxel"
+				"item": "poke_pfe:creedite_haxel"
 			},
 			"N": {
 				"item": "nether_star"

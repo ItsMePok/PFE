@@ -14,7 +14,7 @@
 		],
 		"unlock": [
 			{
-				"item": "poke_pfe:amethyst_helmet"
+				"item": "poke_pfe:creedite_helmet"
 			},
 			{
 				"item": "poke_pfe:onyx_ingot"
@@ -25,7 +25,7 @@
 				"item": "poke_pfe:onyx_block"
 			},
 			"#": {
-				"item": "poke_pfe:amethyst_helmet"
+				"item": "poke_pfe:creedite_helmet"
 			},
 			"U": {
 				"item": "poke_pfe:upgrade_core"

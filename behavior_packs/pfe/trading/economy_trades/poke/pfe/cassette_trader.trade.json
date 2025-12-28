@@ -9,7 +9,7 @@
             {
               "wants": [
                 {
-                  "item": "poke_pfe:gold_token",
+                  "item": "poke_pfe:golden_token",
                   "quantity": {
                     "min": 2,
                     "max": 5
@@ -232,7 +232,7 @@
             {
               "wants": [
                 {
-                  "item": "poke_pfe:gold_token",
+                  "item": "poke_pfe:golden_token",
                   "quantity": {
                     "min": 2,
                     "max": 5
@@ -455,7 +455,7 @@
             {
               "wants": [
                 {
-                  "item": "poke_pfe:gold_token",
+                  "item": "poke_pfe:golden_token",
                   "quantity": {
                     "min": 2,
                     "max": 5
@@ -678,7 +678,7 @@
             {
               "wants": [
                 {
-                  "item": "poke_pfe:gold_token",
+                  "item": "poke_pfe:golden_token",
                   "quantity": {
                     "min": 2,
                     "max": 5
@@ -901,7 +901,7 @@
             {
               "wants": [
                 {
-                  "item": "poke_pfe:gold_token",
+                  "item": "poke_pfe:golden_token",
                   "quantity": {
                     "min": 2,
                     "max": 5

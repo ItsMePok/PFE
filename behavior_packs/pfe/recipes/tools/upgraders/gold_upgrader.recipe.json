@@ -2,7 +2,7 @@
     "format_version": "1.20.60",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "poke_pfe:gold_upgrader"
+            "identifier": "poke_pfe:golden_upgrader"
         },
         "tags": [
             "crafting_table"
@@ -36,7 +36,7 @@
             }
         },
         "result": {
-            "item": "poke_pfe:gold_upgrader"
+            "item": "poke_pfe:golden_upgrader"
         }
     }
 }

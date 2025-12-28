@@ -18,12 +18,12 @@
 				"item": "emerald"
 			},
 			{
-				"item": "poke_pfe:gold_haxel"
+				"item": "poke_pfe:golden_haxel"
 			}
 		],
 		"key": {
 			"i": {
-				"item": "poke_pfe:gold_haxel"
+				"item": "poke_pfe:golden_haxel"
 			},
 			"#": {
 				"item": "emerald"

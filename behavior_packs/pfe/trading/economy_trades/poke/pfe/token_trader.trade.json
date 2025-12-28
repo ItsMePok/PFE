@@ -32,7 +32,7 @@
 							],
 							"gives": [
 								{
-									"item": "poke_pfe:gold_token"
+									"item": "poke_pfe:golden_token"
 								}
 							]
 						},
@@ -41,7 +41,7 @@
 							"reward_exp": false,
 							"wants": [
 								{
-									"item": "poke_pfe:gold_token",
+									"item": "poke_pfe:golden_token",
 									"quantity": 8
 								}
 							],
@@ -86,7 +86,7 @@
 							"reward_exp": false,
 							"wants": [
 								{
-									"item": "poke_pfe:gold_token"
+									"item": "poke_pfe:golden_token"
 								}
 							],
 							"gives": [
@@ -106,7 +106,7 @@
 							],
 							"gives": [
 								{
-									"item": "poke_pfe:gold_token",
+									"item": "poke_pfe:golden_token",
 									"quantity": 8
 								}
 							]
@@ -144,7 +144,7 @@
 							"max_uses": 2147483647,
 							"wants": [
 								{
-									"item": "poke_pfe:gold_token",
+									"item": "poke_pfe:golden_token",
 									"quantity": 1
 								}
 							],
@@ -214,7 +214,7 @@
 							"max_uses": 2147483647,
 							"wants": [
 								{
-									"item": "poke_pfe:gold_token",
+									"item": "poke_pfe:golden_token",
 									"quantity": 1
 								}
 							],
@@ -301,7 +301,7 @@
 							"max_uses": 2147483647,
 							"wants": [
 								{
-									"item": "poke_pfe:gold_token",
+									"item": "poke_pfe:golden_token",
 									"quantity": 5
 								},
 								{

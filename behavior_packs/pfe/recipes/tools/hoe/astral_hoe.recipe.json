@@ -1,0 +1,38 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke_pfe:astral_hoe"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"CC",
+			"S",
+			"S"
+		],
+		"unlock": [
+			{
+				"item": "poke_pfe:nebula_stick"
+			},
+			{
+				"item": "poke_pfe:raw_astral"
+			},
+			{
+				"item": "poke_pfe:astral_ingot"
+			}
+		],
+		"key": {
+			"C": {
+				"item": "poke_pfe:astral_ingot"
+			},
+			"S": {
+				"item": "poke_pfe:nebula_stick"
+			}
+		},
+		"result": {
+			"item": "poke_pfe:astral_hoe"
+		}
+	}
+}

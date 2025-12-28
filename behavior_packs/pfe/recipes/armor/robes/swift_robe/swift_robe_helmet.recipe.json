@@ -14,7 +14,7 @@
         ],
         "unlock": [
             {
-                "item": "poke_pfe:amethyst_helmet"
+                "item": "poke_pfe:creedite_helmet"
             }
         ],
         "key": {
@@ -22,7 +22,7 @@
                 "item": "blue_ice"
             },
             "A": {
-                "item": "poke_pfe:amethyst_helmet"
+                "item": "poke_pfe:creedite_helmet"
             },
             "G": {
                 "item": "gold_block"

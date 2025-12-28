@@ -1,0 +1,35 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke_pfe:radium_shovel"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"C",
+			"S",
+			"S"
+		],
+		"unlock": [
+			{
+				"item": "poke_pfe:onyx_stick"
+			},
+			{
+				"item": "poke_pfe:radium_ingot"
+			}
+		],
+		"key": {
+			"C": {
+				"item": "poke_pfe:radium_ingot"
+			},
+			"S": {
+				"item": "poke_pfe:onyx_stick"
+			}
+		},
+		"result": {
+			"item": "poke_pfe:radium_shovel"
+		}
+	}
+}

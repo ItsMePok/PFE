@@ -1,0 +1,83 @@
+{
+	"format_version": "1.21.130",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke_pfe:nebula_hoe",
+			"menu_category": {
+				"category": "equipment",
+				"group": "minecraft:itemGroup.name.hoe"
+			}
+		},
+		"components": {
+			"minecraft:display_name": {
+				"value": "%poke_pfe.nebula_hoe\n%poke_pfe.tag"
+			},
+			"poke_pfe:icon_path": "textures/poke/pfe/nebula_hoe",
+			"poke_pfe:upgradeable": {
+				"version": 1,
+				"upgrade_ids": [
+					"poke_pfe:persistence"
+				]
+			},
+			"minecraft:rarity": "epic",
+			"poke_pfe:veinMiner": {},
+			"poke_pfe:normalMining": {},
+			"minecraft:max_stack_size": 1,
+			"minecraft:icon": "poke_pfe_nebula_hoe",
+			"minecraft:hand_equipped": {
+				"value": true
+			},
+			"minecraft:damage": {
+				"value": 14
+			},
+			"minecraft:durability": {
+				"damage_chance": {
+					"min": 10,
+					"max": 100
+				},
+				"max_durability": 6500
+			},
+			"minecraft:enchantable": {
+				"slot": "hoe",
+				"value": 30
+			},
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:is_hoe"
+				]
+			},
+			"minecraft:digger": {
+				"destroy_speeds": [
+					{
+						"block": {
+							"tags": "query.any_tag('minecraft:diamond_tier_destructible','minecraft:netherite_tier_destructible','hoe','minecraft:wood_tier_destructible','minecraft:stone_tier_destructible','minecraft:gold_tier_destructible','minecraft:iron_tier_destructible','minecraft:is_hoe_item_destructible')"
+						},
+						"speed": 32
+					}
+				]
+			},
+			"poke_pfe:run_command": {
+				"version": 1,
+				"mode": [
+					"on_use_on"
+				],
+				"command": [
+					"fill ~3 ~1 ~3 ~-3 ~-2 ~-3 minecraft:farmland[\"moisturized_amount\"=7] replace minecraft:dirt",
+					"fill ~3 ~1 ~3 ~-3 ~-2 ~-3 minecraft:farmland[\"moisturized_amount\"=7] replace minecraft:grass_block",
+					"fill ~3 ~1 ~3 ~-3 ~-2 ~-3 minecraft:farmland[\"moisturized_amount\"=7] replace minecraft:grass_path"
+				],
+				"take_durability": true,
+				"trigger_cooldown": true,
+				"can_be_disabled": false
+			},
+			"minecraft:use_modifiers": {
+				"use_duration": 0,
+				"movement_modifier": 1
+			},
+			"minecraft:cooldown": {
+				"category": "poke_pfe:nebula_hoe",
+				"duration": 0.01
+			}
+		}
+	}
+}

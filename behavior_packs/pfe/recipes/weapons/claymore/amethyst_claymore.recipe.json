@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke_pfe:amethyst_claymore"
+			"identifier": "poke_pfe:creedite_claymore"
 		},
 		"group": "claymore",
 		"tags": [
@@ -48,7 +48,7 @@
 			}
 		},
 		"result": {
-			"item": "poke_pfe:amethyst_claymore"
+			"item": "poke_pfe:creedite_claymore"
 		}
 	}
 }

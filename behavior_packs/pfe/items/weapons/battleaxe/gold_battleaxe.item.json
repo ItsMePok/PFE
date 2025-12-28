@@ -2,14 +2,14 @@
   "format_version": "1.21.130",
   "minecraft:item": {
     "description": {
-      "identifier": "poke_pfe:gold_battleaxe",
+      "identifier": "poke_pfe:golden_battleaxe",
       "menu_category": {
         "category": "equipment"
       }
     },
     "components": {
       "minecraft:display_name": {
-        "value": "%poke_pfe.gold_battleaxe\n%poke_pfe.tag"
+        "value": "%poke_pfe.golden_battleaxe\n%poke_pfe.tag"
       },
       "poke_pfe:upgradeable": {
         "dynamic_property": "poke_pfe:upgrades",
@@ -19,7 +19,7 @@
         ],
         "version": 1
       },
-      "poke_pfe:icon_path": "textures/poke/pfe/gold_battleaxe",
+      "poke_pfe:icon_path": "textures/poke/pfe/golden_battleaxe",
       "minecraft:digger": {
         "destroy_speeds": [
           {

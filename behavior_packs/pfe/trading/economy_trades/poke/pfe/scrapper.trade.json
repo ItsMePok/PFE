@@ -29,7 +29,7 @@
 							],
 							"gives": [
 								{
-									"item": "poke_pfe:gold_token"
+									"item": "poke_pfe:golden_token"
 								}
 							]
 						},
@@ -42,7 +42,7 @@
 							],
 							"gives": [
 								{
-									"item": "poke_pfe:gold_token"
+									"item": "poke_pfe:golden_token"
 								}
 							]
 						},
@@ -55,7 +55,7 @@
 							],
 							"gives": [
 								{
-									"item": "poke_pfe:gold_token",
+									"item": "poke_pfe:golden_token",
 									"quantity": 2
 								}
 							]
@@ -69,7 +69,7 @@
 							],
 							"gives": [
 								{
-									"item": "poke_pfe:gold_token"
+									"item": "poke_pfe:golden_token"
 								}
 							]
 						},
@@ -105,7 +105,7 @@
 							"max_uses": 2147483647,
 							"wants": [
 								{
-									"item": "poke_pfe:gold_token",
+									"item": "poke_pfe:golden_token",
 									"quantity": 1
 								}
 							],

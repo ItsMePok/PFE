@@ -195,9 +195,9 @@ function RegisterItemComponents(data: StartupEvent) {
         case 'poke_pfe:astral_sword': { data.attackingEntity.addEffect('strength', 100, { amplifier: 2 }); return; }
         case 'poke_pfe:shade_sword': { data.hitEntity.addEffect('slowness', 40, { amplifier: 2 }); data.hitEntity.addEffect('wither', 60, { amplifier: 1 }); return; }
         case 'poke_pfe:radium_sword': { data.hitEntity.addEffect('slowness', 220, { amplifier: 3 }); data.hitEntity.addEffect('wither', 240, { amplifier: 4 }); return; }
-        case 'poke_pfe:amethyst_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 4 }); data.hitEntity.addEffect('blindness', 20); return; }
+        case 'creedite_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 4 }); data.hitEntity.addEffect('blindness', 20); return; }
         case 'poke_pfe:demonic_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 7 }); data.hitEntity.addEffect('wither', 80, { amplifier: 1 }); return; }
-        case 'poke_pfe:gold_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 2 }); data.attackingEntity.addEffect('haste', 600, { amplifier: 2 }); return; }
+        case 'poke_pfe:golden_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 2 }); data.attackingEntity.addEffect('haste', 600, { amplifier: 2 }); return; }
         case 'poke_pfe:emerald_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 2 }); data.attackingEntity.addEffect('village_hero', 2400, { amplifier: 1 }); return; }
         case 'poke_pfe:iron_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 2 }); return; }
         case 'poke_pfe:onyx_scythe': { data.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 200, { amplifier: 5 }); data.attackingEntity.addEffect('jump_boost', 100, { amplifier: 2 }); data.hitEntity.addEffect('weakness', 120, { amplifier: 2 }); return; }
