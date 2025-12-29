@@ -1,5 +1,5 @@
 ---
-description: 'Last updated to match: v1.3.0'
+description: 'Last updated to match: v1.3.01'
 ---
 
 # Home
@@ -14,7 +14,7 @@ This wiki is still a work in progress; some pages are unfinished.
 
 ### Experimental Toggles: <mark style="color:yellow;">None</mark>
 
-### Lowest Supported Minecraft Version: <mark style="color:yellow;">1.21.100</mark>
+### Lowest Supported Minecraft Version: <mark style="color:yellow;">1.21.10</mark>
 
 ***
 
@@ -64,13 +64,11 @@ I highly recommend avoiding those sites as they can contain malicious things
 
 ## Other Links:
 
-
-
 ### PFE Discord Server
 
 {% embed url="https://discord.gg/PbkBYcExmN" %}
 
-_you can also dm me on discord: itsmepok_
+_you can also  me on discord itsmepok_
 
 ***
 
@@ -92,4 +90,4 @@ _you can also dm me on discord: itsmepok_
 
 (since this wiki has used some assets from the game)
 
-**NOT AN OFFICIAL MINECRAFT \[PRODUCT/SERVICE/EVENT/etc.]. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT**
+**NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT**
