@@ -1,15 +1,15 @@
 {
-  "format_version": "1.21.100",
+  "format_version": "1.21.130",
   "minecraft:entity": {
     "description": {
-      "identifier": "poke:shade_ring_proj",
+      "identifier": "poke_pfe:shade_ring_proj",
       "is_spawnable": false,
       "is_summonable": true,
       "is_experimental": false,
       "runtime_identifier": "minecraft:ender_pearl"
     },
     "component_groups": {
-      "poke:despawn": {
+      "poke_pfe:despawn": {
         "minecraft:instant_despawn": {}
       }
     },
@@ -53,16 +53,16 @@
         "time": 30,
         "looping": true,
         "time_down_event": {
-          "event": "poke:despawn",
+          "event": "poke_pfe:despawn",
           "target": "self"
         }
       }
     },
     "events": {
-      "poke:despawn": {
+      "poke_pfe:despawn": {
         "add": {
           "component_groups": [
-            "poke:despawn"
+            "poke_pfe:despawn"
           ]
         }
       }

@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:capacity_core",
+			"identifier": "poke_pfe:capacity_core",
 			"menu_category": {
 				"category": "items"
 			}
@@ -15,7 +15,7 @@
 			"minecraft:rarity": "common",
 			"minecraft:tags": {
 				"tags": [
-					"poke:upgrade_core"
+					"poke_pfe:upgrade_core"
 				]
 			},
 			"minecraft:icon": "poke_pfe_capacity_core"

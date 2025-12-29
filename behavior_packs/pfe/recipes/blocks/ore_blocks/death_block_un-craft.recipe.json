@@ -2,14 +2,14 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:z_death_block_un-craft"
+			"identifier": "poke_pfe:z_death_block_un-craft"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:death_block"
+				"item": "poke_pfe:death_block"
 			}
 		],
 		"pattern": [
@@ -17,11 +17,11 @@
 		],
 		"key": {
 			"#": {
-				"item": "poke:death_block"
+				"item": "poke_pfe:death_block"
 			}
 		},
 		"result": {
-			"item": "poke:death_ingot",
+			"item": "poke_pfe:death_ingot",
 			"count": 9
 		},
 		"priority": 1

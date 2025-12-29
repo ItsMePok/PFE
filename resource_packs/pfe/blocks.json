@@ -151,742 +151,703 @@
   "poke_pfe:listener_antennas": {
     "sound": "metal"
   },
-  "poke:magic_8_ball": {
+  "poke_pfe:magic_8_ball": {
     "sound": "calcite"
   },
-  "poke:cobalt_golem_block": {
+  "poke_pfe:charged_cobalt_block": {
     "sound": "copper"
   },
   //Plants
-  "poke:turnip_crop": {
-    "sound": "grass"
-  },
-  "poke:charred_poppy": {
+  "poke_pfe:charred_poppy": {
     "sound": "nether_sprouts"
   },
-  "poke:honey_tiles_slab": {
+  "poke_pfe:honey_tiles_slab": {
     "sound": "coral"
   },
-  "poke:honey_tiles": {
+  "poke_pfe:honey_tiles": {
     "sound": "coral"
   },
-  "poke:red_present": {
+  "poke_pfe:present": {
     "sound": "itemframe"
   },
-  "poke:empty_mug": {
+  "poke_pfe:empty_mug": {
     "sound": "candle"
   },
-  "poke:coffee_mug": {
+  "poke_pfe:coffee_mug": {
     "sound": "candle"
   },
-  "poke:listener_trophy": {
+  "poke_pfe:listener_trophy": {
     "sound": "metal"
   },
-  "poke:furnace_golem_trophy": {
+  "poke_pfe:furnace_golem_trophy": {
     "sound": "metal"
   },
-  "poke:golden_turnip_trophy": {
-    "sound": "metal"
-  },
-  "poke:lava_sponge": {
+  "poke_pfe:lava_sponge": {
     "sound": "sponge"
   },
-  "poke:molten_lava_sponge": {
+  "poke_pfe:molten_lava_sponge": {
     "sound": "wet_sponge"
   },
-  "poke:gilded_melon": {
+  "poke_pfe:gilded_melon": {
     "sound": "wood"
   },
-  "poke:gilded_carved_melon": {
+  "poke_pfe:gilded_carved_melon": {
     "sound": "wood"
   },
-  "poke:carved_carved_melon": {
+  "poke_pfe:carved_carved_melon": {
     "sound": "wood"
   },
-  "poke:carved_melon": {
+  "poke_pfe:carved_melon": {
     "sound": "wood"
   },
-  "poke:charred_melon": {
+  "poke_pfe:charred_melon": {
     "sound": "roots"
   },
   //Crates
-  "poke:sugarcane_crate": {
+  "poke_pfe:sugarcane_crate": {
     "sound": "wood"
   },
-  "poke:empty_crate": {
+  "poke_pfe:empty_crate": {
     "sound": "wood"
   },
-  "poke:apple_crate": {
+  "poke_pfe:apple_crate": {
     "sound": "wood"
   },
-  "poke:melon_crate": {
+  "poke_pfe:melon_crate": {
     "sound": "wood"
   },
-  "poke:glow_berry_crate": {
+  "poke_pfe:glow_berry_crate": {
     "sound": "wood"
   },
-  "poke:sweet_berry_crate": {
+  "poke_pfe:sweet_berry_crate": {
     "sound": "wood"
   },
-  "poke:nether_wart_crate": {
+  "poke_pfe:nether_wart_crate": {
     "sound": "wood"
   },
-  "poke:chorus_fruit_crate": {
+  "poke_pfe:chorus_fruit_crate": {
     "sound": "wood"
   },
-  "poke:brown_mushroom_crate": {
+  "poke_pfe:brown_mushroom_crate": {
     "sound": "wood"
   },
-  "poke:red_mushroom_crate": {
+  "poke_pfe:red_mushroom_crate": {
     "sound": "wood"
   },
-  "poke:carrot_crate": {
+  "poke_pfe:carrot_crate": {
     "sound": "wood"
   },
-  "poke:potato_crate": {
+  "poke_pfe:potato_crate": {
     "sound": "wood"
   },
-  "poke:beetroot_crate": {
+  "poke_pfe:beetroot_crate": {
     "sound": "wood"
   },
-  "poke:pumpkin_crate": {
+  "poke_pfe:pumpkin_crate": {
     "sound": "wood"
   },
-  "poke:rotten_flesh_crate": {
+  "poke_pfe:rotten_flesh_crate": {
     "sound": "wood"
   },
-  "poke:flint_crate": {
+  "poke_pfe:flint_crate": {
     "sound": "wood"
   },
   //Ore
-  "poke:onyx": {
+  "poke_pfe:deepslate_onyx_ore": {
     "sound": "deepslate"
   }, //Deepslate Onyx ore
-  "poke:deepslate_godly_ore": {
+  "poke_pfe:deepslate_godly_ore": {
     "sound": "deepslate"
   },
-  "poke:deepslate_shade_ore": {
+  "poke_pfe:deepslate_shade_ore": {
     "sound": "deepslate"
   },
-  "poke:deepslate_holy_ore": {
+  "poke_pfe:deepslate_holy_ore": {
     "sound": "deepslate"
   },
-  "poke:nether_hellish_ore": {
+  "poke_pfe:nether_hellish_ore": {
     "sound": "netherrack"
   },
-  "poke:nether_demonic_ore": {
+  "poke_pfe:nether_demonic_ore": {
     "sound": "netherrack"
   },
-  "poke:nether_shade_ore": {
+  "poke_pfe:nether_shade_ore": {
     "sound": "netherrack"
   },
-  "poke:nether_onyx_ore": {
+  "poke_pfe:nether_onyx_ore": {
     "sound": "netherrack"
   },
-  "poke:hellite_ore": {
+  "poke_pfe:deepslate_hellish_ore": {
     "sound": "deepslate"
   }, //Deepslate Hellish Ore
-  "poke:demonic_ore": {
+  "poke_pfe:demonic_ore": {
     "sound": "deepslate"
   },
-  "poke:void_ore": {
+  "poke_pfe:deepslate_void_ore": {
     "sound": "deepslate"
   },
-  "poke:deepslate_cobalt_ore": {
+  "poke_pfe:deepslate_cobalt_ore": {
     "sound": "deepslate"
   },
   //Ore Blocks
-  "poke:astral_block": {
+  "poke_pfe:astral_block": {
     "sound": "metal"
   },
-  "poke:radium_block": {
+  "poke_pfe:radium_block": {
     "sound": "metal"
   },
-  "poke:medic_block": {
+  "poke_pfe:medic_block": {
     "sound": "metal"
   },
-  "poke:death_block": {
+  "poke_pfe:death_block": {
     "sound": "metal"
   },
-  "poke:holy_block": {
+  "poke_pfe:holy_block": {
     "sound": "metal"
   },
-  "poke:nebula_block": {
+  "poke_pfe:nebula_block": {
     "sound": "metal"
   },
-  "poke:hellish_block": {
+  "poke_pfe:hellish_block": {
     "sound": "metal"
   },
-  "poke:onyx_block": {
+  "poke_pfe:onyx_block": {
     "sound": "metal"
   },
-  "poke:void_block": {
+  "poke_pfe:void_block": {
     "sound": "metal"
   },
-  "poke:shade_block": {
+  "poke_pfe:shade_block": {
     "sound": "metal"
   },
-  "poke:godly_block": {
+  "poke_pfe:godly_block": {
     "sound": "metal"
   },
-  "poke:galaxy_block": {
+  "poke_pfe:galaxy_block": {
     "sound": "metal"
   },
-  "poke:demonic_block": {
+  "poke_pfe:demonic_block": {
     "sound": "metal"
   },
-  "poke:ember_block": {
+  "poke_pfe:molten_block": {
     "sound": "metal"
   },
-  "poke:scrappy_block": {
+  "poke_pfe:scrappy_block": {
     "sound": "metal"
   },
-  "poke:cobalt_block": {
+  "poke_pfe:cobalt_block": {
     "sound": "copper"
   },
   //Raw Blocks
-  "poke:raw_demonic_slab": {
+  "poke_pfe:raw_demonic_slab": {
     "sound": "ancient_debris"
   },
-  "poke:raw_galaxy_slab": {
+  "poke_pfe:raw_galaxy_slab": {
     "sound": "ancient_debris"
   },
-  "poke:raw_godly_slab": {
+  "poke_pfe:raw_godly_slab": {
     "sound": "ancient_debris"
   },
-  "poke:raw_hellish_slab": {
+  "poke_pfe:raw_hellish_slab": {
     "sound": "ancient_debris"
   },
-  "poke:raw_holy_slab": {
+  "poke_pfe:raw_holy_slab": {
     "sound": "ancient_debris"
   },
-  "poke:raw_onyx_slab": {
+  "poke_pfe:raw_onyx_slab": {
     "sound": "ancient_debris"
   },
-  "poke:raw_nebula_slab": {
+  "poke_pfe:raw_nebula_slab": {
     "sound": "ancient_debris"
   },
-  "poke:raw_shade_slab": {
+  "poke_pfe:raw_shade_slab": {
     "sound": "ancient_debris"
   },
-  "poke:raw_void_slab": {
+  "poke_pfe:raw_void_slab": {
     "sound": "ancient_debris"
   },
-  "poke:raw_cobalt_slab": {
+  "poke_pfe:raw_cobalt_slab": {
     "sound": "ancient_debris"
   },
-  "poke:raw_astral_slab": {
+  "poke_pfe:raw_astral_slab": {
     "sound": "ancient_debris"
   },
-  "poke:raw_demonic_block": {
+  "poke_pfe:raw_demonic_block": {
     "sound": "ancient_debris"
   },
-  "poke:raw_galaxy_block": {
+  "poke_pfe:raw_galaxy_block": {
     "sound": "ancient_debris"
   },
-  "poke:raw_godly_block": {
+  "poke_pfe:raw_godly_block": {
     "sound": "ancient_debris"
   },
-  "poke:raw_hellish_block": {
+  "poke_pfe:raw_hellish_block": {
     "sound": "ancient_debris"
   },
-  "poke:raw_holy_block": {
+  "poke_pfe:raw_holy_block": {
     "sound": "ancient_debris"
   },
-  "poke:raw_onyx_block": {
+  "poke_pfe:raw_onyx_block": {
     "sound": "ancient_debris"
   },
-  "poke:raw_nebula_block": {
+  "poke_pfe:raw_nebula_block": {
     "sound": "ancient_debris"
   },
-  "poke:raw_shade_block": {
+  "poke_pfe:raw_shade_block": {
     "sound": "ancient_debris"
   },
-  "poke:raw_void_block": {
+  "poke_pfe:raw_void_block": {
     "sound": "ancient_debris"
   },
-  "poke:raw_cobalt_block": {
+  "poke_pfe:raw_cobalt_block": {
     "sound": "ancient_debris"
   },
-  "poke:raw_astral_block": {
+  "poke_pfe:raw_astral_block": {
     "sound": "ancient_debris"
   },
   //Bulbs (color change breaks if textures is moved into BP)
-  "poke:limestone_bulb": {
+  "poke_pfe:limestone_bulb": {
     "sound": "stone",
     "textures": "poke_pfe_limestone_bulb"
   },
-  "poke:void_bulb": {
+  "poke_pfe:void_bulb": {
     "sound": "copper",
     "textures": "poke_pfe_void_bulb"
   },
-  "poke:death_bulb": {
+  "poke_pfe:death_bulb": {
     "sound": "copper",
     "textures": "poke_pfe_death_bulb"
   },
-  "poke:demonic_bulb": {
+  "poke_pfe:demonic_bulb": {
     "sound": "copper",
     "textures": "poke_pfe_demonic_bulb"
   },
-  "poke:galaxy_bulb": {
+  "poke_pfe:galaxy_bulb": {
     "sound": "copper",
     "textures": "poke_pfe_galaxy_bulb"
   },
-  "poke:godly_bulb": {
+  "poke_pfe:godly_bulb": {
     "sound": "copper",
     "textures": "poke_pfe_godly_bulb"
   },
-  "poke:hellish_bulb": {
+  "poke_pfe:hellish_bulb": {
     "sound": "copper",
     "textures": "poke_pfe_hellish_bulb"
   },
-  "poke:holy_bulb": {
+  "poke_pfe:holy_bulb": {
     "sound": "copper",
     "textures": "poke_pfe_holy_bulb"
   },
-  "poke:medic_bulb": {
+  "poke_pfe:medic_bulb": {
     "sound": "copper",
     "textures": "poke_pfe_medic_bulb"
   },
-  "poke:molten_bulb": {
+  "poke_pfe:molten_bulb": {
     "sound": "copper",
     "textures": "poke_pfe_molten_bulb"
   },
-  "poke:nebula_bulb": {
+  "poke_pfe:nebula_bulb": {
     "sound": "copper",
     "textures": "poke_pfe_nebula_bulb"
   },
-  "poke:onyx_bulb": {
+  "poke_pfe:onyx_bulb": {
     "sound": "copper",
     "textures": "poke_pfe_onyx_bulb"
   },
-  "poke:radium_bulb": {
+  "poke_pfe:radium_bulb": {
     "sound": "copper",
     "textures": "poke_pfe_radium_bulb"
   },
-  "poke:shade_bulb": {
+  "poke_pfe:shade_bulb": {
     "sound": "copper",
     "textures": "poke_pfe_shade_bulb"
   },
-  "poke:astral_bulb": {
+  "poke_pfe:astral_bulb": {
     "sound": "copper",
     "textures": "poke_pfe_astral_bulb"
   },
-  "poke:cobalt_bulb": {
+  "poke_pfe:cobalt_bulb": {
     "sound": "copper",
     "textures": "poke_pfe_cobalt_bulb"
   },
-  "poke:beeulb": {
+  "poke_pfe:beeulb": {
     "sound": "coral",
     "textures": "poke_pfe_beeulb"
   },
-  "poke:cobalt_edged_glass": {
+  "poke_pfe:cobalt_glass": {
     "sound": "glass"
   },
-  "poke:chiseled_cobalt": {
+  "poke_pfe:chiseled_cobalt": {
     "sound": "copper"
   },
-  "poke:chiseled_cobalt_slab": {
+  "poke_pfe:chiseled_cobalt_slab": {
     "sound": "copper"
   },
-  "poke:cut_void": {
+  "poke_pfe:cut_void": {
     "sound": "copper"
   },
-  "poke:cut_void_slab": {
+  "poke_pfe:cut_void_slab": {
     "sound": "copper"
   },
-  "poke:cut_cobalt": {
+  "poke_pfe:cut_cobalt": {
     "sound": "copper"
   },
-  "poke:cut_cobalt_slab": {
+  "poke_pfe:cut_cobalt_slab": {
     "sound": "copper"
   },
-  "poke:cut_astral": {
+  "poke_pfe:cut_astral": {
     "sound": "copper"
   },
-  "poke:cut_astral_slab": {
+  "poke_pfe:cut_astral_slab": {
     "sound": "copper"
   },
-  "poke:cut_death_slab": {
+  "poke_pfe:cut_death_slab": {
     "sound": "copper"
   },
-  "poke:cut_demonic_slab": {
+  "poke_pfe:cut_demonic_slab": {
     "sound": "copper"
   },
-  "poke:cut_galaxy_slab": {
+  "poke_pfe:cut_galaxy_slab": {
     "sound": "copper"
   },
-  "poke:cut_godly_slab": {
+  "poke_pfe:cut_godly_slab": {
     "sound": "copper"
   },
-  "poke:cut_hellish_slab": {
+  "poke_pfe:cut_hellish_slab": {
     "sound": "copper"
   },
-  "poke:cut_holy_slab": {
+  "poke_pfe:cut_holy_slab": {
     "sound": "copper"
   },
-  "poke:cut_medic_slab": {
+  "poke_pfe:cut_medic_slab": {
     "sound": "copper"
   },
-  "poke:cut_molten_slab": {
+  "poke_pfe:cut_molten_slab": {
     "sound": "copper"
   },
-  "poke:cut_nebula_slab": {
+  "poke_pfe:cut_nebula_slab": {
     "sound": "copper"
   },
-  "poke:cut_onyx_slab": {
+  "poke_pfe:cut_onyx_slab": {
     "sound": "copper"
   },
-  "poke:cut_radium_slab": {
+  "poke_pfe:cut_radium_slab": {
     "sound": "copper"
   },
-  "poke:cut_shade_slab": {
+  "poke_pfe:cut_shade_slab": {
     "sound": "copper"
   },
-  "poke:cut_death": {
+  "poke_pfe:cut_death": {
     "sound": "copper"
   },
-  "poke:cut_demonic": {
+  "poke_pfe:cut_demonic": {
     "sound": "copper"
   },
-  "poke:cut_galaxy": {
+  "poke_pfe:cut_galaxy": {
     "sound": "copper"
   },
-  "poke:cut_godly": {
+  "poke_pfe:cut_godly": {
     "sound": "copper"
   },
-  "poke:cut_hellish": {
+  "poke_pfe:cut_hellish": {
     "sound": "copper"
   },
-  "poke:cut_holy": {
+  "poke_pfe:cut_holy": {
     "sound": "copper"
   },
-  "poke:cut_medic": {
+  "poke_pfe:cut_medic": {
     "sound": "copper"
   },
-  "poke:cut_molten": {
+  "poke_pfe:cut_molten": {
     "sound": "copper"
   },
-  "poke:cut_nebula": {
+  "poke_pfe:cut_nebula": {
     "sound": "copper"
   },
-  "poke:cut_onyx": {
+  "poke_pfe:cut_onyx": {
     "sound": "copper"
   },
-  "poke:cut_radium": {
+  "poke_pfe:cut_radium": {
     "sound": "copper"
   },
-  "poke:cut_shade": {
+  "poke_pfe:cut_shade": {
     "sound": "copper"
   },
-  "poke:honey_tile_wall": {
+  "poke_pfe:honey_tile_wall": {
     "sound": "coral"
   },
-  "poke:honey_brick_wall": {
+  "poke_pfe:honey_brick_wall": {
     "sound": "coral"
   },
-  "poke:cobalt_brick_wall": {
+  "poke_pfe:cobalt_brick_wall": {
     "sound": "deepslate_bricks"
   },
-  "poke:astral_brick_wall": {
+  "poke_pfe:astral_brick_wall": {
     "sound": "deepslate_bricks"
   },
-  "poke:death_brick_wall": {
+  "poke_pfe:death_brick_wall": {
     "sound": "deepslate_bricks"
   },
-  "poke:demonic_brick_wall": {
+  "poke_pfe:demonic_brick_wall": {
     "sound": "deepslate_bricks"
   },
-  "poke:galaxy_brick_wall": {
+  "poke_pfe:galaxy_brick_wall": {
     "sound": "deepslate_bricks"
   },
-  "poke:godly_brick_wall": {
+  "poke_pfe:godly_brick_wall": {
     "sound": "deepslate_bricks"
   },
-  "poke:hellish_brick_wall": {
+  "poke_pfe:hellish_brick_wall": {
     "sound": "deepslate_bricks"
   },
-  "poke:holy_brick_wall": {
+  "poke_pfe:holy_brick_wall": {
     "sound": "deepslate_bricks"
   },
-  "poke:medic_brick_wall": {
+  "poke_pfe:medic_brick_wall": {
     "sound": "deepslate_bricks"
   },
-  "poke:molten_brick_wall": {
+  "poke_pfe:molten_brick_wall": {
     "sound": "deepslate_bricks"
   },
-  "poke:nebula_brick_wall": {
+  "poke_pfe:nebula_brick_wall": {
     "sound": "deepslate_bricks"
   },
-  "poke:onyx_brick_wall": {
+  "poke_pfe:onyx_brick_wall": {
     "sound": "deepslate_bricks"
   },
-  "poke:radium_brick_wall": {
+  "poke_pfe:radium_brick_wall": {
     "sound": "deepslate_bricks"
   },
-  "poke:shade_brick_wall": {
+  "poke_pfe:shade_brick_wall": {
     "sound": "deepslate_bricks"
   },
-  "poke:void_brick_wall": {
+  "poke_pfe:void_brick_wall": {
     "sound": "deepslate_bricks"
   },
-  "poke:honey_bricks_slab": {
+  "poke_pfe:honey_bricks_slab": {
     "sound": "coral"
   },
-  "poke:honey_bricks": {
+  "poke_pfe:honey_bricks": {
     "sound": "coral"
   },
-  "poke:chiseled_honey_bricks": {
+  "poke_pfe:chiseled_honey_bricks": {
     "sound": "coral"
   },
-  "poke:astral_bricks_slab": {
+  "poke_pfe:astral_bricks_slab": {
     "sound": "deepslate_bricks"
   },
-  "poke:astral_bricks": {
+  "poke_pfe:astral_bricks": {
     "sound": "deepslate_bricks"
   },
-  "poke:banished_bricks": {
+  "poke_pfe:banished_bricks": {
     "sound": "deepslate_bricks"
   },
-  "poke:cracked_honey_bricks": {
+  "poke_pfe:cracked_honey_bricks": {
     "sound": "coral"
   },
-  "poke:cracked_holy_bricks": {
+  "poke_pfe:cracked_holy_bricks": {
     "sound": "deepslate_bricks"
   },
-  "poke:cracked_shade_bricks": {
+  "poke_pfe:cracked_shade_bricks": {
     "sound": "deepslate_bricks"
   },
-  "poke:cracked_astral_bricks": {
+  "poke_pfe:cracked_astral_bricks": {
     "sound": "deepslate_bricks"
   },
-  "poke:cracked_demonic_bricks": {
+  "poke_pfe:cracked_demonic_bricks": {
     "sound": "deepslate_bricks"
   },
-  "poke:cracked_onyx_bricks": {
+  "poke_pfe:cracked_onyx_bricks": {
     "sound": "deepslate_bricks"
   },
-  "poke:cracked_godly_bricks": {
+  "poke_pfe:cracked_godly_bricks": {
     "sound": "deepslate_bricks"
   },
-  "poke:cracked_banished_bricks": {
+  "poke_pfe:cracked_banished_bricks": {
     "sound": "deepslate_bricks"
   },
-  "poke:cracked_nebula_bricks": {
+  "poke_pfe:cracked_nebula_bricks": {
     "sound": "deepslate_bricks"
   },
-  "poke:cracked_medic_bricks": {
+  "poke_pfe:cracked_medic_bricks": {
     "sound": "deepslate_bricks"
   },
-  "poke:cracked_radium_bricks": {
+  "poke_pfe:cracked_radium_bricks": {
     "sound": "deepslate_bricks"
   },
-  "poke:cracked_molten_bricks": {
+  "poke_pfe:cracked_molten_bricks": {
     "sound": "deepslate_bricks"
   },
-  "poke:cracked_void_bricks": {
+  "poke_pfe:cracked_void_bricks": {
     "sound": "deepslate_bricks"
   },
-  "poke:cracked_galaxy_bricks": {
+  "poke_pfe:cracked_galaxy_bricks": {
     "sound": "deepslate_bricks"
   },
-  "poke:cracked_hellish_bricks": {
+  "poke_pfe:cracked_hellish_bricks": {
     "sound": "deepslate_bricks"
   },
-  "poke:cracked_cobalt_bricks": {
+  "poke_pfe:cracked_cobalt_bricks": {
     "sound": "deepslate_bricks"
   },
-  "poke:cobalt_bricks_slab": {
+  "poke_pfe:cobalt_bricks_slab": {
     "sound": "deepslate_bricks"
   },
-  "poke:cracked_cobalt_bricks_slab": {
+  "poke_pfe:cracked_cobalt_bricks_slab": {
     "sound": "deepslate_bricks"
   },
-  "poke:cobalt_bricks": {
+  "poke_pfe:cobalt_bricks": {
     "sound": "deepslate_bricks"
   },
-  "poke:void_bricks_slab": {
+  "poke_pfe:void_bricks_slab": {
     "sound": "deepslate_bricks"
   },
-  "poke:galaxy_bricks": {
+  "poke_pfe:galaxy_bricks": {
     "sound": "deepslate_bricks"
   },
-  "poke:radium_bricks": {
+  "poke_pfe:radium_bricks": {
     "sound": "deepslate_bricks"
   },
-  "poke:radium_bricks_slab": {
+  "poke_pfe:radium_bricks_slab": {
     "sound": "deepslate_bricks"
   },
-  "poke:onyx_bricks_slab": {
+  "poke_pfe:onyx_bricks_slab": {
     "sound": "deepslate_bricks"
   },
-  "poke:death_bricks_slab": {
+  "poke_pfe:death_bricks_slab": {
     "sound": "deepslate_bricks"
   },
-  "poke:galaxy_bricks_slab": {
+  "poke_pfe:galaxy_bricks_slab": {
     "sound": "deepslate_bricks"
   },
-  "poke:medic_bricks_slab": {
+  "poke_pfe:medic_bricks_slab": {
     "sound": "deepslate_bricks"
   },
-  "poke:medic_bricks": {
+  "poke_pfe:medic_bricks": {
     "sound": "deepslate_bricks"
   },
-  "poke:nebula_bricks_slab": {
+  "poke_pfe:nebula_bricks_slab": {
     "sound": "deepslate_bricks"
   },
-  "poke:nebula_bricks": {
+  "poke_pfe:nebula_bricks": {
     "sound": "deepslate_bricks"
   },
-  "poke:molten_bricks_slab": {
+  "poke_pfe:molten_bricks_slab": {
     "sound": "deepslate_bricks"
   },
-  "poke:molten_bricks": {
+  "poke_pfe:molten_bricks": {
     "sound": "deepslate_bricks"
   },
-  "poke:shade_bricks_slab": {
+  "poke_pfe:shade_bricks_slab": {
     "sound": "deepslate_bricks"
   },
-  "poke:shade_bricks": {
+  "poke_pfe:shade_bricks": {
     "sound": "deepslate_bricks"
   },
-  "poke:holy_bricks_slab": {
+  "poke_pfe:holy_bricks_slab": {
     "sound": "deepslate_bricks"
   },
-  "poke:holy_bricks": {
+  "poke_pfe:holy_bricks": {
     "sound": "deepslate_bricks"
   },
-  "poke:demonic_bricks_slab": {
+  "poke_pfe:demonic_bricks_slab": {
     "sound": "deepslate_bricks"
   },
-  "poke:demonic_bricks": {
+  "poke_pfe:demonic_bricks": {
     "sound": "deepslate_bricks"
   },
-  "poke:hellish_bricks_slab": {
+  "poke_pfe:hellish_bricks_slab": {
     "sound": "deepslate_bricks"
   },
-  "poke:hellish_bricks": {
+  "poke_pfe:hellish_bricks": {
     "sound": "deepslate_bricks"
   },
-  "poke:death_bricks": {
+  "poke_pfe:death_bricks": {
     "sound": "deepslate_bricks"
   },
-  "poke:onyx_bricks": {
+  "poke_pfe:onyx_bricks": {
     "sound": "deepslate_bricks"
   },
-  "poke:void_bricks": {
+  "poke_pfe:void_bricks": {
     "sound": "deepslate_bricks"
   },
-  "poke:godly_bricks_slab": {
+  "poke_pfe:godly_bricks_slab": {
     "sound": "deepslate_bricks"
   },
-  "poke:godly_bricks": {
+  "poke_pfe:godly_bricks": {
     "sound": "deepslate_bricks"
   },
-  "poke:death_trapdoor": {
+  "poke_pfe:death_trapdoor": {
     "sound": "copper"
   },
-  "poke:cobalt_trapdoor": {
+  "poke_pfe:cobalt_trapdoor": {
     "sound": "copper"
   },
-  "poke:astral_trapdoor": {
+  "poke_pfe:astral_trapdoor": {
     "sound": "copper"
   },
-  "poke:demonic_trapdoor": {
+  "poke_pfe:demonic_trapdoor": {
     "sound": "copper"
   },
-  "poke:galaxy_trapdoor": {
+  "poke_pfe:galaxy_trapdoor": {
     "sound": "copper"
   },
-  "poke:godly_trapdoor": {
+  "poke_pfe:godly_trapdoor": {
     "sound": "copper"
   },
-  "poke:hellish_trapdoor": {
+  "poke_pfe:hellish_trapdoor": {
     "sound": "copper"
   },
   "holy_trapdoor": {
     "sound": "copper"
   },
-  "poke:medic_trapdoor": {
+  "poke_pfe:medic_trapdoor": {
     "sound": "copper"
   },
-  "poke:void_trapdoor": {
+  "poke_pfe:void_trapdoor": {
     "sound": "copper"
   },
-  "poke:molten_trapdoor": {
+  "poke_pfe:molten_trapdoor": {
     "sound": "copper"
   },
-  "poke:nebula_trapdoor": {
+  "poke_pfe:nebula_trapdoor": {
     "sound": "copper"
   },
-  "poke:onyx_trapdoor": {
+  "poke_pfe:onyx_trapdoor": {
     "sound": "copper"
   },
-  "poke:radium_trapdoor": {
+  "poke_pfe:radium_trapdoor": {
     "sound": "copper"
   },
-  "poke:shade_trapdoor": {
+  "poke_pfe:shade_trapdoor": {
     "sound": "copper"
   },
-  "poke:honey_trapdoor": {
+  "poke_pfe:honey_trapdoor": {
     "sound": "coral"
   },
   //Automation
   "poke_pfe:fisher": {
     "sound": "wood"
   },
-  "poke:cobblestone_gen": {
+  "poke_pfe:cobblestone_gen": {
     "sound": "wood"
   },
-  "poke:barometer": {
+  "poke_pfe:cobbler": {
+    "sound": "wood"
+  },
+  "poke_pfe:barometer": {
     "sound": "wood"
   },
   "poke_pfe:dirter": {
     "sound": "wood"
   },
-  "poke:dirter_north": {
-    "sound": "wood"
-  },
-  "poke:dirter_south": {
-    "sound": "wood"
-  },
-  "poke:dirter_east": {
-    "sound": "wood"
-  },
-  "poke:dirter_west": {
-    "sound": "wood"
-  },
-  "poke:dirter_up": {
-    "sound": "wood"
-  },
-  "poke:dirter_down": {
-    "sound": "wood"
-  },
   "poke_pfe:duster": {
     "sound": "wood"
   },
-  "poke:duster_north": {
+  "poke_pfe:block_breaker": {
     "sound": "wood"
   },
-  "poke:duster_south": {
-    "sound": "wood"
-  },
-  "poke:duster_east": {
-    "sound": "wood"
-  },
-  "poke:duster_west": {
-    "sound": "wood"
-  },
-  "poke:duster_up": {
-    "sound": "wood"
-  },
-  "poke:duster_down": {
-    "sound": "wood"
-  },
-  "poke:block_breaker": {
-    "sound": "wood"
-  },
-  "poke:dye_unmixer": {
+  "poke_pfe:dye_unmixer": {
     "sound": "metal"
   }
 }

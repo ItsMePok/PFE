@@ -12,31 +12,31 @@
           "type": "item",
           "count": 1,
           "weight": 3,
-          "name": "poke:raw_sporefish"
+          "name": "poke_pfe:raw_sporefish"
         },
         {
           "type": "item",
           "count": 1,
           "weight": 3,
-          "name": "poke:raw_piranha"
+          "name": "poke_pfe:raw_piranha"
         },
         {
           "type": "item",
           "count": 1,
           "weight": 1,
-          "name": "poke:copper_token"
+          "name": "poke_pfe:copper_token"
         },
         {
           "type": "item",
           "count": 1,
           "weight": 1,
-          "name": "poke:empty_vial"
+          "name": "poke_pfe:empty_vial"
         },
         {
           "type": "item",
           "count": 1,
           "weight": 1,
-          "name": "poke:empty_crate"
+          "name": "poke_pfe:empty_crate"
         }
       ]
     }

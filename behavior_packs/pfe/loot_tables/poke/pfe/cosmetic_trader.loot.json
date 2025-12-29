@@ -5,7 +5,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "poke:spawn_cosmetic_trader",
+					"name": "poke_pfe:spawn_cosmetic_trader",
 					"weight": 999,
 					"functions": [
 						{
@@ -15,9 +15,9 @@
 					]
 				},
 				{
-					"type":"item",
-					"name":"poke:cosmetic_cosmetic",
-					"weight":1
+					"type": "item",
+					"name": "poke_pfe:cosmetic_cosmetic",
+					"weight": 1
 				}
 			]
 		}

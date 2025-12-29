@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:amethyst_scythe"
+			"identifier": "poke_pfe:creedite_scythe"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,7 +14,7 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:netherite_scythe"
+				"item": "poke_pfe:netherite_scythe"
 			},
 			{
 				"item": "minecraft:amethyst_shard"
@@ -31,11 +31,11 @@
 				"item": "amethyst_shard"
 			},
 			"#": {
-				"item": "poke:netherite_scythe"
+				"item": "poke_pfe:netherite_scythe"
 			}
 		},
 		"result": {
-			"item": "poke:amethyst_scythe"
+			"item": "poke_pfe:creedite_scythe"
 		}
 	}
 }

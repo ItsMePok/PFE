@@ -1,33 +1,62 @@
 {
-	"format_version":"1.20.10",
-	"minecraft:recipe_shaped":{
-		"description":{
-			"identifier":"poke:cobblestone_gen"
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke_pfe:cobblestone_gen"
 		},
-		"tags":["crafting_table"],
-		"pattern":[
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
 			"XHX",
 			"WRL",
 			"XDX"
 		],
-		"unlock":[
-			{"item":"cobblestone"},
-			{"item":"hopper"},
-			{"item":"lava_bucket"},
-			{"item":"iron_pickaxe"},
-			{"item":"water_bucket"}
+		"unlock": [
+			{
+				"item": "cobblestone"
+			},
+			{
+				"item": "hopper"
+			},
+			{
+				"item": "lava_bucket"
+			},
+			{
+				"item": "iron_pickaxe"
+			},
+			{
+				"item": "water_bucket"
+			}
 		],
-		"key":{
-			"X":{"item":"cobblestone"},
-			"H":{"item":"poke:wire"},
-			"L":{"item":"lava_bucket"},
-			"D":{"item":"minecraft:dispenser"},
-			"W":{"item":"water_bucket"},
-			"R":{"item":"minecraft:redstone"}
+		"key": {
+			"X": {
+				"item": "cobblestone"
+			},
+			"H": {
+				"item": "poke_pfe:wire"
+			},
+			"L": {
+				"item": "lava_bucket"
+			},
+			"D": {
+				"item": "minecraft:dispenser"
+			},
+			"W": {
+				"item": "water_bucket"
+			},
+			"R": {
+				"item": "minecraft:redstone"
+			}
 		},
-		"result":[
-			{"item":"poke:cobblestone_gen"},
-			{"item":"bucket","count":2}
+		"result": [
+			{
+				"item": "poke_pfe:cobblestone_gen"
+			},
+			{
+				"item": "bucket",
+				"count": 2
+			}
 		]
 	}
 }

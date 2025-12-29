@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:spawn_quest_trader"
+			"identifier": "poke_pfe:spawn_quest_trader"
 		},
 		"tags": [
 			"crafting_table"
@@ -17,7 +17,7 @@
 				"tag": "minecraft:egg"
 			},
 			{
-				"item": "poke:copper_token"
+				"item": "poke_pfe:copper_token"
 			},
 			{
 				"item": "paper"
@@ -32,7 +32,7 @@
 			}
 		},
 		"result": {
-			"item": "poke:spawn_quest_trader"
+			"item": "poke_pfe:spawn_quest_trader"
 		}
 	}
 }

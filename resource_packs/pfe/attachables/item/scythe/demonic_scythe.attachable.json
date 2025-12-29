@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "poke:demonic_slasher",
+			"identifier": "poke_pfe:demonic_scythe",
 			"render_controllers": [
 				"controller.render.item_default"
 			],
@@ -11,7 +11,7 @@
 				"enchanted": "entity_alphatest_glint"
 			},
 			"textures": {
-				"default": "textures/poke/pfe/demonic_slasher",
+				"default": "textures/poke/pfe/demonic_scythe",
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {

@@ -1,14 +1,14 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:cobalt_edged_glass",
+			"identifier": "poke_pfe:cobalt_glass",
 			"menu_category": {
 				"category": "construction"
 			}
 		},
 		"components": {
-			"minecraft:display_name": "%poke_pfe.cobalt_edged_glass\n%poke_pfe.tag",
+			"minecraft:display_name": "%poke_pfe.cobalt_glass\n%poke_pfe.tag",
 			"minecraft:collision_box": true,
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 0.4
@@ -21,7 +21,7 @@
 			},
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "poke_pfe_cobalt_edged_glass",
+					"texture": "poke_pfe_cobalt_glass",
 					"render_method": "blend"
 				}
 			},

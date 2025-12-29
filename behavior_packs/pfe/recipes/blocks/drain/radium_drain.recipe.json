@@ -2,16 +2,19 @@
   "format_version": "1.20.60",
   "minecraft:recipe_shaped": {
     "description": {
-      "identifier": "poke_pfe:radium_drain"
+      "identifier": "poke_pfe:radium_drain",
+      "menu_category": {
+        "category": "construction"
+      }
     },
     "unlock": [
       {
-        "item": "poke:radium_ingot"
+        "item": "poke_pfe:radium_ingot"
       }
     ],
     "key": {
       "X": {
-        "item": "poke:radium_ingot"
+        "item": "poke_pfe:radium_ingot"
       }
     },
     "result": {
@@ -23,7 +26,7 @@
       " X ",
       "X X"
     ],
-    "group": "poke:drain",
+    "group": "poke_pfe:drain",
     "tags": [
       "crafting_table"
     ]

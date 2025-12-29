@@ -2,28 +2,28 @@
     "format_version": "1.20.60",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "poke:limestone_tombstone"
+            "identifier": "poke_pfe:limestone_tombstone"
         },
         "tags": [
             "crafting_table"
         ],
         "unlock": [
             {
-                "item": "poke:limestone"
+                "item": "poke_pfe:limestone"
             },
             {
-                "item": "poke:cobbled_limestone"
+                "item": "poke_pfe:cobbled_limestone"
             },
             {
-                "item": "poke:smooth_limestone"
+                "item": "poke_pfe:smooth_limestone"
             }
         ],
         "key": {
             "S": {
-                "item": "poke:smooth_limestone"
+                "item": "poke_pfe:smooth_limestone"
             },
             "L": {
-                "item": "poke:limestone"
+                "item": "poke_pfe:limestone"
             }
         },
         "pattern": [
@@ -32,7 +32,7 @@
             "LLL"
         ],
         "result": {
-            "item": "poke:limestone_tombstone",
+            "item": "poke_pfe:limestone_tombstone",
             "count": 1
         }
     }

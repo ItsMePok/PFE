@@ -2,19 +2,19 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:cut_death_crafting_table"
+			"identifier": "poke_pfe:cut_death_crafting_table"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:death_ingot"
+				"item": "poke_pfe:death_ingot"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:death_block"
+				"item": "poke_pfe:death_block"
 			}
 		},
 		"pattern": [
@@ -22,7 +22,7 @@
 			"CC"
 		],
 		"result": {
-			"item": "poke:cut_death",
+			"item": "poke_pfe:cut_death",
 			"count": 12
 		},
 		"priority": 0

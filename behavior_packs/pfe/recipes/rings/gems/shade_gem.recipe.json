@@ -2,34 +2,34 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:shade_gem"
+			"identifier": "poke_pfe:shade_gem"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"key": {
 			"D": {
-				"item": "poke:ring_3"
+				"item": "poke_pfe:warp_ring"
 			},
 			"R": {
-				"item": "poke:radium_ingot"
+				"item": "poke_pfe:radium_ingot"
 			},
 			"X": {
-				"item": "poke:shade_ingot"
+				"item": "poke_pfe:shade_ingot"
 			}
 		},
 		"unlock": [
 			{
-				"item": "poke:ender_holder"
+				"item": "poke_pfe:ender_holder"
 			},
 			{
-				"item": "poke:ring_3"
+				"item": "poke_pfe:warp_ring"
 			},
 			{
-				"item": "poke:radium_ingot"
+				"item": "poke_pfe:radium_ingot"
 			},
 			{
-				"item": "poke:shade_ingot"
+				"item": "poke_pfe:shade_ingot"
 			}
 		],
 		"pattern": [
@@ -38,7 +38,7 @@
 			"XRX"
 		],
 		"result": {
-			"item": "poke:shade_gem"
+			"item": "poke_pfe:shade_gem"
 		}
 	}
 }

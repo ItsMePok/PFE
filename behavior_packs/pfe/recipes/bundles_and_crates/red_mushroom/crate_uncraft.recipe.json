@@ -5,14 +5,14 @@
             "crafting_table"
         ],
         "description": {
-            "identifier": "poke:red_mushroom_crate_uncraft"
+            "identifier": "poke_pfe:red_mushroom_crate_uncraft"
         },
         "unlock": [
             {
-                "item": "poke:empty_crate"
+                "item": "poke_pfe:empty_crate"
             },
             {
-                "item": "poke:red_mushroom_crate"
+                "item": "poke_pfe:red_mushroom_crate"
             }
         ],
         "pattern": [
@@ -20,7 +20,7 @@
         ],
         "key": {
             "#": {
-                "item": "poke:red_mushroom_crate"
+                "item": "poke_pfe:red_mushroom_crate"
             }
         },
         "result": [
@@ -29,7 +29,7 @@
                 "count": 8
             },
             {
-                "item": "poke:empty_crate"
+                "item": "poke_pfe:empty_crate"
             }
         ]
     }

@@ -2,26 +2,26 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:cut_godly_slab_to_cut_godly"
+			"identifier": "poke_pfe:cut_godly_slab_to_cut_godly"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:cut_godly_slab"
+				"item": "poke_pfe:cut_godly_slab"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:cut_godly_slab"
+				"item": "poke_pfe:cut_godly_slab"
 			}
 		},
 		"pattern": [
 			"CC"
 		],
 		"result": {
-			"item": "poke:cut_godly"
+			"item": "poke_pfe:cut_godly"
 		},
 		"priority": 2
 	}

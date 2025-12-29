@@ -2,14 +2,14 @@
     "format_version": "1.20.60",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "poke:calendar"
+            "identifier": "poke_pfe:calendar"
         },
         "tags": [
             "crafting_table"
         ],
         "ingredients": [
             {
-                "item": "poke:cobalt_ingot"
+                "item": "poke_pfe:cobalt_ingot"
             },
             {
                 "item": "paper"
@@ -17,14 +17,14 @@
         ],
         "unlock": [
             {
-                "item": "poke:cobalt_ingot"
+                "item": "poke_pfe:cobalt_ingot"
             },
             {
                 "item": "paper"
             }
         ],
         "result": {
-            "item": "poke:calendar"
+            "item": "poke_pfe:calendar"
         }
     }
 }

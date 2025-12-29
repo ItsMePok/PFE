@@ -2,18 +2,18 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "poke:godly_bricks_slab_stonecut_from_block"
+			"identifier": "poke_pfe:godly_bricks_slab_stonecut_from_block"
 		},
 		"tags": [
 			"stonecutter"
 		],
 		"ingredients": [
 			{
-				"item": "poke:godly_block"
+				"item": "poke_pfe:godly_block"
 			}
 		],
 		"result": {
-			"item": "poke:godly_bricks_slab",
+			"item": "poke_pfe:godly_bricks_slab",
 			"count": 8
 		}
 	}

@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:wood_boots",
+			"identifier": "poke_pfe:wood_boots",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -37,7 +37,7 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core"
+							"poke_pfe:repair_core"
 						],
 						"repair_amount": "query.max_durability"
 					},
@@ -56,7 +56,7 @@
 			},
 			"minecraft:tags": {
 				"tags": [
-					"pfe:SingleArmor",
+					"poke_pfe:SingleArmor",
 					"minecraft:is_armor",
 					"minecraft:trimmable_armors"
 				]

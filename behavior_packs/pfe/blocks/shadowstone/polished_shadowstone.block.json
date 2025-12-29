@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:polished_shadowstone",
+			"identifier": "poke_pfe:polished_shadowstone",
 			"menu_category": {
 				"category": "construction",
 				"group": "minecraft:itemGroup.name.stoneBrick"

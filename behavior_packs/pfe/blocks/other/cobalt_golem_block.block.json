@@ -1,14 +1,14 @@
 {
-  "format_version": "1.21.100",
+  "format_version": "1.21.130",
   "minecraft:block": {
     "description": {
-      "identifier": "poke:cobalt_golem_block",
+      "identifier": "poke_pfe:charged_cobalt_block",
       "menu_category": {
         "category": "nature"
       }
     },
     "components": {
-      "minecraft:display_name": "%poke_pfe.cobalt_golem_block\n%poke_pfe.tag",
+      "minecraft:display_name": "%poke_pfe.charged_cobalt_block\n%poke_pfe.tag",
       "minecraft:redstone_conductivity": {
         "redstone_conductor": true,
         "allows_wire_to_step_down": true
@@ -24,7 +24,7 @@
       },
       "minecraft:material_instances": {
         "*": {
-          "texture": "poke_pfe_cobalt_golem_block"
+          "texture": "poke_pfe_charged_cobalt_block"
         }
       },
       "tag:pfe": {},
@@ -33,7 +33,7 @@
       "tag:stone_pick_diggable": {},
       "tag:minecraft:is_pickaxe_item_destructible": {},
       "minecraft:map_color": "#f1da09",
-      "poke:cc_block_interact": {}
+      "poke_pfe:cc_block_interact": {}
     }
   }
 }

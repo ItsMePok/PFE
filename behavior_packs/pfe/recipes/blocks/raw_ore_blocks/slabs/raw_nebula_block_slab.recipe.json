@@ -2,35 +2,35 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:raw_nebula_slab"
+			"identifier": "poke_pfe:raw_nebula_slab"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:nebula_block"
+				"item": "poke_pfe:nebula_block"
 			},
 			{
-				"item": "poke:nebula_ingot"
+				"item": "poke_pfe:nebula_ingot"
 			},
 			{
-				"item": "poke:raw_nebula_block"
+				"item": "poke_pfe:raw_nebula_block"
 			},
 			{
-				"item": "poke:raw_nebula"
+				"item": "poke_pfe:raw_nebula"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:raw_nebula_block"
+				"item": "poke_pfe:raw_nebula_block"
 			}
 		},
 		"pattern": [
 			"CCC"
 		],
 		"result": {
-			"item": "poke:raw_nebula_slab",
+			"item": "poke_pfe:raw_nebula_slab",
 			"count": 6
 		}
 	}

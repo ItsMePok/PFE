@@ -2,32 +2,32 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "poke:warp_ring"
+			"identifier": "poke_pfe:warp_ring"
 		},
-		"group": "pfe:rings",
+		"group": "poke_pfe:rings",
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:warp_gem"
+				"item": "poke_pfe:warp_gem"
 			},
 			{
-				"item": "poke:ender_holder"
+				"item": "poke_pfe:ender_holder"
 			}
 		],
 		"ingredients": [
 			{
-				"item": "poke:ender_holder",
+				"item": "poke_pfe:ender_holder",
 				"count": 1
 			},
 			{
-				"item": "poke:warp_gem",
+				"item": "poke_pfe:warp_gem",
 				"count": 1
 			}
 		],
 		"result": {
-			"item": "poke:ring_3"
+			"item": "poke_pfe:warp_ring"
 		}
 	}
 }

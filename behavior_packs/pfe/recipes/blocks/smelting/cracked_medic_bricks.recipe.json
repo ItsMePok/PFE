@@ -2,13 +2,13 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_furnace": {
 		"description": {
-			"identifier": "poke:cracked_medic_bricks"
+			"identifier": "poke_pfe:cracked_medic_bricks"
 		},
 		"tags": [
 			"furnace",
 			"blast_furnace"
 		],
-		"input": "poke:medic_bricks",
-		"output": "poke:cracked_medic_bricks"
+		"input": "poke_pfe:medic_bricks",
+		"output": "poke_pfe:cracked_medic_bricks"
 	}
 }

@@ -2,7 +2,7 @@
     "format_version": "1.20.60",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "poke:carved_melon_hat_to_carved_melon"
+            "identifier": "poke_pfe:carved_melon_hat_to_carved_melon"
         },
         "tags": [
             "crafting_table"
@@ -12,16 +12,16 @@
         ],
         "unlock": [
             {
-                "item": "poke:carved_melon_helmet"
+                "item": "poke_pfe:carved_melon_helmet"
             }
         ],
         "key": {
             "N": {
-                "item": "poke:carved_melon_helmet"
+                "item": "poke_pfe:carved_melon_helmet"
             }
         },
         "result": {
-            "item": "poke:carved_melon"
+            "item": "poke_pfe:carved_melon"
         }
     }
 }

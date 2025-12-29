@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke_pfe:hellish_claymore",
@@ -15,17 +15,17 @@
 			"poke_pfe:upgradeable": {
 				"version": 1,
 				"upgrade_ids": [
-					"pfe:persistence"
+					"poke_pfe:persistence"
 				]
 			},
 			"minecraft:rarity": "common",
-			"poke:normalMining": {},
+			"poke_pfe:normalMining": {},
 			"minecraft:tags": {
 				"tags": [
 					"minecraft:is_sword",
 					"minecraft:netherite_tier",
-					"pfe:is_claymore",
-					"pfe:hellish_tier"
+					"poke_pfe:is_claymore",
+					"poke_pfe:hellish_tier"
 				]
 			},
 			"minecraft:max_stack_size": 1,
@@ -64,20 +64,20 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core",
-							"poke:hellish_block"
+							"poke_pfe:repair_core",
+							"poke_pfe:hellish_block"
 						],
 						"repair_amount": "query.max_durability"
 					},
 					{
 						"items": [
-							"poke:hellish_ingot"
+							"poke_pfe:hellish_ingot"
 						],
 						"repair_amount": "query.max_durability*0.25"
 					},
 					{
 						"items": [
-							"poke:hellish_nugget"
+							"poke_pfe:hellish_nugget"
 						],
 						"repair_amount": "query.max_durability*0.028"
 					}

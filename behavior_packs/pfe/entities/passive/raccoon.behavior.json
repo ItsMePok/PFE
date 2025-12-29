@@ -2,7 +2,7 @@
 	"format_version": "1.21.50",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "poke:raccoon",
+			"identifier": "poke_pfe:raccoon",
 			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false
@@ -49,8 +49,8 @@
 					"require_tame": true,
 					"require_full_health": true,
 					"breeds_with": {
-						"mate_type": "poke:raccoon",
-						"baby_type": "poke:raccoon",
+						"mate_type": "poke_pfe:raccoon",
+						"baby_type": "poke_pfe:raccoon",
 						"breed_event": {
 							"event": "minecraft:entity_born",
 							"target": "baby"
@@ -121,7 +121,7 @@
 						"cod",
 						"salmon",
 						"cooked_salmon",
-						"poke:baguette"
+						"poke_pfe:baguette"
 					],
 					"tame_event": {
 						"event": "minecraft:on_tame",

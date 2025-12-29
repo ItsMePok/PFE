@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_brewing_mix": {
 		"description": {
-			"identifier": "poke:cobalt_potion"
+			"identifier": "poke_pfe:cobalt_potion"
 		},
 		"tags": [
 			"brewing_stand"
@@ -11,7 +11,7 @@
 			"item": "potion",
 			"data": 4
 		},
-		"reagent": "poke:cobalt_ingot",
-		"output": "poke:cobalt_potion"
+		"reagent": "poke_pfe:cobalt_ingot",
+		"output": "poke_pfe:cobalt_potion"
 	}
 }

@@ -5,7 +5,7 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "poke:spawn_token_trader"
+                    "name": "poke_pfe:spawn_token_trader"
                 }
             ]
         }

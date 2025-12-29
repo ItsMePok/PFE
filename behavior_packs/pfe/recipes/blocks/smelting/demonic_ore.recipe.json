@@ -2,13 +2,13 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_furnace": {
 		"description": {
-			"identifier": "poke:demonic_ore"
+			"identifier": "poke_pfe:demonic_ore"
 		},
 		"tags": [
 			"furnace",
 			"blast_furnace"
 		],
-		"input": "poke:demonic_ore",
-		"output": "poke:demonic_ingot"
+		"input": "poke_pfe:demonic_ore",
+		"output": "poke_pfe:demonic_ingot"
 	}
 }

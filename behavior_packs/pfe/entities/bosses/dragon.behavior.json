@@ -1,14 +1,14 @@
 { /*this entity model, animations & textures was made by O2God for PFE*/
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "poke:dragon",
+			"identifier": "poke_pfe:sparky",
 			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false
 		},
 		"component_groups": {
-			"poke:dragon_spawning": {
+			"poke_pfe:dragon_spawning": {
 				"minecraft:behavior.summon_entity": {
 					"priority": 0,
 					"summon_choices": [
@@ -47,7 +47,7 @@
 								{
 									"summon_cap": 8,
 									"entity_lifespan": 30,
-									"entity_type": "poke:demonic_allay",
+									"entity_type": "poke_pfe:demonic_allay",
 									"shape": "line",
 									"size": 8,
 									"num_entities_spawned": 2,
@@ -67,12 +67,12 @@
 					"time": 10,
 					"looping": false,
 					"time_down_event": {
-						"event": "poke:mode_switch_range",
+						"event": "poke_pfe:mode_switch_range",
 						"target": "self"
 					}
 				}
 			},
-			"poke:dragon_ranged": {
+			"poke_pfe:dragon_ranged": {
 				"minecraft:behavior.ranged_attack": {
 					"attack_interval_max": 5,
 					"attack_interval_min": 1,
@@ -92,7 +92,7 @@
 					"time": 10,
 					"looping": false,
 					"time_down_event": {
-						"event": "poke:mode_switch_spawning",
+						"event": "poke_pfe:mode_switch_spawning",
 						"target": "self"
 					}
 				}
@@ -102,7 +102,7 @@
 					"time": 1800,
 					"looping": true,
 					"time_down_event": {
-						"event": "poke:despawn",
+						"event": "poke_pfe:despawn",
 						"target": "self"
 					}
 				}
@@ -118,20 +118,20 @@
 				"family": [
 					"monster",
 					"mob",
-					"pfe:boss"
+					"poke_pfe:boss"
 				]
 			},
 			"minecraft:nameable": {
 				"name_actions": {
 					"name_filter": "despawn",
 					"on_named": {
-						"event": "poke:despawn",
+						"event": "poke_pfe:despawn",
 						"target": "self"
 					}
 				},
 				"default_trigger": {
 					"target": "self",
-					"event": "poke:renamed"
+					"event": "poke_pfe:renamed"
 				}
 			},
 			"minecraft:health": {
@@ -294,7 +294,7 @@
 			},
 			"minecraft:boss": {
 				"hud_range": 100,
-				"name": "entity.poke:dragon.name",
+				"name": "entity.poke_pfe:dragon.name",
 				"should_darken_sky": true
 			},
 			"minecraft:behavior.look_at_target": {
@@ -308,7 +308,7 @@
 			"minecraft:entity_spawned": {
 				"add": {
 					"component_groups": [
-						"poke:dragon_spawning"
+						"poke_pfe:dragon_spawning"
 					]
 				},
 				"queue_command": {
@@ -317,38 +317,38 @@
 					]
 				}
 			},
-			"poke:mode_switch_range": {
+			"poke_pfe:mode_switch_range": {
 				"add": {
 					"component_groups": [
-						"poke:dragon_ranged"
+						"poke_pfe:dragon_ranged"
 					]
 				},
 				"remove": {
 					"component_groups": [
-						"poke:dragon_spawning"
+						"poke_pfe:dragon_spawning"
 					]
 				}
 			},
-			"poke:mode_switch_spawning": {
+			"poke_pfe:mode_switch_spawning": {
 				"remove": {
 					"component_groups": [
-						"poke:dragon_ranged"
+						"poke_pfe:dragon_ranged"
 					]
 				},
 				"add": {
 					"component_groups": [
-						"poke:dragon_spawning"
+						"poke_pfe:dragon_spawning"
 					]
 				}
 			},
-			"poke:renamed": {
+			"poke_pfe:renamed": {
 				"remove": {
 					"component_groups": [
 						"timer"
 					]
 				}
 			},
-			"poke:despawn": {
+			"poke_pfe:despawn": {
 				"add": {
 					"component_groups": [
 						"despawn"

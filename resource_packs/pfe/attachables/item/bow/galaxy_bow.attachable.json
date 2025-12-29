@@ -2,16 +2,16 @@
   "format_version": "1.10.0",
   "minecraft:attachable": {
     "description": {
-      "identifier": "poke:galaxy_bow",
+      "identifier": "poke_pfe:galaxy_burstbow",
       "materials": {
         "default": "entity_alphatest",
         "enchanted": "entity_alphatest_glint"
       },
       "textures": {
-        "default": "textures/poke/pfe/galaxy_bow",
-        "bow_pulling_0": "textures/poke/pfe/galaxy_bow0",
-        "bow_pulling_1": "textures/poke/pfe/galaxy_bow1",
-        "bow_pulling_2": "textures/poke/pfe/galaxy_bow2",
+        "default": "textures/poke/pfe/galaxy_burstbow",
+        "bow_pulling_0": "textures/poke/pfe/galaxy_burstbow0",
+        "bow_pulling_1": "textures/poke/pfe/galaxy_burstbow1",
+        "bow_pulling_2": "textures/poke/pfe/galaxy_burstbow2",
         "enchanted": "textures/misc/enchanted_item_glint"
       },
       "geometry": {

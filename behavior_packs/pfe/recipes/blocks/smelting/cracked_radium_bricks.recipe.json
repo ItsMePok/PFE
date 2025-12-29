@@ -2,13 +2,13 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_furnace": {
 		"description": {
-			"identifier": "poke:cracked_radium_bricks"
+			"identifier": "poke_pfe:cracked_radium_bricks"
 		},
 		"tags": [
 			"furnace",
 			"blast_furnace"
 		],
-		"input": "poke:radium_bricks",
-		"output": "poke:cracked_radium_bricks"
+		"input": "poke_pfe:radium_bricks",
+		"output": "poke_pfe:cracked_radium_bricks"
 	}
 }

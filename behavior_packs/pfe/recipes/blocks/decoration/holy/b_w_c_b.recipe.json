@@ -1,16 +1,32 @@
 {
-	"format_version":"1.20.10",
-	"minecraft:recipe_shaped":{
-		"description":{"identifier":"poke:holy_b_w_c_b"},
-		"tags":["crafting_table"],
-		"unlock":[
-			{"item":"poke:holy_block"},
-			{"item":"poke:holy_bricks"}
-		],
-		"key":{
-			"C":{"item":"poke:holy_bricks"}
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke_pfe:holy_b_w_c_b"
 		},
-		"pattern":["CCC","CCC"],
-		"result":{"item":"poke:holy_brick_wall","count":6}
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": [
+			{
+				"item": "poke_pfe:holy_block"
+			},
+			{
+				"item": "poke_pfe:holy_bricks"
+			}
+		],
+		"key": {
+			"C": {
+				"item": "poke_pfe:holy_bricks"
+			}
+		},
+		"pattern": [
+			"CCC",
+			"CCC"
+		],
+		"result": {
+			"item": "poke_pfe:holy_brick_wall",
+			"count": 6
+		}
 	}
 }

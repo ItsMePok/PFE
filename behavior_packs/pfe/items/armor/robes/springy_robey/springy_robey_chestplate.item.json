@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:springy_robey_chestplate",
+			"identifier": "poke_pfe:springy_robey_chestplate",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -38,7 +38,7 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core"
+							"poke_pfe:repair_core"
 						],
 						"repair_amount": "query.max_durability"
 					}
@@ -59,7 +59,7 @@
 					"novelty:is_back",
 					"minecraft:trimmable_armors",
 					"minecraft:is_armor",
-					"pfe:is_robe"
+					"poke_pfe:is_robe"
 				]
 			}
 		}

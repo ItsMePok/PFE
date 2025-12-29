@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:smooth_limestone",
+			"identifier": "poke_pfe:smooth_limestone",
 			"menu_category": {
 				"category": "construction",
 				"group": "minecraft:itemGroup.name.stoneBrick"

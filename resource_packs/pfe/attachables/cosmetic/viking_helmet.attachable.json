@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "poke:viking_helmet",
+			"identifier": "poke_pfe:viking_helmet",
 			"render_controllers": [
 				"controller.render.armor"
 			],

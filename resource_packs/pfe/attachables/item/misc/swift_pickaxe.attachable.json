@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "poke:swift_pickaxe",
+			"identifier": "poke_pfe:swift_pickaxe",
 			"render_controllers": [
 				"controller.render.poke_pfe.dyed_attachable"
 			],

@@ -2,22 +2,22 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:death_bricks_craft"
+			"identifier": "poke_pfe:death_bricks_craft"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:death_block"
+				"item": "poke_pfe:death_block"
 			},
 			{
-				"item": "poke:death_ingot"
+				"item": "poke_pfe:death_ingot"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:cut_death"
+				"item": "poke_pfe:cut_death"
 			}
 		},
 		"pattern": [
@@ -25,7 +25,7 @@
 			"CC"
 		],
 		"result": {
-			"item": "poke:death_bricks",
+			"item": "poke_pfe:death_bricks",
 			"count": 4
 		}
 	}

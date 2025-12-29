@@ -1,8 +1,8 @@
 {
-  "format_version": "1.21.100",
+  "format_version": "1.21.130",
   "minecraft:item": {
     "description": {
-      "identifier": "poke:obsidian_depressor",
+      "identifier": "poke_pfe:obsidian_depressor",
       "menu_category": {
         "category": "equipment"
       }
@@ -25,7 +25,7 @@
       "poke_pfe:upgradeable": {
         "version": 1,
         "upgrade_ids": [
-          "pfe:persistence"
+          "poke_pfe:persistence"
         ]
       },
       "poke_pfe:transform_blocks": {
@@ -35,7 +35,7 @@
       },
       "minecraft:tags": {
         "tags": [
-          "pfe:is_upgrader"
+          "poke_pfe:is_upgrader"
         ]
       }
     }

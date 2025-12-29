@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:purifier",
+			"identifier": "poke_pfe:purifier",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -15,7 +15,7 @@
 			"poke_pfe:upgradeable": {
 				"version": 1,
 				"upgrade_ids": [
-					"pfe:persistence"
+					"poke_pfe:persistence"
 				]
 			},
 			"minecraft:durability": {
@@ -24,7 +24,7 @@
 			"minecraft:hand_equipped": true,
 			"minecraft:icon": "poke_pfe_purifier",
 			"minecraft:cooldown": {
-				"category": "poke:purifier",
+				"category": "poke_pfe:purifier",
 				"duration": 1.5
 			},
 			"minecraft:max_stack_size": 1,
@@ -32,19 +32,19 @@
 				"version": 1,
 				"command": [
 					"event entity @e[r=5] villager_converted",
-					"particle poke:purifier_r5p ~~~",
+					"particle poke_pfe:purifier_r5p ~~~",
 					"playsound mob.husk.convert_to_zombie @a ~~~ 1 0.5"
 				],
 				"take_durability": true,
 				"trigger_cooldown": true,
 				"can_be_disabled": false
 			},
-			"poke:normalMining": {},
+			"poke_pfe:normalMining": {},
 			"minecraft:repairable": {
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core"
+							"poke_pfe:repair_core"
 						],
 						"repair_amount": "query.max_durability"
 					}
@@ -57,7 +57,7 @@
 			"minecraft:tags": {
 				"tags": [
 					"minecraft:is_tool",
-					"pfe:is_staff"
+					"poke_pfe:is_staff"
 				]
 			}
 		}

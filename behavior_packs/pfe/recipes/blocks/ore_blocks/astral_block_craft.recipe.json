@@ -2,14 +2,14 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:astral_block_craft"
+			"identifier": "poke_pfe:astral_block_craft"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:astral_ingot"
+				"item": "poke_pfe:astral_ingot"
 			}
 		],
 		"pattern": [
@@ -19,11 +19,11 @@
 		],
 		"key": {
 			"#": {
-				"item": "poke:astral_ingot"
+				"item": "poke_pfe:astral_ingot"
 			}
 		},
 		"result": {
-			"item": "poke:astral_block"
+			"item": "poke_pfe:astral_block"
 		}
 	}
 }

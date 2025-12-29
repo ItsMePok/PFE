@@ -2,22 +2,22 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:godly_bricks_craft"
+			"identifier": "poke_pfe:godly_bricks_craft"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:godly_block"
+				"item": "poke_pfe:godly_block"
 			},
 			{
-				"item": "poke:godly_ingot"
+				"item": "poke_pfe:godly_ingot"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:cut_godly"
+				"item": "poke_pfe:cut_godly"
 			}
 		},
 		"pattern": [
@@ -25,7 +25,7 @@
 			"CC"
 		],
 		"result": {
-			"item": "poke:godly_bricks",
+			"item": "poke_pfe:godly_bricks",
 			"count": 4
 		}
 	}

@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:cone_cosmetic",
+			"identifier": "poke_pfe:cone_cosmetic",
 			"menu_category": {
 				"category": "equipment"
 			}

@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:golden_turnip",
+			"identifier": "poke_pfe:golden_turnip",
 			"menu_category": {
 				"category": "nature"
 			}
@@ -28,7 +28,7 @@
 			},
 			"minecraft:use_animation": "eat",
 			"minecraft:block_placer": {
-				"block": "poke:golden_turnip",
+				"block": "poke_pfe:golden_turnip",
 				"replace_block_item": true
 			},
 			"minecraft:tags": {

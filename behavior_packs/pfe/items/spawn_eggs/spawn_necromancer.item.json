@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:spawn_necromancer",
+			"identifier": "poke_pfe:spawn_necromancer",
 			"menu_category": {
 				"category": "nature",
 				"group": "minecraft:itemGroup.name.mobEgg"
@@ -16,12 +16,12 @@
 			"minecraft:max_stack_size": 64,
 			"minecraft:icon": "poke_pfe_necromancer_spawn_egg",
 			"poke_pfe:spawn_entity": {
-				"entity": "poke:necromancer"
+				"entity": "poke_pfe:necromancer"
 			},
 			"minecraft:tags": {
 				"tags": [
 					"minecraft:spawn_egg",
-					"pfe:is_survival_spawn_egg"
+					"poke_pfe:is_survival_spawn_egg"
 				]
 			}
 		}

@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:electric_component"
+			"identifier": "poke_pfe:electric_component"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,7 +14,7 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:cobalt_ingot"
+				"item": "poke_pfe:cobalt_ingot"
 			}
 		],
 		"key": {
@@ -22,14 +22,14 @@
 				"item": "copper_ingot"
 			},
 			"C": {
-				"item": "poke:cobalt_ingot"
+				"item": "poke_pfe:cobalt_ingot"
 			},
 			"R": {
 				"item": "redstone"
 			}
 		},
 		"result": {
-			"item": "poke:electric_component",
+			"item": "poke_pfe:electric_component",
 			"count": 2
 		}
 	}

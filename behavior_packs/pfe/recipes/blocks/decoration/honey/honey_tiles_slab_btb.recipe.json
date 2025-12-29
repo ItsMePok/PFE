@@ -2,26 +2,26 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:honey_tiles_slab_btb"
+			"identifier": "poke_pfe:honey_tiles_slab_btb"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:honey_tiles_slab"
+				"item": "poke_pfe:honey_tiles_slab"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:honey_tiles_slab"
+				"item": "poke_pfe:honey_tiles_slab"
 			}
 		},
 		"pattern": [
 			"CC"
 		],
 		"result": {
-			"item": "poke:honey_tiles"
+			"item": "poke_pfe:honey_tiles"
 		},
 		"priority": 2
 	}

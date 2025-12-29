@@ -2,13 +2,13 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_furnace": {
 		"description": {
-			"identifier": "poke:hellite_ore_nether"
+			"identifier": "poke_pfe:deepslate_hellish_ore_nether"
 		},
 		"tags": [
 			"furnace",
 			"blast_furnace"
 		],
-		"input": "poke:nether_hellish_ore",
-		"output": "poke:hellish_ingot"
+		"input": "poke_pfe:nether_hellish_ore",
+		"output": "poke_pfe:hellish_ingot"
 	}
 }

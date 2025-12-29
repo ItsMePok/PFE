@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke_pfe:waypoint_menu",
@@ -22,9 +22,9 @@
 			},
 			"poke_pfe:upgradeable": {
 				"sneak_interact_opens_ui": false,
-				"dynamic_property": "pfe:upgrades",
+				"dynamic_property": "poke_pfe:upgrades",
 				"upgrade_ids": [
-					"pfe:persistence"
+					"poke_pfe:persistence"
 				],
 				"version": 1
 			}

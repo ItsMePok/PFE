@@ -2,29 +2,29 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:cut_medic_slab_crafting_table"
+			"identifier": "poke_pfe:cut_medic_slab_crafting_table"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:medic_ingot"
+				"item": "poke_pfe:medic_ingot"
 			},
 			{
-				"item": "poke:cut_medic"
+				"item": "poke_pfe:cut_medic"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:cut_medic"
+				"item": "poke_pfe:cut_medic"
 			}
 		},
 		"pattern": [
 			"CCC"
 		],
 		"result": {
-			"item": "poke:cut_medic_slab",
+			"item": "poke_pfe:cut_medic_slab",
 			"count": 6
 		}
 	}

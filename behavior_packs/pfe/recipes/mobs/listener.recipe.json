@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:listener"
+			"identifier": "poke_pfe:listener"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,40 +14,40 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:empty_cassette"
+				"item": "poke_pfe:empty_cassette"
 			},
 			{
-				"item": "poke:nebula_block"
+				"item": "poke_pfe:nebula_block"
 			},
 			{
-				"item": "poke:banished_star_x4"
+				"item": "poke_pfe:banished_star_x4"
 			},
 			{
-				"item": "poke:antenna"
+				"item": "poke_pfe:antenna"
 			},
 			{
-				"item": "poke:nebula_ingot"
+				"item": "poke_pfe:nebula_ingot"
 			}
 		],
 		"key": {
 			"N": {
-				"item": "poke:nebula_block"
+				"item": "poke_pfe:nebula_block"
 			},
 			"F": {
-				"item": "poke:banished_star_x4"
+				"item": "poke_pfe:banished_star_x4"
 			},
 			"Y": {
-				"item": "poke:empty_cassette"
+				"item": "poke_pfe:empty_cassette"
 			},
 			"E": {
-				"item": "poke:antenna"
+				"item": "poke_pfe:antenna"
 			},
 			"G": {
 				"item": "sculk_catalyst"
 			}
 		},
 		"result": {
-			"item": "poke:spawn_listener"
+			"item": "poke_pfe:spawn_listener"
 		}
 	}
 }

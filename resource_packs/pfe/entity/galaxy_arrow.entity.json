@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "poke:galaxy_arrow",
+			"identifier": "poke_pfe:galaxy_arrow",
 			"materials": {
 				"default": "arrow"
 			},

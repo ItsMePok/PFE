@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:cobblestone_boots"
+			"identifier": "poke_pfe:cobblestone_boots"
 		},
 		"tags": [
 			"crafting_table"
@@ -22,7 +22,7 @@
 			}
 		},
 		"result": {
-			"item": "poke:stone_boots"
+			"item": "poke_pfe:stone_boots"
 		}
 	}
 }

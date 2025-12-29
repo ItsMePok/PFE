@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:demonic_axe",
+			"identifier": "poke_pfe:demonic_axe",
 			"menu_category": {
 				"category": "equipment",
 				"group": "minecraft:itemGroup.name.axe"
@@ -16,10 +16,10 @@
 			"poke_pfe:upgradeable": {
 				"version": 1,
 				"upgrade_ids": [
-					"pfe:persistence"
+					"poke_pfe:persistence"
 				]
 			},
-			"poke:normalMining": {},
+			"poke_pfe:normalMining": {},
 			"minecraft:hand_equipped": true,
 			"minecraft:max_stack_size": 1,
 			"minecraft:durability": {
@@ -42,19 +42,19 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core"
+							"poke_pfe:repair_core"
 						],
 						"repair_amount": "query.max_durability"
 					},
 					{
 						"items": [
-							"poke:demonic_ingot"
+							"poke_pfe:demonic_ingot"
 						],
 						"repair_amount": "q.max_durability*0.25"
 					},
 					{
 						"items": [
-							"poke:demonic_nugget"
+							"poke_pfe:demonic_nugget"
 						],
 						"repair_amount": "q.max_durability*0.028"
 					}
@@ -66,7 +66,7 @@
 					"minecraft:is_axe",
 					"minecraft:digger",
 					"minecraft:is_tool",
-					"pfe:axe"
+					"poke_pfe:axe"
 				]
 			},
 			"minecraft:damage": {

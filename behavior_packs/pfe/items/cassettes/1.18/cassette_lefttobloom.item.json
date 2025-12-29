@@ -1,8 +1,11 @@
 {
-  "format_version": "1.21.100",
+  "format_version": "1.21.130",
   "minecraft:item": {
     "description": {
-      "identifier": "poke:cassette_lefttobloom"
+      "identifier": "poke_pfe:cassette_lefttobloom",
+      "menu_category": {
+        "category": "items"
+      }
     },
     "components": {
       "minecraft:display_name": {
@@ -15,7 +18,7 @@
       },
       "minecraft:tags": {
         "tags": [
-          "pfe:is_cassette"
+          "poke_pfe:is_cassette"
         ]
       }
     }

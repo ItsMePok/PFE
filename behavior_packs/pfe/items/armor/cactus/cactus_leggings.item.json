@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:cactus_leggings",
+			"identifier": "poke_pfe:cactus_leggings",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -37,7 +37,7 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core"
+							"poke_pfe:repair_core"
 						],
 						"repair_amount": "query.max_durability"
 					},

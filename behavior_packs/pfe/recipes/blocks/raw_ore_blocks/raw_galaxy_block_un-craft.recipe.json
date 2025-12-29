@@ -2,14 +2,14 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:raw_galaxy_block_un-craft"
+			"identifier": "poke_pfe:raw_galaxy_block_un-craft"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:raw_galaxy_block"
+				"item": "poke_pfe:raw_galaxy_block"
 			}
 		],
 		"pattern": [
@@ -17,11 +17,11 @@
 		],
 		"key": {
 			"#": {
-				"item": "poke:raw_galaxy_block"
+				"item": "poke_pfe:raw_galaxy_block"
 			}
 		},
 		"result": {
-			"item": "poke:raw_galaxy",
+			"item": "poke_pfe:raw_galaxy",
 			"count": 9
 		}
 	}

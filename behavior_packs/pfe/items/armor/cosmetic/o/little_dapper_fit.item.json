@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:little_dapper_fit",
+			"identifier": "poke_pfe:little_dapper_fit",
 			"menu_category": {
 				"category": "equipment"
 			}

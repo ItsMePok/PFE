@@ -5,27 +5,27 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "poke:copper_token",
+					"name": "poke_pfe:copper_token",
 					"weight": 2
 				},
 				{
 					"type": "item",
-					"name": "poke:iron_token",
+					"name": "poke_pfe:iron_token",
 					"weight": 2
 				},
 				{
 					"type": "item",
-					"name": "poke:gold_token",
+					"name": "poke_pfe:golden_token",
 					"weight": 20
 				},
 				{
 					"type": "item",
-					"name": "poke:diamond_token",
+					"name": "poke_pfe:diamond_token",
 					"weight": 16
 				},
 				{
 					"type": "item",
-					"name": "poke:platinum_token",
+					"name": "poke_pfe:platinum_token",
 					"weight": 5
 				}
 			]
@@ -35,7 +35,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "poke:floppy_disk"
+					"name": "poke_pfe:floppy_disk"
 				}
 			]
 		},
@@ -44,7 +44,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "poke:cassette_they_listen",
+					"name": "poke_pfe:cassette_they_listen",
 					"weight": 1
 				},
 				{
@@ -59,52 +59,52 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "poke:onyx_block",
+					"name": "poke_pfe:onyx_block",
 					"weight": 5
 				},
 				{
 					"type": "item",
-					"name": "poke:godly_block",
+					"name": "poke_pfe:godly_block",
 					"weight": 5
 				},
 				{
 					"type": "item",
-					"name": "poke:cobalt_block",
+					"name": "poke_pfe:cobalt_block",
 					"weight": 5
 				},
 				{
 					"type": "item",
-					"name": "poke:galaxy_block",
+					"name": "poke_pfe:galaxy_block",
 					"weight": 5
 				},
 				{
 					"type": "item",
-					"name": "poke:void_block",
+					"name": "poke_pfe:void_block",
 					"weight": 5
 				},
 				{
 					"type": "item",
-					"name": "poke:nebula_block",
+					"name": "poke_pfe:nebula_block",
 					"weight": 5
 				},
 				{
 					"type": "item",
-					"name": "poke:shade_block",
+					"name": "poke_pfe:shade_block",
 					"weight": 5
 				},
 				{
 					"type": "item",
-					"name": "poke:holy_block",
+					"name": "poke_pfe:holy_block",
 					"weight": 5
 				},
 				{
 					"type": "item",
-					"name": "poke:hellish_block",
+					"name": "poke_pfe:hellish_block",
 					"weight": 5
 				},
 				{
 					"type": "item",
-					"name": "poke:demonic_block",
+					"name": "poke_pfe:demonic_block",
 					"weight": 5
 				}
 			]
@@ -118,13 +118,13 @@
 				},
 				{
 					"type": "item",
-					"name": "poke:pfe-listener_pottery_sherd",
+					"name": "poke_pfe:pfe-listener_pottery_sherd",
 					"weight": 1
 				},
 				{
 					"type": "item",
 					"weight": 1,
-					"name": "poke:listener_trophy"
+					"name": "poke_pfe:listener_trophy"
 				},
 				{
 					"type": "item",

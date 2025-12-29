@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:medic_scythe",
+			"identifier": "poke_pfe:medic_scythe",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -15,28 +15,28 @@
 			"poke_pfe:upgradeable": {
 				"version": 1,
 				"upgrade_ids": [
-					"pfe:persistence"
+					"poke_pfe:persistence"
 				]
 			},
-			"poke:normalMining": {},
-			"poke:hitEffects": {},
+			"poke_pfe:normalMining": {},
+			"poke_pfe:hitEffects": {},
 			"minecraft:repairable": {
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core"
+							"poke_pfe:repair_core"
 						],
 						"repair_amount": "query.max_durability"
 					},
 					{
 						"items": [
-							"poke:medic_ingot"
+							"poke_pfe:medic_ingot"
 						],
 						"repair_amount": "query.max_durability*0.25"
 					},
 					{
 						"items": [
-							"poke:medic_nugget"
+							"poke_pfe:medic_nugget"
 						],
 						"repair_amount": "query.max_durability*0.028"
 					}

@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:medic_battleaxe"
+			"identifier": "poke_pfe:medic_battleaxe"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,32 +14,32 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:medic_ingot"
+				"item": "poke_pfe:medic_ingot"
 			},
 			{
-				"item": "poke:medic_block"
+				"item": "poke_pfe:medic_block"
 			},
 			{
-				"item": "poke:godly_battleaxe"
+				"item": "poke_pfe:godly_battleaxe"
 			}
 		],
 		"key": {
 			"B": {
-				"item": "poke:godly_battleaxe"
+				"item": "poke_pfe:godly_battleaxe"
 			},
 			"D": {
-				"item": "poke:medic_block"
+				"item": "poke_pfe:medic_block"
 			},
 			"S": {
-				"item": "poke:onyx_shaft"
+				"item": "poke_pfe:onyx_stick"
 			},
 			"U": {
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			}
 		},
 		"result": [
 			{
-				"item": "poke:medic_battleaxe"
+				"item": "poke_pfe:medic_battleaxe"
 			}
 		]
 	}

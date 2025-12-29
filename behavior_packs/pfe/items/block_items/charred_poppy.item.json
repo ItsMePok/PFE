@@ -1,8 +1,11 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:charred_poppy"
+			"identifier": "poke_pfe:charred_poppy",
+			"menu_category": {
+				"category": "nature"
+			}
 		},
 		"components": {
 			"minecraft:display_name": {
@@ -18,7 +21,7 @@
 			},
 			"minecraft:rarity": "uncommon",
 			"minecraft:block_placer": {
-				"block": "poke:charred_poppy",
+				"block": "poke_pfe:charred_poppy",
 				"replace_block_item": true
 			}
 		}

@@ -2,12 +2,12 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_furnace": {
 		"description": {
-			"identifier": "poke:raw_godly_block_smelt"
+			"identifier": "poke_pfe:raw_godly_block_smelt"
 		},
 		"tags": [
 			"blast_furnace"
 		],
-		"input": "poke:raw_godly_block",
-		"output": "poke:godly_block"
+		"input": "poke_pfe:raw_godly_block",
+		"output": "poke_pfe:godly_block"
 	}
 }

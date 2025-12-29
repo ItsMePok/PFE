@@ -1,0 +1,313 @@
+{
+	"format_version": "1.21.130",
+	"minecraft:block": {
+		"description": {
+			"identifier": "poke_pfe:cobbler",
+			"menu_category": {
+				"category": "items"
+			},
+			"states": {
+				"poke_pfe:active": [
+					0,
+					1
+				]
+			},
+			"traits": {
+				"minecraft:placement_position": {
+					"enabled_states": [
+						"minecraft:block_face"
+					]
+				}
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('poke_pfe:active') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "poke_pfe_animated_automation_gear",
+							"render_method": "opaque"
+						},
+						"south": {
+							"texture": "poke_pfe_automation_bottom",
+							"render_method": "opaque"
+						},
+						"north": {
+							"texture": "poke_pfe_automation_cobbler_face",
+							"render_method": "opaque"
+						},
+						"east": {
+							"texture": "poke_pfe_automation_grills",
+							"render_method": "opaque"
+						},
+						"west": "east"
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.poke_pfe.block_breaker",
+						"culling": "poke_pfe:block.culling"
+					},
+					"minecraft:light_emission": 5
+				}
+			},
+			{
+				"condition": "q.block_state('poke_pfe:active') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "poke_pfe_automation_gear",
+							"render_method": "opaque"
+						},
+						"south": {
+							"texture": "poke_pfe_automation_bottom",
+							"render_method": "opaque"
+						},
+						"north": {
+							"texture": "poke_pfe_automation_cobbler_face",
+							"render_method": "opaque"
+						},
+						"east": {
+							"texture": "poke_pfe_automation_grills",
+							"render_method": "opaque"
+						},
+						"west": "east"
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.poke_pfe.block_breaker",
+						"culling": "poke_pfe:block.culling"
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:block_face') == 'up'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							90,
+							0,
+							0
+						]
+					},
+					"poke_pfe:change_state": {
+						"face": "all",
+						"sound": {
+							"identifier": "poke_pfe.calibrate"
+						}
+					},
+					"poke_pfe:spawn_item": {
+						"allow_deposit_to_container": true,
+						"spawn_item_at": {
+							"x": 0,
+							"y": 1,
+							"z": 0
+						},
+						"needs_state": {
+							"name": "poke_pfe:active",
+							"value": 1
+						},
+						"item": {
+							"identifier": "minecraft:cobblestone",
+							"amount": 1
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:block_face') == 'down'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							-90,
+							0,
+							0
+						]
+					},
+					"poke_pfe:change_state": {
+						"face": "all",
+						"sound": {
+							"identifier": "poke_pfe.calibrate"
+						}
+					},
+					"poke_pfe:spawn_item": {
+						"allow_deposit_to_container": true,
+						"spawn_item_at": {
+							"x": 0,
+							"y": -1,
+							"z": 0
+						},
+						"needs_state": {
+							"name": "poke_pfe:active",
+							"value": 1
+						},
+						"item": {
+							"identifier": "minecraft:cobblestone",
+							"amount": 1
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:block_face') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					},
+					"poke_pfe:change_state": {
+						"face": "all",
+						"sound": {
+							"identifier": "poke_pfe.calibrate"
+						}
+					},
+					"poke_pfe:spawn_item": {
+						"allow_deposit_to_container": true,
+						"spawn_item_at": {
+							"x": 0,
+							"y": 0,
+							"z": -1
+						},
+						"needs_state": {
+							"name": "poke_pfe:active",
+							"value": 1
+						},
+						"item": {
+							"identifier": "minecraft:cobblestone",
+							"amount": 1
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:block_face') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-90,
+							0
+						]
+					},
+					"poke_pfe:change_state": {
+						"face": "all",
+						"sound": {
+							"identifier": "poke_pfe.calibrate"
+						}
+					},
+					"poke_pfe:spawn_item": {
+						"allow_deposit_to_container": true,
+						"spawn_item_at": {
+							"x": 1,
+							"y": 0,
+							"z": 0
+						},
+						"needs_state": {
+							"name": "poke_pfe:active",
+							"value": 1
+						},
+						"item": {
+							"identifier": "minecraft:cobblestone",
+							"amount": 1
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:block_face') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-180,
+							0
+						]
+					},
+					"poke_pfe:change_state": {
+						"face": "all",
+						"sound": {
+							"identifier": "poke_pfe.calibrate"
+						}
+					},
+					"poke_pfe:spawn_item": {
+						"allow_deposit_to_container": true,
+						"spawn_item_at": {
+							"x": 0,
+							"y": 0,
+							"z": 1
+						},
+						"needs_state": {
+							"name": "poke_pfe:active",
+							"value": 1
+						},
+						"item": {
+							"identifier": "minecraft:cobblestone",
+							"amount": 1
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:block_face') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					},
+					"poke_pfe:change_state": {
+						"face": "all",
+						"sound": {
+							"identifier": "poke_pfe.calibrate"
+						}
+					},
+					"poke_pfe:spawn_item": {
+						"allow_deposit_to_container": true,
+						"spawn_item_at": {
+							"x": -1,
+							"y": 0,
+							"z": 0
+						},
+						"needs_state": {
+							"name": "poke_pfe:active",
+							"value": 1
+						},
+						"item": {
+							"identifier": "minecraft:cobblestone",
+							"amount": 1
+						}
+					}
+				}
+			}
+		],
+		"components": {
+			"minecraft:display_name": "%poke_pfe.cobbler\n%poke_pfe.tag",
+			"minecraft:redstone_conductivity": {
+				"redstone_conductor": true,
+				"allows_wire_to_step_down": true
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 1
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 30
+			},
+			"poke_pfe:redstone_state": {},
+			"tag:pfe": {},
+			"tag:metal": {},
+			"tag:minecraft:metal": {},
+			"tag:stone_pick_diggable": {},
+			"tag:minecraft:is_pickaxe_item_destructible": {},
+			"minecraft:map_color": "#22222f",
+			"minecraft:tick": {
+				"interval_range": [
+					20,
+					20
+				]
+			}
+		}
+	}
+}

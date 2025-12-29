@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_furnace": {
 		"description": {
-			"identifier": "poke:raw_copper_block_smelt"
+			"identifier": "poke_pfe:raw_copper_block_smelt"
 		},
 		"tags": [
 			"blast_furnace"

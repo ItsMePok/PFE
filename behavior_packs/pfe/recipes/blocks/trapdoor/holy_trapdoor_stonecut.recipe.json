@@ -1,9 +1,20 @@
 {
     "format_version": "1.16.100",
     "minecraft:recipe_shapeless": {
-        "tags":["stonecutter"],
-        "description": {"identifier": "poke:holy_trapdoor_sc"},
-        "ingredients":[{"item":"poke:holy_block"}],
-        "result":{"item": "poke:holy_trapdoor","count": 6}
+        "tags": [
+            "stonecutter"
+        ],
+        "description": {
+            "identifier": "poke_pfe:holy_trapdoor_sc"
+        },
+        "ingredients": [
+            {
+                "item": "poke_pfe:holy_block"
+            }
+        ],
+        "result": {
+            "item": "poke_pfe:holy_trapdoor",
+            "count": 6
+        }
     }
 }

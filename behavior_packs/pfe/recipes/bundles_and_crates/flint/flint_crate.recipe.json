@@ -5,14 +5,14 @@
             "crafting_table"
         ],
         "description": {
-            "identifier": "poke:flint_crate"
+            "identifier": "poke_pfe:flint_crate"
         },
         "unlock": [
             {
                 "item": "minecraft:flint"
             },
             {
-                "item": "poke:empty_crate"
+                "item": "poke_pfe:empty_crate"
             }
         ],
         "ingredients": [
@@ -21,11 +21,11 @@
                 "count": 8
             },
             {
-                "item": "poke:empty_crate"
+                "item": "poke_pfe:empty_crate"
             }
         ],
         "result": {
-            "item": "poke:flint_crate"
+            "item": "poke_pfe:flint_crate"
         }
     }
 }

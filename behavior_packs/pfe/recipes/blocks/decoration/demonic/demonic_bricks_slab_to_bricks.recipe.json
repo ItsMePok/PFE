@@ -2,26 +2,26 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:demonic_bricks_slab_to_demonic_bricks"
+			"identifier": "poke_pfe:demonic_bricks_slab_to_demonic_bricks"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:demonic_bricks_slab"
+				"item": "poke_pfe:demonic_bricks_slab"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:demonic_bricks_slab"
+				"item": "poke_pfe:demonic_bricks_slab"
 			}
 		},
 		"pattern": [
 			"CC"
 		],
 		"result": {
-			"item": "poke:demonic_bricks"
+			"item": "poke_pfe:demonic_bricks"
 		},
 		"priority": 2
 	}

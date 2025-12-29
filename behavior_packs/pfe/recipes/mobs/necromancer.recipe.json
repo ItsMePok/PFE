@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:necromancer"
+			"identifier": "poke_pfe:necromancer"
 		},
 		"tags": [
 			"crafting_table"
@@ -41,7 +41,7 @@
 			}
 		},
 		"result": {
-			"item": "poke:spawn_necromancer"
+			"item": "poke_pfe:spawn_necromancer"
 		}
 	}
 }

@@ -2,8 +2,10 @@
 	"format_version": "1.10.0",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "poke:top_hat",
-			"render_controllers": ["controller.render.armor"],
+			"identifier": "poke_pfe:top_hat",
+			"render_controllers": [
+				"controller.render.armor"
+			],
 			"materials": {
 				"default": "entity_alphatest",
 				"enchanted": "entity_alphatest_glint"

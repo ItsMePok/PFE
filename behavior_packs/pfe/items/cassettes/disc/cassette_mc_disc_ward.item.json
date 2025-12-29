@@ -1,8 +1,11 @@
 {
-  "format_version": "1.21.100",
+  "format_version": "1.21.130",
   "minecraft:item": {
     "description": {
-      "identifier": "poke:cassette_mc_disc_ward"
+      "identifier": "poke_pfe:cassette_mc_disc_ward",
+      "menu_category": {
+        "category": "items"
+      }
     },
     "components": {
       "minecraft:display_name": {
@@ -17,7 +20,7 @@
       },
       "minecraft:tags": {
         "tags": [
-          "pfe:is_cassette",
+          "poke_pfe:is_cassette",
           "minecraft:music_disc"
         ]
       },

@@ -2,22 +2,22 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:molten_bulb"
+			"identifier": "poke_pfe:molten_bulb"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:molten_slimeball"
+				"item": "poke_pfe:molten_slimeball"
 			},
 			{
-				"item": "poke:cut_molten"
+				"item": "poke_pfe:cut_molten"
 			}
 		],
 		"key": {
 			"G": {
-				"item": "poke:cut_molten"
+				"item": "poke_pfe:cut_molten"
 			},
 			"C": {
 				"item": "glowstone"
@@ -29,7 +29,7 @@
 			"GGG"
 		],
 		"result": {
-			"item": "poke:molten_bulb",
+			"item": "poke_pfe:molten_bulb",
 			"count": 6
 		}
 	}

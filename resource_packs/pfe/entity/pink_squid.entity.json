@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "poke:pink_squid",
+			"identifier": "poke_pfe:pink_squid",
 			"materials": {
 				"default": "entity_alphatest"
 			},

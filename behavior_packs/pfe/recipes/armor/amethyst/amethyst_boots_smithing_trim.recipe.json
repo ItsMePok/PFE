@@ -2,7 +2,7 @@
   "format_version": "1.20.60",
   "minecraft:recipe_smithing_trim": {
     "description": {
-      "identifier": "poke:amethyst_boots_trim"
+      "identifier": "poke_pfe:creedite_boots_trim"
     },
     "tags": [
       "smithing_table"
@@ -10,7 +10,7 @@
     "template": {
       "tag": "minecraft:trim_templates"
     },
-    "base": "poke:amethyst_boots",
+    "base": "poke_pfe:creedite_boots",
     "addition": {
       "tag": "minecraft:trim_materials"
     }

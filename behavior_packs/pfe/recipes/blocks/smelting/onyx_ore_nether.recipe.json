@@ -2,13 +2,13 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_furnace": {
 		"description": {
-			"identifier": "poke:onyx_ore_nether"
+			"identifier": "poke_pfe:onyx_ore_nether"
 		},
 		"tags": [
 			"furnace",
 			"blast_furnace"
 		],
-		"input": "poke:nether_onyx_ore",
-		"output": "poke:onyx_ingot"
+		"input": "poke_pfe:nether_onyx_ore",
+		"output": "poke_pfe:onyx_ingot"
 	}
 }

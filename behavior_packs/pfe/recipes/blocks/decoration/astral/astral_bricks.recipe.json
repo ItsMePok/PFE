@@ -2,22 +2,22 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:astral_bricks_craft"
+			"identifier": "poke_pfe:astral_bricks_craft"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:astral_block"
+				"item": "poke_pfe:astral_block"
 			},
 			{
-				"item": "poke:astral_ingot"
+				"item": "poke_pfe:astral_ingot"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:cut_astral"
+				"item": "poke_pfe:cut_astral"
 			}
 		},
 		"pattern": [
@@ -25,7 +25,7 @@
 			"CC"
 		],
 		"result": {
-			"item": "poke:astral_bricks",
+			"item": "poke_pfe:astral_bricks",
 			"count": 4
 		}
 	}

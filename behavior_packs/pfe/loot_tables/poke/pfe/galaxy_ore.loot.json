@@ -1,16 +1,16 @@
 {
-	"pools": [
-		{
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "item",
-					"name": "poke:raw_galaxy"
-				}
-			]
-		},
+    "pools": [
         {
-            "rolls":1,
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "poke_pfe:raw_galaxy"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
             "entries": [
                 {
                     "type": "empty",
@@ -18,15 +18,15 @@
                 },
                 {
                     "type": "item",
-                    "name": "poke:pickaxe_hat",
+                    "name": "poke_pfe:pickaxe_hat",
                     "weight": 1
                 },
                 {
                     "type": "item",
-                    "name": "poke:pfe-ingot_pottery_sherd",
+                    "name": "poke_pfe:pfe-ingot_pottery_sherd",
                     "weight": 1
                 }
             ]
         }
-	]
+    ]
 }

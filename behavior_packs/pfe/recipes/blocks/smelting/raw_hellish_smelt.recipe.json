@@ -2,13 +2,13 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_furnace": {
 		"description": {
-			"identifier": "poke:raw_hellish_smelt"
+			"identifier": "poke_pfe:raw_hellish_smelt"
 		},
 		"tags": [
 			"furnace",
 			"blast_furnace"
 		],
-		"input": "poke:raw_hellish",
-		"output": "poke:hellish_ingot"
+		"input": "poke_pfe:raw_hellish",
+		"output": "poke_pfe:hellish_ingot"
 	}
 }

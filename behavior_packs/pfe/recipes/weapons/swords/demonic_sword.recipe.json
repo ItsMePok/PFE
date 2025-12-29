@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:demonic_sword"
+			"identifier": "poke_pfe:demonic_sword"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,28 +14,28 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:hellish_blade"
+				"item": "poke_pfe:hellish_sword"
 			},
 			{
-				"item": "poke:demonic_ingot"
+				"item": "poke_pfe:demonic_ingot"
 			}
 		],
 		"key": {
 			"Y": {
-				"item": "poke:demonic_block"
+				"item": "poke_pfe:demonic_block"
 			},
 			"X": {
-				"item": "poke:demonic_stick"
+				"item": "poke_pfe:demonic_stick"
 			},
 			"A": {
-				"item": "poke:hellish_blade"
+				"item": "poke_pfe:hellish_sword"
 			},
 			"U": {
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			}
 		},
 		"result": {
-			"item": "poke:demonic_sword"
+			"item": "poke_pfe:demonic_sword"
 		}
 	}
 }

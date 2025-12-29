@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:barometer"
+			"identifier": "poke_pfe:barometer"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,19 +14,19 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:cobalt_ingot"
+				"item": "poke_pfe:cobalt_ingot"
 			},
 			{
-				"item": "poke:cut_cobalt"
+				"item": "poke_pfe:cut_cobalt"
 			},
 			{
-				"item": "poke:wire"
+				"item": "poke_pfe:wire"
 			},
 			{
-				"item": "poke:rain_gem"
+				"item": "poke_pfe:rain_gem"
 			},
 			{
-				"item": "poke:electric_component"
+				"item": "poke_pfe:electric_component"
 			},
 			{
 				"item": "daylight_detector"
@@ -34,23 +34,23 @@
 		],
 		"key": {
 			"C": {
-				"item": "poke:cut_cobalt"
+				"item": "poke_pfe:cut_cobalt"
 			},
 			"W": {
-				"item": "poke:wire"
+				"item": "poke_pfe:wire"
 			},
 			"G": {
-				"item": "poke:rain_gem"
+				"item": "poke_pfe:rain_gem"
 			},
 			"E": {
-				"item": "poke:electric_component"
+				"item": "poke_pfe:electric_component"
 			},
 			"D": {
 				"item": "daylight_detector"
 			}
 		},
 		"result": {
-			"item": "poke:barometer"
+			"item": "poke_pfe:barometer"
 		}
 	}
 }

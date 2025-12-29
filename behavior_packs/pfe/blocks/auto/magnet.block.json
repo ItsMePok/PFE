@@ -1,13 +1,13 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:magnet",
+			"identifier": "poke_pfe:magnet",
 			"menu_category": {
 				"category": "items"
 			},
 			"states": {
-				"pfe:active": [
+				"poke_pfe:active": [
 					0,
 					1
 				]
@@ -63,7 +63,7 @@
 				}
 			},
 			{
-				"condition": "q.block_state('pfe:active') == 1",
+				"condition": "q.block_state('poke_pfe:active') == 1",
 				"components": {
 					"minecraft:light_emission": 5
 				}

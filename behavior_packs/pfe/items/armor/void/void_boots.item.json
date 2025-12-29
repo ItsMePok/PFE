@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:void_boots",
+			"identifier": "poke_pfe:void_boots",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -33,20 +33,20 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core",
-							"poke:void_block"
+							"poke_pfe:repair_core",
+							"poke_pfe:void_block"
 						],
 						"repair_amount": "query.max_durability"
 					},
 					{
 						"items": [
-							"poke:void_ingot"
+							"poke_pfe:void_ingot"
 						],
 						"repair_amount": "query.max_durability*0.25"
 					},
 					{
 						"items": [
-							"poke:void_nugget"
+							"poke_pfe:void_nugget"
 						],
 						"repair_amount": "query.max_durability*0.028"
 					}

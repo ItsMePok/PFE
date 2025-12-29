@@ -1,14 +1,14 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "poke:gravity_spell",
+			"identifier": "poke_pfe:gravity_spell",
 			"is_spawnable": false,
 			"is_summonable": true,
 			"is_experimental": false
 		},
 		"component_groups": {
-			"poke:despawn": {
+			"poke_pfe:despawn": {
 				"minecraft:instant_despawn": {}
 			}
 		},
@@ -67,16 +67,16 @@
 				"time": 20,
 				"looping": true,
 				"time_down_event": {
-					"event": "poke:despawn",
+					"event": "poke_pfe:despawn",
 					"target": "self"
 				}
 			}
 		},
 		"events": {
-			"poke:despawn": {
+			"poke_pfe:despawn": {
 				"add": {
 					"component_groups": [
-						"poke:despawn"
+						"poke_pfe:despawn"
 					]
 				}
 			}

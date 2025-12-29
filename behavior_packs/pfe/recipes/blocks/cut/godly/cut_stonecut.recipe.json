@@ -2,18 +2,18 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "poke:cut_godly_stonecut"
+			"identifier": "poke_pfe:cut_godly_stonecut"
 		},
 		"tags": [
 			"stonecutter"
 		],
 		"ingredients": [
 			{
-				"item": "poke:godly_block"
+				"item": "poke_pfe:godly_block"
 			}
 		],
 		"result": {
-			"item": "poke:cut_godly",
+			"item": "poke_pfe:cut_godly",
 			"count": 4
 		}
 	}

@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "poke:demonic_allay",
+			"identifier": "poke_pfe:demonic_allay",
 			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false
@@ -22,7 +22,7 @@
 					"vex",
 					"monster",
 					"mob",
-					"pfe:demonic_allay"
+					"poke_pfe:demonic_allay"
 				]
 			},
 			"minecraft:equipment": {

@@ -1,8 +1,8 @@
-import { GameMode, Player, PlayerPermissionLevel, RawMessage, world } from "@minecraft/server"
+import { Player, PlayerPermissionLevel, RawMessage, system, world } from "@minecraft/server"
 import { ActionFormData, ModalFormData } from "@minecraft/server-ui"
 import { PokeErrorScreen, PokeGetObjectById } from "./commonFunctions"
 const PokeCalendarVersion = 1
-const PokeCustomEventId = `poke:customEvents`
+const PokeCustomEventId = `poke_pfe:customEvents`
 interface PokeBirthdays {
   "day": number
   "month": number //Jan = 0
@@ -39,6 +39,29 @@ interface PokeDateConfig {
   },
   "weekday"?: number //Sunday = 0
 }
+export {
+  PFEHourTimeDownEvents,
+  PFETimeValidation
+}
+function PFEHourTimeDownEvents() {
+  let currentTime = new Date(Date.now())
+  //Cassette Trader spawning
+  //console.warn(`Attempting to spawn cassette trader`)
+  let allPlayers = world.getAllPlayers()
+  let randomPlayer = allPlayers.at(Math.abs(Math.round(Math.random() * (allPlayers.length - 1))))
+  randomPlayer?.dimension.spawnEntity('poke_pfe:cassette_trader', randomPlayer.location).runCommand(`spreadplayers ~ ~ 30 40 @s ~10`)
+}
+function PFETimeValidation() {
+  let currentTime = new Date(Date.now())
+  if (currentTime.getMinutes() == 0) {
+    PFEHourTimeDownEvents()
+  } else {
+    system.runTimeout(() => {
+      PFETimeValidation()
+    }, Math.abs(60 - new Date(Date.now()).getSeconds()) * 20)
+  }
+}
+
 /**
  * For now we only have major US holidays
  * 
@@ -47,19 +70,19 @@ interface PokeDateConfig {
 const PFEDefaultHolidays: PokeEventConfig[] = [
   {
     name: { text: `New Years Day` },
-    id: "poke-pfe:NewYear",
+    id: "poke_pfe:NewYear",
     dates: [{ month: 0, days: [1] }],
     repeat: true,
-    gift: `give @s poke:red_present 8`,
+    gift: `give @s poke_pfe:present 8`,
     icon: "textures/poke/common/new_year",
-    greeting: { translate: `translation.poke:timeNewYearGreet` },
+    greeting: { translate: `translation.poke_pfe:timeNewYearGreet` },
     fixedTime: false,
     nonModifiable: true,
     v: PokeCalendarVersion
   },
   /*{
     name:{text:`Martin Luther King Jr. Day`},
-    id:"poke-pfe:MLKJr",
+    id:"poke_pfe:MLKJr",
     dates:[{month:0,days:[15,16,17,18,19,20,21],weekday:1}],//Monday between Jan 15 - 21
     repeat:true,
     gift: undefined,
@@ -71,10 +94,10 @@ const PFEDefaultHolidays: PokeEventConfig[] = [
   },*/
   {
     name: { text: `Valentine's Day` },
-    id: "poke-pfe:ValentinesDay",
+    id: "poke_pfe:ValentinesDay",
     dates: [{ month: 1, days: [14] }],
     repeat: true,
-    gift: `give @s poke:red_present 8`,
+    gift: `give @s poke_pfe:present 8`,
     icon: "textures/poke/common/valentine",
     greeting: "generic",
     fixedTime: false,
@@ -83,10 +106,10 @@ const PFEDefaultHolidays: PokeEventConfig[] = [
   },
   {
     name: { text: `St. Patrick's Day` },
-    id: "poke-pfe:StPatrickDay",
+    id: "poke_pfe:StPatrickDay",
     dates: [{ month: 2, days: [17] }],
     repeat: true,
-    gift: `give @s poke:red_present 8`,
+    gift: `give @s poke_pfe:present 8`,
     icon: "textures/poke/common/st_patrick",
     greeting: "generic",
     fixedTime: false,
@@ -95,10 +118,10 @@ const PFEDefaultHolidays: PokeEventConfig[] = [
   },
   {
     name: { text: `April Fools` },
-    id: "poke-pfe:AprilFools",
+    id: "poke_pfe:AprilFools",
     dates: [{ month: 3, days: [1] }],
     repeat: true,
-    gift: `give @s poke:splash_death_potion`,
+    gift: `give @s poke_pfe:splash_death_potion`,
     icon: "textures/poke/common/april_fools",
     greeting: "generic",
     fixedTime: false,
@@ -107,7 +130,7 @@ const PFEDefaultHolidays: PokeEventConfig[] = [
   },
   /*{
     name:{text:`Cinco de Mayo`},
-    id:"poke-pfe:CincoDeMayo",
+    id:"poke_pfe:CincoDeMayo",
     dates:[{month:4,days:[5]}],
     repeat:true,
     gift: undefined,
@@ -119,7 +142,7 @@ const PFEDefaultHolidays: PokeEventConfig[] = [
   },*/
   /*{
     name:{text:`Memorial Day`},
-    id:"poke-pfe:MemorialDay",
+    id:"poke_pfe:MemorialDay",
     dates:[{month:4,days:[25,26,27,28,29,30,31],weekday:1}],
     repeat:true,
     gift: undefined,
@@ -131,7 +154,7 @@ const PFEDefaultHolidays: PokeEventConfig[] = [
   },*/
   /*{
     name:{text:`Juneteenth`},
-    id:"poke-pfe:Juneteenth",
+    id:"poke_pfe:Juneteenth",
     dates:[{month:5,days:[19]}],
     repeat:true,
     gift: undefined,
@@ -143,10 +166,10 @@ const PFEDefaultHolidays: PokeEventConfig[] = [
   },*/
   {
     name: { text: `Independence Day` },
-    id: "poke-pfe:IndependenceDay",
+    id: "poke_pfe:IndependenceDay",
     dates: [{ month: 6, days: [4] }],
     repeat: true,
-    gift: `structure load poke:4JulyGift ~~~`,
+    gift: `structure load poke_pfe:4JulyGift ~~~`,
     icon: "textures/poke/common/july_4th",
     greeting: "generic",
     fixedTime: false,
@@ -155,7 +178,7 @@ const PFEDefaultHolidays: PokeEventConfig[] = [
   },
   /*{
     name:{text:`Labor Day`},
-    id:"poke-pfe:LaborDay",
+    id:"poke_pfe:LaborDay",
     dates:[{month:8,days:[1,2,3,4,5,6,7],weekday:1}],//First Monday of September
     repeat:true,
     gift: undefined,
@@ -167,22 +190,22 @@ const PFEDefaultHolidays: PokeEventConfig[] = [
   },*/
   {
     name: { text: `Halloween` },
-    id: "poke-pfe:Halloween",
+    id: "poke_pfe:Halloween",
     dates: [{ month: 9, days: [31], }],
     repeat: true,
-    gift: `give @s poke:charred_poppy 16`,
+    gift: `give @s poke_pfe:charred_poppy 16`,
     icon: "textures/poke/common/halloween",
-    greeting: { translate: `translation.poke:timeHalloweenGreet` },
+    greeting: { translate: `translation.poke_pfe:timeHalloweenGreet` },
     fixedTime: false,
     nonModifiable: true,
     v: PokeCalendarVersion
   },
   {
     name: { text: `Thanksgiving` },
-    id: "poke-pfe:thanksgiving",
+    id: "poke_pfe:thanksgiving",
     dates: [{ month: 10, days: [23, 24, 25, 26, 27, 28], weekday: 4 }],//This will only trigger on Thursday even though other days are listed
     repeat: true,
-    gift: `give @s poke:red_present 8`,
+    gift: `give @s poke_pfe:present 8`,
     icon: "textures/poke/common/thanksgiving",
     greeting: "generic",
     fixedTime: false,
@@ -194,9 +217,9 @@ const PFEDefaultHolidays: PokeEventConfig[] = [
     id: "just:Easter",
     dates: [{ month: 11, days: [24, 25] }],
     repeat: true,
-    gift: `give @s poke:red_present 16`,
+    gift: `give @s poke_pfe:present 16`,
     icon: "textures/poke/common/xmas",
-    greeting: { translate: `translation.poke:timeHolidayGreet` },
+    greeting: { translate: `translation.poke_pfe:timeHolidayGreet` },
     fixedTime: false,
     nonModifiable: true,
     v: PokeCalendarVersion
@@ -227,7 +250,7 @@ function PokeTimeCheck(event: PokeEventConfig, player: Player, claimCheck?: bool
     if ((event.repeat === false && !(date.years?.includes(currentTime.getUTCFullYear())))) continue;
     if (claimCheck) {
       if (!event.gift) continue;
-      if (player.hasTag(`poke:${currentTime.getFullYear()}E-${event.id}`)) continue;
+      if (player.hasTag(`poke_pfe:${currentTime.getFullYear()}E-${event.id}`)) continue;
     }
     return true
   }
@@ -275,7 +298,7 @@ function PokeTimeDebug(player: Player) {
       return
     } else selection++
     if (response.selection == selection) {
-      player.setDynamicProperty(`poke:birthday`, JSON.stringify({ day: 1, month: 0, id: player.id, announce: false, name: player.name, style: "normal", year: undefined }))
+      player.setDynamicProperty(`poke_pfe:birthday`, JSON.stringify({ day: 1, month: 0, id: player.id, announce: false, name: player.name, style: "normal", year: undefined }))
       return
     } else selection++
     if (response.selection == selection) {
@@ -298,7 +321,7 @@ function PokeTimeDebug(player: Player) {
         return
       }
       birthdays = JSON.parse(birthdays).concat(newBirthdays)
-      world.setDynamicProperty(`poke:birthdays`, JSON.stringify(birthdays))
+      world.setDynamicProperty(`poke_pfe:birthdays`, JSON.stringify(birthdays))
       return
     } else selection++
   }))
@@ -320,7 +343,7 @@ function PokeTimeConfigUIMainMenu(player: Player) {
   let UI = new ActionFormData()
   UI.body(
     {
-      translate: `translation.poke:timeUiMainMenuBody`, with: {
+      translate: `translation.poke_pfe:timeUiMainMenuBody`, with: {
         rawtext: [
           PokeTimeGreeting(currentTime, player),
           { text: player.name },
@@ -331,21 +354,21 @@ function PokeTimeConfigUIMainMenu(player: Player) {
   if (player.hasTag(`debug`)) {
     UI.button(`Debug Menu`)
   }
-  if (!player.getDynamicProperty(`poke:timezone`)) {
-    UI.button({ translate: `translation.poke:timeSetTimezone` }, PokeTimeIcon(currentTime))
+  if (!player.getDynamicProperty(`poke_pfe:timezone`)) {
+    UI.button({ translate: `translation.poke_pfe:timeSetTimezone` }, PokeTimeIcon(currentTime))
   }
-  if (!player.getDynamicProperty(`poke:birthday`)) {
-    UI.button({ translate: `translation.poke:timeSetBirthday` }, `textures/poke/common/birthday_cake`)
+  if (!player.getDynamicProperty(`poke_pfe:birthday`)) {
+    UI.button({ translate: `translation.poke_pfe:timeSetBirthday` }, `textures/poke/common/birthday_cake`)
   }
-  UI.button({ translate: `translation.poke:timeUpcomingEvents` }, `textures/poke/common/upcoming_events`)
-  UI.button({ translate: `translation.poke:additionalOptions` }, `textures/poke/common/more_options`)
+  UI.button({ translate: `translation.poke_pfe:timeUpcomingEvents` }, `textures/poke/common/upcoming_events`)
+  UI.button({ translate: `translation.poke_pfe:additionalOptions` }, `textures/poke/common/more_options`)
   let events = PokeTimeGetAllEvents()
   let gifts: PokeEventConfig[] = []
   for (let i = events.length - 1; i > -1; i--) {
     let event = events.at(i)
     if (!event) continue;
     if (PokeTimeCheck(event, player, true)) {
-      UI.button({ translate: `translation.poke:claimGift`, with: { rawtext: [event.name] } }, `textures/poke/common/gift`)
+      UI.button({ translate: `translation.poke_pfe:claimGift`, with: { rawtext: [event.name] } }, `textures/poke/common/gift`)
       gifts = gifts.concat(event)
     }
   }
@@ -360,13 +383,13 @@ function PokeTimeConfigUIMainMenu(player: Player) {
         return
       } else selection++
     }
-    if (!player.getDynamicProperty(`poke:timezone`)) {
+    if (!player.getDynamicProperty(`poke_pfe:timezone`)) {
       if (response.selection == selection) {
         PokeSetTimeZone(player)
         return
       } else selection++
     }
-    if (!player.getDynamicProperty(`poke:birthday`)) {
+    if (!player.getDynamicProperty(`poke_pfe:birthday`)) {
       if (response.selection == selection) {
         PokeSetBirthday(player)
         return
@@ -388,7 +411,7 @@ function PokeTimeConfigUIMainMenu(player: Player) {
         }
         //console.warn(`Claiming: ${claimingGift}`)
         player.runCommand(`${claimingGift}`)
-        player.addTag(`poke:${currentTime.getFullYear()}E-${gifts.at(i)?.id}`)
+        player.addTag(`poke_pfe:${currentTime.getFullYear()}E-${gifts.at(i)?.id}`)
         return
       } else selection++
     }
@@ -397,19 +420,19 @@ function PokeTimeConfigUIMainMenu(player: Player) {
 function PokeSetBirthday(player: Player) {
   let UI = new ModalFormData()
   let currentBirthday: PokeBirthdays = { day: 1, month: 0, id: player.id, announce: false, name: player.name, style: "normal", year: undefined }
-  if (player.getDynamicProperty(`poke:birthday`)) {
-    UI.title({ translate: `translation.poke:timeChangeBirthday` })
-    currentBirthday = JSON.parse(player.getDynamicProperty(`poke:birthday`)!.toString())
+  if (player.getDynamicProperty(`poke_pfe:birthday`)) {
+    UI.title({ translate: `translation.poke_pfe:timeChangeBirthday` })
+    currentBirthday = JSON.parse(player.getDynamicProperty(`poke_pfe:birthday`)!.toString())
   } else {
-    UI.title({ translate: `translation.poke:timeSetBirthday` })
+    UI.title({ translate: `translation.poke_pfe:timeSetBirthday` })
   }
 
-  UI.dropdown({ translate: `translation.poke:setBirthdayDay` }, [`1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`, `10`, `11`, `12`, `13`, `14`, `15`, `16`, `17`, `18`, `19`, `20`, `21`, `22`, `23`, `24`, `25`, `26`, `27`, `28`, `29`, `30`, `31`], { defaultValueIndex: currentBirthday.day - 1 })
-  UI.dropdown({ translate: `translation.poke:setBirthdayMonth` }, [{ translate: `translation.poke:setBirthdayJan` }, { translate: `translation.poke:setBirthdayFeb` }, { translate: `translation.poke:setBirthdayMar` }, { translate: `translation.poke:setBirthdayApr` }, { translate: `translation.poke:setBirthdayMay` }, { translate: `translation.poke:setBirthdayJun` }, { translate: `translation.poke:setBirthdayJul` }, { translate: `translation.poke:setBirthdayAug` }, { translate: `translation.poke:setBirthdaySep` }, { translate: `translation.poke:setBirthdayOct` }, { translate: `translation.poke:setBirthdayNov` }, { translate: `translation.poke:setBirthdayDec` }], { defaultValueIndex: currentBirthday.month })
-  UI.toggle({ translate: `translation.poke:setBirthdayGlobalMessage` }, { defaultValue: currentBirthday.announce })
+  UI.dropdown({ translate: `translation.poke_pfe:setBirthdayDay` }, [`1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`, `10`, `11`, `12`, `13`, `14`, `15`, `16`, `17`, `18`, `19`, `20`, `21`, `22`, `23`, `24`, `25`, `26`, `27`, `28`, `29`, `30`, `31`], { defaultValueIndex: currentBirthday.day - 1 })
+  UI.dropdown({ translate: `translation.poke_pfe:setBirthdayMonth` }, [{ translate: `translation.poke_pfe:setBirthdayJan` }, { translate: `translation.poke_pfe:setBirthdayFeb` }, { translate: `translation.poke_pfe:setBirthdayMar` }, { translate: `translation.poke_pfe:setBirthdayApr` }, { translate: `translation.poke_pfe:setBirthdayMay` }, { translate: `translation.poke_pfe:setBirthdayJun` }, { translate: `translation.poke_pfe:setBirthdayJul` }, { translate: `translation.poke_pfe:setBirthdayAug` }, { translate: `translation.poke_pfe:setBirthdaySep` }, { translate: `translation.poke_pfe:setBirthdayOct` }, { translate: `translation.poke_pfe:setBirthdayNov` }, { translate: `translation.poke_pfe:setBirthdayDec` }], { defaultValueIndex: currentBirthday.month })
+  UI.toggle({ translate: `translation.poke_pfe:setBirthdayGlobalMessage` }, { defaultValue: currentBirthday.announce })
   UI.show(player).then((response => {
     if (response.canceled) {
-      if (player.getDynamicProperty(`poke:birthday`)) {
+      if (player.getDynamicProperty(`poke_pfe:birthday`)) {
         PokeTimeAdditionalOptions(player)
       } else {
         PokeTimeConfigUIMainMenu(player)
@@ -426,7 +449,7 @@ function PokeSetBirthday(player: Player) {
       id: player.id
     }
     if (response.formValues?.at(2)) {
-      let birthdays: PokeBirthdays[] = JSON.parse(world.getDynamicProperty(`poke:birthdays`)!.toString())
+      let birthdays: PokeBirthdays[] = JSON.parse(world.getDynamicProperty(`poke_pfe:birthdays`)!.toString())
       for (let i = birthdays.length - 1; i > -1; i--) {
         let birthday = birthdays.at(i)
         if (birthday && ((birthday.id == player.id) || (!birthday.id && (birthday.name == player.name)))) {
@@ -436,16 +459,16 @@ function PokeSetBirthday(player: Player) {
         }
         continue
       }
-      world.setDynamicProperty(`poke:birthdays`, JSON.stringify(birthdays))
-      player.setDynamicProperty(`poke:birthday`, JSON.stringify(newBirthday))
+      world.setDynamicProperty(`poke_pfe:birthdays`, JSON.stringify(birthdays))
+      player.setDynamicProperty(`poke_pfe:birthday`, JSON.stringify(newBirthday))
     } else {
-      let birthdays: PokeBirthdays[] = JSON.parse(world.getDynamicProperty(`poke:birthdays`)!.toString())
+      let birthdays: PokeBirthdays[] = JSON.parse(world.getDynamicProperty(`poke_pfe:birthdays`)!.toString())
       let replaceBirthday = PokeGetObjectById(birthdays, player.id)
       if (replaceBirthday) {
         birthdays = birthdays.slice(replaceBirthday.position, replaceBirthday.position)
-        world.setDynamicProperty(`poke:birthdays`, JSON.stringify(birthdays))
+        world.setDynamicProperty(`poke_pfe:birthdays`, JSON.stringify(birthdays))
       }
-      player.setDynamicProperty(`poke:birthday`, JSON.stringify(newBirthday))
+      player.setDynamicProperty(`poke_pfe:birthday`, JSON.stringify(newBirthday))
     }
   }))
 }
@@ -551,8 +574,8 @@ function PokeTimeIcon(currentTime: Date) {
 }
 function PokeTimeZoneOffset(player?: Player) {
   let timezone = undefined
-  if ((player?.getDynamicProperty(`poke:timezone`))) {
-    timezone = Number(player.getDynamicProperty(`poke:timezone`))
+  if ((player?.getDynamicProperty(`poke_pfe:timezone`))) {
+    timezone = Number(player.getDynamicProperty(`poke_pfe:timezone`))
     return timezone
   }
   return 0
@@ -729,7 +752,7 @@ function PokeSetTimeZone(player: Player) {
     if (response.canceled) {
       return
     }
-    player.setDynamicProperty(`poke:timezone`, Timezones.at(Number(response.selection))!.offset)
+    player.setDynamicProperty(`poke_pfe:timezone`, Timezones.at(Number(response.selection))!.offset)
     //console.warn(`saved time as ${Timezones.at(response.selection!)?.name}`)
   }))
 }
@@ -760,9 +783,9 @@ function PokeTimeGreeting(date: Date, player: Player, event?: PokeEventConfig, g
     }
   }
   let hour = date.getHours()
-  let morningGreeting: RawMessage = { translate: `translation.poke:timeMorningGreet` }
-  let noonGreeting: RawMessage = { translate: `translation.poke:timeNoonGreet` }
-  let nightGreeting: RawMessage = { translate: `translation.poke:timeNightGreet` }
+  let morningGreeting: RawMessage = { translate: `translation.poke_pfe:timeMorningGreet` }
+  let noonGreeting: RawMessage = { translate: `translation.poke_pfe:timeNoonGreet` }
+  let nightGreeting: RawMessage = { translate: `translation.poke_pfe:timeNightGreet` }
   switch (hour) {
     case 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11: { return morningGreeting; break }
     case 12 | 13 | 14 | 15 | 16: { return noonGreeting; break }
@@ -779,17 +802,17 @@ function PokeTimeEventInfoMenu(event: PokeEventConfig, player: Player) {
   Time until event starts: -
   Event Dates: -
   */
-  let giftString: RawMessage = { translate: `translation.poke:timeEventGift` }
+  let giftString: RawMessage = { translate: `translation.poke_pfe:timeEventGift` }
   if (!event.gift) {
     giftString = { text: `` }
   }
   UI.body(
-    { rawtext: [{ translate: `translation.poke:timeEventName` }, event.name, { text: `\n\n` }, { translate: `translation.poke:timeEventDates` }].concat(PokeTimeDateString(event).concat([{ text: `\n` }, giftString])) }
+    { rawtext: [{ translate: `translation.poke_pfe:timeEventName` }, event.name, { text: `\n\n` }, { translate: `translation.poke_pfe:timeEventDates` }].concat(PokeTimeDateString(event).concat([{ text: `\n` }, giftString])) }
   )
   if ((!event.nonModifiable) && ((player.playerPermissionLevel == PlayerPermissionLevel.Operator) || (player.hasTag(`poke-event_manager`)))) {
-    UI.button({ translate: `translation.poke:timeEditEvent` }, `textures/poke/common/edit`)
+    UI.button({ translate: `translation.poke_pfe:timeEditEvent` }, `textures/poke/common/edit`)
   }
-  UI.button({ translate: `translation.poke:goBack` }, `textures/poke/common/left_arrow`)
+  UI.button({ translate: `translation.poke_pfe:goBack` }, `textures/poke/common/left_arrow`)
   UI.show(player).then((response => {
     let selection = 0
     if ((!event.nonModifiable) && ((player.playerPermissionLevel == PlayerPermissionLevel.Operator) || (player.hasTag(`poke-event_manager`)))) {
@@ -832,14 +855,14 @@ function PokeTimeUpcomingEventList(player: Player, page: number) {
   //console.warn(`done adding buttons, total: ${buttonCount}`)
   let nextPage = false
   if (totalEvents > (startPage + maxPerPage)) {
-    UI.button({ translate: `translation.poke:timeNextPage` }, `textures/poke/common/right_arrow`)
+    UI.button({ translate: `translation.poke_pfe:timeNextPage` }, `textures/poke/common/right_arrow`)
     nextPage = true
   }
   let prevPage = false
   if (page > 0) {
-    UI.button({ translate: `translation.poke:timePrevPage` }, `textures/poke/common/left_arrow`)
+    UI.button({ translate: `translation.poke_pfe:timePrevPage` }, `textures/poke/common/left_arrow`)
     prevPage = true
-  } else UI.button({ translate: 'translation.poke:goBack' }, `textures/poke/common/left_arrow`)
+  } else UI.button({ translate: 'translation.poke_pfe:goBack' }, `textures/poke/common/left_arrow`)
 
   UI.show(player).then((response => {
     let selection = 0
@@ -877,26 +900,26 @@ function PokeTimeUpcomingEventList(player: Player, page: number) {
 function PokeTimeAdditionalOptions(player: Player) {
   let currentTime = new Date(Date.now() + PokeTimeZoneOffset(player))
   let UI = new ActionFormData()
-  if (player.getDynamicProperty(`poke:timezone`)) {
-    UI.button({ translate: `translation.poke:timeChangeTimezone` }, PokeTimeIcon(currentTime))
+  if (player.getDynamicProperty(`poke_pfe:timezone`)) {
+    UI.button({ translate: `translation.poke_pfe:timeChangeTimezone` }, PokeTimeIcon(currentTime))
   }
-  if (player.getDynamicProperty(`poke:birthday`)) {
-    UI.button({ translate: `translation.poke:timeChangeBirthday` }, `textures/poke/common/birthday_cake`)
+  if (player.getDynamicProperty(`poke_pfe:birthday`)) {
+    UI.button({ translate: `translation.poke_pfe:timeChangeBirthday` }, `textures/poke/common/birthday_cake`)
   }
   if ((player.playerPermissionLevel == PlayerPermissionLevel.Operator) || (player.hasTag(`poke-event_manager`))) {
-    UI.button({ translate: `translation.poke:timeCreateEvent` }, `textures/poke/common/create_event`)
+    UI.button({ translate: `translation.poke_pfe:timeCreateEvent` }, `textures/poke/common/create_event`)
   }
-  UI.button({ translate: 'translation.poke:goBack' }, `textures/poke/common/left_arrow`)
+  UI.button({ translate: 'translation.poke_pfe:goBack' }, `textures/poke/common/left_arrow`)
   UI.show(player).then((response => {
 
     let selection = 0
-    if (player.getDynamicProperty(`poke:timezone`)) {
+    if (player.getDynamicProperty(`poke_pfe:timezone`)) {
       if (response.selection == selection) {
         PokeSetTimeZone(player)
         return
       } else selection++
     }
-    if (player.getDynamicProperty(`poke:birthday`)) {
+    if (player.getDynamicProperty(`poke_pfe:birthday`)) {
       if (response.selection == selection) {
         PokeSetBirthday(player)
         return
@@ -936,18 +959,18 @@ function PokeTimeGetNextTime(event: PokeEventConfig, player: Player) {
 function PokeTimeDateString(event: PokeEventConfig, player?: Player) {
   let returnString: RawMessage[] = []
   let monthStrings: RawMessage[] = [
-    { translate: `translation.poke:setBirthdayJan` },
-    { translate: `translation.poke:setBirthdayFeb` },
-    { translate: `translation.poke:setBirthdayMar` },
-    { translate: `translation.poke:setBirthdayApr` },
-    { translate: `translation.poke:setBirthdayMay` },
-    { translate: `translation.poke:setBirthdayJun` },
-    { translate: `translation.poke:setBirthdayJul` },
-    { translate: `translation.poke:setBirthdayAug` },
-    { translate: `translation.poke:setBirthdaySep` },
-    { translate: `translation.poke:setBirthdayOct` },
-    { translate: `translation.poke:setBirthdayNov` },
-    { translate: `translation.poke:setBirthdayDec` }
+    { translate: `translation.poke_pfe:setBirthdayJan` },
+    { translate: `translation.poke_pfe:setBirthdayFeb` },
+    { translate: `translation.poke_pfe:setBirthdayMar` },
+    { translate: `translation.poke_pfe:setBirthdayApr` },
+    { translate: `translation.poke_pfe:setBirthdayMay` },
+    { translate: `translation.poke_pfe:setBirthdayJun` },
+    { translate: `translation.poke_pfe:setBirthdayJul` },
+    { translate: `translation.poke_pfe:setBirthdayAug` },
+    { translate: `translation.poke_pfe:setBirthdaySep` },
+    { translate: `translation.poke_pfe:setBirthdayOct` },
+    { translate: `translation.poke_pfe:setBirthdayNov` },
+    { translate: `translation.poke_pfe:setBirthdayDec` }
   ]
   for (let i = event.dates.length - 1; i > -1; i--) {
     //console.warn(i)
@@ -979,21 +1002,21 @@ function PokeTimeCreateEvent(player: Player, event?: PokeEventConfig) {
       greeting: "generic",
       v: PokeCalendarVersion
     }
-    UI.title({ translate: `translation.poke:timeCreateEventTitle` })
+    UI.title({ translate: `translation.poke_pfe:timeCreateEventTitle` })
   } else {
     providedEvent = true
-    UI.title({ translate: `translation.poke:timeEditEventTitle` })
+    UI.title({ translate: `translation.poke_pfe:timeEditEventTitle` })
     if (event.name.text) {
       eventName = event.name.text
     } else {
       eventName = `%${event.name.translate}`
     }
   }
-  UI.textField({ translate: `translation.poke:timeEventId`, with: [``] }, ``, { defaultValue: event.id })
-  UI.textField({ translate: `translation.poke:timeEventName`, with: [``] }, ``, { defaultValue: eventName })
-  UI.dropdown({ translate: `translation.poke:setBirthdayDay` }, [`1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`, `10`, `11`, `12`, `13`, `14`, `15`, `16`, `17`, `18`, `19`, `20`, `21`, `22`, `23`, `24`, `25`, `26`, `27`, `28`, `29`, `30`, `31`], { defaultValueIndex: Number(event.dates.at(0)?.days?.at(0)) - 1 })
-  UI.dropdown({ translate: `translation.poke:setBirthdayMonth` }, [{ translate: `translation.poke:setBirthdayJan` }, { translate: `translation.poke:setBirthdayFeb` }, { translate: `translation.poke:setBirthdayMar` }, { translate: `translation.poke:setBirthdayApr` }, { translate: `translation.poke:setBirthdayMay` }, { translate: `translation.poke:setBirthdayJun` }, { translate: `translation.poke:setBirthdayJul` }, { translate: `translation.poke:setBirthdayAug` }, { translate: `translation.poke:setBirthdaySep` }, { translate: `translation.poke:setBirthdayOct` }, { translate: `translation.poke:setBirthdayNov` }, { translate: `translation.poke:setBirthdayDec` }], { defaultValueIndex: event.dates.at(0)?.month })
-  UI.toggle({ translate: `translation.poke:timeLoopEvent` }, { defaultValue: event.repeat })
+  UI.textField({ translate: `translation.poke_pfe:timeEventId`, with: [``] }, ``, { defaultValue: event.id })
+  UI.textField({ translate: `translation.poke_pfe:timeEventName`, with: [``] }, ``, { defaultValue: eventName })
+  UI.dropdown({ translate: `translation.poke_pfe:setBirthdayDay` }, [`1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`, `10`, `11`, `12`, `13`, `14`, `15`, `16`, `17`, `18`, `19`, `20`, `21`, `22`, `23`, `24`, `25`, `26`, `27`, `28`, `29`, `30`, `31`], { defaultValueIndex: Number(event.dates.at(0)?.days?.at(0)) - 1 })
+  UI.dropdown({ translate: `translation.poke_pfe:setBirthdayMonth` }, [{ translate: `translation.poke_pfe:setBirthdayJan` }, { translate: `translation.poke_pfe:setBirthdayFeb` }, { translate: `translation.poke_pfe:setBirthdayMar` }, { translate: `translation.poke_pfe:setBirthdayApr` }, { translate: `translation.poke_pfe:setBirthdayMay` }, { translate: `translation.poke_pfe:setBirthdayJun` }, { translate: `translation.poke_pfe:setBirthdayJul` }, { translate: `translation.poke_pfe:setBirthdayAug` }, { translate: `translation.poke_pfe:setBirthdaySep` }, { translate: `translation.poke_pfe:setBirthdayOct` }, { translate: `translation.poke_pfe:setBirthdayNov` }, { translate: `translation.poke_pfe:setBirthdayDec` }], { defaultValueIndex: event.dates.at(0)?.month })
+  UI.toggle({ translate: `translation.poke_pfe:timeLoopEvent` }, { defaultValue: event.repeat })
 
   UI.show(player).then((response => {
     if (response.canceled && event.id == ``) {
@@ -1101,20 +1124,20 @@ function PokeTimeCreateEvent(player: Player, event?: PokeEventConfig) {
  */
 function PokeEventOptions(player: Player, event: PokeEventConfig) {
   let UI = new ActionFormData()
-  UI.title({ translate: `translation.poke:timeEventOptionsTitle` })
+  UI.title({ translate: `translation.poke_pfe:timeEventOptionsTitle` })
   if (event.gift) {
-    UI.button({ translate: `translation.poke:timeEditEventGift` }, 'textures/poke/common/edit_gift')
+    UI.button({ translate: `translation.poke_pfe:timeEditEventGift` }, 'textures/poke/common/edit_gift')
   } else {
-    UI.button({ translate: `translation.poke:timeAddEventGift` }, 'textures/poke/common/add_gift')
+    UI.button({ translate: `translation.poke_pfe:timeAddEventGift` }, 'textures/poke/common/add_gift')
   }
   if (event.greeting) {
-    UI.button({ translate: `translation.poke:timeEditGreeting` }, 'textures/poke/common/edit_greeting')
+    UI.button({ translate: `translation.poke_pfe:timeEditGreeting` }, 'textures/poke/common/edit_greeting')
   } else {
-    UI.button({ translate: `translation.poke:timeAddGreeting` }, 'textures/poke/common/add_greeting')
+    UI.button({ translate: `translation.poke_pfe:timeAddGreeting` }, 'textures/poke/common/add_greeting')
   }
-  UI.button({ translate: `translation.poke:timeEventOptionsEditTime` }, `textures/poke/common/edit`)
-  UI.button({ translate: `translation.poke:timeDeleteEvent` }, `textures/poke/common/trash`)
-  UI.button({ translate: `translation.poke:goBack` }, `textures/poke/common/left_arrow`)
+  UI.button({ translate: `translation.poke_pfe:timeEventOptionsEditTime` }, `textures/poke/common/edit`)
+  UI.button({ translate: `translation.poke_pfe:timeDeleteEvent` }, `textures/poke/common/trash`)
+  UI.button({ translate: `translation.poke_pfe:goBack` }, `textures/poke/common/left_arrow`)
 
   UI.show(player).then((response => {
     let selection = 0
@@ -1143,10 +1166,10 @@ function PokeEventOptions(player: Player, event: PokeEventConfig) {
 
 function PokeTimeEditGift(player: Player, event: PokeEventConfig) {
   let UI = new ModalFormData()
-  UI.title({ translate: `translation.poke:timeEditGiftTitle` })
+  UI.title({ translate: `translation.poke_pfe:timeEditGiftTitle` })
   let currentGift = event.gift
   if (!currentGift) currentGift = ``;
-  UI.textField({ translate: `translation.poke:timeEditGiftTextFieldLabel` }, ``, { defaultValue: currentGift })
+  UI.textField({ translate: `translation.poke_pfe:timeEditGiftTextFieldLabel` }, ``, { defaultValue: currentGift })
 
   UI.show(player).then((response => {
     if (response.canceled) {
@@ -1182,7 +1205,7 @@ function PokeTimeEditGift(player: Player, event: PokeEventConfig) {
 
 function PokeTimeEditGreeting(player: Player, event: PokeEventConfig) {
   let UI = new ModalFormData()
-  UI.title({ translate: `translation.poke:timeEditGreetingTitle` })
+  UI.title({ translate: `translation.poke_pfe:timeEditGreetingTitle` })
   let greeting = `generic`
   if ((typeof event.greeting != "string") && (typeof event.greeting != "undefined")) {
     if (event.greeting.text) {
@@ -1191,7 +1214,7 @@ function PokeTimeEditGreeting(player: Player, event: PokeEventConfig) {
       greeting = `%${event.greeting.translate}`
     }
   }
-  UI.textField({ translate: `translation.poke:timeEditGreetingTextFieldLabel` }, ``, { defaultValue: greeting })
+  UI.textField({ translate: `translation.poke_pfe:timeEditGreetingTextFieldLabel` }, ``, { defaultValue: greeting })
   UI.show(player).then((response => {
     if (response.canceled) {
       PokeEventOptions(player, event)
@@ -1232,15 +1255,15 @@ function PokeTimeEditGreeting(player: Player, event: PokeEventConfig) {
 
 function PokeTimeDeleteEvent(player: Player, event: PokeEventConfig) {
   let UI = new ModalFormData()
-  UI.title({ translate: `translation.poke:timeDeleteEventTitle`, with: [event.id] })
-  UI.textField({ translate: `translation.poke:timeDeleteEventConfirmField` }, ``)
+  UI.title({ translate: `translation.poke_pfe:timeDeleteEventTitle`, with: [event.id] })
+  UI.textField({ translate: `translation.poke_pfe:timeDeleteEventConfirmField` }, ``)
   UI.show(player).then((response => {
     if (response.canceled) {
       PokeEventOptions(player, event)
       return
     } else {
       if (response.formValues?.at(0)?.toString().toLowerCase() != event.id.toLowerCase()) {
-        PokeErrorScreen(player, { translate: `translation.poke:timeErrorIncorrectDeleteId` }, PokeEventOptions(player, event))
+        PokeErrorScreen(player, { translate: `translation.poke_pfe:timeErrorIncorrectDeleteId` }, PokeEventOptions(player, event))
         return
       }
       //console.warn(`Deleting: ${event.id}`)

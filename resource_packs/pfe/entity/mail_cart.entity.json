@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "poke:mail_cart",
+			"identifier": "poke_pfe:mail_cart",
 			"min_engine_version": "1.10.0",
 			"materials": {
 				"default": "minecart" //2

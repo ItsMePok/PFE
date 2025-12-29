@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:spell_crafter",
+			"identifier": "poke_pfe:spell_crafter",
 			"menu_category": {
 				"category": "items"
 			},
@@ -22,10 +22,10 @@
 					"items": [
 						"1:minecraft:paper",
 						"3:minecraft:feather",
-						"1:poke:sugar_water"
+						"1:poke_pfe:sugar_water"
 					],
 					"result": [
-						"4:poke:dodge_spell"
+						"4:poke_pfe:dodge_spell"
 					]
 				},
 				{
@@ -45,7 +45,7 @@
 						"1:minecraft:fire_charge"
 					],
 					"result": [
-						"4:poke:fireball_spell"
+						"4:poke_pfe:fireball_spell"
 					]
 				},
 				{
@@ -53,10 +53,10 @@
 					"items": [
 						"1:minecraft:paper",
 						"1:minecraft:ender_pearl",
-						"3:poke:astral_ingot"
+						"3:poke_pfe:astral_ingot"
 					],
 					"result": [
-						"4:poke:gravity_spell"
+						"4:poke_pfe:gravity_spell"
 					]
 				},
 				{
@@ -66,7 +66,7 @@
 						"2:minecraft:glass"
 					],
 					"result": [
-						"4:poke:empty_vial"
+						"4:poke_pfe:empty_vial"
 					]
 				},
 				{
@@ -76,17 +76,17 @@
 						"1:minecraft:brick"
 					],
 					"result": [
-						"1:poke:pfe-spell_pottery_sherd"
+						"1:poke_pfe:pfe-spell_pottery_sherd"
 					]
 				},
 				{
 					"recipe_type": "shapeless",
 					"items": [
-						"8:poke:void_ingot",
-						"1:poke:smooth_limestone"
+						"8:poke_pfe:void_ingot",
+						"1:poke_pfe:smooth_limestone"
 					],
 					"result": [
-						"1:poke:magic_8_ball"
+						"1:poke_pfe:magic_8_ball"
 					]
 				}
 			],

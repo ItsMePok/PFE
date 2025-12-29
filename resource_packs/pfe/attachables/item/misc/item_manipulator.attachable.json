@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "poke:item_manipulator",
+			"identifier": "poke_pfe:item_manipulator",
 			"render_controllers": [
 				"controller.render.item_default"
 			],

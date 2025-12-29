@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:hellish_blade"
+			"identifier": "poke_pfe:hellish_sword"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,28 +14,28 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:onyx_sword"
+				"item": "poke_pfe:onyx_sword"
 			},
 			{
-				"item": "poke:hellish_ingot"
+				"item": "poke_pfe:hellish_ingot"
 			}
 		],
 		"key": {
 			"Y": {
-				"item": "poke:hellish_ingot"
+				"item": "poke_pfe:hellish_ingot"
 			},
 			"X": {
-				"item": "poke:demonic_stick"
+				"item": "poke_pfe:demonic_stick"
 			},
 			"A": {
-				"item": "poke:onyx_sword"
+				"item": "poke_pfe:onyx_sword"
 			},
 			"U": {
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			}
 		},
 		"result": {
-			"item": "poke:hellish_blade"
+			"item": "poke_pfe:hellish_sword"
 		}
 	}
 }

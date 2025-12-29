@@ -2,19 +2,19 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:cut_radium_crafting_table"
+			"identifier": "poke_pfe:cut_radium_crafting_table"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:radium_ingot"
+				"item": "poke_pfe:radium_ingot"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:radium_block"
+				"item": "poke_pfe:radium_block"
 			}
 		},
 		"pattern": [
@@ -22,7 +22,7 @@
 			"CC"
 		],
 		"result": {
-			"item": "poke:cut_radium",
+			"item": "poke_pfe:cut_radium",
 			"count": 12
 		},
 		"priority": 0

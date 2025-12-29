@@ -5,7 +5,7 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "poke:spawn_shopkeeper"
+                    "name": "poke_pfe:spawn_shopkeeper"
                 }
             ]
         }

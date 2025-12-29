@@ -2,7 +2,7 @@
     "format_version": "1.20.60",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "poke:gilded_melon"
+            "identifier": "poke_pfe:gilded_melon"
         },
         "tags": [
             "crafting_table"
@@ -23,16 +23,16 @@
                 "item": "melon_seeds"
             },
             {
-                "item": "poke:pocket_knife"
+                "item": "poke_pfe:pocket_knife"
             },
             {
-                "item": "poke:carved_melon"
+                "item": "poke_pfe:carved_melon"
             },
             {
-                "item": "poke:gilded_carved_melon"
+                "item": "poke_pfe:gilded_carved_melon"
             },
             {
-                "item": "poke:carved_carved_melon"
+                "item": "poke_pfe:carved_carved_melon"
             }
         ],
         "key": {
@@ -47,7 +47,7 @@
             }
         },
         "result": {
-            "item": "poke:gilded_melon"
+            "item": "poke_pfe:gilded_melon"
         }
     }
 }

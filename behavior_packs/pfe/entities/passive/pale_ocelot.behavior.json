@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "poke:pale_ocelot",
+			"identifier": "poke_pfe:pale_ocelot",
 			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false
@@ -105,8 +105,8 @@
 				"minecraft:breedable": {
 					"require_tame": false,
 					"breeds_with": {
-						"mate_type": "poke:pale_ocelot",
-						"baby_type": "poke:pale_ocelot",
+						"mate_type": "poke_pfe:pale_ocelot",
+						"baby_type": "poke_pfe:pale_ocelot",
 						"breed_event": {
 							"event": "minecraft:entity_born",
 							"target": "baby"

@@ -2,31 +2,31 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:ember_scythe"
+			"identifier": "poke_pfe:ember_scythe"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:demonic_slasher"
+				"item": "poke_pfe:demonic_scythe"
 			}
 		],
 		"key": {
 			"S": {
-				"item": "poke:demonic_stick"
+				"item": "poke_pfe:demonic_stick"
 			},
 			"X": {
-				"item": "poke:demonic_block"
+				"item": "poke_pfe:demonic_block"
 			},
 			"Y": {
-				"item": "poke:molten_slimeball"
+				"item": "poke_pfe:molten_slimeball"
 			},
 			"D": {
-				"item": "poke:demonic_slasher"
+				"item": "poke_pfe:demonic_scythe"
 			},
 			"U": {
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			}
 		},
 		"pattern": [
@@ -35,7 +35,7 @@
 			"DU "
 		],
 		"result": {
-			"item": "poke:ember_scythe"
+			"item": "poke_pfe:ember_scythe"
 		}
 	}
 }

@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "poke:pirate_hat",
+			"identifier": "poke_pfe:pirate_hat",
 			"render_controllers": [
 				"controller.render.pirate_hat"
 			],

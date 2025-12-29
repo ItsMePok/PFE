@@ -1,9 +1,19 @@
 {
-	"format_version":"1.16.100",
-	"minecraft:recipe_shapeless":{
-		"description":{"identifier":"poke:molten_b_w_sc_b"},
-		"tags":["stonecutter"],
-		"ingredients":[{"item":"poke:molten_bricks"}],
-		"result":{"item":"poke:molten_brick_wall"}
+	"format_version": "1.16.100",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "poke_pfe:molten_b_w_sc_b"
+		},
+		"tags": [
+			"stonecutter"
+		],
+		"ingredients": [
+			{
+				"item": "poke_pfe:molten_bricks"
+			}
+		],
+		"result": {
+			"item": "poke_pfe:molten_brick_wall"
+		}
 	}
 }

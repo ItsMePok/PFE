@@ -1,23 +1,26 @@
 {
 	"header": {
-		"name": "v1.3.0 PFE §cBP§r",
+		"name": "v1.3.01 PFE §cBP§r",
 		"description": "Wiki: https:pfewiki.gitbook.io/home",
 		"pack_scope": "world",
-		"uuid": "85172ee0-50ae-4f50-85a5-98e66c411f86",
+		"uuid": "9a69f911-6668-4e08-ba47-372391736832",
 		"version": [
 			1,
 			3,
-			0
+			1
 		],
 		"min_engine_version": [
 			1,
 			21,
-			100
+			130
 		]
 	},
+	"capabilities": [
+		"pbr"
+	],
 	"modules": [
 		{
-			"uuid": "0932aed9-1cfd-42e7-91f5-afe0525a2914",
+			"uuid": "115ef909-4b14-48c9-b266-3fb4ccd1b91d",
 			"version": [
 				1,
 				0,
@@ -30,16 +33,16 @@
 	],
 	"dependencies": [
 		{ //RP Manifest
-			"uuid": "4b9732a7-23d0-4fe2-ae1d-50b6d1b91cd6",
+			"uuid": "b2539b9a-b8b3-4864-ac78-a1aa051b28ab",
 			"version": [
 				1,
 				3,
-				0
+				1
 			]
 		},
 		{
 			"module_name": "@minecraft/server",
-			"version": "2.1.0"
+			"version": "2.4.0"
 		},
 		{
 			"module_name": "@minecraft/server-ui",

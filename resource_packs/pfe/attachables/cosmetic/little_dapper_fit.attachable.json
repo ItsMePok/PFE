@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "poke:little_dapper_fit",
+			"identifier": "poke_pfe:little_dapper_fit",
 			"render_controllers": [
 				"controller.render.armor"
 			],

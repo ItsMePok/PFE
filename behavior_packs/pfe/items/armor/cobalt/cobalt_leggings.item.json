@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke_pfe:cobalt_leggings",
@@ -37,20 +37,20 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core",
-							"poke:cobalt_block"
+							"poke_pfe:repair_core",
+							"poke_pfe:cobalt_block"
 						],
 						"repair_amount": "query.max_durability"
 					},
 					{
 						"items": [
-							"poke:cobalt_ingot"
+							"poke_pfe:cobalt_ingot"
 						],
 						"repair_amount": "query.max_durability*0.25"
 					},
 					{
 						"items": [
-							"poke:cobalt_nugget"
+							"poke_pfe:cobalt_nugget"
 						],
 						"repair_amount": "query.max_durability*0.028"
 					}

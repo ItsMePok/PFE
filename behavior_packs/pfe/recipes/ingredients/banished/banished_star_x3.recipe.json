@@ -2,24 +2,24 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "poke:banished_star_x3"
+			"identifier": "poke_pfe:banished_star_x3"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:banished_star_x2"
+				"item": "poke_pfe:banished_star_x2"
 			}
 		],
 		"ingredients": [
 			{
-				"item": "poke:banished_star_x2",
+				"item": "poke_pfe:banished_star_x2",
 				"count": 9
 			}
 		],
 		"result": {
-			"item": "poke:banished_star_x3",
+			"item": "poke_pfe:banished_star_x3",
 			"count": 1
 		}
 	}

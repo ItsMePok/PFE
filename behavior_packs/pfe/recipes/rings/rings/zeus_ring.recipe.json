@@ -2,29 +2,29 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "poke:zeus_ring"
+			"identifier": "poke_pfe:zeus_ring"
 		},
-		"group": "pfe:rings",
+		"group": "poke_pfe:rings",
 		"ingredients": [
 			{
-				"item": "poke:diamond_gem_holder",
+				"item": "poke_pfe:diamond_gem_holder",
 				"count": 1
 			},
 			{
-				"item": "poke:zeus_gem",
+				"item": "poke_pfe:zeus_gem",
 				"count": 1
 			}
 		],
 		"unlock": [
 			{
-				"item": "poke:zeus_gem"
+				"item": "poke_pfe:zeus_gem"
 			}
 		],
 		"tags": [
 			"crafting_table"
 		],
 		"result": {
-			"item": "poke:zeus_ring",
+			"item": "poke_pfe:zeus_ring",
 			"count": 1
 		}
 	}

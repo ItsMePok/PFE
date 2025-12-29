@@ -15,16 +15,16 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:shade_ingot"
+				"item": "poke_pfe:shade_ingot"
 			},
 			{
-				"item": "poke:shade_block"
+				"item": "poke_pfe:shade_block"
 			},
 			{
 				"item": "minecraft:stick"
 			},
 			{
-				"item": "poke:upgrade_core"
+				"item": "poke_pfe:upgrade_core"
 			},
 			{
 				"item": "poke_pfe:cobalt_claymore"
@@ -32,16 +32,16 @@
 		],
 		"key": {
 			"I": {
-				"item": "poke:shade_ingot"
+				"item": "poke_pfe:shade_ingot"
 			},
 			"B": {
-				"item": "poke:shade_block"
+				"item": "poke_pfe:shade_block"
 			},
 			"S": {
 				"item": "minecraft:stick"
 			},
 			"U": {
-				"item": "poke:upgrade_core"
+				"item": "poke_pfe:upgrade_core"
 			},
 			"C": {
 				"item": "poke_pfe:cobalt_claymore"

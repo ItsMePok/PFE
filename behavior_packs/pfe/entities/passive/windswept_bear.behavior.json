@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "poke:windswept_bear",
+			"identifier": "poke_pfe:windswept_bear",
 			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false
@@ -129,7 +129,7 @@
 				"name_actions": {
 					"name_filter": "despawn",
 					"on_named": {
-						"event": "poke:despawn",
+						"event": "poke_pfe:despawn",
 						"target": "self"
 					}
 				}

@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:holy_helmet"
+			"identifier": "poke_pfe:holy_helmet"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,29 +14,29 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:onyx_helmet"
+				"item": "poke_pfe:onyx_helmet"
 			},
 			{
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			},
 			{
-				"item": "poke:holy_ingot"
+				"item": "poke_pfe:holy_ingot"
 			}
 		],
 		"key": {
 			"B": {
-				"item": "poke:holy_block"
+				"item": "poke_pfe:holy_block"
 			},
 			"#": {
-				"item": "poke:onyx_helmet"
+				"item": "poke_pfe:onyx_helmet"
 			},
 			"U": {
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			}
 		},
 		"result": [
 			{
-				"item": "poke:holy_helmet"
+				"item": "poke_pfe:holy_helmet"
 			}
 		]
 	}

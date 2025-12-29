@@ -2,22 +2,22 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:holy_trapdoor"
+			"identifier": "poke_pfe:holy_trapdoor"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:holy_ingot"
+				"item": "poke_pfe:holy_ingot"
 			},
 			{
-				"item": "poke:holy_block"
+				"item": "poke_pfe:holy_block"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:holy_ingot"
+				"item": "poke_pfe:holy_ingot"
 			}
 		},
 		"pattern": [
@@ -25,7 +25,7 @@
 			"CCC"
 		],
 		"result": {
-			"item": "poke:holy_trapdoor",
+			"item": "poke_pfe:holy_trapdoor",
 			"count": 4
 		}
 	}

@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:amethyst_axe"
+			"identifier": "poke_pfe:creedite_axe"
 		},
 		"tags": [
 			"crafting_table"
@@ -32,7 +32,7 @@
 			}
 		},
 		"result": {
-			"item": "poke:amethyst_axe"
+			"item": "poke_pfe:creedite_axe"
 		}
 	}
 }

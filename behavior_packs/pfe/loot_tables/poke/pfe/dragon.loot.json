@@ -5,7 +5,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "poke:diamond_token",
+					"name": "poke_pfe:diamond_token",
 					"functions": [
 						{
 							"function": "looting_enchant",
@@ -19,7 +19,7 @@
 				},
 				{
 					"type": "item",
-					"name": "poke:windzooka",
+					"name": "poke_pfe:windzooka",
 					"weight": 1,
 					"functions": [
 						{
@@ -37,7 +37,7 @@
 				},
 				{
 					"type": "item",
-					"name": "poke:windzooka",
+					"name": "poke_pfe:windzooka",
 					"weight": 1,
 					"functions": [
 						{
@@ -59,7 +59,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "poke:copper_token",
+					"name": "poke_pfe:copper_token",
 					"functions": [
 						{
 							"function": "looting_enchant",
@@ -80,7 +80,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "poke:iron_token"
+					"name": "poke_pfe:iron_token"
 				}
 			]
 		},
@@ -139,54 +139,54 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "poke:cobalt_block",
+					"name": "poke_pfe:cobalt_block",
 					"weight": 10,
 					"count": 2
 				},
 				{
 					"type": "item",
-					"name": "poke:scrappy_block",
+					"name": "poke_pfe:scrappy_block",
 					"weight": 7,
 					"count": 2
 				},
 				{
 					"type": "item",
-					"name": "poke:onyx_block",
+					"name": "poke_pfe:onyx_block",
 					"weight": 7
 				},
 				{
 					"type": "item",
-					"name": "poke:holy_block",
+					"name": "poke_pfe:holy_block",
 					"weight": 4
 				},
 				{
 					"type": "item",
-					"name": "poke:hellish_block",
+					"name": "poke_pfe:hellish_block",
 					"weight": 4
 				},
 				{
 					"type": "item",
-					"name": "poke:shade_block",
+					"name": "poke_pfe:shade_block",
 					"weight": 3
 				},
 				{
 					"type": "item",
-					"name": "poke:demonic_block",
+					"name": "poke_pfe:demonic_block",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:medic_block",
+					"name": "poke_pfe:medic_block",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:death_block",
+					"name": "poke_pfe:death_block",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:ember_block",
+					"name": "poke_pfe:molten_block",
 					"weight": 1
 				}
 			]

@@ -6,15 +6,15 @@
                 {
                     "type": "item",
                     "name": "minecraft:echo_shard",
-					"functions": [
-						{
-							"function": "looting_enchant",
-							"count": {
-								"min": 0,
-								"max": 1
-							}
-						}
-					]
+                    "functions": [
+                        {
+                            "function": "looting_enchant",
+                            "count": {
+                                "min": 0,
+                                "max": 1
+                            }
+                        }
+                    ]
                 },
                 {
                     "type": "empty"
@@ -22,15 +22,15 @@
             ]
         },
         {
-            "rolls":1,
-            "entries":[
+            "rolls": 1,
+            "entries": [
                 {
-                    "type":"empty",
+                    "type": "empty",
                     "weight": 499
                 },
                 {
                     "type": "item",
-                    "name": "poke:pfe-enderman_pottery_sherd",
+                    "name": "poke_pfe:pfe-enderman_pottery_sherd",
                     "weight": 1
                 }
             ]

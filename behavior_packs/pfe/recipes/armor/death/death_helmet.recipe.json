@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:death_helmet"
+			"identifier": "poke_pfe:death_helmet"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,26 +14,26 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:void_helmet"
+				"item": "poke_pfe:void_helmet"
 			}
 		],
 		"key": {
 			"B": {
-				"item": "poke:death_block"
+				"item": "poke_pfe:death_block"
 			},
 			"#": {
-				"item": "poke:void_helmet"
+				"item": "poke_pfe:void_helmet"
 			},
 			"U": {
-				"item": "poke:platinum_upgrade_core"
+				"item": "poke_pfe:platinum_upgrade_core"
 			},
 			"X": {
-				"item": "poke:molten_helmet"
+				"item": "poke_pfe:molten_helmet"
 			}
 		},
 		"result": [
 			{
-				"item": "poke:death_helmet"
+				"item": "poke_pfe:death_helmet"
 			}
 		]
 	}

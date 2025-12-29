@@ -2,19 +2,19 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:chiseled_honey_bricks"
+			"identifier": "poke_pfe:chiseled_honey_bricks"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:honey_bricks_slab"
+				"item": "poke_pfe:honey_bricks_slab"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:honey_bricks_slab"
+				"item": "poke_pfe:honey_bricks_slab"
 			}
 		},
 		"pattern": [
@@ -22,7 +22,7 @@
 			"C"
 		],
 		"result": {
-			"item": "poke:chiseled_honey_bricks"
+			"item": "poke_pfe:chiseled_honey_bricks"
 		},
 		"priority": 2
 	}

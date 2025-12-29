@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:nv_goggles"
+			"identifier": "poke_pfe:nv_goggles"
 		},
 		"tags": [
 			"crafting_table"
@@ -13,34 +13,34 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:shade_ingot"
+				"item": "poke_pfe:shade_ingot"
 			},
 			{
-				"item": "poke:wire"
+				"item": "poke_pfe:wire"
 			},
 			{
-				"item": "poke:electric_component"
+				"item": "poke_pfe:electric_component"
 			},
 			{
-				"item": "poke:goggles"
+				"item": "poke_pfe:goggles"
 			}
 		],
 		"key": {
 			"S": {
-				"item": "poke:shade_ingot"
+				"item": "poke_pfe:shade_ingot"
 			},
 			"W": {
-				"item": "poke:wire"
+				"item": "poke_pfe:wire"
 			},
 			"E": {
-				"item": "poke:electric_component"
+				"item": "poke_pfe:electric_component"
 			},
 			"G": {
-				"item": "poke:goggles"
+				"item": "poke_pfe:goggles"
 			}
 		},
 		"result": {
-			"item": "poke:night_vision_goggles"
+			"item": "poke_pfe:night_vision_goggles"
 		}
 	}
 }

@@ -2,7 +2,7 @@
     "format_version": "1.20.60",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "poke:zombifier"
+            "identifier": "poke_pfe:zombifier"
         },
         "pattern": [
             " R ",
@@ -11,7 +11,7 @@
         ],
         "unlock": [
             {
-                "item": "poke:necromancer_staff"
+                "item": "poke_pfe:necromancer_staff"
             }
         ],
         "tags": [
@@ -23,11 +23,11 @@
                 "item": "rotten_flesh"
             },
             "N": {
-                "item": "poke:necromancer_staff"
+                "item": "poke_pfe:necromancer_staff"
             }
         },
         "result": {
-            "item": "poke:zombifier"
+            "item": "poke_pfe:zombifier"
         }
     }
 }

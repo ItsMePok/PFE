@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:emerald_scythe"
+			"identifier": "poke_pfe:emerald_scythe"
 		},
 		"tags": [
 			"crafting_table"
@@ -32,7 +32,7 @@
 			}
 		},
 		"result": {
-			"item": "poke:emerald_scythe"
+			"item": "poke_pfe:emerald_scythe"
 		}
 	}
 }

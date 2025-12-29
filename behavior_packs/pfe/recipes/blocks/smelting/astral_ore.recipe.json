@@ -2,13 +2,13 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_furnace": {
 		"description": {
-			"identifier": "poke:astral_ore"
+			"identifier": "poke_pfe:astral_ore"
 		},
 		"tags": [
 			"furnace",
 			"blast_furnace"
-		], 
-		"input": "poke:astral_ore",
-		"output": "poke:astral_ingot"
+		],
+		"input": "poke_pfe:astral_ore",
+		"output": "poke_pfe:astral_ingot"
 	}
 }

@@ -5,14 +5,14 @@
             "crafting_table"
         ],
         "description": {
-            "identifier": "poke:sweet_berry_crate"
+            "identifier": "poke_pfe:sweet_berry_crate"
         },
         "unlock": [
             {
                 "item": "minecraft:sweet_berries"
             },
             {
-                "item": "poke:empty_crate"
+                "item": "poke_pfe:empty_crate"
             }
         ],
         "ingredients": [
@@ -21,11 +21,11 @@
                 "count": 8
             },
             {
-                "item": "poke:empty_crate"
+                "item": "poke_pfe:empty_crate"
             }
         ],
         "result": {
-            "item": "poke:sweet_berry_crate"
+            "item": "poke_pfe:sweet_berry_crate"
         }
     }
 }

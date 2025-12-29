@@ -2,13 +2,13 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_furnace": {
 		"description": {
-			"identifier": "poke:cracked_limestone_bricks"
+			"identifier": "poke_pfe:cracked_limestone_bricks"
 		},
 		"tags": [
 			"furnace",
 			"blast_furnace"
 		],
-		"input": "poke:limestone_bricks",
-		"output": "poke:cracked_limestone_bricks"
+		"input": "poke_pfe:limestone_bricks",
+		"output": "poke_pfe:cracked_limestone_bricks"
 	}
 }

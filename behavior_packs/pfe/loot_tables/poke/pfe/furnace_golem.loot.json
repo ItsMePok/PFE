@@ -5,7 +5,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "poke:charred_poppy",
+					"name": "poke_pfe:charred_poppy",
 					"functions": [
 						{
 							"function": "looting_enchant",
@@ -26,7 +26,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "poke:blazooka",
+					"name": "poke_pfe:blazooka",
 					"weight": 1,
 					"functions": [
 						{
@@ -44,7 +44,7 @@
 				},
 				{
 					"type": "item",
-					"name": "poke:blazooka",
+					"name": "poke_pfe:blazooka",
 					"weight": 1,
 					"functions": [
 						{
@@ -58,7 +58,7 @@
 				},
 				{
 					"type": "item",
-					"name": "poke:furnace_golem_trophy",
+					"name": "poke_pfe:furnace_golem_trophy",
 					"weight": 1
 				},
 				{
@@ -75,7 +75,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "poke:copper_token",
+					"name": "poke_pfe:copper_token",
 					"functions": [
 						{
 							"function": "looting_enchant",
@@ -96,7 +96,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "poke:iron_token"
+					"name": "poke_pfe:iron_token"
 				}
 			]
 		},
@@ -155,32 +155,32 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "poke:cobalt_block",
+					"name": "poke_pfe:cobalt_block",
 					"weight": 10
 				},
 				{
 					"type": "item",
-					"name": "poke:onyx_block",
+					"name": "poke_pfe:onyx_block",
 					"weight": 5
 				},
 				{
 					"type": "item",
-					"name": "poke:holy_block",
+					"name": "poke_pfe:holy_block",
 					"weight": 4
 				},
 				{
 					"type": "item",
-					"name": "poke:hellish_block",
+					"name": "poke_pfe:hellish_block",
 					"weight": 4
 				},
 				{
 					"type": "item",
-					"name": "poke:shade_block",
+					"name": "poke_pfe:shade_block",
 					"weight": 3
 				},
 				{
 					"type": "item",
-					"name": "poke:demonic_block",
+					"name": "poke_pfe:demonic_block",
 					"weight": 1
 				}
 			]

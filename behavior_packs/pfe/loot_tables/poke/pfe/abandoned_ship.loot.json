@@ -9,52 +9,52 @@
 				},
 				{
 					"type": "item",
-					"name": "poke:cassette_mc_disc_far",
+					"name": "poke_pfe:cassette_mc_disc_far",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:cassette_boss",
+					"name": "poke_pfe:cassette_boss",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:end_crystal_hat",
+					"name": "poke_pfe:end_crystal_hat",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:diamond_upgrade_core",
+					"name": "poke_pfe:diamond_upgrade_core",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:cobalt_golem_block",
+					"name": "poke_pfe:charged_cobalt_block",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:night_vision_goggles",
+					"name": "poke_pfe:night_vision_goggles",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:repair_core",
+					"name": "poke_pfe:repair_core",
 					"weight": 2
 				},
 				{
 					"type": "item",
-					"name": "poke:upgrade_core",
+					"name": "poke_pfe:upgrade_core",
 					"weight": 2
 				},
 				{
 					"type": "item",
-					"name": "poke:antenna",
+					"name": "poke_pfe:antenna",
 					"weight": 3
 				},
 				{
 					"type": "item",
-					"name": "poke:pfe-wizard_pottery_sherd",
+					"name": "poke_pfe:pfe-wizard_pottery_sherd",
 					"weight": 1
 				}
 			]
@@ -72,22 +72,22 @@
 				},
 				{
 					"type": "item",
-					"name": "poke:plastic",
+					"name": "poke_pfe:plastic",
 					"weight": 6
 				},
 				{
 					"type": "item",
-					"name": "poke:banished_star",
+					"name": "poke_pfe:banished_star",
 					"weight": 6
 				},
 				{
 					"type": "item",
-					"name": "poke:wire",
+					"name": "poke_pfe:wire",
 					"weight": 6
 				},
 				{
 					"type": "item",
-					"name": "poke:electric_component",
+					"name": "poke_pfe:electric_component",
 					"weight": 5
 				},
 				{
@@ -107,7 +107,7 @@
 				},
 				{
 					"type": "item",
-					"name": "poke:cobalt_ingot",
+					"name": "poke_pfe:cobalt_ingot",
 					"weight": 3
 				},
 				{
@@ -127,12 +127,12 @@
 				},
 				{
 					"type": "item",
-					"name": "poke:gps_module",
+					"name": "poke_pfe:gps_module",
 					"weight": 3
 				},
 				{
 					"type": "item",
-					"name": "poke:onyx_shaft",
+					"name": "poke_pfe:onyx_stick",
 					"weight": 2
 				},
 				{
@@ -142,37 +142,37 @@
 				},
 				{
 					"type": "item",
-					"name": "poke:magnet_core",
+					"name": "poke_pfe:magnet_core",
 					"weight": 2
 				},
 				{
 					"type": "item",
-					"name": "poke:block_breaker",
+					"name": "poke_pfe:block_breaker",
 					"weight": 2
 				},
 				{
 					"type": "item",
-					"name": "poke:dirter_up",
+					"name": "poke_pfe:dirter_up",
 					"weight": 2
 				},
 				{
 					"type": "item",
-					"name": "poke:cobblestone_gen",
+					"name": "poke_pfe:cobblestone_gen",
 					"weight": 2
 				},
 				{
 					"type": "item",
-					"name": "poke:duster_up",
+					"name": "poke_pfe:duster_up",
 					"weight": 2
 				},
 				{
 					"type": "item",
-					"name": "poke:red_button",
+					"name": "poke_pfe:red_button",
 					"weight": 2
 				},
 				{
 					"type": "item",
-					"name": "poke:receiver",
+					"name": "poke_pfe:receiver",
 					"weight": 2
 				},
 				{
@@ -187,22 +187,22 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "poke:copper_token",
+					"name": "poke_pfe:copper_token",
 					"weight": 10
 				},
 				{
 					"type": "item",
-					"name": "poke:iron_token",
+					"name": "poke_pfe:iron_token",
 					"weight": 15
 				},
 				{
 					"type": "item",
-					"name": "poke:gold_token",
+					"name": "poke_pfe:golden_token",
 					"weight": 5
 				},
 				{
 					"type": "item",
-					"name": "poke:diamond_token",
+					"name": "poke_pfe:diamond_token",
 					"weight": 1
 				},
 				{

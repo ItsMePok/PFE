@@ -2,14 +2,14 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:medic_block_craft"
+			"identifier": "poke_pfe:medic_block_craft"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:medic_ingot"
+				"item": "poke_pfe:medic_ingot"
 			}
 		],
 		"pattern": [
@@ -19,11 +19,11 @@
 		],
 		"key": {
 			"#": {
-				"item": "poke:medic_ingot"
+				"item": "poke_pfe:medic_ingot"
 			}
 		},
 		"result": {
-			"item": "poke:medic_block"
+			"item": "poke_pfe:medic_block"
 		}
 	}
 }

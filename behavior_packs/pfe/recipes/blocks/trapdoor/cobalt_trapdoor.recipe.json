@@ -2,22 +2,22 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:cobalt_trapdoor"
+			"identifier": "poke_pfe:cobalt_trapdoor"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:cobalt_ingot"
+				"item": "poke_pfe:cobalt_ingot"
 			},
 			{
-				"item": "poke:cobalt_block"
+				"item": "poke_pfe:cobalt_block"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:cobalt_ingot"
+				"item": "poke_pfe:cobalt_ingot"
 			}
 		},
 		"pattern": [
@@ -25,7 +25,7 @@
 			"CCC"
 		],
 		"result": {
-			"item": "poke:cobalt_trapdoor",
+			"item": "poke_pfe:cobalt_trapdoor",
 			"count": 4
 		}
 	}

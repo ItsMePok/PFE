@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "poke:woodspike_guardian",
+			"identifier": "poke_pfe:woodspike_guardian",
 			"runtime_identifier": "minecraft:guardian",
 			"is_spawnable": true,
 			"is_summonable": true,
@@ -31,7 +31,7 @@
 							"max_dist": 16
 						}
 					],
-					"attack_interval_min": 1,
+					"attack_interval": 1,
 					"must_see": true
 				},
 				"minecraft:target_nearby_sensor": {
@@ -88,7 +88,7 @@
 				"name_actions": {
 					"name_filter": "despawn",
 					"on_named": {
-						"event": "poke:despawn",
+						"event": "poke_pfe:despawn",
 						"target": "self"
 					}
 				}
@@ -167,7 +167,7 @@
 						"max_dist": 16
 					}
 				],
-				"attack_interval_min": 1,
+				"attack_interval": 1,
 				"must_see": true
 			},
 			"minecraft:target_nearby_sensor": {

@@ -2,6 +2,9 @@
 	"resource_pack_name": "poke",
 	"texture_name": "atlas.terrain",
 	"texture_data": {
+		"poke_pfe_automation_cobbler_face": {
+			"textures": "textures/poke/pfe/auto_cobbler_face"
+		},
 		"poke_pfe_upgrader_block": {
 			"textures": "textures/poke/pfe/upgrader"
 		},
@@ -215,7 +218,6 @@
 		"poke_pfe_zombken_sticker": {
 			"textures": "textures/poke/pfe/zombken_sticker"
 		},
-		/**/
 		"poke_pfe_knightling_trophy": {
 			"textures": "textures/poke/pfe/knightling_trophy"
 		},
@@ -248,54 +250,6 @@
 		},
 		"poke_pfe_spell_crafter": {
 			"textures": "textures/poke/pfe/spell_crafter"
-		},
-		"poke_pfe_cobbler_top": {
-			"textures": [
-				{
-					"path": "textures/poke/pfe/calibrated_block_breaker_bottom",
-					"overlay_color": "#757575"
-				},
-				{
-					"path": "textures/poke/pfe/calibrated_block_breaker_bottom",
-					"overlay_color": "#757575"
-				}
-			]
-		},
-		"poke_pfe_cobbler_flip": {
-			"textures": [
-				{
-					"path": "textures/poke/pfe/cobbler_flip",
-					"overlay_color": "#610310"
-				},
-				{
-					"path": "textures/poke/pfe/cobbler_flip",
-					"overlay_color": "#ce0c0c"
-				}
-			]
-		},
-		"poke_pfe_cobbler": {
-			"textures": [
-				{
-					"path": "textures/poke/pfe/cobbler",
-					"overlay_color": "#610310"
-				},
-				{
-					"path": "textures/poke/pfe/cobbler",
-					"overlay_color": "#ce0c0c"
-				}
-			]
-		},
-		"poke_pfe_cobbler_bottom": {
-			"textures": [
-				{
-					"path": "textures/poke/pfe/cobbler_bottom",
-					"overlay_color": "#610310"
-				},
-				{
-					"path": "textures/poke/pfe/cobbler_bottom",
-					"overlay_color": "#ce0c0c"
-				}
-			]
 		},
 		"poke_pfe_honey_trapdoor": {
 			"textures": "textures/poke/pfe/honey_trapdoor"
@@ -1918,8 +1872,8 @@
 			],
 			"additive": true
 		},
-		"poke_pfe_red_present": {
-			"textures": "textures/poke/pfe/red_present"
+		"poke_pfe_present": {
+			"textures": "textures/poke/pfe/present"
 		},
 		"poke_pfe_apple_crate": {
 			"textures": "textures/poke/pfe/apple_crate"
@@ -1990,10 +1944,10 @@
 		"poke_pfe_gilded_melon_face": {
 			"textures": [
 				{
-					"path": "textures/poke/pfe/gilded_melon_side"
+					"path": "textures/poke/pfe/zcarved_melon_pattern"
 				},
 				{
-					"path": "textures/poke/pfe/zcarved_melon_pattern"
+					"path": "textures/poke/pfe/gilded_melon_side"
 				}
 			],
 			"additive": true
@@ -2001,10 +1955,10 @@
 		"poke_pfe_charred_melon_face": {
 			"textures": [
 				{
-					"path": "textures/poke/pfe/charred_melon_side"
+					"path": "textures/poke/pfe/zcarved_melon_pattern"
 				},
 				{
-					"path": "textures/poke/pfe/zcarved_melon_pattern"
+					"path": "textures/poke/pfe/charred_melon_side"
 				}
 			],
 			"additive": true
@@ -2012,10 +1966,10 @@
 		"poke_pfe_carved_carved_melon_face": {
 			"textures": [
 				{
-					"path": "textures/poke/pfe/carved_carved_melon_side"
+					"path": "textures/poke/pfe/zcarved_melon_pattern"
 				},
 				{
-					"path": "textures/poke/pfe/zcarved_melon_pattern"
+					"path": "textures/poke/pfe/carved_carved_melon_side"
 				}
 			],
 			"additive": true
@@ -2031,7 +1985,7 @@
 			],
 			"additive": true
 		},
-		"poke_pfe_cobalt_edged_glass": {
+		"poke_pfe_cobalt_glass": {
 			"textures": "textures/poke/pfe/cobalt_glass"
 		},
 		"poke_pfe_cut_cobalt": {
@@ -2186,8 +2140,11 @@
 		"poke_pfe_listener_trophy": {
 			"textures": "textures/poke/pfe/listener_trophy"
 		},
-		"poke_pfe_ember_block": {
-			"textures": "textures/poke/pfe/ember_block"
+		"poke_pfe_molten_block": {
+			"textures": "textures/poke/pfe/molten_block"
+		},
+		"poke_pfe_creedite_block": {
+			"textures": "textures/poke/pfe/creedite_block"
 		},
 		"poke_pfe_scrappy_block": {
 			"textures": "textures/poke/pfe/scrappy_block"
@@ -2222,14 +2179,14 @@
 		"poke_pfe_molten_lava_sponge": {
 			"textures": "textures/poke/pfe/molten_lava_sponge"
 		},
-		"poke_pfe_phantomed_conduit": {
+		"poke_pfe_phantomic_conduit": {
 			"textures": [
 				{
-					"path": "textures/poke/pfe/phantomed_conduit",
+					"path": "textures/poke/pfe/phantomic_conduit",
 					"overlay_color": "#610310"
 				},
 				{
-					"path": "textures/poke/pfe/phantomed_conduit",
+					"path": "textures/poke/pfe/phantomic_conduit",
 					"overlay_color": "#ce0c0c"
 				}
 			]
@@ -2243,8 +2200,8 @@
 		"poke_pfe_raw_demonic_block": {
 			"textures": "textures/poke/pfe/raw_demonic_block"
 		},
-		"poke_pfe_cobalt_golem_block": {
-			"textures": "textures/poke/pfe/cobalt_golem_block"
+		"poke_pfe_charged_cobalt_block": {
+			"textures": "textures/poke/pfe/charged_cobalt_block"
 		},
 		"poke_pfe_raw_galaxy_block": {
 			"textures": "textures/poke/pfe/raw_galaxy_block"

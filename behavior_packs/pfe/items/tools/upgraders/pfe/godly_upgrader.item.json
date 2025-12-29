@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:godly_upgrader",
+			"identifier": "poke_pfe:godly_upgrader",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -25,19 +25,19 @@
 			"poke_pfe:upgradeable": {
 				"version": 1,
 				"upgrade_ids": [
-					"pfe:persistence"
+					"poke_pfe:persistence"
 				]
 			},
 			"poke_pfe:transform_blocks": {
 				"transforms": [
-					"poke:godly_ore::poke:raw_godly_block",
-					"poke:deepslate_godly_ore::poke:raw_godly_block",
-					"poke:end_godly_ore::poke:raw_godly_block"
+					"poke_pfe:godly_ore::poke_pfe:raw_godly_block",
+					"poke_pfe:deepslate_godly_ore::poke_pfe:raw_godly_block",
+					"poke_pfe:end_godly_ore::poke_pfe:raw_godly_block"
 				]
 			},
 			"minecraft:tags": {
 				"tags": [
-					"pfe:is_upgrader"
+					"poke_pfe:is_upgrader"
 				]
 			}
 		}

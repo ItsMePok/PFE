@@ -1,0 +1,43 @@
+{
+	"format_version": "1.21.130",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke_pfe:amethyst_upgrader",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:display_name": {
+				"value": "%poke_pfe.amethyst_upgrader\n%poke_pfe.tag"
+			},
+			"poke_pfe:icon_path": "textures/poke/pfe/amethyst_upgrader",
+			"minecraft:hand_equipped": true,
+			"minecraft:max_stack_size": 1,
+			"minecraft:icon": "poke_pfe_amethyst_upgrader",
+			"minecraft:durability": {
+				"max_durability": 600,
+				"damage_chance": {
+					"max": 100,
+					"min": 60
+				}
+			},
+			"poke_pfe:upgradeable": {
+				"version": 1,
+				"upgrade_ids": [
+					"poke_pfe:persistence"
+				]
+			},
+			"poke_pfe:transform_blocks": {
+				"transforms": [
+					"minecraft:amethyst_block::minecraft:budding_amethyst"
+				]
+			},
+			"minecraft:tags": {
+				"tags": [
+					"poke_pfe:is_upgrader"
+				]
+			}
+		}
+	}
+}

@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:wood_chestplate"
+			"identifier": "poke_pfe:wood_chestplate"
 		},
 		"tags": [
 			"crafting_table"
@@ -23,7 +23,7 @@
 			}
 		},
 		"result": {
-			"item": "poke:wood_chestplate"
+			"item": "poke_pfe:wood_chestplate"
 		}
 	}
 }

@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:holy_arrow",
+			"identifier": "poke_pfe:holy_arrow",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -15,7 +15,7 @@
 			"minecraft:max_stack_size": 64,
 			"minecraft:icon": "poke_pfe_holy_arrow",
 			"minecraft:projectile": {
-				"projectile_entity": "poke:holy_arrow",
+				"projectile_entity": "poke_pfe:holy_arrow",
 				"minimum_critical_power": 0.5
 			},
 			"minecraft:allow_off_hand": {

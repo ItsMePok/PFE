@@ -2,32 +2,32 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:nebula_bricks_slab_craft"
+			"identifier": "poke_pfe:nebula_bricks_slab_craft"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:nebula_block"
+				"item": "poke_pfe:nebula_block"
 			},
 			{
-				"item": "poke:nebula_ingot"
+				"item": "poke_pfe:nebula_ingot"
 			},
 			{
-				"item": "poke:nebula_bricks"
+				"item": "poke_pfe:nebula_bricks"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:nebula_bricks"
+				"item": "poke_pfe:nebula_bricks"
 			}
 		},
 		"pattern": [
 			"CCC"
 		],
 		"result": {
-			"item": "poke:nebula_bricks_slab",
+			"item": "poke_pfe:nebula_bricks_slab",
 			"count": 6
 		}
 	}

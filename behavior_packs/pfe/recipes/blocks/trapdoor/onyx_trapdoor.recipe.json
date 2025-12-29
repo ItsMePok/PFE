@@ -2,22 +2,22 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:onyx_trapdoor"
+			"identifier": "poke_pfe:onyx_trapdoor"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:onyx_ingot"
+				"item": "poke_pfe:onyx_ingot"
 			},
 			{
-				"item": "poke:onyx_block"
+				"item": "poke_pfe:onyx_block"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:onyx_ingot"
+				"item": "poke_pfe:onyx_ingot"
 			}
 		},
 		"pattern": [
@@ -25,7 +25,7 @@
 			"CCC"
 		],
 		"result": {
-			"item": "poke:onyx_trapdoor",
+			"item": "poke_pfe:onyx_trapdoor",
 			"count": 4
 		}
 	}

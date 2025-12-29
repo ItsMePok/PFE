@@ -5,29 +5,29 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "poke:boss_event_bounty",
+					"name": "poke_pfe:bounty",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:cassette_theend",
+					"name": "poke_pfe:cassette_theend",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:cassette_alpha",
+					"name": "poke_pfe:cassette_alpha",
 					"weight": 1
 				},
-                {
-                    "type": "item",
-                    "name": "poke:pfe-poke_pottery_sherd",
-                    "weight": 1
-                },
-                {
-                    "type": "item",
-                    "name": "poke:pfe-empty_pottery_sherd",
-                    "weight": 2
-                }
+				{
+					"type": "item",
+					"name": "poke_pfe:pfe-poke_pottery_sherd",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "poke_pfe:pfe-empty_pottery_sherd",
+					"weight": 2
+				}
 			]
 		},
 		{ // Total Weight: 196
@@ -52,7 +52,7 @@
 				},
 				{
 					"type": "item",
-					"name": "poke:raw_godly",
+					"name": "poke_pfe:raw_godly",
 					"functions": [
 						{
 							"function": "set_count",
@@ -80,7 +80,7 @@
 				},
 				{
 					"type": "item",
-					"name": "poke:iron_token",
+					"name": "poke_pfe:iron_token",
 					"functions": [
 						{
 							"function": "set_count",
@@ -94,7 +94,7 @@
 				},
 				{
 					"type": "item",
-					"name": "poke:copper_token",
+					"name": "poke_pfe:copper_token",
 					"functions": [
 						{
 							"function": "set_count",
@@ -108,7 +108,7 @@
 				},
 				{
 					"type": "item",
-					"name": "poke:nebula_noodles",
+					"name": "poke_pfe:nebula_noodles",
 					"functions": [
 						{
 							"function": "set_count",
@@ -122,7 +122,7 @@
 				},
 				{
 					"type": "item",
-					"name": "poke:raw_void",
+					"name": "poke_pfe:raw_void",
 					"functions": [
 						{
 							"function": "set_count",
@@ -136,22 +136,22 @@
 				},
 				{
 					"type": "item",
-					"name": "poke:raw_nebula_block",
+					"name": "poke_pfe:raw_nebula_block",
 					"weight": 2
 				},
 				{
 					"type": "item",
-					"name": "poke:raw_nebula",
+					"name": "poke_pfe:raw_nebula",
 					"weight": 15
 				},
 				{
 					"type": "item",
-					"name": "poke:void_potion",
+					"name": "poke_pfe:void_potion",
 					"weight": 10
 				},
 				{
 					"type": "item",
-					"name": "poke:nebula_potion",
+					"name": "poke_pfe:nebula_potion",
 					"weight": 10
 				},
 				{
@@ -167,17 +167,17 @@
 				},
 				{
 					"type": "item",
-					"name": "poke:spawn_necromancer",
+					"name": "poke_pfe:spawn_necromancer",
 					"weight": 2
 				},
 				{
 					"type": "item",
-					"name": "poke:spawn_knightling",
+					"name": "poke_pfe:spawn_knightling",
 					"weight": 2
 				},
 				{
 					"type": "item",
-					"name": "poke:diamond_token",
+					"name": "poke_pfe:diamond_token",
 					"weight": 2,
 					"functions": [
 						{
@@ -228,7 +228,7 @@
 				},
 				{
 					"type": "item",
-					"name": "poke:raw_astral",
+					"name": "poke_pfe:raw_astral",
 					"weight": 10,
 					"functions": [
 						{

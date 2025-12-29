@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:godly_sword"
+			"identifier": "poke_pfe:godly_sword"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,29 +14,29 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:holy_sword"
+				"item": "poke_pfe:holy_sword"
 			},
 			{
-				"item": "poke:godly_ingot"
+				"item": "poke_pfe:godly_ingot"
 			}
 		],
 		"key": {
 			"Y": {
-				"item": "poke:godly_ingot"
+				"item": "poke_pfe:godly_ingot"
 			},
 			"X": {
-				"item": "poke:godly_stick"
+				"item": "poke_pfe:godly_stick"
 			},
 			"A": {
-				"item": "poke:holy_sword"
+				"item": "poke_pfe:holy_sword"
 			},
 			"U": {
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			}
 		},
 		"result": [
 			{
-				"item": "poke:godly_sword"
+				"item": "poke_pfe:godly_sword"
 			}
 		]
 	}

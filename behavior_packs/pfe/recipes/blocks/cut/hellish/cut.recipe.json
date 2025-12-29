@@ -2,19 +2,19 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:cut_hellish_crafting_table"
+			"identifier": "poke_pfe:cut_hellish_crafting_table"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:hellish_ingot"
+				"item": "poke_pfe:hellish_ingot"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:hellish_block"
+				"item": "poke_pfe:hellish_block"
 			}
 		},
 		"pattern": [
@@ -22,7 +22,7 @@
 			"CC"
 		],
 		"result": {
-			"item": "poke:cut_hellish",
+			"item": "poke_pfe:cut_hellish",
 			"count": 12
 		},
 		"priority": 0

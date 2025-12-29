@@ -2,7 +2,7 @@
   "format_version": "1.8.0",
   "minecraft:spawn_rules": {
     "description": {
-      "identifier": "poke:sculk_enderman",
+      "identifier": "poke_pfe:sculk_enderman",
       "population_control": "monster"
     },
     "conditions": [
@@ -25,7 +25,9 @@
           "max_size": 2
         },
         "minecraft:biome_filter": {
-          "test": "has_biome_tag", "operator": "==", "value": "deep_dark"
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "deep_dark"
         }
       }
     ]

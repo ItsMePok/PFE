@@ -2,22 +2,22 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:molten_trapdoor"
+			"identifier": "poke_pfe:molten_trapdoor"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:molten_slimeball"
+				"item": "poke_pfe:molten_slimeball"
 			},
 			{
-				"item": "poke:ember_block"
+				"item": "poke_pfe:molten_block"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:molten_slimeball"
+				"item": "poke_pfe:molten_slimeball"
 			}
 		},
 		"pattern": [
@@ -25,7 +25,7 @@
 			"CCC"
 		],
 		"result": {
-			"item": "poke:molten_trapdoor",
+			"item": "poke_pfe:molten_trapdoor",
 			"count": 4
 		}
 	}

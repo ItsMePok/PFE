@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:demonic_helmet",
+			"identifier": "poke_pfe:demonic_helmet",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -38,20 +38,20 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core",
-							"poke:demonic_block"
+							"poke_pfe:repair_core",
+							"poke_pfe:demonic_block"
 						],
 						"repair_amount": "query.max_durability"
 					},
 					{
 						"items": [
-							"poke:demonic_ingot"
+							"poke_pfe:demonic_ingot"
 						],
 						"repair_amount": "query.max_durability*0.25"
 					},
 					{
 						"items": [
-							"poke:demonic_nugget"
+							"poke_pfe:demonic_nugget"
 						],
 						"repair_amount": "query.max_durability*0.028"
 					}

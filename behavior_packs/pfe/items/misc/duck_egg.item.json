@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:duck_egg",
+			"identifier": "poke_pfe:duck_egg",
 			"menu_category": {
 				"category": "nature"
 			}
@@ -24,14 +24,14 @@
 				"use_duration": 0.01
 			},
 			"minecraft:cooldown": {
-				"category": "poke:duck_egg",
+				"category": "poke_pfe:duck_egg",
 				"duration": 0.2
 			},
 			"minecraft:max_stack_size": 64,
 			"minecraft:shooter": {
 				"ammunition": [
 					{
-						"item": "poke:duck_egg",
+						"item": "poke_pfe:duck_egg",
 						"use_in_creative": true,
 						"search_inventory": true
 					}
@@ -39,7 +39,7 @@
 			},
 			"minecraft:projectile": {
 				"minimum_critical_power": 0,
-				"projectile_entity": "poke:duck_egg_proj"
+				"projectile_entity": "poke_pfe:duck_egg_proj"
 			},
 			"minecraft:hand_equipped": false
 		}

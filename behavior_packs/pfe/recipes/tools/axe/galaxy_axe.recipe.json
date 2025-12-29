@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:galaxy_axe"
+			"identifier": "poke_pfe:galaxy_axe"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,25 +14,25 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:godly_stick"
+				"item": "poke_pfe:godly_stick"
 			},
 			{
-				"item": "poke:raw_galaxy"
+				"item": "poke_pfe:raw_galaxy"
 			},
 			{
-				"item": "poke:galaxy_ingot"
+				"item": "poke_pfe:galaxy_ingot"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:galaxy_ingot"
+				"item": "poke_pfe:galaxy_ingot"
 			},
 			"S": {
-				"item": "poke:godly_stick"
+				"item": "poke_pfe:godly_stick"
 			}
 		},
 		"result": {
-			"item": "poke:galaxy_axe"
+			"item": "poke_pfe:galaxy_axe"
 		}
 	}
 }

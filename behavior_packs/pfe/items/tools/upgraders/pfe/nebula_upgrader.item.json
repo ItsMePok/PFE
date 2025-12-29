@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:nebula_upgrader",
+			"identifier": "poke_pfe:nebula_upgrader",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -25,17 +25,17 @@
 			"poke_pfe:upgradeable": {
 				"version": 1,
 				"upgrade_ids": [
-					"pfe:persistence"
+					"poke_pfe:persistence"
 				]
 			},
 			"poke_pfe:transform_blocks": {
 				"transforms": [
-					"poke:nebula_ore::poke:raw_nebula_block"
+					"poke_pfe:nebula_ore::poke_pfe:raw_nebula_block"
 				]
 			},
 			"minecraft:tags": {
 				"tags": [
-					"pfe:is_upgrader"
+					"poke_pfe:is_upgrader"
 				]
 			}
 		}

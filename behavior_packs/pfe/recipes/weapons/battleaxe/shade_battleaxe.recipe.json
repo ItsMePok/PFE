@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:shade_battleaxe"
+			"identifier": "poke_pfe:shade_battleaxe"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,25 +14,25 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:shade_ingot"
+				"item": "poke_pfe:shade_ingot"
 			},
 			{
-				"item": "poke:shade_block"
+				"item": "poke_pfe:shade_block"
 			},
 			{
-				"item": "poke:onyx_shaft"
+				"item": "poke_pfe:onyx_stick"
 			}
 		],
 		"key": {
 			"D": {
-				"item": "poke:shade_block"
+				"item": "poke_pfe:shade_block"
 			},
 			"S": {
-				"item": "poke:onyx_shaft"
+				"item": "poke_pfe:onyx_stick"
 			}
 		},
 		"result": {
-			"item": "poke:shade_battleaxe"
+			"item": "poke_pfe:shade_battleaxe"
 		}
 	}
 }

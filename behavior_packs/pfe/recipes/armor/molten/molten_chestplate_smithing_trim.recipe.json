@@ -2,7 +2,7 @@
   "format_version": "1.20.60",
   "minecraft:recipe_smithing_trim": {
     "description": {
-      "identifier": "poke:molten_chestplate_trim"
+      "identifier": "poke_pfe:molten_chestplate_trim"
     },
     "tags": [
       "smithing_table"
@@ -10,7 +10,7 @@
     "template": {
       "tag": "minecraft:trim_templates"
     },
-    "base": "poke:molten_chestplate",
+    "base": "poke_pfe:molten_chestplate",
     "addition": {
       "tag": "minecraft:trim_materials"
     }

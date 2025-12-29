@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:mail_cart",
+			"identifier": "poke_pfe:mail_cart",
 			"menu_category": {
 				"category": "items"
 			}
@@ -14,7 +14,7 @@
 			"poke_pfe:icon_path": "textures/poke/pfe/mail_cart",
 			"minecraft:icon": "poke_pfe_mail_cart",
 			"minecraft:entity_placer": {
-				"entity": "poke:mail_cart",
+				"entity": "poke_pfe:mail_cart",
 				"dispense_on": [
 					"minecraft:rail",
 					"minecraft:activator_rail",

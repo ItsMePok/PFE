@@ -2,7 +2,7 @@
   "format_version": "1.10.0",
   "particle_effect": {
     "description": {
-      "identifier": "poke:soulflame_emitter",
+      "identifier": "poke_pfe:soulflame_emitter",
       "basic_render_parameters": {
         "material": "particles_alpha",
         "texture": "textures/poke/pfe/soulflame_atlas"

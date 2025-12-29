@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "poke:mr_duck",
+			"identifier": "poke_pfe:mr_duck",
 			"render_controllers": [
 				"controller.render.armor"
 			],

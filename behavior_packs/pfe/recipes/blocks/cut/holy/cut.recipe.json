@@ -2,19 +2,19 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:cut_holy_crafting_table"
+			"identifier": "poke_pfe:cut_holy_crafting_table"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:holy_ingot"
+				"item": "poke_pfe:holy_ingot"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:holy_block"
+				"item": "poke_pfe:holy_block"
 			}
 		},
 		"pattern": [
@@ -22,7 +22,7 @@
 			"CC"
 		],
 		"result": {
-			"item": "poke:cut_holy",
+			"item": "poke_pfe:cut_holy",
 			"count": 12
 		},
 		"priority": 0

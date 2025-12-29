@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:spawn_cosmetic_trader"
+			"identifier": "poke_pfe:spawn_cosmetic_trader"
 		},
 		"tags": [
 			"crafting_table"
@@ -17,7 +17,7 @@
 				"tag": "minecraft:egg"
 			},
 			{
-				"item": "poke:copper_token"
+				"item": "poke_pfe:copper_token"
 			},
 			{
 				"item": "dye"
@@ -41,7 +41,7 @@
 			}
 		},
 		"result": {
-			"item": "poke:spawn_cosmetic_trader"
+			"item": "poke_pfe:spawn_cosmetic_trader"
 		}
 	}
 }

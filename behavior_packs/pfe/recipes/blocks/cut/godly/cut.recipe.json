@@ -2,19 +2,19 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:cut_godly_crafting_table"
+			"identifier": "poke_pfe:cut_godly_crafting_table"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:godly_ingot"
+				"item": "poke_pfe:godly_ingot"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:godly_block"
+				"item": "poke_pfe:godly_block"
 			}
 		},
 		"pattern": [
@@ -22,7 +22,7 @@
 			"CC"
 		],
 		"result": {
-			"item": "poke:cut_godly",
+			"item": "poke_pfe:cut_godly",
 			"count": 12
 		},
 		"priority": 0

@@ -5,9 +5,17 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "poke:raw_nebula",
+					"name": "poke_pfe:raw_nebula",
 					"weight": 1,
-                    "functions": [{"function": "looting_enchant","count": {"max": 1,"min": 0}}]
+					"functions": [
+						{
+							"function": "looting_enchant",
+							"count": {
+								"max": 1,
+								"min": 0
+							}
+						}
+					]
 				},
 				{
 					"type": "empty",

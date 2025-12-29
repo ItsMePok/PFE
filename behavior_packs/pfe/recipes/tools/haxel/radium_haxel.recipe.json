@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:radium_haxel"
+			"identifier": "poke_pfe:radium_haxel"
 		},
 		"group": "haxel",
 		"tags": [
@@ -15,28 +15,28 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:radium_ingot"
+				"item": "poke_pfe:radium_ingot"
 			},
 			{
-				"item": "poke:shade_haxel"
+				"item": "poke_pfe:shade_haxel"
 			},
 			{
-				"item": "poke:upgrade_core"
+				"item": "poke_pfe:upgrade_core"
 			}
 		],
 		"key": {
 			"#": {
-				"item": "poke:radium_block"
+				"item": "poke_pfe:radium_block"
 			},
 			"E": {
-				"item": "poke:shade_haxel"
+				"item": "poke_pfe:shade_haxel"
 			},
 			"U": {
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			}
 		},
 		"result": {
-			"item": "poke:radium_haxel"
+			"item": "poke_pfe:radium_haxel"
 		}
 	}
 }

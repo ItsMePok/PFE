@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:galaxy_bow"
+			"identifier": "poke_pfe:galaxy_burstbow"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,13 +14,13 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:galaxy_ingot"
+				"item": "poke_pfe:galaxy_ingot"
 			},
 			{
-				"item": "poke:galaxy_arrow"
+				"item": "poke_pfe:galaxy_arrow"
 			},
 			{
-				"item": "poke:holy_bow"
+				"item": "poke_pfe:holy_burstbow"
 			},
 			{
 				"item": "bow"
@@ -34,14 +34,14 @@
 		],
 		"key": {
 			"H": {
-				"item": "poke:galaxy_ingot"
+				"item": "poke_pfe:galaxy_ingot"
 			},
 			"S": {
 				"item": "minecraft:string"
 			}
 		},
 		"result": {
-			"item": "poke:galaxy_bow"
+			"item": "poke_pfe:galaxy_burstbow"
 		}
 	}
 }

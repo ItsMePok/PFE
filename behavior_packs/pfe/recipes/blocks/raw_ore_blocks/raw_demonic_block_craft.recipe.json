@@ -2,14 +2,14 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:raw_demonic_block_un-craft"
+			"identifier": "poke_pfe:raw_demonic_block_un-craft"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:raw_demonic_block"
+				"item": "poke_pfe:raw_demonic_block"
 			}
 		],
 		"pattern": [
@@ -17,11 +17,11 @@
 		],
 		"key": {
 			"#": {
-				"item": "poke:raw_demonic_block"
+				"item": "poke_pfe:raw_demonic_block"
 			}
 		},
 		"result": {
-			"item": "poke:raw_demonic",
+			"item": "poke_pfe:raw_demonic",
 			"count": 9
 		}
 	}

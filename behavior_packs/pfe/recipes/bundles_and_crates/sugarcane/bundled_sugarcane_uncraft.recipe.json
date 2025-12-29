@@ -5,16 +5,16 @@
             "crafting_table"
         ],
         "description": {
-            "identifier": "poke:bundled_sugarcane_uncraft"
+            "identifier": "poke_pfe:bundled_sugarcane_uncraft"
         },
         "unlock": [
             {
-                "item": "poke:bundled_sugarcane"
+                "item": "poke_pfe:bundled_sugarcane"
             }
         ],
         "ingredients": [
             {
-                "item": "poke:bundled_sugarcane"
+                "item": "poke_pfe:bundled_sugarcane"
             }
         ],
         "result": {

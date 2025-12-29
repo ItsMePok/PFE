@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:ban_hammer",
+			"identifier": "poke_pfe:ban_hammer",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -18,7 +18,7 @@
 					"minecraft:is_pickaxe",
 					"minecraft:netherite_tier",
 					"minecraft:is_tool",
-					"pfe:is_haxel"
+					"poke_pfe:is_haxel"
 				]
 			},
 			"poke_pfe:box_mining": {
@@ -35,13 +35,13 @@
 				"can_break_indestructible": true,
 				"can_break_liquids": true
 			},
-			"poke:hitEffects": {},
+			"poke_pfe:hitEffects": {},
 			"minecraft:use_modifiers": {
 				"use_duration": 0.1,
 				"movement_modifier": 1
 			},
 			"minecraft:cooldown": {
-				"category": "poke:ban_hammer",
+				"category": "poke_pfe:ban_hammer",
 				"duration": 0.2
 			},
 			"poke_pfe:upgradeable": {

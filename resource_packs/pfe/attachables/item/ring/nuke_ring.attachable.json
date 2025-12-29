@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "poke:nuke_ring",
+			"identifier": "poke_pfe:nuke_ring",
 			"render_controllers": [
 				"controller.render.item_default"
 			],

@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:rocket_replenisher"
+			"identifier": "poke_pfe:rocket_replenisher"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,31 +14,31 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:electric_component"
+				"item": "poke_pfe:electric_component"
 			},
 			{
-				"item": "poke:radium_ingot"
+				"item": "poke_pfe:radium_ingot"
 			}
 		],
 		"key": {
 			"F": {
-				"item": "poke:banished_star_x4"
+				"item": "poke_pfe:banished_star_x4"
 			},
 			"C": {
-				"item": "poke:radium_ingot"
+				"item": "poke_pfe:radium_ingot"
 			},
 			"E": {
-				"item": "poke:electric_component"
+				"item": "poke_pfe:electric_component"
 			},
 			"M": {
-				"item": "poke:item_manipulator"
+				"item": "poke_pfe:item_manipulator"
 			},
 			"R": {
-				"item": "poke:receiver"
+				"item": "poke_pfe:receiver"
 			}
 		},
 		"result": {
-			"item": "poke:rocket_replenisher"
+			"item": "poke_pfe:rocket_replenisher"
 		}
 	}
 }

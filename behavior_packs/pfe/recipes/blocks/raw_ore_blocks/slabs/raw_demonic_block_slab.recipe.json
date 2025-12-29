@@ -2,35 +2,35 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:raw_demonic_slab"
+			"identifier": "poke_pfe:raw_demonic_slab"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:demonic_block"
+				"item": "poke_pfe:demonic_block"
 			},
 			{
-				"item": "poke:demonic_ingot"
+				"item": "poke_pfe:demonic_ingot"
 			},
 			{
-				"item": "poke:raw_demonic_block"
+				"item": "poke_pfe:raw_demonic_block"
 			},
 			{
-				"item": "poke:raw_demonic"
+				"item": "poke_pfe:raw_demonic"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:raw_demonic_block"
+				"item": "poke_pfe:raw_demonic_block"
 			}
 		},
 		"pattern": [
 			"CCC"
 		],
 		"result": {
-			"item": "poke:raw_demonic_slab",
+			"item": "poke_pfe:raw_demonic_slab",
 			"count": 6
 		}
 	}

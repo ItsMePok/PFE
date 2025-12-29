@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:banished_star_x3",
+			"identifier": "poke_pfe:banished_star_x3",
 			"menu_category": {
 				"category": "items"
 			}
@@ -14,7 +14,7 @@
 			"poke_pfe:icon_path": "textures/poke/pfe/banished_star_x3",
 			"minecraft:tags": {
 				"tags": [
-					"poke:banished_star"
+					"poke_pfe:banished_star"
 				]
 			},
 			"minecraft:rarity": "common",

@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "poke:the_logger",
+			"identifier": "poke_pfe:the_logger",
 			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false
@@ -13,7 +13,7 @@
 					"time": 1800,
 					"looping": true,
 					"time_down_event": {
-						"event": "poke:despawn",
+						"event": "poke_pfe:despawn",
 						"target": "self"
 					}
 				}
@@ -97,7 +97,7 @@
 			},
 			"minecraft:boss": {
 				"hud_range": 55,
-				"name": "entity.poke:the_logger.name",
+				"name": "entity.poke_pfe:the_logger.name",
 				"should_darken_sky": false
 			},
 			"minecraft:follow_range": {
@@ -124,10 +124,10 @@
 			},
 			"minecraft:type_family": {
 				"family": [
-					"poke:the_logger",
+					"poke_pfe:the_logger",
 					"monster",
 					"mob",
-					"pfe:boss"
+					"poke_pfe:boss"
 				]
 			},
 			"minecraft:fire_immune": {},
@@ -163,13 +163,13 @@
 				"name_actions": {
 					"name_filter": "despawn",
 					"on_named": {
-						"event": "poke:despawn",
+						"event": "poke_pfe:despawn",
 						"target": "self"
 					}
 				},
 				"default_trigger": {
 					"target": "self",
-					"event": "poke:renamed"
+					"event": "poke_pfe:renamed"
 				}
 			},
 			"minecraft:collision_box": {
@@ -199,28 +199,28 @@
 					{
 						"queue_command": {
 							"command": [
-								"execute as @a[r=50] run music play poke.record.eldunknown 1 4"
+								"execute as @a[r=50] run music play poke_pferecord.eldunknown 1 4"
 							]
 						},
 						"weight": 1
 					}
 				]
 			},
-			"poke:death": {
+			"poke_pfe:death": {
 				"queue_command": {
 					"command": [
 						"execute as @a[r=50] run music play music.game 1 5"
 					]
 				}
 			},
-			"poke:renamed": {
+			"poke_pfe:renamed": {
 				"remove": {
 					"component_groups": [
 						"timer"
 					]
 				}
 			},
-			"poke:despawn": {
+			"poke_pfe:despawn": {
 				"add": {
 					"component_groups": [
 						"despawn"

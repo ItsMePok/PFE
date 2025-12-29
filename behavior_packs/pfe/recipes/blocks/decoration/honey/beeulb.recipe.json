@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:beeulb"
+			"identifier": "poke_pfe:beeulb"
 		},
 		"tags": [
 			"crafting_table"
@@ -29,7 +29,7 @@
 			"GGG"
 		],
 		"result": {
-			"item": "poke:beeulb",
+			"item": "poke_pfe:beeulb",
 			"count": 6
 		}
 	}

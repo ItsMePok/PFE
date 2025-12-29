@@ -1,15 +1,15 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:pfe-fish_pottery_sherd",
+			"identifier": "poke_pfe:pfe-fish_pottery_sherd",
 			"menu_category": {
 				"category": "items"
 			}
 		},
 		"components": {
 			"minecraft:display_name": {
-				"value": "item.poke:pfe-fish_pottery_sherd.name"
+				"value": "item.poke_pfe:pfe-fish_pottery_sherd.name"
 			},
 			"poke_pfe:icon_path": "textures/poke/pfe/fish_pottery_sherd",
 			"minecraft:icon": "poke_pfe_fish_pottery_sherd",

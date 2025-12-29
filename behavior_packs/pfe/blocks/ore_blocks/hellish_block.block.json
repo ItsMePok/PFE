@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:hellish_block",
+			"identifier": "poke_pfe:hellish_block",
 			"menu_category": {
 				"category": "construction"
 			}

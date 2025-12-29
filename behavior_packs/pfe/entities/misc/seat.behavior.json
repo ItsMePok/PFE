@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "poke:seat",
+			"identifier": "poke_pfe:seat",
 			"is_spawnable": false,
 			"is_summonable": true,
 			"is_experimental": false,
@@ -20,7 +20,7 @@
 				"family_types": [
 					"player"
 				],
-				"interact_text": "action.poke.seat.sit",
+				"interact_text": "action.poke_pfeseat.sit",
 				"pull_in_entities": false,
 				"rider_can_interact": false,
 				"seat_count": 1,
@@ -36,7 +36,7 @@
 				"time": 5,
 				"looping": true,
 				"time_down_event": {
-					"event": "poke:block_check",
+					"event": "poke_pfe:block_check",
 					"target": "self"
 				}
 			},
@@ -66,23 +66,23 @@
 			}
 		},
 		"events": {
-			"poke:block_check": {
+			"poke_pfe:block_check": {
 				"queue_command": {
 					"command": [
 						"execute as @s at @s if block ~~~ air run kill @s"
 					]
 				}
 			},
-			"poke:despawn": {
+			"poke_pfe:despawn": {
 				"add": {
 					"component_groups": [
-						"poke:despawn"
+						"poke_pfe:despawn"
 					]
 				}
 			}
 		},
 		"component_groups": {
-			"poke:despawn": {
+			"poke_pfe:despawn": {
 				"minecraft:instant_despawn": {
 					"remove_child_entities": true
 				}

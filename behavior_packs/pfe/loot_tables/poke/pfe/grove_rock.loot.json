@@ -1,6 +1,6 @@
 {
 	"pools": [
-		{//Rare Items
+		{ //Rare Items
 			"rolls": 1,
 			"entries": [
 				{
@@ -9,47 +9,47 @@
 				},
 				{
 					"type": "item",
-					"name": "poke:cassette_echointhewind",
+					"name": "poke_pfe:cassette_echointhewind",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:cassette_bromeliad",
+					"name": "poke_pfe:cassette_bromeliad",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:cassette_featherfall",
+					"name": "poke_pfe:cassette_featherfall",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:cassette_lefttobloom",
+					"name": "poke_pfe:cassette_lefttobloom",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:cassette_minecraft",
+					"name": "poke_pfe:cassette_minecraft",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:cassette_clark",
+					"name": "poke_pfe:cassette_clark",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:cassette_sweden",
+					"name": "poke_pfe:cassette_sweden",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:flower_lilly_hat",
+					"name": "poke_pfe:flower_lilly_hat",
 					"weight": 1
 				}
 			]
 		},
-		{//Common Items
+		{ //Common Items
 			"rolls": {
 				"min": 8,
 				"max": 16
@@ -61,12 +61,12 @@
 				},
 				{
 					"type": "item",
-					"name": "poke:turnip",
+					"name": "poke_pfe:turnip",
 					"weight": 6
 				},
 				{
 					"type": "item",
-					"name": "poke:smoked_beetroot",
+					"name": "poke_pfe:smoked_beetroot",
 					"weight": 6
 				},
 				{
@@ -96,22 +96,22 @@
 				},
 				{
 					"type": "item",
-					"name": "poke:farm_quest",
+					"name": "poke_pfe:farm_quest",
 					"weight": 1
 				}
 			]
 		},
-		{//Tokens // Total Weight: 85
+		{ //Tokens // Total Weight: 85
 			"rolls": 5,
 			"entries": [
 				{
 					"type": "item",
-					"name": "poke:copper_token",
+					"name": "poke_pfe:copper_token",
 					"weight": 20
 				},
 				{
 					"type": "item",
-					"name": "poke:iron_token",
+					"name": "poke_pfe:iron_token",
 					"weight": 15
 				},
 				{

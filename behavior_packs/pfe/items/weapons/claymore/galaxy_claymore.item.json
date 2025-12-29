@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke_pfe:galaxy_claymore",
@@ -15,17 +15,17 @@
 			"poke_pfe:upgradeable": {
 				"version": 1,
 				"upgrade_ids": [
-					"pfe:persistence"
+					"poke_pfe:persistence"
 				]
 			},
 			"minecraft:rarity": "common",
-			"poke:normalMining": {},
+			"poke_pfe:normalMining": {},
 			"minecraft:tags": {
 				"tags": [
 					"minecraft:is_sword",
 					"minecraft:netherite_tier",
-					"pfe:is_claymore",
-					"pfe:galaxy_tier"
+					"poke_pfe:is_claymore",
+					"poke_pfe:galaxy_tier"
 				]
 			},
 			"minecraft:max_stack_size": 1,
@@ -64,20 +64,20 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core",
-							"poke:galaxy_block"
+							"poke_pfe:repair_core",
+							"poke_pfe:galaxy_block"
 						],
 						"repair_amount": "query.max_durability"
 					},
 					{
 						"items": [
-							"poke:galaxy_ingot"
+							"poke_pfe:galaxy_ingot"
 						],
 						"repair_amount": "query.max_durability*0.25"
 					},
 					{
 						"items": [
-							"poke:galaxy_nugget"
+							"poke_pfe:galaxy_nugget"
 						],
 						"repair_amount": "query.max_durability*0.028"
 					}

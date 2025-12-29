@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:nebula_chestplate"
+			"identifier": "poke_pfe:nebula_chestplate"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,28 +14,28 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:astral_chestplate"
+				"item": "poke_pfe:astral_chestplate"
 			},
 			{
-				"item": "poke:death_chestplate"
+				"item": "poke_pfe:death_chestplate"
 			}
 		],
 		"key": {
 			"B": {
-				"item": "poke:nebula_block"
+				"item": "poke_pfe:nebula_block"
 			},
 			"G": {
-				"item": "poke:astral_chestplate"
+				"item": "poke_pfe:astral_chestplate"
 			},
 			"V": {
-				"item": "poke:death_chestplate"
+				"item": "poke_pfe:death_chestplate"
 			},
 			"6": {
-				"item": "poke:platinum_upgrade_core"
+				"item": "poke_pfe:platinum_upgrade_core"
 			}
 		},
 		"result": {
-			"item": "poke:nebula_chestplate"
+			"item": "poke_pfe:nebula_chestplate"
 		}
 	}
 }

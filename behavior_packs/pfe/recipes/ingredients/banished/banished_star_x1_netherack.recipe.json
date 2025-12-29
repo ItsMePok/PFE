@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "poke:banished_star_x1_netherack"
+			"identifier": "poke_pfe:banished_star_x1_netherack"
 		},
 		"tags": [
 			"crafting_table"
@@ -19,7 +19,7 @@
 			}
 		],
 		"result": {
-			"item": "poke:banished_star",
+			"item": "poke_pfe:banished_star",
 			"count": 1
 		},
 		"priority": 2

@@ -5,7 +5,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "poke:turnip",
+					"name": "poke_pfe:turnip",
 					"functions": [
 						{
 							"function": "set_count",
@@ -19,7 +19,7 @@
 				},
 				{
 					"type": "item",
-					"name": "poke:golden_turnip",
+					"name": "poke_pfe:golden_turnip",
 					"weight": 1
 				}
 			]

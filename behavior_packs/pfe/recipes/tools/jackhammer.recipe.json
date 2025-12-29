@@ -2,7 +2,7 @@
     "format_version": "1.20.60",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "poke:jackhammer"
+            "identifier": "poke_pfe:jackhammer"
         },
         "tags": [
             "crafting_table"
@@ -14,43 +14,43 @@
         ],
         "unlock": [
             {
-                "item": "poke:death_ingot"
+                "item": "poke_pfe:death_ingot"
             },
             {
-                "item": "poke:banished_star"
+                "item": "poke_pfe:banished_star"
             },
             {
-                "item": "poke:electric_component"
+                "item": "poke_pfe:electric_component"
             },
             {
-                "item": "poke:plastic"
+                "item": "poke_pfe:plastic"
             },
             {
-                "item": "poke:magnet_core"
+                "item": "poke_pfe:magnet_core"
             }
         ],
         "key": {
             "B": {
-                "item": "poke:banished_star_x4"
+                "item": "poke_pfe:banished_star_x4"
             },
             "C": {
-                "item": "poke:magnet_core"
+                "item": "poke_pfe:magnet_core"
             },
             "P": {
-                "item": "poke:plastic"
+                "item": "poke_pfe:plastic"
             },
             "W": {
-                "item": "poke:wire"
+                "item": "poke_pfe:wire"
             },
             "D": {
-                "item": "poke:death_ingot"
+                "item": "poke_pfe:death_ingot"
             },
             "E": {
-                "item": "poke:electric_component"
+                "item": "poke_pfe:electric_component"
             }
         },
         "result": {
-            "item": "poke:jackhammer"
+            "item": "poke_pfe:jackhammer"
         }
     }
 }

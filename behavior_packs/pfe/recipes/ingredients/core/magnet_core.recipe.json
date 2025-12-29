@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:magnet_core"
+			"identifier": "poke_pfe:magnet_core"
 		},
 		"tags": [
 			"crafting_table"
@@ -20,7 +20,7 @@
 				"item": "redstone"
 			},
 			{
-				"item": "poke:cobalt_ingot"
+				"item": "poke_pfe:cobalt_ingot"
 			}
 		],
 		"key": {
@@ -28,14 +28,14 @@
 				"item": "iron_ingot"
 			},
 			"C": {
-				"item": "poke:cobalt_ingot"
+				"item": "poke_pfe:cobalt_ingot"
 			},
 			"R": {
 				"item": "redstone_block"
 			}
 		},
 		"result": {
-			"item": "poke:magnet_core",
+			"item": "poke_pfe:magnet_core",
 			"count": 1
 		}
 	}

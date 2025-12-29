@@ -2,7 +2,7 @@
     "format_version": "1.20.60",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "poke:radium_ingot"
+            "identifier": "poke_pfe:radium_ingot"
         },
         "tags": [
             "crafting_table"
@@ -14,31 +14,31 @@
         ],
         "unlock": [
             {
-                "item": "poke:shade_ingot"
+                "item": "poke_pfe:shade_ingot"
             },
             {
-                "item": "poke:astral_ingot"
+                "item": "poke_pfe:astral_ingot"
             },
             {
-                "item": "poke:astral_block"
+                "item": "poke_pfe:astral_block"
             },
             {
-                "item": "poke:shade_block"
+                "item": "poke_pfe:shade_block"
             }
         ],
         "key": {
             "F": {
-                "item": "poke:molten_slimeball"
+                "item": "poke_pfe:molten_slimeball"
             },
             "V": {
-                "item": "poke:shade_ingot"
+                "item": "poke_pfe:shade_ingot"
             },
             "O": {
-                "item": "poke:astral_ingot"
+                "item": "poke_pfe:astral_ingot"
             }
         },
         "result": {
-            "item": "poke:radium_ingot",
+            "item": "poke_pfe:radium_ingot",
             "count": 4
         },
         "priority": 0

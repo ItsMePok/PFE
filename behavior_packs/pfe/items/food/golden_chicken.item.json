@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:golden_chicken",
+			"identifier": "poke_pfe:golden_chicken",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -13,7 +13,7 @@
 				"value": "%poke_pfe.golden_chicken\n%poke_pfe.tag"
 			},
 			"poke_pfe:icon_path": "textures/poke/pfe/golden_chicken",
-			"poke:consumeEffects": {},
+			"poke_pfe:consumeEffects": {},
 			"minecraft:icon": {
 				"textures": {
 					"default": "poke_pfe_golden_chicken"

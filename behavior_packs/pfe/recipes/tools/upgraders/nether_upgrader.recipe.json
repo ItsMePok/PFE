@@ -2,7 +2,7 @@
     "format_version": "1.20.60",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "poke:nether_upgrader"
+            "identifier": "poke_pfe:nether_upgrader"
         },
         "tags": [
             "crafting_table"
@@ -21,7 +21,7 @@
                 "item": "warped_fungus"
             },
             {
-                "item": "poke:diamond_upgrade_core"
+                "item": "poke_pfe:diamond_upgrade_core"
             },
             {
                 "item": "crimson_fungus"
@@ -65,7 +65,7 @@
                 "item": "warped_fungus"
             },
             "U": {
-                "item": "poke:diamond_upgrade_core"
+                "item": "poke_pfe:diamond_upgrade_core"
             },
             "C": {
                 "item": "crimson_fungus"
@@ -81,7 +81,7 @@
             }
         },
         "result": {
-            "item": "poke:nether_upgrader"
+            "item": "poke_pfe:nether_upgrader"
         }
     }
 }

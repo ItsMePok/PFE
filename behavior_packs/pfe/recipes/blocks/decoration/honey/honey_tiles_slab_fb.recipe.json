@@ -3,7 +3,7 @@
 	"minecraft:recipe_shapeless": {
 		"unlock": [
 			{
-				"item": "poke:honey_bricks"
+				"item": "poke_pfe:honey_bricks"
 			},
 			{
 				"item": "honeycomb"
@@ -13,18 +13,18 @@
 			}
 		],
 		"description": {
-			"identifier": "poke:honey_tiles_slab_fb"
+			"identifier": "poke_pfe:honey_tiles_slab_fb"
 		},
 		"tags": [
 			"stonecutter"
 		],
 		"ingredients": [
 			{
-				"item": "poke:honey_bricks"
+				"item": "poke_pfe:honey_bricks"
 			}
 		],
 		"result": {
-			"item": "poke:honey_tiles_slab",
+			"item": "poke_pfe:honey_tiles_slab",
 			"count": 2
 		}
 	}

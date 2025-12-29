@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "poke:swift_boots",
+			"identifier": "poke_pfe:swift_boots",
 			"materials": {
 				"default": "armor",
 				"enchanted": "armor_enchanted"
@@ -15,7 +15,9 @@
 				"default": "geometry.poke_pfe.speed_boots"
 			},
 			"scripts": {
-				"animate": ["control"],
+				"animate": [
+					"control"
+				],
 				"parent_setup": "variable.boot_layer_visible = 0.0;"
 			},
 			"animations": {

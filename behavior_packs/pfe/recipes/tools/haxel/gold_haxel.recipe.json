@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:gold_haxel"
+			"identifier": "poke_pfe:golden_haxel"
 		},
 		"group": "haxel",
 		"tags": [
@@ -18,12 +18,12 @@
 				"item": "gold_ingot"
 			},
 			{
-				"item": "poke:iron_haxel"
+				"item": "poke_pfe:iron_haxel"
 			}
 		],
 		"key": {
 			"i": {
-				"item": "poke:iron_haxel"
+				"item": "poke_pfe:iron_haxel"
 			},
 			"#": {
 				"item": "gold_ingot"
@@ -33,7 +33,7 @@
 			}
 		},
 		"result": {
-			"item": "poke:gold_haxel"
+			"item": "poke_pfe:golden_haxel"
 		}
 	}
 }

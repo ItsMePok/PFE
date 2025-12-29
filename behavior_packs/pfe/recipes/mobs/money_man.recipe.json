@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:money_man"
+			"identifier": "poke_pfe:money_man"
 		},
 		"tags": [
 			"crafting_table"
@@ -20,7 +20,7 @@
 				"item": "emerald"
 			},
 			{
-				"item": "poke:cobalt_ingot"
+				"item": "poke_pfe:cobalt_ingot"
 			}
 		],
 		"key": {
@@ -32,7 +32,7 @@
 			}
 		},
 		"result": {
-			"item": "poke:money_man"
+			"item": "poke_pfe:money_man"
 		}
 	}
 }

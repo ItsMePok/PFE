@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:demonic_slasher"
+			"identifier": "poke_pfe:demonic_scythe"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,28 +14,28 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:hellish_scythe"
+				"item": "poke_pfe:hellish_scythe"
 			}
 		],
 		"key": {
 			"Y": {
-				"item": "poke:hellish_blade"
+				"item": "poke_pfe:hellish_sword"
 			},
 			"X": {
-				"item": "poke:hellish_scythe"
+				"item": "poke_pfe:hellish_scythe"
 			},
 			"Z": {
-				"item": "poke:demonic_ingot"
+				"item": "poke_pfe:demonic_ingot"
 			},
 			"#": {
-				"item": "poke:demonic_stick"
+				"item": "poke_pfe:demonic_stick"
 			},
 			"U": {
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			}
 		},
 		"result": {
-			"item": "poke:demonic_slasher"
+			"item": "poke_pfe:demonic_scythe"
 		}
 	}
 }

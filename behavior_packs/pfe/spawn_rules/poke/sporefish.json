@@ -2,7 +2,7 @@
   "format_version": "1.8.0",
   "minecraft:spawn_rules": {
     "description": {
-      "identifier": "poke:sporefish",
+      "identifier": "poke_pfe:sporefish",
       "population_control": "water_animal"
     },
     "conditions": [
@@ -19,9 +19,10 @@
           "min_size": 2,
           "max_size": 4
         },
-
         "minecraft:biome_filter": {
-          "test": "has_biome_tag", "operator": "==", "value": "mooshroom_island"
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "mooshroom_island"
         }
       },
       {
@@ -37,10 +38,13 @@
           "min_size": 2,
           "max_size": 4
         },
-
         "minecraft:biome_filter": {
           "any_of": [
-            { "test": "has_biome_tag", "operator": "==", "value": "frozen" }
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "frozen"
+            }
           ]
         }
       }

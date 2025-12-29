@@ -2,13 +2,13 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_brewing_mix": {
 		"description": {
-			"identifier": "poke:hot_coco"
+			"identifier": "poke_pfe:hot_coco"
 		},
 		"tags": [
 			"brewing_stand"
 		],
-		"input": "poke:milk_bottle",
+		"input": "poke_pfe:milk_bottle",
 		"reagent": "cocoa_beans",
-		"output": "poke:hot_coco"
+		"output": "poke_pfe:hot_coco"
 	}
 }

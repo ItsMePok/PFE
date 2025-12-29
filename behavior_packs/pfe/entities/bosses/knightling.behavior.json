@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "poke:knightling",
+			"identifier": "poke_pfe:knightling",
 			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false
@@ -15,7 +15,7 @@
 						"undead",
 						"monster",
 						"mob",
-						"pfe:boss"
+						"poke_pfe:boss"
 					]
 				},
 				"minecraft:attack": {
@@ -50,7 +50,7 @@
 					"time": 1800,
 					"looping": true,
 					"time_down_event": {
-						"event": "poke:despawn",
+						"event": "poke_pfe:despawn",
 						"target": "self"
 					}
 				}
@@ -66,13 +66,13 @@
 				"name_actions": {
 					"name_filter": "despawn",
 					"on_named": {
-						"event": "poke:despawn",
+						"event": "poke_pfe:despawn",
 						"target": "self"
 					}
 				},
 				"default_trigger": {
 					"target": "self",
-					"event": "poke:renamed"
+					"event": "poke_pfe:renamed"
 				}
 			},
 			"minecraft:on_death": {
@@ -139,7 +139,7 @@
 			"minecraft:conditional_bandwidth_optimization": {},
 			"minecraft:boss": {
 				"hud_range": 55,
-				"name": "entity.poke:knightling.name",
+				"name": "entity.poke_pfe:knightling.name",
 				"should_darken_sky": true
 			},
 			"minecraft:behavior.float": {
@@ -188,14 +188,14 @@
 					]
 				}
 			},
-			"poke:renamed": {
+			"poke_pfe:renamed": {
 				"remove": {
 					"component_groups": [
 						"timer"
 					]
 				}
 			},
-			"poke:despawn": {
+			"poke_pfe:despawn": {
 				"add": {
 					"component_groups": [
 						"despawn"

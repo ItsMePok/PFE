@@ -4,13 +4,13 @@
 		"description": {
 			"identifier": "poke_pfe:fisher_block"
 		},
-		"group": "poke:automation",
+		"group": "poke_pfe:automation",
 		"tags": [
 			"crafting_table"
 		],
 		"key": {
 			"C": {
-				"item": "poke:cobalt_ingot"
+				"item": "poke_pfe:cobalt_ingot"
 			},
 			"W": {
 				"item": "minecraft:web"
@@ -30,7 +30,7 @@
 				"tag": "minecraft:planks"
 			},
 			{
-				"item": "poke:cobalt_ingot"
+				"item": "poke_pfe:cobalt_ingot"
 			},
 			{
 				"item": "minecraft:web"

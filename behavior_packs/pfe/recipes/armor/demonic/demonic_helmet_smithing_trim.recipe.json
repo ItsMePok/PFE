@@ -2,7 +2,7 @@
   "format_version": "1.20.60",
   "minecraft:recipe_smithing_trim": {
     "description": {
-      "identifier": "poke:demonic_helmet_trim"
+      "identifier": "poke_pfe:demonic_helmet_trim"
     },
     "tags": [
       "smithing_table"
@@ -10,7 +10,7 @@
     "template": {
       "tag": "minecraft:trim_templates"
     },
-    "base": "poke:demonic_helmet",
+    "base": "poke_pfe:demonic_helmet",
     "addition": {
       "tag": "minecraft:trim_materials"
     }

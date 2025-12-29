@@ -2,36 +2,28 @@
   "format_version": "1.8.0",
   "minecraft:spawn_rules": {
     "description": {
-      "identifier": "poke:warped_sporecat",
+      "identifier": "poke_pfe:warped_sporecat",
       "population_control": "animal"
     },
     "conditions": [
       {
-        "minecraft:spawns_on_surface": {
-        },
-
-        "minecraft:spawns_underground": {
-        },
-
+        "minecraft:spawns_on_surface": {},
+        "minecraft:spawns_underground": {},
         "minecraft:spawns_on_block_prevented_filter": [
           "minecraft:nether_wart_block",
           "minecraft:shroomlight"
         ],
-
         "minecraft:difficulty_filter": {
           "min": "easy",
           "max": "hard"
         },
-
         "minecraft:weight": {
           "default": 80
         },
-
         "minecraft:herd": {
           "min_size": 1,
           "max_size": 2
         },
-
         "minecraft:biome_filter": {
           "any_of": [
             {

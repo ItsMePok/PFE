@@ -2,22 +2,22 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:galaxy_trapdoor"
+			"identifier": "poke_pfe:galaxy_trapdoor"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:galaxy_ingot"
+				"item": "poke_pfe:galaxy_ingot"
 			},
 			{
-				"item": "poke:galaxy_block"
+				"item": "poke_pfe:galaxy_block"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:galaxy_ingot"
+				"item": "poke_pfe:galaxy_ingot"
 			}
 		},
 		"pattern": [
@@ -25,7 +25,7 @@
 			"CCC"
 		],
 		"result": {
-			"item": "poke:galaxy_trapdoor",
+			"item": "poke_pfe:galaxy_trapdoor",
 			"count": 4
 		}
 	}

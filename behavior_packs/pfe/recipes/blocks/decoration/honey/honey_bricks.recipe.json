@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:honey_bricks"
+			"identifier": "poke_pfe:honey_bricks"
 		},
 		"tags": [
 			"crafting_table"
@@ -25,7 +25,7 @@
 			"CC"
 		],
 		"result": {
-			"item": "poke:honey_bricks",
+			"item": "poke_pfe:honey_bricks",
 			"count": 4
 		}
 	}

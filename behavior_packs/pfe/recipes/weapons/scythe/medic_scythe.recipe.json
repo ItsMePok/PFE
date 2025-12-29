@@ -1,25 +1,47 @@
 {
-	"format_version":"1.20.10",
-	"minecraft:recipe_shaped":{
-		"description":{"identifier":"poke:medic_scythe"},
-		"tags":["crafting_table"],
-		"pattern":[
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke_pfe:medic_scythe"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
 			"ZZX",
 			" Y ",
 			"XU "
 		],
-        "unlock":[
-			{"item":"poke:godly_scythe"},
-			{"item":"poke:medic_block"},
-			{"item":"poke:medic_ingot"},
-			{"item":"poke:diamond_upgrade_core"}
+		"unlock": [
+			{
+				"item": "poke_pfe:godly_scythe"
+			},
+			{
+				"item": "poke_pfe:medic_block"
+			},
+			{
+				"item": "poke_pfe:medic_ingot"
+			},
+			{
+				"item": "poke_pfe:diamond_upgrade_core"
+			}
 		],
-		"key":{
-			"Y":{"item":"poke:godly_scythe"},
-			"X":{"item":"poke:medic_block"},
-			"Z":{"item":"poke:medic_ingot"},
-			"U":{"item":"poke:diamond_upgrade_core"}
+		"key": {
+			"Y": {
+				"item": "poke_pfe:godly_scythe"
+			},
+			"X": {
+				"item": "poke_pfe:medic_block"
+			},
+			"Z": {
+				"item": "poke_pfe:medic_ingot"
+			},
+			"U": {
+				"item": "poke_pfe:diamond_upgrade_core"
+			}
 		},
-		"result":{"item":"poke:medic_scythe"}
+		"result": {
+			"item": "poke_pfe:medic_scythe"
+		}
 	}
 }

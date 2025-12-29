@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "poke:rat",
+			"identifier": "poke_pfe:rat",
 			"materials": {
 				"default": "entity_alphatest"
 			},
@@ -37,7 +37,7 @@
 			"hide_armor": false,
 			"held_item_ignores_lighting": false,
 			"particle_effects": {
-				"rat_dance": "poke:rat_dance"
+				"rat_dance": "poke_pfe:rat_dance"
 			}
 		}
 	}

@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:death_potion",
+			"identifier": "poke_pfe:death_potion",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -13,7 +13,7 @@
 				"value": "%poke_pfe.death_potion\n§7%poke_pfe.effect.death (%poke_pfe.effect.instant)\n%poke_pfe.tag"
 			},
 			"poke_pfe:icon_path": "textures/poke/pfe/death_potion",
-			"poke:consumeEffects": {},
+			"poke_pfe:consumeEffects": {},
 			"minecraft:max_stack_size": 16,
 			"minecraft:icon": "poke_pfe_death_potion",
 			"minecraft:food": {

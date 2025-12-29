@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:amethyst_sword"
+			"identifier": "poke_pfe:creedite_sword"
 		},
 		"assume_symmetry": true,
 		"tags": [
@@ -29,11 +29,11 @@
 				"item": "netherite_sword"
 			},
 			"U": {
-				"item": "poke:upgrade_core"
+				"item": "poke_pfe:upgrade_core"
 			}
 		},
 		"result": {
-			"item": "poke:amethyst_sword"
+			"item": "poke_pfe:creedite_sword"
 		}
 	}
 }

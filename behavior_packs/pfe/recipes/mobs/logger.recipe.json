@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:spawn_the_logger"
+			"identifier": "poke_pfe:spawn_the_logger"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,46 +14,46 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:antenna"
+				"item": "poke_pfe:antenna"
 			},
 			{
-				"item": "poke:hellish_bulb"
+				"item": "poke_pfe:hellish_bulb"
 			},
 			{
 				"item": "soul_campfire"
 			},
 			{
-				"item": "poke:cobalt_block"
+				"item": "poke_pfe:cobalt_block"
 			},
 			{
 				"tag": "minecraft:egg"
 			},
 			{
-				"item": "poke:cobalt_golem_block"
+				"item": "poke_pfe:charged_cobalt_block"
 			}
 		],
 		"key": {
 			"A": {
-				"item": "poke:antenna"
+				"item": "poke_pfe:antenna"
 			},
 			"B": {
-				"item": "poke:hellish_bulb"
+				"item": "poke_pfe:hellish_bulb"
 			},
 			"S": {
 				"item": "soul_campfire"
 			},
 			"C": {
-				"item": "poke:cobalt_block"
+				"item": "poke_pfe:cobalt_block"
 			},
 			"E": {
 				"tag": "minecraft:egg"
 			},
 			"G": {
-				"item": "poke:cobalt_golem_block"
+				"item": "poke_pfe:charged_cobalt_block"
 			}
 		},
 		"result": {
-			"item": "poke:spawn_the_logger"
+			"item": "poke_pfe:spawn_the_logger"
 		}
 	}
 }

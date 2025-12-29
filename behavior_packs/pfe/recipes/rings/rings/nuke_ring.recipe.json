@@ -2,44 +2,44 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:nuke_ring"
+			"identifier": "poke_pfe:nuke_ring"
 		},
-		"group": "pfe:rings",
+		"group": "poke_pfe:rings",
 		"tags": [
 			"crafting_table"
 		],
 		"key": {
 			"U": {
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			},
 			"P": {
-				"item": "poke:panic_button"
+				"item": "poke_pfe:panic_button"
 			},
 			"R": {
-				"item": "poke:radium_block"
+				"item": "poke_pfe:radium_block"
 			},
 			"K": {
-				"item": "poke:kapow_ring"
+				"item": "poke_pfe:kapow_ring"
 			},
 			"B": {
-				"item": "poke:banished_star_x5"
+				"item": "poke_pfe:banished_star_x5"
 			}
 		},
 		"unlock": [
 			{
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			},
 			{
-				"item": "poke:panic_button"
+				"item": "poke_pfe:panic_button"
 			},
 			{
-				"item": "poke:radium_block"
+				"item": "poke_pfe:radium_block"
 			},
 			{
-				"item": "poke:kapow_ring"
+				"item": "poke_pfe:kapow_ring"
 			},
 			{
-				"item": "poke:banished_star"
+				"item": "poke_pfe:banished_star"
 			}
 		],
 		"pattern": [
@@ -49,7 +49,7 @@
 		],
 		"result": {
 			"count": 1,
-			"item": "poke:nuke_ring"
+			"item": "poke_pfe:nuke_ring"
 		}
 	}
 }

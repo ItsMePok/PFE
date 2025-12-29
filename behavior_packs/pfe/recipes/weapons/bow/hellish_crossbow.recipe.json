@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:hellish_crossbow"
+			"identifier": "poke_pfe:hellish_crossbow"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,7 +14,7 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:hellish_ingot"
+				"item": "poke_pfe:hellish_ingot"
 			},
 			{
 				"item": "arrow"
@@ -22,7 +22,7 @@
 		],
 		"key": {
 			"V": {
-				"item": "poke:hellish_ingot"
+				"item": "poke_pfe:hellish_ingot"
 			},
 			"S": {
 				"item": "minecraft:string"
@@ -35,7 +35,7 @@
 			}
 		},
 		"result": {
-			"item": "poke:hellish_crossbow"
+			"item": "poke_pfe:hellish_crossbow"
 		}
 	}
 }

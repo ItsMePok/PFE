@@ -2,22 +2,22 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:radium_trapdoor"
+			"identifier": "poke_pfe:radium_trapdoor"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:radium_ingot"
+				"item": "poke_pfe:radium_ingot"
 			},
 			{
-				"item": "poke:radium_block"
+				"item": "poke_pfe:radium_block"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:radium_ingot"
+				"item": "poke_pfe:radium_ingot"
 			}
 		},
 		"pattern": [
@@ -25,7 +25,7 @@
 			"CCC"
 		],
 		"result": {
-			"item": "poke:radium_trapdoor",
+			"item": "poke_pfe:radium_trapdoor",
 			"count": 4
 		}
 	}

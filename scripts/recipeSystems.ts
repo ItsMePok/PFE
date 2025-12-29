@@ -26,8 +26,8 @@ interface RecipeBlockComponentInfo {
   debug_mode: boolean | false
 }
 interface CustomRecipes {// "poke_pfe:custom_recipes"
-  items: string[] // ex: 2:poke:radium_ingot (amount:identifier) 
-  result: string[] // ex: 2:poke:radium_ingot (amount:identifier) 
+  items: string[] // ex: 2:poke_pfe:radium_ingot (amount:identifier) 
+  result: string[] // ex: 2:poke_pfe:radium_ingot (amount:identifier) 
   recipe_type: "shapeless" | "upgrade"
 }
 class RecipeBlockComponent {
@@ -78,7 +78,7 @@ function PFERecipeBlockMainMenu(component: RecipeBlockComponentInfo, player: Pla
   if (component.debug_mode) {
     UI.button("Debug", "textures/poke/common/debug")
   }
-  UI.button({ translate: `translation.poke:bossEventClose` }, `textures/poke/common/close`)
+  UI.button({ translate: `translation.poke_pfe:bossEventClose` }, `textures/poke/common/close`)
   UI.show(player).then(response => {
     let selection = 0
     if (component.can_store_items) {
@@ -479,15 +479,15 @@ function ParseRecipeItems(strings: string[]) {
 
 // Mostly works 
 function MakeLocalizationKey(string: string) {
-  const prefix = string.includes("poke:pfe-") ? "item.poke:" : string.includes("poke:") || string.includes("poke_pfe:") ? "poke_pfe." : string.includes("_spawn_egg") ? "item.spawn_egg.entity:" : (BlockTypes.get(string)) ? "tile." : "item."
-  const identifier = string.includes("poke:") || string.includes("poke_pfe:") || string.includes("minecraft:") ? string.replace("poke:", "").replace("poke_pfe:", "").replace("minecraft:", "") : string.includes("_spawn_egg") ? string.replace("_spawn_egg", "") : string
-  const suffix = string.includes("minecraft:") || string.includes("poke:pfe-") ? ".name" : ""
+  const prefix = string.includes("poke_pfe:pfe-") ? "item.poke_pfe:" : string.includes("poke_pfe:") || string.includes("poke_pfe:") ? "poke_pfe." : string.includes("_spawn_egg") ? "item.spawn_egg.entity:" : (BlockTypes.get(string)) ? "tile." : "item."
+  const identifier = string.includes("poke_pfe:") || string.includes("poke_pfe:") || string.includes("minecraft:") ? string.replace("poke_pfe:", "").replace("poke_pfe:", "").replace("minecraft:", "") : string.includes("_spawn_egg") ? string.replace("_spawn_egg", "") : string
+  const suffix = string.includes("minecraft:") || string.includes("poke_pfe:pfe-") ? ".name" : ""
   return `${prefix}${identifier}${suffix}`
 }
 
 function MakeAddonID(string: string) {
   const char = string.at(0) ?? ""
-  const id = string.includes("poke:") ? "PFE" : string.includes("poke_pfe:") ? "PFE" : string.substring(0, string.indexOf(":")).replace(char, char.toUpperCase())
+  const id = string.includes("poke_pfe:") ? "PFE" : string.includes("poke_pfe:") ? "PFE" : string.substring(0, string.indexOf(":")).replace(char, char.toUpperCase())
   return id
 }
 

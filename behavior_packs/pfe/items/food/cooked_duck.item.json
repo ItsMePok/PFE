@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:cooked_duck",
+			"identifier": "poke_pfe:cooked_duck",
 			"menu_category": {
 				"category": "equipment"
 			}

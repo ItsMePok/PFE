@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:honey_boltbow",
+			"identifier": "poke_pfe:honey_boltbow",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -25,7 +25,7 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core"
+							"poke_pfe:repair_core"
 						],
 						"repair_amount": "query.max_durability"
 					},
@@ -49,8 +49,8 @@
 				},
 				"max_durability": 2000
 			},
-			"poke:cc_bowAim": {},
-			"poke:boltbow": {}
+			"poke_pfe:cc_bowAim": {},
+			"poke_pfe:boltbow": {}
 		}
 	}
 }

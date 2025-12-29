@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:molten_chestplate"
+			"identifier": "poke_pfe:molten_chestplate"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,22 +14,22 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:demonic_chestplate"
+				"item": "poke_pfe:demonic_chestplate"
 			}
 		],
 		"key": {
 			"B": {
-				"item": "poke:ember_block"
+				"item": "poke_pfe:molten_block"
 			},
 			"#": {
-				"item": "poke:demonic_chestplate"
+				"item": "poke_pfe:demonic_chestplate"
 			},
 			"U": {
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			}
 		},
 		"result": {
-			"item": "poke:molten_chestplate"
+			"item": "poke_pfe:molten_chestplate"
 		}
 	}
 }

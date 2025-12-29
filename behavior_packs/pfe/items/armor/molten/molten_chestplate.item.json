@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:molten_chestplate",
+			"identifier": "poke_pfe:molten_chestplate",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -34,14 +34,14 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core",
-							"poke:ember_block"
+							"poke_pfe:repair_core",
+							"poke_pfe:molten_block"
 						],
 						"repair_amount": "query.max_durability"
 					},
 					{
 						"items": [
-							"poke:molten_slimeball"
+							"poke_pfe:molten_slimeball"
 						],
 						"repair_amount": "query.max_durability*0.25"
 					}

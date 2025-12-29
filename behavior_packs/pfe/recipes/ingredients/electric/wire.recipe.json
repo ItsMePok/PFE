@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:wire"
+			"identifier": "poke_pfe:wire"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,25 +14,25 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:plastic"
+				"item": "poke_pfe:plastic"
 			},
 			{
 				"item": "copper_ingot"
 			},
 			{
-				"item": "poke:electric_component"
+				"item": "poke_pfe:electric_component"
 			}
 		],
 		"key": {
 			"P": {
-				"item": "poke:plastic"
+				"item": "poke_pfe:plastic"
 			},
 			"C": {
 				"item": "copper_ingot"
 			}
 		},
 		"result": {
-			"item": "poke:wire",
+			"item": "poke_pfe:wire",
 			"count": 9
 		}
 	}

@@ -2,13 +2,13 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_furnace": {
 		"description": {
-			"identifier": "poke:cracked_void_bricks"
+			"identifier": "poke_pfe:cracked_void_bricks"
 		},
 		"tags": [
 			"furnace",
 			"blast_furnace"
 		],
-		"input": "poke:void_bricks",
-		"output": "poke:cracked_void_bricks"
+		"input": "poke_pfe:void_bricks",
+		"output": "poke_pfe:cracked_void_bricks"
 	}
 }

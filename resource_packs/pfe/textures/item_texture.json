@@ -33,8 +33,8 @@
 		"poke_pfe_cassette_tears": {
 			"textures": "textures/poke/pfe/cassette_tears"
 		},
-		"poke_pfe_amethyst_claymore": {
-			"textures": "textures/poke/pfe/amethyst_claymore"
+		"poke_pfe_creedite_claymore": {
+			"textures": "textures/poke/pfe/creedite_claymore"
 		},
 		"poke_pfe_astral_claymore": {
 			"textures": "textures/poke/pfe/astral_claymore"
@@ -67,7 +67,7 @@
 			"textures": "textures/poke/pfe/godly_claymore"
 		},
 		"poke_pfe_gold_claymore": {
-			"textures": "textures/poke/pfe/gold_claymore"
+			"textures": "textures/poke/pfe/golden_claymore"
 		},
 		"poke_pfe_hellish_claymore": {
 			"textures": "textures/poke/pfe/hellish_claymore"
@@ -129,8 +129,8 @@
 		"poke_pfe_hellish_sword": {
 			"textures": "textures/poke/pfe/hellish_sword"
 		},
-		"poke_pfe_amethyst_sword": {
-			"textures": "textures/poke/pfe/amethyst_sword"
+		"poke_pfe_creedite_sword": {
+			"textures": "textures/poke/pfe/creedite_sword"
 		},
 		"poke_pfe_nebula_sword": {
 			"textures": "textures/poke/pfe/nebula_sword"
@@ -193,10 +193,10 @@
 			"textures": "textures/poke/pfe/netherite_battleaxe"
 		},
 		"poke_pfe_gold_battleaxe": {
-			"textures": "textures/poke/pfe/gold_battleaxe"
+			"textures": "textures/poke/pfe/golden_battleaxe"
 		},
-		"poke_pfe_amethyst_battleaxe": {
-			"textures": "textures/poke/pfe/amethyst_battleaxe"
+		"poke_pfe_creedite_battleaxe": {
+			"textures": "textures/poke/pfe/creedite_battleaxe"
 		},
 		"poke_pfe_wood_battleaxe": {
 			"textures": "textures/poke/pfe/wood_battleaxe"
@@ -261,8 +261,8 @@
 		"poke_pfe_void_scythe": {
 			"textures": "textures/poke/pfe/void_scythe"
 		},
-		"poke_pfe_amethyst_scythe": {
-			"textures": "textures/poke/pfe/amethyst_scythe"
+		"poke_pfe_creedite_scythe": {
+			"textures": "textures/poke/pfe/creedite_scythe"
 		},
 		"poke_pfe_netherite_scythe": {
 			"textures": "textures/poke/pfe/netherite_scythe"
@@ -274,7 +274,7 @@
 			"textures": "textures/poke/pfe/emerald_scythe"
 		},
 		"poke_pfe_gold_scythe": {
-			"textures": "textures/poke/pfe/gold_scythe"
+			"textures": "textures/poke/pfe/golden_scythe"
 		},
 		"poke_pfe_iron_scythe": {
 			"textures": "textures/poke/pfe/iron_scythe"
@@ -288,8 +288,8 @@
 		"poke_pfe_radium_scythe": {
 			"textures": "textures/poke/pfe/radium_scythe"
 		},
-		"poke_pfe_galactic_scythe": {
-			"textures": "textures/poke/pfe/galactic_scythe"
+		"poke_pfe_galaxy_scythe": {
+			"textures": "textures/poke/pfe/galaxy_scythe"
 		},
 		"poke_pfe_cobalt_scythe": {
 			"textures": "textures/poke/pfe/cobalt_scythe"
@@ -297,14 +297,14 @@
 		"poke_pfe_death_scythe": {
 			"textures": "textures/poke/pfe/death_scythe"
 		},
-		"poke_pfe_demonic_slasher": {
-			"textures": "textures/poke/pfe/demonic_slasher"
+		"poke_pfe_demonic_scythe": {
+			"textures": "textures/poke/pfe/demonic_scythe"
 		},
-		"poke_pfe_holy_bow": {
-			"textures": "textures/poke/pfe/holy_bow"
+		"poke_pfe_holy_burstbow": {
+			"textures": "textures/poke/pfe/holy_burstbow"
 		},
-		"poke_pfe_galaxy_bow": {
-			"textures": "textures/poke/pfe/galaxy_bow"
+		"poke_pfe_galaxy_burstbow": {
+			"textures": "textures/poke/pfe/galaxy_burstbow"
 		},
 		"poke_pfe_honey_crossbow": {
 			"textures": "textures/poke/pfe/honey_crossbow"
@@ -369,11 +369,8 @@
 		"poke_pfe_radium_pickaxe": {
 			"textures": "textures/poke/pfe/radium_pickaxe"
 		},
-		"poke_pfe_emerald_pickaxe": {
-			"textures": "textures/poke/pfe/emerald_pickaxe"
-		},
-		"poke_pfe_amethyst_pickaxe": {
-			"textures": "textures/poke/pfe/amethyst_pickaxe"
+		"poke_pfe_creedite_pickaxe": {
+			"textures": "textures/poke/pfe/creedite_pickaxe"
 		},
 		"poke_pfe_nebula_pickaxe": {
 			"textures": "textures/poke/pfe/nebula_pickaxe"
@@ -420,8 +417,8 @@
 		"poke_pfe_swift_pickaxe": {
 			"textures": "textures/poke/pfe/swift_pickaxe"
 		},
-		"poke_pfe_nebula_logger": {
-			"textures": "textures/poke/pfe/nebula_logger"
+		"poke_pfe_nebula_axe": {
+			"textures": "textures/poke/pfe/nebula_axe"
 		},
 		"poke_pfe_shade_axe": {
 			"textures": "textures/poke/pfe/shade_axe"
@@ -429,11 +426,8 @@
 		"poke_pfe_radium_axe": {
 			"textures": "textures/poke/pfe/radium_axe"
 		},
-		"poke_pfe_emerald_axe": {
-			"textures": "textures/poke/pfe/emerald_axe"
-		},
-		"poke_pfe_amethyst_axe": {
-			"textures": "textures/poke/pfe/amethyst_axe"
+		"poke_pfe_creedite_axe": {
+			"textures": "textures/poke/pfe/creedite_axe"
 		},
 		"poke_pfe_death_axe": {
 			"textures": "textures/poke/pfe/death_axe"
@@ -474,6 +468,99 @@
 		"poke_pfe_nebula_hoe": {
 			"textures": "textures/poke/pfe/nebula_hoe"
 		},
+		"poke_pfe_shade_hoe": {
+			"textures": "textures/poke/pfe/shade_hoe"
+		},
+		"poke_pfe_radium_hoe": {
+			"textures": "textures/poke/pfe/radium_hoe"
+		},
+		"poke_pfe_creedite_hoe": {
+			"textures": "textures/poke/pfe/creedite_hoe"
+		},
+		"poke_pfe_death_hoe": {
+			"textures": "textures/poke/pfe/death_hoe"
+		},
+		"poke_pfe_astral_hoe": {
+			"textures": "textures/poke/pfe/astral_hoe"
+		},
+		"poke_pfe_void_hoe": {
+			"textures": "textures/poke/pfe/void_hoe"
+		},
+		"poke_pfe_galaxy_hoe": {
+			"textures": "textures/poke/pfe/galaxy_hoe"
+		},
+		"poke_pfe_molten_hoe": {
+			"textures": "textures/poke/pfe/molten_hoe"
+		},
+		"poke_pfe_medic_hoe": {
+			"textures": "textures/poke/pfe/medic_hoe"
+		},
+		"poke_pfe_demonic_hoe": {
+			"textures": "textures/poke/pfe/demonic_hoe"
+		},
+		"poke_pfe_godly_hoe": {
+			"textures": "textures/poke/pfe/godly_hoe"
+		},
+		"poke_pfe_hellish_hoe": {
+			"textures": "textures/poke/pfe/hellish_hoe"
+		},
+		"poke_pfe_holy_hoe": {
+			"textures": "textures/poke/pfe/holy_hoe"
+		},
+		"poke_pfe_onyx_hoe": {
+			"textures": "textures/poke/pfe/onyx_hoe"
+		},
+		"poke_pfe_cobalt_hoe": {
+			"textures": "textures/poke/pfe/cobalt_hoe"
+		},
+		"poke_pfe_nebula_shovel": {
+			"textures": "textures/poke/pfe/nebula_shovel"
+		},
+		"poke_pfe_shade_shovel": {
+			"textures": "textures/poke/pfe/shade_shovel"
+		},
+		"poke_pfe_radium_shovel": {
+			"textures": "textures/poke/pfe/radium_shovel"
+		},
+		"poke_pfe_creedite_shovel": {
+			"textures": "textures/poke/pfe/creedite_shovel"
+		},
+		"poke_pfe_death_shovel": {
+			"textures": "textures/poke/pfe/death_shovel"
+		},
+		"poke_pfe_astral_shovel": {
+			"textures": "textures/poke/pfe/astral_shovel"
+		},
+		"poke_pfe_void_shovel": {
+			"textures": "textures/poke/pfe/void_shovel"
+		},
+		"poke_pfe_galaxy_shovel": {
+			"textures": "textures/poke/pfe/galaxy_shovel"
+		},
+		"poke_pfe_molten_shovel": {
+			"textures": "textures/poke/pfe/molten_shovel"
+		},
+		"poke_pfe_medic_shovel": {
+			"textures": "textures/poke/pfe/medic_shovel"
+		},
+		"poke_pfe_demonic_shovel": {
+			"textures": "textures/poke/pfe/demonic_shovel"
+		},
+		"poke_pfe_godly_shovel": {
+			"textures": "textures/poke/pfe/godly_shovel"
+		},
+		"poke_pfe_hellish_shovel": {
+			"textures": "textures/poke/pfe/hellish_shovel"
+		},
+		"poke_pfe_holy_shovel": {
+			"textures": "textures/poke/pfe/holy_shovel"
+		},
+		"poke_pfe_onyx_shovel": {
+			"textures": "textures/poke/pfe/onyx_shovel"
+		},
+		"poke_pfe_cobalt_shovel": {
+			"textures": "textures/poke/pfe/cobalt_shovel"
+		},
 		"poke_pfe_wooden_haxel": {
 			"textures": "textures/poke/pfe/wooden_haxel"
 		},
@@ -484,7 +571,7 @@
 			"textures": "textures/poke/pfe/iron_haxel"
 		},
 		"poke_pfe_gold_haxel": {
-			"textures": "textures/poke/pfe/gold_haxel"
+			"textures": "textures/poke/pfe/golden_haxel"
 		},
 		"poke_pfe_diamond_haxel": {
 			"textures": "textures/poke/pfe/diamond_haxel"
@@ -495,8 +582,8 @@
 		"poke_pfe_netherite_haxel": {
 			"textures": "textures/poke/pfe/netherite_haxel"
 		},
-		"poke_pfe_amethyst_haxel": {
-			"textures": "textures/poke/pfe/amethyst_haxel"
+		"poke_pfe_creedite_haxel": {
+			"textures": "textures/poke/pfe/creedite_haxel"
 		},
 		"poke_pfe_hellish_haxel": {
 			"textures": "textures/poke/pfe/hellish_haxel"
@@ -604,7 +691,7 @@
 			"textures": "textures/poke/pfe/iron_upgrader"
 		},
 		"poke_pfe_gold_upgrader": {
-			"textures": "textures/poke/pfe/gold_upgrader"
+			"textures": "textures/poke/pfe/golden_upgrader"
 		},
 		"poke_pfe_diamond_upgrader": {
 			"textures": "textures/poke/pfe/diamond_upgrader"
@@ -1116,6 +1203,9 @@
 		"poke_pfe_molten_slimeball": {
 			"textures": "textures/poke/pfe/molten_slimeball"
 		},
+		"poke_pfe_creedite_shard": {
+			"textures": "textures/poke/pfe/creedite_shard"
+		},
 		"poke_pfe_radium_nugget": {
 			"textures": "textures/poke/pfe/radium_nugget"
 		},
@@ -1522,7 +1612,7 @@
 			"textures": "textures/poke/pfe/iron_token"
 		},
 		"poke_pfe_gold_token": {
-			"textures": "textures/poke/pfe/gold_token"
+			"textures": "textures/poke/pfe/golden_token"
 		},
 		"poke_pfe_diamond_token": {
 			"textures": "textures/poke/pfe/diamond_token"
@@ -1899,24 +1989,24 @@
 		"poke_pfe_ember_robe_helmet": {
 			"textures": "textures/poke/pfe/ember_hat"
 		},
-		"poke_pfe_amethyst_helmet": {
+		"poke_pfe_creedite_helmet": {
 			"textures": [
-				"textures/poke/pfe/amethyst_helmet"
+				"textures/poke/pfe/creedite_helmet"
 			]
 		},
-		"poke_pfe_amethyst_chestplate": {
+		"poke_pfe_creedite_chestplate": {
 			"textures": [
-				"textures/poke/pfe/amethyst_chestplate"
+				"textures/poke/pfe/creedite_chestplate"
 			]
 		},
-		"poke_pfe_amethyst_leggings": {
+		"poke_pfe_creedite_leggings": {
 			"textures": [
-				"textures/poke/pfe/amethyst_leggings"
+				"textures/poke/pfe/creedite_leggings"
 			]
 		},
-		"poke_pfe_amethyst_boots": {
+		"poke_pfe_creedite_boots": {
 			"textures": [
-				"textures/poke/pfe/amethyst_boots"
+				"textures/poke/pfe/creedite_boots"
 			]
 		},
 		"poke_pfe_onyx_helmet": {

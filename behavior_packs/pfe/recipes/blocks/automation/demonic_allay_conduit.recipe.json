@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:demonic_allay_conduit"
+			"identifier": "poke_pfe:demonic_allay_conduit"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,16 +14,16 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:demonic_ingot"
+				"item": "poke_pfe:demonic_ingot"
 			},
 			{
-				"item": "poke:antenna"
+				"item": "poke_pfe:antenna"
 			},
 			{
-				"item": "poke:hellish_blade"
+				"item": "poke_pfe:hellish_sword"
 			},
 			{
-				"item": "poke:electric_component"
+				"item": "poke_pfe:electric_component"
 			},
 			{
 				"item": "redstone"
@@ -31,23 +31,23 @@
 		],
 		"key": {
 			"C": {
-				"item": "poke:demonic_ingot"
+				"item": "poke_pfe:demonic_ingot"
 			},
 			"W": {
-				"item": "poke:antenna"
+				"item": "poke_pfe:antenna"
 			},
 			"G": {
-				"item": "poke:hellish_blade"
+				"item": "poke_pfe:hellish_sword"
 			},
 			"E": {
-				"item": "poke:electric_component"
+				"item": "poke_pfe:electric_component"
 			},
 			"D": {
 				"item": "redstone"
 			}
 		},
 		"result": {
-			"item": "poke:demonic_allay_conduit"
+			"item": "poke_pfe:demonic_allay_conduit"
 		}
 	}
 }

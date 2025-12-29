@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:molten_leggings"
+			"identifier": "poke_pfe:molten_leggings"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,22 +14,22 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:demonic_leggings"
+				"item": "poke_pfe:demonic_leggings"
 			}
 		],
 		"key": {
 			"B": {
-				"item": "poke:ember_block"
+				"item": "poke_pfe:molten_block"
 			},
 			"#": {
-				"item": "poke:demonic_leggings"
+				"item": "poke_pfe:demonic_leggings"
 			},
 			"U": {
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			}
 		},
 		"result": {
-			"item": "poke:molten_leggings"
+			"item": "poke_pfe:molten_leggings"
 		}
 	}
 }

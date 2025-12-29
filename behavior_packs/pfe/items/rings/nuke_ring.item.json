@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:nuke_ring",
+			"identifier": "poke_pfe:nuke_ring",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -13,12 +13,12 @@
 				"value": "%poke_pfe.nuke_ring\n%poke_pfe.tag"
 			},
 			"poke_pfe:icon_path": "textures/poke/pfe/nuke_ring",
-			"poke:shootProjectile": {},
+			"poke_pfe:shootProjectile": {},
 			"minecraft:repairable": {
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core"
+							"poke_pfe:repair_core"
 						],
 						"repair_amount": "query.max_durability"
 					}
@@ -26,7 +26,7 @@
 			},
 			"minecraft:icon": "poke_pfe_nuke_ring",
 			"minecraft:cooldown": {
-				"category": "poke:nuke_ring",
+				"category": "poke_pfe:nuke_ring",
 				"duration": 2
 			},
 			"minecraft:durability": {
@@ -43,7 +43,7 @@
 			"minecraft:max_stack_size": 1,
 			"minecraft:tags": {
 				"tags": [
-					"poke:nuke_ring_projectile" //Projectile id for script
+					"poke_pfe:nuke_ring_projectile" //Projectile id for script
 				]
 			},
 			"minecraft:use_modifiers": {

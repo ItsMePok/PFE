@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke_pfe:alloy_forge",
@@ -22,34 +22,34 @@
 			"poke_pfe:custom_recipes": [
 				{
 					"items": [
-						"4:poke:shade_ingot",
-						"4:poke:astral_ingot",
-						"1:poke:molten_slimeball"
+						"4:poke_pfe:shade_ingot",
+						"4:poke_pfe:astral_ingot",
+						"1:poke_pfe:molten_slimeball"
 					],
 					"result": [
-						"8:poke:radium_ingot"
+						"8:poke_pfe:radium_ingot"
 					],
 					"recipe_type": "shapeless"
 				},
 				{
 					"items": [
-						"4:poke:godly_ingot",
-						"4:poke:cobalt_ingot",
-						"1:poke:molten_slimeball"
+						"4:poke_pfe:godly_ingot",
+						"4:poke_pfe:cobalt_ingot",
+						"1:poke_pfe:molten_slimeball"
 					],
 					"result": [
-						"8:poke:medic_ingot"
+						"8:poke_pfe:medic_ingot"
 					],
 					"recipe_type": "shapeless"
 				},
 				{
 					"items": [
-						"4:poke:onyx_ingot",
-						"4:poke:void_ingot",
-						"1:poke:molten_slimeball"
+						"4:poke_pfe:onyx_ingot",
+						"4:poke_pfe:void_ingot",
+						"1:poke_pfe:molten_slimeball"
 					],
 					"result": [
-						"8:poke:death_ingot"
+						"8:poke_pfe:death_ingot"
 					],
 					"recipe_type": "shapeless"
 				}

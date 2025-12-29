@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:death_leggings"
+			"identifier": "poke_pfe:death_leggings"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,26 +14,26 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:void_leggings"
+				"item": "poke_pfe:void_leggings"
 			}
 		],
 		"key": {
 			"B": {
-				"item": "poke:death_block"
+				"item": "poke_pfe:death_block"
 			},
 			"#": {
-				"item": "poke:void_leggings"
+				"item": "poke_pfe:void_leggings"
 			},
 			"U": {
-				"item": "poke:platinum_upgrade_core"
+				"item": "poke_pfe:platinum_upgrade_core"
 			},
 			"X": {
-				"item": "poke:molten_leggings"
+				"item": "poke_pfe:molten_leggings"
 			}
 		},
 		"result": [
 			{
-				"item": "poke:death_leggings"
+				"item": "poke_pfe:death_leggings"
 			}
 		]
 	}

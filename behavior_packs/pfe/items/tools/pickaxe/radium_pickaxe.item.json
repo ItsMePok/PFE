@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:radium_pickaxe",
+			"identifier": "poke_pfe:radium_pickaxe",
 			"menu_category": {
 				"category": "equipment",
 				"group": "minecraft:itemGroup.name.pickaxe"
@@ -16,10 +16,10 @@
 			"poke_pfe:upgradeable": {
 				"version": 1,
 				"upgrade_ids": [
-					"pfe:persistence"
+					"poke_pfe:persistence"
 				]
 			},
-			"poke:normalMining": {},
+			"poke_pfe:normalMining": {},
 			"minecraft:hand_equipped": true,
 			"minecraft:max_stack_size": 1,
 			"minecraft:durability": {
@@ -42,20 +42,20 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core",
-							"poke:radium_block"
+							"poke_pfe:repair_core",
+							"poke_pfe:radium_block"
 						],
 						"repair_amount": "query.max_durability"
 					},
 					{
 						"items": [
-							"poke:radium_ingot"
+							"poke_pfe:radium_ingot"
 						],
 						"repair_amount": "q.max_durability*0.25"
 					},
 					{
 						"items": [
-							"poke:radium_nugget"
+							"poke_pfe:radium_nugget"
 						],
 						"repair_amount": "q.max_durability*0.028"
 					}
@@ -67,7 +67,7 @@
 					"minecraft:is_pickaxe",
 					"minecraft:digger",
 					"minecraft:is_tool",
-					"pfe:pickaxe"
+					"poke_pfe:pickaxe"
 				]
 			},
 			"minecraft:damage": {

@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:nebula_stick"
+			"identifier": "poke_pfe:nebula_stick"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,16 +14,16 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:nebula_ingot"
+				"item": "poke_pfe:nebula_ingot"
 			}
 		],
 		"key": {
 			"#": {
-				"item": "poke:nebula_ingot"
+				"item": "poke_pfe:nebula_ingot"
 			}
 		},
 		"result": {
-			"item": "poke:nebula_stick",
+			"item": "poke_pfe:nebula_stick",
 			"count": 1
 		}
 	}

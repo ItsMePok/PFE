@@ -9,7 +9,7 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:empty_cassette"
+				"item": "poke_pfe:empty_cassette"
 			},
 			{
 				"item": "music_disc_tears"
@@ -17,7 +17,7 @@
 		],
 		"ingredients": [
 			{
-				"item": "poke:empty_cassette"
+				"item": "poke_pfe:empty_cassette"
 			},
 			{
 				"item": "music_disc_tears"

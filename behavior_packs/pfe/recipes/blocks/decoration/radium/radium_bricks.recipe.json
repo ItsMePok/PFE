@@ -2,22 +2,22 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:radium_bricks_craft"
+			"identifier": "poke_pfe:radium_bricks_craft"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:radium_block"
+				"item": "poke_pfe:radium_block"
 			},
 			{
-				"item": "poke:radium_ingot"
+				"item": "poke_pfe:radium_ingot"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:cut_radium"
+				"item": "poke_pfe:cut_radium"
 			}
 		},
 		"pattern": [
@@ -25,7 +25,7 @@
 			"CC"
 		],
 		"result": {
-			"item": "poke:radium_bricks",
+			"item": "poke_pfe:radium_bricks",
 			"count": 4
 		}
 	}

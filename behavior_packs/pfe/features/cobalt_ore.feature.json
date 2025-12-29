@@ -1,14 +1,14 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:ore_feature": {
 		"description": {
-			"identifier": "poke:cobalt_ore.feature"
+			"identifier": "poke_pfe:cobalt_ore.feature"
 		},
 		"count": 16,
 		"replace_rules": [
 			{
 				"places_block": {
-					"name": "poke:cobalt_ore",
+					"name": "poke_pfe:cobalt_ore",
 					"states": {}
 				},
 				"may_replace": [
@@ -24,7 +24,7 @@
 				"may_replace": [
 					"deepslate"
 				],
-				"places_block": "poke:deepslate_cobalt_ore"
+				"places_block": "poke_pfe:deepslate_cobalt_ore"
 			}
 		]
 	}

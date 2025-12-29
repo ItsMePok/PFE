@@ -2,22 +2,22 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:demonic_trapdoor"
+			"identifier": "poke_pfe:demonic_trapdoor"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:demonic_ingot"
+				"item": "poke_pfe:demonic_ingot"
 			},
 			{
-				"item": "poke:demonic_block"
+				"item": "poke_pfe:demonic_block"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:demonic_ingot"
+				"item": "poke_pfe:demonic_ingot"
 			}
 		},
 		"pattern": [
@@ -25,7 +25,7 @@
 			"CCC"
 		],
 		"result": {
-			"item": "poke:demonic_trapdoor",
+			"item": "poke_pfe:demonic_trapdoor",
 			"count": 4
 		}
 	}

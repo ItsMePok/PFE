@@ -1,4 +1,4 @@
-import { Dimension, Direction, Entity, EntityComponentTypes, EntityEquippableComponent, EntityInventoryComponent, EquipmentSlot, GameMode, ItemComponentTypes, ItemDurabilityComponent, ItemLockMode, ItemStack, Player, RawMessage, Vector3, world } from "@minecraft/server";
+import { Container, Dimension, Direction, Entity, EntityComponentTypes, EquipmentSlot, GameMode, ItemComponentTypes, ItemLockMode, ItemStack, Player, RawMessage, Vector3, world } from "@minecraft/server";
 import { ActionFormData } from "@minecraft/server-ui";
 import { MinecraftEnchantmentTypes, MinecraftEntityTypes } from "@minecraft/vanilla-data";
 
@@ -18,7 +18,8 @@ export {
   PokeClosestCardinalInfo,
   getComponentInfoFromDataStorageItems,
   CompiledComponentInfo,
-  pokeAddItemsToPlayerOrDrop
+  pokeAddItemsToPlayerOrDrop,
+  pokeAddItemsToContainerOrDrop
 }
 
 // Tool Durability initially from https://wiki.bedrock.dev/items/tool-durability.html
@@ -57,7 +58,7 @@ function PokeDamageItemUB(item: ItemStack, multiplier: undefined | number, entit
   // Check if the item does not have a durability component to avoid deleting itself
   if (!durabilityComponent) {
     // We set a dynamic property to ensure that holding will continue to trigger regardless if unbreaking takes effect
-    item.isStackable ? undefined : PokeSaveProperty(`poke:holdFix`, item, Math.round(Math.random() * 100), entity, slot)
+    item.isStackable ? undefined : PokeSaveProperty(`poke_pfe:holdFix`, item, Math.round(Math.random() * 100), entity, slot)
     return { tookDurability: false, failed: true, broke: false }
   }
   if (preventBreaking && durabilityComponent?.maxDurability == (durabilityComponent.damage + 1)) {
@@ -72,7 +73,7 @@ function PokeDamageItemUB(item: ItemStack, multiplier: undefined | number, entit
   if (entity.typeId == MinecraftEntityTypes.Player) {
     const player = <Player>entity
     if (player.getGameMode() == GameMode.Creative) {
-      item.isStackable ? undefined : PokeSaveProperty(`poke:holdFix`, item, Math.round(Math.random() * 100), entity, slot)
+      item.isStackable ? undefined : PokeSaveProperty(`poke_pfe:holdFix`, item, Math.round(Math.random() * 100), entity, slot)
       return { tookDurability: false, failed: false, broke: false, gmc: true }
     }
   }
@@ -87,7 +88,7 @@ function PokeDamageItemUB(item: ItemStack, multiplier: undefined | number, entit
       return
     }
   }
-  item.isStackable ? undefined : PokeSaveProperty(`poke:holdFix`, item, Math.round(Math.random() * 100), entity, slot)
+  item.isStackable ? undefined : PokeSaveProperty(`poke_pfe:holdFix`, item, Math.round(Math.random() * 100), entity, slot)
 }
 
 /**
@@ -118,12 +119,12 @@ function PokeDecrementStack(item: ItemStack, amount?: number) {
 function PokeErrorScreen(player: Player, error?: RawMessage, backTo?: any) {
   let UI = new ActionFormData()
   if (!error) {
-    error = { translate: `translation.poke:errorGeneric` }
+    error = { translate: `translation.poke_pfe:errorGeneric` }
   }
-  UI.title({ translate: `translation.poke:errorGeneric` })
+  UI.title({ translate: `translation.poke_pfe:errorGeneric` })
   UI.body(error)
-  UI.button({ translate: `translation.poke:goBack` }, `textures/poke/common/left_arrow`)
-  UI.button({ translate: `translation.poke:bossEventClose` }, `textures/poke/common/close`)
+  UI.button({ translate: `translation.poke_pfe:goBack` }, `textures/poke/common/left_arrow`)
+  UI.button({ translate: `translation.poke_pfe:bossEventClose` }, `textures/poke/common/close`)
   UI.show(player).then((response => {
     if (response.canceled || response.selection == 1) {
       backTo
@@ -372,4 +373,26 @@ function pokeAddItemsToPlayerOrDrop(player: Player, item: ItemStack) {
   else {
     player.dimension.spawnItem(item, player.location)
   }
+}
+function pokeAddItemsToContainerOrDrop(Container: Container | undefined, item: ItemStack, dimension: Dimension, location: Vector3) {
+  if (Container) {
+    const EmptySlot = Container.firstEmptySlot()
+    if (typeof EmptySlot == "number") {
+      Container.addItem(item)
+      return;
+    }
+    const ExistingItemSlot = Container.findLast(item)
+    if (typeof ExistingItemSlot == "number") {
+      const ExistingItem = Container.getSlot(ExistingItemSlot)
+      if (ExistingItem) {
+        if (ExistingItem?.amount == ExistingItem?.maxAmount) {
+          return
+        } else {
+          Container.addItem(item)
+          return;
+        }
+      }
+    }
+  }
+  dimension.spawnItem(item, location)
 }

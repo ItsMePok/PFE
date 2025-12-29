@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "poke:quest_trader",
+			"identifier": "poke_pfe:quest_trader",
 			"materials": {
 				"default": "villager"
 			},

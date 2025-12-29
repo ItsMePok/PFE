@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:repair_core",
+			"identifier": "poke_pfe:repair_core",
 			"menu_category": {
 				"category": "items"
 			}
@@ -14,7 +14,7 @@
 			"poke_pfe:icon_path": "textures/poke/pfe/repair_core",
 			"minecraft:tags": {
 				"tags": [
-					"poke:upgrade_core"
+					"poke_pfe:upgrade_core"
 				]
 			},
 			"minecraft:icon": "poke_pfe_repair_core"

@@ -1,6 +1,8 @@
-{"format_version": "1.19.0",
+{
+  "format_version": "1.19.0",
   "tiers": [
-    {"total_exp_required": 0,
+    {
+      "total_exp_required": 0,
       "groups": [
         {
           "trades": [
@@ -9,13 +11,13 @@
               "reward_exp": false,
               "wants": [
                 {
-                  "item": "poke:pma_bill_1",
+                  "item": "poke_pfe:pma_bill_1",
                   "quantity": 5
                 }
               ],
               "gives": [
                 {
-                  "item": "poke:pma_bill_5"
+                  "item": "poke_pfe:pma_bill_5"
                 }
               ]
             },
@@ -24,13 +26,13 @@
               "reward_exp": false,
               "wants": [
                 {
-                  "item": "poke:pma_bill_5",
+                  "item": "poke_pfe:pma_bill_5",
                   "quantity": 2
                 }
               ],
               "gives": [
                 {
-                  "item": "poke:pma_bill_10"
+                  "item": "poke_pfe:pma_bill_10"
                 }
               ]
             },
@@ -39,13 +41,13 @@
               "reward_exp": false,
               "wants": [
                 {
-                  "item": "poke:pma_bill_10",
+                  "item": "poke_pfe:pma_bill_10",
                   "quantity": 2
                 }
               ],
               "gives": [
                 {
-                  "item": "poke:pma_bill_20"
+                  "item": "poke_pfe:pma_bill_20"
                 }
               ]
             },
@@ -54,13 +56,13 @@
               "reward_exp": false,
               "wants": [
                 {
-                  "item": "poke:pma_bill_10",
+                  "item": "poke_pfe:pma_bill_10",
                   "quantity": 5
                 }
               ],
               "gives": [
                 {
-                  "item": "poke:pma_bill_50"
+                  "item": "poke_pfe:pma_bill_50"
                 }
               ]
             },
@@ -69,13 +71,13 @@
               "reward_exp": false,
               "wants": [
                 {
-                  "item": "poke:pma_bill_50",
+                  "item": "poke_pfe:pma_bill_50",
                   "quantity": 2
                 }
               ],
               "gives": [
                 {
-                  "item": "poke:pma_bill_100"
+                  "item": "poke_pfe:pma_bill_100"
                 }
               ]
             },
@@ -84,13 +86,13 @@
               "reward_exp": false,
               "wants": [
                 {
-                  "item": "poke:pma_bill_100",
+                  "item": "poke_pfe:pma_bill_100",
                   "quantity": 5
                 }
               ],
               "gives": [
                 {
-                  "item": "poke:pma_bill_500"
+                  "item": "poke_pfe:pma_bill_500"
                 }
               ]
             },
@@ -99,61 +101,13 @@
               "reward_exp": false,
               "wants": [
                 {
-                  "item": "poke:pma_bill_5",
+                  "item": "poke_pfe:pma_bill_5",
                   "quantity": 1
                 }
               ],
               "gives": [
                 {
-                  "item": "poke:pma_bill_1",
-                  "quantity": 5
-                }
-              ]
-            },
-            {
-              "max_uses": 2147483647,
-              "reward_exp": false,
-              "wants": [
-                {
-                  "item": "poke:pma_bill_10",
-                  "quantity": 1
-                }
-              ],
-              "gives": [
-                {
-                  "item": "poke:pma_bill_5",
-                  "quantity": 2
-                }
-              ]
-            },
-            {
-              "max_uses": 2147483647,
-              "reward_exp": false,
-              "wants": [
-                {
-                  "item": "poke:pma_bill_20",
-                  "quantity": 1
-                }
-              ],
-              "gives": [
-                {
-                  "item": "poke:pma_bill_10",
-                  "quantity": 2
-                }
-              ]
-            },
-            {
-              "max_uses": 2147483647,
-              "reward_exp": false,
-              "wants": [
-                {
-                  "item": "poke:pma_bill_50",
-                  "quantity": 1
-                }
-              ],
-              "gives": [
-                {
-                  "item": "poke:pma_bill_10",
+                  "item": "poke_pfe:pma_bill_1",
                   "quantity": 5
                 }
               ]
@@ -163,13 +117,13 @@
               "reward_exp": false,
               "wants": [
                 {
-                  "item": "poke:pma_bill_100",
+                  "item": "poke_pfe:pma_bill_10",
                   "quantity": 1
                 }
               ],
               "gives": [
                 {
-                  "item": "poke:pma_bill_50",
+                  "item": "poke_pfe:pma_bill_5",
                   "quantity": 2
                 }
               ]
@@ -179,109 +133,157 @@
               "reward_exp": false,
               "wants": [
                 {
-                  "item": "poke:pma_bill_500",
+                  "item": "poke_pfe:pma_bill_20",
                   "quantity": 1
                 }
               ],
               "gives": [
                 {
-                  "item": "poke:pma_bill_100",
+                  "item": "poke_pfe:pma_bill_10",
+                  "quantity": 2
+                }
+              ]
+            },
+            {
+              "max_uses": 2147483647,
+              "reward_exp": false,
+              "wants": [
+                {
+                  "item": "poke_pfe:pma_bill_50",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "poke_pfe:pma_bill_10",
                   "quantity": 5
                 }
               ]
             },
             {
-							"max_uses": 2147483647,
-							"reward_exp": false,
-							"wants": [
-								{
-									"item": "poke:dollor_bill_1",
-									"quantity": 5
-								}
-							],
-							"gives": [
-								{
-									"item": "poke:dollor_bill_5"
-								}
-							]
-						},
-						{
-							"max_uses": 2147483647,
-							"reward_exp": false,
-							"wants": [
-								{
-									"item": "poke:dollor_bill_5",
-									"quantity": 2
-								}
-							],
-							"gives": [
-								{
-									"item": "poke:dollor_bill_10"
-								}
-							]
-						},
-						{
-							"max_uses": 2147483647,
-							"reward_exp": false,
-							"wants": [
-								{
-									"item": "poke:dollor_bill_5",
-									"quantity": 1
-								}
-							],
-							"gives": [
-								{
-									"item": "poke:dollor_bill_1",
-									"quantity": 5
-								}
-							]
-						},
-						{
-							"max_uses": 2147483647,
-							"reward_exp": false,
-							"wants": [
-								{
-									"item": "poke:dollor_bill_10",
-									"quantity": 1
-								}
-							],
-							"gives": [
-								{
-									"item": "poke:dollor_bill_5",
-									"quantity": 2
-								}
-							]
-						},
-						{
-							"max_uses": 2147483647,
-							"wants": [
-								{
-									"item": "diamond",
-									"quantity": 1
-								}
-							],
-							"gives": [
-								{
-									"item": "poke:dollor_bill_1",
-									"quantity": 1
-								}
-							]
-						},
+              "max_uses": 2147483647,
+              "reward_exp": false,
+              "wants": [
+                {
+                  "item": "poke_pfe:pma_bill_100",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "poke_pfe:pma_bill_50",
+                  "quantity": 2
+                }
+              ]
+            },
             {
-							"max_uses": 2147483647,
-							"wants": [
-								{
-									"item": "poke:gold_token",
-									"quantity": 1
-								}
-							],
-							"gives": [
-								{
-									"item": "poke:pfe-modbay_pottery_sherd",
-									"quantity": 1
-								}
-							]
-						}
+              "max_uses": 2147483647,
+              "reward_exp": false,
+              "wants": [
+                {
+                  "item": "poke_pfe:pma_bill_500",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "poke_pfe:pma_bill_100",
+                  "quantity": 5
+                }
+              ]
+            },
+            {
+              "max_uses": 2147483647,
+              "reward_exp": false,
+              "wants": [
+                {
+                  "item": "poke_pfe:dollor_bill_1",
+                  "quantity": 5
+                }
+              ],
+              "gives": [
+                {
+                  "item": "poke_pfe:dollor_bill_5"
+                }
+              ]
+            },
+            {
+              "max_uses": 2147483647,
+              "reward_exp": false,
+              "wants": [
+                {
+                  "item": "poke_pfe:dollor_bill_5",
+                  "quantity": 2
+                }
+              ],
+              "gives": [
+                {
+                  "item": "poke_pfe:dollor_bill_10"
+                }
+              ]
+            },
+            {
+              "max_uses": 2147483647,
+              "reward_exp": false,
+              "wants": [
+                {
+                  "item": "poke_pfe:dollor_bill_5",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "poke_pfe:dollor_bill_1",
+                  "quantity": 5
+                }
+              ]
+            },
+            {
+              "max_uses": 2147483647,
+              "reward_exp": false,
+              "wants": [
+                {
+                  "item": "poke_pfe:dollor_bill_10",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "poke_pfe:dollor_bill_5",
+                  "quantity": 2
+                }
+              ]
+            },
+            {
+              "max_uses": 2147483647,
+              "wants": [
+                {
+                  "item": "diamond",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "poke_pfe:dollor_bill_1",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 2147483647,
+              "wants": [
+                {
+                  "item": "poke_pfe:golden_token",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "poke_pfe:pfe-modbay_pottery_sherd",
+                  "quantity": 1
+                }
+              ]
+            }
           ]
         }
       ]

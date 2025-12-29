@@ -5,12 +5,12 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "poke:necromancer_staff",
+                    "name": "poke_pfe:necromancer_staff",
                     "weight": 1
                 },
                 {
                     "type": "item",
-                    "name": "poke:necromancer_crown",
+                    "name": "poke_pfe:necromancer_crown",
                     "weight": 1
                 }
             ]
@@ -23,7 +23,7 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "poke:copper_token"
+                    "name": "poke_pfe:copper_token"
                 }
             ]
         },
@@ -35,7 +35,7 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "poke:iron_token"
+                    "name": "poke_pfe:iron_token"
                 }
             ]
         }

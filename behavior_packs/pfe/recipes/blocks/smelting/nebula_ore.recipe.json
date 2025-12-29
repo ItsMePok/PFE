@@ -2,13 +2,13 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_furnace": {
 		"description": {
-			"identifier": "poke:nebula_ore"
+			"identifier": "poke_pfe:nebula_ore"
 		},
 		"tags": [
 			"furnace",
 			"blast_furnace"
 		],
-		"input": "poke:nebula_ore",
-		"output": "poke:nebula_ingot"
+		"input": "poke_pfe:nebula_ore",
+		"output": "poke_pfe:nebula_ingot"
 	}
 }

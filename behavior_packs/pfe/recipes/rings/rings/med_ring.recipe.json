@@ -2,29 +2,29 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "poke:med_ring"
+			"identifier": "poke_pfe:med_ring"
 		},
-		"group": "pfe:rings",
+		"group": "poke_pfe:rings",
 		"ingredients": [
 			{
-				"item": "poke:gem_holder",
+				"item": "poke_pfe:gem_holder",
 				"count": 1
 			},
 			{
-				"item": "poke:med_gem",
+				"item": "poke_pfe:med_gem",
 				"count": 1
 			}
 		],
 		"unlock": [
 			{
-				"item": "poke:med_gem"
+				"item": "poke_pfe:med_gem"
 			}
 		],
 		"tags": [
 			"crafting_table"
 		],
 		"result": {
-			"item": "poke:med_ring",
+			"item": "poke_pfe:med_ring",
 			"count": 1
 		}
 	}

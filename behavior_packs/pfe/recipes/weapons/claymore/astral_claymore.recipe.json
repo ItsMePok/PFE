@@ -15,16 +15,16 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:astral_ingot"
+				"item": "poke_pfe:astral_ingot"
 			},
 			{
-				"item": "poke:astral_block"
+				"item": "poke_pfe:astral_block"
 			},
 			{
-				"item": "poke:godly_stick"
+				"item": "poke_pfe:godly_stick"
 			},
 			{
-				"item": "poke:platinum_upgrade_core"
+				"item": "poke_pfe:platinum_upgrade_core"
 			},
 			{
 				"item": "poke_pfe:medic_claymore"
@@ -35,16 +35,16 @@
 		],
 		"key": {
 			"I": {
-				"item": "poke:astral_ingot"
+				"item": "poke_pfe:astral_ingot"
 			},
 			"B": {
-				"item": "poke:astral_block"
+				"item": "poke_pfe:astral_block"
 			},
 			"S": {
-				"item": "poke:godly_stick"
+				"item": "poke_pfe:godly_stick"
 			},
 			"U": {
-				"item": "poke:platinum_upgrade_core"
+				"item": "poke_pfe:platinum_upgrade_core"
 			},
 			"C": {
 				"item": "poke_pfe:medic_claymore"

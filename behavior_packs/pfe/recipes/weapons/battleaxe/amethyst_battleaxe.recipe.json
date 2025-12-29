@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:amethyst_battleaxe"
+			"identifier": "poke_pfe:creedite_battleaxe"
 		},
 		"tags": [
 			"crafting_table"
@@ -20,12 +20,12 @@
 				"item": "amethyst_block"
 			},
 			{
-				"item": "poke:netherite_battleaxe"
+				"item": "poke_pfe:netherite_battleaxe"
 			}
 		],
 		"key": {
 			"B": {
-				"item": "poke:netherite_battleaxe"
+				"item": "poke_pfe:netherite_battleaxe"
 			},
 			"D": {
 				"item": "amethyst_block"
@@ -34,12 +34,12 @@
 				"item": "stick"
 			},
 			"U": {
-				"item": "poke:upgrade_core"
+				"item": "poke_pfe:upgrade_core"
 			}
 		},
 		"result": [
 			{
-				"item": "poke:amethyst_battleaxe"
+				"item": "poke_pfe:creedite_battleaxe"
 			}
 		]
 	}

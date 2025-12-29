@@ -1,9 +1,19 @@
 {
-	"format_version":"1.16.100",
-	"minecraft:recipe_shapeless":{
-		"description":{"identifier":"poke:galaxy_b_w_sc_b"},
-		"tags":["stonecutter"],
-		"ingredients":[{"item":"poke:galaxy_bricks"}],
-		"result":{"item":"poke:galaxy_brick_wall"}
+	"format_version": "1.16.100",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "poke_pfe:galaxy_b_w_sc_b"
+		},
+		"tags": [
+			"stonecutter"
+		],
+		"ingredients": [
+			{
+				"item": "poke_pfe:galaxy_bricks"
+			}
+		],
+		"result": {
+			"item": "poke_pfe:galaxy_brick_wall"
+		}
 	}
 }

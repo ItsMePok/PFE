@@ -5,14 +5,14 @@
             "crafting_table"
         ],
         "description": {
-            "identifier": "poke:apple_crate"
+            "identifier": "poke_pfe:apple_crate"
         },
         "unlock": [
             {
                 "item": "minecraft:apple"
             },
             {
-                "item": "poke:empty_crate"
+                "item": "poke_pfe:empty_crate"
             }
         ],
         "ingredients": [
@@ -21,11 +21,11 @@
                 "count": 8
             },
             {
-                "item": "poke:empty_crate"
+                "item": "poke_pfe:empty_crate"
             }
         ],
         "result": {
-            "item": "poke:apple_crate"
+            "item": "poke_pfe:apple_crate"
         }
     }
 }

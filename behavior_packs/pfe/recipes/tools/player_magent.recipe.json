@@ -1,30 +1,50 @@
 {
-	"format_version":"1.20.10",
-	"minecraft:recipe_shaped":{
-		"description":{
-			"identifier":"poke:player_magnet"
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke_pfe:player_magnet"
 		},
-		"tags":[
+		"tags": [
 			"crafting_table"
 		],
-		"pattern":[
+		"pattern": [
 			"III",
 			"ICI",
 			"D H"
 		],
-        "unlock":[
-			{"item":"poke:nebula_ingot"},
-			{"item":"poke:godly_block"},
-			{"item":"poke:nebula_core"},
-			{"item":"poke:shade_gem"},
-			{"item":"poke:gravity_gem"}
+		"unlock": [
+			{
+				"item": "poke_pfe:nebula_ingot"
+			},
+			{
+				"item": "poke_pfe:godly_block"
+			},
+			{
+				"item": "poke_pfe:nebula_core"
+			},
+			{
+				"item": "poke_pfe:shade_gem"
+			},
+			{
+				"item": "poke_pfe:gravity_gem"
+			}
 		],
-		"key":{
-			"I":{"item":"poke:godly_block"},
-			"C":{"item":"poke:nebula_core"},
-			"D":{"item":"poke:shade_gem"},
-			"H":{"item":"poke:gravity_gem"}
+		"key": {
+			"I": {
+				"item": "poke_pfe:godly_block"
+			},
+			"C": {
+				"item": "poke_pfe:nebula_core"
+			},
+			"D": {
+				"item": "poke_pfe:shade_gem"
+			},
+			"H": {
+				"item": "poke_pfe:gravity_gem"
+			}
 		},
-		"result":{"item":"poke:player_magnet"}
+		"result": {
+			"item": "poke_pfe:player_magnet"
+		}
 	}
 }

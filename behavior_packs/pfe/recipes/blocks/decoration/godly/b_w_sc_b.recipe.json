@@ -1,9 +1,19 @@
 {
-	"format_version":"1.16.100",
-	"minecraft:recipe_shapeless":{
-		"description":{"identifier":"poke:godly_b_w_sc_b"},
-		"tags":["stonecutter"],
-		"ingredients":[{"item":"poke:godly_bricks"}],
-		"result":{"item":"poke:godly_brick_wall"}
+	"format_version": "1.16.100",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "poke_pfe:godly_b_w_sc_b"
+		},
+		"tags": [
+			"stonecutter"
+		],
+		"ingredients": [
+			{
+				"item": "poke_pfe:godly_bricks"
+			}
+		],
+		"result": {
+			"item": "poke_pfe:godly_brick_wall"
+		}
 	}
 }

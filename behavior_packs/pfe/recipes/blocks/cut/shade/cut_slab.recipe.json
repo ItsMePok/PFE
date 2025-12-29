@@ -2,29 +2,29 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:cut_shade_slab_crafting_table"
+			"identifier": "poke_pfe:cut_shade_slab_crafting_table"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:shade_ingot"
+				"item": "poke_pfe:shade_ingot"
 			},
 			{
-				"item": "poke:cut_shade"
+				"item": "poke_pfe:cut_shade"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:cut_shade"
+				"item": "poke_pfe:cut_shade"
 			}
 		},
 		"pattern": [
 			"CCC"
 		],
 		"result": {
-			"item": "poke:cut_shade_slab",
+			"item": "poke_pfe:cut_shade_slab",
 			"count": 6
 		}
 	}

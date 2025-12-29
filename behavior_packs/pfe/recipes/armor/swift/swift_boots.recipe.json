@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:swift_boots"
+			"identifier": "poke_pfe:swift_boots"
 		},
 		"tags": [
 			"crafting_table"
@@ -26,7 +26,7 @@
 			}
 		},
 		"result": {
-			"item": "poke:swift_boots"
+			"item": "poke_pfe:swift_boots"
 		}
 	}
 }

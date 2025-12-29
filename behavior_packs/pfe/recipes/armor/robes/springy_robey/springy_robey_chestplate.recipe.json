@@ -2,7 +2,7 @@
     "format_version": "1.20.60",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "poke:springy_robey_chestplate"
+            "identifier": "poke_pfe:springy_robey_chestplate"
         },
         "tags": [
             "crafting_table"
@@ -14,7 +14,7 @@
         ],
         "unlock": [
             {
-                "item": "poke:amethyst_chestplate"
+                "item": "poke_pfe:creedite_chestplate"
             }
         ],
         "key": {
@@ -22,17 +22,17 @@
                 "item": "slime"
             },
             "A": {
-                "item": "poke:amethyst_chestplate"
+                "item": "poke_pfe:creedite_chestplate"
             },
             "G": {
                 "item": "gold_block"
             },
             "U": {
-                "item": "poke:upgrade_core"
+                "item": "poke_pfe:upgrade_core"
             }
         },
         "result": {
-            "item": "poke:springy_robey_chestplate"
+            "item": "poke_pfe:springy_robey_chestplate"
         }
     }
 }

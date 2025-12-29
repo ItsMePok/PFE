@@ -8,32 +8,32 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "poke:cassette_dragonfish",
+					"name": "poke_pfe:cassette_dragonfish",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:cassette_dreiton",
+					"name": "poke_pfe:cassette_dreiton",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:cassette_shuniji",
+					"name": "poke_pfe:cassette_shuniji",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:cassette_axolotl",
+					"name": "poke_pfe:cassette_axolotl",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:cassette_mc_disc_relic",
+					"name": "poke_pfe:cassette_mc_disc_relic",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:copper_token",
+					"name": "poke_pfe:copper_token",
 					"weight": 1
 				},
 				{
@@ -58,28 +58,28 @@
 				},
 				{
 					"type": "item",
-					"name": "poke:iron_token",
+					"name": "poke_pfe:iron_token",
 					"weight": 2
 				},
 				{
 					"type": "item",
-					"name": "poke:plastic",
+					"name": "poke_pfe:plastic",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:crab_pal",
+					"name": "poke_pfe:crab_pal",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:boss_event_bounty",
+					"name": "poke_pfe:bounty",
 					"weight": 1
 				},
 				{
-						"type": "item",
-						"name": "poke:pfe-fish_pottery_sherd",
-						"weight": 1
+					"type": "item",
+					"name": "poke_pfe:pfe-fish_pottery_sherd",
+					"weight": 1
 				}
 			]
 		}

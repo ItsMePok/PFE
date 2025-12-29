@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "poke:crimson_sporeshroom",
+			"identifier": "poke_pfe:crimson_sporeshroom",
 			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false
@@ -47,8 +47,8 @@
 					"require_tame": false,
 					"breed_items": "wheat",
 					"breeds_with": {
-						"mate_type": "poke:crimson_sporeshroom",
-						"baby_type": "poke:crimson_sporeshroom",
+						"mate_type": "poke_pfe:crimson_sporeshroom",
+						"baby_type": "poke_pfe:crimson_sporeshroom",
 						"breed_event": {
 							"event": "minecraft:entity_born",
 							"target": "baby"

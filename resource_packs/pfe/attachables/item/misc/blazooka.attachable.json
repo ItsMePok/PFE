@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "poke:blazooka",
+			"identifier": "poke_pfe:blazooka",
 			"render_controllers": [
 				"controller.render.item_default"
 			],

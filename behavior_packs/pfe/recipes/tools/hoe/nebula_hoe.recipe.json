@@ -1,0 +1,44 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke_pfe:nebula_hoe"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"CC",
+			"X",
+			"S"
+		],
+		"unlock": [
+			{
+				"item": "poke_pfe:nebula_stick"
+			},
+			{
+				"item": "poke_pfe:raw_nebula"
+			},
+			{
+				"item": "poke_pfe:nebula_ingot"
+			},
+			{
+				"item": "poke_pfe:nebula_core"
+			}
+		],
+		"key": {
+			"C": {
+				"item": "poke_pfe:nebula_ingot"
+			},
+			"S": {
+				"item": "poke_pfe:nebula_stick"
+			},
+			"X": {
+				"item": "poke_pfe:nebula_core"
+			}
+		},
+		"result": {
+			"item": "poke_pfe:nebula_hoe"
+		}
+	}
+}

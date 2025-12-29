@@ -2,22 +2,22 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:polished_limestone"
+			"identifier": "poke_pfe:polished_limestone"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:limestone"
+				"item": "poke_pfe:limestone"
 			},
 			{
-				"item": "poke:cobbled_limestone"
+				"item": "poke_pfe:cobbled_limestone"
 			}
 		],
 		"key": {
 			"X": {
-				"item": "poke:limestone"
+				"item": "poke_pfe:limestone"
 			}
 		},
 		"pattern": [
@@ -25,7 +25,7 @@
 			"XX"
 		],
 		"result": {
-			"item": "poke:polished_limestone",
+			"item": "poke_pfe:polished_limestone",
 			"count": 4
 		}
 	}

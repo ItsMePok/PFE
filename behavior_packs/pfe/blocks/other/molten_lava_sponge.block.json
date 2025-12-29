@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:molten_lava_sponge",
+			"identifier": "poke_pfe:molten_lava_sponge",
 			"menu_category": {
 				"category": "nature"
 			}

@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:cobalt_soup"
+			"identifier": "poke_pfe:cobalt_soup"
 		},
 		"tags": [
 			"crafting_table"
@@ -12,12 +12,12 @@
 				"item": "bowl"
 			},
 			{
-				"item": "poke:cobalt_ingot"
+				"item": "poke_pfe:cobalt_ingot"
 			}
 		],
 		"key": {
 			"N": {
-				"item": "poke:cobalt_ingot"
+				"item": "poke_pfe:cobalt_ingot"
 			},
 			"B": {
 				"item": "minecraft:bowl"
@@ -28,7 +28,7 @@
 			"B"
 		],
 		"result": {
-			"item": "poke:cobalt_soup"
+			"item": "poke_pfe:cobalt_soup"
 		}
 	}
 }

@@ -1,9 +1,20 @@
 {
     "format_version": "1.16.100",
     "minecraft:recipe_shapeless": {
-        "tags":["stonecutter"],
-        "description": {"identifier": "poke:godly_trapdoor_sc"},
-        "ingredients":[{"item":"poke:godly_block"}],
-        "result":{"item": "poke:godly_trapdoor","count": 6}
+        "tags": [
+            "stonecutter"
+        ],
+        "description": {
+            "identifier": "poke_pfe:godly_trapdoor_sc"
+        },
+        "ingredients": [
+            {
+                "item": "poke_pfe:godly_block"
+            }
+        ],
+        "result": {
+            "item": "poke_pfe:godly_trapdoor",
+            "count": 6
+        }
     }
 }

@@ -1,7 +1,7 @@
-{/*Ruined Tower hidden barrel*/
+{ /*Ruined Tower hidden barrel*/
 	"pools": [
 		{
-			"rolls":1,
+			"rolls": 1,
 			"type": "item",
 			"entries": [
 				{
@@ -13,9 +13,9 @@
 							"function": "set_book_contents",
 							"title": "Travel Log 1",
 							"author": "Lost Traveler",
-							"pages":[
-								"{\"rawtext\":[ {\"translate\":\"translation.poke:travel_log_1.page1\"}]}",
-								"{\"rawtext\":[ {\"translate\":\"translation.poke:travel_log_1.page2\"}]}"
+							"pages": [
+								"{\"rawtext\":[ {\"translate\":\"translation.poke_pfe:travel_log_1.page1\"}]}",
+								"{\"rawtext\":[ {\"translate\":\"translation.poke_pfe:travel_log_1.page2\"}]}"
 							]
 						}
 					]
@@ -23,7 +23,7 @@
 			]
 		},
 		{
-			"rolls":1,
+			"rolls": 1,
 			"type": "item",
 			"entries": [
 				{
@@ -35,9 +35,9 @@
 							"function": "set_book_contents",
 							"title": "Only Cobblestone",
 							"author": "§kLost Man§7",
-							"pages":[
-								"{\"rawtext\":[ {\"translate\":\"translation.poke:only_cobblestone.page1\"}]}",
-								"{\"rawtext\":[ {\"translate\":\"translation.poke:only_cobblestone.page2\"}]}"
+							"pages": [
+								"{\"rawtext\":[ {\"translate\":\"translation.poke_pfe:only_cobblestone.page1\"}]}",
+								"{\"rawtext\":[ {\"translate\":\"translation.poke_pfe:only_cobblestone.page2\"}]}"
 							]
 						}
 					]
@@ -69,7 +69,7 @@
 				},
 				{
 					"type": "item",
-					"name": "poke:cassette_ancestry",
+					"name": "poke_pfe:cassette_ancestry",
 					"weight": 1
 				},
 				{
@@ -100,7 +100,7 @@
 				},
 				{
 					"type": "item",
-					"name": "poke:iron_token",
+					"name": "poke_pfe:iron_token",
 					"functions": [
 						{
 							"function": "set_count",
@@ -114,7 +114,7 @@
 				},
 				{
 					"type": "item",
-					"name": "poke:copper_token",
+					"name": "poke_pfe:copper_token",
 					"functions": [
 						{
 							"function": "set_count",

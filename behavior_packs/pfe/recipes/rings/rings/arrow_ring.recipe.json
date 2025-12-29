@@ -2,29 +2,29 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "poke:arrow_ring"
+			"identifier": "poke_pfe:arrow_ring"
 		},
-		"group": "pfe:rings",
+		"group": "poke_pfe:rings",
 		"ingredients": [
 			{
-				"item": "poke:gem_holder",
+				"item": "poke_pfe:gem_holder",
 				"count": 1
 			},
 			{
-				"item": "poke:arrow_gem",
+				"item": "poke_pfe:arrow_gem",
 				"count": 1
 			}
 		],
 		"unlock": [
 			{
-				"item": "poke:arrow_gem"
+				"item": "poke_pfe:arrow_gem"
 			}
 		],
 		"tags": [
 			"crafting_table"
 		],
 		"result": {
-			"item": "poke:arrow_ring",
+			"item": "poke_pfe:arrow_ring",
 			"count": 1
 		}
 	}

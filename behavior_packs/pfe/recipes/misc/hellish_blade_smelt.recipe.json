@@ -1,0 +1,18 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_furnace": {
+		"description": {
+			"identifier": "poke_pfe:hellish_sword_smelt"
+		},
+		"tags": [
+			"furnace"
+		],
+		"unlock": [
+			{
+				"item": "poke_pfe:hellish_sword"
+			}
+		],
+		"input": "poke_pfe:hellish_sword",
+		"output": "poke_pfe:hellish_ingot"
+	}
+}

@@ -2,13 +2,13 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_furnace": {
 		"description": {
-			"identifier": "poke:deepslate_godly_ore"
+			"identifier": "poke_pfe:deepslate_godly_ore"
 		},
 		"tags": [
 			"furnace",
 			"blast_furnace"
 		],
-		"input": "poke:deepslate_godly_ore",
-		"output": "poke:godly_ingot"
+		"input": "poke_pfe:deepslate_godly_ore",
+		"output": "poke_pfe:godly_ingot"
 	}
 }

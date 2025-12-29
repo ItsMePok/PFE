@@ -2,26 +2,26 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:cut_molten_slab_to_cut_molten"
+			"identifier": "poke_pfe:cut_molten_slab_to_cut_molten"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:cut_molten_slab"
+				"item": "poke_pfe:cut_molten_slab"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:cut_molten_slab"
+				"item": "poke_pfe:cut_molten_slab"
 			}
 		},
 		"pattern": [
 			"CC"
 		],
 		"result": {
-			"item": "poke:cut_molten"
+			"item": "poke_pfe:cut_molten"
 		},
 		"priority": 2
 	}

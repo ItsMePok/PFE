@@ -15,16 +15,16 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:demonic_ingot"
+				"item": "poke_pfe:demonic_ingot"
 			},
 			{
-				"item": "poke:demonic_block"
+				"item": "poke_pfe:demonic_block"
 			},
 			{
-				"item": "poke:demonic_stick"
+				"item": "poke_pfe:demonic_stick"
 			},
 			{
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			},
 			{
 				"item": "poke_pfe:hellish_claymore"
@@ -32,16 +32,16 @@
 		],
 		"key": {
 			"I": {
-				"item": "poke:demonic_ingot"
+				"item": "poke_pfe:demonic_ingot"
 			},
 			"B": {
-				"item": "poke:demonic_block"
+				"item": "poke_pfe:demonic_block"
 			},
 			"S": {
-				"item": "poke:demonic_stick"
+				"item": "poke_pfe:demonic_stick"
 			},
 			"U": {
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			},
 			"C": {
 				"item": "poke_pfe:hellish_claymore"

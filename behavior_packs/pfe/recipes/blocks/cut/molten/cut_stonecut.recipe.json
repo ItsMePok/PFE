@@ -2,18 +2,18 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "poke:cut_molten_stonecut"
+			"identifier": "poke_pfe:cut_molten_stonecut"
 		},
 		"tags": [
 			"stonecutter"
 		],
 		"ingredients": [
 			{
-				"item": "poke:ember_block"
+				"item": "poke_pfe:molten_block"
 			}
 		],
 		"result": {
-			"item": "poke:cut_molten",
+			"item": "poke_pfe:cut_molten",
 			"count": 4
 		}
 	}

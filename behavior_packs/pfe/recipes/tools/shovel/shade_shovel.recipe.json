@@ -1,0 +1,38 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke_pfe:shade_shovel"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"C",
+			"S",
+			"S"
+		],
+		"unlock": [
+			{
+				"item": "stick"
+			},
+			{
+				"item": "poke_pfe:raw_shade"
+			},
+			{
+				"item": "poke_pfe:shade_ingot"
+			}
+		],
+		"key": {
+			"C": {
+				"item": "poke_pfe:shade_ingot"
+			},
+			"S": {
+				"item": "stick"
+			}
+		},
+		"result": {
+			"item": "poke_pfe:shade_shovel"
+		}
+	}
+}

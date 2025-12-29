@@ -1,25 +1,47 @@
 {
-    "format_version":"1.20.10",
-    "minecraft:recipe_shaped":{
-        "description":{"identifier":"poke:nebula_logger"},
-        "tags":["crafting_table"],
-        "pattern":[
+    "format_version": "1.20.10",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "poke_pfe:nebula_axe"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
             "CB ",
             "BSI",
             " S "
         ],
-        "unlock":[
-            {"item":"poke:nebula_core"},
-            {"item":"poke:nebula_block"},
-            {"item":"poke:nebula_stick"},
-            {"item":"poke:nebula_ingot"}
+        "unlock": [
+            {
+                "item": "poke_pfe:nebula_core"
+            },
+            {
+                "item": "poke_pfe:nebula_block"
+            },
+            {
+                "item": "poke_pfe:nebula_stick"
+            },
+            {
+                "item": "poke_pfe:nebula_ingot"
+            }
         ],
-        "key":{
-            "C":{"item":"poke:nebula_core"},
-            "B":{"item":"poke:nebula_block"},
-            "S":{"item":"poke:nebula_stick"},
-            "I":{"item":"poke:nebula_ingot"}
+        "key": {
+            "C": {
+                "item": "poke_pfe:nebula_core"
+            },
+            "B": {
+                "item": "poke_pfe:nebula_block"
+            },
+            "S": {
+                "item": "poke_pfe:nebula_stick"
+            },
+            "I": {
+                "item": "poke_pfe:nebula_ingot"
+            }
         },
-        "result":{"item":"poke:nebula_logger"}
+        "result": {
+            "item": "poke_pfe:nebula_axe"
+        }
     }
 }

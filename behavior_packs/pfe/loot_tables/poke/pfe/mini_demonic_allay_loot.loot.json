@@ -5,7 +5,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "poke:hellish_soup",
+					"name": "poke_pfe:hellish_soup",
 					"functions": [
 						{
 							"function": "enchant_randomly",
@@ -21,7 +21,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "poke:blazooka",
+					"name": "poke_pfe:blazooka",
 					"weight": 1,
 					"functions": [
 						{
@@ -39,7 +39,7 @@
 				},
 				{
 					"type": "item",
-					"name": "poke:blazooka",
+					"name": "poke_pfe:blazooka",
 					"weight": 1,
 					"functions": [
 						{
@@ -51,7 +51,10 @@
 						}
 					]
 				},
-				{"type": "empty","weight": 8}
+				{
+					"type": "empty",
+					"weight": 8
+				}
 			]
 		},
 		{
@@ -59,12 +62,12 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "poke:iron_token",
+					"name": "poke_pfe:iron_token",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:copper_token",
+					"name": "poke_pfe:copper_token",
 					"weight": 1
 				}
 			]

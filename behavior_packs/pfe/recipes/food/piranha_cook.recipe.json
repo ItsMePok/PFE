@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:recipe_furnace": {
 		"description": {
-			"identifier": "poke:piranha_cook"
+			"identifier": "poke_pfe:piranha_cook"
 		},
 		"tags": [
 			"furnace",
@@ -10,7 +10,7 @@
 			"campfire",
 			"soul_campfire"
 		],
-		"input": "poke:raw_piranha",
-		"output": "poke:cooked_piranha"
+		"input": "poke_pfe:raw_piranha",
+		"output": "poke_pfe:cooked_piranha"
 	}
 }

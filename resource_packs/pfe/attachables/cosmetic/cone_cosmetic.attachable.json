@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "poke:cone_cosmetic",
+			"identifier": "poke_pfe:cone_cosmetic",
 			"render_controllers": [
 				"controller.render.armor"
 			],

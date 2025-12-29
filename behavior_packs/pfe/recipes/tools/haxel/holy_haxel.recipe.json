@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:holy_haxel"
+			"identifier": "poke_pfe:holy_haxel"
 		},
 		"group": "haxel",
 		"tags": [
@@ -15,31 +15,31 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:holy_ingot"
+				"item": "poke_pfe:holy_ingot"
 			},
 			{
-				"item": "poke:haxel"
+				"item": "poke_pfe:onyx_haxel"
 			},
 			{
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			}
 		],
 		"key": {
 			"i": {
-				"item": "poke:godly_stick"
+				"item": "poke_pfe:godly_stick"
 			},
 			"#": {
-				"item": "poke:holy_block"
+				"item": "poke_pfe:holy_block"
 			},
 			"E": {
-				"item": "poke:haxel"
+				"item": "poke_pfe:onyx_haxel"
 			},
 			"U": {
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			}
 		},
 		"result": {
-			"item": "poke:holy_haxel"
+			"item": "poke_pfe:holy_haxel"
 		}
 	}
 }

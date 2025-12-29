@@ -1,18 +1,38 @@
 {
-	"format_version":"1.20.10",
-	"minecraft:recipe_shaped":{
-		"description":{"identifier":"poke:onyx_pickaxe"},
-		"tags":["crafting_table"],
-		"pattern":["CCC"," S "," S "],
-		"unlock":[
-			{"item":"stick"},
-			{"item":"poke:raw_onyx"},
-			{"item":"poke:onyx_ingot"}
-		],
-		"key":{
-			"C":{"item":"poke:onyx_ingot"},
-			"S":{"item":"stick"}
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke_pfe:onyx_pickaxe"
 		},
-		"result":{"item":"poke:onyx_pickaxe"}
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"CCC",
+			" S ",
+			" S "
+		],
+		"unlock": [
+			{
+				"item": "stick"
+			},
+			{
+				"item": "poke_pfe:raw_onyx"
+			},
+			{
+				"item": "poke_pfe:onyx_ingot"
+			}
+		],
+		"key": {
+			"C": {
+				"item": "poke_pfe:onyx_ingot"
+			},
+			"S": {
+				"item": "stick"
+			}
+		},
+		"result": {
+			"item": "poke_pfe:onyx_pickaxe"
+		}
 	}
 }

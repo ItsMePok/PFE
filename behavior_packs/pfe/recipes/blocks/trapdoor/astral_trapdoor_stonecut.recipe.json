@@ -1,9 +1,20 @@
 {
     "format_version": "1.16.100",
     "minecraft:recipe_shapeless": {
-        "tags":["stonecutter"],
-        "description": {"identifier": "poke:astral_trapdoor_sc"},
-        "ingredients":[{"item":"poke:astral_block"}],
-        "result":{"item": "poke:astral_trapdoor","count": 6}
+        "tags": [
+            "stonecutter"
+        ],
+        "description": {
+            "identifier": "poke_pfe:astral_trapdoor_sc"
+        },
+        "ingredients": [
+            {
+                "item": "poke_pfe:astral_block"
+            }
+        ],
+        "result": {
+            "item": "poke_pfe:astral_trapdoor",
+            "count": 6
+        }
     }
 }

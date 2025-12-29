@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:hellish_soup"
+			"identifier": "poke_pfe:hellish_soup"
 		},
 		"tags": [
 			"crafting_table"
@@ -12,12 +12,12 @@
 				"item": "bowl"
 			},
 			{
-				"item": "poke:hellish_ingot"
+				"item": "poke_pfe:hellish_ingot"
 			}
 		],
 		"key": {
 			"N": {
-				"item": "poke:hellish_ingot"
+				"item": "poke_pfe:hellish_ingot"
 			},
 			"B": {
 				"item": "minecraft:bowl"
@@ -28,7 +28,7 @@
 			"B"
 		],
 		"result": {
-			"item": "poke:hellish_soup"
+			"item": "poke_pfe:hellish_soup"
 		}
 	}
 }

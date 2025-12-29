@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:death_helmet",
+			"identifier": "poke_pfe:death_helmet",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -34,20 +34,20 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core",
-							"poke:death_block"
+							"poke_pfe:repair_core",
+							"poke_pfe:death_block"
 						],
 						"repair_amount": "query.max_durability"
 					},
 					{
 						"items": [
-							"poke:death_ingot"
+							"poke_pfe:death_ingot"
 						],
 						"repair_amount": "query.max_durability * 0.25"
 					},
 					{
 						"items": [
-							"poke:death_nugget"
+							"poke_pfe:death_nugget"
 						],
 						"repair_amount": "query.max_durability * 0.03"
 					}

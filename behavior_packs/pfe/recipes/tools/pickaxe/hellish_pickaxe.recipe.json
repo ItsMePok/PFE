@@ -1,18 +1,38 @@
 {
-	"format_version":"1.20.10",
-	"minecraft:recipe_shaped":{
-		"description":{"identifier":"poke:hellish_pickaxe"},
-		"tags":["crafting_table"],
-		"pattern":["CCC"," S "," S "],
-		"unlock":[
-			{"item":"stick"},
-			{"item":"poke:raw_hellish"},
-			{"item":"poke:hellish_ingot"}
-		],
-		"key":{
-			"C":{"item":"poke:hellish_ingot"},
-			"S":{"item":"poke:onyx_shaft"}
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke_pfe:hellish_pickaxe"
 		},
-		"result":{"item":"poke:hellish_pickaxe"}
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"CCC",
+			" S ",
+			" S "
+		],
+		"unlock": [
+			{
+				"item": "stick"
+			},
+			{
+				"item": "poke_pfe:raw_hellish"
+			},
+			{
+				"item": "poke_pfe:hellish_ingot"
+			}
+		],
+		"key": {
+			"C": {
+				"item": "poke_pfe:hellish_ingot"
+			},
+			"S": {
+				"item": "poke_pfe:onyx_stick"
+			}
+		},
+		"result": {
+			"item": "poke_pfe:hellish_pickaxe"
+		}
 	}
 }

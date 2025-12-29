@@ -1,8 +1,8 @@
 {
-  "format_version": "1.21.100",
+  "format_version": "1.21.130",
   "minecraft:entity": {
     "description": {
-      "identifier": "poke:blaze_ring_proj",
+      "identifier": "poke_pfe:blaze_ring_proj",
       "is_spawnable": false,
       "is_summonable": true,
       "is_experimental": false,
@@ -40,7 +40,7 @@
             }
           }
         },
-        //"particle": "poke:blaze_ring_proj",
+        //"particle": "poke_pfe:blaze_ring_proj",
         "power": 1.6,
         "gravity": 0.0001,
         "inertia": 1,

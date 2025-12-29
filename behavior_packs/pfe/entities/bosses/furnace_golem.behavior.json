@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "poke:robo_golem",
+			"identifier": "poke_pfe:robo_golem",
 			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false
@@ -13,7 +13,7 @@
 					"time": 1800,
 					"looping": true,
 					"time_down_event": {
-						"event": "poke:despawn",
+						"event": "poke_pfe:despawn",
 						"target": "self"
 					}
 				}
@@ -29,7 +29,7 @@
 				"event": "hurt_sound"
 			},
 			"minecraft:on_death": {
-				"event": "poke:death"
+				"event": "poke_pfe:death"
 			},
 			"minecraft:experience_reward": {
 				"on_death": 1500
@@ -43,20 +43,20 @@
 					"skeleton",
 					"monster",
 					"mob",
-					"pfe:boss"
+					"poke_pfe:boss"
 				]
 			},
 			"minecraft:nameable": {
 				"name_actions": {
 					"name_filter": "despawn",
 					"on_named": {
-						"event": "poke:despawn",
+						"event": "poke_pfe:despawn",
 						"target": "self"
 					}
 				},
 				"default_trigger": {
 					"target": "self",
-					"event": "poke:renamed"
+					"event": "poke_pfe:renamed"
 				}
 			},
 			"minecraft:collision_box": {
@@ -150,7 +150,7 @@
 			"minecraft:boss": {
 				"should_darken_sky": false,
 				"hud_range": 55,
-				"name": "entity.poke:robo_golem.name"
+				"name": "entity.poke_pfe:robo_golem.name"
 			},
 			"minecraft:navigation.walk": {
 				"avoid_water": true,
@@ -216,7 +216,7 @@
 							{
 								"summon_cap": 8,
 								"entity_lifespan": 30,
-								"entity_type": "poke:demonic_allay",
+								"entity_type": "poke_pfe:demonic_allay",
 								"shape": "circle",
 								"size": 8,
 								"num_entities_spawned": 2,
@@ -298,11 +298,11 @@
 					"command": [
 						"weather clear",
 						"execute as @a[r=50] run music stop 2",
-						"execute as @a[r=50] run music play poke.record.pigstep 1 3"
+						"execute as @a[r=50] run music play poke_pferecord.pigstep 1 3"
 					]
 				}
 			},
-			"poke:death": {
+			"poke_pfe:death": {
 				"queue_command": {
 					"command": [
 						"execute as @a[r=50] run music play music.game 1 5"
@@ -317,10 +317,10 @@
 								"playanimation @s animation.poke_pfe.robo_golem.smash",
 								"effect @s slowness 0 25 true",
 								"camerashake add @a[r=20] 0.5 0.1 positional",
-								"effect @e[r=10,rm=0.1,type=!wither_skeleton,type=!poke:demonic_allay,type=!fireball] levitation 1 10 true",
-								"damage @a[r=10] 40 entity_attack entity @e[type=poke:robo_golem,c=1]",
+								"effect @e[r=10,rm=0.1,type=!wither_skeleton,type=!poke_pfe:demonic_allay,type=!fireball] levitation 1 10 true",
+								"damage @a[r=10] 40 entity_attack entity @e[type=poke_pfe:robo_golem,c=1]",
 								"weather clear",
-								"execute as @a[r=10] at @s run summon poke:demonic_allay ~~~ ~~ attacked \"Furnace Golem Balancing :3\""
+								"execute as @a[r=10] at @s run summon poke_pfe:demonic_allay ~~~ ~~ attacked \"Furnace Golem Balancing :3\""
 							]
 						},
 						"weight": 1
@@ -335,14 +335,14 @@
 					}
 				]
 			},
-			"poke:renamed": {
+			"poke_pfe:renamed": {
 				"remove": {
 					"component_groups": [
 						"timer"
 					]
 				}
 			},
-			"poke:despawn": {
+			"poke_pfe:despawn": {
 				"add": {
 					"component_groups": [
 						"despawn"

@@ -5,32 +5,32 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "poke:cassette_subwooferlullaby",
+					"name": "poke_pfe:cassette_subwooferlullaby",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:cassette_livingmice",
+					"name": "poke_pfe:cassette_livingmice",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:cassette_haggstrom",
+					"name": "poke_pfe:cassette_haggstrom",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:cassette_oxygene",
+					"name": "poke_pfe:cassette_oxygene",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:cassette_onemoreday",
+					"name": "poke_pfe:cassette_onemoreday",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:cassette_crescentdunes",
+					"name": "poke_pfe:cassette_crescentdunes",
 					"weight": 1
 				}
 			]
@@ -43,27 +43,27 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "poke:apollo_the_snake",
+					"name": "poke_pfe:apollo_the_snake",
 					"weight": 1
 				},
 				{
 					"type": "item",
-					"name": "poke:copper_token",
+					"name": "poke_pfe:copper_token",
 					"weight": 5
 				},
 				{
 					"type": "item",
-					"name": "poke:iron_token",
+					"name": "poke_pfe:iron_token",
 					"weight": 4
 				},
 				{
 					"type": "item",
-					"name": "poke:gold_token",
+					"name": "poke_pfe:golden_token",
 					"weight": 2
 				},
 				{
 					"type": "item",
-					"name": "poke:volt_arrow",
+					"name": "poke_pfe:volt_arrow",
 					"weight": 2,
 					"functions": [
 						{
@@ -77,7 +77,7 @@
 				},
 				{
 					"type": "item",
-					"name": "poke:boss_event_bounty",
+					"name": "poke_pfe:bounty",
 					"weight": 1
 				}
 			]

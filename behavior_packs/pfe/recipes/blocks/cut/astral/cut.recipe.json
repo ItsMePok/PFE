@@ -2,19 +2,19 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:cut_astral_crafting_table"
+			"identifier": "poke_pfe:cut_astral_crafting_table"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:astral_ingot"
+				"item": "poke_pfe:astral_ingot"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:astral_block"
+				"item": "poke_pfe:astral_block"
 			}
 		},
 		"pattern": [
@@ -22,7 +22,7 @@
 			"CC"
 		],
 		"result": {
-			"item": "poke:cut_astral",
+			"item": "poke_pfe:cut_astral",
 			"count": 12
 		},
 		"priority": 0

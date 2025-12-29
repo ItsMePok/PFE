@@ -15,16 +15,16 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:radium_ingot"
+				"item": "poke_pfe:radium_ingot"
 			},
 			{
-				"item": "poke:radium_block"
+				"item": "poke_pfe:radium_block"
 			},
 			{
-				"item": "poke:onyx_shaft"
+				"item": "poke_pfe:onyx_stick"
 			},
 			{
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			},
 			{
 				"item": "poke_pfe:shade_claymore"
@@ -32,16 +32,16 @@
 		],
 		"key": {
 			"I": {
-				"item": "poke:radium_ingot"
+				"item": "poke_pfe:radium_ingot"
 			},
 			"B": {
-				"item": "poke:radium_block"
+				"item": "poke_pfe:radium_block"
 			},
 			"S": {
-				"item": "poke:onyx_shaft"
+				"item": "poke_pfe:onyx_stick"
 			},
 			"U": {
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			},
 			"C": {
 				"item": "poke_pfe:shade_claymore"

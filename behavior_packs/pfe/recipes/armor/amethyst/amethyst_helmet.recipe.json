@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:amethyst_helmet"
+			"identifier": "poke_pfe:creedite_helmet"
 		},
 		"tags": [
 			"crafting_table"
@@ -17,7 +17,7 @@
 				"item": "netherite_helmet"
 			},
 			{
-				"item": "poke:upgrade_core"
+				"item": "poke_pfe:upgrade_core"
 			},
 			{
 				"item": "amethyst_block"
@@ -31,11 +31,11 @@
 				"item": "netherite_helmet"
 			},
 			"U": {
-				"item": "poke:upgrade_core"
+				"item": "poke_pfe:upgrade_core"
 			}
 		},
 		"result": {
-			"item": "poke:amethyst_helmet"
+			"item": "poke_pfe:creedite_helmet"
 		}
 	}
 }

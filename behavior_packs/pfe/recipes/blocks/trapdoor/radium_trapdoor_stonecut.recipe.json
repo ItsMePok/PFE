@@ -1,9 +1,20 @@
 {
     "format_version": "1.16.100",
     "minecraft:recipe_shapeless": {
-        "tags":["stonecutter"],
-        "description": {"identifier": "poke:radium_trapdoor_sc"},
-        "ingredients":[{"item":"poke:radium_block"}],
-        "result":{"item": "poke:radium_trapdoor","count": 6}
+        "tags": [
+            "stonecutter"
+        ],
+        "description": {
+            "identifier": "poke_pfe:radium_trapdoor_sc"
+        },
+        "ingredients": [
+            {
+                "item": "poke_pfe:radium_block"
+            }
+        ],
+        "result": {
+            "item": "poke_pfe:radium_trapdoor",
+            "count": 6
+        }
     }
 }

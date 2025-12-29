@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "poke:yak",
+			"identifier": "poke_pfe:yak",
 			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false
@@ -46,8 +46,8 @@
 					"require_tame": false,
 					"breed_items": "wheat",
 					"breeds_with": {
-						"mate_type": "poke:yak",
-						"baby_type": "poke:yak",
+						"mate_type": "poke_pfe:yak",
+						"baby_type": "poke_pfe:yak",
 						"breed_event": {
 							"event": "minecraft:entity_born",
 							"target": "baby"
@@ -115,7 +115,7 @@
 				"name_actions": {
 					"name_filter": "despawn",
 					"on_named": {
-						"event": "poke:despawn",
+						"event": "poke_pfe:despawn",
 						"target": "self"
 					}
 				}

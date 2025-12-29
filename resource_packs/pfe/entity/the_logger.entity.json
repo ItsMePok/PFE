@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "poke:the_logger",
+			"identifier": "poke_pfe:the_logger",
 			"materials": {
 				"default": "entity_emissive_alpha"
 			},

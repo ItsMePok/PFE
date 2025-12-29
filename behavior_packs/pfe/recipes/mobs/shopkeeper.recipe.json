@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:spawn_shopkeeper"
+			"identifier": "poke_pfe:spawn_shopkeeper"
 		},
 		"tags": [
 			"crafting_table"
@@ -17,10 +17,10 @@
 				"tag": "minecraft:egg"
 			},
 			{
-				"item": "poke:copper_token"
+				"item": "poke_pfe:copper_token"
 			},
 			{
-				"item": "poke:banished_star"
+				"item": "poke_pfe:banished_star"
 			}
 		],
 		"key": {
@@ -28,11 +28,11 @@
 				"tag": "minecraft:egg"
 			},
 			"E": {
-				"item": "poke:banished_star"
+				"item": "poke_pfe:banished_star"
 			}
 		},
 		"result": {
-			"item": "poke:spawn_shopkeeper"
+			"item": "poke_pfe:spawn_shopkeeper"
 		}
 	}
 }

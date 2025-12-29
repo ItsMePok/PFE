@@ -9,6 +9,6 @@
 		],
 		"input": "minecraft:potion_type:water",
 		"reagent": "minecraft:sugar",
-		"output": "poke:sugar_water"
+		"output": "poke_pfe:sugar_water"
 	}
 }

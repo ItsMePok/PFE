@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:holy_block_craft"
+			"identifier": "poke_pfe:holy_block_craft"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,16 +14,16 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:holy_ingot"
+				"item": "poke_pfe:holy_ingot"
 			}
 		],
 		"key": {
 			"#": {
-				"item": "poke:holy_ingot"
+				"item": "poke_pfe:holy_ingot"
 			}
 		},
 		"result": {
-			"item": "poke:holy_block"
+			"item": "poke_pfe:holy_block"
 		}
 	}
 }

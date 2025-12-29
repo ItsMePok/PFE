@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:nebula_helmet"
+			"identifier": "poke_pfe:nebula_helmet"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,28 +14,28 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:astral_helmet"
+				"item": "poke_pfe:astral_helmet"
 			},
 			{
-				"item": "poke:death_helmet"
+				"item": "poke_pfe:death_helmet"
 			}
 		],
 		"key": {
 			"B": {
-				"item": "poke:nebula_block"
+				"item": "poke_pfe:nebula_block"
 			},
 			"G": {
-				"item": "poke:astral_helmet"
+				"item": "poke_pfe:astral_helmet"
 			},
 			"V": {
-				"item": "poke:death_helmet"
+				"item": "poke_pfe:death_helmet"
 			},
 			"6": {
-				"item": "poke:platinum_upgrade_core"
+				"item": "poke_pfe:platinum_upgrade_core"
 			}
 		},
 		"result": {
-			"item": "poke:nebula_helmet"
+			"item": "poke_pfe:nebula_helmet"
 		}
 	}
 }

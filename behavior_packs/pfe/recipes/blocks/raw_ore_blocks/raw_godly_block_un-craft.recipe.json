@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:raw_godly_block_un-craft"
+			"identifier": "poke_pfe:raw_godly_block_un-craft"
 		},
 		"tags": [
 			"crafting_table"
@@ -12,16 +12,16 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:raw_godly_block"
+				"item": "poke_pfe:raw_godly_block"
 			}
 		],
 		"key": {
 			"#": {
-				"item": "poke:raw_godly_block"
+				"item": "poke_pfe:raw_godly_block"
 			}
 		},
 		"result": {
-			"item": "poke:raw_godly",
+			"item": "poke_pfe:raw_godly",
 			"count": 9
 		}
 	}

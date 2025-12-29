@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:calendar",
+			"identifier": "poke_pfe:calendar",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -13,7 +13,7 @@
 			},
 			"poke_pfe:icon_path": "textures/poke/pfe/calendar",
 			"minecraft:icon": "poke_pfe_calendar",
-			"poke:timeConfig": {}
+			"poke_pfe:timeConfig": {}
 		}
 	}
 }

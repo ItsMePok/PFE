@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:nebula_battleaxe"
+			"identifier": "poke_pfe:nebula_battleaxe"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,38 +14,38 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:nebula_ingot"
+				"item": "poke_pfe:nebula_ingot"
 			},
 			{
-				"item": "poke:nebula_block"
+				"item": "poke_pfe:nebula_block"
 			},
 			{
-				"item": "poke:astral_battleaxe"
+				"item": "poke_pfe:astral_battleaxe"
 			},
 			{
-				"item": "poke:death_battleaxe"
+				"item": "poke_pfe:death_battleaxe"
 			}
 		],
 		"key": {
 			"V": {
-				"item": "poke:death_battleaxe"
+				"item": "poke_pfe:death_battleaxe"
 			},
 			"D": {
-				"item": "poke:nebula_block"
+				"item": "poke_pfe:nebula_block"
 			},
 			"S": {
-				"item": "poke:onyx_shaft"
+				"item": "poke_pfe:onyx_stick"
 			},
 			"U": {
-				"item": "poke:platinum_upgrade_core"
+				"item": "poke_pfe:platinum_upgrade_core"
 			},
 			"G": {
-				"item": "poke:astral_battleaxe"
+				"item": "poke_pfe:astral_battleaxe"
 			}
 		},
 		"result": [
 			{
-				"item": "poke:nebula_battleaxe"
+				"item": "poke_pfe:nebula_battleaxe"
 			}
 		]
 	}

@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "poke:zombken",
+			"identifier": "poke_pfe:zombken",
 			"min_engine_version": "1.10.0",
 			"materials": {
 				"default": "chicken",

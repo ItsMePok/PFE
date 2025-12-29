@@ -1,0 +1,92 @@
+{
+	"format_version": "1.21.130",
+	"minecraft:item": {
+		"description": {
+			"identifier": "poke_pfe:hellish_shovel",
+			"menu_category": {
+				"category": "equipment",
+				"group": "minecraft:itemGroup.name.shovel"
+			}
+		},
+		"components": {
+			"minecraft:display_name": {
+				"value": "%poke_pfe.hellish_shovel\n%poke_pfe.tag"
+			},
+			"poke_pfe:icon_path": "textures/poke/pfe/hellish_shovel",
+			"poke_pfe:upgradeable": {
+				"version": 1,
+				"upgrade_ids": [
+					"poke_pfe:persistence"
+				]
+			},
+			"poke_pfe:normalMining": {},
+			"minecraft:hand_equipped": true,
+			"minecraft:max_stack_size": 1,
+			"minecraft:durability": {
+				"max_durability": 1280,
+				"damage_chance": {
+					"max": 100,
+					"min": 70
+				}
+			},
+			"minecraft:icon": {
+				"textures": {
+					"default": "poke_pfe_hellish_shovel",
+					"dyed": "poke_pfe_hellish_shovel"
+				}
+			},
+			"minecraft:dyeable": {
+				"default_color": "#1a2530"
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"poke_pfe:repair_core"
+						],
+						"repair_amount": "query.max_durability"
+					},
+					{
+						"items": [
+							"poke_pfe:hellish_ingot"
+						],
+						"repair_amount": "q.max_durability*0.25"
+					},
+					{
+						"items": [
+							"poke_pfe:hellish_nugget"
+						],
+						"repair_amount": "q.max_durability*0.028"
+					}
+				]
+			},
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:netherite_tier",
+					"minecraft:is_shovel",
+					"minecraft:digger",
+					"minecraft:is_tool",
+					"poke_pfe:shovel"
+				]
+			},
+			"minecraft:damage": {
+				"value": 7
+			},
+			"minecraft:enchantable": {
+				"value": 13,
+				"slot": "shovel"
+			},
+			"minecraft:digger": {
+				"use_efficiency": true,
+				"destroy_speeds": [
+					{
+						"block": {
+							"tags": "query.any_tag('minecraft:diamond_tier_destructible','minecraft:netherite_tier_destructible','shovel','minecraft:wood_tier_destructible','minecraft:stone_tier_destructible','minecraft:gold_tier_destructible','minecraft:iron_tier_destructible','minecraft:is_shovel_item_destructible')"
+						},
+						"speed": 8
+					}
+				]
+			}
+		}
+	}
+}

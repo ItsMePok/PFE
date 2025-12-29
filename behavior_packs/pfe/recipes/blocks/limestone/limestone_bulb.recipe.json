@@ -2,25 +2,25 @@
     "format_version": "1.20.60",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "poke:limestone_bulb"
+            "identifier": "poke_pfe:limestone_bulb"
         },
         "tags": [
             "crafting_table"
         ],
         "unlock": [
             {
-                "item": "poke:limestone"
+                "item": "poke_pfe:limestone"
             },
             {
-                "item": "poke:cobbled_limestone"
+                "item": "poke_pfe:cobbled_limestone"
             },
             {
-                "item": "poke:polished_limestone"
+                "item": "poke_pfe:polished_limestone"
             }
         ],
         "key": {
             "G": {
-                "item": "poke:polished_limestone"
+                "item": "poke_pfe:polished_limestone"
             },
             "C": {
                 "item": "glowstone"
@@ -32,7 +32,7 @@
             "GGG"
         ],
         "result": {
-            "item": "poke:limestone_bulb",
+            "item": "poke_pfe:limestone_bulb",
             "count": 6
         }
     }

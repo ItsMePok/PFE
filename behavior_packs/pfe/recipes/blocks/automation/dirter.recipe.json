@@ -14,16 +14,16 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:cobblestone_gen"
+				"item": "poke_pfe:cobblestone_gen"
 			},
 			{
-				"item": "poke:cobalt_ingot"
+				"item": "poke_pfe:cobalt_ingot"
 			},
 			{
 				"tag": "minecraft:planks"
 			},
 			{
-				"item": "poke:gps_module"
+				"item": "poke_pfe:gps_module"
 			},
 			{
 				"item": "cobblestone"
@@ -34,13 +34,13 @@
 		],
 		"key": {
 			"C": {
-				"item": "poke:cobalt_ingot"
+				"item": "poke_pfe:cobalt_ingot"
 			},
 			"P": {
 				"tag": "minecraft:planks"
 			},
 			"G": {
-				"item": "poke:gps_module"
+				"item": "poke_pfe:gps_module"
 			},
 			"B": {
 				"item": "cobblestone"

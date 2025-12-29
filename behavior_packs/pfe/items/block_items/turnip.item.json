@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:turnip",
+			"identifier": "poke_pfe:turnip",
 			"menu_category": {
 				"category": "nature"
 			}
@@ -34,7 +34,7 @@
 						"name": "minecraft:farmland"
 					}
 				],
-				"block": "poke:turnip",
+				"block": "poke_pfe:turnip",
 				"replace_block_item": true
 			},
 			"minecraft:tags": {

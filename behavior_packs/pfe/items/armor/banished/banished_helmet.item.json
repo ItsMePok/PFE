@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:banished_helmet",
+			"identifier": "poke_pfe:banished_helmet",
 			"menu_category": {
 				"category": "equipment"
 			}

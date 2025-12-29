@@ -2,7 +2,7 @@
     "format_version": "1.20.60",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "poke:snow_shovel"
+            "identifier": "poke_pfe:snow_shovel"
         },
         "tags": [
             "crafting_table"
@@ -14,7 +14,7 @@
         ],
         "unlock": [
             {
-                "item": "poke:plastic"
+                "item": "poke_pfe:plastic"
             },
             {
                 "item": "snow"
@@ -28,11 +28,11 @@
                 "item": "minecraft:stick"
             },
             "P": {
-                "item": "poke:plastic"
+                "item": "poke_pfe:plastic"
             }
         },
         "result": {
-            "item": "poke:snow_shovel"
+            "item": "poke_pfe:snow_shovel"
         }
     }
 }

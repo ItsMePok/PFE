@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:astral_crossbow",
+			"identifier": "poke_pfe:astral_crossbow",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -12,17 +12,17 @@
 				"value": "%poke_pfe.astral_crossbow\n%poke_pfe.tag"
 			},
 			"poke_pfe:upgradeable": {
-				"dynamic_property": "pfe:upgrades",
+				"dynamic_property": "poke_pfe:upgrades",
 				"sneak_interact_opens_ui": false,
 				"upgrade_ids": [
-					"pfe:persistence"
+					"poke_pfe:persistence"
 				],
 				"version": 1
 			},
 			"poke_pfe:icon_path": "textures/poke/pfe/astral_crossbow",
 			"minecraft:tags": {
 				"tags": [
-					"pfe:crossbow"
+					"poke_pfe:crossbow"
 				]
 			},
 			"minecraft:icon": "poke_pfe_astral_crossbow",
@@ -37,31 +37,31 @@
 			"minecraft:shooter": {
 				"ammunition": [
 					{
-						"item": "poke:galaxy_arrow",
+						"item": "poke_pfe:galaxy_arrow",
 						"search_inventory": true,
 						"use_in_creative": true,
 						"use_offhand": true
 					},
 					{
-						"item": "poke:void_arrow",
+						"item": "poke_pfe:void_arrow",
 						"search_inventory": true,
 						"use_in_creative": true,
 						"use_offhand": true
 					},
 					{
-						"item": "poke:holy_arrow",
+						"item": "poke_pfe:holy_arrow",
 						"search_inventory": true,
 						"use_in_creative": true,
 						"use_offhand": true
 					},
 					{
-						"item": "poke:hellish_arrow",
+						"item": "poke_pfe:hellish_arrow",
 						"search_inventory": true,
 						"use_in_creative": true,
 						"use_offhand": true
 					},
 					{
-						"item": "poke:volt_arrow",
+						"item": "poke_pfe:volt_arrow",
 						"search_inventory": true,
 						"use_in_creative": true,
 						"use_offhand": true
@@ -81,19 +81,19 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core"
+							"poke_pfe:repair_core"
 						],
 						"repair_amount": "query.max_durability"
 					},
 					{
 						"items": [
-							"poke:astral_ingot"
+							"poke_pfe:astral_ingot"
 						],
 						"repair_amount": "query.max_durability*0.25"
 					},
 					{
 						"items": [
-							"poke:astral_nugget"
+							"poke_pfe:astral_nugget"
 						],
 						"repair_amount": "query.max_durability*0.028"
 					}
@@ -112,7 +112,7 @@
 				},
 				"max_durability": 3250
 			},
-			"poke:cc_crossbowAim": {}
+			"poke_pfe:cc_crossbowAim": {}
 		}
 	}
 }

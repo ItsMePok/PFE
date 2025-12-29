@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "poke:gold_scythe",
+			"identifier": "poke_pfe:golden_scythe",
 			"render_controllers": [
 				"controller.render.item_default"
 			],
@@ -11,7 +11,7 @@
 				"enchanted": "entity_alphatest_glint"
 			},
 			"textures": {
-				"default": "textures/poke/pfe/gold_scythe",
+				"default": "textures/poke/pfe/golden_scythe",
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {

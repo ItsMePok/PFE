@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "poke:red_panda",
+			"identifier": "poke_pfe:red_panda",
 			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false
@@ -13,12 +13,12 @@
 					"remove_child_entities": false
 				}
 			},
-			"poke:red_panda_red": {
+			"poke_pfe:red_panda_red": {
 				"minecraft:variant": {
 					"value": 0
 				}
 			},
-			"poke:red_panda_green": {
+			"poke_pfe:red_panda_green": {
 				"minecraft:variant": {
 					"value": 1
 				}
@@ -62,8 +62,8 @@
 					"require_tame": true,
 					"require_full_health": true,
 					"breeds_with": {
-						"mate_type": "poke:red_panda",
-						"baby_type": "poke:red_panda",
+						"mate_type": "poke_pfe:red_panda",
+						"baby_type": "poke_pfe:red_panda",
 						"breed_event": {
 							"event": "minecraft:entity_born",
 							"target": "baby"
@@ -245,15 +245,7 @@
 							"hard_distance": 6,
 							"max_distance": 10
 						}
-					],
-					"on_leash": {
-						"event": "minecraft:on_leash",
-						"target": "self"
-					},
-					"on_unleash": {
-						"event": "minecraft:on_unleash",
-						"target": "self"
-					}
+					]
 				}
 			}
 		},
@@ -263,14 +255,14 @@
 					{
 						"name_filter": "despawn",
 						"on_named": {
-							"event": "poke:despawn",
+							"event": "poke_pfe:despawn",
 							"target": "self"
 						}
 					},
 					{
 						"name_filter": "shady",
 						"on_named": {
-							"event": "poke:renamed",
+							"event": "poke_pfe:renamed",
 							"target": "self"
 						}
 					}
@@ -508,7 +500,7 @@
 							{
 								"add": {
 									"component_groups": [
-										"poke:red_panda_green"
+										"poke_pfe:red_panda_green"
 									]
 								},
 								"weight": 1
@@ -516,7 +508,7 @@
 							{
 								"add": {
 									"component_groups": [
-										"poke:red_panda_red"
+										"poke_pfe:red_panda_red"
 									]
 								},
 								"weight": 99
@@ -531,21 +523,21 @@
 						},
 						"add": {
 							"component_groups": [
-								"poke:red_panda_red"
+								"poke_pfe:red_panda_red"
 							]
 						}
 					}
 				]
 			},
-			"poke:renamed": {
+			"poke_pfe:renamed": {
 				"add": {
 					"component_groups": [
-						"poke:red_panda_green"
+						"poke_pfe:red_panda_green"
 					]
 				},
 				"remove": {
 					"component_groups": [
-						"poke:red_panda_red"
+						"poke_pfe:red_panda_red"
 					]
 				}
 			},

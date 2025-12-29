@@ -2,7 +2,7 @@
 	"format_version": "1.8.0",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "poke:astral_boots",
+			"identifier": "poke_pfe:astral_boots",
 			"materials": {
 				"default": "armor",
 				"enchanted": "armor_enchanted"

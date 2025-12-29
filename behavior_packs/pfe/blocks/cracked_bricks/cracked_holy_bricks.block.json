@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:cracked_holy_bricks",
+			"identifier": "poke_pfe:cracked_holy_bricks",
 			"menu_category": {
 				"category": "construction"
 			}

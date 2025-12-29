@@ -1,8 +1,11 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:zombken_trophy",
+			"identifier": "poke_pfe:zombken_trophy",
+			"menu_category": {
+				"category": "construction"
+			},
 			"traits": {
 				"minecraft:placement_direction": {
 					"enabled_states": [

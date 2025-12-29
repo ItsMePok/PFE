@@ -2,8 +2,8 @@
 	"format_version": "1.21.10",
 	"minecraft:feature_rules": {
 		"description": {
-			"identifier": "poke:demonic_allay_dungeon.feature_rule",
-			"places_feature": "poke:demonic_allay_dungeon.feature"
+			"identifier": "poke_pfe:demonic_allay_dungeon.feature_rule",
+			"places_feature": "poke_pfe:demonic_allay_dungeon.feature"
 		},
 		"conditions": {
 			"placement_pass": "surface_pass",

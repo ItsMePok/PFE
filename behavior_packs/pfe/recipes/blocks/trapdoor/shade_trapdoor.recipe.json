@@ -2,22 +2,22 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:shade_trapdoor"
+			"identifier": "poke_pfe:shade_trapdoor"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:shade_ingot"
+				"item": "poke_pfe:shade_ingot"
 			},
 			{
-				"item": "poke:shade_block"
+				"item": "poke_pfe:shade_block"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:shade_ingot"
+				"item": "poke_pfe:shade_ingot"
 			}
 		},
 		"pattern": [
@@ -25,7 +25,7 @@
 			"CCC"
 		],
 		"result": {
-			"item": "poke:shade_trapdoor",
+			"item": "poke_pfe:shade_trapdoor",
 			"count": 4
 		}
 	}

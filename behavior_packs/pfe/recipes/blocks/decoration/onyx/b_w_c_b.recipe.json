@@ -1,16 +1,32 @@
 {
-	"format_version":"1.20.10",
-	"minecraft:recipe_shaped":{
-		"description":{"identifier":"poke:onyx_b_w_c_b"},
-		"tags":["crafting_table"],
-		"unlock":[
-			{"item":"poke:onyx_block"},
-			{"item":"poke:onyx_bricks"}
-		],
-		"key":{
-			"C":{"item":"poke:onyx_bricks"}
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke_pfe:onyx_b_w_c_b"
 		},
-		"pattern":["CCC","CCC"],
-		"result":{"item":"poke:onyx_brick_wall","count":6}
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": [
+			{
+				"item": "poke_pfe:onyx_block"
+			},
+			{
+				"item": "poke_pfe:onyx_bricks"
+			}
+		],
+		"key": {
+			"C": {
+				"item": "poke_pfe:onyx_bricks"
+			}
+		},
+		"pattern": [
+			"CCC",
+			"CCC"
+		],
+		"result": {
+			"item": "poke_pfe:onyx_brick_wall",
+			"count": 6
+		}
 	}
 }

@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "poke:red_panda",
+			"identifier": "poke_pfe:red_panda",
 			"materials": {
 				"default": "fox"
 			},

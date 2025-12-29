@@ -1,13 +1,13 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:ore_feature": {
 		"description": {
-			"identifier": "poke:shade_ore.feature"
+			"identifier": "poke_pfe:shade_ore.feature"
 		},
 		"count": 8,
 		"replace_rules": [
 			{
-				"places_block": "poke:shade_ore",
+				"places_block": "poke_pfe:shade_ore",
 				"may_replace": [
 					"minecraft:stone",
 					"minecraft:andesite",
@@ -19,13 +19,13 @@
 				"may_replace": [
 					"deepslate"
 				],
-				"places_block": "poke:deepslate_shade_ore"
+				"places_block": "poke_pfe:deepslate_shade_ore"
 			},
 			{
 				"may_replace": [
 					"minecraft:netherrack"
 				],
-				"places_block": "poke:nether_shade_ore"
+				"places_block": "poke_pfe:nether_shade_ore"
 			}
 		]
 	}

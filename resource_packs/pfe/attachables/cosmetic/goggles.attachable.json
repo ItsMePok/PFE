@@ -2,7 +2,7 @@
 	"format_version": "1.8.0",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "poke:goggles",
+			"identifier": "poke_pfe:goggles",
 			"materials": {
 				"default": "armor",
 				"dyed": "entity_alphatest_change_color",

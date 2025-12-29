@@ -2,7 +2,7 @@
     "format_version": "1.20.60",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "poke:unmix_pink"
+            "identifier": "poke_pfe:unmix_pink"
         },
         "pattern": [
             "D"

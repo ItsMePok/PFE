@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
 			"identifier": "poke_pfe:flaming_core",
@@ -15,7 +15,7 @@
 			"minecraft:rarity": "common",
 			"minecraft:tags": {
 				"tags": [
-					"poke:upgrade_core"
+					"poke_pfe:upgrade_core"
 				]
 			},
 			"minecraft:icon": "poke_pfe_flaming_core"

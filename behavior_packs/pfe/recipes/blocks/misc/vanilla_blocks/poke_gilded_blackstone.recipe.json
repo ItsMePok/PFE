@@ -2,14 +2,14 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:poke_gilded_blackstone"
+			"identifier": "poke_pfe:poke_gilded_blackstone"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:godly_ingot"
+				"item": "poke_pfe:godly_ingot"
 			},
 			{
 				"item": "gilded_blackstone"
@@ -25,7 +25,7 @@
 		],
 		"key": {
 			"#": {
-				"item": "poke:godly_ingot"
+				"item": "poke_pfe:godly_ingot"
 			},
 			"B": {
 				"item": "blackstone"

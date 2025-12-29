@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:jackhammer",
+			"identifier": "poke_pfe:jackhammer",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -21,7 +21,7 @@
 				"version": 1
 			},
 			"minecraft:cooldown": {
-				"category": "poke:jackhammer",
+				"category": "poke_pfe:jackhammer",
 				"duration": 0.25
 			},
 			"minecraft:durability": {
@@ -57,7 +57,7 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core"
+							"poke_pfe:repair_core"
 						],
 						"repair_amount": "query.max_durability"
 					}
@@ -75,7 +75,7 @@
 					0
 				]
 			},
-			"poke:normalMining": {},
+			"poke_pfe:normalMining": {},
 			"minecraft:use_modifiers": {
 				"use_duration": 0,
 				"movement_modifier": 1

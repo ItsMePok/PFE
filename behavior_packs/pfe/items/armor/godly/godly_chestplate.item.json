@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:godly_chestplate",
+			"identifier": "poke_pfe:godly_chestplate",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -34,20 +34,20 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core",
-							"poke:godly_block"
+							"poke_pfe:repair_core",
+							"poke_pfe:godly_block"
 						],
 						"repair_amount": "query.max_durability"
 					},
 					{
 						"items": [
-							"poke:godly_ingot"
+							"poke_pfe:godly_ingot"
 						],
 						"repair_amount": "query.max_durability*0.25"
 					},
 					{
 						"items": [
-							"poke:godly_nugget"
+							"poke_pfe:godly_nugget"
 						],
 						"repair_amount": "query.max_durability * 0.028"
 					}

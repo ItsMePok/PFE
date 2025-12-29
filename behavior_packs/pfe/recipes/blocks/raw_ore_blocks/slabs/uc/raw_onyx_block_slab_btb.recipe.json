@@ -2,26 +2,26 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:raw_onyx_slab_back_to_block"
+			"identifier": "poke_pfe:raw_onyx_slab_back_to_block"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:raw_onyx_slab"
+				"item": "poke_pfe:raw_onyx_slab"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:raw_onyx_slab"
+				"item": "poke_pfe:raw_onyx_slab"
 			}
 		},
 		"pattern": [
 			"CC"
 		],
 		"result": {
-			"item": "poke:raw_onyx_block"
+			"item": "poke_pfe:raw_onyx_block"
 		},
 		"priority": 2
 	}

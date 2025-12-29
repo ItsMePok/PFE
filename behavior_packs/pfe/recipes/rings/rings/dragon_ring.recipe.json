@@ -2,16 +2,16 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "poke:dragon_ring"
+			"identifier": "poke_pfe:dragon_ring"
 		},
-		"group": "pfe:rings",
+		"group": "poke_pfe:rings",
 		"ingredients": [
 			{
-				"item": "poke:gem_holder",
+				"item": "poke_pfe:gem_holder",
 				"count": 1
 			},
 			{
-				"item": "poke:dragon_gem",
+				"item": "poke_pfe:dragon_gem",
 				"count": 1
 			}
 		],
@@ -20,11 +20,11 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:dragon_gem"
+				"item": "poke_pfe:dragon_gem"
 			}
 		],
 		"result": {
-			"item": "poke:ring_4",
+			"item": "poke_pfe:dragon_ring",
 			"count": 1
 		}
 	}

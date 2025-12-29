@@ -1,25 +1,25 @@
 {
 	"header": {
-		"name": "v1.3.0 PFE §aRP§r",
+		"name": "v1.3.01 PFE RP",
 		"description": "Wiki: https:pfewiki.gitbook.io/home",
 		"pack_scope": "any",
-		"uuid": "4b9732a7-23d0-4fe2-ae1d-50b6d1b91cd6",
+		"uuid": "b2539b9a-b8b3-4864-ac78-a1aa051b28ab",
 		"version": [
 			1,
 			3,
-			0
+			1
 		],
 		"min_engine_version": [
 			1,
 			21,
-			100
+			130
 		]
 	},
 	"modules": [
 		{
 			"description": "PFE",
 			"type": "resources",
-			"uuid": "38114885-0e5e-4240-a589-15fadf9a5e93",
+			"uuid": "beeecd3f-c848-4e37-9773-b206b6cb0153",
 			"version": [
 				1,
 				0,
@@ -29,13 +29,16 @@
 	],
 	"dependencies": [
 		{ //BP Manifest
-			"uuid": "85172ee0-50ae-4f50-85a5-98e66c411f86",
+			"uuid": "9a69f911-6668-4e08-ba47-372391736832",
 			"version": [
 				1,
 				3,
-				0
+				1
 			]
 		}
+	],
+	"capabilities": [
+		"pbr"
 	],
 	"format_version": 2,
 	"metadata": {

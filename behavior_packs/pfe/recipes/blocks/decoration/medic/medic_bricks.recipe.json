@@ -2,22 +2,22 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:medic_bricks_craft"
+			"identifier": "poke_pfe:medic_bricks_craft"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:medic_block"
+				"item": "poke_pfe:medic_block"
 			},
 			{
-				"item": "poke:medic_ingot"
+				"item": "poke_pfe:medic_ingot"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:cut_medic"
+				"item": "poke_pfe:cut_medic"
 			}
 		},
 		"pattern": [
@@ -25,7 +25,7 @@
 			"CC"
 		],
 		"result": {
-			"item": "poke:medic_bricks",
+			"item": "poke_pfe:medic_bricks",
 			"count": 4
 		}
 	}

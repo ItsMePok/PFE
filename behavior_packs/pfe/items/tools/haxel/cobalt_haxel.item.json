@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:cobalt_haxel",
+			"identifier": "poke_pfe:cobalt_haxel",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -17,7 +17,7 @@
 					"minecraft:is_pickaxe",
 					"minecraft:iron_tier",
 					"minecraft:is_tool",
-					"pfe:is_haxel"
+					"poke_pfe:is_haxel"
 				]
 			},
 			"poke_pfe:box_mining": {
@@ -32,14 +32,14 @@
 					0
 				]
 			},
-			"poke:normalMining": {},
+			"poke_pfe:normalMining": {},
 			"minecraft:use_modifiers": {
 				"use_duration": 0,
 				"movement_modifier": 1
 			},
 			"minecraft:icon": "poke_pfe_cobalt_haxel",
 			"minecraft:cooldown": {
-				"category": "poke:haxel",
+				"category": "poke_pfe:haxel",
 				"duration": 0.3
 			},
 			"poke_pfe:upgradeable": {
@@ -58,20 +58,20 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke:repair_core",
-							"poke:cobalt_block"
+							"poke_pfe:repair_core",
+							"poke_pfe:cobalt_block"
 						],
 						"repair_amount": "query.max_durability"
 					},
 					{
 						"items": [
-							"poke:cobalt_ingot"
+							"poke_pfe:cobalt_ingot"
 						],
 						"repair_amount": "query.max_durability*0.25"
 					},
 					{
 						"items": [
-							"poke:cobalt_nugget"
+							"poke_pfe:cobalt_nugget"
 						],
 						"repair_amount": "query.max_durability*0.028"
 					}

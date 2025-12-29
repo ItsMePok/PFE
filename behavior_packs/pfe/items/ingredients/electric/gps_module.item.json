@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:gps_module",
+			"identifier": "poke_pfe:gps_module",
 			"menu_category": {
 				"category": "items"
 			}

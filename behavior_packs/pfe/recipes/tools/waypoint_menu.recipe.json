@@ -10,19 +10,19 @@
     ],
     "unlock": [
       {
-        "item": "poke:antenna"
+        "item": "poke_pfe:antenna"
       },
       {
         "item": "minecraft:echo_shard"
       },
       {
-        "item": "poke:plastic"
+        "item": "poke_pfe:plastic"
       },
       {
-        "item": "poke:gps_module"
+        "item": "poke_pfe:gps_module"
       },
       {
-        "item": "poke:electric_component"
+        "item": "poke_pfe:electric_component"
       },
       {
         "item": "minecraft:ender_pearl"
@@ -35,19 +35,19 @@
     ],
     "key": {
       "A": {
-        "item": "poke:antenna"
+        "item": "poke_pfe:antenna"
       },
       "E": {
         "item": "minecraft:echo_shard"
       },
       "P": {
-        "item": "poke:plastic"
+        "item": "poke_pfe:plastic"
       },
       "G": {
-        "item": "poke:gps_module"
+        "item": "poke_pfe:gps_module"
       },
       "C": {
-        "item": "poke:electric_component"
+        "item": "poke_pfe:electric_component"
       },
       "T": {
         "item": "minecraft:ender_pearl"

@@ -2,22 +2,22 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:void_bricks_craft"
+			"identifier": "poke_pfe:void_bricks_craft"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:void_block"
+				"item": "poke_pfe:void_block"
 			},
 			{
-				"item": "poke:void_ingot"
+				"item": "poke_pfe:void_ingot"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:cut_void"
+				"item": "poke_pfe:cut_void"
 			}
 		},
 		"pattern": [
@@ -25,7 +25,7 @@
 			"CC"
 		],
 		"result": {
-			"item": "poke:void_bricks",
+			"item": "poke_pfe:void_bricks",
 			"count": 4
 		}
 	}

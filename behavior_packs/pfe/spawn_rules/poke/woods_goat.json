@@ -2,7 +2,7 @@
   "format_version": "1.8.0",
   "minecraft:spawn_rules": {
     "description": {
-      "identifier": "poke:woods_goat",
+      "identifier": "poke_pfe:woods_goat",
       "population_control": "animal"
     },
     "conditions": [

@@ -1,13 +1,13 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:block": {
 		"description": {
-			"identifier": "poke:turnip",
+			"identifier": "poke_pfe:turnip",
 			"menu_category": {
 				"category": "nature"
 			},
 			"states": {
-				"poke:growth_stage": [
+				"poke_pfe:growth_stage": [
 					1,
 					2,
 					3,
@@ -19,7 +19,7 @@
 		},
 		"permutations": [
 			{
-				"condition": "q.block_state('poke:growth_stage') == 1",
+				"condition": "q.block_state('poke_pfe:growth_stage') == 1",
 				"components": {
 					"minecraft:selection_box": {
 						"origin": [
@@ -43,11 +43,11 @@
 							"face_dimming": false
 						}
 					},
-					"poke:crops": {}
+					"poke_pfe:crops": {}
 				}
 			},
 			{
-				"condition": "q.block_state('poke:growth_stage') == 2",
+				"condition": "q.block_state('poke_pfe:growth_stage') == 2",
 				"components": {
 					"minecraft:selection_box": {
 						"origin": [
@@ -71,11 +71,11 @@
 							"face_dimming": false
 						}
 					},
-					"poke:crops": {}
+					"poke_pfe:crops": {}
 				}
 			},
 			{
-				"condition": "q.block_state('poke:growth_stage') == 3",
+				"condition": "q.block_state('poke_pfe:growth_stage') == 3",
 				"components": {
 					"minecraft:selection_box": {
 						"origin": [
@@ -99,11 +99,11 @@
 							"face_dimming": false
 						}
 					},
-					"poke:crops": {}
+					"poke_pfe:crops": {}
 				}
 			},
 			{
-				"condition": "q.block_state('poke:growth_stage') == 4",
+				"condition": "q.block_state('poke_pfe:growth_stage') == 4",
 				"components": {
 					"minecraft:selection_box": {
 						"origin": [
@@ -127,11 +127,11 @@
 							"face_dimming": false
 						}
 					},
-					"poke:crops": {}
+					"poke_pfe:crops": {}
 				}
 			},
 			{
-				"condition": "q.block_state('poke:growth_stage') == 5",
+				"condition": "q.block_state('poke_pfe:growth_stage') == 5",
 				"components": {
 					"minecraft:selection_box": {
 						"origin": [
@@ -155,11 +155,11 @@
 							"face_dimming": false
 						}
 					},
-					"poke:crops": {}
+					"poke_pfe:crops": {}
 				}
 			},
 			{
-				"condition": "q.block_state('poke:growth_stage') == 6",
+				"condition": "q.block_state('poke_pfe:growth_stage') == 6",
 				"components": {
 					"minecraft:selection_box": {
 						"origin": [

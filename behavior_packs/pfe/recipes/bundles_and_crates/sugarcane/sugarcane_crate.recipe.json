@@ -5,30 +5,30 @@
             "crafting_table"
         ],
         "description": {
-            "identifier": "poke:sugarcane_crate"
+            "identifier": "poke_pfe:sugarcane_crate"
         },
         "unlock": [
             {
                 "item": "reeds"
             },
             {
-                "item": "poke:bundled_sugarcane"
+                "item": "poke_pfe:bundled_sugarcane"
             },
             {
-                "item": "poke:empty_crate"
+                "item": "poke_pfe:empty_crate"
             }
         ],
         "ingredients": [
             {
-                "item": "poke:bundled_sugarcane",
+                "item": "poke_pfe:bundled_sugarcane",
                 "count": 8
             },
             {
-                "item": "poke:empty_crate"
+                "item": "poke_pfe:empty_crate"
             }
         ],
         "result": {
-            "item": "poke:sugarcane_crate"
+            "item": "poke_pfe:sugarcane_crate"
         }
     }
 }

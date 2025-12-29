@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "poke:gravity_spell",
+			"identifier": "poke_pfe:gravity_spell",
 			"materials": {
 				"default": "entity_emissive_alpha"
 			},

@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:red_button",
+			"identifier": "poke_pfe:red_button",
 			"menu_category": {
 				"category": "items"
 			}
@@ -20,13 +20,13 @@
 				"trigger_cooldown": true,
 				"can_be_disabled": false
 			},
-			"poke:normalMining": {},
+			"poke_pfe:normalMining": {},
 			"minecraft:use_modifiers": {
 				"use_duration": 0,
 				"movement_modifier": 1
 			},
 			"minecraft:cooldown": {
-				"category": "poke:red_button",
+				"category": "poke_pfe:red_button",
 				"duration": 0.2
 			}
 		}

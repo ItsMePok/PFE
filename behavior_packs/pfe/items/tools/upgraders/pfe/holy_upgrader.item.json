@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke:holy_upgrader",
+			"identifier": "poke_pfe:holy_upgrader",
 			"menu_category": {
 				"category": "equipment"
 			}
@@ -25,19 +25,19 @@
 			"poke_pfe:upgradeable": {
 				"version": 1,
 				"upgrade_ids": [
-					"pfe:persistence"
+					"poke_pfe:persistence"
 				]
 			},
 			"poke_pfe:transform_blocks": {
 				"transforms": [
-					"poke:holy_ore::poke:raw_holy_block",
-					"poke:deepslate_holy_ore::poke:raw_holy_block",
-					"poke:end_holy_ore::poke:raw_holy_block"
+					"poke_pfe:holy_ore::poke_pfe:raw_holy_block",
+					"poke_pfe:deepslate_holy_ore::poke_pfe:raw_holy_block",
+					"poke_pfe:end_holy_ore::poke_pfe:raw_holy_block"
 				]
 			},
 			"minecraft:tags": {
 				"tags": [
-					"pfe:is_upgrader"
+					"poke_pfe:is_upgrader"
 				]
 			}
 		}

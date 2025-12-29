@@ -3,7 +3,7 @@
 	"minecraft:recipe_shapeless": {
 		"unlock": [
 			{
-				"item": "poke:honey_bricks"
+				"item": "poke_pfe:honey_bricks"
 			},
 			{
 				"item": "honeycomb"
@@ -13,18 +13,18 @@
 			}
 		],
 		"description": {
-			"identifier": "poke:honey_trapdoor_scfb"
+			"identifier": "poke_pfe:honey_trapdoor_scfb"
 		},
 		"tags": [
 			"stonecutter"
 		],
 		"ingredients": [
 			{
-				"item": "poke:honey_bricks"
+				"item": "poke_pfe:honey_bricks"
 			}
 		],
 		"result": {
-			"item": "poke:honey_trapdoor",
+			"item": "poke_pfe:honey_trapdoor",
 			"count": 2
 		}
 	}

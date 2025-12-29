@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:godly_haxel"
+			"identifier": "poke_pfe:godly_haxel"
 		},
 		"group": "haxel",
 		"tags": [
@@ -15,28 +15,28 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:godly_ingot"
+				"item": "poke_pfe:godly_ingot"
 			},
 			{
-				"item": "poke:holy_haxel"
+				"item": "poke_pfe:holy_haxel"
 			},
 			{
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			}
 		],
 		"key": {
 			"#": {
-				"item": "poke:godly_block"
+				"item": "poke_pfe:godly_block"
 			},
 			"E": {
-				"item": "poke:holy_haxel"
+				"item": "poke_pfe:holy_haxel"
 			},
 			"U": {
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			}
 		},
 		"result": {
-			"item": "poke:godly_haxel"
+			"item": "poke_pfe:godly_haxel"
 		}
 	}
 }

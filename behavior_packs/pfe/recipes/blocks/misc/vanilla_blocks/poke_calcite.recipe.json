@@ -2,21 +2,21 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:poke_calcite"
+			"identifier": "poke_pfe:poke_calcite"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:cobbled_limestone"
+				"item": "poke_pfe:cobbled_limestone"
 			},
 			{
 				"item": "stone",
 				"data": 3
 			},
 			{
-				"item": "poke:limestone"
+				"item": "poke_pfe:limestone"
 			}
 		],
 		"pattern": [
@@ -25,7 +25,7 @@
 		],
 		"key": {
 			"#": {
-				"item": "poke:cobbled_limestone"
+				"item": "poke_pfe:cobbled_limestone"
 			},
 			"D": {
 				"item": "stone",

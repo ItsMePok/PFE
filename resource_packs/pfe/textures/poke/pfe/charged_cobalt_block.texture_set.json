@@ -1,0 +1,8 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "charged_cobalt_block",
+		"metalness_emissive_roughness": "charged_cobalt_block_mer",
+		"heightmap": "charged_cobalt_block_height"
+	}
+}

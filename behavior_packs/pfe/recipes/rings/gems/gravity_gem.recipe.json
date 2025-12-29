@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:gravity_gem"
+			"identifier": "poke_pfe:gravity_gem"
 		},
 		"tags": [
 			"crafting_table"
@@ -12,27 +12,27 @@
 				"item": "purpur_block"
 			},
 			"S": {
-				"item": "poke:springy_ring"
+				"item": "poke_pfe:springy_ring"
 			},
 			"G": {
-				"item": "poke:gps_module"
+				"item": "poke_pfe:gps_module"
 			},
 			"A": {
-				"item": "poke:raw_astral_block"
+				"item": "poke_pfe:raw_astral_block"
 			},
 			"U": {
-				"item": "poke:diamond_upgrade_core"
+				"item": "poke_pfe:diamond_upgrade_core"
 			}
 		},
 		"unlock": [
 			{
-				"item": "poke:diamond_gem_holder"
+				"item": "poke_pfe:diamond_gem_holder"
 			},
 			{
-				"item": "poke:springy_ring"
+				"item": "poke_pfe:springy_ring"
 			},
 			{
-				"item": "poke:raw_astral"
+				"item": "poke_pfe:raw_astral"
 			}
 		],
 		"pattern": [
@@ -42,7 +42,7 @@
 		],
 		"result": {
 			"count": 1,
-			"item": "poke:gravity_gem"
+			"item": "poke_pfe:gravity_gem"
 		}
 	}
 }

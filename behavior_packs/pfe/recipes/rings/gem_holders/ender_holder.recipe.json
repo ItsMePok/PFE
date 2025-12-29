@@ -2,14 +2,14 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:ender_holder"
+			"identifier": "poke_pfe:ender_holder"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"unlock": [
 			{
-				"item": "poke:shade_ingot"
+				"item": "poke_pfe:shade_ingot"
 			},
 			{
 				"item": "ender_eye"
@@ -17,7 +17,7 @@
 		],
 		"key": {
 			"X": {
-				"item": "poke:shade_ingot"
+				"item": "poke_pfe:shade_ingot"
 			},
 			"S": {
 				"item": "ender_eye"
@@ -29,7 +29,7 @@
 			" X "
 		],
 		"result": {
-			"item": "poke:ender_holder"
+			"item": "poke_pfe:ender_holder"
 		}
 	}
 }

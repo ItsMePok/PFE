@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.100",
+	"format_version": "1.21.130",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke_pfe:dirter",
@@ -7,7 +7,7 @@
 				"category": "items"
 			},
 			"states": {
-				"pfe:active": [
+				"poke_pfe:active": [
 					0,
 					1
 				]
@@ -53,7 +53,7 @@
 		},
 		"permutations": [
 			{
-				"condition": "q.block_state('pfe:active') == 1",
+				"condition": "q.block_state('poke_pfe:active') == 1",
 				"components": {
 					"minecraft:material_instances": {
 						"north": {
@@ -86,7 +86,7 @@
 				}
 			},
 			{
-				"condition": "q.block_state('pfe:active') == 0",
+				"condition": "q.block_state('poke_pfe:active') == 0",
 				"components": {
 					"minecraft:material_instances": {
 						"north": {
@@ -140,8 +140,8 @@
 						],
 						"can_replace": [
 							"minecraft:cobblestone",
-							"poke:cobbled_limestone",
-							"poke:cobbled_shadowstone",
+							"poke_pfe:cobbled_limestone",
+							"poke_pfe:cobbled_shadowstone",
 							"minecraft:blackstone",
 							"minecraft:cobbled_deepslate"
 						]
@@ -171,8 +171,8 @@
 						],
 						"can_replace": [
 							"minecraft:cobblestone",
-							"poke:cobbled_limestone",
-							"poke:cobbled_shadowstone",
+							"poke_pfe:cobbled_limestone",
+							"poke_pfe:cobbled_shadowstone",
 							"minecraft:blackstone",
 							"minecraft:cobbled_deepslate"
 						]
@@ -202,8 +202,8 @@
 						],
 						"can_replace": [
 							"minecraft:cobblestone",
-							"poke:cobbled_limestone",
-							"poke:cobbled_shadowstone",
+							"poke_pfe:cobbled_limestone",
+							"poke_pfe:cobbled_shadowstone",
 							"minecraft:blackstone",
 							"minecraft:cobbled_deepslate"
 						]
@@ -233,8 +233,8 @@
 						],
 						"can_replace": [
 							"minecraft:cobblestone",
-							"poke:cobbled_limestone",
-							"poke:cobbled_shadowstone",
+							"poke_pfe:cobbled_limestone",
+							"poke_pfe:cobbled_shadowstone",
 							"minecraft:blackstone",
 							"minecraft:cobbled_deepslate"
 						]
@@ -264,8 +264,8 @@
 						],
 						"can_replace": [
 							"minecraft:cobblestone",
-							"poke:cobbled_limestone",
-							"poke:cobbled_shadowstone",
+							"poke_pfe:cobbled_limestone",
+							"poke_pfe:cobbled_shadowstone",
 							"minecraft:blackstone",
 							"minecraft:cobbled_deepslate"
 						]
@@ -295,8 +295,8 @@
 						],
 						"can_replace": [
 							"minecraft:cobblestone",
-							"poke:cobbled_limestone",
-							"poke:cobbled_shadowstone",
+							"poke_pfe:cobbled_limestone",
+							"poke_pfe:cobbled_shadowstone",
 							"minecraft:blackstone",
 							"minecraft:cobbled_deepslate"
 						]

@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:cobalt_sword"
+			"identifier": "poke_pfe:cobalt_sword"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,19 +14,19 @@
 		],
 		"unlock": [
 			{
-				"item": "poke:cobalt_ingot"
+				"item": "poke_pfe:cobalt_ingot"
 			}
 		],
 		"key": {
 			"Y": {
-				"item": "poke:cobalt_ingot"
+				"item": "poke_pfe:cobalt_ingot"
 			},
 			"X": {
 				"item": "stick"
 			}
 		},
 		"result": {
-			"item": "poke:cobalt_sword"
+			"item": "poke_pfe:cobalt_sword"
 		}
 	}
 }

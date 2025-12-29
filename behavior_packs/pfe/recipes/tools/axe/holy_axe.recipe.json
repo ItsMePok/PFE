@@ -2,7 +2,7 @@
 	"format_version": "1.20.60",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "poke:holy_axe"
+			"identifier": "poke_pfe:holy_axe"
 		},
 		"tags": [
 			"crafting_table"
@@ -17,22 +17,22 @@
 				"item": "stick"
 			},
 			{
-				"item": "poke:raw_holy"
+				"item": "poke_pfe:raw_holy"
 			},
 			{
-				"item": "poke:holy_ingot"
+				"item": "poke_pfe:holy_ingot"
 			}
 		],
 		"key": {
 			"C": {
-				"item": "poke:holy_ingot"
+				"item": "poke_pfe:holy_ingot"
 			},
 			"S": {
-				"item": "poke:onyx_shaft"
+				"item": "poke_pfe:onyx_stick"
 			}
 		},
 		"result": {
-			"item": "poke:holy_axe"
+			"item": "poke_pfe:holy_axe"
 		}
 	}
 }

@@ -5,7 +5,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "poke:hellish_blade",
+					"name": "poke_pfe:hellish_sword",
 					"functions": [
 						{
 							"function": "enchant_randomly",
@@ -16,7 +16,7 @@
 				},
 				{
 					"type": "item",
-					"name": "poke:hellish_blade",
+					"name": "poke_pfe:hellish_sword",
 					"weight": 1
 				}
 			]
