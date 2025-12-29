@@ -3,7 +3,7 @@
 		"name": "v1.3.01 PFE §cBP§r",
 		"description": "Wiki: https:pfewiki.gitbook.io/home",
 		"pack_scope": "world",
-		"uuid": "4963d97c-36b9-4f1d-8119-f60ce3279d56",
+		"uuid": "9a69f911-6668-4e08-ba47-372391736832",
 		"version": [
 			1,
 			3,
@@ -20,7 +20,7 @@
 	],
 	"modules": [
 		{
-			"uuid": "0932aed9-1cfd-42e7-91f5-afe0525a2914",
+			"uuid": "115ef909-4b14-48c9-b266-3fb4ccd1b91d",
 			"version": [
 				1,
 				0,
@@ -33,7 +33,7 @@
 	],
 	"dependencies": [
 		{ //RP Manifest
-			"uuid": "61197eb5-6c6e-4312-9eb3-dc435c257fec",
+			"uuid": "b2539b9a-b8b3-4864-ac78-a1aa051b28ab",
 			"version": [
 				1,
 				3,

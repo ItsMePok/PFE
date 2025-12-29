@@ -513,7 +513,6 @@
             "items": [
               "poke_pfe:turnip",
               "poke_pfe:golden_turnip"
-              //,"poke_pfe:turnip_crop" //Old Block
             ]
           },
           {
@@ -534,7 +533,6 @@
             },
             "items": [
               "poke_pfe:charred_poppy"
-              //,"poke_pfe:charred_poppy_item" // Old Item
             ]
           },
           {
@@ -1174,7 +1172,7 @@
               "poke_pfe:emerald_upgrader",
               "poke_pfe:diamond_upgrader",
               "poke_pfe:netherite_upgrader",
-              "poke_pfe:creedite_upgrader",
+              "poke_pfe:amethyst_upgrader",
               "poke_pfe:cobalt_upgrader",
               "poke_pfe:shade_upgrader",
               "poke_pfe:onyx_upgrader",

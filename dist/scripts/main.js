@@ -7218,7 +7218,7 @@ function RegisterItemComponents(data) {
             data2.hitEntity.addEffect("wither", 240, { amplifier: 4 });
             return;
           }
-          case "creedite_scythe": {
+          case "poke_pfe:creedite_scythe": {
             data2.attackingEntity.addEffect(MinecraftEffectTypes.Speed, 100, { amplifier: 4 });
             data2.hitEntity.addEffect("blindness", 20);
             return;

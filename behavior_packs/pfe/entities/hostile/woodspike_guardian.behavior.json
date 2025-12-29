@@ -31,7 +31,7 @@
 							"max_dist": 16
 						}
 					],
-					"attack_interval_min": 1,
+					"attack_interval": 1,
 					"must_see": true
 				},
 				"minecraft:target_nearby_sensor": {
@@ -167,7 +167,7 @@
 						"max_dist": 16
 					}
 				],
-				"attack_interval_min": 1,
+				"attack_interval": 1,
 				"must_see": true
 			},
 			"minecraft:target_nearby_sensor": {
