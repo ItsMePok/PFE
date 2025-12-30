@@ -1,10 +1,16 @@
+---
+description: 'Last updated to Match: v1.3.01'
+---
+
 # Cobalt Ingot
 
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt=""><figcaption></figcaption></figure>
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: poke:cobalt\_ingot <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: <mark style="color:yellow;">poke\_pfe:cobalt\_ingot</mark> <a href="#identifier" id="identifier"></a>
 
-## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 64
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark> <a href="#rarity" id="rarity"></a>
+
+## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">64</mark>
 
 ## Usage:
 
@@ -75,9 +81,11 @@ More info about brewing can be found in the: [brewing-guide.md](../../misc-other
 Items:
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_nugget.png?raw=true" alt="Cobalt Nugget" data-size="line">[Cobalt Nugget](../nuggets/cobalt-nugget.md)
-{% endtab %}
 
-{% tab title="Recipe 2" %}
+***
+
+
+
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a>.</p></figcaption></figure>
 
 |                                                                                                      |
@@ -94,6 +102,14 @@ Outputs:
 {% endtab %}
 
 {% tab title="Structure Loot" %}
+
+
+{% hint style="info" %}
+`Chance` is getting at least the lowest `Amount` of that item
+{% endhint %}
+
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/structures-pixel/AbandonedShip.png?raw=true" alt=""><figcaption><p>Found at the <a href="../../sturctures/abandoned-ship.md">Abandoned Ship</a></p></figcaption></figure>
+
 | Item                                                                                                                                             | Amount | Chance        |
 | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------ | ------------- |
 | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="Cobalt Ingot." data-size="line"> Cobalt Ingot | 1      | 3/88 (\~3.4%) |

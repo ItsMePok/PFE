@@ -7,7 +7,7 @@
     * [Tokens](items/currency/tokens/README.md)
       * [Copper Token](items/currency/tokens/copper-token.md)
       * [Iron Token](items/currency/tokens/iron-token.md)
-      * [Gold Token](items/currency/tokens/gold-token.md)
+      * [Golden Token](items/currency/tokens/gold-token.md)
       * [Diamond Token](items/currency/tokens/diamond-token.md)
       * [Platinum Token](items/currency/tokens/platinum-token.md)
     * [Money](items/currency/money/README.md)
