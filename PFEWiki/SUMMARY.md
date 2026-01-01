@@ -409,7 +409,7 @@
     * [Item Voider](tools/misc/item-voider.md)
 * [Weapons](weapons/README.md)
   * [Swords](weapons/swords/README.md)
-    * [Amethyst Sword](weapons/swords/amethyst-sword.md)
+    * [Creedite Sword](weapons/swords/amethyst-sword.md)
     * [Cobalt Sword](weapons/swords/cobalt-sword.md)
     * [Shade Sword](weapons/swords/shade-sword.md)
     * [Radium Sword](weapons/swords/radium-sword.md)

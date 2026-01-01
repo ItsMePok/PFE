@@ -1,52 +1,59 @@
-# Amethyst Sword
+---
+description: Last updated to match v1.3.01
+---
 
-<div align="center" data-full-width="false">
+# Creedite Sword
 
-<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/amethyst_sword.png?raw=true" alt="">
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/creedite_sword.png?raw=true" alt=""><figcaption></figcaption></figure>
 
-</div>
+## <img src="https://minecraft.wiki/images/Book_and_Quill_JE2_BE2.png?2128f" alt="Book and Quill." data-size="line"> Description: <a href="#description" id="description"></a>
 
-## Identifier: **poke:amethyst\_sword** <a href="#identifier" id="identifier"></a>
+* The <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/creedite_sword.png?raw=true" alt="" data-size="line"> Creedite Sword is an early to mid-game weapon that is the main starting point for most of PFE's swords
 
-## Durability: **2000** <a href="#durability" id="durability"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:creedite\_sword**</mark> <a href="#identifier" id="identifier"></a>
 
-## Damage: **9** <a href="#damage" id="damage"></a>
+## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">1</mark> <a href="#stack-size" id="stack-size"></a>
 
-## Mining Speed: **60** <a href="#mining-speed" id="mining-speed"></a>
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark> <a href="#rarity" id="rarity"></a>
 
-## Enchant type: **Sword** <a href="#enchant-type" id="enchant-type"></a>
+## <img src="https://minecraft.wiki/images/Strength_JE3_BE2.png?0494e" alt="Strength Effect." data-size="line"> Attack Damage: <mark style="color:yellow;">9</mark> <a href="#attack-damage" id="attack-damage"></a>
 
-## Repairable with:
+## <img src="https://minecraft.wiki/images/thumb/Enchanting_Table.gif/150px-Enchanting_Table.gif?904a7" alt="" data-size="line"> Enchanting: <a href="#enchanting" id="enchanting"></a>
 
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/repair_core.png?raw=true" alt="" data-size="line">[**Repair Core**](../../items/cores/repair-core.md)
-* <img src="https://minecraft.wiki/images/Amethyst_Shard_JE2_BE1.png?56555" alt="" data-size="line">[**Amethyst Shard**](https://minecraft.wiki/w/Amethyst\_Shard)
+* <img src="https://minecraft.wiki/images/Enchanted_Book.gif?b21c4" alt="" data-size="line"> Enchantment Type: <mark style="color:yellow;">Sword</mark>
+* <img src="https://minecraft.wiki/images/thumb/Bookshelf_JE4_BE2.png/150px-Bookshelf_JE4_BE2.png?9b143" alt="Bookshelf." data-size="line"> Enchantability: <mark style="color:yellow;">27</mark>
 
+## <img src="https://minecraft.wiki/images/thumb/Anvil_(N)_JE3.png/150px-Anvil_(N)_JE3.png?d438e" alt="Anvil." data-size="line"> Repairing: <a href="#enchanting" id="enchanting"></a>
 
+* Durability: <mark style="color:yellow;">2000</mark>
+* Damage Chance:
+  * Min: <mark style="color:yellow;">100%</mark>
+  * Max <mark style="color:yellow;">100%</mark>
+* Repairs with:
+  * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/repair_core.png?raw=true" alt="Repair Core." data-size="line"> [Repair Core](../../items/cores/repair-core.md) <mark style="color:yellow;">(100%)</mark>
+  * Block of Creedite <mark style="color:yellow;">(100%)</mark>
+  * Creedite Shard <mark style="color:yellow;">(25%)</mark>
 
-## Can Break:
-
-* <img src="https://minecraft.wiki/images/thumb/Cobweb_JE5.png/150px-Cobweb_JE5.png?54818" alt="" data-size="line">[**Cobwebs**](https://minecraft.wiki/w/Cobweb)
-* <img src="https://minecraft.wiki/images/thumb/Leafless_Bamboo_JE1_BE2.png/150px-Leafless_Bamboo_JE1_BE2.png?c0e8e" alt="" data-size="line">[**Bamboo**](https://minecraft.wiki/w/Bamboo)
-* <img src="https://minecraft.wiki/images/thumb/Bamboo_Shoot_JE1_BE1.png/150px-Bamboo_Shoot_JE1_BE1.png?34e69" alt="" data-size="line">[**Bamboo Sapling**](https://minecraft.wiki/w/Bamboo)
-
-## Obtaining:
+## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining: <a href="#obtaining" id="obtaining"></a>
 
 {% tabs %}
 {% tab title="Recipe" %}
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-|     |                                                                                                                                        |     |
-| :-: | :------------------------------------------------------------------------------------------------------------------------------------: | :-: |
-|     | ![Amethyst Block](https://minecraft.wiki/images/thumb/Block\_of\_Amethyst\_JE3\_BE1.png/150px-Block\_of\_Amethyst\_JE3\_BE1.png?14501) |     |
-|     | ![Amethyst Block](https://minecraft.wiki/images/thumb/Block\_of\_Amethyst\_JE3\_BE1.png/150px-Block\_of\_Amethyst\_JE3\_BE1.png?14501) |     |
-|     |                         ![Netherite Sword](https://minecraft.wiki/images/Netherite\_Sword\_JE2\_BE2.png?8e866)                         |     |
+|                                                                                                                            |
+| :------------------------------------------------------------------------------------------------------------------------: |
+|          <img src="https://minecraft.wiki/images/Block_of_Amethyst_JE3_BE1.png?14501" alt="" data-size="original">         |
+| <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/upgrade_core.png?raw=true" alt="" data-size="original"> |
+|                            ![](https://minecraft.wiki/images/Netherite_Sword_JE2_BE2.png?8e866)                            |
 
 Items:
 
-* <img src="https://minecraft.wiki/images/thumb/Block_of_Amethyst_JE3_BE1.png/150px-Block_of_Amethyst_JE3_BE1.png?14501" alt="Amethyst Block" data-size="line"> [Amethyst Block](https://minecraft.wiki/w/Block\_of\_Amethyst)
-* <img src="https://minecraft.wiki/images/Netherite_Sword_JE2_BE2.png?8e866" alt="Netherite Sword" data-size="line"> [Netherite Sword](https://minecraft.wiki/w/Netherite\_Sword)
+* <img src="https://minecraft.wiki/images/Block_of_Amethyst_JE3_BE1.png?14501" alt="" data-size="line"> [Block of Amethyst](https://minecraft.wiki/w/Block_of_Amethyst)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/upgrade_core.png?raw=true" alt="" data-size="line"> [Upgrade Core](../../items/cores/upgrade-core.md)
+* <img src="https://minecraft.wiki/images/Netherite_Sword_JE2_BE2.png?8e866" alt="" data-size="line"> [Netherite Sword](https://minecraft.wiki/w/Netherite_Sword)
+
+Outputs:
+
+* 1x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/creedite_sword.png?raw=true" alt="" data-size="line"> Creedite Sword
 {% endtab %}
 {% endtabs %}
-
-
-
