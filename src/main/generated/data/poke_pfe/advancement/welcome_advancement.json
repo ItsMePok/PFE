@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "exists": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:air"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": "placeholder",
+    "icon": {
+      "count": 1,
+      "id": "poke_pfe:cobalt_ingot"
+    },
+    "show_toast": false,
+    "title": "PFE"
+  },
+  "requirements": [
+    [
+      "exists"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

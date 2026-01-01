@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "poke_pfe:block/astral_block"
+    }
+  }
+}

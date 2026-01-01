@@ -26,14 +26,15 @@ public class PFEAdvancementProvider extends FabricAdvancementProvider {
         AdvancementEntry welcomeAdvancement = Advancement.Builder.create()
                 .display(
                         ModItems.COBALT_INGOT, // The display icon
-                        Text.literal("Isn't this a game?"), // The title
-                        Text.literal("Acquire Cobalt for the first time"), // The description
+                        Text.literal("PFE"), // The title
+                        Text.literal("placeholder"), // The description
                         Identifier.ofVanilla("textures/gui/advancements/backgrounds/adventure.png"), // Background image for the tab in the advancements page, if this is a root advancement (has no parent)
                         AdvancementFrame.TASK, // TASK, CHALLENGE, or GOAL
                         false, // Show the toast when completing it
                         false, // Announce it to chat
                         false // Hide it in the advancement tab until it's achieved
                 )
+                .criterion("exists",InventoryChangedCriterion.Conditions.items(Items.AIR))
                 // Give the advancement an id
                 .build(consumer, "poke_pfe:welcome_advancement");
         AdvancementEntry getCobalt = Advancement.Builder.create()

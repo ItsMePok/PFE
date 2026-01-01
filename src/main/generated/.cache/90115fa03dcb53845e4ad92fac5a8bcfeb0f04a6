@@ -1,1 +1,5 @@
 // 1.21.10	-999999999-01-01T00:00:00	PFE/PFERecipeProvider
+36b56bb0efd33b4b0a3b8ef04adebcc7112f7851 data/poke_pfe/advancement/recipes/misc/cobalt_ingot_from_smelting_cobalt_ore.json
+df4e6f6ebc743006615c5ba66f87f57cffa45b5f data/poke_pfe/advancement/recipes/misc/cobalt_ingot_from_smelting_raw_cobalt.json
+cb0200cda30022ab96d382f07a34d3348dbd89ed data/poke_pfe/recipe/cobalt_ingot_from_smelting_cobalt_ore.json
+08dfcae3ca67eb56a0fc2390bfc2ac7c1c90d43b data/poke_pfe/recipe/cobalt_ingot_from_smelting_raw_cobalt.json

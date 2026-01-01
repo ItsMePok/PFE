@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "poke_pfe:block/nether_nebula_ore"
+  }
+}

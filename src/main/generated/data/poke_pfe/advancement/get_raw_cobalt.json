@@ -1,4 +1,5 @@
 {
+  "parent": "poke_pfe:welcome_advancement",
   "criteria": {
     "got_raw_cobalt": {
       "conditions": {
@@ -13,12 +14,13 @@
   },
   "display": {
     "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
-    "description": "Smelt this into an Ingot!",
+    "description": "Acquire Cobalt for the first time",
+    "frame": "goal",
     "icon": {
       "count": 1,
       "id": "poke_pfe:raw_cobalt"
     },
-    "title": "You have acquired Raw Cobalt for the first time"
+    "title": "Isn't this a game?"
   },
   "requirements": [
     [

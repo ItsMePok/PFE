@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 300,
+  "experience": 0.1,
+  "group": "cobalt_ingot",
+  "ingredient": "poke_pfe:cobalt_ore",
+  "result": {
+    "id": "poke_pfe:cobalt_ingot"
+  }
+}
