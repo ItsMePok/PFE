@@ -1,10 +1,20 @@
+---
+description: 'Last updated to match: v1.3.01'
+---
+
 # Echo Holder
 
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/echo_holder.png?raw=true" alt=""><figcaption></figcaption></figure>
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: poke:echo\_holder <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Book_and_Quill_JE2_BE2.png?2128f" alt="Book and Quill." data-size="line"> Description: <a href="#description" id="description"></a>
 
-## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 64
+* The <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/echo_holder.png?raw=true" alt="" data-size="line"> Echo Holder is a crafting component that is used in crafting [Rings](../../tools/rings/) that specialize in sculk-related abilities
+
+## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: <mark style="color:yellow;">poke\_pfe:echo\_holder</mark> <a href="#identifier" id="identifier"></a>
+
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Uncommon</mark> <a href="#rarity" id="rarity"></a>
+
+## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">64</mark>
 
 ## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining:
 
@@ -22,5 +32,9 @@
 
 * <img src="https://minecraft.wiki/images/Echo_Shard_JE1_BE1.png?726c3" alt="Echo Shard." data-size="line"> [Echo Shard](https://minecraft.wiki/w/Echo_Shard)
 * <img src="https://minecraft.wiki/images/Sculk_Sensor_BE2.gif?075c0" alt="Sculk Sensor" data-size="line"> [Sculk Sensor](https://minecraft.wiki/w/Sculk_Sensor)
+
+#### Result:
+
+* 1x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/echo_holder.png?raw=true" alt="" data-size="line"> Echo Holder
 {% endtab %}
 {% endtabs %}
