@@ -44,6 +44,12 @@ I highly recommend avoiding those sites as they can contain malicious things
 
 ***
 
+### Vatonage
+
+{% embed url="https://vatonage.com/mods/poke-s-fantasy-expansion" %}
+
+***
+
 ### ModBay
 
 {% embed url="https://modbay.org/mods/372-pokes-fantasy-expansion.html" %}

@@ -20,18 +20,18 @@
 {% endtab %}
 
 {% tab title="Block Drop" %}
-<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RedPresent.png?raw=true" alt=""><figcaption><p>Breaking a <a href="../../../blocks/misc/red-present.md">Red Present</a> </p></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RedPresent.png?raw=true" alt=""><figcaption><p>Breaking a <a href="../../../blocks/misc/red-present.md">Red Present</a></p></figcaption></figure>
 
-| Item                                                                                                                                                | Amount | Chance        |
-| --------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------------- |
+| Item                                                                                                                                             | Amount | Chance        |
+| ------------------------------------------------------------------------------------------------------------------------------------------------ | ------ | ------------- |
 | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/copper_token.png?raw=true" alt="Copper Token." data-size="line"> Copper Token | 1      | 2/7 (\~28.5%) |
 
 ***
 
 Collecting Loot from the [Fisher](../../../blocks/automation/fisher.md)
 
-| Item                                                                                                                                                | Amount | Chance         |
-| --------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | -------------- |
+| Item                                                                                                                                             | Amount | Chance         |
+| ------------------------------------------------------------------------------------------------------------------------------------------------ | ------ | -------------- |
 | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/copper_token.png?raw=true" alt="Copper Token." data-size="line"> Copper Token | 1      | 1/29 (\~3.25%) |
 {% endtab %}
 
@@ -48,7 +48,7 @@ e
 
 ***
 
-<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/entity_icon/furnace_golem.png?raw=true" alt=""><figcaption><p>Dropped by the <br><a href="../../../mobs/bosses/furnace-golem.md">Furnace Golem</a></p></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/entity_icon/furnace_golem.png?raw=true" alt=""><figcaption><p>Dropped by the<br><a href="../../../mobs/bosses/furnace-golem.md">Furnace Golem</a></p></figcaption></figure>
 
 <table><thead><tr><th align="center">Item</th><th width="78" align="center">#</th><th align="center">Chance</th><th data-type="checkbox">Looting Works?</th></tr></thead><tbody><tr><td align="center"><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/copper_token.png?raw=true" alt="Copper Token." data-size="line"> Copper Token</td><td align="center">20-32</td><td align="center">100%</td><td>true</td></tr></tbody></table>
 
@@ -72,7 +72,7 @@ e
 
 ***
 
-<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/entity_icon/demonic_allay.png" alt=""><figcaption><p>Dropped by the <br><a href="../../../mobs/bosses/mini-demonic-allay.md">Mini Demonic Allay</a></p></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/entity_icon/demonic_allay.png?raw=true" alt=""><figcaption><p>Dropped by the<br><a href="../../../mobs/bosses/mini-demonic-allay.md">Mini Demonic Allay</a></p></figcaption></figure>
 
 <table><thead><tr><th align="center">Item</th><th width="78" align="center">#</th><th align="center">Chance</th><th data-type="checkbox">Looting Works?</th></tr></thead><tbody><tr><td align="center"><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/copper_token.png?raw=true" alt="Copper Token." data-size="line"> Copper Token</td><td align="center">1-8</td><td align="center">~99.6%</td><td>false</td></tr></tbody></table>
 
@@ -114,56 +114,56 @@ e
 
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/structures-pixel/AbandonedShip.png?raw=true" alt=""><figcaption><p>Found in the <a href="../../../sturctures/abandoned-ship.md">Abandoned Ship</a></p></figcaption></figure>
 
-| Item                                                                                                                                                | Amount | Chance          |
-| --------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | --------------- |
+| Item                                                                                                                                             | Amount | Chance          |
+| ------------------------------------------------------------------------------------------------------------------------------------------------ | ------ | --------------- |
 | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/copper_token.png?raw=true" alt="Copper Token." data-size="line"> Copper Token | 1 - 5  | 10/41 (\~24.4%) |
 
 ***
 
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/structures-pixel/EndGuardTowerPixel.png?raw=true" alt=""><figcaption><p>Found in the <a href="../../../sturctures/end-guard-tower.md">End Guard Tower</a></p></figcaption></figure>
 
-| Item                                                                                                                                                | Amount | Chance          |
-| --------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | --------------- |
+| Item                                                                                                                                             | Amount | Chance          |
+| ------------------------------------------------------------------------------------------------------------------------------------------------ | ------ | --------------- |
 | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/copper_token.png?raw=true" alt="Copper Token." data-size="line"> Copper Token | 4 - 96 | 25/196 (12.75%) |
 
 ***
 
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/structures-pixel/AbandonedSwampsite.png?raw=true" alt=""><figcaption><p>Found in the <a href="../../../sturctures/abandoned-swampsite.md">Abandoned Swampsite</a></p></figcaption></figure>
 
-| Item                                                                                                                                                | Amount | Chance         |
-| --------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | -------------- |
+| Item                                                                                                                                             | Amount | Chance         |
+| ------------------------------------------------------------------------------------------------------------------------------------------------ | ------ | -------------- |
 | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/copper_token.png?raw=true" alt="Copper Token." data-size="line"> Copper Token | 1 - 5  | 4/17 (\~23.5%) |
 
 ***
 
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/structures-pixel/BrokenConduit.png?raw=true" alt=""><figcaption><p>Found in the <a href="../../../sturctures/broken-conduit.md">Broken Conduit</a></p></figcaption></figure>
 
-| Item                                                                                                                                                | Amount | Chance         |
-| --------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | -------------- |
+| Item                                                                                                                                             | Amount | Chance         |
+| ------------------------------------------------------------------------------------------------------------------------------------------------ | ------ | -------------- |
 | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/copper_token.png?raw=true" alt="Copper Token." data-size="line"> Copper Token | 1 - 16 | 1/19 (\~5.25%) |
 
 ***
 
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/structures-pixel/DesertVault.png?raw=true" alt=""><figcaption><p>Found in the <a href="../../../sturctures/desert-vault.md">Desert Vault</a></p></figcaption></figure>
 
-| Item                                                                                                                                                | Amount | Chance          |
-| --------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | --------------- |
+| Item                                                                                                                                             | Amount | Chance          |
+| ------------------------------------------------------------------------------------------------------------------------------------------------ | ------ | --------------- |
 | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/copper_token.png?raw=true" alt="Copper Token." data-size="line"> Copper Token | 1 - 9  | 25/57 (\~43.9%) |
 
 ***
 
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/structures-pixel/GroveRock.png?raw=true" alt=""><figcaption><p>Found in the <a href="../../../sturctures/grove-rock.md">Grove Rock</a></p></figcaption></figure>
 
-| Item                                                                                                                                                | Amount | Chance         |
-| --------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | -------------- |
+| Item                                                                                                                                             | Amount | Chance         |
+| ------------------------------------------------------------------------------------------------------------------------------------------------ | ------ | -------------- |
 | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/copper_token.png?raw=true" alt="Copper Token." data-size="line"> Copper Token | 1 - 5  | 4/17 (\~23.5%) |
 
 ***
 
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/structures-pixel/RuinedTower.png?raw=true" alt=""><figcaption><p>Found in the <a href="../../../sturctures/ruined-tower.md">Ruined Tower</a></p></figcaption></figure>
 
-| Item                                                                                                                                                | Amount | Chance              |
-| --------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------------------- |
+| Item                                                                                                                                             | Amount | Chance              |
+| ------------------------------------------------------------------------------------------------------------------------------------------------ | ------ | ------------------- |
 | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/copper_token.png?raw=true" alt="Copper Token." data-size="line"> Copper Token | 1 - 66 | 2799/4756 (\~58.8%) |
 {% endtab %}
 {% endtabs %}
