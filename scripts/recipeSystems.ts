@@ -7,7 +7,7 @@
 [] Import Custom Recipes
  */
 
-import { Block, BlockComponentPlayerInteractEvent, BlockPermutation, BlockType, BlockTypes, CustomComponentParameters, Entity, EntityComponentTypes, ItemComponent, ItemComponentUseEvent, ItemStack, Player } from "@minecraft/server";
+import { Block, BlockComponentPlayerInteractEvent, BlockPermutation, BlockType, BlockTypes, CustomComponentParameters, Entity, EntityComponentTypes, ItemComponent, ItemComponentTypes, ItemComponentUseEvent, ItemStack, Player, Vector3 } from "@minecraft/server";
 import { ActionFormData, ModalFormData } from "@minecraft/server-ui";
 import { pokeAddItemsToPlayerOrDrop, PokeGetItemFromInventory } from "./commonFunctions";
 import { clampNumber } from "@minecraft/math";
@@ -24,11 +24,13 @@ interface RecipeBlockComponentInfo {
   storage_capacity_limit: number | 64
   name: string // Translation string
   debug_mode: boolean | false
+  has_transform_recipes: boolean | false
 }
 interface CustomRecipes {// "poke_pfe:custom_recipes"
   items: string[] // ex: 2:poke_pfe:radium_ingot (amount:identifier) 
   result: string[] // ex: 2:poke_pfe:radium_ingot (amount:identifier) 
-  recipe_type: "shapeless" | "upgrade"
+  recipe_type: "shapeless" | "upgrade" | "transform"
+  keep_item_data_from: number // ex: 0 would be the first item in the array note: only 1 item will be applied
 }
 class RecipeBlockComponent {
   onPlayerInteract(data: BlockComponentPlayerInteractEvent, componentInfo: CustomComponentParameters) {
@@ -56,8 +58,8 @@ class RecipeItemComponent {
   }
 }
 interface StoredItemsInfo {
-  i: string,
-  a: number
+  i: string, //Item
+  a: number // Amount
 }
 function PFERecipeBlockMainMenu(component: RecipeBlockComponentInfo, player: Player, block: Block | ItemStack) {
   const UI = new ActionFormData()
@@ -238,9 +240,48 @@ function ViewRecipeInfo(component: RecipeBlockComponentInfo, player: Player, rec
     if (canCraft == recipe.items.length) {
       if (response.selection == selection) {
         let currentStoredItems = storedItems
+        for (const result of ParseRecipeItems(recipe.result)) {
+          const maxAmount = new ItemStack(result.item, 1).maxAmount
+          for (let i = result.amount; i > -1; i = i - maxAmount) {
+            if (i <= 0) {
+              break;
+            }
+            if (recipe.recipe_type !== "transform") {
+              pokeAddItemsToPlayerOrDrop(player, new ItemStack(result.item, clampNumber(i, 0, maxAmount)))
+            } else {
+              let resultedItem: ItemStack = new ItemStack(result.item, clampNumber(i, 0, maxAmount))
+              if (typeof recipe.keep_item_data_from === "number") {
+                let dataSendingItem = <ItemStack>PokeGetItemFromInventory(player, undefined, requiredItems.at(recipe.keep_item_data_from)?.item)?.at(0)
+                if (dataSendingItem) {
+                  const enchants = dataSendingItem.getComponent(ItemComponentTypes.Enchantable)?.getEnchantments()
+                  if (enchants && resultedItem.hasComponent(ItemComponentTypes.Enchantable)) {
+                    resultedItem.getComponent(ItemComponentTypes.Enchantable)?.addEnchantments(enchants)
+                  }
+
+                  const durability = dataSendingItem.getComponent(ItemComponentTypes.Durability)?.damage
+                  if (durability && resultedItem.hasComponent(ItemComponentTypes.Durability)) {
+                    resultedItem.getComponent(ItemComponentTypes.Durability)!.damage = durability
+                  }
+
+                  let dynamicProperties: Record<string, (string | boolean | number | Vector3 | undefined)> = {
+                  }
+                  for (const dynamicProperty of dataSendingItem.getDynamicPropertyIds()) {
+                    const value = dataSendingItem.getDynamicProperty(dynamicProperty)
+                    if (!value) continue
+                    dynamicProperties.dynamicProperty = value
+                  }
+                  resultedItem.setDynamicProperties(dynamicProperties)
+
+
+                } else console.warn(`Failed to find item to transfer data from. Looked for ${JSON.stringify(dataSendingItem)} || PFE - RecipeBlockComponent - TransformRecipeType`);
+              }
+              pokeAddItemsToPlayerOrDrop(player, resultedItem)
+            }
+          }
+        }
         for (const amount of amountInfo) {
           if (amount.fromInventory) {
-            player.runCommand(`clear @s ${amount.id} -1 ${amount.fromInventory}`)
+            player.runCommand(`clear @s ${amount.id.replace("minecraft:", "")} -1 ${amount.fromInventory}`)
           }
           if (amount.fromStored) {
             let newStored: StoredItemsInfo[] = []
@@ -257,15 +298,6 @@ function ViewRecipeInfo(component: RecipeBlockComponentInfo, player: Player, rec
             //console.warn(JSON.stringify(newStored))
             player.setDynamicProperty(`${component.id}:storedItems`, JSON.stringify(newStored))
             currentStoredItems = newStored
-          }
-        }
-        for (const result of ParseRecipeItems(recipe.result)) {
-          const maxAmount = new ItemStack(result.item, 1).maxAmount
-          for (let i = result.amount; i > -1; i = i - maxAmount) {
-            if (i <= 0) {
-              break;
-            }
-            pokeAddItemsToPlayerOrDrop(player, new ItemStack(result.item, clampNumber(i, 0, maxAmount)))
           }
         }
         ViewRecipeInfo(component, player, recipes, block, recipe, currentStoredItems)

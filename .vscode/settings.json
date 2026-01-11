@@ -4260,8 +4260,15 @@
                               "recipe_type": {
                                 "description": "The type of recipe this is",
                                 "enum": [
-                                  "shapeless"
-                                ]
+                                  "shapeless",
+                                  "upgrade",
+                                  "transform"
+                                ],
+                                "default": "shapeless"
+                              },
+                              "keep_item_data_from": {
+                                "description": "(transform only) Keep the data from the specified item on the result item(s)",
+                                "type": "number"
                               }
                             }
                           },
@@ -4626,8 +4633,15 @@
                         "recipe_type": {
                           "description": "The type of recipe this is",
                           "enum": [
-                            "shapeless"
-                          ]
+                            "shapeless",
+                            "upgrade",
+                            "transform"
+                          ],
+                          "default": "shapeless"
+                        },
+                        "keep_item_data_from": {
+                          "description": "(transform only) Keep the data from the specified item on the result item(s)",
+                          "type": "number"
                         }
                       }
                     },
@@ -4887,6 +4901,7 @@
     "catmullrom",
     "Cherof",
     "chestboat",
+    "chestplate",
     "Chrysopoeia",
     "clownfish",
     "collidable",
@@ -4908,6 +4923,7 @@
     "eldunknown",
     "enablemcloopback",
     "enablemcpreviewloopback",
+    "Enchantable",
     "featherfall",
     "flipbook",
     "floatingdream",
@@ -4988,6 +5004,7 @@
     "torchflower",
     "trimmable",
     "unhider",
+    "upgrader",
     "westside",
     "wethands",
     "yakusoku",

@@ -9,11 +9,26 @@
     },
     "components": {
       "minecraft:display_name": "%poke_pfe.upgrader\n%poke_pfe.tag",
+      "poke_pfe:custom_recipes": [
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:minecraft:netherite_sword",
+            "8:poke_pfe:creedite_shard",
+            "1:poke_pfe:upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:creedite_sword"
+          ],
+          "keep_item_data_from": 0
+        }
+      ],
       "poke_pfe:recipe_block": {
         "can_show_item_upgrades": true,
+        "has_transform_recipes": true,
         "id": "poke_pfe:upgrader",
         "can_store_items": false,
-        "debug_mode": false,
+        "debug_mode": true,
         "name": "%poke_pfe.upgrader"
       },
       "minecraft:destructible_by_mining": {

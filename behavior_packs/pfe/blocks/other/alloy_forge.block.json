@@ -22,6 +22,17 @@
 			"poke_pfe:custom_recipes": [
 				{
 					"items": [
+						"4:minecraft:amethyst_shard",
+						"4:minecraft:quartz",
+						"2:poke_pfe:shade_ingot"
+					],
+					"result": [
+						"8:poke_pfe:creedite_shard"
+					],
+					"recipe_type": "shapeless"
+				},
+				{
+					"items": [
 						"4:poke_pfe:shade_ingot",
 						"4:poke_pfe:astral_ingot",
 						"1:poke_pfe:molten_slimeball"
