@@ -18,6 +18,15 @@
 			},
 			{
 				"item": "poke_pfe:holy_ingot"
+			},
+			{
+				"item": "poke_pfe:holy_nugget"
+			},
+			{
+				"item": "poke_pfe:holy_block"
+			},
+			{
+				"item": "poke_pfe:raw_holy"
 			}
 		],
 		"key": {

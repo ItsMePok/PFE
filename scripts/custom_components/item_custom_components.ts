@@ -513,10 +513,10 @@ function RegisterItemComponents(data: StartupEvent) {
       if (!componentInfo.mode?.includes("on_use_on")) return;
       const player = <Player>data.source
       if (player.typeId != MinecraftEntityTypes.Player) return;
-      if (typeof componentInfo.command == "string") data.block.dimension.runCommand(`execute at ${data.block.x} ${data.block.y} ${data.block.z} run ${componentInfo.command}`);
+      if (typeof componentInfo.command == "string") data.block.dimension.runCommand(`execute positioned ${data.block.x} ${data.block.y} ${data.block.z} run ${componentInfo.command}`);
       else if (componentInfo.command)
         for (const command of componentInfo.command) {
-          data.block.dimension.runCommand(`execute at ${data.block.x} ${data.block.y} ${data.block.z} run ${command}`)
+          data.source.runCommand(`execute positioned ${data.block.x} ${data.block.y} ${data.block.z} run ${command}`)
         }
       if (componentInfo.trigger_cooldown) data.itemStack.getComponent(ItemComponentTypes.Cooldown)?.startCooldown(player);
       if (componentInfo.take_durability !== false) PokeDamageItemUB(data.itemStack, undefined, player, EquipmentSlot.Mainhand);

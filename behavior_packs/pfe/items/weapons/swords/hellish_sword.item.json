@@ -50,7 +50,8 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke_pfe:repair_core"
+							"poke_pfe:repair_core",
+							"poke_pfe:hellish_block"
 						],
 						"repair_amount": "query.max_durability"
 					},

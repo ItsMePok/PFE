@@ -56,7 +56,8 @@
 					},
 					{
 						"items": [
-							"poke_pfe:repair_core"
+							"poke_pfe:repair_core",
+							"poke_pfe:shade_block"
 						],
 						"repair_amount": "query.max_durability"
 					},

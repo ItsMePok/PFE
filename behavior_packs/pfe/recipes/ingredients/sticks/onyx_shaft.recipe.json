@@ -15,6 +15,9 @@
 		"unlock": [
 			{
 				"item": "poke_pfe:onyx_ingot"
+			},
+			{
+				"item": "minecraft:crying_obsidian"
 			}
 		],
 		"key": {
@@ -22,12 +25,12 @@
 				"item": "poke_pfe:onyx_ingot"
 			},
 			"O": {
-				"item": "crying_obsidian"
+				"item": "minecraft:crying_obsidian"
 			}
 		},
 		"result": {
 			"item": "poke_pfe:onyx_stick",
-			"count": 1
+			"count": 2
 		}
 	}
 }

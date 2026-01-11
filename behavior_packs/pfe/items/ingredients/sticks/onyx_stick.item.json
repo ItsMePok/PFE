@@ -9,10 +9,10 @@
 		},
 		"components": {
 			"minecraft:display_name": {
-				"value": "%poke_pfe.onyx_shaft\n%poke_pfe.tag"
+				"value": "%poke_pfe.onyx_stick\n%poke_pfe.tag"
 			},
-			"poke_pfe:icon_path": "textures/poke/pfe/onyx_shaft",
-			"minecraft:icon": "poke_pfe_onyx_shaft",
+			"poke_pfe:icon_path": "textures/poke/pfe/onyx_stick",
+			"minecraft:icon": "poke_pfe_onyx_stick",
 			"minecraft:hand_equipped": true
 		}
 	}

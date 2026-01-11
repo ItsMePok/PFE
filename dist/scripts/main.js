@@ -1,5 +1,5 @@
 // scripts/main.ts
-import { system as system9, world as world11, EquipmentSlot as EquipmentSlot10, EntityComponentTypes as EntityComponentTypes11, ItemComponentTypes as ItemComponentTypes6, CommandPermissionLevel, CustomCommandParamType, CustomCommandStatus, ItemLockMode as ItemLockMode2 } from "@minecraft/server";
+import { system as system9, world as world11, EquipmentSlot as EquipmentSlot10, EntityComponentTypes as EntityComponentTypes11, ItemComponentTypes as ItemComponentTypes7, CommandPermissionLevel, CustomCommandParamType, CustomCommandStatus, ItemLockMode as ItemLockMode2 } from "@minecraft/server";
 
 // node_modules/@minecraft/vanilla-data/lib/index.js
 var MinecraftBiomeTypes = ((MinecraftBiomeTypes2) => {
@@ -7726,10 +7726,10 @@ function RegisterItemComponents(data) {
         if (!componentInfo.mode?.includes("on_use_on")) return;
         const player = data2.source;
         if (player.typeId != MinecraftEntityTypes.Player) return;
-        if (typeof componentInfo.command == "string") data2.block.dimension.runCommand(`execute at ${data2.block.x} ${data2.block.y} ${data2.block.z} run ${componentInfo.command}`);
+        if (typeof componentInfo.command == "string") data2.block.dimension.runCommand(`execute positioned ${data2.block.x} ${data2.block.y} ${data2.block.z} run ${componentInfo.command}`);
         else if (componentInfo.command)
           for (const command of componentInfo.command) {
-            data2.block.dimension.runCommand(`execute at ${data2.block.x} ${data2.block.y} ${data2.block.z} run ${command}`);
+            data2.source.runCommand(`execute positioned ${data2.block.x} ${data2.block.y} ${data2.block.z} run ${command}`);
           }
         if (componentInfo.trigger_cooldown) data2.itemStack.getComponent(ItemComponentTypes4.Cooldown)?.startCooldown(player);
         if (componentInfo.take_durability !== false) PokeDamageItemUB(data2.itemStack, void 0, player, EquipmentSlot8.Mainhand);
@@ -7757,10 +7757,10 @@ function RegisterItemComponents(data) {
 }
 
 // scripts/custom_components/block_custom_components.ts
-import { BlockComponentTypes, BlockPermutation as BlockPermutation3, BlockVolume as BlockVolume2, Direction as Direction3, EntityComponentTypes as EntityComponentTypes10, EquipmentSlot as EquipmentSlot9, GameMode as GameMode5, ItemComponentTypes as ItemComponentTypes5, ItemStack as ItemStack10, LiquidType } from "@minecraft/server";
+import { BlockComponentTypes, BlockPermutation as BlockPermutation3, BlockVolume as BlockVolume2, Direction as Direction3, EntityComponentTypes as EntityComponentTypes10, EquipmentSlot as EquipmentSlot9, GameMode as GameMode5, ItemComponentTypes as ItemComponentTypes6, ItemStack as ItemStack10, LiquidType } from "@minecraft/server";
 
 // scripts/recipeSystems.ts
-import { BlockPermutation as BlockPermutation2, BlockTypes, ItemStack as ItemStack9 } from "@minecraft/server";
+import { BlockPermutation as BlockPermutation2, BlockTypes, ItemComponentTypes as ItemComponentTypes5, ItemStack as ItemStack9 } from "@minecraft/server";
 import { ActionFormData as ActionFormData10, ModalFormData as ModalFormData7 } from "@minecraft/server-ui";
 var RecipeBlockComponent = class {
   onPlayerInteract(data, componentInfo) {
@@ -7949,9 +7949,43 @@ function ViewRecipeInfo(component, player, recipes, block, recipe, storedItems) 
     if (canCraft == recipe.items.length) {
       if (response.selection == selection) {
         let currentStoredItems = storedItems;
+        for (const result of ParseRecipeItems(recipe.result)) {
+          const maxAmount = new ItemStack9(result.item, 1).maxAmount;
+          for (let i = result.amount; i > -1; i = i - maxAmount) {
+            if (i <= 0) {
+              break;
+            }
+            if (recipe.recipe_type !== "transform") {
+              pokeAddItemsToPlayerOrDrop(player, new ItemStack9(result.item, clampNumber(i, 0, maxAmount)));
+            } else {
+              let resultedItem = new ItemStack9(result.item, clampNumber(i, 0, maxAmount));
+              if (typeof recipe.keep_item_data_from === "number") {
+                let dataSendingItem = PokeGetItemFromInventory(player, void 0, requiredItems.at(recipe.keep_item_data_from)?.item)?.at(0);
+                if (dataSendingItem) {
+                  const enchants = dataSendingItem.getComponent(ItemComponentTypes5.Enchantable)?.getEnchantments();
+                  if (enchants && resultedItem.hasComponent(ItemComponentTypes5.Enchantable)) {
+                    resultedItem.getComponent(ItemComponentTypes5.Enchantable)?.addEnchantments(enchants);
+                  }
+                  const durability = dataSendingItem.getComponent(ItemComponentTypes5.Durability)?.damage;
+                  if (durability && resultedItem.hasComponent(ItemComponentTypes5.Durability)) {
+                    resultedItem.getComponent(ItemComponentTypes5.Durability).damage = durability;
+                  }
+                  let dynamicProperties = {};
+                  for (const dynamicProperty of dataSendingItem.getDynamicPropertyIds()) {
+                    const value = dataSendingItem.getDynamicProperty(dynamicProperty);
+                    if (!value) continue;
+                    dynamicProperties.dynamicProperty = value;
+                  }
+                  resultedItem.setDynamicProperties(dynamicProperties);
+                } else console.warn(`Failed to find item to transfer data from. Looked for ${JSON.stringify(dataSendingItem)} || PFE - RecipeBlockComponent - TransformRecipeType`);
+              }
+              pokeAddItemsToPlayerOrDrop(player, resultedItem);
+            }
+          }
+        }
         for (const amount of amountInfo) {
           if (amount.fromInventory) {
-            player.runCommand(`clear @s ${amount.id} -1 ${amount.fromInventory}`);
+            player.runCommand(`clear @s ${amount.id.replace("minecraft:", "")} -1 ${amount.fromInventory}`);
           }
           if (amount.fromStored) {
             let newStored = [];
@@ -7962,15 +7996,6 @@ function ViewRecipeInfo(component, player, recipes, block, recipe, storedItems) 
             }
             player.setDynamicProperty(`${component.id}:storedItems`, JSON.stringify(newStored));
             currentStoredItems = newStored;
-          }
-        }
-        for (const result of ParseRecipeItems(recipe.result)) {
-          const maxAmount = new ItemStack9(result.item, 1).maxAmount;
-          for (let i = result.amount; i > -1; i = i - maxAmount) {
-            if (i <= 0) {
-              break;
-            }
-            pokeAddItemsToPlayerOrDrop(player, new ItemStack9(result.item, clampNumber(i, 0, maxAmount)));
           }
         }
         ViewRecipeInfo(component, player, recipes, block, recipe, currentStoredItems);
@@ -8250,8 +8275,8 @@ function RegisterBlockComponents(data) {
       onPlayerBreak(data2, component) {
         const equippableComponent = data2.player?.getComponent(EntityComponentTypes10.Equippable);
         if (equippableComponent === void 0) return;
-        if (!equippableComponent.getEquipment(EquipmentSlot9.Mainhand)?.hasComponent(ItemComponentTypes5.Enchantable)) return;
-        const enchantableComponent = equippableComponent.getEquipment(EquipmentSlot9.Mainhand)?.getComponent(ItemComponentTypes5.Enchantable);
+        if (!equippableComponent.getEquipment(EquipmentSlot9.Mainhand)?.hasComponent(ItemComponentTypes6.Enchantable)) return;
+        const enchantableComponent = equippableComponent.getEquipment(EquipmentSlot9.Mainhand)?.getComponent(ItemComponentTypes6.Enchantable);
         if (!enchantableComponent?.hasEnchantment(MinecraftEnchantmentTypes.Fortune)) return;
         let fortuneLevel = enchantableComponent.getEnchantment(MinecraftEnchantmentTypes.Fortune).level;
         let rng = Math.round(Math.random());
@@ -9484,7 +9509,7 @@ function SwapHatCommand(origin, swapAs) {
         return;
       }
       if (helmet) {
-        const helmetEnchantments = helmet.getComponent(ItemComponentTypes6.Enchantable);
+        const helmetEnchantments = helmet.getComponent(ItemComponentTypes7.Enchantable);
         if (helmetEnchantments?.hasEnchantment(MinecraftEnchantmentTypes.Binding)) {
           status = {
             status: CustomCommandStatus.Failure,

@@ -17,7 +17,16 @@
 				"item": "poke_pfe:cobalt_sword"
 			},
 			{
-				"item": "poke_pfe:cobalt_ingot"
+				"item": "poke_pfe:shade_ingot"
+			},
+			{
+				"item": "poke_pfe:shade_nugget"
+			},
+			{
+				"item": "poke_pfe:shade_block"
+			},
+			{
+				"item": "poke_pfe:raw_shade"
 			}
 		],
 		"key": {
@@ -25,7 +34,7 @@
 				"item": "poke_pfe:shade_ingot"
 			},
 			"X": {
-				"item": "poke_pfe:onyx_stick"
+				"item": "minecraft:stick"
 			},
 			"A": {
 				"item": "poke_pfe:cobalt_sword"
@@ -34,10 +43,8 @@
 				"item": "poke_pfe:upgrade_core"
 			}
 		},
-		"result": [
-			{
-				"item": "poke_pfe:shade_sword"
-			}
-		]
+		"result": {
+			"item": "poke_pfe:shade_sword"
+		}
 	}
 }
