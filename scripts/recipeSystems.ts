@@ -3,7 +3,7 @@
 [X] View Recipes
 [X] Store Items
 [X] Shapeless Recipe Type
-[] Upgrade Recipe Type
+[X] Transform Recipe Type
 [] Import Custom Recipes
  */
 
@@ -29,7 +29,7 @@ interface RecipeBlockComponentInfo {
 interface CustomRecipes {// "poke_pfe:custom_recipes"
   items: string[] // ex: 2:poke_pfe:radium_ingot (amount:identifier) 
   result: string[] // ex: 2:poke_pfe:radium_ingot (amount:identifier) 
-  recipe_type: "shapeless" | "upgrade" | "transform"
+  recipe_type: "shapeless" | "transform"
   keep_item_data_from: number // ex: 0 would be the first item in the array note: only 1 item will be applied
 }
 class RecipeBlockComponent {
@@ -226,7 +226,7 @@ function ViewRecipeInfo(component: RecipeBlockComponentInfo, player: Player, rec
     }
     if (item.amount <= itemTotal) canCraft++;
     const color = item.amount <= itemTotal ? "a" : "c"
-    UI.label({ translate: `- [§${color}${itemTotal}§r/§${color}${item.amount}§r] (§9${MakeAddonID(item.item)}§r) %${MakeLocalizationKey(item.item)}` })
+    UI.label({ translate: `${(typeof recipe.keep_item_data_from === "number" && (requiredItems.at(recipe.keep_item_data_from)?.item == item.item)) ? "§e-§r" : "-"} [§${color}${itemTotal}§r/§${color}${item.amount}§r] (§9${MakeAddonID(item.item)}§r) %${MakeLocalizationKey(item.item)}` })
     amountInfo.push(thisAmountInfo)
   }
   if (canCraft == recipe.items.length) {

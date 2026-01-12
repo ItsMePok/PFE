@@ -4244,7 +4244,7 @@
                                 "description": "The items used in this recipe\n(Amount):(Identifier)",
                                 "items": {
                                   "type": "string",
-                                  "pattern": "^([0-9])[:](.*)[:](.*)"
+                                  "pattern": "^([0-9]*)[:](.*)[:](.*)"
                                 },
                                 "minItems": 1
                               },
@@ -4253,7 +4253,7 @@
                                 "type": "array",
                                 "items": {
                                   "type": "string",
-                                  "pattern": "^([0-9])[:](.*)[:](.*)"
+                                  "pattern": "^([0-9]*)[:](.*)[:](.*)"
                                 },
                                 "minItems": 1
                               },
@@ -4617,7 +4617,7 @@
                           "description": "The items used in this recipe\n(Amount):(Identifier)",
                           "items": {
                             "type": "string",
-                            "pattern": "^([0-9])[:](.*)[:](.*)"
+                            "pattern": "^([0-9]*)[:](.*)[:](.*)"
                           },
                           "minItems": 1
                         },
@@ -4626,7 +4626,7 @@
                           "type": "array",
                           "items": {
                             "type": "string",
-                            "pattern": "^([0-9])[:](.*)[:](.*)"
+                            "pattern": "^([0-9]*)[:](.*)[:](.*)"
                           },
                           "minItems": 1
                         },
@@ -4940,6 +4940,7 @@
     "infiniteamethyst",
     "itemframe",
     "jigarbov",
+    "knightling",
     "komorebi",
     "Kumi",
     "lefttobloom",

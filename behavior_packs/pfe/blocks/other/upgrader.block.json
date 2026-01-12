@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:display_name": "%poke_pfe.upgrader\n%poke_pfe.tag",
+      "minecraft:display_name": "%poke_pfe.upgrader\n§7%poke_pfe.upgrader.description\n§7%poke_pfe.has_recipes\n%poke_pfe.tag",
       "poke_pfe:custom_recipes": [
         {
           "recipe_type": "transform",
@@ -21,6 +21,648 @@
             "1:poke_pfe:creedite_sword"
           ],
           "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:minecraft:netherite_helmet",
+            "20:poke_pfe:creedite_shard",
+            "1:poke_pfe:upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:creedite_helmet"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:minecraft:netherite_chestplate",
+            "32:poke_pfe:creedite_shard",
+            "1:poke_pfe:upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:creedite_chestplate"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:minecraft:netherite_leggings",
+            "28:poke_pfe:creedite_shard",
+            "1:poke_pfe:upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:creedite_leggings"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:minecraft:netherite_boots",
+            "16:poke_pfe:creedite_shard",
+            "1:poke_pfe:upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:creedite_boots"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:creedite_helmet",
+            "20:poke_pfe:onyx_ingot",
+            "1:poke_pfe:upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:onyx_helmet"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:creedite_chestplate",
+            "32:poke_pfe:onyx_ingot",
+            "1:poke_pfe:upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:onyx_chestplate"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:creedite_leggings",
+            "28:poke_pfe:onyx_ingot",
+            "1:poke_pfe:upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:onyx_leggings"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:creedite_boots",
+            "16:poke_pfe:onyx_ingot",
+            "1:poke_pfe:upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:onyx_boots"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:onyx_helmet",
+            "20:poke_pfe:holy_ingot",
+            "1:poke_pfe:diamond_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:holy_helmet"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:onyx_chestplate",
+            "32:poke_pfe:holy_ingot",
+            "1:poke_pfe:diamond_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:holy_chestplate"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:onyx_leggings",
+            "28:poke_pfe:holy_ingot",
+            "1:poke_pfe:diamond_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:holy_leggings"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:onyx_boots",
+            "16:poke_pfe:holy_ingot",
+            "1:poke_pfe:diamond_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:holy_boots"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:onyx_helmet",
+            "20:poke_pfe:hellish_ingot",
+            "1:poke_pfe:diamond_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:hellish_helmet"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:onyx_chestplate",
+            "32:poke_pfe:hellish_ingot",
+            "1:poke_pfe:diamond_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:hellish_chestplate"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:onyx_leggings",
+            "28:poke_pfe:hellish_ingot",
+            "1:poke_pfe:diamond_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:hellish_leggings"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:onyx_boots",
+            "16:poke_pfe:hellish_ingot",
+            "1:poke_pfe:diamond_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:hellish_boots"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:holy_helmet",
+            "1:poke_pfe:knightling_helmet",
+            "20:poke_pfe:godly_ingot",
+            "1:poke_pfe:diamond_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:godly_helmet"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:holy_chestplate",
+            "32:poke_pfe:godly_ingot",
+            "1:poke_pfe:diamond_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:godly_chestplate"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:holy_leggings",
+            "28:poke_pfe:godly_ingot",
+            "1:poke_pfe:diamond_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:godly_leggings"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:holy_boots",
+            "16:poke_pfe:godly_ingot",
+            "1:poke_pfe:diamond_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:godly_boots"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:hellish_helmet",
+            "1:poke_pfe:knightling_helmet",
+            "20:poke_pfe:demonic_ingot",
+            "1:poke_pfe:diamond_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:demonic_helmet"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:hellish_chestplate",
+            "32:poke_pfe:demonic_ingot",
+            "1:poke_pfe:diamond_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:demonic_chestplate"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:hellish_leggings",
+            "28:poke_pfe:demonic_ingot",
+            "1:poke_pfe:diamond_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:demonic_leggings"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:hellish_boots",
+            "16:poke_pfe:demonic_ingot",
+            "1:poke_pfe:diamond_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:demonic_boots"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:godly_helmet",
+            "20:poke_pfe:medic_ingot",
+            "1:poke_pfe:diamond_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:medic_helmet"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:godly_chestplate",
+            "32:poke_pfe:medic_ingot",
+            "1:poke_pfe:diamond_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:medic_chestplate"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:godly_leggings",
+            "28:poke_pfe:medic_ingot",
+            "1:poke_pfe:diamond_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:medic_leggings"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:godly_boots",
+            "16:poke_pfe:medic_ingot",
+            "1:poke_pfe:diamond_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:medic_boots"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:demonic_helmet",
+            "20:poke_pfe:molten_slimeball",
+            "1:poke_pfe:diamond_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:molten_helmet"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:demonic_chestplate",
+            "32:poke_pfe:molten_slimeball",
+            "1:poke_pfe:diamond_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:molten_chestplate"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:demonic_leggings",
+            "28:poke_pfe:molten_slimeball",
+            "1:poke_pfe:diamond_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:molten_leggings"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:demonic_boots",
+            "16:poke_pfe:molten_slimeball",
+            "1:poke_pfe:diamond_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:molten_boots"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:godly_helmet",
+            "20:poke_pfe:galaxy_ingot",
+            "1:poke_pfe:platinum_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:galaxy_helmet"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:godly_chestplate",
+            "32:poke_pfe:galaxy_ingot",
+            "1:poke_pfe:platinum_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:galaxy_chestplate"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:godly_leggings",
+            "28:poke_pfe:galaxy_ingot",
+            "1:poke_pfe:platinum_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:galaxy_leggings"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:godly_boots",
+            "16:poke_pfe:galaxy_ingot",
+            "1:poke_pfe:platinum_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:galaxy_boots"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:demonic_helmet",
+            "20:poke_pfe:void_ingot",
+            "1:poke_pfe:platinum_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:void_helmet"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:demonic_chestplate",
+            "32:poke_pfe:void_ingot",
+            "1:poke_pfe:platinum_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:void_chestplate"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:demonic_leggings",
+            "28:poke_pfe:void_ingot",
+            "1:poke_pfe:platinum_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:void_leggings"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:demonic_boots",
+            "16:poke_pfe:void_ingot",
+            "1:poke_pfe:platinum_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:void_boots"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:galaxy_helmet",
+            "1:poke_pfe:medic_helmet",
+            "20:poke_pfe:astral_ingot",
+            "1:poke_pfe:platinum_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:astral_helmet"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:galaxy_chestplate",
+            "1:poke_pfe:medic_chestplate",
+            "32:poke_pfe:astral_ingot",
+            "1:poke_pfe:platinum_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:astral_chestplate"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:galaxy_leggings",
+            "1:poke_pfe:medic_leggings",
+            "28:poke_pfe:astral_ingot",
+            "1:poke_pfe:platinum_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:astral_leggings"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:galaxy_boots",
+            "1:poke_pfe:medic_boots",
+            "16:poke_pfe:astral_ingot",
+            "1:poke_pfe:platinum_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:astral_boots"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:void_helmet",
+            "1:poke_pfe:molten_helmet",
+            "20:poke_pfe:death_ingot",
+            "1:poke_pfe:platinum_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:death_helmet"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:void_chestplate",
+            "1:poke_pfe:molten_chestplate",
+            "32:poke_pfe:death_ingot",
+            "1:poke_pfe:platinum_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:death_chestplate"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:void_leggings",
+            "1:poke_pfe:molten_leggings",
+            "28:poke_pfe:death_ingot",
+            "1:poke_pfe:platinum_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:death_leggings"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:void_boots",
+            "1:poke_pfe:molten_boots",
+            "16:poke_pfe:death_ingot",
+            "1:poke_pfe:platinum_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:death_boots"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:astral_helmet",
+            "1:poke_pfe:death_helmet",
+            "20:poke_pfe:nebula_ingot",
+            "1:poke_pfe:nebula_core",
+            "1:poke_pfe:platinum_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:nebula_helmet"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:astral_chestplate",
+            "1:poke_pfe:death_chestplate",
+            "32:poke_pfe:nebula_ingot",
+            "1:poke_pfe:nebula_core",
+            "1:poke_pfe:platinum_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:nebula_chestplate"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:astral_leggings",
+            "1:poke_pfe:death_leggings",
+            "28:poke_pfe:nebula_ingot",
+            "1:poke_pfe:nebula_core",
+            "1:poke_pfe:platinum_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:nebula_leggings"
+          ],
+          "keep_item_data_from": 0
+        },
+        {
+          "recipe_type": "transform",
+          "items": [
+            "1:poke_pfe:astral_boots",
+            "1:poke_pfe:death_boots",
+            "16:poke_pfe:nebula_ingot",
+            "1:poke_pfe:nebula_core",
+            "1:poke_pfe:platinum_upgrade_core"
+          ],
+          "result": [
+            "1:poke_pfe:nebula_boots"
+          ],
+          "keep_item_data_from": 0
         }
       ],
       "poke_pfe:recipe_block": {
@@ -28,7 +670,7 @@
         "has_transform_recipes": true,
         "id": "poke_pfe:upgrader",
         "can_store_items": false,
-        "debug_mode": true,
+        "debug_mode": false,
         "name": "%poke_pfe.upgrader"
       },
       "minecraft:destructible_by_mining": {

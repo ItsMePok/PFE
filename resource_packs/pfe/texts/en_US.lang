@@ -1481,3 +1481,6 @@ poke_pfe.death_hoe=Death Hoe
 
 poke_pfe.creedite_shard=Creedite Shard
 poke_pfe.creedite_block=Block of Creedite
+
+poke_pfe.upgrader.description=Upgrades items
+poke_pfe.has_recipes=Has custom recipes

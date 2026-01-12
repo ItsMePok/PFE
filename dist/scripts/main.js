@@ -7936,7 +7936,7 @@ function ViewRecipeInfo(component, player, recipes, block, recipe, storedItems) 
     }
     if (item.amount <= itemTotal) canCraft++;
     const color = item.amount <= itemTotal ? "a" : "c";
-    UI.label({ translate: `- [\xA7${color}${itemTotal}\xA7r/\xA7${color}${item.amount}\xA7r] (\xA79${MakeAddonID(item.item)}\xA7r) %${MakeLocalizationKey(item.item)}` });
+    UI.label({ translate: `${typeof recipe.keep_item_data_from === "number" && requiredItems.at(recipe.keep_item_data_from)?.item == item.item ? "\xA7e-\xA7r" : "-"} [\xA7${color}${itemTotal}\xA7r/\xA7${color}${item.amount}\xA7r] (\xA79${MakeAddonID(item.item)}\xA7r) %${MakeLocalizationKey(item.item)}` });
     amountInfo.push(thisAmountInfo);
   }
   if (canCraft == recipe.items.length) {

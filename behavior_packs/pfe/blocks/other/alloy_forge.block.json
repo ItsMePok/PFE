@@ -15,7 +15,7 @@
 			}
 		},
 		"components": {
-			"minecraft:display_name": "%poke_pfe.alloy_forge\n%poke_pfe.tag",
+			"minecraft:display_name": "%poke_pfe.alloy_forge\n§7%poke_pfe.has_recipes\n%poke_pfe.tag",
 			"minecraft:destruction_particles": {
 				"texture": "poke_pfe_molten_bricks"
 			},
