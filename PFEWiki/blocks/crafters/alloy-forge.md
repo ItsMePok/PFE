@@ -1,5 +1,5 @@
 ---
-description: 'Last updated to match: v1.2.96'
+description: 'Last updated to match: v1.3.0'
 ---
 
 # Alloy Forge
@@ -40,6 +40,10 @@ description: 'Last updated to match: v1.2.96'
 <h2 align="center">8x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/death_ingot.png?raw=true" alt="" data-size="line"> <a href="../../items/ingots/death-ingot.md">Death Ingot</a></h2>
 
 <table data-view="cards"><thead><tr><th>Item</th><th>Amount</th></tr></thead><tbody><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_ingot.png?raw=true" alt="" data-size="line"> <a href="../../items/ingots/onyx-ingot.md">Onyx Ingot</a></td><td>4</td></tr><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_ingot.png?raw=true" alt="" data-size="line"> <a href="../../items/ingots/void-ingot.md">Void Ingot</a></td><td>4</td></tr><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/molten_slimeball.png?raw=true" alt="" data-size="line"> <a href="../../items/ingots/molten-slimeball.md">Molten Slimeball</a></td><td>1</td></tr></tbody></table>
+
+<h2 align="center">8x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/creedite_shard.png?raw=true" alt="" data-size="line"> <a href="../../items/ingots/creedite-shard.md">Creedite Shard</a></h2>
+
+<table data-view="cards"><thead><tr><th>Item</th><th>Amount</th></tr></thead><tbody><tr><td><img src="https://minecraft.wiki/images/Amethyst_Shard_JE2_BE1.png?56555" alt="" data-size="line"> <a href="https://minecraft.wiki/w/Amethyst_Shard">Amethyst Shard</a></td><td>4</td></tr><tr><td><img src="https://minecraft.wiki/images/Nether_Quartz_JE2_BE2.png?d0049" alt="" data-size="line"> <a href="https://minecraft.wiki/w/Nether_Quartz">Nether Quartz</a></td><td>4</td></tr><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_ingot.png?raw=true" alt="" data-size="line"> <a href="../../items/ingots/shade-ingot.md">Shade Ingot</a></td><td>2</td></tr></tbody></table>
 
 </details>
 
