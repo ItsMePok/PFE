@@ -9296,7 +9296,7 @@ function UpdatePost(block, value, up) {
 }
 
 // scripts/main.ts
-var currentVersion = 103001;
+var currentVersion = 103002;
 world11.afterEvents.playerJoin.subscribe(((data) => {
   let birthdays = JSON.parse(world11.getDynamicProperty(`poke_pfe:birthdays`).toString());
   system9.runTimeout(() => {
