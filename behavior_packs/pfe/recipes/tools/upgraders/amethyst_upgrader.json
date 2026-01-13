@@ -17,6 +17,12 @@
 				"item": "amethyst_shard"
 			},
 			{
+				"item": "amethyst_block"
+			},
+			{
+				"item": "poke_pfe:demonic_stick"
+			},
+			{
 				"item": "poke_pfe:diamond_upgrade_core"
 			}
 		],
@@ -34,10 +40,8 @@
 				"item": "poke_pfe:demonic_stick"
 			}
 		},
-		"result": [
-			{
-				"item": "poke_pfe:amethyst_upgrader"
-			}
-		]
+		"result": {
+			"item": "poke_pfe:amethyst_upgrader"
+		}
 	}
 }

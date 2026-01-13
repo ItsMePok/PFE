@@ -4244,7 +4244,7 @@
                                 "description": "The items used in this recipe\n(Amount):(Identifier)",
                                 "items": {
                                   "type": "string",
-                                  "pattern": "^([0-9])[:](.*)[:](.*)"
+                                  "pattern": "^([0-9]*)[:](.*)[:](.*)"
                                 },
                                 "minItems": 1
                               },
@@ -4253,15 +4253,22 @@
                                 "type": "array",
                                 "items": {
                                   "type": "string",
-                                  "pattern": "^([0-9])[:](.*)[:](.*)"
+                                  "pattern": "^([0-9]*)[:](.*)[:](.*)"
                                 },
                                 "minItems": 1
                               },
                               "recipe_type": {
                                 "description": "The type of recipe this is",
                                 "enum": [
-                                  "shapeless"
-                                ]
+                                  "shapeless",
+                                  "upgrade",
+                                  "transform"
+                                ],
+                                "default": "shapeless"
+                              },
+                              "keep_item_data_from": {
+                                "description": "(transform only) Keep the data from the specified item on the result item(s)",
+                                "type": "number"
                               }
                             }
                           },
@@ -4610,7 +4617,7 @@
                           "description": "The items used in this recipe\n(Amount):(Identifier)",
                           "items": {
                             "type": "string",
-                            "pattern": "^([0-9])[:](.*)[:](.*)"
+                            "pattern": "^([0-9]*)[:](.*)[:](.*)"
                           },
                           "minItems": 1
                         },
@@ -4619,15 +4626,22 @@
                           "type": "array",
                           "items": {
                             "type": "string",
-                            "pattern": "^([0-9])[:](.*)[:](.*)"
+                            "pattern": "^([0-9]*)[:](.*)[:](.*)"
                           },
                           "minItems": 1
                         },
                         "recipe_type": {
                           "description": "The type of recipe this is",
                           "enum": [
-                            "shapeless"
-                          ]
+                            "shapeless",
+                            "upgrade",
+                            "transform"
+                          ],
+                          "default": "shapeless"
+                        },
+                        "keep_item_data_from": {
+                          "description": "(transform only) Keep the data from the specified item on the result item(s)",
+                          "type": "number"
                         }
                       }
                     },
@@ -4887,6 +4901,7 @@
     "catmullrom",
     "Cherof",
     "chestboat",
+    "chestplate",
     "Chrysopoeia",
     "clownfish",
     "collidable",
@@ -4908,6 +4923,7 @@
     "eldunknown",
     "enablemcloopback",
     "enablemcpreviewloopback",
+    "Enchantable",
     "featherfall",
     "flipbook",
     "floatingdream",
@@ -4924,6 +4940,7 @@
     "infiniteamethyst",
     "itemframe",
     "jigarbov",
+    "knightling",
     "komorebi",
     "Kumi",
     "lefttobloom",
@@ -4988,6 +5005,7 @@
     "torchflower",
     "trimmable",
     "unhider",
+    "upgrader",
     "westside",
     "wethands",
     "yakusoku",

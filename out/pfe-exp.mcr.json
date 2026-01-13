@@ -4,6 +4,7 @@
       "behaviorPack",
       "functions",
       "resourcePack",
+      "scripting",
       "vvfiles"
     ],
     "behaviorPackManifestCount": 0,
@@ -16,12 +17,12 @@
     "entityTypeResourceCount": 0,
     "behaviorPackAnimationCount": 0,
     "behaviorPackAnimationControllerCount": 0,
-    "overallSize": 8842726,
-    "fileCounts": 4675,
-    "folderCounts": 375,
-    "contentSize": 6549099,
-    "contentFileCounts": 4612,
-    "contentFolderCounts": 359,
+    "overallSize": 38295431,
+    "fileCounts": 18706,
+    "folderCounts": 1460,
+    "contentSize": 27605997,
+    "contentFileCounts": 18635,
+    "contentFolderCounts": 1443,
     "minBehaviorPackMinEngineVersion": 0,
     "minResourcePackMinEngineVersion": 0,
     "subpackCount": 0,
@@ -29,7 +30,7 @@
     "blockTypeComponents": [],
     "itemTypeComponents": [],
     "apisUsed": [],
-    "mctoolsVersion": 10014004,
+    "mctoolsVersion": 10015002,
     "itemTypes": [
       "Animation",
       "Animation controller",
@@ -53,12 +54,16 @@
       "Image",
       "Item texture",
       "Item type",
+      "JavaScript",
       "Jigsaw Processor List",
+      "Jigsaw Structure Set",
       "Jigsaw Template Pool",
       "Just config",
       "Language catalog",
       "Language translations",
       "Loot table",
+      "Minecraft addon",
+      "Minecraft pack",
       "Model",
       "NPM package definition",
       "Particle",
@@ -77,6 +82,7 @@
       "Trading",
       "TypeScript",
       "TypeScript config",
+      "Unknown",
       "VS Code extensions",
       "VS Code launch file",
       "VS Code settings",
@@ -96,7 +102,7 @@
     "multipleSoundsManifests": 0,
     "soundsDefinitionManifestFormatIsValid": 0,
     "soundsDefinitionManifestIsNotValidJson": 0,
-    "flagIsOrWasTrue": 0,
+    "experimentalFlagIsOrWasTrue": 0,
     "levelDatNotFound": 0,
     "worldNotFound": 0,
     "deprecatedBlockOverride": 0,
@@ -116,102 +122,103 @@
     "minBaseGameVersion": 0,
     "chunkCount": 0,
     "subchunkLessChunkCount": 0,
+    "completedWorldDataProcessing": true,
     "worldLoadErrors": 0,
     "commands": [
       "tag"
     ],
     "featureSets": {
-      "Textures Block Resource Count": {
-        "Count": 17
+      "textures.blockResourceCount": {
+        "count": 34
       },
-      "Textures Attachable Resource Count": {
-        "Count": 233
+      "textures.attachableResourceCount": {
+        "count": 466
       },
-      "Textures Texture References": {
-        "Count": 989
+      "textures.textureReferences": {
+        "count": 1978
       },
-      "Textures Attachable References": {
-        "Count": 839
+      "textures.attachableReferences": {
+        "count": 1678
       },
-      "Textures Entity Resource Count": {
-        "Count": 67
+      "textures.entityResourceCount": {
+        "count": 134
       },
-      "Textures Entity References": {
-        "Count": 150
+      "textures.entityReferences": {
+        "count": 300
       },
-      "Textures Flipbook Texture Resource Count": {
-        "Count": 3
+      "textures.flipbookTextureResourceCount": {
+        "count": 6
       },
-      "Textures Item Texture Resource Count": {
-        "Count": 1
+      "textures.itemTextureResourceCount": {
+        "count": 2
       },
-      "Textures Terrain Texture Resource Count": {
-        "Count": 302
+      "textures.terrainTextureResourceCount": {
+        "count": 606
       },
-      "Textures File Count": {
-        "Count": 1382
+      "textures.fileCount": {
+        "count": 2827
       },
-      "Textures Unique Texture Handles (estimated)": {
-        "Count": 358
+      "textures.uniqueTextureHandlesEstimated": {
+        "count": 358
       },
-      "Textures Unique Texture Paths": {
-        "Count": 373
+      "textures.uniqueTexturePaths": {
+        "count": 374
       },
-      "Textures Unique Particle Texture References": {
-        "Count": 25
+      "textures.uniqueParticleTextureReferences": {
+        "count": 25
       },
-      "Textures Unique Particle Texture Paths": {
-        "Count": 2
+      "textures.uniqueParticleTexturePaths": {
+        "count": 2
       },
-      "Textures Unique Particle Texture Vanilla Paths": {
-        "Count": 2
+      "textures.uniqueParticleTextureVanillaPaths": {
+        "count": 2
       },
-      "Textures Unique Entity Texture Paths": {
-        "Count": 114
+      "textures.uniqueEntityTexturePaths": {
+        "count": 114
       },
-      "Textures Unique Entity Texture Vanilla Paths": {
-        "Count": 28
+      "textures.uniqueEntityTextureVanillaPaths": {
+        "count": 28
       },
-      "Textures Unique Attachable Texture References": {
-        "Count": 241
+      "textures.uniqueAttachableTextureReferences": {
+        "count": 241
       },
-      "Textures Unique Terrain Texture References": {
-        "Count": 302
+      "textures.uniqueTerrainTextureReferences": {
+        "count": 303
       },
-      "Textures Unique Terrain Texture Paths": {
-        "Count": 186
+      "textures.uniqueTerrainTexturePaths": {
+        "count": 187
       },
-      "Textures Unique Item Texture Paths": {
-        "Count": 721
+      "textures.uniqueItemTexturePaths": {
+        "count": 752
       },
-      "Textures Unique Flipbook Texture References": {
-        "Count": 3
+      "textures.uniqueFlipbookTextureReferences": {
+        "count": 3
       },
-      "Textures Unique Flipbook Texture Paths": {
-        "Count": 3
+      "textures.uniqueFlipbookTexturePaths": {
+        "count": 3
       },
-      "Textures Unique Block Texture References": {
-        "Count": 17
+      "textures.uniqueBlockTextureReferences": {
+        "count": 17
       },
-      "Textures Unique Block Texture Paths": {
-        "Count": 17
+      "textures.uniqueBlockTexturePaths": {
+        "count": 17
       },
-      "Command tag": {
-        "Count": 1
+      "command.tag": {
+        "count": 2
       }
     },
-    "errorCount": 27,
+    "errorCount": 55,
     "internalProcessingErrorCount": 0,
     "warningCount": 0,
-    "testSuccessCount": 5,
-    "testFailCount": 2,
+    "testSuccessCount": 4,
+    "testFailCount": 3,
     "testNotApplicableCount": 0,
-    "errorSummary": "ERROR: [CADDONREQ101] Found a loose file in the font folder. Should only see files in the folder font\\creatorshortname\\gamename\\: glyph_F0.png\nERROR: [CADDONREQ102] Found an cooperative add-on common name folder 'structures' in a parent folder pack\\worldgen. Should be named 'creatorshortname' and not a common term: structures\nERROR: [STRICT101] (/behavior_packs/pfe/entities/hostile/piranha.behavior.json) Uses a runtime_identifier override: minecraft:cod\nERROR: [STRICT101] (/behavior_packs/pfe/entities/hostile/sculk_enderman.behavior.json) Uses a runtime_identifier override: minecraft:enderman\nERROR: [STRICT101] (/behavior_packs/pfe/entities/hostile/woodspike_guardian.behavior.json) Uses a runtime_identifier override: minecraft:guardian\nERROR: [STRICT101] (/behavior_packs/pfe/entities/misc/dummy_block.behavior.json) Uses a runtime_identifier override: minecraft:snowball\nERROR: [STRICT101] (/behavior_packs/pfe/entities/misc/mail_cart.behavior.json) Uses a runtime_identifier override: minecraft:chest_minecart\nERROR: [STRICT101] (/behavior_packs/pfe/entities/misc/seat.behavior.json) Uses a runtime_identifier override: minecraft:snowball\nERROR: [STRICT101] (/behavior_packs/pfe/entities/passive/brown_sporefish.behavior.json) Uses a runtime_identifier override: minecraft:cod\nERROR: [STRICT101] (/behavior_packs/pfe/entities/passive/duck.behavior.json) Uses a runtime_identifier override: minecraft:chicken\nERROR: [STRICT101] (/behavior_packs/pfe/entities/passive/gilded_allay.behavior.json) Uses a runtime_identifier override: minecraft:allay\nERROR: [STRICT101] (/behavior_packs/pfe/entities/passive/orange_squid.behavior.json) Uses a runtime_identifier override: minecraft:squid\nERROR: [STRICT101] (/behavior_packs/pfe/entities/passive/pink_squid.behavior.json) Uses a runtime_identifier override: minecraft:squid\nERROR: [STRICT101] (/behavior_packs/pfe/entities/passive/rat.behavior.json) Uses a runtime_identifier override: minecraft:allay\nERROR: [STRICT101] (/behavior_packs/pfe/entities/passive/red_sporefish.behavior.json) Uses a runtime_identifier override: minecraft:cod",
+    "errorSummary": "ERROR: [CADDONREQ101] Found a loose file in the font folder. Should only see files in the folder font\\creatorshortname\\gamename\\: glyph_F0.png\nERROR: [CADDONREQ102] Found an cooperative add-on common name folder 'structures' in a parent folder pack\\worldgen. Should be named 'creatorshortname' and not a common term: structures\nERROR: [CADDONREQ160] (/behavior_packs/pfe/manifest.json) Found more than one behavior pack manifest in a cooperative add-on, which is not a best practice\nERROR: [CADDONREQ161] (/resource_packs/pfe/manifest.json) Found more than one resource pack manifest in a cooperative add-on, which is not a best practice\nERROR: [PACKSIZE401] Exceeds Recommended Addon Size: 27605997\nERROR: [STRICT101] (/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/entities/hostile/piranha.behavior.json) Uses a runtime_identifier override: minecraft:cod\nERROR: [STRICT101] (/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/entities/hostile/sculk_enderman.behavior.json) Uses a runtime_identifier override: minecraft:enderman\nERROR: [STRICT101] (/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/entities/hostile/woodspike_guardian.behavior.json) Uses a runtime_identifier override: minecraft:guardian\nERROR: [STRICT101] (/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/entities/misc/dummy_block.behavior.json) Uses a runtime_identifier override: minecraft:snowball\nERROR: [STRICT101] (/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/entities/misc/mail_cart.behavior.json) Uses a runtime_identifier override: minecraft:chest_minecart\nERROR: [STRICT101] (/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/entities/misc/seat.behavior.json) Uses a runtime_identifier override: minecraft:snowball\nERROR: [STRICT101] (/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/entities/passive/brown_sporefish.behavior.json) Uses a runtime_identifier override: minecraft:cod\nERROR: [STRICT101] (/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/entities/passive/duck.behavior.json) Uses a runtime_identifier override: minecraft:chicken\nERROR: [STRICT101] (/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/entities/passive/gilded_allay.behavior.json) Uses a runtime_identifier override: minecraft:allay\nERROR: [STRICT101] (/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/entities/passive/orange_squid.behavior.json) Uses a runtime_identifier override: minecraft:squid",
     "internalProcessingErrorSummary": "",
     "warningSummary": "",
-    "testFailSummary": "TESTFAIL: [CADDONREQ000] Found 2 errors for Cooperative Add-On Requirements (CADDONREQ).\nTESTFAIL: [STRICT000] Found 25 errors for Strict Platform Info Generator (STRICT).",
-    "infoGenerationTime": 5497,
-    "endToEndGenerationTime": 13401,
+    "testFailSummary": "TESTFAIL: [CADDONREQ000] Found 4 errors for Cooperative Add-On Requirements (CADDONREQ).\nTESTFAIL: [PACKSIZE000] Found 1 errors for Pack Size Information (PACKSIZE).\nTESTFAIL: [STRICT000] Found 50 errors for Strict Platform Info Generator (STRICT).",
+    "infoGenerationTime": 10376,
+    "endToEndGenerationTime": 35283,
     "summary": {
       "CADDONIREQ": {
         "1": {
@@ -222,7 +229,7 @@
       "CADDONREQ": {
         "0": {
           "title": "Test Failure",
-          "defaultMessage": "Found 2 errors for Cooperative Add-On Requirements (CADDONREQ).",
+          "defaultMessage": "Found 4 errors for Cooperative Add-On Requirements (CADDONREQ).",
           "testCompleteFails": 1
         },
         "101": {
@@ -233,6 +240,16 @@
         "102": {
           "title": "No Common Names In Creator Folder Name",
           "defaultMessage": "Found an cooperative add-on common name folder 'structures' in a parent folder pack\\worldgen. Should be named 'creatorshortname' and not a common term",
+          "errors": 1
+        },
+        "160": {
+          "title": "Not One Behavior Pack Manifest",
+          "defaultMessage": "Found more than one behavior pack manifest in a cooperative add-on, which is not a best practice",
+          "errors": 1
+        },
+        "161": {
+          "title": "Not One Resource Pack Manifest",
+          "defaultMessage": "Found more than one resource pack manifest in a cooperative add-on, which is not a best practice",
           "errors": 1
         },
         "200": {
@@ -256,10 +273,10 @@
         }
       },
       "PACKSIZE": {
-        "1": {
-          "title": "Test Success",
-          "defaultMessage": "Pack Size Information (PACKSIZE) completed successfully",
-          "testCompleteSuccesses": 1
+        "0": {
+          "title": "Test Failure",
+          "defaultMessage": "Found 1 errors for Pack Size Information (PACKSIZE).",
+          "testCompleteFails": 1
         },
         "101": {
           "title": "Overall Size"
@@ -278,18 +295,22 @@
         },
         "106": {
           "title": "Content Folder Count"
+        },
+        "401": {
+          "title": "Exceeds Recommended Addon Size",
+          "errors": 1
         }
       },
       "STRICT": {
         "0": {
           "title": "Test Failure",
-          "defaultMessage": "Found 25 errors for Strict Platform Info Generator (STRICT).",
+          "defaultMessage": "Found 50 errors for Strict Platform Info Generator (STRICT).",
           "testCompleteFails": 1
         },
         "101": {
           "title": "Entity Type UsesAMinecraft Runtime Identifier",
           "defaultMessage": "Uses a runtime_identifier override",
-          "errors": 25
+          "errors": 50
         }
       },
       "TEXTURE": {
@@ -352,10 +373,22 @@
       "d": "structures"
     },
     {
+      "iTp": 3,
+      "gId": "CADDONREQ",
+      "gIx": 160,
+      "p": "/behavior_packs/pfe/manifest.json"
+    },
+    {
+      "iTp": 3,
+      "gId": "CADDONREQ",
+      "gIx": 161,
+      "p": "/resource_packs/pfe/manifest.json"
+    },
+    {
       "iTp": 2,
       "gId": "CADDONREQ",
       "gIx": 200,
-      "p": "/behavior_packs/pfe/manifest.json"
+      "p": "/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/manifest.json"
     },
     {
       "iTp": 1,
@@ -366,11 +399,33 @@
       "iTp": 2,
       "gId": "MINENGINEVER",
       "gIx": 605,
+      "p": "/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/manifest.json",
+      "d": [
+        1,
+        21,
+        130
+      ]
+    },
+    {
+      "iTp": 2,
+      "gId": "MINENGINEVER",
+      "gIx": 605,
       "p": "/behavior_packs/pfe/manifest.json",
       "d": [
         1,
         21,
-        110
+        130
+      ]
+    },
+    {
+      "iTp": 2,
+      "gId": "MINENGINEVER",
+      "gIx": 614,
+      "p": "/PFE_v1_3_01.mcaddon#/pfe_rp.mcpack#/manifest.json",
+      "d": [
+        1,
+        21,
+        130
       ]
     },
     {
@@ -381,54 +436,235 @@
       "d": [
         1,
         21,
-        110
+        130
       ]
     },
     {
-      "iTp": 1,
+      "iTp": 0,
       "gId": "PACKSIZE",
-      "gIx": 1
+      "gIx": 0
     },
     {
       "iTp": 7,
       "gId": "PACKSIZE",
       "gIx": 101,
-      "d": 8842726
+      "d": 38295431
     },
     {
       "iTp": 7,
       "gId": "PACKSIZE",
       "gIx": 102,
-      "d": 4675
+      "d": 18706
     },
     {
       "iTp": 7,
       "gId": "PACKSIZE",
       "gIx": 103,
-      "d": 375
+      "d": 1460
     },
     {
       "iTp": 7,
       "gId": "PACKSIZE",
       "gIx": 104,
-      "d": 6549099
+      "d": 27605997
     },
     {
       "iTp": 7,
       "gId": "PACKSIZE",
       "gIx": 105,
-      "d": 4612
+      "d": 18635
     },
     {
       "iTp": 7,
       "gId": "PACKSIZE",
       "gIx": 106,
-      "d": 359
+      "d": 1443
+    },
+    {
+      "iTp": 3,
+      "gId": "PACKSIZE",
+      "gIx": 401,
+      "d": 27605997
     },
     {
       "iTp": 0,
       "gId": "STRICT",
       "gIx": 0
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/entities/hostile/piranha.behavior.json",
+      "d": "minecraft:cod"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/entities/hostile/sculk_enderman.behavior.json",
+      "d": "minecraft:enderman"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/entities/hostile/woodspike_guardian.behavior.json",
+      "d": "minecraft:guardian"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/entities/misc/dummy_block.behavior.json",
+      "d": "minecraft:snowball"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/entities/misc/mail_cart.behavior.json",
+      "d": "minecraft:chest_minecart"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/entities/misc/seat.behavior.json",
+      "d": "minecraft:snowball"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/entities/passive/brown_sporefish.behavior.json",
+      "d": "minecraft:cod"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/entities/passive/duck.behavior.json",
+      "d": "minecraft:chicken"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/entities/passive/gilded_allay.behavior.json",
+      "d": "minecraft:allay"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/entities/passive/orange_squid.behavior.json",
+      "d": "minecraft:squid"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/entities/passive/pink_squid.behavior.json",
+      "d": "minecraft:squid"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/entities/passive/rat.behavior.json",
+      "d": "minecraft:allay"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/entities/passive/red_sporefish.behavior.json",
+      "d": "minecraft:cod"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/entities/passive/shallow_cod.behavior.json",
+      "d": "minecraft:cod"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/entities/passive/shroomfin.behavior.json",
+      "d": "minecraft:dolphin"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/entities/passive/sporefish.behavior.json",
+      "d": "minecraft:cod"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/entities/passive/warped_sporecat.behavior.json",
+      "d": "minecraft:cat"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/entities/passive/woods_goat.behavior.json",
+      "d": "minecraft:goat"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/entities/projectiles/blaze_ring_proj.behavior.json",
+      "d": "minecraft:fireball"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/entities/projectiles/dragon_ring_proj.behavior.json",
+      "d": "minecraft:dragon_fireball"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/entities/projectiles/duck_egg.behavior.json",
+      "d": "minecraft:egg"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/entities/projectiles/necromancer_staff_orb.behavior.json",
+      "d": "minecraft:arrow"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/entities/projectiles/shade_ring_projectile.behavior.json",
+      "d": "minecraft:ender_pearl"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/entities/projectiles/shuriken.behavior.json",
+      "d": "minecraft:snowball"
+    },
+    {
+      "iTp": 3,
+      "gId": "STRICT",
+      "gIx": 101,
+      "p": "/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/entities/projectiles/warp_ring_projectile.behavior.json",
+      "d": "minecraft:ender_pearl"
     },
     {
       "iTp": 3,
@@ -615,80 +851,80 @@
       "gId": "TEXTURE",
       "gIx": 101,
       "fs": {
-        "Block Resource Count": {
-          "Count": 17
+        "blockResourceCount": {
+          "count": 34
         },
-        "Attachable Resource Count": {
-          "Count": 233
+        "attachableResourceCount": {
+          "count": 466
         },
-        "Texture References": {
-          "Count": 989
+        "textureReferences": {
+          "count": 1978
         },
-        "Attachable References": {
-          "Count": 839
+        "attachableReferences": {
+          "count": 1678
         },
-        "Entity Resource Count": {
-          "Count": 67
+        "entityResourceCount": {
+          "count": 134
         },
-        "Entity References": {
-          "Count": 150
+        "entityReferences": {
+          "count": 300
         },
-        "Flipbook Texture Resource Count": {
-          "Count": 3
+        "flipbookTextureResourceCount": {
+          "count": 6
         },
-        "Item Texture Resource Count": {
-          "Count": 1
+        "itemTextureResourceCount": {
+          "count": 2
         },
-        "Terrain Texture Resource Count": {
-          "Count": 302
+        "terrainTextureResourceCount": {
+          "count": 606
         },
-        "File Count": {
-          "Count": 1382
+        "fileCount": {
+          "count": 2827
         },
-        "Unique Texture Handles (estimated)": {
-          "Count": 358
+        "uniqueTextureHandlesEstimated": {
+          "count": 358
         },
-        "Unique Texture Paths": {
-          "Count": 373
+        "uniqueTexturePaths": {
+          "count": 374
         },
-        "Unique Particle Texture References": {
-          "Count": 25
+        "uniqueParticleTextureReferences": {
+          "count": 25
         },
-        "Unique Particle Texture Paths": {
-          "Count": 2
+        "uniqueParticleTexturePaths": {
+          "count": 2
         },
-        "Unique Particle Texture Vanilla Paths": {
-          "Count": 2
+        "uniqueParticleTextureVanillaPaths": {
+          "count": 2
         },
-        "Unique Entity Texture Paths": {
-          "Count": 114
+        "uniqueEntityTexturePaths": {
+          "count": 114
         },
-        "Unique Entity Texture Vanilla Paths": {
-          "Count": 28
+        "uniqueEntityTextureVanillaPaths": {
+          "count": 28
         },
-        "Unique Attachable Texture References": {
-          "Count": 241
+        "uniqueAttachableTextureReferences": {
+          "count": 241
         },
-        "Unique Terrain Texture References": {
-          "Count": 302
+        "uniqueTerrainTextureReferences": {
+          "count": 303
         },
-        "Unique Terrain Texture Paths": {
-          "Count": 186
+        "uniqueTerrainTexturePaths": {
+          "count": 187
         },
-        "Unique Item Texture Paths": {
-          "Count": 721
+        "uniqueItemTexturePaths": {
+          "count": 752
         },
-        "Unique Flipbook Texture References": {
-          "Count": 3
+        "uniqueFlipbookTextureReferences": {
+          "count": 3
         },
-        "Unique Flipbook Texture Paths": {
-          "Count": 3
+        "uniqueFlipbookTexturePaths": {
+          "count": 3
         },
-        "Unique Block Texture References": {
-          "Count": 17
+        "uniqueBlockTextureReferences": {
+          "count": 17
         },
-        "Unique Block Texture Paths": {
-          "Count": 17
+        "uniqueBlockTexturePaths": {
+          "count": 17
         }
       }
     },
@@ -701,7 +937,19 @@
       "iTp": 7,
       "gId": "WORLDDATA",
       "gIx": 121,
+      "p": "/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/become_event_manager.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 121,
       "p": "/behavior_packs/pfe/functions/poke/pfe/become_event_manager.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 122,
+      "p": "/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/become_event_manager.mcfunction"
     },
     {
       "iTp": 7,
@@ -713,12 +961,29 @@
       "iTp": 7,
       "gId": "WORLDDATA",
       "gIx": 123,
+      "p": "/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/become_event_manager.mcfunction",
+      "fs": {
+        "tag": {
+          "count": 1
+        }
+      }
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 123,
       "p": "/behavior_packs/pfe/functions/poke/pfe/become_event_manager.mcfunction",
       "fs": {
         "tag": {
-          "Count": 1
+          "count": 1
         }
       }
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 124,
+      "p": "/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/become_event_manager.mcfunction"
     },
     {
       "iTp": 7,
@@ -730,7 +995,19 @@
       "iTp": 7,
       "gId": "WORLDDATA",
       "gIx": 125,
+      "p": "/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/become_event_manager.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 125,
       "p": "/behavior_packs/pfe/functions/poke/pfe/become_event_manager.mcfunction"
+    },
+    {
+      "iTp": 7,
+      "gId": "WORLDDATA",
+      "gIx": 126,
+      "p": "/PFE_v1_3_01.mcaddon#/pfe_bp.mcpack#/functions/poke/pfe/become_event_manager.mcfunction"
     },
     {
       "iTp": 7,
@@ -741,5 +1018,5 @@
   ],
   "generatorName": "Minecraft Creator Tools",
   "suite": 2,
-  "generatorVersion": "0.14.4"
+  "generatorVersion": "0.15.2"
 }

@@ -15,11 +15,22 @@
 			}
 		},
 		"components": {
-			"minecraft:display_name": "%poke_pfe.alloy_forge\n%poke_pfe.tag",
+			"minecraft:display_name": "%poke_pfe.alloy_forge\n§7%poke_pfe.has_recipes\n%poke_pfe.tag",
 			"minecraft:destruction_particles": {
 				"texture": "poke_pfe_molten_bricks"
 			},
 			"poke_pfe:custom_recipes": [
+				{
+					"items": [
+						"4:minecraft:amethyst_shard",
+						"4:minecraft:quartz",
+						"2:poke_pfe:shade_ingot"
+					],
+					"result": [
+						"8:poke_pfe:creedite_shard"
+					],
+					"recipe_type": "shapeless"
+				},
 				{
 					"items": [
 						"4:poke_pfe:shade_ingot",

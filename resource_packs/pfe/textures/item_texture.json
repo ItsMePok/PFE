@@ -879,8 +879,8 @@
 		"poke_pfe_godly_stick": {
 			"textures": "textures/poke/pfe/godly_stick"
 		},
-		"poke_pfe_onyx_shaft": {
-			"textures": "textures/poke/pfe/onyx_shaft"
+		"poke_pfe_onyx_stick": {
+			"textures": "textures/poke/pfe/onyx_stick"
 		},
 		"poke_pfe_demonic_stick": {
 			"textures": "textures/poke/pfe/demonic_stick"

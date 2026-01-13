@@ -8,7 +8,7 @@ import { PFECustomCraftQuestsPropertyID, PFECustomFarmQuestsPropertyID, PFECusto
 import ComputersCompat, { initExampleStickers } from "./addonCompatibility/jigarbov";
 import { RegisterItemComponents } from "./custom_components/item_custom_components";
 import { RegisterBlockComponents } from "./custom_components/block_custom_components";
-const currentVersion = 103001 // PFE Version (ex: 103062 = v1.3.62)
+const currentVersion = 103002 // PFE Version (ex: 103062 = v1.3.62)
 
 world.afterEvents.playerJoin.subscribe((data => {
     let birthdays: PokeBirthdays[] = JSON.parse(world.getDynamicProperty(`poke_pfe:birthdays`)!.toString())

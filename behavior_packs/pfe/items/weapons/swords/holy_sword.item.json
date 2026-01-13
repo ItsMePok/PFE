@@ -46,7 +46,8 @@
 				"repair_items": [
 					{
 						"items": [
-							"poke_pfe:repair_core"
+							"poke_pfe:repair_core",
+							"poke_pfe:holy_block"
 						],
 						"repair_amount": "query.max_durability"
 					},

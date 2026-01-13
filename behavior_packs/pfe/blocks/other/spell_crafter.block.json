@@ -15,7 +15,7 @@
 			}
 		},
 		"components": {
-			"minecraft:display_name": "%poke_pfe.spell_crafter\n%poke_pfe.tag",
+			"minecraft:display_name": "%poke_pfe.spell_crafter\n§7%poke_pfe.has_recipes\n%poke_pfe.tag",
 			"poke_pfe:custom_recipes": [
 				{
 					"recipe_type": "shapeless",

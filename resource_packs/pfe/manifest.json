@@ -1,9 +1,9 @@
 {
 	"header": {
-		"name": "v1.3.01 PFE RP",
+		"name": "v1.3.02 PFE RP",
 		"description": "Wiki: https:pfewiki.gitbook.io/home",
 		"pack_scope": "any",
-		"uuid": "b2539b9a-b8b3-4864-ac78-a1aa051b28ab",
+		"uuid": "455617ad-8f16-4cd7-b51d-f8fa47b6f816",
 		"version": [
 			1,
 			3,
@@ -29,11 +29,11 @@
 	],
 	"dependencies": [
 		{ //BP Manifest
-			"uuid": "9a69f911-6668-4e08-ba47-372391736832",
+			"uuid": "198e25bc-1407-45bb-97b2-027cf93ab260",
 			"version": [
 				1,
 				3,
-				1
+				2
 			]
 		}
 	],

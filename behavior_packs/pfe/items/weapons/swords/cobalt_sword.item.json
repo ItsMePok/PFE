@@ -71,7 +71,8 @@
 					},
 					{
 						"items": [
-							"poke_pfe:repair_core"
+							"poke_pfe:repair_core",
+							"poke_pfe:cobalt_block"
 						],
 						"repair_amount": "query.max_durability"
 					},

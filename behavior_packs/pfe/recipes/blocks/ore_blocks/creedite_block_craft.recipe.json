@@ -1,0 +1,43 @@
+{
+	"format_version": "1.20.60",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "poke_pfe:creedite_block_craft"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": [
+			{
+				"item": "poke_pfe:creedite_shard"
+			},
+			{
+				"item": "minecraft:netherite_sword"
+			},
+			{
+				"item": "minecraft:netherite_helmet"
+			},
+			{
+				"item": "minecraft:netherite_boots"
+			},
+			{
+				"item": "minecraft:netherite_chestplate"
+			},
+			{
+				"item": "minecraft:netherite_leggings"
+			}
+		],
+		"pattern": [
+			"##",
+			"##"
+		],
+		"key": {
+			"#": {
+				"item": "poke_pfe:creedite_shard"
+			}
+		},
+		"result": {
+			"item": "poke_pfe:creedite_block"
+		}
+	}
+}

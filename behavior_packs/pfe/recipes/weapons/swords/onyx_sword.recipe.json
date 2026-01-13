@@ -15,6 +15,18 @@
 		"unlock": [
 			{
 				"item": "poke_pfe:onyx_ingot"
+			},
+			{
+				"item": "poke_pfe:onyx_block"
+			},
+			{
+				"item": "poke_pfe:raw_onyx"
+			},
+			{
+				"item": "poke_pfe:onyx_nugget"
+			},
+			{
+				"item": "poke_pfe:creedite_sword"
 			}
 		],
 		"key": {
