@@ -47,17 +47,17 @@ description: 'Last updated to match: v1.2.91'
 {% tab title="Crafting" %}
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-|                                                                                                   |                                                                                                                                         |                                                                                                   |
-| :-----------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: |
-| ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true) |                    ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true)                    | ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true) |
-| ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true) |                  ![Upgrade Core.](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/upgrade_core.png?raw=true)                   | ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true) |
+|                                                                                                   |                                                                                                                                               |                                                                                                   |
+| :-----------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: |
+| ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true) |                       ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true)                       | ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true) |
+| ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true) |                      ![Upgrade Core.](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/upgrade_core.png?raw=true)                     | ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true) |
 | ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true) | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/amethyst_helmet.png?raw=true" alt="Amethyst Helmet." data-size="original"> | ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true) |
 
 Items:
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true" alt="Onyx Block." data-size="line"> [Block of Onyx](../../blocks/ore-blocks/block-of-onyx.md)
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/upgrade_core.png?raw=true" alt="Upgrade Core." data-size="line"> [Upgrade Core](../../items/cores/upgrade-core.md)
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/amethyst_helmet.png?raw=true" alt="Amethyst Helmet." data-size="line"> [Amethyst Helmet](amethyst-armor.md#amethyst-helmet)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/amethyst_helmet.png?raw=true" alt="Amethyst Helmet." data-size="line"> [Amethyst Helmet](/broken/pages/ALKVnqvy7QWECq0jkUwr#amethyst-helmet)
 
 Outputs:
 
@@ -101,17 +101,17 @@ Outputs:
 {% tab title="First Tab" %}
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-|                                                                                                   |                                                                                                                                            |                                                                                                   |
-| :-----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: |
-| ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true) |                     ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true)                      | ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true) |
-| ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true) |                    ![Upgrade Core.](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/upgrade_core.png?raw=true)                    | ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true) |
+|                                                                                                   |                                                                                                                                                      |                                                                                                   |
+| :-----------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: |
+| ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true) |                           ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true)                          | ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true) |
+| ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true) |                         ![Upgrade Core.](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/upgrade_core.png?raw=true)                         | ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true) |
 | ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true) | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/amethyst_chestplate.png?raw=true" alt="Amethyst Chestplate" data-size="original"> | ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true) |
 
 Items:
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true" alt="Onyx Block." data-size="line"> [Block of Onyx](../../blocks/ore-blocks/block-of-onyx.md)
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/upgrade_core.png?raw=true" alt="Upgrade Core." data-size="line"> [Upgrade Core](../../items/cores/upgrade-core.md)
-* &#x20;<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/amethyst_chestplate.png?raw=true" alt="Amethyst Chestplate" data-size="line"> [Amethyst Chestplate](amethyst-armor.md#amethyst-chestplate)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/amethyst_chestplate.png?raw=true" alt="Amethyst Chestplate" data-size="line"> [Amethyst Chestplate](/broken/pages/ALKVnqvy7QWECq0jkUwr#amethyst-chestplate)
 
 Outputs:
 
@@ -155,17 +155,17 @@ Outputs:
 {% tab title="First Tab" %}
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-|                                                                                                   |                                                                                                                                           |                                                                                                   |
-| :-----------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: |
-| ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true) |                     ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true)                     | ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true) |
-| ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true) |                   ![Upgrade Core.](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/upgrade_core.png?raw=true)                    | ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true) |
+|                                                                                                   |                                                                                                                                                   |                                                                                                   |
+| :-----------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: |
+| ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true) |                         ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true)                         | ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true) |
+| ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true) |                        ![Upgrade Core.](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/upgrade_core.png?raw=true)                       | ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true) |
 | ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true) | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/amethyst_leggings.png?raw=true" alt="Amethyst Leggings." data-size="original"> | ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true) |
 
 Items:
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true" alt="Onyx Block." data-size="line"> [Block of Onyx](../../blocks/ore-blocks/block-of-onyx.md)
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/upgrade_core.png?raw=true" alt="Upgrade Core." data-size="line"> [Upgrade Core](../../items/cores/upgrade-core.md)
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/amethyst_leggings.png?raw=true" alt="Amethyst Leggings." data-size="line"> [Amethyst Leggings](amethyst-armor.md#amethyst-leggings)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/amethyst_leggings.png?raw=true" alt="Amethyst Leggings." data-size="line"> [Amethyst Leggings](/broken/pages/ALKVnqvy7QWECq0jkUwr#amethyst-leggings)
 
 Outputs:
 
@@ -212,14 +212,14 @@ Outputs:
 |                                                                                                   |                                                                                                                                             |                                                                                                   |
 | :-----------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: |
 | ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true) |                      ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true)                      | ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true) |
-| ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true) |                    ![Upgrade Core.](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/upgrade_core.png?raw=true)                     | ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true) |
+| ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true) |                     ![Upgrade Core.](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/upgrade_core.png?raw=true)                    | ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true) |
 | ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true) | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/amethyst_boots.png?raw=true" alt="Amethyst Boots." data-size="original"> | ![Onyx Block.](https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true) |
 
 Items:
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/OreBlocks/onyx_block.png?raw=true" alt="Onyx Block." data-size="line"> [Block of Onyx](../../blocks/ore-blocks/block-of-onyx.md)
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/upgrade_core.png?raw=true" alt="Upgrade Core." data-size="line"> [Upgrade Core](../../items/cores/upgrade-core.md)
-* &#x20;<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/amethyst_boots.png?raw=true" alt="Amethyst Boots." data-size="line"> [Amethyst Boots](amethyst-armor.md#amethyst-boots)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/amethyst_boots.png?raw=true" alt="Amethyst Boots." data-size="line"> [Amethyst Boots](/broken/pages/ALKVnqvy7QWECq0jkUwr#amethyst-boots)
 
 Outputs:
 
@@ -229,10 +229,6 @@ Outputs:
 
 [^1]: Set effects are added with 1 level per piece equipped
 
-
-
     A set effect's amplifier cannot exceed the highest maximum of all armor equipped
-
-
 
     This means even if the helmet of your armor only lets you have a maximum Haste of 2 and your chestplate has a max of 4 it could exceed 2 (if you have enough pieces that give haste)

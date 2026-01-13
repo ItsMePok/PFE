@@ -506,7 +506,7 @@
     * [Volt Arrow](weapons/arrows/volt-arrow.md)
 * [Armor](armor/README.md)
   * [Full Armor Sets](armor/full-armor-sets/README.md)
-    * [Amethyst Armor](armor/full-armor-sets/amethyst-armor.md)
+    * [Creedite Armor](armor/full-armor-sets/creedite-armor.md)
     * [Onyx Armor](armor/full-armor-sets/onyx-armor.md)
     * [Hellish Armor](armor/full-armor-sets/hellish-armor.md)
     * [Holy Armor](armor/full-armor-sets/holy-armor.md)

@@ -2,7 +2,7 @@
 
 ## Keyart:
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/mkPIo7ku4Dq0TkrPjbbk" alt=""><figcaption></figcaption></figure>
 
 ## Download Links:
 

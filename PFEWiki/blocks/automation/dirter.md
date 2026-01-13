@@ -1,21 +1,10 @@
 ---
 description: 'Last updated to math: v1.2.96'
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Dirter
 
-<div align="center" data-full-width="true"><figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/Automation/dirter.png?raw=true" alt="Dirter"><figcaption><p>Default</p></figcaption></figure> <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/Automation/VVdirter.png?raw=true" alt=""><figcaption><p>With Vibrant Visuals <br>enabled</p></figcaption></figure></div>
+<div align="center" data-full-width="true"><figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/Automation/dirter.png?raw=true" alt="Dirter"><figcaption><p>Default</p></figcaption></figure> <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/Automation/VVdirter.png?raw=true" alt=""><figcaption><p>With Vibrant Visuals<br>enabled</p></figcaption></figure></div>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifiers: <a href="#identifier" id="identifier"></a>
 
@@ -52,8 +41,6 @@ layout:
 |       ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true)       |                ![](https://minecraft.wiki/images/Oak_Planks.png?d9efa)                | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) |
 | <img src="https://minecraft.wiki/images/Cobblestone_JE5_BE3.png?29624" alt="" data-size="original"> | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/gps_module.png?raw=true) |                    ![](https://minecraft.wiki/images/Dirt.png?89d72)                    |
 |       ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true)       |                ![](https://minecraft.wiki/images/Oak_Planks.png?d9efa)                | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) |
-
-
 
 Items:
 
