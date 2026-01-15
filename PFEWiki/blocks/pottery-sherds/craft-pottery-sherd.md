@@ -12,7 +12,7 @@
 
 {% tabs %}
 {% tab title="Trading" %}
-Barrel in [Broken Swampsite](../../sturctures/abandoned-swampsite.md)
+Barrel in the [Abandoned Swampsite](../../sturctures/abandoned-swampsite.md)
 {% endtab %}
 {% endtabs %}
 
