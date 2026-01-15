@@ -1,5 +1,5 @@
 ---
-description: 'Last updated to match: v1.3.02'
+description: 'Last updated to match: v1.3.03'
 ---
 
 # Hellish Armor
@@ -162,7 +162,7 @@ description: 'Last updated to match: v1.3.02'
 ## <img src="https://minecraft.wiki/images/thumb/Enchanting_Table.gif/150px-Enchanting_Table.gif?904a7" alt="" data-size="line"> Enchanting: <a href="#enchanting" id="enchanting"></a>
 
 * <img src="https://minecraft.wiki/images/Enchanted_Book.gif?b21c4" alt="" data-size="line"> Enchantment Type: <mark style="color:yellow;">Boots</mark>
-* <img src="https://minecraft.wiki/images/thumb/Bookshelf_JE4_BE2.png/150px-Bookshelf_JE4_BE2.png?9b143" alt="Bookshelf." data-size="line"> Enchantability: <mark style="color:yellow;">50</mark>
+* <img src="https://minecraft.wiki/images/thumb/Bookshelf_JE4_BE2.png/150px-Bookshelf_JE4_BE2.png?9b143" alt="Bookshelf." data-size="line"> Enchantability: <mark style="color:yellow;">9</mark>
 
 ## <img src="https://minecraft.wiki/images/thumb/Anvil_(N)_JE3.png/150px-Anvil_(N)_JE3.png?d438e" alt="Anvil." data-size="line"> Repairing: <a href="#repairing" id="repairing"></a>
 

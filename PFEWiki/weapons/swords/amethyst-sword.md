@@ -1,5 +1,5 @@
 ---
-description: Last updated to match v1.3.01
+description: Last updated to match v1.3.02
 ---
 
 # Creedite Sword
@@ -31,29 +31,17 @@ description: Last updated to match v1.3.01
   * Max <mark style="color:yellow;">100%</mark>
 * Repairs with:
   * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/repair_core.png?raw=true" alt="Repair Core." data-size="line"> [Repair Core](../../items/cores/repair-core.md) <mark style="color:yellow;">(100%)</mark>
-  * Block of Creedite <mark style="color:yellow;">(100%)</mark>
-  * Creedite Shard <mark style="color:yellow;">(25%)</mark>
+  * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CreediteBlock.png?raw=true" alt="" data-size="line"> [Block of Creedite](../../blocks/ore-blocks/block-of-creedite.md) <mark style="color:yellow;">(100%)</mark>
+  * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/creedite_shard.png?raw=true" alt="" data-size="line"> [Creedite Shard](../../items/ingots/creedite-shard.md) <mark style="color:yellow;">(25%)</mark>
 
 ## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining: <a href="#obtaining" id="obtaining"></a>
 
 {% tabs %}
 {% tab title="Recipe" %}
-<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/Upgrader.png?raw=true" alt=""><figcaption><p>Crafted via the<br><a href="../../blocks/crafters/upgrader.md">Upgrader</a></p></figcaption></figure>
 
-|                                                                                                                            |
-| :------------------------------------------------------------------------------------------------------------------------: |
-|          <img src="https://minecraft.wiki/images/Block_of_Amethyst_JE3_BE1.png?14501" alt="" data-size="original">         |
-| <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/upgrade_core.png?raw=true" alt="" data-size="original"> |
-|                            ![](https://minecraft.wiki/images/Netherite_Sword_JE2_BE2.png?8e866)                            |
+<h2 align="center">1x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/creedite_sword.png?raw=true" alt="" data-size="line"> Creedite Sword</h2>
 
-Items:
-
-* <img src="https://minecraft.wiki/images/Block_of_Amethyst_JE3_BE1.png?14501" alt="" data-size="line"> [Block of Amethyst](https://minecraft.wiki/w/Block_of_Amethyst)
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/upgrade_core.png?raw=true" alt="" data-size="line"> [Upgrade Core](../../items/cores/upgrade-core.md)
-* <img src="https://minecraft.wiki/images/Netherite_Sword_JE2_BE2.png?8e866" alt="" data-size="line"> [Netherite Sword](https://minecraft.wiki/w/Netherite_Sword)
-
-Outputs:
-
-* 1x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/creedite_sword.png?raw=true" alt="" data-size="line"> Creedite Sword
+<table data-view="cards"><thead><tr><th>Item</th><th>Amount</th><th data-type="checkbox">Result keeps data from this?</th></tr></thead><tbody><tr><td><img src="https://minecraft.wiki/images/Netherite_Sword_JE2_BE2.png?8e866" alt="" data-size="line"> <a href="https://minecraft.wiki/w/Netherite_Sword">Netherite Sword</a></td><td>1</td><td>true</td></tr><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/creedite_shard.png?raw=true" alt="" data-size="line"> <a href="../../items/ingots/creedite-shard.md">Creedite Shard</a></td><td>8</td><td>false</td></tr><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/upgrade_core.png?raw=true" alt="" data-size="line"> <a href="../../items/cores/upgrade-core.md">Upgrade Core</a></td><td>1</td><td>false</td></tr></tbody></table>
 {% endtab %}
 {% endtabs %}
