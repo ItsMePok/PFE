@@ -1,5 +1,5 @@
 import { clampNumber } from "@minecraft/math"
-import { Dimension, EntityComponentTypes, EquipmentSlot, ItemStack, Player, system, World, world } from "@minecraft/server"
+import { Dimension, EntityComponentTypes, EquipmentSlot, ItemStack, Player, system, world } from "@minecraft/server"
 import { MinecraftEffectTypes } from "@minecraft/vanilla-data"
 import { PFEDisableConfigDefault, PFEDisableConfigName, PFEDisableConfigOptions } from "./config"
 export {
@@ -137,7 +137,7 @@ function CheckEffects(player: Player, additionalOptions?: boolean, customParse?:
       }
     }
   }
-  let totalPieces = -1
+  let totalPieces = 0
   let totalStrength = 0
   let totalSpeed = 0
   let totalResistance = 0
@@ -202,22 +202,21 @@ function CheckEffects(player: Player, additionalOptions?: boolean, customParse?:
     }
   }
   let position = 0
-  if (customEffects.length > 0) {
-    for (let item of Equipment) {
-      if (!item) {
-        position += 1; continue
-      }
-      totalPieces += 1
-      let passed = false
-      for (let customEffect of customEffects) {
-        if ((customEffect.mode == "lore" && JSON.stringify(item.getLore()).includes(customEffect.tag)) || ((!customEffect.mode || customEffect.mode == "tag") && item.hasTag(customEffect.tag))) {
-          effects = effects.concat(customEffect.effects)
-          passed = true
-        }
-      }
-      passed || EquipmentComponents.at(position) ? totalPieces : totalPieces -= 1;
-      position += 1
+
+  for (let item of Equipment) {
+    if (!item) {
+      position += 1; continue
     }
+    totalPieces += 1
+    let passed = false
+    for (let customEffect of customEffects) {
+      if ((customEffect.mode == "lore" && JSON.stringify(item.getLore()).includes(customEffect.tag)) || ((!customEffect.mode || customEffect.mode == "tag") && item.hasTag(customEffect.tag))) {
+        effects = effects.concat(customEffect.effects)
+        passed = true
+      }
+    }
+    passed || EquipmentComponents.at(position) ? totalPieces : totalPieces -= 1;
+    position += 1
   }
 
   for (let effect of effects) {
@@ -307,12 +306,45 @@ function CheckEffects(player: Player, additionalOptions?: boolean, customParse?:
         case MinecraftEffectTypes.Wither: { CurrentEffect = totalWither; break; }
         default: break;
       }
+      /*console.warn(`
+        Effect:${effect.effect}\n
+        Max Amp:${effect.max_amp}\n
+        Applies at Amp: ${clampNumber(
+        Math.min(
+          (ActiveEffects.amplifier + 1),
+          totalPieces,
+          effect.max_amp,
+          clampNumber(
+            CurrentEffect - 1,
+            0,
+            255
+          )),
+        0,
+        25
+      )
+        }\n
+        Current Amp: ${ActiveEffects.amplifier}
+        Total pieces: ${totalPieces}
+        
+        `)*/
       player.addEffect(
         effect.effect,
         effectDuration,
         {
           showParticles: false,
-          amplifier: clampNumber(Math.min((ActiveEffects.amplifier + 1), totalPieces, effect.max_amp, clampNumber(CurrentEffect - 1, 0, 255)), 0, 255)
+          amplifier: clampNumber(
+            Math.min(
+              (ActiveEffects.amplifier + 1),
+              totalPieces,
+              effect.max_amp,
+              clampNumber(
+                CurrentEffect - 1,
+                0,
+                255
+              )),
+            0,
+            25
+          )
         })
     }
   }
@@ -383,9 +415,24 @@ function CheckEffects(player: Player, additionalOptions?: boolean, customParse?:
   }
   for (let radiusEffect of compiledRadiusEffects) {
     let effectDuration = Boolean(radiusEffect.duration) ? Number(radiusEffect.duration) : Number(world.getDynamicProperty("poke_pfe:setEffectDuration") ?? ArmorEffectDuration)
-    const targets = player.dimension.getPlayers({ location: player.location, maxDistance: clampNumber(radiusEffect.totalRadius ?? radiusEffect.radius_per_piece ?? radiusEffect.max_radius, 0, radiusEffect.max_radius), excludeNames: radiusEffect.effect_self ? undefined : [player.name] })
+    const targets = player.dimension.getPlayers({
+      location: player.location,
+      maxDistance: clampNumber(
+        radiusEffect.totalRadius ?? radiusEffect.radius_per_piece ?? radiusEffect.max_radius, 0, radiusEffect.max_radius
+      ),
+      excludeNames: radiusEffect.effect_self ? undefined : [player.name]
+    })
     for (let target of targets) {
-      target.addEffect(radiusEffect.effect, effectDuration, { showParticles: false, amplifier: clampNumber(radiusEffect.totalAmp ?? radiusEffect.amp ?? 0, 0, radiusEffect.max_amp) })
+      target.addEffect(
+        radiusEffect.effect,
+        effectDuration, {
+        showParticles: false,
+        amplifier: clampNumber(
+          radiusEffect.totalAmp ?? radiusEffect.amp ?? 0,
+          0,
+          radiusEffect.max_amp
+        )
+      })
     }
   }
 }
