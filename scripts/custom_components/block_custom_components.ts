@@ -14,7 +14,7 @@ function RegisterBlockComponents(data: StartupEvent) {
     "poke_pfe:cycle_color", {
     onPlayerInteract(data, component) {
       const block_location = `${data.block.x} ${data.block.y} ${data.block.z}`
-      const ColorState = <keyof BlockStateSuperset>`pfe:color`
+      const ColorState = <keyof BlockStateSuperset>`poke_pfe:color`
       let light_color = <number>data.block.permutation.getState(ColorState)
       let sound_pitch = 1 + light_color / 10
       //resets if at the maximum (15)
