@@ -1,0 +1,8 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "auto_flash_freezer_face",
+		"metalness_emissive_roughness": "auto_flash_freezer_face_mer",
+		"heightmap": "auto_flash_freezer_face_height"
+	}
+}

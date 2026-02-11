@@ -1,6 +1,7 @@
 import { Player, PlayerPermissionLevel, RawMessage, system, world } from "@minecraft/server"
 import { ActionFormData, ModalFormData } from "@minecraft/server-ui"
 import { PokeErrorScreen, PokeGetObjectById } from "./commonFunctions"
+import { IsPFEFeatureEnabled } from "./config"
 const PokeCalendarVersion = 1
 const PokeCustomEventId = `poke_pfe:customEvents`
 interface PokeBirthdays {
@@ -44,12 +45,11 @@ export {
   PFETimeValidation
 }
 function PFEHourTimeDownEvents() {
-  let currentTime = new Date(Date.now())
-  //Cassette Trader spawning
-  //console.warn(`Attempting to spawn cassette trader`)
-  let allPlayers = world.getAllPlayers()
-  let randomPlayer = allPlayers.at(Math.abs(Math.round(Math.random() * (allPlayers.length - 1))))
-  randomPlayer?.dimension.spawnEntity('poke_pfe:cassette_trader', randomPlayer.location).runCommand(`spreadplayers ~ ~ 30 40 @s ~10`)
+  if (IsPFEFeatureEnabled("cassetteTrader")) {//Cassette Trader spawning
+    let allPlayers = world.getAllPlayers()
+    let randomPlayer = allPlayers.at(Math.abs(Math.round(Math.random() * (allPlayers.length - 1))))
+    randomPlayer?.dimension.spawnEntity('poke_pfe:cassette_trader', randomPlayer.location).runCommand(`spreadplayers ~ ~ 30 40 @s ~10`)
+  }
 }
 function PFETimeValidation() {
   let currentTime = new Date(Date.now())
@@ -213,8 +213,8 @@ const PFEDefaultHolidays: PokeEventConfig[] = [
     v: PokeCalendarVersion
   },
   {
-    name: { text: `Easter` },
-    id: "just:Easter",
+    name: { text: `Christmas` },
+    id: "poke_pfe:xmas",
     dates: [{ month: 11, days: [24, 25] }],
     repeat: true,
     gift: `give @s poke_pfe:present 16`,

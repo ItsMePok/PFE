@@ -30,7 +30,7 @@
 			},
 			"poke_pfe:transform_blocks": {
 				"transforms": [
-					"poke_pfe:onyx::poke_pfe:raw_onyx_block",
+					"poke_pfe:deepslate_onyx_ore::poke_pfe:raw_onyx_block",
 					"poke_pfe:nether_onyx_ore::poke_pfe:raw_onyx_block"
 				]
 			},

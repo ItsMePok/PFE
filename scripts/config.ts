@@ -9,6 +9,7 @@ export {
   PFEDisableConfigDefault,
   PFEDisableConfigMainMenu,
   PFEDisabledOnUseItems,
+  IsPFEFeatureEnabled,
   OpenPFEConfig
 }
 function OpenPFEConfig(player: Player) {
@@ -83,6 +84,7 @@ interface PFEDisableConfigOptions {
   "kapowRing": boolean
   "waypoints"?: boolean,
   "playerMagnet"?: boolean
+  "cassetteTrader"?: boolean
 }
 let PFEDisabledOnUseItems = ["poke_pfe:sundial", "poke_pfe:quantum_teleporter", "poke_pfe:kapow_ring"]
 const PFEDisableConfigDefault: PFEDisableConfigOptions = {
@@ -96,7 +98,8 @@ const PFEDisableConfigDefault: PFEDisableConfigOptions = {
   "sundial": true,
   "witherSpawner": true,
   "waypoints": true,
-  "playerMagnet": true
+  "playerMagnet": true,
+  "cassetteTrader": true
 }
 function PFEDisableConfigMainMenu(player: Player) {
   let UI = new ActionFormData()
@@ -114,6 +117,7 @@ function PFEDisableConfigMainMenu(player: Player) {
   UI.button({ translate: `%poke_pfe.set_effects:${world.getDynamicProperty(`poke_pfe:disable_armor_effects`) == true ? disabled : enabled}` }, `textures/poke/common/effect_particles`)
   UI.button({ translate: `%translation.poke_pfe.death_armor_radius:${options.deathArmorRadius ? enabled : disabled}` }, `textures/poke/pfe/death_helmet`)
   UI.button({ translate: `%translation.poke_pfe.cactus_armor_radius:${options.cactusArmorRadius ? enabled : disabled}` }, `textures/poke/pfe/cactus_helmet`)
+  UI.button({ translate: `%translation.poke_pfe.cassette_trader:${options.cassetteTrader ? enabled : disabled}` }, `textures/poke/pfe/cassette_trader_icon`)
   UI.button({ translate: `translation.poke_pfe:goBack` }, `textures/poke/common/left_arrow`)
   UI.show(player).then(response => {
     let selection = 0
@@ -214,6 +218,25 @@ function PFEDisableConfigMainMenu(player: Player) {
       PFEDisableConfigMainMenu(player)
       return
     } else selection++
+    if (response.selection == selection) {// Cactus Armor's Radius Effects
+      if (newProperty.cactusArmorRadius) {
+        newProperty.cassetteTrader = false
+        //console.info(`Disabled Cactus Armor's Radius Effects`)
+      } else newProperty.cassetteTrader = true
+      world.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty))
+      PFEDisableConfigMainMenu(player)
+      return
+    } else selection++
     if (response.canceled || (response.selection == selection)) { return }
   })
+}
+
+function IsPFEFeatureEnabled(feature: keyof PFEDisableConfigOptions) {
+  const DisabledFeatures = <PFEDisableConfigOptions>JSON.parse(world.getDynamicProperty(PFEDisableConfigName)?.toString() ?? JSON.stringify(PFEDisableConfigDefault))
+  if (DisabledFeatures[feature] === undefined) {
+    if (PFEDisableConfigDefault[feature] === true) {
+      return true
+    } else return false
+  } else if (DisabledFeatures[feature] === true) return true;
+  else return false;
 }

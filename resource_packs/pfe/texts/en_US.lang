@@ -1484,3 +1484,5 @@ poke_pfe.creedite_block=Block of Creedite
 
 poke_pfe.upgrader.description=Upgrades items
 poke_pfe.has_recipes=Has custom recipes
+
+poke_pfe.flash_freezer=Flash Freezer

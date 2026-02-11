@@ -4122,6 +4122,24 @@
                             }
                           }
                         },
+                        "poke_pfe:spawn_particle": {
+                          "title": "Spawn Particle (PFE)",
+                          "type": "object",
+                          "description": "On Tick\nThis will spawn a particle at the block when it ticks",
+                          "patternProperties": {
+                            "(.*)[:](.*)": {
+                              "properties": {
+                                "offset": {
+                                  "type": "string",
+                                  "pattern": "^\\{(.)*\\}$"
+                                },
+                                "requires_redstone_power": {
+                                  "type": "boolean"
+                                }
+                              }
+                            }
+                          }
+                        },
                         "poke_pfe:sponge_block": {
                           "title": "Sponge Block (PFE)",
                           "type": "object",

@@ -1,7 +1,7 @@
 import { Block, BlockComponentTypes, BlockPermutation, BlockStateArg, BlockVolume, Direction, EntityComponentTypes, EntityQueryOptions, EquipmentSlot, GameMode, ItemComponentTypes, ItemStack, LiquidType, Player, StartupEvent, Vector3 } from "@minecraft/server";
 import { BlockStateSuperset, MinecraftBlockTypes, MinecraftEnchantmentTypes, MinecraftEntityTypes, MinecraftItemTypes } from "@minecraft/vanilla-data";
 import ComputersCompat from "../addonCompatibility/jigarbov";
-import { pokeAddItemsToContainerOrDrop, PokeClosestCardinal, PokeSpawnLootTable } from "../commonFunctions";
+import { pokeAddItemsToContainerOrDrop, PokeClosestCardinal, PokeSpawnLootTable, pokeSpawnParticle } from "../commonFunctions";
 import { RecipeBlockComponent } from "../recipeSystems";
 import { Vector3Utils } from "@minecraft/math";
 
@@ -10,6 +10,27 @@ export {
 }
 
 function RegisterBlockComponents(data: StartupEvent) {
+  data.blockComponentRegistry.registerCustomComponent(
+    "poke_pfe:spawn_particle", {
+    onTick(data, componentInfo) {
+      type SpawnParticleComponent = {
+        [key: string]: {
+          offset: string // "{\"x\": 0,\"y\": 0,\"z\": 0}"
+          requires_redstone_power: boolean
+        }
+      }
+      const COMPONENT = <SpawnParticleComponent>componentInfo.params;
+      const DIMENSION = data.dimension;
+      const BLOCK = data.block;
+      for (const PARTICLE_ID of Object.keys(COMPONENT)) {
+        const PARTICLE = COMPONENT[PARTICLE_ID]
+        if (PARTICLE.requires_redstone_power && (data.block.getRedstonePower() ?? 0 > 0)) continue;
+        const LOCATION = Vector3Utils.add(BLOCK.location, JSON.parse(PARTICLE.offset))
+        DIMENSION.spawnParticle(PARTICLE_ID, LOCATION)
+      };
+    }
+  }
+  );
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:cycle_color", {
     onPlayerInteract(data, component) {

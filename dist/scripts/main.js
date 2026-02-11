@@ -3522,8 +3522,8 @@ function PFEStartBossEvent() {
 }
 
 // scripts/time.ts
-import { PlayerPermissionLevel, system as system3, world as world4 } from "@minecraft/server";
-import { ActionFormData as ActionFormData3, ModalFormData as ModalFormData2 } from "@minecraft/server-ui";
+import { PlayerPermissionLevel as PlayerPermissionLevel2, system as system5, world as world6 } from "@minecraft/server";
+import { ActionFormData as ActionFormData4, ModalFormData as ModalFormData3 } from "@minecraft/server-ui";
 
 // scripts/commonFunctions.ts
 import { Direction, EntityComponentTypes, EquipmentSlot, GameMode, ItemComponentTypes, ItemLockMode, ItemStack, world as world3 } from "@minecraft/server";
@@ -3723,21 +3723,989 @@ function pokeAddItemsToContainerOrDrop(Container2, item, dimension, location) {
   dimension.spawnItem(item, location);
 }
 
+// scripts/config.ts
+import { PlayerPermissionLevel, system as system4, world as world5 } from "@minecraft/server";
+import { ActionFormData as ActionFormData3, ModalFormData as ModalFormData2 } from "@minecraft/server-ui";
+
+// node_modules/@minecraft/math/lib/general/clamp.js
+function clampNumber(val, min, max) {
+  return Math.min(Math.max(val, min), max);
+}
+
+// node_modules/@minecraft/math/lib/vector3/coreHelpers.js
+var Vector3Utils = class _Vector3Utils {
+  /**
+   * equals
+   *
+   * Check the equality of two vectors
+   */
+  static equals(v1, v2) {
+    return v1.x === v2.x && v1.y === v2.y && v1.z === v2.z;
+  }
+  /**
+   * add
+   *
+   * Add two vectors to produce a new vector
+   */
+  static add(v1, v2) {
+    return { x: v1.x + (v2.x ?? 0), y: v1.y + (v2.y ?? 0), z: v1.z + (v2.z ?? 0) };
+  }
+  /**
+   * subtract
+   *
+   * Subtract two vectors to produce a new vector (v1-v2)
+   */
+  static subtract(v1, v2) {
+    return { x: v1.x - (v2.x ?? 0), y: v1.y - (v2.y ?? 0), z: v1.z - (v2.z ?? 0) };
+  }
+  /** scale
+   *
+   * Multiple all entries in a vector by a single scalar value producing a new vector
+   */
+  static scale(v1, scale) {
+    return { x: v1.x * scale, y: v1.y * scale, z: v1.z * scale };
+  }
+  /**
+   * dot
+   *
+   * Calculate the dot product of two vectors
+   */
+  static dot(a, b) {
+    return a.x * b.x + a.y * b.y + a.z * b.z;
+  }
+  /**
+   * cross
+   *
+   * Calculate the cross product of two vectors. Returns a new vector.
+   */
+  static cross(a, b) {
+    return { x: a.y * b.z - a.z * b.y, y: a.z * b.x - a.x * b.z, z: a.x * b.y - a.y * b.x };
+  }
+  /**
+   * magnitude
+   *
+   * The magnitude of a vector
+   */
+  static magnitude(v) {
+    return Math.sqrt(v.x ** 2 + v.y ** 2 + v.z ** 2);
+  }
+  /**
+   * distance
+   *
+   * Calculate the distance between two vectors
+   */
+  static distance(a, b) {
+    return _Vector3Utils.magnitude(_Vector3Utils.subtract(a, b));
+  }
+  /**
+   * normalize
+   *
+   * Takes a vector 3 and normalizes it to a unit vector
+   */
+  static normalize(v) {
+    const mag = _Vector3Utils.magnitude(v);
+    return { x: v.x / mag, y: v.y / mag, z: v.z / mag };
+  }
+  /**
+   * floor
+   *
+   * Floor the components of a vector to produce a new vector
+   */
+  static floor(v) {
+    return { x: Math.floor(v.x), y: Math.floor(v.y), z: Math.floor(v.z) };
+  }
+  /**
+   * toString
+   *
+   * Create a string representation of a vector3
+   */
+  static toString(v, options) {
+    const decimals = options?.decimals ?? 2;
+    const str = [v.x.toFixed(decimals), v.y.toFixed(decimals), v.z.toFixed(decimals)];
+    return str.join(options?.delimiter ?? ", ");
+  }
+  /**
+   * fromString
+   *
+   * Gets a Vector3 from the string representation produced by {@link Vector3Utils.toString}. If any numeric value is not a number
+   * or the format is invalid, undefined is returned.
+   * @param str - The string to parse
+   * @param delimiter - The delimiter used to separate the components. Defaults to the same as the default for {@link Vector3Utils.toString}
+   */
+  static fromString(str, delimiter = ",") {
+    const parts = str.split(delimiter);
+    if (parts.length !== 3) {
+      return void 0;
+    }
+    const output = parts.map((part) => parseFloat(part));
+    if (output.some((part) => isNaN(part))) {
+      return void 0;
+    }
+    return { x: output[0], y: output[1], z: output[2] };
+  }
+  /**
+   * clamp
+   *
+   * Clamps the components of a vector to limits to produce a new vector
+   */
+  static clamp(v, limits) {
+    return {
+      x: clampNumber(v.x, limits?.min?.x ?? Number.MIN_SAFE_INTEGER, limits?.max?.x ?? Number.MAX_SAFE_INTEGER),
+      y: clampNumber(v.y, limits?.min?.y ?? Number.MIN_SAFE_INTEGER, limits?.max?.y ?? Number.MAX_SAFE_INTEGER),
+      z: clampNumber(v.z, limits?.min?.z ?? Number.MIN_SAFE_INTEGER, limits?.max?.z ?? Number.MAX_SAFE_INTEGER)
+    };
+  }
+  /**
+   * lerp
+   *
+   * Constructs a new vector using linear interpolation on each component from two vectors.
+   */
+  static lerp(a, b, t) {
+    return { x: a.x + (b.x - a.x) * t, y: a.y + (b.y - a.y) * t, z: a.z + (b.z - a.z) * t };
+  }
+  /**
+   * slerp
+   *
+   * Constructs a new vector using spherical linear interpolation on each component from two vectors.
+   */
+  static slerp(a, b, t) {
+    const theta = Math.acos(_Vector3Utils.dot(a, b));
+    const sinTheta = Math.sin(theta);
+    const ta = Math.sin((1 - t) * theta) / sinTheta;
+    const tb = Math.sin(t * theta) / sinTheta;
+    return _Vector3Utils.add(_Vector3Utils.scale(a, ta), _Vector3Utils.scale(b, tb));
+  }
+  /**
+   * multiply
+   *
+   * Element-wise multiplication of two vectors together.
+   * Not to be confused with {@link Vector3Utils.dot} product or {@link Vector3Utils.cross} product
+   */
+  static multiply(a, b) {
+    return { x: a.x * b.x, y: a.y * b.y, z: a.z * b.z };
+  }
+  /**
+   * rotateX
+   *
+   * Rotates the vector around the x axis counterclockwise (left hand rule)
+   * @param a - Angle in radians
+   */
+  static rotateX(v, a) {
+    const cos = Math.cos(a);
+    const sin = Math.sin(a);
+    return { x: v.x, y: v.y * cos - v.z * sin, z: v.z * cos + v.y * sin };
+  }
+  /**
+   * rotateY
+   *
+   * Rotates the vector around the y axis counterclockwise (left hand rule)
+   * @param a - Angle in radians
+   */
+  static rotateY(v, a) {
+    const cos = Math.cos(a);
+    const sin = Math.sin(a);
+    return { x: v.x * cos + v.z * sin, y: v.y, z: v.z * cos - v.x * sin };
+  }
+  /**
+   * rotateZ
+   *
+   * Rotates the vector around the z axis counterclockwise (left hand rule)
+   * @param a - Angle in radians
+   */
+  static rotateZ(v, a) {
+    const cos = Math.cos(a);
+    const sin = Math.sin(a);
+    return { x: v.x * cos - v.y * sin, y: v.y * cos + v.x * sin, z: v.z };
+  }
+};
+
+// scripts/armorEffects.ts
+import { EntityComponentTypes as EntityComponentTypes2, EquipmentSlot as EquipmentSlot2, ItemStack as ItemStack2, system as system3, world as world4 } from "@minecraft/server";
+var ArmorEffectDuration = 300;
+var SensitiveArmorEffectDuration = 500;
+var PFECustomArmorEffectDynamicProperty = `poke_pfe:custom_effects`;
+var PFESetEffectId = "poke_pfe:set_effects";
+function CheckEffects(player, additionalOptions, customParse) {
+  const Helmet = player.getComponent(EntityComponentTypes2.Equippable)?.getEquipment(EquipmentSlot2.Head) ?? void 0;
+  const Chestplate = player.getComponent(EntityComponentTypes2.Equippable)?.getEquipment(EquipmentSlot2.Chest) ?? void 0;
+  const Leggings = player.getComponent(EntityComponentTypes2.Equippable)?.getEquipment(EquipmentSlot2.Legs) ?? void 0;
+  const Boots = player.getComponent(EntityComponentTypes2.Equippable)?.getEquipment(EquipmentSlot2.Feet) ?? void 0;
+  const Offhand = player.getComponent(EntityComponentTypes2.Equippable)?.getEquipment(EquipmentSlot2.Offhand) ?? void 0;
+  const Mainhand = player.getComponent(EntityComponentTypes2.Equippable)?.getEquipment(EquipmentSlot2.Mainhand) ?? void 0;
+  const Equipment = [Helmet, Chestplate, Leggings, Boots, Offhand, Mainhand];
+  let effects = [];
+  let radius_effects = [];
+  let commands = [];
+  const HelmetComponent = Helmet?.getComponent(PFESetEffectId)?.customComponentParameters.params;
+  const ChestplateComponent = Chestplate?.getComponent(PFESetEffectId)?.customComponentParameters.params;
+  const LeggingsComponent = Leggings?.getComponent(PFESetEffectId)?.customComponentParameters.params;
+  const BootsComponent = Boots?.getComponent(PFESetEffectId)?.customComponentParameters.params;
+  const OffhandComponent = Offhand?.getComponent(PFESetEffectId)?.customComponentParameters.params;
+  const MainhandComponent = Mainhand?.getComponent(PFESetEffectId)?.customComponentParameters.params;
+  const EquipmentComponents = [HelmetComponent, ChestplateComponent, LeggingsComponent, BootsComponent, OffhandComponent, MainhandComponent];
+  for (let component of EquipmentComponents) {
+    if (!component) continue;
+    for (let effect of component) {
+      switch (effect.mode) {
+        case "radius_effect": {
+          radius_effects.push(effect);
+          break;
+        }
+        case "command": {
+          commands.push(effect);
+          break;
+        }
+        default: {
+          effects.push(effect);
+          break;
+        }
+      }
+    }
+  }
+  let totalPieces = 0;
+  let totalStrength = 0;
+  let totalSpeed = 0;
+  let totalResistance = 0;
+  let totalRegeneration = 0;
+  let totalJumpBoost = 0;
+  let totalSlowness = 0;
+  let totalVillageHero = 0;
+  let totalSaturation = 0;
+  let totalHaste = 0;
+  let totalAbsorption = 0;
+  let totalBadOmen = 0;
+  let totalBlindness = 0;
+  let totalConduitPower = 0;
+  let totalDarkness = 0;
+  let totalFatalPoison = 0;
+  let totalFireResistance = 0;
+  let totalHealthBoost = 0;
+  let totalHunger = 0;
+  let totalInfested = 0;
+  let totalInstantDamage = 0;
+  let totalInstantHealth = 0;
+  let totalInvisibility = 0;
+  let totalLevitation = 0;
+  let totalMiningFatigue = 0;
+  let totalNausea = 0;
+  let totalNightVision = 0;
+  let totalOozing = 0;
+  let totalPoison = 0;
+  let totalRaidOmen = 0;
+  let totalSlowFalling = 0;
+  let totalTrialOmen = 0;
+  let totalWaterBreathing = 0;
+  let totalWeakness = 0;
+  let totalWeaving = 0;
+  let totalWindCharged = 0;
+  let totalWither = 0;
+  let customEffects = JSON.parse(world4.getDynamicProperty(PFECustomArmorEffectDynamicProperty).toString());
+  if (additionalOptions) {
+    const NoveltyTags = player.getTags().filter((tag) => tag.includes(`novelty:poke`));
+    for (let i = NoveltyTags.length; i > -1; i--) {
+      const tag = NoveltyTags.at(i);
+      if (!tag) continue;
+      const item = new ItemStack2(tag.substring(8), 1);
+      totalPieces += 1;
+      switch (true) {
+        default:
+          {
+            let passed = false;
+            if (customEffects.length > 0) {
+              for (let customEffect of customEffects) {
+                if (!customEffect.mode || customEffect.mode != "tag") {
+                  totalPieces -= 1;
+                  continue;
+                }
+                ;
+                if (item.hasTag(customEffect.tag)) {
+                  effects = effects.concat(customEffect.effects);
+                  passed = true;
+                }
+              }
+            }
+            totalPieces -= passed ? 0 : 1;
+            break;
+          }
+          ;
+      }
+      continue;
+    }
+  }
+  let position = 0;
+  for (let item of Equipment) {
+    if (!item) {
+      position += 1;
+      continue;
+    }
+    totalPieces += 1;
+    let passed = false;
+    for (let customEffect of customEffects) {
+      if (customEffect.mode == "lore" && JSON.stringify(item.getLore()).includes(customEffect.tag) || (!customEffect.mode || customEffect.mode == "tag") && item.hasTag(customEffect.tag)) {
+        effects = effects.concat(customEffect.effects);
+        passed = true;
+      }
+    }
+    passed || EquipmentComponents.at(position) ? totalPieces : totalPieces -= 1;
+    position += 1;
+  }
+  for (let effect of effects) {
+    switch (effect.effect) {
+      case MinecraftEffectTypes.Absorption: {
+        totalAbsorption += 1;
+        break;
+      }
+      case MinecraftEffectTypes.BadOmen: {
+        totalBadOmen += 1;
+        break;
+      }
+      case MinecraftEffectTypes.Blindness: {
+        totalBlindness += 1;
+        break;
+      }
+      case MinecraftEffectTypes.ConduitPower: {
+        totalConduitPower += 1;
+        break;
+      }
+      case MinecraftEffectTypes.Darkness: {
+        totalDarkness += 1;
+        break;
+      }
+      case MinecraftEffectTypes.FatalPoison: {
+        totalFatalPoison += 1;
+        break;
+      }
+      case MinecraftEffectTypes.FireResistance: {
+        totalFireResistance += 1;
+        break;
+      }
+      case MinecraftEffectTypes.Haste: {
+        totalHaste += 1;
+        break;
+      }
+      case MinecraftEffectTypes.HealthBoost: {
+        totalHealthBoost += 1;
+        break;
+      }
+      case MinecraftEffectTypes.Hunger: {
+        totalHunger += 1;
+        break;
+      }
+      case MinecraftEffectTypes.Infested: {
+        totalInfested += 1;
+        break;
+      }
+      case MinecraftEffectTypes.InstantDamage: {
+        totalInstantDamage += 1;
+        break;
+      }
+      case MinecraftEffectTypes.InstantHealth: {
+        totalInstantHealth += 1;
+        break;
+      }
+      case MinecraftEffectTypes.Invisibility: {
+        totalInvisibility += 1;
+        break;
+      }
+      case MinecraftEffectTypes.JumpBoost: {
+        totalJumpBoost += 1;
+        break;
+      }
+      case MinecraftEffectTypes.Levitation: {
+        totalLevitation += 1;
+        break;
+      }
+      case MinecraftEffectTypes.MiningFatigue: {
+        totalMiningFatigue += 1;
+        break;
+      }
+      case MinecraftEffectTypes.Nausea: {
+        totalNausea += 1;
+        break;
+      }
+      case MinecraftEffectTypes.NightVision: {
+        totalNightVision += 1;
+        break;
+      }
+      case MinecraftEffectTypes.Oozing: {
+        totalOozing += 1;
+        break;
+      }
+      case MinecraftEffectTypes.Poison: {
+        totalPoison += 1;
+        break;
+      }
+      case MinecraftEffectTypes.RaidOmen: {
+        totalRaidOmen += 1;
+        break;
+      }
+      case MinecraftEffectTypes.Regeneration: {
+        totalRegeneration += 1;
+        break;
+      }
+      case MinecraftEffectTypes.Resistance: {
+        totalResistance += 1;
+        break;
+      }
+      case MinecraftEffectTypes.Saturation: {
+        totalSaturation += 1;
+        break;
+      }
+      case MinecraftEffectTypes.SlowFalling: {
+        totalSlowFalling += 1;
+        break;
+      }
+      case MinecraftEffectTypes.Slowness: {
+        totalSlowness += 1;
+        break;
+      }
+      case MinecraftEffectTypes.Speed: {
+        totalSpeed += 1;
+        break;
+      }
+      case MinecraftEffectTypes.Strength: {
+        totalStrength += 1;
+        break;
+      }
+      case MinecraftEffectTypes.TrialOmen: {
+        totalTrialOmen += 1;
+        break;
+      }
+      case MinecraftEffectTypes.VillageHero: {
+        totalVillageHero += 1;
+        break;
+      }
+      case MinecraftEffectTypes.WaterBreathing: {
+        totalWaterBreathing += 1;
+        break;
+      }
+      case MinecraftEffectTypes.Weakness: {
+        totalWeakness += 1;
+        break;
+      }
+      case MinecraftEffectTypes.Weaving: {
+        totalWeaving += 1;
+        break;
+      }
+      case MinecraftEffectTypes.WindCharged: {
+        totalWindCharged += 1;
+        break;
+      }
+      case MinecraftEffectTypes.Wither: {
+        totalWither += 1;
+        break;
+      }
+      default:
+        break;
+    }
+  }
+  for (let effect of effects) {
+    let effectDuration = Number(world4.getDynamicProperty("poke_pfe:setEffectDuration") ?? ArmorEffectDuration);
+    let ActiveEffects = player.getEffect(effect.effect) ?? false;
+    if (!ActiveEffects) {
+      player.addEffect(effect.effect, effectDuration, { showParticles: false, amplifier: 0 });
+    } else {
+      let CurrentEffect = 0;
+      switch (effect.effect) {
+        case MinecraftEffectTypes.Absorption: {
+          CurrentEffect = totalAbsorption;
+          break;
+        }
+        case MinecraftEffectTypes.BadOmen: {
+          CurrentEffect = totalBadOmen;
+          break;
+        }
+        case MinecraftEffectTypes.Blindness: {
+          CurrentEffect = totalBlindness;
+          break;
+        }
+        case MinecraftEffectTypes.ConduitPower: {
+          CurrentEffect = totalConduitPower;
+          effectDuration = SensitiveArmorEffectDuration;
+          break;
+        }
+        case MinecraftEffectTypes.Darkness: {
+          CurrentEffect = totalDarkness;
+          break;
+        }
+        case MinecraftEffectTypes.FatalPoison: {
+          CurrentEffect = totalFatalPoison;
+          break;
+        }
+        case MinecraftEffectTypes.FireResistance: {
+          CurrentEffect = totalFireResistance;
+          break;
+        }
+        case MinecraftEffectTypes.Haste: {
+          CurrentEffect = totalHaste;
+          break;
+        }
+        case MinecraftEffectTypes.HealthBoost: {
+          CurrentEffect = totalHealthBoost;
+          break;
+        }
+        case MinecraftEffectTypes.Hunger: {
+          CurrentEffect = totalHunger;
+          break;
+        }
+        case MinecraftEffectTypes.Infested: {
+          CurrentEffect = totalInfested;
+          break;
+        }
+        case MinecraftEffectTypes.InstantDamage: {
+          CurrentEffect = totalInstantDamage;
+          break;
+        }
+        case MinecraftEffectTypes.InstantHealth: {
+          CurrentEffect = totalInstantHealth;
+          break;
+        }
+        case MinecraftEffectTypes.Invisibility: {
+          CurrentEffect = totalInvisibility;
+          break;
+        }
+        case MinecraftEffectTypes.JumpBoost: {
+          CurrentEffect = totalJumpBoost;
+          break;
+        }
+        case MinecraftEffectTypes.Levitation: {
+          CurrentEffect = totalLevitation;
+          break;
+        }
+        case MinecraftEffectTypes.MiningFatigue: {
+          CurrentEffect = totalMiningFatigue;
+          break;
+        }
+        case MinecraftEffectTypes.Nausea: {
+          CurrentEffect = totalNausea;
+          break;
+        }
+        case MinecraftEffectTypes.NightVision: {
+          CurrentEffect = totalNightVision;
+          effectDuration = SensitiveArmorEffectDuration;
+          break;
+        }
+        case MinecraftEffectTypes.Oozing: {
+          CurrentEffect = totalOozing;
+          break;
+        }
+        case MinecraftEffectTypes.Poison: {
+          CurrentEffect = totalPoison;
+          break;
+        }
+        case MinecraftEffectTypes.RaidOmen: {
+          CurrentEffect = totalRaidOmen;
+          break;
+        }
+        case MinecraftEffectTypes.Regeneration: {
+          CurrentEffect = totalRegeneration;
+          break;
+        }
+        case MinecraftEffectTypes.Resistance: {
+          CurrentEffect = totalResistance;
+          break;
+        }
+        case MinecraftEffectTypes.Saturation: {
+          CurrentEffect = totalSaturation;
+          break;
+        }
+        case MinecraftEffectTypes.SlowFalling: {
+          CurrentEffect = totalSlowFalling;
+          break;
+        }
+        case MinecraftEffectTypes.Slowness: {
+          CurrentEffect = totalSlowness;
+          break;
+        }
+        case MinecraftEffectTypes.Speed: {
+          CurrentEffect = totalSpeed;
+          break;
+        }
+        case MinecraftEffectTypes.Strength: {
+          CurrentEffect = totalStrength;
+          break;
+        }
+        case MinecraftEffectTypes.TrialOmen: {
+          CurrentEffect = totalTrialOmen;
+          break;
+        }
+        case MinecraftEffectTypes.VillageHero: {
+          CurrentEffect = totalVillageHero;
+          break;
+        }
+        case MinecraftEffectTypes.WaterBreathing: {
+          CurrentEffect = totalWaterBreathing;
+          break;
+        }
+        case MinecraftEffectTypes.Weakness: {
+          CurrentEffect = totalWeakness;
+          break;
+        }
+        case MinecraftEffectTypes.Weaving: {
+          CurrentEffect = totalWeaving;
+          break;
+        }
+        case MinecraftEffectTypes.WindCharged: {
+          CurrentEffect = totalWindCharged;
+          break;
+        }
+        case MinecraftEffectTypes.Wither: {
+          CurrentEffect = totalWither;
+          break;
+        }
+        default:
+          break;
+      }
+      player.addEffect(
+        effect.effect,
+        effectDuration,
+        {
+          showParticles: false,
+          amplifier: clampNumber(
+            Math.min(
+              ActiveEffects.amplifier + 1,
+              totalPieces,
+              effect.max_amp,
+              clampNumber(
+                CurrentEffect - 1,
+                0,
+                255
+              )
+            ),
+            0,
+            25
+          )
+        }
+      );
+    }
+  }
+  let noCommandRepeats = [];
+  for (let command of commands) {
+    if (command.no_repeat_id) {
+      if (noCommandRepeats.includes(command.no_repeat_id)) continue;
+      noCommandRepeats.push(command.no_repeat_id);
+    }
+    if (command.disable_check) {
+      const disabledOptions = JSON.parse(world4.getDynamicProperty(PFEDisableConfigName).toString()) ?? PFEDisableConfigDefault;
+      switch (command.disable_check) {
+        case "cactus_radius": {
+          if (disabledOptions.cactusArmorRadius === false) continue;
+          break;
+        }
+        case "death_radius": {
+          if (disabledOptions.deathArmorRadius === false) continue;
+          break;
+        }
+      }
+    }
+    let bind_to = player;
+    switch (command.bind_to) {
+      case "player":
+        break;
+      case "dimension":
+        {
+          bind_to = player.dimension;
+          break;
+        }
+        ;
+    }
+    bind_to.runCommand(command.command);
+  }
+  let compiledRadiusEffects = [];
+  let noRadiusEffectRepeats = [];
+  for (let radiusEffect of radius_effects) {
+    if (radiusEffect.no_repeat_id) {
+      if (noRadiusEffectRepeats.includes(radiusEffect.no_repeat_id)) continue;
+      noRadiusEffectRepeats.push(radiusEffect.no_repeat_id);
+      const SameNoRepeat = radius_effects.filter((effect) => effect.no_repeat_id == radiusEffect.no_repeat_id);
+      let compiledEffect = {
+        effect: radiusEffect.effect,
+        max_radius: radiusEffect.max_radius,
+        mode: radiusEffect.mode,
+        totalAmp: 0,
+        totalRadius: 0,
+        amp: radiusEffect.amp,
+        duration: radiusEffect.duration,
+        effect_self: radiusEffect.effect_self,
+        no_repeat_id: radiusEffect.no_repeat_id,
+        radius_per_piece: radiusEffect.radius_per_piece,
+        selector: radiusEffect.selector,
+        version: radiusEffect.version,
+        max_amp: radiusEffect.max_amp
+      };
+      for (let effect of SameNoRepeat) {
+        let updatedEffect = compiledEffect;
+        updatedEffect.totalAmp = (updatedEffect.totalAmp ?? 0) + (effect.amp ?? 0);
+        updatedEffect.totalRadius = (updatedEffect.totalRadius ?? 0) + (effect.radius_per_piece ?? 0);
+        updatedEffect.max_radius = Math.max(effect.max_radius, radiusEffect.max_radius);
+        updatedEffect.duration = Math.max(effect.duration ?? 0, radiusEffect.duration ?? 0);
+        compiledEffect = updatedEffect;
+        compiledRadiusEffects.push(compiledEffect);
+      }
+      continue;
+    }
+    compiledRadiusEffects.push(radiusEffect);
+  }
+  for (let radiusEffect of compiledRadiusEffects) {
+    let effectDuration = Boolean(radiusEffect.duration) ? Number(radiusEffect.duration) : Number(world4.getDynamicProperty("poke_pfe:setEffectDuration") ?? ArmorEffectDuration);
+    const targets = player.dimension.getPlayers({
+      location: player.location,
+      maxDistance: clampNumber(
+        radiusEffect.totalRadius ?? radiusEffect.radius_per_piece ?? radiusEffect.max_radius,
+        0,
+        radiusEffect.max_radius
+      ),
+      excludeNames: radiusEffect.effect_self ? void 0 : [player.name]
+    });
+    for (let target of targets) {
+      target.addEffect(
+        radiusEffect.effect,
+        effectDuration,
+        {
+          showParticles: false,
+          amplifier: clampNumber(
+            radiusEffect.totalAmp ?? radiusEffect.amp ?? 0,
+            0,
+            radiusEffect.max_amp
+          )
+        }
+      );
+    }
+  }
+}
+function startSetEffects() {
+  return system3.runInterval(() => {
+    if (world4.getDynamicProperty(`poke_pfe:disable_armor_effects`)) return;
+    const customParse = world4.getDynamicProperty(`poke_pfe:custom_effect_parser`) == true ? true : false;
+    for (let player of world4.getAllPlayers()) {
+      if (!player) continue;
+      CheckEffects(player, JSON.stringify(player.getTags()).includes(`novelty:poke`), customParse);
+    }
+  }, Number(world4.getDynamicProperty("poke_pfe:setEffectInterval") ?? 20));
+}
+
+// scripts/config.ts
+function OpenPFEConfig(player) {
+  if (player.playerPermissionLevel == PlayerPermissionLevel.Operator || player.hasTag(`poke_pfe:config`)) {
+    let UI = new ActionFormData3();
+    UI.button({ translate: `translation.poke_pfe.bossEventConfig` }, `textures/poke/common/spawn_enabled`);
+    UI.button({ translate: `translation.poke_pfe.disableConfig` }, `textures/poke/common/blacklist_add`);
+    UI.button({ translate: `%poke_pfe.miscOptions` }, `textures/poke/common/more_options`);
+    UI.show(player).then((response) => {
+      let selection = 0;
+      if (response.selection == selection) {
+        if (world5.getDynamicProperty(PFEBossEventConfigName) == void 0) {
+          world5.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(PFEDefaultBossEventSettings));
+        }
+        PFEBossEventUIMainMenu(player);
+        return;
+      } else selection++;
+      if (response.selection == selection) {
+        PFEDisableConfigMainMenu(player);
+        return;
+      } else selection++;
+      if (response.selection == selection) {
+        let UI2 = new ModalFormData2();
+        UI2.title({ translate: `%poke_pfe.miscOptions` });
+        UI2.label({ translate: `%poke_pfe.setEffects` });
+        UI2.divider();
+        UI2.slider({ translate: `%poke_pfe.effectDuration` }, 1, 30, { valueStep: 1, tooltip: { translate: `%poke_pfe.effectDuration.tooltip` }, defaultValue: Number(world5.getDynamicProperty("poke_pfe:setEffectDuration") ?? ArmorEffectDuration) / 20 });
+        UI2.slider({ translate: `%poke_pfe.applyInterval` }, 1, 10, { valueStep: 1, tooltip: { translate: `%poke_pfe.applyInterval.tooltip` }, defaultValue: Number(world5.getDynamicProperty("poke_pfe:setEffectInterval") ?? 1) / 20 });
+        UI2.show(player).then((response2) => {
+          if (response2.canceled) return;
+          world5.setDynamicProperty("poke_pfe:setEffectDuration", Number(response2.formValues?.at(2) ?? ArmorEffectDuration / 20) * 20);
+          world5.setDynamicProperty("poke_pfe:setEffectInterval", Number(response2.formValues?.at(3) ?? 1) * 20);
+          const intervalId = world5.getDynamicProperty("poke_pfe:setEffectIntervalId");
+          if (intervalId) {
+            system4.runInterval;
+            system4.clearRun(intervalId);
+            world5.setDynamicProperty("poke_pfe:setEffectIntervalId", startSetEffects());
+          }
+        });
+        return;
+      } else selection++;
+      if (response.selection == selection || response.canceled) {
+        return;
+      }
+    });
+  } else {
+    let UI = new ActionFormData3();
+    UI.title({ translate: `translation.poke_pfe.insufficientPerms` });
+    UI.body({ translate: `%translation.poke_pfe.insufficientPerms.desc:\xA7e poke_pfe:config\xA7r
+
+%translation.poke_pfe.insufficientPerms.desc2
+\xA7e/tag @s add poke_pfe:config\xA7r` });
+    UI.button({ translate: `translation.poke_pfe:bossEventClose` }, `textures/poke/common/close`);
+    UI.show(player).then((response) => {
+      return;
+    });
+    return;
+  }
+}
+var PFEDisableConfigName = "poke_pfe:disable_config";
+var PFEDisableConfigVersion = 2;
+var PFEDisableConfigDefault = {
+  "v": PFEDisableConfigVersion,
+  "bounty": true,
+  "cactusArmorRadius": true,
+  "deathArmorRadius": true,
+  "kapowRing": true,
+  "nukeRing": true,
+  "quantumTeleporter": true,
+  "sundial": true,
+  "witherSpawner": true,
+  "waypoints": true,
+  "playerMagnet": true,
+  "cassetteTrader": true
+};
+function PFEDisableConfigMainMenu(player) {
+  let UI = new ActionFormData3();
+  let options = JSON.parse(world5.getDynamicProperty(PFEDisableConfigName).toString());
+  const enabled = `\xA7a
+%translation.poke_pfe.enabled`;
+  const disabled = `\xA7c
+%translation.poke_pfe.disabled`;
+  UI.button({ translate: `%poke_pfe.quantum_teleporter:${options.quantumTeleporter ? enabled : disabled}` }, `textures/poke/pfe/quantum_teleporter`);
+  UI.button({ translate: `%poke_pfe.player_magnet:${options.playerMagnet ? enabled : disabled}` }, `textures/poke/pfe/player_magnet`);
+  UI.button({ translate: `%poke_pfe.kapow_ring:${options.kapowRing ? enabled : disabled}` }, `textures/poke/pfe/kapow_ring`);
+  UI.button({ translate: `%poke_pfe.nuke_ring:${options.nukeRing ? enabled : disabled}` }, `textures/poke/pfe/nuke_ring`);
+  UI.button({ translate: `%poke_pfe.sundial:${options.sundial ? enabled : disabled}` }, `textures/poke/pfe/sundial_1`);
+  UI.button({ translate: `%poke_pfe.wither_spawner:${options.witherSpawner ? enabled : disabled}` }, `textures/poke/pfe/wither_spawner`);
+  UI.button({ translate: `%poke_pfe.bounty:${options.bounty ? enabled : disabled}` }, `textures/poke/pfe/bounty`);
+  UI.button({ translate: `%poke_pfe.waypoint_menu:${options.waypoints ? enabled : disabled}` }, `textures/poke/pfe/waypoint_menu`);
+  UI.button({ translate: `%poke_pfe.set_effects:${world5.getDynamicProperty(`poke_pfe:disable_armor_effects`) == true ? disabled : enabled}` }, `textures/poke/common/effect_particles`);
+  UI.button({ translate: `%translation.poke_pfe.death_armor_radius:${options.deathArmorRadius ? enabled : disabled}` }, `textures/poke/pfe/death_helmet`);
+  UI.button({ translate: `%translation.poke_pfe.cactus_armor_radius:${options.cactusArmorRadius ? enabled : disabled}` }, `textures/poke/pfe/cactus_helmet`);
+  UI.button({ translate: `%translation.poke_pfe.cassette_trader:${options.cassetteTrader ? enabled : disabled}` }, `textures/poke/pfe/cassette_trader_icon`);
+  UI.button({ translate: `translation.poke_pfe:goBack` }, `textures/poke/common/left_arrow`);
+  UI.show(player).then((response) => {
+    let selection = 0;
+    let newProperty = options;
+    if (response.selection == selection) {
+      if (newProperty.quantumTeleporter) {
+        newProperty.quantumTeleporter = false;
+      } else newProperty.quantumTeleporter = true;
+      world5.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
+      PFEDisableConfigMainMenu(player);
+      return;
+    } else selection++;
+    if (response.selection == selection) {
+      if (newProperty.playerMagnet) {
+        newProperty.playerMagnet = false;
+      } else newProperty.playerMagnet = true;
+      world5.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
+      PFEDisableConfigMainMenu(player);
+      return;
+    } else selection++;
+    if (response.selection == selection) {
+      if (newProperty.kapowRing) {
+        newProperty.kapowRing = false;
+      } else newProperty.kapowRing = true;
+      world5.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
+      PFEDisableConfigMainMenu(player);
+      return;
+    } else selection++;
+    if (response.selection == selection) {
+      if (newProperty.nukeRing) {
+        newProperty.nukeRing = false;
+      } else newProperty.nukeRing = true;
+      world5.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
+      PFEDisableConfigMainMenu(player);
+      return;
+    } else selection++;
+    if (response.selection == selection) {
+      if (newProperty.sundial) {
+        newProperty.sundial = false;
+      } else newProperty.sundial = true;
+      world5.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
+      PFEDisableConfigMainMenu(player);
+      return;
+    } else selection++;
+    if (response.selection == selection) {
+      if (newProperty.witherSpawner) {
+        newProperty.witherSpawner = false;
+      } else newProperty.witherSpawner = true;
+      world5.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
+      PFEDisableConfigMainMenu(player);
+      return;
+    } else selection++;
+    if (response.selection == selection) {
+      if (newProperty.bounty) {
+        newProperty.bounty = false;
+      } else newProperty.bounty = true;
+      world5.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
+      PFEDisableConfigMainMenu(player);
+      return;
+    } else selection++;
+    if (response.selection == selection) {
+      if (newProperty.waypoints) {
+        newProperty.waypoints = false;
+      } else newProperty.waypoints = true;
+      newProperty.v = newProperty.v < 2 ? newProperty.v = 2 : newProperty.v;
+      world5.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
+      PFEDisableConfigMainMenu(player);
+      return;
+    } else selection++;
+    if (response.selection == selection) {
+      world5.getDynamicProperty(`poke_pfe:disable_armor_effects`) == false ? world5.setDynamicProperty(`poke_pfe:disable_armor_effects`, true) : world5.setDynamicProperty(`poke_pfe:disable_armor_effects`, false);
+      PFEDisableConfigMainMenu(player);
+      return;
+    } else selection++;
+    if (response.selection == selection) {
+      if (newProperty.deathArmorRadius) {
+        newProperty.deathArmorRadius = false;
+      } else newProperty.deathArmorRadius = true;
+      world5.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
+      PFEDisableConfigMainMenu(player);
+      return;
+    } else selection++;
+    if (response.selection == selection) {
+      if (newProperty.cactusArmorRadius) {
+        newProperty.cactusArmorRadius = false;
+      } else newProperty.cactusArmorRadius = true;
+      world5.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
+      PFEDisableConfigMainMenu(player);
+      return;
+    } else selection++;
+    if (response.selection == selection) {
+      if (newProperty.cactusArmorRadius) {
+        newProperty.cassetteTrader = false;
+      } else newProperty.cassetteTrader = true;
+      world5.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
+      PFEDisableConfigMainMenu(player);
+      return;
+    } else selection++;
+    if (response.canceled || response.selection == selection) {
+      return;
+    }
+  });
+}
+function IsPFEFeatureEnabled(feature) {
+  const DisabledFeatures = JSON.parse(world5.getDynamicProperty(PFEDisableConfigName)?.toString() ?? JSON.stringify(PFEDisableConfigDefault));
+  if (DisabledFeatures[feature] === void 0) {
+    if (PFEDisableConfigDefault[feature] === true) {
+      return true;
+    } else return false;
+  } else if (DisabledFeatures[feature] === true) return true;
+  else return false;
+}
+
 // scripts/time.ts
 var PokeCalendarVersion = 1;
 var PokeCustomEventId = `poke_pfe:customEvents`;
 function PFEHourTimeDownEvents() {
-  let currentTime = new Date(Date.now());
-  let allPlayers = world4.getAllPlayers();
-  let randomPlayer = allPlayers.at(Math.abs(Math.round(Math.random() * (allPlayers.length - 1))));
-  randomPlayer?.dimension.spawnEntity("poke_pfe:cassette_trader", randomPlayer.location).runCommand(`spreadplayers ~ ~ 30 40 @s ~10`);
+  if (IsPFEFeatureEnabled("cassetteTrader")) {
+    let allPlayers = world6.getAllPlayers();
+    let randomPlayer = allPlayers.at(Math.abs(Math.round(Math.random() * (allPlayers.length - 1))));
+    randomPlayer?.dimension.spawnEntity("poke_pfe:cassette_trader", randomPlayer.location).runCommand(`spreadplayers ~ ~ 30 40 @s ~10`);
+  }
 }
 function PFETimeValidation() {
   let currentTime = new Date(Date.now());
   if (currentTime.getMinutes() == 0) {
     PFEHourTimeDownEvents();
   } else {
-    system3.runTimeout(() => {
+    system5.runTimeout(() => {
       PFETimeValidation();
     }, Math.abs(60 - new Date(Date.now()).getSeconds()) * 20);
   }
@@ -3889,8 +4857,8 @@ var PFEDefaultHolidays = [
     v: PokeCalendarVersion
   },
   {
-    name: { text: `Easter` },
-    id: "just:Easter",
+    name: { text: `Christmas` },
+    id: "poke_pfe:xmas",
     dates: [{ month: 11, days: [24, 25] }],
     repeat: true,
     gift: `give @s poke_pfe:present 16`,
@@ -3903,7 +4871,7 @@ var PFEDefaultHolidays = [
 ];
 function PokeTimeCheck(event, player, claimCheck) {
   if (event == null || event.dates == void 0) {
-    PokeErrorScreen(player, void 0, world4.setDynamicProperty(PokeCustomEventId, JSON.stringify([])));
+    PokeErrorScreen(player, void 0, world6.setDynamicProperty(PokeCustomEventId, JSON.stringify([])));
     return;
   }
   let currentTime = new Date(Date.now() + PokeTimeZoneOffset(player));
@@ -3932,7 +4900,7 @@ function PokeTimeCheck(event, player, claimCheck) {
   return false;
 }
 function PokeTimeDebug(player) {
-  let UI = new ActionFormData3();
+  let UI = new ActionFormData4();
   UI.button(`Delete Custom Events`);
   UI.button(`Create 10 Events`);
   UI.button(`Reset Birthday`);
@@ -3944,7 +4912,7 @@ function PokeTimeDebug(player) {
     }
     let selection = 0;
     if (response.selection == selection) {
-      world4.setDynamicProperty(PokeCustomEventId, JSON.stringify([]));
+      world6.setDynamicProperty(PokeCustomEventId, JSON.stringify([]));
       return;
     } else selection++;
     if (response.selection == selection) {
@@ -3960,13 +4928,13 @@ function PokeTimeDebug(player) {
         { id: `custom:9`, dates: [{ month: 0, days: [1, 2, 3, 4, 5] }, { month: 1, days: [6, 7, 8, 9, 10] }], greeting: "generic", name: { text: `Custom Event 9` }, icon: `textures/poke/common/event_default`, repeat: true, gift: void 0, fixedTime: false, v: PokeCalendarVersion },
         { id: `custom:10`, dates: [{ month: 0, days: [1, 2, 3, 4, 5] }, { month: 1, days: [6, 7, 8, 9, 10] }], greeting: "generic", name: { text: `Custom Event 10` }, icon: `textures/poke/common/event_default`, repeat: true, gift: void 0, fixedTime: false, v: PokeCalendarVersion }
       ];
-      let customEvents = world4.getDynamicProperty(PokeCustomEventId);
+      let customEvents = world6.getDynamicProperty(PokeCustomEventId);
       if (typeof customEvents != "string") {
-        world4.setDynamicProperty(PokeCustomEventId, JSON.stringify(newEvents));
+        world6.setDynamicProperty(PokeCustomEventId, JSON.stringify(newEvents));
         return;
       }
       customEvents = JSON.parse(customEvents).concat(newEvents);
-      world4.setDynamicProperty(PokeCustomEventId, JSON.stringify(customEvents));
+      world6.setDynamicProperty(PokeCustomEventId, JSON.stringify(customEvents));
       return;
     } else selection++;
     if (response.selection == selection) {
@@ -3987,20 +4955,20 @@ function PokeTimeDebug(player) {
         { id: `9`, day: time.getDate() - 1, announce: true, month: time.getMonth(), style: "normal", name: `Custom 9` },
         { id: `10`, day: time.getDate() - 1, announce: true, month: time.getMonth(), style: "dev", name: `Custom 10` }
       ];
-      let birthdays = world4.getDynamicProperty(PokeCustomEventId);
+      let birthdays = world6.getDynamicProperty(PokeCustomEventId);
       if (typeof birthdays != "string") {
-        world4.setDynamicProperty(PokeCustomEventId, JSON.stringify(newBirthdays));
+        world6.setDynamicProperty(PokeCustomEventId, JSON.stringify(newBirthdays));
         return;
       }
       birthdays = JSON.parse(birthdays).concat(newBirthdays);
-      world4.setDynamicProperty(`poke_pfe:birthdays`, JSON.stringify(birthdays));
+      world6.setDynamicProperty(`poke_pfe:birthdays`, JSON.stringify(birthdays));
       return;
     } else selection++;
   }));
 }
 function PokeTimeConfigUIMainMenu(player) {
   let currentTime = new Date(Date.now() + PokeTimeZoneOffset(player));
-  let UI = new ActionFormData3();
+  let UI = new ActionFormData4();
   UI.body(
     {
       translate: `translation.poke_pfe:timeUiMainMenuBody`,
@@ -4078,7 +5046,7 @@ function PokeTimeConfigUIMainMenu(player) {
   }));
 }
 function PokeSetBirthday(player) {
-  let UI = new ModalFormData2();
+  let UI = new ModalFormData3();
   let currentBirthday = { day: 1, month: 0, id: player.id, announce: false, name: player.name, style: "normal", year: void 0 };
   if (player.getDynamicProperty(`poke_pfe:birthday`)) {
     UI.title({ translate: `translation.poke_pfe:timeChangeBirthday` });
@@ -4108,7 +5076,7 @@ function PokeSetBirthday(player) {
       id: player.id
     };
     if (response.formValues?.at(2)) {
-      let birthdays = JSON.parse(world4.getDynamicProperty(`poke_pfe:birthdays`).toString());
+      let birthdays = JSON.parse(world6.getDynamicProperty(`poke_pfe:birthdays`).toString());
       for (let i = birthdays.length - 1; i > -1; i--) {
         let birthday = birthdays.at(i);
         if (birthday && (birthday.id == player.id || !birthday.id && birthday.name == player.name)) {
@@ -4118,14 +5086,14 @@ function PokeSetBirthday(player) {
         }
         continue;
       }
-      world4.setDynamicProperty(`poke_pfe:birthdays`, JSON.stringify(birthdays));
+      world6.setDynamicProperty(`poke_pfe:birthdays`, JSON.stringify(birthdays));
       player.setDynamicProperty(`poke_pfe:birthday`, JSON.stringify(newBirthday));
     } else {
-      let birthdays = JSON.parse(world4.getDynamicProperty(`poke_pfe:birthdays`).toString());
+      let birthdays = JSON.parse(world6.getDynamicProperty(`poke_pfe:birthdays`).toString());
       let replaceBirthday = PokeGetObjectById(birthdays, player.id);
       if (replaceBirthday) {
         birthdays = birthdays.slice(replaceBirthday.position, replaceBirthday.position);
-        world4.setDynamicProperty(`poke_pfe:birthdays`, JSON.stringify(birthdays));
+        world6.setDynamicProperty(`poke_pfe:birthdays`, JSON.stringify(birthdays));
       }
       player.setDynamicProperty(`poke_pfe:birthday`, JSON.stringify(newBirthday));
     }
@@ -4240,7 +5208,7 @@ function PokeTimeZoneOffset(player) {
   return 0;
 }
 function PokeSetTimeZone(player) {
-  let Ui = new ActionFormData3();
+  let Ui = new ActionFormData4();
   let Timezones = [
     {
       "name": "\xA7uUTC \xA7a+\xA7u14:00\xA7r:\nLINT",
@@ -4458,7 +5426,7 @@ function PokeTimeGreeting(date, player, event, generic) {
 }
 function PokeTimeEventInfoMenu(event, player) {
   let timeLeft = ``;
-  let UI = new ActionFormData3();
+  let UI = new ActionFormData4();
   let giftString = { translate: `translation.poke_pfe:timeEventGift` };
   if (!event.gift) {
     giftString = { text: `` };
@@ -4469,13 +5437,13 @@ function PokeTimeEventInfoMenu(event, player) {
 ` }, { translate: `translation.poke_pfe:timeEventDates` }].concat(PokeTimeDateString(event).concat([{ text: `
 ` }, giftString])) }
   );
-  if (!event.nonModifiable && (player.playerPermissionLevel == PlayerPermissionLevel.Operator || player.hasTag(`poke-event_manager`))) {
+  if (!event.nonModifiable && (player.playerPermissionLevel == PlayerPermissionLevel2.Operator || player.hasTag(`poke-event_manager`))) {
     UI.button({ translate: `translation.poke_pfe:timeEditEvent` }, `textures/poke/common/edit`);
   }
   UI.button({ translate: `translation.poke_pfe:goBack` }, `textures/poke/common/left_arrow`);
   UI.show(player).then(((response) => {
     let selection = 0;
-    if (!event.nonModifiable && (player.playerPermissionLevel == PlayerPermissionLevel.Operator || player.hasTag(`poke-event_manager`))) {
+    if (!event.nonModifiable && (player.playerPermissionLevel == PlayerPermissionLevel2.Operator || player.hasTag(`poke-event_manager`))) {
       if (response.selection == selection) {
         PokeEventOptions(player, event);
         return;
@@ -4488,7 +5456,7 @@ function PokeTimeEventInfoMenu(event, player) {
   }));
 }
 function PokeTimeUpcomingEventList(player, page) {
-  let UI = new ActionFormData3();
+  let UI = new ActionFormData4();
   let events = PokeTimeGetAllEvents();
   let maxPerPage = 10;
   let startPage = page * maxPerPage;
@@ -4546,14 +5514,14 @@ function PokeTimeUpcomingEventList(player, page) {
 }
 function PokeTimeAdditionalOptions(player) {
   let currentTime = new Date(Date.now() + PokeTimeZoneOffset(player));
-  let UI = new ActionFormData3();
+  let UI = new ActionFormData4();
   if (player.getDynamicProperty(`poke_pfe:timezone`)) {
     UI.button({ translate: `translation.poke_pfe:timeChangeTimezone` }, PokeTimeIcon(currentTime));
   }
   if (player.getDynamicProperty(`poke_pfe:birthday`)) {
     UI.button({ translate: `translation.poke_pfe:timeChangeBirthday` }, `textures/poke/common/birthday_cake`);
   }
-  if (player.playerPermissionLevel == PlayerPermissionLevel.Operator || player.hasTag(`poke-event_manager`)) {
+  if (player.playerPermissionLevel == PlayerPermissionLevel2.Operator || player.hasTag(`poke-event_manager`)) {
     UI.button({ translate: `translation.poke_pfe:timeCreateEvent` }, `textures/poke/common/create_event`);
   }
   UI.button({ translate: "translation.poke_pfe:goBack" }, `textures/poke/common/left_arrow`);
@@ -4571,7 +5539,7 @@ function PokeTimeAdditionalOptions(player) {
         return;
       } else selection++;
     }
-    if (player.playerPermissionLevel == PlayerPermissionLevel.Operator || player.hasTag(`poke-event_manager`)) {
+    if (player.playerPermissionLevel == PlayerPermissionLevel2.Operator || player.hasTag(`poke-event_manager`)) {
       if (response.selection == selection) {
         PokeTimeCreateEvent(player);
         return;
@@ -4584,7 +5552,7 @@ function PokeTimeAdditionalOptions(player) {
   }));
 }
 function PokeTimeGetAllEvents() {
-  return PFEDefaultHolidays.concat(JSON.parse(world4.getDynamicProperty(PokeCustomEventId).toString()));
+  return PFEDefaultHolidays.concat(JSON.parse(world6.getDynamicProperty(PokeCustomEventId).toString()));
 }
 function PokeTimeDateString(event, player) {
   let returnString = [];
@@ -4610,7 +5578,7 @@ function PokeTimeDateString(event, player) {
   return returnString;
 }
 function PokeTimeCreateEvent(player, event) {
-  let UI = new ModalFormData2();
+  let UI = new ModalFormData3();
   let eventName = ``;
   let providedEvent = false;
   if (!event) {
@@ -4654,7 +5622,7 @@ function PokeTimeCreateEvent(player, event) {
         if (response.formValues?.at(0)?.toString().startsWith(`%`)) {
           name = { translate: response.formValues.at(1)?.toString().substring(1) };
         }
-        let newEventList = world4.getDynamicProperty(PokeCustomEventId);
+        let newEventList = world6.getDynamicProperty(PokeCustomEventId);
         let replaceEvent = void 0;
         if (typeof newEventList == "string") {
           newEventList = JSON.parse(newEventList) ?? [];
@@ -4665,7 +5633,7 @@ function PokeTimeCreateEvent(player, event) {
         if (!newEventList || typeof newEventList == "string") {
           return;
         }
-        if (world4.getDynamicProperty(PokeCustomEventId) != void 0 || world4.getDynamicProperty(PokeCustomEventId) != `[]`) {
+        if (world6.getDynamicProperty(PokeCustomEventId) != void 0 || world6.getDynamicProperty(PokeCustomEventId) != `[]`) {
         }
         let event2 = replaceEvent?.value;
         if (replaceEvent) {
@@ -4700,7 +5668,7 @@ function PokeTimeCreateEvent(player, event) {
           newEventList = newEventList.concat([event2]);
         }
         if (newEventList?.at(0))
-          world4.setDynamicProperty(PokeCustomEventId, JSON.stringify(newEventList));
+          world6.setDynamicProperty(PokeCustomEventId, JSON.stringify(newEventList));
       } else {
         let id = response.formValues?.at(0)?.toString().replace(`custom:`, "").replace(" ", "");
         if (!id) {
@@ -4723,8 +5691,8 @@ function PokeTimeCreateEvent(player, event) {
           greeting: event.greeting,
           v: PokeCalendarVersion
         };
-        let customEvents = world4.getDynamicProperty(PokeCustomEventId)?.toString().replace(JSON.stringify(event), JSON.stringify(newEvent));
-        world4.setDynamicProperty(PokeCustomEventId, customEvents);
+        let customEvents = world6.getDynamicProperty(PokeCustomEventId)?.toString().replace(JSON.stringify(event), JSON.stringify(newEvent));
+        world6.setDynamicProperty(PokeCustomEventId, customEvents);
       }
       PokeEventOptions(player, event);
       return;
@@ -4732,7 +5700,7 @@ function PokeTimeCreateEvent(player, event) {
   }));
 }
 function PokeEventOptions(player, event) {
-  let UI = new ActionFormData3();
+  let UI = new ActionFormData4();
   UI.title({ translate: `translation.poke_pfe:timeEventOptionsTitle` });
   if (event.gift) {
     UI.button({ translate: `translation.poke_pfe:timeEditEventGift` }, "textures/poke/common/edit_gift");
@@ -4772,7 +5740,7 @@ function PokeEventOptions(player, event) {
   }));
 }
 function PokeTimeEditGift(player, event) {
-  let UI = new ModalFormData2();
+  let UI = new ModalFormData3();
   UI.title({ translate: `translation.poke_pfe:timeEditGiftTitle` });
   let currentGift = event.gift;
   if (!currentGift) currentGift = ``;
@@ -4802,13 +5770,13 @@ function PokeTimeEditGift(player, event) {
       nonModifiable: event.nonModifiable,
       v: PokeCalendarVersion
     };
-    let customEvents = world4.getDynamicProperty(PokeCustomEventId)?.toString().replace(JSON.stringify(event), JSON.stringify(newEvent));
-    world4.setDynamicProperty(PokeCustomEventId, customEvents);
+    let customEvents = world6.getDynamicProperty(PokeCustomEventId)?.toString().replace(JSON.stringify(event), JSON.stringify(newEvent));
+    world6.setDynamicProperty(PokeCustomEventId, customEvents);
     PokeEventOptions(player, newEvent);
   }));
 }
 function PokeTimeEditGreeting(player, event) {
-  let UI = new ModalFormData2();
+  let UI = new ModalFormData3();
   UI.title({ translate: `translation.poke_pfe:timeEditGreetingTitle` });
   let greeting = `generic`;
   if (typeof event.greeting != "string" && typeof event.greeting != "undefined") {
@@ -4845,14 +5813,14 @@ function PokeTimeEditGreeting(player, event) {
       nonModifiable: event.nonModifiable,
       v: PokeCalendarVersion
     };
-    let customEvents = world4.getDynamicProperty(PokeCustomEventId)?.toString().replace(JSON.stringify(event), JSON.stringify(newEvent));
-    world4.setDynamicProperty(PokeCustomEventId, customEvents);
+    let customEvents = world6.getDynamicProperty(PokeCustomEventId)?.toString().replace(JSON.stringify(event), JSON.stringify(newEvent));
+    world6.setDynamicProperty(PokeCustomEventId, customEvents);
     PokeEventOptions(player, newEvent);
     return;
   }));
 }
 function PokeTimeDeleteEvent(player, event) {
-  let UI = new ModalFormData2();
+  let UI = new ModalFormData3();
   UI.title({ translate: `translation.poke_pfe:timeDeleteEventTitle`, with: [event.id] });
   UI.textField({ translate: `translation.poke_pfe:timeDeleteEventConfirmField` }, ``);
   UI.show(player).then(((response) => {
@@ -4864,934 +5832,16 @@ function PokeTimeDeleteEvent(player, event) {
         PokeErrorScreen(player, { translate: `translation.poke_pfe:timeErrorIncorrectDeleteId` }, PokeEventOptions(player, event));
         return;
       }
-      let customEvents = JSON.parse(world4.getDynamicProperty(PokeCustomEventId).toString() ?? "[]");
+      let customEvents = JSON.parse(world6.getDynamicProperty(PokeCustomEventId).toString() ?? "[]");
       let replacedEvent = PokeGetObjectById(customEvents, event.id);
       if (!replacedEvent) {
         return;
       }
       let newEvents = JSON.stringify(customEvents);
       newEvents = newEvents.replace(JSON.stringify(replacedEvent.value), ``).replace(`,,`, `,`).replace(`,]`, `]`).replace(`[,`, `[`);
-      world4.setDynamicProperty(PokeCustomEventId, newEvents);
+      world6.setDynamicProperty(PokeCustomEventId, newEvents);
     }
   }));
-}
-
-// scripts/config.ts
-import { PlayerPermissionLevel as PlayerPermissionLevel2, system as system5, world as world6 } from "@minecraft/server";
-import { ActionFormData as ActionFormData4, ModalFormData as ModalFormData3 } from "@minecraft/server-ui";
-
-// node_modules/@minecraft/math/lib/general/clamp.js
-function clampNumber(val, min, max) {
-  return Math.min(Math.max(val, min), max);
-}
-
-// node_modules/@minecraft/math/lib/vector3/coreHelpers.js
-var Vector3Utils = class _Vector3Utils {
-  /**
-   * equals
-   *
-   * Check the equality of two vectors
-   */
-  static equals(v1, v2) {
-    return v1.x === v2.x && v1.y === v2.y && v1.z === v2.z;
-  }
-  /**
-   * add
-   *
-   * Add two vectors to produce a new vector
-   */
-  static add(v1, v2) {
-    return { x: v1.x + (v2.x ?? 0), y: v1.y + (v2.y ?? 0), z: v1.z + (v2.z ?? 0) };
-  }
-  /**
-   * subtract
-   *
-   * Subtract two vectors to produce a new vector (v1-v2)
-   */
-  static subtract(v1, v2) {
-    return { x: v1.x - (v2.x ?? 0), y: v1.y - (v2.y ?? 0), z: v1.z - (v2.z ?? 0) };
-  }
-  /** scale
-   *
-   * Multiple all entries in a vector by a single scalar value producing a new vector
-   */
-  static scale(v1, scale) {
-    return { x: v1.x * scale, y: v1.y * scale, z: v1.z * scale };
-  }
-  /**
-   * dot
-   *
-   * Calculate the dot product of two vectors
-   */
-  static dot(a, b) {
-    return a.x * b.x + a.y * b.y + a.z * b.z;
-  }
-  /**
-   * cross
-   *
-   * Calculate the cross product of two vectors. Returns a new vector.
-   */
-  static cross(a, b) {
-    return { x: a.y * b.z - a.z * b.y, y: a.z * b.x - a.x * b.z, z: a.x * b.y - a.y * b.x };
-  }
-  /**
-   * magnitude
-   *
-   * The magnitude of a vector
-   */
-  static magnitude(v) {
-    return Math.sqrt(v.x ** 2 + v.y ** 2 + v.z ** 2);
-  }
-  /**
-   * distance
-   *
-   * Calculate the distance between two vectors
-   */
-  static distance(a, b) {
-    return _Vector3Utils.magnitude(_Vector3Utils.subtract(a, b));
-  }
-  /**
-   * normalize
-   *
-   * Takes a vector 3 and normalizes it to a unit vector
-   */
-  static normalize(v) {
-    const mag = _Vector3Utils.magnitude(v);
-    return { x: v.x / mag, y: v.y / mag, z: v.z / mag };
-  }
-  /**
-   * floor
-   *
-   * Floor the components of a vector to produce a new vector
-   */
-  static floor(v) {
-    return { x: Math.floor(v.x), y: Math.floor(v.y), z: Math.floor(v.z) };
-  }
-  /**
-   * toString
-   *
-   * Create a string representation of a vector3
-   */
-  static toString(v, options) {
-    const decimals = options?.decimals ?? 2;
-    const str = [v.x.toFixed(decimals), v.y.toFixed(decimals), v.z.toFixed(decimals)];
-    return str.join(options?.delimiter ?? ", ");
-  }
-  /**
-   * fromString
-   *
-   * Gets a Vector3 from the string representation produced by {@link Vector3Utils.toString}. If any numeric value is not a number
-   * or the format is invalid, undefined is returned.
-   * @param str - The string to parse
-   * @param delimiter - The delimiter used to separate the components. Defaults to the same as the default for {@link Vector3Utils.toString}
-   */
-  static fromString(str, delimiter = ",") {
-    const parts = str.split(delimiter);
-    if (parts.length !== 3) {
-      return void 0;
-    }
-    const output = parts.map((part) => parseFloat(part));
-    if (output.some((part) => isNaN(part))) {
-      return void 0;
-    }
-    return { x: output[0], y: output[1], z: output[2] };
-  }
-  /**
-   * clamp
-   *
-   * Clamps the components of a vector to limits to produce a new vector
-   */
-  static clamp(v, limits) {
-    return {
-      x: clampNumber(v.x, limits?.min?.x ?? Number.MIN_SAFE_INTEGER, limits?.max?.x ?? Number.MAX_SAFE_INTEGER),
-      y: clampNumber(v.y, limits?.min?.y ?? Number.MIN_SAFE_INTEGER, limits?.max?.y ?? Number.MAX_SAFE_INTEGER),
-      z: clampNumber(v.z, limits?.min?.z ?? Number.MIN_SAFE_INTEGER, limits?.max?.z ?? Number.MAX_SAFE_INTEGER)
-    };
-  }
-  /**
-   * lerp
-   *
-   * Constructs a new vector using linear interpolation on each component from two vectors.
-   */
-  static lerp(a, b, t) {
-    return { x: a.x + (b.x - a.x) * t, y: a.y + (b.y - a.y) * t, z: a.z + (b.z - a.z) * t };
-  }
-  /**
-   * slerp
-   *
-   * Constructs a new vector using spherical linear interpolation on each component from two vectors.
-   */
-  static slerp(a, b, t) {
-    const theta = Math.acos(_Vector3Utils.dot(a, b));
-    const sinTheta = Math.sin(theta);
-    const ta = Math.sin((1 - t) * theta) / sinTheta;
-    const tb = Math.sin(t * theta) / sinTheta;
-    return _Vector3Utils.add(_Vector3Utils.scale(a, ta), _Vector3Utils.scale(b, tb));
-  }
-  /**
-   * multiply
-   *
-   * Element-wise multiplication of two vectors together.
-   * Not to be confused with {@link Vector3Utils.dot} product or {@link Vector3Utils.cross} product
-   */
-  static multiply(a, b) {
-    return { x: a.x * b.x, y: a.y * b.y, z: a.z * b.z };
-  }
-  /**
-   * rotateX
-   *
-   * Rotates the vector around the x axis counterclockwise (left hand rule)
-   * @param a - Angle in radians
-   */
-  static rotateX(v, a) {
-    const cos = Math.cos(a);
-    const sin = Math.sin(a);
-    return { x: v.x, y: v.y * cos - v.z * sin, z: v.z * cos + v.y * sin };
-  }
-  /**
-   * rotateY
-   *
-   * Rotates the vector around the y axis counterclockwise (left hand rule)
-   * @param a - Angle in radians
-   */
-  static rotateY(v, a) {
-    const cos = Math.cos(a);
-    const sin = Math.sin(a);
-    return { x: v.x * cos + v.z * sin, y: v.y, z: v.z * cos - v.x * sin };
-  }
-  /**
-   * rotateZ
-   *
-   * Rotates the vector around the z axis counterclockwise (left hand rule)
-   * @param a - Angle in radians
-   */
-  static rotateZ(v, a) {
-    const cos = Math.cos(a);
-    const sin = Math.sin(a);
-    return { x: v.x * cos - v.y * sin, y: v.y * cos + v.x * sin, z: v.z };
-  }
-};
-
-// scripts/armorEffects.ts
-import { EntityComponentTypes as EntityComponentTypes2, EquipmentSlot as EquipmentSlot2, ItemStack as ItemStack2, system as system4, world as world5 } from "@minecraft/server";
-var ArmorEffectDuration = 300;
-var SensitiveArmorEffectDuration = 500;
-var PFECustomArmorEffectDynamicProperty = `poke_pfe:custom_effects`;
-var PFESetEffectId = "poke_pfe:set_effects";
-function CheckEffects(player, additionalOptions, customParse) {
-  const Helmet = player.getComponent(EntityComponentTypes2.Equippable)?.getEquipment(EquipmentSlot2.Head) ?? void 0;
-  const Chestplate = player.getComponent(EntityComponentTypes2.Equippable)?.getEquipment(EquipmentSlot2.Chest) ?? void 0;
-  const Leggings = player.getComponent(EntityComponentTypes2.Equippable)?.getEquipment(EquipmentSlot2.Legs) ?? void 0;
-  const Boots = player.getComponent(EntityComponentTypes2.Equippable)?.getEquipment(EquipmentSlot2.Feet) ?? void 0;
-  const Offhand = player.getComponent(EntityComponentTypes2.Equippable)?.getEquipment(EquipmentSlot2.Offhand) ?? void 0;
-  const Mainhand = player.getComponent(EntityComponentTypes2.Equippable)?.getEquipment(EquipmentSlot2.Mainhand) ?? void 0;
-  const Equipment = [Helmet, Chestplate, Leggings, Boots, Offhand, Mainhand];
-  let effects = [];
-  let radius_effects = [];
-  let commands = [];
-  const HelmetComponent = Helmet?.getComponent(PFESetEffectId)?.customComponentParameters.params;
-  const ChestplateComponent = Chestplate?.getComponent(PFESetEffectId)?.customComponentParameters.params;
-  const LeggingsComponent = Leggings?.getComponent(PFESetEffectId)?.customComponentParameters.params;
-  const BootsComponent = Boots?.getComponent(PFESetEffectId)?.customComponentParameters.params;
-  const OffhandComponent = Offhand?.getComponent(PFESetEffectId)?.customComponentParameters.params;
-  const MainhandComponent = Mainhand?.getComponent(PFESetEffectId)?.customComponentParameters.params;
-  const EquipmentComponents = [HelmetComponent, ChestplateComponent, LeggingsComponent, BootsComponent, OffhandComponent, MainhandComponent];
-  for (let component of EquipmentComponents) {
-    if (!component) continue;
-    for (let effect of component) {
-      switch (effect.mode) {
-        case "radius_effect": {
-          radius_effects.push(effect);
-          break;
-        }
-        case "command": {
-          commands.push(effect);
-          break;
-        }
-        default: {
-          effects.push(effect);
-          break;
-        }
-      }
-    }
-  }
-  let totalPieces = -1;
-  let totalStrength = 0;
-  let totalSpeed = 0;
-  let totalResistance = 0;
-  let totalRegeneration = 0;
-  let totalJumpBoost = 0;
-  let totalSlowness = 0;
-  let totalVillageHero = 0;
-  let totalSaturation = 0;
-  let totalHaste = 0;
-  let totalAbsorption = 0;
-  let totalBadOmen = 0;
-  let totalBlindness = 0;
-  let totalConduitPower = 0;
-  let totalDarkness = 0;
-  let totalFatalPoison = 0;
-  let totalFireResistance = 0;
-  let totalHealthBoost = 0;
-  let totalHunger = 0;
-  let totalInfested = 0;
-  let totalInstantDamage = 0;
-  let totalInstantHealth = 0;
-  let totalInvisibility = 0;
-  let totalLevitation = 0;
-  let totalMiningFatigue = 0;
-  let totalNausea = 0;
-  let totalNightVision = 0;
-  let totalOozing = 0;
-  let totalPoison = 0;
-  let totalRaidOmen = 0;
-  let totalSlowFalling = 0;
-  let totalTrialOmen = 0;
-  let totalWaterBreathing = 0;
-  let totalWeakness = 0;
-  let totalWeaving = 0;
-  let totalWindCharged = 0;
-  let totalWither = 0;
-  let customEffects = JSON.parse(world5.getDynamicProperty(PFECustomArmorEffectDynamicProperty).toString());
-  if (additionalOptions) {
-    const NoveltyTags = player.getTags().filter((tag) => tag.includes(`novelty:poke`));
-    for (let i = NoveltyTags.length; i > -1; i--) {
-      const tag = NoveltyTags.at(i);
-      if (!tag) continue;
-      const item = new ItemStack2(tag.substring(8), 1);
-      totalPieces += 1;
-      switch (true) {
-        default:
-          {
-            let passed = false;
-            if (customEffects.length > 0) {
-              for (let customEffect of customEffects) {
-                if (!customEffect.mode || customEffect.mode != "tag") {
-                  totalPieces -= 1;
-                  continue;
-                }
-                ;
-                if (item.hasTag(customEffect.tag)) {
-                  effects = effects.concat(customEffect.effects);
-                  passed = true;
-                }
-              }
-            }
-            totalPieces -= passed ? 0 : 1;
-            break;
-          }
-          ;
-      }
-      continue;
-    }
-  }
-  let position = 0;
-  if (customEffects.length > 0) {
-    for (let item of Equipment) {
-      if (!item) {
-        position += 1;
-        continue;
-      }
-      totalPieces += 1;
-      let passed = false;
-      for (let customEffect of customEffects) {
-        if (customEffect.mode == "lore" && JSON.stringify(item.getLore()).includes(customEffect.tag) || (!customEffect.mode || customEffect.mode == "tag") && item.hasTag(customEffect.tag)) {
-          effects = effects.concat(customEffect.effects);
-          passed = true;
-        }
-      }
-      passed || EquipmentComponents.at(position) ? totalPieces : totalPieces -= 1;
-      position += 1;
-    }
-  }
-  for (let effect of effects) {
-    switch (effect.effect) {
-      case MinecraftEffectTypes.Absorption: {
-        totalAbsorption += 1;
-        break;
-      }
-      case MinecraftEffectTypes.BadOmen: {
-        totalBadOmen += 1;
-        break;
-      }
-      case MinecraftEffectTypes.Blindness: {
-        totalBlindness += 1;
-        break;
-      }
-      case MinecraftEffectTypes.ConduitPower: {
-        totalConduitPower += 1;
-        break;
-      }
-      case MinecraftEffectTypes.Darkness: {
-        totalDarkness += 1;
-        break;
-      }
-      case MinecraftEffectTypes.FatalPoison: {
-        totalFatalPoison += 1;
-        break;
-      }
-      case MinecraftEffectTypes.FireResistance: {
-        totalFireResistance += 1;
-        break;
-      }
-      case MinecraftEffectTypes.Haste: {
-        totalHaste += 1;
-        break;
-      }
-      case MinecraftEffectTypes.HealthBoost: {
-        totalHealthBoost += 1;
-        break;
-      }
-      case MinecraftEffectTypes.Hunger: {
-        totalHunger += 1;
-        break;
-      }
-      case MinecraftEffectTypes.Infested: {
-        totalInfested += 1;
-        break;
-      }
-      case MinecraftEffectTypes.InstantDamage: {
-        totalInstantDamage += 1;
-        break;
-      }
-      case MinecraftEffectTypes.InstantHealth: {
-        totalInstantHealth += 1;
-        break;
-      }
-      case MinecraftEffectTypes.Invisibility: {
-        totalInvisibility += 1;
-        break;
-      }
-      case MinecraftEffectTypes.JumpBoost: {
-        totalJumpBoost += 1;
-        break;
-      }
-      case MinecraftEffectTypes.Levitation: {
-        totalLevitation += 1;
-        break;
-      }
-      case MinecraftEffectTypes.MiningFatigue: {
-        totalMiningFatigue += 1;
-        break;
-      }
-      case MinecraftEffectTypes.Nausea: {
-        totalNausea += 1;
-        break;
-      }
-      case MinecraftEffectTypes.NightVision: {
-        totalNightVision += 1;
-        break;
-      }
-      case MinecraftEffectTypes.Oozing: {
-        totalOozing += 1;
-        break;
-      }
-      case MinecraftEffectTypes.Poison: {
-        totalPoison += 1;
-        break;
-      }
-      case MinecraftEffectTypes.RaidOmen: {
-        totalRaidOmen += 1;
-        break;
-      }
-      case MinecraftEffectTypes.Regeneration: {
-        totalRegeneration += 1;
-        break;
-      }
-      case MinecraftEffectTypes.Resistance: {
-        totalResistance += 1;
-        break;
-      }
-      case MinecraftEffectTypes.Saturation: {
-        totalSaturation += 1;
-        break;
-      }
-      case MinecraftEffectTypes.SlowFalling: {
-        totalSlowFalling += 1;
-        break;
-      }
-      case MinecraftEffectTypes.Slowness: {
-        totalSlowness += 1;
-        break;
-      }
-      case MinecraftEffectTypes.Speed: {
-        totalSpeed += 1;
-        break;
-      }
-      case MinecraftEffectTypes.Strength: {
-        totalStrength += 1;
-        break;
-      }
-      case MinecraftEffectTypes.TrialOmen: {
-        totalTrialOmen += 1;
-        break;
-      }
-      case MinecraftEffectTypes.VillageHero: {
-        totalVillageHero += 1;
-        break;
-      }
-      case MinecraftEffectTypes.WaterBreathing: {
-        totalWaterBreathing += 1;
-        break;
-      }
-      case MinecraftEffectTypes.Weakness: {
-        totalWeakness += 1;
-        break;
-      }
-      case MinecraftEffectTypes.Weaving: {
-        totalWeaving += 1;
-        break;
-      }
-      case MinecraftEffectTypes.WindCharged: {
-        totalWindCharged += 1;
-        break;
-      }
-      case MinecraftEffectTypes.Wither: {
-        totalWither += 1;
-        break;
-      }
-      default:
-        break;
-    }
-  }
-  for (let effect of effects) {
-    let effectDuration = Number(world5.getDynamicProperty("poke_pfe:setEffectDuration") ?? ArmorEffectDuration);
-    let ActiveEffects = player.getEffect(effect.effect) ?? false;
-    if (!ActiveEffects) {
-      player.addEffect(effect.effect, effectDuration, { showParticles: false, amplifier: 0 });
-    } else {
-      let CurrentEffect = 0;
-      switch (effect.effect) {
-        case MinecraftEffectTypes.Absorption: {
-          CurrentEffect = totalAbsorption;
-          break;
-        }
-        case MinecraftEffectTypes.BadOmen: {
-          CurrentEffect = totalBadOmen;
-          break;
-        }
-        case MinecraftEffectTypes.Blindness: {
-          CurrentEffect = totalBlindness;
-          break;
-        }
-        case MinecraftEffectTypes.ConduitPower: {
-          CurrentEffect = totalConduitPower;
-          effectDuration = SensitiveArmorEffectDuration;
-          break;
-        }
-        case MinecraftEffectTypes.Darkness: {
-          CurrentEffect = totalDarkness;
-          break;
-        }
-        case MinecraftEffectTypes.FatalPoison: {
-          CurrentEffect = totalFatalPoison;
-          break;
-        }
-        case MinecraftEffectTypes.FireResistance: {
-          CurrentEffect = totalFireResistance;
-          break;
-        }
-        case MinecraftEffectTypes.Haste: {
-          CurrentEffect = totalHaste;
-          break;
-        }
-        case MinecraftEffectTypes.HealthBoost: {
-          CurrentEffect = totalHealthBoost;
-          break;
-        }
-        case MinecraftEffectTypes.Hunger: {
-          CurrentEffect = totalHunger;
-          break;
-        }
-        case MinecraftEffectTypes.Infested: {
-          CurrentEffect = totalInfested;
-          break;
-        }
-        case MinecraftEffectTypes.InstantDamage: {
-          CurrentEffect = totalInstantDamage;
-          break;
-        }
-        case MinecraftEffectTypes.InstantHealth: {
-          CurrentEffect = totalInstantHealth;
-          break;
-        }
-        case MinecraftEffectTypes.Invisibility: {
-          CurrentEffect = totalInvisibility;
-          break;
-        }
-        case MinecraftEffectTypes.JumpBoost: {
-          CurrentEffect = totalJumpBoost;
-          break;
-        }
-        case MinecraftEffectTypes.Levitation: {
-          CurrentEffect = totalLevitation;
-          break;
-        }
-        case MinecraftEffectTypes.MiningFatigue: {
-          CurrentEffect = totalMiningFatigue;
-          break;
-        }
-        case MinecraftEffectTypes.Nausea: {
-          CurrentEffect = totalNausea;
-          break;
-        }
-        case MinecraftEffectTypes.NightVision: {
-          CurrentEffect = totalNightVision;
-          effectDuration = SensitiveArmorEffectDuration;
-          break;
-        }
-        case MinecraftEffectTypes.Oozing: {
-          CurrentEffect = totalOozing;
-          break;
-        }
-        case MinecraftEffectTypes.Poison: {
-          CurrentEffect = totalPoison;
-          break;
-        }
-        case MinecraftEffectTypes.RaidOmen: {
-          CurrentEffect = totalRaidOmen;
-          break;
-        }
-        case MinecraftEffectTypes.Regeneration: {
-          CurrentEffect = totalRegeneration;
-          break;
-        }
-        case MinecraftEffectTypes.Resistance: {
-          CurrentEffect = totalResistance;
-          break;
-        }
-        case MinecraftEffectTypes.Saturation: {
-          CurrentEffect = totalSaturation;
-          break;
-        }
-        case MinecraftEffectTypes.SlowFalling: {
-          CurrentEffect = totalSlowFalling;
-          break;
-        }
-        case MinecraftEffectTypes.Slowness: {
-          CurrentEffect = totalSlowness;
-          break;
-        }
-        case MinecraftEffectTypes.Speed: {
-          CurrentEffect = totalSpeed;
-          break;
-        }
-        case MinecraftEffectTypes.Strength: {
-          CurrentEffect = totalStrength;
-          break;
-        }
-        case MinecraftEffectTypes.TrialOmen: {
-          CurrentEffect = totalTrialOmen;
-          break;
-        }
-        case MinecraftEffectTypes.VillageHero: {
-          CurrentEffect = totalVillageHero;
-          break;
-        }
-        case MinecraftEffectTypes.WaterBreathing: {
-          CurrentEffect = totalWaterBreathing;
-          break;
-        }
-        case MinecraftEffectTypes.Weakness: {
-          CurrentEffect = totalWeakness;
-          break;
-        }
-        case MinecraftEffectTypes.Weaving: {
-          CurrentEffect = totalWeaving;
-          break;
-        }
-        case MinecraftEffectTypes.WindCharged: {
-          CurrentEffect = totalWindCharged;
-          break;
-        }
-        case MinecraftEffectTypes.Wither: {
-          CurrentEffect = totalWither;
-          break;
-        }
-        default:
-          break;
-      }
-      player.addEffect(
-        effect.effect,
-        effectDuration,
-        {
-          showParticles: false,
-          amplifier: clampNumber(Math.min(ActiveEffects.amplifier + 1, totalPieces, effect.max_amp, clampNumber(CurrentEffect - 1, 0, 255)), 0, 255)
-        }
-      );
-    }
-  }
-  let noCommandRepeats = [];
-  for (let command of commands) {
-    if (command.no_repeat_id) {
-      if (noCommandRepeats.includes(command.no_repeat_id)) continue;
-      noCommandRepeats.push(command.no_repeat_id);
-    }
-    if (command.disable_check) {
-      const disabledOptions = JSON.parse(world5.getDynamicProperty(PFEDisableConfigName).toString()) ?? PFEDisableConfigDefault;
-      switch (command.disable_check) {
-        case "cactus_radius": {
-          if (disabledOptions.cactusArmorRadius === false) continue;
-          break;
-        }
-        case "death_radius": {
-          if (disabledOptions.deathArmorRadius === false) continue;
-          break;
-        }
-      }
-    }
-    let bind_to = player;
-    switch (command.bind_to) {
-      case "player":
-        break;
-      case "dimension":
-        {
-          bind_to = player.dimension;
-          break;
-        }
-        ;
-    }
-    bind_to.runCommand(command.command);
-  }
-  let compiledRadiusEffects = [];
-  let noRadiusEffectRepeats = [];
-  for (let radiusEffect of radius_effects) {
-    if (radiusEffect.no_repeat_id) {
-      if (noRadiusEffectRepeats.includes(radiusEffect.no_repeat_id)) continue;
-      noRadiusEffectRepeats.push(radiusEffect.no_repeat_id);
-      const SameNoRepeat = radius_effects.filter((effect) => effect.no_repeat_id == radiusEffect.no_repeat_id);
-      let compiledEffect = {
-        effect: radiusEffect.effect,
-        max_radius: radiusEffect.max_radius,
-        mode: radiusEffect.mode,
-        totalAmp: 0,
-        totalRadius: 0,
-        amp: radiusEffect.amp,
-        duration: radiusEffect.duration,
-        effect_self: radiusEffect.effect_self,
-        no_repeat_id: radiusEffect.no_repeat_id,
-        radius_per_piece: radiusEffect.radius_per_piece,
-        selector: radiusEffect.selector,
-        version: radiusEffect.version,
-        max_amp: radiusEffect.max_amp
-      };
-      for (let effect of SameNoRepeat) {
-        let updatedEffect = compiledEffect;
-        updatedEffect.totalAmp = (updatedEffect.totalAmp ?? 0) + (effect.amp ?? 0);
-        updatedEffect.totalRadius = (updatedEffect.totalRadius ?? 0) + (effect.radius_per_piece ?? 0);
-        updatedEffect.max_radius = Math.max(effect.max_radius, radiusEffect.max_radius);
-        updatedEffect.duration = Math.max(effect.duration ?? 0, radiusEffect.duration ?? 0);
-        compiledEffect = updatedEffect;
-        compiledRadiusEffects.push(compiledEffect);
-      }
-      continue;
-    }
-    compiledRadiusEffects.push(radiusEffect);
-  }
-  for (let radiusEffect of compiledRadiusEffects) {
-    let effectDuration = Boolean(radiusEffect.duration) ? Number(radiusEffect.duration) : Number(world5.getDynamicProperty("poke_pfe:setEffectDuration") ?? ArmorEffectDuration);
-    const targets = player.dimension.getPlayers({ location: player.location, maxDistance: clampNumber(radiusEffect.totalRadius ?? radiusEffect.radius_per_piece ?? radiusEffect.max_radius, 0, radiusEffect.max_radius), excludeNames: radiusEffect.effect_self ? void 0 : [player.name] });
-    for (let target of targets) {
-      target.addEffect(radiusEffect.effect, effectDuration, { showParticles: false, amplifier: clampNumber(radiusEffect.totalAmp ?? radiusEffect.amp ?? 0, 0, radiusEffect.max_amp) });
-    }
-  }
-}
-function startSetEffects() {
-  return system4.runInterval(() => {
-    if (world5.getDynamicProperty(`poke_pfe:disable_armor_effects`)) return;
-    const customParse = world5.getDynamicProperty(`poke_pfe:custom_effect_parser`) == true ? true : false;
-    for (let player of world5.getAllPlayers()) {
-      if (!player) continue;
-      CheckEffects(player, JSON.stringify(player.getTags()).includes(`novelty:poke`), customParse);
-    }
-  }, Number(world5.getDynamicProperty("poke_pfe:setEffectInterval") ?? 20));
-}
-
-// scripts/config.ts
-function OpenPFEConfig(player) {
-  if (player.playerPermissionLevel == PlayerPermissionLevel2.Operator || player.hasTag(`poke_pfe:config`)) {
-    let UI = new ActionFormData4();
-    UI.button({ translate: `translation.poke_pfe.bossEventConfig` }, `textures/poke/common/spawn_enabled`);
-    UI.button({ translate: `translation.poke_pfe.disableConfig` }, `textures/poke/common/blacklist_add`);
-    UI.button({ translate: `%poke_pfe.miscOptions` }, `textures/poke/common/more_options`);
-    UI.show(player).then((response) => {
-      let selection = 0;
-      if (response.selection == selection) {
-        if (world6.getDynamicProperty(PFEBossEventConfigName) == void 0) {
-          world6.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(PFEDefaultBossEventSettings));
-        }
-        PFEBossEventUIMainMenu(player);
-        return;
-      } else selection++;
-      if (response.selection == selection) {
-        PFEDisableConfigMainMenu(player);
-        return;
-      } else selection++;
-      if (response.selection == selection) {
-        let UI2 = new ModalFormData3();
-        UI2.title({ translate: `%poke_pfe.miscOptions` });
-        UI2.label({ translate: `%poke_pfe.setEffects` });
-        UI2.divider();
-        UI2.slider({ translate: `%poke_pfe.effectDuration` }, 1, 30, { valueStep: 1, tooltip: { translate: `%poke_pfe.effectDuration.tooltip` }, defaultValue: Number(world6.getDynamicProperty("poke_pfe:setEffectDuration") ?? ArmorEffectDuration) / 20 });
-        UI2.slider({ translate: `%poke_pfe.applyInterval` }, 1, 10, { valueStep: 1, tooltip: { translate: `%poke_pfe.applyInterval.tooltip` }, defaultValue: Number(world6.getDynamicProperty("poke_pfe:setEffectInterval") ?? 1) / 20 });
-        UI2.show(player).then((response2) => {
-          if (response2.canceled) return;
-          world6.setDynamicProperty("poke_pfe:setEffectDuration", Number(response2.formValues?.at(2) ?? ArmorEffectDuration / 20) * 20);
-          world6.setDynamicProperty("poke_pfe:setEffectInterval", Number(response2.formValues?.at(3) ?? 1) * 20);
-          const intervalId = world6.getDynamicProperty("poke_pfe:setEffectIntervalId");
-          if (intervalId) {
-            system5.runInterval;
-            system5.clearRun(intervalId);
-            world6.setDynamicProperty("poke_pfe:setEffectIntervalId", startSetEffects());
-          }
-        });
-        return;
-      } else selection++;
-      if (response.selection == selection || response.canceled) {
-        return;
-      }
-    });
-  } else {
-    let UI = new ActionFormData4();
-    UI.title({ translate: `translation.poke_pfe.insufficientPerms` });
-    UI.body({ translate: `%translation.poke_pfe.insufficientPerms.desc:\xA7e poke_pfe:config\xA7r
-
-%translation.poke_pfe.insufficientPerms.desc2
-\xA7e/tag @s add poke_pfe:config\xA7r` });
-    UI.button({ translate: `translation.poke_pfe:bossEventClose` }, `textures/poke/common/close`);
-    UI.show(player).then((response) => {
-      return;
-    });
-    return;
-  }
-}
-var PFEDisableConfigName = "poke_pfe:disable_config";
-var PFEDisableConfigVersion = 2;
-var PFEDisableConfigDefault = {
-  "v": PFEDisableConfigVersion,
-  "bounty": true,
-  "cactusArmorRadius": true,
-  "deathArmorRadius": true,
-  "kapowRing": true,
-  "nukeRing": true,
-  "quantumTeleporter": true,
-  "sundial": true,
-  "witherSpawner": true,
-  "waypoints": true,
-  "playerMagnet": true
-};
-function PFEDisableConfigMainMenu(player) {
-  let UI = new ActionFormData4();
-  let options = JSON.parse(world6.getDynamicProperty(PFEDisableConfigName).toString());
-  const enabled = `\xA7a
-%translation.poke_pfe.enabled`;
-  const disabled = `\xA7c
-%translation.poke_pfe.disabled`;
-  UI.button({ translate: `%poke_pfe.quantum_teleporter:${options.quantumTeleporter ? enabled : disabled}` }, `textures/poke/pfe/quantum_teleporter`);
-  UI.button({ translate: `%poke_pfe.player_magnet:${options.playerMagnet ? enabled : disabled}` }, `textures/poke/pfe/player_magnet`);
-  UI.button({ translate: `%poke_pfe.kapow_ring:${options.kapowRing ? enabled : disabled}` }, `textures/poke/pfe/kapow_ring`);
-  UI.button({ translate: `%poke_pfe.nuke_ring:${options.nukeRing ? enabled : disabled}` }, `textures/poke/pfe/nuke_ring`);
-  UI.button({ translate: `%poke_pfe.sundial:${options.sundial ? enabled : disabled}` }, `textures/poke/pfe/sundial_1`);
-  UI.button({ translate: `%poke_pfe.wither_spawner:${options.witherSpawner ? enabled : disabled}` }, `textures/poke/pfe/wither_spawner`);
-  UI.button({ translate: `%poke_pfe.bounty:${options.bounty ? enabled : disabled}` }, `textures/poke/pfe/bounty`);
-  UI.button({ translate: `%poke_pfe.waypoint_menu:${options.waypoints ? enabled : disabled}` }, `textures/poke/pfe/waypoint_menu`);
-  UI.button({ translate: `%poke_pfe.set_effects:${world6.getDynamicProperty(`poke_pfe:disable_armor_effects`) == true ? disabled : enabled}` }, `textures/poke/common/effect_particles`);
-  UI.button({ translate: `%translation.poke_pfe.death_armor_radius:${options.deathArmorRadius ? enabled : disabled}` }, `textures/poke/pfe/death_helmet`);
-  UI.button({ translate: `%translation.poke_pfe.cactus_armor_radius:${options.cactusArmorRadius ? enabled : disabled}` }, `textures/poke/pfe/cactus_helmet`);
-  UI.button({ translate: `translation.poke_pfe:goBack` }, `textures/poke/common/left_arrow`);
-  UI.show(player).then((response) => {
-    let selection = 0;
-    let newProperty = options;
-    if (response.selection == selection) {
-      if (newProperty.quantumTeleporter) {
-        newProperty.quantumTeleporter = false;
-      } else newProperty.quantumTeleporter = true;
-      world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
-      PFEDisableConfigMainMenu(player);
-      return;
-    } else selection++;
-    if (response.selection == selection) {
-      if (newProperty.playerMagnet) {
-        newProperty.playerMagnet = false;
-      } else newProperty.playerMagnet = true;
-      world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
-      PFEDisableConfigMainMenu(player);
-      return;
-    } else selection++;
-    if (response.selection == selection) {
-      if (newProperty.kapowRing) {
-        newProperty.kapowRing = false;
-      } else newProperty.kapowRing = true;
-      world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
-      PFEDisableConfigMainMenu(player);
-      return;
-    } else selection++;
-    if (response.selection == selection) {
-      if (newProperty.nukeRing) {
-        newProperty.nukeRing = false;
-      } else newProperty.nukeRing = true;
-      world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
-      PFEDisableConfigMainMenu(player);
-      return;
-    } else selection++;
-    if (response.selection == selection) {
-      if (newProperty.sundial) {
-        newProperty.sundial = false;
-      } else newProperty.sundial = true;
-      world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
-      PFEDisableConfigMainMenu(player);
-      return;
-    } else selection++;
-    if (response.selection == selection) {
-      if (newProperty.witherSpawner) {
-        newProperty.witherSpawner = false;
-      } else newProperty.witherSpawner = true;
-      world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
-      PFEDisableConfigMainMenu(player);
-      return;
-    } else selection++;
-    if (response.selection == selection) {
-      if (newProperty.bounty) {
-        newProperty.bounty = false;
-      } else newProperty.bounty = true;
-      world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
-      PFEDisableConfigMainMenu(player);
-      return;
-    } else selection++;
-    if (response.selection == selection) {
-      if (newProperty.waypoints) {
-        newProperty.waypoints = false;
-      } else newProperty.waypoints = true;
-      newProperty.v = newProperty.v < 2 ? newProperty.v = 2 : newProperty.v;
-      world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
-      PFEDisableConfigMainMenu(player);
-      return;
-    } else selection++;
-    if (response.selection == selection) {
-      world6.getDynamicProperty(`poke_pfe:disable_armor_effects`) == false ? world6.setDynamicProperty(`poke_pfe:disable_armor_effects`, true) : world6.setDynamicProperty(`poke_pfe:disable_armor_effects`, false);
-      PFEDisableConfigMainMenu(player);
-      return;
-    } else selection++;
-    if (response.selection == selection) {
-      if (newProperty.deathArmorRadius) {
-        newProperty.deathArmorRadius = false;
-      } else newProperty.deathArmorRadius = true;
-      world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
-      PFEDisableConfigMainMenu(player);
-      return;
-    } else selection++;
-    if (response.selection == selection) {
-      if (newProperty.cactusArmorRadius) {
-        newProperty.cactusArmorRadius = false;
-      } else newProperty.cactusArmorRadius = true;
-      world6.setDynamicProperty(PFEDisableConfigName, JSON.stringify(newProperty));
-      PFEDisableConfigMainMenu(player);
-      return;
-    } else selection++;
-    if (response.canceled || response.selection == selection) {
-      return;
-    }
-  });
 }
 
 // scripts/quests.ts
@@ -8208,11 +8258,28 @@ function MakeAddonID(string) {
 // scripts/custom_components/block_custom_components.ts
 function RegisterBlockComponents(data) {
   data.blockComponentRegistry.registerCustomComponent(
+    "poke_pfe:spawn_particle",
+    {
+      onTick(data2, componentInfo) {
+        const COMPONENT = componentInfo.params;
+        const DIMENSION = data2.dimension;
+        const BLOCK = data2.block;
+        for (const PARTICLE_ID of Object.keys(COMPONENT)) {
+          const PARTICLE = COMPONENT[PARTICLE_ID];
+          if (PARTICLE.requires_redstone_power && (data2.block.getRedstonePower() ?? 0 > 0)) continue;
+          const LOCATION = Vector3Utils.add(BLOCK.location, JSON.parse(PARTICLE.offset));
+          DIMENSION.spawnParticle(PARTICLE_ID, LOCATION);
+        }
+        ;
+      }
+    }
+  );
+  data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:cycle_color",
     {
       onPlayerInteract(data2, component) {
         const block_location = `${data2.block.x} ${data2.block.y} ${data2.block.z}`;
-        const ColorState = `pfe:color`;
+        const ColorState = `poke_pfe:color`;
         let light_color = data2.block.permutation.getState(ColorState);
         let sound_pitch = 1 + light_color / 10;
         if (data2.block.permutation.getState(ColorState) == 15) {

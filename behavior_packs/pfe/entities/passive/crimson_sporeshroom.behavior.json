@@ -45,7 +45,9 @@
 				},
 				"minecraft:breedable": {
 					"require_tame": false,
-					"breed_items": "wheat",
+					"breed_items": [
+						"wheat"
+					],
 					"breeds_with": {
 						"mate_type": "poke_pfe:crimson_sporeshroom",
 						"baby_type": "poke_pfe:crimson_sporeshroom",
