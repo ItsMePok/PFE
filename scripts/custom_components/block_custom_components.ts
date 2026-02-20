@@ -1,4 +1,4 @@
-import { Block, BlockComponentTypes, BlockPermutation, BlockStateArg, BlockVolume, Direction, EntityComponentTypes, EntityQueryOptions, EquipmentSlot, GameMode, ItemComponentTypes, ItemStack, LiquidType, Player, StartupEvent, Vector3 } from "@minecraft/server";
+import { Block, BlockComponentTypes, BlockPermutation, BlockStateArg, BlockVolume, Direction, EntityComponentTypes, EntityQueryOptions, EquipmentSlot, GameMode, ItemComponentTypes, ItemStack, LiquidType, Player, StartupEvent, Vector3, world } from "@minecraft/server";
 import { BlockStateSuperset, MinecraftBlockTypes, MinecraftEnchantmentTypes, MinecraftEntityTypes, MinecraftItemTypes } from "@minecraft/vanilla-data";
 import ComputersCompat from "../addonCompatibility/jigarbov";
 import { pokeAddItemsToContainerOrDrop, PokeClosestCardinal, PokeSpawnLootTable, pokeSpawnParticle } from "../commonFunctions";
@@ -10,9 +10,10 @@ export {
 }
 
 function RegisterBlockComponents(data: StartupEvent) {
+
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:spawn_particle", {
-    onTick(data, componentInfo) {
+    onRedstoneUpdate(data, componentInfo) {
       type SpawnParticleComponent = {
         [key: string]: {
           offset: string // "{\"x\": 0,\"y\": 0,\"z\": 0}"
@@ -33,17 +34,17 @@ function RegisterBlockComponents(data: StartupEvent) {
   );
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:cycle_color", {
-    onPlayerInteract(data, component) {
-      const block_location = `${data.block.x} ${data.block.y} ${data.block.z}`
-      const ColorState = <keyof BlockStateSuperset>`poke_pfe:color`
-      let light_color = <number>data.block.permutation.getState(ColorState)
-      let sound_pitch = 1 + light_color / 10
+    onPlayerInteract(data, componentInfo) {
+      const BLOCK_LOCATION = `${data.block.x} ${data.block.y} ${data.block.z}`
+      const COLOR_STATE = <keyof BlockStateSuperset>`poke_pfe:color`
+      const LIGHT_COLOR = <number>data.block.permutation.getState(COLOR_STATE)
+      const SOUND_PITCH = 1 + LIGHT_COLOR / 10
       //resets if at the maximum (15)
-      if (data.block.permutation.getState(ColorState) == 15) {
+      if (data.block.permutation.getState(COLOR_STATE) == 15) {
         //set pfe:color state to default (0)
-        data.block.setPermutation(data.block.permutation.withState(ColorState, 0))
+        data.block.setPermutation(data.block.permutation.withState(COLOR_STATE, 0))
         //play sound
-        data.block.dimension.runCommand(`playsound block.copper_bulb.turn_on @a  ${block_location} 1 ${sound_pitch}`)
+        data.block.dimension.runCommand(`playsound block.copper_bulb.turn_on @a  ${BLOCK_LOCATION} 1 ${SOUND_PITCH}`)
         ComputersCompat.addStat(`bulb_color_changes`, 1);
         return;
       }
@@ -51,9 +52,9 @@ function RegisterBlockComponents(data: StartupEvent) {
       else {
         //set pfe:color state to current +1
         data.block.setPermutation(
-          data.block.permutation.withState(ColorState, light_color + 1))
+          data.block.permutation.withState(COLOR_STATE, LIGHT_COLOR + 1))
         //play sound
-        data.block.dimension.runCommand(`playsound block.copper_bulb.turn_on @a ${block_location} 1 ${sound_pitch}`)
+        data.block.dimension.runCommand(`playsound block.copper_bulb.turn_on @a ${BLOCK_LOCATION} 1 ${SOUND_PITCH}`)
         ComputersCompat.addStat(`bulb_color_changes`, 1);
         return;
       }
@@ -62,7 +63,7 @@ function RegisterBlockComponents(data: StartupEvent) {
   );
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:slab_loot", {
-    onPlayerBreak(data, component) {
+    onPlayerBreak(data, componentInfo) {
       const block_location = data.block.location
       const gm = data.player?.getGameMode()
       const blockId = data.brokenBlockPermutation.type.id
@@ -82,25 +83,35 @@ function RegisterBlockComponents(data: StartupEvent) {
   );
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:trapdoor_event", {
-    onPlayerInteract(data, component) {
+    onPlayerInteract(data, componentInfo) {
       const blockLocation = `${data.block.location.x} ${data.block.location.y} ${data.block.location.z}`
       const OpenState = <keyof BlockStateSuperset>'poke_pfe:trapdoor_open'
       if (data.block.permutation.hasTag('pfe_trapdoor_open') == true) {
         data.block.setPermutation(data.block.permutation.withState(OpenState, 'no'))
-        data.block.dimension.playSound(`open.iron_trapdoor`, data.block.center())
+        data.block.dimension.playSound(`close.iron_trapdoor`, data.block.center())
         return;
       }
       else {
         data.block.setPermutation(data.block.permutation.withState(OpenState, 'yes'))
-        data.block.dimension.playSound(`close.iron_trapdoor`, data.block.center())
+        data.block.dimension.playSound(`open.iron_trapdoor`, data.block.center())
         return;
+      }
+    },
+    onRedstoneUpdate(data, componentInfo) {
+      const OpenState = <keyof BlockStateSuperset>'poke_pfe:trapdoor_open'
+      if (data.powerLevel) {
+        data.block.setPermutation(data.block.permutation.withState(OpenState, 'yes'))
+        data.block.dimension.playSound(`open.iron_trapdoor`, data.block.center())
+      } else {
+        data.block.setPermutation(data.block.permutation.withState(OpenState, 'no'))
+        data.block.dimension.playSound(`close.iron_trapdoor`, data.block.center())
       }
     }
   }
   );
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:fortune", {
-    onPlayerBreak(data, component) {
+    onPlayerBreak(data, componentInfo) {
       const equippableComponent = data.player?.getComponent(EntityComponentTypes.Equippable)
       if (equippableComponent === undefined) return;
       if (!equippableComponent.getEquipment(EquipmentSlot.Mainhand)?.hasComponent(ItemComponentTypes.Enchantable)) return;
@@ -138,7 +149,7 @@ function RegisterBlockComponents(data: StartupEvent) {
   );
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:can_double_slab", {
-    onPlayerInteract(data, component) {
+    onPlayerInteract(data, componentInfo) {
       if (!data.player) return;
       const DoubleState = <keyof BlockStateSuperset>'poke_pfe:double'
       if (data.block.permutation.getState(DoubleState) == true) return;
@@ -168,7 +179,7 @@ function RegisterBlockComponents(data: StartupEvent) {
   );
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:cc_phantomic_conduit", {
-    onTick(data, component) {
+    onTick(data, componentInfo) {
       const ActiveState = <keyof BlockStateSuperset>'poke_pfe:active'
       var block_location_x = data.block.x
       var block_location_y = data.block.y
@@ -188,7 +199,7 @@ function RegisterBlockComponents(data: StartupEvent) {
   );
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:cc_da_conduit", {
-    onTick(data, component) {
+    onTick(data, componentInfo) {
       const ActiveState = <keyof BlockStateSuperset>'poke_pfe:active'
       const block_location = `${data.block.x} ${data.block.y} ${data.block.z}`
       if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
@@ -206,7 +217,7 @@ function RegisterBlockComponents(data: StartupEvent) {
   );
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:spawn_item", {
-    onTick(data, componentInfo) {
+    onRedstoneUpdate(data, componentInfo) {
       const component = <SpawnItemComponent>componentInfo.params
       type SpawnItemComponent = {
         item: {
@@ -237,33 +248,23 @@ function RegisterBlockComponents(data: StartupEvent) {
   );
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:redstone_state", {
-    onTick(data, component) {
-      const ActiveState = <keyof BlockStateSuperset>'poke_pfe:active'
-      if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
-        data.block.setPermutation(data.block.permutation.withState(ActiveState, 1))
-        return;
+    onRedstoneUpdate(data, componentInfo) {
+      const ACTIVE_STATE = <keyof BlockStateSuperset>'poke_pfe:active'
+      if (data.powerLevel) {
+        data.block.setPermutation(data.block.permutation.withState(ACTIVE_STATE, 1));
+      } else {
+        data.block.setPermutation(data.block.permutation.withState(ACTIVE_STATE, 0));
       }
-      if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== undefined) {
-        data.block.setPermutation(data.block.permutation.withState(ActiveState, 0))
-        return;
-      }
-      return;
     }
   }
   );
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:magnet_block", {
-    onTick(data, component) {
-      const ActiveState = <keyof BlockStateSuperset>'poke_pfe:active'
+    onRedstoneUpdate(data, componentInfo) {
       let blockY = (data.block.permutation.getState(`minecraft:vertical_half`) == `top`) ? data.block.center().y - 0.5 : data.block.center().y + 0.5
       const block_location = `${data.block.x} ${blockY} ${data.block.z}`
-      if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
-        data.block.setPermutation(data.block.permutation.withState(ActiveState, 1))
+      if (data.powerLevel) {
         data.dimension.runCommand(`execute positioned ${block_location} as @e[type=item,r=10] run tp @s ${block_location}`)
-        return;
-      }
-      if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== undefined) {
-        data.block.setPermutation(data.block.permutation.withState(ActiveState, 0))
         return;
       }
       return;
@@ -272,7 +273,7 @@ function RegisterBlockComponents(data: StartupEvent) {
   );
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:crops", {
-    onRandomTick(data, component) {
+    onRandomTick(data, componentInfo) {
       const GrowthStageState = <keyof BlockStateSuperset>'poke_pfe:growth_stage'
       var growth_state = <number>data.block.permutation.getState(GrowthStageState)
       var growth_stage = growth_state + 1
@@ -282,7 +283,7 @@ function RegisterBlockComponents(data: StartupEvent) {
       }
       return;
     },
-    onPlayerInteract(data, component) {
+    onPlayerInteract(data, componentInfo) {
 
       const equippableComponent = data.player?.getComponent(EntityComponentTypes.Equippable)
       const mainhandItem = equippableComponent?.getEquipment(EquipmentSlot.Mainhand)
@@ -316,7 +317,7 @@ function RegisterBlockComponents(data: StartupEvent) {
   );
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:molten_lava_sponge", {
-    onRandomTick(data, component) {
+    onRandomTick(data, componentInfo) {
       switch (MinecraftBlockTypes.Water || MinecraftBlockTypes.FlowingWater) {
         case data.block.north()?.typeId: break;
         case data.block.south()?.typeId: break;
@@ -335,7 +336,7 @@ function RegisterBlockComponents(data: StartupEvent) {
   )
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:cc_block_seat", {
-    onPlayerInteract(data, component) {
+    onPlayerInteract(data, componentInfo) {
       if (!data.player) return
       const slabId = data.block.typeId
       const mainhand = data.player.getComponent(EntityComponentTypes.Equippable)?.getEquipment(EquipmentSlot.Mainhand)
@@ -363,7 +364,7 @@ function RegisterBlockComponents(data: StartupEvent) {
   );
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:cc_block_interact", {
-    onPlayerInteract(data, component) {
+    onPlayerInteract(data, componentInfo) {
       switch (data.block.typeId) {
         case 'poke_pfe:listener_trophy': { data.player?.playMusic('poke_pfe.they_listen', { fade: 5 }); return; }
         case 'poke_pfe:furnace_golem_trophy': { data.player?.playMusic('poke_pfe.record.pigstep', { fade: 5 }); return; }
@@ -375,7 +376,7 @@ function RegisterBlockComponents(data: StartupEvent) {
   );
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:cc_8ball", {
-    onPlayerInteract(data, component) {
+    onPlayerInteract(data, componentInfo) {
       var RNG = Math.floor(Math.random() * 19)
       //console.warn(RNG)
       data.player?.sendMessage({ rawtext: [{ translate: `translation.poke_pfe:8ball${RNG}` }] })
@@ -383,115 +384,10 @@ function RegisterBlockComponents(data: StartupEvent) {
     }
   }
   );
-  data.blockComponentRegistry.registerCustomComponent(
-    "poke_pfe:cc_wall", {
-    onPlace(data, component) {
-      const NorthBlock = data.block.north()
-      const SouthBlock = data.block.south()
-      const EastBlock = data.block.east()
-      const WestBlock = data.block.west()
-      const AboveBlock = data.block.above()
-      const BelowBlock = data.block.below()
-      const NorthState = <keyof BlockStateSuperset>'poke_pfe:wall_n'
-      const SouthState = <keyof BlockStateSuperset>'poke_pfe:wall_s'
-      const EastState = <keyof BlockStateSuperset>'poke_pfe:wall_e'
-      const WestState = <keyof BlockStateSuperset>'poke_pfe:wall_w'
-      const AboveState = <keyof BlockStateSuperset>'poke_pfe:connected_above'
-      const BelowState = <keyof BlockStateSuperset>'poke_pfe:connected_below'
-      if (!NorthBlock || !SouthBlock || !EastBlock || !WestBlock) return;
-      if (!NorthBlock.isAir && !NorthBlock.isLiquid && !NorthBlock.canBeDestroyedByLiquidSpread(LiquidType.Water)) {
-        data.block.setPermutation(data.block.permutation.withState(NorthState, true));
-        if (NorthBlock.permutation.getState(SouthState) != undefined) {
-          NorthBlock.setPermutation(NorthBlock.permutation.withState(SouthState, true))
-          Post(NorthBlock, true, true)
-        }
-      } else { data.block.setPermutation(data.block.permutation.withState(NorthState, false)) };
-      if (!SouthBlock.isAir && !SouthBlock.isLiquid && !SouthBlock.canBeDestroyedByLiquidSpread(LiquidType.Water)) {
-        data.block.setPermutation(data.block.permutation.withState(SouthState, true));
-        if (SouthBlock.permutation.getState(NorthState) != undefined) {
-          SouthBlock.setPermutation(SouthBlock.permutation.withState(NorthState, true))
-          Post(SouthBlock, true, true)
-        }
-      } else { data.block.setPermutation(data.block.permutation.withState(SouthState, false)) };
-      if (!EastBlock.isAir && !EastBlock.isLiquid && !EastBlock.canBeDestroyedByLiquidSpread(LiquidType.Water)) {
-        data.block.setPermutation(data.block.permutation.withState(EastState, true));
-        if (EastBlock.permutation.getState(WestState) != undefined) {
-          EastBlock.setPermutation(EastBlock.permutation.withState(WestState, true))
-          Post(EastBlock, true, true)
-        }
-      } else { data.block.setPermutation(data.block.permutation.withState(EastState, false)) };
 
-      if (!WestBlock.isAir && !WestBlock.isLiquid && !WestBlock.canBeDestroyedByLiquidSpread(LiquidType.Water)) {
-        data.block.setPermutation(data.block.permutation.withState(WestState, true));
-        if (WestBlock.permutation.getState(EastState) != undefined) {
-          WestBlock.setPermutation(WestBlock.permutation.withState(EastState, true))
-          Post(WestBlock, true, true)
-        }
-      } else { data.block.setPermutation(data.block.permutation.withState(WestState, false)) };
-      if (BelowBlock) {
-        if (!BelowBlock.isAir && !BelowBlock.isLiquid && !BelowBlock.canBeDestroyedByLiquidSpread(LiquidType.Water)) {
-          data.block.setPermutation(data.block.permutation.withState(BelowState, true));
-          if (BelowBlock.permutation.getState(AboveState) != undefined) {
-            BelowBlock.setPermutation(BelowBlock.permutation.withState(AboveState, true))
-          }
-        } else { data.block.setPermutation(data.block.permutation.withState(BelowState, false)) };
-      }
-      if (AboveBlock) {
-        if (AboveBlock && !AboveBlock.isAir && !AboveBlock.isLiquid && !AboveBlock.canBeDestroyedByLiquidSpread(LiquidType.Water)) {
-          data.block.setPermutation(data.block.permutation.withState(AboveState, true));
-          if (AboveBlock.permutation.getState(BelowState) != undefined) {
-            AboveBlock.setPermutation(AboveBlock.permutation.withState(BelowState, true))
-          }
-        } else { data.block.setPermutation(data.block.permutation.withState(AboveState, false)) };
-      }
-      Post(data.block, true, true)
-      return;
-    },
-    onPlayerBreak(data, component) {
-      const NorthBlock = data.block.north()
-      const SouthBlock = data.block.south()
-      const EastBlock = data.block.east()
-      const WestBlock = data.block.west()
-      const AboveBlock = data.block.above()
-      const BelowBlock = data.block.below()
-      const NorthState = <keyof BlockStateSuperset>'poke_pfe:wall_n'
-      const SouthState = <keyof BlockStateSuperset>'poke_pfe:wall_s'
-      const EastState = <keyof BlockStateSuperset>'poke_pfe:wall_e'
-      const WestState = <keyof BlockStateSuperset>'poke_pfe:wall_w'
-      const AboveState = <keyof BlockStateSuperset>'poke_pfe:connected_above'
-      const BelowState = <keyof BlockStateSuperset>'poke_pfe:connected_below'
-      if (!NorthBlock || !SouthBlock || !EastBlock || !WestBlock || !AboveBlock || !BelowBlock) return;
-      if (NorthBlock.permutation.getState(SouthState) != undefined) {
-        NorthBlock.setPermutation(NorthBlock.permutation.withState(SouthState, false))
-        Post(NorthBlock, true, true)
-      }
-      if (SouthBlock.permutation.getState(NorthState) != undefined) {
-        SouthBlock.setPermutation(SouthBlock.permutation.withState(NorthState, false))
-        Post(SouthBlock, true, true)
-      }
-      if (EastBlock.permutation.getState(WestState) != undefined) {
-        EastBlock.setPermutation(EastBlock.permutation.withState(WestState, false))
-        Post(EastBlock, true, true)
-      }
-      if (WestBlock.permutation.getState(EastState) != undefined) {
-        WestBlock.setPermutation(WestBlock.permutation.withState(EastState, false))
-        Post(WestBlock, true, true)
-      }
-      if (AboveBlock.permutation.getState(AboveState) != undefined) {
-        AboveBlock.setPermutation(AboveBlock.permutation.withState(BelowState, false))
-        Post(AboveBlock, true, false)
-      }
-      if (BelowBlock.permutation.getState(BelowState) != undefined) {
-        BelowBlock.setPermutation(BelowBlock.permutation.withState(AboveState, false))
-        Post(BelowBlock, false, true)
-      }
-      return;
-    }
-  }
-  );
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:fisher", {
-    onRandomTick(data, component) {
+    onRandomTick(data, componentInfo) {
       const PFEFisherComponentInfo = {
         baitBlockState: <keyof BlockStateSuperset>"poke_pfe:bait",
         baitStates: [4, 3, 2, 1, 0]
@@ -502,7 +398,7 @@ function RegisterBlockComponents(data: StartupEvent) {
         ComputersCompat.addStat("fisher_catches", 1)
       }
     },
-    onPlayerInteract(data, component) {
+    onPlayerInteract(data, componentInfo) {
       const PFEFisherComponentInfo = {
         baitBlockState: <keyof BlockStateSuperset>"poke_pfe:bait",
         baitStates: [4, 3, 2, 1, 0]
@@ -523,7 +419,7 @@ function RegisterBlockComponents(data: StartupEvent) {
       }
       data.block.setPermutation(data.block.permutation.withState(PFEFisherComponentInfo.baitBlockState, 4))
     },
-    onPlayerBreak(data, component) {
+    onPlayerBreak(data, componentInfo) {
       const PFEFisherComponentInfo = {
         baitBlockState: <keyof BlockStateSuperset>"poke_pfe:bait",
         baitStates: [4, 3, 2, 1, 0]
@@ -544,7 +440,7 @@ function RegisterBlockComponents(data: StartupEvent) {
   )
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:elevator", {
-    onStepOff(data, component) {
+    onStepOff(data, componentInfo) {
       if (!data.entity) return;
       let player = <Player>data.entity
       if (player.typeId == MinecraftEntityTypes.Player) {
@@ -586,7 +482,7 @@ function RegisterBlockComponents(data: StartupEvent) {
   )
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:omnivator", {
-    onStepOff(data, component) {
+    onStepOff(data, componentInfo) {
       if (!data.entity) return;
       let player = <Player>data.entity
       if (player.typeId == MinecraftEntityTypes.Player) {
@@ -693,15 +589,14 @@ function RegisterBlockComponents(data: StartupEvent) {
   )
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:place_blocks", {
-    onTick(data, componentInfo) {
+    onRedstoneUpdate(data, componentInfo) {
       type PlaceBlocksComponent = {
         places: string | string[] // array ex: ["minecraft:cobblestone::minecraft:gravel"] places cannot be string[] if using can_replace
         targets: Direction[],
         can_replace?: string[]
       }
       const component = <PlaceBlocksComponent>componentInfo.params
-      const ActiveState = <keyof BlockStateSuperset>'poke_pfe:active'
-      if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
+      if (data.powerLevel) {
         for (const target of component.targets) {
           function GetBlock() {
             switch (target) {
@@ -752,26 +647,18 @@ function RegisterBlockComponents(data: StartupEvent) {
           }
 
         }
-        data.block.setPermutation(data.block.permutation.withState(ActiveState, 1))
-        return;
       }
-      if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== undefined) {
-        data.block.setPermutation(data.block.permutation.withState(ActiveState, 0))
-        return;
-      }
-      return;
     }
   }
   );
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:break_blocks", {
-    onTick(data, componentInfo) {
+    onRedstoneUpdate(data, componentInfo) {
       type BreakBlockComponent = {
         targets: Direction[]
       }
       const component = <BreakBlockComponent>componentInfo.params
-      const ActiveState = <keyof BlockStateSuperset>'poke_pfe:active'
-      if (data.block.getRedstonePower() != 0 && data.block.getRedstonePower() !== undefined) {
+      if (data.powerLevel) {
         for (const target of component.targets) {
           function GetBlock() {
             switch (target) {
@@ -781,10 +668,10 @@ function RegisterBlockComponents(data: StartupEvent) {
               case Direction.South: return data.block.south();
               case Direction.East: return data.block.east();
               case Direction.West: return data.block.west();
-              default: return data.block
+              default: return data.block;
             }
           }
-          const block = GetBlock()
+          const block = GetBlock();
           if (!block) continue;
           let BannedBlocks: string[] = [
             MinecraftBlockTypes.Air, MinecraftBlockTypes.LightBlock0, MinecraftBlockTypes.LightBlock1,
@@ -802,11 +689,6 @@ function RegisterBlockComponents(data: StartupEvent) {
           const replacedAs = block.isWaterlogged ? MinecraftBlockTypes.FlowingWater : MinecraftBlockTypes.Air
           data.dimension.runCommand(`execute positioned ${block_location} run setblock ~~~ ${replacedAs} destroy`)
         }
-        data.block.setPermutation(data.block.permutation.withState(ActiveState, 1))
-        return;
-      }
-      if (data.block.getRedstonePower() == 0 && data.block.getRedstonePower() !== undefined) {
-        data.block.setPermutation(data.block.permutation.withState(ActiveState, 0))
         return;
       }
       return;
@@ -934,117 +816,3 @@ function RegisterBlockComponents(data: StartupEvent) {
   data.blockComponentRegistry.registerCustomComponent("poke_pfe:custom_recipes", {});
 }
 
-function Post(data: Block, up?: boolean, down?: boolean) {
-  let Permutation = data.permutation
-  let Post = false
-  let PostCheckNorth = false
-  let PostCheckSouth = false
-  let PostCheckEast = false
-  let PostCheckWest = false
-  const PostState = <keyof BlockStateSuperset>'poke_pfe:post_bit'
-  const NorthState = <keyof BlockStateSuperset>'poke_pfe:wall_n'
-  const SouthState = <keyof BlockStateSuperset>'poke_pfe:wall_s'
-  const EastState = <keyof BlockStateSuperset>'poke_pfe:wall_e'
-  const WestState = <keyof BlockStateSuperset>'poke_pfe:wall_w'
-  const AboveState = <keyof BlockStateSuperset>'poke_pfe:connected_above'
-  const BelowState = <keyof BlockStateSuperset>'poke_pfe:connected_below'
-  if (data.permutation.getState(PostState) == undefined) return;
-
-  if (Permutation.getState(NorthState) == true) {
-    PostCheckNorth = true
-  }
-  if (Permutation.getState(SouthState) == true) {
-    PostCheckSouth = true
-  }
-  if (Permutation.getState(EastState) == true) {
-    PostCheckEast = true
-  }
-  if (Permutation.getState(WestState) == true) {
-    PostCheckWest = true
-  }
-  if ((PostCheckNorth == false && PostCheckSouth == false && PostCheckEast == false && PostCheckWest == false)) Post = true;
-  if ((PostCheckNorth == true && PostCheckSouth == false && PostCheckEast == false && PostCheckWest == false)) Post = true;
-  if ((PostCheckNorth == false && PostCheckSouth == true && PostCheckEast == false && PostCheckWest == false)) Post = true;
-  if ((PostCheckNorth == false && PostCheckSouth == false && PostCheckEast == true && PostCheckWest == false)) Post = true;
-  if ((PostCheckNorth == false && PostCheckSouth == false && PostCheckEast == false && PostCheckWest == true)) Post = true;
-  if ((PostCheckNorth && PostCheckEast) || (PostCheckNorth && PostCheckWest) || (PostCheckSouth && PostCheckEast) || (PostCheckSouth && PostCheckWest)) Post = true;
-
-  if (Post) {
-    if (Permutation.getState(PostState) === undefined) return;
-    UpdatePost(data, true)
-  } else {
-    if (Permutation.getState(PostState) === undefined) return;
-    UpdatePost(data, false)
-  }
-}
-function UpdatePost(block: Block, value: boolean, up?: boolean) {
-  const PostState = <keyof BlockStateSuperset>'poke_pfe:post_bit'
-  const NorthState = <keyof BlockStateSuperset>'poke_pfe:wall_n'
-  const SouthState = <keyof BlockStateSuperset>'poke_pfe:wall_s'
-  const EastState = <keyof BlockStateSuperset>'poke_pfe:wall_e'
-  const WestState = <keyof BlockStateSuperset>'poke_pfe:wall_w'
-  const AboveState = <keyof BlockStateSuperset>'poke_pfe:connected_above'
-  const BelowState = <keyof BlockStateSuperset>'poke_pfe:connected_below'
-  if (!value) {
-    let Post = false
-    let PostCheckNorth = false
-    let PostCheckSouth = false
-    let PostCheckEast = false
-    let PostCheckWest = false
-    if (block.permutation.getState(NorthState) == true) {
-      PostCheckNorth = true
-    }
-    if (block.permutation.getState(SouthState) == true) {
-      PostCheckSouth = true
-    }
-    if (block.permutation.getState(EastState) == true) {
-      PostCheckEast = true
-    }
-    if (block.permutation.getState(WestState) == true) {
-      PostCheckWest = true
-    }
-    if ((!PostCheckNorth && !PostCheckSouth && !PostCheckEast && !PostCheckWest)) Post = true;
-    if ((PostCheckNorth && !PostCheckSouth && PostCheckEast == false && !PostCheckWest)) Post = true;
-    if ((!PostCheckNorth && PostCheckSouth && PostCheckEast == false && !PostCheckWest)) Post = true;
-    if ((!PostCheckNorth && !PostCheckSouth && PostCheckEast && !PostCheckWest)) Post = true;
-    if ((!PostCheckNorth && !PostCheckSouth && !PostCheckEast && PostCheckWest)) Post = true;
-    if ((PostCheckNorth && PostCheckEast) || (PostCheckNorth && PostCheckWest) || (PostCheckSouth && PostCheckEast) || (PostCheckSouth && PostCheckWest)) Post = true;
-    if (Post) {
-      if (up) {
-        if (block.above()?.hasTag(`pfe_wall`)) {
-          UpdatePost(block.above()!, true, true)
-        }
-      } else if (up === false) {
-        if (block.below()?.hasTag(`pfe_wall`)) {
-          UpdatePost(block.below()!, true, false)
-        }
-      } else {
-        if (block.above()?.hasTag(`pfe_wall`)) {
-          UpdatePost(block.above()!, true, true)
-        }
-        if (block.below()?.hasTag(`pfe_wall`)) {
-          UpdatePost(block.below()!, true, false)
-        }
-      }
-      block.setPermutation(block.permutation.withState(PostState, true))
-      return;
-    }
-  }
-  if (up) {
-    if (block.above()?.hasTag(`pfe_wall`)) {
-      UpdatePost(block.above()!, value, true)
-    }
-  } else if (up === false) {
-    if (block.below()?.hasTag(`pfe_wall`)) {
-      UpdatePost(block.below()!, value, false)
-    }
-  } else {
-    if (block.above()?.hasTag(`pfe_wall`)) {
-      UpdatePost(block.above()!, value, true)
-    }
-    if (block.below()?.hasTag(`pfe_wall`)) {
-      UpdatePost(block.below()!, value, false)
-    }
-  }
-  block.setPermutation(block.permutation.withState(PostState, value))
-}

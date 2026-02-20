@@ -284,6 +284,10 @@
 			}
 		],
 		"components": {
+			"minecraft:redstone_consumer": {
+				"propogates_power": false,
+				"min_power": 0
+			},
 			"minecraft:display_name": "%poke_pfe.cobbler\n%poke_pfe.tag",
 			"minecraft:redstone_conductivity": {
 				"redstone_conductor": true,
@@ -301,13 +305,7 @@
 			"tag:minecraft:metal": {},
 			"tag:stone_pick_diggable": {},
 			"tag:minecraft:is_pickaxe_item_destructible": {},
-			"minecraft:map_color": "#22222f",
-			"minecraft:tick": {
-				"interval_range": [
-					20,
-					20
-				]
-			}
+			"minecraft:map_color": "#22222f"
 		}
 	}
 }

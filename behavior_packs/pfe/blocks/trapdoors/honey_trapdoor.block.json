@@ -26,6 +26,13 @@
 			}
 		},
 		"components": {
+			"minecraft:redstone_conductivity": {
+				"redstone_conductor": true
+			},
+			"minecraft:redstone_consumer": {
+				"propogates_power": false,
+				"min_power": 0
+			},
 			"minecraft:display_name": "%poke_pfe.honey_trapdoor\n%poke_pfe.tag",
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 0.4
@@ -74,6 +81,12 @@
 			{
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('minecraft:vertical_half') == 'bottom' && q.block_state('poke_pfe:trapdoor_open') == 'no'",
 				"components": {
+					"minecraft:precipitation_interactions": {
+						"precipitation_behavior": "obstruct_rain"
+					},
+					"minecraft:connection_rule": {
+						"accepts_connections_from": "none"
+					},
 					"minecraft:transformation": {
 						"rotation": [
 							0,
@@ -87,6 +100,15 @@
 			{
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('minecraft:vertical_half') == 'bottom' && q.block_state('poke_pfe:trapdoor_open') == 'yes'",
 				"components": {
+					"minecraft:precipitation_interactions": {
+						"precipitation_behavior": "none"
+					},
+					"minecraft:connection_rule": {
+						"accepts_connections_from": "all",
+						"enabled_directions": [
+							"north"
+						]
+					},
 					"minecraft:transformation": {
 						"rotation": [
 							90,
@@ -100,6 +122,12 @@
 			{
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('minecraft:vertical_half') == 'top' && q.block_state('poke_pfe:trapdoor_open') == 'no'",
 				"components": {
+					"minecraft:precipitation_interactions": {
+						"precipitation_behavior": "obstruct_rain_accumulate_snow"
+					},
+					"minecraft:connection_rule": {
+						"accepts_connections_from": "none"
+					},
 					"minecraft:transformation": {
 						"rotation": [
 							0,
@@ -113,6 +141,15 @@
 			{
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('minecraft:vertical_half') == 'top' && q.block_state('poke_pfe:trapdoor_open') == 'yes'",
 				"components": {
+					"minecraft:precipitation_interactions": {
+						"precipitation_behavior": "none"
+					},
+					"minecraft:connection_rule": {
+						"accepts_connections_from": "all",
+						"enabled_directions": [
+							"north"
+						]
+					},
 					"minecraft:transformation": {
 						"rotation": [
 							90,
@@ -126,6 +163,12 @@
 			{
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('minecraft:vertical_half') == 'top' && q.block_state('poke_pfe:trapdoor_open') == 'no'",
 				"components": {
+					"minecraft:precipitation_interactions": {
+						"precipitation_behavior": "obstruct_rain_accumulate_snow"
+					},
+					"minecraft:connection_rule": {
+						"accepts_connections_from": "none"
+					},
 					"minecraft:transformation": {
 						"rotation": [
 							180,
@@ -139,6 +182,15 @@
 			{
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('minecraft:vertical_half') == 'top' && q.block_state('poke_pfe:trapdoor_open') == 'yes'",
 				"components": {
+					"minecraft:precipitation_interactions": {
+						"precipitation_behavior": "none"
+					},
+					"minecraft:connection_rule": {
+						"accepts_connections_from": "all",
+						"enabled_directions": [
+							"south"
+						]
+					},
 					"minecraft:transformation": {
 						"rotation": [
 							-90,
@@ -152,6 +204,12 @@
 			{
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('minecraft:vertical_half') == 'bottom' && q.block_state('poke_pfe:trapdoor_open') == 'no'",
 				"components": {
+					"minecraft:precipitation_interactions": {
+						"precipitation_behavior": "obstruct_rain"
+					},
+					"minecraft:connection_rule": {
+						"accepts_connections_from": "none"
+					},
 					"minecraft:transformation": {
 						"rotation": [
 							180,
@@ -165,6 +223,15 @@
 			{
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('minecraft:vertical_half') == 'bottom' && q.block_state('poke_pfe:trapdoor_open') == 'yes'",
 				"components": {
+					"minecraft:precipitation_interactions": {
+						"precipitation_behavior": "none"
+					},
+					"minecraft:connection_rule": {
+						"accepts_connections_from": "all",
+						"enabled_directions": [
+							"south"
+						]
+					},
 					"minecraft:transformation": {
 						"rotation": [
 							-90,
@@ -178,6 +245,12 @@
 			{
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('minecraft:vertical_half') == 'bottom' && q.block_state('poke_pfe:trapdoor_open') == 'no'",
 				"components": {
+					"minecraft:precipitation_interactions": {
+						"precipitation_behavior": "obstruct_rain"
+					},
+					"minecraft:connection_rule": {
+						"accepts_connections_from": "none"
+					},
 					"minecraft:transformation": {
 						"rotation": [
 							0,
@@ -191,6 +264,15 @@
 			{
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('minecraft:vertical_half') == 'bottom' && q.block_state('poke_pfe:trapdoor_open') == 'yes'",
 				"components": {
+					"minecraft:precipitation_interactions": {
+						"precipitation_behavior": "none"
+					},
+					"minecraft:connection_rule": {
+						"accepts_connections_from": "all",
+						"enabled_directions": [
+							"west"
+						]
+					},
 					"minecraft:transformation": {
 						"rotation": [
 							90,
@@ -204,6 +286,12 @@
 			{
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('minecraft:vertical_half') == 'top' && q.block_state('poke_pfe:trapdoor_open') == 'no'",
 				"components": {
+					"minecraft:precipitation_interactions": {
+						"precipitation_behavior": "obstruct_rain_accumulate_snow"
+					},
+					"minecraft:connection_rule": {
+						"accepts_connections_from": "none"
+					},
 					"minecraft:transformation": {
 						"rotation": [
 							0,
@@ -217,6 +305,15 @@
 			{
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('minecraft:vertical_half') == 'top' && q.block_state('poke_pfe:trapdoor_open') == 'yes'",
 				"components": {
+					"minecraft:precipitation_interactions": {
+						"precipitation_behavior": "none"
+					},
+					"minecraft:connection_rule": {
+						"accepts_connections_from": "all",
+						"enabled_directions": [
+							"east"
+						]
+					},
 					"minecraft:transformation": {
 						"rotation": [
 							90,
@@ -230,6 +327,12 @@
 			{
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('minecraft:vertical_half') == 'bottom' && q.block_state('poke_pfe:trapdoor_open') == 'no'",
 				"components": {
+					"minecraft:precipitation_interactions": {
+						"precipitation_behavior": "obstruct_rain"
+					},
+					"minecraft:connection_rule": {
+						"accepts_connections_from": "none"
+					},
 					"minecraft:transformation": {
 						"rotation": [
 							0,
@@ -243,6 +346,15 @@
 			{
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('minecraft:vertical_half') == 'bottom' && q.block_state('poke_pfe:trapdoor_open') == 'yes'",
 				"components": {
+					"minecraft:precipitation_interactions": {
+						"precipitation_behavior": "none"
+					},
+					"minecraft:connection_rule": {
+						"accepts_connections_from": "all",
+						"enabled_directions": [
+							"east"
+						]
+					},
 					"minecraft:transformation": {
 						"rotation": [
 							90,
@@ -256,6 +368,12 @@
 			{
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('minecraft:vertical_half') == 'top' && q.block_state('poke_pfe:trapdoor_open') == 'no'",
 				"components": {
+					"minecraft:precipitation_interactions": {
+						"precipitation_behavior": "obstruct_rain_accumulate_snow"
+					},
+					"minecraft:connection_rule": {
+						"accepts_connections_from": "none"
+					},
 					"minecraft:transformation": {
 						"rotation": [
 							0,
@@ -269,6 +387,15 @@
 			{
 				"condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('minecraft:vertical_half') == 'top' && q.block_state('poke_pfe:trapdoor_open') == 'yes'",
 				"components": {
+					"minecraft:precipitation_interactions": {
+						"precipitation_behavior": "none"
+					},
+					"minecraft:connection_rule": {
+						"accepts_connections_from": "all",
+						"enabled_directions": [
+							"west"
+						]
+					},
 					"minecraft:transformation": {
 						"rotation": [
 							90,

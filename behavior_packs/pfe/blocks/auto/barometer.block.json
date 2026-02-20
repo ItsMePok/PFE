@@ -4,10 +4,15 @@
 		"description": {
 			"identifier": "poke_pfe:barometer",
 			"menu_category": {
-				"category": "items"
+				"category": "none"
 			}
 		},
 		"components": {
+			"minecraft:redstone_consumer": {
+				"propogates_power": false,
+				"min_power": 0
+			},
+			"poke_pfe:transform_block": {},
 			"minecraft:display_name": "%poke_pfe.barometer\n%poke_pfe.tag",
 			"minecraft:material_instances": {
 				"*": {
