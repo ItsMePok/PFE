@@ -43,12 +43,7 @@
 					"require_full_health": true,
 					"allow_sitting": true,
 					"breeds_with": {
-						"mate_type": "poke_pfe:mushroom_buddy",
-						"baby_type": "poke_pfe:mushroom_buddy",
-						"breed_event": {
-							"event": "minecraft:entity_born",
-							"target": "baby"
-						}
+						"poke_pfe:mushroom_buddy": {}
 					},
 					"breed_items": [
 						"beetroot",
@@ -198,6 +193,11 @@
 			}
 		},
 		"components": {
+			"minecraft:offspring": {
+				"offspring_pairs": {
+					"poke_pfe:mushroom_buddy": "poke_pfe:mushroom_buddy"
+				}
+			},
 			"minecraft:leashable": {
 				"presets": [
 					{

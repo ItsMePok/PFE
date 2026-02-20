@@ -54,17 +54,7 @@
 						"wheat"
 					],
 					"breeds_with": {
-						"mate_type": "poke_pfe:warped_sporeshroom",
-						"baby_type": "poke_pfe:warped_sporeshroom",
-						"breed_event": {
-							"event": "minecraft:entity_born",
-							"target": "baby"
-						}
-					},
-					"deny_parents_variant": {
-						"chance": 0.00098,
-						"min_variant": 0,
-						"max_variant": 1
+						"poke_pfe:warped_sporeshroom": {}
 					}
 				},
 				"minecraft:interact": {
@@ -727,8 +717,19 @@
 			}
 		},
 		"components": {
+			"minecraft:offspring": {
+				"offspring_pairs": {
+					"poke_pfe:warped_sporeshroom": "poke_pfe:warped_sporeshroom"
+				},
+				"deny_parents_variant": {
+					"chance": 0.00098,
+					"min_variant": 0,
+					"max_variant": 1
+				}
+			},
 			"minecraft:type_family": {
 				"family": [
+					"sporeshroom",
 					"mushroomcow",
 					"mob"
 				]
@@ -745,13 +746,15 @@
 				"height": 1.3
 			},
 			"minecraft:nameable": {
-				"name_actions": {
-					"name_filter": "despawn",
-					"on_named": {
-						"event": "poke_pfe:despawn",
-						"target": "self"
+				"name_actions": [
+					{
+						"name_filter": "despawn",
+						"on_named": {
+							"event": "poke_pfe:despawn",
+							"target": "self"
+						}
 					}
-				}
+				]
 			},
 			"minecraft:health": {
 				"value": 10,

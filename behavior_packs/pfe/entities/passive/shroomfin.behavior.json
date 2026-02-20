@@ -172,13 +172,15 @@
 		},
 		"components": {
 			"minecraft:nameable": {
-				"name_actions": {
-					"name_filter": "despawn",
-					"on_named": {
-						"event": "poke_pfe:despawn",
-						"target": "self"
+				"name_actions": [
+					{
+						"name_filter": "despawn",
+						"on_named": {
+							"event": "poke_pfe:despawn",
+							"target": "self"
+						}
 					}
-				}
+				]
 			},
 			"minecraft:type_family": {
 				"family": [

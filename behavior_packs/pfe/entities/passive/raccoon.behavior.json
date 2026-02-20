@@ -1,5 +1,5 @@
-{ //Entity model, Animations& Textures was made by O2God for PFE
-	"format_version": "1.21.50",
+{ // This entity's model, animations & textures were made by O2God for PFE
+	"format_version": "1.26.0",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke_pfe:raccoon",
@@ -49,12 +49,7 @@
 					"require_tame": true,
 					"require_full_health": true,
 					"breeds_with": {
-						"mate_type": "poke_pfe:raccoon",
-						"baby_type": "poke_pfe:raccoon",
-						"breed_event": {
-							"event": "minecraft:entity_born",
-							"target": "baby"
-						}
+						"poke_pfe:raccoon": {}
 					},
 					"breed_items": [
 						"chicken",
@@ -256,6 +251,11 @@
 			}
 		},
 		"components": {
+			"minecraft:offspring": {
+				"offspring_pairs": {
+					"poke_pfe:raccoon": "poke_pfe:raccoon"
+				}
+			},
 			"minecraft:nameable": {},
 			"minecraft:type_family": {
 				"family": [
@@ -399,7 +399,7 @@
 			},
 			"minecraft:behavior.look_at_player": {
 				"priority": 6,
-				"target_distance": 6,
+				"look_distance": 6,
 				"probability": 0.02
 			},
 			"minecraft:behavior.beg": {

@@ -105,12 +105,7 @@
 				"minecraft:breedable": {
 					"require_tame": false,
 					"breeds_with": {
-						"mate_type": "poke_pfe:pale_ocelot",
-						"baby_type": "poke_pfe:pale_ocelot",
-						"breed_event": {
-							"event": "minecraft:entity_born",
-							"target": "baby"
-						}
+						"poke_pfe:pale_ocelot": {}
 					},
 					"breed_items": [
 						"fish",
@@ -141,6 +136,11 @@
 			}
 		},
 		"components": {
+			"minecraft:offspring": {
+				"offspring_pairs": {
+					"poke_pfe:pale_ocelot": "poke_pfe:pale_ocelot"
+				}
+			},
 			"minecraft:health": {
 				"value": 10,
 				"max": 10
