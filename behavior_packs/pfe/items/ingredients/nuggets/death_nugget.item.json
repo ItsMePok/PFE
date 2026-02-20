@@ -12,7 +12,12 @@
 				"value": "%poke_pfe.death_nugget\n%poke_pfe.tag"
 			},
 			"poke_pfe:icon_path": "textures/poke/pfe/death_nugget",
-			"minecraft:icon": "poke_pfe_death_nugget"
+			"minecraft:icon": "poke_pfe_death_nugget",
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:metal_nuggets"
+				]
+			}
 		}
 	}
 }

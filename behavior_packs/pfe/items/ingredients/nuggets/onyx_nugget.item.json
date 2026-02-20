@@ -12,7 +12,12 @@
 				"value": "%poke_pfe.onyx_nugget\n%poke_pfe.tag"
 			},
 			"poke_pfe:icon_path": "textures/poke/pfe/onyx_nugget",
-			"minecraft:icon": "poke_pfe_onyx_nugget"
+			"minecraft:icon": "poke_pfe_onyx_nugget",
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:metal_nuggets"
+				]
+			}
 		}
 	}
 }

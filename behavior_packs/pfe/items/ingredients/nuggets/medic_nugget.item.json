@@ -12,7 +12,12 @@
 				"value": "%poke_pfe.medic_nugget\n%poke_pfe.tag"
 			},
 			"poke_pfe:icon_path": "textures/poke/pfe/medic_nugget",
-			"minecraft:icon": "poke_pfe_medic_nugget"
+			"minecraft:icon": "poke_pfe_medic_nugget",
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:metal_nuggets"
+				]
+			}
 		}
 	}
 }

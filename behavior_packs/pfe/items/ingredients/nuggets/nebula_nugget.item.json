@@ -12,7 +12,12 @@
 				"value": "%poke_pfe.nebula_nugget\n%poke_pfe.tag"
 			},
 			"poke_pfe:icon_path": "textures/poke/pfe/nebula_nugget",
-			"minecraft:icon": "poke_pfe_nebula_nugget"
+			"minecraft:icon": "poke_pfe_nebula_nugget",
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:metal_nuggets"
+				]
+			}
 		}
 	}
 }
