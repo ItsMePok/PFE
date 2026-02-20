@@ -1,5 +1,5 @@
 ---
-description: 'Last updated to match: v1.3.01'
+description: 'Last updated to match: v1.3.03'
 ---
 
 # Home
@@ -14,7 +14,7 @@ This wiki is still a work in progress; some pages are unfinished.
 
 ### Experimental Toggles: <mark style="color:yellow;">None</mark>
 
-### Lowest Supported Minecraft Version: <mark style="color:yellow;">1.21.130</mark>
+### Lowest Supported Minecraft Version: [<mark style="color:yellow;">26.0</mark>](#user-content-fn-1)[^1]
 
 ***
 
@@ -97,3 +97,5 @@ _you can also  me on discord itsmepok_
 (since this wiki has used some assets from the game)
 
 **NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT**
+
+[^1]: 1.26.0
