@@ -8,7 +8,7 @@
 				"enchanted": "armor_enchanted"
 			},
 			"textures": {
-				"default": "textures/poke/pfe/amethyst_2_armor",
+				"default": "textures/poke/pfe/creedite_2_armor",
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {

@@ -14,6 +14,7 @@ export {
 const ArmorEffectDuration = 300
 const SensitiveArmorEffectDuration = 500
 const PFECustomArmorEffectDynamicProperty = `poke_pfe:custom_effects`
+const SET_EFFECTS_ITEM_COMPONENT = "poke_pfe:set_effects"
 interface PFEDamageInfo {
   type: "heal" | "damage"
   amountStep: number,
@@ -177,19 +178,38 @@ function CheckEffects(player: Player, additionalOptions?: boolean, customParse?:
   let customEffects: PFECustomEffectInfo[] = JSON.parse(world.getDynamicProperty(PFECustomArmorEffectDynamicProperty)!.toString())
 
   if (additionalOptions) {
-    const NoveltyTags = player.getTags().filter(tag => tag.includes(`novelty:poke`))
-    for (let i = NoveltyTags.length; i > -1; i--) {
-      const tag = NoveltyTags.at(i);
-      if (!tag) continue
-      const item = new ItemStack(tag.substring(8), 1)
+    const NoveltyTags = player.getTags().filter(tag => tag.includes(`novelty:poke_`))
+    for (const TAG of NoveltyTags) {
+      const ITEM = new ItemStack(TAG.substring(8), 1)
       totalPieces += 1;
       switch (true) {
+        case ITEM.hasComponent(SET_EFFECTS_ITEM_COMPONENT): {
+          const COMPONENT = <SetEffectComponent>ITEM.getComponent(SET_EFFECTS_ITEM_COMPONENT)?.customComponentParameters.params;
+          if (!COMPONENT) continue;
+          for (const EFFECT of COMPONENT) {
+            switch (EFFECT.mode) {
+              case "command": {
+                commands.push(<CommandOptions>EFFECT);
+                break;
+              };
+              case "radius_effect": {
+                radius_effects.push(<RadiusEffectOptions>EFFECT);
+                break;
+              };
+              default: {
+                effects.push(<EffectOptions>EFFECT);
+                break;
+              };
+            }
+          }
+          break;
+        }
         default: {
           let passed = false
           if (customEffects.length > 0) {
             for (let customEffect of customEffects) {
               if (!(customEffect.mode) || customEffect.mode != "tag") { totalPieces -= 1; continue }; // This is due to this not being able to view the current itemStack only a clone of it
-              if (item.hasTag(customEffect.tag)) {
+              if (ITEM.hasTag(customEffect.tag)) {
                 effects = effects.concat(customEffect.effects)
                 passed = true
               }
@@ -442,7 +462,7 @@ function startSetEffects() {
     const customParse = world.getDynamicProperty(`poke_pfe:custom_effect_parser`) == true ? true : false
     for (let player of world.getAllPlayers()) {
       if (!player) continue;
-      CheckEffects(player, JSON.stringify(player.getTags()).includes(`novelty:poke`), customParse)
+      CheckEffects(player, JSON.stringify(player.getTags()).includes(`novelty:poke_`), customParse)
     }
   }, Number(world.getDynamicProperty("poke_pfe:setEffectInterval") ?? 20))
 }

@@ -3285,7 +3285,7 @@ var initExampleStickers = () => {
     "poke_pfe:striker": [{ itemId: "poke_pfe:striker_sticker" }],
     "poke_pfe:super_striker": [{ itemId: "poke_pfe:super_striker_sticker" }],
     "poke_pfe:token_trader": [{ itemId: "poke_pfe:token_trader_sticker" }],
-    "poke_pfe:sporecat": [{ itemId: "poke_pfe:sporecat_sticker" }],
+    "poke_pfe:sporecat": [{ itemId: "poke_pfe:warped_sporecat_sticker" }],
     "poke_pfe:warped_sporeshroom": [{ itemId: "poke_pfe:warped_sporeshroom_sticker" }],
     "poke_pfe:windswept_bear": [{ itemId: "poke_pfe:windswept_bear_sticker" }],
     "poke_pfe:woodspike_guardian": [{ itemId: "poke_pfe:woodspike_guardian_sticker" }],
@@ -3924,6 +3924,7 @@ import { EntityComponentTypes as EntityComponentTypes2, EquipmentSlot as Equipme
 var ArmorEffectDuration = 300;
 var SensitiveArmorEffectDuration = 500;
 var PFECustomArmorEffectDynamicProperty = `poke_pfe:custom_effects`;
+var SET_EFFECTS_ITEM_COMPONENT = "poke_pfe:set_effects";
 var PFESetEffectId = "poke_pfe:set_effects";
 function CheckEffects(player, additionalOptions, customParse) {
   const Helmet = player.getComponent(EntityComponentTypes2.Equippable)?.getEquipment(EquipmentSlot2.Head) ?? void 0;
@@ -4001,13 +4002,38 @@ function CheckEffects(player, additionalOptions, customParse) {
   let totalWither = 0;
   let customEffects = JSON.parse(world4.getDynamicProperty(PFECustomArmorEffectDynamicProperty).toString());
   if (additionalOptions) {
-    const NoveltyTags = player.getTags().filter((tag) => tag.includes(`novelty:poke`));
-    for (let i = NoveltyTags.length; i > -1; i--) {
-      const tag = NoveltyTags.at(i);
-      if (!tag) continue;
-      const item = new ItemStack2(tag.substring(8), 1);
+    const NoveltyTags = player.getTags().filter((tag) => tag.includes(`novelty:poke_`));
+    for (const TAG of NoveltyTags) {
+      const ITEM = new ItemStack2(TAG.substring(8), 1);
       totalPieces += 1;
       switch (true) {
+        case ITEM.hasComponent(SET_EFFECTS_ITEM_COMPONENT): {
+          const COMPONENT = ITEM.getComponent(SET_EFFECTS_ITEM_COMPONENT)?.customComponentParameters.params;
+          if (!COMPONENT) continue;
+          for (const EFFECT of COMPONENT) {
+            switch (EFFECT.mode) {
+              case "command":
+                {
+                  commands.push(EFFECT);
+                  break;
+                }
+                ;
+              case "radius_effect":
+                {
+                  radius_effects.push(EFFECT);
+                  break;
+                }
+                ;
+              default:
+                {
+                  effects.push(EFFECT);
+                  break;
+                }
+                ;
+            }
+          }
+          break;
+        }
         default:
           {
             let passed = false;
@@ -4018,7 +4044,7 @@ function CheckEffects(player, additionalOptions, customParse) {
                   continue;
                 }
                 ;
-                if (item.hasTag(customEffect.tag)) {
+                if (ITEM.hasTag(customEffect.tag)) {
                   effects = effects.concat(customEffect.effects);
                   passed = true;
                 }
@@ -4479,7 +4505,7 @@ function startSetEffects() {
     const customParse = world4.getDynamicProperty(`poke_pfe:custom_effect_parser`) == true ? true : false;
     for (let player of world4.getAllPlayers()) {
       if (!player) continue;
-      CheckEffects(player, JSON.stringify(player.getTags()).includes(`novelty:poke`), customParse);
+      CheckEffects(player, JSON.stringify(player.getTags()).includes(`novelty:poke_`), customParse);
     }
   }, Number(world4.getDynamicProperty("poke_pfe:setEffectInterval") ?? 20));
 }

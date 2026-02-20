@@ -125,10 +125,10 @@
 						}
 					},
 					"poke_pfe:spawn_particle": {
-						"poke_pfe:ice_ring_r5": {
+						/*"poke_pfe:ice_ring_r5": {
 							"offset": "{\"x\":0.5,\"y\":1,\"z\":0.5}",
 							"requires_redstone_power": true
-						}
+						}*/
 					},
 					"poke_pfe:place_blocks": {
 						"places": "minecraft:ice",
