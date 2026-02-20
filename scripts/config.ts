@@ -117,7 +117,7 @@ function PFEDisableConfigMainMenu(player: Player) {
   UI.button({ translate: `%poke_pfe.set_effects:${world.getDynamicProperty(`poke_pfe:disable_armor_effects`) == true ? disabled : enabled}` }, `textures/poke/common/effect_particles`)
   UI.button({ translate: `%translation.poke_pfe.death_armor_radius:${options.deathArmorRadius ? enabled : disabled}` }, `textures/poke/pfe/death_helmet`)
   UI.button({ translate: `%translation.poke_pfe.cactus_armor_radius:${options.cactusArmorRadius ? enabled : disabled}` }, `textures/poke/pfe/cactus_helmet`)
-  UI.button({ translate: `%translation.poke_pfe.cassette_trader:${options.cassetteTrader ? enabled : disabled}` }, `textures/poke/pfe/cassette_trader_icon`)
+  UI.button({ translate: `%entity.cassette_trader.name:${options.cassetteTrader ? enabled : disabled}` }, `textures/poke/pfe/cassette_trader_spawn_egg`)
   UI.button({ translate: `translation.poke_pfe:goBack` }, `textures/poke/common/left_arrow`)
   UI.show(player).then(response => {
     let selection = 0

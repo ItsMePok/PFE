@@ -8,6 +8,12 @@
       }
     },
     "components": {
+      "minecraft:connection_rule": {
+        "accepts_connections_from": "none"
+      },
+      "minecraft:precipitation_interactions": {
+        "precipitation_behavior": "none"
+      },
       "minecraft:display_name": "%poke_pfe.upgrader\n§7%poke_pfe.upgrader.description\n§7%poke_pfe.has_recipes\n%poke_pfe.tag",
       "poke_pfe:custom_recipes": [
         {

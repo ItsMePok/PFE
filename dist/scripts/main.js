@@ -1,5 +1,5 @@
 // scripts/main.ts
-import { system as system9, world as world11, EquipmentSlot as EquipmentSlot10, EntityComponentTypes as EntityComponentTypes11, ItemComponentTypes as ItemComponentTypes7, CommandPermissionLevel, CustomCommandParamType, CustomCommandStatus, ItemLockMode as ItemLockMode2 } from "@minecraft/server";
+import { system as system9, world as world12, EquipmentSlot as EquipmentSlot10, EntityComponentTypes as EntityComponentTypes11, ItemComponentTypes as ItemComponentTypes7, CommandPermissionLevel, CustomCommandParamType, CustomCommandStatus, ItemLockMode as ItemLockMode2 } from "@minecraft/server";
 
 // node_modules/@minecraft/vanilla-data/lib/index.js
 var MinecraftBiomeTypes = ((MinecraftBiomeTypes2) => {
@@ -3285,7 +3285,7 @@ var initExampleStickers = () => {
     "poke_pfe:striker": [{ itemId: "poke_pfe:striker_sticker" }],
     "poke_pfe:super_striker": [{ itemId: "poke_pfe:super_striker_sticker" }],
     "poke_pfe:token_trader": [{ itemId: "poke_pfe:token_trader_sticker" }],
-    "poke_pfe:warped_sporecat": [{ itemId: "poke_pfe:warped_sporecat_sticker" }],
+    "poke_pfe:sporecat": [{ itemId: "poke_pfe:sporecat_sticker" }],
     "poke_pfe:warped_sporeshroom": [{ itemId: "poke_pfe:warped_sporeshroom_sticker" }],
     "poke_pfe:windswept_bear": [{ itemId: "poke_pfe:windswept_bear_sticker" }],
     "poke_pfe:woodspike_guardian": [{ itemId: "poke_pfe:woodspike_guardian_sticker" }],
@@ -4576,7 +4576,7 @@ function PFEDisableConfigMainMenu(player) {
   UI.button({ translate: `%poke_pfe.set_effects:${world5.getDynamicProperty(`poke_pfe:disable_armor_effects`) == true ? disabled : enabled}` }, `textures/poke/common/effect_particles`);
   UI.button({ translate: `%translation.poke_pfe.death_armor_radius:${options.deathArmorRadius ? enabled : disabled}` }, `textures/poke/pfe/death_helmet`);
   UI.button({ translate: `%translation.poke_pfe.cactus_armor_radius:${options.cactusArmorRadius ? enabled : disabled}` }, `textures/poke/pfe/cactus_helmet`);
-  UI.button({ translate: `%translation.poke_pfe.cassette_trader:${options.cassetteTrader ? enabled : disabled}` }, `textures/poke/pfe/cassette_trader_icon`);
+  UI.button({ translate: `%entity.cassette_trader.name:${options.cassetteTrader ? enabled : disabled}` }, `textures/poke/pfe/cassette_trader_spawn_egg`);
   UI.button({ translate: `translation.poke_pfe:goBack` }, `textures/poke/common/left_arrow`);
   UI.show(player).then((response) => {
     let selection = 0;
@@ -7807,7 +7807,7 @@ function RegisterItemComponents(data) {
 }
 
 // scripts/custom_components/block_custom_components.ts
-import { BlockComponentTypes, BlockPermutation as BlockPermutation3, BlockVolume as BlockVolume2, Direction as Direction3, EntityComponentTypes as EntityComponentTypes10, EquipmentSlot as EquipmentSlot9, GameMode as GameMode5, ItemComponentTypes as ItemComponentTypes6, ItemStack as ItemStack10, LiquidType } from "@minecraft/server";
+import { BlockComponentTypes, BlockPermutation as BlockPermutation3, BlockVolume as BlockVolume2, Direction as Direction3, EntityComponentTypes as EntityComponentTypes10, EquipmentSlot as EquipmentSlot9, GameMode as GameMode5, ItemComponentTypes as ItemComponentTypes6, ItemStack as ItemStack10 } from "@minecraft/server";
 
 // scripts/recipeSystems.ts
 import { BlockPermutation as BlockPermutation2, BlockTypes, ItemComponentTypes as ItemComponentTypes5, ItemStack as ItemStack9 } from "@minecraft/server";
@@ -8260,7 +8260,7 @@ function RegisterBlockComponents(data) {
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:spawn_particle",
     {
-      onTick(data2, componentInfo) {
+      onRedstoneUpdate(data2, componentInfo) {
         const COMPONENT = componentInfo.params;
         const DIMENSION = data2.dimension;
         const BLOCK = data2.block;
@@ -8277,21 +8277,21 @@ function RegisterBlockComponents(data) {
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:cycle_color",
     {
-      onPlayerInteract(data2, component) {
-        const block_location = `${data2.block.x} ${data2.block.y} ${data2.block.z}`;
-        const ColorState = `poke_pfe:color`;
-        let light_color = data2.block.permutation.getState(ColorState);
-        let sound_pitch = 1 + light_color / 10;
-        if (data2.block.permutation.getState(ColorState) == 15) {
-          data2.block.setPermutation(data2.block.permutation.withState(ColorState, 0));
-          data2.block.dimension.runCommand(`playsound block.copper_bulb.turn_on @a  ${block_location} 1 ${sound_pitch}`);
+      onPlayerInteract(data2, componentInfo) {
+        const BLOCK_LOCATION = `${data2.block.x} ${data2.block.y} ${data2.block.z}`;
+        const COLOR_STATE = `poke_pfe:color`;
+        const LIGHT_COLOR = data2.block.permutation.getState(COLOR_STATE);
+        const SOUND_PITCH = 1 + LIGHT_COLOR / 10;
+        if (data2.block.permutation.getState(COLOR_STATE) == 15) {
+          data2.block.setPermutation(data2.block.permutation.withState(COLOR_STATE, 0));
+          data2.block.dimension.runCommand(`playsound block.copper_bulb.turn_on @a  ${BLOCK_LOCATION} 1 ${SOUND_PITCH}`);
           ComputersCompat.addStat(`bulb_color_changes`, 1);
           return;
         } else {
           data2.block.setPermutation(
-            data2.block.permutation.withState(ColorState, light_color + 1)
+            data2.block.permutation.withState(COLOR_STATE, LIGHT_COLOR + 1)
           );
-          data2.block.dimension.runCommand(`playsound block.copper_bulb.turn_on @a ${block_location} 1 ${sound_pitch}`);
+          data2.block.dimension.runCommand(`playsound block.copper_bulb.turn_on @a ${BLOCK_LOCATION} 1 ${SOUND_PITCH}`);
           ComputersCompat.addStat(`bulb_color_changes`, 1);
           return;
         }
@@ -8301,7 +8301,7 @@ function RegisterBlockComponents(data) {
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:slab_loot",
     {
-      onPlayerBreak(data2, component) {
+      onPlayerBreak(data2, componentInfo) {
         const block_location = data2.block.location;
         const gm = data2.player?.getGameMode();
         const blockId = data2.brokenBlockPermutation.type.id;
@@ -8321,17 +8321,27 @@ function RegisterBlockComponents(data) {
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:trapdoor_event",
     {
-      onPlayerInteract(data2, component) {
+      onPlayerInteract(data2, componentInfo) {
         const blockLocation = `${data2.block.location.x} ${data2.block.location.y} ${data2.block.location.z}`;
         const OpenState = "poke_pfe:trapdoor_open";
         if (data2.block.permutation.hasTag("pfe_trapdoor_open") == true) {
           data2.block.setPermutation(data2.block.permutation.withState(OpenState, "no"));
-          data2.block.dimension.playSound(`open.iron_trapdoor`, data2.block.center());
+          data2.block.dimension.playSound(`close.iron_trapdoor`, data2.block.center());
           return;
         } else {
           data2.block.setPermutation(data2.block.permutation.withState(OpenState, "yes"));
-          data2.block.dimension.playSound(`close.iron_trapdoor`, data2.block.center());
+          data2.block.dimension.playSound(`open.iron_trapdoor`, data2.block.center());
           return;
+        }
+      },
+      onRedstoneUpdate(data2, componentInfo) {
+        const OpenState = "poke_pfe:trapdoor_open";
+        if (data2.powerLevel) {
+          data2.block.setPermutation(data2.block.permutation.withState(OpenState, "yes"));
+          data2.block.dimension.playSound(`open.iron_trapdoor`, data2.block.center());
+        } else {
+          data2.block.setPermutation(data2.block.permutation.withState(OpenState, "no"));
+          data2.block.dimension.playSound(`close.iron_trapdoor`, data2.block.center());
         }
       }
     }
@@ -8339,7 +8349,7 @@ function RegisterBlockComponents(data) {
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:fortune",
     {
-      onPlayerBreak(data2, component) {
+      onPlayerBreak(data2, componentInfo) {
         const equippableComponent = data2.player?.getComponent(EntityComponentTypes10.Equippable);
         if (equippableComponent === void 0) return;
         if (!equippableComponent.getEquipment(EquipmentSlot9.Mainhand)?.hasComponent(ItemComponentTypes6.Enchantable)) return;
@@ -8377,7 +8387,7 @@ function RegisterBlockComponents(data) {
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:can_double_slab",
     {
-      onPlayerInteract(data2, component) {
+      onPlayerInteract(data2, componentInfo) {
         if (!data2.player) return;
         const DoubleState = "poke_pfe:double";
         if (data2.block.permutation.getState(DoubleState) == true) return;
@@ -8407,7 +8417,7 @@ function RegisterBlockComponents(data) {
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:cc_phantomic_conduit",
     {
-      onTick(data2, component) {
+      onTick(data2, componentInfo) {
         const ActiveState = "poke_pfe:active";
         var block_location_x = data2.block.x;
         var block_location_y = data2.block.y;
@@ -8428,7 +8438,7 @@ function RegisterBlockComponents(data) {
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:cc_da_conduit",
     {
-      onTick(data2, component) {
+      onTick(data2, componentInfo) {
         const ActiveState = "poke_pfe:active";
         const block_location = `${data2.block.x} ${data2.block.y} ${data2.block.z}`;
         if (data2.block.getRedstonePower() != 0 && data2.block.getRedstonePower() !== void 0) {
@@ -8447,7 +8457,7 @@ function RegisterBlockComponents(data) {
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:spawn_item",
     {
-      onTick(data2, componentInfo) {
+      onRedstoneUpdate(data2, componentInfo) {
         const component = componentInfo.params;
         if (component.needs_state) {
           if (!data2.block.permutation.getState(component.needs_state.name) == component.needs_state.value) return;
@@ -8468,34 +8478,24 @@ function RegisterBlockComponents(data) {
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:redstone_state",
     {
-      onTick(data2, component) {
-        const ActiveState = "poke_pfe:active";
-        if (data2.block.getRedstonePower() != 0 && data2.block.getRedstonePower() !== void 0) {
-          data2.block.setPermutation(data2.block.permutation.withState(ActiveState, 1));
-          return;
+      onRedstoneUpdate(data2, componentInfo) {
+        const ACTIVE_STATE = "poke_pfe:active";
+        if (data2.powerLevel) {
+          data2.block.setPermutation(data2.block.permutation.withState(ACTIVE_STATE, 1));
+        } else {
+          data2.block.setPermutation(data2.block.permutation.withState(ACTIVE_STATE, 0));
         }
-        if (data2.block.getRedstonePower() == 0 && data2.block.getRedstonePower() !== void 0) {
-          data2.block.setPermutation(data2.block.permutation.withState(ActiveState, 0));
-          return;
-        }
-        return;
       }
     }
   );
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:magnet_block",
     {
-      onTick(data2, component) {
-        const ActiveState = "poke_pfe:active";
+      onRedstoneUpdate(data2, componentInfo) {
         let blockY = data2.block.permutation.getState(`minecraft:vertical_half`) == `top` ? data2.block.center().y - 0.5 : data2.block.center().y + 0.5;
         const block_location = `${data2.block.x} ${blockY} ${data2.block.z}`;
-        if (data2.block.getRedstonePower() != 0 && data2.block.getRedstonePower() !== void 0) {
-          data2.block.setPermutation(data2.block.permutation.withState(ActiveState, 1));
+        if (data2.powerLevel) {
           data2.dimension.runCommand(`execute positioned ${block_location} as @e[type=item,r=10] run tp @s ${block_location}`);
-          return;
-        }
-        if (data2.block.getRedstonePower() == 0 && data2.block.getRedstonePower() !== void 0) {
-          data2.block.setPermutation(data2.block.permutation.withState(ActiveState, 0));
           return;
         }
         return;
@@ -8505,7 +8505,7 @@ function RegisterBlockComponents(data) {
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:crops",
     {
-      onRandomTick(data2, component) {
+      onRandomTick(data2, componentInfo) {
         const GrowthStageState = "poke_pfe:growth_stage";
         var growth_state = data2.block.permutation.getState(GrowthStageState);
         var growth_stage = growth_state + 1;
@@ -8515,7 +8515,7 @@ function RegisterBlockComponents(data) {
         }
         return;
       },
-      onPlayerInteract(data2, component) {
+      onPlayerInteract(data2, componentInfo) {
         const equippableComponent = data2.player?.getComponent(EntityComponentTypes10.Equippable);
         const mainhandItem = equippableComponent?.getEquipment(EquipmentSlot9.Mainhand);
         const GrowthStageState = "poke_pfe:growth_stage";
@@ -8549,7 +8549,7 @@ function RegisterBlockComponents(data) {
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:molten_lava_sponge",
     {
-      onRandomTick(data2, component) {
+      onRandomTick(data2, componentInfo) {
         switch (MinecraftBlockTypes.Water || MinecraftBlockTypes.FlowingWater) {
           case data2.block.north()?.typeId:
             break;
@@ -8577,7 +8577,7 @@ function RegisterBlockComponents(data) {
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:cc_block_seat",
     {
-      onPlayerInteract(data2, component) {
+      onPlayerInteract(data2, componentInfo) {
         if (!data2.player) return;
         const slabId = data2.block.typeId;
         const mainhand = data2.player.getComponent(EntityComponentTypes10.Equippable)?.getEquipment(EquipmentSlot9.Mainhand);
@@ -8605,7 +8605,7 @@ function RegisterBlockComponents(data) {
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:cc_block_interact",
     {
-      onPlayerInteract(data2, component) {
+      onPlayerInteract(data2, componentInfo) {
         switch (data2.block.typeId) {
           case "poke_pfe:listener_trophy": {
             data2.player?.playMusic("poke_pfe.they_listen", { fade: 5 });
@@ -8629,7 +8629,7 @@ function RegisterBlockComponents(data) {
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:cc_8ball",
     {
-      onPlayerInteract(data2, component) {
+      onPlayerInteract(data2, componentInfo) {
         var RNG = Math.floor(Math.random() * 19);
         data2.player?.sendMessage({ rawtext: [{ translate: `translation.poke_pfe:8ball${RNG}` }] });
         return;
@@ -8637,133 +8637,9 @@ function RegisterBlockComponents(data) {
     }
   );
   data.blockComponentRegistry.registerCustomComponent(
-    "poke_pfe:cc_wall",
-    {
-      onPlace(data2, component) {
-        const NorthBlock = data2.block.north();
-        const SouthBlock = data2.block.south();
-        const EastBlock = data2.block.east();
-        const WestBlock = data2.block.west();
-        const AboveBlock = data2.block.above();
-        const BelowBlock = data2.block.below();
-        const NorthState = "poke_pfe:wall_n";
-        const SouthState = "poke_pfe:wall_s";
-        const EastState = "poke_pfe:wall_e";
-        const WestState = "poke_pfe:wall_w";
-        const AboveState = "poke_pfe:connected_above";
-        const BelowState = "poke_pfe:connected_below";
-        if (!NorthBlock || !SouthBlock || !EastBlock || !WestBlock) return;
-        if (!NorthBlock.isAir && !NorthBlock.isLiquid && !NorthBlock.canBeDestroyedByLiquidSpread(LiquidType.Water)) {
-          data2.block.setPermutation(data2.block.permutation.withState(NorthState, true));
-          if (NorthBlock.permutation.getState(SouthState) != void 0) {
-            NorthBlock.setPermutation(NorthBlock.permutation.withState(SouthState, true));
-            Post(NorthBlock, true, true);
-          }
-        } else {
-          data2.block.setPermutation(data2.block.permutation.withState(NorthState, false));
-        }
-        ;
-        if (!SouthBlock.isAir && !SouthBlock.isLiquid && !SouthBlock.canBeDestroyedByLiquidSpread(LiquidType.Water)) {
-          data2.block.setPermutation(data2.block.permutation.withState(SouthState, true));
-          if (SouthBlock.permutation.getState(NorthState) != void 0) {
-            SouthBlock.setPermutation(SouthBlock.permutation.withState(NorthState, true));
-            Post(SouthBlock, true, true);
-          }
-        } else {
-          data2.block.setPermutation(data2.block.permutation.withState(SouthState, false));
-        }
-        ;
-        if (!EastBlock.isAir && !EastBlock.isLiquid && !EastBlock.canBeDestroyedByLiquidSpread(LiquidType.Water)) {
-          data2.block.setPermutation(data2.block.permutation.withState(EastState, true));
-          if (EastBlock.permutation.getState(WestState) != void 0) {
-            EastBlock.setPermutation(EastBlock.permutation.withState(WestState, true));
-            Post(EastBlock, true, true);
-          }
-        } else {
-          data2.block.setPermutation(data2.block.permutation.withState(EastState, false));
-        }
-        ;
-        if (!WestBlock.isAir && !WestBlock.isLiquid && !WestBlock.canBeDestroyedByLiquidSpread(LiquidType.Water)) {
-          data2.block.setPermutation(data2.block.permutation.withState(WestState, true));
-          if (WestBlock.permutation.getState(EastState) != void 0) {
-            WestBlock.setPermutation(WestBlock.permutation.withState(EastState, true));
-            Post(WestBlock, true, true);
-          }
-        } else {
-          data2.block.setPermutation(data2.block.permutation.withState(WestState, false));
-        }
-        ;
-        if (BelowBlock) {
-          if (!BelowBlock.isAir && !BelowBlock.isLiquid && !BelowBlock.canBeDestroyedByLiquidSpread(LiquidType.Water)) {
-            data2.block.setPermutation(data2.block.permutation.withState(BelowState, true));
-            if (BelowBlock.permutation.getState(AboveState) != void 0) {
-              BelowBlock.setPermutation(BelowBlock.permutation.withState(AboveState, true));
-            }
-          } else {
-            data2.block.setPermutation(data2.block.permutation.withState(BelowState, false));
-          }
-          ;
-        }
-        if (AboveBlock) {
-          if (AboveBlock && !AboveBlock.isAir && !AboveBlock.isLiquid && !AboveBlock.canBeDestroyedByLiquidSpread(LiquidType.Water)) {
-            data2.block.setPermutation(data2.block.permutation.withState(AboveState, true));
-            if (AboveBlock.permutation.getState(BelowState) != void 0) {
-              AboveBlock.setPermutation(AboveBlock.permutation.withState(BelowState, true));
-            }
-          } else {
-            data2.block.setPermutation(data2.block.permutation.withState(AboveState, false));
-          }
-          ;
-        }
-        Post(data2.block, true, true);
-        return;
-      },
-      onPlayerBreak(data2, component) {
-        const NorthBlock = data2.block.north();
-        const SouthBlock = data2.block.south();
-        const EastBlock = data2.block.east();
-        const WestBlock = data2.block.west();
-        const AboveBlock = data2.block.above();
-        const BelowBlock = data2.block.below();
-        const NorthState = "poke_pfe:wall_n";
-        const SouthState = "poke_pfe:wall_s";
-        const EastState = "poke_pfe:wall_e";
-        const WestState = "poke_pfe:wall_w";
-        const AboveState = "poke_pfe:connected_above";
-        const BelowState = "poke_pfe:connected_below";
-        if (!NorthBlock || !SouthBlock || !EastBlock || !WestBlock || !AboveBlock || !BelowBlock) return;
-        if (NorthBlock.permutation.getState(SouthState) != void 0) {
-          NorthBlock.setPermutation(NorthBlock.permutation.withState(SouthState, false));
-          Post(NorthBlock, true, true);
-        }
-        if (SouthBlock.permutation.getState(NorthState) != void 0) {
-          SouthBlock.setPermutation(SouthBlock.permutation.withState(NorthState, false));
-          Post(SouthBlock, true, true);
-        }
-        if (EastBlock.permutation.getState(WestState) != void 0) {
-          EastBlock.setPermutation(EastBlock.permutation.withState(WestState, false));
-          Post(EastBlock, true, true);
-        }
-        if (WestBlock.permutation.getState(EastState) != void 0) {
-          WestBlock.setPermutation(WestBlock.permutation.withState(EastState, false));
-          Post(WestBlock, true, true);
-        }
-        if (AboveBlock.permutation.getState(AboveState) != void 0) {
-          AboveBlock.setPermutation(AboveBlock.permutation.withState(BelowState, false));
-          Post(AboveBlock, true, false);
-        }
-        if (BelowBlock.permutation.getState(BelowState) != void 0) {
-          BelowBlock.setPermutation(BelowBlock.permutation.withState(AboveState, false));
-          Post(BelowBlock, false, true);
-        }
-        return;
-      }
-    }
-  );
-  data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:fisher",
     {
-      onRandomTick(data2, component) {
+      onRandomTick(data2, componentInfo) {
         const PFEFisherComponentInfo = {
           baitBlockState: "poke_pfe:bait",
           baitStates: [4, 3, 2, 1, 0]
@@ -8774,7 +8650,7 @@ function RegisterBlockComponents(data) {
           ComputersCompat.addStat("fisher_catches", 1);
         }
       },
-      onPlayerInteract(data2, component) {
+      onPlayerInteract(data2, componentInfo) {
         const PFEFisherComponentInfo = {
           baitBlockState: "poke_pfe:bait",
           baitStates: [4, 3, 2, 1, 0]
@@ -8810,7 +8686,7 @@ function RegisterBlockComponents(data) {
         }
         data2.block.setPermutation(data2.block.permutation.withState(PFEFisherComponentInfo.baitBlockState, 4));
       },
-      onPlayerBreak(data2, component) {
+      onPlayerBreak(data2, componentInfo) {
         const PFEFisherComponentInfo = {
           baitBlockState: "poke_pfe:bait",
           baitStates: [4, 3, 2, 1, 0]
@@ -8845,7 +8721,7 @@ function RegisterBlockComponents(data) {
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:elevator",
     {
-      onStepOff(data2, component) {
+      onStepOff(data2, componentInfo) {
         if (!data2.entity) return;
         let player = data2.entity;
         if (player.typeId == MinecraftEntityTypes.Player) {
@@ -8885,7 +8761,7 @@ function RegisterBlockComponents(data) {
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:omnivator",
     {
-      onStepOff(data2, component) {
+      onStepOff(data2, componentInfo) {
         if (!data2.entity) return;
         let player = data2.entity;
         if (player.typeId == MinecraftEntityTypes.Player) {
@@ -8988,10 +8864,9 @@ function RegisterBlockComponents(data) {
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:place_blocks",
     {
-      onTick(data2, componentInfo) {
+      onRedstoneUpdate(data2, componentInfo) {
         const component = componentInfo.params;
-        const ActiveState = "poke_pfe:active";
-        if (data2.block.getRedstonePower() != 0 && data2.block.getRedstonePower() !== void 0) {
+        if (data2.powerLevel) {
           for (const target of component.targets) {
             let GetBlock2 = function() {
               switch (target) {
@@ -9049,24 +8924,16 @@ function RegisterBlockComponents(data) {
               }
             }
           }
-          data2.block.setPermutation(data2.block.permutation.withState(ActiveState, 1));
-          return;
         }
-        if (data2.block.getRedstonePower() == 0 && data2.block.getRedstonePower() !== void 0) {
-          data2.block.setPermutation(data2.block.permutation.withState(ActiveState, 0));
-          return;
-        }
-        return;
       }
     }
   );
   data.blockComponentRegistry.registerCustomComponent(
     "poke_pfe:break_blocks",
     {
-      onTick(data2, componentInfo) {
+      onRedstoneUpdate(data2, componentInfo) {
         const component = componentInfo.params;
-        const ActiveState = "poke_pfe:active";
-        if (data2.block.getRedstonePower() != 0 && data2.block.getRedstonePower() !== void 0) {
+        if (data2.powerLevel) {
           for (const target of component.targets) {
             let GetBlock2 = function() {
               switch (target) {
@@ -9124,11 +8991,6 @@ function RegisterBlockComponents(data) {
             const replacedAs = block.isWaterlogged ? MinecraftBlockTypes.FlowingWater : MinecraftBlockTypes.Air;
             data2.dimension.runCommand(`execute positioned ${block_location} run setblock ~~~ ${replacedAs} destroy`);
           }
-          data2.block.setPermutation(data2.block.permutation.withState(ActiveState, 1));
-          return;
-        }
-        if (data2.block.getRedstonePower() == 0 && data2.block.getRedstonePower() !== void 0) {
-          data2.block.setPermutation(data2.block.permutation.withState(ActiveState, 0));
           return;
         }
         return;
@@ -9249,125 +9111,13 @@ function RegisterBlockComponents(data) {
   data.blockComponentRegistry.registerCustomComponent("poke_pfe:recipe_block", new RecipeBlockComponent());
   data.blockComponentRegistry.registerCustomComponent("poke_pfe:custom_recipes", {});
 }
-function Post(data, up, down) {
-  let Permutation = data.permutation;
-  let Post2 = false;
-  let PostCheckNorth = false;
-  let PostCheckSouth = false;
-  let PostCheckEast = false;
-  let PostCheckWest = false;
-  const PostState = "poke_pfe:post_bit";
-  const NorthState = "poke_pfe:wall_n";
-  const SouthState = "poke_pfe:wall_s";
-  const EastState = "poke_pfe:wall_e";
-  const WestState = "poke_pfe:wall_w";
-  const AboveState = "poke_pfe:connected_above";
-  const BelowState = "poke_pfe:connected_below";
-  if (data.permutation.getState(PostState) == void 0) return;
-  if (Permutation.getState(NorthState) == true) {
-    PostCheckNorth = true;
-  }
-  if (Permutation.getState(SouthState) == true) {
-    PostCheckSouth = true;
-  }
-  if (Permutation.getState(EastState) == true) {
-    PostCheckEast = true;
-  }
-  if (Permutation.getState(WestState) == true) {
-    PostCheckWest = true;
-  }
-  if (PostCheckNorth == false && PostCheckSouth == false && PostCheckEast == false && PostCheckWest == false) Post2 = true;
-  if (PostCheckNorth == true && PostCheckSouth == false && PostCheckEast == false && PostCheckWest == false) Post2 = true;
-  if (PostCheckNorth == false && PostCheckSouth == true && PostCheckEast == false && PostCheckWest == false) Post2 = true;
-  if (PostCheckNorth == false && PostCheckSouth == false && PostCheckEast == true && PostCheckWest == false) Post2 = true;
-  if (PostCheckNorth == false && PostCheckSouth == false && PostCheckEast == false && PostCheckWest == true) Post2 = true;
-  if (PostCheckNorth && PostCheckEast || PostCheckNorth && PostCheckWest || PostCheckSouth && PostCheckEast || PostCheckSouth && PostCheckWest) Post2 = true;
-  if (Post2) {
-    if (Permutation.getState(PostState) === void 0) return;
-    UpdatePost(data, true);
-  } else {
-    if (Permutation.getState(PostState) === void 0) return;
-    UpdatePost(data, false);
-  }
-}
-function UpdatePost(block, value, up) {
-  const PostState = "poke_pfe:post_bit";
-  const NorthState = "poke_pfe:wall_n";
-  const SouthState = "poke_pfe:wall_s";
-  const EastState = "poke_pfe:wall_e";
-  const WestState = "poke_pfe:wall_w";
-  const AboveState = "poke_pfe:connected_above";
-  const BelowState = "poke_pfe:connected_below";
-  if (!value) {
-    let Post2 = false;
-    let PostCheckNorth = false;
-    let PostCheckSouth = false;
-    let PostCheckEast = false;
-    let PostCheckWest = false;
-    if (block.permutation.getState(NorthState) == true) {
-      PostCheckNorth = true;
-    }
-    if (block.permutation.getState(SouthState) == true) {
-      PostCheckSouth = true;
-    }
-    if (block.permutation.getState(EastState) == true) {
-      PostCheckEast = true;
-    }
-    if (block.permutation.getState(WestState) == true) {
-      PostCheckWest = true;
-    }
-    if (!PostCheckNorth && !PostCheckSouth && !PostCheckEast && !PostCheckWest) Post2 = true;
-    if (PostCheckNorth && !PostCheckSouth && PostCheckEast == false && !PostCheckWest) Post2 = true;
-    if (!PostCheckNorth && PostCheckSouth && PostCheckEast == false && !PostCheckWest) Post2 = true;
-    if (!PostCheckNorth && !PostCheckSouth && PostCheckEast && !PostCheckWest) Post2 = true;
-    if (!PostCheckNorth && !PostCheckSouth && !PostCheckEast && PostCheckWest) Post2 = true;
-    if (PostCheckNorth && PostCheckEast || PostCheckNorth && PostCheckWest || PostCheckSouth && PostCheckEast || PostCheckSouth && PostCheckWest) Post2 = true;
-    if (Post2) {
-      if (up) {
-        if (block.above()?.hasTag(`pfe_wall`)) {
-          UpdatePost(block.above(), true, true);
-        }
-      } else if (up === false) {
-        if (block.below()?.hasTag(`pfe_wall`)) {
-          UpdatePost(block.below(), true, false);
-        }
-      } else {
-        if (block.above()?.hasTag(`pfe_wall`)) {
-          UpdatePost(block.above(), true, true);
-        }
-        if (block.below()?.hasTag(`pfe_wall`)) {
-          UpdatePost(block.below(), true, false);
-        }
-      }
-      block.setPermutation(block.permutation.withState(PostState, true));
-      return;
-    }
-  }
-  if (up) {
-    if (block.above()?.hasTag(`pfe_wall`)) {
-      UpdatePost(block.above(), value, true);
-    }
-  } else if (up === false) {
-    if (block.below()?.hasTag(`pfe_wall`)) {
-      UpdatePost(block.below(), value, false);
-    }
-  } else {
-    if (block.above()?.hasTag(`pfe_wall`)) {
-      UpdatePost(block.above(), value, true);
-    }
-    if (block.below()?.hasTag(`pfe_wall`)) {
-      UpdatePost(block.below(), value, false);
-    }
-  }
-  block.setPermutation(block.permutation.withState(PostState, value));
-}
 
 // scripts/main.ts
 var currentVersion = 103002;
-world11.afterEvents.playerJoin.subscribe(((data) => {
-  let birthdays = JSON.parse(world11.getDynamicProperty(`poke_pfe:birthdays`).toString());
+world12.afterEvents.playerJoin.subscribe(((data) => {
+  let birthdays = JSON.parse(world12.getDynamicProperty(`poke_pfe:birthdays`).toString());
   system9.runTimeout(() => {
-    world11.getAllPlayers().forEach(((player) => {
+    world12.getAllPlayers().forEach(((player) => {
       if (player.id == data.playerId) {
         let currentTime = new Date(Date.now() + PokeTimeZoneOffset(player));
         birthdays.forEach(((birthday) => {
@@ -9413,36 +9163,36 @@ system9.beforeEvents.startup.subscribe((data) => {
   );
   return;
 });
-world11.afterEvents.worldLoad.subscribe((data) => {
-  world11.setDynamicProperty(PFECustomMineQuestsPropertyID, JSON.stringify([]));
-  world11.setDynamicProperty(PFECustomMineQuestsPropertyID, JSON.stringify([]));
-  world11.setDynamicProperty(PFECustomFarmQuestsPropertyID, JSON.stringify([]));
-  world11.setDynamicProperty(PFECustomCraftQuestsPropertyID, JSON.stringify([]));
-  world11.setDynamicProperty(PFECustomKillQuestsPropertyID, JSON.stringify([]));
-  world11.setDynamicProperty(PFECustomArmorEffectDynamicProperty, JSON.stringify([]));
+world12.afterEvents.worldLoad.subscribe((data) => {
+  world12.setDynamicProperty(PFECustomMineQuestsPropertyID, JSON.stringify([]));
+  world12.setDynamicProperty(PFECustomMineQuestsPropertyID, JSON.stringify([]));
+  world12.setDynamicProperty(PFECustomFarmQuestsPropertyID, JSON.stringify([]));
+  world12.setDynamicProperty(PFECustomCraftQuestsPropertyID, JSON.stringify([]));
+  world12.setDynamicProperty(PFECustomKillQuestsPropertyID, JSON.stringify([]));
+  world12.setDynamicProperty(PFECustomArmorEffectDynamicProperty, JSON.stringify([]));
   system9.runTimeout(() => {
     PFETimeValidation();
   }, Math.abs(60 - new Date(Date.now()).getSeconds()) * 20);
-  if (typeof world11.getDynamicProperty(PFEDisableConfigName) != "string") {
-    world11.setDynamicProperty(PFEDisableConfigName, JSON.stringify(PFEDisableConfigDefault));
+  if (typeof world12.getDynamicProperty(PFEDisableConfigName) != "string") {
+    world12.setDynamicProperty(PFEDisableConfigName, JSON.stringify(PFEDisableConfigDefault));
   }
-  const birthdayProperty = world11.getDynamicProperty(`poke_pfe:birthdays`);
-  if (typeof birthdayProperty != "string") world11.setDynamicProperty(`poke_pfe:birthdays`, `[]`);
-  const CustomEventsDynamicProp = world11.getDynamicProperty(`poke_pfe:customEvents`);
-  typeof CustomEventsDynamicProp == "string" ? JSON.parse(CustomEventsDynamicProp) ?? world11.setDynamicProperty(`poke_pfe:customEvents`, `[]`) : world11.setDynamicProperty(`poke_pfe:customEvents`, `[]`);
-  if (typeof world11.getDynamicProperty(PFEBossEventConfigName) == "string") {
-    let settings = JSON.parse(world11.getDynamicProperty(PFEBossEventConfigName).toString());
+  const birthdayProperty = world12.getDynamicProperty(`poke_pfe:birthdays`);
+  if (typeof birthdayProperty != "string") world12.setDynamicProperty(`poke_pfe:birthdays`, `[]`);
+  const CustomEventsDynamicProp = world12.getDynamicProperty(`poke_pfe:customEvents`);
+  typeof CustomEventsDynamicProp == "string" ? JSON.parse(CustomEventsDynamicProp) ?? world12.setDynamicProperty(`poke_pfe:customEvents`, `[]`) : world12.setDynamicProperty(`poke_pfe:customEvents`, `[]`);
+  if (typeof world12.getDynamicProperty(PFEBossEventConfigName) == "string") {
+    let settings = JSON.parse(world12.getDynamicProperty(PFEBossEventConfigName).toString());
     if (typeof settings.ticks != "number" || typeof settings.furnaceGolem != "object" || typeof settings.knightling != "object" || typeof settings.listener != "object" || typeof settings.zombken != "object" || typeof settings.miniDemonicAllay != "object" || typeof settings.necromancer != "object" || typeof settings.snowman != "object" || typeof settings.sparky != "object" || typeof settings.superStriker != "object" || typeof settings.theLogger != "object") {
-      world11.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(PFEDefaultBossEventSettings));
+      world12.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(PFEDefaultBossEventSettings));
     }
     ;
   } else {
-    world11.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(PFEDefaultBossEventSettings));
+    world12.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(PFEDefaultBossEventSettings));
   }
   initExampleStickers();
   ComputersCompat.init();
-  world11.setDynamicProperty("poke_pfe:bossEventIntervalId", startBossEvents());
-  world11.setDynamicProperty("poke_pfe:setEffectIntervalId", startSetEffects());
+  world12.setDynamicProperty("poke_pfe:bossEventIntervalId", startBossEvents());
+  world12.setDynamicProperty("poke_pfe:setEffectIntervalId", startSetEffects());
   system9.sendScriptEvent("poke_pfe:dupe_check", `${currentVersion}`);
 });
 var DataStorageDynamicPropertyId = "registered_data_storage_items";
@@ -9465,18 +9215,18 @@ system9.afterEvents.scriptEventReceive.subscribe((data) => {
             What this means is you can use that item's components to import data that would normally be sent via /scriptevent
             */
     case `poke_custom:register_data_storage`: {
-      const dynamicProperty = world11.getDynamicProperty(DataStorageDynamicPropertyId);
+      const dynamicProperty = world12.getDynamicProperty(DataStorageDynamicPropertyId);
       const registeredItems = JSON.parse(typeof dynamicProperty == "string" ? dynamicProperty : "[]") ?? [];
-      world11.setDynamicProperty(DataStorageDynamicPropertyId, JSON.stringify(registeredItems.concat(data.message)));
+      world12.setDynamicProperty(DataStorageDynamicPropertyId, JSON.stringify(registeredItems.concat(data.message)));
       break;
     }
     /*
     This can be used to add additional presets to the set effects
     */
     case `poke_pfe:add_set_effect_preset`: {
-      const currentPresets = JSON.parse(world11.getDynamicProperty(PFECustomArmorEffectDynamicProperty).toString()) ?? [];
+      const currentPresets = JSON.parse(world12.getDynamicProperty(PFECustomArmorEffectDynamicProperty).toString()) ?? [];
       let newPresets = currentPresets.concat(JSON.parse(data.message).value) ?? currentPresets;
-      world11.setDynamicProperty(PFECustomArmorEffectDynamicProperty, JSON.stringify(newPresets));
+      world12.setDynamicProperty(PFECustomArmorEffectDynamicProperty, JSON.stringify(newPresets));
       break;
     }
     /*
@@ -9484,26 +9234,26 @@ system9.afterEvents.scriptEventReceive.subscribe((data) => {
     see `scripts\quests.ts` for more info 
     */
     case PFECustomMineQuestsPropertyID: {
-      const currentQuests = JSON.parse(world11.getDynamicProperty(PFECustomMineQuestsPropertyID).toString()) ?? [];
+      const currentQuests = JSON.parse(world12.getDynamicProperty(PFECustomMineQuestsPropertyID).toString()) ?? [];
       let newQuests = currentQuests.concat(JSON.parse(data.message).value) ?? currentQuests;
-      world11.setDynamicProperty(PFECustomMineQuestsPropertyID, JSON.stringify(newQuests));
+      world12.setDynamicProperty(PFECustomMineQuestsPropertyID, JSON.stringify(newQuests));
       break;
     }
     case PFECustomKillQuestsPropertyID: {
-      const currentQuests = JSON.parse(world11.getDynamicProperty(PFECustomKillQuestsPropertyID).toString()) ?? [];
+      const currentQuests = JSON.parse(world12.getDynamicProperty(PFECustomKillQuestsPropertyID).toString()) ?? [];
       let newQuests = currentQuests.concat(JSON.parse(data.message).value) ?? currentQuests;
-      world11.setDynamicProperty(PFECustomKillQuestsPropertyID, JSON.stringify(newQuests));
+      world12.setDynamicProperty(PFECustomKillQuestsPropertyID, JSON.stringify(newQuests));
       break;
     }
     case PFECustomFarmQuestsPropertyID: {
-      const currentQuests = JSON.parse(world11.getDynamicProperty(PFECustomFarmQuestsPropertyID).toString()) ?? [];
+      const currentQuests = JSON.parse(world12.getDynamicProperty(PFECustomFarmQuestsPropertyID).toString()) ?? [];
       let newQuests = currentQuests.concat(JSON.parse(data.message).value) ?? currentQuests;
-      world11.setDynamicProperty(PFECustomFarmQuestsPropertyID, JSON.stringify(newQuests));
+      world12.setDynamicProperty(PFECustomFarmQuestsPropertyID, JSON.stringify(newQuests));
     }
     case PFECustomCraftQuestsPropertyID: {
-      const currentQuests = JSON.parse(world11.getDynamicProperty(PFECustomCraftQuestsPropertyID).toString()) ?? [];
+      const currentQuests = JSON.parse(world12.getDynamicProperty(PFECustomCraftQuestsPropertyID).toString()) ?? [];
       let newQuests = currentQuests.concat(JSON.parse(data.message).value) ?? currentQuests;
-      world11.setDynamicProperty(PFECustomCraftQuestsPropertyID, JSON.stringify(newQuests));
+      world12.setDynamicProperty(PFECustomCraftQuestsPropertyID, JSON.stringify(newQuests));
     }
     /*case (`poke_pfe:test`): {
         let item = data.sourceEntity?.getComponent(EntityComponentTypes.Equippable)?.getEquipment(EquipmentSlot.Mainhand)
@@ -9514,7 +9264,7 @@ system9.afterEvents.scriptEventReceive.subscribe((data) => {
     case "poke_pfe:dupe_check": {
       const Version = Number(data.message);
       if (Version < currentVersion) {
-        world11.sendMessage(`\xA7f[\xA7eWARNING\xA7f] Multiple versions PFE are applied to this world, to avoid any issue: please remove any old versions || \xA7eOld version: \xA7fv${data.message.substring(0, 1)}.${Number(data.message.substring(1, 3))}.${Number(`${data.message}`.substring(3, 5))}${Number(`${data.message}`.substring(5)) != 0 ? `${data.message}`.substring(5) : ""}`);
+        world12.sendMessage(`\xA7f[\xA7eWARNING\xA7f] Multiple versions PFE are applied to this world, to avoid any issue: please remove any old versions || \xA7eOld version: \xA7fv${data.message.substring(0, 1)}.${Number(data.message.substring(1, 3))}.${Number(`${data.message}`.substring(3, 5))}${Number(`${data.message}`.substring(5)) != 0 ? `${data.message}`.substring(5) : ""}`);
       }
       break;
     }

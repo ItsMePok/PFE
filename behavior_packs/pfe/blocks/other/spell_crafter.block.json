@@ -15,6 +15,12 @@
 			}
 		},
 		"components": {
+			"minecraft:precipitation_interactions": {
+				"precipitation_behavior": "none"
+			},
+			"minecraft:connection_rule": {
+				"accepts_connections_from": "none"
+			},
 			"minecraft:display_name": "%poke_pfe.spell_crafter\n§7%poke_pfe.has_recipes\n%poke_pfe.tag",
 			"poke_pfe:custom_recipes": [
 				{

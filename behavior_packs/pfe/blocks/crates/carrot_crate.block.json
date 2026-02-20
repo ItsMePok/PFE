@@ -8,6 +8,9 @@
 			}
 		},
 		"components": {
+			"minecraft:precipitation_interactions": {
+				"precipitation_behavior": "obstruct_rain"
+			},
 			"minecraft:display_name": "%poke_pfe.carrot_crate\n%poke_pfe.tag",
 			"minecraft:liquid_detection": {
 				"detection_rules": [

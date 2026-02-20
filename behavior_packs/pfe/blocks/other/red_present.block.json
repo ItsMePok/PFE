@@ -15,6 +15,12 @@
 			}
 		},
 		"components": {
+			"minecraft:precipitation_interactions": {
+				"precipitation_behavior": "none"
+			},
+			"minecraft:connection_rule": {
+				"accepts_connections_from": "none"
+			},
 			"minecraft:display_name": "%poke_pfe.present\n%poke_pfe.tag",
 			"minecraft:liquid_detection": {
 				"detection_rules": [

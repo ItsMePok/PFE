@@ -8,6 +8,9 @@
 			}
 		},
 		"components": {
+			"minecraft:precipitation_interactions": {
+				"precipitation_behavior": "obstruct_rain"
+			},
 			"minecraft:display_name": "%poke_pfe.brown_mushroom_crate\n%poke_pfe.tag",
 			"minecraft:liquid_detection": {
 				"detection_rules": [

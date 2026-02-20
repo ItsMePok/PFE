@@ -8,6 +8,9 @@
 			}
 		},
 		"components": {
+			"minecraft:precipitation_interactions": {
+				"precipitation_behavior": "obstruct_rain"
+			},
 			"minecraft:display_name": "%poke_pfe.empty_crate\n%poke_pfe.tag",
 			"minecraft:liquid_detection": {
 				"detection_rules": [
@@ -21,7 +24,68 @@
 					}
 				]
 			},
-			"minecraft:collision_box": true,
+			"minecraft:collision_box": [
+				{
+					"origin": [
+						-8,
+						0,
+						-8
+					],
+					"size": [
+						16,
+						1,
+						16
+					]
+				},
+				{
+					"origin": [
+						-8,
+						1,
+						-8
+					],
+					"size": [
+						1,
+						14,
+						16
+					]
+				},
+				{
+					"origin": [
+						7,
+						1,
+						-8
+					],
+					"size": [
+						1,
+						14,
+						16
+					]
+				},
+				{
+					"origin": [
+						-8,
+						1,
+						-8
+					],
+					"size": [
+						16,
+						14,
+						1
+					]
+				},
+				{
+					"origin": [
+						-8,
+						1,
+						7
+					],
+					"size": [
+						16,
+						14,
+						1
+					]
+				}
+			],
 			"minecraft:selection_box": true,
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 1
