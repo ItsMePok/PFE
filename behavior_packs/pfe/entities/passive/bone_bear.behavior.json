@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.130",
+	"format_version": "1.26.0",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke_pfe:bone_bear",
@@ -172,7 +172,7 @@
 			},
 			"minecraft:behavior.look_at_player": {
 				"priority": 6,
-				"target_distance": 6,
+				"look_distance": 6,
 				"probability": 0.02
 			},
 			"minecraft:behavior.random_look_around": {

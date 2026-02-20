@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.130",
+	"format_version": "1.26.0",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke_pfe:crimson_sporeshroom",
@@ -45,19 +45,11 @@
 				},
 				"minecraft:breedable": {
 					"require_tame": false,
-					"breed_items": "wheat",
+					"breed_items": [
+						"wheat"
+					],
 					"breeds_with": {
-						"mate_type": "poke_pfe:crimson_sporeshroom",
-						"baby_type": "poke_pfe:crimson_sporeshroom",
-						"breed_event": {
-							"event": "minecraft:entity_born",
-							"target": "baby"
-						}
-					},
-					"deny_parents_variant": {
-						"chance": 0.00098,
-						"min_variant": 0,
-						"max_variant": 1
+						"poke_pfe:crimson_sporeshroom": {}
 					}
 				},
 				"minecraft:interact": {
@@ -720,8 +712,19 @@
 			}
 		},
 		"components": {
+			"minecraft:offspring": {
+				"offspring_pairs": {
+					"poke_pfe:warped_sporeshroom": "poke_pfe:warped_sporeshroom"
+				},
+				"deny_parents_variant": {
+					"chance": 0.00098,
+					"min_variant": 0,
+					"max_variant": 1
+				}
+			},
 			"minecraft:type_family": {
 				"family": [
+					"sporeshroom",
 					"mushroomcow",
 					"mob"
 				]

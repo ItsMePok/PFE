@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.130",
+	"format_version": "1.26.0",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke_pfe:demonic_allay_conduit",
@@ -22,6 +22,10 @@
 			}
 		],
 		"components": {
+			"minecraft:redstone_consumer": {
+				"propogates_power": false,
+				"min_power": 0
+			},
 			"minecraft:display_name": "%poke_pfe.demonic_allay_conduit\n%poke_pfe.tag",
 			"minecraft:material_instances": {
 				"*": {

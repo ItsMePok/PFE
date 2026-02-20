@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.130",
+	"format_version": "1.26.0",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke_pfe:yak",
@@ -44,14 +44,11 @@
 				},
 				"minecraft:breedable": {
 					"require_tame": false,
-					"breed_items": "wheat",
+					"breed_items": [
+						"wheat"
+					],
 					"breeds_with": {
-						"mate_type": "poke_pfe:yak",
-						"baby_type": "poke_pfe:yak",
-						"breed_event": {
-							"event": "minecraft:entity_born",
-							"target": "baby"
-						}
+						"poke_pfe:yak": {}
 					}
 				},
 				"minecraft:interact": {
@@ -89,8 +86,14 @@
 			}
 		},
 		"components": {
+			"minecraft:offspring": {
+				"offspring_pairs": {
+					"poke_pfe:yak": "poke_pfe:yak"
+				}
+			},
 			"minecraft:type_family": {
 				"family": [
+					"yak",
 					"cow",
 					"mob"
 				]
@@ -112,13 +115,15 @@
 				"height": 1.3
 			},
 			"minecraft:nameable": {
-				"name_actions": {
-					"name_filter": "despawn",
-					"on_named": {
-						"event": "poke_pfe:despawn",
-						"target": "self"
+				"name_actions": [
+					{
+						"name_filter": "despawn",
+						"on_named": {
+							"event": "poke_pfe:despawn",
+							"target": "self"
+						}
 					}
-				}
+				]
 			},
 			"minecraft:health": {
 				"value": 10,

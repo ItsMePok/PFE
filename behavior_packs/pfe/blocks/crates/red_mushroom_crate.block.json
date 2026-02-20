@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.130",
+	"format_version": "1.26.0",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke_pfe:red_mushroom_crate",
@@ -8,6 +8,9 @@
 			}
 		},
 		"components": {
+			"minecraft:precipitation_interactions": {
+				"precipitation_behavior": "obstruct_rain"
+			},
 			"minecraft:display_name": "%poke_pfe.red_mushroom_crate\n%poke_pfe.tag",
 			"minecraft:liquid_detection": {
 				"detection_rules": [

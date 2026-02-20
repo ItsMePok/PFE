@@ -2,6 +2,12 @@
 	"resource_pack_name": "poke",
 	"texture_name": "atlas.terrain",
 	"texture_data": {
+		"poke_pfe_flash_freezer_face_inactive": {
+			"textures": "textures/poke/pfe/auto_flash_freezer_face_inactive" // auto_flash_freezer_face_inactive.texture_set.json
+		},
+		"poke_pfe_flash_freezer_face": {
+			"textures": "textures/poke/pfe/auto_flash_freezer_face"
+		},
 		"poke_pfe_automation_cobbler_face": {
 			"textures": "textures/poke/pfe/auto_cobbler_face"
 		},

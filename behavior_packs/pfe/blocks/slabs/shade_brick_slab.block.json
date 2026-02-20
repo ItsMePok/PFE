@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.130",
+	"format_version": "1.26.0",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke_pfe:shade_bricks_slab",
@@ -34,6 +34,12 @@
 							}
 						]
 					},
+					"minecraft:precipitation_interactions": {
+						"precipitation_behavior": "obstruct_rain_accumulate_snow"
+					},
+					"minecraft:connection_rule": {
+						"accepts_connections_from": "all"
+					},
 					"minecraft:redstone_conductivity": {
 						"redstone_conductor": true,
 						"allows_wire_to_step_down": true
@@ -64,6 +70,12 @@
 								]
 							}
 						]
+					},
+					"minecraft:precipitation_interactions": {
+						"precipitation_behavior": "obstruct_rain"
+					},
+					"minecraft:connection_rule": {
+						"accepts_connections_from": "none"
 					},
 					"poke_pfe:can_double_slab": {},
 					"poke_pfe:cc_block_seat": {},
@@ -120,6 +132,12 @@
 								]
 							}
 						]
+					},
+					"minecraft:precipitation_interactions": {
+						"precipitation_behavior": "obstruct_rain_accumulate_snow"
+					},
+					"minecraft:connection_rule": {
+						"accepts_connections_from": "none"
 					},
 					"poke_pfe:can_double_slab": {},
 					"minecraft:collision_box": {

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.130",
+	"format_version": "1.26.0",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke_pfe:golden_turnip",
@@ -15,6 +15,12 @@
 			}
 		},
 		"components": {
+			"minecraft:precipitation_interactions": {
+				"precipitation_behavior": "none"
+			},
+			"minecraft:connection_rule": {
+				"accepts_connections_from": "none"
+			},
 			"minecraft:liquid_detection": {
 				"detection_rules": [
 					{

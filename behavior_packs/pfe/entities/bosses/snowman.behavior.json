@@ -1,6 +1,6 @@
 {
 	//this entity model, animations & textures was made by O2God for PFE
-	"format_version": "1.21.130",
+	"format_version": "1.26.0",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke_pfe:snowman",
@@ -87,13 +87,15 @@
 				"suffocate_time": 0
 			},
 			"minecraft:nameable": {
-				"name_actions": {
-					"name_filter": "despawn",
-					"on_named": {
-						"event": "poke_pfe:despawn",
-						"target": "self"
+				"name_actions": [
+					{
+						"name_filter": "despawn",
+						"on_named": {
+							"event": "poke_pfe:despawn",
+							"target": "self"
+						}
 					}
-				},
+				],
 				"default_trigger": {
 					"target": "self",
 					"event": "poke_pfe:renamed"
@@ -181,7 +183,7 @@
 							"subject": "other",
 							"value": "player"
 						},
-						"within_default": 6
+						"max_dist": 6
 					}
 				]
 			},

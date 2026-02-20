@@ -1,43 +1,30 @@
 {
-	"format_version": "1.21.130",
+	"format_version": "1.26.0",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke_pfe:void_brick_wall",
 			"menu_category": {
 				"category": "construction"
 			},
-			"states": {
-				"poke_pfe:post_bit": [
-					true,
-					false
-				],
-				"poke_pfe:wall_n": [
-					false,
-					true
-				],
-				"poke_pfe:wall_s": [
-					false,
-					true
-				],
-				"poke_pfe:wall_e": [
-					false,
-					true
-				],
-				"poke_pfe:wall_w": [
-					false,
-					true
-				],
-				"poke_pfe:connected_above": [
-					false,
-					true
-				],
-				"poke_pfe:connected_below": [
-					false,
-					true
-				]
+			"traits": {
+				"minecraft:connection": {
+					"enabled_states": [
+						"minecraft:cardinal_connections"
+					]
+				}
 			}
 		},
 		"components": {
+			"minecraft:support": {
+				"shape": "fence"
+			},
+			"tag:minecraft:has_fence_connections": {},
+			"minecraft:connection_rule": {
+				"accepts_connections_from": "all"
+			},
+			"minecraft:precipitation_interactions": {
+				"precipitation_behavior": "none"
+			},
 			"minecraft:display_name": "%poke_pfe.void_brick_wall\n%poke_pfe.tag",
 			"minecraft:item_visual": {
 				"geometry": {
@@ -64,19 +51,19 @@
 			"minecraft:geometry": {
 				"identifier": "geometry.poke_pfe.wall",
 				"bone_visibility": {
-					"post": "q.block_state('poke_pfe:post_bit') ==true",
-					"north": "q.block_state('poke_pfe:wall_n') ==true&& q.block_state('poke_pfe:connected_above') ==false",
-					"south": "q.block_state('poke_pfe:wall_s') ==true&& q.block_state('poke_pfe:connected_above') ==false",
-					"east": "q.block_state('poke_pfe:wall_e') ==true&& q.block_state('poke_pfe:connected_above') ==false",
-					"west": "q.block_state('poke_pfe:wall_w') ==true && q.block_state('poke_pfe:connected_above') ==false",
-					"full_n": "q.block_state('poke_pfe:wall_n') ==true && q.block_state('poke_pfe:connected_above') ==true",
-					"full_s": "q.block_state('poke_pfe:wall_s') ==true && q.block_state('poke_pfe:connected_above') ==true",
-					"full_e": "q.block_state('poke_pfe:wall_e') ==true && q.block_state('poke_pfe:connected_above') ==true",
-					"full_w": "q.block_state('poke_pfe:wall_w') ==true && q.block_state('poke_pfe:connected_above') ==true",
-					"middle_ns": "q.block_state('poke_pfe:wall_n') ==true && q.block_state('poke_pfe:wall_s') ==true && q.block_state('poke_pfe:connected_above') ==false",
-					"middle_ew": "q.block_state('poke_pfe:wall_e') ==true && q.block_state('poke_pfe:wall_w') ==true && q.block_state('poke_pfe:connected_above') ==false",
-					"middle_full_ns": "q.block_state('poke_pfe:wall_n') ==true && q.block_state('poke_pfe:wall_s') ==true && q.block_state('poke_pfe:connected_above') ==true",
-					"middle_full_ew": "q.block_state('poke_pfe:wall_e') ==true && q.block_state('poke_pfe:wall_w') ==true && q.block_state('poke_pfe:connected_above') ==true"
+					"post": "((q.block_state('minecraft:connection_north') == true || q.block_state('minecraft:connection_south') == true) && (q.block_state('minecraft:connection_east') == true || q.block_state('minecraft:connection_west') == true)) || !(q.block_state('minecraft:connection_north') == true && q.block_state('minecraft:connection_south') == true && (q.block_state('minecraft:connection_east') == false && q.block_state('minecraft:connection_west') == false)) || !(q.block_state('minecraft:connection_east') == true && q.block_state('minecraft:connection_west') == true && (q.block_state('minecraft:connection_north') == false && q.block_state('minecraft:connection_south') == false))",
+					"north": "q.block_state('minecraft:connection_north') == true",
+					"south": "q.block_state('minecraft:connection_south') == true",
+					"east": "q.block_state('minecraft:connection_east') == true",
+					"west": "q.block_state('minecraft:connection_west') == true",
+					"full_n": false,
+					"full_s": false,
+					"full_e": false,
+					"full_w": false,
+					"middle_ns": "q.block_state('minecraft:connection_north') == true && q.block_state('minecraft:connection_south') == true",
+					"middle_ew": "q.block_state('minecraft:connection_east') == true && q.block_state('minecraft:connection_west') == true",
+					"middle_full_ns": "q.block_state('minecraft:connection_north') == true && q.block_state('minecraft:connection_south') == true",
+					"middle_full_ew": "q.block_state('minecraft:connection_east') == true && q.block_state('minecraft:connection_west') == true"
 				}
 			},
 			"minecraft:redstone_conductivity": {
@@ -112,12 +99,11 @@
 			"tag:stone_pick_diggable": {},
 			"tag:minecraft:is_pickaxe_item_destructible": {},
 			"tag:pfe_wall": {},
-			"minecraft:light_dampening": 0,
-			"poke_pfe:cc_wall": {}
+			"minecraft:light_dampening": 0
 		},
 		"permutations": [
 			{ //None
-				"condition": "q.block_state('poke_pfe:wall_n')== false && q.block_state('poke_pfe:wall_s')== false && q.block_state('poke_pfe:wall_e')== false && q.block_state('poke_pfe:wall_w')== false",
+				"condition": "q.block_state('minecraft:connection_north')== false && q.block_state('minecraft:connection_south')== false && q.block_state('minecraft:connection_east')== false && q.block_state('minecraft:connection_west')== false",
 				"components": {
 					"minecraft:selection_box": {
 						"origin": [
@@ -139,14 +125,14 @@
 						],
 						"size": [
 							8,
-							16,
+							24,
 							12
 						]
 					}
 				}
 			},
 			{ //North Only
-				"condition": "q.block_state('poke_pfe:wall_n')== true && q.block_state('poke_pfe:wall_s')== false && q.block_state('poke_pfe:wall_e')== false && q.block_state('poke_pfe:wall_w')== false",
+				"condition": "q.block_state('minecraft:connection_north')== true && q.block_state('minecraft:connection_south')== false && q.block_state('minecraft:connection_east')== false && q.block_state('minecraft:connection_west')== false",
 				"components": {
 					"minecraft:selection_box": {
 						"origin": [
@@ -168,14 +154,14 @@
 						],
 						"size": [
 							8,
-							16,
+							24,
 							12
 						]
 					}
 				}
 			},
 			{ //South Only
-				"condition": "q.block_state('poke_pfe:wall_n')== false && q.block_state('poke_pfe:wall_s')== true && q.block_state('poke_pfe:wall_e')== false && q.block_state('poke_pfe:wall_w')== false",
+				"condition": "q.block_state('minecraft:connection_north')== false && q.block_state('minecraft:connection_south')== true && q.block_state('minecraft:connection_east')== false && q.block_state('minecraft:connection_west')== false",
 				"components": {
 					"minecraft:selection_box": {
 						"origin": [
@@ -197,14 +183,14 @@
 						],
 						"size": [
 							8,
-							16,
+							24,
 							12
 						]
 					}
 				}
 			},
 			{ //East Only
-				"condition": "q.block_state('poke_pfe:wall_n')== false && q.block_state('poke_pfe:wall_s')== false && q.block_state('poke_pfe:wall_e')== true && q.block_state('poke_pfe:wall_w')== false",
+				"condition": "q.block_state('minecraft:connection_north')== false && q.block_state('minecraft:connection_south')== false && q.block_state('minecraft:connection_east')== true && q.block_state('minecraft:connection_west')== false",
 				"components": {
 					"minecraft:selection_box": {
 						"origin": [
@@ -226,14 +212,14 @@
 						],
 						"size": [
 							12,
-							16,
+							24,
 							8
 						]
 					}
 				}
 			},
 			{ //West Only
-				"condition": "q.block_state('poke_pfe:wall_n')== false && q.block_state('poke_pfe:wall_s')== false && q.block_state('poke_pfe:wall_e')== false && q.block_state('poke_pfe:wall_w')== true",
+				"condition": "q.block_state('minecraft:connection_north')== false && q.block_state('minecraft:connection_south')== false && q.block_state('minecraft:connection_east')== false && q.block_state('minecraft:connection_west')== true",
 				"components": {
 					"minecraft:selection_box": {
 						"origin": [
@@ -255,14 +241,14 @@
 						],
 						"size": [
 							12,
-							16,
+							24,
 							8
 						]
 					}
 				}
 			},
 			{ //North & East
-				"condition": "q.block_state('poke_pfe:wall_n')== true && q.block_state('poke_pfe:wall_s')== false && q.block_state('poke_pfe:wall_e')== true && q.block_state('poke_pfe:wall_w')== false",
+				"condition": "q.block_state('minecraft:connection_north')== true && q.block_state('minecraft:connection_south')== false && q.block_state('minecraft:connection_east')== true && q.block_state('minecraft:connection_west')== false",
 				"components": {
 					"minecraft:selection_box": {
 						"origin": [
@@ -284,14 +270,14 @@
 						],
 						"size": [
 							12,
-							16,
+							24,
 							12
 						]
 					}
 				}
 			},
 			{ //North & West
-				"condition": "q.block_state('poke_pfe:wall_n')== true && q.block_state('poke_pfe:wall_s')== false && q.block_state('poke_pfe:wall_e')== false && q.block_state('poke_pfe:wall_w')== true",
+				"condition": "q.block_state('minecraft:connection_north')== true && q.block_state('minecraft:connection_south')== false && q.block_state('minecraft:connection_east')== false && q.block_state('minecraft:connection_west')== true",
 				"components": {
 					"minecraft:selection_box": {
 						"origin": [
@@ -313,14 +299,14 @@
 						],
 						"size": [
 							12,
-							16,
+							24,
 							12
 						]
 					}
 				}
 			},
 			{ //South & East
-				"condition": "q.block_state('poke_pfe:wall_n')== false && q.block_state('poke_pfe:wall_s')== true && q.block_state('poke_pfe:wall_e')== true && q.block_state('poke_pfe:wall_w')== false",
+				"condition": "q.block_state('minecraft:connection_north')== false && q.block_state('minecraft:connection_south')== true && q.block_state('minecraft:connection_east')== true && q.block_state('minecraft:connection_west')== false",
 				"components": {
 					"minecraft:selection_box": {
 						"origin": [
@@ -342,14 +328,14 @@
 						],
 						"size": [
 							12,
-							16,
+							24,
 							12
 						]
 					}
 				}
 			},
 			{ //South & West
-				"condition": "q.block_state('poke_pfe:wall_n')== false && q.block_state('poke_pfe:wall_s')== true && q.block_state('poke_pfe:wall_e')== false && q.block_state('poke_pfe:wall_w')== true",
+				"condition": "q.block_state('minecraft:connection_north')== false && q.block_state('minecraft:connection_south')== true && q.block_state('minecraft:connection_east')== false && q.block_state('minecraft:connection_west')== true",
 				"components": {
 					"minecraft:selection_box": {
 						"origin": [
@@ -371,14 +357,14 @@
 						],
 						"size": [
 							12,
-							16,
+							24,
 							12
 						]
 					}
 				}
 			},
 			{ //North & South w/o Above 
-				"condition": "q.block_state('poke_pfe:wall_n')== true && q.block_state('poke_pfe:wall_s')== true && q.block_state('poke_pfe:wall_e')== false && q.block_state('poke_pfe:wall_w')== false && q.block_state('poke_pfe:connected_above')== false",
+				"condition": "q.block_state('minecraft:connection_north')== true && q.block_state('minecraft:connection_south')== true && q.block_state('minecraft:connection_east')== false && q.block_state('minecraft:connection_west')== false",
 				"components": {
 					"minecraft:selection_box": {
 						"origin": [
@@ -400,14 +386,14 @@
 						],
 						"size": [
 							6,
-							13,
+							24,
 							16
 						]
 					}
 				}
 			},
 			{ //East & West w/o Above
-				"condition": "q.block_state('poke_pfe:wall_n')== false && q.block_state('poke_pfe:wall_s')== false && q.block_state('poke_pfe:wall_e')== true && q.block_state('poke_pfe:wall_w')== true && q.block_state('poke_pfe:connected_above')== false",
+				"condition": "q.block_state('minecraft:connection_north')== false && q.block_state('minecraft:connection_south')== false && q.block_state('minecraft:connection_east')== true && q.block_state('minecraft:connection_west')== true",
 				"components": {
 					"minecraft:selection_box": {
 						"origin": [
@@ -429,14 +415,14 @@
 						],
 						"size": [
 							16,
-							13,
+							24,
 							6
 						]
 					}
 				}
 			},
 			{ //North & South w/ Above 
-				"condition": "q.block_state('poke_pfe:wall_n')== true && q.block_state('poke_pfe:wall_s')== true && q.block_state('poke_pfe:wall_e')== false && q.block_state('poke_pfe:wall_w')== false && q.block_state('poke_pfe:connected_above')== true",
+				"condition": "q.block_state('minecraft:connection_north')== true && q.block_state('minecraft:connection_south')== true && q.block_state('minecraft:connection_east')== false && q.block_state('minecraft:connection_west')== false",
 				"components": {
 					"minecraft:selection_box": {
 						"origin": [
@@ -458,14 +444,14 @@
 						],
 						"size": [
 							6,
-							16,
+							24,
 							16
 						]
 					}
 				}
 			},
 			{ //East & West w/ Above
-				"condition": "q.block_state('poke_pfe:wall_n')== false && q.block_state('poke_pfe:wall_s')== false && q.block_state('poke_pfe:wall_e')== true && q.block_state('poke_pfe:wall_w')== true && q.block_state('poke_pfe:connected_above')== true",
+				"condition": "q.block_state('minecraft:connection_north')== false && q.block_state('minecraft:connection_south')== false && q.block_state('minecraft:connection_east')== true && q.block_state('minecraft:connection_west')== true",
 				"components": {
 					"minecraft:selection_box": {
 						"origin": [
@@ -487,14 +473,14 @@
 						],
 						"size": [
 							16,
-							16,
+							24,
 							6
 						]
 					}
 				}
 			},
 			{ //North, East, South
-				"condition": "q.block_state('poke_pfe:wall_n')== true && q.block_state('poke_pfe:wall_s')== true && q.block_state('poke_pfe:wall_e')== true && q.block_state('poke_pfe:wall_w')== false",
+				"condition": "q.block_state('minecraft:connection_north')== true && q.block_state('minecraft:connection_south')== true && q.block_state('minecraft:connection_east')== true && q.block_state('minecraft:connection_west')== false",
 				"components": {
 					"minecraft:selection_box": {
 						"origin": [
@@ -516,14 +502,14 @@
 						],
 						"size": [
 							12,
-							16,
+							24,
 							16
 						]
 					}
 				}
 			},
 			{ //North, West, South
-				"condition": "q.block_state('poke_pfe:wall_n')== true && q.block_state('poke_pfe:wall_s')== true && q.block_state('poke_pfe:wall_e')== false && q.block_state('poke_pfe:wall_w')== true",
+				"condition": "q.block_state('minecraft:connection_north')== true && q.block_state('minecraft:connection_south')== true && q.block_state('minecraft:connection_east')== false && q.block_state('minecraft:connection_west')== true",
 				"components": {
 					"minecraft:selection_box": {
 						"origin": [
@@ -545,14 +531,14 @@
 						],
 						"size": [
 							12,
-							16,
+							24,
 							16
 						]
 					}
 				}
 			},
 			{ //North, East, West
-				"condition": "q.block_state('poke_pfe:wall_n')== true && q.block_state('poke_pfe:wall_s')== false && q.block_state('poke_pfe:wall_e')== true && q.block_state('poke_pfe:wall_w')== true",
+				"condition": "q.block_state('minecraft:connection_north')== true && q.block_state('minecraft:connection_south')== false && q.block_state('minecraft:connection_east')== true && q.block_state('minecraft:connection_west')== true",
 				"components": {
 					"minecraft:selection_box": {
 						"origin": [
@@ -574,14 +560,14 @@
 						],
 						"size": [
 							16,
-							16,
+							24,
 							12
 						]
 					}
 				}
 			},
 			{ //South, West, East
-				"condition": "q.block_state('poke_pfe:wall_n')== false && q.block_state('poke_pfe:wall_s')== true && q.block_state('poke_pfe:wall_e')== true && q.block_state('poke_pfe:wall_w')== true",
+				"condition": "q.block_state('minecraft:connection_north')== false && q.block_state('minecraft:connection_south')== true && q.block_state('minecraft:connection_east')== true && q.block_state('minecraft:connection_west')== true",
 				"components": {
 					"minecraft:selection_box": {
 						"origin": [
@@ -603,7 +589,7 @@
 						],
 						"size": [
 							16,
-							16,
+							24,
 							12
 						]
 					}

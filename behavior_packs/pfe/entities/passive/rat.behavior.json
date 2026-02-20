@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.130",
+	"format_version": "1.26.0",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke_pfe:rat",
@@ -76,12 +76,7 @@
 					"require_tame": true,
 					"require_full_health": true,
 					"breeds_with": {
-						"mate_type": "poke_pfe:rat",
-						"baby_type": "poke_pfe:rat",
-						"breed_event": {
-							"event": "minecraft:entity_born",
-							"target": "baby"
-						}
+						"poke_pfe:rat": {}
 					},
 					"breed_items": [
 						"poke_pfe:cheese"
@@ -165,9 +160,7 @@
 					"can_tempt_while_ridden": true,
 					"can_tempt_vertically": true,
 					"items": [
-						{
-							"item": "poke_pfe:cheese"
-						}
+						"poke_pfe:cheese"
 					],
 					"within_radius": 12,
 					"priority": 6,
@@ -228,6 +221,11 @@
 			}
 		},
 		"components": {
+			"minecraft:offspring": {
+				"offspring_pairs": {
+					"poke_pfe:rat": "poke_pfe:rat"
+				}
+			},
 			"minecraft:shareables": {
 				"all_items": true,
 				"all_items_max_amount": -1,
@@ -463,7 +461,7 @@
 			},
 			"minecraft:behavior.look_at_player": {
 				"priority": 13,
-				"target_distance": 6,
+				"look_distance": 6,
 				"probability": 0.02
 			},
 			"minecraft:behavior.beg": {

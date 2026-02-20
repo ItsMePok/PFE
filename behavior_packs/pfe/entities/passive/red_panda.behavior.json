@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.130",
+	"format_version": "1.26.0",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke_pfe:red_panda",
@@ -62,12 +62,7 @@
 					"require_tame": true,
 					"require_full_health": true,
 					"breeds_with": {
-						"mate_type": "poke_pfe:red_panda",
-						"baby_type": "poke_pfe:red_panda",
-						"breed_event": {
-							"event": "minecraft:entity_born",
-							"target": "baby"
-						}
+						"poke_pfe:red_panda": {}
 					},
 					"breed_items": [
 						"bamboo"
@@ -250,6 +245,11 @@
 			}
 		},
 		"components": {
+			"minecraft:offspring": {
+				"offspring_pairs": {
+					"poke_pfe:red_panda": "poke_pfe:red_panda"
+				}
+			},
 			"minecraft:nameable": {
 				"name_actions": [
 					{
@@ -428,7 +428,7 @@
 			},
 			"minecraft:behavior.look_at_player": {
 				"priority": 6,
-				"target_distance": 6,
+				"look_distance": 6,
 				"probability": 0.02
 			},
 			"minecraft:behavior.beg": {

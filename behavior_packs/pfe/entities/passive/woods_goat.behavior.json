@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.130",
+	"format_version": "1.26.0",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke_pfe:woods_goat",
@@ -44,17 +44,11 @@
 				},
 				"minecraft:breedable": {
 					"require_tame": false,
-					"breed_items": "wheat",
+					"breed_items": [
+						"wheat"
+					],
 					"breeds_with": {
-						"mate_type": "poke_pfe:woods_goat",
-						"baby_type": "poke_pfe:woods_goat",
-						"breed_event": {
-							"event": "minecraft:entity_born",
-							"target": "baby"
-						}
-					},
-					"mutation_factor": {
-						"variant": 0
+						"poke_pfe:woods_goat": {}
 					}
 				},
 				"minecraft:attack": {
@@ -206,6 +200,11 @@
 			}
 		},
 		"components": {
+			"minecraft:offspring": {
+				"offspring_pairs": {
+					"poke_pfe:woods_goat": "poke_pfe:woods_goat"
+				}
+			},
 			"minecraft:is_hidden_when_invisible": {},
 			"minecraft:behavior.jump_to_block": {
 				"priority": 8,
@@ -282,13 +281,15 @@
 				"height": 1.3
 			},
 			"minecraft:nameable": {
-				"name_actions": {
-					"name_filter": "despawn",
-					"on_named": {
-						"event": "poke_pfe:despawn",
-						"target": "self"
+				"name_actions": [
+					{
+						"name_filter": "despawn",
+						"on_named": {
+							"event": "poke_pfe:despawn",
+							"target": "self"
+						}
 					}
-				}
+				]
 			},
 			"minecraft:health": {
 				"value": 10,

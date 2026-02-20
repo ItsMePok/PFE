@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.130",
+	"format_version": "1.26.0",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke_pfe:the_logger",
@@ -116,8 +116,7 @@
 			},
 			"minecraft:behavior.look_at_player": {
 				"priority": 10,
-				"look_distance": 25,
-				"target_distance": 6
+				"look_distance": 25
 			},
 			"minecraft:behavior.random_look_around": {
 				"priority": 15
@@ -160,13 +159,15 @@
 				"on_death": 5000
 			},
 			"minecraft:nameable": {
-				"name_actions": {
-					"name_filter": "despawn",
-					"on_named": {
-						"event": "poke_pfe:despawn",
-						"target": "self"
+				"name_actions": [
+					{
+						"name_filter": "despawn",
+						"on_named": {
+							"event": "poke_pfe:despawn",
+							"target": "self"
+						}
 					}
-				},
+				],
 				"default_trigger": {
 					"target": "self",
 					"event": "poke_pfe:renamed"

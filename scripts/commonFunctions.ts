@@ -19,7 +19,8 @@ export {
   getComponentInfoFromDataStorageItems,
   CompiledComponentInfo,
   pokeAddItemsToPlayerOrDrop,
-  pokeAddItemsToContainerOrDrop
+  pokeAddItemsToContainerOrDrop,
+  pokeSpawnParticle,
 }
 
 // Tool Durability initially from https://wiki.bedrock.dev/items/tool-durability.html
@@ -395,4 +396,8 @@ function pokeAddItemsToContainerOrDrop(Container: Container | undefined, item: I
     }
   }
   dimension.spawnItem(item, location)
+}
+
+function pokeSpawnParticle(particle: string, dimension: Dimension, location: Vector3) {
+  dimension.spawnParticle(particle, location)
 }

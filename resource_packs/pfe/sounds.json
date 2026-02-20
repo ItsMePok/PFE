@@ -339,7 +339,7 @@
 				],
 				"volume": 1
 			},
-			"poke_pfe:warped_sporecat": {
+			"poke_pfe:sporecat": {
 				"events": {
 					"ambient": "mob.cat.straymeow",
 					"ambient.tame": "mob.cat.meow",

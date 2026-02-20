@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.130",
+	"format_version": "1.26.0",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke_pfe:retro_llama",
@@ -137,34 +137,12 @@
 					"speed_multiplier": 1
 				},
 				"minecraft:breedable": {
-					"require_tame": false,
-					"inherit_tamed": false,
-					"breeds_with": [
-						{
-							"mate_type": "minecraft:llama",
-							"baby_type": "minecraft:llama",
-							"breed_event": {
-								"event": "minecraft:entity_born",
-								"target": "baby"
-							}
-						},
-						{
-							"mate_type": "minecraft:trader_llama",
-							"baby_type": "minecraft:llama",
-							"breed_event": {
-								"event": "minecraft:entity_born",
-								"target": "baby"
-							}
-						},
-						{
-							"mate_type": "poke_pfe:retro_llama",
-							"baby_type": "minecraft:llama",
-							"breed_event": {
-								"event": "minecraft:entity_born",
-								"target": "baby"
-							}
-						}
-					],
+					"require_tame": true,
+					"breeds_with": {
+						"minecraft:llama": {},
+						"poke_pfe:retro_llama": {},
+						"minecraft:trader_llama": {}
+					},
 					"breed_items": [
 						"hay_block"
 					]
@@ -253,6 +231,7 @@
 			"minecraft:llama_wild": {
 				"minecraft:rideable": {
 					"seat_count": 1,
+					"rider_can_interact": true,
 					"family_types": [
 						"player"
 					],
@@ -416,6 +395,13 @@
 			}
 		},
 		"components": {
+			"minecraft:offspring": {
+				"offspring_pairs": {
+					"poke_pfe:retro_llama": "minecraft:llama",
+					"minecraft:llama": "minecraft:llama",
+					"minecraft:trader_llama": "minecraft:llama"
+				}
+			},
 			"minecraft:mark_variant": {
 				"value": 0
 			},
@@ -425,7 +411,7 @@
 						"slot": 1,
 						"item": "carpet",
 						"on_equip": {
-							//"event": "poke_pfe:carpet_check",
+							"event": "poke_pfe:carpet_check",
 							"filters": {
 								"any_of": [
 									{
@@ -703,7 +689,10 @@
 			},
 			"minecraft:behavior.nearest_attackable_target": {
 				"priority": 2,
-				"attack_interval": 16,
+				"attack_interval": {
+					"min": 8,
+					"max": 16
+				},
 				"entity_types": [
 					{
 						"filters": {

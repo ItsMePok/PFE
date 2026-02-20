@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.130",
+	"format_version": "1.26.0",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke_pfe:duck",
@@ -76,12 +76,7 @@
 				"minecraft:breedable": {
 					"require_tame": false,
 					"breeds_with": {
-						"mate_type": "poke_pfe:duck",
-						"baby_type": "poke_pfe:duck",
-						"breed_event": {
-							"event": "minecraft:entity_born",
-							"target": "baby"
-						}
+						"poke_pfe:duck": {}
 					},
 					"breed_items": [
 						"wheat_seeds",
@@ -137,6 +132,11 @@
 			}
 		},
 		"components": {
+			"minecraft:offspring": {
+				"offspring_pairs": {
+					"poke_pfe:dusk": "poke_pfe:duck"
+				}
+			},
 			"minecraft:type_family": {
 				"family": [
 					"duck",
