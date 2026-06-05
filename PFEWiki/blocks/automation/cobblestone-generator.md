@@ -10,7 +10,7 @@ description: 'Last updated to match: v1.2.97'
 
 * The  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobblestoneGenerator.png?raw=true" alt="Cobblestone Generator." data-size="line"> Cobblestone Generator is an automation block that is used to generate cobblestone where it is facing when powered with Redstone
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke:cobblestone\_gen**</mark> <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke:cobblestone\_gen**</mark> <a href="#identifier" id="identifier"></a>
 
 ## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark> <a href="#rarity" id="rarity"></a>
 

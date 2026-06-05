@@ -6,7 +6,7 @@ description: 'Last Updated to match: v1.2.95'
 
 <div data-full-width="false"><figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/Entity/token_trader.png?raw=true" alt=""><figcaption></figcaption></figure></div>
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke:token\_trader**</mark> <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke:token\_trader**</mark> <a href="#identifier" id="identifier"></a>
 
 ## <img src="https://minecraft.wiki/images/Emerald_JE3_BE3.png?4c5f3" alt="Emerald." data-size="line"> Trades:
 
@@ -30,9 +30,9 @@ There are 2 variants to this item
 
 * The  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/token_trader_spawn_egg.png?raw=true" alt="Token Trader Spawn Egg." data-size="line">Token Trader Spawn Egg is used to spawn the Token Trader
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Survival Identifier: <mark style="color:yellow;">**poke:spawn\_token\_trader**</mark> <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Survival Identifier: <mark style="color:yellow;">**poke:spawn\_token\_trader**</mark> <a href="#identifier" id="identifier"></a>
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Creative Identifier: <mark style="color:yellow;">**poke:token\_trader\_spawn\_egg**</mark> <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Creative Identifier: <mark style="color:yellow;">**poke:token\_trader\_spawn\_egg**</mark> <a href="#identifier" id="identifier"></a>
 
 ## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark> <a href="#rarity" id="rarity"></a>
 

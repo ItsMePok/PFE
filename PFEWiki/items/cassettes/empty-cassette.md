@@ -6,7 +6,7 @@
 
 * The <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/cassette/empty_cassette.png?raw=true" alt="Empty Cassette." data-size="line"> Empty Cassette is a crafting component for some of the [Cassettes](./)
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:empty\_cassette** <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: **poke:empty\_cassette** <a href="#identifier" id="identifier"></a>
 
 ## <img src="broken-reference" alt="Interact Ability." data-size="line"> Interact Ability: <a href="#interact-ability" id="interact-ability"></a>
 

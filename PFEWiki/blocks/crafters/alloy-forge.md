@@ -10,7 +10,7 @@ description: 'Last updated to match: v1.3.0'
 
 * The  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/AlloyForge.png?raw=true" alt="" data-size="line"> Alloy Forge is used to craft the alloys in PFE
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:alloy\_forge**</mark> <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:alloy\_forge**</mark> <a href="#identifier" id="identifier"></a>
 
 ## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark> <a href="#rarity" id="rarity"></a>
 

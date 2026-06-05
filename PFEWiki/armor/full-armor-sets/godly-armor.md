@@ -18,7 +18,7 @@ To get the set effects for this armor; you need the [Leggings](godly-armor.md#go
 
 ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_helmet.png?raw=true)
 
-### <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:godly\_helmet**
+### <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: **poke:godly\_helmet**
 
 ### Durability: **4200**
 
@@ -68,7 +68,7 @@ Items:
 
 ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_chestplate.png?raw=true)
 
-### <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:godly\_chestplate**
+### <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: **poke:godly\_chestplate**
 
 ### Durability: **4200**
 
@@ -117,7 +117,7 @@ Items:
 
 ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_leggings.png?raw=true)
 
-### <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:godly\_leggings**
+### <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: **poke:godly\_leggings**
 
 ### Durability: **4200**
 
@@ -166,7 +166,7 @@ Items:
 
 ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_boots.png?raw=true)
 
-### <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:godly\_boots**
+### <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: **poke:godly\_boots**
 
 ### Durability: **4200**
 

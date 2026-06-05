@@ -11,7 +11,7 @@ description: 'Last updated to match: v1.3.0'
 * The <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_claymore.png?raw=true" alt="" data-size="line"> Nebula Claymore is a weapon that cannot be enchanted but has a higher damage and durability compared to a sword of a similar tier
   * Since the <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_sword.png?raw=true" alt="" data-size="line"> [Nebula Sword](../swords/nebula-sword.md) is the "Final Sword" this will have a lower damage/durability when comparing it to this
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:nebula\_claymore**</mark> <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:nebula\_claymore**</mark> <a href="#identifier" id="identifier"></a>
 
 ## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Epic</mark> <a href="#rarity" id="rarity"></a>
 

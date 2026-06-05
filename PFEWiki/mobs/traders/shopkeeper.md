@@ -2,7 +2,7 @@
 
 ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/Entity/shopkeeper.png?raw=true)
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:shopkeeper**
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: **poke:shopkeeper**
 
 ## <img src="https://minecraft.wiki/images/Emerald_JE3_BE3.png?4c5f3" alt="Emerald." data-size="line"> Trades:
 
@@ -46,7 +46,7 @@
 
 ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shopkeeper_spawn_egg.png?raw=true)
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:**&#x73;pawn\_shopkeeper
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: **poke:**&#x73;pawn\_shopkeeper
 
 ## Usage: **Spawns the** [Shopkeeper](shopkeeper.md#shopkeeper)
 

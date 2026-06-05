@@ -10,7 +10,7 @@ description: Last updated to match v1.2.94
 
 * The <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nether_upgrader.png?raw=true" alt="Nether Upgrader." data-size="line"> Nether Upgrader is a tool that can be used to upgrade various [Nether](https://minecraft.wiki/w/The_Nether) blocks&#x20;
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke:nether\_upgrader**</mark> <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke:nether\_upgrader**</mark> <a href="#identifier" id="identifier"></a>
 
 ## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark> <a href="#rarity" id="rarity"></a>
 

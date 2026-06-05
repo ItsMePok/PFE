@@ -10,7 +10,7 @@ description: 'Last updated to match: v1.3.01'
 
 * The <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/echo_holder.png?raw=true" alt="" data-size="line"> Echo Holder is a crafting component that is used in crafting [Rings](../../tools/rings/) that specialize in sculk-related abilities
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: <mark style="color:yellow;">poke\_pfe:echo\_holder</mark> <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">poke\_pfe:echo\_holder</mark> <a href="#identifier" id="identifier"></a>
 
 ## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Uncommon</mark> <a href="#rarity" id="rarity"></a>
 

@@ -6,7 +6,7 @@
 
 * The <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/diamond_token.png?raw=true" alt="Diamond Token." data-size="line"> Diamond Token is a currency in PFE that is used for trading with the [Traders](../../../mobs/traders/)
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:diamond\_token** <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: **poke:diamond\_token** <a href="#identifier" id="identifier"></a>
 
 ## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 64 <a href="#stack-size" id="stack-size"></a>
 

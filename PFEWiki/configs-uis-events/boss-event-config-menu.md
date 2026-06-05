@@ -8,7 +8,7 @@ This item is no longer obtainable after v1.2.8 / v1.2.74
 It has been replaced with the Config
 {% endhint %}
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:boss\_event\_config** <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: **poke:boss\_event\_config** <a href="#identifier" id="identifier"></a>
 
 ## [Interact Ability](../misc-other-info/interact-abilities.md): Opens the Boss Event Config UI
 

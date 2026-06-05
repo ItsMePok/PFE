@@ -2,7 +2,7 @@
 
 <div data-full-width="false"><figure><img src="https://www.gitbook.com/cdn-cgi/image/dpr=2,width=1168,onerror=redirect,format=auto/https%3A%2F%2Fgithub.com%2FItsMePok%2FPFE%2Fblob%2FwikiAssets%2Fstructures-pixel%2FAbandonedShip.png%3Fraw%3Dtrue" alt=""><figcaption></figcaption></figure></div>
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> **Structure identifier:** poke:abandoned\_ship <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> **Structure identifier:** poke:abandoned\_ship <a href="#identifier" id="identifier"></a>
 
 ## Generation:
 

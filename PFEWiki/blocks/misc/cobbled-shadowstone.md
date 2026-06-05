@@ -12,7 +12,7 @@ description: 'Last updated to match: v1.3.01'
 * With Vibrant Visuals enabled; this block has a slight purple glow to it when there is low to no light
   * <mark style="color:$primary;">Note</mark>: this is visual only and does not impact surrounding light levels
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:cobbled\_shadowstone**</mark> <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:cobbled\_shadowstone**</mark> <a href="#identifier" id="identifier"></a>
 
 ## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">64</mark>
 

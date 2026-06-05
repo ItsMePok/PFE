@@ -10,7 +10,7 @@ description: 'Last updated to match: v1.2.94'
 
 * The <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_scythe.png?raw=true" alt="Nebula Scythe." data-size="line"> Nebula Scythe is currently the best scythe in PFE
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke:**</mark><mark style="color:yellow;">nebula\_scythe</mark> <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke:**</mark><mark style="color:yellow;">nebula\_scythe</mark> <a href="#identifier" id="identifier"></a>
 
 ## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">1</mark> <a href="#stack-size" id="stack-size"></a>
 

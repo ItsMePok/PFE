@@ -6,7 +6,7 @@ description: 'Last updated to match: v1.2.95'
 
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/Entity/cassette_trader.png?raw=true" alt=""><figcaption></figcaption></figure>
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:cassette\_trader**
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: **poke:cassette\_trader**
 
 ## <img src="https://minecraft.wiki/images/Emerald_JE3_BE3.png?4c5f3" alt="Emerald." data-size="line"> Trades:
 

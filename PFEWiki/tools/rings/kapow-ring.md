@@ -7,7 +7,7 @@
 * The  <img src="https://raw.githubusercontent.com/ItsMePok/PFE/refs/heads/wikiAssets/wikiMain/kapow_ring.png" alt="Kapow Ring." data-size="line"> Kapow Ring is one of the [Rings](./) in PFE
 * The  <img src="https://raw.githubusercontent.com/ItsMePok/PFE/refs/heads/wikiAssets/wikiMain/kapow_ring.png" alt="Kapow Ring." data-size="line"> Kapow Ring can cause destruction and can be disabled in the [Config](../../configs-uis-events/config.md)
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke:kapow\_ring**</mark> <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke:kapow\_ring**</mark> <a href="#identifier" id="identifier"></a>
 
 ## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">1</mark> <a href="#stack-size" id="stack-size"></a>
 

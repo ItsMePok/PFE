@@ -10,7 +10,7 @@ description: 'Last updated to match: v1.2.94'
 
 * The <img src="https://raw.githubusercontent.com/ItsMePok/PFE/refs/heads/wikiAssets/wikiMain/springy_gem.png" alt="Springy Gem." data-size="line"> Springy Gem is a crafting component for the <img src="https://raw.githubusercontent.com/ItsMePok/PFE/refs/heads/wikiAssets/wikiMain/springy_ring.png" alt="Springy Ring." data-size="line"> [Springy Ring](../../tools/rings/springy-ringy.md)
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:springy\_gem** <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: **poke:springy\_gem** <a href="#identifier" id="identifier"></a>
 
 ## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark> <a href="#rarity" id="rarity"></a>
 

@@ -6,7 +6,7 @@ description: 'Last updated to match: v1.2.95'
 
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/Entity/knightling.png?raw=true" alt=""><figcaption></figcaption></figure>
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line">Identifier: <mark style="color:yellow;">**poke:knightling**</mark> <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line">Identifier: <mark style="color:yellow;">**poke:knightling**</mark> <a href="#identifier" id="identifier"></a>
 
 ## <img src="https://minecraft.wiki/images/Book_and_Quill_JE2_BE2.png?2128f" alt="Book and Quill." data-size="line"> Description: <a href="#description" id="description"></a>
 
@@ -28,7 +28,7 @@ description: 'Last updated to match: v1.2.95'
 
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/knightling_spawn_egg.png?raw=true" alt=""><figcaption></figcaption></figure>
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke:spawn\_knightling**</mark> <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke:spawn\_knightling**</mark> <a href="#identifier" id="identifier"></a>
 
 ## Usage: <mark style="color:yellow;">Spawns the Knightling</mark> <a href="#usage" id="usage"></a>
 
@@ -78,7 +78,7 @@ Recipe can be unlocked with:
 
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/knightling_spawn_egg.png?raw=true" alt=""><figcaption></figcaption></figure>
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke:knightling\_spawn\_egg**</mark> <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke:knightling\_spawn\_egg**</mark> <a href="#identifier" id="identifier"></a>
 
 ## Usage: <mark style="color:yellow;">Spawns the Knightling</mark> <a href="#usage" id="usage"></a>
 

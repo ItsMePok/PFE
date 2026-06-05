@@ -10,7 +10,7 @@ description: 'Last updated to match: v1.2.94'
 
 * The  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/pocket_knife.png?raw=true" alt="Pocket Knife." data-size="line"> Pocket Knife is an early-game weapon that can also be used to carve certain blocks
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke:pocket\_knife**</mark> <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke:pocket\_knife**</mark> <a href="#identifier" id="identifier"></a>
 
 ## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">1</mark> <a href="#stack-size" id="stack-size"></a>
 

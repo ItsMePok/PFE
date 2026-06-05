@@ -10,7 +10,7 @@ description: Updated to match v1.2.90
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/craft_quest.png?raw=true" alt="Craft Quest." data-size="line"> Craft Quests are [Quests](./) that focus on Items/Blocks that would typically be obtained by [Crafting](https://minecraft.wiki/w/Crafting)
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:craft\_quest** <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: **poke:craft\_quest** <a href="#identifier" id="identifier"></a>
 
 ## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/craft_quest.png?raw=true" alt="Craft Quest." data-size="line"> Quest List: <a href="#quest-list" id="quest-list"></a>
 

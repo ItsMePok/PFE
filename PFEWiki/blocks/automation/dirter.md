@@ -6,7 +6,7 @@ description: 'Last updated to math: v1.2.96'
 
 <div align="center" data-full-width="true"><figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/Automation/dirter.png?raw=true" alt="Dirter"><figcaption><p>Default</p></figcaption></figure> <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/Automation/VVdirter.png?raw=true" alt=""><figcaption><p>With Vibrant Visuals<br>enabled</p></figcaption></figure></div>
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifiers: <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifiers: <a href="#identifier" id="identifier"></a>
 
 * <mark style="color:yellow;">poke:dirter</mark>
 * <mark style="color:yellow;">poke:dirter\_up</mark>

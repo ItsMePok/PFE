@@ -10,7 +10,7 @@ description: 'Last updated to match: v1.2.95'
 
 * The <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/persistence_core.png?raw=true" alt="Persistence Core." data-size="line"> Persistence Core is an upgrade that can be applied to tools to prevent them from being lost on death
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:persistence\_core**</mark> <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:persistence\_core**</mark> <a href="#identifier" id="identifier"></a>
 
 ## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark> <a href="#rarity" id="rarity"></a>
 

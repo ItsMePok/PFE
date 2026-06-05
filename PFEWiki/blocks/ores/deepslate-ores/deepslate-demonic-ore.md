@@ -10,7 +10,7 @@ The block texture above could not be 100% accurate if you have a texture pack ap
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/ore/DeepslateDemonicOre.png?raw=true" alt="Deepslate Demonic Ore." data-size="line"> Deepslate Demonic Ore is an ore that when refined is used in obtaining various things in PFE
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE2_BE2.png?cbdc1" alt="" data-size="line"> Identifier: **poke:demonic\_ore** <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: **poke:demonic\_ore** <a href="#identifier" id="identifier"></a>
 
 ## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 64
 
