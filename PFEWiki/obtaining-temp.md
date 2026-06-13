@@ -16,7 +16,7 @@ hidden: true
 
 ### <img src="https://minecraft.wiki/images/Slowness_JE4.png?d415c" alt="" data-size="line"> **Speed Modifier while Consuming**: <a href="#speed-modifier-while-consuming" id="speed-modifier-while-consuming"></a>
 
-### ![](https://wiki.bedrock.dev/assets/images/concepts/emojis/hud/food.png) **Hunger Replenished**: <a href="#hunger-replenished" id="hunger-replenished"></a>
+### ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/hunger_full.png?raw=true) **Hunger Replenished**: <a href="#hunger-replenished" id="hunger-replenished"></a>
 
 ## <img src="https://minecraft.wiki/images/Strength_JE3_BE2.png?0494e" alt="Strength Effect." data-size="line"> Attack Damage: <mark style="color:yellow;">3</mark> <a href="#attack-damage" id="attack-damage"></a>
 

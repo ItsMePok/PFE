@@ -10,7 +10,7 @@ This item can always be consumed, even if you are not hungry
 
 ## Consuming:
 
-### &#x20;    ![](https://wiki.bedrock.dev/assets/images/concepts/emojis/hud/food.png) **Hunger Replenished**: 10 (![](https://wiki.bedrock.dev/assets/images/concepts/emojis/hud/food.png)![](https://wiki.bedrock.dev/assets/images/concepts/emojis/hud/food.png)![](https://wiki.bedrock.dev/assets/images/concepts/emojis/hud/food.png)![](https://wiki.bedrock.dev/assets/images/concepts/emojis/hud/food.png)![](https://wiki.bedrock.dev/assets/images/concepts/emojis/hud/food.png))
+### &#x20;    ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/hunger_full.png?raw=true) **Hunger Replenished**: 10 (![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/hunger_full.png?raw=true)![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/hunger_full.png?raw=true)![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/hunger_full.png?raw=true)![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/hunger_full.png?raw=true)![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/hunger_full.png?raw=true))
 
 ### &#x20;    <img src="https://minecraft.wiki/images/Saturation_JE1.png?dbba6" alt="" data-size="line"> **Saturation**: 5
 
