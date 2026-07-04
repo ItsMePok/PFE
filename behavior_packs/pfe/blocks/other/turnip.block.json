@@ -1,5 +1,5 @@
 {
-	"format_version": "1.26.0",
+	"format_version": "1.26.30",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke_pfe:turnip",
@@ -221,9 +221,11 @@
 					}
 				]
 			},
-			"tag:pfe": {},
-			"tag:minecraft:crop": {},
-			"tag:crop": {},
+			"minecraft:tags": [
+				"pfe",
+				"minecraft:is_hoe_item_destructible",
+				"minecraft:crop"
+			],
 			"minecraft:light_dampening": 0,
 			"minecraft:map_color": "#09a304"
 		}

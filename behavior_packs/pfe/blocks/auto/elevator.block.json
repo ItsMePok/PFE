@@ -1,5 +1,5 @@
 {
-	"format_version": "1.26.0",
+	"format_version": "1.26.30",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke_pfe:elevator",
@@ -42,12 +42,12 @@
 				"culling": "poke_pfe:block.culling",
 				"identifier": "geometry.poke_pfe.block"
 			},
-			"tag:pfe": {},
-			"tag:metal": {},
-			"tag:minecraft:metal": {},
-			"tag:stone_pick_diggable": {},
-			"tag:minecraft:is_pickaxe_item_destructible": {},
-			"tag:poke_pfe:elevator": {},
+			"minecraft:tags": [
+				"pfe",
+				"minecraft:is_pickaxe_item_destructible",
+				"minecraft:is_axe_item_destructible",
+				"poke_pfe:elevator"
+			],
 			"minecraft:map_color": "#202025",
 			"poke_pfe:elevator": {}
 		}

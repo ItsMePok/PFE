@@ -1,5 +1,5 @@
 {
-  "format_version": "1.26.0",
+  "format_version": "1.26.30",
   "minecraft:item": {
     "description": {
       "identifier": "poke_pfe:holy_battleaxe",
@@ -83,7 +83,6 @@
         "category": "poke_pfe:axe_use",
         "duration": 3
       },
-      "tag:minecraft:is_sword": {},
       "minecraft:tags": {
         "tags": [
           "minecraft:netherite_tier",

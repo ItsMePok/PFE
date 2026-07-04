@@ -1,5 +1,5 @@
 {
-  "format_version": "1.26.0",
+  "format_version": "1.26.30",
   "minecraft:item": {
     "description": {
       "identifier": "poke_pfe:nebula_battleaxe",
@@ -83,7 +83,6 @@
         "category": "poke_pfe:axe_use",
         "duration": 2.5
       },
-      "tag:minecraft:is_sword": {},
       "minecraft:tags": {
         "tags": [
           "minecraft:netherite_tier",

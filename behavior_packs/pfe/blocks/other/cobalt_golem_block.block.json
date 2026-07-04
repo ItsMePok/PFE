@@ -1,5 +1,5 @@
 {
-  "format_version": "1.26.0",
+  "format_version": "1.26.30",
   "minecraft:block": {
     "description": {
       "identifier": "poke_pfe:charged_cobalt_block",
@@ -27,11 +27,10 @@
           "texture": "poke_pfe_charged_cobalt_block"
         }
       },
-      "tag:pfe": {},
-      "tag:metal": {},
-      "tag:minecraft:metal": {},
-      "tag:stone_pick_diggable": {},
-      "tag:minecraft:is_pickaxe_item_destructible": {},
+      "minecraft:tags": [
+        "pfe",
+        "minecraft:is_pickaxe_item_destructible"
+      ]
       "minecraft:map_color": "#f1da09",
       "poke_pfe:cc_block_interact": {}
     }

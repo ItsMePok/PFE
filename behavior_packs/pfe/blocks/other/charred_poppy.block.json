@@ -1,12 +1,12 @@
 {
-	"format_version": "1.26.0",
+	"format_version": "1.26.30",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke_pfe:charred_poppy"
 		},
 		"components": {
 			"minecraft:precipitation_interactions": {
-				"precipitation_behavior": "none"
+				"precipitation_behavior": "snowlogging"
 			},
 			"minecraft:connection_rule": {
 				"accepts_connections_from": "none"
@@ -96,10 +96,12 @@
 					}
 				]
 			},
-			"tag:pfe": {},
-			"tag:crop": {},
-			"tag:plant": {},
-			"tag:minecraft:crop": {},
+			"minecraft:tags": [
+				"pfe",
+				"minecraft:is_hoe_item_destructible",
+				"minecraft:flower",
+				"plant"
+			],
 			"minecraft:light_dampening": 0,
 			"minecraft:map_color": "#393730",
 			"minecraft:loot": "loot_tables/poke/pfe/charred_poppy.loot.json"

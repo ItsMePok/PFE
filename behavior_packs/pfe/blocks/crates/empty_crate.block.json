@@ -1,5 +1,5 @@
 {
-	"format_version": "1.26.0",
+	"format_version": "1.26.30",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke_pfe:empty_crate",
@@ -106,11 +106,12 @@
 					"render_method": "alpha_test"
 				}
 			},
-			"tag:pfe": {},
-			"tag:wood": {},
-			"tag:minecraft:is_hatchet_item_destructible": {},
-			"tag:minecraft:is_axe_item_destructible": {},
-			"tag:minecraft:wood": {},
+			"minecraft:tags": [
+				"pfe",
+				"minecraft:is_axe_item_destructible",
+				"wood",
+				"minecraft:wood"
+			],
 			"minecraft:map_color": "#76592c"
 		}
 	}

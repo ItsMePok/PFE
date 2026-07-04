@@ -1,5 +1,5 @@
 {
-	"format_version": "1.26.0",
+	"format_version": "1.26.30",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke_pfe:medic_drain",
@@ -58,11 +58,11 @@
 				"explosion_resistance": 30
 			},
 			"minecraft:map_color": "#30014b",
-			"tag:pfe": {},
-			"tag:metal": {},
-			"tag:minecraft:metal": {},
-			"tag:stone_pick_diggable": {},
-			"tag:minecraft:is_pickaxe_item_destructible": {}
+			"minecraft:tags": [
+				"pfe",
+				"minecraft:is_pickaxe_item_destructible",
+				"poke_pfe:drain"
+			]
 		}
 	}
 }

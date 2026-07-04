@@ -1,5 +1,5 @@
 {
-	"format_version": "1.26.0",
+	"format_version": "1.26.30",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke_pfe:coffee_mug",
@@ -71,9 +71,10 @@
 			},
 			"minecraft:light_emission": 1,
 			"minecraft:light_dampening": 0,
-			"tag:pfe": {},
-			"tag:stone_pick_diggable": {},
-			"tag:minecraft:is_pickaxe_item_destructible": {},
+			"minecraft:tags": [
+				"pfe",
+				"minecraft:is_pickaxe_item_destructible"
+			],
 			"minecraft:map_color": "#8e837b"
 		},
 		"permutations": [

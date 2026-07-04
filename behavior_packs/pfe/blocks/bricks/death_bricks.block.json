@@ -1,5 +1,5 @@
 {
-	"format_version": "1.26.0",
+	"format_version": "1.26.30",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke_pfe:death_bricks",
@@ -38,11 +38,10 @@
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 30
 			},
-			"tag:pfe": {},
-			"tag:metal": {},
-			"tag:minecraft:metal": {},
-			"tag:stone_pick_diggable": {},
-			"tag:minecraft:is_pickaxe_item_destructible": {},
+			"minecraft:tags": [
+				"pfe",
+				"minecraft:is_pickaxe_item_destructible"
+			],
 			"minecraft:map_color": "#1a191d"
 		}
 	}

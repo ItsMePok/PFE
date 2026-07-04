@@ -1,5 +1,5 @@
 {
-	"format_version": "1.26.0",
+	"format_version": "1.26.30",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke_pfe:listener_trophy",
@@ -81,11 +81,10 @@
 			"minecraft:light_emission": 3,
 			"minecraft:light_dampening": 0,
 			"minecraft:map_color": "#e9e4a1",
-			"tag:pfe": {},
-			"tag:stone": {},
-			"tag:minecraft:stone": {},
-			"tag:stone_pick_diggable": {},
-			"tag:minecraft:is_pickaxe_item_destructible": {},
+			"minecraft:tags": [
+				"pfe",
+				"minecraft:is_pickaxe_item_destructible"
+			],
 			"poke_pfe:cc_block_interact": {}
 		},
 		"permutations": [

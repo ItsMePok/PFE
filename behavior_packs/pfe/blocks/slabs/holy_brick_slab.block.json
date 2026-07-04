@@ -1,5 +1,5 @@
 {
-	"format_version": "1.26.0",
+	"format_version": "1.26.30",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke_pfe:holy_bricks_slab",
@@ -199,11 +199,10 @@
 				"texture": "poke_pfe_holy_bricks"
 			},
 			"minecraft:map_color": "#1a37bb",
-			"tag:pfe": {},
-			"tag:metal": {},
-			"tag:minecraft:metal": {},
-			"tag:stone_pick_diggable": {},
-			"tag:minecraft:is_pickaxe_item_destructible": {}
+			"minecraft:tags": [
+				"pfe",
+				"minecraft:is_pickaxe_item_destructible"
+			],
 		}
 	}
 }

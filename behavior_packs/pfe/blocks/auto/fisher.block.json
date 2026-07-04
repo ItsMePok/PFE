@@ -1,5 +1,5 @@
 {
-  "format_version": "1.26.0",
+  "format_version": "1.26.30",
   "minecraft:block": {
     "description": {
       "identifier": "poke_pfe:fisher",
@@ -225,7 +225,11 @@
         ]
       },
       "minecraft:map_color": "#c09059",
-      "tag:minecraft:is_axe_item_destructible": {},
+      "minecraft:tags": [
+        "pfe",
+        "minecraft:is_pickaxe_item_destructible",
+        "minecraft:is_axe_item_destructible"
+      ],
       "poke_pfe:fisher": {}
     }
   }

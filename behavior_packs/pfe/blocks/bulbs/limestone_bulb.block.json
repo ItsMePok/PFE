@@ -1,5 +1,5 @@
 {
-	"format_version": "1.26.0",
+	"format_version": "1.26.30",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke_pfe:limestone_bulb",
@@ -37,11 +37,10 @@
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 24
 			},
-			"tag:pfe": {},
-			"tag:stone": {},
-			"tag:minecraft:stone": {},
-			"tag:stone_pick_diggable": {},
-			"tag:minecraft:is_pickaxe_item_destructible": {},
+			"minecraft:tags": [
+				"pfe",
+				"minecraft:is_pickaxe_item_destructible"
+			],
 			"minecraft:light_emission": 15,
 			"minecraft:map_color": "#ded8c2",
 			"poke_pfe:cycle_color": {}

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.26.0",
+	"format_version": "1.26.30",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke_pfe:present",
@@ -61,10 +61,10 @@
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 30
 			},
-			"tag:pfe": {},
-			"tag:axe": {},
-			"tag:wood": {},
-			"tag:minecraft:wood": {},
+			"minecraft:tags": [
+				"pfe",
+				"minecraft:is_axe_item_destructible"
+			],
 			"minecraft:geometry": "geometry.poke_pfe.present",
 			"minecraft:map_color": "#9b2626",
 			"minecraft:material_instances": {

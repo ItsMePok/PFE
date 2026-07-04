@@ -1,5 +1,5 @@
 {
-	"format_version": "1.26.0",
+	"format_version": "1.26.30",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke_pfe:crimson_sporeshroom",
@@ -20,7 +20,7 @@
 				},
 				"minecraft:ageable": {
 					"duration": 1200,
-					"feed_items": "wheat",
+					"feed_items": "minecraft:wheat",
 					"grow_up": {
 						"event": "minecraft:ageable_grow_up",
 						"target": "self"
@@ -46,7 +46,7 @@
 				"minecraft:breedable": {
 					"require_tame": false,
 					"breed_items": [
-						"wheat"
+						"minecraft:wheat"
 					],
 					"breeds_with": {
 						"poke_pfe:crimson_sporeshroom": {}

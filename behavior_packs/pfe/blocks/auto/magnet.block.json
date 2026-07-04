@@ -1,5 +1,5 @@
 {
-	"format_version": "1.26.0",
+	"format_version": "1.26.30",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke_pfe:magnet",
@@ -80,7 +80,7 @@
 				"accepts_connections_from": "none"
 			},
 			"minecraft:redstone_consumer": {
-				"propogates_power": false,
+				"propagates_power": false,
 				"min_power": 0
 			},
 			"poke_pfe:redstone_state": {},
@@ -166,11 +166,11 @@
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 30
 			},
-			"tag:pfe": {},
-			"tag:metal": {},
-			"tag:minecraft:metal": {},
-			"tag:stone_pick_diggable": {},
-			"tag:minecraft:is_pickaxe_item_destructible": {},
+			"minecraft:tags": [
+				"pfe",
+				"minecraft:is_pickaxe_item_destructible",
+				"minecraft:is_axe_item_destructible"
+			],
 			"minecraft:map_color": "#764f36",
 			"poke_pfe:magnet_block": {}
 		}

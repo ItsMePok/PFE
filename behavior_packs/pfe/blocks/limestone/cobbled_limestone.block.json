@@ -1,5 +1,5 @@
 {
-	"format_version": "1.26.0",
+	"format_version": "1.26.30",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke_pfe:cobbled_limestone",
@@ -37,13 +37,12 @@
 				"explosion_resistance": 30
 			},
 			"minecraft:map_color": "#d4d4d4",
-			"tag:pfe": {},
-			"tag:stone": {},
-			"tag:minecraft:stone": {},
-			"tag:stone_pick_diggable": {},
-			"tag:minecraft:is_pickaxe_item_destructible": {},
-			"tag:minecraft:stone_tool_materials": {},
-			"tag:minecraft:stone_crafting_materials": {}
+			"minecraft:tags": [
+				"pfe",
+				"minecraft:is_pickaxe_item_destructible",
+				"minecraft:stone_tool_materials",
+				"minecraft:stone_crafting_materials"
+			]
 		}
 	}
 }

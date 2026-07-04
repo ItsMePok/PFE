@@ -1,5 +1,5 @@
 {
-	"format_version": "1.26.0",
+	"format_version": "1.26.30",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke_pfe:spell_crafter",
@@ -148,8 +148,10 @@
 					"render_method": "alpha_test"
 				}
 			},
-			"tag:pfe": {},
-			"tag:minecraft:is_pickaxe_item_destructible": {},
+			"minecraft:tags": [
+				"pfe",
+				"minecraft:is_pickaxe_item_destructible"
+			],
 			"minecraft:map_color": "#9553ae"
 		},
 		"permutations": [
