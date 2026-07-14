@@ -6,7 +6,7 @@
 
 * The <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/dollar_bill_5.png?raw=true" alt="$5." data-size="line"> $5 is a currency in PFE that can be used for a replenishable economy system
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: **poke:**&#x64;ollor\_bill\_5 <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:dollar\_bill\_5**</mark> <a href="#identifier" id="identifier"></a>
 
 ## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 64 <a href="#stack-size" id="stack-size"></a>
 
@@ -16,7 +16,6 @@
 {% tab title="Trade" %}
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/entity_icon/money_man.png?raw=true" alt=""><figcaption><p>Sold by the <a href="../../../mobs/traders/money-man.md">Money Man</a></p></figcaption></figure>
 
-<table data-full-width="false"><thead><tr><th align="center">Wants</th><th width="88" align="center">Amount</th><th align="center">Gives</th><th width="85" align="center">Amount</th></tr></thead><tbody><tr><td align="center"><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/dollar_bill_1.png?raw=true" alt="$1." data-size="line"> <a href="usd1.md">$1</a></td><td align="center">5</td><td align="center"><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/dollar_bill_5.png?raw=true" alt="$5." data-size="line"> $5 </td><td align="center">1</td></tr><tr><td align="center"><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/dollar_bill_10.png?raw=true" alt="$10." data-size="line"><a href="usd10.md"> $10</a></td><td align="center">1</td><td align="center"><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/dollar_bill_5.png?raw=true" alt="$5." data-size="line"> $5 </td><td align="center">1</td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th align="center">Wants</th><th width="88" align="center">Amount</th><th align="center">Gives</th><th width="85" align="center">Amount</th></tr></thead><tbody><tr><td align="center"><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/dollar_bill_1.png?raw=true" alt="$1." data-size="line"> <a href="usd1.md">$1</a></td><td align="center">5</td><td align="center"><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/dollar_bill_5.png?raw=true" alt="$5." data-size="line"> $5</td><td align="center">1</td></tr><tr><td align="center"><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/dollar_bill_10.png?raw=true" alt="$10." data-size="line"><a href="usd10.md"> $10</a></td><td align="center">1</td><td align="center"><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/dollar_bill_5.png?raw=true" alt="$5." data-size="line"> $5</td><td align="center">1</td></tr></tbody></table>
 {% endtab %}
 {% endtabs %}
-

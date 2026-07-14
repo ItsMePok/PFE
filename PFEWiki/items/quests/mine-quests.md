@@ -10,7 +10,7 @@ description: Updated to match v1.2.90
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/mine_quest.png?raw=true" alt="Mine Quest." data-size="line"> Mine Quests are [Quests](./) that focus on Items/Blocks that would typically be found in ![Caves.](https://minecraft.wiki/images/EnvSprite_noise-cave.png?a015a) [Caves](https://minecraft.wiki/w/Cave)
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: **poke:mine\_quest** <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:mine\_quest**</mark> <a href="#identifier" id="identifier"></a>
 
 ## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/mine_quest.png?raw=true" alt="Mine Quest." data-size="line"> Quest List: <a href="#quest-list" id="quest-list"></a>
 

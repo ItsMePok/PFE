@@ -6,7 +6,7 @@
 
 * The <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/platinum_token.png?raw=true" alt="Platinum Token." data-size="line"> Platinum Token is a currency in PFE that is used for trading with the [Traders](../../../mobs/traders/)
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: **poke:**&#x70;latinum\_token <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:platinum\_token**</mark> <a href="#identifier" id="identifier"></a>
 
 ## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 64 <a href="#stack-size" id="stack-size"></a>
 
