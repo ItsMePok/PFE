@@ -1,0 +1,24 @@
+- tag: tool
+  label: Tool
+  color: cyan
+- tag: item
+  label: Item
+  color: red
+- tag: block
+  label: Block
+  color: red
+- tag: entity
+  label: Entity
+  color: red
+- tag: weapon
+  label: Weapon
+  color: cyan
+- tag: armor
+  label: Armor
+  color: cyan
+- tag: cosmetic
+  label: Cosmetic
+  color: cyan
+- tag: crafting-component
+  label: Crafting Component
+  color: cyan

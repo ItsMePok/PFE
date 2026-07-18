@@ -2,7 +2,7 @@
 
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/milk_bottle.png?raw=true" alt=""><figcaption></figcaption></figure>
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: **poke:milk\_bottle** <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:milk\_bottle**</mark> <a href="#identifier" id="identifier"></a>
 
 {% hint style="info" %}
 This item can always be consumed, even if you are not hungry
@@ -10,7 +10,7 @@ This item can always be consumed, even if you are not hungry
 
 ## Consuming:
 
-### ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/hunger_full.png?raw=true) **Hunger Replenished**: 0
+### <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/hunger_full.png?raw=true" alt="" data-size="line"> **Hunger Replenished**: 0
 
 ### <img src="https://minecraft.wiki/images/Saturation_JE1.png?dbba6" alt="" data-size="line"> **Saturation**: 0
 

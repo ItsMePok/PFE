@@ -2,7 +2,7 @@
 
 ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star.png?raw=true)
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: **poke:banished\_star**
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:banished\_star**</mark> <a href="#identifier" id="identifier"></a>
 
 ## Usage:
 
@@ -123,11 +123,11 @@ This Recipe requires the items to be in the same slot as it shows
 
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-|                                                                               |                                                                                                                             |                                                                               |
-| :---------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------: | ----------------------------------------------------------------------------- |
-| ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star.png?raw=true" alt="" data-size="original"> | ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) |
-| ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) |                        ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png)                        | ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) |
-| ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) |                        ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png)                        | ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) |
+|                                                                                   |                                                                                                                             |                                                                                   |
+| :-------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------: | --------------------------------------------------------------------------------- |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star.png?raw=true" alt="" data-size="original"> | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |                      ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true)                      | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |                      ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true)                      | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
 
 #### Items:
 
@@ -146,11 +146,11 @@ This Recipe requires the items shown to be in the same slot shown
 
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-|                                                                                                                             |                                                                               |                                                                               |
-| :-------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------: | ----------------------------------------------------------------------------- |
-|                        ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png)                        | ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) | ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) |
-|                        ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png)                        | ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) | ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) |
-| <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star.png?raw=true" alt="" data-size="original"> | ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) | ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) |
+|                                                                                                                             |                                                                                   |                                                                                   |
+| :-------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------: | --------------------------------------------------------------------------------- |
+|                      ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true)                      | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
+|                      ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true)                      | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
+| <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star.png?raw=true" alt="" data-size="original"> | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
 
 #### Items:
 
@@ -169,11 +169,11 @@ This Recipe requires the items shown to be in the same slot shown
 
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-|                                                                                                                             |                                                                               |                                                                               |
-| :-------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------: | ----------------------------------------------------------------------------- |
-|                        ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png)                        | ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) | ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) |
-| <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star.png?raw=true" alt="" data-size="original"> | ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) | ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) |
-|                        ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png)                        | ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) | ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) |
+|                                                                                                                             |                                                                                   |                                                                                   |
+| :-------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------: | --------------------------------------------------------------------------------- |
+|                      ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true)                      | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
+| <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star.png?raw=true" alt="" data-size="original"> | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
+|                      ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true)                      | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
 
 #### Items:
 
@@ -192,11 +192,11 @@ This Recipe requires the items shown to be in the same slot shown
 
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-|                                                                               |                                                                                                                             |                                                                               |
-| :---------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------: | ----------------------------------------------------------------------------- |
-| ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) |                        ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png)                        | ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) |
-| ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star.png?raw=true" alt="" data-size="original"> | ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) |
-| ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) |                        ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png)                        | ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) |
+|                                                                                   |                                                                                                                             |                                                                                   |
+| :-------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------: | --------------------------------------------------------------------------------- |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |                      ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true)                      | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star.png?raw=true" alt="" data-size="original"> | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |                      ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true)                      | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
 
 #### Items:
 
@@ -215,11 +215,11 @@ This Recipe requires the items shown to be in the same slot shown
 
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-|                                                                               |                                                                                                                             |                                                                               |
-| :---------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------: | ----------------------------------------------------------------------------- |
-| ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) |                        ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png)                        | ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) |
-| ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) |                        ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png)                        | ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) |
-| ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star.png?raw=true" alt="" data-size="original"> | ![empty](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png) |
+|                                                                                   |                                                                                                                             |                                                                                   |
+| :-------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------: | --------------------------------------------------------------------------------- |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |                      ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true)                      | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |                      ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true)                      | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star.png?raw=true" alt="" data-size="original"> | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
 
 #### Items:
 

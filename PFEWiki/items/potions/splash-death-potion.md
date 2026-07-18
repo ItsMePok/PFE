@@ -1,5 +1,5 @@
 ---
-description: 'Last updated to match: v1.2.98'
+description: 'Last updated to match: v1.3.04'
 ---
 
 # Splash Death Potion
@@ -11,7 +11,7 @@ description: 'Last updated to match: v1.2.98'
 * The <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/splash_death_potion.png?raw=true" alt="" data-size="line"> Splash Death Potion is a type of potion that can be used to kill someone instantly
 * Unfortunately, due to how brittle the bottle has become; any attempt to throw this will result in it killing the thrower
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke:splash\_death\_potion**</mark> <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:splash\_death\_potion**</mark> <a href="#identifier" id="identifier"></a>
 
 ## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">16</mark> <a href="#stack-size" id="stack-size"></a>
 

@@ -279,7 +279,7 @@
 * [Tools](tools/README.md)
   * [Pickaxes](tools/pickaxes/README.md)
     * [Emerald Pickaxe](tools/pickaxes/emerald-pickaxe.md)
-    * [Amethyst Pickaxe](tools/pickaxes/amethyst-pickaxe.md)
+    * [Creedite Pickaxe](tools/pickaxes/amethyst-pickaxe.md)
     * [Cobalt Pickaxe](tools/pickaxes/cobalt-pickaxe.md)
     * [Shade Pickaxe](tools/pickaxes/shade-pickaxe.md)
     * [Onyx Pickaxe](tools/pickaxes/onyx-pickaxe.md)

@@ -6,9 +6,9 @@
 
 * The <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/capacity_core.png?raw=true" alt="Capacity Core." data-size="line"> Capacity Core is used in upgrading the [Boltbow's](../../weapons/boltbows/boltbow.md) maximum ammo capacity
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: **poke:capacity\_core** <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:capacity\_core**</mark> <a href="#identifier" id="identifier"></a>
 
-## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 64 <a href="#stack-size" id="stack-size"></a>
+## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">64</mark> <a href="#stack-size" id="stack-size"></a>
 
 ## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining: <a href="#obtaining" id="obtaining"></a>
 
@@ -16,11 +16,11 @@
 {% tab title="Recipe" %}
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-|                                                                                                                                      |                                                                                                        |                                                                                                                                      |
-| :----------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------: |
-|                               ![Arrow.](https://minecraft.wiki/images/Arrow_\(item\)_JE1_BE1.png?93ac1)                              |                ![Arrow.](https://minecraft.wiki/images/Arrow_\(item\)_JE1_BE1.png?93ac1)               |                               ![Arrow.](https://minecraft.wiki/images/Arrow_\(item\)_JE1_BE1.png?93ac1)                              |
-|                               ![Arrow.](https://minecraft.wiki/images/Arrow_\(item\)_JE1_BE1.png?93ac1)                              | ![Upgrade core](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/upgrade_core.png?raw=true) |                               ![Arrow.](https://minecraft.wiki/images/Arrow_\(item\)_JE1_BE1.png?93ac1)                              |
-| <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="Cobalt Ingot." data-size="original"> |     ![Onyx Ingot.](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_ingot.png?raw=true)    | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="Cobalt Ingot." data-size="original"> |
+|                                                                                                                                         |                                                                                                     |                                                                                                                                         |
+| :-------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------: |
+|                                ![Arrow.](https://minecraft.wiki/images/Arrow_\(item\)_JE1_BE1.png?93ac1)                                |              ![Arrow.](https://minecraft.wiki/images/Arrow_\(item\)_JE1_BE1.png?93ac1)              |                                ![Arrow.](https://minecraft.wiki/images/Arrow_\(item\)_JE1_BE1.png?93ac1)                                |
+|                                ![Arrow.](https://minecraft.wiki/images/Arrow_\(item\)_JE1_BE1.png?93ac1)                                | ![Upgrade core](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/upgrade_core.png?raw=true) |                                ![Arrow.](https://minecraft.wiki/images/Arrow_\(item\)_JE1_BE1.png?93ac1)                                |
+| <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="Cobalt Ingot." data-size="original"> |   ![Onyx Ingot.](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_ingot.png?raw=true)  | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="Cobalt Ingot." data-size="original"> |
 
 Items:
 

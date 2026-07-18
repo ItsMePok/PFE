@@ -8,9 +8,9 @@ description: Last updated to match v1.2.94
 
 ## <img src="https://minecraft.wiki/images/Book_and_Quill_JE2_BE2.png?2128f" alt="Book and Quill." data-size="line"> Description: <a href="#description" id="description"></a>
 
-* The <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/floppy_disk.png?raw=true" alt="Floppy Disk." data-size="line"> Floppy Disk is a late-game crafting component that is dropped by [The Listener](../../mobs/bosses/the-listener.md) &#x20;
+* The <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/floppy_disk.png?raw=true" alt="Floppy Disk." data-size="line"> Floppy Disk is a late-game crafting component that is dropped by [The Listener](../../mobs/bosses/the-listener.md)
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke:floppy\_disk**</mark> <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:floppy\_disk**</mark> <a href="#identifier" id="identifier"></a>
 
 ## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Epic</mark> <a href="#rarity" id="rarity"></a>
 

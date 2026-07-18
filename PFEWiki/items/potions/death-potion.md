@@ -1,5 +1,5 @@
 ---
-description: 'Last updated to match: v1.2.99'
+description: 'Last updated to match: v1.3.04'
 ---
 
 # Death Potion
@@ -10,7 +10,7 @@ description: 'Last updated to match: v1.2.99'
 
 * The <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/death_potion.png?raw=true" alt="" data-size="line"> Death Potion is a type of potion that can be used to kill someone instantly
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke:death\_potion**</mark> <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:death\_potion**</mark> <a href="#identifier" id="identifier"></a>
 
 ## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">16</mark> <a href="#stack-size" id="stack-size"></a>
 

@@ -2,7 +2,7 @@
 
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/opaqueAlts/godly_pickaxe.png?raw=true/10deb511-7690-4f33-85cb-08dbaa6850b3" alt=""><figcaption></figcaption></figure>
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: **poke:godly\_pickaxe** <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:godly\_pickaxe**</mark> <a href="#identifier" id="identifier"></a>
 
 ## Basic info:
 
@@ -36,11 +36,11 @@
 {% tab title="Recipe" %}
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-|                                                                                                 |                                                                                                 |                                                                                                 |
-| :---------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: |
+|                                                                                                   |                                                                                                   |                                                                                                   |
+| :-----------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: |
 | ![Godly Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_ingot.png?raw=true) | ![Godly Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_ingot.png?raw=true) | ![Godly Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_ingot.png?raw=true) |
-|                                                                                                 |  ![Onyx Shaft](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_shaft.png?raw=true) |                                                                                                 |
-|                                                                                                 |  ![Onyx Shaft](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_shaft.png?raw=true) |                                                                                                 |
+|                                                                                                   |  ![Onyx Shaft](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_shaft.png?raw=true)  |                                                                                                   |
+|                                                                                                   |  ![Onyx Shaft](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_shaft.png?raw=true)  |                                                                                                   |
 
 Items:
 

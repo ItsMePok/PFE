@@ -2,7 +2,7 @@
 
 ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x3.png?raw=true)
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: **poke:banished\_star\_x3** <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:banished\_star\_x3**</mark> <a href="#identifier" id="identifier"></a>
 
 ## Usage:
 
@@ -16,7 +16,7 @@
 {% tab title="Trading" %}
 * [Shopkeeper](https://github.com/ItsMePok/PFE/wiki/Shopkeeper) Trade:
   * [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x3.png?raw=true" alt="" data-size="line">Banished Star x3](banished-star-x3.md)-> [Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)
-  * &#x20;[<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x3.png?raw=true" alt="" data-size="line">Banished Star x3](banished-star-x3.md)-> [Raw Shade](https://github.com/ItsMePok/PFE/wiki/Raw-Shade)
+  * [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x3.png?raw=true" alt="" data-size="line">Banished Star x3](banished-star-x3.md)-> [Raw Shade](https://github.com/ItsMePok/PFE/wiki/Raw-Shade)
   * [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x3.png?raw=true" alt="" data-size="line">Banished Star x3](banished-star-x3.md) -> [Raw Onyx](https://github.com/ItsMePok/PFE/wiki/Raw-Onyx)
   * [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x3.png?raw=true" alt="" data-size="line">Banished Star x3](banished-star-x3.md)-> [Raw Holy](https://github.com/ItsMePok/PFE/wiki/Raw-Holy)
   * [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x3.png?raw=true" alt="" data-size="line">Banished Star x3](banished-star-x3.md)-> [Raw Hellish](https://github.com/ItsMePok/PFE/wiki/Raw-Hellish)

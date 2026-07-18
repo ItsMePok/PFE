@@ -2,7 +2,7 @@
 
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_hellish.png?raw=true" alt=""><figcaption></figcaption></figure>
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: poke:raw\_hellish <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:raw\_hellish**</mark> <a href="#identifier" id="identifier"></a>
 
 ## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 64
 
@@ -12,7 +12,7 @@
 {% tab title="Mining" %}
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/BlockBreak.png?raw=true" alt=""><figcaption><p>Obtained by Breaking a Block</p></figcaption></figure>
 
-<table><thead><tr><th>Block</th><th>Drop Amount</th><th data-type="checkbox">Fortune Works?</th></tr></thead><tbody><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/ore/HellishOre.png?raw=true" alt="Hellish Ore" data-size="line"> <a href="../../blocks/ores/stone-ores/hellish-ore.md">Hellish Ore</a></td><td>1</td><td>true</td></tr><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/ore/DeepslateHellishOre.png?raw=true" alt="Deepslate Hellish Ore" data-size="line"> <a href="../../blocks/ores/deepslate-ores/deepslate-hellish-ore.md">Deepslate Hellish Ore</a></td><td>1</td><td>true</td></tr><tr><td><img src="https:/github.com/ItsMePok/PFE/blob/wikiAssets/ore/NetherHellishOre.png" alt="" data-size="line"> <a href="../../blocks/ores/nether-ores/nether-hellish-ore.md">Nether Hellish Ore</a></td><td>1</td><td>true</td></tr></tbody></table>
+<table><thead><tr><th>Block</th><th>Drop Amount</th><th data-type="checkbox">Fortune Works?</th></tr></thead><tbody><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/ore/HellishOre.png?raw=true" alt="Hellish Ore" data-size="line"> <a href="../../blocks/ores/stone-ores/hellish-ore.md">Hellish Ore</a></td><td>1</td><td>true</td></tr><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/ore/DeepslateHellishOre.png?raw=true" alt="Deepslate Hellish Ore" data-size="line"> <a href="../../blocks/ores/deepslate-ores/deepslate-hellish-ore.md">Deepslate Hellish Ore</a></td><td>1</td><td>true</td></tr><tr><td><img src="https://https/github.com/ItsMePok/PFE/blob/wikiAssets/ore/NetherHellishOre.png" alt="" data-size="line"> <a href="../../blocks/ores/nether-ores/nether-hellish-ore.md">Nether Hellish Ore</a></td><td>1</td><td>true</td></tr></tbody></table>
 {% endtab %}
 
 {% tab title="Recipe" %}

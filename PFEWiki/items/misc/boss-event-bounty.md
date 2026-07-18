@@ -1,16 +1,12 @@
 # Boss Event Bounty
 
-
-
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/bounty.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## Identifiers:
 
-Item Identifier: **poke:boss\_event\_bounty**
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:bounty**</mark> <a href="#identifier" id="identifier"></a>
 
-Entity Identifier: **poke:boss\_event**
-
-## Usage:&#x20;
+## Usage:
 
 * Starts a [Boss Event](../../mobs/bosses/boss-events.md) at a random Player
 

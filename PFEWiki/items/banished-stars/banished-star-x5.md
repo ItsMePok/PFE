@@ -2,7 +2,7 @@
 
 ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x5.png?raw=true)
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: **poke:banished\_star\_x5** <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:banished\_star\_x5**</mark> <a href="#identifier" id="identifier"></a>
 
 ## Usage:
 

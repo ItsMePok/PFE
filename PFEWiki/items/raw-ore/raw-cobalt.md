@@ -2,7 +2,7 @@
 
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_cobalt.png?raw=true" alt=""><figcaption></figcaption></figure>
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: poke:raw\_cobalt <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:raw\_cobalt**</mark> <a href="#identifier" id="identifier"></a>
 
 ## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 64
 

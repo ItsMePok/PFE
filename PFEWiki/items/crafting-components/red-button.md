@@ -1,10 +1,8 @@
 # Red Button
 
-
-
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/red_button.png?raw=true" alt=""><figcaption></figcaption></figure>
 
-## Identifier: **poke:red\_button** <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:red\_button**</mark> <a href="#identifier" id="identifier"></a>
 
 ## Usage:
 
@@ -28,15 +26,13 @@
 
 {% tabs %}
 {% tab title="Recipe" %}
-
-
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-|                                                                                             |                                                                                                        |                                                                                             |
-| :-----------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
-| ![Plastic](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) |       ![Plastic](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true)      | ![Plastic](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) |
+|                                                                                           |                                                                                                                 |                                                                                           |
+| :---------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------: |
+| ![Plastic](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) |            ![Plastic](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true)            | ![Plastic](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) |
 | ![Plastic](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) | ![Electric Component](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/electric_component.png?raw=true) | ![Plastic](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) |
-| ![Plastic](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) |       ![Plastic](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true)      | ![Plastic](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) |
+| ![Plastic](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) |            ![Plastic](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true)            | ![Plastic](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) |
 {% endtab %}
 
 {% tab title="Structures" %}
@@ -46,8 +42,8 @@ Found in the [Abandoned Ship](../../sturctures/abandoned-ship.md)
 [abandoned-ship.md](../../sturctures/abandoned-ship.md)
 {% endcontent-ref %}
 
-| Item                                                                                                                                           | Amount | Weight |
-| ---------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------ |
+| Item                                                                                                                                            | Amount | Weight |
+| ----------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------ |
 | [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/red_button.png?raw=true" alt="" data-size="line">Red Button](red-button.md) | 1      | 2      |
 {% endtab %}
 {% endtabs %}

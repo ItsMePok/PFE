@@ -2,7 +2,7 @@
 
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/opaqueAlts/hellish_pickaxe.png?raw=true" alt=""><figcaption></figcaption></figure>
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: **poke:hellish\_pickaxe** <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:hellish\_pickaxe**</mark> <a href="#identifier" id="identifier"></a>
 
 ## Basic info:
 
@@ -36,11 +36,11 @@
 {% tab title="Recipe" %}
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-|                                                                                                   |                                                                                                   |                                                                                                   |
-| :-----------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: |
+|                                                                                                       |                                                                                                       |                                                                                                       |
+| :---------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------: |
 | ![Hellish Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/hellish_ingot.png?raw=true) | ![Hellish Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/hellish_ingot.png?raw=true) | ![Hellish Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/hellish_ingot.png?raw=true) |
-|                                                                                                   |   ![Onyx Shaft](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_shaft.png?raw=true)  |                                                                                                   |
-|                                                                                                   |   ![Onyx Shaft](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_shaft.png?raw=true)  |                                                                                                   |
+|                                                                                                       |    ![Onyx Shaft](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_shaft.png?raw=true)    |                                                                                                       |
+|                                                                                                       |    ![Onyx Shaft](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_shaft.png?raw=true)    |                                                                                                       |
 
 Items:
 

@@ -6,7 +6,7 @@
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cassette_wethands.png?raw=true" alt="Cassette: Wet Hands" data-size="line"> Cassette: Wet Hands is an item that lets you listen to music wherever
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke:**</mark><mark style="color:yellow;">cassette\_wethands</mark> <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:**</mark><mark style="color:yellow;">cassette\_wethands</mark> <a href="#identifier" id="identifier"></a>
 
 ## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/InteractAbility.png?raw=true" alt="Interact Ability." data-size="line"> Interact Ability: <a href="#interact-ability" id="interact-ability"></a>
 
@@ -25,4 +25,3 @@
 <table data-full-width="false"><thead><tr><th align="center">Wants</th><th width="88" align="center">Amount</th><th align="center">Gives</th><th width="85" align="center">Amount</th></tr></thead><tbody><tr><td align="center"><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/gold_token.png?raw=true" alt="Gold Token." data-size="line"> <a href="../../currency/tokens/gold-token.md">Gold Token</a></td><td align="center">2-5</td><td align="center"><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cassette_wethands.png?raw=true" alt="Cassette: Wet Hands" data-size="line"> Cassette: Wet Hands</td><td align="center">1</td></tr></tbody></table>
 {% endtab %}
 {% endtabs %}
-

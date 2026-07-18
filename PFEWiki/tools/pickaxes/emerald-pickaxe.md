@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Emerald Pickaxe
 
 {% hint style="danger" %}

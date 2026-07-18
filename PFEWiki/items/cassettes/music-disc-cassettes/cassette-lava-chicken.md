@@ -10,7 +10,7 @@ description: 'Last updated to match: v1.2.98'
 
 * <img src="https://raw.githubusercontent.com/ItsMePok/PFE/refs/heads/wikiAssets/cassette/cassette_lava_chicken.png" alt="" data-size="line"> Cassette: Lava Chicken is an item that lets you listen to music wherever
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">poke:cassette\_lava\_chicken</mark> <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">poke\_pfe:cassette\_lava\_chicken</mark> <a href="#identifier" id="identifier"></a>
 
 ## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Uncommon</mark> <a href="#rarity" id="rarity"></a>
 

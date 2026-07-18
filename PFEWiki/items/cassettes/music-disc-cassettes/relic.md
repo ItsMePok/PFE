@@ -10,7 +10,7 @@ description: 'Last updated to match: v1.2.97'
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/cassette/cassette_mc_disc_relic.png?raw=true" alt="" data-size="line"> Cassette: Relic is an item that lets you listen to music wherever
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">poke:cassette\_mc\_disc\_relic</mark> <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">poke\_pfe:cassette\_mc\_disc\_relic</mark> <a href="#identifier" id="identifier"></a>
 
 ## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Uncommon</mark> <a href="#rarity" id="rarity"></a>
 
@@ -42,7 +42,7 @@ This recipe is shapeless[^2]
 Items:
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/cassette/empty_cassette.png?raw=true" alt="Empty Cassette." data-size="line"> [Empty Cassette](../empty-cassette.md)
-* &#x20;<img src="https://minecraft.wiki/images/Music_Disc_Relic_JE1_BE1.png?fed2e" alt="" data-size="line"> [Music Disc: Relic](https://minecraft.wiki/w/Music_Disc_Relic)
+* <img src="https://minecraft.wiki/images/Music_Disc_Relic_JE1_BE1.png?fed2e" alt="" data-size="line"> [Music Disc: Relic](https://minecraft.wiki/w/Music_Disc_Relic)
 
 Outputs:
 

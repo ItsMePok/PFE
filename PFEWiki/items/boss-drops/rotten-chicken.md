@@ -2,7 +2,7 @@
 
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/rotten_chicken.png?raw=true" alt=""><figcaption></figcaption></figure>
 
-## Identifier: poke:rotten\_chicken
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:rotten\_chicken**</mark> <a href="#identifier" id="identifier"></a>
 
 ## Usage
 

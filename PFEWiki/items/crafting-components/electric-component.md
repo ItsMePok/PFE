@@ -2,6 +2,8 @@
 
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/electric_component.png?raw=true" alt=""><figcaption></figcaption></figure>
 
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:electric\_component**</mark>
+
 ## Usage:
 
 <details>
@@ -37,28 +39,24 @@
 
 {% tabs %}
 {% tab title="Recipe" %}
-
-
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-|                                                                                                                |                                                                                                                                     |                                                                                                                |
-| :------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------: |
-|      <img src="https://minecraft.wiki/images/Copper_Ingot_JE2_BE1.png?0d410" alt="" data-size="original">      |            ![](https://minecraft.wiki/images/thumb/Redstone\_Dust\_JE2\_BE2.png/150px-Redstone\_Dust\_JE2\_BE2.png?8cf17)           |                      ![](https://minecraft.wiki/images/Copper\_Ingot\_JE2\_BE1.png?0d410)                      |
-| ![](https://minecraft.wiki/images/thumb/Redstone\_Dust\_JE2\_BE2.png/150px-Redstone\_Dust\_JE2\_BE2.png?8cf17) | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="Cobalt Ingot" data-size="original"> | ![](https://minecraft.wiki/images/thumb/Redstone\_Dust\_JE2\_BE2.png/150px-Redstone\_Dust\_JE2\_BE2.png?8cf17) |
-|                      ![](https://minecraft.wiki/images/Copper\_Ingot\_JE2\_BE1.png?0d410)                      |            ![](https://minecraft.wiki/images/thumb/Redstone\_Dust\_JE2\_BE2.png/150px-Redstone\_Dust\_JE2\_BE2.png?8cf17)           |                      ![](https://minecraft.wiki/images/Copper\_Ingot\_JE2\_BE1.png?0d410)                      |
+|                                                                                                          |                                                                                                                                        |                                                                                                          |
+| :------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------: |
+|   <img src="https://minecraft.wiki/images/Copper_Ingot_JE2_BE1.png?0d410" alt="" data-size="original">   |                ![](https://minecraft.wiki/images/thumb/Redstone_Dust_JE2_BE2.png/150px-Redstone_Dust_JE2_BE2.png?8cf17)                |                     ![](https://minecraft.wiki/images/Copper_Ingot_JE2_BE1.png?0d410)                    |
+| ![](https://minecraft.wiki/images/thumb/Redstone_Dust_JE2_BE2.png/150px-Redstone_Dust_JE2_BE2.png?8cf17) | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="Cobalt Ingot" data-size="original"> | ![](https://minecraft.wiki/images/thumb/Redstone_Dust_JE2_BE2.png/150px-Redstone_Dust_JE2_BE2.png?8cf17) |
+|                     ![](https://minecraft.wiki/images/Copper_Ingot_JE2_BE1.png?0d410)                    |                ![](https://minecraft.wiki/images/thumb/Redstone_Dust_JE2_BE2.png/150px-Redstone_Dust_JE2_BE2.png?8cf17)                |                     ![](https://minecraft.wiki/images/Copper_Ingot_JE2_BE1.png?0d410)                    |
 {% endtab %}
 
 {% tab title="Structures" %}
-
-
 Found in the [Abandoned Ship](https://pfewiki.gitbook.io/home/sturctures/abandoned-ship)
 
 {% content-ref url="../../sturctures/abandoned-ship.md" %}
 [abandoned-ship.md](../../sturctures/abandoned-ship.md)
 {% endcontent-ref %}
 
-| Item                                                                                                                                                                                                       | Amount | Weight |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | :----: |
+| Item                                                                                                                                                                                                                | Amount | Weight |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | :----: |
 | [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/electric_component.png?raw=true" alt="Electric Component" data-size="line"> ](electric-component.md)[Electric Component](electric-component.md) | 1      |    5   |
 {% endtab %}
 {% endtabs %}

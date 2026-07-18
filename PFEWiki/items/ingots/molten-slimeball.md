@@ -2,9 +2,7 @@
 
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/molten_slimeball.png?raw=true" alt=""><figcaption></figcaption></figure>
 
-
-
-## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: poke:molten\_slimeball
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:molten\_slimeball**</mark> <a href="#identifier" id="identifier"></a>
 
 ## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 64
 
@@ -14,11 +12,11 @@
 {% tab title="Recipe" %}
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-|                                                                                                   |                                                                                                   |                                                                                                   |
-| :-----------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: |
-|            ![Lava Bucket](https://minecraft.wiki/images/Lava_Bucket_JE2_BE2.png?55ee0)            | ![Demonic Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true) |            ![Lava Bucket](https://minecraft.wiki/images/Lava_Bucket_JE2_BE2.png?55ee0)            |
-| ![Demonic Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true) |            ![Magma Cream](https://minecraft.wiki/images/Magma_Cream_JE3_BE2.png?7a317)            | ![Demonic Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true) |
-|            ![Lava Bucket](https://minecraft.wiki/images/Lava_Bucket_JE2_BE2.png?55ee0)            | ![Demonic Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true) |            ![Lava Bucket](https://minecraft.wiki/images/Lava_Bucket_JE2_BE2.png?55ee0)            |
+|                                                                                                       |                                                                                                       |                                                                                                       |
+| :---------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------: |
+|              ![Lava Bucket](https://minecraft.wiki/images/Lava_Bucket_JE2_BE2.png?55ee0)              | ![Demonic Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true) |              ![Lava Bucket](https://minecraft.wiki/images/Lava_Bucket_JE2_BE2.png?55ee0)              |
+| ![Demonic Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true) |              ![Magma Cream](https://minecraft.wiki/images/Magma_Cream_JE3_BE2.png?7a317)              | ![Demonic Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true) |
+|              ![Lava Bucket](https://minecraft.wiki/images/Lava_Bucket_JE2_BE2.png?55ee0)              | ![Demonic Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true) |              ![Lava Bucket](https://minecraft.wiki/images/Lava_Bucket_JE2_BE2.png?55ee0)              |
 
 Items:
 
@@ -28,12 +26,10 @@ Items:
 
 Outputs:
 
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/molten_slimeball.png?raw=true" alt="Molten Slimeball" data-size="line"> Molten Slimeball&#x20;
+* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/molten_slimeball.png?raw=true" alt="Molten Slimeball" data-size="line"> Molten Slimeball
 {% endtab %}
 
 {% tab title="Recipe 2" %}
-
-
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
 |     |     |     |
@@ -48,6 +44,6 @@ Items:
 
 Outputs:
 
-* 9x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/molten_slimeball.png?raw=true" alt="Molten Slimeball" data-size="line"> Molten Slimeball&#x20;
+* 9x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/molten_slimeball.png?raw=true" alt="Molten Slimeball" data-size="line"> Molten Slimeball
 {% endtab %}
 {% endtabs %}

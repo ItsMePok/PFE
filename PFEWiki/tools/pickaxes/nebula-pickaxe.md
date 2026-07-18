@@ -2,7 +2,7 @@
 
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/opaqueAlts/nebula_pickaxe.png?raw=true" alt=""><figcaption></figcaption></figure>
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: **poke:nebula\_pickaxe** <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:nebula\_pickaxe**</mark> <a href="#identifier" id="identifier"></a>
 
 ## Basic info:
 
@@ -36,11 +36,11 @@
 {% tab title="Recipe" %}
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-|                                                                                                  |                                                                                                  |                                                                                                  |
-| :----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: |
-| ![Nebula Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_ingot.png?raw=true) |  ![Nebula Core](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_core.png?raw=true) | ![Nebula Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_ingot.png?raw=true) |
-|                                                                                                  | ![Nebula Stick](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_stick.png?raw=true) |                                                                                                  |
-|                                                                                                  | ![Nebula Stick](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_stick.png?raw=true) |                                                                                                  |
+|                                                                                                     |                                                                                                     |                                                                                                     |
+| :-------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: |
+| ![Nebula Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_ingot.png?raw=true) |  ![Nebula Core](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_core.png?raw=true)  | ![Nebula Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_ingot.png?raw=true) |
+|                                                                                                     | ![Nebula Stick](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_stick.png?raw=true) |                                                                                                     |
+|                                                                                                     | ![Nebula Stick](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_stick.png?raw=true) |                                                                                                     |
 
 Items:
 

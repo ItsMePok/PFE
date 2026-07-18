@@ -2,7 +2,7 @@
 
 ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/ruin_key.png?raw=true)
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: **poke:ruin\_key** <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:ruin\_key**</mark> <a href="#identifier" id="identifier"></a>
 
 ## Usage:
 
@@ -14,8 +14,8 @@
 {% tab title="First Tab" %}
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/structures-pixel/RuinedTower.png?raw=true" alt=""><figcaption><p>Dropped by the <a href="../../sturctures/ruined-tower.md#trial-spawner">Trial Spawner in the Ruined Tower</a></p></figcaption></figure>
 
-| Item                                                                                                                                    | Amount                                      | Chance |
-| --------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------ |
+| Item                                                                                                                                   | Amount                                      | Chance |
+| -------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------ |
 | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/ruin_key.png?raw=true" alt="Ruined Key." data-size="line"> Ruin Key | [1 per participant](#user-content-fn-1)[^1] | 50%    |
 {% endtab %}
 {% endtabs %}

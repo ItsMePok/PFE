@@ -10,7 +10,7 @@ description: 'Last updated to match: v1.2.95'
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/cassette/cassette_mc_disc_strad.png?raw=true" alt="Cassette: Strad." data-size="line"> Cassette: Strad is an item that lets you listen to music wherever
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke:cassette\_mc\_disc\_strad**</mark> <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:cassette\_mc\_disc\_strad**</mark> <a href="#identifier" id="identifier"></a>
 
 ## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Uncommon</mark> <a href="#rarity" id="rarity"></a>
 

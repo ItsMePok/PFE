@@ -2,11 +2,7 @@
 
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/medic_ingot.png?raw=true" alt=""><figcaption></figcaption></figure>
 
-
-
-
-
-## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: poke:medic\_ingot <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:medic\_ingot**</mark> <a href="#identifier" id="identifier"></a>
 
 ## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 64
 
@@ -16,10 +12,10 @@
 {% tab title="Recipe" %}
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-|                                                                                                  |                                                                                                  |                                                                                                  |
-| :----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: |
-|  ![Godly Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_ingot.png?raw=true) |  ![Godly Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_ingot.png?raw=true) |  ![Godly Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_ingot.png?raw=true) |
-|  ![Godly Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_ingot.png?raw=true) |       ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/molten_slimeball.png?raw=true)       | ![Cobalt Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) |
+|                                                                                                     |                                                                                                     |                                                                                                     |
+| :-------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: |
+|  ![Godly Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_ingot.png?raw=true)  |  ![Godly Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_ingot.png?raw=true)  |  ![Godly Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_ingot.png?raw=true)  |
+|  ![Godly Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_ingot.png?raw=true)  |     ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/molten_slimeball.png?raw=true)     | ![Cobalt Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) |
 | ![Cobalt Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) | ![Cobalt Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) | ![Cobalt Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) |
 
 Items:
@@ -30,12 +26,10 @@ Items:
 {% endtab %}
 
 {% tab title="Recipe 2" %}
-
-
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a>.</p></figcaption></figure>
 
-|                                                                                                 |
-| :---------------------------------------------------------------------------------------------: |
+|                                                                                                      |
+| :--------------------------------------------------------------------------------------------------: |
 | ![Medic Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/MedicBlock.png?raw=true) |
 
 Items:

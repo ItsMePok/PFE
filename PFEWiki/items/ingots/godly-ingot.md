@@ -6,9 +6,7 @@
 This Page is not complete yet. Check back later
 {% endhint %}
 
-
-
-## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: poke:godly\_ingot <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:godly\_ingot**</mark> <a href="#identifier" id="identifier"></a>
 
 ## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 64
 
@@ -16,9 +14,7 @@ This Page is not complete yet. Check back later
 
 {% tabs %}
 {% tab title="Smelting" %}
-
-
-<div><figure><img src="https://minecraft.wiki/images/Lit_Furnace_(S).gif?40e71" alt=""><figcaption><p>      Smelted in a <a href="https://minecraft.wiki/w/Furnace">Furnace</a>     </p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/thumb/Blast_Furnace_(S)_JE1.png/150px-Blast_Furnace_(S)_JE1.png?f1920" alt=""><figcaption><p>Smelted in a <a href="https://minecraft.wiki/w/Blast_Furnace">Blast Furnace</a></p></figcaption></figure></div>
+<div><figure><img src="https://minecraft.wiki/images/Lit_Furnace_(S).gif?40e71" alt=""><figcaption><p>Smelted in a <a href="https://minecraft.wiki/w/Furnace">Furnace</a></p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/thumb/Blast_Furnace_(S)_JE1.png/150px-Blast_Furnace_(S)_JE1.png?f1920" alt=""><figcaption><p>Smelted in a <a href="https://minecraft.wiki/w/Blast_Furnace">Blast Furnace</a></p></figcaption></figure></div>
 
 <table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td></td><td></td><td>1</td></tr></tbody></table>
 {% endtab %}
@@ -26,11 +22,11 @@ This Page is not complete yet. Check back later
 {% tab title="Recipe" %}
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-|     |                                                                                                                          |     |
-| :-: | :----------------------------------------------------------------------------------------------------------------------: | :-: |
-|     |                                                                                                                          |     |
-|     | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/GodlyBlock.png?raw=true" alt="" data-size="original">  |     |
-|     |                                                                                                                          |     |
+|     |                                                                                                                              |     |
+| :-: | :--------------------------------------------------------------------------------------------------------------------------: | :-: |
+|     |                                                                                                                              |     |
+|     | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/GodlyBlock.png?raw=true" alt="" data-size="original"> |     |
+|     |                                                                                                                              |     |
 
 Items:
 
@@ -38,12 +34,10 @@ Items:
 {% endtab %}
 
 {% tab title="Recipe 2" %}
-
-
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-|                                                                                                  |                                                                                                  |                                                                                                  |
-| :----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: |
+|                                                                                                     |                                                                                                     |                                                                                                     |
+| :-------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: |
 | ![Godly Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_nugget.png?raw=true) | ![Godly Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_nugget.png?raw=true) | ![Godly Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_nugget.png?raw=true) |
 | ![Godly Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_nugget.png?raw=true) | ![Godly Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_nugget.png?raw=true) | ![Godly Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_nugget.png?raw=true) |
 | ![Godly Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_nugget.png?raw=true) | ![Godly Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_nugget.png?raw=true) | ![Godly Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_nugget.png?raw=true) |
