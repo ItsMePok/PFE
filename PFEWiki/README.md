@@ -74,8 +74,6 @@ I highly recommend avoiding those sites as they can contain malicious things
 
 {% embed url="https://discord.gg/PbkBYcExmN" %}
 
-_you can also  me on discord itsmepok_
-
 ***
 
 ### YouTube
