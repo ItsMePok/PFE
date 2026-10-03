@@ -31,10 +31,8 @@
 		},
 		"components": {
 			"minecraft:physics": {},
-			"minecraft:pushable": {
-				"is_pushable": true,
-				"is_pushable_by_piston": true
-			},
+			"minecraft:pushable_by_block": {},
+			"minecraft:pushable_by_entity": {},
 			"minecraft:knockback_resistance": {
 				"value": 1,
 				"max": 1

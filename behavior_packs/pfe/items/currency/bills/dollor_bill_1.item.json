@@ -2,14 +2,14 @@
 	"format_version": "1.26.30",
 	"minecraft:item": {
 		"description": {
-			"identifier": "poke_pfe:dollor_bill_1",
+			"identifier": "poke_pfe:dollar_bill_1",
 			"menu_category": {
 				"category": "items"
 			}
 		},
 		"components": {
 			"minecraft:display_name": {
-				"value": "%poke_pfe.dollor_bill_1\n%poke_pfe.tag"
+				"value": "%poke_pfe.dollar_bill_1\n%poke_pfe.tag"
 			},
 			"poke_pfe:icon_path": "textures/poke/pfe/dollar_bill_1",
 			"minecraft:rarity": "common",

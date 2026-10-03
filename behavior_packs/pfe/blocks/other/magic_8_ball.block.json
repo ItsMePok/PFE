@@ -69,7 +69,7 @@
 				"*": {
 					"texture": "poke_pfe_magic_8_ball",
 					"render_method": "opaque",
-					"ambient_occlusion": false
+					"ambient_occlusion": 0.0
 				}
 			},
 			"minecraft:tags": [

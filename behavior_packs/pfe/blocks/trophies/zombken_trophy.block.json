@@ -74,7 +74,7 @@
 				"*": {
 					"texture": "poke_pfe_zombken_trophy",
 					"render_method": "blend_to_opaque",
-					"ambient_occlusion": false,
+					"ambient_occlusion": 0.0,
 					"face_dimming": true
 				}
 			},

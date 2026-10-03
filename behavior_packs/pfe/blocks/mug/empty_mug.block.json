@@ -70,7 +70,7 @@
 				"*": {
 					"texture": "poke_pfe_empty_mug",
 					"render_method": "alpha_test",
-					"ambient_occlusion": false
+					"ambient_occlusion": 0.0
 				}
 			},
 			"minecraft:light_dampening": 0,

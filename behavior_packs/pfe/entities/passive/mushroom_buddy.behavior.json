@@ -116,7 +116,7 @@
 				"minecraft:behavior.pet_sleep_with_owner": {
 					"priority": 2,
 					"speed_multiplier": 1.2,
-					"search_radius": 10,
+					"search_range": 10,
 					"search_height": 10,
 					"goal_radius": 1
 				}
@@ -313,10 +313,8 @@
 				"priority": 9
 			},
 			"minecraft:physics": {},
-			"minecraft:pushable": {
-				"is_pushable": true,
-				"is_pushable_by_piston": true
-			}
+			"minecraft:pushable_by_block": {},
+			"minecraft:pushable_by_entity": {}
 		},
 		"events": {
 			"minecraft:entity_spawned": {

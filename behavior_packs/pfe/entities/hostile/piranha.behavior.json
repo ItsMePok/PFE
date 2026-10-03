@@ -73,10 +73,8 @@
 			"minecraft:physics": {
 				"has_gravity": false
 			},
-			"minecraft:pushable": {
-				"is_pushable": true,
-				"is_pushable_by_piston": true
-			},
+			"minecraft:pushable_by_block": {},
+			"minecraft:pushable_by_entity": {},
 			"minecraft:movement.sway": {
 				"sway_amplitude": 0
 			},

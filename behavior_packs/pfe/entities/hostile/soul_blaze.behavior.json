@@ -136,10 +136,8 @@
 				]
 			},
 			"minecraft:physics": {},
-			"minecraft:pushable": {
-				"is_pushable": true,
-				"is_pushable_by_piston": true
-			},
+			"minecraft:pushable_by_block": {},
+			"minecraft:pushable_by_entity": {},
 			"minecraft:on_hurt": {
 				"event": "minecraft:on_hurt_event",
 				"target": "self"

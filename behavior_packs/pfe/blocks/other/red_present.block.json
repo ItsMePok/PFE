@@ -71,7 +71,7 @@
 				"*": {
 					"texture": "poke_pfe_present",
 					"render_method": "alpha_test",
-					"ambient_occlusion": false
+					"ambient_occlusion": 0.0
 				}
 			},
 			"minecraft:loot": "loot_tables/poke/pfe/present.loot.json"

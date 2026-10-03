@@ -74,7 +74,7 @@
 						"texture": "poke_pfe_charred_poppy",
 						"render_method": "alpha_test",
 						"face_dimming": false,
-						"ambient_occlusion": false
+						"ambient_occlusion": 0.0
 					}
 				}
 			},
@@ -84,12 +84,13 @@
 					"texture": "poke_pfe_charred_poppy",
 					"render_method": "alpha_test",
 					"face_dimming": false,
-					"ambient_occlusion": false
+					"ambient_occlusion": 0.0
 				}
 			},
 			"minecraft:placement_filter": {
 				"conditions": [
 					{
+						//"block_filter": [{"tags": "minecraft:supports_vegetation"}],
 						"allowed_faces": [
 							"up"
 						]

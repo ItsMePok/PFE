@@ -9,6 +9,9 @@
 		},
 		"components": {
 			"minecraft:display_name": "%poke_pfe.limestone\n%poke_pfe.tag",
+			/*"minecraft:instrument_sound": {
+				"up": "note.bd"
+			},*/
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "poke_pfe_limestone",
@@ -36,7 +39,6 @@
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 30
 			},
-			
 			"minecraft:tags": [
 				"pfe",
 				"minecraft:is_pickaxe_item_destructible",

@@ -20,13 +20,13 @@
 				"geometry": {
 					"identifier": "geometry.poke_pfe.dye_unmixer",
 					"bone_visibility": {
-						"screen": false
+						"screen": "false"
 					}
 				},
 				"material_instances": {
 					"*": {
 						"texture": "poke_pfe_dye_unmixer",
-						"render_method": "alpha_test"
+						"render_method": "alpha_test_to_opaque"
 					}
 				}
 			},

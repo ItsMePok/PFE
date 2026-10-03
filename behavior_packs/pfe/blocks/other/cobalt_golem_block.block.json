@@ -30,7 +30,7 @@
       "minecraft:tags": [
         "pfe",
         "minecraft:is_pickaxe_item_destructible"
-      ]
+      ],
       "minecraft:map_color": "#f1da09",
       "poke_pfe:cc_block_interact": {}
     }

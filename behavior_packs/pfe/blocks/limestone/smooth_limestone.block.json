@@ -10,6 +10,9 @@
 		},
 		"components": {
 			"minecraft:display_name": "%poke_pfe.smooth_limestone\n%poke_pfe.tag",
+			/*"minecraft:instrument_sound": {
+				"up": "note.bd"
+			},*/
 			"minecraft:redstone_conductivity": {
 				"redstone_conductor": true,
 				"allows_wire_to_step_down": true
@@ -40,7 +43,6 @@
 					"render_method": "opaque"
 				}
 			},
-			
 			"minecraft:tags": [
 				"pfe",
 				"minecraft:is_pickaxe_item_destructible"

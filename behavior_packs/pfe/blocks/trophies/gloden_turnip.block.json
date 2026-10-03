@@ -65,7 +65,7 @@
 				"*": {
 					"texture": "poke_pfe_golden_turnip_trophy",
 					"render_method": "opaque",
-					"ambient_occlusion": false,
+					"ambient_occlusion": 0.0,
 					"face_dimming": true
 				}
 			},
