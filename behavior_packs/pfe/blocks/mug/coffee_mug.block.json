@@ -66,14 +66,16 @@
 				"*": {
 					"texture": "poke_pfe_coffee_mug",
 					"render_method": "alpha_test",
-					"ambient_occlusion": false
+					"ambient_occlusion": 0
 				}
 			},
 			"minecraft:light_emission": 1,
 			"minecraft:light_dampening": 0,
-			"tag:pfe": {},
-			"tag:stone_pick_diggable": {},
-			"tag:minecraft:is_pickaxe_item_destructible": {},
+			"minecraft:tags": [
+				"pfe",
+				"stone_pick_diggable",
+				"minecraft:is_pickaxe_item_destructible"
+			],
 			"minecraft:map_color": "#8e837b"
 		},
 		"permutations": [

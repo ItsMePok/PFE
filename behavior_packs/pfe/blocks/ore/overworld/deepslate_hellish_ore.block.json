@@ -28,11 +28,13 @@
 				"explosion_resistance": 22.5
 			},
 			"minecraft:map_color": "#c91f1f",
-			"tag:pfe": {},
-			"tag:metal": {},
-			"tag:minecraft:metal": {},
-			"tag:stone_pick_diggable": {},
-			"tag:minecraft:is_pickaxe_item_destructible": {},
+			"minecraft:tags": [
+				"pfe",
+				"metal",
+				"minecraft:metal",
+				"stone_pick_diggable",
+				"minecraft:is_pickaxe_item_destructible"
+			],
 			"minecraft:geometry": {
 				"identifier": "minecraft:geometry.full_block"
 			},

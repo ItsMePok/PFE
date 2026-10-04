@@ -37,12 +37,14 @@
 				"culling": "poke_pfe:block.culling",
 				"identifier": "geometry.poke_pfe.block"
 			},
-			"tag:pfe": {},
-			"tag:metal": {},
-			"tag:minecraft:metal": {},
-			"tag:stone_pick_diggable": {},
-			"tag:minecraft:is_pickaxe_item_destructible": {},
-			"tag:poke_pfe:elevator": {},
+			"minecraft:tags": [
+				"pfe",
+				"metal",
+				"minecraft:metal",
+				"stone_pick_diggable",
+				"minecraft:is_pickaxe_item_destructible",
+				"poke_pfe:elevator"
+			],
 			"minecraft:map_color": "#202025",
 			"poke_pfe:omnivator": {}
 		}

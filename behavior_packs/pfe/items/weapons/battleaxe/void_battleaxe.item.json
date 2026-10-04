@@ -83,7 +83,6 @@
         "category": "poke_pfe:axe_use",
         "duration": 2
       },
-      "tag:minecraft:is_sword": {},
       "minecraft:tags": {
         "tags": [
           "minecraft:netherite_tier",

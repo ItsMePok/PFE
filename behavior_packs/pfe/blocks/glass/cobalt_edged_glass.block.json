@@ -25,11 +25,13 @@
 					"render_method": "blend"
 				}
 			},
-			"tag:pfe": {},
-			"tag:glass": {},
-			"tag:minecraft:glass": {},
-			"tag:stone_pick_diggable": {},
-			"tag:minecraft:is_pickaxe_item_destructible": {},
+			"minecraft:tags": [
+				"pfe",
+				"glass",
+				"minecraft:glass",
+				"stone_pick_diggable",
+				"minecraft:is_pickaxe_item_destructible"
+			],
 			"minecraft:light_dampening": 0
 		}
 	}

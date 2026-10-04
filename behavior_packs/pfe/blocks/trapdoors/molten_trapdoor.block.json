@@ -81,12 +81,14 @@
 					16
 				]
 			},
-			"tag:pfe": {},
-			"tag:metal": {},
-			"tag:minecraft:metal": {},
-			"tag:stone_pick_diggable": {},
-			"tag:minecraft:is_pickaxe_item_destructible": {},
-			"tag:one_way_collidable": {},
+			"minecraft:tags": [
+				"pfe",
+				"metal",
+				"minecraft:metal",
+				"stone_pick_diggable",
+				"minecraft:is_pickaxe_item_destructible",
+				"one_way_collidable"
+			],
 			"poke_pfe:trapdoor_event": {}
 		},
 		"permutations": [
@@ -106,7 +108,9 @@
 							0
 						]
 					},
-					"tag:pfe_trapdoor_closed": {}
+					"minecraft:tags": [
+						"pfe_trapdoor_closed"
+					]
 				}
 			},
 			{
@@ -128,7 +132,9 @@
 							0
 						]
 					},
-					"tag:pfe_trapdoor_open": {}
+					"minecraft:tags": [
+						"pfe_trapdoor_open"
+					]
 				}
 			},
 			{
@@ -147,7 +153,9 @@
 							180
 						]
 					},
-					"tag:pfe_trapdoor_closed": {}
+					"minecraft:tags": [
+						"pfe_trapdoor_closed"
+					]
 				}
 			},
 			{
@@ -169,7 +177,9 @@
 							180
 						]
 					},
-					"tag:pfe_trapdoor_open": {}
+					"minecraft:tags": [
+						"pfe_trapdoor_open"
+					]
 				}
 			},
 			{
@@ -188,7 +198,9 @@
 							0
 						]
 					},
-					"tag:pfe_trapdoor_closed": {}
+					"minecraft:tags": [
+						"pfe_trapdoor_closed"
+					]
 				}
 			},
 			{
@@ -210,7 +222,9 @@
 							0
 						]
 					},
-					"tag:pfe_trapdoor_open": {}
+					"minecraft:tags": [
+						"pfe_trapdoor_open"
+					]
 				}
 			},
 			{
@@ -229,7 +243,9 @@
 							180
 						]
 					},
-					"tag:pfe_trapdoor_closed": {}
+					"minecraft:tags": [
+						"pfe_trapdoor_closed"
+					]
 				}
 			},
 			{
@@ -251,7 +267,9 @@
 							180
 						]
 					},
-					"tag:pfe_trapdoor_open": {}
+					"minecraft:tags": [
+						"pfe_trapdoor_open"
+					]
 				}
 			},
 			{
@@ -270,7 +288,9 @@
 							0
 						]
 					},
-					"tag:pfe_trapdoor_closed": {}
+					"minecraft:tags": [
+						"pfe_trapdoor_closed"
+					]
 				}
 			},
 			{
@@ -292,7 +312,9 @@
 							0
 						]
 					},
-					"tag:pfe_trapdoor_open": {}
+					"minecraft:tags": [
+						"pfe_trapdoor_open"
+					]
 				}
 			},
 			{
@@ -311,7 +333,9 @@
 							180
 						]
 					},
-					"tag:pfe_trapdoor_closed": {}
+					"minecraft:tags": [
+						"pfe_trapdoor_closed"
+					]
 				}
 			},
 			{
@@ -333,7 +357,9 @@
 							180
 						]
 					},
-					"tag:pfe_trapdoor_open": {}
+					"minecraft:tags": [
+						"pfe_trapdoor_open"
+					]
 				}
 			},
 			{
@@ -352,7 +378,9 @@
 							0
 						]
 					},
-					"tag:pfe_trapdoor_closed": {}
+					"minecraft:tags": [
+						"pfe_trapdoor_closed"
+					]
 				}
 			},
 			{
@@ -374,7 +402,9 @@
 							0
 						]
 					},
-					"tag:pfe_trapdoor_open": {}
+					"minecraft:tags": [
+						"pfe_trapdoor_open"
+					]
 				}
 			},
 			{
@@ -393,7 +423,9 @@
 							180
 						]
 					},
-					"tag:pfe_trapdoor_closed": {}
+					"minecraft:tags": [
+						"pfe_trapdoor_closed"
+					]
 				}
 			},
 			{
@@ -415,7 +447,9 @@
 							180
 						]
 					},
-					"tag:pfe_trapdoor_open": {}
+					"minecraft:tags": [
+						"pfe_trapdoor_open"
+					]
 				}
 			}
 		]

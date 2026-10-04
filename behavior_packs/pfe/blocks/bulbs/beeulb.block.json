@@ -37,9 +37,11 @@
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 12
 			},
-			"tag:pfe": {},
-			"tag:stone_pick_diggable": {},
-			"tag:minecraft:is_pickaxe_item_destructible": {},
+			"minecraft:tags": [
+				"pfe",
+				"stone_pick_diggable",
+				"minecraft:is_pickaxe_item_destructible"
+			],
 			"minecraft:light_emission": 15,
 			"minecraft:map_color": "#e28007",
 			"poke_pfe:cycle_color": {}

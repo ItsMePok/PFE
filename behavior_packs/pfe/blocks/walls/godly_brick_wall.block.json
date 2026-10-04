@@ -33,7 +33,7 @@
 					"*": {
 						"texture": "poke_pfe_godly_bricks",
 						"render_method": "opaque",
-						"ambient_occlusion": false,
+						"ambient_occlusion": 0,
 						"face_dimming": false
 					}
 				}
@@ -42,7 +42,7 @@
 				"*": {
 					"texture": "poke_pfe_godly_bricks",
 					"render_method": "opaque",
-					"ambient_occlusion": false,
+					"ambient_occlusion": 0,
 					"face_dimming": false
 				}
 			},
@@ -55,10 +55,10 @@
 					"south": "q.block_state('minecraft:connection_south') == true",
 					"east": "q.block_state('minecraft:connection_east') == true",
 					"west": "q.block_state('minecraft:connection_west') == true",
-					"full_n": false,
+					/*"full_n": false,
 					"full_s": false,
 					"full_e": false,
-					"full_w": false,
+					"full_w": false,*/
 					"middle_ns": "q.block_state('minecraft:connection_north') == true && q.block_state('minecraft:connection_south') == true",
 					"middle_ew": "q.block_state('minecraft:connection_east') == true && q.block_state('minecraft:connection_west') == true",
 					"middle_full_ns": "q.block_state('minecraft:connection_north') == true && q.block_state('minecraft:connection_south') == true",

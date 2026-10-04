@@ -39,7 +39,7 @@
 						"*": {
 							"texture": "poke_pfe_turnip_1",
 							"render_method": "alpha_test_to_opaque",
-							"ambient_occlusion": false,
+							"ambient_occlusion": 0,
 							"face_dimming": false
 						}
 					},
@@ -67,7 +67,7 @@
 						"*": {
 							"texture": "poke_pfe_turnip_1",
 							"render_method": "alpha_test_to_opaque",
-							"ambient_occlusion": false,
+							"ambient_occlusion": 0,
 							"face_dimming": false
 						}
 					},
@@ -95,7 +95,7 @@
 						"*": {
 							"texture": "poke_pfe_turnip_2",
 							"render_method": "alpha_test_to_opaque",
-							"ambient_occlusion": false,
+							"ambient_occlusion": 0,
 							"face_dimming": false
 						}
 					},
@@ -123,7 +123,7 @@
 						"*": {
 							"texture": "poke_pfe_turnip_2",
 							"render_method": "alpha_test_to_opaque",
-							"ambient_occlusion": false,
+							"ambient_occlusion": 0,
 							"face_dimming": false
 						}
 					},
@@ -151,7 +151,7 @@
 						"*": {
 							"texture": "poke_pfe_turnip_2",
 							"render_method": "alpha_test_to_opaque",
-							"ambient_occlusion": false,
+							"ambient_occlusion": 0,
 							"face_dimming": false
 						}
 					},
@@ -179,7 +179,7 @@
 						"*": {
 							"texture": "poke_pfe_turnip_3",
 							"render_method": "alpha_test_to_opaque",
-							"ambient_occlusion": false,
+							"ambient_occlusion": 0,
 							"face_dimming": false
 						}
 					}
@@ -221,9 +221,11 @@
 					}
 				]
 			},
-			"tag:pfe": {},
-			"tag:minecraft:crop": {},
-			"tag:crop": {},
+			"minecraft:tags": [
+				"pfe",
+				"minecraft:crop",
+				"crop"
+			],
 			"minecraft:light_dampening": 0,
 			"minecraft:map_color": "#09a304"
 		}

@@ -10,11 +10,13 @@
 		"components": {
 			"minecraft:display_name": "%poke_pfe.demonic_ore\n%poke_pfe.tag",
 			"minecraft:map_color": "#3e2428",
-			"tag:pfe": {},
-			"tag:metal": {},
-			"tag:minecraft:metal": {},
-			"tag:stone_pick_diggable": {},
-			"tag:minecraft:is_pickaxe_item_destructible": {},
+			"minecraft:tags": [
+				"pfe",
+				"metal",
+				"minecraft:metal",
+				"stone_pick_diggable",
+				"minecraft:is_pickaxe_item_destructible"
+			],
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 15,
 				"item_specific_speeds": [

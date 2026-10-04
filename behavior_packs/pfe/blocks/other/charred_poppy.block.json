@@ -74,7 +74,7 @@
 						"texture": "poke_pfe_charred_poppy",
 						"render_method": "alpha_test",
 						"face_dimming": false,
-						"ambient_occlusion": false
+						"ambient_occlusion": 0
 					}
 				}
 			},
@@ -84,7 +84,7 @@
 					"texture": "poke_pfe_charred_poppy",
 					"render_method": "alpha_test",
 					"face_dimming": false,
-					"ambient_occlusion": false
+					"ambient_occlusion": 0
 				}
 			},
 			"minecraft:placement_filter": {
@@ -96,10 +96,12 @@
 					}
 				]
 			},
-			"tag:pfe": {},
-			"tag:crop": {},
-			"tag:plant": {},
-			"tag:minecraft:crop": {},
+			"minecraft:tags": [
+				"pfe",
+				"crop",
+				"plant",
+				"minecraft:crop"
+			],
 			"minecraft:light_dampening": 0,
 			"minecraft:map_color": "#393730",
 			"minecraft:loot": "loot_tables/poke/pfe/charred_poppy.loot.json"

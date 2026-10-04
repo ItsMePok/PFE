@@ -74,16 +74,18 @@
 				"*": {
 					"texture": "poke_pfe_knightling_trophy",
 					"render_method": "alpha_test_to_opaque",
-					"ambient_occlusion": false,
+					"ambient_occlusion": 0,
 					"face_dimming": true
 				}
 			},
 			"minecraft:light_emission": 3,
 			"minecraft:light_dampening": 0,
 			"minecraft:map_color": "#7b7b7b",
-			"tag:pfe": {},
-			"tag:minecraft:stone_tier_destructible": {},
-			"tag:minecraft:is_pickaxe_item_destructible": {},
+			"minecraft:tags": [
+				"pfe",
+				"minecraft:stone_tier_destructible",
+				"minecraft:is_pickaxe_item_destructible"
+			],
 			"poke_pfe:cc_block_interact": {}
 		},
 		"permutations": [

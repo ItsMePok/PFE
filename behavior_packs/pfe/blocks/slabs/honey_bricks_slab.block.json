@@ -191,9 +191,11 @@
 				"texture": "poke_pfe_honey_bricks"
 			},
 			"minecraft:map_color": "#d87800",
-			"tag:pfe": {},
-			"tag:stone_pick_diggable": {},
-			"tag:minecraft:is_pickaxe_item_destructible": {}
+			"minecraft:tags": [
+				"pfe",
+				"stone_pick_diggable",
+				"minecraft:is_pickaxe_item_destructible"
+			]
 		}
 	}
 }

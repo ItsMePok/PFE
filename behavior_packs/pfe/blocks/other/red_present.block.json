@@ -61,17 +61,19 @@
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 30
 			},
-			"tag:pfe": {},
-			"tag:axe": {},
-			"tag:wood": {},
-			"tag:minecraft:wood": {},
+			"minecraft:tags": [
+				"pfe",
+				"axe",
+				"wood",
+				"minecraft:wood"
+			],
 			"minecraft:geometry": "geometry.poke_pfe.present",
 			"minecraft:map_color": "#9b2626",
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "poke_pfe_present",
 					"render_method": "alpha_test",
-					"ambient_occlusion": false
+					"ambient_occlusion": 0
 				}
 			},
 			"minecraft:loot": "loot_tables/poke/pfe/present.loot.json"

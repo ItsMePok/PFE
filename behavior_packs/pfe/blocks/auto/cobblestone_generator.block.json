@@ -33,9 +33,11 @@
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 30
 			},
-			"tag:minecraft:is_pickaxe_item_destructible": {},
-			"tag:minecraft:is_axe_item_destructible": {},
-			"tag:pfe": {},
+			"minecraft:tags": [
+				"pfe",
+				"minecraft:is_pickaxe_item_destructible",
+				"minecraft:is_axe_item_destructible"
+			],
 			"minecraft:redstone_conductivity": {
 				"redstone_conductor": true,
 				"allows_wire_to_step_down": true

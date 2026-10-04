@@ -34,11 +34,13 @@
 					}
 				]
 			},
-			"tag:pfe": {},
-			"tag:stone": {},
-			"tag:minecraft:stone": {},
-			"tag:stone_pick_diggable": {},
-			"tag:minecraft:is_pickaxe_item_destructible": {},
+			"minecraft:tags": [
+				"pfe",
+				"stone",
+				"minecraft:stone",
+				"stone_pick_diggable",
+				"minecraft:is_pickaxe_item_destructible"
+			],
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 30
 			},

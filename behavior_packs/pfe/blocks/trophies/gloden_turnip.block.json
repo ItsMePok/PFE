@@ -65,7 +65,7 @@
 				"*": {
 					"texture": "poke_pfe_golden_turnip_trophy",
 					"render_method": "opaque",
-					"ambient_occlusion": false,
+					"ambient_occlusion": 0,
 					"face_dimming": true
 				}
 			},
@@ -80,14 +80,16 @@
 			},
 			"minecraft:light_emission": 4,
 			"minecraft:light_dampening": 0,
-			"tag:pfe": {},
-			"tag:minecraft:crop": {},
-			"tag:crop": {},
-			"tag:minecraft:wood": {},
-			"tag:wood": {},
-			"tag:hoe": {},
-			"tag:stone_pick_diggable": {},
-			"tag:minecraft:is_pickaxe_item_destructible": {},
+			"minecraft:tags": [
+				"pfe",
+				"minecraft:crop",
+				"crop",
+				"minecraft:wood",
+				"wood",
+				"hoe",
+				"stone_pick_diggable",
+				"minecraft:is_pickaxe_item_destructible"
+			],
 			"minecraft:map_color": "#d6ca1e"
 		},
 		"permutations": [

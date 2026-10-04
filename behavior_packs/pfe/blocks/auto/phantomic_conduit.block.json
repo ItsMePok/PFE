@@ -53,8 +53,10 @@
 					100
 				]
 			},
-			"tag:pfe": {},
-			"tag:minecraft:is_pickaxe_item_destructible": {},
+			"minecraft:tags": [
+				"pfe",
+				"minecraft:is_pickaxe_item_destructible"
+			],
 			"minecraft:map_color": "#8dd4d1"
 		}
 	}

@@ -37,8 +37,10 @@
 				},
 				"south": "north"
 			},
-			"tag:pfe": {},
-			"tag:minecraft:is_axe_item_destructible": {},
+			"minecraft:tags": [
+				"pfe",
+				"minecraft:is_axe_item_destructible"
+			],
 			"minecraft:map_color": "#cc7400",
 			"minecraft:crafting_table": {
 				"crafting_tags": [

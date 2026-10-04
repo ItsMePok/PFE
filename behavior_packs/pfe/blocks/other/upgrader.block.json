@@ -690,8 +690,6 @@
           }
         ]
       },
-      "tag:minecraft:is_pickaxe_item_destructible": {},
-      "tag:minecraft:is_axe_item_destructible": {},
       "minecraft:redstone_conductivity": {
         "allows_wire_to_step_down": false,
         "redstone_conductor": false
@@ -716,6 +714,11 @@
       "minecraft:geometry": {
         "identifier": "geometry.poke_pfe.upgrader"
       },
+      "minecraft:tags": [
+        "pfe",
+        "minecraft:is_pickaxe_item_destructible",
+        "minecraft:is_axe_item_destructible"
+      ],
       "minecraft:collision_box": {
         "origin": [
           -8,
