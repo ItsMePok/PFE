@@ -1,12 +1,12 @@
 {
-  "format_version": "1.26.30",
+  "format_version": "1.26.50",
   "minecraft:entity": {
     "description": {
       "identifier": "poke_pfe:blaze_ring_proj",
       "is_spawnable": false,
       "is_summonable": true,
-      "is_experimental": false,
-      "runtime_identifier": "minecraft:fireball"
+      "is_experimental": false
+      //,"runtime_identifier": "minecraft:fireball"
     },
     "component_groups": {
       "minecraft:exploding": {
@@ -28,9 +28,11 @@
       "minecraft:projectile": {
         "on_hit": {
           "impact_damage": {
-            "damage": 6,
-            "knockback": false,
-            "semi_random_diff_damage": false
+            "damage": {
+              "min": 3,
+              "max": 6
+            },
+            "knockback": false
           },
           "definition_event": {
             "affect_projectile": true,
@@ -40,14 +42,14 @@
             }
           }
         },
-        //"particle": "poke_pfe:blaze_ring_proj",
+        "particle": "flame",
         "power": 1.6,
         "gravity": 0.0001,
         "inertia": 1,
         "liquid_inertia": 1,
         "uncertainty_base": 0,
         "uncertainty_multiplier": 0,
-        "anchor": 1,
+        "anchor": "eye_height",
         "offset": [
           0,
           0.75,

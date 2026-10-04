@@ -1,5 +1,5 @@
 {
-	"format_version": "1.26.30",
+	"format_version": "1.26.50",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke_pfe:shadowstone_slab",
@@ -194,8 +194,11 @@
 			"minecraft:friction": 0.42,
 			"minecraft:tags": [
 				"pfe",
+				"stone",
+				"minecraft:stone",
+				"stone_pick_diggable",
 				"minecraft:is_pickaxe_item_destructible"
-			],
+			]
 		}
 	}
 }

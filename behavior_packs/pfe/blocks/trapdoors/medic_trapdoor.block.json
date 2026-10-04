@@ -1,5 +1,5 @@
 {
-	"format_version": "1.26.30",
+	"format_version": "1.26.50",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke_pfe:medic_trapdoor",
@@ -83,6 +83,9 @@
 			},
 			"minecraft:tags": [
 				"pfe",
+				"metal",
+				"minecraft:metal",
+				"stone_pick_diggable",
 				"minecraft:is_pickaxe_item_destructible",
 				"one_way_collidable"
 			],

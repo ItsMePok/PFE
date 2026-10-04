@@ -1,5 +1,5 @@
 {
-	"format_version": "1.26.30",
+	"format_version": "1.26.50",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke_pfe:limestone",
@@ -41,8 +41,10 @@
 			},
 			"minecraft:tags": [
 				"pfe",
-				"minecraft:is_pickaxe_item_destructible",
-				"minecraft:stone"
+				"stone",
+				"minecraft:stone",
+				"stone_pick_diggable",
+				"minecraft:is_pickaxe_item_destructible"
 			],
 			"minecraft:map_color": "#e0e0e0",
 			"minecraft:loot": "loot_tables/poke/pfe/limestone.loot.json"

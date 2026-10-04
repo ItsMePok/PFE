@@ -1,5 +1,5 @@
 {
-	"format_version": "1.26.30",
+	"format_version": "1.26.50",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke_pfe:nuke_ring_projectile",
@@ -21,9 +21,9 @@
 				"inertia": 0.99,
 				"shoot_sound": "random.bow",
 				"shoot_target": true,
-				"should_bounce": true,
+				"should_bounce": "if_no_damage_dealt",
 				"power": 10,
-				"anchor": 1,
+				"anchor": "eye_height",
 				"is_dangerous": true,
 				"destroy_on_hurt": true,
 				"uncertainty_multiplier": 0,
@@ -35,7 +35,10 @@
 						"first_spawn_chance": 1
 					},
 					"impact_damage": {
-						"damage": 12
+						"damage": {
+							"min": 6,
+							"max": 12
+						}
 					},
 					"remove_on_hit": {}
 				},

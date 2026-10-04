@@ -1,5 +1,5 @@
 {
-	"format_version": "1.26.30",
+	"format_version": "1.26.50",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke_pfe:dummy_block",
@@ -26,7 +26,6 @@
 				"has_collision": true,
 				"has_gravity": false
 			},
-			"minecraft:pushable_by_block": {},
 			"minecraft:projectile": {}
 		},
 		"events": {

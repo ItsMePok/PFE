@@ -1,5 +1,5 @@
 {
-  "format_version": "1.26.30",
+  "format_version": "1.26.50",
   "minecraft:entity": {
     "description": {
       "identifier": "poke_pfe:duck_egg_proj",
@@ -16,13 +16,16 @@
       "minecraft:projectile": {
         "on_hit": {
           "impact_damage": {
-            "damage": 0,
+            "damage": {
+              "min": 0,
+              "max": 0
+            },
             "knockback": true,
             "destroy_on_hit": true
           },
           "spawn_chance": {
-            "first_spawn_chance": 8,
-            "second_spawn_chance": 32,
+            "first_spawn_chance": 0.125,
+            "second_spawn_chance": 0.3125,
             "first_spawn_count": 1,
             "second_spawn_count": 4,
             "spawn_definition": "poke_pfe:duck",
@@ -42,7 +45,7 @@
         "power": 1.5,
         "gravity": 0.03,
         "angle_offset": 0.0,
-        "anchor": 1
+        "anchor": "eye_height"
       },
       "minecraft:physics": {},
       "minecraft:pushable_by_block": {},

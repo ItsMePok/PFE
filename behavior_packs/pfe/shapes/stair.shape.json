@@ -1,0 +1,36 @@
+{
+  "format_version": "1.21.110",
+  "minecraft:voxel_shape": {
+    "description": {
+      "identifier": "poke_pfe:stairs"
+    },
+    "shape": {
+      "boxes": [
+        {
+          "min": [
+            0,
+            0,
+            0
+          ],
+          "max": [
+            16,
+            8,
+            16
+          ]
+        },
+        {
+          "min": [
+            0,
+            8,
+            8
+          ],
+          "max": [
+            16,
+            16,
+            16
+          ]
+        }
+      ]
+    }
+  }
+}

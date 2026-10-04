@@ -1,5 +1,5 @@
 { //this entity model, animations & textures was made by O2God for PFE
-	"format_version": "1.26.30",
+	"format_version": "1.26.50",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke_pfe:necromancer",
@@ -46,7 +46,7 @@
 							"min_activation_range": 0,
 							"cast_duration": 2.5,
 							"do_casting": true,
-							"particle_color": "#385b38",
+							"particle_color": "#385b38FF",
 							"sequence": [
 								{
 									"shape": "circle",
@@ -67,7 +67,7 @@
 							"cooldown_time": 6.0,
 							"cast_duration": 2.5,
 							"do_casting": true,
-							"particle_color": "#b7a270",
+							"particle_color": "#b7a270FF",
 							"max_activation_range": 32,
 							"min_activation_range": 0.5,
 							"sequence": [
@@ -90,7 +90,7 @@
 							"cooldown_time": 7.0,
 							"cast_duration": 2.5,
 							"do_casting": true,
-							"particle_color": "#b5b5b5",
+							"particle_color": "#b5b5b5FF",
 							"max_activation_range": 32,
 							"min_activation_range": 0.5,
 							"sequence": [
@@ -113,7 +113,7 @@
 							"cooldown_time": 8.0,
 							"cast_duration": 2.5,
 							"do_casting": true,
-							"particle_color": "#a6c875",
+							"particle_color": "#a6c875FF",
 							"max_activation_range": 40,
 							"min_activation_range": 0.5,
 							"sequence": [
@@ -136,7 +136,7 @@
 							"cooldown_time": 8.0,
 							"cast_duration": 2.5,
 							"do_casting": true,
-							"particle_color": "#5a6c81",
+							"particle_color": "#5a6c81FF",
 							"max_activation_range": 40,
 							"min_activation_range": 0.5,
 							"sequence": [

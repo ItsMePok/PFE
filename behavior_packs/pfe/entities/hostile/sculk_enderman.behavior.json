@@ -1,5 +1,5 @@
 {
-	"format_version": "1.26.30",
+	"format_version": "1.26.50",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke_pfe:sculk_enderman",
@@ -205,7 +205,6 @@
 			"minecraft:behavior.place_block": {
 				"priority": 10,
 				"xz_range": {
-					"min": 1,
 					"max": 1
 				},
 				"y_range": {
@@ -217,7 +216,6 @@
 			"minecraft:behavior.take_block": {
 				"priority": 11,
 				"xz_range": {
-					"min": 2,
 					"max": 2
 				},
 				"y_range": {

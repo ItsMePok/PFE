@@ -1,5 +1,5 @@
 {
-	"format_version": "1.26.30",
+	"format_version": "1.26.50",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke_pfe:necromancer_staff_orb",
@@ -20,7 +20,9 @@
 				"width": 0.25,
 				"height": 0.25
 			},
-			"minecraft:on_death": "poke_pfe:spawn",
+			"minecraft:on_death": {
+				"event": "poke_pfe:spawn"
+			},
 			"minecraft:projectile": {
 				"gravity": 0.005,
 				"crit_particle_on_hurt": true,
@@ -29,9 +31,9 @@
 				"inertia": 0.99,
 				"shoot_sound": "random.bow",
 				"shoot_target": true,
-				"should_bounce": true,
+				"should_bounce": "if_no_damage_dealt",
 				"power": 1.3,
-				"anchor": 1,
+				"anchor": "eye_height",
 				"is_dangerous": true,
 				"destroy_on_hurt": false,
 				"reflect_on_hurt": true,
@@ -41,7 +43,10 @@
 				//"particle": "poke_pfe:necromancer_orb",
 				"on_hit": {
 					"impact_damage": {
-						"damage": 5
+						"damage": {
+							"min": 3,
+							"max": 5
+						}
 					},
 					"definition_event": {
 						"affect_projectile": true,

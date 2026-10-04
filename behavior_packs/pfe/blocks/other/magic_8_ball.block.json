@@ -1,5 +1,5 @@
 {
-	"format_version": "1.26.30",
+	"format_version": "1.26.50",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke_pfe:magic_8_ball",
@@ -69,11 +69,14 @@
 				"*": {
 					"texture": "poke_pfe_magic_8_ball",
 					"render_method": "opaque",
-					"ambient_occlusion": 0.0
+					"ambient_occlusion": 0
 				}
 			},
 			"minecraft:tags": [
 				"pfe",
+				"stone",
+				"minecraft:stone",
+				"stone_pick_diggable",
 				"minecraft:is_pickaxe_item_destructible"
 			],
 			"minecraft:map_color": "#0c0b0c",

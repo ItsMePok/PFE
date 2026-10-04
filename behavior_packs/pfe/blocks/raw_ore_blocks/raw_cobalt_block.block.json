@@ -1,5 +1,5 @@
 {
-  "format_version": "1.26.30",
+  "format_version": "1.26.50",
   "minecraft:block": {
     "description": {
       "identifier": "poke_pfe:raw_cobalt_block",
@@ -28,6 +28,9 @@
       "minecraft:map_color": "#4f4dcc",
       "minecraft:tags": [
         "pfe",
+        "metal",
+        "minecraft:metal",
+        "stone_pick_diggable",
         "minecraft:is_pickaxe_item_destructible"
       ],
       "minecraft:destructible_by_explosion": {

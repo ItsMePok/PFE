@@ -1,5 +1,5 @@
 {
-	"format_version": "1.26.30",
+	"format_version": "1.26.50",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke_pfe:retro_llama",
@@ -309,7 +309,9 @@
 				"minecraft:interact": {
 					"interactions": [
 						{
-							"play_sounds": "armor.equip_generic",
+							"play_sounds": [
+								"armor.equip_generic"
+							],
 							"on_interact": {
 								"filters": {
 									"all_of": [
@@ -349,7 +351,9 @@
 				},
 				"minecraft:behavior.ranged_attack": {
 					"priority": 2,
-					"attack_radius": 64,
+					"attack_range": {
+						"max": 64
+					},
 					"charge_shoot_trigger": 2,
 					"charge_charged_trigger": 1
 				}
@@ -365,7 +369,9 @@
 				},
 				"minecraft:behavior.ranged_attack": {
 					"priority": 2,
-					"attack_radius": 64,
+					"attack_range": {
+						"max": 64
+					},
 					"charge_shoot_trigger": 2,
 					"charge_charged_trigger": 1
 				}
@@ -380,7 +386,9 @@
 				},
 				"minecraft:behavior.ranged_attack": {
 					"priority": 2,
-					"attack_radius": 64,
+					"attack_range": {
+						"max": 64
+					},
 					"charge_shoot_trigger": 2,
 					"charge_charged_trigger": 1
 				}

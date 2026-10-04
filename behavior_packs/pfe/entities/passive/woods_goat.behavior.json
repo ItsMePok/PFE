@@ -1,5 +1,5 @@
 {
-	"format_version": "1.26.30",
+	"format_version": "1.26.50",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke_pfe:woods_goat",
@@ -92,14 +92,16 @@
 											"test": "has_equipment",
 											"domain": "hand",
 											"subject": "other",
-											"value": "bucket:0"
+											"value": "minecraft:bucket"
 										}
 									]
 								}
 							},
 							"use_item": true,
-							"transform_to_item": "bucket:1",
-							"play_sounds": "milk_suspiciously",
+							"transform_to_item": "minecraft:milk_bucket",
+							"play_sounds": [
+								"milk_suspiciously"
+							],
 							"interact_text": "action.interact.milk"
 						}
 					]
@@ -127,14 +129,16 @@
 											"test": "has_equipment",
 											"domain": "hand",
 											"subject": "other",
-											"value": "bucket:0"
+											"value": "minecraft:bucket"
 										}
 									]
 								}
 							},
 							"use_item": true,
-							"transform_to_item": "bucket:1",
-							"play_sounds": "milk.screamer",
+							"transform_to_item": "minecraft:milk_bucket",
+							"play_sounds": [
+								"milk.screamer"
+							],
 							"interact_text": "action.interact.milk"
 						}
 					]

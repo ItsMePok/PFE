@@ -1,5 +1,5 @@
 { // This entity's model, animations & textures were made by O2God for PFE
-	"format_version": "1.26.30",
+	"format_version": "1.26.50",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke_pfe:raccoon",
@@ -405,10 +405,10 @@
 			"minecraft:behavior.beg": {
 				"priority": 9,
 				"look_distance": 8,
-				"look_time": [
-					2,
-					4
-				],
+				"look_time": {
+					"min": 2,
+					"max": 4
+				},
 				"items": [
 					"bone",
 					"porkchop",

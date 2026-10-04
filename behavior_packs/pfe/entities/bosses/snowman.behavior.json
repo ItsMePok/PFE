@@ -1,6 +1,6 @@
 {
 	//this entity model, animations & textures was made by O2God for PFE
-	"format_version": "1.26.30",
+	"format_version": "1.26.50",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke_pfe:snowman",
@@ -152,9 +152,15 @@
 			},
 			"minecraft:behavior.ranged_attack": {
 				"priority": 0,
+				"attack_range": {
+					"min": 0,
+					"max": 15
+				},
 				"speed_multiplier": 1.25,
-				"attack_interval": 0.55,
-				"attack_radius": 15,
+				"attack_interval": {
+					"min": 0.35,
+					"max": 1
+				},
 				"burst_shots": 2
 			},
 			"minecraft:shooter": {

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.26.30",
+	"format_version": "1.26.50",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke_pfe:magnet",
@@ -168,8 +168,10 @@
 			},
 			"minecraft:tags": [
 				"pfe",
-				"minecraft:is_pickaxe_item_destructible",
-				"minecraft:is_axe_item_destructible"
+				"metal",
+				"minecraft:metal",
+				"stone_pick_diggable",
+				"minecraft:is_pickaxe_item_destructible"
 			],
 			"minecraft:map_color": "#764f36",
 			"poke_pfe:magnet_block": {}

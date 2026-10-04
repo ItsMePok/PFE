@@ -1,5 +1,5 @@
 {
-  "format_version": "1.26.30",
+  "format_version": "1.26.50",
   "minecraft:entity": {
     "description": {
       "identifier": "poke_pfe:warp_ring_proj",
@@ -20,10 +20,10 @@
       },
       "minecraft:projectile": {
         "on_hit": {
-          "teleport_owner": true,
+          "teleport_owner": {},
           "remove_on_hit": {}
         },
-        "anchor": 1,
+        "anchor": "eye_height",
         "power": 1.5,
         "gravity": 0.025,
         "angle_offset": 0.0,

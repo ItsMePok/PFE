@@ -1,5 +1,5 @@
 {
-	"format_version": "1.26.30",
+	"format_version": "1.26.50",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke_pfe:hellish_arrow",
@@ -24,9 +24,11 @@
 				"is_dangerous": true,
 				"on_hit": {
 					"impact_damage": {
-						"damage": 15,
+						"damage": {
+							"min": 7,
+							"max": 15
+						},
 						"knockback": true,
-						"semi_random_diff_damage": true,
 						"destroy_on_hit": true,
 						"max_critical_damage": 20,
 						"min_critical_damage": 15,
@@ -40,10 +42,15 @@
 						"apply_effect_to_blocking_targets": false
 					},
 					"mob_effect": {
-						"effect": "wither",
-						"duration": 10,
-						"amplifier": 3,
-						"visible": false
+						"effects": [
+							{
+								"effect": "wither",
+								"durationeasy": 10,
+								"durationnormal": 10,
+								"durationhard": 10,
+								"amplifier": 3
+							}
+						]
 					}
 				},
 				"stop_on_hurt": true,
@@ -52,8 +59,8 @@
 				"destroy_on_hurt": true,
 				"uncertainty_base": 1,
 				"uncertainty_multiplier": 0,
-				"anchor": 1,
-				"should_bounce": true,
+				"anchor": "eye_height",
+				"should_bounce": "if_no_damage_dealt",
 				"offset": [
 					0,
 					-0.1,

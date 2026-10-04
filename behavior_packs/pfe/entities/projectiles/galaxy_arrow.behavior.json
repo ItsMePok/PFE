@@ -1,5 +1,5 @@
 {
-	"format_version": "1.26.30",
+	"format_version": "1.26.50",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke_pfe:galaxy_arrow",
@@ -27,13 +27,21 @@
 						"shake_time": 0.5
 					},
 					"mob_effect": {
-						"effect": "wither",
-						"duration": 10,
-						"amplifier": 3,
-						"visible": false
+						"effects": [
+							{
+								"effect": "wither",
+								"durationeasy": 10,
+								"durationnormal": 10,
+								"durationhard": 10,
+								"amplifier": 3
+							}
+						]
 					},
 					"impact_damage": {
-						"damage": 18,
+						"damage": {
+							"min": 9,
+							"max": 18
+						},
 						"destroy_on_hit": true,
 						"knockback": true,
 						"max_critical_damage": 20,
@@ -43,7 +51,7 @@
 				},
 				"uncertainty_multiplier": 0,
 				"uncertainty_base": 1,
-				"anchor": 1,
+				"anchor": "eye_height",
 				"stop_on_hurt": true,
 				"particle": "iconcrack"
 			},

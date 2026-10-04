@@ -1,5 +1,5 @@
 {
-	"format_version": "1.26.30",
+	"format_version": "1.26.50",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke_pfe:pale_ocelot",
@@ -244,7 +244,7 @@
 			},
 			"minecraft:behavior.leap_at_target": {
 				"priority": 3,
-				"target_dist": 0.3
+				"yd": 0.3
 			},
 			"minecraft:behavior.ocelotattack": {
 				"priority": 4,

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.26.30",
+	"format_version": "1.26.50",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke_pfe:smooth_limestone",
@@ -45,6 +45,9 @@
 			},
 			"minecraft:tags": [
 				"pfe",
+				"stone",
+				"minecraft:stone",
+				"stone_pick_diggable",
 				"minecraft:is_pickaxe_item_destructible"
 			],
 			"minecraft:map_color": "#e7e7e7"

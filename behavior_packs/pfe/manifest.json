@@ -3,16 +3,16 @@
 		"name": "v1.3.04 PFE BP",
 		"description": "Wiki: https:pfewiki.gitbook.io/home",
 		"pack_scope": "world",
-		"uuid": "f53723e2-1cef-4697-8a55-39f8fde83457",
+		"uuid": "56292c65-ff75-496c-ab94-1d94f78f5ec5",
 		"version": [
 			1,
 			3,
-			4
+			3
 		],
 		"min_engine_version": [
 			1,
 			26,
-			30
+			50
 		]
 	},
 	"capabilities": [
@@ -32,27 +32,27 @@
 		}
 	],
 	"dependencies": [
-		{ //RP Manifest
-			"uuid": "a31fbc03-7bf0-4125-8e4a-ba96a61af8b6",
+		{
+			"uuid": "c48bf18f-859c-4924-ad7a-5b74048e20b2",
 			"version": [
 				1,
 				3,
-				4
+				3
 			]
 		},
 		{
 			"module_name": "@minecraft/server",
-			"version": "2.5.0"
+			"version": "2.10.0"
 		},
 		{
 			"module_name": "@minecraft/server-ui",
-			"version": "2.1.0"
+			"version": "2.2.0"
 		}
 	],
 	"format_version": 2,
 	"metadata": {
 		"url": "https://github.com/ItsMePok/PFE",
-		"license": "MIT", // RP/LICENSE
+		"license": "MIT",
 		"product_type": "addon",
 		"authors": [
 			"ItsMePok"
@@ -65,7 +65,8 @@
 				"1.5.1"
 			],
 			"blockbench_block_wizard": [
-				"1.2.1"
+				"1.2.1",
+				"1.7.0"
 			],
 			"blockbench_item_wizard": [
 				"1.0.1",

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.26.30",
+	"format_version": "1.26.50",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke_pfe:lava_sponge",
@@ -56,8 +56,8 @@
 			"minecraft:light_emission": 8,
 			"minecraft:tags": [
 				"pfe",
-				"minecraft:is_hoe_item_destructible",
-				"minecraft:sponge"
+				"hoe",
+				"minecraft:is_hoe_item_destructible"
 			],
 			"minecraft:map_color": "#e25f22"
 		}

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.26.30",
+	"format_version": "1.26.50",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke_pfe:present",
@@ -63,7 +63,9 @@
 			},
 			"minecraft:tags": [
 				"pfe",
-				"minecraft:is_axe_item_destructible"
+				"axe",
+				"wood",
+				"minecraft:wood"
 			],
 			"minecraft:geometry": "geometry.poke_pfe.present",
 			"minecraft:map_color": "#9b2626",
@@ -71,7 +73,7 @@
 				"*": {
 					"texture": "poke_pfe_present",
 					"render_method": "alpha_test",
-					"ambient_occlusion": 0.0
+					"ambient_occlusion": 0
 				}
 			},
 			"minecraft:loot": "loot_tables/poke/pfe/present.loot.json"

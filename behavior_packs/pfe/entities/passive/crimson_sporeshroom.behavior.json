@@ -1,5 +1,5 @@
 {
-	"format_version": "1.26.30",
+	"format_version": "1.26.50",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke_pfe:crimson_sporeshroom",
@@ -76,7 +76,9 @@
 								"table": "loot_tables/poke/pfe/sporeshroom_milk_bottle.loot.json"
 							},
 							"use_item": true,
-							"play_sounds": "milk_suspiciously",
+							"play_sounds": [
+								"milk_suspiciously"
+							],
 							"interact_text": "action.interact.moostew"
 						},
 						{
@@ -108,7 +110,9 @@
 								"table": "loot_tables/poke/pfe/crimson_sporeshroom_milk.loot.json"
 							},
 							"use_item": true,
-							"play_sounds": "milk_suspiciously",
+							"play_sounds": [
+								"milk_suspiciously"
+							],
 							"interact_text": "action.interact.moostew"
 						},
 						{
@@ -144,7 +148,9 @@
 								"target": "self"
 							},
 							"use_item": true,
-							"play_sounds": "eat",
+							"play_sounds": [
+								"eat"
+							],
 							"particle_on_start": {
 								"particle_type": "smoke",
 								"particle_y_offset": 0.25,
@@ -185,7 +191,9 @@
 								"target": "self"
 							},
 							"use_item": true,
-							"play_sounds": "eat",
+							"play_sounds": [
+								"eat"
+							],
 							"particle_on_start": {
 								"particle_type": "smoke",
 								"particle_y_offset": 0.25,
@@ -226,7 +234,9 @@
 								"target": "self"
 							},
 							"use_item": true,
-							"play_sounds": "eat",
+							"play_sounds": [
+								"eat"
+							],
 							"particle_on_start": {
 								"particle_type": "smoke",
 								"particle_y_offset": 0.25,
@@ -267,7 +277,9 @@
 								"target": "self"
 							},
 							"use_item": true,
-							"play_sounds": "eat",
+							"play_sounds": [
+								"eat"
+							],
 							"particle_on_start": {
 								"particle_type": "smoke",
 								"particle_y_offset": 0.25,
@@ -308,7 +320,9 @@
 								"target": "self"
 							},
 							"use_item": true,
-							"play_sounds": "eat",
+							"play_sounds": [
+								"eat"
+							],
 							"particle_on_start": {
 								"particle_type": "smoke",
 								"particle_y_offset": 0.25,
@@ -349,7 +363,9 @@
 								"target": "self"
 							},
 							"use_item": true,
-							"play_sounds": "eat",
+							"play_sounds": [
+								"eat"
+							],
 							"particle_on_start": {
 								"particle_type": "smoke",
 								"particle_y_offset": 0.25,
@@ -390,7 +406,9 @@
 								"target": "self"
 							},
 							"use_item": true,
-							"play_sounds": "eat",
+							"play_sounds": [
+								"eat"
+							],
 							"particle_on_start": {
 								"particle_type": "smoke",
 								"particle_y_offset": 0.25,
@@ -431,7 +449,9 @@
 								"target": "self"
 							},
 							"use_item": true,
-							"play_sounds": "eat",
+							"play_sounds": [
+								"eat"
+							],
 							"particle_on_start": {
 								"particle_type": "smoke",
 								"particle_y_offset": 0.25,
@@ -492,7 +512,9 @@
 								"target": "self"
 							},
 							"use_item": true,
-							"play_sounds": "eat",
+							"play_sounds": [
+								"eat"
+							],
 							"particle_on_start": {
 								"particle_type": "smoke",
 								"particle_y_offset": 0.25,
@@ -533,7 +555,9 @@
 								"target": "self"
 							},
 							"use_item": true,
-							"play_sounds": "eat",
+							"play_sounds": [
+								"eat"
+							],
 							"particle_on_start": {
 								"particle_type": "smoke",
 								"particle_y_offset": 0.25,
@@ -569,7 +593,9 @@
 							},
 							"use_item": false,
 							"hurt_item": 1,
-							"play_sounds": "shear",
+							"play_sounds": [
+								"shear"
+							],
 							"spawn_items": {
 								"table": "loot_tables/poke/pfe/crimson_sporeshroom_shear.loot.json"
 							},
@@ -608,7 +634,9 @@
 							},
 							"use_item": false,
 							"hurt_item": 1,
-							"play_sounds": "shear",
+							"play_sounds": [
+								"shear"
+							],
 							"spawn_items": {
 								"table": "loot_tables/entities/brown_mooshroom_shear.json"
 							},
@@ -627,7 +655,7 @@
 											"test": "has_equipment",
 											"subject": "other",
 											"domain": "hand",
-											"value": "bucket:0"
+											"value": "minecraft:bucket"
 										},
 										{
 											"test": "is_family",
@@ -638,8 +666,10 @@
 								}
 							},
 							"use_item": true,
-							"transform_to_item": "bucket:1",
-							"play_sounds": "milk",
+							"transform_to_item": "minecraft:milk_bucket",
+							"play_sounds": [
+								"milk"
+							],
 							"interact_text": "action.interact.milk"
 						}
 					]
@@ -714,7 +744,7 @@
 		"components": {
 			"minecraft:offspring": {
 				"offspring_pairs": {
-					"poke_pfe:warped_sporeshroom": "poke_pfe:warped_sporeshroom"
+					"poke_pfe:crimson_sporeshroom": "poke_pfe:crimson_sporeshroom"
 				},
 				"deny_parents_variant": {
 					"chance": 0.00098,

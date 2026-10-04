@@ -1,5 +1,5 @@
 {
-	"format_version": "1.26.30",
+	"format_version": "1.26.50",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke_pfe:soul_blaze",
@@ -31,11 +31,14 @@
 					"priority": 3,
 					"burst_shots": 3,
 					"burst_interval": 0.3,
-					"charge_charged_trigger": 0,
 					"charge_shoot_trigger": 4,
-					"attack_interval_min": 3,
-					"attack_interval_max": 5,
-					"attack_radius": 16
+					"attack_interval": {
+						"min": 3,
+						"max": 5
+					},
+					"attack_range": {
+						"max": 16
+					}
 				}
 			},
 			"melee_mode": {

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.26.30",
+	"format_version": "1.26.50",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke_pfe:yak",
@@ -66,14 +66,16 @@
 											"test": "has_equipment",
 											"domain": "hand",
 											"subject": "other",
-											"value": "bucket:0"
+											"value": "minecraft:bucket"
 										}
 									]
 								}
 							},
 							"use_item": true,
-							"transform_to_item": "bucket:1",
-							"play_sounds": "milk",
+							"transform_to_item": "minecraft:milk_bucket",
+							"play_sounds": [
+								"milk"
+							],
 							"interact_text": "action.interact.milk"
 						}
 					]

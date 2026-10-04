@@ -1,5 +1,5 @@
 {
-	"format_version": "1.26.30",
+	"format_version": "1.26.50",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke_pfe:scrapper",
@@ -55,7 +55,9 @@
 								"event": "poke_pfe:shear"
 							},
 							"use_item": true,
-							"play_sounds": "shear",
+							"play_sounds": [
+								"shear"
+							],
 							"interact_text": "action.interact.poke_pfetrader"
 						}
 					]
@@ -149,9 +151,6 @@
 					},
 					{
 						"item": "poke_pfe:caged_soul"
-					},
-					{
-						"item": "poke_pfe:carved_melon"
 					},
 					{
 						"item": "poke_pfe:cone_cosmetic"

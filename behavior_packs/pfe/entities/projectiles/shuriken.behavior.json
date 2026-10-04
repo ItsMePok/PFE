@@ -1,5 +1,5 @@
 {
-	"format_version": "1.26.30",
+	"format_version": "1.26.50",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "poke_pfe:shuriken_proj",
@@ -27,24 +27,25 @@
 						"shake_time": 0.1
 					},
 					"impact_damage": {
-						"damage": 3,
+						"damage": {
+							"min": 2,
+							"max": 3
+						},
 						"knockback": true,
-						"semi_random_diff_damage": true,
 						"destroy_on_hit": false,
 						"max_critical_damage": 10,
 						"min_critical_damage": 9,
 						"power_multiplier": 0.97
 					}
 				},
-				"should_bounce": false,
+				"should_bounce": "no",
 				"uncertainty_multiplier": 1.1,
 				"uncertainty_base": 1,
-				"anchor": 1,
+				"anchor": "eye_height",
 				"stop_on_hurt": true,
 				"particle": "iconcrack"
 			},
 			"minecraft:physics": {},
-			"minecraft:pushable_by_block": {},
 			"minecraft:damage_sensor": {
 				"triggers": [
 					{
