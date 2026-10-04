@@ -92,14 +92,16 @@
 											"test": "has_equipment",
 											"domain": "hand",
 											"subject": "other",
-											"value": "bucket:0"
+											"value": "minecraft:bucket"
 										}
 									]
 								}
 							},
 							"use_item": true,
-							"transform_to_item": "bucket:1",
-							"play_sounds": "milk_suspiciously",
+							"transform_to_item": "minecraft:milk_bucket",
+							"play_sounds": [
+								"milk_suspiciously"
+							],
 							"interact_text": "action.interact.milk"
 						}
 					]
@@ -127,14 +129,16 @@
 											"test": "has_equipment",
 											"domain": "hand",
 											"subject": "other",
-											"value": "bucket:0"
+											"value": "minecraft:bucket"
 										}
 									]
 								}
 							},
 							"use_item": true,
-							"transform_to_item": "bucket:1",
-							"play_sounds": "milk.screamer",
+							"transform_to_item": "minecraft:milk_bucket",
+							"play_sounds": [
+								"milk.screamer"
+							],
 							"interact_text": "action.interact.milk"
 						}
 					]
@@ -151,10 +155,10 @@
 					"knockback_height": 0.04,
 					"pre_ram_sound": "pre_ram",
 					"ram_impact_sound": "ram_impact",
-					"cooldown_range": [
-						30,
-						300
-					],
+					"cooldown_range": {
+						"min": 30,
+						"max": 300
+					},
 					"on_start": [
 						{
 							"event": "start_event",
@@ -174,10 +178,10 @@
 					"knockback_height": 0.04,
 					"pre_ram_sound": "pre_ram.screamer",
 					"ram_impact_sound": "ram_impact.screamer",
-					"cooldown_range": [
-						30,
-						300
-					],
+					"cooldown_range": {
+						"min": 30,
+						"max": 300
+					},
 					"on_start": [
 						{
 							"event": "start_event",
@@ -213,10 +217,10 @@
 				"minimum_path_length": 8,
 				"minimum_distance": 1,
 				"scale_factor": 0.6,
-				"cooldown_range": [
-					30,
-					60
-				]
+				"cooldown_range": {
+					"min": 30,
+					"max": 60
+				}
 			},
 			"minecraft:genetics": {
 				"mutation_rate": 0.02,
@@ -384,10 +388,8 @@
 				]
 			},
 			"minecraft:physics": {},
-			"minecraft:pushable": {
-				"is_pushable": true,
-				"is_pushable_by_piston": true
-			}
+			"minecraft:pushable_by_block": {},
+			"minecraft:pushable_by_entity": {}
 		},
 		"events": {
 			"minecraft:entity_spawned": {

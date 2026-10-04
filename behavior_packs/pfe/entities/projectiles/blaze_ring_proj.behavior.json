@@ -5,8 +5,8 @@
       "identifier": "poke_pfe:blaze_ring_proj",
       "is_spawnable": false,
       "is_summonable": true,
-      "is_experimental": false,
-      "runtime_identifier": "minecraft:fireball"
+      "is_experimental": false
+      //,"runtime_identifier": "minecraft:fireball"
     },
     "component_groups": {
       "minecraft:exploding": {
@@ -28,9 +28,11 @@
       "minecraft:projectile": {
         "on_hit": {
           "impact_damage": {
-            "damage": 6,
-            "knockback": false,
-            "semi_random_diff_damage": false
+            "damage": {
+              "min": 3,
+              "max": 6
+            },
+            "knockback": false
           },
           "definition_event": {
             "affect_projectile": true,
@@ -40,14 +42,14 @@
             }
           }
         },
-        //"particle": "poke_pfe:blaze_ring_proj",
+        "particle": "flame",
         "power": 1.6,
         "gravity": 0.0001,
         "inertia": 1,
         "liquid_inertia": 1,
         "uncertainty_base": 0,
         "uncertainty_multiplier": 0,
-        "anchor": 1,
+        "anchor": "eye_height",
         "offset": [
           0,
           0.75,
@@ -57,10 +59,8 @@
         "catch_fire": true
       },
       "minecraft:physics": {},
-      "minecraft:pushable": {
-        "is_pushable": true,
-        "is_pushable_by_piston": true
-      },
+      "minecraft:pushable_by_block": {},
+      "minecraft:pushable_by_entity": {},
       "minecraft:conditional_bandwidth_optimization": {
         "default_values": {
           "max_optimized_distance": 80.0,

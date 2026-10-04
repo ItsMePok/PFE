@@ -205,20 +205,24 @@
 			},
 			"minecraft:behavior.place_block": {
 				"priority": 10,
-				"xz_range": 1,
-				"y_range": [
-					0,
-					2
-				],
+				"xz_range": {
+					"max": 1
+				},
+				"y_range": {
+					"min": 0,
+					"max": 2
+				},
 				"chance": 0.0005
 			},
 			"minecraft:behavior.take_block": {
 				"priority": 11,
-				"xz_range": 2,
-				"y_range": [
-					0,
-					3
-				],
+				"xz_range": {
+					"max": 2
+				},
+				"y_range": {
+					"min": 0,
+					"max": 3
+				},
 				"chance": 0.05,
 				"blocks": [
 					"dirt",
@@ -268,10 +272,8 @@
 				]
 			},
 			"minecraft:physics": {},
-			"minecraft:pushable": {
-				"is_pushable": true,
-				"is_pushable_by_piston": true
-			},
+			"minecraft:pushable_by_block": {},
+			"minecraft:pushable_by_entity": {},
 			"minecraft:conditional_bandwidth_optimization": {
 				"default_values": {
 					"max_optimized_distance": 80,

@@ -20,10 +20,10 @@
       },
       "minecraft:projectile": {
         "on_hit": {
-          "teleport_owner": true,
+          "teleport_owner": {},
           "remove_on_hit": {}
         },
-        "anchor": 1,
+        "anchor": "eye_height",
         "power": 1.5,
         "gravity": 0.025,
         "angle_offset": 0.0,
@@ -33,10 +33,8 @@
         "hit_ground_sound": "mob.endermen.portal"
       },
       "minecraft:physics": {},
-      "minecraft:pushable": {
-        "is_pushable": true,
-        "is_pushable_by_piston": true
-      },
+      "minecraft:pushable_by_block": {},
+      "minecraft:pushable_by_entity": {},
       "minecraft:conditional_bandwidth_optimization": {
         "default_values": {
           "max_optimized_distance": 80.0,

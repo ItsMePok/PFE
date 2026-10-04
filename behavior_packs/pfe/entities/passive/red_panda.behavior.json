@@ -434,10 +434,10 @@
 			"minecraft:behavior.beg": {
 				"priority": 9,
 				"look_distance": 8,
-				"look_time": [
-					2,
-					4
-				],
+				"look_time": {
+					"min": 2,
+					"max": 4
+				},
 				"items": [
 					"bone",
 					"porkchop",
@@ -457,10 +457,8 @@
 				"priority": 3
 			},
 			"minecraft:physics": {},
-			"minecraft:pushable": {
-				"is_pushable": true,
-				"is_pushable_by_piston": true
-			},
+			"minecraft:pushable_by_block": {},
+			"minecraft:pushable_by_entity": {},
 			"minecraft:conditional_bandwidth_optimization": {}
 		},
 		"events": {

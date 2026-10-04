@@ -57,8 +57,7 @@
 			"minecraft:tags": [
 				"pfe",
 				"hoe",
-				"stone_pick_diggable",
-				"minecraft:is_pickaxe_item_destructible"
+				"minecraft:is_hoe_item_destructible"
 			],
 			"minecraft:map_color": "#e25f22"
 		}

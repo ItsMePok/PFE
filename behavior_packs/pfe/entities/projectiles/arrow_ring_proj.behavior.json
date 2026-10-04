@@ -23,9 +23,11 @@
 				"is_dangerous": true,
 				"on_hit": {
 					"impact_damage": {
-						"damage": 1,
+						"damage": {
+							"min": 1,
+							"max": 1
+						},
 						"knockback": true,
-						"semi_random_diff_damage": true,
 						"destroy_on_hit": true,
 						"max_critical_damage": 10,
 						"min_critical_damage": 9,
@@ -35,15 +37,12 @@
 				},
 				"uncertainty_multiplier": 1.1,
 				"uncertainty_base": 1,
-				"anchor": 1,
+				"anchor": "eye_height",
 				"stop_on_hurt": true,
 				"particle": "iconcrack"
 			},
 			"minecraft:physics": {},
-			"minecraft:pushable": {
-				"is_pushable": false,
-				"is_pushable_by_piston": true
-			}
+			"minecraft:pushable_by_block": {}
 		}
 	}
 }

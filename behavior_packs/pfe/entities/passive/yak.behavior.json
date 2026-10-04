@@ -66,14 +66,16 @@
 											"test": "has_equipment",
 											"domain": "hand",
 											"subject": "other",
-											"value": "bucket:0"
+											"value": "minecraft:bucket"
 										}
 									]
 								}
 							},
 							"use_item": true,
-							"transform_to_item": "bucket:1",
-							"play_sounds": "milk",
+							"transform_to_item": "minecraft:milk_bucket",
+							"play_sounds": [
+								"milk"
+							],
 							"interact_text": "action.interact.milk"
 						}
 					]
@@ -213,10 +215,8 @@
 				}
 			},
 			"minecraft:physics": {},
-			"minecraft:pushable": {
-				"is_pushable": true,
-				"is_pushable_by_piston": true
-			},
+			"minecraft:pushable_by_block": {},
+			"minecraft:pushable_by_entity": {},
 			"minecraft:conditional_bandwidth_optimization": {}
 		},
 		"events": {

@@ -28,8 +28,13 @@
 			"minecraft:ranged_attack": {
 				"minecraft:behavior.ranged_attack": {
 					"priority": 0,
-					"attack_interval": 4,
-					"attack_radius": 15.0
+					"attack_interval": {
+						"min": 4,
+						"max": 4
+					},
+					"attack_range": {
+						"max": 15
+					}
 				},
 				"minecraft:shooter": {
 					"def": "poke_pfe:volt_arrow"
@@ -394,9 +399,13 @@
 			},
 			"minecraft:behavior.ranged_attack": {
 				"priority": 0,
-				"attack_interval_min": 1,
-				"attack_interval_max": 3,
-				"attack_radius": 15
+				"attack_interval": {
+					"min": 1,
+					"max": 3
+				},
+				"attack_range": {
+					"max": 15
+				}
 			},
 			"minecraft:behavior.hurt_by_target": {
 				"priority": 1
@@ -484,10 +493,8 @@
 				"priority": 8
 			},
 			"minecraft:physics": {},
-			"minecraft:pushable": {
-				"is_pushable": true,
-				"is_pushable_by_piston": true
-			},
+			"minecraft:pushable_by_block": {},
+			"minecraft:pushable_by_entity": {},
 			"minecraft:conditional_bandwidth_optimization": {}
 		},
 		"events": {

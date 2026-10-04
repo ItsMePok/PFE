@@ -208,7 +208,7 @@
 				"minecraft:behavior.pet_sleep_with_owner": {
 					"priority": 2,
 					"speed_multiplier": 1.2,
-					"search_radius": 10,
+					"search_range": 10,
 					"search_height": 10,
 					"goal_radius": 1
 				},
@@ -236,10 +236,10 @@
 						1,
 						0
 					],
-					"time_of_day_range": [
-						0.74999,
-						0.8
-					],
+					"time_of_day_range": {
+						"min": 0.74999,
+						"max": 0.8
+					},
 					"speed_multiplier": 1,
 					"search_range": 5,
 					"search_height": 2,
@@ -406,7 +406,7 @@
 			},
 			"minecraft:behavior.leap_at_target": {
 				"priority": 3,
-				"target_dist": 0.3
+				"yd": 0.3
 			},
 			"minecraft:behavior.ocelotattack": {
 				"priority": 4,
@@ -429,10 +429,8 @@
 				"priority": 9
 			},
 			"minecraft:physics": {},
-			"minecraft:pushable": {
-				"is_pushable": true,
-				"is_pushable_by_piston": true
-			},
+			"minecraft:pushable_by_block": {},
+			"minecraft:pushable_by_entity": {},
 			"minecraft:conditional_bandwidth_optimization": {}
 		},
 		"events": {

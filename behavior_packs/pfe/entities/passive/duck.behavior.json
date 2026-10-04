@@ -58,7 +58,7 @@
 					"liquid_blocks": [
 						"water"
 					],
-					"simulate_waves": true
+					"movement_type": "waves"
 				},
 				"minecraft:behavior.follow_parent": {
 					"priority": 5,
@@ -113,7 +113,7 @@
 					"liquid_blocks": [
 						"water"
 					],
-					"simulate_waves": true
+					"movement_type": "waves"
 				},
 				"minecraft:spawn_entity": {
 					"entities": {
@@ -134,7 +134,7 @@
 		"components": {
 			"minecraft:offspring": {
 				"offspring_pairs": {
-					"poke_pfe:dusk": "poke_pfe:duck"
+					"poke_pfe:duck": "poke_pfe:duck"
 				}
 			},
 			"minecraft:type_family": {
@@ -307,10 +307,8 @@
 				"damage": 1
 			},
 			"minecraft:physics": {},
-			"minecraft:pushable": {
-				"is_pushable": true,
-				"is_pushable_by_piston": true
-			},
+			"minecraft:pushable_by_block": {},
+			"minecraft:pushable_by_entity": {},
 			"minecraft:conditional_bandwidth_optimization": {}
 		},
 		"events": {

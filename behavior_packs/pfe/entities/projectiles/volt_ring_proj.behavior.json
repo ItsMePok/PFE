@@ -26,13 +26,14 @@
 				"shoot_sound": "random.bow",
 				"power": 6,
 				"is_dangerous": true,
-				//"lightning": true,
 				"on_hit": {
 					"stick_in_ground": {},
 					"impact_damage": {
-						"damage": 3,
+						"damage": {
+							"min": 1,
+							"max": 3
+						},
 						"knockback": true,
-						"semi_random_diff_damage": true,
 						"max_critical_damage": 10,
 						"min_critical_damage": 9,
 						"power_multiplier": 0.97,
@@ -47,15 +48,11 @@
 				},
 				"uncertainty_multiplier": 1.1,
 				"uncertainty_base": 1,
-				"anchor": 1,
+				"anchor": "eye_height",
 				"stop_on_hurt": true,
 				"particle": "iconcrack"
 			},
 			"minecraft:physics": {},
-			"minecraft:pushable": {
-				"is_pushable": false,
-				"is_pushable_by_piston": true
-			},
 			"minecraft:tick_world": {
 				"distance_to_players": 128,
 				"never_despawn": true,

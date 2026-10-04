@@ -26,10 +26,6 @@
 				"has_collision": true,
 				"has_gravity": false
 			},
-			"minecraft:pushable": {
-				"is_pushable": false,
-				"is_pushable_by_piston": true
-			},
 			"minecraft:projectile": {}
 		},
 		"events": {

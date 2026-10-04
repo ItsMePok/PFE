@@ -20,7 +20,7 @@
 				"geometry": {
 					"identifier": "geometry.poke_pfe.dye_unmixer",
 					"bone_visibility": {
-						"screen": false
+						"screen": "false"
 					}
 				},
 				"material_instances": {

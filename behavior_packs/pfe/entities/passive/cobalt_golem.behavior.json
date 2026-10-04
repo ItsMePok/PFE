@@ -165,7 +165,9 @@
 				"minecraft:interact": {
 					"interactions": [
 						{
-							"play_sounds": "armor.equip_generic",
+							"play_sounds": [
+								"armor.equip_generic"
+							],
 							"on_interact": {
 								"filters": {
 									"all_of": [
@@ -296,10 +298,8 @@
 				"priority": 8
 			},
 			"minecraft:physics": {},
-			"minecraft:pushable": {
-				"is_pushable": true,
-				"is_pushable_by_piston": true
-			},
+			"minecraft:pushable_by_block": {},
+			"minecraft:pushable_by_entity": {},
 			"minecraft:conditional_bandwidth_optimization": {}
 		},
 		"events": {

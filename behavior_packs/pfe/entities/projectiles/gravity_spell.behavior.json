@@ -42,18 +42,14 @@
 				"inertia": 0.95,
 				"power": 2,
 				"is_dangerous": true,
-				"should_bounce": true,
+				"should_bounce": "if_no_damage_dealt",
 				"uncertainty_multiplier": 1.1,
 				"uncertainty_base": 1,
-				"anchor": 1,
+				"anchor": "eye_height",
 				"stop_on_hurt": true
 			},
 			"minecraft:physics": {
 				"has_gravity": false
-			},
-			"minecraft:pushable": {
-				"is_pushable": false,
-				"is_pushable_by_piston": true
 			},
 			"minecraft:damage_sensor": {
 				"triggers": [

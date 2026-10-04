@@ -38,7 +38,7 @@
 				"metal",
 				"minecraft:metal",
 				"stone_pick_diggable",
-				"minecraft:is_pickaxe_item_destructible",
+				"minecraft:is_pickaxe_item_destructible"
 			],
 			"minecraft:map_color": "#7a5a0f",
 			"minecraft:tick": {

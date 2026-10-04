@@ -21,11 +21,11 @@
             "potion": 23,
             "particle": "dragonbreath",
             "duration": 20,
-            "color": [
+            /*"color": [
               220,
               0,
               239
-            ],
+            ],*/
             "affect_owner": false,
             "reapplication_delay": 20
           },
@@ -34,22 +34,19 @@
         "power": 2,
         "gravity": 0,
         "inertia": 1,
-        "anchor": 1,
+        "anchor": "eye_height",
         "offset": [
           0,
           0.5,
           0
         ],
-        "semi_random_diff_damage": true,
         "uncertainty_base": 10.0,
         "reflect_on_hurt": true,
         "hit_sound": "explode"
       },
       "minecraft:physics": {},
-      "minecraft:pushable": {
-        "is_pushable": true,
-        "is_pushable_by_piston": true
-      },
+      "minecraft:pushable_by_block": {},
+      "minecraft:pushable_by_entity": {},
       "minecraft:conditional_bandwidth_optimization": {
         "default_values": {
           "max_optimized_distance": 80.0,

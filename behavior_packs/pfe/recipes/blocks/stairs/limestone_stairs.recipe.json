@@ -1,0 +1,33 @@
+{
+  "format_version": "1.26.50",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:limestone_stairs"
+    },
+    "assume_symmetry": true,
+    "tags": [
+      "crafting_table"
+    ],
+    "group": "stairs",
+    "unlock": [
+      {
+        //"tag": "poke_pfe:limestone_unlock_materials"
+        "item": "poke_pfe:limestone"
+      }
+    ],
+    "pattern": [
+      "X  ",
+      "XX ",
+      "XXX"
+    ],
+    "key": {
+      "X": {
+        "item": "poke_pfe:limestone"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:limestone_stairs",
+      "count": 4
+    }
+  }
+}

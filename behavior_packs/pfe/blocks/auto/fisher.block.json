@@ -35,10 +35,10 @@
           },
           "minecraft:geometry": {
             "bone_visibility": {
-              "bait": false,
-              "bait_1": false,
-              "bait_2": false,
-              "bait_3": false
+              "bait": "false",
+              "bait_1": "false",
+              "bait_2": "false",
+              "bait_3": "false"
             },
             "culling": "poke_pfe:geometry.poke_pfe.fisher",
             "identifier": "geometry.poke_pfe.fisher"
@@ -56,9 +56,9 @@
           },
           "minecraft:geometry": {
             "bone_visibility": {
-              "bait_1": false,
-              "bait_2": false,
-              "bait_3": false
+              "bait_1": "false",
+              "bait_2": "false",
+              "bait_3": "false"
             },
             "culling": "poke_pfe:geometry.poke_pfe.fisher",
             "identifier": "geometry.poke_pfe.fisher"
@@ -76,8 +76,8 @@
           },
           "minecraft:geometry": {
             "bone_visibility": {
-              "bait_2": false,
-              "bait_3": false
+              "bait_2": "false",
+              "bait_3": "false"
             },
             "culling": "poke_pfe:geometry.poke_pfe.fisher",
             "identifier": "geometry.poke_pfe.fisher"
@@ -95,7 +95,7 @@
           },
           "minecraft:geometry": {
             "bone_visibility": {
-              "bait_3": false
+              "bait_3": "false"
             },
             "culling": "poke_pfe:geometry.poke_pfe.fisher",
             "identifier": "geometry.poke_pfe.fisher"

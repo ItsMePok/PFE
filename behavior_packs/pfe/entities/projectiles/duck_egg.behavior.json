@@ -16,13 +16,16 @@
       "minecraft:projectile": {
         "on_hit": {
           "impact_damage": {
-            "damage": 0,
+            "damage": {
+              "min": 0,
+              "max": 0
+            },
             "knockback": true,
             "destroy_on_hit": true
           },
           "spawn_chance": {
-            "first_spawn_chance": 8,
-            "second_spawn_chance": 32,
+            "first_spawn_chance": 0.125,
+            "second_spawn_chance": 0.3125,
             "first_spawn_count": 1,
             "second_spawn_count": 4,
             "spawn_definition": "poke_pfe:duck",
@@ -42,13 +45,11 @@
         "power": 1.5,
         "gravity": 0.03,
         "angle_offset": 0.0,
-        "anchor": 1
+        "anchor": "eye_height"
       },
       "minecraft:physics": {},
-      "minecraft:pushable": {
-        "is_pushable": true,
-        "is_pushable_by_piston": true
-      },
+      "minecraft:pushable_by_block": {},
+      "minecraft:pushable_by_entity": {},
       "minecraft:conditional_bandwidth_optimization": {
         "default_values": {
           "max_optimized_distance": 80.0,

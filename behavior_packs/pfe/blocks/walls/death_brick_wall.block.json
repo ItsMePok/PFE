@@ -50,19 +50,19 @@
 			"minecraft:geometry": {
 				"identifier": "geometry.poke_pfe.wall",
 				"bone_visibility": {
-					"post": "((q.block_state('minecraft:connection_north') == true || q.block_state('minecraft:connection_south') == true) && (q.block_state('minecraft:connection_east') == true || q.block_state('minecraft:connection_west') == true)) || !(q.block_state('minecraft:connection_north') == true && q.block_state('minecraft:connection_south') == true && (q.block_state('minecraft:connection_east') == false && q.block_state('minecraft:connection_west') == false)) || !(q.block_state('minecraft:connection_east') == true && q.block_state('minecraft:connection_west') == true && (q.block_state('minecraft:connection_north') == false && q.block_state('minecraft:connection_south') == false))",
+					"post": "(!q.block_state('minecraft:connection_north') && !q.block_state('minecraft:connection_south') && !q.block_state('minecraft:connection_east') && !q.block_state('minecraft:connection_west')) || (q.block_state('minecraft:connection_north') && !q.block_state('minecraft:connection_south') && !q.block_state('minecraft:connection_east') && !q.block_state('minecraft:connection_west')) || (!q.block_state('minecraft:connection_north') && q.block_state('minecraft:connection_south') && !q.block_state('minecraft:connection_east') && !q.block_state('minecraft:connection_west')) || (!q.block_state('minecraft:connection_north') && !q.block_state('minecraft:connection_south') && q.block_state('minecraft:connection_east') && !q.block_state('minecraft:connection_west')) || (!q.block_state('minecraft:connection_north') && !q.block_state('minecraft:connection_south') && !q.block_state('minecraft:connection_east') && q.block_state('minecraft:connection_west')) || ((q.block_state('minecraft:connection_north') == true || q.block_state('minecraft:connection_south') == true) && (q.block_state('minecraft:connection_east') == true || q.block_state('minecraft:connection_west') == true))",
 					"north": "q.block_state('minecraft:connection_north') == true",
 					"south": "q.block_state('minecraft:connection_south') == true",
 					"east": "q.block_state('minecraft:connection_east') == true",
 					"west": "q.block_state('minecraft:connection_west') == true",
-					/*"full_n": false,
-					"full_s": false,
-					"full_e": false,
-					"full_w": false,*/
+					"full_n": "false",
+					"full_s": "false",
+					"full_e": "false",
+					"full_w": "false",
 					"middle_ns": "q.block_state('minecraft:connection_north') == true && q.block_state('minecraft:connection_south') == true",
 					"middle_ew": "q.block_state('minecraft:connection_east') == true && q.block_state('minecraft:connection_west') == true",
-					"middle_full_ns": "q.block_state('minecraft:connection_north') == true && q.block_state('minecraft:connection_south') == true",
-					"middle_full_ew": "q.block_state('minecraft:connection_east') == true && q.block_state('minecraft:connection_west') == true"
+					"middle_full_ns": "false",
+					"middle_full_ew": "false"
 				}
 			},
 			"minecraft:redstone_conductivity": {

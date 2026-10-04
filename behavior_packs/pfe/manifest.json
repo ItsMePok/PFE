@@ -4,41 +4,23 @@
 		"description": "Wiki: https:pfewiki.gitbook.io/home",
 		"pack_scope": "world",
 		"uuid": "56292c65-ff75-496c-ab94-1d94f78f5ec5",
-		"version": [
-			1,
-			3,
-			3
-		],
-		"min_engine_version": [
-			1,
-			26,
-			50
-		]
+		"version": [1, 3, 3],
+		"min_engine_version": [1, 26, 50]
 	},
-	"capabilities": [
-		"pbr"
-	],
+	"capabilities": ["pbr"],
 	"modules": [
 		{
 			"uuid": "115ef909-4b14-48c9-b266-3fb4ccd1b91d",
-			"version": [
-				1,
-				0,
-				0
-			],
+			"version": [1, 0, 0],
 			"type": "script",
 			"language": "javascript",
 			"entry": "scripts/main.js"
 		}
 	],
 	"dependencies": [
-		{ //RP Manifest
+		{
 			"uuid": "c48bf18f-859c-4924-ad7a-5b74048e20b2",
-			"version": [
-				1,
-				3,
-				3
-			]
+			"version": [1, 3, 3]
 		},
 		{
 			"module_name": "@minecraft/server",
@@ -52,26 +34,13 @@
 	"format_version": 2,
 	"metadata": {
 		"url": "https://github.com/ItsMePok/PFE",
-		"license": "MIT", // RP/LICENSE
+		"license": "MIT",
 		"product_type": "addon",
-		"authors": [
-			"ItsMePok"
-		],
+		"authors": ["ItsMePok"],
 		"generated_with": {
-			"blockbench_entity_wizard": [
-				"1.3.1",
-				"1.3.2",
-				"1.4.0",
-				"1.5.1"
-			],
-			"blockbench_block_wizard": [
-				"1.2.1"
-			],
-			"blockbench_item_wizard": [
-				"1.0.1",
-				"1.0.2",
-				"1.0.4"
-			]
+			"blockbench_entity_wizard": ["1.3.1", "1.3.2", "1.4.0", "1.5.1"],
+			"blockbench_block_wizard": ["1.2.1", "1.7.0"],
+			"blockbench_item_wizard": ["1.0.1", "1.0.2", "1.0.4"]
 		}
 	}
 }

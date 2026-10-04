@@ -55,7 +55,9 @@
 								"event": "poke_pfe:shear"
 							},
 							"use_item": true,
-							"play_sounds": "shear",
+							"play_sounds": [
+								"shear"
+							],
 							"interact_text": "action.interact.poke_pfetrader"
 						}
 					]
@@ -115,10 +117,8 @@
 				"probability": 0.02
 			},
 			"minecraft:physics": {},
-			"minecraft:pushable": {
-				"is_pushable": true,
-				"is_pushable_by_piston": true
-			},
+			"minecraft:pushable_by_block": {},
+			"minecraft:pushable_by_entity": {},
 			"minecraft:equip_item": {},
 			"minecraft:behavior.equip_item": {
 				"priority": 0
@@ -151,9 +151,6 @@
 					},
 					{
 						"item": "poke_pfe:caged_soul"
-					},
-					{
-						"item": "poke_pfe:carved_melon_helmet"
 					},
 					{
 						"item": "poke_pfe:cone_cosmetic"
