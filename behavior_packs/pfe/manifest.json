@@ -1,6 +1,6 @@
 {
 	"header": {
-		"name": "v1.3.04 PFE §cBP§r",
+		"name": "v1.3.04 PFE BP",
 		"description": "Wiki: https:pfewiki.gitbook.io/home",
 		"pack_scope": "world",
 		"uuid": "56292c65-ff75-496c-ab94-1d94f78f5ec5",
@@ -12,7 +12,7 @@
 		"min_engine_version": [
 			1,
 			26,
-			40
+			50
 		]
 	},
 	"capabilities": [
@@ -42,11 +42,11 @@
 		},
 		{
 			"module_name": "@minecraft/server",
-			"version": "2.5.0"
+			"version": "2.10.0"
 		},
 		{
 			"module_name": "@minecraft/server-ui",
-			"version": "2.0.0"
+			"version": "2.2.0"
 		}
 	],
 	"format_version": 2,

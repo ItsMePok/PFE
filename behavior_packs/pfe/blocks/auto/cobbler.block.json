@@ -1,5 +1,5 @@
 {
-	"format_version": "1.26.40",
+	"format_version": "1.26.50",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke_pfe:cobbler",
@@ -285,7 +285,7 @@
 		],
 		"components": {
 			"minecraft:redstone_consumer": {
-				"propogates_power": false,
+				"propagates_power": false,
 				"min_power": 0
 			},
 			"minecraft:display_name": "%poke_pfe.cobbler\n%poke_pfe.tag",

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.26.40",
+	"format_version": "1.26.50",
 	"minecraft:block": {
 		"description": {
 			"identifier": "poke_pfe:molten_brick_wall",
@@ -18,7 +18,6 @@
 			"minecraft:support": {
 				"shape": "fence"
 			},
-			"tag:minecraft:has_fence_connections": {},
 			"minecraft:connection_rule": {
 				"accepts_connections_from": "all"
 			},
@@ -93,12 +92,15 @@
 					}
 				]
 			},
-			"tag:pfe": {},
-			"tag:stone": {},
-			"tag:minecraft:stone": {},
-			"tag:stone_pick_diggable": {},
-			"tag:minecraft:is_pickaxe_item_destructible": {},
-			"tag:pfe_wall": {},
+			"minecraft:tags": [
+				"pfe",
+				"stone",
+				"minecraft:stone",
+				"stone_pick_diggable",
+				"minecraft:is_pickaxe_item_destructible",
+				"pfe_wall",
+				"minecraft:has_fence_connections"
+			],
 			"minecraft:light_dampening": 0
 		},
 		"permutations": [

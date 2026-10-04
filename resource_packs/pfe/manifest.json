@@ -1,6 +1,6 @@
 {
 	"header": {
-		"name": "v1.3.03 PFE RP",
+		"name": "v1.3.04 PFE RP",
 		"description": "Wiki: https:pfewiki.gitbook.io/home",
 		"pack_scope": "any",
 		"uuid": "c48bf18f-859c-4924-ad7a-5b74048e20b2",
@@ -12,7 +12,7 @@
 		"min_engine_version": [
 			1,
 			26,
-			40
+			50
 		]
 	},
 	"modules": [
