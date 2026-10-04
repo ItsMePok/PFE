@@ -1,0 +1,4 @@
+# Limestone Stairs
+
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:limestone\_stairs**</mark> <a href="#identifier" id="identifier"></a>
+
