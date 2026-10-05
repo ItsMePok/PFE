@@ -4,7 +4,7 @@ hidden: true
 
 # Obtaining Temp
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:**</mark> <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:**</mark> <a href="#identifier" id="identifier"></a>
 
 ## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">64</mark> <a href="#stack-size" id="stack-size"></a>
 
@@ -45,6 +45,8 @@ hidden: true
 ## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/upgrade.png?raw=true" alt="" data-size="line"> Recipes:
 
 ## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Waterlog.png?raw=true" alt="" data-size="line"> Can Waterlog: <mark style="color:yellow;">Yes</mark> <a href="#waterlog" id="waterlog"></a>
+
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Snowlog.png?raw=true" alt="" data-size="line"> Can Snowlog: <mark style="color:yellow;">Yes</mark>
 
 ## <img src="https://minecraft.wiki/images/Shaper_Armor_Trim_Smithing_Template_JE1_BE1.png?0941a" alt="" data-size="line"> Trimmable: <mark style="color:yellow;">**Yes**</mark> <a href="#trimmable" id="trimmable"></a>
 
@@ -104,13 +106,13 @@ More info about brewing can be found in the: [brewing-guide.md](misc-other-info/
 
 {% tabs %}
 {% tab title="Smelting" %}
-<div><figure><img src="https://minecraft.wiki/images/Lit_Furnace_(S).gif?40e71" alt=""><figcaption><p>Smelted in a <a href="https://minecraft.wiki/w/Furnace">Furnace</a></p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/thumb/Lit_Blast_Furnace_JE1.gif/150px-Lit_Blast_Furnace_JE1.gif?dc6a7" alt="Blast Furnace."><figcaption><p>Smelted in a <a href="https://minecraft.wiki/w/Blast_Furnace">Blast Furnace</a></p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/thumb/Lit_Smoker_(S)_JE2_BE2.gif/150px-Lit_Smoker_(S)_JE2_BE2.gif?0ee63" alt=""><figcaption><p>Smoked in a <a href="https://minecraft.wiki/w/Smoker">Smoker</a></p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/archive/20200119163020%21Campfire_%28S%29_JE2_BE2.gif?c2f9e&format=original" alt=""><figcaption><p>Cooked in a <a href="https://minecraft.wiki/w/Campfire">Campfire</a></p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/thumb/Soul_Campfire_JE1_BE1.gif/150px-Soul_Campfire_JE1_BE1.gif?bf4a7" alt=""><figcaption><p>Cooked in a <a href="https://minecraft.wiki/w/Soul_Campfire">Soul Campfire</a></p></figcaption></figure></div>
+<div><figure><img src="https://minecraft.wiki/images/Lit_Furnace_(S).gif?40e71" alt=""><figcaption><p>Smelted in a <a href="https://minecraft.wiki/w/Furnace">Furnace</a></p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/thumb/Lit_Blast_Furnace_JE1.gif/150px-Lit_Blast_Furnace_JE1.gif?dc6a7" alt="Blast Furnace."><figcaption><p>Smelted in a <a href="https://minecraft.wiki/w/Blast_Furnace">Blast Furnace</a></p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/thumb/Lit_Smoker_(S)_JE2_BE2.gif/150px-Lit_Smoker_(S)_JE2_BE2.gif?0ee63" alt=""><figcaption><p>Smoked in a <a href="https://minecraft.wiki/w/Smoker">Smoker</a></p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/archive/20200119163020!Campfire_(S)_JE2_BE2.gif?c2f9e&#x26;format=original" alt=""><figcaption><p>Cooked in a <a href="https://minecraft.wiki/w/Campfire">Campfire</a></p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/thumb/Soul_Campfire_JE1_BE1.gif/150px-Soul_Campfire_JE1_BE1.gif?bf4a7" alt=""><figcaption><p>Cooked in a <a href="https://minecraft.wiki/w/Soul_Campfire">Soul Campfire</a></p></figcaption></figure></div>
 
 <table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td></td><td></td><td>1</td></tr></tbody></table>
 {% endtab %}
 
 {% tab title="Untitled" %}
-<div><figure><img src="https://minecraft.wiki/images/Lit_Furnace_(S).gif?40e71" alt=""><figcaption><p>Smelted in a <a href="https://minecraft.wiki/w/Furnace">Furnace</a></p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/thumb/Lit_Smoker_(S)_JE2_BE2.gif/150px-Lit_Smoker_(S)_JE2_BE2.gif?0ee63" alt=""><figcaption><p>Smoked in a <a href="https://minecraft.wiki/w/Smoker">Smoker</a></p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/archive/20200119163020%21Campfire_%28S%29_JE2_BE2.gif?c2f9e&format=original" alt=""><figcaption><p>Cooked in a <a href="https://minecraft.wiki/w/Campfire">Campfire</a></p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/thumb/Soul_Campfire_JE1_BE1.gif/150px-Soul_Campfire_JE1_BE1.gif?bf4a7" alt=""><figcaption><p>Cooked in a <a href="https://minecraft.wiki/w/Soul_Campfire">Soul Campfire</a></p></figcaption></figure></div>
+<div><figure><img src="https://minecraft.wiki/images/Lit_Furnace_(S).gif?40e71" alt=""><figcaption><p>Smelted in a <a href="https://minecraft.wiki/w/Furnace">Furnace</a></p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/thumb/Lit_Smoker_(S)_JE2_BE2.gif/150px-Lit_Smoker_(S)_JE2_BE2.gif?0ee63" alt=""><figcaption><p>Smoked in a <a href="https://minecraft.wiki/w/Smoker">Smoker</a></p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/archive/20200119163020!Campfire_(S)_JE2_BE2.gif?c2f9e&#x26;format=original" alt=""><figcaption><p>Cooked in a <a href="https://minecraft.wiki/w/Campfire">Campfire</a></p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/thumb/Soul_Campfire_JE1_BE1.gif/150px-Soul_Campfire_JE1_BE1.gif?bf4a7" alt=""><figcaption><p>Cooked in a <a href="https://minecraft.wiki/w/Soul_Campfire">Soul Campfire</a></p></figcaption></figure></div>
 
 <table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/baguette.png?raw=true" alt="" data-size="line"> <a href="items/foods/baguette.md">Baguette</a></td><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/toast.png?raw=true" alt="" data-size="line"><a href="items/foods/toast.md">Toast</a></td><td>8</td></tr></tbody></table>
 {% endtab %}

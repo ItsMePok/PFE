@@ -14,7 +14,7 @@ This wiki is still a work in progress; some pages are unfinished.
 
 ### Experimental Toggles: <mark style="color:yellow;">None</mark>
 
-### Lowest Supported Minecraft Version: [<mark style="color:yellow;">26.0</mark>](#user-content-fn-1)[^1]
+### Lowest Supported Minecraft Version: [<mark style="color:yellow;">26.50</mark>](#user-content-fn-1)[^1]
 
 ***
 
@@ -96,4 +96,4 @@ I highly recommend avoiding those sites as they can contain malicious things
 
 **NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT**
 
-[^1]: 1.26.0
+[^1]: 1.26.50
