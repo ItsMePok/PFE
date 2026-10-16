@@ -201,6 +201,14 @@ The Demonic Allay needs to spawn holding this item for it to drop
 | ---- | ------ | ------------------ |
 |      | 1      | 100%               |
 {% endtab %}
+
+{% tab title="Untitled" %}
+
+
+
+
+<table><thead><tr><th align="center">Item</th><th width="78" align="center">#</th><th align="center">Chance</th><th data-type="checkbox">Looting Works?</th></tr></thead><tbody><tr><td align="center"></td><td align="center"></td><td align="center">%</td><td>false</td></tr></tbody></table>
+{% endtab %}
 {% endtabs %}
 
 e
