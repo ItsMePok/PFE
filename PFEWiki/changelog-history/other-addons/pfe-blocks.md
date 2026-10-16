@@ -3,10 +3,10 @@
 
 
 {% hint style="info" %}
-This is based on [PFE v1.2.2](../full-releases/v1.2.2.md)
+This is based on [PFE v1.2.2](../full-releases/1.2-full-releases/v1.2.2.md)
 
 * This will only work in Minecraft versions after <mark style="color:yellow;">1.21.20</mark>
-* This is replacement for the Blocks only subpack in PFE (that subpack was removed after [v1.2.2](../full-releases/v1.2.2.md))
+* This is replacement for the Blocks only subpack in PFE (that subpack was removed after [v1.2.2](../full-releases/1.2-full-releases/v1.2.2.md))
 {% endhint %}
 
 ## Contains:

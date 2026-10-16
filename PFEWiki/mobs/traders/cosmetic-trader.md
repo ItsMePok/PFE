@@ -1,13 +1,11 @@
 # Cosmetic Trader
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
-
-## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: **poke:cosmetic\_trader** <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: **poke:cosmetic\_trader** <a href="#identifier" id="identifier"></a>
 
 ## <img src="https://minecraft.wiki/images/Emerald_JE3_BE3.png?4c5f3" alt="Emerald." data-size="line"> Trades:
 
-| Wants                                                                                                                                                                            | Gives                                                                             |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| Wants                                                                                                                                                                       | Gives                                                                             |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
 | [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/iron_token.png?raw=true" alt="" data-size="line">Iron Token](../../items/currency/tokens/iron-token.md) | [Steampunk Hat](../../armor/cosmetics/offhand-cosmetics/steampunk-hat.md)         |
 | [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/iron_token.png?raw=true" alt="" data-size="line">Iron Token](../../items/currency/tokens/iron-token.md) | [Crab Pal](../../armor/cosmetics/offhand-cosmetics/crab-pal.md)                   |
 | [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/iron_token.png?raw=true" alt="" data-size="line">Iron Token](../../items/currency/tokens/iron-token.md) | [Ghost](../../armor/cosmetics/offhand-cosmetics/ghost.md)                         |
@@ -41,11 +39,9 @@
 
 {% tabs %}
 {% tab title="Trade" %}
-
-
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/entity_icon/TokenTrader.png?raw=true" alt=""><figcaption><p>Sold by the <a href="token-trader.md">Token Trader</a></p></figcaption></figure>
 
-<table data-full-width="false"><thead><tr><th align="center">Wants</th><th width="88" align="center">Amount</th><th align="center">Gives</th><th width="85" align="center">Amount</th></tr></thead><tbody><tr><td align="center"><a href="../../items/currency/tokens/iron-token.md"><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/iron_token.png?raw=true" alt="" data-size="line">Iron Token</a></td><td align="center">1</td><td align="center"> <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cosmetic_trader_spawn_egg.png?raw=true" alt="Cosmetic Trader Spawn Egg." data-size="line"> Cosmetic Trader Spawn Egg</td><td align="center">1</td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th align="center">Wants</th><th width="88" align="center">Amount</th><th align="center">Gives</th><th width="85" align="center">Amount</th></tr></thead><tbody><tr><td align="center"><a href="../../items/currency/tokens/iron-token.md"><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/iron_token.png?raw=true" alt="" data-size="line">Iron Token</a></td><td align="center">1</td><td align="center"><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cosmetic_trader_spawn_egg.png?raw=true" alt="Cosmetic Trader Spawn Egg." data-size="line"> Cosmetic Trader Spawn Egg</td><td align="center">1</td></tr></tbody></table>
 
 {% hint style="info" %}
 This spawn egg cannot be used in <img src="https://minecraft.wiki/images/thumb/Spawner_with_fire.png/150px-Spawner_with_fire.png?43e81" alt="Monster Spawner." data-size="line"> [Spawners](https://minecraft.wiki/w/Monster_Spawner)
@@ -53,14 +49,10 @@ This spawn egg cannot be used in <img src="https://minecraft.wiki/images/thumb/S
 {% endtab %}
 
 {% tab title="Mob Loot" %}
-
-
-<figure><img src="broken-reference" alt=""><figcaption><p>Dropped by the Cosmetic Trader</p></figcaption></figure>
-
-| Item                                                                                                                                                                     | Amount | Chance of Drop |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ | -------------- |
-|  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cosmetic_trader_spawn_egg.png?raw=true" alt="Cosmetic Trader Spawn Egg." data-size="line"> Cosmetic Trader Spawn Egg | 1      | 99.9%          |
-| [Cosmetic Cosmetic](../../armor/cosmetics/helmet-cosmetics/cosmetic-cosmetic.md)                                                                                         | 1      | 0.01%          |
+| Item                                                                                                                                                                                    | Amount | Chance of Drop |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | -------------- |
+| <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cosmetic_trader_spawn_egg.png?raw=true" alt="Cosmetic Trader Spawn Egg." data-size="line"> Cosmetic Trader Spawn Egg | 1      | 99.9%          |
+| [Cosmetic Cosmetic](../../armor/cosmetics/helmet-cosmetics/cosmetic-cosmetic.md)                                                                                                        | 1      | 0.01%          |
 
 {% hint style="info" %}
 This spawn egg cannot be used in <img src="https://minecraft.wiki/images/thumb/Spawner_with_fire.png/150px-Spawner_with_fire.png?43e81" alt="Monster Spawner." data-size="line"> [Spawners](https://minecraft.wiki/w/Monster_Spawner)

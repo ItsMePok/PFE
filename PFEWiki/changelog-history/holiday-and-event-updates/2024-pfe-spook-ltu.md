@@ -5,7 +5,7 @@
 {% embed url="https://github.com/ItsMePok/PFE/releases/tag/1.2.3" %}
 
 {% hint style="info" %}
-This is a fork of PFE [v1.2.3.md](../full-releases/v1.2.3.md "mention")
+This is a fork of PFE [v1.2.3.md](../full-releases/1.2-full-releases/v1.2.3.md "mention")
 
 This was made for Minecraft Version: 1.21.40+
 {% endhint %}
@@ -167,9 +167,7 @@ This allows the Nebula Logger to strip logs
 #### ![:crimspore:](https://cdn.discordapp.com/emojis/1256322040273698837.webp?size=44\&quality=lossless)**Mobs & Trades**![:token:](https://cdn.discordapp.com/emojis/1256444347256275015.webp?size=44\&quality=lossless)
 
 * Furnace Golem will now spawn <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/entity_icon/soul_blaze_icon.png?raw=true" alt="" data-size="line"> [Soul Blazes](../../mobs/hostile-mobs/soul-blaze.md)
-
-- Token Trader now the <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/spook_pottery_sherd.png?raw=true" alt="" data-size="line"> [Spook Pottery Sherd](../../blocks/pottery-sherds/spook-pottery-sherd.md) for 1 [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/iron_token.png?raw=true" alt="" data-size="line">Iron Token](../../items/currency/tokens/iron-token.md)
-
+* Token Trader now the <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/spook_pottery_sherd.png?raw=true" alt="" data-size="line"> [Spook Pottery Sherd](../../blocks/pottery-sherds/spook-pottery-sherd.md) for 1 [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/iron_token.png?raw=true" alt="" data-size="line">Iron Token](../../items/currency/tokens/iron-token.md)
 * Some items sold by the cosmetic trader have been reduced to 1 copper token
 
 #### ![:upgrade:](https://cdn.discordapp.com/emojis/1256321190071504987.webp?size=44\&quality=lossless)**Balancing**![:repair:](https://cdn.discordapp.com/emojis/1256321195138220123.webp?size=44\&quality=lossless)

@@ -3,7 +3,7 @@
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/Keyart/2023PFESpookLTUKeyart.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-This is a fork of [1.1.3.6.md](../betas/1.1.3.6.md "mention")
+This is a fork of [1.1.3.6.md](../betas/1.1.0-betas/1.1.3-betas/1.1.3.6.md "mention")
 {% endhint %}
 
 Download links:
@@ -20,7 +20,7 @@ It a very spooky time&#x20;
 
 from now until November 7th PFE has some spooky changes to discover in the first ever limited time update in PFE
 
-In addition, [v1.1.3.6](../betas/1.1.3.6.md) is here as well!
+In addition, [v1.1.3.6](../betas/1.1.0-betas/1.1.3-betas/1.1.3.6.md) is here as well!
 
 ### **Armor**
 
