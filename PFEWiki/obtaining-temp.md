@@ -16,7 +16,7 @@ hidden: true
 
 ### <img src="https://minecraft.wiki/images/Slowness_JE4.png?d415c" alt="" data-size="line"> **Speed Modifier while Consuming**: <a href="#speed-modifier-while-consuming" id="speed-modifier-while-consuming"></a>
 
-### ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/hunger_full.png?raw=true) **Hunger Replenished**: <a href="#hunger-replenished" id="hunger-replenished"></a>
+### <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/hunger_full.png?raw=true" alt="" data-size="line"> **Hunger Replenished**: <a href="#hunger-replenished" id="hunger-replenished"></a>
 
 ## <img src="https://minecraft.wiki/images/Strength_JE3_BE2.png?0494e" alt="Strength Effect." data-size="line"> Attack Damage: <mark style="color:yellow;">3</mark> <a href="#attack-damage" id="attack-damage"></a>
 
@@ -109,6 +109,8 @@ More info about brewing can be found in the: [brewing-guide.md](misc-other-info/
 <div><figure><img src="https://minecraft.wiki/images/Lit_Furnace_(S).gif?40e71" alt=""><figcaption><p>Smelted in a <a href="https://minecraft.wiki/w/Furnace">Furnace</a></p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/thumb/Lit_Blast_Furnace_JE1.gif/150px-Lit_Blast_Furnace_JE1.gif?dc6a7" alt="Blast Furnace."><figcaption><p>Smelted in a <a href="https://minecraft.wiki/w/Blast_Furnace">Blast Furnace</a></p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/thumb/Lit_Smoker_(S)_JE2_BE2.gif/150px-Lit_Smoker_(S)_JE2_BE2.gif?0ee63" alt=""><figcaption><p>Smoked in a <a href="https://minecraft.wiki/w/Smoker">Smoker</a></p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/archive/20200119163020!Campfire_(S)_JE2_BE2.gif?c2f9e&#x26;format=original" alt=""><figcaption><p>Cooked in a <a href="https://minecraft.wiki/w/Campfire">Campfire</a></p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/thumb/Soul_Campfire_JE1_BE1.gif/150px-Soul_Campfire_JE1_BE1.gif?bf4a7" alt=""><figcaption><p>Cooked in a <a href="https://minecraft.wiki/w/Soul_Campfire">Soul Campfire</a></p></figcaption></figure></div>
 
 <table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td></td><td></td><td>1</td></tr></tbody></table>
+
+x
 {% endtab %}
 
 {% tab title="Untitled" %}
