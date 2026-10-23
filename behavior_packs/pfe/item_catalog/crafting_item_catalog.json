@@ -1685,9 +1685,9 @@
               "poke_pfe:pma_bill_50",
               "poke_pfe:pma_bill_100",
               "poke_pfe:pma_bill_500",
-              "poke_pfe:dollor_bill_1",
-              "poke_pfe:dollor_bill_5",
-              "poke_pfe:dollor_bill_10"
+              "poke_pfe:dollar_bill_1",
+              "poke_pfe:dollar_bill_5",
+              "poke_pfe:dollar_bill_10"
             ]
           },
           {

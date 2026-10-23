@@ -26,7 +26,7 @@
 				"material_instances": {
 					"*": {
 						"texture": "poke_pfe_dye_unmixer",
-						"render_method": "alpha_test"
+						"render_method": "alpha_test_to_opaque"
 					}
 				}
 			},

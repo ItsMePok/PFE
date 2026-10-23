@@ -90,6 +90,7 @@
 			"minecraft:placement_filter": {
 				"conditions": [
 					{
+						//"block_filter": [{"tags": "minecraft:supports_vegetation"}],
 						"allowed_faces": [
 							"up"
 						]

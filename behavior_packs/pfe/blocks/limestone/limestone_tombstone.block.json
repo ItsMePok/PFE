@@ -16,6 +16,9 @@
 		},
 		"components": {
 			"minecraft:display_name": "%poke_pfe.limestone_tombstone\n%poke_pfe.tag",
+			/*"minecraft:instrument_sound": {
+				"up": "note.bd"
+			},*/
 			"minecraft:redstone_conductivity": {
 				"allows_wire_to_step_down": false,
 				"redstone_conductor": false

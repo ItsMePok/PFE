@@ -9,6 +9,9 @@
 		},
 		"components": {
 			"minecraft:display_name": "%poke_pfe.shadowstone_drain\n%poke_pfe.tag",
+			"minecraft:chest_obstruction": {
+				"obstruction_rule": "never"
+			},
 			"minecraft:item_visual": {
 				"geometry": {
 					"identifier": "geometry.poke_pfe.block"

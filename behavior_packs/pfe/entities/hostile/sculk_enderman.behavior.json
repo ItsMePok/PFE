@@ -137,7 +137,6 @@
 					5,
 					5
 				],
-				//"find_players_only":true,
 				"filters": {
 					"all_of": [
 						{

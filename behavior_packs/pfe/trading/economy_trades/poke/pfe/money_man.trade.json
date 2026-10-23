@@ -197,13 +197,13 @@
               "reward_exp": false,
               "wants": [
                 {
-                  "item": "poke_pfe:dollor_bill_1",
+                  "item": "poke_pfe:dollar_bill_1",
                   "quantity": 5
                 }
               ],
               "gives": [
                 {
-                  "item": "poke_pfe:dollor_bill_5"
+                  "item": "poke_pfe:dollar_bill_5"
                 }
               ]
             },
@@ -212,13 +212,13 @@
               "reward_exp": false,
               "wants": [
                 {
-                  "item": "poke_pfe:dollor_bill_5",
+                  "item": "poke_pfe:dollar_bill_5",
                   "quantity": 2
                 }
               ],
               "gives": [
                 {
-                  "item": "poke_pfe:dollor_bill_10"
+                  "item": "poke_pfe:dollar_bill_10"
                 }
               ]
             },
@@ -227,13 +227,13 @@
               "reward_exp": false,
               "wants": [
                 {
-                  "item": "poke_pfe:dollor_bill_5",
+                  "item": "poke_pfe:dollar_bill_5",
                   "quantity": 1
                 }
               ],
               "gives": [
                 {
-                  "item": "poke_pfe:dollor_bill_1",
+                  "item": "poke_pfe:dollar_bill_1",
                   "quantity": 5
                 }
               ]
@@ -243,13 +243,13 @@
               "reward_exp": false,
               "wants": [
                 {
-                  "item": "poke_pfe:dollor_bill_10",
+                  "item": "poke_pfe:dollar_bill_10",
                   "quantity": 1
                 }
               ],
               "gives": [
                 {
-                  "item": "poke_pfe:dollor_bill_5",
+                  "item": "poke_pfe:dollar_bill_5",
                   "quantity": 2
                 }
               ]
@@ -264,7 +264,7 @@
               ],
               "gives": [
                 {
-                  "item": "poke_pfe:dollor_bill_1",
+                  "item": "poke_pfe:dollar_bill_1",
                   "quantity": 1
                 }
               ]
