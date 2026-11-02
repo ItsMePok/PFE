@@ -2,7 +2,7 @@
 
 ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/astral_sword.png?raw=true)
 
-## Identifier: **poke:astral\_sword** <a href="#identifier" id="identifier"></a>
+## Identifier: **poke_pfe:astral\_sword** <a href="#identifier" id="identifier"></a>
 
 ## Durability: **3750**
 

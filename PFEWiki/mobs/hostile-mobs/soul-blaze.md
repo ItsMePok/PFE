@@ -49,7 +49,7 @@ OR
 
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/soul_blaze_spawn_egg.png?raw=true" alt=""><figcaption></figcaption></figure>
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line">Identifier: <mark style="color:yellow;">**poke:soul\_blaze\_spawn\_egg**</mark> <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line">Identifier: <mark style="color:yellow;">**poke_pfe:soul\_blaze\_spawn\_egg**</mark> <a href="#identifier" id="identifier"></a>
 
 ## Usage: <mark style="color:yellow;">Spawns the</mark> <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/entity_icon/soul_blaze_icon.png?raw=true" alt="" data-size="line"> <mark style="color:yellow;">Soul Blaze</mark>
 

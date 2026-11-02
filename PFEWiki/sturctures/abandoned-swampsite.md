@@ -2,7 +2,7 @@
 
 ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/Structures/abandoned_swampsite.png?raw=true)
 
-## **Structure identifier:** poke:abandoned\_swampsite <a href="#identifier" id="identifier"></a>
+## **Structure identifier:** poke_pfe:abandoned\_swampsite <a href="#identifier" id="identifier"></a>
 
 ## Generation
 

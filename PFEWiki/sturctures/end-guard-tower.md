@@ -2,7 +2,7 @@
 
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/structures-pixel/EndGuardTowerPixel.png?raw=true" alt=""><figcaption></figcaption></figure>
 
-## **Structure identifier:** poke:end\_guard\_tower <a href="#identifier" id="identifier"></a>
+## **Structure identifier:** poke_pfe:end\_guard\_tower <a href="#identifier" id="identifier"></a>
 
 ## Generation:
 

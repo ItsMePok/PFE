@@ -2,9 +2,9 @@
 
 ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_arrow_item.png?raw=true)
 
-Item Identifier: **poke:void\_arrow**
+Item Identifier: **poke_pfe:void\_arrow**
 
-Entity Identifier **poke:void\_arrow**
+Entity Identifier **poke_pfe:void\_arrow**
 
 Damage: **18**
 

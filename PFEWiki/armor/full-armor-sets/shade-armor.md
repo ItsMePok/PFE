@@ -9,7 +9,7 @@
 
 ## Shade Helmet
 
-Identifier: **poke:shade\_helmet**
+Identifier: **poke_pfe:shade\_helmet**
 
 Durability: **16500**
 
@@ -26,7 +26,7 @@ Trimmable: **Yes**
 
 ## Shade Chestplate
 
-Identifier: **poke:shade\_chestplate**
+Identifier: **poke_pfe:shade\_chestplate**
 
 Durability: **24000**
 
@@ -43,7 +43,7 @@ Trimmable: **Yes**
 
 ## Shade Leggings
 
-Identifier: **poke:shade\_leggings**
+Identifier: **poke_pfe:shade\_leggings**
 
 Durability: **22500**
 
@@ -60,7 +60,7 @@ Trimmable: **Yes**
 
 ## Shade Boots
 
-Identifier: **poke:shade\_boots**
+Identifier: **poke_pfe:shade\_boots**
 
 Durability: **19500**
 

@@ -9,7 +9,7 @@ Set Effects:
 
 ![poke\_springy\_robey\_hat](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/springy_robey_hat.png?raw=true)
 
-Identifier: **poke:springy\_robey\_helmet**
+Identifier: **poke_pfe:springy\_robey\_helmet**
 
 Durability: **1650**
 
@@ -27,7 +27,7 @@ Trimmable: **Yes**
 
 ![poke\_springy\_robey\_chestplate](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/springy_robey_chestplate.png?raw=true)
 
-Identifier: **poke:springy\_robey\_chestplate**
+Identifier: **poke_pfe:springy\_robey\_chestplate**
 
 Durability: **2400**
 

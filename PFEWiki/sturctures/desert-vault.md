@@ -4,7 +4,7 @@
 
 
 
-## **Structure identifier:** poke:desert\_vault
+## **Structure identifier:** poke_pfe:desert\_vault
 
 ## Generation
 

@@ -12,7 +12,7 @@
 
 ![poke\_death\_helmet](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/death_helmet.png?raw=true)
 
-Identifier: **poke:death\_helmet**
+Identifier: **poke_pfe:death\_helmet**
 
 Durability: **4100**
 
@@ -34,7 +34,7 @@ Trimmable: **Yes**
 
 ![poke\_death\_chestplate](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/death_chestplate.png?raw=true)
 
-Identifier: **poke:death\_chestplate**
+Identifier: **poke_pfe:death\_chestplate**
 
 Durability: **4100**
 
@@ -56,7 +56,7 @@ Trimmable: **Yes**
 
 ![poke\_death\_leggings](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/death_leggings.png?raw=true)
 
-Identifier: **poke:death\_leggings**
+Identifier: **poke_pfe:death\_leggings**
 
 Durability: **4100**
 
@@ -78,7 +78,7 @@ Trimmable: **Yes**
 
 ![poke\_death\_boots](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/death_boots.png?raw=true)
 
-Identifier: **poke:death\_boots**
+Identifier: **poke_pfe:death\_boots**
 
 Durability: **4100**
 

@@ -6,7 +6,7 @@
 
 **Structure identifier:**
 
-* poke:demonic\_allay\_dungeon
+* poke_pfe:demonic\_allay\_dungeon
 
 ## Generation
 

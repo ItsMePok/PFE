@@ -153,7 +153,7 @@ const PFECustomKillQuestsPropertyID = `poke_pfe:custom_kill_quests`
 world.afterEvents.worldInitialize.subscribe((data) => {
   const AddedMineQuests:PFECustomQuests = {
     value: [
-      { requiredItem: { item: `poke:cut_cobalt`, amount: 7, translationString: `%poke_pfe.cut_cobalt (%poke_pfe.tag)` }, reward: { tokenAmount: 7 } }
+      { requiredItem: { item: `poke_pfe:cut_cobalt`, amount: 7, translationString: `%poke_pfe.cut_cobalt (%poke_pfe.tag)` }, reward: { tokenAmount: 7 } }
     ]
   }
   world.getDimension(`minecraft:overworld`).runCommand(`scriptevent poke_pfe:custom_mine_quests ${JSON.stringify(AddedMineQuests)}`)

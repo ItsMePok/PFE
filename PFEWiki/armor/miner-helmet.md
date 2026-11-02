@@ -6,7 +6,7 @@ Set Effects:
 
 * Night Vision
 
-Identifier: **poke:miner\_helmet**
+Identifier: **poke_pfe:miner\_helmet**
 
 Durability: **165**
 

@@ -2,7 +2,7 @@
 
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/NebulaBlock.png?raw=true" alt=""><figcaption></figcaption></figure>
 
-## Identifier: poke:nebula\_block <a href="#identifier" id="identifier"></a>
+## Identifier: poke_pfe:nebula\_block <a href="#identifier" id="identifier"></a>
 
 ## Destroy Speed: 1
 

@@ -5,9 +5,9 @@
 **Structure identifiers:**
 
 * **Cold Varient:**
-  * poke:broken\_conduit\_cold
+  * poke_pfe:broken\_conduit\_cold
 * **Warm Varient:**
-  * poke:broken\_conduit\_warm
+  * poke_pfe:broken\_conduit\_warm
 
 ## Generation
 

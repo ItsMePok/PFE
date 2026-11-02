@@ -13,7 +13,7 @@
 
 ![poke\_astral\_helmet](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/astral_helmet.png?raw=true)
 
-Identifier: **poke:astral\_helmet**
+Identifier: **poke_pfe:astral\_helmet**
 
 Durability: **5000**
 
@@ -40,7 +40,7 @@ Trimmable: **Yes**
 
 ![poke\_astral\_chestplate](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/astral_chestplate.png?raw=true)
 
-Identifier: **poke:astral\_chestplate**
+Identifier: **poke_pfe:astral\_chestplate**
 
 Durability: **5000**
 
@@ -67,7 +67,7 @@ Trimmable: **Yes**
 
 ![poke\_astral\_leggings](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/astral_leggings.png?raw=true)
 
-Identifier: **poke:astral\_leggings**
+Identifier: **poke_pfe:astral\_leggings**
 
 Durability: **5000**
 
@@ -94,7 +94,7 @@ Trimmable: **Yes**
 
 ![poke\_astral\_boots](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/astral_boots.png?raw=true)
 
-Identifier: **poke:astral\_boots**
+Identifier: **poke_pfe:astral\_boots**
 
 Durability: **5000**
 

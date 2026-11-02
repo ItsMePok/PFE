@@ -11,7 +11,7 @@
 
 ![poke\_void\_helmet](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_helmet.png?raw=true)
 
-Identifier: **poke:void\_helmet**
+Identifier: **poke_pfe:void\_helmet**
 
 Durability: **3900**
 
@@ -38,7 +38,7 @@ Trimmable: **Yes**
 
 ![poke\_void\_chestplate](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_chestplate.png?raw=true)
 
-Identifier: **poke:void\_chestplate**
+Identifier: **poke_pfe:void\_chestplate**
 
 Durability: **3900**
 
@@ -65,7 +65,7 @@ Trimmable: **Yes**
 
 ![poke\_void\_leggings](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_leggings.png?raw=true)
 
-Identifier: **poke:void\_leggings**
+Identifier: **poke_pfe:void\_leggings**
 
 Durability: **3900**
 
@@ -92,7 +92,7 @@ Trimmable: **Yes**
 
 ![poke\_void\_boots](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_boots.png?raw=true)
 
-Identifier: **poke:void\_boots**
+Identifier: **poke_pfe:void\_boots**
 
 Durability: **3900**
 

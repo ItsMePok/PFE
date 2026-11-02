@@ -2,12 +2,12 @@
 
 ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/volt_arrow_item.png?raw=true)
 
-Item Identifier: **poke:volt\_arrow**
+Item Identifier: **poke_pfe:volt\_arrow**
 
 Entity Identifier:
 
-* **poke:volt\_arrow**
-* **poke:volt\_ring\_proj**
+* **poke_pfe:volt\_arrow**
+* **poke_pfe:volt\_ring\_proj**
 
 Damage: **7**
 

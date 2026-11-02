@@ -2,9 +2,9 @@
 
 ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/holy_arrow_item.png?raw=true)
 
-Item Identifier: **poke:holy\_arrow**
+Item Identifier: **poke_pfe:holy\_arrow**
 
-Entity Identifier **poke:holy\_arrow**
+Entity Identifier **poke_pfe:holy\_arrow**
 
 Damage: **15**
 

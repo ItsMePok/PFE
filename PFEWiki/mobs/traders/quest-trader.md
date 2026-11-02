@@ -2,7 +2,7 @@
 
 ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/Entity/poke.quest.trader.png?raw=true)
 
-## Identifier: **poke:quest\_trader** <a href="#identifier" id="identifier"></a>
+## Identifier: **poke_pfe:quest\_trader** <a href="#identifier" id="identifier"></a>
 
 ## <img src="https://minecraft.wiki/images/Emerald_JE3_BE3.png?4c5f3" alt="Emerald." data-size="line"> Trades:
 

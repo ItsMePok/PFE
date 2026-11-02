@@ -2,9 +2,9 @@
 
 ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/galaxy_arrow_item.png?raw=true)
 
-Item Identifier: **poke:galaxy\_arrow**
+Item Identifier: **poke_pfe:galaxy\_arrow**
 
-Entity Identifier **poke:galaxy\_arrow**
+Entity Identifier **poke_pfe:galaxy\_arrow**
 
 Damage: **18**
 

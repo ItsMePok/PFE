@@ -2,7 +2,7 @@
 
 ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/Structures/grove_rock.png)
 
-## **Structure identifier:** poke:grove\_rock <a href="#identifier" id="identifier"></a>
+## **Structure identifier:** poke_pfe:grove\_rock <a href="#identifier" id="identifier"></a>
 
 ## Generation
 

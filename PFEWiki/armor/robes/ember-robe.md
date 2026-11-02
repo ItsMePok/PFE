@@ -9,7 +9,7 @@ Set Effects:
 
 ![poke\_ember\_hat](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/ember_hat.png?raw=true)
 
-Identifier: **poke:ember\_robe\_helmet**
+Identifier: **poke_pfe:ember\_robe\_helmet**
 
 Durability: **1650**
 
@@ -27,7 +27,7 @@ Trimmable: **Yes**
 
 ![poke\_ember\_robe\_chestplate](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/ember_robe_chestplate.png?raw=true)
 
-Identifier: **poke:ember\_robe\_chestplate**
+Identifier: **poke_pfe:ember\_robe\_chestplate**
 
 Durability: **2400**
 

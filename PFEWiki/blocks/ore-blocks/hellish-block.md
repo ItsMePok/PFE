@@ -6,7 +6,7 @@
 This Page is not complete yet. Check back later
 {% endhint %}
 
-## Identifier: poke:hellish\_block
+## Identifier: poke_pfe:hellish\_block
 
 ## Destroy Speed: 1
 

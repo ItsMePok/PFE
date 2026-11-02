@@ -9,7 +9,7 @@
 
 ## Radium Helmet
 
-Identifier: **poke:radium\_helmet**
+Identifier: **poke_pfe:radium\_helmet**
 
 Durability: **3985**
 
@@ -26,7 +26,7 @@ Trimmable: **Yes**
 
 ## Radium Chestplate
 
-Identifier: **poke:radium\_chestplate**
+Identifier: **poke_pfe:radium\_chestplate**
 
 Durability: **4125**
 
@@ -43,7 +43,7 @@ Trimmable: **Yes**
 
 ## Radium Leggings
 
-Identifier: **poke:radium\_leggings**
+Identifier: **poke_pfe:radium\_leggings**
 
 Durability: **4125**
 
@@ -60,7 +60,7 @@ Trimmable: **Yes**
 
 ## Radium Boots
 
-Identifier: **poke:radium\_boots**
+Identifier: **poke_pfe:radium\_boots**
 
 Durability: **3985**
 

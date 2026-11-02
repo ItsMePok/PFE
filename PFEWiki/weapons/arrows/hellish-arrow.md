@@ -2,9 +2,9 @@
 
 ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/hellish_arrow_item.png?raw=true)
 
-Item Identifier: **poke:hellish\_arrow**
+Item Identifier: **poke_pfe:hellish\_arrow**
 
-Entity Identifier **poke:hellish\_arrow**
+Entity Identifier **poke_pfe:hellish\_arrow**
 
 Damage: **15**
 

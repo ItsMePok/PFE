@@ -8,7 +8,7 @@ This Page is not complete yet. Check back later
 
 
 
-## Identifier: poke:void\_block
+## Identifier: poke_pfe:void\_block
 
 ## Destroy Speed: 1
 

@@ -6,7 +6,7 @@ This Page is not complete yet. Check back later
 
 
 
-## Identifier: poke:cobalt\_block <a href="#identifier" id="identifier"></a>
+## Identifier: poke_pfe:cobalt\_block <a href="#identifier" id="identifier"></a>
 
 ## Destroy Speed: 1
 

@@ -12,7 +12,7 @@
 
 ![poke\_galaxy\_helmet](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/galaxy_helmet.png?raw=true)
 
-Identifier: **poke:galaxy\_helmet**
+Identifier: **poke_pfe:galaxy\_helmet**
 
 Durability: **4600**
 
@@ -39,7 +39,7 @@ Trimmable: **Yes**
 
 ![poke\_galaxy\_chestplate](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/galaxy_chestplate.png?raw=true)
 
-Identifier: **poke:galaxy\_chestplate**
+Identifier: **poke_pfe:galaxy\_chestplate**
 
 Durability: **4600**
 
@@ -66,7 +66,7 @@ Trimmable: **Yes**
 
 ![poke\_galaxy\_leggings](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/galaxy_leggings.png?raw=true)
 
-Identifier: **poke:galaxy\_leggings**
+Identifier: **poke_pfe:galaxy\_leggings**
 
 Durability: **4600**
 
@@ -93,7 +93,7 @@ Trimmable: **Yes**
 
 ![poke\_galaxy\_boots](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/galaxy_boots.png?raw=true)
 
-Identifier: **poke:galaxy\_boots**
+Identifier: **poke_pfe:galaxy\_boots**
 
 Durability: **4600**
 

@@ -2,7 +2,7 @@
 
 ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/amethyst_upgrader.png?raw=true)
 
-Identifier: **poke:budificator**
+Identifier: **poke_pfe:budificator**
 
 Durability: **600**
 

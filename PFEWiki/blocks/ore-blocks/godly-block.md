@@ -2,7 +2,7 @@
 
 ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/GodlyBlock.png?raw=true)
 
-## Identifier: poke:godly\_block <a href="#identifier" id="identifier"></a>
+## Identifier: poke_pfe:godly\_block <a href="#identifier" id="identifier"></a>
 
 ## Destroy Speed: 1
 

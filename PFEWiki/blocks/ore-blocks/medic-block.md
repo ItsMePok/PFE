@@ -8,7 +8,7 @@ This Page is not complete yet. Check back later
 
 
 
-## Identifier: poke:medic\_block
+## Identifier: poke_pfe:medic\_block
 
 ## Destroy Speed: 1
 

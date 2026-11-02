@@ -8,7 +8,7 @@ This Page is not complete yet. Check back later
 
 
 
-## Identifier: poke:galaxy\_block
+## Identifier: poke_pfe:galaxy\_block
 
 ## Destroy Speed: 1
 

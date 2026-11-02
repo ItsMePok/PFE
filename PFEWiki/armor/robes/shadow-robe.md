@@ -9,7 +9,7 @@ Set Effects:
 
 ![poke\_shadow\_robe\_hat](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shadow_robe_hat.png?raw=true)
 
-Identifier: **poke:shadow\_robe\_helmet**
+Identifier: **poke_pfe:shadow\_robe\_helmet**
 
 Durability: **1650**
 
@@ -27,7 +27,7 @@ Trimmable: **Yes**
 
 ![poke\_shadow\_robe\_chestplate](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shadow_robe_chestplate.png?raw=true)
 
-Identifier: **poke:shadow\_robe\_chestplate**
+Identifier: **poke_pfe:shadow\_robe\_chestplate**
 
 Durability: **2400**
 

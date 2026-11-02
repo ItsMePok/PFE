@@ -12,7 +12,7 @@
 
 ![poke\_medic\_helmet](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/medic_helmet.png?raw=true)
 
-Identifier: **poke:medic\_helmet**
+Identifier: **poke_pfe:medic\_helmet**
 
 Durability: **4300**
 
@@ -39,7 +39,7 @@ Trimmable: **Yes**
 
 ![poke\_medic\_chestplate](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/medic_chestplate.png?raw=true)
 
-Identifier: **poke:medic\_chestplate**
+Identifier: **poke_pfe:medic\_chestplate**
 
 Durability: **4300**
 
@@ -66,7 +66,7 @@ Trimmable: **Yes**
 
 ![poke\_medic\_leggings](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/medic_leggings.png?raw=true)
 
-Identifier: **poke:medic\_leggings**
+Identifier: **poke_pfe:medic\_leggings**
 
 Durability: **4300**
 
@@ -93,7 +93,7 @@ Trimmable: **Yes**
 
 ![poke\_medic\_boots](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/medic_boots.png?raw=true)
 
-Identifier: **poke:medic\_boots**
+Identifier: **poke_pfe:medic\_boots**
 
 Durability: **4300**
 

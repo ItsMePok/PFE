@@ -11,7 +11,7 @@ This Page is not complete yet. Check back later
 ## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 64
 
 {% hint style="warning" %}
-You need the tag `poke:config` to use this item
+You need the tag `poke_pfe:config` to use this item
 {% endhint %}
 
 ## Menus:

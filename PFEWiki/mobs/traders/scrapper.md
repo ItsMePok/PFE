@@ -1,6 +1,6 @@
 # Scrapper
 
-## Identifier: poke:scrapper
+## Identifier: poke_pfe:scrapper
 
 ## <img src="https://minecraft.wiki/images/Emerald_JE3_BE3.png?4c5f3" alt="Emerald." data-size="line"> Trades:
 
@@ -23,7 +23,7 @@
 
 ## Scrapper Spawn Egg
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: poke:raw\_astral <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: poke_pfe:raw\_astral <a href="#identifier" id="identifier"></a>
 
 ## Usage: Spawns the Scrapper
 

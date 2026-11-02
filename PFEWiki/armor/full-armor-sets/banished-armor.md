@@ -11,7 +11,7 @@
 
 ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_helmet.png?raw=true)
 
-Identifier: **poke:banished\_helmet**
+Identifier: **poke_pfe:banished\_helmet**
 
 Armor: **20**
 
@@ -29,7 +29,7 @@ Repairable with:
 
 ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_chestplate.png?raw=true)
 
-Identifier: **poke:banished\_chestplate**
+Identifier: **poke_pfe:banished\_chestplate**
 
 Armor: **25**
 
@@ -47,7 +47,7 @@ Repairable with:
 
 ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_leggings.png?raw=true)
 
-Identifier: **poke:banished\_leggings**
+Identifier: **poke_pfe:banished\_leggings**
 
 Armor: **25**
 
@@ -65,7 +65,7 @@ Repairable with:
 
 ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_boots.png?raw=true)
 
-Identifier: **poke:banished\_boots**
+Identifier: **poke_pfe:banished\_boots**
 
 Armor: **20**
 

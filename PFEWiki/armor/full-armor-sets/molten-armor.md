@@ -9,7 +9,7 @@
 
 ## Molten Helmet
 
-Identifier: **poke:molten\_helmet**
+Identifier: **poke_pfe:molten\_helmet**
 
 Durability: **3800**
 
@@ -26,7 +26,7 @@ Trimmable: **Yes**
 
 ## Molten Chestplate
 
-Identifier: **poke:molten\_chestplate**
+Identifier: **poke_pfe:molten\_chestplate**
 
 Durability: **3800**
 
@@ -43,7 +43,7 @@ Trimmable: **Yes**
 
 ## Molten Leggings
 
-Identifier: **poke:molten\_leggings**
+Identifier: **poke_pfe:molten\_leggings**
 
 Durability: **3800**
 
@@ -60,7 +60,7 @@ Trimmable: **Yes**
 
 ## Molten Boots
 
-Identifier: **poke:molten\_boots**
+Identifier: **poke_pfe:molten\_boots**
 
 Durability: **3800**
 
