@@ -26,7 +26,8 @@
           "result": [
             "1:poke_pfe:creedite_sword"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.creedite"
         },
         {
           "recipe_type": "transform",
@@ -38,7 +39,8 @@
           "result": [
             "1:poke_pfe:creedite_helmet"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.creedite"
         },
         {
           "recipe_type": "transform",
@@ -50,7 +52,8 @@
           "result": [
             "1:poke_pfe:creedite_chestplate"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.creedite"
         },
         {
           "recipe_type": "transform",
@@ -62,7 +65,8 @@
           "result": [
             "1:poke_pfe:creedite_leggings"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.creedite"
         },
         {
           "recipe_type": "transform",
@@ -74,7 +78,8 @@
           "result": [
             "1:poke_pfe:creedite_boots"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.creedite"
         },
         {
           "recipe_type": "transform",
@@ -86,7 +91,8 @@
           "result": [
             "1:poke_pfe:onyx_helmet"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.onyx"
         },
         {
           "recipe_type": "transform",
@@ -98,7 +104,8 @@
           "result": [
             "1:poke_pfe:onyx_chestplate"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.onyx"
         },
         {
           "recipe_type": "transform",
@@ -110,7 +117,8 @@
           "result": [
             "1:poke_pfe:onyx_leggings"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.onyx"
         },
         {
           "recipe_type": "transform",
@@ -122,7 +130,8 @@
           "result": [
             "1:poke_pfe:onyx_boots"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.onyx"
         },
         {
           "recipe_type": "transform",
@@ -134,7 +143,8 @@
           "result": [
             "1:poke_pfe:holy_helmet"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.holy"
         },
         {
           "recipe_type": "transform",
@@ -146,7 +156,8 @@
           "result": [
             "1:poke_pfe:holy_chestplate"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.holy"
         },
         {
           "recipe_type": "transform",
@@ -158,7 +169,8 @@
           "result": [
             "1:poke_pfe:holy_leggings"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.holy"
         },
         {
           "recipe_type": "transform",
@@ -170,7 +182,8 @@
           "result": [
             "1:poke_pfe:holy_boots"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.holy"
         },
         {
           "recipe_type": "transform",
@@ -182,7 +195,8 @@
           "result": [
             "1:poke_pfe:hellish_helmet"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.hellish"
         },
         {
           "recipe_type": "transform",
@@ -194,7 +208,8 @@
           "result": [
             "1:poke_pfe:hellish_chestplate"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.hellish"
         },
         {
           "recipe_type": "transform",
@@ -206,7 +221,8 @@
           "result": [
             "1:poke_pfe:hellish_leggings"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.hellish"
         },
         {
           "recipe_type": "transform",
@@ -218,7 +234,8 @@
           "result": [
             "1:poke_pfe:hellish_boots"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.hellish"
         },
         {
           "recipe_type": "transform",
@@ -231,7 +248,8 @@
           "result": [
             "1:poke_pfe:godly_helmet"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.godly"
         },
         {
           "recipe_type": "transform",
@@ -243,7 +261,8 @@
           "result": [
             "1:poke_pfe:godly_chestplate"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.godly"
         },
         {
           "recipe_type": "transform",
@@ -255,7 +274,8 @@
           "result": [
             "1:poke_pfe:godly_leggings"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.godly"
         },
         {
           "recipe_type": "transform",
@@ -267,7 +287,8 @@
           "result": [
             "1:poke_pfe:godly_boots"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.godly"
         },
         {
           "recipe_type": "transform",
@@ -280,7 +301,8 @@
           "result": [
             "1:poke_pfe:demonic_helmet"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.demonic"
         },
         {
           "recipe_type": "transform",
@@ -292,7 +314,8 @@
           "result": [
             "1:poke_pfe:demonic_chestplate"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.demonic"
         },
         {
           "recipe_type": "transform",
@@ -304,7 +327,8 @@
           "result": [
             "1:poke_pfe:demonic_leggings"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.demonic"
         },
         {
           "recipe_type": "transform",
@@ -316,7 +340,8 @@
           "result": [
             "1:poke_pfe:demonic_boots"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.demonic"
         },
         {
           "recipe_type": "transform",
@@ -328,7 +353,8 @@
           "result": [
             "1:poke_pfe:medic_helmet"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.medic"
         },
         {
           "recipe_type": "transform",
@@ -340,7 +366,8 @@
           "result": [
             "1:poke_pfe:medic_chestplate"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.medic"
         },
         {
           "recipe_type": "transform",
@@ -352,7 +379,8 @@
           "result": [
             "1:poke_pfe:medic_leggings"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.medic"
         },
         {
           "recipe_type": "transform",
@@ -364,7 +392,8 @@
           "result": [
             "1:poke_pfe:medic_boots"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.medic"
         },
         {
           "recipe_type": "transform",
@@ -376,7 +405,8 @@
           "result": [
             "1:poke_pfe:molten_helmet"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.molten"
         },
         {
           "recipe_type": "transform",
@@ -388,7 +418,8 @@
           "result": [
             "1:poke_pfe:molten_chestplate"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.molten"
         },
         {
           "recipe_type": "transform",
@@ -400,7 +431,8 @@
           "result": [
             "1:poke_pfe:molten_leggings"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.molten"
         },
         {
           "recipe_type": "transform",
@@ -412,7 +444,8 @@
           "result": [
             "1:poke_pfe:molten_boots"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.molten"
         },
         {
           "recipe_type": "transform",
@@ -424,7 +457,8 @@
           "result": [
             "1:poke_pfe:galaxy_helmet"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.galaxy"
         },
         {
           "recipe_type": "transform",
@@ -436,7 +470,8 @@
           "result": [
             "1:poke_pfe:galaxy_chestplate"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.galaxy"
         },
         {
           "recipe_type": "transform",
@@ -448,7 +483,8 @@
           "result": [
             "1:poke_pfe:galaxy_leggings"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.galaxy"
         },
         {
           "recipe_type": "transform",
@@ -460,7 +496,8 @@
           "result": [
             "1:poke_pfe:galaxy_boots"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.galaxy"
         },
         {
           "recipe_type": "transform",
@@ -472,7 +509,8 @@
           "result": [
             "1:poke_pfe:void_helmet"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.void"
         },
         {
           "recipe_type": "transform",
@@ -484,7 +522,8 @@
           "result": [
             "1:poke_pfe:void_chestplate"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.void"
         },
         {
           "recipe_type": "transform",
@@ -496,7 +535,8 @@
           "result": [
             "1:poke_pfe:void_leggings"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.void"
         },
         {
           "recipe_type": "transform",
@@ -508,7 +548,8 @@
           "result": [
             "1:poke_pfe:void_boots"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.void"
         },
         {
           "recipe_type": "transform",
@@ -521,7 +562,8 @@
           "result": [
             "1:poke_pfe:astral_helmet"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.astral"
         },
         {
           "recipe_type": "transform",
@@ -534,7 +576,8 @@
           "result": [
             "1:poke_pfe:astral_chestplate"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.astral"
         },
         {
           "recipe_type": "transform",
@@ -547,7 +590,8 @@
           "result": [
             "1:poke_pfe:astral_leggings"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.astral"
         },
         {
           "recipe_type": "transform",
@@ -560,7 +604,8 @@
           "result": [
             "1:poke_pfe:astral_boots"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.astral"
         },
         {
           "recipe_type": "transform",
@@ -573,7 +618,8 @@
           "result": [
             "1:poke_pfe:death_helmet"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.death"
         },
         {
           "recipe_type": "transform",
@@ -586,7 +632,8 @@
           "result": [
             "1:poke_pfe:death_chestplate"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.death"
         },
         {
           "recipe_type": "transform",
@@ -599,7 +646,8 @@
           "result": [
             "1:poke_pfe:death_leggings"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.death"
         },
         {
           "recipe_type": "transform",
@@ -612,7 +660,8 @@
           "result": [
             "1:poke_pfe:death_boots"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.death"
         },
         {
           "recipe_type": "transform",
@@ -626,7 +675,8 @@
           "result": [
             "1:poke_pfe:nebula_helmet"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.nebula"
         },
         {
           "recipe_type": "transform",
@@ -640,7 +690,8 @@
           "result": [
             "1:poke_pfe:nebula_chestplate"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.nebula"
         },
         {
           "recipe_type": "transform",
@@ -654,7 +705,8 @@
           "result": [
             "1:poke_pfe:nebula_leggings"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.nebula"
         },
         {
           "recipe_type": "transform",
@@ -668,7 +720,8 @@
           "result": [
             "1:poke_pfe:nebula_boots"
           ],
-          "keep_item_data_from": 0
+          "keep_item_data_from": 0,
+          "group": "poke_pfe.nebula"
         }
       ],
       "poke_pfe:recipe_block": {

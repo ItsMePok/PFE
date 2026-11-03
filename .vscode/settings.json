@@ -4251,7 +4251,7 @@
                         },
                         "poke_pfe:custom_recipes": {
                           "title": "Custom Recipes (PFE)",
-                          "description": "[Data Only]\nThese are recipes that are used in the Recipe Block (PFE) Component",
+                          "description": "[Data Only]\nThese are recipes that are used in the Recipe Block (PFE) Component (permutation schema)",
                           "type": "array",
                           "items": {
                             "description": "Recipe",
@@ -4287,6 +4287,10 @@
                               "keep_item_data_from": {
                                 "description": "(transform only) Keep the data from the specified item on the result item(s)",
                                 "type": "number"
+                              },
+                              "group": {
+                                "description": "A translation string of the group the recipe will be grouped into",
+                                "type": "string"
                               }
                             }
                           },
@@ -4653,7 +4657,10 @@
                           "description": "The items used in this recipe\n(Amount):(Identifier)",
                           "items": {
                             "type": "string",
-                            "pattern": "^([0-9]*)[:](.*)[:](.*)"
+                            "pattern": "^([0-9]+[:])([^:]*)[:]([^:]*)",
+                            "examples": [
+                              "1:poke_pfe:cobalt_ingot"
+                            ]
                           },
                           "minItems": 1
                         },
@@ -4662,7 +4669,11 @@
                           "type": "array",
                           "items": {
                             "type": "string",
-                            "pattern": "^([0-9]*)[:](.*)[:](.*)"
+                            "pattern": "^([0-9]+[:])([^:]*)[:]([^:]*)",
+                            "examples": [
+                              "1:poke_pfe:cobalt_ingot",
+                              "999:namespace:identifier"
+                            ]
                           },
                           "minItems": 1
                         },
@@ -4678,6 +4689,10 @@
                         "keep_item_data_from": {
                           "description": "(transform only) Keep the data from the specified item on the result item(s)",
                           "type": "number"
+                        },
+                        "group": {
+                          "description": "A translation string of the group the recipe will be grouped into",
+                          "type": "string"
                         }
                       }
                     },

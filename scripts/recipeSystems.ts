@@ -5,9 +5,11 @@
 [X] Shapeless Recipe Type
 [X] Transform Recipe Type
 [] Import Custom Recipes
+[TEST] Group Recipies
+[] Pages when many recipies
  */
 
-import { Block, BlockComponentPlayerInteractEvent, BlockPermutation, BlockType, BlockTypes, CustomComponentParameters, Entity, EntityComponentTypes, ItemComponent, ItemComponentTypes, ItemComponentUseEvent, ItemStack, Player, Vector3 } from "@minecraft/server";
+import { Block, BlockComponentPlayerInteractEvent, BlockPermutation, BlockType, BlockTypes, CustomComponentParameters, Entity, EntityComponentTypes, ItemComponent, ItemComponentTypes, ItemComponentUseEvent, ItemInventoryComponent, ItemStack, Player, Vector3 } from "@minecraft/server";
 import { ActionFormData, ModalFormData } from "@minecraft/server-ui";
 import { pokeAddItemsToPlayerOrDrop, PokeGetItemFromInventory } from "./commonFunctions";
 import { clampNumber } from "@minecraft/math";
@@ -31,7 +33,14 @@ interface CustomRecipes {// "poke_pfe:custom_recipes"
   result: string[] // ex: 2:poke_pfe:radium_ingot (amount:identifier) 
   recipe_type: "shapeless" | "transform"
   keep_item_data_from: number // ex: 0 would be the first item in the array note: only 1 item will be applied
+  group?: string // The group this recipe will be in
 }
+type AmountInfo = {
+  id: string,
+  fromStored: number,
+  fromInventory: number
+}
+
 class RecipeBlockComponent {
   onPlayerInteract(data: BlockComponentPlayerInteractEvent, componentInfo: CustomComponentParameters) {
     const component = <RecipeBlockComponentInfo>componentInfo.params
@@ -163,25 +172,69 @@ function Debug(component: RecipeBlockComponentInfo, player: Player, block: Block
 }
 function ViewAllRecipes(component: RecipeBlockComponentInfo, player: Player, recipes: CustomRecipes[], block: Block | ItemStack, storedItems: StoredItemsInfo[]) {
   const UI = new ActionFormData()
+  let groups: string[] = [];
+  let buttons = 0;
+  let recipeInfo: CustomRecipes[] = []
   UI.title({ translate: component.name })
-  for (const recipe of recipes) {
-    const Result = ParseRecipeItems(recipe.result)
-    UI.button({ translate: `${MakeLocalizationKey(Result.at(0)?.item ?? "undefined")}` }, getTexturePathByIdentifier(Result.at(0)?.item ?? "undefined"))
+  for (const RECIPE of recipes) {
+    const Result = ParseRecipeItems(RECIPE.result)
+    const ITEM_ICON = getTexturePathByIdentifier(Result.at(0)?.item ?? "undefined")
+    if (RECIPE.group) {
+      if (groups.includes(RECIPE.group)) continue;
+      else {
+        UI.button({ translate: RECIPE.group }, ITEM_ICON);
+      }
+    } else UI.button({ translate: `${MakeLocalizationKey(Result.at(0)?.item ?? "undefined")}` }, ITEM_ICON)
+    buttons++;
+    recipeInfo.push(RECIPE);
   }
   UI.button({ translate: `translation.poke_pfe.GoBack` }, 'textures/poke/common/left_arrow')
   UI.show(player).then(response => {
     let selection = 0
-    for (const recipe of recipes) {
+    for (const RECIPE of recipeInfo) {
       if (response.selection == selection) {
-        ViewRecipeInfo(component, player, recipes, block, recipe, storedItems)
+        if (RECIPE.group) {
+          ShowRecipeGroup(component, player, recipes, block, storedItems, RECIPE.group);
+        } else ViewRecipeInfo(component, player, recipes, block, RECIPE, storedItems);
         return;
       } else selection++
-    }
+    };
     if (response.canceled || response.selection == selection) {
-      PFERecipeBlockMainMenu(component, player, block)
+      PFERecipeBlockMainMenu(component, player, block);
       return;
     }
   })
+}
+
+// Opens the UI menu that shows a specific group of recipes
+function ShowRecipeGroup(component: RecipeBlockComponentInfo, player: Player, recipes: CustomRecipes[], block: Block | ItemStack, storedItems: StoredItemsInfo[], group: string) {
+  const UI = new ActionFormData();
+  UI.title({ translate: component.name });
+  let groupedRecipes: CustomRecipes[] = [];
+  for (const RECIPE of recipes) {
+    if (RECIPE?.group === group) {
+      const Result = ParseRecipeItems(RECIPE.result);
+      const ITEM_ICON = getTexturePathByIdentifier(Result.at(0)?.item ?? "undefined");
+      UI.button({ translate: `${MakeLocalizationKey(Result.at(0)?.item ?? "undefined")}` }, ITEM_ICON);
+      groupedRecipes.push(RECIPE);
+    };
+  }
+  UI.button({ translate: `translation.poke_pfe.GoBack` }, 'textures/poke/common/left_arrow');
+  UI.show(player).then(response => {
+    let selection = 0;
+    for (const RECIPE of groupedRecipes) {
+      if (response.selection == selection) {
+        ViewRecipeInfo(component, player, recipes, block, RECIPE, storedItems);
+        return;
+      }
+      else selection++;
+    };
+    if (response.canceled || response.selection == selection) {
+      ViewAllRecipes(component, player, recipes, block, storedItems);
+      return;
+    }
+  })
+
 }
 
 function ViewRecipeInfo(component: RecipeBlockComponentInfo, player: Player, recipes: CustomRecipes[], block: Block | ItemStack, recipe: CustomRecipes, storedItems: StoredItemsInfo[]) {
@@ -195,11 +248,7 @@ function ViewRecipeInfo(component: RecipeBlockComponentInfo, player: Player, rec
   UI.header({ translate: `%poke_pfe.required_items:` })
   let canCraft = 0
   const requiredItems = ParseRecipeItems(recipe.items)
-  type AmountInfo = {
-    id: string,
-    fromStored: number,
-    fromInventory: number
-  }
+
   let amountInfo: AmountInfo[] = []
   for (let item of requiredItems) {
     let itemTotal = 0
