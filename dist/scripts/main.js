@@ -8313,22 +8313,65 @@ function Debug(component, player, block, storedItems) {
 }
 function ViewAllRecipes(component, player, recipes, block, storedItems) {
   const UI = new ActionFormData10();
+  let groups = [];
+  let buttons = 0;
+  let recipeInfo = [];
   UI.title({ translate: component.name });
-  for (const recipe of recipes) {
-    const Result = ParseRecipeItems(recipe.result);
-    UI.button({ translate: `${MakeLocalizationKey(Result.at(0)?.item ?? "undefined")}` }, getTexturePathByIdentifier(Result.at(0)?.item ?? "undefined"));
+  for (const RECIPE of recipes) {
+    const Result = ParseRecipeItems(RECIPE.result);
+    const ITEM_ICON = getTexturePathByIdentifier(Result.at(0)?.item ?? "undefined");
+    if (RECIPE.group) {
+      if (groups.includes(RECIPE.group)) continue;
+      else {
+        UI.button({ translate: RECIPE.group }, ITEM_ICON);
+      }
+    } else UI.button({ translate: `${MakeLocalizationKey(Result.at(0)?.item ?? "undefined")}` }, ITEM_ICON);
+    buttons++;
+    recipeInfo.push(RECIPE);
   }
   UI.button({ translate: `translation.poke_pfe.GoBack` }, "textures/poke/common/left_arrow");
   UI.show(player).then((response) => {
     let selection = 0;
-    for (const recipe of recipes) {
+    for (const RECIPE of recipeInfo) {
       if (response.selection == selection) {
-        ViewRecipeInfo(component, player, recipes, block, recipe, storedItems);
+        if (RECIPE.group) {
+          ShowRecipeGroup(component, player, recipes, block, storedItems, RECIPE.group);
+        } else ViewRecipeInfo(component, player, recipes, block, RECIPE, storedItems);
         return;
       } else selection++;
     }
+    ;
     if (response.canceled || response.selection == selection) {
       PFERecipeBlockMainMenu(component, player, block);
+      return;
+    }
+  });
+}
+function ShowRecipeGroup(component, player, recipes, block, storedItems, group) {
+  const UI = new ActionFormData10();
+  UI.title({ translate: component.name });
+  let groupedRecipes = [];
+  for (const RECIPE of recipes) {
+    if (RECIPE?.group === group) {
+      const Result = ParseRecipeItems(RECIPE.result);
+      const ITEM_ICON = getTexturePathByIdentifier(Result.at(0)?.item ?? "undefined");
+      UI.button({ translate: `${MakeLocalizationKey(Result.at(0)?.item ?? "undefined")}` }, ITEM_ICON);
+      groupedRecipes.push(RECIPE);
+    }
+    ;
+  }
+  UI.button({ translate: `translation.poke_pfe.GoBack` }, "textures/poke/common/left_arrow");
+  UI.show(player).then((response) => {
+    let selection = 0;
+    for (const RECIPE of groupedRecipes) {
+      if (response.selection == selection) {
+        ViewRecipeInfo(component, player, recipes, block, RECIPE, storedItems);
+        return;
+      } else selection++;
+    }
+    ;
+    if (response.canceled || response.selection == selection) {
+      ViewAllRecipes(component, player, recipes, block, storedItems);
       return;
     }
   });
