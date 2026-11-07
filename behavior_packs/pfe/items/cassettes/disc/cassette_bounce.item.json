@@ -1,0 +1,38 @@
+{
+  "format_version": "1.26.50",
+  "minecraft:item": {
+    "description": {
+      "identifier": "poke_pfe:cassette_bounce",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "%poke_pfe.cassette\n%poke_pfe.tag"
+      },
+      "poke_pfe:icon_path": "textures/poke/pfe/cassette_bounce",
+      "minecraft:rarity": "uncommon",
+      "minecraft:icon": {
+        "textures": {
+          "default": "poke_pfe_cassette_bounce"
+        }
+      },
+      "poke_pfe:play_music": {
+        "music": "poke_pfe.disc.bounce",
+        "music_volume": 0.5
+      },
+      "minecraft:tags": {
+        "tags": [
+          "poke_pfe:is_cassette",
+          "minecraft:music_disc"
+        ]
+      },
+      "minecraft:record": {
+        "comparator_signal": 9,
+        "sound_event": "record.bounce",
+        "duration": 135
+      }
+    }
+  }
+}

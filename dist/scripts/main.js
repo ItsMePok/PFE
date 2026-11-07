@@ -7791,6 +7791,10 @@ function RegisterItemComponents(data) {
             data2.hitEntity.addEffect("blindness", 100);
             return;
           }
+          case "poke_pfe:medic_sword": {
+            data2.hitEntity.addEffect(MinecraftEffectTypes.Regeneration, 10, { amplifier: 2, showParticles: true });
+            data2.hitEntity.addEffect(MinecraftEffectTypes.InstantHealth, 1, { amplifier: 3, showParticles: false });
+          }
         }
         return;
       }
@@ -9540,7 +9544,7 @@ function RegisterBlockComponents(data) {
 }
 
 // scripts/main.ts
-var currentVersion = 103002;
+var currentVersion = 103005;
 world12.afterEvents.playerJoin.subscribe(((data) => {
   let birthdays = JSON.parse(world12.getDynamicProperty(`poke_pfe:birthdays`).toString());
   system9.runTimeout(() => {

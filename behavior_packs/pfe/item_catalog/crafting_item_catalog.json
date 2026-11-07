@@ -123,7 +123,8 @@
               "poke_pfe:astral_block",
               "poke_pfe:death_block",
               "poke_pfe:void_block",
-              "poke_pfe:holy_block"
+              "poke_pfe:holy_block",
+              "poke_pfe:creedite_block"
             ]
           },
           {
@@ -255,7 +256,9 @@
             "group_identifier": {
               "name": "minecraft:itemGroup.name.stairs"
             },
-            "items": []
+            "items": [
+              "poke_pfe:limestone_stairs"
+            ]
           },
           {
             "group_identifier": {
@@ -765,7 +768,7 @@
               "poke_pfe:radium_sword",
               "poke_pfe:godly_sword",
               "poke_pfe:demonic_sword",
-              //"poke_pfe:medic_sword",
+              "poke_pfe:medic_sword",
               "poke_pfe:galaxy_sword",
               //"poke_pfe:molten_sword",
               "poke_pfe:void_sword",
@@ -1460,6 +1463,12 @@
               "poke_pfe:cassette_os_piano",
               "poke_pfe:cassette_tears",
               "poke_pfe:cassette_lava_chicken",
+              "poke_pfe:cassette_ebb",
+              "poke_pfe:cassette_home",
+              "poke_pfe:cassette_memories",
+              "poke_pfe:cassette_nightly",
+              "poke_pfe:cassette_shores",
+              "poke_pfe:cassette_bounce",
               "poke_pfe:cassette_galactic_march",
               "poke_pfe:cassette_they_listen"
             ]
@@ -1546,7 +1555,8 @@
               "poke_pfe:radium_ingot",
               "poke_pfe:medic_ingot",
               "poke_pfe:death_ingot",
-              "poke_pfe:molten_slimeball"
+              "poke_pfe:molten_slimeball",
+              "poke_pfe:creedite_shard"
             ]
           },
           {
@@ -1658,6 +1668,7 @@
               "poke_pfe:block_breaker",
               "poke_pfe:dirter",
               "poke_pfe:duster",
+              "poke_pfe:flash_freezer",
               "poke_pfe:fisher",
               "poke_pfe:elevator",
               "poke_pfe:omnivator",

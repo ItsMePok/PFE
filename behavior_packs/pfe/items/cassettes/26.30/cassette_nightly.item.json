@@ -1,0 +1,31 @@
+{
+  "format_version": "1.26.50",
+  "minecraft:item": {
+    "description": {
+      "identifier": "poke_pfe:cassette_nightly",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "%poke_pfe.cassette\n§7fingerspit - %poke_pfe.nightly\n%poke_pfe.tag"
+      },
+      "poke_pfe:icon_path": "textures/poke/pfe/cassette_nightly",
+      "minecraft:rarity": "common",
+      "minecraft:icon": {
+        "textures": {
+          "default": "poke_pfe_cassette_nightly"
+        }
+      },
+      "poke_pfe:play_music": {
+        "music": "poke_pfe.music.nightly"
+      },
+      "minecraft:tags": {
+        "tags": [
+          "poke_pfe:is_cassette"
+        ]
+      }
+    }
+  }
+}

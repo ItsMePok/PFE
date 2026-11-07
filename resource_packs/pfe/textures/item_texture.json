@@ -1,5 +1,23 @@
 {
 	"texture_data": {
+		"poke_pfe_cassette_bounce": {
+			"textures": "textures/poke/pfe/cassette_bounce"
+		},
+		"poke_pfe_cassette_ebb": {
+			"textures": "textures/poke/pfe/cassette_ebb"
+		},
+		"poke_pfe_cassette_home": {
+			"textures": "textures/poke/pfe/cassette_home"
+		},
+		"poke_pfe_cassette_memories": {
+			"textures": "textures/poke/pfe/cassette_memories"
+		},
+		"poke_pfe_cassette_nightly": {
+			"textures": "textures/poke/pfe/cassette_nightly"
+		},
+		"poke_pfe_cassette_shores": {
+			"textures": "textures/poke/pfe/cassette_shores"
+		},
 		"poke_pfe_missing": {
 			"textures": "textures/poke/common/question"
 		},

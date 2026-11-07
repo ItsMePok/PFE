@@ -1,6 +1,66 @@
 {
 	"format_version": "1.26.60",
 	"sound_definitions": {
+		"poke_pfe.music.memories": {
+			"category": "ui",
+			"max_distance": 64,
+			"sounds": [
+				{
+					"name": "sounds/music/game/memories",
+					"stream": true
+				}
+			]
+		},
+		"poke_pfe.music.ebb": {
+			"category": "ui",
+			"max_distance": 64,
+			"sounds": [
+				{
+					"name": "sounds/music/game/ebb",
+					"stream": true
+				}
+			]
+		},
+		"poke_pfe.music.home": {
+			"category": "ui",
+			"max_distance": 64,
+			"sounds": [
+				{
+					"name": "sounds/music/game/home",
+					"stream": true
+				}
+			]
+		},
+		"poke_pfe.music.shores": {
+			"category": "ui",
+			"max_distance": 64,
+			"sounds": [
+				{
+					"name": "sounds/music/game/shores",
+					"stream": true
+				}
+			]
+		},
+		"poke_pfe.music.nightly": {
+			"category": "ui",
+			"max_distance": 64,
+			"sounds": [
+				{
+					"name": "sounds/music/game/nightly",
+					"stream": true
+				}
+			]
+		},
+		"poke_pfe.disc.bounce": {
+			"category": "ui",
+			"max_distance": 64,
+			"sounds": [
+				{
+					"name": "sounds/music/game/records/bounce",
+					"stream": true
+				}
+			]
+		},
 		"poke_pfe.disc.lava_chicken": {
 			"category": "ui",
 			"max_distance": 256,

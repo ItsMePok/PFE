@@ -219,6 +219,7 @@ function RegisterItemComponents(data: StartupEvent) {
         case 'poke_pfe:nebula_sword': { data.attackingEntity.addEffect('strength', 40, { amplifier: 4 }); data.hitEntity.addEffect('weakness', 20, { amplifier: 2 }); return; }
         case 'poke_pfe:ban_hammer': { data.attackingEntity.addEffect('strength', 40, { amplifier: 1 }); return; }
         case 'poke_pfe:circuit_sword': { data.attackingEntity.addEffect(MinecraftEffectTypes.FireResistance, 20, { amplifier: 0 }); data.attackingEntity.runCommand('execute as @e[rm=0.1,r=7,type=!lightning_bolt] at @s run summon lightning_bolt ~~~'); data.hitEntity.addEffect('blindness', 100); return; }
+        case 'poke_pfe:medic_sword': { data.hitEntity.addEffect(MinecraftEffectTypes.Regeneration, 10, { amplifier: 2, showParticles: true }); data.hitEntity.addEffect(MinecraftEffectTypes.InstantHealth, 1, { amplifier: 3, showParticles: false }); }
       }
       return;
     }
