@@ -79,18 +79,20 @@
 					},
 					"poke_pfe:can_double_slab": {},
 					"poke_pfe:cc_block_seat": {},
-					"minecraft:collision_box": {
-						"origin": [
-							-8,
-							0,
-							-8
-						],
-						"size": [
-							16,
-							8,
-							16
-						]
-					},
+					"minecraft:collision_box": [
+						{
+							"origin": [
+								-8,
+								0,
+								-8
+							],
+							"size": [
+								16,
+								8,
+								16
+							]
+						}
+					],
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "poke_pfe_godly_bricks"
@@ -140,18 +142,20 @@
 						"accepts_connections_from": "none"
 					},
 					"poke_pfe:can_double_slab": {},
-					"minecraft:collision_box": {
-						"origin": [
-							-8,
-							8,
-							-8
-						],
-						"size": [
-							16,
-							8,
-							16
-						]
-					},
+					"minecraft:collision_box": [
+						{
+							"origin": [
+								-8,
+								8,
+								-8
+							],
+							"size": [
+								16,
+								8,
+								16
+							]
+						}
+					],
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "poke_pfe_godly_bricks"

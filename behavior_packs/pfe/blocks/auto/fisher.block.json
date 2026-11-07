@@ -175,18 +175,20 @@
         "precipitation_behavior": "obstruct_rain"
       },
       "minecraft:display_name": "%poke_pfe.fisher\n%poke_pfe.fisher.desc\n%poke_pfe.tag",
-      "minecraft:collision_box": {
-        "size": [
-          16,
-          16,
-          16
-        ],
-        "origin": [
-          -8,
-          0,
-          -8
-        ]
-      },
+      "minecraft:collision_box": [
+        {
+          "size": [
+            16,
+            16,
+            16
+          ],
+          "origin": [
+            -8,
+            0,
+            -8
+          ]
+        }
+      ],
       "minecraft:selection_box": {
         "size": [
           16,

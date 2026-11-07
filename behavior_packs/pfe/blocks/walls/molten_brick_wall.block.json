@@ -119,18 +119,20 @@
 							8
 						]
 					},
-					"minecraft:collision_box": {
-						"origin": [
-							-4,
-							0,
-							-8
-						],
-						"size": [
-							8,
-							24,
-							12
-						]
-					}
+					"minecraft:collision_box": [
+						{
+							"origin": [
+								-4,
+								0,
+								-8
+							],
+							"size": [
+								8,
+								24,
+								12
+							]
+						}
+					]
 				}
 			},
 			{ //North Only
@@ -148,18 +150,20 @@
 							12
 						]
 					},
-					"minecraft:collision_box": {
-						"origin": [
-							-4,
-							0,
-							-8
-						],
-						"size": [
-							8,
-							24,
-							12
-						]
-					}
+					"minecraft:collision_box": [
+						{
+							"origin": [
+								-4,
+								0,
+								-8
+							],
+							"size": [
+								8,
+								24,
+								12
+							]
+						}
+					]
 				}
 			},
 			{ //South Only
@@ -177,18 +181,20 @@
 							12
 						]
 					},
-					"minecraft:collision_box": {
-						"origin": [
-							-4,
-							0,
-							-4
-						],
-						"size": [
-							8,
-							24,
-							12
-						]
-					}
+					"minecraft:collision_box": [
+						{
+							"origin": [
+								-4,
+								0,
+								-4
+							],
+							"size": [
+								8,
+								24,
+								12
+							]
+						}
+					]
 				}
 			},
 			{ //East Only
@@ -206,18 +212,20 @@
 							8
 						]
 					},
-					"minecraft:collision_box": {
-						"origin": [
-							-8,
-							0,
-							-4
-						],
-						"size": [
-							12,
-							24,
-							8
-						]
-					}
+					"minecraft:collision_box": [
+						{
+							"origin": [
+								-8,
+								0,
+								-4
+							],
+							"size": [
+								12,
+								24,
+								8
+							]
+						}
+					]
 				}
 			},
 			{ //West Only
@@ -235,18 +243,20 @@
 							8
 						]
 					},
-					"minecraft:collision_box": {
-						"origin": [
-							-4,
-							0,
-							-4
-						],
-						"size": [
-							12,
-							24,
-							8
-						]
-					}
+					"minecraft:collision_box": [
+						{
+							"origin": [
+								-4,
+								0,
+								-4
+							],
+							"size": [
+								12,
+								24,
+								8
+							]
+						}
+					]
 				}
 			},
 			{ //North & East
@@ -264,18 +274,20 @@
 							12
 						]
 					},
-					"minecraft:collision_box": {
-						"origin": [
-							-8,
-							0,
-							-8
-						],
-						"size": [
-							12,
-							24,
-							12
-						]
-					}
+					"minecraft:collision_box": [
+						{
+							"origin": [
+								-8,
+								0,
+								-8
+							],
+							"size": [
+								12,
+								24,
+								12
+							]
+						}
+					]
 				}
 			},
 			{ //North & West
@@ -293,18 +305,20 @@
 							12
 						]
 					},
-					"minecraft:collision_box": {
-						"origin": [
-							-4,
-							0,
-							-8
-						],
-						"size": [
-							12,
-							24,
-							12
-						]
-					}
+					"minecraft:collision_box": [
+						{
+							"origin": [
+								-4,
+								0,
+								-8
+							],
+							"size": [
+								12,
+								24,
+								12
+							]
+						}
+					]
 				}
 			},
 			{ //South & East
@@ -322,18 +336,20 @@
 							12
 						]
 					},
-					"minecraft:collision_box": {
-						"origin": [
-							-8,
-							0,
-							-4
-						],
-						"size": [
-							12,
-							24,
-							12
-						]
-					}
+					"minecraft:collision_box": [
+						{
+							"origin": [
+								-8,
+								0,
+								-4
+							],
+							"size": [
+								12,
+								24,
+								12
+							]
+						}
+					]
 				}
 			},
 			{ //South & West
@@ -351,18 +367,20 @@
 							12
 						]
 					},
-					"minecraft:collision_box": {
-						"origin": [
-							-4,
-							0,
-							-4
-						],
-						"size": [
-							12,
-							24,
-							12
-						]
-					}
+					"minecraft:collision_box": [
+						{
+							"origin": [
+								-4,
+								0,
+								-4
+							],
+							"size": [
+								12,
+								24,
+								12
+							]
+						}
+					]
 				}
 			},
 			{ //North & South w/o Above 
@@ -380,18 +398,20 @@
 							16
 						]
 					},
-					"minecraft:collision_box": {
-						"origin": [
-							-3,
-							0,
-							-8
-						],
-						"size": [
-							6,
-							24,
-							16
-						]
-					}
+					"minecraft:collision_box": [
+						{
+							"origin": [
+								-3,
+								0,
+								-8
+							],
+							"size": [
+								6,
+								24,
+								16
+							]
+						}
+					]
 				}
 			},
 			{ //East & West w/o Above
@@ -409,18 +429,20 @@
 							6
 						]
 					},
-					"minecraft:collision_box": {
-						"origin": [
-							-8,
-							0,
-							-3
-						],
-						"size": [
-							16,
-							24,
-							6
-						]
-					}
+					"minecraft:collision_box": [
+						{
+							"origin": [
+								-8,
+								0,
+								-3
+							],
+							"size": [
+								16,
+								24,
+								6
+							]
+						}
+					]
 				}
 			},
 			{ //North & South w/ Above 
@@ -438,18 +460,20 @@
 							16
 						]
 					},
-					"minecraft:collision_box": {
-						"origin": [
-							-3,
-							0,
-							-8
-						],
-						"size": [
-							6,
-							24,
-							16
-						]
-					}
+					"minecraft:collision_box": [
+						{
+							"origin": [
+								-3,
+								0,
+								-8
+							],
+							"size": [
+								6,
+								24,
+								16
+							]
+						}
+					]
 				}
 			},
 			{ //East & West w/ Above
@@ -467,18 +491,20 @@
 							6
 						]
 					},
-					"minecraft:collision_box": {
-						"origin": [
-							-8,
-							0,
-							-3
-						],
-						"size": [
-							16,
-							24,
-							6
-						]
-					}
+					"minecraft:collision_box": [
+						{
+							"origin": [
+								-8,
+								0,
+								-3
+							],
+							"size": [
+								16,
+								24,
+								6
+							]
+						}
+					]
 				}
 			},
 			{ //North, East, South
@@ -496,18 +522,20 @@
 							16
 						]
 					},
-					"minecraft:collision_box": {
-						"origin": [
-							-8,
-							0,
-							-8
-						],
-						"size": [
-							12,
-							24,
-							16
-						]
-					}
+					"minecraft:collision_box": [
+						{
+							"origin": [
+								-8,
+								0,
+								-8
+							],
+							"size": [
+								12,
+								24,
+								16
+							]
+						}
+					]
 				}
 			},
 			{ //North, West, South
@@ -525,18 +553,20 @@
 							16
 						]
 					},
-					"minecraft:collision_box": {
-						"origin": [
-							-4,
-							0,
-							-8
-						],
-						"size": [
-							12,
-							24,
-							16
-						]
-					}
+					"minecraft:collision_box": [
+						{
+							"origin": [
+								-4,
+								0,
+								-8
+							],
+							"size": [
+								12,
+								24,
+								16
+							]
+						}
+					]
 				}
 			},
 			{ //North, East, West
@@ -554,18 +584,20 @@
 							12
 						]
 					},
-					"minecraft:collision_box": {
-						"origin": [
-							-8,
-							0,
-							-8
-						],
-						"size": [
-							16,
-							24,
-							12
-						]
-					}
+					"minecraft:collision_box": [
+						{
+							"origin": [
+								-8,
+								0,
+								-8
+							],
+							"size": [
+								16,
+								24,
+								12
+							]
+						}
+					]
 				}
 			},
 			{ //South, West, East
@@ -583,18 +615,20 @@
 							12
 						]
 					},
-					"minecraft:collision_box": {
-						"origin": [
-							-8,
-							0,
-							-4
-						],
-						"size": [
-							16,
-							24,
-							12
-						]
-					}
+					"minecraft:collision_box": [
+						{
+							"origin": [
+								-8,
+								0,
+								-4
+							],
+							"size": [
+								16,
+								24,
+								12
+							]
+						}
+					]
 				}
 			}
 		]

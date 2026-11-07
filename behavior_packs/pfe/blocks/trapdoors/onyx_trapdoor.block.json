@@ -57,18 +57,20 @@
 					"render_method": "blend"
 				}
 			},
-			"minecraft:collision_box": {
-				"origin": [
-					-8,
-					0,
-					-8
-				],
-				"size": [
-					16,
-					3,
-					16
-				]
-			},
+			"minecraft:collision_box": [
+				{
+					"origin": [
+						-8,
+						0,
+						-8
+					],
+					"size": [
+						16,
+						3,
+						16
+					]
+				}
+			],
 			"minecraft:selection_box": {
 				"origin": [
 					-8,

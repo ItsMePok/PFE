@@ -43,18 +43,20 @@
 					8
 				]
 			},
-			"minecraft:collision_box": {
-				"origin": [
-					-4,
-					0,
-					-4
-				],
-				"size": [
-					8,
-					8,
-					8
-				]
-			},
+			"minecraft:collision_box": [
+				{
+					"origin": [
+						-4,
+						0,
+						-4
+					],
+					"size": [
+						8,
+						8,
+						8
+					]
+				}
+			],
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 7.5,
 				"item_specific_speeds": [
