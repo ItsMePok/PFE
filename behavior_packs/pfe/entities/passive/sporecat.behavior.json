@@ -88,13 +88,15 @@
 					"family_types": [
 						"zombie"
 					],
-					"seats": {
-						"position": [
-							0,
-							0.35,
-							0
-						]
-					}
+					"seats": [
+						{
+							"position": [
+								0,
+								0.35,
+								0
+							]
+						}
+					]
 				},
 				"minecraft:behavior.nearest_attackable_target": {
 					"priority": 1,

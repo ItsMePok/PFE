@@ -815,13 +815,15 @@
 				"family_types": [
 					"zombie"
 				],
-				"seats": {
-					"position": [
-						0,
-						1.105,
-						0
-					]
-				}
+				"seats": [
+					{
+						"position": [
+							0,
+							1.105,
+							0
+						]
+					}
+				]
 			},
 			"minecraft:despawn": {
 				"despawn_from_distance": {}

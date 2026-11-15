@@ -11,8 +11,12 @@
 		"component_groups": {
 			"pickup_item_delay": {
 				"minecraft:timer": {
+					"random_time_choices": [
+						{
+							"value": 3
+						}
+					],
 					"looping": false,
-					"time": 3,
 					"time_down_event": {
 						"event": "pickup_item_delay_complete"
 					}

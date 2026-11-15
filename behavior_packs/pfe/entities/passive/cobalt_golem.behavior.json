@@ -57,13 +57,15 @@
 						"zombie"
 					],
 					"interact_text": "action.interact.mount",
-					"seats": {
-						"position": [
-							0,
-							1.6,
-							-0.4
-						]
-					}
+					"seats": [
+						{
+							"position": [
+								0,
+								1.6,
+								-0.4
+							]
+						}
+					]
 				},
 				"minecraft:behavior.mount_pathing": {
 					"priority": 2,

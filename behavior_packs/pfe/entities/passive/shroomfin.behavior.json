@@ -120,8 +120,12 @@
 					"can_jump": false
 				},
 				"minecraft:timer": {
+					"random_time_choices": [
+						{
+							"value": 120
+						}
+					],
 					"looping": false,
-					"time": 120,
 					"time_down_event": {
 						"event": "dried_out"
 					}

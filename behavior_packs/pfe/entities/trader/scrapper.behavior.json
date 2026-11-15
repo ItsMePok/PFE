@@ -101,10 +101,10 @@
 				"new_screen": true,
 				"hero_demand_discount": 0,
 				"persist_trades": false,
-				"cured_discount": [
-					0,
-					0
-				],
+				"cured_discount": {
+					"min": 0,
+					"max": 0
+				},
 				"convert_trades_economy": false,
 				"use_legacy_price_formula": true
 			},

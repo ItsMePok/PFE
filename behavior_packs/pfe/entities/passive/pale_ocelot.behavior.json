@@ -79,13 +79,15 @@
 					"family_types": [
 						"zombie"
 					],
-					"seats": {
-						"position": [
-							0,
-							0.35,
-							0
-						]
-					}
+					"seats": [
+						{
+							"position": [
+								0,
+								0.35,
+								0
+							]
+						}
+					]
 				}
 			},
 			"minecraft:ocelot_trusting": {

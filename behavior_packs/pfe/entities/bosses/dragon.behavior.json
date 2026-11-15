@@ -64,7 +64,11 @@
 					]
 				},
 				"minecraft:timer": {
-					"time": 10,
+					"random_time_choices": [
+						{
+							"value": 10
+						}
+					],
 					"looping": false,
 					"time_down_event": {
 						"event": "poke_pfe:mode_switch_range",
@@ -92,7 +96,11 @@
 					"sound": "entity.ender_dragon.shoot"
 				},
 				"minecraft:timer": {
-					"time": 10,
+					"random_time_choices": [
+						{
+							"value": 10
+						}
+					],
 					"looping": false,
 					"time_down_event": {
 						"event": "poke_pfe:mode_switch_spawning",
@@ -102,7 +110,11 @@
 			},
 			"timer": {
 				"minecraft:timer": {
-					"time": 1800,
+					"random_time_choices": [
+						{
+							"value": 1800
+						}
+					],
 					"looping": true,
 					"time_down_event": {
 						"event": "poke_pfe:despawn",

@@ -51,9 +51,16 @@
 			},
 			"minecraft:woodspike_guardian_passive": {
 				"minecraft:timer": {
-					"time": [
-						1,
-						3
+					"random_time_choices": [
+						{
+							"value": 1
+						},
+						{
+							"value": 2
+						},
+						{
+							"value": 3
+						}
 					],
 					"looping": false,
 					"time_down_event": {

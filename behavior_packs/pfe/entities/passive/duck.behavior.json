@@ -96,13 +96,15 @@
 					"family_types": [
 						"zombie"
 					],
-					"seats": {
-						"position": [
-							0,
-							0.4,
-							0
-						]
-					}
+					"seats": [
+						{
+							"position": [
+								0,
+								0.4,
+								0
+							]
+						}
+					]
 				},
 				"minecraft:buoyant": {
 					"base_buoyancy": 0.5,

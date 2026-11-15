@@ -24,16 +24,22 @@
 				"pull_in_entities": false,
 				"rider_can_interact": false,
 				"seat_count": 1,
-				"seats": {
-					"position": [
-						0,
-						-0.125,
-						0
-					]
-				}
+				"seats": [
+					{
+						"position": [
+							0,
+							-0.125,
+							0
+						]
+					}
+				]
 			},
 			"minecraft:timer": {
-				"time": 5,
+				"random_time_choices": [
+					{
+						"value": 5
+					}
+				],
 				"looping": true,
 				"time_down_event": {
 					"event": "poke_pfe:block_check",

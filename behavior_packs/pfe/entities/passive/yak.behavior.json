@@ -206,13 +206,15 @@
 				"family_types": [
 					"zombie"
 				],
-				"seats": {
-					"position": [
-						0,
-						1.105,
-						0
-					]
-				}
+				"seats": [
+					{
+						"position": [
+							0,
+							1.105,
+							0
+						]
+					}
+				]
 			},
 			"minecraft:physics": {},
 			"minecraft:pushable_by_block": {},

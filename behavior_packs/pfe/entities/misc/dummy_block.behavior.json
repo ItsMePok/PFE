@@ -15,7 +15,11 @@
 				"width": 1
 			},
 			"minecraft:timer": {
-				"time": 30,
+				"random_time_choices": [
+					{
+						"value": 30
+					}
+				],
 				"looping": true,
 				"time_down_event": {
 					"event": "poke_pfe:despawn",
