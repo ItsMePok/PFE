@@ -171,20 +171,21 @@ function Debug(component: RecipeBlockComponentInfo, player: Player, block: Block
 
 }
 function ViewAllRecipes(component: RecipeBlockComponentInfo, player: Player, recipes: CustomRecipes[], block: Block | ItemStack, storedItems: StoredItemsInfo[]) {
-  const UI = new ActionFormData()
+  const UI = new ActionFormData();
   let groups: string[] = [];
   let buttons = 0;
-  let recipeInfo: CustomRecipes[] = []
-  UI.title({ translate: component.name })
+  let recipeInfo: CustomRecipes[] = [];
+  UI.title({ translate: component.name });
   for (const RECIPE of recipes) {
-    const Result = ParseRecipeItems(RECIPE.result)
-    const ITEM_ICON = getTexturePathByIdentifier(Result.at(0)?.item ?? "undefined")
+    const RESULT = ParseRecipeItems(RECIPE.result);
+    const ITEM_ICON = getTexturePathByIdentifier(RESULT.at(0)?.item ?? "undefined");
     if (RECIPE.group) {
       if (groups.includes(RECIPE.group)) continue;
       else {
         UI.button({ translate: RECIPE.group }, ITEM_ICON);
+        groups.push(RECIPE.group);
       }
-    } else UI.button({ translate: `${MakeLocalizationKey(Result.at(0)?.item ?? "undefined")}` }, ITEM_ICON)
+    } else UI.button({ translate: `${MakeLocalizationKey(RESULT.at(0)?.item ?? "undefined")}` }, ITEM_ICON)
     buttons++;
     recipeInfo.push(RECIPE);
   }
