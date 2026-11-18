@@ -34,6 +34,12 @@
 			"minecraft:precipitation_interactions": {
 				"precipitation_behavior": "obstruct_rain"
 			},
+			"minecraft:instrument_sound": {
+				"up": "note.bd"
+			},
+			"minecraft:sound": {
+				"sound": "coral"
+			},
 			"minecraft:chest_obstruction": {
 				"obstruction_rule": "shape"
 			},

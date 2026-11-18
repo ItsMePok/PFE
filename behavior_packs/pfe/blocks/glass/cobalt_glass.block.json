@@ -9,7 +9,20 @@
 		},
 		"components": {
 			"minecraft:display_name": "%poke_pfe.cobalt_glass\n%poke_pfe.tag",
-			"minecraft:collision_box": true,
+			"minecraft:collision_box": [
+				{
+					"origin": [
+						-8,
+						0,
+						-8
+					],
+					"size": [
+						16,
+						16,
+						16
+					]
+				}
+			],
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 0.4
 			},
