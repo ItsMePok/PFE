@@ -1,0 +1,19 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "poke_pfe:cobbled_shadowstone_stairs_sc_f_st"
+		},
+		"tags": [
+			"stonecutter"
+		],
+		"ingredients": [
+			{
+				"item": "poke_pfe:shadowstone"
+			}
+		],
+		"result": {
+			"item": "poke_pfe:cobbled_shadowstone_stairs"
+		}
+	}
+}
