@@ -14,6 +14,8 @@ description: Last updated to match v1.3.04
 
 ## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark> <a href="#rarity" id="rarity"></a>
 
+## <img src="https://minecraft.wiki/images/Note_Block_JE2_BE2.png?0bf0f" alt="" data-size="line"> Note Sound: <mark style="color:yellow;">Bass Drum</mark>
+
 ## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">64</mark> <a href="#stack-size" id="stack-size"></a>
 
 ## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining: <a href="#obtaining" id="obtaining"></a>
