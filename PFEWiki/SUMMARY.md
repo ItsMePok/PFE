@@ -730,6 +730,7 @@
     * [Cobalt Glass](blocks/glass/cobalt-glass.md)
   * [Stairs](blocks/stairs/README.md)
     * [Limestone Stairs](blocks/stairs/limestone-stairs.md)
+    * [Cut Astral Stairs](blocks/stairs/cut-astral-stairs.md)
   * [Slabs](blocks/slabs/README.md)
     * [Brick Slabs](blocks/slabs/brick-slabs/README.md)
       * [Hellish Brick Slab](blocks/slabs/brick-slabs/hellish-brick-slab.md)
