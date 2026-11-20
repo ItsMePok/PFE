@@ -23,6 +23,19 @@ description: Last updated to match v1.3.05
 | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutAstral.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
 | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutAstral.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutAstral.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
 | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutAstral.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutAstral.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutAstral.png?raw=true) |
+
+Items:
+
+* 6x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutAstral.png?raw=true" alt="" data-size="line"> [Cut Astral](..\cut-blocks\cut-astral.md)
+
+Outputs:
+
+* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutAstralStairs.png?raw=true" alt="" data-size="line"> [Cut Astral Stairs](cut-astral-stairs.md)
+
+Recipe can be unlocked with:
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutAstral.png?raw=true" alt="" data-size="line"> [Cut Astral](..\cut-blocks\cut-astral.md)
+
 {% endtab %}
 
 {% tab title="Stonecutting" %}

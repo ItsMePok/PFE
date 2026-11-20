@@ -22,6 +22,19 @@ description: Last updated to match v1.3.05
 | :-: | :-: |
 | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/AstralBlock.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/AstralBlock.png?raw=true) |
 | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/AstralBlock.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/AstralBlock.png?raw=true) |
+
+Items:
+
+* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/AstralBlock.png?raw=true" alt="" data-size="line"> [Block of Astral](..\ore-blocks\block-of-astral.md)
+
+Outputs:
+
+* 12x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutAstral.png?raw=true" alt="" data-size="line"> [Cut Astral](cut-astral.md)
+
+Recipe can be unlocked with:
+
+* <img src="undefined" alt="" data-size="line"> [Astral Ingot](..\..\..)
+
 {% endtab %}
 
 {% tab title="Stonecutting" %}

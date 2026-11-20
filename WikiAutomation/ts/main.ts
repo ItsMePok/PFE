@@ -209,10 +209,10 @@ function GetDisplayNameByIdentifier(identifier:string){
     return name;
 }
 
-function CreateShapedRecipe(file:string, RECIPE: BPRecipeFile, item: IndexItem){
-    if (!RECIPE["minecraft:recipe_shaped"])return file;
-    
-    const RECIPE_PATTERN = RECIPE["minecraft:recipe_shaped"].pattern
+function CreateShapedRecipe(file:string, RECIPE: BPRecipeFile, ITEM: IndexItem){
+    const SHAPED_RECIPE = RECIPE["minecraft:recipe_shaped"]
+    if (!SHAPED_RECIPE)return file;
+    const RECIPE_PATTERN = SHAPED_RECIPE.pattern
     const RECIPE_SIZE = {length:GetMaxLengthOfStringSet(RECIPE_PATTERN),width:RECIPE_PATTERN.length};
 console.log(JSON.stringify(RECIPE_SIZE))
     // Start Tab
@@ -250,7 +250,6 @@ console.log(JSON.stringify(RECIPE_SIZE))
     let item7 = GetIdentifierFromShapedPattern(RECIPE,{x:1,y:3});
     let item8 = GetIdentifierFromShapedPattern(RECIPE,{x:2,y:3});
     let item9 = GetIdentifierFromShapedPattern(RECIPE,{x:3,y:3});
-    let tmpstr = ""
     switch(RECIPE_SIZE.width){
         case 3: {
             table = ["|"]
@@ -306,33 +305,34 @@ console.log(JSON.stringify(RECIPE_SIZE))
     for (const piece of table.reverse()){
         file = `${file}${piece}`
     }  
+
+    // Make Items:
+    file = `${file}\n\nItems:\n`
+    const RECIPE_ITEMS = [item1,item2,item3,item4,item5,item6,item7,item8,item9]
+    const ITEM_COUNTS = GetCountOfEachItem(RECIPE_ITEMS)
+    for (const item of ITEM_COUNTS){
+        file = `${file}\n* ${item.count !== 1 ? `${item.count}x`: ""} <img src="${GetImageLink(item.value)}" alt="" data-size="line"> [${GetDisplayNameByIdentifier(item.value)}](${GetWikiPagePath(ITEM.wiki_page,FindItemByIdentifier(item.value)?.wiki_page ?? "")})\n`
+    }
+    // Make Outputs:
+
+    file = `${file}\nOutputs:\n`
+
+    file = `${file}\n* ${SHAPED_RECIPE.result.count !== 1 ? `${SHAPED_RECIPE.result.count}x`: ""} <img src="${GetImageLink(SHAPED_RECIPE.result.item)}" alt="" data-size="line"> [${GetDisplayNameByIdentifier(SHAPED_RECIPE.result.item)}](${GetWikiPagePath(ITEM.wiki_page,FindItemByIdentifier(SHAPED_RECIPE.result.item)?.wiki_page ?? "")})\n`
+    
+    // Make Unlock:
+    file = `${file}\nRecipe can be unlocked with:\n`
+    for (const item of SHAPED_RECIPE.unlock){
+        file = `${file}\n* <img src="${GetImageLink(item.item)}" alt="" data-size="line"> [${GetDisplayNameByIdentifier(item.item)}](${GetWikiPagePath(ITEM.wiki_page,FindItemByIdentifier(item.item)?.wiki_page ?? "")})\n`
+    }
+
+
     //End Tab:
     file = `${file}\n{% endtab %}\n`
     return file;
 
 
     /*EX:
-    {% tab title="Crafting" %}
 
-
-<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the<br><a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
-
-
-||||
-| :-: | :-: | :-: |
-| ![]() | ![]() | ![]() |
-| ![]() | ![]() | ![]() |
-| ![]() | ![]() | ![]() |
-
-Items:
-
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/Limestone.png?raw=true" alt="" data-size="line"> [Limestone](../misc/limestone.md)
-
-Outputs:
-
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/LimestoneStairs.png?raw=true" alt="" data-size="line"> Limestone Stairs
-
-Recipe can be unlocked with:
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/Limestone.png?raw=true" alt="" data-size="line"> [Limestone](../misc/limestone.md)
 {% endtab %}
@@ -357,4 +357,23 @@ function GetIdentifierFromShapedPattern(RECIPE:BPRecipeFile, location: {x:number
     }
     const KEYS = RECIPE["minecraft:recipe_shaped"].key
     return KEYS[keyVal].item
+}
+
+function GetCountOfEachItem(items:any[]){
+    let final: {value:any,count:number}[] = []
+    let currentEntries:any[] = []
+    for (const item of items){
+        if (item === undefined)continue;
+        if (currentEntries.includes(item)){
+            final.forEach((data)=>{
+                if (data.value == item){
+                    data.count++;
+                }
+            })
+        }else{
+              final.push({value:item,count:1}) 
+              currentEntries.push(item) 
+        };
+    }
+    return final
 }
