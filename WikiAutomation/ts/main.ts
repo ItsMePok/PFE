@@ -19,6 +19,9 @@ COMPONENTS
 */
 const VERSION = "1.3.05"
 const NAMESPACE = "poke_pfe"
+const LANG_FILE_ID = "en_US"
+const LANG_FILE_PATH = `./WikiAutomation/PFE/resource_packs/pfe/texts/${LANG_FILE_ID}.lang`
+const LANG_FILE = readFileSync(`${LANG_FILE_PATH}`,{encoding:"utf8"})
 const TEXTURE_INDEX = JSON.parse(readFileSync(`${"./WikiAutomation/texture_index.json"}`,{encoding:"utf8"}))
 
 type IndexItem = (typeof index.index)[number]
@@ -42,6 +45,31 @@ type BPRecipeFile = {
             count?: number
 		}
 	}
+    "minecraft:recipe_shaped"?:{
+        "description": {
+            "identifier": string//Recipe Identifier
+        },
+        "assume_symmetry": boolean,
+        "tags": string[],
+        "group": string,
+        "unlock": [
+            {
+                "item": string //Item/Block Identifier
+            }
+         ],
+        "pattern": string[],
+    "key": {
+        [key:string]: {
+            "item": string //Item/Block Identifier
+        }
+    },
+    "result": {
+      "item": string, //Identifier
+      "count": number
+    }
+  
+
+    }
 }
 
 
@@ -56,7 +84,7 @@ for (const item of index.index){
     //Make Page Description:
     file = `${file}---\ndescription: Last updated to match v${VERSION}\n---\n`;
     //Make Title:
-    file = `${file}\n# ${item.components.name}\n`;
+    file = `${file}\n# ${GetDisplayNameByIdentifier(item.identifier)}\n`;
 
     //Make main image:
         file = `${file}\n<figure><img src="${GetImageLink(item.identifier)}" alt=""><figcaption></figcaption></figure>\n`;
@@ -78,10 +106,17 @@ for (const item of index.index){
     }
 
     //Make Obtaining:
-    file = `${file}\n## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining: <a href="#obtaining" id="obtaining"></a>\n\n{% tabs %}`
+    file = `${file}\n## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining: <a href="#obtaining" id="obtaining"></a>\n\n{% tabs %}\n`
     for(const recipe of item.components.recipes ?? []){
         const RECIPE_FILE:BPRecipeFile = JSON.parse(readFileSync(`${recipe}`,{encoding:"utf8"}));
-        console.log(JSON.stringify(RECIPE_FILE))
+        //console.log(JSON.stringify(RECIPE_FILE))
+        if (RECIPE_FILE["minecraft:recipe_shaped"]){
+            for(const tag of RECIPE_FILE["minecraft:recipe_shaped"].tags){
+                if (tag == "crafting_table"){
+                    file = CreateShapedRecipe(file, RECIPE_FILE, item);
+                }
+            }
+        }
         if (RECIPE_FILE["minecraft:recipe_shapeless"]){
             for(const tag of RECIPE_FILE["minecraft:recipe_shapeless"].tags){
                 if (tag == "stonecutter"){
@@ -118,7 +153,7 @@ file = `${file}\n{% tab title="Stonecutting" %}\n<figure><img src="https://minec
 console.log(JSON.stringify(RECIPE["minecraft:recipe_shapeless"]?.ingredients.at(0)?.item))
 let INGREDIENT_ITEM = FindItemByIdentifier(RECIPE["minecraft:recipe_shapeless"]?.ingredients.at(0)?.item ?? "")
 
-file = `${file}\n<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="${GetImageLink(RECIPE["minecraft:recipe_shapeless"]?.ingredients.at(0)?.item ?? "MISSING" )}" alt="" data-size="line"> <a href="${GetWikiPagePath(item.wiki_page,INGREDIENT_ITEM?.wiki_page ?? "")}">${FindItemByIdentifier(RECIPE["minecraft:recipe_shapeless"]?.ingredients.at(0)?.item ?? "")?.components.name}</a></td><td><img src="${GetImageLink(RECIPE["minecraft:recipe_shapeless"]?.result.item)}" alt="" data-size="line"> ${item.components.name}</td><td>${RECIPE["minecraft:recipe_shapeless"]?.result.count ?? 1}</td></tr></tbody></table>\n`
+file = `${file}\n<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="${GetImageLink(RECIPE["minecraft:recipe_shapeless"]?.ingredients.at(0)?.item ?? "MISSING" )}" alt="" data-size="line"> <a href="${GetWikiPagePath(item.wiki_page,INGREDIENT_ITEM?.wiki_page ?? "")}">${GetDisplayNameByIdentifier(RECIPE["minecraft:recipe_shapeless"]?.ingredients.at(0)?.item ?? "")}</a></td><td><img src="${GetImageLink(RECIPE["minecraft:recipe_shapeless"]?.result.item)}" alt="" data-size="line"> ${GetDisplayNameByIdentifier(item.identifier)}</td><td>${RECIPE["minecraft:recipe_shapeless"]?.result.count ?? 1}</td></tr></tbody></table>\n`
 //End Tab:
 file = `${file}\n{% endtab %}`
 
@@ -127,8 +162,12 @@ return file;
 
 function GetImageLink(identifier?:string){
     console.log("\n"+identifier)
+    
     let path = "";
     if (identifier)path = TEXTURE_INDEX[identifier.replace(`${NAMESPACE}:`,"")];
+    else{
+        return TEXTURE_INDEX["MISSING"]
+    }
     if (path){
         if (path.includes("%BR:")){
             path = `https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/${path.replace("%BR:",'')}.png?raw=true`;
@@ -159,4 +198,163 @@ function GetWikiPagePath(fromPage:string,toPage:string){
     console.log(`The path between:\n- ${fromPage}\n - ${toPage}\n is:\n- ${isPage}`)
 
     return isPage;
+}
+
+function GetDisplayNameByIdentifier(identifier:string){
+    const ITEM = FindItemByIdentifier(identifier);
+    if (ITEM?.components.name)return ITEM.components.name;
+    let namePos = LANG_FILE.search(`${NAMESPACE}.${identifier.replace(`${NAMESPACE}:`,"")}`)
+    let name = LANG_FILE.substring(namePos).split("\n",1).at(0)?.replace(`${NAMESPACE}.${identifier.replace(`${NAMESPACE}:`,"")}=`,"").replace("\r","")
+    console.log([name])
+    return name;
+}
+
+function CreateShapedRecipe(file:string, RECIPE: BPRecipeFile, item: IndexItem){
+    if (!RECIPE["minecraft:recipe_shaped"])return file;
+    
+    const RECIPE_PATTERN = RECIPE["minecraft:recipe_shaped"].pattern
+    const RECIPE_SIZE = {length:GetMaxLengthOfStringSet(RECIPE_PATTERN),width:RECIPE_PATTERN.length};
+console.log(JSON.stringify(RECIPE_SIZE))
+    // Start Tab
+    file = `${file}\n{% tab title="Crafting" %}\n`;
+
+    // Add Image:
+    file = `${file}\n<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the<br><a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>\n`
+
+   
+ 
+    //Add Table top
+    switch(RECIPE_SIZE.length){ 
+        case 3: {
+            file = `${file}\n||||\n| :-: | :-: | :-: |\n`;
+            break;
+        }
+        case 2: {
+            file = `${file}\n|||\n| :-: | :-: |\n`;
+            break;
+        }
+        case 1: {
+            file = `${file}\n||\n| :-: |\n`;
+            break;
+        }
+    }
+    console.log("Starting Pieces")
+    //Add Table pieces:
+    let table:string[] = []
+    let item1 = GetIdentifierFromShapedPattern(RECIPE,{x:1,y:1});
+    let item2 = GetIdentifierFromShapedPattern(RECIPE,{x:2,y:1});
+    let item3 = GetIdentifierFromShapedPattern(RECIPE,{x:3,y:1});
+    let item4 = GetIdentifierFromShapedPattern(RECIPE,{x:1,y:2});
+    let item5 = GetIdentifierFromShapedPattern(RECIPE,{x:2,y:2});
+    let item6 = GetIdentifierFromShapedPattern(RECIPE,{x:3,y:2});
+    let item7 = GetIdentifierFromShapedPattern(RECIPE,{x:1,y:3});
+    let item8 = GetIdentifierFromShapedPattern(RECIPE,{x:2,y:3});
+    let item9 = GetIdentifierFromShapedPattern(RECIPE,{x:3,y:3});
+    let tmpstr = ""
+    switch(RECIPE_SIZE.width){
+        case 3: {
+            table = ["|"]
+            switch (RECIPE_SIZE.length){
+                case 3: {
+                    table = [`${table.at(0)} ![](${GetImageLink(item9)}) |`]
+                }
+                case 2: {
+                    table = [`${table.at(0)} ![](${GetImageLink(item8)}) |`]
+                }
+                case 1: {
+                    table = [`${table.at(0)} ![](${GetImageLink(item7)}) |`]
+                }
+            }
+        }
+        case 2: {
+            if (table.length == 1){
+                table = ["\n|"].concat(table)
+            }else table = ["|"];
+
+            switch (RECIPE_SIZE.length){
+            
+               case 3: {
+                   table = table.with(0, `${table.at(0)} ![](${GetImageLink(item6)}) |`)
+               }
+               case 2: {
+                   table = table.with(0, `${table.at(0)} ![](${GetImageLink(item5)}) |`)
+               }
+               case 1: {
+                   table = table.with(0, `${table.at(0)} ![](${GetImageLink(item4)}) |`)
+               }
+            }
+
+        }
+        case 1: {
+            if (table.length == 1 || 2){
+                table = ["\n|"].concat(table)
+            }else table = ["|"];
+
+            switch (RECIPE_SIZE.length){
+               case 3: {
+                   table = table.with(0, `${table.at(0)} ![](${GetImageLink(item3)}) |`)
+               }
+               case 2: {
+                   table = table.with(0, `${table.at(0)} ![](${GetImageLink(item2)}) |`)
+               }
+               case 1: {
+                   table = table.with(0, `${table.at(0)} ![](${GetImageLink(item1)}) |`)
+               }
+            }
+        }
+    }
+    for (const piece of table.reverse()){
+        file = `${file}${piece}`
+    }  
+    //End Tab:
+    file = `${file}\n{% endtab %}\n`
+    return file;
+
+
+    /*EX:
+    {% tab title="Crafting" %}
+
+
+<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the<br><a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
+
+
+||||
+| :-: | :-: | :-: |
+| ![]() | ![]() | ![]() |
+| ![]() | ![]() | ![]() |
+| ![]() | ![]() | ![]() |
+
+Items:
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/Limestone.png?raw=true" alt="" data-size="line"> [Limestone](../misc/limestone.md)
+
+Outputs:
+
+* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/LimestoneStairs.png?raw=true" alt="" data-size="line"> Limestone Stairs
+
+Recipe can be unlocked with:
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/Limestone.png?raw=true" alt="" data-size="line"> [Limestone](../misc/limestone.md)
+{% endtab %}
+    */
+}
+
+function GetMaxLengthOfStringSet(set:string[]){
+    let max = 1
+    for (const string of set){
+        if (string?.length == 3) return 3;
+        if (string?.length == 2) max = 2;
+    }
+    return max
+}
+
+function GetIdentifierFromShapedPattern(RECIPE:BPRecipeFile, location: {x:number,y:number}){
+    if (!RECIPE["minecraft:recipe_shaped"])return;
+    let keyVal = RECIPE["minecraft:recipe_shaped"].pattern.at(location.x-1)?.at(location.y-1);
+
+    if (!keyVal || keyVal == " "){
+        return undefined
+    }
+    const KEYS = RECIPE["minecraft:recipe_shaped"].key
+    return KEYS[keyVal].item
 }
