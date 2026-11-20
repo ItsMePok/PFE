@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "module": "esnext",
+        "pretty": true,
+        
+        "types": ["node"]
+    },
+    "exclude": [
+        "node_modules"
+    ],
+    "compileOnSave":true
+}

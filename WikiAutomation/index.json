@@ -1,0 +1,51 @@
+{
+    "default_info":{
+        "RP": "PFE-EXP/resource_packs/pfe",
+        "BP": "PFE-EXP/behavior_packs/pfe"
+    },
+    "index":[
+        {
+            "run":true,
+            "identifier":"poke_pfe:cut_astral_stairs",
+            "wiki_page": "PFEWiki/blocks/stairs/cut-astral-stairs.md",
+            "components":{
+                "type":"block",
+                "item_file_path":null,
+                "block_file_path":"WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/cut_astral_stairs.block.json",
+                "name":"Cut Astral Stairs",
+                "recipes":[
+                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/astral/cut_astral_stairs_sc.recipe.json",
+                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/astral/cut_astral_stairs_sc_f_b.recipe.json"
+                ]
+            }
+        },
+        {
+            "run":true,
+            "identifier":"poke_pfe:cut_astral",
+            "wiki_page":"PFEWiki/blocks/cut-blocks/cut-astral.md",
+            "components":{
+                "type":"block",
+                "item_file_path":null,
+                "name":"Cut Astral",
+                "block_file_path":"WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_astral.block.json",
+                "recipes":[
+                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/astral/cut.recipe.json",
+                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/astral/cut_stonecut.recipe.json"
+
+                ]
+
+            }
+        },
+        {
+            "run":false,
+            "identifier":"poke_pfe:astral_block",
+            "wiki_page":"PFEWiki/blocks/ore-blocks/block-of-astral.md",
+            "components":{
+                "block_file_path":"WikiAutomation/PFE/behavior_packs/pfe/blocks/ore_blocks/astral_block.block.json",
+                "item_file_path":null,
+                "name":"Astral Block",
+                "type":"block"
+            }
+        }
+    ]
+}
