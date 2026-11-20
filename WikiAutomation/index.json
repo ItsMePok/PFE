@@ -52,6 +52,230 @@
             }
         },
         {
+            "run":true,
+            "identifier":"poke_pfe:cut_cobalt",
+            "wiki_page":"PFEWiki/blocks/cut-blocks/cut-cobalt.md",
+            "components":{
+                "type":"block",
+                "item_file_path":null,
+                "block_file_path":"WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_cobalt.block.json",
+                "recipes":[
+                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/cobalt/cut_cobalt.recipe.json",
+                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/cobalt/cut_cobalt_stonecut.recipe.json"
+
+                ]
+
+            }
+        },
+        {
+            "run":true,
+            "identifier":"poke_pfe:cut_death",
+            "wiki_page":"PFEWiki/blocks/cut-blocks/cut-death.md",
+            "components":{
+                "type":"block",
+                "item_file_path":null,
+                "block_file_path":"WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_death.block.json",
+                "recipes":[
+                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/death/cut.recipe.json",
+                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/death/cut_stonecut.recipe.json"
+
+                ]
+
+            }
+        },
+        {
+            "run":true,
+            "identifier":"poke_pfe:cut_demonic",
+            "wiki_page":"PFEWiki/blocks/cut-blocks/cut-demonic.md",
+            "components":{
+                "type":"block",
+                "item_file_path":null,
+                "block_file_path":"WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_demonic.block.json",
+                "recipes":[
+                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/demonic/cut.recipe.json",
+                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/demonic/cut_stonecut.recipe.json"
+
+                ]
+
+            }
+        },
+        {
+            "run":true,
+            "identifier":"poke_pfe:cut_galaxy",
+            "wiki_page":"PFEWiki/blocks/cut-blocks/cut-galaxy.md",
+            "components":{
+                "type":"block",
+                "item_file_path":null,
+                "block_file_path":"WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_galaxy.block.json",
+                "recipes":[
+                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/galaxy/cut.recipe.json",
+                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/galaxy/cut_stonecut.recipe.json"
+
+                ]
+
+            }
+        },
+        {
+            "run":true,
+            "identifier":"poke_pfe:cut_godly",
+            "wiki_page":"PFEWiki/blocks/cut-blocks/cut-godly.md",
+            "components":{
+                "type":"block",
+                "item_file_path":null,
+                "block_file_path":"WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_godly.block.json",
+                "recipes":[
+                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/godly/cut.recipe.json",
+                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/godly/cut_stonecut.recipe.json"
+
+                ]
+
+            }
+        },
+        {
+            "run":true,
+            "identifier":"poke_pfe:cut_hellish",
+            "wiki_page":"PFEWiki/blocks/cut-blocks/cut-hellish.md",
+            "components":{
+                "type":"block",
+                "item_file_path":null,
+                "block_file_path":"WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_hellish.block.json",
+                "recipes":[
+                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/hellish/cut.recipe.json",
+                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/hellish/cut_stonecut.recipe.json"
+
+                ]
+
+            }
+        },
+        {
+            "run":true,
+            "identifier":"poke_pfe:cut_holy",
+            "wiki_page":"PFEWiki/blocks/cut-blocks/cut-holy.md",
+            "components":{
+                "type":"block",
+                "item_file_path":null,
+                "block_file_path":"WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_holy.block.json",
+                "recipes":[
+                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/holy/cut.recipe.json",
+                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/holy/cut_stonecut.recipe.json"
+
+                ]
+
+            }
+        },
+        {
+            "run":true,
+            "identifier":"poke_pfe:cut_medic",
+            "wiki_page":"PFEWiki/blocks/cut-blocks/cut-medic.md",
+            "components":{
+                "type":"block",
+                "item_file_path":null,
+                "block_file_path":"WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_medic.block.json",
+                "recipes":[
+                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/medic/cut.recipe.json",
+                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/medic/cut_stonecut.recipe.json"
+
+                ]
+
+            }
+        },
+        {
+            "run":true,
+            "identifier":"poke_pfe:cut_molten",
+            "wiki_page":"PFEWiki/blocks/cut-blocks/cut-molten.md",
+            "components":{
+                "type":"block",
+                "item_file_path":null,
+                "block_file_path":"WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_molten.block.json",
+                "recipes":[
+                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/molten/cut.recipe.json",
+                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/molten/cut_stonecut.recipe.json"
+
+                ]
+
+            }
+        },
+        {
+            "run":true,
+            "identifier":"poke_pfe:cut_nebula",
+            "wiki_page":"PFEWiki/blocks/cut-blocks/cut-nebula.md",
+            "components":{
+                "type":"block",
+                "item_file_path":null,
+                "block_file_path":"WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_nebula.block.json",
+                "recipes":[
+                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/nebula/cut.recipe.json",
+                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/nebula/cut_stonecut.recipe.json"
+
+                ]
+
+            }
+        },
+        {
+            "run":true,
+            "identifier":"poke_pfe:cut_onyx",
+            "wiki_page":"PFEWiki/blocks/cut-blocks/cut-onyx.md",
+            "components":{
+                "type":"block",
+                "item_file_path":null,
+                "block_file_path":"WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_onyx.block.json",
+                "recipes":[
+                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/onyx/cut.recipe.json",
+                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/onyx/cut_stonecut.recipe.json"
+
+                ]
+
+            }
+        },
+        {
+            "run":true,
+            "identifier":"poke_pfe:cut_radium",
+            "wiki_page":"PFEWiki/blocks/cut-blocks/cut-radium.md",
+            "components":{
+                "type":"block",
+                "item_file_path":null,
+                "block_file_path":"WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_radium.block.json",
+                "recipes":[
+                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/radium/cut.recipe.json",
+                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/radium/cut_stonecut.recipe.json"
+
+                ]
+
+            }
+        },
+        {
+            "run":true,
+            "identifier":"poke_pfe:cut_shade",
+            "wiki_page":"PFEWiki/blocks/cut-blocks/cut-shade.md",
+            "components":{
+                "type":"block",
+                "item_file_path":null,
+                "block_file_path":"WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_shade.block.json",
+                "recipes":[
+                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/shade/cut.recipe.json",
+                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/shade/cut_stonecut.recipe.json"
+
+                ]
+
+            }
+        },
+        {
+            "run":true,
+            "identifier":"poke_pfe:cut_void",
+            "wiki_page":"PFEWiki/blocks/cut-blocks/cut-void.md",
+            "components":{
+                "type":"block",
+                "item_file_path":null,
+                "block_file_path":"WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_void.block.json",
+                "recipes":[
+                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/void/cut.recipe.json",
+                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/void/cut_stonecut.recipe.json"
+
+                ]
+
+            }
+        },
+        {
             "run":false,
             "identifier":"poke_pfe:astral_block",
             "wiki_page":"PFEWiki/blocks/ore-blocks/block-of-astral.md",

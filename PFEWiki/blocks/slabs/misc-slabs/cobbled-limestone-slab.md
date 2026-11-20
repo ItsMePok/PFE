@@ -1,4 +1,4 @@
-# Cobbled Shadowstone Slab
+# Cobbled Limestone Slab
 
 {% hint style="danger" %}
 This Page is not complete yet. Check back later

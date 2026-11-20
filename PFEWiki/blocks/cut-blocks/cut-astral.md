@@ -33,7 +33,7 @@ Outputs:
 
 Recipe can be unlocked with:
 
-* <img src="undefined" alt="" data-size="line"> [Astral Ingot](..\..\..)
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/astral_ingot.png?raw=true" alt="" data-size="line"> Astral Ingot
 
 {% endtab %}
 
