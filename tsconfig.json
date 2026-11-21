@@ -2,11 +2,14 @@
     "compilerOptions": {
         "module": "esnext",
         "pretty": true,
-        
-        "types": ["node"]
+        "allowImportingTsExtensions": true,
+        "rewriteRelativeImportExtensions": true,
+        "types": [
+            "node"
+        ]
     },
     "exclude": [
         "node_modules"
     ],
-    "compileOnSave":true
+    "compileOnSave": true
 }
