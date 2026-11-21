@@ -106,7 +106,7 @@ function MakeStackSize(file: string, item: typeof index.index[number]) {
         console.warn("CUSTOM STACK SIZE NOT SETUP YET");
         amount = "ERROR"
     }
-    file = `${file}\n<img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">${amount}</mark> <a href="#stack-size" id="stack-size"></a>\n`;
+    file = `${file}\n## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">${amount}</mark> <a href="#stack-size" id="stack-size"></a>\n`;
     return file;
 }
 
