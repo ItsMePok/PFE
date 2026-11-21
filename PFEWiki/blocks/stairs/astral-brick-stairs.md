@@ -1,5 +1,5 @@
 ---
-description: Last updated to match v1.3.05
+description: Last updated to match v1.3.06
 ---
 
 # Astral Brick Stairs
