@@ -217,7 +217,7 @@ function GetWikiPagePath(fromPage: string, toPage?: string) {
 function GetDisplayNameByIdentifier(identifier: string) {
     const ITEM = FindItemByIdentifier(identifier);
     if (ITEM?.components.name) return ITEM.components.name;
-    let namePos = LANG_FILE.search(`${NAMESPACE}.${identifier.replace(`${NAMESPACE}:`, "")}`)
+    let namePos = LANG_FILE.search(`${NAMESPACE}.${identifier.replace(`${NAMESPACE}:`, "")}=`)
     let name = LANG_FILE.substring(namePos).split("\n", 1).at(0)?.replace(`${NAMESPACE}.${identifier.replace(`${NAMESPACE}:`, "")}=`, "").replace("\r", "")
     console.log([name])
     return name;
@@ -255,68 +255,68 @@ function CreateShapedRecipe(file: string, RECIPE: BPRecipeFile, ITEM: IndexItem)
     console.log("Starting Pieces")
     //Add Table pieces:
     let table: string[] = []
-    let item1 = GetIdentifierFromShapedPattern(RECIPE, { x: 1, y: 1 });
-    let item2 = GetIdentifierFromShapedPattern(RECIPE, { x: 2, y: 1 });
-    let item3 = GetIdentifierFromShapedPattern(RECIPE, { x: 3, y: 1 });
-    let item4 = GetIdentifierFromShapedPattern(RECIPE, { x: 1, y: 2 });
-    let item5 = GetIdentifierFromShapedPattern(RECIPE, { x: 2, y: 2 });
-    let item6 = GetIdentifierFromShapedPattern(RECIPE, { x: 3, y: 2 });
-    let item7 = GetIdentifierFromShapedPattern(RECIPE, { x: 1, y: 3 });
-    let item8 = GetIdentifierFromShapedPattern(RECIPE, { x: 2, y: 3 });
-    let item9 = GetIdentifierFromShapedPattern(RECIPE, { x: 3, y: 3 });
+    let item1 = GetIdentifierFromShapedPattern(SHAPED_RECIPE, { x: 1, y: 1 }, RECIPE_SIZE);
+    let item2 = GetIdentifierFromShapedPattern(SHAPED_RECIPE, { x: 2, y: 1 }, RECIPE_SIZE);
+    let item3 = GetIdentifierFromShapedPattern(SHAPED_RECIPE, { x: 3, y: 1 }, RECIPE_SIZE);
+    let item4 = GetIdentifierFromShapedPattern(SHAPED_RECIPE, { x: 1, y: 2 }, RECIPE_SIZE);
+    let item5 = GetIdentifierFromShapedPattern(SHAPED_RECIPE, { x: 2, y: 2 }, RECIPE_SIZE);
+    let item6 = GetIdentifierFromShapedPattern(SHAPED_RECIPE, { x: 3, y: 2 }, RECIPE_SIZE);
+    let item7 = GetIdentifierFromShapedPattern(SHAPED_RECIPE, { x: 1, y: 3 }, RECIPE_SIZE);
+    let item8 = GetIdentifierFromShapedPattern(SHAPED_RECIPE, { x: 2, y: 3 }, RECIPE_SIZE);
+    let item9 = GetIdentifierFromShapedPattern(SHAPED_RECIPE, { x: 3, y: 3 }, RECIPE_SIZE);
     switch (RECIPE_SIZE.width) {
         case 3: {
             table = ["|"]
             switch (RECIPE_SIZE.length) {
                 case 3: {
-                    table = [`${table.at(0)} ![](${GetImageLink(item9)}) |`]
+                    table = table.with(0, `| ![](${GetImageLink(item9 ?? "EMPTY")}) ${table.at(0)}`)
                 }
                 case 2: {
-                    table = [`${table.at(0)} ![](${GetImageLink(item8)}) |`]
+                    table = table.with(0, `| ![](${GetImageLink(item8 ?? "EMPTY")}) ${table.at(0)}`)
                 }
                 case 1: {
-                    table = [`${table.at(0)} ![](${GetImageLink(item7)}) |`]
+                    table = table.with(0, `| ![](${GetImageLink(item7 ?? "EMPTY")}) ${table.at(0)}`)
                 }
             }
         }
         case 2: {
             if (table.length == 1) {
-                table = ["\n|"].concat(table)
+                table = ["|\n"].concat(table)
             } else table = ["|"];
 
             switch (RECIPE_SIZE.length) {
 
                 case 3: {
-                    table = table.with(0, `${table.at(0)} ![](${GetImageLink(item6)}) |`)
+                    table = table.with(0, `| ![](${GetImageLink(item6 ?? "EMPTY")}) ${table.at(0)}`)
                 }
                 case 2: {
-                    table = table.with(0, `${table.at(0)} ![](${GetImageLink(item5)}) |`)
+                    table = table.with(0, `| ![](${GetImageLink(item5 ?? "EMPTY")}) ${table.at(0)}`)
                 }
                 case 1: {
-                    table = table.with(0, `${table.at(0)} ![](${GetImageLink(item4)}) |`)
+                    table = table.with(0, `| ![](${GetImageLink(item4 ?? "EMPTY")}) ${table.at(0)}`)
                 }
             }
 
         }
         case 1: {
             if (table.length == 1 || 2) {
-                table = ["\n|"].concat(table)
+                table = ["|\n"].concat(table)
             } else table = ["|"];
 
             switch (RECIPE_SIZE.length) {
                 case 3: {
-                    table = table.with(0, `${table.at(0)} ![](${GetImageLink(item3)}) |`)
+                    table = table.with(0, `| ![](${GetImageLink(item3 ?? "EMPTY")}) ${table.at(0)}`)
                 }
                 case 2: {
-                    table = table.with(0, `${table.at(0)} ![](${GetImageLink(item2)}) |`)
+                    table = table.with(0, `| ![](${GetImageLink(item2 ?? "EMPTY")}) ${table.at(0)}`)
                 }
                 case 1: {
-                    table = table.with(0, `${table.at(0)} ![](${GetImageLink(item1)}) |`)
+                    table = table.with(0, `| ![](${GetImageLink(item1 ?? "EMPTY")}) ${table.at(0)}`)
                 }
             }
         }
     }
-    for (const piece of table.reverse()) {
+    for (const piece of table) {
         file = `${file}${piece}`
     }
 
@@ -355,14 +355,20 @@ function GetMaxLengthOfStringSet(set: string[]) {
     return max
 }
 
-function GetIdentifierFromShapedPattern(RECIPE: BPRecipeFile, location: { x: number, y: number }) {
-    if (!RECIPE["minecraft:recipe_shaped"]) return;
-    let keyVal = RECIPE["minecraft:recipe_shaped"].pattern.at(location.x - 1)?.at(location.y - 1);
+function GetIdentifierFromShapedPattern(SHAPED_RECIPE: BPRecipeFile["minecraft:recipe_shaped"], location: { x: number, y: number }, RECIPE_SIZE: { length: number, width: number }) {
+    if (!SHAPED_RECIPE) return;
+    let keyVal = SHAPED_RECIPE.pattern.at(location.y - 1)?.at(location.x - 1) ?? " ";
+
+    if (RECIPE_SIZE.width < Number(SHAPED_RECIPE.pattern.at(location.y - 1)?.length ?? 0)) {
+        keyVal = " "
+    }
+
 
     if (!keyVal || keyVal == " ") {
         return undefined
     }
-    const KEYS = RECIPE["minecraft:recipe_shaped"].key
+    const KEYS = SHAPED_RECIPE.key
+
     return KEYS[keyVal].item
 }
 
