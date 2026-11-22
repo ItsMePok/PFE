@@ -1100,7 +1100,7 @@
       * [v1.0.0 (Initial Release)](changelog-history/full-releases/1.0-full-releases/v1.0.0-initial-release.md)
   * [PFE Beta / Experimental](changelog-history/betas/README.md)
     * [1.3.0 betas](changelog-history/betas/1.3.0-betas/README.md)
-      * [1.3.06](changelog-history/betas/1.3.0-betas/1.3.06.md)
+      * [v1.3.06](changelog-history/betas/1.3.0-betas/v1.3.06.md)
       * [v1.3.05](changelog-history/betas/1.3.0-betas/v1.3.05.md)
       * [v1.3.04](changelog-history/betas/1.3.0-betas/v1.3.04.md)
       * [v1.3.03](changelog-history/betas/1.3.0-betas/v1.3.03.md)
