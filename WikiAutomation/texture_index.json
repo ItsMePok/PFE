@@ -387,5 +387,6 @@
   "onyx_ingot": "%WM",
   "radium_ingot": "%WM",
   "shade_ingot": "%WM",
-  "void_ingot": "%WM"
+  "void_ingot": "%WM",
+  "wither_spawner": "%WM"
 }

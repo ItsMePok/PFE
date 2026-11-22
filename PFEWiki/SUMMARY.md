@@ -740,7 +740,6 @@
     * [Cut Death Stairs](blocks/stairs/cut-death-stairs.md)
     * [Cut Demonic Stairs](blocks/stairs/cut-demonic-stairs.md)
     * [Cut Galaxy Stairs](blocks/stairs/cut-galaxy-stairs.md)
-    * [Cut Galaxy Stairs](blocks/stairs/cut-galaxy-stairs-1.md)
     * [Cut Godly Stairs](blocks/stairs/cut-godly-stairs.md)
     * [Cut Hellish Stairs](blocks/stairs/cut-hellish-stairs.md)
     * [Cut Holy Stairs](blocks/stairs/cut-holy-stairs.md)

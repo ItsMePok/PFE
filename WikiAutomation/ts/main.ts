@@ -1,7 +1,7 @@
 import index from "../index.json" with {type: 'json'};
 
 import { writeFileSync, readFileSync } from "fs";
-import { GetDisplayNameByIdentifier, GetImageLink, MakeDestroySpeed, MakeIdentifierSection, MakeMapColor, MakeObtainingSection, MakeRarity, MakeStackSize } from "./functions.ts";
+import { GetDisplayNameByIdentifier, GetImageLink, MakeDestroySpeed, MakeIdentifierSection, MakeMapColor, MakeNoteSound, MakeObtainingSection, MakeRarity, MakeStackSize } from "./functions.ts";
 import { VERSION } from "./consts.ts";
 
 console.log(index.default_info.BP);
@@ -44,6 +44,9 @@ for (const item of index.index) {
     //Make Stack Size:
     file = MakeStackSize(file, item);
 
+    // Make Note Sound:
+    file = MakeNoteSound(file,item);
+
     //Make Map Color:
     file = MakeMapColor(file, item);
 
@@ -54,12 +57,12 @@ for (const item of index.index) {
     file = MakeObtainingSection(file, item);
 
     //End Tabs
-    file = `${file}\n{% endtabs %}\n`
+    file = `${file}\n{% endtabs %}\n`;
 
     //Add automated disclaimer:
-    file = `${file}\nThis page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool\n`
+    file = `${file}\nThis page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool\n`;
     //Write File:
     writeFileSync(FILE_LOCATION, file, { encoding: "utf8" });
-    console.log(FILE_LOCATION)
+    console.log(FILE_LOCATION);
 }
 

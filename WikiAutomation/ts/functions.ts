@@ -1,9 +1,8 @@
-import { LANG_FILE, MC_INDEX_FILE, NAMESPACE, TEXTURE_INDEX } from "./consts.ts";
-import { type MCIndexFile, type BPBlockJSON, type BPRecipeFile, type IndexItem } from "./types.ts";
+import { LANG_FILE, MC_INDEX_FILE, NAMESPACE, NOTE_SOUND, TEXTURE_INDEX } from "./consts.ts";
+import { type MCIndexFile, type BPBlockJSON, type BPRecipeFile, type IndexItem, type BPItemJSON } from "./types.ts";
 import index from "../index.json" with {type: 'json'};
 import path from "path";
 import { readFileSync } from "fs";
-import { TopLevelNode } from "@spyglassmc/mcdoc";
 
 export {
     CreateShapedRecipe,
@@ -22,19 +21,40 @@ export {
     GetBlockFile,
     MakeDestroySpeed,
     MakeRarity,
+    GetMinecraftIndex,
+    GetWikiPage,
+    IsMinecraftIdentifier,
+    MakeNoteSound
+
 
 }
 
-function MakeRarity(file: string, item: typeof index.index[number]) {
-    //TODO: Add parsing of minecraft:rarity component
+function MakeNoteSound(file: string, item: typeof index.index[number]) {
+    //## <img src="https://minecraft.wiki/images/Note_Block_JE2_BE2.png?0bf0f" alt="" data-size="line"> Note Sound: <mark style="color:yellow;">Bass Drum</mark>
 
+    if (!item.components.block_file_path) return file;
+    const BLOCK_FILE = GetBlockFile(item)
+    const NOTE_COMPONENT = BLOCK_FILE["minecraft:block"].components["minecraft:instrument_sound"]
+    let sound = NOTE_SOUND["note.bd"]
+    if (NOTE_COMPONENT?.up) {
+        sound = NOTE_SOUND[NOTE_COMPONENT.up]
+    }
+    file = `${file}\n## <img src="https://minecraft.wiki/images/Note_Block_JE2_BE2.png?0bf0f" alt="" data-size="line"> Note Sound: <mark style="color:yellow;">${sound}</mark>\n`
+    return file;
+}
+
+function MakeRarity(file: string, item: typeof index.index[number]) {
     //Default to common if rarity component is non-existent (ex on a block with not block item)
     if (!item.components.item_file_path) {
         file = `${file}\n## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark> <a href="#rarity" id="rarity"></a>\n`;
     } else {
+        const ITEM_FILE = GetItemFile(item);
+        let rarity = ITEM_FILE["minecraft:item"].components["minecraft:rarity"] ?? "Common";
+        rarity = `${rarity.slice(0, 1).toUpperCase()}${rarity.slice(1)}`
+        file = `${file}\n## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">${rarity}</mark> <a href="#rarity" id="rarity"></a>\n`;
 
     }
-    return file
+    return file;
 }
 
 function MakeDestroySpeed(file: string, item: typeof index.index[number]) {
@@ -101,7 +121,10 @@ function MakeDestroySpeed(file: string, item: typeof index.index[number]) {
 function GetBlockFile(item: typeof index.index[number]) {
     return JSON.parse(readFileSync(`${item.components.block_file_path}`, { encoding: "utf8" })) as BPBlockJSON
 }
+function GetItemFile(item: typeof index.index[number]) {
 
+    return JSON.parse(readFileSync(`${item.components.item_file_path}`, { encoding: "utf8" })) as BPItemJSON
+}
 function MakeMapColor(file: string, item: typeof index.index[number]) {
     if (item.components.type != "block") return file;
     const BlockFile = GetBlockFile(item);
@@ -117,8 +140,9 @@ function MakeStackSize(file: string, item: typeof index.index[number]) {
     //## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">${AMOUNT}</mark> <a href="#stack-size" id="stack-size"></a>
     let amount: number | string = 64;
     if (item.components.item_file_path) {
-        console.warn("CUSTOM STACK SIZE NOT SETUP YET");
-        amount = "ERROR"
+        const ITEM_FILE = GetItemFile(item);
+
+        amount = ITEM_FILE["minecraft:item"].components["minecraft:max_stack_size"] ?? amount
     }
     file = `${file}\n## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">${amount}</mark> <a href="#stack-size" id="stack-size"></a>\n`;
     return file;
@@ -149,14 +173,16 @@ function MakeObtainingSection(file: string, item: typeof index.index[number]) {
 
 function MakeIdentifierSection(file: string, item: typeof index.index[number]) {
     if (item.components.type == "block") {
-        console.log("Checking block file")
-        const BlockFile = GetBlockFile(item);
+        const BLOCK_FILE = GetBlockFile(item);
 
-        file = `${file}\n## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**${BlockFile["minecraft:block"].description.identifier.replace(/_/g, '\\_')}**</mark> <a href="#identifier" id="identifier"></a>\n`;
+        file = `${file}\n## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**${BLOCK_FILE["minecraft:block"].description.identifier.replace(/_/g, '\\_')}**</mark> <a href="#identifier" id="identifier"></a>\n`;
 
-        console.log(JSON.stringify(BlockFile["minecraft:block"].description.identifier));
     }
+    if (item.components.type == "item") {
+        const ITEM_FILE = GetItemFile(item);
 
+        file = `${file}\n## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**${ITEM_FILE["minecraft:item"].description.identifier.replace(/_/g, '\\_')}**</mark> <a href="#identifier" id="identifier"></a>\n`;
+    }
     return file;
 }
 
