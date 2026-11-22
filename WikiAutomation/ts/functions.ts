@@ -289,6 +289,7 @@ function GetDisplayNameByIdentifier(identifier: string) {
 
     let namePos = LANG_FILE.search(`${NAMESPACE}.${identifier.replace(`${NAMESPACE}:`, "")}=`);
     let name = LANG_FILE.substring(namePos).split("\n", 1).at(0)?.replace(`${NAMESPACE}.${identifier.replace(`${NAMESPACE}:`, "")}=`, "").replace("\r", "");
+    if (name?.includes("pack.name")) return `ERROR (${identifier})`
     console.log([name]);
     return name;
 

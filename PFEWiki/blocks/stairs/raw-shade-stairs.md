@@ -41,7 +41,7 @@ Items:
 
 Outputs:
 
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/pack.name=§bv1.2.8PFERP.png?raw=true" alt="" data-size="line"> [pack.name=§bv1.2.8 PFE RP](raw-void-stairs.md)
+* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/ERROR(poke_pfe:raw_void_stairs).png?raw=true" alt="" data-size="line"> [ERROR (poke_pfe:raw_void_stairs)](raw-void-stairs.md)
 
 Recipe can be unlocked with:
 

@@ -2,9 +2,9 @@
 description: Last updated to match v1.3.06
 ---
 
-# pack.name=§bv1.2.8 PFE RP
+# ERROR (poke_pfe:raw_void_stairs)
 
-<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/pack.name=§bv1.2.8PFERP.png?raw=true" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/ERROR(poke_pfe:raw_void_stairs).png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:raw\_void\_stairs**</mark> <a href="#identifier" id="identifier"></a>
 
@@ -52,7 +52,7 @@ Recipe can be unlocked with:
 {% tab title="Stonecutting" %}
 <figure><img src="https://minecraft.wiki/images/Stonecutter_JE2_BE1.gif?bb269" alt=""><figcaption><p>Cut with the<br><a href="https://minecraft.wiki/w/Stonecutter">Stonecutter</a></p></figcaption></figure>
 
-<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawVoid.png?raw=true" alt="" data-size="line"> <a href="">Block of Raw Void</a></td><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/pack.name=§bv1.2.8PFERP.png?raw=true" alt="" data-size="line"> pack.name=§bv1.2.8 PFE RP</td><td>1</td></tr></tbody></table>
+<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawVoid.png?raw=true" alt="" data-size="line"> <a href="">Block of Raw Void</a></td><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/ERROR(poke_pfe:raw_void_stairs).png?raw=true" alt="" data-size="line"> ERROR (poke_pfe:raw_void_stairs)</td><td>1</td></tr></tbody></table>
 
 {% endtab %}
 {% endtabs %}
