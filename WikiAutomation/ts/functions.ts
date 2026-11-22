@@ -1,8 +1,9 @@
-import { LANG_FILE, NAMESPACE, TEXTURE_INDEX } from "./consts.ts";
-import { type BPBlockJSON, type BPRecipeFile, type IndexItem } from "./types.ts";
+import { LANG_FILE, MC_INDEX_FILE, NAMESPACE, TEXTURE_INDEX } from "./consts.ts";
+import { type MCIndexFile, type BPBlockJSON, type BPRecipeFile, type IndexItem } from "./types.ts";
 import index from "../index.json" with {type: 'json'};
 import path from "path";
 import { readFileSync } from "fs";
+import { TopLevelNode } from "@spyglassmc/mcdoc";
 
 export {
     CreateShapedRecipe,
@@ -20,7 +21,20 @@ export {
     MakeMapColor,
     GetBlockFile,
     MakeDestroySpeed,
+    MakeRarity,
 
+}
+
+function MakeRarity(file: string, item: typeof index.index[number]) {
+    //TODO: Add parsing of minecraft:rarity component
+
+    //Default to common if rarity component is non-existent (ex on a block with not block item)
+    if (!item.components.item_file_path) {
+        file = `${file}\n## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark> <a href="#rarity" id="rarity"></a>\n`;
+    } else {
+
+    }
+    return file
 }
 
 function MakeDestroySpeed(file: string, item: typeof index.index[number]) {
@@ -154,14 +168,16 @@ function CreateStonecuttingRecipe(file: string, RECIPE: BPRecipeFile, item: Inde
     <table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="${IMAGE LINK}" alt="" data-size="line"> <a href="${PATH TO BLOCK}">${INGREDIENT NAME}</a></td><td><img src="${IMAGE OF RESULT BLOCK}" alt="" data-size="line"> ${RESULT ITEM NAME}</td><td>${RESULTING AMOUNT}</td></tr></tbody></table>
     {% endtab %}
     */
+    const SHAPELESS_RECIPE = RECIPE["minecraft:recipe_shapeless"]
+    if (!SHAPELESS_RECIPE) return file
     //Start Tab:
     file = `${file}\n{% tab title="Stonecutting" %}\n<figure><img src="https://minecraft.wiki/images/Stonecutter_JE2_BE1.gif?bb269" alt=""><figcaption><p>Cut with the<br><a href="https://minecraft.wiki/w/Stonecutter">Stonecutter</a></p></figcaption></figure>\n`;
 
     //Add Recipe Details:
-    console.log(JSON.stringify(RECIPE["minecraft:recipe_shapeless"]?.ingredients.at(0)?.item))
-    let INGREDIENT_ITEM = FindItemByIdentifier(RECIPE["minecraft:recipe_shapeless"]?.ingredients.at(0)?.item ?? "")
+    console.log(JSON.stringify(SHAPELESS_RECIPE.ingredients.at(0)?.item))
 
-    file = `${file}\n<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="${GetImageLink(RECIPE["minecraft:recipe_shapeless"]?.ingredients.at(0)?.item ?? "MISSING")}" alt="" data-size="line"> <a href="${GetWikiPagePath(item.wiki_page, INGREDIENT_ITEM?.wiki_page)}">${GetDisplayNameByIdentifier(RECIPE["minecraft:recipe_shapeless"]?.ingredients.at(0)?.item ?? "")}</a></td><td><img src="${GetImageLink(RECIPE["minecraft:recipe_shapeless"]?.result.item)}" alt="" data-size="line"> ${GetDisplayNameByIdentifier(item.identifier)}</td><td>${RECIPE["minecraft:recipe_shapeless"]?.result.count ?? 1}</td></tr></tbody></table>\n`
+
+    file = `${file}\n<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="${GetImageLink(SHAPELESS_RECIPE.ingredients.at(0)?.item ?? "MISSING")}" alt="" data-size="line"> <a href="${GetWikiPagePath(item.identifier, SHAPELESS_RECIPE.ingredients.at(0)?.item ?? "")}">${GetDisplayNameByIdentifier(SHAPELESS_RECIPE.ingredients.at(0)?.item ?? "")}</a></td><td><img src="${GetImageLink(SHAPELESS_RECIPE.result.item)}" alt="" data-size="line"> ${GetDisplayNameByIdentifier(item.identifier)}</td><td>${SHAPELESS_RECIPE.result.count ?? 1}</td></tr></tbody></table>\n`
     //End Tab:
     file = `${file}\n{% endtab %}`
 
@@ -172,56 +188,85 @@ function GetImageLink(identifier?: string) {
     console.log("\n" + identifier)
 
     let path = "";
+    const PREFIX = identifier?.split(":").at(0);
+    if (PREFIX === "minecraft") {
+        const OBJECT: MCIndexFile[string] = MC_INDEX_FILE[identifier?.replace("'", "") ?? ""]
+        return OBJECT.icon
+    }
     if (identifier) path = TEXTURE_INDEX[identifier.replace(`${NAMESPACE}:`, "")];
     else {
-        return TEXTURE_INDEX["MISSING"]
+        return TEXTURE_INDEX["MISSING"];
     }
     if (path) {
         if (path == "%WM") {
             path = `https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/${path.replace("%WM", identifier.replace(`${NAMESPACE}:`, ""))}.png?raw=true`;
-        }
+        };
         if (path == "%BR") {
             path = `https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/${path.replace("%BR", GetDisplayNameByIdentifier(identifier)?.replace(/ /g, "") ?? "")}.png?raw=true`;
-        }
+        };
         if (path.includes("%BR:")) {
             path = `https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/${path.replace("%BR:", '')}.png?raw=true`;
-        }
+        };
     }
 
     if (path == "" || undefined) {
-        path = TEXTURE_INDEX["MISSING"]
-    }
+        path = TEXTURE_INDEX["MISSING"];
+    };
 
-    return path
+    return path;
 }
 
 function FindItemByIdentifier(identifier: string) {
     for (const data of index.index) {
         if (data.identifier == identifier) {
-            return data
+            return data;
         }
-        continue
-    }
+        continue;
+    };
     return undefined;
+};
+
+function GetWikiPage(identifier: string) {
+    if (IsMinecraftIdentifier(identifier)) {
+        return GetMinecraftIndex(identifier).wiki_page
+    }
+    return FindItemByIdentifier(identifier)?.wiki_page
+}
+function IsMinecraftIdentifier(identifier: string) {
+    return (identifier.split(":").at(0) == "minecraft")
 }
 
-function GetWikiPagePath(fromPage: string, toPage?: string) {
-    const FROM_DIR = path.dirname(path.normalize(fromPage));
-    if (!toPage) return "";
-    let isPage: string = path.relative(FROM_DIR, path.normalize(toPage))
-    console.log(`The path between:\n- ${fromPage}\n - ${toPage}\n is:\n- ${isPage}`)
+function GetMinecraftIndex(identifier: string) {
+    return MC_INDEX_FILE[identifier]
+}
+
+function GetWikiPagePath(identifier1: string, identifier2: string) {
+    const FROM_PAGE = GetWikiPage(identifier1) ?? ""
+    const TO_PAGE = GetWikiPage(identifier2 ?? "") ?? ""
+    if (!TO_PAGE) return ""
+    if (IsMinecraftIdentifier(identifier2 ?? "")) {
+        return TO_PAGE
+    }
+    const FROM_DIR = path.dirname(path.normalize(FROM_PAGE));
+    let isPage: string = path.relative(FROM_DIR, path.normalize(TO_PAGE));
 
     return isPage;
-}
+};
 
 function GetDisplayNameByIdentifier(identifier: string) {
     const ITEM = FindItemByIdentifier(identifier);
     if (ITEM?.components.name) return ITEM.components.name;
-    let namePos = LANG_FILE.search(`${NAMESPACE}.${identifier.replace(`${NAMESPACE}:`, "")}=`)
-    let name = LANG_FILE.substring(namePos).split("\n", 1).at(0)?.replace(`${NAMESPACE}.${identifier.replace(`${NAMESPACE}:`, "")}=`, "").replace("\r", "")
-    console.log([name])
+
+    if (IsMinecraftIdentifier(identifier)) {
+        return GetMinecraftIndex(identifier).name;
+    }
+
+    let namePos = LANG_FILE.search(`${NAMESPACE}.${identifier.replace(`${NAMESPACE}:`, "")}=`);
+    let name = LANG_FILE.substring(namePos).split("\n", 1).at(0)?.replace(`${NAMESPACE}.${identifier.replace(`${NAMESPACE}:`, "")}=`, "").replace("\r", "");
+    console.log([name]);
     return name;
-}
+
+};
 
 function CreateShapedRecipe(file: string, RECIPE: BPRecipeFile, ITEM: IndexItem) {
     const SHAPED_RECIPE = RECIPE["minecraft:recipe_shaped"]
@@ -325,18 +370,18 @@ function CreateShapedRecipe(file: string, RECIPE: BPRecipeFile, ITEM: IndexItem)
     const RECIPE_ITEMS = [item1, item2, item3, item4, item5, item6, item7, item8, item9]
     const ITEM_COUNTS = GetCountOfEachItem(RECIPE_ITEMS)
     for (const item of ITEM_COUNTS) {
-        file = `${file}\n* ${item.count !== 1 ? `${item.count}x` : ""} <img src="${GetImageLink(item.value)}" alt="" data-size="line"> ${GetWikiPagePath(ITEM.wiki_page, FindItemByIdentifier(item.value)?.wiki_page) !== "" ? "[" + GetDisplayNameByIdentifier(item.value) + "](" + GetWikiPagePath(ITEM.wiki_page, FindItemByIdentifier(item.value)?.wiki_page) + ")" : GetDisplayNameByIdentifier(item.value)}\n`
+        file = `${file}\n* ${item.count !== 1 ? `${item.count}x` : ""} <img src="${GetImageLink(item.value)}" alt="" data-size="line"> ${GetWikiPagePath(ITEM.identifier, item.value) !== "" ? "[" + GetDisplayNameByIdentifier(item.value) + "](" + GetWikiPagePath(ITEM.identifier, item.value) + ")" : GetDisplayNameByIdentifier(item.value)}\n`
     }
     // Make Outputs:
 
     file = `${file}\nOutputs:\n`
 
-    file = `${file}\n* ${SHAPED_RECIPE.result.count !== 1 ? `${SHAPED_RECIPE.result.count}x` : ""} <img src="${GetImageLink(SHAPED_RECIPE.result.item)}" alt="" data-size="line"> ${GetWikiPagePath(ITEM.wiki_page, FindItemByIdentifier(SHAPED_RECIPE.result.item)?.wiki_page) !== "" ? "[" + GetDisplayNameByIdentifier(SHAPED_RECIPE.result.item) + "](" + GetWikiPagePath(ITEM.wiki_page, FindItemByIdentifier(SHAPED_RECIPE.result.item)?.wiki_page) + ")" : GetDisplayNameByIdentifier(SHAPED_RECIPE.result.item)}\n`
+    file = `${file}\n* ${SHAPED_RECIPE.result.count !== 1 ? `${SHAPED_RECIPE.result.count}x` : ""} <img src="${GetImageLink(SHAPED_RECIPE.result.item)}" alt="" data-size="line"> ${GetWikiPagePath(ITEM.identifier, SHAPED_RECIPE.result.item) !== "" ? "[" + GetDisplayNameByIdentifier(SHAPED_RECIPE.result.item) + "](" + GetWikiPagePath(ITEM.identifier, SHAPED_RECIPE.result.item) + ")" : GetDisplayNameByIdentifier(SHAPED_RECIPE.result.item)}\n`
 
     // Make Unlock:
     file = `${file}\nRecipe can be unlocked with:\n`
     for (const item of SHAPED_RECIPE.unlock) {
-        file = `${file}\n* <img src="${GetImageLink(item.item)}" alt="" data-size="line"> ${GetWikiPagePath(ITEM.wiki_page, FindItemByIdentifier(item.item)?.wiki_page) !== "" ? "[" + GetDisplayNameByIdentifier(item.item) + "](" + GetWikiPagePath(ITEM.wiki_page, FindItemByIdentifier(item.item)?.wiki_page) + ")" : GetDisplayNameByIdentifier(item.item)}\n`
+        file = `${file}\n* <img src="${GetImageLink(item.item)}" alt="" data-size="line"> ${GetWikiPagePath(ITEM.identifier, item.item) !== "" ? "[" + GetDisplayNameByIdentifier(item.item) + "](" + GetWikiPagePath(ITEM.identifier, item.item) + ")" : GetDisplayNameByIdentifier(item.item)}\n`
     }
 
 

@@ -56,7 +56,7 @@ Recipe can be unlocked with:
 {% tab title="Stonecutting" %}
 <figure><img src="https://minecraft.wiki/images/Stonecutter_JE2_BE1.gif?bb269" alt=""><figcaption><p>Cut with the<br><a href="https://minecraft.wiki/w/Stonecutter">Stonecutter</a></p></figcaption></figure>
 
-<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="undefined" alt="" data-size="line"> <a href="">pack.name=§bv1.2.8 PFE RP</a></td><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HoneyBrickStairs.png?raw=true" alt="" data-size="line"> Honey Brick Stairs</td><td>1</td></tr></tbody></table>
+<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="https://minecraft.wiki/images/Honeycomb_Block_JE1_BE1.png?ff510" alt="" data-size="line"> <a href="https://minecraft.wiki/w/Honeycomb_Block">Honeycomb Block</a></td><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HoneyBrickStairs.png?raw=true" alt="" data-size="line"> Honey Brick Stairs</td><td>1</td></tr></tbody></table>
 
 {% endtab %}
 {% endtabs %}

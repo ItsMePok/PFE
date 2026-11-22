@@ -1,5 +1,14 @@
 import index from "../index.json" with {type: 'json'};
+import mc_index from "../minecraft_index.json" with {type: 'json'};
 
+
+type MCIndexFile = {
+    [key: string]: {
+        "icon": string,
+        "wiki_page": string,
+        "name": string
+    }
+}
 type IndexItem = (typeof index.index)[number]
 type BPBlockJSON = {
     "minecraft:block": {
@@ -63,5 +72,6 @@ type BPRecipeFile = {
 export {
     type BPBlockJSON,
     type BPRecipeFile,
-    type IndexItem
+    type IndexItem,
+    type MCIndexFile
 }

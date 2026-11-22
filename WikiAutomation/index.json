@@ -922,6 +922,18 @@
                     "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/void/void_brick_stairs_sc_from_block.recipe.json"
                 ]
             }
+        },
+        {
+            "run": true,
+            "identifier": "poke_pfe:wither_spawner",
+            "wiki_page": "PFEWiki/mobs/bosses/wither-spawner.md",
+            "components": {
+                "type": "item",
+                "item_file_path": "WikiAutomation/PFE/behavior_packs/pfe/items/spawn_eggs/wither_spawner.item.json",
+                "recipes": [
+                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/mobs/wither_spawner.recipe.json"
+                ]
+            }
         }
     ]
 }

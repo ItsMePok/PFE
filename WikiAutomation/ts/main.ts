@@ -1,7 +1,7 @@
 import index from "../index.json" with {type: 'json'};
 
 import { writeFileSync, readFileSync } from "fs";
-import { GetDisplayNameByIdentifier, GetImageLink, MakeDestroySpeed, MakeIdentifierSection, MakeMapColor, MakeObtainingSection, MakeStackSize } from "./functions.ts";
+import { GetDisplayNameByIdentifier, GetImageLink, MakeDestroySpeed, MakeIdentifierSection, MakeMapColor, MakeObtainingSection, MakeRarity, MakeStackSize } from "./functions.ts";
 import { VERSION } from "./consts.ts";
 
 console.log(index.default_info.BP);
@@ -39,12 +39,7 @@ for (const item of index.index) {
     file = MakeIdentifierSection(file, item);
 
     //Make Rarity:
-    //TODO: Add parsing of minecraft:rarity component
-    if (!item.components.item_file_path) {
-        file = `${file}\n## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark> <a href="#rarity" id="rarity"></a>\n`;
-    } else {
-
-    }
+    file = MakeRarity(file, item);
 
     //Make Stack Size:
     file = MakeStackSize(file, item);

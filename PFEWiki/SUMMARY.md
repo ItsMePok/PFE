@@ -758,6 +758,7 @@
     * [Hellish Brick Stairs](blocks/stairs/hellish-brick-stairs.md)
     * [Holy Brick Stairs](blocks/stairs/holy-brick-stairs.md)
     * [Honey Brick Stairs](blocks/stairs/honey-brick-stairs.md)
+    * [Honey Tile Stairs](blocks/stairs/honey-tile-stairs.md)
     * [Limestone Brick Stairs](blocks/stairs/limestone-brick-stairs.md)
     * [Limestone Stairs](blocks/stairs/limestone-stairs.md)
     * [Medic Brick Stairs](blocks/stairs/medic-brick-stairs.md)

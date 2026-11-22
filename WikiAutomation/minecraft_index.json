@@ -1,0 +1,17 @@
+{
+  "minecraft:wither_skeleton_skull": {
+    "icon": "https://minecraft.wiki/images/Wither_Skeleton_Skull_%28S%29_JE2.png?0a739",
+    "wiki_page": "https://minecraft.wiki/w/Wither_Skeleton_Skull",
+    "name": "Wither Skeleton Skull"
+  },
+  "minecraft:soul_sand": {
+    "icon": "https://minecraft.wiki/images/Soul_Sand_JE2_BE2.png?2334d",
+    "wiki_page": "https://minecraft.wiki/w/Soul_Sand",
+    "name": "Soul Sand"
+  },
+  "minecraft:honeycomb_block": {
+    "icon": "https://minecraft.wiki/images/Honeycomb_Block_JE1_BE1.png?ff510",
+    "wiki_page": "https://minecraft.wiki/w/Honeycomb_Block",
+    "name": "Honeycomb Block"
+  }
+}
