@@ -31,13 +31,13 @@ description: Last updated to match v1.3.06
 
 ||||
 | :-: | :-: | :-: |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](undefined) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/antenna.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
 | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_ingot.png?raw=true) | ![](https://minecraft.wiki/images/Ender_Pearl_JE3_BE2.png?829a7) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_ingot.png?raw=true) |
 | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](https://minecraft.wiki/images/Redstone_Dust_JE2_BE2.png?8cf17) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
 
 Items:
 
-*  <img src="undefined" alt="" data-size="line"> Antenna
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/antenna.png?raw=true" alt="" data-size="line"> Antenna
 
 * 2x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_ingot.png?raw=true" alt="" data-size="line"> Void Ingot
 
@@ -51,7 +51,7 @@ Outputs:
 
 Recipe can be unlocked with:
 
-* <img src="undefined" alt="" data-size="line"> Antenna
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/antenna.png?raw=true" alt="" data-size="line"> Antenna
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_ingot.png?raw=true" alt="" data-size="line"> Void Ingot
 

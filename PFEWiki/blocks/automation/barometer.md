@@ -31,19 +31,19 @@ description: Last updated to match v1.3.06
 
 ||||
 | :-: | :-: | :-: |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutCobalt.png?raw=true) | ![](undefined) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutCobalt.png?raw=true) |
-| ![](undefined) | ![](undefined) | ![](undefined) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutCobalt.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/wire.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutCobalt.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/electric_component.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/rain_gem.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/electric_component.png?raw=true) |
 | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutCobalt.png?raw=true) | ![](https://minecraft.wiki/images/Daylight_Detector_JE1_BE1.png?c5bbc) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutCobalt.png?raw=true) |
 
 Items:
 
 * 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutCobalt.png?raw=true" alt="" data-size="line"> [Cut Cobalt](..\cut-blocks\cut-cobalt.md)
 
-*  <img src="undefined" alt="" data-size="line"> Wire
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/wire.png?raw=true" alt="" data-size="line"> Wire
 
-* 2x <img src="undefined" alt="" data-size="line"> Electric Component
+* 2x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/electric_component.png?raw=true" alt="" data-size="line"> Electric Component
 
-*  <img src="undefined" alt="" data-size="line"> Rain Gem
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/rain_gem.png?raw=true" alt="" data-size="line"> Rain Gem
 
 *  <img src="https://minecraft.wiki/images/Daylight_Detector_JE1_BE1.png?c5bbc" alt="" data-size="line"> [Daylight Detector](https://minecraft.wiki/w/Daylight_Detector)
 
@@ -57,11 +57,11 @@ Recipe can be unlocked with:
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutCobalt.png?raw=true" alt="" data-size="line"> [Cut Cobalt](..\cut-blocks\cut-cobalt.md)
 
-* <img src="undefined" alt="" data-size="line"> Wire
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/wire.png?raw=true" alt="" data-size="line"> Wire
 
-* <img src="undefined" alt="" data-size="line"> Rain Gem
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/rain_gem.png?raw=true" alt="" data-size="line"> Rain Gem
 
-* <img src="undefined" alt="" data-size="line"> Electric Component
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/electric_component.png?raw=true" alt="" data-size="line"> Electric Component
 
 * <img src="https://minecraft.wiki/images/Daylight_Detector_JE1_BE1.png?c5bbc" alt="" data-size="line"> [Daylight Detector](https://minecraft.wiki/w/Daylight_Detector)
 

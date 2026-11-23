@@ -31,12 +31,12 @@ description: Last updated to match v1.3.06
 
 |||
 | :-: | :-: |
-| ![](undefined) | ![](undefined) |
-| ![](undefined) | ![](undefined) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star.png?raw=true) |
 
 Items:
 
-* 4x <img src="undefined" alt="" data-size="line"> Banished Star
+* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star.png?raw=true" alt="" data-size="line"> Banished Star
 
 Outputs:
 

@@ -32,7 +32,7 @@ description: Last updated to match v1.3.06
 ||||
 | :-: | :-: | :-: |
 | ![](https://minecraft.wiki/images/Iron_Ingot_JE3_BE2.png?849cb) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_ingot.png?raw=true) | ![](https://minecraft.wiki/images/Redstone_Dust_JE2_BE2.png?8cf17) |
-| ![](https://minecraft.wiki/images/Iron_Ingot_JE3_BE2.png?849cb) | ![](undefined) | ![](https://minecraft.wiki/images/Blue_Ice_JE1.png?b5deb) |
+| ![](https://minecraft.wiki/images/Iron_Ingot_JE3_BE2.png?849cb) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/electric_component.png?raw=true) | ![](https://minecraft.wiki/images/Blue_Ice_JE1.png?b5deb) |
 | ![](https://minecraft.wiki/images/Iron_Ingot_JE3_BE2.png?849cb) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_ingot.png?raw=true) | ![](https://minecraft.wiki/images/Iron_Ingot_JE3_BE2.png?849cb) |
 
 Items:
@@ -43,7 +43,7 @@ Items:
 
 *  <img src="https://minecraft.wiki/images/Redstone_Dust_JE2_BE2.png?8cf17" alt="" data-size="line"> [Redstone Dust](https://minecraft.wiki/w/Redstone_Dust)
 
-*  <img src="undefined" alt="" data-size="line"> Electric Component
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/electric_component.png?raw=true" alt="" data-size="line"> Electric Component
 
 *  <img src="https://minecraft.wiki/images/Blue_Ice_JE1.png?b5deb" alt="" data-size="line"> [Blue Ice](https://minecraft.wiki/w/Blue_Ice)
 
@@ -65,7 +65,7 @@ Recipe can be unlocked with:
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_ingot.png?raw=true" alt="" data-size="line"> Onyx Ingot
 
-* <img src="undefined" alt="" data-size="line"> Electric Component
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/electric_component.png?raw=true" alt="" data-size="line"> Electric Component
 
 {% endtab %}
 
