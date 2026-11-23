@@ -1,51 +1,51 @@
 {
-	"format_version": "1.26.60",
-	"minecraft:block": {
-		"description": {
-			"identifier": "poke_pfe:cobbled_shadowstone",
-			"menu_category": {
-				"category": "nature"
-			}
-		},
-		"components": {
-			"minecraft:display_name": "%poke_pfe.cobbled_shadowstone\n%poke_pfe.tag",
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "poke_pfe_cobbled_shadowstone",
-					"render_method": "opaque"
-				}
-			},
-			"minecraft:geometry": {
-				"identifier": "minecraft:geometry.full_block"
-			},
-			"minecraft:redstone_conductivity": {
-				"redstone_conductor": true,
-				"allows_wire_to_step_down": true
-			},
-			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 7.5,
-				"item_specific_speeds": [
-					{
-						"item": {
-							"tags": "q.any_tag('minecraft:is_pickaxe')"
-						},
-						"destroy_speed": 1.15
-					}
-				]
-			},
-			"minecraft:destructible_by_explosion": {
-				"explosion_resistance": 30
-			},
-			"minecraft:map_color": "#2a1d2c",
-			"minecraft:tags": [
-				"pfe",
-				"stone",
-				"minecraft:stone",
-				"stone_pick_diggable",
-				"minecraft:is_pickaxe_item_destructible",
-				"minecraft:stone_tool_materials",
-				"minecraft:stone_crafting_materials"
-			]
-		}
-	}
+  "format_version": "1.26.60",
+  "minecraft:block": {
+    "description": {
+      "identifier": "poke_pfe:cobbled_shadowstone",
+      "menu_category": {
+        "category": "nature"
+      }
+    },
+    "components": {
+      "minecraft:display_name": "%poke_pfe.cobbled_shadowstone\n%poke_pfe.tag",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "poke_pfe_cobbled_shadowstone",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:geometry": {
+        "identifier": "minecraft:geometry.full_block"
+      },
+      "minecraft:redstone_conductivity": {
+        "redstone_conductor": true,
+        "allows_wire_to_step_down": true
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 7.5,
+        "item_specific_speeds": [
+          {
+            "item": {
+              "tags": "q.any_tag('minecraft:is_pickaxe')"
+            },
+            "destroy_speed": 1.15
+          }
+        ]
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 30
+      },
+      "minecraft:map_color": "#2a1d2c",
+      "minecraft:tags": [
+        "pfe",
+        "stone",
+        "minecraft:stone",
+        "stone_pick_diggable",
+        "minecraft:is_pickaxe_item_destructible",
+        "minecraft:stone_tool_materials",
+        "minecraft:stone_crafting_materials"
+      ]
+    }
+  }
 }

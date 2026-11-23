@@ -1,14 +1,11 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:recipe_furnace": {
-		"description": {
-			"identifier": "poke_pfe:end_galaxy_ore"
-		},
-		"tags": [
-			"furnace",
-			"blast_furnace"
-		],
-		"input": "poke_pfe:end_galaxy_ore",
-		"output": "poke_pfe:galaxy_ingot"
-	}
+  "format_version": "1.16.100",
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "poke_pfe:end_galaxy_ore"
+    },
+    "tags": ["furnace", "blast_furnace"],
+    "input": "poke_pfe:end_galaxy_ore",
+    "output": "poke_pfe:galaxy_ingot"
+  }
 }

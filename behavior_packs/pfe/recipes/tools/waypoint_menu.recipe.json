@@ -5,9 +5,7 @@
       "identifier": "poke_pfe:waypoint_menu"
     },
     "group": "waypoint",
-    "tags": [
-      "crafting_table"
-    ],
+    "tags": ["crafting_table"],
     "unlock": [
       {
         "item": "poke_pfe:antenna"
@@ -28,11 +26,7 @@
         "item": "minecraft:ender_pearl"
       }
     ],
-    "pattern": [
-      "AEA",
-      "PGP",
-      "CTC"
-    ],
+    "pattern": ["AEA", "PGP", "CTC"],
     "key": {
       "A": {
         "item": "poke_pfe:antenna"

@@ -1,14 +1,12 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:recipe_brewing_mix": {
-		"description": {
-			"identifier": "poke_pfe:eggnog"
-		},
-		"tags": [
-			"brewing_stand"
-		],
-		"input": "poke_pfe:milk_bottle",
-		"reagent": "egg",
-		"output": "poke_pfe:eggnog"
-	}
+  "format_version": "1.16.100",
+  "minecraft:recipe_brewing_mix": {
+    "description": {
+      "identifier": "poke_pfe:eggnog"
+    },
+    "tags": ["brewing_stand"],
+    "input": "poke_pfe:milk_bottle",
+    "reagent": "egg",
+    "output": "poke_pfe:eggnog"
+  }
 }

@@ -1,36 +1,32 @@
 {
-    "format_version": "1.16.100",
-    "minecraft:recipe_shaped": {
-        "tags": [
-            "crafting_table"
-        ],
-        "description": {
-            "identifier": "poke_pfe:sugarcane_crate_uncraft"
-        },
-        "unlock": [
-            {
-                "item": "poke_pfe:empty_crate"
-            },
-            {
-                "item": "poke_pfe:sugarcane_crate"
-            }
-        ],
-        "pattern": [
-            "#"
-        ],
-        "key": {
-            "#": {
-                "item": "poke_pfe:sugarcane_crate"
-            }
-        },
-        "result": [
-            {
-                "item": "poke_pfe:bundled_sugarcane",
-                "count": 8
-            },
-            {
-                "item": "poke_pfe:empty_crate"
-            }
-        ]
-    }
+  "format_version": "1.16.100",
+  "minecraft:recipe_shaped": {
+    "tags": ["crafting_table"],
+    "description": {
+      "identifier": "poke_pfe:sugarcane_crate_uncraft"
+    },
+    "unlock": [
+      {
+        "item": "poke_pfe:empty_crate"
+      },
+      {
+        "item": "poke_pfe:sugarcane_crate"
+      }
+    ],
+    "pattern": ["#"],
+    "key": {
+      "#": {
+        "item": "poke_pfe:sugarcane_crate"
+      }
+    },
+    "result": [
+      {
+        "item": "poke_pfe:bundled_sugarcane",
+        "count": 8
+      },
+      {
+        "item": "poke_pfe:empty_crate"
+      }
+    ]
+  }
 }

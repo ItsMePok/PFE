@@ -1,13 +1,11 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:recipe_furnace": {
-		"description": {
-			"identifier": "poke_pfe:raw_gold_block_smelt"
-		},
-		"tags": [
-			"blast_furnace"
-		],
-		"input": "minecraft:raw_gold_block",
-		"output": "minecraft:gold_block"
-	}
+  "format_version": "1.16.100",
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "poke_pfe:raw_gold_block_smelt"
+    },
+    "tags": ["blast_furnace"],
+    "input": "minecraft:raw_gold_block",
+    "output": "minecraft:gold_block"
+  }
 }

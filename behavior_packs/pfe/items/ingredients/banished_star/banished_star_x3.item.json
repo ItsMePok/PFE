@@ -1,24 +1,22 @@
 {
-	"format_version": "1.26.60",
-	"minecraft:item": {
-		"description": {
-			"identifier": "poke_pfe:banished_star_x3",
-			"menu_category": {
-				"category": "items"
-			}
-		},
-		"components": {
-			"minecraft:display_name": {
-				"value": "%poke_pfe.banished_star3\n%poke_pfe.tag"
-			},
-			"poke_pfe:icon_path": "textures/poke/pfe/banished_star_x3",
-			"minecraft:tags": {
-				"tags": [
-					"poke_pfe:banished_star"
-				]
-			},
-			"minecraft:rarity": "common",
-			"minecraft:icon": "poke_pfe_banished_star_x3"
-		}
-	}
+  "format_version": "1.26.60",
+  "minecraft:item": {
+    "description": {
+      "identifier": "poke_pfe:banished_star_x3",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "%poke_pfe.banished_star3\n%poke_pfe.tag"
+      },
+      "poke_pfe:icon_path": "textures/poke/pfe/banished_star_x3",
+      "minecraft:tags": {
+        "tags": ["poke_pfe:banished_star"]
+      },
+      "minecraft:rarity": "common",
+      "minecraft:icon": "poke_pfe_banished_star_x3"
+    }
+  }
 }

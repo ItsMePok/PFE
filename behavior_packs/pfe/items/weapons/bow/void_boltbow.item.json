@@ -1,62 +1,56 @@
 {
-	"format_version": "1.26.60",
-	"minecraft:item": {
-		"description": {
-			"identifier": "poke_pfe:void_boltbow",
-			"menu_category": {
-				"category": "equipment"
-			}
-		},
-		"components": {
-			"minecraft:display_name": {
-				"value": "%poke_pfe.void_boltbow\n§7%poke_pfe.crouchInteract\n%poke_pfe.tag"
-			},
-			"poke_pfe:icon_path": "textures/poke/pfe/void_boltbow_item",
-			"minecraft:rarity": "common",
-			"minecraft:icon": "poke_pfe_void_boltbow",
-			"minecraft:can_destroy_in_creative": {
-				"value": false
-			},
-			"minecraft:use_modifiers": {
-				"movement_modifier": 1,
-				"use_duration": 99999
-			},
-			"minecraft:repairable": {
-				"repair_items": [
-					{
-						"items": [
-							"poke_pfe:repair_core"
-						],
-						"repair_amount": "query.max_durability"
-					},
-					{
-						"items": [
-							"poke_pfe:void_ingot"
-						],
-						"repair_amount": "query.max_durability*0.25"
-					},
-					{
-						"items": [
-							"poke_pfe:void_nugget"
-						],
-						"repair_amount": "query.max_durability*0.028"
-					}
-				]
-			},
-			"minecraft:max_stack_size": 1,
-			"minecraft:enchantable": {
-				"value": 75,
-				"slot": "flintsteel"
-			},
-			"minecraft:durability": {
-				"damage_chance": {
-					"min": 50,
-					"max": 100
-				},
-				"max_durability": 2000
-			},
-			"poke_pfe:cc_bowAim": {},
-			"poke_pfe:boltbow": {}
-		}
-	}
+  "format_version": "1.26.60",
+  "minecraft:item": {
+    "description": {
+      "identifier": "poke_pfe:void_boltbow",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "%poke_pfe.void_boltbow\n§7%poke_pfe.crouchInteract\n%poke_pfe.tag"
+      },
+      "poke_pfe:icon_path": "textures/poke/pfe/void_boltbow_item",
+      "minecraft:rarity": "common",
+      "minecraft:icon": "poke_pfe_void_boltbow",
+      "minecraft:can_destroy_in_creative": {
+        "value": false
+      },
+      "minecraft:use_modifiers": {
+        "movement_modifier": 1,
+        "use_duration": 99999
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": ["poke_pfe:repair_core"],
+            "repair_amount": "query.max_durability"
+          },
+          {
+            "items": ["poke_pfe:void_ingot"],
+            "repair_amount": "query.max_durability*0.25"
+          },
+          {
+            "items": ["poke_pfe:void_nugget"],
+            "repair_amount": "query.max_durability*0.028"
+          }
+        ]
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:enchantable": {
+        "value": 75,
+        "slot": "flintsteel"
+      },
+      "minecraft:durability": {
+        "damage_chance": {
+          "min": 50,
+          "max": 100
+        },
+        "max_durability": 2000
+      },
+      "poke_pfe:cc_bowAim": {},
+      "poke_pfe:boltbow": {}
+    }
+  }
 }

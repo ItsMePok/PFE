@@ -1,28 +1,24 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:cut_demonic_slab_to_cut_demonic"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:cut_demonic_slab"
-			}
-		],
-		"key": {
-			"C": {
-				"item": "poke_pfe:cut_demonic_slab"
-			}
-		},
-		"pattern": [
-			"CC"
-		],
-		"result": {
-			"item": "poke_pfe:cut_demonic"
-		},
-		"priority": 2
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:cut_demonic_slab_to_cut_demonic"
+    },
+    "tags": ["crafting_table"],
+    "unlock": [
+      {
+        "item": "poke_pfe:cut_demonic_slab"
+      }
+    ],
+    "key": {
+      "C": {
+        "item": "poke_pfe:cut_demonic_slab"
+      }
+    },
+    "pattern": ["CC"],
+    "result": {
+      "item": "poke_pfe:cut_demonic"
+    },
+    "priority": 2
+  }
 }

@@ -1,48 +1,42 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:capacity_core"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"AAA",
-			"AUA",
-			"COC"
-		],
-		"unlock": [
-			{
-				"tag": "minecraft:arrow"
-			},
-			{
-				"item": "poke_pfe:upgrade_core"
-			},
-			{
-				"item": "poke_pfe:cobalt_ingot"
-			},
-			{
-				"item": "poke_pfe:onyx_ingot"
-			}
-		],
-		"key": {
-			"A": {
-				"tag": "minecraft:arrow"
-			},
-			"U": {
-				"item": "poke_pfe:upgrade_core"
-			},
-			"C": {
-				"item": "poke_pfe:cobalt_ingot"
-			},
-			"O": {
-				"item": "poke_pfe:onyx_ingot"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:capacity_core",
-			"count": 1
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:capacity_core"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["AAA", "AUA", "COC"],
+    "unlock": [
+      {
+        "tag": "minecraft:arrow"
+      },
+      {
+        "item": "poke_pfe:upgrade_core"
+      },
+      {
+        "item": "poke_pfe:cobalt_ingot"
+      },
+      {
+        "item": "poke_pfe:onyx_ingot"
+      }
+    ],
+    "key": {
+      "A": {
+        "tag": "minecraft:arrow"
+      },
+      "U": {
+        "item": "poke_pfe:upgrade_core"
+      },
+      "C": {
+        "item": "poke_pfe:cobalt_ingot"
+      },
+      "O": {
+        "item": "poke_pfe:onyx_ingot"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:capacity_core",
+      "count": 1
+    }
+  }
 }

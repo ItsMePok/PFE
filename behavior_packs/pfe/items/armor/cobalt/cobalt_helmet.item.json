@@ -37,32 +37,21 @@
       "minecraft:repairable": {
         "repair_items": [
           {
-            "items": [
-              "poke_pfe:repair_core",
-              "poke_pfe:cobalt_block"
-            ],
+            "items": ["poke_pfe:repair_core", "poke_pfe:cobalt_block"],
             "repair_amount": "query.max_durability"
           },
           {
-            "items": [
-              "poke_pfe:cobalt_ingot"
-            ],
+            "items": ["poke_pfe:cobalt_ingot"],
             "repair_amount": "query.max_durability*0.25"
           },
           {
-            "items": [
-              "poke_pfe:cobalt_nugget"
-            ],
+            "items": ["poke_pfe:cobalt_nugget"],
             "repair_amount": "query.max_durability*0.028"
           }
         ]
       },
       "minecraft:tags": {
-        "tags": [
-          "novelty:is_hat",
-          "minecraft:trimmable_armors",
-          "minecraft:is_armor"
-        ]
+        "tags": ["novelty:is_hat", "minecraft:trimmable_armors", "minecraft:is_armor"]
       }
     }
   }

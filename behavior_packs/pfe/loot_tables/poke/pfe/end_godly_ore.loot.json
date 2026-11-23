@@ -1,44 +1,44 @@
 {
-	"pools": [
-		{
-			"rolls": 7,
-			"entries": [
-				{
-					"type": "item",
-					"name": "poke_pfe:godly_nugget"
-				},
-				{
-					"type": "empty"
-				}
-			]
-		},
-		{
-			"rolls": 2,
-			"entries": [
-				{
-					"type": "item",
-					"name": "poke_pfe:godly_nugget"
-				}
-			]
-		},
-		{
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "empty",
-					"weight": 9999
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:pickaxe_hat",
-					"weight": 1
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:pfe-ingot_pottery_sherd",
-					"weight": 1
-				}
-			]
-		}
-	]
+  "pools": [
+    {
+      "rolls": 7,
+      "entries": [
+        {
+          "type": "item",
+          "name": "poke_pfe:godly_nugget"
+        },
+        {
+          "type": "empty"
+        }
+      ]
+    },
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "item",
+          "name": "poke_pfe:godly_nugget"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "empty",
+          "weight": 9999
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:pickaxe_hat",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:pfe-ingot_pottery_sherd",
+          "weight": 1
+        }
+      ]
+    }
+  ]
 }

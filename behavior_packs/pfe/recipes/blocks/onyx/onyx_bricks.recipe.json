@@ -1,32 +1,27 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:onyx_bricks_craft"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:onyx_block"
-			},
-			{
-				"item": "poke_pfe:onyx_ingot"
-			}
-		],
-		"key": {
-			"C": {
-				"item": "poke_pfe:cut_onyx"
-			}
-		},
-		"pattern": [
-			"CC",
-			"CC"
-		],
-		"result": {
-			"item": "poke_pfe:onyx_bricks",
-			"count": 4
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:onyx_bricks_craft"
+    },
+    "tags": ["crafting_table"],
+    "unlock": [
+      {
+        "item": "poke_pfe:onyx_block"
+      },
+      {
+        "item": "poke_pfe:onyx_ingot"
+      }
+    ],
+    "key": {
+      "C": {
+        "item": "poke_pfe:cut_onyx"
+      }
+    },
+    "pattern": ["CC", "CC"],
+    "result": {
+      "item": "poke_pfe:onyx_bricks",
+      "count": 4
+    }
+  }
 }

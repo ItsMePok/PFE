@@ -5,20 +5,14 @@
       "identifier": "poke_pfe:cobbled_limestone_stairs"
     },
     "assume_symmetry": true,
-    "tags": [
-      "crafting_table"
-    ],
+    "tags": ["crafting_table"],
     "group": "stairs",
     "unlock": [
       {
         "item": "poke_pfe:cobbled_limestone"
       }
     ],
-    "pattern": [
-      "X  ",
-      "XX ",
-      "XXX"
-    ],
+    "pattern": ["X  ", "XX ", "XXX"],
     "key": {
       "X": {
         "item": "poke_pfe:cobbled_limestone"

@@ -1,46 +1,40 @@
 {
-    "format_version": "1.20.60",
-    "minecraft:recipe_shaped": {
-        "description": {
-            "identifier": "poke_pfe:radium_ingot"
-        },
-        "tags": [
-            "crafting_table"
-        ],
-        "pattern": [
-            "VVV",
-            "VFO",
-            "OOO"
-        ],
-        "unlock": [
-            {
-                "item": "poke_pfe:shade_ingot"
-            },
-            {
-                "item": "poke_pfe:astral_ingot"
-            },
-            {
-                "item": "poke_pfe:astral_block"
-            },
-            {
-                "item": "poke_pfe:shade_block"
-            }
-        ],
-        "key": {
-            "F": {
-                "item": "poke_pfe:molten_slimeball"
-            },
-            "V": {
-                "item": "poke_pfe:shade_ingot"
-            },
-            "O": {
-                "item": "poke_pfe:astral_ingot"
-            }
-        },
-        "result": {
-            "item": "poke_pfe:radium_ingot",
-            "count": 4
-        },
-        "priority": 0
-    }
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:radium_ingot"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["VVV", "VFO", "OOO"],
+    "unlock": [
+      {
+        "item": "poke_pfe:shade_ingot"
+      },
+      {
+        "item": "poke_pfe:astral_ingot"
+      },
+      {
+        "item": "poke_pfe:astral_block"
+      },
+      {
+        "item": "poke_pfe:shade_block"
+      }
+    ],
+    "key": {
+      "F": {
+        "item": "poke_pfe:molten_slimeball"
+      },
+      "V": {
+        "item": "poke_pfe:shade_ingot"
+      },
+      "O": {
+        "item": "poke_pfe:astral_ingot"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:radium_ingot",
+      "count": 4
+    },
+    "priority": 0
+  }
 }

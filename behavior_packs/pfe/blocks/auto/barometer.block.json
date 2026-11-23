@@ -1,52 +1,49 @@
 {
-	"format_version": "1.26.60",
-	"minecraft:block": {
-		"description": {
-			"identifier": "poke_pfe:barometer",
-			"menu_category": {
-				"category": "none"
-			}
-		},
-		"components": {
-			"minecraft:redstone_consumer": {
-				"propagates_power": false,
-				"min_power": 0
-			},
-			"poke_pfe:transform_block": {},
-			"minecraft:display_name": "%poke_pfe.barometer\n%poke_pfe.tag",
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "poke_pfe_barometer",
-					"render_method": "opaque"
-				}
-			},
-			"minecraft:geometry": {
-				"identifier": "minecraft:geometry.full_block"
-			},
-			"minecraft:redstone_conductivity": {
-				"redstone_conductor": true,
-				"allows_wire_to_step_down": true
-			},
-			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 1
-			},
-			"minecraft:destructible_by_explosion": {
-				"explosion_resistance": 30
-			},
-			"minecraft:tags": [
-				"pfe",
-				"metal",
-				"minecraft:metal",
-				"stone_pick_diggable",
-				"minecraft:is_pickaxe_item_destructible"
-			],
-			"minecraft:map_color": "#7a5a0f",
-			"minecraft:tick": {
-				"interval_range": [
-					60,
-					60
-				]
-			}
-		}
-	}
+  "format_version": "1.26.60",
+  "minecraft:block": {
+    "description": {
+      "identifier": "poke_pfe:barometer",
+      "menu_category": {
+        "category": "none"
+      }
+    },
+    "components": {
+      "minecraft:redstone_consumer": {
+        "propagates_power": false,
+        "min_power": 0
+      },
+      "poke_pfe:transform_block": {},
+      "minecraft:display_name": "%poke_pfe.barometer\n%poke_pfe.tag",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "poke_pfe_barometer",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:geometry": {
+        "identifier": "minecraft:geometry.full_block"
+      },
+      "minecraft:redstone_conductivity": {
+        "redstone_conductor": true,
+        "allows_wire_to_step_down": true
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 30
+      },
+      "minecraft:tags": [
+        "pfe",
+        "metal",
+        "minecraft:metal",
+        "stone_pick_diggable",
+        "minecraft:is_pickaxe_item_destructible"
+      ],
+      "minecraft:map_color": "#7a5a0f",
+      "minecraft:tick": {
+        "interval_range": [60, 60]
+      }
+    }
+  }
 }

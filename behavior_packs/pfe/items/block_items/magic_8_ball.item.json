@@ -1,23 +1,23 @@
 {
-	"format_version": "1.26.60",
-	"minecraft:item": {
-		"description": {
-			"identifier": "poke_pfe:magic_8_ball",
-			"menu_category": {
-				"category": "items"
-			}
-		},
-		"components": {
-			"minecraft:display_name": {
-				"value": "%poke_pfe.magic_8_ball\n%poke_pfe.tag"
-			},
-			"poke_pfe:icon_path": "textures/poke/pfe/8_ball_icon",
-			"minecraft:max_stack_size": 64,
-			"minecraft:rarity": "common",
-			"minecraft:block_placer": {
-				"block": "poke_pfe:magic_8_ball",
-				"replace_block_item": true
-			}
-		}
-	}
+  "format_version": "1.26.60",
+  "minecraft:item": {
+    "description": {
+      "identifier": "poke_pfe:magic_8_ball",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "%poke_pfe.magic_8_ball\n%poke_pfe.tag"
+      },
+      "poke_pfe:icon_path": "textures/poke/pfe/8_ball_icon",
+      "minecraft:max_stack_size": 64,
+      "minecraft:rarity": "common",
+      "minecraft:block_placer": {
+        "block": "poke_pfe:magic_8_ball",
+        "replace_block_item": true
+      }
+    }
+  }
 }

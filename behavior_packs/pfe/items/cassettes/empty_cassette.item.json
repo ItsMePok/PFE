@@ -19,9 +19,7 @@
         "music_volume": 0.5
       },
       "minecraft:tags": {
-        "tags": [
-          "poke_pfe:is_cassette"
-        ]
+        "tags": ["poke_pfe:is_cassette"]
       }
     }
   }

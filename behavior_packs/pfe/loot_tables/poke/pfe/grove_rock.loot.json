@@ -1,124 +1,127 @@
 {
-	"pools": [
-		{ //Rare Items
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "empty",
-					"weight": 2
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:cassette_echointhewind",
-					"weight": 1
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:cassette_bromeliad",
-					"weight": 1
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:cassette_featherfall",
-					"weight": 1
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:cassette_lefttobloom",
-					"weight": 1
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:cassette_minecraft",
-					"weight": 1
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:cassette_clark",
-					"weight": 1
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:cassette_sweden",
-					"weight": 1
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:flower_lilly_hat",
-					"weight": 1
-				}
-			]
-		},
-		{ //Common Items
-			"rolls": {
-				"min": 8,
-				"max": 16
-			},
-			"entries": [
-				{
-					"type": "empty",
-					"weight": 15
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:turnip",
-					"weight": 6
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:smoked_beetroot",
-					"weight": 6
-				},
-				{
-					"type": "item",
-					"name": "minecraft:moss_block",
-					"weight": 6
-				},
-				{
-					"type": "item",
-					"name": "minecraft:mossy_cobblestone",
-					"weight": 3
-				},
-				{
-					"type": "item",
-					"name": "minecraft:pink_petals",
-					"weight": 5
-				},
-				{
-					"type": "item",
-					"name": "minecraft:string",
-					"weight": 6
-				},
-				{
-					"type": "item",
-					"name": "minecraft:bone",
-					"weight": 5
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:farm_quest",
-					"weight": 1
-				}
-			]
-		},
-		{ //Tokens // Total Weight: 85
-			"rolls": 5,
-			"entries": [
-				{
-					"type": "item",
-					"name": "poke_pfe:copper_token",
-					"weight": 20
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:iron_token",
-					"weight": 15
-				},
-				{
-					"type": "empty",
-					"weight": 50
-				}
-			]
-		}
-	]
+  "pools": [
+    {
+      //Rare Items
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "empty",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:cassette_echointhewind",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:cassette_bromeliad",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:cassette_featherfall",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:cassette_lefttobloom",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:cassette_minecraft",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:cassette_clark",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:cassette_sweden",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:flower_lilly_hat",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      //Common Items
+      "rolls": {
+        "min": 8,
+        "max": 16
+      },
+      "entries": [
+        {
+          "type": "empty",
+          "weight": 15
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:turnip",
+          "weight": 6
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:smoked_beetroot",
+          "weight": 6
+        },
+        {
+          "type": "item",
+          "name": "minecraft:moss_block",
+          "weight": 6
+        },
+        {
+          "type": "item",
+          "name": "minecraft:mossy_cobblestone",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:pink_petals",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:string",
+          "weight": 6
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bone",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:farm_quest",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      //Tokens // Total Weight: 85
+      "rolls": 5,
+      "entries": [
+        {
+          "type": "item",
+          "name": "poke_pfe:copper_token",
+          "weight": 20
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:iron_token",
+          "weight": 15
+        },
+        {
+          "type": "empty",
+          "weight": 50
+        }
+      ]
+    }
+  ]
 }

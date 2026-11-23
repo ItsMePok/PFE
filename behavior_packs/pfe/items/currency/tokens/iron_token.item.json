@@ -1,18 +1,18 @@
 {
-	"format_version": "1.26.60",
-	"minecraft:item": {
-		"description": {
-			"identifier": "poke_pfe:iron_token",
-			"menu_category": {
-				"category": "items"
-			}
-		},
-		"components": {
-			"minecraft:display_name": {
-				"value": "%poke_pfe.iron_token\n%poke_pfe.tag"
-			},
-			"poke_pfe:icon_path": "textures/poke/pfe/iron_token",
-			"minecraft:icon": "poke_pfe_iron_token"
-		}
-	}
+  "format_version": "1.26.60",
+  "minecraft:item": {
+    "description": {
+      "identifier": "poke_pfe:iron_token",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "%poke_pfe.iron_token\n%poke_pfe.tag"
+      },
+      "poke_pfe:icon_path": "textures/poke/pfe/iron_token",
+      "minecraft:icon": "poke_pfe_iron_token"
+    }
+  }
 }

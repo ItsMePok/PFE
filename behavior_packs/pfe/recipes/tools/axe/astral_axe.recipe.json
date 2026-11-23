@@ -1,38 +1,32 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:astral_axe"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"CC",
-			"CS",
-			" S"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:nebula_stick"
-			},
-			{
-				"item": "poke_pfe:raw_astral"
-			},
-			{
-				"item": "poke_pfe:astral_ingot"
-			}
-		],
-		"key": {
-			"C": {
-				"item": "poke_pfe:astral_ingot"
-			},
-			"S": {
-				"item": "poke_pfe:nebula_stick"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:astral_axe"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:astral_axe"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["CC", "CS", " S"],
+    "unlock": [
+      {
+        "item": "poke_pfe:nebula_stick"
+      },
+      {
+        "item": "poke_pfe:raw_astral"
+      },
+      {
+        "item": "poke_pfe:astral_ingot"
+      }
+    ],
+    "key": {
+      "C": {
+        "item": "poke_pfe:astral_ingot"
+      },
+      "S": {
+        "item": "poke_pfe:nebula_stick"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:astral_axe"
+    }
+  }
 }

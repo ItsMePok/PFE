@@ -1,31 +1,27 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:cut_onyx_slab_crafting_table"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:onyx_ingot"
-			},
-			{
-				"item": "poke_pfe:cut_onyx"
-			}
-		],
-		"key": {
-			"C": {
-				"item": "poke_pfe:cut_onyx"
-			}
-		},
-		"pattern": [
-			"CCC"
-		],
-		"result": {
-			"item": "poke_pfe:cut_onyx_slab",
-			"count": 6
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:cut_onyx_slab_crafting_table"
+    },
+    "tags": ["crafting_table"],
+    "unlock": [
+      {
+        "item": "poke_pfe:onyx_ingot"
+      },
+      {
+        "item": "poke_pfe:cut_onyx"
+      }
+    ],
+    "key": {
+      "C": {
+        "item": "poke_pfe:cut_onyx"
+      }
+    },
+    "pattern": ["CCC"],
+    "result": {
+      "item": "poke_pfe:cut_onyx_slab",
+      "count": 6
+    }
+  }
 }

@@ -1,149 +1,150 @@
 {
-	"pools": [
-		{ // Total: 35 Items (2/7 chance to get a item)
-			"rolls": 10,
-			"entries": [
-				{
-					"type": "item",
-					"name": "poke_pfe:astral_ingot"
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:cobalt_ingot"
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:void_ingot"
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:godly_ingot"
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:galaxy_ingot"
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:holy_ingot"
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:demonic_ingot"
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:hellish_ingot"
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:onyx_ingot"
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:shade_ingot"
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:nebula_noodles"
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:nebula_potion"
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:void_potion"
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:cobalt_potion"
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:death_potion"
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:eggnog"
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:cobalt_soup"
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:molten_slimeball"
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:death_ingot"
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:medic_ingot"
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:radium_ingot"
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:splash_death_potion"
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:pfe-mcpedl_pottery_sherd"
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:pfe-present_pottery_sherd"
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:pfe-tree_pottery_sherd"
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:pfe-snowflake_pottery_sherd"
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:pfe-gift_box"
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:upgrade_core"
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:diamond_upgrade_core"
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:copper_token"
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:iron_token"
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:diamond_token"
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:golden_token"
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:repair_core"
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:capacity_core"
-				}
-			]
-		}
-	]
+  "pools": [
+    {
+      // Total: 35 Items (2/7 chance to get a item)
+      "rolls": 10,
+      "entries": [
+        {
+          "type": "item",
+          "name": "poke_pfe:astral_ingot"
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:cobalt_ingot"
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:void_ingot"
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:godly_ingot"
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:galaxy_ingot"
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:holy_ingot"
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:demonic_ingot"
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:hellish_ingot"
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:onyx_ingot"
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:shade_ingot"
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:nebula_noodles"
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:nebula_potion"
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:void_potion"
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:cobalt_potion"
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:death_potion"
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:eggnog"
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:cobalt_soup"
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:molten_slimeball"
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:death_ingot"
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:medic_ingot"
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:radium_ingot"
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:splash_death_potion"
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:pfe-mcpedl_pottery_sherd"
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:pfe-present_pottery_sherd"
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:pfe-tree_pottery_sherd"
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:pfe-snowflake_pottery_sherd"
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:pfe-gift_box"
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:upgrade_core"
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:diamond_upgrade_core"
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:copper_token"
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:iron_token"
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:diamond_token"
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:golden_token"
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:repair_core"
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:capacity_core"
+        }
+      ]
+    }
+  ]
 }

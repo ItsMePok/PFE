@@ -1,86 +1,87 @@
 {
-	"pools": [
-		{
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "item",
-					"name": "poke_pfe:cassette_subwooferlullaby",
-					"weight": 1
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:cassette_livingmice",
-					"weight": 1
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:cassette_haggstrom",
-					"weight": 1
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:cassette_oxygene",
-					"weight": 1
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:cassette_onemoreday",
-					"weight": 1
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:cassette_crescentdunes",
-					"weight": 1
-				}
-			]
-		},
-		{ // Total Weight: 15
-			"rolls": {
-				"min": 2,
-				"max": 5
-			},
-			"entries": [
-				{
-					"type": "item",
-					"name": "poke_pfe:apollo_the_snake",
-					"weight": 1
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:copper_token",
-					"weight": 5
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:iron_token",
-					"weight": 4
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:golden_token",
-					"weight": 2
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:volt_arrow",
-					"weight": 2,
-					"functions": [
-						{
-							"function": "set_count",
-							"count": {
-								"min": 2,
-								"max": 16
-							}
-						}
-					]
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:bounty",
-					"weight": 1
-				}
-			]
-		}
-	]
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "poke_pfe:cassette_subwooferlullaby",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:cassette_livingmice",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:cassette_haggstrom",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:cassette_oxygene",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:cassette_onemoreday",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:cassette_crescentdunes",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      // Total Weight: 15
+      "rolls": {
+        "min": 2,
+        "max": 5
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "poke_pfe:apollo_the_snake",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:copper_token",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:iron_token",
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:golden_token",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:volt_arrow",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 2,
+                "max": 16
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:bounty",
+          "weight": 1
+        }
+      ]
+    }
+  ]
 }

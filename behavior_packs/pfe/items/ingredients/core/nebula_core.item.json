@@ -1,19 +1,19 @@
 {
-	"format_version": "1.26.60",
-	"minecraft:item": {
-		"description": {
-			"identifier": "poke_pfe:nebula_core",
-			"menu_category": {
-				"category": "items"
-			}
-		},
-		"components": {
-			"minecraft:display_name": {
-				"value": "%poke_pfe.nebula_core\n%poke_pfe.tag"
-			},
-			"poke_pfe:icon_path": "textures/poke/pfe/nebula_core",
-			"minecraft:icon": "poke_pfe_nebula_core",
-			"minecraft:rarity": "epic"
-		}
-	}
+  "format_version": "1.26.60",
+  "minecraft:item": {
+    "description": {
+      "identifier": "poke_pfe:nebula_core",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "%poke_pfe.nebula_core\n%poke_pfe.tag"
+      },
+      "poke_pfe:icon_path": "textures/poke/pfe/nebula_core",
+      "minecraft:icon": "poke_pfe_nebula_core",
+      "minecraft:rarity": "epic"
+    }
+  }
 }

@@ -1,20 +1,18 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:recipe_shapeless": {
-		"description": {
-			"identifier": "poke_pfe:ss_s_sc_ss"
-		},
-		"tags": [
-			"stonecutter"
-		],
-		"ingredients": [
-			{
-				"item": "poke_pfe:shadowstone"
-			}
-		],
-		"result": {
-			"item": "poke_pfe:shadowstone_slab",
-			"count": 2
-		}
-	}
+  "format_version": "1.16.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "poke_pfe:ss_s_sc_ss"
+    },
+    "tags": ["stonecutter"],
+    "ingredients": [
+      {
+        "item": "poke_pfe:shadowstone"
+      }
+    ],
+    "result": {
+      "item": "poke_pfe:shadowstone_slab",
+      "count": 2
+    }
+  }
 }

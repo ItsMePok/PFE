@@ -1,41 +1,35 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:panic_button"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"EAE",
-			"PBP",
-			"PWP"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:electric_component"
-			}
-		],
-		"key": {
-			"A": {
-				"item": "poke_pfe:antenna"
-			},
-			"B": {
-				"item": "poke_pfe:red_button"
-			},
-			"E": {
-				"item": "poke_pfe:electric_component"
-			},
-			"W": {
-				"item": "poke_pfe:wire"
-			},
-			"P": {
-				"item": "poke_pfe:plastic"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:panic_button"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:panic_button"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["EAE", "PBP", "PWP"],
+    "unlock": [
+      {
+        "item": "poke_pfe:electric_component"
+      }
+    ],
+    "key": {
+      "A": {
+        "item": "poke_pfe:antenna"
+      },
+      "B": {
+        "item": "poke_pfe:red_button"
+      },
+      "E": {
+        "item": "poke_pfe:electric_component"
+      },
+      "W": {
+        "item": "poke_pfe:wire"
+      },
+      "P": {
+        "item": "poke_pfe:plastic"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:panic_button"
+    }
+  }
 }

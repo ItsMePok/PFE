@@ -8,9 +8,7 @@
       }
     },
     "group": "poke_pfe:automation",
-    "tags": [
-      "crafting_table"
-    ],
+    "tags": ["crafting_table"],
     "unlock": [
       {
         "item": "poke_pfe:elevator"

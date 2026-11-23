@@ -5,9 +5,7 @@
       "identifier": "poke_pfe:config"
     },
     "group": "poke_pfe:config",
-    "tags": [
-      "crafting_table"
-    ],
+    "tags": ["crafting_table"],
     "unlock": [
       {
         "item": "minecraft:paper"

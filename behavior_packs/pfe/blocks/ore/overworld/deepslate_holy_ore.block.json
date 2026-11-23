@@ -1,50 +1,50 @@
 {
-	"format_version": "1.26.60",
-	"minecraft:block": {
-		"description": {
-			"identifier": "poke_pfe:deepslate_holy_ore",
-			"menu_category": {
-				"category": "nature"
-			}
-		},
-		"components": {
-			"minecraft:display_name": "%poke_pfe.deepslate_holy_ore\n%poke_pfe.tag",
-			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 22.5,
-				"item_specific_speeds": [
-					{
-						"item": {
-							"tags": "q.any_tag('minecraft:is_pickaxe')"
-						},
-						"destroy_speed": 3.4
-					}
-				]
-			},
-			"minecraft:destructible_by_explosion": {
-				"explosion_resistance": 22.5
-			},
-			"minecraft:redstone_conductivity": {
-				"redstone_conductor": true,
-				"allows_wire_to_step_down": true
-			},
-			"minecraft:map_color": "#bbb6a7",
-			"minecraft:tags": [
-				"pfe",
-				"metal",
-				"minecraft:metal",
-				"stone_pick_diggable",
-				"minecraft:is_pickaxe_item_destructible"
-			],
-			"minecraft:geometry": {
-				"identifier": "minecraft:geometry.full_block"
-			},
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "poke_pfe_deepslate_holy_ore"
-				}
-			},
-			"minecraft:loot": "loot_tables/poke/pfe/holy_ore.loot.json",
-			"poke_pfe:fortune": {}
-		}
-	}
+  "format_version": "1.26.60",
+  "minecraft:block": {
+    "description": {
+      "identifier": "poke_pfe:deepslate_holy_ore",
+      "menu_category": {
+        "category": "nature"
+      }
+    },
+    "components": {
+      "minecraft:display_name": "%poke_pfe.deepslate_holy_ore\n%poke_pfe.tag",
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 22.5,
+        "item_specific_speeds": [
+          {
+            "item": {
+              "tags": "q.any_tag('minecraft:is_pickaxe')"
+            },
+            "destroy_speed": 3.4
+          }
+        ]
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 22.5
+      },
+      "minecraft:redstone_conductivity": {
+        "redstone_conductor": true,
+        "allows_wire_to_step_down": true
+      },
+      "minecraft:map_color": "#bbb6a7",
+      "minecraft:tags": [
+        "pfe",
+        "metal",
+        "minecraft:metal",
+        "stone_pick_diggable",
+        "minecraft:is_pickaxe_item_destructible"
+      ],
+      "minecraft:geometry": {
+        "identifier": "minecraft:geometry.full_block"
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "poke_pfe_deepslate_holy_ore"
+        }
+      },
+      "minecraft:loot": "loot_tables/poke/pfe/holy_ore.loot.json",
+      "poke_pfe:fortune": {}
+    }
+  }
 }

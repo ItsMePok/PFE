@@ -1,18 +1,18 @@
 {
-	"format_version": "1.26.60",
-	"minecraft:item": {
-		"description": {
-			"identifier": "poke_pfe:radium_ingot",
-			"menu_category": {
-				"category": "items"
-			}
-		},
-		"components": {
-			"minecraft:display_name": {
-				"value": "%poke_pfe.radium_ingot\n%poke_pfe.tag"
-			},
-			"minecraft:icon": "poke_pfe_radium_ingot",
-			"poke_pfe:icon_path": "textures/poke/pfe/radium_ingot"
-		}
-	}
+  "format_version": "1.26.60",
+  "minecraft:item": {
+    "description": {
+      "identifier": "poke_pfe:radium_ingot",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "%poke_pfe.radium_ingot\n%poke_pfe.tag"
+      },
+      "minecraft:icon": "poke_pfe_radium_ingot",
+      "poke_pfe:icon_path": "textures/poke/pfe/radium_ingot"
+    }
+  }
 }

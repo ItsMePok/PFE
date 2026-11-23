@@ -1,19 +1,19 @@
 {
-	"format_version": "1.26.60",
-	"minecraft:item": {
-		"description": {
-			"identifier": "poke_pfe:volt_gem",
-			"menu_category": {
-				"category": "items"
-			}
-		},
-		"components": {
-			"minecraft:display_name": {
-				"value": "%poke_pfe.volt_gem\n%poke_pfe.tag"
-			},
-			"poke_pfe:icon_path": "textures/poke/pfe/volt_gem",
-			"minecraft:rarity": "uncommon",
-			"minecraft:icon": "poke_pfe_volt_gem"
-		}
-	}
+  "format_version": "1.26.60",
+  "minecraft:item": {
+    "description": {
+      "identifier": "poke_pfe:volt_gem",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "%poke_pfe.volt_gem\n%poke_pfe.tag"
+      },
+      "poke_pfe:icon_path": "textures/poke/pfe/volt_gem",
+      "minecraft:rarity": "uncommon",
+      "minecraft:icon": "poke_pfe_volt_gem"
+    }
+  }
 }

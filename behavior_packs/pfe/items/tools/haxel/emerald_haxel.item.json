@@ -13,24 +13,11 @@
       },
       "poke_pfe:icon_path": "textures/poke/pfe/emerald_haxel",
       "minecraft:tags": {
-        "tags": [
-          "minecraft:is_pickaxe",
-          "minecraft:iron_tier",
-          "minecraft:is_tool",
-          "poke_pfe:is_haxel"
-        ]
+        "tags": ["minecraft:is_pickaxe", "minecraft:iron_tier", "minecraft:is_tool", "poke_pfe:is_haxel"]
       },
       "poke_pfe:box_mining": {
-        "box_size": [
-          3,
-          3,
-          3
-        ],
-        "offset": [
-          0,
-          0,
-          0
-        ]
+        "box_size": [3, 3, 3],
+        "offset": [0, 0, 0]
       },
       "poke_pfe:normalMining": {},
       "minecraft:use_modifiers": {
@@ -57,16 +44,11 @@
       "minecraft:repairable": {
         "repair_items": [
           {
-            "items": [
-              "poke_pfe:repair_core",
-              "minecraft:emerald_block"
-            ],
+            "items": ["poke_pfe:repair_core", "minecraft:emerald_block"],
             "repair_amount": "query.max_durability"
           },
           {
-            "items": [
-              "minecraft:emerald"
-            ],
+            "items": ["minecraft:emerald"],
             "repair_amount": "query.max_durability*0.25"
           }
         ]

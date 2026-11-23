@@ -1,35 +1,29 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:item_manipulator"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"SES",
-			"EDE",
-			"SES"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:electric_component"
-			}
-		],
-		"key": {
-			"D": {
-				"item": "poke_pfe:cobalt_ingot"
-			},
-			"E": {
-				"item": "poke_pfe:electric_component"
-			},
-			"S": {
-				"item": "poke_pfe:wire"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:item_manipulator"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:item_manipulator"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["SES", "EDE", "SES"],
+    "unlock": [
+      {
+        "item": "poke_pfe:electric_component"
+      }
+    ],
+    "key": {
+      "D": {
+        "item": "poke_pfe:cobalt_ingot"
+      },
+      "E": {
+        "item": "poke_pfe:electric_component"
+      },
+      "S": {
+        "item": "poke_pfe:wire"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:item_manipulator"
+    }
+  }
 }

@@ -18,7 +18,7 @@
     },
     "unlock": [
       {
-        "item": "poke_pfe:gem_holder"
+        "item": "poke_pfe:golden_gem_holder"
       }
     ],
     "pattern": ["SXS", "XHX", "SXS"],

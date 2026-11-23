@@ -1,41 +1,35 @@
 {
-	"format_version": "1.20.10",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:block_breaker"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"CPC",
-			"PIP",
-			"CPC"
-		],
-		"unlock": [
-			{
-				"tag": "minecraft:planks"
-			},
-			{
-				"item": "poke_pfe:cobalt_ingot"
-			},
-			{
-				"item": "poke_pfe:iron_haxel"
-			}
-		],
-		"key": {
-			"C": {
-				"item": "poke_pfe:cobalt_ingot"
-			},
-			"P": {
-				"tag": "minecraft:planks"
-			},
-			"I": {
-				"item": "poke_pfe:iron_haxel"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:block_breaker"
-		}
-	}
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:block_breaker"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["CPC", "PIP", "CPC"],
+    "unlock": [
+      {
+        "tag": "minecraft:planks"
+      },
+      {
+        "item": "poke_pfe:cobalt_ingot"
+      },
+      {
+        "item": "poke_pfe:iron_haxel"
+      }
+    ],
+    "key": {
+      "C": {
+        "item": "poke_pfe:cobalt_ingot"
+      },
+      "P": {
+        "tag": "minecraft:planks"
+      },
+      "I": {
+        "item": "poke_pfe:iron_haxel"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:block_breaker"
+    }
+  }
 }

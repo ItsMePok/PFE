@@ -14,9 +14,7 @@
       "poke_pfe:icon_path": "textures/poke/pfe/astral_nugget",
       "minecraft:icon": "poke_pfe_astral_nugget",
       "minecraft:tags": {
-        "tags": [
-          "minecraft:metal_nuggets"
-        ]
+        "tags": ["minecraft:metal_nuggets"]
       }
     }
   }

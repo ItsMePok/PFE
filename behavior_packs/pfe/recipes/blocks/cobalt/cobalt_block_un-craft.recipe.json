@@ -1,28 +1,24 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:cobalt_block_un-craft"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:cobalt_block"
-			}
-		],
-		"pattern": [
-			"#"
-		],
-		"key": {
-			"#": {
-				"item": "poke_pfe:cobalt_block"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:cobalt_ingot",
-			"count": 9
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:cobalt_block_un-craft"
+    },
+    "tags": ["crafting_table"],
+    "unlock": [
+      {
+        "item": "poke_pfe:cobalt_block"
+      }
+    ],
+    "pattern": ["#"],
+    "key": {
+      "#": {
+        "item": "poke_pfe:cobalt_block"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:cobalt_ingot",
+      "count": 9
+    }
+  }
 }

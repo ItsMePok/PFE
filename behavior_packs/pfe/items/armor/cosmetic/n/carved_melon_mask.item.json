@@ -1,31 +1,29 @@
 {
-	"format_version": "1.26.60",
-	"minecraft:item": {
-		"description": {
-			"identifier": "poke_pfe:carved_melon_mask",
-			"menu_category": {
-				"category": "equipment"
-			}
-		},
-		"components": {
-			"minecraft:display_name": {
-				"value": "%poke_pfe.carved_melon_mask\n§7%poke_pfe.cosmetic\n%poke_pfe.tag"
-			},
-			"minecraft:rarity": "common",
-			"minecraft:tags": {
-				"tags": [
-					"novelty:is_face"
-				]
-			},
-			"minecraft:max_stack_size": 1,
-			"minecraft:icon": {
-				"textures": {
-					"default": "poke_pfe_carved_melon_mask"
-				}
-			},
-			"minecraft:wearable": {
-				"slot": "slot.armor.head"
-			}
-		}
-	}
+  "format_version": "1.26.60",
+  "minecraft:item": {
+    "description": {
+      "identifier": "poke_pfe:carved_melon_mask",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "%poke_pfe.carved_melon_mask\n§7%poke_pfe.cosmetic\n%poke_pfe.tag"
+      },
+      "minecraft:rarity": "common",
+      "minecraft:tags": {
+        "tags": ["novelty:is_face"]
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:icon": {
+        "textures": {
+          "default": "poke_pfe_carved_melon_mask"
+        }
+      },
+      "minecraft:wearable": {
+        "slot": "slot.armor.head"
+      }
+    }
+  }
 }

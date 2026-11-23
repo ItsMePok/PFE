@@ -1,36 +1,32 @@
 {
-    "format_version": "1.20.60",
-    "minecraft:recipe_shaped": {
-        "tags": [
-            "crafting_table"
-        ],
-        "description": {
-            "identifier": "poke_pfe:chorus_fruit_crate_uncraft"
-        },
-        "unlock": [
-            {
-                "item": "poke_pfe:empty_crate"
-            },
-            {
-                "item": "poke_pfe:chorus_fruit_crate"
-            }
-        ],
-        "pattern": [
-            "#"
-        ],
-        "key": {
-            "#": {
-                "item": "poke_pfe:chorus_fruit_crate"
-            }
-        },
-        "result": [
-            {
-                "item": "minecraft:chorus_fruit",
-                "count": 8
-            },
-            {
-                "item": "poke_pfe:empty_crate"
-            }
-        ]
-    }
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "tags": ["crafting_table"],
+    "description": {
+      "identifier": "poke_pfe:chorus_fruit_crate_uncraft"
+    },
+    "unlock": [
+      {
+        "item": "poke_pfe:empty_crate"
+      },
+      {
+        "item": "poke_pfe:chorus_fruit_crate"
+      }
+    ],
+    "pattern": ["#"],
+    "key": {
+      "#": {
+        "item": "poke_pfe:chorus_fruit_crate"
+      }
+    },
+    "result": [
+      {
+        "item": "minecraft:chorus_fruit",
+        "count": 8
+      },
+      {
+        "item": "poke_pfe:empty_crate"
+      }
+    ]
+  }
 }

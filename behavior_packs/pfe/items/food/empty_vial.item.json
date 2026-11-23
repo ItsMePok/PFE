@@ -1,34 +1,34 @@
 {
-	"format_version": "1.26.60",
-	"minecraft:item": {
-		"description": {
-			"identifier": "poke_pfe:empty_vial",
-			"menu_category": {
-				"category": "equipment"
-			}
-		},
-		"components": {
-			"minecraft:display_name": {
-				"value": "%poke_pfe.empty_vial\n%poke_pfe.tag"
-			},
-			"poke_pfe:icon_path": "textures/poke/pfe/empty_vial",
-			"minecraft:icon": "poke_pfe_empty_vial",
-			"minecraft:rarity": "common",
-			"poke_pfe:run_command": {
-				"version": 1,
-				"command": [
-					"execute if entity @s[lm=10] run clear @s poke_pfe:empty_vial -1 1",
-					"execute if entity @s[lm=10] run give @s poke_pfe:xp_vial",
-					"execute if entity @s[lm=10] run xp -10L @s"
-				],
-				"take_durability": true,
-				"trigger_cooldown": true,
-				"can_be_disabled": false
-			},
-			"minecraft:cooldown": {
-				"duration": 0.25,
-				"category": "poke_pfe:empty_vial"
-			}
-		}
-	}
+  "format_version": "1.26.60",
+  "minecraft:item": {
+    "description": {
+      "identifier": "poke_pfe:empty_vial",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "%poke_pfe.empty_vial\n%poke_pfe.tag"
+      },
+      "poke_pfe:icon_path": "textures/poke/pfe/empty_vial",
+      "minecraft:icon": "poke_pfe_empty_vial",
+      "minecraft:rarity": "common",
+      "poke_pfe:run_command": {
+        "version": 1,
+        "command": [
+          "execute if entity @s[lm=10] run clear @s poke_pfe:empty_vial -1 1",
+          "execute if entity @s[lm=10] run give @s poke_pfe:xp_vial",
+          "execute if entity @s[lm=10] run xp -10L @s"
+        ],
+        "take_durability": true,
+        "trigger_cooldown": true,
+        "can_be_disabled": false
+      },
+      "minecraft:cooldown": {
+        "duration": 0.25,
+        "category": "poke_pfe:empty_vial"
+      }
+    }
+  }
 }

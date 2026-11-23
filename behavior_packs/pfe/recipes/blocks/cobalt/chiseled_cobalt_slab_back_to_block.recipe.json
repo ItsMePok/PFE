@@ -1,28 +1,24 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:chiseled_cobalt_slab_back_to_block"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:chiseled_cobalt_slab"
-			}
-		],
-		"key": {
-			"C": {
-				"item": "poke_pfe:chiseled_cobalt_slab"
-			}
-		},
-		"pattern": [
-			"CC"
-		],
-		"result": {
-			"item": "poke_pfe:chiseled_cobalt"
-		},
-		"priority": 2
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:chiseled_cobalt_slab_back_to_block"
+    },
+    "tags": ["crafting_table"],
+    "unlock": [
+      {
+        "item": "poke_pfe:chiseled_cobalt_slab"
+      }
+    ],
+    "key": {
+      "C": {
+        "item": "poke_pfe:chiseled_cobalt_slab"
+      }
+    },
+    "pattern": ["CC"],
+    "result": {
+      "item": "poke_pfe:chiseled_cobalt"
+    },
+    "priority": 2
+  }
 }

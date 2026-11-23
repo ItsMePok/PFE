@@ -1,19 +1,19 @@
 {
-	"format_version": "1.26.60",
-	"minecraft:item": {
-		"description": {
-			"identifier": "poke_pfe:calendar",
-			"menu_category": {
-				"category": "equipment"
-			}
-		},
-		"components": {
-			"minecraft:display_name": {
-				"value": "%poke_pfe.calendar\n%poke_pfe.tag"
-			},
-			"poke_pfe:icon_path": "textures/poke/pfe/calendar",
-			"minecraft:icon": "poke_pfe_calendar",
-			"poke_pfe:timeConfig": {}
-		}
-	}
+  "format_version": "1.26.60",
+  "minecraft:item": {
+    "description": {
+      "identifier": "poke_pfe:calendar",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "%poke_pfe.calendar\n%poke_pfe.tag"
+      },
+      "poke_pfe:icon_path": "textures/poke/pfe/calendar",
+      "minecraft:icon": "poke_pfe_calendar",
+      "poke_pfe:timeConfig": {}
+    }
+  }
 }

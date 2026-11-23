@@ -9,9 +9,7 @@
       }
     },
     "group": "crafting",
-    "tags": [
-      "crafting_table"
-    ],
+    "tags": ["crafting_table"],
     "unlock": [
       {
         "item": "poke_pfe:molten_bricks"
@@ -23,11 +21,7 @@
         "item": "minecraft:blast_furnace"
       }
     ],
-    "pattern": [
-      "MMM",
-      "MBM",
-      "PPP"
-    ],
+    "pattern": ["MMM", "MBM", "PPP"],
     "key": {
       "M": {
         "item": "poke_pfe:molten_bricks"

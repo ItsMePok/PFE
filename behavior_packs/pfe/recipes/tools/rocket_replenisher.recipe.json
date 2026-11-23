@@ -1,44 +1,38 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:rocket_replenisher"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"CRC",
-			"EFE",
-			"CMC"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:electric_component"
-			},
-			{
-				"item": "poke_pfe:radium_ingot"
-			}
-		],
-		"key": {
-			"F": {
-				"item": "poke_pfe:banished_star_x4"
-			},
-			"C": {
-				"item": "poke_pfe:radium_ingot"
-			},
-			"E": {
-				"item": "poke_pfe:electric_component"
-			},
-			"M": {
-				"item": "poke_pfe:item_manipulator"
-			},
-			"R": {
-				"item": "poke_pfe:receiver"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:rocket_replenisher"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:rocket_replenisher"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["CRC", "EFE", "CMC"],
+    "unlock": [
+      {
+        "item": "poke_pfe:electric_component"
+      },
+      {
+        "item": "poke_pfe:radium_ingot"
+      }
+    ],
+    "key": {
+      "F": {
+        "item": "poke_pfe:banished_star_x4"
+      },
+      "C": {
+        "item": "poke_pfe:radium_ingot"
+      },
+      "E": {
+        "item": "poke_pfe:electric_component"
+      },
+      "M": {
+        "item": "poke_pfe:item_manipulator"
+      },
+      "R": {
+        "item": "poke_pfe:receiver"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:rocket_replenisher"
+    }
+  }
 }

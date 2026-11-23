@@ -1,16 +1,16 @@
 {
-    "pools": [
+  "pools": [
+    {
+      "rolls": 5,
+      "entries": [
         {
-            "rolls": 5,
-            "entries": [
-                {
-                    "type": "item",
-                    "name": "crimson_fungus"
-                },
-                {
-                    "type": "empty"
-                }
-            ]
+          "type": "item",
+          "name": "crimson_fungus"
+        },
+        {
+          "type": "empty"
         }
-    ]
+      ]
+    }
+  ]
 }

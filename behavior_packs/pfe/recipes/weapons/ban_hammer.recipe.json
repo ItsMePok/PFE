@@ -1,42 +1,36 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:ban_hammer"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"  #",
-			" * ",
-			"G  "
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:ban_hammer_grip"
-			},
-			{
-				"item": "poke_pfe:banished_stick"
-			},
-			{
-				"item": "poke_pfe:ban_hammer_head"
-			}
-		],
-		"key": {
-			"#": {
-				"item": "poke_pfe:ban_hammer_head"
-			},
-			"*": {
-				"item": "poke_pfe:banished_stick"
-			},
-			"G": {
-				"item": "poke_pfe:ban_hammer_grip"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:ban_hammer",
-			"count": 1
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:ban_hammer"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["  #", " * ", "G  "],
+    "unlock": [
+      {
+        "item": "poke_pfe:ban_hammer_grip"
+      },
+      {
+        "item": "poke_pfe:banished_stick"
+      },
+      {
+        "item": "poke_pfe:ban_hammer_head"
+      }
+    ],
+    "key": {
+      "#": {
+        "item": "poke_pfe:ban_hammer_head"
+      },
+      "*": {
+        "item": "poke_pfe:banished_stick"
+      },
+      "G": {
+        "item": "poke_pfe:ban_hammer_grip"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:ban_hammer",
+      "count": 1
+    }
+  }
 }

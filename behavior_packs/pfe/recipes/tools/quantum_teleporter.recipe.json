@@ -1,53 +1,47 @@
 {
-	"format_version": "1.20.10",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:quantum_teleporter"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"GAG",
-			"PCP",
-			"GBG"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:nebula_ingot"
-			},
-			{
-				"item": "poke_pfe:galaxy_ingot"
-			},
-			{
-				"item": "poke_pfe:nebula_core"
-			},
-			{
-				"item": "poke_pfe:red_button"
-			},
-			{
-				"item": "poke_pfe:antenna"
-			}
-		],
-		"key": {
-			"G": {
-				"item": "poke_pfe:galaxy_ingot"
-			},
-			"C": {
-				"item": "poke_pfe:nebula_core"
-			},
-			"P": {
-				"item": "poke_pfe:radium_block"
-			},
-			"B": {
-				"item": "poke_pfe:red_button"
-			},
-			"A": {
-				"item": "poke_pfe:antenna"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:quantum_teleporter"
-		}
-	}
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:quantum_teleporter"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["GAG", "PCP", "GBG"],
+    "unlock": [
+      {
+        "item": "poke_pfe:nebula_ingot"
+      },
+      {
+        "item": "poke_pfe:galaxy_ingot"
+      },
+      {
+        "item": "poke_pfe:nebula_core"
+      },
+      {
+        "item": "poke_pfe:red_button"
+      },
+      {
+        "item": "poke_pfe:antenna"
+      }
+    ],
+    "key": {
+      "G": {
+        "item": "poke_pfe:galaxy_ingot"
+      },
+      "C": {
+        "item": "poke_pfe:nebula_core"
+      },
+      "P": {
+        "item": "poke_pfe:radium_block"
+      },
+      "B": {
+        "item": "poke_pfe:red_button"
+      },
+      "A": {
+        "item": "poke_pfe:antenna"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:quantum_teleporter"
+    }
+  }
 }

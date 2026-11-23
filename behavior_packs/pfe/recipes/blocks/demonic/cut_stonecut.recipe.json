@@ -1,20 +1,18 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:recipe_shapeless": {
-		"description": {
-			"identifier": "poke_pfe:cut_demonic_sc"
-		},
-		"tags": [
-			"stonecutter"
-		],
-		"ingredients": [
-			{
-				"item": "poke_pfe:demonic_block"
-			}
-		],
-		"result": {
-			"item": "poke_pfe:cut_demonic",
-			"count": 4
-		}
-	}
+  "format_version": "1.16.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "poke_pfe:cut_demonic_sc"
+    },
+    "tags": ["stonecutter"],
+    "ingredients": [
+      {
+        "item": "poke_pfe:demonic_block"
+      }
+    ],
+    "result": {
+      "item": "poke_pfe:cut_demonic",
+      "count": 4
+    }
+  }
 }

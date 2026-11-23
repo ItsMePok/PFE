@@ -4,10 +4,7 @@
     "controller.render.poke_pfe.sculk_enderman": {
       "arrays": {
         "materials": {
-          "Array.materials": [
-            "Material.default",
-            "Material.invisible"
-          ]
+          "Array.materials": ["Material.default", "Material.invisible"]
         }
       },
       "geometry": "Geometry.default",
@@ -16,9 +13,7 @@
           "*": "Array.materials[query.is_invisible]"
         }
       ],
-      "textures": [
-        "Texture.default"
-      ]
+      "textures": ["Texture.default"]
     }
   }
 }

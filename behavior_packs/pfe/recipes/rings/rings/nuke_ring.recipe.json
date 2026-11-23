@@ -1,55 +1,49 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:nuke_ring"
-		},
-		"group": "poke_pfe:rings",
-		"tags": [
-			"crafting_table"
-		],
-		"key": {
-			"U": {
-				"item": "poke_pfe:diamond_upgrade_core"
-			},
-			"P": {
-				"item": "poke_pfe:panic_button"
-			},
-			"R": {
-				"item": "poke_pfe:radium_block"
-			},
-			"K": {
-				"item": "poke_pfe:kapow_ring"
-			},
-			"B": {
-				"item": "poke_pfe:banished_star_x5"
-			}
-		},
-		"unlock": [
-			{
-				"item": "poke_pfe:diamond_upgrade_core"
-			},
-			{
-				"item": "poke_pfe:panic_button"
-			},
-			{
-				"item": "poke_pfe:radium_block"
-			},
-			{
-				"item": "poke_pfe:kapow_ring"
-			},
-			{
-				"item": "poke_pfe:banished_star"
-			}
-		],
-		"pattern": [
-			"UPU",
-			"RKR",
-			"BRB"
-		],
-		"result": {
-			"count": 1,
-			"item": "poke_pfe:nuke_ring"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:nuke_ring"
+    },
+    "group": "poke_pfe:rings",
+    "tags": ["crafting_table"],
+    "key": {
+      "U": {
+        "item": "poke_pfe:diamond_upgrade_core"
+      },
+      "P": {
+        "item": "poke_pfe:panic_button"
+      },
+      "R": {
+        "item": "poke_pfe:radium_block"
+      },
+      "K": {
+        "item": "poke_pfe:kapow_ring"
+      },
+      "B": {
+        "item": "poke_pfe:banished_star_x5"
+      }
+    },
+    "unlock": [
+      {
+        "item": "poke_pfe:diamond_upgrade_core"
+      },
+      {
+        "item": "poke_pfe:panic_button"
+      },
+      {
+        "item": "poke_pfe:radium_block"
+      },
+      {
+        "item": "poke_pfe:kapow_ring"
+      },
+      {
+        "item": "poke_pfe:banished_star"
+      }
+    ],
+    "pattern": ["UPU", "RKR", "BRB"],
+    "result": {
+      "count": 1,
+      "item": "poke_pfe:nuke_ring"
+    }
+  }
 }

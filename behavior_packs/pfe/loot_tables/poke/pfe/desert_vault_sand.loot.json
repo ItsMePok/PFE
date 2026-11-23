@@ -1,77 +1,78 @@
-{ // 4 dig spots // 19 Total Weight
-	"pools": [
-		{
-			"rolls": {
-				"min": 1,
-				"max": 1
-			},
-			"entries": [
-				{
-					"type": "item",
-					"name": "poke_pfe:spawn_zombken",
-					"weight": 1
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:electric_component",
-					"weight": 1
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:volt_arrow",
-					"weight": 2
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:cassette_key",
-					"weight": 1
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:cassette_danny",
-					"weight": 1
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:copper_token",
-					"weight": 2
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:iron_token",
-					"weight": 2
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:turnip",
-					"weight": 2
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:apple_juice",
-					"weight": 2
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:bundled_feathers",
-					"weight": 2
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:carved_melon_mask",
-					"weight": 1
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:bounty",
-					"weight": 1
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:pfe-snake_pottery_sherd",
-					"weight": 1
-				}
-			]
-		}
-	]
+{
+  // 4 dig spots // 19 Total Weight
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "poke_pfe:spawn_zombken",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:electric_component",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:volt_arrow",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:cassette_key",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:cassette_danny",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:copper_token",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:iron_token",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:turnip",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:apple_juice",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:bundled_feathers",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:carved_melon_mask",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:bounty",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:pfe-snake_pottery_sherd",
+          "weight": 1
+        }
+      ]
+    }
+  ]
 }

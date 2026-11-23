@@ -14,9 +14,7 @@
       "poke_pfe:upgradeable": {
         "dynamic_property": "poke_pfe:upgrades",
         "sneak_interact_opens_ui": false,
-        "upgrade_ids": [
-          "poke_pfe:persistence"
-        ],
+        "upgrade_ids": ["poke_pfe:persistence"],
         "version": 1
       },
       "poke_pfe:icon_path": "textures/poke/pfe/banished_battleaxe",
@@ -40,11 +38,7 @@
         "duration": 2.5
       },
       "minecraft:tags": {
-        "tags": [
-          "minecraft:netherite_tier",
-          "minecraft:is_sword",
-          "poke_pfe:is_battleaxe"
-        ]
+        "tags": ["minecraft:netherite_tier", "minecraft:is_sword", "poke_pfe:is_battleaxe"]
       },
       "minecraft:digger": {
         "destroy_speeds": [

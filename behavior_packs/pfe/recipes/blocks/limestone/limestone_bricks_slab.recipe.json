@@ -1,31 +1,27 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:limestone_bricks_slab"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:limestone"
-			},
-			{
-				"item": "poke_pfe:cobbled_limestone"
-			}
-		],
-		"key": {
-			"X": {
-				"item": "poke_pfe:limestone_bricks"
-			}
-		},
-		"pattern": [
-			"XXX"
-		],
-		"result": {
-			"item": "poke_pfe:limestone_brick_slab",
-			"count": 6
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:limestone_bricks_slab"
+    },
+    "tags": ["crafting_table"],
+    "unlock": [
+      {
+        "item": "poke_pfe:limestone"
+      },
+      {
+        "item": "poke_pfe:cobbled_limestone"
+      }
+    ],
+    "key": {
+      "X": {
+        "item": "poke_pfe:limestone_bricks"
+      }
+    },
+    "pattern": ["XXX"],
+    "result": {
+      "item": "poke_pfe:limestone_brick_slab",
+      "count": 6
+    }
+  }
 }

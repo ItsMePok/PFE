@@ -28,9 +28,7 @@
           "*": "Material.default"
         }
       ],
-      "textures": [
-        "Array.skins[query.variant]"
-      ]
+      "textures": ["Array.skins[query.variant]"]
     }
   }
 }

@@ -1,21 +1,16 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:recipe_furnace": {
-		"description": {
-			"identifier": "poke_pfe:cooked_duck"
-		},
-		"tags": [
-			"smoker",
-			"campfire",
-			"soul_campfire",
-			"furnace"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:raw_duck"
-			}
-		],
-		"input": "poke_pfe:raw_duck",
-		"output": "poke_pfe:cooked_duck"
-	}
+  "format_version": "1.16.100",
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "poke_pfe:cooked_duck"
+    },
+    "tags": ["smoker", "campfire", "soul_campfire", "furnace"],
+    "unlock": [
+      {
+        "item": "poke_pfe:raw_duck"
+      }
+    ],
+    "input": "poke_pfe:raw_duck",
+    "output": "poke_pfe:cooked_duck"
+  }
 }

@@ -1,64 +1,58 @@
 {
-    "format_version": "1.20.60",
-    "minecraft:recipe_shaped": {
-        "description": {
-            "identifier": "poke_pfe:pfe_heart_of_the_sea"
-        },
-        "tags": [
-            "crafting_table"
-        ],
-        "pattern": [
-            "CPC",
-            "PVP",
-            "CPC"
-        ],
-        "unlock": [
-            {
-                "item": "poke_pfe:void_ingot"
-            },
-            {
-                "item": "poke_pfe:cobalt_ingot"
-            },
-            {
-                "item": "poke_pfe:cobalt_nugget"
-            },
-            {
-                "item": "poke_pfe:cobalt_block"
-            },
-            {
-                "item": "poke_pfe:raw_cobalt"
-            },
-            {
-                "item": "poke_pfe:void_nugget"
-            },
-            {
-                "item": "poke_pfe:void_block"
-            },
-            {
-                "item": "poke_pfe:raw_void"
-            },
-            {
-                "item": "minecraft:prismarine"
-            },
-            {
-                "item": "minecraft:heart_of_the_sea"
-            }
-        ],
-        "key": {
-            "P": {
-                "item": "minecraft:prismarine"
-            },
-            "V": {
-                "item": "poke_pfe:void_ingot"
-            },
-            "C": {
-                "item": "poke_pfe:cobalt_ingot"
-            }
-        },
-        "result": [
-            {
-                "item": "minecraft:heart_of_the_sea"
-            }
-        ]
-    }
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:pfe_heart_of_the_sea"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["CPC", "PVP", "CPC"],
+    "unlock": [
+      {
+        "item": "poke_pfe:void_ingot"
+      },
+      {
+        "item": "poke_pfe:cobalt_ingot"
+      },
+      {
+        "item": "poke_pfe:cobalt_nugget"
+      },
+      {
+        "item": "poke_pfe:cobalt_block"
+      },
+      {
+        "item": "poke_pfe:raw_cobalt"
+      },
+      {
+        "item": "poke_pfe:void_nugget"
+      },
+      {
+        "item": "poke_pfe:void_block"
+      },
+      {
+        "item": "poke_pfe:raw_void"
+      },
+      {
+        "item": "minecraft:prismarine"
+      },
+      {
+        "item": "minecraft:heart_of_the_sea"
+      }
+    ],
+    "key": {
+      "P": {
+        "item": "minecraft:prismarine"
+      },
+      "V": {
+        "item": "poke_pfe:void_ingot"
+      },
+      "C": {
+        "item": "poke_pfe:cobalt_ingot"
+      }
+    },
+    "result": [
+      {
+        "item": "minecraft:heart_of_the_sea"
+      }
+    ]
+  }
 }

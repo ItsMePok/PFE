@@ -1,29 +1,25 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:molten_block_un-craft"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:molten_block"
-			}
-		],
-		"pattern": [
-			"#"
-		],
-		"priority": 1,
-		"key": {
-			"#": {
-				"item": "poke_pfe:molten_block"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:molten_slimeball",
-			"count": 9
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:molten_block_un-craft"
+    },
+    "tags": ["crafting_table"],
+    "unlock": [
+      {
+        "item": "poke_pfe:molten_block"
+      }
+    ],
+    "pattern": ["#"],
+    "priority": 1,
+    "key": {
+      "#": {
+        "item": "poke_pfe:molten_block"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:molten_slimeball",
+      "count": 9
+    }
+  }
 }

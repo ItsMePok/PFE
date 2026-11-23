@@ -1,16 +1,11 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:recipe_furnace": {
-		"description": {
-			"identifier": "poke_pfe:piranha_cook"
-		},
-		"tags": [
-			"furnace",
-			"smoker",
-			"campfire",
-			"soul_campfire"
-		],
-		"input": "poke_pfe:raw_piranha",
-		"output": "poke_pfe:cooked_piranha"
-	}
+  "format_version": "1.16.100",
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "poke_pfe:piranha_cook"
+    },
+    "tags": ["furnace", "smoker", "campfire", "soul_campfire"],
+    "input": "poke_pfe:raw_piranha",
+    "output": "poke_pfe:cooked_piranha"
+  }
 }

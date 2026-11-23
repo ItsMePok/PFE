@@ -1,20 +1,18 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:recipe_shapeless": {
-		"description": {
-			"identifier": "poke_pfe:cut_hellish_sc"
-		},
-		"tags": [
-			"stonecutter"
-		],
-		"ingredients": [
-			{
-				"item": "poke_pfe:hellish_block"
-			}
-		],
-		"result": {
-			"item": "poke_pfe:cut_hellish",
-			"count": 4
-		}
-	}
+  "format_version": "1.16.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "poke_pfe:cut_hellish_sc"
+    },
+    "tags": ["stonecutter"],
+    "ingredients": [
+      {
+        "item": "poke_pfe:hellish_block"
+      }
+    ],
+    "result": {
+      "item": "poke_pfe:cut_hellish",
+      "count": 4
+    }
+  }
 }

@@ -1,37 +1,33 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:raw_astral_slab"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:astral_block"
-			},
-			{
-				"item": "poke_pfe:astral_ingot"
-			},
-			{
-				"item": "poke_pfe:raw_astral_block"
-			},
-			{
-				"item": "poke_pfe:raw_astral"
-			}
-		],
-		"key": {
-			"C": {
-				"item": "poke_pfe:raw_astral_block"
-			}
-		},
-		"pattern": [
-			"CCC"
-		],
-		"result": {
-			"item": "poke_pfe:raw_astral_slab",
-			"count": 6
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:raw_astral_slab"
+    },
+    "tags": ["crafting_table"],
+    "unlock": [
+      {
+        "item": "poke_pfe:astral_block"
+      },
+      {
+        "item": "poke_pfe:astral_ingot"
+      },
+      {
+        "item": "poke_pfe:raw_astral_block"
+      },
+      {
+        "item": "poke_pfe:raw_astral"
+      }
+    ],
+    "key": {
+      "C": {
+        "item": "poke_pfe:raw_astral_block"
+      }
+    },
+    "pattern": ["CCC"],
+    "result": {
+      "item": "poke_pfe:raw_astral_slab",
+      "count": 6
+    }
+  }
 }

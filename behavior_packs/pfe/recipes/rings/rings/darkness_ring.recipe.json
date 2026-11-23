@@ -1,34 +1,32 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shapeless": {
-		"description": {
-			"identifier": "poke_pfe:darkness_ring"
-		},
-		"group": "poke_pfe:rings",
-		"tags": [
-			"crafting_table"
-		],
-		"ingredients": [
-			{
-				"item": "poke_pfe:darkness_gem",
-				"count": 1
-			},
-			{
-				"item": "poke_pfe:echo_holder",
-				"count": 1
-			}
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:darkness_gem"
-			},
-			{
-				"item": "poke_pfe:echo_holder"
-			}
-		],
-		"result": {
-			"item": "poke_pfe:darkness_ring",
-			"count": 1
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "poke_pfe:darkness_ring"
+    },
+    "group": "poke_pfe:rings",
+    "tags": ["crafting_table"],
+    "ingredients": [
+      {
+        "item": "poke_pfe:darkness_gem",
+        "count": 1
+      },
+      {
+        "item": "poke_pfe:echo_holder",
+        "count": 1
+      }
+    ],
+    "unlock": [
+      {
+        "item": "poke_pfe:darkness_gem"
+      },
+      {
+        "item": "poke_pfe:echo_holder"
+      }
+    ],
+    "result": {
+      "item": "poke_pfe:darkness_ring",
+      "count": 1
+    }
+  }
 }

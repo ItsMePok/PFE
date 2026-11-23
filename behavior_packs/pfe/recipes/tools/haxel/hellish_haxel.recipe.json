@@ -1,45 +1,39 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:hellish_haxel"
-		},
-		"group": "haxel",
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"###",
-			"#iU",
-			" E "
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:hellish_ingot"
-			},
-			{
-				"item": "poke_pfe:onyx_haxel"
-			},
-			{
-				"item": "poke_pfe:diamond_upgrade_core"
-			}
-		],
-		"key": {
-			"i": {
-				"item": "poke_pfe:demonic_stick"
-			},
-			"#": {
-				"item": "poke_pfe:hellish_block"
-			},
-			"E": {
-				"item": "poke_pfe:onyx_haxel"
-			},
-			"U": {
-				"item": "poke_pfe:diamond_upgrade_core"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:hellish_haxel"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:hellish_haxel"
+    },
+    "group": "haxel",
+    "tags": ["crafting_table"],
+    "pattern": ["###", "#iU", " E "],
+    "unlock": [
+      {
+        "item": "poke_pfe:hellish_ingot"
+      },
+      {
+        "item": "poke_pfe:onyx_haxel"
+      },
+      {
+        "item": "poke_pfe:diamond_upgrade_core"
+      }
+    ],
+    "key": {
+      "i": {
+        "item": "poke_pfe:demonic_stick"
+      },
+      "#": {
+        "item": "poke_pfe:hellish_block"
+      },
+      "E": {
+        "item": "poke_pfe:onyx_haxel"
+      },
+      "U": {
+        "item": "poke_pfe:diamond_upgrade_core"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:hellish_haxel"
+    }
+  }
 }

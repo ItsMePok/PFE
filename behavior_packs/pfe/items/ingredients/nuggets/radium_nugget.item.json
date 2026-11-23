@@ -14,9 +14,7 @@
       "poke_pfe:icon_path": "textures/poke/pfe/radium_nugget",
       "minecraft:icon": "poke_pfe_radium_nugget",
       "minecraft:tags": {
-        "tags": [
-          "minecraft:metal_nuggets"
-        ]
+        "tags": ["minecraft:metal_nuggets"]
       }
     }
   }

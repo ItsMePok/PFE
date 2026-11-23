@@ -1,12 +1,6 @@
 {
   "info": {
-    "capabilities": [
-      "behaviorPack",
-      "functions",
-      "resourcePack",
-      "scripting",
-      "vvfiles"
-    ],
+    "capabilities": ["behaviorPack", "functions", "resourcePack", "scripting", "vvfiles"],
     "behaviorPackManifestCount": 0,
     "unknownJsonCount": 0,
     "entityTypeManifestCount": 0,
@@ -130,9 +124,7 @@
     "subchunkLessChunkCount": 0,
     "completedWorldDataProcessing": true,
     "worldLoadErrors": 0,
-    "commands": [
-      "tag"
-    ],
+    "commands": ["tag"],
     "featureSets": {
       "textures.blockResourceCount": {
         "count": 34
@@ -407,44 +399,28 @@
       "gId": "MINENGINEVER",
       "gIx": 605,
       "p": "/PFE_v1_3_03.mcaddon#/pfe_bp.mcpack#/manifest.json",
-      "d": [
-        1,
-        26,
-        0
-      ]
+      "d": [1, 26, 0]
     },
     {
       "iTp": 2,
       "gId": "MINENGINEVER",
       "gIx": 605,
       "p": "/behavior_packs/pfe/manifest.json",
-      "d": [
-        1,
-        26,
-        50
-      ]
+      "d": [1, 26, 50]
     },
     {
       "iTp": 2,
       "gId": "MINENGINEVER",
       "gIx": 614,
       "p": "/PFE_v1_3_03.mcaddon#/pfe_rp.mcpack#/manifest.json",
-      "d": [
-        1,
-        26,
-        0
-      ]
+      "d": [1, 26, 0]
     },
     {
       "iTp": 2,
       "gId": "MINENGINEVER",
       "gIx": 614,
       "p": "/resource_packs/pfe/manifest.json",
-      "d": [
-        1,
-        26,
-        50
-      ]
+      "d": [1, 26, 50]
     },
     {
       "iTp": 0,

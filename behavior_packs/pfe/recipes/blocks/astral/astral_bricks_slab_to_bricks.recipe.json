@@ -1,28 +1,24 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:astral_bricks_slab_to_astral_bricks"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:astral_bricks_slab"
-			}
-		],
-		"key": {
-			"C": {
-				"item": "poke_pfe:astral_bricks_slab"
-			}
-		},
-		"pattern": [
-			"CC"
-		],
-		"result": {
-			"item": "poke_pfe:astral_bricks"
-		},
-		"priority": 2
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:astral_bricks_slab_to_astral_bricks"
+    },
+    "tags": ["crafting_table"],
+    "unlock": [
+      {
+        "item": "poke_pfe:astral_bricks_slab"
+      }
+    ],
+    "key": {
+      "C": {
+        "item": "poke_pfe:astral_bricks_slab"
+      }
+    },
+    "pattern": ["CC"],
+    "result": {
+      "item": "poke_pfe:astral_bricks"
+    },
+    "priority": 2
+  }
 }

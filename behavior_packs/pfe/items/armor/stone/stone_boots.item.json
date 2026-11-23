@@ -1,62 +1,53 @@
 {
-	"format_version": "1.26.60",
-	"minecraft:item": {
-		"description": {
-			"identifier": "poke_pfe:stone_boots",
-			"menu_category": {
-				"category": "equipment"
-			}
-		},
-		"components": {
-			"minecraft:display_name": {
-				"value": "%poke_pfe.stone_boots\n%poke_pfe.tag"
-			},
-			"poke_pfe:icon_path": "textures/poke/pfe/stone_boots",
-			"minecraft:max_stack_size": 1,
-			"minecraft:enchantable": {
-				"value": 9,
-				"slot": "armor_feet"
-			},
-			"minecraft:durability": {
-				"max_durability": 128,
-				"damage_chance": {
-					"min": 60,
-					"max": 100
-				}
-			},
-			"minecraft:icon": {
-				"textures": {
-					"default": "poke_pfe_stone_boots"
-				}
-			},
-			"minecraft:wearable": {
-				"slot": "slot.armor.feet",
-				"protection": 1
-			},
-			"minecraft:repairable": {
-				"repair_items": [
-					{
-						"items": [
-							"poke_pfe:repair_core"
-						],
-						"repair_amount": "query.max_durability"
-					},
-					{
-						"items": [
-							"minecraft:cobblestone"
-						],
-						"repair_amount": "query.max_durability*0.25"
-					}
-				]
-			},
-			"minecraft:tags": {
-				"tags": [
-					"poke_pfe:SingleArmor",
-					"minecraft:is_armor",
-					"minecraft:trimmable_armors",
-					"novelty:is_foot"
-				]
-			}
-		}
-	}
+  "format_version": "1.26.60",
+  "minecraft:item": {
+    "description": {
+      "identifier": "poke_pfe:stone_boots",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "%poke_pfe.stone_boots\n%poke_pfe.tag"
+      },
+      "poke_pfe:icon_path": "textures/poke/pfe/stone_boots",
+      "minecraft:max_stack_size": 1,
+      "minecraft:enchantable": {
+        "value": 9,
+        "slot": "armor_feet"
+      },
+      "minecraft:durability": {
+        "max_durability": 128,
+        "damage_chance": {
+          "min": 60,
+          "max": 100
+        }
+      },
+      "minecraft:icon": {
+        "textures": {
+          "default": "poke_pfe_stone_boots"
+        }
+      },
+      "minecraft:wearable": {
+        "slot": "slot.armor.feet",
+        "protection": 1
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": ["poke_pfe:repair_core"],
+            "repair_amount": "query.max_durability"
+          },
+          {
+            "items": ["minecraft:cobblestone"],
+            "repair_amount": "query.max_durability*0.25"
+          }
+        ]
+      },
+      "minecraft:tags": {
+        "tags": ["poke_pfe:SingleArmor", "minecraft:is_armor", "minecraft:trimmable_armors", "novelty:is_foot"]
+      }
+    }
+  }
 }

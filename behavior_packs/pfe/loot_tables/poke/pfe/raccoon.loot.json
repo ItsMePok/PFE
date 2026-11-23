@@ -1,18 +1,18 @@
 {
-	"pools": [
-		{
-			"rolls": 3,
-			"entries": [
-				{
-					"type": "item",
-					"name": "poke_pfe:trash_lid",
-					"weight": 1
-				},
-				{
-					"type": "empty",
-					"weight": 50
-				}
-			]
-		}
-	]
+  "pools": [
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "item",
+          "name": "poke_pfe:trash_lid",
+          "weight": 1
+        },
+        {
+          "type": "empty",
+          "weight": 50
+        }
+      ]
+    }
+  ]
 }

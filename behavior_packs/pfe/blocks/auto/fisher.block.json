@@ -7,19 +7,11 @@
         "category": "items"
       },
       "states": {
-        "poke_pfe:bait": [
-          4,
-          3,
-          2,
-          1,
-          0
-        ]
+        "poke_pfe:bait": [4, 3, 2, 1, 0]
       },
       "traits": {
         "minecraft:placement_direction": {
-          "enabled_states": [
-            "minecraft:cardinal_direction"
-          ]
+          "enabled_states": ["minecraft:cardinal_direction"]
         }
       }
     },
@@ -117,55 +109,35 @@
           }
         }
       },
-      // Facing north
       {
         "condition": "query.block_state('minecraft:cardinal_direction') == 'south'",
         "components": {
           "minecraft:transformation": {
-            "rotation": [
-              0,
-              0,
-              0
-            ]
+            "rotation": [0, 0, 0]
           }
         }
       },
-      // Facing south
       {
         "condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
         "components": {
           "minecraft:transformation": {
-            "rotation": [
-              0,
-              180,
-              0
-            ]
+            "rotation": [0, 180, 0]
           }
         }
       },
-      // Facing west
       {
         "condition": "query.block_state('minecraft:cardinal_direction') == 'east'",
         "components": {
           "minecraft:transformation": {
-            "rotation": [
-              0,
-              90,
-              0
-            ]
+            "rotation": [0, 90, 0]
           }
         }
       },
-      // Facing east
       {
         "condition": "query.block_state('minecraft:cardinal_direction') == 'west'",
         "components": {
           "minecraft:transformation": {
-            "rotation": [
-              0,
-              -90,
-              0
-            ]
+            "rotation": [0, -90, 0]
           }
         }
       }
@@ -177,29 +149,13 @@
       "minecraft:display_name": "%poke_pfe.fisher\n%poke_pfe.fisher.desc\n%poke_pfe.tag",
       "minecraft:collision_box": [
         {
-          "size": [
-            16,
-            16,
-            16
-          ],
-          "origin": [
-            -8,
-            0,
-            -8
-          ]
+          "size": [16, 16, 16],
+          "origin": [-8, 0, -8]
         }
       ],
       "minecraft:selection_box": {
-        "size": [
-          16,
-          16,
-          16
-        ],
-        "origin": [
-          -8,
-          0,
-          -8
-        ]
+        "size": [16, 16, 16],
+        "origin": [-8, 0, -8]
       },
       "minecraft:redstone_conductivity": {
         "allows_wire_to_step_down": true,
@@ -227,10 +183,7 @@
         ]
       },
       "minecraft:map_color": "#c09059",
-      "minecraft:tags": [
-        "pfe",
-        "minecraft:is_axe_item_destructible"
-      ],
+      "minecraft:tags": ["pfe", "minecraft:is_axe_item_destructible"],
       "poke_pfe:fisher": {}
     }
   }

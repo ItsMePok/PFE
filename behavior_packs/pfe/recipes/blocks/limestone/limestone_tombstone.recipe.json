@@ -1,39 +1,33 @@
 {
-    "format_version": "1.20.60",
-    "minecraft:recipe_shaped": {
-        "description": {
-            "identifier": "poke_pfe:limestone_tombstone"
-        },
-        "tags": [
-            "crafting_table"
-        ],
-        "unlock": [
-            {
-                "item": "poke_pfe:limestone"
-            },
-            {
-                "item": "poke_pfe:cobbled_limestone"
-            },
-            {
-                "item": "poke_pfe:smooth_limestone"
-            }
-        ],
-        "key": {
-            "S": {
-                "item": "poke_pfe:smooth_limestone"
-            },
-            "L": {
-                "item": "poke_pfe:limestone"
-            }
-        },
-        "pattern": [
-            " S ",
-            "SSS",
-            "LLL"
-        ],
-        "result": {
-            "item": "poke_pfe:limestone_tombstone",
-            "count": 1
-        }
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:limestone_tombstone"
+    },
+    "tags": ["crafting_table"],
+    "unlock": [
+      {
+        "item": "poke_pfe:limestone"
+      },
+      {
+        "item": "poke_pfe:cobbled_limestone"
+      },
+      {
+        "item": "poke_pfe:smooth_limestone"
+      }
+    ],
+    "key": {
+      "S": {
+        "item": "poke_pfe:smooth_limestone"
+      },
+      "L": {
+        "item": "poke_pfe:limestone"
+      }
+    },
+    "pattern": [" S ", "SSS", "LLL"],
+    "result": {
+      "item": "poke_pfe:limestone_tombstone",
+      "count": 1
     }
+  }
 }

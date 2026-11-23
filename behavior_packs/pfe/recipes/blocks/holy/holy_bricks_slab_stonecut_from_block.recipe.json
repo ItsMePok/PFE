@@ -1,20 +1,18 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:recipe_shapeless": {
-		"description": {
-			"identifier": "poke_pfe:holy_bricks_slab_sc_from_block"
-		},
-		"tags": [
-			"stonecutter"
-		],
-		"ingredients": [
-			{
-				"item": "poke_pfe:holy_block"
-			}
-		],
-		"result": {
-			"item": "poke_pfe:holy_bricks_slab",
-			"count": 8
-		}
-	}
+  "format_version": "1.16.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "poke_pfe:holy_bricks_slab_sc_from_block"
+    },
+    "tags": ["stonecutter"],
+    "ingredients": [
+      {
+        "item": "poke_pfe:holy_block"
+      }
+    ],
+    "result": {
+      "item": "poke_pfe:holy_bricks_slab",
+      "count": 8
+    }
+  }
 }

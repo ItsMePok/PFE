@@ -1,31 +1,27 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:cut_death_slab_crafting_table"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:death_ingot"
-			},
-			{
-				"item": "poke_pfe:cut_death"
-			}
-		],
-		"key": {
-			"C": {
-				"item": "poke_pfe:cut_death"
-			}
-		},
-		"pattern": [
-			"CCC"
-		],
-		"result": {
-			"item": "poke_pfe:cut_death_slab",
-			"count": 6
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:cut_death_slab_crafting_table"
+    },
+    "tags": ["crafting_table"],
+    "unlock": [
+      {
+        "item": "poke_pfe:death_ingot"
+      },
+      {
+        "item": "poke_pfe:cut_death"
+      }
+    ],
+    "key": {
+      "C": {
+        "item": "poke_pfe:cut_death"
+      }
+    },
+    "pattern": ["CCC"],
+    "result": {
+      "item": "poke_pfe:cut_death_slab",
+      "count": 6
+    }
+  }
 }

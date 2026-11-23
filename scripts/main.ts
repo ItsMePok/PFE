@@ -32,14 +32,11 @@ const currentVersion = 103005; // PFE Version (ex: 103062 = v1.3.62)
 
 world.afterEvents.playerJoin.subscribe((data) => {
   let birthdays: PokeBirthdays[] = JSON.parse(world.getDynamicProperty(`poke_pfe:birthdays`)!.toString());
-  //console.warn(JSON.stringify(birthdays))
   system.runTimeout(() => {
     world.getAllPlayers().forEach((player) => {
-      //console.warn(`Joined Id ${ player.id}, your: ${ player.id}`)
       if (player.id == data.playerId) {
         let currentTime = new Date(Date.now() + PokeTimeZoneOffset(player));
         birthdays.forEach((birthday) => {
-          //console.warn(`${ birthday.day == currentTime.getDate() && birthday.month == currentTime.getMonth()} Day ${ currentTime.getDate()}, Month: ${ currentTime.getMonth()}`)
           if (birthday.day == currentTime.getDate() && birthday.month == currentTime.getMonth()) {
             let name: RawMessage = {text: birthday.name};
             if (birthday.style == "dev") {
@@ -111,7 +108,7 @@ world.afterEvents.worldLoad.subscribe((data) => {
   typeof CustomEventsDynamicProp == "string"
     ? (JSON.parse(CustomEventsDynamicProp) ?? world.setDynamicProperty(`poke_pfe:customEvents`, `[]`))
     : world.setDynamicProperty(`poke_pfe:customEvents`, `[]`);
-  //console.warn(`Custom events were invalid; resetting to default (Ignore if this world was just created) || Poke-Calendar`)
+
   if (typeof world.getDynamicProperty(PFEBossEventConfigName) == "string") {
     let settings: PFEBossEventConfig = JSON.parse(world.getDynamicProperty(PFEBossEventConfigName)!.toString());
     //To prevent errors it will reset the settings to default if a setting was missing/invalid
@@ -128,11 +125,9 @@ world.afterEvents.worldLoad.subscribe((data) => {
       typeof settings.superStriker != "object" ||
       typeof settings.theLogger != "object"
     ) {
-      //console.warn(`Some Boss Event Settings were invalid; Resetting settings to default || PFE`)
       world.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(PFEDefaultBossEventSettings));
     }
   } else {
-    //console.warn(`Some Boss Event Settings were invalid; Resetting settings to default || PFE`)
     world.setDynamicProperty(PFEBossEventConfigName, JSON.stringify(PFEDefaultBossEventSettings));
   }
   /* Outgoing Addon Compatibility:*/
@@ -141,7 +136,6 @@ world.afterEvents.worldLoad.subscribe((data) => {
   world.setDynamicProperty("poke_pfe:bossEventIntervalId", startBossEvents());
   world.setDynamicProperty("poke_pfe:setEffectIntervalId", startSetEffects());
   system.sendScriptEvent("poke_pfe:dupe_check", `${currentVersion}`);
-  //console.warn(`Within PFE: ${ JSON.stringify(new ItemStack("poke_pfe:custom_data_storage", 1).getComponent(`poke_pfe:incompatible_addons`))}`)
 });
 const DataStorageDynamicPropertyId = "registered_data_storage_items";
 /*Incoming Addon Compatibility/Integrations*/
@@ -209,9 +203,9 @@ system.afterEvents.scriptEventReceive.subscribe((data) => {
       let newQuests = currentQuests.concat(JSON.parse(data.message).value) ?? currentQuests;
       world.setDynamicProperty(PFECustomCraftQuestsPropertyID, JSON.stringify(newQuests));
     }
-    /*case (`poke_pfe:test`): { 
+    /*case (`poke_pfe:test`): {  
             let item = data.sourceEntity?.getComponent(EntityComponentTypes.Equippable)?.getEquipment(EquipmentSlot.Mainhand)
-            item?.setDynamicProperty(`poke_pfe:ammo`, JSON.stringify({  v: 2, max: 32, amount: 12, entityId: "poke_pfe:galaxy_arrow", id: "poke_pfe:galaxy_arrow", upgrades: [{  id: "poke_pfe:capacity", level: 1, maxLevel: undefined }, {  id: "poke_pfe:flaming", level: 0, maxLevel: 1 }] }))
+            item?.setDynamicProperty(`poke_pfe:ammo`, JSON.stringify({   v: 2, max: 32, amount: 12, entityId: "poke_pfe:galaxy_arrow", id: "poke_pfe:galaxy_arrow", upgrades: [{   id: "poke_pfe:capacity", level: 1, maxLevel: undefined }, {   id: "poke_pfe:flaming", level: 0, maxLevel: 1 }] }))
             data.sourceEntity?.getComponent(EntityComponentTypes.Equippable)?.setEquipment(EquipmentSlot.Mainhand, item)
         }*/
     // This is to check if there are multiple versions of PFE applied to a world at a time
@@ -221,7 +215,6 @@ system.afterEvents.scriptEventReceive.subscribe((data) => {
         world.sendMessage(
           `§f[§eWARNING§f] Multiple versions PFE are applied to this world, to avoid any issue: please remove any old versions || §eOld version: §fv${data.message.substring(0, 1)}.${Number(data.message.substring(1, 3))}.${Number(`${data.message}`.substring(3, 5))}${Number(`${data.message}`.substring(5)) != 0 ? `${data.message}`.substring(5) : ""}`
         );
-        // console.warn(`Multiple versions PFE found:\n- Old version: ${ Version.toString()} (v${ data.message.substring(0, 1)}.${ Number(data.message.substring(1, 3))}.${ Number(`${ data.message}`.substring(3, 5))}${ Number(data.message.substring(5)) != 0 ? data.message.substring(5) : ""})\n- Current version: ${ currentVersion.toString()} (v ${ currentVersion.toString().substring(0, 1)}.${ Number(`${ currentVersion}`.substring(1, 3))}.${ Number(`${ currentVersion}`.substring(3, 5))}${ Number(`${ currentVersion}`.substring(5)) != 0 ? `${ currentVersion}`.substring(5) : ""})`)
       }
       break;
     }
@@ -314,7 +307,7 @@ function SwapHatCommand(origin: CustomCommandOrigin, swapAs: Player[]): CustomCo
         status: CustomCommandStatus.Success,
         message: "Swapped Helmet with Held Item",
       };
-      console.warn("Swapped Helmet with Held Item");
+      console.info("Swapped Helmet with Held Item");
       return;
     }
   });

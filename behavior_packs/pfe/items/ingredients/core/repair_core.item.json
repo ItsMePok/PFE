@@ -1,23 +1,21 @@
 {
-	"format_version": "1.26.60",
-	"minecraft:item": {
-		"description": {
-			"identifier": "poke_pfe:repair_core",
-			"menu_category": {
-				"category": "items"
-			}
-		},
-		"components": {
-			"minecraft:display_name": {
-				"value": "%poke_pfe.repair_core\n%poke_pfe.tag"
-			},
-			"poke_pfe:icon_path": "textures/poke/pfe/repair_core",
-			"minecraft:tags": {
-				"tags": [
-					"poke_pfe:upgrade_core"
-				]
-			},
-			"minecraft:icon": "poke_pfe_repair_core"
-		}
-	}
+  "format_version": "1.26.60",
+  "minecraft:item": {
+    "description": {
+      "identifier": "poke_pfe:repair_core",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "%poke_pfe.repair_core\n%poke_pfe.tag"
+      },
+      "poke_pfe:icon_path": "textures/poke/pfe/repair_core",
+      "minecraft:tags": {
+        "tags": ["poke_pfe:upgrade_core"]
+      },
+      "minecraft:icon": "poke_pfe_repair_core"
+    }
+  }
 }

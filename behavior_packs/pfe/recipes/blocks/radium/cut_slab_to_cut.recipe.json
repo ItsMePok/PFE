@@ -1,28 +1,24 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:cut_radium_slab_to_cut_radium"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:cut_radium_slab"
-			}
-		],
-		"key": {
-			"C": {
-				"item": "poke_pfe:cut_radium_slab"
-			}
-		},
-		"pattern": [
-			"CC"
-		],
-		"result": {
-			"item": "poke_pfe:cut_radium"
-		},
-		"priority": 2
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:cut_radium_slab_to_cut_radium"
+    },
+    "tags": ["crafting_table"],
+    "unlock": [
+      {
+        "item": "poke_pfe:cut_radium_slab"
+      }
+    ],
+    "key": {
+      "C": {
+        "item": "poke_pfe:cut_radium_slab"
+      }
+    },
+    "pattern": ["CC"],
+    "result": {
+      "item": "poke_pfe:cut_radium"
+    },
+    "priority": 2
+  }
 }

@@ -5,14 +5,8 @@
       "identifier": "poke_pfe:identifier"
     },
     "assume_symmetry": true,
-    "tags": [
-      "crafting_table"
-    ],
-    "pattern": [
-      "G",
-      "C",
-      "S"
-    ],
+    "tags": ["crafting_table"],
+    "pattern": ["G", "C", "S"],
     "unlock": [
       {
         "item": "minecraft:stick"

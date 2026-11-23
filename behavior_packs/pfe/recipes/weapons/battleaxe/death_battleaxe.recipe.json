@@ -1,46 +1,40 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:death_battleaxe"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"DDD",
-			"DSD",
-			"UB "
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:death_ingot"
-			},
-			{
-				"item": "poke_pfe:death_block"
-			},
-			{
-				"item": "poke_pfe:void_battleaxe"
-			}
-		],
-		"key": {
-			"B": {
-				"item": "poke_pfe:void_battleaxe"
-			},
-			"D": {
-				"item": "poke_pfe:death_block"
-			},
-			"S": {
-				"item": "poke_pfe:onyx_stick"
-			},
-			"U": {
-				"item": "poke_pfe:platinum_upgrade_core"
-			}
-		},
-		"result": [
-			{
-				"item": "poke_pfe:death_battleaxe"
-			}
-		]
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:death_battleaxe"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["DDD", "DSD", "UB "],
+    "unlock": [
+      {
+        "item": "poke_pfe:death_ingot"
+      },
+      {
+        "item": "poke_pfe:death_block"
+      },
+      {
+        "item": "poke_pfe:void_battleaxe"
+      }
+    ],
+    "key": {
+      "B": {
+        "item": "poke_pfe:void_battleaxe"
+      },
+      "D": {
+        "item": "poke_pfe:death_block"
+      },
+      "S": {
+        "item": "poke_pfe:onyx_stick"
+      },
+      "U": {
+        "item": "poke_pfe:platinum_upgrade_core"
+      }
+    },
+    "result": [
+      {
+        "item": "poke_pfe:death_battleaxe"
+      }
+    ]
+  }
 }

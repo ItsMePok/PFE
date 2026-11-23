@@ -643,7 +643,7 @@
           "haggle.no": "poke_pfe.trader.no"
         }
       },
-      "poke_pfe:robo_golem": {
+      "poke_pfe:furnace_golem": {
         "events": {
           "ambient": "mob.irongolem.say",
           "death": {

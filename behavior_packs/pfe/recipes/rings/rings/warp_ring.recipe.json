@@ -1,33 +1,31 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shapeless": {
-		"description": {
-			"identifier": "poke_pfe:warp_ring"
-		},
-		"group": "poke_pfe:rings",
-		"tags": [
-			"crafting_table"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:warp_gem"
-			},
-			{
-				"item": "poke_pfe:ender_holder"
-			}
-		],
-		"ingredients": [
-			{
-				"item": "poke_pfe:ender_holder",
-				"count": 1
-			},
-			{
-				"item": "poke_pfe:warp_gem",
-				"count": 1
-			}
-		],
-		"result": {
-			"item": "poke_pfe:warp_ring"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "poke_pfe:warp_ring"
+    },
+    "group": "poke_pfe:rings",
+    "tags": ["crafting_table"],
+    "unlock": [
+      {
+        "item": "poke_pfe:warp_gem"
+      },
+      {
+        "item": "poke_pfe:ender_holder"
+      }
+    ],
+    "ingredients": [
+      {
+        "item": "poke_pfe:ender_holder",
+        "count": 1
+      },
+      {
+        "item": "poke_pfe:warp_gem",
+        "count": 1
+      }
+    ],
+    "result": {
+      "item": "poke_pfe:warp_ring"
+    }
+  }
 }

@@ -135,7 +135,7 @@
         "require_complete_path": false,
         "cooldown_time": 1
       } /*
-			"minecraft:flocking": { 
+			"minecraft:flocking": {
 				"in_water": true,
 				"match_variants": false,
 				"use_center_of_mass": true,

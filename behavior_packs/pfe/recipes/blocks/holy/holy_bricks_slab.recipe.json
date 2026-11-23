@@ -1,34 +1,30 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:holy_bricks_slab_craft"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:holy_block"
-			},
-			{
-				"item": "poke_pfe:holy_ingot"
-			},
-			{
-				"item": "poke_pfe:holy_bricks"
-			}
-		],
-		"key": {
-			"C": {
-				"item": "poke_pfe:holy_bricks"
-			}
-		},
-		"pattern": [
-			"CCC"
-		],
-		"result": {
-			"item": "poke_pfe:holy_bricks_slab",
-			"count": 6
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:holy_bricks_slab_craft"
+    },
+    "tags": ["crafting_table"],
+    "unlock": [
+      {
+        "item": "poke_pfe:holy_block"
+      },
+      {
+        "item": "poke_pfe:holy_ingot"
+      },
+      {
+        "item": "poke_pfe:holy_bricks"
+      }
+    ],
+    "key": {
+      "C": {
+        "item": "poke_pfe:holy_bricks"
+      }
+    },
+    "pattern": ["CCC"],
+    "result": {
+      "item": "poke_pfe:holy_bricks_slab",
+      "count": 6
+    }
+  }
 }

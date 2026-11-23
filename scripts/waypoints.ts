@@ -408,7 +408,7 @@ function WaypointUICreateWaypoint(player: Player, item: ItemStack, component: wa
       location: player.location,
       rotation: player.getRotation(),
     };
-    //console.warn(`SAVING: ${ JSON.stringify(newWaypoint)}`)
+    //console.warn(`SAVING: ${  JSON.stringify(newWaypoint)}`)
     let newProperty: PokePFEWaypointItemConfig = {
       localSettings: waypointConfig.localSettings,
       v: PFEWaypointVersion,

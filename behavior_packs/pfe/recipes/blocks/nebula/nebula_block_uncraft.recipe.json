@@ -1,28 +1,24 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:nebula_block_un-craft"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"#"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:nebula_block"
-			}
-		],
-		"key": {
-			"#": {
-				"item": "poke_pfe:nebula_block"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:nebula_ingot",
-			"count": 9
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:nebula_block_un-craft"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["#"],
+    "unlock": [
+      {
+        "item": "poke_pfe:nebula_block"
+      }
+    ],
+    "key": {
+      "#": {
+        "item": "poke_pfe:nebula_block"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:nebula_ingot",
+      "count": 9
+    }
+  }
 }

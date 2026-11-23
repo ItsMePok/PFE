@@ -1,14 +1,11 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:recipe_furnace": {
-		"description": {
-			"identifier": "poke_pfe:cracked_onyx_bricks"
-		},
-		"tags": [
-			"furnace",
-			"blast_furnace"
-		],
-		"input": "poke_pfe:onyx_bricks",
-		"output": "poke_pfe:cracked_onyx_bricks"
-	}
+  "format_version": "1.16.100",
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "poke_pfe:cracked_onyx_bricks"
+    },
+    "tags": ["furnace", "blast_furnace"],
+    "input": "poke_pfe:onyx_bricks",
+    "output": "poke_pfe:cracked_onyx_bricks"
+  }
 }

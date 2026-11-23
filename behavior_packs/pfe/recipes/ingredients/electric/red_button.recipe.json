@@ -1,33 +1,27 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:red_button"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"PPP",
-			"PEP",
-			"PPP"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:electric_component"
-			}
-		],
-		"key": {
-			"P": {
-				"item": "poke_pfe:plastic"
-			},
-			"E": {
-				"item": "poke_pfe:electric_component"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:red_button",
-			"count": 1
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:red_button"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["PPP", "PEP", "PPP"],
+    "unlock": [
+      {
+        "item": "poke_pfe:electric_component"
+      }
+    ],
+    "key": {
+      "P": {
+        "item": "poke_pfe:plastic"
+      },
+      "E": {
+        "item": "poke_pfe:electric_component"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:red_button",
+      "count": 1
+    }
+  }
 }

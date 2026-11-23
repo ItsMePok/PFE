@@ -1,19 +1,19 @@
 {
-	"format_version": "1.26.60",
-	"minecraft:item": {
-		"description": {
-			"identifier": "poke_pfe:floppy_disk",
-			"menu_category": {
-				"category": "items"
-			}
-		},
-		"components": {
-			"minecraft:display_name": {
-				"value": "%poke_pfe.floppy_disk\n%poke_pfe.tag"
-			},
-			"poke_pfe:icon_path": "textures/poke/pfe/floppy_disk",
-			"minecraft:icon": "poke_pfe_floppy_disk",
-			"minecraft:rarity": "epic"
-		}
-	}
+  "format_version": "1.26.60",
+  "minecraft:item": {
+    "description": {
+      "identifier": "poke_pfe:floppy_disk",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "%poke_pfe.floppy_disk\n%poke_pfe.tag"
+      },
+      "poke_pfe:icon_path": "textures/poke/pfe/floppy_disk",
+      "minecraft:icon": "poke_pfe_floppy_disk",
+      "minecraft:rarity": "epic"
+    }
+  }
 }

@@ -8,9 +8,7 @@
           "*": "variable.is_dyed ? Material.dyed : Material.default"
         }
       ],
-      "textures": [
-        "variable.is_dyed ? Texture.dyed : Texture.default"
-      ]
+      "textures": ["variable.is_dyed ? Texture.dyed : Texture.default"]
     }
   }
 }

@@ -1,13 +1,13 @@
 {
-    "pools": [
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
         {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "item",
-                    "name": "poke_pfe:spawn_quest_trader"
-                }
-            ]
+          "type": "item",
+          "name": "poke_pfe:spawn_quest_trader"
         }
-    ]
+      ]
+    }
+  ]
 }

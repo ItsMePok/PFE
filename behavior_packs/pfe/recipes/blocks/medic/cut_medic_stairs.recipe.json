@@ -5,20 +5,14 @@
       "identifier": "poke_pfe:cut_medic_stairs"
     },
     "assume_symmetry": true,
-    "tags": [
-      "crafting_table"
-    ],
+    "tags": ["crafting_table"],
     "group": "stairs",
     "unlock": [
       {
         "item": "poke_pfe:cut_medic"
       }
     ],
-    "pattern": [
-      "X  ",
-      "XX ",
-      "XXX"
-    ],
+    "pattern": ["X  ", "XX ", "XXX"],
     "key": {
       "X": {
         "item": "poke_pfe:cut_medic"

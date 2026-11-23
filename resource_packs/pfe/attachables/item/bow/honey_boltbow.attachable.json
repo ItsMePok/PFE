@@ -31,9 +31,7 @@
           "controller"
         ]
       },
-      "render_controllers": [
-        "controller.render.default"
-      ]
+      "render_controllers": ["controller.render.default"]
     }
   }
 }

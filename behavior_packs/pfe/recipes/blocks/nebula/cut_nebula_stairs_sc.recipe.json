@@ -1,19 +1,17 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:recipe_shapeless": {
-		"description": {
-			"identifier": "poke_pfe:cut_nebula_stairs_sc"
-		},
-		"tags": [
-			"stonecutter"
-		],
-		"ingredients": [
-			{
-				"item": "poke_pfe:cut_nebula"
-			}
-		],
-		"result": {
-			"item": "poke_pfe:cut_nebula_stairs"
-		}
-	}
+  "format_version": "1.16.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "poke_pfe:cut_nebula_stairs_sc"
+    },
+    "tags": ["stonecutter"],
+    "ingredients": [
+      {
+        "item": "poke_pfe:cut_nebula"
+      }
+    ],
+    "result": {
+      "item": "poke_pfe:cut_nebula_stairs"
+    }
+  }
 }

@@ -1,55 +1,49 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:elevator_block"
-		},
-		"group": "poke_pfe:automation",
-		"tags": [
-			"crafting_table"
-		],
-		"key": {
-			"L": {
-				"tag": "minecraft:stone_crafting_materials"
-			},
-			"A": {
-				"item": "poke_pfe:antenna"
-			},
-			"V": {
-				"item": "poke_pfe:void_ingot"
-			},
-			"E": {
-				"item": "minecraft:ender_pearl"
-			},
-			"R": {
-				"item": "minecraft:redstone"
-			}
-		},
-		"unlock": [
-			{
-				"tag": "minecraft:stone_crafting_materials"
-			},
-			{
-				"item": "poke_pfe:antenna"
-			},
-			{
-				"item": "poke_pfe:void_ingot"
-			},
-			{
-				"item": "minecraft:ender_pearl"
-			},
-			{
-				"item": "minecraft:redstone"
-			}
-		],
-		"pattern": [
-			"LAL",
-			"VEV",
-			"LRL"
-		],
-		"result": {
-			"count": 1,
-			"item": "poke_pfe:elevator"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:elevator_block"
+    },
+    "group": "poke_pfe:automation",
+    "tags": ["crafting_table"],
+    "key": {
+      "L": {
+        "tag": "minecraft:stone_crafting_materials"
+      },
+      "A": {
+        "item": "poke_pfe:antenna"
+      },
+      "V": {
+        "item": "poke_pfe:void_ingot"
+      },
+      "E": {
+        "item": "minecraft:ender_pearl"
+      },
+      "R": {
+        "item": "minecraft:redstone"
+      }
+    },
+    "unlock": [
+      {
+        "tag": "minecraft:stone_crafting_materials"
+      },
+      {
+        "item": "poke_pfe:antenna"
+      },
+      {
+        "item": "poke_pfe:void_ingot"
+      },
+      {
+        "item": "minecraft:ender_pearl"
+      },
+      {
+        "item": "minecraft:redstone"
+      }
+    ],
+    "pattern": ["LAL", "VEV", "LRL"],
+    "result": {
+      "count": 1,
+      "item": "poke_pfe:elevator"
+    }
+  }
 }

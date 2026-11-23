@@ -1,65 +1,59 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:scrapper"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"KON",
-			"EXE",
-			"ROC"
-		],
-		"unlock": [
-			{
-				"tag": "minecraft:egg"
-			},
-			{
-				"item": "poke_pfe:cobalt_ingot"
-			},
-			{
-				"item": "poke_pfe:onyx_ingot"
-			},
-			{
-				"item": "poke_pfe:charred_poppy"
-			},
-			{
-				"item": "poke_pfe:rotten_chicken"
-			},
-			{
-				"item": "poke_pfe:knightling_helmet"
-			},
-			{
-				"item": "poke_pfe:necromancer_staff"
-			}
-		],
-		"key": {
-			"X": {
-				"tag": "minecraft:egg"
-			},
-			"E": {
-				"item": "poke_pfe:cobalt_ingot"
-			},
-			"O": {
-				"item": "poke_pfe:onyx_ingot"
-			},
-			"C": {
-				"item": "poke_pfe:charred_poppy"
-			},
-			"R": {
-				"item": "poke_pfe:rotten_chicken"
-			},
-			"K": {
-				"item": "poke_pfe:knightling_helmet"
-			},
-			"N": {
-				"item": "poke_pfe:necromancer_staff"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:spawn_scrapper"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:scrapper"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["KON", "EXE", "ROC"],
+    "unlock": [
+      {
+        "tag": "minecraft:egg"
+      },
+      {
+        "item": "poke_pfe:cobalt_ingot"
+      },
+      {
+        "item": "poke_pfe:onyx_ingot"
+      },
+      {
+        "item": "poke_pfe:charred_poppy"
+      },
+      {
+        "item": "poke_pfe:rotten_chicken"
+      },
+      {
+        "item": "poke_pfe:knightling_helmet"
+      },
+      {
+        "item": "poke_pfe:necromancer_staff"
+      }
+    ],
+    "key": {
+      "X": {
+        "tag": "minecraft:egg"
+      },
+      "E": {
+        "item": "poke_pfe:cobalt_ingot"
+      },
+      "O": {
+        "item": "poke_pfe:onyx_ingot"
+      },
+      "C": {
+        "item": "poke_pfe:charred_poppy"
+      },
+      "R": {
+        "item": "poke_pfe:rotten_chicken"
+      },
+      "K": {
+        "item": "poke_pfe:knightling_helmet"
+      },
+      "N": {
+        "item": "poke_pfe:necromancer_staff"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:spawn_scrapper"
+    }
+  }
 }

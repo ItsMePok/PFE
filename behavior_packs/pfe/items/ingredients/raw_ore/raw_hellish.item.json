@@ -1,18 +1,18 @@
 {
-	"format_version": "1.26.60",
-	"minecraft:item": {
-		"description": {
-			"identifier": "poke_pfe:raw_hellish",
-			"menu_category": {
-				"category": "items"
-			}
-		},
-		"components": {
-			"minecraft:display_name": {
-				"value": "%poke_pfe.raw_hellish\n%poke_pfe.tag"
-			},
-			"poke_pfe:icon_path": "textures/poke/pfe/raw_hellish",
-			"minecraft:icon": "poke_pfe_raw_hellish"
-		}
-	}
+  "format_version": "1.26.60",
+  "minecraft:item": {
+    "description": {
+      "identifier": "poke_pfe:raw_hellish",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "%poke_pfe.raw_hellish\n%poke_pfe.tag"
+      },
+      "poke_pfe:icon_path": "textures/poke/pfe/raw_hellish",
+      "minecraft:icon": "poke_pfe_raw_hellish"
+    }
+  }
 }

@@ -1,0 +1,24 @@
+{
+  "format_version": "1.26.60",
+  "minecraft:item": {
+    "description": {
+      "identifier": "poke_pfe:spawn_furnace_golem",
+      "menu_category": {
+        "category": "nature"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "%poke_pfe.furnace_golem\n%poke_pfe.tag"
+      },
+      "poke_pfe:icon_path": "textures/poke/pfe/furnace_golem_spawn_egg",
+      "minecraft:icon": "poke_pfe_furnace_golem_spawn_egg",
+      "poke_pfe:spawn_entity": {
+        "entity": "poke_pfe:furnace_golem"
+      },
+      "minecraft:tags": {
+        "tags": ["minecraft:spawn_egg", "poke_pfe:is_survival_spawn_egg"]
+      }
+    }
+  }
+}

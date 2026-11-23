@@ -17,9 +17,7 @@
       },
       "scripts": {
         "scale": "2.0",
-        "animate": [
-          "face_player"
-        ]
+        "animate": ["face_player"]
       },
       "render_controllers": [
         "controller.render.fireball" //2

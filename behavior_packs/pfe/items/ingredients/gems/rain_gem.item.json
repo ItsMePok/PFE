@@ -1,18 +1,18 @@
 {
-	"format_version": "1.26.60",
-	"minecraft:item": {
-		"description": {
-			"identifier": "poke_pfe:rain_gem",
-			"menu_category": {
-				"category": "items"
-			}
-		},
-		"components": {
-			"minecraft:display_name": {
-				"value": "%poke_pfe.rain_gem\n%poke_pfe.tag"
-			},
-			"poke_pfe:icon_path": "textures/poke/pfe/rain_gem",
-			"minecraft:icon": "poke_pfe_rain_gem"
-		}
-	}
+  "format_version": "1.26.60",
+  "minecraft:item": {
+    "description": {
+      "identifier": "poke_pfe:rain_gem",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "%poke_pfe.rain_gem\n%poke_pfe.tag"
+      },
+      "poke_pfe:icon_path": "textures/poke/pfe/rain_gem",
+      "minecraft:icon": "poke_pfe_rain_gem"
+    }
+  }
 }

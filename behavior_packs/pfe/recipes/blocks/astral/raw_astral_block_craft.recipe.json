@@ -1,29 +1,23 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:raw_astral_block_craft"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:raw_astral"
-			}
-		],
-		"pattern": [
-			"###",
-			"###",
-			"###"
-		],
-		"key": {
-			"#": {
-				"item": "poke_pfe:raw_astral"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:raw_astral_block"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:raw_astral_block_craft"
+    },
+    "tags": ["crafting_table"],
+    "unlock": [
+      {
+        "item": "poke_pfe:raw_astral"
+      }
+    ],
+    "pattern": ["###", "###", "###"],
+    "key": {
+      "#": {
+        "item": "poke_pfe:raw_astral"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:raw_astral_block"
+    }
+  }
 }

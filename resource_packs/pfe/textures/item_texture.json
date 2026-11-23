@@ -1308,7 +1308,7 @@
     "poke_pfe_ender_holder": {
       "textures": "textures/poke/pfe/ender_holder"
     },
-    "poke_pfe_gem_holder": {
+    "poke_pfe_golden_gem_holder": {
       "textures": "textures/poke/pfe/golden_holder"
     },
     "poke_pfe_obsidian_gem_holder": {

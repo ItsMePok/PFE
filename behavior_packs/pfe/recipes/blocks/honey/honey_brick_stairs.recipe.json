@@ -5,20 +5,14 @@
       "identifier": "poke_pfe:honey_brick_stairs"
     },
     "assume_symmetry": true,
-    "tags": [
-      "crafting_table"
-    ],
+    "tags": ["crafting_table"],
     "group": "stairs",
     "unlock": [
       {
         "item": "poke_pfe:honey_bricks"
       }
     ],
-    "pattern": [
-      "X  ",
-      "XX ",
-      "XXX"
-    ],
+    "pattern": ["X  ", "XX ", "XXX"],
     "key": {
       "X": {
         "item": "poke_pfe:honey_bricks"

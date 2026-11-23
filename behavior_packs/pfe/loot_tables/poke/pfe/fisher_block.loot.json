@@ -2,7 +2,8 @@
   "pools": [
     {
       "rolls": 1,
-      "entries": [ // Total Weight: 29
+      "entries": [
+        // Total Weight: 29
         {
           "type": "loot_table",
           "name": "loot_tables/gameplay/fishing.json",

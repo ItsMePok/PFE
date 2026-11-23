@@ -1,215 +1,219 @@
 {
-	"pools": [
-		{ //Rare Items
-			"rolls": 3,
-			"entries": [ // Total Weight: 22
-				{
-					"type": "empty",
-					"weight": 8
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:cassette_mc_disc_far",
-					"weight": 1
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:cassette_boss",
-					"weight": 1
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:end_crystal_hat",
-					"weight": 1
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:diamond_upgrade_core",
-					"weight": 1
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:charged_cobalt_block",
-					"weight": 1
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:night_vision_goggles",
-					"weight": 1
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:repair_core",
-					"weight": 2
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:upgrade_core",
-					"weight": 2
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:antenna",
-					"weight": 3
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:pfe-wizard_pottery_sherd",
-					"weight": 1
-				}
-			]
-		},
-		{ //Common Items
-			// Total Weight: 88
-			"rolls": {
-				"min": 8,
-				"max": 16
-			},
-			"entries": [
-				{
-					"type": "empty",
-					"weight": 15
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:plastic",
-					"weight": 6
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:banished_star",
-					"weight": 6
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:wire",
-					"weight": 6
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:electric_component",
-					"weight": 5
-				},
-				{
-					"type": "item",
-					"name": "minecraft:redstone",
-					"weight": 6
-				},
-				{
-					"type": "item",
-					"name": "minecraft:piston",
-					"weight": 5
-				},
-				{
-					"type": "item",
-					"name": "minecraft:observer",
-					"weight": 5
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:cobalt_ingot",
-					"weight": 3
-				},
-				{
-					"type": "item",
-					"name": "minecraft:sticky_piston",
-					"weight": 3
-				},
-				{
-					"type": "item",
-					"name": "minecraft:daylight_detector",
-					"weight": 3
-				},
-				{
-					"type": "item",
-					"name": "minecraft:hopper",
-					"weight": 2
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:gps_module",
-					"weight": 3
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:onyx_stick",
-					"weight": 2
-				},
-				{
-					"type": "item",
-					"name": "minecraft:redstone_block",
-					"weight": 2
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:magnet_core",
-					"weight": 2
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:block_breaker",
-					"weight": 2
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:dirter_up",
-					"weight": 2
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:cobblestone_gen",
-					"weight": 2
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:duster_up",
-					"weight": 2
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:red_button",
-					"weight": 2
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:receiver",
-					"weight": 2
-				},
-				{
-					"type": "item",
-					"name": "minecraft:comparator",
-					"weight": 2
-				}
-			]
-		},
-		{ //Tokens // Total Weight: 41
-			"rolls": 5,
-			"entries": [
-				{
-					"type": "item",
-					"name": "poke_pfe:copper_token",
-					"weight": 10
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:iron_token",
-					"weight": 15
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:golden_token",
-					"weight": 5
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:diamond_token",
-					"weight": 1
-				},
-				{
-					"type": "empty",
-					"weight": 10
-				}
-			]
-		}
-	]
+  "pools": [
+    {
+      //Rare Items
+      "rolls": 3,
+      "entries": [
+        // Total Weight: 22
+        {
+          "type": "empty",
+          "weight": 8
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:cassette_mc_disc_far",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:cassette_boss",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:end_crystal_hat",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:diamond_upgrade_core",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:charged_cobalt_block",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:night_vision_goggles",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:repair_core",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:upgrade_core",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:antenna",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:pfe-wizard_pottery_sherd",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      //Common Items
+      // Total Weight: 88
+      "rolls": {
+        "min": 8,
+        "max": 16
+      },
+      "entries": [
+        {
+          "type": "empty",
+          "weight": 15
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:plastic",
+          "weight": 6
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:banished_star",
+          "weight": 6
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:wire",
+          "weight": 6
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:electric_component",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:redstone",
+          "weight": 6
+        },
+        {
+          "type": "item",
+          "name": "minecraft:piston",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:observer",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:cobalt_ingot",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:sticky_piston",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:daylight_detector",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:hopper",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:gps_module",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:onyx_stick",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:redstone_block",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:magnet_core",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:block_breaker",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:dirter_up",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:cobblestone_gen",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:duster_up",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:red_button",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:receiver",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:comparator",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      //Tokens // Total Weight: 41
+      "rolls": 5,
+      "entries": [
+        {
+          "type": "item",
+          "name": "poke_pfe:copper_token",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:iron_token",
+          "weight": 15
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:golden_token",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:diamond_token",
+          "weight": 1
+        },
+        {
+          "type": "empty",
+          "weight": 10
+        }
+      ]
+    }
+  ]
 }

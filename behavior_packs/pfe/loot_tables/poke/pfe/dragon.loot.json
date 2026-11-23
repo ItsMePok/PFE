@@ -1,195 +1,195 @@
 {
-	"pools": [
-		{
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "item",
-					"name": "poke_pfe:diamond_token",
-					"functions": [
-						{
-							"function": "looting_enchant",
-							"count": {
-								"min": 0,
-								"max": 1
-							}
-						}
-					],
-					"weight": 3
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:windzooka",
-					"weight": 1,
-					"functions": [
-						{
-							"function": "looting_enchant",
-							"count": {
-								"min": 0,
-								"max": 1
-							}
-						},
-						{
-							"function": "enchant_randomly",
-							"treasure": true
-						}
-					]
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:windzooka",
-					"weight": 1,
-					"functions": [
-						{
-							"function": "looting_enchant",
-							"count": {
-								"min": 0,
-								"max": 1
-							}
-						}
-					]
-				}
-			]
-		},
-		{
-			"rolls": {
-				"min": 20,
-				"max": 32
-			},
-			"entries": [
-				{
-					"type": "item",
-					"name": "poke_pfe:copper_token",
-					"functions": [
-						{
-							"function": "looting_enchant",
-							"count": {
-								"min": 0,
-								"max": 1
-							}
-						}
-					]
-				}
-			]
-		},
-		{
-			"rolls": {
-				"min": 4,
-				"max": 10
-			},
-			"entries": [
-				{
-					"type": "item",
-					"name": "poke_pfe:iron_token"
-				}
-			]
-		},
-		{
-			"rolls": 20,
-			"entries": [
-				{
-					"type": "item",
-					"name": "minecraft:iron_block",
-					"weight": 10
-				},
-				{
-					"type": "item",
-					"name": "minecraft:gold_block",
-					"weight": 10
-				},
-				{
-					"type": "item",
-					"name": "minecraft:diamond_block",
-					"weight": 5
-				},
-				{
-					"type": "item",
-					"name": "minecraft:netherite_block",
-					"weight": 1
-				},
-				{
-					"type": "item",
-					"name": "minecraft:emerald_block",
-					"weight": 10
-				},
-				{
-					"type": "item",
-					"name": "minecraft:redstone_block",
-					"weight": 10
-				},
-				{
-					"type": "item",
-					"name": "minecraft:lapis_block",
-					"weight": 10
-				},
-				{
-					"type": "item",
-					"name": "minecraft:coal_block",
-					"weight": 10
-				},
-				{
-					"type": "item",
-					"name": "minecraft:copper_block",
-					"weight": 10
-				}
-			]
-		},
-		{
-			"rolls": 10,
-			"entries": [
-				{
-					"type": "item",
-					"name": "poke_pfe:cobalt_block",
-					"weight": 10,
-					"count": 2
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:scrappy_block",
-					"weight": 7,
-					"count": 2
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:onyx_block",
-					"weight": 7
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:holy_block",
-					"weight": 4
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:hellish_block",
-					"weight": 4
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:shade_block",
-					"weight": 3
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:demonic_block",
-					"weight": 1
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:medic_block",
-					"weight": 1
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:death_block",
-					"weight": 1
-				},
-				{
-					"type": "item",
-					"name": "poke_pfe:molten_block",
-					"weight": 1
-				}
-			]
-		}
-	]
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "poke_pfe:diamond_token",
+          "functions": [
+            {
+              "function": "looting_enchant",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            }
+          ],
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:windzooka",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "looting_enchant",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            },
+            {
+              "function": "enchant_randomly",
+              "treasure": true
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:windzooka",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "looting_enchant",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 20,
+        "max": 32
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "poke_pfe:copper_token",
+          "functions": [
+            {
+              "function": "looting_enchant",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 4,
+        "max": 10
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "poke_pfe:iron_token"
+        }
+      ]
+    },
+    {
+      "rolls": 20,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:iron_block",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_block",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond_block",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:netherite_block",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:emerald_block",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:redstone_block",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:lapis_block",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:coal_block",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:copper_block",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "rolls": 10,
+      "entries": [
+        {
+          "type": "item",
+          "name": "poke_pfe:cobalt_block",
+          "weight": 10,
+          "count": 2
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:scrappy_block",
+          "weight": 7,
+          "count": 2
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:onyx_block",
+          "weight": 7
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:holy_block",
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:hellish_block",
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:shade_block",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:demonic_block",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:medic_block",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:death_block",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "poke_pfe:molten_block",
+          "weight": 1
+        }
+      ]
+    }
+  ]
 }

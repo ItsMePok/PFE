@@ -344,9 +344,7 @@
             "group_identifier": {
               "name": "minecraft:itemGroup.name.glass"
             },
-            "items": [
-              "poke_pfe:cobalt_glass"
-            ]
+            "items": ["poke_pfe:cobalt_glass"]
           },
           {
             "group_identifier": {
@@ -564,10 +562,7 @@
             "group_identifier": {
               "name": "minecraft:itemGroup.name.crop"
             },
-            "items": [
-              "poke_pfe:turnip",
-              "poke_pfe:golden_turnip"
-            ]
+            "items": ["poke_pfe:turnip", "poke_pfe:golden_turnip"]
           },
           {
             "group_identifier": {
@@ -585,9 +580,7 @@
             "group_identifier": {
               "name": "minecraft:itemGroup.name.flower"
             },
-            "items": [
-              "poke_pfe:charred_poppy"
-            ]
+            "items": ["poke_pfe:charred_poppy"]
           },
           {
             "group_identifier": {
@@ -599,11 +592,7 @@
             "group_identifier": {
               "name": "minecraft:itemGroup.name.rawFood"
             },
-            "items": [
-              "poke_pfe:raw_sporefish",
-              "poke_pfe:raw_piranha",
-              "poke_pfe:raw_duck"
-            ]
+            "items": ["poke_pfe:raw_sporefish", "poke_pfe:raw_piranha", "poke_pfe:raw_duck"]
           },
           {
             "group_identifier": {
@@ -627,11 +616,11 @@
               "poke_pfe:spawn_quest_trader",
               "poke_pfe:spawn_scrapper",
               "poke_pfe:spawn_cosmetic_trader",
-              "poke_pfe:money_man",
+              "poke_pfe:spawn_money_man",
               "poke_pfe:spawn_zombken",
               "poke_pfe:spawn_knightling",
               "poke_pfe:spawn_necromancer",
-              "poke_pfe:furnace_golem",
+              "poke_pfe:spawn_furnace_golem",
               "poke_pfe:spawn_sparky",
               "poke_pfe:spawn_the_logger",
               "poke_pfe:spawn_listener",
@@ -665,11 +654,7 @@
             ]
           },
           {
-            "items": [
-              "poke_pfe:lava_sponge",
-              "poke_pfe:molten_lava_sponge",
-              "poke_pfe:duck_egg"
-            ]
+            "items": ["poke_pfe:lava_sponge", "poke_pfe:molten_lava_sponge", "poke_pfe:duck_egg"]
           }
         ]
       },
@@ -983,9 +968,7 @@
             "group_identifier": {
               "name": "minecraft:itemGroup.name.bundles"
             },
-            "items": [
-              "poke_pfe:pfe-gift_box"
-            ]
+            "items": ["poke_pfe:pfe-gift_box"]
           },
           {
             "group_identifier": {
@@ -1010,9 +993,7 @@
             "group_identifier": {
               "name": "minecraft:itemGroup.name.splashPotion"
             },
-            "items": [
-              "poke_pfe:splash_death_potion"
-            ]
+            "items": ["poke_pfe:splash_death_potion"]
           },
           {
             "group_identifier": {
@@ -1324,32 +1305,21 @@
               "name": "poke_pfe:itemGroup.name.configs",
               "icon": "poke_pfe:config"
             },
-            "items": [
-              "poke_pfe:config",
-              "poke_pfe:calendar"
-            ]
+            "items": ["poke_pfe:config", "poke_pfe:calendar"]
           },
           {
             "group_identifier": {
               "name": "poke_pfe:itemGroup.name.staffs",
               "icon": "poke_pfe:necromancer_staff"
             },
-            "items": [
-              "poke_pfe:necromancer_staff",
-              "poke_pfe:zombifier",
-              "poke_pfe:purifier"
-            ]
+            "items": ["poke_pfe:necromancer_staff", "poke_pfe:zombifier", "poke_pfe:purifier"]
           },
           {
             "group_identifier": {
               "name": "poke_pfe:itemGroup.name.armorStandTools",
               "icon": "poke_pfe:armor_stand_hider"
             },
-            "items": [
-              "poke_pfe:armor_stand_hider",
-              "poke_pfe:armor_stand_unhider",
-              "poke_pfe:armor_stand_remover"
-            ]
+            "items": ["poke_pfe:armor_stand_hider", "poke_pfe:armor_stand_unhider", "poke_pfe:armor_stand_remover"]
           },
           {
             "items": [
@@ -1564,9 +1534,7 @@
             "group_identifier": {
               "name": "minecraft:itemGroup.name.minecart"
             },
-            "items": [
-              "poke_pfe:mail_cart"
-            ]
+            "items": ["poke_pfe:mail_cart"]
           },
           {
             "group_identifier": {
@@ -1757,12 +1725,7 @@
               "name": "poke_pfe:itemGroup.name.quests",
               "icon": "poke_pfe:mine_quest"
             },
-            "items": [
-              "poke_pfe:mine_quest",
-              "poke_pfe:kill_quest",
-              "poke_pfe:farm_quest",
-              "poke_pfe:craft_quest"
-            ]
+            "items": ["poke_pfe:mine_quest", "poke_pfe:kill_quest", "poke_pfe:farm_quest", "poke_pfe:craft_quest"]
           },
           {
             "group_identifier": {
@@ -1813,10 +1776,10 @@
           {
             "group_identifier": {
               "name": "poke_pfe:itemGroup.name.gemHolder",
-              "icon": "poke_pfe:gem_holder"
+              "icon": "poke_pfe:golden_gem_holder"
             },
             "items": [
-              "poke_pfe:gem_holder",
+              "poke_pfe:golden_gem_holder",
               "poke_pfe:diamond_gem_holder",
               "poke_pfe:obsidian_gem_holder",
               "poke_pfe:ender_holder",

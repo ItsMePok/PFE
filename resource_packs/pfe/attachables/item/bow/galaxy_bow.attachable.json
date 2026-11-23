@@ -28,19 +28,13 @@
         "frame_update": "animation.poke_pfe.bow.frames"
       },
       "scripts": {
-        "initialize": [
-          "v.frame = 0;"
-        ],
+        "initialize": ["v.frame = 0;"],
         "pre_animation": [
           "variable.charge_amount = math.clamp((query.main_hand_item_max_duration - (query.main_hand_item_use_duration - query.frame_alpha + 1.0)) / 10.0, 0.0, 1.0f);"
         ],
-        "animate": [
-          "controller"
-        ]
+        "animate": ["controller"]
       },
-      "render_controllers": [
-        "controller.render.poke_pfe.bow"
-      ]
+      "render_controllers": ["controller.render.poke_pfe.bow"]
     }
   }
 }

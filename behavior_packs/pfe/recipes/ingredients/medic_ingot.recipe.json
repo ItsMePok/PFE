@@ -1,64 +1,58 @@
 {
-    "format_version": "1.20.60",
-    "minecraft:recipe_shaped": {
-        "description": {
-            "identifier": "poke_pfe:medic_ingot"
-        },
-        "tags": [
-            "crafting_table"
-        ],
-        "pattern": [
-            "VVV",
-            "VFO",
-            "OOO"
-        ],
-        "unlock": [
-            {
-                "item": "poke_pfe:godly_ingot"
-            },
-            {
-                "item": "poke_pfe:cobalt_ingot"
-            },
-            {
-                "item": "poke_pfe:cobalt_nugget"
-            },
-            {
-                "item": "poke_pfe:cobalt_block"
-            },
-            {
-                "item": "poke_pfe:raw_cobalt"
-            },
-            {
-                "item": "poke_pfe:godly_nugget"
-            },
-            {
-                "item": "poke_pfe:godly_block"
-            },
-            {
-                "item": "poke_pfe:raw_godly"
-            },
-            {
-                "item": "poke_pfe:godly_scythe"
-            },
-            {
-                "item": "poke_pfe:godly_battleaxe"
-            }
-        ],
-        "key": {
-            "F": {
-                "item": "poke_pfe:molten_slimeball"
-            },
-            "V": {
-                "item": "poke_pfe:godly_ingot"
-            },
-            "O": {
-                "item": "poke_pfe:cobalt_ingot"
-            }
-        },
-        "result": {
-            "item": "poke_pfe:medic_ingot",
-            "count": 4
-        },
-        "priority": 0
-    }
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:medic_ingot"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["VVV", "VFO", "OOO"],
+    "unlock": [
+      {
+        "item": "poke_pfe:godly_ingot"
+      },
+      {
+        "item": "poke_pfe:cobalt_ingot"
+      },
+      {
+        "item": "poke_pfe:cobalt_nugget"
+      },
+      {
+        "item": "poke_pfe:cobalt_block"
+      },
+      {
+        "item": "poke_pfe:raw_cobalt"
+      },
+      {
+        "item": "poke_pfe:godly_nugget"
+      },
+      {
+        "item": "poke_pfe:godly_block"
+      },
+      {
+        "item": "poke_pfe:raw_godly"
+      },
+      {
+        "item": "poke_pfe:godly_scythe"
+      },
+      {
+        "item": "poke_pfe:godly_battleaxe"
+      }
+    ],
+    "key": {
+      "F": {
+        "item": "poke_pfe:molten_slimeball"
+      },
+      "V": {
+        "item": "poke_pfe:godly_ingot"
+      },
+      "O": {
+        "item": "poke_pfe:cobalt_ingot"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:medic_ingot",
+      "count": 4
+    },
+    "priority": 0
+  }
 }

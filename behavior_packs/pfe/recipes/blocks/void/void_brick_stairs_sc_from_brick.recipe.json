@@ -1,19 +1,17 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:recipe_shapeless": {
-		"description": {
-			"identifier": "poke_pfe:void_brick_stairs_sc_from_brick"
-		},
-		"tags": [
-			"stonecutter"
-		],
-		"ingredients": [
-			{
-				"item": "poke_pfe:void_bricks"
-			}
-		],
-		"result": {
-			"item": "poke_pfe:void_brick_stairs"
-		}
-	}
+  "format_version": "1.16.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "poke_pfe:void_brick_stairs_sc_from_brick"
+    },
+    "tags": ["stonecutter"],
+    "ingredients": [
+      {
+        "item": "poke_pfe:void_bricks"
+      }
+    ],
+    "result": {
+      "item": "poke_pfe:void_brick_stairs"
+    }
+  }
 }

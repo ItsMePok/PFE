@@ -19,9 +19,7 @@
         "flying": "animation.actor.billboard" //2
       },
       "scripts": {
-        "animate": [
-          "flying"
-        ]
+        "animate": ["flying"]
       }
     }
   }

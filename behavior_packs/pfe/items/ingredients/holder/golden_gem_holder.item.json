@@ -1,0 +1,18 @@
+{
+  "format_version": "1.26.60",
+  "minecraft:item": {
+    "description": {
+      "identifier": "poke_pfe:golden_gem_holder",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "%poke_pfe.golden_gem_holder\n%poke_pfe.tag"
+      },
+      "poke_pfe:icon_path": "textures/poke/pfe/golden_holder",
+      "minecraft:icon": "poke_pfe_golden_gem_holder"
+    }
+  }
+}

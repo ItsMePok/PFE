@@ -1,18 +1,16 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:recipe_furnace": {
-		"description": {
-			"identifier": "poke_pfe:raw_nebula_block_smelt"
-		},
-		"tags": [
-			"blast_furnace"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:raw_nebula_block"
-			}
-		],
-		"input": "poke_pfe:raw_nebula_block",
-		"output": "poke_pfe:nebula_block"
-	}
+  "format_version": "1.16.100",
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "poke_pfe:raw_nebula_block_smelt"
+    },
+    "tags": ["blast_furnace"],
+    "unlock": [
+      {
+        "item": "poke_pfe:raw_nebula_block"
+      }
+    ],
+    "input": "poke_pfe:raw_nebula_block",
+    "output": "poke_pfe:nebula_block"
+  }
 }

@@ -1,4 +1,4 @@
-import { argv, parallel, series, task, tscTask } from "just-scripts";
+import {argv, parallel, series, task, tscTask} from "just-scripts";
 import {
   BundleTaskParameters,
   CopyTaskParameters,
@@ -47,7 +47,11 @@ task("package", series("clean-collateral", "copyArtifacts"));
 task(
   "local-deploy",
   watchTask(
-    ["scripts/**/*.ts", "behavior_packs/**/*.{json,lang,tga,ogg,png}", "resource_packs/**/*.{json,lang,tga,ogg,png}"],
+    [
+      "scripts/**/*.ts",
+      "behavior_packs/**/*.{  json,lang,tga,ogg,png}",
+      "resource_packs/**/*.{  json,lang,tga,ogg,png}",
+    ],
     series("clean-local", "build", "package")
   )
 );

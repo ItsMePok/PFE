@@ -21,8 +21,8 @@
         }
       },
       "geometry": "return array.bow_geo_frames[v.frame];",
-      "materials": [ { "*": "variable.is_enchanted ? material.enchanted : material.default" } ],
-      "textures": [ "return array.bow_texture_frames[v.frame];", "texture.enchanted" ]
+      "materials": [{"*": "variable.is_enchanted ? material.enchanted : material.default"}],
+      "textures": ["return array.bow_texture_frames[v.frame];", "texture.enchanted"]
     }
   }
 }

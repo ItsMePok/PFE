@@ -1,14 +1,11 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:recipe_furnace": {
-		"description": {
-			"identifier": "poke_pfe:raw_godly_smelt"
-		},
-		"tags": [
-			"furnace",
-			"blast_furnace"
-		],
-		"input": "poke_pfe:raw_godly",
-		"output": "poke_pfe:godly_ingot"
-	}
+  "format_version": "1.16.100",
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "poke_pfe:raw_godly_smelt"
+    },
+    "tags": ["furnace", "blast_furnace"],
+    "input": "poke_pfe:raw_godly",
+    "output": "poke_pfe:godly_ingot"
+  }
 }

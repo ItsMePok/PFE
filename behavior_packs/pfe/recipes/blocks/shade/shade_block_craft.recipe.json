@@ -1,29 +1,23 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:shade_block_craft"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"###",
-			"###",
-			"###"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:shade_ingot"
-			}
-		],
-		"key": {
-			"#": {
-				"item": "poke_pfe:shade_ingot"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:shade_block"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:shade_block_craft"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["###", "###", "###"],
+    "unlock": [
+      {
+        "item": "poke_pfe:shade_ingot"
+      }
+    ],
+    "key": {
+      "#": {
+        "item": "poke_pfe:shade_ingot"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:shade_block"
+    }
+  }
 }

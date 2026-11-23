@@ -1,18 +1,18 @@
 {
-	"format_version": "1.26.60",
-	"minecraft:item": {
-		"description": {
-			"identifier": "poke_pfe:raw_astral",
-			"menu_category": {
-				"category": "items"
-			}
-		},
-		"components": {
-			"minecraft:display_name": {
-				"value": "%poke_pfe.raw_astral\n%poke_pfe.tag"
-			},
-			"poke_pfe:icon_path": "textures/poke/pfe/raw_astral",
-			"minecraft:icon": "poke_pfe_raw_astral"
-		}
-	}
+  "format_version": "1.26.60",
+  "minecraft:item": {
+    "description": {
+      "identifier": "poke_pfe:raw_astral",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "%poke_pfe.raw_astral\n%poke_pfe.tag"
+      },
+      "poke_pfe:icon_path": "textures/poke/pfe/raw_astral",
+      "minecraft:icon": "poke_pfe_raw_astral"
+    }
+  }
 }

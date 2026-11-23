@@ -14,9 +14,7 @@
       "poke_pfe:upgradeable": {
         "dynamic_property": "poke_pfe:upgrades",
         "sneak_interact_opens_ui": false,
-        "upgrade_ids": [
-          "poke_pfe:persistence"
-        ],
+        "upgrade_ids": ["poke_pfe:persistence"],
         "version": 1
       },
       "poke_pfe:icon_path": "textures/poke/pfe/molten_battleaxe",
@@ -59,16 +57,11 @@
       "minecraft:repairable": {
         "repair_items": [
           {
-            "items": [
-              "poke_pfe:repair_core",
-              "poke_pfe:molten_block"
-            ],
+            "items": ["poke_pfe:repair_core", "poke_pfe:molten_block"],
             "repair_amount": "query.max_durability"
           },
           {
-            "items": [
-              "poke_pfe:molten_slimeball"
-            ],
+            "items": ["poke_pfe:molten_slimeball"],
             "repair_amount": "query.max_durability*0.25"
           }
         ]
@@ -78,11 +71,7 @@
         "duration": 2
       },
       "minecraft:tags": {
-        "tags": [
-          "minecraft:netherite_tier",
-          "minecraft:is_sword",
-          "poke_pfe:is_battleaxe"
-        ]
+        "tags": ["minecraft:netherite_tier", "minecraft:is_sword", "poke_pfe:is_battleaxe"]
       },
       "poke_pfe:run_command": {
         "version": 1,

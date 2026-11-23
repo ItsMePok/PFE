@@ -1,34 +1,34 @@
 {
-	"format_version": "1.26.60",
-	"minecraft:item": {
-		"description": {
-			"identifier": "poke_pfe:red_button",
-			"menu_category": {
-				"category": "items"
-			}
-		},
-		"components": {
-			"minecraft:display_name": {
-				"value": "%poke_pfe.red_button\n%poke_pfe.tag"
-			},
-			"poke_pfe:icon_path": "textures/poke/pfe/red_button",
-			"minecraft:icon": "poke_pfe_red_button",
-			"poke_pfe:run_command": {
-				"version": 1,
-				"command": "stopsound @s",
-				"take_durability": true,
-				"trigger_cooldown": true,
-				"can_be_disabled": false
-			},
-			"poke_pfe:normalMining": {},
-			"minecraft:use_modifiers": {
-				"use_duration": 0,
-				"movement_modifier": 1
-			},
-			"minecraft:cooldown": {
-				"category": "poke_pfe:red_button",
-				"duration": 0.2
-			}
-		}
-	}
+  "format_version": "1.26.60",
+  "minecraft:item": {
+    "description": {
+      "identifier": "poke_pfe:red_button",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "%poke_pfe.red_button\n%poke_pfe.tag"
+      },
+      "poke_pfe:icon_path": "textures/poke/pfe/red_button",
+      "minecraft:icon": "poke_pfe_red_button",
+      "poke_pfe:run_command": {
+        "version": 1,
+        "command": "stopsound @s",
+        "take_durability": true,
+        "trigger_cooldown": true,
+        "can_be_disabled": false
+      },
+      "poke_pfe:normalMining": {},
+      "minecraft:use_modifiers": {
+        "use_duration": 0,
+        "movement_modifier": 1
+      },
+      "minecraft:cooldown": {
+        "category": "poke_pfe:red_button",
+        "duration": 0.2
+      }
+    }
+  }
 }

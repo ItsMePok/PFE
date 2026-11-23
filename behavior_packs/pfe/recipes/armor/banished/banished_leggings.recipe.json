@@ -1,29 +1,23 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:banished_leggings"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"XXX",
-			"X X",
-			"X X"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:banished_star"
-			}
-		],
-		"key": {
-			"X": {
-				"item": "poke_pfe:banished_star_x4"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:banished_leggings"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:banished_leggings"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["XXX", "X X", "X X"],
+    "unlock": [
+      {
+        "item": "poke_pfe:banished_star"
+      }
+    ],
+    "key": {
+      "X": {
+        "item": "poke_pfe:banished_star_x4"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:banished_leggings"
+    }
+  }
 }

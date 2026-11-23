@@ -5,9 +5,7 @@
       "identifier": "poke_pfe:striker_sticker",
       "traits": {
         "minecraft:placement_position": {
-          "enabled_states": [
-            "minecraft:block_face"
-          ]
+          "enabled_states": ["minecraft:block_face"]
         }
       }
     },
@@ -39,16 +37,8 @@
         }
       },
       "minecraft:selection_box": {
-        "origin": [
-          -3.5,
-          0,
-          -7.5
-        ],
-        "size": [
-          7,
-          1,
-          15
-        ]
+        "origin": [-3.5, 0, -7.5],
+        "size": [7, 1, 15]
       },
       "minecraft:collision_box": false,
       "minecraft:map_color": "#f0f0f0"
@@ -58,11 +48,7 @@
         "condition": "query.block_state('minecraft:block_face') == 'up'",
         "components": {
           "minecraft:transformation": {
-            "rotation": [
-              0,
-              0,
-              0
-            ]
+            "rotation": [0, 0, 0]
           }
         }
       },
@@ -70,11 +56,7 @@
         "condition": "query.block_state('minecraft:block_face') == 'down'",
         "components": {
           "minecraft:transformation": {
-            "rotation": [
-              0,
-              0,
-              180
-            ]
+            "rotation": [0, 0, 180]
           }
         }
       },
@@ -82,11 +64,7 @@
         "condition": "query.block_state('minecraft:block_face') == 'east'",
         "components": {
           "minecraft:transformation": {
-            "rotation": [
-              0,
-              270,
-              270
-            ]
+            "rotation": [0, 270, 270]
           }
         }
       },
@@ -94,11 +72,7 @@
         "condition": "query.block_state('minecraft:block_face') == 'west'",
         "components": {
           "minecraft:transformation": {
-            "rotation": [
-              0,
-              90,
-              90
-            ]
+            "rotation": [0, 90, 90]
           }
         }
       },
@@ -106,11 +80,7 @@
         "condition": "query.block_state('minecraft:block_face') == 'south'",
         "components": {
           "minecraft:transformation": {
-            "rotation": [
-              90,
-              0,
-              180
-            ]
+            "rotation": [90, 0, 180]
           }
         }
       },
@@ -118,11 +88,7 @@
         "condition": "query.block_state('minecraft:block_face') == 'north'",
         "components": {
           "minecraft:transformation": {
-            "rotation": [
-              270,
-              0,
-              0
-            ]
+            "rotation": [270, 0, 0]
           }
         }
       }

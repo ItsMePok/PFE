@@ -1,19 +1,17 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:recipe_shapeless": {
-		"description": {
-			"identifier": "poke_pfe:honey_tile_stairs_sc_f_hc"
-		},
-		"tags": [
-			"stonecutter"
-		],
-		"ingredients": [
-			{
-				"item": "minecraft:honeycomb_block"
-			}
-		],
-		"result": {
-			"item": "poke_pfe:honey_tile_stairs"
-		}
-	}
+  "format_version": "1.16.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "poke_pfe:honey_tile_stairs_sc_f_hc"
+    },
+    "tags": ["stonecutter"],
+    "ingredients": [
+      {
+        "item": "minecraft:honeycomb_block"
+      }
+    ],
+    "result": {
+      "item": "poke_pfe:honey_tile_stairs"
+    }
+  }
 }

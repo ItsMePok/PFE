@@ -1,35 +1,29 @@
 {
-	"format_version": "1.20.10",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:grilled_cheese"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:toast"
-			},
-			{
-				"item": "poke_pfe:cheese"
-			}
-		],
-		"key": {
-			"X": {
-				"item": "poke_pfe:toast"
-			},
-			"Y": {
-				"item": "poke_pfe:cheese"
-			}
-		},
-		"pattern": [
-			"X",
-			"Y",
-			"X"
-		],
-		"result": {
-			"item": "poke_pfe:grilled_cheese"
-		}
-	}
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:grilled_cheese"
+    },
+    "tags": ["crafting_table"],
+    "unlock": [
+      {
+        "item": "poke_pfe:toast"
+      },
+      {
+        "item": "poke_pfe:cheese"
+      }
+    ],
+    "key": {
+      "X": {
+        "item": "poke_pfe:toast"
+      },
+      "Y": {
+        "item": "poke_pfe:cheese"
+      }
+    },
+    "pattern": ["X", "Y", "X"],
+    "result": {
+      "item": "poke_pfe:grilled_cheese"
+    }
+  }
 }

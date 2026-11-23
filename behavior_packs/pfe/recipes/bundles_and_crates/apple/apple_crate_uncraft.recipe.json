@@ -1,36 +1,32 @@
 {
-    "format_version": "1.20.60",
-    "minecraft:recipe_shaped": {
-        "tags": [
-            "crafting_table"
-        ],
-        "description": {
-            "identifier": "poke_pfe:apple_crate_uncraft"
-        },
-        "unlock": [
-            {
-                "item": "poke_pfe:empty_crate"
-            },
-            {
-                "item": "poke_pfe:apple_crate"
-            }
-        ],
-        "pattern": [
-            "#"
-        ],
-        "key": {
-            "#": {
-                "item": "poke_pfe:apple_crate"
-            }
-        },
-        "result": [
-            {
-                "item": "minecraft:apple",
-                "count": 8
-            },
-            {
-                "item": "poke_pfe:empty_crate"
-            }
-        ]
-    }
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "tags": ["crafting_table"],
+    "description": {
+      "identifier": "poke_pfe:apple_crate_uncraft"
+    },
+    "unlock": [
+      {
+        "item": "poke_pfe:empty_crate"
+      },
+      {
+        "item": "poke_pfe:apple_crate"
+      }
+    ],
+    "pattern": ["#"],
+    "key": {
+      "#": {
+        "item": "poke_pfe:apple_crate"
+      }
+    },
+    "result": [
+      {
+        "item": "minecraft:apple",
+        "count": 8
+      },
+      {
+        "item": "poke_pfe:empty_crate"
+      }
+    ]
+  }
 }

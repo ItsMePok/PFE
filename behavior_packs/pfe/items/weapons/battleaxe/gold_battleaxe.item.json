@@ -14,9 +14,7 @@
       "poke_pfe:upgradeable": {
         "dynamic_property": "poke_pfe:upgrades",
         "sneak_interact_opens_ui": false,
-        "upgrade_ids": [
-          "poke_pfe:persistence"
-        ],
+        "upgrade_ids": ["poke_pfe:persistence"],
         "version": 1
       },
       "poke_pfe:icon_path": "textures/poke/pfe/golden_battleaxe",
@@ -60,22 +58,15 @@
       "minecraft:repairable": {
         "repair_items": [
           {
-            "items": [
-              "poke_pfe:repair_core",
-              "minecraft:gold_block"
-            ],
+            "items": ["poke_pfe:repair_core", "minecraft:gold_block"],
             "repair_amount": "query.max_durability"
           },
           {
-            "items": [
-              "minecraft:gold_ingot"
-            ],
+            "items": ["minecraft:gold_ingot"],
             "repair_amount": "query.max_durability*0.25"
           },
           {
-            "items": [
-              "minecraft:gold_nugget"
-            ],
+            "items": ["minecraft:gold_nugget"],
             "repair_amount": "query.max_durability*0.028"
           }
         ]
@@ -85,11 +76,7 @@
         "duration": 2
       },
       "minecraft:tags": {
-        "tags": [
-          "minecraft:golden_tier",
-          "minecraft:is_sword",
-          "poke_pfe:is_battleaxe"
-        ]
+        "tags": ["minecraft:golden_tier", "minecraft:is_sword", "poke_pfe:is_battleaxe"]
       },
       "poke_pfe:run_command": {
         "version": 1,

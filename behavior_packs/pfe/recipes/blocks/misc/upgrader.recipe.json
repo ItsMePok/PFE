@@ -9,9 +9,7 @@
       }
     },
     "group": "crafting",
-    "tags": [
-      "crafting_table"
-    ],
+    "tags": ["crafting_table"],
     "unlock": [
       {
         "item": "poke_pfe:cobalt_ingot"
@@ -26,11 +24,7 @@
         "item": "poke_pfe:upgrade_core"
       }
     ],
-    "pattern": [
-      "XCX",
-      "CAC",
-      "XUX"
-    ],
+    "pattern": ["XCX", "CAC", "XUX"],
     "key": {
       "C": {
         "item": "poke_pfe:cobalt_ingot"

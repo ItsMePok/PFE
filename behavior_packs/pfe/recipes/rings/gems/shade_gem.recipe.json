@@ -1,44 +1,38 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:shade_gem"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"key": {
-			"D": {
-				"item": "poke_pfe:warp_ring"
-			},
-			"R": {
-				"item": "poke_pfe:radium_ingot"
-			},
-			"X": {
-				"item": "poke_pfe:shade_ingot"
-			}
-		},
-		"unlock": [
-			{
-				"item": "poke_pfe:ender_holder"
-			},
-			{
-				"item": "poke_pfe:warp_ring"
-			},
-			{
-				"item": "poke_pfe:radium_ingot"
-			},
-			{
-				"item": "poke_pfe:shade_ingot"
-			}
-		],
-		"pattern": [
-			"XRX",
-			"RDR",
-			"XRX"
-		],
-		"result": {
-			"item": "poke_pfe:shade_gem"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:shade_gem"
+    },
+    "tags": ["crafting_table"],
+    "key": {
+      "D": {
+        "item": "poke_pfe:warp_ring"
+      },
+      "R": {
+        "item": "poke_pfe:radium_ingot"
+      },
+      "X": {
+        "item": "poke_pfe:shade_ingot"
+      }
+    },
+    "unlock": [
+      {
+        "item": "poke_pfe:ender_holder"
+      },
+      {
+        "item": "poke_pfe:warp_ring"
+      },
+      {
+        "item": "poke_pfe:radium_ingot"
+      },
+      {
+        "item": "poke_pfe:shade_ingot"
+      }
+    ],
+    "pattern": ["XRX", "RDR", "XRX"],
+    "result": {
+      "item": "poke_pfe:shade_gem"
+    }
+  }
 }

@@ -1,14 +1,12 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:recipe_brewing_mix": {
-		"description": {
-			"identifier": "poke_pfe:root_beer"
-		},
-		"tags": [
-			"brewing_stand"
-		],
-		"input": "poke_pfe:sugar_water",
-		"reagent": "beetroot",
-		"output": "poke_pfe:root_beer"
-	}
+  "format_version": "1.16.100",
+  "minecraft:recipe_brewing_mix": {
+    "description": {
+      "identifier": "poke_pfe:root_beer"
+    },
+    "tags": ["brewing_stand"],
+    "input": "poke_pfe:sugar_water",
+    "reagent": "beetroot",
+    "output": "poke_pfe:root_beer"
+  }
 }

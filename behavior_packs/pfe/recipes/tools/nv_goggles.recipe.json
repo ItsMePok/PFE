@@ -1,46 +1,41 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:nv_goggles"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"WEW",
-			"SGS"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:shade_ingot"
-			},
-			{
-				"item": "poke_pfe:wire"
-			},
-			{
-				"item": "poke_pfe:electric_component"
-			},
-			{
-				"item": "poke_pfe:goggles"
-			}
-		],
-		"key": {
-			"S": {
-				"item": "poke_pfe:shade_ingot"
-			},
-			"W": {
-				"item": "poke_pfe:wire"
-			},
-			"E": {
-				"item": "poke_pfe:electric_component"
-			},
-			"G": {
-				"item": "poke_pfe:goggles"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:night_vision_goggles"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:nv_goggles"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["WEW", "SGS"],
+    "unlock": [
+      {
+        "item": "poke_pfe:shade_ingot"
+      },
+      {
+        "item": "poke_pfe:wire"
+      },
+      {
+        "item": "poke_pfe:electric_component"
+      },
+      {
+        "item": "poke_pfe:goggles"
+      }
+    ],
+    "key": {
+      "S": {
+        "item": "poke_pfe:shade_ingot"
+      },
+      "W": {
+        "item": "poke_pfe:wire"
+      },
+      "E": {
+        "item": "poke_pfe:electric_component"
+      },
+      "G": {
+        "item": "poke_pfe:goggles"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:night_vision_goggles"
+    }
+  }
 }
