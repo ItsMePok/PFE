@@ -1,40 +1,35 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:poke_calcite"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:cobbled_limestone"
-			},
-			{
-				"item": "stone",
-				"data": 3
-			},
-			{
-				"item": "poke_pfe:limestone"
-			}
-		],
-		"pattern": [
-			"#D",
-			"D#"
-		],
-		"key": {
-			"#": {
-				"item": "poke_pfe:cobbled_limestone"
-			},
-			"D": {
-				"item": "stone",
-				"data": 3
-			}
-		},
-		"result": {
-			"item": "calcite",
-			"count": 4
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:poke_calcite"
+    },
+    "tags": ["crafting_table"],
+    "unlock": [
+      {
+        "item": "poke_pfe:cobbled_limestone"
+      },
+      {
+        "item": "minecraft:stone",
+        "data": 3
+      },
+      {
+        "item": "poke_pfe:limestone"
+      }
+    ],
+    "pattern": ["#D", "D#"],
+    "key": {
+      "#": {
+        "item": "poke_pfe:cobbled_limestone"
+      },
+      "D": {
+        "item": "minecraft:stone",
+        "data": 3
+      }
+    },
+    "result": {
+      "item": "minecraft:calcite",
+      "count": 4
+    }
+  }
 }

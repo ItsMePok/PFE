@@ -1,44 +1,38 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:poke_reinforced_deepslate"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:void_ingot"
-			},
-			{
-				"item": "bedrock"
-			},
-			{
-				"item": "deepslate"
-			},
-			{
-				"item": "poke_pfe:ban_hammer"
-			}
-		],
-		"pattern": [
-			"BGB",
-			"G#G",
-			"BGB"
-		],
-		"key": {
-			"#": {
-				"item": "deepslate"
-			},
-			"B": {
-				"item": "poke_pfe:void_ingot"
-			},
-			"G": {
-				"item": "bedrock"
-			}
-		},
-		"result": {
-			"item": "reinforced_deepslate"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:poke_reinforced_deepslate"
+    },
+    "tags": ["crafting_table"],
+    "unlock": [
+      {
+        "item": "poke_pfe:void_ingot"
+      },
+      {
+        "item": "minecraft:bedrock"
+      },
+      {
+        "item": "minecraft:deepslate"
+      },
+      {
+        "item": "poke_pfe:ban_hammer"
+      }
+    ],
+    "pattern": ["BGB", "G#G", "BGB"],
+    "key": {
+      "#": {
+        "item": "minecraft:deepslate"
+      },
+      "B": {
+        "item": "poke_pfe:void_ingot"
+      },
+      "G": {
+        "item": "minecraft:bedrock"
+      }
+    },
+    "result": {
+      "item": "minecraft:reinforced_deepslate"
+    }
+  }
 }

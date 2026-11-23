@@ -1,32 +1,26 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:cactus_chestplate"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"N N",
-			"BBB",
-			"BBB"
-		],
-		"key": {
-			"N": {
-				"item": "cactus"
-			},
-			"B": {
-				"item": "cactus"
-			}
-		},
-		"unlock": [
-			{
-				"item": "cactus"
-			}
-		],
-		"result": {
-			"item": "poke_pfe:cactus_chestplate"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:cactus_chestplate"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["N N", "BBB", "BBB"],
+    "key": {
+      "N": {
+        "item": "minecraft:cactus"
+      },
+      "B": {
+        "item": "minecraft:cactus"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:cactus"
+      }
+    ],
+    "result": {
+      "item": "poke_pfe:cactus_chestplate"
+    }
+  }
 }

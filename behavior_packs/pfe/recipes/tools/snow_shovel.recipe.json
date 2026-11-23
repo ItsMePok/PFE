@@ -1,38 +1,32 @@
 {
-    "format_version": "1.20.60",
-    "minecraft:recipe_shaped": {
-        "description": {
-            "identifier": "poke_pfe:snow_shovel"
-        },
-        "tags": [
-            "crafting_table"
-        ],
-        "pattern": [
-            " PP",
-            " SP",
-            "P  "
-        ],
-        "unlock": [
-            {
-                "item": "poke_pfe:plastic"
-            },
-            {
-                "item": "snow"
-            },
-            {
-                "item": "snowball"
-            }
-        ],
-        "key": {
-            "S": {
-                "item": "minecraft:stick"
-            },
-            "P": {
-                "item": "poke_pfe:plastic"
-            }
-        },
-        "result": {
-            "item": "poke_pfe:snow_shovel"
-        }
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:snow_shovel"
+    },
+    "tags": ["crafting_table"],
+    "pattern": [" PP", " SP", "P  "],
+    "unlock": [
+      {
+        "item": "poke_pfe:plastic"
+      },
+      {
+        "item": "minecraft:snow"
+      },
+      {
+        "item": "minecraft:snowball"
+      }
+    ],
+    "key": {
+      "S": {
+        "item": "minecraft:stick"
+      },
+      "P": {
+        "item": "poke_pfe:plastic"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:snow_shovel"
     }
+  }
 }

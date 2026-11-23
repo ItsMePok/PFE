@@ -1,38 +1,32 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:golden_scythe"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"ZZX",
-			" # ",
-			"Y  "
-		],
-		"unlock": [
-			{
-				"item": "gold_ingot"
-			}
-		],
-		"key": {
-			"Y": {
-				"item": "gold_block"
-			},
-			"X": {
-				"item": "gold_block"
-			},
-			"Z": {
-				"item": "gold_ingot"
-			},
-			"#": {
-				"item": "stick"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:golden_scythe"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:golden_scythe"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["ZZX", " # ", "Y  "],
+    "unlock": [
+      {
+        "item": "minecraft:gold_ingot"
+      }
+    ],
+    "key": {
+      "Y": {
+        "item": "minecraft:gold_block"
+      },
+      "X": {
+        "item": "minecraft:gold_block"
+      },
+      "Z": {
+        "item": "minecraft:gold_ingot"
+      },
+      "#": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:golden_scythe"
+    }
+  }
 }

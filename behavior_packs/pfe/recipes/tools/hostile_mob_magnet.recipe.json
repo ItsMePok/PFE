@@ -1,53 +1,47 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:hostile_mob_magnet"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"HED",
-			"PMS",
-			"DGH"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:demonic_ingot"
-			},
-			{
-				"item": "poke_pfe:magnet_core"
-			},
-			{
-				"item": "poke_pfe:cobalt_ingot"
-			}
-		],
-		"key": {
-			"H": {
-				"item": "poke_pfe:hellish_ingot"
-			},
-			"E": {
-				"item": "ender_pearl"
-			},
-			"D": {
-				"item": "poke_pfe:demonic_ingot"
-			},
-			"P": {
-				"item": "phantom_membrane"
-			},
-			"M": {
-				"item": "poke_pfe:item_magnet"
-			},
-			"G": {
-				"item": "ghast_tear"
-			},
-			"S": {
-				"item": "nautilus_shell"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:hostile_mob_magnet"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:hostile_mob_magnet"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["HED", "PMS", "DGH"],
+    "unlock": [
+      {
+        "item": "poke_pfe:demonic_ingot"
+      },
+      {
+        "item": "poke_pfe:magnet_core"
+      },
+      {
+        "item": "poke_pfe:cobalt_ingot"
+      }
+    ],
+    "key": {
+      "H": {
+        "item": "poke_pfe:hellish_ingot"
+      },
+      "E": {
+        "item": "minecraft:ender_pearl"
+      },
+      "D": {
+        "item": "poke_pfe:demonic_ingot"
+      },
+      "P": {
+        "item": "minecraft:phantom_membrane"
+      },
+      "M": {
+        "item": "poke_pfe:item_magnet"
+      },
+      "G": {
+        "item": "minecraft:ghast_tear"
+      },
+      "S": {
+        "item": "minecraft:nautilus_shell"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:hostile_mob_magnet"
+    }
+  }
 }

@@ -1,32 +1,26 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:warp_gem"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"key": {
-			"D": {
-				"item": "diamond"
-			},
-			"X": {
-				"item": "poke_pfe:shade_ingot"
-			}
-		},
-		"unlock": [
-			{
-				"item": "poke_pfe:ender_holder"
-			}
-		],
-		"pattern": [
-			"XXX",
-			"XDX",
-			"XXX"
-		],
-		"result": {
-			"item": "poke_pfe:warp_gem"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:warp_gem"
+    },
+    "tags": ["crafting_table"],
+    "key": {
+      "D": {
+        "item": "minecraft:diamond"
+      },
+      "X": {
+        "item": "poke_pfe:shade_ingot"
+      }
+    },
+    "unlock": [
+      {
+        "item": "poke_pfe:ender_holder"
+      }
+    ],
+    "pattern": ["XXX", "XDX", "XXX"],
+    "result": {
+      "item": "poke_pfe:warp_gem"
+    }
+  }
 }

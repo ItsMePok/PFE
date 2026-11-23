@@ -1,35 +1,29 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:iron_battleaxe"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"DDD",
-			"DSD",
-			" B "
-		],
-		"unlock": [
-			{
-				"item": "iron_ingot"
-			}
-		],
-		"key": {
-			"B": {
-				"item": "iron_block"
-			},
-			"D": {
-				"item": "iron_ingot"
-			},
-			"S": {
-				"item": "stick"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:iron_battleaxe"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:iron_battleaxe"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["DDD", "DSD", " B "],
+    "unlock": [
+      {
+        "item": "minecraft:iron_ingot"
+      }
+    ],
+    "key": {
+      "B": {
+        "item": "minecraft:iron_block"
+      },
+      "D": {
+        "item": "minecraft:iron_ingot"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:iron_battleaxe"
+    }
+  }
 }

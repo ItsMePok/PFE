@@ -1,39 +1,33 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:diamond_haxel"
-		},
-		"group": "haxel",
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"N#N",
-			"#i#",
-			"N#N"
-		],
-		"unlock": [
-			{
-				"item": "diamond"
-			},
-			{
-				"item": "poke_pfe:emerald_haxel"
-			}
-		],
-		"key": {
-			"i": {
-				"item": "poke_pfe:emerald_haxel"
-			},
-			"#": {
-				"item": "diamond"
-			},
-			"N": {
-				"item": "diamond_block"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:diamond_haxel"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:diamond_haxel"
+    },
+    "group": "haxel",
+    "tags": ["crafting_table"],
+    "pattern": ["N#N", "#i#", "N#N"],
+    "unlock": [
+      {
+        "item": "minecraft:diamond"
+      },
+      {
+        "item": "poke_pfe:emerald_haxel"
+      }
+    ],
+    "key": {
+      "i": {
+        "item": "poke_pfe:emerald_haxel"
+      },
+      "#": {
+        "item": "minecraft:diamond"
+      },
+      "N": {
+        "item": "minecraft:diamond_block"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:diamond_haxel"
+    }
+  }
 }

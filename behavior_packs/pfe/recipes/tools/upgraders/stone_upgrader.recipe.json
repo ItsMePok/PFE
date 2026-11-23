@@ -1,43 +1,37 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:stone_upgrader"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			" SS",
-			"scS",
-			"Ts "
-		],
-		"unlock": [
-			{
-				"item": "cobblestone"
-			},
-			{
-				"item": "poke_pfe:diamond_upgrade_core"
-			}
-		],
-		"key": {
-			"S": {
-				"item": "smooth_stone"
-			},
-			"s": {
-				"item": "stone"
-			},
-			"c": {
-				"item": "poke_pfe:diamond_upgrade_core"
-			},
-			"T": {
-				"item": "stick"
-			}
-		},
-		"result": [
-			{
-				"item": "poke_pfe:stone_upgrader"
-			}
-		]
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:stone_upgrader"
+    },
+    "tags": ["crafting_table"],
+    "pattern": [" SS", "scS", "Ts "],
+    "unlock": [
+      {
+        "item": "minecraft:cobblestone"
+      },
+      {
+        "item": "poke_pfe:diamond_upgrade_core"
+      }
+    ],
+    "key": {
+      "S": {
+        "item": "minecraft:smooth_stone"
+      },
+      "s": {
+        "item": "minecraft:stone"
+      },
+      "c": {
+        "item": "poke_pfe:diamond_upgrade_core"
+      },
+      "T": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": [
+      {
+        "item": "poke_pfe:stone_upgrader"
+      }
+    ]
+  }
 }

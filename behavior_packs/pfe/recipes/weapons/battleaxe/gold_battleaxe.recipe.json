@@ -1,38 +1,32 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:golden_battleaxe"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"DDD",
-			"DSD",
-			" B "
-		],
-		"unlock": [
-			{
-				"item": "gold_ingot"
-			},
-			{
-				"item": "gold_block"
-			}
-		],
-		"key": {
-			"B": {
-				"item": "gold_block"
-			},
-			"D": {
-				"item": "gold_ingot"
-			},
-			"S": {
-				"item": "stick"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:golden_battleaxe"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:golden_battleaxe"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["DDD", "DSD", " B "],
+    "unlock": [
+      {
+        "item": "minecraft:gold_ingot"
+      },
+      {
+        "item": "minecraft:gold_block"
+      }
+    ],
+    "key": {
+      "B": {
+        "item": "minecraft:gold_block"
+      },
+      "D": {
+        "item": "minecraft:gold_ingot"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:golden_battleaxe"
+    }
+  }
 }

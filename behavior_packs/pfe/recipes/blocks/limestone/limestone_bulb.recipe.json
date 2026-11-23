@@ -1,39 +1,33 @@
 {
-    "format_version": "1.20.60",
-    "minecraft:recipe_shaped": {
-        "description": {
-            "identifier": "poke_pfe:limestone_bulb"
-        },
-        "tags": [
-            "crafting_table"
-        ],
-        "unlock": [
-            {
-                "item": "poke_pfe:limestone"
-            },
-            {
-                "item": "poke_pfe:cobbled_limestone"
-            },
-            {
-                "item": "poke_pfe:polished_limestone"
-            }
-        ],
-        "key": {
-            "G": {
-                "item": "poke_pfe:polished_limestone"
-            },
-            "C": {
-                "item": "glowstone"
-            }
-        },
-        "pattern": [
-            "GGG",
-            "GCG",
-            "GGG"
-        ],
-        "result": {
-            "item": "poke_pfe:limestone_bulb",
-            "count": 6
-        }
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:limestone_bulb"
+    },
+    "tags": ["crafting_table"],
+    "unlock": [
+      {
+        "item": "poke_pfe:limestone"
+      },
+      {
+        "item": "poke_pfe:cobbled_limestone"
+      },
+      {
+        "item": "poke_pfe:polished_limestone"
+      }
+    ],
+    "key": {
+      "G": {
+        "item": "poke_pfe:polished_limestone"
+      },
+      "C": {
+        "item": "minecraft:glowstone"
+      }
+    },
+    "pattern": ["GGG", "GCG", "GGG"],
+    "result": {
+      "item": "poke_pfe:limestone_bulb",
+      "count": 6
     }
+  }
 }

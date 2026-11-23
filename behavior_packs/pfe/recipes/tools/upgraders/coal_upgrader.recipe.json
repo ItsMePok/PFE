@@ -1,39 +1,33 @@
 {
-    "format_version": "1.20.60",
-    "minecraft:recipe_shaped": {
-        "description": {
-            "identifier": "poke_pfe:coal_upgrader"
-        },
-        "tags": [
-            "crafting_table"
-        ],
-        "group": "upgraders",
-        "pattern": [
-            " XX",
-            "XYX",
-            "ZX "
-        ],
-        "unlock": [
-            {
-                "item": "coal"
-            },
-            {
-                "item": "poke_pfe:diamond_upgrade_core"
-            }
-        ],
-        "key": {
-            "X": {
-                "item": "coal_block"
-            },
-            "Y": {
-                "item": "poke_pfe:diamond_upgrade_core"
-            },
-            "Z": {
-                "item": "stick"
-            }
-        },
-        "result": {
-            "item": "poke_pfe:coal_upgrader"
-        }
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:coal_upgrader"
+    },
+    "tags": ["crafting_table"],
+    "group": "upgraders",
+    "pattern": [" XX", "XYX", "ZX "],
+    "unlock": [
+      {
+        "item": "minecraft:coal"
+      },
+      {
+        "item": "poke_pfe:diamond_upgrade_core"
+      }
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:coal_block"
+      },
+      "Y": {
+        "item": "poke_pfe:diamond_upgrade_core"
+      },
+      "Z": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:coal_upgrader"
     }
+  }
 }

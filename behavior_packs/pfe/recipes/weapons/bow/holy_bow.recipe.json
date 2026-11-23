@@ -1,44 +1,38 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:holy_burstbow"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			" HS",
-			"H S",
-			" HS"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:holy_ingot"
-			},
-			{
-				"item": "poke_pfe:holy_arrow"
-			},
-			{
-				"item": "bow"
-			},
-			{
-				"item": "arrow"
-			},
-			{
-				"item": "minecraft:string"
-			}
-		],
-		"key": {
-			"H": {
-				"item": "poke_pfe:holy_ingot"
-			},
-			"S": {
-				"item": "minecraft:string"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:holy_burstbow"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:holy_burstbow"
+    },
+    "tags": ["crafting_table"],
+    "pattern": [" HS", "H S", " HS"],
+    "unlock": [
+      {
+        "item": "poke_pfe:holy_ingot"
+      },
+      {
+        "item": "poke_pfe:holy_arrow"
+      },
+      {
+        "item": "minecraft:bow"
+      },
+      {
+        "item": "minecraft:arrow"
+      },
+      {
+        "item": "minecraft:string"
+      }
+    ],
+    "key": {
+      "H": {
+        "item": "poke_pfe:holy_ingot"
+      },
+      "S": {
+        "item": "minecraft:string"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:holy_burstbow"
+    }
+  }
 }

@@ -1,40 +1,35 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:milk_bottle"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"unlock": [
-			{
-				"item": "milk_bucket"
-			},
-			{
-				"item": "glass_bottle"
-			}
-		],
-		"pattern": [
-			"MB",
-			"BB"
-		],
-		"key": {
-			"M": {
-				"item": "milk_bucket"
-			},
-			"B": {
-				"item": "glass_bottle"
-			}
-		},
-		"result": [
-			{
-				"item": "poke_pfe:milk_bottle",
-				"count": 3
-			},
-			{
-				"item": "minecraft:bucket"
-			}
-		]
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:milk_bottle"
+    },
+    "tags": ["crafting_table"],
+    "unlock": [
+      {
+        "item": "minecraft:milk_bucket"
+      },
+      {
+        "item": "minecraft:glass_bottle"
+      }
+    ],
+    "pattern": ["MB", "BB"],
+    "key": {
+      "M": {
+        "item": "minecraft:milk_bucket"
+      },
+      "B": {
+        "item": "minecraft:glass_bottle"
+      }
+    },
+    "result": [
+      {
+        "item": "poke_pfe:milk_bottle",
+        "count": 3
+      },
+      {
+        "item": "minecraft:bucket"
+      }
+    ]
+  }
 }

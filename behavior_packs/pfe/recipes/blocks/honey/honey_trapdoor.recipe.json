@@ -1,35 +1,30 @@
 {
-	"format_version": "1.21.10",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:honey_trapdoor"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:honey_bricks"
-			},
-			{
-				"item": "honeycomb"
-			},
-			{
-				"item": "honeycomb_block"
-			}
-		],
-		"key": {
-			"C": {
-				"item": "honeycomb"
-			}
-		},
-		"pattern": [
-			"CCC",
-			"CCC"
-		],
-		"result": {
-			"item": "poke_pfe:honey_trapdoor",
-			"count": 3
-		}
-	}
+  "format_version": "1.21.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:honey_trapdoor"
+    },
+    "tags": ["crafting_table"],
+    "unlock": [
+      {
+        "item": "poke_pfe:honey_bricks"
+      },
+      {
+        "item": "minecraft:honeycomb"
+      },
+      {
+        "item": "minecraft:honeycomb_block"
+      }
+    ],
+    "key": {
+      "C": {
+        "item": "minecraft:honeycomb"
+      }
+    },
+    "pattern": ["CCC", "CCC"],
+    "result": {
+      "item": "poke_pfe:honey_trapdoor",
+      "count": 3
+    }
+  }
 }

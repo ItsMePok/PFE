@@ -1,28 +1,23 @@
 {
-    "format_version": "1.20.60",
-    "minecraft:recipe_shaped": {
-        "description": {
-            "identifier": "poke_pfe:scrappy_block_craft"
-        },
-        "tags": [
-            "crafting_table"
-        ],
-        "key": {
-            "X": {
-                "item": "netherite_scrap"
-            }
-        },
-        "unlock": [
-            {
-                "item": "netherite_scrap"
-            }
-        ],
-        "pattern": [
-            "XX",
-            "XX"
-        ],
-        "result": {
-            "item": "poke_pfe:scrappy_block"
-        }
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:scrappy_block_craft"
+    },
+    "tags": ["crafting_table"],
+    "key": {
+      "X": {
+        "item": "minecraft:netherite_scrap"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:netherite_scrap"
+      }
+    ],
+    "pattern": ["XX", "XX"],
+    "result": {
+      "item": "poke_pfe:scrappy_block"
     }
+  }
 }

@@ -1,28 +1,23 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:cobblestone_helmet"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"XXX",
-			"X X"
-		],
-		"unlock": [
-			{
-				"item": "cobblestone"
-			}
-		],
-		"key": {
-			"X": {
-				"item": "cobblestone"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:stone_helmet"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:cobblestone_helmet"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["XXX", "X X"],
+    "unlock": [
+      {
+        "item": "minecraft:cobblestone"
+      }
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:cobblestone"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:stone_helmet"
+    }
+  }
 }

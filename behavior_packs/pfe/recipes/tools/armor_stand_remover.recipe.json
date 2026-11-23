@@ -1,53 +1,47 @@
 {
-    "format_version": "1.20.60",
-    "minecraft:recipe_shaped": {
-        "description": {
-            "identifier": "poke_pfe:armor_stand_remover"
-        },
-        "tags": [
-            "crafting_table"
-        ],
-        "pattern": [
-            "PKP",
-            "EBE",
-            "PSP"
-        ],
-        "unlock": [
-            {
-                "item": "poke_pfe:pocket_knife"
-            },
-            {
-                "item": "poke_pfe:plastic"
-            },
-            {
-                "item": "poke_pfe:electric_component"
-            },
-            {
-                "item": "armor_stand"
-            },
-            {
-                "item": "poke_pfe:red_button"
-            }
-        ],
-        "key": {
-            "K": {
-                "item": "poke_pfe:pocket_knife"
-            },
-            "P": {
-                "item": "poke_pfe:plastic"
-            },
-            "E": {
-                "item": "poke_pfe:electric_component"
-            },
-            "S": {
-                "item": "armor_stand"
-            },
-            "B": {
-                "item": "poke_pfe:red_button"
-            }
-        },
-        "result": {
-            "item": "poke_pfe:armor_stand_remover"
-        }
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:armor_stand_remover"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["PKP", "EBE", "PSP"],
+    "unlock": [
+      {
+        "item": "poke_pfe:pocket_knife"
+      },
+      {
+        "item": "poke_pfe:plastic"
+      },
+      {
+        "item": "poke_pfe:electric_component"
+      },
+      {
+        "item": "minecraft:armor_stand"
+      },
+      {
+        "item": "poke_pfe:red_button"
+      }
+    ],
+    "key": {
+      "K": {
+        "item": "poke_pfe:pocket_knife"
+      },
+      "P": {
+        "item": "poke_pfe:plastic"
+      },
+      "E": {
+        "item": "poke_pfe:electric_component"
+      },
+      "S": {
+        "item": "minecraft:armor_stand"
+      },
+      "B": {
+        "item": "poke_pfe:red_button"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:armor_stand_remover"
     }
+  }
 }

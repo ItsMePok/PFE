@@ -1,39 +1,33 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:netherite_haxel"
-		},
-		"group": "haxel",
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"N#N",
-			"#i#",
-			"N#N"
-		],
-		"unlock": [
-			{
-				"item": "netherite_ingot"
-			},
-			{
-				"item": "poke_pfe:diamond_haxel"
-			}
-		],
-		"key": {
-			"i": {
-				"item": "poke_pfe:diamond_haxel"
-			},
-			"#": {
-				"item": "netherite_ingot"
-			},
-			"N": {
-				"item": "poke_pfe:scrappy_block"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:netherite_haxel"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:netherite_haxel"
+    },
+    "group": "haxel",
+    "tags": ["crafting_table"],
+    "pattern": ["N#N", "#i#", "N#N"],
+    "unlock": [
+      {
+        "item": "minecraft:netherite_ingot"
+      },
+      {
+        "item": "poke_pfe:diamond_haxel"
+      }
+    ],
+    "key": {
+      "i": {
+        "item": "poke_pfe:diamond_haxel"
+      },
+      "#": {
+        "item": "minecraft:netherite_ingot"
+      },
+      "N": {
+        "item": "poke_pfe:scrappy_block"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:netherite_haxel"
+    }
+  }
 }

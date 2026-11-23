@@ -1,66 +1,60 @@
 {
-    "format_version": "1.20.60",
-    "minecraft:recipe_shaped": {
-        "description": {
-            "identifier": "poke_pfe:end_upgrader"
-        },
-        "tags": [
-            "crafting_table"
-        ],
-        "group": "upgraders",
-        "pattern": [
-            " EC",
-            "FUE",
-            "RF "
-        ],
-        "unlock": [
-            {
-                "item": "end_rod"
-            },
-            {
-                "item": "end_stone"
-            },
-            {
-                "item": "poke_pfe:diamond_upgrade_core"
-            },
-            {
-                "item": "purpur_block"
-            },
-            {
-                "item": "end_bricks"
-            },
-            {
-                "item": "chorus_flower"
-            },
-            {
-                "item": "chorus_fruit"
-            },
-            {
-                "item": "purpur_stairs"
-            },
-            {
-                "item": "shulker_shell"
-            }
-        ],
-        "key": {
-            "F": {
-                "item": "chorus_flower"
-            },
-            "E": {
-                "item": "end_stone"
-            },
-            "U": {
-                "item": "poke_pfe:diamond_upgrade_core"
-            },
-            "C": {
-                "item": "chorus_fruit"
-            },
-            "R": {
-                "item": "end_rod"
-            }
-        },
-        "result": {
-            "item": "poke_pfe:end_upgrader"
-        }
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:end_upgrader"
+    },
+    "tags": ["crafting_table"],
+    "group": "upgraders",
+    "pattern": [" EC", "FUE", "RF "],
+    "unlock": [
+      {
+        "item": "minecraft:end_rod"
+      },
+      {
+        "item": "minecraft:end_stone"
+      },
+      {
+        "item": "poke_pfe:diamond_upgrade_core"
+      },
+      {
+        "item": "minecraft:purpur_block"
+      },
+      {
+        "item": "minecraft:end_bricks"
+      },
+      {
+        "item": "minecraft:chorus_flower"
+      },
+      {
+        "item": "minecraft:chorus_fruit"
+      },
+      {
+        "item": "minecraft:purpur_stairs"
+      },
+      {
+        "item": "minecraft:shulker_shell"
+      }
+    ],
+    "key": {
+      "F": {
+        "item": "minecraft:chorus_flower"
+      },
+      "E": {
+        "item": "minecraft:end_stone"
+      },
+      "U": {
+        "item": "poke_pfe:diamond_upgrade_core"
+      },
+      "C": {
+        "item": "minecraft:chorus_fruit"
+      },
+      "R": {
+        "item": "minecraft:end_rod"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:end_upgrader"
     }
+  }
 }

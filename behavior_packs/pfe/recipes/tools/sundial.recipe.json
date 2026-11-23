@@ -1,53 +1,47 @@
 {
-    "format_version": "1.20.60",
-    "minecraft:recipe_shaped": {
-        "description": {
-            "identifier": "poke_pfe:sundial"
-        },
-        "tags": [
-            "crafting_table"
-        ],
-        "pattern": [
-            "PCP",
-            "ERE",
-            "PWP"
-        ],
-        "unlock": [
-            {
-                "item": "clock"
-            },
-            {
-                "item": "poke_pfe:electric_component"
-            },
-            {
-                "item": "poke_pfe:wire"
-            },
-            {
-                "item": "poke_pfe:plastic"
-            },
-            {
-                "item": "poke_pfe:red_button"
-            }
-        ],
-        "key": {
-            "W": {
-                "item": "poke_pfe:wire"
-            },
-            "E": {
-                "item": "poke_pfe:electric_component"
-            },
-            "P": {
-                "item": "planks"
-            },
-            "R": {
-                "item": "poke_pfe:red_button"
-            },
-            "C": {
-                "item": "clock"
-            }
-        },
-        "result": {
-            "item": "poke_pfe:sundial"
-        }
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:sundial"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["PCP", "ERE", "PWP"],
+    "unlock": [
+      {
+        "item": "minecraft:clock"
+      },
+      {
+        "item": "poke_pfe:electric_component"
+      },
+      {
+        "item": "poke_pfe:wire"
+      },
+      {
+        "item": "poke_pfe:plastic"
+      },
+      {
+        "item": "poke_pfe:red_button"
+      }
+    ],
+    "key": {
+      "W": {
+        "item": "poke_pfe:wire"
+      },
+      "E": {
+        "item": "poke_pfe:electric_component"
+      },
+      "P": {
+        "item": "minecraft:planks"
+      },
+      "R": {
+        "item": "poke_pfe:red_button"
+      },
+      "C": {
+        "item": "minecraft:clock"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:sundial"
     }
+  }
 }

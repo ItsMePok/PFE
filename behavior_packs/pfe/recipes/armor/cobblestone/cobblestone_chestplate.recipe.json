@@ -1,29 +1,23 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:cobblestone_chestplate"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"X X",
-			"XXX",
-			"XXX"
-		],
-		"unlock": [
-			{
-				"item": "cobblestone"
-			}
-		],
-		"key": {
-			"X": {
-				"item": "cobblestone"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:stone_chestplate"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:cobblestone_chestplate"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["X X", "XXX", "XXX"],
+    "unlock": [
+      {
+        "item": "minecraft:cobblestone"
+      }
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:cobblestone"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:stone_chestplate"
+    }
+  }
 }

@@ -1,30 +1,28 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shapeless": {
-		"description": {
-			"identifier": "poke_pfe:mail_cart"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"unlock": [
-			{
-				"item": "chest_minecart"
-			},
-			{
-				"item": "paper"
-			}
-		],
-		"ingredients": [
-			{
-				"item": "chest_minecart"
-			},
-			{
-				"item": "paper"
-			}
-		],
-		"result": {
-			"item": "poke_pfe:mail_cart"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "poke_pfe:mail_cart"
+    },
+    "tags": ["crafting_table"],
+    "unlock": [
+      {
+        "item": "minecraft:chest_minecart"
+      },
+      {
+        "item": "minecraft:paper"
+      }
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:chest_minecart"
+      },
+      {
+        "item": "minecraft:paper"
+      }
+    ],
+    "result": {
+      "item": "poke_pfe:mail_cart"
+    }
+  }
 }

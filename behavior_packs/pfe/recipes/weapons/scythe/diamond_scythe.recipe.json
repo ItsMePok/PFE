@@ -1,38 +1,32 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:diamond_scythe"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"ZZX",
-			" # ",
-			"Y  "
-		],
-		"unlock": [
-			{
-				"item": "diamond"
-			}
-		],
-		"key": {
-			"Y": {
-				"item": "diamond_block"
-			},
-			"X": {
-				"item": "diamond_block"
-			},
-			"Z": {
-				"item": "diamond"
-			},
-			"#": {
-				"item": "stick"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:diamond_scythe"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:diamond_scythe"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["ZZX", " # ", "Y  "],
+    "unlock": [
+      {
+        "item": "minecraft:diamond"
+      }
+    ],
+    "key": {
+      "Y": {
+        "item": "minecraft:diamond_block"
+      },
+      "X": {
+        "item": "minecraft:diamond_block"
+      },
+      "Z": {
+        "item": "minecraft:diamond"
+      },
+      "#": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:diamond_scythe"
+    }
+  }
 }

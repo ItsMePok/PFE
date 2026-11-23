@@ -1,53 +1,47 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:demonic_allay_conduit"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"CWC",
-			"EGE",
-			"CDC"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:demonic_ingot"
-			},
-			{
-				"item": "poke_pfe:antenna"
-			},
-			{
-				"item": "poke_pfe:hellish_sword"
-			},
-			{
-				"item": "poke_pfe:electric_component"
-			},
-			{
-				"item": "redstone"
-			}
-		],
-		"key": {
-			"C": {
-				"item": "poke_pfe:demonic_ingot"
-			},
-			"W": {
-				"item": "poke_pfe:antenna"
-			},
-			"G": {
-				"item": "poke_pfe:hellish_sword"
-			},
-			"E": {
-				"item": "poke_pfe:electric_component"
-			},
-			"D": {
-				"item": "redstone"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:demonic_allay_conduit"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:demonic_allay_conduit"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["CWC", "EGE", "CDC"],
+    "unlock": [
+      {
+        "item": "poke_pfe:demonic_ingot"
+      },
+      {
+        "item": "poke_pfe:antenna"
+      },
+      {
+        "item": "poke_pfe:hellish_sword"
+      },
+      {
+        "item": "poke_pfe:electric_component"
+      },
+      {
+        "item": "minecraft:redstone"
+      }
+    ],
+    "key": {
+      "C": {
+        "item": "poke_pfe:demonic_ingot"
+      },
+      "W": {
+        "item": "poke_pfe:antenna"
+      },
+      "G": {
+        "item": "poke_pfe:hellish_sword"
+      },
+      "E": {
+        "item": "poke_pfe:electric_component"
+      },
+      "D": {
+        "item": "minecraft:redstone"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:demonic_allay_conduit"
+    }
+  }
 }

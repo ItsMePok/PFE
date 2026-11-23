@@ -1,47 +1,41 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:galaxy_burstbow"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			" HS",
-			"H S",
-			" HS"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:galaxy_ingot"
-			},
-			{
-				"item": "poke_pfe:galaxy_arrow"
-			},
-			{
-				"item": "poke_pfe:holy_burstbow"
-			},
-			{
-				"item": "bow"
-			},
-			{
-				"item": "arrow"
-			},
-			{
-				"item": "minecraft:string"
-			}
-		],
-		"key": {
-			"H": {
-				"item": "poke_pfe:galaxy_ingot"
-			},
-			"S": {
-				"item": "minecraft:string"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:galaxy_burstbow"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:galaxy_burstbow"
+    },
+    "tags": ["crafting_table"],
+    "pattern": [" HS", "H S", " HS"],
+    "unlock": [
+      {
+        "item": "poke_pfe:galaxy_ingot"
+      },
+      {
+        "item": "poke_pfe:galaxy_arrow"
+      },
+      {
+        "item": "poke_pfe:holy_burstbow"
+      },
+      {
+        "item": "minecraft:bow"
+      },
+      {
+        "item": "minecraft:arrow"
+      },
+      {
+        "item": "minecraft:string"
+      }
+    ],
+    "key": {
+      "H": {
+        "item": "poke_pfe:galaxy_ingot"
+      },
+      "S": {
+        "item": "minecraft:string"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:galaxy_burstbow"
+    }
+  }
 }

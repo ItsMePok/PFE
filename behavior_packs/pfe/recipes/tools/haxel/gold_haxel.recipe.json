@@ -1,39 +1,33 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:golden_haxel"
-		},
-		"group": "haxel",
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"N#N",
-			"#i#",
-			"N#N"
-		],
-		"unlock": [
-			{
-				"item": "gold_ingot"
-			},
-			{
-				"item": "poke_pfe:iron_haxel"
-			}
-		],
-		"key": {
-			"i": {
-				"item": "poke_pfe:iron_haxel"
-			},
-			"#": {
-				"item": "gold_ingot"
-			},
-			"N": {
-				"item": "gold_block"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:golden_haxel"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:golden_haxel"
+    },
+    "group": "haxel",
+    "tags": ["crafting_table"],
+    "pattern": ["N#N", "#i#", "N#N"],
+    "unlock": [
+      {
+        "item": "minecraft:gold_ingot"
+      },
+      {
+        "item": "poke_pfe:iron_haxel"
+      }
+    ],
+    "key": {
+      "i": {
+        "item": "poke_pfe:iron_haxel"
+      },
+      "#": {
+        "item": "minecraft:gold_ingot"
+      },
+      "N": {
+        "item": "minecraft:gold_block"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:golden_haxel"
+    }
+  }
 }

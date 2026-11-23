@@ -1,36 +1,30 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:kapow_holder"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"unlock": [
-			{
-				"item": "redstone"
-			},
-			{
-				"item": "gunpowder"
-			}
-		],
-		"key": {
-			"H": {
-				"item": "tnt"
-			},
-			"X": {
-				"item": "redstone_block"
-			}
-		},
-		"pattern": [
-			" X ",
-			"XHX",
-			" X "
-		],
-		"result": {
-			"count": 1,
-			"item": "poke_pfe:kapow_holder"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:kapow_holder"
+    },
+    "tags": ["crafting_table"],
+    "unlock": [
+      {
+        "item": "minecraft:redstone"
+      },
+      {
+        "item": "minecraft:gunpowder"
+      }
+    ],
+    "key": {
+      "H": {
+        "item": "minecraft:tnt"
+      },
+      "X": {
+        "item": "minecraft:redstone_block"
+      }
+    },
+    "pattern": [" X ", "XHX", " X "],
+    "result": {
+      "count": 1,
+      "item": "poke_pfe:kapow_holder"
+    }
+  }
 }

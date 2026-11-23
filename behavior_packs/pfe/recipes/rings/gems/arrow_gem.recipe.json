@@ -1,36 +1,30 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:arrow_gem"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"key": {
-			"H": {
-				"item": "leather"
-			},
-			"S": {
-				"item": "diamond"
-			},
-			"X": {
-				"item": "flint"
-			}
-		},
-		"unlock": [
-			{
-				"item": "poke_pfe:gem_holder"
-			}
-		],
-		"pattern": [
-			"SXS",
-			"XHX",
-			"SXS"
-		],
-		"result": {
-			"count": 1,
-			"item": "poke_pfe:arrow_gem"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:arrow_gem"
+    },
+    "tags": ["crafting_table"],
+    "key": {
+      "H": {
+        "item": "minecraft:leather"
+      },
+      "S": {
+        "item": "minecraft:diamond"
+      },
+      "X": {
+        "item": "minecraft:flint"
+      }
+    },
+    "unlock": [
+      {
+        "item": "poke_pfe:gem_holder"
+      }
+    ],
+    "pattern": ["SXS", "XHX", "SXS"],
+    "result": {
+      "count": 1,
+      "item": "poke_pfe:arrow_gem"
+    }
+  }
 }

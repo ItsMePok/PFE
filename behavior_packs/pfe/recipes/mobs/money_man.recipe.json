@@ -1,38 +1,32 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:money_man"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			" E ",
-			"EXE",
-			" E "
-		],
-		"unlock": [
-			{
-				"tag": "minecraft:egg"
-			},
-			{
-				"item": "emerald"
-			},
-			{
-				"item": "poke_pfe:cobalt_ingot"
-			}
-		],
-		"key": {
-			"X": {
-				"tag": "minecraft:egg"
-			},
-			"E": {
-				"item": "emerald"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:money_man"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:money_man"
+    },
+    "tags": ["crafting_table"],
+    "pattern": [" E ", "EXE", " E "],
+    "unlock": [
+      {
+        "tag": "minecraft:egg"
+      },
+      {
+        "item": "minecraft:emerald"
+      },
+      {
+        "item": "poke_pfe:cobalt_ingot"
+      }
+    ],
+    "key": {
+      "X": {
+        "tag": "minecraft:egg"
+      },
+      "E": {
+        "item": "minecraft:emerald"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:money_man"
+    }
+  }
 }

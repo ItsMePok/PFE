@@ -1,44 +1,38 @@
 {
-    "format_version": "1.20.60",
-    "minecraft:recipe_shaped": {
-        "description": {
-            "identifier": "poke_pfe:pocket_knife"
-        },
-        "tags": [
-            "crafting_table"
-        ],
-        "pattern": [
-            " I ",
-            "CCC",
-            " C "
-        ],
-        "unlock": [
-            {
-                "item": "poke_pfe:cobalt_ingot"
-            },
-            {
-                "item": "iron_ingot"
-            },
-            {
-                "item": "poke_pfe:carved_melon"
-            },
-            {
-                "item": "melon_slice"
-            },
-            {
-                "item": "melon_block"
-            }
-        ],
-        "key": {
-            "I": {
-                "item": "iron_ingot"
-            },
-            "C": {
-                "item": "poke_pfe:cobalt_ingot"
-            }
-        },
-        "result": {
-            "item": "poke_pfe:pocket_knife"
-        }
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:pocket_knife"
+    },
+    "tags": ["crafting_table"],
+    "pattern": [" I ", "CCC", " C "],
+    "unlock": [
+      {
+        "item": "poke_pfe:cobalt_ingot"
+      },
+      {
+        "item": "minecraft:iron_ingot"
+      },
+      {
+        "item": "poke_pfe:carved_melon"
+      },
+      {
+        "item": "minecraft:melon_slice"
+      },
+      {
+        "item": "minecraft:melon_block"
+      }
+    ],
+    "key": {
+      "I": {
+        "item": "minecraft:iron_ingot"
+      },
+      "C": {
+        "item": "poke_pfe:cobalt_ingot"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:pocket_knife"
     }
+  }
 }

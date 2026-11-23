@@ -1,31 +1,25 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:banished_star_uncraft_blackstone"
-		},
-		"assume_symmetry": false,
-		"unlock": [
-			{
-				"item": "poke_pfe:banished_star"
-			}
-		],
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"   ",
-			" A ",
-			"   "
-		],
-		"key": {
-			"A": {
-				"item": "poke_pfe:banished_star"
-			}
-		},
-		"result": {
-			"item": "blackstone",
-			"count": 9
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:banished_star_uncraft_blackstone"
+    },
+    "assume_symmetry": false,
+    "unlock": [
+      {
+        "item": "poke_pfe:banished_star"
+      }
+    ],
+    "tags": ["crafting_table"],
+    "pattern": ["   ", " A ", "   "],
+    "key": {
+      "A": {
+        "item": "poke_pfe:banished_star"
+      }
+    },
+    "result": {
+      "item": "minecraft:blackstone",
+      "count": 9
+    }
+  }
 }

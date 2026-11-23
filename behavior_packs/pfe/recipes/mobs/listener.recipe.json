@@ -1,53 +1,47 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:listener"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"NEN",
-			"GFG",
-			"NYN"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:empty_cassette"
-			},
-			{
-				"item": "poke_pfe:nebula_block"
-			},
-			{
-				"item": "poke_pfe:banished_star_x4"
-			},
-			{
-				"item": "poke_pfe:antenna"
-			},
-			{
-				"item": "poke_pfe:nebula_ingot"
-			}
-		],
-		"key": {
-			"N": {
-				"item": "poke_pfe:nebula_block"
-			},
-			"F": {
-				"item": "poke_pfe:banished_star_x4"
-			},
-			"Y": {
-				"item": "poke_pfe:empty_cassette"
-			},
-			"E": {
-				"item": "poke_pfe:antenna"
-			},
-			"G": {
-				"item": "sculk_catalyst"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:spawn_listener"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:listener"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["NEN", "GFG", "NYN"],
+    "unlock": [
+      {
+        "item": "poke_pfe:empty_cassette"
+      },
+      {
+        "item": "poke_pfe:nebula_block"
+      },
+      {
+        "item": "poke_pfe:banished_star_x4"
+      },
+      {
+        "item": "poke_pfe:antenna"
+      },
+      {
+        "item": "poke_pfe:nebula_ingot"
+      }
+    ],
+    "key": {
+      "N": {
+        "item": "poke_pfe:nebula_block"
+      },
+      "F": {
+        "item": "poke_pfe:banished_star_x4"
+      },
+      "Y": {
+        "item": "poke_pfe:empty_cassette"
+      },
+      "E": {
+        "item": "poke_pfe:antenna"
+      },
+      "G": {
+        "item": "minecraft:sculk_catalyst"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:spawn_listener"
+    }
+  }
 }

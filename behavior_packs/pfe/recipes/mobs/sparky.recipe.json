@@ -1,53 +1,47 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:sparky_egg"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"CEC",
-			"WBF",
-			"ADA"
-		],
-		"unlock": [
-			{
-				"tag": "minecraft:egg"
-			},
-			{
-				"item": "poke_pfe:astral_ingot"
-			},
-			{
-				"item": "poke_pfe:banished_star"
-			}
-		],
-		"key": {
-			"C": {
-				"item": "lightning_rod"
-			},
-			"E": {
-				"tag": "minecraft:egg"
-			},
-			"W": {
-				"item": "wind_charge"
-			},
-			"B": {
-				"item": "poke_pfe:banished_star_x5"
-			},
-			"F": {
-				"item": "fire_charge"
-			},
-			"A": {
-				"item": "poke_pfe:astral_ingot"
-			},
-			"D": {
-				"item": "dragon_breath"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:spawn_sparky"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:sparky_egg"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["CEC", "WBF", "ADA"],
+    "unlock": [
+      {
+        "tag": "minecraft:egg"
+      },
+      {
+        "item": "poke_pfe:astral_ingot"
+      },
+      {
+        "item": "poke_pfe:banished_star"
+      }
+    ],
+    "key": {
+      "C": {
+        "item": "minecraft:lightning_rod"
+      },
+      "E": {
+        "tag": "minecraft:egg"
+      },
+      "W": {
+        "item": "minecraft:wind_charge"
+      },
+      "B": {
+        "item": "poke_pfe:banished_star_x5"
+      },
+      "F": {
+        "item": "minecraft:fire_charge"
+      },
+      "A": {
+        "item": "poke_pfe:astral_ingot"
+      },
+      "D": {
+        "item": "minecraft:dragon_breath"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:spawn_sparky"
+    }
+  }
 }

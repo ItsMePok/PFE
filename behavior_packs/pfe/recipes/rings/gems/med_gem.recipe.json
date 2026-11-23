@@ -1,36 +1,30 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:med_gem"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"key": {
-			"H": {
-				"item": "beacon"
-			},
-			"S": {
-				"item": "gold_block"
-			},
-			"X": {
-				"item": "glowstone"
-			}
-		},
-		"unlock": [
-			{
-				"item": "poke_pfe:gem_holder"
-			}
-		],
-		"pattern": [
-			"SXS",
-			"XHX",
-			"SXS"
-		],
-		"result": {
-			"count": 1,
-			"item": "poke_pfe:med_gem"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:med_gem"
+    },
+    "tags": ["crafting_table"],
+    "key": {
+      "H": {
+        "item": "minecraft:beacon"
+      },
+      "S": {
+        "item": "minecraft:gold_block"
+      },
+      "X": {
+        "item": "minecraft:glowstone"
+      }
+    },
+    "unlock": [
+      {
+        "item": "poke_pfe:gem_holder"
+      }
+    ],
+    "pattern": ["SXS", "XHX", "SXS"],
+    "result": {
+      "count": 1,
+      "item": "poke_pfe:med_gem"
+    }
+  }
 }

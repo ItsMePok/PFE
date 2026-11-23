@@ -1,38 +1,32 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:onyx_axe"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"CC",
-			"CS",
-			" S"
-		],
-		"unlock": [
-			{
-				"item": "stick"
-			},
-			{
-				"item": "poke_pfe:raw_onyx"
-			},
-			{
-				"item": "poke_pfe:onyx_ingot"
-			}
-		],
-		"key": {
-			"C": {
-				"item": "poke_pfe:onyx_ingot"
-			},
-			"S": {
-				"item": "stick"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:onyx_axe"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:onyx_axe"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["CC", "CS", " S"],
+    "unlock": [
+      {
+        "item": "minecraft:stick"
+      },
+      {
+        "item": "poke_pfe:raw_onyx"
+      },
+      {
+        "item": "poke_pfe:onyx_ingot"
+      }
+    ],
+    "key": {
+      "C": {
+        "item": "poke_pfe:onyx_ingot"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:onyx_axe"
+    }
+  }
 }

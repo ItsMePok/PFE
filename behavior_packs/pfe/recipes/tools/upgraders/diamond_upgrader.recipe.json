@@ -1,42 +1,36 @@
 {
-    "format_version": "1.20.60",
-    "minecraft:recipe_shaped": {
-        "description": {
-            "identifier": "poke_pfe:diamond_upgrader"
-        },
-        "tags": [
-            "crafting_table"
-        ],
-        "group": "upgraders",
-        "pattern": [
-            " XX",
-            "WYX",
-            "ZW "
-        ],
-        "unlock": [
-            {
-                "item": "diamond"
-            },
-            {
-                "item": "poke_pfe:diamond_upgrade_core"
-            }
-        ],
-        "key": {
-            "X": {
-                "item": "diamond_block"
-            },
-            "W": {
-                "item": "diamond_block"
-            },
-            "Y": {
-                "item": "poke_pfe:diamond_upgrade_core"
-            },
-            "Z": {
-                "item": "stick"
-            }
-        },
-        "result": {
-            "item": "poke_pfe:diamond_upgrader"
-        }
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:diamond_upgrader"
+    },
+    "tags": ["crafting_table"],
+    "group": "upgraders",
+    "pattern": [" XX", "WYX", "ZW "],
+    "unlock": [
+      {
+        "item": "minecraft:diamond"
+      },
+      {
+        "item": "poke_pfe:diamond_upgrade_core"
+      }
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:diamond_block"
+      },
+      "W": {
+        "item": "minecraft:diamond_block"
+      },
+      "Y": {
+        "item": "poke_pfe:diamond_upgrade_core"
+      },
+      "Z": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:diamond_upgrader"
     }
+  }
 }

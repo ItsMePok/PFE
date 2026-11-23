@@ -1,36 +1,30 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:beeulb"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"unlock": [
-			{
-				"item": "honeycomb"
-			},
-			{
-				"item": "honeycomb_block"
-			}
-		],
-		"key": {
-			"G": {
-				"item": "honeycomb_block"
-			},
-			"C": {
-				"item": "glowstone"
-			}
-		},
-		"pattern": [
-			"GGG",
-			"GCG",
-			"GGG"
-		],
-		"result": {
-			"item": "poke_pfe:beeulb",
-			"count": 6
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:beeulb"
+    },
+    "tags": ["crafting_table"],
+    "unlock": [
+      {
+        "item": "minecraft:honeycomb"
+      },
+      {
+        "item": "minecraft:honeycomb_block"
+      }
+    ],
+    "key": {
+      "G": {
+        "item": "minecraft:honeycomb_block"
+      },
+      "C": {
+        "item": "minecraft:glowstone"
+      }
+    },
+    "pattern": ["GGG", "GCG", "GGG"],
+    "result": {
+      "item": "poke_pfe:beeulb",
+      "count": 6
+    }
+  }
 }

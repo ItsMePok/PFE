@@ -1,36 +1,30 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:holy_bulb"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:holy_ingot"
-			},
-			{
-				"item": "poke_pfe:cut_holy"
-			}
-		],
-		"key": {
-			"G": {
-				"item": "poke_pfe:cut_holy"
-			},
-			"C": {
-				"item": "glowstone"
-			}
-		},
-		"pattern": [
-			"GGG",
-			"GCG",
-			"GGG"
-		],
-		"result": {
-			"item": "poke_pfe:holy_bulb",
-			"count": 6
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:holy_bulb"
+    },
+    "tags": ["crafting_table"],
+    "unlock": [
+      {
+        "item": "poke_pfe:holy_ingot"
+      },
+      {
+        "item": "poke_pfe:cut_holy"
+      }
+    ],
+    "key": {
+      "G": {
+        "item": "poke_pfe:cut_holy"
+      },
+      "C": {
+        "item": "minecraft:glowstone"
+      }
+    },
+    "pattern": ["GGG", "GCG", "GGG"],
+    "result": {
+      "item": "poke_pfe:holy_bulb",
+      "count": 6
+    }
+  }
 }

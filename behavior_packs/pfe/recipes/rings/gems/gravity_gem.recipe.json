@@ -1,48 +1,42 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:gravity_gem"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"key": {
-			"P": {
-				"item": "purpur_block"
-			},
-			"S": {
-				"item": "poke_pfe:springy_ring"
-			},
-			"G": {
-				"item": "poke_pfe:gps_module"
-			},
-			"A": {
-				"item": "poke_pfe:raw_astral_block"
-			},
-			"U": {
-				"item": "poke_pfe:diamond_upgrade_core"
-			}
-		},
-		"unlock": [
-			{
-				"item": "poke_pfe:diamond_gem_holder"
-			},
-			{
-				"item": "poke_pfe:springy_ring"
-			},
-			{
-				"item": "poke_pfe:raw_astral"
-			}
-		],
-		"pattern": [
-			"PGP",
-			"ASA",
-			"PUP"
-		],
-		"result": {
-			"count": 1,
-			"item": "poke_pfe:gravity_gem"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:gravity_gem"
+    },
+    "tags": ["crafting_table"],
+    "key": {
+      "P": {
+        "item": "minecraft:purpur_block"
+      },
+      "S": {
+        "item": "poke_pfe:springy_ring"
+      },
+      "G": {
+        "item": "poke_pfe:gps_module"
+      },
+      "A": {
+        "item": "poke_pfe:raw_astral_block"
+      },
+      "U": {
+        "item": "poke_pfe:diamond_upgrade_core"
+      }
+    },
+    "unlock": [
+      {
+        "item": "poke_pfe:diamond_gem_holder"
+      },
+      {
+        "item": "poke_pfe:springy_ring"
+      },
+      {
+        "item": "poke_pfe:raw_astral"
+      }
+    ],
+    "pattern": ["PGP", "ASA", "PUP"],
+    "result": {
+      "count": 1,
+      "item": "poke_pfe:gravity_gem"
+    }
+  }
 }

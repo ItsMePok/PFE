@@ -1,45 +1,39 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:poke_rooted_dirt"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"unlock": [
-			{
-				"item": "hanging_roots"
-			},
-			{
-				"item": "poke_pfe:bundled_sugarcane"
-			},
-			{
-				"item": "mangrove_roots"
-			},
-			{
-				"item": "dirt"
-			}
-		],
-		"pattern": [
-			"BGB",
-			"G#G",
-			"BGB"
-		],
-		"key": {
-			"#": {
-				"item": "poke_pfe:bundled_sugarcane"
-			},
-			"B": {
-				"item": "dirt"
-			},
-			"G": {
-				"item": "mangrove_roots"
-			}
-		},
-		"result": {
-			"item": "dirt_with_roots",
-			"count": 4
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:poke_rooted_dirt"
+    },
+    "tags": ["crafting_table"],
+    "unlock": [
+      {
+        "item": "minecraft:hanging_roots"
+      },
+      {
+        "item": "poke_pfe:bundled_sugarcane"
+      },
+      {
+        "item": "minecraft:mangrove_roots"
+      },
+      {
+        "item": "minecraft:dirt"
+      }
+    ],
+    "pattern": ["BGB", "G#G", "BGB"],
+    "key": {
+      "#": {
+        "item": "poke_pfe:bundled_sugarcane"
+      },
+      "B": {
+        "item": "minecraft:dirt"
+      },
+      "G": {
+        "item": "minecraft:mangrove_roots"
+      }
+    },
+    "result": {
+      "item": "minecraft:dirt_with_roots",
+      "count": 4
+    }
+  }
 }

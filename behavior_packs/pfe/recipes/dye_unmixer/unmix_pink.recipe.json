@@ -1,33 +1,29 @@
 {
-    "format_version": "1.20.60",
-    "minecraft:recipe_shaped": {
-        "description": {
-            "identifier": "poke_pfe:unmix_pink"
-        },
-        "pattern": [
-            "D"
-        ],
-        "unlock": [
-            {
-                "item": "pink_dye"
-            }
-        ],
-        "tags": [
-            "poke_dye_unmixer"
-        ],
-        "group": "dye_unmixer",
-        "key": {
-            "D": {
-                "item": "pink_dye"
-            }
-        },
-        "result": [
-            {
-                "item": "white_dye"
-            },
-            {
-                "item": "red_dye"
-            }
-        ]
-    }
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:unmix_pink"
+    },
+    "pattern": ["D"],
+    "unlock": [
+      {
+        "item": "minecraft:pink_dye"
+      }
+    ],
+    "tags": ["poke_dye_unmixer"],
+    "group": "dye_unmixer",
+    "key": {
+      "D": {
+        "item": "minecraft:pink_dye"
+      }
+    },
+    "result": [
+      {
+        "item": "minecraft:white_dye"
+      },
+      {
+        "item": "minecraft:red_dye"
+      }
+    ]
+  }
 }

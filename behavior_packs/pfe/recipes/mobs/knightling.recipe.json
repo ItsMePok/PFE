@@ -1,65 +1,59 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:knightling"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			" X ",
-			"YFY",
-			" Y "
-		],
-		"unlock": [
-			{
-				"item": "diamond"
-			},
-			{
-				"item": "diamond_helmet"
-			},
-			{
-				"item": "diamond_chestplate"
-			},
-			{
-				"item": "diamond_leggings"
-			},
-			{
-				"item": "diamond_boots"
-			},
-			{
-				"item": "diamond_axe"
-			},
-			{
-				"item": "poke_pfe:godly_ingot"
-			},
-			{
-				"item": "poke_pfe:demonic_ingot"
-			},
-			{
-				"item": "poke_pfe:holy_helmet"
-			},
-			{
-				"item": "poke_pfe:demonic_helmet"
-			},
-			{
-				"item": "diamond_sword"
-			}
-		],
-		"key": {
-			"X": {
-				"item": "iron_helmet"
-			},
-			"F": {
-				"item": "iron_chestplate"
-			},
-			"Y": {
-				"item": "poke_pfe:cobalt_ingot"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:spawn_knightling"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:knightling"
+    },
+    "tags": ["crafting_table"],
+    "pattern": [" X ", "YFY", " Y "],
+    "unlock": [
+      {
+        "item": "minecraft:diamond"
+      },
+      {
+        "item": "minecraft:diamond_helmet"
+      },
+      {
+        "item": "minecraft:diamond_chestplate"
+      },
+      {
+        "item": "minecraft:diamond_leggings"
+      },
+      {
+        "item": "minecraft:diamond_boots"
+      },
+      {
+        "item": "minecraft:diamond_axe"
+      },
+      {
+        "item": "poke_pfe:godly_ingot"
+      },
+      {
+        "item": "poke_pfe:demonic_ingot"
+      },
+      {
+        "item": "poke_pfe:holy_helmet"
+      },
+      {
+        "item": "poke_pfe:demonic_helmet"
+      },
+      {
+        "item": "minecraft:diamond_sword"
+      }
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:iron_helmet"
+      },
+      "F": {
+        "item": "minecraft:iron_chestplate"
+      },
+      "Y": {
+        "item": "poke_pfe:cobalt_ingot"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:spawn_knightling"
+    }
+  }
 }

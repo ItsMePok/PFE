@@ -1,36 +1,30 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:demonic_bulb"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:demonic_ingot"
-			},
-			{
-				"item": "poke_pfe:cut_demonic"
-			}
-		],
-		"key": {
-			"G": {
-				"item": "poke_pfe:cut_demonic"
-			},
-			"C": {
-				"item": "glowstone"
-			}
-		},
-		"pattern": [
-			"GGG",
-			"GCG",
-			"GGG"
-		],
-		"result": {
-			"item": "poke_pfe:demonic_bulb",
-			"count": 6
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:demonic_bulb"
+    },
+    "tags": ["crafting_table"],
+    "unlock": [
+      {
+        "item": "poke_pfe:demonic_ingot"
+      },
+      {
+        "item": "poke_pfe:cut_demonic"
+      }
+    ],
+    "key": {
+      "G": {
+        "item": "poke_pfe:cut_demonic"
+      },
+      "C": {
+        "item": "minecraft:glowstone"
+      }
+    },
+    "pattern": ["GGG", "GCG", "GGG"],
+    "result": {
+      "item": "poke_pfe:demonic_bulb",
+      "count": 6
+    }
+  }
 }

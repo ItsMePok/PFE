@@ -1,25 +1,23 @@
 {
-    "format_version": "1.16.100",
-    "minecraft:recipe_shapeless": {
-        "tags": [
-            "crafting_table"
-        ],
-        "description": {
-            "identifier": "poke_pfe:bundled_feathers"
-        },
-        "unlock": [
-            {
-                "item": "feather"
-            }
-        ],
-        "ingredients": [
-            {
-                "item": "feather",
-                "count": 9
-            }
-        ],
-        "result": {
-            "item": "poke_pfe:bundled_feathers"
-        }
+  "format_version": "1.16.100",
+  "minecraft:recipe_shapeless": {
+    "tags": ["crafting_table"],
+    "description": {
+      "identifier": "poke_pfe:bundled_feathers"
+    },
+    "unlock": [
+      {
+        "item": "minecraft:feather"
+      }
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:feather",
+        "count": 9
+      }
+    ],
+    "result": {
+      "item": "poke_pfe:bundled_feathers"
     }
+  }
 }

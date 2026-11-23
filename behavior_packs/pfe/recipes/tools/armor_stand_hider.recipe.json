@@ -1,59 +1,53 @@
 {
-    "format_version": "1.20.60",
-    "minecraft:recipe_shaped": {
-        "description": {
-            "identifier": "poke_pfe:armor_stand_hider"
-        },
-        "tags": [
-            "crafting_table"
-        ],
-        "pattern": [
-            "PAP",
-            "SBG",
-            "CPI"
-        ],
-        "unlock": [
-            {
-                "item": "poke_pfe:cobalt_ingot"
-            },
-            {
-                "item": "armor_stand"
-            },
-            {
-                "item": "poke_pfe:shade_ingot"
-            },
-            {
-                "item": "poke_pfe:plastic"
-            },
-            {
-                "item": "poke_pfe:antenna"
-            }
-        ],
-        "key": {
-            "I": {
-                "item": "poke_pfe:shade_ingot"
-            },
-            "C": {
-                "item": "poke_pfe:cobalt_ingot"
-            },
-            "P": {
-                "item": "poke_pfe:plastic"
-            },
-            "A": {
-                "item": "poke_pfe:antenna"
-            },
-            "S": {
-                "item": "armor_stand"
-            },
-            "G": {
-                "item": "glass"
-            },
-            "B": {
-                "item": "poke_pfe:red_button"
-            }
-        },
-        "result": {
-            "item": "poke_pfe:armor_stand_hider"
-        }
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:armor_stand_hider"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["PAP", "SBG", "CPI"],
+    "unlock": [
+      {
+        "item": "poke_pfe:cobalt_ingot"
+      },
+      {
+        "item": "minecraft:armor_stand"
+      },
+      {
+        "item": "poke_pfe:shade_ingot"
+      },
+      {
+        "item": "poke_pfe:plastic"
+      },
+      {
+        "item": "poke_pfe:antenna"
+      }
+    ],
+    "key": {
+      "I": {
+        "item": "poke_pfe:shade_ingot"
+      },
+      "C": {
+        "item": "poke_pfe:cobalt_ingot"
+      },
+      "P": {
+        "item": "poke_pfe:plastic"
+      },
+      "A": {
+        "item": "poke_pfe:antenna"
+      },
+      "S": {
+        "item": "minecraft:armor_stand"
+      },
+      "G": {
+        "item": "minecraft:glass"
+      },
+      "B": {
+        "item": "poke_pfe:red_button"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:armor_stand_hider"
     }
+  }
 }

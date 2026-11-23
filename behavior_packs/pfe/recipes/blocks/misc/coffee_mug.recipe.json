@@ -1,38 +1,36 @@
 {
-    "format_version": "1.20.60",
-    "minecraft:recipe_shapeless": {
-        "description": {
-            "identifier": "poke_pfe:coffee_mug"
-        },
-        "tags": [
-            "crafting_table"
-        ],
-        "ingredients": [
-            {
-                "item": "poke_pfe:empty_mug"
-            },
-            {
-                "item": "cocoa_beans",
-                "count": 2
-            },
-            {
-                "item": "potion",
-                "data": 0
-            }
-        ],
-        "unlock": [
-            {
-                "item": "poke_pfe:empty_mug"
-            },
-            {
-                "item": "cocoa_beans"
-            },
-            {
-                "item": "poke_pfe:smooth_limestone"
-            }
-        ],
-        "result": {
-            "item": "poke_pfe:coffee_mug"
-        }
+  "format_version": "1.20.60",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "poke_pfe:coffee_mug"
+    },
+    "tags": ["crafting_table"],
+    "ingredients": [
+      {
+        "item": "poke_pfe:empty_mug"
+      },
+      {
+        "item": "minecraft:cocoa_beans",
+        "count": 2
+      },
+      {
+        "item": "minecraft:potion",
+        "data": 0
+      }
+    ],
+    "unlock": [
+      {
+        "item": "poke_pfe:empty_mug"
+      },
+      {
+        "item": "minecraft:cocoa_beans"
+      },
+      {
+        "item": "poke_pfe:smooth_limestone"
+      }
+    ],
+    "result": {
+      "item": "poke_pfe:coffee_mug"
     }
+  }
 }

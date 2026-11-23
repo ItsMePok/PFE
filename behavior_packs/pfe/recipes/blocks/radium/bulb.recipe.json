@@ -1,36 +1,30 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:radium_bulb"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:radium_ingot"
-			},
-			{
-				"item": "poke_pfe:cut_radium"
-			}
-		],
-		"key": {
-			"G": {
-				"item": "poke_pfe:cut_radium"
-			},
-			"C": {
-				"item": "glowstone"
-			}
-		},
-		"pattern": [
-			"GGG",
-			"GCG",
-			"GGG"
-		],
-		"result": {
-			"item": "poke_pfe:radium_bulb",
-			"count": 6
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:radium_bulb"
+    },
+    "tags": ["crafting_table"],
+    "unlock": [
+      {
+        "item": "poke_pfe:radium_ingot"
+      },
+      {
+        "item": "poke_pfe:cut_radium"
+      }
+    ],
+    "key": {
+      "G": {
+        "item": "poke_pfe:cut_radium"
+      },
+      "C": {
+        "item": "minecraft:glowstone"
+      }
+    },
+    "pattern": ["GGG", "GCG", "GGG"],
+    "result": {
+      "item": "poke_pfe:radium_bulb",
+      "count": 6
+    }
+  }
 }

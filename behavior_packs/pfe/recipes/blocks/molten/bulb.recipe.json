@@ -1,36 +1,30 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:molten_bulb"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:molten_slimeball"
-			},
-			{
-				"item": "poke_pfe:cut_molten"
-			}
-		],
-		"key": {
-			"G": {
-				"item": "poke_pfe:cut_molten"
-			},
-			"C": {
-				"item": "glowstone"
-			}
-		},
-		"pattern": [
-			"GGG",
-			"GCG",
-			"GGG"
-		],
-		"result": {
-			"item": "poke_pfe:molten_bulb",
-			"count": 6
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:molten_bulb"
+    },
+    "tags": ["crafting_table"],
+    "unlock": [
+      {
+        "item": "poke_pfe:molten_slimeball"
+      },
+      {
+        "item": "poke_pfe:cut_molten"
+      }
+    ],
+    "key": {
+      "G": {
+        "item": "poke_pfe:cut_molten"
+      },
+      "C": {
+        "item": "minecraft:glowstone"
+      }
+    },
+    "pattern": ["GGG", "GCG", "GGG"],
+    "result": {
+      "item": "poke_pfe:molten_bulb",
+      "count": 6
+    }
+  }
 }

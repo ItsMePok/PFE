@@ -1,38 +1,32 @@
 {
-    "format_version": "1.20.60",
-    "minecraft:recipe_shaped": {
-        "description": {
-            "identifier": "poke_pfe:springy_robey_chestplate"
-        },
-        "tags": [
-            "crafting_table"
-        ],
-        "pattern": [
-            "WGW",
-            "GAG",
-            "WUW"
-        ],
-        "unlock": [
-            {
-                "item": "poke_pfe:creedite_chestplate"
-            }
-        ],
-        "key": {
-            "W": {
-                "item": "slime"
-            },
-            "A": {
-                "item": "poke_pfe:creedite_chestplate"
-            },
-            "G": {
-                "item": "gold_block"
-            },
-            "U": {
-                "item": "poke_pfe:upgrade_core"
-            }
-        },
-        "result": {
-            "item": "poke_pfe:springy_robey_chestplate"
-        }
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:springy_robey_chestplate"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["WGW", "GAG", "WUW"],
+    "unlock": [
+      {
+        "item": "poke_pfe:creedite_chestplate"
+      }
+    ],
+    "key": {
+      "W": {
+        "item": "minecraft:slime"
+      },
+      "A": {
+        "item": "poke_pfe:creedite_chestplate"
+      },
+      "G": {
+        "item": "minecraft:gold_block"
+      },
+      "U": {
+        "item": "poke_pfe:upgrade_core"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:springy_robey_chestplate"
     }
+  }
 }

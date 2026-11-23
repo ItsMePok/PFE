@@ -1,38 +1,32 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:stone_battleaxe"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"DDD",
-			"DSD",
-			" B "
-		],
-		"unlock": [
-			{
-				"item": "stone"
-			},
-			{
-				"item": "cobblestone"
-			}
-		],
-		"key": {
-			"B": {
-				"item": "stone"
-			},
-			"D": {
-				"item": "cobblestone"
-			},
-			"S": {
-				"item": "stick"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:stone_battleaxe"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:stone_battleaxe"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["DDD", "DSD", " B "],
+    "unlock": [
+      {
+        "item": "minecraft:stone"
+      },
+      {
+        "item": "minecraft:cobblestone"
+      }
+    ],
+    "key": {
+      "B": {
+        "item": "minecraft:stone"
+      },
+      "D": {
+        "item": "minecraft:cobblestone"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:stone_battleaxe"
+    }
+  }
 }

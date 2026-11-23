@@ -1,36 +1,30 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:ice_gem"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"key": {
-			"H": {
-				"item": "blue_ice"
-			},
-			"S": {
-				"item": "ice"
-			},
-			"X": {
-				"item": "packed_ice"
-			}
-		},
-		"unlock": [
-			{
-				"item": "poke_pfe:gem_holder"
-			}
-		],
-		"pattern": [
-			"SXS",
-			"XHX",
-			"SXS"
-		],
-		"result": {
-			"count": 1,
-			"item": "poke_pfe:ice_gem"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:ice_gem"
+    },
+    "tags": ["crafting_table"],
+    "key": {
+      "H": {
+        "item": "minecraft:blue_ice"
+      },
+      "S": {
+        "item": "minecraft:ice"
+      },
+      "X": {
+        "item": "minecraft:packed_ice"
+      }
+    },
+    "unlock": [
+      {
+        "item": "poke_pfe:gem_holder"
+      }
+    ],
+    "pattern": ["SXS", "XHX", "SXS"],
+    "result": {
+      "count": 1,
+      "item": "poke_pfe:ice_gem"
+    }
+  }
 }

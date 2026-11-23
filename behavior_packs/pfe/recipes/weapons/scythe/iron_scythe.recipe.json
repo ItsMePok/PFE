@@ -1,38 +1,32 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:iron_scythe"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"ZZX",
-			" # ",
-			"Y  "
-		],
-		"unlock": [
-			{
-				"item": "iron_ingot"
-			}
-		],
-		"key": {
-			"Y": {
-				"item": "iron_block"
-			},
-			"X": {
-				"item": "iron_block"
-			},
-			"Z": {
-				"item": "iron_ingot"
-			},
-			"#": {
-				"item": "stick"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:iron_scythe"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:iron_scythe"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["ZZX", " # ", "Y  "],
+    "unlock": [
+      {
+        "item": "minecraft:iron_ingot"
+      }
+    ],
+    "key": {
+      "Y": {
+        "item": "minecraft:iron_block"
+      },
+      "X": {
+        "item": "minecraft:iron_block"
+      },
+      "Z": {
+        "item": "minecraft:iron_ingot"
+      },
+      "#": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:iron_scythe"
+    }
+  }
 }

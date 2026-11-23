@@ -1,41 +1,35 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:zombken"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			" X ",
-			"YFY",
-			" Y "
-		],
-		"unlock": [
-			{
-				"tag": "minecraft:egg"
-			},
-			{
-				"item": "rotten_flesh"
-			},
-			{
-				"item": "chicken"
-			}
-		],
-		"key": {
-			"X": {
-				"item": "rotten_flesh"
-			},
-			"F": {
-				"tag": "minecraft:egg"
-			},
-			"Y": {
-				"item": "chicken"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:spawn_zombken"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:zombken"
+    },
+    "tags": ["crafting_table"],
+    "pattern": [" X ", "YFY", " Y "],
+    "unlock": [
+      {
+        "tag": "minecraft:egg"
+      },
+      {
+        "item": "minecraft:rotten_flesh"
+      },
+      {
+        "item": "minecraft:chicken"
+      }
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:rotten_flesh"
+      },
+      "F": {
+        "tag": "minecraft:egg"
+      },
+      "Y": {
+        "item": "minecraft:chicken"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:spawn_zombken"
+    }
+  }
 }

@@ -1,53 +1,47 @@
 {
-    "format_version": "1.20.60",
-    "minecraft:recipe_shaped": {
-        "description": {
-            "identifier": "poke_pfe:gilded_melon"
-        },
-        "tags": [
-            "crafting_table"
-        ],
-        "pattern": [
-            "NGN",
-            "GMG",
-            "NGN"
-        ],
-        "unlock": [
-            {
-                "item": "melon_block"
-            },
-            {
-                "item": "melon_slice"
-            },
-            {
-                "item": "melon_seeds"
-            },
-            {
-                "item": "poke_pfe:pocket_knife"
-            },
-            {
-                "item": "poke_pfe:carved_melon"
-            },
-            {
-                "item": "poke_pfe:gilded_carved_melon"
-            },
-            {
-                "item": "poke_pfe:carved_carved_melon"
-            }
-        ],
-        "key": {
-            "N": {
-                "item": "minecraft:gold_nugget"
-            },
-            "G": {
-                "item": "minecraft:gold_ingot"
-            },
-            "M": {
-                "item": "minecraft:melon_block"
-            }
-        },
-        "result": {
-            "item": "poke_pfe:gilded_melon"
-        }
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:gilded_melon"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["NGN", "GMG", "NGN"],
+    "unlock": [
+      {
+        "item": "minecraft:melon_block"
+      },
+      {
+        "item": "minecraft:melon_slice"
+      },
+      {
+        "item": "minecraft:melon_seeds"
+      },
+      {
+        "item": "poke_pfe:pocket_knife"
+      },
+      {
+        "item": "poke_pfe:carved_melon"
+      },
+      {
+        "item": "poke_pfe:gilded_carved_melon"
+      },
+      {
+        "item": "poke_pfe:carved_carved_melon"
+      }
+    ],
+    "key": {
+      "N": {
+        "item": "minecraft:gold_nugget"
+      },
+      "G": {
+        "item": "minecraft:gold_ingot"
+      },
+      "M": {
+        "item": "minecraft:melon_block"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:gilded_melon"
     }
+  }
 }

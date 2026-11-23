@@ -1,37 +1,31 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:golden_chicken"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:rotten_chicken"
-			},
-			{
-				"item": "gold_ingot"
-			}
-		],
-		"pattern": [
-			"III",
-			"IRI",
-			"III"
-		],
-		"key": {
-			"I": {
-				"item": "gold_ingot"
-			},
-			"R": {
-				"item": "poke_pfe:rotten_chicken"
-			}
-		},
-		"result": [
-			{
-				"item": "poke_pfe:golden_chicken"
-			}
-		]
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:golden_chicken"
+    },
+    "tags": ["crafting_table"],
+    "unlock": [
+      {
+        "item": "poke_pfe:rotten_chicken"
+      },
+      {
+        "item": "minecraft:gold_ingot"
+      }
+    ],
+    "pattern": ["III", "IRI", "III"],
+    "key": {
+      "I": {
+        "item": "minecraft:gold_ingot"
+      },
+      "R": {
+        "item": "poke_pfe:rotten_chicken"
+      }
+    },
+    "result": [
+      {
+        "item": "poke_pfe:golden_chicken"
+      }
+    ]
+  }
 }

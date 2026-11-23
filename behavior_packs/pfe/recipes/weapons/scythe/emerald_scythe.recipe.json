@@ -1,38 +1,32 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:emerald_scythe"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"ZZX",
-			" # ",
-			"Y  "
-		],
-		"unlock": [
-			{
-				"item": "emerald"
-			}
-		],
-		"key": {
-			"Y": {
-				"item": "emerald_block"
-			},
-			"X": {
-				"item": "emerald_block"
-			},
-			"Z": {
-				"item": "emerald"
-			},
-			"#": {
-				"item": "stick"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:emerald_scythe"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:emerald_scythe"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["ZZX", " # ", "Y  "],
+    "unlock": [
+      {
+        "item": "minecraft:emerald"
+      }
+    ],
+    "key": {
+      "Y": {
+        "item": "minecraft:emerald_block"
+      },
+      "X": {
+        "item": "minecraft:emerald_block"
+      },
+      "Z": {
+        "item": "minecraft:emerald"
+      },
+      "#": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:emerald_scythe"
+    }
+  }
 }

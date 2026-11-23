@@ -1,20 +1,16 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:recipe_furnace": {
-		"description": {
-			"identifier": "poke_pfe:smoked_beetroot"
-		},
-		"tags": [
-			"smoker",
-			"campfire",
-			"soul_campfire"
-		],
-		"unlock": [
-			{
-				"item": "beetroot"
-			}
-		],
-		"input": "beetroot",
-		"output": "poke_pfe:smoked_beetroot"
-	}
+  "format_version": "1.16.100",
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "poke_pfe:smoked_beetroot"
+    },
+    "tags": ["smoker", "campfire", "soul_campfire"],
+    "unlock": [
+      {
+        "item": "minecraft:beetroot"
+      }
+    ],
+    "input": "beetroot",
+    "output": "poke_pfe:smoked_beetroot"
+  }
 }

@@ -1,47 +1,41 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:spawn_cosmetic_trader"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			" B ",
-			"CXY",
-			" M "
-		],
-		"unlock": [
-			{
-				"tag": "minecraft:egg"
-			},
-			{
-				"item": "poke_pfe:copper_token"
-			},
-			{
-				"item": "dye"
-			}
-		],
-		"key": {
-			"X": {
-				"tag": "minecraft:egg"
-			},
-			"B": {
-				"item": "black_dye"
-			},
-			"C": {
-				"item": "cyan_dye"
-			},
-			"M": {
-				"item": "magenta_dye"
-			},
-			"Y": {
-				"item": "yellow_dye"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:spawn_cosmetic_trader"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:spawn_cosmetic_trader"
+    },
+    "tags": ["crafting_table"],
+    "pattern": [" B ", "CXY", " M "],
+    "unlock": [
+      {
+        "tag": "minecraft:egg"
+      },
+      {
+        "item": "poke_pfe:copper_token"
+      },
+      {
+        "item": "minecraft:dye"
+      }
+    ],
+    "key": {
+      "X": {
+        "tag": "minecraft:egg"
+      },
+      "B": {
+        "item": "minecraft:black_dye"
+      },
+      "C": {
+        "item": "minecraft:cyan_dye"
+      },
+      "M": {
+        "item": "minecraft:magenta_dye"
+      },
+      "Y": {
+        "item": "minecraft:yellow_dye"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:spawn_cosmetic_trader"
+    }
+  }
 }

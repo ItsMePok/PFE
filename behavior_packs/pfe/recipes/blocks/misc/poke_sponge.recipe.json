@@ -1,44 +1,38 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:poke_sponge"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:hellish_ingot"
-			},
-			{
-				"item": "sand"
-			},
-			{
-				"item": "sponge"
-			},
-			{
-				"item": "prismarine"
-			}
-		],
-		"pattern": [
-			"BGB",
-			"G#G",
-			"BGB"
-		],
-		"key": {
-			"#": {
-				"item": "poke_pfe:hellish_ingot"
-			},
-			"B": {
-				"item": "sand"
-			},
-			"G": {
-				"item": "prismarine"
-			}
-		},
-		"result": {
-			"item": "sponge"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:poke_sponge"
+    },
+    "tags": ["crafting_table"],
+    "unlock": [
+      {
+        "item": "poke_pfe:hellish_ingot"
+      },
+      {
+        "item": "minecraft:sand"
+      },
+      {
+        "item": "minecraft:sponge"
+      },
+      {
+        "item": "minecraft:prismarine"
+      }
+    ],
+    "pattern": ["BGB", "G#G", "BGB"],
+    "key": {
+      "#": {
+        "item": "poke_pfe:hellish_ingot"
+      },
+      "B": {
+        "item": "minecraft:sand"
+      },
+      "G": {
+        "item": "minecraft:prismarine"
+      }
+    },
+    "result": {
+      "item": "minecraft:sponge"
+    }
+  }
 }

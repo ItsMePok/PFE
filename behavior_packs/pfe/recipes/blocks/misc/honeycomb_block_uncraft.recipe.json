@@ -1,27 +1,25 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shapeless": {
-		"description": {
-			"identifier": "poke_pfe:honeycomb_block_uncraft"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"unlock": [
-			{
-				"item": "honeycomb_block"
-			}
-		],
-		"ingredients": [
-			{
-				"item": "honeycomb_block",
-				"count": 1
-			}
-		],
-		"result": {
-			"item": "honeycomb",
-			"count": 4
-		},
-		"priority": 5
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "poke_pfe:honeycomb_block_uncraft"
+    },
+    "tags": ["crafting_table"],
+    "unlock": [
+      {
+        "item": "minecraft:honeycomb_block"
+      }
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:honeycomb_block",
+        "count": 1
+      }
+    ],
+    "result": {
+      "item": "minecraft:honeycomb",
+      "count": 4
+    },
+    "priority": 5
+  }
 }

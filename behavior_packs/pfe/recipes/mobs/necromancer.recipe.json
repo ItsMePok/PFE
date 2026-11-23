@@ -1,47 +1,41 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:necromancer"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"PRP",
-			"BHB",
-			"PRP"
-		],
-		"unlock": [
-			{
-				"item": "purple_dye"
-			},
-			{
-				"item": "bone"
-			},
-			{
-				"item": "rotten_flesh"
-			},
-			{
-				"item": "heart_of_the_sea"
-			}
-		],
-		"key": {
-			"P": {
-				"item": "purple_dye"
-			},
-			"H": {
-				"item": "heart_of_the_sea"
-			},
-			"B": {
-				"item": "bone"
-			},
-			"R": {
-				"item": "rotten_flesh"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:spawn_necromancer"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:necromancer"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["PRP", "BHB", "PRP"],
+    "unlock": [
+      {
+        "item": "minecraft:purple_dye"
+      },
+      {
+        "item": "minecraft:bone"
+      },
+      {
+        "item": "minecraft:rotten_flesh"
+      },
+      {
+        "item": "minecraft:heart_of_the_sea"
+      }
+    ],
+    "key": {
+      "P": {
+        "item": "minecraft:purple_dye"
+      },
+      "H": {
+        "item": "minecraft:heart_of_the_sea"
+      },
+      "B": {
+        "item": "minecraft:bone"
+      },
+      "R": {
+        "item": "minecraft:rotten_flesh"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:spawn_necromancer"
+    }
+  }
 }

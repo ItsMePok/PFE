@@ -1,35 +1,30 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:honey_tiles"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"unlock": [
-			{
-				"item": "honeycomb"
-			},
-			{
-				"item": "honeycomb_block"
-			},
-			{
-				"item": "poke_pfe:honey_bricks"
-			}
-		],
-		"key": {
-			"C": {
-				"item": "poke_pfe:honey_bricks"
-			}
-		},
-		"pattern": [
-			"CC",
-			"CC"
-		],
-		"result": {
-			"item": "poke_pfe:honey_tiles",
-			"count": 4
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:honey_tiles"
+    },
+    "tags": ["crafting_table"],
+    "unlock": [
+      {
+        "item": "minecraft:honeycomb"
+      },
+      {
+        "item": "minecraft:honeycomb_block"
+      },
+      {
+        "item": "poke_pfe:honey_bricks"
+      }
+    ],
+    "key": {
+      "C": {
+        "item": "poke_pfe:honey_bricks"
+      }
+    },
+    "pattern": ["CC", "CC"],
+    "result": {
+      "item": "poke_pfe:honey_tiles",
+      "count": 4
+    }
+  }
 }

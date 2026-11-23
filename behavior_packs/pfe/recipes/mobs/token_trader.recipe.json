@@ -1,53 +1,47 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:token_trader"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			" E ",
-			"EXE",
-			" E "
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:copper_token"
-			},
-			{
-				"item": "poke_pfe:iron_token"
-			},
-			{
-				"item": "poke_pfe:golden_token"
-			},
-			{
-				"item": "poke_pfe:diamond_token"
-			},
-			{
-				"item": "poke_pfe:platinum_token"
-			},
-			{
-				"item": "copper_ingot"
-			},
-			{
-				"item": "iron_ingot"
-			},
-			{
-				"tag": "minecraft:egg"
-			}
-		],
-		"key": {
-			"X": {
-				"tag": "minecraft:egg"
-			},
-			"E": {
-				"item": "copper_ingot"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:spawn_token_trader"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:token_trader"
+    },
+    "tags": ["crafting_table"],
+    "pattern": [" E ", "EXE", " E "],
+    "unlock": [
+      {
+        "item": "poke_pfe:copper_token"
+      },
+      {
+        "item": "poke_pfe:iron_token"
+      },
+      {
+        "item": "poke_pfe:golden_token"
+      },
+      {
+        "item": "poke_pfe:diamond_token"
+      },
+      {
+        "item": "poke_pfe:platinum_token"
+      },
+      {
+        "item": "minecraft:copper_ingot"
+      },
+      {
+        "item": "minecraft:iron_ingot"
+      },
+      {
+        "tag": "minecraft:egg"
+      }
+    ],
+    "key": {
+      "X": {
+        "tag": "minecraft:egg"
+      },
+      "E": {
+        "item": "minecraft:copper_ingot"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:spawn_token_trader"
+    }
+  }
 }

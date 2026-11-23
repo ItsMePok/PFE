@@ -1,34 +1,27 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:wither_spawner"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"SSS",
-			"###",
-			" # "
-		],
-		"unlock": [
-			{
-				"item": "skull"
-			}
-		],
-		"key": {
-			"#": {
-				"item": "soul_sand"
-			},
-			"S": {
-				"item": "skull",
-				"data": 1
-			}
-		},
-		"result": {
-			"item": "poke_pfe:wither_spawner",
-			"count": 1
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:wither_spawner"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["SSS", "###", " # "],
+    "unlock": [
+      {
+        "item": "minecraft:wither_skeleton_skull"
+      }
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:soul_sand"
+      },
+      "S": {
+        "item": "minecraft:wither_skeleton_skull"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:wither_spawner",
+      "count": 1
+    }
+  }
 }

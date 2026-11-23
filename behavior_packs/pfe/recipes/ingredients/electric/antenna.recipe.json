@@ -1,36 +1,30 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:antenna"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"X",
-			"#",
-			"E"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:electric_component"
-			}
-		],
-		"key": {
-			"#": {
-				"item": "iron_bars"
-			},
-			"E": {
-				"item": "poke_pfe:electric_component"
-			},
-			"X": {
-				"item": "poke_pfe:receiver"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:antenna",
-			"count": 1
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:antenna"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["X", "#", "E"],
+    "unlock": [
+      {
+        "item": "poke_pfe:electric_component"
+      }
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:iron_bars"
+      },
+      "E": {
+        "item": "poke_pfe:electric_component"
+      },
+      "X": {
+        "item": "poke_pfe:receiver"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:antenna",
+      "count": 1
+    }
+  }
 }

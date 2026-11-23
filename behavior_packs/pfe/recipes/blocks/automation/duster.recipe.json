@@ -1,53 +1,47 @@
 {
-	"format_version": "1.20.10",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:duster"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"CPC",
-			"BGD",
-			"CPC"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:cobblestone_gen"
-			},
-			{
-				"item": "poke_pfe:cobalt_ingot"
-			},
-			{
-				"item": "planks"
-			},
-			{
-				"item": "poke_pfe:gps_module"
-			},
-			{
-				"item": "brush"
-			}
-		],
-		"key": {
-			"C": {
-				"item": "poke_pfe:cobalt_ingot"
-			},
-			"P": {
-				"item": "planks"
-			},
-			"G": {
-				"item": "poke_pfe:gps_module"
-			},
-			"B": {
-				"item": "brush"
-			},
-			"D": {
-				"item": "brush"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:duster"
-		}
-	}
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:duster"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["CPC", "BGD", "CPC"],
+    "unlock": [
+      {
+        "item": "poke_pfe:cobblestone_gen"
+      },
+      {
+        "item": "poke_pfe:cobalt_ingot"
+      },
+      {
+        "item": "minecraft:planks"
+      },
+      {
+        "item": "poke_pfe:gps_module"
+      },
+      {
+        "item": "minecraft:brush"
+      }
+    ],
+    "key": {
+      "C": {
+        "item": "poke_pfe:cobalt_ingot"
+      },
+      "P": {
+        "item": "minecraft:planks"
+      },
+      "G": {
+        "item": "poke_pfe:gps_module"
+      },
+      "B": {
+        "item": "minecraft:brush"
+      },
+      "D": {
+        "item": "minecraft:brush"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:duster"
+    }
+  }
 }

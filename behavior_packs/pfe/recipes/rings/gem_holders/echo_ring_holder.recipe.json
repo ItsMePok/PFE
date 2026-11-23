@@ -1,32 +1,26 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:echo_holder"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"unlock": [
-			{
-				"item": "echo_shard"
-			}
-		],
-		"key": {
-			"X": {
-				"item": "echo_shard"
-			},
-			"S": {
-				"item": "sculk_sensor"
-			}
-		},
-		"pattern": [
-			" X ",
-			"XSX",
-			" X "
-		],
-		"result": {
-			"item": "poke_pfe:echo_holder"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:echo_holder"
+    },
+    "tags": ["crafting_table"],
+    "unlock": [
+      {
+        "item": "minecraft:echo_shard"
+      }
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:echo_shard"
+      },
+      "S": {
+        "item": "minecraft:sculk_sensor"
+      }
+    },
+    "pattern": [" X ", "XSX", " X "],
+    "result": {
+      "item": "poke_pfe:echo_holder"
+    }
+  }
 }

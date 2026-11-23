@@ -1,38 +1,32 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:furnace_golem"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			" X ",
-			"YFY",
-			" Y "
-		],
-		"unlock": [
-			{
-				"item": "carved_pumpkin"
-			},
-			{
-				"item": "poke_pfe:godly_ingot"
-			}
-		],
-		"key": {
-			"X": {
-				"item": "carved_pumpkin"
-			},
-			"F": {
-				"item": "blast_furnace"
-			},
-			"Y": {
-				"item": "poke_pfe:godly_block"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:furnace_golem"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:furnace_golem"
+    },
+    "tags": ["crafting_table"],
+    "pattern": [" X ", "YFY", " Y "],
+    "unlock": [
+      {
+        "item": "minecraft:carved_pumpkin"
+      },
+      {
+        "item": "poke_pfe:godly_ingot"
+      }
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:carved_pumpkin"
+      },
+      "F": {
+        "item": "minecraft:blast_furnace"
+      },
+      "Y": {
+        "item": "poke_pfe:godly_block"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:furnace_golem"
+    }
+  }
 }

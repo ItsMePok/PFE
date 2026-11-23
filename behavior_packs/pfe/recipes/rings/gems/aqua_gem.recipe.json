@@ -1,49 +1,47 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shapeless": {
-		"description": {
-			"identifier": "poke_pfe:aqua_gem"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"ingredients": [
-			{
-				"item": "poke_pfe:raw_sporefish"
-			},
-			{
-				"item": "turtle_scute"
-			},
-			{
-				"item": "pufferfish"
-			},
-			{
-				"item": "tropical_fish"
-			},
-			{
-				"item": "heart_of_the_sea"
-			},
-			{
-				"item": "salmon"
-			},
-			{
-				"item": "cod"
-			},
-			{
-				"item": "prismarine_shard"
-			},
-			{
-				"item": "nautilus_shell"
-			}
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:gem_holder"
-			}
-		],
-		"result": {
-			"count": 1,
-			"item": "poke_pfe:aqua_gem"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "poke_pfe:aqua_gem"
+    },
+    "tags": ["crafting_table"],
+    "ingredients": [
+      {
+        "item": "poke_pfe:raw_sporefish"
+      },
+      {
+        "item": "minecraft:turtle_scute"
+      },
+      {
+        "item": "minecraft:pufferfish"
+      },
+      {
+        "item": "minecraft:tropical_fish"
+      },
+      {
+        "item": "minecraft:heart_of_the_sea"
+      },
+      {
+        "item": "minecraft:salmon"
+      },
+      {
+        "item": "minecraft:cod"
+      },
+      {
+        "item": "minecraft:prismarine_shard"
+      },
+      {
+        "item": "minecraft:nautilus_shell"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "poke_pfe:gem_holder"
+      }
+    ],
+    "result": {
+      "count": 1,
+      "item": "poke_pfe:aqua_gem"
+    }
+  }
 }

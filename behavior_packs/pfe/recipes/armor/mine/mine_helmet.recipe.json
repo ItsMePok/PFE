@@ -1,47 +1,41 @@
 {
-    "format_version": "1.20.60",
-    "minecraft:recipe_shaped": {
-        "description": {
-            "identifier": "poke_pfe:mine_helmet"
-        },
-        "tags": [
-            "crafting_table"
-        ],
-        "pattern": [
-            "WCW",
-            "PPP",
-            "PRP"
-        ],
-        "unlock": [
-            {
-                "item": "poke_pfe:cobalt_ingot"
-            },
-            {
-                "item": "redstone"
-            },
-            {
-                "item": "poke_pfe:wire"
-            },
-            {
-                "item": "poke_pfe:plastic"
-            }
-        ],
-        "key": {
-            "C": {
-                "item": "poke_pfe:cobalt_ingot"
-            },
-            "P": {
-                "item": "poke_pfe:plastic"
-            },
-            "R": {
-                "item": "redstone"
-            },
-            "W": {
-                "item": "poke_pfe:wire"
-            }
-        },
-        "result": {
-            "item": "poke_pfe:miner_helmet"
-        }
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:mine_helmet"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["WCW", "PPP", "PRP"],
+    "unlock": [
+      {
+        "item": "poke_pfe:cobalt_ingot"
+      },
+      {
+        "item": "minecraft:redstone"
+      },
+      {
+        "item": "poke_pfe:wire"
+      },
+      {
+        "item": "poke_pfe:plastic"
+      }
+    ],
+    "key": {
+      "C": {
+        "item": "poke_pfe:cobalt_ingot"
+      },
+      "P": {
+        "item": "poke_pfe:plastic"
+      },
+      "R": {
+        "item": "minecraft:redstone"
+      },
+      "W": {
+        "item": "poke_pfe:wire"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:miner_helmet"
     }
+  }
 }

@@ -1,38 +1,32 @@
 {
-	"format_version": "1.20.10",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:cobalt_pickaxe"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"CCC",
-			" S ",
-			" S "
-		],
-		"unlock": [
-			{
-				"item": "stick"
-			},
-			{
-				"item": "poke_pfe:raw_cobalt"
-			},
-			{
-				"item": "poke_pfe:cobalt_ingot"
-			}
-		],
-		"key": {
-			"C": {
-				"item": "poke_pfe:cobalt_ingot"
-			},
-			"S": {
-				"item": "stick"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:cobalt_pickaxe"
-		}
-	}
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:cobalt_pickaxe"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["CCC", " S ", " S "],
+    "unlock": [
+      {
+        "item": "minecraft:stick"
+      },
+      {
+        "item": "poke_pfe:raw_cobalt"
+      },
+      {
+        "item": "poke_pfe:cobalt_ingot"
+      }
+    ],
+    "key": {
+      "C": {
+        "item": "poke_pfe:cobalt_ingot"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:cobalt_pickaxe"
+    }
+  }
 }

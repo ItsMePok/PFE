@@ -1,33 +1,27 @@
 {
-    "format_version": "1.20.60",
-    "minecraft:recipe_shaped": {
-        "description": {
-            "identifier": "poke_pfe:zombifier"
-        },
-        "pattern": [
-            " R ",
-            "RNR",
-            " R "
-        ],
-        "unlock": [
-            {
-                "item": "poke_pfe:necromancer_staff"
-            }
-        ],
-        "tags": [
-            "crafting_table"
-        ],
-        "group": "tools",
-        "key": {
-            "R": {
-                "item": "rotten_flesh"
-            },
-            "N": {
-                "item": "poke_pfe:necromancer_staff"
-            }
-        },
-        "result": {
-            "item": "poke_pfe:zombifier"
-        }
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:zombifier"
+    },
+    "pattern": [" R ", "RNR", " R "],
+    "unlock": [
+      {
+        "item": "poke_pfe:necromancer_staff"
+      }
+    ],
+    "tags": ["crafting_table"],
+    "group": "tools",
+    "key": {
+      "R": {
+        "item": "minecraft:rotten_flesh"
+      },
+      "N": {
+        "item": "poke_pfe:necromancer_staff"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:zombifier"
     }
+  }
 }

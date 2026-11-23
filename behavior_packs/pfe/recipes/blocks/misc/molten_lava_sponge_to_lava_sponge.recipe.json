@@ -1,38 +1,34 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:molten_lava_sponge_to_lava_sponge"
-		},
-		"pattern": [
-			"XB"
-		],
-		"key": {
-			"B": {
-				"item": "bucket"
-			},
-			"X": {
-				"item": "poke_pfe:molten_lava_sponge"
-			}
-		},
-		"unlock": [
-			{
-				"item": "poke_pfe:molten_lava_sponge"
-			}
-		],
-		"tags": [
-			"crafting_table"
-		],
-		"result": [
-			{
-				"item": "poke_pfe:lava_sponge",
-				"count": 1
-			},
-			{
-				"item": "minecraft:lava_bucket",
-				"count": 1
-			}
-		],
-		"priority": 0
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:molten_lava_sponge_to_lava_sponge"
+    },
+    "pattern": ["XB"],
+    "key": {
+      "B": {
+        "item": "minecraft:bucket"
+      },
+      "X": {
+        "item": "poke_pfe:molten_lava_sponge"
+      }
+    },
+    "unlock": [
+      {
+        "item": "poke_pfe:molten_lava_sponge"
+      }
+    ],
+    "tags": ["crafting_table"],
+    "result": [
+      {
+        "item": "poke_pfe:lava_sponge",
+        "count": 1
+      },
+      {
+        "item": "minecraft:lava_bucket",
+        "count": 1
+      }
+    ],
+    "priority": 0
+  }
 }

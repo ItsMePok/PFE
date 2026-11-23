@@ -1,37 +1,31 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:shadow_gem"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"key": {
-			"H": {
-				"item": "poke_pfe:shade_ingot"
-			},
-			"S": {
-				"item": "poke_pfe:cobalt_glass"
-			},
-			"X": {
-				"item": "potion",
-				"data": 7
-			}
-		},
-		"unlock": [
-			{
-				"item": "poke_pfe:diamond_gem_holder"
-			}
-		],
-		"pattern": [
-			"SXS",
-			"XHX",
-			"SXS"
-		],
-		"result": {
-			"count": 1,
-			"item": "poke_pfe:shadow_gem"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:shadow_gem"
+    },
+    "tags": ["crafting_table"],
+    "key": {
+      "H": {
+        "item": "poke_pfe:shade_ingot"
+      },
+      "S": {
+        "item": "poke_pfe:cobalt_glass"
+      },
+      "X": {
+        "item": "minecraft:potion",
+        "data": 7
+      }
+    },
+    "unlock": [
+      {
+        "item": "poke_pfe:diamond_gem_holder"
+      }
+    ],
+    "pattern": ["SXS", "XHX", "SXS"],
+    "result": {
+      "count": 1,
+      "item": "poke_pfe:shadow_gem"
+    }
+  }
 }

@@ -1,42 +1,36 @@
 {
-    "format_version": "1.20.60",
-    "minecraft:recipe_shaped": {
-        "description": {
-            "identifier": "poke_pfe:netherite_upgrader"
-        },
-        "tags": [
-            "crafting_table"
-        ],
-        "group": "upgraders",
-        "pattern": [
-            " XX",
-            "WYX",
-            "ZW "
-        ],
-        "unlock": [
-            {
-                "item": "netherite_scrap"
-            },
-            {
-                "item": "poke_pfe:diamond_upgrade_core"
-            }
-        ],
-        "key": {
-            "X": {
-                "item": "netherite_block"
-            },
-            "W": {
-                "item": "netherite_block"
-            },
-            "Y": {
-                "item": "poke_pfe:diamond_upgrade_core"
-            },
-            "Z": {
-                "item": "stick"
-            }
-        },
-        "result": {
-            "item": "poke_pfe:netherite_upgrader"
-        }
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:netherite_upgrader"
+    },
+    "tags": ["crafting_table"],
+    "group": "upgraders",
+    "pattern": [" XX", "WYX", "ZW "],
+    "unlock": [
+      {
+        "item": "minecraft:netherite_scrap"
+      },
+      {
+        "item": "poke_pfe:diamond_upgrade_core"
+      }
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:netherite_block"
+      },
+      "W": {
+        "item": "minecraft:netherite_block"
+      },
+      "Y": {
+        "item": "poke_pfe:diamond_upgrade_core"
+      },
+      "Z": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:netherite_upgrader"
     }
+  }
 }

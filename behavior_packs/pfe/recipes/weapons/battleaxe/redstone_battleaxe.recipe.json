@@ -1,35 +1,29 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:redstone_battleaxe"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"DDD",
-			"DSD",
-			" D "
-		],
-		"unlock": [
-			{
-				"item": "redstone"
-			},
-			{
-				"item": "redstone_block"
-			}
-		],
-		"key": {
-			"D": {
-				"item": "redstone"
-			},
-			"S": {
-				"item": "stick"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:redstone_battleaxe"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:redstone_battleaxe"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["DDD", "DSD", " D "],
+    "unlock": [
+      {
+        "item": "minecraft:redstone"
+      },
+      {
+        "item": "minecraft:redstone_block"
+      }
+    ],
+    "key": {
+      "D": {
+        "item": "minecraft:redstone"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:redstone_battleaxe"
+    }
+  }
 }

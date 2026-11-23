@@ -1,49 +1,43 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:molten_slimeball"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"#C#",
-			"CRC",
-			"#C#"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:demonic_ingot"
-			},
-			{
-				"item": "magma_cream"
-			},
-			{
-				"item": "slime_ball"
-			}
-		],
-		"key": {
-			"#": {
-				"item": "lava_bucket"
-			},
-			"C": {
-				"item": "poke_pfe:demonic_ingot"
-			},
-			"R": {
-				"item": "magma_cream"
-			}
-		},
-		"result": [
-			{
-				"item": "poke_pfe:molten_slimeball",
-				"count": 4
-			},
-			{
-				"item": "bucket",
-				"count": 4
-			}
-		],
-		"priority": 0
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:molten_slimeball"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["#C#", "CRC", "#C#"],
+    "unlock": [
+      {
+        "item": "poke_pfe:demonic_ingot"
+      },
+      {
+        "item": "minecraft:magma_cream"
+      },
+      {
+        "item": "minecraft:slime_ball"
+      }
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:lava_bucket"
+      },
+      "C": {
+        "item": "poke_pfe:demonic_ingot"
+      },
+      "R": {
+        "item": "minecraft:magma_cream"
+      }
+    },
+    "result": [
+      {
+        "item": "poke_pfe:molten_slimeball",
+        "count": 4
+      },
+      {
+        "item": "minecraft:bucket",
+        "count": 4
+      }
+    ],
+    "priority": 0
+  }
 }

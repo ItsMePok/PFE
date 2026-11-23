@@ -1,25 +1,23 @@
 {
-    "format_version": "1.16.100",
-    "minecraft:recipe_shapeless": {
-        "tags": [
-            "crafting_table"
-        ],
-        "description": {
-            "identifier": "poke_pfe:bundled_sugarcane"
-        },
-        "unlock": [
-            {
-                "item": "reeds"
-            }
-        ],
-        "ingredients": [
-            {
-                "item": "reeds",
-                "count": 9
-            }
-        ],
-        "result": {
-            "item": "poke_pfe:bundled_sugarcane"
-        }
+  "format_version": "1.16.100",
+  "minecraft:recipe_shapeless": {
+    "tags": ["crafting_table"],
+    "description": {
+      "identifier": "poke_pfe:bundled_sugarcane"
+    },
+    "unlock": [
+      {
+        "item": "minecraft:reeds"
+      }
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:reeds",
+        "count": 9
+      }
+    ],
+    "result": {
+      "item": "poke_pfe:bundled_sugarcane"
     }
+  }
 }

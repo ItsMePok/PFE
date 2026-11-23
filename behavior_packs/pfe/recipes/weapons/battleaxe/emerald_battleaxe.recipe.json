@@ -1,35 +1,29 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:emerald_battleaxe"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"DDD",
-			"DSD",
-			" B "
-		],
-		"unlock": [
-			{
-				"item": "emerald"
-			}
-		],
-		"key": {
-			"B": {
-				"item": "emerald_block"
-			},
-			"D": {
-				"item": "emerald"
-			},
-			"S": {
-				"item": "stick"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:emerald_battleaxe"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:emerald_battleaxe"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["DDD", "DSD", " B "],
+    "unlock": [
+      {
+        "item": "minecraft:emerald"
+      }
+    ],
+    "key": {
+      "B": {
+        "item": "minecraft:emerald_block"
+      },
+      "D": {
+        "item": "minecraft:emerald"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:emerald_battleaxe"
+    }
+  }
 }
