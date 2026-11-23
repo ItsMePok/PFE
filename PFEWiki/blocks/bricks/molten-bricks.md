@@ -25,6 +25,52 @@ description: Last updated to match v1.3.06
 
 {% tabs %}
 
+{% tab title="Crafting" %}
+
+<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the<br><a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
+
+|||
+| :-: | :-: |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutMolten.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutMolten.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutMolten.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutMolten.png?raw=true) |
+
+Items:
+
+* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutMolten.png?raw=true" alt="" data-size="line"> [Cut Molten](..\cut-blocks\cut-molten.md)
+
+Outputs:
+
+* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/MoltenBricks.png?raw=true" alt="" data-size="line"> [Molten Bricks](molten-bricks.md)
+
+Recipe can be unlocked with:
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/MoltenBlock.png?raw=true" alt="" data-size="line"> Block of Molten
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/molten_slimeball.png?raw=true" alt="" data-size="line"> Molten Slimeball
+
+{% endtab %}
+
+{% tab title="Crafting" %}
+
+<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the<br><a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
+
+|||
+| :-: | :-: |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
+
+
+Items:
+
+Outputs:
+
+* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/MoltenBricks.png?raw=true" alt="" data-size="line"> [Molten Bricks](molten-bricks.md)
+
+Recipe can be unlocked with:
+
+* <img src="undefined" alt="" data-size="line"> ERROR (poke_pfe:molten_bricks_slab)
+
+{% endtab %}
+
 {% endtabs %}
 
 This page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool

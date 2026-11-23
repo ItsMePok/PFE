@@ -73,7 +73,7 @@ Outputs:
 
 Recipe can be unlocked with:
 
-* <img src="undefined" alt="" data-size="line"> Astral Bricks Slab
+* <img src="undefined" alt="" data-size="line"> ERROR (poke_pfe:astral_bricks_slab)
 
 {% endtab %}
 

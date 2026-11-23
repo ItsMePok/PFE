@@ -1,8 +1,21 @@
-import index from "../index.json" with {type: 'json'};
+import index from "../index.json" with { type: "json" };
 
-import { writeFileSync, readFileSync } from "fs";
-import { GetDisplayNameByIdentifier, GetImageLink, MakeDestroySpeed, MakeIdentifierSection, MakeMapColor, MakeNoteSound, MakeObtainingSection, MakeRarity, MakeStackSize } from "./functions.ts";
+import { writeFileSync } from "fs";
+import {
+  AddRecipesToIndex,
+  GetDisplayNameByIdentifier,
+  GetImageLink,
+  MakeDestroySpeed,
+  MakeIdentifierSection,
+  MakeMapColor,
+  MakeNoteSound,
+  MakeObtainingSection,
+  MakeRarity,
+  MakeStackSize,
+} from "./functions.ts";
 import { VERSION } from "./consts.ts";
+
+AddRecipesToIndex(index);
 
 console.log(index.default_info.BP);
 /*
@@ -19,50 +32,47 @@ COMPONENTS
 
 */
 
-
-
-
 for (const item of index.index) {
-    if (item.run === false) continue;
-    const FILE_LOCATION = `${item.wiki_page}`
-    let file = ``
+  if (item.run === false) continue;
+  const FILE_LOCATION = `${item.wiki_page}`;
+  let file = ``;
 
-    //Make Page Description:
-    file = `${file}---\ndescription: Last updated to match v${VERSION}\n---\n`;
-    //Make Title:
-    file = `${file}\n# ${GetDisplayNameByIdentifier(item.identifier)}\n`;
+  //Make Page Description:
+  file = `${file}---\ndescription: Last updated to match v${VERSION}\n---\n`;
 
-    //Make main image:
-    file = `${file}\n<figure><img src="${GetImageLink(item.identifier)}" alt=""><figcaption></figcaption></figure>\n`;
+  //Make Title:
+  file = `${file}\n# ${GetDisplayNameByIdentifier(item.identifier)}\n`;
 
-    //Make Identifier:
-    file = MakeIdentifierSection(file, item);
+  //Make main image:
+  file = `${file}\n<figure><img src="${GetImageLink(item.identifier)}" alt=""><figcaption></figcaption></figure>\n`;
 
-    //Make Rarity:
-    file = MakeRarity(file, item);
+  //Make Identifier:
+  file = MakeIdentifierSection(file, item);
 
-    //Make Stack Size:
-    file = MakeStackSize(file, item);
+  //Make Rarity:
+  file = MakeRarity(file, item);
 
-    // Make Note Sound:
-    file = MakeNoteSound(file,item);
+  //Make Stack Size:
+  file = MakeStackSize(file, item);
 
-    //Make Map Color:
-    file = MakeMapColor(file, item);
+  // Make Note Sound:
+  file = MakeNoteSound(file, item);
 
-    //Make Break Info:
-    file = MakeDestroySpeed(file, item);
+  //Make Map Color:
+  file = MakeMapColor(file, item);
 
-    //Make Obtaining:
-    file = MakeObtainingSection(file, item);
+  //Make Break Info:
+  file = MakeDestroySpeed(file, item);
 
-    //End Tabs
-    file = `${file}\n{% endtabs %}\n`;
+  //Make Obtaining:
+  file = MakeObtainingSection(file, item);
 
-    //Add automated disclaimer:
-    file = `${file}\nThis page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool\n`;
-    //Write File:
-    writeFileSync(FILE_LOCATION, file, { encoding: "utf8" });
-    console.log(FILE_LOCATION);
+  //End Tabs
+  file = `${file}\n{% endtabs %}\n`;
+
+  //Add automated disclaimer:
+  file = `${file}\nThis page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool\n`;
+  //Write File:
+  writeFileSync(FILE_LOCATION, file, { encoding: "utf8" });
+  console.log(FILE_LOCATION);
 }
-

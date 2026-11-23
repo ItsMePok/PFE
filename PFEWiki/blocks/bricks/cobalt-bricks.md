@@ -25,6 +25,54 @@ description: Last updated to match v1.3.06
 
 {% tabs %}
 
+{% tab title="Crafting" %}
+
+<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the<br><a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
+
+|||
+| :-: | :-: |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutCobalt.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutCobalt.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutCobalt.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutCobalt.png?raw=true) |
+
+Items:
+
+* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutCobalt.png?raw=true" alt="" data-size="line"> [Cut Cobalt](..\cut-blocks\cut-cobalt.md)
+
+Outputs:
+
+* 4x <img src="undefined" alt="" data-size="line"> [Cobalt Bricks](cobalt-bricks.md)
+
+Recipe can be unlocked with:
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobaltBlock.png?raw=true" alt="" data-size="line"> Block of Cobalt
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="" data-size="line"> Cobalt Ingot
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutCobalt.png?raw=true" alt="" data-size="line"> [Cut Cobalt](..\cut-blocks\cut-cobalt.md)
+
+{% endtab %}
+
+{% tab title="Crafting" %}
+
+<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the<br><a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
+
+|||
+| :-: | :-: |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
+
+
+Items:
+
+Outputs:
+
+* undefinedx <img src="undefined" alt="" data-size="line"> [Cobalt Bricks](cobalt-bricks.md)
+
+Recipe can be unlocked with:
+
+* <img src="undefined" alt="" data-size="line"> ERROR (poke_pfe:cobalt_bricks_slab)
+
+{% endtab %}
+
 {% endtabs %}
 
 This page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool

@@ -25,6 +25,50 @@ description: Last updated to match v1.3.06
 
 {% tabs %}
 
+{% tab title="Crafting" %}
+
+<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the<br><a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
+
+||||
+| :-: | :-: | :-: |
+| ![](https://minecraft.wiki/images/Iron_Ingot_JE3_BE2.png?849cb) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_ingot.png?raw=true) | ![](https://minecraft.wiki/images/Redstone_Dust_JE2_BE2.png?8cf17) |
+| ![](https://minecraft.wiki/images/Iron_Ingot_JE3_BE2.png?849cb) | ![](undefined) | ![](https://minecraft.wiki/images/Blue_Ice_JE1.png?b5deb) |
+| ![](https://minecraft.wiki/images/Iron_Ingot_JE3_BE2.png?849cb) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_ingot.png?raw=true) | ![](https://minecraft.wiki/images/Iron_Ingot_JE3_BE2.png?849cb) |
+
+Items:
+
+* 4x <img src="https://minecraft.wiki/images/Iron_Ingot_JE3_BE2.png?849cb" alt="" data-size="line"> [Iron Ingot](https://minecraft.wiki/w/Iron_Ingot)
+
+* 2x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_ingot.png?raw=true" alt="" data-size="line"> Onyx Ingot
+
+*  <img src="https://minecraft.wiki/images/Redstone_Dust_JE2_BE2.png?8cf17" alt="" data-size="line"> [Redstone Dust](https://minecraft.wiki/w/Redstone_Dust)
+
+*  <img src="undefined" alt="" data-size="line"> Electric Component
+
+*  <img src="https://minecraft.wiki/images/Blue_Ice_JE1.png?b5deb" alt="" data-size="line"> [Blue Ice](https://minecraft.wiki/w/Blue_Ice)
+
+Outputs:
+
+* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/FlashFreezer.png?raw=true" alt="" data-size="line"> [Flash Freezer](flash-freezer.md)
+
+Recipe can be unlocked with:
+
+* <img src="https://minecraft.wiki/images/Iron_Ingot_JE3_BE2.png?849cb" alt="" data-size="line"> [Iron Ingot](https://minecraft.wiki/w/Iron_Ingot)
+
+* <img src="https://minecraft.wiki/images/Redstone_Dust_JE2_BE2.png?8cf17" alt="" data-size="line"> [Redstone Dust](https://minecraft.wiki/w/Redstone_Dust)
+
+* <img src="https://minecraft.wiki/images/Ice_JE4_BE6.png?b2bcc" alt="" data-size="line"> [Ice](https://minecraft.wiki/w/Ice)
+
+* <img src="https://minecraft.wiki/images/Packed_Ice_JE2_BE3.png?b444d" alt="" data-size="line"> [Packed Ice](https://minecraft.wiki/w/Packed_Ice)
+
+* <img src="https://minecraft.wiki/images/Blue_Ice_JE1.png?b5deb" alt="" data-size="line"> [Blue Ice](https://minecraft.wiki/w/Blue_Ice)
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_ingot.png?raw=true" alt="" data-size="line"> Onyx Ingot
+
+* <img src="undefined" alt="" data-size="line"> Electric Component
+
+{% endtab %}
+
 {% endtabs %}
 
 This page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool

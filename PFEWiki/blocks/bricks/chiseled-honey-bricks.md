@@ -25,6 +25,29 @@ description: Last updated to match v1.3.06
 
 {% tabs %}
 
+{% tab title="Crafting" %}
+
+<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the<br><a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
+
+||
+| :-: |
+| ![](undefined) |
+| ![](undefined) |
+
+Items:
+
+* 2x <img src="undefined" alt="" data-size="line"> Honey Brick Slab
+
+Outputs:
+
+* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/ChiseledHoneyBricks.png?raw=true" alt="" data-size="line"> [Chiseled Honey Bricks](chiseled-honey-bricks.md)
+
+Recipe can be unlocked with:
+
+* <img src="undefined" alt="" data-size="line"> Honey Brick Slab
+
+{% endtab %}
+
 {% endtabs %}
 
 This page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool

@@ -1,1385 +1,1459 @@
 {
-    "default_info": {
-        "RP": "PFE-EXP/resource_packs/pfe",
-        "BP": "PFE-EXP/behavior_packs/pfe"
+  "default_info": {
+    "RP": "PFE-EXP/resource_packs/pfe",
+    "BP": "PFE-EXP/behavior_packs/pfe"
+  },
+  "dev": [
+    {
+      "run": false,
+      "identifier": "poke_pfe:",
+      "wiki_page": "PFEWiki/blocks/.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/.block.json",
+        "recipes": []
+      }
+    }
+  ],
+  "index": [
+    {
+      "run": false,
+      "identifier": "example:example",
+      "wiki_page": "PFEWiki/example.md",
+      "components": {
+        "type": "example",
+        "name": "Example",
+        "block_file_path": null,
+        "item_file_path": null,
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/example.recipe.json"
+        ]
+      }
     },
-    "dev": [
-        {
-            "run": false,
-            "identifier": "poke_pfe:",
-            "wiki_page": "PFEWiki/blocks/.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/.block.json",
-                "recipes": []
-            }
-        }
-    ],
-    "index": [
-        {
-            "run": false,
-            "identifier": "example:example",
-            "wiki_page": "PFEWiki/example.md",
-            "components": {
-                "type": "example",
-                "name": "Example",
-                "block_file_path": null,
-                "item_file_path": null,
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/example.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:barometer",
-            "wiki_page": "PFEWiki/blocks/automation/barometer.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/auto/barometer.block.json",
-                "recipes": []
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:elevator",
-            "wiki_page": "PFEWiki/blocks/automation/elevator.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/auto/elevator.block.json",
-                "recipes": []
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:fisher",
-            "wiki_page": "PFEWiki/blocks/automation/fisher.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/auto/fisher.block.json",
-                "recipes": []
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:flash_freezer",
-            "wiki_page": "PFEWiki/blocks/automation/flash-freezer.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/auto/flash_freezer.block.json",
-                "recipes": []
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:omnivator",
-            "wiki_page": "PFEWiki/blocks/automation/omnivator.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/auto/omnivator.block.json",
-                "recipes": []
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:astral_bricks",
-            "wiki_page": "PFEWiki/blocks/bricks/astral-bricks.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/bricks/astral_bricks.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/astral/astral_bricks.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/astral/astral_bricks_stonecut.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/astral/astral_bricks_slab_to_bricks.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:banished_bricks",
-            "wiki_page": "PFEWiki/blocks/bricks/banished-bricks.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/bricks/banished_bricks.block.json",
-                "recipes": []
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:chiseled_honey_bricks",
-            "wiki_page": "PFEWiki/blocks/bricks/chiseled-honey-bricks.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/honey/chiseled_honey_bricks.block.json",
-                "recipes": []
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cobalt_bricks",
-            "wiki_page": "PFEWiki/blocks/bricks/cobalt-bricks.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/bricks/cobalt_bricks.block.json",
-                "recipes": []
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cracked_astral_bricks",
-            "wiki_page": "PFEWiki/blocks/bricks/cracked-astral-bricks.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cracked_bricks/cracked_astral_bricks.block.json",
-                "recipes": []
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cracked_banished_bricks",
-            "wiki_page": "PFEWiki/blocks/bricks/cracked-banished-bricks.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cracked_bricks/cracked_banished_bricks.block.json",
-                "recipes": []
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cracked_cobalt_bricks",
-            "wiki_page": "PFEWiki/blocks/bricks/cracked-cobalt-bricks.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cracked_bricks/cracked_cobalt_bricks.block.json",
-                "recipes": []
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cracked_death_bricks",
-            "wiki_page": "PFEWiki/blocks/bricks/cracked-death-bricks.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cracked_bricks/cracked_death_bricks.block.json",
-                "recipes": []
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cracked_demonic_bricks",
-            "wiki_page": "PFEWiki/blocks/bricks/cracked-demonic-bricks.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cracked_bricks/cracked_demonic_bricks.block.json",
-                "recipes": []
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cracked_galaxy_bricks",
-            "wiki_page": "PFEWiki/blocks/bricks/cracked-galaxy-bricks.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cracked_bricks/cracked_galaxy_bricks.block.json",
-                "recipes": []
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cracked_godly_bricks",
-            "wiki_page": "PFEWiki/blocks/bricks/cracked-godly-bricks.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cracked_bricks/cracked_godly_bricks.block.json",
-                "recipes": []
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cracked_hellish_bricks",
-            "wiki_page": "PFEWiki/blocks/bricks/cracked-hellish-bricks.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cracked_bricks/cracked_hellish_bricks.block.json",
-                "recipes": []
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cracked_holy_bricks",
-            "wiki_page": "PFEWiki/blocks/bricks/cracked-holy-bricks.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cracked_bricks/cracked_holy_bricks.block.json",
-                "recipes": []
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cracked_honey_bricks",
-            "wiki_page": "PFEWiki/blocks/bricks/cracked-honey-bricks.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cracked_bricks/cracked_honey_bricks.block.json",
-                "recipes": []
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cracked_limestone_bricks",
-            "wiki_page": "PFEWiki/blocks/bricks/cracked-limestone-bricks.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cracked_bricks/cracked_limestone_bricks.block.json",
-                "recipes": []
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cracked_medic_bricks",
-            "wiki_page": "PFEWiki/blocks/bricks/cracked-medic-bricks.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cracked_bricks/cracked_medic_bricks.block.json",
-                "recipes": []
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cracked_molten_bricks",
-            "wiki_page": "PFEWiki/blocks/bricks/cracked-molten-bricks.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cracked_bricks/cracked_molten_bricks.block.json",
-                "recipes": []
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cracked_nebula_bricks",
-            "wiki_page": "PFEWiki/blocks/bricks/cracked-nebula-bricks.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cracked_bricks/cracked_nebula_bricks.block.json",
-                "recipes": []
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cracked_onyx_bricks",
-            "wiki_page": "PFEWiki/blocks/bricks/cracked-onyx-bricks.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cracked_bricks/cracked_onyx_bricks.block.json",
-                "recipes": []
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cracked_radium_bricks",
-            "wiki_page": "PFEWiki/blocks/bricks/cracked-radium-bricks.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cracked_bricks/cracked_radium_bricks.block.json",
-                "recipes": []
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cracked_shade_bricks",
-            "wiki_page": "PFEWiki/blocks/bricks/cracked-shade-bricks.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cracked_bricks/cracked_shade_bricks.block.json",
-                "recipes": []
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cracked_shadowstone_bricks",
-            "wiki_page": "PFEWiki/blocks/bricks/cracked-shadowstone-bricks.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cracked_bricks/cracked_shadowstone_bricks.block.json",
-                "recipes": []
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cracked_void_bricks",
-            "wiki_page": "PFEWiki/blocks/bricks/cracked-void-bricks.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cracked_bricks/cracked_void_bricks.block.json",
-                "recipes": []
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:death_bricks",
-            "wiki_page": "PFEWiki/blocks/bricks/death-bricks.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/bricks/death_bricks.block.json",
-                "recipes": []
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:demonic_bricks",
-            "wiki_page": "PFEWiki/blocks/bricks/demonic-bricks.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/bricks/demonic_bricks.block.json",
-                "recipes": []
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:galaxy_bricks",
-            "wiki_page": "PFEWiki/blocks/bricks/galaxy-bricks.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/bricks/galaxy_bricks.block.json",
-                "recipes": []
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:godly_bricks",
-            "wiki_page": "PFEWiki/blocks/bricks/godly-bricks.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/bricks/godly_bricks.block.json",
-                "recipes": []
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:holy_bricks",
-            "wiki_page": "PFEWiki/blocks/bricks/holy-bricks.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/bricks/holy_bricks.block.json",
-                "recipes": []
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:honey_bricks",
-            "wiki_page": "PFEWiki/blocks/bricks/honey-bricks.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/bricks/honey_bricks.block.json",
-                "recipes": []
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:limestone_bricks",
-            "wiki_page": "PFEWiki/blocks/bricks/limestone-bricks.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/bricks/limestone_bricks.block.json",
-                "recipes": []
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:medic_bricks",
-            "wiki_page": "PFEWiki/blocks/bricks/medic-bricks.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/bricks/medic_bricks.block.json",
-                "recipes": []
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:molten_bricks",
-            "wiki_page": "PFEWiki/blocks/bricks/molten-bricks.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/bricks/molten_bricks.block.json",
-                "recipes": []
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:nebula_bricks",
-            "wiki_page": "PFEWiki/blocks/bricks/nebula-bricks.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/bricks/nebula_bricks.block.json",
-                "recipes": []
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:onyx_bricks",
-            "wiki_page": "PFEWiki/blocks/bricks/onyx-bricks.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/bricks/onyx_bricks.block.json",
-                "recipes": []
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:radium_bricks",
-            "wiki_page": "PFEWiki/blocks/bricks/radium-bricks.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/bricks/radium_bricks.block.json",
-                "recipes": []
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:shade_bricks",
-            "wiki_page": "PFEWiki/blocks/bricks/shade-bricks.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/bricks/shade_bricks.block.json",
-                "recipes": []
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:shadowstone_bricks",
-            "wiki_page": "PFEWiki/blocks/bricks/shadowstone-bricks.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/bricks/shadowstone_bricks.block.json",
-                "recipes": []
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:void_bricks",
-            "wiki_page": "PFEWiki/blocks/bricks/void-bricks.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/bricks/void_bricks.block.json",
-                "recipes": []
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cut_astral",
-            "wiki_page": "PFEWiki/blocks/cut-blocks/cut-astral.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_astral.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/astral/cut.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/astral/cut_stonecut.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cut_cobalt",
-            "wiki_page": "PFEWiki/blocks/cut-blocks/cut-cobalt.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_cobalt.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/cobalt/cut_cobalt.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/cobalt/cut_cobalt_stonecut.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cut_death",
-            "wiki_page": "PFEWiki/blocks/cut-blocks/cut-death.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_death.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/death/cut.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/death/cut_stonecut.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cut_demonic",
-            "wiki_page": "PFEWiki/blocks/cut-blocks/cut-demonic.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_demonic.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/demonic/cut.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/demonic/cut_stonecut.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cut_galaxy",
-            "wiki_page": "PFEWiki/blocks/cut-blocks/cut-galaxy.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_galaxy.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/galaxy/cut.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/galaxy/cut_stonecut.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cut_godly",
-            "wiki_page": "PFEWiki/blocks/cut-blocks/cut-godly.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_godly.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/godly/cut.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/godly/cut_stonecut.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cut_hellish",
-            "wiki_page": "PFEWiki/blocks/cut-blocks/cut-hellish.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_hellish.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/hellish/cut.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/hellish/cut_stonecut.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cut_holy",
-            "wiki_page": "PFEWiki/blocks/cut-blocks/cut-holy.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_holy.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/holy/cut.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/holy/cut_stonecut.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cut_medic",
-            "wiki_page": "PFEWiki/blocks/cut-blocks/cut-medic.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_medic.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/medic/cut.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/medic/cut_stonecut.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cut_molten",
-            "wiki_page": "PFEWiki/blocks/cut-blocks/cut-molten.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_molten.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/molten/cut.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/molten/cut_stonecut.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cut_nebula",
-            "wiki_page": "PFEWiki/blocks/cut-blocks/cut-nebula.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_nebula.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/nebula/cut.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/nebula/cut_stonecut.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cut_onyx",
-            "wiki_page": "PFEWiki/blocks/cut-blocks/cut-onyx.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_onyx.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/onyx/cut.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/onyx/cut_stonecut.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cut_radium",
-            "wiki_page": "PFEWiki/blocks/cut-blocks/cut-radium.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_radium.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/radium/cut.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/radium/cut_stonecut.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cut_shade",
-            "wiki_page": "PFEWiki/blocks/cut-blocks/cut-shade.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_shade.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/shade/cut.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/shade/cut_stonecut.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cut_void",
-            "wiki_page": "PFEWiki/blocks/cut-blocks/cut-void.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_void.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/void/cut.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/void/cut_stonecut.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:astral_block",
-            "wiki_page": "PFEWiki/blocks/ore-blocks/block-of-astral.md",
-            "components": {
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/ore_blocks/astral_block.block.json",
-                "type": "block"
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:astral_brick_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/astral-brick-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/astral_brick_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/astral/astral_brick_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/astral/astral_brick_stairs_sc_from_block.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/astral/astral_brick_stairs_sc_from_brick.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:beveled_limestone_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/beveled-limestone-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/beveled_limestone_stairs.block.json",
-                "name": "Beveled Limestone Stairs",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/limestone/beveled_limestone_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/limestone/beveled_limestone_stairs_sc.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:chiseled_cobalt_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/chiseled-cobalt-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/chiseled_cobalt_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/cobalt/chiseled_cobalt_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/cobalt/chiseled_cobalt_stairs_sc.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/cobalt/chiseled_cobalt_stairs_sc_f_bl.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cobbled_limestone_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/cobbled-limestone-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/cobbled_limestone_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/limestone/cobbled_limestone_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/limestone/cobbled_limestone_stairs_sc.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/limestone/cobbled_limestone_stairs_sc_f_l.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cobbled_shadowstone_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/cobbled-shadowstone-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/cobbled_shadowstone_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/shadowstone/cobbled_shadowstone_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/shadowstone/cobbled_shadowstone_stairs_sc.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/shadowstone/cobbled_shadowstone_stairs_sc_f_st.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cut_astral_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/cut-astral-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/cut_astral_stairs.block.json",
-                "name": "Cut Astral Stairs",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/astral/cut_astral_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/astral/cut_astral_stairs_sc.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/astral/cut_astral_stairs_sc_f_b.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cut_cobalt_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/cut-cobalt-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/cut_cobalt_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/cobalt/cut_cobalt_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/cobalt/cut_cobalt_stairs_sc.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/cobalt/cut_cobalt_stairs_sc_f_b.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cut_death_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/cut-death-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/cut_death_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/death/cut_death_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/death/cut_death_stairs_sc.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/death/cut_death_stairs_sc_f_b.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cut_demonic_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/cut-demonic-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/cut_demonic_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/demonic/cut_demonic_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/demonic/cut_demonic_stairs_sc.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/demonic/cut_demonic_stairs_sc_f_b.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cut_galaxy_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/cut-galaxy-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/cut_galaxy_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/galaxy/cut_galaxy_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/galaxy/cut_galaxy_stairs_sc.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/galaxy/cut_galaxy_stairs_sc_f_b.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cut_godly_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/cut-godly-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/cut_godly_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/godly/cut_godly_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/godly/cut_godly_stairs_sc.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/godly/cut_godly_stairs_sc_f_b.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cut_hellish_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/cut-hellish-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/cut_hellish_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/hellish/cut_hellish_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/hellish/cut_hellish_stairs_sc.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/hellish/cut_hellish_stairs_sc_f_b.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cut_holy_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/cut-holy-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/cut_holy_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/holy/cut_holy_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/holy/cut_holy_stairs_sc.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/holy/cut_holy_stairs_sc_f_b.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cut_medic_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/cut-medic-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/cut_medic_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/medic/cut_medic_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/medic/cut_medic_stairs_sc.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/medic/cut_medic_stairs_sc_f_b.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cut_molten_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/cut-molten-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/cut_molten_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/molten/cut_molten_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/molten/cut_molten_stairs_sc.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/molten/cut_molten_stairs_sc_f_b.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cut_nebula_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/cut-nebula-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/cut_nebula_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/nebula/cut_nebula_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/nebula/cut_nebula_stairs_sc.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/nebula/cut_nebula_stairs_sc_f_b.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cut_onyx_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/cut-onyx-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/cut_onyx_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/onyx/cut_onyx_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/onyx/cut_onyx_stairs_sc.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/onyx/cut_onyx_stairs_sc_f_b.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cut_radium_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/cut-radium-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/cut_radium_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/radium/cut_radium_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/radium/cut_radium_stairs_sc.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/radium/cut_radium_stairs_sc_f_b.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cut_shade_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/cut-shade-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/cut_shade_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/shade/cut_shade_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/shade/cut_shade_stairs_sc.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/shade/cut_shade_stairs_sc_f_b.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:cut_void_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/cut-void-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/cut_void_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/void/cut_void_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/void/cut_void_stairs_sc.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/void/cut_void_stairs_sc_f_b.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:death_brick_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/death-brick-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/death_brick_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/death/death_brick_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/death/death_brick_stairs_sc_from_brick.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/death/death_brick_stairs_sc_from_block.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:demonic_brick_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/demonic-brick-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/demonic_brick_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/demonic/demonic_brick_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/demonic/demonic_brick_stairs_sc_from_brick.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/demonic/demonic_brick_stairs_sc_from_block.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:galaxy_brick_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/galaxy-brick-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/galaxy_brick_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/galaxy/galaxy_brick_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/galaxy/galaxy_brick_stairs_sc_from_brick.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/galaxy/galaxy_brick_stairs_sc_from_block.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:godly_brick_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/godly-brick-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/godly_brick_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/godly/godly_brick_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/godly/godly_brick_stairs_sc_from_brick.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/godly/godly_brick_stairs_sc_from_block.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:hellish_brick_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/hellish-brick-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/hellish_brick_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/hellish/hellish_brick_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/hellish/hellish_brick_stairs_sc_from_brick.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/hellish/hellish_brick_stairs_sc_from_block.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:holy_brick_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/holy-brick-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/holy_brick_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/holy/holy_brick_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/holy/holy_brick_stairs_sc_from_brick.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/holy/holy_brick_stairs_sc_from_block.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:honey_brick_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/honey-brick-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/honey_brick_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/honey/honey_brick_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/honey/honey_brick_stairs_sc.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/honey/honey_brick_stairs_sc_f_hc.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:honey_tile_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/honey-tile-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/honey_tile_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/honey/honey_tile_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/honey/honey_tile_stairs_sc.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:limestone_brick_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/limestone-brick-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/limestone_brick_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/limestone/limestone_brick_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/limestone/limestone_brick_stairs_sc.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/limestone/limestone_brick_stairs_sc_f_l.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": false,
-            "identifier": "poke_pfe:limestone_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/limestone-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/limestone_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/limestone/limestone_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/limestone/limestone_stairs_sc.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:medic_brick_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/medic-brick-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/medic_brick_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/medic/medic_brick_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/medic/medic_brick_stairs_sc_from_brick.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/medic/medic_brick_stairs_sc_from_block.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:molten_brick_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/molten-brick-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/molten_brick_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/molten/molten_brick_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/molten/molten_brick_stairs_sc_from_brick.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/molten/molten_brick_stairs_sc_from_block.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:nebula_brick_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/nebula-brick-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/nebula_brick_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/nebula/nebula_brick_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/nebula/nebula_brick_stairs_sc_from_brick.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/nebula/nebula_brick_stairs_sc_from_block.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:onyx_brick_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/onyx-brick-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/onyx_brick_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/onyx/onyx_brick_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/onyx/onyx_brick_stairs_sc_from_brick.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/onyx/onyx_brick_stairs_sc_from_block.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:polished_shadowstone_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/polished-shadowstone-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/polished_shadowstone_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/shadowstone/polished_shadowstone_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/shadowstone/polished_shadowstone_stairs_sc.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/shadowstone/polished_shadowstone_stairs_sc_f_ss.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:radium_brick_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/radium-brick-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/radium_brick_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/radium/radium_brick_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/radium/radium_brick_stairs_sc_from_brick.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/radium/radium_brick_stairs_sc_from_block.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:raw_astral_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/raw-astral-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/raw_astral_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/astral/raw_astral_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/astral/raw_astral_stairs_sc.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:raw_cobalt_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/raw-cobalt-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/raw_cobalt_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/cobalt/raw_cobalt_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/cobalt/raw_cobalt_stairs_sc.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:raw_demonic_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/raw-demonic-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/raw_demonic_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/demonic/raw_demonic_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/demonic/raw_demonic_stairs_sc.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:raw_galaxy_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/raw-galaxy-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/raw_galaxy_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/galaxy/raw_galaxy_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/galaxy/raw_galaxy_stairs_sc.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:raw_godly_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/raw-godly-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/raw_godly_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/godly/raw_godly_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/godly/raw_godly_stairs_sc.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:raw_hellish_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/raw-hellish-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/raw_hellish_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/hellish/raw_hellish_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/hellish/raw_hellish_stairs_sc.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:raw_holy_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/raw-holy-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/raw_holy_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/holy/raw_holy_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/holy/raw_holy_stairs_sc.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:raw_nebula_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/raw-nebula-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/raw_nebula_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/nebula/raw_nebula_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/nebula/raw_nebula_stairs_sc.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:raw_onyx_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/raw-onyx-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/raw_onyx_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/onyx/raw_onyx_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/onyx/raw_onyx_stairs_sc.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:raw_shade_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/raw-shade-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/raw_shade_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/shade/raw_shade_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/shade/raw_shade_stairs_sc.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:raw_void_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/raw-void-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/raw_void_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/void/raw_void_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/void/raw_void_stairs_sc.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:shade_brick_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/shade-brick-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/shade_brick_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/shade/shade_brick_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/shade/shade_brick_stairs_sc_from_brick.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/shade/shade_brick_stairs_sc_from_block.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:shadowstone_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/shadowstone-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/shadowstone_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/shadowstone/shadowstone_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/shadowstone/shadowstone_stairs_sc.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:smooth_limestone_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/smooth-limestone-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/smooth_limestone_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/limestone/smooth_limestone_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/limestone/smooth_limestone_stairs_sc.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/limestone/smooth_limestone_stairs_sc_f_l.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:void_brick_stairs",
-            "wiki_page": "PFEWiki/blocks/stairs/void-brick-stairs.md",
-            "components": {
-                "type": "block",
-                "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/void_brick_stairs.block.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/void/void_brick_stairs.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/void/void_brick_stairs_sc_from_brick.recipe.json",
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/void/void_brick_stairs_sc_from_block.recipe.json"
-                ]
-            }
-        },
-        {
-            "run": true,
-            "identifier": "poke_pfe:wither_spawner",
-            "wiki_page": "PFEWiki/mobs/bosses/wither-spawner.md",
-            "components": {
-                "type": "item",
-                "item_file_path": "WikiAutomation/PFE/behavior_packs/pfe/items/spawn_eggs/wither_spawner.item.json",
-                "recipes": [
-                    "WikiAutomation/PFE/behavior_packs/pfe/recipes/mobs/wither_spawner.recipe.json"
-                ]
-            }
-        }
-    ]
+    {
+      "run": true,
+      "identifier": "poke_pfe:barometer",
+      "wiki_page": "PFEWiki/blocks/automation/barometer.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/auto/barometer.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/automation/barometer.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:elevator",
+      "wiki_page": "PFEWiki/blocks/automation/elevator.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/auto/elevator.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/automation/elevator_block.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:fisher",
+      "wiki_page": "PFEWiki/blocks/automation/fisher.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/auto/fisher.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/automation/fisher_block.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:flash_freezer",
+      "wiki_page": "PFEWiki/blocks/automation/flash-freezer.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/auto/flash_freezer.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/automation/flash_freezer.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:omnivator",
+      "wiki_page": "PFEWiki/blocks/automation/omnivator.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/auto/omnivator.block.json",
+        "recipes": []
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:astral_bricks",
+      "wiki_page": "PFEWiki/blocks/bricks/astral-bricks.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/bricks/astral_bricks.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/astral/astral_bricks.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/astral/astral_bricks_stonecut.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/astral/astral_bricks_slab_to_bricks.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:banished_bricks",
+      "wiki_page": "PFEWiki/blocks/bricks/banished-bricks.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/bricks/banished_bricks.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/banished/banished_bricks.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:chiseled_honey_bricks",
+      "wiki_page": "PFEWiki/blocks/bricks/chiseled-honey-bricks.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/honey/chiseled_honey_bricks.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/honey/chiseled_honey_bricks.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cobalt_bricks",
+      "wiki_page": "PFEWiki/blocks/bricks/cobalt-bricks.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/bricks/cobalt_bricks.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/cobalt/cobalt_bricks.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/cobalt/cobalt_bricks_slab_to_cobalt_bricks.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cracked_astral_bricks",
+      "wiki_page": "PFEWiki/blocks/bricks/cracked-astral-bricks.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cracked_bricks/cracked_astral_bricks.block.json",
+        "recipes": []
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cracked_banished_bricks",
+      "wiki_page": "PFEWiki/blocks/bricks/cracked-banished-bricks.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cracked_bricks/cracked_banished_bricks.block.json",
+        "recipes": []
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cracked_cobalt_bricks",
+      "wiki_page": "PFEWiki/blocks/bricks/cracked-cobalt-bricks.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cracked_bricks/cracked_cobalt_bricks.block.json",
+        "recipes": []
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cracked_death_bricks",
+      "wiki_page": "PFEWiki/blocks/bricks/cracked-death-bricks.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cracked_bricks/cracked_death_bricks.block.json",
+        "recipes": []
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cracked_demonic_bricks",
+      "wiki_page": "PFEWiki/blocks/bricks/cracked-demonic-bricks.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cracked_bricks/cracked_demonic_bricks.block.json",
+        "recipes": []
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cracked_galaxy_bricks",
+      "wiki_page": "PFEWiki/blocks/bricks/cracked-galaxy-bricks.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cracked_bricks/cracked_galaxy_bricks.block.json",
+        "recipes": []
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cracked_godly_bricks",
+      "wiki_page": "PFEWiki/blocks/bricks/cracked-godly-bricks.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cracked_bricks/cracked_godly_bricks.block.json",
+        "recipes": []
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cracked_hellish_bricks",
+      "wiki_page": "PFEWiki/blocks/bricks/cracked-hellish-bricks.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cracked_bricks/cracked_hellish_bricks.block.json",
+        "recipes": []
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cracked_holy_bricks",
+      "wiki_page": "PFEWiki/blocks/bricks/cracked-holy-bricks.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cracked_bricks/cracked_holy_bricks.block.json",
+        "recipes": []
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cracked_honey_bricks",
+      "wiki_page": "PFEWiki/blocks/bricks/cracked-honey-bricks.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cracked_bricks/cracked_honey_bricks.block.json",
+        "recipes": []
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cracked_limestone_bricks",
+      "wiki_page": "PFEWiki/blocks/bricks/cracked-limestone-bricks.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cracked_bricks/cracked_limestone_bricks.block.json",
+        "recipes": []
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cracked_medic_bricks",
+      "wiki_page": "PFEWiki/blocks/bricks/cracked-medic-bricks.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cracked_bricks/cracked_medic_bricks.block.json",
+        "recipes": []
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cracked_molten_bricks",
+      "wiki_page": "PFEWiki/blocks/bricks/cracked-molten-bricks.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cracked_bricks/cracked_molten_bricks.block.json",
+        "recipes": []
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cracked_nebula_bricks",
+      "wiki_page": "PFEWiki/blocks/bricks/cracked-nebula-bricks.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cracked_bricks/cracked_nebula_bricks.block.json",
+        "recipes": []
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cracked_onyx_bricks",
+      "wiki_page": "PFEWiki/blocks/bricks/cracked-onyx-bricks.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cracked_bricks/cracked_onyx_bricks.block.json",
+        "recipes": []
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cracked_radium_bricks",
+      "wiki_page": "PFEWiki/blocks/bricks/cracked-radium-bricks.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cracked_bricks/cracked_radium_bricks.block.json",
+        "recipes": []
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cracked_shade_bricks",
+      "wiki_page": "PFEWiki/blocks/bricks/cracked-shade-bricks.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cracked_bricks/cracked_shade_bricks.block.json",
+        "recipes": []
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cracked_shadowstone_bricks",
+      "wiki_page": "PFEWiki/blocks/bricks/cracked-shadowstone-bricks.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cracked_bricks/cracked_shadowstone_bricks.block.json",
+        "recipes": []
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cracked_void_bricks",
+      "wiki_page": "PFEWiki/blocks/bricks/cracked-void-bricks.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cracked_bricks/cracked_void_bricks.block.json",
+        "recipes": []
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:death_bricks",
+      "wiki_page": "PFEWiki/blocks/bricks/death-bricks.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/bricks/death_bricks.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/death/death_bricks.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/death/death_bricks_slab_to_death_bricks.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:demonic_bricks",
+      "wiki_page": "PFEWiki/blocks/bricks/demonic-bricks.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/bricks/demonic_bricks.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/demonic/demonic_bricks.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/demonic/demonic_bricks_slab_to_bricks.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:galaxy_bricks",
+      "wiki_page": "PFEWiki/blocks/bricks/galaxy-bricks.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/bricks/galaxy_bricks.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/galaxy/galaxy_bricks.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/galaxy/galaxy_bricks_slab_to_galaxy_bricks.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:godly_bricks",
+      "wiki_page": "PFEWiki/blocks/bricks/godly-bricks.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/bricks/godly_bricks.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/godly/godly_bricks.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/godly/godly_bricks_slab_to_godly_bricks.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:holy_bricks",
+      "wiki_page": "PFEWiki/blocks/bricks/holy-bricks.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/bricks/holy_bricks.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/holy/holy_bricks.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/holy/holy_bricks_slab_to_bricks.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:honey_bricks",
+      "wiki_page": "PFEWiki/blocks/bricks/honey-bricks.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/bricks/honey_bricks.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/honey/honey_bricks.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/honey/honey_brick_slab_btb.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:limestone_bricks",
+      "wiki_page": "PFEWiki/blocks/bricks/limestone-bricks.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/bricks/limestone_bricks.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/limestone/limestone_bricks.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/limestone/limestone_brick_slab_to_limestone_brick.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:medic_bricks",
+      "wiki_page": "PFEWiki/blocks/bricks/medic-bricks.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/bricks/medic_bricks.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/medic/medic_bricks.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/medic/medic_bricks_slab_to_bricks.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:molten_bricks",
+      "wiki_page": "PFEWiki/blocks/bricks/molten-bricks.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/bricks/molten_bricks.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/molten/molten_bricks.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/molten/molten_bricks_slab_to_bricks.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:nebula_bricks",
+      "wiki_page": "PFEWiki/blocks/bricks/nebula-bricks.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/bricks/nebula_bricks.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/nebula/nebula_bricks.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/nebula/nebula_bricks_slab_to_bricks.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:onyx_bricks",
+      "wiki_page": "PFEWiki/blocks/bricks/onyx-bricks.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/bricks/onyx_bricks.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/onyx/onyx_bricks.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/onyx/onyx_bricks_slab_to_onyx_bricks.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:radium_bricks",
+      "wiki_page": "PFEWiki/blocks/bricks/radium-bricks.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/bricks/radium_bricks.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/radium/radium_bricks.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/radium/radium_bricks_slab_to_bricks.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:shade_bricks",
+      "wiki_page": "PFEWiki/blocks/bricks/shade-bricks.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/bricks/shade_bricks.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/shade/shade_bricks.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/shade/shade_bricks_slab_to_bricks.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:shadowstone_bricks",
+      "wiki_page": "PFEWiki/blocks/bricks/shadowstone-bricks.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/bricks/shadowstone_bricks.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/shadowstone/shadowstone_bricks.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:void_bricks",
+      "wiki_page": "PFEWiki/blocks/bricks/void-bricks.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/bricks/void_bricks.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/void/void_bricks.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/void/void_bricks_slab_to_void_bricks.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cut_astral",
+      "wiki_page": "PFEWiki/blocks/cut-blocks/cut-astral.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_astral.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/astral/cut.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/astral/cut_stonecut.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/astral/cut_slab_to_cut.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cut_cobalt",
+      "wiki_page": "PFEWiki/blocks/cut-blocks/cut-cobalt.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_cobalt.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/cobalt/cut_cobalt.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/cobalt/cut_cobalt_stonecut.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/cobalt/cut_cobalt_slab_to_cut_cobalt.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cut_death",
+      "wiki_page": "PFEWiki/blocks/cut-blocks/cut-death.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_death.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/death/cut.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/death/cut_stonecut.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/death/cut_slab_to_cut.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cut_demonic",
+      "wiki_page": "PFEWiki/blocks/cut-blocks/cut-demonic.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_demonic.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/demonic/cut.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/demonic/cut_stonecut.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/demonic/cut_slab_to_cut.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cut_galaxy",
+      "wiki_page": "PFEWiki/blocks/cut-blocks/cut-galaxy.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_galaxy.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/galaxy/cut.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/galaxy/cut_stonecut.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/galaxy/cut_slab_to_cut.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cut_godly",
+      "wiki_page": "PFEWiki/blocks/cut-blocks/cut-godly.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_godly.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/godly/cut.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/godly/cut_stonecut.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/godly/cut_slab_to_cut.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cut_hellish",
+      "wiki_page": "PFEWiki/blocks/cut-blocks/cut-hellish.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_hellish.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/hellish/cut.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/hellish/cut_stonecut.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/hellish/cut_slab_to_cut.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cut_holy",
+      "wiki_page": "PFEWiki/blocks/cut-blocks/cut-holy.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_holy.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/holy/cut.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/holy/cut_stonecut.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/holy/cut_slab_to_cut.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cut_medic",
+      "wiki_page": "PFEWiki/blocks/cut-blocks/cut-medic.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_medic.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/medic/cut.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/medic/cut_stonecut.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/medic/cut_slab_to_cut.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cut_molten",
+      "wiki_page": "PFEWiki/blocks/cut-blocks/cut-molten.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_molten.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/molten/cut.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/molten/cut_stonecut.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/molten/cut_slab_to_cut.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cut_nebula",
+      "wiki_page": "PFEWiki/blocks/cut-blocks/cut-nebula.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_nebula.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/nebula/cut.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/nebula/cut_stonecut.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/nebula/cut_slab_to_cut.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cut_onyx",
+      "wiki_page": "PFEWiki/blocks/cut-blocks/cut-onyx.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_onyx.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/onyx/cut.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/onyx/cut_stonecut.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/onyx/cut_slab_to_cut.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cut_radium",
+      "wiki_page": "PFEWiki/blocks/cut-blocks/cut-radium.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_radium.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/radium/cut.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/radium/cut_stonecut.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/radium/cut_slab_to_cut.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cut_shade",
+      "wiki_page": "PFEWiki/blocks/cut-blocks/cut-shade.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_shade.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/shade/cut.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/shade/cut_stonecut.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/shade/cut_slab_to_cut.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cut_void",
+      "wiki_page": "PFEWiki/blocks/cut-blocks/cut-void.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/cut_blocks/cut_void.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/void/cut.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/void/cut_stonecut.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/void/cut_slab_to_cut.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:astral_block",
+      "wiki_page": "PFEWiki/blocks/ore-blocks/block-of-astral.md",
+      "components": {
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/ore_blocks/astral_block.block.json",
+        "type": "block"
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:astral_brick_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/astral-brick-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/astral_brick_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/astral/astral_brick_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/astral/astral_brick_stairs_sc_from_block.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/astral/astral_brick_stairs_sc_from_brick.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:beveled_limestone_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/beveled-limestone-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/beveled_limestone_stairs.block.json",
+        "name": "Beveled Limestone Stairs",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/limestone/beveled_limestone_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/limestone/beveled_limestone_stairs_sc.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:chiseled_cobalt_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/chiseled-cobalt-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/chiseled_cobalt_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/cobalt/chiseled_cobalt_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/cobalt/chiseled_cobalt_stairs_sc.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/cobalt/chiseled_cobalt_stairs_sc_f_bl.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cobbled_limestone_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/cobbled-limestone-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/cobbled_limestone_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/limestone/cobbled_limestone_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/limestone/cobbled_limestone_stairs_sc.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/limestone/cobbled_limestone_stairs_sc_f_l.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cobbled_shadowstone_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/cobbled-shadowstone-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/cobbled_shadowstone_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/shadowstone/cobbled_shadowstone_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/shadowstone/cobbled_shadowstone_stairs_sc.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/shadowstone/cobbled_shadowstone_stairs_sc_f_st.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cut_astral_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/cut-astral-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/cut_astral_stairs.block.json",
+        "name": "Cut Astral Stairs",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/astral/cut_astral_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/astral/cut_astral_stairs_sc.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/astral/cut_astral_stairs_sc_f_b.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cut_cobalt_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/cut-cobalt-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/cut_cobalt_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/cobalt/cut_cobalt_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/cobalt/cut_cobalt_stairs_sc.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/cobalt/cut_cobalt_stairs_sc_f_b.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cut_death_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/cut-death-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/cut_death_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/death/cut_death_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/death/cut_death_stairs_sc.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/death/cut_death_stairs_sc_f_b.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cut_demonic_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/cut-demonic-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/cut_demonic_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/demonic/cut_demonic_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/demonic/cut_demonic_stairs_sc.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/demonic/cut_demonic_stairs_sc_f_b.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cut_galaxy_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/cut-galaxy-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/cut_galaxy_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/galaxy/cut_galaxy_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/galaxy/cut_galaxy_stairs_sc.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/galaxy/cut_galaxy_stairs_sc_f_b.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cut_godly_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/cut-godly-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/cut_godly_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/godly/cut_godly_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/godly/cut_godly_stairs_sc.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/godly/cut_godly_stairs_sc_f_b.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cut_hellish_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/cut-hellish-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/cut_hellish_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/hellish/cut_hellish_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/hellish/cut_hellish_stairs_sc.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/hellish/cut_hellish_stairs_sc_f_b.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cut_holy_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/cut-holy-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/cut_holy_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/holy/cut_holy_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/holy/cut_holy_stairs_sc.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/holy/cut_holy_stairs_sc_f_b.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cut_medic_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/cut-medic-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/cut_medic_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/medic/cut_medic_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/medic/cut_medic_stairs_sc.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/medic/cut_medic_stairs_sc_f_b.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cut_molten_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/cut-molten-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/cut_molten_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/molten/cut_molten_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/molten/cut_molten_stairs_sc.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/molten/cut_molten_stairs_sc_f_b.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cut_nebula_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/cut-nebula-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/cut_nebula_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/nebula/cut_nebula_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/nebula/cut_nebula_stairs_sc.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/nebula/cut_nebula_stairs_sc_f_b.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cut_onyx_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/cut-onyx-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/cut_onyx_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/onyx/cut_onyx_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/onyx/cut_onyx_stairs_sc.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/onyx/cut_onyx_stairs_sc_f_b.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cut_radium_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/cut-radium-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/cut_radium_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/radium/cut_radium_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/radium/cut_radium_stairs_sc.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/radium/cut_radium_stairs_sc_f_b.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cut_shade_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/cut-shade-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/cut_shade_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/shade/cut_shade_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/shade/cut_shade_stairs_sc.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/shade/cut_shade_stairs_sc_f_b.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:cut_void_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/cut-void-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/cut_void_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/void/cut_void_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/void/cut_void_stairs_sc.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/void/cut_void_stairs_sc_f_b.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:death_brick_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/death-brick-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/death_brick_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/death/death_brick_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/death/death_brick_stairs_sc_from_brick.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/death/death_brick_stairs_sc_from_block.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:demonic_brick_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/demonic-brick-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/demonic_brick_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/demonic/demonic_brick_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/demonic/demonic_brick_stairs_sc_from_brick.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/demonic/demonic_brick_stairs_sc_from_block.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:galaxy_brick_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/galaxy-brick-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/galaxy_brick_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/galaxy/galaxy_brick_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/galaxy/galaxy_brick_stairs_sc_from_brick.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/galaxy/galaxy_brick_stairs_sc_from_block.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:godly_brick_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/godly-brick-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/godly_brick_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/godly/godly_brick_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/godly/godly_brick_stairs_sc_from_brick.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/godly/godly_brick_stairs_sc_from_block.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:hellish_brick_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/hellish-brick-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/hellish_brick_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/hellish/hellish_brick_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/hellish/hellish_brick_stairs_sc_from_brick.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/hellish/hellish_brick_stairs_sc_from_block.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:holy_brick_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/holy-brick-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/holy_brick_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/holy/holy_brick_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/holy/holy_brick_stairs_sc_from_brick.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/holy/holy_brick_stairs_sc_from_block.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:honey_brick_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/honey-brick-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/honey_brick_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/honey/honey_brick_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/honey/honey_brick_stairs_sc.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/honey/honey_brick_stairs_sc_f_hc.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:honey_tile_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/honey-tile-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/honey_tile_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/honey/honey_tile_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/honey/honey_tile_stairs_sc.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:limestone_brick_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/limestone-brick-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/limestone_brick_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/limestone/limestone_brick_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/limestone/limestone_brick_stairs_sc.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/limestone/limestone_brick_stairs_sc_f_l.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": false,
+      "identifier": "poke_pfe:limestone_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/limestone-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/limestone_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/limestone/limestone_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/limestone/limestone_stairs_sc.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:medic_brick_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/medic-brick-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/medic_brick_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/medic/medic_brick_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/medic/medic_brick_stairs_sc_from_brick.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/medic/medic_brick_stairs_sc_from_block.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:molten_brick_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/molten-brick-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/molten_brick_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/molten/molten_brick_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/molten/molten_brick_stairs_sc_from_brick.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/molten/molten_brick_stairs_sc_from_block.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:nebula_brick_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/nebula-brick-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/nebula_brick_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/nebula/nebula_brick_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/nebula/nebula_brick_stairs_sc_from_brick.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/nebula/nebula_brick_stairs_sc_from_block.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:onyx_brick_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/onyx-brick-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/onyx_brick_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/onyx/onyx_brick_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/onyx/onyx_brick_stairs_sc_from_brick.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/onyx/onyx_brick_stairs_sc_from_block.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:polished_shadowstone_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/polished-shadowstone-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/polished_shadowstone_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/shadowstone/polished_shadowstone_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/shadowstone/polished_shadowstone_stairs_sc.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/shadowstone/polished_shadowstone_stairs_sc_f_ss.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:radium_brick_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/radium-brick-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/radium_brick_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/radium/radium_brick_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/radium/radium_brick_stairs_sc_from_brick.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/radium/radium_brick_stairs_sc_from_block.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:raw_astral_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/raw-astral-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/raw_astral_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/astral/raw_astral_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/astral/raw_astral_stairs_sc.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:raw_cobalt_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/raw-cobalt-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/raw_cobalt_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/cobalt/raw_cobalt_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/cobalt/raw_cobalt_stairs_sc.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:raw_demonic_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/raw-demonic-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/raw_demonic_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/demonic/raw_demonic_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/demonic/raw_demonic_stairs_sc.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:raw_galaxy_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/raw-galaxy-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/raw_galaxy_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/galaxy/raw_galaxy_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/galaxy/raw_galaxy_stairs_sc.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:raw_godly_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/raw-godly-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/raw_godly_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/godly/raw_godly_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/godly/raw_godly_stairs_sc.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:raw_hellish_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/raw-hellish-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/raw_hellish_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/hellish/raw_hellish_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/hellish/raw_hellish_stairs_sc.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:raw_holy_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/raw-holy-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/raw_holy_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/holy/raw_holy_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/holy/raw_holy_stairs_sc.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:raw_nebula_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/raw-nebula-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/raw_nebula_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/nebula/raw_nebula_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/nebula/raw_nebula_stairs_sc.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:raw_onyx_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/raw-onyx-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/raw_onyx_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/onyx/raw_onyx_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/onyx/raw_onyx_stairs_sc.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:raw_shade_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/raw-shade-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/raw_shade_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/shade/raw_shade_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/shade/raw_shade_stairs_sc.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:raw_void_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/raw-void-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/raw_void_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/void/raw_void_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/void/raw_void_stairs_sc.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:shade_brick_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/shade-brick-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/shade_brick_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/shade/shade_brick_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/shade/shade_brick_stairs_sc_from_brick.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/shade/shade_brick_stairs_sc_from_block.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:shadowstone_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/shadowstone-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/shadowstone_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/shadowstone/shadowstone_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/shadowstone/shadowstone_stairs_sc.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:smooth_limestone_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/smooth-limestone-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/smooth_limestone_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/limestone/smooth_limestone_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/limestone/smooth_limestone_stairs_sc.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/limestone/smooth_limestone_stairs_sc_f_l.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:void_brick_stairs",
+      "wiki_page": "PFEWiki/blocks/stairs/void-brick-stairs.md",
+      "components": {
+        "type": "block",
+        "block_file_path": "WikiAutomation/PFE/behavior_packs/pfe/blocks/stairs/void_brick_stairs.block.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/void/void_brick_stairs.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/void/void_brick_stairs_sc_from_brick.recipe.json",
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/blocks/void/void_brick_stairs_sc_from_block.recipe.json"
+        ]
+      }
+    },
+    {
+      "run": true,
+      "identifier": "poke_pfe:wither_spawner",
+      "wiki_page": "PFEWiki/mobs/bosses/wither-spawner.md",
+      "components": {
+        "type": "item",
+        "item_file_path": "WikiAutomation/PFE/behavior_packs/pfe/items/spawn_eggs/wither_spawner.item.json",
+        "recipes": [
+          "WikiAutomation/PFE/behavior_packs/pfe/recipes/mobs/wither_spawner.recipe.json"
+        ]
+      }
+    }
+  ]
 }

@@ -31,21 +31,21 @@ description: Last updated to match v1.3.06
 
 ||||
 | :-: | :-: | :-: |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawVoid.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawVoid.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawVoid.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawVoid.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawVoid.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawVoid.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawShade.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawShade.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawShade.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawShade.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawShade.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawShade.png?raw=true) |
 
 Items:
 
-* 6x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawVoid.png?raw=true" alt="" data-size="line"> Block of Raw Void
+* 6x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawShade.png?raw=true" alt="" data-size="line"> Block of Raw Shade
 
 Outputs:
 
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/ERROR(poke_pfe:raw_void_stairs).png?raw=true" alt="" data-size="line"> [ERROR (poke_pfe:raw_void_stairs)](raw-void-stairs.md)
+* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RawShadeStairs.png?raw=true" alt="" data-size="line"> [Raw Shade Stairs](raw-shade-stairs.md)
 
 Recipe can be unlocked with:
 
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawVoid.png?raw=true" alt="" data-size="line"> Block of Raw Void
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawShade.png?raw=true" alt="" data-size="line"> Block of Raw Shade
 
 {% endtab %}
 

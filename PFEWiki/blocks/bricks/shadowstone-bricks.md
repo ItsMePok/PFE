@@ -25,6 +25,31 @@ description: Last updated to match v1.3.06
 
 {% tabs %}
 
+{% tab title="Crafting" %}
+
+<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the<br><a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
+
+|||
+| :-: | :-: |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobbledShadowstone.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobbledShadowstone.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobbledShadowstone.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobbledShadowstone.png?raw=true) |
+
+Items:
+
+* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobbledShadowstone.png?raw=true" alt="" data-size="line"> Cobbled Shadowstone
+
+Outputs:
+
+* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/ShadowstoneBricks.png?raw=true" alt="" data-size="line"> [Shadowstone Bricks](shadowstone-bricks.md)
+
+Recipe can be unlocked with:
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/Shadowstone.png?raw=true" alt="" data-size="line"> Shadowstone
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobbledShadowstone.png?raw=true" alt="" data-size="line"> Cobbled Shadowstone
+
+{% endtab %}
+
 {% endtabs %}
 
 This page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool

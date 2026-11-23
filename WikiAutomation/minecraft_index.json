@@ -13,5 +13,45 @@
     "icon": "https://minecraft.wiki/images/Honeycomb_Block_JE1_BE1.png?ff510",
     "wiki_page": "https://minecraft.wiki/w/Honeycomb_Block",
     "name": "Honeycomb Block"
+  },
+  "minecraft:redstone": {
+    "icon": "https://minecraft.wiki/images/Redstone_Dust_JE2_BE2.png?8cf17",
+    "wiki_page": "https://minecraft.wiki/w/Redstone_Dust",
+    "name": "Redstone Dust"
+  },
+  "minecraft:ender_pearl": {
+    "icon": "https://minecraft.wiki/images/Ender_Pearl_JE3_BE2.png?829a7",
+    "wiki_page": "https://minecraft.wiki/w/Ender_Pearl",
+    "name": "Ender Pearl"
+  },
+  "minecraft:fishing_rod": {
+    "icon": "https://minecraft.wiki/images/Fishing_Rod_JE2_BE2.png?4862d",
+    "wiki_page": "https://minecraft.wiki/w/Fishing_Rod",
+    "name": "Fishing Rod"
+  },
+  "minecraft:web": {
+    "icon": "https://minecraft.wiki/images/Cobweb_JE7_BE4.png?dc40f",
+    "wiki_page": "https://minecraft.wiki/w/Cobweb",
+    "name": "Cobweb"
+  },
+  "minecraft:iron_ingot": {
+    "icon": "https://minecraft.wiki/images/Iron_Ingot_JE3_BE2.png?849cb",
+    "wiki_page": "https://minecraft.wiki/w/Iron_Ingot",
+    "name": "Iron Ingot"
+  },
+  "minecraft:blue_ice": {
+    "icon": "https://minecraft.wiki/images/Blue_Ice_JE1.png?b5deb",
+    "wiki_page": "https://minecraft.wiki/w/Blue_Ice",
+    "name": "Blue Ice"
+  },
+  "minecraft:ice": {
+    "icon": "https://minecraft.wiki/images/Ice_JE4_BE6.png?b2bcc",
+    "wiki_page": "https://minecraft.wiki/w/Ice",
+    "name": "Ice"
+  },
+  "minecraft:packed_ice": {
+    "icon": "https://minecraft.wiki/images/Packed_Ice_JE2_BE3.png?b444d",
+    "wiki_page": "https://minecraft.wiki/w/Packed_Ice",
+    "name": "Packed Ice"
   }
 }

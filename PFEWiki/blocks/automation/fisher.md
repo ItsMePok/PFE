@@ -25,6 +25,38 @@ description: Last updated to match v1.3.06
 
 {% tabs %}
 
+{% tab title="Crafting" %}
+
+<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the<br><a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
+
+||||
+| :-: | :-: | :-: |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) | ![](https://minecraft.wiki/images/Cobweb_JE7_BE4.png?dc40f) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](https://minecraft.wiki/images/Fishing_Rod_JE2_BE2.png?4862d) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) |
+
+Items:
+
+* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="" data-size="line"> Cobalt Ingot
+
+*  <img src="https://minecraft.wiki/images/Cobweb_JE7_BE4.png?dc40f" alt="" data-size="line"> [Cobweb](https://minecraft.wiki/w/Cobweb)
+
+*  <img src="https://minecraft.wiki/images/Fishing_Rod_JE2_BE2.png?4862d" alt="" data-size="line"> [Fishing Rod](https://minecraft.wiki/w/Fishing_Rod)
+
+Outputs:
+
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/Fisher.png?raw=true" alt="" data-size="line"> [Fisher](fisher.md)
+
+Recipe can be unlocked with:
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="" data-size="line"> Cobalt Ingot
+
+* <img src="https://minecraft.wiki/images/Cobweb_JE7_BE4.png?dc40f" alt="" data-size="line"> [Cobweb](https://minecraft.wiki/w/Cobweb)
+
+* <img src="https://minecraft.wiki/images/Fishing_Rod_JE2_BE2.png?4862d" alt="" data-size="line"> [Fishing Rod](https://minecraft.wiki/w/Fishing_Rod)
+
+{% endtab %}
+
 {% endtabs %}
 
 This page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool

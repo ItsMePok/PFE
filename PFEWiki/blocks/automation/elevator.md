@@ -25,6 +25,42 @@ description: Last updated to match v1.3.06
 
 {% tabs %}
 
+{% tab title="Crafting" %}
+
+<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the<br><a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
+
+||||
+| :-: | :-: | :-: |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](undefined) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_ingot.png?raw=true) | ![](https://minecraft.wiki/images/Ender_Pearl_JE3_BE2.png?829a7) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_ingot.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](https://minecraft.wiki/images/Redstone_Dust_JE2_BE2.png?8cf17) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
+
+Items:
+
+*  <img src="undefined" alt="" data-size="line"> Antenna
+
+* 2x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_ingot.png?raw=true" alt="" data-size="line"> Void Ingot
+
+*  <img src="https://minecraft.wiki/images/Ender_Pearl_JE3_BE2.png?829a7" alt="" data-size="line"> [Ender Pearl](https://minecraft.wiki/w/Ender_Pearl)
+
+*  <img src="https://minecraft.wiki/images/Redstone_Dust_JE2_BE2.png?8cf17" alt="" data-size="line"> [Redstone Dust](https://minecraft.wiki/w/Redstone_Dust)
+
+Outputs:
+
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/Elevator.png?raw=true" alt="" data-size="line"> [Elevator](elevator.md)
+
+Recipe can be unlocked with:
+
+* <img src="undefined" alt="" data-size="line"> Antenna
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_ingot.png?raw=true" alt="" data-size="line"> Void Ingot
+
+* <img src="https://minecraft.wiki/images/Ender_Pearl_JE3_BE2.png?829a7" alt="" data-size="line"> [Ender Pearl](https://minecraft.wiki/w/Ender_Pearl)
+
+* <img src="https://minecraft.wiki/images/Redstone_Dust_JE2_BE2.png?8cf17" alt="" data-size="line"> [Redstone Dust](https://minecraft.wiki/w/Redstone_Dust)
+
+{% endtab %}
+
 {% endtabs %}
 
 This page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool
