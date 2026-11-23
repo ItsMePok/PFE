@@ -53,5 +53,16 @@
     "icon": "https://minecraft.wiki/images/Packed_Ice_JE2_BE3.png?b444d",
     "wiki_page": "https://minecraft.wiki/w/Packed_Ice",
     "name": "Packed Ice"
-  }
+  },
+  "minecraft:daylight_detector": {
+    "icon": "https://minecraft.wiki/images/Daylight_Detector_JE1_BE1.png?c5bbc",
+    "wiki_page": "https://minecraft.wiki/w/Daylight_Detector",
+    "name": "Daylight Detector"
+  },
+  "minecraft:honeycomb": {
+    "icon": "https://minecraft.wiki/images/Honeycomb_JE2_BE2.png?2ecff",
+    "wiki_page": "https://minecraft.wiki/w/Honeycomb",
+    "name": "Honeycomb"
+  },
+  "minecraft:bqejqeno": { "icon": "", "wiki_page": "", "name": "" }
 }

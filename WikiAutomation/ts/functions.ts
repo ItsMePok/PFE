@@ -38,7 +38,16 @@ export {
   IsMinecraftIdentifier,
   MakeNoteSound,
   AddRecipesToIndex,
+  CreateFurnaceRecipe,
 };
+
+function CreateFurnaceRecipe(
+  file: string,
+  RECIPE_FILE: BPRecipeFile,
+  item: (typeof index.index)[number],
+) {
+  return file;
+}
 
 function AddRecipesToIndex(INDEX: typeof index) {
   let directories = readdirSync("../PFE/behavior_packs/pfe/recipes/", {
@@ -73,6 +82,53 @@ function AddRecipesToIndex(INDEX: typeof index) {
       const SHAPED_RECIPE = RECIPE["minecraft:recipe_shaped"];
       if (SHAPED_RECIPE.tags.includes("crafting_table")) {
         const IDENTIFIER = RECIPE["minecraft:recipe_shaped"].result.item;
+        const INDEX_ITEM = FindItemByIdentifier(IDENTIFIER);
+        if (INDEX_ITEM) {
+          if (
+            INDEX_ITEM.components.recipes &&
+            INDEX_ITEM.components.recipes.includes(FILE_PATH)
+          )
+            continue;
+          let newIndexItem = INDEX_ITEM;
+          newIndexItem.components.recipes?.push(FILE_PATH);
+          let pos = INDEX.index.findIndex((data) => {
+            data.identifier == IDENTIFIER;
+          });
+          INDEX.index.with(pos, newIndexItem);
+        }
+      }
+    }
+
+    if (RECIPE["minecraft:recipe_shapeless"]) {
+      const SHAPELESS_RECIPE = RECIPE["minecraft:recipe_shapeless"];
+      if (SHAPELESS_RECIPE.tags.includes("stonecutter")) {
+        const IDENTIFIER = SHAPELESS_RECIPE.result.item;
+        const INDEX_ITEM = FindItemByIdentifier(IDENTIFIER);
+        if (INDEX_ITEM) {
+          if (
+            INDEX_ITEM.components.recipes &&
+            INDEX_ITEM.components.recipes.includes(FILE_PATH)
+          )
+            continue;
+          let newIndexItem = INDEX_ITEM;
+          newIndexItem.components.recipes?.push(FILE_PATH);
+          let pos = INDEX.index.findIndex((data) => {
+            data.identifier == IDENTIFIER;
+          });
+          INDEX.index.with(pos, newIndexItem);
+        }
+      }
+    }
+    if (RECIPE["minecraft:recipe_furnace"]) {
+      const FURNACE_RECIPE = RECIPE["minecraft:recipe_furnace"];
+      if (
+        FURNACE_RECIPE.tags.includes("furnace") ||
+        FURNACE_RECIPE.tags.includes("blast_furnace") ||
+        FURNACE_RECIPE.tags.includes("smoker") ||
+        FURNACE_RECIPE.tags.includes("campfire") ||
+        FURNACE_RECIPE.tags.includes("soul_campfire")
+      ) {
+        const IDENTIFIER = FURNACE_RECIPE.output;
         const INDEX_ITEM = FindItemByIdentifier(IDENTIFIER);
         if (INDEX_ITEM) {
           if (
@@ -249,6 +305,13 @@ function MakeObtainingSection(
         }
       }
     }
+    if (RECIPE_FILE["minecraft:recipe_furnace"]) {
+      for (const tag of RECIPE_FILE["minecraft:recipe_furnace"].tags) {
+        if (tag == "furnace") {
+          file = CreateFurnaceRecipe(file, RECIPE_FILE, item);
+        }
+      }
+    }
   }
   return file;
 }
@@ -302,6 +365,15 @@ function GetImageLink(identifier?: string) {
 
   let path = "";
   const PREFIX = identifier?.split(":").at(0);
+  if (
+    !(
+      identifier?.includes(NAMESPACE) ||
+      identifier?.includes("minecraft") ||
+      identifier == "EMPTY"
+    )
+  ) {
+    console.error("NO PREFIX");
+  }
   if (PREFIX === "minecraft") {
     const OBJECT: MCIndexFile[string] =
       MC_INDEX_FILE[identifier?.replace("'", "") ?? ""];

@@ -33,7 +33,7 @@ description: Last updated to match v1.3.06
 | :-: | :-: | :-: |
 | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutCobalt.png?raw=true) | ![](undefined) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutCobalt.png?raw=true) |
 | ![](undefined) | ![](undefined) | ![](undefined) |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutCobalt.png?raw=true) | ![](undefined) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutCobalt.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutCobalt.png?raw=true) | ![](https://minecraft.wiki/images/Daylight_Detector_JE1_BE1.png?c5bbc) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutCobalt.png?raw=true) |
 
 Items:
 
@@ -45,7 +45,7 @@ Items:
 
 *  <img src="undefined" alt="" data-size="line"> Rain Gem
 
-*  <img src="undefined" alt="" data-size="line"> ERROR (daylight_detector)
+*  <img src="https://minecraft.wiki/images/Daylight_Detector_JE1_BE1.png?c5bbc" alt="" data-size="line"> [Daylight Detector](https://minecraft.wiki/w/Daylight_Detector)
 
 Outputs:
 
@@ -63,7 +63,7 @@ Recipe can be unlocked with:
 
 * <img src="undefined" alt="" data-size="line"> Electric Component
 
-* <img src="undefined" alt="" data-size="line"> ERROR (daylight_detector)
+* <img src="https://minecraft.wiki/images/Daylight_Detector_JE1_BE1.png?c5bbc" alt="" data-size="line"> [Daylight Detector](https://minecraft.wiki/w/Daylight_Detector)
 
 {% endtab %}
 

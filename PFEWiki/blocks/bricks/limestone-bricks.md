@@ -73,6 +73,12 @@ Recipe can be unlocked with:
 
 {% endtab %}
 
+{% tab title="Stonecutting" %}
+<figure><img src="https://minecraft.wiki/images/Stonecutter_JE2_BE1.gif?bb269" alt=""><figcaption><p>Cut with the<br><a href="https://minecraft.wiki/w/Stonecutter">Stonecutter</a></p></figcaption></figure>
+
+<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/Limestone.png?raw=true" alt="" data-size="line"> <a href="">Limestone</a></td><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/LimestoneBricks.png?raw=true" alt="" data-size="line"> Limestone Bricks</td><td>1</td></tr></tbody></table>
+
+{% endtab %}
 {% endtabs %}
 
 This page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool
