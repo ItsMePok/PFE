@@ -6,7 +6,7 @@ description: 'Last updated to Match: v1.3.01'
 
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt=""><figcaption></figcaption></figure>
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">poke\_pfe:cobalt\_ingot</mark> <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">poke\_pfe:cobalt\_ingot</mark> <a href="#identifier" id="identifier"></a>
 
 ## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark> <a href="#rarity" id="rarity"></a>
 
@@ -66,7 +66,7 @@ More info about brewing can be found in the: [brewing-guide.md](../../misc-other
 {% tab title="Smelting" %}
 <div><figure><img src="https://minecraft.wiki/images/Lit_Furnace_(S).gif?40e71" alt=""><figcaption><p>Smelted in a <a href="https://minecraft.wiki/w/Furnace">Furnace</a></p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/thumb/Lit_Blast_Furnace_JE1.gif/150px-Lit_Blast_Furnace_JE1.gif?dc6a7" alt="Blast Furnace."><figcaption><p>Smelted in a <a href="https://minecraft.wiki/w/Blast_Furnace">Blast Furnace</a></p></figcaption></figure></div>
 
-<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_cobalt.png?raw=true" alt="Raw Cobalt." data-size="line"> Raw Cobalt</td><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="Cobalt Ingot." data-size="line"> Cobalt Ingot</td><td>1</td></tr></tbody></table>
+<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_cobalt.png?raw=true" alt="Raw Cobalt." data-size="line"> <a href="../raw-ore/raw-cobalt.md">Raw Cobalt</a></td><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="Cobalt Ingot." data-size="line"> Cobalt Ingot</td><td>1</td></tr></tbody></table>
 {% endtab %}
 
 {% tab title="Recipe" %}
@@ -84,8 +84,6 @@ Items:
 
 ***
 
-
-
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a>.</p></figcaption></figure>
 
 |                                                                                                      |
@@ -102,8 +100,6 @@ Outputs:
 {% endtab %}
 
 {% tab title="Structure Loot" %}
-
-
 {% hint style="info" %}
 `Chance` is getting at least the lowest `Amount` of that item
 {% endhint %}
