@@ -46,6 +46,59 @@ function CreateFurnaceRecipe(
 	RECIPE_FILE: BPRecipeFile,
 	item: (typeof index.index)[number],
 ) {
+	/* 
+
+<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="${INPUT IMAGE}" alt="${INPUT NAME}." data-size="line"> <a href="${INPUT PAGE}">${INPUT NAME}</a></td><td><img src="${OUTPUT IMAGE}" alt="${OUTPUT NAME}." data-size="line"> ${OUTPUT NAME}</td><td>${AMOUNT}</td></tr></tbody></table>
+  */
+	const FURNACE_RECIPE = RECIPE_FILE["minecraft:recipe_furnace"];
+	const FURNACE_ICON = `<figure><img src="https://minecraft.wiki/images/Lit_Furnace_(S).gif?40e71" alt="Furnace."><figcaption><p>Smelted in a <a href="https://minecraft.wiki/w/Furnace">Furnace</a></p></figcaption></figure>`;
+	const BLAST_FURACE_ICON = `<figure><img src="https://minecraft.wiki/images/thumb/Lit_Blast_Furnace_JE1.gif/150px-Lit_Blast_Furnace_JE1.gif?dc6a7" alt="Blast Furnace."><figcaption><p>Smelted in a <a href="https://minecraft.wiki/w/Blast_Furnace">Blast Furnace</a></p></figcaption></figure>`;
+	const SMOKER_ICON = `<figure><img src="https://minecraft.wiki/images/Lit_Smoker_%28S%29_BE2.gif?251ca" alt="Smoker."><figcaption><p>Smoked in a <a href="https://minecraft.wiki/w/Smoker}">Smoker</a></p></figcaption></figure>`;
+	const CAMPFIRE_ICON = `<figure><img src="https://minecraft.wiki/images/Campfire_%28S%29_JE2_BE2.gif?742be" alt="Campfire."><figcaption><p>Cooked on a <a href="https://minecraft.wiki/w/Campfire">Campfire</a></p></figcaption></figure>`;
+	const SOUL_CAMPFIRE_ICON = `<figure><img src="https://minecraft.wiki/images/Soul_Campfire_JE1_BE1.gif?bf4a7" alt="Soul Campfire."><figcaption><p>Cooked on a <a href="https://minecraft.wiki/w/Soul_Campfire">Soul Campfire</a></p></figcaption></figure>`;
+
+	let iconCount = 0;
+	if (!FURNACE_RECIPE) return file;
+	let isFurnace = FURNACE_RECIPE.tags.includes("furnace");
+	let isBlastFurnace = FURNACE_RECIPE.tags.includes("blast_furnace");
+	let isSmoker = FURNACE_RECIPE.tags.includes("smoker");
+	let isCampfire = FURNACE_RECIPE.tags.includes("campfire");
+	let isSoulCampfire = FURNACE_RECIPE.tags.includes("soul_campfire");
+
+	//Start Tab:
+	file = `${file}\n{% tab title="Smelting" %}\n`;
+	//Add Images:
+	file = `${file}\n<div>`;
+	if (isFurnace) {
+		file = `${file}${FURNACE_ICON}`;
+		iconCount++;
+	}
+	if (isBlastFurnace) {
+		file = `${file}${iconCount > 0 ? " " : ""}${BLAST_FURACE_ICON}`;
+		iconCount++;
+	}
+	if (isSmoker) {
+		file = `${file}${iconCount > 0 ? " " : ""}${SMOKER_ICON}`;
+		iconCount++;
+	}
+	if (isCampfire) {
+		file = `${file}${iconCount > 0 ? " " : ""}${CAMPFIRE_ICON}`;
+		iconCount++;
+	}
+	if (isSoulCampfire) {
+		file = `${file}${iconCount > 0 ? " " : ""}${SOUL_CAMPFIRE_ICON}`;
+		iconCount++;
+	}
+	file = `${file}</div>\n`;
+	//Add Recipe Details:
+	console.log(JSON.stringify(FURNACE_RECIPE));
+
+	file = `${file}\n<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="${GetImageLink(FURNACE_RECIPE.input)}" alt="${GetDisplayNameByIdentifier(FURNACE_RECIPE.input)}." data-size="line"> <a href="${GetWikiPagePath(FURNACE_RECIPE.input, typeof FURNACE_RECIPE.output == "string" ? FURNACE_RECIPE.output : FURNACE_RECIPE.output.item)}">${GetDisplayNameByIdentifier(FURNACE_RECIPE.input)}</a></td><td><img src="${GetImageLink(typeof FURNACE_RECIPE.output == "string" ? FURNACE_RECIPE.output : FURNACE_RECIPE.output.item)}" alt="${GetDisplayNameByIdentifier(typeof FURNACE_RECIPE.output == "string" ? FURNACE_RECIPE.output : FURNACE_RECIPE.output.item)}." data-size="line"> ${GetDisplayNameByIdentifier(typeof FURNACE_RECIPE.output == "string" ? FURNACE_RECIPE.output : FURNACE_RECIPE.output.item)}</td><td>${typeof FURNACE_RECIPE.output == "string" ? 1 : (FURNACE_RECIPE.output.count ?? 1)}</td></tr></tbody></table>\n`;
+	//End Tab:
+	file = `${file}\n{% endtab %}\n`;
+	/*
+file = `${file}\n<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="${GetImageLink(SHAPELESS_RECIPE.ingredients.at(0)?.item ?? "MISSING")}" alt="" data-size="line"> <a href="${GetWikiPagePath(item.identifier, SHAPELESS_RECIPE.ingredients.at(0)?.item ?? "")}">${GetDisplayNameByIdentifier(SHAPELESS_RECIPE.ingredients.at(0)?.item ?? "")}</a></td><td><img src="${GetImageLink(SHAPELESS_RECIPE.result.item)}" alt="" data-size="line"> ${GetDisplayNameByIdentifier(item.identifier)}</td><td>${SHAPELESS_RECIPE.result.count ?? 1}</td></tr></tbody></table>\n`;
+*/
 	return file;
 }
 
@@ -128,7 +181,10 @@ function AddRecipesToIndex(INDEX: typeof index) {
 				FURNACE_RECIPE.tags.includes("campfire") ||
 				FURNACE_RECIPE.tags.includes("soul_campfire")
 			) {
-				const IDENTIFIER = FURNACE_RECIPE.output;
+				const IDENTIFIER =
+					typeof FURNACE_RECIPE.output == "string"
+						? FURNACE_RECIPE.output
+						: FURNACE_RECIPE.output.item;
 				const INDEX_ITEM = FindItemByIdentifier(IDENTIFIER);
 				if (INDEX_ITEM) {
 					if (

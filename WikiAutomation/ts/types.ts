@@ -73,13 +73,12 @@ type BPRecipeFile = {
 			count: number;
 		};
 	};
-
 	"minecraft:recipe_furnace": {
 		description: {
 			identifier: string; //identifier
 		};
 		tags: string[];
 		input: string; //Identifier
-		output: string; //Identifier
+		output: string | { item: string; count?: number }; //Identifier
 	};
 };
