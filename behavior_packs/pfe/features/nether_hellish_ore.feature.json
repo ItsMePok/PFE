@@ -1,31 +1,25 @@
 {
-	"format_version": "1.19.60",
-	"minecraft:ore_feature": {
-		"description": {
-			"identifier": "poke_pfe:nether_hellish_ore.feature"
-		},
-		"count": 9,
-		"replace_rules": [
-			{
-				"places_block": "poke_pfe:deepslate_hellish_ore", //Deepslate Hellish Ore
-				"may_replace": [
-					"minecraft:deepslate"
-				]
-			},
-			{
-				"places_block": "poke_pfe:hellish_ore",
-				"may_replace": [
-					"stone"
-				]
-			},
-			{
-				"places_block": {
-					"name": "poke_pfe:nether_hellish_ore"
-				},
-				"may_replace": [
-					"netherrack"
-				]
-			}
-		]
-	}
+  "format_version": "1.19.60",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "poke_pfe:nether_hellish_ore.feature"
+    },
+    "count": 9,
+    "replace_rules": [
+      {
+        "places_block": "poke_pfe:deepslate_hellish_ore", //Deepslate Hellish Ore
+        "may_replace": ["minecraft:deepslate"]
+      },
+      {
+        "places_block": "poke_pfe:hellish_ore",
+        "may_replace": ["stone"]
+      },
+      {
+        "places_block": {
+          "name": "poke_pfe:nether_hellish_ore"
+        },
+        "may_replace": ["netherrack"]
+      }
+    ]
+  }
 }

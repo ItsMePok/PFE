@@ -1,41 +1,35 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:ember_scythe"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:demonic_scythe"
-			}
-		],
-		"key": {
-			"S": {
-				"item": "poke_pfe:demonic_stick"
-			},
-			"X": {
-				"item": "poke_pfe:demonic_block"
-			},
-			"Y": {
-				"item": "poke_pfe:molten_slimeball"
-			},
-			"D": {
-				"item": "poke_pfe:demonic_scythe"
-			},
-			"U": {
-				"item": "poke_pfe:diamond_upgrade_core"
-			}
-		},
-		"pattern": [
-			"XYY",
-			" S ",
-			"DU "
-		],
-		"result": {
-			"item": "poke_pfe:ember_scythe"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:ember_scythe"
+    },
+    "tags": ["crafting_table"],
+    "unlock": [
+      {
+        "item": "poke_pfe:demonic_scythe"
+      }
+    ],
+    "key": {
+      "S": {
+        "item": "poke_pfe:demonic_stick"
+      },
+      "X": {
+        "item": "poke_pfe:demonic_block"
+      },
+      "Y": {
+        "item": "poke_pfe:molten_slimeball"
+      },
+      "D": {
+        "item": "poke_pfe:demonic_scythe"
+      },
+      "U": {
+        "item": "poke_pfe:diamond_upgrade_core"
+      }
+    },
+    "pattern": ["XYY", " S ", "DU "],
+    "result": {
+      "item": "poke_pfe:ember_scythe"
+    }
+  }
 }

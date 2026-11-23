@@ -1,54 +1,48 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:shade_claymore"
-		},
-		"group": "claymore",
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			" B ",
-			"IBI",
-			"USC"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:shade_ingot"
-			},
-			{
-				"item": "poke_pfe:shade_block"
-			},
-			{
-				"item": "minecraft:stick"
-			},
-			{
-				"item": "poke_pfe:upgrade_core"
-			},
-			{
-				"item": "poke_pfe:cobalt_claymore"
-			}
-		],
-		"key": {
-			"I": {
-				"item": "poke_pfe:shade_ingot"
-			},
-			"B": {
-				"item": "poke_pfe:shade_block"
-			},
-			"S": {
-				"item": "minecraft:stick"
-			},
-			"U": {
-				"item": "poke_pfe:upgrade_core"
-			},
-			"C": {
-				"item": "poke_pfe:cobalt_claymore"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:shade_claymore"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:shade_claymore"
+    },
+    "group": "claymore",
+    "tags": ["crafting_table"],
+    "pattern": [" B ", "IBI", "USC"],
+    "unlock": [
+      {
+        "item": "poke_pfe:shade_ingot"
+      },
+      {
+        "item": "poke_pfe:shade_block"
+      },
+      {
+        "item": "minecraft:stick"
+      },
+      {
+        "item": "poke_pfe:upgrade_core"
+      },
+      {
+        "item": "poke_pfe:cobalt_claymore"
+      }
+    ],
+    "key": {
+      "I": {
+        "item": "poke_pfe:shade_ingot"
+      },
+      "B": {
+        "item": "poke_pfe:shade_block"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      },
+      "U": {
+        "item": "poke_pfe:upgrade_core"
+      },
+      "C": {
+        "item": "poke_pfe:cobalt_claymore"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:shade_claymore"
+    }
+  }
 }

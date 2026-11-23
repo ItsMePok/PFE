@@ -1,65 +1,44 @@
 {
-	"format_version": "1.26.60",
-	"minecraft:block": {
-		"description": {
-			"identifier": "poke_pfe:lava_sponge",
-			"menu_category": {
-				"category": "nature"
-			}
-		},
-		"components": {
-			"minecraft:display_name": "%poke_pfe.lava_sponge\n%poke_pfe.tag",
-			"poke_pfe:sponge_block": {
-				"adds_to_stat": "lava_sponged",
-				"check_for_blocks": [
-					"minecraft:flowing_lava",
-					"minecraft:lava"
-				],
-				"mode": [
-					"place",
-					"tick"
-				],
-				"offset": [
-					0,
-					0,
-					0
-				],
-				"sound": {
-					"identifier": "sponge.absorb"
-				},
-				"sponge_size": [
-					20,
-					20,
-					20
-				],
-				"turns_into": "poke_pfe:molten_lava_sponge"
-			},
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "poke_pfe_lava_sponge",
-					"render_method": "opaque"
-				}
-			},
-			"minecraft:geometry": {
-				"identifier": "minecraft:geometry.full_block"
-			},
-			"minecraft:redstone_conductivity": {
-				"redstone_conductor": true,
-				"allows_wire_to_step_down": true
-			},
-			"minecraft:tick": {
-				"interval_range": [
-					10,
-					10
-				]
-			},
-			"minecraft:light_emission": 8,
-			"minecraft:tags": [
-				"pfe",
-				"hoe",
-				"minecraft:is_hoe_item_destructible"
-			],
-			"minecraft:map_color": "#e25f22"
-		}
-	}
+  "format_version": "1.26.60",
+  "minecraft:block": {
+    "description": {
+      "identifier": "poke_pfe:lava_sponge",
+      "menu_category": {
+        "category": "nature"
+      }
+    },
+    "components": {
+      "minecraft:display_name": "%poke_pfe.lava_sponge\n%poke_pfe.tag",
+      "poke_pfe:sponge_block": {
+        "adds_to_stat": "lava_sponged",
+        "check_for_blocks": ["minecraft:flowing_lava", "minecraft:lava"],
+        "mode": ["place", "tick"],
+        "offset": [0, 0, 0],
+        "sound": {
+          "identifier": "sponge.absorb"
+        },
+        "sponge_size": [20, 20, 20],
+        "turns_into": "poke_pfe:molten_lava_sponge"
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "poke_pfe_lava_sponge",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:geometry": {
+        "identifier": "minecraft:geometry.full_block"
+      },
+      "minecraft:redstone_conductivity": {
+        "redstone_conductor": true,
+        "allows_wire_to_step_down": true
+      },
+      "minecraft:tick": {
+        "interval_range": [10, 10]
+      },
+      "minecraft:light_emission": 8,
+      "minecraft:tags": ["pfe", "hoe", "minecraft:is_hoe_item_destructible"],
+      "minecraft:map_color": "#e25f22"
+    }
+  }
 }

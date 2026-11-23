@@ -1,94 +1,84 @@
 {
-	"format_version": "1.26.60",
-	"minecraft:entity": {
-		"description": {
-			"identifier": "poke_pfe:seat",
-			"is_spawnable": false,
-			"is_summonable": true,
-			"is_experimental": false,
-			"runtime_identifier": "minecraft:snowball"
-		},
-		"components": {
-			"minecraft:transient": {},
-			"minecraft:collision_box": {
-				"height": 0.01,
-				"width": 0.01
-			},
-			"minecraft:rideable": {
-				"controlling_seat": 0,
-				"crouching_skip_interact": true,
-				"family_types": [
-					"player"
-				],
-				"interact_text": "action.poke_pfeseat.sit",
-				"pull_in_entities": false,
-				"rider_can_interact": false,
-				"seat_count": 1,
-				"seats": [
-					{
-						"position": [
-							0,
-							-0.125,
-							0
-						]
-					}
-				]
-			},
-			"minecraft:timer": {
-				"random_time_choices": [
-					{
-						"value": 5
-					}
-				],
-				"looping": true,
-				"time_down_event": {
-					"event": "poke_pfe:block_check",
-					"target": "self"
-				}
-			},
-			"minecraft:physics": {
-				"has_collision": true,
-				"has_gravity": false
-			},
-			"minecraft:despawn": {
-				"despawn_from_distance": {
-					"min_distance": 2,
-					"max_distance": 2
-				},
-				"filters": {
-					"any_of": [
-						{
-							"test": "rider_count",
-							"operator": "==",
-							"value": 0
-						}
-					]
-				},
-				"despawn_from_simulation_edge": true
-			}
-		},
-		"events": {
-			"poke_pfe:block_check": {
-				"queue_command": {
-					"command": [
-						"execute as @s at @s if block ~~~ air run kill @s"
-					]
-				}
-			},
-			"poke_pfe:despawn": {
-				"add": {
-					"component_groups": [
-						"poke_pfe:despawn"
-					]
-				}
-			}
-		},
-		"component_groups": {
-			"poke_pfe:despawn": {
-				"minecraft:instant_despawn": {
-					"remove_child_entities": true
-				}
-			}
-		}
-	}
+  "format_version": "1.26.60",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "poke_pfe:seat",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "runtime_identifier": "minecraft:snowball"
+    },
+    "components": {
+      "minecraft:transient": {},
+      "minecraft:collision_box": {
+        "height": 0.01,
+        "width": 0.01
+      },
+      "minecraft:rideable": {
+        "controlling_seat": 0,
+        "crouching_skip_interact": true,
+        "family_types": ["player"],
+        "interact_text": "action.poke_pfeseat.sit",
+        "pull_in_entities": false,
+        "rider_can_interact": false,
+        "seat_count": 1,
+        "seats": [
+          {
+            "position": [0, -0.125, 0]
+          }
+        ]
+      },
+      "minecraft:timer": {
+        "random_time_choices": [
+          {
+            "value": 5
+          }
+        ],
+        "looping": true,
+        "time_down_event": {
+          "event": "poke_pfe:block_check",
+          "target": "self"
+        }
+      },
+      "minecraft:physics": {
+        "has_collision": true,
+        "has_gravity": false
+      },
+      "minecraft:despawn": {
+        "despawn_from_distance": {
+          "min_distance": 2,
+          "max_distance": 2
+        },
+        "filters": {
+          "any_of": [
+            {
+              "test": "rider_count",
+              "operator": "==",
+              "value": 0
+            }
+          ]
+        },
+        "despawn_from_simulation_edge": true
+      }
+    },
+    "events": {
+      "poke_pfe:block_check": {
+        "queue_command": {
+          "command": ["execute as @s at @s if block ~~~ air run kill @s"]
+        }
+      },
+      "poke_pfe:despawn": {
+        "add": {
+          "component_groups": ["poke_pfe:despawn"]
+        }
+      }
+    },
+    "component_groups": {
+      "poke_pfe:despawn": {
+        "minecraft:instant_despawn": {
+          "remove_child_entities": true
+        }
+      }
+    }
+  }
 }

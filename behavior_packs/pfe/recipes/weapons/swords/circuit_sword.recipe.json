@@ -1,46 +1,40 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:circuit_sword"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			" EZ",
-			"PRE",
-			"SP "
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:electric_component"
-			},
-			{
-				"item": "poke_pfe:radium_ingot"
-			}
-		],
-		"key": {
-			"P": {
-				"item": "poke_pfe:plastic"
-			},
-			"R": {
-				"item": "poke_pfe:radium_block"
-			},
-			"S": {
-				"item": "poke_pfe:onyx_stick"
-			},
-			"E": {
-				"item": "poke_pfe:electric_component"
-			},
-			"Z": {
-				"item": "poke_pfe:zeus_gem"
-			}
-		},
-		"result": [
-			{
-				"item": "poke_pfe:circuit_sword"
-			}
-		]
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:circuit_sword"
+    },
+    "tags": ["crafting_table"],
+    "pattern": [" EZ", "PRE", "SP "],
+    "unlock": [
+      {
+        "item": "poke_pfe:electric_component"
+      },
+      {
+        "item": "poke_pfe:radium_ingot"
+      }
+    ],
+    "key": {
+      "P": {
+        "item": "poke_pfe:plastic"
+      },
+      "R": {
+        "item": "poke_pfe:radium_block"
+      },
+      "S": {
+        "item": "poke_pfe:onyx_stick"
+      },
+      "E": {
+        "item": "poke_pfe:electric_component"
+      },
+      "Z": {
+        "item": "poke_pfe:zeus_gem"
+      }
+    },
+    "result": [
+      {
+        "item": "poke_pfe:circuit_sword"
+      }
+    ]
+  }
 }

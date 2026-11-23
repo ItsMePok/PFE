@@ -1,14 +1,14 @@
 {
-	"format_version": "1.26.60",
-	"minecraft:structure_template_feature": {
-		"description": {
-			"identifier": "poke_pfe:desert_vault.feature"
-		},
-		"structure_name": "poke_pfe:desert_vault",
-		"adjustment_radius": 16,
-		"facing_direction": "random",
-		"constraints": {
-			"grounded": {}
-		}
-	}
+  "format_version": "1.26.60",
+  "minecraft:structure_template_feature": {
+    "description": {
+      "identifier": "poke_pfe:desert_vault.feature"
+    },
+    "structure_name": "poke_pfe:desert_vault",
+    "adjustment_radius": 16,
+    "facing_direction": "random",
+    "constraints": {
+      "grounded": {}
+    }
+  }
 }

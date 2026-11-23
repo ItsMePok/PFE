@@ -1,26 +1,26 @@
 {
-	"format_version": "1.8.0",
-	"minecraft:spawn_rules": {
-		"description": {
-			"identifier": "poke_pfe:windswept_bear",
-			"population_control": "animal"
-		},
-		"conditions": [
-			{
-				"minecraft:spawns_on_surface": {},
-				"minecraft:biome_filter": {
-					"any_of": [
-						{
-							"test": "has_biome_tag",
-							"operator": "==",
-							"value": "frozen_peaks"
-						}
-					]
-				},
-				"minecraft:weight": {
-					"default": 25
-				}
-			}
-		]
-	}
+  "format_version": "1.8.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "poke_pfe:windswept_bear",
+      "population_control": "animal"
+    },
+    "conditions": [
+      {
+        "minecraft:spawns_on_surface": {},
+        "minecraft:biome_filter": {
+          "any_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "frozen_peaks"
+            }
+          ]
+        },
+        "minecraft:weight": {
+          "default": 25
+        }
+      }
+    ]
+  }
 }

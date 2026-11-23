@@ -12,11 +12,7 @@
           "max": "hard"
         },
         "minecraft:spawns_above_block_filter": {
-          "blocks": [
-            "minecraft:soul_sand",
-            "minecraft:soul_soil",
-            "minecraft:soul_fire"
-          ]
+          "blocks": ["minecraft:soul_sand", "minecraft:soul_soil", "minecraft:soul_fire"]
         },
         "minecraft:density_limit": {
           "surface": 2,

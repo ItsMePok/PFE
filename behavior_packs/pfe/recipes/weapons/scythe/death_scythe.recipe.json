@@ -1,41 +1,35 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:death_scythe"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"ZXX",
-			" # ",
-			"YU "
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:demonic_scythe"
-			}
-		],
-		"key": {
-			"Y": {
-				"item": "poke_pfe:void_scythe"
-			},
-			"X": {
-				"item": "poke_pfe:death_block"
-			},
-			"Z": {
-				"item": "poke_pfe:void_ingot"
-			},
-			"#": {
-				"item": "poke_pfe:ember_scythe"
-			},
-			"U": {
-				"item": "poke_pfe:platinum_upgrade_core"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:death_scythe"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:death_scythe"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["ZXX", " # ", "YU "],
+    "unlock": [
+      {
+        "item": "poke_pfe:demonic_scythe"
+      }
+    ],
+    "key": {
+      "Y": {
+        "item": "poke_pfe:void_scythe"
+      },
+      "X": {
+        "item": "poke_pfe:death_block"
+      },
+      "Z": {
+        "item": "poke_pfe:void_ingot"
+      },
+      "#": {
+        "item": "poke_pfe:ember_scythe"
+      },
+      "U": {
+        "item": "poke_pfe:platinum_upgrade_core"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:death_scythe"
+    }
+  }
 }

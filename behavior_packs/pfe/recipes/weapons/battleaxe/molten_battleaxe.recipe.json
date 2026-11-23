@@ -1,44 +1,38 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:molten_battleaxe"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"DDD",
-			"DSD",
-			"UB "
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:molten_slimeball"
-			},
-			{
-				"item": "poke_pfe:molten_block"
-			},
-			{
-				"item": "poke_pfe:demonic_battleaxe"
-			}
-		],
-		"key": {
-			"B": {
-				"item": "poke_pfe:demonic_battleaxe"
-			},
-			"D": {
-				"item": "poke_pfe:molten_block"
-			},
-			"S": {
-				"item": "poke_pfe:onyx_stick"
-			},
-			"U": {
-				"item": "poke_pfe:diamond_upgrade_core"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:molten_battleaxe"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:molten_battleaxe"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["DDD", "DSD", "UB "],
+    "unlock": [
+      {
+        "item": "poke_pfe:molten_slimeball"
+      },
+      {
+        "item": "poke_pfe:molten_block"
+      },
+      {
+        "item": "poke_pfe:demonic_battleaxe"
+      }
+    ],
+    "key": {
+      "B": {
+        "item": "poke_pfe:demonic_battleaxe"
+      },
+      "D": {
+        "item": "poke_pfe:molten_block"
+      },
+      "S": {
+        "item": "poke_pfe:onyx_stick"
+      },
+      "U": {
+        "item": "poke_pfe:diamond_upgrade_core"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:molten_battleaxe"
+    }
+  }
 }

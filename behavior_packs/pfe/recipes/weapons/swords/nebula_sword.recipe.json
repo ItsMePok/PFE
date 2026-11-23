@@ -1,86 +1,80 @@
 {
-	"format_version": "1.20.10",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:nebula_sword"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"APV",
-			"YCB",
-			"HSE"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:nebula_stick"
-			},
-			{
-				"item": "poke_pfe:nebula_haxel"
-			},
-			{
-				"item": "poke_pfe:nebula_battleaxe"
-			},
-			{
-				"item": "poke_pfe:nebula_core"
-			},
-			{
-				"item": "poke_pfe:nebula_scythe"
-			},
-			{
-				"item": "poke_pfe:void_sword"
-			},
-			{
-				"item": "poke_pfe:platinum_upgrade_core"
-			},
-			{
-				"item": "poke_pfe:death_sword"
-			},
-			{
-				"item": "poke_pfe:nebula_core"
-			},
-			{
-				"item": "poke_pfe:nebula_claymore"
-			},
-			{
-				"item": "poke_pfe:nebula_ingot"
-			},
-			{
-				"item": "poke_pfe:astral_sword"
-			}
-		],
-		"key": {
-			"A": {
-				"item": "poke_pfe:astral_sword"
-			},
-			"P": {
-				"item": "poke_pfe:platinum_upgrade_core"
-			},
-			"V": {
-				"item": "poke_pfe:death_sword"
-			},
-			"Y": {
-				"item": "poke_pfe:nebula_scythe"
-			},
-			"C": {
-				"item": "poke_pfe:nebula_core"
-			},
-			"B": {
-				"item": "poke_pfe:nebula_battleaxe"
-			},
-			"H": {
-				"item": "poke_pfe:nebula_haxel"
-			},
-			"S": {
-				"item": "poke_pfe:nebula_stick"
-			},
-			"E": {
-				"item": "poke_pfe:nebula_claymore"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:nebula_sword"
-		}
-	}
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:nebula_sword"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["APV", "YCB", "HSE"],
+    "unlock": [
+      {
+        "item": "poke_pfe:nebula_stick"
+      },
+      {
+        "item": "poke_pfe:nebula_haxel"
+      },
+      {
+        "item": "poke_pfe:nebula_battleaxe"
+      },
+      {
+        "item": "poke_pfe:nebula_core"
+      },
+      {
+        "item": "poke_pfe:nebula_scythe"
+      },
+      {
+        "item": "poke_pfe:void_sword"
+      },
+      {
+        "item": "poke_pfe:platinum_upgrade_core"
+      },
+      {
+        "item": "poke_pfe:death_sword"
+      },
+      {
+        "item": "poke_pfe:nebula_core"
+      },
+      {
+        "item": "poke_pfe:nebula_claymore"
+      },
+      {
+        "item": "poke_pfe:nebula_ingot"
+      },
+      {
+        "item": "poke_pfe:astral_sword"
+      }
+    ],
+    "key": {
+      "A": {
+        "item": "poke_pfe:astral_sword"
+      },
+      "P": {
+        "item": "poke_pfe:platinum_upgrade_core"
+      },
+      "V": {
+        "item": "poke_pfe:death_sword"
+      },
+      "Y": {
+        "item": "poke_pfe:nebula_scythe"
+      },
+      "C": {
+        "item": "poke_pfe:nebula_core"
+      },
+      "B": {
+        "item": "poke_pfe:nebula_battleaxe"
+      },
+      "H": {
+        "item": "poke_pfe:nebula_haxel"
+      },
+      "S": {
+        "item": "poke_pfe:nebula_stick"
+      },
+      "E": {
+        "item": "poke_pfe:nebula_claymore"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:nebula_sword"
+    }
+  }
 }

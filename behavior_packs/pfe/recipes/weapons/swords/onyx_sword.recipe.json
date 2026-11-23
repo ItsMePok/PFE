@@ -1,50 +1,44 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:onyx_sword"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"  Y",
-			"UY ",
-			"XA "
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:onyx_ingot"
-			},
-			{
-				"item": "poke_pfe:onyx_block"
-			},
-			{
-				"item": "poke_pfe:raw_onyx"
-			},
-			{
-				"item": "poke_pfe:onyx_nugget"
-			},
-			{
-				"item": "poke_pfe:creedite_sword"
-			}
-		],
-		"key": {
-			"Y": {
-				"item": "poke_pfe:onyx_ingot"
-			},
-			"X": {
-				"item": "poke_pfe:onyx_stick"
-			},
-			"A": {
-				"item": "poke_pfe:creedite_sword"
-			},
-			"U": {
-				"item": "poke_pfe:upgrade_core"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:onyx_sword"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:onyx_sword"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["  Y", "UY ", "XA "],
+    "unlock": [
+      {
+        "item": "poke_pfe:onyx_ingot"
+      },
+      {
+        "item": "poke_pfe:onyx_block"
+      },
+      {
+        "item": "poke_pfe:raw_onyx"
+      },
+      {
+        "item": "poke_pfe:onyx_nugget"
+      },
+      {
+        "item": "poke_pfe:creedite_sword"
+      }
+    ],
+    "key": {
+      "Y": {
+        "item": "poke_pfe:onyx_ingot"
+      },
+      "X": {
+        "item": "poke_pfe:onyx_stick"
+      },
+      "A": {
+        "item": "poke_pfe:creedite_sword"
+      },
+      "U": {
+        "item": "poke_pfe:upgrade_core"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:onyx_sword"
+    }
+  }
 }

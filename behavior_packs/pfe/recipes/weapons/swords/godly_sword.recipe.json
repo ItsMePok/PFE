@@ -1,43 +1,37 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:godly_sword"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"  Y",
-			"UY ",
-			"XA "
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:holy_sword"
-			},
-			{
-				"item": "poke_pfe:godly_ingot"
-			}
-		],
-		"key": {
-			"Y": {
-				"item": "poke_pfe:godly_ingot"
-			},
-			"X": {
-				"item": "poke_pfe:godly_stick"
-			},
-			"A": {
-				"item": "poke_pfe:holy_sword"
-			},
-			"U": {
-				"item": "poke_pfe:diamond_upgrade_core"
-			}
-		},
-		"result": [
-			{
-				"item": "poke_pfe:godly_sword"
-			}
-		]
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:godly_sword"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["  Y", "UY ", "XA "],
+    "unlock": [
+      {
+        "item": "poke_pfe:holy_sword"
+      },
+      {
+        "item": "poke_pfe:godly_ingot"
+      }
+    ],
+    "key": {
+      "Y": {
+        "item": "poke_pfe:godly_ingot"
+      },
+      "X": {
+        "item": "poke_pfe:godly_stick"
+      },
+      "A": {
+        "item": "poke_pfe:holy_sword"
+      },
+      "U": {
+        "item": "poke_pfe:diamond_upgrade_core"
+      }
+    },
+    "result": [
+      {
+        "item": "poke_pfe:godly_sword"
+      }
+    ]
+  }
 }

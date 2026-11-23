@@ -1,41 +1,35 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:radium_scythe"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"ZZX",
-			" # ",
-			"YU "
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:radium_ingot"
-			}
-		],
-		"key": {
-			"Y": {
-				"item": "poke_pfe:radium_ingot"
-			},
-			"X": {
-				"item": "poke_pfe:radium_block"
-			},
-			"Z": {
-				"item": "poke_pfe:radium_ingot"
-			},
-			"#": {
-				"item": "poke_pfe:shade_scythe"
-			},
-			"U": {
-				"item": "poke_pfe:diamond_upgrade_core"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:radium_scythe"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:radium_scythe"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["ZZX", " # ", "YU "],
+    "unlock": [
+      {
+        "item": "poke_pfe:radium_ingot"
+      }
+    ],
+    "key": {
+      "Y": {
+        "item": "poke_pfe:radium_ingot"
+      },
+      "X": {
+        "item": "poke_pfe:radium_block"
+      },
+      "Z": {
+        "item": "poke_pfe:radium_ingot"
+      },
+      "#": {
+        "item": "poke_pfe:shade_scythe"
+      },
+      "U": {
+        "item": "poke_pfe:diamond_upgrade_core"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:radium_scythe"
+    }
+  }
 }

@@ -1,65 +1,52 @@
 {
-	"format_version": "1.26.60",
-	"minecraft:block": {
-		"description": {
-			"identifier": "poke_pfe:pfe_crafting_table",
-			"menu_category": {
-				"category": "none"
-			}
-		},
-		"components": {
-			"minecraft:display_name": "%poke_pfe.pfe_crafting_table\n%poke_pfe.tag",
-			"minecraft:selection_box": true,
-			"minecraft:collision_box": [
-				{
-					"origin": [
-						-8,
-						0,
-						-8
-					],
-					"size": [
-						16,
-						16,
-						16
-					]
-				}
-			],
-			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 1.4
-			},
-			"minecraft:destructible_by_explosion": {
-				"explosion_resistance": 24
-			},
-			"minecraft:geometry": "minecraft:geometry.full_block",
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "poke_pfe_crafter_side",
-					"render_method": "alpha_test"
-				},
-				"up": {
-					"texture": "poke_pfe_crafter_top",
-					"render_method": "alpha_test"
-				},
-				"down": {
-					"texture": "oak_planks",
-					"render_method": "alpha_test"
-				},
-				"north": {
-					"texture": "poke_pfe_crafter_front",
-					"render_method": "alpha_test"
-				},
-				"south": "north"
-			},
-			"minecraft:tags": [
-				"pfe",
-				"minecraft:is_axe_item_destructible"
-			],
-			"minecraft:map_color": "#cc7400",
-			"minecraft:crafting_table": {
-				"crafting_tags": [
-					"pfe"
-				]
-			}
-		}
-	}
+  "format_version": "1.26.60",
+  "minecraft:block": {
+    "description": {
+      "identifier": "poke_pfe:pfe_crafting_table",
+      "menu_category": {
+        "category": "none"
+      }
+    },
+    "components": {
+      "minecraft:display_name": "%poke_pfe.pfe_crafting_table\n%poke_pfe.tag",
+      "minecraft:selection_box": true,
+      "minecraft:collision_box": [
+        {
+          "origin": [-8, 0, -8],
+          "size": [16, 16, 16]
+        }
+      ],
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1.4
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 24
+      },
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "poke_pfe_crafter_side",
+          "render_method": "alpha_test"
+        },
+        "up": {
+          "texture": "poke_pfe_crafter_top",
+          "render_method": "alpha_test"
+        },
+        "down": {
+          "texture": "oak_planks",
+          "render_method": "alpha_test"
+        },
+        "north": {
+          "texture": "poke_pfe_crafter_front",
+          "render_method": "alpha_test"
+        },
+        "south": "north"
+      },
+      "minecraft:tags": ["pfe", "minecraft:is_axe_item_destructible"],
+      "minecraft:map_color": "#cc7400",
+      "minecraft:crafting_table": {
+        "crafting_tags": ["pfe"]
+      }
+    }
+  }
 }

@@ -1,233 +1,170 @@
 {
-	"format_version": "1.26.60",
-	"minecraft:block": {
-		"description": {
-			"identifier": "poke_pfe:turnip",
-			"menu_category": {
-				"category": "nature"
-			},
-			"states": {
-				"poke_pfe:growth_stage": [
-					1,
-					2,
-					3,
-					4,
-					5,
-					6
-				]
-			}
-		},
-		"permutations": [
-			{
-				"condition": "q.block_state('poke_pfe:growth_stage') == 1",
-				"components": {
-					"minecraft:selection_box": {
-						"origin": [
-							-8,
-							0,
-							-8
-						],
-						"size": [
-							16,
-							3,
-							16
-						]
-					},
-					"minecraft:loot": "loot_tables/poke/pfe/turnip_crop_ungrown.loot.json",
-					"minecraft:geometry": "geometry.poke_pfe.charred_poppy",
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "poke_pfe_turnip_1",
-							"render_method": "alpha_test_to_opaque",
-							"ambient_occlusion": 0,
-							"face_dimming": false
-						}
-					},
-					"poke_pfe:crops": {}
-				}
-			},
-			{
-				"condition": "q.block_state('poke_pfe:growth_stage') == 2",
-				"components": {
-					"minecraft:selection_box": {
-						"origin": [
-							-8,
-							0,
-							-8
-						],
-						"size": [
-							16,
-							3,
-							16
-						]
-					},
-					"minecraft:loot": "loot_tables/poke/pfe/turnip_crop_ungrown.loot.json",
-					"minecraft:geometry": "geometry.poke_pfe.charred_poppy",
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "poke_pfe_turnip_1",
-							"render_method": "alpha_test_to_opaque",
-							"ambient_occlusion": 0,
-							"face_dimming": false
-						}
-					},
-					"poke_pfe:crops": {}
-				}
-			},
-			{
-				"condition": "q.block_state('poke_pfe:growth_stage') == 3",
-				"components": {
-					"minecraft:selection_box": {
-						"origin": [
-							-8,
-							0,
-							-8
-						],
-						"size": [
-							16,
-							5,
-							16
-						]
-					},
-					"minecraft:loot": "loot_tables/poke/pfe/turnip_crop_ungrown.loot.json",
-					"minecraft:geometry": "geometry.poke_pfe.charred_poppy",
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "poke_pfe_turnip_2",
-							"render_method": "alpha_test_to_opaque",
-							"ambient_occlusion": 0,
-							"face_dimming": false
-						}
-					},
-					"poke_pfe:crops": {}
-				}
-			},
-			{
-				"condition": "q.block_state('poke_pfe:growth_stage') == 4",
-				"components": {
-					"minecraft:selection_box": {
-						"origin": [
-							-8,
-							0,
-							-8
-						],
-						"size": [
-							16,
-							5,
-							16
-						]
-					},
-					"minecraft:loot": "loot_tables/poke/pfe/turnip_crop_ungrown.loot.json",
-					"minecraft:geometry": "geometry.poke_pfe.charred_poppy",
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "poke_pfe_turnip_2",
-							"render_method": "alpha_test_to_opaque",
-							"ambient_occlusion": 0,
-							"face_dimming": false
-						}
-					},
-					"poke_pfe:crops": {}
-				}
-			},
-			{
-				"condition": "q.block_state('poke_pfe:growth_stage') == 5",
-				"components": {
-					"minecraft:selection_box": {
-						"origin": [
-							-8,
-							0,
-							-8
-						],
-						"size": [
-							16,
-							5,
-							16
-						]
-					},
-					"minecraft:loot": "loot_tables/poke/pfe/turnip_crop_ungrown.loot.json",
-					"minecraft:geometry": "geometry.poke_pfe.charred_poppy",
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "poke_pfe_turnip_2",
-							"render_method": "alpha_test_to_opaque",
-							"ambient_occlusion": 0,
-							"face_dimming": false
-						}
-					},
-					"poke_pfe:crops": {}
-				}
-			},
-			{
-				"condition": "q.block_state('poke_pfe:growth_stage') == 6",
-				"components": {
-					"minecraft:selection_box": {
-						"origin": [
-							-8,
-							0,
-							-8
-						],
-						"size": [
-							16,
-							8,
-							16
-						]
-					},
-					"minecraft:loot": "loot_tables/poke/pfe/turnip_crop.loot.json",
-					"minecraft:geometry": "geometry.poke_pfe.charred_poppy",
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "poke_pfe_turnip_3",
-							"render_method": "alpha_test_to_opaque",
-							"ambient_occlusion": 0,
-							"face_dimming": false
-						}
-					}
-				}
-			}
-		],
-		"components": {
-			"minecraft:precipitation_interactions": {
-				"precipitation_behavior": "none"
-			},
-			"minecraft:connection_rule": {
-				"accepts_connections_from": "none"
-			},
-			"minecraft:liquid_detection": {
-				"detection_rules": [
-					{
-						"can_contain_liquid": true,
-						"liquid_type": "water",
-						"on_liquid_touches": "popped"
-					}
-				]
-			},
-			"minecraft:collision_box": false,
-			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 0
-			},
-			"minecraft:destructible_by_explosion": {
-				"explosion_resistance": 0
-			},
-			"minecraft:placement_filter": {
-				"conditions": [
-					{
-						"allowed_faces": [
-							"up"
-						],
-						"block_filter": [
-							"farmland"
-						]
-					}
-				]
-			},
-			"minecraft:tags": [
-				"pfe",
-				"minecraft:crop",
-				"crop"
-			],
-			"minecraft:light_dampening": 0,
-			"minecraft:map_color": "#09a304"
-		}
-	}
+  "format_version": "1.26.60",
+  "minecraft:block": {
+    "description": {
+      "identifier": "poke_pfe:turnip",
+      "menu_category": {
+        "category": "nature"
+      },
+      "states": {
+        "poke_pfe:growth_stage": [1, 2, 3, 4, 5, 6]
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('poke_pfe:growth_stage') == 1",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [-8, 0, -8],
+            "size": [16, 3, 16]
+          },
+          "minecraft:loot": "loot_tables/poke/pfe/turnip_crop_ungrown.loot.json",
+          "minecraft:geometry": "geometry.poke_pfe.charred_poppy",
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "poke_pfe_turnip_1",
+              "render_method": "alpha_test_to_opaque",
+              "ambient_occlusion": 0,
+              "face_dimming": false
+            }
+          },
+          "poke_pfe:crops": {}
+        }
+      },
+      {
+        "condition": "q.block_state('poke_pfe:growth_stage') == 2",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [-8, 0, -8],
+            "size": [16, 3, 16]
+          },
+          "minecraft:loot": "loot_tables/poke/pfe/turnip_crop_ungrown.loot.json",
+          "minecraft:geometry": "geometry.poke_pfe.charred_poppy",
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "poke_pfe_turnip_1",
+              "render_method": "alpha_test_to_opaque",
+              "ambient_occlusion": 0,
+              "face_dimming": false
+            }
+          },
+          "poke_pfe:crops": {}
+        }
+      },
+      {
+        "condition": "q.block_state('poke_pfe:growth_stage') == 3",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [-8, 0, -8],
+            "size": [16, 5, 16]
+          },
+          "minecraft:loot": "loot_tables/poke/pfe/turnip_crop_ungrown.loot.json",
+          "minecraft:geometry": "geometry.poke_pfe.charred_poppy",
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "poke_pfe_turnip_2",
+              "render_method": "alpha_test_to_opaque",
+              "ambient_occlusion": 0,
+              "face_dimming": false
+            }
+          },
+          "poke_pfe:crops": {}
+        }
+      },
+      {
+        "condition": "q.block_state('poke_pfe:growth_stage') == 4",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [-8, 0, -8],
+            "size": [16, 5, 16]
+          },
+          "minecraft:loot": "loot_tables/poke/pfe/turnip_crop_ungrown.loot.json",
+          "minecraft:geometry": "geometry.poke_pfe.charred_poppy",
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "poke_pfe_turnip_2",
+              "render_method": "alpha_test_to_opaque",
+              "ambient_occlusion": 0,
+              "face_dimming": false
+            }
+          },
+          "poke_pfe:crops": {}
+        }
+      },
+      {
+        "condition": "q.block_state('poke_pfe:growth_stage') == 5",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [-8, 0, -8],
+            "size": [16, 5, 16]
+          },
+          "minecraft:loot": "loot_tables/poke/pfe/turnip_crop_ungrown.loot.json",
+          "minecraft:geometry": "geometry.poke_pfe.charred_poppy",
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "poke_pfe_turnip_2",
+              "render_method": "alpha_test_to_opaque",
+              "ambient_occlusion": 0,
+              "face_dimming": false
+            }
+          },
+          "poke_pfe:crops": {}
+        }
+      },
+      {
+        "condition": "q.block_state('poke_pfe:growth_stage') == 6",
+        "components": {
+          "minecraft:selection_box": {
+            "origin": [-8, 0, -8],
+            "size": [16, 8, 16]
+          },
+          "minecraft:loot": "loot_tables/poke/pfe/turnip_crop.loot.json",
+          "minecraft:geometry": "geometry.poke_pfe.charred_poppy",
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "poke_pfe_turnip_3",
+              "render_method": "alpha_test_to_opaque",
+              "ambient_occlusion": 0,
+              "face_dimming": false
+            }
+          }
+        }
+      }
+    ],
+    "components": {
+      "minecraft:precipitation_interactions": {
+        "precipitation_behavior": "none"
+      },
+      "minecraft:connection_rule": {
+        "accepts_connections_from": "none"
+      },
+      "minecraft:liquid_detection": {
+        "detection_rules": [
+          {
+            "can_contain_liquid": true,
+            "liquid_type": "water",
+            "on_liquid_touches": "popped"
+          }
+        ]
+      },
+      "minecraft:collision_box": false,
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 0
+      },
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "allowed_faces": ["up"],
+            "block_filter": ["farmland"]
+          }
+        ]
+      },
+      "minecraft:tags": ["pfe", "minecraft:crop", "crop"],
+      "minecraft:light_dampening": 0,
+      "minecraft:map_color": "#09a304"
+    }
+  }
 }

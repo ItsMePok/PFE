@@ -1,99 +1,92 @@
 {
-	"format_version": "1.26.60",
-	"minecraft:entity": {
-		"description": {
-			"identifier": "poke_pfe:mail_cart",
-			"is_spawnable": false,
-			"is_summonable": true,
-			"is_experimental": false,
-			"runtime_identifier": "minecraft:chest_minecart"
-		},
-		"component_groups": {
-			"despawn": {
-				"minecraft:instant_despawn": {
-					"remove_child_entities": false
-				}
-			}
-		},
-		"events": {
-			"poke_pfe:death": {
-				"add": {
-					"component_groups": [
-						"despawn"
-					]
-				},
-				"queue_command": {
-					"command": [
-						"structure load \"poke_pfe:mail_cart\" ~~~"
-					]
-				}
-			}
-		},
-		"components": {
-			"minecraft:physics": {},
-			"minecraft:pushable_by_block": {},
-			"minecraft:pushable_by_entity": {},
-			"minecraft:knockback_resistance": {
-				"value": 1,
-				"max": 1
-			},
-			"minecraft:type_family": {
-				"family": [
-					"minecart",
-					"inanimate"
-				]
-			},
-			"minecraft:is_stackable": {},
-			"minecraft:collision_box": {
-				"width": 0.98,
-				"height": 0.7
-			},
-			"minecraft:loot": {
-				"table": "loot_tables/poke/pfe/mail_cart.loot.json"
-			},
-			"minecraft:on_hurt": {
-				"target": "self",
-				"event": "poke_pfe:death"
-			},
-			"minecraft:inventory": {
-				"container_type": "minecart_chest",
-				"inventory_size": 27,
-				"can_be_siphoned_from": true
-			},
-			"minecraft:rail_movement": {
-				"max_speed": 0.4
-			},
-			"minecraft:rail_sensor": {
-				"check_block_types": false,
-				"eject_on_activate": true,
-				"eject_on_deactivate": false
-			},
-			"minecraft:tick_world": {
-				"distance_to_players": 128,
-				"never_despawn": true,
-				"radius": 2
-			},
-			"minecraft:conditional_bandwidth_optimization": {
-				"default_values": {
-					"max_optimized_distance": 60.0,
-					"max_dropped_ticks": 20,
-					"use_motion_prediction_hints": true
-				},
-				"conditional_values": [
-					{
-						"max_optimized_distance": 0.0,
-						"max_dropped_ticks": 0,
-						"conditional_values": [
-							{
-								"test": "is_moving",
-								"subject": "self",
-								"operator": "==",
-								"value": true
-							}
-						]
-					}
-				]
-			}
-		}
-	}
+  "format_version": "1.26.60",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "poke_pfe:mail_cart",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "runtime_identifier": "minecraft:chest_minecart"
+    },
+    "component_groups": {
+      "despawn": {
+        "minecraft:instant_despawn": {
+          "remove_child_entities": false
+        }
+      }
+    },
+    "events": {
+      "poke_pfe:death": {
+        "add": {
+          "component_groups": ["despawn"]
+        },
+        "queue_command": {
+          "command": ["structure load \"poke_pfe:mail_cart\" ~~~"]
+        }
+      }
+    },
+    "components": {
+      "minecraft:physics": {},
+      "minecraft:pushable_by_block": {},
+      "minecraft:pushable_by_entity": {},
+      "minecraft:knockback_resistance": {
+        "value": 1,
+        "max": 1
+      },
+      "minecraft:type_family": {
+        "family": ["minecart", "inanimate"]
+      },
+      "minecraft:is_stackable": {},
+      "minecraft:collision_box": {
+        "width": 0.98,
+        "height": 0.7
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/poke/pfe/mail_cart.loot.json"
+      },
+      "minecraft:on_hurt": {
+        "target": "self",
+        "event": "poke_pfe:death"
+      },
+      "minecraft:inventory": {
+        "container_type": "minecart_chest",
+        "inventory_size": 27,
+        "can_be_siphoned_from": true
+      },
+      "minecraft:rail_movement": {
+        "max_speed": 0.4
+      },
+      "minecraft:rail_sensor": {
+        "check_block_types": false,
+        "eject_on_activate": true,
+        "eject_on_deactivate": false
+      },
+      "minecraft:tick_world": {
+        "distance_to_players": 128,
+        "never_despawn": true,
+        "radius": 2
+      },
+      "minecraft:conditional_bandwidth_optimization": {
+        "default_values": {
+          "max_optimized_distance": 60.0,
+          "max_dropped_ticks": 20,
+          "use_motion_prediction_hints": true
+        },
+        "conditional_values": [
+          {
+            "max_optimized_distance": 0.0,
+            "max_dropped_ticks": 0,
+            "conditional_values": [
+              {
+                "test": "is_moving",
+                "subject": "self",
+                "operator": "==",
+                "value": true
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
 }

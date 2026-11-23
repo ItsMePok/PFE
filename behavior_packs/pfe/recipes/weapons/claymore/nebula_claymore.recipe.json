@@ -1,66 +1,60 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:nebula_claymore"
-		},
-		"group": "claymore",
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"UB ",
-			"INI",
-			"XSC"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:nebula_ingot"
-			},
-			{
-				"item": "poke_pfe:nebula_block"
-			},
-			{
-				"item": "poke_pfe:nebula_stick"
-			},
-			{
-				"item": "poke_pfe:platinum_upgrade_core"
-			},
-			{
-				"item": "poke_pfe:astral_claymore"
-			},
-			{
-				"item": "poke_pfe:death_claymore"
-			},
-			{
-				"item": "poke_pfe:nebula_core"
-			}
-		],
-		"key": {
-			"I": {
-				"item": "poke_pfe:nebula_ingot"
-			},
-			"B": {
-				"item": "poke_pfe:nebula_block"
-			},
-			"S": {
-				"item": "poke_pfe:nebula_stick"
-			},
-			"U": {
-				"item": "poke_pfe:platinum_upgrade_core"
-			},
-			"C": {
-				"item": "poke_pfe:astral_claymore"
-			},
-			"X": {
-				"item": "poke_pfe:death_claymore"
-			},
-			"N": {
-				"item": "poke_pfe:nebula_core"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:nebula_claymore"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:nebula_claymore"
+    },
+    "group": "claymore",
+    "tags": ["crafting_table"],
+    "pattern": ["UB ", "INI", "XSC"],
+    "unlock": [
+      {
+        "item": "poke_pfe:nebula_ingot"
+      },
+      {
+        "item": "poke_pfe:nebula_block"
+      },
+      {
+        "item": "poke_pfe:nebula_stick"
+      },
+      {
+        "item": "poke_pfe:platinum_upgrade_core"
+      },
+      {
+        "item": "poke_pfe:astral_claymore"
+      },
+      {
+        "item": "poke_pfe:death_claymore"
+      },
+      {
+        "item": "poke_pfe:nebula_core"
+      }
+    ],
+    "key": {
+      "I": {
+        "item": "poke_pfe:nebula_ingot"
+      },
+      "B": {
+        "item": "poke_pfe:nebula_block"
+      },
+      "S": {
+        "item": "poke_pfe:nebula_stick"
+      },
+      "U": {
+        "item": "poke_pfe:platinum_upgrade_core"
+      },
+      "C": {
+        "item": "poke_pfe:astral_claymore"
+      },
+      "X": {
+        "item": "poke_pfe:death_claymore"
+      },
+      "N": {
+        "item": "poke_pfe:nebula_core"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:nebula_claymore"
+    }
+  }
 }

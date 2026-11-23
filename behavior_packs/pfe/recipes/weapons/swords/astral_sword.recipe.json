@@ -1,43 +1,37 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:astral_sword"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"  Y",
-			"UY ",
-			"XA "
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:godly_sword"
-			},
-			{
-				"item": "poke_pfe:astral_ingot"
-			}
-		],
-		"key": {
-			"Y": {
-				"item": "poke_pfe:astral_ingot"
-			},
-			"X": {
-				"item": "poke_pfe:godly_stick"
-			},
-			"A": {
-				"item": "poke_pfe:galaxy_sword"
-			},
-			"U": {
-				"item": "poke_pfe:platinum_upgrade_core"
-			}
-		},
-		"result": [
-			{
-				"item": "poke_pfe:astral_sword"
-			}
-		]
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:astral_sword"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["  Y", "UY ", "XA "],
+    "unlock": [
+      {
+        "item": "poke_pfe:godly_sword"
+      },
+      {
+        "item": "poke_pfe:astral_ingot"
+      }
+    ],
+    "key": {
+      "Y": {
+        "item": "poke_pfe:astral_ingot"
+      },
+      "X": {
+        "item": "poke_pfe:godly_stick"
+      },
+      "A": {
+        "item": "poke_pfe:galaxy_sword"
+      },
+      "U": {
+        "item": "poke_pfe:platinum_upgrade_core"
+      }
+    },
+    "result": [
+      {
+        "item": "poke_pfe:astral_sword"
+      }
+    ]
+  }
 }

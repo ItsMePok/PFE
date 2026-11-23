@@ -1,54 +1,48 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:demonic_claymore"
-		},
-		"group": "claymore",
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			" B ",
-			"IBI",
-			"USC"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:demonic_ingot"
-			},
-			{
-				"item": "poke_pfe:demonic_block"
-			},
-			{
-				"item": "poke_pfe:demonic_stick"
-			},
-			{
-				"item": "poke_pfe:diamond_upgrade_core"
-			},
-			{
-				"item": "poke_pfe:hellish_claymore"
-			}
-		],
-		"key": {
-			"I": {
-				"item": "poke_pfe:demonic_ingot"
-			},
-			"B": {
-				"item": "poke_pfe:demonic_block"
-			},
-			"S": {
-				"item": "poke_pfe:demonic_stick"
-			},
-			"U": {
-				"item": "poke_pfe:diamond_upgrade_core"
-			},
-			"C": {
-				"item": "poke_pfe:hellish_claymore"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:demonic_claymore"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:demonic_claymore"
+    },
+    "group": "claymore",
+    "tags": ["crafting_table"],
+    "pattern": [" B ", "IBI", "USC"],
+    "unlock": [
+      {
+        "item": "poke_pfe:demonic_ingot"
+      },
+      {
+        "item": "poke_pfe:demonic_block"
+      },
+      {
+        "item": "poke_pfe:demonic_stick"
+      },
+      {
+        "item": "poke_pfe:diamond_upgrade_core"
+      },
+      {
+        "item": "poke_pfe:hellish_claymore"
+      }
+    ],
+    "key": {
+      "I": {
+        "item": "poke_pfe:demonic_ingot"
+      },
+      "B": {
+        "item": "poke_pfe:demonic_block"
+      },
+      "S": {
+        "item": "poke_pfe:demonic_stick"
+      },
+      "U": {
+        "item": "poke_pfe:diamond_upgrade_core"
+      },
+      "C": {
+        "item": "poke_pfe:hellish_claymore"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:demonic_claymore"
+    }
+  }
 }

@@ -1,54 +1,48 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:creedite_claymore"
-		},
-		"group": "claymore",
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			" B ",
-			"IBI",
-			"USC"
-		],
-		"unlock": [
-			{
-				"item": "minecraft:amethyst_shard"
-			},
-			{
-				"item": "minecraft:amethyst_block"
-			},
-			{
-				"item": "minecraft:stick"
-			},
-			{
-				"item": "poke_pfe:upgrade_core"
-			},
-			{
-				"item": "poke_pfe:netherite_claymore"
-			}
-		],
-		"key": {
-			"I": {
-				"item": "minecraft:amethyst_shard"
-			},
-			"B": {
-				"item": "minecraft:amethyst_block"
-			},
-			"S": {
-				"item": "minecraft:stick"
-			},
-			"U": {
-				"item": "poke_pfe:upgrade_core"
-			},
-			"C": {
-				"item": "poke_pfe:netherite_claymore"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:creedite_claymore"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:creedite_claymore"
+    },
+    "group": "claymore",
+    "tags": ["crafting_table"],
+    "pattern": [" B ", "IBI", "USC"],
+    "unlock": [
+      {
+        "item": "minecraft:amethyst_shard"
+      },
+      {
+        "item": "minecraft:amethyst_block"
+      },
+      {
+        "item": "minecraft:stick"
+      },
+      {
+        "item": "poke_pfe:upgrade_core"
+      },
+      {
+        "item": "poke_pfe:netherite_claymore"
+      }
+    ],
+    "key": {
+      "I": {
+        "item": "minecraft:amethyst_shard"
+      },
+      "B": {
+        "item": "minecraft:amethyst_block"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      },
+      "U": {
+        "item": "poke_pfe:upgrade_core"
+      },
+      "C": {
+        "item": "poke_pfe:netherite_claymore"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:creedite_claymore"
+    }
+  }
 }

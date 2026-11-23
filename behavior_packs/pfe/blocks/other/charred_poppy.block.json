@@ -1,111 +1,96 @@
 {
-	"format_version": "1.26.60",
-	"minecraft:block": {
-		"description": {
-			"identifier": "poke_pfe:charred_poppy"
-		},
-		"components": {
-			"minecraft:precipitation_interactions": {
-				"precipitation_behavior": "snowlogging"
-			},
-			"minecraft:connection_rule": {
-				"accepts_connections_from": "none"
-			},
-			"minecraft:random_offset": {
-				"x": {
-					"range": {
-						"max": 7,
-						"min": 0
-					},
-					"steps": 0
-				},
-				"y": {
-					"range": {
-						"min": 0,
-						"max": 0
-					}
-				},
-				"z": {
-					"range": {
-						"max": 7,
-						"min": 0
-					},
-					"steps": 0
-				}
-			},
-			"minecraft:movable": {
-				"movement_type": "popped"
-			},
-			"minecraft:liquid_detection": {
-				"detection_rules": [
-					{
-						"can_contain_liquid": true,
-						"liquid_type": "water",
-						"on_liquid_touches": "popped"
-					}
-				]
-			},
-			"minecraft:collision_box": false,
-			"minecraft:selection_box": {
-				"origin": [
-					-2.5,
-					0,
-					-2.5
-				],
-				"size": [
-					5,
-					11,
-					5
-				]
-			},
-			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 0
-			},
-			"minecraft:destructible_by_explosion": {
-				"explosion_resistance": 0
-			},
-			"minecraft:flower_pottable": {},
-			"minecraft:embedded_visual": {
-				"geometry": {
-					"identifier": "geometry.poke_pfe.charred_poppy"
-				},
-				"material_instances": {
-					"*": {
-						"texture": "poke_pfe_charred_poppy",
-						"render_method": "alpha_test",
-						"face_dimming": false,
-						"ambient_occlusion": 0
-					}
-				}
-			},
-			"minecraft:geometry": "geometry.poke_pfe.charred_poppy",
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "poke_pfe_charred_poppy",
-					"render_method": "alpha_test",
-					"face_dimming": false,
-					"ambient_occlusion": 0
-				}
-			},
-			"minecraft:placement_filter": {
-				"conditions": [
-					{
-						//"block_filter": [{"tags": "minecraft:supports_vegetation"}],
-						"allowed_faces": [
-							"up"
-						]
-					}
-				]
-			},
-			"minecraft:tags": [
-				"pfe",
-				"crop",
-				"plant",
-				"minecraft:crop"
-			],
-			"minecraft:light_dampening": 0,
-			"minecraft:map_color": "#393730",
-			"minecraft:loot": "loot_tables/poke/pfe/charred_poppy.loot.json"
-		}
-	}
+  "format_version": "1.26.60",
+  "minecraft:block": {
+    "description": {
+      "identifier": "poke_pfe:charred_poppy"
+    },
+    "components": {
+      "minecraft:precipitation_interactions": {
+        "precipitation_behavior": "snowlogging"
+      },
+      "minecraft:connection_rule": {
+        "accepts_connections_from": "none"
+      },
+      "minecraft:random_offset": {
+        "x": {
+          "range": {
+            "max": 7,
+            "min": 0
+          },
+          "steps": 0
+        },
+        "y": {
+          "range": {
+            "min": 0,
+            "max": 0
+          }
+        },
+        "z": {
+          "range": {
+            "max": 7,
+            "min": 0
+          },
+          "steps": 0
+        }
+      },
+      "minecraft:movable": {
+        "movement_type": "popped"
+      },
+      "minecraft:liquid_detection": {
+        "detection_rules": [
+          {
+            "can_contain_liquid": true,
+            "liquid_type": "water",
+            "on_liquid_touches": "popped"
+          }
+        ]
+      },
+      "minecraft:collision_box": false,
+      "minecraft:selection_box": {
+        "origin": [-2.5, 0, -2.5],
+        "size": [5, 11, 5]
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 0
+      },
+      "minecraft:flower_pottable": {},
+      "minecraft:embedded_visual": {
+        "geometry": {
+          "identifier": "geometry.poke_pfe.charred_poppy"
+        },
+        "material_instances": {
+          "*": {
+            "texture": "poke_pfe_charred_poppy",
+            "render_method": "alpha_test",
+            "face_dimming": false,
+            "ambient_occlusion": 0
+          }
+        }
+      },
+      "minecraft:geometry": "geometry.poke_pfe.charred_poppy",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "poke_pfe_charred_poppy",
+          "render_method": "alpha_test",
+          "face_dimming": false,
+          "ambient_occlusion": 0
+        }
+      },
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            //"block_filter": [{ "tags": "minecraft:supports_vegetation"}],
+            "allowed_faces": ["up"]
+          }
+        ]
+      },
+      "minecraft:tags": ["pfe", "crop", "plant", "minecraft:crop"],
+      "minecraft:light_dampening": 0,
+      "minecraft:map_color": "#393730",
+      "minecraft:loot": "loot_tables/poke/pfe/charred_poppy.loot.json"
+    }
+  }
 }

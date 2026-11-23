@@ -1,41 +1,35 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:void_sword"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			" N ",
-			"ANA",
-			"iSU"
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:void_ingot"
-			}
-		],
-		"key": {
-			"i": {
-				"item": "poke_pfe:demonic_sword"
-			},
-			"A": {
-				"item": "poke_pfe:void_ingot"
-			},
-			"S": {
-				"item": "poke_pfe:demonic_stick"
-			},
-			"U": {
-				"item": "poke_pfe:platinum_upgrade_core"
-			},
-			"N": {
-				"item": "poke_pfe:void_block"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:void_sword"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:void_sword"
+    },
+    "tags": ["crafting_table"],
+    "pattern": [" N ", "ANA", "iSU"],
+    "unlock": [
+      {
+        "item": "poke_pfe:void_ingot"
+      }
+    ],
+    "key": {
+      "i": {
+        "item": "poke_pfe:demonic_sword"
+      },
+      "A": {
+        "item": "poke_pfe:void_ingot"
+      },
+      "S": {
+        "item": "poke_pfe:demonic_stick"
+      },
+      "U": {
+        "item": "poke_pfe:platinum_upgrade_core"
+      },
+      "N": {
+        "item": "poke_pfe:void_block"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:void_sword"
+    }
+  }
 }

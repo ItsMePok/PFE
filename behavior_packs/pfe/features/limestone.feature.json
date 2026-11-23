@@ -1,19 +1,17 @@
 {
-	"format_version": "1.26.60",
-	"minecraft:ore_feature": {
-		"description": {
-			"identifier": "poke_pfe:limestone.feature"
-		},
-		"count": 50,
-		"replace_rules": [
-			{
-				"places_block": {
-					"name": "poke_pfe:limestone"
-				},
-				"may_replace": [
-					"stone"
-				]
-			}
-		]
-	}
+  "format_version": "1.26.60",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "poke_pfe:limestone.feature"
+    },
+    "count": 50,
+    "replace_rules": [
+      {
+        "places_block": {
+          "name": "poke_pfe:limestone"
+        },
+        "may_replace": ["stone"]
+      }
+    ]
+  }
 }

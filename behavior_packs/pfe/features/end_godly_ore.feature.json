@@ -40,9 +40,7 @@
       },
       {
         "places_block": "poke_pfe:deepslate_godly_ore",
-        "may_replace": [
-          "deepslate"
-        ]
+        "may_replace": ["deepslate"]
       },
       {
         "places_block": {

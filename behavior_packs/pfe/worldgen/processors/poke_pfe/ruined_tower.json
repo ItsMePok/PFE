@@ -7,9 +7,7 @@
     "processors": [
       {
         "processor_type": "minecraft:block_ignore",
-        "blocks": [
-          "minecraft:air"
-        ]
+        "blocks": ["minecraft:air"]
       }
     ]
   }

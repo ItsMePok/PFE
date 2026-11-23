@@ -1,53 +1,53 @@
 {
-	"format_version": "1.26.60",
-	"minecraft:block": {
-		"description": {
-			"identifier": "poke_pfe:limestone",
-			"menu_category": {
-				"category": "nature"
-			}
-		},
-		"components": {
-			"minecraft:display_name": "%poke_pfe.limestone\n%poke_pfe.tag",
-			"minecraft:instrument_sound": {
-				"up": "note.bd"
-			},
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "poke_pfe_limestone",
-					"render_method": "opaque"
-				}
-			},
-			"minecraft:geometry": {
-				"identifier": "minecraft:geometry.full_block"
-			},
-			"minecraft:redstone_conductivity": {
-				"redstone_conductor": true,
-				"allows_wire_to_step_down": true
-			},
-			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 7.5,
-				"item_specific_speeds": [
-					{
-						"item": {
-							"tags": "q.any_tag('minecraft:is_pickaxe')"
-						},
-						"destroy_speed": 1.15
-					}
-				]
-			},
-			"minecraft:destructible_by_explosion": {
-				"explosion_resistance": 30
-			},
-			"minecraft:tags": [
-				"pfe",
-				"stone",
-				"minecraft:stone",
-				"stone_pick_diggable",
-				"minecraft:is_pickaxe_item_destructible"
-			],
-			"minecraft:map_color": "#e0e0e0",
-			"minecraft:loot": "loot_tables/poke/pfe/limestone.loot.json"
-		}
-	}
+  "format_version": "1.26.60",
+  "minecraft:block": {
+    "description": {
+      "identifier": "poke_pfe:limestone",
+      "menu_category": {
+        "category": "nature"
+      }
+    },
+    "components": {
+      "minecraft:display_name": "%poke_pfe.limestone\n%poke_pfe.tag",
+      "minecraft:instrument_sound": {
+        "up": "note.bd"
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "poke_pfe_limestone",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:geometry": {
+        "identifier": "minecraft:geometry.full_block"
+      },
+      "minecraft:redstone_conductivity": {
+        "redstone_conductor": true,
+        "allows_wire_to_step_down": true
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 7.5,
+        "item_specific_speeds": [
+          {
+            "item": {
+              "tags": "q.any_tag('minecraft:is_pickaxe')"
+            },
+            "destroy_speed": 1.15
+          }
+        ]
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 30
+      },
+      "minecraft:tags": [
+        "pfe",
+        "stone",
+        "minecraft:stone",
+        "stone_pick_diggable",
+        "minecraft:is_pickaxe_item_destructible"
+      ],
+      "minecraft:map_color": "#e0e0e0",
+      "minecraft:loot": "loot_tables/poke/pfe/limestone.loot.json"
+    }
+  }
 }

@@ -1,38 +1,32 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:cobalt_scythe"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"ZXX",
-			" # ",
-			"Y  "
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:cobalt_ingot"
-			}
-		],
-		"key": {
-			"Y": {
-				"item": "poke_pfe:cobalt_ingot"
-			},
-			"X": {
-				"item": "poke_pfe:cobalt_block"
-			},
-			"Z": {
-				"item": "poke_pfe:cobalt_ingot"
-			},
-			"#": {
-				"item": "poke_pfe:onyx_stick"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:cobalt_scythe"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:cobalt_scythe"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["ZXX", " # ", "Y  "],
+    "unlock": [
+      {
+        "item": "poke_pfe:cobalt_ingot"
+      }
+    ],
+    "key": {
+      "Y": {
+        "item": "poke_pfe:cobalt_ingot"
+      },
+      "X": {
+        "item": "poke_pfe:cobalt_block"
+      },
+      "Z": {
+        "item": "poke_pfe:cobalt_ingot"
+      },
+      "#": {
+        "item": "poke_pfe:onyx_stick"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:cobalt_scythe"
+    }
+  }
 }

@@ -39,9 +39,7 @@
         ]
       },
       {
-        "may_replace": [
-          "deepslate"
-        ],
+        "may_replace": ["deepslate"],
         "places_block": "poke_pfe:deepslate_holy_ore"
       },
       {

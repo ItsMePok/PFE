@@ -63,9 +63,7 @@
     "events": {
       "poke_pfe:despawn": {
         "add": {
-          "component_groups": [
-            "poke_pfe:despawn"
-          ]
+          "component_groups": ["poke_pfe:despawn"]
         }
       }
     }

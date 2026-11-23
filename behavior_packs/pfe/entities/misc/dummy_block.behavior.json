@@ -1,52 +1,50 @@
 {
-	"format_version": "1.26.60",
-	"minecraft:entity": {
-		"description": {
-			"identifier": "poke_pfe:dummy_block",
-			"is_spawnable": false,
-			"is_summonable": true,
-			"is_experimental": false,
-			"runtime_identifier": "minecraft:snowball"
-		},
-		"components": {
-			"minecraft:transient": {},
-			"minecraft:collision_box": {
-				"height": 1,
-				"width": 1
-			},
-			"minecraft:timer": {
-				"random_time_choices": [
-					{
-						"value": 30
-					}
-				],
-				"looping": true,
-				"time_down_event": {
-					"event": "poke_pfe:despawn",
-					"target": "self"
-				}
-			},
-			"minecraft:physics": {
-				"has_collision": true,
-				"has_gravity": false
-			},
-			"minecraft:projectile": {}
-		},
-		"events": {
-			"poke_pfe:despawn": {
-				"add": {
-					"component_groups": [
-						"poke_pfe:despawn"
-					]
-				}
-			}
-		},
-		"component_groups": {
-			"poke_pfe:despawn": {
-				"minecraft:instant_despawn": {
-					"remove_child_entities": true
-				}
-			}
-		}
-	}
+  "format_version": "1.26.60",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "poke_pfe:dummy_block",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "runtime_identifier": "minecraft:snowball"
+    },
+    "components": {
+      "minecraft:transient": {},
+      "minecraft:collision_box": {
+        "height": 1,
+        "width": 1
+      },
+      "minecraft:timer": {
+        "random_time_choices": [
+          {
+            "value": 30
+          }
+        ],
+        "looping": true,
+        "time_down_event": {
+          "event": "poke_pfe:despawn",
+          "target": "self"
+        }
+      },
+      "minecraft:physics": {
+        "has_collision": true,
+        "has_gravity": false
+      },
+      "minecraft:projectile": {}
+    },
+    "events": {
+      "poke_pfe:despawn": {
+        "add": {
+          "component_groups": ["poke_pfe:despawn"]
+        }
+      }
+    },
+    "component_groups": {
+      "poke_pfe:despawn": {
+        "minecraft:instant_despawn": {
+          "remove_child_entities": true
+        }
+      }
+    }
+  }
 }

@@ -1,50 +1,44 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "poke_pfe:shade_sword"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"  Y",
-			"UY ",
-			"XA "
-		],
-		"unlock": [
-			{
-				"item": "poke_pfe:cobalt_sword"
-			},
-			{
-				"item": "poke_pfe:shade_ingot"
-			},
-			{
-				"item": "poke_pfe:shade_nugget"
-			},
-			{
-				"item": "poke_pfe:shade_block"
-			},
-			{
-				"item": "poke_pfe:raw_shade"
-			}
-		],
-		"key": {
-			"Y": {
-				"item": "poke_pfe:shade_ingot"
-			},
-			"X": {
-				"item": "minecraft:stick"
-			},
-			"A": {
-				"item": "poke_pfe:cobalt_sword"
-			},
-			"U": {
-				"item": "poke_pfe:upgrade_core"
-			}
-		},
-		"result": {
-			"item": "poke_pfe:shade_sword"
-		}
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "poke_pfe:shade_sword"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["  Y", "UY ", "XA "],
+    "unlock": [
+      {
+        "item": "poke_pfe:cobalt_sword"
+      },
+      {
+        "item": "poke_pfe:shade_ingot"
+      },
+      {
+        "item": "poke_pfe:shade_nugget"
+      },
+      {
+        "item": "poke_pfe:shade_block"
+      },
+      {
+        "item": "poke_pfe:raw_shade"
+      }
+    ],
+    "key": {
+      "Y": {
+        "item": "poke_pfe:shade_ingot"
+      },
+      "X": {
+        "item": "minecraft:stick"
+      },
+      "A": {
+        "item": "poke_pfe:cobalt_sword"
+      },
+      "U": {
+        "item": "poke_pfe:upgrade_core"
+      }
+    },
+    "result": {
+      "item": "poke_pfe:shade_sword"
+    }
+  }
 }

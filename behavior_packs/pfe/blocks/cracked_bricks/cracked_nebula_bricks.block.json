@@ -1,64 +1,56 @@
 {
-	"format_version": "1.26.60",
-	"minecraft:block": {
-		"description": {
-			"identifier": "poke_pfe:cracked_nebula_bricks",
-			"menu_category": {
-				"category": "construction"
-			}
-		},
-		"components": {
-			"minecraft:display_name": "%poke_pfe.cracked_nebula_bricks\n%poke_pfe.tag",
-			"minecraft:geometry": {
-				"identifier": "minecraft:geometry.full_block"
-			},
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "poke_pfe_cracked_nebula_bricks",
-					"render_method": "opaque"
-				}
-			},
-			"minecraft:redstone_conductivity": {
-				"redstone_conductor": true,
-				"allows_wire_to_step_down": true
-			},
-			"minecraft:collision_box": [
-				{
-					"origin": [
-						-8,
-						0,
-						-8
-					],
-					"size": [
-						16,
-						16,
-						16
-					]
-				}
-			],
-			"minecraft:selection_box": true,
-			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 7.5,
-				"item_specific_speeds": [
-					{
-						"item": {
-							"tags": "q.any_tag('minecraft:is_pickaxe')"
-						},
-						"destroy_speed": 1.15
-					}
-				]
-			},
-			"minecraft:destructible_by_explosion": {
-				"explosion_resistance": 30
-			},
-			"minecraft:tags": [
-				"pfe",
-				"metal",
-				"minecraft:metal",
-				"stone_pick_diggable",
-				"minecraft:is_pickaxe_item_destructible"
-			],
-			"minecraft:map_color": "#1602c7"
-		}
-	}
+  "format_version": "1.26.60",
+  "minecraft:block": {
+    "description": {
+      "identifier": "poke_pfe:cracked_nebula_bricks",
+      "menu_category": {
+        "category": "construction"
+      }
+    },
+    "components": {
+      "minecraft:display_name": "%poke_pfe.cracked_nebula_bricks\n%poke_pfe.tag",
+      "minecraft:geometry": {
+        "identifier": "minecraft:geometry.full_block"
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "poke_pfe_cracked_nebula_bricks",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:redstone_conductivity": {
+        "redstone_conductor": true,
+        "allows_wire_to_step_down": true
+      },
+      "minecraft:collision_box": [
+        {
+          "origin": [-8, 0, -8],
+          "size": [16, 16, 16]
+        }
+      ],
+      "minecraft:selection_box": true,
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 7.5,
+        "item_specific_speeds": [
+          {
+            "item": {
+              "tags": "q.any_tag('minecraft:is_pickaxe')"
+            },
+            "destroy_speed": 1.15
+          }
+        ]
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 30
+      },
+      "minecraft:tags": [
+        "pfe",
+        "metal",
+        "minecraft:metal",
+        "stone_pick_diggable",
+        "minecraft:is_pickaxe_item_destructible"
+      ],
+      "minecraft:map_color": "#1602c7"
+    }
+  }
 }

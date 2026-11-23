@@ -1,54 +1,54 @@
 {
-	"format_version": "1.26.60",
-	"minecraft:ore_feature": {
-		"description": {
-			"identifier": "poke_pfe:galaxy_ore.feature"
-		},
-		"count": 9,
-		"replace_rules": [
-			{
-				"places_block": {
-					"name": "poke_pfe:galaxy_ore",
-					"states": {}
-				},
-				"may_replace": [
-					{
-						"name": "minecraft:stone",
-						"states": {
-							"stone_type": "stone"
-						}
-					},
-					{
-						"name": "minecraft:stone",
-						"states": {
-							"stone_type": "andesite"
-						}
-					},
-					{
-						"name": "minecraft:stone",
-						"states": {
-							"stone_type": "granite"
-						}
-					},
-					{
-						"name": "minecraft:stone",
-						"states": {
-							"stone_type": "diorite"
-						}
-					}
-				]
-			},
-			{
-				"places_block": {
-					"name": "poke_pfe:end_galaxy_ore",
-					"states": {}
-				},
-				"may_replace": [
-					{
-						"name": "minecraft:end_stone"
-					}
-				]
-			}
-		]
-	}
+  "format_version": "1.26.60",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "poke_pfe:galaxy_ore.feature"
+    },
+    "count": 9,
+    "replace_rules": [
+      {
+        "places_block": {
+          "name": "poke_pfe:galaxy_ore",
+          "states": {}
+        },
+        "may_replace": [
+          {
+            "name": "minecraft:stone",
+            "states": {
+              "stone_type": "stone"
+            }
+          },
+          {
+            "name": "minecraft:stone",
+            "states": {
+              "stone_type": "andesite"
+            }
+          },
+          {
+            "name": "minecraft:stone",
+            "states": {
+              "stone_type": "granite"
+            }
+          },
+          {
+            "name": "minecraft:stone",
+            "states": {
+              "stone_type": "diorite"
+            }
+          }
+        ]
+      },
+      {
+        "places_block": {
+          "name": "poke_pfe:end_galaxy_ore",
+          "states": {}
+        },
+        "may_replace": [
+          {
+            "name": "minecraft:end_stone"
+          }
+        ]
+      }
+    ]
+  }
 }

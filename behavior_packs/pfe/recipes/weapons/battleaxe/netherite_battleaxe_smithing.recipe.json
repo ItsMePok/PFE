@@ -1,20 +1,18 @@
 {
-	"format_version": "1.20.60",
-	"minecraft:recipe_smithing_transform": {
-		"description": {
-			"identifier": "poke_pfe:smithing_netherite_battleaxe"
-		},
-		"tags": [
-			"smithing_table"
-		],
-		"unlock": [
-			{
-				"item": "minecraft:netherite_upgrade_smithing_template"
-			}
-		],
-		"template": "minecraft:netherite_upgrade_smithing_template",
-		"base": "poke_pfe:diamond_battleaxe",
-		"addition": "minecraft:netherite_ingot",
-		"result": "poke_pfe:netherite_battleaxe"
-	}
+  "format_version": "1.20.60",
+  "minecraft:recipe_smithing_transform": {
+    "description": {
+      "identifier": "poke_pfe:smithing_netherite_battleaxe"
+    },
+    "tags": ["smithing_table"],
+    "unlock": [
+      {
+        "item": "minecraft:netherite_upgrade_smithing_template"
+      }
+    ],
+    "template": "minecraft:netherite_upgrade_smithing_template",
+    "base": "poke_pfe:diamond_battleaxe",
+    "addition": "minecraft:netherite_ingot",
+    "result": "poke_pfe:netherite_battleaxe"
+  }
 }

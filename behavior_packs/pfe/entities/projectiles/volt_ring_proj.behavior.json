@@ -1,89 +1,85 @@
 {
-	"format_version": "1.26.60",
-	"minecraft:entity": {
-		"description": {
-			"identifier": "poke_pfe:volt_ring_proj",
-			"is_spawnable": false,
-			"is_summonable": true,
-			"is_experimental": false,
-			"runtime_identifier": "arrow"
-		},
-		"component_groups": {
-			"poke_pfe:despawn": {
-				"minecraft:instant_despawn": {}
-			}
-		},
-		"components": {
-			"minecraft:collision_box": {
-				"width": 0.25,
-				"height": 0.25
-			},
-			"minecraft:projectile": {
-				"gravity": 0.02,
-				"crit_particle_on_hurt": true,
-				"hit_sound": "bow.hit",
-				"inertia": 0.995,
-				"shoot_sound": "random.bow",
-				"power": 6,
-				"is_dangerous": true,
-				"on_hit": {
-					"stick_in_ground": {},
-					"impact_damage": {
-						"damage": {
-							"min": 1,
-							"max": 3
-						},
-						"knockback": true,
-						"max_critical_damage": 10,
-						"min_critical_damage": 9,
-						"power_multiplier": 0.97,
-						"channeling": true
-					},
-					"definition_event": {
-						"affect_target": true,
-						"event_trigger": {
-							"event": "poke_pfe:death"
-						}
-					}
-				},
-				"uncertainty_multiplier": 1.1,
-				"uncertainty_base": 1,
-				"anchor": "eye_height",
-				"stop_on_hurt": true,
-				"particle": "iconcrack"
-			},
-			"minecraft:physics": {},
-			"minecraft:tick_world": {
-				"distance_to_players": 128,
-				"never_despawn": true,
-				"radius": 2
-			},
-			"minecraft:timer": {
-				"random_time_choices": [
-					{
-						"value": 30
-					}
-				],
-				"looping": true,
-				"time_down_event": {
-					"event": "poke_pfe:death",
-					"target": "self"
-				}
-			}
-		},
-		"events": {
-			"poke_pfe:death": {
-				"queue_command": {
-					"command": [
-						"execute at @s run summon lightning_bolt ~~~"
-					]
-				},
-				"add": {
-					"component_groups": [
-						"poke_pfe:despawn"
-					]
-				}
-			}
-		}
-	}
+  "format_version": "1.26.60",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "poke_pfe:volt_ring_proj",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "runtime_identifier": "arrow"
+    },
+    "component_groups": {
+      "poke_pfe:despawn": {
+        "minecraft:instant_despawn": {}
+      }
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.25,
+        "height": 0.25
+      },
+      "minecraft:projectile": {
+        "gravity": 0.02,
+        "crit_particle_on_hurt": true,
+        "hit_sound": "bow.hit",
+        "inertia": 0.995,
+        "shoot_sound": "random.bow",
+        "power": 6,
+        "is_dangerous": true,
+        "on_hit": {
+          "stick_in_ground": {},
+          "impact_damage": {
+            "damage": {
+              "min": 1,
+              "max": 3
+            },
+            "knockback": true,
+            "max_critical_damage": 10,
+            "min_critical_damage": 9,
+            "power_multiplier": 0.97,
+            "channeling": true
+          },
+          "definition_event": {
+            "affect_target": true,
+            "event_trigger": {
+              "event": "poke_pfe:death"
+            }
+          }
+        },
+        "uncertainty_multiplier": 1.1,
+        "uncertainty_base": 1,
+        "anchor": "eye_height",
+        "stop_on_hurt": true,
+        "particle": "iconcrack"
+      },
+      "minecraft:physics": {},
+      "minecraft:tick_world": {
+        "distance_to_players": 128,
+        "never_despawn": true,
+        "radius": 2
+      },
+      "minecraft:timer": {
+        "random_time_choices": [
+          {
+            "value": 30
+          }
+        ],
+        "looping": true,
+        "time_down_event": {
+          "event": "poke_pfe:death",
+          "target": "self"
+        }
+      }
+    },
+    "events": {
+      "poke_pfe:death": {
+        "queue_command": {
+          "command": ["execute at @s run summon lightning_bolt ~~~"]
+        },
+        "add": {
+          "component_groups": ["poke_pfe:despawn"]
+        }
+      }
+    }
+  }
 }
