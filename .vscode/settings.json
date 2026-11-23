@@ -1,18 +1,18 @@
 {
-  "git.ignoreLimitWarning": true,
-  
-  "editor.formatOnSave": true,
-  "search.exclude": {
-    "**/.git": true,
-    "**/node_modules": true,
-    "**/dist": true,
-    "**/lib": true
-  },
-  "files.exclude": {
-    "**/.git": true,
-    "**/.DS_Store": true,
-    "**/node_modules": true
-  },
-  "editor.tabSize": 2,
-  "git.autorefresh": false
+	"git.ignoreLimitWarning": true,
+
+	"editor.formatOnSave": true,
+	"search.exclude": {
+		"**/.git": true,
+		"**/node_modules": true,
+		"**/dist": true,
+		"**/lib": true
+	},
+	"files.exclude": {
+		"**/.git": true,
+		"**/.DS_Store": true,
+		"**/node_modules": true
+	},
+	"editor.tabSize": 2,
+	"git.autorefresh": false
 }

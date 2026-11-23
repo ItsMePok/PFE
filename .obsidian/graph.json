@@ -1,86 +1,41 @@
 {
-  "collapse-filter": true,
-  "search": "",
-  "showTags": false,
-  "showAttachments": false,
-  "hideUnresolved": false,
-  "showOrphans": true,
-  "collapse-color-groups": false,
-  "colorGroups": [
-    {
-      "query": "path:PFEWiki/armor  ",
-      "color": {
-        "a": 1,
-        "rgb": 14701138
-      }
-    },
-    {
-      "query": "path:PFEWiki/blocks  ",
-      "color": {
-        "a": 1,
-        "rgb": 11657298
-      }
-    },
-    {
-      "query": "path:PFEWiki/changelog-history  ",
-      "color": {
-        "a": 1,
-        "rgb": 5431378
-      }
-    },
-    {
-      "query": "path:PFEWiki/configs-uis-events  ",
-      "color": {
-        "a": 1,
-        "rgb": 5431378
-      }
-    },
-    {
-      "query": "path:PFEWiki/items  ",
-      "color": {
-        "a": 1,
-        "rgb": 5431473
-      }
-    },
-    {
-      "query": "path:PFEWiki/tools  ",
-      "color": {
-        "a": 1,
-        "rgb": 5419488
-      }
-    },
-    {
-      "query": "path:PFEWiki/weapons  ",
-      "color": {
-        "a": 1,
-        "rgb": 5395168
-      }
-    },
-    {
-      "query": "path:PFEWiki/sturctures  ",
-      "color": {
-        "a": 1,
-        "rgb": 11621088
-      }
-    },
-    {
-      "query": "path:PFEWiki/mobs  ",
-      "color": {
-        "a": 1,
-        "rgb": 14701233
-      }
-    }
-  ],
-  "collapse-display": false,
-  "showArrow": true,
-  "textFadeMultiplier": -3,
-  "nodeSizeMultiplier": 1.86863905325444,
-  "lineSizeMultiplier": 3.43126751790719,
-  "collapse-forces": false,
-  "centerStrength": 0,
-  "repelStrength": 20,
-  "linkStrength": 0.40080971659919,
-  "linkDistance": 250,
-  "scale": 0.01219169856718626,
-  "close": false
+	"collapse-filter": true,
+	"search": "",
+	"showTags": false,
+	"showAttachments": false,
+	"hideUnresolved": false,
+	"showOrphans": true,
+	"collapse-color-groups": false,
+	"colorGroups": [
+		{ "query": "path:PFEWiki/armor  ", "color": { "a": 1, "rgb": 14701138 } },
+		{ "query": "path:PFEWiki/blocks  ", "color": { "a": 1, "rgb": 11657298 } },
+		{
+			"query": "path:PFEWiki/changelog-history  ",
+			"color": { "a": 1, "rgb": 5431378 }
+		},
+		{
+			"query": "path:PFEWiki/configs-uis-events  ",
+			"color": { "a": 1, "rgb": 5431378 }
+		},
+		{ "query": "path:PFEWiki/items  ", "color": { "a": 1, "rgb": 5431473 } },
+		{ "query": "path:PFEWiki/tools  ", "color": { "a": 1, "rgb": 5419488 } },
+		{ "query": "path:PFEWiki/weapons  ", "color": { "a": 1, "rgb": 5395168 } },
+		{
+			"query": "path:PFEWiki/sturctures  ",
+			"color": { "a": 1, "rgb": 11621088 }
+		},
+		{ "query": "path:PFEWiki/mobs  ", "color": { "a": 1, "rgb": 14701233 } }
+	],
+	"collapse-display": false,
+	"showArrow": true,
+	"textFadeMultiplier": -3,
+	"nodeSizeMultiplier": 1.86863905325444,
+	"lineSizeMultiplier": 3.43126751790719,
+	"collapse-forces": false,
+	"centerStrength": 0,
+	"repelStrength": 20,
+	"linkStrength": 0.40080971659919,
+	"linkDistance": 250,
+	"scale": 0.01219169856718626,
+	"close": false
 }
