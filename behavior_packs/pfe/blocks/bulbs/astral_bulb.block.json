@@ -12,7 +12,7 @@
             "min": 0,
             "max": 15
           }
-        } //Data Value is used to change the color, works best when only using 1 data value/state
+        }
       }
     },
     "components": {

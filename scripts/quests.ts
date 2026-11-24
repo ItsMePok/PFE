@@ -24,15 +24,15 @@ Note x2: Quests that have been rolled not be able to be changed
 This is example code. This will add a Mine quest for 7x Cut Cobalt for 7x Copper Tokens:
 */
 /*
-import {   ItemStack, world } from "@minecraft/server"
-interface PFECustomQuests {  
-  value: {  
-    requiredItem: {  
+import {  ItemStack, world } from "@minecraft/server"
+interface PFECustomQuests { 
+  value: { 
+    requiredItem: { 
       item: string,
       amount: number
       translationString: string
     },
-    reward: {  
+    reward: { 
       tokenAmount: number,
       item?: ItemStack
     }
@@ -42,14 +42,14 @@ const PFECustomMineQuestsPropertyID = `poke_pfe:custom_mine_quests`
 const PFECustomFarmQuestsPropertyID = `poke_pfe:custom_farm_quests`
 const PFECustomCraftQuestsPropertyID = `poke_pfe:custom_craft_quests`
 const PFECustomKillQuestsPropertyID = `poke_pfe:custom_kill_quests`
-world.afterEvents.worldLoad.subscribe(data => {  
-  system.runTimeout(() => {  
-    const AddedMineQuests: PFECustomQuests = {  
+world.afterEvents.worldLoad.subscribe(data => { 
+  system.runTimeout(() => { 
+    const AddedMineQuests: PFECustomQuests = { 
       value: [
-        {   requiredItem: {   item: `poke_pfe:cut_cobalt`, amount: 7, translationString: `%poke_pfe.cut_cobalt (%poke_pfe.tag)` }, reward: {   tokenAmount: 7 } }
+        {  requiredItem: {  item: `poke_pfe:cut_cobalt`, amount: 7, translationString: `%poke_pfe.cut_cobalt (%poke_pfe.tag)` }, reward: {  tokenAmount: 7 } }
       ]
     }
-    world.getDimension(`minecraft:overworld`).runCommand(`scriptevent poke_pfe:custom_mine_quests ${  JSON.stringify(AddedMineQuests)}`)
+    world.getDimension(`minecraft:overworld`).runCommand(`scriptevent poke_pfe:custom_mine_quests ${ JSON.stringify(AddedMineQuests)}`)
   }, 20)
 })
 */

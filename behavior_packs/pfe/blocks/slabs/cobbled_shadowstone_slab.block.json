@@ -50,7 +50,7 @@
           "poke_pfe:slab_loot": {}
         }
       },
-      // Bottom Slab
+
       {
         "condition": "q.block_state('minecraft:vertical_half') == 'bottom' && !q.block_state('poke_pfe:double')",
         "components": {
@@ -96,7 +96,7 @@
           }
         }
       },
-      // Top Slab
+
       {
         "condition": "q.block_state('minecraft:vertical_half') == 'top' && !q.block_state('poke_pfe:double')",
         "components": {

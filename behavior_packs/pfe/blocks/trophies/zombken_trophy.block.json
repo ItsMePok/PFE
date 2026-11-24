@@ -67,7 +67,6 @@
       "minecraft:tags": ["pfe", "stone_pick_diggable", "minecraft:is_pickaxe_item_destructible"]
     },
     "permutations": [
-      // Facing north
       {
         "condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
         "components": {
@@ -76,7 +75,7 @@
           }
         }
       },
-      // Facing south
+
       {
         "condition": "query.block_state('minecraft:cardinal_direction') == 'south'",
         "components": {
@@ -85,7 +84,7 @@
           }
         }
       },
-      // Facing west
+
       {
         "condition": "query.block_state('minecraft:cardinal_direction') == 'east'",
         "components": {
@@ -94,7 +93,7 @@
           }
         }
       },
-      // Facing east
+
       {
         "condition": "query.block_state('minecraft:cardinal_direction') == 'west'",
         "components": {

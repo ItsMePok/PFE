@@ -33,7 +33,7 @@ export default class ComputersCompat {
   /**
    * Adds to a statistic tracked by Jigs Computers Add-On.
    *
-   * @param statID - The identifier of the statistic to add, defined in {  @link StatIDs}.
+   * @param statID - The identifier of the statistic to add, defined in { @link StatIDs}.
    * @param amount - The amount to add to the statistic.
    */
   static addStat(statID: StatIDs, amount: number) {
@@ -114,8 +114,8 @@ export const initExampleStickers = () => {
     "poke_pfe:yak": [{itemId: "poke_pfe:_sticker"}],
     "poke_pfe:zombken": [{itemId: "poke_pfe:zombken_sticker"}],
     /*'your_namespace:example_complex_mob': [
-    {  itemId: 'your_namespace:normal_sticker_1',specialItemId: 'your_namespace:rare_sticker_1',conditions: [{  component: 'minecraft:variant',componentValue: 0}]},
-    {  itemId: 'your_namespace:normal_sticker_2',specialItemId: 'your_namespace:rare_sticker_2',conditions: [{  component: 'minecraft:variant',componentValue: 1}]}	],*/
+    { itemId: 'your_namespace:normal_sticker_1',specialItemId: 'your_namespace:rare_sticker_1',conditions: [{ component: 'minecraft:variant',componentValue: 0}]},
+    { itemId: 'your_namespace:normal_sticker_2',specialItemId: 'your_namespace:rare_sticker_2',conditions: [{ component: 'minecraft:variant',componentValue: 1}]}	],*/
   };
 
   // 3) Data Payload Construction

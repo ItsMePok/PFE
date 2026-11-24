@@ -32,9 +32,7 @@
         "max_durability": 300
       },
       "minecraft:tags": {
-        "tags": [
-          "poke_pfe:necromancer_staff_orb" //Projectile id for script
-        ]
+        "tags": ["poke_pfe:necromancer_staff_orb"]
       },
       "minecraft:use_modifiers": {
         "use_duration": 0,

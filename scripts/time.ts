@@ -83,10 +83,10 @@ const PFEDefaultHolidays: PokeEventConfig[] = [
     nonModifiable: true,
     v: PokeCalendarVersion,
   },
-  /*{  
-    name:{  text:`Martin Luther King Jr. Day`},
+  /*{ 
+    name:{ text:`Martin Luther King Jr. Day`},
     id:"poke_pfe:MLKJr",
-    dates:[{  month:0,days:[15,16,17,18,19,20,21],weekday:1}],//Monday between Jan 15 - 21
+    dates:[{ month:0,days:[15,16,17,18,19,20,21],weekday:1}],//Monday between Jan 15 - 21
     repeat:true,
     gift: undefined,
     icon:"textures/poke/common/mlk",
@@ -131,10 +131,10 @@ const PFEDefaultHolidays: PokeEventConfig[] = [
     nonModifiable: true,
     v: PokeCalendarVersion,
   },
-  /*{  
-    name:{  text:`Cinco de Mayo`},
+  /*{ 
+    name:{ text:`Cinco de Mayo`},
     id:"poke_pfe:CincoDeMayo",
-    dates:[{  month:4,days:[5]}],
+    dates:[{ month:4,days:[5]}],
     repeat:true,
     gift: undefined,
     icon:"textures/poke/common/cinco_de_mayo",
@@ -143,10 +143,10 @@ const PFEDefaultHolidays: PokeEventConfig[] = [
     nonModifiable:true,
     v:PokeCalendarVersion
   },*/
-  /*{  
-    name:{  text:`Memorial Day`},
+  /*{ 
+    name:{ text:`Memorial Day`},
     id:"poke_pfe:MemorialDay",
-    dates:[{  month:4,days:[25,26,27,28,29,30,31],weekday:1}],
+    dates:[{ month:4,days:[25,26,27,28,29,30,31],weekday:1}],
     repeat:true,
     gift: undefined,
     icon:"textures/poke/common/cinco_de_mayo",
@@ -155,10 +155,10 @@ const PFEDefaultHolidays: PokeEventConfig[] = [
     nonModifiable:true,
     v:PokeCalendarVersion
   },*/
-  /*{  
-    name:{  text:`Juneteenth`},
+  /*{ 
+    name:{ text:`Juneteenth`},
     id:"poke_pfe:Juneteenth",
-    dates:[{  month:5,days:[19]}],
+    dates:[{ month:5,days:[19]}],
     repeat:true,
     gift: undefined,
     icon:"textures/poke/common/juneteenth",
@@ -179,10 +179,10 @@ const PFEDefaultHolidays: PokeEventConfig[] = [
     nonModifiable: true,
     v: PokeCalendarVersion,
   },
-  /*{  
-    name:{  text:`Labor Day`},
+  /*{ 
+    name:{ text:`Labor Day`},
     id:"poke_pfe:LaborDay",
-    dates:[{  month:8,days:[1,2,3,4,5,6,7],weekday:1}],//First Monday of September
+    dates:[{ month:8,days:[1,2,3,4,5,6,7],weekday:1}],//First Monday of September
     repeat:true,
     gift: undefined,
     icon:"textures/poke/common/labor_day",
@@ -568,7 +568,7 @@ function PokeTimeConfigUIMainMenu(player: Player) {
         if (!claimingGift) {
           //console.warn(`No gift found`)
         }
-        //console.warn(`Claiming: ${  claimingGift}`)
+        //console.warn(`Claiming: ${ claimingGift}`)
         player.runCommand(`${claimingGift}`);
         player.addTag(`poke_pfe:${currentTime.getFullYear()}E-${gifts.at(i)?.id}`);
         return;
@@ -973,7 +973,7 @@ function PokeSetTimeZone(player: Player) {
       return;
     }
     player.setDynamicProperty(`poke_pfe:timezone`, Timezones.at(Number(response.selection))!.offset);
-    //console.warn(`saved time as ${  Timezones.at(response.selection!)?.name}`)
+    //console.warn(`saved time as ${ Timezones.at(response.selection!)?.name}`)
   });
 }
 function PokeTimeGreeting(date: Date, player: Player, event?: PokeEventConfig, generic?: boolean) {
@@ -988,10 +988,10 @@ function PokeTimeGreeting(date: Date, player: Player, event?: PokeEventConfig, g
       for (let i = allEvents.length - 1; i > -1; i--) {
         let event = allEvents.at(i);
         if (!event) continue;
-        //console.warn(`Checking: ${  event.id}`)
+        //console.warn(`Checking: ${ event.id}`)
         if (PokeTimeCheck(event, player, false)) {
           if (typeof event.greeting != "string") {
-            //console.warn(`Adding: ${  event.id}, Greeting: ${  event.greeting}`)
+            //console.warn(`Adding: ${ event.id}, Greeting: ${ event.greeting}`)
             activeEventGreetings = activeEventGreetings.concat(event.greeting ?? []);
           }
         }
@@ -1078,7 +1078,7 @@ function PokeTimeUpcomingEventList(player: Player, page: number) {
   let buttonCount = 0;
   let totalEvents = events.length;
   for (let i = startPage + maxPerPage - 1; i > startPage - 1; i--) {
-    //console.warn(`checking: ${  i}, before total buttons: ${  buttonCount}`)
+    //console.warn(`checking: ${ i}, before total buttons: ${ buttonCount}`)
     if (buttonCount + 1 > maxPerPage || i < startPage) {
       //console.warn(`exceeded max per page`)
       break;
@@ -1087,13 +1087,13 @@ function PokeTimeUpcomingEventList(player: Player, page: number) {
       let event = events.at(i);
       UI.button(event!.name, event?.icon);
       buttonCount += 1;
-      //console.warn(`${  i} was valid adding button`)
+      //console.warn(`${ i} was valid adding button`)
     } else {
-      //console.warn(`id for ${  i} undefined`)
+      //console.warn(`id for ${ i} undefined`)
       continue;
     }
   }
-  //console.warn(`done adding buttons, total: ${  buttonCount}`)
+  //console.warn(`done adding buttons, total: ${ buttonCount}`)
   let nextPage = false;
   if (totalEvents > startPage + maxPerPage) {
     UI.button({translate: `translation.poke_pfe:timeNextPage`}, `textures/poke/common/right_arrow`);
@@ -1110,7 +1110,7 @@ function PokeTimeUpcomingEventList(player: Player, page: number) {
     for (let i = buttonCount - 1; i > -1; i--) {
       if (events.at(i)) {
         if (response.selection == selection) {
-          //console.warn(`Going to Event: ${  i+startPage}`)
+          //console.warn(`Going to Event: ${ i+startPage}`)
           PokeTimeEventInfoMenu(events.at(i + startPage)!, player);
           return;
         } else selection++;
@@ -1187,13 +1187,13 @@ function PokeTimeGetNextTime(event: PokeEventConfig, player: Player) {
   let currentTime = new Date(Date.now() + PokeTimeZoneOffset(player));
   if (event.fixedTime) currentTime = new Date(Date.now());
   let closestMonth = 0;
-  /*event.months.forEach((month =>{  
+  /*event.months.forEach((month =>{ 
     
   }))
 
-  let time = Date.parse(`${  currentTime.getMonth()+1}/${  currentTime.getDate()}/${  currentTime.getUTCFullYear()}`)
-  let eventThisYear = Date.parse(`${  event.months.at(0)!+1}/${  event.days?.at(0)}/${  currentTime.getUTCFullYear()}`)
-  let eventNextYear = Date.parse(`${  event.months.at(0)!+1}/${  event.days?.at(0)}/${  currentTime.getUTCFullYear()+1}`)*/
+  let time = Date.parse(`${ currentTime.getMonth()+1}/${ currentTime.getDate()}/${ currentTime.getUTCFullYear()}`)
+  let eventThisYear = Date.parse(`${ event.months.at(0)!+1}/${ event.days?.at(0)}/${ currentTime.getUTCFullYear()}`)
+  let eventNextYear = Date.parse(`${ event.months.at(0)!+1}/${ event.days?.at(0)}/${ currentTime.getUTCFullYear()+1}`)*/
 }
 
 function PokeTimeDateString(event: PokeEventConfig, player?: Player) {
@@ -1333,7 +1333,7 @@ function PokeTimeCreateEvent(player: Player, event?: PokeEventConfig) {
         let newEventList = <undefined | string | PokeEventConfig[]>world.getDynamicProperty(PokeCustomEventId);
         let replaceEvent = undefined;
         if (typeof newEventList == "string") {
-          //console.warn(`a event already exists:: ${  newEventList}`)
+          //console.warn(`a event already exists:: ${ newEventList}`)
           newEventList = <PokeEventConfig[]>JSON.parse(newEventList) ?? [];
           replaceEvent = PokeGetObjectById(newEventList, `custom:${id}`);
         } else {
@@ -1371,7 +1371,7 @@ function PokeTimeCreateEvent(player: Player, event?: PokeEventConfig) {
             greeting: event.greeting,
             v: PokeCalendarVersion,
           };
-          //console.warn(`Replacing Old event with: ${  JSON.stringify(newEvent)}`)
+          //console.warn(`Replacing Old event with: ${ JSON.stringify(newEvent)}`)
           let otherEvents = newEventList.splice(replaceEvent.value, 1, newEvent);
           newEventList = otherEvents;
         } else {
@@ -1391,11 +1391,11 @@ function PokeTimeCreateEvent(player: Player, event?: PokeEventConfig) {
             fixedTime: false,
             v: PokeCalendarVersion,
           };
-          //console.warn(`This Event: ${  JSON.stringify(event)}`)
+          //console.warn(`This Event: ${ JSON.stringify(event)}`)
           newEventList = newEventList.concat([event]);
         }
         if (newEventList?.at(0))
-          //console.warn(`Other Events: ${  JSON.stringify(newEventList)}`)
+          //console.warn(`Other Events: ${ JSON.stringify(newEventList)}`)
           world.setDynamicProperty(PokeCustomEventId, JSON.stringify(newEventList));
       } else {
         let id = response.formValues?.at(0)?.toString().replace(`custom:`, "").replace(" ", "");
@@ -1566,12 +1566,12 @@ function PokeTimeEditGreeting(player: Player, event: PokeEventConfig) {
       nonModifiable: event.nonModifiable,
       v: PokeCalendarVersion,
     };
-    //console.warn(`New Event: ${  JSON.stringify(newEvent)}`)
+    //console.warn(`New Event: ${ JSON.stringify(newEvent)}`)
     let customEvents = world
       .getDynamicProperty(PokeCustomEventId)
       ?.toString()
       .replace(JSON.stringify(event), JSON.stringify(newEvent));
-    //console.warn(`Custom Events: ${  customEvents}`)
+    //console.warn(`Custom Events: ${ customEvents}`)
     world.setDynamicProperty(PokeCustomEventId, customEvents);
     PokeEventOptions(player, newEvent);
     return;
@@ -1595,8 +1595,8 @@ function PokeTimeDeleteEvent(player: Player, event: PokeEventConfig) {
         );
         return;
       }
-      //console.warn(`Deleting: ${  event.id}`)
-      //console.warn(`${  world.getDynamicProperty(PokeCustomEventId)}`)
+      //console.warn(`Deleting: ${ event.id}`)
+      //console.warn(`${ world.getDynamicProperty(PokeCustomEventId)}`)
       let customEvents: PokeEventConfig[] = JSON.parse(world.getDynamicProperty(PokeCustomEventId)!.toString() ?? "[]");
       let replacedEvent = PokeGetObjectById(customEvents, event.id);
       if (!replacedEvent) {

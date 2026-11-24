@@ -39,9 +39,7 @@
         "value": 7
       },
       "minecraft:tags": {
-        "tags": [
-          "poke_pfe:volt_ring_proj" //Projectile id for script
-        ]
+        "tags": ["poke_pfe:volt_ring_proj"]
       },
       "minecraft:use_modifiers": {
         "use_duration": 0,

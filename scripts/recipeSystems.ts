@@ -352,7 +352,7 @@ function ViewRecipeInfo(
   UI.button({translate: `translation.poke_pfe.GoBack`}, "textures/poke/common/left_arrow");
   UI.show(player).then((response) => {
     let selection = 0;
-    //console.warn(`canCraft = ${  canCraft} ${  JSON.stringify(amountInfo)}`)
+    //console.warn(`canCraft = ${ canCraft} ${ JSON.stringify(amountInfo)}`)
     if (canCraft == recipe.items.length) {
       if (response.selection == selection) {
         let currentStoredItems = storedItems;
@@ -408,7 +408,7 @@ function ViewRecipeInfo(
                 storedItem.i == amount.id ? {i: storedItem.i, a: storedItem.a - amount.fromStored} : storedItem
               );
               /*console.warn(JSON.stringify((storedItem.i == amount.id ?
-                {   i: storedItem.i, a: storedItem.a - amount.fromStored } :
+                {  i: storedItem.i, a: storedItem.a - amount.fromStored } :
                 storedItem
               )))*/
             }

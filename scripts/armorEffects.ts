@@ -31,7 +31,7 @@ interface PFEArmorEffectSetData {
 /*
 Example code for adding custom presets
 */ /*
-import { world } from "@minecraft/server"
+import {  world } from "@minecraft/server"
 /*
 Interface for effect options 
 */
@@ -54,14 +54,14 @@ This is what you would send via script event
 interface PFEUnparsedCustomEffectInfo {
   value: PFECustomEffectInfo[];
 } /*
-world.afterEvents.worldInitialize.subscribe((data) => {  
-  const Presets: PFEUnparsedCustomEffectInfo = {  
+world.afterEvents.worldInitialize.subscribe((data) => { 
+  const Presets: PFEUnparsedCustomEffectInfo = { 
     value: [
-      {   mode: "tag", effects: [{   effect: "minecraft:night_vision", max_amp: 1 }], tag: "poke_pfe:night_vision" },
-      {   mode: "lore", effects: [{   effect: "minecraft:regeneration", max_amp: 3 }, {   effect: "minecraft:fatal_poison", max_amp: 4 }], tag: "poke_pfe:custom_preset" }
+      {  mode: "tag", effects: [{  effect: "minecraft:night_vision", max_amp: 1 }], tag: "poke_pfe:night_vision" },
+      {  mode: "lore", effects: [{  effect: "minecraft:regeneration", max_amp: 3 }, {  effect: "minecraft:fatal_poison", max_amp: 4 }], tag: "poke_pfe:custom_preset" }
     ]
   }
-  world.getDimension(`minecraft:overworld`).runCommand(`scriptevent poke_pfe:add_set_effect_preset ${  JSON.stringify(Presets)}`)
+  world.getDimension(`minecraft:overworld`).runCommand(`scriptevent poke_pfe:add_set_effect_preset ${ JSON.stringify(Presets)}`)
 })
 */
 type SetEffectComponent = {
@@ -590,9 +590,9 @@ function CheckEffects(player: Player, additionalOptions?: boolean, customParse?:
           break;
       }
       /*console.warn(`
-        Effect:${  effect.effect}\n
-        Max Amp:${  effect.max_amp}\n
-        Applies at Amp: ${  clampNumber(
+        Effect:${ effect.effect}\n
+        Max Amp:${ effect.max_amp}\n
+        Applies at Amp: ${ clampNumber(
         Math.min(
           (ActiveEffects.amplifier + 1),
           totalPieces,
@@ -606,8 +606,8 @@ function CheckEffects(player: Player, additionalOptions?: boolean, customParse?:
         25
       )
         }\n
-        Current Amp: ${  ActiveEffects.amplifier}
-        Total pieces: ${  totalPieces}
+        Current Amp: ${ ActiveEffects.amplifier}
+        Total pieces: ${ totalPieces}
         
         `)*/
       player.addEffect(effect.effect, effectDuration, {

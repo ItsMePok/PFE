@@ -68,7 +68,7 @@ class PFEBoltBowsComponent {
       PFEAmmoManagementMainMenuUI(data.itemStack, data.source);
       return;
     }
-    //console.warn(`Dyn: ${  data.itemStack.getDynamicProperty(PFEBoltBowDynamicPropertyID)}`)
+    //console.warn(`Dyn: ${ data.itemStack.getDynamicProperty(PFEBoltBowDynamicPropertyID)}`)
     let ammoComponent: PFEBoltBowInfo = PFEBoltBowDefault;
     if (typeof data.itemStack.getDynamicProperty(PFEBoltBowDynamicPropertyID) != "string") {
       PokeSaveProperty(PFEBoltBowDynamicPropertyID, data.itemStack, JSON.stringify(PFEBoltBowDefault), data.source);
@@ -248,7 +248,7 @@ function PFEAmmoManagementAddAmmoUI(item: ItemStack, player: Player) {
     if (!items) {
       continue;
     }
-    //console.warn(`found items: ${  items.length}`)
+    //console.warn(`found items: ${ items.length}`)
     allItems = allItems.concat(items);
     for (let i = items.length; i > -1; i--) {
       let foundItem = items.at(i);
@@ -278,7 +278,7 @@ function PFEAmmoManagementAddAmmoUI(item: ItemStack, player: Player) {
     for (buttonTotal - 1; buttonTotal > -1; buttonTotal--) {
       if (response.selection == selection) {
         let selectedItem = allItems.reverse().at(buttonTotal - 1);
-        //console.warn(`num: ${  selectedItem?.amount},\n id: ${  selectedItem?.typeId},\n button: ${  buttonTotal}`)
+        //console.warn(`num: ${ selectedItem?.amount},\n id: ${ selectedItem?.typeId},\n button: ${ buttonTotal}`)
         if (!selectedItem) {
           PokeErrorScreen(player, undefined, PFEAmmoManagementAddAmmoUI(item, player));
           return;

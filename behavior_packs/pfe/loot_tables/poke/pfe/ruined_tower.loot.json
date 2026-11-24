@@ -15,8 +15,8 @@
               "title": "Travel Log 1",
               "author": "Lost Traveler",
               "pages": [
-                "{  \"rawtext\":[ {  \"translate\":\"translation.poke_pfe:travel_log_1.page1\"}]}",
-                "{  \"rawtext\":[ {  \"translate\":\"translation.poke_pfe:travel_log_1.page2\"}]}"
+                "{ \"rawtext\":[ { \"translate\":\"translation.poke_pfe:travel_log_1.page1\"}]}",
+                "{ \"rawtext\":[ { \"translate\":\"translation.poke_pfe:travel_log_1.page2\"}]}"
               ]
             }
           ]
@@ -37,8 +37,8 @@
               "title": "Only Cobblestone",
               "author": "§kLost Man§7",
               "pages": [
-                "{  \"rawtext\":[ {  \"translate\":\"translation.poke_pfe:only_cobblestone.page1\"}]}",
-                "{  \"rawtext\":[ {  \"translate\":\"translation.poke_pfe:only_cobblestone.page2\"}]}"
+                "{ \"rawtext\":[ { \"translate\":\"translation.poke_pfe:only_cobblestone.page1\"}]}",
+                "{ \"rawtext\":[ { \"translate\":\"translation.poke_pfe:only_cobblestone.page2\"}]}"
               ]
             }
           ]

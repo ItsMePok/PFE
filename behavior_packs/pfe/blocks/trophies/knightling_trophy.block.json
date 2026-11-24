@@ -69,7 +69,6 @@
       "poke_pfe:cc_block_interact": {}
     },
     "permutations": [
-      // Facing south
       {
         "condition": "query.block_state('minecraft:cardinal_direction') == 'south'",
         "components": {
@@ -78,7 +77,7 @@
           }
         }
       },
-      // Facing north
+
       {
         "condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
         "components": {
@@ -87,7 +86,7 @@
           }
         }
       },
-      // Facing west
+
       {
         "condition": "query.block_state('minecraft:cardinal_direction') == 'east'",
         "components": {
@@ -96,7 +95,7 @@
           }
         }
       },
-      // Facing east
+
       {
         "condition": "query.block_state('minecraft:cardinal_direction') == 'west'",
         "components": {

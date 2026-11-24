@@ -256,7 +256,7 @@ function PokeSaveProperty(
   entity: Entity,
   slot?: EquipmentSlot | number
 ) {
-  //console.warn(`saved as ${  save}`)
+  //console.warn(`saved as ${ save}`)
   item.setDynamicProperty(propertyId, save);
   let equippableComponent = entity.getComponent(EntityComponentTypes.Equippable);
   if (typeof slot == "number") {
@@ -295,7 +295,7 @@ interface PokeGetSegmentOfStringInfo {
  * Returns false if it fails to parse the given strings
  */
 function PokeGetSegmentOfString(string: PokeGetSegmentOfStringInfo[]) {
-  let returnedValue: string = "{  ";
+  let returnedValue: string = "{ ";
   for (let i = string.length - 1; i > -1; i--) {
     let checking = string.at(i);
     if (!checking) continue;
@@ -304,7 +304,7 @@ function PokeGetSegmentOfString(string: PokeGetSegmentOfStringInfo[]) {
       .substring(checking.startAfter.length);
     returnedValue = `${returnedValue},"${checking.returnId}":"${segment}"`;
   }
-  returnedValue = `${returnedValue.replace(`{  ,`, "{  ")}}`;
+  returnedValue = `${returnedValue.replace(`{ ,`, "{ ")}}`;
   if (returnedValue.length < 2) return false;
   try {
     return JSON.parse(returnedValue);
@@ -314,7 +314,7 @@ function PokeGetSegmentOfString(string: PokeGetSegmentOfStringInfo[]) {
 }
 
 function PokeSpawnLootTable(lootTable: string, position: Vector3, dimension: Dimension, amount?: number) {
-  //console.warn(`loot spawn ${  position.x} ${  position.y} ${  position.z} loot "${  lootTable}"`)
+  //console.warn(`loot spawn ${ position.x} ${ position.y} ${ position.z} loot "${ lootTable}"`)
   if (amount) {
     for (let i = amount - 1; i > -1; i--) {
       dimension.runCommand(`loot spawn ${position.x} ${position.y} ${position.z} loot "${lootTable}"`);

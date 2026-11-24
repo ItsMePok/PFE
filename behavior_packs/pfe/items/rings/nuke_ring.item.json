@@ -40,9 +40,7 @@
       },
       "minecraft:max_stack_size": 1,
       "minecraft:tags": {
-        "tags": [
-          "poke_pfe:nuke_ring_projectile" //Projectile id for script
-        ]
+        "tags": ["poke_pfe:nuke_ring_projectile"]
       },
       "minecraft:use_modifiers": {
         "use_duration": 0,

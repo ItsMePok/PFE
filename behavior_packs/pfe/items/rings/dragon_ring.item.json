@@ -1,5 +1,4 @@
 {
-  //Dragon Ring
   "format_version": "1.26.60",
   "minecraft:item": {
     "description": {
@@ -40,9 +39,7 @@
       },
       "minecraft:max_stack_size": 1,
       "minecraft:tags": {
-        "tags": [
-          "poke_pfe:dragon_ring_proj" //Projectile id for script
-        ]
+        "tags": ["poke_pfe:dragon_ring_proj"]
       },
       "minecraft:use_modifiers": {
         "use_duration": 0,

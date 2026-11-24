@@ -187,7 +187,7 @@ function PFEBossEventTiming(player: Player) {
     .title({translate: `translation.poke_pfe:bossEventMainMenuTitle`})
     .dropdown(
       {translate: `%poke_pfe.mode:`},
-      [{translate: `%poke_pfe.gameTicks`} /*, {   translate: `%poke_pfe.realTime` }*/],
+      [{translate: `%poke_pfe.gameTicks`} /*, {  translate: `%poke_pfe.realTime` }*/],
       {tooltip: {translate: `%poke_pfe.timeMode.tooltip`}}
     )
     .slider({translate: `%poke_pfe.minutes`}, 0, 720, {

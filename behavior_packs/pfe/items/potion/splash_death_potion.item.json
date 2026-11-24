@@ -24,7 +24,7 @@
         "command": [
           "clear @s poke_pfe:splash_death_potion -1 1",
           "kill @s ",
-          "tellraw @s { \"rawtext\": [{ \"translate\": \"translation.poke_pfe:splashDeathPotion\"}]}"
+          "tellraw @s {\"rawtext\": [{\"translate\": \"translation.poke_pfe:splashDeathPotion\"}]}"
         ],
         "take_durability": true,
         "trigger_cooldown": true,

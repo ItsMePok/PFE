@@ -41,7 +41,7 @@ function RegisterBlockComponents(data: StartupEvent) {
     onRedstoneUpdate(data, componentInfo) {
       type SpawnParticleComponent = {
         [key: string]: {
-          offset: string; // "{  \"x\": 0,\"y\": 0,\"z\": 0}"
+          offset: string; // "{ \"x\": 0,\"y\": 0,\"z\": 0}"
           requires_redstone_power: boolean;
         };
       };
@@ -526,7 +526,7 @@ function RegisterBlockComponents(data: StartupEvent) {
         let maxSearch = 64;
         if (player.isJumping) {
           let viewDirection = player.getViewDirection();
-          //console.warn(`X: ${  viewDirection.x}, Y: ${  viewDirection.y}, Z: ${  viewDirection.z}`)
+          //console.warn(`X: ${ viewDirection.x}, Y: ${ viewDirection.y}, Z: ${ viewDirection.z}`)
           let cardinalDirection = PokeClosestCardinal(viewDirection, "upDown");
           switch (cardinalDirection.direction) {
             case Direction.Up: {
@@ -535,7 +535,7 @@ function RegisterBlockComponents(data: StartupEvent) {
                 i <= Math.min(data.block.y + maxSearch, data.dimension.heightRange.max);
                 Math.min(i++, data.dimension.heightRange.max)
               ) {
-                //console.warn(`Checking Y= ${  i} \nBlock ID = ${  data.block.above(i-data.block.y)?.typeId} \nAbove Amount = ${  i-data.block.y}\nRedstone Power = ${  data.block.above(i-data.block.y)?.getRedstonePower()}\nHas Tag? = ${  data.block.above(i-data.block.y)?.hasTag(`poke_pfe:elevator`)}`)
+                //console.warn(`Checking Y= ${ i} \nBlock ID = ${ data.block.above(i-data.block.y)?.typeId} \nAbove Amount = ${ i-data.block.y}\nRedstone Power = ${ data.block.above(i-data.block.y)?.getRedstonePower()}\nHas Tag? = ${ data.block.above(i-data.block.y)?.hasTag(`poke_pfe:elevator`)}`)
                 if (
                   data.block.above(i - data.block.y)?.hasTag(`poke_pfe:elevator`) &&
                   !Boolean(data.block.above(i - data.block.y)?.getRedstonePower())
@@ -553,7 +553,7 @@ function RegisterBlockComponents(data: StartupEvent) {
                 i >= Math.max(data.block.y - maxSearch, data.dimension.heightRange.min);
                 Math.min(i--, data.dimension.heightRange.min)
               ) {
-                //console.warn(`Checking Y= ${  i} \nBlock ID = ${  data.block.below(Math.abs(i-data.block.y))?.typeId} \nBelow Amount = ${  Math.abs(i-data.block.y)}\nRedstone Power = ${  data.block.below(Math.abs(i-data.block.y))?.getRedstonePower()}\nHas Tag? = ${  data.block.below(Math.abs(i-data.block.y))?.hasTag(`poke_pfe:elevator`)}`)
+                //console.warn(`Checking Y= ${ i} \nBlock ID = ${ data.block.below(Math.abs(i-data.block.y))?.typeId} \nBelow Amount = ${ Math.abs(i-data.block.y)}\nRedstone Power = ${ data.block.below(Math.abs(i-data.block.y))?.getRedstonePower()}\nHas Tag? = ${ data.block.below(Math.abs(i-data.block.y))?.hasTag(`poke_pfe:elevator`)}`)
                 if (
                   data.block.below(Math.abs(i - data.block.y))?.hasTag(`poke_pfe:elevator`) &&
                   !Boolean(data.block.below(Math.abs(i - data.block.y))?.getRedstonePower())
@@ -578,7 +578,7 @@ function RegisterBlockComponents(data: StartupEvent) {
         let maxSearch = 64;
         if (player.isJumping) {
           let viewDirection = player.getViewDirection();
-          //console.warn(`X: ${  viewDirection.x}, Y: ${  viewDirection.y}, Z: ${  viewDirection.z}`)
+          //console.warn(`X: ${ viewDirection.x}, Y: ${ viewDirection.y}, Z: ${ viewDirection.z}`)
           let cardinalDirection = PokeClosestCardinal(viewDirection);
           switch (cardinalDirection.direction) {
             case Direction.Up: {
@@ -587,7 +587,7 @@ function RegisterBlockComponents(data: StartupEvent) {
                 i <= Math.min(data.block.y + maxSearch, data.dimension.heightRange.max);
                 Math.min(i++, data.dimension.heightRange.max)
               ) {
-                //console.warn(`Checking Y= ${  i} \nBlock ID = ${  data.block.above(i - data.block.y)?.typeId} \nAbove Amount = ${  i - data.block.y}\nRedstone Power = ${  data.block.above(i - data.block.y)?.getRedstonePower()}\nHas Tag? = ${  data.block.above(i - data.block.y)?.hasTag(`poke_pfe:elevator`)}`)
+                //console.warn(`Checking Y= ${ i} \nBlock ID = ${ data.block.above(i - data.block.y)?.typeId} \nAbove Amount = ${ i - data.block.y}\nRedstone Power = ${ data.block.above(i - data.block.y)?.getRedstonePower()}\nHas Tag? = ${ data.block.above(i - data.block.y)?.hasTag(`poke_pfe:elevator`)}`)
                 if (
                   data.block.above(i - data.block.y)?.hasTag(`poke_pfe:elevator`) &&
                   !Boolean(data.block.above(i - data.block.y)?.getRedstonePower())
@@ -605,7 +605,7 @@ function RegisterBlockComponents(data: StartupEvent) {
                 i >= Math.max(data.block.y - maxSearch, data.dimension.heightRange.min);
                 Math.min(i--, data.dimension.heightRange.min)
               ) {
-                //console.warn(`Checking Y= ${  i} \nBlock ID = ${  data.block.below(Math.abs(i - data.block.y))?.typeId} \nBelow Amount = ${  Math.abs(i - data.block.y)}\nRedstone Power = ${  data.block.below(Math.abs(i - data.block.y))?.getRedstonePower()}\nHas Tag? = ${  data.block.below(Math.abs(i - data.block.y))?.hasTag(`poke_pfe:elevator`)}`)
+                //console.warn(`Checking Y= ${ i} \nBlock ID = ${ data.block.below(Math.abs(i - data.block.y))?.typeId} \nBelow Amount = ${ Math.abs(i - data.block.y)}\nRedstone Power = ${ data.block.below(Math.abs(i - data.block.y))?.getRedstonePower()}\nHas Tag? = ${ data.block.below(Math.abs(i - data.block.y))?.hasTag(`poke_pfe:elevator`)}`)
                 if (
                   data.block.below(Math.abs(i - data.block.y))?.hasTag(`poke_pfe:elevator`) &&
                   !Boolean(data.block.below(Math.abs(i - data.block.y))?.getRedstonePower())
@@ -619,7 +619,7 @@ function RegisterBlockComponents(data: StartupEvent) {
             }
             case Direction.North: {
               for (let i = data.block.z - 1; i >= data.block.z - maxSearch; i--) {
-                //console.warn(`Checking Z= ${  i} \nBlock ID = ${  data.block.north(Math.abs(i - data.block.z))?.typeId} \nNorth Amount = ${  Math.abs(i - data.block.z)}\nRedstone Power = ${  data.block.north(Math.abs(i - data.block.z))?.getRedstonePower()}\nHas Tag? = ${  data.block.north(Math.abs(i - data.block.z))?.hasTag(`poke_pfe:elevator`)}`)
+                //console.warn(`Checking Z= ${ i} \nBlock ID = ${ data.block.north(Math.abs(i - data.block.z))?.typeId} \nNorth Amount = ${ Math.abs(i - data.block.z)}\nRedstone Power = ${ data.block.north(Math.abs(i - data.block.z))?.getRedstonePower()}\nHas Tag? = ${ data.block.north(Math.abs(i - data.block.z))?.hasTag(`poke_pfe:elevator`)}`)
                 if (
                   data.block.north(Math.abs(i - data.block.z))?.hasTag(`poke_pfe:elevator`) &&
                   !Boolean(data.block.north(Math.abs(i - data.block.z))?.getRedstonePower())
@@ -634,7 +634,7 @@ function RegisterBlockComponents(data: StartupEvent) {
             }
             case Direction.South: {
               for (let i = data.block.z + 1; i <= data.block.z + maxSearch; i++) {
-                //console.warn(`Checking Z= ${  i} \nBlock ID = ${  data.block.south(i - data.block.z)?.typeId} \nSouth Amount = ${  i - data.block.z}\nRedstone Power = ${  data.block.south(i - data.block.z)?.getRedstonePower()}\nHas Tag? = ${  data.block.south(i - data.block.z)?.hasTag(`poke_pfe:elevator`)}`)
+                //console.warn(`Checking Z= ${ i} \nBlock ID = ${ data.block.south(i - data.block.z)?.typeId} \nSouth Amount = ${ i - data.block.z}\nRedstone Power = ${ data.block.south(i - data.block.z)?.getRedstonePower()}\nHas Tag? = ${ data.block.south(i - data.block.z)?.hasTag(`poke_pfe:elevator`)}`)
                 if (
                   data.block.south(i - data.block.z)?.hasTag(`poke_pfe:elevator`) &&
                   !Boolean(data.block.south(i - data.block.z)?.getRedstonePower())
@@ -649,7 +649,7 @@ function RegisterBlockComponents(data: StartupEvent) {
             }
             case Direction.West: {
               for (let i = data.block.x - 1; i >= data.block.x - maxSearch; i--) {
-                //console.warn(`Checking X= ${  i} \nBlock ID = ${  data.block.west(Math.abs(i - data.block.x))?.typeId} \nWest Amount = ${  Math.abs(i - data.block.x)}\nRedstone Power = ${  data.block.west(Math.abs(i - data.block.x))?.getRedstonePower()}\nHas Tag? = ${  data.block.west(Math.abs(i - data.block.x))?.hasTag(`poke_pfe:elevator`)}`)
+                //console.warn(`Checking X= ${ i} \nBlock ID = ${ data.block.west(Math.abs(i - data.block.x))?.typeId} \nWest Amount = ${ Math.abs(i - data.block.x)}\nRedstone Power = ${ data.block.west(Math.abs(i - data.block.x))?.getRedstonePower()}\nHas Tag? = ${ data.block.west(Math.abs(i - data.block.x))?.hasTag(`poke_pfe:elevator`)}`)
                 if (
                   data.block.west(Math.abs(i - data.block.x))?.hasTag(`poke_pfe:elevator`) &&
                   !Boolean(data.block.west(Math.abs(i - data.block.x))?.getRedstonePower())
@@ -664,7 +664,7 @@ function RegisterBlockComponents(data: StartupEvent) {
             }
             case Direction.East: {
               for (let i = data.block.x + 1; i <= data.block.x + maxSearch; i++) {
-                //console.warn(`Checking X= ${  i} \nBlock ID = ${  data.block.east(i - data.block.x)?.typeId} \nEast Amount = ${  i - data.block.x}\nRedstone Power = ${  data.block.east(i - data.block.x)?.getRedstonePower()}\nHas Tag? = ${  data.block.east(i - data.block.x)?.hasTag(`poke_pfe:elevator`)}`)
+                //console.warn(`Checking X= ${ i} \nBlock ID = ${ data.block.east(i - data.block.x)?.typeId} \nEast Amount = ${ i - data.block.x}\nRedstone Power = ${ data.block.east(i - data.block.x)?.getRedstonePower()}\nHas Tag? = ${ data.block.east(i - data.block.x)?.hasTag(`poke_pfe:elevator`)}`)
                 if (
                   data.block.east(i - data.block.x)?.hasTag(`poke_pfe:elevator`) &&
                   !Boolean(data.block.east(i - data.block.x)?.getRedstonePower())
@@ -690,9 +690,9 @@ function RegisterBlockComponents(data: StartupEvent) {
       };
       const component = <TransformBlockComponent>componentInfo.params;
       let block = component.turns_into;
-      if (block.includes("{  ")) {
-        const permutationString = block.substring(block.indexOf("{  "));
-        block = block.substring(0, block.indexOf("{  "));
+      if (block.includes("{ ")) {
+        const permutationString = block.substring(block.indexOf("{ "));
+        block = block.substring(0, block.indexOf("{ "));
         const permutations = <BlockStateArg<BlockStateSuperset>>JSON.parse(permutationString);
         data.block.setPermutation(BlockPermutation.resolve(block, permutations));
       } else data.block.setType(block);
@@ -732,10 +732,10 @@ function RegisterBlockComponents(data: StartupEvent) {
               //console.warn("did not meet conditions to place")
               continue;
             }
-            if (component.places.includes("{  ")) {
+            if (component.places.includes("{ ")) {
               let places_block = component.places;
-              const permutationString = places_block.substring(places_block.indexOf("{  "));
-              places_block = places_block.substring(0, places_block.indexOf("{  "));
+              const permutationString = places_block.substring(places_block.indexOf("{ "));
+              places_block = places_block.substring(0, places_block.indexOf("{ "));
               const permutations = <BlockStateArg<BlockStateSuperset>>JSON.parse(permutationString);
               block.setPermutation(BlockPermutation.resolve(places_block, permutations));
             } else block.setType(component.places);
@@ -759,10 +759,10 @@ function RegisterBlockComponents(data: StartupEvent) {
                     ? component.can_replace?.includes(block.typeId)
                     : block.isAir)
               ) {
-                if (parsedBlock.places.includes("{  ")) {
+                if (parsedBlock.places.includes("{ ")) {
                   let places_block = parsedBlock.places;
-                  const permutationString = places_block.substring(places_block.indexOf("{  "));
-                  places_block = places_block.substring(0, places_block.indexOf("{  "));
+                  const permutationString = places_block.substring(places_block.indexOf("{ "));
+                  places_block = places_block.substring(0, places_block.indexOf("{ "));
                   const permutations = <BlockStateArg<BlockStateSuperset>>JSON.parse(permutationString);
                   block.setPermutation(BlockPermutation.resolve(places_block, permutations));
                 } else block.setType(parsedBlock.places);

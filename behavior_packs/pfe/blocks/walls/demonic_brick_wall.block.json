@@ -103,7 +103,6 @@
     },
     "permutations": [
       {
-        //None
         "condition": "q.block_state('minecraft:connection_north')== false && q.block_state('minecraft:connection_south')== false && q.block_state('minecraft:connection_east')== false && q.block_state('minecraft:connection_west')== false",
         "components": {
           "minecraft:selection_box": {
@@ -119,7 +118,6 @@
         }
       },
       {
-        //North Only
         "condition": "q.block_state('minecraft:connection_north')== true && q.block_state('minecraft:connection_south')== false && q.block_state('minecraft:connection_east')== false && q.block_state('minecraft:connection_west')== false",
         "components": {
           "minecraft:selection_box": {
@@ -135,7 +133,6 @@
         }
       },
       {
-        //South Only
         "condition": "q.block_state('minecraft:connection_north')== false && q.block_state('minecraft:connection_south')== true && q.block_state('minecraft:connection_east')== false && q.block_state('minecraft:connection_west')== false",
         "components": {
           "minecraft:selection_box": {
@@ -151,7 +148,6 @@
         }
       },
       {
-        //East Only
         "condition": "q.block_state('minecraft:connection_north')== false && q.block_state('minecraft:connection_south')== false && q.block_state('minecraft:connection_east')== true && q.block_state('minecraft:connection_west')== false",
         "components": {
           "minecraft:selection_box": {
@@ -167,7 +163,6 @@
         }
       },
       {
-        //West Only
         "condition": "q.block_state('minecraft:connection_north')== false && q.block_state('minecraft:connection_south')== false && q.block_state('minecraft:connection_east')== false && q.block_state('minecraft:connection_west')== true",
         "components": {
           "minecraft:selection_box": {
@@ -183,7 +178,6 @@
         }
       },
       {
-        //North & East
         "condition": "q.block_state('minecraft:connection_north')== true && q.block_state('minecraft:connection_south')== false && q.block_state('minecraft:connection_east')== true && q.block_state('minecraft:connection_west')== false",
         "components": {
           "minecraft:selection_box": {
@@ -199,7 +193,6 @@
         }
       },
       {
-        //North & West
         "condition": "q.block_state('minecraft:connection_north')== true && q.block_state('minecraft:connection_south')== false && q.block_state('minecraft:connection_east')== false && q.block_state('minecraft:connection_west')== true",
         "components": {
           "minecraft:selection_box": {
@@ -215,7 +208,6 @@
         }
       },
       {
-        //South & East
         "condition": "q.block_state('minecraft:connection_north')== false && q.block_state('minecraft:connection_south')== true && q.block_state('minecraft:connection_east')== true && q.block_state('minecraft:connection_west')== false",
         "components": {
           "minecraft:selection_box": {
@@ -231,7 +223,6 @@
         }
       },
       {
-        //South & West
         "condition": "q.block_state('minecraft:connection_north')== false && q.block_state('minecraft:connection_south')== true && q.block_state('minecraft:connection_east')== false && q.block_state('minecraft:connection_west')== true",
         "components": {
           "minecraft:selection_box": {
@@ -247,7 +238,6 @@
         }
       },
       {
-        //North & South w/o Above
         "condition": "q.block_state('minecraft:connection_north')== true && q.block_state('minecraft:connection_south')== true && q.block_state('minecraft:connection_east')== false && q.block_state('minecraft:connection_west')== false",
         "components": {
           "minecraft:selection_box": {
@@ -263,7 +253,6 @@
         }
       },
       {
-        //East & West w/o Above
         "condition": "q.block_state('minecraft:connection_north')== false && q.block_state('minecraft:connection_south')== false && q.block_state('minecraft:connection_east')== true && q.block_state('minecraft:connection_west')== true",
         "components": {
           "minecraft:selection_box": {
@@ -279,7 +268,6 @@
         }
       },
       {
-        //North & South w/ Above
         "condition": "q.block_state('minecraft:connection_north')== true && q.block_state('minecraft:connection_south')== true && q.block_state('minecraft:connection_east')== false && q.block_state('minecraft:connection_west')== false",
         "components": {
           "minecraft:selection_box": {
@@ -295,7 +283,6 @@
         }
       },
       {
-        //East & West w/ Above
         "condition": "q.block_state('minecraft:connection_north')== false && q.block_state('minecraft:connection_south')== false && q.block_state('minecraft:connection_east')== true && q.block_state('minecraft:connection_west')== true",
         "components": {
           "minecraft:selection_box": {
@@ -311,7 +298,6 @@
         }
       },
       {
-        //North, East, South
         "condition": "q.block_state('minecraft:connection_north')== true && q.block_state('minecraft:connection_south')== true && q.block_state('minecraft:connection_east')== true && q.block_state('minecraft:connection_west')== false",
         "components": {
           "minecraft:selection_box": {
@@ -327,7 +313,6 @@
         }
       },
       {
-        //North, West, South
         "condition": "q.block_state('minecraft:connection_north')== true && q.block_state('minecraft:connection_south')== true && q.block_state('minecraft:connection_east')== false && q.block_state('minecraft:connection_west')== true",
         "components": {
           "minecraft:selection_box": {
@@ -343,7 +328,6 @@
         }
       },
       {
-        //North, East, West
         "condition": "q.block_state('minecraft:connection_north')== true && q.block_state('minecraft:connection_south')== false && q.block_state('minecraft:connection_east')== true && q.block_state('minecraft:connection_west')== true",
         "components": {
           "minecraft:selection_box": {
@@ -359,7 +343,6 @@
         }
       },
       {
-        //South, West, East
         "condition": "q.block_state('minecraft:connection_north')== false && q.block_state('minecraft:connection_south')== true && q.block_state('minecraft:connection_east')== true && q.block_state('minecraft:connection_west')== true",
         "components": {
           "minecraft:selection_box": {

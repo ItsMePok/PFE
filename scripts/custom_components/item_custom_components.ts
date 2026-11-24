@@ -500,7 +500,7 @@ function RegisterItemComponents(data: StartupEvent) {
       const cPlayers = data.source.dimension.getPlayers({excludeNames: ["" + data.source.name]});
       var cPlayersLength = cPlayers.length;
       for (var i = cPlayersLength; i > 0; i--) {
-        //data.source.playAnimation('animation.humanoid.bow_and_arrow',{  stopExpression: '!q.is_using_item', players:[cPlayers[i-1].name]})
+        //data.source.playAnimation('animation.humanoid.bow_and_arrow',{ stopExpression: '!q.is_using_item', players:[cPlayers[i-1].name]})
       }
       return;
     },
@@ -509,8 +509,8 @@ function RegisterItemComponents(data: StartupEvent) {
     onUse(data, component) {
       const cPlayers = data.source.dimension.getPlayers({excludeNames: ["" + data.source.name]});
       var cPlayersLength = cPlayers.length;
-      //data.source.playAnimation('third_person_crossbow_equipped',{  stopExpression:'!q.is_using_item',controller:'pfe-controller.animation.poke_pfe.crossbow2'})//Hand charging for everyone else
-      //data.source.playAnimation('waffle',{  stopExpression:'!q.is_using_item',controller:'pfe-controller.animation.poke_pfe.crossbow2'})
+      //data.source.playAnimation('third_person_crossbow_equipped',{ stopExpression:'!q.is_using_item',controller:'pfe-controller.animation.poke_pfe.crossbow2'})//Hand charging for everyone else
+      //data.source.playAnimation('waffle',{ stopExpression:'!q.is_using_item',controller:'pfe-controller.animation.poke_pfe.crossbow2'})
       data.source.playAnimation("animation.player.first_person.crossbow_equipped", {
         stopExpression: "!q.is_using_item",
         players: [data.source],
@@ -585,12 +585,12 @@ function RegisterItemComponents(data: StartupEvent) {
       for (const blocks of component.transforms) {
         let toBlock = blocks.substring(blocks.indexOf("::") + 2);
         const fromBlock = blocks.substring(0, blocks.indexOf("::"));
-        //console.warn(`From: ${  fromBlock}, To: ${  toBlock}, Block: ${  data.block.typeId}`)
+        //console.warn(`From: ${ fromBlock}, To: ${ toBlock}, Block: ${ data.block.typeId}`)
         if (data.block.typeId != fromBlock) continue;
-        if (toBlock.includes("{  ")) {
-          const permutationString = toBlock.substring(toBlock.indexOf("{  "));
-          toBlock = toBlock.substring(0, toBlock.indexOf("{  "));
-          //console.warn(`To: ${  toBlock}, Permutations: ${  permutationString}, Block: ${  data.block.typeId}`)
+        if (toBlock.includes("{ ")) {
+          const permutationString = toBlock.substring(toBlock.indexOf("{ "));
+          toBlock = toBlock.substring(0, toBlock.indexOf("{ "));
+          //console.warn(`To: ${ toBlock}, Permutations: ${ permutationString}, Block: ${ data.block.typeId}`)
           const permutations = <BlockStateArg<BlockStateSuperset>>JSON.parse(permutationString);
           data.block.setPermutation(BlockPermutation.resolve(toBlock, permutations));
         } else data.block.setType(toBlock);

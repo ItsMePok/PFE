@@ -120,7 +120,7 @@
         "components": {
           "minecraft:transformation": {
             "rotation": [90, 0, 0]
-          } /* (minecraft bug?) change_state breaks (maybe never registers?) if not with other custom components in the permutation */,
+          },
           "poke_pfe:change_state": {
             "face": "all",
             "sound": {
