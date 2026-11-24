@@ -64,5 +64,184 @@
 		"wiki_page": "https://minecraft.wiki/w/Honeycomb",
 		"name": "Honeycomb"
 	},
+	"minecraft:dirt": {
+		"icon": "https://minecraft.wiki/images/Dirt_JE2_BE2.png?438ac",
+		"wiki_page": "https://minecraft.wiki/w/Dirt",
+		"name": "Dirt"
+	},
+	"minecraft:cobblestone": {
+		"icon": "https://minecraft.wiki/images/Cobblestone_JE5_BE3.png?25024",
+		"wiki_page": "https://minecraft.wiki/w/Cobblestone",
+		"name": "Cobblestone"
+	},
+	"minecraft:planks": {
+		"icon": "https://minecraft.wiki/images/Oak_Planks.png?d9efa&format=original",
+		"wiki_page": "https://minecraft.wiki/w/Planks",
+		"name": "Any Planks"
+	},
+	"minecraft:brush": {
+		"icon": "https://minecraft.wiki/images/Brush_JE1_BE1.png?fd417",
+		"wiki_page": "https://minecraft.wiki/w/Brush",
+		"name": "Brush"
+	},
+	"minecraft:glowstone": {
+		"icon": "https://minecraft.wiki/images/Glowstone_BE.png?28fa3",
+		"wiki_page": "https://minecraft.wiki/w/Glowstone",
+		"name": "Glowstone"
+	},
+	"minecraft:glass": {
+		"icon": "https://minecraft.wiki/images/Glass_JE4.png?d0e06",
+		"wiki_page": "https://minecraft.wiki/w/Glass",
+		"name": "Glass"
+	},
+	"minecraft:gold_nugget": {
+		"icon": "https://minecraft.wiki/images/Gold_Nugget_JE3_BE2.png?ba665",
+		"wiki_page": "https://minecraft.wiki/w/Gold_Nugget",
+		"name": "Gold Nugget"
+	},
+	"minecraft:gold_ingot": {
+		"icon": "https://minecraft.wiki/images/Gold_Ingot_JE4_BE2.png?80cd6",
+		"wiki_page": "https://minecraft.wiki/w/Gold_Ingot",
+		"name": "Gold Ingot"
+	},
+	"minecraft:melon_block": {
+		"icon": "https://minecraft.wiki/images/Melon_JE2_BE2.png?1ff8e",
+		"wiki_page": "https://minecraft.wiki/w/Melon",
+		"name": "Melon Block"
+	},
+	"minecraft:melon_slice": {
+		"icon": "https://minecraft.wiki/images/Melon_Slice_JE2_BE2.png?b8c6b",
+		"wiki_page": "https://minecraft.wiki/w/Melon_Slice",
+		"name": "Melon Slice"
+	},
+	"minecraft:melon_seeds": {
+		"icon": "https://minecraft.wiki/images/Melon_Seeds_JE2_BE2.png?59562",
+		"wiki_page": "https://minecraft.wiki/w/Melon_Seeds",
+		"name": "Melon Seeds"
+	},
+	"minecraft:netherite_sword": {
+		"icon": "https://minecraft.wiki/images/Netherite_Sword_JE2_BE2.png?8e866",
+		"wiki_page": "https://minecraft.wiki/w/Netherite_Sword",
+		"name": "Netherite Sword"
+	},
+	"minecraft:netherite_helmet": {
+		"icon": "https://minecraft.wiki/images/Netherite_Helmet_%28item%29_JE1.png",
+		"wiki_page": "https://minecraft.wiki/w/Netherite_Helmet",
+		"name": "Netherite Helmet"
+	},
+	"minecraft:netherite_boots": {
+		"icon": "https://minecraft.wiki/images/Netherite_Boots_%28item%29_JE1.png?a161f",
+		"wiki_page": "https://minecraft.wiki/w/Netherite_Boots",
+		"name": "Netherite Boots"
+	},
+	"minecraft:netherite_chestplate": {
+		"icon": "https://minecraft.wiki/images/Netherite_Chestplate_%28item%29_JE1.png?8b56d",
+		"wiki_page": "https://minecraft.wiki/w/Netherite_Chestplate",
+		"name": "Netherite Chestplate"
+	},
+	"minecraft:netherite_leggings": {
+		"icon": "https://minecraft.wiki/images/Netherite_Leggings_%28item%29_JE1.png?fea9e",
+		"wiki_page": "https://minecraft.wiki/w/Netherite_Leggings",
+		"name": "Netherite Leggings"
+	},
+	"minecraft:blast_furnace": {
+		"icon": "https://minecraft.wiki/images/Blast_Furnace_%28S%29_JE1.png?f1920",
+		"wiki_page": "https://minecraft.wiki/w/Blast_Furnace",
+		"name": "Blast Furnace"
+	},
+	"minecraft:cauldron": {
+		"icon": "https://minecraft.wiki/images/Cauldron_JE8.png?baeb8",
+		"wiki_page": "https://minecraft.wiki/w/Cauldron",
+		"name": "Cauldron"
+	},
+	"minecraft:armor_stand": {
+		"icon": "https://minecraft.wiki/images/Armor_Stand_%28item%29_JE3_BE2.png?d5904",
+		"wiki_page": "https://minecraft.wiki/w/Armor_Stand",
+		"name": "Armor Stand"
+	},
+	"minecraft:netherite_scrap": {
+		"icon": "https://minecraft.wiki/images/Netherite_Scrap_JE2_BE1.png?ef2a4",
+		"wiki_page": "https://minecraft.wiki/w/Netherite_Scrap",
+		"name": "Netherite Scrap"
+	},
+	"minecraft:purple_carpet": {
+		"icon": "https://minecraft.wiki/images/Purple_Carpet_JE2_BE2.png?20d46",
+		"wiki_page": "https://minecraft.wiki/w/Carpet#Purple",
+		"name": "Purple Carpet"
+	},
+	"minecraft:copper_ingot": {
+		"icon": "https://minecraft.wiki/images/Copper_Ingot_JE2_BE1.png?0d410",
+		"wiki_page": "https://minecraft.wiki/w/Copper_Ingot",
+		"name": "Copper Ingot"
+	},
+	"minecraft:anvil": {
+		"icon": "https://minecraft.wiki/images/Anvil_%28N%29_BE3.png?30415",
+		"wiki_page": "https://minecraft.wiki/w/Anvil",
+		"name": "Anvil"
+	},
+	"minecraft:diamond_block": {
+		"icon": "https://minecraft.wiki/images/Block_of_Diamond_JE5_BE3.png?542ee",
+		"wiki_page": "https://minecraft.wiki/w/Block_of_Diamond",
+		"name": "Block of Diamond"
+	},
+	"minecraft:feather": {
+		"icon": "https://minecraft.wiki/images/Feather_JE3_BE2.png?b869b",
+		"wiki_page": "https://minecraft.wiki/w/Feather",
+		"name": "Feather"
+	},
+	"minecraft:diamond": {
+		"icon": "https://minecraft.wiki/images/Diamond_JE3_BE3.png?986a9",
+		"wiki_page": "https://minecraft.wiki/w/Diamond",
+		"name": "Diamond"
+	},
+	"minecraft:music_disc_ward": {
+		"icon": "https://minecraft.wiki/images/Music_Disc_ward_JE1_BE1.png?91cb9",
+		"wiki_page": "https://minecraft.wiki/w/Music_Disc_ward",
+		"name": "Music Disc - Ward"
+	},
+	"minecraft:music_disc_13": {
+		"icon": "https://minecraft.wiki/images/Music_Disc_13_JE1_BE1.png?3ad74",
+		"wiki_page": "https://minecraft.wiki/w/Music_Disc_13",
+		"name": "Music Disc - 13"
+	},
+	"minecraft:music_disc_wait": {
+		"icon": "https://minecraft.wiki/images/Music_Disc_wait_JE1_BE1.png?f5bea",
+		"wiki_page": "https://minecraft.wiki/w/Music_Disc_wait",
+		"name": "Music Disc - Wait"
+	},
+	"minecraft:music_disc_strad": {
+		"icon": "https://minecraft.wiki/images/Music_Disc_strad_JE1_BE1.png?8fa76",
+		"wiki_page": "https://minecraft.wiki/w/Music_Disc_strad",
+		"name": "Music Disc - Strad"
+	},
+	"minecraft:bqejqeno": { "icon": "", "wiki_page": "", "name": "" },
+	"minecraft:bqejqeno": { "icon": "", "wiki_page": "", "name": "" },
+	"minecraft:bqejqeno": { "icon": "", "wiki_page": "", "name": "" },
+	"minecraft:bqejqeno": { "icon": "", "wiki_page": "", "name": "" },
+	"minecraft:bqejqeno": { "icon": "", "wiki_page": "", "name": "" },
+	"minecraft:bqejqeno": { "icon": "", "wiki_page": "", "name": "" },
+	"minecraft:bqejqeno": { "icon": "", "wiki_page": "", "name": "" },
+	"minecraft:bqejqeno": { "icon": "", "wiki_page": "", "name": "" },
+	"minecraft:bqejqeno": { "icon": "", "wiki_page": "", "name": "" },
+	"minecraft:bqejqeno": { "icon": "", "wiki_page": "", "name": "" },
+	"minecraft:bqejqeno": { "icon": "", "wiki_page": "", "name": "" },
+	"minecraft:bqejqeno": { "icon": "", "wiki_page": "", "name": "" },
+	"minecraft:bqejqeno": { "icon": "", "wiki_page": "", "name": "" },
+	"minecraft:bqejqeno": { "icon": "", "wiki_page": "", "name": "" },
+	"minecraft:bqejqeno": { "icon": "", "wiki_page": "", "name": "" },
+	"minecraft:bqejqeno": { "icon": "", "wiki_page": "", "name": "" },
+	"minecraft:bqejqeno": { "icon": "", "wiki_page": "", "name": "" },
+	"minecraft:bqejqeno": { "icon": "", "wiki_page": "", "name": "" },
+	"minecraft:bqejqeno": { "icon": "", "wiki_page": "", "name": "" },
+	"minecraft:bqejqeno": { "icon": "", "wiki_page": "", "name": "" },
+	"minecraft:bqejqeno": { "icon": "", "wiki_page": "", "name": "" },
+	"minecraft:bqejqeno": { "icon": "", "wiki_page": "", "name": "" },
+	"minecraft:bqejqeno": { "icon": "", "wiki_page": "", "name": "" },
+	"minecraft:bqejqeno": { "icon": "", "wiki_page": "", "name": "" },
+	"minecraft:bqejqeno": { "icon": "", "wiki_page": "", "name": "" },
+	"minecraft:bqejqeno": { "icon": "", "wiki_page": "", "name": "" },
+	"minecraft:bqejqeno": { "icon": "", "wiki_page": "", "name": "" },
+	"minecraft:bqejqeno": { "icon": "", "wiki_page": "", "name": "" },
+	"minecraft:bqejqeno": { "icon": "", "wiki_page": "", "name": "" },
 	"minecraft:bqejqeno": { "icon": "", "wiki_page": "", "name": "" }
 }

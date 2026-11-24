@@ -1,22 +1,30 @@
 import index from "../index.json" with { type: "json" };
 
 import { writeFileSync } from "fs";
+
+import { VERSION } from "./consts.ts";
+import { type IndexItem, type IndexFile } from "./types.ts";
+import { GetDisplayNameByIdentifier, GetImageLink } from "./common.ts";
+import { MakeIdentifierSection } from "./pageMaking/commonComponents.ts";
+import { MakeRarity, MakeStackSize } from "./pageMaking/itemComponents.ts";
 import {
-	AddRecipesToIndex,
-	GetDisplayNameByIdentifier,
-	GetImageLink,
 	MakeDestroySpeed,
-	MakeIdentifierSection,
 	MakeMapColor,
 	MakeNoteSound,
-	MakeObtainingSection,
-	MakeRarity,
-	MakeStackSize,
-} from "./functions.ts";
-import { VERSION } from "./consts.ts";
-
-AddRecipesToIndex(index);
-
+} from "./pageMaking/blockComponents.ts";
+import { MakeObtainingSection } from "./pageMaking/obtainingFunctions.ts";
+import {
+	AddBlocksToIndex,
+	AddItemsToIndex,
+	AddRecipesToIndex,
+	AddWikiPageToIndex,
+} from "./index/indexFunctions.ts";
+/*
+AddBlocksToIndex(index as IndexFile);
+AddItemsToIndex(index as IndexFile);
+AddRecipesToIndex(index as IndexFile);
+AddWikiPageToIndex(index as IndexFile);
+*/
 console.log(index.default_info.BP);
 /*
 FILE STRUCTURE:
@@ -32,9 +40,10 @@ COMPONENTS
 
 */
 
-for (const item of index.index) {
+for (let data of index.index) {
+	const item = data as unknown as IndexItem;
 	if (item.run === false) continue;
-	const FILE_LOCATION = `${item.wiki_page}`;
+	const FILE_LOCATION = `${item}`;
 	let file = ``;
 
 	//Make Page Description:
@@ -65,7 +74,7 @@ for (const item of index.index) {
 	file = MakeDestroySpeed(file, item);
 
 	//Make Obtaining:
-	file = MakeObtainingSection(file, item);
+	file = MakeObtainingSection(file, item as IndexItem);
 
 	//End Tabs
 	file = `${file}\n{% endtabs %}\n`;

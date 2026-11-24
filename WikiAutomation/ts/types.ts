@@ -9,11 +9,29 @@ export {
 	type MCIndexFile,
 	type BPItemJSON,
 	type NoteSound,
+	type IndexFile,
 };
 type MCIndexFile = {
 	[key: string]: { icon: string; wiki_page: string; name: string };
 };
-type IndexItem = (typeof index.index)[number];
+type IndexFile = {
+	default_info: { RP: string; BP: string };
+	dev: any[];
+	index: IndexItem[];
+};
+type IndexItem = {
+	run: boolean;
+	identifier: string;
+	wiki_page?: string;
+	components: {
+		type: string;
+		name?: string;
+		block_file_path?: string;
+		item_file_path?: string;
+		additional_typing?: {};
+		recipes: string[];
+	};
+};
 type NoteSound = { "note.bd": string; [key: string]: string };
 
 type BPItemJSON = {

@@ -11,6 +11,7 @@ export {
 	MINECRAFT_LANG_FILE_PATH,
 	MC_INDEX_FILE,
 	NOTE_SOUND,
+	WIKI_SUMMARY_FILE,
 };
 
 const VERSION = "1.3.06";
@@ -29,6 +30,9 @@ const TEXTURE_INDEX = JSON.parse(
 		encoding: "utf8",
 	}),
 );
+const WIKI_SUMMARY_FILE = readFileSync(`${"./PFEWiki/SUMMARY.md"}`, {
+	encoding: "utf8",
+});
 const NOTE_SOUND: NoteSound = {
 	"note.none": "None",
 	"note.bassattack": "Bass Guitar",
