@@ -56,10 +56,12 @@ Recipe can be unlocked with:
 
 |||
 | :-: | :-: |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
+| ![](undefined) | ![](undefined) |
 
 
 Items:
+
+* 2x <img src="undefined" alt="" data-size="line"> [Demonic Bricks Slab](..\slabs\brick-slabs\demonic-brick-slab.md)
 
 Outputs:
 

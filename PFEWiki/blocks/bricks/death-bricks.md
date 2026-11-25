@@ -56,10 +56,12 @@ Recipe can be unlocked with:
 
 |||
 | :-: | :-: |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
+| ![](undefined) | ![](undefined) |
 
 
 Items:
+
+* 2x <img src="undefined" alt="" data-size="line"> [Death Bricks Slab](..\slabs\brick-slabs\death-brick-slab.md)
 
 Outputs:
 

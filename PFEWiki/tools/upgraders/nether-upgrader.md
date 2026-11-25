@@ -22,9 +22,9 @@ description: Last updated to match v1.3.06
 
 ||||
 | :-: | :-: | :-: |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://minecraft.wiki/images/Crimson_Fungus_JE1_BE1.png?e3eed) | ![](https://minecraft.wiki/images/Magma_Block_BE2.gif?442d4) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](https://minecraft.wiki/images/Crimson_Fungus_JE1_BE1.png?e3eed) | ![](https://minecraft.wiki/images/Magma_Block_BE2.gif?442d4) |
 | ![](https://minecraft.wiki/images/Soul_Sand_JE2_BE2.png?2334d) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/diamond_upgrade_core.png?raw=true) | ![](https://minecraft.wiki/images/Warped_Fungus_JE1_BE1.png?95b25) |
-| ![](https://minecraft.wiki/images/Blaze_Rod_JE1_BE1.png?ae16e) | ![](https://minecraft.wiki/images/Basalt_%28UD%29_JE1_BE1.png?3adcd) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
+| ![](https://minecraft.wiki/images/Blaze_Rod_JE1_BE1.png?ae16e) | ![](https://minecraft.wiki/images/Basalt_%28UD%29_JE1_BE1.png?3adcd) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
 
 Items:
 

@@ -22,9 +22,9 @@ description: Last updated to match v1.3.06
 
 ||||
 | :-: | :-: | :-: |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://minecraft.wiki/images/End_Stone_JE3_BE2.png?8f71b) | ![](https://minecraft.wiki/images/Chorus_Fruit_JE2_BE2.png?c8e41) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](https://minecraft.wiki/images/End_Stone_JE3_BE2.png?8f71b) | ![](https://minecraft.wiki/images/Chorus_Fruit_JE2_BE2.png?c8e41) |
 | ![](https://minecraft.wiki/images/Chorus_Flower_JE2_BE2.png?586dd) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/diamond_upgrade_core.png?raw=true) | ![](https://minecraft.wiki/images/End_Stone_JE3_BE2.png?8f71b) |
-| ![](https://minecraft.wiki/images/End_Rod_%28U%29_BE2.png?a8e6a) | ![](https://minecraft.wiki/images/Chorus_Flower_JE2_BE2.png?586dd) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
+| ![](https://minecraft.wiki/images/End_Rod_%28U%29_BE2.png?a8e6a) | ![](https://minecraft.wiki/images/Chorus_Flower_JE2_BE2.png?586dd) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
 
 Items:
 

@@ -70,10 +70,12 @@ Recipe can be unlocked with:
 
 |||
 | :-: | :-: |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
+| ![](undefined) | ![](undefined) |
 
 
 Items:
+
+* 2x <img src="undefined" alt="" data-size="line"> [Honey Tiles Slab](..\slabs\misc-slabs\honey-tile-slab.md)
 
 Outputs:
 
@@ -81,7 +83,7 @@ Outputs:
 
 Recipe can be unlocked with:
 
-* <img src="undefined" alt="" data-size="line"> Honey Tiles Slab
+* <img src="undefined" alt="" data-size="line"> [Honey Tiles Slab](..\slabs\misc-slabs\honey-tile-slab.md)
 
 {% endtab %}
 

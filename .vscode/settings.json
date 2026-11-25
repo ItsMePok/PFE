@@ -1,28 +1,30 @@
 {
-	"git.ignoreLimitWarning": true,
-	"editor.formatOnSave": true,
-	"[markdown]": { "prettier.enable": false },
-	"search.exclude": {
-		"**/.git": true,
-		"**/node_modules": true,
-		"**/dist": true,
-		"**/lib": true
-	},
-	"files.exclude": {
-		"**/.git": true,
-		"**/.DS_Store": true,
-		"**/node_modules": true
-	},
-	"editor.tabSize": 2,
-	"git.autorefresh": false,
-	"cSpell.words": [
-		"chestplate",
-		"creedite",
-		"knightling",
-		"purpur",
-		"shroomlight",
-		"Shulker",
-		"sporefish",
-		"sporeshroom"
-	]
+  "git.ignoreLimitWarning": true,
+  "editor.formatOnSave": true,
+  "[markdown]": { "prettier.enable": false },
+  "search.exclude": {
+    "**/.git": true,
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/lib": true
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true
+  },
+  "editor.tabSize": 2,
+  "git.autorefresh": false,
+  "cSpell.words": [
+    "chestplate",
+    "creedite",
+    "endtab",
+    "endtabs",
+    "knightling",
+    "purpur",
+    "shroomlight",
+    "Shulker",
+    "sporefish",
+    "sporeshroom"
+  ]
 }

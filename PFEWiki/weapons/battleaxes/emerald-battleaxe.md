@@ -24,7 +24,7 @@ description: Last updated to match v1.3.06
 | :-: | :-: | :-: |
 | ![](https://minecraft.wiki/images/Emerald_JE3_BE3.png?4c5f3) | ![](https://minecraft.wiki/images/Emerald_JE3_BE3.png?4c5f3) | ![](https://minecraft.wiki/images/Emerald_JE3_BE3.png?4c5f3) |
 | ![](https://minecraft.wiki/images/Emerald_JE3_BE3.png?4c5f3) | ![](https://minecraft.wiki/images/Stick_JE1_BE1.png?1fc15) | ![](https://minecraft.wiki/images/Emerald_JE3_BE3.png?4c5f3) |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://minecraft.wiki/images/Block_of_Emerald_JE4_BE3.png?d5a3c) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](https://minecraft.wiki/images/Block_of_Emerald_JE4_BE3.png?d5a3c) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
 
 Items:
 

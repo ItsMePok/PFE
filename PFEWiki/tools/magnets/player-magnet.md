@@ -24,7 +24,7 @@ description: Last updated to match v1.3.06
 | :-: | :-: | :-: |
 | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/GodlyBlock.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/GodlyBlock.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/GodlyBlock.png?raw=true) |
 | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/GodlyBlock.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_core.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/GodlyBlock.png?raw=true) |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_gem.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](undefined) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_gem.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](undefined) |
 
 Items:
 

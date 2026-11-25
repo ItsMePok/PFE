@@ -24,7 +24,7 @@ description: Last updated to match v1.3.06
 | :-: | :-: | :-: |
 | ![](https://minecraft.wiki/images/Cobblestone_JE5_BE3.png?25024) | ![](https://minecraft.wiki/images/Cobblestone_JE5_BE3.png?25024) | ![](https://minecraft.wiki/images/Cobblestone_JE5_BE3.png?25024) |
 | ![](https://minecraft.wiki/images/Cobblestone_JE5_BE3.png?25024) | ![](https://minecraft.wiki/images/Stick_JE1_BE1.png?1fc15) | ![](https://minecraft.wiki/images/Cobblestone_JE5_BE3.png?25024) |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://minecraft.wiki/images/Stone_JE5_BE3.png?5780c) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](https://minecraft.wiki/images/Stone_JE5_BE3.png?5780c) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
 
 Items:
 

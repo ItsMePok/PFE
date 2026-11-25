@@ -22,9 +22,9 @@ description: Last updated to match v1.3.06
 
 ||||
 | :-: | :-: | :-: |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/galaxy_ingot.png?raw=true) | ![](https://minecraft.wiki/images/String_JE2_BE2.png?25d69) |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/galaxy_ingot.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://minecraft.wiki/images/String_JE2_BE2.png?25d69) |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/galaxy_ingot.png?raw=true) | ![](https://minecraft.wiki/images/String_JE2_BE2.png?25d69) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/galaxy_ingot.png?raw=true) | ![](https://minecraft.wiki/images/String_JE2_BE2.png?25d69) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/galaxy_ingot.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](https://minecraft.wiki/images/String_JE2_BE2.png?25d69) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/galaxy_ingot.png?raw=true) | ![](https://minecraft.wiki/images/String_JE2_BE2.png?25d69) |
 
 Items:
 

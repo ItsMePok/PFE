@@ -23,8 +23,8 @@ description: Last updated to match v1.3.06
 ||||
 | :-: | :-: | :-: |
 | ![](https://minecraft.wiki/images/Stone_JE5_BE3.png?5780c) | ![](https://minecraft.wiki/images/Stone_JE5_BE3.png?5780c) | ![](https://minecraft.wiki/images/Stone_JE5_BE3.png?5780c) |
-| ![](https://minecraft.wiki/images/Stone_JE5_BE3.png?5780c) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/wooden_haxel.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
+| ![](https://minecraft.wiki/images/Stone_JE5_BE3.png?5780c) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/wooden_haxel.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
 
 Items:
 

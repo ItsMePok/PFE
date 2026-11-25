@@ -54,10 +54,12 @@ Recipe can be unlocked with:
 
 |||
 | :-: | :-: |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutHellishSlab.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutHellishSlab.png?raw=true) |
 
 
 Items:
+
+* 2x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutHellishSlab.png?raw=true" alt="" data-size="line"> [Cut Hellish Slab](..\slabs\cut-slabs\cut-hellish-slab.md)
 
 Outputs:
 

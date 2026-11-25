@@ -54,10 +54,12 @@ Recipe can be unlocked with:
 
 |||
 | :-: | :-: |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutShadeSlab.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutShadeSlab.png?raw=true) |
 
 
 Items:
+
+* 2x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutShadeSlab.png?raw=true" alt="" data-size="line"> [Cut Shade Slab](..\slabs\cut-slabs\cut-shade-slab.md)
 
 Outputs:
 

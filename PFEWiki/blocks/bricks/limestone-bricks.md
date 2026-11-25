@@ -64,10 +64,12 @@ Recipe can be unlocked with:
 
 |||
 | :-: | :-: |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/ERROR(poke_pfe:limestone_brick_slab).png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/ERROR(poke_pfe:limestone_brick_slab).png?raw=true) |
 
 
 Items:
+
+* 2x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/ERROR(poke_pfe:limestone_brick_slab).png?raw=true" alt="" data-size="line"> ERROR (poke_pfe:limestone_brick_slab)
 
 Outputs:
 

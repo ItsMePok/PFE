@@ -22,9 +22,9 @@ description: Last updated to match v1.3.06
 
 ||||
 | :-: | :-: | :-: |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://minecraft.wiki/images/Block_of_Amethyst_JE3_BE1.png?14501) | ![](https://minecraft.wiki/images/Block_of_Amethyst_JE3_BE1.png?14501) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](https://minecraft.wiki/images/Block_of_Amethyst_JE3_BE1.png?14501) | ![](https://minecraft.wiki/images/Block_of_Amethyst_JE3_BE1.png?14501) |
 | ![](https://minecraft.wiki/images/Amethyst_Shard_JE2_BE1.png?56555) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/diamond_upgrade_core.png?raw=true) | ![](https://minecraft.wiki/images/Block_of_Amethyst_JE3_BE1.png?14501) |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_stick.png?raw=true) | ![](https://minecraft.wiki/images/Amethyst_Shard_JE2_BE1.png?56555) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_stick.png?raw=true) | ![](https://minecraft.wiki/images/Amethyst_Shard_JE2_BE1.png?56555) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
 
 Items:
 

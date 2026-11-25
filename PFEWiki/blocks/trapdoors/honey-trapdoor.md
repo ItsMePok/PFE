@@ -31,10 +31,12 @@ description: Last updated to match v1.3.06
 
 ||||
 | :-: | :-: | :-: |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
+| ![](https://minecraft.wiki/images/Honeycomb_JE2_BE2.png?2ecff) | ![](https://minecraft.wiki/images/Honeycomb_JE2_BE2.png?2ecff) | ![](https://minecraft.wiki/images/Honeycomb_JE2_BE2.png?2ecff) |
+| ![](https://minecraft.wiki/images/Honeycomb_JE2_BE2.png?2ecff) | ![](https://minecraft.wiki/images/Honeycomb_JE2_BE2.png?2ecff) | ![](https://minecraft.wiki/images/Honeycomb_JE2_BE2.png?2ecff) |
 
 Items:
+
+* 6x <img src="https://minecraft.wiki/images/Honeycomb_JE2_BE2.png?2ecff" alt="" data-size="line"> [Honeycomb](https://minecraft.wiki/w/Honeycomb)
 
 Outputs:
 

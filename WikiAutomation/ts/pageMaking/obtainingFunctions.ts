@@ -56,7 +56,7 @@ function CreateFurnaceRecipe(
 	*/
   const FURNACE_RECIPE = RECIPE_FILE["minecraft:recipe_furnace"];
   const FURNACE_ICON = `<figure><img src="https://minecraft.wiki/images/Lit_Furnace_(S).gif?40e71" alt="Furnace."><figcaption><p>Smelted in a <a href="https://minecraft.wiki/w/Furnace">Furnace</a></p></figcaption></figure>`;
-  const BLAST_FURACE_ICON = `<figure><img src="https://minecraft.wiki/images/thumb/Lit_Blast_Furnace_JE1.gif/150px-Lit_Blast_Furnace_JE1.gif?dc6a7" alt="Blast Furnace."><figcaption><p>Smelted in a <a href="https://minecraft.wiki/w/Blast_Furnace">Blast Furnace</a></p></figcaption></figure>`;
+  const BLAST_FURNACE_ICON = `<figure><img src="https://minecraft.wiki/images/thumb/Lit_Blast_Furnace_JE1.gif/150px-Lit_Blast_Furnace_JE1.gif?dc6a7" alt="Blast Furnace."><figcaption><p>Smelted in a <a href="https://minecraft.wiki/w/Blast_Furnace">Blast Furnace</a></p></figcaption></figure>`;
   const SMOKER_ICON = `<figure><img src="https://minecraft.wiki/images/Lit_Smoker_%28S%29_BE2.gif?251ca" alt="Smoker."><figcaption><p>Smoked in a <a href="https://minecraft.wiki/w/Smoker}">Smoker</a></p></figcaption></figure>`;
   const CAMPFIRE_ICON = `<figure><img src="https://minecraft.wiki/images/Campfire_%28S%29_JE2_BE2.gif?742be" alt="Campfire."><figcaption><p>Cooked on a <a href="https://minecraft.wiki/w/Campfire">Campfire</a></p></figcaption></figure>`;
   const SOUL_CAMPFIRE_ICON = `<figure><img src="https://minecraft.wiki/images/Soul_Campfire_JE1_BE1.gif?bf4a7" alt="Soul Campfire."><figcaption><p>Cooked on a <a href="https://minecraft.wiki/w/Soul_Campfire">Soul Campfire</a></p></figcaption></figure>`;
@@ -78,7 +78,7 @@ function CreateFurnaceRecipe(
     iconCount++;
   }
   if (isBlastFurnace) {
-    file = `${file}${iconCount > 0 ? " " : ""}${BLAST_FURACE_ICON}`;
+    file = `${file}${iconCount > 0 ? " " : ""}${BLAST_FURNACE_ICON}`;
     iconCount++;
   }
   if (isSmoker) {
@@ -343,9 +343,9 @@ function GetIdentifierFromShapedPattern(
   if (!SHAPED_RECIPE) return;
   let keyVal =
     SHAPED_RECIPE.pattern.at(location.y - 1)?.at(location.x - 1) ?? " ";
-
+  console.info(keyVal);
   if (
-    RECIPE_SIZE.width <
+    RECIPE_SIZE.length <
     Number(SHAPED_RECIPE.pattern.at(location.y - 1)?.length ?? 0)
   ) {
     keyVal = " ";
@@ -355,6 +355,8 @@ function GetIdentifierFromShapedPattern(
     return undefined;
   }
   const KEYS = SHAPED_RECIPE.key;
-
+  console.warn(
+    `${JSON.stringify(KEYS)} \n & ${keyVal} \n & ${KEYS[keyVal].item}`,
+  );
   return KEYS[keyVal].item;
 }

@@ -55,10 +55,12 @@ Recipe can be unlocked with:
 
 |||
 | :-: | :-: |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RawOnyxSlab.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RawOnyxSlab.png?raw=true) |
 
 
 Items:
+
+* 2x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RawOnyxSlab.png?raw=true" alt="" data-size="line"> [Raw Onyx Slab](..\slabs\raw-ore-slabs\raw-onyx-slab.md)
 
 Outputs:
 

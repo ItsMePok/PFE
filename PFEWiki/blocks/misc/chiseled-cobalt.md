@@ -31,10 +31,12 @@ description: Last updated to match v1.3.06
 
 |||
 | :-: | :-: |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/ChiseledCobaltSlab.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/ChiseledCobaltSlab.png?raw=true) |
 
 
 Items:
+
+* 2x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/ChiseledCobaltSlab.png?raw=true" alt="" data-size="line"> [Chiseled Cobalt Slab](..\slabs\misc-slabs\chiseled-cobalt-slab.md)
 
 Outputs:
 

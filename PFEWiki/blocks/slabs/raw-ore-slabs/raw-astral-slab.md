@@ -31,10 +31,12 @@ description: Last updated to match v1.3.06
 
 ||||
 | :-: | :-: | :-: |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawAstral.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawAstral.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawAstral.png?raw=true) |
 
 
 Items:
+
+* 3x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawAstral.png?raw=true" alt="" data-size="line"> [Block of Raw Astral](..\..\raw-ore-blocks\block-of-raw-astral.md)
 
 Outputs:
 

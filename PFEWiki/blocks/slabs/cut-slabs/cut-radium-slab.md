@@ -31,10 +31,12 @@ description: Last updated to match v1.3.06
 
 ||||
 | :-: | :-: | :-: |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutRadium.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutRadium.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutRadium.png?raw=true) |
 
 
 Items:
+
+* 3x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutRadium.png?raw=true" alt="" data-size="line"> [Cut Radium](..\..\cut-blocks\cut-radium.md)
 
 Outputs:
 

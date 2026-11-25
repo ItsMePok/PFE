@@ -59,7 +59,7 @@ Recipe can be unlocked with:
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CarvedMelon.png?raw=true" alt="" data-size="line"> [Carved Melon](carved-melon.md)
 
-* <img src="undefined" alt="" data-size="line"> Gilded Carved Melon
+* <img src="undefined" alt="" data-size="line"> [Gilded Carved Melon](carved-gilded-melon.md)
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CarvedCarvedMelon.png?raw=true" alt="" data-size="line"> [Carved Carved Melon](carved-carved-melon.md)
 

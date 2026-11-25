@@ -56,10 +56,12 @@ Recipe can be unlocked with:
 
 |||
 | :-: | :-: |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
+| ![](undefined) | ![](undefined) |
 
 
 Items:
+
+* 2x <img src="undefined" alt="" data-size="line"> [Radium Bricks Slab](..\slabs\brick-slabs\radium-brick-slab.md)
 
 Outputs:
 

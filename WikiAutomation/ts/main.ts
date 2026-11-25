@@ -8,16 +8,16 @@ import { GetDisplayNameByIdentifier, GetImageLink } from "./common.ts";
 import { MakeIdentifierSection } from "./pageMaking/commonComponents.ts";
 import { MakeRarity, MakeStackSize } from "./pageMaking/itemComponents.ts";
 import {
-	MakeDestroySpeed,
-	MakeMapColor,
-	MakeNoteSound,
+  MakeDestroySpeed,
+  MakeMapColor,
+  MakeNoteSound,
 } from "./pageMaking/blockComponents.ts";
 import { MakeObtainingSection } from "./pageMaking/obtainingFunctions.ts";
 import {
-	AddBlocksToIndex,
-	AddItemsToIndex,
-	AddRecipesToIndex,
-	AddWikiPageToIndex,
+  AddBlocksToIndex,
+  AddItemsToIndex,
+  AddRecipesToIndex,
+  AddWikiPageToIndex,
 } from "./index/indexFunctions.ts";
 
 AddBlocksToIndex(index as IndexFile);
@@ -40,47 +40,47 @@ COMPONENTS
 */
 
 for (let data of index.index) {
-	const item = data as unknown as IndexItem;
-	if (!item.wiki_page) {
-		console.warn(item.identifier);
-		continue;
-	}
-	//if (item.run == false) continue;
-	const FILE_LOCATION = `${item.wiki_page}`;
-	let file = ``;
+  const item = data as unknown as IndexItem;
+  if (!item.wiki_page) {
+    console.warn(item.identifier);
+    continue;
+  }
+  //if (item.run == false) continue;
+  const FILE_LOCATION = `${item.wiki_page}`;
+  let file = ``;
 
-	//Make Page Description:
-	file = `${file}---\ndescription: Last updated to match v${VERSION}\n---\n`;
+  //Make Page Description:
+  file = `${file}---\ndescription: Last updated to match v${VERSION}\n---\n`;
 
-	//Make Title:
-	file = `${file}\n# ${GetDisplayNameByIdentifier(item.identifier)}\n`;
+  //Make Title:
+  file = `${file}\n# ${GetDisplayNameByIdentifier(item.identifier)}\n`;
 
-	//Make main image:
-	file = `${file}\n<figure><img src="${GetImageLink(item.identifier)}" alt=""><figcaption></figcaption></figure>\n`;
+  //Make main image:
+  file = `${file}\n<figure><img src="${GetImageLink(item.identifier)}" alt=""><figcaption></figcaption></figure>\n`;
 
-	//Make Identifier:
-	file = MakeIdentifierSection(file, item);
+  //Make Identifier:
+  file = MakeIdentifierSection(file, item);
 
-	//Make Rarity:
-	file = MakeRarity(file, item);
+  //Make Rarity:
+  file = MakeRarity(file, item);
 
-	//Make Stack Size:
-	file = MakeStackSize(file, item);
+  //Make Stack Size:
+  file = MakeStackSize(file, item);
 
-	// Make Note Sound:
-	file = MakeNoteSound(file, item);
+  // Make Note Sound:
+  file = MakeNoteSound(file, item);
 
-	//Make Map Color:
-	file = MakeMapColor(file, item);
+  //Make Map Color:
+  file = MakeMapColor(file, item);
 
-	//Make Break Info:
-	file = MakeDestroySpeed(file, item);
+  //Make Break Info:
+  file = MakeDestroySpeed(file, item);
 
-	//Make Obtaining:
-	file = MakeObtainingSection(file, item as IndexItem);
+  //Make Obtaining:
+  file = MakeObtainingSection(file, item as IndexItem);
 
-	//Add automated disclaimer:
-	file = `${file}\nThis page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool\n`;
-	//Write File:
-	writeFileSync(FILE_LOCATION, file, { encoding: "utf8" });
+  //Add automated disclaimer:
+  file = `${file}\nThis page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool\n`;
+  //Write File:
+  writeFileSync(FILE_LOCATION, file, { encoding: "utf8" });
 }

@@ -55,10 +55,12 @@ Recipe can be unlocked with:
 
 |||
 | :-: | :-: |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
+| ![](undefined) | ![](undefined) |
 
 
 Items:
+
+* 2x <img src="undefined" alt="" data-size="line"> [Raw Galaxy Slab](..\slabs\raw-ore-slabs\raw-galaxy-slab.md)
 
 Outputs:
 
@@ -66,7 +68,7 @@ Outputs:
 
 Recipe can be unlocked with:
 
-* <img src="undefined" alt="" data-size="line"> Raw Galaxy Slab
+* <img src="undefined" alt="" data-size="line"> [Raw Galaxy Slab](..\slabs\raw-ore-slabs\raw-galaxy-slab.md)
 
 {% endtab %}
 

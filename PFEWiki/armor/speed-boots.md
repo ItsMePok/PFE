@@ -22,9 +22,9 @@ description: Last updated to match v1.3.06
 
 ||||
 | :-: | :-: | :-: |
-| ![](https://minecraft.wiki/images/Feather_JE3_BE2.png?b869b) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://minecraft.wiki/images/Feather_JE3_BE2.png?b869b) |
-| ![](https://minecraft.wiki/images/Block_of_Diamond_JE5_BE3.png?542ee) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://minecraft.wiki/images/Block_of_Diamond_JE5_BE3.png?542ee) |
-| ![](https://minecraft.wiki/images/Block_of_Diamond_JE5_BE3.png?542ee) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://minecraft.wiki/images/Block_of_Diamond_JE5_BE3.png?542ee) |
+| ![](https://minecraft.wiki/images/Feather_JE3_BE2.png?b869b) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](https://minecraft.wiki/images/Feather_JE3_BE2.png?b869b) |
+| ![](https://minecraft.wiki/images/Block_of_Diamond_JE5_BE3.png?542ee) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](https://minecraft.wiki/images/Block_of_Diamond_JE5_BE3.png?542ee) |
+| ![](https://minecraft.wiki/images/Block_of_Diamond_JE5_BE3.png?542ee) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](https://minecraft.wiki/images/Block_of_Diamond_JE5_BE3.png?542ee) |
 
 Items:
 

@@ -23,8 +23,8 @@ description: Last updated to match v1.3.06
 ||||
 | :-: | :-: | :-: |
 | ![](https://minecraft.wiki/images/Block_of_Redstone_JE2_BE2.png?bb6e3) | ![](https://minecraft.wiki/images/Block_of_Redstone_JE2_BE2.png?bb6e3) | ![](https://minecraft.wiki/images/Block_of_Redstone_JE2_BE2.png?bb6e3) |
-| ![](https://minecraft.wiki/images/Block_of_Redstone_JE2_BE2.png?bb6e3) | ![](https://minecraft.wiki/images/Stick_JE1_BE1.png?1fc15) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://minecraft.wiki/images/Redstone_Dust_JE2_BE2.png?8cf17) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
+| ![](https://minecraft.wiki/images/Block_of_Redstone_JE2_BE2.png?bb6e3) | ![](https://minecraft.wiki/images/Stick_JE1_BE1.png?1fc15) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](https://minecraft.wiki/images/Redstone_Dust_JE2_BE2.png?8cf17) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
 
 Items:
 
