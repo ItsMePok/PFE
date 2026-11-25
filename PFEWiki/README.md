@@ -8,6 +8,10 @@ description: 'Last updated to match: v1.3.05'
 This wiki is still a work in progress; some pages are unfinished.
 {% endhint %}
 
+{% hint style="danger" %}
+I am currently in the process of automating some of the wiki's pages. Some pages may have missing or improperly formatted information over the next few weeks
+{% endhint %}
+
 ***
 
 ## Current Minecraft Requirements:
