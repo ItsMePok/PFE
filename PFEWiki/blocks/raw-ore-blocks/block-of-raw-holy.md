@@ -41,7 +41,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawHoly.png?raw=true" alt="" data-size="line"> [Block of Raw Holy](block-of-raw-holy.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawHoly.png?raw=true" alt="" data-size="line"> [Block of Raw Holy](block-of-raw-holy.md)
 
 Recipe can be unlocked with:
 
@@ -64,7 +64,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawHoly.png?raw=true" alt="" data-size="line"> [Block of Raw Holy](block-of-raw-holy.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawHoly.png?raw=true" alt="" data-size="line"> [Block of Raw Holy](block-of-raw-holy.md)
 
 Recipe can be unlocked with:
 

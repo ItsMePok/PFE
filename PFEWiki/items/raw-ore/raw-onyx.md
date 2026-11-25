@@ -31,7 +31,7 @@ Items:
 
 Outputs:
 
-* 9x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_onyx.png?raw=true" alt="" data-size="line"> [Raw Onyx](raw-onyx.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_onyx.png?raw=true" alt="" data-size="line"> [Raw Onyx](raw-onyx.md)
 
 Recipe can be unlocked with:
 

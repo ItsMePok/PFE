@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* 6x <img src="undefined" alt="" data-size="line"> [Holy Bricks Slab](holy-brick-slab.md)
+*  <img src="undefined" alt="" data-size="line"> [Holy Bricks Slab](holy-brick-slab.md)
 
 Recipe can be unlocked with:
 

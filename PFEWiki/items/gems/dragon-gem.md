@@ -36,7 +36,7 @@ Items:
 
 Outputs:
 
-*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/dragon_gem.png?raw=true" alt="" data-size="line"> [Dragon Gem](dragon-gem.md)
+* 1x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/dragon_gem.png?raw=true" alt="" data-size="line"> [Dragon Gem](dragon-gem.md)
 
 Recipe can be unlocked with:
 

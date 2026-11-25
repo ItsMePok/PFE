@@ -36,7 +36,7 @@ Items:
 
 Outputs:
 
-* 2x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/electric_component.png?raw=true" alt="" data-size="line"> [Electric Component](electric-component.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/electric_component.png?raw=true" alt="" data-size="line"> [Electric Component](electric-component.md)
 
 Recipe can be unlocked with:
 

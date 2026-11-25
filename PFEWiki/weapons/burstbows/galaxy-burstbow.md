@@ -34,7 +34,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/galaxy_burstbow.png?raw=true" alt="" data-size="line"> [Galaxy Burstbow](galaxy-burstbow.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/galaxy_burstbow.png?raw=true" alt="" data-size="line"> [Galaxy Burstbow](galaxy-burstbow.md)
 
 Recipe can be unlocked with:
 

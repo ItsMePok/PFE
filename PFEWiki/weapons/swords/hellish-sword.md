@@ -38,7 +38,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/hellish_sword.png?raw=true" alt="" data-size="line"> [Hellish Sword](hellish-sword.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/hellish_sword.png?raw=true" alt="" data-size="line"> [Hellish Sword](hellish-sword.md)
 
 Recipe can be unlocked with:
 

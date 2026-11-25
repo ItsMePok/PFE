@@ -31,7 +31,7 @@ Items:
 
 Outputs:
 
-* 9x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_holy.png?raw=true" alt="" data-size="line"> [Raw Holy](raw-holy.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_holy.png?raw=true" alt="" data-size="line"> [Raw Holy](raw-holy.md)
 
 Recipe can be unlocked with:
 

@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* 12x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutShade.png?raw=true" alt="" data-size="line"> [Cut Shade](cut-shade.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutShade.png?raw=true" alt="" data-size="line"> [Cut Shade](cut-shade.md)
 
 Recipe can be unlocked with:
 
@@ -63,7 +63,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutShade.png?raw=true" alt="" data-size="line"> [Cut Shade](cut-shade.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutShade.png?raw=true" alt="" data-size="line"> [Cut Shade](cut-shade.md)
 
 Recipe can be unlocked with:
 

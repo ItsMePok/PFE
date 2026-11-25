@@ -41,7 +41,7 @@ Items:
 
 Outputs:
 
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutDemonicStairs.png?raw=true" alt="" data-size="line"> [Cut Demonic Stairs](cut-demonic-stairs.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutDemonicStairs.png?raw=true" alt="" data-size="line"> [Cut Demonic Stairs](cut-demonic-stairs.md)
 
 Recipe can be unlocked with:
 

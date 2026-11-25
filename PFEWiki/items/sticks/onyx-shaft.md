@@ -34,7 +34,7 @@ Items:
 
 Outputs:
 
-* 2x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_stick.png?raw=true" alt="" data-size="line"> [Onyx Stick](onyx-shaft.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_stick.png?raw=true" alt="" data-size="line"> [Onyx Stick](onyx-shaft.md)
 
 Recipe can be unlocked with:
 

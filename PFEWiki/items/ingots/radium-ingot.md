@@ -36,7 +36,7 @@ Items:
 
 Outputs:
 
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/radium_ingot.png?raw=true" alt="" data-size="line"> [Radium Ingot](radium-ingot.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/radium_ingot.png?raw=true" alt="" data-size="line"> [Radium Ingot](radium-ingot.md)
 
 Recipe can be unlocked with:
 
@@ -65,7 +65,7 @@ Items:
 
 Outputs:
 
-* 9x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/radium_ingot.png?raw=true" alt="" data-size="line"> [Radium Ingot](radium-ingot.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/radium_ingot.png?raw=true" alt="" data-size="line"> [Radium Ingot](radium-ingot.md)
 
 Recipe can be unlocked with:
 

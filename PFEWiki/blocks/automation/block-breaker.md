@@ -43,7 +43,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockBreaker.png?raw=true" alt="" data-size="line"> [Block Breaker](block-breaker.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockBreaker.png?raw=true" alt="" data-size="line"> [Block Breaker](block-breaker.md)
 
 Recipe can be unlocked with:
 

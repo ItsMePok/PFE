@@ -36,7 +36,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/iron_upgrader.png?raw=true" alt="" data-size="line"> [Iron Upgrader](iron-upgrader.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/iron_upgrader.png?raw=true" alt="" data-size="line"> [Iron Upgrader](iron-upgrader.md)
 
 Recipe can be unlocked with:
 

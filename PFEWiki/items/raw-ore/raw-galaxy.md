@@ -31,7 +31,7 @@ Items:
 
 Outputs:
 
-* 9x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_galaxy.png?raw=true" alt="" data-size="line"> [Raw Galaxy](raw-galaxy.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_galaxy.png?raw=true" alt="" data-size="line"> [Raw Galaxy](raw-galaxy.md)
 
 Recipe can be unlocked with:
 

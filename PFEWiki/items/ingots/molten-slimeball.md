@@ -31,7 +31,7 @@ Items:
 
 Outputs:
 
-* 9x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/molten_slimeball.png?raw=true" alt="" data-size="line"> [Molten Slimeball](molten-slimeball.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/molten_slimeball.png?raw=true" alt="" data-size="line"> [Molten Slimeball](molten-slimeball.md)
 
 Recipe can be unlocked with:
 

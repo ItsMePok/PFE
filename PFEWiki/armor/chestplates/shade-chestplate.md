@@ -36,7 +36,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_chestplate.png?raw=true" alt="" data-size="line"> [Shade Chestplate](shade-chestplate.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_chestplate.png?raw=true" alt="" data-size="line"> [Shade Chestplate](shade-chestplate.md)
 
 Recipe can be unlocked with:
 

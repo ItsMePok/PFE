@@ -48,7 +48,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_sword.png?raw=true" alt="" data-size="line"> [Nebula Sword](nebula-sword.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_sword.png?raw=true" alt="" data-size="line"> [Nebula Sword](nebula-sword.md)
 
 Recipe can be unlocked with:
 

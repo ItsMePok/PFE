@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* 6x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutNebulaSlab.png?raw=true" alt="" data-size="line"> [Cut Nebula Slab](cut-nebula-slab.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutNebulaSlab.png?raw=true" alt="" data-size="line"> [Cut Nebula Slab](cut-nebula-slab.md)
 
 Recipe can be unlocked with:
 

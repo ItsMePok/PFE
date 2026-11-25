@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/NebulaTrapdoor.png?raw=true" alt="" data-size="line"> [Nebula Trapdoor](nebula-trapdoor.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/NebulaTrapdoor.png?raw=true" alt="" data-size="line"> [Nebula Trapdoor](nebula-trapdoor.md)
 
 Recipe can be unlocked with:
 

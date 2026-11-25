@@ -41,7 +41,7 @@ Items:
 
 Outputs:
 
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutGodlyStairs.png?raw=true" alt="" data-size="line"> [Cut Godly Stairs](cut-godly-stairs.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutGodlyStairs.png?raw=true" alt="" data-size="line"> [Cut Godly Stairs](cut-godly-stairs.md)
 
 Recipe can be unlocked with:
 

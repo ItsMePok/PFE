@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* 6x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RawHellishSlab.png?raw=true" alt="" data-size="line"> [Raw Hellish Slab](raw-hellish-slab.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RawHellishSlab.png?raw=true" alt="" data-size="line"> [Raw Hellish Slab](raw-hellish-slab.md)
 
 Recipe can be unlocked with:
 

@@ -36,7 +36,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_gem.png?raw=true" alt="" data-size="line"> [Shade Gem](shade-gem.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_gem.png?raw=true" alt="" data-size="line"> [Shade Gem](shade-gem.md)
 
 Recipe can be unlocked with:
 

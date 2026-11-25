@@ -34,7 +34,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/holy_pickaxe.png?raw=true" alt="" data-size="line"> [Holy Pickaxe](holy-pickaxe.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/holy_pickaxe.png?raw=true" alt="" data-size="line"> [Holy Pickaxe](holy-pickaxe.md)
 
 Recipe can be unlocked with:
 

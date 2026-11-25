@@ -43,7 +43,7 @@ Items:
 
 Outputs:
 
-* 6x <img src="undefined" alt="" data-size="line"> [Cobalt Bulb](cobalt-bulb.md)
+*  <img src="undefined" alt="" data-size="line"> [Cobalt Bulb](cobalt-bulb.md)
 
 Recipe can be unlocked with:
 

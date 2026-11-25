@@ -36,7 +36,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/netherite_haxel.png?raw=true" alt="" data-size="line"> [Netherite Haxel](netherite-haxel.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/netherite_haxel.png?raw=true" alt="" data-size="line"> [Netherite Haxel](netherite-haxel.md)
 
 Recipe can be unlocked with:
 

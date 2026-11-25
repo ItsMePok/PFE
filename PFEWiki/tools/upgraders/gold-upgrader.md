@@ -36,7 +36,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/golden_upgrader.png?raw=true" alt="" data-size="line"> [Gold Upgrader](gold-upgrader.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/golden_upgrader.png?raw=true" alt="" data-size="line"> [Gold Upgrader](gold-upgrader.md)
 
 Recipe can be unlocked with:
 

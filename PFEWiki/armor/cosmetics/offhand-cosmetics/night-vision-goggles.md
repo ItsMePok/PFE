@@ -37,7 +37,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/night_vision_goggles.png?raw=true" alt="" data-size="line"> [Night Vision Goggles](night-vision-goggles.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/night_vision_goggles.png?raw=true" alt="" data-size="line"> [Night Vision Goggles](night-vision-goggles.md)
 
 Recipe can be unlocked with:
 

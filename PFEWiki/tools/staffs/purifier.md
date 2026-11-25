@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/purifier.png?raw=true" alt="" data-size="line"> [Purifier](purifier.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/purifier.png?raw=true" alt="" data-size="line"> [Purifier](purifier.md)
 
 Recipe can be unlocked with:
 

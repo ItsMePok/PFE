@@ -38,7 +38,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_haxel.png?raw=true" alt="" data-size="line"> [Onyx Haxel](onyx-haxel.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_haxel.png?raw=true" alt="" data-size="line"> [Onyx Haxel](onyx-haxel.md)
 
 Recipe can be unlocked with:
 

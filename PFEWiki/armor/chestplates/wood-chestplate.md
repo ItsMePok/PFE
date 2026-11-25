@@ -30,7 +30,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/wood_chestplate.png?raw=true" alt="" data-size="line"> [Wood Chestplate](wood-chestplate.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/wood_chestplate.png?raw=true" alt="" data-size="line"> [Wood Chestplate](wood-chestplate.md)
 
 Recipe can be unlocked with:
 

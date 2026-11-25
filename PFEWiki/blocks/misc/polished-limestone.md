@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/PolishedLimestone.png?raw=true" alt="" data-size="line"> [Polished Limestone](polished-limestone.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/PolishedLimestone.png?raw=true" alt="" data-size="line"> [Polished Limestone](polished-limestone.md)
 
 Recipe can be unlocked with:
 

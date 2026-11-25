@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="undefined" alt="" data-size="line"> [Quantum Teleporter](quantum-teleporter.md)
+*  <img src="undefined" alt="" data-size="line"> [Quantum Teleporter](quantum-teleporter.md)
 
 Recipe can be unlocked with:
 

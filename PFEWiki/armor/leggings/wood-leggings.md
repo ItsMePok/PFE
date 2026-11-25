@@ -30,7 +30,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/wood_leggings.png?raw=true" alt="" data-size="line"> [Wood Leggings](wood-leggings.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/wood_leggings.png?raw=true" alt="" data-size="line"> [Wood Leggings](wood-leggings.md)
 
 Recipe can be unlocked with:
 

@@ -34,7 +34,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/astral_pickaxe.png?raw=true" alt="" data-size="line"> [Astral Pickaxe](astral-pickaxe.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/astral_pickaxe.png?raw=true" alt="" data-size="line"> [Astral Pickaxe](astral-pickaxe.md)
 
 Recipe can be unlocked with:
 

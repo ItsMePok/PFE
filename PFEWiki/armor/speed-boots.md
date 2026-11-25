@@ -34,7 +34,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/swift_boots.png?raw=true" alt="" data-size="line"> [Speed Boots](speed-boots.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/swift_boots.png?raw=true" alt="" data-size="line"> [Speed Boots](speed-boots.md)
 
 Recipe can be unlocked with:
 

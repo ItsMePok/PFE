@@ -31,7 +31,7 @@ Items:
 
 Outputs:
 
-* 9x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="" data-size="line"> [Cobalt Ingot](cobalt-ingot.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="" data-size="line"> [Cobalt Ingot](cobalt-ingot.md)
 
 Recipe can be unlocked with:
 

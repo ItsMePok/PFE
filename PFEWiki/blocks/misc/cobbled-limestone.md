@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobbledLimestone.png?raw=true" alt="" data-size="line"> [Cobbled Limestone](cobbled-limestone.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobbledLimestone.png?raw=true" alt="" data-size="line"> [Cobbled Limestone](cobbled-limestone.md)
 
 Recipe can be unlocked with:
 

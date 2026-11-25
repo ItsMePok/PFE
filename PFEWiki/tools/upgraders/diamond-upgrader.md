@@ -36,7 +36,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/diamond_upgrader.png?raw=true" alt="" data-size="line"> [Diamond Upgrader](diamond-upgrader.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/diamond_upgrader.png?raw=true" alt="" data-size="line"> [Diamond Upgrader](diamond-upgrader.md)
 
 Recipe can be unlocked with:
 

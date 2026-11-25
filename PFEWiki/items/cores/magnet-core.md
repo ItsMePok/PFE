@@ -36,7 +36,7 @@ Items:
 
 Outputs:
 
-*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/magnet_core.png?raw=true" alt="" data-size="line"> [Magnet Core](magnet-core.md)
+* 1x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/magnet_core.png?raw=true" alt="" data-size="line"> [Magnet Core](magnet-core.md)
 
 Recipe can be unlocked with:
 

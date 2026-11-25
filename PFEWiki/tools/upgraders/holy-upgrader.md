@@ -36,7 +36,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/holy_upgrader.png?raw=true" alt="" data-size="line"> [Holy Upgrader](holy-upgrader.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/holy_upgrader.png?raw=true" alt="" data-size="line"> [Holy Upgrader](holy-upgrader.md)
 
 Recipe can be unlocked with:
 

@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* 6x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutRadiumSlab.png?raw=true" alt="" data-size="line"> [Cut Radium Slab](cut-radium-slab.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutRadiumSlab.png?raw=true" alt="" data-size="line"> [Cut Radium Slab](cut-radium-slab.md)
 
 Recipe can be unlocked with:
 

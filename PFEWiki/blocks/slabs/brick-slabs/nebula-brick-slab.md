@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* 6x <img src="undefined" alt="" data-size="line"> [Nebula Bricks Slab](nebula-brick-slab.md)
+*  <img src="undefined" alt="" data-size="line"> [Nebula Bricks Slab](nebula-brick-slab.md)
 
 Recipe can be unlocked with:
 

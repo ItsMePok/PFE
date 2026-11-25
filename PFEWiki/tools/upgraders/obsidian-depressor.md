@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="undefined" alt="" data-size="line"> [Obsidian Depressor](obsidian-depressor.md)
+*  <img src="undefined" alt="" data-size="line"> [Obsidian Depressor](obsidian-depressor.md)
 
 Recipe can be unlocked with:
 

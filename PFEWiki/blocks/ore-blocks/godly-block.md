@@ -41,7 +41,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/GodlyBlock.png?raw=true" alt="" data-size="line"> [Block of Godly](godly-block.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/GodlyBlock.png?raw=true" alt="" data-size="line"> [Block of Godly](godly-block.md)
 
 Recipe can be unlocked with:
 

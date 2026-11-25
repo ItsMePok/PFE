@@ -49,7 +49,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/FlashFreezer.png?raw=true" alt="" data-size="line"> [Flash Freezer](flash-freezer.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/FlashFreezer.png?raw=true" alt="" data-size="line"> [Flash Freezer](flash-freezer.md)
 
 Recipe can be unlocked with:
 

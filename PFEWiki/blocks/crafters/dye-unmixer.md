@@ -51,7 +51,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/DyeUnmixer.png?raw=true" alt="" data-size="line"> [Dye Unmixer](dye-unmixer.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/DyeUnmixer.png?raw=true" alt="" data-size="line"> [Dye Unmixer](dye-unmixer.md)
 
 Recipe can be unlocked with:
 

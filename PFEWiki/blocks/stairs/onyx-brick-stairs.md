@@ -41,7 +41,7 @@ Items:
 
 Outputs:
 
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/OnyxBrickStairs.png?raw=true" alt="" data-size="line"> [Onyx Brick Stairs](onyx-brick-stairs.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/OnyxBrickStairs.png?raw=true" alt="" data-size="line"> [Onyx Brick Stairs](onyx-brick-stairs.md)
 
 Recipe can be unlocked with:
 

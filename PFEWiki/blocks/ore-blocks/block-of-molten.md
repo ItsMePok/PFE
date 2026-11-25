@@ -41,7 +41,7 @@ Items:
 
 Outputs:
 
-*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/MoltenBlock.png?raw=true" alt="" data-size="line"> [Block of Molten](block-of-molten.md)
+* 1x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/MoltenBlock.png?raw=true" alt="" data-size="line"> [Block of Molten](block-of-molten.md)
 
 Recipe can be unlocked with:
 

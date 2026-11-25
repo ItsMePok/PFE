@@ -35,7 +35,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_boots.png?raw=true" alt="" data-size="line"> [Shade Boots](shade-boots.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_boots.png?raw=true" alt="" data-size="line"> [Shade Boots](shade-boots.md)
 
 Recipe can be unlocked with:
 

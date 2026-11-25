@@ -36,7 +36,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/golden_battleaxe.png?raw=true" alt="" data-size="line"> [Golden Battleaxe](golden-battleaxe.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/golden_battleaxe.png?raw=true" alt="" data-size="line"> [Golden Battleaxe](golden-battleaxe.md)
 
 Recipe can be unlocked with:
 

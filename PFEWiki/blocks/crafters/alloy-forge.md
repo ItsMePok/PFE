@@ -45,7 +45,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/AlloyForge.png?raw=true" alt="" data-size="line"> [Alloy Forge](alloy-forge.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/AlloyForge.png?raw=true" alt="" data-size="line"> [Alloy Forge](alloy-forge.md)
 
 Recipe can be unlocked with:
 

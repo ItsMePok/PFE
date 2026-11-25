@@ -41,7 +41,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/OnyxBlock.png?raw=true" alt="" data-size="line"> [Block of Onyx](block-of-onyx.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/OnyxBlock.png?raw=true" alt="" data-size="line"> [Block of Onyx](block-of-onyx.md)
 
 Recipe can be unlocked with:
 

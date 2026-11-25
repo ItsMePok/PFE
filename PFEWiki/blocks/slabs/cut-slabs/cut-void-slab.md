@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* 6x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutVoidSlab.png?raw=true" alt="" data-size="line"> [Cut Void Slab](cut-void-slab.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutVoidSlab.png?raw=true" alt="" data-size="line"> [Cut Void Slab](cut-void-slab.md)
 
 Recipe can be unlocked with:
 

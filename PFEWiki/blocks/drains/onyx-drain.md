@@ -41,7 +41,7 @@ Items:
 
 Outputs:
 
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/OnyxDrain.png?raw=true" alt="" data-size="line"> [Onyx Drain](onyx-drain.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/OnyxDrain.png?raw=true" alt="" data-size="line"> [Onyx Drain](onyx-drain.md)
 
 Recipe can be unlocked with:
 

@@ -43,7 +43,7 @@ Items:
 
 Outputs:
 
-* 8x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobaltGlass.png?raw=true" alt="" data-size="line"> [Cobalt Glass](cobalt-glass.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobaltGlass.png?raw=true" alt="" data-size="line"> [Cobalt Glass](cobalt-glass.md)
 
 Recipe can be unlocked with:
 

@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* 6x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/MoltenBrickWall.png?raw=true" alt="" data-size="line"> [Molten Brick Wall](molten-brick-wall.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/MoltenBrickWall.png?raw=true" alt="" data-size="line"> [Molten Brick Wall](molten-brick-wall.md)
 
 Recipe can be unlocked with:
 

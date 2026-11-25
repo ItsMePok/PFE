@@ -41,7 +41,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/NebulaBlock.png?raw=true" alt="" data-size="line"> [Block of Nebula](block-of-nebula.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/NebulaBlock.png?raw=true" alt="" data-size="line"> [Block of Nebula](block-of-nebula.md)
 
 Recipe can be unlocked with:
 

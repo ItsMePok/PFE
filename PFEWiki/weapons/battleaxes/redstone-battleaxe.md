@@ -34,7 +34,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="undefined" alt="" data-size="line"> [Redstone Battleaxe](redstone-battleaxe.md)
+*  <img src="undefined" alt="" data-size="line"> [Redstone Battleaxe](redstone-battleaxe.md)
 
 Recipe can be unlocked with:
 

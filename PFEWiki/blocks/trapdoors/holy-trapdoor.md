@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HolyTrapdoor.png?raw=true" alt="" data-size="line"> [Holy Trapdoor](holy-trapdoor.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HolyTrapdoor.png?raw=true" alt="" data-size="line"> [Holy Trapdoor](holy-trapdoor.md)
 
 Recipe can be unlocked with:
 

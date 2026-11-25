@@ -41,7 +41,7 @@ Items:
 
 Outputs:
 
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RawHolyStairs.png?raw=true" alt="" data-size="line"> [Raw Holy Stairs](raw-holy-stairs.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RawHolyStairs.png?raw=true" alt="" data-size="line"> [Raw Holy Stairs](raw-holy-stairs.md)
 
 Recipe can be unlocked with:
 

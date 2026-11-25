@@ -36,7 +36,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_upgrader.png?raw=true" alt="" data-size="line"> [Cobalt Upgrader](cobalt-upgrader.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_upgrader.png?raw=true" alt="" data-size="line"> [Cobalt Upgrader](cobalt-upgrader.md)
 
 Recipe can be unlocked with:
 

@@ -38,7 +38,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/amethyst_upgrader.png?raw=true" alt="" data-size="line"> [Amethyst Upgrader](amethyst-upgrader.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/amethyst_upgrader.png?raw=true" alt="" data-size="line"> [Amethyst Upgrader](amethyst-upgrader.md)
 
 Recipe can be unlocked with:
 

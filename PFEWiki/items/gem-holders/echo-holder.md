@@ -34,7 +34,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/echo_holder.png?raw=true" alt="" data-size="line"> [Echo Holder](echo-holder.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/echo_holder.png?raw=true" alt="" data-size="line"> [Echo Holder](echo-holder.md)
 
 Recipe can be unlocked with:
 

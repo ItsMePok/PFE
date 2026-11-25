@@ -32,7 +32,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/obsidian_gem_holder.png?raw=true" alt="" data-size="line"> [Obsidian Gem Holder](obsidian-gem-holder.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/obsidian_gem_holder.png?raw=true" alt="" data-size="line"> [Obsidian Gem Holder](obsidian-gem-holder.md)
 
 Recipe can be unlocked with:
 

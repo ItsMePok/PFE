@@ -36,7 +36,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/iron_haxel.png?raw=true" alt="" data-size="line"> [Iron Haxel](iron-haxel.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/iron_haxel.png?raw=true" alt="" data-size="line"> [Iron Haxel](iron-haxel.md)
 
 Recipe can be unlocked with:
 

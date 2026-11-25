@@ -32,7 +32,7 @@ Items:
 
 Outputs:
 
-*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_stick.png?raw=true" alt="" data-size="line"> [Demonic Stick](demonic_stick.md)
+* 1x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_stick.png?raw=true" alt="" data-size="line"> [Demonic Stick](demonic_stick.md)
 
 Recipe can be unlocked with:
 

@@ -36,7 +36,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_haxel.png?raw=true" alt="" data-size="line"> [Shade Haxel](shade-haxel.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_haxel.png?raw=true" alt="" data-size="line"> [Shade Haxel](shade-haxel.md)
 
 Recipe can be unlocked with:
 

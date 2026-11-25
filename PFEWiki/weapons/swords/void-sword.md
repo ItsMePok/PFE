@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_sword.png?raw=true" alt="" data-size="line"> [Void Sword](void-sword.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_sword.png?raw=true" alt="" data-size="line"> [Void Sword](void-sword.md)
 
 Recipe can be unlocked with:
 

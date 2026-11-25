@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* 6x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutOnyxSlab.png?raw=true" alt="" data-size="line"> [Cut Onyx Slab](cut-onyx-slab.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutOnyxSlab.png?raw=true" alt="" data-size="line"> [Cut Onyx Slab](cut-onyx-slab.md)
 
 Recipe can be unlocked with:
 

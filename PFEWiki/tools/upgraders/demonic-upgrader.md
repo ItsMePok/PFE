@@ -36,7 +36,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_upgrader.png?raw=true" alt="" data-size="line"> [Demonic Upgrader](demonic-upgrader.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_upgrader.png?raw=true" alt="" data-size="line"> [Demonic Upgrader](demonic-upgrader.md)
 
 Recipe can be unlocked with:
 

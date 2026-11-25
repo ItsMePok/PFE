@@ -41,7 +41,7 @@ Items:
 
 Outputs:
 
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutDeathStairs.png?raw=true" alt="" data-size="line"> [Cut Death Stairs](cut-death-stairs.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutDeathStairs.png?raw=true" alt="" data-size="line"> [Cut Death Stairs](cut-death-stairs.md)
 
 Recipe can be unlocked with:
 

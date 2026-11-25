@@ -36,7 +36,7 @@ Items:
 
 Outputs:
 
-*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/antenna.png?raw=true" alt="" data-size="line"> [Antenna](antenna.md)
+* 1x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/antenna.png?raw=true" alt="" data-size="line"> [Antenna](antenna.md)
 
 Recipe can be unlocked with:
 

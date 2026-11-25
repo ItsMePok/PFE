@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HoneyTiles.png?raw=true" alt="" data-size="line"> [Honey Tiles](honey-tiles.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HoneyTiles.png?raw=true" alt="" data-size="line"> [Honey Tiles](honey-tiles.md)
 
 Recipe can be unlocked with:
 
@@ -79,7 +79,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HoneyTiles.png?raw=true" alt="" data-size="line"> [Honey Tiles](honey-tiles.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HoneyTiles.png?raw=true" alt="" data-size="line"> [Honey Tiles](honey-tiles.md)
 
 Recipe can be unlocked with:
 

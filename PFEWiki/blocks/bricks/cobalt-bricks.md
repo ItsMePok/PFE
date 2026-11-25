@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* 4x <img src="undefined" alt="" data-size="line"> [Cobalt Bricks](cobalt-bricks.md)
+*  <img src="undefined" alt="" data-size="line"> [Cobalt Bricks](cobalt-bricks.md)
 
 Recipe can be unlocked with:
 
@@ -67,7 +67,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="undefined" alt="" data-size="line"> [Cobalt Bricks](cobalt-bricks.md)
+*  <img src="undefined" alt="" data-size="line"> [Cobalt Bricks](cobalt-bricks.md)
 
 Recipe can be unlocked with:
 

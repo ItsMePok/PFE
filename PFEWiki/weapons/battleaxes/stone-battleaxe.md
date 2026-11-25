@@ -36,7 +36,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="undefined" alt="" data-size="line"> [Stone Battleaxe](stone-battleaxe.md)
+*  <img src="undefined" alt="" data-size="line"> [Stone Battleaxe](stone-battleaxe.md)
 
 Recipe can be unlocked with:
 

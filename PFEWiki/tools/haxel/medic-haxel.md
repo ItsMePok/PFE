@@ -36,7 +36,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/medic_haxel.png?raw=true" alt="" data-size="line"> [Medic Haxel](medic-haxel.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/medic_haxel.png?raw=true" alt="" data-size="line"> [Medic Haxel](medic-haxel.md)
 
 Recipe can be unlocked with:
 

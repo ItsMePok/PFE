@@ -41,7 +41,7 @@ Items:
 
 Outputs:
 
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RadiumDrain.png?raw=true" alt="" data-size="line"> [Radium Drain](radium-drain.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RadiumDrain.png?raw=true" alt="" data-size="line"> [Radium Drain](radium-drain.md)
 
 Recipe can be unlocked with:
 

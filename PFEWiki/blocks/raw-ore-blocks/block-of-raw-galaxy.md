@@ -41,7 +41,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawGalaxy.png?raw=true" alt="" data-size="line"> [Block of Raw Galaxy](block-of-raw-galaxy.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawGalaxy.png?raw=true" alt="" data-size="line"> [Block of Raw Galaxy](block-of-raw-galaxy.md)
 
 Recipe can be unlocked with:
 
@@ -64,7 +64,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawGalaxy.png?raw=true" alt="" data-size="line"> [Block of Raw Galaxy](block-of-raw-galaxy.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawGalaxy.png?raw=true" alt="" data-size="line"> [Block of Raw Galaxy](block-of-raw-galaxy.md)
 
 Recipe can be unlocked with:
 

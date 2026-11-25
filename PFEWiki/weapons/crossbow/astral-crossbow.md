@@ -38,7 +38,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/astral_crossbow.png?raw=true" alt="" data-size="line"> [Astral Crossbow](astral-crossbow.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/astral_crossbow.png?raw=true" alt="" data-size="line"> [Astral Crossbow](astral-crossbow.md)
 
 Recipe can be unlocked with:
 

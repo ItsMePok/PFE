@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/rocket_replenisher.png?raw=true" alt="" data-size="line"> [Rocket Replenisher](rocket-replenisher.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/rocket_replenisher.png?raw=true" alt="" data-size="line"> [Rocket Replenisher](rocket-replenisher.md)
 
 Recipe can be unlocked with:
 

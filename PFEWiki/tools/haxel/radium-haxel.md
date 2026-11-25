@@ -36,7 +36,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/radium_haxel.png?raw=true" alt="" data-size="line"> [Radium Haxel](radium-haxel.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/radium_haxel.png?raw=true" alt="" data-size="line"> [Radium Haxel](radium-haxel.md)
 
 Recipe can be unlocked with:
 

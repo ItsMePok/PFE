@@ -32,7 +32,7 @@ Items:
 
 Outputs:
 
-*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/diamond_gem_holder.png?raw=true" alt="" data-size="line"> [Diamond Gem Holder](diamond-gem-holder.md)
+* 1x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/diamond_gem_holder.png?raw=true" alt="" data-size="line"> [Diamond Gem Holder](diamond-gem-holder.md)
 
 Recipe can be unlocked with:
 

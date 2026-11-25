@@ -33,7 +33,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_soup.png?raw=true" alt="" data-size="line"> [Cobalt Soup](cobalt-soup.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_soup.png?raw=true" alt="" data-size="line"> [Cobalt Soup](cobalt-soup.md)
 
 Recipe can be unlocked with:
 

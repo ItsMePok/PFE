@@ -31,7 +31,7 @@ Items:
 
 Outputs:
 
-* 9x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/astral_ingot.png?raw=true" alt="" data-size="line"> [Astral Ingot](astral-ingot.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/astral_ingot.png?raw=true" alt="" data-size="line"> [Astral Ingot](astral-ingot.md)
 
 Recipe can be unlocked with:
 

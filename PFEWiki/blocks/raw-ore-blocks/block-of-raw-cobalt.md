@@ -41,7 +41,7 @@ Items:
 
 Outputs:
 
-*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawCobalt.png?raw=true" alt="" data-size="line"> [Block of Raw Cobalt](block-of-raw-cobalt.md)
+* 1x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawCobalt.png?raw=true" alt="" data-size="line"> [Block of Raw Cobalt](block-of-raw-cobalt.md)
 
 Recipe can be unlocked with:
 
@@ -64,7 +64,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawCobalt.png?raw=true" alt="" data-size="line"> [Block of Raw Cobalt](block-of-raw-cobalt.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawCobalt.png?raw=true" alt="" data-size="line"> [Block of Raw Cobalt](block-of-raw-cobalt.md)
 
 Recipe can be unlocked with:
 

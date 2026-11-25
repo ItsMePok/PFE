@@ -38,7 +38,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="undefined" alt="" data-size="line"> [Molten Battleaxe](molten-battleaxe.md)
+*  <img src="undefined" alt="" data-size="line"> [Molten Battleaxe](molten-battleaxe.md)
 
 Recipe can be unlocked with:
 

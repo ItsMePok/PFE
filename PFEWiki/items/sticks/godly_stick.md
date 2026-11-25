@@ -32,7 +32,7 @@ Items:
 
 Outputs:
 
-*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_stick.png?raw=true" alt="" data-size="line"> [Godly Stick](godly_stick.md)
+* 1x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_stick.png?raw=true" alt="" data-size="line"> [Godly Stick](godly_stick.md)
 
 Recipe can be unlocked with:
 

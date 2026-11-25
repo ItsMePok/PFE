@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/death_sword.png?raw=true" alt="" data-size="line"> [Death Sword](death-sword.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/death_sword.png?raw=true" alt="" data-size="line"> [Death Sword](death-sword.md)
 
 Recipe can be unlocked with:
 

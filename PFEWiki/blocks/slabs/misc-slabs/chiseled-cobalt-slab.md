@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* 6x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/ChiseledCobaltSlab.png?raw=true" alt="" data-size="line"> [Chiseled Cobalt Slab](chiseled-cobalt-slab.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/ChiseledCobaltSlab.png?raw=true" alt="" data-size="line"> [Chiseled Cobalt Slab](chiseled-cobalt-slab.md)
 
 Recipe can be unlocked with:
 

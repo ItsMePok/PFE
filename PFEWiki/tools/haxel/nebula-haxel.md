@@ -42,7 +42,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_haxel.png?raw=true" alt="" data-size="line"> [Nebula Haxel](nebula-haxel.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_haxel.png?raw=true" alt="" data-size="line"> [Nebula Haxel](nebula-haxel.md)
 
 Recipe can be unlocked with:
 

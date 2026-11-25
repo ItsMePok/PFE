@@ -41,7 +41,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/EmptyMug.png?raw=true" alt="" data-size="line"> [Empty Mug](empty-mug.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/EmptyMug.png?raw=true" alt="" data-size="line"> [Empty Mug](empty-mug.md)
 
 Recipe can be unlocked with:
 

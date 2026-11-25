@@ -31,7 +31,7 @@ Items:
 
 Outputs:
 
-* 9x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_shade.png?raw=true" alt="" data-size="line"> [Raw Shade](raw-shade.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_shade.png?raw=true" alt="" data-size="line"> [Raw Shade](raw-shade.md)
 
 Recipe can be unlocked with:
 

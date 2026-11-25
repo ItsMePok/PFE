@@ -38,7 +38,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_sword.png?raw=true" alt="" data-size="line"> [Shade Sword](shade-sword.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_sword.png?raw=true" alt="" data-size="line"> [Shade Sword](shade-sword.md)
 
 Recipe can be unlocked with:
 

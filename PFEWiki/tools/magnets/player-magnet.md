@@ -38,7 +38,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/player_magnet.png?raw=true" alt="" data-size="line"> [Player Magnet](player-magnet.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/player_magnet.png?raw=true" alt="" data-size="line"> [Player Magnet](player-magnet.md)
 
 Recipe can be unlocked with:
 

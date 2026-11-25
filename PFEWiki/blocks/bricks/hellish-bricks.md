@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HellishBricks.png?raw=true" alt="" data-size="line"> [Hellish Bricks](hellish-bricks.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HellishBricks.png?raw=true" alt="" data-size="line"> [Hellish Bricks](hellish-bricks.md)
 
 Recipe can be unlocked with:
 
@@ -67,7 +67,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HellishBricks.png?raw=true" alt="" data-size="line"> [Hellish Bricks](hellish-bricks.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HellishBricks.png?raw=true" alt="" data-size="line"> [Hellish Bricks](hellish-bricks.md)
 
 Recipe can be unlocked with:
 

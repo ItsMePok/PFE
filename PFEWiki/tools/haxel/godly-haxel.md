@@ -36,7 +36,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_haxel.png?raw=true" alt="" data-size="line"> [Godly Haxel](godly-haxel.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_haxel.png?raw=true" alt="" data-size="line"> [Godly Haxel](godly-haxel.md)
 
 Recipe can be unlocked with:
 

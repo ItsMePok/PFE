@@ -34,7 +34,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_pickaxe.png?raw=true" alt="" data-size="line"> [Void Pickaxe](void-pickaxe.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_pickaxe.png?raw=true" alt="" data-size="line"> [Void Pickaxe](void-pickaxe.md)
 
 Recipe can be unlocked with:
 

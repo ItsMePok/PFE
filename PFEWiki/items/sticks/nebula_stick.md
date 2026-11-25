@@ -32,7 +32,7 @@ Items:
 
 Outputs:
 
-*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_stick.png?raw=true" alt="" data-size="line"> [Nebula Stick](nebula_stick.md)
+* 1x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_stick.png?raw=true" alt="" data-size="line"> [Nebula Stick](nebula_stick.md)
 
 Recipe can be unlocked with:
 

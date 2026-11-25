@@ -31,7 +31,7 @@ Items:
 
 Outputs:
 
-* 9x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_ingot.png?raw=true" alt="" data-size="line"> [Onyx Ingot](onyx-ingot.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_ingot.png?raw=true" alt="" data-size="line"> [Onyx Ingot](onyx-ingot.md)
 
 Recipe can be unlocked with:
 

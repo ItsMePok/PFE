@@ -42,7 +42,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/astral_claymore.png?raw=true" alt="" data-size="line"> [Astral Claymore](astral-claymore.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/astral_claymore.png?raw=true" alt="" data-size="line"> [Astral Claymore](astral-claymore.md)
 
 Recipe can be unlocked with:
 

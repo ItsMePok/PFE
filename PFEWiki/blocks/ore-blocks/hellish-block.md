@@ -41,7 +41,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HellishBlock.png?raw=true" alt="" data-size="line"> [Block of Hellish](hellish-block.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HellishBlock.png?raw=true" alt="" data-size="line"> [Block of Hellish](hellish-block.md)
 
 Recipe can be unlocked with:
 

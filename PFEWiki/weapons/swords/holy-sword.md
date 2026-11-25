@@ -38,7 +38,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/holy_sword.png?raw=true" alt="" data-size="line"> [Holy Sword](holy-sword.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/holy_sword.png?raw=true" alt="" data-size="line"> [Holy Sword](holy-sword.md)
 
 Recipe can be unlocked with:
 

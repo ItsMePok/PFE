@@ -39,7 +39,7 @@ Items:
 
 Outputs:
 
-* 9x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true" alt="" data-size="line"> [Demonic Ingot](demonic-ingot.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true" alt="" data-size="line"> [Demonic Ingot](demonic-ingot.md)
 
 Recipe can be unlocked with:
 

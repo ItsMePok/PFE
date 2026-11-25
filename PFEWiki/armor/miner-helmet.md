@@ -38,7 +38,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/miner_helmet.png?raw=true" alt="" data-size="line"> [Miner Helmet](miner-helmet.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/miner_helmet.png?raw=true" alt="" data-size="line"> [Miner Helmet](miner-helmet.md)
 
 Recipe can be unlocked with:
 

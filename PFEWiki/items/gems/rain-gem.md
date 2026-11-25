@@ -36,7 +36,7 @@ Items:
 
 Outputs:
 
-*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/rain_gem.png?raw=true" alt="" data-size="line"> [Rain Gem](rain-gem.md)
+* 1x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/rain_gem.png?raw=true" alt="" data-size="line"> [Rain Gem](rain-gem.md)
 
 Recipe can be unlocked with:
 

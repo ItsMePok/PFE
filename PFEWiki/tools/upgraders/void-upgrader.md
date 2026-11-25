@@ -36,7 +36,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_upgrader.png?raw=true" alt="" data-size="line"> [Void Upgrader](void-upgrader.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_upgrader.png?raw=true" alt="" data-size="line"> [Void Upgrader](void-upgrader.md)
 
 Recipe can be unlocked with:
 

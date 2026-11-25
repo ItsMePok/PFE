@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/VoidTrapdoor.png?raw=true" alt="" data-size="line"> [Void Trapdoor](void-trapdoor.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/VoidTrapdoor.png?raw=true" alt="" data-size="line"> [Void Trapdoor](void-trapdoor.md)
 
 Recipe can be unlocked with:
 

@@ -47,7 +47,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/Dirter.png?raw=true" alt="" data-size="line"> [Dirter](dirter.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/Dirter.png?raw=true" alt="" data-size="line"> [Dirter](dirter.md)
 
 Recipe can be unlocked with:
 

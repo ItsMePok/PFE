@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/armor_stand_unhider.png?raw=true" alt="" data-size="line"> [Armor Stand Un-Hider](armor-stand-un-hider.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/armor_stand_unhider.png?raw=true" alt="" data-size="line"> [Armor Stand Un-Hider](armor-stand-un-hider.md)
 
 Recipe can be unlocked with:
 

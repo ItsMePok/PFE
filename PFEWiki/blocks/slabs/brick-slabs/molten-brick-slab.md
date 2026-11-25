@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* 6x <img src="undefined" alt="" data-size="line"> [Molten Bricks Slab](molten-brick-slab.md)
+*  <img src="undefined" alt="" data-size="line"> [Molten Bricks Slab](molten-brick-slab.md)
 
 Recipe can be unlocked with:
 

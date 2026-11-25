@@ -38,7 +38,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_scythe.png?raw=true" alt="" data-size="line"> [Void Scythe](void-scythe.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_scythe.png?raw=true" alt="" data-size="line"> [Void Scythe](void-scythe.md)
 
 Recipe can be unlocked with:
 

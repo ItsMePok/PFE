@@ -49,7 +49,7 @@ Items:
 
 Outputs:
 
-*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/ChargedCobaltBlock.png?raw=true" alt="" data-size="line"> [Charged Cobalt Block](charged-cobalt-block.md)
+* 1x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/ChargedCobaltBlock.png?raw=true" alt="" data-size="line"> [Charged Cobalt Block](charged-cobalt-block.md)
 
 Recipe can be unlocked with:
 

@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* 6x <img src="undefined" alt="" data-size="line"> [Cracked Cobalt Bricks Slab](cracked-cobalt-brick-slab.md)
+*  <img src="undefined" alt="" data-size="line"> [Cracked Cobalt Bricks Slab](cracked-cobalt-brick-slab.md)
 
 Recipe can be unlocked with:
 

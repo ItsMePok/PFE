@@ -41,7 +41,7 @@ Items:
 
 Outputs:
 
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HoneyBrickStairs.png?raw=true" alt="" data-size="line"> [Honey Brick Stairs](honey-brick-stairs.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HoneyBrickStairs.png?raw=true" alt="" data-size="line"> [Honey Brick Stairs](honey-brick-stairs.md)
 
 Recipe can be unlocked with:
 

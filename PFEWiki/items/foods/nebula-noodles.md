@@ -33,7 +33,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_noodles.png?raw=true" alt="" data-size="line"> [Nebula Noodles](nebula-noodles.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_noodles.png?raw=true" alt="" data-size="line"> [Nebula Noodles](nebula-noodles.md)
 
 Recipe can be unlocked with:
 

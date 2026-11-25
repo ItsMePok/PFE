@@ -38,7 +38,7 @@ Items:
 
 Outputs:
 
-*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/gps_module.png?raw=true" alt="" data-size="line"> [GPS Module](gps-module.md)
+* 1x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/gps_module.png?raw=true" alt="" data-size="line"> [GPS Module](gps-module.md)
 
 Recipe can be unlocked with:
 

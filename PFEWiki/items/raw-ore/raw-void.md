@@ -31,7 +31,7 @@ Items:
 
 Outputs:
 
-* 9x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_void.png?raw=true" alt="" data-size="line"> [Raw Void](raw-void.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_void.png?raw=true" alt="" data-size="line"> [Raw Void](raw-void.md)
 
 Recipe can be unlocked with:
 

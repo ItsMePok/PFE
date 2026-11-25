@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/panic_button.png?raw=true" alt="" data-size="line"> [Panic Button](panic-button.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/panic_button.png?raw=true" alt="" data-size="line"> [Panic Button](panic-button.md)
 
 Recipe can be unlocked with:
 

@@ -41,7 +41,7 @@ Items:
 
 Outputs:
 
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutRadiumStairs.png?raw=true" alt="" data-size="line"> [Cut Radium Stairs](cut-radium-stairs.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutRadiumStairs.png?raw=true" alt="" data-size="line"> [Cut Radium Stairs](cut-radium-stairs.md)
 
 Recipe can be unlocked with:
 

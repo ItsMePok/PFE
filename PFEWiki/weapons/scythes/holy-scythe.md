@@ -38,7 +38,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/holy_scythe.png?raw=true" alt="" data-size="line"> [Holy Scythe](holy-scythe.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/holy_scythe.png?raw=true" alt="" data-size="line"> [Holy Scythe](holy-scythe.md)
 
 Recipe can be unlocked with:
 

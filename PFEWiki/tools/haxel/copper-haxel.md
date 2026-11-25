@@ -36,7 +36,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/copper_haxel.png?raw=true" alt="" data-size="line"> [Copper Haxel](copper-haxel.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/copper_haxel.png?raw=true" alt="" data-size="line"> [Copper Haxel](copper-haxel.md)
 
 Recipe can be unlocked with:
 

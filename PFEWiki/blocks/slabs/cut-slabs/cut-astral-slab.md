@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* 6x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutAstralSlab.png?raw=true" alt="" data-size="line"> [Cut Astral Slab](cut-astral-slab.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutAstralSlab.png?raw=true" alt="" data-size="line"> [Cut Astral Slab](cut-astral-slab.md)
 
 Recipe can be unlocked with:
 

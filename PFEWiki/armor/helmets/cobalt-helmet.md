@@ -31,7 +31,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_helmet.png?raw=true" alt="" data-size="line"> [Cobalt Helmet](cobalt-helmet.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_helmet.png?raw=true" alt="" data-size="line"> [Cobalt Helmet](cobalt-helmet.md)
 
 Recipe can be unlocked with:
 

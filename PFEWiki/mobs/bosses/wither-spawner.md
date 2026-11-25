@@ -34,7 +34,7 @@ Items:
 
 Outputs:
 
-*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/wither_spawner.png?raw=true" alt="" data-size="line"> [Wither Spawner](wither-spawner.md)
+* 1x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/wither_spawner.png?raw=true" alt="" data-size="line"> [Wither Spawner](wither-spawner.md)
 
 Recipe can be unlocked with:
 

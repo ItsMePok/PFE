@@ -38,7 +38,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_battleaxe.png?raw=true" alt="" data-size="line"> [Banished Battleaxe](banished-battleaxe.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_battleaxe.png?raw=true" alt="" data-size="line"> [Banished Battleaxe](banished-battleaxe.md)
 
 Recipe can be unlocked with:
 

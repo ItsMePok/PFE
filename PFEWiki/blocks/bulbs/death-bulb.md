@@ -43,7 +43,7 @@ Items:
 
 Outputs:
 
-* 6x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/DeathBulb.png?raw=true" alt="" data-size="line"> [Death Bulb](death-bulb.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/DeathBulb.png?raw=true" alt="" data-size="line"> [Death Bulb](death-bulb.md)
 
 Recipe can be unlocked with:
 

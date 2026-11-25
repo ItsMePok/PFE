@@ -34,7 +34,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="undefined" alt="" data-size="line"> [Ender Holder](ender-holder.md)
+*  <img src="undefined" alt="" data-size="line"> [Ender Holder](ender-holder.md)
 
 Recipe can be unlocked with:
 

@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* 12x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutVoid.png?raw=true" alt="" data-size="line"> [Cut Void](cut-void.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutVoid.png?raw=true" alt="" data-size="line"> [Cut Void](cut-void.md)
 
 Recipe can be unlocked with:
 
@@ -63,7 +63,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutVoid.png?raw=true" alt="" data-size="line"> [Cut Void](cut-void.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutVoid.png?raw=true" alt="" data-size="line"> [Cut Void](cut-void.md)
 
 Recipe can be unlocked with:
 

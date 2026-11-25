@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/MedicBricks.png?raw=true" alt="" data-size="line"> [Medic Bricks](medic-bricks.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/MedicBricks.png?raw=true" alt="" data-size="line"> [Medic Bricks](medic-bricks.md)
 
 Recipe can be unlocked with:
 
@@ -65,7 +65,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/MedicBricks.png?raw=true" alt="" data-size="line"> [Medic Bricks](medic-bricks.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/MedicBricks.png?raw=true" alt="" data-size="line"> [Medic Bricks](medic-bricks.md)
 
 Recipe can be unlocked with:
 

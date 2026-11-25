@@ -49,7 +49,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/Barometer.png?raw=true" alt="" data-size="line"> [Barometer](barometer.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/Barometer.png?raw=true" alt="" data-size="line"> [Barometer](barometer.md)
 
 Recipe can be unlocked with:
 

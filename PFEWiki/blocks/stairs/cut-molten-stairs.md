@@ -41,7 +41,7 @@ Items:
 
 Outputs:
 
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutMoltenStairs.png?raw=true" alt="" data-size="line"> [Cut Molten Stairs](cut-molten-stairs.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutMoltenStairs.png?raw=true" alt="" data-size="line"> [Cut Molten Stairs](cut-molten-stairs.md)
 
 Recipe can be unlocked with:
 

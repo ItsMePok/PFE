@@ -32,7 +32,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/wooden_haxel.png?raw=true" alt="" data-size="line"> [Wooden Haxel](wooden-haxel.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/wooden_haxel.png?raw=true" alt="" data-size="line"> [Wooden Haxel](wooden-haxel.md)
 
 Recipe can be unlocked with:
 
@@ -56,7 +56,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/wooden_haxel.png?raw=true" alt="" data-size="line"> [Wooden Haxel](wooden-haxel.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/wooden_haxel.png?raw=true" alt="" data-size="line"> [Wooden Haxel](wooden-haxel.md)
 
 Recipe can be unlocked with:
 

@@ -41,7 +41,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawVoid.png?raw=true" alt="" data-size="line"> [Block of Raw Void](block-of-raw-void.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawVoid.png?raw=true" alt="" data-size="line"> [Block of Raw Void](block-of-raw-void.md)
 
 Recipe can be unlocked with:
 
@@ -64,7 +64,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawVoid.png?raw=true" alt="" data-size="line"> [Block of Raw Void](block-of-raw-void.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawVoid.png?raw=true" alt="" data-size="line"> [Block of Raw Void](block-of-raw-void.md)
 
 Recipe can be unlocked with:
 

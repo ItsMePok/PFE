@@ -41,7 +41,7 @@ Items:
 
 Outputs:
 
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RawGalaxyStairs.png?raw=true" alt="" data-size="line"> [Raw Galaxy Stairs](raw-galaxy-stairs.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RawGalaxyStairs.png?raw=true" alt="" data-size="line"> [Raw Galaxy Stairs](raw-galaxy-stairs.md)
 
 Recipe can be unlocked with:
 

@@ -41,7 +41,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/AstralBlock.png?raw=true" alt="" data-size="line"> [Block of Astral](block-of-astral.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/AstralBlock.png?raw=true" alt="" data-size="line"> [Block of Astral](block-of-astral.md)
 
 Recipe can be unlocked with:
 

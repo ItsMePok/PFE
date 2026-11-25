@@ -36,7 +36,7 @@ Items:
 
 Outputs:
 
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/medic_ingot.png?raw=true" alt="" data-size="line"> [Medic Ingot](medic-ingot.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/medic_ingot.png?raw=true" alt="" data-size="line"> [Medic Ingot](medic-ingot.md)
 
 Recipe can be unlocked with:
 
@@ -77,7 +77,7 @@ Items:
 
 Outputs:
 
-* 9x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/medic_ingot.png?raw=true" alt="" data-size="line"> [Medic Ingot](medic-ingot.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/medic_ingot.png?raw=true" alt="" data-size="line"> [Medic Ingot](medic-ingot.md)
 
 Recipe can be unlocked with:
 

@@ -46,7 +46,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/SmoothLimestone.png?raw=true" alt="" data-size="line"> [Smooth Limestone](smooth-limestone.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/SmoothLimestone.png?raw=true" alt="" data-size="line"> [Smooth Limestone](smooth-limestone.md)
 
 Recipe can be unlocked with:
 

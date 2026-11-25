@@ -34,7 +34,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/creedite_pickaxe.png?raw=true" alt="" data-size="line"> [Creedite Pickaxe](amethyst-pickaxe.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/creedite_pickaxe.png?raw=true" alt="" data-size="line"> [Creedite Pickaxe](amethyst-pickaxe.md)
 
 Recipe can be unlocked with:
 

@@ -321,7 +321,7 @@ function CreateShapedRecipe(
 
   file = `${file}\nOutputs:\n`;
 
-  file = `${file}\n* ${SHAPED_RECIPE.result.count !== 1 ? `${SHAPED_RECIPE.result.count}x` : ""} <img src="${GetImageLink(SHAPED_RECIPE.result.item)}" alt="" data-size="line"> ${GetWikiPagePath(ITEM.identifier, SHAPED_RECIPE.result.item) !== "" ? "[" + GetDisplayNameByIdentifier(SHAPED_RECIPE.result.item) + "](" + GetWikiPagePath(ITEM.identifier, SHAPED_RECIPE.result.item) + ")" : GetDisplayNameByIdentifier(SHAPED_RECIPE.result.item)}\n`;
+  file = `${file}\n*${!SHAPED_RECIPE.result.count || SHAPED_RECIPE.result.count > 1 ? " " : ` ${SHAPED_RECIPE.result.count}x`} <img src="${GetImageLink(SHAPED_RECIPE.result.item)}" alt="" data-size="line"> ${GetWikiPagePath(ITEM.identifier, SHAPED_RECIPE.result.item) !== "" ? "[" + GetDisplayNameByIdentifier(SHAPED_RECIPE.result.item) + "](" + GetWikiPagePath(ITEM.identifier, SHAPED_RECIPE.result.item) + ")" : GetDisplayNameByIdentifier(SHAPED_RECIPE.result.item)}\n`;
 
   // Make Unlock:
   file = `${file}\nRecipe can be unlocked with:\n`;
@@ -343,7 +343,6 @@ function GetIdentifierFromShapedPattern(
   if (!SHAPED_RECIPE) return;
   let keyVal =
     SHAPED_RECIPE.pattern.at(location.y - 1)?.at(location.x - 1) ?? " ";
-  console.info(keyVal);
   if (
     RECIPE_SIZE.length <
     Number(SHAPED_RECIPE.pattern.at(location.y - 1)?.length ?? 0)
@@ -355,8 +354,6 @@ function GetIdentifierFromShapedPattern(
     return undefined;
   }
   const KEYS = SHAPED_RECIPE.key;
-  console.warn(
-    `${JSON.stringify(KEYS)} \n & ${keyVal} \n & ${KEYS[keyVal].item}`,
-  );
+
   return KEYS[keyVal].item;
 }

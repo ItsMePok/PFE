@@ -38,7 +38,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="undefined" alt="" data-size="line"> [Honey Crossbow](honey-crossbow.md)
+*  <img src="undefined" alt="" data-size="line"> [Honey Crossbow](honey-crossbow.md)
 
 Recipe can be unlocked with:
 

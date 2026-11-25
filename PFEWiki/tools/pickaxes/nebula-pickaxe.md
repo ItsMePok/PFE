@@ -36,7 +36,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_pickaxe.png?raw=true" alt="" data-size="line"> [Nebula Pickaxe](nebula-pickaxe.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_pickaxe.png?raw=true" alt="" data-size="line"> [Nebula Pickaxe](nebula-pickaxe.md)
 
 Recipe can be unlocked with:
 

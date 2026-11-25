@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/DeathTrapdoor.png?raw=true" alt="" data-size="line"> [Death Trapdoor](death-trapdoor.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/DeathTrapdoor.png?raw=true" alt="" data-size="line"> [Death Trapdoor](death-trapdoor.md)
 
 Recipe can be unlocked with:
 

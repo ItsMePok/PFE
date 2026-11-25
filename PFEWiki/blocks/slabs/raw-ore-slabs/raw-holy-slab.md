@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* 6x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RawHolySlab.png?raw=true" alt="" data-size="line"> [Raw Holy Slab](raw-holy-slab.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RawHolySlab.png?raw=true" alt="" data-size="line"> [Raw Holy Slab](raw-holy-slab.md)
 
 Recipe can be unlocked with:
 

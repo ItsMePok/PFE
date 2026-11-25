@@ -34,7 +34,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/stone_haxel.png?raw=true" alt="" data-size="line"> [Stone Haxel](stone-haxel.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/stone_haxel.png?raw=true" alt="" data-size="line"> [Stone Haxel](stone-haxel.md)
 
 Recipe can be unlocked with:
 

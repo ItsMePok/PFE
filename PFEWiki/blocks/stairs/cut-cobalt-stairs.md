@@ -41,7 +41,7 @@ Items:
 
 Outputs:
 
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutCobaltStairs.png?raw=true" alt="" data-size="line"> [Cut Cobalt Stairs](cut-cobalt-stairs.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutCobaltStairs.png?raw=true" alt="" data-size="line"> [Cut Cobalt Stairs](cut-cobalt-stairs.md)
 
 Recipe can be unlocked with:
 

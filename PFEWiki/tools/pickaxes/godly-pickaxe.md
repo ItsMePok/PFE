@@ -34,7 +34,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_pickaxe.png?raw=true" alt="" data-size="line"> [Godly Pickaxe](godly-pickaxe.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_pickaxe.png?raw=true" alt="" data-size="line"> [Godly Pickaxe](godly-pickaxe.md)
 
 Recipe can be unlocked with:
 

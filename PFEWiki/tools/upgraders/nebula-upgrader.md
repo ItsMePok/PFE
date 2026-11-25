@@ -36,7 +36,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_upgrader.png?raw=true" alt="" data-size="line"> [Nebula Upgrader](nebula-upgrader.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_upgrader.png?raw=true" alt="" data-size="line"> [Nebula Upgrader](nebula-upgrader.md)
 
 Recipe can be unlocked with:
 

@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/ShadowstoneBricks.png?raw=true" alt="" data-size="line"> [Shadowstone Bricks](shadowstone-bricks.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/ShadowstoneBricks.png?raw=true" alt="" data-size="line"> [Shadowstone Bricks](shadowstone-bricks.md)
 
 Recipe can be unlocked with:
 

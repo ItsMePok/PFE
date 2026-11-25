@@ -36,7 +36,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/copper_upgrader.png?raw=true" alt="" data-size="line"> [Copper Upgrader](copper-upgrader.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/copper_upgrader.png?raw=true" alt="" data-size="line"> [Copper Upgrader](copper-upgrader.md)
 
 Recipe can be unlocked with:
 

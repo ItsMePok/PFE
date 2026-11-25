@@ -45,7 +45,7 @@ Items:
 
 Outputs:
 
-*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/Fisher.png?raw=true" alt="" data-size="line"> [Fisher](fisher.md)
+* 1x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/Fisher.png?raw=true" alt="" data-size="line"> [Fisher](fisher.md)
 
 Recipe can be unlocked with:
 

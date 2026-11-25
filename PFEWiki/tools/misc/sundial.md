@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/sundial.png?raw=true" alt="" data-size="line"> [Sundial](sundial.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/sundial.png?raw=true" alt="" data-size="line"> [Sundial](sundial.md)
 
 Recipe can be unlocked with:
 

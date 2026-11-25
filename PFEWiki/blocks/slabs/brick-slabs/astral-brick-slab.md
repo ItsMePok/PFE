@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* 6x <img src="undefined" alt="" data-size="line"> [Astral Bricks Slab](astral-brick-slab.md)
+*  <img src="undefined" alt="" data-size="line"> [Astral Bricks Slab](astral-brick-slab.md)
 
 Recipe can be unlocked with:
 

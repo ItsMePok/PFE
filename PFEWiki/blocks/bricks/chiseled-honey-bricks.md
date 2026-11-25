@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/ChiseledHoneyBricks.png?raw=true" alt="" data-size="line"> [Chiseled Honey Bricks](chiseled-honey-bricks.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/ChiseledHoneyBricks.png?raw=true" alt="" data-size="line"> [Chiseled Honey Bricks](chiseled-honey-bricks.md)
 
 Recipe can be unlocked with:
 

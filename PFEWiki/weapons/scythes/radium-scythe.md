@@ -38,7 +38,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="undefined" alt="" data-size="line"> [Radium Scythe](radium-scythe.md)
+*  <img src="undefined" alt="" data-size="line"> [Radium Scythe](radium-scythe.md)
 
 Recipe can be unlocked with:
 

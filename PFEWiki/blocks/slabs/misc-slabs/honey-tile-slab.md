@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* 6x <img src="undefined" alt="" data-size="line"> [Honey Tiles Slab](honey-tile-slab.md)
+*  <img src="undefined" alt="" data-size="line"> [Honey Tiles Slab](honey-tile-slab.md)
 
 Recipe can be unlocked with:
 

@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* 6x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BeveledLimestoneSlab.png?raw=true" alt="" data-size="line"> [Beveled Limestone Slab](beveled-limestone-slab.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BeveledLimestoneSlab.png?raw=true" alt="" data-size="line"> [Beveled Limestone Slab](beveled-limestone-slab.md)
 
 Recipe can be unlocked with:
 

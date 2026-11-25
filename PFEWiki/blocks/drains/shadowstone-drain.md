@@ -41,7 +41,7 @@ Items:
 
 Outputs:
 
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/ShadowstoneDrain.png?raw=true" alt="" data-size="line"> [Shadowstone Drain](shadowstone-drain.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/ShadowstoneDrain.png?raw=true" alt="" data-size="line"> [Shadowstone Drain](shadowstone-drain.md)
 
 Recipe can be unlocked with:
 

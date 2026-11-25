@@ -34,7 +34,7 @@ Items:
 
 Outputs:
 
-*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/red_button.png?raw=true" alt="" data-size="line"> [Red Button](red-button.md)
+* 1x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/red_button.png?raw=true" alt="" data-size="line"> [Red Button](red-button.md)
 
 Recipe can be unlocked with:
 

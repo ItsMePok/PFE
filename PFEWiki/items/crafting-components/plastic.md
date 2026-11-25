@@ -34,7 +34,7 @@ Items:
 
 Outputs:
 
-* 9x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true" alt="" data-size="line"> [Plastic](plastic.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true" alt="" data-size="line"> [Plastic](plastic.md)
 
 Recipe can be unlocked with:
 

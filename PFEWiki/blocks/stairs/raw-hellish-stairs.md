@@ -41,7 +41,7 @@ Items:
 
 Outputs:
 
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RawHellishStairs.png?raw=true" alt="" data-size="line"> [Raw Hellish Stairs](raw-hellish-stairs.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RawHellishStairs.png?raw=true" alt="" data-size="line"> [Raw Hellish Stairs](raw-hellish-stairs.md)
 
 Recipe can be unlocked with:
 

@@ -34,7 +34,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/baguette.png?raw=true" alt="" data-size="line"> [Baguette](baguette.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/baguette.png?raw=true" alt="" data-size="line"> [Baguette](baguette.md)
 
 Recipe can be unlocked with:
 

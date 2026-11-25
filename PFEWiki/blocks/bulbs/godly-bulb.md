@@ -43,7 +43,7 @@ Items:
 
 Outputs:
 
-* 6x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/GodlyBulb.png?raw=true" alt="" data-size="line"> [Godly Bulb](godly-bulb.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/GodlyBulb.png?raw=true" alt="" data-size="line"> [Godly Bulb](godly-bulb.md)
 
 Recipe can be unlocked with:
 

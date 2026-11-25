@@ -36,7 +36,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/astral_upgrader.png?raw=true" alt="" data-size="line"> [Astral Upgrader](astral-upgrader.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/astral_upgrader.png?raw=true" alt="" data-size="line"> [Astral Upgrader](astral-upgrader.md)
 
 Recipe can be unlocked with:
 

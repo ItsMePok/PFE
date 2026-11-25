@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* 12x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutDeath.png?raw=true" alt="" data-size="line"> [Cut Death](cut-death.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutDeath.png?raw=true" alt="" data-size="line"> [Cut Death](cut-death.md)
 
 Recipe can be unlocked with:
 
@@ -63,7 +63,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutDeath.png?raw=true" alt="" data-size="line"> [Cut Death](cut-death.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutDeath.png?raw=true" alt="" data-size="line"> [Cut Death](cut-death.md)
 
 Recipe can be unlocked with:
 

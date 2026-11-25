@@ -36,7 +36,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_hoe.png?raw=true" alt="" data-size="line"> [Nebula Hoe](nebula-hoe.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_hoe.png?raw=true" alt="" data-size="line"> [Nebula Hoe](nebula-hoe.md)
 
 Recipe can be unlocked with:
 

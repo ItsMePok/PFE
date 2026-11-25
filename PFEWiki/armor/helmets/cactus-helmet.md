@@ -31,7 +31,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cactus_helmet.png?raw=true" alt="" data-size="line"> [Cactus Helmet](cactus-helmet.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cactus_helmet.png?raw=true" alt="" data-size="line"> [Cactus Helmet](cactus-helmet.md)
 
 Recipe can be unlocked with:
 

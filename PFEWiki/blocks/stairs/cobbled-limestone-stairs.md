@@ -41,7 +41,7 @@ Items:
 
 Outputs:
 
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobbledLimestoneStairs.png?raw=true" alt="" data-size="line"> [Cobbled Limestone Stairs](cobbled-limestone-stairs.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobbledLimestoneStairs.png?raw=true" alt="" data-size="line"> [Cobbled Limestone Stairs](cobbled-limestone-stairs.md)
 
 Recipe can be unlocked with:
 

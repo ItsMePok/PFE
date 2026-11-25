@@ -41,7 +41,7 @@ Items:
 
 Outputs:
 
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutNebulaStairs.png?raw=true" alt="" data-size="line"> [Cut Nebula Stairs](cut-nebula-stairs.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutNebulaStairs.png?raw=true" alt="" data-size="line"> [Cut Nebula Stairs](cut-nebula-stairs.md)
 
 Recipe can be unlocked with:
 

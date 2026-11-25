@@ -48,7 +48,7 @@ Items:
 
 Outputs:
 
-*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/Limestone.png?raw=true" alt="" data-size="line"> [Limestone](limestone.md)
+* 1x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/Limestone.png?raw=true" alt="" data-size="line"> [Limestone](limestone.md)
 
 Recipe can be unlocked with:
 

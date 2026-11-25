@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobaltTrapdoor.png?raw=true" alt="" data-size="line"> [Cobalt Trapdoor](cobalt-trapdoor.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobaltTrapdoor.png?raw=true" alt="" data-size="line"> [Cobalt Trapdoor](cobalt-trapdoor.md)
 
 Recipe can be unlocked with:
 

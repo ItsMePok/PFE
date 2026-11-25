@@ -31,7 +31,7 @@ Items:
 
 Outputs:
 
-* 9x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_hellish.png?raw=true" alt="" data-size="line"> [Raw Hellish](raw-hellish.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_hellish.png?raw=true" alt="" data-size="line"> [Raw Hellish](raw-hellish.md)
 
 Recipe can be unlocked with:
 

@@ -44,7 +44,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/hostile_mob_magnet.png?raw=true" alt="" data-size="line"> [Hostile Mob Magnet](hostile-mob-magnet.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/hostile_mob_magnet.png?raw=true" alt="" data-size="line"> [Hostile Mob Magnet](hostile-mob-magnet.md)
 
 Recipe can be unlocked with:
 

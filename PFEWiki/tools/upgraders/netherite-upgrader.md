@@ -36,7 +36,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/netherite_upgrader.png?raw=true" alt="" data-size="line"> [Netherite Upgrader](netherite-upgrader.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/netherite_upgrader.png?raw=true" alt="" data-size="line"> [Netherite Upgrader](netherite-upgrader.md)
 
 Recipe can be unlocked with:
 

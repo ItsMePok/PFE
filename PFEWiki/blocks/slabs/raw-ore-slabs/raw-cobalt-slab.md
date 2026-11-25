@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* 6x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RawCobaltSlab.png?raw=true" alt="" data-size="line"> [Raw Cobalt Slab](raw-cobalt-slab.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RawCobaltSlab.png?raw=true" alt="" data-size="line"> [Raw Cobalt Slab](raw-cobalt-slab.md)
 
 Recipe can be unlocked with:
 

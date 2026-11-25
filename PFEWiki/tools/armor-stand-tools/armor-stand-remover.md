@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/armor_stand_remover.png?raw=true" alt="" data-size="line"> [Armor Stand Remover](armor-stand-remover.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/armor_stand_remover.png?raw=true" alt="" data-size="line"> [Armor Stand Remover](armor-stand-remover.md)
 
 Recipe can be unlocked with:
 

@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/GalaxyTrapdoor.png?raw=true" alt="" data-size="line"> [Galaxy Trapdoor](galaxy-trapdoor.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/GalaxyTrapdoor.png?raw=true" alt="" data-size="line"> [Galaxy Trapdoor](galaxy-trapdoor.md)
 
 Recipe can be unlocked with:
 

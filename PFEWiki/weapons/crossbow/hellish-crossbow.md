@@ -38,7 +38,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/hellish_crossbow.png?raw=true" alt="" data-size="line"> [Hellish Crossbow](hellish-crossbow.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/hellish_crossbow.png?raw=true" alt="" data-size="line"> [Hellish Crossbow](hellish-crossbow.md)
 
 Recipe can be unlocked with:
 

@@ -36,7 +36,7 @@ Items:
 
 Outputs:
 
-*  <img src="undefined" alt="" data-size="line"> [Banished Hammer](README.md)
+* 1x <img src="undefined" alt="" data-size="line"> [Banished Hammer](README.md)
 
 Recipe can be unlocked with:
 

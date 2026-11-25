@@ -41,7 +41,7 @@ Items:
 
 Outputs:
 
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/PolishedShadowstoneStairs.png?raw=true" alt="" data-size="line"> [Polished Shadowstone Stairs](polished-shadowstone-stairs.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/PolishedShadowstoneStairs.png?raw=true" alt="" data-size="line"> [Polished Shadowstone Stairs](polished-shadowstone-stairs.md)
 
 Recipe can be unlocked with:
 

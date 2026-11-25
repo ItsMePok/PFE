@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nuke_ring.png?raw=true" alt="" data-size="line"> [Nuke Ring](nuke-ring.md)
+* 1x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nuke_ring.png?raw=true" alt="" data-size="line"> [Nuke Ring](nuke-ring.md)
 
 Recipe can be unlocked with:
 

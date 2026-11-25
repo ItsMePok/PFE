@@ -41,7 +41,7 @@ Items:
 
 Outputs:
 
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RawOnyxStairs.png?raw=true" alt="" data-size="line"> [Raw Onyx Stairs](raw-onyx-stairs.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RawOnyxStairs.png?raw=true" alt="" data-size="line"> [Raw Onyx Stairs](raw-onyx-stairs.md)
 
 Recipe can be unlocked with:
 

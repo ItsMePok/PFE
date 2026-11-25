@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* 6x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobbledShadowstoneSlab.png?raw=true" alt="" data-size="line"> [Cobbled Shadowstone Slab](cobbled-shadowstone-slab.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobbledShadowstoneSlab.png?raw=true" alt="" data-size="line"> [Cobbled Shadowstone Slab](cobbled-shadowstone-slab.md)
 
 Recipe can be unlocked with:
 

@@ -36,7 +36,7 @@ Items:
 
 Outputs:
 
-*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shadow_gem.png?raw=true" alt="" data-size="line"> [Shadow Gem](shadow-gem.md)
+* 1x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shadow_gem.png?raw=true" alt="" data-size="line"> [Shadow Gem](shadow-gem.md)
 
 Recipe can be unlocked with:
 

@@ -34,7 +34,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/warp_gem.png?raw=true" alt="" data-size="line"> [Warp Gem](warp-gem.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/warp_gem.png?raw=true" alt="" data-size="line"> [Warp Gem](warp-gem.md)
 
 Recipe can be unlocked with:
 

@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* 6x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HoneyTileWall.png?raw=true" alt="" data-size="line"> [Honey Tile Wall](honey-tile-wall.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HoneyTileWall.png?raw=true" alt="" data-size="line"> [Honey Tile Wall](honey-tile-wall.md)
 
 Recipe can be unlocked with:
 

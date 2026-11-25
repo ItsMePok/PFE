@@ -34,7 +34,7 @@ Items:
 
 Outputs:
 
-* 9x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/wire.png?raw=true" alt="" data-size="line"> [Wire](wire.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/wire.png?raw=true" alt="" data-size="line"> [Wire](wire.md)
 
 Recipe can be unlocked with:
 

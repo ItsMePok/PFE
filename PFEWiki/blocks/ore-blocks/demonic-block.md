@@ -41,7 +41,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/DemonicBlock.png?raw=true" alt="" data-size="line"> [Block of Demonic](demonic-block.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/DemonicBlock.png?raw=true" alt="" data-size="line"> [Block of Demonic](demonic-block.md)
 
 Recipe can be unlocked with:
 

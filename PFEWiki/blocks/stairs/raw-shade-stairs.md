@@ -41,7 +41,7 @@ Items:
 
 Outputs:
 
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RawShadeStairs.png?raw=true" alt="" data-size="line"> [Raw Shade Stairs](raw-shade-stairs.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RawShadeStairs.png?raw=true" alt="" data-size="line"> [Raw Shade Stairs](raw-shade-stairs.md)
 
 Recipe can be unlocked with:
 

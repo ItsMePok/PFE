@@ -34,7 +34,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/grilled_cheese.png?raw=true" alt="" data-size="line"> [Grilled Cheese](grilled-cheese.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/grilled_cheese.png?raw=true" alt="" data-size="line"> [Grilled Cheese](grilled-cheese.md)
 
 Recipe can be unlocked with:
 

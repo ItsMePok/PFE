@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/MedicTrapdoor.png?raw=true" alt="" data-size="line"> [Medic Trapdoor](medic-trapdoor.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/MedicTrapdoor.png?raw=true" alt="" data-size="line"> [Medic Trapdoor](medic-trapdoor.md)
 
 Recipe can be unlocked with:
 

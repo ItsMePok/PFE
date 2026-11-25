@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* 6x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutShadeSlab.png?raw=true" alt="" data-size="line"> [Cut Shade Slab](cut-shade-slab.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutShadeSlab.png?raw=true" alt="" data-size="line"> [Cut Shade Slab](cut-shade-slab.md)
 
 Recipe can be unlocked with:
 

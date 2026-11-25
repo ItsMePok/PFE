@@ -34,7 +34,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/death_pickaxe.png?raw=true" alt="" data-size="line"> [Death Pickaxe](death-pickaxe.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/death_pickaxe.png?raw=true" alt="" data-size="line"> [Death Pickaxe](death-pickaxe.md)
 
 Recipe can be unlocked with:
 

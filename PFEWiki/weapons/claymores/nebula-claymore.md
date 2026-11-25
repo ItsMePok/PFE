@@ -44,7 +44,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_claymore.png?raw=true" alt="" data-size="line"> [Nebula Claymore](nebula-claymore.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_claymore.png?raw=true" alt="" data-size="line"> [Nebula Claymore](nebula-claymore.md)
 
 Recipe can be unlocked with:
 

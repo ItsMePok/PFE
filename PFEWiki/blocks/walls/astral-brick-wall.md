@@ -46,7 +46,7 @@ Items:
 
 Outputs:
 
-* 6x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/AstralBrickWall.png?raw=true" alt="" data-size="line"> [Astral Brick Wall](astral-brick-wall.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/AstralBrickWall.png?raw=true" alt="" data-size="line"> [Astral Brick Wall](astral-brick-wall.md)
 
 Recipe can be unlocked with:
 

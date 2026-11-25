@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* 3x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HoneyTrapdoor.png?raw=true" alt="" data-size="line"> [Honey Trapdoor](honey-trapdoor.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HoneyTrapdoor.png?raw=true" alt="" data-size="line"> [Honey Trapdoor](honey-trapdoor.md)
 
 Recipe can be unlocked with:
 

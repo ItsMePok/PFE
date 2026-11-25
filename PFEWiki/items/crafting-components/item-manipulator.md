@@ -36,7 +36,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/item_manipulator.png?raw=true" alt="" data-size="line"> [Item Manipulator](item-manipulator.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/item_manipulator.png?raw=true" alt="" data-size="line"> [Item Manipulator](item-manipulator.md)
 
 Recipe can be unlocked with:
 

@@ -38,7 +38,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_crossbow.png?raw=true" alt="" data-size="line"> [Godly Crossbow](godly-crossbow.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_crossbow.png?raw=true" alt="" data-size="line"> [Godly Crossbow](godly-crossbow.md)
 
 Recipe can be unlocked with:
 

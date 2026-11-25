@@ -34,7 +34,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/medic_pickaxe.png?raw=true" alt="" data-size="line"> [Medic Pickaxe](medic-pickaxe.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/medic_pickaxe.png?raw=true" alt="" data-size="line"> [Medic Pickaxe](medic-pickaxe.md)
 
 Recipe can be unlocked with:
 

@@ -49,7 +49,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/DemonicAllayConduit.png?raw=true" alt="" data-size="line"> [Demonic Allay Conduit](demonic-allay-conduit.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/DemonicAllayConduit.png?raw=true" alt="" data-size="line"> [Demonic Allay Conduit](demonic-allay-conduit.md)
 
 Recipe can be unlocked with:
 

@@ -41,7 +41,7 @@ Items:
 
 Outputs:
 
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/NebulaBrickStairs.png?raw=true" alt="" data-size="line"> [Nebula Brick Stairs](nebula-brick-stairs.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/NebulaBrickStairs.png?raw=true" alt="" data-size="line"> [Nebula Brick Stairs](nebula-brick-stairs.md)
 
 Recipe can be unlocked with:
 

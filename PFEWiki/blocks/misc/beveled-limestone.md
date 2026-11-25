@@ -46,7 +46,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BeveledLimestone.png?raw=true" alt="" data-size="line"> [Beveled Limestone](beveled-limestone.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BeveledLimestone.png?raw=true" alt="" data-size="line"> [Beveled Limestone](beveled-limestone.md)
 
 Recipe can be unlocked with:
 

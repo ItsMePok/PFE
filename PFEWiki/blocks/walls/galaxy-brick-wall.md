@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* 6x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/GalaxyBrickWall.png?raw=true" alt="" data-size="line"> [Galaxy Brick Wall](galaxy-brick-wall.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/GalaxyBrickWall.png?raw=true" alt="" data-size="line"> [Galaxy Brick Wall](galaxy-brick-wall.md)
 
 Recipe can be unlocked with:
 

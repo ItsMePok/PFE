@@ -38,7 +38,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_haxel.png?raw=true" alt="" data-size="line"> [Cobalt Haxel](cobalt-haxel.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_haxel.png?raw=true" alt="" data-size="line"> [Cobalt Haxel](cobalt-haxel.md)
 
 Recipe can be unlocked with:
 

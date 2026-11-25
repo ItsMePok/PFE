@@ -38,7 +38,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_scythe.png?raw=true" alt="" data-size="line"> [Godly Scythe](godly-scythe.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_scythe.png?raw=true" alt="" data-size="line"> [Godly Scythe](godly-scythe.md)
 
 Recipe can be unlocked with:
 

@@ -32,7 +32,7 @@ Items:
 
 Outputs:
 
-*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/golden_gem_holder.png?raw=true" alt="" data-size="line"> [Golden Gem Holder](golden-gem-holder.md)
+* 1x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/golden_gem_holder.png?raw=true" alt="" data-size="line"> [Golden Gem Holder](golden-gem-holder.md)
 
 Recipe can be unlocked with:
 

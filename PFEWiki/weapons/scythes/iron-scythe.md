@@ -36,7 +36,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/iron_scythe.png?raw=true" alt="" data-size="line"> [Iron Scythe](iron-scythe.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/iron_scythe.png?raw=true" alt="" data-size="line"> [Iron Scythe](iron-scythe.md)
 
 Recipe can be unlocked with:
 

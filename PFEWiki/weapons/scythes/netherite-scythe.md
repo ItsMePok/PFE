@@ -36,7 +36,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/netherite_scythe.png?raw=true" alt="" data-size="line"> [Netherite Scythe](netherite-scythe.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/netherite_scythe.png?raw=true" alt="" data-size="line"> [Netherite Scythe](netherite-scythe.md)
 
 Recipe can be unlocked with:
 

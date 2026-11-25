@@ -36,7 +36,7 @@ Items:
 
 Outputs:
 
-* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/xp_magnet.png?raw=true" alt="" data-size="line"> [XP Magnet](xp-magnet.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/xp_magnet.png?raw=true" alt="" data-size="line"> [XP Magnet](xp-magnet.md)
 
 Recipe can be unlocked with:
 

@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-*  <img src="undefined" alt="" data-size="line"> [Gravity Gem](gravity-gem.md)
+* 1x <img src="undefined" alt="" data-size="line"> [Gravity Gem](gravity-gem.md)
 
 Recipe can be unlocked with:
 

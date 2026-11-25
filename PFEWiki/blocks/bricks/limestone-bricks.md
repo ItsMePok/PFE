@@ -40,7 +40,7 @@ Items:
 
 Outputs:
 
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/LimestoneBricks.png?raw=true" alt="" data-size="line"> [Limestone Bricks](limestone-bricks.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/LimestoneBricks.png?raw=true" alt="" data-size="line"> [Limestone Bricks](limestone-bricks.md)
 
 Recipe can be unlocked with:
 
@@ -73,7 +73,7 @@ Items:
 
 Outputs:
 
-*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/LimestoneBricks.png?raw=true" alt="" data-size="line"> [Limestone Bricks](limestone-bricks.md)
+* 1x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/LimestoneBricks.png?raw=true" alt="" data-size="line"> [Limestone Bricks](limestone-bricks.md)
 
 Recipe can be unlocked with:
 

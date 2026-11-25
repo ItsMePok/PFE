@@ -46,7 +46,7 @@ Items:
 
 Outputs:
 
-* 6x <img src="undefined" alt="" data-size="line"> [Honey Brick Slab](honey-brick-slab.md)
+*  <img src="undefined" alt="" data-size="line"> [Honey Brick Slab](honey-brick-slab.md)
 
 Recipe can be unlocked with:
 
