@@ -31,13 +31,13 @@ description: Last updated to match v1.3.06
 
 ||||
 | :-: | :-: | :-: |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawDemonic.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawDemonic.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawDemonic.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawDemonic.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawDemonic.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawDemonic.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
 | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawDemonic.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawDemonic.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawDemonic.png?raw=true) |
 
 Items:
 
-* 6x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawDemonic.png?raw=true" alt="" data-size="line"> Block of Raw Demonic
+* 6x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawDemonic.png?raw=true" alt="" data-size="line"> [Block of Raw Demonic](..\raw-ore-blocks\block-of-raw-demonic.md)
 
 Outputs:
 
@@ -45,14 +45,14 @@ Outputs:
 
 Recipe can be unlocked with:
 
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawDemonic.png?raw=true" alt="" data-size="line"> Block of Raw Demonic
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawDemonic.png?raw=true" alt="" data-size="line"> [Block of Raw Demonic](..\raw-ore-blocks\block-of-raw-demonic.md)
 
 {% endtab %}
 
 {% tab title="Stonecutting" %}
 <figure><img src="https://minecraft.wiki/images/Stonecutter_JE2_BE1.gif?bb269" alt=""><figcaption><p>Cut with the<br><a href="https://minecraft.wiki/w/Stonecutter">Stonecutter</a></p></figcaption></figure>
 
-<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawDemonic.png?raw=true" alt="" data-size="line"> <a href="">Block of Raw Demonic</a></td><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RawDemonicStairs.png?raw=true" alt="" data-size="line"> Raw Demonic Stairs</td><td>1</td></tr></tbody></table>
+<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/BlockofRawDemonic.png?raw=true" alt="" data-size="line"> <a href="..\raw-ore-blocks\block-of-raw-demonic.md">Block of Raw Demonic</a></td><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RawDemonicStairs.png?raw=true" alt="" data-size="line"> Raw Demonic Stairs</td><td>1</td></tr></tbody></table>
 
 {% endtab %}
 {% endtabs %}

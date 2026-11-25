@@ -39,11 +39,11 @@ Items:
 
 * 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutCobalt.png?raw=true" alt="" data-size="line"> [Cut Cobalt](..\cut-blocks\cut-cobalt.md)
 
-*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/wire.png?raw=true" alt="" data-size="line"> Wire
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/wire.png?raw=true" alt="" data-size="line"> [Wire](..\..\items\crafting-components\wire.md)
 
-* 2x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/electric_component.png?raw=true" alt="" data-size="line"> Electric Component
+* 2x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/electric_component.png?raw=true" alt="" data-size="line"> [Electric Component](..\..\items\crafting-components\electric-component.md)
 
-*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/rain_gem.png?raw=true" alt="" data-size="line"> Rain Gem
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/rain_gem.png?raw=true" alt="" data-size="line"> [Rain Gem](..\..\items\gems\rain-gem.md)
 
 *  <img src="https://minecraft.wiki/images/Daylight_Detector_JE1_BE1.png?c5bbc" alt="" data-size="line"> [Daylight Detector](https://minecraft.wiki/w/Daylight_Detector)
 
@@ -53,15 +53,15 @@ Outputs:
 
 Recipe can be unlocked with:
 
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="" data-size="line"> Cobalt Ingot
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="" data-size="line"> [Cobalt Ingot](..\..\items\ingots\cobalt-ingot.md)
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutCobalt.png?raw=true" alt="" data-size="line"> [Cut Cobalt](..\cut-blocks\cut-cobalt.md)
 
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/wire.png?raw=true" alt="" data-size="line"> Wire
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/wire.png?raw=true" alt="" data-size="line"> [Wire](..\..\items\crafting-components\wire.md)
 
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/rain_gem.png?raw=true" alt="" data-size="line"> Rain Gem
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/rain_gem.png?raw=true" alt="" data-size="line"> [Rain Gem](..\..\items\gems\rain-gem.md)
 
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/electric_component.png?raw=true" alt="" data-size="line"> Electric Component
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/electric_component.png?raw=true" alt="" data-size="line"> [Electric Component](..\..\items\crafting-components\electric-component.md)
 
 * <img src="https://minecraft.wiki/images/Daylight_Detector_JE1_BE1.png?c5bbc" alt="" data-size="line"> [Daylight Detector](https://minecraft.wiki/w/Daylight_Detector)
 

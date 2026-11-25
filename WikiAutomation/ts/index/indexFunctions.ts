@@ -37,7 +37,6 @@ function AddWikiPageToIndex(INDEX: IndexFile) {
 				.at(0)
 				?.replace("(", "")
 				.replace(")", "");
-			console.log(`PFEWiki/${startPos}`);
 			INDEX.index[current].wiki_page = `PFEWiki/${startPos}`;
 		}
 	}
@@ -117,14 +116,13 @@ function AddItemsToIndex(INDEX: IndexFile) {
 }
 
 function AddRecipesToIndex(INDEX: IndexFile) {
-	let files = GetAllFilesInDirectory("../PFE/behavior_packs/pfe/recipes/");
+	let files = GetAllFilesInDirectory(
+		"WikiAutomation/PFE/behavior_packs/pfe/recipes/",
+	);
 	for (const FILE of files) {
-		const FILE_PATH = (FILE.parentPath + FILE.name).replace(
-			"../",
-			"WikiAutomation/",
-		);
+		const FILE_PATH = FILE.parentPath + FILE.name;
 		const RECIPE: BPRecipeFile = JSON.parse(
-			readFileSync(FILE.parentPath + FILE.name, { encoding: "utf8" }),
+			readFileSync(FILE_PATH, { encoding: "utf8" }),
 		);
 		if (RECIPE["minecraft:recipe_shaped"]) {
 			const SHAPED_RECIPE = RECIPE["minecraft:recipe_shaped"];

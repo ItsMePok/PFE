@@ -25,36 +25,6 @@ description: Last updated to match v1.3.06
 
 {% tabs %}
 
-{% tab title="Crafting" %}
-
-<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the<br><a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
-
-||||
-| :-: | :-: | :-: |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HoneyTiles.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HoneyTiles.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HoneyTiles.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HoneyTiles.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HoneyTiles.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HoneyTiles.png?raw=true) |
-
-Items:
-
-* 6x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HoneyTiles.png?raw=true" alt="" data-size="line"> Honey Tiles
-
-Outputs:
-
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HoneyTileStairs.png?raw=true" alt="" data-size="line"> [Honey Tile Stairs](honey-tile-stairs.md)
-
-Recipe can be unlocked with:
-
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HoneyTiles.png?raw=true" alt="" data-size="line"> Honey Tiles
-
-{% endtab %}
-
-{% tab title="Stonecutting" %}
-<figure><img src="https://minecraft.wiki/images/Stonecutter_JE2_BE1.gif?bb269" alt=""><figcaption><p>Cut with the<br><a href="https://minecraft.wiki/w/Stonecutter">Stonecutter</a></p></figcaption></figure>
-
-<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HoneyTiles.png?raw=true" alt="" data-size="line"> <a href="">Honey Tiles</a></td><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HoneyTileStairs.png?raw=true" alt="" data-size="line"> Honey Tile Stairs</td><td>1</td></tr></tbody></table>
-
-{% endtab %}
 {% tab title="Stonecutting" %}
 <figure><img src="https://minecraft.wiki/images/Stonecutter_JE2_BE1.gif?bb269" alt=""><figcaption><p>Cut with the<br><a href="https://minecraft.wiki/w/Stonecutter">Stonecutter</a></p></figcaption></figure>
 
@@ -65,6 +35,36 @@ Recipe can be unlocked with:
 <figure><img src="https://minecraft.wiki/images/Stonecutter_JE2_BE1.gif?bb269" alt=""><figcaption><p>Cut with the<br><a href="https://minecraft.wiki/w/Stonecutter">Stonecutter</a></p></figcaption></figure>
 
 <table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="https://minecraft.wiki/images/Honeycomb_Block_JE1_BE1.png?ff510" alt="" data-size="line"> <a href="https://minecraft.wiki/w/Honeycomb_Block">Honeycomb Block</a></td><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HoneyTileStairs.png?raw=true" alt="" data-size="line"> Honey Tile Stairs</td><td>1</td></tr></tbody></table>
+
+{% endtab %}
+{% tab title="Crafting" %}
+
+<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the<br><a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
+
+||||
+| :-: | :-: | :-: |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HoneyTiles.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HoneyTiles.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HoneyTiles.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HoneyTiles.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HoneyTiles.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HoneyTiles.png?raw=true) |
+
+Items:
+
+* 6x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HoneyTiles.png?raw=true" alt="" data-size="line"> [Honey Tiles](..\misc\honey-tiles.md)
+
+Outputs:
+
+* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HoneyTileStairs.png?raw=true" alt="" data-size="line"> [Honey Tile Stairs](honey-tile-stairs.md)
+
+Recipe can be unlocked with:
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HoneyTiles.png?raw=true" alt="" data-size="line"> [Honey Tiles](..\misc\honey-tiles.md)
+
+{% endtab %}
+
+{% tab title="Stonecutting" %}
+<figure><img src="https://minecraft.wiki/images/Stonecutter_JE2_BE1.gif?bb269" alt=""><figcaption><p>Cut with the<br><a href="https://minecraft.wiki/w/Stonecutter">Stonecutter</a></p></figcaption></figure>
+
+<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HoneyTiles.png?raw=true" alt="" data-size="line"> <a href="..\misc\honey-tiles.md">Honey Tiles</a></td><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HoneyTileStairs.png?raw=true" alt="" data-size="line"> Honey Tile Stairs</td><td>1</td></tr></tbody></table>
 
 {% endtab %}
 {% endtabs %}

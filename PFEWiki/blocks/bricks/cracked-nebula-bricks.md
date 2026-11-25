@@ -21,10 +21,4 @@ description: Last updated to match v1.3.06
 * &#x20;Time to break with preferred tool (baseline): <mark style="color:yellow;">1.15 seconds</mark>
 * Time to break by hand: <mark style="color:yellow;">7.5 seconds</mark>
 
-## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining: <a href="#obtaining" id="obtaining"></a>
-
-{% tabs %}
-
-{% endtabs %}
-
 This page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool

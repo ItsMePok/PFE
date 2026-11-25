@@ -19,13 +19,12 @@ import {
 	AddRecipesToIndex,
 	AddWikiPageToIndex,
 } from "./index/indexFunctions.ts";
-/*
+
 AddBlocksToIndex(index as IndexFile);
 AddItemsToIndex(index as IndexFile);
 AddRecipesToIndex(index as IndexFile);
 AddWikiPageToIndex(index as IndexFile);
-*/
-console.log(index.default_info.BP);
+
 /*
 FILE STRUCTURE:
 ---
@@ -42,8 +41,12 @@ COMPONENTS
 
 for (let data of index.index) {
 	const item = data as unknown as IndexItem;
-	if (item.run === false) continue;
-	const FILE_LOCATION = `${item}`;
+	if (!item.wiki_page) {
+		console.warn(item.identifier);
+		continue;
+	}
+	//if (item.run == false) continue;
+	const FILE_LOCATION = `${item.wiki_page}`;
 	let file = ``;
 
 	//Make Page Description:
@@ -76,12 +79,8 @@ for (let data of index.index) {
 	//Make Obtaining:
 	file = MakeObtainingSection(file, item as IndexItem);
 
-	//End Tabs
-	file = `${file}\n{% endtabs %}\n`;
-
 	//Add automated disclaimer:
 	file = `${file}\nThis page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool\n`;
 	//Write File:
 	writeFileSync(FILE_LOCATION, file, { encoding: "utf8" });
-	console.log(FILE_LOCATION);
 }

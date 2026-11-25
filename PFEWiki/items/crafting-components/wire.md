@@ -1,51 +1,51 @@
+---
+description: Last updated to match v1.3.06
+---
+
 # Wire
 
-<figure><img src="https://github.com/ItsMePok/PFE/blob/wiki/PFEWiki/items/crafting-components/broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/wire.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:wire**</mark> <a href="#identifier" id="identifier"></a>
 
-## Usage: Crafting Component
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark> <a href="#rarity" id="rarity"></a>
 
-<details>
+## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">64</mark> <a href="#stack-size" id="stack-size"></a>
 
-<summary>Recipe in:</summary>
-
-* Barometer
-* Charged Cobalt Block
-* Miner Helmet
-* [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobblestoneGenerator.png?raw=true" alt="" data-size="line">Cobblestone Generator](../../blocks/automation/cobblestone-generator.md)
-* Item Manipulator
-* Jackhammer
-* Night Vison Goggles
-* Panic Button
-* Sundial
-
-</details>
-
-## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line">Stack Size: 64
-
-## Obtaining:
+## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining: <a href="#obtaining" id="obtaining"></a>
 
 {% tabs %}
-{% tab title="Recipe" %}
-<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-|                                                                                           |                                                                               |                                                                                           |
-| :---------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------: |
-| ![Plastic](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) | ![Copper Ingot](https://minecraft.wiki/images/Copper_Ingot_JE2_BE1.png?0d410) | ![Plastic](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) |
-| ![Plastic](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) | ![Copper Ingot](https://minecraft.wiki/images/Copper_Ingot_JE2_BE1.png?0d410) | ![Plastic](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) |
-| ![Plastic](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) | ![Copper Ingot](https://minecraft.wiki/images/Copper_Ingot_JE2_BE1.png?0d410) | ![Plastic](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) |
+{% tab title="Crafting" %}
+
+<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the<br><a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
+
+||||
+| :-: | :-: | :-: |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) | ![](https://minecraft.wiki/images/Copper_Ingot_JE2_BE1.png?0d410) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) | ![](https://minecraft.wiki/images/Copper_Ingot_JE2_BE1.png?0d410) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) | ![](https://minecraft.wiki/images/Copper_Ingot_JE2_BE1.png?0d410) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) |
+
+Items:
+
+* 6x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true" alt="" data-size="line"> [Plastic](plastic.md)
+
+* 3x <img src="https://minecraft.wiki/images/Copper_Ingot_JE2_BE1.png?0d410" alt="" data-size="line"> [Copper Ingot](https://minecraft.wiki/w/Copper_Ingot)
+
+Outputs:
+
+* 9x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/wire.png?raw=true" alt="" data-size="line"> [Wire](wire.md)
+
+Recipe can be unlocked with:
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true" alt="" data-size="line"> [Plastic](plastic.md)
+
+* <img src="https://minecraft.wiki/images/Copper_Ingot_JE2_BE1.png?0d410" alt="" data-size="line"> [Copper Ingot](https://minecraft.wiki/w/Copper_Ingot)
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/electric_component.png?raw=true" alt="" data-size="line"> [Electric Component](electric-component.md)
+
 {% endtab %}
 
-{% tab title="Structures" %}
-Found in the [Abandoned Ship](../../sturctures/abandoned-ship.md)
-
-{% content-ref url="../../sturctures/abandoned-ship.md" %}
-[abandoned-ship.md](../../sturctures/abandoned-ship.md)
-{% endcontent-ref %}
-
-| Item                                                                                                                                            | Amount | Weight |
-| ----------------------------------------------------------------------------------------------------------------------------------------------- | ------ | :----: |
-| [<img src="https://github.com/ItsMePok/PFE/blob/wiki/PFEWiki/items/crafting-components/broken-reference" alt="" data-size="line">Wire](wire.md) | 1      |    6   |
-{% endtab %}
 {% endtabs %}
+
+This page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool

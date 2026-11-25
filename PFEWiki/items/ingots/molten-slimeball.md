@@ -1,49 +1,44 @@
+---
+description: Last updated to match v1.3.06
+---
+
 # Molten Slimeball
 
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/molten_slimeball.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:molten\_slimeball**</mark> <a href="#identifier" id="identifier"></a>
 
-## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 64
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark> <a href="#rarity" id="rarity"></a>
 
-## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining:
+## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">64</mark> <a href="#stack-size" id="stack-size"></a>
+
+## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining: <a href="#obtaining" id="obtaining"></a>
 
 {% tabs %}
-{% tab title="Recipe" %}
-<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-|                                                                                                       |                                                                                                       |                                                                                                       |
-| :---------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------: |
-|              ![Lava Bucket](https://minecraft.wiki/images/Lava_Bucket_JE2_BE2.png?55ee0)              | ![Demonic Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true) |              ![Lava Bucket](https://minecraft.wiki/images/Lava_Bucket_JE2_BE2.png?55ee0)              |
-| ![Demonic Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true) |              ![Magma Cream](https://minecraft.wiki/images/Magma_Cream_JE3_BE2.png?7a317)              | ![Demonic Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true) |
-|              ![Lava Bucket](https://minecraft.wiki/images/Lava_Bucket_JE2_BE2.png?55ee0)              | ![Demonic Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true) |              ![Lava Bucket](https://minecraft.wiki/images/Lava_Bucket_JE2_BE2.png?55ee0)              |
+{% tab title="Crafting" %}
 
-Items:
+<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the<br><a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-* <img src="https://minecraft.wiki/images/Lava_Bucket_JE2_BE2.png?55ee0" alt="Lava Bucket" data-size="line"> [Lava Bucket](https://minecraft.wiki/w/Lava_Bucket)
-* <img src="https://minecraft.wiki/images/Magma_Cream_JE3_BE2.png?7a317" alt="Magma Cream" data-size="line"> [Magma Cream](https://minecraft.wiki/w/Magma_Cream)
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true" alt="Demonic Ingot" data-size="line"> [Demonic Ingot](demonic-ingot.md)
+||
+| :-: |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/MoltenBlock.png?raw=true) |
 
-Outputs:
-
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/molten_slimeball.png?raw=true" alt="Molten Slimeball" data-size="line"> Molten Slimeball
-{% endtab %}
-
-{% tab title="Recipe 2" %}
-<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
-
-|     |     |     |
-| :-: | :-: | :-: |
-|     |     |     |
-|     |     |     |
-|     |     |     |
 
 Items:
 
-* Molten Block
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/MoltenBlock.png?raw=true" alt="" data-size="line"> [Block of Molten](..\..\blocks\ore-blocks\block-of-molten.md)
 
 Outputs:
 
-* 9x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/molten_slimeball.png?raw=true" alt="Molten Slimeball" data-size="line"> Molten Slimeball
+* 9x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/molten_slimeball.png?raw=true" alt="" data-size="line"> [Molten Slimeball](molten-slimeball.md)
+
+Recipe can be unlocked with:
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/MoltenBlock.png?raw=true" alt="" data-size="line"> [Block of Molten](..\..\blocks\ore-blocks\block-of-molten.md)
+
 {% endtab %}
+
 {% endtabs %}
+
+This page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool

@@ -1,14 +1,49 @@
+---
+description: Last updated to match v1.3.06
+---
+
 # Ore Gem
 
-![poke\_ore\_gem](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/ore_gem.png?raw=true)
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/ore_gem.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:ore\_gem**</mark> <a href="#identifier" id="identifier"></a>
 
-Usage: **Used in crafting the** [**Ore Ring**](https://github.com/ItsMePok/PFE/wiki/Ore-Ring)
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark> <a href="#rarity" id="rarity"></a>
 
-## Obtaining:
+## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">64</mark> <a href="#stack-size" id="stack-size"></a>
 
-* Crafted with:
-  * 4x Emerald Ore (Stone Variant)
-  * 4x Deepslate Redstone Ore
-  * 1x Diamond Ore (Stone Variant)
+## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining: <a href="#obtaining" id="obtaining"></a>
+
+{% tabs %}
+
+{% tab title="Crafting" %}
+
+<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the<br><a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
+
+||||
+| :-: | :-: | :-: |
+| ![](https://minecraft.wiki/images/Emerald_Ore_JE4_BE3.png?02ea7) | ![](https://minecraft.wiki/images/Deepslate_Redstone_Ore_JE2_BE1.png?b1835) | ![](https://minecraft.wiki/images/Emerald_Ore_JE4_BE3.png?02ea7) |
+| ![](https://minecraft.wiki/images/Deepslate_Redstone_Ore_JE2_BE1.png?b1835) | ![](https://minecraft.wiki/images/Diamond_Ore_JE5_BE5.png?fa2f4) | ![](https://minecraft.wiki/images/Deepslate_Redstone_Ore_JE2_BE1.png?b1835) |
+| ![](https://minecraft.wiki/images/Emerald_Ore_JE4_BE3.png?02ea7) | ![](https://minecraft.wiki/images/Deepslate_Redstone_Ore_JE2_BE1.png?b1835) | ![](https://minecraft.wiki/images/Emerald_Ore_JE4_BE3.png?02ea7) |
+
+Items:
+
+* 4x <img src="https://minecraft.wiki/images/Emerald_Ore_JE4_BE3.png?02ea7" alt="" data-size="line"> [Emerald Ore](https://minecraft.wiki/w/Emerald_Ore)
+
+* 4x <img src="https://minecraft.wiki/images/Deepslate_Redstone_Ore_JE2_BE1.png?b1835" alt="" data-size="line"> [Deepslate Redstone Ore](https://minecraft.wiki/w/Redstone_Ore#Deepslate_Redstone_Ore)
+
+*  <img src="https://minecraft.wiki/images/Diamond_Ore_JE5_BE5.png?fa2f4" alt="" data-size="line"> [Diamond Ore](https://minecraft.wiki/w/Diamond_Ore)
+
+Outputs:
+
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/ore_gem.png?raw=true" alt="" data-size="line"> [Ore Gem](ore-gem.md)
+
+Recipe can be unlocked with:
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/obsidian_gem_holder.png?raw=true" alt="" data-size="line"> [Obsidian Gem Holder](..\gem-holders\obsidian-gem-holder.md)
+
+{% endtab %}
+
+{% endtabs %}
+
+This page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool

@@ -1,29 +1,57 @@
+---
+description: Last updated to match v1.3.06
+---
+
 # Miner Helmet
 
-![poke\_miner\_helmet](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/miner_helmet.png?raw=true)
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/miner_helmet.png?raw=true" alt=""><figcaption></figcaption></figure>
 
-Set Effects:
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:miner\_helmet**</mark> <a href="#identifier" id="identifier"></a>
 
-* Night Vision
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark> <a href="#rarity" id="rarity"></a>
 
-Identifier: **poke_pfe:miner\_helmet**
+## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">1</mark> <a href="#stack-size" id="stack-size"></a>
 
-Durability: **165**
+## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining: <a href="#obtaining" id="obtaining"></a>
 
-Armor: **2**
+{% tabs %}
 
-Enchant type: **Helmet**
+{% tab title="Crafting" %}
 
-Repairable with:
+<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the<br><a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-* **Repair Core**
-* **Plastic**
+||||
+| :-: | :-: | :-: |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/wire.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/wire.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) | ![](https://minecraft.wiki/images/Redstone_Dust_JE2_BE2.png?8cf17) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) |
 
-Trimmable: **No**
+Items:
 
-**Recipe:**
+* 2x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/wire.png?raw=true" alt="" data-size="line"> [Wire](..\items\crafting-components\wire.md)
 
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/wire.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true)                                                               | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/wire.png?raw=true) |
-| ------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true)                                                               | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) | [![](https://minecraft.wiki/images/thumb/Redstone_Dust_JE2_BE2.png/150px-Redstone_Dust_JE2_BE2.png?8cf17)](https://minecraft.wiki/w/Redstone_Dust) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true) |
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="" data-size="line"> [Cobalt Ingot](..\items\ingots\cobalt-ingot.md)
+
+* 5x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true" alt="" data-size="line"> [Plastic](..\items\crafting-components\plastic.md)
+
+*  <img src="https://minecraft.wiki/images/Redstone_Dust_JE2_BE2.png?8cf17" alt="" data-size="line"> [Redstone Dust](https://minecraft.wiki/w/Redstone_Dust)
+
+Outputs:
+
+* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/miner_helmet.png?raw=true" alt="" data-size="line"> [Miner Helmet](miner-helmet.md)
+
+Recipe can be unlocked with:
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="" data-size="line"> [Cobalt Ingot](..\items\ingots\cobalt-ingot.md)
+
+* <img src="https://minecraft.wiki/images/Redstone_Dust_JE2_BE2.png?8cf17" alt="" data-size="line"> [Redstone Dust](https://minecraft.wiki/w/Redstone_Dust)
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/wire.png?raw=true" alt="" data-size="line"> [Wire](..\items\crafting-components\wire.md)
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true" alt="" data-size="line"> [Plastic](..\items\crafting-components\plastic.md)
+
+{% endtab %}
+
+{% endtabs %}
+
+This page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool

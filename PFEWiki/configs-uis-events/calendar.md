@@ -1,113 +1,15 @@
+---
+description: Last updated to match v1.3.06
+---
+
 # Calendar
 
-{% hint style="danger" %}
-This page is not complete yet. Check back later
-{% endhint %}
+<figure><img src="undefined" alt=""><figcaption></figcaption></figure>
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: **poke\_pfe:calendar** <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:calendar**</mark> <a href="#identifier" id="identifier"></a>
 
-## Obtaining:
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark> <a href="#rarity" id="rarity"></a>
 
-{% tabs %}
-{% tab title="Recipe" %}
-{% hint style="info" %}
-This recipe is shapeless
-{% endhint %}
+## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">64</mark> <a href="#stack-size" id="stack-size"></a>
 
-<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
-
-|     |                                                                                                                                         |
-| :-: | :-------------------------------------------------------------------------------------------------------------------------------------: |
-|     | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="Cobalt Ingot." data-size="original"> |
-|     |                                     ![Paper.](https://minecraft.wiki/images/Paper_JE2_BE2.png?9c3be)                                    |
-
-Items:
-
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="Cobalt Ingot." data-size="line"> [Cobalt Ingot](../items/ingots/cobalt-ingot.md)
-* <img src="https://minecraft.wiki/images/Paper_JE2_BE2.png?9c3be" alt="Paper." data-size="line"> [Paper](https://minecraft.wiki/w/Paper)
-{% endtab %}
-{% endtabs %}
-
-## Menu Options:
-
-### Main Menu:
-
-{% stepper %}
-{% step %}
-#### Change Timezone
-
-{% hint style="info" %}
-this will only appear if you are yet to set it
-{% endhint %}
-
-Time is based on your system's time
-
-By default, the timezone is set to UTC
-{% endstep %}
-
-{% step %}
-#### Change Birthday (if not set yet)
-
-{% hint style="info" %}
-his will only appear if you are yet to set it
-{% endhint %}
-
-#### Options:
-
-* Dropdown: Day
-* Dropdown: Month
-* Toggle: Inform others that it's your birthday when they join on that day?
-
-{% hint style="info" %}
-Enabling the toggle will send a message to player when they join on your birthday saying:
-
-```bc-minecraft-language
-Good Morning (PLAYERNAME) it's (BIRTHDAY PLAYERNAME)'s Birthday!
-```
-{% endhint %}
-{% endstep %}
-
-{% step %}
-#### [Upcoming Events](calendar.md#upcoming-events-1)
-{% endstep %}
-
-{% step %}
-#### [Additional Options](calendar.md#additional-options-1)
-{% endstep %}
-
-{% step %}
-#### Claim Gift
-
-{% hint style="info" %}
-This will only appear if you have a gift available to claim
-{% endhint %}
-{% endstep %}
-{% endstepper %}
-
-***
-
-### Upcoming Events
-
-{% stepper %}
-{% step %}
-####
-{% endstep %}
-
-{% step %}
-####
-{% endstep %}
-{% endstepper %}
-
-***
-
-### Additional Options:
-
-{% stepper %}
-{% step %}
-####
-{% endstep %}
-
-{% step %}
-####
-{% endstep %}
-{% endstepper %}
+This page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool

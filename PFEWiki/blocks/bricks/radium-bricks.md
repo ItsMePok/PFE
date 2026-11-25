@@ -44,9 +44,9 @@ Outputs:
 
 Recipe can be unlocked with:
 
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RadiumBlock.png?raw=true" alt="" data-size="line"> Block of Radium
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RadiumBlock.png?raw=true" alt="" data-size="line"> [Block of Radium](..\ore-blocks\block-of-radium.md)
 
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/radium_ingot.png?raw=true" alt="" data-size="line"> Radium Ingot
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/radium_ingot.png?raw=true" alt="" data-size="line"> [Radium Ingot](..\..\items\ingots\radium-ingot.md)
 
 {% endtab %}
 
@@ -56,7 +56,7 @@ Recipe can be unlocked with:
 
 |||
 | :-: | :-: |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
 
 
 Items:
@@ -67,14 +67,14 @@ Outputs:
 
 Recipe can be unlocked with:
 
-* <img src="undefined" alt="" data-size="line"> ERROR (poke_pfe:radium_bricks_slab)
+* <img src="undefined" alt="" data-size="line"> [Radium Bricks Slab](..\slabs\brick-slabs\radium-brick-slab.md)
 
 {% endtab %}
 
 {% tab title="Stonecutting" %}
 <figure><img src="https://minecraft.wiki/images/Stonecutter_JE2_BE1.gif?bb269" alt=""><figcaption><p>Cut with the<br><a href="https://minecraft.wiki/w/Stonecutter">Stonecutter</a></p></figcaption></figure>
 
-<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RadiumBlock.png?raw=true" alt="" data-size="line"> <a href="">Block of Radium</a></td><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RadiumBricks.png?raw=true" alt="" data-size="line"> Radium Bricks</td><td>4</td></tr></tbody></table>
+<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RadiumBlock.png?raw=true" alt="" data-size="line"> <a href="..\ore-blocks\block-of-radium.md">Block of Radium</a></td><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/RadiumBricks.png?raw=true" alt="" data-size="line"> Radium Bricks</td><td>4</td></tr></tbody></table>
 
 {% endtab %}
 {% endtabs %}

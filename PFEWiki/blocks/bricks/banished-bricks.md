@@ -36,7 +36,7 @@ description: Last updated to match v1.3.06
 
 Items:
 
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star.png?raw=true" alt="" data-size="line"> Banished Star
+* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star.png?raw=true" alt="" data-size="line"> [Banished Star](..\..\items\banished-stars\banished-star.md)
 
 Outputs:
 

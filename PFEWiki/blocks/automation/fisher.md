@@ -32,12 +32,12 @@ description: Last updated to match v1.3.06
 ||||
 | :-: | :-: | :-: |
 | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) | ![](https://minecraft.wiki/images/Cobweb_JE7_BE4.png?dc40f) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](https://minecraft.wiki/images/Fishing_Rod_JE2_BE2.png?4862d) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://minecraft.wiki/images/Fishing_Rod_JE2_BE2.png?4862d) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) |
 
 Items:
 
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="" data-size="line"> Cobalt Ingot
+* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="" data-size="line"> [Cobalt Ingot](..\..\items\ingots\cobalt-ingot.md)
 
 *  <img src="https://minecraft.wiki/images/Cobweb_JE7_BE4.png?dc40f" alt="" data-size="line"> [Cobweb](https://minecraft.wiki/w/Cobweb)
 
@@ -49,7 +49,7 @@ Outputs:
 
 Recipe can be unlocked with:
 
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="" data-size="line"> Cobalt Ingot
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="" data-size="line"> [Cobalt Ingot](..\..\items\ingots\cobalt-ingot.md)
 
 * <img src="https://minecraft.wiki/images/Cobweb_JE7_BE4.png?dc40f" alt="" data-size="line"> [Cobweb](https://minecraft.wiki/w/Cobweb)
 

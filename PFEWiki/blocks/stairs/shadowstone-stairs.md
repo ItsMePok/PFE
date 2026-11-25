@@ -31,13 +31,13 @@ description: Last updated to match v1.3.06
 
 ||||
 | :-: | :-: | :-: |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/Shadowstone.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/Shadowstone.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/Shadowstone.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/Shadowstone.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/Shadowstone.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/Shadowstone.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
 | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/Shadowstone.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/Shadowstone.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/Shadowstone.png?raw=true) |
 
 Items:
 
-* 6x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/Shadowstone.png?raw=true" alt="" data-size="line"> Shadowstone
+* 6x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/Shadowstone.png?raw=true" alt="" data-size="line"> [Shadowstone](..\misc\shadowstone.md)
 
 Outputs:
 
@@ -45,14 +45,14 @@ Outputs:
 
 Recipe can be unlocked with:
 
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/Shadowstone.png?raw=true" alt="" data-size="line"> Shadowstone
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/Shadowstone.png?raw=true" alt="" data-size="line"> [Shadowstone](..\misc\shadowstone.md)
 
 {% endtab %}
 
 {% tab title="Stonecutting" %}
 <figure><img src="https://minecraft.wiki/images/Stonecutter_JE2_BE1.gif?bb269" alt=""><figcaption><p>Cut with the<br><a href="https://minecraft.wiki/w/Stonecutter">Stonecutter</a></p></figcaption></figure>
 
-<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/Shadowstone.png?raw=true" alt="" data-size="line"> <a href="">Shadowstone</a></td><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/ShadowstoneStairs.png?raw=true" alt="" data-size="line"> Shadowstone Stairs</td><td>1</td></tr></tbody></table>
+<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/Shadowstone.png?raw=true" alt="" data-size="line"> <a href="..\misc\shadowstone.md">Shadowstone</a></td><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/ShadowstoneStairs.png?raw=true" alt="" data-size="line"> Shadowstone Stairs</td><td>1</td></tr></tbody></table>
 
 {% endtab %}
 {% endtabs %}

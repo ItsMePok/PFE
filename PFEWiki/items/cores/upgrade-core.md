@@ -1,27 +1,15 @@
+---
+description: Last updated to match v1.3.06
+---
+
 # Upgrade Core
 
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/upgrade_core.png?raw=true" alt=""><figcaption></figcaption></figure>
 
-## <img src="https://minecraft.wiki/images/Book_and_Quill_JE2_BE2.png?2128f" alt="Book and Quill." data-size="line"> Description: <a href="#description" id="description"></a>
-
-* The <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/upgrade_core.png?raw=true" alt="Upgrade Core." data-size="line"> Upgrade Core is used as a crafting component for upgrading various things in PFE
-
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:upgrade\_core**</mark> <a href="#identifier" id="identifier"></a>
+
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark> <a href="#rarity" id="rarity"></a>
 
 ## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">64</mark> <a href="#stack-size" id="stack-size"></a>
 
-## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining: <a href="#obtaining" id="obtaining"></a>
-
-{% tabs %}
-{% tab title="Trade" %}
-<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/entity_icon/TokenTrader.png?raw=true" alt=""><figcaption><p>Sold by the <a href="../../mobs/traders/token-trader.md">Token Trader</a></p></figcaption></figure>
-
-<table><thead><tr><th align="center">Wants</th><th data-type="number">Amount</th><th align="center">Gives</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td align="center"><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/gold_token.png?raw=true" alt="Gold Token." data-size="line"> <a href="../currency/tokens/gold-token.md">Gold Token</a></td><td>1</td><td align="center"><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/upgrade_core.png?raw=true" alt="Upgrade Core." data-size="line"> Upgrade Core</td><td>1</td></tr></tbody></table>
-
-***
-
-<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/entity_icon/Shopkeeper.png?raw=true" alt=""><figcaption><p>Sold by the <a href="../../mobs/traders/shopkeeper.md">Shopkeeper</a></p></figcaption></figure>
-
-<table><thead><tr><th align="center">Wants</th><th data-type="number">Amount</th><th align="center">Gives</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td align="center"><a href="../banished-stars/banished-star-x4.md"><img src="https://pfewiki.gitbook.io/~gitbook/image?url=https%3A%2F%2Fgithub.com%2FItsMePok%2FPFE%2Fassets%2F136857747%2Ffe59da80-6212-4204-9d12-39e0bdbc55ff&#x26;width=768&#x26;dpr=1&#x26;quality=100&#x26;sign=aa843470&#x26;sv=1" alt="" data-size="line">Banished Star x4</a></td><td>1</td><td align="center"><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/upgrade_core.png?raw=true" alt="Upgrade Core." data-size="line"> Upgrade Core</td><td>1</td></tr></tbody></table>
-{% endtab %}
-{% endtabs %}
+This page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool

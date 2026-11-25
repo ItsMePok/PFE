@@ -1,56 +1,68 @@
 ---
-description: 'Last updated to match: v1.2.94'
+description: Last updated to match v1.3.06
 ---
 
 # Duster
 
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/Duster.png?raw=true" alt=""><figcaption></figcaption></figure>
 
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:duster**</mark> <a href="#identifier" id="identifier"></a>
 
-<div><figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/Automation/duster.png?raw=true" alt=""><figcaption></figcaption></figure> <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/Automation/VVduster.png?raw=true" alt="Duster (with Vibrant Visuals)"><figcaption></figcaption></figure></div>
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark> <a href="#rarity" id="rarity"></a>
 
-<details>
+## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">64</mark> <a href="#stack-size" id="stack-size"></a>
 
-<summary>Identifiers:</summary>
+## <img src="https://minecraft.wiki/images/Note_Block_JE2_BE2.png?0bf0f" alt="" data-size="line"> Note Sound: <mark style="color:yellow;">Bass Drum</mark>
 
-* poke:duster
-* poke:duster\_up
-* poke:duster\_down
-* poke:duster\_north
-* poke:duster\_south
-* poke:duster\_east
-* poke:duster\_west
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/waypointRed.png?raw=true" alt="" data-size="line"> Map Color: <mark style="color:yellow;">#22222f</mark> <mark style="color:$info;">(hex)</mark>
 
-</details>
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/BlockBreak.png?raw=true" alt="" data-size="line"> Preferred Tool: <mark style="color:yellow;">Axe</mark>
 
-## When powered with <img src="https://minecraft.wiki/images/thumb/Redstone_Dust_JE2_BE2.png/150px-Redstone_Dust_JE2_BE2.png?8cf17" alt="" data-size="line">Redstone:
+* &#x20;Time to break with preferred tool (baseline): <mark style="color:yellow;">1.25 seconds</mark>
+* Time to break by hand: <mark style="color:yellow;">5 seconds</mark>
 
-* Converts:
-  * <img src="https://minecraft.wiki/images/Cobblestone_JE5_BE3.png?29624" alt="" data-size="line"> Cobblestone -> <img src="https://minecraft.wiki/images/thumb/Gravel_JE5_BE4.png/150px-Gravel_JE5_BE4.png?bb814" alt="" data-size="line"> Gravel
-  * <img src="https://minecraft.wiki/images/Dirt.png?89d72" alt="" data-size="line"> Dirt -> <img src="https://minecraft.wiki/images/thumb/Sand_JE5_BE3.png/150px-Sand_JE5_BE3.png?ae2df" alt="" data-size="line"> Sand
-
-### Notes:
-
-* Can be recalibrated by interacting with the side of the block you want it to target
-* Will continue to trigger every 10 ticks (½ second) if still powered with <img src="https://minecraft.wiki/images/thumb/Redstone_Dust_JE2_BE2.png/150px-Redstone_Dust_JE2_BE2.png?8cf17" alt="" data-size="line">Redstone
-
-## Obtaining:
+## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining: <a href="#obtaining" id="obtaining"></a>
 
 {% tabs %}
-{% tab title="Recipe" %}
-<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-|                                                                                                  |                                                                                                                             |                                                                                                  |
-| :----------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: |
-| ![Cobalt Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) | <img src="https://minecraft.wiki/images/thumb/Oak_Planks.png/150px-Oak_Planks.png?d9efa" alt="Planks" data-size="original"> | ![Cobalt Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) |
-|                    ![](https://minecraft.wiki/images/Brush_JE1_BE1.png?fd417)                    |                     ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/gps_module.png?raw=true)                    |                    ![](https://minecraft.wiki/images/Brush_JE1_BE1.png?fd417)                    |
-| ![Cobalt Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) |                      ![](https://minecraft.wiki/images/thumb/Oak_Planks.png/150px-Oak_Planks.png?d9efa)                     | ![Cobalt Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) |
+{% tab title="Crafting" %}
+
+<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the<br><a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
+
+||||
+| :-: | :-: | :-: |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) | ![](https://minecraft.wiki/images/Oak_Planks.png?d9efa&format=original) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) |
+| ![](https://minecraft.wiki/images/Brush_JE1_BE1.png?fd417) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/gps_module.png?raw=true) | ![](https://minecraft.wiki/images/Brush_JE1_BE1.png?fd417) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) | ![](https://minecraft.wiki/images/Oak_Planks.png?d9efa&format=original) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true) |
+
+Items:
+
+* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="" data-size="line"> [Cobalt Ingot](..\..\items\ingots\cobalt-ingot.md)
+
+* 2x <img src="https://minecraft.wiki/images/Oak_Planks.png?d9efa&format=original" alt="" data-size="line"> [Any Planks](https://minecraft.wiki/w/Planks)
+
+* 2x <img src="https://minecraft.wiki/images/Brush_JE1_BE1.png?fd417" alt="" data-size="line"> [Brush](https://minecraft.wiki/w/Brush)
+
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/gps_module.png?raw=true" alt="" data-size="line"> [GPS Module](..\..\items\crafting-components\gps-module.md)
+
+Outputs:
+
+* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/Duster.png?raw=true" alt="" data-size="line"> [Duster](duster.md)
+
+Recipe can be unlocked with:
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobblestoneGenerator.png?raw=true" alt="" data-size="line"> [Cobblestone Generator](cobblestone-generator.md)
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="" data-size="line"> [Cobalt Ingot](..\..\items\ingots\cobalt-ingot.md)
+
+* <img src="https://minecraft.wiki/images/Oak_Planks.png?d9efa&format=original" alt="" data-size="line"> [Any Planks](https://minecraft.wiki/w/Planks)
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/gps_module.png?raw=true" alt="" data-size="line"> [GPS Module](..\..\items\crafting-components\gps-module.md)
+
+* <img src="https://minecraft.wiki/images/Brush_JE1_BE1.png?fd417" alt="" data-size="line"> [Brush](https://minecraft.wiki/w/Brush)
+
 {% endtab %}
 
-{% tab title="Structures" %}
-<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/structures-pixel/AbandonedShip.png?raw=true" alt=""><figcaption><p>Found in the <a href="../../sturctures/abandoned-ship.md">Abandoned Ship</a></p></figcaption></figure>
-
-| Item                                                                                                                             | Amount | Weight |
-| -------------------------------------------------------------------------------------------------------------------------------- | ------ | :----: |
-| <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/Automation/duster.png?raw=true" alt="Duster." data-size="line"> Duster | 1      |    2   |
-{% endtab %}
 {% endtabs %}
+
+This page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool

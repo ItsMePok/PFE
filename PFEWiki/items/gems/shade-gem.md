@@ -1,17 +1,55 @@
+---
+description: Last updated to match v1.3.06
+---
+
 # Shade Gem
 
-![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_gem.png?raw=true)
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_gem.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:shade\_gem**</mark> <a href="#identifier" id="identifier"></a>
 
-Used in crafting:
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark> <a href="#rarity" id="rarity"></a>
 
-* [Shade Ring](https://github.com/ItsMePok/PFE/wiki/Shade-Ring)
-* [Player Magnet](https://github.com/ItsMePok/PFE/wiki/Player-Magnet)
+## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">64</mark> <a href="#stack-size" id="stack-size"></a>
 
-## Obtaining:
+## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining: <a href="#obtaining" id="obtaining"></a>
 
-* Crafted with:
-  * 1x [Warp Ring](https://github.com/ItsMePok/PFE/wiki/Warp-Ring)
-  * 4x [Radium Ingot](https://github.com/ItsMePok/PFE/wiki/Radium-Ingot)
-  * 4x [Shade Ingot](https://github.com/ItsMePok/PFE/wiki/Shade-Ingot)
+{% tabs %}
+
+{% tab title="Crafting" %}
+
+<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the<br><a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
+
+||||
+| :-: | :-: | :-: |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_ingot.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/radium_ingot.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_ingot.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/radium_ingot.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/warp_ring.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/radium_ingot.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_ingot.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/radium_ingot.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_ingot.png?raw=true) |
+
+Items:
+
+* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_ingot.png?raw=true" alt="" data-size="line"> [Shade Ingot](..\ingots\shade-ingot.md)
+
+* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/radium_ingot.png?raw=true" alt="" data-size="line"> [Radium Ingot](..\ingots\radium-ingot.md)
+
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/warp_ring.png?raw=true" alt="" data-size="line"> [Warp Ring](..\..\tools\rings\warp-ring.md)
+
+Outputs:
+
+* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_gem.png?raw=true" alt="" data-size="line"> [Shade Gem](shade-gem.md)
+
+Recipe can be unlocked with:
+
+* <img src="undefined" alt="" data-size="line"> [Ender Holder](..\gem-holders\ender-holder.md)
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/warp_ring.png?raw=true" alt="" data-size="line"> [Warp Ring](..\..\tools\rings\warp-ring.md)
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/radium_ingot.png?raw=true" alt="" data-size="line"> [Radium Ingot](..\ingots\radium-ingot.md)
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/shade_ingot.png?raw=true" alt="" data-size="line"> [Shade Ingot](..\ingots\shade-ingot.md)
+
+{% endtab %}
+
+{% endtabs %}
+
+This page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool

@@ -1,14 +1,49 @@
+---
+description: Last updated to match v1.3.06
+---
+
 # Strength Gem
 
-![poke\_strength\_gem](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/strength_gem.png?raw=true)
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/strength_gem.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:strength\_gem**</mark> <a href="#identifier" id="identifier"></a>
 
-Usage: **Used in crafting the** [**Strength Ring**](https://github.com/ItsMePok/PFE/wiki/Strength-Ring)
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark> <a href="#rarity" id="rarity"></a>
 
-## Obtaining:
+## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">64</mark> <a href="#stack-size" id="stack-size"></a>
 
-* Crafted with:
-  * 4x Netherite Sword
-  * 4x Diamond Sword
-  * 1x Netherite Block
+## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining: <a href="#obtaining" id="obtaining"></a>
+
+{% tabs %}
+
+{% tab title="Crafting" %}
+
+<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the<br><a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
+
+||||
+| :-: | :-: | :-: |
+| ![](https://minecraft.wiki/images/Netherite_Sword_JE2_BE2.png?8e866) | ![](https://minecraft.wiki/images/Diamond_Sword_JE3_BE3.png?24296) | ![](https://minecraft.wiki/images/Netherite_Sword_JE2_BE2.png?8e866) |
+| ![](https://minecraft.wiki/images/Diamond_Sword_JE3_BE3.png?24296) | ![](https://minecraft.wiki/images/Block_of_Netherite_JE1_BE1.png?a781f) | ![](https://minecraft.wiki/images/Diamond_Sword_JE3_BE3.png?24296) |
+| ![](https://minecraft.wiki/images/Netherite_Sword_JE2_BE2.png?8e866) | ![](https://minecraft.wiki/images/Diamond_Sword_JE3_BE3.png?24296) | ![](https://minecraft.wiki/images/Netherite_Sword_JE2_BE2.png?8e866) |
+
+Items:
+
+* 4x <img src="https://minecraft.wiki/images/Netherite_Sword_JE2_BE2.png?8e866" alt="" data-size="line"> [Netherite Sword](https://minecraft.wiki/w/Netherite_Sword)
+
+* 4x <img src="https://minecraft.wiki/images/Diamond_Sword_JE3_BE3.png?24296" alt="" data-size="line"> [Diamond Sword](https://minecraft.wiki/w/Diamond_Sword)
+
+*  <img src="https://minecraft.wiki/images/Block_of_Netherite_JE1_BE1.png?a781f" alt="" data-size="line"> [Block of Netherite](https://minecraft.wiki/w/Block_of_Netherite)
+
+Outputs:
+
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/strength_gem.png?raw=true" alt="" data-size="line"> [Strength Gem](strength-gem.md)
+
+Recipe can be unlocked with:
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/diamond_gem_holder.png?raw=true" alt="" data-size="line"> [Diamond Gem Holder](..\gem-holders\diamond-gem-holder.md)
+
+{% endtab %}
+
+{% endtabs %}
+
+This page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool

@@ -1,37 +1,51 @@
+---
+description: Last updated to match v1.3.06
+---
+
 # Netherite Haxel
 
-![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/netherite_haxel.png?raw=true)
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/netherite_haxel.png?raw=true" alt=""><figcaption></figcaption></figure>
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: **poke_pfe:netherite\_haxel**
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:netherite\_haxel**</mark> <a href="#identifier" id="identifier"></a>
 
-Durability: **4096**
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark> <a href="#rarity" id="rarity"></a>
 
-Damage: **7**
+## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">1</mark> <a href="#stack-size" id="stack-size"></a>
 
-Interact Ability:
+## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining: <a href="#obtaining" id="obtaining"></a>
 
-* Mines a 3x3x2 Around the player
-* 0.3s Cooldown
+{% tabs %}
 
-Mining Speed: **50**
+{% tab title="Crafting" %}
 
-Enchant type: **Axe**
+<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the<br><a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-Repairable with:
+||||
+| :-: | :-: | :-: |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/ScrappyBlock.png?raw=true) | ![](https://minecraft.wiki/images/Netherite_Ingot_JE1_BE2.png?79364) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/ScrappyBlock.png?raw=true) |
+| ![](https://minecraft.wiki/images/Netherite_Ingot_JE1_BE2.png?79364) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/diamond_haxel.png?raw=true) | ![](https://minecraft.wiki/images/Netherite_Ingot_JE1_BE2.png?79364) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/ScrappyBlock.png?raw=true) | ![](https://minecraft.wiki/images/Netherite_Ingot_JE1_BE2.png?79364) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/ScrappyBlock.png?raw=true) |
 
-* [**Repair Core**](https://pfewiki.gitbook.io/home/items/cores/repair-core)
-* [**Scrappy Block**](https://github.com/ItsMePok/PFE/wiki/Scrapppy-Block)
-* **Netherite Ingot**
-* **Netherite Scrap**
+Items:
 
-Can Break:
+* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/ScrappyBlock.png?raw=true" alt="" data-size="line"> [Block of Netherite Scrap](..\..\blocks\ore-blocks\block-of-netherite-scrap.md)
 
-* **All PFE Blocks**
-* **All Survival Obtainable Vanilla Blocks**
+* 4x <img src="https://minecraft.wiki/images/Netherite_Ingot_JE1_BE2.png?79364" alt="" data-size="line"> [Netherite Ingot](https://minecraft.wiki/w/Netherite_Ingot)
 
-## Obtaining:
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/diamond_haxel.png?raw=true" alt="" data-size="line"> [Diamond Haxel](diamond-haxel.md)
 
-* Crafted With:
-  * 4x [**Scrappy Block**](https://github.com/ItsMePok/PFE/wiki/Scrapppy-Block)
-  * 1x [**Diamond Haxel**](https://github.com/ItsMePok/PFE/wiki/Diamond-Haxel)
-  * 4x **Netherite Ingot**
+Outputs:
+
+* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/netherite_haxel.png?raw=true" alt="" data-size="line"> [Netherite Haxel](netherite-haxel.md)
+
+Recipe can be unlocked with:
+
+* <img src="https://minecraft.wiki/images/Netherite_Ingot_JE1_BE2.png?79364" alt="" data-size="line"> [Netherite Ingot](https://minecraft.wiki/w/Netherite_Ingot)
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/diamond_haxel.png?raw=true" alt="" data-size="line"> [Diamond Haxel](diamond-haxel.md)
+
+{% endtab %}
+
+{% endtabs %}
+
+This page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool

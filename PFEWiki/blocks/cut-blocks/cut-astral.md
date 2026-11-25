@@ -44,23 +44,17 @@ Outputs:
 
 Recipe can be unlocked with:
 
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/astral_ingot.png?raw=true" alt="" data-size="line"> Astral Ingot
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/astral_ingot.png?raw=true" alt="" data-size="line"> [Astral Ingot](..\..\items\ingots\astral-ingot.md)
 
 {% endtab %}
 
-{% tab title="Stonecutting" %}
-<figure><img src="https://minecraft.wiki/images/Stonecutter_JE2_BE1.gif?bb269" alt=""><figcaption><p>Cut with the<br><a href="https://minecraft.wiki/w/Stonecutter">Stonecutter</a></p></figcaption></figure>
-
-<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/AstralBlock.png?raw=true" alt="" data-size="line"> <a href="..\ore-blocks\block-of-astral.md">Block of Astral</a></td><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutAstral.png?raw=true" alt="" data-size="line"> Cut Astral</td><td>4</td></tr></tbody></table>
-
-{% endtab %}
 {% tab title="Crafting" %}
 
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the<br><a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
 |||
 | :-: | :-: |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
 
 
 Items:
@@ -71,10 +65,16 @@ Outputs:
 
 Recipe can be unlocked with:
 
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutAstralSlab.png?raw=true" alt="" data-size="line"> Cut Astral Slab
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutAstralSlab.png?raw=true" alt="" data-size="line"> [Cut Astral Slab](..\slabs\cut-slabs\cut-astral-slab.md)
 
 {% endtab %}
 
+{% tab title="Stonecutting" %}
+<figure><img src="https://minecraft.wiki/images/Stonecutter_JE2_BE1.gif?bb269" alt=""><figcaption><p>Cut with the<br><a href="https://minecraft.wiki/w/Stonecutter">Stonecutter</a></p></figcaption></figure>
+
+<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/AstralBlock.png?raw=true" alt="" data-size="line"> <a href="..\ore-blocks\block-of-astral.md">Block of Astral</a></td><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutAstral.png?raw=true" alt="" data-size="line"> Cut Astral</td><td>4</td></tr></tbody></table>
+
+{% endtab %}
 {% endtabs %}
 
 This page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool

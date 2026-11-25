@@ -1,36 +1,53 @@
+---
+description: Last updated to match v1.3.06
+---
+
 # Demonic Haxel
 
-![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_haxel.png?raw=true)
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_haxel.png?raw=true" alt=""><figcaption></figcaption></figure>
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: **poke_pfe:demonic\_haxel**
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:demonic\_haxel**</mark> <a href="#identifier" id="identifier"></a>
 
-Durability: **4250**
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark> <a href="#rarity" id="rarity"></a>
 
-Damage: **12**
+## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">1</mark> <a href="#stack-size" id="stack-size"></a>
 
-Interact Ability:
+## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining: <a href="#obtaining" id="obtaining"></a>
 
-* Mines a 5x5x5 Around the player
-* 0.3s Cooldown
+{% tabs %}
 
-Mining Speed: **70**
+{% tab title="Crafting" %}
 
-Enchant type: **Axe**
+<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the<br><a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-Repairable with:
+||||
+| :-: | :-: | :-: |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/DemonicBlock.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/DemonicBlock.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/DemonicBlock.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/DemonicBlock.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/diamond_upgrade_core.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/hellish_haxel.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
 
-* [**Repair Core**](https://pfewiki.gitbook.io/home/items/cores/repair-core)
-* [**Demonic Ingot**](https://pfewiki.gitbook.io/home/items/ingots/demonic-ingot)
-* [**Demonic Nugget**](https://github.com/ItsMePok/PFE/wiki/Demonic-Nugget)
+Items:
 
-Can Break:
+* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/DemonicBlock.png?raw=true" alt="" data-size="line"> [Block of Demonic](..\..\blocks\ore-blocks\demonic-block.md)
 
-* **All PFE Blocks**
-* **All Survival Obtainable Vanilla Blocks**
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/diamond_upgrade_core.png?raw=true" alt="" data-size="line"> [Diamond Upgrade Core](..\..\items\cores\diamond-upgrade-core.md)
 
-## Obtaining:
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/hellish_haxel.png?raw=true" alt="" data-size="line"> [Hellish Haxel](hellish-haxel.md)
 
-* Crafted With:
-  * 4x [**Demonic Block**](https://pfewiki.gitbook.io/home/blocks/ore-blocks/demonic-block)
-  * 1x [**Diamond Upgrade Core**](https://github.com/ItsMePok/PFE/wiki/Diamond-Upgrade-Core)
-  * 1x [**Hellish Haxel**](https://github.com/ItsMePok/PFE/wiki/Hellish-Haxel)
+Outputs:
+
+* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_haxel.png?raw=true" alt="" data-size="line"> [Demonic Haxel](demonic-haxel.md)
+
+Recipe can be unlocked with:
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true" alt="" data-size="line"> [Demonic Ingot](..\..\items\ingots\demonic-ingot.md)
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/hellish_haxel.png?raw=true" alt="" data-size="line"> [Hellish Haxel](hellish-haxel.md)
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/diamond_upgrade_core.png?raw=true" alt="" data-size="line"> [Diamond Upgrade Core](..\..\items\cores\diamond-upgrade-core.md)
+
+{% endtab %}
+
+{% endtabs %}
+
+This page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool

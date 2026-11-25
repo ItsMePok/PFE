@@ -1,23 +1,15 @@
+---
+description: Last updated to match v1.3.06
+---
+
 # Knightling Helmet
 
-![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/knightling_helmet.png?raw=true)
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/knightling_helmet.png?raw=true" alt=""><figcaption></figcaption></figure>
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: **poke_pfe:knightling\_helmet**
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:knightling\_helmet**</mark> <a href="#identifier" id="identifier"></a>
 
-## Durability: **1500**
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Uncommon</mark> <a href="#rarity" id="rarity"></a>
 
-## Armor: **6**
+## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">1</mark> <a href="#stack-size" id="stack-size"></a>
 
-## Enchant type: **Helmet**
-
-## Repairable with:
-
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/repair_core.png?raw=true" alt="Repair Core." data-size="line"> [Repair Core](../items/cores/repair-core.md) <mark style="color:yellow;">(100%)</mark>
-
-## Trimmable: Yes
-
-## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 1
-
-## Obtaining:
-
-* Dropped from the [Knightling](https://github.com/ItsMePok/PFE/wiki/Knightling)
+This page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool

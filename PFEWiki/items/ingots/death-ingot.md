@@ -1,43 +1,84 @@
+---
+description: Last updated to match v1.3.06
+---
+
 # Death Ingot
 
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/death_ingot.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:death\_ingot**</mark> <a href="#identifier" id="identifier"></a>
 
-## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 64
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark> <a href="#rarity" id="rarity"></a>
 
-## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining:
+## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">64</mark> <a href="#stack-size" id="stack-size"></a>
+
+## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining: <a href="#obtaining" id="obtaining"></a>
 
 {% tabs %}
-{% tab title="Recipe" %}
-<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-|                                                                                                 |                                                                                                             |                                                                                                 |
-| :---------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: |
-| ![Void Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_ingot.png?raw=true) |       ![Void Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_ingot.png?raw=true)       | ![Void Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_ingot.png?raw=true) |
-| ![Void Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_ingot.png?raw=true) | ![Molten Slimeball](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/molten_slimeball.png?raw=true) | ![Onyx Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_ingot.png?raw=true) |
-| ![Onyx Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_ingot.png?raw=true) |       ![Onyx Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_ingot.png?raw=true)       | ![Onyx Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_ingot.png?raw=true) |
+{% tab title="Crafting" %}
 
-Items:
+<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the<br><a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-* Void Ingot
-* Onyx Ingot
-* Molten Slimeball
-{% endtab %}
-
-{% tab title="Recipe 2" %}
-<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a>.</p></figcaption></figure>
-
-|                                                                                                      |
-| :--------------------------------------------------------------------------------------------------: |
-| ![Death Block](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/DeathBlock.png?raw=true) |
+||||
+| :-: | :-: | :-: |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_ingot.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_ingot.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_ingot.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_ingot.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/molten_slimeball.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_ingot.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_ingot.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_ingot.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_ingot.png?raw=true) |
 
 Items:
 
-* Death Block
+* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_ingot.png?raw=true" alt="" data-size="line"> [Void Ingot](void-ingot.md)
+
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/molten_slimeball.png?raw=true" alt="" data-size="line"> [Molten Slimeball](molten-slimeball.md)
+
+* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_ingot.png?raw=true" alt="" data-size="line"> [Onyx Ingot](onyx-ingot.md)
 
 Outputs:
 
-* 9x: Death Ingots
+* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/death_ingot.png?raw=true" alt="" data-size="line"> [Death Ingot](death-ingot.md)
+
+Recipe can be unlocked with:
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_ingot.png?raw=true" alt="" data-size="line"> [Void Ingot](void-ingot.md)
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_ingot.png?raw=true" alt="" data-size="line"> [Onyx Ingot](onyx-ingot.md)
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_sword.png?raw=true" alt="" data-size="line"> [Void Sword](..\..\weapons\swords\void-sword.md)
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_nugget.png?raw=true" alt="" data-size="line"> [Void Nugget](..\nuggets\void-nugget.md)
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/VoidBlock.png?raw=true" alt="" data-size="line"> [Block of Void](..\..\blocks\ore-blocks\void-block.md)
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_scythe.png?raw=true" alt="" data-size="line"> [Void Scythe](..\..\weapons\scythes\void-scythe.md)
+
+* <img src="undefined" alt="" data-size="line"> [Void Battleaxe](..\..\weapons\battleaxes\void-battleaxe.md)
+
 {% endtab %}
+
+{% tab title="Crafting" %}
+
+<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the<br><a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
+
+||
+| :-: |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/DeathBlock.png?raw=true) |
+
+
+Items:
+
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/DeathBlock.png?raw=true" alt="" data-size="line"> [Block of Death](..\..\blocks\ore-blocks\block-of-death.md)
+
+Outputs:
+
+* 9x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/death_ingot.png?raw=true" alt="" data-size="line"> [Death Ingot](death-ingot.md)
+
+Recipe can be unlocked with:
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/DeathBlock.png?raw=true" alt="" data-size="line"> [Block of Death](..\..\blocks\ore-blocks\block-of-death.md)
+
+{% endtab %}
+
 {% endtabs %}
+
+This page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool

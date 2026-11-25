@@ -39,11 +39,11 @@ Items:
 
 * 4x <img src="https://minecraft.wiki/images/Iron_Ingot_JE3_BE2.png?849cb" alt="" data-size="line"> [Iron Ingot](https://minecraft.wiki/w/Iron_Ingot)
 
-* 2x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_ingot.png?raw=true" alt="" data-size="line"> Onyx Ingot
+* 2x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_ingot.png?raw=true" alt="" data-size="line"> [Onyx Ingot](..\..\items\ingots\onyx-ingot.md)
 
 *  <img src="https://minecraft.wiki/images/Redstone_Dust_JE2_BE2.png?8cf17" alt="" data-size="line"> [Redstone Dust](https://minecraft.wiki/w/Redstone_Dust)
 
-*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/electric_component.png?raw=true" alt="" data-size="line"> Electric Component
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/electric_component.png?raw=true" alt="" data-size="line"> [Electric Component](..\..\items\crafting-components\electric-component.md)
 
 *  <img src="https://minecraft.wiki/images/Blue_Ice_JE1.png?b5deb" alt="" data-size="line"> [Blue Ice](https://minecraft.wiki/w/Blue_Ice)
 
@@ -63,9 +63,9 @@ Recipe can be unlocked with:
 
 * <img src="https://minecraft.wiki/images/Blue_Ice_JE1.png?b5deb" alt="" data-size="line"> [Blue Ice](https://minecraft.wiki/w/Blue_Ice)
 
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_ingot.png?raw=true" alt="" data-size="line"> Onyx Ingot
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_ingot.png?raw=true" alt="" data-size="line"> [Onyx Ingot](..\..\items\ingots\onyx-ingot.md)
 
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/electric_component.png?raw=true" alt="" data-size="line"> Electric Component
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/electric_component.png?raw=true" alt="" data-size="line"> [Electric Component](..\..\items\crafting-components\electric-component.md)
 
 {% endtab %}
 

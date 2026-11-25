@@ -36,7 +36,7 @@ description: Last updated to match v1.3.06
 
 Items:
 
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobaltBlock.png?raw=true" alt="" data-size="line"> Block of Cobalt
+* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobaltBlock.png?raw=true" alt="" data-size="line"> [Block of Cobalt](..\ore-blocks\cobalt-block.md)
 
 Outputs:
 
@@ -44,23 +44,17 @@ Outputs:
 
 Recipe can be unlocked with:
 
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="" data-size="line"> Cobalt Ingot
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="" data-size="line"> [Cobalt Ingot](..\..\items\ingots\cobalt-ingot.md)
 
 {% endtab %}
 
-{% tab title="Stonecutting" %}
-<figure><img src="https://minecraft.wiki/images/Stonecutter_JE2_BE1.gif?bb269" alt=""><figcaption><p>Cut with the<br><a href="https://minecraft.wiki/w/Stonecutter">Stonecutter</a></p></figcaption></figure>
-
-<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobaltBlock.png?raw=true" alt="" data-size="line"> <a href="">Block of Cobalt</a></td><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutCobalt.png?raw=true" alt="" data-size="line"> Cut Cobalt</td><td>4</td></tr></tbody></table>
-
-{% endtab %}
 {% tab title="Crafting" %}
 
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the<br><a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
 |||
 | :-: | :-: |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
 
 
 Items:
@@ -71,10 +65,16 @@ Outputs:
 
 Recipe can be unlocked with:
 
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutCobaltSlab.png?raw=true" alt="" data-size="line"> Cut Cobalt Slab
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutCobaltSlab.png?raw=true" alt="" data-size="line"> [Cut Cobalt Slab](..\slabs\cut-slabs\cut-cobalt-slab.md)
 
 {% endtab %}
 
+{% tab title="Stonecutting" %}
+<figure><img src="https://minecraft.wiki/images/Stonecutter_JE2_BE1.gif?bb269" alt=""><figcaption><p>Cut with the<br><a href="https://minecraft.wiki/w/Stonecutter">Stonecutter</a></p></figcaption></figure>
+
+<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobaltBlock.png?raw=true" alt="" data-size="line"> <a href="..\ore-blocks\cobalt-block.md">Block of Cobalt</a></td><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutCobalt.png?raw=true" alt="" data-size="line"> Cut Cobalt</td><td>4</td></tr></tbody></table>
+
+{% endtab %}
 {% endtabs %}
 
 This page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool

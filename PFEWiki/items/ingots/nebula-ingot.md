@@ -1,45 +1,60 @@
+---
+description: Last updated to match v1.3.06
+---
+
 # Nebula Ingot
 
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_ingot.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:nebula\_ingot**</mark> <a href="#identifier" id="identifier"></a>
 
-## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 64
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark> <a href="#rarity" id="rarity"></a>
 
-## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining:
+## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">64</mark> <a href="#stack-size" id="stack-size"></a>
+
+## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining: <a href="#obtaining" id="obtaining"></a>
 
 {% tabs %}
-{% tab title="Untitled" %}
-<div><figure><img src="https://minecraft.wiki/images/Lit_Furnace_(S).gif?40e71" alt=""><figcaption><p>Smelted in a <a href="https://minecraft.wiki/w/Furnace">Furnace</a></p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/thumb/Blast_Furnace_(S)_JE1.png/150px-Blast_Furnace_(S)_JE1.png?f1920" alt=""><figcaption><p>Smelted in a <a href="https://minecraft.wiki/w/Blast_Furnace">Blast Furnace</a></p></figcaption></figure></div>
 
-<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_nebula.png?raw=true" alt="Raw Nebula." data-size="line"> <a href="../raw-ore/raw-nebula.md">Raw Nebula</a></td><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_ingot.png?raw=true" alt="Nebula Ingot." data-size="line"> Nebula Ingot</td><td>1</td></tr></tbody></table>
-{% endtab %}
+{% tab title="Crafting" %}
 
-{% tab title="Recipe" %}
-<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
+<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the<br><a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-|     |                                                                                            |     |
-| :-: | :----------------------------------------------------------------------------------------: | :-: |
-|     |                                                                                            |     |
-|     | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/NebulaBlock.png?raw=true) |     |
-|     |                                                                                            |     |
+||
+| :-: |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/NebulaBlock.png?raw=true) |
+
 
 Items:
 
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/NebulaBlock.png?raw=true" alt="" data-size="line"> [Nebula Block](../../blocks/ore-blocks/block-of-nebula.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/NebulaBlock.png?raw=true" alt="" data-size="line"> [Block of Nebula](..\..\blocks\ore-blocks\block-of-nebula.md)
+
+Outputs:
+
+* 9x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_ingot.png?raw=true" alt="" data-size="line"> [Nebula Ingot](nebula-ingot.md)
+
+Recipe can be unlocked with:
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/NebulaBlock.png?raw=true" alt="" data-size="line"> [Block of Nebula](..\..\blocks\ore-blocks\block-of-nebula.md)
+
 {% endtab %}
 
-{% tab title="Recipe 2" %}
-<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
+{% tab title="Smelting" %}
 
-|                                                                                                       |                                                                                                       |                                                                                                       |
-| :---------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------: |
-| ![Nebula Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_nugget.png?raw=true) | ![Nebula Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_nugget.png?raw=true) | ![Nebula Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_nugget.png?raw=true) |
-| ![Nebula Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_nugget.png?raw=true) | ![Nebula Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_nugget.png?raw=true) | ![Nebula Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_nugget.png?raw=true) |
-| ![Nebula Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_nugget.png?raw=true) | ![Nebula Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_nugget.png?raw=true) | ![Nebula Nugget](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_nugget.png?raw=true) |
+<div><figure><img src="https://minecraft.wiki/images/Lit_Furnace_(S).gif?40e71" alt="Furnace."><figcaption><p>Smelted in a <a href="https://minecraft.wiki/w/Furnace">Furnace</a></p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/thumb/Lit_Blast_Furnace_JE1.gif/150px-Lit_Blast_Furnace_JE1.gif?dc6a7" alt="Blast Furnace."><figcaption><p>Smelted in a <a href="https://minecraft.wiki/w/Blast_Furnace">Blast Furnace</a></p></figcaption></figure></div>
 
-Items:
+<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/EndNebulaOre.png?raw=true" alt="End Nebula Ore." data-size="line"> <a href="">End Nebula Ore</a></td><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_ingot.png?raw=true" alt="Nebula Ingot." data-size="line"> Nebula Ingot</td><td>1</td></tr></tbody></table>
 
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_nugget.png?raw=true" alt="Nebula Nugget" data-size="line">[Nebula Nugget](../nuggets/nebula-nugget.md)
 {% endtab %}
+
+{% tab title="Smelting" %}
+
+<div><figure><img src="https://minecraft.wiki/images/Lit_Furnace_(S).gif?40e71" alt="Furnace."><figcaption><p>Smelted in a <a href="https://minecraft.wiki/w/Furnace">Furnace</a></p></figcaption></figure> <figure><img src="https://minecraft.wiki/images/thumb/Lit_Blast_Furnace_JE1.gif/150px-Lit_Blast_Furnace_JE1.gif?dc6a7" alt="Blast Furnace."><figcaption><p>Smelted in a <a href="https://minecraft.wiki/w/Blast_Furnace">Blast Furnace</a></p></figcaption></figure></div>
+
+<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_nebula.png?raw=true" alt="Raw Nebula." data-size="line"> <a href="..\raw-ore\raw-nebula.md">Raw Nebula</a></td><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/nebula_ingot.png?raw=true" alt="Nebula Ingot." data-size="line"> Nebula Ingot</td><td>1</td></tr></tbody></table>
+
+{% endtab %}
+
 {% endtabs %}
+
+This page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool

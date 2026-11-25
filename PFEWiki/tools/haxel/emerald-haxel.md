@@ -1,35 +1,51 @@
+---
+description: Last updated to match v1.3.06
+---
+
 # Emerald Haxel
 
-![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/emerald_haxel.png?raw=true)
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/emerald_haxel.png?raw=true" alt=""><figcaption></figcaption></figure>
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: **poke_pfe:emerald\_haxel**
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:emerald\_haxel**</mark> <a href="#identifier" id="identifier"></a>
 
-Durability: **1024**
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark> <a href="#rarity" id="rarity"></a>
 
-Damage: **6**
+## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">1</mark> <a href="#stack-size" id="stack-size"></a>
 
-Interact Ability:
+## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining: <a href="#obtaining" id="obtaining"></a>
 
-* Mines a 3x3x3 Around the player
-* 0.3s Cooldown
+{% tabs %}
 
-Mining Speed: **30**
+{% tab title="Crafting" %}
 
-Enchant type: **Axe**
+<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the<br><a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-Repairable with:
+||||
+| :-: | :-: | :-: |
+| ![](https://minecraft.wiki/images/Block_of_Emerald_JE4_BE3.png?d5a3c) | ![](https://minecraft.wiki/images/Emerald_JE3_BE3.png?4c5f3) | ![](https://minecraft.wiki/images/Block_of_Emerald_JE4_BE3.png?d5a3c) |
+| ![](https://minecraft.wiki/images/Emerald_JE3_BE3.png?4c5f3) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/golden_haxel.png?raw=true) | ![](https://minecraft.wiki/images/Emerald_JE3_BE3.png?4c5f3) |
+| ![](https://minecraft.wiki/images/Block_of_Emerald_JE4_BE3.png?d5a3c) | ![](https://minecraft.wiki/images/Emerald_JE3_BE3.png?4c5f3) | ![](https://minecraft.wiki/images/Block_of_Emerald_JE4_BE3.png?d5a3c) |
 
-* [**Repair Core**](https://pfewiki.gitbook.io/home/items/cores/repair-core)
-* **Emerald**
+Items:
 
-Can Break:
+* 4x <img src="https://minecraft.wiki/images/Block_of_Emerald_JE4_BE3.png?d5a3c" alt="" data-size="line"> [Block of Emerald](https://minecraft.wiki/w/Block_of_Emerald)
 
-* **All PFE Blocks**
-* **All Survival Obtainable Vanilla Blocks**
+* 4x <img src="https://minecraft.wiki/images/Emerald_JE3_BE3.png?4c5f3" alt="" data-size="line"> [Emerald](https://minecraft.wiki/w/Emerald)
 
-## Obtaining:
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/golden_haxel.png?raw=true" alt="" data-size="line"> Golden Haxel
 
-* Crafted With:
-  * 1x [**Gold Haxel**](https://github.com/ItsMePok/PFE/wiki/Gold-Haxel)
-  * 4x **Emerald**
-  * 4x **Emerald Block**
+Outputs:
+
+* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/emerald_haxel.png?raw=true" alt="" data-size="line"> [Emerald Haxel](emerald-haxel.md)
+
+Recipe can be unlocked with:
+
+* <img src="https://minecraft.wiki/images/Emerald_JE3_BE3.png?4c5f3" alt="" data-size="line"> [Emerald](https://minecraft.wiki/w/Emerald)
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/golden_haxel.png?raw=true" alt="" data-size="line"> Golden Haxel
+
+{% endtab %}
+
+{% endtabs %}
+
+This page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool

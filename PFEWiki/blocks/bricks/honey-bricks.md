@@ -50,13 +50,19 @@ Recipe can be unlocked with:
 
 {% endtab %}
 
+{% tab title="Stonecutting" %}
+<figure><img src="https://minecraft.wiki/images/Stonecutter_JE2_BE1.gif?bb269" alt=""><figcaption><p>Cut with the<br><a href="https://minecraft.wiki/w/Stonecutter">Stonecutter</a></p></figcaption></figure>
+
+<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="https://minecraft.wiki/images/Honeycomb_Block_JE1_BE1.png?ff510" alt="" data-size="line"> <a href="https://minecraft.wiki/w/Honeycomb_Block">Honeycomb Block</a></td><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HoneyBricks.png?raw=true" alt="" data-size="line"> Honey Bricks</td><td>1</td></tr></tbody></table>
+
+{% endtab %}
 {% tab title="Crafting" %}
 
 <figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the<br><a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
 |||
 | :-: | :-: |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
 
 
 Items:
@@ -67,16 +73,10 @@ Outputs:
 
 Recipe can be unlocked with:
 
-* <img src="undefined" alt="" data-size="line"> Honey Brick Slab
+* <img src="undefined" alt="" data-size="line"> [Honey Brick Slab](..\slabs\brick-slabs\honey-brick-slab.md)
 
 {% endtab %}
 
-{% tab title="Stonecutting" %}
-<figure><img src="https://minecraft.wiki/images/Stonecutter_JE2_BE1.gif?bb269" alt=""><figcaption><p>Cut with the<br><a href="https://minecraft.wiki/w/Stonecutter">Stonecutter</a></p></figcaption></figure>
-
-<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="https://minecraft.wiki/images/Honeycomb_Block_JE1_BE1.png?ff510" alt="" data-size="line"> <a href="https://minecraft.wiki/w/Honeycomb_Block">Honeycomb Block</a></td><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/HoneyBricks.png?raw=true" alt="" data-size="line"> Honey Bricks</td><td>1</td></tr></tbody></table>
-
-{% endtab %}
 {% endtabs %}
 
 This page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool

@@ -1,102 +1,51 @@
+---
+description: Last updated to match v1.3.06
+---
+
 # Demonic Pickaxe
 
-<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/opaqueAlts/demonic_pickaxe.png?raw=true" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_pickaxe.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:demonic\_pickaxe**</mark> <a href="#identifier" id="identifier"></a>
 
-## Basic info:
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark> <a href="#rarity" id="rarity"></a>
 
-### Durability: 1860 <a href="#durability" id="durability"></a>
+## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">1</mark> <a href="#stack-size" id="stack-size"></a>
 
-### Damage: 8 <a href="#damage" id="damage"></a>
-
-### Enchantability: 14 <a href="#enchantability" id="enchantability"></a>
-
-### Enchant Type: Pickaxe <a href="#enchant-type" id="enchant-type"></a>
-
-### Mining Speed: 10 <a href="#mining-speed" id="mining-speed"></a>
-
-### <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 1
-
-### <img src="https://minecraft.wiki/images/Red_Dye_JE3_BE3.png?fbdd1" alt="" data-size="line">[Dyeable](https://minecraft.wiki/w/Dye#Dyeing_armor): Yes
-
-### Repair Items: <a href="#repair" id="repair"></a>
-
-* [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/repair_core.png?raw=true" alt="" data-size="line">Repair Core](../../items/cores/repair-core.md) (100% Durability)
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true" alt="Demonic Ingot" data-size="line">Demonic Ingot (25% Durability)
-* Demonic Nugget (2.8% Durability)
-
-### Usage:
-
-* Breaks Blocks that a pickaxe can break
-
-## Obtaining:
+## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining: <a href="#obtaining" id="obtaining"></a>
 
 {% tabs %}
-{% tab title="Recipe" %}
-<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-|                                                                                                       |                                                                                                       |                                                                                                       |
-| :---------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------: |
-| ![Demonic Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true) | ![Demonic Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true) | ![Demonic Ingot](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true) |
-|                                                                                                       |    ![Onyx Shaft](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_shaft.png?raw=true)    |                                                                                                       |
-|                                                                                                       |    ![Onyx Shaft](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_shaft.png?raw=true)    |                                                                                                       |
+{% tab title="Crafting" %}
+
+<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the<br><a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
+
+||||
+| :-: | :-: | :-: |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_stick.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_stick.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
 
 Items:
 
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true" alt="Demonic Ingot" data-size="line">Demonic Ingot
-* [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_shaft.png?raw=true" alt="Onyx Shaft" data-size="line">Onyx Shaft](../../items/sticks/onyx-shaft.md)
+* 3x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true" alt="" data-size="line"> [Demonic Ingot](..\..\items\ingots\demonic-ingot.md)
+
+* 2x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_stick.png?raw=true" alt="" data-size="line"> [Onyx Stick](..\..\items\sticks\onyx-shaft.md)
+
+Outputs:
+
+* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_pickaxe.png?raw=true" alt="" data-size="line"> [Demonic Pickaxe](demonic-pickaxe.md)
+
+Recipe can be unlocked with:
+
+* <img src="https://minecraft.wiki/images/Stick_JE1_BE1.png?1fc15" alt="" data-size="line"> [Stick](https://minecraft.wiki/w/Stick)
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_demonic.png?raw=true" alt="" data-size="line"> [Raw Demonic](..\..\items\raw-ore\raw-demonic.md)
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true" alt="" data-size="line"> [Demonic Ingot](..\..\items\ingots\demonic-ingot.md)
+
 {% endtab %}
+
 {% endtabs %}
 
-## Advanced Info:
-
-### Damage Chance:
-
-* Min: 70
-* Max: 100
-
-### Creative Category:
-
-* Category: Equipment
-* Group: Pickaxe
-
-### Stack Size: 1 <a href="#stack-size" id="stack-size"></a>
-
-### Hand Equipped: True <a href="#hand-equipped" id="hand-equipped"></a>
-
-### Tags:
-
-<details>
-
-<summary>Item Tags:</summary>
-
-* minecraft:is\_pickaxe
-* minecraft:digger
-* minecraft:is\_tool
-* pfe:pickaxe
-
-</details>
-
-<details>
-
-<summary>Break tags:</summary>
-
-* pickaxe
-* stone
-* metal
-* rail
-* stone\_pick\_diggable
-* wood\_pick\_diggable
-* iron\_pick\_diggable
-* minecraft:wood\_tier\_destructible
-* minecraft:stone\_tier\_destructible
-* minecraft:gold\_tier\_destructible
-* minecraft:iron\_tier\_destructible
-* minecraft:diamond\_tier\_destructible
-* minecraft:netherite\_tier\_destructible
-* minecraft:is\_pickaxe\_item\_destructible
-
-</details>
-
-#### Added In PFE version 1.2.2
+This page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool

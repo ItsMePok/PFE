@@ -44,9 +44,9 @@ Outputs:
 
 Recipe can be unlocked with:
 
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobaltBlock.png?raw=true" alt="" data-size="line"> Block of Cobalt
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobaltBlock.png?raw=true" alt="" data-size="line"> [Block of Cobalt](..\ore-blocks\cobalt-block.md)
 
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="" data-size="line"> Cobalt Ingot
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cobalt_ingot.png?raw=true" alt="" data-size="line"> [Cobalt Ingot](..\..\items\ingots\cobalt-ingot.md)
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutCobalt.png?raw=true" alt="" data-size="line"> [Cut Cobalt](..\cut-blocks\cut-cobalt.md)
 
@@ -58,7 +58,7 @@ Recipe can be unlocked with:
 
 |||
 | :-: | :-: |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
 
 
 Items:
@@ -69,14 +69,14 @@ Outputs:
 
 Recipe can be unlocked with:
 
-* <img src="undefined" alt="" data-size="line"> ERROR (poke_pfe:cobalt_bricks_slab)
+* <img src="undefined" alt="" data-size="line"> [Cobalt Bricks Slab](..\slabs\brick-slabs\cobalt-brick-slab.md)
 
 {% endtab %}
 
 {% tab title="Stonecutting" %}
 <figure><img src="https://minecraft.wiki/images/Stonecutter_JE2_BE1.gif?bb269" alt=""><figcaption><p>Cut with the<br><a href="https://minecraft.wiki/w/Stonecutter">Stonecutter</a></p></figcaption></figure>
 
-<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobaltBlock.png?raw=true" alt="" data-size="line"> <a href="">Block of Cobalt</a></td><td><img src="undefined" alt="" data-size="line"> Cobalt Bricks</td><td>4</td></tr></tbody></table>
+<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobaltBlock.png?raw=true" alt="" data-size="line"> <a href="..\ore-blocks\cobalt-block.md">Block of Cobalt</a></td><td><img src="undefined" alt="" data-size="line"> Cobalt Bricks</td><td>4</td></tr></tbody></table>
 
 {% endtab %}
 {% endtabs %}

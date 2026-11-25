@@ -1,36 +1,53 @@
+---
+description: Last updated to match v1.3.06
+---
+
 # Death Haxel
 
-![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/death_haxel.png?raw=true)
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/death_haxel.png?raw=true" alt=""><figcaption></figcaption></figure>
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: **poke_pfe:death\_haxel**
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:death\_haxel**</mark> <a href="#identifier" id="identifier"></a>
 
-Durability: **5280**
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark> <a href="#rarity" id="rarity"></a>
 
-Damage: **20**
+## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">1</mark> <a href="#stack-size" id="stack-size"></a>
 
-Interact Ability:
+## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining: <a href="#obtaining" id="obtaining"></a>
 
-* Mines a 5x5x6 Around the player
-* 0.3s Cooldown
+{% tabs %}
 
-Mining Speed: **100**
+{% tab title="Crafting" %}
 
-Enchant type: **Axe**
+<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the<br><a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-Repairable with:
+||||
+| :-: | :-: | :-: |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/DeathBlock.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/DeathBlock.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/DeathBlock.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/DeathBlock.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/platinum_upgrade_core.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_haxel.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
 
-* [**Repair Core**](https://pfewiki.gitbook.io/home/items/cores/repair-core)
-* [**Death Ingot**](https://github.com/ItsMePok/PFE/wiki/Death-Ingot)
-* [**Death Nugget**](https://github.com/ItsMePok/PFE/wiki/Death-Nugget)
+Items:
 
-Can Break:
+* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/DeathBlock.png?raw=true" alt="" data-size="line"> [Block of Death](..\..\blocks\ore-blocks\block-of-death.md)
 
-* **All PFE Blocks**
-* **All Survival Obtainable Vanilla Blocks**
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/platinum_upgrade_core.png?raw=true" alt="" data-size="line"> [Platinum Upgrade Core](..\..\items\cores\platinum-upgrade-core.md)
 
-## Obtaining:
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_haxel.png?raw=true" alt="" data-size="line"> [Void Haxel](void-haxel.md)
 
-* Crafted With:
-  * 4x [**Death Block**](https://github.com/ItsMePok/PFE/wiki/Death-Block)
-  * 1x [**Platinum Upgrade Core**](https://github.com/ItsMePok/PFE/wiki/Platinum-Upgrade-Core)
-  * 1x [**Void Haxel**](https://github.com/ItsMePok/PFE/wiki/Void-Haxel)
+Outputs:
+
+* undefinedx <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/death_haxel.png?raw=true" alt="" data-size="line"> [Death Haxel](death-haxel.md)
+
+Recipe can be unlocked with:
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/death_ingot.png?raw=true" alt="" data-size="line"> [Death Ingot](..\..\items\ingots\death-ingot.md)
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_haxel.png?raw=true" alt="" data-size="line"> [Void Haxel](void-haxel.md)
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/platinum_upgrade_core.png?raw=true" alt="" data-size="line"> [Platinum Upgrade Core](..\..\items\cores\platinum-upgrade-core.md)
+
+{% endtab %}
+
+{% endtabs %}
+
+This page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool

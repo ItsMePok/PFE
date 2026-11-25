@@ -44,9 +44,9 @@ Outputs:
 
 Recipe can be unlocked with:
 
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/DemonicBlock.png?raw=true" alt="" data-size="line"> Block of Demonic
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/DemonicBlock.png?raw=true" alt="" data-size="line"> [Block of Demonic](..\ore-blocks\demonic-block.md)
 
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true" alt="" data-size="line"> Demonic Ingot
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_ingot.png?raw=true" alt="" data-size="line"> [Demonic Ingot](..\..\items\ingots\demonic-ingot.md)
 
 {% endtab %}
 
@@ -56,7 +56,7 @@ Recipe can be unlocked with:
 
 |||
 | :-: | :-: |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
 
 
 Items:
@@ -67,14 +67,14 @@ Outputs:
 
 Recipe can be unlocked with:
 
-* <img src="undefined" alt="" data-size="line"> ERROR (poke_pfe:demonic_bricks_slab)
+* <img src="undefined" alt="" data-size="line"> [Demonic Bricks Slab](..\slabs\brick-slabs\demonic-brick-slab.md)
 
 {% endtab %}
 
 {% tab title="Stonecutting" %}
 <figure><img src="https://minecraft.wiki/images/Stonecutter_JE2_BE1.gif?bb269" alt=""><figcaption><p>Cut with the<br><a href="https://minecraft.wiki/w/Stonecutter">Stonecutter</a></p></figcaption></figure>
 
-<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/DemonicBlock.png?raw=true" alt="" data-size="line"> <a href="">Block of Demonic</a></td><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/DemonicBricks.png?raw=true" alt="" data-size="line"> Demonic Bricks</td><td>4</td></tr></tbody></table>
+<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/DemonicBlock.png?raw=true" alt="" data-size="line"> <a href="..\ore-blocks\demonic-block.md">Block of Demonic</a></td><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/DemonicBricks.png?raw=true" alt="" data-size="line"> Demonic Bricks</td><td>4</td></tr></tbody></table>
 
 {% endtab %}
 {% endtabs %}

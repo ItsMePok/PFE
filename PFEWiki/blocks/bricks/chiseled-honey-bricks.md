@@ -36,7 +36,7 @@ description: Last updated to match v1.3.06
 
 Items:
 
-* 2x <img src="undefined" alt="" data-size="line"> Honey Brick Slab
+* 2x <img src="undefined" alt="" data-size="line"> [Honey Brick Slab](..\slabs\brick-slabs\honey-brick-slab.md)
 
 Outputs:
 
@@ -44,7 +44,7 @@ Outputs:
 
 Recipe can be unlocked with:
 
-* <img src="undefined" alt="" data-size="line"> Honey Brick Slab
+* <img src="undefined" alt="" data-size="line"> [Honey Brick Slab](..\slabs\brick-slabs\honey-brick-slab.md)
 
 {% endtab %}
 

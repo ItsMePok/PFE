@@ -36,7 +36,7 @@ description: Last updated to match v1.3.06
 
 Items:
 
-* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobbledShadowstone.png?raw=true" alt="" data-size="line"> Cobbled Shadowstone
+* 4x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobbledShadowstone.png?raw=true" alt="" data-size="line"> [Cobbled Shadowstone](..\misc\cobbled-shadowstone.md)
 
 Outputs:
 
@@ -44,9 +44,9 @@ Outputs:
 
 Recipe can be unlocked with:
 
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/Shadowstone.png?raw=true" alt="" data-size="line"> Shadowstone
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/Shadowstone.png?raw=true" alt="" data-size="line"> [Shadowstone](..\misc\shadowstone.md)
 
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobbledShadowstone.png?raw=true" alt="" data-size="line"> Cobbled Shadowstone
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CobbledShadowstone.png?raw=true" alt="" data-size="line"> [Cobbled Shadowstone](..\misc\cobbled-shadowstone.md)
 
 {% endtab %}
 

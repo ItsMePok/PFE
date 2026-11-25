@@ -24,7 +24,7 @@ description: Last updated to match v1.3.06
 | :-: | :-: | :-: |
 | ![](https://minecraft.wiki/images/Wither_Skeleton_Skull_%28S%29_JE2.png?0a739) | ![](https://minecraft.wiki/images/Wither_Skeleton_Skull_%28S%29_JE2.png?0a739) | ![](https://minecraft.wiki/images/Wither_Skeleton_Skull_%28S%29_JE2.png?0a739) |
 | ![](https://minecraft.wiki/images/Soul_Sand_JE2_BE2.png?2334d) | ![](https://minecraft.wiki/images/Soul_Sand_JE2_BE2.png?2334d) | ![](https://minecraft.wiki/images/Soul_Sand_JE2_BE2.png?2334d) |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](https://minecraft.wiki/images/Soul_Sand_JE2_BE2.png?2334d) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://minecraft.wiki/images/Soul_Sand_JE2_BE2.png?2334d) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
 
 Items:
 

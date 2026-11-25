@@ -1,44 +1,53 @@
+---
+description: Last updated to match v1.3.06
+---
+
 # Banished Hammer
 
-<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/ban_hammer.png?raw=true" alt=""><figcaption></figcaption></figure>
+<figure><img src="undefined" alt=""><figcaption></figcaption></figure>
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: poke_pfe:ban\_hammer <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:ban\_hammer**</mark> <a href="#identifier" id="identifier"></a>
 
-{% hint style="info" %}
-This item will not take durability
-{% endhint %}
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Rare</mark> <a href="#rarity" id="rarity"></a>
 
-## Interact Ability:
+## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">1</mark> <a href="#stack-size" id="stack-size"></a>
 
-* Mines a 5x5x7 around the player
-  * can break Bedrock
-    * need silk touch to obtain
-  * can break liquids
-
-## Hit Effects:
-
-* Strength 2 for [2 seconds](#user-content-fn-1)[^1]
-
-## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 1
-
-## Obtaining:
+## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining: <a href="#obtaining" id="obtaining"></a>
 
 {% tabs %}
-{% tab title="Recipe" %}
-<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the <a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-|                                                                                                           |                                                                                                                                               |                                                                                                           |
-| :-------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------: |
-|                                                                                                           |                                                                                                                                               | ![Ban Hammer Head](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/ban_hammer_head.png?raw=true) |
-|                                                                                                           | <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/ban_hammer_shaft.png?raw=true" alt="Ban Hammer Shaft" data-size="original"> |                                                                                                           |
-| ![Ban Hammer Grip](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/ban_hammer_grip.png?raw=true) |                                                                                                                                               |                                                                                                           |
+{% tab title="Crafting" %}
+
+<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the<br><a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
+
+||||
+| :-: | :-: | :-: |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/ban_hammer_head.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_stick.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/ban_hammer_grip.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
 
 Items:
 
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/ban_hammer_grip.png?raw=true" alt="Ban Hammer Grip" data-size="line"> [Ban Hammer Grip](ban-hammer-grip.md)
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/ban_hammer_head.png?raw=true" alt="Ban Hammer Head" data-size="line"> [Ban Hammer Head](ban-hammer-head.md)
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/ban_hammer_shaft.png?raw=true" alt="Ban Hammer Shaft" data-size="line"> [Ban Hammer Shaft](../../items/sticks/ban-hammer-shaft.md)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/ban_hammer_head.png?raw=true" alt="" data-size="line"> Banished Hammer Head
+
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_stick.png?raw=true" alt="" data-size="line"> ERROR (poke_pfe:banished_stick)
+
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/ban_hammer_grip.png?raw=true" alt="" data-size="line"> Banished Hammer Grip
+
+Outputs:
+
+*  <img src="undefined" alt="" data-size="line"> [Banished Hammer](README.md)
+
+Recipe can be unlocked with:
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/ban_hammer_grip.png?raw=true" alt="" data-size="line"> Banished Hammer Grip
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_stick.png?raw=true" alt="" data-size="line"> ERROR (poke_pfe:banished_stick)
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/ban_hammer_head.png?raw=true" alt="" data-size="line"> Banished Hammer Head
+
 {% endtab %}
+
 {% endtabs %}
 
-[^1]: 40 ticks
+This page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool

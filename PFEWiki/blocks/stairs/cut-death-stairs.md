@@ -31,8 +31,8 @@ description: Last updated to match v1.3.06
 
 ||||
 | :-: | :-: | :-: |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutDeath.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
-| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutDeath.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutDeath.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Blank.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutDeath.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
+| ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutDeath.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutDeath.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/question.png?raw=true) |
 | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutDeath.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutDeath.png?raw=true) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutDeath.png?raw=true) |
 
 Items:
@@ -58,7 +58,7 @@ Recipe can be unlocked with:
 {% tab title="Stonecutting" %}
 <figure><img src="https://minecraft.wiki/images/Stonecutter_JE2_BE1.gif?bb269" alt=""><figcaption><p>Cut with the<br><a href="https://minecraft.wiki/w/Stonecutter">Stonecutter</a></p></figcaption></figure>
 
-<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/DeathBlock.png?raw=true" alt="" data-size="line"> <a href="">Block of Death</a></td><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutDeathStairs.png?raw=true" alt="" data-size="line"> Cut Death Stairs</td><td>4</td></tr></tbody></table>
+<table><thead><tr><th>Input</th><th>Output</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/DeathBlock.png?raw=true" alt="" data-size="line"> <a href="..\ore-blocks\block-of-death.md">Block of Death</a></td><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/CutDeathStairs.png?raw=true" alt="" data-size="line"> Cut Death Stairs</td><td>4</td></tr></tbody></table>
 
 {% endtab %}
 {% endtabs %}

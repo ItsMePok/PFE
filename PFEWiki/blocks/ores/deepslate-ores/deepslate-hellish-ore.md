@@ -1,52 +1,24 @@
+---
+description: Last updated to match v1.3.06
+---
+
 # Deepslate Hellish Ore
 
-<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/ore/DeepslateHellishOre.png?raw=true" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/DeepslateHellishOre.png?raw=true" alt=""><figcaption></figcaption></figure>
 
-{% hint style="info" %}
-The block texture above could not be 100% accurate if you have a texture pack applied that changes the Deepslate texture
-{% endhint %}
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:deepslate\_hellish\_ore**</mark> <a href="#identifier" id="identifier"></a>
 
-## <img src="https://minecraft.wiki/images/Book_and_Quill_JE2_BE2.png?2128f" alt="Book and Quill." data-size="line"> Description: <a href="#identifier" id="identifier"></a>
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark> <a href="#rarity" id="rarity"></a>
 
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/ore/DeepslateHellishOre.png?raw=true" alt="Deepslate Hellish Ore." data-size="line"> Deepslate Hellish Ore is an ore that when refined is used in obtaining various things in PFE
+## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">64</mark> <a href="#stack-size" id="stack-size"></a>
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: **poke_pfe:hellite\_ore** <a href="#identifier" id="identifier"></a>
+## <img src="https://minecraft.wiki/images/Note_Block_JE2_BE2.png?0bf0f" alt="" data-size="line"> Note Sound: <mark style="color:yellow;">Bass Drum</mark>
 
-## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 64
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/waypointRed.png?raw=true" alt="" data-size="line"> Map Color: <mark style="color:yellow;">#c91f1f</mark> <mark style="color:$info;">(hex)</mark>
 
-## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining:
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/BlockBreak.png?raw=true" alt="" data-size="line"> Preferred Tool: <mark style="color:yellow;">Pickaxe</mark>
 
-{% tabs %}
-{% tab title="Generation" %}
-<figure><img src="https://minecraft.wiki/images/thumb/Unearthed_Anniversary_Art.png/1280px-Unearthed_Anniversary_Art.png?d5a05" alt="" width="188"><figcaption><p>Generates in the <a href="https://minecraft.wiki/w/Overworld">Overworld</a></p></figcaption></figure>
+* &#x20;Time to break with preferred tool (baseline): <mark style="color:yellow;">3.4 seconds</mark>
+* Time to break by hand: <mark style="color:yellow;">22.5 seconds</mark>
 
-#### [Y Range](#user-content-fn-1)[^1]:
-
-* Highest: Y = 16
-* Lowest: Y = -32
-
-#### Distribution type: Triangle[^2]
-
-#### Iterations[^3]: 2
-
-#### Maximum number of ores per vein: 5
-
-#### Replaces:
-
-* <img src="https://minecraft.wiki/images/thumb/Stone_JE8.png/150px-Stone_JE8.png?b5028" alt="Stone." data-size="line"> [Stone](https://minecraft.wiki/w/Stone)
-  * This would replace <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/ore/HellishOre.png?raw=true" alt="Hellish Ore." data-size="line"> [Hellish Ore](../stone-ores/hellish-ore.md) instead
-  * This also includes
-    * <img src="https://minecraft.wiki/images/thumb/Diorite.png/150px-Diorite.png?58334" alt="Diorite." data-size="line"> [Diorite](https://minecraft.wiki/w/Diorite)
-    * <img src="https://minecraft.wiki/images/thumb/Granite.png/150px-Granite.png?9cb6d" alt="Granite." data-size="line"> [Granite](https://minecraft.wiki/w/Granite)
-    * <img src="https://minecraft.wiki/images/thumb/Andesite.png/150px-Andesite.png?5db9b" alt="" data-size="line"> [Andesite](https://minecraft.wiki/w/Andesite)
-* <img src="https://minecraft.wiki/images/thumb/Deepslate_(UD)_JE3.png/120px-Deepslate_(UD)_JE3.png?7635f" alt="Deepslate." data-size="line"> [Deepslate](https://minecraft.wiki/w/Deepslate)
-{% endtab %}
-{% endtabs %}
-
-[^1]: This is the vertical height of the dimension
-
-    This can also be known as the middle coordinate when the [showCoordinates gamerule](https://minecraft.wiki/w/Game_rule#showCoordinates) is enabled
-
-[^2]: This means the ores are most common towards the center of the Y range
-
-[^3]: How many ore veins could attempt to generate per chunk
+This page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool

@@ -37,7 +37,6 @@ function GetAllFilesInDirectory(directory: string) {
 	let files = [];
 	while (directories.length > 0) {
 		for (const item of directories) {
-			console.log("testing: " + item.name);
 			if (item.isFile()) {
 				files.push(item);
 			} else {
@@ -67,8 +66,7 @@ function GetItemFile(item: IndexItem) {
 }
 
 function GetImageLink(identifier?: string) {
-	console.log("\n" + identifier);
-
+	if (!identifier) return TEXTURE_INDEX["EMPTY"];
 	let path = "";
 	const PREFIX = identifier?.split(":").at(0);
 	if (
@@ -80,13 +78,14 @@ function GetImageLink(identifier?: string) {
 	) {
 		console.error("NO PREFIX");
 	}
-	if (PREFIX === "minecraft") {
+	if (PREFIX == "minecraft") {
 		const OBJECT: MCIndexFile[string] =
 			MC_INDEX_FILE[identifier?.replace("'", "") ?? ""];
 		return OBJECT.icon;
 	}
-	if (identifier) path = TEXTURE_INDEX[identifier.replace(`${NAMESPACE}:`, "")];
-	else {
+	if (identifier?.includes(NAMESPACE)) {
+		path = TEXTURE_INDEX[identifier.replace(`${NAMESPACE}:`, "")];
+	} else {
 		return TEXTURE_INDEX["MISSING"];
 	}
 	if (path) {
@@ -163,7 +162,6 @@ function GetDisplayNameByIdentifier(identifier: string) {
 		?.replace(`${NAMESPACE}.${identifier.replace(`${NAMESPACE}:`, "")}=`, "")
 		.replace("\r", "");
 	if (name?.includes("pack.name")) return `ERROR (${identifier})`;
-	console.log([name]);
 	return name;
 }
 

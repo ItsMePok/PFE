@@ -1,26 +1,24 @@
+---
+description: Last updated to match v1.3.06
+---
+
 # Listener Trophy
-
-
 
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/ListenerTrophy.png?raw=true" alt=""><figcaption></figcaption></figure>
 
-## Description:
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:listener\_trophy**</mark> <a href="#identifier" id="identifier"></a>
 
-&#x20;    This is the trophy for you can get after defeating the Listener
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark> <a href="#rarity" id="rarity"></a>
 
-## Usage:
+## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">64</mark> <a href="#stack-size" id="stack-size"></a>
 
-* On Interacting:
-  * Fades out current music and plays [They Listen](../../misc-other-info/music-sound-effects/music/they-listen.md)
+## <img src="https://minecraft.wiki/images/Note_Block_JE2_BE2.png?0bf0f" alt="" data-size="line"> Note Sound: <mark style="color:yellow;">Bass Drum</mark>
 
-## Obtaining:
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/waypointRed.png?raw=true" alt="" data-size="line"> Map Color: <mark style="color:yellow;">#e9e4a1</mark> <mark style="color:$info;">(hex)</mark>
 
-{% tabs %}
-{% tab title="Trading" %}
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/BlockBreak.png?raw=true" alt="" data-size="line"> Preferred Tool: <mark style="color:yellow;">Pickaxe</mark>
 
+* &#x20;Time to break with preferred tool (baseline): <mark style="color:yellow;">1.15 seconds</mark>
+* Time to break by hand: <mark style="color:yellow;">7.5 seconds</mark>
 
-<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/Entity/token_trader.png?raw=true" alt="" width="188"><figcaption><p>Sold By the <a href="../../mobs/traders/token-trader.md">Token Trader</a></p></figcaption></figure>
-
-<table><thead><tr><th>Wants</th><th data-type="number">Amount</th><th>Wants 2</th><th data-type="number">Amount</th><th>Gives</th><th data-type="number">Amount</th></tr></thead><tbody><tr><td><a href="../../items/currency/tokens/diamond-token.md"><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/diamond_token.png?raw=true" alt="" data-size="line">Diamond Token</a></td><td>5</td><td><a href="../../items/boss-drops/floppy-disk.md"><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/floppy_disk.png?raw=true" alt="" data-size="line">Floppy Disk</a></td><td>1</td><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/ListenerTrophy.png?raw=true" alt="" data-size="line">Listener Trophy</td><td>1</td></tr></tbody></table>
-{% endtab %}
-{% endtabs %}
+This page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool
