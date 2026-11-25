@@ -58,7 +58,7 @@ Recipe can be unlocked with:
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_scythe.png?raw=true" alt="" data-size="line"> [Godly Scythe](..\..\weapons\scythes\godly-scythe.md)
 
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_battleaxe.png?raw=true" alt="" data-size="line"> Godly Battleaxe
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_battleaxe.png?raw=true" alt="" data-size="line"> [Godly Battleaxe](..\..\weapons\battleaxes\godly-battlaxe.md)
 
 {% endtab %}
 

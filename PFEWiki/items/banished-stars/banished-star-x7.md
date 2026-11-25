@@ -1,19 +1,15 @@
+---
+description: Last updated to match v1.3.06
+---
+
 # Banished Star x7
 
-![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x7.png?raw=true)
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x7.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:banished\_star\_x7**</mark> <a href="#identifier" id="identifier"></a>
 
-## Usage:
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark> <a href="#rarity" id="rarity"></a>
 
-* Used in Crafting:
-  * [Banished Star x8](https://pfewiki.gitbook.io/home/items/banished-stars/banished-star-x8)
-* [Shopkeeper](https://github.com/ItsMePok/PFE/wiki/Shopkeeper) Trade:
-  * [Banished Star x7](https://pfewiki.gitbook.io/home/items/banished-stars/banished-star-x7) -> [Diamond Upgrade Core](https://github.com/ItsMePok/PFE/wiki/Diamond-Upgrade-Core)
+## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">64</mark> <a href="#stack-size" id="stack-size"></a>
 
-## Obtaining:
-
-* Crafted with:
-  * 9x [Banished Star x6](https://pfewiki.gitbook.io/home/items/banished-stars/banished-star-x6)
-* Alternate Recipe:
-  * 1x [Banished Star x8](https://pfewiki.gitbook.io/home/items/banished-stars/banished-star-x8)
+This page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool

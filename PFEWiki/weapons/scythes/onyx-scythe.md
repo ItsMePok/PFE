@@ -32,7 +32,7 @@ Items:
 
 * 2x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/OnyxBlock.png?raw=true" alt="" data-size="line"> [Block of Onyx](..\..\blocks\ore-blocks\block-of-onyx.md)
 
-*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/creedite_scythe.png?raw=true" alt="" data-size="line"> Creedite Scythe
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/creedite_scythe.png?raw=true" alt="" data-size="line"> [Creedite Scythe](amethyst-scythe.md)
 
 *  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/upgrade_core.png?raw=true" alt="" data-size="line"> [Upgrade Core](..\..\items\cores\upgrade-core.md)
 

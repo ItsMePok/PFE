@@ -36,7 +36,7 @@ Items:
 
 *  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/kapow_ring.png?raw=true" alt="" data-size="line"> [Kapow Ring](kapow-ring.md)
 
-* 2x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x5.png?raw=true" alt="" data-size="line"> ERROR (poke_pfe:banished_star_x5)
+* 2x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x5.png?raw=true" alt="" data-size="line"> [Banished Star x5](..\..\items\banished-stars\banished-star-x5.md)
 
 Outputs:
 

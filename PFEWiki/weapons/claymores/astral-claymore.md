@@ -34,11 +34,11 @@ Items:
 
 * 2x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/astral_ingot.png?raw=true" alt="" data-size="line"> [Astral Ingot](..\..\items\ingots\astral-ingot.md)
 
-*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/galaxy_claymore.png?raw=true" alt="" data-size="line"> Galaxy Claymore
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/galaxy_claymore.png?raw=true" alt="" data-size="line"> [Galaxy Claymore](galaxy-claymore.md)
 
 *  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/godly_stick.png?raw=true" alt="" data-size="line"> [Godly Stick](..\..\items\sticks\godly_stick.md)
 
-*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/medic_claymore.png?raw=true" alt="" data-size="line"> Medic Claymore
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/medic_claymore.png?raw=true" alt="" data-size="line"> [Medic Claymore](medic-claymore.md)
 
 Outputs:
 
@@ -54,9 +54,9 @@ Recipe can be unlocked with:
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/platinum_upgrade_core.png?raw=true" alt="" data-size="line"> [Platinum Upgrade Core](..\..\items\cores\platinum-upgrade-core.md)
 
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/medic_claymore.png?raw=true" alt="" data-size="line"> Medic Claymore
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/medic_claymore.png?raw=true" alt="" data-size="line"> [Medic Claymore](medic-claymore.md)
 
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/galaxy_claymore.png?raw=true" alt="" data-size="line"> Galaxy Claymore
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/galaxy_claymore.png?raw=true" alt="" data-size="line"> [Galaxy Claymore](galaxy-claymore.md)
 
 {% endtab %}
 

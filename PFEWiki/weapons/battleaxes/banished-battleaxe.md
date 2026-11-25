@@ -28,11 +28,11 @@ description: Last updated to match v1.3.06
 
 Items:
 
-* 3x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x4.png?raw=true" alt="" data-size="line"> ERROR (poke_pfe:banished_star_x4)
+* 3x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x4.png?raw=true" alt="" data-size="line"> [Banished Star x4](..\..\items\banished-stars\banished-star-x4.md)
 
-*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x5.png?raw=true" alt="" data-size="line"> ERROR (poke_pfe:banished_star_x5)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x5.png?raw=true" alt="" data-size="line"> [Banished Star x5](..\..\items\banished-stars\banished-star-x5.md)
 
-* 2x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x3.png?raw=true" alt="" data-size="line"> ERROR (poke_pfe:banished_star_x3)
+* 2x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x3.png?raw=true" alt="" data-size="line"> [Banished Star x3](..\..\items\banished-stars\banished-star-x3.md)
 
 *  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_stick.png?raw=true" alt="" data-size="line"> ERROR (poke_pfe:banished_stick)
 

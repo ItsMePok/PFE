@@ -39,7 +39,7 @@ Items:
 
 * 2x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/plastic.png?raw=true" alt="" data-size="line"> [Plastic](..\..\items\crafting-components\plastic.md)
 
-*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x2.png?raw=true" alt="" data-size="line"> ERROR (poke_pfe:banished_star_x2)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x2.png?raw=true" alt="" data-size="line"> [Banished Star x2](..\..\items\banished-stars\banished-star-x2.md)
 
 * 2x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/holy_ingot.png?raw=true" alt="" data-size="line"> [Holy Ingot](..\..\items\ingots\holy-ingot.md)
 

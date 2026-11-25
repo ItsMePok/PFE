@@ -34,11 +34,11 @@ Items:
 
 * 2x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/death_ingot.png?raw=true" alt="" data-size="line"> [Death Ingot](..\..\items\ingots\death-ingot.md)
 
-*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/molten_claymore.png?raw=true" alt="" data-size="line"> Molten Claymore
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/molten_claymore.png?raw=true" alt="" data-size="line"> [Molten Claymore](molten-claymore.md)
 
 *  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_stick.png?raw=true" alt="" data-size="line"> [Demonic Stick](..\..\items\sticks\demonic_stick.md)
 
-*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_claymore.png?raw=true" alt="" data-size="line"> Void Claymore
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_claymore.png?raw=true" alt="" data-size="line"> [Void Claymore](void-claymore.md)
 
 Outputs:
 
@@ -54,9 +54,9 @@ Recipe can be unlocked with:
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/platinum_upgrade_core.png?raw=true" alt="" data-size="line"> [Platinum Upgrade Core](..\..\items\cores\platinum-upgrade-core.md)
 
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_claymore.png?raw=true" alt="" data-size="line"> Void Claymore
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/void_claymore.png?raw=true" alt="" data-size="line"> [Void Claymore](void-claymore.md)
 
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/molten_claymore.png?raw=true" alt="" data-size="line"> Molten Claymore
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/molten_claymore.png?raw=true" alt="" data-size="line"> [Molten Claymore](molten-claymore.md)
 
 {% endtab %}
 

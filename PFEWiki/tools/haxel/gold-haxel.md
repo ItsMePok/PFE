@@ -1,36 +1,51 @@
-# Gold Haxel
+---
+description: Last updated to match v1.3.06
+---
 
-![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/gold_haxel.png?raw=true)
+# Golden Haxel
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: **poke_pfe:gold\_haxel**
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/golden_haxel.png?raw=true" alt=""><figcaption></figcaption></figure>
 
-Durability: **512**
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:golden\_haxel**</mark> <a href="#identifier" id="identifier"></a>
 
-Damage: **5**
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark> <a href="#rarity" id="rarity"></a>
 
-Interact Ability:
+## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">1</mark> <a href="#stack-size" id="stack-size"></a>
 
-* Mines a 3x3x3 Around the player
-* 0.3s Cooldown
+## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining: <a href="#obtaining" id="obtaining"></a>
 
-Mining Speed: **20**
+{% tabs %}
 
-Enchant type: **Axe**
+{% tab title="Crafting" %}
 
-Repairable with:
+<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the<br><a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-* [**Repair Core**](https://pfewiki.gitbook.io/home/items/cores/repair-core)
-* **Gold Ingot**
-* **Gold Nugget**
+||||
+| :-: | :-: | :-: |
+| ![](https://minecraft.wiki/images/Block_of_Gold_JE6_BE3.png?09478) | ![](https://minecraft.wiki/images/Gold_Ingot_JE4_BE2.png?80cd6) | ![](https://minecraft.wiki/images/Block_of_Gold_JE6_BE3.png?09478) |
+| ![](https://minecraft.wiki/images/Gold_Ingot_JE4_BE2.png?80cd6) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/iron_haxel.png?raw=true) | ![](https://minecraft.wiki/images/Gold_Ingot_JE4_BE2.png?80cd6) |
+| ![](https://minecraft.wiki/images/Block_of_Gold_JE6_BE3.png?09478) | ![](https://minecraft.wiki/images/Gold_Ingot_JE4_BE2.png?80cd6) | ![](https://minecraft.wiki/images/Block_of_Gold_JE6_BE3.png?09478) |
 
-Can Break:
+Items:
 
-* **All PFE Blocks**
-* **All Survival Obtainable Vanilla Blocks**
+* 4x <img src="https://minecraft.wiki/images/Block_of_Gold_JE6_BE3.png?09478" alt="" data-size="line"> [Block of Gold](https://minecraft.wiki/w/Block_of_Gold)
 
-## Obtaining:
+* 4x <img src="https://minecraft.wiki/images/Gold_Ingot_JE4_BE2.png?80cd6" alt="" data-size="line"> [Gold Ingot](https://minecraft.wiki/w/Gold_Ingot)
 
-* Crafted With:
-  * 1x [**Iron Haxel**](https://github.com/ItsMePok/PFE/wiki/Iron-Haxel)
-  * 4x **Gold Ingot**
-  * 4x **Gold Block**
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/iron_haxel.png?raw=true" alt="" data-size="line"> [Iron Haxel](iron-haxel.md)
+
+Outputs:
+
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/golden_haxel.png?raw=true" alt="" data-size="line"> [Golden Haxel](gold-haxel.md)
+
+Recipe can be unlocked with:
+
+* <img src="https://minecraft.wiki/images/Gold_Ingot_JE4_BE2.png?80cd6" alt="" data-size="line"> [Gold Ingot](https://minecraft.wiki/w/Gold_Ingot)
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/iron_haxel.png?raw=true" alt="" data-size="line"> [Iron Haxel](iron-haxel.md)
+
+{% endtab %}
+
+{% endtabs %}
+
+This page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool

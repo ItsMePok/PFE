@@ -1,34 +1,51 @@
-# Amethyst Haxel
+---
+description: Last updated to match v1.3.06
+---
 
-![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/amethyst_haxel.png?raw=true)
+# Creedite Haxel
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&format=original" alt="" data-size="line"> Identifier: **poke_pfe:amethyst\_haxel**
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/creedite_haxel.png?raw=true" alt=""><figcaption></figcaption></figure>
 
-## Durability: **5000**
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:creedite\_haxel**</mark> <a href="#identifier" id="identifier"></a>
 
-## Damage: **8**
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark> <a href="#rarity" id="rarity"></a>
 
-## [Interact Ability](amethyst-haxel.md#interact-ability):
+## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">1</mark> <a href="#stack-size" id="stack-size"></a>
 
-* Mines a 3x3x3 Around the player
-  * does not break liquids
-  * does not break bedrock
-* 0.3s Cooldown
+## <img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt="" data-size="line"> Obtaining: <a href="#obtaining" id="obtaining"></a>
 
-## Mining Speed: **60**
+{% tabs %}
 
-### <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: 1
+{% tab title="Crafting" %}
 
-## Enchant type: **Axe**
+<figure><img src="https://minecraft.wiki/images/thumb/Crafting_Table_JE4_BE3.png/150px-Crafting_Table_JE4_BE3.png?5767f" alt=""><figcaption><p>Crafted in the<br><a href="https://minecraft.wiki/w/Crafting_Table">Crafting Table</a></p></figcaption></figure>
 
-## Repairable with:
+||||
+| :-: | :-: | :-: |
+| ![](https://minecraft.wiki/images/Block_of_Amethyst_JE3_BE1.png?14501) | ![](https://minecraft.wiki/images/Amethyst_Shard_JE2_BE1.png?56555) | ![](https://minecraft.wiki/images/Block_of_Amethyst_JE3_BE1.png?14501) |
+| ![](https://minecraft.wiki/images/Amethyst_Shard_JE2_BE1.png?56555) | ![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/netherite_haxel.png?raw=true) | ![](https://minecraft.wiki/images/Amethyst_Shard_JE2_BE1.png?56555) |
+| ![](https://minecraft.wiki/images/Block_of_Amethyst_JE3_BE1.png?14501) | ![](https://minecraft.wiki/images/Amethyst_Shard_JE2_BE1.png?56555) | ![](https://minecraft.wiki/images/Block_of_Amethyst_JE3_BE1.png?14501) |
 
-* [**Repair Core**](https://pfewiki.gitbook.io/home/items/cores/repair-core)
-* [**Amethyst Shard**](https://minecraft.wiki/w/Amethyst_Shard)
+Items:
 
-## Obtaining:
+* 4x <img src="https://minecraft.wiki/images/Block_of_Amethyst_JE3_BE1.png?14501" alt="" data-size="line"> [Block of Amethyst](https://minecraft.wiki/w/Block_of_Amethyst)
 
-* Crafted With:
-  * 1x [**Netherite Haxel**](netherite-haxel.md)
-  * 4x [**Amethyst Shard**](https://minecraft.wiki/w/Amethyst_Shard)
-  * 4x **Amethyst Block**
+* 4x <img src="https://minecraft.wiki/images/Amethyst_Shard_JE2_BE1.png?56555" alt="" data-size="line"> [Amethyst Shard](https://minecraft.wiki/w/Amethyst_Shard)
+
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/netherite_haxel.png?raw=true" alt="" data-size="line"> [Netherite Haxel](netherite-haxel.md)
+
+Outputs:
+
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/creedite_haxel.png?raw=true" alt="" data-size="line"> [Creedite Haxel](amethyst-haxel.md)
+
+Recipe can be unlocked with:
+
+* <img src="https://minecraft.wiki/images/Amethyst_Shard_JE2_BE1.png?56555" alt="" data-size="line"> [Amethyst Shard](https://minecraft.wiki/w/Amethyst_Shard)
+
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/netherite_haxel.png?raw=true" alt="" data-size="line"> [Netherite Haxel](netherite-haxel.md)
+
+{% endtab %}
+
+{% endtabs %}
+
+This page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool

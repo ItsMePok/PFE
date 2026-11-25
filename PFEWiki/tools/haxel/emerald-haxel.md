@@ -32,7 +32,7 @@ Items:
 
 * 4x <img src="https://minecraft.wiki/images/Emerald_JE3_BE3.png?4c5f3" alt="" data-size="line"> [Emerald](https://minecraft.wiki/w/Emerald)
 
-*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/golden_haxel.png?raw=true" alt="" data-size="line"> Golden Haxel
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/golden_haxel.png?raw=true" alt="" data-size="line"> [Golden Haxel](gold-haxel.md)
 
 Outputs:
 
@@ -42,7 +42,7 @@ Recipe can be unlocked with:
 
 * <img src="https://minecraft.wiki/images/Emerald_JE3_BE3.png?4c5f3" alt="" data-size="line"> [Emerald](https://minecraft.wiki/w/Emerald)
 
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/golden_haxel.png?raw=true" alt="" data-size="line"> Golden Haxel
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/golden_haxel.png?raw=true" alt="" data-size="line"> [Golden Haxel](gold-haxel.md)
 
 {% endtab %}
 

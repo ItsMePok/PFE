@@ -1,9 +1,15 @@
+---
+description: Last updated to match v1.3.06
+---
+
 # Cassette: Comforting Memories
 
-{% hint style="danger" %}
-This Page is not complete yet. Check back later
-{% endhint %}
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/cassette_comfortingmemories.png?raw=true" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/cassette/cassette_comfortingmemories.png?raw=true" alt=""><figcaption></figcaption></figure>
+## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:cassette\_comfortingmemories**</mark> <a href="#identifier" id="identifier"></a>
 
-## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:cassette:comfortingmemories**</mark> <a href="#identifier" id="identifier"></a>
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark> <a href="#rarity" id="rarity"></a>
+
+## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">64</mark> <a href="#stack-size" id="stack-size"></a>
+
+This page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool

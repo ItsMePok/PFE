@@ -34,7 +34,7 @@ Items:
 
 * 2x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/electric_component.png?raw=true" alt="" data-size="line"> [Electric Component](..\..\items\crafting-components\electric-component.md)
 
-*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x4.png?raw=true" alt="" data-size="line"> ERROR (poke_pfe:banished_star_x4)
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x4.png?raw=true" alt="" data-size="line"> [Banished Star x4](..\..\items\banished-stars\banished-star-x4.md)
 
 *  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/item_manipulator.png?raw=true" alt="" data-size="line"> [Item Manipulator](..\..\items\crafting-components\item-manipulator.md)
 

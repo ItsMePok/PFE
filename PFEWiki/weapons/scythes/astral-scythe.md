@@ -32,7 +32,7 @@ Items:
 
 * 2x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/AstralBlock.png?raw=true" alt="" data-size="line"> [Block of Astral](..\..\blocks\ore-blocks\block-of-astral.md)
 
-*  <img src="undefined" alt="" data-size="line"> Galactic Scythe
+*  <img src="undefined" alt="" data-size="line"> [Galactic Scythe](galaxy-scythe.md)
 
 *  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/platinum_upgrade_core.png?raw=true" alt="" data-size="line"> [Platinum Upgrade Core](..\..\items\cores\platinum-upgrade-core.md)
 
@@ -42,7 +42,7 @@ Outputs:
 
 Recipe can be unlocked with:
 
-* <img src="undefined" alt="" data-size="line"> Galactic Scythe
+* <img src="undefined" alt="" data-size="line"> [Galactic Scythe](galaxy-scythe.md)
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/AstralBlock.png?raw=true" alt="" data-size="line"> [Block of Astral](..\..\blocks\ore-blocks\block-of-astral.md)
 

@@ -28,7 +28,7 @@ description: Last updated to match v1.3.06
 
 Items:
 
-*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/creedite_haxel.png?raw=true" alt="" data-size="line"> Creedite Haxel
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/creedite_haxel.png?raw=true" alt="" data-size="line"> [Creedite Haxel](amethyst-haxel.md)
 
 * 2x <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/OnyxBlock.png?raw=true" alt="" data-size="line"> [Block of Onyx](..\..\blocks\ore-blocks\block-of-onyx.md)
 
@@ -44,7 +44,7 @@ Recipe can be unlocked with:
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/onyx_ingot.png?raw=true" alt="" data-size="line"> [Onyx Ingot](..\..\items\ingots\onyx-ingot.md)
 
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/creedite_haxel.png?raw=true" alt="" data-size="line"> Creedite Haxel
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/creedite_haxel.png?raw=true" alt="" data-size="line"> [Creedite Haxel](amethyst-haxel.md)
 
 {% endtab %}
 

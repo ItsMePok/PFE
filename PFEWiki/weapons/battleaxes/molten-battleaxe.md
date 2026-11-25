@@ -34,7 +34,7 @@ Items:
 
 *  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/diamond_upgrade_core.png?raw=true" alt="" data-size="line"> [Diamond Upgrade Core](..\..\items\cores\diamond-upgrade-core.md)
 
-*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_battleaxe.png?raw=true" alt="" data-size="line"> Demonic Battleaxe
+*  <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_battleaxe.png?raw=true" alt="" data-size="line"> [Demonic Battleaxe](demonic-battlaxe.md)
 
 Outputs:
 
@@ -46,7 +46,7 @@ Recipe can be unlocked with:
 
 * <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/MoltenBlock.png?raw=true" alt="" data-size="line"> [Block of Molten](..\..\blocks\ore-blocks\block-of-molten.md)
 
-* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_battleaxe.png?raw=true" alt="" data-size="line"> Demonic Battleaxe
+* <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/demonic_battleaxe.png?raw=true" alt="" data-size="line"> [Demonic Battleaxe](demonic-battlaxe.md)
 
 {% endtab %}
 

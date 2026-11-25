@@ -1,39 +1,15 @@
+---
+description: Last updated to match v1.3.06
+---
+
 # Banished Star x3
 
-![](https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x3.png?raw=true)
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x3.png?raw=true" alt=""><figcaption></figcaption></figure>
 
 ## <img src="https://minecraft.wiki/images/Name_Tag_JE3_BE2.png?cbdc1&#x26;format=original" alt="" data-size="line"> Identifier: <mark style="color:yellow;">**poke\_pfe:banished\_star\_x3**</mark> <a href="#identifier" id="identifier"></a>
 
-## Usage:
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Rarity.png?raw=true" alt="Rarity." data-size="line"> Rarity: <mark style="color:yellow;">Common</mark> <a href="#rarity" id="rarity"></a>
 
-{% tabs %}
-{% tab title="Used in Recipes for" %}
-* <img src="https://pfewiki.gitbook.io/~gitbook/image?url=https%3A%2F%2Fgithub.com%2FItsMePok%2FPFE%2Fassets%2F136857747%2Ffe59da80-6212-4204-9d12-39e0bdbc55ff&#x26;width=768&#x26;dpr=1&#x26;quality=100&#x26;sign=aa843470&#x26;sv=1" alt="" data-size="line">Banished Star x4
-* <img src="https://pfewiki.gitbook.io/~gitbook/image?url=https%3A%2F%2Fgithub.com%2FItsMePok%2FPFE%2Fassets%2F136857747%2Fe418b9e5-fabf-44cd-9775-f353e3b512ac&#x26;width=768&#x26;dpr=1&#x26;quality=100&#x26;sign=ffcb5343&#x26;sv=1" alt="" data-size="line">Banished Star x2
-* Ban Hammer Grip
-{% endtab %}
+## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">64</mark> <a href="#stack-size" id="stack-size"></a>
 
-{% tab title="Trading" %}
-* [Shopkeeper](https://github.com/ItsMePok/PFE/wiki/Shopkeeper) Trade:
-  * [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x3.png?raw=true" alt="" data-size="line">Banished Star x3](banished-star-x3.md)-> [Repair Core](https://pfewiki.gitbook.io/home/items/cores/repair-core)
-  * [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x3.png?raw=true" alt="" data-size="line">Banished Star x3](banished-star-x3.md)-> [Raw Shade](https://github.com/ItsMePok/PFE/wiki/Raw-Shade)
-  * [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x3.png?raw=true" alt="" data-size="line">Banished Star x3](banished-star-x3.md) -> [Raw Onyx](https://github.com/ItsMePok/PFE/wiki/Raw-Onyx)
-  * [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x3.png?raw=true" alt="" data-size="line">Banished Star x3](banished-star-x3.md)-> [Raw Holy](https://github.com/ItsMePok/PFE/wiki/Raw-Holy)
-  * [<img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/banished_star_x3.png?raw=true" alt="" data-size="line">Banished Star x3](banished-star-x3.md)-> [Raw Hellish](https://github.com/ItsMePok/PFE/wiki/Raw-Hellish)
-{% endtab %}
-{% endtabs %}
-
-## Obtaining:
-
-{% tabs %}
-{% tab title="Crafting" %}
-* Crafted with:
-  * 9x [Banished Star x2](https://pfewiki.gitbook.io/home/items/banished-stars/banished-star-x2)
-* Alternate Recipe:
-  * 1x [Banished Star x4](https://pfewiki.gitbook.io/home/items/banished-stars/banished-star-x4)
-{% endtab %}
-
-{% tab title="Second Tab" %}
-
-{% endtab %}
-{% endtabs %}
+This page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool
