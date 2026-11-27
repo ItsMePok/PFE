@@ -1,5 +1,6 @@
 import { readdirSync, readFileSync } from "node:fs";
 import {
+  type LootTable,
   type BPBlockJSON,
   type BPItemJSON,
   type IndexItem,
@@ -26,8 +27,13 @@ export {
   GetMinecraftIndex,
   GetWikiPage,
   GetWikiPagePath,
+  GetLootTableFile,
   IsMinecraftIdentifier,
 };
+
+function GetLootTableFile(path: string) {
+  return JSON.parse(readFileSync(path, { encoding: "utf8" })) as LootTable;
+}
 
 function GetAllFilesInDirectory(directory: string) {
   let directories = readdirSync(directory, {

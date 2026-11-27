@@ -7,6 +7,7 @@ import {
   GetDisplayNameByIdentifier,
 } from "../common.ts";
 import {
+  type LootTable,
   type BPBlockJSON,
   type BPItemJSON,
   type BPRecipeFile,
@@ -19,7 +20,98 @@ export {
   AddItemsToIndex,
   AddRecipesToIndex,
   AddWikiPageToIndex,
+  AddBlockLootTableToIndexItem,
 };
+
+function AddBlockLootTableToIndexItem(INDEX: IndexFile) {
+  let files = GetAllFilesInDirectory(
+    "WikiAutomation/PFE/behavior_packs/pfe/blocks/",
+  );
+
+  for (const FILE of files) {
+    const BLOCK_FILE: BPBlockJSON = JSON.parse(
+      readFileSync(FILE.parentPath + FILE.name, { encoding: "utf8" }),
+    );
+    const BLOCK_COMPONENTS = BLOCK_FILE["minecraft:block"].components;
+    if (!BLOCK_COMPONENTS["minecraft:loot"]) continue;
+
+    let lootTableFiles = GetAllFilesInDirectory(
+      "WikiAutomation/PFE/behavior_packs/pfe/loot_tables/",
+    );
+
+    for (const LOOT_TABLE_FILE of lootTableFiles) {
+      if (
+        !(LOOT_TABLE_FILE.parentPath + LOOT_TABLE_FILE.name).includes(
+          BLOCK_COMPONENTS["minecraft:loot"],
+        )
+      )
+        continue;
+
+      let blockIndexItem = FindItemByIdentifier(
+        BLOCK_FILE["minecraft:block"].description.identifier,
+      );
+      if (blockIndexItem) {
+        blockIndexItem.components.loot_table =
+          LOOT_TABLE_FILE.parentPath + LOOT_TABLE_FILE.name;
+        let blockPos = INDEX.index.findIndex((data) => {
+          data.identifier == blockIndexItem.identifier;
+        });
+        INDEX.index.with(blockPos, blockIndexItem);
+      }
+
+      const LOOT_TABLE: LootTable = JSON.parse(
+        readFileSync(LOOT_TABLE_FILE.parentPath + LOOT_TABLE_FILE.name, {
+          encoding: "utf8",
+        }),
+      );
+
+      let tableItems = [];
+
+      for (const POOLS of LOOT_TABLE.pools) {
+        let poolWeight = 0;
+        for (const ENTRIES of POOLS.entries) {
+          poolWeight += ENTRIES.weight ?? 0;
+        }
+        for (const ENTRIES of POOLS.entries) {
+          tableItems.push({ entry: ENTRIES, totalWeight: poolWeight });
+        }
+      }
+
+      for (const ITEM of tableItems) {
+        const INDEX_ITEM = FindItemByIdentifier(ITEM.entry.name);
+        if (!INDEX_ITEM) continue;
+        let inIndex = false;
+        if (INDEX_ITEM.components.in_loot_tables) {
+          for (const IN_TABLE of INDEX_ITEM.components.in_loot_tables) {
+            if (
+              IN_TABLE.origin ==
+              BLOCK_FILE["minecraft:block"].description.identifier
+            ) {
+              inIndex = true;
+              continue;
+            }
+          }
+        } else {
+          INDEX_ITEM.components.in_loot_tables = [];
+        }
+        if (!inIndex) {
+          let newIndexItem = INDEX_ITEM;
+          newIndexItem.components.in_loot_tables?.push({
+            origin: BLOCK_FILE["minecraft:block"].description.identifier,
+            type: "block",
+            path: LOOT_TABLE_FILE.parentPath + LOOT_TABLE_FILE.name,
+          });
+          let pos = INDEX.index.findIndex((data) => {
+            data.identifier == INDEX_ITEM.identifier;
+          });
+          INDEX.index.with(pos, newIndexItem);
+        }
+      }
+    }
+
+    writeFileSync("WikiAutomation/index.json", JSON.stringify(INDEX));
+  }
+}
 
 function AddWikiPageToIndex(INDEX: IndexFile) {
   let current = -1;

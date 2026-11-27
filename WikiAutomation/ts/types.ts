@@ -10,6 +10,24 @@ export {
   type BPItemJSON,
   type NoteSound,
   type IndexFile,
+  type LootTable,
+};
+
+type LootTable = {
+  pools: {
+    rolls: number;
+    conditions?: {
+      condition: string;
+      "minecraft:match_tool_filter_any"?: string[];
+      "minecraft:match_tool_filter_all"?: string[];
+    }[];
+    entries: {
+      type: "item" | "empty" | "loot_table";
+      name: string;
+      weight?: number;
+      functions?: { function: string; count?: { min: number; max: number } }[];
+    }[];
+  }[];
 };
 type MCIndexFile = {
   [key: string]: { icon: string; wiki_page: string; name: string };
@@ -30,6 +48,8 @@ type IndexItem = {
     item_file_path?: string;
     additional_typing?: {};
     recipes: string[];
+    in_loot_tables?: { type: "block"; origin: string; path: string }[];
+    loot_table?: string;
   };
 };
 type NoteSound = { "note.bd": string; [key: string]: string };
@@ -66,6 +86,8 @@ type BPBlockJSON = {
           on_liquid_touches: "no_reaction" | "blocking" | "broken" | "popped";
         }[];
       };
+      "minecraft:loot"?: string;
+      "poke_pfe:fortune": {};
     };
   };
 };

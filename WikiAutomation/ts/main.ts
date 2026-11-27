@@ -20,6 +20,7 @@ import {
 } from "./pageMaking/blockComponents.ts";
 import { MakeObtainingSection } from "./pageMaking/obtainingFunctions.ts";
 import {
+  AddBlockLootTableToIndexItem,
   AddBlocksToIndex,
   AddItemsToIndex,
   AddRecipesToIndex,
@@ -30,6 +31,7 @@ AddBlocksToIndex(index as IndexFile);
 AddItemsToIndex(index as IndexFile);
 AddRecipesToIndex(index as IndexFile);
 AddWikiPageToIndex(index as IndexFile);
+AddBlockLootTableToIndexItem(index as IndexFile);
 
 /*
 FILE STRUCTURE:

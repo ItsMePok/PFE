@@ -39,6 +39,13 @@ Recipe can be unlocked with:
 
 {% endtab %}
 
+{% tab title="Block Drop" %}
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/BlockBreak.png?raw=true" alt=""><figcaption><p>Obtained by Breaking a Block</p></figcaption></figure>
+
+<table><thead><tr><th>Block</th><th>Drop Amount</th><th data-type="checkbox">Fortune Works?</th></tr></thead><tbody><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/EndVoidOre.png?raw=true" alt="" data-size="line"> <a href="..\..\blocks\ores\end-ores\end-void-ore.md">End Void Ore</a></td><td>4</td><td>true</td></tr><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/DeepslateVoidOre.png?raw=true" alt="" data-size="line"> <a href="..\..\blocks\ores\deepslate-ores\deepslate-void-ore.md">Deepslate Void Ore</a></td><td>4</td><td>true</td></tr></tbody></table>
+
+{% endtab %}
+
 {% endtabs %}
 
 This page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool

@@ -48,6 +48,13 @@ Recipe can be unlocked with:
 
 {% endtab %}
 
+{% tab title="Block Drop" %}
+<figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/BlockBreak.png?raw=true" alt=""><figcaption><p>Obtained by Breaking a Block</p></figcaption></figure>
+
+<table><thead><tr><th>Block</th><th>Drop Amount</th><th data-type="checkbox">Fortune Works?</th></tr></thead><tbody><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/blockRenders/Limestone.png?raw=true" alt="" data-size="line"> <a href="limestone.md">Limestone</a></td><td>1</td><td>false</td></tr></tbody></table>
+
+{% endtab %}
+
 {% endtabs %}
 
 This page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool
