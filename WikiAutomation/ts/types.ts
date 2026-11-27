@@ -40,6 +40,7 @@ type BPItemJSON = {
     components: {
       "minecraft:max_stack_size"?: number;
       "minecraft:rarity"?: "common" | "uncommon" | "rare" | "epic";
+      "minecraft:damage"?: { value: number };
     };
   };
 };

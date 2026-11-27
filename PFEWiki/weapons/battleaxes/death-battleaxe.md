@@ -12,4 +12,6 @@ description: Last updated to match v1.3.06
 
 ## <img src="https://minecraft.wiki/images/Light_Gray_Bundle_JE1_BE1.png?b552e" alt="" data-size="line"> Stack Size: <mark style="color:yellow;">1</mark> <a href="#stack-size" id="stack-size"></a>
 
+## <img src="https://minecraft.wiki/images/Strength_JE3_BE2.png?0494e" alt="Strength Effect." data-size="line"> Attack Damage: <mark style="color:yellow;">15</mark> <a href="#attack-damage" id="attack-damage"></a>
+
 This page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool

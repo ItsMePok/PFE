@@ -6,7 +6,11 @@ import { VERSION } from "./consts.ts";
 import { type IndexItem, type IndexFile } from "./types.ts";
 import { GetDisplayNameByIdentifier, GetImageLink } from "./common.ts";
 import { MakeIdentifierSection } from "./pageMaking/commonComponents.ts";
-import { MakeRarity, MakeStackSize } from "./pageMaking/itemComponents.ts";
+import {
+  MakeAttackDamage,
+  MakeRarity,
+  MakeStackSize,
+} from "./pageMaking/itemComponents.ts";
 import {
   MakeDestroySpeed,
   MakeMapColor,
@@ -67,6 +71,9 @@ for (let data of index.index) {
   //Make Stack Size:
   file = MakeStackSize(file, item);
 
+  //Make Attack Damage:
+  file = MakeAttackDamage(file, item);
+
   // Make Note Sound:
   file = MakeNoteSound(file, item);
 
@@ -77,7 +84,7 @@ for (let data of index.index) {
   file = MakeDestroySpeed(file, item);
 
   //Make Obtaining:
-  file = MakeObtainingSection(file, item as IndexItem);
+  file = MakeObtainingSection(file, item);
 
   //Add automated disclaimer:
   file = `${file}\nThis page was generated automatically (NOT BY AI). there may be some broken links or improperly formatted information while I continue to develop this tool\n`;
