@@ -22,8 +22,8 @@ hidden: true
 
 ## <img src="https://minecraft.wiki/images/thumb/Enchanting_Table.gif/150px-Enchanting_Table.gif?904a7" alt="" data-size="line"> Enchanting: <a href="#enchanting" id="enchanting"></a>
 
-* <img src="https://minecraft.wiki/images/Enchanted_Book.gif?b21c4" alt="" data-size="line"> Enchantment Type:
-* <img src="https://minecraft.wiki/images/thumb/Bookshelf_JE4_BE2.png/150px-Bookshelf_JE4_BE2.png?9b143" alt="Bookshelf." data-size="line"> Enchantability:
+* <img src="https://minecraft.wiki/images/Enchanted_Book.gif?b21c4" alt="" data-size="line"> Enchantment Type: <mark style="color:yellow;">Boots</mark>
+* <img src="https://minecraft.wiki/images/thumb/Bookshelf_JE4_BE2.png/150px-Bookshelf_JE4_BE2.png?9b143" alt="Bookshelf." data-size="line"> Enchantability: <mark style="color:yellow;">30</mark>
 
 ### <img src="https://minecraft.wiki/images/thumb/Anvil_(N)_JE3.png/150px-Anvil_(N)_JE3.png?d438e" alt="Anvil." data-size="line"> Repairing: <a href="#enchanting" id="enchanting"></a>
 
@@ -72,7 +72,7 @@ hidden: true
 {% tab title="Block Drop" %}
 <figure><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/BlockBreak.png?raw=true" alt=""><figcaption><p>Obtained by Breaking a Block</p></figcaption></figure>
 
-<table><thead><tr><th>Block</th><th>Drop Amount</th><th data-type="checkbox">Fortune Works?</th></tr></thead><tbody><tr><td></td><td></td><td>false</td></tr><tr><td></td><td></td><td>false</td></tr></tbody></table>
+<table><thead><tr><th>Block</th><th>Drop Amount</th><th data-type="checkbox">Fortune Works?</th></tr></thead><tbody><tr><td><img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/raw_astral.png?raw=true" alt="" data-size="line"> <a href="items/raw-ore/raw-astral.md">Raw Astral</a></td><td>3</td><td>true</td></tr></tbody></table>
 {% endtab %}
 {% endtabs %}
 
