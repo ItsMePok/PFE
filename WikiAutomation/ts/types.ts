@@ -59,6 +59,13 @@ type BPBlockJSON = {
         }[];
       };
       "minecraft:instrument_sound"?: { up: (typeof NOTE_SOUND)[string] };
+      "minecraft:liquid_detection"?: {
+        detection_rules: {
+          can_contain_liquid: boolean;
+          liquid_type: string;
+          on_liquid_touches: "no_reaction" | "blocking" | "broken" | "popped";
+        }[];
+      };
     };
   };
 };

@@ -302,7 +302,7 @@
     * [Astral Pickaxe](tools/pickaxes/astral-pickaxe.md)
     * [Death Pickaxe](tools/pickaxes/death-pickaxe.md)
     * [Nebula Pickaxe](tools/pickaxes/nebula-pickaxe.md)
-    * [Swift Pickaxe](tools/pickaxes/swift-pickaxe.md)
+    * [Quickaxe](tools/pickaxes/swift-pickaxe.md)
   * [Rings](tools/rings/README.md)
     * [Arrow Ring](tools/rings/arrow-ring.md)
     * [Volt Ring](tools/rings/volt-ring.md)

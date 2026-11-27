@@ -1,8 +1,24 @@
-export { MakeDestroySpeed, MakeNoteSound, MakeMapColor };
+export { MakeDestroySpeed, MakeNoteSound, MakeMapColor, MakeWaterLogging };
 import index from "../../index.json" with { type: "json" };
 import { GetBlockFile } from "../common.ts";
 import { NOTE_SOUND } from "../consts.ts";
 import { type IndexItem } from "../types.ts";
+
+function MakeWaterLogging(file: string, item: IndexItem) {
+  //## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Waterlog.png?raw=true" alt="" data-size="line"> Can Waterlog: <mark style="color:yellow;">Yes</mark> <a href="#waterlog" id="waterlog"></a>
+  if (!item.components.block_file_path) return file;
+  const BLOCK_FILE = GetBlockFile(item);
+  const WATERLOG_COMPONENT =
+    BLOCK_FILE["minecraft:block"].components["minecraft:liquid_detection"];
+  if (WATERLOG_COMPONENT) {
+    for (const data of WATERLOG_COMPONENT.detection_rules) {
+      if (data.liquid_type == "water") {
+        file = `${file}\n## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Waterlog.png?raw=true" alt="" data-size="line"> Can Waterlog: <mark style="color:yellow;">${data.can_contain_liquid ? "Yes" : "No"}</mark> <a href="#waterlog" id="waterlog"></a>\n`;
+      }
+    }
+  }
+  return file;
+}
 
 function MakeNoteSound(file: string, item: IndexItem) {
   //## <img src="https://minecraft.wiki/images/Note_Block_JE2_BE2.png?0bf0f" alt="" data-size="line"> Note Sound: <mark style="color:yellow;">Bass Drum</mark>
@@ -82,7 +98,15 @@ function MakeDestroySpeed(file: string, item: IndexItem) {
   normalBreakSpeed = MINING_COMPONENT.seconds_to_destroy;
 
   //Write to file:
-  file = `${file}\n## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/BlockBreak.png?raw=true" alt="" data-size="line"> Preferred Tool: <mark style="color:yellow;">${preferredTool ? preferredTool : "ERROR"}</mark>\n\n* &#x20;Time to break with preferred tool (baseline): <mark style="color:yellow;">${preferredBreakSpeed}${preferredBreakSpeed <= 0 ? "" : preferredBreakSpeed == 1 ? " second" : " seconds"}</mark>\n* Time to break by hand: <mark style="color:yellow;">${normalBreakSpeed}${normalBreakSpeed <= 0 ? "" : normalBreakSpeed == 1 ? " second" : " seconds"}</mark>\n`;
+  file = `${file}\n## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/BlockBreak.png?raw=true" alt="" data-size="line"> Preferred Tool: <mark style="color:yellow;">${preferredTool ? preferredTool : "ERROR"}</mark>\n\n* &#x20;Time to break with preferred tool (baseline): <mark style="color:yellow;">${preferredBreakSpeed}${
+    preferredBreakSpeed <= 0
+      ? ""
+      : preferredBreakSpeed == 1
+        ? " second"
+        : " seconds"
+  }</mark>\n* Time to break by hand: <mark style="color:yellow;">${normalBreakSpeed}${
+    normalBreakSpeed <= 0 ? "" : normalBreakSpeed == 1 ? " second" : " seconds"
+  }</mark>\n`;
   return file;
 }
 

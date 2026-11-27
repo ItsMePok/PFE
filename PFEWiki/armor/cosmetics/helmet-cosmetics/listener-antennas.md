@@ -14,6 +14,8 @@ description: Last updated to match v1.3.06
 
 ## <img src="https://minecraft.wiki/images/Diamond_Chestplate_(item)_JE2_BE2.png?d2f93" alt="" data-size="line"> Armor: <mark style="color:yellow;">0</mark> <a href="#armor" id="armor"></a>
 
+## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/MiscIcons/Waterlog.png?raw=true" alt="" data-size="line"> Can Waterlog: <mark style="color:yellow;">Yes</mark> <a href="#waterlog" id="waterlog"></a>
+
 ## <img src="https://minecraft.wiki/images/Note_Block_JE2_BE2.png?0bf0f" alt="" data-size="line"> Note Sound: <mark style="color:yellow;">Bass Drum</mark>
 
 ## <img src="https://github.com/ItsMePok/PFE/blob/wikiAssets/wikiMain/waypointRed.png?raw=true" alt="" data-size="line"> Map Color: <mark style="color:yellow;">#808080</mark> <mark style="color:$info;">(hex)</mark>

@@ -16,6 +16,7 @@ import {
   MakeDestroySpeed,
   MakeMapColor,
   MakeNoteSound,
+  MakeWaterLogging,
 } from "./pageMaking/blockComponents.ts";
 import { MakeObtainingSection } from "./pageMaking/obtainingFunctions.ts";
 import {
@@ -77,6 +78,9 @@ for (let data of index.index) {
 
   //Make Armor:
   file = MakeArmor(file, item);
+
+  // Make Waterlog:
+  file = MakeWaterLogging(file, item);
 
   // Make Note Sound:
   file = MakeNoteSound(file, item);
