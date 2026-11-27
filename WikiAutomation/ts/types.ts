@@ -41,6 +41,7 @@ type BPItemJSON = {
       "minecraft:max_stack_size"?: number;
       "minecraft:rarity"?: "common" | "uncommon" | "rare" | "epic";
       "minecraft:damage"?: { value: number };
+      "minecraft:wearable"?: { slot: string; protection: number };
     };
   };
 };

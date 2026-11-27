@@ -1,6 +1,23 @@
 import { GetItemFile } from "../common.ts";
 import { type IndexItem } from "../types.ts";
-export { MakeStackSize, MakeRarity, MakeAttackDamage };
+export { MakeStackSize, MakeRarity, MakeAttackDamage, MakeArmor };
+
+function MakeArmor(file: string, item: IndexItem) {
+  //## <img src="https://minecraft.wiki/images/Diamond_Chestplate_(item)_JE2_BE2.png?d2f93" alt="" data-size="line"> Armor: <mark style="color:yellow;">**5**</mark> <a href="#armor" id="armor"></a>
+
+  if (!item.components.item_file_path) return file;
+
+  const ITEM_FILE = GetItemFile(item);
+
+  const ARMOR =
+    ITEM_FILE["minecraft:item"].components["minecraft:wearable"]?.protection;
+
+  if (ARMOR !== undefined) {
+    file = `${file}\n## <img src="https://minecraft.wiki/images/Diamond_Chestplate_(item)_JE2_BE2.png?d2f93" alt="" data-size="line"> Armor: <mark style="color:yellow;">${ARMOR}</mark> <a href="#armor" id="armor"></a>\n`;
+  }
+
+  return file;
+}
 
 function MakeAttackDamage(file: string, item: IndexItem) {
   //## <img src="https://minecraft.wiki/images/Strength_JE3_BE2.png?0494e" alt="Strength Effect." data-size="line"> Attack Damage: <mark style="color:yellow;">3</mark> <a href="#attack-damage" id="attack-damage"></a>

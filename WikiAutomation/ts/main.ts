@@ -7,6 +7,7 @@ import { type IndexItem, type IndexFile } from "./types.ts";
 import { GetDisplayNameByIdentifier, GetImageLink } from "./common.ts";
 import { MakeIdentifierSection } from "./pageMaking/commonComponents.ts";
 import {
+  MakeArmor,
   MakeAttackDamage,
   MakeRarity,
   MakeStackSize,
@@ -73,6 +74,9 @@ for (let data of index.index) {
 
   //Make Attack Damage:
   file = MakeAttackDamage(file, item);
+
+  //Make Armor:
+  file = MakeArmor(file, item);
 
   // Make Note Sound:
   file = MakeNoteSound(file, item);
